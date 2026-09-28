@@ -11,6 +11,10 @@ OBJECT_NAMES = {
     "result-code": "zonegroup_result.obj",
     "factory": "zonegroup_factory_candidate.obj",
 }
+VARIANT_NAMES = {
+    "factory-frame": "factory_frame_pointer.obj",
+    "factory-lifetime": "factory_lifetime.obj",
+}
 
 
 def object_code(path: Path):
@@ -25,24 +29,37 @@ def object_code(path: Path):
     # helpers; its largest code section holds the named candidate function.
     section = max(text_sections, key=lambda s: s["raw_size"])
     start = section["raw_pointer"]
-    return data[start:start + section["raw_size"]], section["relocation_count"], len(text_sections)
+    section_index = sections.index(section)
+    header = 20 + u16(data, 16) + section_index * 40
+    relocation_pointer = int.from_bytes(data[header + 24:header + 28], "little")
+    relocation_offsets = [int.from_bytes(data[relocation_pointer + index * 10:
+                                              relocation_pointer + index * 10 + 4], "little")
+                          for index in range(section["relocation_count"])]
+    return data[start:start + section["raw_size"]], relocation_offsets, len(text_sections)
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("artifact_dir", type=Path, help="Directory containing downloaded CI objects")
+    parser.add_argument("--variants", action="store_true", help="also compare factory frame and lifetime variants")
     args = parser.parse_args()
     all_matched = True
-    for name, object_name in OBJECT_NAMES.items():
-        target = FACTORY if name == "factory" else TARGETS[name]
+    names = {**OBJECT_NAMES, **(VARIANT_NAMES if args.variants else {})}
+    for name, object_name in names.items():
+        target = FACTORY if name.startswith("factory") else TARGETS[name]
         expected, _ = reference_bytes(target)
-        actual, relocations, code_sections = object_code(args.artifact_dir / object_name)
+        actual, relocation_offsets, code_sections = object_code(args.artifact_dir / object_name)
         first = next((i for i, (a, b) in enumerate(zip(expected, actual)) if a != b),
                      min(len(expected), len(actual)))
-        exact = actual == expected and relocations == 0
+        relocated_bytes = {offset for start in relocation_offsets for offset in range(start, start + 4)}
+        first_fixed = next((i for i, (a, b) in enumerate(zip(expected, actual))
+                            if i not in relocated_bytes and a != b),
+                           min(len(expected), len(actual)))
+        exact = actual == expected and not relocation_offsets
         all_matched &= exact
         print(f"{name}: reference {len(expected)} bytes, object {len(actual)} bytes, "
-              f"first difference {first}, relocations {relocations}, code sections {code_sections}, "
+              f"first difference {first}, first fixed-byte difference {first_fixed}, "
+              f"relocations {len(relocation_offsets)}, code sections {code_sections}, "
               f"{'EXACT' if exact else 'MISMATCH'}")
     if not all_matched:
         raise SystemExit(1)

@@ -84,6 +84,37 @@ struct AdjustedReference {
     }
 };
 
+// Only the slot used by this factory is identified so far. The earlier slots
+// preserve its measured position in the controller's virtual table.
+struct Controller {
+    virtual void Unknown00() = 0;
+    virtual void Unknown01() = 0;
+    virtual void Unknown02() = 0;
+    virtual void Unknown03() = 0;
+    virtual void Unknown04() = 0;
+    virtual void Unknown05() = 0;
+    virtual void Unknown06() = 0;
+    virtual void Unknown07() = 0;
+    virtual void Unknown08() = 0;
+    virtual void Unknown09() = 0;
+    virtual void Unknown10() = 0;
+    virtual void Unknown11() = 0;
+    virtual void Unknown12() = 0;
+    virtual void Unknown13() = 0;
+    virtual void Unknown14() = 0;
+    virtual void Unknown15() = 0;
+    virtual void Unknown16() = 0;
+    virtual void Unknown17() = 0;
+    virtual void Unknown18() = 0;
+    virtual void Unknown19() = 0;
+    virtual void Unknown20() = 0;
+    virtual void Unknown21() = 0;
+    virtual void Unknown22() = 0;
+    virtual void Unknown23() = 0;
+    virtual void Unknown24() = 0;
+    virtual Word IsAvailable() = 0;
+};
+
 struct Household {
     __declspec(noinline) Word *GetZoneGroupStateFactoryLifetimeCandidate(
         Word *result, Word *zone_name);
@@ -94,7 +125,7 @@ Word *Household::GetZoneGroupStateFactoryLifetimeCandidate(
     Word household = reinterpret_cast<Word>(this);
     // Validate the household and resolve its ZoneGroupTopology client.
     Word controller = read32(household + 0xc8);
-    if (!virtual_method<Method0>(controller, 0x64)(controller)) {
+    if (!reinterpret_cast<Controller *>(controller)->IsAvailable()) {
         *result = 0;
         return result;
     }
