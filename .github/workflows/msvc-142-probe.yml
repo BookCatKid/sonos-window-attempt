@@ -36,25 +36,15 @@ jobs:
 
       - name: Compile C++ candidates for x86
         shell: cmd
-        run: |
-          call C:\VS2019BuildTools\VC\Auxiliary\Build\vcvarsall.bat amd64_x86 -vcvars_ver=14.28
-          if errorlevel 1 exit /b 1
-          mkdir out
-          cl /Bv > out\toolchain.txt 2>&1
-          where cl >> out\toolchain.txt
-          where link >> out\toolchain.txt
-          cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\zonegroup_getter.obj src\zonegroup_getter.cpp
-          if errorlevel 1 exit /b 1
-          cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\zonegroup_result.obj src\zonegroup_result.cpp
-          if errorlevel 1 exit /b 1
-          cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\zonegroup_factory_candidate.obj src\zonegroup_factory_candidate.cpp
-          if errorlevel 1 exit /b 1
+        run: call tools\build_probe.cmd
 
       - name: Upload compiler outputs
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: msvc-14-28-x86-objects
           path: |
             out/*.obj
             out/toolchain.txt
-          if-no-files-found: error
+            out/*.log
+          if-no-files-found: warn
