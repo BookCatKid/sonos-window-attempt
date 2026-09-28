@@ -13,12 +13,12 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - release: 16.9.4
-            url: https://download.visualstudio.microsoft.com/download/pr/3105fcfe-e771-41d6-9a1c-fc971e7d03a7/e0c2f5b63918562fd959049e12dffe64bf46ec2e89f7cadde3214921777ce5c2/vs_BuildTools.exe
-          - release: 16.9.8
-            url: https://download.visualstudio.microsoft.com/download/pr/9b757330-0648-444e-ae56-1d1d75f69471/8f74956bce36df73e8a036a938acba71b9cecb870fab70b0d35b1472c7bded57/vs_BuildTools.exe
-          - release: 16.9.17
-            url: https://download.visualstudio.microsoft.com/download/pr/6018563e-3c0d-4b71-ab5b-9560a207eaaf/4f3f37607ebd5af7929b248e3ada96dc42e7d80751075df345fa1dd366738a76/vs_BuildTools.exe
+          - release: 16.9.10
+            url: https://download.visualstudio.microsoft.com/download/pr/3daa9785-bfd4-4cb1-bdc3-6d8d52159671/b24f75623e522f42ef6c5668bdb1683f7af3cfca48cddef77d0ead38207de802/vs_BuildTools.exe
+          - release: 16.9.12
+            url: https://download.visualstudio.microsoft.com/download/pr/dcb0a070-a0c3-4fda-a07e-b00b4f777924/0f7200f381b269441a113ba7bf310c4dd291ffcc9e62d0a934dc9343add96a98/vs_BuildTools.exe
+          - release: 16.9.14
+            url: https://download.visualstudio.microsoft.com/download/pr/33439e30-02ff-417f-b6ef-927e424e84c9/cff2eb1a766df58fa77a9a89e7fc1765cc419c3175cd26bb0c97806649ab0981/vs_BuildTools.exe
     runs-on: windows-2022
     timeout-minutes: 45
     steps:
