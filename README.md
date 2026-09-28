@@ -61,6 +61,8 @@ layout require a later link comparison before declaring a function byte match.
 The first successful [Actions run](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36364567940)
 used MSVC 19.28.29924: both small getter bodies match their reference bytes;
 the 707-byte operation factory does not yet match.
+The workflow now pins the exact 19.28.29919 compiler and tests an additional
+frame-pointer profile for the factory.
 
 The full-DLL comparison command exits 0 only for a byte-identical file. The reference DLL is
 32-bit native MSVC code with a SWIG C# boundary. Most named exports are generated
