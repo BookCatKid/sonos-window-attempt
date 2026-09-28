@@ -1,0 +1,13 @@
+# The installed Sonos distribution and derived decompilation stay local.
+reference/
+analysis/
+agents/
+build/
+
+# Python and local tooling outputs.
+__pycache__/
+*.pyc
+.DS_Store
+
+# CI outputs downloaded for local comparison.
+ci-output/

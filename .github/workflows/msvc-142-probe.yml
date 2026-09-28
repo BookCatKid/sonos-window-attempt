@@ -1,0 +1,55 @@
+name: MSVC 14.28 x86 probe
+
+on:
+  workflow_dispatch:
+
+jobs:
+  compile:
+    runs-on: windows-2022
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Visual Studio 2019 16.9 Build Tools
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          # 16.9.26 BuildTools link from Microsoft's VS 2019 release history.
+          $uri = 'https://download.visualstudio.microsoft.com/download/pr/245e99d9-73d8-4db6-84eb-493b0c059e15/b2fd18b4c66d507d50aced118be08937da399cd6edb3dc4bdadf5edc139496d4/vs_BuildTools.exe'
+          $bootstrapper = Join-Path $env:RUNNER_TEMP 'vs_BuildTools_16_9_26.exe'
+          Invoke-WebRequest -Uri $uri -OutFile $bootstrapper
+          $arguments = @(
+            '--quiet', '--wait', '--norestart', '--nocache',
+            '--installPath', 'C:\VS2019BuildTools',
+            '--add', 'Microsoft.VisualStudio.Component.VC.CoreBuildTools',
+            '--add', 'Microsoft.VisualStudio.Component.VC.14.28.16.9.x86.x64'
+          )
+          $process = Start-Process -FilePath $bootstrapper -ArgumentList $arguments -Wait -PassThru
+          if ($process.ExitCode -ne 0) {
+            throw "VS 2019 installer exited with code $($process.ExitCode)"
+          }
+
+      - name: Compile C++ candidates for x86
+        shell: cmd
+        run: |
+          call C:\VS2019BuildTools\VC\Auxiliary\Build\vcvarsall.bat amd64_x86 -vcvars_ver=14.28
+          if errorlevel 1 exit /b 1
+          mkdir out
+          cl /Bv > out\toolchain.txt 2>&1
+          where cl >> out\toolchain.txt
+          where link >> out\toolchain.txt
+          cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\zonegroup_getter.obj src\zonegroup_getter.cpp
+          if errorlevel 1 exit /b 1
+          cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\zonegroup_result.obj src\zonegroup_result.cpp
+          if errorlevel 1 exit /b 1
+          cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\zonegroup_factory_candidate.obj src\zonegroup_factory_candidate.cpp
+          if errorlevel 1 exit /b 1
+
+      - name: Upload compiler outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: msvc-14-28-x86-objects
+          path: |
+            out/*.obj
+            out/toolchain.txt
+          if-no-files-found: error
