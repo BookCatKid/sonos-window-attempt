@@ -38,6 +38,19 @@ jobs:
           if (-not (Test-Path $vcvars)) {
             $rootExists = Test-Path 'C:\VS2019BuildTools'
             Write-Output "::error::vcvarsall.bat missing at $vcvars; install root exists: $rootExists"
+            if ($rootExists) {
+              Get-ChildItem 'C:\VS2019BuildTools' -Force | ForEach-Object {
+                Write-Output "::notice::Install root contains $($_.Name)"
+              }
+              Get-ChildItem 'C:\VS2019BuildTools' -Recurse -Filter vcvarsall.bat -ErrorAction SilentlyContinue | ForEach-Object {
+                Write-Output "::notice::Found vcvarsall at $($_.FullName)"
+              }
+            }
+            $vswhere = Join-Path ${env:ProgramFiles(x86)} 'Microsoft Visual Studio\Installer\vswhere.exe'
+            if (Test-Path $vswhere) {
+              & $vswhere -products Microsoft.VisualStudio.Product.BuildTools -format json |
+                ForEach-Object { Write-Output "::notice::vswhere $_" }
+            }
             throw 'Requested MSVC toolset did not install at the expected path'
           }
 
