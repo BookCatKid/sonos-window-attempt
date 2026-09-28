@@ -62,10 +62,12 @@ The [pinned compiler run](https://github.com/BookCatKid/sonos-window-attempt/act
 used MSVC 19.28.29919: both small getter bodies match their reference bytes;
 the 707-byte operation factory does not yet match. The base `/O2` body is 591
 bytes. The `/Oy-` frame-pointer profile is 597 bytes and matches the first
-three reference bytes. A separate C++ lifetime candidate is 665 bytes and
-emits exception registration. Its first fixed-byte difference is at offset
-17, where the reference reserves eight stack bytes. Compare all variants with
-`python3 tools/compare_ci_objects.py ci-output/msvc-29919-vcall --variants`.
+three reference bytes. The typed lifetime candidate is 663 bytes and emits
+exception registration and the reference's direct controller vtable call.
+The two-reference ownership candidate is 686 bytes. Its first fixed-byte
+difference is at offset 17, where the reference reserves eight stack bytes
+for construction state. Compare all variants with
+`python3 tools/compare_ci_objects.py ci-output/msvc-29919-owner --variants`.
 
 The full-DLL comparison command exits 0 only for a byte-identical file. The reference DLL is
 32-bit native MSVC code with a SWIG C# boundary. Most named exports are generated
