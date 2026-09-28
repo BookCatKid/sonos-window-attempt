@@ -45,7 +45,7 @@ python3 tools/compare.py build/sclib-csharp.dll
 
 The [Windows workflow](.github/workflows/msvc-142-probe.yml) runs when a C++
 candidate or the workflow changes, and can also be started manually. It
-installs the historical VS 2019 16.9 Build Tools component for MSVC 14.28,
+installs the historical VS 2019 16.9.10 Build Tools for MSVC 14.28.29919,
 compiles the three C++ candidates for x86, and uploads their COFF objects and
 compiler-version report. It does not upload or run the installed Sonos app.
 The repository excludes `reference/`, derived `analysis/`, and local `build/`

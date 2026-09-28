@@ -15,13 +15,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install Visual Studio 2019 16.9 Build Tools
+      - name: Install Visual Studio 2019 16.9.10 Build Tools
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
-          # 16.9.26 BuildTools link from Microsoft's VS 2019 release history.
-          $uri = 'https://download.visualstudio.microsoft.com/download/pr/245e99d9-73d8-4db6-84eb-493b0c059e15/b2fd18b4c66d507d50aced118be08937da399cd6edb3dc4bdadf5edc139496d4/vs_BuildTools.exe'
-          $bootstrapper = Join-Path $env:RUNNER_TEMP 'vs_BuildTools_16_9_26.exe'
+          # 16.9.10 BuildTools link from Microsoft's VS 2019 release history.
+          $uri = 'https://download.visualstudio.microsoft.com/download/pr/3daa9785-bfd4-4cb1-bdc3-6d8d52159671/b24f75623e522f42ef6c5668bdb1683f7af3cfca48cddef77d0ead38207de802/vs_BuildTools.exe'
+          $bootstrapper = Join-Path $env:RUNNER_TEMP 'vs_BuildTools_16_9_10.exe'
           Invoke-WebRequest -Uri $uri -OutFile $bootstrapper
           $arguments = @(
             '--quiet', '--wait', '--norestart', '--nocache',
