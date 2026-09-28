@@ -17,6 +17,7 @@ FACTORY = {
 TARGETS = {
     "state-field": {
         "export": "GetZoneGroupStateField",
+        "symbol": "?GetZoneGroupStateField@ZoneGroupOperation@@QAEPAEXZ",
         "source": ROOT / "src" / "zonegroup_getter.cpp",
         "object": ROOT / "build" / "zonegroup_getter.obj",
         "va": 0x10383540,
@@ -24,6 +25,7 @@ TARGETS = {
     },
     "result-code": {
         "export": "GetZoneGroupOperationResult",
+        "symbol": "?GetZoneGroupOperationResult@ZoneGroupOperation@@QBEGXZ",
         "source": ROOT / "src" / "zonegroup_result.cpp",
         "object": ROOT / "build" / "zonegroup_result.obj",
         "va": 0x1037e840,
@@ -110,7 +112,8 @@ def compare_linked(names):
     linker = shutil.which("lld-link") or "/opt/homebrew/bin/lld-link"
     command = [linker, "/DLL", "/NOENTRY", "/NODEFAULTLIB", "/MACHINE:X86",
                f"/OUT:{LINKED}"]
-    command += [f"/EXPORT:{TARGETS[name]['export']}" for name in names]
+    command += [f"/EXPORT:{TARGETS[name]['export']}={TARGETS[name]['symbol']}"
+                for name in names]
     command += [str(TARGETS[name]["object"]) for name in names]
     subprocess.run(command, check=True)
     result = subprocess.run(["r2", "-q", "-c", "iEj", str(LINKED)],

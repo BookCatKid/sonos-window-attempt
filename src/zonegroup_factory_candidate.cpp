@@ -72,8 +72,14 @@ using NewFunction = Word (__cdecl *)(Word);
 using OutputBuilder = Word (__thiscall *)(Word, Word, Word, Word);
 using LogFunction = void (__cdecl *)(Word, Word, Word);
 
-extern "C" __declspec(noinline) Word * __thiscall
-GetZoneGroupStateFactoryCandidate(Word household, Word *result, Word *zone_name) {
+struct Household {
+    __declspec(noinline) Word *GetZoneGroupStateFactoryCandidate(
+        Word *result, Word *zone_name);
+};
+
+Word *Household::GetZoneGroupStateFactoryCandidate(
+    Word *result, Word *zone_name) {
+    Word household = reinterpret_cast<Word>(this);
     // Validate the household and resolve its ZoneGroupTopology client.
     Word controller = read32(household + 0xc8);
     if (!reinterpret_cast<Method0>(virtual_function(controller, 0x64))(controller)) {
