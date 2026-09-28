@@ -43,7 +43,8 @@ python3 tools/compare.py build/sclib-csharp.dll
 
 ## Windows compiler probe through GitHub Actions
 
-The manually triggered [Windows workflow](.github/workflows/msvc-142-probe.yml)
+The [Windows workflow](.github/workflows/msvc-142-probe.yml) runs when a C++
+candidate or the workflow changes, and can also be started manually. It
 installs the historical VS 2019 16.9 Build Tools component for MSVC 14.28,
 compiles the three C++ candidates for x86, and uploads their COFF objects and
 compiler-version report. It does not upload or run the installed Sonos app.
@@ -58,7 +59,7 @@ python3 tools/compare_ci_objects.py ci-output
 An object comparison is a first code-generation probe. Relocations and DLL
 layout require a later link comparison before declaring a function byte match.
 
-The comparison command exits 0 only for a byte-identical file. The reference DLL is
+The full-DLL comparison command exits 0 only for a byte-identical file. The reference DLL is
 32-bit native MSVC code with a SWIG C# boundary. Most named exports are generated
 wrappers. The underlying communication implementation still needs analysis.
 

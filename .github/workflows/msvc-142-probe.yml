@@ -2,6 +2,11 @@ name: MSVC 14.28 x86 probe
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - src/**
+      - .github/workflows/msvc-142-probe.yml
 
 jobs:
   compile:
