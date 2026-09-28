@@ -14,6 +14,7 @@ OBJECT_NAMES = {
 VARIANT_NAMES = {
     "factory-frame": "factory_frame_pointer.obj",
     "factory-lifetime": "factory_lifetime.obj",
+    "factory-owner": "factory_owner.obj",
 }
 
 
@@ -41,7 +42,7 @@ def object_code(path: Path):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("artifact_dir", type=Path, help="Directory containing downloaded CI objects")
-    parser.add_argument("--variants", action="store_true", help="also compare factory frame and lifetime variants")
+    parser.add_argument("--variants", action="store_true", help="also compare factory frame and ownership variants")
     args = parser.parse_args()
     all_matched = True
     names = {**OBJECT_NAMES, **(VARIANT_NAMES if args.variants else {})}
