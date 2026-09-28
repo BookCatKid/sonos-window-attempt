@@ -46,7 +46,7 @@ python3 tools/compare.py build/sclib-csharp.dll
 The [Windows workflow](.github/workflows/msvc-142-probe.yml) runs when a C++
 candidate or the workflow changes, and can also be started manually. It
 installs the historical VS 2019 16.9.10 Build Tools for MSVC 14.28.29919,
-compiles the three C++ candidates for x86, and uploads their COFF objects and
+compiles the C++ candidates for x86, and uploads their COFF objects and
 compiler-version report. It does not upload or run the installed Sonos app.
 The repository excludes `reference/`, derived `analysis/`, and local `build/`
 outputs. After downloading the `msvc-14-28-x86-objects` artifact to
@@ -58,11 +58,12 @@ python3 tools/compare_ci_objects.py ci-output
 
 An object comparison is a first code-generation probe. Relocations and DLL
 layout require a later link comparison before declaring a function byte match.
-The first successful [Actions run](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36364567940)
-used MSVC 19.28.29924: both small getter bodies match their reference bytes;
-the 707-byte operation factory does not yet match.
-The workflow now pins the exact 19.28.29919 compiler and tests an additional
-frame-pointer profile for the factory.
+The [pinned compiler run](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36365837967)
+used MSVC 19.28.29919: both small getter bodies match their reference bytes;
+the 707-byte operation factory does not yet match. The base `/O2` body is 591
+bytes. The `/Oy-` frame-pointer profile is 597 bytes and matches the first
+three reference bytes. A separate C++ lifetime candidate tests whether an
+owning destructor induces the reference's exception cleanup code.
 
 The full-DLL comparison command exits 0 only for a byte-identical file. The reference DLL is
 32-bit native MSVC code with a SWIG C# boundary. Most named exports are generated

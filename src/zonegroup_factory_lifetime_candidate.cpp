@@ -63,6 +63,11 @@ static __forceinline Word virtual_function(Word object, Word offset) {
     return read32(read32(object) + offset);
 }
 
+template <typename Function>
+static __forceinline Function virtual_method(Word object, Word offset) {
+    return reinterpret_cast<Function *>(read32(object))[offset / sizeof(Word)];
+}
+
 using Method0 = Word (__thiscall *)(Word);
 using Method2 = Word (__thiscall *)(Word, Word, Word);
 using Method4 = Word (__thiscall *)(Word, Word, Word, Word, Word);
@@ -75,7 +80,7 @@ struct AdjustedReference {
 
     ~AdjustedReference() {
         if (value)
-            reinterpret_cast<Method0>(virtual_function(value, 8))(value);
+            virtual_method<Method0>(value, 8)(value);
     }
 };
 
@@ -89,14 +94,14 @@ Word *Household::GetZoneGroupStateFactoryLifetimeCandidate(
     Word household = reinterpret_cast<Word>(this);
     // Validate the household and resolve its ZoneGroupTopology client.
     Word controller = read32(household + 0xc8);
-    if (!reinterpret_cast<Method0>(virtual_function(controller, 0x64))(controller)) {
+    if (!virtual_method<Method0>(controller, 0x64)(controller)) {
         *result = 0;
         return result;
     }
 
     Word name = *zone_name ? *zone_name : Target::empty_name;
     Word client_owner = household + 0xc;
-    Word client = reinterpret_cast<Method2>(virtual_function(client_owner, 4))(
+    Word client = virtual_method<Method2>(client_owner, 4)(
         client_owner, name, 1);
     Word client_base = client ? read32(client + 0x1c) : 0;
     Word zgt_client = client_base ? client_base + 0x1430 : 0;
@@ -111,9 +116,9 @@ Word *Household::GetZoneGroupStateFactoryLifetimeCandidate(
     Word aio = reinterpret_cast<NewFunction>(Target::allocate)(Size::aio);
     if (aio) {
         Word service_owner = read32(read32(zgt_client + 4) + 4) + zgt_client + 4;
-        Word service = reinterpret_cast<Method0>(virtual_function(service_owner, 0x48))(
+        Word service = virtual_method<Method0>(service_owner, 0x48)(
             service_owner);
-        Word operation = reinterpret_cast<Method4>(virtual_function(service_owner, 0x50))(
+        Word operation = virtual_method<Method4>(service_owner, 0x50)(
             service_owner, 2000, 2000, 0, 0);
         using AioConstructor = void (__thiscall *)(Word, Word, Word, Word, Word);
         reinterpret_cast<AioConstructor>(Target::initialize_aio)(
@@ -176,10 +181,10 @@ Word *Household::GetZoneGroupStateFactoryLifetimeCandidate(
         adjusted.value = cast_method == Target::cast_identity
             ? wrapper
             : reinterpret_cast<Method0>(cast_method)(wrapper);
-        reinterpret_cast<Method0>(virtual_function(adjusted.value, 4))(adjusted.value);
+        virtual_method<Method0>(adjusted.value, 4)(adjusted.value);
     }
     *result = wrapper;
     if (wrapper)
-        reinterpret_cast<Method0>(virtual_function(wrapper, 4))(wrapper);
+        virtual_method<Method0>(wrapper, 4)(wrapper);
     return result;
 }
