@@ -1,0 +1,13 @@
+# Native communication function entries from the first tranche and agent reports.
+# Use with tools/export_ghidra_slice.py --addresses-file.
+10373c40 # GetZoneGroupState operation factory
+10383540 # ZoneGroupState field getter
+1037e840 # operation result-code getter
+111c0760 # UPnP operation constructor
+111c3530 # service/action storage constructor
+111c52e0 # generic SOAP HTTP header builder
+111c67b0 # alternate HTTP sender
+11252c80 # serialized SOAP body length
+102f7150 # discovery path
+102f9110 # discovery path
+11096620 # discovery path

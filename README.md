@@ -21,6 +21,9 @@ handwritten assembler source or inline assembler instructions.
 - `analysis/zonegroup-ghidra.txt`: Ghidra's offline string xrefs, native
   function boundaries, and selected pseudocode for the same path. Ghidra
   completed without the original PDB; its saved project is in `analysis/ghidra/`.
+- `tools/export_ghidra_slice.py`: reuse the saved Ghidra project to export
+  selected native function pseudocode, signatures, and call relationships as
+  JSON Lines. `tools/ghidra/communication-seeds.txt` is the initial work list.
 - `analysis/source-match.md`: current C++ comparison results and the remaining
   mismatch for the operation factory. Reproduce with
   `python3 tools/match_functions.py` and `python3 tools/compare_factory_cpp.py`.
@@ -39,7 +42,17 @@ python3 tools/protocol_clues.py
 python3 tools/check_boundary.py
 python3 tools/agent_queue.py
 python3 tools/compare.py build/sclib-csharp.dll
+python3 tools/export_ghidra_slice.py --addresses-file tools/ghidra/communication-seeds.txt --output analysis/communication-slice.jsonl
 ```
+
+The saved Ghidra project took about 44 minutes to analyze initially. The
+read-only export command above reuses it without analyzing or launching Sonos;
+the first 11-function communication slice completed in about 10 seconds.
+Ghidra supplies candidate semantics and call graphs. Exact source recovery
+still requires C++ type and lifetime reconstruction, compilation with the
+pinned MSVC toolchain, and byte comparison against the reference. Start with
+smaller communication helpers, then work upward to the 707-byte operation
+factory and its nested constructors.
 
 ## Windows compiler probe through GitHub Actions
 
