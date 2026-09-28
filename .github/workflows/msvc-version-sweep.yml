@@ -1,0 +1,60 @@
+name: Locate MSVC 14.28 patch
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/msvc-version-sweep.yml
+
+jobs:
+  inspect:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - release: 16.9.4
+            url: https://download.visualstudio.microsoft.com/download/pr/3105fcfe-e771-41d6-9a1c-fc971e7d03a7/e0c2f5b63918562fd959049e12dffe64bf46ec2e89f7cadde3214921777ce5c2/vs_BuildTools.exe
+          - release: 16.9.8
+            url: https://download.visualstudio.microsoft.com/download/pr/9b757330-0648-444e-ae56-1d1d75f69471/8f74956bce36df73e8a036a938acba71b9cecb870fab70b0d35b1472c7bded57/vs_BuildTools.exe
+          - release: 16.9.17
+            url: https://download.visualstudio.microsoft.com/download/pr/6018563e-3c0d-4b71-ab5b-9560a207eaaf/4f3f37607ebd5af7929b248e3ada96dc42e7d80751075df345fa1dd366738a76/vs_BuildTools.exe
+    runs-on: windows-2022
+    timeout-minutes: 45
+    steps:
+      - name: Install historical Build Tools ${{ matrix.release }}
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $bootstrapper = Join-Path $env:RUNNER_TEMP 'vs_BuildTools.exe'
+          Invoke-WebRequest -Uri '${{ matrix.url }}' -OutFile $bootstrapper
+          $arguments = @(
+            '--quiet', '--wait', '--norestart', '--nocache',
+            '--installPath', 'C:\VS2019BuildTools',
+            '--add', 'Microsoft.VisualStudio.Workload.VCTools',
+            '--add', 'Microsoft.VisualStudio.Component.VC.CoreBuildTools',
+            '--add', 'Microsoft.VisualStudio.Component.VC.Tools.x86.x64',
+            '--add', 'Microsoft.VisualStudio.Component.Windows10SDK.19041',
+            '--add', 'Microsoft.VisualStudio.Component.VC.14.28.16.9.x86.x64'
+          )
+          $process = Start-Process -FilePath $bootstrapper -ArgumentList $arguments -Wait -PassThru
+          if ($process.ExitCode -ne 0) { throw "Installer exited $($process.ExitCode)" }
+          if (-not (Test-Path 'C:\VS2019BuildTools\VC\Auxiliary\Build\vcvarsall.bat')) {
+            throw 'vcvarsall.bat missing after install'
+          }
+
+      - name: Record x86 compiler and linker versions
+        shell: cmd
+        run: |
+          call C:\VS2019BuildTools\VC\Auxiliary\Build\vcvarsall.bat amd64_x86 -vcvars_ver=14.28
+          if errorlevel 1 exit /b 1
+          cl /Bv > version.txt 2>&1
+          findstr /C:"Compiler Version" /C:"c2.dll" /C:"link.exe" version.txt
+
+      - name: Upload version report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: msvc-${{ matrix.release }}-version
+          path: version.txt
+          if-no-files-found: warn
