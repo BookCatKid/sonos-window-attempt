@@ -17,8 +17,10 @@ cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\zonegroup_factory_candidate.obj s
 if errorlevel 1 goto failed
 cl /nologo /O2 /Oy- /MD /GS /GR /EHsc /Zi /c /Foout\factory_frame_pointer.obj src\zonegroup_factory_candidate.cpp > out\factory_frame_pointer.log 2>&1
 if errorlevel 1 goto failed
+cl /nologo /O2 /Oy- /MD /GS /GR /EHsc /Zi /c /Foout\factory_lifetime.obj src\zonegroup_factory_lifetime_candidate.cpp > out\factory_lifetime.log 2>&1
+if errorlevel 1 goto failed
 exit /b 0
 
 :failed
-for %%F in (out\setup.log out\getter.log out\result.log out\factory.log out\factory_frame_pointer.log) do if exist %%F for /f "usebackq delims=" %%L in ("%%F") do echo ::error::%%L
+for %%F in (out\setup.log out\getter.log out\result.log out\factory.log out\factory_frame_pointer.log out\factory_lifetime.log) do if exist %%F for /f "usebackq delims=" %%L in ("%%F") do echo ::error::%%L
 exit /b 1
