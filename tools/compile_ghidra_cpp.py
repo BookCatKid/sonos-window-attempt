@@ -68,15 +68,60 @@ def definition_with_entry_name(record):
     return source[:match.start(1)] + 'FUN_' + record['entry'] + source[match.end(1):]
 
 
+def msvc_compatible_thiscall(source):
+    """Express Ghidra free-function thiscall output in MSVC-accepted C++.
+
+    Ghidra makes the ECX/this value an explicit first parameter.  MSVC rejects
+    __thiscall on a free function, while __fastcall gives the first two
+    parameters ECX and EDX.  Insert an unused second parameter so the explicit
+    Ghidra this value remains in ECX and every original later parameter keeps
+    its stack position.
+    """
+    search_from = 0
+    while True:
+        marker = source.find('__thiscall', search_from)
+        if marker < 0:
+            return source
+        source = source[:marker] + '__fastcall' + source[marker + len('__thiscall'):]
+        open_paren = source.find('(', marker + len('__fastcall'))
+        if open_paren < 0:
+            raise ValueError('missing parameter list after __thiscall')
+        depth = 0
+        close_paren = None
+        first_comma = None
+        for index in range(open_paren, len(source)):
+            char = source[index]
+            if char == '(':
+                depth += 1
+            elif char == ')':
+                depth -= 1
+                if depth == 0:
+                    close_paren = index
+                    break
+            elif char == ',' and depth == 1 and first_comma is None:
+                first_comma = index
+        if close_paren is None:
+            raise ValueError('unterminated parameter list after __thiscall')
+        first_end = first_comma if first_comma is not None else close_paren
+        if not source[open_paren + 1:first_end].strip() or source[open_paren + 1:first_end].strip() == 'void':
+            raise ValueError('__thiscall function has no explicit Ghidra this parameter')
+        insertion = first_end
+        source = source[:insertion] + ',void *ghidra_unused_edx' + source[insertion:]
+        search_from = close_paren + len(',void *ghidra_unused_edx') + 1
+
+
 def cpp_source(records, rename_definitions=False):
     thunks = sorted({name for record in records for name in
                      re.findall(r'\bthunk_FUN_[0-9a-f]{8}\b', record['decompiled_c'])})
     declarations = '\n'.join(f'extern int {name}(...);' for name in thunks)
-    return HEADER + declarations + '\n' + '\n'.join(
-        f'// Reference entry {r["entry"]}; body size {r["body_bytes"]} bytes.\n'
-        f'#line 1 "ENTRY_{r["entry"]}"\n'
-        f'{definition_with_entry_name(r) if rename_definitions else r["decompiled_c"]}'
-        for r in records)
+    definitions = []
+    for record in records:
+        definition = definition_with_entry_name(record) if rename_definitions else record['decompiled_c']
+        definitions.append(
+            f'// Reference entry {record["entry"]}; body size {record["body_bytes"]} bytes.\n'
+            f'#line 1 "ENTRY_{record["entry"]}"\n'
+            f'{msvc_compatible_thiscall(definition)}')
+    return HEADER + declarations + '\n' + '\n'.join(definitions)
 
 
 def syntax_ok(source, scratch):
