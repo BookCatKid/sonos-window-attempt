@@ -32,6 +32,10 @@
     "directory": "analysis/compiled-cpp-single-state-guards"
   },
   {
+    "object": "multistate_terminate_guards_reference_flags",
+    "directory": "analysis/compiled-cpp-multistate-terminate"
+  },
+  {
     "object": "signature_pilot_reference_flags",
     "directory": "analysis/compiled-cpp-signature-pilot"
   },
