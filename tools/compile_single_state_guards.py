@@ -108,13 +108,15 @@ def lower(record,evidence,abi):
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('exports',nargs='+',type=Path)
     p.add_argument('--evidence',type=Path,default=ROOT/'analysis/eh-lifetime-evidence.jsonl')
+    p.add_argument('--entries',type=Path,help='Limit candidates to these hexadecimal function entries')
     p.add_argument('--output-dir',type=Path,default=ROOT/'analysis/compiled-cpp-single-state-guards')
     p.add_argument('--emit-source',type=Path,default=ROOT/'src/generated/single_state_guards.cpp')
     p.add_argument('--emit-index',type=Path,default=ROOT/'src/generated/single-state-guards-index.tsv')
     a=p.parse_args();records=load_records(a.exports);abi=CallABI(a.exports);candidates=[]
+    selected=set(a.entries.read_text().split()) if a.entries else None
     for line in a.evidence.open():
         e=json.loads(line)
-        if e['entry'] in records:
+        if e['entry'] in records and (selected is None or e['entry'] in selected):
             r=lower(records[e['entry']],e,abi)
             if r:candidates.append(r)
     candidates.sort(key=lambda r:r['entry']);print('Candidates:',len(candidates),'bytes:',sum(r['body_bytes'] for r in candidates),flush=True)

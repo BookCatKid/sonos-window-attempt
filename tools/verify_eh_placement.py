@@ -6,6 +6,8 @@ identities are established through reference imports, PE load configuration, and
 an independently checked security-cookie comparison routine. No DLL is executed.
 """
 import json,re,struct
+from collections import defaultdict
+from functools import lru_cache
 from pathlib import Path
 from capstone import Cs,CS_ARCH_X86,CS_MODE_32
 from classify_functions import function_bytes
@@ -24,6 +26,20 @@ def verified_eh_targets(directory,obj,reference,base,pe_sections,symbol_vas):
     if not function_bytes(reference,cookie,4,base,pe_sections):return {},{'error':'Invalid PE cookie address'}
     sections,symbols,indices=read_coff(obj)
     names={s['name']:s for s in symbols}
+    # Index COFF boundaries once. Scanning the whole symbol table for every
+    # handler/table made the bulk graph check quadratic in tranche size.
+    offsets=defaultdict(set)
+    handlers_by_entry=defaultdict(list)
+    for symbol in symbols:
+        offsets[symbol['section']].add(symbol['offset'])
+        if symbol['name'].startswith('__ehhandler$'):
+            match=re.search(r'FUN_([0-9a-f]{8})',symbol['name'])
+            if match:handlers_by_entry[match.group(1)].append(symbol['name'])
+    ends={}
+    for section_number,positions in offsets.items():
+        ordered=sorted(positions);size=len(sections[section_number-1]['code'])
+        for i,start in enumerate(ordered):
+            ends[section_number,start]=ordered[i+1] if i+1<len(ordered) else size
     disasm=Cs(CS_ARCH_X86,CS_MODE_32)
     targets={'___security_cookie':[cookie]}
     verified=[];rejected=[]
@@ -32,8 +48,7 @@ def verified_eh_targets(directory,obj,reference,base,pe_sections,symbol_vas):
 
     def extent(symbol):
         sec=sections[symbol['section']-1];start=symbol['offset']
-        ends=[s['offset'] for s in symbols if s['section']==symbol['section'] and s['offset']>start]
-        end=min(ends,default=len(sec['code']))
+        end=ends.get((symbol['section'],start),len(sec['code']))
         data=sec['code'][start:end]
         if sec['name'].startswith('.text'):
             ins=list(disasm.disasm(data,0))
@@ -42,6 +57,7 @@ def verified_eh_targets(directory,obj,reference,base,pe_sections,symbol_vas):
             data=data[:ins[-1].address+ins[-1].size]
         return data
 
+    @lru_cache(maxsize=None)
     def cookie_check(va):
         seen=set()
         for _ in range(16):
@@ -59,6 +75,7 @@ def verified_eh_targets(directory,obj,reference,base,pe_sections,symbol_vas):
                     ins[2].mnemonic in ('ret','bnd ret'))
         return False
 
+    @lru_cache(maxsize=None)
     def import_targets(name):
         if not name.startswith('__imp_'):return []
         bare=name[len('__imp_'):].lstrip('_')
@@ -134,7 +151,7 @@ def verified_eh_targets(directory,obj,reference,base,pe_sections,symbol_vas):
 
     for item in json.loads(inventory.read_text()):
         entry=item['entry']
-        handlers=[n for n in names if n.startswith('__ehhandler$') and 'FUN_'+entry in n]
+        handlers=handlers_by_entry.get(entry,[])
         local={};proofs=[]
         if len(handlers)!=1:
             rejected.append({'entry':entry,'reason':'Missing or ambiguous compiler handler'});continue
