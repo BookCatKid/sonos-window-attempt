@@ -17,6 +17,11 @@ from pathlib import Path
 from compile_ghidra_cpp import COMPILER, HEADER, ROOT, load_records
 
 SCSTR = '''
+struct RefCounted {
+    virtual void Reserved();
+    virtual void AddRef();
+};
+
 struct SCStr {
     void *rep;
     bool operator==(const char *other);
@@ -44,10 +49,11 @@ PLAIN_CALL = re.compile(r'\b([A-Za-z_]\w*)\s*\(')
 ALLOWED_CALLS = {'if', 'while', 'switch', 'sizeof', 'return', 'int', 'uint',
                  'long', 'short', 'char', 'float', 'double', 'undefined',
                  'undefined1', 'undefined2', 'undefined4', 'undefined8',
-                 'code', 'SCStr', 'operator', *SUPPORTED}
+                 'code', 'SCStr', 'operator', 'AddRef', *SUPPORTED}
 THISCALL = re.compile(
     r'(?P<result>[^\n]+?)\s+__thiscall\s+(?P<name>(?:thunk_)?FUN_[0-9a-f]{8})'
     r'\((?P<parameters>[^)]*)\)')
+RAW_ADDREF = re.compile(r'\(\*\*\(code \*\*\)\(\*param_1 \+ 4\)\)\(\);')
 
 
 def call_end(source, opening):
@@ -122,6 +128,13 @@ def restore_pointer_width_casts(source):
             source = re.sub(r'(\*\s*' + re.escape(destination) +
                             r'\s*=\s*)' + re.escape(value) + r'(\s*;)',
                             r'\g<1>(undefined4)' + value + r'\2', source)
+    return source
+
+
+def restore_query_addref(source, body_bytes):
+    """Recover the receiver of the repeated 103-byte interface query family."""
+    if body_bytes == 103 and len(RAW_ADDREF.findall(source)) == 2 and 'operator==' in source:
+        source = RAW_ADDREF.sub('((RefCounted *)param_1)->AddRef();', source)
     return source
 
 
@@ -221,6 +234,7 @@ def main():
         rewritten = rewrite_calls(source)
         if rewritten:
             rewritten = restore_pointer_width_casts(rewritten)
+            rewritten = restore_query_addref(rewritten, record['body_bytes'])
         if rewritten and eligible(rewritten):
             candidates.append({**record, 'source': rewritten})
     candidates.sort(key=lambda r: int(r['entry'], 16))
