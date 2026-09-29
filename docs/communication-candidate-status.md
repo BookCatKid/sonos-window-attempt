@@ -7,7 +7,7 @@ comparison masks four-byte COFF relocation slots and tests all other bytes at
 their original offsets. It does not count object matches as linked-DLL bytes.
 
 | Reference entry | Function | Reference body | Pinned MSVC body | Equal fixed bytes | Relocations |
-| --- | --- | ---: | ---: | --- |
+| --- | --- | ---: | ---: | ---: | ---: |
 | `0x102f7150` | `SCLibrary::getHousehold` | 97 | 99 | 48/85 | 3 |
 | `0x11096620` | discovery object start | 61 | 61 | 37/37 | 6 |
 | `0x111c3530` | service/action storage constructor | 286 | 233 | 21/209 | 6 |

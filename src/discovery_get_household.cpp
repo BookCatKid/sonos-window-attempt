@@ -16,9 +16,8 @@ struct SCHousehold : SCIHousehold {};
 
 template <class T>
 struct SCRetPtr {
-    // `volatile` forces this clang-cl experiment to keep the moved-from
-    // temporary and its guarded cleanup visible. It is a code-generation aid,
-    // not evidence that the original SCRetPtr member was declared volatile.
+    // Keep the moved-from temporary and its guarded cleanup visible to MSVC.
+    // This does not establish the original member's source-level qualifier.
     T *volatile value;
 
     SCRetPtr();
@@ -32,8 +31,9 @@ struct SCRetPtr {
     }
 
     ~SCRetPtr() {
-        if (value)
-            value->Release();
+        T *current = value;
+        if (current)
+            current->Release();
     }
 };
 
