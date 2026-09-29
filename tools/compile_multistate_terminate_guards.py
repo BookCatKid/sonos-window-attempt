@@ -155,7 +155,7 @@ def main():
     parser.add_argument("--emit-index", type=Path, default=ROOT / "src/generated/multistate-terminate-guards-index.tsv")
     args = parser.parse_args()
     records = load_records(args.exports)
-    abi = CallABI(args.exports)
+    abi = CallABI(args.exports, recover_implicit_register=True)
     candidates = []
     for line in args.evidence.open():
         evidence = json.loads(line)

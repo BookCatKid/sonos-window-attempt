@@ -348,118 +348,127 @@ extern char ghidra_vftable_SwfObjAVTAdapter[];
 extern char ghidra_vftable_SwfObjCM[];
 extern void thunk_FUN_1148a50e(void *allocation, unsigned int bytes) noexcept;
 struct CallABI_thunk_FUN_10223600 { void thunk_FUN_10223600(undefined4); };
+extern void __fastcall abi_call_thunk_FUN_104da760(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_103d60a0(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10202e00(int *);
+extern void __fastcall abi_call_thunk_FUN_10203970(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_110a9ef0(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_1059c050(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_1059d800(int);
 extern undefined4 * __cdecl abi_call_thunk_FUN_10292c70(undefined4 *);
+struct CallABI_thunk_FUN_1059d940 { void thunk_FUN_1059d940(uint); };
+extern void __fastcall abi_call_thunk_FUN_10247e10(int *);
+struct CallABI_thunk_FUN_102460b0 { undefined4 thunk_FUN_102460b0(undefined4, int *); };
+struct CallABI_thunk_FUN_10246290 { undefined4 thunk_FUN_10246290(undefined4, int *); };
+extern void __fastcall abi_call_thunk_FUN_10267120(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_104ed870(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_1039fa00(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_102037c0(undefined4 *);
 extern void __cdecl abi_call_thunk_FUN_111fd590(void *);
+extern void __fastcall abi_call_thunk_FUN_101eb2b0(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10461ec0(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_101f53d0(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_101ec4a0(int *);
+extern void __fastcall abi_call_thunk_FUN_104dec20(int);
+extern void __fastcall abi_call_thunk_FUN_1022de20(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_104ad290(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_105036b0(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_1053f780(int);
+extern void __fastcall abi_call_thunk_FUN_102cc960(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_102cc870(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10203d60(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10def0d0(SCStr *);
+extern void __fastcall abi_call_thunk_FUN_105d3a20(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_104ccb60(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_105a1c80(int *);
+extern void __fastcall abi_call_thunk_FUN_105a1d20(int *);
+extern void __fastcall abi_call_thunk_FUN_106da680(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_1036e480(int *);
+extern void __fastcall abi_call_thunk_FUN_10688910(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_111482f0(undefined4 *);
+struct CallABI_thunk_FUN_106ab5b0 { undefined4 thunk_FUN_106ab5b0(undefined4, int *); };
+struct CallABI_thunk_FUN_108288d0 { undefined4 thunk_FUN_108288d0(undefined4, int *); };
+struct CallABI_thunk_FUN_102a3ea0 { undefined4 thunk_FUN_102a3ea0(undefined4, int *); };
 extern void __cdecl abi_call_thunk_FUN_1086f2f0(undefined4, int *);
+struct CallABI_thunk_FUN_10bcf040 { undefined4 thunk_FUN_10bcf040(undefined4, int *); };
+struct CallABI_thunk_FUN_10bceec0 { undefined4 thunk_FUN_10bceec0(undefined4, int *); };
+extern void __fastcall abi_call_thunk_FUN_104d76e0(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10c41180(int);
+extern void __fastcall abi_call_thunk_FUN_103d0880(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_111a4f00(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10ce0370(int);
+extern void __fastcall abi_call_thunk_FUN_10cee770(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10cf58e0(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10cf71a0(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10ce3510(int *);
+extern void __fastcall abi_call_thunk_FUN_10fcd150(undefined4 *);
 extern undefined4 * __cdecl abi_call_thunk_FUN_1037bed0(undefined4 *, int);
+extern void __fastcall abi_call_thunk_FUN_10d15c80(int *);
+extern void __fastcall abi_call_thunk_FUN_104ddc70(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10cf7110(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10d43400(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10d53ba0(int *);
 extern undefined4 * __cdecl abi_call_thunk_FUN_101da4a0(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10203dc0(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10d752e0(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10d753d0(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10d751f0(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_11261f10(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_106845c0(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_101eb3f0(undefined4 *);
+struct CallABI_thunk_FUN_10dec580 { undefined4 thunk_FUN_10dec580(undefined4, int *); };
 extern undefined4 * __cdecl abi_call_thunk_FUN_10436cd0(undefined4 *);
 extern undefined4 * __cdecl abi_call_thunk_FUN_10e01b60(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10e26f80(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10e26da0(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10e26e90(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_103fa5c0(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_101d19a0(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_103fa6b0(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10e5ef30(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10e5e6b0(int *);
+extern void __fastcall abi_call_thunk_FUN_102c45c0(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_11007f30(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_101a2bf0(int *);
+extern void __fastcall abi_call_thunk_FUN_10c68c80(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10f82750(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10f82b00(int *);
 extern undefined4 * __cdecl abi_call_thunk_FUN_1023ab10(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_106cffb0(undefined4 *);
 extern undefined4 * __cdecl abi_call_thunk_FUN_1037a2b0(undefined4 *);
-extern int thunk_FUN_101a2bf0(...);
-extern int thunk_FUN_101d19a0(...);
-extern int thunk_FUN_101eb2b0(...);
-extern int thunk_FUN_101eb3f0(...);
-extern int thunk_FUN_101ec4a0(...);
-extern int thunk_FUN_101f53d0(...);
-extern int thunk_FUN_10202e00(...);
-extern int thunk_FUN_102037c0(...);
-extern int thunk_FUN_10203970(...);
-extern int thunk_FUN_10203d60(...);
-extern int thunk_FUN_10203dc0(...);
+extern void __fastcall abi_call_thunk_FUN_10faf960(int);
+extern void __fastcall abi_call_thunk_FUN_10305f70(int);
+extern void __fastcall abi_call_thunk_FUN_10318ac0(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10b6d850(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_111c0a80(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_111fc270(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10e5df30(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10bd6f00(int *);
+extern void __fastcall abi_call_thunk_FUN_10dd1440(int *);
+extern void __fastcall abi_call_thunk_FUN_11042880(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_10f41620(undefined4 *);
+extern void __fastcall abi_call_thunk_FUN_1113e6f0(undefined4 *);
 extern int thunk_FUN_10223600(...);
-extern int thunk_FUN_1022de20(...);
 extern int thunk_FUN_102460b0(...);
 extern int thunk_FUN_10246290(...);
 extern int thunk_FUN_10247e10(...);
-extern int thunk_FUN_10267120(...);
 extern int thunk_FUN_102a3ea0(...);
-extern int thunk_FUN_102c45c0(...);
-extern int thunk_FUN_102cc870(...);
-extern int thunk_FUN_102cc960(...);
-extern int thunk_FUN_10305f70(...);
-extern int thunk_FUN_10318ac0(...);
-extern int thunk_FUN_1036e480(...);
-extern int thunk_FUN_1039fa00(...);
-extern int thunk_FUN_103d0880(...);
-extern int thunk_FUN_103d60a0(...);
-extern int thunk_FUN_103fa5c0(...);
-extern int thunk_FUN_103fa6b0(...);
-extern int thunk_FUN_10461ec0(...);
-extern int thunk_FUN_104ad290(...);
-extern int thunk_FUN_104ccb60(...);
-extern int thunk_FUN_104d76e0(...);
 extern int thunk_FUN_104d7a00(...);
-extern int thunk_FUN_104da760(...);
-extern int thunk_FUN_104ddc70(...);
-extern int thunk_FUN_104dec20(...);
-extern int thunk_FUN_104ed870(...);
-extern int thunk_FUN_105036b0(...);
 extern int thunk_FUN_1052e8a0(...);
-extern int thunk_FUN_1053f780(...);
-extern int thunk_FUN_1059c050(...);
-extern int thunk_FUN_1059d800(...);
 extern int thunk_FUN_1059d940(...);
-extern int thunk_FUN_105a1c80(...);
-extern int thunk_FUN_105a1d20(...);
-extern int thunk_FUN_105d3a20(...);
-extern int thunk_FUN_106845c0(...);
-extern int thunk_FUN_10688910(...);
 extern int thunk_FUN_106ab5b0(...);
-extern int thunk_FUN_106cffb0(...);
-extern int thunk_FUN_106da680(...);
 extern int thunk_FUN_108288d0(...);
-extern int thunk_FUN_10b6d850(...);
 extern int thunk_FUN_10bcda40(...);
 extern int thunk_FUN_10bceec0(...);
 extern int thunk_FUN_10bcf040(...);
-extern int thunk_FUN_10bd6f00(...);
-extern int thunk_FUN_10c41180(...);
-extern int thunk_FUN_10c68c80(...);
-extern int thunk_FUN_10ce0370(...);
 extern int thunk_FUN_10ce2c30(...);
-extern int thunk_FUN_10ce3510(...);
-extern int thunk_FUN_10cee770(...);
-extern int thunk_FUN_10cf58e0(...);
-extern int thunk_FUN_10cf7110(...);
-extern int thunk_FUN_10cf71a0(...);
-extern int thunk_FUN_10d15c80(...);
-extern int thunk_FUN_10d43400(...);
-extern int thunk_FUN_10d53ba0(...);
-extern int thunk_FUN_10d751f0(...);
-extern int thunk_FUN_10d752e0(...);
-extern int thunk_FUN_10d753d0(...);
-extern int thunk_FUN_10dd1440(...);
 extern int thunk_FUN_10dec580(...);
-extern int thunk_FUN_10def0d0(...);
-extern int thunk_FUN_10e26da0(...);
-extern int thunk_FUN_10e26e90(...);
-extern int thunk_FUN_10e26f80(...);
-extern int thunk_FUN_10e5df30(...);
-extern int thunk_FUN_10e5e6b0(...);
-extern int thunk_FUN_10e5ef30(...);
-extern int thunk_FUN_10f41620(...);
-extern int thunk_FUN_10f82750(...);
-extern int thunk_FUN_10f82b00(...);
-extern int thunk_FUN_10fab6b0(...);
-extern int thunk_FUN_10faf960(...);
-extern int thunk_FUN_10fcd150(...);
-extern int thunk_FUN_11007f30(...);
-extern int thunk_FUN_11042880(...);
-extern int thunk_FUN_110a9ef0(...);
-extern int thunk_FUN_1113e6f0(...);
-extern int thunk_FUN_111482f0(...);
-extern int thunk_FUN_111a4f00(...);
-extern int thunk_FUN_111c0a80(...);
-extern int thunk_FUN_111fc270(...);
 extern int thunk_FUN_11202570(...);
 extern int thunk_FUN_1123fcd0(...);
 extern int thunk_FUN_1123fce0(...);
 extern int thunk_FUN_1124a3d0(...);
 extern int thunk_FUN_1124a3e0(...);
 extern int thunk_FUN_1124d790(...);
-extern int thunk_FUN_11261f10(...);
 struct Recovered_101263e0 { int FUN_101263e0(byte param_2) noexcept; };
 struct Recovered_101269f0 { int FUN_101269f0(byte param_2) noexcept; };
 struct Recovered_101b1680 { SCStr * FUN_101b1680(byte param_2) noexcept; };
@@ -697,7 +706,6 @@ struct Recovered_10fb4120 { int FUN_10fb4120(int *param_2); };
 struct Recovered_10fb4330 { int FUN_10fb4330(int *param_2) noexcept; };
 struct Recovered_10fb4400 { int FUN_10fb4400(int *param_2) noexcept; };
 struct Recovered_10fb4510 { int FUN_10fb4510(int *param_2) noexcept; };
-struct Recovered_10fb8750 { undefined4 FUN_10fb8750(byte *param_2); };
 struct Recovered_10fc2810 { int FUN_10fc2810(byte param_2) noexcept; };
 struct Recovered_10fca650 { undefined4 * FUN_10fca650(byte param_2) noexcept; };
 struct Recovered_10fd10f0 { undefined4 * FUN_10fd10f0(byte param_2) noexcept; };
@@ -3148,7 +3156,7 @@ void __fastcall FUN_102036c0(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCAllNodeBrowseItemBase;
   param_1[6] = (undefined4)&ghidra_vftable_SCAllNodeBrowseItemBase;
   param_1[0xe] = (undefined4)&ghidra_vftable_SCAllNodeBrowseItemBase;
-  thunk_FUN_10202e00();
+  abi_call_thunk_FUN_10202e00((int *)(param_1));
   ([&]() noexcept {
 
   ((SCStr *)(param_1 + 0x12))->int_release();
@@ -3172,8 +3180,8 @@ void __fastcall FUN_102036c0(undefined4 *param_1) noexcept
   ((SCStr *)(param_1 + 0xf))->int_release();
   param_1[0xf] = 0;
   param_1[0xe] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_103d60a0();
-  thunk_FUN_104da760();
+  abi_call_thunk_FUN_103d60a0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_104da760((undefined4 *)(param_1));
   
 })();
 
@@ -3229,8 +3237,8 @@ void __fastcall FUN_102037c0(undefined4 *param_1) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x95] = (undefined4)&ghidra_vftable_SCSwfObjBCListener;
-  thunk_FUN_110a9ef0();
-  thunk_FUN_10203970();
+  abi_call_thunk_FUN_110a9ef0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_10203970((undefined4 *)(param_1));
   
 })();
 
@@ -3265,7 +3273,7 @@ void __fastcall FUN_10203dc0(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x41))->int_release();
   param_1[0x41] = 0;
-  thunk_FUN_10202e00();
+  abi_call_thunk_FUN_10202e00((int *)(param_1));
   piVar1 = (int *)param_1[0x17];
   
 })();
@@ -3298,8 +3306,8 @@ void __fastcall FUN_10203dc0(undefined4 *param_1) noexcept
   param_1[0x10] = (undefined4)&ghidra_vftable_SCIObj;
   param_1[0xf] = (undefined4)&ghidra_vftable_SCIObj;
   param_1[0xe] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_103d60a0();
-  thunk_FUN_104da760();
+  abi_call_thunk_FUN_103d60a0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_104da760((undefined4 *)(param_1));
   
 })();
 
@@ -3500,7 +3508,7 @@ void __fastcall FUN_1022df10(int *param_1) noexcept
   *param_1 = (int)(undefined4)&ghidra_vftable_SCController__LimitedAccessStateData;
   local_14 = param_1;
   if (param_1[8] != 0) {
-    thunk_FUN_1059d940(param_1[8]);
+    ((CallABI_thunk_FUN_1059d940 *)(param_1))->thunk_FUN_1059d940((uint)(param_1[8]));
     param_1[8] = 0;
   }
   piVar3 = (int *)abi_call_thunk_FUN_10292c70((undefined4 *)(&local_14));
@@ -3534,8 +3542,8 @@ void __fastcall FUN_1022df10(int *param_1) noexcept
 ([&]() noexcept {
 
   *param_1 = (int)(undefined4)&ghidra_vftable_SCTimerUser;
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
+  abi_call_thunk_FUN_1059d800((int)(param_1));
+  abi_call_thunk_FUN_1059c050((undefined4 *)(param_1));
   
 })();
 
@@ -3687,7 +3695,7 @@ void __fastcall FUN_10247210(SCStr *param_1) noexcept
 
   ((SCStr *)((char *)param_1 + (0x14)))->int_release();
   *(undefined4 *)((SCStr *)((char *)param_1 + (0x14))) = 0;
-  thunk_FUN_10247e10();
+  abi_call_thunk_FUN_10247e10((int *)(param_1));
   
 })();
 ([&]() noexcept {
@@ -3760,9 +3768,9 @@ void __fastcall FUN_102473e0(int param_1) noexcept
 {
   int *piVar1;
 
-  thunk_FUN_10246290((undefined4 *)(param_1 + 0x38),*(undefined4 *)(*(int *)(param_1 + 0x38) + 4));
+  ((CallABI_thunk_FUN_10246290 *)(param_1))->thunk_FUN_10246290((undefined4)((undefined4 *)(param_1 + 0x38)), (int *)(*(undefined4 *)(*(int *)(param_1 + 0x38) + 4)));
   thunk_FUN_1148a50e((void *)(*(undefined4 *)(param_1 + 0x38)), 0x18);
-  thunk_FUN_10246290((undefined4 *)(param_1 + 0x30),*(undefined4 *)(*(int *)(param_1 + 0x30) + 4));
+  ((CallABI_thunk_FUN_10246290 *)(param_1))->thunk_FUN_10246290((undefined4)((undefined4 *)(param_1 + 0x30)), (int *)(*(undefined4 *)(*(int *)(param_1 + 0x30) + 4)));
   thunk_FUN_1148a50e((void *)(*(undefined4 *)(param_1 + 0x30)), 0x18);
   piVar1 = *(int **)(param_1 + 0x2c);
   ([&]() noexcept {
@@ -3772,7 +3780,7 @@ void __fastcall FUN_102473e0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0x2c) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_102460b0((undefined4 *)(param_1 + 0x20),*(undefined4 *)(*(int *)(param_1 + 0x20) + 4));
+  ((CallABI_thunk_FUN_102460b0 *)(param_1))->thunk_FUN_102460b0((undefined4)((undefined4 *)(param_1 + 0x20)), (int *)(*(undefined4 *)(*(int *)(param_1 + 0x20) + 4)));
   thunk_FUN_1148a50e((void *)(*(undefined4 *)(param_1 + 0x20)), 0x18);
   
 })();
@@ -3815,7 +3823,7 @@ void __fastcall FUN_10247780(SCStr *param_1) noexcept
 
   ((SCStr *)((char *)param_1 + (0x10)))->int_release();
   *(undefined4 *)((SCStr *)((char *)param_1 + (0x10))) = 0;
-  thunk_FUN_10247e10();
+  abi_call_thunk_FUN_10247e10((int *)(param_1));
   
 })();
 ([&]() noexcept {
@@ -3840,7 +3848,7 @@ SCStr * Recovered_10247a30::FUN_10247a30(byte param_2) noexcept
 
   ((SCStr *)((char *)param_1 + (0x14)))->int_release();
   *(undefined4 *)((SCStr *)((char *)param_1 + (0x14))) = 0;
-  thunk_FUN_10247e10();
+  abi_call_thunk_FUN_10247e10((int *)(param_1));
   
 })();
 ([&]() noexcept {
@@ -4199,7 +4207,7 @@ void __fastcall FUN_10267220(undefined4 *param_1) noexcept
     param_1[0x14] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10267120();
+  abi_call_thunk_FUN_10267120((undefined4 *)(param_1));
   
 })();
 
@@ -4405,7 +4413,7 @@ void __fastcall FUN_102c5000(undefined4 *param_1) noexcept
   ((SCStr *)(param_1 + 0xd))->int_release();
   param_1[0xd] = 0;
   param_1[0xb] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_104ed870();
+  abi_call_thunk_FUN_104ed870((undefined4 *)(param_1));
   
 })();
 
@@ -5589,7 +5597,7 @@ void __fastcall FUN_1039fdb0(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x12))->int_release();
   param_1[0x12] = 0;
-  thunk_FUN_1039fa00();
+  abi_call_thunk_FUN_1039fa00((undefined4 *)(param_1));
   
 })();
 
@@ -5616,7 +5624,7 @@ undefined4 * Recovered_103a0360::FUN_103a0360(byte param_2) noexcept
 
   ((SCStr *)(param_1 + 0x12))->int_release();
   param_1[0x12] = 0;
-  thunk_FUN_1039fa00();
+  abi_call_thunk_FUN_1039fa00((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x50);
   }
@@ -5755,7 +5763,7 @@ void __fastcall FUN_103a81d0(undefined4 *param_1) noexcept
     param_1[0xa2] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_102037c0();
+  abi_call_thunk_FUN_102037c0((undefined4 *)(param_1));
   
 })();
 
@@ -6960,7 +6968,7 @@ void __fastcall FUN_1042a9f0(undefined4 *param_1) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x24] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -6998,7 +7006,7 @@ void __fastcall FUN_1042ada0(undefined4 *param_1) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x24] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -7064,7 +7072,7 @@ void __fastcall FUN_1042af50(undefined4 *param_1) noexcept
     param_1[0x25] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -7103,7 +7111,7 @@ undefined4 * Recovered_1042b6d0::FUN_1042b6d0(byte param_2) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x24] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa8);
   }
@@ -7173,7 +7181,7 @@ undefined4 * Recovered_1042b8c0::FUN_1042b8c0(byte param_2) noexcept
     param_1[0x25] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xc0);
   }
@@ -7223,7 +7231,7 @@ void __fastcall FUN_1043d1d0(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -7271,7 +7279,7 @@ undefined4 * Recovered_1043d320::FUN_1043d320(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa8);
   }
@@ -7321,7 +7329,7 @@ void __fastcall FUN_1043e870(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -7369,7 +7377,7 @@ undefined4 * Recovered_1043e9c0::FUN_1043e9c0(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa8);
   }
@@ -7443,7 +7451,7 @@ void __fastcall FUN_10441c70(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -7515,7 +7523,7 @@ undefined4 * Recovered_10441e80::FUN_10441e80(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xd0);
   }
@@ -7565,7 +7573,7 @@ void __fastcall FUN_10443d20(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -7613,7 +7621,7 @@ undefined4 * Recovered_104444b0::FUN_104444b0(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xb0);
   }
@@ -7658,7 +7666,7 @@ void __fastcall FUN_1044b330(undefined4 *param_1) noexcept
     param_1[0x25] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -7690,7 +7698,7 @@ void __fastcall FUN_1044fb10(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x24))->int_release();
   param_1[0x24] = 0;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -7738,7 +7746,7 @@ void __fastcall FUN_1044fbe0(undefined4 *param_1) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x24] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -7771,7 +7779,7 @@ undefined4 * Recovered_1044fe50::FUN_1044fe50(byte param_2) noexcept
 
   ((SCStr *)(param_1 + 0x24))->int_release();
   param_1[0x24] = 0;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa0);
   }
@@ -7823,7 +7831,7 @@ undefined4 * Recovered_1044ff40::FUN_1044ff40(byte param_2) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x24] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xb0);
   }
@@ -7937,7 +7945,7 @@ void __fastcall FUN_10457320(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -7994,11 +8002,11 @@ void __fastcall FUN_1045f540(undefined4 *param_1) noexcept
   param_1[0x27] = 0;
   param_1[0x26] = (undefined4)&ghidra_vftable_SCIObj;
   param_1[0x25] = (undefined4)&ghidra_vftable_SCSwfObjBCListener;
-  thunk_FUN_110a9ef0();
+  abi_call_thunk_FUN_110a9ef0((undefined4 *)(param_1));
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -8056,11 +8064,11 @@ undefined4 * Recovered_1045f750::FUN_1045f750(byte param_2) noexcept
   param_1[0x27] = 0;
   param_1[0x26] = (undefined4)&ghidra_vftable_SCIObj;
   param_1[0x25] = (undefined4)&ghidra_vftable_SCSwfObjBCListener;
-  thunk_FUN_110a9ef0();
+  abi_call_thunk_FUN_110a9ef0((undefined4 *)(param_1));
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xd0);
   }
@@ -8083,8 +8091,8 @@ void __fastcall FUN_104623f0(undefined4 *param_1) noexcept
   param_1[10] = (undefined4)&ghidra_vftable_SCSettingsMenuManageWifi;
   param_1[0x24] = (undefined4)&ghidra_vftable_SCSettingsMenuManageWifi;
   param_1[0x25] = (undefined4)&ghidra_vftable_SCSettingsMenuManageWifi;
-  thunk_FUN_101f53d0();
-  thunk_FUN_10461ec0();
+  abi_call_thunk_FUN_101f53d0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_10461ec0((undefined4 *)(param_1));
   piVar1 = (int *)param_1[0x2d];
   ([&]() noexcept {
 
@@ -8118,7 +8126,7 @@ void __fastcall FUN_104623f0(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -8139,8 +8147,8 @@ undefined4 * Recovered_10462a90::FUN_10462a90(byte param_2) noexcept
   param_1[10] = (undefined4)&ghidra_vftable_SCSettingsMenuManageWifi;
   param_1[0x24] = (undefined4)&ghidra_vftable_SCSettingsMenuManageWifi;
   param_1[0x25] = (undefined4)&ghidra_vftable_SCSettingsMenuManageWifi;
-  thunk_FUN_101f53d0();
-  thunk_FUN_10461ec0();
+  abi_call_thunk_FUN_101f53d0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_10461ec0((undefined4 *)(param_1));
   piVar1 = (int *)param_1[0x2d];
   ([&]() noexcept {
 
@@ -8174,7 +8182,7 @@ undefined4 * Recovered_10462a90::FUN_10462a90(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x130);
   }
@@ -8228,7 +8236,7 @@ void __fastcall FUN_10467d30(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -8271,7 +8279,7 @@ void __fastcall FUN_10467e70(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -8323,7 +8331,7 @@ undefined4 * Recovered_10468050::FUN_10468050(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xc0);
   }
@@ -8370,7 +8378,7 @@ undefined4 * Recovered_104681b0::FUN_104681b0(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xb8);
   }
@@ -8415,7 +8423,7 @@ void __fastcall FUN_1046c560(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x24))->int_release();
   param_1[0x24] = 0;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -8458,7 +8466,7 @@ undefined4 * Recovered_1046c6f0::FUN_1046c6f0(byte param_2) noexcept
 
   ((SCStr *)(param_1 + 0x24))->int_release();
   param_1[0x24] = 0;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa8);
   }
@@ -8482,13 +8490,13 @@ void __fastcall FUN_1046e7e0(undefined4 *param_1) noexcept
   param_1[0x24] = (undefined4)&ghidra_vftable_SCSettingsMenuParentalControls;
   param_1[0x25] = (undefined4)&ghidra_vftable_SCSettingsMenuParentalControls;
   if (param_1[0x28] != 0) {
-    thunk_FUN_104dec20();
+    abi_call_thunk_FUN_104dec20((int)(param_1));
     if ((undefined4 *)param_1[0x28] != (undefined4 *)0x0) {
       (*(code *)**(undefined4 **)param_1[0x28])(1);
     }
     param_1[0x28] = 0;
   }
-  thunk_FUN_101ec4a0();
+  abi_call_thunk_FUN_101ec4a0((int *)(param_1));
   piVar1 = (int *)param_1[0x2a];
   ([&]() noexcept {
 
@@ -8512,7 +8520,7 @@ void __fastcall FUN_1046e7e0(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -8568,7 +8576,7 @@ void __fastcall FUN_10472b50(undefined4 *param_1) noexcept
   ((SCStr *)(param_1 + 0x25))->int_release();
   param_1[0x25] = 0;
   param_1[0x24] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -8625,7 +8633,7 @@ undefined4 * Recovered_10473040::FUN_10473040(byte param_2) noexcept
   ((SCStr *)(param_1 + 0x25))->int_release();
   param_1[0x25] = 0;
   param_1[0x24] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xb0);
   }
@@ -8660,7 +8668,7 @@ void __fastcall FUN_10475a20(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -8693,7 +8701,7 @@ undefined4 * Recovered_10476000::FUN_10476000(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa0);
   }
@@ -8718,7 +8726,7 @@ void __fastcall FUN_10479ca0(undefined4 *param_1) noexcept
   param_1[0x25] = (undefined4)&ghidra_vftable_SCSettingsMenuRoot;
   param_1[0x28] = (undefined4)&ghidra_vftable_SCSettingsMenuRoot;
   param_1[0x2b] = (undefined4)&ghidra_vftable_SCSettingsMenuRoot;
-  thunk_FUN_1022de20();
+  abi_call_thunk_FUN_1022de20((undefined4 *)(param_1));
   piVar1 = (int *)param_1[0x30];
   ([&]() noexcept {
 
@@ -8761,7 +8769,7 @@ void __fastcall FUN_10479ca0(undefined4 *param_1) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x24] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -8784,7 +8792,7 @@ undefined4 * Recovered_1047a060::FUN_1047a060(byte param_2) noexcept
   param_1[0x25] = (undefined4)&ghidra_vftable_SCSettingsMenuRoot;
   param_1[0x28] = (undefined4)&ghidra_vftable_SCSettingsMenuRoot;
   param_1[0x2b] = (undefined4)&ghidra_vftable_SCSettingsMenuRoot;
-  thunk_FUN_1022de20();
+  abi_call_thunk_FUN_1022de20((undefined4 *)(param_1));
   piVar1 = (int *)param_1[0x30];
   ([&]() noexcept {
 
@@ -8827,7 +8835,7 @@ undefined4 * Recovered_1047a060::FUN_1047a060(byte param_2) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x24] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xd0);
   }
@@ -8997,7 +9005,7 @@ void __fastcall FUN_10485450(undefined4 *param_1) noexcept
   param_1[0x2d] = (undefined4)&ghidra_vftable_SCIObj;
   param_1[0x2c] = (undefined4)&ghidra_vftable_SCSwfObjHTListener;
   param_1[0x2b] = (undefined4)&ghidra_vftable_SCSwfObjBCListener;
-  thunk_FUN_110a9ef0();
+  abi_call_thunk_FUN_110a9ef0((undefined4 *)(param_1));
   param_1[0x27] = (undefined4)&ghidra_vftable_SCAccountManagerEventSink;
   piVar1 = (int *)param_1[0x29];
   
@@ -9023,7 +9031,7 @@ void __fastcall FUN_10485450(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -9054,7 +9062,7 @@ void __fastcall FUN_10498510(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -9091,7 +9099,7 @@ void __fastcall FUN_104985f0(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -9132,7 +9140,7 @@ void __fastcall FUN_104986f0(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -9164,7 +9172,7 @@ undefined4 * Recovered_10498910::FUN_10498910(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa8);
   }
@@ -9205,7 +9213,7 @@ undefined4 * Recovered_10498a10::FUN_10498a10(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa8);
   }
@@ -9250,7 +9258,7 @@ undefined4 * Recovered_10498b30::FUN_10498b30(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa8);
   }
@@ -9320,7 +9328,7 @@ void __fastcall FUN_1049f380(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -9357,7 +9365,7 @@ void __fastcall FUN_1049f520(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -9394,7 +9402,7 @@ void __fastcall FUN_1049f620(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -9451,7 +9459,7 @@ void __fastcall FUN_1049f720(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -9510,7 +9518,7 @@ void __fastcall FUN_1049f880(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -9545,7 +9553,7 @@ void __fastcall FUN_1049fa00(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -9613,7 +9621,7 @@ undefined4 * Recovered_1049ffd0::FUN_1049ffd0(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xc0);
   }
@@ -9654,7 +9662,7 @@ undefined4 * Recovered_104a0190::FUN_104a0190(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa8);
   }
@@ -9695,7 +9703,7 @@ undefined4 * Recovered_104a02b0::FUN_104a02b0(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa8);
   }
@@ -9756,7 +9764,7 @@ undefined4 * Recovered_104a03d0::FUN_104a03d0(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xb8);
   }
@@ -9819,7 +9827,7 @@ undefined4 * Recovered_104a0550::FUN_104a0550(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xb8);
   }
@@ -9858,7 +9866,7 @@ undefined4 * Recovered_104a06f0::FUN_104a06f0(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa0);
   }
@@ -9895,7 +9903,7 @@ void __fastcall FUN_104a8890(undefined4 *param_1) noexcept
   ((SCStr *)(param_1 + 0x25))->int_release();
   param_1[0x25] = 0;
   param_1[0x24] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -9930,7 +9938,7 @@ undefined4 * Recovered_104a8a40::FUN_104a8a40(byte param_2) noexcept
   ((SCStr *)(param_1 + 0x25))->int_release();
   param_1[0x25] = 0;
   param_1[0x24] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa0);
   }
@@ -9968,7 +9976,7 @@ void __fastcall FUN_104a99b0(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -10004,7 +10012,7 @@ undefined4 * Recovered_104a9aa0::FUN_104a9aa0(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa0);
   }
@@ -10044,7 +10052,7 @@ void __fastcall FUN_104aa510(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -10082,7 +10090,7 @@ undefined4 * Recovered_104aa620::FUN_104aa620(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xb0);
   }
@@ -10103,7 +10111,7 @@ void __fastcall FUN_104ad540(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCSettingsMenuSupport;
   param_1[2] = (undefined4)&ghidra_vftable_SCSettingsMenuSupport;
   param_1[10] = (undefined4)&ghidra_vftable_SCSettingsMenuSupport;
-  thunk_FUN_104ad290();
+  abi_call_thunk_FUN_104ad290((undefined4 *)(param_1));
   piVar1 = (int *)param_1[0x28];
   ([&]() noexcept {
 
@@ -10122,7 +10130,7 @@ void __fastcall FUN_104ad540(undefined4 *param_1) noexcept
     param_1[0x26] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -10141,7 +10149,7 @@ undefined4 * Recovered_104ada70::FUN_104ada70(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCSettingsMenuSupport;
   param_1[2] = (undefined4)&ghidra_vftable_SCSettingsMenuSupport;
   param_1[10] = (undefined4)&ghidra_vftable_SCSettingsMenuSupport;
-  thunk_FUN_104ad290();
+  abi_call_thunk_FUN_104ad290((undefined4 *)(param_1));
   piVar1 = (int *)param_1[0x28];
   ([&]() noexcept {
 
@@ -10160,7 +10168,7 @@ undefined4 * Recovered_104ada70::FUN_104ada70(byte param_2) noexcept
     param_1[0x26] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x110);
   }
@@ -10198,7 +10206,7 @@ void __fastcall FUN_104b3570(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -10234,7 +10242,7 @@ undefined4 * Recovered_104b3660::FUN_104b3660(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa0);
   }
@@ -10274,7 +10282,7 @@ void __fastcall FUN_104b3f30(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -10312,7 +10320,7 @@ undefined4 * Recovered_104b4040::FUN_104b4040(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xb0);
   }
@@ -10371,7 +10379,7 @@ void __fastcall FUN_104b8710(undefined4 *param_1) noexcept
     param_1[0x25] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -10428,7 +10436,7 @@ undefined4 * Recovered_104b8c30::FUN_104b8c30(byte param_2) noexcept
     param_1[0x25] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xb8);
   }
@@ -10472,7 +10480,7 @@ void __fastcall FUN_104bc760(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -10514,7 +10522,7 @@ undefined4 * Recovered_104bc990::FUN_104bc990(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa8);
   }
@@ -10567,7 +10575,7 @@ void __fastcall FUN_104bdb00(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -10618,7 +10626,7 @@ undefined4 * Recovered_104bdc70::FUN_104bdc70(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xb0);
   }
@@ -10737,7 +10745,7 @@ void __fastcall FUN_104c3c10(undefined4 *param_1) noexcept
   ((SCStr *)(param_1 + 0x25))->int_release();
   param_1[0x25] = 0;
   param_1[0x24] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -10799,7 +10807,7 @@ void __fastcall FUN_104c3cf0(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -10867,7 +10875,7 @@ undefined4 * Recovered_104c4200::FUN_104c4200(byte param_2) noexcept
   ((SCStr *)(param_1 + 0x25))->int_release();
   param_1[0x25] = 0;
   param_1[0x24] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa0);
   }
@@ -10933,7 +10941,7 @@ undefined4 * Recovered_104c4300::FUN_104c4300(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[2] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
   param_1[10] = (undefined4)&ghidra_vftable_SCRemoveMeSettingsMenu;
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 200);
   }
@@ -10968,7 +10976,7 @@ void __fastcall FUN_104c9b30(undefined4 *param_1) noexcept
     param_1[0x26] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -11001,7 +11009,7 @@ undefined4 * Recovered_104c9c40::FUN_104c9c40(byte param_2) noexcept
     param_1[0x26] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa0);
   }
@@ -11273,8 +11281,8 @@ void __fastcall FUN_10503400(int param_1) noexcept
 
   ((SCStr *)(param_1 + 0x134))->int_release();
   *(undefined4 *)(param_1 + 0x134) = 0;
-  thunk_FUN_110a9ef0();
-  thunk_FUN_105036b0();
+  abi_call_thunk_FUN_110a9ef0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_105036b0((undefined4 *)(param_1));
   
 })();
 
@@ -11304,7 +11312,7 @@ void __fastcall FUN_105034f0(int param_1) noexcept
 
   ((SCStr *)(param_1 + 0x130))->int_release();
   *(undefined4 *)(param_1 + 0x130) = 0;
-  thunk_FUN_105036b0();
+  abi_call_thunk_FUN_105036b0((undefined4 *)(param_1));
   
 })();
 
@@ -11340,7 +11348,7 @@ void __fastcall FUN_105035b0(int param_1) noexcept
 
   ((SCStr *)(param_1 + 0x130))->int_release();
   *(undefined4 *)(param_1 + 0x130) = 0;
-  thunk_FUN_105036b0();
+  abi_call_thunk_FUN_105036b0((undefined4 *)(param_1));
   
 })();
 
@@ -11382,8 +11390,8 @@ void __fastcall FUN_10504060(int param_1) noexcept
 
   ((SCStr *)(param_1 + 0x134))->int_release();
   *(undefined4 *)(param_1 + 0x134) = 0;
-  thunk_FUN_110a9ef0();
-  thunk_FUN_105036b0();
+  abi_call_thunk_FUN_110a9ef0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_105036b0((undefined4 *)(param_1));
   
 })();
 
@@ -11490,7 +11498,7 @@ void __fastcall FUN_105299b0(undefined4 *param_1) noexcept
 
   *param_1 = (undefined4)&ghidra_vftable_SCMusicServiceListState;
   param_1[3] = (undefined4)&ghidra_vftable_SCMusicServiceListState;
-  thunk_FUN_1053f780();
+  abi_call_thunk_FUN_1053f780((int)(param_1));
   piVar1 = (int *)param_1[10];
   ([&]() noexcept {
 
@@ -11539,8 +11547,8 @@ void __fastcall FUN_10529f20(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x3b))->int_release();
   param_1[0x3b] = 0;
-  thunk_FUN_102cc870();
-  thunk_FUN_102cc960();
+  abi_call_thunk_FUN_102cc870((undefined4 *)(param_1));
+  abi_call_thunk_FUN_102cc960((undefined4 *)(param_1));
   param_1[3] = (undefined4)&ghidra_vftable_SCIOpCBDelegate;
   piVar1 = (int *)param_1[5];
   
@@ -11603,7 +11611,7 @@ void __fastcall FUN_1052a0b0(undefined4 *param_1) noexcept
   param_1[8] = (undefined4)&ghidra_vftable_SCMusicServiceSetNicknameState;
   thunk_FUN_1052e8a0();
   if (param_1[0xc] != 0) {
-    thunk_FUN_104dec20();
+    abi_call_thunk_FUN_104dec20((int)(param_1));
     if ((undefined4 *)param_1[0xc] != (undefined4 *)0x0) {
       (*(code *)**(undefined4 **)param_1[0xc])(1);
     }
@@ -11651,8 +11659,8 @@ void __fastcall FUN_1052a500(undefined4 *param_1) noexcept
   if ((int *)param_1[0x10] != (int *)0x0) {
     (**(code **)(*(int *)param_1[0x10] + 0x18))();
   }
-  thunk_FUN_1059d800();
-  thunk_FUN_104dec20();
+  abi_call_thunk_FUN_1059d800((int)(param_1));
+  abi_call_thunk_FUN_104dec20((int)(param_1));
   if ((undefined4 *)param_1[0x16] != (undefined4 *)0x0) {
     (*(code *)**(undefined4 **)param_1[0x16])(1);
   }
@@ -11690,8 +11698,8 @@ void __fastcall FUN_1052a500(undefined4 *param_1) noexcept
 ([&]() noexcept {
 
   param_1[6] = (undefined4)&ghidra_vftable_SCTimerUser;
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
+  abi_call_thunk_FUN_1059d800((int)(param_1));
+  abi_call_thunk_FUN_1059c050((undefined4 *)(param_1));
   param_1[3] = (undefined4)&ghidra_vftable_SCIOpCBDelegate;
   piVar1 = (int *)param_1[5];
   
@@ -11825,8 +11833,8 @@ undefined4 * Recovered_1052be20::FUN_1052be20(byte param_2) noexcept
 
   ((SCStr *)(param_1 + 0x3b))->int_release();
   param_1[0x3b] = 0;
-  thunk_FUN_102cc870();
-  thunk_FUN_102cc960();
+  abi_call_thunk_FUN_102cc870((undefined4 *)(param_1));
+  abi_call_thunk_FUN_102cc960((undefined4 *)(param_1));
   param_1[3] = (undefined4)&ghidra_vftable_SCIOpCBDelegate;
   piVar1 = (int *)param_1[5];
   
@@ -12082,7 +12090,7 @@ void __fastcall FUN_1057ba80(undefined4 *param_1) noexcept
     param_1[0xa2] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_102037c0();
+  abi_call_thunk_FUN_102037c0((undefined4 *)(param_1));
   
 })();
 
@@ -12137,7 +12145,7 @@ void __fastcall FUN_1057bc20(undefined4 *param_1) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x48] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_10203d60();
+  abi_call_thunk_FUN_10203d60((undefined4 *)(param_1));
   
 })();
 
@@ -12193,7 +12201,7 @@ undefined4 * Recovered_1057cc60::FUN_1057cc60(byte param_2) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x48] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_10203d60();
+  abi_call_thunk_FUN_10203d60((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x148);
   }
@@ -12407,7 +12415,7 @@ void __fastcall FUN_105a8430(int param_1) noexcept
     *(undefined4 *)(param_1 + 0x28) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10def0d0();
+  abi_call_thunk_FUN_10def0d0((SCStr *)(param_1));
   
 })();
 
@@ -12473,7 +12481,7 @@ int Recovered_105a9bf0::FUN_105a9bf0(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0x28) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10def0d0();
+  abi_call_thunk_FUN_10def0d0((SCStr *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x34);
   }
@@ -12582,7 +12590,7 @@ void __fastcall FUN_105d3200(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x11))->int_release();
   param_1[0x11] = 0;
-  thunk_FUN_105d3a20();
+  abi_call_thunk_FUN_105d3a20((undefined4 *)(param_1));
   
 })();
 
@@ -12634,7 +12642,7 @@ void __fastcall FUN_105d3d10(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x12))->int_release();
   param_1[0x12] = 0;
-  thunk_FUN_104ccb60();
+  abi_call_thunk_FUN_104ccb60((undefined4 *)(param_1));
   
 })();
 
@@ -12659,7 +12667,7 @@ void __fastcall FUN_105d41b0(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x11))->int_release();
   param_1[0x11] = 0;
-  thunk_FUN_105d3a20();
+  abi_call_thunk_FUN_105d3a20((undefined4 *)(param_1));
   
 })();
 
@@ -12723,7 +12731,7 @@ undefined4 * Recovered_105d55d0::FUN_105d55d0(byte param_2) noexcept
 
   ((SCStr *)(param_1 + 0x11))->int_release();
   param_1[0x11] = 0;
-  thunk_FUN_105d3a20();
+  abi_call_thunk_FUN_105d3a20((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x54);
   }
@@ -12779,7 +12787,7 @@ undefined4 * Recovered_105d61c0::FUN_105d61c0(byte param_2) noexcept
 
   ((SCStr *)(param_1 + 0x12))->int_release();
   param_1[0x12] = 0;
-  thunk_FUN_104ccb60();
+  abi_call_thunk_FUN_104ccb60((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x6c);
   }
@@ -12808,7 +12816,7 @@ undefined4 * Recovered_105d6750::FUN_105d6750(byte param_2) noexcept
 
   ((SCStr *)(param_1 + 0x11))->int_release();
   param_1[0x11] = 0;
-  thunk_FUN_105d3a20();
+  abi_call_thunk_FUN_105d3a20((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x4c);
   }
@@ -13049,8 +13057,8 @@ void __fastcall FUN_105ff930(int param_1) noexcept
     *(undefined4 *)(param_1 + 0x28) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_105a1d20();
-  thunk_FUN_105a1c80();
+  abi_call_thunk_FUN_105a1d20((int *)(param_1));
+  abi_call_thunk_FUN_105a1c80((int *)(param_1));
   
 })();
 
@@ -13485,7 +13493,7 @@ void __fastcall FUN_10600ee0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -13577,7 +13585,7 @@ int Recovered_10603a60::FUN_10603a60(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x124);
   }
@@ -14041,7 +14049,7 @@ void __fastcall FUN_10656150(int param_1) noexcept
 
   ((SCStr *)(param_1 + 0x120))->int_release();
   *(undefined4 *)(param_1 + 0x120) = 0;
-  thunk_FUN_1036e480();
+  abi_call_thunk_FUN_1036e480((int *)(param_1));
   piVar1 = *(int **)(param_1 + 0x104);
   
 })();
@@ -14072,7 +14080,7 @@ void __fastcall FUN_10656150(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -14177,7 +14185,7 @@ int Recovered_1065a110::FUN_1065a110(byte param_2) noexcept
 
   ((SCStr *)(param_1 + 0x120))->int_release();
   *(undefined4 *)(param_1 + 0x120) = 0;
-  thunk_FUN_1036e480();
+  abi_call_thunk_FUN_1036e480((int *)(param_1));
   piVar1 = *(int **)(param_1 + 0x104);
   
 })();
@@ -14208,7 +14216,7 @@ int Recovered_1065a110::FUN_1065a110(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x128);
   }
@@ -14361,8 +14369,8 @@ void __fastcall FUN_10688b20(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x220))->int_release();
   param_1[0x220] = 0;
-  thunk_FUN_111482f0();
-  thunk_FUN_10688910();
+  abi_call_thunk_FUN_111482f0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_10688910((undefined4 *)(param_1));
   
 })();
 
@@ -14395,8 +14403,8 @@ undefined4 * Recovered_106892b0::FUN_106892b0(byte param_2) noexcept
 
   ((SCStr *)(param_1 + 0x220))->int_release();
   param_1[0x220] = 0;
-  thunk_FUN_111482f0();
-  thunk_FUN_10688910();
+  abi_call_thunk_FUN_111482f0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_10688910((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x88c);
   }
@@ -14619,7 +14627,7 @@ void Recovered_106af410::FUN_106af410(int *param_2,int *param_3)
 void __fastcall FUN_106b3d40(undefined4 *param_1) noexcept
 {
 
-  thunk_FUN_106ab5b0(param_1 + 3,*(undefined4 *)(param_1[3] + 4));
+  ((CallABI_thunk_FUN_106ab5b0 *)(param_1))->thunk_FUN_106ab5b0((undefined4)(param_1 + 3), (int *)(*(undefined4 *)(param_1[3] + 4)));
   thunk_FUN_1148a50e((void *)(param_1[3]), 0x28);
   ([&]() noexcept {
 
@@ -14646,7 +14654,7 @@ undefined4 * Recovered_106b6d90::FUN_106b6d90(byte param_2) noexcept
 {
   undefined4 * param_1 = (undefined4 *)this;
 
-  thunk_FUN_106ab5b0(param_1 + 3,*(undefined4 *)(param_1[3] + 4));
+  ((CallABI_thunk_FUN_106ab5b0 *)(param_1))->thunk_FUN_106ab5b0((undefined4)(param_1 + 3), (int *)(*(undefined4 *)(param_1[3] + 4)));
   thunk_FUN_1148a50e((void *)(param_1[3]), 0x28);
   ([&]() noexcept {
 
@@ -14915,7 +14923,7 @@ void __fastcall FUN_106e55f0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -14973,7 +14981,7 @@ int Recovered_106e6ac0::FUN_106e6ac0(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xfc);
   }
@@ -15005,7 +15013,7 @@ void __fastcall FUN_106f8760(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -15063,7 +15071,7 @@ int Recovered_106f8f20::FUN_106f8f20(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xf8);
   }
@@ -15157,7 +15165,7 @@ void __fastcall FUN_10703b20(int param_1) noexcept
 
   ((SCStr *)(param_1 + 0xe8))->int_release();
   *(undefined4 *)(param_1 + 0xe8) = 0;
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -15193,7 +15201,7 @@ int Recovered_107041f0::FUN_107041f0(byte param_2) noexcept
 
   ((SCStr *)(param_1 + 0xe8))->int_release();
   *(undefined4 *)(param_1 + 0xe8) = 0;
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xfc);
   }
@@ -15269,7 +15277,7 @@ void __fastcall FUN_1070a710(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -15343,7 +15351,7 @@ int Recovered_1070b070::FUN_1070b070(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x100);
   }
@@ -15399,7 +15407,7 @@ void __fastcall FUN_107199e0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -15453,7 +15461,7 @@ int Recovered_1071a200::FUN_1071a200(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x108);
   }
@@ -15551,7 +15559,7 @@ void __fastcall FUN_1072b7c0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -15651,7 +15659,7 @@ int Recovered_1072dba0::FUN_1072dba0(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x104);
   }
@@ -15719,7 +15727,7 @@ void __fastcall FUN_1074b680(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -15753,7 +15761,7 @@ int Recovered_1074b910::FUN_1074b910(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x100);
   }
@@ -15789,7 +15797,7 @@ void __fastcall FUN_1074cfc0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -15823,7 +15831,7 @@ int Recovered_1074d250::FUN_1074d250(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x100);
   }
@@ -15859,7 +15867,7 @@ void __fastcall FUN_1075a060(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -15893,7 +15901,7 @@ int Recovered_1075ab40::FUN_1075ab40(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x108);
   }
@@ -15949,7 +15957,7 @@ void __fastcall FUN_107634e0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -16003,7 +16011,7 @@ int Recovered_10763a90::FUN_10763a90(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x11c);
   }
@@ -16059,7 +16067,7 @@ void __fastcall FUN_107681d0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -16113,7 +16121,7 @@ int Recovered_107685d0::FUN_107685d0(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x11c);
   }
@@ -16159,7 +16167,7 @@ void __fastcall FUN_10774290(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -16231,7 +16239,7 @@ int Recovered_10774b30::FUN_10774b30(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x10c);
   }
@@ -16277,7 +16285,7 @@ void __fastcall FUN_1077c290(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -16321,7 +16329,7 @@ int Recovered_1077c550::FUN_1077c550(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x10c);
   }
@@ -16386,7 +16394,7 @@ void __fastcall FUN_107cfc40(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -16426,7 +16434,7 @@ int Recovered_107d0db0::FUN_107d0db0(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x108);
   }
@@ -16472,7 +16480,7 @@ void __fastcall FUN_107ebf00(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -16516,7 +16524,7 @@ int Recovered_107ecf70::FUN_107ecf70(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x110);
   }
@@ -16562,7 +16570,7 @@ void __fastcall FUN_10802fe0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -16606,7 +16614,7 @@ int Recovered_108039d0::FUN_108039d0(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x110);
   }
@@ -16662,7 +16670,7 @@ void __fastcall FUN_10812e70(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -16716,7 +16724,7 @@ int Recovered_10813510::FUN_10813510(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x11c);
   }
@@ -16791,21 +16799,21 @@ void __fastcall FUN_1082baf0(int param_1) noexcept
 {
   int *piVar1;
 
-  thunk_FUN_102a3ea0((undefined4 *)(param_1 + 0x134),*(undefined4 *)(*(int *)(param_1 + 0x134) + 4))
+  ((CallABI_thunk_FUN_102a3ea0 *)(param_1))->thunk_FUN_102a3ea0((undefined4)((undefined4 *)(param_1 + 0x134)), (int *)(*(undefined4 *)(*(int *)(param_1 + 0x134) + 4)))
   ;
   thunk_FUN_1148a50e((void *)(*(undefined4 *)(param_1 + 0x134)), 0x14);
-  thunk_FUN_102a3ea0((undefined4 *)(param_1 + 300),*(undefined4 *)(*(int *)(param_1 + 300) + 4));
+  ((CallABI_thunk_FUN_102a3ea0 *)(param_1))->thunk_FUN_102a3ea0((undefined4)((undefined4 *)(param_1 + 300)), (int *)(*(undefined4 *)(*(int *)(param_1 + 300) + 4)));
   thunk_FUN_1148a50e((void *)(*(undefined4 *)(param_1 + 300)), 0x14);
-  thunk_FUN_102a3ea0((undefined4 *)(param_1 + 0x124),*(undefined4 *)(*(int *)(param_1 + 0x124) + 4))
+  ((CallABI_thunk_FUN_102a3ea0 *)(param_1))->thunk_FUN_102a3ea0((undefined4)((undefined4 *)(param_1 + 0x124)), (int *)(*(undefined4 *)(*(int *)(param_1 + 0x124) + 4)))
   ;
   thunk_FUN_1148a50e((void *)(*(undefined4 *)(param_1 + 0x124)), 0x14);
-  thunk_FUN_102a3ea0((undefined4 *)(param_1 + 0x11c),*(undefined4 *)(*(int *)(param_1 + 0x11c) + 4))
+  ((CallABI_thunk_FUN_102a3ea0 *)(param_1))->thunk_FUN_102a3ea0((undefined4)((undefined4 *)(param_1 + 0x11c)), (int *)(*(undefined4 *)(*(int *)(param_1 + 0x11c) + 4)))
   ;
   thunk_FUN_1148a50e((void *)(*(undefined4 *)(param_1 + 0x11c)), 0x14);
-  thunk_FUN_102a3ea0((undefined4 *)(param_1 + 0x114),*(undefined4 *)(*(int *)(param_1 + 0x114) + 4))
+  ((CallABI_thunk_FUN_102a3ea0 *)(param_1))->thunk_FUN_102a3ea0((undefined4)((undefined4 *)(param_1 + 0x114)), (int *)(*(undefined4 *)(*(int *)(param_1 + 0x114) + 4)))
   ;
   thunk_FUN_1148a50e((void *)(*(undefined4 *)(param_1 + 0x114)), 0x14);
-  thunk_FUN_108288d0((undefined4 *)(param_1 + 0x10c),*(undefined4 *)(*(int *)(param_1 + 0x10c) + 4))
+  ((CallABI_thunk_FUN_108288d0 *)(param_1))->thunk_FUN_108288d0((undefined4)((undefined4 *)(param_1 + 0x10c)), (int *)(*(undefined4 *)(*(int *)(param_1 + 0x10c) + 4)))
   ;
   thunk_FUN_1148a50e((void *)(*(undefined4 *)(param_1 + 0x10c)), 0x1c);
   piVar1 = *(int **)(param_1 + 0x104);
@@ -16836,7 +16844,7 @@ void __fastcall FUN_1082baf0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -16985,7 +16993,7 @@ void __fastcall FUN_10846710(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -17035,7 +17043,7 @@ int Recovered_10848a60::FUN_10848a60(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x118);
   }
@@ -17071,7 +17079,7 @@ void __fastcall FUN_1085dcc0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -17105,7 +17113,7 @@ int Recovered_1085df50::FUN_1085df50(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x100);
   }
@@ -17141,7 +17149,7 @@ void __fastcall FUN_10862040(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -17203,7 +17211,7 @@ int Recovered_10862f10::FUN_10862f10(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x104);
   }
@@ -17236,7 +17244,7 @@ void __fastcall FUN_108754f0(SCStr *param_1) noexcept
   ((SCStr *)((char *)param_1 + (0x34)))->int_release();
   pSVar1 = param_1 + 0x28;
   *(undefined4 *)((SCStr *)((char *)param_1 + (0x34))) = 0;
-  thunk_FUN_102a3ea0(pSVar1,*(undefined4 *)(*(int *)pSVar1 + 4));
+  ((CallABI_thunk_FUN_102a3ea0 *)(param_1))->thunk_FUN_102a3ea0((undefined4)(pSVar1), (int *)(*(undefined4 *)(*(int *)pSVar1 + 4)));
   thunk_FUN_1148a50e((void *)(*(int *)pSVar1), 0x14);
   iVar4 = *(int *)((SCStr *)((char *)param_1 + (0x20)));
   piVar5 = *(int **)(iVar4 + 4);
@@ -17326,7 +17334,7 @@ void __fastcall FUN_108757d0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -17386,7 +17394,7 @@ int Recovered_10876390::FUN_10876390(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x120);
   }
@@ -17432,7 +17440,7 @@ void __fastcall FUN_1087e5d0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -17476,7 +17484,7 @@ int Recovered_1087e700::FUN_1087e700(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x10c);
   }
@@ -17514,7 +17522,7 @@ void __fastcall FUN_108822a0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -17550,7 +17558,7 @@ int Recovered_10883400::FUN_10883400(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x100);
   }
@@ -17596,7 +17604,7 @@ void __fastcall FUN_108937a0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -17640,7 +17648,7 @@ int Recovered_10894120::FUN_10894120(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x10c);
   }
@@ -17686,7 +17694,7 @@ void __fastcall FUN_108b5910(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -17730,7 +17738,7 @@ int Recovered_108b5fd0::FUN_108b5fd0(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x10c);
   }
@@ -17762,7 +17770,7 @@ void __fastcall FUN_108bebd0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -17792,7 +17800,7 @@ int Recovered_108bf600::FUN_108bf600(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xf8);
   }
@@ -17838,7 +17846,7 @@ void __fastcall FUN_108ca950(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -17882,7 +17890,7 @@ int Recovered_108cb8c0::FUN_108cb8c0(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x110);
   }
@@ -17948,7 +17956,7 @@ void __fastcall FUN_108e3a80(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -18012,7 +18020,7 @@ int Recovered_108e4d20::FUN_108e4d20(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x124);
   }
@@ -18048,7 +18056,7 @@ void __fastcall FUN_108f8e10(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -18082,7 +18090,7 @@ int Recovered_108f90a0::FUN_108f90a0(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x100);
   }
@@ -18138,7 +18146,7 @@ void __fastcall FUN_108fce00(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -18192,7 +18200,7 @@ int Recovered_108fd4d0::FUN_108fd4d0(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x11c);
   }
@@ -18248,7 +18256,7 @@ void __fastcall FUN_109082f0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -18302,7 +18310,7 @@ int Recovered_109091d0::FUN_109091d0(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x124);
   }
@@ -18358,7 +18366,7 @@ void __fastcall FUN_1091b370(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -18412,7 +18420,7 @@ int Recovered_1091c970::FUN_1091c970(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x11c);
   }
@@ -18458,7 +18466,7 @@ void __fastcall FUN_1092f2a0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -18502,7 +18510,7 @@ int Recovered_109304d0::FUN_109304d0(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x114);
   }
@@ -18558,7 +18566,7 @@ void __fastcall FUN_1094a790(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -18612,7 +18620,7 @@ int Recovered_1094b020::FUN_1094b020(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x11c);
   }
@@ -18648,7 +18656,7 @@ void __fastcall FUN_10954d30(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -18682,7 +18690,7 @@ int Recovered_109550c0::FUN_109550c0(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x100);
   }
@@ -18762,7 +18770,7 @@ void __fastcall FUN_10982bb0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -18812,7 +18820,7 @@ int Recovered_109836d0::FUN_109836d0(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x110);
   }
@@ -18854,7 +18862,7 @@ void __fastcall FUN_10989860(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -18894,7 +18902,7 @@ int Recovered_10989c40::FUN_10989c40(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x104);
   }
@@ -19068,7 +19076,7 @@ void __fastcall FUN_109a94b0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -19122,7 +19130,7 @@ int Recovered_109aa380::FUN_109aa380(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x120);
   }
@@ -19164,7 +19172,7 @@ void __fastcall FUN_109b8030(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -19204,7 +19212,7 @@ int Recovered_109b8690::FUN_109b8690(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x104);
   }
@@ -19240,7 +19248,7 @@ void __fastcall FUN_109c06d0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -19274,7 +19282,7 @@ int Recovered_109c0d80::FUN_109c0d80(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x100);
   }
@@ -19310,7 +19318,7 @@ void __fastcall FUN_109c4e20(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -19344,7 +19352,7 @@ int Recovered_109c5520::FUN_109c5520(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x100);
   }
@@ -19376,7 +19384,7 @@ void __fastcall FUN_109cc5e0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -19406,7 +19414,7 @@ int Recovered_109ccb40::FUN_109ccb40(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xf8);
   }
@@ -19454,7 +19462,7 @@ void __fastcall FUN_109da080(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -19500,7 +19508,7 @@ int Recovered_109da830::FUN_109da830(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x108);
   }
@@ -19542,7 +19550,7 @@ void __fastcall FUN_109e3b80(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -19582,7 +19590,7 @@ int Recovered_109e47a0::FUN_109e47a0(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x108);
   }
@@ -19638,7 +19646,7 @@ void __fastcall FUN_109ef290(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -19692,7 +19700,7 @@ int Recovered_109efaa0::FUN_109efaa0(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x11c);
   }
@@ -19724,7 +19732,7 @@ void __fastcall FUN_10a09da0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -19754,7 +19762,7 @@ int Recovered_10a0a3a0::FUN_10a0a3a0(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xf8);
   }
@@ -19790,7 +19798,7 @@ void __fastcall FUN_10a0dba0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -19824,7 +19832,7 @@ int Recovered_10a0e190::FUN_10a0e190(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x108);
   }
@@ -19860,7 +19868,7 @@ void __fastcall FUN_10a417c0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -19894,7 +19902,7 @@ int Recovered_10a41b60::FUN_10a41b60(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x100);
   }
@@ -19940,7 +19948,7 @@ void __fastcall FUN_10a44f60(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -19984,7 +19992,7 @@ int Recovered_10a45320::FUN_10a45320(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x10c);
   }
@@ -20030,7 +20038,7 @@ void __fastcall FUN_10a496b0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -20074,7 +20082,7 @@ int Recovered_10a49a70::FUN_10a49a70(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x10c);
   }
@@ -20124,7 +20132,7 @@ void __fastcall FUN_10a76d50(int param_1) noexcept
 
   ((SCStr *)(param_1 + 0xe8))->int_release();
   *(undefined4 *)(param_1 + 0xe8) = 0;
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -20147,7 +20155,7 @@ void __fastcall FUN_10a76ed0(SCStr *param_1) noexcept
     *(undefined4 *)((SCStr *)((char *)param_1 + (0x14))) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10246290(param_1 + 8,*(undefined4 *)(*(int *)((SCStr *)((char *)param_1 + (8))) + 4));
+  ((CallABI_thunk_FUN_10246290 *)(param_1))->thunk_FUN_10246290((undefined4)(param_1 + 8), (int *)(*(undefined4 *)(*(int *)((SCStr *)((char *)param_1 + (8))) + 4)));
   thunk_FUN_1148a50e((void *)(*(undefined4 *)((SCStr *)((char *)param_1 + (8)))), 0x18);
   
 })();
@@ -20202,7 +20210,7 @@ int Recovered_10a77610::FUN_10a77610(byte param_2) noexcept
 
   ((SCStr *)(param_1 + 0xe8))->int_release();
   *(undefined4 *)(param_1 + 0xe8) = 0;
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x100);
   }
@@ -20240,7 +20248,7 @@ void __fastcall FUN_10a89cf0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -20276,7 +20284,7 @@ int Recovered_10a8a360::FUN_10a8a360(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xf8);
   }
@@ -20314,7 +20322,7 @@ void __fastcall FUN_10a9ba70(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xf0) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -20350,7 +20358,7 @@ int Recovered_10a9c2f0::FUN_10a9c2f0(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xf0) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xfc);
   }
@@ -20502,7 +20510,7 @@ void __fastcall FUN_10b0dca0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -20563,7 +20571,7 @@ int Recovered_10b0f030::FUN_10b0f030(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x150);
   }
@@ -20635,7 +20643,7 @@ void __fastcall FUN_10b34d90(int param_1) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   
 })();
 
@@ -20705,7 +20713,7 @@ int Recovered_10b35b70::FUN_10b35b70(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0xec) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_106da680();
+  abi_call_thunk_FUN_106da680((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x120);
   }
@@ -20929,7 +20937,7 @@ void __fastcall FUN_10bb5b90(undefined4 *param_1) noexcept
     param_1[0x25] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_102cc870();
+  abi_call_thunk_FUN_102cc870((undefined4 *)(param_1));
   param_1[6] = (undefined4)&ghidra_vftable_SCSwfObjDDListener;
   param_1[3] = (undefined4)&ghidra_vftable_SCIOpCBDelegate;
   piVar1 = (int *)param_1[5];
@@ -21022,7 +21030,7 @@ undefined4 * Recovered_10bb6290::FUN_10bb6290(byte param_2) noexcept
     param_1[0x25] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_102cc870();
+  abi_call_thunk_FUN_102cc870((undefined4 *)(param_1));
   param_1[6] = (undefined4)&ghidra_vftable_SCSwfObjDDListener;
   param_1[3] = (undefined4)&ghidra_vftable_SCIOpCBDelegate;
   piVar1 = (int *)param_1[5];
@@ -21117,9 +21125,9 @@ void __fastcall FUN_10bd7050(SCStr *param_1) noexcept
 void __fastcall FUN_10bd7130(int param_1) noexcept
 {
 
-  thunk_FUN_10bceec0((undefined4 *)(param_1 + 0x14),*(undefined4 *)(*(int *)(param_1 + 0x14) + 4));
+  ((CallABI_thunk_FUN_10bceec0 *)(param_1))->thunk_FUN_10bceec0((undefined4)((undefined4 *)(param_1 + 0x14)), (int *)(*(undefined4 *)(*(int *)(param_1 + 0x14) + 4)));
   thunk_FUN_1148a50e((void *)(*(undefined4 *)(param_1 + 0x14)), 0x18);
-  thunk_FUN_10bcf040((undefined4 *)(param_1 + 0xc),*(undefined4 *)(*(int *)(param_1 + 0xc) + 4));
+  ((CallABI_thunk_FUN_10bcf040 *)(param_1))->thunk_FUN_10bcf040((undefined4)((undefined4 *)(param_1 + 0xc)), (int *)(*(undefined4 *)(*(int *)(param_1 + 0xc) + 4)));
   thunk_FUN_1148a50e((void *)(*(undefined4 *)(param_1 + 0xc)), 0x18);
   ([&]() noexcept {
 
@@ -21215,7 +21223,7 @@ void __fastcall FUN_10bedf20(undefined4 *param_1) noexcept
     param_1[0x22] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_104d76e0();
+  abi_call_thunk_FUN_104d76e0((undefined4 *)(param_1));
   
 })();
 
@@ -21274,7 +21282,7 @@ undefined4 * Recovered_10bee0b0::FUN_10bee0b0(byte param_2) noexcept
     param_1[0x22] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_104d76e0();
+  abi_call_thunk_FUN_104d76e0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa8);
   }
@@ -21375,7 +21383,7 @@ void __fastcall FUN_10c17930(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x54))->int_release();
   param_1[0x54] = 0;
-  thunk_FUN_10202e00();
+  abi_call_thunk_FUN_10202e00((int *)(param_1));
   piVar1 = (int *)param_1[0x2b];
   
 })();
@@ -21419,7 +21427,7 @@ void __fastcall FUN_10c17930(undefined4 *param_1) noexcept
   param_1[0x22] = (undefined4)&ghidra_vftable_SCIObj;
   param_1[0x21] = (undefined4)&ghidra_vftable_SCIObj;
   param_1[0x20] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_104d76e0();
+  abi_call_thunk_FUN_104d76e0((undefined4 *)(param_1));
   
 })();
 
@@ -21444,7 +21452,7 @@ void __fastcall FUN_10c17bb0(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x3b))->int_release();
   param_1[0x3b] = 0;
-  thunk_FUN_10202e00();
+  abi_call_thunk_FUN_10202e00((int *)(param_1));
   piVar1 = (int *)param_1[0x10];
   
 })();
@@ -21456,8 +21464,8 @@ void __fastcall FUN_10c17bb0(undefined4 *param_1) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0xe] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_103d60a0();
-  thunk_FUN_104da760();
+  abi_call_thunk_FUN_103d60a0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_104da760((undefined4 *)(param_1));
   
 })();
 
@@ -21685,12 +21693,12 @@ void __fastcall FUN_10c41840(undefined4 *param_1) noexcept
   param_1[4] = (undefined4)&ghidra_vftable_SCStartupReporter;
   param_1[7] = (undefined4)&ghidra_vftable_SCStartupReporter;
   DAT_121a5544 = 0;
-  thunk_FUN_10c41180();
+  abi_call_thunk_FUN_10c41180((int)(param_1));
   ([&]() noexcept {
 
   param_1[7] = (undefined4)&ghidra_vftable_SCTimerUser;
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
+  abi_call_thunk_FUN_1059d800((int)(param_1));
+  abi_call_thunk_FUN_1059c050((undefined4 *)(param_1));
   param_1[4] = (undefined4)&ghidra_vftable_SCEventSinkDelegate;
   piVar1 = (int *)param_1[6];
   
@@ -21734,12 +21742,12 @@ undefined4 * Recovered_10c421a0::FUN_10c421a0(byte param_2) noexcept
   param_1[4] = (undefined4)&ghidra_vftable_SCStartupReporter;
   param_1[7] = (undefined4)&ghidra_vftable_SCStartupReporter;
   DAT_121a5544 = 0;
-  thunk_FUN_10c41180();
+  abi_call_thunk_FUN_10c41180((int)(param_1));
   ([&]() noexcept {
 
   param_1[7] = (undefined4)&ghidra_vftable_SCTimerUser;
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
+  abi_call_thunk_FUN_1059d800((int)(param_1));
+  abi_call_thunk_FUN_1059c050((undefined4 *)(param_1));
   param_1[4] = (undefined4)&ghidra_vftable_SCEventSinkDelegate;
   piVar1 = (int *)param_1[6];
   
@@ -21795,9 +21803,9 @@ void __fastcall FUN_10c47ef0(undefined4 *param_1) noexcept
 ([&]() noexcept {
 
   param_1[0x1c] = (undefined4)&ghidra_vftable_SCTimerUser;
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
-  thunk_FUN_103d0880();
+  abi_call_thunk_FUN_1059d800((int)(param_1));
+  abi_call_thunk_FUN_1059c050((undefined4 *)(param_1));
+  abi_call_thunk_FUN_103d0880((undefined4 *)(param_1));
   
 })();
 
@@ -23185,7 +23193,7 @@ void __fastcall FUN_10cdfa80(undefined4 *param_1) noexcept
   }
   param_1[0xb] = 0;
   param_1[0xc] = 0;
-  thunk_FUN_10ce0370();
+  abi_call_thunk_FUN_10ce0370((int)(param_1));
   piVar4 = (int *)param_1[6];
   if (piVar4 != (int *)0x0) {
     param_1[5] = 0;
@@ -23218,7 +23226,7 @@ void __fastcall FUN_10cdfa80(undefined4 *param_1) noexcept
     param_1[6] = 0;
     ((RecoveredVirtualSlots *)(piVar4))->VirtualSlot2();
   }
-  thunk_FUN_111a4f00();
+  abi_call_thunk_FUN_111a4f00((undefined4 *)(param_1));
   
 })();
 
@@ -23260,11 +23268,11 @@ void __fastcall FUN_10cee930(undefined4 *param_1) noexcept
     param_1[0x45] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10cee770();
-  thunk_FUN_102cc870();
-  thunk_FUN_102a3ea0(param_1 + 0xd,*(undefined4 *)(param_1[0xd] + 4));
+  abi_call_thunk_FUN_10cee770((undefined4 *)(param_1));
+  abi_call_thunk_FUN_102cc870((undefined4 *)(param_1));
+  ((CallABI_thunk_FUN_102a3ea0 *)(param_1))->thunk_FUN_102a3ea0((undefined4)(param_1 + 0xd), (int *)(*(undefined4 *)(param_1[0xd] + 4)));
   thunk_FUN_1148a50e((void *)(param_1[0xd]), 0x14);
-  thunk_FUN_103d60a0();
+  abi_call_thunk_FUN_103d60a0((undefined4 *)(param_1));
   *param_1 = (undefined4)&ghidra_vftable_SCIOpCBDelegate;
   piVar1 = (int *)param_1[2];
   
@@ -23309,7 +23317,7 @@ void __fastcall FUN_10cf5ab0(undefined4 *param_1) noexcept
       (**(code **)*puVar1)(1);
     }
   }
-  thunk_FUN_10cf58e0();
+  abi_call_thunk_FUN_10cf58e0((undefined4 *)(param_1));
   
 })();
 
@@ -23344,7 +23352,7 @@ undefined4 * Recovered_10cf5d20::FUN_10cf5d20(byte param_2) noexcept
       (**(code **)*puVar1)(1);
     }
   }
-  thunk_FUN_10cf58e0();
+  abi_call_thunk_FUN_10cf58e0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x54);
   }
@@ -23399,7 +23407,7 @@ void __fastcall FUN_10cf6f60(undefined4 *param_1) noexcept
     param_1[0x1b] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10cf71a0();
+  abi_call_thunk_FUN_10cf71a0((undefined4 *)(param_1));
   
 })();
 
@@ -23464,8 +23472,8 @@ void __fastcall FUN_10cf71a0(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0xe))->int_release();
   param_1[0xe] = 0;
-  thunk_FUN_103d60a0();
-  thunk_FUN_104da760();
+  abi_call_thunk_FUN_103d60a0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_104da760((undefined4 *)(param_1));
   
 })();
 
@@ -23487,7 +23495,7 @@ void __fastcall FUN_10cfb7f0(undefined4 *param_1) noexcept
   param_1[0x20] = (undefined4)&ghidra_vftable_SCDeviceSettingsDataSource;
   param_1[0x21] = (undefined4)&ghidra_vftable_SCDeviceSettingsDataSource;
   if (param_1[0x30] != 0) {
-    thunk_FUN_104dec20();
+    abi_call_thunk_FUN_104dec20((int)(param_1));
     if ((undefined4 *)param_1[0x30] != (undefined4 *)0x0) {
       (*(code *)**(undefined4 **)param_1[0x30])(1);
     }
@@ -23547,10 +23555,10 @@ void __fastcall FUN_10cfb7f0(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x27))->int_release();
   param_1[0x27] = 0;
-  thunk_FUN_10ce3510();
+  abi_call_thunk_FUN_10ce3510((int *)(param_1));
   param_1[0x21] = (undefined4)&ghidra_vftable_SCSwfObjHHListener;
   param_1[0x20] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_104d76e0();
+  abi_call_thunk_FUN_104d76e0((undefined4 *)(param_1));
   
 })();
 
@@ -23571,7 +23579,7 @@ void __fastcall FUN_10d01f70(undefined4 *param_1) noexcept
   param_1[10] = (undefined4)&ghidra_vftable_SCAlarmMusicRootDataSource;
   param_1[0x24] = (undefined4)&ghidra_vftable_SCAlarmMusicRootDataSource;
   param_1[0x25] = (undefined4)&ghidra_vftable_SCAlarmMusicRootDataSource;
-  thunk_FUN_104dec20();
+  abi_call_thunk_FUN_104dec20((int)(param_1));
   if ((undefined4 *)param_1[0x28] != (undefined4 *)0x0) {
     (*(code *)**(undefined4 **)param_1[0x28])(1);
   }
@@ -23601,7 +23609,7 @@ void __fastcall FUN_10d01f70(undefined4 *param_1) noexcept
     ((RecoveredVirtualSlots *)(piVar2))->VirtualSlot2();
   }
   param_1[0x24] = (undefined4)&ghidra_vftable_SCSwfObjHHListener;
-  thunk_FUN_10fcd150();
+  abi_call_thunk_FUN_10fcd150((undefined4 *)(param_1));
   
 })();
 
@@ -23648,7 +23656,7 @@ void __fastcall FUN_10d12380(int *param_1) noexcept
   if (piVar1 != (int *)0x0) {
     (**(code **)(*piVar1 + 0xcc))(param_1[0x23]);
   }
-  thunk_FUN_104dec20();
+  abi_call_thunk_FUN_104dec20((int)(param_1));
   if ((undefined4 *)param_1[0x29] != (undefined4 *)0x0) {
     (*(code *)**(undefined4 **)param_1[0x29])(1);
   }
@@ -23695,7 +23703,7 @@ void __fastcall FUN_10d12380(int *param_1) noexcept
   }
   param_1[0x21] = (int)(undefined4)&ghidra_vftable_SCIObj;
   param_1[0x20] = (int)(undefined4)&ghidra_vftable_SCSwfObjHHListener;
-  thunk_FUN_104d76e0();
+  abi_call_thunk_FUN_104d76e0((undefined4 *)(param_1));
   
 })();
 
@@ -23769,7 +23777,7 @@ void __fastcall FUN_10d125e0(undefined4 *param_1) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x1a] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_10cf71a0();
+  abi_call_thunk_FUN_10cf71a0((undefined4 *)(param_1));
   
 })();
 
@@ -23844,7 +23852,7 @@ undefined4 * Recovered_10d12aa0::FUN_10d12aa0(byte param_2) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x1a] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_10cf71a0();
+  abi_call_thunk_FUN_10cf71a0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa0);
   }
@@ -23876,7 +23884,7 @@ void __fastcall FUN_10d15d30(undefined4 *param_1) noexcept
   param_1[0x9a] = (undefined4)&ghidra_vftable_SCHistoryBrowseDataSource;
   param_1[0x9d] = (undefined4)&ghidra_vftable_SCHistoryBrowseDataSource;
   param_1[0x9e] = (undefined4)&ghidra_vftable_SCHistoryBrowseDataSource;
-  thunk_FUN_10d15c80();
+  abi_call_thunk_FUN_10d15c80((int *)(param_1));
   piVar1 = (int *)param_1[0xa8];
   ([&]() noexcept {
 
@@ -23891,8 +23899,8 @@ void __fastcall FUN_10d15d30(undefined4 *param_1) noexcept
 ([&]() noexcept {
 
   param_1[0x9e] = (undefined4)&ghidra_vftable_SCTimerUser;
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
+  abi_call_thunk_FUN_1059d800((int)(param_1));
+  abi_call_thunk_FUN_1059c050((undefined4 *)(param_1));
   param_1[0x9d] = (undefined4)&ghidra_vftable_SCIObj;
   param_1[0x9a] = (undefined4)&ghidra_vftable_SCUserAccountEventSink;
   piVar1 = (int *)param_1[0x9c];
@@ -23927,7 +23935,7 @@ void __fastcall FUN_10d15d30(undefined4 *param_1) noexcept
     param_1[0x96] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10203970();
+  abi_call_thunk_FUN_10203970((undefined4 *)(param_1));
   
 })();
 
@@ -23957,7 +23965,7 @@ undefined4 * Recovered_10d161f0::FUN_10d161f0(byte param_2) noexcept
   param_1[0x9a] = (undefined4)&ghidra_vftable_SCHistoryBrowseDataSource;
   param_1[0x9d] = (undefined4)&ghidra_vftable_SCHistoryBrowseDataSource;
   param_1[0x9e] = (undefined4)&ghidra_vftable_SCHistoryBrowseDataSource;
-  thunk_FUN_10d15c80();
+  abi_call_thunk_FUN_10d15c80((int *)(param_1));
   piVar1 = (int *)param_1[0xa8];
   ([&]() noexcept {
 
@@ -23972,8 +23980,8 @@ undefined4 * Recovered_10d161f0::FUN_10d161f0(byte param_2) noexcept
 ([&]() noexcept {
 
   param_1[0x9e] = (undefined4)&ghidra_vftable_SCTimerUser;
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
+  abi_call_thunk_FUN_1059d800((int)(param_1));
+  abi_call_thunk_FUN_1059c050((undefined4 *)(param_1));
   param_1[0x9d] = (undefined4)&ghidra_vftable_SCIObj;
   param_1[0x9a] = (undefined4)&ghidra_vftable_SCUserAccountEventSink;
   piVar1 = (int *)param_1[0x9c];
@@ -24008,7 +24016,7 @@ undefined4 * Recovered_10d161f0::FUN_10d161f0(byte param_2) noexcept
     param_1[0x96] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10203970();
+  abi_call_thunk_FUN_10203970((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x2b0);
   }
@@ -24043,8 +24051,8 @@ void __fastcall FUN_10d1a860(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0xe))->int_release();
   param_1[0xe] = 0;
-  thunk_FUN_103d60a0();
-  thunk_FUN_104da760();
+  abi_call_thunk_FUN_103d60a0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_104da760((undefined4 *)(param_1));
   
 })();
 
@@ -24077,8 +24085,8 @@ undefined4 * Recovered_10d1afa0::FUN_10d1afa0(byte param_2) noexcept
 
   ((SCStr *)(param_1 + 0xe))->int_release();
   param_1[0xe] = 0;
-  thunk_FUN_103d60a0();
-  thunk_FUN_104da760();
+  abi_call_thunk_FUN_103d60a0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_104da760((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x48);
   }
@@ -24124,8 +24132,8 @@ void __fastcall FUN_10d1ddf0(undefined4 *param_1) noexcept
   ((SCStr *)(param_1 + 0xf))->int_release();
   param_1[0xf] = 0;
   param_1[0xe] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_103d60a0();
-  thunk_FUN_104da760();
+  abi_call_thunk_FUN_103d60a0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_104da760((undefined4 *)(param_1));
   
 })();
 
@@ -24169,8 +24177,8 @@ undefined4 * Recovered_10d1df70::FUN_10d1df70(byte param_2) noexcept
   ((SCStr *)(param_1 + 0xf))->int_release();
   param_1[0xf] = 0;
   param_1[0xe] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_103d60a0();
-  thunk_FUN_104da760();
+  abi_call_thunk_FUN_103d60a0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_104da760((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x58);
   }
@@ -24207,8 +24215,8 @@ void __fastcall FUN_10d1f350(undefined4 *param_1) noexcept
   ((SCStr *)(param_1 + 0xf))->int_release();
   param_1[0xf] = 0;
   param_1[0xe] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_103d60a0();
-  thunk_FUN_104da760();
+  abi_call_thunk_FUN_103d60a0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_104da760((undefined4 *)(param_1));
   
 })();
 
@@ -24246,11 +24254,11 @@ void __fastcall FUN_10d1f430(undefined4 *param_1) noexcept
     param_1[0x31] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10ce3510();
-  thunk_FUN_104ddc70();
+  abi_call_thunk_FUN_10ce3510((int *)(param_1));
+  abi_call_thunk_FUN_104ddc70((undefined4 *)(param_1));
   param_1[0x21] = (undefined4)&ghidra_vftable_SCSwfObjBCListener;
-  thunk_FUN_110a9ef0();
-  thunk_FUN_104d76e0();
+  abi_call_thunk_FUN_110a9ef0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_104d76e0((undefined4 *)(param_1));
   
 })();
 
@@ -24285,8 +24293,8 @@ undefined4 * Recovered_10d1f6e0::FUN_10d1f6e0(byte param_2) noexcept
   ((SCStr *)(param_1 + 0xf))->int_release();
   param_1[0xf] = 0;
   param_1[0xe] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_103d60a0();
-  thunk_FUN_104da760();
+  abi_call_thunk_FUN_103d60a0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_104da760((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x48);
   }
@@ -24328,11 +24336,11 @@ undefined4 * Recovered_10d1f7d0::FUN_10d1f7d0(byte param_2) noexcept
     param_1[0x31] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10ce3510();
-  thunk_FUN_104ddc70();
+  abi_call_thunk_FUN_10ce3510((int *)(param_1));
+  abi_call_thunk_FUN_104ddc70((undefined4 *)(param_1));
   param_1[0x21] = (undefined4)&ghidra_vftable_SCSwfObjBCListener;
-  thunk_FUN_110a9ef0();
-  thunk_FUN_104d76e0();
+  abi_call_thunk_FUN_110a9ef0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_104d76e0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xd8);
   }
@@ -24375,7 +24383,7 @@ void __fastcall FUN_10d22dd0(undefined4 *param_1) noexcept
     param_1[0x26] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10cf7110();
+  abi_call_thunk_FUN_10cf7110((undefined4 *)(param_1));
   
 })();
 
@@ -24439,7 +24447,7 @@ undefined4 * Recovered_10d22fa0::FUN_10d22fa0(byte param_2) noexcept
     param_1[0x26] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10cf7110();
+  abi_call_thunk_FUN_10cf7110((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xc0);
   }
@@ -24461,7 +24469,7 @@ void __fastcall FUN_10d27580(undefined4 *param_1) noexcept
   param_1[2] = (undefined4)&ghidra_vftable_SCAvailableServicesMenuDataSource;
   param_1[10] = (undefined4)&ghidra_vftable_SCAvailableServicesMenuDataSource;
   param_1[0x20] = (undefined4)&ghidra_vftable_SCAvailableServicesMenuDataSource;
-  thunk_FUN_10ce3510();
+  abi_call_thunk_FUN_10ce3510((int *)(param_1));
   piVar1 = (int *)param_1[0x2b];
   ([&]() noexcept {
 
@@ -24511,7 +24519,7 @@ void __fastcall FUN_10d27580(undefined4 *param_1) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x20] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_104d76e0();
+  abi_call_thunk_FUN_104d76e0((undefined4 *)(param_1));
   
 })();
 
@@ -24529,7 +24537,7 @@ void __fastcall FUN_10d279e0(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCTmpMusicServiceDetailDataSource;
   param_1[2] = (undefined4)&ghidra_vftable_SCTmpMusicServiceDetailDataSource;
   param_1[10] = (undefined4)&ghidra_vftable_SCTmpMusicServiceDetailDataSource;
-  thunk_FUN_10ce3510();
+  abi_call_thunk_FUN_10ce3510((int *)(param_1));
   piVar1 = (int *)param_1[0x23];
   ([&]() noexcept {
 
@@ -24548,7 +24556,7 @@ void __fastcall FUN_10d279e0(undefined4 *param_1) noexcept
     param_1[0x21] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_104d76e0();
+  abi_call_thunk_FUN_104d76e0((undefined4 *)(param_1));
   
 })();
 
@@ -24566,7 +24574,7 @@ void __fastcall FUN_10d27b60(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCTmpMusicServicesDataSource;
   param_1[2] = (undefined4)&ghidra_vftable_SCTmpMusicServicesDataSource;
   param_1[10] = (undefined4)&ghidra_vftable_SCTmpMusicServicesDataSource;
-  thunk_FUN_10ce3510();
+  abi_call_thunk_FUN_10ce3510((int *)(param_1));
   piVar1 = (int *)param_1[0x23];
   ([&]() noexcept {
 
@@ -24585,7 +24593,7 @@ void __fastcall FUN_10d27b60(undefined4 *param_1) noexcept
     param_1[0x21] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_104d76e0();
+  abi_call_thunk_FUN_104d76e0((undefined4 *)(param_1));
   
 })();
 
@@ -24605,7 +24613,7 @@ undefined4 * Recovered_10d28120::FUN_10d28120(byte param_2) noexcept
   param_1[2] = (undefined4)&ghidra_vftable_SCAvailableServicesMenuDataSource;
   param_1[10] = (undefined4)&ghidra_vftable_SCAvailableServicesMenuDataSource;
   param_1[0x20] = (undefined4)&ghidra_vftable_SCAvailableServicesMenuDataSource;
-  thunk_FUN_10ce3510();
+  abi_call_thunk_FUN_10ce3510((int *)(param_1));
   piVar1 = (int *)param_1[0x2b];
   ([&]() noexcept {
 
@@ -24655,7 +24663,7 @@ undefined4 * Recovered_10d28120::FUN_10d28120(byte param_2) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x20] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_104d76e0();
+  abi_call_thunk_FUN_104d76e0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xc0);
   }
@@ -24677,7 +24685,7 @@ undefined4 * Recovered_10d28600::FUN_10d28600(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCTmpMusicServiceDetailDataSource;
   param_1[2] = (undefined4)&ghidra_vftable_SCTmpMusicServiceDetailDataSource;
   param_1[10] = (undefined4)&ghidra_vftable_SCTmpMusicServiceDetailDataSource;
-  thunk_FUN_10ce3510();
+  abi_call_thunk_FUN_10ce3510((int *)(param_1));
   piVar1 = (int *)param_1[0x23];
   ([&]() noexcept {
 
@@ -24696,7 +24704,7 @@ undefined4 * Recovered_10d28600::FUN_10d28600(byte param_2) noexcept
     param_1[0x21] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_104d76e0();
+  abi_call_thunk_FUN_104d76e0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa0);
   }
@@ -24718,7 +24726,7 @@ undefined4 * Recovered_10d287a0::FUN_10d287a0(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCTmpMusicServicesDataSource;
   param_1[2] = (undefined4)&ghidra_vftable_SCTmpMusicServicesDataSource;
   param_1[10] = (undefined4)&ghidra_vftable_SCTmpMusicServicesDataSource;
-  thunk_FUN_10ce3510();
+  abi_call_thunk_FUN_10ce3510((int *)(param_1));
   piVar1 = (int *)param_1[0x23];
   ([&]() noexcept {
 
@@ -24737,7 +24745,7 @@ undefined4 * Recovered_10d287a0::FUN_10d287a0(byte param_2) noexcept
     param_1[0x21] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_104d76e0();
+  abi_call_thunk_FUN_104d76e0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa0);
   }
@@ -24769,7 +24777,7 @@ void __fastcall FUN_10d2f770(int param_1) noexcept
     *(undefined4 *)(param_1 + 0x6c) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10cf71a0();
+  abi_call_thunk_FUN_10cf71a0((undefined4 *)(param_1));
   
 })();
 
@@ -24802,7 +24810,7 @@ void __fastcall FUN_10d2f8f0(undefined4 *param_1) noexcept
     param_1[0x1b] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10cf71a0();
+  abi_call_thunk_FUN_10cf71a0((undefined4 *)(param_1));
   
 })();
 
@@ -24839,7 +24847,7 @@ void __fastcall FUN_10d300c0(undefined4 *param_1) noexcept
     param_1[0x1b] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10cf71a0();
+  abi_call_thunk_FUN_10cf71a0((undefined4 *)(param_1));
   
 })();
 
@@ -24869,7 +24877,7 @@ int Recovered_10d30520::FUN_10d30520(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0x6c) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10cf71a0();
+  abi_call_thunk_FUN_10cf71a0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x78);
   }
@@ -24906,7 +24914,7 @@ undefined4 * Recovered_10d30700::FUN_10d30700(byte param_2) noexcept
     param_1[0x1b] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10cf71a0();
+  abi_call_thunk_FUN_10cf71a0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x78);
   }
@@ -24947,7 +24955,7 @@ undefined4 * Recovered_10d30810::FUN_10d30810(byte param_2) noexcept
     param_1[0x1b] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10cf71a0();
+  abi_call_thunk_FUN_10cf71a0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x80);
   }
@@ -24976,8 +24984,8 @@ void __fastcall FUN_10d3b270(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0xe))->int_release();
   param_1[0xe] = 0;
-  thunk_FUN_103d60a0();
-  thunk_FUN_104da760();
+  abi_call_thunk_FUN_103d60a0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_104da760((undefined4 *)(param_1));
   
 })();
 
@@ -24995,7 +25003,7 @@ void __fastcall FUN_10d3b320(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCSearchTypeSonosItem;
   param_1[6] = (undefined4)&ghidra_vftable_SCSearchTypeSonosItem;
   param_1[0xe] = (undefined4)&ghidra_vftable_SCSearchTypeSonosItem;
-  thunk_FUN_10202e00();
+  abi_call_thunk_FUN_10202e00((int *)(param_1));
   piVar1 = (int *)param_1[0x13];
   ([&]() noexcept {
 
@@ -25016,9 +25024,9 @@ void __fastcall FUN_10d3b320(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0xf))->int_release();
   param_1[0xf] = 0;
-  thunk_FUN_110a9ef0();
-  thunk_FUN_103d60a0();
-  thunk_FUN_104da760();
+  abi_call_thunk_FUN_110a9ef0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_103d60a0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_104da760((undefined4 *)(param_1));
   
 })();
 
@@ -25045,8 +25053,8 @@ undefined4 * Recovered_10d3b490::FUN_10d3b490(byte param_2) noexcept
 
   ((SCStr *)(param_1 + 0xe))->int_release();
   param_1[0xe] = 0;
-  thunk_FUN_103d60a0();
-  thunk_FUN_104da760();
+  abi_call_thunk_FUN_103d60a0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_104da760((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x40);
   }
@@ -25068,7 +25076,7 @@ undefined4 * Recovered_10d3b560::FUN_10d3b560(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCSearchTypeSonosItem;
   param_1[6] = (undefined4)&ghidra_vftable_SCSearchTypeSonosItem;
   param_1[0xe] = (undefined4)&ghidra_vftable_SCSearchTypeSonosItem;
-  thunk_FUN_10202e00();
+  abi_call_thunk_FUN_10202e00((int *)(param_1));
   piVar1 = (int *)param_1[0x13];
   ([&]() noexcept {
 
@@ -25089,9 +25097,9 @@ undefined4 * Recovered_10d3b560::FUN_10d3b560(byte param_2) noexcept
 
   ((SCStr *)(param_1 + 0xf))->int_release();
   param_1[0xf] = 0;
-  thunk_FUN_110a9ef0();
-  thunk_FUN_103d60a0();
-  thunk_FUN_104da760();
+  abi_call_thunk_FUN_110a9ef0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_103d60a0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_104da760((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xf8);
   }
@@ -25149,7 +25157,7 @@ void __fastcall FUN_10d3e090(undefined4 *param_1) noexcept
     param_1[0x2b] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10ce3510();
+  abi_call_thunk_FUN_10ce3510((int *)(param_1));
   param_1[0x26] = (undefined4)&ghidra_vftable_SCIObj;
   param_1[0x23] = (undefined4)&ghidra_vftable_SCIndexManagerEventSink;
   piVar1 = (int *)param_1[0x25];
@@ -25173,7 +25181,7 @@ void __fastcall FUN_10d3e090(undefined4 *param_1) noexcept
     param_1[0x22] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_104d76e0();
+  abi_call_thunk_FUN_104d76e0((undefined4 *)(param_1));
   
 })();
 
@@ -25213,7 +25221,7 @@ void __fastcall FUN_10d3e2b0(undefined4 *param_1) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x1a] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_10cf71a0();
+  abi_call_thunk_FUN_10cf71a0((undefined4 *)(param_1));
   
 })();
 
@@ -25269,7 +25277,7 @@ undefined4 * Recovered_10d3e930::FUN_10d3e930(byte param_2) noexcept
     param_1[0x2b] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10ce3510();
+  abi_call_thunk_FUN_10ce3510((int *)(param_1));
   param_1[0x26] = (undefined4)&ghidra_vftable_SCIObj;
   param_1[0x23] = (undefined4)&ghidra_vftable_SCIndexManagerEventSink;
   piVar1 = (int *)param_1[0x25];
@@ -25293,7 +25301,7 @@ undefined4 * Recovered_10d3e930::FUN_10d3e930(byte param_2) noexcept
     param_1[0x22] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_104d76e0();
+  abi_call_thunk_FUN_104d76e0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xd0);
   }
@@ -25337,7 +25345,7 @@ undefined4 * Recovered_10d3eb90::FUN_10d3eb90(byte param_2) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x1a] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_10cf71a0();
+  abi_call_thunk_FUN_10cf71a0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x80);
   }
@@ -25384,9 +25392,9 @@ void __fastcall FUN_10d43400(undefined4 *param_1) noexcept
     param_1[0x25] = 0;
     ((RecoveredVirtualSlots *)(piVar3))->VirtualSlot2();
   }
-  thunk_FUN_10ce3510();
+  abi_call_thunk_FUN_10ce3510((int *)(param_1));
   *puVar2 = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_104d76e0();
+  abi_call_thunk_FUN_104d76e0((undefined4 *)(param_1));
   
 })();
 
@@ -25426,7 +25434,7 @@ void __fastcall FUN_10d43530(undefined4 *param_1) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x2a] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_10d43400();
+  abi_call_thunk_FUN_10d43400((undefined4 *)(param_1));
   
 })();
 
@@ -25454,7 +25462,7 @@ void __fastcall FUN_10d436f0(undefined4 *param_1) noexcept
     param_1[0x31] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10ce3510();
+  abi_call_thunk_FUN_10ce3510((int *)(param_1));
   piVar1 = (int *)param_1[0x2c];
   
 })();
@@ -25466,7 +25474,7 @@ void __fastcall FUN_10d436f0(undefined4 *param_1) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x2a] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_10d43400();
+  abi_call_thunk_FUN_10d43400((undefined4 *)(param_1));
   
 })();
 
@@ -25495,7 +25503,7 @@ undefined4 * Recovered_10d43de0::FUN_10d43de0(byte param_2) noexcept
     param_1[0x31] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10ce3510();
+  abi_call_thunk_FUN_10ce3510((int *)(param_1));
   piVar1 = (int *)param_1[0x2c];
   
 })();
@@ -25507,7 +25515,7 @@ undefined4 * Recovered_10d43de0::FUN_10d43de0(byte param_2) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x2a] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_10d43400();
+  abi_call_thunk_FUN_10d43400((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xd0);
   }
@@ -25561,7 +25569,7 @@ void __fastcall FUN_10d53c40(undefined4 *param_1) noexcept
     param_1[0x38] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10d53ba0();
+  abi_call_thunk_FUN_10d53ba0((int *)(param_1));
   
 })();
 ([&]() noexcept {
@@ -25626,7 +25634,7 @@ void __fastcall FUN_10d53c40(undefined4 *param_1) noexcept
   }
   param_1[0x21] = (undefined4)&ghidra_vftable_SCIObj;
   param_1[0x20] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_104d76e0();
+  abi_call_thunk_FUN_104d76e0((undefined4 *)(param_1));
   
 })();
 
@@ -25730,7 +25738,7 @@ void __fastcall FUN_10d5e340(undefined4 *param_1) noexcept
   param_1[0x21] = (undefined4)&ghidra_vftable_SCMyPlaylistsDataSource;
   (**(code **)(*(int *)param_1[0x23] + 0x28))();
   (**(code **)(*(int *)param_1[0x25] + 0x28))();
-  thunk_FUN_10ce3510();
+  abi_call_thunk_FUN_10ce3510((int *)(param_1));
   piVar1 = (int *)param_1[0x2a];
   ([&]() noexcept {
 
@@ -25770,7 +25778,7 @@ void __fastcall FUN_10d5e340(undefined4 *param_1) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x21] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_104d76e0();
+  abi_call_thunk_FUN_104d76e0((undefined4 *)(param_1));
   
 })();
 
@@ -25850,7 +25858,7 @@ void __fastcall FUN_10d60e30(int *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x2a))->int_release();
   param_1[0x2a] = 0;
-  thunk_FUN_10ce3510();
+  abi_call_thunk_FUN_10ce3510((int *)(param_1));
   param_1[0x24] = (int)(undefined4)&ghidra_vftable_SCAccountManagerEventSink;
   piVar1 = (int *)param_1[0x26];
   
@@ -25874,7 +25882,7 @@ void __fastcall FUN_10d60e30(int *param_1) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x20] = (int)(undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_104d76e0();
+  abi_call_thunk_FUN_104d76e0((undefined4 *)(param_1));
   
 })();
 
@@ -25910,7 +25918,7 @@ void __fastcall FUN_10d64b00(undefined4 *param_1) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[6] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_104da760();
+  abi_call_thunk_FUN_104da760((undefined4 *)(param_1));
   
 })();
 
@@ -25947,7 +25955,7 @@ undefined4 * Recovered_10d65210::FUN_10d65210(byte param_2) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[6] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_104da760();
+  abi_call_thunk_FUN_104da760((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x2c);
   }
@@ -26011,7 +26019,7 @@ void __fastcall FUN_10d69bd0(undefined4 *param_1) noexcept
     param_1[0x47] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10203dc0();
+  abi_call_thunk_FUN_10203dc0((undefined4 *)(param_1));
   
 })();
 
@@ -26049,7 +26057,7 @@ void __fastcall FUN_10d69d40(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x94))->int_release();
   param_1[0x94] = 0;
-  thunk_FUN_10203970();
+  abi_call_thunk_FUN_10203970((undefined4 *)(param_1));
   
 })();
 
@@ -26111,7 +26119,7 @@ undefined4 * Recovered_10d6a520::FUN_10d6a520(byte param_2) noexcept
     param_1[0x47] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10203dc0();
+  abi_call_thunk_FUN_10203dc0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x140);
   }
@@ -26153,7 +26161,7 @@ undefined4 * Recovered_10d6a6b0::FUN_10d6a6b0(byte param_2) noexcept
 
   ((SCStr *)(param_1 + 0x94))->int_release();
   param_1[0x94] = 0;
-  thunk_FUN_10203970();
+  abi_call_thunk_FUN_10203970((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x260);
   }
@@ -26200,8 +26208,8 @@ void __fastcall FUN_10d75760(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x42))->int_release();
   param_1[0x42] = 0;
-  thunk_FUN_10d753d0();
-  thunk_FUN_10d752e0();
+  abi_call_thunk_FUN_10d753d0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_10d752e0((undefined4 *)(param_1));
   piVar1 = (int *)param_1[0xd];
   
 })();
@@ -26266,7 +26274,7 @@ void __fastcall FUN_10d75960(undefined4 *param_1) noexcept
   param_1[9] = (undefined4)&ghidra_vftable_SCAccountSignInMainPageState;
   (**(code **)(*(int *)param_1[10] + 0x44))();
   (**(code **)(*(int *)param_1[0xc] + 0x44))();
-  thunk_FUN_10d751f0();
+  abi_call_thunk_FUN_10d751f0((undefined4 *)(param_1));
   ([&]() noexcept {
 
   ((SCStr *)(param_1 + 0x14))->int_release();
@@ -26404,7 +26412,7 @@ void __fastcall FUN_10d81060(undefined4 *param_1) noexcept
     param_1[7] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_11261f10();
+  abi_call_thunk_FUN_11261f10((undefined4 *)(param_1));
   
 })();
 
@@ -26439,7 +26447,7 @@ void __fastcall FUN_10d81ac0(undefined4 *param_1) noexcept
 
   (ghidra_this)->int_release();
   *(undefined4 *)ghidra_this = 0;
-  thunk_FUN_106845c0();
+  abi_call_thunk_FUN_106845c0((undefined4 *)(param_1));
   
 })();
 
@@ -26472,7 +26480,7 @@ void __fastcall FUN_10d889c0(int param_1) noexcept
     *(undefined4 *)(param_1 + 0x94) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   
 })();
 
@@ -26505,7 +26513,7 @@ void __fastcall FUN_10d88a80(int param_1) noexcept
     *(undefined4 *)(param_1 + 0x2c) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_101eb3f0();
+  abi_call_thunk_FUN_101eb3f0((undefined4 *)(param_1));
   
 })();
 
@@ -26539,7 +26547,7 @@ int Recovered_10d88d00::FUN_10d88d00(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0x94) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_101eb2b0();
+  abi_call_thunk_FUN_101eb2b0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xa0);
   }
@@ -26576,7 +26584,7 @@ int Recovered_10d88de0::FUN_10d88de0(byte param_2) noexcept
     *(undefined4 *)(param_1 + 0x2c) = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_101eb3f0();
+  abi_call_thunk_FUN_101eb3f0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x38);
   }
@@ -26852,7 +26860,7 @@ void __fastcall FUN_10def0d0(SCStr *param_1) noexcept
 {
   int *piVar1;
 
-  thunk_FUN_10dec580(param_1 + 0x10,*(undefined4 *)(*(int *)((SCStr *)((char *)param_1 + (0x10))) + 4));
+  ((CallABI_thunk_FUN_10dec580 *)(param_1))->thunk_FUN_10dec580((undefined4)(param_1 + 0x10), (int *)(*(undefined4 *)(*(int *)((SCStr *)((char *)param_1 + (0x10))) + 4)));
   thunk_FUN_1148a50e((void *)(*(undefined4 *)((SCStr *)((char *)param_1 + (0x10)))), 0x1c);
   piVar1 = *(int **)((SCStr *)((char *)param_1 + (0xc)));
   ([&]() noexcept {
@@ -27462,7 +27470,7 @@ void __fastcall FUN_10e12e70(undefined4 *param_1) noexcept
     param_1[0x25] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10d753d0();
+  abi_call_thunk_FUN_10d753d0((undefined4 *)(param_1));
   piVar1 = (int *)param_1[8];
   
 })();
@@ -27746,7 +27754,7 @@ undefined4 * Recovered_10e13d80::FUN_10e13d80(byte param_2) noexcept
     param_1[0x25] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10d753d0();
+  abi_call_thunk_FUN_10d753d0((undefined4 *)(param_1));
   piVar1 = (int *)param_1[8];
   
 })();
@@ -27818,7 +27826,7 @@ void __fastcall FUN_10e279a0(undefined4 *param_1) noexcept
     param_1[0x23] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10e26f80();
+  abi_call_thunk_FUN_10e26f80((undefined4 *)(param_1));
   param_1[4] = (undefined4)&ghidra_vftable_SCIOpCBDelegate;
   piVar1 = (int *)param_1[6];
   
@@ -27849,8 +27857,8 @@ void __fastcall FUN_10e27d30(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCSecureRegistrationCreatePasswordState;
   param_1[3] = (undefined4)&ghidra_vftable_SCSecureRegistrationCreatePasswordState;
   param_1[6] = (undefined4)&ghidra_vftable_SCSecureRegistrationCreatePasswordState;
-  thunk_FUN_10e26e90();
-  thunk_FUN_10e26da0();
+  abi_call_thunk_FUN_10e26e90((undefined4 *)(param_1));
+  abi_call_thunk_FUN_10e26da0((undefined4 *)(param_1));
   piVar1 = (int *)param_1[0xc];
   ([&]() noexcept {
 
@@ -27935,7 +27943,7 @@ void __fastcall FUN_10e27e80(undefined4 *param_1) noexcept
     param_1[0x21] = 0;
     ((RecoveredVirtualSlots *)(piVar3))->VirtualSlot2();
   }
-  thunk_FUN_103fa5c0();
+  abi_call_thunk_FUN_103fa5c0((undefined4 *)(param_1));
   param_1[3] = (undefined4)&ghidra_vftable_SCIOpCBDelegate;
   piVar3 = (int *)param_1[5];
   
@@ -27999,8 +28007,8 @@ void __fastcall FUN_10e27fe0(undefined4 *param_1) noexcept
     param_1[0x3b] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10d753d0();
-  thunk_FUN_10d752e0();
+  abi_call_thunk_FUN_10d753d0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_10d752e0((undefined4 *)(param_1));
   param_1[3] = (undefined4)&ghidra_vftable_SCIOpCBDelegate;
   piVar1 = (int *)param_1[5];
   
@@ -28040,7 +28048,7 @@ void __fastcall FUN_10e28170(undefined4 *param_1) noexcept
     param_1[0x2b] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10d751f0();
+  abi_call_thunk_FUN_10d751f0((undefined4 *)(param_1));
   
 })();
 ([&]() noexcept {
@@ -28117,8 +28125,8 @@ void __fastcall FUN_10e28430(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCSecureRegistrationNewAccountState;
   param_1[3] = (undefined4)&ghidra_vftable_SCSecureRegistrationNewAccountState;
   param_1[6] = (undefined4)&ghidra_vftable_SCSecureRegistrationNewAccountState;
-  thunk_FUN_10e26da0();
-  thunk_FUN_10e26f80();
+  abi_call_thunk_FUN_10e26da0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_10e26f80((undefined4 *)(param_1));
   piVar1 = (int *)param_1[0x10];
   ([&]() noexcept {
 
@@ -28288,7 +28296,7 @@ void __fastcall FUN_10e287d0(undefined4 *param_1) noexcept
 
   *param_1 = (undefined4)&ghidra_vftable_SCSecureRegistrationResetPasswordState;
   param_1[3] = (undefined4)&ghidra_vftable_SCSecureRegistrationResetPasswordState;
-  thunk_FUN_101d19a0();
+  abi_call_thunk_FUN_101d19a0((undefined4 *)(param_1));
   piVar1 = (int *)param_1[7];
   ([&]() noexcept {
 
@@ -28325,7 +28333,7 @@ void __fastcall FUN_10e288d0(undefined4 *param_1) noexcept
 
   *param_1 = (undefined4)&ghidra_vftable_SCSecureRegistrationVerifyEmailState;
   param_1[3] = (undefined4)&ghidra_vftable_SCSecureRegistrationVerifyEmailState;
-  thunk_FUN_103fa6b0();
+  abi_call_thunk_FUN_103fa6b0((undefined4 *)(param_1));
   piVar1 = (int *)param_1[7];
   ([&]() noexcept {
 
@@ -28392,7 +28400,7 @@ undefined4 * Recovered_10e29640::FUN_10e29640(byte param_2) noexcept
     param_1[0x23] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10e26f80();
+  abi_call_thunk_FUN_10e26f80((undefined4 *)(param_1));
   param_1[4] = (undefined4)&ghidra_vftable_SCIOpCBDelegate;
   piVar1 = (int *)param_1[6];
   
@@ -28427,8 +28435,8 @@ undefined4 * Recovered_10e29a90::FUN_10e29a90(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCSecureRegistrationCreatePasswordState;
   param_1[3] = (undefined4)&ghidra_vftable_SCSecureRegistrationCreatePasswordState;
   param_1[6] = (undefined4)&ghidra_vftable_SCSecureRegistrationCreatePasswordState;
-  thunk_FUN_10e26e90();
-  thunk_FUN_10e26da0();
+  abi_call_thunk_FUN_10e26e90((undefined4 *)(param_1));
+  abi_call_thunk_FUN_10e26da0((undefined4 *)(param_1));
   piVar1 = (int *)param_1[0xc];
   ([&]() noexcept {
 
@@ -28491,8 +28499,8 @@ undefined4 * Recovered_10e2a120::FUN_10e2a120(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCSecureRegistrationNewAccountState;
   param_1[3] = (undefined4)&ghidra_vftable_SCSecureRegistrationNewAccountState;
   param_1[6] = (undefined4)&ghidra_vftable_SCSecureRegistrationNewAccountState;
-  thunk_FUN_10e26da0();
-  thunk_FUN_10e26f80();
+  abi_call_thunk_FUN_10e26da0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_10e26f80((undefined4 *)(param_1));
   piVar1 = (int *)param_1[0x10];
   ([&]() noexcept {
 
@@ -28674,7 +28682,7 @@ undefined4 * Recovered_10e2a560::FUN_10e2a560(byte param_2) noexcept
 
   *param_1 = (undefined4)&ghidra_vftable_SCSecureRegistrationResetPasswordState;
   param_1[3] = (undefined4)&ghidra_vftable_SCSecureRegistrationResetPasswordState;
-  thunk_FUN_101d19a0();
+  abi_call_thunk_FUN_101d19a0((undefined4 *)(param_1));
   piVar1 = (int *)param_1[7];
   ([&]() noexcept {
 
@@ -28715,7 +28723,7 @@ undefined4 * Recovered_10e2a6e0::FUN_10e2a6e0(byte param_2) noexcept
 
   *param_1 = (undefined4)&ghidra_vftable_SCSecureRegistrationVerifyEmailState;
   param_1[3] = (undefined4)&ghidra_vftable_SCSecureRegistrationVerifyEmailState;
-  thunk_FUN_103fa6b0();
+  abi_call_thunk_FUN_103fa6b0((undefined4 *)(param_1));
   piVar1 = (int *)param_1[7];
   ([&]() noexcept {
 
@@ -28802,7 +28810,7 @@ void __fastcall FUN_10e5e770(undefined4 *param_1) noexcept
     param_1[0x72] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10e5ef30();
+  abi_call_thunk_FUN_10e5ef30((undefined4 *)(param_1));
   
 })();
 
@@ -28820,8 +28828,8 @@ void __fastcall FUN_10e5e840(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCAlexaAuthChecklistVoiceEducationState;
   param_1[3] = (undefined4)&ghidra_vftable_SCAlexaAuthChecklistVoiceEducationState;
   param_1[6] = (undefined4)&ghidra_vftable_SCAlexaAuthChecklistVoiceEducationState;
-  thunk_FUN_102cc870();
-  thunk_FUN_10e5e6b0();
+  abi_call_thunk_FUN_102cc870((undefined4 *)(param_1));
+  abi_call_thunk_FUN_10e5e6b0((int *)(param_1));
   param_1[6] = (undefined4)&ghidra_vftable_SCIOpCBDelegate;
   piVar1 = (int *)param_1[8];
   ([&]() noexcept {
@@ -28863,10 +28871,10 @@ void __fastcall FUN_10e5ef30(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x6e))->int_release();
   param_1[0x6e] = 0;
-  thunk_FUN_102c45c0();
-  thunk_FUN_102cc870();
-  thunk_FUN_102cc870();
-  thunk_FUN_102cc870();
+  abi_call_thunk_FUN_102c45c0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_102cc870((undefined4 *)(param_1));
+  abi_call_thunk_FUN_102cc870((undefined4 *)(param_1));
+  abi_call_thunk_FUN_102cc870((undefined4 *)(param_1));
   param_1[3] = (undefined4)&ghidra_vftable_SCIOpCBDelegate;
   piVar1 = (int *)param_1[5];
   
@@ -28903,17 +28911,17 @@ void __fastcall FUN_10e5f190(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x6b))->int_release();
   param_1[0x6b] = 0;
-  thunk_FUN_101a2bf0();
+  abi_call_thunk_FUN_101a2bf0((int *)(param_1));
   
 })();
 ([&]() noexcept {
 
   ((SCStr *)(param_1 + 0x66))->int_release();
   param_1[0x66] = 0;
-  thunk_FUN_101a2bf0();
-  thunk_FUN_102a3ea0(param_1 + 0x52,*(undefined4 *)(param_1[0x52] + 4));
+  abi_call_thunk_FUN_101a2bf0((int *)(param_1));
+  ((CallABI_thunk_FUN_102a3ea0 *)(param_1))->thunk_FUN_102a3ea0((undefined4)(param_1 + 0x52), (int *)(*(undefined4 *)(param_1[0x52] + 4)));
   thunk_FUN_1148a50e((void *)(param_1[0x52]), 0x14);
-  thunk_FUN_11007f30();
+  abi_call_thunk_FUN_11007f30((undefined4 *)(param_1));
   
 })();
 
@@ -28932,14 +28940,14 @@ void __fastcall FUN_10e5f440(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x16))->int_release();
   param_1[0x16] = 0;
-  thunk_FUN_101a2bf0();
+  abi_call_thunk_FUN_101a2bf0((int *)(param_1));
   
 })();
 ([&]() noexcept {
 
   ((SCStr *)(param_1 + 0x11))->int_release();
   param_1[0x11] = 0;
-  thunk_FUN_101a2bf0();
+  abi_call_thunk_FUN_101a2bf0((int *)(param_1));
   
 })();
 
@@ -29003,7 +29011,7 @@ undefined4 * Recovered_10e60340::FUN_10e60340(byte param_2) noexcept
     param_1[0x72] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10e5ef30();
+  abi_call_thunk_FUN_10e5ef30((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x1d8);
   }
@@ -29025,8 +29033,8 @@ undefined4 * Recovered_10e60430::FUN_10e60430(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCAlexaAuthChecklistVoiceEducationState;
   param_1[3] = (undefined4)&ghidra_vftable_SCAlexaAuthChecklistVoiceEducationState;
   param_1[6] = (undefined4)&ghidra_vftable_SCAlexaAuthChecklistVoiceEducationState;
-  thunk_FUN_102cc870();
-  thunk_FUN_10e5e6b0();
+  abi_call_thunk_FUN_102cc870((undefined4 *)(param_1));
+  abi_call_thunk_FUN_10e5e6b0((int *)(param_1));
   param_1[6] = (undefined4)&ghidra_vftable_SCIOpCBDelegate;
   piVar1 = (int *)param_1[8];
   ([&]() noexcept {
@@ -29076,17 +29084,17 @@ undefined4 * Recovered_10e60bd0::FUN_10e60bd0(byte param_2) noexcept
 
   ((SCStr *)(param_1 + 0x6b))->int_release();
   param_1[0x6b] = 0;
-  thunk_FUN_101a2bf0();
+  abi_call_thunk_FUN_101a2bf0((int *)(param_1));
   
 })();
 ([&]() noexcept {
 
   ((SCStr *)(param_1 + 0x66))->int_release();
   param_1[0x66] = 0;
-  thunk_FUN_101a2bf0();
-  thunk_FUN_102a3ea0(param_1 + 0x52,*(undefined4 *)(param_1[0x52] + 4));
+  abi_call_thunk_FUN_101a2bf0((int *)(param_1));
+  ((CallABI_thunk_FUN_102a3ea0 *)(param_1))->thunk_FUN_102a3ea0((undefined4)(param_1 + 0x52), (int *)(*(undefined4 *)(param_1[0x52] + 4)));
   thunk_FUN_1148a50e((void *)(param_1[0x52]), 0x14);
-  thunk_FUN_11007f30();
+  abi_call_thunk_FUN_11007f30((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x1b0);
   }
@@ -29109,14 +29117,14 @@ undefined4 * Recovered_10e60f30::FUN_10e60f30(byte param_2) noexcept
 
   ((SCStr *)(param_1 + 0x16))->int_release();
   param_1[0x16] = 0;
-  thunk_FUN_101a2bf0();
+  abi_call_thunk_FUN_101a2bf0((int *)(param_1));
   
 })();
 ([&]() noexcept {
 
   ((SCStr *)(param_1 + 0x11))->int_release();
   param_1[0x11] = 0;
-  thunk_FUN_101a2bf0();
+  abi_call_thunk_FUN_101a2bf0((int *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x5c);
   }
@@ -29220,8 +29228,8 @@ void __fastcall FUN_10e768a0(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x3a))->int_release();
   param_1[0x3a] = 0;
-  thunk_FUN_102cc870();
-  thunk_FUN_102cc870();
+  abi_call_thunk_FUN_102cc870((undefined4 *)(param_1));
+  abi_call_thunk_FUN_102cc870((undefined4 *)(param_1));
   param_1[3] = (undefined4)&ghidra_vftable_SCIOpCBDelegate;
   piVar1 = (int *)param_1[5];
   
@@ -29303,8 +29311,8 @@ undefined4 * Recovered_10e76f60::FUN_10e76f60(byte param_2) noexcept
 
   ((SCStr *)(param_1 + 0x3a))->int_release();
   param_1[0x3a] = 0;
-  thunk_FUN_102cc870();
-  thunk_FUN_102cc870();
+  abi_call_thunk_FUN_102cc870((undefined4 *)(param_1));
+  abi_call_thunk_FUN_102cc870((undefined4 *)(param_1));
   param_1[3] = (undefined4)&ghidra_vftable_SCIOpCBDelegate;
   piVar1 = (int *)param_1[5];
   
@@ -29347,8 +29355,8 @@ void __fastcall FUN_10e7fac0(undefined4 *param_1) noexcept
     param_1[0x45] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_103fa6b0();
-  thunk_FUN_10e26f80();
+  abi_call_thunk_FUN_103fa6b0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_10e26f80((undefined4 *)(param_1));
   piVar1 = (int *)param_1[0xf];
   
 })();
@@ -29419,7 +29427,7 @@ void __fastcall FUN_10e7fcf0(undefined4 *param_1) noexcept
 
   *param_1 = (undefined4)&ghidra_vftable_SCChangeEmailWizVerifyState;
   param_1[3] = (undefined4)&ghidra_vftable_SCChangeEmailWizVerifyState;
-  thunk_FUN_103fa6b0();
+  abi_call_thunk_FUN_103fa6b0((undefined4 *)(param_1));
   piVar1 = (int *)param_1[9];
   ([&]() noexcept {
 
@@ -29467,7 +29475,7 @@ undefined4 * Recovered_10e7ff70::FUN_10e7ff70(byte param_2) noexcept
 
   *param_1 = (undefined4)&ghidra_vftable_SCChangeEmailWizVerifyState;
   param_1[3] = (undefined4)&ghidra_vftable_SCChangeEmailWizVerifyState;
-  thunk_FUN_103fa6b0();
+  abi_call_thunk_FUN_103fa6b0((undefined4 *)(param_1));
   piVar1 = (int *)param_1[9];
   ([&]() noexcept {
 
@@ -29546,7 +29554,7 @@ void __fastcall FUN_10e95ec0(undefined4 *param_1) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x1a] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_10cf71a0();
+  abi_call_thunk_FUN_10cf71a0((undefined4 *)(param_1));
   
 })();
 
@@ -29593,7 +29601,7 @@ undefined4 * Recovered_10e99100::FUN_10e99100(byte param_2) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x1a] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_10cf71a0();
+  abi_call_thunk_FUN_10cf71a0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x88);
   }
@@ -30648,7 +30656,7 @@ void __fastcall FUN_10f31d40(int param_1) noexcept
 
   ((SCStr *)(param_1 + 0x1c))->int_release();
   *(undefined4 *)(param_1 + 0x1c) = 0;
-  thunk_FUN_11261f10();
+  abi_call_thunk_FUN_11261f10((undefined4 *)(param_1));
   
 })();
 
@@ -30963,7 +30971,7 @@ int Recovered_10f32a90::FUN_10f32a90(byte param_2) noexcept
 
   ((SCStr *)(param_1 + 0x1c))->int_release();
   *(undefined4 *)(param_1 + 0x1c) = 0;
-  thunk_FUN_11261f10();
+  abi_call_thunk_FUN_11261f10((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x24);
   }
@@ -31184,8 +31192,8 @@ void __fastcall FUN_10f44b00(undefined4 *param_1) noexcept
 ([&]() noexcept {
 
   param_1[0xa3] = (undefined4)&ghidra_vftable_SCTimerUser;
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
+  abi_call_thunk_FUN_1059d800((int)(param_1));
+  abi_call_thunk_FUN_1059c050((undefined4 *)(param_1));
   param_1[0xa0] = (undefined4)&ghidra_vftable_SCNowPlayingEventSink;
   piVar1 = (int *)param_1[0xa2];
   
@@ -31197,7 +31205,7 @@ void __fastcall FUN_10f44b00(undefined4 *param_1) noexcept
     param_1[0xa2] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_102037c0();
+  abi_call_thunk_FUN_102037c0((undefined4 *)(param_1));
   
 })();
 
@@ -31474,8 +31482,8 @@ void __fastcall FUN_10f82f10(int *param_1) noexcept
   if (piVar3 != (int *)0x0) {
     ((RecoveredVirtualSlots *)(piVar3))->VirtualSlot2();
   }
-  thunk_FUN_10f82b00();
-  thunk_FUN_10f82750();
+  abi_call_thunk_FUN_10f82b00((int *)(param_1));
+  abi_call_thunk_FUN_10f82750((undefined4 *)(param_1));
   param_1[0x3e] = (int)(undefined4)&ghidra_vftable_RITQHandler;
   param_1[0x3b] = (int)(undefined4)&ghidra_vftable_SCIOpCBDelegate;
   piVar1 = (int *)param_1[0x3d];
@@ -31499,7 +31507,7 @@ void __fastcall FUN_10f82f10(int *param_1) noexcept
     param_1[0x3a] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10c68c80();
+  abi_call_thunk_FUN_10c68c80((undefined4 *)(param_1));
   
 })();
 
@@ -31611,7 +31619,7 @@ void __fastcall FUN_10f97010(undefined4 *param_1) noexcept
       (**(code **)(param_1[10] + 4))();
     }
   }
-  thunk_FUN_106cffb0();
+  abi_call_thunk_FUN_106cffb0((undefined4 *)(param_1));
   piVar1 = (int *)param_1[9];
   ([&]() noexcept {
 
@@ -31854,7 +31862,7 @@ void __fastcall FUN_10fa5380(int *param_1) noexcept
   if (piVar3 != (int *)0x0) {
     ((RecoveredVirtualSlots *)(piVar3))->VirtualSlot2();
   }
-  thunk_FUN_102cc870();
+  abi_call_thunk_FUN_102cc870((undefined4 *)(param_1));
   param_1[6] = (int)(undefined4)&ghidra_vftable_SCHouseholdEventSink;
   piVar1 = (int *)param_1[8];
   
@@ -32575,13 +32583,13 @@ void __fastcall FUN_10fb0330(undefined4 *param_1) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCLifecycleNetworkTestAggregateResultState;
   param_1[3] = (undefined4)&ghidra_vftable_SCLifecycleNetworkTestAggregateResultState;
   param_1[6] = (undefined4)&ghidra_vftable_SCLifecycleNetworkTestAggregateResultState;
-  thunk_FUN_10305f70();
-  thunk_FUN_10faf960();
+  abi_call_thunk_FUN_10305f70((int)(param_1));
+  abi_call_thunk_FUN_10faf960((int)(param_1));
   ([&]() noexcept {
 
   param_1[6] = (undefined4)&ghidra_vftable_SCTimerUser;
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
+  abi_call_thunk_FUN_1059d800((int)(param_1));
+  abi_call_thunk_FUN_1059c050((undefined4 *)(param_1));
   param_1[3] = (undefined4)&ghidra_vftable_SCIOpCBDelegate;
   piVar1 = (int *)param_1[5];
   
@@ -32706,9 +32714,9 @@ void __fastcall FUN_10fb0730(undefined4 *param_1) noexcept
      (cVar2 = (**(code **)(*(int *)param_1[0x3f] + 0x1c))(), cVar2 != '\0')) {
     (**(code **)(param_1[0x3e] + 4))();
   }
-  thunk_FUN_102cc870();
-  thunk_FUN_10461ec0();
-  thunk_FUN_102c45c0();
+  abi_call_thunk_FUN_102cc870((undefined4 *)(param_1));
+  abi_call_thunk_FUN_10461ec0((undefined4 *)(param_1));
+  abi_call_thunk_FUN_102c45c0((undefined4 *)(param_1));
   piVar1 = (int *)param_1[9];
   ([&]() noexcept {
 
@@ -32855,13 +32863,13 @@ undefined4 * Recovered_10fb1820::FUN_10fb1820(byte param_2) noexcept
   *param_1 = (undefined4)&ghidra_vftable_SCLifecycleNetworkTestAggregateResultState;
   param_1[3] = (undefined4)&ghidra_vftable_SCLifecycleNetworkTestAggregateResultState;
   param_1[6] = (undefined4)&ghidra_vftable_SCLifecycleNetworkTestAggregateResultState;
-  thunk_FUN_10305f70();
-  thunk_FUN_10faf960();
+  abi_call_thunk_FUN_10305f70((int)(param_1));
+  abi_call_thunk_FUN_10faf960((int)(param_1));
   ([&]() noexcept {
 
   param_1[6] = (undefined4)&ghidra_vftable_SCTimerUser;
-  thunk_FUN_1059d800();
-  thunk_FUN_1059c050();
+  abi_call_thunk_FUN_1059d800((int)(param_1));
+  abi_call_thunk_FUN_1059c050((undefined4 *)(param_1));
   param_1[3] = (undefined4)&ghidra_vftable_SCIOpCBDelegate;
   piVar1 = (int *)param_1[5];
   
@@ -33163,72 +33171,6 @@ int Recovered_10fb4510::FUN_10fb4510(int *param_2) noexcept
 }
 
 
-// Reference entry 10fb8750; body size 307 bytes.
-#line 1 "ENTRY_10fb8750"
-
-undefined4 Recovered_10fb8750::FUN_10fb8750(byte *param_2)
-
-{
-  int param_1 = (int)this;
-  int *piVar1;
-  int *piVar2;
-
-  int iVar4;
-  uint uVar5;
-  undefined1 local_18 [8];
-
-  uVar5 = ((((*param_2 ^ 0x811c9dc5) * 0x1000193 ^ (uint)param_2[1]) * 0x1000193 ^ (uint)param_2[2])
-           * 0x1000193 ^ (uint)param_2[3]) * 0x1000193;
-  iVar4 = thunk_FUN_10fab6b0(local_18,param_2,uVar5);
-  piVar2 = *(int **)(iVar4 + 4);
-  if (piVar2 != (int *)0x0) {
-    piVar1 = (int *)(*(int *)(param_1 + 0x14) + (*(uint *)(param_1 + 0x20) & uVar5) * 8);
-    if ((int *)piVar1[1] == piVar2) {
-      if ((int *)*piVar1 == piVar2) {
-        iVar4 = *(int *)(param_1 + 0xc);
-        *piVar1 = iVar4;
-        piVar1[1] = iVar4;
-      }
-      else {
-        piVar1[1] = piVar2[1];
-      }
-    }
-    else if ((int *)*piVar1 == piVar2) {
-      *piVar1 = *piVar2;
-    }
-    iVar4 = *piVar2;
-    *(int *)(param_1 + 0x10) = *(int *)(param_1 + 0x10) + -1;
-    *(int *)piVar2[1] = iVar4;
-    *(int *)(iVar4 + 4) = piVar2[1];
-    piVar1 = (int *)piVar2[6];
-    ([&]() noexcept {
-
-    if (piVar1 != (int *)0x0) {
-      piVar2[5] = 0;
-      piVar2[6] = 0;
-      ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
-    }
-    piVar1 = (int *)piVar2[4];
-    
-})();
-([&]() noexcept {
-
-    if (piVar1 != (int *)0x0) {
-      piVar2[3] = 0;
-      piVar2[4] = 0;
-      ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
-    }
-    thunk_FUN_1148a50e((void *)(piVar2), 0x1c);
-    
-})();
-
-    return 1;
-  }
-
-  return 0;
-}
-
-
 // Reference entry 10fc0c80; body size 131 bytes.
 #line 1 "ENTRY_10fc0c80"
 
@@ -33413,7 +33355,7 @@ void __fastcall FUN_10fca590(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x22))->int_release();
   param_1[0x22] = 0;
-  thunk_FUN_10318ac0();
+  abi_call_thunk_FUN_10318ac0((undefined4 *)(param_1));
   
 })();
 
@@ -33440,7 +33382,7 @@ undefined4 * Recovered_10fca650::FUN_10fca650(byte param_2) noexcept
 
   ((SCStr *)(param_1 + 0x22))->int_release();
   param_1[0x22] = 0;
-  thunk_FUN_10318ac0();
+  abi_call_thunk_FUN_10318ac0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x98);
   }
@@ -33547,7 +33489,7 @@ void __fastcall FUN_10fcbda0(undefined4 *param_1) noexcept
     param_1[0x11] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10b6d850();
+  abi_call_thunk_FUN_10b6d850((undefined4 *)(param_1));
   
 })();
 
@@ -33587,7 +33529,7 @@ void __fastcall FUN_10fd0a00(undefined4 *param_1) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x1a] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_10cf71a0();
+  abi_call_thunk_FUN_10cf71a0((undefined4 *)(param_1));
   
 })();
 
@@ -33628,7 +33570,7 @@ undefined4 * Recovered_10fd10f0::FUN_10fd10f0(byte param_2) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x1a] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_10cf71a0();
+  abi_call_thunk_FUN_10cf71a0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x88);
   }
@@ -33714,7 +33656,7 @@ void __fastcall FUN_10fd8850(undefined4 *param_1) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x20] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_10cf71a0();
+  abi_call_thunk_FUN_10cf71a0((undefined4 *)(param_1));
   *param_1 = (undefined4)&ghidra_vftable_SCAlarmItem;
   piVar1 = (int *)param_1[4];
   
@@ -33823,7 +33765,7 @@ undefined4 * Recovered_10fd9fa0::FUN_10fd9fa0(byte param_2) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[0x20] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_10cf71a0();
+  abi_call_thunk_FUN_10cf71a0((undefined4 *)(param_1));
   *param_1 = (undefined4)&ghidra_vftable_SCAlarmItem;
   piVar1 = (int *)param_1[4];
   
@@ -33899,7 +33841,7 @@ void __fastcall FUN_10fed960(undefined4 *param_1) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[6] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_104da760();
+  abi_call_thunk_FUN_104da760((undefined4 *)(param_1));
   
 })();
 
@@ -33993,9 +33935,9 @@ void __fastcall FUN_10fedfd0(undefined4 *param_1) noexcept
     param_1[0xb] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_110a9ef0();
+  abi_call_thunk_FUN_110a9ef0((undefined4 *)(param_1));
   param_1[6] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_104da760();
+  abi_call_thunk_FUN_104da760((undefined4 *)(param_1));
   
 })();
 
@@ -34076,7 +34018,7 @@ undefined4 * Recovered_10feed80::FUN_10feed80(byte param_2) noexcept
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
   param_1[6] = (undefined4)&ghidra_vftable_SCIObj;
-  thunk_FUN_104da760();
+  abi_call_thunk_FUN_104da760((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x44);
   }
@@ -34108,7 +34050,7 @@ void __fastcall FUN_11003ef0(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x1124))->int_release();
   param_1[0x1124] = 0;
-  thunk_FUN_111c0a80();
+  abi_call_thunk_FUN_111c0a80((undefined4 *)(param_1));
   
 })();
 
@@ -34142,7 +34084,7 @@ void __fastcall FUN_11003fd0(undefined4 *param_1) noexcept
   ((SCStr *)(param_1 + 0x3022))->int_release();
   param_1[0x3022] = 0;
   param_1[0x3021] = (undefined4)&ghidra_vftable_RServiceAuthHeaderBuilderFactory;
-  thunk_FUN_111fc270();
+  abi_call_thunk_FUN_111fc270((undefined4 *)(param_1));
   
 })();
 
@@ -34177,7 +34119,7 @@ undefined4 * Recovered_11004760::FUN_11004760(byte param_2) noexcept
   ((SCStr *)(param_1 + 0x3022))->int_release();
   param_1[0x3022] = 0;
   param_1[0x3021] = (undefined4)&ghidra_vftable_RServiceAuthHeaderBuilderFactory;
-  thunk_FUN_111fc270();
+  abi_call_thunk_FUN_111fc270((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0xc094);
   }
@@ -34296,8 +34238,8 @@ void __fastcall FUN_11010440(undefined4 *param_1) noexcept
   puVar1 = param_1 + 0x26;
   thunk_FUN_10bcda40(*puVar1,param_1[0x27],puVar1);
   param_1[0x27] = *puVar1;
-  thunk_FUN_10bd6f00();
-  thunk_FUN_10e5df30();
+  abi_call_thunk_FUN_10bd6f00((int *)(param_1));
+  abi_call_thunk_FUN_10e5df30((undefined4 *)(param_1));
   piVar2 = (int *)param_1[0xb];
   ([&]() noexcept {
 
@@ -34351,15 +34293,15 @@ void __fastcall FUN_11010600(undefined4 *param_1) noexcept
 
   ((SCStr *)(param_1 + 0x4b))->int_release();
   param_1[0x4b] = 0;
-  thunk_FUN_101a2bf0();
+  abi_call_thunk_FUN_101a2bf0((int *)(param_1));
   
 })();
 ([&]() noexcept {
 
   ((SCStr *)(param_1 + 0x46))->int_release();
   param_1[0x46] = 0;
-  thunk_FUN_101a2bf0();
-  thunk_FUN_10dd1440();
+  abi_call_thunk_FUN_101a2bf0((int *)(param_1));
+  abi_call_thunk_FUN_10dd1440((int *)(param_1));
   
 })();
 
@@ -34480,15 +34422,15 @@ undefined4 * Recovered_11010d10::FUN_11010d10(byte param_2) noexcept
 
   ((SCStr *)(param_1 + 0x4b))->int_release();
   param_1[0x4b] = 0;
-  thunk_FUN_101a2bf0();
+  abi_call_thunk_FUN_101a2bf0((int *)(param_1));
   
 })();
 ([&]() noexcept {
 
   ((SCStr *)(param_1 + 0x46))->int_release();
   param_1[0x46] = 0;
-  thunk_FUN_101a2bf0();
-  thunk_FUN_10dd1440();
+  abi_call_thunk_FUN_101a2bf0((int *)(param_1));
+  abi_call_thunk_FUN_10dd1440((int *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x130);
   }
@@ -34583,7 +34525,7 @@ void __fastcall FUN_1101cd80(undefined4 *param_1) noexcept
     param_1[0x14] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_11042880();
+  abi_call_thunk_FUN_11042880((undefined4 *)(param_1));
   
 })();
 
@@ -34622,7 +34564,7 @@ undefined4 * Recovered_1101d270::FUN_1101d270(byte param_2) noexcept
     param_1[0x14] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_11042880();
+  abi_call_thunk_FUN_11042880((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x60);
   }
@@ -34661,7 +34603,7 @@ void __fastcall FUN_1102f6c0(undefined4 *param_1) noexcept
     param_1[0x4b] = 0;
     param_1[0x4c] = 0;
   }
-  thunk_FUN_10202e00();
+  abi_call_thunk_FUN_10202e00((int *)(param_1));
   piVar1 = (int *)param_1[0x4e];
   ([&]() noexcept {
 
@@ -34691,7 +34633,7 @@ void __fastcall FUN_1102f6c0(undefined4 *param_1) noexcept
     param_1[0x4a] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10203d60();
+  abi_call_thunk_FUN_10203d60((undefined4 *)(param_1));
   
 })();
 
@@ -34823,7 +34765,7 @@ void __fastcall FUN_1103a600(undefined4 *param_1) noexcept
     param_1[0x23] = 0;
     ((RecoveredVirtualSlots *)(piVar1))->VirtualSlot2();
   }
-  thunk_FUN_10f41620();
+  abi_call_thunk_FUN_10f41620((undefined4 *)(param_1));
   
 })();
 
@@ -34937,7 +34879,7 @@ void __fastcall FUN_11172910(undefined4 *param_1) noexcept
       (**(code **)*puVar1)(1);
     }
   }
-  thunk_FUN_1113e6f0();
+  abi_call_thunk_FUN_1113e6f0((undefined4 *)(param_1));
   
 })();
 
@@ -34976,7 +34918,7 @@ undefined4 * Recovered_11172e60::FUN_11172e60(byte param_2) noexcept
       (**(code **)*puVar1)(1);
     }
   }
-  thunk_FUN_1113e6f0();
+  abi_call_thunk_FUN_1113e6f0((undefined4 *)(param_1));
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e((void *)(param_1), 0x3c);
   }

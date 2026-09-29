@@ -110,7 +110,8 @@ def prototype(record):
 
 
 class CallABI:
-    def __init__(self, paths):
+    def __init__(self, paths, recover_implicit_register=False):
+        self.recover_implicit_register = recover_implicit_register
         self.prototypes = {r['entry']: p for r in load_records(paths).values()
                            if (p := prototype(r)) is not None}
         self.symbols = load_symbol_vas(DEFAULT_SYMBOLS)
@@ -144,6 +145,18 @@ class CallABI:
         declarations = {}
         changed = 0
         opening_body = source.index('{')
+        implicit_receiver = None
+        if self.recover_implicit_register:
+            header = source[:opening_body]
+            signature = re.search(
+                r'__(?:fastcall|thiscall)\b[^()]*(?:FUN_[0-9a-f]{8})\s*\((.*)\)\s*(?:noexcept\s*)?$',
+                header, re.S)
+            if signature:
+                params = arguments(signature.group(1))
+                if params:
+                    name = re.search(r'([A-Za-z_]\w*)\s*$', params[0])
+                    if name:
+                        implicit_receiver = name.group(1)
         for match in reversed(list(CALL.finditer(source, opening_body))):
             name = match.group(1)
             proto = self.resolve(name)
@@ -151,6 +164,9 @@ class CallABI:
                 continue
             close = closing_paren(source, match.end() - 1)
             values = arguments(source[match.end():close])
+            if (implicit_receiver and proto['cc'] in {'__fastcall', '__thiscall'} and
+                    len(values) + 1 == len(proto['parameters'])):
+                values.insert(0, implicit_receiver)
             if len(values) != len(proto['parameters']):
                 continue
             alias = 'abi_call_' + name
