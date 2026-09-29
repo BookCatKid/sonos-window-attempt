@@ -151,7 +151,10 @@ def normalize_definition(record):
     definition = re.search(r'([^\s()]+)\s*\(', header)
     if not definition or not sep:
         return source
-    header = (header[:definition.start(1)] + 'FUN_' + record['entry'] +
+    prefix=header[:definition.start(1)]
+    if record.get('verified_stack_cc') in {'__cdecl','__stdcall'}:
+        prefix=re.sub(r'\b__(?:thiscall|fastcall|cdecl|stdcall)\b','',prefix).rstrip()+' '+record['verified_stack_cc']+' '
+    header = (prefix + 'FUN_' + record['entry'] +
               header[definition.end(1):])
     # The recovered explicit receiver must not collide with C++'s this keyword.
     return re.sub(r'\bthis\b', 'ghidra_this', header + sep + body)

@@ -8,6 +8,7 @@ import ghidra.program.model.listing.*;
 import ghidra.program.model.data.*;
 import ghidra.program.model.pcode.HighFunctionDBUtil;
 import ghidra.program.model.symbol.SourceType;
+import ghidra.program.model.scalar.Scalar;
 import java.nio.file.*;
 import java.io.*;
 import java.util.*;
@@ -15,6 +16,44 @@ import java.util.*;
 public class PropagateCallSignatures extends GhidraScript {
     private final Gson gson = new Gson();
     private DecompInterface decompiler;
+    private final Map<String,String> verifiedStackCC = new HashMap<>();
+    private void reconcileStackABI(Function function, Map<String,Object> report) throws Exception {
+        // Stack-only conventions can be distinguished independently by RET's
+        // cleanup operand. Do not reinterpret ECX/EDX/custom-register models.
+        for (Parameter p : function.getParameters())
+            if (!p.getVariableStorage().isStackStorage()) return;
+        Integer pop=null;
+        InstructionIterator instructions=currentProgram.getListing().getInstructions(function.getBody(),true);
+        while (instructions.hasNext()) {
+            Instruction ins=instructions.next();
+            if (!ins.getMnemonicString().equalsIgnoreCase("RET")) continue;
+            int value=0;
+            if (ins.getNumOperands()!=0) {
+                Scalar scalar=ins.getScalar(0); if (scalar==null) return;
+                value=(int)scalar.getUnsignedValue();
+            }
+            if (pop!=null && pop!=value) return;
+            pop=value;
+        }
+        if (pop==null || pop<0 || pop>256 || pop%4!=0) return;
+        int used=0;
+        for (Parameter p : function.getParameters()) {
+            long offset=p.getVariableStorage().getStackOffset();
+            if (offset<4 || offset>256) return;
+            used=Math.max(used,(int)offset-4+((p.getDataType().getLength()+3)/4)*4);
+        }
+        if (pop>0 && used>pop) return;
+        String convention=pop==0 ? "__cdecl" : "__stdcall";
+        function.setCallingConvention(convention);
+        if (pop>0) {
+            for (int remaining=pop-used;remaining>0;remaining-=4)
+                function.addParameter(new ParameterImpl("unused_stack_"+function.getParameterCount(),
+                    Undefined4DataType.dataType,currentProgram),SourceType.ANALYSIS);
+        }
+        function.setStackPurgeSize(pop);
+        verifiedStackCC.put(function.getEntryPoint().toString(),convention);
+        report.put("verified_stack_cc",convention); report.put("ret_cleanup_bytes",pop);
+    }
     private void export(List<String> entries, String path) throws Exception {
         try (PrintWriter out = new PrintWriter(new FileWriter(path))) {
             for (String entry : entries) {
@@ -26,6 +65,8 @@ public class PropagateCallSignatures extends GhidraScript {
                 record.put("body_bytes", f.getBody().getNumAddresses());
                 record.put("signature", f.getSignature().getPrototypeString());
                 record.put("thunk", f.isThunk());
+                String verified=verifiedStackCC.get(entry.trim());
+                if (verified!=null) record.put("verified_stack_cc",verified);
                 DecompileResults result = decompiler.decompileFunction(f, 30, monitor);
                 if (result.decompileCompleted() && result.getDecompiledFunction() != null)
                     record.put("decompiled_c", result.getDecompiledFunction().getC());
@@ -79,7 +120,9 @@ public class PropagateCallSignatures extends GhidraScript {
                     int tx=currentProgram.startTransaction("Inferred callee parameters"); boolean ok=false;
                     try {
                         HighFunctionDBUtil.commitParamsToDatabase(result.getHighFunction(),useDataTypes,
-                            HighFunctionDBUtil.ReturnCommitOption.COMMIT,SourceType.ANALYSIS);
+                            useDataTypes ? HighFunctionDBUtil.ReturnCommitOption.COMMIT :
+                                HighFunctionDBUtil.ReturnCommitOption.NO_COMMIT,SourceType.ANALYSIS);
+                        reconcileStackABI(f,item);
                         item.put("after",f.getSignature().getPrototypeString());item.put("status","committed");
                         ok=true; committed++;
                     } catch (Exception error) {item.put("status","commit_failed");item.put("error",error.toString());}

@@ -88,7 +88,7 @@ def prototype(record):
         return None
     prefix, name, params = match.groups()
     convention = re.search(r'\b(__thiscall|__fastcall|__cdecl|__stdcall)\b', prefix)
-    cc = convention.group(1) if convention else '__cdecl'
+    cc = record.get('verified_stack_cc') or (convention.group(1) if convention else '__cdecl')
     result = re.sub(r'\b__(?:thiscall|fastcall|cdecl|stdcall)\b', '', prefix).strip()
     result = abi_type(result)
     if result is None:
