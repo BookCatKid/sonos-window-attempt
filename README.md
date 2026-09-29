@@ -67,6 +67,32 @@ function count and body bytes, with non-thunk numbers alongside. The generated
 files are inspection material; the readable, compilable C++ candidates remain
 under `src/` and require separate byte comparisons.
 
+## Mechanical C++ compilation gate
+
+`tools/compile_ghidra_cpp.py` selects Ghidra functions with no unresolved globals
+or class calls, emits their C-like bodies as C++, and compiles real x86 COFF
+objects with `clang-cl`. Its type aliases preserve known widths, and its
+declarations for `thunk_FUN_*` calls are provisional integer-returning stubs.
+They require signature recovery before linking or byte comparison. It records
+every accepted address in
+`compiled-index.tsv` and compiler rejection in `failures.tsv`. Generated C++
+and objects are local under `analysis/compiled-cpp*`; they are not checked in.
+
+```sh
+python3 tools/compile_ghidra_cpp.py analysis/bulk-medium/*.jsonl --output-dir analysis/compiled-cpp-thunk
+python3 tools/compile_ghidra_cpp.py analysis/bulk-64-pilot.jsonl analysis/bulk-64-rest.jsonl analysis/bulk-64-final/*.jsonl --output-dir analysis/compiled-cpp-high-thunk
+python3 tools/compile_ghidra_cpp.py analysis/communication-slice.jsonl --output-dir analysis/compiled-cpp-communication-thunk
+```
+
+The current combined gate compiles 12,563 distinct functions with 403,579
+reference body bytes: 11.41% of non-glue function count and 2.72% of non-glue
+body bytes. Of those functions, 4,674 are Ghidra `Unwind@` handlers, so raw
+function count overstates progress on the communication code. Four of the 11
+selected communication functions compile, including two simple getters. The
+compilation percentage is distinct from Ghidra pseudocode coverage and from
+byte-identical code generation. These objects have not been linked into the
+target DLL.
+
 ```sh
 # Export the remaining functions smaller than 64 bytes, including thunks.
 python3 tools/run_bulk_decomp.py --max-size 64 --include-thunks --output-dir analysis/bulk-small
