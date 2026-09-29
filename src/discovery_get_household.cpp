@@ -6,7 +6,8 @@ struct SCIHousehold;
 struct SCHousehold;
 
 struct RefCounted {
-    virtual void Reserved();
+    virtual void Reserved0();
+    virtual void Reserved1();
     virtual void Release();
 };
 
@@ -24,8 +25,10 @@ struct SCRetPtr {
     SCRetPtr(const SCRetPtr &other);
 
     template <class U>
-    SCRetPtr(SCRetPtr<U> &&other) : value(other.value) {
+    SCRetPtr(SCRetPtr<U> &&other) {
+        T *moved = other.value;
         other.value = nullptr;
+        value = moved;
     }
 
     ~SCRetPtr() {

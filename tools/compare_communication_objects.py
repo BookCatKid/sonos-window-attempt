@@ -4,6 +4,7 @@
 import argparse
 import json
 import re
+import struct
 from pathlib import Path
 
 from capstone import Cs, CS_ARCH_X86, CS_MODE_32
@@ -24,6 +25,13 @@ TARGETS = (
      r'soap_length_parameter_helper'),
 )
 DISASSEMBLER = Cs(CS_ARCH_X86, CS_MODE_32)
+DISCOVERY_START_TARGETS = {
+    '@prepare_discovery_object@4': 0x1006156d,
+    '_acquire_discovery_result': 0x1000daa3,
+    '_refresh_discovery_context': 0x1004ec47,
+    '@advance_discovery_context@4': 0x10075f45,
+    '?finish@DiscoverySubobject@@QAEXXZ': 0x1003ceb6,
+}
 
 
 def body_in_object(path, pattern):
@@ -48,7 +56,8 @@ def body_in_object(path, pattern):
         instructions.pop()
     if instructions:
         candidate = candidate[:instructions[-1].address + instructions[-1].size]
-    relocations = [offset - start for offset, _target, _kind in section['relocations']
+    relocations = [(offset - start, symbols[target]['name'], kind)
+                   for offset, target, kind in section['relocations']
                    if start <= offset < start + len(candidate)]
     return candidate, relocations, symbol['name']
 
@@ -68,19 +77,33 @@ def main():
                                       image_base, pe_sections)
             if len(expected) != size:
                 raise ValueError('reference body missing')
-            relocated = {position for offset in relocations
+            relocated = {position for offset, _symbol, _kind in relocations
                          for position in range(offset, offset + 4)}
             shared = min(len(candidate), len(expected))
             fixed = [position for position in range(shared)
                      if position not in relocated]
             matches = sum(candidate[position] == expected[position]
                           for position in fixed)
+            target_checks = []
+            if name == 'discovery_native_start':
+                for offset, target_symbol, kind in relocations:
+                    actual_target = (entry + offset + 4 +
+                                     struct.unpack_from('<i', expected, offset)[0])
+                    target_checks.append(kind == 0x14 and
+                                         DISCOVERY_START_TARGETS.get(target_symbol) ==
+                                         actual_target)
             rows.append({'name': name, 'reference_va': hex(entry),
                          'reference_bytes': size, 'compiled_bytes': len(candidate),
                          'symbol': symbol, 'relocations': len(relocations),
                          'fixed_matching': matches, 'fixed_compared': len(fixed),
                          'same_length_all_fixed_match': len(candidate) == size and
                          matches == len(fixed),
+                         'relocation_targets_verified':
+                         len(target_checks) if target_checks and all(target_checks) else 0,
+                         'relocation_targets_checked': len(target_checks),
+                         'complete_relocatable_body_match':
+                         len(candidate) == size and matches == len(fixed) and
+                         len(target_checks) == len(relocations) and all(target_checks),
                          'exact_body': not relocations and candidate == expected})
         except Exception as error:
             rows.append({'name': name, 'reference_va': hex(entry),
@@ -88,6 +111,9 @@ def main():
     print(json.dumps({'functions': rows,
                       'same_length_all_fixed_matches': sum(
                           row.get('same_length_all_fixed_match', False) for row in rows),
+                      'complete_relocatable_body_matches': sum(
+                          row.get('complete_relocatable_body_match', False)
+                          for row in rows),
                       'exact_bodies': sum(row.get('exact_body', False) for row in rows)},
                      indent=2))
     if any('error' in row for row in rows):
