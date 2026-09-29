@@ -179,6 +179,10 @@ raises that object result to **788 functions and 74,751 reference body bytes**.
 targets against the reference exports, thunk entries, and string contents;
 this verifies target semantics, not linked operand bytes. The repeated
 103-byte interface-query family contributes 632 functions and 65,096 bytes.
+The [pinned string-equality probe](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36528773340)
+also compiled `SCStr::operator==(char const *)` from readable C++ to a
+74-byte body with all 70 fixed bytes equal; its one absolute relocation names
+an empty literal whose content matches the reference target.
 
 The same run produced a 7,168-byte `wrapper_link_probe.dll` from the exact
 41-byte wrapper C++ using the pinned 14.28.29919 linker. Its PE is x86 at base
