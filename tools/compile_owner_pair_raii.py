@@ -19,6 +19,25 @@ from recovered_call_abi import CallABI
 CTOR = "thunk_FUN_101f6530"
 DTOR_TARGET = "1001d21e"
 OWNER = "RecoveredOwner_FUN_1001d21e"
+OWNER_VIRTUAL = "RecoveredOwnerVirtualSlot10"
+
+
+def restore_owner_virtual(source):
+    pattern = re.compile(
+        r"\(\*\*\(code \*\*\)\(\*recovered_owner\.first \+ (?:0x28|40)\)\)"
+        r"\(([^;\n]+)\)"
+    )
+    count = 0
+    def replace(match):
+        nonlocal count
+        from recovered_call_abi import arguments
+        values = arguments(match.group(1))
+        if len(values) != 3:
+            return match.group(0)
+        count += 1
+        cast = ", ".join(f"(void *)({value})" for value in values)
+        return f"(({OWNER_VIRTUAL} *)recovered_owner.first)->VirtualSlot10({cast})"
+    return pattern.sub(replace, source), count
 
 
 def lower(record, evidence, abi):
@@ -81,11 +100,19 @@ def lower(record, evidence, abi):
     for label in sorted(labels, key=len, reverse=True):
         source = source.replace(label, f"(undefined4)&{symbol_name(label)}")
     source = msvc_compatible_labels(source)
+    source, owner_virtual_count = restore_owner_virtual(source)
+    if owner_virtual_count != 1:
+        return None
     source, virtual_count, slots = restore_virtual_zero_arg_calls(source)
     source, declarations, typed_count = abi.lower(source)
     if source is None or not eligible(source):
         return None
-    declarations[CTOR] = f"extern void __fastcall abi_call_{CTOR}(void *receiver);"
+    declarations[CTOR] = f"extern void __cdecl abi_call_{CTOR}(void *receiver);"
+    declarations[OWNER_VIRTUAL] = (
+        f"struct {OWNER_VIRTUAL} {{ " +
+        " ".join(f"virtual int Reserved{slot}();" for slot in range(10)) +
+        " virtual int VirtualSlot10(void *, void *, void *); };"
+    )
     declarations[OWNER] = (
         f"struct {OWNER} {{ int *first; int *second; "
         f"{OWNER}() {{ abi_call_{CTOR}(this); }} "

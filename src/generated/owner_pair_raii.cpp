@@ -86,7 +86,8 @@ struct RecoveredVirtualSlots {
   virtual int VirtualSlot1();
   virtual int VirtualSlot2();
 };
-extern void __fastcall abi_call_thunk_FUN_101f6530(void *receiver);
+extern void __cdecl abi_call_thunk_FUN_101f6530(void *receiver);
+struct RecoveredOwnerVirtualSlot10 { virtual int Reserved0(); virtual int Reserved1(); virtual int Reserved2(); virtual int Reserved3(); virtual int Reserved4(); virtual int Reserved5(); virtual int Reserved6(); virtual int Reserved7(); virtual int Reserved8(); virtual int Reserved9(); virtual int VirtualSlot10(void *, void *, void *); };
 struct RecoveredOwner_FUN_1001d21e { int *first; int *second; RecoveredOwner_FUN_1001d21e() { abi_call_thunk_FUN_101f6530(this); } ~RecoveredOwner_FUN_1001d21e() noexcept { if (second) { int *value = second; first = 0; second = 0; ((RecoveredVirtualSlots *)value)->VirtualSlot2(); } } };
 
 // Reference entry 101bbb40; body size 128 bytes.
@@ -99,7 +100,7 @@ void __fastcall FUN_101bbb40(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -115,7 +116,7 @@ void __fastcall FUN_1029b6d0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -131,7 +132,7 @@ void __fastcall FUN_10328900(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -147,7 +148,7 @@ void __fastcall FUN_103289a0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -163,7 +164,7 @@ void __fastcall FUN_10328a40(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -179,7 +180,7 @@ void __fastcall FUN_10328ae0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -195,7 +196,7 @@ void __fastcall FUN_10328b80(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -211,7 +212,7 @@ void __fastcall FUN_1038e3d0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -227,7 +228,7 @@ void __fastcall FUN_103a3130(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -243,7 +244,7 @@ void __fastcall FUN_103a31d0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -259,7 +260,7 @@ void __fastcall FUN_103c9570(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -275,7 +276,7 @@ void __fastcall FUN_103c9610(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -291,7 +292,7 @@ void __fastcall FUN_103f00a0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -307,7 +308,7 @@ void __fastcall FUN_103f0140(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -323,7 +324,7 @@ void __fastcall FUN_103f01e0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -339,7 +340,7 @@ void __fastcall FUN_103f0280(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -355,7 +356,7 @@ void __fastcall FUN_103f0320(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -371,7 +372,7 @@ void __fastcall FUN_103f03c0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -387,7 +388,7 @@ void __fastcall FUN_103f0460(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -403,7 +404,7 @@ void __fastcall FUN_103f0500(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -419,7 +420,7 @@ void __fastcall FUN_103f05a0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -435,7 +436,7 @@ void __fastcall FUN_103f0640(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -451,7 +452,7 @@ void __fastcall FUN_103f06e0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -467,7 +468,7 @@ void __fastcall FUN_103f0780(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -483,7 +484,7 @@ void __fastcall FUN_103f0820(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -499,7 +500,7 @@ void __fastcall FUN_103f08c0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -515,7 +516,7 @@ void __fastcall FUN_103f0960(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -531,7 +532,7 @@ void __fastcall FUN_103f0a00(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -547,7 +548,7 @@ void __fastcall FUN_103f0aa0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -563,7 +564,7 @@ void __fastcall FUN_10556270(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -579,7 +580,7 @@ void __fastcall FUN_105760c0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -595,7 +596,7 @@ void __fastcall FUN_105918c0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -611,7 +612,7 @@ void __fastcall FUN_105c0250(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -627,7 +628,7 @@ void __fastcall FUN_105e3830(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -643,7 +644,7 @@ void __fastcall FUN_1068adc0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -659,7 +660,7 @@ void __fastcall FUN_10a05d80(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -675,7 +676,7 @@ void __fastcall FUN_10a05e20(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -691,7 +692,7 @@ void __fastcall FUN_10a05ec0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -707,7 +708,7 @@ void __fastcall FUN_10a05f60(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -723,7 +724,7 @@ void __fastcall FUN_10b71da0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -739,7 +740,7 @@ void __fastcall FUN_10b82c50(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -755,7 +756,7 @@ void __fastcall FUN_10b8ce70(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -771,7 +772,7 @@ void __fastcall FUN_10b8cf10(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -787,7 +788,7 @@ void __fastcall FUN_10b8cfb0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -803,7 +804,7 @@ void __fastcall FUN_10b8d050(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -819,7 +820,7 @@ void __fastcall FUN_10c4cdb0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -835,7 +836,7 @@ void __fastcall FUN_10c526f0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -851,7 +852,7 @@ void __fastcall FUN_10c52790(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -867,7 +868,7 @@ void __fastcall FUN_10c52830(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -883,7 +884,7 @@ void __fastcall FUN_10c528d0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -899,7 +900,7 @@ void __fastcall FUN_10c52970(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -915,7 +916,7 @@ void __fastcall FUN_10c57b20(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -931,7 +932,7 @@ void __fastcall FUN_10c57bc0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -947,7 +948,7 @@ void __fastcall FUN_10c57c60(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -963,7 +964,7 @@ void __fastcall FUN_10c57d00(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -979,7 +980,7 @@ void __fastcall FUN_10c5a730(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -995,7 +996,7 @@ void __fastcall FUN_10c83080(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1011,7 +1012,7 @@ void __fastcall FUN_10c83120(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1027,7 +1028,7 @@ void __fastcall FUN_10cc32b0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1043,7 +1044,7 @@ void __fastcall FUN_10cd7590(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1059,7 +1060,7 @@ void __fastcall FUN_10cd7630(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1075,7 +1076,7 @@ void __fastcall FUN_10cd76d0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1091,7 +1092,7 @@ void __fastcall FUN_10cd7770(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1107,7 +1108,7 @@ void __fastcall FUN_10cd7810(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1123,7 +1124,7 @@ void __fastcall FUN_10cd78b0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1139,7 +1140,7 @@ void __fastcall FUN_10cd7950(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1155,7 +1156,7 @@ void __fastcall FUN_10cd79f0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1171,7 +1172,7 @@ void __fastcall FUN_10cd7a90(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1187,7 +1188,7 @@ void __fastcall FUN_10cde240(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1203,7 +1204,7 @@ void __fastcall FUN_10cde2e0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1219,7 +1220,7 @@ void __fastcall FUN_10ce1b60(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1235,7 +1236,7 @@ void __fastcall FUN_10cf6200(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1251,7 +1252,7 @@ void __fastcall FUN_10d865e0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1267,7 +1268,7 @@ void __fastcall FUN_10d86680(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1283,7 +1284,7 @@ void __fastcall FUN_10d86720(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1299,7 +1300,7 @@ void __fastcall FUN_10d867c0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1315,7 +1316,7 @@ void __fastcall FUN_10d9d970(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1331,7 +1332,7 @@ void __fastcall FUN_10de86d0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1347,7 +1348,7 @@ void __fastcall FUN_10ea26c0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1363,7 +1364,7 @@ void __fastcall FUN_10ef2990(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1379,7 +1380,7 @@ void __fastcall FUN_10f13680(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1395,7 +1396,7 @@ void __fastcall FUN_10f13720(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1411,7 +1412,7 @@ void __fastcall FUN_10f137c0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1427,7 +1428,7 @@ void __fastcall FUN_10f2b770(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1443,7 +1444,7 @@ void __fastcall FUN_10f359e0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1459,7 +1460,7 @@ void __fastcall FUN_10f35a80(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1475,7 +1476,7 @@ void __fastcall FUN_10f35b20(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1491,7 +1492,7 @@ void __fastcall FUN_10f35bc0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1507,7 +1508,7 @@ void __fastcall FUN_10f61900(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1523,7 +1524,7 @@ void __fastcall FUN_10f619a0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1539,7 +1540,7 @@ void __fastcall FUN_10f61a40(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1555,7 +1556,7 @@ void __fastcall FUN_10f61ae0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1571,7 +1572,7 @@ void __fastcall FUN_10f676f0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1587,7 +1588,7 @@ void __fastcall FUN_10f73430(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1603,7 +1604,7 @@ void __fastcall FUN_10f79f20(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1619,7 +1620,7 @@ void __fastcall FUN_10f805e0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1635,7 +1636,7 @@ void __fastcall FUN_10f80680(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1651,7 +1652,7 @@ void __fastcall FUN_10f8de50(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1667,7 +1668,7 @@ void __fastcall FUN_10f8def0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1683,7 +1684,7 @@ void __fastcall FUN_10f8df90(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1699,7 +1700,7 @@ void __fastcall FUN_11018220(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1715,7 +1716,7 @@ void __fastcall FUN_1102d890(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1731,7 +1732,7 @@ void __fastcall FUN_110609b0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1747,7 +1748,7 @@ void __fastcall FUN_11061df0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1763,7 +1764,7 @@ void __fastcall FUN_11062d80(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1779,7 +1780,7 @@ void __fastcall FUN_11065ae0(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
@@ -1795,7 +1796,7 @@ void __fastcall FUN_11067e50(int param_1)
 
   RecoveredOwner_FUN_1001d21e recovered_owner;
 
-  (**(code **)(*recovered_owner.first + 0x28))(param_1 + 0x30,param_1 + 0x28,param_1 + 0x2c);
+  ((RecoveredOwnerVirtualSlot10 *)recovered_owner.first)->VirtualSlot10((void *)(param_1 + 0x30), (void *)(param_1 + 0x28), (void *)(param_1 + 0x2c));
 
   return;
 }
