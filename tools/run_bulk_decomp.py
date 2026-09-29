@@ -41,11 +41,13 @@ def main():
     parser.add_argument("--max-size", type=int, default=0, help="Exclusive; 0 means no maximum")
     parser.add_argument("--include-thunks", action="store_true")
     parser.add_argument("--chunk-size", type=int, default=10000)
+    parser.add_argument("--workers", type=int, default=1,
+                        help="Parallel Ghidra decompilers; 1 uses the serial exporter")
     parser.add_argument("--start", type=int, default=0)
     parser.add_argument("--stop", type=int, help="Exclusive eligible-function index")
     parser.add_argument("--output-dir", type=Path, required=True)
     args = parser.parse_args()
-    if args.min_size < 0 or args.chunk_size < 1 or args.start < 0:
+    if args.min_size < 0 or args.chunk_size < 1 or args.start < 0 or args.workers < 1:
         parser.error("Sizes, start, and chunk size must be nonnegative; chunk size must be positive")
     if args.max_size and args.max_size <= args.min_size:
         parser.error("--max-size must exceed --min-size")
@@ -68,12 +70,15 @@ def main():
                 print(f"Reusing {path.name}: {successes}/{found} decompiled", flush=True)
                 continue
         log = output / f"chunk-{start:06d}.log"
+        script = "BulkDecompile.java" if args.workers == 1 else "ParallelBulkDecompile.java"
+        script_args = ([str(path), str(start), str(count), str(args.min_size),
+                        str(args.max_size), str(args.include_thunks).lower()]
+                       + ([str(args.workers)] if args.workers > 1 else []))
         command = [
             str(GHIDRA), str(PROJECT), "WindowAttempt",
             "-process", "sclib-csharp.dll", "-noanalysis", "-readOnly",
             "-scriptPath", str(ROOT / "tools" / "ghidra"),
-            "-postScript", "BulkDecompile.java", str(path), str(start), str(count),
-            str(args.min_size), str(args.max_size), str(args.include_thunks).lower(),
+            "-postScript", script, *script_args,
             "-log", str(log),
         ]
         with log.open("w") as log_file:

@@ -54,6 +54,27 @@ pinned MSVC toolchain, and byte comparison against the reference. Start with
 smaller communication helpers, then work upward to the 707-byte operation
 factory and its nested constructors.
 
+## Bulk pseudocode coverage
+
+The saved Ghidra project identifies **255,978 functions**, including **58,554
+thunks**. Their identified bodies total **15,819,044 bytes**. The bulk exporter
+in `tools/ghidra/BulkDecompile.java` writes one JSON Lines record per function,
+including its decompiled C-like source or an error. `tools/run_bulk_decomp.py`
+resumes size-bounded chunks, and `tools/materialize_decomp.py` produces
+address-indexed `.pseudo.c` files plus `coverage.json` and `index.tsv`.
+Coverage is reported against these identified function bodies, separately by
+function count and body bytes, with non-thunk numbers alongside. The generated
+files are inspection material; the readable, compilable C++ candidates remain
+under `src/` and require separate byte comparisons.
+
+```sh
+# Export the remaining functions smaller than 64 bytes, including thunks.
+python3 tools/run_bulk_decomp.py --max-size 64 --include-thunks --output-dir analysis/bulk-small
+
+# Render completed JSONL exports as browsable source chunks and measured coverage.
+python3 tools/materialize_decomp.py analysis/bulk-64-pilot.jsonl analysis/bulk-64-rest.jsonl analysis/bulk-small/chunk-*.jsonl --labels-file tools/ghidra/communication-seeds.txt --output-dir analysis/readable-source
+```
+
 ## Windows compiler probe through GitHub Actions
 
 The [Windows workflow](.github/workflows/msvc-142-probe.yml) runs when a C++

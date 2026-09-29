@@ -10,6 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 INVENTORY = ROOT / "analysis" / "function-inventory.tsv"
+DEFAULT_ALIASES = ROOT / "analysis" / "export-aliases.tsv"
 
 
 def inventory():
@@ -45,6 +46,17 @@ def labels_from(path):
     return labels
 
 
+def aliases_from(path):
+    if path is None or not path.is_file():
+        return {}
+    aliases = {}
+    with path.open(newline="") as file:
+        for row in csv.DictReader(file, delimiter="\t"):
+            if row["target_is_function"] == "True":
+                aliases.setdefault(row["target"], row["readable_alias"])
+    return aliases
+
+
 def string_clues(source):
     clues = []
     for match in re.finditer(r'"([^"\n]{4,80})"', source):
@@ -62,6 +74,8 @@ def main():
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--functions-per-file", type=int, default=100)
     parser.add_argument("--labels-file", type=Path, help="Optional address # human label file")
+    parser.add_argument("--aliases-file", type=Path, default=DEFAULT_ALIASES,
+                        help="PE export aliases mapped through direct jump thunks")
     args = parser.parse_args()
     if args.functions_per_file < 1:
         parser.error("--functions-per-file must be positive")
@@ -69,6 +83,7 @@ def main():
     known = inventory()
     records = export_records(args.exports)
     labels = labels_from(args.labels_file)
+    aliases = aliases_from(args.aliases_file)
     successful = {entry: record for entry, record in records.items()
                   if "decompiled_c" in record and entry in known}
     output = args.output_dir.resolve()
@@ -81,7 +96,8 @@ def main():
             file.write("/* Ghidra-generated C-like pseudocode from sclib-csharp.dll.\n"
                        "   For inspection; these files are not recovered, buildable C++ source. */\n\n")
             for record in sorted_records[offset:offset + args.functions_per_file]:
-                label = labels.get(record["entry"], "")
+                label = labels.get(record["entry"], aliases.get(record["entry"], ""))
+                label = label.replace("*/", "* /").replace("\n", " ")[:180]
                 file.write(f"/* {record['entry']} {record['name']} "
                            f"({record['body_bytes']} reference body bytes)"
                            f"{(' — ' + label) if label else ''} */\n")
@@ -97,6 +113,7 @@ def main():
                 for record in sorted_records)
     no_unknown_types = sum(not re.search(r"\bundefined\d*\b", record["decompiled_c"])
                            for record in sorted_records)
+    aliased = sum(record["entry"] in aliases for record in sorted_records)
     metrics = {
         "identified_functions": len(all_rows),
         "decompiled_functions": len(success_rows),
@@ -113,12 +130,14 @@ def main():
         "not_included_or_failed_functions": len(known) - len(success_rows),
         "pseudocode_files": (len(sorted_records) + args.functions_per_file - 1) // args.functions_per_file,
         "decompiled_functions_with_existing_names": named,
+        "decompiled_functions_with_export_aliases": aliased,
         "decompiled_functions_without_unknown_type_tokens": no_unknown_types,
     }
     (output / "coverage.json").write_text(json.dumps(metrics, indent=2) + "\n")
-    (output / "index.tsv").write_text("entry\tname\tlabel\tstring_clues\tpart\tbody_bytes\n" + "".join(
+    (output / "index.tsv").write_text("entry\tname\tlabel\texport_alias\tstring_clues\tpart\tbody_bytes\n" + "".join(
         f"{record['entry']}\t{record['name']}\t"
         f"{labels.get(record['entry'], '')}\t"
+        f"{aliases.get(record['entry'], '')}\t"
         f"{string_clues(record['decompiled_c'])}\t"
         f"part-{index // args.functions_per_file:05d}.pseudo.c\t{record['body_bytes']}\n"
         for index, record in enumerate(sorted_records)))
@@ -134,6 +153,7 @@ def main():
         f"- Non-thunk function coverage: {len(success_nonthunks):,}/{len(nonthunks):,} "
         f"({metrics['nonthunk_function_coverage_percent']:.2f}%).\n"
         f"- Existing human-readable names: {named:,}/{len(success_rows):,}.\n"
+        f"- Mapped export aliases: {aliased:,}/{len(success_rows):,}.\n"
         f"- No `undefined` type tokens: {no_unknown_types:,}/{len(success_rows):,}.\n\n"
         "The denominator is the set of functions identified by Ghidra in the saved "
         "DLL analysis. It does not represent the whole DLL file, data sections, or "

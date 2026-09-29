@@ -30,6 +30,8 @@ public class BulkDecompile extends GhidraScript {
         }
         Gson gson = new Gson();
         DecompInterface decompiler = new DecompInterface();
+        decompiler.toggleCCode(true);
+        decompiler.toggleSyntaxTree(false);
         decompiler.openProgram(currentProgram);
         int eligible = 0;
         int written = 0;
