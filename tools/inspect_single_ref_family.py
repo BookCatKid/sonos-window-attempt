@@ -17,6 +17,7 @@ INDEX = ROOT / 'src' / 'generated' / 'single-ref-family-index.tsv'
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('object', type=Path)
+    parser.add_argument('--index', type=Path, default=INDEX)
     parser.add_argument('--dll', type=Path)
     parser.add_argument('--map', type=Path)
     args = parser.parse_args()
@@ -28,14 +29,14 @@ def main():
     candidate = args.dll.read_bytes() if args.dll else None
     candidate_base, candidate_sections = section_map(candidate) if candidate else (None, None)
     linked = linked_symbols(args.map.read_text(errors='replace')) if args.map else {}
-    with INDEX.open(newline='') as file:
+    with args.index.open(newline='') as file:
         rows = list(csv.DictReader(file, delimiter='\t'))
     failures = []
     object_matches = linked_matches = 0
     for row in rows:
         size = int(row['body_bytes'])
         entry = int(row['entry'], 16)
-        prefix = '?Init@' + row['class_name'] + '@@'
+        prefix = '?' + row.get('method_name', 'Init') + '@' + row['class_name'] + '@@'
         symbol = next((value for value in obj_symbols.values()
                        if value['name'].startswith(prefix) and value['section'] > 0), None)
         expected = function_bytes(reference, entry, size,

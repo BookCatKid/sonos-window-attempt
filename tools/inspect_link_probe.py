@@ -14,6 +14,8 @@ BODY_FAMILIES = (
     ('Assign', 'RefWrapper', 0x101b2980, 61),
     ('Cleanup', 'ResourceOwner', 0x101d2970, 33),
     ('Init', 'SingleRefWrapper', 0x10118470, 24),
+    ('Reset', 'SingleRefSlot', 0x101175c0, 30),
+    ('Replace', 'SingleRefReplace', 0x1012b910, 24),
 )
 
 
