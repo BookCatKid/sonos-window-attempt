@@ -24,16 +24,16 @@ struct RefCounted {
 
 struct SCStr {
     void *rep;
-    bool operator==(const char *other);
-    bool operator==(SCStr *other);
-    bool operator!=(const char *other);
-    bool operator!=(SCStr *other);
-    bool beginsWith(const char *prefix);
-    bool beginsWith(SCStr *prefix);
-    bool contains(const char *needle, bool ignoreCase);
-    bool contains(SCStr *needle, bool ignoreCase);
-    unsigned int length();
-    unsigned int hash();
+    bool operator==(const char *other) const;
+    bool operator==(SCStr *other) const;
+    bool operator!=(const char *other) const;
+    bool operator!=(SCStr *other) const;
+    bool beginsWith(const char *prefix) const;
+    bool beginsWith(SCStr *prefix) const;
+    bool contains(const char *needle, bool ignoreCase) const;
+    bool contains(SCStr *needle, bool ignoreCase) const;
+    unsigned int length() const;
+    unsigned int hash() const;
     void int_addref();
     void int_release();
     void int_allocRep(char *text);

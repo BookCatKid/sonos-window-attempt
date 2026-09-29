@@ -173,6 +173,20 @@ compiled 2,306 recovered C++ functions. Of those, 156 have the reference body
 length and all non-relocation bytes equal, totaling 9,655 reference body bytes.
 No function in this batch is fully verified byte-identical until its object
 relocations are resolved in a linked build.
+The [promoted query-family run](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36527932817)
+raises that object result to **788 functions and 74,751 reference body bytes**.
+`tools/verify_scstr_relocations.py` verifies all 3,131 pending relocation
+targets against the reference exports, thunk entries, and string contents;
+this verifies target semantics, not linked operand bytes. The repeated
+103-byte interface-query family contributes 632 functions and 65,096 bytes.
+
+The same run produced a 7,168-byte `wrapper_link_probe.dll` from the exact
+41-byte wrapper C++ using the pinned 14.28.29919 linker. Its PE is x86 at base
+`0x10000000` with 4,096-byte section and 512-byte file alignment. It has only
+three sections and matches 976 of the reference's 37,153,792 aligned file
+bytes. Its linked `RefWrapper::Init` function remains **41/41 bytes identical**
+to the representative reference body. This probe establishes a linker
+measurement path; it does not reconstruct the full library.
 
 The full-DLL comparison command requires complete identity by default; pass
 `--threshold 95` to check the documented aligned-byte and per-section target.
