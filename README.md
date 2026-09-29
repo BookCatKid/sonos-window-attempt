@@ -194,6 +194,22 @@ measurement path; it does not reconstruct the full library.
 Run `tools/inspect_link_probe.py` with the downloaded DLL and map paths to
 check both the linked body and the PE profile without executing the DLL.
 
+The [linked C++ probe run](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36529782013)
+links three ownership functions together and a separate coherent interface-query
+subsystem. All three ownership bodies remain byte identical after linking:
+41/41, 61/61, and 33/33 bytes. In the 104 KiB query DLL, all **633** checked
+functions (632 interface queries plus `SCStr::operator==(char const *)`) retain
+their reference length and all **55,054/55,054 fixed bytes**. The linker resolves
+all **2,529/2,529 relocation targets** to corresponding calls or equal string
+contents; its incremental call thunks are followed during verification. The
+relocation operands differ because the probe has a different layout, so none
+of those 633 whole bodies is byte identical. Run `tools/inspect_query_link.py`
+with the downloaded DLL, map, and two objects to reproduce this check.
+The linked ownership probe remains 7,168 bytes and has 948 aligned bytes equal
+to the 37,153,792-byte reference. These probes establish C++ source and link
+fidelity for specific functions; **95% whole-DLL byte matching has not been
+reached**.
+
 The full-DLL comparison command requires complete identity by default; pass
 `--threshold 95` to check the documented aligned-byte and per-section target.
 The reference DLL is
