@@ -267,10 +267,14 @@ def cpp_source(records):
                             else f'extern {typ} {name};')
     vtables = sorted({label for r in records for label in r.get('vftables', [])})
     declarations.extend(f'extern char {symbol_name(label)}[];' for label in vtables)
+    typed_declarations = {name: declaration for r in records
+                          for name, declaration in r.get('abi_declarations', {}).items()}
+    declarations.extend(typed_declarations.values())
     calls = sorted({name for r in records for name in
                     re.findall(r'\b(?:thunk_)?FUN_[0-9a-f]{8}\b',
                                r['source'].split('{', 1)[-1])})
-    declarations.extend(f'extern int {name}(...);' for name in calls)
+    declarations.extend(f'extern int {name}(...);' for name in calls
+                        if name not in typed_declarations)
     declarations = '\n'.join(declarations)
     members = [make_msvc_member(r['source'], r['entry']) for r in records]
     member_declarations = '\n'.join(decl for decl, _ in members if decl)
@@ -316,11 +320,18 @@ def main():
     parser.add_argument('exports', nargs='+', type=Path)
     parser.add_argument('--output-dir', type=Path,
                         default=ROOT / 'analysis' / 'compiled-cpp-scstr')
+    parser.add_argument('--typed-calls', action='store_true',
+                        help='Use inferred headers to recover direct call argument types and conventions')
     parser.add_argument('--emit-source', type=Path)
     parser.add_argument('--emit-index', type=Path)
     args = parser.parse_args()
     output = args.output_dir.resolve()
     output.mkdir(parents=True, exist_ok=True)
+    call_abi = None
+    if args.typed_calls:
+        from recovered_call_abi import CallABI
+        call_abi = CallABI(args.exports)
+        print(f'Inferred primitive prototypes: {len(call_abi.prototypes)}', flush=True)
     candidates = []
     for record in load_records(args.exports).values():
         source = normalize_definition(record)
@@ -335,7 +346,13 @@ def main():
             rewritten = msvc_compatible_labels(rewritten)
             rewritten = restore_query_addref(rewritten, record['body_bytes'])
         if rewritten and eligible(rewritten):
-            candidates.append({**record, 'source': rewritten, 'vftables': labels})
+            declarations, changed = {}, 0
+            if call_abi:
+                rewritten, declarations, changed = call_abi.lower(rewritten)
+                if rewritten is None or changed == 0:
+                    continue
+            candidates.append({**record, 'source': rewritten, 'vftables': labels,
+                               'abi_declarations': declarations, 'typed_calls': changed})
     candidates.sort(key=lambda r: int(r['entry'], 16))
     print(f'Candidates: {len(candidates)}', flush=True)
     scratch = output / '.syntax-probe.cpp'
@@ -370,6 +387,7 @@ def main():
     metrics = {'candidate_functions': len(candidates), 'compiled_functions': len(accepted),
                       'compiled_reference_body_bytes': sum(r['body_bytes'] for r in accepted),
                       'syntax_rejected': len(failures),
+                      'typed_call_sites': sum(r.get('typed_calls', 0) for r in accepted),
                       'object_bytes': obj.stat().st_size,
                       'scope': 'C++ object compilation; byte matching measured separately'}
     (output / 'coverage.json').write_text(json.dumps(metrics, indent=2) + '\n')
