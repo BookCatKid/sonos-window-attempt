@@ -29,8 +29,10 @@ cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\leaf_self.obj src\leaf_self.cpp >
 if errorlevel 1 goto failed
 cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\ghidra_communication.obj src\generated\communication.cpp > out\ghidra_communication.log 2>&1
 if errorlevel 1 goto failed
+cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\ref_wrapper_ctor.obj src\ref_wrapper_ctor.cpp > out\ref_wrapper_ctor.log 2>&1
+if errorlevel 1 goto failed
 exit /b 0
 
 :failed
-for %%F in (out\setup.log out\getter.log out\result.log out\factory.log out\factory_frame_pointer.log out\factory_lifetime.log out\factory_owner.log out\leaf_true.log out\leaf_false.log out\leaf_self.log out\ghidra_communication.log) do if exist %%F for /f "usebackq delims=" %%L in ("%%F") do echo ::error::%%L
+for %%F in (out\setup.log out\getter.log out\result.log out\factory.log out\factory_frame_pointer.log out\factory_lifetime.log out\factory_owner.log out\leaf_true.log out\leaf_false.log out\leaf_self.log out\ghidra_communication.log out\ref_wrapper_ctor.log) do if exist %%F for /f "usebackq delims=" %%L in ("%%F") do echo ::error::%%L
 exit /b 1

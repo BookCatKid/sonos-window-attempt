@@ -148,6 +148,8 @@ def main():
         'object_compiled_functions': len(rows),
         'exact_function_bodies_without_relocations': len(exact),
         'exact_reference_body_bytes': sum(row['reference_bytes'] for row in exact),
+        'same_length_function_bodies': sum(row['compiled_bytes'] == row['reference_bytes'] for row in rows),
+        'functions_without_mapped_object_symbol': sum(row['compiled_bytes'] == 0 for row in rows),
         'functions_with_relocations': sum(row['relocations'] > 0 for row in rows),
         'fixed_bytes_matching_in_common_prefix': sum(row['fixed_matching'] for row in rows),
         'fixed_bytes_compared_in_common_prefix': sum(row['fixed_compared'] for row in rows),

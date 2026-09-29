@@ -7,6 +7,8 @@ byte with the installed Windows binary. The installed files are retained as immu
 reference inputs. A matching build has **not** been produced yet.
 All authored reconstruction source in this workspace is C++ only; do not add
 handwritten assembler source or inline assembler instructions.
+The [rebuild target](docs/rebuild-target.md) defines the 95% aligned-byte goal
+and distinguishes pseudocode, compiled objects, matched functions, and a linked DLL.
 
 ## Layout
 
@@ -135,6 +137,13 @@ The two-reference ownership candidate is 686 bytes. Its first fixed-byte
 difference is at offset 17, where the reference reserves eight stack bytes
 for construction state. Compare all variants with
 `python3 tools/compare_ci_objects.py ci-output/msvc-29919-owner --variants`.
+The [generated communication probe](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36505982711)
+also compiled with the pinned MSVC toolset. Its two Ghidra-derived getters
+match exactly (5 and 9 bytes); its 61-byte and 255-byte communication functions
+compile but differ. Compare the downloaded object with
+`python3 tools/compare_compiled_ghidra.py analysis/compiled-cpp-communication-thunk --object ci-output/msvc-ghidra-comm/ghidra_communication.obj`.
+`src/ref_wrapper_ctor.cpp` is a typed C++ candidate for a 41-byte body repeated
+520 times; `tools/compare_ref_wrapper.py` checks its object bytes.
 
 The full-DLL comparison command exits 0 only for a byte-identical file. The reference DLL is
 32-bit native MSVC code with a SWIG C# boundary. Most named exports are generated
