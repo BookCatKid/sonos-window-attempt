@@ -10,7 +10,7 @@ import argparse,csv,json,re,subprocess,os
 from pathlib import Path
 from compile_ghidra_cpp import ROOT,COMPILER,load_records,width_preserving_pointer_casts
 from compile_scstr_cpp import (normalize_definition,rewrite_calls,restore_scstr_byte_offsets,
-    restore_pointer_width_casts,cpp_source,split_valid,call_end,split_first_argument)
+    restore_pointer_width_casts,cpp_source,split_valid,call_end,split_first_argument,eligible)
 
 DELETE='thunk_FUN_1148a50e'
 
@@ -18,6 +18,7 @@ def lower(record,evidence):
     m=evidence['metadata']
     if record['body_bytes']<=5 or m['state_count']!=1 or m['actions'][0]['action']!='1148cdcf':return None
     s=normalize_definition(record)
+    if re.search(r'\bcode\b',s):return None
     # Only the potentially throwing release and the known sized-delete helper
     # are admitted. All other call/lifetime arrangements require further proof.
     calls=re.findall(r'\b((?:thunk_)?FUN_[0-9a-f]{8}|SCStr::\w+)\s*\(',s.split('{',1)[1])
@@ -51,6 +52,7 @@ def lower(record,evidence):
     s=rewrite_calls(s)
     if s is None:return None
     s=width_preserving_pointer_casts(restore_pointer_width_casts(s))
+    if not eligible(s):return None
     return {**record,'source':s,'byte_offset_sites':offsets,'abi_declarations':{
         DELETE:f'extern void {DELETE}(void *allocation, unsigned int bytes) noexcept;'},
         'reference_handler':evidence['handler'],'reference_metadata':m['address']}
