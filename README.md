@@ -85,9 +85,10 @@ python3 tools/compile_ghidra_cpp.py analysis/communication-slice.jsonl --output-
 python3 tools/compiled_cpp_coverage.py analysis/compiled-cpp-thunk analysis/compiled-cpp-high-thunk analysis/compiled-cpp-communication-thunk
 ```
 
-The current combined gate compiles 12,563 distinct functions with 403,579
-reference body bytes: 11.41% of non-glue function count and 2.72% of non-glue
-body bytes. Of those functions, 4,674 are Ghidra `Unwind@` handlers, so raw
+At the September 28 checkpoint, the combined gate compiled 12,576 distinct
+functions with 404,691 reference body bytes: 11.42% of non-glue function count
+and 2.73% of non-glue body bytes. Of those functions, 4,674 are Ghidra
+`Unwind@` handlers, so raw
 function count overstates progress on the communication code. Four of the 11
 selected communication functions compile, including two simple getters. The
 compilation percentage is distinct from Ghidra pseudocode coverage and from
