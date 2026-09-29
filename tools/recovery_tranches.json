@@ -36,6 +36,10 @@
     "directory": "analysis/compiled-cpp-multistate-terminate"
   },
   {
+    "object": "owner_pair_raii_reference_flags",
+    "directory": "analysis/compiled-cpp-owner-pair-raii"
+  },
+  {
     "object": "signature_pilot_reference_flags",
     "directory": "analysis/compiled-cpp-signature-pilot"
   },
