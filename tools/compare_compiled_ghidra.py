@@ -143,6 +143,9 @@ def generated_symbol_name(name):
     if match:
         return match.group(1)
     match = re.search(r'(ghidra_vftable_[A-Za-z0-9_]+)', name)
+    if match:
+        return match.group(1)
+    match = re.search(r'(_?DAT_[0-9a-fA-F]{8}|PTR_[A-Za-z0-9_]+|s_[A-Za-z0-9_]+)', name)
     return match.group(1) if match else None
 
 
@@ -235,7 +238,7 @@ def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base,
             continue
         targets = symbol_vas.get(logical_name, [])
         if not targets:
-            match = re.search(r'FUN_([0-9a-fA-F]{8})', logical_name)
+            match = re.search(r'(?:FUN_|_?DAT_)([0-9a-fA-F]{8})', logical_name)
             targets = [int(match.group(1), 16)] if match else []
         if not targets:
             unresolved += 1
