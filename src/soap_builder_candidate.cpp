@@ -10,11 +10,13 @@ extern "C" int __cdecl soap_builder_format(
     char *destination, Word capacity, const char *format, ...);
 extern "C" int __cdecl soap_builder_append_format(
     char *destination, Word offset, Word capacity, const char *format, ...);
-extern "C" const char *__thiscall soap_builder_header_name(
-    void *headers, Word index);
-extern "C" const char *__thiscall soap_builder_header_value(
-    void *headers, const char *name);
-extern "C" Word __thiscall soap_builder_soap_length(void *soap_operation);
+struct SoapHeaderStorage {
+    const char *Name(Word index);
+    const char *Value(const char *name);
+};
+struct SoapBody {
+    Word Length();
+};
 extern "C" const char *__cdecl soap_builder_user_agent();
 extern "C" void __cdecl soap_builder_log(
     const char *domain, Word severity, const char *message);
@@ -57,9 +59,10 @@ void SoapRequestBuilder::Build(const char *request_path, const char *host) {
     volatile Word *header_count = reinterpret_cast<volatile Word *>(self + 0x8a60);
     if (*header_count != 0) {
         do {
-            void *headers = self + 0x8a50;
-            const char *name = soap_builder_header_name(headers, header_index);
-            const char *value = soap_builder_header_value(headers, name);
+            SoapHeaderStorage *headers =
+                reinterpret_cast<SoapHeaderStorage *>(self + 0x8a50);
+            const char *name = headers->Name(header_index);
+            const char *value = headers->Value(name);
             if (name != 0 && *name != 0 && value != 0) {
                 extra_headers_length = static_cast<Word>(soap_builder_append_format(
                     extra_headers, extra_headers_length,
@@ -74,7 +77,7 @@ void SoapRequestBuilder::Build(const char *request_path, const char *host) {
     const char *separator = *reinterpret_cast<Byte *>(self + 0xa46) != 0
         ? reinterpret_cast<const char *>(SoapBuilderTarget::separator_hash)
         : reinterpret_cast<const char *>(SoapBuilderTarget::empty_string);
-    Word body_length = soap_builder_soap_length(self + 0xa3c);
+    Word body_length = reinterpret_cast<SoapBody *>(self + 0xa3c)->Length();
     const char *user_agent = soap_builder_user_agent();
     char *output = reinterpret_cast<char *>(self + 0xa4c);
 

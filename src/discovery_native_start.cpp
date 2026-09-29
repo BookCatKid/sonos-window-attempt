@@ -10,10 +10,10 @@ struct RetainedDiscoveryResult {
     virtual void Release();
 };
 
-extern "C" void __thiscall prepare_discovery_object(void *self); // 0x1006156d
+extern "C" void __fastcall prepare_discovery_object(void *self); // 0x1006156d
 extern "C" RetainedDiscoveryResult *__cdecl acquire_discovery_result(); // 0x1000daa3
 extern "C" void *__cdecl refresh_discovery_context(); // 0x1004ec47
-extern "C" void __thiscall advance_discovery_context(void *self); // 0x10075f45
+extern "C" void __fastcall advance_discovery_context(void *self); // 0x10075f45
 
 struct DiscoverySubobject {
     __declspec(noinline) void finish(); // 0x1003ceb6

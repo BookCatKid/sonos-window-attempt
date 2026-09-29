@@ -12,8 +12,8 @@ compare.SOURCE = ROOT / "src" / "soap_builder_storage_candidate.cpp"
 compare.TARGET_VA = 0x111C3530
 compare.TARGET_SIZE = 286
 compare.HELPERS = {
-    "_soap_builder_base_initialize": 0x10090B65,
-    "_soap_builder_header_storage_initialize": 0x1007BCBF,
+    "@soap_builder_base_initialize@4": 0x10090B65,
+    "?Initialize@SoapHeaderStorageInit@@QAEXPADI@Z": 0x1007BCBF,
     "_soap_builder_bounded_copy": 0x1001131A,
 }
 

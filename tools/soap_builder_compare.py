@@ -17,9 +17,9 @@ TARGET_SIZE = 392
 HELPERS = {
     "_soap_builder_format": 0x10086CB9,
     "_soap_builder_append_format": 0x1000749B,
-    "_soap_builder_header_name": 0x10089B49,
-    "_soap_builder_header_value": 0x100675D0,
-    "_soap_builder_soap_length": 0x10017B43,
+    "?Name@SoapHeaderStorage@@QAEPBDI@Z": 0x10089B49,
+    "?Value@SoapHeaderStorage@@QAEPBDPBD@Z": 0x100675D0,
+    "?Length@SoapBody@@QAEIXZ": 0x10017B43,
     "_soap_builder_user_agent": 0x10032E3E,
     "_soap_builder_log": 0x1002A63A,
     "_soap_builder_cookie_check": 0x100382F3,

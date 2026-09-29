@@ -5,9 +5,10 @@
 using Word = unsigned int;
 using Byte = unsigned char;
 
-extern "C" void __thiscall soap_builder_base_initialize(void *object);
-extern "C" void __thiscall soap_builder_header_storage_initialize(
-    void *object, char *storage, Word capacity);
+extern "C" void __fastcall soap_builder_base_initialize(void *object);
+struct SoapHeaderStorageInit {
+    void Initialize(char *storage, Word capacity);
+};
 extern "C" char *__cdecl soap_builder_bounded_copy(
     char *destination, const char *source, Word capacity);
 
@@ -53,8 +54,8 @@ SoapRequestStorage *SoapRequestStorage::Initialize(
     *reinterpret_cast<Word *>(self + 0xa48) = 0xffffffff;
     *reinterpret_cast<Word *>(self + 0x8a4c) = 0;
 
-    soap_builder_header_storage_initialize(
-        self + 0x8a50, reinterpret_cast<char *>(self + 0x8a64),
+    reinterpret_cast<SoapHeaderStorageInit *>(self + 0x8a50)->Initialize(
+        reinterpret_cast<char *>(self + 0x8a64),
         SoapStorageTarget::embedded_buffer_capacity);
 
     soap_builder_bounded_copy(
