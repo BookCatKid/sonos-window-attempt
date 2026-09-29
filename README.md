@@ -115,6 +115,17 @@ are checked in under `src/generated/` for the pinned compiler probe. The
 matches under local Clang. The other bulk generated C++ remains local under
 `analysis/` until its placeholder types and call declarations have been reviewed.
 
+Regenerate the typed batch from the completed local exports with:
+
+```sh
+python3 tools/compile_scstr_cpp.py analysis/bulk-64-pilot.jsonl analysis/bulk-64-rest.jsonl analysis/bulk-64-final/chunk-*.jsonl analysis/bulk-medium/chunk-*.jsonl analysis/bulk-small/chunk-*.jsonl
+python3 tools/compare_compiled_ghidra.py analysis/compiled-cpp-scstr
+```
+
+The generator writes its local object and address index under
+`analysis/compiled-cpp-scstr/`; the checked-in C++ and index under
+`src/generated/` are the inputs to the pinned MSVC job.
+
 ```sh
 # Export the remaining functions smaller than 64 bytes, including thunks.
 python3 tools/run_bulk_decomp.py --max-size 64 --include-thunks --output-dir analysis/bulk-small
