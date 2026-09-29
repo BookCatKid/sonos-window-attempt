@@ -139,6 +139,11 @@ def function_symbols(sections, symbols, symbols_by_index):
 
 def generated_symbol_name(name):
     """Extract the Ghidra-generated logical name from an MSVC symbol."""
+    # Internal EH names include the parent function name but denote a different
+    # address. They require independent graph verification, never FUN_ fallback.
+    if name.startswith(('__ehhandler$', '__ehfuncinfo$', '__unwindtable$',
+                        '__unwindmap$', '__unwindfunclet$')):
+        return None
     match = re.search(r'((?:thunk_)?FUN_[0-9a-fA-F]{8})', name)
     if match:
         return match.group(1)
@@ -234,7 +239,8 @@ def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base,
         if offset < 0 or offset + 4 > len(patched):
             unresolved += 1
             continue
-        logical_name = (generated_symbol_name(reloc['symbol']) or
+        logical_name = (reloc['symbol'] if reloc['symbol'] in symbol_vas else
+                        generated_symbol_name(reloc['symbol']) or
                         scstr_abi_key(reloc['symbol']))
         if logical_name is None:
             unresolved += 1
@@ -270,8 +276,17 @@ def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base,
 
 
 def compare_directory(directory, reference, image_base, pe_sections, symbol_vas, object_path=None):
+    selected_object = object_path or directory / 'ghidra_recovered.obj'
     sections, symbols, symbols_by_index = read_coff(
-        object_path or directory / 'ghidra_recovered.obj')
+        selected_object)
+    if (directory / 'reference-eh-inventory.json').is_file():
+        from verify_eh_placement import verified_eh_targets
+        extra_targets, evidence = verified_eh_targets(directory, selected_object,
+            reference, image_base, pe_sections, symbol_vas)
+        symbol_vas = ChainMap(extra_targets, symbol_vas)
+        if evidence is not None:
+            (directory / f'eh-placement-{selected_object.stem}.json').write_text(
+                json.dumps(evidence, indent=2) + '\n')
     compiled = function_symbols(sections, symbols, symbols_by_index)
     # String contents independently establish whether a reference data address
     # can be used for this literal. This is a placement constraint for linking.

@@ -65,7 +65,10 @@ def lower(record,evidence,inline_destructor=False):
     if inline_destructor:
         s=inline_cleanup_destructors(s)
         if s is None:return None
-    else:
+    # The observed compiler FuncInfo flag delta for an outer noexcept boundary
+    # is bit 4. Preserve it independently of the inner destructor guard: the
+    # reference can contain both the boundary flag and a one-state unwind map.
+    if not inline_destructor or (m['words'][8] & 4):
         head,sep,body=s.partition('{')
         s=head.rstrip()+' noexcept\n'+sep+body
     s,offsets=restore_scstr_byte_offsets(s)
