@@ -11,7 +11,7 @@ from functools import lru_cache
 from pathlib import Path
 from capstone import Cs,CS_ARCH_X86,CS_MODE_32
 from classify_functions import function_bytes
-from compare_compiled_ghidra import read_coff,relocation_value
+from compare_compiled_ghidra import read_coff,relocation_value,generated_symbol_name
 
 U32=lambda data,pos=0:struct.unpack_from('<I',data,pos)[0]
 
@@ -42,9 +42,18 @@ def verified_eh_targets(directory,obj,reference,base,pe_sections,symbol_vas):
             ends[section_number,start]=ordered[i+1] if i+1<len(ordered) else size
     disasm=Cs(CS_ARCH_X86,CS_MODE_32)
     targets={'___security_cookie':[cookie]}
-    verified=[];rejected=[]
+    verified=[];rejected=[];current_diagnostics=[]
 
     def refbytes(va,n):return function_bytes(reference,va,n,base,pe_sections)
+
+    def follow_reference_thunks(va):
+        seen=set()
+        for _ in range(16):
+            if va in seen:return None
+            seen.add(va);raw=refbytes(va,5)
+            if len(raw)!=5 or raw[0]!=0xe9:return va
+            va=(va+5+struct.unpack_from('<i',raw,1)[0])&0xffffffff
+        return None
 
     def extent(symbol):
         sec=sections[symbol['section']-1];start=symbol['offset']
@@ -85,44 +94,61 @@ def verified_eh_targets(directory,obj,reference,base,pe_sections,symbol_vas):
             if m and m.group(1).lstrip('_')==bare:result.extend(values)
         return sorted(set(result))
 
-    def graph(name,va,size,local,proofs,depth=0):
-        if depth>8 or name not in names:return False
+    def graph(name,va,size,local,proofs,call_placements,state_count=None,depth=0):
+        def fail(reason):
+            current_diagnostics.append({'symbol':name,'reference_va':f'{va:08x}','reason':reason})
+            return False
+        if depth>8 or name not in names:return fail('depth limit or missing COFF symbol')
         symbol=names[name];sec=sections[symbol['section']-1];start=symbol['offset']
         available=extent(symbol)
         if size is None:size=len(available)
-        if size<=0 or size>4096 or size>len(available):return False
+        if size<=0 or size>4096 or size>len(available):return fail('invalid requested symbol extent')
         data=bytearray(available[:size]);expected=refbytes(va,size)
         if len(expected)!=size:return False
-        if name in local:return local[name]==va
+        if name in local:
+            return local[name]==va or fail('conflicting recursive placement')
         # Definitions are pinned tentatively only within this graph traversal;
         # a failure discards the whole graph, including its placement map.
         local[name]=va
         for rel in sec['relocations']:
             if not start<=rel['offset']<start+size:continue
             off=rel['offset']-start
-            if off+4>size or rel['type'] not in (6,20):return False
+            if off+4>size or rel['type'] not in (6,20):return fail('unsupported relocation')
             target=indices.get(rel['symbol_index'])
-            if target is None:return False
+            if target is None:return fail('missing relocation target')
             target_name=target['name'];addend=U32(data,off)
             if rel['type']==6:target_va=(U32(expected,off)-addend)&0xffffffff
             else:target_va=(va+off+4+U32(expected,off)-addend)&0xffffffff
             ok=False
             if target['section']>0:
-                if target_name.startswith('__ehfuncinfo$'):
+                if target_name.startswith('__ehhandler$'):
+                    ok=graph(target_name,target_va,None,local,proofs,call_placements,state_count,depth+1)
+                elif target_name.startswith('__ehfuncinfo$'):
                     info=refbytes(target_va,36)
-                    if (len(info)!=36 or U32(info)!=0x19930522 or
-                            U32(info,4)!=expected_state_count):return False
-                    ok=graph(target_name,target_va,36,local,proofs,depth+1)
+                    if len(info)!=36 or U32(info)!=0x19930522:return fail('invalid reference FuncInfo')
+                    reference_states=U32(info,4)
+                    if state_count is not None and reference_states!=state_count:return fail('reference state-count mismatch')
+                    ok=graph(target_name,target_va,36,local,proofs,call_placements,reference_states,depth+1)
                 elif target_name.startswith(('__unwindtable$','__unwindmap$')):
-                    ok=graph(target_name,target_va,expected_state_count*8,local,proofs,depth+1)
+                    if state_count is None:return fail('unwind map without established state count')
+                    ok=graph(target_name,target_va,state_count*8,local,proofs,call_placements,state_count,depth+1)
                 elif target_name.startswith('__unwindfunclet$'):
-                    action=refbytes(target_va,6)
-                    # Only the independently named __std_terminate import jump
-                    # is admitted as this guard's unwind action.
-                    known=symbol_vas.get('PTR___std_terminate_122fc54c',[])
-                    if len(action)==6 and action[:2]==b'\xff\x25' and U32(action,2) in known:
-                        ok=graph(target_name,target_va,None,local,proofs,depth+1)
-                else:return False
+                    # The entire local funclet and every outgoing relocation are
+                    # checked recursively. This admits recovered destructor
+                    # actions without trusting their symbol name or destination.
+                    ok=graph(target_name,target_va,None,local,proofs,call_placements,state_count,depth+1)
+                else:
+                    logical=generated_symbol_name(target_name)
+                    match=re.fullmatch(r'(?:thunk_)?FUN_([0-9a-fA-F]{8})',logical or '')
+                    declared=int(match.group(1),16) if match else None
+                    real=follow_reference_thunks(target_va) if declared==target_va else None
+                    if real is None:
+                        current_diagnostics.append({'symbol':target_name,
+                            'reference_va':f'{target_va:08x}',
+                            'reason':f'ordinary recovered target mismatch; declared={declared!r}'})
+                    ok=(real is not None and graph(target_name,real,None,local,proofs,
+                        call_placements,None,depth+1))
+                    if ok:call_placements[target_name]=target_va
             elif target_name=='___security_cookie':ok=target_va==cookie
             elif target_name=='@__security_check_cookie@4':
                 ok=cookie_check(target_va)
@@ -140,30 +166,34 @@ def verified_eh_targets(directory,obj,reference,base,pe_sections,symbol_vas):
             elif target_name.startswith('__imp_'):
                 ok=target_va in import_targets(target_name)
                 if ok:local[target_name]=target_va
-            if not ok:return False
+            if not ok:return fail('relocation target graph mismatch: '+target_name)
             value=relocation_value(rel['type'],target_va,addend,va,off,base)
-            if value is None:return False
+            if value is None:return fail('unsupported relocation value')
             struct.pack_into('<I',data,off,value&0xffffffff)
-        if bytes(data)!=expected:return False
+        if bytes(data)!=expected:return fail('fixed or relocated bytes differ')
         proofs.append({'symbol':name,'reference_va':f'{va:08x}','verified_bytes':size})
         return True
 
     for item in json.loads(inventory.read_text()):
+        current_diagnostics.clear()
         entry=item['entry']
         expected_state_count=item.get('reference_state_count',1)
         handlers=handlers_by_entry.get(entry,[])
-        local={};proofs=[]
+        local={};proofs=[];call_placements={}
         if len(handlers)!=1:
             rejected.append({'entry':entry,'reason':'Missing or ambiguous compiler handler'});continue
         handler=handlers[0];va=int(item['reference_handler'],16)
-        ok=graph(handler,va,None,local,proofs)
-        metadata=[p for p in proofs if p['symbol'].startswith('__ehfuncinfo$')]
-        if not ok or len(metadata)!=1 or metadata[0]['reference_va']!=item['reference_metadata']:
-            rejected.append({'entry':entry,'reason':'Handler, metadata, or unwind bytes differ'});continue
-        conflict=any(n in targets and target not in targets[n] for n,target in local.items())
+        ok=graph(handler,va,None,local,proofs,call_placements,expected_state_count)
+        metadata=[p for p in proofs if (p['symbol'].startswith('__ehfuncinfo$') and
+                  p['reference_va']==item['reference_metadata'])]
+        if not ok or len(metadata)!=1:
+            rejected.append({'entry':entry,'reason':'Handler, metadata, or unwind bytes differ',
+                             'diagnostics':current_diagnostics[-8:]});continue
+        placements={**local,**call_placements}
+        conflict=any(n in targets and target not in targets[n] for n,target in placements.items())
         if conflict:
             rejected.append({'entry':entry,'reason':'Conflicting runtime placement'});continue
-        for name,target in local.items():targets.setdefault(name,[]).append(target)
+        for name,target in placements.items():targets.setdefault(name,[]).append(target)
         verified.append({'entry':entry,'graph':proofs})
     targets={n:sorted(set(v)) for n,v in targets.items()}
     report={'object':str(obj),'security_cookie_from_pe_load_config':f'{cookie:08x}',
