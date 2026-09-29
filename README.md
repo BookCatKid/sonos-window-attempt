@@ -223,6 +223,22 @@ constructor remains exact after linking; four ownership bodies now total
 159/159 exact linked bytes. The dedicated deletion DLL is 42,496 bytes and has
 2,636 aligned bytes equal to the full reference (0.007095%).
 
+The [combined family run](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36584555678)
+adds 217 single-reference constructors and 297 reset/replacement methods generated
+as separate C++ functions. All **514/514** have exact object and linked bodies,
+representing 13,266 reference body bytes. The combined probe retains the 327
+exact exported deletions, six exact representative ownership bodies, and the
+633 query/equality bodies with 55,054/55,054 fixed bytes and 2,529/2,529
+matching relocation targets. Counting overlapping representatives only once,
+its exact linked bodies correspond to **844 unique reference entries and
+18,633 body bytes**. Its whole-file aligned match is still only **6,435 /
+37,153,792 bytes (0.01732%)**; matching the complete PE layout, data, imports,
+resources, and remaining code is still required for the 95% goal.
+`python3 tools/inspect_combined_probe.py ci-output/msvc-mutations-36584555678/msvc-14-28-x86-objects`
+reproduces the linked function, export, relocation, and aligned file metrics
+together. Pass `--threshold 95` to make the aligned whole-file score a failing
+gate for the final target.
+
 The full-DLL comparison command requires complete identity by default; pass
 `--threshold 95` to check the documented aligned-byte and per-section target.
 The reference DLL is
