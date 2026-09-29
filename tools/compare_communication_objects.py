@@ -32,12 +32,25 @@ DISCOVERY_START_TARGETS = {
     '@advance_discovery_context@4': 0x10075f45,
     '?finish@DiscoverySubobject@@QAEXXZ': 0x1003ceb6,
 }
+HOUSEHOLD_TARGETS = {
+    '__ehhandler$?getHousehold@SCLibrary@@QAE?AU?$SCRetPtr@USCIHousehold@@@@XZ':
+        0x1152e540,
+    '___security_cookie': 0x12126b84,
+    '?getSCHousehold@SCLibrary@@QAE?AU?$SCRetPtr@USCHousehold@@@@XZ':
+        0x1000825b,
+}
+HOUSEHOLD_HANDLER_TARGETS = {
+    '@__security_check_cookie@4': 0x100382f3,
+    '__ehfuncinfo$?getHousehold@SCLibrary@@QAE?AU?$SCRetPtr@USCIHousehold@@@@XZ':
+        0x11d6f104,
+    '___CxxFrameHandler3': 0x1148cde7,
+}
 
 
 def body_in_object(path, pattern):
     sections, symbols = coff(path)
     matches = [symbol for symbol in symbols.values()
-               if symbol['section'] in sections and symbol['storage'] == 2
+               if symbol['section'] in sections and symbol['storage'] in (2, 3)
                and symbol['kind'] & 0x20 and
                re.search(pattern, symbol['name'])]
     if len(matches) != 1:
@@ -47,7 +60,7 @@ def body_in_object(path, pattern):
     start = symbol['value']
     next_functions = [other['value'] for other in symbols.values()
                       if other['section'] == symbol['section'] and
-                      other['storage'] == 2 and other['kind'] & 0x20 and
+                      other['storage'] in (2, 3) and other['kind'] & 0x20 and
                       other['value'] > start]
     stop = min(next_functions) if next_functions else len(section['code'])
     candidate = section['code'][start:stop]
@@ -60,6 +73,24 @@ def body_in_object(path, pattern):
                    for offset, target, kind in section['relocations']
                    if start <= offset < start + len(candidate)]
     return candidate, relocations, symbol['name']
+
+
+def relocation_target_checks(entry, reference_body, relocations, expected_targets):
+    checks = []
+    for offset, symbol, kind in relocations:
+        if offset + 4 > len(reference_body):
+            checks.append(False)
+            continue
+        if kind == 0x14:
+            target = (entry + offset + 4 +
+                      struct.unpack_from('<i', reference_body, offset)[0])
+        elif kind == 0x06:
+            target = struct.unpack_from('<I', reference_body, offset)[0]
+        else:
+            checks.append(False)
+            continue
+        checks.append(expected_targets.get(symbol) == target)
+    return checks
 
 
 def main():
@@ -86,12 +117,30 @@ def main():
                           for position in fixed)
             target_checks = []
             if name == 'discovery_native_start':
-                for offset, target_symbol, kind in relocations:
-                    actual_target = (entry + offset + 4 +
-                                     struct.unpack_from('<i', expected, offset)[0])
-                    target_checks.append(kind == 0x14 and
-                                         DISCOVERY_START_TARGETS.get(target_symbol) ==
-                                         actual_target)
+                target_checks = relocation_target_checks(
+                    entry, expected, relocations, DISCOVERY_START_TARGETS)
+            elif name == 'discovery_get_household':
+                target_checks = relocation_target_checks(
+                    entry, expected, relocations, HOUSEHOLD_TARGETS)
+            handler_match = None
+            if name == 'discovery_get_household':
+                handler_entry = 0x1152e540
+                handler, handler_relocations, _ = body_in_object(
+                    args.artifact_dir / f'{name}.obj',
+                    r'^__ehhandler\$\?getHousehold@SCLibrary@@')
+                handler = handler[:29]
+                handler_expected = function_bytes(
+                    reference, handler_entry, 29, image_base, pe_sections)
+                handler_fixed = {byte for offset, _symbol, _kind in
+                                 handler_relocations for byte in range(offset, offset + 4)}
+                handler_checks = relocation_target_checks(
+                    handler_entry, handler_expected, handler_relocations,
+                    HOUSEHOLD_HANDLER_TARGETS)
+                handler_match = (len(handler) == 29 and
+                                 all(handler[i] == handler_expected[i]
+                                     for i in range(29) if i not in handler_fixed)
+                                 and len(handler_checks) == len(handler_relocations)
+                                 and all(handler_checks))
             rows.append({'name': name, 'reference_va': hex(entry),
                          'reference_bytes': size, 'compiled_bytes': len(candidate),
                          'symbol': symbol, 'relocations': len(relocations),
@@ -104,6 +153,7 @@ def main():
                          'complete_relocatable_body_match':
                          len(candidate) == size and matches == len(fixed) and
                          len(target_checks) == len(relocations) and all(target_checks),
+                         'associated_eh_handler_complete_match': handler_match,
                          'exact_body': not relocations and candidate == expected})
         except Exception as error:
             rows.append({'name': name, 'reference_va': hex(entry),
