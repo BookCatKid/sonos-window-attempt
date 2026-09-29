@@ -69,6 +69,11 @@ function count and body bytes, with non-thunk numbers alongside. The generated
 files are inspection material; the readable, compilable C++ candidates remain
 under `src/` and require separate byte comparisons.
 
+The completed exports currently cover 72,877 identified functions and
+14,431,770 of 15,819,044 identified body bytes (91.23%). Within the structural
+non-glue classification, they cover 14,426,850 of 14,812,990 body bytes
+(97.39%). These are pseudocode coverage numbers, not rebuilt bytes.
+
 ## Mechanical C++ compilation gate
 
 `tools/compile_ghidra_cpp.py` selects Ghidra functions with no unresolved globals
@@ -97,17 +102,25 @@ compilation percentage is distinct from Ghidra pseudocode coverage and from
 byte-identical code generation. These objects have not been linked into the
 target DLL.
 
+With the typed `SCStr` pass added, the distinct local object compilation total
+is 15,288 functions and 590,165 reference body bytes, or 3.98% of the
+non-glue body-byte denominator. This still measures compilation only.
+
 The selected communication source is checked in at
 `src/generated/communication.cpp` so the pinned MSVC GitHub Actions build can
-test it. The bulk generated C++ remains local under `analysis/` until its
-placeholder types and call declarations have been reviewed.
+test it. `tools/compile_scstr_cpp.py` mechanically rewrites supported Ghidra
+`SCStr::` calls into typed C++ member calls. Its generated candidates and index
+are checked in under `src/generated/` for the pinned compiler probe. The
+`SCStr` declarations remain provisional, and these objects have no exact body
+matches under local Clang. The other bulk generated C++ remains local under
+`analysis/` until its placeholder types and call declarations have been reviewed.
 
 ```sh
 # Export the remaining functions smaller than 64 bytes, including thunks.
 python3 tools/run_bulk_decomp.py --max-size 64 --include-thunks --output-dir analysis/bulk-small
 
 # Render completed JSONL exports as browsable source chunks and measured coverage.
-python3 tools/materialize_decomp.py analysis/bulk-64-pilot.jsonl analysis/bulk-64-rest.jsonl analysis/bulk-small/chunk-*.jsonl --labels-file tools/ghidra/communication-seeds.txt --output-dir analysis/readable-source
+python3 tools/materialize_decomp.py analysis/bulk-64-pilot.jsonl analysis/bulk-64-rest.jsonl analysis/bulk-64-final/chunk-*.jsonl analysis/bulk-medium/chunk-*.jsonl analysis/bulk-small/chunk-*.jsonl --labels-file tools/ghidra/communication-seeds.txt --output-dir analysis/readable-source
 ```
 
 ## Windows compiler probe through GitHub Actions
@@ -145,7 +158,9 @@ compile but differ. Compare the downloaded object with
 `src/ref_wrapper_ctor.cpp` is a typed C++ candidate for a 41-byte body repeated
 520 times; `tools/compare_ref_wrapper.py` checks its object bytes.
 
-The full-DLL comparison command exits 0 only for a byte-identical file. The reference DLL is
+The full-DLL comparison command requires complete identity by default; pass
+`--threshold 95` to check the documented aligned-byte and per-section target.
+The reference DLL is
 32-bit native MSVC code with a SWIG C# boundary. Most named exports are generated
 wrappers. The underlying communication implementation still needs analysis.
 

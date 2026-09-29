@@ -45,6 +45,9 @@ ALLOWED_CALLS = {'if', 'while', 'switch', 'sizeof', 'return', 'int', 'uint',
                  'long', 'short', 'char', 'float', 'double', 'undefined',
                  'undefined1', 'undefined2', 'undefined4', 'undefined8',
                  'code', 'SCStr', 'operator', *SUPPORTED}
+THISCALL = re.compile(
+    r'(?P<result>[^\n]+?)\s+__thiscall\s+(?P<name>FUN_[0-9a-f]{8})'
+    r'\((?P<parameters>[^)]*)\)')
 
 
 def call_end(source, opening):
@@ -131,14 +134,44 @@ def eligible(source):
                 if not call.startswith('thunk_FUN_')}
 
 
+def make_msvc_member(source):
+    """Represent an x86 Ghidra __thiscall as a genuine C++ member function."""
+    match = THISCALL.search(source)
+    if not match:
+        return '', source
+    receiver, separator, remaining = match.group('parameters').partition(',')
+    name = re.search(r'\w+$', receiver.strip())
+    if not name:
+        raise ValueError(f'No receiver variable in {match.group(0)}')
+    receiver_name = name.group(0)
+    receiver_type = receiver[:name.start()].strip()
+    if not receiver_type:
+        raise ValueError(f'No receiver type in {match.group(0)}')
+    rest = remaining.strip() if separator else ''
+    class_name = 'Recovered_' + match.group('name')
+    result_type = match.group('result').strip()
+    declaration = (f'struct {class_name} {{ '
+                   f'{result_type} {match.group("name")}({rest}); }};')
+    definition = (f'{result_type} {class_name}::{match.group("name")}({rest})')
+    changed = source[:match.start()] + definition + source[match.end():]
+    opening = changed.index('{', match.start() + len(definition))
+    changed = (changed[:opening + 1] +
+               f'\n  {receiver_type} {receiver_name} = '
+               f'({receiver_type})this;' + changed[opening + 1:])
+    return declaration, changed
+
+
 def cpp_source(records):
     thunks = sorted({name for record in records for name in
                      re.findall(r'\bthunk_FUN_[0-9a-f]{8}\b', record['source'])})
     declarations = '\n'.join(f'extern int {name}(...);' for name in thunks)
+    members = [make_msvc_member(r['source']) for r in records]
+    member_declarations = '\n'.join(decl for decl, _ in members if decl)
     functions = '\n'.join(
         f'// Reference entry {r["entry"]}; body size {r["body_bytes"]} bytes.\n'
-        f'#line 1 "ENTRY_{r["entry"]}"\n{r["source"]}' for r in records)
-    return HEADER + SCSTR + declarations + '\n' + functions
+        f'#line 1 "ENTRY_{r["entry"]}"\n{member[1]}'
+        for r, member in zip(records, members))
+    return HEADER + SCSTR + declarations + '\n' + member_declarations + '\n' + functions
 
 
 def syntax(records, scratch):
