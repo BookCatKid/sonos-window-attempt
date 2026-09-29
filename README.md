@@ -82,6 +82,7 @@ and objects are local under `analysis/compiled-cpp*`; they are not checked in.
 python3 tools/compile_ghidra_cpp.py analysis/bulk-medium/*.jsonl --output-dir analysis/compiled-cpp-thunk
 python3 tools/compile_ghidra_cpp.py analysis/bulk-64-pilot.jsonl analysis/bulk-64-rest.jsonl analysis/bulk-64-final/*.jsonl --output-dir analysis/compiled-cpp-high-thunk
 python3 tools/compile_ghidra_cpp.py analysis/communication-slice.jsonl --output-dir analysis/compiled-cpp-communication-thunk
+python3 tools/compiled_cpp_coverage.py analysis/compiled-cpp-thunk analysis/compiled-cpp-high-thunk analysis/compiled-cpp-communication-thunk
 ```
 
 The current combined gate compiles 12,563 distinct functions with 403,579
