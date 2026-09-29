@@ -46,7 +46,7 @@ ALLOWED_CALLS = {'if', 'while', 'switch', 'sizeof', 'return', 'int', 'uint',
                  'undefined1', 'undefined2', 'undefined4', 'undefined8',
                  'code', 'SCStr', 'operator', *SUPPORTED}
 THISCALL = re.compile(
-    r'(?P<result>[^\n]+?)\s+__thiscall\s+(?P<name>FUN_[0-9a-f]{8})'
+    r'(?P<result>[^\n]+?)\s+__thiscall\s+(?P<name>(?:thunk_)?FUN_[0-9a-f]{8})'
     r'\((?P<parameters>[^)]*)\)')
 
 
@@ -134,7 +134,7 @@ def eligible(source):
                 if not call.startswith('thunk_FUN_')}
 
 
-def make_msvc_member(source):
+def make_msvc_member(source, entry):
     """Represent an x86 Ghidra __thiscall as a genuine C++ member function."""
     match = THISCALL.search(source)
     if not match:
@@ -148,11 +148,12 @@ def make_msvc_member(source):
     if not receiver_type:
         raise ValueError(f'No receiver type in {match.group(0)}')
     rest = remaining.strip() if separator else ''
-    class_name = 'Recovered_' + match.group('name')
+    class_name = 'Recovered_' + entry
+    method_name = 'FUN_' + entry
     result_type = match.group('result').strip()
     declaration = (f'struct {class_name} {{ '
-                   f'{result_type} {match.group("name")}({rest}); }};')
-    definition = (f'{result_type} {class_name}::{match.group("name")}({rest})')
+                   f'{result_type} {method_name}({rest}); }};')
+    definition = (f'{result_type} {class_name}::{method_name}({rest})')
     changed = source[:match.start()] + definition + source[match.end():]
     opening = changed.index('{', match.start() + len(definition))
     changed = (changed[:opening + 1] +
@@ -165,7 +166,7 @@ def cpp_source(records):
     thunks = sorted({name for record in records for name in
                      re.findall(r'\bthunk_FUN_[0-9a-f]{8}\b', record['source'])})
     declarations = '\n'.join(f'extern int {name}(...);' for name in thunks)
-    members = [make_msvc_member(r['source']) for r in records]
+    members = [make_msvc_member(r['source'], r['entry']) for r in records]
     member_declarations = '\n'.join(decl for decl, _ in members if decl)
     functions = '\n'.join(
         f'// Reference entry {r["entry"]}; body size {r["body_bytes"]} bytes.\n'

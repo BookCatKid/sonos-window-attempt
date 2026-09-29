@@ -216,1103 +216,1119 @@ extern int thunk_FUN_11207070(...);
 extern int thunk_FUN_112af4e0(...);
 extern int thunk_FUN_11456530(...);
 extern int thunk_FUN_1148a50e(...);
-struct Recovered_FUN_10117000 { void FUN_10117000(int *param_2,SCStr *param_3,uint param_4); };
-struct Recovered_FUN_1011a2f0 { SCStr * FUN_1011a2f0(char *param_2); };
-struct Recovered_FUN_1011a310 { SCStr * FUN_1011a310(char *param_2,uint param_3); };
-struct Recovered_FUN_10124510 { SCStr * FUN_10124510(SCStr *param_2); };
-struct Recovered_FUN_10124550 { SCStr * FUN_10124550(SCStr *param_2); };
-struct Recovered_FUN_10124590 { SCStr * FUN_10124590(SCStr *param_2); };
-struct Recovered_FUN_10124b10 { SCStr * FUN_10124b10(SCStr *param_2); };
-struct Recovered_FUN_10124b40 { int FUN_10124b40(int param_2); };
-struct Recovered_FUN_10124e10 { bool FUN_10124e10(SCStr *param_2); };
-struct Recovered_FUN_10124e50 { bool FUN_10124e50(char *param_2); };
-struct Recovered_FUN_1012d2e0 { uint FUN_1012d2e0(SCStr *param_2); };
-struct Recovered_FUN_1013b6b0 { undefined4 * FUN_1013b6b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013b730 { undefined4 * FUN_1013b730(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013b7b0 { undefined4 * FUN_1013b7b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013b830 { undefined4 * FUN_1013b830(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013b8b0 { undefined4 * FUN_1013b8b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013b930 { undefined4 * FUN_1013b930(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013b9b0 { undefined4 * FUN_1013b9b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013ba30 { undefined4 * FUN_1013ba30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013bab0 { undefined4 * FUN_1013bab0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013bb30 { undefined4 * FUN_1013bb30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013bbb0 { undefined4 * FUN_1013bbb0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013bc30 { undefined4 * FUN_1013bc30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013bcb0 { undefined4 * FUN_1013bcb0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013bd30 { undefined4 * FUN_1013bd30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013bdb0 { undefined4 * FUN_1013bdb0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013be30 { undefined4 * FUN_1013be30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013beb0 { undefined4 * FUN_1013beb0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013bf30 { undefined4 * FUN_1013bf30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013bfb0 { undefined4 * FUN_1013bfb0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013c030 { undefined4 * FUN_1013c030(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013c0b0 { undefined4 * FUN_1013c0b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013c130 { undefined4 * FUN_1013c130(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013c1b0 { undefined4 * FUN_1013c1b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013c230 { undefined4 * FUN_1013c230(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013c2b0 { undefined4 * FUN_1013c2b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013c330 { undefined4 * FUN_1013c330(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013c3b0 { undefined4 * FUN_1013c3b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013c430 { undefined4 * FUN_1013c430(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013c4b0 { undefined4 * FUN_1013c4b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013c530 { undefined4 * FUN_1013c530(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013c5b0 { undefined4 * FUN_1013c5b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013c630 { undefined4 * FUN_1013c630(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013c6b0 { undefined4 * FUN_1013c6b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013c730 { undefined4 * FUN_1013c730(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013c7b0 { undefined4 * FUN_1013c7b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013c830 { undefined4 * FUN_1013c830(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013c8b0 { undefined4 * FUN_1013c8b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013c930 { undefined4 * FUN_1013c930(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013c9b0 { undefined4 * FUN_1013c9b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013ca30 { undefined4 * FUN_1013ca30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013cab0 { undefined4 * FUN_1013cab0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013cb30 { undefined4 * FUN_1013cb30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013cbb0 { undefined4 * FUN_1013cbb0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013cc30 { undefined4 * FUN_1013cc30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013ccb0 { undefined4 * FUN_1013ccb0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013cd30 { undefined4 * FUN_1013cd30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013cdb0 { undefined4 * FUN_1013cdb0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013ce30 { undefined4 * FUN_1013ce30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013ceb0 { undefined4 * FUN_1013ceb0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013cf30 { undefined4 * FUN_1013cf30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013cfb0 { undefined4 * FUN_1013cfb0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d030 { undefined4 * FUN_1013d030(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d0b0 { undefined4 * FUN_1013d0b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d120 { undefined4 * FUN_1013d120(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d190 { undefined4 * FUN_1013d190(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d200 { undefined4 * FUN_1013d200(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d270 { undefined4 * FUN_1013d270(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d2e0 { undefined4 * FUN_1013d2e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d350 { undefined4 * FUN_1013d350(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d3c0 { undefined4 * FUN_1013d3c0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d430 { undefined4 * FUN_1013d430(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d4a0 { undefined4 * FUN_1013d4a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d510 { undefined4 * FUN_1013d510(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d580 { undefined4 * FUN_1013d580(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d5f0 { undefined4 * FUN_1013d5f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d660 { undefined4 * FUN_1013d660(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d6d0 { undefined4 * FUN_1013d6d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d740 { undefined4 * FUN_1013d740(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d7b0 { undefined4 * FUN_1013d7b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d820 { undefined4 * FUN_1013d820(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d890 { undefined4 * FUN_1013d890(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d900 { undefined4 * FUN_1013d900(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d970 { undefined4 * FUN_1013d970(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013d9e0 { undefined4 * FUN_1013d9e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013da50 { undefined4 * FUN_1013da50(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013dac0 { undefined4 * FUN_1013dac0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013db30 { undefined4 * FUN_1013db30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013dba0 { undefined4 * FUN_1013dba0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013dc10 { undefined4 * FUN_1013dc10(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013dc80 { undefined4 * FUN_1013dc80(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013dcf0 { undefined4 * FUN_1013dcf0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013dd60 { undefined4 * FUN_1013dd60(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013ddd0 { undefined4 * FUN_1013ddd0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013de40 { undefined4 * FUN_1013de40(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013deb0 { undefined4 * FUN_1013deb0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013df20 { undefined4 * FUN_1013df20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013df90 { undefined4 * FUN_1013df90(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013e000 { undefined4 * FUN_1013e000(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013e070 { undefined4 * FUN_1013e070(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013e0e0 { undefined4 * FUN_1013e0e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013e150 { undefined4 * FUN_1013e150(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013e1c0 { undefined4 * FUN_1013e1c0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013e230 { undefined4 * FUN_1013e230(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013e2a0 { undefined4 * FUN_1013e2a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013e310 { undefined4 * FUN_1013e310(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013e380 { undefined4 * FUN_1013e380(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013e3f0 { undefined4 * FUN_1013e3f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013e460 { undefined4 * FUN_1013e460(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013e4d0 { undefined4 * FUN_1013e4d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013e540 { undefined4 * FUN_1013e540(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013e6d0 { undefined4 * FUN_1013e6d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013e740 { undefined4 * FUN_1013e740(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013e7b0 { undefined4 * FUN_1013e7b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1013e820 { undefined4 * FUN_1013e820(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10144830 { SCStr * FUN_10144830(char *param_2,uint param_3); };
-struct Recovered_FUN_10145180 { SCStr * FUN_10145180(char *param_2); };
-struct Recovered_FUN_101aa190 { undefined4 * FUN_101aa190(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101aa210 { undefined4 * FUN_101aa210(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101b49f0 { void FUN_101b49f0(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_101b68f0 { undefined4 * FUN_101b68f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101b6970 { undefined4 * FUN_101b6970(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101b69f0 { undefined4 * FUN_101b69f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101b8e70 { undefined4 * FUN_101b8e70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101bb010 { void FUN_101bb010(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_101bbef0 { undefined4 * FUN_101bbef0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101bbf70 { undefined4 * FUN_101bbf70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101bbff0 { undefined4 * FUN_101bbff0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101bc380 { void FUN_101bc380(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_101bef80 { undefined4 * FUN_101bef80(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101cb1b0 { undefined4 * FUN_101cb1b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101cb230 { undefined4 * FUN_101cb230(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101cb2b0 { undefined4 * FUN_101cb2b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101cb330 { undefined4 * FUN_101cb330(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101d40d0 { int FUN_101d40d0(int param_2); };
-struct Recovered_FUN_101d8de0 { void FUN_101d8de0(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_101dd540 { undefined4 * FUN_101dd540(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101dd6e0 { undefined4 * FUN_101dd6e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101dd760 { undefined4 * FUN_101dd760(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101dd7e0 { undefined4 * FUN_101dd7e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101dd860 { undefined4 * FUN_101dd860(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101dd900 { undefined4 * FUN_101dd900(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101dd980 { undefined4 * FUN_101dd980(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101dda00 { undefined4 * FUN_101dda00(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101ddbf0 { undefined4 * FUN_101ddbf0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101f2130 { undefined4 * FUN_101f2130(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101f21b0 { undefined4 * FUN_101f21b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101f2230 { undefined4 * FUN_101f2230(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101f22b0 { undefined4 * FUN_101f22b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101f2ea0 { void FUN_101f2ea0(undefined1 param_2); };
-struct Recovered_FUN_101f3310 { void FUN_101f3310(int param_2); };
-struct Recovered_FUN_101f84c0 { undefined4 * FUN_101f84c0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101fb690 { undefined4 * FUN_101fb690(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_101fb710 { undefined4 * FUN_101fb710(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1020a260 { void FUN_1020a260(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_1020a2b0 { void FUN_1020a2b0(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_1020a5b0 { void FUN_1020a5b0(undefined4 param_2); };
-struct Recovered_FUN_1020f4f0 { int * FUN_1020f4f0(int *param_2,uint param_3); };
-struct Recovered_FUN_1021f010 { undefined4 * FUN_1021f010(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1021f0b0 { undefined4 * FUN_1021f0b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1021f180 { undefined4 * FUN_1021f180(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1021f270 { int * FUN_1021f270(int *param_2,SCStr *param_3); };
-struct Recovered_FUN_1021f3a0 { undefined4 * FUN_1021f3a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1021f420 { undefined4 * FUN_1021f420(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1021f4f0 { undefined4 * FUN_1021f4f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1021f570 { undefined4 * FUN_1021f570(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1021f610 { undefined4 * FUN_1021f610(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10222470 { undefined4 * FUN_10222470(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102224f0 { undefined4 * FUN_102224f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102316a0 { SCStr * FUN_102316a0(SCStr *param_2); };
-struct Recovered_FUN_102316e0 { SCStr * FUN_102316e0(SCStr *param_2); };
-struct Recovered_FUN_102317a0 { SCStr * FUN_102317a0(SCStr *param_2); };
-struct Recovered_FUN_10231810 { SCStr * FUN_10231810(SCStr *param_2); };
-struct Recovered_FUN_102361a0 { void FUN_102361a0(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_10236240 { void FUN_10236240(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_10236310 { void FUN_10236310(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_102363b0 { void FUN_102363b0(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_1023a7d0 { SCStr * FUN_1023a7d0(SCStr *param_2); };
-struct Recovered_FUN_102437a0 { undefined4 * FUN_102437a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10243820 { undefined4 * FUN_10243820(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102438a0 { undefined4 * FUN_102438a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10243920 { undefined4 * FUN_10243920(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102439a0 { undefined4 * FUN_102439a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10243a20 { undefined4 * FUN_10243a20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10243aa0 { undefined4 * FUN_10243aa0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10243b20 { undefined4 * FUN_10243b20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10248870 { SCStr * FUN_10248870(SCStr *param_2); };
-struct Recovered_FUN_10249970 { undefined4 * FUN_10249970(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1024afd0 { undefined4 * FUN_1024afd0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1024e050 { undefined4 * FUN_1024e050(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10250180 { void FUN_10250180(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_10252c00 { undefined4 * FUN_10252c00(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10252c80 { undefined4 * FUN_10252c80(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10252d00 { undefined4 * FUN_10252d00(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1025cc20 { undefined4 * FUN_1025cc20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1025cca0 { undefined4 * FUN_1025cca0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1025cd20 { undefined4 * FUN_1025cd20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1025cda0 { undefined4 * FUN_1025cda0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1025ce20 { undefined4 * FUN_1025ce20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1025db40 { SCStr * FUN_1025db40(SCStr *param_2); };
-struct Recovered_FUN_1025db80 { SCStr * FUN_1025db80(SCStr *param_2); };
-struct Recovered_FUN_1025dbc0 { SCStr * FUN_1025dbc0(SCStr *param_2); };
-struct Recovered_FUN_1025dc00 { SCStr * FUN_1025dc00(SCStr *param_2); };
-struct Recovered_FUN_1025df70 { undefined4 * FUN_1025df70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1025e6a0 { undefined4 * FUN_1025e6a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10262310 { undefined4 * FUN_10262310(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10262390 { undefined4 * FUN_10262390(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10262440 { undefined4 * FUN_10262440(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102624f0 { undefined4 * FUN_102624f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1026cd00 { undefined4 * FUN_1026cd00(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1026cd80 { undefined4 * FUN_1026cd80(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1026ce00 { undefined4 * FUN_1026ce00(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1026ce80 { undefined4 * FUN_1026ce80(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1026e060 { undefined4 * FUN_1026e060(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10271800 { undefined4 * FUN_10271800(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10271880 { undefined4 * FUN_10271880(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102796e0 { undefined4 * FUN_102796e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10279760 { undefined4 * FUN_10279760(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10282d90 { undefined4 * FUN_10282d90(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10282e10 { undefined4 * FUN_10282e10(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10282e90 { undefined4 * FUN_10282e90(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1028a680 { undefined4 * FUN_1028a680(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1028c9f0 { void FUN_1028c9f0(int *param_2,SCStr *param_3); };
-struct Recovered_FUN_102922f0 { SCStr * FUN_102922f0(SCStr *param_2); };
-struct Recovered_FUN_102935e0 { undefined4 * FUN_102935e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10293660 { undefined4 * FUN_10293660(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1029c270 { undefined4 * FUN_1029c270(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1029c2f0 { undefined4 * FUN_1029c2f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1029c370 { undefined4 * FUN_1029c370(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1029c3f0 { undefined4 * FUN_1029c3f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1029c470 { undefined4 * FUN_1029c470(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1029c4f0 { undefined4 * FUN_1029c4f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1029c570 { undefined4 * FUN_1029c570(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1029c800 { void FUN_1029c800(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_1029db20 { undefined4 * FUN_1029db20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1029e800 { undefined4 * FUN_1029e800(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102a1640 { undefined4 * FUN_102a1640(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102aa8a0 { int FUN_102aa8a0(int param_2); };
-struct Recovered_FUN_102b8960 { undefined4 * FUN_102b8960(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102b89e0 { undefined4 * FUN_102b89e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102b8a60 { undefined4 * FUN_102b8a60(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102b8b30 { undefined4 * FUN_102b8b30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102b8bb0 { undefined4 * FUN_102b8bb0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102b8c30 { undefined4 * FUN_102b8c30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102b8cb0 { undefined4 * FUN_102b8cb0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102c0020 { undefined4 * FUN_102c0020(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102c09e0 { undefined4 * FUN_102c09e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102c2140 { undefined4 * FUN_102c2140(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102c21c0 { undefined4 * FUN_102c21c0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102c6e60 { void FUN_102c6e60(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_102c75d0 { SCStr * FUN_102c75d0(SCStr *param_2); };
-struct Recovered_FUN_102c9950 { undefined4 * FUN_102c9950(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102c99d0 { undefined4 * FUN_102c99d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102c9bf0 { undefined4 * FUN_102c9bf0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102c9c70 { undefined4 * FUN_102c9c70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102c9d40 { undefined4 * FUN_102c9d40(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102d1830 { undefined4 * FUN_102d1830(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102d4990 { void FUN_102d4990(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_102d7230 { undefined4 * FUN_102d7230(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102d72b0 { undefined4 * FUN_102d72b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102db880 { undefined4 * FUN_102db880(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102de670 { void FUN_102de670(char *param_2,undefined4 param_3); };
-struct Recovered_FUN_102de7c0 { undefined4 * FUN_102de7c0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102e4cd0 { undefined4 * FUN_102e4cd0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102f70f0 { SCStr * FUN_102f70f0(SCStr *param_2); };
-struct Recovered_FUN_102f7470 { SCStr * FUN_102f7470(SCStr *param_2); };
-struct Recovered_FUN_102fe600 { undefined4 * FUN_102fe600(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102fe680 { undefined4 * FUN_102fe680(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102fe750 { undefined4 * FUN_102fe750(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102fe7d0 { undefined4 * FUN_102fe7d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_102fe850 { undefined4 * FUN_102fe850(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10302f10 { undefined4 * FUN_10302f10(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10320820 { SCStr * FUN_10320820(SCStr *param_2); };
-struct Recovered_FUN_103208b0 { SCStr * FUN_103208b0(SCStr *param_2); };
-struct Recovered_FUN_10320a30 { SCStr * FUN_10320a30(SCStr *param_2); };
-struct Recovered_FUN_10320aa0 { SCStr * FUN_10320aa0(SCStr *param_2); };
-struct Recovered_FUN_10322fe0 { SCStr * FUN_10322fe0(SCStr *param_2); };
-struct Recovered_FUN_10323df0 { SCStr * FUN_10323df0(SCStr *param_2); };
-struct Recovered_FUN_103296b0 { undefined4 * FUN_103296b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10329730 { undefined4 * FUN_10329730(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103297b0 { undefined4 * FUN_103297b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10329830 { undefined4 * FUN_10329830(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103298b0 { undefined4 * FUN_103298b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10329df0 { undefined4 * FUN_10329df0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10329e70 { undefined4 * FUN_10329e70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10329ef0 { undefined4 * FUN_10329ef0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10329f70 { undefined4 * FUN_10329f70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10329ff0 { undefined4 * FUN_10329ff0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1032a070 { undefined4 * FUN_1032a070(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1032a840 { void FUN_1032a840(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_1032a8a0 { void FUN_1032a8a0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_1032a900 { void FUN_1032a900(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_1032a960 { void FUN_1032a960(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_1032a9c0 { void FUN_1032a9c0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_1034ebe0 { undefined4 * FUN_1034ebe0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10376e70 { void FUN_10376e70(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_10376ed0 { void FUN_10376ed0(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_10376fa0 { void FUN_10376fa0(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_10377040 { void FUN_10377040(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_10377300 { void FUN_10377300(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_103773d0 { void FUN_103773d0(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_103909e0 { void FUN_103909e0(int param_2); };
-struct Recovered_FUN_10391190 { void FUN_10391190(int param_2); };
-struct Recovered_FUN_10391290 { void FUN_10391290(int param_2); };
-struct Recovered_FUN_10391350 { void FUN_10391350(int param_2); };
-struct Recovered_FUN_10391510 { void FUN_10391510(int param_2); };
-struct Recovered_FUN_10393c20 { undefined4 * FUN_10393c20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10393ca0 { undefined4 * FUN_10393ca0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10393d20 { undefined4 * FUN_10393d20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10393da0 { undefined4 * FUN_10393da0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10393e20 { undefined4 * FUN_10393e20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10393ea0 { undefined4 * FUN_10393ea0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10393f20 { undefined4 * FUN_10393f20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10394170 { undefined4 * FUN_10394170(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103941f0 { undefined4 * FUN_103941f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10394270 { undefined4 * FUN_10394270(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103942f0 { undefined4 * FUN_103942f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10394370 { undefined4 * FUN_10394370(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10394dc0 { void FUN_10394dc0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103a13d0 { undefined1 FUN_103a13d0(SCStr *param_2); };
-struct Recovered_FUN_103a1560 { SCStr * FUN_103a1560(SCStr *param_2); };
-struct Recovered_FUN_103a15c0 { SCStr * FUN_103a15c0(SCStr *param_2); };
-struct Recovered_FUN_103a15e0 { SCStr * FUN_103a15e0(SCStr *param_2); };
-struct Recovered_FUN_103a17e0 { undefined4 FUN_103a17e0(undefined4 param_2); };
-struct Recovered_FUN_103a1fb0 { SCStr * FUN_103a1fb0(SCStr *param_2); };
-struct Recovered_FUN_103a3530 { undefined4 * FUN_103a3530(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103a35b0 { undefined4 * FUN_103a35b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103a3630 { undefined4 * FUN_103a3630(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103a36b0 { undefined4 * FUN_103a36b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103a39e0 { undefined4 * FUN_103a39e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103a3d70 { void FUN_103a3d70(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103a3dd0 { void FUN_103a3dd0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103b6a40 { void FUN_103b6a40(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_103b8b80 { void FUN_103b8b80(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103b8c20 { void FUN_103b8c20(SCStr *param_2); };
-struct Recovered_FUN_103b9950 { void FUN_103b9950(SCStr *param_2,undefined4 *param_3); };
-struct Recovered_FUN_103bcf70 { undefined4 * FUN_103bcf70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103bd030 { undefined4 * FUN_103bd030(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103bd0b0 { undefined4 * FUN_103bd0b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103bd130 { undefined4 * FUN_103bd130(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103bd1f0 { undefined4 * FUN_103bd1f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103bd270 { undefined4 * FUN_103bd270(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103bf250 { undefined4 * FUN_103bf250(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103ca9d0 { undefined4 * FUN_103ca9d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103caa50 { undefined4 * FUN_103caa50(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103caad0 { undefined4 * FUN_103caad0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103cab50 { undefined4 * FUN_103cab50(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103cb7b0 { void FUN_103cb7b0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103cb810 { void FUN_103cb810(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103d0b10 { SCStr * FUN_103d0b10(SCStr *param_2); };
-struct Recovered_FUN_103d5e70 { undefined4 * FUN_103d5e70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f1f80 { undefined4 * FUN_103f1f80(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2000 { undefined4 * FUN_103f2000(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2080 { undefined4 * FUN_103f2080(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2100 { undefined4 * FUN_103f2100(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2180 { undefined4 * FUN_103f2180(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2200 { undefined4 * FUN_103f2200(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2280 { undefined4 * FUN_103f2280(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2300 { undefined4 * FUN_103f2300(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2380 { undefined4 * FUN_103f2380(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2400 { undefined4 * FUN_103f2400(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2480 { undefined4 * FUN_103f2480(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2500 { undefined4 * FUN_103f2500(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2580 { undefined4 * FUN_103f2580(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2600 { undefined4 * FUN_103f2600(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2680 { undefined4 * FUN_103f2680(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2700 { undefined4 * FUN_103f2700(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2780 { undefined4 * FUN_103f2780(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2800 { undefined4 * FUN_103f2800(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2950 { void FUN_103f2950(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f29b0 { void FUN_103f29b0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2a10 { void FUN_103f2a10(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2a70 { void FUN_103f2a70(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2ad0 { void FUN_103f2ad0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2b30 { void FUN_103f2b30(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2b90 { void FUN_103f2b90(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2bf0 { void FUN_103f2bf0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2c50 { void FUN_103f2c50(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2cb0 { void FUN_103f2cb0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2d10 { void FUN_103f2d10(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2d70 { void FUN_103f2d70(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2dd0 { void FUN_103f2dd0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2e30 { void FUN_103f2e30(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2e90 { void FUN_103f2e90(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2ef0 { void FUN_103f2ef0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103f2f50 { void FUN_103f2f50(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_103ff080 { void FUN_103ff080(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_10401ad0 { undefined4 * FUN_10401ad0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10401b50 { undefined4 * FUN_10401b50(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10401bd0 { undefined4 * FUN_10401bd0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104043f0 { undefined4 * FUN_104043f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1040cc60 { undefined4 * FUN_1040cc60(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1040fdd0 { void FUN_1040fdd0(int *param_2,SCStr *param_3,uint param_4); };
-struct Recovered_FUN_104109b0 { void FUN_104109b0(int *param_2,SCStr *param_3); };
-struct Recovered_FUN_10412b50 { void FUN_10412b50(undefined4 param_2,undefined4 param_3); };
-struct Recovered_FUN_10413680 { uint FUN_10413680(SCStr *param_2); };
-struct Recovered_FUN_10414e10 { undefined4 * FUN_10414e10(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10414e90 { undefined4 * FUN_10414e90(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1041a680 { SCStr * FUN_1041a680(SCStr *param_2); };
-struct Recovered_FUN_1041ccb0 { undefined4 * FUN_1041ccb0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1041cd30 { undefined4 * FUN_1041cd30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104238d0 { undefined4 * FUN_104238d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10423950 { undefined4 * FUN_10423950(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10424ef0 { undefined4 * FUN_10424ef0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10430440 { undefined4 * FUN_10430440(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104304d0 { undefined4 * FUN_104304d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10430560 { undefined4 * FUN_10430560(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104305f0 { undefined4 * FUN_104305f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10430680 { undefined4 * FUN_10430680(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10430710 { undefined4 * FUN_10430710(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10438580 { undefined4 * FUN_10438580(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10438600 { undefined4 * FUN_10438600(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104395b0 { void FUN_104395b0(int param_2); };
-struct Recovered_FUN_10439640 { void FUN_10439640(int param_2); };
-struct Recovered_FUN_1043c920 { undefined4 * FUN_1043c920(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1043c9a0 { undefined4 * FUN_1043c9a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1043e380 { undefined4 * FUN_1043e380(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1043f690 { undefined4 * FUN_1043f690(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10440b30 { undefined4 * FUN_10440b30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10442180 { undefined4 * FUN_10442180(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1044a010 { undefined4 * FUN_1044a010(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1044e920 { undefined4 * FUN_1044e920(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1044e9a0 { undefined4 * FUN_1044e9a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10451510 { undefined4 * FUN_10451510(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10451590 { undefined4 * FUN_10451590(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104536f0 { undefined4 * FUN_104536f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10453e60 { undefined4 * FUN_10453e60(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10455200 { undefined4 * FUN_10455200(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1045b570 { undefined4 * FUN_1045b570(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1045b5f0 { undefined4 * FUN_1045b5f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1045d480 { undefined4 * FUN_1045d480(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1045ed20 { undefined4 * FUN_1045ed20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10460e70 { undefined4 * FUN_10460e70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10462f30 { void FUN_10462f30(int param_2,short param_3); };
-struct Recovered_FUN_10464f20 { undefined4 * FUN_10464f20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10464fb0 { undefined4 * FUN_10464fb0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10465da0 { undefined4 * FUN_10465da0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10468af0 { void FUN_10468af0(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_10469100 { undefined4 * FUN_10469100(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10469190 { undefined4 * FUN_10469190(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1046b800 { undefined4 * FUN_1046b800(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1046b890 { undefined4 * FUN_1046b890(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1046d9d0 { undefined4 * FUN_1046d9d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1046fa80 { undefined4 * FUN_1046fa80(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104715e0 { undefined4 * FUN_104715e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104743a0 { undefined4 * FUN_104743a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104789a0 { undefined4 * FUN_104789a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1047d530 { undefined4 * FUN_1047d530(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104966e0 { undefined4 * FUN_104966e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1049cc70 { undefined4 * FUN_1049cc70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1049ccf0 { undefined4 * FUN_1049ccf0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1049cd80 { undefined4 * FUN_1049cd80(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104a7160 { undefined4 * FUN_104a7160(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104a71f0 { undefined4 * FUN_104a71f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104a7280 { undefined4 * FUN_104a7280(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104a7310 { undefined4 * FUN_104a7310(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104a73a0 { undefined4 * FUN_104a73a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104a7430 { undefined4 * FUN_104a7430(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104a9100 { undefined4 * FUN_104a9100(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104aa000 { undefined4 * FUN_104aa000(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104aaf00 { undefined4 * FUN_104aaf00(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104b01d0 { undefined4 * FUN_104b01d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104b28b0 { undefined4 * FUN_104b28b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104b3a20 { undefined4 * FUN_104b3a20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104b4920 { undefined4 * FUN_104b4920(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104ba490 { undefined4 * FUN_104ba490(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104bcdd0 { undefined4 * FUN_104bcdd0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104bce60 { undefined4 * FUN_104bce60(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104c0b70 { undefined4 * FUN_104c0b70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104c8b70 { undefined4 * FUN_104c8b70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104c8c00 { undefined4 * FUN_104c8c00(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104cb060 { undefined4 * FUN_104cb060(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104d2b40 { SCStr * FUN_104d2b40(SCStr *param_2); };
-struct Recovered_FUN_104d2e10 { SCStr * FUN_104d2e10(SCStr *param_2); };
-struct Recovered_FUN_104d4470 { undefined4 * FUN_104d4470(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104d44f0 { undefined4 * FUN_104d44f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104d4570 { undefined4 * FUN_104d4570(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104d6440 { undefined4 * FUN_104d6440(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104d8330 { void FUN_104d8330(undefined4 param_2); };
-struct Recovered_FUN_104d8370 { void FUN_104d8370(undefined4 param_2); };
-struct Recovered_FUN_104d9880 { void FUN_104d9880(undefined4 param_2); };
-struct Recovered_FUN_104d9d90 { undefined4 * FUN_104d9d90(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104dce30 { void FUN_104dce30(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_104dd660 { undefined4 * FUN_104dd660(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104dd6e0 { undefined4 * FUN_104dd6e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104dd760 { undefined4 * FUN_104dd760(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104ecb10 { undefined4 * FUN_104ecb10(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104ecb90 { undefined4 * FUN_104ecb90(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104f8ba0 { void FUN_104f8ba0(int *param_2,SCStr *param_3,uint param_4); };
-struct Recovered_FUN_104fd890 { uint FUN_104fd890(SCStr *param_2); };
-struct Recovered_FUN_104ff770 { undefined4 * FUN_104ff770(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104ff7c0 { undefined4 * FUN_104ff7c0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_104ff840 { undefined4 * FUN_104ff840(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10505d30 { void FUN_10505d30(); };
-struct Recovered_FUN_10505d70 { void FUN_10505d70(); };
-struct Recovered_FUN_10507800 { SCStr * FUN_10507800(SCStr *param_2,undefined4 param_3); };
-struct Recovered_FUN_10507860 { SCStr * FUN_10507860(SCStr *param_2); };
-struct Recovered_FUN_1050aea0 { undefined4 * FUN_1050aea0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1050b3a0 { undefined4 * FUN_1050b3a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10513950 { SCStr * FUN_10513950(SCStr *param_2,undefined4 param_3); };
-struct Recovered_FUN_10513990 { SCStr * FUN_10513990(SCStr *param_2); };
-struct Recovered_FUN_10519b40 { undefined4 * FUN_10519b40(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10519bc0 { undefined4 * FUN_10519bc0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1051a0f0 { undefined4 * FUN_1051a0f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10524730 { undefined4 * FUN_10524730(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10532b90 { void FUN_10532b90(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_10541b60 { undefined4 FUN_10541b60(SCStr *param_2); };
-struct Recovered_FUN_10545310 { undefined4 * FUN_10545310(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10545430 { undefined4 * FUN_10545430(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_105454e0 { undefined4 * FUN_105454e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10545590 { undefined4 * FUN_10545590(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10545640 { undefined4 * FUN_10545640(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_105456c0 { undefined4 * FUN_105456c0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1054d4c0 { undefined4 * FUN_1054d4c0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10556c90 { undefined4 * FUN_10556c90(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10556d10 { undefined4 * FUN_10556d10(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10556d90 { undefined4 * FUN_10556d90(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10557330 { void FUN_10557330(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_1055fc90 { undefined4 * FUN_1055fc90(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10574790 { SCStr * FUN_10574790(SCStr *param_2); };
-struct Recovered_FUN_105747e0 { SCStr * FUN_105747e0(SCStr *param_2); };
-struct Recovered_FUN_105749b0 { SCStr * FUN_105749b0(SCStr *param_2); };
-struct Recovered_FUN_10578350 { undefined4 * FUN_10578350(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_105783d0 { undefined4 * FUN_105783d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10578470 { undefined4 * FUN_10578470(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_105788a0 { void FUN_105788a0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_105819b0 { SCStr * FUN_105819b0(SCStr *param_2); };
-struct Recovered_FUN_10585900 { undefined4 * FUN_10585900(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1058de30 { SCStr * FUN_1058de30(SCStr *param_2); };
-struct Recovered_FUN_1058de60 { SCStr * FUN_1058de60(SCStr *param_2); };
-struct Recovered_FUN_10591b40 { void FUN_10591b40(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_105922f0 { undefined4 * FUN_105922f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10592370 { undefined4 * FUN_10592370(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10592410 { undefined4 * FUN_10592410(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_105926d0 { void FUN_105926d0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10595830 { SCStr * FUN_10595830(SCStr *param_2); };
-struct Recovered_FUN_10598f50 { undefined4 * FUN_10598f50(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_105a2900 { SCStr * FUN_105a2900(SCStr *param_2); };
-struct Recovered_FUN_105b24a0 { void FUN_105b24a0(int param_2,SCStr *param_3); };
-struct Recovered_FUN_105b2bb0 { void FUN_105b2bb0(int *param_2,SCStr *param_3); };
-struct Recovered_FUN_105b5090 { undefined4 * FUN_105b5090(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_105b5110 { undefined4 * FUN_105b5110(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_105b7910 { void FUN_105b7910(int *param_2,SCStr *param_3); };
-struct Recovered_FUN_105befa0 { SCStr * FUN_105befa0(SCStr *param_2); };
-struct Recovered_FUN_105c0540 { undefined4 * FUN_105c0540(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_105c05c0 { undefined4 * FUN_105c05c0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_105c0640 { void FUN_105c0640(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_105de4d0 { uint FUN_105de4d0(SCStr *param_2); };
-struct Recovered_FUN_105e6890 { undefined4 * FUN_105e6890(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_105e6910 { undefined4 * FUN_105e6910(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_105e6990 { undefined4 * FUN_105e6990(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_105e6a10 { undefined4 * FUN_105e6a10(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_105e6a90 { undefined4 * FUN_105e6a90(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_105e6b10 { undefined4 * FUN_105e6b10(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_105e6b90 { undefined4 * FUN_105e6b90(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_105e6f00 { void FUN_105e6f00(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_106013f0 { SCStr * FUN_106013f0(SCStr *param_2); };
-struct Recovered_FUN_10601430 { SCStr * FUN_10601430(SCStr *param_2); };
-struct Recovered_FUN_1061dcf0 { undefined4 * FUN_1061dcf0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1067efd0 { undefined4 * FUN_1067efd0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10680550 { undefined4 * FUN_10680550(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_106877d0 { undefined4 * FUN_106877d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10687820 { undefined4 * FUN_10687820(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10687870 { undefined4 * FUN_10687870(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_106878f0 { undefined4 * FUN_106878f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1068b530 { undefined4 * FUN_1068b530(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1068b720 { undefined4 * FUN_1068b720(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1068b7a0 { undefined4 * FUN_1068b7a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1068b990 { void FUN_1068b990(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10696b60 { undefined4 * FUN_10696b60(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_106a00d0 { undefined4 * FUN_106a00d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_106a0150 { undefined4 * FUN_106a0150(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_106a01d0 { undefined4 * FUN_106a01d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_106a0250 { undefined4 * FUN_106a0250(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_106a02d0 { undefined4 * FUN_106a02d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_106a0350 { undefined4 * FUN_106a0350(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_106a1a50 { undefined4 FUN_106a1a50(int *param_2); };
-struct Recovered_FUN_106a1df0 { undefined4 * FUN_106a1df0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_106ab7b0 { void FUN_106ab7b0(int *param_2,SCStr *param_3,uint param_4); };
-struct Recovered_FUN_106af6d0 { void FUN_106af6d0(int *param_2,SCStr *param_3); };
-struct Recovered_FUN_106bd210 { uint FUN_106bd210(SCStr *param_2); };
-struct Recovered_FUN_106cc8e0 { undefined4 * FUN_106cc8e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_106cc960 { undefined4 * FUN_106cc960(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_106d0d60 { undefined4 * FUN_106d0d60(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_106d6d60 { undefined4 * FUN_106d6d60(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_106f6bf0 { undefined4 * FUN_106f6bf0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10708510 { undefined4 * FUN_10708510(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_107cb7f0 { undefined4 * FUN_107cb7f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10962990 { SCStr * FUN_10962990(SCStr *param_2); };
-struct Recovered_FUN_10a08110 { undefined4 * FUN_10a08110(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10a08190 { undefined4 * FUN_10a08190(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10a08210 { undefined4 * FUN_10a08210(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10a08290 { undefined4 * FUN_10a08290(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10a08310 { undefined4 * FUN_10a08310(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10a08390 { undefined4 * FUN_10a08390(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10a08410 { undefined4 * FUN_10a08410(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10a08490 { undefined4 * FUN_10a08490(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10a08910 { void FUN_10a08910(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10a08970 { void FUN_10a08970(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10a089d0 { void FUN_10a089d0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10a08a30 { void FUN_10a08a30(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10a7cb70 { undefined4 * FUN_10a7cb70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b6ff10 { SCStr * FUN_10b6ff10(SCStr *param_2); };
-struct Recovered_FUN_10b721d0 { undefined4 * FUN_10b721d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b72250 { undefined4 * FUN_10b72250(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b72810 { void FUN_10b72810(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b7aaa0 { undefined4 * FUN_10b7aaa0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b7ab20 { undefined4 * FUN_10b7ab20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b80420 { SCStr * FUN_10b80420(SCStr *param_2); };
-struct Recovered_FUN_10b80510 { SCStr * FUN_10b80510(SCStr *param_2); };
-struct Recovered_FUN_10b81cb0 { SCStr * FUN_10b81cb0(SCStr *param_2); };
-struct Recovered_FUN_10b82e70 { undefined4 * FUN_10b82e70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b82ef0 { undefined4 * FUN_10b82ef0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b82f70 { undefined4 * FUN_10b82f70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b83350 { undefined4 * FUN_10b83350(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b83500 { undefined4 * FUN_10b83500(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b843b0 { void FUN_10b843b0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b8d5b0 { undefined4 * FUN_10b8d5b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b8d630 { undefined4 * FUN_10b8d630(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b8d6b0 { undefined4 * FUN_10b8d6b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b8d730 { undefined4 * FUN_10b8d730(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b8d7b0 { undefined4 * FUN_10b8d7b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b8db70 { void FUN_10b8db70(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b8dbd0 { void FUN_10b8dbd0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b8dc30 { void FUN_10b8dc30(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b8dc90 { void FUN_10b8dc90(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b94ef0 { undefined4 * FUN_10b94ef0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b94f70 { undefined4 * FUN_10b94f70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b9e1f0 { void FUN_10b9e1f0(undefined4 param_2); };
-struct Recovered_FUN_10b9f670 { undefined4 * FUN_10b9f670(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b9f6f0 { undefined4 * FUN_10b9f6f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b9f770 { undefined4 * FUN_10b9f770(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b9f7f0 { undefined4 * FUN_10b9f7f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b9f870 { undefined4 * FUN_10b9f870(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10b9f8f0 { undefined4 * FUN_10b9f8f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ba1160 { void FUN_10ba1160(undefined4 param_2); };
-struct Recovered_FUN_10bb31d0 { undefined4 * FUN_10bb31d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10bb3250 { undefined4 * FUN_10bb3250(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10bbc630 { undefined4 * FUN_10bbc630(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10bbed40 { undefined4 * FUN_10bbed40(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10bbf370 { undefined4 * FUN_10bbf370(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10bc4d60 { undefined4 * FUN_10bc4d60(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10bc81e0 { SCStr * FUN_10bc81e0(SCStr *param_2); };
-struct Recovered_FUN_10bc90f0 { undefined4 * FUN_10bc90f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10bc9170 { undefined4 * FUN_10bc9170(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10bc91f0 { undefined4 * FUN_10bc91f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10bcb450 { undefined4 * FUN_10bcb450(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10bd77f0 { undefined1 * FUN_10bd77f0(undefined1 *param_2); };
-struct Recovered_FUN_10bedc30 { undefined4 * FUN_10bedc30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10bf1320 { undefined4 * FUN_10bf1320(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10bf13a0 { undefined4 * FUN_10bf13a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10bf1470 { undefined4 * FUN_10bf1470(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10bf2780 { undefined4 * FUN_10bf2780(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10bf3040 { undefined4 * FUN_10bf3040(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10bf3530 { undefined4 * FUN_10bf3530(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10bf92f0 { undefined4 * FUN_10bf92f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10bfdb00 { undefined4 * FUN_10bfdb00(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c00c70 { undefined4 * FUN_10c00c70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c00d10 { undefined4 * FUN_10c00d10(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c00d90 { undefined4 * FUN_10c00d90(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c00e10 { undefined4 * FUN_10c00e10(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c03950 { undefined4 * FUN_10c03950(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c039d0 { undefined4 * FUN_10c039d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c15630 { undefined4 * FUN_10c15630(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c20ab0 { void FUN_10c20ab0(undefined4 param_2); };
-struct Recovered_FUN_10c20b20 { undefined4 * FUN_10c20b20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c20c30 { undefined4 * FUN_10c20c30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c27280 { undefined4 * FUN_10c27280(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c2a670 { undefined4 * FUN_10c2a670(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c32770 { undefined4 * FUN_10c32770(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c38230 { undefined4 * FUN_10c38230(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c3b270 { undefined4 * FUN_10c3b270(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c3b7b0 { void FUN_10c3b7b0(SCStr *param_2,undefined4 param_3); };
-struct Recovered_FUN_10c3ba30 { void FUN_10c3ba30(SCStr *param_2,undefined4 param_3); };
-struct Recovered_FUN_10c478e0 { undefined4 * FUN_10c478e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c4cf90 { undefined4 * FUN_10c4cf90(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c4d010 { undefined4 * FUN_10c4d010(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c4d0f0 { void FUN_10c4d0f0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c53000 { undefined4 * FUN_10c53000(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c531a0 { undefined4 * FUN_10c531a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c53220 { undefined4 * FUN_10c53220(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c532a0 { undefined4 * FUN_10c532a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c53320 { undefined4 * FUN_10c53320(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c533a0 { undefined4 * FUN_10c533a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c53550 { undefined4 * FUN_10c53550(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c535d0 { undefined4 * FUN_10c535d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c53650 { undefined4 * FUN_10c53650(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c536d0 { undefined4 * FUN_10c536d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c53750 { undefined4 * FUN_10c53750(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c53d50 { void FUN_10c53d50(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c53db0 { void FUN_10c53db0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c53e10 { void FUN_10c53e10(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c53e70 { void FUN_10c53e70(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c53ed0 { void FUN_10c53ed0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c58260 { undefined4 * FUN_10c58260(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c58400 { undefined4 * FUN_10c58400(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c58480 { undefined4 * FUN_10c58480(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c58500 { undefined4 * FUN_10c58500(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c58580 { undefined4 * FUN_10c58580(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c58730 { undefined4 * FUN_10c58730(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c587b0 { undefined4 * FUN_10c587b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c58830 { undefined4 * FUN_10c58830(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c588b0 { undefined4 * FUN_10c588b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c58de0 { void FUN_10c58de0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c58e40 { void FUN_10c58e40(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c58ea0 { void FUN_10c58ea0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c58f00 { void FUN_10c58f00(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c5a900 { undefined4 * FUN_10c5a900(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c5aaa0 { undefined4 * FUN_10c5aaa0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c5ac50 { undefined4 * FUN_10c5ac50(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c5af10 { void FUN_10c5af10(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c5bbb0 { void FUN_10c5bbb0(short param_2); };
-struct Recovered_FUN_10c5bbf0 { void FUN_10c5bbf0(short param_2); };
-struct Recovered_FUN_10c5c170 { void FUN_10c5c170(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_10c5c970 { void FUN_10c5c970(short param_2); };
-struct Recovered_FUN_10c5cb70 { void FUN_10c5cb70(short param_2); };
-struct Recovered_FUN_10c5cbd0 { void FUN_10c5cbd0(undefined1 param_2); };
-struct Recovered_FUN_10c5cc20 { void FUN_10c5cc20(short param_2); };
-struct Recovered_FUN_10c5cc70 { void FUN_10c5cc70(undefined1 param_2); };
-struct Recovered_FUN_10c5cd30 { undefined4 * FUN_10c5cd30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c5d000 { undefined4 * FUN_10c5d000(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c5d350 { void FUN_10c5d350(short param_2); };
-struct Recovered_FUN_10c5d720 { void FUN_10c5d720(undefined1 param_2); };
-struct Recovered_FUN_10c5d770 { void FUN_10c5d770(short param_2); };
-struct Recovered_FUN_10c5d7c0 { void FUN_10c5d7c0(undefined1 param_2); };
-struct Recovered_FUN_10c5d9e0 { void FUN_10c5d9e0(undefined1 param_2); };
-struct Recovered_FUN_10c5da30 { void FUN_10c5da30(short param_2); };
-struct Recovered_FUN_10c5da80 { void FUN_10c5da80(short param_2); };
-struct Recovered_FUN_10c5dac0 { void FUN_10c5dac0(short param_2); };
-struct Recovered_FUN_10c5db10 { void FUN_10c5db10(short param_2); };
-struct Recovered_FUN_10c5db60 { void FUN_10c5db60(undefined1 param_2); };
-struct Recovered_FUN_10c5dc20 { void FUN_10c5dc20(short param_2); };
-struct Recovered_FUN_10c67b50 { undefined4 * FUN_10c67b50(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c6c1c0 { undefined4 * FUN_10c6c1c0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c6e370 { undefined4 * FUN_10c6e370(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c6edd0 { undefined4 * FUN_10c6edd0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c7fb20 { undefined4 * FUN_10c7fb20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c83420 { undefined4 * FUN_10c83420(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c834a0 { undefined4 * FUN_10c834a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c83520 { void FUN_10c83520(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c83580 { void FUN_10c83580(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c845b0 { undefined4 * FUN_10c845b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c8d640 { SCStr * FUN_10c8d640(SCStr *param_2); };
-struct Recovered_FUN_10c92dc0 { undefined4 * FUN_10c92dc0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10c9bd90 { undefined4 * FUN_10c9bd90(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cb38c0 { undefined4 * FUN_10cb38c0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cbc5b0 { undefined4 * FUN_10cbc5b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cc0050 { undefined4 * FUN_10cc0050(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cc34d0 { undefined4 * FUN_10cc34d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cc3650 { void FUN_10cc3650(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cd87f0 { undefined4 * FUN_10cd87f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cd8870 { undefined4 * FUN_10cd8870(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cd88f0 { undefined4 * FUN_10cd88f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cd8970 { undefined4 * FUN_10cd8970(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cd89f0 { undefined4 * FUN_10cd89f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cd8a70 { undefined4 * FUN_10cd8a70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cd8af0 { undefined4 * FUN_10cd8af0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cd8b70 { undefined4 * FUN_10cd8b70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cd8bf0 { undefined4 * FUN_10cd8bf0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cd8c70 { void FUN_10cd8c70(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cd8cd0 { void FUN_10cd8cd0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cd8d30 { void FUN_10cd8d30(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cd8d90 { void FUN_10cd8d90(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cd8df0 { void FUN_10cd8df0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cd8e50 { void FUN_10cd8e50(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cd8eb0 { void FUN_10cd8eb0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cd8f10 { void FUN_10cd8f10(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cd8f70 { void FUN_10cd8f70(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cdea40 { undefined4 * FUN_10cdea40(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cdeac0 { undefined4 * FUN_10cdeac0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cdeb40 { undefined4 * FUN_10cdeb40(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cdebc0 { undefined4 * FUN_10cdebc0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cdec40 { undefined4 * FUN_10cdec40(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cdef40 { void FUN_10cdef40(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cdefa0 { void FUN_10cdefa0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ce0a20 { undefined4 * FUN_10ce0a20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ce1a40 { SCStr * FUN_10ce1a40(SCStr *param_2); };
-struct Recovered_FUN_10ce1e20 { undefined4 * FUN_10ce1e20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ce1ea0 { undefined4 * FUN_10ce1ea0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ce1f40 { undefined4 * FUN_10ce1f40(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ce2180 { void FUN_10ce2180(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ce2a80 { undefined4 * FUN_10ce2a80(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ce4cb0 { undefined4 * FUN_10ce4cb0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ce5d10 { void FUN_10ce5d10(int *param_2,SCStr *param_3,uint param_4); };
-struct Recovered_FUN_10ce64d0 { void FUN_10ce64d0(int *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ce9470 { uint FUN_10ce9470(SCStr *param_2); };
-struct Recovered_FUN_10cebbc0 { undefined4 * FUN_10cebbc0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cf0980 { undefined4 * FUN_10cf0980(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cf3680 { undefined4 * FUN_10cf3680(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cf3700 { undefined4 * FUN_10cf3700(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cf52a0 { undefined4 * FUN_10cf52a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cf6150 { SCStr * FUN_10cf6150(SCStr *param_2); };
-struct Recovered_FUN_10cf63d0 { undefined4 * FUN_10cf63d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cf6520 { void FUN_10cf6520(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cf78e0 { void FUN_10cf78e0(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_10cf8c60 { undefined4 * FUN_10cf8c60(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cf8ce0 { undefined4 * FUN_10cf8ce0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cfb040 { undefined4 * FUN_10cfb040(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cfdde0 { undefined4 * FUN_10cfdde0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10cfdeb0 { undefined4 * FUN_10cfdeb0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d06d40 { undefined4 * FUN_10d06d40(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d06fa0 { undefined4 * FUN_10d06fa0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d07020 { undefined4 * FUN_10d07020(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d07520 { undefined4 * FUN_10d07520(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d102d0 { undefined4 * FUN_10d102d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d14dd0 { undefined4 * FUN_10d14dd0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d14e70 { undefined4 * FUN_10d14e70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d14f40 { undefined4 * FUN_10d14f40(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d16fb0 { void FUN_10d16fb0(int param_2,SCStr *param_3); };
-struct Recovered_FUN_10d176f0 { SCStr * FUN_10d176f0(SCStr *param_2); };
-struct Recovered_FUN_10d17ec0 { SCStr * FUN_10d17ec0(SCStr *param_2,int param_3); };
-struct Recovered_FUN_10d19410 { undefined4 * FUN_10d19410(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d1d4f0 { undefined4 * FUN_10d1d4f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d1d570 { undefined4 * FUN_10d1d570(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d1e560 { undefined4 * FUN_10d1e560(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d22340 { undefined4 * FUN_10d22340(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d223d0 { undefined4 * FUN_10d223d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d2b0f0 { undefined4 * FUN_10d2b0f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d2b170 { undefined4 * FUN_10d2b170(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d2b240 { undefined4 * FUN_10d2b240(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d2b2c0 { undefined4 * FUN_10d2b2c0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d2b340 { undefined4 * FUN_10d2b340(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d2b3c0 { undefined4 * FUN_10d2b3c0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d2b440 { undefined4 * FUN_10d2b440(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d35460 { void FUN_10d35460(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_10d39e40 { undefined4 * FUN_10d39e40(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d39ec0 { undefined4 * FUN_10d39ec0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d3c4f0 { SCStr * FUN_10d3c4f0(SCStr *param_2); };
-struct Recovered_FUN_10d3c540 { SCStr * FUN_10d3c540(SCStr *param_2); };
-struct Recovered_FUN_10d3c9f0 { undefined4 * FUN_10d3c9f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d3ca70 { undefined4 * FUN_10d3ca70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d3caf0 { undefined4 * FUN_10d3caf0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d3ee70 { void FUN_10d3ee70(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_10d41c80 { undefined4 * FUN_10d41c80(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d41d20 { undefined4 * FUN_10d41d20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d41da0 { undefined4 * FUN_10d41da0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d41e70 { undefined4 * FUN_10d41e70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d41f10 { undefined4 * FUN_10d41f10(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d44040 { void FUN_10d44040(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_10d440e0 { void FUN_10d440e0(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_10d49470 { undefined4 * FUN_10d49470(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d49540 { undefined4 * FUN_10d49540(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d49620 { undefined4 * FUN_10d49620(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d496f0 { undefined4 * FUN_10d496f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d497d0 { undefined4 * FUN_10d497d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d498a0 { undefined4 * FUN_10d498a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d51180 { undefined4 * FUN_10d51180(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d51220 { undefined4 * FUN_10d51220(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d540a0 { void FUN_10d540a0(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_10d54440 { void FUN_10d54440(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_10d58880 { undefined4 * FUN_10d58880(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d5a240 { SCStr * FUN_10d5a240(SCStr *param_2,undefined4 param_3,undefined4 param_4); };
-struct Recovered_FUN_10d5a340 { SCStr * FUN_10d5a340(SCStr *param_2,undefined4 param_3); };
-struct Recovered_FUN_10d5a3b0 { SCStr * FUN_10d5a3b0(SCStr *param_2); };
-struct Recovered_FUN_10d5a990 { undefined4 * FUN_10d5a990(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d5eec0 { void FUN_10d5eec0(int param_2); };
-struct Recovered_FUN_10d60300 { undefined4 * FUN_10d60300(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d63500 { undefined4 * FUN_10d63500(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d67340 { undefined4 * FUN_10d67340(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d67410 { undefined4 * FUN_10d67410(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d674e0 { undefined4 * FUN_10d674e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d675b0 { undefined4 * FUN_10d675b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d6d880 { SCStr * FUN_10d6d880(SCStr *param_2,int param_3,undefined4 param_4); };
-struct Recovered_FUN_10d71360 { undefined4 * FUN_10d71360(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d71470 { undefined4 * FUN_10d71470(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d71570 { undefined4 * FUN_10d71570(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d86dd0 { undefined4 * FUN_10d86dd0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d86e50 { undefined4 * FUN_10d86e50(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d86ed0 { undefined4 * FUN_10d86ed0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d86f50 { undefined4 * FUN_10d86f50(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d86fd0 { undefined4 * FUN_10d86fd0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d87230 { void FUN_10d87230(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d87290 { void FUN_10d87290(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d872f0 { void FUN_10d872f0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d87350 { void FUN_10d87350(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d88ea0 { void FUN_10d88ea0(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_10d89300 { undefined4 * FUN_10d89300(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d91bd0 { undefined4 * FUN_10d91bd0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d93ac0 { undefined4 * FUN_10d93ac0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d97210 { undefined4 * FUN_10d97210(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d9a400 { undefined4 * FUN_10d9a400(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d9a480 { undefined4 * FUN_10d9a480(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d9ded0 { undefined4 * FUN_10d9ded0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d9df50 { undefined4 * FUN_10d9df50(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d9e0f0 { void FUN_10d9e0f0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10d9e640 { undefined4 * FUN_10d9e640(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10da2790 { void FUN_10da2790(undefined4 param_2,SCStr *param_3); };
-struct Recovered_FUN_10da33b0 { undefined4 * FUN_10da33b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10da3430 { undefined4 * FUN_10da3430(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10da53c0 { int FUN_10da53c0(int param_2); };
-struct Recovered_FUN_10da7540 { undefined4 * FUN_10da7540(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10da75c0 { undefined4 * FUN_10da75c0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10da7640 { undefined4 * FUN_10da7640(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10db8e40 { SCStr * FUN_10db8e40(SCStr *param_2); };
-struct Recovered_FUN_10dc5850 { SCStr * FUN_10dc5850(SCStr *param_2,uint param_3); };
-struct Recovered_FUN_10dc58b0 { SCStr * FUN_10dc58b0(SCStr *param_2,uint param_3); };
-struct Recovered_FUN_10dc76d0 { undefined4 * FUN_10dc76d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10dcef60 { undefined4 * FUN_10dcef60(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10dd5ba0 { undefined4 * FUN_10dd5ba0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10de28f0 { undefined4 * FUN_10de28f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10de4590 { undefined4 * FUN_10de4590(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10de8950 { undefined4 * FUN_10de8950(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10de89d0 { undefined4 * FUN_10de89d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10de8a50 { undefined4 * FUN_10de8a50(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10de8c30 { void FUN_10de8c30(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10def210 { SCStr * FUN_10def210(SCStr *param_2); };
-struct Recovered_FUN_10e06af0 { undefined4 * FUN_10e06af0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10e0ae60 { undefined4 * FUN_10e0ae60(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10e14320 { void FUN_10e14320(int param_2); };
-struct Recovered_FUN_10e1fba0 { undefined4 * FUN_10e1fba0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10e24ac0 { undefined4 * FUN_10e24ac0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10e2b550 { void FUN_10e2b550(int param_2); };
-struct Recovered_FUN_10e30510 { SCStr * FUN_10e30510(SCStr *param_2); };
-struct Recovered_FUN_10e30780 { SCStr * FUN_10e30780(SCStr *param_2); };
-struct Recovered_FUN_10e307b0 { SCStr * FUN_10e307b0(SCStr *param_2); };
-struct Recovered_FUN_10e3f100 { undefined4 * FUN_10e3f100(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10e3f180 { undefined4 * FUN_10e3f180(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10e4e5e0 { undefined4 * FUN_10e4e5e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10e58bb0 { void FUN_10e58bb0(int param_2); };
-struct Recovered_FUN_10e591f0 { undefined4 * FUN_10e591f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10e5f7a0 { SCStr * FUN_10e5f7a0(SCStr *param_2); };
-struct Recovered_FUN_10e72c70 { undefined4 * FUN_10e72c70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10e72cf0 { undefined4 * FUN_10e72cf0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10e7de90 { undefined4 * FUN_10e7de90(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10e86840 { undefined4 * FUN_10e86840(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10e9aa20 { void FUN_10e9aa20(int param_2,short param_3); };
-struct Recovered_FUN_10e9b010 { void FUN_10e9b010(int param_2,undefined4 param_3); };
-struct Recovered_FUN_10e9c4f0 { void FUN_10e9c4f0(int param_2,short param_3); };
-struct Recovered_FUN_10ea2900 { undefined4 * FUN_10ea2900(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ea2980 { undefined4 * FUN_10ea2980(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ea2a20 { undefined4 * FUN_10ea2a20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ea2c70 { undefined4 * FUN_10ea2c70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ea2d10 { undefined4 * FUN_10ea2d10(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ea6b90 { void FUN_10ea6b90(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ea6c60 { void FUN_10ea6c60(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ea6d40 { void FUN_10ea6d40(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10eab7c0 { SCStr * FUN_10eab7c0(SCStr *param_2); };
-struct Recovered_FUN_10ead200 { undefined4 * FUN_10ead200(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ead280 { undefined4 * FUN_10ead280(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ec2b30 { SCStr * FUN_10ec2b30(SCStr *param_2); };
-struct Recovered_FUN_10ed0ef0 { SCStr * FUN_10ed0ef0(SCStr *param_2); };
-struct Recovered_FUN_10ee0c10 { undefined4 * FUN_10ee0c10(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ee1790 { undefined4 * FUN_10ee1790(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ee8760 { undefined4 * FUN_10ee8760(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10eed620 { undefined4 * FUN_10eed620(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ef2b60 { undefined4 * FUN_10ef2b60(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ef2be0 { void FUN_10ef2be0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ef3150 { SCStr * FUN_10ef3150(SCStr *param_2); };
-struct Recovered_FUN_10ef3170 { SCStr * FUN_10ef3170(SCStr *param_2); };
-struct Recovered_FUN_10ef3190 { SCStr * FUN_10ef3190(SCStr *param_2); };
-struct Recovered_FUN_10efb170 { SCStr * FUN_10efb170(SCStr *param_2,int param_3); };
-struct Recovered_FUN_10effb70 { SCStr * FUN_10effb70(SCStr *param_2,char param_3); };
-struct Recovered_FUN_10f04d30 { undefined4 * FUN_10f04d30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f11bf0 { SCStr * FUN_10f11bf0(SCStr *param_2); };
-struct Recovered_FUN_10f11c30 { SCStr * FUN_10f11c30(SCStr *param_2); };
-struct Recovered_FUN_10f11ff0 { SCStr * FUN_10f11ff0(SCStr *param_2); };
-struct Recovered_FUN_10f12030 { SCStr * FUN_10f12030(SCStr *param_2); };
-struct Recovered_FUN_10f13cb0 { undefined4 * FUN_10f13cb0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f13d30 { undefined4 * FUN_10f13d30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f13db0 { undefined4 * FUN_10f13db0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f13f00 { void FUN_10f13f00(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f13f60 { void FUN_10f13f60(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f13fc0 { void FUN_10f13fc0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f1cb00 { SCStr * FUN_10f1cb00(SCStr *param_2); };
-struct Recovered_FUN_10f228d0 { undefined4 * FUN_10f228d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f2aa90 { bool FUN_10f2aa90(SCStr *param_2); };
-struct Recovered_FUN_10f2bf40 { undefined4 * FUN_10f2bf40(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f2cdb0 { void FUN_10f2cdb0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f36120 { undefined4 * FUN_10f36120(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f361a0 { undefined4 * FUN_10f361a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f36220 { undefined4 * FUN_10f36220(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f362a0 { undefined4 * FUN_10f362a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f36320 { void FUN_10f36320(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f36380 { void FUN_10f36380(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f363e0 { void FUN_10f363e0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f36440 { void FUN_10f36440(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f3ee80 { undefined4 * FUN_10f3ee80(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f3ef00 { undefined4 * FUN_10f3ef00(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f42e50 { undefined4 * FUN_10f42e50(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f47070 { void FUN_10f47070(SCStr *param_2,SCStr *param_3,uint param_4); };
-struct Recovered_FUN_10f478b0 { undefined4 * FUN_10f478b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f47a50 { undefined4 * FUN_10f47a50(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f48ce0 { undefined4 * FUN_10f48ce0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f4c9c0 { undefined4 * FUN_10f4c9c0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f4cb60 { undefined4 * FUN_10f4cb60(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f51510 { undefined4 * FUN_10f51510(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f515b0 { undefined4 * FUN_10f515b0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f61600 { SCStr * FUN_10f61600(SCStr *param_2); };
-struct Recovered_FUN_10f620f0 { undefined4 * FUN_10f620f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f62170 { undefined4 * FUN_10f62170(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f621f0 { undefined4 * FUN_10f621f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f62270 { undefined4 * FUN_10f62270(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f622f0 { undefined4 * FUN_10f622f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f62370 { undefined4 * FUN_10f62370(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f623f0 { undefined4 * FUN_10f623f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f62470 { undefined4 * FUN_10f62470(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f62fc0 { void FUN_10f62fc0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f63020 { void FUN_10f63020(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f63080 { void FUN_10f63080(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f630e0 { void FUN_10f630e0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f63e00 { void FUN_10f63e00(SCStr *param_2,undefined1 param_3); };
-struct Recovered_FUN_10f678f0 { undefined4 * FUN_10f678f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f67970 { undefined4 * FUN_10f67970(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f679f0 { undefined4 * FUN_10f679f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f68560 { void FUN_10f68560(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f69070 { void FUN_10f69070(SCStr *param_2,undefined4 param_3); };
-struct Recovered_FUN_10f73640 { undefined4 * FUN_10f73640(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f73730 { void FUN_10f73730(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f79110 { SCStr * FUN_10f79110(SCStr *param_2); };
-struct Recovered_FUN_10f79860 { SCStr * FUN_10f79860(SCStr *param_2); };
-struct Recovered_FUN_10f7a100 { undefined4 * FUN_10f7a100(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f7a180 { undefined4 * FUN_10f7a180(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f7a5b0 { void FUN_10f7a5b0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f80cd0 { undefined4 * FUN_10f80cd0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f80d50 { undefined4 * FUN_10f80d50(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f80dd0 { void FUN_10f80dd0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f80e30 { void FUN_10f80e30(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f8e410 { undefined4 * FUN_10f8e410(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f8e490 { undefined4 * FUN_10f8e490(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f8e510 { undefined4 * FUN_10f8e510(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f8e590 { void FUN_10f8e590(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f8e5f0 { void FUN_10f8e5f0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10f8e650 { void FUN_10f8e650(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10fa36e0 { undefined4 * FUN_10fa36e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10fa9e20 { undefined4 * FUN_10fa9e20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10fbcea0 { undefined4 * FUN_10fbcea0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10fc95e0 { undefined4 * FUN_10fc95e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10fcb7d0 { SCStr * FUN_10fcb7d0(SCStr *param_2); };
-struct Recovered_FUN_10fcbb30 { void FUN_10fcbb30(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_10fcf470 { undefined4 * FUN_10fcf470(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10fcf4f0 { undefined4 * FUN_10fcf4f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10fd25c0 { undefined4 * FUN_10fd25c0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10fe3570 { undefined4 * FUN_10fe3570(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10fe35f0 { undefined4 * FUN_10fe35f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10fe3670 { undefined4 * FUN_10fe3670(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10fe5880 { undefined4 * FUN_10fe5880(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10fe6da0 { undefined4 * FUN_10fe6da0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10fe6e20 { undefined4 * FUN_10fe6e20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10fe8550 { undefined4 * FUN_10fe8550(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10fe85d0 { undefined4 * FUN_10fe85d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10fe8650 { undefined4 * FUN_10fe8650(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10fe86d0 { undefined4 * FUN_10fe86d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ff0de0 { void FUN_10ff0de0(int param_2,SCStr *param_3); };
-struct Recovered_FUN_10ff0e60 { void FUN_10ff0e60(int param_2,SCStr *param_3); };
-struct Recovered_FUN_10ff20b0 { SCStr * FUN_10ff20b0(SCStr *param_2); };
-struct Recovered_FUN_10ff2b20 { SCStr * FUN_10ff2b20(SCStr *param_2); };
-struct Recovered_FUN_10ff84d0 { undefined4 * FUN_10ff84d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ff8550 { undefined4 * FUN_10ff8550(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ff85e0 { undefined4 * FUN_10ff85e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ff86c0 { undefined4 * FUN_10ff86c0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ffbb30 { undefined4 * FUN_10ffbb30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_10ffcdc0 { SCStr * FUN_10ffcdc0(SCStr *param_2); };
-struct Recovered_FUN_10ffce10 { SCStr * FUN_10ffce10(SCStr *param_2); };
-struct Recovered_FUN_10ffd0d0 { undefined4 * FUN_10ffd0d0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_11002fc0 { undefined4 * FUN_11002fc0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_11003050 { undefined4 * FUN_11003050(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_11018160 { SCStr * FUN_11018160(SCStr *param_2); };
-struct Recovered_FUN_110183f0 { undefined4 * FUN_110183f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_11018540 { void FUN_11018540(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_11019480 { undefined4 * FUN_11019480(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1101bd70 { undefined4 * FUN_1101bd70(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1101bf10 { undefined4 * FUN_1101bf10(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1101e290 { undefined4 * FUN_1101e290(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_11020f20 { undefined4 * FUN_11020f20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_11022410 { undefined4 * FUN_11022410(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1102db80 { undefined4 * FUN_1102db80(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1102dc00 { undefined4 * FUN_1102dc00(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1102dda0 { undefined4 * FUN_1102dda0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1102de20 { undefined4 * FUN_1102de20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1102dea0 { undefined4 * FUN_1102dea0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1102df20 { undefined4 * FUN_1102df20(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1102e370 { void FUN_1102e370(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_11030e00 { SCStr * FUN_11030e00(SCStr *param_2); };
-struct Recovered_FUN_11032f80 { undefined4 * FUN_11032f80(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_110334f0 { undefined4 * FUN_110334f0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_11034ef0 { undefined4 * FUN_11034ef0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_11037810 { undefined4 * FUN_11037810(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_11037890 { undefined4 * FUN_11037890(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_11037910 { undefined4 * FUN_11037910(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_11037990 { undefined4 * FUN_11037990(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_11037a30 { undefined4 * FUN_11037a30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_11037ab0 { undefined4 * FUN_11037ab0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_1105d8e0 { undefined4 * FUN_1105d8e0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_11060b80 { undefined4 * FUN_11060b80(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_11060d30 { undefined4 * FUN_11060d30(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_11060e80 { void FUN_11060e80(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_11061fc0 { undefined4 * FUN_11061fc0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_11062110 { void FUN_11062110(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_11062f50 { undefined4 * FUN_11062f50(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_110630a0 { void FUN_110630a0(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_11065cb0 { undefined4 * FUN_11065cb0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_11065d30 { void FUN_11065d30(SCStr *param_2,SCStr *param_3); };
-struct Recovered_FUN_11067290 { undefined4 * FUN_11067290(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_11067e10 { SCStr * FUN_11067e10(SCStr *param_2); };
-struct Recovered_FUN_11068020 { undefined4 * FUN_11068020(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_110680a0 { undefined4 * FUN_110680a0(undefined4 *param_2,SCStr *param_3); };
-struct Recovered_FUN_110681f0 { void FUN_110681f0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10001401 { undefined4 * FUN_10001401(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10001b09 { undefined4 * FUN_10001b09(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10001bbd { undefined4 * FUN_10001bbd(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10001c67 { void FUN_10001c67(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10001e10 { undefined4 * FUN_10001e10(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10001e3d { undefined4 * FUN_10001e3d(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_100021e4 { undefined4 * FUN_100021e4(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_100027b6 { undefined4 * FUN_100027b6(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1000281f { undefined4 * FUN_1000281f(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10002b30 { undefined4 * FUN_10002b30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10003265 { void FUN_10003265(SCStr *param_2,SCStr *param_3); };
+struct Recovered_100035d0 { undefined4 * FUN_100035d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10003634 { undefined4 * FUN_10003634(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10003648 { undefined4 * FUN_10003648(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10003a67 { void FUN_10003a67(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10003a6c { undefined4 * FUN_10003a6c(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10117000 { void FUN_10117000(int *param_2,SCStr *param_3,uint param_4); };
+struct Recovered_1011a2f0 { SCStr * FUN_1011a2f0(char *param_2); };
+struct Recovered_1011a310 { SCStr * FUN_1011a310(char *param_2,uint param_3); };
+struct Recovered_10124510 { SCStr * FUN_10124510(SCStr *param_2); };
+struct Recovered_10124550 { SCStr * FUN_10124550(SCStr *param_2); };
+struct Recovered_10124590 { SCStr * FUN_10124590(SCStr *param_2); };
+struct Recovered_10124b10 { SCStr * FUN_10124b10(SCStr *param_2); };
+struct Recovered_10124b40 { int FUN_10124b40(int param_2); };
+struct Recovered_10124e10 { bool FUN_10124e10(SCStr *param_2); };
+struct Recovered_10124e50 { bool FUN_10124e50(char *param_2); };
+struct Recovered_1012d2e0 { uint FUN_1012d2e0(SCStr *param_2); };
+struct Recovered_1013b6b0 { undefined4 * FUN_1013b6b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013b730 { undefined4 * FUN_1013b730(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013b7b0 { undefined4 * FUN_1013b7b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013b830 { undefined4 * FUN_1013b830(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013b8b0 { undefined4 * FUN_1013b8b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013b930 { undefined4 * FUN_1013b930(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013b9b0 { undefined4 * FUN_1013b9b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013ba30 { undefined4 * FUN_1013ba30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013bab0 { undefined4 * FUN_1013bab0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013bb30 { undefined4 * FUN_1013bb30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013bbb0 { undefined4 * FUN_1013bbb0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013bc30 { undefined4 * FUN_1013bc30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013bcb0 { undefined4 * FUN_1013bcb0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013bd30 { undefined4 * FUN_1013bd30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013bdb0 { undefined4 * FUN_1013bdb0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013be30 { undefined4 * FUN_1013be30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013beb0 { undefined4 * FUN_1013beb0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013bf30 { undefined4 * FUN_1013bf30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013bfb0 { undefined4 * FUN_1013bfb0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013c030 { undefined4 * FUN_1013c030(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013c0b0 { undefined4 * FUN_1013c0b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013c130 { undefined4 * FUN_1013c130(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013c1b0 { undefined4 * FUN_1013c1b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013c230 { undefined4 * FUN_1013c230(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013c2b0 { undefined4 * FUN_1013c2b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013c330 { undefined4 * FUN_1013c330(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013c3b0 { undefined4 * FUN_1013c3b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013c430 { undefined4 * FUN_1013c430(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013c4b0 { undefined4 * FUN_1013c4b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013c530 { undefined4 * FUN_1013c530(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013c5b0 { undefined4 * FUN_1013c5b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013c630 { undefined4 * FUN_1013c630(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013c6b0 { undefined4 * FUN_1013c6b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013c730 { undefined4 * FUN_1013c730(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013c7b0 { undefined4 * FUN_1013c7b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013c830 { undefined4 * FUN_1013c830(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013c8b0 { undefined4 * FUN_1013c8b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013c930 { undefined4 * FUN_1013c930(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013c9b0 { undefined4 * FUN_1013c9b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013ca30 { undefined4 * FUN_1013ca30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013cab0 { undefined4 * FUN_1013cab0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013cb30 { undefined4 * FUN_1013cb30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013cbb0 { undefined4 * FUN_1013cbb0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013cc30 { undefined4 * FUN_1013cc30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013ccb0 { undefined4 * FUN_1013ccb0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013cd30 { undefined4 * FUN_1013cd30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013cdb0 { undefined4 * FUN_1013cdb0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013ce30 { undefined4 * FUN_1013ce30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013ceb0 { undefined4 * FUN_1013ceb0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013cf30 { undefined4 * FUN_1013cf30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013cfb0 { undefined4 * FUN_1013cfb0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d030 { undefined4 * FUN_1013d030(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d0b0 { undefined4 * FUN_1013d0b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d120 { undefined4 * FUN_1013d120(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d190 { undefined4 * FUN_1013d190(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d200 { undefined4 * FUN_1013d200(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d270 { undefined4 * FUN_1013d270(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d2e0 { undefined4 * FUN_1013d2e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d350 { undefined4 * FUN_1013d350(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d3c0 { undefined4 * FUN_1013d3c0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d430 { undefined4 * FUN_1013d430(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d4a0 { undefined4 * FUN_1013d4a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d510 { undefined4 * FUN_1013d510(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d580 { undefined4 * FUN_1013d580(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d5f0 { undefined4 * FUN_1013d5f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d660 { undefined4 * FUN_1013d660(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d6d0 { undefined4 * FUN_1013d6d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d740 { undefined4 * FUN_1013d740(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d7b0 { undefined4 * FUN_1013d7b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d820 { undefined4 * FUN_1013d820(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d890 { undefined4 * FUN_1013d890(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d900 { undefined4 * FUN_1013d900(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d970 { undefined4 * FUN_1013d970(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013d9e0 { undefined4 * FUN_1013d9e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013da50 { undefined4 * FUN_1013da50(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013dac0 { undefined4 * FUN_1013dac0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013db30 { undefined4 * FUN_1013db30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013dba0 { undefined4 * FUN_1013dba0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013dc10 { undefined4 * FUN_1013dc10(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013dc80 { undefined4 * FUN_1013dc80(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013dcf0 { undefined4 * FUN_1013dcf0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013dd60 { undefined4 * FUN_1013dd60(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013ddd0 { undefined4 * FUN_1013ddd0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013de40 { undefined4 * FUN_1013de40(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013deb0 { undefined4 * FUN_1013deb0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013df20 { undefined4 * FUN_1013df20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013df90 { undefined4 * FUN_1013df90(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013e000 { undefined4 * FUN_1013e000(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013e070 { undefined4 * FUN_1013e070(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013e0e0 { undefined4 * FUN_1013e0e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013e150 { undefined4 * FUN_1013e150(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013e1c0 { undefined4 * FUN_1013e1c0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013e230 { undefined4 * FUN_1013e230(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013e2a0 { undefined4 * FUN_1013e2a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013e310 { undefined4 * FUN_1013e310(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013e380 { undefined4 * FUN_1013e380(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013e3f0 { undefined4 * FUN_1013e3f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013e460 { undefined4 * FUN_1013e460(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013e4d0 { undefined4 * FUN_1013e4d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013e540 { undefined4 * FUN_1013e540(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013e6d0 { undefined4 * FUN_1013e6d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013e740 { undefined4 * FUN_1013e740(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013e7b0 { undefined4 * FUN_1013e7b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1013e820 { undefined4 * FUN_1013e820(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10144830 { SCStr * FUN_10144830(char *param_2,uint param_3); };
+struct Recovered_10145180 { SCStr * FUN_10145180(char *param_2); };
+struct Recovered_101aa190 { undefined4 * FUN_101aa190(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101aa210 { undefined4 * FUN_101aa210(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101b49f0 { void FUN_101b49f0(undefined4 param_2,SCStr *param_3); };
+struct Recovered_101b68f0 { undefined4 * FUN_101b68f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101b6970 { undefined4 * FUN_101b6970(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101b69f0 { undefined4 * FUN_101b69f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101b8e70 { undefined4 * FUN_101b8e70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101bb010 { void FUN_101bb010(undefined4 param_2,SCStr *param_3); };
+struct Recovered_101bbef0 { undefined4 * FUN_101bbef0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101bbf70 { undefined4 * FUN_101bbf70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101bbff0 { undefined4 * FUN_101bbff0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101bc380 { void FUN_101bc380(SCStr *param_2,SCStr *param_3); };
+struct Recovered_101bef80 { undefined4 * FUN_101bef80(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101cb1b0 { undefined4 * FUN_101cb1b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101cb230 { undefined4 * FUN_101cb230(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101cb2b0 { undefined4 * FUN_101cb2b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101cb330 { undefined4 * FUN_101cb330(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101d40d0 { int FUN_101d40d0(int param_2); };
+struct Recovered_101d8de0 { void FUN_101d8de0(undefined4 param_2,SCStr *param_3); };
+struct Recovered_101dd540 { undefined4 * FUN_101dd540(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101dd6e0 { undefined4 * FUN_101dd6e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101dd760 { undefined4 * FUN_101dd760(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101dd7e0 { undefined4 * FUN_101dd7e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101dd860 { undefined4 * FUN_101dd860(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101dd900 { undefined4 * FUN_101dd900(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101dd980 { undefined4 * FUN_101dd980(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101dda00 { undefined4 * FUN_101dda00(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101ddbf0 { undefined4 * FUN_101ddbf0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101f2130 { undefined4 * FUN_101f2130(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101f21b0 { undefined4 * FUN_101f21b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101f2230 { undefined4 * FUN_101f2230(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101f22b0 { undefined4 * FUN_101f22b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101f2ea0 { void FUN_101f2ea0(undefined1 param_2); };
+struct Recovered_101f3310 { void FUN_101f3310(int param_2); };
+struct Recovered_101f84c0 { undefined4 * FUN_101f84c0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101fb690 { undefined4 * FUN_101fb690(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_101fb710 { undefined4 * FUN_101fb710(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1020a260 { void FUN_1020a260(undefined4 param_2,SCStr *param_3); };
+struct Recovered_1020a2b0 { void FUN_1020a2b0(undefined4 param_2,SCStr *param_3); };
+struct Recovered_1020a5b0 { void FUN_1020a5b0(undefined4 param_2); };
+struct Recovered_1020f4f0 { int * FUN_1020f4f0(int *param_2,uint param_3); };
+struct Recovered_1021f010 { undefined4 * FUN_1021f010(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1021f0b0 { undefined4 * FUN_1021f0b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1021f180 { undefined4 * FUN_1021f180(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1021f270 { int * FUN_1021f270(int *param_2,SCStr *param_3); };
+struct Recovered_1021f3a0 { undefined4 * FUN_1021f3a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1021f420 { undefined4 * FUN_1021f420(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1021f4f0 { undefined4 * FUN_1021f4f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1021f570 { undefined4 * FUN_1021f570(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1021f610 { undefined4 * FUN_1021f610(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10222470 { undefined4 * FUN_10222470(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102224f0 { undefined4 * FUN_102224f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102316a0 { SCStr * FUN_102316a0(SCStr *param_2); };
+struct Recovered_102316e0 { SCStr * FUN_102316e0(SCStr *param_2); };
+struct Recovered_102317a0 { SCStr * FUN_102317a0(SCStr *param_2); };
+struct Recovered_10231810 { SCStr * FUN_10231810(SCStr *param_2); };
+struct Recovered_102361a0 { void FUN_102361a0(undefined4 param_2,SCStr *param_3); };
+struct Recovered_10236240 { void FUN_10236240(undefined4 param_2,SCStr *param_3); };
+struct Recovered_10236310 { void FUN_10236310(undefined4 param_2,SCStr *param_3); };
+struct Recovered_102363b0 { void FUN_102363b0(undefined4 param_2,SCStr *param_3); };
+struct Recovered_1023a7d0 { SCStr * FUN_1023a7d0(SCStr *param_2); };
+struct Recovered_102437a0 { undefined4 * FUN_102437a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10243820 { undefined4 * FUN_10243820(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102438a0 { undefined4 * FUN_102438a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10243920 { undefined4 * FUN_10243920(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102439a0 { undefined4 * FUN_102439a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10243a20 { undefined4 * FUN_10243a20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10243aa0 { undefined4 * FUN_10243aa0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10243b20 { undefined4 * FUN_10243b20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10248870 { SCStr * FUN_10248870(SCStr *param_2); };
+struct Recovered_10249970 { undefined4 * FUN_10249970(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1024afd0 { undefined4 * FUN_1024afd0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1024e050 { undefined4 * FUN_1024e050(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10250180 { void FUN_10250180(undefined4 param_2,SCStr *param_3); };
+struct Recovered_10252c00 { undefined4 * FUN_10252c00(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10252c80 { undefined4 * FUN_10252c80(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10252d00 { undefined4 * FUN_10252d00(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1025cc20 { undefined4 * FUN_1025cc20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1025cca0 { undefined4 * FUN_1025cca0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1025cd20 { undefined4 * FUN_1025cd20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1025cda0 { undefined4 * FUN_1025cda0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1025ce20 { undefined4 * FUN_1025ce20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1025db40 { SCStr * FUN_1025db40(SCStr *param_2); };
+struct Recovered_1025db80 { SCStr * FUN_1025db80(SCStr *param_2); };
+struct Recovered_1025dbc0 { SCStr * FUN_1025dbc0(SCStr *param_2); };
+struct Recovered_1025dc00 { SCStr * FUN_1025dc00(SCStr *param_2); };
+struct Recovered_1025df70 { undefined4 * FUN_1025df70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1025e6a0 { undefined4 * FUN_1025e6a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10262310 { undefined4 * FUN_10262310(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10262390 { undefined4 * FUN_10262390(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10262440 { undefined4 * FUN_10262440(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102624f0 { undefined4 * FUN_102624f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1026cd00 { undefined4 * FUN_1026cd00(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1026cd80 { undefined4 * FUN_1026cd80(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1026ce00 { undefined4 * FUN_1026ce00(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1026ce80 { undefined4 * FUN_1026ce80(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1026e060 { undefined4 * FUN_1026e060(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10271800 { undefined4 * FUN_10271800(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10271880 { undefined4 * FUN_10271880(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102796e0 { undefined4 * FUN_102796e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10279760 { undefined4 * FUN_10279760(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10282d90 { undefined4 * FUN_10282d90(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10282e10 { undefined4 * FUN_10282e10(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10282e90 { undefined4 * FUN_10282e90(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1028a680 { undefined4 * FUN_1028a680(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1028c9f0 { void FUN_1028c9f0(int *param_2,SCStr *param_3); };
+struct Recovered_102922f0 { SCStr * FUN_102922f0(SCStr *param_2); };
+struct Recovered_102935e0 { undefined4 * FUN_102935e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10293660 { undefined4 * FUN_10293660(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1029c270 { undefined4 * FUN_1029c270(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1029c2f0 { undefined4 * FUN_1029c2f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1029c370 { undefined4 * FUN_1029c370(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1029c3f0 { undefined4 * FUN_1029c3f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1029c470 { undefined4 * FUN_1029c470(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1029c4f0 { undefined4 * FUN_1029c4f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1029c570 { undefined4 * FUN_1029c570(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1029c800 { void FUN_1029c800(SCStr *param_2,SCStr *param_3); };
+struct Recovered_1029db20 { undefined4 * FUN_1029db20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1029e800 { undefined4 * FUN_1029e800(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102a1640 { undefined4 * FUN_102a1640(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102aa8a0 { int FUN_102aa8a0(int param_2); };
+struct Recovered_102b8960 { undefined4 * FUN_102b8960(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102b89e0 { undefined4 * FUN_102b89e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102b8a60 { undefined4 * FUN_102b8a60(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102b8b30 { undefined4 * FUN_102b8b30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102b8bb0 { undefined4 * FUN_102b8bb0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102b8c30 { undefined4 * FUN_102b8c30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102b8cb0 { undefined4 * FUN_102b8cb0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102c0020 { undefined4 * FUN_102c0020(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102c09e0 { undefined4 * FUN_102c09e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102c2140 { undefined4 * FUN_102c2140(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102c21c0 { undefined4 * FUN_102c21c0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102c6e60 { void FUN_102c6e60(undefined4 param_2,SCStr *param_3); };
+struct Recovered_102c75d0 { SCStr * FUN_102c75d0(SCStr *param_2); };
+struct Recovered_102c9950 { undefined4 * FUN_102c9950(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102c99d0 { undefined4 * FUN_102c99d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102c9bf0 { undefined4 * FUN_102c9bf0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102c9c70 { undefined4 * FUN_102c9c70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102c9d40 { undefined4 * FUN_102c9d40(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102d1830 { undefined4 * FUN_102d1830(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102d4990 { void FUN_102d4990(undefined4 param_2,SCStr *param_3); };
+struct Recovered_102d7230 { undefined4 * FUN_102d7230(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102d72b0 { undefined4 * FUN_102d72b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102db880 { undefined4 * FUN_102db880(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102de670 { void FUN_102de670(char *param_2,undefined4 param_3); };
+struct Recovered_102de7c0 { undefined4 * FUN_102de7c0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102e4cd0 { undefined4 * FUN_102e4cd0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102f70f0 { SCStr * FUN_102f70f0(SCStr *param_2); };
+struct Recovered_102f7470 { SCStr * FUN_102f7470(SCStr *param_2); };
+struct Recovered_102fe600 { undefined4 * FUN_102fe600(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102fe680 { undefined4 * FUN_102fe680(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102fe750 { undefined4 * FUN_102fe750(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102fe7d0 { undefined4 * FUN_102fe7d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_102fe850 { undefined4 * FUN_102fe850(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10302f10 { undefined4 * FUN_10302f10(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10320820 { SCStr * FUN_10320820(SCStr *param_2); };
+struct Recovered_103208b0 { SCStr * FUN_103208b0(SCStr *param_2); };
+struct Recovered_10320a30 { SCStr * FUN_10320a30(SCStr *param_2); };
+struct Recovered_10320aa0 { SCStr * FUN_10320aa0(SCStr *param_2); };
+struct Recovered_10322fe0 { SCStr * FUN_10322fe0(SCStr *param_2); };
+struct Recovered_10323df0 { SCStr * FUN_10323df0(SCStr *param_2); };
+struct Recovered_103296b0 { undefined4 * FUN_103296b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10329730 { undefined4 * FUN_10329730(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103297b0 { undefined4 * FUN_103297b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10329830 { undefined4 * FUN_10329830(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103298b0 { undefined4 * FUN_103298b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10329df0 { undefined4 * FUN_10329df0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10329e70 { undefined4 * FUN_10329e70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10329ef0 { undefined4 * FUN_10329ef0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10329f70 { undefined4 * FUN_10329f70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10329ff0 { undefined4 * FUN_10329ff0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1032a070 { undefined4 * FUN_1032a070(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1032a840 { void FUN_1032a840(SCStr *param_2,SCStr *param_3); };
+struct Recovered_1032a8a0 { void FUN_1032a8a0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_1032a900 { void FUN_1032a900(SCStr *param_2,SCStr *param_3); };
+struct Recovered_1032a960 { void FUN_1032a960(SCStr *param_2,SCStr *param_3); };
+struct Recovered_1032a9c0 { void FUN_1032a9c0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_1034ebe0 { undefined4 * FUN_1034ebe0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10376e70 { void FUN_10376e70(undefined4 param_2,SCStr *param_3); };
+struct Recovered_10376ed0 { void FUN_10376ed0(undefined4 param_2,SCStr *param_3); };
+struct Recovered_10376fa0 { void FUN_10376fa0(undefined4 param_2,SCStr *param_3); };
+struct Recovered_10377040 { void FUN_10377040(undefined4 param_2,SCStr *param_3); };
+struct Recovered_10377300 { void FUN_10377300(undefined4 param_2,SCStr *param_3); };
+struct Recovered_103773d0 { void FUN_103773d0(undefined4 param_2,SCStr *param_3); };
+struct Recovered_103909e0 { void FUN_103909e0(int param_2); };
+struct Recovered_10391190 { void FUN_10391190(int param_2); };
+struct Recovered_10391290 { void FUN_10391290(int param_2); };
+struct Recovered_10391350 { void FUN_10391350(int param_2); };
+struct Recovered_10391510 { void FUN_10391510(int param_2); };
+struct Recovered_10393c20 { undefined4 * FUN_10393c20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10393ca0 { undefined4 * FUN_10393ca0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10393d20 { undefined4 * FUN_10393d20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10393da0 { undefined4 * FUN_10393da0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10393e20 { undefined4 * FUN_10393e20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10393ea0 { undefined4 * FUN_10393ea0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10393f20 { undefined4 * FUN_10393f20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10394170 { undefined4 * FUN_10394170(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103941f0 { undefined4 * FUN_103941f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10394270 { undefined4 * FUN_10394270(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103942f0 { undefined4 * FUN_103942f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10394370 { undefined4 * FUN_10394370(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10394dc0 { void FUN_10394dc0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103a13d0 { undefined1 FUN_103a13d0(SCStr *param_2); };
+struct Recovered_103a1560 { SCStr * FUN_103a1560(SCStr *param_2); };
+struct Recovered_103a15c0 { SCStr * FUN_103a15c0(SCStr *param_2); };
+struct Recovered_103a15e0 { SCStr * FUN_103a15e0(SCStr *param_2); };
+struct Recovered_103a17e0 { undefined4 FUN_103a17e0(undefined4 param_2); };
+struct Recovered_103a1fb0 { SCStr * FUN_103a1fb0(SCStr *param_2); };
+struct Recovered_103a3530 { undefined4 * FUN_103a3530(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103a35b0 { undefined4 * FUN_103a35b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103a3630 { undefined4 * FUN_103a3630(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103a36b0 { undefined4 * FUN_103a36b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103a39e0 { undefined4 * FUN_103a39e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103a3d70 { void FUN_103a3d70(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103a3dd0 { void FUN_103a3dd0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103b6a40 { void FUN_103b6a40(undefined4 param_2,SCStr *param_3); };
+struct Recovered_103b8b80 { void FUN_103b8b80(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103b8c20 { void FUN_103b8c20(SCStr *param_2); };
+struct Recovered_103b9950 { void FUN_103b9950(SCStr *param_2,undefined4 *param_3); };
+struct Recovered_103bcf70 { undefined4 * FUN_103bcf70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103bd030 { undefined4 * FUN_103bd030(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103bd0b0 { undefined4 * FUN_103bd0b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103bd130 { undefined4 * FUN_103bd130(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103bd1f0 { undefined4 * FUN_103bd1f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103bd270 { undefined4 * FUN_103bd270(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103bf250 { undefined4 * FUN_103bf250(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103ca9d0 { undefined4 * FUN_103ca9d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103caa50 { undefined4 * FUN_103caa50(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103caad0 { undefined4 * FUN_103caad0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103cab50 { undefined4 * FUN_103cab50(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103cb7b0 { void FUN_103cb7b0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103cb810 { void FUN_103cb810(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103d0b10 { SCStr * FUN_103d0b10(SCStr *param_2); };
+struct Recovered_103d5e70 { undefined4 * FUN_103d5e70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103f1f80 { undefined4 * FUN_103f1f80(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103f2000 { undefined4 * FUN_103f2000(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103f2080 { undefined4 * FUN_103f2080(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103f2100 { undefined4 * FUN_103f2100(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103f2180 { undefined4 * FUN_103f2180(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103f2200 { undefined4 * FUN_103f2200(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103f2280 { undefined4 * FUN_103f2280(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103f2300 { undefined4 * FUN_103f2300(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103f2380 { undefined4 * FUN_103f2380(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103f2400 { undefined4 * FUN_103f2400(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103f2480 { undefined4 * FUN_103f2480(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103f2500 { undefined4 * FUN_103f2500(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103f2580 { undefined4 * FUN_103f2580(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103f2600 { undefined4 * FUN_103f2600(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103f2680 { undefined4 * FUN_103f2680(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103f2700 { undefined4 * FUN_103f2700(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103f2780 { undefined4 * FUN_103f2780(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103f2800 { undefined4 * FUN_103f2800(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_103f2950 { void FUN_103f2950(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103f29b0 { void FUN_103f29b0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103f2a10 { void FUN_103f2a10(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103f2a70 { void FUN_103f2a70(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103f2ad0 { void FUN_103f2ad0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103f2b30 { void FUN_103f2b30(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103f2b90 { void FUN_103f2b90(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103f2bf0 { void FUN_103f2bf0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103f2c50 { void FUN_103f2c50(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103f2cb0 { void FUN_103f2cb0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103f2d10 { void FUN_103f2d10(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103f2d70 { void FUN_103f2d70(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103f2dd0 { void FUN_103f2dd0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103f2e30 { void FUN_103f2e30(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103f2e90 { void FUN_103f2e90(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103f2ef0 { void FUN_103f2ef0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103f2f50 { void FUN_103f2f50(SCStr *param_2,SCStr *param_3); };
+struct Recovered_103ff080 { void FUN_103ff080(undefined4 param_2,SCStr *param_3); };
+struct Recovered_10401ad0 { undefined4 * FUN_10401ad0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10401b50 { undefined4 * FUN_10401b50(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10401bd0 { undefined4 * FUN_10401bd0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104043f0 { undefined4 * FUN_104043f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1040cc60 { undefined4 * FUN_1040cc60(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1040fdd0 { void FUN_1040fdd0(int *param_2,SCStr *param_3,uint param_4); };
+struct Recovered_104109b0 { void FUN_104109b0(int *param_2,SCStr *param_3); };
+struct Recovered_10412b50 { void FUN_10412b50(undefined4 param_2,undefined4 param_3); };
+struct Recovered_10413680 { uint FUN_10413680(SCStr *param_2); };
+struct Recovered_10414e10 { undefined4 * FUN_10414e10(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10414e90 { undefined4 * FUN_10414e90(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1041a680 { SCStr * FUN_1041a680(SCStr *param_2); };
+struct Recovered_1041ccb0 { undefined4 * FUN_1041ccb0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1041cd30 { undefined4 * FUN_1041cd30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104238d0 { undefined4 * FUN_104238d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10423950 { undefined4 * FUN_10423950(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10424ef0 { undefined4 * FUN_10424ef0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10430440 { undefined4 * FUN_10430440(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104304d0 { undefined4 * FUN_104304d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10430560 { undefined4 * FUN_10430560(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104305f0 { undefined4 * FUN_104305f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10430680 { undefined4 * FUN_10430680(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10430710 { undefined4 * FUN_10430710(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10438580 { undefined4 * FUN_10438580(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10438600 { undefined4 * FUN_10438600(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104395b0 { void FUN_104395b0(int param_2); };
+struct Recovered_10439640 { void FUN_10439640(int param_2); };
+struct Recovered_1043c920 { undefined4 * FUN_1043c920(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1043c9a0 { undefined4 * FUN_1043c9a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1043e380 { undefined4 * FUN_1043e380(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1043f690 { undefined4 * FUN_1043f690(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10440b30 { undefined4 * FUN_10440b30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10442180 { undefined4 * FUN_10442180(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1044a010 { undefined4 * FUN_1044a010(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1044e920 { undefined4 * FUN_1044e920(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1044e9a0 { undefined4 * FUN_1044e9a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10451510 { undefined4 * FUN_10451510(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10451590 { undefined4 * FUN_10451590(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104536f0 { undefined4 * FUN_104536f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10453e60 { undefined4 * FUN_10453e60(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10455200 { undefined4 * FUN_10455200(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1045b570 { undefined4 * FUN_1045b570(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1045b5f0 { undefined4 * FUN_1045b5f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1045d480 { undefined4 * FUN_1045d480(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1045ed20 { undefined4 * FUN_1045ed20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10460e70 { undefined4 * FUN_10460e70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10462f30 { void FUN_10462f30(int param_2,short param_3); };
+struct Recovered_10464f20 { undefined4 * FUN_10464f20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10464fb0 { undefined4 * FUN_10464fb0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10465da0 { undefined4 * FUN_10465da0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10468af0 { void FUN_10468af0(undefined4 param_2,SCStr *param_3); };
+struct Recovered_10469100 { undefined4 * FUN_10469100(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10469190 { undefined4 * FUN_10469190(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1046b800 { undefined4 * FUN_1046b800(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1046b890 { undefined4 * FUN_1046b890(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1046d9d0 { undefined4 * FUN_1046d9d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1046fa80 { undefined4 * FUN_1046fa80(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104715e0 { undefined4 * FUN_104715e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104743a0 { undefined4 * FUN_104743a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104789a0 { undefined4 * FUN_104789a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1047d530 { undefined4 * FUN_1047d530(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104966e0 { undefined4 * FUN_104966e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1049cc70 { undefined4 * FUN_1049cc70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1049ccf0 { undefined4 * FUN_1049ccf0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1049cd80 { undefined4 * FUN_1049cd80(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104a7160 { undefined4 * FUN_104a7160(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104a71f0 { undefined4 * FUN_104a71f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104a7280 { undefined4 * FUN_104a7280(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104a7310 { undefined4 * FUN_104a7310(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104a73a0 { undefined4 * FUN_104a73a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104a7430 { undefined4 * FUN_104a7430(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104a9100 { undefined4 * FUN_104a9100(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104aa000 { undefined4 * FUN_104aa000(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104aaf00 { undefined4 * FUN_104aaf00(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104b01d0 { undefined4 * FUN_104b01d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104b28b0 { undefined4 * FUN_104b28b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104b3a20 { undefined4 * FUN_104b3a20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104b4920 { undefined4 * FUN_104b4920(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104ba490 { undefined4 * FUN_104ba490(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104bcdd0 { undefined4 * FUN_104bcdd0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104bce60 { undefined4 * FUN_104bce60(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104c0b70 { undefined4 * FUN_104c0b70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104c8b70 { undefined4 * FUN_104c8b70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104c8c00 { undefined4 * FUN_104c8c00(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104cb060 { undefined4 * FUN_104cb060(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104d2b40 { SCStr * FUN_104d2b40(SCStr *param_2); };
+struct Recovered_104d2e10 { SCStr * FUN_104d2e10(SCStr *param_2); };
+struct Recovered_104d4470 { undefined4 * FUN_104d4470(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104d44f0 { undefined4 * FUN_104d44f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104d4570 { undefined4 * FUN_104d4570(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104d6440 { undefined4 * FUN_104d6440(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104d8330 { void FUN_104d8330(undefined4 param_2); };
+struct Recovered_104d8370 { void FUN_104d8370(undefined4 param_2); };
+struct Recovered_104d9880 { void FUN_104d9880(undefined4 param_2); };
+struct Recovered_104d9d90 { undefined4 * FUN_104d9d90(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104dce30 { void FUN_104dce30(undefined4 param_2,SCStr *param_3); };
+struct Recovered_104dd660 { undefined4 * FUN_104dd660(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104dd6e0 { undefined4 * FUN_104dd6e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104dd760 { undefined4 * FUN_104dd760(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104ecb10 { undefined4 * FUN_104ecb10(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104ecb90 { undefined4 * FUN_104ecb90(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104f8ba0 { void FUN_104f8ba0(int *param_2,SCStr *param_3,uint param_4); };
+struct Recovered_104fd890 { uint FUN_104fd890(SCStr *param_2); };
+struct Recovered_104ff770 { undefined4 * FUN_104ff770(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104ff7c0 { undefined4 * FUN_104ff7c0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_104ff840 { undefined4 * FUN_104ff840(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10505d30 { void FUN_10505d30(); };
+struct Recovered_10505d70 { void FUN_10505d70(); };
+struct Recovered_10507800 { SCStr * FUN_10507800(SCStr *param_2,undefined4 param_3); };
+struct Recovered_10507860 { SCStr * FUN_10507860(SCStr *param_2); };
+struct Recovered_1050aea0 { undefined4 * FUN_1050aea0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1050b3a0 { undefined4 * FUN_1050b3a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10513950 { SCStr * FUN_10513950(SCStr *param_2,undefined4 param_3); };
+struct Recovered_10513990 { SCStr * FUN_10513990(SCStr *param_2); };
+struct Recovered_10519b40 { undefined4 * FUN_10519b40(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10519bc0 { undefined4 * FUN_10519bc0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1051a0f0 { undefined4 * FUN_1051a0f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10524730 { undefined4 * FUN_10524730(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10532b90 { void FUN_10532b90(undefined4 param_2,SCStr *param_3); };
+struct Recovered_10541b60 { undefined4 FUN_10541b60(SCStr *param_2); };
+struct Recovered_10545310 { undefined4 * FUN_10545310(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10545430 { undefined4 * FUN_10545430(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_105454e0 { undefined4 * FUN_105454e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10545590 { undefined4 * FUN_10545590(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10545640 { undefined4 * FUN_10545640(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_105456c0 { undefined4 * FUN_105456c0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1054d4c0 { undefined4 * FUN_1054d4c0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10556c90 { undefined4 * FUN_10556c90(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10556d10 { undefined4 * FUN_10556d10(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10556d90 { undefined4 * FUN_10556d90(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10557330 { void FUN_10557330(SCStr *param_2,SCStr *param_3); };
+struct Recovered_1055fc90 { undefined4 * FUN_1055fc90(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10574790 { SCStr * FUN_10574790(SCStr *param_2); };
+struct Recovered_105747e0 { SCStr * FUN_105747e0(SCStr *param_2); };
+struct Recovered_105749b0 { SCStr * FUN_105749b0(SCStr *param_2); };
+struct Recovered_10578350 { undefined4 * FUN_10578350(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_105783d0 { undefined4 * FUN_105783d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10578470 { undefined4 * FUN_10578470(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_105788a0 { void FUN_105788a0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_105819b0 { SCStr * FUN_105819b0(SCStr *param_2); };
+struct Recovered_10585900 { undefined4 * FUN_10585900(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1058de30 { SCStr * FUN_1058de30(SCStr *param_2); };
+struct Recovered_1058de60 { SCStr * FUN_1058de60(SCStr *param_2); };
+struct Recovered_10591b40 { void FUN_10591b40(undefined4 param_2,SCStr *param_3); };
+struct Recovered_105922f0 { undefined4 * FUN_105922f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10592370 { undefined4 * FUN_10592370(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10592410 { undefined4 * FUN_10592410(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_105926d0 { void FUN_105926d0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10595830 { SCStr * FUN_10595830(SCStr *param_2); };
+struct Recovered_10598f50 { undefined4 * FUN_10598f50(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_105a2900 { SCStr * FUN_105a2900(SCStr *param_2); };
+struct Recovered_105b24a0 { void FUN_105b24a0(int param_2,SCStr *param_3); };
+struct Recovered_105b2bb0 { void FUN_105b2bb0(int *param_2,SCStr *param_3); };
+struct Recovered_105b5090 { undefined4 * FUN_105b5090(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_105b5110 { undefined4 * FUN_105b5110(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_105b7910 { void FUN_105b7910(int *param_2,SCStr *param_3); };
+struct Recovered_105befa0 { SCStr * FUN_105befa0(SCStr *param_2); };
+struct Recovered_105c0540 { undefined4 * FUN_105c0540(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_105c05c0 { undefined4 * FUN_105c05c0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_105c0640 { void FUN_105c0640(SCStr *param_2,SCStr *param_3); };
+struct Recovered_105de4d0 { uint FUN_105de4d0(SCStr *param_2); };
+struct Recovered_105e6890 { undefined4 * FUN_105e6890(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_105e6910 { undefined4 * FUN_105e6910(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_105e6990 { undefined4 * FUN_105e6990(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_105e6a10 { undefined4 * FUN_105e6a10(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_105e6a90 { undefined4 * FUN_105e6a90(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_105e6b10 { undefined4 * FUN_105e6b10(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_105e6b90 { undefined4 * FUN_105e6b90(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_105e6f00 { void FUN_105e6f00(SCStr *param_2,SCStr *param_3); };
+struct Recovered_106013f0 { SCStr * FUN_106013f0(SCStr *param_2); };
+struct Recovered_10601430 { SCStr * FUN_10601430(SCStr *param_2); };
+struct Recovered_1061dcf0 { undefined4 * FUN_1061dcf0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1067efd0 { undefined4 * FUN_1067efd0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10680550 { undefined4 * FUN_10680550(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_106877d0 { undefined4 * FUN_106877d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10687820 { undefined4 * FUN_10687820(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10687870 { undefined4 * FUN_10687870(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_106878f0 { undefined4 * FUN_106878f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1068b530 { undefined4 * FUN_1068b530(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1068b720 { undefined4 * FUN_1068b720(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1068b7a0 { undefined4 * FUN_1068b7a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1068b990 { void FUN_1068b990(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10696b60 { undefined4 * FUN_10696b60(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_106a00d0 { undefined4 * FUN_106a00d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_106a0150 { undefined4 * FUN_106a0150(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_106a01d0 { undefined4 * FUN_106a01d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_106a0250 { undefined4 * FUN_106a0250(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_106a02d0 { undefined4 * FUN_106a02d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_106a0350 { undefined4 * FUN_106a0350(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_106a1a50 { undefined4 FUN_106a1a50(int *param_2); };
+struct Recovered_106a1df0 { undefined4 * FUN_106a1df0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_106ab7b0 { void FUN_106ab7b0(int *param_2,SCStr *param_3,uint param_4); };
+struct Recovered_106af6d0 { void FUN_106af6d0(int *param_2,SCStr *param_3); };
+struct Recovered_106bd210 { uint FUN_106bd210(SCStr *param_2); };
+struct Recovered_106cc8e0 { undefined4 * FUN_106cc8e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_106cc960 { undefined4 * FUN_106cc960(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_106d0d60 { undefined4 * FUN_106d0d60(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_106d6d60 { undefined4 * FUN_106d6d60(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_106f6bf0 { undefined4 * FUN_106f6bf0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10708510 { undefined4 * FUN_10708510(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_107cb7f0 { undefined4 * FUN_107cb7f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10962990 { SCStr * FUN_10962990(SCStr *param_2); };
+struct Recovered_10a08110 { undefined4 * FUN_10a08110(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10a08190 { undefined4 * FUN_10a08190(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10a08210 { undefined4 * FUN_10a08210(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10a08290 { undefined4 * FUN_10a08290(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10a08310 { undefined4 * FUN_10a08310(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10a08390 { undefined4 * FUN_10a08390(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10a08410 { undefined4 * FUN_10a08410(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10a08490 { undefined4 * FUN_10a08490(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10a08910 { void FUN_10a08910(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10a08970 { void FUN_10a08970(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10a089d0 { void FUN_10a089d0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10a08a30 { void FUN_10a08a30(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10a7cb70 { undefined4 * FUN_10a7cb70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b6ff10 { SCStr * FUN_10b6ff10(SCStr *param_2); };
+struct Recovered_10b721d0 { undefined4 * FUN_10b721d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b72250 { undefined4 * FUN_10b72250(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b72810 { void FUN_10b72810(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10b7aaa0 { undefined4 * FUN_10b7aaa0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b7ab20 { undefined4 * FUN_10b7ab20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b80420 { SCStr * FUN_10b80420(SCStr *param_2); };
+struct Recovered_10b80510 { SCStr * FUN_10b80510(SCStr *param_2); };
+struct Recovered_10b81cb0 { SCStr * FUN_10b81cb0(SCStr *param_2); };
+struct Recovered_10b82e70 { undefined4 * FUN_10b82e70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b82ef0 { undefined4 * FUN_10b82ef0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b82f70 { undefined4 * FUN_10b82f70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b83350 { undefined4 * FUN_10b83350(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b83500 { undefined4 * FUN_10b83500(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b843b0 { void FUN_10b843b0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10b8d5b0 { undefined4 * FUN_10b8d5b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b8d630 { undefined4 * FUN_10b8d630(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b8d6b0 { undefined4 * FUN_10b8d6b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b8d730 { undefined4 * FUN_10b8d730(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b8d7b0 { undefined4 * FUN_10b8d7b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b8db70 { void FUN_10b8db70(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10b8dbd0 { void FUN_10b8dbd0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10b8dc30 { void FUN_10b8dc30(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10b8dc90 { void FUN_10b8dc90(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10b94ef0 { undefined4 * FUN_10b94ef0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b94f70 { undefined4 * FUN_10b94f70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b9e1f0 { void FUN_10b9e1f0(undefined4 param_2); };
+struct Recovered_10b9f670 { undefined4 * FUN_10b9f670(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b9f6f0 { undefined4 * FUN_10b9f6f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b9f770 { undefined4 * FUN_10b9f770(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b9f7f0 { undefined4 * FUN_10b9f7f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b9f870 { undefined4 * FUN_10b9f870(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10b9f8f0 { undefined4 * FUN_10b9f8f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ba1160 { void FUN_10ba1160(undefined4 param_2); };
+struct Recovered_10bb31d0 { undefined4 * FUN_10bb31d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10bb3250 { undefined4 * FUN_10bb3250(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10bbc630 { undefined4 * FUN_10bbc630(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10bbed40 { undefined4 * FUN_10bbed40(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10bbf370 { undefined4 * FUN_10bbf370(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10bc4d60 { undefined4 * FUN_10bc4d60(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10bc81e0 { SCStr * FUN_10bc81e0(SCStr *param_2); };
+struct Recovered_10bc90f0 { undefined4 * FUN_10bc90f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10bc9170 { undefined4 * FUN_10bc9170(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10bc91f0 { undefined4 * FUN_10bc91f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10bcb450 { undefined4 * FUN_10bcb450(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10bd77f0 { undefined1 * FUN_10bd77f0(undefined1 *param_2); };
+struct Recovered_10bedc30 { undefined4 * FUN_10bedc30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10bf1320 { undefined4 * FUN_10bf1320(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10bf13a0 { undefined4 * FUN_10bf13a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10bf1470 { undefined4 * FUN_10bf1470(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10bf2780 { undefined4 * FUN_10bf2780(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10bf3040 { undefined4 * FUN_10bf3040(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10bf3530 { undefined4 * FUN_10bf3530(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10bf92f0 { undefined4 * FUN_10bf92f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10bfdb00 { undefined4 * FUN_10bfdb00(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c00c70 { undefined4 * FUN_10c00c70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c00d10 { undefined4 * FUN_10c00d10(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c00d90 { undefined4 * FUN_10c00d90(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c00e10 { undefined4 * FUN_10c00e10(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c03950 { undefined4 * FUN_10c03950(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c039d0 { undefined4 * FUN_10c039d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c15630 { undefined4 * FUN_10c15630(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c20ab0 { void FUN_10c20ab0(undefined4 param_2); };
+struct Recovered_10c20b20 { undefined4 * FUN_10c20b20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c20c30 { undefined4 * FUN_10c20c30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c27280 { undefined4 * FUN_10c27280(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c2a670 { undefined4 * FUN_10c2a670(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c32770 { undefined4 * FUN_10c32770(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c38230 { undefined4 * FUN_10c38230(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c3b270 { undefined4 * FUN_10c3b270(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c3b7b0 { void FUN_10c3b7b0(SCStr *param_2,undefined4 param_3); };
+struct Recovered_10c3ba30 { void FUN_10c3ba30(SCStr *param_2,undefined4 param_3); };
+struct Recovered_10c478e0 { undefined4 * FUN_10c478e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c4cf90 { undefined4 * FUN_10c4cf90(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c4d010 { undefined4 * FUN_10c4d010(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c4d0f0 { void FUN_10c4d0f0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10c53000 { undefined4 * FUN_10c53000(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c531a0 { undefined4 * FUN_10c531a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c53220 { undefined4 * FUN_10c53220(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c532a0 { undefined4 * FUN_10c532a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c53320 { undefined4 * FUN_10c53320(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c533a0 { undefined4 * FUN_10c533a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c53550 { undefined4 * FUN_10c53550(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c535d0 { undefined4 * FUN_10c535d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c53650 { undefined4 * FUN_10c53650(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c536d0 { undefined4 * FUN_10c536d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c53750 { undefined4 * FUN_10c53750(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c53d50 { void FUN_10c53d50(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10c53db0 { void FUN_10c53db0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10c53e10 { void FUN_10c53e10(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10c53e70 { void FUN_10c53e70(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10c53ed0 { void FUN_10c53ed0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10c58260 { undefined4 * FUN_10c58260(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c58400 { undefined4 * FUN_10c58400(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c58480 { undefined4 * FUN_10c58480(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c58500 { undefined4 * FUN_10c58500(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c58580 { undefined4 * FUN_10c58580(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c58730 { undefined4 * FUN_10c58730(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c587b0 { undefined4 * FUN_10c587b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c58830 { undefined4 * FUN_10c58830(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c588b0 { undefined4 * FUN_10c588b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c58de0 { void FUN_10c58de0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10c58e40 { void FUN_10c58e40(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10c58ea0 { void FUN_10c58ea0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10c58f00 { void FUN_10c58f00(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10c5a900 { undefined4 * FUN_10c5a900(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c5aaa0 { undefined4 * FUN_10c5aaa0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c5ac50 { undefined4 * FUN_10c5ac50(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c5af10 { void FUN_10c5af10(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10c5bbb0 { void FUN_10c5bbb0(short param_2); };
+struct Recovered_10c5bbf0 { void FUN_10c5bbf0(short param_2); };
+struct Recovered_10c5c170 { void FUN_10c5c170(undefined4 param_2,SCStr *param_3); };
+struct Recovered_10c5c970 { void FUN_10c5c970(short param_2); };
+struct Recovered_10c5cb70 { void FUN_10c5cb70(short param_2); };
+struct Recovered_10c5cbd0 { void FUN_10c5cbd0(undefined1 param_2); };
+struct Recovered_10c5cc20 { void FUN_10c5cc20(short param_2); };
+struct Recovered_10c5cc70 { void FUN_10c5cc70(undefined1 param_2); };
+struct Recovered_10c5cd30 { undefined4 * FUN_10c5cd30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c5d000 { undefined4 * FUN_10c5d000(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c5d350 { void FUN_10c5d350(short param_2); };
+struct Recovered_10c5d720 { void FUN_10c5d720(undefined1 param_2); };
+struct Recovered_10c5d770 { void FUN_10c5d770(short param_2); };
+struct Recovered_10c5d7c0 { void FUN_10c5d7c0(undefined1 param_2); };
+struct Recovered_10c5d9e0 { void FUN_10c5d9e0(undefined1 param_2); };
+struct Recovered_10c5da30 { void FUN_10c5da30(short param_2); };
+struct Recovered_10c5da80 { void FUN_10c5da80(short param_2); };
+struct Recovered_10c5dac0 { void FUN_10c5dac0(short param_2); };
+struct Recovered_10c5db10 { void FUN_10c5db10(short param_2); };
+struct Recovered_10c5db60 { void FUN_10c5db60(undefined1 param_2); };
+struct Recovered_10c5dc20 { void FUN_10c5dc20(short param_2); };
+struct Recovered_10c67b50 { undefined4 * FUN_10c67b50(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c6c1c0 { undefined4 * FUN_10c6c1c0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c6e370 { undefined4 * FUN_10c6e370(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c6edd0 { undefined4 * FUN_10c6edd0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c7fb20 { undefined4 * FUN_10c7fb20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c83420 { undefined4 * FUN_10c83420(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c834a0 { undefined4 * FUN_10c834a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c83520 { void FUN_10c83520(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10c83580 { void FUN_10c83580(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10c845b0 { undefined4 * FUN_10c845b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c8d640 { SCStr * FUN_10c8d640(SCStr *param_2); };
+struct Recovered_10c92dc0 { undefined4 * FUN_10c92dc0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10c9bd90 { undefined4 * FUN_10c9bd90(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cb38c0 { undefined4 * FUN_10cb38c0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cbc5b0 { undefined4 * FUN_10cbc5b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cc0050 { undefined4 * FUN_10cc0050(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cc34d0 { undefined4 * FUN_10cc34d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cc3650 { void FUN_10cc3650(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10cd87f0 { undefined4 * FUN_10cd87f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cd8870 { undefined4 * FUN_10cd8870(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cd88f0 { undefined4 * FUN_10cd88f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cd8970 { undefined4 * FUN_10cd8970(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cd89f0 { undefined4 * FUN_10cd89f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cd8a70 { undefined4 * FUN_10cd8a70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cd8af0 { undefined4 * FUN_10cd8af0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cd8b70 { undefined4 * FUN_10cd8b70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cd8bf0 { undefined4 * FUN_10cd8bf0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cd8c70 { void FUN_10cd8c70(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10cd8cd0 { void FUN_10cd8cd0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10cd8d30 { void FUN_10cd8d30(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10cd8d90 { void FUN_10cd8d90(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10cd8df0 { void FUN_10cd8df0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10cd8e50 { void FUN_10cd8e50(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10cd8eb0 { void FUN_10cd8eb0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10cd8f10 { void FUN_10cd8f10(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10cd8f70 { void FUN_10cd8f70(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10cdea40 { undefined4 * FUN_10cdea40(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cdeac0 { undefined4 * FUN_10cdeac0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cdeb40 { undefined4 * FUN_10cdeb40(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cdebc0 { undefined4 * FUN_10cdebc0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cdec40 { undefined4 * FUN_10cdec40(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cdef40 { void FUN_10cdef40(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10cdefa0 { void FUN_10cdefa0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10ce0a20 { undefined4 * FUN_10ce0a20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ce1a40 { SCStr * FUN_10ce1a40(SCStr *param_2); };
+struct Recovered_10ce1e20 { undefined4 * FUN_10ce1e20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ce1ea0 { undefined4 * FUN_10ce1ea0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ce1f40 { undefined4 * FUN_10ce1f40(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ce2180 { void FUN_10ce2180(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10ce2a80 { undefined4 * FUN_10ce2a80(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ce4cb0 { undefined4 * FUN_10ce4cb0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ce5d10 { void FUN_10ce5d10(int *param_2,SCStr *param_3,uint param_4); };
+struct Recovered_10ce64d0 { void FUN_10ce64d0(int *param_2,SCStr *param_3); };
+struct Recovered_10ce9470 { uint FUN_10ce9470(SCStr *param_2); };
+struct Recovered_10cebbc0 { undefined4 * FUN_10cebbc0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cf0980 { undefined4 * FUN_10cf0980(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cf3680 { undefined4 * FUN_10cf3680(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cf3700 { undefined4 * FUN_10cf3700(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cf52a0 { undefined4 * FUN_10cf52a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cf6150 { SCStr * FUN_10cf6150(SCStr *param_2); };
+struct Recovered_10cf63d0 { undefined4 * FUN_10cf63d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cf6520 { void FUN_10cf6520(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10cf78e0 { void FUN_10cf78e0(undefined4 param_2,SCStr *param_3); };
+struct Recovered_10cf8c60 { undefined4 * FUN_10cf8c60(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cf8ce0 { undefined4 * FUN_10cf8ce0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cfb040 { undefined4 * FUN_10cfb040(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cfdde0 { undefined4 * FUN_10cfdde0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10cfdeb0 { undefined4 * FUN_10cfdeb0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d06d40 { undefined4 * FUN_10d06d40(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d06fa0 { undefined4 * FUN_10d06fa0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d07020 { undefined4 * FUN_10d07020(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d07520 { undefined4 * FUN_10d07520(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d102d0 { undefined4 * FUN_10d102d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d14dd0 { undefined4 * FUN_10d14dd0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d14e70 { undefined4 * FUN_10d14e70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d14f40 { undefined4 * FUN_10d14f40(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d16fb0 { void FUN_10d16fb0(int param_2,SCStr *param_3); };
+struct Recovered_10d176f0 { SCStr * FUN_10d176f0(SCStr *param_2); };
+struct Recovered_10d17ec0 { SCStr * FUN_10d17ec0(SCStr *param_2,int param_3); };
+struct Recovered_10d19410 { undefined4 * FUN_10d19410(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d1d4f0 { undefined4 * FUN_10d1d4f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d1d570 { undefined4 * FUN_10d1d570(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d1e560 { undefined4 * FUN_10d1e560(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d22340 { undefined4 * FUN_10d22340(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d223d0 { undefined4 * FUN_10d223d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d2b0f0 { undefined4 * FUN_10d2b0f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d2b170 { undefined4 * FUN_10d2b170(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d2b240 { undefined4 * FUN_10d2b240(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d2b2c0 { undefined4 * FUN_10d2b2c0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d2b340 { undefined4 * FUN_10d2b340(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d2b3c0 { undefined4 * FUN_10d2b3c0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d2b440 { undefined4 * FUN_10d2b440(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d35460 { void FUN_10d35460(undefined4 param_2,SCStr *param_3); };
+struct Recovered_10d39e40 { undefined4 * FUN_10d39e40(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d39ec0 { undefined4 * FUN_10d39ec0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d3c4f0 { SCStr * FUN_10d3c4f0(SCStr *param_2); };
+struct Recovered_10d3c540 { SCStr * FUN_10d3c540(SCStr *param_2); };
+struct Recovered_10d3c9f0 { undefined4 * FUN_10d3c9f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d3ca70 { undefined4 * FUN_10d3ca70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d3caf0 { undefined4 * FUN_10d3caf0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d3ee70 { void FUN_10d3ee70(undefined4 param_2,SCStr *param_3); };
+struct Recovered_10d41c80 { undefined4 * FUN_10d41c80(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d41d20 { undefined4 * FUN_10d41d20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d41da0 { undefined4 * FUN_10d41da0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d41e70 { undefined4 * FUN_10d41e70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d41f10 { undefined4 * FUN_10d41f10(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d44040 { void FUN_10d44040(undefined4 param_2,SCStr *param_3); };
+struct Recovered_10d440e0 { void FUN_10d440e0(undefined4 param_2,SCStr *param_3); };
+struct Recovered_10d49470 { undefined4 * FUN_10d49470(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d49540 { undefined4 * FUN_10d49540(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d49620 { undefined4 * FUN_10d49620(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d496f0 { undefined4 * FUN_10d496f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d497d0 { undefined4 * FUN_10d497d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d498a0 { undefined4 * FUN_10d498a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d51180 { undefined4 * FUN_10d51180(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d51220 { undefined4 * FUN_10d51220(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d540a0 { void FUN_10d540a0(undefined4 param_2,SCStr *param_3); };
+struct Recovered_10d54440 { void FUN_10d54440(undefined4 param_2,SCStr *param_3); };
+struct Recovered_10d58880 { undefined4 * FUN_10d58880(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d5a240 { SCStr * FUN_10d5a240(SCStr *param_2,undefined4 param_3,undefined4 param_4); };
+struct Recovered_10d5a340 { SCStr * FUN_10d5a340(SCStr *param_2,undefined4 param_3); };
+struct Recovered_10d5a3b0 { SCStr * FUN_10d5a3b0(SCStr *param_2); };
+struct Recovered_10d5a990 { undefined4 * FUN_10d5a990(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d5eec0 { void FUN_10d5eec0(int param_2); };
+struct Recovered_10d60300 { undefined4 * FUN_10d60300(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d63500 { undefined4 * FUN_10d63500(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d67340 { undefined4 * FUN_10d67340(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d67410 { undefined4 * FUN_10d67410(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d674e0 { undefined4 * FUN_10d674e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d675b0 { undefined4 * FUN_10d675b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d6d880 { SCStr * FUN_10d6d880(SCStr *param_2,int param_3,undefined4 param_4); };
+struct Recovered_10d71360 { undefined4 * FUN_10d71360(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d71470 { undefined4 * FUN_10d71470(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d71570 { undefined4 * FUN_10d71570(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d86dd0 { undefined4 * FUN_10d86dd0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d86e50 { undefined4 * FUN_10d86e50(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d86ed0 { undefined4 * FUN_10d86ed0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d86f50 { undefined4 * FUN_10d86f50(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d86fd0 { undefined4 * FUN_10d86fd0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d87230 { void FUN_10d87230(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10d87290 { void FUN_10d87290(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10d872f0 { void FUN_10d872f0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10d87350 { void FUN_10d87350(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10d88ea0 { void FUN_10d88ea0(undefined4 param_2,SCStr *param_3); };
+struct Recovered_10d89300 { undefined4 * FUN_10d89300(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d91bd0 { undefined4 * FUN_10d91bd0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d93ac0 { undefined4 * FUN_10d93ac0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d97210 { undefined4 * FUN_10d97210(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d9a400 { undefined4 * FUN_10d9a400(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d9a480 { undefined4 * FUN_10d9a480(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d9ded0 { undefined4 * FUN_10d9ded0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d9df50 { undefined4 * FUN_10d9df50(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10d9e0f0 { void FUN_10d9e0f0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10d9e640 { undefined4 * FUN_10d9e640(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10da2790 { void FUN_10da2790(undefined4 param_2,SCStr *param_3); };
+struct Recovered_10da33b0 { undefined4 * FUN_10da33b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10da3430 { undefined4 * FUN_10da3430(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10da53c0 { int FUN_10da53c0(int param_2); };
+struct Recovered_10da7540 { undefined4 * FUN_10da7540(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10da75c0 { undefined4 * FUN_10da75c0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10da7640 { undefined4 * FUN_10da7640(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10db8e40 { SCStr * FUN_10db8e40(SCStr *param_2); };
+struct Recovered_10dc5850 { SCStr * FUN_10dc5850(SCStr *param_2,uint param_3); };
+struct Recovered_10dc58b0 { SCStr * FUN_10dc58b0(SCStr *param_2,uint param_3); };
+struct Recovered_10dc76d0 { undefined4 * FUN_10dc76d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10dcef60 { undefined4 * FUN_10dcef60(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10dd5ba0 { undefined4 * FUN_10dd5ba0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10de28f0 { undefined4 * FUN_10de28f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10de4590 { undefined4 * FUN_10de4590(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10de8950 { undefined4 * FUN_10de8950(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10de89d0 { undefined4 * FUN_10de89d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10de8a50 { undefined4 * FUN_10de8a50(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10de8c30 { void FUN_10de8c30(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10def210 { SCStr * FUN_10def210(SCStr *param_2); };
+struct Recovered_10e06af0 { undefined4 * FUN_10e06af0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10e0ae60 { undefined4 * FUN_10e0ae60(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10e14320 { void FUN_10e14320(int param_2); };
+struct Recovered_10e1fba0 { undefined4 * FUN_10e1fba0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10e24ac0 { undefined4 * FUN_10e24ac0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10e2b550 { void FUN_10e2b550(int param_2); };
+struct Recovered_10e30510 { SCStr * FUN_10e30510(SCStr *param_2); };
+struct Recovered_10e30780 { SCStr * FUN_10e30780(SCStr *param_2); };
+struct Recovered_10e307b0 { SCStr * FUN_10e307b0(SCStr *param_2); };
+struct Recovered_10e3f100 { undefined4 * FUN_10e3f100(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10e3f180 { undefined4 * FUN_10e3f180(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10e4e5e0 { undefined4 * FUN_10e4e5e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10e58bb0 { void FUN_10e58bb0(int param_2); };
+struct Recovered_10e591f0 { undefined4 * FUN_10e591f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10e5f7a0 { SCStr * FUN_10e5f7a0(SCStr *param_2); };
+struct Recovered_10e72c70 { undefined4 * FUN_10e72c70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10e72cf0 { undefined4 * FUN_10e72cf0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10e7de90 { undefined4 * FUN_10e7de90(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10e86840 { undefined4 * FUN_10e86840(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10e9aa20 { void FUN_10e9aa20(int param_2,short param_3); };
+struct Recovered_10e9b010 { void FUN_10e9b010(int param_2,undefined4 param_3); };
+struct Recovered_10e9c4f0 { void FUN_10e9c4f0(int param_2,short param_3); };
+struct Recovered_10ea2900 { undefined4 * FUN_10ea2900(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ea2980 { undefined4 * FUN_10ea2980(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ea2a20 { undefined4 * FUN_10ea2a20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ea2c70 { undefined4 * FUN_10ea2c70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ea2d10 { undefined4 * FUN_10ea2d10(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ea6b90 { void FUN_10ea6b90(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10ea6c60 { void FUN_10ea6c60(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10ea6d40 { void FUN_10ea6d40(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10eab7c0 { SCStr * FUN_10eab7c0(SCStr *param_2); };
+struct Recovered_10ead200 { undefined4 * FUN_10ead200(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ead280 { undefined4 * FUN_10ead280(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ec2b30 { SCStr * FUN_10ec2b30(SCStr *param_2); };
+struct Recovered_10ed0ef0 { SCStr * FUN_10ed0ef0(SCStr *param_2); };
+struct Recovered_10ee0c10 { undefined4 * FUN_10ee0c10(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ee1790 { undefined4 * FUN_10ee1790(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ee8760 { undefined4 * FUN_10ee8760(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10eed620 { undefined4 * FUN_10eed620(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ef2b60 { undefined4 * FUN_10ef2b60(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ef2be0 { void FUN_10ef2be0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10ef3150 { SCStr * FUN_10ef3150(SCStr *param_2); };
+struct Recovered_10ef3170 { SCStr * FUN_10ef3170(SCStr *param_2); };
+struct Recovered_10ef3190 { SCStr * FUN_10ef3190(SCStr *param_2); };
+struct Recovered_10efb170 { SCStr * FUN_10efb170(SCStr *param_2,int param_3); };
+struct Recovered_10effb70 { SCStr * FUN_10effb70(SCStr *param_2,char param_3); };
+struct Recovered_10f04d30 { undefined4 * FUN_10f04d30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f11bf0 { SCStr * FUN_10f11bf0(SCStr *param_2); };
+struct Recovered_10f11c30 { SCStr * FUN_10f11c30(SCStr *param_2); };
+struct Recovered_10f11ff0 { SCStr * FUN_10f11ff0(SCStr *param_2); };
+struct Recovered_10f12030 { SCStr * FUN_10f12030(SCStr *param_2); };
+struct Recovered_10f13cb0 { undefined4 * FUN_10f13cb0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f13d30 { undefined4 * FUN_10f13d30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f13db0 { undefined4 * FUN_10f13db0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f13f00 { void FUN_10f13f00(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10f13f60 { void FUN_10f13f60(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10f13fc0 { void FUN_10f13fc0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10f1cb00 { SCStr * FUN_10f1cb00(SCStr *param_2); };
+struct Recovered_10f228d0 { undefined4 * FUN_10f228d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f2aa90 { bool FUN_10f2aa90(SCStr *param_2); };
+struct Recovered_10f2bf40 { undefined4 * FUN_10f2bf40(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f2cdb0 { void FUN_10f2cdb0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10f36120 { undefined4 * FUN_10f36120(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f361a0 { undefined4 * FUN_10f361a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f36220 { undefined4 * FUN_10f36220(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f362a0 { undefined4 * FUN_10f362a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f36320 { void FUN_10f36320(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10f36380 { void FUN_10f36380(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10f363e0 { void FUN_10f363e0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10f36440 { void FUN_10f36440(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10f3ee80 { undefined4 * FUN_10f3ee80(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f3ef00 { undefined4 * FUN_10f3ef00(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f42e50 { undefined4 * FUN_10f42e50(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f47070 { void FUN_10f47070(SCStr *param_2,SCStr *param_3,uint param_4); };
+struct Recovered_10f478b0 { undefined4 * FUN_10f478b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f47a50 { undefined4 * FUN_10f47a50(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f48ce0 { undefined4 * FUN_10f48ce0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f4c9c0 { undefined4 * FUN_10f4c9c0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f4cb60 { undefined4 * FUN_10f4cb60(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f51510 { undefined4 * FUN_10f51510(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f515b0 { undefined4 * FUN_10f515b0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f61600 { SCStr * FUN_10f61600(SCStr *param_2); };
+struct Recovered_10f620f0 { undefined4 * FUN_10f620f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f62170 { undefined4 * FUN_10f62170(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f621f0 { undefined4 * FUN_10f621f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f62270 { undefined4 * FUN_10f62270(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f622f0 { undefined4 * FUN_10f622f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f62370 { undefined4 * FUN_10f62370(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f623f0 { undefined4 * FUN_10f623f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f62470 { undefined4 * FUN_10f62470(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f62fc0 { void FUN_10f62fc0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10f63020 { void FUN_10f63020(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10f63080 { void FUN_10f63080(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10f630e0 { void FUN_10f630e0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10f63e00 { void FUN_10f63e00(SCStr *param_2,undefined1 param_3); };
+struct Recovered_10f678f0 { undefined4 * FUN_10f678f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f67970 { undefined4 * FUN_10f67970(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f679f0 { undefined4 * FUN_10f679f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f68560 { void FUN_10f68560(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10f69070 { void FUN_10f69070(SCStr *param_2,undefined4 param_3); };
+struct Recovered_10f73640 { undefined4 * FUN_10f73640(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f73730 { void FUN_10f73730(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10f79110 { SCStr * FUN_10f79110(SCStr *param_2); };
+struct Recovered_10f79860 { SCStr * FUN_10f79860(SCStr *param_2); };
+struct Recovered_10f7a100 { undefined4 * FUN_10f7a100(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f7a180 { undefined4 * FUN_10f7a180(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f7a5b0 { void FUN_10f7a5b0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10f80cd0 { undefined4 * FUN_10f80cd0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f80d50 { undefined4 * FUN_10f80d50(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f80dd0 { void FUN_10f80dd0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10f80e30 { void FUN_10f80e30(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10f8e410 { undefined4 * FUN_10f8e410(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f8e490 { undefined4 * FUN_10f8e490(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f8e510 { undefined4 * FUN_10f8e510(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10f8e590 { void FUN_10f8e590(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10f8e5f0 { void FUN_10f8e5f0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10f8e650 { void FUN_10f8e650(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10fa36e0 { undefined4 * FUN_10fa36e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10fa9e20 { undefined4 * FUN_10fa9e20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10fbcea0 { undefined4 * FUN_10fbcea0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10fc95e0 { undefined4 * FUN_10fc95e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10fcb7d0 { SCStr * FUN_10fcb7d0(SCStr *param_2); };
+struct Recovered_10fcbb30 { void FUN_10fcbb30(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10fcf470 { undefined4 * FUN_10fcf470(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10fcf4f0 { undefined4 * FUN_10fcf4f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10fd25c0 { undefined4 * FUN_10fd25c0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10fe3570 { undefined4 * FUN_10fe3570(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10fe35f0 { undefined4 * FUN_10fe35f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10fe3670 { undefined4 * FUN_10fe3670(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10fe5880 { undefined4 * FUN_10fe5880(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10fe6da0 { undefined4 * FUN_10fe6da0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10fe6e20 { undefined4 * FUN_10fe6e20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10fe8550 { undefined4 * FUN_10fe8550(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10fe85d0 { undefined4 * FUN_10fe85d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10fe8650 { undefined4 * FUN_10fe8650(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10fe86d0 { undefined4 * FUN_10fe86d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ff0de0 { void FUN_10ff0de0(int param_2,SCStr *param_3); };
+struct Recovered_10ff0e60 { void FUN_10ff0e60(int param_2,SCStr *param_3); };
+struct Recovered_10ff20b0 { SCStr * FUN_10ff20b0(SCStr *param_2); };
+struct Recovered_10ff2b20 { SCStr * FUN_10ff2b20(SCStr *param_2); };
+struct Recovered_10ff84d0 { undefined4 * FUN_10ff84d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ff8550 { undefined4 * FUN_10ff8550(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ff85e0 { undefined4 * FUN_10ff85e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ff86c0 { undefined4 * FUN_10ff86c0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ffbb30 { undefined4 * FUN_10ffbb30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_10ffcdc0 { SCStr * FUN_10ffcdc0(SCStr *param_2); };
+struct Recovered_10ffce10 { SCStr * FUN_10ffce10(SCStr *param_2); };
+struct Recovered_10ffd0d0 { undefined4 * FUN_10ffd0d0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_11002fc0 { undefined4 * FUN_11002fc0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_11003050 { undefined4 * FUN_11003050(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_11018160 { SCStr * FUN_11018160(SCStr *param_2); };
+struct Recovered_110183f0 { undefined4 * FUN_110183f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_11018540 { void FUN_11018540(SCStr *param_2,SCStr *param_3); };
+struct Recovered_11019480 { undefined4 * FUN_11019480(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1101bd70 { undefined4 * FUN_1101bd70(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1101bf10 { undefined4 * FUN_1101bf10(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1101e290 { undefined4 * FUN_1101e290(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_11020f20 { undefined4 * FUN_11020f20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_11022410 { undefined4 * FUN_11022410(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1102db80 { undefined4 * FUN_1102db80(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1102dc00 { undefined4 * FUN_1102dc00(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1102dda0 { undefined4 * FUN_1102dda0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1102de20 { undefined4 * FUN_1102de20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1102dea0 { undefined4 * FUN_1102dea0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1102df20 { undefined4 * FUN_1102df20(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1102e370 { void FUN_1102e370(SCStr *param_2,SCStr *param_3); };
+struct Recovered_11030e00 { SCStr * FUN_11030e00(SCStr *param_2); };
+struct Recovered_11032f80 { undefined4 * FUN_11032f80(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_110334f0 { undefined4 * FUN_110334f0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_11034ef0 { undefined4 * FUN_11034ef0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_11037810 { undefined4 * FUN_11037810(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_11037890 { undefined4 * FUN_11037890(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_11037910 { undefined4 * FUN_11037910(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_11037990 { undefined4 * FUN_11037990(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_11037a30 { undefined4 * FUN_11037a30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_11037ab0 { undefined4 * FUN_11037ab0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1105d8e0 { undefined4 * FUN_1105d8e0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_11060b80 { undefined4 * FUN_11060b80(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_11060d30 { undefined4 * FUN_11060d30(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_11060e80 { void FUN_11060e80(SCStr *param_2,SCStr *param_3); };
+struct Recovered_11061fc0 { undefined4 * FUN_11061fc0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_11062110 { void FUN_11062110(SCStr *param_2,SCStr *param_3); };
+struct Recovered_11062f50 { undefined4 * FUN_11062f50(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_110630a0 { void FUN_110630a0(SCStr *param_2,SCStr *param_3); };
+struct Recovered_11065cb0 { undefined4 * FUN_11065cb0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_11065d30 { void FUN_11065d30(SCStr *param_2,SCStr *param_3); };
+struct Recovered_11067290 { undefined4 * FUN_11067290(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_11067e10 { SCStr * FUN_11067e10(SCStr *param_2); };
+struct Recovered_11068020 { undefined4 * FUN_11068020(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_110680a0 { undefined4 * FUN_110680a0(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_110681f0 { void FUN_110681f0(SCStr *param_2,SCStr *param_3); };
 // Reference entry 10001014; body size 5 bytes.
 #line 1 "ENTRY_10001014"
 
@@ -1363,9 +1379,10 @@ SCStr * thunk_FUN_10d62130(SCStr *param_1)
 // Reference entry 10001401; body size 5 bytes.
 #line 1 "ENTRY_10001401"
 
-undefined4 * __thiscall thunk_FUN_10262390(int *param_1,undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10001401::FUN_10001401(undefined4 *param_2,SCStr *param_3)
 
 {
+  int * param_1 = (int *)this;
   bool bVar1;
   
   bVar1 = (param_3)->operator==("SCIStringInput");
@@ -1504,9 +1521,10 @@ void __fastcall thunk_FUN_10fddaf0(int param_1)
 // Reference entry 10001b09; body size 5 bytes.
 #line 1 "ENTRY_10001b09"
 
-undefined4 * __thiscall thunk_FUN_103f2300(int *param_1,undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10001b09::FUN_10001b09(undefined4 *param_2,SCStr *param_3)
 
 {
+  int * param_1 = (int *)this;
   bool bVar1;
   
   bVar1 = (param_3)->operator==("SCIOp");
@@ -1535,9 +1553,10 @@ undefined4 * __thiscall thunk_FUN_103f2300(int *param_1,undefined4 *param_2,SCSt
 // Reference entry 10001bbd; body size 5 bytes.
 #line 1 "ENTRY_10001bbd"
 
-undefined4 * __thiscall thunk_FUN_1013c4b0(int *param_1,undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10001bbd::FUN_10001bbd(undefined4 *param_2,SCStr *param_3)
 
 {
+  int * param_1 = (int *)this;
   bool bVar1;
   
   bVar1 = (param_3)->operator==("SCIMdnsDelegate");
@@ -1577,9 +1596,10 @@ SCStr * thunk_FUN_105bee40(SCStr *param_1)
 // Reference entry 10001c67; body size 5 bytes.
 #line 1 "ENTRY_10001c67"
 
-void __thiscall thunk_FUN_10c5af10(int param_1,SCStr *param_2,SCStr *param_3)
+void Recovered_10001c67::FUN_10001c67(SCStr *param_2,SCStr *param_3)
 
 {
+  int param_1 = (int)this;
   SCStr *pSVar1;
   
   pSVar1 = (SCStr *)(param_1 + 0x28);
@@ -1601,9 +1621,10 @@ void __thiscall thunk_FUN_10c5af10(int param_1,SCStr *param_2,SCStr *param_3)
 // Reference entry 10001e10; body size 5 bytes.
 #line 1 "ENTRY_10001e10"
 
-undefined4 * __thiscall thunk_FUN_10b9f7f0(int *param_1,undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10001e10::FUN_10001e10(undefined4 *param_2,SCStr *param_3)
 
 {
+  int * param_1 = (int *)this;
   bool bVar1;
   
   bVar1 = (param_3)->operator==("SCIUrlSessionCallback");
@@ -1632,9 +1653,10 @@ undefined4 * __thiscall thunk_FUN_10b9f7f0(int *param_1,undefined4 *param_2,SCSt
 // Reference entry 10001e3d; body size 5 bytes.
 #line 1 "ENTRY_10001e3d"
 
-undefined4 * __thiscall thunk_FUN_105e6a90(int *param_1,undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10001e3d::FUN_10001e3d(undefined4 *param_2,SCStr *param_3)
 
 {
+  int * param_1 = (int *)this;
   bool bVar1;
   
   bVar1 = (param_3)->operator==("SCIOpRenderingControlSetRoomCalibrationStatus");
@@ -1674,9 +1696,10 @@ SCStr * thunk_FUN_10e69be0(SCStr *param_1)
 // Reference entry 100021e4; body size 5 bytes.
 #line 1 "ENTRY_100021e4"
 
-undefined4 * __thiscall thunk_FUN_102439a0(int *param_1,undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_100021e4::FUN_100021e4(undefined4 *param_2,SCStr *param_3)
 
 {
+  int * param_1 = (int *)this;
   bool bVar1;
   
   bVar1 = (param_3)->operator==("SCIController");
@@ -1727,9 +1750,10 @@ SCStr * thunk_FUN_10d83a80(SCStr *param_1)
 // Reference entry 100027b6; body size 5 bytes.
 #line 1 "ENTRY_100027b6"
 
-undefined4 * __thiscall thunk_FUN_10d67340(int *param_1,undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_100027b6::FUN_100027b6(undefined4 *param_2,SCStr *param_3)
 
 {
+  int * param_1 = (int *)this;
   bool bVar1;
   int *piVar2;
   
@@ -1770,9 +1794,10 @@ undefined4 * __thiscall thunk_FUN_10d67340(int *param_1,undefined4 *param_2,SCSt
 // Reference entry 1000281f; body size 5 bytes.
 #line 1 "ENTRY_1000281f"
 
-undefined4 * __thiscall thunk_FUN_102d7230(int *param_1,undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1000281f::FUN_1000281f(undefined4 *param_2,SCStr *param_3)
 
 {
+  int * param_1 = (int *)this;
   bool bVar1;
   
   bVar1 = (param_3)->operator==("SCIEventSink");
@@ -1867,9 +1892,10 @@ SCStr * thunk_FUN_10ce2940(SCStr *param_1)
 // Reference entry 10002b30; body size 5 bytes.
 #line 1 "ENTRY_10002b30"
 
-undefined4 * __thiscall thunk_FUN_10f678f0(int *param_1,undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10002b30::FUN_10002b30(undefined4 *param_2,SCStr *param_3)
 
 {
+  int * param_1 = (int *)this;
   bool bVar1;
   
   bVar1 = (param_3)->operator==("SCIOpContentDirectoryGetAlbumArtistDisplayOption");
@@ -1920,9 +1946,10 @@ SCStr * thunk_FUN_10db1ea0(SCStr *param_1)
 // Reference entry 10003265; body size 5 bytes.
 #line 1 "ENTRY_10003265"
 
-void __thiscall thunk_FUN_110630a0(int param_1,SCStr *param_2,SCStr *param_3)
+void Recovered_10003265::FUN_10003265(SCStr *param_2,SCStr *param_3)
 
 {
+  int param_1 = (int)this;
   SCStr *pSVar1;
   
   pSVar1 = (SCStr *)(param_1 + 0x28);
@@ -1955,9 +1982,10 @@ SCStr * thunk_FUN_10fc5d20(SCStr *param_1)
 // Reference entry 100035d0; body size 5 bytes.
 #line 1 "ENTRY_100035d0"
 
-undefined4 * __thiscall thunk_FUN_10ea2980(int *param_1,undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_100035d0::FUN_100035d0(undefined4 *param_2,SCStr *param_3)
 
 {
+  int * param_1 = (int *)this;
   bool bVar1;
   
   bVar1 = (param_3)->operator==("SCISettingsProperty");
@@ -1986,9 +2014,10 @@ undefined4 * __thiscall thunk_FUN_10ea2980(int *param_1,undefined4 *param_2,SCSt
 // Reference entry 10003634; body size 5 bytes.
 #line 1 "ENTRY_10003634"
 
-undefined4 * __thiscall thunk_FUN_1013cfb0(int *param_1,undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10003634::FUN_10003634(undefined4 *param_2,SCStr *param_3)
 
 {
+  int * param_1 = (int *)this;
   bool bVar1;
   
   bVar1 = (param_3)->operator==("SCIWebsocketDelegate");
@@ -2017,9 +2046,10 @@ undefined4 * __thiscall thunk_FUN_1013cfb0(int *param_1,undefined4 *param_2,SCSt
 // Reference entry 10003648; body size 5 bytes.
 #line 1 "ENTRY_10003648"
 
-undefined4 * __thiscall thunk_FUN_10ff84d0(int *param_1,undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10003648::FUN_10003648(undefined4 *param_2,SCStr *param_3)
 
 {
+  int * param_1 = (int *)this;
   bool bVar1;
   
   bVar1 = (param_3)->operator==("SCIEventSink");
@@ -2075,9 +2105,10 @@ void thunk_FUN_10cdffe0(undefined4 param_1,SCStr *param_2)
 // Reference entry 10003a67; body size 5 bytes.
 #line 1 "ENTRY_10003a67"
 
-void __thiscall thunk_FUN_103f29b0(int param_1,SCStr *param_2,SCStr *param_3)
+void Recovered_10003a67::FUN_10003a67(SCStr *param_2,SCStr *param_3)
 
 {
+  int param_1 = (int)this;
   SCStr *pSVar1;
   
   pSVar1 = (SCStr *)(param_1 + 0x28);
@@ -2099,9 +2130,10 @@ void __thiscall thunk_FUN_103f29b0(int param_1,SCStr *param_2,SCStr *param_3)
 // Reference entry 10003a6c; body size 5 bytes.
 #line 1 "ENTRY_10003a6c"
 
-undefined4 * __thiscall thunk_FUN_103bd0b0(int *param_1,undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10003a6c::FUN_10003a6c(undefined4 *param_2,SCStr *param_3)
 
 {
+  int * param_1 = (int *)this;
   bool bVar1;
   
   bVar1 = (param_3)->operator==("SCIEventSink");
@@ -2130,7 +2162,7 @@ undefined4 * __thiscall thunk_FUN_103bd0b0(int *param_1,undefined4 *param_2,SCSt
 // Reference entry 10117000; body size 124 bytes.
 #line 1 "ENTRY_10117000"
 
-void Recovered_FUN_10117000::FUN_10117000(int *param_2,SCStr *param_3,uint param_4)
+void Recovered_10117000::FUN_10117000(int *param_2,SCStr *param_3,uint param_4)
 
 {
   int param_1 = (int)this;
@@ -2168,7 +2200,7 @@ void Recovered_FUN_10117000::FUN_10117000(int *param_2,SCStr *param_3,uint param
 // Reference entry 1011a2f0; body size 18 bytes.
 #line 1 "ENTRY_1011a2f0"
 
-SCStr * Recovered_FUN_1011a2f0::FUN_1011a2f0(char *param_2)
+SCStr * Recovered_1011a2f0::FUN_1011a2f0(char *param_2)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -2180,7 +2212,7 @@ SCStr * Recovered_FUN_1011a2f0::FUN_1011a2f0(char *param_2)
 // Reference entry 1011a310; body size 22 bytes.
 #line 1 "ENTRY_1011a310"
 
-SCStr * Recovered_FUN_1011a310::FUN_1011a310(char *param_2,uint param_3)
+SCStr * Recovered_1011a310::FUN_1011a310(char *param_2,uint param_3)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -2192,7 +2224,7 @@ SCStr * Recovered_FUN_1011a310::FUN_1011a310(char *param_2,uint param_3)
 // Reference entry 10124510; body size 41 bytes.
 #line 1 "ENTRY_10124510"
 
-SCStr * Recovered_FUN_10124510::FUN_10124510(SCStr *param_2)
+SCStr * Recovered_10124510::FUN_10124510(SCStr *param_2)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -2209,7 +2241,7 @@ SCStr * Recovered_FUN_10124510::FUN_10124510(SCStr *param_2)
 // Reference entry 10124550; body size 41 bytes.
 #line 1 "ENTRY_10124550"
 
-SCStr * Recovered_FUN_10124550::FUN_10124550(SCStr *param_2)
+SCStr * Recovered_10124550::FUN_10124550(SCStr *param_2)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -2226,7 +2258,7 @@ SCStr * Recovered_FUN_10124550::FUN_10124550(SCStr *param_2)
 // Reference entry 10124590; body size 1116 bytes.
 #line 1 "ENTRY_10124590"
 
-SCStr * Recovered_FUN_10124590::FUN_10124590(SCStr *param_2)
+SCStr * Recovered_10124590::FUN_10124590(SCStr *param_2)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -2440,7 +2472,7 @@ SCStr * Recovered_FUN_10124590::FUN_10124590(SCStr *param_2)
 // Reference entry 10124b10; body size 35 bytes.
 #line 1 "ENTRY_10124b10"
 
-SCStr * Recovered_FUN_10124b10::FUN_10124b10(SCStr *param_2)
+SCStr * Recovered_10124b10::FUN_10124b10(SCStr *param_2)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -2456,7 +2488,7 @@ SCStr * Recovered_FUN_10124b10::FUN_10124b10(SCStr *param_2)
 // Reference entry 10124b40; body size 248 bytes.
 #line 1 "ENTRY_10124b40"
 
-int Recovered_FUN_10124b40::FUN_10124b40(int param_2)
+int Recovered_10124b40::FUN_10124b40(int param_2)
 
 {
   int param_1 = (int)this;
@@ -2523,7 +2555,7 @@ int Recovered_FUN_10124b40::FUN_10124b40(int param_2)
 // Reference entry 10124e10; body size 17 bytes.
 #line 1 "ENTRY_10124e10"
 
-bool Recovered_FUN_10124e10::FUN_10124e10(SCStr *param_2)
+bool Recovered_10124e10::FUN_10124e10(SCStr *param_2)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -2537,7 +2569,7 @@ bool Recovered_FUN_10124e10::FUN_10124e10(SCStr *param_2)
 // Reference entry 10124e50; body size 17 bytes.
 #line 1 "ENTRY_10124e50"
 
-bool Recovered_FUN_10124e50::FUN_10124e50(char *param_2)
+bool Recovered_10124e50::FUN_10124e50(char *param_2)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -2551,7 +2583,7 @@ bool Recovered_FUN_10124e50::FUN_10124e50(char *param_2)
 // Reference entry 1012d2e0; body size 19 bytes.
 #line 1 "ENTRY_1012d2e0"
 
-uint Recovered_FUN_1012d2e0::FUN_1012d2e0(SCStr *param_2)
+uint Recovered_1012d2e0::FUN_1012d2e0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -2590,7 +2622,7 @@ void __fastcall FUN_101314e0(SCStr *param_1)
 // Reference entry 1013b6b0; body size 103 bytes.
 #line 1 "ENTRY_1013b6b0"
 
-undefined4 * Recovered_FUN_1013b6b0::FUN_1013b6b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013b6b0::FUN_1013b6b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -2622,7 +2654,7 @@ undefined4 * Recovered_FUN_1013b6b0::FUN_1013b6b0(undefined4 *param_2,SCStr *par
 // Reference entry 1013b730; body size 103 bytes.
 #line 1 "ENTRY_1013b730"
 
-undefined4 * Recovered_FUN_1013b730::FUN_1013b730(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013b730::FUN_1013b730(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -2654,7 +2686,7 @@ undefined4 * Recovered_FUN_1013b730::FUN_1013b730(undefined4 *param_2,SCStr *par
 // Reference entry 1013b7b0; body size 103 bytes.
 #line 1 "ENTRY_1013b7b0"
 
-undefined4 * Recovered_FUN_1013b7b0::FUN_1013b7b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013b7b0::FUN_1013b7b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -2686,7 +2718,7 @@ undefined4 * Recovered_FUN_1013b7b0::FUN_1013b7b0(undefined4 *param_2,SCStr *par
 // Reference entry 1013b830; body size 103 bytes.
 #line 1 "ENTRY_1013b830"
 
-undefined4 * Recovered_FUN_1013b830::FUN_1013b830(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013b830::FUN_1013b830(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -2718,7 +2750,7 @@ undefined4 * Recovered_FUN_1013b830::FUN_1013b830(undefined4 *param_2,SCStr *par
 // Reference entry 1013b8b0; body size 103 bytes.
 #line 1 "ENTRY_1013b8b0"
 
-undefined4 * Recovered_FUN_1013b8b0::FUN_1013b8b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013b8b0::FUN_1013b8b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -2750,7 +2782,7 @@ undefined4 * Recovered_FUN_1013b8b0::FUN_1013b8b0(undefined4 *param_2,SCStr *par
 // Reference entry 1013b930; body size 103 bytes.
 #line 1 "ENTRY_1013b930"
 
-undefined4 * Recovered_FUN_1013b930::FUN_1013b930(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013b930::FUN_1013b930(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -2782,7 +2814,7 @@ undefined4 * Recovered_FUN_1013b930::FUN_1013b930(undefined4 *param_2,SCStr *par
 // Reference entry 1013b9b0; body size 103 bytes.
 #line 1 "ENTRY_1013b9b0"
 
-undefined4 * Recovered_FUN_1013b9b0::FUN_1013b9b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013b9b0::FUN_1013b9b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -2814,7 +2846,7 @@ undefined4 * Recovered_FUN_1013b9b0::FUN_1013b9b0(undefined4 *param_2,SCStr *par
 // Reference entry 1013ba30; body size 103 bytes.
 #line 1 "ENTRY_1013ba30"
 
-undefined4 * Recovered_FUN_1013ba30::FUN_1013ba30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013ba30::FUN_1013ba30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -2846,7 +2878,7 @@ undefined4 * Recovered_FUN_1013ba30::FUN_1013ba30(undefined4 *param_2,SCStr *par
 // Reference entry 1013bab0; body size 103 bytes.
 #line 1 "ENTRY_1013bab0"
 
-undefined4 * Recovered_FUN_1013bab0::FUN_1013bab0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013bab0::FUN_1013bab0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -2878,7 +2910,7 @@ undefined4 * Recovered_FUN_1013bab0::FUN_1013bab0(undefined4 *param_2,SCStr *par
 // Reference entry 1013bb30; body size 103 bytes.
 #line 1 "ENTRY_1013bb30"
 
-undefined4 * Recovered_FUN_1013bb30::FUN_1013bb30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013bb30::FUN_1013bb30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -2910,7 +2942,7 @@ undefined4 * Recovered_FUN_1013bb30::FUN_1013bb30(undefined4 *param_2,SCStr *par
 // Reference entry 1013bbb0; body size 103 bytes.
 #line 1 "ENTRY_1013bbb0"
 
-undefined4 * Recovered_FUN_1013bbb0::FUN_1013bbb0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013bbb0::FUN_1013bbb0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -2942,7 +2974,7 @@ undefined4 * Recovered_FUN_1013bbb0::FUN_1013bbb0(undefined4 *param_2,SCStr *par
 // Reference entry 1013bc30; body size 103 bytes.
 #line 1 "ENTRY_1013bc30"
 
-undefined4 * Recovered_FUN_1013bc30::FUN_1013bc30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013bc30::FUN_1013bc30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -2974,7 +3006,7 @@ undefined4 * Recovered_FUN_1013bc30::FUN_1013bc30(undefined4 *param_2,SCStr *par
 // Reference entry 1013bcb0; body size 103 bytes.
 #line 1 "ENTRY_1013bcb0"
 
-undefined4 * Recovered_FUN_1013bcb0::FUN_1013bcb0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013bcb0::FUN_1013bcb0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3006,7 +3038,7 @@ undefined4 * Recovered_FUN_1013bcb0::FUN_1013bcb0(undefined4 *param_2,SCStr *par
 // Reference entry 1013bd30; body size 103 bytes.
 #line 1 "ENTRY_1013bd30"
 
-undefined4 * Recovered_FUN_1013bd30::FUN_1013bd30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013bd30::FUN_1013bd30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3038,7 +3070,7 @@ undefined4 * Recovered_FUN_1013bd30::FUN_1013bd30(undefined4 *param_2,SCStr *par
 // Reference entry 1013bdb0; body size 103 bytes.
 #line 1 "ENTRY_1013bdb0"
 
-undefined4 * Recovered_FUN_1013bdb0::FUN_1013bdb0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013bdb0::FUN_1013bdb0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3070,7 +3102,7 @@ undefined4 * Recovered_FUN_1013bdb0::FUN_1013bdb0(undefined4 *param_2,SCStr *par
 // Reference entry 1013be30; body size 103 bytes.
 #line 1 "ENTRY_1013be30"
 
-undefined4 * Recovered_FUN_1013be30::FUN_1013be30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013be30::FUN_1013be30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3102,7 +3134,7 @@ undefined4 * Recovered_FUN_1013be30::FUN_1013be30(undefined4 *param_2,SCStr *par
 // Reference entry 1013beb0; body size 103 bytes.
 #line 1 "ENTRY_1013beb0"
 
-undefined4 * Recovered_FUN_1013beb0::FUN_1013beb0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013beb0::FUN_1013beb0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3134,7 +3166,7 @@ undefined4 * Recovered_FUN_1013beb0::FUN_1013beb0(undefined4 *param_2,SCStr *par
 // Reference entry 1013bf30; body size 103 bytes.
 #line 1 "ENTRY_1013bf30"
 
-undefined4 * Recovered_FUN_1013bf30::FUN_1013bf30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013bf30::FUN_1013bf30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3166,7 +3198,7 @@ undefined4 * Recovered_FUN_1013bf30::FUN_1013bf30(undefined4 *param_2,SCStr *par
 // Reference entry 1013bfb0; body size 103 bytes.
 #line 1 "ENTRY_1013bfb0"
 
-undefined4 * Recovered_FUN_1013bfb0::FUN_1013bfb0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013bfb0::FUN_1013bfb0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3198,7 +3230,7 @@ undefined4 * Recovered_FUN_1013bfb0::FUN_1013bfb0(undefined4 *param_2,SCStr *par
 // Reference entry 1013c030; body size 103 bytes.
 #line 1 "ENTRY_1013c030"
 
-undefined4 * Recovered_FUN_1013c030::FUN_1013c030(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013c030::FUN_1013c030(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3230,7 +3262,7 @@ undefined4 * Recovered_FUN_1013c030::FUN_1013c030(undefined4 *param_2,SCStr *par
 // Reference entry 1013c0b0; body size 103 bytes.
 #line 1 "ENTRY_1013c0b0"
 
-undefined4 * Recovered_FUN_1013c0b0::FUN_1013c0b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013c0b0::FUN_1013c0b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3262,7 +3294,7 @@ undefined4 * Recovered_FUN_1013c0b0::FUN_1013c0b0(undefined4 *param_2,SCStr *par
 // Reference entry 1013c130; body size 103 bytes.
 #line 1 "ENTRY_1013c130"
 
-undefined4 * Recovered_FUN_1013c130::FUN_1013c130(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013c130::FUN_1013c130(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3294,7 +3326,7 @@ undefined4 * Recovered_FUN_1013c130::FUN_1013c130(undefined4 *param_2,SCStr *par
 // Reference entry 1013c1b0; body size 103 bytes.
 #line 1 "ENTRY_1013c1b0"
 
-undefined4 * Recovered_FUN_1013c1b0::FUN_1013c1b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013c1b0::FUN_1013c1b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3326,7 +3358,7 @@ undefined4 * Recovered_FUN_1013c1b0::FUN_1013c1b0(undefined4 *param_2,SCStr *par
 // Reference entry 1013c230; body size 103 bytes.
 #line 1 "ENTRY_1013c230"
 
-undefined4 * Recovered_FUN_1013c230::FUN_1013c230(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013c230::FUN_1013c230(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3358,7 +3390,7 @@ undefined4 * Recovered_FUN_1013c230::FUN_1013c230(undefined4 *param_2,SCStr *par
 // Reference entry 1013c2b0; body size 103 bytes.
 #line 1 "ENTRY_1013c2b0"
 
-undefined4 * Recovered_FUN_1013c2b0::FUN_1013c2b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013c2b0::FUN_1013c2b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3390,7 +3422,7 @@ undefined4 * Recovered_FUN_1013c2b0::FUN_1013c2b0(undefined4 *param_2,SCStr *par
 // Reference entry 1013c330; body size 103 bytes.
 #line 1 "ENTRY_1013c330"
 
-undefined4 * Recovered_FUN_1013c330::FUN_1013c330(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013c330::FUN_1013c330(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3422,7 +3454,7 @@ undefined4 * Recovered_FUN_1013c330::FUN_1013c330(undefined4 *param_2,SCStr *par
 // Reference entry 1013c3b0; body size 103 bytes.
 #line 1 "ENTRY_1013c3b0"
 
-undefined4 * Recovered_FUN_1013c3b0::FUN_1013c3b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013c3b0::FUN_1013c3b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3454,7 +3486,7 @@ undefined4 * Recovered_FUN_1013c3b0::FUN_1013c3b0(undefined4 *param_2,SCStr *par
 // Reference entry 1013c430; body size 103 bytes.
 #line 1 "ENTRY_1013c430"
 
-undefined4 * Recovered_FUN_1013c430::FUN_1013c430(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013c430::FUN_1013c430(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3486,7 +3518,7 @@ undefined4 * Recovered_FUN_1013c430::FUN_1013c430(undefined4 *param_2,SCStr *par
 // Reference entry 1013c4b0; body size 103 bytes.
 #line 1 "ENTRY_1013c4b0"
 
-undefined4 * Recovered_FUN_1013c4b0::FUN_1013c4b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013c4b0::FUN_1013c4b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3518,7 +3550,7 @@ undefined4 * Recovered_FUN_1013c4b0::FUN_1013c4b0(undefined4 *param_2,SCStr *par
 // Reference entry 1013c530; body size 103 bytes.
 #line 1 "ENTRY_1013c530"
 
-undefined4 * Recovered_FUN_1013c530::FUN_1013c530(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013c530::FUN_1013c530(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3550,7 +3582,7 @@ undefined4 * Recovered_FUN_1013c530::FUN_1013c530(undefined4 *param_2,SCStr *par
 // Reference entry 1013c5b0; body size 103 bytes.
 #line 1 "ENTRY_1013c5b0"
 
-undefined4 * Recovered_FUN_1013c5b0::FUN_1013c5b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013c5b0::FUN_1013c5b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3582,7 +3614,7 @@ undefined4 * Recovered_FUN_1013c5b0::FUN_1013c5b0(undefined4 *param_2,SCStr *par
 // Reference entry 1013c630; body size 103 bytes.
 #line 1 "ENTRY_1013c630"
 
-undefined4 * Recovered_FUN_1013c630::FUN_1013c630(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013c630::FUN_1013c630(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3614,7 +3646,7 @@ undefined4 * Recovered_FUN_1013c630::FUN_1013c630(undefined4 *param_2,SCStr *par
 // Reference entry 1013c6b0; body size 103 bytes.
 #line 1 "ENTRY_1013c6b0"
 
-undefined4 * Recovered_FUN_1013c6b0::FUN_1013c6b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013c6b0::FUN_1013c6b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3646,7 +3678,7 @@ undefined4 * Recovered_FUN_1013c6b0::FUN_1013c6b0(undefined4 *param_2,SCStr *par
 // Reference entry 1013c730; body size 103 bytes.
 #line 1 "ENTRY_1013c730"
 
-undefined4 * Recovered_FUN_1013c730::FUN_1013c730(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013c730::FUN_1013c730(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3678,7 +3710,7 @@ undefined4 * Recovered_FUN_1013c730::FUN_1013c730(undefined4 *param_2,SCStr *par
 // Reference entry 1013c7b0; body size 103 bytes.
 #line 1 "ENTRY_1013c7b0"
 
-undefined4 * Recovered_FUN_1013c7b0::FUN_1013c7b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013c7b0::FUN_1013c7b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3710,7 +3742,7 @@ undefined4 * Recovered_FUN_1013c7b0::FUN_1013c7b0(undefined4 *param_2,SCStr *par
 // Reference entry 1013c830; body size 103 bytes.
 #line 1 "ENTRY_1013c830"
 
-undefined4 * Recovered_FUN_1013c830::FUN_1013c830(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013c830::FUN_1013c830(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3742,7 +3774,7 @@ undefined4 * Recovered_FUN_1013c830::FUN_1013c830(undefined4 *param_2,SCStr *par
 // Reference entry 1013c8b0; body size 103 bytes.
 #line 1 "ENTRY_1013c8b0"
 
-undefined4 * Recovered_FUN_1013c8b0::FUN_1013c8b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013c8b0::FUN_1013c8b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3774,7 +3806,7 @@ undefined4 * Recovered_FUN_1013c8b0::FUN_1013c8b0(undefined4 *param_2,SCStr *par
 // Reference entry 1013c930; body size 103 bytes.
 #line 1 "ENTRY_1013c930"
 
-undefined4 * Recovered_FUN_1013c930::FUN_1013c930(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013c930::FUN_1013c930(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3806,7 +3838,7 @@ undefined4 * Recovered_FUN_1013c930::FUN_1013c930(undefined4 *param_2,SCStr *par
 // Reference entry 1013c9b0; body size 103 bytes.
 #line 1 "ENTRY_1013c9b0"
 
-undefined4 * Recovered_FUN_1013c9b0::FUN_1013c9b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013c9b0::FUN_1013c9b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3838,7 +3870,7 @@ undefined4 * Recovered_FUN_1013c9b0::FUN_1013c9b0(undefined4 *param_2,SCStr *par
 // Reference entry 1013ca30; body size 103 bytes.
 #line 1 "ENTRY_1013ca30"
 
-undefined4 * Recovered_FUN_1013ca30::FUN_1013ca30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013ca30::FUN_1013ca30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3870,7 +3902,7 @@ undefined4 * Recovered_FUN_1013ca30::FUN_1013ca30(undefined4 *param_2,SCStr *par
 // Reference entry 1013cab0; body size 103 bytes.
 #line 1 "ENTRY_1013cab0"
 
-undefined4 * Recovered_FUN_1013cab0::FUN_1013cab0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013cab0::FUN_1013cab0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3902,7 +3934,7 @@ undefined4 * Recovered_FUN_1013cab0::FUN_1013cab0(undefined4 *param_2,SCStr *par
 // Reference entry 1013cb30; body size 103 bytes.
 #line 1 "ENTRY_1013cb30"
 
-undefined4 * Recovered_FUN_1013cb30::FUN_1013cb30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013cb30::FUN_1013cb30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3934,7 +3966,7 @@ undefined4 * Recovered_FUN_1013cb30::FUN_1013cb30(undefined4 *param_2,SCStr *par
 // Reference entry 1013cbb0; body size 103 bytes.
 #line 1 "ENTRY_1013cbb0"
 
-undefined4 * Recovered_FUN_1013cbb0::FUN_1013cbb0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013cbb0::FUN_1013cbb0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3966,7 +3998,7 @@ undefined4 * Recovered_FUN_1013cbb0::FUN_1013cbb0(undefined4 *param_2,SCStr *par
 // Reference entry 1013cc30; body size 103 bytes.
 #line 1 "ENTRY_1013cc30"
 
-undefined4 * Recovered_FUN_1013cc30::FUN_1013cc30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013cc30::FUN_1013cc30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -3998,7 +4030,7 @@ undefined4 * Recovered_FUN_1013cc30::FUN_1013cc30(undefined4 *param_2,SCStr *par
 // Reference entry 1013ccb0; body size 103 bytes.
 #line 1 "ENTRY_1013ccb0"
 
-undefined4 * Recovered_FUN_1013ccb0::FUN_1013ccb0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013ccb0::FUN_1013ccb0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4030,7 +4062,7 @@ undefined4 * Recovered_FUN_1013ccb0::FUN_1013ccb0(undefined4 *param_2,SCStr *par
 // Reference entry 1013cd30; body size 103 bytes.
 #line 1 "ENTRY_1013cd30"
 
-undefined4 * Recovered_FUN_1013cd30::FUN_1013cd30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013cd30::FUN_1013cd30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4062,7 +4094,7 @@ undefined4 * Recovered_FUN_1013cd30::FUN_1013cd30(undefined4 *param_2,SCStr *par
 // Reference entry 1013cdb0; body size 103 bytes.
 #line 1 "ENTRY_1013cdb0"
 
-undefined4 * Recovered_FUN_1013cdb0::FUN_1013cdb0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013cdb0::FUN_1013cdb0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4094,7 +4126,7 @@ undefined4 * Recovered_FUN_1013cdb0::FUN_1013cdb0(undefined4 *param_2,SCStr *par
 // Reference entry 1013ce30; body size 103 bytes.
 #line 1 "ENTRY_1013ce30"
 
-undefined4 * Recovered_FUN_1013ce30::FUN_1013ce30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013ce30::FUN_1013ce30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4126,7 +4158,7 @@ undefined4 * Recovered_FUN_1013ce30::FUN_1013ce30(undefined4 *param_2,SCStr *par
 // Reference entry 1013ceb0; body size 103 bytes.
 #line 1 "ENTRY_1013ceb0"
 
-undefined4 * Recovered_FUN_1013ceb0::FUN_1013ceb0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013ceb0::FUN_1013ceb0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4158,7 +4190,7 @@ undefined4 * Recovered_FUN_1013ceb0::FUN_1013ceb0(undefined4 *param_2,SCStr *par
 // Reference entry 1013cf30; body size 103 bytes.
 #line 1 "ENTRY_1013cf30"
 
-undefined4 * Recovered_FUN_1013cf30::FUN_1013cf30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013cf30::FUN_1013cf30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4190,7 +4222,7 @@ undefined4 * Recovered_FUN_1013cf30::FUN_1013cf30(undefined4 *param_2,SCStr *par
 // Reference entry 1013cfb0; body size 103 bytes.
 #line 1 "ENTRY_1013cfb0"
 
-undefined4 * Recovered_FUN_1013cfb0::FUN_1013cfb0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013cfb0::FUN_1013cfb0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4222,7 +4254,7 @@ undefined4 * Recovered_FUN_1013cfb0::FUN_1013cfb0(undefined4 *param_2,SCStr *par
 // Reference entry 1013d030; body size 103 bytes.
 #line 1 "ENTRY_1013d030"
 
-undefined4 * Recovered_FUN_1013d030::FUN_1013d030(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d030::FUN_1013d030(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4254,7 +4286,7 @@ undefined4 * Recovered_FUN_1013d030::FUN_1013d030(undefined4 *param_2,SCStr *par
 // Reference entry 1013d0b0; body size 79 bytes.
 #line 1 "ENTRY_1013d0b0"
 
-undefined4 * Recovered_FUN_1013d0b0::FUN_1013d0b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d0b0::FUN_1013d0b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4279,7 +4311,7 @@ undefined4 * Recovered_FUN_1013d0b0::FUN_1013d0b0(undefined4 *param_2,SCStr *par
 // Reference entry 1013d120; body size 79 bytes.
 #line 1 "ENTRY_1013d120"
 
-undefined4 * Recovered_FUN_1013d120::FUN_1013d120(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d120::FUN_1013d120(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4304,7 +4336,7 @@ undefined4 * Recovered_FUN_1013d120::FUN_1013d120(undefined4 *param_2,SCStr *par
 // Reference entry 1013d190; body size 79 bytes.
 #line 1 "ENTRY_1013d190"
 
-undefined4 * Recovered_FUN_1013d190::FUN_1013d190(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d190::FUN_1013d190(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4329,7 +4361,7 @@ undefined4 * Recovered_FUN_1013d190::FUN_1013d190(undefined4 *param_2,SCStr *par
 // Reference entry 1013d200; body size 79 bytes.
 #line 1 "ENTRY_1013d200"
 
-undefined4 * Recovered_FUN_1013d200::FUN_1013d200(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d200::FUN_1013d200(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4354,7 +4386,7 @@ undefined4 * Recovered_FUN_1013d200::FUN_1013d200(undefined4 *param_2,SCStr *par
 // Reference entry 1013d270; body size 79 bytes.
 #line 1 "ENTRY_1013d270"
 
-undefined4 * Recovered_FUN_1013d270::FUN_1013d270(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d270::FUN_1013d270(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4379,7 +4411,7 @@ undefined4 * Recovered_FUN_1013d270::FUN_1013d270(undefined4 *param_2,SCStr *par
 // Reference entry 1013d2e0; body size 79 bytes.
 #line 1 "ENTRY_1013d2e0"
 
-undefined4 * Recovered_FUN_1013d2e0::FUN_1013d2e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d2e0::FUN_1013d2e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4404,7 +4436,7 @@ undefined4 * Recovered_FUN_1013d2e0::FUN_1013d2e0(undefined4 *param_2,SCStr *par
 // Reference entry 1013d350; body size 79 bytes.
 #line 1 "ENTRY_1013d350"
 
-undefined4 * Recovered_FUN_1013d350::FUN_1013d350(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d350::FUN_1013d350(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4429,7 +4461,7 @@ undefined4 * Recovered_FUN_1013d350::FUN_1013d350(undefined4 *param_2,SCStr *par
 // Reference entry 1013d3c0; body size 79 bytes.
 #line 1 "ENTRY_1013d3c0"
 
-undefined4 * Recovered_FUN_1013d3c0::FUN_1013d3c0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d3c0::FUN_1013d3c0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4454,7 +4486,7 @@ undefined4 * Recovered_FUN_1013d3c0::FUN_1013d3c0(undefined4 *param_2,SCStr *par
 // Reference entry 1013d430; body size 79 bytes.
 #line 1 "ENTRY_1013d430"
 
-undefined4 * Recovered_FUN_1013d430::FUN_1013d430(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d430::FUN_1013d430(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4479,7 +4511,7 @@ undefined4 * Recovered_FUN_1013d430::FUN_1013d430(undefined4 *param_2,SCStr *par
 // Reference entry 1013d4a0; body size 79 bytes.
 #line 1 "ENTRY_1013d4a0"
 
-undefined4 * Recovered_FUN_1013d4a0::FUN_1013d4a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d4a0::FUN_1013d4a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4504,7 +4536,7 @@ undefined4 * Recovered_FUN_1013d4a0::FUN_1013d4a0(undefined4 *param_2,SCStr *par
 // Reference entry 1013d510; body size 79 bytes.
 #line 1 "ENTRY_1013d510"
 
-undefined4 * Recovered_FUN_1013d510::FUN_1013d510(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d510::FUN_1013d510(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4529,7 +4561,7 @@ undefined4 * Recovered_FUN_1013d510::FUN_1013d510(undefined4 *param_2,SCStr *par
 // Reference entry 1013d580; body size 79 bytes.
 #line 1 "ENTRY_1013d580"
 
-undefined4 * Recovered_FUN_1013d580::FUN_1013d580(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d580::FUN_1013d580(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4554,7 +4586,7 @@ undefined4 * Recovered_FUN_1013d580::FUN_1013d580(undefined4 *param_2,SCStr *par
 // Reference entry 1013d5f0; body size 79 bytes.
 #line 1 "ENTRY_1013d5f0"
 
-undefined4 * Recovered_FUN_1013d5f0::FUN_1013d5f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d5f0::FUN_1013d5f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4579,7 +4611,7 @@ undefined4 * Recovered_FUN_1013d5f0::FUN_1013d5f0(undefined4 *param_2,SCStr *par
 // Reference entry 1013d660; body size 79 bytes.
 #line 1 "ENTRY_1013d660"
 
-undefined4 * Recovered_FUN_1013d660::FUN_1013d660(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d660::FUN_1013d660(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4604,7 +4636,7 @@ undefined4 * Recovered_FUN_1013d660::FUN_1013d660(undefined4 *param_2,SCStr *par
 // Reference entry 1013d6d0; body size 79 bytes.
 #line 1 "ENTRY_1013d6d0"
 
-undefined4 * Recovered_FUN_1013d6d0::FUN_1013d6d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d6d0::FUN_1013d6d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4629,7 +4661,7 @@ undefined4 * Recovered_FUN_1013d6d0::FUN_1013d6d0(undefined4 *param_2,SCStr *par
 // Reference entry 1013d740; body size 79 bytes.
 #line 1 "ENTRY_1013d740"
 
-undefined4 * Recovered_FUN_1013d740::FUN_1013d740(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d740::FUN_1013d740(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4654,7 +4686,7 @@ undefined4 * Recovered_FUN_1013d740::FUN_1013d740(undefined4 *param_2,SCStr *par
 // Reference entry 1013d7b0; body size 79 bytes.
 #line 1 "ENTRY_1013d7b0"
 
-undefined4 * Recovered_FUN_1013d7b0::FUN_1013d7b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d7b0::FUN_1013d7b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4679,7 +4711,7 @@ undefined4 * Recovered_FUN_1013d7b0::FUN_1013d7b0(undefined4 *param_2,SCStr *par
 // Reference entry 1013d820; body size 79 bytes.
 #line 1 "ENTRY_1013d820"
 
-undefined4 * Recovered_FUN_1013d820::FUN_1013d820(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d820::FUN_1013d820(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4704,7 +4736,7 @@ undefined4 * Recovered_FUN_1013d820::FUN_1013d820(undefined4 *param_2,SCStr *par
 // Reference entry 1013d890; body size 79 bytes.
 #line 1 "ENTRY_1013d890"
 
-undefined4 * Recovered_FUN_1013d890::FUN_1013d890(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d890::FUN_1013d890(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4729,7 +4761,7 @@ undefined4 * Recovered_FUN_1013d890::FUN_1013d890(undefined4 *param_2,SCStr *par
 // Reference entry 1013d900; body size 79 bytes.
 #line 1 "ENTRY_1013d900"
 
-undefined4 * Recovered_FUN_1013d900::FUN_1013d900(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d900::FUN_1013d900(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4754,7 +4786,7 @@ undefined4 * Recovered_FUN_1013d900::FUN_1013d900(undefined4 *param_2,SCStr *par
 // Reference entry 1013d970; body size 79 bytes.
 #line 1 "ENTRY_1013d970"
 
-undefined4 * Recovered_FUN_1013d970::FUN_1013d970(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d970::FUN_1013d970(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4779,7 +4811,7 @@ undefined4 * Recovered_FUN_1013d970::FUN_1013d970(undefined4 *param_2,SCStr *par
 // Reference entry 1013d9e0; body size 79 bytes.
 #line 1 "ENTRY_1013d9e0"
 
-undefined4 * Recovered_FUN_1013d9e0::FUN_1013d9e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013d9e0::FUN_1013d9e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4804,7 +4836,7 @@ undefined4 * Recovered_FUN_1013d9e0::FUN_1013d9e0(undefined4 *param_2,SCStr *par
 // Reference entry 1013da50; body size 79 bytes.
 #line 1 "ENTRY_1013da50"
 
-undefined4 * Recovered_FUN_1013da50::FUN_1013da50(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013da50::FUN_1013da50(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4829,7 +4861,7 @@ undefined4 * Recovered_FUN_1013da50::FUN_1013da50(undefined4 *param_2,SCStr *par
 // Reference entry 1013dac0; body size 79 bytes.
 #line 1 "ENTRY_1013dac0"
 
-undefined4 * Recovered_FUN_1013dac0::FUN_1013dac0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013dac0::FUN_1013dac0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4854,7 +4886,7 @@ undefined4 * Recovered_FUN_1013dac0::FUN_1013dac0(undefined4 *param_2,SCStr *par
 // Reference entry 1013db30; body size 79 bytes.
 #line 1 "ENTRY_1013db30"
 
-undefined4 * Recovered_FUN_1013db30::FUN_1013db30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013db30::FUN_1013db30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4879,7 +4911,7 @@ undefined4 * Recovered_FUN_1013db30::FUN_1013db30(undefined4 *param_2,SCStr *par
 // Reference entry 1013dba0; body size 79 bytes.
 #line 1 "ENTRY_1013dba0"
 
-undefined4 * Recovered_FUN_1013dba0::FUN_1013dba0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013dba0::FUN_1013dba0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4904,7 +4936,7 @@ undefined4 * Recovered_FUN_1013dba0::FUN_1013dba0(undefined4 *param_2,SCStr *par
 // Reference entry 1013dc10; body size 79 bytes.
 #line 1 "ENTRY_1013dc10"
 
-undefined4 * Recovered_FUN_1013dc10::FUN_1013dc10(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013dc10::FUN_1013dc10(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4929,7 +4961,7 @@ undefined4 * Recovered_FUN_1013dc10::FUN_1013dc10(undefined4 *param_2,SCStr *par
 // Reference entry 1013dc80; body size 79 bytes.
 #line 1 "ENTRY_1013dc80"
 
-undefined4 * Recovered_FUN_1013dc80::FUN_1013dc80(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013dc80::FUN_1013dc80(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4954,7 +4986,7 @@ undefined4 * Recovered_FUN_1013dc80::FUN_1013dc80(undefined4 *param_2,SCStr *par
 // Reference entry 1013dcf0; body size 79 bytes.
 #line 1 "ENTRY_1013dcf0"
 
-undefined4 * Recovered_FUN_1013dcf0::FUN_1013dcf0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013dcf0::FUN_1013dcf0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -4979,7 +5011,7 @@ undefined4 * Recovered_FUN_1013dcf0::FUN_1013dcf0(undefined4 *param_2,SCStr *par
 // Reference entry 1013dd60; body size 79 bytes.
 #line 1 "ENTRY_1013dd60"
 
-undefined4 * Recovered_FUN_1013dd60::FUN_1013dd60(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013dd60::FUN_1013dd60(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5004,7 +5036,7 @@ undefined4 * Recovered_FUN_1013dd60::FUN_1013dd60(undefined4 *param_2,SCStr *par
 // Reference entry 1013ddd0; body size 79 bytes.
 #line 1 "ENTRY_1013ddd0"
 
-undefined4 * Recovered_FUN_1013ddd0::FUN_1013ddd0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013ddd0::FUN_1013ddd0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5029,7 +5061,7 @@ undefined4 * Recovered_FUN_1013ddd0::FUN_1013ddd0(undefined4 *param_2,SCStr *par
 // Reference entry 1013de40; body size 79 bytes.
 #line 1 "ENTRY_1013de40"
 
-undefined4 * Recovered_FUN_1013de40::FUN_1013de40(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013de40::FUN_1013de40(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5054,7 +5086,7 @@ undefined4 * Recovered_FUN_1013de40::FUN_1013de40(undefined4 *param_2,SCStr *par
 // Reference entry 1013deb0; body size 79 bytes.
 #line 1 "ENTRY_1013deb0"
 
-undefined4 * Recovered_FUN_1013deb0::FUN_1013deb0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013deb0::FUN_1013deb0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5079,7 +5111,7 @@ undefined4 * Recovered_FUN_1013deb0::FUN_1013deb0(undefined4 *param_2,SCStr *par
 // Reference entry 1013df20; body size 79 bytes.
 #line 1 "ENTRY_1013df20"
 
-undefined4 * Recovered_FUN_1013df20::FUN_1013df20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013df20::FUN_1013df20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5104,7 +5136,7 @@ undefined4 * Recovered_FUN_1013df20::FUN_1013df20(undefined4 *param_2,SCStr *par
 // Reference entry 1013df90; body size 79 bytes.
 #line 1 "ENTRY_1013df90"
 
-undefined4 * Recovered_FUN_1013df90::FUN_1013df90(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013df90::FUN_1013df90(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5129,7 +5161,7 @@ undefined4 * Recovered_FUN_1013df90::FUN_1013df90(undefined4 *param_2,SCStr *par
 // Reference entry 1013e000; body size 79 bytes.
 #line 1 "ENTRY_1013e000"
 
-undefined4 * Recovered_FUN_1013e000::FUN_1013e000(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013e000::FUN_1013e000(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5154,7 +5186,7 @@ undefined4 * Recovered_FUN_1013e000::FUN_1013e000(undefined4 *param_2,SCStr *par
 // Reference entry 1013e070; body size 79 bytes.
 #line 1 "ENTRY_1013e070"
 
-undefined4 * Recovered_FUN_1013e070::FUN_1013e070(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013e070::FUN_1013e070(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5179,7 +5211,7 @@ undefined4 * Recovered_FUN_1013e070::FUN_1013e070(undefined4 *param_2,SCStr *par
 // Reference entry 1013e0e0; body size 79 bytes.
 #line 1 "ENTRY_1013e0e0"
 
-undefined4 * Recovered_FUN_1013e0e0::FUN_1013e0e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013e0e0::FUN_1013e0e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5204,7 +5236,7 @@ undefined4 * Recovered_FUN_1013e0e0::FUN_1013e0e0(undefined4 *param_2,SCStr *par
 // Reference entry 1013e150; body size 79 bytes.
 #line 1 "ENTRY_1013e150"
 
-undefined4 * Recovered_FUN_1013e150::FUN_1013e150(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013e150::FUN_1013e150(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5229,7 +5261,7 @@ undefined4 * Recovered_FUN_1013e150::FUN_1013e150(undefined4 *param_2,SCStr *par
 // Reference entry 1013e1c0; body size 79 bytes.
 #line 1 "ENTRY_1013e1c0"
 
-undefined4 * Recovered_FUN_1013e1c0::FUN_1013e1c0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013e1c0::FUN_1013e1c0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5254,7 +5286,7 @@ undefined4 * Recovered_FUN_1013e1c0::FUN_1013e1c0(undefined4 *param_2,SCStr *par
 // Reference entry 1013e230; body size 79 bytes.
 #line 1 "ENTRY_1013e230"
 
-undefined4 * Recovered_FUN_1013e230::FUN_1013e230(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013e230::FUN_1013e230(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5279,7 +5311,7 @@ undefined4 * Recovered_FUN_1013e230::FUN_1013e230(undefined4 *param_2,SCStr *par
 // Reference entry 1013e2a0; body size 79 bytes.
 #line 1 "ENTRY_1013e2a0"
 
-undefined4 * Recovered_FUN_1013e2a0::FUN_1013e2a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013e2a0::FUN_1013e2a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5304,7 +5336,7 @@ undefined4 * Recovered_FUN_1013e2a0::FUN_1013e2a0(undefined4 *param_2,SCStr *par
 // Reference entry 1013e310; body size 79 bytes.
 #line 1 "ENTRY_1013e310"
 
-undefined4 * Recovered_FUN_1013e310::FUN_1013e310(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013e310::FUN_1013e310(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5329,7 +5361,7 @@ undefined4 * Recovered_FUN_1013e310::FUN_1013e310(undefined4 *param_2,SCStr *par
 // Reference entry 1013e380; body size 79 bytes.
 #line 1 "ENTRY_1013e380"
 
-undefined4 * Recovered_FUN_1013e380::FUN_1013e380(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013e380::FUN_1013e380(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5354,7 +5386,7 @@ undefined4 * Recovered_FUN_1013e380::FUN_1013e380(undefined4 *param_2,SCStr *par
 // Reference entry 1013e3f0; body size 79 bytes.
 #line 1 "ENTRY_1013e3f0"
 
-undefined4 * Recovered_FUN_1013e3f0::FUN_1013e3f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013e3f0::FUN_1013e3f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5379,7 +5411,7 @@ undefined4 * Recovered_FUN_1013e3f0::FUN_1013e3f0(undefined4 *param_2,SCStr *par
 // Reference entry 1013e460; body size 79 bytes.
 #line 1 "ENTRY_1013e460"
 
-undefined4 * Recovered_FUN_1013e460::FUN_1013e460(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013e460::FUN_1013e460(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5404,7 +5436,7 @@ undefined4 * Recovered_FUN_1013e460::FUN_1013e460(undefined4 *param_2,SCStr *par
 // Reference entry 1013e4d0; body size 79 bytes.
 #line 1 "ENTRY_1013e4d0"
 
-undefined4 * Recovered_FUN_1013e4d0::FUN_1013e4d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013e4d0::FUN_1013e4d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5429,7 +5461,7 @@ undefined4 * Recovered_FUN_1013e4d0::FUN_1013e4d0(undefined4 *param_2,SCStr *par
 // Reference entry 1013e540; body size 79 bytes.
 #line 1 "ENTRY_1013e540"
 
-undefined4 * Recovered_FUN_1013e540::FUN_1013e540(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013e540::FUN_1013e540(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5454,7 +5486,7 @@ undefined4 * Recovered_FUN_1013e540::FUN_1013e540(undefined4 *param_2,SCStr *par
 // Reference entry 1013e6d0; body size 79 bytes.
 #line 1 "ENTRY_1013e6d0"
 
-undefined4 * Recovered_FUN_1013e6d0::FUN_1013e6d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013e6d0::FUN_1013e6d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5479,7 +5511,7 @@ undefined4 * Recovered_FUN_1013e6d0::FUN_1013e6d0(undefined4 *param_2,SCStr *par
 // Reference entry 1013e740; body size 79 bytes.
 #line 1 "ENTRY_1013e740"
 
-undefined4 * Recovered_FUN_1013e740::FUN_1013e740(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013e740::FUN_1013e740(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5504,7 +5536,7 @@ undefined4 * Recovered_FUN_1013e740::FUN_1013e740(undefined4 *param_2,SCStr *par
 // Reference entry 1013e7b0; body size 79 bytes.
 #line 1 "ENTRY_1013e7b0"
 
-undefined4 * Recovered_FUN_1013e7b0::FUN_1013e7b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013e7b0::FUN_1013e7b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5529,7 +5561,7 @@ undefined4 * Recovered_FUN_1013e7b0::FUN_1013e7b0(undefined4 *param_2,SCStr *par
 // Reference entry 1013e820; body size 79 bytes.
 #line 1 "ENTRY_1013e820"
 
-undefined4 * Recovered_FUN_1013e820::FUN_1013e820(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1013e820::FUN_1013e820(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5554,7 +5586,7 @@ undefined4 * Recovered_FUN_1013e820::FUN_1013e820(undefined4 *param_2,SCStr *par
 // Reference entry 10144830; body size 29 bytes.
 #line 1 "ENTRY_10144830"
 
-SCStr * Recovered_FUN_10144830::FUN_10144830(char *param_2,uint param_3)
+SCStr * Recovered_10144830::FUN_10144830(char *param_2,uint param_3)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -5567,7 +5599,7 @@ SCStr * Recovered_FUN_10144830::FUN_10144830(char *param_2,uint param_3)
 // Reference entry 10145180; body size 25 bytes.
 #line 1 "ENTRY_10145180"
 
-SCStr * Recovered_FUN_10145180::FUN_10145180(char *param_2)
+SCStr * Recovered_10145180::FUN_10145180(char *param_2)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -5606,7 +5638,7 @@ int FUN_10193de0(SCStr *param_1)
 // Reference entry 101aa190; body size 103 bytes.
 #line 1 "ENTRY_101aa190"
 
-undefined4 * Recovered_FUN_101aa190::FUN_101aa190(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101aa190::FUN_101aa190(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5638,7 +5670,7 @@ undefined4 * Recovered_FUN_101aa190::FUN_101aa190(undefined4 *param_2,SCStr *par
 // Reference entry 101aa210; body size 103 bytes.
 #line 1 "ENTRY_101aa210"
 
-undefined4 * Recovered_FUN_101aa210::FUN_101aa210(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101aa210::FUN_101aa210(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5670,7 +5702,7 @@ undefined4 * Recovered_FUN_101aa210::FUN_101aa210(undefined4 *param_2,SCStr *par
 // Reference entry 101b49f0; body size 675 bytes.
 #line 1 "ENTRY_101b49f0"
 
-void Recovered_FUN_101b49f0::FUN_101b49f0(undefined4 param_2,SCStr *param_3)
+void Recovered_101b49f0::FUN_101b49f0(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -5933,7 +5965,7 @@ SCStr * FUN_101b5390(SCStr *param_1,undefined4 param_2)
 // Reference entry 101b68f0; body size 103 bytes.
 #line 1 "ENTRY_101b68f0"
 
-undefined4 * Recovered_FUN_101b68f0::FUN_101b68f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101b68f0::FUN_101b68f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5965,7 +5997,7 @@ undefined4 * Recovered_FUN_101b68f0::FUN_101b68f0(undefined4 *param_2,SCStr *par
 // Reference entry 101b6970; body size 103 bytes.
 #line 1 "ENTRY_101b6970"
 
-undefined4 * Recovered_FUN_101b6970::FUN_101b6970(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101b6970::FUN_101b6970(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -5997,7 +6029,7 @@ undefined4 * Recovered_FUN_101b6970::FUN_101b6970(undefined4 *param_2,SCStr *par
 // Reference entry 101b69f0; body size 103 bytes.
 #line 1 "ENTRY_101b69f0"
 
-undefined4 * Recovered_FUN_101b69f0::FUN_101b69f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101b69f0::FUN_101b69f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -6040,7 +6072,7 @@ SCStr * FUN_101b8720(SCStr *param_1)
 // Reference entry 101b8e70; body size 103 bytes.
 #line 1 "ENTRY_101b8e70"
 
-undefined4 * Recovered_FUN_101b8e70::FUN_101b8e70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101b8e70::FUN_101b8e70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -6072,7 +6104,7 @@ undefined4 * Recovered_FUN_101b8e70::FUN_101b8e70(undefined4 *param_2,SCStr *par
 // Reference entry 101bb010; body size 156 bytes.
 #line 1 "ENTRY_101bb010"
 
-void Recovered_FUN_101bb010::FUN_101bb010(undefined4 param_2,SCStr *param_3)
+void Recovered_101bb010::FUN_101bb010(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -6129,7 +6161,7 @@ SCStr * FUN_101bb870(SCStr *param_1)
 // Reference entry 101bbef0; body size 103 bytes.
 #line 1 "ENTRY_101bbef0"
 
-undefined4 * Recovered_FUN_101bbef0::FUN_101bbef0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101bbef0::FUN_101bbef0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -6161,7 +6193,7 @@ undefined4 * Recovered_FUN_101bbef0::FUN_101bbef0(undefined4 *param_2,SCStr *par
 // Reference entry 101bbf70; body size 103 bytes.
 #line 1 "ENTRY_101bbf70"
 
-undefined4 * Recovered_FUN_101bbf70::FUN_101bbf70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101bbf70::FUN_101bbf70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -6193,7 +6225,7 @@ undefined4 * Recovered_FUN_101bbf70::FUN_101bbf70(undefined4 *param_2,SCStr *par
 // Reference entry 101bbff0; body size 103 bytes.
 #line 1 "ENTRY_101bbff0"
 
-undefined4 * Recovered_FUN_101bbff0::FUN_101bbff0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101bbff0::FUN_101bbff0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -6225,7 +6257,7 @@ undefined4 * Recovered_FUN_101bbff0::FUN_101bbff0(undefined4 *param_2,SCStr *par
 // Reference entry 101bc380; body size 69 bytes.
 #line 1 "ENTRY_101bc380"
 
-void Recovered_FUN_101bc380::FUN_101bc380(SCStr *param_2,SCStr *param_3)
+void Recovered_101bc380::FUN_101bc380(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -6272,7 +6304,7 @@ SCStr * FUN_101bcd90(SCStr *param_1,SCStr *param_2,SCStr *param_3)
 // Reference entry 101bef80; body size 103 bytes.
 #line 1 "ENTRY_101bef80"
 
-undefined4 * Recovered_FUN_101bef80::FUN_101bef80(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101bef80::FUN_101bef80(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -6525,7 +6557,7 @@ SCStr * FUN_101ca950(SCStr *param_1)
 // Reference entry 101cb1b0; body size 103 bytes.
 #line 1 "ENTRY_101cb1b0"
 
-undefined4 * Recovered_FUN_101cb1b0::FUN_101cb1b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101cb1b0::FUN_101cb1b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -6557,7 +6589,7 @@ undefined4 * Recovered_FUN_101cb1b0::FUN_101cb1b0(undefined4 *param_2,SCStr *par
 // Reference entry 101cb230; body size 103 bytes.
 #line 1 "ENTRY_101cb230"
 
-undefined4 * Recovered_FUN_101cb230::FUN_101cb230(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101cb230::FUN_101cb230(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -6589,7 +6621,7 @@ undefined4 * Recovered_FUN_101cb230::FUN_101cb230(undefined4 *param_2,SCStr *par
 // Reference entry 101cb2b0; body size 103 bytes.
 #line 1 "ENTRY_101cb2b0"
 
-undefined4 * Recovered_FUN_101cb2b0::FUN_101cb2b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101cb2b0::FUN_101cb2b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -6621,7 +6653,7 @@ undefined4 * Recovered_FUN_101cb2b0::FUN_101cb2b0(undefined4 *param_2,SCStr *par
 // Reference entry 101cb330; body size 103 bytes.
 #line 1 "ENTRY_101cb330"
 
-undefined4 * Recovered_FUN_101cb330::FUN_101cb330(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101cb330::FUN_101cb330(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -6653,7 +6685,7 @@ undefined4 * Recovered_FUN_101cb330::FUN_101cb330(undefined4 *param_2,SCStr *par
 // Reference entry 101d40d0; body size 144 bytes.
 #line 1 "ENTRY_101d40d0"
 
-int Recovered_FUN_101d40d0::FUN_101d40d0(int param_2)
+int Recovered_101d40d0::FUN_101d40d0(int param_2)
 
 {
   int param_1 = (int)this;
@@ -6698,7 +6730,7 @@ int Recovered_FUN_101d40d0::FUN_101d40d0(int param_2)
 // Reference entry 101d8de0; body size 123 bytes.
 #line 1 "ENTRY_101d8de0"
 
-void Recovered_FUN_101d8de0::FUN_101d8de0(undefined4 param_2,SCStr *param_3)
+void Recovered_101d8de0::FUN_101d8de0(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -6794,7 +6826,7 @@ void FUN_101dcf90(SCStr *param_1)
 // Reference entry 101dd540; body size 103 bytes.
 #line 1 "ENTRY_101dd540"
 
-undefined4 * Recovered_FUN_101dd540::FUN_101dd540(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101dd540::FUN_101dd540(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -6826,7 +6858,7 @@ undefined4 * Recovered_FUN_101dd540::FUN_101dd540(undefined4 *param_2,SCStr *par
 // Reference entry 101dd6e0; body size 103 bytes.
 #line 1 "ENTRY_101dd6e0"
 
-undefined4 * Recovered_FUN_101dd6e0::FUN_101dd6e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101dd6e0::FUN_101dd6e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -6858,7 +6890,7 @@ undefined4 * Recovered_FUN_101dd6e0::FUN_101dd6e0(undefined4 *param_2,SCStr *par
 // Reference entry 101dd760; body size 103 bytes.
 #line 1 "ENTRY_101dd760"
 
-undefined4 * Recovered_FUN_101dd760::FUN_101dd760(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101dd760::FUN_101dd760(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -6890,7 +6922,7 @@ undefined4 * Recovered_FUN_101dd760::FUN_101dd760(undefined4 *param_2,SCStr *par
 // Reference entry 101dd7e0; body size 103 bytes.
 #line 1 "ENTRY_101dd7e0"
 
-undefined4 * Recovered_FUN_101dd7e0::FUN_101dd7e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101dd7e0::FUN_101dd7e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -6922,7 +6954,7 @@ undefined4 * Recovered_FUN_101dd7e0::FUN_101dd7e0(undefined4 *param_2,SCStr *par
 // Reference entry 101dd860; body size 119 bytes.
 #line 1 "ENTRY_101dd860"
 
-undefined4 * Recovered_FUN_101dd860::FUN_101dd860(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101dd860::FUN_101dd860(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -6954,7 +6986,7 @@ undefined4 * Recovered_FUN_101dd860::FUN_101dd860(undefined4 *param_2,SCStr *par
 // Reference entry 101dd900; body size 103 bytes.
 #line 1 "ENTRY_101dd900"
 
-undefined4 * Recovered_FUN_101dd900::FUN_101dd900(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101dd900::FUN_101dd900(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -6986,7 +7018,7 @@ undefined4 * Recovered_FUN_101dd900::FUN_101dd900(undefined4 *param_2,SCStr *par
 // Reference entry 101dd980; body size 103 bytes.
 #line 1 "ENTRY_101dd980"
 
-undefined4 * Recovered_FUN_101dd980::FUN_101dd980(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101dd980::FUN_101dd980(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -7018,7 +7050,7 @@ undefined4 * Recovered_FUN_101dd980::FUN_101dd980(undefined4 *param_2,SCStr *par
 // Reference entry 101dda00; body size 103 bytes.
 #line 1 "ENTRY_101dda00"
 
-undefined4 * Recovered_FUN_101dda00::FUN_101dda00(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101dda00::FUN_101dda00(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -7050,7 +7082,7 @@ undefined4 * Recovered_FUN_101dda00::FUN_101dda00(undefined4 *param_2,SCStr *par
 // Reference entry 101ddbf0; body size 103 bytes.
 #line 1 "ENTRY_101ddbf0"
 
-undefined4 * Recovered_FUN_101ddbf0::FUN_101ddbf0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101ddbf0::FUN_101ddbf0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -7153,7 +7185,7 @@ void __fastcall FUN_101f1c60(int param_1)
 // Reference entry 101f2130; body size 103 bytes.
 #line 1 "ENTRY_101f2130"
 
-undefined4 * Recovered_FUN_101f2130::FUN_101f2130(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101f2130::FUN_101f2130(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -7185,7 +7217,7 @@ undefined4 * Recovered_FUN_101f2130::FUN_101f2130(undefined4 *param_2,SCStr *par
 // Reference entry 101f21b0; body size 103 bytes.
 #line 1 "ENTRY_101f21b0"
 
-undefined4 * Recovered_FUN_101f21b0::FUN_101f21b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101f21b0::FUN_101f21b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -7217,7 +7249,7 @@ undefined4 * Recovered_FUN_101f21b0::FUN_101f21b0(undefined4 *param_2,SCStr *par
 // Reference entry 101f2230; body size 103 bytes.
 #line 1 "ENTRY_101f2230"
 
-undefined4 * Recovered_FUN_101f2230::FUN_101f2230(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101f2230::FUN_101f2230(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -7249,7 +7281,7 @@ undefined4 * Recovered_FUN_101f2230::FUN_101f2230(undefined4 *param_2,SCStr *par
 // Reference entry 101f22b0; body size 103 bytes.
 #line 1 "ENTRY_101f22b0"
 
-undefined4 * Recovered_FUN_101f22b0::FUN_101f22b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101f22b0::FUN_101f22b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -7281,7 +7313,7 @@ undefined4 * Recovered_FUN_101f22b0::FUN_101f22b0(undefined4 *param_2,SCStr *par
 // Reference entry 101f2ea0; body size 42 bytes.
 #line 1 "ENTRY_101f2ea0"
 
-void Recovered_FUN_101f2ea0::FUN_101f2ea0(undefined1 param_2)
+void Recovered_101f2ea0::FUN_101f2ea0(undefined1 param_2)
 
 {
   int param_1 = (int)this;
@@ -7300,7 +7332,7 @@ void Recovered_FUN_101f2ea0::FUN_101f2ea0(undefined1 param_2)
 // Reference entry 101f3310; body size 271 bytes.
 #line 1 "ENTRY_101f3310"
 
-void Recovered_FUN_101f3310::FUN_101f3310(int param_2)
+void Recovered_101f3310::FUN_101f3310(int param_2)
 
 {
   int param_1 = (int)this;
@@ -7402,7 +7434,7 @@ void Recovered_FUN_101f3310::FUN_101f3310(int param_2)
 // Reference entry 101f84c0; body size 103 bytes.
 #line 1 "ENTRY_101f84c0"
 
-undefined4 * Recovered_FUN_101f84c0::FUN_101f84c0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101f84c0::FUN_101f84c0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -7512,7 +7544,7 @@ SCStr * FUN_101fb3a0(SCStr *param_1)
 // Reference entry 101fb690; body size 103 bytes.
 #line 1 "ENTRY_101fb690"
 
-undefined4 * Recovered_FUN_101fb690::FUN_101fb690(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101fb690::FUN_101fb690(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -7544,7 +7576,7 @@ undefined4 * Recovered_FUN_101fb690::FUN_101fb690(undefined4 *param_2,SCStr *par
 // Reference entry 101fb710; body size 103 bytes.
 #line 1 "ENTRY_101fb710"
 
-undefined4 * Recovered_FUN_101fb710::FUN_101fb710(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_101fb710::FUN_101fb710(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -7576,7 +7608,7 @@ undefined4 * Recovered_FUN_101fb710::FUN_101fb710(undefined4 *param_2,SCStr *par
 // Reference entry 1020a260; body size 55 bytes.
 #line 1 "ENTRY_1020a260"
 
-void Recovered_FUN_1020a260::FUN_1020a260(undefined4 param_2,SCStr *param_3)
+void Recovered_1020a260::FUN_1020a260(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -7596,7 +7628,7 @@ void Recovered_FUN_1020a260::FUN_1020a260(undefined4 param_2,SCStr *param_3)
 // Reference entry 1020a2b0; body size 55 bytes.
 #line 1 "ENTRY_1020a2b0"
 
-void Recovered_FUN_1020a2b0::FUN_1020a2b0(undefined4 param_2,SCStr *param_3)
+void Recovered_1020a2b0::FUN_1020a2b0(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -7638,7 +7670,7 @@ SCStr * FUN_1020a350(SCStr *param_1)
 // Reference entry 1020a5b0; body size 37 bytes.
 #line 1 "ENTRY_1020a5b0"
 
-void Recovered_FUN_1020a5b0::FUN_1020a5b0(undefined4 param_2)
+void Recovered_1020a5b0::FUN_1020a5b0(undefined4 param_2)
 
 {
   int param_1 = (int)this;
@@ -7846,7 +7878,7 @@ SCStr * FUN_1020f4d0(SCStr *param_1)
 // Reference entry 1020f4f0; body size 217 bytes.
 #line 1 "ENTRY_1020f4f0"
 
-int * Recovered_FUN_1020f4f0::FUN_1020f4f0(int *param_2,uint param_3)
+int * Recovered_1020f4f0::FUN_1020f4f0(int *param_2,uint param_3)
 
 {
   int * param_1 = (int *)this;
@@ -8062,7 +8094,7 @@ void __fastcall FUN_1021e260(int param_1)
 // Reference entry 1021f010; body size 119 bytes.
 #line 1 "ENTRY_1021f010"
 
-undefined4 * Recovered_FUN_1021f010::FUN_1021f010(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1021f010::FUN_1021f010(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -8094,7 +8126,7 @@ undefined4 * Recovered_FUN_1021f010::FUN_1021f010(undefined4 *param_2,SCStr *par
 // Reference entry 1021f0b0; body size 150 bytes.
 #line 1 "ENTRY_1021f0b0"
 
-undefined4 * Recovered_FUN_1021f0b0::FUN_1021f0b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1021f0b0::FUN_1021f0b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -8138,7 +8170,7 @@ undefined4 * Recovered_FUN_1021f0b0::FUN_1021f0b0(undefined4 *param_2,SCStr *par
 // Reference entry 1021f180; body size 157 bytes.
 #line 1 "ENTRY_1021f180"
 
-undefined4 * Recovered_FUN_1021f180::FUN_1021f180(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1021f180::FUN_1021f180(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -8182,7 +8214,7 @@ undefined4 * Recovered_FUN_1021f180::FUN_1021f180(undefined4 *param_2,SCStr *par
 // Reference entry 1021f270; body size 201 bytes.
 #line 1 "ENTRY_1021f270"
 
-int * Recovered_FUN_1021f270::FUN_1021f270(int *param_2,SCStr *param_3)
+int * Recovered_1021f270::FUN_1021f270(int *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -8236,7 +8268,7 @@ int * Recovered_FUN_1021f270::FUN_1021f270(int *param_2,SCStr *param_3)
 // Reference entry 1021f3a0; body size 103 bytes.
 #line 1 "ENTRY_1021f3a0"
 
-undefined4 * Recovered_FUN_1021f3a0::FUN_1021f3a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1021f3a0::FUN_1021f3a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -8268,7 +8300,7 @@ undefined4 * Recovered_FUN_1021f3a0::FUN_1021f3a0(undefined4 *param_2,SCStr *par
 // Reference entry 1021f420; body size 150 bytes.
 #line 1 "ENTRY_1021f420"
 
-undefined4 * Recovered_FUN_1021f420::FUN_1021f420(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1021f420::FUN_1021f420(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -8312,7 +8344,7 @@ undefined4 * Recovered_FUN_1021f420::FUN_1021f420(undefined4 *param_2,SCStr *par
 // Reference entry 1021f4f0; body size 103 bytes.
 #line 1 "ENTRY_1021f4f0"
 
-undefined4 * Recovered_FUN_1021f4f0::FUN_1021f4f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1021f4f0::FUN_1021f4f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -8344,7 +8376,7 @@ undefined4 * Recovered_FUN_1021f4f0::FUN_1021f4f0(undefined4 *param_2,SCStr *par
 // Reference entry 1021f570; body size 119 bytes.
 #line 1 "ENTRY_1021f570"
 
-undefined4 * Recovered_FUN_1021f570::FUN_1021f570(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1021f570::FUN_1021f570(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -8376,7 +8408,7 @@ undefined4 * Recovered_FUN_1021f570::FUN_1021f570(undefined4 *param_2,SCStr *par
 // Reference entry 1021f610; body size 103 bytes.
 #line 1 "ENTRY_1021f610"
 
-undefined4 * Recovered_FUN_1021f610::FUN_1021f610(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1021f610::FUN_1021f610(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -8430,7 +8462,7 @@ SCStr * FUN_102223d0(SCStr *param_1)
 // Reference entry 10222470; body size 103 bytes.
 #line 1 "ENTRY_10222470"
 
-undefined4 * Recovered_FUN_10222470::FUN_10222470(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10222470::FUN_10222470(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -8462,7 +8494,7 @@ undefined4 * Recovered_FUN_10222470::FUN_10222470(undefined4 *param_2,SCStr *par
 // Reference entry 102224f0; body size 103 bytes.
 #line 1 "ENTRY_102224f0"
 
-undefined4 * Recovered_FUN_102224f0::FUN_102224f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102224f0::FUN_102224f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -8494,7 +8526,7 @@ undefined4 * Recovered_FUN_102224f0::FUN_102224f0(undefined4 *param_2,SCStr *par
 // Reference entry 102316a0; body size 49 bytes.
 #line 1 "ENTRY_102316a0"
 
-SCStr * Recovered_FUN_102316a0::FUN_102316a0(SCStr *param_2)
+SCStr * Recovered_102316a0::FUN_102316a0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -8510,7 +8542,7 @@ SCStr * Recovered_FUN_102316a0::FUN_102316a0(SCStr *param_2)
 // Reference entry 102316e0; body size 49 bytes.
 #line 1 "ENTRY_102316e0"
 
-SCStr * Recovered_FUN_102316e0::FUN_102316e0(SCStr *param_2)
+SCStr * Recovered_102316e0::FUN_102316e0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -8526,7 +8558,7 @@ SCStr * Recovered_FUN_102316e0::FUN_102316e0(SCStr *param_2)
 // Reference entry 102317a0; body size 46 bytes.
 #line 1 "ENTRY_102317a0"
 
-SCStr * Recovered_FUN_102317a0::FUN_102317a0(SCStr *param_2)
+SCStr * Recovered_102317a0::FUN_102317a0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -8542,7 +8574,7 @@ SCStr * Recovered_FUN_102317a0::FUN_102317a0(SCStr *param_2)
 // Reference entry 10231810; body size 49 bytes.
 #line 1 "ENTRY_10231810"
 
-SCStr * Recovered_FUN_10231810::FUN_10231810(SCStr *param_2)
+SCStr * Recovered_10231810::FUN_10231810(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -8577,7 +8609,7 @@ void __fastcall FUN_102327c0(int param_1)
 // Reference entry 102361a0; body size 123 bytes.
 #line 1 "ENTRY_102361a0"
 
-void Recovered_FUN_102361a0::FUN_102361a0(undefined4 param_2,SCStr *param_3)
+void Recovered_102361a0::FUN_102361a0(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -8607,7 +8639,7 @@ void Recovered_FUN_102361a0::FUN_102361a0(undefined4 param_2,SCStr *param_3)
 // Reference entry 10236240; body size 156 bytes.
 #line 1 "ENTRY_10236240"
 
-void Recovered_FUN_10236240::FUN_10236240(undefined4 param_2,SCStr *param_3)
+void Recovered_10236240::FUN_10236240(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -8642,7 +8674,7 @@ void Recovered_FUN_10236240::FUN_10236240(undefined4 param_2,SCStr *param_3)
 // Reference entry 10236310; body size 123 bytes.
 #line 1 "ENTRY_10236310"
 
-void Recovered_FUN_10236310::FUN_10236310(undefined4 param_2,SCStr *param_3)
+void Recovered_10236310::FUN_10236310(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -8672,7 +8704,7 @@ void Recovered_FUN_10236310::FUN_10236310(undefined4 param_2,SCStr *param_3)
 // Reference entry 102363b0; body size 259 bytes.
 #line 1 "ENTRY_102363b0"
 
-void Recovered_FUN_102363b0::FUN_102363b0(undefined4 param_2,SCStr *param_3)
+void Recovered_102363b0::FUN_102363b0(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -9030,7 +9062,7 @@ SCStr * FUN_1023a7b0(SCStr *param_1)
 // Reference entry 1023a7d0; body size 129 bytes.
 #line 1 "ENTRY_1023a7d0"
 
-SCStr * Recovered_FUN_1023a7d0::FUN_1023a7d0(SCStr *param_2)
+SCStr * Recovered_1023a7d0::FUN_1023a7d0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -9145,7 +9177,7 @@ SCStr * FUN_1023a970(SCStr *param_1)
 // Reference entry 102437a0; body size 103 bytes.
 #line 1 "ENTRY_102437a0"
 
-undefined4 * Recovered_FUN_102437a0::FUN_102437a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102437a0::FUN_102437a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -9177,7 +9209,7 @@ undefined4 * Recovered_FUN_102437a0::FUN_102437a0(undefined4 *param_2,SCStr *par
 // Reference entry 10243820; body size 103 bytes.
 #line 1 "ENTRY_10243820"
 
-undefined4 * Recovered_FUN_10243820::FUN_10243820(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10243820::FUN_10243820(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -9209,7 +9241,7 @@ undefined4 * Recovered_FUN_10243820::FUN_10243820(undefined4 *param_2,SCStr *par
 // Reference entry 102438a0; body size 103 bytes.
 #line 1 "ENTRY_102438a0"
 
-undefined4 * Recovered_FUN_102438a0::FUN_102438a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102438a0::FUN_102438a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -9241,7 +9273,7 @@ undefined4 * Recovered_FUN_102438a0::FUN_102438a0(undefined4 *param_2,SCStr *par
 // Reference entry 10243920; body size 103 bytes.
 #line 1 "ENTRY_10243920"
 
-undefined4 * Recovered_FUN_10243920::FUN_10243920(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10243920::FUN_10243920(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -9273,7 +9305,7 @@ undefined4 * Recovered_FUN_10243920::FUN_10243920(undefined4 *param_2,SCStr *par
 // Reference entry 102439a0; body size 103 bytes.
 #line 1 "ENTRY_102439a0"
 
-undefined4 * Recovered_FUN_102439a0::FUN_102439a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102439a0::FUN_102439a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -9305,7 +9337,7 @@ undefined4 * Recovered_FUN_102439a0::FUN_102439a0(undefined4 *param_2,SCStr *par
 // Reference entry 10243a20; body size 103 bytes.
 #line 1 "ENTRY_10243a20"
 
-undefined4 * Recovered_FUN_10243a20::FUN_10243a20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10243a20::FUN_10243a20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -9337,7 +9369,7 @@ undefined4 * Recovered_FUN_10243a20::FUN_10243a20(undefined4 *param_2,SCStr *par
 // Reference entry 10243aa0; body size 103 bytes.
 #line 1 "ENTRY_10243aa0"
 
-undefined4 * Recovered_FUN_10243aa0::FUN_10243aa0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10243aa0::FUN_10243aa0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -9369,7 +9401,7 @@ undefined4 * Recovered_FUN_10243aa0::FUN_10243aa0(undefined4 *param_2,SCStr *par
 // Reference entry 10243b20; body size 103 bytes.
 #line 1 "ENTRY_10243b20"
 
-undefined4 * Recovered_FUN_10243b20::FUN_10243b20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10243b20::FUN_10243b20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -9401,7 +9433,7 @@ undefined4 * Recovered_FUN_10243b20::FUN_10243b20(undefined4 *param_2,SCStr *par
 // Reference entry 10248870; body size 133 bytes.
 #line 1 "ENTRY_10248870"
 
-SCStr * Recovered_FUN_10248870::FUN_10248870(SCStr *param_2)
+SCStr * Recovered_10248870::FUN_10248870(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -9431,7 +9463,7 @@ SCStr * Recovered_FUN_10248870::FUN_10248870(SCStr *param_2)
 // Reference entry 10249970; body size 103 bytes.
 #line 1 "ENTRY_10249970"
 
-undefined4 * Recovered_FUN_10249970::FUN_10249970(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10249970::FUN_10249970(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -9474,7 +9506,7 @@ void FUN_1024ac20(SCStr *param_1)
 // Reference entry 1024afd0; body size 103 bytes.
 #line 1 "ENTRY_1024afd0"
 
-undefined4 * Recovered_FUN_1024afd0::FUN_1024afd0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1024afd0::FUN_1024afd0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -9608,7 +9640,7 @@ SCStr * FUN_1024cfc0(SCStr *param_1,undefined4 param_2)
 // Reference entry 1024e050; body size 103 bytes.
 #line 1 "ENTRY_1024e050"
 
-undefined4 * Recovered_FUN_1024e050::FUN_1024e050(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1024e050::FUN_1024e050(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -9640,7 +9672,7 @@ undefined4 * Recovered_FUN_1024e050::FUN_1024e050(undefined4 *param_2,SCStr *par
 // Reference entry 10250180; body size 33 bytes.
 #line 1 "ENTRY_10250180"
 
-void Recovered_FUN_10250180::FUN_10250180(undefined4 param_2,SCStr *param_3)
+void Recovered_10250180::FUN_10250180(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -9677,7 +9709,7 @@ void __fastcall FUN_10252b80(int param_1)
 // Reference entry 10252c00; body size 103 bytes.
 #line 1 "ENTRY_10252c00"
 
-undefined4 * Recovered_FUN_10252c00::FUN_10252c00(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10252c00::FUN_10252c00(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -9709,7 +9741,7 @@ undefined4 * Recovered_FUN_10252c00::FUN_10252c00(undefined4 *param_2,SCStr *par
 // Reference entry 10252c80; body size 103 bytes.
 #line 1 "ENTRY_10252c80"
 
-undefined4 * Recovered_FUN_10252c80::FUN_10252c80(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10252c80::FUN_10252c80(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -9741,7 +9773,7 @@ undefined4 * Recovered_FUN_10252c80::FUN_10252c80(undefined4 *param_2,SCStr *par
 // Reference entry 10252d00; body size 103 bytes.
 #line 1 "ENTRY_10252d00"
 
-undefined4 * Recovered_FUN_10252d00::FUN_10252d00(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10252d00::FUN_10252d00(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -9773,7 +9805,7 @@ undefined4 * Recovered_FUN_10252d00::FUN_10252d00(undefined4 *param_2,SCStr *par
 // Reference entry 1025cc20; body size 103 bytes.
 #line 1 "ENTRY_1025cc20"
 
-undefined4 * Recovered_FUN_1025cc20::FUN_1025cc20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1025cc20::FUN_1025cc20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -9805,7 +9837,7 @@ undefined4 * Recovered_FUN_1025cc20::FUN_1025cc20(undefined4 *param_2,SCStr *par
 // Reference entry 1025cca0; body size 103 bytes.
 #line 1 "ENTRY_1025cca0"
 
-undefined4 * Recovered_FUN_1025cca0::FUN_1025cca0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1025cca0::FUN_1025cca0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -9837,7 +9869,7 @@ undefined4 * Recovered_FUN_1025cca0::FUN_1025cca0(undefined4 *param_2,SCStr *par
 // Reference entry 1025cd20; body size 103 bytes.
 #line 1 "ENTRY_1025cd20"
 
-undefined4 * Recovered_FUN_1025cd20::FUN_1025cd20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1025cd20::FUN_1025cd20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -9869,7 +9901,7 @@ undefined4 * Recovered_FUN_1025cd20::FUN_1025cd20(undefined4 *param_2,SCStr *par
 // Reference entry 1025cda0; body size 103 bytes.
 #line 1 "ENTRY_1025cda0"
 
-undefined4 * Recovered_FUN_1025cda0::FUN_1025cda0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1025cda0::FUN_1025cda0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -9901,7 +9933,7 @@ undefined4 * Recovered_FUN_1025cda0::FUN_1025cda0(undefined4 *param_2,SCStr *par
 // Reference entry 1025ce20; body size 103 bytes.
 #line 1 "ENTRY_1025ce20"
 
-undefined4 * Recovered_FUN_1025ce20::FUN_1025ce20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1025ce20::FUN_1025ce20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -9933,7 +9965,7 @@ undefined4 * Recovered_FUN_1025ce20::FUN_1025ce20(undefined4 *param_2,SCStr *par
 // Reference entry 1025db40; body size 46 bytes.
 #line 1 "ENTRY_1025db40"
 
-SCStr * Recovered_FUN_1025db40::FUN_1025db40(SCStr *param_2)
+SCStr * Recovered_1025db40::FUN_1025db40(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -9949,7 +9981,7 @@ SCStr * Recovered_FUN_1025db40::FUN_1025db40(SCStr *param_2)
 // Reference entry 1025db80; body size 46 bytes.
 #line 1 "ENTRY_1025db80"
 
-SCStr * Recovered_FUN_1025db80::FUN_1025db80(SCStr *param_2)
+SCStr * Recovered_1025db80::FUN_1025db80(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -9965,7 +9997,7 @@ SCStr * Recovered_FUN_1025db80::FUN_1025db80(SCStr *param_2)
 // Reference entry 1025dbc0; body size 46 bytes.
 #line 1 "ENTRY_1025dbc0"
 
-SCStr * Recovered_FUN_1025dbc0::FUN_1025dbc0(SCStr *param_2)
+SCStr * Recovered_1025dbc0::FUN_1025dbc0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -9981,7 +10013,7 @@ SCStr * Recovered_FUN_1025dbc0::FUN_1025dbc0(SCStr *param_2)
 // Reference entry 1025dc00; body size 46 bytes.
 #line 1 "ENTRY_1025dc00"
 
-SCStr * Recovered_FUN_1025dc00::FUN_1025dc00(SCStr *param_2)
+SCStr * Recovered_1025dc00::FUN_1025dc00(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -9997,7 +10029,7 @@ SCStr * Recovered_FUN_1025dc00::FUN_1025dc00(SCStr *param_2)
 // Reference entry 1025df70; body size 103 bytes.
 #line 1 "ENTRY_1025df70"
 
-undefined4 * Recovered_FUN_1025df70::FUN_1025df70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1025df70::FUN_1025df70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -10040,7 +10072,7 @@ SCStr * FUN_1025e510(SCStr *param_1)
 // Reference entry 1025e6a0; body size 103 bytes.
 #line 1 "ENTRY_1025e6a0"
 
-undefined4 * Recovered_FUN_1025e6a0::FUN_1025e6a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1025e6a0::FUN_1025e6a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -10142,7 +10174,7 @@ bool FUN_10261d60(SCStr *param_1)
 // Reference entry 10262310; body size 103 bytes.
 #line 1 "ENTRY_10262310"
 
-undefined4 * Recovered_FUN_10262310::FUN_10262310(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10262310::FUN_10262310(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -10174,7 +10206,7 @@ undefined4 * Recovered_FUN_10262310::FUN_10262310(undefined4 *param_2,SCStr *par
 // Reference entry 10262390; body size 135 bytes.
 #line 1 "ENTRY_10262390"
 
-undefined4 * Recovered_FUN_10262390::FUN_10262390(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10262390::FUN_10262390(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -10207,7 +10239,7 @@ undefined4 * Recovered_FUN_10262390::FUN_10262390(undefined4 *param_2,SCStr *par
 // Reference entry 10262440; body size 135 bytes.
 #line 1 "ENTRY_10262440"
 
-undefined4 * Recovered_FUN_10262440::FUN_10262440(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10262440::FUN_10262440(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -10240,7 +10272,7 @@ undefined4 * Recovered_FUN_10262440::FUN_10262440(undefined4 *param_2,SCStr *par
 // Reference entry 102624f0; body size 103 bytes.
 #line 1 "ENTRY_102624f0"
 
-undefined4 * Recovered_FUN_102624f0::FUN_102624f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102624f0::FUN_102624f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -10272,7 +10304,7 @@ undefined4 * Recovered_FUN_102624f0::FUN_102624f0(undefined4 *param_2,SCStr *par
 // Reference entry 1026cd00; body size 103 bytes.
 #line 1 "ENTRY_1026cd00"
 
-undefined4 * Recovered_FUN_1026cd00::FUN_1026cd00(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1026cd00::FUN_1026cd00(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -10304,7 +10336,7 @@ undefined4 * Recovered_FUN_1026cd00::FUN_1026cd00(undefined4 *param_2,SCStr *par
 // Reference entry 1026cd80; body size 103 bytes.
 #line 1 "ENTRY_1026cd80"
 
-undefined4 * Recovered_FUN_1026cd80::FUN_1026cd80(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1026cd80::FUN_1026cd80(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -10336,7 +10368,7 @@ undefined4 * Recovered_FUN_1026cd80::FUN_1026cd80(undefined4 *param_2,SCStr *par
 // Reference entry 1026ce00; body size 103 bytes.
 #line 1 "ENTRY_1026ce00"
 
-undefined4 * Recovered_FUN_1026ce00::FUN_1026ce00(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1026ce00::FUN_1026ce00(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -10368,7 +10400,7 @@ undefined4 * Recovered_FUN_1026ce00::FUN_1026ce00(undefined4 *param_2,SCStr *par
 // Reference entry 1026ce80; body size 103 bytes.
 #line 1 "ENTRY_1026ce80"
 
-undefined4 * Recovered_FUN_1026ce80::FUN_1026ce80(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1026ce80::FUN_1026ce80(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -10400,7 +10432,7 @@ undefined4 * Recovered_FUN_1026ce80::FUN_1026ce80(undefined4 *param_2,SCStr *par
 // Reference entry 1026e060; body size 103 bytes.
 #line 1 "ENTRY_1026e060"
 
-undefined4 * Recovered_FUN_1026e060::FUN_1026e060(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1026e060::FUN_1026e060(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -10432,7 +10464,7 @@ undefined4 * Recovered_FUN_1026e060::FUN_1026e060(undefined4 *param_2,SCStr *par
 // Reference entry 10271800; body size 103 bytes.
 #line 1 "ENTRY_10271800"
 
-undefined4 * Recovered_FUN_10271800::FUN_10271800(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10271800::FUN_10271800(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -10464,7 +10496,7 @@ undefined4 * Recovered_FUN_10271800::FUN_10271800(undefined4 *param_2,SCStr *par
 // Reference entry 10271880; body size 103 bytes.
 #line 1 "ENTRY_10271880"
 
-undefined4 * Recovered_FUN_10271880::FUN_10271880(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10271880::FUN_10271880(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -10496,7 +10528,7 @@ undefined4 * Recovered_FUN_10271880::FUN_10271880(undefined4 *param_2,SCStr *par
 // Reference entry 102796e0; body size 103 bytes.
 #line 1 "ENTRY_102796e0"
 
-undefined4 * Recovered_FUN_102796e0::FUN_102796e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102796e0::FUN_102796e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -10528,7 +10560,7 @@ undefined4 * Recovered_FUN_102796e0::FUN_102796e0(undefined4 *param_2,SCStr *par
 // Reference entry 10279760; body size 103 bytes.
 #line 1 "ENTRY_10279760"
 
-undefined4 * Recovered_FUN_10279760::FUN_10279760(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10279760::FUN_10279760(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -10659,7 +10691,7 @@ SCStr * FUN_102824a0(SCStr *param_1)
 // Reference entry 10282d90; body size 103 bytes.
 #line 1 "ENTRY_10282d90"
 
-undefined4 * Recovered_FUN_10282d90::FUN_10282d90(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10282d90::FUN_10282d90(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -10691,7 +10723,7 @@ undefined4 * Recovered_FUN_10282d90::FUN_10282d90(undefined4 *param_2,SCStr *par
 // Reference entry 10282e10; body size 103 bytes.
 #line 1 "ENTRY_10282e10"
 
-undefined4 * Recovered_FUN_10282e10::FUN_10282e10(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10282e10::FUN_10282e10(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -10723,7 +10755,7 @@ undefined4 * Recovered_FUN_10282e10::FUN_10282e10(undefined4 *param_2,SCStr *par
 // Reference entry 10282e90; body size 103 bytes.
 #line 1 "ENTRY_10282e90"
 
-undefined4 * Recovered_FUN_10282e90::FUN_10282e90(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10282e90::FUN_10282e90(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -10777,7 +10809,7 @@ SCStr * FUN_10287ff0(SCStr *param_1)
 // Reference entry 1028a680; body size 103 bytes.
 #line 1 "ENTRY_1028a680"
 
-undefined4 * Recovered_FUN_1028a680::FUN_1028a680(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1028a680::FUN_1028a680(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -10809,7 +10841,7 @@ undefined4 * Recovered_FUN_1028a680::FUN_1028a680(undefined4 *param_2,SCStr *par
 // Reference entry 1028c9f0; body size 55 bytes.
 #line 1 "ENTRY_1028c9f0"
 
-void Recovered_FUN_1028c9f0::FUN_1028c9f0(int *param_2,SCStr *param_3)
+void Recovered_1028c9f0::FUN_1028c9f0(int *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -10847,7 +10879,7 @@ void FUN_10290460(void)
 // Reference entry 102922f0; body size 125 bytes.
 #line 1 "ENTRY_102922f0"
 
-SCStr * Recovered_FUN_102922f0::FUN_102922f0(SCStr *param_2)
+SCStr * Recovered_102922f0::FUN_102922f0(SCStr *param_2)
 
 {
   int * param_1 = (int *)this;
@@ -10877,7 +10909,7 @@ SCStr * Recovered_FUN_102922f0::FUN_102922f0(SCStr *param_2)
 // Reference entry 102935e0; body size 103 bytes.
 #line 1 "ENTRY_102935e0"
 
-undefined4 * Recovered_FUN_102935e0::FUN_102935e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102935e0::FUN_102935e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -10909,7 +10941,7 @@ undefined4 * Recovered_FUN_102935e0::FUN_102935e0(undefined4 *param_2,SCStr *par
 // Reference entry 10293660; body size 103 bytes.
 #line 1 "ENTRY_10293660"
 
-undefined4 * Recovered_FUN_10293660::FUN_10293660(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10293660::FUN_10293660(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11007,7 +11039,7 @@ SCStr * FUN_1029b330(SCStr *param_1)
 // Reference entry 1029c270; body size 103 bytes.
 #line 1 "ENTRY_1029c270"
 
-undefined4 * Recovered_FUN_1029c270::FUN_1029c270(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1029c270::FUN_1029c270(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11039,7 +11071,7 @@ undefined4 * Recovered_FUN_1029c270::FUN_1029c270(undefined4 *param_2,SCStr *par
 // Reference entry 1029c2f0; body size 103 bytes.
 #line 1 "ENTRY_1029c2f0"
 
-undefined4 * Recovered_FUN_1029c2f0::FUN_1029c2f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1029c2f0::FUN_1029c2f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11071,7 +11103,7 @@ undefined4 * Recovered_FUN_1029c2f0::FUN_1029c2f0(undefined4 *param_2,SCStr *par
 // Reference entry 1029c370; body size 103 bytes.
 #line 1 "ENTRY_1029c370"
 
-undefined4 * Recovered_FUN_1029c370::FUN_1029c370(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1029c370::FUN_1029c370(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11103,7 +11135,7 @@ undefined4 * Recovered_FUN_1029c370::FUN_1029c370(undefined4 *param_2,SCStr *par
 // Reference entry 1029c3f0; body size 103 bytes.
 #line 1 "ENTRY_1029c3f0"
 
-undefined4 * Recovered_FUN_1029c3f0::FUN_1029c3f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1029c3f0::FUN_1029c3f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11135,7 +11167,7 @@ undefined4 * Recovered_FUN_1029c3f0::FUN_1029c3f0(undefined4 *param_2,SCStr *par
 // Reference entry 1029c470; body size 103 bytes.
 #line 1 "ENTRY_1029c470"
 
-undefined4 * Recovered_FUN_1029c470::FUN_1029c470(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1029c470::FUN_1029c470(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11167,7 +11199,7 @@ undefined4 * Recovered_FUN_1029c470::FUN_1029c470(undefined4 *param_2,SCStr *par
 // Reference entry 1029c4f0; body size 103 bytes.
 #line 1 "ENTRY_1029c4f0"
 
-undefined4 * Recovered_FUN_1029c4f0::FUN_1029c4f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1029c4f0::FUN_1029c4f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11199,7 +11231,7 @@ undefined4 * Recovered_FUN_1029c4f0::FUN_1029c4f0(undefined4 *param_2,SCStr *par
 // Reference entry 1029c570; body size 103 bytes.
 #line 1 "ENTRY_1029c570"
 
-undefined4 * Recovered_FUN_1029c570::FUN_1029c570(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1029c570::FUN_1029c570(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11231,7 +11263,7 @@ undefined4 * Recovered_FUN_1029c570::FUN_1029c570(undefined4 *param_2,SCStr *par
 // Reference entry 1029c800; body size 69 bytes.
 #line 1 "ENTRY_1029c800"
 
-void Recovered_FUN_1029c800::FUN_1029c800(SCStr *param_2,SCStr *param_3)
+void Recovered_1029c800::FUN_1029c800(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -11256,7 +11288,7 @@ void Recovered_FUN_1029c800::FUN_1029c800(SCStr *param_2,SCStr *param_3)
 // Reference entry 1029db20; body size 103 bytes.
 #line 1 "ENTRY_1029db20"
 
-undefined4 * Recovered_FUN_1029db20::FUN_1029db20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1029db20::FUN_1029db20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11288,7 +11320,7 @@ undefined4 * Recovered_FUN_1029db20::FUN_1029db20(undefined4 *param_2,SCStr *par
 // Reference entry 1029e800; body size 103 bytes.
 #line 1 "ENTRY_1029e800"
 
-undefined4 * Recovered_FUN_1029e800::FUN_1029e800(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1029e800::FUN_1029e800(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11320,7 +11352,7 @@ undefined4 * Recovered_FUN_1029e800::FUN_1029e800(undefined4 *param_2,SCStr *par
 // Reference entry 102a1640; body size 103 bytes.
 #line 1 "ENTRY_102a1640"
 
-undefined4 * Recovered_FUN_102a1640::FUN_102a1640(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102a1640::FUN_102a1640(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11352,7 +11384,7 @@ undefined4 * Recovered_FUN_102a1640::FUN_102a1640(undefined4 *param_2,SCStr *par
 // Reference entry 102aa8a0; body size 318 bytes.
 #line 1 "ENTRY_102aa8a0"
 
-int Recovered_FUN_102aa8a0::FUN_102aa8a0(int param_2)
+int Recovered_102aa8a0::FUN_102aa8a0(int param_2)
 
 {
   int param_1 = (int)this;
@@ -11513,7 +11545,7 @@ undefined1 FUN_102b8380(SCStr *param_1)
 // Reference entry 102b8960; body size 103 bytes.
 #line 1 "ENTRY_102b8960"
 
-undefined4 * Recovered_FUN_102b8960::FUN_102b8960(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102b8960::FUN_102b8960(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11545,7 +11577,7 @@ undefined4 * Recovered_FUN_102b8960::FUN_102b8960(undefined4 *param_2,SCStr *par
 // Reference entry 102b89e0; body size 103 bytes.
 #line 1 "ENTRY_102b89e0"
 
-undefined4 * Recovered_FUN_102b89e0::FUN_102b89e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102b89e0::FUN_102b89e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11577,7 +11609,7 @@ undefined4 * Recovered_FUN_102b89e0::FUN_102b89e0(undefined4 *param_2,SCStr *par
 // Reference entry 102b8a60; body size 150 bytes.
 #line 1 "ENTRY_102b8a60"
 
-undefined4 * Recovered_FUN_102b8a60::FUN_102b8a60(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102b8a60::FUN_102b8a60(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11621,7 +11653,7 @@ undefined4 * Recovered_FUN_102b8a60::FUN_102b8a60(undefined4 *param_2,SCStr *par
 // Reference entry 102b8b30; body size 103 bytes.
 #line 1 "ENTRY_102b8b30"
 
-undefined4 * Recovered_FUN_102b8b30::FUN_102b8b30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102b8b30::FUN_102b8b30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11653,7 +11685,7 @@ undefined4 * Recovered_FUN_102b8b30::FUN_102b8b30(undefined4 *param_2,SCStr *par
 // Reference entry 102b8bb0; body size 103 bytes.
 #line 1 "ENTRY_102b8bb0"
 
-undefined4 * Recovered_FUN_102b8bb0::FUN_102b8bb0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102b8bb0::FUN_102b8bb0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11685,7 +11717,7 @@ undefined4 * Recovered_FUN_102b8bb0::FUN_102b8bb0(undefined4 *param_2,SCStr *par
 // Reference entry 102b8c30; body size 103 bytes.
 #line 1 "ENTRY_102b8c30"
 
-undefined4 * Recovered_FUN_102b8c30::FUN_102b8c30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102b8c30::FUN_102b8c30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11717,7 +11749,7 @@ undefined4 * Recovered_FUN_102b8c30::FUN_102b8c30(undefined4 *param_2,SCStr *par
 // Reference entry 102b8cb0; body size 103 bytes.
 #line 1 "ENTRY_102b8cb0"
 
-undefined4 * Recovered_FUN_102b8cb0::FUN_102b8cb0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102b8cb0::FUN_102b8cb0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11749,7 +11781,7 @@ undefined4 * Recovered_FUN_102b8cb0::FUN_102b8cb0(undefined4 *param_2,SCStr *par
 // Reference entry 102c0020; body size 103 bytes.
 #line 1 "ENTRY_102c0020"
 
-undefined4 * Recovered_FUN_102c0020::FUN_102c0020(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102c0020::FUN_102c0020(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11803,7 +11835,7 @@ SCStr * FUN_102c0900(SCStr *param_1)
 // Reference entry 102c09e0; body size 103 bytes.
 #line 1 "ENTRY_102c09e0"
 
-undefined4 * Recovered_FUN_102c09e0::FUN_102c09e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102c09e0::FUN_102c09e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11835,7 +11867,7 @@ undefined4 * Recovered_FUN_102c09e0::FUN_102c09e0(undefined4 *param_2,SCStr *par
 // Reference entry 102c2140; body size 103 bytes.
 #line 1 "ENTRY_102c2140"
 
-undefined4 * Recovered_FUN_102c2140::FUN_102c2140(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102c2140::FUN_102c2140(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11867,7 +11899,7 @@ undefined4 * Recovered_FUN_102c2140::FUN_102c2140(undefined4 *param_2,SCStr *par
 // Reference entry 102c21c0; body size 103 bytes.
 #line 1 "ENTRY_102c21c0"
 
-undefined4 * Recovered_FUN_102c21c0::FUN_102c21c0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102c21c0::FUN_102c21c0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -11899,7 +11931,7 @@ undefined4 * Recovered_FUN_102c21c0::FUN_102c21c0(undefined4 *param_2,SCStr *par
 // Reference entry 102c6e60; body size 80 bytes.
 #line 1 "ENTRY_102c6e60"
 
-void Recovered_FUN_102c6e60::FUN_102c6e60(undefined4 param_2,SCStr *param_3)
+void Recovered_102c6e60::FUN_102c6e60(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -11950,7 +11982,7 @@ SCStr * FUN_102c75b0(SCStr *param_1)
 // Reference entry 102c75d0; body size 34 bytes.
 #line 1 "ENTRY_102c75d0"
 
-SCStr * Recovered_FUN_102c75d0::FUN_102c75d0(SCStr *param_2)
+SCStr * Recovered_102c75d0::FUN_102c75d0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -11990,7 +12022,7 @@ SCStr * FUN_102c7c70(SCStr *param_1)
 // Reference entry 102c9950; body size 103 bytes.
 #line 1 "ENTRY_102c9950"
 
-undefined4 * Recovered_FUN_102c9950::FUN_102c9950(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102c9950::FUN_102c9950(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -12022,7 +12054,7 @@ undefined4 * Recovered_FUN_102c9950::FUN_102c9950(undefined4 *param_2,SCStr *par
 // Reference entry 102c99d0; body size 103 bytes.
 #line 1 "ENTRY_102c99d0"
 
-undefined4 * Recovered_FUN_102c99d0::FUN_102c99d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102c99d0::FUN_102c99d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -12054,7 +12086,7 @@ undefined4 * Recovered_FUN_102c99d0::FUN_102c99d0(undefined4 *param_2,SCStr *par
 // Reference entry 102c9bf0; body size 103 bytes.
 #line 1 "ENTRY_102c9bf0"
 
-undefined4 * Recovered_FUN_102c9bf0::FUN_102c9bf0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102c9bf0::FUN_102c9bf0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -12086,7 +12118,7 @@ undefined4 * Recovered_FUN_102c9bf0::FUN_102c9bf0(undefined4 *param_2,SCStr *par
 // Reference entry 102c9c70; body size 150 bytes.
 #line 1 "ENTRY_102c9c70"
 
-undefined4 * Recovered_FUN_102c9c70::FUN_102c9c70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102c9c70::FUN_102c9c70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -12130,7 +12162,7 @@ undefined4 * Recovered_FUN_102c9c70::FUN_102c9c70(undefined4 *param_2,SCStr *par
 // Reference entry 102c9d40; body size 135 bytes.
 #line 1 "ENTRY_102c9d40"
 
-undefined4 * Recovered_FUN_102c9d40::FUN_102c9d40(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102c9d40::FUN_102c9d40(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -12174,7 +12206,7 @@ SCStr * FUN_102cf580(SCStr *param_1)
 // Reference entry 102d1830; body size 103 bytes.
 #line 1 "ENTRY_102d1830"
 
-undefined4 * Recovered_FUN_102d1830::FUN_102d1830(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102d1830::FUN_102d1830(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -12206,7 +12238,7 @@ undefined4 * Recovered_FUN_102d1830::FUN_102d1830(undefined4 *param_2,SCStr *par
 // Reference entry 102d4990; body size 118 bytes.
 #line 1 "ENTRY_102d4990"
 
-void Recovered_FUN_102d4990::FUN_102d4990(undefined4 param_2,SCStr *param_3)
+void Recovered_102d4990::FUN_102d4990(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -12324,7 +12356,7 @@ SCStr * FUN_102d5e20(SCStr *param_1,undefined4 param_2)
 // Reference entry 102d7230; body size 103 bytes.
 #line 1 "ENTRY_102d7230"
 
-undefined4 * Recovered_FUN_102d7230::FUN_102d7230(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102d7230::FUN_102d7230(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -12356,7 +12388,7 @@ undefined4 * Recovered_FUN_102d7230::FUN_102d7230(undefined4 *param_2,SCStr *par
 // Reference entry 102d72b0; body size 103 bytes.
 #line 1 "ENTRY_102d72b0"
 
-undefined4 * Recovered_FUN_102d72b0::FUN_102d72b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102d72b0::FUN_102d72b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -12388,7 +12420,7 @@ undefined4 * Recovered_FUN_102d72b0::FUN_102d72b0(undefined4 *param_2,SCStr *par
 // Reference entry 102db880; body size 103 bytes.
 #line 1 "ENTRY_102db880"
 
-undefined4 * Recovered_FUN_102db880::FUN_102db880(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102db880::FUN_102db880(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -12473,7 +12505,7 @@ void FUN_102dd640(undefined4 param_1,SCStr *param_2)
 // Reference entry 102de670; body size 37 bytes.
 #line 1 "ENTRY_102de670"
 
-void Recovered_FUN_102de670::FUN_102de670(char *param_2,undefined4 param_3)
+void Recovered_102de670::FUN_102de670(char *param_2,undefined4 param_3)
 
 {
   int param_1 = (int)this;
@@ -12520,7 +12552,7 @@ undefined4 __fastcall FUN_102de750(int param_1)
 // Reference entry 102de7c0; body size 103 bytes.
 #line 1 "ENTRY_102de7c0"
 
-undefined4 * Recovered_FUN_102de7c0::FUN_102de7c0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102de7c0::FUN_102de7c0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -12552,7 +12584,7 @@ undefined4 * Recovered_FUN_102de7c0::FUN_102de7c0(undefined4 *param_2,SCStr *par
 // Reference entry 102e4cd0; body size 103 bytes.
 #line 1 "ENTRY_102e4cd0"
 
-undefined4 * Recovered_FUN_102e4cd0::FUN_102e4cd0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102e4cd0::FUN_102e4cd0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -12628,7 +12660,7 @@ SCStr * FUN_102f53f0(SCStr *param_1)
 // Reference entry 102f70f0; body size 77 bytes.
 #line 1 "ENTRY_102f70f0"
 
-SCStr * Recovered_FUN_102f70f0::FUN_102f70f0(SCStr *param_2)
+SCStr * Recovered_102f70f0::FUN_102f70f0(SCStr *param_2)
 
 {
   int * param_1 = (int *)this;
@@ -12662,7 +12694,7 @@ SCStr * FUN_102f7450(SCStr *param_1)
 // Reference entry 102f7470; body size 54 bytes.
 #line 1 "ENTRY_102f7470"
 
-SCStr * Recovered_FUN_102f7470::FUN_102f7470(SCStr *param_2)
+SCStr * Recovered_102f7470::FUN_102f7470(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -12678,7 +12710,7 @@ SCStr * Recovered_FUN_102f7470::FUN_102f7470(SCStr *param_2)
 // Reference entry 102fe600; body size 103 bytes.
 #line 1 "ENTRY_102fe600"
 
-undefined4 * Recovered_FUN_102fe600::FUN_102fe600(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102fe600::FUN_102fe600(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -12710,7 +12742,7 @@ undefined4 * Recovered_FUN_102fe600::FUN_102fe600(undefined4 *param_2,SCStr *par
 // Reference entry 102fe680; body size 150 bytes.
 #line 1 "ENTRY_102fe680"
 
-undefined4 * Recovered_FUN_102fe680::FUN_102fe680(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102fe680::FUN_102fe680(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -12754,7 +12786,7 @@ undefined4 * Recovered_FUN_102fe680::FUN_102fe680(undefined4 *param_2,SCStr *par
 // Reference entry 102fe750; body size 103 bytes.
 #line 1 "ENTRY_102fe750"
 
-undefined4 * Recovered_FUN_102fe750::FUN_102fe750(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102fe750::FUN_102fe750(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -12786,7 +12818,7 @@ undefined4 * Recovered_FUN_102fe750::FUN_102fe750(undefined4 *param_2,SCStr *par
 // Reference entry 102fe7d0; body size 103 bytes.
 #line 1 "ENTRY_102fe7d0"
 
-undefined4 * Recovered_FUN_102fe7d0::FUN_102fe7d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102fe7d0::FUN_102fe7d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -12818,7 +12850,7 @@ undefined4 * Recovered_FUN_102fe7d0::FUN_102fe7d0(undefined4 *param_2,SCStr *par
 // Reference entry 102fe850; body size 103 bytes.
 #line 1 "ENTRY_102fe850"
 
-undefined4 * Recovered_FUN_102fe850::FUN_102fe850(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_102fe850::FUN_102fe850(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -12872,7 +12904,7 @@ SCStr * FUN_103021d0(SCStr *param_1)
 // Reference entry 10302f10; body size 103 bytes.
 #line 1 "ENTRY_10302f10"
 
-undefined4 * Recovered_FUN_10302f10::FUN_10302f10(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10302f10::FUN_10302f10(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -12918,7 +12950,7 @@ SCStr * FUN_1031dc60(SCStr *param_1)
 // Reference entry 10320820; body size 51 bytes.
 #line 1 "ENTRY_10320820"
 
-SCStr * Recovered_FUN_10320820::FUN_10320820(SCStr *param_2)
+SCStr * Recovered_10320820::FUN_10320820(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -12934,7 +12966,7 @@ SCStr * Recovered_FUN_10320820::FUN_10320820(SCStr *param_2)
 // Reference entry 103208b0; body size 58 bytes.
 #line 1 "ENTRY_103208b0"
 
-SCStr * Recovered_FUN_103208b0::FUN_103208b0(SCStr *param_2)
+SCStr * Recovered_103208b0::FUN_103208b0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -12964,7 +12996,7 @@ SCStr * FUN_10320900(SCStr *param_1)
 // Reference entry 10320a30; body size 61 bytes.
 #line 1 "ENTRY_10320a30"
 
-SCStr * Recovered_FUN_10320a30::FUN_10320a30(SCStr *param_2)
+SCStr * Recovered_10320a30::FUN_10320a30(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -12988,7 +13020,7 @@ SCStr * Recovered_FUN_10320a30::FUN_10320a30(SCStr *param_2)
 // Reference entry 10320aa0; body size 51 bytes.
 #line 1 "ENTRY_10320aa0"
 
-SCStr * Recovered_FUN_10320aa0::FUN_10320aa0(SCStr *param_2)
+SCStr * Recovered_10320aa0::FUN_10320aa0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -13059,7 +13091,7 @@ SCStr * FUN_10322ee0(SCStr *param_1)
 // Reference entry 10322fe0; body size 51 bytes.
 #line 1 "ENTRY_10322fe0"
 
-SCStr * Recovered_FUN_10322fe0::FUN_10322fe0(SCStr *param_2)
+SCStr * Recovered_10322fe0::FUN_10322fe0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -13078,7 +13110,7 @@ SCStr * Recovered_FUN_10322fe0::FUN_10322fe0(SCStr *param_2)
 // Reference entry 10323df0; body size 58 bytes.
 #line 1 "ENTRY_10323df0"
 
-SCStr * Recovered_FUN_10323df0::FUN_10323df0(SCStr *param_2)
+SCStr * Recovered_10323df0::FUN_10323df0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -13099,7 +13131,7 @@ SCStr * Recovered_FUN_10323df0::FUN_10323df0(SCStr *param_2)
 // Reference entry 103296b0; body size 103 bytes.
 #line 1 "ENTRY_103296b0"
 
-undefined4 * Recovered_FUN_103296b0::FUN_103296b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103296b0::FUN_103296b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -13131,7 +13163,7 @@ undefined4 * Recovered_FUN_103296b0::FUN_103296b0(undefined4 *param_2,SCStr *par
 // Reference entry 10329730; body size 103 bytes.
 #line 1 "ENTRY_10329730"
 
-undefined4 * Recovered_FUN_10329730::FUN_10329730(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10329730::FUN_10329730(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -13163,7 +13195,7 @@ undefined4 * Recovered_FUN_10329730::FUN_10329730(undefined4 *param_2,SCStr *par
 // Reference entry 103297b0; body size 103 bytes.
 #line 1 "ENTRY_103297b0"
 
-undefined4 * Recovered_FUN_103297b0::FUN_103297b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103297b0::FUN_103297b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -13195,7 +13227,7 @@ undefined4 * Recovered_FUN_103297b0::FUN_103297b0(undefined4 *param_2,SCStr *par
 // Reference entry 10329830; body size 103 bytes.
 #line 1 "ENTRY_10329830"
 
-undefined4 * Recovered_FUN_10329830::FUN_10329830(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10329830::FUN_10329830(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -13227,7 +13259,7 @@ undefined4 * Recovered_FUN_10329830::FUN_10329830(undefined4 *param_2,SCStr *par
 // Reference entry 103298b0; body size 103 bytes.
 #line 1 "ENTRY_103298b0"
 
-undefined4 * Recovered_FUN_103298b0::FUN_103298b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103298b0::FUN_103298b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -13259,7 +13291,7 @@ undefined4 * Recovered_FUN_103298b0::FUN_103298b0(undefined4 *param_2,SCStr *par
 // Reference entry 10329df0; body size 103 bytes.
 #line 1 "ENTRY_10329df0"
 
-undefined4 * Recovered_FUN_10329df0::FUN_10329df0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10329df0::FUN_10329df0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -13291,7 +13323,7 @@ undefined4 * Recovered_FUN_10329df0::FUN_10329df0(undefined4 *param_2,SCStr *par
 // Reference entry 10329e70; body size 103 bytes.
 #line 1 "ENTRY_10329e70"
 
-undefined4 * Recovered_FUN_10329e70::FUN_10329e70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10329e70::FUN_10329e70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -13323,7 +13355,7 @@ undefined4 * Recovered_FUN_10329e70::FUN_10329e70(undefined4 *param_2,SCStr *par
 // Reference entry 10329ef0; body size 103 bytes.
 #line 1 "ENTRY_10329ef0"
 
-undefined4 * Recovered_FUN_10329ef0::FUN_10329ef0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10329ef0::FUN_10329ef0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -13355,7 +13387,7 @@ undefined4 * Recovered_FUN_10329ef0::FUN_10329ef0(undefined4 *param_2,SCStr *par
 // Reference entry 10329f70; body size 103 bytes.
 #line 1 "ENTRY_10329f70"
 
-undefined4 * Recovered_FUN_10329f70::FUN_10329f70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10329f70::FUN_10329f70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -13387,7 +13419,7 @@ undefined4 * Recovered_FUN_10329f70::FUN_10329f70(undefined4 *param_2,SCStr *par
 // Reference entry 10329ff0; body size 103 bytes.
 #line 1 "ENTRY_10329ff0"
 
-undefined4 * Recovered_FUN_10329ff0::FUN_10329ff0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10329ff0::FUN_10329ff0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -13419,7 +13451,7 @@ undefined4 * Recovered_FUN_10329ff0::FUN_10329ff0(undefined4 *param_2,SCStr *par
 // Reference entry 1032a070; body size 103 bytes.
 #line 1 "ENTRY_1032a070"
 
-undefined4 * Recovered_FUN_1032a070::FUN_1032a070(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1032a070::FUN_1032a070(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -13451,7 +13483,7 @@ undefined4 * Recovered_FUN_1032a070::FUN_1032a070(undefined4 *param_2,SCStr *par
 // Reference entry 1032a840; body size 69 bytes.
 #line 1 "ENTRY_1032a840"
 
-void Recovered_FUN_1032a840::FUN_1032a840(SCStr *param_2,SCStr *param_3)
+void Recovered_1032a840::FUN_1032a840(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -13476,7 +13508,7 @@ void Recovered_FUN_1032a840::FUN_1032a840(SCStr *param_2,SCStr *param_3)
 // Reference entry 1032a8a0; body size 69 bytes.
 #line 1 "ENTRY_1032a8a0"
 
-void Recovered_FUN_1032a8a0::FUN_1032a8a0(SCStr *param_2,SCStr *param_3)
+void Recovered_1032a8a0::FUN_1032a8a0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -13501,7 +13533,7 @@ void Recovered_FUN_1032a8a0::FUN_1032a8a0(SCStr *param_2,SCStr *param_3)
 // Reference entry 1032a900; body size 69 bytes.
 #line 1 "ENTRY_1032a900"
 
-void Recovered_FUN_1032a900::FUN_1032a900(SCStr *param_2,SCStr *param_3)
+void Recovered_1032a900::FUN_1032a900(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -13526,7 +13558,7 @@ void Recovered_FUN_1032a900::FUN_1032a900(SCStr *param_2,SCStr *param_3)
 // Reference entry 1032a960; body size 69 bytes.
 #line 1 "ENTRY_1032a960"
 
-void Recovered_FUN_1032a960::FUN_1032a960(SCStr *param_2,SCStr *param_3)
+void Recovered_1032a960::FUN_1032a960(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -13551,7 +13583,7 @@ void Recovered_FUN_1032a960::FUN_1032a960(SCStr *param_2,SCStr *param_3)
 // Reference entry 1032a9c0; body size 69 bytes.
 #line 1 "ENTRY_1032a9c0"
 
-void Recovered_FUN_1032a9c0::FUN_1032a9c0(SCStr *param_2,SCStr *param_3)
+void Recovered_1032a9c0::FUN_1032a9c0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -13598,7 +13630,7 @@ SCStr * FUN_1034d8d0(SCStr *param_1)
 // Reference entry 1034ebe0; body size 103 bytes.
 #line 1 "ENTRY_1034ebe0"
 
-undefined4 * Recovered_FUN_1034ebe0::FUN_1034ebe0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1034ebe0::FUN_1034ebe0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -13630,7 +13662,7 @@ undefined4 * Recovered_FUN_1034ebe0::FUN_1034ebe0(undefined4 *param_2,SCStr *par
 // Reference entry 10376e70; body size 37 bytes.
 #line 1 "ENTRY_10376e70"
 
-void Recovered_FUN_10376e70::FUN_10376e70(undefined4 param_2,SCStr *param_3)
+void Recovered_10376e70::FUN_10376e70(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -13647,7 +13679,7 @@ void Recovered_FUN_10376e70::FUN_10376e70(undefined4 param_2,SCStr *param_3)
 // Reference entry 10376ed0; body size 156 bytes.
 #line 1 "ENTRY_10376ed0"
 
-void Recovered_FUN_10376ed0::FUN_10376ed0(undefined4 param_2,SCStr *param_3)
+void Recovered_10376ed0::FUN_10376ed0(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -13682,7 +13714,7 @@ void Recovered_FUN_10376ed0::FUN_10376ed0(undefined4 param_2,SCStr *param_3)
 // Reference entry 10376fa0; body size 123 bytes.
 #line 1 "ENTRY_10376fa0"
 
-void Recovered_FUN_10376fa0::FUN_10376fa0(undefined4 param_2,SCStr *param_3)
+void Recovered_10376fa0::FUN_10376fa0(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -13712,7 +13744,7 @@ void Recovered_FUN_10376fa0::FUN_10376fa0(undefined4 param_2,SCStr *param_3)
 // Reference entry 10377040; body size 556 bytes.
 #line 1 "ENTRY_10377040"
 
-void Recovered_FUN_10377040::FUN_10377040(undefined4 param_2,SCStr *param_3)
+void Recovered_10377040::FUN_10377040(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -13807,7 +13839,7 @@ void Recovered_FUN_10377040::FUN_10377040(undefined4 param_2,SCStr *param_3)
 // Reference entry 10377300; body size 156 bytes.
 #line 1 "ENTRY_10377300"
 
-void Recovered_FUN_10377300::FUN_10377300(undefined4 param_2,SCStr *param_3)
+void Recovered_10377300::FUN_10377300(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -13842,7 +13874,7 @@ void Recovered_FUN_10377300::FUN_10377300(undefined4 param_2,SCStr *param_3)
 // Reference entry 103773d0; body size 193 bytes.
 #line 1 "ENTRY_103773d0"
 
-void Recovered_FUN_103773d0::FUN_103773d0(undefined4 param_2,SCStr *param_3)
+void Recovered_103773d0::FUN_103773d0(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -14024,7 +14056,7 @@ void FUN_1038f1a0(SCStr *param_1)
 // Reference entry 103909e0; body size 97 bytes.
 #line 1 "ENTRY_103909e0"
 
-void Recovered_FUN_103909e0::FUN_103909e0(int param_2)
+void Recovered_103909e0::FUN_103909e0(int param_2)
 
 {
   int param_1 = (int)this;
@@ -14054,7 +14086,7 @@ void Recovered_FUN_103909e0::FUN_103909e0(int param_2)
 // Reference entry 10391190; body size 200 bytes.
 #line 1 "ENTRY_10391190"
 
-void Recovered_FUN_10391190::FUN_10391190(int param_2)
+void Recovered_10391190::FUN_10391190(int param_2)
 
 {
   int param_1 = (int)this;
@@ -14110,7 +14142,7 @@ void Recovered_FUN_10391190::FUN_10391190(int param_2)
 // Reference entry 10391290; body size 142 bytes.
 #line 1 "ENTRY_10391290"
 
-void Recovered_FUN_10391290::FUN_10391290(int param_2)
+void Recovered_10391290::FUN_10391290(int param_2)
 
 {
   int param_1 = (int)this;
@@ -14148,7 +14180,7 @@ void Recovered_FUN_10391290::FUN_10391290(int param_2)
 // Reference entry 10391350; body size 82 bytes.
 #line 1 "ENTRY_10391350"
 
-void Recovered_FUN_10391350::FUN_10391350(int param_2)
+void Recovered_10391350::FUN_10391350(int param_2)
 
 {
   int param_1 = (int)this;
@@ -14175,7 +14207,7 @@ void Recovered_FUN_10391350::FUN_10391350(int param_2)
 // Reference entry 10391510; body size 117 bytes.
 #line 1 "ENTRY_10391510"
 
-void Recovered_FUN_10391510::FUN_10391510(int param_2)
+void Recovered_10391510::FUN_10391510(int param_2)
 
 {
   int param_1 = (int)this;
@@ -14218,7 +14250,7 @@ void Recovered_FUN_10391510::FUN_10391510(int param_2)
 // Reference entry 10393c20; body size 103 bytes.
 #line 1 "ENTRY_10393c20"
 
-undefined4 * Recovered_FUN_10393c20::FUN_10393c20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10393c20::FUN_10393c20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -14250,7 +14282,7 @@ undefined4 * Recovered_FUN_10393c20::FUN_10393c20(undefined4 *param_2,SCStr *par
 // Reference entry 10393ca0; body size 103 bytes.
 #line 1 "ENTRY_10393ca0"
 
-undefined4 * Recovered_FUN_10393ca0::FUN_10393ca0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10393ca0::FUN_10393ca0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -14282,7 +14314,7 @@ undefined4 * Recovered_FUN_10393ca0::FUN_10393ca0(undefined4 *param_2,SCStr *par
 // Reference entry 10393d20; body size 103 bytes.
 #line 1 "ENTRY_10393d20"
 
-undefined4 * Recovered_FUN_10393d20::FUN_10393d20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10393d20::FUN_10393d20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -14314,7 +14346,7 @@ undefined4 * Recovered_FUN_10393d20::FUN_10393d20(undefined4 *param_2,SCStr *par
 // Reference entry 10393da0; body size 103 bytes.
 #line 1 "ENTRY_10393da0"
 
-undefined4 * Recovered_FUN_10393da0::FUN_10393da0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10393da0::FUN_10393da0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -14346,7 +14378,7 @@ undefined4 * Recovered_FUN_10393da0::FUN_10393da0(undefined4 *param_2,SCStr *par
 // Reference entry 10393e20; body size 103 bytes.
 #line 1 "ENTRY_10393e20"
 
-undefined4 * Recovered_FUN_10393e20::FUN_10393e20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10393e20::FUN_10393e20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -14378,7 +14410,7 @@ undefined4 * Recovered_FUN_10393e20::FUN_10393e20(undefined4 *param_2,SCStr *par
 // Reference entry 10393ea0; body size 103 bytes.
 #line 1 "ENTRY_10393ea0"
 
-undefined4 * Recovered_FUN_10393ea0::FUN_10393ea0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10393ea0::FUN_10393ea0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -14410,7 +14442,7 @@ undefined4 * Recovered_FUN_10393ea0::FUN_10393ea0(undefined4 *param_2,SCStr *par
 // Reference entry 10393f20; body size 103 bytes.
 #line 1 "ENTRY_10393f20"
 
-undefined4 * Recovered_FUN_10393f20::FUN_10393f20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10393f20::FUN_10393f20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -14442,7 +14474,7 @@ undefined4 * Recovered_FUN_10393f20::FUN_10393f20(undefined4 *param_2,SCStr *par
 // Reference entry 10394170; body size 103 bytes.
 #line 1 "ENTRY_10394170"
 
-undefined4 * Recovered_FUN_10394170::FUN_10394170(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10394170::FUN_10394170(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -14474,7 +14506,7 @@ undefined4 * Recovered_FUN_10394170::FUN_10394170(undefined4 *param_2,SCStr *par
 // Reference entry 103941f0; body size 103 bytes.
 #line 1 "ENTRY_103941f0"
 
-undefined4 * Recovered_FUN_103941f0::FUN_103941f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103941f0::FUN_103941f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -14506,7 +14538,7 @@ undefined4 * Recovered_FUN_103941f0::FUN_103941f0(undefined4 *param_2,SCStr *par
 // Reference entry 10394270; body size 103 bytes.
 #line 1 "ENTRY_10394270"
 
-undefined4 * Recovered_FUN_10394270::FUN_10394270(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10394270::FUN_10394270(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -14538,7 +14570,7 @@ undefined4 * Recovered_FUN_10394270::FUN_10394270(undefined4 *param_2,SCStr *par
 // Reference entry 103942f0; body size 103 bytes.
 #line 1 "ENTRY_103942f0"
 
-undefined4 * Recovered_FUN_103942f0::FUN_103942f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103942f0::FUN_103942f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -14570,7 +14602,7 @@ undefined4 * Recovered_FUN_103942f0::FUN_103942f0(undefined4 *param_2,SCStr *par
 // Reference entry 10394370; body size 103 bytes.
 #line 1 "ENTRY_10394370"
 
-undefined4 * Recovered_FUN_10394370::FUN_10394370(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10394370::FUN_10394370(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -14602,7 +14634,7 @@ undefined4 * Recovered_FUN_10394370::FUN_10394370(undefined4 *param_2,SCStr *par
 // Reference entry 10394dc0; body size 69 bytes.
 #line 1 "ENTRY_10394dc0"
 
-void Recovered_FUN_10394dc0::FUN_10394dc0(SCStr *param_2,SCStr *param_3)
+void Recovered_10394dc0::FUN_10394dc0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -14627,7 +14659,7 @@ void Recovered_FUN_10394dc0::FUN_10394dc0(SCStr *param_2,SCStr *param_3)
 // Reference entry 103a13d0; body size 143 bytes.
 #line 1 "ENTRY_103a13d0"
 
-undefined1 Recovered_FUN_103a13d0::FUN_103a13d0(SCStr *param_2)
+undefined1 Recovered_103a13d0::FUN_103a13d0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -14708,7 +14740,7 @@ SCStr * FUN_103a1540(SCStr *param_1)
 // Reference entry 103a1560; body size 25 bytes.
 #line 1 "ENTRY_103a1560"
 
-SCStr * Recovered_FUN_103a1560::FUN_103a1560(SCStr *param_2)
+SCStr * Recovered_103a1560::FUN_103a1560(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -14720,7 +14752,7 @@ SCStr * Recovered_FUN_103a1560::FUN_103a1560(SCStr *param_2)
 // Reference entry 103a15c0; body size 25 bytes.
 #line 1 "ENTRY_103a15c0"
 
-SCStr * Recovered_FUN_103a15c0::FUN_103a15c0(SCStr *param_2)
+SCStr * Recovered_103a15c0::FUN_103a15c0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -14732,7 +14764,7 @@ SCStr * Recovered_FUN_103a15c0::FUN_103a15c0(SCStr *param_2)
 // Reference entry 103a15e0; body size 25 bytes.
 #line 1 "ENTRY_103a15e0"
 
-SCStr * Recovered_FUN_103a15e0::FUN_103a15e0(SCStr *param_2)
+SCStr * Recovered_103a15e0::FUN_103a15e0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -14744,7 +14776,7 @@ SCStr * Recovered_FUN_103a15e0::FUN_103a15e0(SCStr *param_2)
 // Reference entry 103a17e0; body size 40 bytes.
 #line 1 "ENTRY_103a17e0"
 
-undefined4 Recovered_FUN_103a17e0::FUN_103a17e0(undefined4 param_2)
+undefined4 Recovered_103a17e0::FUN_103a17e0(undefined4 param_2)
 
 {
   int param_1 = (int)this;
@@ -14782,7 +14814,7 @@ SCStr * FUN_103a1870(SCStr *param_1)
 // Reference entry 103a1fb0; body size 22 bytes.
 #line 1 "ENTRY_103a1fb0"
 
-SCStr * Recovered_FUN_103a1fb0::FUN_103a1fb0(SCStr *param_2)
+SCStr * Recovered_103a1fb0::FUN_103a1fb0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -14794,7 +14826,7 @@ SCStr * Recovered_FUN_103a1fb0::FUN_103a1fb0(SCStr *param_2)
 // Reference entry 103a3530; body size 103 bytes.
 #line 1 "ENTRY_103a3530"
 
-undefined4 * Recovered_FUN_103a3530::FUN_103a3530(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103a3530::FUN_103a3530(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -14826,7 +14858,7 @@ undefined4 * Recovered_FUN_103a3530::FUN_103a3530(undefined4 *param_2,SCStr *par
 // Reference entry 103a35b0; body size 103 bytes.
 #line 1 "ENTRY_103a35b0"
 
-undefined4 * Recovered_FUN_103a35b0::FUN_103a35b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103a35b0::FUN_103a35b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -14858,7 +14890,7 @@ undefined4 * Recovered_FUN_103a35b0::FUN_103a35b0(undefined4 *param_2,SCStr *par
 // Reference entry 103a3630; body size 103 bytes.
 #line 1 "ENTRY_103a3630"
 
-undefined4 * Recovered_FUN_103a3630::FUN_103a3630(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103a3630::FUN_103a3630(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -14890,7 +14922,7 @@ undefined4 * Recovered_FUN_103a3630::FUN_103a3630(undefined4 *param_2,SCStr *par
 // Reference entry 103a36b0; body size 103 bytes.
 #line 1 "ENTRY_103a36b0"
 
-undefined4 * Recovered_FUN_103a36b0::FUN_103a36b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103a36b0::FUN_103a36b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -14922,7 +14954,7 @@ undefined4 * Recovered_FUN_103a36b0::FUN_103a36b0(undefined4 *param_2,SCStr *par
 // Reference entry 103a39e0; body size 103 bytes.
 #line 1 "ENTRY_103a39e0"
 
-undefined4 * Recovered_FUN_103a39e0::FUN_103a39e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103a39e0::FUN_103a39e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -14954,7 +14986,7 @@ undefined4 * Recovered_FUN_103a39e0::FUN_103a39e0(undefined4 *param_2,SCStr *par
 // Reference entry 103a3d70; body size 69 bytes.
 #line 1 "ENTRY_103a3d70"
 
-void Recovered_FUN_103a3d70::FUN_103a3d70(SCStr *param_2,SCStr *param_3)
+void Recovered_103a3d70::FUN_103a3d70(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -14979,7 +15011,7 @@ void Recovered_FUN_103a3d70::FUN_103a3d70(SCStr *param_2,SCStr *param_3)
 // Reference entry 103a3dd0; body size 69 bytes.
 #line 1 "ENTRY_103a3dd0"
 
-void Recovered_FUN_103a3dd0::FUN_103a3dd0(SCStr *param_2,SCStr *param_3)
+void Recovered_103a3dd0::FUN_103a3dd0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -15004,7 +15036,7 @@ void Recovered_FUN_103a3dd0::FUN_103a3dd0(SCStr *param_2,SCStr *param_3)
 // Reference entry 103b6a40; body size 90 bytes.
 #line 1 "ENTRY_103b6a40"
 
-void Recovered_FUN_103b6a40::FUN_103b6a40(undefined4 param_2,SCStr *param_3)
+void Recovered_103b6a40::FUN_103b6a40(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -15075,7 +15107,7 @@ SCStr * FUN_103b78c0(SCStr *param_1)
 // Reference entry 103b8b80; body size 116 bytes.
 #line 1 "ENTRY_103b8b80"
 
-void Recovered_FUN_103b8b80::FUN_103b8b80(SCStr *param_2,SCStr *param_3)
+void Recovered_103b8b80::FUN_103b8b80(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -15100,7 +15132,7 @@ void Recovered_FUN_103b8b80::FUN_103b8b80(SCStr *param_2,SCStr *param_3)
 // Reference entry 103b8c20; body size 116 bytes.
 #line 1 "ENTRY_103b8c20"
 
-void Recovered_FUN_103b8c20::FUN_103b8c20(SCStr *param_2)
+void Recovered_103b8c20::FUN_103b8c20(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -15125,7 +15157,7 @@ void Recovered_FUN_103b8c20::FUN_103b8c20(SCStr *param_2)
 // Reference entry 103b9950; body size 77 bytes.
 #line 1 "ENTRY_103b9950"
 
-void Recovered_FUN_103b9950::FUN_103b9950(SCStr *param_2,undefined4 *param_3)
+void Recovered_103b9950::FUN_103b9950(SCStr *param_2,undefined4 *param_3)
 
 {
   int param_1 = (int)this;
@@ -15170,7 +15202,7 @@ void __fastcall FUN_103ba040(int param_1)
 // Reference entry 103bcf70; body size 103 bytes.
 #line 1 "ENTRY_103bcf70"
 
-undefined4 * Recovered_FUN_103bcf70::FUN_103bcf70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103bcf70::FUN_103bcf70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -15202,7 +15234,7 @@ undefined4 * Recovered_FUN_103bcf70::FUN_103bcf70(undefined4 *param_2,SCStr *par
 // Reference entry 103bd030; body size 103 bytes.
 #line 1 "ENTRY_103bd030"
 
-undefined4 * Recovered_FUN_103bd030::FUN_103bd030(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103bd030::FUN_103bd030(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -15234,7 +15266,7 @@ undefined4 * Recovered_FUN_103bd030::FUN_103bd030(undefined4 *param_2,SCStr *par
 // Reference entry 103bd0b0; body size 103 bytes.
 #line 1 "ENTRY_103bd0b0"
 
-undefined4 * Recovered_FUN_103bd0b0::FUN_103bd0b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103bd0b0::FUN_103bd0b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -15266,7 +15298,7 @@ undefined4 * Recovered_FUN_103bd0b0::FUN_103bd0b0(undefined4 *param_2,SCStr *par
 // Reference entry 103bd130; body size 103 bytes.
 #line 1 "ENTRY_103bd130"
 
-undefined4 * Recovered_FUN_103bd130::FUN_103bd130(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103bd130::FUN_103bd130(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -15298,7 +15330,7 @@ undefined4 * Recovered_FUN_103bd130::FUN_103bd130(undefined4 *param_2,SCStr *par
 // Reference entry 103bd1f0; body size 103 bytes.
 #line 1 "ENTRY_103bd1f0"
 
-undefined4 * Recovered_FUN_103bd1f0::FUN_103bd1f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103bd1f0::FUN_103bd1f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -15330,7 +15362,7 @@ undefined4 * Recovered_FUN_103bd1f0::FUN_103bd1f0(undefined4 *param_2,SCStr *par
 // Reference entry 103bd270; body size 103 bytes.
 #line 1 "ENTRY_103bd270"
 
-undefined4 * Recovered_FUN_103bd270::FUN_103bd270(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103bd270::FUN_103bd270(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -15362,7 +15394,7 @@ undefined4 * Recovered_FUN_103bd270::FUN_103bd270(undefined4 *param_2,SCStr *par
 // Reference entry 103bf250; body size 103 bytes.
 #line 1 "ENTRY_103bf250"
 
-undefined4 * Recovered_FUN_103bf250::FUN_103bf250(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103bf250::FUN_103bf250(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -15416,7 +15448,7 @@ SCStr * FUN_103c82d0(SCStr *param_1)
 // Reference entry 103ca9d0; body size 103 bytes.
 #line 1 "ENTRY_103ca9d0"
 
-undefined4 * Recovered_FUN_103ca9d0::FUN_103ca9d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103ca9d0::FUN_103ca9d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -15448,7 +15480,7 @@ undefined4 * Recovered_FUN_103ca9d0::FUN_103ca9d0(undefined4 *param_2,SCStr *par
 // Reference entry 103caa50; body size 103 bytes.
 #line 1 "ENTRY_103caa50"
 
-undefined4 * Recovered_FUN_103caa50::FUN_103caa50(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103caa50::FUN_103caa50(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -15480,7 +15512,7 @@ undefined4 * Recovered_FUN_103caa50::FUN_103caa50(undefined4 *param_2,SCStr *par
 // Reference entry 103caad0; body size 103 bytes.
 #line 1 "ENTRY_103caad0"
 
-undefined4 * Recovered_FUN_103caad0::FUN_103caad0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103caad0::FUN_103caad0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -15512,7 +15544,7 @@ undefined4 * Recovered_FUN_103caad0::FUN_103caad0(undefined4 *param_2,SCStr *par
 // Reference entry 103cab50; body size 103 bytes.
 #line 1 "ENTRY_103cab50"
 
-undefined4 * Recovered_FUN_103cab50::FUN_103cab50(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103cab50::FUN_103cab50(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -15544,7 +15576,7 @@ undefined4 * Recovered_FUN_103cab50::FUN_103cab50(undefined4 *param_2,SCStr *par
 // Reference entry 103cb7b0; body size 69 bytes.
 #line 1 "ENTRY_103cb7b0"
 
-void Recovered_FUN_103cb7b0::FUN_103cb7b0(SCStr *param_2,SCStr *param_3)
+void Recovered_103cb7b0::FUN_103cb7b0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -15569,7 +15601,7 @@ void Recovered_FUN_103cb7b0::FUN_103cb7b0(SCStr *param_2,SCStr *param_3)
 // Reference entry 103cb810; body size 69 bytes.
 #line 1 "ENTRY_103cb810"
 
-void Recovered_FUN_103cb810::FUN_103cb810(SCStr *param_2,SCStr *param_3)
+void Recovered_103cb810::FUN_103cb810(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -15594,7 +15626,7 @@ void Recovered_FUN_103cb810::FUN_103cb810(SCStr *param_2,SCStr *param_3)
 // Reference entry 103d0b10; body size 121 bytes.
 #line 1 "ENTRY_103d0b10"
 
-SCStr * Recovered_FUN_103d0b10::FUN_103d0b10(SCStr *param_2)
+SCStr * Recovered_103d0b10::FUN_103d0b10(SCStr *param_2)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -15628,7 +15660,7 @@ SCStr * Recovered_FUN_103d0b10::FUN_103d0b10(SCStr *param_2)
 // Reference entry 103d5e70; body size 103 bytes.
 #line 1 "ENTRY_103d5e70"
 
-undefined4 * Recovered_FUN_103d5e70::FUN_103d5e70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103d5e70::FUN_103d5e70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -15847,7 +15879,7 @@ SCStr * FUN_103eb860(SCStr *param_1)
 // Reference entry 103f1f80; body size 103 bytes.
 #line 1 "ENTRY_103f1f80"
 
-undefined4 * Recovered_FUN_103f1f80::FUN_103f1f80(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103f1f80::FUN_103f1f80(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -15879,7 +15911,7 @@ undefined4 * Recovered_FUN_103f1f80::FUN_103f1f80(undefined4 *param_2,SCStr *par
 // Reference entry 103f2000; body size 103 bytes.
 #line 1 "ENTRY_103f2000"
 
-undefined4 * Recovered_FUN_103f2000::FUN_103f2000(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103f2000::FUN_103f2000(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -15911,7 +15943,7 @@ undefined4 * Recovered_FUN_103f2000::FUN_103f2000(undefined4 *param_2,SCStr *par
 // Reference entry 103f2080; body size 103 bytes.
 #line 1 "ENTRY_103f2080"
 
-undefined4 * Recovered_FUN_103f2080::FUN_103f2080(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103f2080::FUN_103f2080(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -15943,7 +15975,7 @@ undefined4 * Recovered_FUN_103f2080::FUN_103f2080(undefined4 *param_2,SCStr *par
 // Reference entry 103f2100; body size 103 bytes.
 #line 1 "ENTRY_103f2100"
 
-undefined4 * Recovered_FUN_103f2100::FUN_103f2100(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103f2100::FUN_103f2100(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -15975,7 +16007,7 @@ undefined4 * Recovered_FUN_103f2100::FUN_103f2100(undefined4 *param_2,SCStr *par
 // Reference entry 103f2180; body size 103 bytes.
 #line 1 "ENTRY_103f2180"
 
-undefined4 * Recovered_FUN_103f2180::FUN_103f2180(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103f2180::FUN_103f2180(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -16007,7 +16039,7 @@ undefined4 * Recovered_FUN_103f2180::FUN_103f2180(undefined4 *param_2,SCStr *par
 // Reference entry 103f2200; body size 103 bytes.
 #line 1 "ENTRY_103f2200"
 
-undefined4 * Recovered_FUN_103f2200::FUN_103f2200(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103f2200::FUN_103f2200(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -16039,7 +16071,7 @@ undefined4 * Recovered_FUN_103f2200::FUN_103f2200(undefined4 *param_2,SCStr *par
 // Reference entry 103f2280; body size 103 bytes.
 #line 1 "ENTRY_103f2280"
 
-undefined4 * Recovered_FUN_103f2280::FUN_103f2280(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103f2280::FUN_103f2280(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -16071,7 +16103,7 @@ undefined4 * Recovered_FUN_103f2280::FUN_103f2280(undefined4 *param_2,SCStr *par
 // Reference entry 103f2300; body size 103 bytes.
 #line 1 "ENTRY_103f2300"
 
-undefined4 * Recovered_FUN_103f2300::FUN_103f2300(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103f2300::FUN_103f2300(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -16103,7 +16135,7 @@ undefined4 * Recovered_FUN_103f2300::FUN_103f2300(undefined4 *param_2,SCStr *par
 // Reference entry 103f2380; body size 103 bytes.
 #line 1 "ENTRY_103f2380"
 
-undefined4 * Recovered_FUN_103f2380::FUN_103f2380(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103f2380::FUN_103f2380(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -16135,7 +16167,7 @@ undefined4 * Recovered_FUN_103f2380::FUN_103f2380(undefined4 *param_2,SCStr *par
 // Reference entry 103f2400; body size 103 bytes.
 #line 1 "ENTRY_103f2400"
 
-undefined4 * Recovered_FUN_103f2400::FUN_103f2400(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103f2400::FUN_103f2400(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -16167,7 +16199,7 @@ undefined4 * Recovered_FUN_103f2400::FUN_103f2400(undefined4 *param_2,SCStr *par
 // Reference entry 103f2480; body size 103 bytes.
 #line 1 "ENTRY_103f2480"
 
-undefined4 * Recovered_FUN_103f2480::FUN_103f2480(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103f2480::FUN_103f2480(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -16199,7 +16231,7 @@ undefined4 * Recovered_FUN_103f2480::FUN_103f2480(undefined4 *param_2,SCStr *par
 // Reference entry 103f2500; body size 103 bytes.
 #line 1 "ENTRY_103f2500"
 
-undefined4 * Recovered_FUN_103f2500::FUN_103f2500(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103f2500::FUN_103f2500(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -16231,7 +16263,7 @@ undefined4 * Recovered_FUN_103f2500::FUN_103f2500(undefined4 *param_2,SCStr *par
 // Reference entry 103f2580; body size 103 bytes.
 #line 1 "ENTRY_103f2580"
 
-undefined4 * Recovered_FUN_103f2580::FUN_103f2580(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103f2580::FUN_103f2580(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -16263,7 +16295,7 @@ undefined4 * Recovered_FUN_103f2580::FUN_103f2580(undefined4 *param_2,SCStr *par
 // Reference entry 103f2600; body size 103 bytes.
 #line 1 "ENTRY_103f2600"
 
-undefined4 * Recovered_FUN_103f2600::FUN_103f2600(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103f2600::FUN_103f2600(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -16295,7 +16327,7 @@ undefined4 * Recovered_FUN_103f2600::FUN_103f2600(undefined4 *param_2,SCStr *par
 // Reference entry 103f2680; body size 103 bytes.
 #line 1 "ENTRY_103f2680"
 
-undefined4 * Recovered_FUN_103f2680::FUN_103f2680(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103f2680::FUN_103f2680(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -16327,7 +16359,7 @@ undefined4 * Recovered_FUN_103f2680::FUN_103f2680(undefined4 *param_2,SCStr *par
 // Reference entry 103f2700; body size 103 bytes.
 #line 1 "ENTRY_103f2700"
 
-undefined4 * Recovered_FUN_103f2700::FUN_103f2700(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103f2700::FUN_103f2700(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -16359,7 +16391,7 @@ undefined4 * Recovered_FUN_103f2700::FUN_103f2700(undefined4 *param_2,SCStr *par
 // Reference entry 103f2780; body size 103 bytes.
 #line 1 "ENTRY_103f2780"
 
-undefined4 * Recovered_FUN_103f2780::FUN_103f2780(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103f2780::FUN_103f2780(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -16391,7 +16423,7 @@ undefined4 * Recovered_FUN_103f2780::FUN_103f2780(undefined4 *param_2,SCStr *par
 // Reference entry 103f2800; body size 103 bytes.
 #line 1 "ENTRY_103f2800"
 
-undefined4 * Recovered_FUN_103f2800::FUN_103f2800(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_103f2800::FUN_103f2800(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -16423,7 +16455,7 @@ undefined4 * Recovered_FUN_103f2800::FUN_103f2800(undefined4 *param_2,SCStr *par
 // Reference entry 103f2950; body size 69 bytes.
 #line 1 "ENTRY_103f2950"
 
-void Recovered_FUN_103f2950::FUN_103f2950(SCStr *param_2,SCStr *param_3)
+void Recovered_103f2950::FUN_103f2950(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -16448,7 +16480,7 @@ void Recovered_FUN_103f2950::FUN_103f2950(SCStr *param_2,SCStr *param_3)
 // Reference entry 103f29b0; body size 69 bytes.
 #line 1 "ENTRY_103f29b0"
 
-void Recovered_FUN_103f29b0::FUN_103f29b0(SCStr *param_2,SCStr *param_3)
+void Recovered_103f29b0::FUN_103f29b0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -16473,7 +16505,7 @@ void Recovered_FUN_103f29b0::FUN_103f29b0(SCStr *param_2,SCStr *param_3)
 // Reference entry 103f2a10; body size 69 bytes.
 #line 1 "ENTRY_103f2a10"
 
-void Recovered_FUN_103f2a10::FUN_103f2a10(SCStr *param_2,SCStr *param_3)
+void Recovered_103f2a10::FUN_103f2a10(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -16498,7 +16530,7 @@ void Recovered_FUN_103f2a10::FUN_103f2a10(SCStr *param_2,SCStr *param_3)
 // Reference entry 103f2a70; body size 69 bytes.
 #line 1 "ENTRY_103f2a70"
 
-void Recovered_FUN_103f2a70::FUN_103f2a70(SCStr *param_2,SCStr *param_3)
+void Recovered_103f2a70::FUN_103f2a70(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -16523,7 +16555,7 @@ void Recovered_FUN_103f2a70::FUN_103f2a70(SCStr *param_2,SCStr *param_3)
 // Reference entry 103f2ad0; body size 69 bytes.
 #line 1 "ENTRY_103f2ad0"
 
-void Recovered_FUN_103f2ad0::FUN_103f2ad0(SCStr *param_2,SCStr *param_3)
+void Recovered_103f2ad0::FUN_103f2ad0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -16548,7 +16580,7 @@ void Recovered_FUN_103f2ad0::FUN_103f2ad0(SCStr *param_2,SCStr *param_3)
 // Reference entry 103f2b30; body size 69 bytes.
 #line 1 "ENTRY_103f2b30"
 
-void Recovered_FUN_103f2b30::FUN_103f2b30(SCStr *param_2,SCStr *param_3)
+void Recovered_103f2b30::FUN_103f2b30(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -16573,7 +16605,7 @@ void Recovered_FUN_103f2b30::FUN_103f2b30(SCStr *param_2,SCStr *param_3)
 // Reference entry 103f2b90; body size 69 bytes.
 #line 1 "ENTRY_103f2b90"
 
-void Recovered_FUN_103f2b90::FUN_103f2b90(SCStr *param_2,SCStr *param_3)
+void Recovered_103f2b90::FUN_103f2b90(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -16598,7 +16630,7 @@ void Recovered_FUN_103f2b90::FUN_103f2b90(SCStr *param_2,SCStr *param_3)
 // Reference entry 103f2bf0; body size 69 bytes.
 #line 1 "ENTRY_103f2bf0"
 
-void Recovered_FUN_103f2bf0::FUN_103f2bf0(SCStr *param_2,SCStr *param_3)
+void Recovered_103f2bf0::FUN_103f2bf0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -16623,7 +16655,7 @@ void Recovered_FUN_103f2bf0::FUN_103f2bf0(SCStr *param_2,SCStr *param_3)
 // Reference entry 103f2c50; body size 69 bytes.
 #line 1 "ENTRY_103f2c50"
 
-void Recovered_FUN_103f2c50::FUN_103f2c50(SCStr *param_2,SCStr *param_3)
+void Recovered_103f2c50::FUN_103f2c50(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -16648,7 +16680,7 @@ void Recovered_FUN_103f2c50::FUN_103f2c50(SCStr *param_2,SCStr *param_3)
 // Reference entry 103f2cb0; body size 69 bytes.
 #line 1 "ENTRY_103f2cb0"
 
-void Recovered_FUN_103f2cb0::FUN_103f2cb0(SCStr *param_2,SCStr *param_3)
+void Recovered_103f2cb0::FUN_103f2cb0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -16673,7 +16705,7 @@ void Recovered_FUN_103f2cb0::FUN_103f2cb0(SCStr *param_2,SCStr *param_3)
 // Reference entry 103f2d10; body size 69 bytes.
 #line 1 "ENTRY_103f2d10"
 
-void Recovered_FUN_103f2d10::FUN_103f2d10(SCStr *param_2,SCStr *param_3)
+void Recovered_103f2d10::FUN_103f2d10(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -16698,7 +16730,7 @@ void Recovered_FUN_103f2d10::FUN_103f2d10(SCStr *param_2,SCStr *param_3)
 // Reference entry 103f2d70; body size 69 bytes.
 #line 1 "ENTRY_103f2d70"
 
-void Recovered_FUN_103f2d70::FUN_103f2d70(SCStr *param_2,SCStr *param_3)
+void Recovered_103f2d70::FUN_103f2d70(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -16723,7 +16755,7 @@ void Recovered_FUN_103f2d70::FUN_103f2d70(SCStr *param_2,SCStr *param_3)
 // Reference entry 103f2dd0; body size 69 bytes.
 #line 1 "ENTRY_103f2dd0"
 
-void Recovered_FUN_103f2dd0::FUN_103f2dd0(SCStr *param_2,SCStr *param_3)
+void Recovered_103f2dd0::FUN_103f2dd0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -16748,7 +16780,7 @@ void Recovered_FUN_103f2dd0::FUN_103f2dd0(SCStr *param_2,SCStr *param_3)
 // Reference entry 103f2e30; body size 69 bytes.
 #line 1 "ENTRY_103f2e30"
 
-void Recovered_FUN_103f2e30::FUN_103f2e30(SCStr *param_2,SCStr *param_3)
+void Recovered_103f2e30::FUN_103f2e30(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -16773,7 +16805,7 @@ void Recovered_FUN_103f2e30::FUN_103f2e30(SCStr *param_2,SCStr *param_3)
 // Reference entry 103f2e90; body size 69 bytes.
 #line 1 "ENTRY_103f2e90"
 
-void Recovered_FUN_103f2e90::FUN_103f2e90(SCStr *param_2,SCStr *param_3)
+void Recovered_103f2e90::FUN_103f2e90(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -16798,7 +16830,7 @@ void Recovered_FUN_103f2e90::FUN_103f2e90(SCStr *param_2,SCStr *param_3)
 // Reference entry 103f2ef0; body size 69 bytes.
 #line 1 "ENTRY_103f2ef0"
 
-void Recovered_FUN_103f2ef0::FUN_103f2ef0(SCStr *param_2,SCStr *param_3)
+void Recovered_103f2ef0::FUN_103f2ef0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -16823,7 +16855,7 @@ void Recovered_FUN_103f2ef0::FUN_103f2ef0(SCStr *param_2,SCStr *param_3)
 // Reference entry 103f2f50; body size 69 bytes.
 #line 1 "ENTRY_103f2f50"
 
-void Recovered_FUN_103f2f50::FUN_103f2f50(SCStr *param_2,SCStr *param_3)
+void Recovered_103f2f50::FUN_103f2f50(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -16848,7 +16880,7 @@ void Recovered_FUN_103f2f50::FUN_103f2f50(SCStr *param_2,SCStr *param_3)
 // Reference entry 103ff080; body size 156 bytes.
 #line 1 "ENTRY_103ff080"
 
-void Recovered_FUN_103ff080::FUN_103ff080(undefined4 param_2,SCStr *param_3)
+void Recovered_103ff080::FUN_103ff080(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -16921,7 +16953,7 @@ void __fastcall FUN_10401800(int param_1)
 // Reference entry 10401ad0; body size 103 bytes.
 #line 1 "ENTRY_10401ad0"
 
-undefined4 * Recovered_FUN_10401ad0::FUN_10401ad0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10401ad0::FUN_10401ad0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -16953,7 +16985,7 @@ undefined4 * Recovered_FUN_10401ad0::FUN_10401ad0(undefined4 *param_2,SCStr *par
 // Reference entry 10401b50; body size 103 bytes.
 #line 1 "ENTRY_10401b50"
 
-undefined4 * Recovered_FUN_10401b50::FUN_10401b50(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10401b50::FUN_10401b50(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -16985,7 +17017,7 @@ undefined4 * Recovered_FUN_10401b50::FUN_10401b50(undefined4 *param_2,SCStr *par
 // Reference entry 10401bd0; body size 103 bytes.
 #line 1 "ENTRY_10401bd0"
 
-undefined4 * Recovered_FUN_10401bd0::FUN_10401bd0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10401bd0::FUN_10401bd0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -17017,7 +17049,7 @@ undefined4 * Recovered_FUN_10401bd0::FUN_10401bd0(undefined4 *param_2,SCStr *par
 // Reference entry 104043f0; body size 103 bytes.
 #line 1 "ENTRY_104043f0"
 
-undefined4 * Recovered_FUN_104043f0::FUN_104043f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104043f0::FUN_104043f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -17049,7 +17081,7 @@ undefined4 * Recovered_FUN_104043f0::FUN_104043f0(undefined4 *param_2,SCStr *par
 // Reference entry 1040cc60; body size 103 bytes.
 #line 1 "ENTRY_1040cc60"
 
-undefined4 * Recovered_FUN_1040cc60::FUN_1040cc60(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1040cc60::FUN_1040cc60(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -17081,7 +17113,7 @@ undefined4 * Recovered_FUN_1040cc60::FUN_1040cc60(undefined4 *param_2,SCStr *par
 // Reference entry 1040fdd0; body size 124 bytes.
 #line 1 "ENTRY_1040fdd0"
 
-void Recovered_FUN_1040fdd0::FUN_1040fdd0(int *param_2,SCStr *param_3,uint param_4)
+void Recovered_1040fdd0::FUN_1040fdd0(int *param_2,SCStr *param_3,uint param_4)
 
 {
   int param_1 = (int)this;
@@ -17119,7 +17151,7 @@ void Recovered_FUN_1040fdd0::FUN_1040fdd0(int *param_2,SCStr *param_3,uint param
 // Reference entry 104109b0; body size 55 bytes.
 #line 1 "ENTRY_104109b0"
 
-void Recovered_FUN_104109b0::FUN_104109b0(int *param_2,SCStr *param_3)
+void Recovered_104109b0::FUN_104109b0(int *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -17141,7 +17173,7 @@ void Recovered_FUN_104109b0::FUN_104109b0(int *param_2,SCStr *param_3)
 // Reference entry 10412b50; body size 57 bytes.
 #line 1 "ENTRY_10412b50"
 
-void Recovered_FUN_10412b50::FUN_10412b50(undefined4 param_2,undefined4 param_3)
+void Recovered_10412b50::FUN_10412b50(undefined4 param_2,undefined4 param_3)
 
 {
   int param_1 = (int)this;
@@ -17167,7 +17199,7 @@ void Recovered_FUN_10412b50::FUN_10412b50(undefined4 param_2,undefined4 param_3)
 // Reference entry 10413680; body size 19 bytes.
 #line 1 "ENTRY_10413680"
 
-uint Recovered_FUN_10413680::FUN_10413680(SCStr *param_2)
+uint Recovered_10413680::FUN_10413680(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -17205,7 +17237,7 @@ undefined4 FUN_10413a10(SCStr *param_1)
 // Reference entry 10414e10; body size 103 bytes.
 #line 1 "ENTRY_10414e10"
 
-undefined4 * Recovered_FUN_10414e10::FUN_10414e10(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10414e10::FUN_10414e10(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -17237,7 +17269,7 @@ undefined4 * Recovered_FUN_10414e10::FUN_10414e10(undefined4 *param_2,SCStr *par
 // Reference entry 10414e90; body size 103 bytes.
 #line 1 "ENTRY_10414e90"
 
-undefined4 * Recovered_FUN_10414e90::FUN_10414e90(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10414e90::FUN_10414e90(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -17361,7 +17393,7 @@ SCStr * FUN_10419d90(SCStr *param_1)
 // Reference entry 1041a680; body size 106 bytes.
 #line 1 "ENTRY_1041a680"
 
-SCStr * Recovered_FUN_1041a680::FUN_1041a680(SCStr *param_2)
+SCStr * Recovered_1041a680::FUN_1041a680(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -17413,7 +17445,7 @@ SCStr * FUN_1041c010(SCStr *param_1)
 // Reference entry 1041ccb0; body size 103 bytes.
 #line 1 "ENTRY_1041ccb0"
 
-undefined4 * Recovered_FUN_1041ccb0::FUN_1041ccb0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1041ccb0::FUN_1041ccb0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -17445,7 +17477,7 @@ undefined4 * Recovered_FUN_1041ccb0::FUN_1041ccb0(undefined4 *param_2,SCStr *par
 // Reference entry 1041cd30; body size 103 bytes.
 #line 1 "ENTRY_1041cd30"
 
-undefined4 * Recovered_FUN_1041cd30::FUN_1041cd30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1041cd30::FUN_1041cd30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -17543,7 +17575,7 @@ SCStr * FUN_10422f90(SCStr *param_1)
 // Reference entry 104238d0; body size 103 bytes.
 #line 1 "ENTRY_104238d0"
 
-undefined4 * Recovered_FUN_104238d0::FUN_104238d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104238d0::FUN_104238d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -17575,7 +17607,7 @@ undefined4 * Recovered_FUN_104238d0::FUN_104238d0(undefined4 *param_2,SCStr *par
 // Reference entry 10423950; body size 103 bytes.
 #line 1 "ENTRY_10423950"
 
-undefined4 * Recovered_FUN_10423950::FUN_10423950(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10423950::FUN_10423950(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -17618,7 +17650,7 @@ void FUN_10424cf0(SCStr *param_1)
 // Reference entry 10424ef0; body size 103 bytes.
 #line 1 "ENTRY_10424ef0"
 
-undefined4 * Recovered_FUN_10424ef0::FUN_10424ef0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10424ef0::FUN_10424ef0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -17726,7 +17758,7 @@ SCStr * FUN_1042d500(SCStr *param_1)
 // Reference entry 10430440; body size 103 bytes.
 #line 1 "ENTRY_10430440"
 
-undefined4 * Recovered_FUN_10430440::FUN_10430440(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10430440::FUN_10430440(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -17758,7 +17790,7 @@ undefined4 * Recovered_FUN_10430440::FUN_10430440(undefined4 *param_2,SCStr *par
 // Reference entry 104304d0; body size 103 bytes.
 #line 1 "ENTRY_104304d0"
 
-undefined4 * Recovered_FUN_104304d0::FUN_104304d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104304d0::FUN_104304d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -17790,7 +17822,7 @@ undefined4 * Recovered_FUN_104304d0::FUN_104304d0(undefined4 *param_2,SCStr *par
 // Reference entry 10430560; body size 103 bytes.
 #line 1 "ENTRY_10430560"
 
-undefined4 * Recovered_FUN_10430560::FUN_10430560(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10430560::FUN_10430560(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -17822,7 +17854,7 @@ undefined4 * Recovered_FUN_10430560::FUN_10430560(undefined4 *param_2,SCStr *par
 // Reference entry 104305f0; body size 103 bytes.
 #line 1 "ENTRY_104305f0"
 
-undefined4 * Recovered_FUN_104305f0::FUN_104305f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104305f0::FUN_104305f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -17854,7 +17886,7 @@ undefined4 * Recovered_FUN_104305f0::FUN_104305f0(undefined4 *param_2,SCStr *par
 // Reference entry 10430680; body size 103 bytes.
 #line 1 "ENTRY_10430680"
 
-undefined4 * Recovered_FUN_10430680::FUN_10430680(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10430680::FUN_10430680(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -17886,7 +17918,7 @@ undefined4 * Recovered_FUN_10430680::FUN_10430680(undefined4 *param_2,SCStr *par
 // Reference entry 10430710; body size 103 bytes.
 #line 1 "ENTRY_10430710"
 
-undefined4 * Recovered_FUN_10430710::FUN_10430710(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10430710::FUN_10430710(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -17918,7 +17950,7 @@ undefined4 * Recovered_FUN_10430710::FUN_10430710(undefined4 *param_2,SCStr *par
 // Reference entry 10438580; body size 103 bytes.
 #line 1 "ENTRY_10438580"
 
-undefined4 * Recovered_FUN_10438580::FUN_10438580(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10438580::FUN_10438580(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -17950,7 +17982,7 @@ undefined4 * Recovered_FUN_10438580::FUN_10438580(undefined4 *param_2,SCStr *par
 // Reference entry 10438600; body size 103 bytes.
 #line 1 "ENTRY_10438600"
 
-undefined4 * Recovered_FUN_10438600::FUN_10438600(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10438600::FUN_10438600(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -17982,7 +18014,7 @@ undefined4 * Recovered_FUN_10438600::FUN_10438600(undefined4 *param_2,SCStr *par
 // Reference entry 104395b0; body size 105 bytes.
 #line 1 "ENTRY_104395b0"
 
-void Recovered_FUN_104395b0::FUN_104395b0(int param_2)
+void Recovered_104395b0::FUN_104395b0(int param_2)
 
 {
   int param_1 = (int)this;
@@ -18020,7 +18052,7 @@ void Recovered_FUN_104395b0::FUN_104395b0(int param_2)
 // Reference entry 10439640; body size 105 bytes.
 #line 1 "ENTRY_10439640"
 
-void Recovered_FUN_10439640::FUN_10439640(int param_2)
+void Recovered_10439640::FUN_10439640(int param_2)
 
 {
   int param_1 = (int)this;
@@ -18058,7 +18090,7 @@ void Recovered_FUN_10439640::FUN_10439640(int param_2)
 // Reference entry 1043c920; body size 103 bytes.
 #line 1 "ENTRY_1043c920"
 
-undefined4 * Recovered_FUN_1043c920::FUN_1043c920(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1043c920::FUN_1043c920(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -18090,7 +18122,7 @@ undefined4 * Recovered_FUN_1043c920::FUN_1043c920(undefined4 *param_2,SCStr *par
 // Reference entry 1043c9a0; body size 103 bytes.
 #line 1 "ENTRY_1043c9a0"
 
-undefined4 * Recovered_FUN_1043c9a0::FUN_1043c9a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1043c9a0::FUN_1043c9a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -18122,7 +18154,7 @@ undefined4 * Recovered_FUN_1043c9a0::FUN_1043c9a0(undefined4 *param_2,SCStr *par
 // Reference entry 1043e380; body size 103 bytes.
 #line 1 "ENTRY_1043e380"
 
-undefined4 * Recovered_FUN_1043e380::FUN_1043e380(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1043e380::FUN_1043e380(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -18165,7 +18197,7 @@ void FUN_1043ee10(SCStr *param_1)
 // Reference entry 1043f690; body size 103 bytes.
 #line 1 "ENTRY_1043f690"
 
-undefined4 * Recovered_FUN_1043f690::FUN_1043f690(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1043f690::FUN_1043f690(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -18219,7 +18251,7 @@ SCStr * FUN_10440840(SCStr *param_1)
 // Reference entry 10440b30; body size 103 bytes.
 #line 1 "ENTRY_10440b30"
 
-undefined4 * Recovered_FUN_10440b30::FUN_10440b30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10440b30::FUN_10440b30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -18251,7 +18283,7 @@ undefined4 * Recovered_FUN_10440b30::FUN_10440b30(undefined4 *param_2,SCStr *par
 // Reference entry 10442180; body size 103 bytes.
 #line 1 "ENTRY_10442180"
 
-undefined4 * Recovered_FUN_10442180::FUN_10442180(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10442180::FUN_10442180(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -18338,7 +18370,7 @@ SCStr * FUN_10445fd0(SCStr *param_1)
 // Reference entry 1044a010; body size 103 bytes.
 #line 1 "ENTRY_1044a010"
 
-undefined4 * Recovered_FUN_1044a010::FUN_1044a010(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1044a010::FUN_1044a010(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -18370,7 +18402,7 @@ undefined4 * Recovered_FUN_1044a010::FUN_1044a010(undefined4 *param_2,SCStr *par
 // Reference entry 1044e920; body size 103 bytes.
 #line 1 "ENTRY_1044e920"
 
-undefined4 * Recovered_FUN_1044e920::FUN_1044e920(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1044e920::FUN_1044e920(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -18402,7 +18434,7 @@ undefined4 * Recovered_FUN_1044e920::FUN_1044e920(undefined4 *param_2,SCStr *par
 // Reference entry 1044e9a0; body size 103 bytes.
 #line 1 "ENTRY_1044e9a0"
 
-undefined4 * Recovered_FUN_1044e9a0::FUN_1044e9a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1044e9a0::FUN_1044e9a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -18445,7 +18477,7 @@ SCStr * FUN_10450590(SCStr *param_1)
 // Reference entry 10451510; body size 103 bytes.
 #line 1 "ENTRY_10451510"
 
-undefined4 * Recovered_FUN_10451510::FUN_10451510(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10451510::FUN_10451510(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -18477,7 +18509,7 @@ undefined4 * Recovered_FUN_10451510::FUN_10451510(undefined4 *param_2,SCStr *par
 // Reference entry 10451590; body size 103 bytes.
 #line 1 "ENTRY_10451590"
 
-undefined4 * Recovered_FUN_10451590::FUN_10451590(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10451590::FUN_10451590(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -18509,7 +18541,7 @@ undefined4 * Recovered_FUN_10451590::FUN_10451590(undefined4 *param_2,SCStr *par
 // Reference entry 104536f0; body size 103 bytes.
 #line 1 "ENTRY_104536f0"
 
-undefined4 * Recovered_FUN_104536f0::FUN_104536f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104536f0::FUN_104536f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -18541,7 +18573,7 @@ undefined4 * Recovered_FUN_104536f0::FUN_104536f0(undefined4 *param_2,SCStr *par
 // Reference entry 10453e60; body size 103 bytes.
 #line 1 "ENTRY_10453e60"
 
-undefined4 * Recovered_FUN_10453e60::FUN_10453e60(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10453e60::FUN_10453e60(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -18592,7 +18624,7 @@ undefined1 FUN_10454f00(SCStr *param_1)
 // Reference entry 10455200; body size 103 bytes.
 #line 1 "ENTRY_10455200"
 
-undefined4 * Recovered_FUN_10455200::FUN_10455200(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10455200::FUN_10455200(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -18687,7 +18719,7 @@ undefined1 FUN_10459810(SCStr *param_1)
 // Reference entry 1045b570; body size 103 bytes.
 #line 1 "ENTRY_1045b570"
 
-undefined4 * Recovered_FUN_1045b570::FUN_1045b570(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1045b570::FUN_1045b570(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -18719,7 +18751,7 @@ undefined4 * Recovered_FUN_1045b570::FUN_1045b570(undefined4 *param_2,SCStr *par
 // Reference entry 1045b5f0; body size 103 bytes.
 #line 1 "ENTRY_1045b5f0"
 
-undefined4 * Recovered_FUN_1045b5f0::FUN_1045b5f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1045b5f0::FUN_1045b5f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -18762,7 +18794,7 @@ SCStr * FUN_1045d450(SCStr *param_1)
 // Reference entry 1045d480; body size 103 bytes.
 #line 1 "ENTRY_1045d480"
 
-undefined4 * Recovered_FUN_1045d480::FUN_1045d480(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1045d480::FUN_1045d480(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -18794,7 +18826,7 @@ undefined4 * Recovered_FUN_1045d480::FUN_1045d480(undefined4 *param_2,SCStr *par
 // Reference entry 1045ed20; body size 103 bytes.
 #line 1 "ENTRY_1045ed20"
 
-undefined4 * Recovered_FUN_1045ed20::FUN_1045ed20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1045ed20::FUN_1045ed20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -18826,7 +18858,7 @@ undefined4 * Recovered_FUN_1045ed20::FUN_1045ed20(undefined4 *param_2,SCStr *par
 // Reference entry 10460e70; body size 103 bytes.
 #line 1 "ENTRY_10460e70"
 
-undefined4 * Recovered_FUN_10460e70::FUN_10460e70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10460e70::FUN_10460e70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -18858,7 +18890,7 @@ undefined4 * Recovered_FUN_10460e70::FUN_10460e70(undefined4 *param_2,SCStr *par
 // Reference entry 10462f30; body size 64 bytes.
 #line 1 "ENTRY_10462f30"
 
-void Recovered_FUN_10462f30::FUN_10462f30(int param_2,short param_3)
+void Recovered_10462f30::FUN_10462f30(int param_2,short param_3)
 
 {
   int param_1 = (int)this;
@@ -18925,7 +18957,7 @@ SCStr * FUN_10464880(SCStr *param_1)
 // Reference entry 10464f20; body size 103 bytes.
 #line 1 "ENTRY_10464f20"
 
-undefined4 * Recovered_FUN_10464f20::FUN_10464f20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10464f20::FUN_10464f20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -18957,7 +18989,7 @@ undefined4 * Recovered_FUN_10464f20::FUN_10464f20(undefined4 *param_2,SCStr *par
 // Reference entry 10464fb0; body size 103 bytes.
 #line 1 "ENTRY_10464fb0"
 
-undefined4 * Recovered_FUN_10464fb0::FUN_10464fb0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10464fb0::FUN_10464fb0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -18989,7 +19021,7 @@ undefined4 * Recovered_FUN_10464fb0::FUN_10464fb0(undefined4 *param_2,SCStr *par
 // Reference entry 10465da0; body size 103 bytes.
 #line 1 "ENTRY_10465da0"
 
-undefined4 * Recovered_FUN_10465da0::FUN_10465da0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10465da0::FUN_10465da0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19039,7 +19071,7 @@ void FUN_10468aa0(undefined4 param_1,SCStr *param_2)
 // Reference entry 10468af0; body size 101 bytes.
 #line 1 "ENTRY_10468af0"
 
-void Recovered_FUN_10468af0::FUN_10468af0(undefined4 param_2,SCStr *param_3)
+void Recovered_10468af0::FUN_10468af0(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -19089,7 +19121,7 @@ SCStr * FUN_10468bc0(SCStr *param_1)
 // Reference entry 10469100; body size 103 bytes.
 #line 1 "ENTRY_10469100"
 
-undefined4 * Recovered_FUN_10469100::FUN_10469100(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10469100::FUN_10469100(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19121,7 +19153,7 @@ undefined4 * Recovered_FUN_10469100::FUN_10469100(undefined4 *param_2,SCStr *par
 // Reference entry 10469190; body size 103 bytes.
 #line 1 "ENTRY_10469190"
 
-undefined4 * Recovered_FUN_10469190::FUN_10469190(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10469190::FUN_10469190(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19153,7 +19185,7 @@ undefined4 * Recovered_FUN_10469190::FUN_10469190(undefined4 *param_2,SCStr *par
 // Reference entry 1046b800; body size 103 bytes.
 #line 1 "ENTRY_1046b800"
 
-undefined4 * Recovered_FUN_1046b800::FUN_1046b800(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1046b800::FUN_1046b800(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19185,7 +19217,7 @@ undefined4 * Recovered_FUN_1046b800::FUN_1046b800(undefined4 *param_2,SCStr *par
 // Reference entry 1046b890; body size 103 bytes.
 #line 1 "ENTRY_1046b890"
 
-undefined4 * Recovered_FUN_1046b890::FUN_1046b890(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1046b890::FUN_1046b890(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19255,7 +19287,7 @@ void FUN_1046c890(undefined4 param_1,SCStr *param_2)
 // Reference entry 1046d9d0; body size 103 bytes.
 #line 1 "ENTRY_1046d9d0"
 
-undefined4 * Recovered_FUN_1046d9d0::FUN_1046d9d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1046d9d0::FUN_1046d9d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19331,7 +19363,7 @@ void FUN_1046f2f0(SCStr *param_1)
 // Reference entry 1046fa80; body size 103 bytes.
 #line 1 "ENTRY_1046fa80"
 
-undefined4 * Recovered_FUN_1046fa80::FUN_1046fa80(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1046fa80::FUN_1046fa80(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19363,7 +19395,7 @@ undefined4 * Recovered_FUN_1046fa80::FUN_1046fa80(undefined4 *param_2,SCStr *par
 // Reference entry 104715e0; body size 103 bytes.
 #line 1 "ENTRY_104715e0"
 
-undefined4 * Recovered_FUN_104715e0::FUN_104715e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104715e0::FUN_104715e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19406,7 +19438,7 @@ SCStr * FUN_10473c70(SCStr *param_1)
 // Reference entry 104743a0; body size 103 bytes.
 #line 1 "ENTRY_104743a0"
 
-undefined4 * Recovered_FUN_104743a0::FUN_104743a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104743a0::FUN_104743a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19471,7 +19503,7 @@ SCStr * FUN_10478140(SCStr *param_1)
 // Reference entry 104789a0; body size 103 bytes.
 #line 1 "ENTRY_104789a0"
 
-undefined4 * Recovered_FUN_104789a0::FUN_104789a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104789a0::FUN_104789a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19519,7 +19551,7 @@ void FUN_1047c210(undefined4 param_1,SCStr *param_2)
 // Reference entry 1047d530; body size 103 bytes.
 #line 1 "ENTRY_1047d530"
 
-undefined4 * Recovered_FUN_1047d530::FUN_1047d530(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1047d530::FUN_1047d530(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19570,7 +19602,7 @@ undefined1 FUN_10495570(SCStr *param_1)
 // Reference entry 104966e0; body size 103 bytes.
 #line 1 "ENTRY_104966e0"
 
-undefined4 * Recovered_FUN_104966e0::FUN_104966e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104966e0::FUN_104966e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19653,7 +19685,7 @@ SCStr * FUN_1049b860(SCStr *param_1)
 // Reference entry 1049cc70; body size 103 bytes.
 #line 1 "ENTRY_1049cc70"
 
-undefined4 * Recovered_FUN_1049cc70::FUN_1049cc70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1049cc70::FUN_1049cc70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19685,7 +19717,7 @@ undefined4 * Recovered_FUN_1049cc70::FUN_1049cc70(undefined4 *param_2,SCStr *par
 // Reference entry 1049ccf0; body size 103 bytes.
 #line 1 "ENTRY_1049ccf0"
 
-undefined4 * Recovered_FUN_1049ccf0::FUN_1049ccf0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1049ccf0::FUN_1049ccf0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19717,7 +19749,7 @@ undefined4 * Recovered_FUN_1049ccf0::FUN_1049ccf0(undefined4 *param_2,SCStr *par
 // Reference entry 1049cd80; body size 103 bytes.
 #line 1 "ENTRY_1049cd80"
 
-undefined4 * Recovered_FUN_1049cd80::FUN_1049cd80(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1049cd80::FUN_1049cd80(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19760,7 +19792,7 @@ void FUN_104a1f20(SCStr *param_1)
 // Reference entry 104a7160; body size 103 bytes.
 #line 1 "ENTRY_104a7160"
 
-undefined4 * Recovered_FUN_104a7160::FUN_104a7160(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104a7160::FUN_104a7160(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19792,7 +19824,7 @@ undefined4 * Recovered_FUN_104a7160::FUN_104a7160(undefined4 *param_2,SCStr *par
 // Reference entry 104a71f0; body size 103 bytes.
 #line 1 "ENTRY_104a71f0"
 
-undefined4 * Recovered_FUN_104a71f0::FUN_104a71f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104a71f0::FUN_104a71f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19824,7 +19856,7 @@ undefined4 * Recovered_FUN_104a71f0::FUN_104a71f0(undefined4 *param_2,SCStr *par
 // Reference entry 104a7280; body size 103 bytes.
 #line 1 "ENTRY_104a7280"
 
-undefined4 * Recovered_FUN_104a7280::FUN_104a7280(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104a7280::FUN_104a7280(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19856,7 +19888,7 @@ undefined4 * Recovered_FUN_104a7280::FUN_104a7280(undefined4 *param_2,SCStr *par
 // Reference entry 104a7310; body size 103 bytes.
 #line 1 "ENTRY_104a7310"
 
-undefined4 * Recovered_FUN_104a7310::FUN_104a7310(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104a7310::FUN_104a7310(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19888,7 +19920,7 @@ undefined4 * Recovered_FUN_104a7310::FUN_104a7310(undefined4 *param_2,SCStr *par
 // Reference entry 104a73a0; body size 103 bytes.
 #line 1 "ENTRY_104a73a0"
 
-undefined4 * Recovered_FUN_104a73a0::FUN_104a73a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104a73a0::FUN_104a73a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19920,7 +19952,7 @@ undefined4 * Recovered_FUN_104a73a0::FUN_104a73a0(undefined4 *param_2,SCStr *par
 // Reference entry 104a7430; body size 103 bytes.
 #line 1 "ENTRY_104a7430"
 
-undefined4 * Recovered_FUN_104a7430::FUN_104a7430(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104a7430::FUN_104a7430(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19963,7 +19995,7 @@ SCStr * FUN_104a9070(SCStr *param_1)
 // Reference entry 104a9100; body size 103 bytes.
 #line 1 "ENTRY_104a9100"
 
-undefined4 * Recovered_FUN_104a9100::FUN_104a9100(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104a9100::FUN_104a9100(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -19995,7 +20027,7 @@ undefined4 * Recovered_FUN_104a9100::FUN_104a9100(undefined4 *param_2,SCStr *par
 // Reference entry 104aa000; body size 103 bytes.
 #line 1 "ENTRY_104aa000"
 
-undefined4 * Recovered_FUN_104aa000::FUN_104aa000(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104aa000::FUN_104aa000(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -20027,7 +20059,7 @@ undefined4 * Recovered_FUN_104aa000::FUN_104aa000(undefined4 *param_2,SCStr *par
 // Reference entry 104aaf00; body size 103 bytes.
 #line 1 "ENTRY_104aaf00"
 
-undefined4 * Recovered_FUN_104aaf00::FUN_104aaf00(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104aaf00::FUN_104aaf00(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -20091,7 +20123,7 @@ void FUN_104addb0(undefined4 param_1,SCStr *param_2)
 // Reference entry 104b01d0; body size 103 bytes.
 #line 1 "ENTRY_104b01d0"
 
-undefined4 * Recovered_FUN_104b01d0::FUN_104b01d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104b01d0::FUN_104b01d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -20166,7 +20198,7 @@ SCStr * FUN_104b0ce0(SCStr *param_1)
 // Reference entry 104b28b0; body size 103 bytes.
 #line 1 "ENTRY_104b28b0"
 
-undefined4 * Recovered_FUN_104b28b0::FUN_104b28b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104b28b0::FUN_104b28b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -20198,7 +20230,7 @@ undefined4 * Recovered_FUN_104b28b0::FUN_104b28b0(undefined4 *param_2,SCStr *par
 // Reference entry 104b3a20; body size 103 bytes.
 #line 1 "ENTRY_104b3a20"
 
-undefined4 * Recovered_FUN_104b3a20::FUN_104b3a20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104b3a20::FUN_104b3a20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -20230,7 +20262,7 @@ undefined4 * Recovered_FUN_104b3a20::FUN_104b3a20(undefined4 *param_2,SCStr *par
 // Reference entry 104b4920; body size 103 bytes.
 #line 1 "ENTRY_104b4920"
 
-undefined4 * Recovered_FUN_104b4920::FUN_104b4920(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104b4920::FUN_104b4920(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -20284,7 +20316,7 @@ SCStr * FUN_104b9e20(SCStr *param_1)
 // Reference entry 104ba490; body size 103 bytes.
 #line 1 "ENTRY_104ba490"
 
-undefined4 * Recovered_FUN_104ba490::FUN_104ba490(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104ba490::FUN_104ba490(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -20316,7 +20348,7 @@ undefined4 * Recovered_FUN_104ba490::FUN_104ba490(undefined4 *param_2,SCStr *par
 // Reference entry 104bcdd0; body size 103 bytes.
 #line 1 "ENTRY_104bcdd0"
 
-undefined4 * Recovered_FUN_104bcdd0::FUN_104bcdd0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104bcdd0::FUN_104bcdd0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -20348,7 +20380,7 @@ undefined4 * Recovered_FUN_104bcdd0::FUN_104bcdd0(undefined4 *param_2,SCStr *par
 // Reference entry 104bce60; body size 103 bytes.
 #line 1 "ENTRY_104bce60"
 
-undefined4 * Recovered_FUN_104bce60::FUN_104bce60(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104bce60::FUN_104bce60(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -20401,7 +20433,7 @@ void FUN_104bfbe0(undefined4 param_1,SCStr *param_2)
 // Reference entry 104c0b70; body size 103 bytes.
 #line 1 "ENTRY_104c0b70"
 
-undefined4 * Recovered_FUN_104c0b70::FUN_104c0b70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104c0b70::FUN_104c0b70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -20455,7 +20487,7 @@ SCStr * FUN_104c6f70(SCStr *param_1)
 // Reference entry 104c8b70; body size 103 bytes.
 #line 1 "ENTRY_104c8b70"
 
-undefined4 * Recovered_FUN_104c8b70::FUN_104c8b70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104c8b70::FUN_104c8b70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -20487,7 +20519,7 @@ undefined4 * Recovered_FUN_104c8b70::FUN_104c8b70(undefined4 *param_2,SCStr *par
 // Reference entry 104c8c00; body size 103 bytes.
 #line 1 "ENTRY_104c8c00"
 
-undefined4 * Recovered_FUN_104c8c00::FUN_104c8c00(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104c8c00::FUN_104c8c00(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -20519,7 +20551,7 @@ undefined4 * Recovered_FUN_104c8c00::FUN_104c8c00(undefined4 *param_2,SCStr *par
 // Reference entry 104cb060; body size 103 bytes.
 #line 1 "ENTRY_104cb060"
 
-undefined4 * Recovered_FUN_104cb060::FUN_104cb060(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104cb060::FUN_104cb060(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -20562,7 +20594,7 @@ SCStr * FUN_104d1430(SCStr *param_1)
 // Reference entry 104d2b40; body size 438 bytes.
 #line 1 "ENTRY_104d2b40"
 
-SCStr * Recovered_FUN_104d2b40::FUN_104d2b40(SCStr *param_2)
+SCStr * Recovered_104d2b40::FUN_104d2b40(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -20642,7 +20674,7 @@ SCStr * FUN_104d2df0(SCStr *param_1)
 // Reference entry 104d2e10; body size 284 bytes.
 #line 1 "ENTRY_104d2e10"
 
-SCStr * Recovered_FUN_104d2e10::FUN_104d2e10(SCStr *param_2)
+SCStr * Recovered_104d2e10::FUN_104d2e10(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -20723,7 +20755,7 @@ SCStr * FUN_104d37c0(SCStr *param_1)
 // Reference entry 104d4470; body size 103 bytes.
 #line 1 "ENTRY_104d4470"
 
-undefined4 * Recovered_FUN_104d4470::FUN_104d4470(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104d4470::FUN_104d4470(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -20755,7 +20787,7 @@ undefined4 * Recovered_FUN_104d4470::FUN_104d4470(undefined4 *param_2,SCStr *par
 // Reference entry 104d44f0; body size 103 bytes.
 #line 1 "ENTRY_104d44f0"
 
-undefined4 * Recovered_FUN_104d44f0::FUN_104d44f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104d44f0::FUN_104d44f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -20787,7 +20819,7 @@ undefined4 * Recovered_FUN_104d44f0::FUN_104d44f0(undefined4 *param_2,SCStr *par
 // Reference entry 104d4570; body size 103 bytes.
 #line 1 "ENTRY_104d4570"
 
-undefined4 * Recovered_FUN_104d4570::FUN_104d4570(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104d4570::FUN_104d4570(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -20819,7 +20851,7 @@ undefined4 * Recovered_FUN_104d4570::FUN_104d4570(undefined4 *param_2,SCStr *par
 // Reference entry 104d6440; body size 103 bytes.
 #line 1 "ENTRY_104d6440"
 
-undefined4 * Recovered_FUN_104d6440::FUN_104d6440(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104d6440::FUN_104d6440(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -20851,7 +20883,7 @@ undefined4 * Recovered_FUN_104d6440::FUN_104d6440(undefined4 *param_2,SCStr *par
 // Reference entry 104d8330; body size 51 bytes.
 #line 1 "ENTRY_104d8330"
 
-void Recovered_FUN_104d8330::FUN_104d8330(undefined4 param_2)
+void Recovered_104d8330::FUN_104d8330(undefined4 param_2)
 
 {
   int * param_1 = (int *)this;
@@ -20876,7 +20908,7 @@ void Recovered_FUN_104d8330::FUN_104d8330(undefined4 param_2)
 // Reference entry 104d8370; body size 51 bytes.
 #line 1 "ENTRY_104d8370"
 
-void Recovered_FUN_104d8370::FUN_104d8370(undefined4 param_2)
+void Recovered_104d8370::FUN_104d8370(undefined4 param_2)
 
 {
   int * param_1 = (int *)this;
@@ -20923,7 +20955,7 @@ SCStr * FUN_104d8550(SCStr *param_1)
 // Reference entry 104d9880; body size 78 bytes.
 #line 1 "ENTRY_104d9880"
 
-void Recovered_FUN_104d9880::FUN_104d9880(undefined4 param_2)
+void Recovered_104d9880::FUN_104d9880(undefined4 param_2)
 
 {
   int param_1 = (int)this;
@@ -20954,7 +20986,7 @@ void Recovered_FUN_104d9880::FUN_104d9880(undefined4 param_2)
 // Reference entry 104d9d90; body size 103 bytes.
 #line 1 "ENTRY_104d9d90"
 
-undefined4 * Recovered_FUN_104d9d90::FUN_104d9d90(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104d9d90::FUN_104d9d90(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -21030,7 +21062,7 @@ SCStr * FUN_104db600(SCStr *param_1)
 // Reference entry 104dce30; body size 193 bytes.
 #line 1 "ENTRY_104dce30"
 
-void Recovered_FUN_104dce30::FUN_104dce30(undefined4 param_2,SCStr *param_3)
+void Recovered_104dce30::FUN_104dce30(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -21070,7 +21102,7 @@ void Recovered_FUN_104dce30::FUN_104dce30(undefined4 param_2,SCStr *param_3)
 // Reference entry 104dd660; body size 103 bytes.
 #line 1 "ENTRY_104dd660"
 
-undefined4 * Recovered_FUN_104dd660::FUN_104dd660(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104dd660::FUN_104dd660(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -21102,7 +21134,7 @@ undefined4 * Recovered_FUN_104dd660::FUN_104dd660(undefined4 *param_2,SCStr *par
 // Reference entry 104dd6e0; body size 103 bytes.
 #line 1 "ENTRY_104dd6e0"
 
-undefined4 * Recovered_FUN_104dd6e0::FUN_104dd6e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104dd6e0::FUN_104dd6e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -21134,7 +21166,7 @@ undefined4 * Recovered_FUN_104dd6e0::FUN_104dd6e0(undefined4 *param_2,SCStr *par
 // Reference entry 104dd760; body size 103 bytes.
 #line 1 "ENTRY_104dd760"
 
-undefined4 * Recovered_FUN_104dd760::FUN_104dd760(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104dd760::FUN_104dd760(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -21196,7 +21228,7 @@ void FUN_104ec220(SCStr *param_1,SCStr *param_2)
 // Reference entry 104ecb10; body size 103 bytes.
 #line 1 "ENTRY_104ecb10"
 
-undefined4 * Recovered_FUN_104ecb10::FUN_104ecb10(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104ecb10::FUN_104ecb10(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -21228,7 +21260,7 @@ undefined4 * Recovered_FUN_104ecb10::FUN_104ecb10(undefined4 *param_2,SCStr *par
 // Reference entry 104ecb90; body size 103 bytes.
 #line 1 "ENTRY_104ecb90"
 
-undefined4 * Recovered_FUN_104ecb90::FUN_104ecb90(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104ecb90::FUN_104ecb90(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -21271,7 +21303,7 @@ SCStr * FUN_104ede50(SCStr *param_1)
 // Reference entry 104f8ba0; body size 124 bytes.
 #line 1 "ENTRY_104f8ba0"
 
-void Recovered_FUN_104f8ba0::FUN_104f8ba0(int *param_2,SCStr *param_3,uint param_4)
+void Recovered_104f8ba0::FUN_104f8ba0(int *param_2,SCStr *param_3,uint param_4)
 
 {
   int param_1 = (int)this;
@@ -21309,7 +21341,7 @@ void Recovered_FUN_104f8ba0::FUN_104f8ba0(int *param_2,SCStr *param_3,uint param
 // Reference entry 104fd890; body size 19 bytes.
 #line 1 "ENTRY_104fd890"
 
-uint Recovered_FUN_104fd890::FUN_104fd890(SCStr *param_2)
+uint Recovered_104fd890::FUN_104fd890(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -21323,7 +21355,7 @@ uint Recovered_FUN_104fd890::FUN_104fd890(SCStr *param_2)
 // Reference entry 104ff770; body size 60 bytes.
 #line 1 "ENTRY_104ff770"
 
-undefined4 * Recovered_FUN_104ff770::FUN_104ff770(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104ff770::FUN_104ff770(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -21345,7 +21377,7 @@ undefined4 * Recovered_FUN_104ff770::FUN_104ff770(undefined4 *param_2,SCStr *par
 // Reference entry 104ff7c0; body size 103 bytes.
 #line 1 "ENTRY_104ff7c0"
 
-undefined4 * Recovered_FUN_104ff7c0::FUN_104ff7c0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104ff7c0::FUN_104ff7c0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -21377,7 +21409,7 @@ undefined4 * Recovered_FUN_104ff7c0::FUN_104ff7c0(undefined4 *param_2,SCStr *par
 // Reference entry 104ff840; body size 60 bytes.
 #line 1 "ENTRY_104ff840"
 
-undefined4 * Recovered_FUN_104ff840::FUN_104ff840(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_104ff840::FUN_104ff840(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -21399,7 +21431,7 @@ undefined4 * Recovered_FUN_104ff840::FUN_104ff840(undefined4 *param_2,SCStr *par
 // Reference entry 10505d30; body size 50 bytes.
 #line 1 "ENTRY_10505d30"
 
-void Recovered_FUN_10505d30::FUN_10505d30()
+void Recovered_10505d30::FUN_10505d30()
 
 {
   int param_1 = (int)this;
@@ -21422,7 +21454,7 @@ void Recovered_FUN_10505d30::FUN_10505d30()
 // Reference entry 10505d70; body size 50 bytes.
 #line 1 "ENTRY_10505d70"
 
-void Recovered_FUN_10505d70::FUN_10505d70()
+void Recovered_10505d70::FUN_10505d70()
 
 {
   int param_1 = (int)this;
@@ -21445,7 +21477,7 @@ void Recovered_FUN_10505d70::FUN_10505d70()
 // Reference entry 10507800; body size 68 bytes.
 #line 1 "ENTRY_10507800"
 
-SCStr * Recovered_FUN_10507800::FUN_10507800(SCStr *param_2,undefined4 param_3)
+SCStr * Recovered_10507800::FUN_10507800(SCStr *param_2,undefined4 param_3)
 
 {
   int * param_1 = (int *)this;
@@ -21466,7 +21498,7 @@ SCStr * Recovered_FUN_10507800::FUN_10507800(SCStr *param_2,undefined4 param_3)
 // Reference entry 10507860; body size 64 bytes.
 #line 1 "ENTRY_10507860"
 
-SCStr * Recovered_FUN_10507860::FUN_10507860(SCStr *param_2)
+SCStr * Recovered_10507860::FUN_10507860(SCStr *param_2)
 
 {
   int * param_1 = (int *)this;
@@ -21542,7 +21574,7 @@ SCStr * FUN_10508a00(SCStr *param_1)
 // Reference entry 1050aea0; body size 103 bytes.
 #line 1 "ENTRY_1050aea0"
 
-undefined4 * Recovered_FUN_1050aea0::FUN_1050aea0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1050aea0::FUN_1050aea0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -21574,7 +21606,7 @@ undefined4 * Recovered_FUN_1050aea0::FUN_1050aea0(undefined4 *param_2,SCStr *par
 // Reference entry 1050b3a0; body size 103 bytes.
 #line 1 "ENTRY_1050b3a0"
 
-undefined4 * Recovered_FUN_1050b3a0::FUN_1050b3a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1050b3a0::FUN_1050b3a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -21606,7 +21638,7 @@ undefined4 * Recovered_FUN_1050b3a0::FUN_1050b3a0(undefined4 *param_2,SCStr *par
 // Reference entry 10513950; body size 50 bytes.
 #line 1 "ENTRY_10513950"
 
-SCStr * Recovered_FUN_10513950::FUN_10513950(SCStr *param_2,undefined4 param_3)
+SCStr * Recovered_10513950::FUN_10513950(SCStr *param_2,undefined4 param_3)
 
 {
   int param_1 = (int)this;
@@ -21622,7 +21654,7 @@ SCStr * Recovered_FUN_10513950::FUN_10513950(SCStr *param_2,undefined4 param_3)
 // Reference entry 10513990; body size 46 bytes.
 #line 1 "ENTRY_10513990"
 
-SCStr * Recovered_FUN_10513990::FUN_10513990(SCStr *param_2)
+SCStr * Recovered_10513990::FUN_10513990(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -21649,7 +21681,7 @@ SCStr * FUN_10516880(SCStr *param_1)
 // Reference entry 10519b40; body size 103 bytes.
 #line 1 "ENTRY_10519b40"
 
-undefined4 * Recovered_FUN_10519b40::FUN_10519b40(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10519b40::FUN_10519b40(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -21681,7 +21713,7 @@ undefined4 * Recovered_FUN_10519b40::FUN_10519b40(undefined4 *param_2,SCStr *par
 // Reference entry 10519bc0; body size 103 bytes.
 #line 1 "ENTRY_10519bc0"
 
-undefined4 * Recovered_FUN_10519bc0::FUN_10519bc0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10519bc0::FUN_10519bc0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -21713,7 +21745,7 @@ undefined4 * Recovered_FUN_10519bc0::FUN_10519bc0(undefined4 *param_2,SCStr *par
 // Reference entry 1051a0f0; body size 103 bytes.
 #line 1 "ENTRY_1051a0f0"
 
-undefined4 * Recovered_FUN_1051a0f0::FUN_1051a0f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1051a0f0::FUN_1051a0f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -21811,7 +21843,7 @@ void FUN_10523d10(SCStr *param_1)
 // Reference entry 10524730; body size 106 bytes.
 #line 1 "ENTRY_10524730"
 
-undefined4 * Recovered_FUN_10524730::FUN_10524730(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10524730::FUN_10524730(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -21839,7 +21871,7 @@ undefined4 * Recovered_FUN_10524730::FUN_10524730(undefined4 *param_2,SCStr *par
 // Reference entry 10532b90; body size 90 bytes.
 #line 1 "ENTRY_10532b90"
 
-void Recovered_FUN_10532b90::FUN_10532b90(undefined4 param_2,SCStr *param_3)
+void Recovered_10532b90::FUN_10532b90(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -22353,7 +22385,7 @@ SCStr * FUN_1053d150(SCStr *param_1)
 // Reference entry 10541b60; body size 48 bytes.
 #line 1 "ENTRY_10541b60"
 
-undefined4 Recovered_FUN_10541b60::FUN_10541b60(SCStr *param_2)
+undefined4 Recovered_10541b60::FUN_10541b60(SCStr *param_2)
 
 {
   int * param_1 = (int *)this;
@@ -22374,7 +22406,7 @@ undefined4 Recovered_FUN_10541b60::FUN_10541b60(SCStr *param_2)
 // Reference entry 10545310; body size 103 bytes.
 #line 1 "ENTRY_10545310"
 
-undefined4 * Recovered_FUN_10545310::FUN_10545310(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10545310::FUN_10545310(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -22406,7 +22438,7 @@ undefined4 * Recovered_FUN_10545310::FUN_10545310(undefined4 *param_2,SCStr *par
 // Reference entry 10545430; body size 135 bytes.
 #line 1 "ENTRY_10545430"
 
-undefined4 * Recovered_FUN_10545430::FUN_10545430(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10545430::FUN_10545430(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -22439,7 +22471,7 @@ undefined4 * Recovered_FUN_10545430::FUN_10545430(undefined4 *param_2,SCStr *par
 // Reference entry 105454e0; body size 135 bytes.
 #line 1 "ENTRY_105454e0"
 
-undefined4 * Recovered_FUN_105454e0::FUN_105454e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_105454e0::FUN_105454e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -22472,7 +22504,7 @@ undefined4 * Recovered_FUN_105454e0::FUN_105454e0(undefined4 *param_2,SCStr *par
 // Reference entry 10545590; body size 135 bytes.
 #line 1 "ENTRY_10545590"
 
-undefined4 * Recovered_FUN_10545590::FUN_10545590(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10545590::FUN_10545590(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -22505,7 +22537,7 @@ undefined4 * Recovered_FUN_10545590::FUN_10545590(undefined4 *param_2,SCStr *par
 // Reference entry 10545640; body size 103 bytes.
 #line 1 "ENTRY_10545640"
 
-undefined4 * Recovered_FUN_10545640::FUN_10545640(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10545640::FUN_10545640(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -22537,7 +22569,7 @@ undefined4 * Recovered_FUN_10545640::FUN_10545640(undefined4 *param_2,SCStr *par
 // Reference entry 105456c0; body size 103 bytes.
 #line 1 "ENTRY_105456c0"
 
-undefined4 * Recovered_FUN_105456c0::FUN_105456c0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_105456c0::FUN_105456c0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -22580,7 +22612,7 @@ SCStr * FUN_1054cff0(SCStr *param_1)
 // Reference entry 1054d4c0; body size 119 bytes.
 #line 1 "ENTRY_1054d4c0"
 
-undefined4 * Recovered_FUN_1054d4c0::FUN_1054d4c0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1054d4c0::FUN_1054d4c0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -22623,7 +22655,7 @@ SCStr * FUN_10553fb0(SCStr *param_1)
 // Reference entry 10556c90; body size 103 bytes.
 #line 1 "ENTRY_10556c90"
 
-undefined4 * Recovered_FUN_10556c90::FUN_10556c90(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10556c90::FUN_10556c90(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -22655,7 +22687,7 @@ undefined4 * Recovered_FUN_10556c90::FUN_10556c90(undefined4 *param_2,SCStr *par
 // Reference entry 10556d10; body size 103 bytes.
 #line 1 "ENTRY_10556d10"
 
-undefined4 * Recovered_FUN_10556d10::FUN_10556d10(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10556d10::FUN_10556d10(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -22687,7 +22719,7 @@ undefined4 * Recovered_FUN_10556d10::FUN_10556d10(undefined4 *param_2,SCStr *par
 // Reference entry 10556d90; body size 103 bytes.
 #line 1 "ENTRY_10556d90"
 
-undefined4 * Recovered_FUN_10556d90::FUN_10556d90(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10556d90::FUN_10556d90(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -22719,7 +22751,7 @@ undefined4 * Recovered_FUN_10556d90::FUN_10556d90(undefined4 *param_2,SCStr *par
 // Reference entry 10557330; body size 69 bytes.
 #line 1 "ENTRY_10557330"
 
-void Recovered_FUN_10557330::FUN_10557330(SCStr *param_2,SCStr *param_3)
+void Recovered_10557330::FUN_10557330(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -22843,7 +22875,7 @@ SCStr * FUN_1055f260(SCStr *param_1)
 // Reference entry 1055fc90; body size 103 bytes.
 #line 1 "ENTRY_1055fc90"
 
-undefined4 * Recovered_FUN_1055fc90::FUN_1055fc90(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1055fc90::FUN_1055fc90(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -23028,7 +23060,7 @@ SCStr * FUN_10574770(SCStr *param_1)
 // Reference entry 10574790; body size 37 bytes.
 #line 1 "ENTRY_10574790"
 
-SCStr * Recovered_FUN_10574790::FUN_10574790(SCStr *param_2)
+SCStr * Recovered_10574790::FUN_10574790(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -23057,7 +23089,7 @@ SCStr * FUN_105747c0(SCStr *param_1)
 // Reference entry 105747e0; body size 37 bytes.
 #line 1 "ENTRY_105747e0"
 
-SCStr * Recovered_FUN_105747e0::FUN_105747e0(SCStr *param_2)
+SCStr * Recovered_105747e0::FUN_105747e0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -23163,7 +23195,7 @@ SCStr * FUN_10574990(SCStr *param_1)
 // Reference entry 105749b0; body size 37 bytes.
 #line 1 "ENTRY_105749b0"
 
-SCStr * Recovered_FUN_105749b0::FUN_105749b0(SCStr *param_2)
+SCStr * Recovered_105749b0::FUN_105749b0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -23258,7 +23290,7 @@ SCStr * FUN_10574f70(SCStr *param_1)
 // Reference entry 10578350; body size 103 bytes.
 #line 1 "ENTRY_10578350"
 
-undefined4 * Recovered_FUN_10578350::FUN_10578350(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10578350::FUN_10578350(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -23290,7 +23322,7 @@ undefined4 * Recovered_FUN_10578350::FUN_10578350(undefined4 *param_2,SCStr *par
 // Reference entry 105783d0; body size 119 bytes.
 #line 1 "ENTRY_105783d0"
 
-undefined4 * Recovered_FUN_105783d0::FUN_105783d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_105783d0::FUN_105783d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -23322,7 +23354,7 @@ undefined4 * Recovered_FUN_105783d0::FUN_105783d0(undefined4 *param_2,SCStr *par
 // Reference entry 10578470; body size 119 bytes.
 #line 1 "ENTRY_10578470"
 
-undefined4 * Recovered_FUN_10578470::FUN_10578470(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10578470::FUN_10578470(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -23354,7 +23386,7 @@ undefined4 * Recovered_FUN_10578470::FUN_10578470(undefined4 *param_2,SCStr *par
 // Reference entry 105788a0; body size 69 bytes.
 #line 1 "ENTRY_105788a0"
 
-void Recovered_FUN_105788a0::FUN_105788a0(SCStr *param_2,SCStr *param_3)
+void Recovered_105788a0::FUN_105788a0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -23445,7 +23477,7 @@ SCStr * FUN_10581960(SCStr *param_1)
 // Reference entry 105819b0; body size 140 bytes.
 #line 1 "ENTRY_105819b0"
 
-SCStr * Recovered_FUN_105819b0::FUN_105819b0(SCStr *param_2)
+SCStr * Recovered_105819b0::FUN_105819b0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -23569,7 +23601,7 @@ void __fastcall FUN_10585850(int param_1)
 // Reference entry 10585900; body size 103 bytes.
 #line 1 "ENTRY_10585900"
 
-undefined4 * Recovered_FUN_10585900::FUN_10585900(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10585900::FUN_10585900(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -23634,7 +23666,7 @@ SCStr * FUN_1058d140(SCStr *param_1)
 // Reference entry 1058de30; body size 37 bytes.
 #line 1 "ENTRY_1058de30"
 
-SCStr * Recovered_FUN_1058de30::FUN_1058de30(SCStr *param_2)
+SCStr * Recovered_1058de30::FUN_1058de30(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -23652,7 +23684,7 @@ SCStr * Recovered_FUN_1058de30::FUN_1058de30(SCStr *param_2)
 // Reference entry 1058de60; body size 37 bytes.
 #line 1 "ENTRY_1058de60"
 
-SCStr * Recovered_FUN_1058de60::FUN_1058de60(SCStr *param_2)
+SCStr * Recovered_1058de60::FUN_1058de60(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -23692,7 +23724,7 @@ SCStr * FUN_1058f660(SCStr *param_1)
 // Reference entry 10591b40; body size 89 bytes.
 #line 1 "ENTRY_10591b40"
 
-void Recovered_FUN_10591b40::FUN_10591b40(undefined4 param_2,SCStr *param_3)
+void Recovered_10591b40::FUN_10591b40(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -23712,7 +23744,7 @@ void Recovered_FUN_10591b40::FUN_10591b40(undefined4 param_2,SCStr *param_3)
 // Reference entry 105922f0; body size 103 bytes.
 #line 1 "ENTRY_105922f0"
 
-undefined4 * Recovered_FUN_105922f0::FUN_105922f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_105922f0::FUN_105922f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -23744,7 +23776,7 @@ undefined4 * Recovered_FUN_105922f0::FUN_105922f0(undefined4 *param_2,SCStr *par
 // Reference entry 10592370; body size 103 bytes.
 #line 1 "ENTRY_10592370"
 
-undefined4 * Recovered_FUN_10592370::FUN_10592370(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10592370::FUN_10592370(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -23776,7 +23808,7 @@ undefined4 * Recovered_FUN_10592370::FUN_10592370(undefined4 *param_2,SCStr *par
 // Reference entry 10592410; body size 103 bytes.
 #line 1 "ENTRY_10592410"
 
-undefined4 * Recovered_FUN_10592410::FUN_10592410(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10592410::FUN_10592410(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -23808,7 +23840,7 @@ undefined4 * Recovered_FUN_10592410::FUN_10592410(undefined4 *param_2,SCStr *par
 // Reference entry 105926d0; body size 69 bytes.
 #line 1 "ENTRY_105926d0"
 
-void Recovered_FUN_105926d0::FUN_105926d0(SCStr *param_2,SCStr *param_3)
+void Recovered_105926d0::FUN_105926d0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -23833,7 +23865,7 @@ void Recovered_FUN_105926d0::FUN_105926d0(SCStr *param_2,SCStr *param_3)
 // Reference entry 10595830; body size 96 bytes.
 #line 1 "ENTRY_10595830"
 
-SCStr * Recovered_FUN_10595830::FUN_10595830(SCStr *param_2)
+SCStr * Recovered_10595830::FUN_10595830(SCStr *param_2)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -23874,7 +23906,7 @@ void FUN_10598470(SCStr *param_1)
 // Reference entry 10598f50; body size 103 bytes.
 #line 1 "ENTRY_10598f50"
 
-undefined4 * Recovered_FUN_10598f50::FUN_10598f50(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10598f50::FUN_10598f50(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -23906,7 +23938,7 @@ undefined4 * Recovered_FUN_10598f50::FUN_10598f50(undefined4 *param_2,SCStr *par
 // Reference entry 105a2900; body size 96 bytes.
 #line 1 "ENTRY_105a2900"
 
-SCStr * Recovered_FUN_105a2900::FUN_105a2900(SCStr *param_2)
+SCStr * Recovered_105a2900::FUN_105a2900(SCStr *param_2)
 
 {
   int * param_1 = (int *)this;
@@ -23940,7 +23972,7 @@ SCStr * FUN_105ad820(SCStr *param_1)
 // Reference entry 105b24a0; body size 120 bytes.
 #line 1 "ENTRY_105b24a0"
 
-void Recovered_FUN_105b24a0::FUN_105b24a0(int param_2,SCStr *param_3)
+void Recovered_105b24a0::FUN_105b24a0(int param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -23978,7 +24010,7 @@ void Recovered_FUN_105b24a0::FUN_105b24a0(int param_2,SCStr *param_3)
 // Reference entry 105b2bb0; body size 130 bytes.
 #line 1 "ENTRY_105b2bb0"
 
-void Recovered_FUN_105b2bb0::FUN_105b2bb0(int *param_2,SCStr *param_3)
+void Recovered_105b2bb0::FUN_105b2bb0(int *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -24108,7 +24140,7 @@ void __fastcall FUN_105b4ca0(int param_1)
 // Reference entry 105b5090; body size 103 bytes.
 #line 1 "ENTRY_105b5090"
 
-undefined4 * Recovered_FUN_105b5090::FUN_105b5090(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_105b5090::FUN_105b5090(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -24140,7 +24172,7 @@ undefined4 * Recovered_FUN_105b5090::FUN_105b5090(undefined4 *param_2,SCStr *par
 // Reference entry 105b5110; body size 103 bytes.
 #line 1 "ENTRY_105b5110"
 
-undefined4 * Recovered_FUN_105b5110::FUN_105b5110(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_105b5110::FUN_105b5110(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -24172,7 +24204,7 @@ undefined4 * Recovered_FUN_105b5110::FUN_105b5110(undefined4 *param_2,SCStr *par
 // Reference entry 105b7910; body size 55 bytes.
 #line 1 "ENTRY_105b7910"
 
-void Recovered_FUN_105b7910::FUN_105b7910(int *param_2,SCStr *param_3)
+void Recovered_105b7910::FUN_105b7910(int *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -24266,7 +24298,7 @@ SCStr * FUN_105bee60(SCStr *param_1,undefined4 param_2)
 // Reference entry 105befa0; body size 22 bytes.
 #line 1 "ENTRY_105befa0"
 
-SCStr * Recovered_FUN_105befa0::FUN_105befa0(SCStr *param_2)
+SCStr * Recovered_105befa0::FUN_105befa0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -24321,7 +24353,7 @@ SCStr * FUN_105bf0f0(SCStr *param_1,undefined4 param_2)
 // Reference entry 105c0540; body size 103 bytes.
 #line 1 "ENTRY_105c0540"
 
-undefined4 * Recovered_FUN_105c0540::FUN_105c0540(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_105c0540::FUN_105c0540(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -24353,7 +24385,7 @@ undefined4 * Recovered_FUN_105c0540::FUN_105c0540(undefined4 *param_2,SCStr *par
 // Reference entry 105c05c0; body size 103 bytes.
 #line 1 "ENTRY_105c05c0"
 
-undefined4 * Recovered_FUN_105c05c0::FUN_105c05c0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_105c05c0::FUN_105c05c0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -24385,7 +24417,7 @@ undefined4 * Recovered_FUN_105c05c0::FUN_105c05c0(undefined4 *param_2,SCStr *par
 // Reference entry 105c0640; body size 69 bytes.
 #line 1 "ENTRY_105c0640"
 
-void Recovered_FUN_105c0640::FUN_105c0640(SCStr *param_2,SCStr *param_3)
+void Recovered_105c0640::FUN_105c0640(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -24509,7 +24541,7 @@ SCStr * FUN_105de490(SCStr *param_1)
 // Reference entry 105de4d0; body size 82 bytes.
 #line 1 "ENTRY_105de4d0"
 
-uint Recovered_FUN_105de4d0::FUN_105de4d0(SCStr *param_2)
+uint Recovered_105de4d0::FUN_105de4d0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -24536,7 +24568,7 @@ uint Recovered_FUN_105de4d0::FUN_105de4d0(SCStr *param_2)
 // Reference entry 105e6890; body size 103 bytes.
 #line 1 "ENTRY_105e6890"
 
-undefined4 * Recovered_FUN_105e6890::FUN_105e6890(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_105e6890::FUN_105e6890(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -24568,7 +24600,7 @@ undefined4 * Recovered_FUN_105e6890::FUN_105e6890(undefined4 *param_2,SCStr *par
 // Reference entry 105e6910; body size 103 bytes.
 #line 1 "ENTRY_105e6910"
 
-undefined4 * Recovered_FUN_105e6910::FUN_105e6910(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_105e6910::FUN_105e6910(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -24600,7 +24632,7 @@ undefined4 * Recovered_FUN_105e6910::FUN_105e6910(undefined4 *param_2,SCStr *par
 // Reference entry 105e6990; body size 103 bytes.
 #line 1 "ENTRY_105e6990"
 
-undefined4 * Recovered_FUN_105e6990::FUN_105e6990(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_105e6990::FUN_105e6990(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -24632,7 +24664,7 @@ undefined4 * Recovered_FUN_105e6990::FUN_105e6990(undefined4 *param_2,SCStr *par
 // Reference entry 105e6a10; body size 103 bytes.
 #line 1 "ENTRY_105e6a10"
 
-undefined4 * Recovered_FUN_105e6a10::FUN_105e6a10(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_105e6a10::FUN_105e6a10(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -24664,7 +24696,7 @@ undefined4 * Recovered_FUN_105e6a10::FUN_105e6a10(undefined4 *param_2,SCStr *par
 // Reference entry 105e6a90; body size 103 bytes.
 #line 1 "ENTRY_105e6a90"
 
-undefined4 * Recovered_FUN_105e6a90::FUN_105e6a90(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_105e6a90::FUN_105e6a90(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -24696,7 +24728,7 @@ undefined4 * Recovered_FUN_105e6a90::FUN_105e6a90(undefined4 *param_2,SCStr *par
 // Reference entry 105e6b10; body size 103 bytes.
 #line 1 "ENTRY_105e6b10"
 
-undefined4 * Recovered_FUN_105e6b10::FUN_105e6b10(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_105e6b10::FUN_105e6b10(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -24728,7 +24760,7 @@ undefined4 * Recovered_FUN_105e6b10::FUN_105e6b10(undefined4 *param_2,SCStr *par
 // Reference entry 105e6b90; body size 103 bytes.
 #line 1 "ENTRY_105e6b90"
 
-undefined4 * Recovered_FUN_105e6b90::FUN_105e6b90(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_105e6b90::FUN_105e6b90(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -24760,7 +24792,7 @@ undefined4 * Recovered_FUN_105e6b90::FUN_105e6b90(undefined4 *param_2,SCStr *par
 // Reference entry 105e6f00; body size 69 bytes.
 #line 1 "ENTRY_105e6f00"
 
-void Recovered_FUN_105e6f00::FUN_105e6f00(SCStr *param_2,SCStr *param_3)
+void Recovered_105e6f00::FUN_105e6f00(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -24785,7 +24817,7 @@ void Recovered_FUN_105e6f00::FUN_105e6f00(SCStr *param_2,SCStr *param_3)
 // Reference entry 106013f0; body size 47 bytes.
 #line 1 "ENTRY_106013f0"
 
-SCStr * Recovered_FUN_106013f0::FUN_106013f0(SCStr *param_2)
+SCStr * Recovered_106013f0::FUN_106013f0(SCStr *param_2)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -24803,7 +24835,7 @@ SCStr * Recovered_FUN_106013f0::FUN_106013f0(SCStr *param_2)
 // Reference entry 10601430; body size 41 bytes.
 #line 1 "ENTRY_10601430"
 
-SCStr * Recovered_FUN_10601430::FUN_10601430(SCStr *param_2)
+SCStr * Recovered_10601430::FUN_10601430(SCStr *param_2)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -24820,7 +24852,7 @@ SCStr * Recovered_FUN_10601430::FUN_10601430(SCStr *param_2)
 // Reference entry 1061dcf0; body size 103 bytes.
 #line 1 "ENTRY_1061dcf0"
 
-undefined4 * Recovered_FUN_1061dcf0::FUN_1061dcf0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1061dcf0::FUN_1061dcf0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -24885,7 +24917,7 @@ SCStr * FUN_10677120(SCStr *param_1)
 // Reference entry 1067efd0; body size 103 bytes.
 #line 1 "ENTRY_1067efd0"
 
-undefined4 * Recovered_FUN_1067efd0::FUN_1067efd0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1067efd0::FUN_1067efd0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -24917,7 +24949,7 @@ undefined4 * Recovered_FUN_1067efd0::FUN_1067efd0(undefined4 *param_2,SCStr *par
 // Reference entry 10680550; body size 103 bytes.
 #line 1 "ENTRY_10680550"
 
-undefined4 * Recovered_FUN_10680550::FUN_10680550(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10680550::FUN_10680550(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -24949,7 +24981,7 @@ undefined4 * Recovered_FUN_10680550::FUN_10680550(undefined4 *param_2,SCStr *par
 // Reference entry 106877d0; body size 60 bytes.
 #line 1 "ENTRY_106877d0"
 
-undefined4 * Recovered_FUN_106877d0::FUN_106877d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_106877d0::FUN_106877d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -24971,7 +25003,7 @@ undefined4 * Recovered_FUN_106877d0::FUN_106877d0(undefined4 *param_2,SCStr *par
 // Reference entry 10687820; body size 60 bytes.
 #line 1 "ENTRY_10687820"
 
-undefined4 * Recovered_FUN_10687820::FUN_10687820(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10687820::FUN_10687820(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -24993,7 +25025,7 @@ undefined4 * Recovered_FUN_10687820::FUN_10687820(undefined4 *param_2,SCStr *par
 // Reference entry 10687870; body size 103 bytes.
 #line 1 "ENTRY_10687870"
 
-undefined4 * Recovered_FUN_10687870::FUN_10687870(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10687870::FUN_10687870(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -25025,7 +25057,7 @@ undefined4 * Recovered_FUN_10687870::FUN_10687870(undefined4 *param_2,SCStr *par
 // Reference entry 106878f0; body size 103 bytes.
 #line 1 "ENTRY_106878f0"
 
-undefined4 * Recovered_FUN_106878f0::FUN_106878f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_106878f0::FUN_106878f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -25101,7 +25133,7 @@ SCStr * FUN_1068a780(SCStr *param_1)
 // Reference entry 1068b530; body size 103 bytes.
 #line 1 "ENTRY_1068b530"
 
-undefined4 * Recovered_FUN_1068b530::FUN_1068b530(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1068b530::FUN_1068b530(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -25133,7 +25165,7 @@ undefined4 * Recovered_FUN_1068b530::FUN_1068b530(undefined4 *param_2,SCStr *par
 // Reference entry 1068b720; body size 103 bytes.
 #line 1 "ENTRY_1068b720"
 
-undefined4 * Recovered_FUN_1068b720::FUN_1068b720(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1068b720::FUN_1068b720(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -25165,7 +25197,7 @@ undefined4 * Recovered_FUN_1068b720::FUN_1068b720(undefined4 *param_2,SCStr *par
 // Reference entry 1068b7a0; body size 103 bytes.
 #line 1 "ENTRY_1068b7a0"
 
-undefined4 * Recovered_FUN_1068b7a0::FUN_1068b7a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1068b7a0::FUN_1068b7a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -25197,7 +25229,7 @@ undefined4 * Recovered_FUN_1068b7a0::FUN_1068b7a0(undefined4 *param_2,SCStr *par
 // Reference entry 1068b990; body size 69 bytes.
 #line 1 "ENTRY_1068b990"
 
-void Recovered_FUN_1068b990::FUN_1068b990(SCStr *param_2,SCStr *param_3)
+void Recovered_1068b990::FUN_1068b990(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -25222,7 +25254,7 @@ void Recovered_FUN_1068b990::FUN_1068b990(SCStr *param_2,SCStr *param_3)
 // Reference entry 10696b60; body size 103 bytes.
 #line 1 "ENTRY_10696b60"
 
-undefined4 * Recovered_FUN_10696b60::FUN_10696b60(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10696b60::FUN_10696b60(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -25342,7 +25374,7 @@ SCStr * FUN_10699630(SCStr *param_1)
 // Reference entry 106a00d0; body size 103 bytes.
 #line 1 "ENTRY_106a00d0"
 
-undefined4 * Recovered_FUN_106a00d0::FUN_106a00d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_106a00d0::FUN_106a00d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -25374,7 +25406,7 @@ undefined4 * Recovered_FUN_106a00d0::FUN_106a00d0(undefined4 *param_2,SCStr *par
 // Reference entry 106a0150; body size 103 bytes.
 #line 1 "ENTRY_106a0150"
 
-undefined4 * Recovered_FUN_106a0150::FUN_106a0150(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_106a0150::FUN_106a0150(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -25406,7 +25438,7 @@ undefined4 * Recovered_FUN_106a0150::FUN_106a0150(undefined4 *param_2,SCStr *par
 // Reference entry 106a01d0; body size 103 bytes.
 #line 1 "ENTRY_106a01d0"
 
-undefined4 * Recovered_FUN_106a01d0::FUN_106a01d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_106a01d0::FUN_106a01d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -25438,7 +25470,7 @@ undefined4 * Recovered_FUN_106a01d0::FUN_106a01d0(undefined4 *param_2,SCStr *par
 // Reference entry 106a0250; body size 103 bytes.
 #line 1 "ENTRY_106a0250"
 
-undefined4 * Recovered_FUN_106a0250::FUN_106a0250(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_106a0250::FUN_106a0250(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -25470,7 +25502,7 @@ undefined4 * Recovered_FUN_106a0250::FUN_106a0250(undefined4 *param_2,SCStr *par
 // Reference entry 106a02d0; body size 103 bytes.
 #line 1 "ENTRY_106a02d0"
 
-undefined4 * Recovered_FUN_106a02d0::FUN_106a02d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_106a02d0::FUN_106a02d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -25502,7 +25534,7 @@ undefined4 * Recovered_FUN_106a02d0::FUN_106a02d0(undefined4 *param_2,SCStr *par
 // Reference entry 106a0350; body size 103 bytes.
 #line 1 "ENTRY_106a0350"
 
-undefined4 * Recovered_FUN_106a0350::FUN_106a0350(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_106a0350::FUN_106a0350(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -25534,7 +25566,7 @@ undefined4 * Recovered_FUN_106a0350::FUN_106a0350(undefined4 *param_2,SCStr *par
 // Reference entry 106a1a50; body size 120 bytes.
 #line 1 "ENTRY_106a1a50"
 
-undefined4 Recovered_FUN_106a1a50::FUN_106a1a50(int *param_2)
+undefined4 Recovered_106a1a50::FUN_106a1a50(int *param_2)
 
 {
   int * param_1 = (int *)this;
@@ -25566,7 +25598,7 @@ undefined4 Recovered_FUN_106a1a50::FUN_106a1a50(int *param_2)
 // Reference entry 106a1df0; body size 103 bytes.
 #line 1 "ENTRY_106a1df0"
 
-undefined4 * Recovered_FUN_106a1df0::FUN_106a1df0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_106a1df0::FUN_106a1df0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -25598,7 +25630,7 @@ undefined4 * Recovered_FUN_106a1df0::FUN_106a1df0(undefined4 *param_2,SCStr *par
 // Reference entry 106ab7b0; body size 124 bytes.
 #line 1 "ENTRY_106ab7b0"
 
-void Recovered_FUN_106ab7b0::FUN_106ab7b0(int *param_2,SCStr *param_3,uint param_4)
+void Recovered_106ab7b0::FUN_106ab7b0(int *param_2,SCStr *param_3,uint param_4)
 
 {
   int param_1 = (int)this;
@@ -25636,7 +25668,7 @@ void Recovered_FUN_106ab7b0::FUN_106ab7b0(int *param_2,SCStr *param_3,uint param
 // Reference entry 106af6d0; body size 55 bytes.
 #line 1 "ENTRY_106af6d0"
 
-void Recovered_FUN_106af6d0::FUN_106af6d0(int *param_2,SCStr *param_3)
+void Recovered_106af6d0::FUN_106af6d0(int *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -25658,7 +25690,7 @@ void Recovered_FUN_106af6d0::FUN_106af6d0(int *param_2,SCStr *param_3)
 // Reference entry 106bd210; body size 19 bytes.
 #line 1 "ENTRY_106bd210"
 
-uint Recovered_FUN_106bd210::FUN_106bd210(SCStr *param_2)
+uint Recovered_106bd210::FUN_106bd210(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -25705,7 +25737,7 @@ SCStr * FUN_106c1d50(SCStr *param_1)
 // Reference entry 106cc8e0; body size 103 bytes.
 #line 1 "ENTRY_106cc8e0"
 
-undefined4 * Recovered_FUN_106cc8e0::FUN_106cc8e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_106cc8e0::FUN_106cc8e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -25737,7 +25769,7 @@ undefined4 * Recovered_FUN_106cc8e0::FUN_106cc8e0(undefined4 *param_2,SCStr *par
 // Reference entry 106cc960; body size 125 bytes.
 #line 1 "ENTRY_106cc960"
 
-undefined4 * Recovered_FUN_106cc960::FUN_106cc960(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_106cc960::FUN_106cc960(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -25775,7 +25807,7 @@ undefined4 * Recovered_FUN_106cc960::FUN_106cc960(undefined4 *param_2,SCStr *par
 // Reference entry 106d0d60; body size 103 bytes.
 #line 1 "ENTRY_106d0d60"
 
-undefined4 * Recovered_FUN_106d0d60::FUN_106d0d60(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_106d0d60::FUN_106d0d60(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -25818,7 +25850,7 @@ SCStr * FUN_106d5ab0(SCStr *param_1)
 // Reference entry 106d6d60; body size 103 bytes.
 #line 1 "ENTRY_106d6d60"
 
-undefined4 * Recovered_FUN_106d6d60::FUN_106d6d60(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_106d6d60::FUN_106d6d60(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -26039,7 +26071,7 @@ SCStr * FUN_106f2020(SCStr *param_1)
 // Reference entry 106f6bf0; body size 135 bytes.
 #line 1 "ENTRY_106f6bf0"
 
-undefined4 * Recovered_FUN_106f6bf0::FUN_106f6bf0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_106f6bf0::FUN_106f6bf0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -26083,7 +26115,7 @@ SCStr * FUN_10707940(SCStr *param_1)
 // Reference entry 10708510; body size 103 bytes.
 #line 1 "ENTRY_10708510"
 
-undefined4 * Recovered_FUN_10708510::FUN_10708510(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10708510::FUN_10708510(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -26148,7 +26180,7 @@ SCStr * FUN_1073c3a0(SCStr *param_1)
 // Reference entry 107cb7f0; body size 103 bytes.
 #line 1 "ENTRY_107cb7f0"
 
-undefined4 * Recovered_FUN_107cb7f0::FUN_107cb7f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_107cb7f0::FUN_107cb7f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -26202,7 +26234,7 @@ SCStr * FUN_10868020(SCStr *param_1)
 // Reference entry 10962990; body size 41 bytes.
 #line 1 "ENTRY_10962990"
 
-SCStr * Recovered_FUN_10962990::FUN_10962990(SCStr *param_2)
+SCStr * Recovered_10962990::FUN_10962990(SCStr *param_2)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -26313,7 +26345,7 @@ SCStr * FUN_10a04510(SCStr *param_1)
 // Reference entry 10a08110; body size 103 bytes.
 #line 1 "ENTRY_10a08110"
 
-undefined4 * Recovered_FUN_10a08110::FUN_10a08110(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10a08110::FUN_10a08110(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -26345,7 +26377,7 @@ undefined4 * Recovered_FUN_10a08110::FUN_10a08110(undefined4 *param_2,SCStr *par
 // Reference entry 10a08190; body size 103 bytes.
 #line 1 "ENTRY_10a08190"
 
-undefined4 * Recovered_FUN_10a08190::FUN_10a08190(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10a08190::FUN_10a08190(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -26377,7 +26409,7 @@ undefined4 * Recovered_FUN_10a08190::FUN_10a08190(undefined4 *param_2,SCStr *par
 // Reference entry 10a08210; body size 103 bytes.
 #line 1 "ENTRY_10a08210"
 
-undefined4 * Recovered_FUN_10a08210::FUN_10a08210(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10a08210::FUN_10a08210(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -26409,7 +26441,7 @@ undefined4 * Recovered_FUN_10a08210::FUN_10a08210(undefined4 *param_2,SCStr *par
 // Reference entry 10a08290; body size 103 bytes.
 #line 1 "ENTRY_10a08290"
 
-undefined4 * Recovered_FUN_10a08290::FUN_10a08290(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10a08290::FUN_10a08290(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -26441,7 +26473,7 @@ undefined4 * Recovered_FUN_10a08290::FUN_10a08290(undefined4 *param_2,SCStr *par
 // Reference entry 10a08310; body size 103 bytes.
 #line 1 "ENTRY_10a08310"
 
-undefined4 * Recovered_FUN_10a08310::FUN_10a08310(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10a08310::FUN_10a08310(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -26473,7 +26505,7 @@ undefined4 * Recovered_FUN_10a08310::FUN_10a08310(undefined4 *param_2,SCStr *par
 // Reference entry 10a08390; body size 103 bytes.
 #line 1 "ENTRY_10a08390"
 
-undefined4 * Recovered_FUN_10a08390::FUN_10a08390(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10a08390::FUN_10a08390(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -26505,7 +26537,7 @@ undefined4 * Recovered_FUN_10a08390::FUN_10a08390(undefined4 *param_2,SCStr *par
 // Reference entry 10a08410; body size 103 bytes.
 #line 1 "ENTRY_10a08410"
 
-undefined4 * Recovered_FUN_10a08410::FUN_10a08410(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10a08410::FUN_10a08410(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -26537,7 +26569,7 @@ undefined4 * Recovered_FUN_10a08410::FUN_10a08410(undefined4 *param_2,SCStr *par
 // Reference entry 10a08490; body size 103 bytes.
 #line 1 "ENTRY_10a08490"
 
-undefined4 * Recovered_FUN_10a08490::FUN_10a08490(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10a08490::FUN_10a08490(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -26569,7 +26601,7 @@ undefined4 * Recovered_FUN_10a08490::FUN_10a08490(undefined4 *param_2,SCStr *par
 // Reference entry 10a08910; body size 69 bytes.
 #line 1 "ENTRY_10a08910"
 
-void Recovered_FUN_10a08910::FUN_10a08910(SCStr *param_2,SCStr *param_3)
+void Recovered_10a08910::FUN_10a08910(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -26594,7 +26626,7 @@ void Recovered_FUN_10a08910::FUN_10a08910(SCStr *param_2,SCStr *param_3)
 // Reference entry 10a08970; body size 69 bytes.
 #line 1 "ENTRY_10a08970"
 
-void Recovered_FUN_10a08970::FUN_10a08970(SCStr *param_2,SCStr *param_3)
+void Recovered_10a08970::FUN_10a08970(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -26619,7 +26651,7 @@ void Recovered_FUN_10a08970::FUN_10a08970(SCStr *param_2,SCStr *param_3)
 // Reference entry 10a089d0; body size 69 bytes.
 #line 1 "ENTRY_10a089d0"
 
-void Recovered_FUN_10a089d0::FUN_10a089d0(SCStr *param_2,SCStr *param_3)
+void Recovered_10a089d0::FUN_10a089d0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -26644,7 +26676,7 @@ void Recovered_FUN_10a089d0::FUN_10a089d0(SCStr *param_2,SCStr *param_3)
 // Reference entry 10a08a30; body size 69 bytes.
 #line 1 "ENTRY_10a08a30"
 
-void Recovered_FUN_10a08a30::FUN_10a08a30(SCStr *param_2,SCStr *param_3)
+void Recovered_10a08a30::FUN_10a08a30(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -26669,7 +26701,7 @@ void Recovered_FUN_10a08a30::FUN_10a08a30(SCStr *param_2,SCStr *param_3)
 // Reference entry 10a7cb70; body size 103 bytes.
 #line 1 "ENTRY_10a7cb70"
 
-undefined4 * Recovered_FUN_10a7cb70::FUN_10a7cb70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10a7cb70::FUN_10a7cb70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -26701,7 +26733,7 @@ undefined4 * Recovered_FUN_10a7cb70::FUN_10a7cb70(undefined4 *param_2,SCStr *par
 // Reference entry 10b6ff10; body size 49 bytes.
 #line 1 "ENTRY_10b6ff10"
 
-SCStr * Recovered_FUN_10b6ff10::FUN_10b6ff10(SCStr *param_2)
+SCStr * Recovered_10b6ff10::FUN_10b6ff10(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -26728,7 +26760,7 @@ SCStr * FUN_10b70400(SCStr *param_1)
 // Reference entry 10b721d0; body size 103 bytes.
 #line 1 "ENTRY_10b721d0"
 
-undefined4 * Recovered_FUN_10b721d0::FUN_10b721d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b721d0::FUN_10b721d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -26760,7 +26792,7 @@ undefined4 * Recovered_FUN_10b721d0::FUN_10b721d0(undefined4 *param_2,SCStr *par
 // Reference entry 10b72250; body size 103 bytes.
 #line 1 "ENTRY_10b72250"
 
-undefined4 * Recovered_FUN_10b72250::FUN_10b72250(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b72250::FUN_10b72250(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -26792,7 +26824,7 @@ undefined4 * Recovered_FUN_10b72250::FUN_10b72250(undefined4 *param_2,SCStr *par
 // Reference entry 10b72810; body size 69 bytes.
 #line 1 "ENTRY_10b72810"
 
-void Recovered_FUN_10b72810::FUN_10b72810(SCStr *param_2,SCStr *param_3)
+void Recovered_10b72810::FUN_10b72810(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -26861,7 +26893,7 @@ SCStr * FUN_10b78e70(SCStr *param_1)
 // Reference entry 10b7aaa0; body size 103 bytes.
 #line 1 "ENTRY_10b7aaa0"
 
-undefined4 * Recovered_FUN_10b7aaa0::FUN_10b7aaa0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b7aaa0::FUN_10b7aaa0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -26893,7 +26925,7 @@ undefined4 * Recovered_FUN_10b7aaa0::FUN_10b7aaa0(undefined4 *param_2,SCStr *par
 // Reference entry 10b7ab20; body size 103 bytes.
 #line 1 "ENTRY_10b7ab20"
 
-undefined4 * Recovered_FUN_10b7ab20::FUN_10b7ab20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b7ab20::FUN_10b7ab20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -26947,7 +26979,7 @@ SCStr * FUN_10b80400(SCStr *param_1)
 // Reference entry 10b80420; body size 25 bytes.
 #line 1 "ENTRY_10b80420"
 
-SCStr * Recovered_FUN_10b80420::FUN_10b80420(SCStr *param_2)
+SCStr * Recovered_10b80420::FUN_10b80420(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -26959,7 +26991,7 @@ SCStr * Recovered_FUN_10b80420::FUN_10b80420(SCStr *param_2)
 // Reference entry 10b80510; body size 34 bytes.
 #line 1 "ENTRY_10b80510"
 
-SCStr * Recovered_FUN_10b80510::FUN_10b80510(SCStr *param_2)
+SCStr * Recovered_10b80510::FUN_10b80510(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -27032,7 +27064,7 @@ SCStr * FUN_10b81a30(SCStr *param_1)
 // Reference entry 10b81cb0; body size 51 bytes.
 #line 1 "ENTRY_10b81cb0"
 
-SCStr * Recovered_FUN_10b81cb0::FUN_10b81cb0(SCStr *param_2)
+SCStr * Recovered_10b81cb0::FUN_10b81cb0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -27083,7 +27115,7 @@ SCStr * FUN_10b81d20(SCStr *param_1)
 // Reference entry 10b82e70; body size 103 bytes.
 #line 1 "ENTRY_10b82e70"
 
-undefined4 * Recovered_FUN_10b82e70::FUN_10b82e70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b82e70::FUN_10b82e70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -27115,7 +27147,7 @@ undefined4 * Recovered_FUN_10b82e70::FUN_10b82e70(undefined4 *param_2,SCStr *par
 // Reference entry 10b82ef0; body size 103 bytes.
 #line 1 "ENTRY_10b82ef0"
 
-undefined4 * Recovered_FUN_10b82ef0::FUN_10b82ef0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b82ef0::FUN_10b82ef0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -27147,7 +27179,7 @@ undefined4 * Recovered_FUN_10b82ef0::FUN_10b82ef0(undefined4 *param_2,SCStr *par
 // Reference entry 10b82f70; body size 103 bytes.
 #line 1 "ENTRY_10b82f70"
 
-undefined4 * Recovered_FUN_10b82f70::FUN_10b82f70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b82f70::FUN_10b82f70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -27179,7 +27211,7 @@ undefined4 * Recovered_FUN_10b82f70::FUN_10b82f70(undefined4 *param_2,SCStr *par
 // Reference entry 10b83350; body size 103 bytes.
 #line 1 "ENTRY_10b83350"
 
-undefined4 * Recovered_FUN_10b83350::FUN_10b83350(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b83350::FUN_10b83350(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -27211,7 +27243,7 @@ undefined4 * Recovered_FUN_10b83350::FUN_10b83350(undefined4 *param_2,SCStr *par
 // Reference entry 10b83500; body size 103 bytes.
 #line 1 "ENTRY_10b83500"
 
-undefined4 * Recovered_FUN_10b83500::FUN_10b83500(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b83500::FUN_10b83500(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -27243,7 +27275,7 @@ undefined4 * Recovered_FUN_10b83500::FUN_10b83500(undefined4 *param_2,SCStr *par
 // Reference entry 10b843b0; body size 69 bytes.
 #line 1 "ENTRY_10b843b0"
 
-void Recovered_FUN_10b843b0::FUN_10b843b0(SCStr *param_2,SCStr *param_3)
+void Recovered_10b843b0::FUN_10b843b0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -27312,7 +27344,7 @@ SCStr * FUN_10b8b9f0(SCStr *param_1)
 // Reference entry 10b8d5b0; body size 103 bytes.
 #line 1 "ENTRY_10b8d5b0"
 
-undefined4 * Recovered_FUN_10b8d5b0::FUN_10b8d5b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b8d5b0::FUN_10b8d5b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -27344,7 +27376,7 @@ undefined4 * Recovered_FUN_10b8d5b0::FUN_10b8d5b0(undefined4 *param_2,SCStr *par
 // Reference entry 10b8d630; body size 103 bytes.
 #line 1 "ENTRY_10b8d630"
 
-undefined4 * Recovered_FUN_10b8d630::FUN_10b8d630(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b8d630::FUN_10b8d630(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -27376,7 +27408,7 @@ undefined4 * Recovered_FUN_10b8d630::FUN_10b8d630(undefined4 *param_2,SCStr *par
 // Reference entry 10b8d6b0; body size 103 bytes.
 #line 1 "ENTRY_10b8d6b0"
 
-undefined4 * Recovered_FUN_10b8d6b0::FUN_10b8d6b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b8d6b0::FUN_10b8d6b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -27408,7 +27440,7 @@ undefined4 * Recovered_FUN_10b8d6b0::FUN_10b8d6b0(undefined4 *param_2,SCStr *par
 // Reference entry 10b8d730; body size 103 bytes.
 #line 1 "ENTRY_10b8d730"
 
-undefined4 * Recovered_FUN_10b8d730::FUN_10b8d730(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b8d730::FUN_10b8d730(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -27440,7 +27472,7 @@ undefined4 * Recovered_FUN_10b8d730::FUN_10b8d730(undefined4 *param_2,SCStr *par
 // Reference entry 10b8d7b0; body size 103 bytes.
 #line 1 "ENTRY_10b8d7b0"
 
-undefined4 * Recovered_FUN_10b8d7b0::FUN_10b8d7b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b8d7b0::FUN_10b8d7b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -27472,7 +27504,7 @@ undefined4 * Recovered_FUN_10b8d7b0::FUN_10b8d7b0(undefined4 *param_2,SCStr *par
 // Reference entry 10b8db70; body size 69 bytes.
 #line 1 "ENTRY_10b8db70"
 
-void Recovered_FUN_10b8db70::FUN_10b8db70(SCStr *param_2,SCStr *param_3)
+void Recovered_10b8db70::FUN_10b8db70(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -27497,7 +27529,7 @@ void Recovered_FUN_10b8db70::FUN_10b8db70(SCStr *param_2,SCStr *param_3)
 // Reference entry 10b8dbd0; body size 69 bytes.
 #line 1 "ENTRY_10b8dbd0"
 
-void Recovered_FUN_10b8dbd0::FUN_10b8dbd0(SCStr *param_2,SCStr *param_3)
+void Recovered_10b8dbd0::FUN_10b8dbd0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -27522,7 +27554,7 @@ void Recovered_FUN_10b8dbd0::FUN_10b8dbd0(SCStr *param_2,SCStr *param_3)
 // Reference entry 10b8dc30; body size 69 bytes.
 #line 1 "ENTRY_10b8dc30"
 
-void Recovered_FUN_10b8dc30::FUN_10b8dc30(SCStr *param_2,SCStr *param_3)
+void Recovered_10b8dc30::FUN_10b8dc30(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -27547,7 +27579,7 @@ void Recovered_FUN_10b8dc30::FUN_10b8dc30(SCStr *param_2,SCStr *param_3)
 // Reference entry 10b8dc90; body size 69 bytes.
 #line 1 "ENTRY_10b8dc90"
 
-void Recovered_FUN_10b8dc90::FUN_10b8dc90(SCStr *param_2,SCStr *param_3)
+void Recovered_10b8dc90::FUN_10b8dc90(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -27620,7 +27652,7 @@ void FUN_10b93840(void)
 // Reference entry 10b94ef0; body size 103 bytes.
 #line 1 "ENTRY_10b94ef0"
 
-undefined4 * Recovered_FUN_10b94ef0::FUN_10b94ef0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b94ef0::FUN_10b94ef0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -27652,7 +27684,7 @@ undefined4 * Recovered_FUN_10b94ef0::FUN_10b94ef0(undefined4 *param_2,SCStr *par
 // Reference entry 10b94f70; body size 103 bytes.
 #line 1 "ENTRY_10b94f70"
 
-undefined4 * Recovered_FUN_10b94f70::FUN_10b94f70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b94f70::FUN_10b94f70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -27706,7 +27738,7 @@ SCStr * FUN_10b9c390(SCStr *param_1)
 // Reference entry 10b9e1f0; body size 42 bytes.
 #line 1 "ENTRY_10b9e1f0"
 
-void Recovered_FUN_10b9e1f0::FUN_10b9e1f0(undefined4 param_2)
+void Recovered_10b9e1f0::FUN_10b9e1f0(undefined4 param_2)
 
 {
   int param_1 = (int)this;
@@ -27728,7 +27760,7 @@ void Recovered_FUN_10b9e1f0::FUN_10b9e1f0(undefined4 param_2)
 // Reference entry 10b9f670; body size 103 bytes.
 #line 1 "ENTRY_10b9f670"
 
-undefined4 * Recovered_FUN_10b9f670::FUN_10b9f670(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b9f670::FUN_10b9f670(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -27760,7 +27792,7 @@ undefined4 * Recovered_FUN_10b9f670::FUN_10b9f670(undefined4 *param_2,SCStr *par
 // Reference entry 10b9f6f0; body size 103 bytes.
 #line 1 "ENTRY_10b9f6f0"
 
-undefined4 * Recovered_FUN_10b9f6f0::FUN_10b9f6f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b9f6f0::FUN_10b9f6f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -27792,7 +27824,7 @@ undefined4 * Recovered_FUN_10b9f6f0::FUN_10b9f6f0(undefined4 *param_2,SCStr *par
 // Reference entry 10b9f770; body size 103 bytes.
 #line 1 "ENTRY_10b9f770"
 
-undefined4 * Recovered_FUN_10b9f770::FUN_10b9f770(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b9f770::FUN_10b9f770(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -27824,7 +27856,7 @@ undefined4 * Recovered_FUN_10b9f770::FUN_10b9f770(undefined4 *param_2,SCStr *par
 // Reference entry 10b9f7f0; body size 103 bytes.
 #line 1 "ENTRY_10b9f7f0"
 
-undefined4 * Recovered_FUN_10b9f7f0::FUN_10b9f7f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b9f7f0::FUN_10b9f7f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -27856,7 +27888,7 @@ undefined4 * Recovered_FUN_10b9f7f0::FUN_10b9f7f0(undefined4 *param_2,SCStr *par
 // Reference entry 10b9f870; body size 103 bytes.
 #line 1 "ENTRY_10b9f870"
 
-undefined4 * Recovered_FUN_10b9f870::FUN_10b9f870(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b9f870::FUN_10b9f870(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -27888,7 +27920,7 @@ undefined4 * Recovered_FUN_10b9f870::FUN_10b9f870(undefined4 *param_2,SCStr *par
 // Reference entry 10b9f8f0; body size 103 bytes.
 #line 1 "ENTRY_10b9f8f0"
 
-undefined4 * Recovered_FUN_10b9f8f0::FUN_10b9f8f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10b9f8f0::FUN_10b9f8f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -27920,7 +27952,7 @@ undefined4 * Recovered_FUN_10b9f8f0::FUN_10b9f8f0(undefined4 *param_2,SCStr *par
 // Reference entry 10ba1160; body size 168 bytes.
 #line 1 "ENTRY_10ba1160"
 
-void Recovered_FUN_10ba1160::FUN_10ba1160(undefined4 param_2)
+void Recovered_10ba1160::FUN_10ba1160(undefined4 param_2)
 
 {
   int param_1 = (int)this;
@@ -27991,7 +28023,7 @@ void __fastcall FUN_10ba8810(int param_1)
 // Reference entry 10bb31d0; body size 103 bytes.
 #line 1 "ENTRY_10bb31d0"
 
-undefined4 * Recovered_FUN_10bb31d0::FUN_10bb31d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10bb31d0::FUN_10bb31d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -28023,7 +28055,7 @@ undefined4 * Recovered_FUN_10bb31d0::FUN_10bb31d0(undefined4 *param_2,SCStr *par
 // Reference entry 10bb3250; body size 103 bytes.
 #line 1 "ENTRY_10bb3250"
 
-undefined4 * Recovered_FUN_10bb3250::FUN_10bb3250(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10bb3250::FUN_10bb3250(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -28344,7 +28376,7 @@ SCStr * FUN_10bbbae0(SCStr *param_1,undefined4 param_2)
 // Reference entry 10bbc630; body size 103 bytes.
 #line 1 "ENTRY_10bbc630"
 
-undefined4 * Recovered_FUN_10bbc630::FUN_10bbc630(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10bbc630::FUN_10bbc630(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -28387,7 +28419,7 @@ SCStr * FUN_10bbe8d0(SCStr *param_1)
 // Reference entry 10bbed40; body size 103 bytes.
 #line 1 "ENTRY_10bbed40"
 
-undefined4 * Recovered_FUN_10bbed40::FUN_10bbed40(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10bbed40::FUN_10bbed40(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -28419,7 +28451,7 @@ undefined4 * Recovered_FUN_10bbed40::FUN_10bbed40(undefined4 *param_2,SCStr *par
 // Reference entry 10bbf370; body size 103 bytes.
 #line 1 "ENTRY_10bbf370"
 
-undefined4 * Recovered_FUN_10bbf370::FUN_10bbf370(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10bbf370::FUN_10bbf370(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -28484,7 +28516,7 @@ SCStr * FUN_10bc4800(SCStr *param_1)
 // Reference entry 10bc4d60; body size 103 bytes.
 #line 1 "ENTRY_10bc4d60"
 
-undefined4 * Recovered_FUN_10bc4d60::FUN_10bc4d60(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10bc4d60::FUN_10bc4d60(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -28568,7 +28600,7 @@ void __fastcall FUN_10bc7930(int param_1)
 // Reference entry 10bc81e0; body size 43 bytes.
 #line 1 "ENTRY_10bc81e0"
 
-SCStr * Recovered_FUN_10bc81e0::FUN_10bc81e0(SCStr *param_2)
+SCStr * Recovered_10bc81e0::FUN_10bc81e0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -28584,7 +28616,7 @@ SCStr * Recovered_FUN_10bc81e0::FUN_10bc81e0(SCStr *param_2)
 // Reference entry 10bc90f0; body size 103 bytes.
 #line 1 "ENTRY_10bc90f0"
 
-undefined4 * Recovered_FUN_10bc90f0::FUN_10bc90f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10bc90f0::FUN_10bc90f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -28616,7 +28648,7 @@ undefined4 * Recovered_FUN_10bc90f0::FUN_10bc90f0(undefined4 *param_2,SCStr *par
 // Reference entry 10bc9170; body size 103 bytes.
 #line 1 "ENTRY_10bc9170"
 
-undefined4 * Recovered_FUN_10bc9170::FUN_10bc9170(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10bc9170::FUN_10bc9170(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -28648,7 +28680,7 @@ undefined4 * Recovered_FUN_10bc9170::FUN_10bc9170(undefined4 *param_2,SCStr *par
 // Reference entry 10bc91f0; body size 103 bytes.
 #line 1 "ENTRY_10bc91f0"
 
-undefined4 * Recovered_FUN_10bc91f0::FUN_10bc91f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10bc91f0::FUN_10bc91f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -28680,7 +28712,7 @@ undefined4 * Recovered_FUN_10bc91f0::FUN_10bc91f0(undefined4 *param_2,SCStr *par
 // Reference entry 10bcb450; body size 103 bytes.
 #line 1 "ENTRY_10bcb450"
 
-undefined4 * Recovered_FUN_10bcb450::FUN_10bcb450(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10bcb450::FUN_10bcb450(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -28712,7 +28744,7 @@ undefined4 * Recovered_FUN_10bcb450::FUN_10bcb450(undefined4 *param_2,SCStr *par
 // Reference entry 10bd77f0; body size 375 bytes.
 #line 1 "ENTRY_10bd77f0"
 
-undefined1 * Recovered_FUN_10bd77f0::FUN_10bd77f0(undefined1 *param_2)
+undefined1 * Recovered_10bd77f0::FUN_10bd77f0(undefined1 *param_2)
 
 {
   undefined1 * param_1 = (undefined1 *)this;
@@ -28856,7 +28888,7 @@ SCStr * FUN_10beca90(SCStr *param_1,int param_2)
 // Reference entry 10bedc30; body size 60 bytes.
 #line 1 "ENTRY_10bedc30"
 
-undefined4 * Recovered_FUN_10bedc30::FUN_10bedc30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10bedc30::FUN_10bedc30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -28935,7 +28967,7 @@ void __fastcall FUN_10bee770(int param_1)
 // Reference entry 10bf1320; body size 103 bytes.
 #line 1 "ENTRY_10bf1320"
 
-undefined4 * Recovered_FUN_10bf1320::FUN_10bf1320(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10bf1320::FUN_10bf1320(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -28967,7 +28999,7 @@ undefined4 * Recovered_FUN_10bf1320::FUN_10bf1320(undefined4 *param_2,SCStr *par
 // Reference entry 10bf13a0; body size 150 bytes.
 #line 1 "ENTRY_10bf13a0"
 
-undefined4 * Recovered_FUN_10bf13a0::FUN_10bf13a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10bf13a0::FUN_10bf13a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29011,7 +29043,7 @@ undefined4 * Recovered_FUN_10bf13a0::FUN_10bf13a0(undefined4 *param_2,SCStr *par
 // Reference entry 10bf1470; body size 60 bytes.
 #line 1 "ENTRY_10bf1470"
 
-undefined4 * Recovered_FUN_10bf1470::FUN_10bf1470(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10bf1470::FUN_10bf1470(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29033,7 +29065,7 @@ undefined4 * Recovered_FUN_10bf1470::FUN_10bf1470(undefined4 *param_2,SCStr *par
 // Reference entry 10bf2780; body size 103 bytes.
 #line 1 "ENTRY_10bf2780"
 
-undefined4 * Recovered_FUN_10bf2780::FUN_10bf2780(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10bf2780::FUN_10bf2780(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29065,7 +29097,7 @@ undefined4 * Recovered_FUN_10bf2780::FUN_10bf2780(undefined4 *param_2,SCStr *par
 // Reference entry 10bf3040; body size 103 bytes.
 #line 1 "ENTRY_10bf3040"
 
-undefined4 * Recovered_FUN_10bf3040::FUN_10bf3040(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10bf3040::FUN_10bf3040(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29108,7 +29140,7 @@ SCStr * FUN_10bf34a0(SCStr *param_1)
 // Reference entry 10bf3530; body size 103 bytes.
 #line 1 "ENTRY_10bf3530"
 
-undefined4 * Recovered_FUN_10bf3530::FUN_10bf3530(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10bf3530::FUN_10bf3530(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29140,7 +29172,7 @@ undefined4 * Recovered_FUN_10bf3530::FUN_10bf3530(undefined4 *param_2,SCStr *par
 // Reference entry 10bf92f0; body size 103 bytes.
 #line 1 "ENTRY_10bf92f0"
 
-undefined4 * Recovered_FUN_10bf92f0::FUN_10bf92f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10bf92f0::FUN_10bf92f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29172,7 +29204,7 @@ undefined4 * Recovered_FUN_10bf92f0::FUN_10bf92f0(undefined4 *param_2,SCStr *par
 // Reference entry 10bfdb00; body size 103 bytes.
 #line 1 "ENTRY_10bfdb00"
 
-undefined4 * Recovered_FUN_10bfdb00::FUN_10bfdb00(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10bfdb00::FUN_10bfdb00(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29215,7 +29247,7 @@ SCStr * FUN_10bff8c0(SCStr *param_1)
 // Reference entry 10c00c70; body size 117 bytes.
 #line 1 "ENTRY_10c00c70"
 
-undefined4 * Recovered_FUN_10c00c70::FUN_10c00c70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c00c70::FUN_10c00c70(undefined4 *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -29250,7 +29282,7 @@ undefined4 * Recovered_FUN_10c00c70::FUN_10c00c70(undefined4 *param_2,SCStr *par
 // Reference entry 10c00d10; body size 103 bytes.
 #line 1 "ENTRY_10c00d10"
 
-undefined4 * Recovered_FUN_10c00d10::FUN_10c00d10(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c00d10::FUN_10c00d10(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29282,7 +29314,7 @@ undefined4 * Recovered_FUN_10c00d10::FUN_10c00d10(undefined4 *param_2,SCStr *par
 // Reference entry 10c00d90; body size 103 bytes.
 #line 1 "ENTRY_10c00d90"
 
-undefined4 * Recovered_FUN_10c00d90::FUN_10c00d90(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c00d90::FUN_10c00d90(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29314,7 +29346,7 @@ undefined4 * Recovered_FUN_10c00d90::FUN_10c00d90(undefined4 *param_2,SCStr *par
 // Reference entry 10c00e10; body size 103 bytes.
 #line 1 "ENTRY_10c00e10"
 
-undefined4 * Recovered_FUN_10c00e10::FUN_10c00e10(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c00e10::FUN_10c00e10(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29357,7 +29389,7 @@ SCStr * FUN_10c02e50(SCStr *param_1)
 // Reference entry 10c03950; body size 103 bytes.
 #line 1 "ENTRY_10c03950"
 
-undefined4 * Recovered_FUN_10c03950::FUN_10c03950(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c03950::FUN_10c03950(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29389,7 +29421,7 @@ undefined4 * Recovered_FUN_10c03950::FUN_10c03950(undefined4 *param_2,SCStr *par
 // Reference entry 10c039d0; body size 103 bytes.
 #line 1 "ENTRY_10c039d0"
 
-undefined4 * Recovered_FUN_10c039d0::FUN_10c039d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c039d0::FUN_10c039d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29454,7 +29486,7 @@ SCStr * FUN_10c0ed70(SCStr *param_1)
 // Reference entry 10c15630; body size 103 bytes.
 #line 1 "ENTRY_10c15630"
 
-undefined4 * Recovered_FUN_10c15630::FUN_10c15630(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c15630::FUN_10c15630(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29519,7 +29551,7 @@ SCStr * FUN_10c1e790(SCStr *param_1)
 // Reference entry 10c20ab0; body size 77 bytes.
 #line 1 "ENTRY_10c20ab0"
 
-void Recovered_FUN_10c20ab0::FUN_10c20ab0(undefined4 param_2)
+void Recovered_10c20ab0::FUN_10c20ab0(undefined4 param_2)
 
 {
   int * param_1 = (int *)this;
@@ -29550,7 +29582,7 @@ void Recovered_FUN_10c20ab0::FUN_10c20ab0(undefined4 param_2)
 // Reference entry 10c20b20; body size 181 bytes.
 #line 1 "ENTRY_10c20b20"
 
-undefined4 * Recovered_FUN_10c20b20::FUN_10c20b20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c20b20::FUN_10c20b20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29600,7 +29632,7 @@ undefined4 * Recovered_FUN_10c20b20::FUN_10c20b20(undefined4 *param_2,SCStr *par
 // Reference entry 10c20c30; body size 150 bytes.
 #line 1 "ENTRY_10c20c30"
 
-undefined4 * Recovered_FUN_10c20c30::FUN_10c20c30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c20c30::FUN_10c20c30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29644,7 +29676,7 @@ undefined4 * Recovered_FUN_10c20c30::FUN_10c20c30(undefined4 *param_2,SCStr *par
 // Reference entry 10c27280; body size 103 bytes.
 #line 1 "ENTRY_10c27280"
 
-undefined4 * Recovered_FUN_10c27280::FUN_10c27280(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c27280::FUN_10c27280(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29676,7 +29708,7 @@ undefined4 * Recovered_FUN_10c27280::FUN_10c27280(undefined4 *param_2,SCStr *par
 // Reference entry 10c2a670; body size 103 bytes.
 #line 1 "ENTRY_10c2a670"
 
-undefined4 * Recovered_FUN_10c2a670::FUN_10c2a670(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c2a670::FUN_10c2a670(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29748,7 +29780,7 @@ void FUN_10c2c400(undefined4 param_1,SCStr *param_2)
 // Reference entry 10c32770; body size 103 bytes.
 #line 1 "ENTRY_10c32770"
 
-undefined4 * Recovered_FUN_10c32770::FUN_10c32770(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c32770::FUN_10c32770(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29802,7 +29834,7 @@ SCStr * FUN_10c37ec0(SCStr *param_1)
 // Reference entry 10c38230; body size 103 bytes.
 #line 1 "ENTRY_10c38230"
 
-undefined4 * Recovered_FUN_10c38230::FUN_10c38230(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c38230::FUN_10c38230(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29834,7 +29866,7 @@ undefined4 * Recovered_FUN_10c38230::FUN_10c38230(undefined4 *param_2,SCStr *par
 // Reference entry 10c3b270; body size 103 bytes.
 #line 1 "ENTRY_10c3b270"
 
-undefined4 * Recovered_FUN_10c3b270::FUN_10c3b270(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c3b270::FUN_10c3b270(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29866,7 +29898,7 @@ undefined4 * Recovered_FUN_10c3b270::FUN_10c3b270(undefined4 *param_2,SCStr *par
 // Reference entry 10c3b7b0; body size 72 bytes.
 #line 1 "ENTRY_10c3b7b0"
 
-void Recovered_FUN_10c3b7b0::FUN_10c3b7b0(SCStr *param_2,undefined4 param_3)
+void Recovered_10c3b7b0::FUN_10c3b7b0(SCStr *param_2,undefined4 param_3)
 
 {
   int param_1 = (int)this;
@@ -29888,7 +29920,7 @@ void Recovered_FUN_10c3b7b0::FUN_10c3b7b0(SCStr *param_2,undefined4 param_3)
 // Reference entry 10c3ba30; body size 77 bytes.
 #line 1 "ENTRY_10c3ba30"
 
-void Recovered_FUN_10c3ba30::FUN_10c3ba30(SCStr *param_2,undefined4 param_3)
+void Recovered_10c3ba30::FUN_10c3ba30(SCStr *param_2,undefined4 param_3)
 
 {
   int param_1 = (int)this;
@@ -29922,7 +29954,7 @@ void FUN_10c46f60(SCStr *param_1)
 // Reference entry 10c478e0; body size 103 bytes.
 #line 1 "ENTRY_10c478e0"
 
-undefined4 * Recovered_FUN_10c478e0::FUN_10c478e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c478e0::FUN_10c478e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29965,7 +29997,7 @@ SCStr * FUN_10c4cb40(SCStr *param_1)
 // Reference entry 10c4cf90; body size 103 bytes.
 #line 1 "ENTRY_10c4cf90"
 
-undefined4 * Recovered_FUN_10c4cf90::FUN_10c4cf90(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c4cf90::FUN_10c4cf90(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -29997,7 +30029,7 @@ undefined4 * Recovered_FUN_10c4cf90::FUN_10c4cf90(undefined4 *param_2,SCStr *par
 // Reference entry 10c4d010; body size 103 bytes.
 #line 1 "ENTRY_10c4d010"
 
-undefined4 * Recovered_FUN_10c4d010::FUN_10c4d010(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c4d010::FUN_10c4d010(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -30029,7 +30061,7 @@ undefined4 * Recovered_FUN_10c4d010::FUN_10c4d010(undefined4 *param_2,SCStr *par
 // Reference entry 10c4d0f0; body size 69 bytes.
 #line 1 "ENTRY_10c4d0f0"
 
-void Recovered_FUN_10c4d0f0::FUN_10c4d0f0(SCStr *param_2,SCStr *param_3)
+void Recovered_10c4d0f0::FUN_10c4d0f0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -30109,7 +30141,7 @@ SCStr * FUN_10c52580(SCStr *param_1)
 // Reference entry 10c53000; body size 103 bytes.
 #line 1 "ENTRY_10c53000"
 
-undefined4 * Recovered_FUN_10c53000::FUN_10c53000(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c53000::FUN_10c53000(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -30141,7 +30173,7 @@ undefined4 * Recovered_FUN_10c53000::FUN_10c53000(undefined4 *param_2,SCStr *par
 // Reference entry 10c531a0; body size 103 bytes.
 #line 1 "ENTRY_10c531a0"
 
-undefined4 * Recovered_FUN_10c531a0::FUN_10c531a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c531a0::FUN_10c531a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -30173,7 +30205,7 @@ undefined4 * Recovered_FUN_10c531a0::FUN_10c531a0(undefined4 *param_2,SCStr *par
 // Reference entry 10c53220; body size 103 bytes.
 #line 1 "ENTRY_10c53220"
 
-undefined4 * Recovered_FUN_10c53220::FUN_10c53220(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c53220::FUN_10c53220(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -30205,7 +30237,7 @@ undefined4 * Recovered_FUN_10c53220::FUN_10c53220(undefined4 *param_2,SCStr *par
 // Reference entry 10c532a0; body size 103 bytes.
 #line 1 "ENTRY_10c532a0"
 
-undefined4 * Recovered_FUN_10c532a0::FUN_10c532a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c532a0::FUN_10c532a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -30237,7 +30269,7 @@ undefined4 * Recovered_FUN_10c532a0::FUN_10c532a0(undefined4 *param_2,SCStr *par
 // Reference entry 10c53320; body size 103 bytes.
 #line 1 "ENTRY_10c53320"
 
-undefined4 * Recovered_FUN_10c53320::FUN_10c53320(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c53320::FUN_10c53320(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -30269,7 +30301,7 @@ undefined4 * Recovered_FUN_10c53320::FUN_10c53320(undefined4 *param_2,SCStr *par
 // Reference entry 10c533a0; body size 103 bytes.
 #line 1 "ENTRY_10c533a0"
 
-undefined4 * Recovered_FUN_10c533a0::FUN_10c533a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c533a0::FUN_10c533a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -30301,7 +30333,7 @@ undefined4 * Recovered_FUN_10c533a0::FUN_10c533a0(undefined4 *param_2,SCStr *par
 // Reference entry 10c53550; body size 103 bytes.
 #line 1 "ENTRY_10c53550"
 
-undefined4 * Recovered_FUN_10c53550::FUN_10c53550(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c53550::FUN_10c53550(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -30333,7 +30365,7 @@ undefined4 * Recovered_FUN_10c53550::FUN_10c53550(undefined4 *param_2,SCStr *par
 // Reference entry 10c535d0; body size 103 bytes.
 #line 1 "ENTRY_10c535d0"
 
-undefined4 * Recovered_FUN_10c535d0::FUN_10c535d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c535d0::FUN_10c535d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -30365,7 +30397,7 @@ undefined4 * Recovered_FUN_10c535d0::FUN_10c535d0(undefined4 *param_2,SCStr *par
 // Reference entry 10c53650; body size 103 bytes.
 #line 1 "ENTRY_10c53650"
 
-undefined4 * Recovered_FUN_10c53650::FUN_10c53650(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c53650::FUN_10c53650(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -30397,7 +30429,7 @@ undefined4 * Recovered_FUN_10c53650::FUN_10c53650(undefined4 *param_2,SCStr *par
 // Reference entry 10c536d0; body size 103 bytes.
 #line 1 "ENTRY_10c536d0"
 
-undefined4 * Recovered_FUN_10c536d0::FUN_10c536d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c536d0::FUN_10c536d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -30429,7 +30461,7 @@ undefined4 * Recovered_FUN_10c536d0::FUN_10c536d0(undefined4 *param_2,SCStr *par
 // Reference entry 10c53750; body size 103 bytes.
 #line 1 "ENTRY_10c53750"
 
-undefined4 * Recovered_FUN_10c53750::FUN_10c53750(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c53750::FUN_10c53750(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -30461,7 +30493,7 @@ undefined4 * Recovered_FUN_10c53750::FUN_10c53750(undefined4 *param_2,SCStr *par
 // Reference entry 10c53d50; body size 69 bytes.
 #line 1 "ENTRY_10c53d50"
 
-void Recovered_FUN_10c53d50::FUN_10c53d50(SCStr *param_2,SCStr *param_3)
+void Recovered_10c53d50::FUN_10c53d50(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -30486,7 +30518,7 @@ void Recovered_FUN_10c53d50::FUN_10c53d50(SCStr *param_2,SCStr *param_3)
 // Reference entry 10c53db0; body size 69 bytes.
 #line 1 "ENTRY_10c53db0"
 
-void Recovered_FUN_10c53db0::FUN_10c53db0(SCStr *param_2,SCStr *param_3)
+void Recovered_10c53db0::FUN_10c53db0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -30511,7 +30543,7 @@ void Recovered_FUN_10c53db0::FUN_10c53db0(SCStr *param_2,SCStr *param_3)
 // Reference entry 10c53e10; body size 69 bytes.
 #line 1 "ENTRY_10c53e10"
 
-void Recovered_FUN_10c53e10::FUN_10c53e10(SCStr *param_2,SCStr *param_3)
+void Recovered_10c53e10::FUN_10c53e10(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -30536,7 +30568,7 @@ void Recovered_FUN_10c53e10::FUN_10c53e10(SCStr *param_2,SCStr *param_3)
 // Reference entry 10c53e70; body size 69 bytes.
 #line 1 "ENTRY_10c53e70"
 
-void Recovered_FUN_10c53e70::FUN_10c53e70(SCStr *param_2,SCStr *param_3)
+void Recovered_10c53e70::FUN_10c53e70(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -30561,7 +30593,7 @@ void Recovered_FUN_10c53e70::FUN_10c53e70(SCStr *param_2,SCStr *param_3)
 // Reference entry 10c53ed0; body size 69 bytes.
 #line 1 "ENTRY_10c53ed0"
 
-void Recovered_FUN_10c53ed0::FUN_10c53ed0(SCStr *param_2,SCStr *param_3)
+void Recovered_10c53ed0::FUN_10c53ed0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -30630,7 +30662,7 @@ SCStr * FUN_10c57a20(SCStr *param_1)
 // Reference entry 10c58260; body size 103 bytes.
 #line 1 "ENTRY_10c58260"
 
-undefined4 * Recovered_FUN_10c58260::FUN_10c58260(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c58260::FUN_10c58260(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -30662,7 +30694,7 @@ undefined4 * Recovered_FUN_10c58260::FUN_10c58260(undefined4 *param_2,SCStr *par
 // Reference entry 10c58400; body size 103 bytes.
 #line 1 "ENTRY_10c58400"
 
-undefined4 * Recovered_FUN_10c58400::FUN_10c58400(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c58400::FUN_10c58400(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -30694,7 +30726,7 @@ undefined4 * Recovered_FUN_10c58400::FUN_10c58400(undefined4 *param_2,SCStr *par
 // Reference entry 10c58480; body size 103 bytes.
 #line 1 "ENTRY_10c58480"
 
-undefined4 * Recovered_FUN_10c58480::FUN_10c58480(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c58480::FUN_10c58480(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -30726,7 +30758,7 @@ undefined4 * Recovered_FUN_10c58480::FUN_10c58480(undefined4 *param_2,SCStr *par
 // Reference entry 10c58500; body size 103 bytes.
 #line 1 "ENTRY_10c58500"
 
-undefined4 * Recovered_FUN_10c58500::FUN_10c58500(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c58500::FUN_10c58500(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -30758,7 +30790,7 @@ undefined4 * Recovered_FUN_10c58500::FUN_10c58500(undefined4 *param_2,SCStr *par
 // Reference entry 10c58580; body size 103 bytes.
 #line 1 "ENTRY_10c58580"
 
-undefined4 * Recovered_FUN_10c58580::FUN_10c58580(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c58580::FUN_10c58580(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -30790,7 +30822,7 @@ undefined4 * Recovered_FUN_10c58580::FUN_10c58580(undefined4 *param_2,SCStr *par
 // Reference entry 10c58730; body size 103 bytes.
 #line 1 "ENTRY_10c58730"
 
-undefined4 * Recovered_FUN_10c58730::FUN_10c58730(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c58730::FUN_10c58730(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -30822,7 +30854,7 @@ undefined4 * Recovered_FUN_10c58730::FUN_10c58730(undefined4 *param_2,SCStr *par
 // Reference entry 10c587b0; body size 103 bytes.
 #line 1 "ENTRY_10c587b0"
 
-undefined4 * Recovered_FUN_10c587b0::FUN_10c587b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c587b0::FUN_10c587b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -30854,7 +30886,7 @@ undefined4 * Recovered_FUN_10c587b0::FUN_10c587b0(undefined4 *param_2,SCStr *par
 // Reference entry 10c58830; body size 103 bytes.
 #line 1 "ENTRY_10c58830"
 
-undefined4 * Recovered_FUN_10c58830::FUN_10c58830(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c58830::FUN_10c58830(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -30886,7 +30918,7 @@ undefined4 * Recovered_FUN_10c58830::FUN_10c58830(undefined4 *param_2,SCStr *par
 // Reference entry 10c588b0; body size 103 bytes.
 #line 1 "ENTRY_10c588b0"
 
-undefined4 * Recovered_FUN_10c588b0::FUN_10c588b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c588b0::FUN_10c588b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -30918,7 +30950,7 @@ undefined4 * Recovered_FUN_10c588b0::FUN_10c588b0(undefined4 *param_2,SCStr *par
 // Reference entry 10c58de0; body size 69 bytes.
 #line 1 "ENTRY_10c58de0"
 
-void Recovered_FUN_10c58de0::FUN_10c58de0(SCStr *param_2,SCStr *param_3)
+void Recovered_10c58de0::FUN_10c58de0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -30943,7 +30975,7 @@ void Recovered_FUN_10c58de0::FUN_10c58de0(SCStr *param_2,SCStr *param_3)
 // Reference entry 10c58e40; body size 69 bytes.
 #line 1 "ENTRY_10c58e40"
 
-void Recovered_FUN_10c58e40::FUN_10c58e40(SCStr *param_2,SCStr *param_3)
+void Recovered_10c58e40::FUN_10c58e40(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -30968,7 +31000,7 @@ void Recovered_FUN_10c58e40::FUN_10c58e40(SCStr *param_2,SCStr *param_3)
 // Reference entry 10c58ea0; body size 69 bytes.
 #line 1 "ENTRY_10c58ea0"
 
-void Recovered_FUN_10c58ea0::FUN_10c58ea0(SCStr *param_2,SCStr *param_3)
+void Recovered_10c58ea0::FUN_10c58ea0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -30993,7 +31025,7 @@ void Recovered_FUN_10c58ea0::FUN_10c58ea0(SCStr *param_2,SCStr *param_3)
 // Reference entry 10c58f00; body size 69 bytes.
 #line 1 "ENTRY_10c58f00"
 
-void Recovered_FUN_10c58f00::FUN_10c58f00(SCStr *param_2,SCStr *param_3)
+void Recovered_10c58f00::FUN_10c58f00(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -31029,7 +31061,7 @@ SCStr * FUN_10c5a580(SCStr *param_1)
 // Reference entry 10c5a900; body size 103 bytes.
 #line 1 "ENTRY_10c5a900"
 
-undefined4 * Recovered_FUN_10c5a900::FUN_10c5a900(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c5a900::FUN_10c5a900(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -31061,7 +31093,7 @@ undefined4 * Recovered_FUN_10c5a900::FUN_10c5a900(undefined4 *param_2,SCStr *par
 // Reference entry 10c5aaa0; body size 103 bytes.
 #line 1 "ENTRY_10c5aaa0"
 
-undefined4 * Recovered_FUN_10c5aaa0::FUN_10c5aaa0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c5aaa0::FUN_10c5aaa0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -31093,7 +31125,7 @@ undefined4 * Recovered_FUN_10c5aaa0::FUN_10c5aaa0(undefined4 *param_2,SCStr *par
 // Reference entry 10c5ac50; body size 103 bytes.
 #line 1 "ENTRY_10c5ac50"
 
-undefined4 * Recovered_FUN_10c5ac50::FUN_10c5ac50(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c5ac50::FUN_10c5ac50(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -31125,7 +31157,7 @@ undefined4 * Recovered_FUN_10c5ac50::FUN_10c5ac50(undefined4 *param_2,SCStr *par
 // Reference entry 10c5af10; body size 69 bytes.
 #line 1 "ENTRY_10c5af10"
 
-void Recovered_FUN_10c5af10::FUN_10c5af10(SCStr *param_2,SCStr *param_3)
+void Recovered_10c5af10::FUN_10c5af10(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -31150,7 +31182,7 @@ void Recovered_FUN_10c5af10::FUN_10c5af10(SCStr *param_2,SCStr *param_3)
 // Reference entry 10c5bbb0; body size 42 bytes.
 #line 1 "ENTRY_10c5bbb0"
 
-void Recovered_FUN_10c5bbb0::FUN_10c5bbb0(short param_2)
+void Recovered_10c5bbb0::FUN_10c5bbb0(short param_2)
 
 {
   int param_1 = (int)this;
@@ -31171,7 +31203,7 @@ void Recovered_FUN_10c5bbb0::FUN_10c5bbb0(short param_2)
 // Reference entry 10c5bbf0; body size 42 bytes.
 #line 1 "ENTRY_10c5bbf0"
 
-void Recovered_FUN_10c5bbf0::FUN_10c5bbf0(short param_2)
+void Recovered_10c5bbf0::FUN_10c5bbf0(short param_2)
 
 {
   int param_1 = (int)this;
@@ -31192,7 +31224,7 @@ void Recovered_FUN_10c5bbf0::FUN_10c5bbf0(short param_2)
 // Reference entry 10c5c170; body size 605 bytes.
 #line 1 "ENTRY_10c5c170"
 
-void Recovered_FUN_10c5c170::FUN_10c5c170(undefined4 param_2,SCStr *param_3)
+void Recovered_10c5c170::FUN_10c5c170(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -31297,7 +31329,7 @@ void Recovered_FUN_10c5c170::FUN_10c5c170(undefined4 param_2,SCStr *param_3)
 // Reference entry 10c5c970; body size 42 bytes.
 #line 1 "ENTRY_10c5c970"
 
-void Recovered_FUN_10c5c970::FUN_10c5c970(short param_2)
+void Recovered_10c5c970::FUN_10c5c970(short param_2)
 
 {
   int param_1 = (int)this;
@@ -31318,7 +31350,7 @@ void Recovered_FUN_10c5c970::FUN_10c5c970(short param_2)
 // Reference entry 10c5cb70; body size 42 bytes.
 #line 1 "ENTRY_10c5cb70"
 
-void Recovered_FUN_10c5cb70::FUN_10c5cb70(short param_2)
+void Recovered_10c5cb70::FUN_10c5cb70(short param_2)
 
 {
   int param_1 = (int)this;
@@ -31339,7 +31371,7 @@ void Recovered_FUN_10c5cb70::FUN_10c5cb70(short param_2)
 // Reference entry 10c5cbd0; body size 41 bytes.
 #line 1 "ENTRY_10c5cbd0"
 
-void Recovered_FUN_10c5cbd0::FUN_10c5cbd0(undefined1 param_2)
+void Recovered_10c5cbd0::FUN_10c5cbd0(undefined1 param_2)
 
 {
   int param_1 = (int)this;
@@ -31360,7 +31392,7 @@ void Recovered_FUN_10c5cbd0::FUN_10c5cbd0(undefined1 param_2)
 // Reference entry 10c5cc20; body size 42 bytes.
 #line 1 "ENTRY_10c5cc20"
 
-void Recovered_FUN_10c5cc20::FUN_10c5cc20(short param_2)
+void Recovered_10c5cc20::FUN_10c5cc20(short param_2)
 
 {
   int param_1 = (int)this;
@@ -31381,7 +31413,7 @@ void Recovered_FUN_10c5cc20::FUN_10c5cc20(short param_2)
 // Reference entry 10c5cc70; body size 41 bytes.
 #line 1 "ENTRY_10c5cc70"
 
-void Recovered_FUN_10c5cc70::FUN_10c5cc70(undefined1 param_2)
+void Recovered_10c5cc70::FUN_10c5cc70(undefined1 param_2)
 
 {
   int param_1 = (int)this;
@@ -31442,7 +31474,7 @@ void __fastcall FUN_10c5ccf0(int param_1)
 // Reference entry 10c5cd30; body size 103 bytes.
 #line 1 "ENTRY_10c5cd30"
 
-undefined4 * Recovered_FUN_10c5cd30::FUN_10c5cd30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c5cd30::FUN_10c5cd30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -31474,7 +31506,7 @@ undefined4 * Recovered_FUN_10c5cd30::FUN_10c5cd30(undefined4 *param_2,SCStr *par
 // Reference entry 10c5d000; body size 103 bytes.
 #line 1 "ENTRY_10c5d000"
 
-undefined4 * Recovered_FUN_10c5d000::FUN_10c5d000(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c5d000::FUN_10c5d000(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -31506,7 +31538,7 @@ undefined4 * Recovered_FUN_10c5d000::FUN_10c5d000(undefined4 *param_2,SCStr *par
 // Reference entry 10c5d350; body size 42 bytes.
 #line 1 "ENTRY_10c5d350"
 
-void Recovered_FUN_10c5d350::FUN_10c5d350(short param_2)
+void Recovered_10c5d350::FUN_10c5d350(short param_2)
 
 {
   int param_1 = (int)this;
@@ -31527,7 +31559,7 @@ void Recovered_FUN_10c5d350::FUN_10c5d350(short param_2)
 // Reference entry 10c5d720; body size 41 bytes.
 #line 1 "ENTRY_10c5d720"
 
-void Recovered_FUN_10c5d720::FUN_10c5d720(undefined1 param_2)
+void Recovered_10c5d720::FUN_10c5d720(undefined1 param_2)
 
 {
   int param_1 = (int)this;
@@ -31548,7 +31580,7 @@ void Recovered_FUN_10c5d720::FUN_10c5d720(undefined1 param_2)
 // Reference entry 10c5d770; body size 42 bytes.
 #line 1 "ENTRY_10c5d770"
 
-void Recovered_FUN_10c5d770::FUN_10c5d770(short param_2)
+void Recovered_10c5d770::FUN_10c5d770(short param_2)
 
 {
   int param_1 = (int)this;
@@ -31569,7 +31601,7 @@ void Recovered_FUN_10c5d770::FUN_10c5d770(short param_2)
 // Reference entry 10c5d7c0; body size 41 bytes.
 #line 1 "ENTRY_10c5d7c0"
 
-void Recovered_FUN_10c5d7c0::FUN_10c5d7c0(undefined1 param_2)
+void Recovered_10c5d7c0::FUN_10c5d7c0(undefined1 param_2)
 
 {
   int param_1 = (int)this;
@@ -31590,7 +31622,7 @@ void Recovered_FUN_10c5d7c0::FUN_10c5d7c0(undefined1 param_2)
 // Reference entry 10c5d9e0; body size 41 bytes.
 #line 1 "ENTRY_10c5d9e0"
 
-void Recovered_FUN_10c5d9e0::FUN_10c5d9e0(undefined1 param_2)
+void Recovered_10c5d9e0::FUN_10c5d9e0(undefined1 param_2)
 
 {
   int param_1 = (int)this;
@@ -31611,7 +31643,7 @@ void Recovered_FUN_10c5d9e0::FUN_10c5d9e0(undefined1 param_2)
 // Reference entry 10c5da30; body size 42 bytes.
 #line 1 "ENTRY_10c5da30"
 
-void Recovered_FUN_10c5da30::FUN_10c5da30(short param_2)
+void Recovered_10c5da30::FUN_10c5da30(short param_2)
 
 {
   int param_1 = (int)this;
@@ -31632,7 +31664,7 @@ void Recovered_FUN_10c5da30::FUN_10c5da30(short param_2)
 // Reference entry 10c5da80; body size 42 bytes.
 #line 1 "ENTRY_10c5da80"
 
-void Recovered_FUN_10c5da80::FUN_10c5da80(short param_2)
+void Recovered_10c5da80::FUN_10c5da80(short param_2)
 
 {
   int param_1 = (int)this;
@@ -31653,7 +31685,7 @@ void Recovered_FUN_10c5da80::FUN_10c5da80(short param_2)
 // Reference entry 10c5dac0; body size 42 bytes.
 #line 1 "ENTRY_10c5dac0"
 
-void Recovered_FUN_10c5dac0::FUN_10c5dac0(short param_2)
+void Recovered_10c5dac0::FUN_10c5dac0(short param_2)
 
 {
   int param_1 = (int)this;
@@ -31674,7 +31706,7 @@ void Recovered_FUN_10c5dac0::FUN_10c5dac0(short param_2)
 // Reference entry 10c5db10; body size 42 bytes.
 #line 1 "ENTRY_10c5db10"
 
-void Recovered_FUN_10c5db10::FUN_10c5db10(short param_2)
+void Recovered_10c5db10::FUN_10c5db10(short param_2)
 
 {
   int param_1 = (int)this;
@@ -31695,7 +31727,7 @@ void Recovered_FUN_10c5db10::FUN_10c5db10(short param_2)
 // Reference entry 10c5db60; body size 41 bytes.
 #line 1 "ENTRY_10c5db60"
 
-void Recovered_FUN_10c5db60::FUN_10c5db60(undefined1 param_2)
+void Recovered_10c5db60::FUN_10c5db60(undefined1 param_2)
 
 {
   int param_1 = (int)this;
@@ -31716,7 +31748,7 @@ void Recovered_FUN_10c5db60::FUN_10c5db60(undefined1 param_2)
 // Reference entry 10c5dc20; body size 42 bytes.
 #line 1 "ENTRY_10c5dc20"
 
-void Recovered_FUN_10c5dc20::FUN_10c5dc20(short param_2)
+void Recovered_10c5dc20::FUN_10c5dc20(short param_2)
 
 {
   int param_1 = (int)this;
@@ -31778,7 +31810,7 @@ SCStr * FUN_10c67820(SCStr *param_1)
 // Reference entry 10c67b50; body size 119 bytes.
 #line 1 "ENTRY_10c67b50"
 
-undefined4 * Recovered_FUN_10c67b50::FUN_10c67b50(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c67b50::FUN_10c67b50(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -31816,7 +31848,7 @@ undefined4 * Recovered_FUN_10c67b50::FUN_10c67b50(undefined4 *param_2,SCStr *par
 // Reference entry 10c6c1c0; body size 103 bytes.
 #line 1 "ENTRY_10c6c1c0"
 
-undefined4 * Recovered_FUN_10c6c1c0::FUN_10c6c1c0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c6c1c0::FUN_10c6c1c0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -31859,7 +31891,7 @@ SCStr * FUN_10c6d7f0(SCStr *param_1)
 // Reference entry 10c6e370; body size 117 bytes.
 #line 1 "ENTRY_10c6e370"
 
-undefined4 * Recovered_FUN_10c6e370::FUN_10c6e370(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c6e370::FUN_10c6e370(undefined4 *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -31900,7 +31932,7 @@ undefined4 * Recovered_FUN_10c6e370::FUN_10c6e370(undefined4 *param_2,SCStr *par
 // Reference entry 10c6edd0; body size 123 bytes.
 #line 1 "ENTRY_10c6edd0"
 
-undefined4 * Recovered_FUN_10c6edd0::FUN_10c6edd0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c6edd0::FUN_10c6edd0(undefined4 *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -31935,7 +31967,7 @@ undefined4 * Recovered_FUN_10c6edd0::FUN_10c6edd0(undefined4 *param_2,SCStr *par
 // Reference entry 10c7fb20; body size 123 bytes.
 #line 1 "ENTRY_10c7fb20"
 
-undefined4 * Recovered_FUN_10c7fb20::FUN_10c7fb20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c7fb20::FUN_10c7fb20(undefined4 *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -31992,7 +32024,7 @@ SCStr * FUN_10c81e70(SCStr *param_1)
 // Reference entry 10c83420; body size 103 bytes.
 #line 1 "ENTRY_10c83420"
 
-undefined4 * Recovered_FUN_10c83420::FUN_10c83420(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c83420::FUN_10c83420(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -32024,7 +32056,7 @@ undefined4 * Recovered_FUN_10c83420::FUN_10c83420(undefined4 *param_2,SCStr *par
 // Reference entry 10c834a0; body size 103 bytes.
 #line 1 "ENTRY_10c834a0"
 
-undefined4 * Recovered_FUN_10c834a0::FUN_10c834a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c834a0::FUN_10c834a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -32056,7 +32088,7 @@ undefined4 * Recovered_FUN_10c834a0::FUN_10c834a0(undefined4 *param_2,SCStr *par
 // Reference entry 10c83520; body size 69 bytes.
 #line 1 "ENTRY_10c83520"
 
-void Recovered_FUN_10c83520::FUN_10c83520(SCStr *param_2,SCStr *param_3)
+void Recovered_10c83520::FUN_10c83520(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -32081,7 +32113,7 @@ void Recovered_FUN_10c83520::FUN_10c83520(SCStr *param_2,SCStr *param_3)
 // Reference entry 10c83580; body size 69 bytes.
 #line 1 "ENTRY_10c83580"
 
-void Recovered_FUN_10c83580::FUN_10c83580(SCStr *param_2,SCStr *param_3)
+void Recovered_10c83580::FUN_10c83580(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -32117,7 +32149,7 @@ SCStr * FUN_10c844e0(SCStr *param_1)
 // Reference entry 10c845b0; body size 103 bytes.
 #line 1 "ENTRY_10c845b0"
 
-undefined4 * Recovered_FUN_10c845b0::FUN_10c845b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c845b0::FUN_10c845b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -32149,7 +32181,7 @@ undefined4 * Recovered_FUN_10c845b0::FUN_10c845b0(undefined4 *param_2,SCStr *par
 // Reference entry 10c8d640; body size 50 bytes.
 #line 1 "ENTRY_10c8d640"
 
-SCStr * Recovered_FUN_10c8d640::FUN_10c8d640(SCStr *param_2)
+SCStr * Recovered_10c8d640::FUN_10c8d640(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -32168,7 +32200,7 @@ SCStr * Recovered_FUN_10c8d640::FUN_10c8d640(SCStr *param_2)
 // Reference entry 10c92dc0; body size 60 bytes.
 #line 1 "ENTRY_10c92dc0"
 
-undefined4 * Recovered_FUN_10c92dc0::FUN_10c92dc0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c92dc0::FUN_10c92dc0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -32190,7 +32222,7 @@ undefined4 * Recovered_FUN_10c92dc0::FUN_10c92dc0(undefined4 *param_2,SCStr *par
 // Reference entry 10c9bd90; body size 103 bytes.
 #line 1 "ENTRY_10c9bd90"
 
-undefined4 * Recovered_FUN_10c9bd90::FUN_10c9bd90(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10c9bd90::FUN_10c9bd90(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -32567,7 +32599,7 @@ void __fastcall FUN_10cb3240(int param_1)
 // Reference entry 10cb38c0; body size 103 bytes.
 #line 1 "ENTRY_10cb38c0"
 
-undefined4 * Recovered_FUN_10cb38c0::FUN_10cb38c0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cb38c0::FUN_10cb38c0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -32599,7 +32631,7 @@ undefined4 * Recovered_FUN_10cb38c0::FUN_10cb38c0(undefined4 *param_2,SCStr *par
 // Reference entry 10cbc5b0; body size 103 bytes.
 #line 1 "ENTRY_10cbc5b0"
 
-undefined4 * Recovered_FUN_10cbc5b0::FUN_10cbc5b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cbc5b0::FUN_10cbc5b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -32664,7 +32696,7 @@ SCStr * FUN_10cbdac0(SCStr *param_1)
 // Reference entry 10cc0050; body size 103 bytes.
 #line 1 "ENTRY_10cc0050"
 
-undefined4 * Recovered_FUN_10cc0050::FUN_10cc0050(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cc0050::FUN_10cc0050(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -32707,7 +32739,7 @@ SCStr * FUN_10cc2850(SCStr *param_1)
 // Reference entry 10cc34d0; body size 103 bytes.
 #line 1 "ENTRY_10cc34d0"
 
-undefined4 * Recovered_FUN_10cc34d0::FUN_10cc34d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cc34d0::FUN_10cc34d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -32739,7 +32771,7 @@ undefined4 * Recovered_FUN_10cc34d0::FUN_10cc34d0(undefined4 *param_2,SCStr *par
 // Reference entry 10cc3650; body size 69 bytes.
 #line 1 "ENTRY_10cc3650"
 
-void Recovered_FUN_10cc3650::FUN_10cc3650(SCStr *param_2,SCStr *param_3)
+void Recovered_10cc3650::FUN_10cc3650(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -32863,7 +32895,7 @@ SCStr * FUN_10cd3dc0(SCStr *param_1)
 // Reference entry 10cd87f0; body size 103 bytes.
 #line 1 "ENTRY_10cd87f0"
 
-undefined4 * Recovered_FUN_10cd87f0::FUN_10cd87f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cd87f0::FUN_10cd87f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -32895,7 +32927,7 @@ undefined4 * Recovered_FUN_10cd87f0::FUN_10cd87f0(undefined4 *param_2,SCStr *par
 // Reference entry 10cd8870; body size 103 bytes.
 #line 1 "ENTRY_10cd8870"
 
-undefined4 * Recovered_FUN_10cd8870::FUN_10cd8870(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cd8870::FUN_10cd8870(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -32927,7 +32959,7 @@ undefined4 * Recovered_FUN_10cd8870::FUN_10cd8870(undefined4 *param_2,SCStr *par
 // Reference entry 10cd88f0; body size 103 bytes.
 #line 1 "ENTRY_10cd88f0"
 
-undefined4 * Recovered_FUN_10cd88f0::FUN_10cd88f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cd88f0::FUN_10cd88f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -32959,7 +32991,7 @@ undefined4 * Recovered_FUN_10cd88f0::FUN_10cd88f0(undefined4 *param_2,SCStr *par
 // Reference entry 10cd8970; body size 103 bytes.
 #line 1 "ENTRY_10cd8970"
 
-undefined4 * Recovered_FUN_10cd8970::FUN_10cd8970(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cd8970::FUN_10cd8970(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -32991,7 +33023,7 @@ undefined4 * Recovered_FUN_10cd8970::FUN_10cd8970(undefined4 *param_2,SCStr *par
 // Reference entry 10cd89f0; body size 103 bytes.
 #line 1 "ENTRY_10cd89f0"
 
-undefined4 * Recovered_FUN_10cd89f0::FUN_10cd89f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cd89f0::FUN_10cd89f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -33023,7 +33055,7 @@ undefined4 * Recovered_FUN_10cd89f0::FUN_10cd89f0(undefined4 *param_2,SCStr *par
 // Reference entry 10cd8a70; body size 103 bytes.
 #line 1 "ENTRY_10cd8a70"
 
-undefined4 * Recovered_FUN_10cd8a70::FUN_10cd8a70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cd8a70::FUN_10cd8a70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -33055,7 +33087,7 @@ undefined4 * Recovered_FUN_10cd8a70::FUN_10cd8a70(undefined4 *param_2,SCStr *par
 // Reference entry 10cd8af0; body size 103 bytes.
 #line 1 "ENTRY_10cd8af0"
 
-undefined4 * Recovered_FUN_10cd8af0::FUN_10cd8af0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cd8af0::FUN_10cd8af0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -33087,7 +33119,7 @@ undefined4 * Recovered_FUN_10cd8af0::FUN_10cd8af0(undefined4 *param_2,SCStr *par
 // Reference entry 10cd8b70; body size 103 bytes.
 #line 1 "ENTRY_10cd8b70"
 
-undefined4 * Recovered_FUN_10cd8b70::FUN_10cd8b70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cd8b70::FUN_10cd8b70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -33119,7 +33151,7 @@ undefined4 * Recovered_FUN_10cd8b70::FUN_10cd8b70(undefined4 *param_2,SCStr *par
 // Reference entry 10cd8bf0; body size 103 bytes.
 #line 1 "ENTRY_10cd8bf0"
 
-undefined4 * Recovered_FUN_10cd8bf0::FUN_10cd8bf0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cd8bf0::FUN_10cd8bf0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -33151,7 +33183,7 @@ undefined4 * Recovered_FUN_10cd8bf0::FUN_10cd8bf0(undefined4 *param_2,SCStr *par
 // Reference entry 10cd8c70; body size 69 bytes.
 #line 1 "ENTRY_10cd8c70"
 
-void Recovered_FUN_10cd8c70::FUN_10cd8c70(SCStr *param_2,SCStr *param_3)
+void Recovered_10cd8c70::FUN_10cd8c70(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -33176,7 +33208,7 @@ void Recovered_FUN_10cd8c70::FUN_10cd8c70(SCStr *param_2,SCStr *param_3)
 // Reference entry 10cd8cd0; body size 69 bytes.
 #line 1 "ENTRY_10cd8cd0"
 
-void Recovered_FUN_10cd8cd0::FUN_10cd8cd0(SCStr *param_2,SCStr *param_3)
+void Recovered_10cd8cd0::FUN_10cd8cd0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -33201,7 +33233,7 @@ void Recovered_FUN_10cd8cd0::FUN_10cd8cd0(SCStr *param_2,SCStr *param_3)
 // Reference entry 10cd8d30; body size 69 bytes.
 #line 1 "ENTRY_10cd8d30"
 
-void Recovered_FUN_10cd8d30::FUN_10cd8d30(SCStr *param_2,SCStr *param_3)
+void Recovered_10cd8d30::FUN_10cd8d30(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -33226,7 +33258,7 @@ void Recovered_FUN_10cd8d30::FUN_10cd8d30(SCStr *param_2,SCStr *param_3)
 // Reference entry 10cd8d90; body size 69 bytes.
 #line 1 "ENTRY_10cd8d90"
 
-void Recovered_FUN_10cd8d90::FUN_10cd8d90(SCStr *param_2,SCStr *param_3)
+void Recovered_10cd8d90::FUN_10cd8d90(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -33251,7 +33283,7 @@ void Recovered_FUN_10cd8d90::FUN_10cd8d90(SCStr *param_2,SCStr *param_3)
 // Reference entry 10cd8df0; body size 69 bytes.
 #line 1 "ENTRY_10cd8df0"
 
-void Recovered_FUN_10cd8df0::FUN_10cd8df0(SCStr *param_2,SCStr *param_3)
+void Recovered_10cd8df0::FUN_10cd8df0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -33276,7 +33308,7 @@ void Recovered_FUN_10cd8df0::FUN_10cd8df0(SCStr *param_2,SCStr *param_3)
 // Reference entry 10cd8e50; body size 69 bytes.
 #line 1 "ENTRY_10cd8e50"
 
-void Recovered_FUN_10cd8e50::FUN_10cd8e50(SCStr *param_2,SCStr *param_3)
+void Recovered_10cd8e50::FUN_10cd8e50(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -33301,7 +33333,7 @@ void Recovered_FUN_10cd8e50::FUN_10cd8e50(SCStr *param_2,SCStr *param_3)
 // Reference entry 10cd8eb0; body size 69 bytes.
 #line 1 "ENTRY_10cd8eb0"
 
-void Recovered_FUN_10cd8eb0::FUN_10cd8eb0(SCStr *param_2,SCStr *param_3)
+void Recovered_10cd8eb0::FUN_10cd8eb0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -33326,7 +33358,7 @@ void Recovered_FUN_10cd8eb0::FUN_10cd8eb0(SCStr *param_2,SCStr *param_3)
 // Reference entry 10cd8f10; body size 69 bytes.
 #line 1 "ENTRY_10cd8f10"
 
-void Recovered_FUN_10cd8f10::FUN_10cd8f10(SCStr *param_2,SCStr *param_3)
+void Recovered_10cd8f10::FUN_10cd8f10(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -33351,7 +33383,7 @@ void Recovered_FUN_10cd8f10::FUN_10cd8f10(SCStr *param_2,SCStr *param_3)
 // Reference entry 10cd8f70; body size 69 bytes.
 #line 1 "ENTRY_10cd8f70"
 
-void Recovered_FUN_10cd8f70::FUN_10cd8f70(SCStr *param_2,SCStr *param_3)
+void Recovered_10cd8f70::FUN_10cd8f70(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -33398,7 +33430,7 @@ SCStr * FUN_10cddc00(SCStr *param_1)
 // Reference entry 10cdea40; body size 103 bytes.
 #line 1 "ENTRY_10cdea40"
 
-undefined4 * Recovered_FUN_10cdea40::FUN_10cdea40(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cdea40::FUN_10cdea40(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -33430,7 +33462,7 @@ undefined4 * Recovered_FUN_10cdea40::FUN_10cdea40(undefined4 *param_2,SCStr *par
 // Reference entry 10cdeac0; body size 103 bytes.
 #line 1 "ENTRY_10cdeac0"
 
-undefined4 * Recovered_FUN_10cdeac0::FUN_10cdeac0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cdeac0::FUN_10cdeac0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -33462,7 +33494,7 @@ undefined4 * Recovered_FUN_10cdeac0::FUN_10cdeac0(undefined4 *param_2,SCStr *par
 // Reference entry 10cdeb40; body size 103 bytes.
 #line 1 "ENTRY_10cdeb40"
 
-undefined4 * Recovered_FUN_10cdeb40::FUN_10cdeb40(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cdeb40::FUN_10cdeb40(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -33494,7 +33526,7 @@ undefined4 * Recovered_FUN_10cdeb40::FUN_10cdeb40(undefined4 *param_2,SCStr *par
 // Reference entry 10cdebc0; body size 103 bytes.
 #line 1 "ENTRY_10cdebc0"
 
-undefined4 * Recovered_FUN_10cdebc0::FUN_10cdebc0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cdebc0::FUN_10cdebc0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -33526,7 +33558,7 @@ undefined4 * Recovered_FUN_10cdebc0::FUN_10cdebc0(undefined4 *param_2,SCStr *par
 // Reference entry 10cdec40; body size 103 bytes.
 #line 1 "ENTRY_10cdec40"
 
-undefined4 * Recovered_FUN_10cdec40::FUN_10cdec40(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cdec40::FUN_10cdec40(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -33558,7 +33590,7 @@ undefined4 * Recovered_FUN_10cdec40::FUN_10cdec40(undefined4 *param_2,SCStr *par
 // Reference entry 10cdef40; body size 69 bytes.
 #line 1 "ENTRY_10cdef40"
 
-void Recovered_FUN_10cdef40::FUN_10cdef40(SCStr *param_2,SCStr *param_3)
+void Recovered_10cdef40::FUN_10cdef40(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -33583,7 +33615,7 @@ void Recovered_FUN_10cdef40::FUN_10cdef40(SCStr *param_2,SCStr *param_3)
 // Reference entry 10cdefa0; body size 69 bytes.
 #line 1 "ENTRY_10cdefa0"
 
-void Recovered_FUN_10cdefa0::FUN_10cdefa0(SCStr *param_2,SCStr *param_3)
+void Recovered_10cdefa0::FUN_10cdefa0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -33655,7 +33687,7 @@ void FUN_10ce07c0(SCStr *param_1)
 // Reference entry 10ce0a20; body size 103 bytes.
 #line 1 "ENTRY_10ce0a20"
 
-undefined4 * Recovered_FUN_10ce0a20::FUN_10ce0a20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ce0a20::FUN_10ce0a20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -33742,7 +33774,7 @@ SCStr * FUN_10ce1a00(SCStr *param_1)
 // Reference entry 10ce1a40; body size 33 bytes.
 #line 1 "ENTRY_10ce1a40"
 
-SCStr * Recovered_FUN_10ce1a40::FUN_10ce1a40(SCStr *param_2)
+SCStr * Recovered_10ce1a40::FUN_10ce1a40(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -33762,7 +33794,7 @@ SCStr * Recovered_FUN_10ce1a40::FUN_10ce1a40(SCStr *param_2)
 // Reference entry 10ce1e20; body size 103 bytes.
 #line 1 "ENTRY_10ce1e20"
 
-undefined4 * Recovered_FUN_10ce1e20::FUN_10ce1e20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ce1e20::FUN_10ce1e20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -33794,7 +33826,7 @@ undefined4 * Recovered_FUN_10ce1e20::FUN_10ce1e20(undefined4 *param_2,SCStr *par
 // Reference entry 10ce1ea0; body size 119 bytes.
 #line 1 "ENTRY_10ce1ea0"
 
-undefined4 * Recovered_FUN_10ce1ea0::FUN_10ce1ea0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ce1ea0::FUN_10ce1ea0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -33826,7 +33858,7 @@ undefined4 * Recovered_FUN_10ce1ea0::FUN_10ce1ea0(undefined4 *param_2,SCStr *par
 // Reference entry 10ce1f40; body size 119 bytes.
 #line 1 "ENTRY_10ce1f40"
 
-undefined4 * Recovered_FUN_10ce1f40::FUN_10ce1f40(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ce1f40::FUN_10ce1f40(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -33858,7 +33890,7 @@ undefined4 * Recovered_FUN_10ce1f40::FUN_10ce1f40(undefined4 *param_2,SCStr *par
 // Reference entry 10ce2180; body size 69 bytes.
 #line 1 "ENTRY_10ce2180"
 
-void Recovered_FUN_10ce2180::FUN_10ce2180(SCStr *param_2,SCStr *param_3)
+void Recovered_10ce2180::FUN_10ce2180(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -33905,7 +33937,7 @@ SCStr * FUN_10ce2940(SCStr *param_1)
 // Reference entry 10ce2a80; body size 119 bytes.
 #line 1 "ENTRY_10ce2a80"
 
-undefined4 * Recovered_FUN_10ce2a80::FUN_10ce2a80(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ce2a80::FUN_10ce2a80(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -33970,7 +34002,7 @@ SCStr * FUN_10ce4060(SCStr *param_1)
 // Reference entry 10ce4cb0; body size 103 bytes.
 #line 1 "ENTRY_10ce4cb0"
 
-undefined4 * Recovered_FUN_10ce4cb0::FUN_10ce4cb0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ce4cb0::FUN_10ce4cb0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -34002,7 +34034,7 @@ undefined4 * Recovered_FUN_10ce4cb0::FUN_10ce4cb0(undefined4 *param_2,SCStr *par
 // Reference entry 10ce5d10; body size 124 bytes.
 #line 1 "ENTRY_10ce5d10"
 
-void Recovered_FUN_10ce5d10::FUN_10ce5d10(int *param_2,SCStr *param_3,uint param_4)
+void Recovered_10ce5d10::FUN_10ce5d10(int *param_2,SCStr *param_3,uint param_4)
 
 {
   int param_1 = (int)this;
@@ -34040,7 +34072,7 @@ void Recovered_FUN_10ce5d10::FUN_10ce5d10(int *param_2,SCStr *param_3,uint param
 // Reference entry 10ce64d0; body size 55 bytes.
 #line 1 "ENTRY_10ce64d0"
 
-void Recovered_FUN_10ce64d0::FUN_10ce64d0(int *param_2,SCStr *param_3)
+void Recovered_10ce64d0::FUN_10ce64d0(int *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -34062,7 +34094,7 @@ void Recovered_FUN_10ce64d0::FUN_10ce64d0(int *param_2,SCStr *param_3)
 // Reference entry 10ce9470; body size 19 bytes.
 #line 1 "ENTRY_10ce9470"
 
-uint Recovered_FUN_10ce9470::FUN_10ce9470(SCStr *param_2)
+uint Recovered_10ce9470::FUN_10ce9470(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -34076,7 +34108,7 @@ uint Recovered_FUN_10ce9470::FUN_10ce9470(SCStr *param_2)
 // Reference entry 10cebbc0; body size 150 bytes.
 #line 1 "ENTRY_10cebbc0"
 
-undefined4 * Recovered_FUN_10cebbc0::FUN_10cebbc0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cebbc0::FUN_10cebbc0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -34120,7 +34152,7 @@ undefined4 * Recovered_FUN_10cebbc0::FUN_10cebbc0(undefined4 *param_2,SCStr *par
 // Reference entry 10cf0980; body size 103 bytes.
 #line 1 "ENTRY_10cf0980"
 
-undefined4 * Recovered_FUN_10cf0980::FUN_10cf0980(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cf0980::FUN_10cf0980(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -34152,7 +34184,7 @@ undefined4 * Recovered_FUN_10cf0980::FUN_10cf0980(undefined4 *param_2,SCStr *par
 // Reference entry 10cf3680; body size 103 bytes.
 #line 1 "ENTRY_10cf3680"
 
-undefined4 * Recovered_FUN_10cf3680::FUN_10cf3680(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cf3680::FUN_10cf3680(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -34184,7 +34216,7 @@ undefined4 * Recovered_FUN_10cf3680::FUN_10cf3680(undefined4 *param_2,SCStr *par
 // Reference entry 10cf3700; body size 103 bytes.
 #line 1 "ENTRY_10cf3700"
 
-undefined4 * Recovered_FUN_10cf3700::FUN_10cf3700(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cf3700::FUN_10cf3700(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -34216,7 +34248,7 @@ undefined4 * Recovered_FUN_10cf3700::FUN_10cf3700(undefined4 *param_2,SCStr *par
 // Reference entry 10cf52a0; body size 103 bytes.
 #line 1 "ENTRY_10cf52a0"
 
-undefined4 * Recovered_FUN_10cf52a0::FUN_10cf52a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cf52a0::FUN_10cf52a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -34259,7 +34291,7 @@ SCStr * FUN_10cf5f40(SCStr *param_1)
 // Reference entry 10cf6150; body size 35 bytes.
 #line 1 "ENTRY_10cf6150"
 
-SCStr * Recovered_FUN_10cf6150::FUN_10cf6150(SCStr *param_2)
+SCStr * Recovered_10cf6150::FUN_10cf6150(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -34290,7 +34322,7 @@ SCStr * FUN_10cf6190(SCStr *param_1)
 // Reference entry 10cf63d0; body size 103 bytes.
 #line 1 "ENTRY_10cf63d0"
 
-undefined4 * Recovered_FUN_10cf63d0::FUN_10cf63d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cf63d0::FUN_10cf63d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -34322,7 +34354,7 @@ undefined4 * Recovered_FUN_10cf63d0::FUN_10cf63d0(undefined4 *param_2,SCStr *par
 // Reference entry 10cf6520; body size 69 bytes.
 #line 1 "ENTRY_10cf6520"
 
-void Recovered_FUN_10cf6520::FUN_10cf6520(SCStr *param_2,SCStr *param_3)
+void Recovered_10cf6520::FUN_10cf6520(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -34347,7 +34379,7 @@ void Recovered_FUN_10cf6520::FUN_10cf6520(SCStr *param_2,SCStr *param_3)
 // Reference entry 10cf78e0; body size 123 bytes.
 #line 1 "ENTRY_10cf78e0"
 
-void Recovered_FUN_10cf78e0::FUN_10cf78e0(undefined4 param_2,SCStr *param_3)
+void Recovered_10cf78e0::FUN_10cf78e0(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -34388,7 +34420,7 @@ SCStr * FUN_10cf7db0(SCStr *param_1)
 // Reference entry 10cf8c60; body size 103 bytes.
 #line 1 "ENTRY_10cf8c60"
 
-undefined4 * Recovered_FUN_10cf8c60::FUN_10cf8c60(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cf8c60::FUN_10cf8c60(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -34420,7 +34452,7 @@ undefined4 * Recovered_FUN_10cf8c60::FUN_10cf8c60(undefined4 *param_2,SCStr *par
 // Reference entry 10cf8ce0; body size 103 bytes.
 #line 1 "ENTRY_10cf8ce0"
 
-undefined4 * Recovered_FUN_10cf8ce0::FUN_10cf8ce0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cf8ce0::FUN_10cf8ce0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -34463,7 +34495,7 @@ SCStr * FUN_10cf9cf0(SCStr *param_1)
 // Reference entry 10cfb040; body size 153 bytes.
 #line 1 "ENTRY_10cfb040"
 
-undefined4 * Recovered_FUN_10cfb040::FUN_10cfb040(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cfb040::FUN_10cfb040(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -34518,7 +34550,7 @@ SCStr * FUN_10cfc180(SCStr *param_1)
 // Reference entry 10cfdde0; body size 153 bytes.
 #line 1 "ENTRY_10cfdde0"
 
-undefined4 * Recovered_FUN_10cfdde0::FUN_10cfdde0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cfdde0::FUN_10cfdde0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -34562,7 +34594,7 @@ undefined4 * Recovered_FUN_10cfdde0::FUN_10cfdde0(undefined4 *param_2,SCStr *par
 // Reference entry 10cfdeb0; body size 150 bytes.
 #line 1 "ENTRY_10cfdeb0"
 
-undefined4 * Recovered_FUN_10cfdeb0::FUN_10cfdeb0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10cfdeb0::FUN_10cfdeb0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -34780,7 +34812,7 @@ void __fastcall FUN_10d05f30(int param_1)
 // Reference entry 10d06d40; body size 103 bytes.
 #line 1 "ENTRY_10d06d40"
 
-undefined4 * Recovered_FUN_10d06d40::FUN_10d06d40(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d06d40::FUN_10d06d40(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -34812,7 +34844,7 @@ undefined4 * Recovered_FUN_10d06d40::FUN_10d06d40(undefined4 *param_2,SCStr *par
 // Reference entry 10d06fa0; body size 103 bytes.
 #line 1 "ENTRY_10d06fa0"
 
-undefined4 * Recovered_FUN_10d06fa0::FUN_10d06fa0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d06fa0::FUN_10d06fa0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -34844,7 +34876,7 @@ undefined4 * Recovered_FUN_10d06fa0::FUN_10d06fa0(undefined4 *param_2,SCStr *par
 // Reference entry 10d07020; body size 103 bytes.
 #line 1 "ENTRY_10d07020"
 
-undefined4 * Recovered_FUN_10d07020::FUN_10d07020(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d07020::FUN_10d07020(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -34876,7 +34908,7 @@ undefined4 * Recovered_FUN_10d07020::FUN_10d07020(undefined4 *param_2,SCStr *par
 // Reference entry 10d07520; body size 103 bytes.
 #line 1 "ENTRY_10d07520"
 
-undefined4 * Recovered_FUN_10d07520::FUN_10d07520(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d07520::FUN_10d07520(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -34963,7 +34995,7 @@ SCStr * FUN_10d0b980(SCStr *param_1)
 // Reference entry 10d102d0; body size 103 bytes.
 #line 1 "ENTRY_10d102d0"
 
-undefined4 * Recovered_FUN_10d102d0::FUN_10d102d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d102d0::FUN_10d102d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -35028,7 +35060,7 @@ void FUN_10d14070(SCStr *param_1)
 // Reference entry 10d14dd0; body size 119 bytes.
 #line 1 "ENTRY_10d14dd0"
 
-undefined4 * Recovered_FUN_10d14dd0::FUN_10d14dd0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d14dd0::FUN_10d14dd0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -35060,7 +35092,7 @@ undefined4 * Recovered_FUN_10d14dd0::FUN_10d14dd0(undefined4 *param_2,SCStr *par
 // Reference entry 10d14e70; body size 153 bytes.
 #line 1 "ENTRY_10d14e70"
 
-undefined4 * Recovered_FUN_10d14e70::FUN_10d14e70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d14e70::FUN_10d14e70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -35104,7 +35136,7 @@ undefined4 * Recovered_FUN_10d14e70::FUN_10d14e70(undefined4 *param_2,SCStr *par
 // Reference entry 10d14f40; body size 150 bytes.
 #line 1 "ENTRY_10d14f40"
 
-undefined4 * Recovered_FUN_10d14f40::FUN_10d14f40(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d14f40::FUN_10d14f40(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -35148,7 +35180,7 @@ undefined4 * Recovered_FUN_10d14f40::FUN_10d14f40(undefined4 *param_2,SCStr *par
 // Reference entry 10d16fb0; body size 76 bytes.
 #line 1 "ENTRY_10d16fb0"
 
-void Recovered_FUN_10d16fb0::FUN_10d16fb0(int param_2,SCStr *param_3)
+void Recovered_10d16fb0::FUN_10d16fb0(int param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -35226,7 +35258,7 @@ SCStr * FUN_10d176d0(SCStr *param_1)
 // Reference entry 10d176f0; body size 34 bytes.
 #line 1 "ENTRY_10d176f0"
 
-SCStr * Recovered_FUN_10d176f0::FUN_10d176f0(SCStr *param_2)
+SCStr * Recovered_10d176f0::FUN_10d176f0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -35255,7 +35287,7 @@ SCStr * FUN_10d17720(SCStr *param_1)
 // Reference entry 10d17ec0; body size 77 bytes.
 #line 1 "ENTRY_10d17ec0"
 
-SCStr * Recovered_FUN_10d17ec0::FUN_10d17ec0(SCStr *param_2,int param_3)
+SCStr * Recovered_10d17ec0::FUN_10d17ec0(SCStr *param_2,int param_3)
 
 {
   int param_1 = (int)this;
@@ -35314,7 +35346,7 @@ void FUN_10d18a10(SCStr *param_1)
 // Reference entry 10d19410; body size 103 bytes.
 #line 1 "ENTRY_10d19410"
 
-undefined4 * Recovered_FUN_10d19410::FUN_10d19410(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d19410::FUN_10d19410(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -35423,7 +35455,7 @@ SCStr * FUN_10d1cce0(SCStr *param_1)
 // Reference entry 10d1d4f0; body size 103 bytes.
 #line 1 "ENTRY_10d1d4f0"
 
-undefined4 * Recovered_FUN_10d1d4f0::FUN_10d1d4f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d1d4f0::FUN_10d1d4f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -35455,7 +35487,7 @@ undefined4 * Recovered_FUN_10d1d4f0::FUN_10d1d4f0(undefined4 *param_2,SCStr *par
 // Reference entry 10d1d570; body size 103 bytes.
 #line 1 "ENTRY_10d1d570"
 
-undefined4 * Recovered_FUN_10d1d570::FUN_10d1d570(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d1d570::FUN_10d1d570(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -35520,7 +35552,7 @@ SCStr * FUN_10d1e520(SCStr *param_1)
 // Reference entry 10d1e560; body size 150 bytes.
 #line 1 "ENTRY_10d1e560"
 
-undefined4 * Recovered_FUN_10d1e560::FUN_10d1e560(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d1e560::FUN_10d1e560(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -35612,7 +35644,7 @@ SCStr * FUN_10d21890(SCStr *param_1)
 // Reference entry 10d22340; body size 103 bytes.
 #line 1 "ENTRY_10d22340"
 
-undefined4 * Recovered_FUN_10d22340::FUN_10d22340(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d22340::FUN_10d22340(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -35644,7 +35676,7 @@ undefined4 * Recovered_FUN_10d22340::FUN_10d22340(undefined4 *param_2,SCStr *par
 // Reference entry 10d223d0; body size 103 bytes.
 #line 1 "ENTRY_10d223d0"
 
-undefined4 * Recovered_FUN_10d223d0::FUN_10d223d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d223d0::FUN_10d223d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -35775,7 +35807,7 @@ SCStr * FUN_10d2a7a0(SCStr *param_1)
 // Reference entry 10d2b0f0; body size 103 bytes.
 #line 1 "ENTRY_10d2b0f0"
 
-undefined4 * Recovered_FUN_10d2b0f0::FUN_10d2b0f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d2b0f0::FUN_10d2b0f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -35807,7 +35839,7 @@ undefined4 * Recovered_FUN_10d2b0f0::FUN_10d2b0f0(undefined4 *param_2,SCStr *par
 // Reference entry 10d2b170; body size 153 bytes.
 #line 1 "ENTRY_10d2b170"
 
-undefined4 * Recovered_FUN_10d2b170::FUN_10d2b170(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d2b170::FUN_10d2b170(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -35851,7 +35883,7 @@ undefined4 * Recovered_FUN_10d2b170::FUN_10d2b170(undefined4 *param_2,SCStr *par
 // Reference entry 10d2b240; body size 103 bytes.
 #line 1 "ENTRY_10d2b240"
 
-undefined4 * Recovered_FUN_10d2b240::FUN_10d2b240(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d2b240::FUN_10d2b240(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -35883,7 +35915,7 @@ undefined4 * Recovered_FUN_10d2b240::FUN_10d2b240(undefined4 *param_2,SCStr *par
 // Reference entry 10d2b2c0; body size 103 bytes.
 #line 1 "ENTRY_10d2b2c0"
 
-undefined4 * Recovered_FUN_10d2b2c0::FUN_10d2b2c0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d2b2c0::FUN_10d2b2c0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -35915,7 +35947,7 @@ undefined4 * Recovered_FUN_10d2b2c0::FUN_10d2b2c0(undefined4 *param_2,SCStr *par
 // Reference entry 10d2b340; body size 103 bytes.
 #line 1 "ENTRY_10d2b340"
 
-undefined4 * Recovered_FUN_10d2b340::FUN_10d2b340(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d2b340::FUN_10d2b340(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -35947,7 +35979,7 @@ undefined4 * Recovered_FUN_10d2b340::FUN_10d2b340(undefined4 *param_2,SCStr *par
 // Reference entry 10d2b3c0; body size 103 bytes.
 #line 1 "ENTRY_10d2b3c0"
 
-undefined4 * Recovered_FUN_10d2b3c0::FUN_10d2b3c0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d2b3c0::FUN_10d2b3c0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -35979,7 +36011,7 @@ undefined4 * Recovered_FUN_10d2b3c0::FUN_10d2b3c0(undefined4 *param_2,SCStr *par
 // Reference entry 10d2b440; body size 103 bytes.
 #line 1 "ENTRY_10d2b440"
 
-undefined4 * Recovered_FUN_10d2b440::FUN_10d2b440(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d2b440::FUN_10d2b440(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -36011,7 +36043,7 @@ undefined4 * Recovered_FUN_10d2b440::FUN_10d2b440(undefined4 *param_2,SCStr *par
 // Reference entry 10d35460; body size 103 bytes.
 #line 1 "ENTRY_10d35460"
 
-void Recovered_FUN_10d35460::FUN_10d35460(undefined4 param_2,SCStr *param_3)
+void Recovered_10d35460::FUN_10d35460(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -36112,7 +36144,7 @@ undefined1 FUN_10d383b0(SCStr *param_1)
 // Reference entry 10d39e40; body size 103 bytes.
 #line 1 "ENTRY_10d39e40"
 
-undefined4 * Recovered_FUN_10d39e40::FUN_10d39e40(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d39e40::FUN_10d39e40(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -36144,7 +36176,7 @@ undefined4 * Recovered_FUN_10d39e40::FUN_10d39e40(undefined4 *param_2,SCStr *par
 // Reference entry 10d39ec0; body size 153 bytes.
 #line 1 "ENTRY_10d39ec0"
 
-undefined4 * Recovered_FUN_10d39ec0::FUN_10d39ec0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d39ec0::FUN_10d39ec0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -36188,7 +36220,7 @@ undefined4 * Recovered_FUN_10d39ec0::FUN_10d39ec0(undefined4 *param_2,SCStr *par
 // Reference entry 10d3c4f0; body size 30 bytes.
 #line 1 "ENTRY_10d3c4f0"
 
-SCStr * Recovered_FUN_10d3c4f0::FUN_10d3c4f0(SCStr *param_2)
+SCStr * Recovered_10d3c4f0::FUN_10d3c4f0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -36206,7 +36238,7 @@ SCStr * Recovered_FUN_10d3c4f0::FUN_10d3c4f0(SCStr *param_2)
 // Reference entry 10d3c540; body size 44 bytes.
 #line 1 "ENTRY_10d3c540"
 
-SCStr * Recovered_FUN_10d3c540::FUN_10d3c540(SCStr *param_2)
+SCStr * Recovered_10d3c540::FUN_10d3c540(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -36247,7 +36279,7 @@ SCStr * FUN_10d3c720(SCStr *param_1)
 // Reference entry 10d3c9f0; body size 103 bytes.
 #line 1 "ENTRY_10d3c9f0"
 
-undefined4 * Recovered_FUN_10d3c9f0::FUN_10d3c9f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d3c9f0::FUN_10d3c9f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -36279,7 +36311,7 @@ undefined4 * Recovered_FUN_10d3c9f0::FUN_10d3c9f0(undefined4 *param_2,SCStr *par
 // Reference entry 10d3ca70; body size 103 bytes.
 #line 1 "ENTRY_10d3ca70"
 
-undefined4 * Recovered_FUN_10d3ca70::FUN_10d3ca70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d3ca70::FUN_10d3ca70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -36311,7 +36343,7 @@ undefined4 * Recovered_FUN_10d3ca70::FUN_10d3ca70(undefined4 *param_2,SCStr *par
 // Reference entry 10d3caf0; body size 103 bytes.
 #line 1 "ENTRY_10d3caf0"
 
-undefined4 * Recovered_FUN_10d3caf0::FUN_10d3caf0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d3caf0::FUN_10d3caf0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -36343,7 +36375,7 @@ undefined4 * Recovered_FUN_10d3caf0::FUN_10d3caf0(undefined4 *param_2,SCStr *par
 // Reference entry 10d3ee70; body size 226 bytes.
 #line 1 "ENTRY_10d3ee70"
 
-void Recovered_FUN_10d3ee70::FUN_10d3ee70(undefined4 param_2,SCStr *param_3)
+void Recovered_10d3ee70::FUN_10d3ee70(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -36476,7 +36508,7 @@ SCStr * FUN_10d3fcd0(SCStr *param_1)
 // Reference entry 10d41c80; body size 119 bytes.
 #line 1 "ENTRY_10d41c80"
 
-undefined4 * Recovered_FUN_10d41c80::FUN_10d41c80(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d41c80::FUN_10d41c80(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -36508,7 +36540,7 @@ undefined4 * Recovered_FUN_10d41c80::FUN_10d41c80(undefined4 *param_2,SCStr *par
 // Reference entry 10d41d20; body size 103 bytes.
 #line 1 "ENTRY_10d41d20"
 
-undefined4 * Recovered_FUN_10d41d20::FUN_10d41d20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d41d20::FUN_10d41d20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -36540,7 +36572,7 @@ undefined4 * Recovered_FUN_10d41d20::FUN_10d41d20(undefined4 *param_2,SCStr *par
 // Reference entry 10d41da0; body size 153 bytes.
 #line 1 "ENTRY_10d41da0"
 
-undefined4 * Recovered_FUN_10d41da0::FUN_10d41da0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d41da0::FUN_10d41da0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -36584,7 +36616,7 @@ undefined4 * Recovered_FUN_10d41da0::FUN_10d41da0(undefined4 *param_2,SCStr *par
 // Reference entry 10d41e70; body size 119 bytes.
 #line 1 "ENTRY_10d41e70"
 
-undefined4 * Recovered_FUN_10d41e70::FUN_10d41e70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d41e70::FUN_10d41e70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -36616,7 +36648,7 @@ undefined4 * Recovered_FUN_10d41e70::FUN_10d41e70(undefined4 *param_2,SCStr *par
 // Reference entry 10d41f10; body size 103 bytes.
 #line 1 "ENTRY_10d41f10"
 
-undefined4 * Recovered_FUN_10d41f10::FUN_10d41f10(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d41f10::FUN_10d41f10(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -36648,7 +36680,7 @@ undefined4 * Recovered_FUN_10d41f10::FUN_10d41f10(undefined4 *param_2,SCStr *par
 // Reference entry 10d44040; body size 120 bytes.
 #line 1 "ENTRY_10d44040"
 
-void Recovered_FUN_10d44040::FUN_10d44040(undefined4 param_2,SCStr *param_3)
+void Recovered_10d44040::FUN_10d44040(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -36684,7 +36716,7 @@ void Recovered_FUN_10d44040::FUN_10d44040(undefined4 param_2,SCStr *param_3)
 // Reference entry 10d440e0; body size 51 bytes.
 #line 1 "ENTRY_10d440e0"
 
-void Recovered_FUN_10d440e0::FUN_10d440e0(undefined4 param_2,SCStr *param_3)
+void Recovered_10d440e0::FUN_10d440e0(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -36724,7 +36756,7 @@ void FUN_10d467f0(SCStr *param_1)
 // Reference entry 10d49470; body size 150 bytes.
 #line 1 "ENTRY_10d49470"
 
-undefined4 * Recovered_FUN_10d49470::FUN_10d49470(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d49470::FUN_10d49470(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -36768,7 +36800,7 @@ undefined4 * Recovered_FUN_10d49470::FUN_10d49470(undefined4 *param_2,SCStr *par
 // Reference entry 10d49540; body size 157 bytes.
 #line 1 "ENTRY_10d49540"
 
-undefined4 * Recovered_FUN_10d49540::FUN_10d49540(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d49540::FUN_10d49540(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -36812,7 +36844,7 @@ undefined4 * Recovered_FUN_10d49540::FUN_10d49540(undefined4 *param_2,SCStr *par
 // Reference entry 10d49620; body size 153 bytes.
 #line 1 "ENTRY_10d49620"
 
-undefined4 * Recovered_FUN_10d49620::FUN_10d49620(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d49620::FUN_10d49620(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -36856,7 +36888,7 @@ undefined4 * Recovered_FUN_10d49620::FUN_10d49620(undefined4 *param_2,SCStr *par
 // Reference entry 10d496f0; body size 157 bytes.
 #line 1 "ENTRY_10d496f0"
 
-undefined4 * Recovered_FUN_10d496f0::FUN_10d496f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d496f0::FUN_10d496f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -36900,7 +36932,7 @@ undefined4 * Recovered_FUN_10d496f0::FUN_10d496f0(undefined4 *param_2,SCStr *par
 // Reference entry 10d497d0; body size 153 bytes.
 #line 1 "ENTRY_10d497d0"
 
-undefined4 * Recovered_FUN_10d497d0::FUN_10d497d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d497d0::FUN_10d497d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -36944,7 +36976,7 @@ undefined4 * Recovered_FUN_10d497d0::FUN_10d497d0(undefined4 *param_2,SCStr *par
 // Reference entry 10d498a0; body size 153 bytes.
 #line 1 "ENTRY_10d498a0"
 
-undefined4 * Recovered_FUN_10d498a0::FUN_10d498a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d498a0::FUN_10d498a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -37082,7 +37114,7 @@ SCStr * FUN_10d4f3d0(SCStr *param_1,int param_2,undefined4 param_3)
 // Reference entry 10d51180; body size 119 bytes.
 #line 1 "ENTRY_10d51180"
 
-undefined4 * Recovered_FUN_10d51180::FUN_10d51180(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d51180::FUN_10d51180(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -37114,7 +37146,7 @@ undefined4 * Recovered_FUN_10d51180::FUN_10d51180(undefined4 *param_2,SCStr *par
 // Reference entry 10d51220; body size 153 bytes.
 #line 1 "ENTRY_10d51220"
 
-undefined4 * Recovered_FUN_10d51220::FUN_10d51220(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d51220::FUN_10d51220(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -37158,7 +37190,7 @@ undefined4 * Recovered_FUN_10d51220::FUN_10d51220(undefined4 *param_2,SCStr *par
 // Reference entry 10d540a0; body size 37 bytes.
 #line 1 "ENTRY_10d540a0"
 
-void Recovered_FUN_10d540a0::FUN_10d540a0(undefined4 param_2,SCStr *param_3)
+void Recovered_10d540a0::FUN_10d540a0(undefined4 param_2,SCStr *param_3)
 
 {
   undefined4 * param_1 = (undefined4 *)this;
@@ -37175,7 +37207,7 @@ void Recovered_FUN_10d540a0::FUN_10d540a0(undefined4 param_2,SCStr *param_3)
 // Reference entry 10d54440; body size 38 bytes.
 #line 1 "ENTRY_10d54440"
 
-void Recovered_FUN_10d54440::FUN_10d54440(undefined4 param_2,SCStr *param_3)
+void Recovered_10d54440::FUN_10d54440(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -37218,7 +37250,7 @@ void FUN_10d57050(SCStr *param_1)
 // Reference entry 10d58880; body size 157 bytes.
 #line 1 "ENTRY_10d58880"
 
-undefined4 * Recovered_FUN_10d58880::FUN_10d58880(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d58880::FUN_10d58880(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -37273,7 +37305,7 @@ SCStr * FUN_10d59d80(SCStr *param_1)
 // Reference entry 10d5a240; body size 57 bytes.
 #line 1 "ENTRY_10d5a240"
 
-SCStr * Recovered_FUN_10d5a240::FUN_10d5a240(SCStr *param_2,undefined4 param_3,undefined4 param_4)
+SCStr * Recovered_10d5a240::FUN_10d5a240(SCStr *param_2,undefined4 param_3,undefined4 param_4)
 
 {
   int param_1 = (int)this;
@@ -37289,7 +37321,7 @@ SCStr * Recovered_FUN_10d5a240::FUN_10d5a240(SCStr *param_2,undefined4 param_3,u
 // Reference entry 10d5a340; body size 53 bytes.
 #line 1 "ENTRY_10d5a340"
 
-SCStr * Recovered_FUN_10d5a340::FUN_10d5a340(SCStr *param_2,undefined4 param_3)
+SCStr * Recovered_10d5a340::FUN_10d5a340(SCStr *param_2,undefined4 param_3)
 
 {
   int param_1 = (int)this;
@@ -37305,7 +37337,7 @@ SCStr * Recovered_FUN_10d5a340::FUN_10d5a340(SCStr *param_2,undefined4 param_3)
 // Reference entry 10d5a3b0; body size 49 bytes.
 #line 1 "ENTRY_10d5a3b0"
 
-SCStr * Recovered_FUN_10d5a3b0::FUN_10d5a3b0(SCStr *param_2)
+SCStr * Recovered_10d5a3b0::FUN_10d5a3b0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -37321,7 +37353,7 @@ SCStr * Recovered_FUN_10d5a3b0::FUN_10d5a3b0(SCStr *param_2)
 // Reference entry 10d5a990; body size 157 bytes.
 #line 1 "ENTRY_10d5a990"
 
-undefined4 * Recovered_FUN_10d5a990::FUN_10d5a990(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d5a990::FUN_10d5a990(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -37365,7 +37397,7 @@ undefined4 * Recovered_FUN_10d5a990::FUN_10d5a990(undefined4 *param_2,SCStr *par
 // Reference entry 10d5eec0; body size 103 bytes.
 #line 1 "ENTRY_10d5eec0"
 
-void Recovered_FUN_10d5eec0::FUN_10d5eec0(int param_2)
+void Recovered_10d5eec0::FUN_10d5eec0(int param_2)
 
 {
   int param_1 = (int)this;
@@ -37453,7 +37485,7 @@ SCStr * FUN_10d5f520(SCStr *param_1,int param_2)
 // Reference entry 10d60300; body size 103 bytes.
 #line 1 "ENTRY_10d60300"
 
-undefined4 * Recovered_FUN_10d60300::FUN_10d60300(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d60300::FUN_10d60300(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -37595,7 +37627,7 @@ SCStr * FUN_10d62700(SCStr *param_1)
 // Reference entry 10d63500; body size 153 bytes.
 #line 1 "ENTRY_10d63500"
 
-undefined4 * Recovered_FUN_10d63500::FUN_10d63500(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d63500::FUN_10d63500(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -37720,7 +37752,7 @@ SCStr * FUN_10d66e50(SCStr *param_1)
 // Reference entry 10d67340; body size 153 bytes.
 #line 1 "ENTRY_10d67340"
 
-undefined4 * Recovered_FUN_10d67340::FUN_10d67340(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d67340::FUN_10d67340(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -37764,7 +37796,7 @@ undefined4 * Recovered_FUN_10d67340::FUN_10d67340(undefined4 *param_2,SCStr *par
 // Reference entry 10d67410; body size 150 bytes.
 #line 1 "ENTRY_10d67410"
 
-undefined4 * Recovered_FUN_10d67410::FUN_10d67410(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d67410::FUN_10d67410(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -37808,7 +37840,7 @@ undefined4 * Recovered_FUN_10d67410::FUN_10d67410(undefined4 *param_2,SCStr *par
 // Reference entry 10d674e0; body size 153 bytes.
 #line 1 "ENTRY_10d674e0"
 
-undefined4 * Recovered_FUN_10d674e0::FUN_10d674e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d674e0::FUN_10d674e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -37852,7 +37884,7 @@ undefined4 * Recovered_FUN_10d674e0::FUN_10d674e0(undefined4 *param_2,SCStr *par
 // Reference entry 10d675b0; body size 150 bytes.
 #line 1 "ENTRY_10d675b0"
 
-undefined4 * Recovered_FUN_10d675b0::FUN_10d675b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d675b0::FUN_10d675b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -37940,7 +37972,7 @@ SCStr * FUN_10d6c020(SCStr *param_1)
 // Reference entry 10d6d880; body size 62 bytes.
 #line 1 "ENTRY_10d6d880"
 
-SCStr * Recovered_FUN_10d6d880::FUN_10d6d880(SCStr *param_2,int param_3,undefined4 param_4)
+SCStr * Recovered_10d6d880::FUN_10d6d880(SCStr *param_2,int param_3,undefined4 param_4)
 
 {
   int param_1 = (int)this;
@@ -37956,7 +37988,7 @@ SCStr * Recovered_FUN_10d6d880::FUN_10d6d880(SCStr *param_2,int param_3,undefine
 // Reference entry 10d71360; body size 157 bytes.
 #line 1 "ENTRY_10d71360"
 
-undefined4 * Recovered_FUN_10d71360::FUN_10d71360(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d71360::FUN_10d71360(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -38001,7 +38033,7 @@ undefined4 * Recovered_FUN_10d71360::FUN_10d71360(undefined4 *param_2,SCStr *par
 // Reference entry 10d71470; body size 153 bytes.
 #line 1 "ENTRY_10d71470"
 
-undefined4 * Recovered_FUN_10d71470::FUN_10d71470(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d71470::FUN_10d71470(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -38045,7 +38077,7 @@ undefined4 * Recovered_FUN_10d71470::FUN_10d71470(undefined4 *param_2,SCStr *par
 // Reference entry 10d71570; body size 103 bytes.
 #line 1 "ENTRY_10d71570"
 
-undefined4 * Recovered_FUN_10d71570::FUN_10d71570(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d71570::FUN_10d71570(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -38216,7 +38248,7 @@ SCStr * FUN_10d83aa0(SCStr *param_1)
 // Reference entry 10d86dd0; body size 103 bytes.
 #line 1 "ENTRY_10d86dd0"
 
-undefined4 * Recovered_FUN_10d86dd0::FUN_10d86dd0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d86dd0::FUN_10d86dd0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -38248,7 +38280,7 @@ undefined4 * Recovered_FUN_10d86dd0::FUN_10d86dd0(undefined4 *param_2,SCStr *par
 // Reference entry 10d86e50; body size 103 bytes.
 #line 1 "ENTRY_10d86e50"
 
-undefined4 * Recovered_FUN_10d86e50::FUN_10d86e50(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d86e50::FUN_10d86e50(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -38280,7 +38312,7 @@ undefined4 * Recovered_FUN_10d86e50::FUN_10d86e50(undefined4 *param_2,SCStr *par
 // Reference entry 10d86ed0; body size 103 bytes.
 #line 1 "ENTRY_10d86ed0"
 
-undefined4 * Recovered_FUN_10d86ed0::FUN_10d86ed0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d86ed0::FUN_10d86ed0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -38312,7 +38344,7 @@ undefined4 * Recovered_FUN_10d86ed0::FUN_10d86ed0(undefined4 *param_2,SCStr *par
 // Reference entry 10d86f50; body size 103 bytes.
 #line 1 "ENTRY_10d86f50"
 
-undefined4 * Recovered_FUN_10d86f50::FUN_10d86f50(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d86f50::FUN_10d86f50(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -38344,7 +38376,7 @@ undefined4 * Recovered_FUN_10d86f50::FUN_10d86f50(undefined4 *param_2,SCStr *par
 // Reference entry 10d86fd0; body size 103 bytes.
 #line 1 "ENTRY_10d86fd0"
 
-undefined4 * Recovered_FUN_10d86fd0::FUN_10d86fd0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d86fd0::FUN_10d86fd0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -38376,7 +38408,7 @@ undefined4 * Recovered_FUN_10d86fd0::FUN_10d86fd0(undefined4 *param_2,SCStr *par
 // Reference entry 10d87230; body size 69 bytes.
 #line 1 "ENTRY_10d87230"
 
-void Recovered_FUN_10d87230::FUN_10d87230(SCStr *param_2,SCStr *param_3)
+void Recovered_10d87230::FUN_10d87230(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -38401,7 +38433,7 @@ void Recovered_FUN_10d87230::FUN_10d87230(SCStr *param_2,SCStr *param_3)
 // Reference entry 10d87290; body size 69 bytes.
 #line 1 "ENTRY_10d87290"
 
-void Recovered_FUN_10d87290::FUN_10d87290(SCStr *param_2,SCStr *param_3)
+void Recovered_10d87290::FUN_10d87290(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -38426,7 +38458,7 @@ void Recovered_FUN_10d87290::FUN_10d87290(SCStr *param_2,SCStr *param_3)
 // Reference entry 10d872f0; body size 69 bytes.
 #line 1 "ENTRY_10d872f0"
 
-void Recovered_FUN_10d872f0::FUN_10d872f0(SCStr *param_2,SCStr *param_3)
+void Recovered_10d872f0::FUN_10d872f0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -38451,7 +38483,7 @@ void Recovered_FUN_10d872f0::FUN_10d872f0(SCStr *param_2,SCStr *param_3)
 // Reference entry 10d87350; body size 69 bytes.
 #line 1 "ENTRY_10d87350"
 
-void Recovered_FUN_10d87350::FUN_10d87350(SCStr *param_2,SCStr *param_3)
+void Recovered_10d87350::FUN_10d87350(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -38476,7 +38508,7 @@ void Recovered_FUN_10d87350::FUN_10d87350(SCStr *param_2,SCStr *param_3)
 // Reference entry 10d88ea0; body size 140 bytes.
 #line 1 "ENTRY_10d88ea0"
 
-void Recovered_FUN_10d88ea0::FUN_10d88ea0(undefined4 param_2,SCStr *param_3)
+void Recovered_10d88ea0::FUN_10d88ea0(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -38517,7 +38549,7 @@ void Recovered_FUN_10d88ea0::FUN_10d88ea0(undefined4 param_2,SCStr *param_3)
 // Reference entry 10d89300; body size 103 bytes.
 #line 1 "ENTRY_10d89300"
 
-undefined4 * Recovered_FUN_10d89300::FUN_10d89300(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d89300::FUN_10d89300(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -38549,7 +38581,7 @@ undefined4 * Recovered_FUN_10d89300::FUN_10d89300(undefined4 *param_2,SCStr *par
 // Reference entry 10d91bd0; body size 103 bytes.
 #line 1 "ENTRY_10d91bd0"
 
-undefined4 * Recovered_FUN_10d91bd0::FUN_10d91bd0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d91bd0::FUN_10d91bd0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -38581,7 +38613,7 @@ undefined4 * Recovered_FUN_10d91bd0::FUN_10d91bd0(undefined4 *param_2,SCStr *par
 // Reference entry 10d93ac0; body size 103 bytes.
 #line 1 "ENTRY_10d93ac0"
 
-undefined4 * Recovered_FUN_10d93ac0::FUN_10d93ac0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d93ac0::FUN_10d93ac0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -38613,7 +38645,7 @@ undefined4 * Recovered_FUN_10d93ac0::FUN_10d93ac0(undefined4 *param_2,SCStr *par
 // Reference entry 10d97210; body size 103 bytes.
 #line 1 "ENTRY_10d97210"
 
-undefined4 * Recovered_FUN_10d97210::FUN_10d97210(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d97210::FUN_10d97210(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -38645,7 +38677,7 @@ undefined4 * Recovered_FUN_10d97210::FUN_10d97210(undefined4 *param_2,SCStr *par
 // Reference entry 10d9a400; body size 103 bytes.
 #line 1 "ENTRY_10d9a400"
 
-undefined4 * Recovered_FUN_10d9a400::FUN_10d9a400(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d9a400::FUN_10d9a400(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -38677,7 +38709,7 @@ undefined4 * Recovered_FUN_10d9a400::FUN_10d9a400(undefined4 *param_2,SCStr *par
 // Reference entry 10d9a480; body size 103 bytes.
 #line 1 "ENTRY_10d9a480"
 
-undefined4 * Recovered_FUN_10d9a480::FUN_10d9a480(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d9a480::FUN_10d9a480(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -38720,7 +38752,7 @@ SCStr * FUN_10d9cb10(SCStr *param_1)
 // Reference entry 10d9ded0; body size 103 bytes.
 #line 1 "ENTRY_10d9ded0"
 
-undefined4 * Recovered_FUN_10d9ded0::FUN_10d9ded0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d9ded0::FUN_10d9ded0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -38752,7 +38784,7 @@ undefined4 * Recovered_FUN_10d9ded0::FUN_10d9ded0(undefined4 *param_2,SCStr *par
 // Reference entry 10d9df50; body size 103 bytes.
 #line 1 "ENTRY_10d9df50"
 
-undefined4 * Recovered_FUN_10d9df50::FUN_10d9df50(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d9df50::FUN_10d9df50(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -38784,7 +38816,7 @@ undefined4 * Recovered_FUN_10d9df50::FUN_10d9df50(undefined4 *param_2,SCStr *par
 // Reference entry 10d9e0f0; body size 69 bytes.
 #line 1 "ENTRY_10d9e0f0"
 
-void Recovered_FUN_10d9e0f0::FUN_10d9e0f0(SCStr *param_2,SCStr *param_3)
+void Recovered_10d9e0f0::FUN_10d9e0f0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -38809,7 +38841,7 @@ void Recovered_FUN_10d9e0f0::FUN_10d9e0f0(SCStr *param_2,SCStr *param_3)
 // Reference entry 10d9e640; body size 103 bytes.
 #line 1 "ENTRY_10d9e640"
 
-undefined4 * Recovered_FUN_10d9e640::FUN_10d9e640(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10d9e640::FUN_10d9e640(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -38863,7 +38895,7 @@ SCStr * FUN_10da0860(SCStr *param_1)
 // Reference entry 10da2790; body size 121 bytes.
 #line 1 "ENTRY_10da2790"
 
-void Recovered_FUN_10da2790::FUN_10da2790(undefined4 param_2,SCStr *param_3)
+void Recovered_10da2790::FUN_10da2790(undefined4 param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -38892,7 +38924,7 @@ void Recovered_FUN_10da2790::FUN_10da2790(undefined4 param_2,SCStr *param_3)
 // Reference entry 10da33b0; body size 103 bytes.
 #line 1 "ENTRY_10da33b0"
 
-undefined4 * Recovered_FUN_10da33b0::FUN_10da33b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10da33b0::FUN_10da33b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -38924,7 +38956,7 @@ undefined4 * Recovered_FUN_10da33b0::FUN_10da33b0(undefined4 *param_2,SCStr *par
 // Reference entry 10da3430; body size 103 bytes.
 #line 1 "ENTRY_10da3430"
 
-undefined4 * Recovered_FUN_10da3430::FUN_10da3430(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10da3430::FUN_10da3430(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -38956,7 +38988,7 @@ undefined4 * Recovered_FUN_10da3430::FUN_10da3430(undefined4 *param_2,SCStr *par
 // Reference entry 10da53c0; body size 118 bytes.
 #line 1 "ENTRY_10da53c0"
 
-int Recovered_FUN_10da53c0::FUN_10da53c0(int param_2)
+int Recovered_10da53c0::FUN_10da53c0(int param_2)
 
 {
   int param_1 = (int)this;
@@ -39101,7 +39133,7 @@ void __fastcall FUN_10da74f0(int param_1)
 // Reference entry 10da7540; body size 103 bytes.
 #line 1 "ENTRY_10da7540"
 
-undefined4 * Recovered_FUN_10da7540::FUN_10da7540(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10da7540::FUN_10da7540(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -39133,7 +39165,7 @@ undefined4 * Recovered_FUN_10da7540::FUN_10da7540(undefined4 *param_2,SCStr *par
 // Reference entry 10da75c0; body size 103 bytes.
 #line 1 "ENTRY_10da75c0"
 
-undefined4 * Recovered_FUN_10da75c0::FUN_10da75c0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10da75c0::FUN_10da75c0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -39165,7 +39197,7 @@ undefined4 * Recovered_FUN_10da75c0::FUN_10da75c0(undefined4 *param_2,SCStr *par
 // Reference entry 10da7640; body size 103 bytes.
 #line 1 "ENTRY_10da7640"
 
-undefined4 * Recovered_FUN_10da7640::FUN_10da7640(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10da7640::FUN_10da7640(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -39286,7 +39318,7 @@ SCStr * FUN_10db4d10(SCStr *param_1,int param_2)
 // Reference entry 10db8e40; body size 102 bytes.
 #line 1 "ENTRY_10db8e40"
 
-SCStr * Recovered_FUN_10db8e40::FUN_10db8e40(SCStr *param_2)
+SCStr * Recovered_10db8e40::FUN_10db8e40(SCStr *param_2)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -39400,7 +39432,7 @@ SCStr * FUN_10dc56f0(SCStr *param_1)
 // Reference entry 10dc5850; body size 65 bytes.
 #line 1 "ENTRY_10dc5850"
 
-SCStr * Recovered_FUN_10dc5850::FUN_10dc5850(SCStr *param_2,uint param_3)
+SCStr * Recovered_10dc5850::FUN_10dc5850(SCStr *param_2,uint param_3)
 
 {
   int param_1 = (int)this;
@@ -39424,7 +39456,7 @@ SCStr * Recovered_FUN_10dc5850::FUN_10dc5850(SCStr *param_2,uint param_3)
 // Reference entry 10dc58b0; body size 65 bytes.
 #line 1 "ENTRY_10dc58b0"
 
-SCStr * Recovered_FUN_10dc58b0::FUN_10dc58b0(SCStr *param_2,uint param_3)
+SCStr * Recovered_10dc58b0::FUN_10dc58b0(SCStr *param_2,uint param_3)
 
 {
   int param_1 = (int)this;
@@ -39517,7 +39549,7 @@ SCStr * FUN_10dc5c60(SCStr *param_1)
 // Reference entry 10dc76d0; body size 71 bytes.
 #line 1 "ENTRY_10dc76d0"
 
-undefined4 * Recovered_FUN_10dc76d0::FUN_10dc76d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10dc76d0::FUN_10dc76d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -39608,7 +39640,7 @@ SCStr * FUN_10dcd810(SCStr *param_1)
 // Reference entry 10dcef60; body size 103 bytes.
 #line 1 "ENTRY_10dcef60"
 
-undefined4 * Recovered_FUN_10dcef60::FUN_10dcef60(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10dcef60::FUN_10dcef60(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -39673,7 +39705,7 @@ SCStr * FUN_10dd2fa0(SCStr *param_1)
 // Reference entry 10dd5ba0; body size 103 bytes.
 #line 1 "ENTRY_10dd5ba0"
 
-undefined4 * Recovered_FUN_10dd5ba0::FUN_10dd5ba0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10dd5ba0::FUN_10dd5ba0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -39705,7 +39737,7 @@ undefined4 * Recovered_FUN_10dd5ba0::FUN_10dd5ba0(undefined4 *param_2,SCStr *par
 // Reference entry 10de28f0; body size 103 bytes.
 #line 1 "ENTRY_10de28f0"
 
-undefined4 * Recovered_FUN_10de28f0::FUN_10de28f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10de28f0::FUN_10de28f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -39737,7 +39769,7 @@ undefined4 * Recovered_FUN_10de28f0::FUN_10de28f0(undefined4 *param_2,SCStr *par
 // Reference entry 10de4590; body size 103 bytes.
 #line 1 "ENTRY_10de4590"
 
-undefined4 * Recovered_FUN_10de4590::FUN_10de4590(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10de4590::FUN_10de4590(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -39802,7 +39834,7 @@ SCStr * FUN_10de6e50(SCStr *param_1)
 // Reference entry 10de8950; body size 103 bytes.
 #line 1 "ENTRY_10de8950"
 
-undefined4 * Recovered_FUN_10de8950::FUN_10de8950(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10de8950::FUN_10de8950(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -39834,7 +39866,7 @@ undefined4 * Recovered_FUN_10de8950::FUN_10de8950(undefined4 *param_2,SCStr *par
 // Reference entry 10de89d0; body size 103 bytes.
 #line 1 "ENTRY_10de89d0"
 
-undefined4 * Recovered_FUN_10de89d0::FUN_10de89d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10de89d0::FUN_10de89d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -39866,7 +39898,7 @@ undefined4 * Recovered_FUN_10de89d0::FUN_10de89d0(undefined4 *param_2,SCStr *par
 // Reference entry 10de8a50; body size 103 bytes.
 #line 1 "ENTRY_10de8a50"
 
-undefined4 * Recovered_FUN_10de8a50::FUN_10de8a50(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10de8a50::FUN_10de8a50(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -39898,7 +39930,7 @@ undefined4 * Recovered_FUN_10de8a50::FUN_10de8a50(undefined4 *param_2,SCStr *par
 // Reference entry 10de8c30; body size 69 bytes.
 #line 1 "ENTRY_10de8c30"
 
-void Recovered_FUN_10de8c30::FUN_10de8c30(SCStr *param_2,SCStr *param_3)
+void Recovered_10de8c30::FUN_10de8c30(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -39971,7 +40003,7 @@ SCStr * FUN_10ded600(int *param_1,int *param_2,SCStr *param_3)
 // Reference entry 10def210; body size 96 bytes.
 #line 1 "ENTRY_10def210"
 
-SCStr * Recovered_FUN_10def210::FUN_10def210(SCStr *param_2)
+SCStr * Recovered_10def210::FUN_10def210(SCStr *param_2)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -40117,7 +40149,7 @@ undefined1 FUN_10e01da0(SCStr *param_1)
 // Reference entry 10e06af0; body size 103 bytes.
 #line 1 "ENTRY_10e06af0"
 
-undefined4 * Recovered_FUN_10e06af0::FUN_10e06af0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10e06af0::FUN_10e06af0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -40160,7 +40192,7 @@ SCStr * FUN_10e0ae30(SCStr *param_1)
 // Reference entry 10e0ae60; body size 103 bytes.
 #line 1 "ENTRY_10e0ae60"
 
-undefined4 * Recovered_FUN_10e0ae60::FUN_10e0ae60(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10e0ae60::FUN_10e0ae60(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -40203,7 +40235,7 @@ SCStr * FUN_10e0fde0(SCStr *param_1)
 // Reference entry 10e14320; body size 262 bytes.
 #line 1 "ENTRY_10e14320"
 
-void Recovered_FUN_10e14320::FUN_10e14320(int param_2)
+void Recovered_10e14320::FUN_10e14320(int param_2)
 
 {
   int param_1 = (int)this;
@@ -40502,7 +40534,7 @@ void __fastcall FUN_10e1f660(int param_1)
 // Reference entry 10e1fba0; body size 103 bytes.
 #line 1 "ENTRY_10e1fba0"
 
-undefined4 * Recovered_FUN_10e1fba0::FUN_10e1fba0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10e1fba0::FUN_10e1fba0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -40685,7 +40717,7 @@ void __fastcall FUN_10e249e0(int param_1)
 // Reference entry 10e24ac0; body size 103 bytes.
 #line 1 "ENTRY_10e24ac0"
 
-undefined4 * Recovered_FUN_10e24ac0::FUN_10e24ac0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10e24ac0::FUN_10e24ac0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -40717,7 +40749,7 @@ undefined4 * Recovered_FUN_10e24ac0::FUN_10e24ac0(undefined4 *param_2,SCStr *par
 // Reference entry 10e2b550; body size 56 bytes.
 #line 1 "ENTRY_10e2b550"
 
-void Recovered_FUN_10e2b550::FUN_10e2b550(int param_2)
+void Recovered_10e2b550::FUN_10e2b550(int param_2)
 
 {
   int param_1 = (int)this;
@@ -40878,7 +40910,7 @@ SCStr * FUN_10e304f0(SCStr *param_1)
 // Reference entry 10e30510; body size 37 bytes.
 #line 1 "ENTRY_10e30510"
 
-SCStr * Recovered_FUN_10e30510::FUN_10e30510(SCStr *param_2)
+SCStr * Recovered_10e30510::FUN_10e30510(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -41094,7 +41126,7 @@ SCStr * FUN_10e30760(SCStr *param_1)
 // Reference entry 10e30780; body size 37 bytes.
 #line 1 "ENTRY_10e30780"
 
-SCStr * Recovered_FUN_10e30780::FUN_10e30780(SCStr *param_2)
+SCStr * Recovered_10e30780::FUN_10e30780(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -41112,7 +41144,7 @@ SCStr * Recovered_FUN_10e30780::FUN_10e30780(SCStr *param_2)
 // Reference entry 10e307b0; body size 37 bytes.
 #line 1 "ENTRY_10e307b0"
 
-SCStr * Recovered_FUN_10e307b0::FUN_10e307b0(SCStr *param_2)
+SCStr * Recovered_10e307b0::FUN_10e307b0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -41141,7 +41173,7 @@ SCStr * FUN_10e381c0(SCStr *param_1)
 // Reference entry 10e3f100; body size 103 bytes.
 #line 1 "ENTRY_10e3f100"
 
-undefined4 * Recovered_FUN_10e3f100::FUN_10e3f100(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10e3f100::FUN_10e3f100(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -41173,7 +41205,7 @@ undefined4 * Recovered_FUN_10e3f100::FUN_10e3f100(undefined4 *param_2,SCStr *par
 // Reference entry 10e3f180; body size 103 bytes.
 #line 1 "ENTRY_10e3f180"
 
-undefined4 * Recovered_FUN_10e3f180::FUN_10e3f180(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10e3f180::FUN_10e3f180(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -41438,7 +41470,7 @@ void __fastcall FUN_10e4e4a0(int param_1)
 // Reference entry 10e4e5e0; body size 103 bytes.
 #line 1 "ENTRY_10e4e5e0"
 
-undefined4 * Recovered_FUN_10e4e5e0::FUN_10e4e5e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10e4e5e0::FUN_10e4e5e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -41613,7 +41645,7 @@ undefined1 FUN_10e588f0(SCStr *param_1)
 // Reference entry 10e58bb0; body size 121 bytes.
 #line 1 "ENTRY_10e58bb0"
 
-void Recovered_FUN_10e58bb0::FUN_10e58bb0(int param_2)
+void Recovered_10e58bb0::FUN_10e58bb0(int param_2)
 
 {
   int param_1 = (int)this;
@@ -41681,7 +41713,7 @@ void __fastcall FUN_10e59020(int param_1)
 // Reference entry 10e591f0; body size 103 bytes.
 #line 1 "ENTRY_10e591f0"
 
-undefined4 * Recovered_FUN_10e591f0::FUN_10e591f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10e591f0::FUN_10e591f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -41713,7 +41745,7 @@ undefined4 * Recovered_FUN_10e591f0::FUN_10e591f0(undefined4 *param_2,SCStr *par
 // Reference entry 10e5f7a0; body size 90 bytes.
 #line 1 "ENTRY_10e5f7a0"
 
-SCStr * Recovered_FUN_10e5f7a0::FUN_10e5f7a0(SCStr *param_2)
+SCStr * Recovered_10e5f7a0::FUN_10e5f7a0(SCStr *param_2)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -42060,7 +42092,7 @@ void __fastcall FUN_10e71ed0(int param_1)
 // Reference entry 10e72c70; body size 103 bytes.
 #line 1 "ENTRY_10e72c70"
 
-undefined4 * Recovered_FUN_10e72c70::FUN_10e72c70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10e72c70::FUN_10e72c70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -42092,7 +42124,7 @@ undefined4 * Recovered_FUN_10e72c70::FUN_10e72c70(undefined4 *param_2,SCStr *par
 // Reference entry 10e72cf0; body size 103 bytes.
 #line 1 "ENTRY_10e72cf0"
 
-undefined4 * Recovered_FUN_10e72cf0::FUN_10e72cf0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10e72cf0::FUN_10e72cf0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -42299,7 +42331,7 @@ void __fastcall FUN_10e7b4e0(int param_1)
 // Reference entry 10e7de90; body size 103 bytes.
 #line 1 "ENTRY_10e7de90"
 
-undefined4 * Recovered_FUN_10e7de90::FUN_10e7de90(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10e7de90::FUN_10e7de90(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -42550,7 +42582,7 @@ void __fastcall FUN_10e86760(int param_1)
 // Reference entry 10e86840; body size 103 bytes.
 #line 1 "ENTRY_10e86840"
 
-undefined4 * Recovered_FUN_10e86840::FUN_10e86840(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10e86840::FUN_10e86840(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -42714,7 +42746,7 @@ SCStr * FUN_10e89ec0(SCStr *param_1)
 // Reference entry 10e9aa20; body size 112 bytes.
 #line 1 "ENTRY_10e9aa20"
 
-void Recovered_FUN_10e9aa20::FUN_10e9aa20(int param_2,short param_3)
+void Recovered_10e9aa20::FUN_10e9aa20(int param_2,short param_3)
 
 {
   int param_1 = (int)this;
@@ -42756,7 +42788,7 @@ void Recovered_FUN_10e9aa20::FUN_10e9aa20(int param_2,short param_3)
 // Reference entry 10e9b010; body size 101 bytes.
 #line 1 "ENTRY_10e9b010"
 
-void Recovered_FUN_10e9b010::FUN_10e9b010(int param_2,undefined4 param_3)
+void Recovered_10e9b010::FUN_10e9b010(int param_2,undefined4 param_3)
 
 {
   int param_1 = (int)this;
@@ -42798,7 +42830,7 @@ void Recovered_FUN_10e9b010::FUN_10e9b010(int param_2,undefined4 param_3)
 // Reference entry 10e9c4f0; body size 152 bytes.
 #line 1 "ENTRY_10e9c4f0"
 
-void Recovered_FUN_10e9c4f0::FUN_10e9c4f0(int param_2,short param_3)
+void Recovered_10e9c4f0::FUN_10e9c4f0(int param_2,short param_3)
 
 {
   int param_1 = (int)this;
@@ -43031,7 +43063,7 @@ SCStr * FUN_10ea1850(SCStr *param_1)
 // Reference entry 10ea2900; body size 103 bytes.
 #line 1 "ENTRY_10ea2900"
 
-undefined4 * Recovered_FUN_10ea2900::FUN_10ea2900(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ea2900::FUN_10ea2900(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -43063,7 +43095,7 @@ undefined4 * Recovered_FUN_10ea2900::FUN_10ea2900(undefined4 *param_2,SCStr *par
 // Reference entry 10ea2980; body size 119 bytes.
 #line 1 "ENTRY_10ea2980"
 
-undefined4 * Recovered_FUN_10ea2980::FUN_10ea2980(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ea2980::FUN_10ea2980(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -43095,7 +43127,7 @@ undefined4 * Recovered_FUN_10ea2980::FUN_10ea2980(undefined4 *param_2,SCStr *par
 // Reference entry 10ea2a20; body size 103 bytes.
 #line 1 "ENTRY_10ea2a20"
 
-undefined4 * Recovered_FUN_10ea2a20::FUN_10ea2a20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ea2a20::FUN_10ea2a20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -43127,7 +43159,7 @@ undefined4 * Recovered_FUN_10ea2a20::FUN_10ea2a20(undefined4 *param_2,SCStr *par
 // Reference entry 10ea2c70; body size 119 bytes.
 #line 1 "ENTRY_10ea2c70"
 
-undefined4 * Recovered_FUN_10ea2c70::FUN_10ea2c70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ea2c70::FUN_10ea2c70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -43160,7 +43192,7 @@ undefined4 * Recovered_FUN_10ea2c70::FUN_10ea2c70(undefined4 *param_2,SCStr *par
 // Reference entry 10ea2d10; body size 119 bytes.
 #line 1 "ENTRY_10ea2d10"
 
-undefined4 * Recovered_FUN_10ea2d10::FUN_10ea2d10(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ea2d10::FUN_10ea2d10(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -43208,7 +43240,7 @@ void FUN_10ea4530(void)
 // Reference entry 10ea6b90; body size 69 bytes.
 #line 1 "ENTRY_10ea6b90"
 
-void Recovered_FUN_10ea6b90::FUN_10ea6b90(SCStr *param_2,SCStr *param_3)
+void Recovered_10ea6b90::FUN_10ea6b90(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -43233,7 +43265,7 @@ void Recovered_FUN_10ea6b90::FUN_10ea6b90(SCStr *param_2,SCStr *param_3)
 // Reference entry 10ea6c60; body size 69 bytes.
 #line 1 "ENTRY_10ea6c60"
 
-void Recovered_FUN_10ea6c60::FUN_10ea6c60(SCStr *param_2,SCStr *param_3)
+void Recovered_10ea6c60::FUN_10ea6c60(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -43258,7 +43290,7 @@ void Recovered_FUN_10ea6c60::FUN_10ea6c60(SCStr *param_2,SCStr *param_3)
 // Reference entry 10ea6d40; body size 69 bytes.
 #line 1 "ENTRY_10ea6d40"
 
-void Recovered_FUN_10ea6d40::FUN_10ea6d40(SCStr *param_2,SCStr *param_3)
+void Recovered_10ea6d40::FUN_10ea6d40(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -43505,7 +43537,7 @@ SCStr * FUN_10ea8f20(SCStr *param_1,SCStr *param_2,SCStr *param_3)
 // Reference entry 10eab7c0; body size 396 bytes.
 #line 1 "ENTRY_10eab7c0"
 
-SCStr * Recovered_FUN_10eab7c0::FUN_10eab7c0(SCStr *param_2)
+SCStr * Recovered_10eab7c0::FUN_10eab7c0(SCStr *param_2)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -43604,7 +43636,7 @@ SCStr * Recovered_FUN_10eab7c0::FUN_10eab7c0(SCStr *param_2)
 // Reference entry 10ead200; body size 103 bytes.
 #line 1 "ENTRY_10ead200"
 
-undefined4 * Recovered_FUN_10ead200::FUN_10ead200(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ead200::FUN_10ead200(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -43636,7 +43668,7 @@ undefined4 * Recovered_FUN_10ead200::FUN_10ead200(undefined4 *param_2,SCStr *par
 // Reference entry 10ead280; body size 103 bytes.
 #line 1 "ENTRY_10ead280"
 
-undefined4 * Recovered_FUN_10ead280::FUN_10ead280(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ead280::FUN_10ead280(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -43729,7 +43761,7 @@ SCStr * FUN_10ebe080(SCStr *param_1,SCStr *param_2,SCStr *param_3)
 // Reference entry 10ec2b30; body size 152 bytes.
 #line 1 "ENTRY_10ec2b30"
 
-SCStr * Recovered_FUN_10ec2b30::FUN_10ec2b30(SCStr *param_2)
+SCStr * Recovered_10ec2b30::FUN_10ec2b30(SCStr *param_2)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -43768,7 +43800,7 @@ SCStr * Recovered_FUN_10ec2b30::FUN_10ec2b30(SCStr *param_2)
 // Reference entry 10ed0ef0; body size 121 bytes.
 #line 1 "ENTRY_10ed0ef0"
 
-SCStr * Recovered_FUN_10ed0ef0::FUN_10ed0ef0(SCStr *param_2)
+SCStr * Recovered_10ed0ef0::FUN_10ed0ef0(SCStr *param_2)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -43835,7 +43867,7 @@ SCStr * FUN_10ee07a0(SCStr *param_1)
 // Reference entry 10ee0c10; body size 103 bytes.
 #line 1 "ENTRY_10ee0c10"
 
-undefined4 * Recovered_FUN_10ee0c10::FUN_10ee0c10(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ee0c10::FUN_10ee0c10(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -43878,7 +43910,7 @@ SCStr * FUN_10ee1590(SCStr *param_1)
 // Reference entry 10ee1790; body size 103 bytes.
 #line 1 "ENTRY_10ee1790"
 
-undefined4 * Recovered_FUN_10ee1790::FUN_10ee1790(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ee1790::FUN_10ee1790(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -43932,7 +43964,7 @@ SCStr * FUN_10ee43f0(SCStr *param_1)
 // Reference entry 10ee8760; body size 103 bytes.
 #line 1 "ENTRY_10ee8760"
 
-undefined4 * Recovered_FUN_10ee8760::FUN_10ee8760(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ee8760::FUN_10ee8760(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -43997,7 +44029,7 @@ SCStr * FUN_10eecf80(SCStr *param_1)
 // Reference entry 10eed620; body size 103 bytes.
 #line 1 "ENTRY_10eed620"
 
-undefined4 * Recovered_FUN_10eed620::FUN_10eed620(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10eed620::FUN_10eed620(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -44062,7 +44094,7 @@ SCStr * FUN_10ef22f0(SCStr *param_1)
 // Reference entry 10ef2b60; body size 103 bytes.
 #line 1 "ENTRY_10ef2b60"
 
-undefined4 * Recovered_FUN_10ef2b60::FUN_10ef2b60(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ef2b60::FUN_10ef2b60(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -44094,7 +44126,7 @@ undefined4 * Recovered_FUN_10ef2b60::FUN_10ef2b60(undefined4 *param_2,SCStr *par
 // Reference entry 10ef2be0; body size 69 bytes.
 #line 1 "ENTRY_10ef2be0"
 
-void Recovered_FUN_10ef2be0::FUN_10ef2be0(SCStr *param_2,SCStr *param_3)
+void Recovered_10ef2be0::FUN_10ef2be0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -44130,7 +44162,7 @@ SCStr * FUN_10ef30f0(SCStr *param_1)
 // Reference entry 10ef3150; body size 20 bytes.
 #line 1 "ENTRY_10ef3150"
 
-SCStr * Recovered_FUN_10ef3150::FUN_10ef3150(SCStr *param_2)
+SCStr * Recovered_10ef3150::FUN_10ef3150(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -44142,7 +44174,7 @@ SCStr * Recovered_FUN_10ef3150::FUN_10ef3150(SCStr *param_2)
 // Reference entry 10ef3170; body size 23 bytes.
 #line 1 "ENTRY_10ef3170"
 
-SCStr * Recovered_FUN_10ef3170::FUN_10ef3170(SCStr *param_2)
+SCStr * Recovered_10ef3170::FUN_10ef3170(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -44154,7 +44186,7 @@ SCStr * Recovered_FUN_10ef3170::FUN_10ef3170(SCStr *param_2)
 // Reference entry 10ef3190; body size 23 bytes.
 #line 1 "ENTRY_10ef3190"
 
-SCStr * Recovered_FUN_10ef3190::FUN_10ef3190(SCStr *param_2)
+SCStr * Recovered_10ef3190::FUN_10ef3190(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -44166,7 +44198,7 @@ SCStr * Recovered_FUN_10ef3190::FUN_10ef3190(SCStr *param_2)
 // Reference entry 10efb170; body size 138 bytes.
 #line 1 "ENTRY_10efb170"
 
-SCStr * Recovered_FUN_10efb170::FUN_10efb170(SCStr *param_2,int param_3)
+SCStr * Recovered_10efb170::FUN_10efb170(SCStr *param_2,int param_3)
 
 {
   int param_1 = (int)this;
@@ -44193,7 +44225,7 @@ SCStr * Recovered_FUN_10efb170::FUN_10efb170(SCStr *param_2,int param_3)
 // Reference entry 10effb70; body size 87 bytes.
 #line 1 "ENTRY_10effb70"
 
-SCStr * Recovered_FUN_10effb70::FUN_10effb70(SCStr *param_2,char param_3)
+SCStr * Recovered_10effb70::FUN_10effb70(SCStr *param_2,char param_3)
 
 {
   int param_1 = (int)this;
@@ -44218,7 +44250,7 @@ SCStr * Recovered_FUN_10effb70::FUN_10effb70(SCStr *param_2,char param_3)
 // Reference entry 10f04d30; body size 103 bytes.
 #line 1 "ENTRY_10f04d30"
 
-undefined4 * Recovered_FUN_10f04d30::FUN_10f04d30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f04d30::FUN_10f04d30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -44316,7 +44348,7 @@ SCStr * FUN_10f11b70(SCStr *param_1)
 // Reference entry 10f11bf0; body size 23 bytes.
 #line 1 "ENTRY_10f11bf0"
 
-SCStr * Recovered_FUN_10f11bf0::FUN_10f11bf0(SCStr *param_2)
+SCStr * Recovered_10f11bf0::FUN_10f11bf0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -44339,7 +44371,7 @@ SCStr * FUN_10f11c10(SCStr *param_1)
 // Reference entry 10f11c30; body size 25 bytes.
 #line 1 "ENTRY_10f11c30"
 
-SCStr * Recovered_FUN_10f11c30::FUN_10f11c30(SCStr *param_2)
+SCStr * Recovered_10f11c30::FUN_10f11c30(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -44384,7 +44416,7 @@ SCStr * FUN_10f11f80(SCStr *param_1)
 // Reference entry 10f11ff0; body size 23 bytes.
 #line 1 "ENTRY_10f11ff0"
 
-SCStr * Recovered_FUN_10f11ff0::FUN_10f11ff0(SCStr *param_2)
+SCStr * Recovered_10f11ff0::FUN_10f11ff0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -44407,7 +44439,7 @@ SCStr * FUN_10f12010(SCStr *param_1)
 // Reference entry 10f12030; body size 25 bytes.
 #line 1 "ENTRY_10f12030"
 
-SCStr * Recovered_FUN_10f12030::FUN_10f12030(SCStr *param_2)
+SCStr * Recovered_10f12030::FUN_10f12030(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -44419,7 +44451,7 @@ SCStr * Recovered_FUN_10f12030::FUN_10f12030(SCStr *param_2)
 // Reference entry 10f13cb0; body size 103 bytes.
 #line 1 "ENTRY_10f13cb0"
 
-undefined4 * Recovered_FUN_10f13cb0::FUN_10f13cb0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f13cb0::FUN_10f13cb0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -44451,7 +44483,7 @@ undefined4 * Recovered_FUN_10f13cb0::FUN_10f13cb0(undefined4 *param_2,SCStr *par
 // Reference entry 10f13d30; body size 103 bytes.
 #line 1 "ENTRY_10f13d30"
 
-undefined4 * Recovered_FUN_10f13d30::FUN_10f13d30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f13d30::FUN_10f13d30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -44483,7 +44515,7 @@ undefined4 * Recovered_FUN_10f13d30::FUN_10f13d30(undefined4 *param_2,SCStr *par
 // Reference entry 10f13db0; body size 103 bytes.
 #line 1 "ENTRY_10f13db0"
 
-undefined4 * Recovered_FUN_10f13db0::FUN_10f13db0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f13db0::FUN_10f13db0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -44515,7 +44547,7 @@ undefined4 * Recovered_FUN_10f13db0::FUN_10f13db0(undefined4 *param_2,SCStr *par
 // Reference entry 10f13f00; body size 69 bytes.
 #line 1 "ENTRY_10f13f00"
 
-void Recovered_FUN_10f13f00::FUN_10f13f00(SCStr *param_2,SCStr *param_3)
+void Recovered_10f13f00::FUN_10f13f00(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -44540,7 +44572,7 @@ void Recovered_FUN_10f13f00::FUN_10f13f00(SCStr *param_2,SCStr *param_3)
 // Reference entry 10f13f60; body size 69 bytes.
 #line 1 "ENTRY_10f13f60"
 
-void Recovered_FUN_10f13f60::FUN_10f13f60(SCStr *param_2,SCStr *param_3)
+void Recovered_10f13f60::FUN_10f13f60(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -44565,7 +44597,7 @@ void Recovered_FUN_10f13f60::FUN_10f13f60(SCStr *param_2,SCStr *param_3)
 // Reference entry 10f13fc0; body size 69 bytes.
 #line 1 "ENTRY_10f13fc0"
 
-void Recovered_FUN_10f13fc0::FUN_10f13fc0(SCStr *param_2,SCStr *param_3)
+void Recovered_10f13fc0::FUN_10f13fc0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -44590,7 +44622,7 @@ void Recovered_FUN_10f13fc0::FUN_10f13fc0(SCStr *param_2,SCStr *param_3)
 // Reference entry 10f1cb00; body size 96 bytes.
 #line 1 "ENTRY_10f1cb00"
 
-SCStr * Recovered_FUN_10f1cb00::FUN_10f1cb00(SCStr *param_2)
+SCStr * Recovered_10f1cb00::FUN_10f1cb00(SCStr *param_2)
 
 {
   SCStr * param_1 = (SCStr *)this;
@@ -44675,7 +44707,7 @@ SCStr * FUN_10f21fc0(SCStr *param_1)
 // Reference entry 10f228d0; body size 103 bytes.
 #line 1 "ENTRY_10f228d0"
 
-undefined4 * Recovered_FUN_10f228d0::FUN_10f228d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f228d0::FUN_10f228d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -44718,7 +44750,7 @@ SCStr * FUN_10f2a950(SCStr *param_1)
 // Reference entry 10f2aa90; body size 99 bytes.
 #line 1 "ENTRY_10f2aa90"
 
-bool Recovered_FUN_10f2aa90::FUN_10f2aa90(SCStr *param_2)
+bool Recovered_10f2aa90::FUN_10f2aa90(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -44755,7 +44787,7 @@ bool Recovered_FUN_10f2aa90::FUN_10f2aa90(SCStr *param_2)
 // Reference entry 10f2bf40; body size 103 bytes.
 #line 1 "ENTRY_10f2bf40"
 
-undefined4 * Recovered_FUN_10f2bf40::FUN_10f2bf40(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f2bf40::FUN_10f2bf40(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -44787,7 +44819,7 @@ undefined4 * Recovered_FUN_10f2bf40::FUN_10f2bf40(undefined4 *param_2,SCStr *par
 // Reference entry 10f2cdb0; body size 69 bytes.
 #line 1 "ENTRY_10f2cdb0"
 
-void Recovered_FUN_10f2cdb0::FUN_10f2cdb0(SCStr *param_2,SCStr *param_3)
+void Recovered_10f2cdb0::FUN_10f2cdb0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -44856,7 +44888,7 @@ SCStr * FUN_10f340d0(SCStr *param_1)
 // Reference entry 10f36120; body size 103 bytes.
 #line 1 "ENTRY_10f36120"
 
-undefined4 * Recovered_FUN_10f36120::FUN_10f36120(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f36120::FUN_10f36120(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -44888,7 +44920,7 @@ undefined4 * Recovered_FUN_10f36120::FUN_10f36120(undefined4 *param_2,SCStr *par
 // Reference entry 10f361a0; body size 103 bytes.
 #line 1 "ENTRY_10f361a0"
 
-undefined4 * Recovered_FUN_10f361a0::FUN_10f361a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f361a0::FUN_10f361a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -44920,7 +44952,7 @@ undefined4 * Recovered_FUN_10f361a0::FUN_10f361a0(undefined4 *param_2,SCStr *par
 // Reference entry 10f36220; body size 103 bytes.
 #line 1 "ENTRY_10f36220"
 
-undefined4 * Recovered_FUN_10f36220::FUN_10f36220(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f36220::FUN_10f36220(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -44952,7 +44984,7 @@ undefined4 * Recovered_FUN_10f36220::FUN_10f36220(undefined4 *param_2,SCStr *par
 // Reference entry 10f362a0; body size 103 bytes.
 #line 1 "ENTRY_10f362a0"
 
-undefined4 * Recovered_FUN_10f362a0::FUN_10f362a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f362a0::FUN_10f362a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -44984,7 +45016,7 @@ undefined4 * Recovered_FUN_10f362a0::FUN_10f362a0(undefined4 *param_2,SCStr *par
 // Reference entry 10f36320; body size 69 bytes.
 #line 1 "ENTRY_10f36320"
 
-void Recovered_FUN_10f36320::FUN_10f36320(SCStr *param_2,SCStr *param_3)
+void Recovered_10f36320::FUN_10f36320(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -45009,7 +45041,7 @@ void Recovered_FUN_10f36320::FUN_10f36320(SCStr *param_2,SCStr *param_3)
 // Reference entry 10f36380; body size 69 bytes.
 #line 1 "ENTRY_10f36380"
 
-void Recovered_FUN_10f36380::FUN_10f36380(SCStr *param_2,SCStr *param_3)
+void Recovered_10f36380::FUN_10f36380(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -45034,7 +45066,7 @@ void Recovered_FUN_10f36380::FUN_10f36380(SCStr *param_2,SCStr *param_3)
 // Reference entry 10f363e0; body size 69 bytes.
 #line 1 "ENTRY_10f363e0"
 
-void Recovered_FUN_10f363e0::FUN_10f363e0(SCStr *param_2,SCStr *param_3)
+void Recovered_10f363e0::FUN_10f363e0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -45059,7 +45091,7 @@ void Recovered_FUN_10f363e0::FUN_10f363e0(SCStr *param_2,SCStr *param_3)
 // Reference entry 10f36440; body size 69 bytes.
 #line 1 "ENTRY_10f36440"
 
-void Recovered_FUN_10f36440::FUN_10f36440(SCStr *param_2,SCStr *param_3)
+void Recovered_10f36440::FUN_10f36440(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -45172,7 +45204,7 @@ SCStr * FUN_10f3da30(SCStr *param_1)
 // Reference entry 10f3ee80; body size 103 bytes.
 #line 1 "ENTRY_10f3ee80"
 
-undefined4 * Recovered_FUN_10f3ee80::FUN_10f3ee80(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f3ee80::FUN_10f3ee80(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -45204,7 +45236,7 @@ undefined4 * Recovered_FUN_10f3ee80::FUN_10f3ee80(undefined4 *param_2,SCStr *par
 // Reference entry 10f3ef00; body size 103 bytes.
 #line 1 "ENTRY_10f3ef00"
 
-undefined4 * Recovered_FUN_10f3ef00::FUN_10f3ef00(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f3ef00::FUN_10f3ef00(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -45255,7 +45287,7 @@ void __fastcall FUN_10f42dd0(int param_1)
 // Reference entry 10f42e50; body size 103 bytes.
 #line 1 "ENTRY_10f42e50"
 
-undefined4 * Recovered_FUN_10f42e50::FUN_10f42e50(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f42e50::FUN_10f42e50(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -45309,7 +45341,7 @@ void FUN_10f46df0(SCStr *param_1)
 // Reference entry 10f47070; body size 193 bytes.
 #line 1 "ENTRY_10f47070"
 
-void Recovered_FUN_10f47070::FUN_10f47070(SCStr *param_2,SCStr *param_3,uint param_4)
+void Recovered_10f47070::FUN_10f47070(SCStr *param_2,SCStr *param_3,uint param_4)
 
 {
   int param_1 = (int)this;
@@ -45343,7 +45375,7 @@ void Recovered_FUN_10f47070::FUN_10f47070(SCStr *param_2,SCStr *param_3,uint par
 // Reference entry 10f478b0; body size 103 bytes.
 #line 1 "ENTRY_10f478b0"
 
-undefined4 * Recovered_FUN_10f478b0::FUN_10f478b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f478b0::FUN_10f478b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -45375,7 +45407,7 @@ undefined4 * Recovered_FUN_10f478b0::FUN_10f478b0(undefined4 *param_2,SCStr *par
 // Reference entry 10f47a50; body size 103 bytes.
 #line 1 "ENTRY_10f47a50"
 
-undefined4 * Recovered_FUN_10f47a50::FUN_10f47a50(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f47a50::FUN_10f47a50(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -45407,7 +45439,7 @@ undefined4 * Recovered_FUN_10f47a50::FUN_10f47a50(undefined4 *param_2,SCStr *par
 // Reference entry 10f48ce0; body size 103 bytes.
 #line 1 "ENTRY_10f48ce0"
 
-undefined4 * Recovered_FUN_10f48ce0::FUN_10f48ce0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f48ce0::FUN_10f48ce0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -45439,7 +45471,7 @@ undefined4 * Recovered_FUN_10f48ce0::FUN_10f48ce0(undefined4 *param_2,SCStr *par
 // Reference entry 10f4c9c0; body size 103 bytes.
 #line 1 "ENTRY_10f4c9c0"
 
-undefined4 * Recovered_FUN_10f4c9c0::FUN_10f4c9c0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f4c9c0::FUN_10f4c9c0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -45471,7 +45503,7 @@ undefined4 * Recovered_FUN_10f4c9c0::FUN_10f4c9c0(undefined4 *param_2,SCStr *par
 // Reference entry 10f4cb60; body size 103 bytes.
 #line 1 "ENTRY_10f4cb60"
 
-undefined4 * Recovered_FUN_10f4cb60::FUN_10f4cb60(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f4cb60::FUN_10f4cb60(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -45519,7 +45551,7 @@ void FUN_10f4fa50(undefined4 param_1,SCStr *param_2)
 // Reference entry 10f51510; body size 117 bytes.
 #line 1 "ENTRY_10f51510"
 
-undefined4 * Recovered_FUN_10f51510::FUN_10f51510(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f51510::FUN_10f51510(undefined4 *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -45554,7 +45586,7 @@ undefined4 * Recovered_FUN_10f51510::FUN_10f51510(undefined4 *param_2,SCStr *par
 // Reference entry 10f515b0; body size 103 bytes.
 #line 1 "ENTRY_10f515b0"
 
-undefined4 * Recovered_FUN_10f515b0::FUN_10f515b0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f515b0::FUN_10f515b0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -45630,7 +45662,7 @@ SCStr * FUN_10f61540(SCStr *param_1)
 // Reference entry 10f61600; body size 79 bytes.
 #line 1 "ENTRY_10f61600"
 
-SCStr * Recovered_FUN_10f61600::FUN_10f61600(SCStr *param_2)
+SCStr * Recovered_10f61600::FUN_10f61600(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -45656,7 +45688,7 @@ SCStr * Recovered_FUN_10f61600::FUN_10f61600(SCStr *param_2)
 // Reference entry 10f620f0; body size 103 bytes.
 #line 1 "ENTRY_10f620f0"
 
-undefined4 * Recovered_FUN_10f620f0::FUN_10f620f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f620f0::FUN_10f620f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -45688,7 +45720,7 @@ undefined4 * Recovered_FUN_10f620f0::FUN_10f620f0(undefined4 *param_2,SCStr *par
 // Reference entry 10f62170; body size 103 bytes.
 #line 1 "ENTRY_10f62170"
 
-undefined4 * Recovered_FUN_10f62170::FUN_10f62170(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f62170::FUN_10f62170(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -45720,7 +45752,7 @@ undefined4 * Recovered_FUN_10f62170::FUN_10f62170(undefined4 *param_2,SCStr *par
 // Reference entry 10f621f0; body size 103 bytes.
 #line 1 "ENTRY_10f621f0"
 
-undefined4 * Recovered_FUN_10f621f0::FUN_10f621f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f621f0::FUN_10f621f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -45752,7 +45784,7 @@ undefined4 * Recovered_FUN_10f621f0::FUN_10f621f0(undefined4 *param_2,SCStr *par
 // Reference entry 10f62270; body size 103 bytes.
 #line 1 "ENTRY_10f62270"
 
-undefined4 * Recovered_FUN_10f62270::FUN_10f62270(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f62270::FUN_10f62270(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -45784,7 +45816,7 @@ undefined4 * Recovered_FUN_10f62270::FUN_10f62270(undefined4 *param_2,SCStr *par
 // Reference entry 10f622f0; body size 103 bytes.
 #line 1 "ENTRY_10f622f0"
 
-undefined4 * Recovered_FUN_10f622f0::FUN_10f622f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f622f0::FUN_10f622f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -45816,7 +45848,7 @@ undefined4 * Recovered_FUN_10f622f0::FUN_10f622f0(undefined4 *param_2,SCStr *par
 // Reference entry 10f62370; body size 103 bytes.
 #line 1 "ENTRY_10f62370"
 
-undefined4 * Recovered_FUN_10f62370::FUN_10f62370(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f62370::FUN_10f62370(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -45848,7 +45880,7 @@ undefined4 * Recovered_FUN_10f62370::FUN_10f62370(undefined4 *param_2,SCStr *par
 // Reference entry 10f623f0; body size 103 bytes.
 #line 1 "ENTRY_10f623f0"
 
-undefined4 * Recovered_FUN_10f623f0::FUN_10f623f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f623f0::FUN_10f623f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -45880,7 +45912,7 @@ undefined4 * Recovered_FUN_10f623f0::FUN_10f623f0(undefined4 *param_2,SCStr *par
 // Reference entry 10f62470; body size 103 bytes.
 #line 1 "ENTRY_10f62470"
 
-undefined4 * Recovered_FUN_10f62470::FUN_10f62470(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f62470::FUN_10f62470(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -45912,7 +45944,7 @@ undefined4 * Recovered_FUN_10f62470::FUN_10f62470(undefined4 *param_2,SCStr *par
 // Reference entry 10f62fc0; body size 69 bytes.
 #line 1 "ENTRY_10f62fc0"
 
-void Recovered_FUN_10f62fc0::FUN_10f62fc0(SCStr *param_2,SCStr *param_3)
+void Recovered_10f62fc0::FUN_10f62fc0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -45937,7 +45969,7 @@ void Recovered_FUN_10f62fc0::FUN_10f62fc0(SCStr *param_2,SCStr *param_3)
 // Reference entry 10f63020; body size 69 bytes.
 #line 1 "ENTRY_10f63020"
 
-void Recovered_FUN_10f63020::FUN_10f63020(SCStr *param_2,SCStr *param_3)
+void Recovered_10f63020::FUN_10f63020(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -45962,7 +45994,7 @@ void Recovered_FUN_10f63020::FUN_10f63020(SCStr *param_2,SCStr *param_3)
 // Reference entry 10f63080; body size 69 bytes.
 #line 1 "ENTRY_10f63080"
 
-void Recovered_FUN_10f63080::FUN_10f63080(SCStr *param_2,SCStr *param_3)
+void Recovered_10f63080::FUN_10f63080(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -45987,7 +46019,7 @@ void Recovered_FUN_10f63080::FUN_10f63080(SCStr *param_2,SCStr *param_3)
 // Reference entry 10f630e0; body size 69 bytes.
 #line 1 "ENTRY_10f630e0"
 
-void Recovered_FUN_10f630e0::FUN_10f630e0(SCStr *param_2,SCStr *param_3)
+void Recovered_10f630e0::FUN_10f630e0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -46012,7 +46044,7 @@ void Recovered_FUN_10f630e0::FUN_10f630e0(SCStr *param_2,SCStr *param_3)
 // Reference entry 10f63e00; body size 39 bytes.
 #line 1 "ENTRY_10f63e00"
 
-void Recovered_FUN_10f63e00::FUN_10f63e00(SCStr *param_2,undefined1 param_3)
+void Recovered_10f63e00::FUN_10f63e00(SCStr *param_2,undefined1 param_3)
 
 {
   int param_1 = (int)this;
@@ -46041,7 +46073,7 @@ SCStr * FUN_10f675c0(SCStr *param_1)
 // Reference entry 10f678f0; body size 103 bytes.
 #line 1 "ENTRY_10f678f0"
 
-undefined4 * Recovered_FUN_10f678f0::FUN_10f678f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f678f0::FUN_10f678f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -46073,7 +46105,7 @@ undefined4 * Recovered_FUN_10f678f0::FUN_10f678f0(undefined4 *param_2,SCStr *par
 // Reference entry 10f67970; body size 103 bytes.
 #line 1 "ENTRY_10f67970"
 
-undefined4 * Recovered_FUN_10f67970::FUN_10f67970(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f67970::FUN_10f67970(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -46105,7 +46137,7 @@ undefined4 * Recovered_FUN_10f67970::FUN_10f67970(undefined4 *param_2,SCStr *par
 // Reference entry 10f679f0; body size 103 bytes.
 #line 1 "ENTRY_10f679f0"
 
-undefined4 * Recovered_FUN_10f679f0::FUN_10f679f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f679f0::FUN_10f679f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -46137,7 +46169,7 @@ undefined4 * Recovered_FUN_10f679f0::FUN_10f679f0(undefined4 *param_2,SCStr *par
 // Reference entry 10f68560; body size 69 bytes.
 #line 1 "ENTRY_10f68560"
 
-void Recovered_FUN_10f68560::FUN_10f68560(SCStr *param_2,SCStr *param_3)
+void Recovered_10f68560::FUN_10f68560(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -46162,7 +46194,7 @@ void Recovered_FUN_10f68560::FUN_10f68560(SCStr *param_2,SCStr *param_3)
 // Reference entry 10f69070; body size 105 bytes.
 #line 1 "ENTRY_10f69070"
 
-void Recovered_FUN_10f69070::FUN_10f69070(SCStr *param_2,undefined4 param_3)
+void Recovered_10f69070::FUN_10f69070(SCStr *param_2,undefined4 param_3)
 
 {
   int param_1 = (int)this;
@@ -46201,7 +46233,7 @@ SCStr * FUN_10f72640(SCStr *param_1)
 // Reference entry 10f73640; body size 103 bytes.
 #line 1 "ENTRY_10f73640"
 
-undefined4 * Recovered_FUN_10f73640::FUN_10f73640(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f73640::FUN_10f73640(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -46233,7 +46265,7 @@ undefined4 * Recovered_FUN_10f73640::FUN_10f73640(undefined4 *param_2,SCStr *par
 // Reference entry 10f73730; body size 69 bytes.
 #line 1 "ENTRY_10f73730"
 
-void Recovered_FUN_10f73730::FUN_10f73730(SCStr *param_2,SCStr *param_3)
+void Recovered_10f73730::FUN_10f73730(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -46281,7 +46313,7 @@ void __fastcall FUN_10f782e0(int param_1)
 // Reference entry 10f79110; body size 53 bytes.
 #line 1 "ENTRY_10f79110"
 
-SCStr * Recovered_FUN_10f79110::FUN_10f79110(SCStr *param_2)
+SCStr * Recovered_10f79110::FUN_10f79110(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -46300,7 +46332,7 @@ SCStr * Recovered_FUN_10f79110::FUN_10f79110(SCStr *param_2)
 // Reference entry 10f79860; body size 50 bytes.
 #line 1 "ENTRY_10f79860"
 
-SCStr * Recovered_FUN_10f79860::FUN_10f79860(SCStr *param_2)
+SCStr * Recovered_10f79860::FUN_10f79860(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -46330,7 +46362,7 @@ SCStr * FUN_10f79a90(SCStr *param_1)
 // Reference entry 10f7a100; body size 103 bytes.
 #line 1 "ENTRY_10f7a100"
 
-undefined4 * Recovered_FUN_10f7a100::FUN_10f7a100(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f7a100::FUN_10f7a100(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -46362,7 +46394,7 @@ undefined4 * Recovered_FUN_10f7a100::FUN_10f7a100(undefined4 *param_2,SCStr *par
 // Reference entry 10f7a180; body size 103 bytes.
 #line 1 "ENTRY_10f7a180"
 
-undefined4 * Recovered_FUN_10f7a180::FUN_10f7a180(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f7a180::FUN_10f7a180(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -46394,7 +46426,7 @@ undefined4 * Recovered_FUN_10f7a180::FUN_10f7a180(undefined4 *param_2,SCStr *par
 // Reference entry 10f7a5b0; body size 69 bytes.
 #line 1 "ENTRY_10f7a5b0"
 
-void Recovered_FUN_10f7a5b0::FUN_10f7a5b0(SCStr *param_2,SCStr *param_3)
+void Recovered_10f7a5b0::FUN_10f7a5b0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -46441,7 +46473,7 @@ SCStr * FUN_10f7fa40(SCStr *param_1)
 // Reference entry 10f80cd0; body size 103 bytes.
 #line 1 "ENTRY_10f80cd0"
 
-undefined4 * Recovered_FUN_10f80cd0::FUN_10f80cd0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f80cd0::FUN_10f80cd0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -46473,7 +46505,7 @@ undefined4 * Recovered_FUN_10f80cd0::FUN_10f80cd0(undefined4 *param_2,SCStr *par
 // Reference entry 10f80d50; body size 103 bytes.
 #line 1 "ENTRY_10f80d50"
 
-undefined4 * Recovered_FUN_10f80d50::FUN_10f80d50(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f80d50::FUN_10f80d50(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -46505,7 +46537,7 @@ undefined4 * Recovered_FUN_10f80d50::FUN_10f80d50(undefined4 *param_2,SCStr *par
 // Reference entry 10f80dd0; body size 69 bytes.
 #line 1 "ENTRY_10f80dd0"
 
-void Recovered_FUN_10f80dd0::FUN_10f80dd0(SCStr *param_2,SCStr *param_3)
+void Recovered_10f80dd0::FUN_10f80dd0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -46530,7 +46562,7 @@ void Recovered_FUN_10f80dd0::FUN_10f80dd0(SCStr *param_2,SCStr *param_3)
 // Reference entry 10f80e30; body size 69 bytes.
 #line 1 "ENTRY_10f80e30"
 
-void Recovered_FUN_10f80e30::FUN_10f80e30(SCStr *param_2,SCStr *param_3)
+void Recovered_10f80e30::FUN_10f80e30(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -46588,7 +46620,7 @@ SCStr * FUN_10f8cfe0(SCStr *param_1)
 // Reference entry 10f8e410; body size 103 bytes.
 #line 1 "ENTRY_10f8e410"
 
-undefined4 * Recovered_FUN_10f8e410::FUN_10f8e410(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f8e410::FUN_10f8e410(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -46620,7 +46652,7 @@ undefined4 * Recovered_FUN_10f8e410::FUN_10f8e410(undefined4 *param_2,SCStr *par
 // Reference entry 10f8e490; body size 103 bytes.
 #line 1 "ENTRY_10f8e490"
 
-undefined4 * Recovered_FUN_10f8e490::FUN_10f8e490(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f8e490::FUN_10f8e490(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -46652,7 +46684,7 @@ undefined4 * Recovered_FUN_10f8e490::FUN_10f8e490(undefined4 *param_2,SCStr *par
 // Reference entry 10f8e510; body size 103 bytes.
 #line 1 "ENTRY_10f8e510"
 
-undefined4 * Recovered_FUN_10f8e510::FUN_10f8e510(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10f8e510::FUN_10f8e510(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -46684,7 +46716,7 @@ undefined4 * Recovered_FUN_10f8e510::FUN_10f8e510(undefined4 *param_2,SCStr *par
 // Reference entry 10f8e590; body size 69 bytes.
 #line 1 "ENTRY_10f8e590"
 
-void Recovered_FUN_10f8e590::FUN_10f8e590(SCStr *param_2,SCStr *param_3)
+void Recovered_10f8e590::FUN_10f8e590(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -46709,7 +46741,7 @@ void Recovered_FUN_10f8e590::FUN_10f8e590(SCStr *param_2,SCStr *param_3)
 // Reference entry 10f8e5f0; body size 69 bytes.
 #line 1 "ENTRY_10f8e5f0"
 
-void Recovered_FUN_10f8e5f0::FUN_10f8e5f0(SCStr *param_2,SCStr *param_3)
+void Recovered_10f8e5f0::FUN_10f8e5f0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -46734,7 +46766,7 @@ void Recovered_FUN_10f8e5f0::FUN_10f8e5f0(SCStr *param_2,SCStr *param_3)
 // Reference entry 10f8e650; body size 69 bytes.
 #line 1 "ENTRY_10f8e650"
 
-void Recovered_FUN_10f8e650::FUN_10f8e650(SCStr *param_2,SCStr *param_3)
+void Recovered_10f8e650::FUN_10f8e650(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -47192,7 +47224,7 @@ void __fastcall FUN_10fa35e0(int param_1)
 // Reference entry 10fa36e0; body size 103 bytes.
 #line 1 "ENTRY_10fa36e0"
 
-undefined4 * Recovered_FUN_10fa36e0::FUN_10fa36e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10fa36e0::FUN_10fa36e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -47393,7 +47425,7 @@ void __fastcall FUN_10fa9d30(int param_1)
 // Reference entry 10fa9e20; body size 103 bytes.
 #line 1 "ENTRY_10fa9e20"
 
-undefined4 * Recovered_FUN_10fa9e20::FUN_10fa9e20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10fa9e20::FUN_10fa9e20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -47608,7 +47640,7 @@ SCStr * FUN_10fbc490(SCStr *param_1)
 // Reference entry 10fbcea0; body size 103 bytes.
 #line 1 "ENTRY_10fbcea0"
 
-undefined4 * Recovered_FUN_10fbcea0::FUN_10fbcea0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10fbcea0::FUN_10fbcea0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -47842,7 +47874,7 @@ void __fastcall FUN_10fc94e0(int param_1)
 // Reference entry 10fc95e0; body size 103 bytes.
 #line 1 "ENTRY_10fc95e0"
 
-undefined4 * Recovered_FUN_10fc95e0::FUN_10fc95e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10fc95e0::FUN_10fc95e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -47885,7 +47917,7 @@ SCStr * FUN_10fcaf50(SCStr *param_1)
 // Reference entry 10fcb7d0; body size 72 bytes.
 #line 1 "ENTRY_10fcb7d0"
 
-SCStr * Recovered_FUN_10fcb7d0::FUN_10fcb7d0(SCStr *param_2)
+SCStr * Recovered_10fcb7d0::FUN_10fcb7d0(SCStr *param_2)
 
 {
   int * param_1 = (int *)this;
@@ -47908,7 +47940,7 @@ SCStr * Recovered_FUN_10fcb7d0::FUN_10fcb7d0(SCStr *param_2)
 // Reference entry 10fcbb30; body size 95 bytes.
 #line 1 "ENTRY_10fcbb30"
 
-void Recovered_FUN_10fcbb30::FUN_10fcbb30(SCStr *param_2,SCStr *param_3)
+void Recovered_10fcbb30::FUN_10fcbb30(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -48100,7 +48132,7 @@ SCStr * FUN_10fcf1c0(SCStr *param_1)
 // Reference entry 10fcf470; body size 103 bytes.
 #line 1 "ENTRY_10fcf470"
 
-undefined4 * Recovered_FUN_10fcf470::FUN_10fcf470(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10fcf470::FUN_10fcf470(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -48132,7 +48164,7 @@ undefined4 * Recovered_FUN_10fcf470::FUN_10fcf470(undefined4 *param_2,SCStr *par
 // Reference entry 10fcf4f0; body size 103 bytes.
 #line 1 "ENTRY_10fcf4f0"
 
-undefined4 * Recovered_FUN_10fcf4f0::FUN_10fcf4f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10fcf4f0::FUN_10fcf4f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -48241,7 +48273,7 @@ SCStr * FUN_10fd1cc0(SCStr *param_1)
 // Reference entry 10fd25c0; body size 119 bytes.
 #line 1 "ENTRY_10fd25c0"
 
-undefined4 * Recovered_FUN_10fd25c0::FUN_10fd25c0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10fd25c0::FUN_10fd25c0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -48565,7 +48597,7 @@ void __fastcall FUN_10fddea0(int param_1)
 // Reference entry 10fe3570; body size 103 bytes.
 #line 1 "ENTRY_10fe3570"
 
-undefined4 * Recovered_FUN_10fe3570::FUN_10fe3570(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10fe3570::FUN_10fe3570(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -48597,7 +48629,7 @@ undefined4 * Recovered_FUN_10fe3570::FUN_10fe3570(undefined4 *param_2,SCStr *par
 // Reference entry 10fe35f0; body size 103 bytes.
 #line 1 "ENTRY_10fe35f0"
 
-undefined4 * Recovered_FUN_10fe35f0::FUN_10fe35f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10fe35f0::FUN_10fe35f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -48629,7 +48661,7 @@ undefined4 * Recovered_FUN_10fe35f0::FUN_10fe35f0(undefined4 *param_2,SCStr *par
 // Reference entry 10fe3670; body size 103 bytes.
 #line 1 "ENTRY_10fe3670"
 
-undefined4 * Recovered_FUN_10fe3670::FUN_10fe3670(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10fe3670::FUN_10fe3670(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -48661,7 +48693,7 @@ undefined4 * Recovered_FUN_10fe3670::FUN_10fe3670(undefined4 *param_2,SCStr *par
 // Reference entry 10fe5880; body size 103 bytes.
 #line 1 "ENTRY_10fe5880"
 
-undefined4 * Recovered_FUN_10fe5880::FUN_10fe5880(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10fe5880::FUN_10fe5880(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -48737,7 +48769,7 @@ SCStr * FUN_10fe6cb0(SCStr *param_1)
 // Reference entry 10fe6da0; body size 103 bytes.
 #line 1 "ENTRY_10fe6da0"
 
-undefined4 * Recovered_FUN_10fe6da0::FUN_10fe6da0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10fe6da0::FUN_10fe6da0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -48769,7 +48801,7 @@ undefined4 * Recovered_FUN_10fe6da0::FUN_10fe6da0(undefined4 *param_2,SCStr *par
 // Reference entry 10fe6e20; body size 119 bytes.
 #line 1 "ENTRY_10fe6e20"
 
-undefined4 * Recovered_FUN_10fe6e20::FUN_10fe6e20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10fe6e20::FUN_10fe6e20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -48889,7 +48921,7 @@ SCStr * FUN_10fe82a0(SCStr *param_1)
 // Reference entry 10fe8550; body size 103 bytes.
 #line 1 "ENTRY_10fe8550"
 
-undefined4 * Recovered_FUN_10fe8550::FUN_10fe8550(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10fe8550::FUN_10fe8550(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -48921,7 +48953,7 @@ undefined4 * Recovered_FUN_10fe8550::FUN_10fe8550(undefined4 *param_2,SCStr *par
 // Reference entry 10fe85d0; body size 103 bytes.
 #line 1 "ENTRY_10fe85d0"
 
-undefined4 * Recovered_FUN_10fe85d0::FUN_10fe85d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10fe85d0::FUN_10fe85d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -48953,7 +48985,7 @@ undefined4 * Recovered_FUN_10fe85d0::FUN_10fe85d0(undefined4 *param_2,SCStr *par
 // Reference entry 10fe8650; body size 103 bytes.
 #line 1 "ENTRY_10fe8650"
 
-undefined4 * Recovered_FUN_10fe8650::FUN_10fe8650(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10fe8650::FUN_10fe8650(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -48985,7 +49017,7 @@ undefined4 * Recovered_FUN_10fe8650::FUN_10fe8650(undefined4 *param_2,SCStr *par
 // Reference entry 10fe86d0; body size 119 bytes.
 #line 1 "ENTRY_10fe86d0"
 
-undefined4 * Recovered_FUN_10fe86d0::FUN_10fe86d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10fe86d0::FUN_10fe86d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -49017,7 +49049,7 @@ undefined4 * Recovered_FUN_10fe86d0::FUN_10fe86d0(undefined4 *param_2,SCStr *par
 // Reference entry 10ff0de0; body size 97 bytes.
 #line 1 "ENTRY_10ff0de0"
 
-void Recovered_FUN_10ff0de0::FUN_10ff0de0(int param_2,SCStr *param_3)
+void Recovered_10ff0de0::FUN_10ff0de0(int param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -49047,7 +49079,7 @@ void Recovered_FUN_10ff0de0::FUN_10ff0de0(int param_2,SCStr *param_3)
 // Reference entry 10ff0e60; body size 100 bytes.
 #line 1 "ENTRY_10ff0e60"
 
-void Recovered_FUN_10ff0e60::FUN_10ff0e60(int param_2,SCStr *param_3)
+void Recovered_10ff0e60::FUN_10ff0e60(int param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -49151,7 +49183,7 @@ SCStr * FUN_10ff1b10(SCStr *param_1,int param_2,undefined4 param_3)
 // Reference entry 10ff20b0; body size 48 bytes.
 #line 1 "ENTRY_10ff20b0"
 
-SCStr * Recovered_FUN_10ff20b0::FUN_10ff20b0(SCStr *param_2)
+SCStr * Recovered_10ff20b0::FUN_10ff20b0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -49167,7 +49199,7 @@ SCStr * Recovered_FUN_10ff20b0::FUN_10ff20b0(SCStr *param_2)
 // Reference entry 10ff2b20; body size 46 bytes.
 #line 1 "ENTRY_10ff2b20"
 
-SCStr * Recovered_FUN_10ff2b20::FUN_10ff2b20(SCStr *param_2)
+SCStr * Recovered_10ff2b20::FUN_10ff2b20(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -49194,7 +49226,7 @@ void FUN_10ff6f90(SCStr *param_1)
 // Reference entry 10ff84d0; body size 103 bytes.
 #line 1 "ENTRY_10ff84d0"
 
-undefined4 * Recovered_FUN_10ff84d0::FUN_10ff84d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ff84d0::FUN_10ff84d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -49226,7 +49258,7 @@ undefined4 * Recovered_FUN_10ff84d0::FUN_10ff84d0(undefined4 *param_2,SCStr *par
 // Reference entry 10ff8550; body size 103 bytes.
 #line 1 "ENTRY_10ff8550"
 
-undefined4 * Recovered_FUN_10ff8550::FUN_10ff8550(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ff8550::FUN_10ff8550(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -49258,7 +49290,7 @@ undefined4 * Recovered_FUN_10ff8550::FUN_10ff8550(undefined4 *param_2,SCStr *par
 // Reference entry 10ff85e0; body size 153 bytes.
 #line 1 "ENTRY_10ff85e0"
 
-undefined4 * Recovered_FUN_10ff85e0::FUN_10ff85e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ff85e0::FUN_10ff85e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -49302,7 +49334,7 @@ undefined4 * Recovered_FUN_10ff85e0::FUN_10ff85e0(undefined4 *param_2,SCStr *par
 // Reference entry 10ff86c0; body size 103 bytes.
 #line 1 "ENTRY_10ff86c0"
 
-undefined4 * Recovered_FUN_10ff86c0::FUN_10ff86c0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ff86c0::FUN_10ff86c0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -49345,7 +49377,7 @@ SCStr * FUN_10ffb630(SCStr *param_1)
 // Reference entry 10ffbb30; body size 103 bytes.
 #line 1 "ENTRY_10ffbb30"
 
-undefined4 * Recovered_FUN_10ffbb30::FUN_10ffbb30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ffbb30::FUN_10ffbb30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -49410,7 +49442,7 @@ SCStr * FUN_10ffcc00(SCStr *param_1)
 // Reference entry 10ffcdc0; body size 46 bytes.
 #line 1 "ENTRY_10ffcdc0"
 
-SCStr * Recovered_FUN_10ffcdc0::FUN_10ffcdc0(SCStr *param_2)
+SCStr * Recovered_10ffcdc0::FUN_10ffcdc0(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -49426,7 +49458,7 @@ SCStr * Recovered_FUN_10ffcdc0::FUN_10ffcdc0(SCStr *param_2)
 // Reference entry 10ffce10; body size 46 bytes.
 #line 1 "ENTRY_10ffce10"
 
-SCStr * Recovered_FUN_10ffce10::FUN_10ffce10(SCStr *param_2)
+SCStr * Recovered_10ffce10::FUN_10ffce10(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -49442,7 +49474,7 @@ SCStr * Recovered_FUN_10ffce10::FUN_10ffce10(SCStr *param_2)
 // Reference entry 10ffd0d0; body size 103 bytes.
 #line 1 "ENTRY_10ffd0d0"
 
-undefined4 * Recovered_FUN_10ffd0d0::FUN_10ffd0d0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_10ffd0d0::FUN_10ffd0d0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -49474,7 +49506,7 @@ undefined4 * Recovered_FUN_10ffd0d0::FUN_10ffd0d0(undefined4 *param_2,SCStr *par
 // Reference entry 11002fc0; body size 103 bytes.
 #line 1 "ENTRY_11002fc0"
 
-undefined4 * Recovered_FUN_11002fc0::FUN_11002fc0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_11002fc0::FUN_11002fc0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -49506,7 +49538,7 @@ undefined4 * Recovered_FUN_11002fc0::FUN_11002fc0(undefined4 *param_2,SCStr *par
 // Reference entry 11003050; body size 103 bytes.
 #line 1 "ENTRY_11003050"
 
-undefined4 * Recovered_FUN_11003050::FUN_11003050(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_11003050::FUN_11003050(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -49626,7 +49658,7 @@ SCStr * FUN_11018120(SCStr *param_1)
 // Reference entry 11018160; body size 23 bytes.
 #line 1 "ENTRY_11018160"
 
-SCStr * Recovered_FUN_11018160::FUN_11018160(SCStr *param_2)
+SCStr * Recovered_11018160::FUN_11018160(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -49638,7 +49670,7 @@ SCStr * Recovered_FUN_11018160::FUN_11018160(SCStr *param_2)
 // Reference entry 110183f0; body size 103 bytes.
 #line 1 "ENTRY_110183f0"
 
-undefined4 * Recovered_FUN_110183f0::FUN_110183f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_110183f0::FUN_110183f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -49670,7 +49702,7 @@ undefined4 * Recovered_FUN_110183f0::FUN_110183f0(undefined4 *param_2,SCStr *par
 // Reference entry 11018540; body size 69 bytes.
 #line 1 "ENTRY_11018540"
 
-void Recovered_FUN_11018540::FUN_11018540(SCStr *param_2,SCStr *param_3)
+void Recovered_11018540::FUN_11018540(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -49695,7 +49727,7 @@ void Recovered_FUN_11018540::FUN_11018540(SCStr *param_2,SCStr *param_3)
 // Reference entry 11019480; body size 103 bytes.
 #line 1 "ENTRY_11019480"
 
-undefined4 * Recovered_FUN_11019480::FUN_11019480(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_11019480::FUN_11019480(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -49768,7 +49800,7 @@ undefined1 FUN_1101bc00(SCStr *param_1)
 // Reference entry 1101bd70; body size 103 bytes.
 #line 1 "ENTRY_1101bd70"
 
-undefined4 * Recovered_FUN_1101bd70::FUN_1101bd70(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1101bd70::FUN_1101bd70(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -49800,7 +49832,7 @@ undefined4 * Recovered_FUN_1101bd70::FUN_1101bd70(undefined4 *param_2,SCStr *par
 // Reference entry 1101bf10; body size 103 bytes.
 #line 1 "ENTRY_1101bf10"
 
-undefined4 * Recovered_FUN_1101bf10::FUN_1101bf10(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1101bf10::FUN_1101bf10(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -49843,7 +49875,7 @@ void FUN_1101df90(SCStr *param_1)
 // Reference entry 1101e290; body size 103 bytes.
 #line 1 "ENTRY_1101e290"
 
-undefined4 * Recovered_FUN_1101e290::FUN_1101e290(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1101e290::FUN_1101e290(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -49905,7 +49937,7 @@ undefined1 FUN_11020e70(SCStr *param_1)
 // Reference entry 11020f20; body size 103 bytes.
 #line 1 "ENTRY_11020f20"
 
-undefined4 * Recovered_FUN_11020f20::FUN_11020f20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_11020f20::FUN_11020f20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -49937,7 +49969,7 @@ undefined4 * Recovered_FUN_11020f20::FUN_11020f20(undefined4 *param_2,SCStr *par
 // Reference entry 11022410; body size 103 bytes.
 #line 1 "ENTRY_11022410"
 
-undefined4 * Recovered_FUN_11022410::FUN_11022410(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_11022410::FUN_11022410(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -49991,7 +50023,7 @@ SCStr * FUN_1102b2a0(SCStr *param_1)
 // Reference entry 1102db80; body size 103 bytes.
 #line 1 "ENTRY_1102db80"
 
-undefined4 * Recovered_FUN_1102db80::FUN_1102db80(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1102db80::FUN_1102db80(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -50023,7 +50055,7 @@ undefined4 * Recovered_FUN_1102db80::FUN_1102db80(undefined4 *param_2,SCStr *par
 // Reference entry 1102dc00; body size 103 bytes.
 #line 1 "ENTRY_1102dc00"
 
-undefined4 * Recovered_FUN_1102dc00::FUN_1102dc00(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1102dc00::FUN_1102dc00(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -50055,7 +50087,7 @@ undefined4 * Recovered_FUN_1102dc00::FUN_1102dc00(undefined4 *param_2,SCStr *par
 // Reference entry 1102dda0; body size 103 bytes.
 #line 1 "ENTRY_1102dda0"
 
-undefined4 * Recovered_FUN_1102dda0::FUN_1102dda0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1102dda0::FUN_1102dda0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -50087,7 +50119,7 @@ undefined4 * Recovered_FUN_1102dda0::FUN_1102dda0(undefined4 *param_2,SCStr *par
 // Reference entry 1102de20; body size 103 bytes.
 #line 1 "ENTRY_1102de20"
 
-undefined4 * Recovered_FUN_1102de20::FUN_1102de20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1102de20::FUN_1102de20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -50119,7 +50151,7 @@ undefined4 * Recovered_FUN_1102de20::FUN_1102de20(undefined4 *param_2,SCStr *par
 // Reference entry 1102dea0; body size 103 bytes.
 #line 1 "ENTRY_1102dea0"
 
-undefined4 * Recovered_FUN_1102dea0::FUN_1102dea0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1102dea0::FUN_1102dea0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -50151,7 +50183,7 @@ undefined4 * Recovered_FUN_1102dea0::FUN_1102dea0(undefined4 *param_2,SCStr *par
 // Reference entry 1102df20; body size 103 bytes.
 #line 1 "ENTRY_1102df20"
 
-undefined4 * Recovered_FUN_1102df20::FUN_1102df20(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1102df20::FUN_1102df20(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -50183,7 +50215,7 @@ undefined4 * Recovered_FUN_1102df20::FUN_1102df20(undefined4 *param_2,SCStr *par
 // Reference entry 1102e370; body size 69 bytes.
 #line 1 "ENTRY_1102e370"
 
-void Recovered_FUN_1102e370::FUN_1102e370(SCStr *param_2,SCStr *param_3)
+void Recovered_1102e370::FUN_1102e370(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -50288,7 +50320,7 @@ SCStr * FUN_11030da0(SCStr *param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11030e00; body size 59 bytes.
 #line 1 "ENTRY_11030e00"
 
-SCStr * Recovered_FUN_11030e00::FUN_11030e00(SCStr *param_2)
+SCStr * Recovered_11030e00::FUN_11030e00(SCStr *param_2)
 
 {
   int * param_1 = (int *)this;
@@ -50340,7 +50372,7 @@ void FUN_11032c90(SCStr *param_1)
 // Reference entry 11032f80; body size 103 bytes.
 #line 1 "ENTRY_11032f80"
 
-undefined4 * Recovered_FUN_11032f80::FUN_11032f80(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_11032f80::FUN_11032f80(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -50372,7 +50404,7 @@ undefined4 * Recovered_FUN_11032f80::FUN_11032f80(undefined4 *param_2,SCStr *par
 // Reference entry 110334f0; body size 103 bytes.
 #line 1 "ENTRY_110334f0"
 
-undefined4 * Recovered_FUN_110334f0::FUN_110334f0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_110334f0::FUN_110334f0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -50404,7 +50436,7 @@ undefined4 * Recovered_FUN_110334f0::FUN_110334f0(undefined4 *param_2,SCStr *par
 // Reference entry 11034ef0; body size 103 bytes.
 #line 1 "ENTRY_11034ef0"
 
-undefined4 * Recovered_FUN_11034ef0::FUN_11034ef0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_11034ef0::FUN_11034ef0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -50557,7 +50589,7 @@ SCStr * FUN_11037570(SCStr *param_1)
 // Reference entry 11037810; body size 103 bytes.
 #line 1 "ENTRY_11037810"
 
-undefined4 * Recovered_FUN_11037810::FUN_11037810(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_11037810::FUN_11037810(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -50589,7 +50621,7 @@ undefined4 * Recovered_FUN_11037810::FUN_11037810(undefined4 *param_2,SCStr *par
 // Reference entry 11037890; body size 103 bytes.
 #line 1 "ENTRY_11037890"
 
-undefined4 * Recovered_FUN_11037890::FUN_11037890(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_11037890::FUN_11037890(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -50621,7 +50653,7 @@ undefined4 * Recovered_FUN_11037890::FUN_11037890(undefined4 *param_2,SCStr *par
 // Reference entry 11037910; body size 103 bytes.
 #line 1 "ENTRY_11037910"
 
-undefined4 * Recovered_FUN_11037910::FUN_11037910(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_11037910::FUN_11037910(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -50653,7 +50685,7 @@ undefined4 * Recovered_FUN_11037910::FUN_11037910(undefined4 *param_2,SCStr *par
 // Reference entry 11037990; body size 119 bytes.
 #line 1 "ENTRY_11037990"
 
-undefined4 * Recovered_FUN_11037990::FUN_11037990(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_11037990::FUN_11037990(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -50685,7 +50717,7 @@ undefined4 * Recovered_FUN_11037990::FUN_11037990(undefined4 *param_2,SCStr *par
 // Reference entry 11037a30; body size 103 bytes.
 #line 1 "ENTRY_11037a30"
 
-undefined4 * Recovered_FUN_11037a30::FUN_11037a30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_11037a30::FUN_11037a30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -50717,7 +50749,7 @@ undefined4 * Recovered_FUN_11037a30::FUN_11037a30(undefined4 *param_2,SCStr *par
 // Reference entry 11037ab0; body size 119 bytes.
 #line 1 "ENTRY_11037ab0"
 
-undefined4 * Recovered_FUN_11037ab0::FUN_11037ab0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_11037ab0::FUN_11037ab0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -50782,7 +50814,7 @@ SCStr * FUN_1103ed20(SCStr *param_1)
 // Reference entry 1105d8e0; body size 103 bytes.
 #line 1 "ENTRY_1105d8e0"
 
-undefined4 * Recovered_FUN_1105d8e0::FUN_1105d8e0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_1105d8e0::FUN_1105d8e0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -50825,7 +50857,7 @@ SCStr * FUN_11060730(SCStr *param_1)
 // Reference entry 11060b80; body size 103 bytes.
 #line 1 "ENTRY_11060b80"
 
-undefined4 * Recovered_FUN_11060b80::FUN_11060b80(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_11060b80::FUN_11060b80(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -50857,7 +50889,7 @@ undefined4 * Recovered_FUN_11060b80::FUN_11060b80(undefined4 *param_2,SCStr *par
 // Reference entry 11060d30; body size 103 bytes.
 #line 1 "ENTRY_11060d30"
 
-undefined4 * Recovered_FUN_11060d30::FUN_11060d30(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_11060d30::FUN_11060d30(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -50889,7 +50921,7 @@ undefined4 * Recovered_FUN_11060d30::FUN_11060d30(undefined4 *param_2,SCStr *par
 // Reference entry 11060e80; body size 69 bytes.
 #line 1 "ENTRY_11060e80"
 
-void Recovered_FUN_11060e80::FUN_11060e80(SCStr *param_2,SCStr *param_3)
+void Recovered_11060e80::FUN_11060e80(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -50925,7 +50957,7 @@ SCStr * FUN_11061da0(SCStr *param_1)
 // Reference entry 11061fc0; body size 103 bytes.
 #line 1 "ENTRY_11061fc0"
 
-undefined4 * Recovered_FUN_11061fc0::FUN_11061fc0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_11061fc0::FUN_11061fc0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -50957,7 +50989,7 @@ undefined4 * Recovered_FUN_11061fc0::FUN_11061fc0(undefined4 *param_2,SCStr *par
 // Reference entry 11062110; body size 69 bytes.
 #line 1 "ENTRY_11062110"
 
-void Recovered_FUN_11062110::FUN_11062110(SCStr *param_2,SCStr *param_3)
+void Recovered_11062110::FUN_11062110(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -50993,7 +51025,7 @@ SCStr * FUN_11062d20(SCStr *param_1)
 // Reference entry 11062f50; body size 103 bytes.
 #line 1 "ENTRY_11062f50"
 
-undefined4 * Recovered_FUN_11062f50::FUN_11062f50(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_11062f50::FUN_11062f50(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -51025,7 +51057,7 @@ undefined4 * Recovered_FUN_11062f50::FUN_11062f50(undefined4 *param_2,SCStr *par
 // Reference entry 110630a0; body size 69 bytes.
 #line 1 "ENTRY_110630a0"
 
-void Recovered_FUN_110630a0::FUN_110630a0(SCStr *param_2,SCStr *param_3)
+void Recovered_110630a0::FUN_110630a0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -51061,7 +51093,7 @@ SCStr * FUN_11065310(SCStr *param_1)
 // Reference entry 11065cb0; body size 103 bytes.
 #line 1 "ENTRY_11065cb0"
 
-undefined4 * Recovered_FUN_11065cb0::FUN_11065cb0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_11065cb0::FUN_11065cb0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -51093,7 +51125,7 @@ undefined4 * Recovered_FUN_11065cb0::FUN_11065cb0(undefined4 *param_2,SCStr *par
 // Reference entry 11065d30; body size 69 bytes.
 #line 1 "ENTRY_11065d30"
 
-void Recovered_FUN_11065d30::FUN_11065d30(SCStr *param_2,SCStr *param_3)
+void Recovered_11065d30::FUN_11065d30(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
@@ -51118,7 +51150,7 @@ void Recovered_FUN_11065d30::FUN_11065d30(SCStr *param_2,SCStr *param_3)
 // Reference entry 11067290; body size 103 bytes.
 #line 1 "ENTRY_11067290"
 
-undefined4 * Recovered_FUN_11067290::FUN_11067290(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_11067290::FUN_11067290(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -51161,7 +51193,7 @@ SCStr * FUN_11067d00(SCStr *param_1)
 // Reference entry 11067e10; body size 25 bytes.
 #line 1 "ENTRY_11067e10"
 
-SCStr * Recovered_FUN_11067e10::FUN_11067e10(SCStr *param_2)
+SCStr * Recovered_11067e10::FUN_11067e10(SCStr *param_2)
 
 {
   int param_1 = (int)this;
@@ -51173,7 +51205,7 @@ SCStr * Recovered_FUN_11067e10::FUN_11067e10(SCStr *param_2)
 // Reference entry 11068020; body size 103 bytes.
 #line 1 "ENTRY_11068020"
 
-undefined4 * Recovered_FUN_11068020::FUN_11068020(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_11068020::FUN_11068020(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -51205,7 +51237,7 @@ undefined4 * Recovered_FUN_11068020::FUN_11068020(undefined4 *param_2,SCStr *par
 // Reference entry 110680a0; body size 103 bytes.
 #line 1 "ENTRY_110680a0"
 
-undefined4 * Recovered_FUN_110680a0::FUN_110680a0(undefined4 *param_2,SCStr *param_3)
+undefined4 * Recovered_110680a0::FUN_110680a0(undefined4 *param_2,SCStr *param_3)
 
 {
   int * param_1 = (int *)this;
@@ -51237,7 +51269,7 @@ undefined4 * Recovered_FUN_110680a0::FUN_110680a0(undefined4 *param_2,SCStr *par
 // Reference entry 110681f0; body size 69 bytes.
 #line 1 "ENTRY_110681f0"
 
-void Recovered_FUN_110681f0::FUN_110681f0(SCStr *param_2,SCStr *param_3)
+void Recovered_110681f0::FUN_110681f0(SCStr *param_2,SCStr *param_3)
 
 {
   int param_1 = (int)this;
