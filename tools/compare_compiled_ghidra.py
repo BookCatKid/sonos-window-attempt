@@ -115,10 +115,13 @@ def compare_directory(directory, reference, image_base, pe_sections, object_path
             fixed_positions = [i for i in range(compared) if i not in relocated]
             fixed_matches = sum(expected[i] == candidate[i] for i in fixed_positions)
             exact = bool(expected) and candidate == expected and not relocs
+            same_length_fixed_match = (bool(expected) and len(candidate) == len(expected)
+                                       and fixed_matches == len(fixed_positions))
             rows.append({'entry': entry, 'name': row['name'],
                          'reference_bytes': len(expected), 'compiled_bytes': len(candidate),
                          'relocations': len(relocs), 'fixed_compared': len(fixed_positions),
-                         'fixed_matching': fixed_matches, 'exact': exact})
+                         'fixed_matching': fixed_matches, 'exact': exact,
+                         'same_length_fixed_match': same_length_fixed_match})
     return rows
 
 
@@ -144,10 +147,14 @@ def main():
         unique.update((row['entry'], row) for row in rows)
     rows = list(unique.values())
     exact = [row for row in rows if row['exact']]
+    fixed_match = [row for row in rows if row['same_length_fixed_match']]
     summary = {
         'object_compiled_functions': len(rows),
         'exact_function_bodies_without_relocations': len(exact),
         'exact_reference_body_bytes': sum(row['reference_bytes'] for row in exact),
+        'same_length_fixed_byte_matches_pending_relocation': len(fixed_match),
+        'same_length_fixed_match_reference_body_bytes': sum(
+            row['reference_bytes'] for row in fixed_match),
         'same_length_function_bodies': sum(row['compiled_bytes'] == row['reference_bytes'] for row in rows),
         'functions_without_mapped_object_symbol': sum(row['compiled_bytes'] == 0 for row in rows),
         'functions_with_relocations': sum(row['relocations'] > 0 for row in rows),

@@ -168,6 +168,11 @@ compile but differ. Compare the downloaded object with
 `python3 tools/compare_compiled_ghidra.py analysis/compiled-cpp-communication-thunk --object ci-output/msvc-ghidra-comm/ghidra_communication.obj`.
 `src/ref_wrapper_ctor.cpp` is a typed C++ candidate for a 41-byte body repeated
 520 times; `tools/compare_ref_wrapper.py` checks its object bytes.
+The [typed `SCStr` MSVC run](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36526232383)
+compiled 2,306 recovered C++ functions. Of those, 156 have the reference body
+length and all non-relocation bytes equal, totaling 9,655 reference body bytes.
+No function in this batch is fully verified byte-identical until its object
+relocations are resolved in a linked build.
 
 The full-DLL comparison command requires complete identity by default; pass
 `--threshold 95` to check the documented aligned-byte and per-section target.
