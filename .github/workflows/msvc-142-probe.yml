@@ -68,6 +68,9 @@ jobs:
           name: msvc-14-28-x86-objects
           path: |
             out/*.obj
+            out/*.dll
+            out/*.map
+            out/*.pdb
             out/toolchain.txt
             out/*.log
           if-no-files-found: warn

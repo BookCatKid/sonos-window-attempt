@@ -54,6 +54,7 @@ THISCALL = re.compile(
     r'(?P<result>[^\n]+?)\s+__thiscall\s+(?P<name>(?:thunk_)?FUN_[0-9a-f]{8})'
     r'\((?P<parameters>[^)]*)\)')
 RAW_ADDREF = re.compile(r'\(\*\*\(code \*\*\)\(\*param_1 \+ 4\)\)\(\);')
+QUERY_NAME = re.compile(r'\(param_3\)->operator==\("([^"\\]*)"\)')
 
 
 def call_end(source, opening):
@@ -132,9 +133,28 @@ def restore_pointer_width_casts(source):
 
 
 def restore_query_addref(source, body_bytes):
-    """Recover the receiver of the repeated 103-byte interface query family."""
-    if body_bytes == 103 and len(RAW_ADDREF.findall(source)) == 2 and 'operator==' in source:
-        source = RAW_ADDREF.sub('((RefCounted *)param_1)->AddRef();', source)
+    """Recover the early-return source shape of repeated interface queries."""
+    if body_bytes != 103 or len(RAW_ADDREF.findall(source)) != 2:
+        return source
+    names = QUERY_NAME.findall(source)
+    if len(names) != 2 or names[1] != 'SCIObj':
+        return source
+    header = source[:source.index('{')].strip()
+    if not re.fullmatch(
+            r'undefined4 \* __thiscall FUN_[0-9a-f]{8}\('
+            r'int \*param_1,undefined4 \*param_2,SCStr \*param_3\)', header):
+        return source
+    branch = '''
+    *param_2 = (undefined4)param_1;
+    if (param_1 != (int *)0) {
+      ((RefCounted *)param_1)->AddRef();
+    }
+    return param_2;
+'''
+    source = (f'{header}\n{{\n'
+              f'  if (param_3->operator==("{names[0]}")) {{{branch}  }}\n'
+              f'  if (param_3->operator==("SCIObj")) {{{branch}  }}\n'
+              f'  *param_2 = 0;\n  return param_2;\n}}\n')
     return source
 
 

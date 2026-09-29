@@ -35,8 +35,10 @@ cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\scstr_recovered.obj src\generated
 if errorlevel 1 goto failed
 cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\query_family_candidate.obj src\generated\query_family_candidate.cpp > out\query_family_candidate.log 2>&1
 if errorlevel 1 goto failed
+link /nologo /DLL /MACHINE:X86 /NOENTRY /DEBUG /INCREMENTAL /DYNAMICBASE /NXCOMPAT /BASE:0x10000000 /ALIGN:4096 /FILEALIGN:512 /MAP:out\wrapper_link_probe.map /OUT:out\wrapper_link_probe.dll out\ref_wrapper_ctor.obj > out\wrapper_link_probe.log 2>&1
+if errorlevel 1 goto failed
 exit /b 0
 
 :failed
-for %%F in (out\setup.log out\getter.log out\result.log out\factory.log out\factory_frame_pointer.log out\factory_lifetime.log out\factory_owner.log out\leaf_true.log out\leaf_false.log out\leaf_self.log out\ghidra_communication.log out\ref_wrapper_ctor.log out\scstr_recovered.log out\query_family_candidate.log) do if exist %%F for /f "usebackq delims=" %%L in ("%%F") do echo ::error::%%L
+for %%F in (out\setup.log out\getter.log out\result.log out\factory.log out\factory_frame_pointer.log out\factory_lifetime.log out\factory_owner.log out\leaf_true.log out\leaf_false.log out\ghidra_communication.log out\ref_wrapper_ctor.log out\scstr_recovered.log out\query_family_candidate.log out\wrapper_link_probe.log) do if exist %%F for /f "usebackq delims=" %%L in ("%%F") do echo ::error::%%L
 exit /b 1
