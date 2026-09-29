@@ -30,3 +30,14 @@ The combined MSVC audit in `analysis/recovery-coverage-msvc.json` reports 152,76
 ## ABI recovery evidence
 
 The offline export at `analysis/all-recovered-signatures.jsonl` contains 302,450 signatures with parameter and pointee sizes where available. Only 961 have parameters, and 301,436 have unknown calling conventions. These saved prototypes alone cannot replace generic calls across the corpus. The next ABI recovery pass must use the inferred headers from the existing decompiler output, with saved type metadata as supporting evidence. The enhanced exporter accepts `--project-dir` and `--namespace '*'` without launching Sonos.
+
+
+## Inferred call ABI tranche
+
+Commit `763c707` adds `tools/recovered_call_abi.py` and `tools/compile_typed_ghidra_cpp.py`. The call resolver parses the inferred C headers already present in the decompilation corpus and follows the actual reference jump chains before selecting a callee prototype. Primitive values and opaque pointers are admitted; unknown by-value class layouts are excluded. Genuine synthetic C++ member declarations preserve thiscall receivers in ECX. Separate typed call aliases let unsupported calls retain their earlier provisional declarations without conflicting with typed declarations elsewhere in a translation unit.
+
+Local syntax/object gates accept 1,971 native functions / 137,738 reference bytes with 3,213 typed call sites, plus 70 SCStr functions / 8,257 bytes with 111 typed call sites. The generated variants are `src/generated/native_typed.cpp` and `src/generated/scstr_typed.cpp`. The existing matching source variants remain available.
+
+Pinned MSVC 14.28 run https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36624965852 succeeded. Both native compiler flag variants verify 497 exact bodies / 19,821 bytes after relocation resolution; the SCStr variant verifies six / 621 bytes. After removing overlap with prior matching variants, this adds 359 functions / 13,978 distinct reference bytes.
+
+The updated authoritative MSVC audit is `analysis/recovery-coverage-msvc-typed.json`: 153,124 distinct matching bodies / 972,083 distinct reference bytes, or 3.799771% of the executable virtual span. No linked DLL has been verified at 95%. Callers still need more recovery where arguments are implicit in registers, inferred prototypes disagree with caller use, or EH scaffolding must be expressed through C++ lifetimes. Merely changing declarations cannot repair those source structures.

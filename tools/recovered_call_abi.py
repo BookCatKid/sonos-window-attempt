@@ -1,6 +1,7 @@
 """Recover direct-call prototypes from inferred Ghidra C headers.
 
-Only primitive types and SCStr pointers are admitted. Saved unknown Ghidra
+Only primitive values and pointers are admitted; opaque class pointees do not
+require an invented class layout. Saved unknown Ghidra
 prototypes are not used to guess arguments. Unresolved or inconsistent calls
 keep their existing provisional declarations and remain measurable separately.
 """
