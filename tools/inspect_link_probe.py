@@ -55,7 +55,7 @@ def main():
     bodies = []
     for method, class_name, reference_va, size in BODY_FAMILIES:
         symbol = re.compile(r'\?' + method + '@' + class_name +
-                            r'\S+\s+([0-9a-fA-F]{8})\s+f\s+')
+                            r'@@\S*\s+([0-9a-fA-F]{8})\s+f\s+')
         match = symbol.search(map_text)
         if not match:
             bodies.append({'method': f'{class_name}::{method}', 'present': False})

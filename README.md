@@ -239,6 +239,15 @@ reproduces the linked function, export, relocation, and aligned file metrics
 together. Pass `--threshold 95` to make the aligned whole-file score a failing
 gate for the final target.
 
+The [cleanup family run](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36586250013)
+adds 191 individually compiled and linked C++ cleanup functions, all exact
+against their native bodies (6,824 reference bytes). The combined probe now
+covers **1,035 unique exact linked reference functions / 25,457 body bytes**.
+Its 633 query/equality functions still match all 55,054 fixed bytes and all
+2,529 relocation targets, while the whole-file aligned score is **7,201 /
+37,153,792 bytes (0.019382%)**. `tools/inspect_combined_probe.py` reproduces
+these measurements from the downloaded run artifact.
+
 The full-DLL comparison command requires complete identity by default; pass
 `--threshold 95` to check the documented aligned-byte and per-section target.
 The reference DLL is
