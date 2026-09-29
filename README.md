@@ -114,6 +114,8 @@ are checked in under `src/generated/` for the pinned compiler probe. The
 `SCStr` declarations remain provisional, and these objects have no exact body
 matches under local Clang. The other bulk generated C++ remains local under
 `analysis/` until its placeholder types and call declarations have been reviewed.
+Three additional readable communication C++ candidates and their current byte
+comparison results are recorded in [communication-candidate-status.md](docs/communication-candidate-status.md).
 
 Regenerate the typed batch from the completed local exports with:
 
