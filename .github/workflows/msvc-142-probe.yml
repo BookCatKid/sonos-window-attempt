@@ -7,6 +7,8 @@ on:
     paths:
       - src/**
       - tools/build_probe.cmd
+      - tools/build_flag_sweep.cmd
+      - tools/msvc_flag_sweep.json
       - .github/workflows/msvc-142-probe.yml
 
 jobs:

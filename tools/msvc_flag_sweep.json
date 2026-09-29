@@ -1,0 +1,81 @@
+{
+  "profiles": [
+    {
+      "name": "o1",
+      "flags": [
+        "/O1"
+      ]
+    },
+    {
+      "name": "o2_oy_off",
+      "flags": [
+        "/O2",
+        "/Oy-"
+      ]
+    },
+    {
+      "name": "o2_ob0",
+      "flags": [
+        "/O2",
+        "/Ob0"
+      ]
+    },
+    {
+      "name": "o2_ob1",
+      "flags": [
+        "/O2",
+        "/Ob1"
+      ]
+    },
+    {
+      "name": "o2_oi_off",
+      "flags": [
+        "/O2",
+        "/Oi-"
+      ]
+    },
+    {
+      "name": "o2_ia32",
+      "flags": [
+        "/O2",
+        "/arch:IA32"
+      ]
+    },
+    {
+      "name": "od",
+      "flags": [
+        "/Od",
+        "/Oy-"
+      ]
+    },
+    {
+      "name": "o2_os",
+      "flags": [
+        "/O2",
+        "/Os"
+      ]
+    }
+  ],
+  "families": [
+    {
+      "name": "native_typed",
+      "source": "src/generated/native_typed.cpp",
+      "comparison_directory": "analysis/compiled-cpp-native-typed"
+    },
+    {
+      "name": "recovered_thunks",
+      "source": "src/generated/recovered_thunks.cpp",
+      "comparison_directory": "analysis/compiled-cpp-recovered-thunks-expanded"
+    },
+    {
+      "name": "scstr_expanded",
+      "source": "src/generated/scstr_expanded.cpp",
+      "comparison_directory": "analysis/compiled-cpp-scstr-expanded"
+    },
+    {
+      "name": "recovered_vftables",
+      "source": "src/generated/recovered_vftables.cpp",
+      "comparison_directory": "analysis/compiled-cpp-vftables"
+    }
+  ]
+}

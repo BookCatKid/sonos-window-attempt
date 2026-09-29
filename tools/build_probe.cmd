@@ -9,6 +9,9 @@ cl /Bv > out\toolchain.txt 2>&1
 where cl >> out\toolchain.txt
 where link >> out\toolchain.txt
 
+call tools\build_flag_sweep.cmd
+if errorlevel 1 goto failed
+
 for %%F in (src\generated\direct_jumps\direct_jump_*.cpp) do (
   cl /nologo /O2 /Gy /bigobj /c /Foout\%%~nF.obj %%F > out\%%~nF.log 2>&1
   if errorlevel 1 goto failed
