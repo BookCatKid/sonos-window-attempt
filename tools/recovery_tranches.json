@@ -1,0 +1,26 @@
+[
+  {
+    "object": "native_virtual_slots_o2",
+    "directory": "analysis/compiled-cpp-native-virtual-slots"
+  },
+  {
+    "object": "scstr_virtual_slots_o2",
+    "directory": "analysis/compiled-cpp-scstr-virtual-slots"
+  },
+  {
+    "object": "native_typed_expanded_o2",
+    "directory": "analysis/compiled-cpp-native-typed-expanded"
+  },
+  {
+    "object": "native_typed_expanded_reference_flags",
+    "directory": "analysis/compiled-cpp-native-typed-expanded"
+  },
+  {
+    "object": "noexcept_cleanup_reference_flags",
+    "directory": "analysis/compiled-cpp-noexcept-cleanup"
+  },
+  {
+    "object": "noexcept_cleanup_frame_pointer",
+    "directory": "analysis/compiled-cpp-noexcept-cleanup"
+  }
+]

@@ -69,3 +69,10 @@ The new `--virtual-zero-arg-calls` probes integer-result virtual dispatch at rec
 `tools/compile_noexcept_cleanup_cpp.py` admits a strict cleanup family only when the independently decoded reference EH table has one state and its action is the imported `__std_terminate` jump. Every SCStr release must immediately activate that state; the sized-delete call is declared noexcept. The recovered third delete argument is removed only when it is the explicit security-cookie local, which the reference call sites do not push. Compiler-owned FS registration, state storage, and security cookies are replaced with C++ `noexcept` and `/EHsc /GS`, rather than dropping exception behavior. Other calls, multi-state cleanup, and unexplained residual frame variables are excluded.
 
 The initial local gate compiles 145 functions / 14,116 reference bytes. Its body comparison is not an exception-metadata verification and contributes nothing to the authoritative coverage until pinned compiler output and EH placement are verified. The source is `src/generated/noexcept_cleanup.cpp`, and the reference handler/metadata inventory is `analysis/compiled-cpp-noexcept-cleanup/reference-eh-inventory.json`.
+
+
+Pinned broader build https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36629858677 succeeded. The expanded native call batch compiles 2,941 functions / 287,027 reference bytes; both MSVC flag variants verify 753 bodies / 34,390 bytes. The broader native virtual-slot object verifies 4,032 bodies / 179,356 bytes; the SCStr virtual-slot object verifies 17 bodies / 1,479 bytes.
+
+The batch comparator `tools/compare_recovery_tranches.py` loads the reference/symbols once, verifies the baseline DLL hash, records object/index hashes, writes per-object reports, and re-audits distinct coverage without double counting. Its manifest is `tools/recovery_tranches.json`. Reports and audit for this run are in `analysis/recovery-msvc-expanded`.
+
+This build adds 1,834 distinct exact bodies / 115,449 bytes. The cumulative verified union is 158,033 bodies / 1,172,020 bytes (4.581304% of executable virtual span). The rebuilt linked-DLL 95% requirement remains unachieved.
