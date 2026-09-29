@@ -36,7 +36,8 @@ public class PropagateCallSignatures extends GhidraScript {
     }
     @Override public void run() throws Exception {
         String[] args=getScriptArgs();
-        if (args.length!=3) throw new IllegalArgumentException("Usage: callers.txt callees.txt output_directory");
+        if (args.length!=3 && args.length!=4) throw new IllegalArgumentException("Usage: callers.txt callees.txt output_directory [use_data_types]");
+        boolean useDataTypes=args.length==3 || Boolean.parseBoolean(args[3]);
         List<String> callers=Files.readAllLines(Path.of(args[0]));
         List<String> callees=Files.readAllLines(Path.of(args[1]));
         Path out=Path.of(args[2]); Files.createDirectories(out);
@@ -77,7 +78,7 @@ public class PropagateCallSignatures extends GhidraScript {
                     item.put("inferred_parameters",result.getHighFunction().getFunctionPrototype().getNumParams());
                     int tx=currentProgram.startTransaction("Inferred callee parameters"); boolean ok=false;
                     try {
-                        HighFunctionDBUtil.commitParamsToDatabase(result.getHighFunction(),true,
+                        HighFunctionDBUtil.commitParamsToDatabase(result.getHighFunction(),useDataTypes,
                             HighFunctionDBUtil.ReturnCommitOption.COMMIT,SourceType.ANALYSIS);
                         item.put("after",f.getSignature().getPrototypeString());item.put("status","committed");
                         ok=true; committed++;

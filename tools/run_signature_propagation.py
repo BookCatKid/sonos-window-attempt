@@ -11,6 +11,8 @@ def main():
     p.add_argument('--callers',type=Path,required=True)
     p.add_argument('--callees',type=Path,required=True)
     p.add_argument('--output-dir',type=Path,required=True)
+    p.add_argument('--storage-only',action='store_true',
+                   help='Commit inferred parameter storage/widths without speculative pointee datatypes')
     a=p.parse_args();project=a.project_dir.resolve()
     originals={ROOT/'analysis/ghidra',ROOT/'analysis/thunk-recovery-full/ghidra'}
     if project in originals:p.error('Signature inference modifies its database; use an isolated project copy')
@@ -19,7 +21,8 @@ def main():
     out=a.output_dir.resolve();out.mkdir(parents=True,exist_ok=True)
     command=[str(GHIDRA),str(project),'WindowAttempt','-process','sclib-csharp.dll','-noanalysis',
              '-scriptPath',str(ROOT/'tools/ghidra'),'-postScript','PropagateCallSignatures.java',
-             str(a.callers.resolve()),str(a.callees.resolve()),str(out),'-log',str(out/'headless.log')]
+             str(a.callers.resolve()),str(a.callees.resolve()),str(out),
+             str(not a.storage_only).lower(),'-log',str(out/'headless.log')]
     with (out/'console.log').open('w') as log:
         result=subprocess.run(command,stdout=log,stderr=subprocess.STDOUT)
     if result.returncode:raise SystemExit(f'Ghidra failed; see {out / "console.log"}')
