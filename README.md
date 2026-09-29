@@ -95,6 +95,11 @@ compilation percentage is distinct from Ghidra pseudocode coverage and from
 byte-identical code generation. These objects have not been linked into the
 target DLL.
 
+The selected communication source is checked in at
+`src/generated/communication.cpp` so the pinned MSVC GitHub Actions build can
+test it. The bulk generated C++ remains local under `analysis/` until its
+placeholder types and call declarations have been reviewed.
+
 ```sh
 # Export the remaining functions smaller than 64 bytes, including thunks.
 python3 tools/run_bulk_decomp.py --max-size 64 --include-thunks --output-dir analysis/bulk-small

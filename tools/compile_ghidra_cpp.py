@@ -132,7 +132,7 @@ def main():
     source = output / 'ghidra_recovered.cpp'
     source.write_text(cpp_source(successes))
     obj = output / 'ghidra_recovered.obj'
-    result = subprocess.run([str(COMPILER), '/nologo', '/c',
+    result = subprocess.run([str(COMPILER), '/nologo', '/O2', '/c',
                              '/clang:--target=i686-pc-windows-msvc',
                              f'/Fo{obj}', os.path.relpath(source, ROOT)],
                             cwd=ROOT, capture_output=True, text=True)
@@ -163,6 +163,7 @@ def main():
         'non_glue_body_byte_compilation_percent': round(100 * sum(r['body_bytes'] for r in successes) / non_glue_bytes, 4) if non_glue_bytes else None,
         'object_bytes': obj.stat().st_size,
         'compiler': str(COMPILER),
+        'object_compile_flags': ['/O2', '/c'],
         'target': 'i686-pc-windows-msvc',
         'scope': 'Independent x86 C++ object compilation; no instruction comparison or link',
     }
