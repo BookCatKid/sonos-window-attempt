@@ -383,7 +383,11 @@ def cpp_source(records):
     if virtual_slots:
         virtual_class = ('struct RecoveredVirtualSlots {\n' + '\n'.join(
             f'  virtual int VirtualSlot{slot}();' for slot in range(max(virtual_slots)+1)) + '\n};\n')
-    return HEADER + DECLARATION_ALIASES + SCSTR + virtual_class + declarations + '\n' + member_declarations + '\n' + functions
+    scstr_class = SCSTR
+    if any(r.get('inline_scstr_cleanup') for r in records):
+        scstr_class = SCSTR.replace('    ~SCStr();',
+            '    ~SCStr() noexcept { int_release(); rep = 0; }')
+    return HEADER + DECLARATION_ALIASES + scstr_class + virtual_class + declarations + '\n' + member_declarations + '\n' + functions
 
 
 def syntax(records, scratch):

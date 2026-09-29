@@ -14,7 +14,23 @@ from compile_scstr_cpp import (normalize_definition,rewrite_calls,restore_scstr_
 
 DELETE='thunk_FUN_1148a50e'
 
-def lower(record,evidence):
+def inline_cleanup_destructors(source):
+    """Recover an inlined SCStr destructor from release plus zero-rep stores."""
+    def address(text):
+        text=re.sub(r'\((?:SCStr|undefined4)\s*\*\)', '', text)
+        text=re.sub(r'([A-Za-z_]\w*)\[([^\]]+)\]',r'\1+\2',text)
+        return re.sub(r'[\s()]','',text).lstrip('*')
+    for match in reversed(list(re.finditer(r'SCStr::int_release\s*\(',source))):
+        end=call_end(source,match.end()-1)
+        receiver=source[match.end():end].strip()
+        zero=re.match(r';\s*([^;]+?)\s*=\s*0\s*;',source[end+1:])
+        if not zero or address(receiver)!=address(zero.group(1)):return None
+        source=(source[:match.start()]+f'({receiver})->~SCStr();'+
+                source[end+1+zero.end():])
+    return source
+
+
+def lower(record,evidence,inline_destructor=False):
     m=evidence['metadata']
     if record['body_bytes']<=5 or m['state_count']!=1 or m['actions'][0]['action']!='1148cdcf':return None
     s=normalize_definition(record)
@@ -46,19 +62,24 @@ def lower(record,evidence):
              r'local_8 = (?:0|0xffffffff);']
     for pattern in removal:s=re.sub(r'(?m)^\s*'+pattern,'',s)
     if re.search(r'\b(?:ExceptionList|local_8|local_10|puStack_c|LAB_|stack0x)',s):return None
-    head,sep,body=s.partition('{')
-    s=head.rstrip()+' noexcept\n'+sep+body
+    if inline_destructor:
+        s=inline_cleanup_destructors(s)
+        if s is None:return None
+    else:
+        head,sep,body=s.partition('{')
+        s=head.rstrip()+' noexcept\n'+sep+body
     s,offsets=restore_scstr_byte_offsets(s)
-    s=rewrite_calls(s)
+    s=rewrite_calls(s) if not inline_destructor else s
     if s is None:return None
     s=width_preserving_pointer_casts(restore_pointer_width_casts(s))
     if not eligible(s):return None
-    return {**record,'source':s,'byte_offset_sites':offsets,'abi_declarations':{
+    return {**record,'source':s,'byte_offset_sites':offsets,'inline_scstr_cleanup':inline_destructor,'abi_declarations':{
         DELETE:f'extern void {DELETE}(void *allocation, unsigned int bytes) noexcept;'},
         'reference_handler':evidence['handler'],'reference_metadata':m['address']}
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('exports',nargs='+',type=Path)
+    p.add_argument('--inline-destructor',action='store_true',help='Recover noexcept SCStr destructor inlining inside the original caller')
     p.add_argument('--evidence',type=Path,default=ROOT/'analysis/eh-lifetime-evidence.jsonl')
     p.add_argument('--output-dir',type=Path,default=ROOT/'analysis/compiled-cpp-noexcept-cleanup')
     p.add_argument('--emit-source',type=Path,default=ROOT/'src/generated/noexcept_cleanup.cpp')
@@ -67,7 +88,7 @@ def main():
     for line in a.evidence.open():
         e=json.loads(line)
         if e['entry'] in records:
-            r=lower(records[e['entry']],e)
+            r=lower(records[e['entry']],e,a.inline_destructor)
             if r:candidates.append(r)
     out=a.output_dir;out.mkdir(parents=True,exist_ok=True);accepted=[];failures=[];scratch=out/'.syntax-probe.cpp'
     print('Candidates:',len(candidates),flush=True)

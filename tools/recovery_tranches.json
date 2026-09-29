@@ -22,5 +22,9 @@
   {
     "object": "noexcept_cleanup_frame_pointer",
     "directory": "analysis/compiled-cpp-noexcept-cleanup"
+  },
+  {
+    "object": "inline_cleanup_reference_flags",
+    "directory": "analysis/compiled-cpp-inline-cleanup"
   }
 ]
