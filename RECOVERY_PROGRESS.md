@@ -62,3 +62,10 @@ After deduplication, the offset variants add 13 functions / 772 bytes. Audit `an
 The new `--virtual-zero-arg-calls` probes integer-result virtual dispatch at recovered byte offsets, including slot zero and calls whose return value is used. Slot declarations are ordinary C++ virtual methods; argument-bearing calls are left unchanged. The local native gate accepts 5,739 functions / 282,953 reference bytes with 8,645 restored receiver sites; the SCStr gate accepts 248 functions / 26,096 bytes with 434 sites. Byte matching awaits the next pinned build.
 
 `--expanded-eligibility` admits supported global references and typed direct calls in native bodies, using the existing global and vtable declarations. Explicit character-pointer casts preserve local byte-pointer signedness when separate functions infer different types for one global. Exception-frame and unsupported macro lowering remain excluded; they require compiler-generated C++ lifetimes rather than deleting EH behavior.
+
+
+## Compiler-generated terminate handling probe
+
+`tools/compile_noexcept_cleanup_cpp.py` admits a strict cleanup family only when the independently decoded reference EH table has one state and its action is the imported `__std_terminate` jump. Every SCStr release must immediately activate that state; the sized-delete call is declared noexcept. The recovered third delete argument is removed only when it is the explicit security-cookie local, which the reference call sites do not push. Compiler-owned FS registration, state storage, and security cookies are replaced with C++ `noexcept` and `/EHsc /GS`, rather than dropping exception behavior. Other calls, multi-state cleanup, and unexplained residual frame variables are excluded.
+
+The initial local gate compiles 145 functions / 14,116 reference bytes. Its body comparison is not an exception-metadata verification and contributes nothing to the authoritative coverage until pinned compiler output and EH placement are verified. The source is `src/generated/noexcept_cleanup.cpp`, and the reference handler/metadata inventory is `analysis/compiled-cpp-noexcept-cleanup/reference-eh-inventory.json`.

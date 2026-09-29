@@ -333,8 +333,9 @@ def make_msvc_member(source, entry):
     class_name = 'Recovered_' + entry
     method_name = 'FUN_' + entry
     result_type = match.group('result').strip()
+    suffix = ' noexcept' if re.match(r'\s*noexcept\b', source[match.end():]) else ''
     declaration = (f'struct {class_name} {{ '
-                   f'{result_type} {method_name}({rest}); }};')
+                   f'{result_type} {method_name}({rest}){suffix}; }};')
     definition = (f'{result_type} {class_name}::{method_name}({rest})')
     changed = source[:match.start()] + definition + source[match.end():]
     opening = changed.index('{', match.start() + len(definition))

@@ -41,6 +41,10 @@ cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\ghidra_communication.obj src\gene
 if errorlevel 1 goto failed
 cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\ref_wrapper_ctor.obj src\ref_wrapper_ctor.cpp > out\ref_wrapper_ctor.log 2>&1
 if errorlevel 1 goto failed
+cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\noexcept_cleanup_reference_flags.obj src\generated\noexcept_cleanup.cpp > out\noexcept_cleanup_reference_flags.log 2>&1
+if errorlevel 1 goto failed
+cl /nologo /O2 /bigobj /Oy- /MD /GS /GR /EHsc /Zi /c /Foout\noexcept_cleanup_frame_pointer.obj src\generated\noexcept_cleanup.cpp > out\noexcept_cleanup_frame_pointer.log 2>&1
+if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /c /Foout\native_typed_expanded_o2.obj src\generated\native_typed_expanded.cpp > out\native_typed_expanded_o2.log 2>&1
 if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\native_typed_expanded_reference_flags.obj src\generated\native_typed_expanded.cpp > out\native_typed_expanded_reference_flags.log 2>&1
@@ -139,6 +143,7 @@ if errorlevel 1 goto failed
 exit /b 0
 
 :failed
+for %%F in (out\noexcept_cleanup*.log) do if exist %%F type %%F
 for %%F in (out\scstr_virtual_slots*.log) do if exist %%F type %%F
 for %%F in (out\scstr_byte*.log) do if exist %%F type %%F
 for %%F in (out\native_virtual*.log out\scstr_virtual*.log) do if exist %%F type %%F
