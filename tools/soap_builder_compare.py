@@ -149,11 +149,11 @@ def coff_object_bytes(data):
     return bytes(code), applied, unresolved
 
 
-def compile_candidate(compiler, output):
+def compile_candidate(compiler, output, extra_flags=()):
     command = [
         compiler,
         "/clang:--target=i686-pc-windows-msvc",
-        "/O2", "/c", "/GS-", "/GR-", "/EHs-",
+        "/O2", *extra_flags, "/c", "/GS-", "/GR-", "/EHs-",
         f"/Fo:{output}", "--", str(SOURCE),
     ]
     subprocess.run(command, check=True)
