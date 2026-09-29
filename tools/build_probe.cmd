@@ -49,8 +49,6 @@ cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\single_state_guards_refer
 if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\multistate_terminate_guards_reference_flags.obj src\generated\multistate_terminate_guards.cpp > out\multistate_terminate_guards_reference_flags.log 2>&1
 if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\multistate_terminate_members_reference_flags.obj src\generated\multistate_terminate_members.cpp > out\multistate_terminate_members_reference_flags.log 2>&1
-if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\inline_cleanup_reference_flags.obj src\generated\inline_cleanup.cpp > out\inline_cleanup_reference_flags.log 2>&1
 if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\noexcept_cleanup_reference_flags.obj src\generated\noexcept_cleanup.cpp > out\noexcept_cleanup_reference_flags.log 2>&1
@@ -159,7 +157,6 @@ for %%F in (out\signature_pilot*.log) do if exist %%F type %%F
 for %%F in (out\signature_ret_pilot*.log) do if exist %%F type %%F
 for %%F in (out\single_state_guards*.log) do if exist %%F type %%F
 for %%F in (out\multistate_terminate_guards*.log) do if exist %%F type %%F
-for %%F in (out\multistate_terminate_members*.log) do if exist %%F type %%F
 for %%F in (out\inline_cleanup*.log) do if exist %%F type %%F
 for %%F in (out\noexcept_cleanup*.log) do if exist %%F type %%F
 for %%F in (out\scstr_virtual_slots*.log) do if exist %%F type %%F
