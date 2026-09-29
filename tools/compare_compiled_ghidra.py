@@ -10,7 +10,7 @@ import csv
 import json
 import re
 import struct
-from collections import defaultdict
+from collections import defaultdict, ChainMap
 from pathlib import Path
 
 from capstone import Cs, CS_ARCH_X86, CS_MODE_32
@@ -171,6 +171,38 @@ def load_symbol_vas(path):
     return {name: sorted(addresses) for name, addresses in result.items()}
 
 
+def scstr_abi_key(name):
+    """Ignore access control and pointee constness; retain overload/calling ABI."""
+    if '@SCStr@@' not in name:
+        return name
+    name = re.sub(r'(@SCStr@@)[AQI]', r'\1Q', name, count=1)
+    return name.replace('PBD', 'PAD')
+
+
+def add_scstr_export_targets(symbol_vas, reference, image_base, pe_sections):
+    """Resolve exported SCStr signatures through reference incremental-link jumps."""
+    path = DEFAULT_SYMBOLS.parents[1] / 'exports.csv'
+    if not path.is_file():
+        return
+    with path.open(newline='') as file:
+        for row in csv.DictReader(file):
+            name = row['name']
+            if '@SCStr@@' not in name:
+                continue
+            targets = set(symbol_vas.get(scstr_abi_key(name), []))
+            address = int(row['address'])
+            for _ in range(16):
+                if address in targets:
+                    break
+                targets.add(address)
+                code = function_bytes(reference, address, 5, image_base, pe_sections)
+                if len(code) != 5 or code[0] != 0xe9:
+                    break
+                address += 5 + struct.unpack_from('<i', code, 1)[0]
+            symbol_vas[scstr_abi_key(name)] = sorted(targets)
+
+
+
 def relocation_value(reloc_type, target_va, addend, entry_va, offset, image_base):
     if reloc_type == 0x0006:  # IMAGE_REL_I386_DIR32
         return target_va + addend
@@ -196,7 +228,8 @@ def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base,
         if offset < 0 or offset + 4 > len(patched):
             unresolved += 1
             continue
-        logical_name = generated_symbol_name(reloc['symbol'])
+        logical_name = (generated_symbol_name(reloc['symbol']) or
+                        scstr_abi_key(reloc['symbol']))
         if logical_name is None:
             unresolved += 1
             continue
@@ -234,6 +267,17 @@ def compare_directory(directory, reference, image_base, pe_sections, symbol_vas,
     sections, symbols, symbols_by_index = read_coff(
         object_path or directory / 'ghidra_recovered.obj')
     compiled = function_symbols(sections, symbols, symbols_by_index)
+    # String contents independently establish whether a reference data address
+    # can be used for this literal. This is a placement constraint for linking.
+    literals = {}
+    for symbol in symbols:
+        if not symbol['name'].startswith('??_C@_0') or not 0 < symbol['section'] <= len(sections):
+            continue
+        section = sections[symbol['section'] - 1]
+        start = symbol['offset']
+        end = section['code'].find(b'\0', start)
+        if end >= start and not any(start <= r['offset'] <= end for r in section['relocations']):
+            literals[symbol['name']] = section['code'][start:end + 1]
     rows = []
     with (directory / 'compiled-index.tsv').open(newline='') as file:
         for row in csv.DictReader(file, delimiter='\t'):
@@ -247,8 +291,19 @@ def compare_directory(directory, reference, image_base, pe_sections, symbol_vas,
             fixed_positions = [i for i in range(compared) if i not in relocated]
             fixed_matches = sum(expected[i] == candidate[i] for i in fixed_positions)
             exact = bool(expected) and candidate == expected and not relocs
+            targets_for_function = ChainMap({}, symbol_vas)
+            for reloc in relocs:
+                literal = literals.get(reloc['symbol'])
+                offset = reloc['offset']
+                if (not literal or reloc['type'] != 0x6 or offset < 0 or
+                        offset + 4 > min(len(expected), len(candidate))):
+                    continue
+                target = u32(expected, offset)
+                if function_bytes(reference, target, len(literal), image_base, pe_sections) == literal:
+                    targets_for_function.maps[0].setdefault(reloc['symbol'], []).append(
+                        target - u32(candidate, offset))
             resolved_candidate, resolved_relocs, unresolved_relocs = resolve_known_relocations(
-                candidate, expected, relocs, int(entry, 16), image_base, symbol_vas)
+                candidate, expected, relocs, int(entry, 16), image_base, targets_for_function)
             relocation_exact = (bool(expected) and resolved_candidate == expected
                                 and unresolved_relocs == 0)
             same_length_fixed_match = (bool(expected) and len(candidate) == len(expected)
@@ -278,6 +333,7 @@ def main():
     reference = DLL.read_bytes()
     image_base, pe_sections = section_map(reference)
     symbol_vas = load_symbol_vas(args.symbols)
+    add_scstr_export_targets(symbol_vas, reference, image_base, pe_sections)
     unique = {}
     for directory in args.output_dirs:
         rows = compare_directory(directory, reference, image_base, pe_sections,
