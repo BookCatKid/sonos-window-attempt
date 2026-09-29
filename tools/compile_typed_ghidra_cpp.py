@@ -7,13 +7,14 @@ import os
 import subprocess
 from pathlib import Path
 from compile_ghidra_cpp import ROOT, COMPILER, load_records, eligible, width_preserving_pointer_casts, msvc_compatible_labels
-from compile_scstr_cpp import cpp_source, split_valid, normalize_definition
+from compile_scstr_cpp import cpp_source, split_valid, normalize_definition, restore_virtual_refcount_calls
 from recovered_call_abi import CallABI
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('exports', nargs='+', type=Path)
+    parser.add_argument('--virtual-refcount-calls', action='store_true')
     parser.add_argument('--output-dir', type=Path, default=ROOT / 'analysis/compiled-cpp-native-typed')
     parser.add_argument('--emit-source', type=Path, default=ROOT / 'src/generated/native_typed.cpp')
     parser.add_argument('--emit-index', type=Path, default=ROOT / 'src/generated/native-typed-index.tsv')
@@ -27,10 +28,15 @@ def main():
         if record['body_bytes'] <= 5 or not eligible(source):
             continue
         source = msvc_compatible_labels(width_preserving_pointer_casts(source))
+        virtual_count = 0
+        if args.virtual_refcount_calls:
+            source, virtual_count = restore_virtual_refcount_calls(source)
+            if not virtual_count:
+                continue
         source, declarations, changed = abi.lower(source)
-        if source is not None and changed:
+        if source is not None and changed + virtual_count:
             candidates.append({**record, 'source': source, 'abi_declarations': declarations,
-                               'typed_calls': changed})
+                               'typed_calls': changed, 'virtual_calls': virtual_count})
     candidates.sort(key=lambda r: r['entry'])
     print(f'Candidates: {len(candidates)} / {sum(r["body_bytes"] for r in candidates)} reference bytes', flush=True)
     failures = []
@@ -58,7 +64,8 @@ def main():
     args.emit_source.write_text(source.read_text())
     args.emit_index.write_text(index.read_text())
     metrics={'compiled_functions':len(accepted),'compiled_reference_body_bytes':sum(r['body_bytes'] for r in accepted),
-             'typed_call_sites':sum(r['typed_calls'] for r in accepted),'syntax_rejected':len(failures),
+             'typed_call_sites':sum(r['typed_calls'] for r in accepted),
+             'virtual_refcount_call_sites':sum(r['virtual_calls'] for r in accepted),'syntax_rejected':len(failures),
              'scope':'Inferred call ABI experiment; byte match requires pinned MSVC comparison'}
     (output/'coverage.json').write_text(json.dumps(metrics,indent=2)+'\n')
     print(json.dumps(metrics,indent=2))

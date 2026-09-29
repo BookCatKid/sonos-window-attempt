@@ -2,6 +2,11 @@ name: MSVC 14.28 x86 probe
 
 on:
   workflow_dispatch:
+    inputs:
+      sweep_flags:
+        description: Run the full compiler settings matrix
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -60,6 +65,8 @@ jobs:
           }
 
       - name: Compile C++ candidates for x86
+        env:
+          SONOS_SWEEP_FLAGS: ${{ github.event.inputs.sweep_flags == 'true' && '1' || '0' }}
         shell: cmd
         run: call tools\build_probe.cmd
 

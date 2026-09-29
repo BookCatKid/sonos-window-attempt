@@ -25,6 +25,7 @@ SCSTR = '''
 struct RefCounted {
     virtual void Reserved();
     virtual void AddRef();
+    virtual void Release();
 };
 
 // Placement construction calls the actual constructor at the recovered receiver.
@@ -88,7 +89,7 @@ PLAIN_CALL = re.compile(r'\b([A-Za-z_]\w*)\s*\(')
 ALLOWED_CALLS = {'if', 'while', 'switch', 'sizeof', 'return', 'int', 'uint',
                  'long', 'short', 'char', 'float', 'double', 'undefined',
                  'undefined1', 'undefined2', 'undefined4', 'undefined8',
-                 'code', 'SCStr', 'operator', 'AddRef', 'new', 'for', 'byte', 'ushort', *SUPPORTED}
+                 'code', 'SCStr', 'operator', 'AddRef', 'Release', 'new', 'for', 'byte', 'ushort', *SUPPORTED}
 THISCALL = re.compile(
     r'(?P<result>[^\n]+?)\s+__thiscall\s+(?P<name>(?:thunk_)?FUN_[0-9a-f]{8})'
     r'\((?P<parameters>[^)]*)\)')
@@ -182,6 +183,31 @@ def rewrite_calls(source):
             replacement = f'({first})->{method}({rest})'
         source = source[:match.start()] + replacement + source[closing + 1:]
     return source
+
+
+def restore_virtual_refcount_calls(source):
+    """Recover implicit this for standalone zero-argument virtual slots 1/2.
+
+    These are provisional Sonos refcount ABI candidates. A byte comparison must
+    establish each resulting function before it can contribute to coverage.
+    Do not reinterpret calls whose result is used, arguments are present, or
+    whose object expression cannot be recovered directly from the vptr load.
+    """
+    count = 0
+    patterns = [
+        (r'(?m)^(\s*)\(\*\*\(code \*\*\)\(\*([A-Za-z_]\w*) \+ '
+         r'(4|8|0x4|0x8)\)\)\(\);', False),
+        (r'(?m)^(\s*)\(\*\*\(code \*\*\)\(\*\(int \*\)\(([^()\n]+)\) \+ '
+         r'(4|8|0x4|0x8)\)\)\(\);', True),
+    ]
+    for pattern, _ in patterns:
+        def replacement(match):
+            nonlocal count
+            count += 1
+            method = 'AddRef' if int(match.group(3), 0) == 4 else 'Release'
+            return f'{match.group(1)}((RefCounted *)({match.group(2)}))->{method}();'
+        source = re.sub(pattern, replacement, source)
+    return source, count
 
 
 def restore_pointer_width_casts(source):
@@ -320,6 +346,8 @@ def main():
     parser.add_argument('exports', nargs='+', type=Path)
     parser.add_argument('--output-dir', type=Path,
                         default=ROOT / 'analysis' / 'compiled-cpp-scstr')
+    parser.add_argument('--virtual-refcount-calls', action='store_true',
+                        help='Restore implicit this for standalone refcount virtual dispatches')
     parser.add_argument('--typed-calls', action='store_true',
                         help='Use inferred headers to recover direct call argument types and conventions')
     parser.add_argument('--emit-source', type=Path)
@@ -345,13 +373,19 @@ def main():
                 rewritten = rewritten.replace(label, f'(undefined4)&{symbol_name(label)}')
             rewritten = msvc_compatible_labels(rewritten)
             rewritten = restore_query_addref(rewritten, record['body_bytes'])
+            virtual_count = 0
+            if args.virtual_refcount_calls:
+                rewritten, virtual_count = restore_virtual_refcount_calls(rewritten)
         if rewritten and eligible(rewritten):
             declarations, changed = {}, 0
             if call_abi:
                 rewritten, declarations, changed = call_abi.lower(rewritten)
-                if rewritten is None or changed == 0:
+                if rewritten is None or changed + virtual_count == 0:
                     continue
+            if args.virtual_refcount_calls and not args.typed_calls and virtual_count == 0:
+                continue
             candidates.append({**record, 'source': rewritten, 'vftables': labels,
+                               'virtual_calls': virtual_count,
                                'abi_declarations': declarations, 'typed_calls': changed})
     candidates.sort(key=lambda r: int(r['entry'], 16))
     print(f'Candidates: {len(candidates)}', flush=True)
@@ -388,6 +422,7 @@ def main():
                       'compiled_reference_body_bytes': sum(r['body_bytes'] for r in accepted),
                       'syntax_rejected': len(failures),
                       'typed_call_sites': sum(r.get('typed_calls', 0) for r in accepted),
+                      'virtual_refcount_call_sites': sum(r.get('virtual_calls', 0) for r in accepted),
                       'object_bytes': obj.stat().st_size,
                       'scope': 'C++ object compilation; byte matching measured separately'}
     (output / 'coverage.json').write_text(json.dumps(metrics, indent=2) + '\n')
