@@ -14,7 +14,12 @@ import re
 import subprocess
 from pathlib import Path
 
-from compile_ghidra_cpp import COMPILER, HEADER, ROOT, load_records
+from compile_ghidra_cpp import (
+    COMPILER, HEADER, ROOT, load_records, definition_with_entry_name,
+    width_preserving_pointer_casts, msvc_compatible_labels,
+)
+from compile_globals_cpp import GLOBAL, global_types, DECLARATION_ALIASES
+from compile_vftable_cpp import VFTABLE, symbol_name
 
 SCSTR = '''
 struct RefCounted {
@@ -22,8 +27,39 @@ struct RefCounted {
     virtual void AddRef();
 };
 
-struct SCStr {
+// Placement construction calls the actual constructor at the recovered receiver.
+inline void *operator new(unsigned int, void *receiver) noexcept { return receiver; }
+class SwfStr;
+class SCStr {
+public:
     void *rep;
+    SCStr();
+    SCStr(const char *text);
+    SCStr(const char *text, unsigned int length);
+    SCStr(const SCStr &other);
+    SCStr(const SwfStr &other);
+    ~SCStr();
+    bool operator<(const SCStr &other) const;
+    bool operator<(const SwfStr &other) const;
+    bool endsWith(const char *suffix) const;
+    bool endsWith(const SCStr &suffix) const;
+    bool endsWith(const SwfStr &suffix) const;
+    SCStr &append(const char *text);
+    SCStr &append(const char *text, unsigned int length);
+    SCStr &append(char value);
+    SCStr &append(const SCStr &other);
+    SCStr &prepend(const char *text);
+    SCStr &prepend(const char *text, unsigned int length);
+    SCStr &prepend(const SCStr &other);
+    SCStr &setFromUTF16(const unsigned short *text);
+    SCStr &setFromUTF16(const unsigned short *text, unsigned int length);
+    SCStr &replace(const char *from, const char *to, bool ignoreCase);
+    char *getBuffer(unsigned int length);
+    void empty();
+    unsigned int utf8_length() const;
+    bool int_endsWith(const char *text, unsigned int length, unsigned int suffixLength) const;
+    unsigned int __cdecl trimRear(char *text, char *characters);
+    int __cdecl format(const char *format, ...);
     bool operator==(const char *other) const;
     bool operator==(SCStr *other) const;
     bool operator!=(const char *other) const;
@@ -41,15 +77,18 @@ struct SCStr {
 };
 '''
 SUPPORTED = {'operator==', 'operator!=', 'beginsWith', 'contains', 'length',
-             'hash', 'int_addref', 'int_release', 'int_allocRep'}
-CALL = re.compile(r'SCStr::(operator==|operator!=|[A-Za-z_]\w*)\s*\(')
-BLOCKED = re.compile(r'\b(?:DAT_|LAB_|ExceptionList|stack0x|FUN_|PTR_|s_|switchD_|SUB_)')
+             'hash', 'int_addref', 'int_release', 'int_allocRep', 'SCStr', '~SCStr',
+             'operator<', 'endsWith', 'append', 'prepend', 'setFromUTF16',
+             'replace', 'getBuffer', 'empty', 'utf8_length', 'int_endsWith',
+             'trimRear', 'format'}
+CALL = re.compile(r'SCStr::(operator==|operator!=|operator<|~SCStr|[A-Za-z_]\w*)\s*\(')
+BLOCKED = re.compile(r'\b(?:LAB_|ExceptionList|stack0x|SUB_|unaff_|in_EBP)')
 COMPLEX = re.compile(r'\._\d+_\d+_|\b(?:CONCAT\d+|SUB\d+|ZEXT\d+|SEXT\d+)\b')
 PLAIN_CALL = re.compile(r'\b([A-Za-z_]\w*)\s*\(')
 ALLOWED_CALLS = {'if', 'while', 'switch', 'sizeof', 'return', 'int', 'uint',
                  'long', 'short', 'char', 'float', 'double', 'undefined',
                  'undefined1', 'undefined2', 'undefined4', 'undefined8',
-                 'code', 'SCStr', 'operator', 'AddRef', *SUPPORTED}
+                 'code', 'SCStr', 'operator', 'AddRef', 'new', 'for', 'byte', 'ushort', *SUPPORTED}
 THISCALL = re.compile(
     r'(?P<result>[^\n]+?)\s+__thiscall\s+(?P<name>(?:thunk_)?FUN_[0-9a-f]{8})'
     r'\((?P<parameters>[^)]*)\)')
@@ -104,6 +143,19 @@ def split_first_argument(arguments):
     return arguments.strip(), ''
 
 
+def normalize_definition(record):
+    """Normalize exported member definitions before lowering calls in the body."""
+    source = re.sub(r'/\*.*?\*/', '', record['decompiled_c'], flags=re.S)
+    header, sep, body = source.partition('{')
+    definition = re.search(r'([^\s()]+)\s*\(', header)
+    if not definition or not sep:
+        return source
+    header = (header[:definition.start(1)] + 'FUN_' + record['entry'] +
+              header[definition.end(1):])
+    # The recovered explicit receiver must not collide with C++'s this keyword.
+    return re.sub(r'\bthis\b', 'ghidra_this', header + sep + body)
+
+
 def rewrite_calls(source):
     # Work from right to left so replacement does not invalidate earlier offsets.
     matches = list(CALL.finditer(source))
@@ -115,7 +167,19 @@ def rewrite_calls(source):
         first, rest = split_first_argument(source[opening + 1:closing])
         if not first:
             return None
-        replacement = f'({first})->{match.group(1)}({rest})'
+        method = match.group(1)
+        # Ghidra represents reference arguments as pointers. Restore references
+        # only for declarations whose original exported signature uses them.
+        pointer_names = set(re.findall(r'\b(?:SCStr|SwfStr)\s*\*\s*(\w+)', source))
+        argument, tail = split_first_argument(rest)
+        is_object_pointer = (argument in pointer_names or
+                             bool(re.search(r'\((?:SCStr|SwfStr)\s*\*\)', argument)))
+        if method in {'SCStr', 'operator<', 'endsWith', 'append', 'prepend'} and is_object_pointer:
+            rest = f'*({argument})' + (f', {tail}' if tail else '')
+        if method == 'SCStr':
+            replacement = f'new ({first}) SCStr({rest})'
+        else:
+            replacement = f'({first})->{method}({rest})'
         source = source[:match.start()] + replacement + source[closing + 1:]
     return source
 
@@ -164,7 +228,7 @@ def eligible(source):
         return False
     calls = set(PLAIN_CALL.findall(body))
     return not {call for call in calls - ALLOWED_CALLS
-                if not call.startswith('thunk_FUN_')}
+                if not re.fullmatch(r'(?:thunk_)?FUN_[0-9a-f]{8}', call)}
 
 
 def make_msvc_member(source, entry):
@@ -196,16 +260,25 @@ def make_msvc_member(source, entry):
 
 
 def cpp_source(records):
-    thunks = sorted({name for record in records for name in
-                     re.findall(r'\bthunk_FUN_[0-9a-f]{8}\b', record['source'])})
-    declarations = '\n'.join(f'extern int {name}(...);' for name in thunks)
+    globals_records = [{**r, 'decompiled_c': r['source']} for r in records]
+    declarations = []
+    for name, typ in sorted(global_types(globals_records).items()):
+        declarations.append(f'extern {typ[:-2]} {name}[];' if typ.endswith('[]')
+                            else f'extern {typ} {name};')
+    vtables = sorted({label for r in records for label in r.get('vftables', [])})
+    declarations.extend(f'extern char {symbol_name(label)}[];' for label in vtables)
+    calls = sorted({name for r in records for name in
+                    re.findall(r'\b(?:thunk_)?FUN_[0-9a-f]{8}\b',
+                               r['source'].split('{', 1)[-1])})
+    declarations.extend(f'extern int {name}(...);' for name in calls)
+    declarations = '\n'.join(declarations)
     members = [make_msvc_member(r['source'], r['entry']) for r in records]
     member_declarations = '\n'.join(decl for decl, _ in members if decl)
     functions = '\n'.join(
         f'// Reference entry {r["entry"]}; body size {r["body_bytes"]} bytes.\n'
         f'#line 1 "ENTRY_{r["entry"]}"\n{member[1]}'
         for r, member in zip(records, members))
-    return HEADER + SCSTR + declarations + '\n' + member_declarations + '\n' + functions
+    return HEADER + DECLARATION_ALIASES + SCSTR + declarations + '\n' + member_declarations + '\n' + functions
 
 
 def syntax(records, scratch):
@@ -243,20 +316,26 @@ def main():
     parser.add_argument('exports', nargs='+', type=Path)
     parser.add_argument('--output-dir', type=Path,
                         default=ROOT / 'analysis' / 'compiled-cpp-scstr')
+    parser.add_argument('--emit-source', type=Path)
+    parser.add_argument('--emit-index', type=Path)
     args = parser.parse_args()
     output = args.output_dir.resolve()
     output.mkdir(parents=True, exist_ok=True)
     candidates = []
     for record in load_records(args.exports).values():
-        source = record['decompiled_c']
+        source = normalize_definition(record)
         if 'SCStr::' not in source or BLOCKED.search(source[source.find('{'):]):
             continue
         rewritten = rewrite_calls(source)
         if rewritten:
-            rewritten = restore_pointer_width_casts(rewritten)
+            rewritten = width_preserving_pointer_casts(restore_pointer_width_casts(rewritten))
+            labels = sorted(set(VFTABLE.findall(rewritten)))
+            for label in sorted(labels, key=len, reverse=True):
+                rewritten = rewritten.replace(label, f'(undefined4)&{symbol_name(label)}')
+            rewritten = msvc_compatible_labels(rewritten)
             rewritten = restore_query_addref(rewritten, record['body_bytes'])
         if rewritten and eligible(rewritten):
-            candidates.append({**record, 'source': rewritten})
+            candidates.append({**record, 'source': rewritten, 'vftables': labels})
     candidates.sort(key=lambda r: int(r['entry'], 16))
     print(f'Candidates: {len(candidates)}', flush=True)
     scratch = output / '.syntax-probe.cpp'
@@ -282,10 +361,19 @@ def main():
         writer.writerows((r['entry'], r['name'], r['body_bytes']) for r in accepted)
     (output / 'failures.tsv').write_text('entry\terror\n' + ''.join(
         f'{entry}\t{error}\n' for entry, error in failures))
-    print(json.dumps({'compiled_functions': len(accepted),
+    if args.emit_source:
+        args.emit_source.parent.mkdir(parents=True, exist_ok=True)
+        args.emit_source.write_text(source.read_text())
+    if args.emit_index:
+        args.emit_index.parent.mkdir(parents=True, exist_ok=True)
+        args.emit_index.write_text((output / 'compiled-index.tsv').read_text())
+    metrics = {'candidate_functions': len(candidates), 'compiled_functions': len(accepted),
                       'compiled_reference_body_bytes': sum(r['body_bytes'] for r in accepted),
                       'syntax_rejected': len(failures),
-                      'object_bytes': obj.stat().st_size}, indent=2))
+                      'object_bytes': obj.stat().st_size,
+                      'scope': 'C++ object compilation; byte matching measured separately'}
+    (output / 'coverage.json').write_text(json.dumps(metrics, indent=2) + '\n')
+    print(json.dumps(metrics, indent=2))
 
 
 if __name__ == '__main__':
