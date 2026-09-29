@@ -36,7 +36,8 @@ def main():
     for row in rows:
         size = int(row['body_bytes'])
         entry = int(row['entry'], 16)
-        prefix = '?' + row.get('method_name', 'Init') + '@' + row['class_name'] + '@@'
+        prefix = row.get('symbol_prefix') or (
+            '?' + row.get('method_name', 'Init') + '@' + row['class_name'] + '@@')
         symbol = next((value for value in obj_symbols.values()
                        if value['name'].startswith(prefix) and value['section'] > 0), None)
         expected = function_bytes(reference, entry, size,

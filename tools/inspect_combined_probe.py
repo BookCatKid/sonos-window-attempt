@@ -47,14 +47,23 @@ def main():
                     directory / 'single_ref_mutations.obj', '--index',
                     ROOT / 'src/generated/single-ref-mutations-index.tsv',
                     '--dll', candidate_path, '--map', map_path)
+    has_cleanup = (directory / 'cleanup_families.obj').exists()
+    cleanup = (run('inspect_single_ref_family.py',
+                   directory / 'cleanup_families.obj', '--index',
+                   ROOT / 'src/generated/cleanup-families-index.tsv',
+                   '--dll', candidate_path, '--map', map_path)
+               if has_cleanup else None)
     ownership = run('inspect_link_probe.py', candidate_path, map_path)
     query = run('inspect_query_link.py', candidate_path, map_path,
                 directory / 'query_family_candidate.obj',
                 directory / 'scstr_equals_candidate.obj')
     entries = {}
-    for manifest in ('swig-delete-family-index.tsv',
-                     'single-ref-family-index.tsv',
-                     'single-ref-mutations-index.tsv'):
+    manifests = ['swig-delete-family-index.tsv',
+                 'single-ref-family-index.tsv',
+                 'single-ref-mutations-index.tsv']
+    if has_cleanup:
+        manifests.append('cleanup-families-index.tsv')
+    for manifest in manifests:
         for entry, size in manifest_entries(ROOT / 'src/generated' / manifest).items():
             if entry in entries and entries[entry] != size:
                 raise ValueError(f'conflicting reference body size at 0x{entry:08x}')
@@ -83,6 +92,7 @@ def main():
             'swig_delete': swig['linked_exact_bodies'],
             'single_reference_constructor': single['linked_exact_bodies'],
             'single_reference_mutations': mutations['linked_exact_bodies'],
+            'cleanup_families': cleanup['linked_exact_bodies'] if cleanup else None,
             'representative_ownership': ownership['linked_bodies_exact'],
         },
         'scope': 'combined linked C++ probe; aligned whole-file bytes measured separately',
