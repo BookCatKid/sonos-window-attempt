@@ -7,9 +7,10 @@ reference material. No Sonos application is launched during reconstruction.
 ## Primary score
 
 The reference is 37,153,792 bytes. A 95% aligned byte match requires at least
-35,296,103 identical bytes at the same file offsets, with candidate size also
-reported. `python3 tools/compare.py <candidate.dll> --threshold 95` computes
-this score and reports it separately for every named PE section. The same
+35,296,103 identical bytes at the same file offsets. The candidate must also
+have the same file size, and each reference PE section must independently reach
+95%. `python3 tools/compare.py <candidate.dll> --threshold 95` enforces
+these scores. The same
 command with its default threshold requires complete byte identity.
 
 The section byte counts show why function matching alone is insufficient:

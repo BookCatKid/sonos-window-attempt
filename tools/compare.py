@@ -58,9 +58,11 @@ def main():
     except ValueError as error:
         print(f"candidate PE sections unavailable: {error}")
         candidate_sections = {}
+    section_percentages = {}
     for name, reference_bytes in reference_sections.items():
         part, whole = score(reference_bytes, candidate_sections.get(name, b''))
-        print(f"  {name}: {part:,}/{whole:,} ({100 * part / whole if whole else 0:.4f}%)")
+        section_percentages[name] = 100 * part / whole if whole else 0
+        print(f"  {name}: {part:,}/{whole:,} ({section_percentages[name]:.4f}%)")
     if original == candidate:
         print("BYTE IDENTICAL")
         return
@@ -80,7 +82,11 @@ def main():
         print(f"  0x{start:08x}..0x{end - 1:08x} ({end - start} bytes)")
     if len(ranges) > args.limit:
         print(f"  ... {len(ranges) - args.limit} more")
-    if percent < args.threshold or (args.threshold == 100 and original != candidate):
+    size_matches = len(candidate) == len(original)
+    sections_pass = all(value >= args.threshold for value in section_percentages.values())
+    print(f"acceptance gate: file size {'MATCH' if size_matches else 'DIFFERENT'}, "
+          f"all reference sections >= {args.threshold:g}%: {'YES' if sections_pass else 'NO'}")
+    if percent < args.threshold or not size_matches or not sections_pass:
         raise SystemExit(1)
 
 
