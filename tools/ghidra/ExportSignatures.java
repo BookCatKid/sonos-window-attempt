@@ -5,6 +5,7 @@ import ghidra.app.script.GhidraScript;
 import ghidra.program.model.listing.Function;
 import ghidra.program.model.listing.FunctionIterator;
 import ghidra.program.model.listing.Parameter;
+import ghidra.program.model.data.Pointer;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -31,15 +32,29 @@ public class ExportSignatures extends GhidraScript {
                 Map<String, Object> record = new LinkedHashMap<>();
                 record.put("entry", function.getEntryPoint().toString());
                 record.put("namespace", namespace);
+                record.put("qualified_namespace", function.getParentNamespace().getName(true));
                 record.put("name", function.getName());
                 record.put("calling_convention", function.getCallingConventionName());
                 record.put("return_type", function.getReturnType().getName());
+                record.put("return_type_bytes", function.getReturnType().getLength());
+                record.put("variadic", function.hasVarArgs());
+                record.put("thunk", function.isThunk());
+                if (function.isThunk() && function.getThunkedFunction(true) != null) {
+                    record.put("thunk_target", function.getThunkedFunction(true).getEntryPoint().toString());
+                }
                 record.put("signature", function.getSignature().getPrototypeString());
-                List<Map<String, String>> parameters = new ArrayList<>();
+                List<Map<String, Object>> parameters = new ArrayList<>();
                 for (Parameter parameter : function.getParameters()) {
-                    Map<String, String> item = new LinkedHashMap<>();
+                    Map<String, Object> item = new LinkedHashMap<>();
                     item.put("name", parameter.getName());
                     item.put("type", parameter.getDataType().getName());
+                    item.put("type_bytes", parameter.getDataType().getLength());
+                    if (parameter.getDataType() instanceof Pointer) {
+                        Pointer pointer = (Pointer) parameter.getDataType();
+                        if (pointer.getDataType() != null) {
+                            item.put("pointee_bytes", pointer.getDataType().getLength());
+                        }
+                    }
                     parameters.add(item);
                 }
                 record.put("parameters", parameters);
