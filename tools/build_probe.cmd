@@ -9,6 +9,11 @@ cl /Bv > out\toolchain.txt 2>&1
 where cl >> out\toolchain.txt
 where link >> out\toolchain.txt
 
+for %%F in (src\generated\direct_jumps\direct_jump_*.cpp) do (
+  cl /nologo /O2 /Gy /bigobj /c /Foout\%%~nF.obj %%F > out\%%~nF.log 2>&1
+  if errorlevel 1 goto failed
+)
+
 cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\zonegroup_getter.obj src\zonegroup_getter.cpp > out\getter.log 2>&1
 if errorlevel 1 goto failed
 cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\zonegroup_result.obj src\zonegroup_result.cpp > out\result.log 2>&1
@@ -103,5 +108,6 @@ if errorlevel 1 goto failed
 exit /b 0
 
 :failed
+for %%F in (out\direct_jump_*.log) do if exist %%F type %%F
 for %%F in (out\setup.log out\getter.log out\result.log out\factory.log out\factory_frame_pointer.log out\factory_lifetime.log out\factory_owner.log out\leaf_true.log out\leaf_false.log out\leaf_self.log out\ghidra_communication.log out\ref_wrapper_ctor.log out\scstr_recovered.log out\scstr_expanded_o2.log out\scstr_expanded_reference_flags.log out\query_family_candidate.log out\scstr_equals_candidate.log out\ref_wrapper_assign.log out\resource_cleanup.log out\swig_delete_candidate.log out\single_ref_wrapper_candidate.log out\swig_delete_family.log out\single_ref_reset_candidate.log out\single_ref_replace_candidate.log out\single_ref_family.log out\single_ref_mutations.log out\two_field_clear_candidate.log out\resource_cleanup_return_candidate.log out\single_ref_clear_candidate.log out\cleanup_families.log out\discovery_get_household.log out\discovery_native_start.log out\soap_builder_candidate.log out\soap_builder_storage_candidate.log out\soap_length_candidate.log out\soap_length_parameter_helper.log out\recovered_thunks_o2.log out\recovered_thunks_reference_flags.log out\recovered_vftables_o2.log out\recovered_vftables_reference_flags.log out\wrapper_link_probe.log out\query_link_probe.log out\swig_delete_family_link.log out\combined_link_probe.log) do if exist %%F for /f "usebackq delims=" %%L in ("%%F") do echo ::error::%%L
 exit /b 1

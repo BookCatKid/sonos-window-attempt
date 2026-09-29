@@ -142,6 +142,9 @@ def generated_symbol_name(name):
     match = re.search(r'((?:thunk_)?FUN_[0-9a-fA-F]{8})', name)
     if match:
         return match.group(1)
+    match = re.search(r'(ghidra_jump_target_[0-9a-fA-F]{8})', name)
+    if match:
+        return match.group(1)
     match = re.search(r'(ghidra_vftable_[A-Za-z0-9_]+)', name)
     if match:
         return match.group(1)
@@ -238,7 +241,7 @@ def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base,
             continue
         targets = symbol_vas.get(logical_name, [])
         if not targets:
-            match = re.search(r'(?:FUN_|_?DAT_)([0-9a-fA-F]{8})', logical_name)
+            match = re.search(r'(?:FUN_|_?DAT_|ghidra_jump_target_)([0-9a-fA-F]{8})', logical_name)
             targets = [int(match.group(1), 16)] if match else []
         if not targets:
             unresolved += 1
@@ -327,10 +330,14 @@ def main():
     parser.add_argument('output_dirs', nargs='+', type=Path)
     parser.add_argument('--object', type=Path,
                         help='Use this object for a single directory, e.g. a downloaded MSVC build')
+    parser.add_argument('--objects-dir', type=Path,
+                        help='Map each input directory basename to BASENAME.obj in this artifact directory')
     parser.add_argument('--report-name', default='match-report.tsv')
     parser.add_argument('--symbols', type=Path, default=DEFAULT_SYMBOLS,
                         help='Ghidra symbols.jsonl used to resolve generated relocation targets')
     args = parser.parse_args()
+    if args.object and args.objects_dir:
+        parser.error('--object and --objects-dir are mutually exclusive')
     if args.object and len(args.output_dirs) != 1:
         parser.error('--object requires exactly one output directory')
     reference = DLL.read_bytes()
@@ -340,7 +347,9 @@ def main():
     unique = {}
     for directory in args.output_dirs:
         rows = compare_directory(directory, reference, image_base, pe_sections,
-                                 symbol_vas, args.object)
+                                 symbol_vas, args.object or (
+                                     args.objects_dir / f'{directory.name}.obj'
+                                     if args.objects_dir else None))
         with (directory / args.report_name).open('w', newline='') as file:
             writer = csv.DictWriter(file, fieldnames=rows[0].keys(), delimiter='\t') if rows else None
             if writer:
