@@ -211,6 +211,16 @@ aligned bytes equal to the reference (0.00955%). These probes establish C++ sour
 fidelity for specific functions; **95% whole-DLL byte matching has not been
 reached**.
 
+The [repeated SWIG deletion run](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36583273952)
+compiles 327 generated, readable C++ deletion wrappers under pinned MSVC.
+`tools/inspect_swig_delete_family.py` verifies **327/327 exact 16-byte object
+bodies**, **327/327 exact linked bodies**, and **327/327 named PE exports**.
+This accounts for 5,232 reference body bytes with independent functions rather
+than one representative body. In the same run, a 24-byte single-reference
+constructor remains exact after linking; four ownership bodies now total
+159/159 exact linked bytes. The dedicated deletion DLL is 42,496 bytes and has
+2,636 aligned bytes equal to the full reference (0.007095%).
+
 The full-DLL comparison command requires complete identity by default; pass
 `--threshold 95` to check the documented aligned-byte and per-section target.
 The reference DLL is

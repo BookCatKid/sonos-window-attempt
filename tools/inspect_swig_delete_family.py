@@ -32,7 +32,8 @@ def exports(data, base, sections):
     if not directory_rva or not directory_size:
         return set()
     directory = function_bytes(data, base + directory_rva, 40, base, sections)
-    names_count, names_rva = struct.unpack_from('<II', directory, 24)
+    names_count = struct.unpack_from('<I', directory, 24)[0]
+    names_rva = struct.unpack_from('<I', directory, 32)[0]
     result = set()
     for index in range(names_count):
         pointer = function_bytes(data, base + names_rva + 4 * index, 4,
