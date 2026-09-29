@@ -185,6 +185,32 @@ def rewrite_calls(source):
     return source
 
 
+def restore_scstr_byte_offsets(source):
+    """Preserve offsets from Ghidra's one-byte opaque SCStr datatype.
+
+    The real C++ class occupies four bytes on x86. Retain that layout for
+    construction/calls, but perform recovered pointer arithmetic in bytes.
+    Only explicit parenthesized additions/subtractions are admitted here;
+    integer pointers and already cast expressions are left untouched.
+    """
+    names = set(re.findall(r'\bSCStr\s*\*\s*(\w+)', source))
+    count = 0
+    for name in sorted(names):
+        pattern = (r'\(\s*' + re.escape(name) +
+                   r'\s*([+-])\s*([^()\n]+)\)')
+        def replace(match):
+            nonlocal count
+            offset = match.group(2).strip()
+            # Do not swallow comparison, assignment, comma, or logical syntax.
+            if not re.fullmatch(r'[A-Za-z_0-9\s+*/%&|^<>-]+', offset) or any(
+                    token in offset for token in ('<<', '>>', '&&', '||', '<', '>')):
+                return match.group(0)
+            count += 1
+            return f'((SCStr *)((char *){name} {match.group(1)} ({offset})))'
+        source = re.sub(pattern, replace, source)
+    return source, count
+
+
 def restore_virtual_refcount_calls(source):
     """Recover implicit this for standalone zero-argument virtual slots 1/2.
 
@@ -350,6 +376,8 @@ def main():
                         help='Restore implicit this for standalone refcount virtual dispatches')
     parser.add_argument('--typed-calls', action='store_true',
                         help='Use inferred headers to recover direct call argument types and conventions')
+    parser.add_argument('--byte-pointer-offsets', action='store_true',
+                        help='Preserve byte arithmetic on Ghidra opaque SCStr pointers')
     parser.add_argument('--emit-source', type=Path)
     parser.add_argument('--emit-index', type=Path)
     args = parser.parse_args()
@@ -363,6 +391,9 @@ def main():
     candidates = []
     for record in load_records(args.exports).values():
         source = normalize_definition(record)
+        byte_offsets = 0
+        if args.byte_pointer_offsets:
+            source, byte_offsets = restore_scstr_byte_offsets(source)
         if 'SCStr::' not in source or BLOCKED.search(source[source.find('{'):]):
             continue
         rewritten = rewrite_calls(source)
@@ -385,6 +416,7 @@ def main():
             if args.virtual_refcount_calls and not args.typed_calls and virtual_count == 0:
                 continue
             candidates.append({**record, 'source': rewritten, 'vftables': labels,
+                               'byte_offset_sites': byte_offsets,
                                'virtual_calls': virtual_count,
                                'abi_declarations': declarations, 'typed_calls': changed})
     candidates.sort(key=lambda r: int(r['entry'], 16))
@@ -423,6 +455,7 @@ def main():
                       'syntax_rejected': len(failures),
                       'typed_call_sites': sum(r.get('typed_calls', 0) for r in accepted),
                       'virtual_refcount_call_sites': sum(r.get('virtual_calls', 0) for r in accepted),
+                      'byte_offset_sites': sum(r.get('byte_offset_sites', 0) for r in accepted),
                       'object_bytes': obj.stat().st_size,
                       'scope': 'C++ object compilation; byte matching measured separately'}
     (output / 'coverage.json').write_text(json.dumps(metrics, indent=2) + '\n')
