@@ -110,6 +110,15 @@ def msvc_compatible_thiscall(source):
         search_from = close_paren + len(',void *ghidra_unused_edx') + 1
 
 
+def msvc_compatible_labels(source):
+    """Give labels that end a block an empty statement for MSVC."""
+    return re.sub(
+        r'(?m)^(\s*(?:case\s+[^:]+|default):\s*)\n(\s*})',
+        r'\1\n  ;\n\2',
+        source,
+    )
+
+
 def cpp_source(records, rename_definitions=False):
     thunks = sorted({name for record in records for name in
                      re.findall(r'\bthunk_FUN_[0-9a-f]{8}\b', record['decompiled_c'])})
@@ -117,10 +126,11 @@ def cpp_source(records, rename_definitions=False):
     definitions = []
     for record in records:
         definition = definition_with_entry_name(record) if rename_definitions else record['decompiled_c']
+        definition = msvc_compatible_labels(msvc_compatible_thiscall(definition))
         definitions.append(
             f'// Reference entry {record["entry"]}; body size {record["body_bytes"]} bytes.\n'
             f'#line 1 "ENTRY_{record["entry"]}"\n'
-            f'{msvc_compatible_thiscall(definition)}')
+            f'{definition}')
     return HEADER + declarations + '\n' + '\n'.join(definitions)
 
 

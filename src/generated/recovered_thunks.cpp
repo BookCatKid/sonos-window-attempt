@@ -442745,6 +442745,7 @@ char * FUN_1129b350(undefined4 *param_1)
   case 2:
     return "config";
   case 3:
+  ;
   }
   return "unknown";
 }
