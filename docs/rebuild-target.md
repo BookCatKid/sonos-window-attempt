@@ -40,6 +40,16 @@ link layout cannot meet the file target.
    imports and exports, PE header fields, and relocation layout. This is the
    acceptance measure.
 
-No linked reconstruction DLL exists yet. A copied or wrapped reference DLL
+Linked C++ probes exist, including a combined probe with verified function
+bodies, but no full reconstruction DLL exists yet. A copied or wrapped reference DLL
 would not count as a source rebuild. Each reported percentage names its
 denominator and stage so decompiler output is never mistaken for a byte match.
+
+`tools/profile_reference_coverage.py` measures the remaining layout problem.
+The `.text` section has 25,583,104 raw bytes; identified function bodies occupy
+15,818,515 distinct byte positions. Of the 9,764,589 unclassified positions,
+6,765,148 contain `0xCC`. This byte value is consistent with linker padding,
+but unclassified bytes are not assumed to be padding. `.rdata` contributes
+9,115,648 bytes, including 3,962,133 zero bytes. Exact function bodies alone
+cannot satisfy the section and whole-file targets; C++ code order, data, and
+relocation layout must be reconstructed.
