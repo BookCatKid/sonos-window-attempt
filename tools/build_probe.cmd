@@ -45,12 +45,16 @@ cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\swig_delete_candidate.obj src\swi
 if errorlevel 1 goto failed
 cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\single_ref_wrapper_candidate.obj src\single_ref_wrapper_candidate.cpp > out\single_ref_wrapper_candidate.log 2>&1
 if errorlevel 1 goto failed
-link /nologo /DLL /MACHINE:X86 /NOENTRY /DEBUG /INCREMENTAL /DYNAMICBASE /NXCOMPAT /BASE:0x10000000 /FILEALIGN:512 /MAP:out\wrapper_link_probe.map /OUT:out\wrapper_link_probe.dll out\ref_wrapper_ctor.obj out\ref_wrapper_assign.obj out\resource_cleanup.obj > out\wrapper_link_probe.log 2>&1
+cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\swig_delete_family.obj src\generated\swig_delete_family.cpp > out\swig_delete_family.log 2>&1
+if errorlevel 1 goto failed
+link /nologo /DLL /MACHINE:X86 /NOENTRY /DEBUG /INCREMENTAL /DYNAMICBASE /NXCOMPAT /BASE:0x10000000 /FILEALIGN:512 /MAP:out\wrapper_link_probe.map /OUT:out\wrapper_link_probe.dll out\ref_wrapper_ctor.obj out\ref_wrapper_assign.obj out\resource_cleanup.obj out\single_ref_wrapper_candidate.obj > out\wrapper_link_probe.log 2>&1
 if errorlevel 1 goto failed
 link /nologo /DLL /MACHINE:X86 /NOENTRY /DEBUG /INCREMENTAL /DYNAMICBASE /NXCOMPAT /BASE:0x10000000 /FILEALIGN:512 /MAP:out\query_link_probe.map /OUT:out\query_link_probe.dll out\query_family_candidate.obj out\scstr_equals_candidate.obj > out\query_link_probe.log 2>&1
+if errorlevel 1 goto failed
+link /nologo /DLL /MACHINE:X86 /NOENTRY /DEBUG /INCREMENTAL /OPT:NOICF /DYNAMICBASE /NXCOMPAT /BASE:0x10000000 /FILEALIGN:512 /MAP:out\swig_delete_family.map /OUT:out\swig_delete_family.dll out\swig_delete_family.obj > out\swig_delete_family_link.log 2>&1
 if errorlevel 1 goto failed
 exit /b 0
 
 :failed
-for %%F in (out\setup.log out\getter.log out\result.log out\factory.log out\factory_frame_pointer.log out\factory_lifetime.log out\factory_owner.log out\leaf_true.log out\leaf_false.log out\leaf_self.log out\ghidra_communication.log out\ref_wrapper_ctor.log out\scstr_recovered.log out\query_family_candidate.log out\scstr_equals_candidate.log out\ref_wrapper_assign.log out\resource_cleanup.log out\swig_delete_candidate.log out\single_ref_wrapper_candidate.log out\wrapper_link_probe.log out\query_link_probe.log) do if exist %%F for /f "usebackq delims=" %%L in ("%%F") do echo ::error::%%L
+for %%F in (out\setup.log out\getter.log out\result.log out\factory.log out\factory_frame_pointer.log out\factory_lifetime.log out\factory_owner.log out\leaf_true.log out\leaf_false.log out\leaf_self.log out\ghidra_communication.log out\ref_wrapper_ctor.log out\scstr_recovered.log out\query_family_candidate.log out\scstr_equals_candidate.log out\ref_wrapper_assign.log out\resource_cleanup.log out\swig_delete_candidate.log out\single_ref_wrapper_candidate.log out\swig_delete_family.log out\wrapper_link_probe.log out\query_link_probe.log out\swig_delete_family_link.log) do if exist %%F for /f "usebackq delims=" %%L in ("%%F") do echo ::error::%%L
 exit /b 1
