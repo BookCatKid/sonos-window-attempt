@@ -75,6 +75,13 @@ cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\soap_length_candidate.obj src\soa
 if errorlevel 1 goto failed
 cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\soap_length_parameter_helper.obj src\soap_length_parameter_helper.cpp > out\soap_length_parameter_helper.log 2>&1
 if errorlevel 1 goto failed
+rem Compile the bulk recovered Ghidra tranche under the pinned MSVC toolchain.
+rem Keep a minimal /O2 variant close to the local clang-cl experiment and a
+rem second variant with the flags inferred for the original application build.
+cl /nologo /O2 /bigobj /c /Foout\recovered_thunks_o2.obj src\generated\recovered_thunks.cpp > out\recovered_thunks_o2.log 2>&1
+if errorlevel 1 goto failed
+cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\recovered_thunks_reference_flags.obj src\generated\recovered_thunks.cpp > out\recovered_thunks_reference_flags.log 2>&1
+if errorlevel 1 goto failed
 link /nologo /DLL /MACHINE:X86 /NOENTRY /DEBUG /INCREMENTAL /DYNAMICBASE /NXCOMPAT /BASE:0x10000000 /FILEALIGN:512 /MAP:out\wrapper_link_probe.map /OUT:out\wrapper_link_probe.dll out\ref_wrapper_ctor.obj out\ref_wrapper_assign.obj out\resource_cleanup.obj out\single_ref_wrapper_candidate.obj out\single_ref_reset_candidate.obj out\single_ref_replace_candidate.obj > out\wrapper_link_probe.log 2>&1
 if errorlevel 1 goto failed
 link /nologo /DLL /MACHINE:X86 /NOENTRY /DEBUG /INCREMENTAL /DYNAMICBASE /NXCOMPAT /BASE:0x10000000 /FILEALIGN:512 /MAP:out\query_link_probe.map /OUT:out\query_link_probe.dll out\query_family_candidate.obj out\scstr_equals_candidate.obj > out\query_link_probe.log 2>&1
@@ -86,5 +93,5 @@ if errorlevel 1 goto failed
 exit /b 0
 
 :failed
-for %%F in (out\setup.log out\getter.log out\result.log out\factory.log out\factory_frame_pointer.log out\factory_lifetime.log out\factory_owner.log out\leaf_true.log out\leaf_false.log out\leaf_self.log out\ghidra_communication.log out\ref_wrapper_ctor.log out\scstr_recovered.log out\query_family_candidate.log out\scstr_equals_candidate.log out\ref_wrapper_assign.log out\resource_cleanup.log out\swig_delete_candidate.log out\single_ref_wrapper_candidate.log out\swig_delete_family.log out\single_ref_reset_candidate.log out\single_ref_replace_candidate.log out\single_ref_family.log out\single_ref_mutations.log out\two_field_clear_candidate.log out\resource_cleanup_return_candidate.log out\single_ref_clear_candidate.log out\cleanup_families.log out\discovery_get_household.log out\discovery_native_start.log out\soap_builder_candidate.log out\soap_builder_storage_candidate.log out\soap_length_candidate.log out\soap_length_parameter_helper.log out\wrapper_link_probe.log out\query_link_probe.log out\swig_delete_family_link.log out\combined_link_probe.log) do if exist %%F for /f "usebackq delims=" %%L in ("%%F") do echo ::error::%%L
+for %%F in (out\setup.log out\getter.log out\result.log out\factory.log out\factory_frame_pointer.log out\factory_lifetime.log out\factory_owner.log out\leaf_true.log out\leaf_false.log out\leaf_self.log out\ghidra_communication.log out\ref_wrapper_ctor.log out\scstr_recovered.log out\query_family_candidate.log out\scstr_equals_candidate.log out\ref_wrapper_assign.log out\resource_cleanup.log out\swig_delete_candidate.log out\single_ref_wrapper_candidate.log out\swig_delete_family.log out\single_ref_reset_candidate.log out\single_ref_replace_candidate.log out\single_ref_family.log out\single_ref_mutations.log out\two_field_clear_candidate.log out\resource_cleanup_return_candidate.log out\single_ref_clear_candidate.log out\cleanup_families.log out\discovery_get_household.log out\discovery_native_start.log out\soap_builder_candidate.log out\soap_builder_storage_candidate.log out\soap_length_candidate.log out\soap_length_parameter_helper.log out\recovered_thunks_o2.log out\recovered_thunks_reference_flags.log out\wrapper_link_probe.log out\query_link_probe.log out\swig_delete_family_link.log out\combined_link_probe.log) do if exist %%F for /f "usebackq delims=" %%L in ("%%F") do echo ::error::%%L
 exit /b 1

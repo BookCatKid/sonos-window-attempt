@@ -58,13 +58,25 @@ def eligible(source):
     return not {call for call in calls - KNOWN_CALLS if not call.startswith('thunk_FUN_')}
 
 
-def cpp_source(records):
+def definition_with_entry_name(record):
+    """Give recovered definitions distinct names when Ghidra thunk names collide."""
+    source = record['decompiled_c']
+    header_end = source.find('{')
+    match = re.search(r'\b((?:thunk_)?FUN_[0-9a-f]{8})\s*\(', source[:header_end])
+    if not match:
+        return source
+    return source[:match.start(1)] + 'FUN_' + record['entry'] + source[match.end(1):]
+
+
+def cpp_source(records, rename_definitions=False):
     thunks = sorted({name for record in records for name in
                      re.findall(r'\bthunk_FUN_[0-9a-f]{8}\b', record['decompiled_c'])})
     declarations = '\n'.join(f'extern int {name}(...);' for name in thunks)
     return HEADER + declarations + '\n' + '\n'.join(
         f'// Reference entry {r["entry"]}; body size {r["body_bytes"]} bytes.\n'
-        f'#line 1 "ENTRY_{r["entry"]}"\n{r["decompiled_c"]}' for r in records)
+        f'#line 1 "ENTRY_{r["entry"]}"\n'
+        f'{definition_with_entry_name(r) if rename_definitions else r["decompiled_c"]}'
+        for r in records)
 
 
 def syntax_ok(source, scratch):
@@ -76,12 +88,12 @@ def syntax_ok(source, scratch):
     return result.returncode == 0, result.stderr
 
 
-def split_valid(records, scratch, failures):
+def split_valid(records, scratch, failures, rename_definitions=False):
     if not records:
         return []
     remaining = list(records)
     for _ in range(8):
-        source = cpp_source(remaining)
+        source = cpp_source(remaining, rename_definitions)
         good, error = syntax_ok(source, scratch)
         if good:
             return remaining
@@ -101,8 +113,8 @@ def split_valid(records, scratch, failures):
         failures.append((remaining[0]['entry'], error.splitlines()[0] if error else 'syntax error'))
         return []
     mid = len(remaining) // 2
-    return (split_valid(remaining[:mid], scratch, failures) +
-            split_valid(remaining[mid:], scratch, failures))
+    return (split_valid(remaining[:mid], scratch, failures, rename_definitions) +
+            split_valid(remaining[mid:], scratch, failures, rename_definitions))
 
 
 def main():
@@ -110,6 +122,8 @@ def main():
     parser.add_argument('exports', nargs='+', type=Path)
     parser.add_argument('--output-dir', type=Path, default=ROOT / 'analysis' / 'compiled-cpp')
     parser.add_argument('--batch-size', type=int, default=100)
+    parser.add_argument('--rename-definitions', action='store_true',
+                        help='use entry-address names to avoid duplicate Ghidra thunk definitions')
     args = parser.parse_args()
     if args.batch_size < 1:
         parser.error('--batch-size must be positive')
@@ -125,12 +139,13 @@ def main():
     successes = []
     scratch = output / '.syntax-probe.cpp'
     for offset in range(0, len(candidates), args.batch_size):
-        successes.extend(split_valid(candidates[offset:offset + args.batch_size], scratch, failures))
+        successes.extend(split_valid(candidates[offset:offset + args.batch_size], scratch,
+                                     failures, args.rename_definitions))
         print(f'Checked {min(offset + args.batch_size, len(candidates))}/{len(candidates)} '
               f'candidates; accepted {len(successes)}', flush=True)
     scratch.unlink(missing_ok=True)
     source = output / 'ghidra_recovered.cpp'
-    source.write_text(cpp_source(successes))
+    source.write_text(cpp_source(successes, args.rename_definitions))
     obj = output / 'ghidra_recovered.obj'
     result = subprocess.run([str(COMPILER), '/nologo', '/O2', '/c',
                              '/clang:--target=i686-pc-windows-msvc',
