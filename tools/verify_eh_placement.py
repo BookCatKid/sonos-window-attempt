@@ -110,12 +110,11 @@ def verified_eh_targets(directory,obj,reference,base,pe_sections,symbol_vas):
             if target['section']>0:
                 if target_name.startswith('__ehfuncinfo$'):
                     info=refbytes(target_va,36)
-                    if len(info)!=36 or U32(info)!=0x19930522 or U32(info,4)!=1:return False
-                    # This initial implementation verifies one-state terminate
-                    # guards only. Broader EH graphs require an expanded parser.
+                    if (len(info)!=36 or U32(info)!=0x19930522 or
+                            U32(info,4)!=expected_state_count):return False
                     ok=graph(target_name,target_va,36,local,proofs,depth+1)
                 elif target_name.startswith(('__unwindtable$','__unwindmap$')):
-                    ok=graph(target_name,target_va,8,local,proofs,depth+1)
+                    ok=graph(target_name,target_va,expected_state_count*8,local,proofs,depth+1)
                 elif target_name.startswith('__unwindfunclet$'):
                     action=refbytes(target_va,6)
                     # Only the independently named __std_terminate import jump
@@ -151,6 +150,7 @@ def verified_eh_targets(directory,obj,reference,base,pe_sections,symbol_vas):
 
     for item in json.loads(inventory.read_text()):
         entry=item['entry']
+        expected_state_count=item.get('reference_state_count',1)
         handlers=handlers_by_entry.get(entry,[])
         local={};proofs=[]
         if len(handlers)!=1:

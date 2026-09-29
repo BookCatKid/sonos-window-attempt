@@ -142,7 +142,7 @@ def lower(record, evidence, abi):
         **record, "source": source, "vftables": labels, "virtual_slots": sorted(slots),
         "abi_declarations": declarations, "typed_calls": typed_count,
         "virtual_calls": virtual_count, "reference_handler": evidence["handler"],
-        "reference_metadata": meta["address"],
+        "reference_metadata": meta["address"], "reference_state_count": meta["state_count"],
     }
 
 
@@ -189,6 +189,10 @@ def main():
         writer.writerows((x["entry"], x["name"], x["body_bytes"]) for x in accepted)
     args.emit_source.write_text(generated)
     args.emit_index.write_text(index_path.read_text())
+    (args.output_dir / "reference-eh-inventory.json").write_text(json.dumps([
+        {key: row[key] for key in ["entry", "reference_handler", "reference_metadata", "reference_state_count"]}
+        for row in accepted
+    ], indent=2) + "\n")
     metrics = {
         "compiled_functions": len(accepted),
         "compiled_reference_body_bytes": sum(x["body_bytes"] for x in accepted),
