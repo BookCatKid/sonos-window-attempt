@@ -187,6 +187,8 @@ three sections and matches 976 of the reference's 37,153,792 aligned file
 bytes. Its linked `RefWrapper::Init` function remains **41/41 bytes identical**
 to the representative reference body. This probe establishes a linker
 measurement path; it does not reconstruct the full library.
+Run `tools/inspect_link_probe.py` with the downloaded DLL and map paths to
+check both the linked body and the PE profile without executing the DLL.
 
 The full-DLL comparison command requires complete identity by default; pass
 `--threshold 95` to check the documented aligned-byte and per-section target.
