@@ -25,6 +25,10 @@ using undefined8 = unsigned long long;
 using undefined = unsigned int;
 using uint = unsigned int;
 using ulong = unsigned long;
+using byte = unsigned char;
+using ushort = unsigned short;
+using longlong = long long;
+using float10 = long double;
 using code = int(...);
 '''
 KNOWN_CALLS = {'if', 'while', 'switch', 'sizeof', 'return', 'int', 'uint', 'long',
@@ -119,6 +123,44 @@ def msvc_compatible_labels(source):
     )
 
 
+def width_preserving_pointer_casts(source):
+    """Make Ghidra's x86 pointer stores legal C++ without changing width.
+
+    Ghidra frequently types an object slot as ``undefined4`` while a temporary
+    feeding that slot is a pointer.  On the 32-bit target both are one machine
+    word, but C++ requires the conversion to be explicit.  Restrict the rewrite
+    to assignments whose destination is known to be an undefined4/uint slot.
+    """
+    pointer_vars = set(re.findall(
+        r'\b(?:[A-Za-z_]\w*(?:::[A-Za-z_]\w*)*|undefined[1248])\s*\*+\s*(\w+)',
+        source,
+    ))
+    word_pointer_vars = set(re.findall(r'\b(?:undefined4|uint)\s*\*\s*(\w+)', source))
+    word_scalar_vars = set(re.findall(r'\b(?:undefined4|uint)\s+(\w+)\b', source))
+    for value in pointer_vars:
+        value_re = re.escape(value)
+        for destination in word_pointer_vars:
+            dest_re = re.escape(destination)
+            source = re.sub(
+                r'(\*\s*' + dest_re + r'\s*=\s*)' + value_re + r'(\s*;)',
+                r'\g<1>(undefined4)' + value + r'\2',
+                source,
+            )
+            source = re.sub(
+                r'(\b' + dest_re + r'\s*\[[^\]\n]+\]\s*=\s*)' + value_re + r'(\s*;)',
+                r'\g<1>(undefined4)' + value + r'\2',
+                source,
+            )
+        for destination in word_scalar_vars:
+            dest_re = re.escape(destination)
+            source = re.sub(
+                r'(\b' + dest_re + r'\s*=\s*)' + value_re + r'(\s*;)',
+                r'\g<1>(undefined4)' + value + r'\2',
+                source,
+            )
+    return source
+
+
 def cpp_source(records, rename_definitions=False):
     thunks = sorted({name for record in records for name in
                      re.findall(r'\bthunk_FUN_[0-9a-f]{8}\b', record['decompiled_c'])})
@@ -126,7 +168,9 @@ def cpp_source(records, rename_definitions=False):
     definitions = []
     for record in records:
         definition = definition_with_entry_name(record) if rename_definitions else record['decompiled_c']
+        definition = width_preserving_pointer_casts(definition)
         definition = msvc_compatible_labels(msvc_compatible_thiscall(definition))
+        definition = '\n'.join(line.rstrip() for line in definition.splitlines())
         definitions.append(
             f'// Reference entry {record["entry"]}; body size {record["body_bytes"]} bytes.\n'
             f'#line 1 "ENTRY_{record["entry"]}"\n'
