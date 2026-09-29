@@ -41,6 +41,14 @@ cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\ghidra_communication.obj src\gene
 if errorlevel 1 goto failed
 cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\ref_wrapper_ctor.obj src\ref_wrapper_ctor.cpp > out\ref_wrapper_ctor.log 2>&1
 if errorlevel 1 goto failed
+cl /nologo /O2 /bigobj /c /Foout\native_typed_expanded_o2.obj src\generated\native_typed_expanded.cpp > out\native_typed_expanded_o2.log 2>&1
+if errorlevel 1 goto failed
+cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\native_typed_expanded_reference_flags.obj src\generated\native_typed_expanded.cpp > out\native_typed_expanded_reference_flags.log 2>&1
+if errorlevel 1 goto failed
+cl /nologo /O2 /bigobj /c /Foout\native_virtual_slots_o2.obj src\generated\native_virtual_slots.cpp > out\native_virtual_slots_o2.log 2>&1
+if errorlevel 1 goto failed
+cl /nologo /O2 /bigobj /c /Foout\scstr_virtual_slots_o2.obj src\generated\scstr_virtual_slots.cpp > out\scstr_virtual_slots_o2.log 2>&1
+if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /c /Foout\scstr_byte_offsets_o2.obj src\generated\scstr_byte_offsets.cpp > out\scstr_byte_offsets_o2.log 2>&1
 if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /c /Foout\scstr_byte_virtual_o2.obj src\generated\scstr_byte_virtual.cpp > out\scstr_byte_virtual_o2.log 2>&1
@@ -131,6 +139,7 @@ if errorlevel 1 goto failed
 exit /b 0
 
 :failed
+for %%F in (out\scstr_virtual_slots*.log) do if exist %%F type %%F
 for %%F in (out\scstr_byte*.log) do if exist %%F type %%F
 for %%F in (out\native_virtual*.log out\scstr_virtual*.log) do if exist %%F type %%F
 for %%F in (out\native_typed*.log out\scstr_typed*.log) do if exist %%F type %%F

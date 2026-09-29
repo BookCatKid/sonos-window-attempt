@@ -236,6 +236,39 @@ def restore_virtual_refcount_calls(source):
     return source, count
 
 
+def restore_virtual_zero_arg_calls(source):
+    """Restore this for integer-result virtual calls at observed x86 slots.
+
+    These declarations are compiler probes, not established API prototypes.
+    Only byte-verified resulting bodies may enter the coverage inventory.
+    """
+    slots = set()
+    count = 0
+    patterns = [
+        r'\(\*\*\(code \*\*\)\(\*([A-Za-z_]\w*) \+ (0x[0-9a-f]+|\d+)\)\)\(\)',
+        r'\(\*\*\(code \*\*\)\(\*\(int \*\)\(([^()\n]+)\) \+ (0x[0-9a-f]+|\d+)\)\)\(\)',
+    ]
+    def replace(match):
+        nonlocal count
+        offset = int(match.group(2), 0)
+        if offset % 4 or offset > 1020:
+            return match.group(0)
+        slot = offset // 4
+        slots.add(slot)
+        count += 1
+        return f'((RecoveredVirtualSlots *)({match.group(1)}))->VirtualSlot{slot}()'
+    for pattern in patterns:
+        source = re.sub(pattern, replace, source)
+    # Slot zero is expressed without an addition by the decompiler.
+    def replace_zero(match):
+        nonlocal count
+        slots.add(0)
+        count += 1
+        return f'((RecoveredVirtualSlots *)({match.group(1)}))->VirtualSlot0()'
+    source = re.sub(r'\(\*\*\(code \*\*\)\*([A-Za-z_]\w*)\)\(\)', replace_zero, source)
+    return source, count, slots
+
+
 def restore_pointer_width_casts(source):
     """Make Ghidra's implicit pointer-to-undefined4 stores valid x86 C++."""
     word_pointers = set(re.findall(r'\bundefined4\s*\*\s*(\w+)', source))
@@ -280,7 +313,7 @@ def eligible(source):
         return False
     calls = set(PLAIN_CALL.findall(body))
     return not {call for call in calls - ALLOWED_CALLS
-                if not re.fullmatch(r'(?:thunk_)?FUN_[0-9a-f]{8}', call)}
+                if not re.fullmatch(r'(?:thunk_)?FUN_[0-9a-f]{8}|VirtualSlot\d+', call)}
 
 
 def make_msvc_member(source, entry):
@@ -328,13 +361,28 @@ def cpp_source(records):
     declarations.extend(f'extern int {name}(...);' for name in calls
                         if name not in typed_declarations)
     declarations = '\n'.join(declarations)
-    members = [make_msvc_member(r['source'], r['entry']) for r in records]
+    # Different recovered functions can infer opposite signedness for the same
+    # byte global. Preserve each local pointer type explicitly when taking its
+    # address, so batching does not introduce a declaration conflict.
+    members = []
+    for record in records:
+        source = record['source']
+        for name in set(re.findall(r'\bchar\s*\*\s*(\w+)', source)):
+            source = re.sub(r'(\b' + re.escape(name) + r'\s*=\s*)'
+                            r'(&(?:DAT_|PTR_|s_)[A-Za-z_0-9]+)(\s*;)',
+                            r'\1(char *)\2\3', source)
+        members.append(make_msvc_member(source, record['entry']))
     member_declarations = '\n'.join(decl for decl, _ in members if decl)
     functions = '\n'.join(
         f'// Reference entry {r["entry"]}; body size {r["body_bytes"]} bytes.\n'
         f'#line 1 "ENTRY_{r["entry"]}"\n{member[1]}'
         for r, member in zip(records, members))
-    return HEADER + DECLARATION_ALIASES + SCSTR + declarations + '\n' + member_declarations + '\n' + functions
+    virtual_slots = {slot for r in records for slot in r.get('virtual_slots', [])}
+    virtual_class = ''
+    if virtual_slots:
+        virtual_class = ('struct RecoveredVirtualSlots {\n' + '\n'.join(
+            f'  virtual int VirtualSlot{slot}();' for slot in range(max(virtual_slots)+1)) + '\n};\n')
+    return HEADER + DECLARATION_ALIASES + SCSTR + virtual_class + declarations + '\n' + member_declarations + '\n' + functions
 
 
 def syntax(records, scratch):
@@ -374,6 +422,8 @@ def main():
                         default=ROOT / 'analysis' / 'compiled-cpp-scstr')
     parser.add_argument('--virtual-refcount-calls', action='store_true',
                         help='Restore implicit this for standalone refcount virtual dispatches')
+    parser.add_argument('--virtual-zero-arg-calls', action='store_true',
+                        help='Probe implicit receivers for integer-result virtual calls without explicit arguments')
     parser.add_argument('--typed-calls', action='store_true',
                         help='Use inferred headers to recover direct call argument types and conventions')
     parser.add_argument('--byte-pointer-offsets', action='store_true',
@@ -405,6 +455,9 @@ def main():
             rewritten = msvc_compatible_labels(rewritten)
             rewritten = restore_query_addref(rewritten, record['body_bytes'])
             virtual_count = 0
+            virtual_slots = set()
+            if args.virtual_zero_arg_calls:
+                rewritten, virtual_count, virtual_slots = restore_virtual_zero_arg_calls(rewritten)
             if args.virtual_refcount_calls:
                 rewritten, virtual_count = restore_virtual_refcount_calls(rewritten)
         if rewritten and eligible(rewritten):
@@ -413,11 +466,12 @@ def main():
                 rewritten, declarations, changed = call_abi.lower(rewritten)
                 if rewritten is None or changed + virtual_count == 0:
                     continue
-            if args.virtual_refcount_calls and not args.typed_calls and virtual_count == 0:
+            if (args.virtual_refcount_calls or args.virtual_zero_arg_calls) and not args.typed_calls and virtual_count == 0:
                 continue
             candidates.append({**record, 'source': rewritten, 'vftables': labels,
                                'byte_offset_sites': byte_offsets,
                                'virtual_calls': virtual_count,
+                               'virtual_slots': sorted(virtual_slots),
                                'abi_declarations': declarations, 'typed_calls': changed})
     candidates.sort(key=lambda r: int(r['entry'], 16))
     print(f'Candidates: {len(candidates)}', flush=True)
@@ -454,7 +508,9 @@ def main():
                       'compiled_reference_body_bytes': sum(r['body_bytes'] for r in accepted),
                       'syntax_rejected': len(failures),
                       'typed_call_sites': sum(r.get('typed_calls', 0) for r in accepted),
-                      'virtual_refcount_call_sites': sum(r.get('virtual_calls', 0) for r in accepted),
+                      'virtual_call_sites': sum(r.get('virtual_calls', 0) for r in accepted),
+                      'virtual_refcount_call_sites': sum(r.get('virtual_calls', 0) for r in accepted) if args.virtual_refcount_calls else 0,
+                      'virtual_zero_arg_call_sites': sum(r.get('virtual_calls', 0) for r in accepted) if args.virtual_zero_arg_calls else 0,
                       'byte_offset_sites': sum(r.get('byte_offset_sites', 0) for r in accepted),
                       'object_bytes': obj.stat().st_size,
                       'scope': 'C++ object compilation; byte matching measured separately'}

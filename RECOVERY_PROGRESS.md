@@ -41,3 +41,24 @@ Local syntax/object gates accept 1,971 native functions / 137,738 reference byte
 Pinned MSVC 14.28 run https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36624965852 succeeded. Both native compiler flag variants verify 497 exact bodies / 19,821 bytes after relocation resolution; the SCStr variant verifies six / 621 bytes. After removing overlap with prior matching variants, this adds 359 functions / 13,978 distinct reference bytes.
 
 The updated authoritative MSVC audit is `analysis/recovery-coverage-msvc-typed.json`: 153,124 distinct matching bodies / 972,083 distinct reference bytes, or 3.799771% of the executable virtual span. No linked DLL has been verified at 95%. Callers still need more recovery where arguments are implicit in registers, inferred prototypes disagree with caller use, or EH scaffolding must be expressed through C++ lifetimes. Merely changing declarations cannot repair those source structures.
+
+
+## Compiler sweep and virtual receiver recovery
+
+The eight-profile, four-family pinned MSVC sweep succeeded in run https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36626235420 . Rechecking the original O2 bulk object with the improved relocation comparator explains most apparent new matches. Relative to freshly rechecked family baselines, alternate flags add only 16 distinct functions / 251 bytes. The full audited checkpoint `analysis/recovery-coverage-msvc-sweep.json` verifies 153,726 distinct bodies / 976,453 bytes (3.816853%). The sweep is now opt-in through the workflow's `sweep_flags` input.
+
+Commit `57268c5` restores explicit C++ member receivers for provisional no-argument virtual slots 1 and 2. Pinned build https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36628347716 succeeded. Both native flag variants verify 2,452 bodies / 78,833 bytes, and the SCStr variant verifies eight / 513 bytes. All 2,460 bodies are new to the previous inventory. Audit `analysis/recovery-coverage-msvc-virtual.json` verifies 156,186 distinct bodies / 1,055,799 bytes (4.127008%). These call declarations remain provisional API types; only byte-verified bodies enter coverage.
+
+## SCStr byte-offset correction
+
+Saved Ghidra signatures report SCStr pointee size 1 in all 255 SCStr pointer parameters with that metadata. The real compiler-facing SCStr class has a four-byte pointer field. Translating `param_1 + 4` directly therefore changed the recovered byte offset from 4 to 16. The opt-in `--byte-pointer-offsets` transformation preserves arithmetic through `char *` while retaining the real class layout for calls/construction. It handles explicit parenthesized offsets; it does not claim to recover arbitrary pointer increments, indexes, or nested expressions.
+
+Commit `215280a` compiles 4,019 SCStr functions / 223,870 reference bytes with 1,106 corrected offsets, plus a 185-function virtual-receiver variant with 211 corrected offsets. Pinned run https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36629017193 succeeded. The offset-only object verifies 933 bodies / 80,593 bytes; both combined flag variants verify 13 bodies / 969 bytes. In particular function `101aaa70` now matches all 90 bytes, with its two call relocations resolved.
+
+After deduplication, the offset variants add 13 functions / 772 bytes. Audit `analysis/recovery-coverage-msvc-byte-offsets.json` verifies 156,199 distinct bodies / 1,056,571 bytes (4.130026% of the executable virtual span). No whole linked DLL has achieved the requested 95% equality.
+
+## Broader virtual slots and mixed native calls
+
+The new `--virtual-zero-arg-calls` probes integer-result virtual dispatch at recovered byte offsets, including slot zero and calls whose return value is used. Slot declarations are ordinary C++ virtual methods; argument-bearing calls are left unchanged. The local native gate accepts 5,739 functions / 282,953 reference bytes with 8,645 restored receiver sites; the SCStr gate accepts 248 functions / 26,096 bytes with 434 sites. Byte matching awaits the next pinned build.
+
+`--expanded-eligibility` admits supported global references and typed direct calls in native bodies, using the existing global and vtable declarations. Explicit character-pointer casts preserve local byte-pointer signedness when separate functions infer different types for one global. Exception-frame and unsupported macro lowering remain excluded; they require compiler-generated C++ lifetimes rather than deleting EH behavior.
