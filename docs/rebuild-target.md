@@ -53,3 +53,13 @@ but unclassified bytes are not assumed to be padding. `.rdata` contributes
 9,115,648 bytes, including 3,962,133 zero bytes. Exact function bodies alone
 cannot satisfy the section and whole-file targets; C++ code order, data, and
 relocation layout must be reconstructed.
+
+The reference begins `.text` with 125,900 consecutive five-byte incremental
+link thunks (629,500 bytes). The current pinned combined probe produces the
+same thunk form for 1,671 destinations, showing that ordinary C++ plus the
+pinned linker can recreate this structure. Of the reference thunk destinations,
+46,486 do not currently coincide with an inventoried Ghidra function entry.
+Recovering those entries is the next bulk analysis target. The reference
+`.reloc` directory contains 808,521 `HIGHLOW` records, including 479,999
+relocations into `.rdata` and 318,177 into `.text`; data and code ordering both
+matter for the final aligned score.
