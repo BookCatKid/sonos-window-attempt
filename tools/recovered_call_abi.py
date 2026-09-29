@@ -110,8 +110,10 @@ def prototype(record):
 
 
 class CallABI:
-    def __init__(self, paths, recover_implicit_register=False):
+    def __init__(self, paths, recover_implicit_register=False,
+                 implicit_register_members=False):
         self.recover_implicit_register = recover_implicit_register
+        self.implicit_register_members = implicit_register_members
         self.prototypes = {r['entry']: p for r in load_records(paths).values()
                            if (p := prototype(r)) is not None}
         self.symbols = load_symbol_vas(DEFAULT_SYMBOLS)
@@ -164,14 +166,18 @@ class CallABI:
                 continue
             close = closing_paren(source, match.end() - 1)
             values = arguments(source[match.end():close])
+            recovered_implicit = False
             if (implicit_receiver and proto['cc'] in {'__fastcall', '__thiscall'} and
                     len(values) + 1 == len(proto['parameters'])):
                 values.insert(0, implicit_receiver)
+                recovered_implicit = True
             if len(values) != len(proto['parameters']):
                 continue
             alias = 'abi_call_' + name
             casts = [f'({typ})({value})' for typ, value in zip(proto['parameters'], values)]
-            if proto['cc'] == '__thiscall':
+            if (proto['cc'] == '__thiscall' or
+                    (recovered_implicit and self.implicit_register_members and
+                     proto['cc'] == '__fastcall')):
                 owner = 'CallABI_' + name
                 params = ', '.join(proto['parameters'][1:])
                 declarations[alias] = f'struct {owner} {{ {proto["result"]} {name}({params}); }};'

@@ -153,9 +153,12 @@ def main():
     parser.add_argument("--output-dir", type=Path, default=ROOT / "analysis/compiled-cpp-multistate-terminate")
     parser.add_argument("--emit-source", type=Path, default=ROOT / "src/generated/multistate_terminate_guards.cpp")
     parser.add_argument("--emit-index", type=Path, default=ROOT / "src/generated/multistate-terminate-guards-index.tsv")
+    parser.add_argument("--implicit-register-members", action="store_true",
+                        help="Express recovered implicit ECX calls as genuine C++ member calls")
     args = parser.parse_args()
     records = load_records(args.exports)
-    abi = CallABI(args.exports, recover_implicit_register=True)
+    abi = CallABI(args.exports, recover_implicit_register=True,
+                  implicit_register_members=args.implicit_register_members)
     candidates = []
     for line in args.evidence.open():
         evidence = json.loads(line)

@@ -36,6 +36,10 @@
     "directory": "analysis/compiled-cpp-multistate-terminate"
   },
   {
+    "object": "multistate_terminate_members_reference_flags",
+    "directory": "analysis/compiled-cpp-multistate-terminate-members"
+  },
+  {
     "object": "signature_pilot_reference_flags",
     "directory": "analysis/compiled-cpp-signature-pilot"
   },
