@@ -41,6 +41,8 @@ cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\ghidra_communication.obj src\gene
 if errorlevel 1 goto failed
 cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\ref_wrapper_ctor.obj src\ref_wrapper_ctor.cpp > out\ref_wrapper_ctor.log 2>&1
 if errorlevel 1 goto failed
+cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\single_state_guards_reference_flags.obj src\generated\single_state_guards.cpp > out\single_state_guards_reference_flags.log 2>&1
+if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\inline_cleanup_reference_flags.obj src\generated\inline_cleanup.cpp > out\inline_cleanup_reference_flags.log 2>&1
 if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\noexcept_cleanup_reference_flags.obj src\generated\noexcept_cleanup.cpp > out\noexcept_cleanup_reference_flags.log 2>&1
@@ -145,6 +147,7 @@ if errorlevel 1 goto failed
 exit /b 0
 
 :failed
+for %%F in (out\single_state_guards*.log) do if exist %%F type %%F
 for %%F in (out\inline_cleanup*.log) do if exist %%F type %%F
 for %%F in (out\noexcept_cleanup*.log) do if exist %%F type %%F
 for %%F in (out\scstr_virtual_slots*.log) do if exist %%F type %%F

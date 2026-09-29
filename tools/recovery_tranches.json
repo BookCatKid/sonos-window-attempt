@@ -26,5 +26,9 @@
   {
     "object": "inline_cleanup_reference_flags",
     "directory": "analysis/compiled-cpp-inline-cleanup"
+  },
+  {
+    "object": "single_state_guards_reference_flags",
+    "directory": "analysis/compiled-cpp-single-state-guards"
   }
 ]
