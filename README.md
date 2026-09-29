@@ -206,7 +206,8 @@ relocation operands differ because the probe has a different layout, so none
 of those 633 whole bodies is byte identical. Run `tools/inspect_query_link.py`
 with the downloaded DLL, map, and two objects to reproduce this check.
 The linked ownership probe remains 7,168 bytes and has 948 aligned bytes equal
-to the 37,153,792-byte reference. These probes establish C++ source and link
+to the 37,153,792-byte reference. The 105,984-byte query probe has 3,548
+aligned bytes equal to the reference (0.00955%). These probes establish C++ source and link
 fidelity for specific functions; **95% whole-DLL byte matching has not been
 reached**.
 
