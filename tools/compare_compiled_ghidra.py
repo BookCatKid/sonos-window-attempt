@@ -30,13 +30,32 @@ def u32(data, pos):
 
 def read_coff(path):
     data = path.read_bytes()
-    if u16(data, 0) != 0x14c:
+    bigobj = len(data) >= 56 and u16(data, 0) == 0 and u16(data, 2) == 0xffff
+    if bigobj:
+        if u16(data, 6) != 0x14c:
+            raise ValueError(f'{path}: expected x86 COFF BigObj')
+        section_count = u32(data, 44)
+        symbol_start = u32(data, 48)
+        symbol_count = u32(data, 52)
+        section_start = 56
+        symbol_size = 20
+        section_number_offset = 12
+        type_offset = 16
+        storage_offset = 18
+        aux_offset = 19
+    elif u16(data, 0) == 0x14c:
+        section_count = u16(data, 2)
+        symbol_start = u32(data, 8)
+        symbol_count = u32(data, 12)
+        section_start = 20 + u16(data, 16)
+        symbol_size = 18
+        section_number_offset = 12
+        type_offset = 14
+        storage_offset = 16
+        aux_offset = 17
+    else:
         raise ValueError(f'{path}: expected x86 COFF')
-    section_count = u16(data, 2)
-    symbol_start = u32(data, 8)
-    symbol_count = u32(data, 12)
-    section_start = 20 + u16(data, 16)
-    strings = symbol_start + symbol_count * 18
+    strings = symbol_start + symbol_count * symbol_size
     sections = []
     for number in range(section_count):
         head = section_start + number * 40
@@ -52,7 +71,7 @@ def read_coff(path):
     symbols = []
     index = 0
     while index < symbol_count:
-        head = symbol_start + index * 18
+        head = symbol_start + index * symbol_size
         raw_name = data[head:head + 8]
         if raw_name[:4] == b'\0\0\0\0':
             string_pos = strings + u32(raw_name, 4)
@@ -60,12 +79,13 @@ def read_coff(path):
             name = data[string_pos:end].decode('utf-8', errors='replace')
         else:
             name = raw_name.split(b'\0')[0].decode('utf-8', errors='replace')
-        section = struct.unpack_from('<h', data, head + 12)[0]
-        aux_count = data[head + 17]
+        section = (struct.unpack_from('<i', data, head + section_number_offset)[0]
+                   if bigobj else struct.unpack_from('<h', data, head + section_number_offset)[0])
+        aux_count = data[head + aux_offset]
         if section > 0:
             symbols.append({'name': name, 'offset': u32(data, head + 8),
-                            'section': section, 'storage': data[head + 16],
-                            'type': u16(data, head + 14)})
+                            'section': section, 'storage': data[head + storage_offset],
+                            'type': u16(data, head + type_offset)})
         index += 1 + aux_count
     return sections, symbols
 

@@ -40,6 +40,15 @@ link layout cannot meet the file target.
    imports and exports, PE header fields, and relocation layout. This is the
    acceptance measure.
 
+The current bulk recovered-thunk object contains 31,878 C++ functions. With
+the pinned VS 2019 16.9.10 / MSVC 14.28 toolchain, 22,865 function bodies
+match the reference exactly before linking, covering 208,829 reference body
+bytes. A further 1,309 functions have the same length and all non-relocation
+bytes matching, bringing the relocation-pending tranche to 24,174 functions
+and 234,984 reference body bytes. Across the common prefixes, 335,154 of
+440,518 fixed bytes match. These are object-function metrics only; they do not
+measure aligned bytes in a rebuilt DLL.
+
 Linked C++ probes exist, including a combined probe with verified function
 bodies, but no full reconstruction DLL exists yet. A copied or wrapped reference DLL
 would not count as a source rebuild. Each reported percentage names its
