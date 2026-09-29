@@ -46,12 +46,15 @@ def main():
     parser.add_argument("--start", type=int, default=0)
     parser.add_argument("--stop", type=int, help="Exclusive eligible-function index")
     parser.add_argument("--output-dir", type=Path, required=True)
+    parser.add_argument("--project-dir", type=Path, default=PROJECT,
+                        help="Saved Ghidra project directory")
     args = parser.parse_args()
     if args.min_size < 0 or args.chunk_size < 1 or args.start < 0 or args.workers < 1:
         parser.error("Sizes, start, and chunk size must be nonnegative; chunk size must be positive")
     if args.max_size and args.max_size <= args.min_size:
         parser.error("--max-size must exceed --min-size")
-    if not GHIDRA.is_file() or not (PROJECT / "WindowAttempt.gpr").is_file():
+    project = args.project_dir.resolve()
+    if not GHIDRA.is_file() or not (project / "WindowAttempt.gpr").is_file():
         parser.error("Installed Ghidra and saved WindowAttempt project are required")
     total = eligible_count(args.min_size, args.max_size, args.include_thunks)
     stop = min(args.stop if args.stop is not None else total, total)
@@ -75,7 +78,7 @@ def main():
                         str(args.max_size), str(args.include_thunks).lower()]
                        + ([str(args.workers)] if args.workers > 1 else []))
         command = [
-            str(GHIDRA), str(PROJECT), "WindowAttempt",
+            str(GHIDRA), str(project), "WindowAttempt",
             "-process", "sclib-csharp.dll", "-noanalysis", "-readOnly",
             "-scriptPath", str(ROOT / "tools" / "ghidra"),
             "-postScript", script, *script_args,

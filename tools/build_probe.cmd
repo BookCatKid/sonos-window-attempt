@@ -21,8 +21,14 @@ cl /nologo /O2 /Oy- /MD /GS /GR /EHsc /Zi /c /Foout\factory_lifetime.obj src\zon
 if errorlevel 1 goto failed
 cl /nologo /O2 /Oy- /MD /GS /GR /EHsc /Zi /c /Foout\factory_owner.obj src\zonegroup_factory_owner_candidate.cpp > out\factory_owner.log 2>&1
 if errorlevel 1 goto failed
+cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\leaf_true.obj src\leaf_true.cpp > out\leaf_true.log 2>&1
+if errorlevel 1 goto failed
+cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\leaf_false.obj src\leaf_false.cpp > out\leaf_false.log 2>&1
+if errorlevel 1 goto failed
+cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\leaf_self.obj src\leaf_self.cpp > out\leaf_self.log 2>&1
+if errorlevel 1 goto failed
 exit /b 0
 
 :failed
-for %%F in (out\setup.log out\getter.log out\result.log out\factory.log out\factory_frame_pointer.log out\factory_lifetime.log out\factory_owner.log) do if exist %%F for /f "usebackq delims=" %%L in ("%%F") do echo ::error::%%L
+for %%F in (out\setup.log out\getter.log out\result.log out\factory.log out\factory_frame_pointer.log out\factory_lifetime.log out\factory_owner.log out\leaf_true.log out\leaf_false.log out\leaf_self.log) do if exist %%F for /f "usebackq delims=" %%L in ("%%F") do echo ::error::%%L
 exit /b 1

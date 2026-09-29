@@ -11,11 +11,19 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 INVENTORY = ROOT / "analysis" / "function-inventory.tsv"
 DEFAULT_ALIASES = ROOT / "analysis" / "export-aliases.tsv"
+CLASSES = ROOT / "analysis" / "function-classes.tsv"
 
 
 def inventory():
     with INVENTORY.open(newline="") as file:
         return {row["entry"]: row for row in csv.DictReader(file, delimiter="\t")}
+
+
+def function_classes():
+    if not CLASSES.is_file():
+        return {}
+    with CLASSES.open(newline="") as file:
+        return {row["entry"]: row["class"] for row in csv.DictReader(file, delimiter="\t")}
 
 
 def export_records(paths):
@@ -25,7 +33,12 @@ def export_records(paths):
             for line in file:
                 if not line.strip():
                     continue
-                record = json.loads(line)
+                try:
+                    record = json.loads(line)
+                except json.JSONDecodeError:
+                    if not line.endswith("\n"):
+                        break  # An active exporter may have a partial final line.
+                    raise
                 records[record["entry"]] = record
     return records
 
@@ -81,6 +94,7 @@ def main():
         parser.error("--functions-per-file must be positive")
 
     known = inventory()
+    classes = function_classes()
     records = export_records(args.exports)
     labels = labels_from(args.labels_file)
     aliases = aliases_from(args.aliases_file)
@@ -109,6 +123,8 @@ def main():
         return sum(int(row["body_bytes"]) for row in rows)
     success_rows = [known[entry] for entry in successful]
     success_nonthunks = [row for row in success_rows if row["thunk"] == "false"]
+    other_rows = [row for row in all_rows if classes.get(row["entry"]) == "other"]
+    success_other = [row for row in success_rows if classes.get(row["entry"]) == "other"]
     named = sum(not record["name"].startswith(("FUN_", "thunk_FUN_"))
                 for record in sorted_records)
     no_unknown_types = sum(not re.search(r"\bundefined\d*\b", record["decompiled_c"])
@@ -127,6 +143,12 @@ def main():
         "identified_nonthunk_body_bytes": row_bytes(nonthunks),
         "decompiled_nonthunk_body_bytes": row_bytes(success_nonthunks),
         "nonthunk_body_byte_coverage_percent": percent(row_bytes(success_nonthunks), row_bytes(nonthunks)),
+        "identified_non_glue_functions": len(other_rows),
+        "decompiled_non_glue_functions": len(success_other),
+        "non_glue_function_coverage_percent": percent(len(success_other), len(other_rows)),
+        "identified_non_glue_body_bytes": row_bytes(other_rows),
+        "decompiled_non_glue_body_bytes": row_bytes(success_other),
+        "non_glue_body_byte_coverage_percent": percent(row_bytes(success_other), row_bytes(other_rows)),
         "not_included_or_failed_functions": len(known) - len(success_rows),
         "pseudocode_files": (len(sorted_records) + args.functions_per_file - 1) // args.functions_per_file,
         "decompiled_functions_with_existing_names": named,
@@ -152,13 +174,17 @@ def main():
         f"{row_bytes(all_rows):,} ({metrics['body_byte_coverage_percent']:.2f}%).\n"
         f"- Non-thunk function coverage: {len(success_nonthunks):,}/{len(nonthunks):,} "
         f"({metrics['nonthunk_function_coverage_percent']:.2f}%).\n"
+        f"- Non-glue body-byte coverage: {row_bytes(success_other):,}/"
+        f"{row_bytes(other_rows):,} ({metrics['non_glue_body_byte_coverage_percent']:.2f}%).\n"
         f"- Existing human-readable names: {named:,}/{len(success_rows):,}.\n"
         f"- Mapped export aliases: {aliased:,}/{len(success_rows):,}.\n"
         f"- No `undefined` type tokens: {no_unknown_types:,}/{len(success_rows):,}.\n\n"
         "The denominator is the set of functions identified by Ghidra in the saved "
         "DLL analysis. It does not represent the whole DLL file, data sections, or "
         "a count of recompiled source functions. Use `index.tsv` to locate a function "
-        "by address.\n"
+        "by address. The non-glue tier excludes Ghidra-marked thunks and two "
+        "explicitly matched frame-relative tail-jump shapes; that classification "
+        "is structural and may include some meaningful adjustor functions.\n"
     )
     print(json.dumps(metrics, indent=2))
 
