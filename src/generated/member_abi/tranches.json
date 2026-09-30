@@ -182,5 +182,17 @@
   {
     "object": "event_factories_value_scstr_key_reference_flags",
     "directory": "analysis/compiled-cpp-event-factories-value-scstr-key"
+  },
+  {
+    "object": "event_factories_value_scstr_temporary_reference_flags",
+    "directory": "analysis/compiled-cpp-event-factories-value-scstr-temporary"
+  },
+  {
+    "object": "event_factories_value_const_reference_reference_flags",
+    "directory": "analysis/compiled-cpp-event-factories-value-const-reference"
+  },
+  {
+    "object": "event_destructor_bridges_reference_flags",
+    "directory": "analysis/compiled-cpp-event-destructor-bridges"
   }
 ]

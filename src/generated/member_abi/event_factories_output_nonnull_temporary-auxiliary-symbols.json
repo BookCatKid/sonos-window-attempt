@@ -1,0 +1,37 @@
+[
+  {
+    "symbol": "??1Stopped_thunk_FUN_10dfd540@@QAE@XZ",
+    "owner_entry": "10e00c90",
+    "state": 2,
+    "call_target": "10059287",
+    "body_entry": "10dff3e0"
+  },
+  {
+    "symbol": "??1Started_thunk_FUN_10dfd470@@QAE@XZ",
+    "owner_entry": "10e00e20",
+    "state": 2,
+    "call_target": "1003be35",
+    "body_entry": "10dff3d0"
+  },
+  {
+    "symbol": "??1Cancelled@@QAE@XZ",
+    "owner_entry": "10e00c90",
+    "state": 5,
+    "call_target": "10025626",
+    "body_entry": "10dfe940"
+  },
+  {
+    "symbol": "??1Shown@@QAE@XZ",
+    "owner_entry": "10e00e20",
+    "state": 5,
+    "call_target": "10059dae",
+    "body_entry": "10dfe960"
+  },
+  {
+    "symbol": "??1SCStr@@QAE@XZ",
+    "owner_entry": "10e00c90",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  }
+]

@@ -1,9 +1,35 @@
 #!/usr/bin/env python3
 """Recover class-valued event factories using native receiver/return ABI evidence."""
-import csv,json,os,subprocess
+import csv,json,os,struct,subprocess
 from pathlib import Path
 from compile_ghidra_cpp import ROOT,COMPILER
 from compile_scstr_cpp import cpp_source
+from classify_functions import DLL,function_bytes,section_map
+
+
+def auxiliary_bindings(inventory):
+    reference=DLL.read_bytes();base,sections=section_map(reference)
+    def read(va,size):return function_bytes(reference,va,size,base,sections)
+    owners={row['entry']:row for row in inventory}
+    roles=[('??1Stopped_thunk_FUN_10dfd540@@QAE@XZ','10e00c90',2),
+           ('??1Started_thunk_FUN_10dfd470@@QAE@XZ','10e00e20',2),
+           ('??1Cancelled@@QAE@XZ','10e00c90',5),
+           ('??1Shown@@QAE@XZ','10e00e20',5),
+           ('??1SCStr@@QAE@XZ','10e00c90',0)]
+    result=[]
+    for symbol,entry,state in roles:
+        metadata=read(int(owners[entry]['reference_metadata'],16),36)
+        table=struct.unpack_from('<I',metadata,8)[0]
+        action=struct.unpack_from('<I',read(table+state*8,8),4)[0]
+        code=read(action,8)
+        if code[:2]!=b'\x8d\x4d' or code[3]!=0xe9:raise ValueError('Expected native frame-relative destructor action')
+        target=(action+8+struct.unpack_from('<i',code,4)[0])&0xffffffff
+        thunk=read(target,5)
+        if thunk[0]!=0xe9:raise ValueError('Expected native linker jump')
+        body=(target+5+struct.unpack_from('<i',thunk,1)[0])&0xffffffff
+        result.append({'symbol':symbol,'owner_entry':entry,'state':state,
+                       'call_target':f'{target:08x}','body_entry':f'{body:08x}'})
+    return result
 
 LIBRARY='''extern "C" void _ReadWriteBarrier();
 #pragma intrinsic(_ReadWriteBarrier)
@@ -115,6 +141,15 @@ __forceinline FactoryKeyString(const char *text) { ((SCStr *)this)->int_allocRep
     libraries['event_factories_value_scstr_key']=improved_library+'''__forceinline SCStr::SCStr(const char *text) { int_allocRep((char *)text); }
 __forceinline SCStr::~SCStr() { int_release(); rep=0; }
 '''
+    variants['event_factories_value_scstr_temporary']=variants['event_factories_value_scstr_key'].replace(
+        '{ SCStr key("value"); kind=source->value((SCStr *)&key); }',
+        'kind=source->value(factory_key_address(SCStr("value")));')
+    libraries['event_factories_value_scstr_temporary']=libraries['event_factories_value_scstr_key']+'''__forceinline SCStr *factory_key_address(SCStr &&key) { return &key; }
+'''
+    variants['event_factories_value_const_reference']=variants['event_factories_value_scstr_key'].replace(
+        '{ SCStr key("value"); kind=source->value((SCStr *)&key); }', 'kind=source->value(SCStr("value"));')
+    libraries['event_factories_value_const_reference']=libraries['event_factories_value_scstr_key'].replace(
+        'virtual int value(SCStr *key);', 'virtual int value(const SCStr &key);')
     for name,body in variants.items():
         library=libraries[name]
         if name.startswith('event_factories_output_throwing'):
@@ -125,6 +160,17 @@ __forceinline SCStr::~SCStr() { int_release(); rep=0; }
             candidates.append({**r,'source':body.replace('ENTRY',entry).replace('STOP',stop).replace('ALERT',alert),
                                'abi_declarations':{'factory_library':library}})
         emit_variant(name,candidates,evidence)
+    bridges=auxiliary_bindings([{'entry':entry,'reference_metadata':evidence[entry]['metadata']['address']}
+                               for entry in ['10e00c90','10e00e20']])[:4]
+    bridge_library='struct Event_thunk_FUN_10074c85 { ~Event_thunk_FUN_10074c85() noexcept; };\n'
+    bridge_library+='struct NativeEventFinalizer { '+''.join('void FUN_'+item['body_entry']+'(); ' for item in bridges)+'};\n'
+    candidates=[]
+    for item in bridges:
+        entry=item['body_entry']
+        candidates.append({'entry':entry,'name':'FUN_'+entry,'body_bytes':5,
+            'source':'void NativeEventFinalizer::FUN_'+entry+'() { ((Event_thunk_FUN_10074c85 *)this)->~Event_thunk_FUN_10074c85(); }',
+            'abi_declarations':{'event_bridge_library':bridge_library}})
+    emit_variant('event_destructor_bridges',candidates,evidence)
 
 
 def emit_variant(name,candidates,evidence):
@@ -137,12 +183,16 @@ def emit_variant(name,candidates,evidence):
     with index.open('w',newline='') as file:
         w=csv.writer(file,delimiter='\t');w.writerow(['entry','name','reference_body_bytes']);w.writerows((r['entry'],r['name'],r['body_bytes']) for r in candidates)
     inventory=[{'entry':r['entry'],'reference_handler':evidence[r['entry']]['handler'],
-        'reference_metadata':evidence[r['entry']]['metadata']['address'],'reference_state_count':evidence[r['entry']]['metadata']['state_count']} for r in candidates]
+        'reference_metadata':evidence[r['entry']]['metadata']['address'],'reference_state_count':evidence[r['entry']]['metadata']['state_count']}
+        for r in candidates if r['entry'] in evidence and evidence[r['entry']].get('handler')]
     (directory/'reference-eh-inventory.json').write_text(json.dumps(inventory,indent=2)+'\n')
+    bindings=auxiliary_bindings(inventory) if inventory else []
+    (directory/'reference-auxiliary-symbols.json').write_text(json.dumps(bindings,indent=2)+'\n')
     emit=ROOT/'src/generated/member_abi';(emit/(name+'.cpp')).write_text(target.read_text());(emit/(name+'-index.tsv')).write_bytes(index.read_bytes())
+    (emit/(name+'-auxiliary-symbols.json')).write_text(json.dumps(bindings,indent=2)+'\n')
     path=emit/'tranches.json';manifest=json.loads(path.read_text());object_name=name+'_reference_flags'
     manifest=[r for r in manifest if r['object']!=object_name]+[{'object':object_name,'directory':str(directory.relative_to(ROOT))}]
-    path.write_text(json.dumps(manifest,indent=2)+'\n');print(json.dumps({'compiled_functions':2,'reference_bytes':616,'pinned_msvc_verified':False}))
+    path.write_text(json.dumps(manifest,indent=2)+'\n');print(json.dumps({'compiled_functions':len(candidates),'reference_bytes':sum(r['body_bytes'] for r in candidates),'pinned_msvc_verified':False}))
 
 
 if __name__=='__main__':main()

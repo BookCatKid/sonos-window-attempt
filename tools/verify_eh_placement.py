@@ -15,9 +15,41 @@ from compare_compiled_ghidra import read_coff,relocation_value,generated_symbol_
 
 U32=lambda data,pos=0:struct.unpack_from('<I',data,pos)[0]
 
+def bound_helper_body(binding,target_va,inventory,refbytes):
+    """Establish a helper identity from its native unwind slot and one linker jump.
+
+    This chooses where to check the complete compiler-produced helper; it does
+    not admit any instruction bytes or external relocations on its own.
+    """
+    owner=inventory.get(binding.get('owner_entry'))
+    if owner is None:return None
+    metadata=refbytes(int(owner['reference_metadata'],16),36)
+    if len(metadata)!=36 or U32(metadata)!=0x19930522:return None
+    state=binding.get('state')
+    if not isinstance(state,int) or state<0 or state>=U32(metadata,4):return None
+    record=refbytes(U32(metadata,8)+state*8,8)
+    if len(record)!=8:return None
+    action=U32(record,4)
+    instructions=list(Cs(CS_ARCH_X86,CS_MODE_32).disasm(refbytes(action,16),action))
+    if len(instructions)<2 or instructions[0].mnemonic!='lea' or not instructions[0].op_str.startswith('ecx, [ebp '):return None
+    jump=instructions[1]
+    if jump.mnemonic!='jmp' or not jump.op_str.startswith('0x'):return None
+    call_target=int(binding['call_target'],16)
+    if target_va!=call_target or int(jump.op_str,16)!=call_target:return None
+    thunk=refbytes(call_target,5)
+    if len(thunk)!=5 or thunk[0]!=0xe9:return None
+    body=(call_target+5+struct.unpack_from('<i',thunk,1)[0])&0xffffffff
+    return body if body==int(binding['body_entry'],16) else None
+
 def verified_eh_targets(directory,obj,reference,base,pe_sections,symbol_vas):
     inventory=directory/'reference-eh-inventory.json'
     if not inventory.is_file():return {},None
+    inventory_rows=json.loads(inventory.read_text())
+    inventory_by_entry={item['entry']:item for item in inventory_rows}
+    bindings_path=directory/'reference-auxiliary-symbols.json'
+    bindings=json.loads(bindings_path.read_text()) if bindings_path.is_file() else []
+    bindings_by_symbol={item['symbol']:item for item in bindings}
+    if len(bindings_by_symbol)!=len(bindings):return {},{'error':'Duplicate auxiliary symbol identities'}
     pe=U32(reference,0x3c);optional=pe+24
     rva=U32(reference,optional+96+10*8)
     load_config=function_bytes(reference,base+rva,72,base,pe_sections)
@@ -170,7 +202,9 @@ def verified_eh_targets(directory,obj,reference,base,pe_sections,symbol_vas):
                     logical=generated_symbol_name(target_name)
                     match=re.fullmatch(r'(?:thunk_)?FUN_([0-9a-fA-F]{8})',logical or '')
                     declared=int(match.group(1),16) if match else None
-                    real=follow_reference_thunks(target_va) if declared==target_va else None
+                    binding=bindings_by_symbol.get(target_name)
+                    real=(bound_helper_body(binding,target_va,inventory_by_entry,refbytes) if binding else
+                          follow_reference_thunks(target_va) if declared==target_va else None)
                     if real is None:
                         current_diagnostics.append({'symbol':target_name,
                             'reference_va':f'{target_va:08x}',
@@ -178,6 +212,20 @@ def verified_eh_targets(directory,obj,reference,base,pe_sections,symbol_vas):
                     ok=(real is not None and graph(target_name,real,None,local,proofs,
                         call_placements,None,depth+1))
                     if ok:call_placements[target_name]=target_va
+            elif generated_symbol_name(target_name):
+                logical=generated_symbol_name(target_name)
+                match=re.fullmatch(r'(?:thunk_)?FUN_([0-9a-fA-F]{8})',logical or '')
+                declared=int(match.group(1),16) if match else None
+                # External ordinary members may be reached through a linker
+                # jump. Both ends must name the same independently indexed
+                # native function; opaque class names never suffice.
+                known=symbol_vas.get(logical,[])
+                ok=(declared is not None and target_va in known and
+                    follow_reference_thunks(target_va)==follow_reference_thunks(declared))
+                if not ok and declared is not None:
+                    known_body=symbol_vas.get('FUN_'+f'{declared:08x}',[])
+                    ok=(declared in known_body and follow_reference_thunks(target_va)==declared)
+                if ok:local[target_name]=target_va
             elif target_name=='___security_cookie':ok=target_va==cookie
             elif target_name=='@__security_check_cookie@4':
                 ok=cookie_check(target_va)
@@ -209,7 +257,7 @@ def verified_eh_targets(directory,obj,reference,base,pe_sections,symbol_vas):
         proofs.append({'symbol':name,'reference_va':f'{va:08x}','verified_bytes':size})
         return True
 
-    for item in json.loads(inventory.read_text()):
+    for item in inventory_rows:
         current_diagnostics.clear()
         entry=item['entry']
         expected_state_count=item.get('reference_state_count',1)
