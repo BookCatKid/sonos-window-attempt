@@ -154,6 +154,12 @@ def generated_symbol_name(name):
     if match:
         return match.group(1)
     match = re.search(r'(_?DAT_[0-9a-fA-F]{8}|PTR_[A-Za-z0-9_]+|s_[A-Za-z0-9_]+)', name)
+    if match:
+        return match.group(1)
+    # A global the recovered source declares itself is emitted by the compiler
+    # in mangled form, ``?g_lSCObjCount@@3IA``, while the reference image records
+    # the same global by its plain name.
+    match = re.match(r'\?([A-Za-z_]\w*)@@', name)
     return match.group(1) if match else None
 
 
@@ -173,11 +179,17 @@ def load_symbol_vas(path):
             qualified_name = record.get('qualified_name')
             if name:
                 result[name].add(address)
+                # Relocations name the imported method with the pointee constness
+                # the decompiler inferred, which can differ from the decorated
+                # name the reference image carries. Index the ABI-equivalent form
+                # so those references still reach the import thunk.
+                result[scstr_abi_key(name)].add(address)
             if qualified_name:
                 result[qualified_name].add(address)
+                result[scstr_abi_key(qualified_name)].add(address)
                 if qualified_name.endswith('::vftable'):
                     owner = qualified_name[:-len('::vftable')]
-                    alias = 'ghidra_vftable_' + owner.replace('::', '__')
+                    alias = 'ghidra_vftable_' + re.sub(r'[^0-9A-Za-z_]', '_', owner.replace('::', '__'))
                     result[alias].add(address)
     return {name: sorted(addresses) for name, addresses in result.items()}
 
@@ -275,10 +287,26 @@ def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base,
     return bytes(patched), resolved, unresolved
 
 
+def security_cookie_va(reference, image_base, pe_sections):
+    """Read the /GS security cookie address out of the reference load config."""
+    if len(reference) < 0x40:
+        return None
+    optional = u32(reference, 0x3c) + 24
+    rva = u32(reference, optional + 96 + 10 * 8)
+    load_config = function_bytes(reference, image_base + rva, 72, image_base, pe_sections)
+    if len(load_config) != 72 or u32(load_config, 0) < 64:
+        return None
+    cookie = u32(load_config, 60)
+    return cookie if function_bytes(reference, cookie, 4, image_base, pe_sections) else None
+
+
 def compare_directory(directory, reference, image_base, pe_sections, symbol_vas, object_path=None):
     selected_object = object_path or directory / 'ghidra_recovered.obj'
     sections, symbols, symbols_by_index = read_coff(
         selected_object)
+    cookie = security_cookie_va(reference, image_base, pe_sections)
+    if cookie is not None:
+        symbol_vas = ChainMap({'___security_cookie': [cookie]}, symbol_vas)
     if (directory / 'reference-eh-inventory.json').is_file():
         from verify_eh_placement import verified_eh_targets
         extra_targets, evidence = verified_eh_targets(directory, selected_object,
