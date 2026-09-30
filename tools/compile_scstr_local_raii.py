@@ -11,6 +11,7 @@ import json
 import os
 import re
 import subprocess
+import struct
 from pathlib import Path
 
 from compile_ghidra_cpp import ROOT, COMPILER, load_records, width_preserving_pointer_casts, msvc_compatible_labels
@@ -18,6 +19,31 @@ from compile_scstr_cpp import normalize_definition, cpp_source, split_valid, rew
 from compile_multistate_terminate_guards import mask_strings
 from recovered_call_abi import CallABI, arguments
 from promote_virtual_arguments import lower as lower_virtual_arguments
+from classify_functions import DLL, section_map, function_bytes
+from capstone import Cs, CS_ARCH_X86, CS_MODE_32
+
+
+def recover_incoming_receiver(record, reference, base, sections):
+    """Expose a receiver revealed after callee propagation; byte proof is final."""
+    source=record['decompiled_c']
+    declaration=re.search(r'(?m)^\s*void \*in_ECX;',source)
+    if not declaration or re.search(r'\bin_EDX\b',source):return record
+    header,sep,body=source.partition('{')
+    match=re.search(r'(?:thunk_)?FUN_[0-9a-f]{8}\s*\((.*?)\)',header,re.S)
+    if not match or '__thiscall' in header or '__fastcall' in header:return record
+    params=arguments(match.group(1));params=[] if params==['void'] else params
+    # Restrict to word-sized stack parameters and an unambiguous cleanup.
+    if any(not re.fullmatch(r'(?:undefined4|uint|int|void\s*\*|SCStr\s*\*)\s*\w+',p) for p in params):return record
+    code=function_bytes(reference,int(record['entry'],16),record['body_bytes'],base,sections)
+    cleanup={int(ins.op_str,0) if ins.op_str else 0 for ins in Cs(CS_ARCH_X86,CS_MODE_32).disasm(code,int(record['entry'],16)) if ins.mnemonic=='ret'}
+    if cleanup!={4*len(params)}:return record
+    prefix=re.sub(r'\b__(?:cdecl|stdcall)\b','',header[:match.start()]).strip()
+    header=prefix+' __thiscall FUN_'+record['entry']+'(void *ghidra_this'+''.join(', '+p for p in params)+')\n'
+    body=re.sub(r'(?m)^\s*void \*in_ECX;','',body)
+    body=re.sub(r'\bin_ECX\b','ghidra_this',body)
+    result={**record,'decompiled_c':header+sep+body,'receiver_recovered_after_propagation':True}
+    result.pop('verified_stack_cc',None)
+    return result
 
 
 def strip_cookie(source):
@@ -153,7 +179,13 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('exports',nargs='+',type=Path)
     parser.add_argument('--limit',type=int)
-    args=parser.parse_args();records=load_records(args.exports);abi=CallABI(args.exports,recover_implicit_register=True)
+    parser.add_argument('--signature-exports',nargs='+',type=Path,
+                        help='Overlay an isolated signature propagation experiment as a separate tranche')
+    args=parser.parse_args();paths=args.exports+(args.signature_exports or [])
+    records=load_records(paths);abi=CallABI(paths,recover_implicit_register=True)
+    if args.signature_exports:
+        reference=DLL.read_bytes();base,sections=section_map(reference)
+        records={entry:recover_incoming_receiver(record,reference,base,sections) for entry,record in records.items()}
     candidates=[]
     for line in (ROOT/'analysis/eh-lifetime-evidence.jsonl').open():
         evidence=json.loads(line);record=records.get(evidence['entry'])
@@ -163,7 +195,8 @@ def main():
     candidates.sort(key=lambda row:row['entry'])
     if args.limit:candidates=candidates[:args.limit]
     print('Candidates:',len(candidates),'bytes:',sum(row['body_bytes'] for row in candidates),flush=True)
-    output=ROOT/'analysis/compiled-cpp-scstr-local-raii';output.mkdir(parents=True,exist_ok=True)
+    suffix='-signatures' if args.signature_exports else ''
+    output=ROOT/('analysis/compiled-cpp-scstr-local-raii'+suffix);output.mkdir(parents=True,exist_ok=True)
     failures=[];accepted=[];scratch=output/'.syntax-probe.cpp'
     for start in range(0,len(candidates),100):accepted+=split_valid(candidates[start:start+100],scratch,failures)
     scratch.unlink(missing_ok=True)
@@ -179,12 +212,13 @@ def main():
     (output/'reference-eh-inventory.json').write_text(json.dumps([{key:row[key] for key in
         ['entry','reference_handler','reference_metadata','reference_state_count']} for row in accepted],indent=2)+'\n')
     emit=ROOT/'src/generated/member_abi';emit.mkdir(parents=True,exist_ok=True)
-    (emit/'scstr_local_raii.cpp').write_text(source.read_text());(emit/'scstr_local_raii-index.tsv').write_bytes(index.read_bytes())
+    source_stem='scstr_local_raii'+suffix.replace('-','_')
+    (emit/(source_stem+'.cpp')).write_text(source.read_text());(emit/(source_stem+'-index.tsv')).write_bytes(index.read_bytes())
     metrics={'compiled_functions':len(accepted),'reference_body_bytes':sum(row['body_bytes'] for row in accepted),
              'syntax_rejected':len(failures),'pinned_msvc_verified':False}
     (output/'coverage.json').write_text(json.dumps(metrics,indent=2)+'\n')
     (output/'failures.tsv').write_text('entry\terror\n'+''.join(f'{entry}\t{error}\n' for entry,error in failures))
-    manifest_path=emit/'tranches.json';manifest=json.loads(manifest_path.read_text());stem='scstr_local_raii_reference_flags'
+    manifest_path=emit/'tranches.json';manifest=json.loads(manifest_path.read_text()) if manifest_path.exists() else [];stem=source_stem+'_reference_flags'
     manifest=[row for row in manifest if row['object']!=stem]+[{'object':stem,'directory':str(output.relative_to(ROOT))}]
     manifest_path.write_text(json.dumps(manifest,indent=2)+'\n');print(json.dumps(metrics,indent=2))
 
