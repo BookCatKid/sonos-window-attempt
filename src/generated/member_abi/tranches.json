@@ -130,5 +130,9 @@
   {
     "object": "tree_iterators_ascending_first_reference_flags",
     "directory": "analysis/compiled-cpp-tree-iterators-ascending-first"
+  },
+  {
+    "object": "tree_iterators_cached_node_reference_flags",
+    "directory": "analysis/compiled-cpp-tree-iterators-cached-node"
   }
 ]

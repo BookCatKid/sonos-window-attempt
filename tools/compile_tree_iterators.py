@@ -22,12 +22,15 @@ return result;
 '''
 
 BODY_ASCENDING_FIRST='{\nRecovered_ENTRY result=*this;\nif (node->right->nil) {\nRecoveredIteratorNode *next=node->parent;\nwhile (!next->nil && node==next->right) { node=next; next=next->parent; }\nnode=next;\n} else {\nRecoveredIteratorNode *next=node->right;\nwhile (!next->left->nil) next=next->left;\nnode=next;\n}\nreturn result;\n}\n'
+BODY_CACHED_NODE=BODY_ASCENDING_FIRST.replace('if (node->right->nil)', 'RecoveredIteratorNode *current=node;\nif (current->right->nil)').replace('next=node->parent','next=current->parent').replace('node==next->right','current==next->right').replace('node=next; next=next->parent','node=next; current=next; next=next->parent').replace('next=node->right','next=current->right')
+
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('exports',nargs='+',type=Path)
     p.add_argument('--ascending-first',action='store_true',help='Preserve the native branch orientation as a separate hypothesis')
-    args=p.parse_args();body=BODY_ASCENDING_FIRST if args.ascending_first else BODY
-    stem='tree_iterators'+('_ascending_first' if args.ascending_first else '')
+    p.add_argument('--cached-node',action='store_true',help='Keep the current node as a separate C++ local during ascent')
+    args=p.parse_args();body=BODY_CACHED_NODE if args.cached_node else BODY_ASCENDING_FIRST if args.ascending_first else BODY
+    stem='tree_iterators'+('_cached_node' if args.cached_node else '_ascending_first' if args.ascending_first else '')
     reference=DLL.read_bytes();base,sections=section_map(reference)
     prototype=function_bytes(reference,0x101d4810,88,base,sections)
     records=load_records(args.exports)
