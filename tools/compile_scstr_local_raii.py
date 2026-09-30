@@ -11,7 +11,6 @@ import json
 import os
 import re
 import subprocess
-import struct
 from pathlib import Path
 
 from compile_ghidra_cpp import ROOT, COMPILER, load_records, width_preserving_pointer_casts, msvc_compatible_labels
@@ -60,7 +59,7 @@ def strip_cookie(source):
     return source if 'DAT_12126b84' not in source else None
 
 
-def lower(record,evidence,abi):
+def lower(record,evidence,abi,extended_storage=False):
     meta=evidence['metadata'];actions=meta['actions']
     if record['body_bytes']<=5 or meta['state_count']!=2 or len(actions)!=2:return None
     if any(meta['words'][3:8]) or any(x['next_state']!=-1 for x in actions):return None
@@ -76,7 +75,9 @@ def lower(record,evidence,abi):
     local_match=re.fullmatch(r'(?:\(SCStr\s*\*\)\s*&)?(local_[0-9a-f]+)',receiver)
     if not local_match:return None
     name=local_match.group(1)
-    declaration=re.search(r'(?m)^\s*(SCStr|undefined4|int\s*\*)\s*'+name+r'(\s*\[4\])?;',source)
+    storage_types=r'SCStr|undefined4|int\s*\*'
+    if extended_storage:storage_types+=r'|int|uint|char\s*\*|void\s*\*'
+    declaration=re.search(r'(?m)^\s*('+storage_types+r')\s*'+name+r'(\s*\[4\])?;',source)
     if not declaration:return None
     array=bool(declaration.group(2))
     if array and declaration.group(1)!='SCStr':return None
@@ -98,7 +99,16 @@ def lower(record,evidence,abi):
     # Reusing a scalar stack slot before construction requires a separate
     # storage/alias reconstruction; do not invent that lifetime here.
     prior=source[declaration.end():factory.start()]
-    if re.search(r'\b'+name+r'\b',prior):return None
+    if re.search(r'\b'+name+r'\b',prior):
+        if extended_storage:
+            # Ghidra frequently reuses an ECX spill as the later string slot.
+            # Discard only a pure parameter copy whose value is never read
+            # before the output-buffer construction overwrites that storage.
+            initializer=re.search(r'(?m)^\s*'+name+r'\s*=\s*(?:param_\d+|ghidra_this);',prior)
+            if initializer and not re.search(r'\b'+name+r'\b',prior[:initializer.start()]+prior[initializer.end():]):
+                start=declaration.end()+initializer.start();end=declaration.end()+initializer.end()
+                return lower({**record,'decompiled_c':source[:start]+source[end:]},evidence,abi,extended_storage=True)
+        return None
     cleanup_end=end+1
     semicolon=re.match(r'\s*;',source[cleanup_end:])
     if not semicolon:return None
@@ -181,6 +191,7 @@ def main():
     parser.add_argument('--limit',type=int)
     parser.add_argument('--signature-exports',nargs='+',type=Path,
                         help='Overlay an isolated signature propagation experiment as a separate tranche')
+    parser.add_argument('--extended-storage',action='store_true',help='Probe scalar string slots and unused parameter spills separately')
     args=parser.parse_args();paths=args.exports+(args.signature_exports or [])
     records=load_records(paths);abi=CallABI(paths,recover_implicit_register=True)
     if args.signature_exports:
@@ -190,12 +201,13 @@ def main():
     for line in (ROOT/'analysis/eh-lifetime-evidence.jsonl').open():
         evidence=json.loads(line);record=records.get(evidence['entry'])
         if record:
-            item=lower(record,evidence,abi)
+            item=lower(record,evidence,abi,extended_storage=args.extended_storage)
             if item:candidates.append(item)
     candidates.sort(key=lambda row:row['entry'])
     if args.limit:candidates=candidates[:args.limit]
     print('Candidates:',len(candidates),'bytes:',sum(row['body_bytes'] for row in candidates),flush=True)
     suffix='-signatures' if args.signature_exports else ''
+    if args.extended_storage:suffix+='-storage'
     output=ROOT/('analysis/compiled-cpp-scstr-local-raii'+suffix);output.mkdir(parents=True,exist_ok=True)
     failures=[];accepted=[];scratch=output/'.syntax-probe.cpp'
     for start in range(0,len(candidates),100):accepted+=split_valid(candidates[start:start+100],scratch,failures)
