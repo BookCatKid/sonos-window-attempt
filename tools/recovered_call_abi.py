@@ -157,6 +157,14 @@ class CallABI:
                     name = re.search(r'([A-Za-z_]\w*)\s*$', params[0])
                     if name:
                         implicit_receiver = name.group(1)
+            elif re.search(r'\bRecovered_[0-9a-f]{8}::FUN_[0-9a-f]{8}\s*\(', header):
+                # The member-definition gate has already made ECX implicit.
+                # Its explicit Ghidra receiver is preserved by this initializer.
+                receiver = re.search(
+                    r'\b([A-Za-z_]\w*)\s*=\s*\([^;()]+\)\s*this\s*;',
+                    source[opening_body:])
+                if receiver:
+                    implicit_receiver = receiver.group(1)
         for match in reversed(list(CALL.finditer(source, opening_body))):
             name = match.group(1)
             proto = self.resolve(name)

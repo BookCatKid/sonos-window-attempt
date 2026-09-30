@@ -30,5 +30,17 @@
   {
     "object": "high_thunk_members_virtual_arguments_reference_flags",
     "directory": "analysis/compiled-cpp-high-thunk-members-virtual-arguments"
+  },
+  {
+    "object": "thunk_members_call_abi_reference_flags",
+    "directory": "analysis/compiled-cpp-thunk-members-call-abi"
+  },
+  {
+    "object": "globals_members_call_abi_reference_flags",
+    "directory": "analysis/compiled-cpp-globals-members-call-abi"
+  },
+  {
+    "object": "high_thunk_members_call_abi_reference_flags",
+    "directory": "analysis/compiled-cpp-high-thunk-members-call-abi"
   }
 ]

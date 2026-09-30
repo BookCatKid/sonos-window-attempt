@@ -14,6 +14,12 @@ def main():
     variants = {
         "owner_parameter_throw_spec": source.replace("() noexcept { if (second)", "() throw() { if (second)"),
         "owner_parameter_nothrow_release": source.replace("virtual int VirtualSlot2();", "virtual int VirtualSlot2() noexcept;"),
+        "owner_parameter_nontrivial_copy": re.sub(
+            r"(struct (RecoveredParamOwner_FUN_[0-9a-f]+) \{)",
+            r"\1 \2(const \2 &);", source),
+        "owner_parameter_nontrivial_move": re.sub(
+            r"(struct (RecoveredParamOwner_FUN_[0-9a-f]+) \{)",
+            r"\1 \2(const \2 &); \2(\2 &&);", source),
         "owner_parameter_maythrow": source.replace("() noexcept { if (second)", "() noexcept(false) { if (second)"),
         "owner_parameter_nothrow": source.replace("~RecoveredParamOwner_FUN_", "__declspec(nothrow) ~RecoveredParamOwner_FUN_").replace("() noexcept { if (second)", "() { if (second)"),
         "owner_parameter_lambda_guard": re.sub(

@@ -8,6 +8,14 @@
     "directory": "analysis/compiled-cpp-owner-parameter-nothrow-release"
   },
   {
+    "object": "owner_parameter_nontrivial_copy_reference_flags",
+    "directory": "analysis/compiled-cpp-owner-parameter-nontrivial-copy"
+  },
+  {
+    "object": "owner_parameter_nontrivial_move_reference_flags",
+    "directory": "analysis/compiled-cpp-owner-parameter-nontrivial-move"
+  },
+  {
     "object": "owner_parameter_maythrow_reference_flags",
     "directory": "analysis/compiled-cpp-owner-parameter-maythrow"
   },
