@@ -183,6 +183,11 @@ cl /nologo /O2 /bigobj /c /Foout\recovered_vftables_o2.obj src\generated\recover
 if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\recovered_vftables_reference_flags.obj src\generated\recovered_vftables.cpp > out\recovered_vftables_reference_flags.log 2>&1
 if errorlevel 1 goto failed
+rem Packed non-executable constants and real symbolic pointer initializers.
+if exist src\generated\data\*.cpp for %%F in (src\generated\data\*.cpp) do (
+  cl /nologo /O2 /bigobj /c /Foout\%%~nF.obj %%F > out\%%~nF.log 2>&1
+  if errorlevel 1 goto failed
+)
 link /nologo /DLL /MACHINE:X86 /NOENTRY /DEBUG /INCREMENTAL /DYNAMICBASE /NXCOMPAT /BASE:0x10000000 /FILEALIGN:512 /MAP:out\wrapper_link_probe.map /OUT:out\wrapper_link_probe.dll out\ref_wrapper_ctor.obj out\ref_wrapper_assign.obj out\resource_cleanup.obj out\single_ref_wrapper_candidate.obj out\single_ref_reset_candidate.obj out\single_ref_replace_candidate.obj > out\wrapper_link_probe.log 2>&1
 if errorlevel 1 goto failed
 link /nologo /DLL /MACHINE:X86 /NOENTRY /DEBUG /INCREMENTAL /DYNAMICBASE /NXCOMPAT /BASE:0x10000000 /FILEALIGN:512 /MAP:out\query_link_probe.map /OUT:out\query_link_probe.dll out\query_family_candidate.obj out\scstr_equals_candidate.obj > out\query_link_probe.log 2>&1

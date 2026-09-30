@@ -6,6 +6,7 @@ ordinary addresses of external C++ symbols, so the compiler owns COFF fixups.
 Literal bytes are non-executable constants/assets, not instruction bodies.
 """
 import argparse
+from bisect import bisect_left
 import csv
 import hashlib
 import json
@@ -41,7 +42,8 @@ def highlow_sites(reference,layout):
 
 def source_for(pages):
     declarations=set();definitions=[]
-    for va,data,sites in pages:
+    for page in pages:
+        va,data,sites=page[:3];writable=bool(page[3]) if len(page)>3 else False
         fields=[];values=[];position=0
         for offset in sorted(sites)+[len(data)]:
             if offset<position or offset+4>len(data) and offset!=len(data):raise ValueError('Overlapping/truncated pointer field')
@@ -55,11 +57,12 @@ def source_for(pages):
             declarations.add(name);fields.append(f'const void *pointer_{offset};')
             values.append(f'(const void *)&{name}');position=offset+4
         typename=f'RecoveredData_{va:08x}';symbol=f'recovered_data_{va:08x}'
+        section='.data$R' if writable else '.rdata$R';qualifier='' if writable else 'extern const '
         definitions.append(f'struct {typename} {{ '+' '.join(fields)+' };\n'+
-            f'__declspec(allocate(".rdata$R")) extern const {typename} {symbol} = {{ '+',\n'.join(values)+' };\n'+
+            f'__declspec(allocate("{section}")) {qualifier}{typename} {symbol} = {{ '+',\n'.join(values)+' };\n'+
             f'static_assert(sizeof({typename}) == {len(data)}, "Recovered data storage width");')
     return ('// Recovered non-executable data only. Pointer fields are compiler relocations.\n'
-        '#pragma section(".rdata$R", read)\n#pragma pack(push,1)\n'+
+        '#pragma section(".rdata$R", read)\n#pragma section(".data$R", read, write)\n#pragma pack(push,1)\n'+
         '\n'.join('extern unsigned char '+name+';' for name in sorted(declarations))+'\n'+
         '\n'.join(definitions)+'\n#pragma pack(pop)\n')
 
@@ -73,7 +76,8 @@ def main():
     args=p.parse_args()
     import re
     if not re.fullmatch(r'[a-z][a-z0-9_]*',args.tag):p.error('Invalid tag')
-    if args.chunk_bytes<4096 or args.limit_bytes is not None and args.limit_bytes<1:p.error('Invalid byte limit')
+    if not 4096<=args.chunk_bytes<=131072 or args.limit_bytes is not None and args.limit_bytes<1:
+        p.error('Chunk size must be 4096..131072 and byte limit must be positive')
     reference=DLL.read_bytes();layout=profile(reference);sites=highlow_sites(reference,layout)
     selected=[s for s in layout['sections'] if s['name'] in args.sections]
     if len(selected)!=len(set(args.sections)):p.error('Unknown or duplicate section')
@@ -89,12 +93,13 @@ def main():
             if args.limit_bytes is not None and total>=args.limit_bytes:break
             end=min(position+4096,section['raw_size'])
             if args.limit_bytes is not None:end=min(end,position+args.limit_bytes-total)
-            crossing=next((site for site in relevant if site<end<site+4),None)
+            limit=bisect_left(relevant,end)
+            crossing=relevant[limit-1] if limit and relevant[limit-1]+4>end else None
             if crossing is not None:end=crossing
             if end<=position:raise ValueError('Byte limit divides a pointer field')
             raw=section['raw_offset'];data=reference[raw+position:raw+end]
-            offsets=[site-position for site in relevant if position<=site<end]
-            current.append((layout['image_base']+section['rva']+position,data,offsets))
+            offsets=[site-position for site in relevant[bisect_left(relevant,position):bisect_left(relevant,end)]]
+            current.append((layout['image_base']+section['rva']+position,data,offsets,bool(section['characteristics']&0x80000000)))
             total+=len(data);chunk_size+=len(data);position=end
             if chunk_size>=args.chunk_bytes:chunks.append(current);current=[];chunk_size=0
     if current:chunks.append(current)
@@ -107,11 +112,11 @@ def main():
         if result.returncode:raise SystemExit(result.stdout+result.stderr)
         with (directory/'data-index.tsv').open('w',newline='') as file:
             writer=csv.writer(file,delimiter='\t');writer.writerow(['entry','symbol','reference_bytes','pointer_fields'])
-            writer.writerows((f'{va:08x}',f'recovered_data_{va:08x}',len(data),len(offsets)) for va,data,offsets in pages)
+            writer.writerows((f'{va:08x}',f'recovered_data_{va:08x}',len(data),len(offsets)) for va,data,offsets,_ in pages)
         (emit/(stem+'-index.tsv')).write_bytes((directory/'data-index.tsv').read_bytes())
         manifest.append({'object':stem,'directory':str(directory.relative_to(ROOT)),
             'source':str(source.relative_to(ROOT)),'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest()})
-        print(stem,sum(len(data) for _,data,_ in pages),'data bytes',flush=True)
+        print(stem,sum(len(page[1]) for page in pages),'data bytes',flush=True)
     manifest_path=emit/'tranches.json';old=json.loads(manifest_path.read_text()) if manifest_path.exists() else []
     prefix='recovered_data_'+args.tag+'_';old=[row for row in old if not row['object'].startswith(prefix)]
     manifest_path.write_text(json.dumps(old+manifest,indent=2)+'\n')
