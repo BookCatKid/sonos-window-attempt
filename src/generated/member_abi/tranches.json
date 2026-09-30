@@ -126,5 +126,9 @@
   {
     "object": "tree_iterators_reference_flags",
     "directory": "analysis/compiled-cpp-tree-iterators"
+  },
+  {
+    "object": "tree_iterators_ascending_first_reference_flags",
+    "directory": "analysis/compiled-cpp-tree-iterators-ascending-first"
   }
 ]

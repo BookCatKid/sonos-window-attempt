@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Probe real C++ tree iterators for a byte-identical postfix-increment family."""
-import argparse,csv,glob,json,os,subprocess
+import argparse,csv,json,os,subprocess
 from pathlib import Path
 from compile_ghidra_cpp import ROOT,COMPILER,load_records
 from classify_functions import DLL,section_map,function_bytes
@@ -21,9 +21,13 @@ return result;
 }
 '''
 
+BODY_ASCENDING_FIRST='{\nRecovered_ENTRY result=*this;\nif (node->right->nil) {\nRecoveredIteratorNode *next=node->parent;\nwhile (!next->nil && node==next->right) { node=next; next=next->parent; }\nnode=next;\n} else {\nRecoveredIteratorNode *next=node->right;\nwhile (!next->left->nil) next=next->left;\nnode=next;\n}\nreturn result;\n}\n'
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('exports',nargs='+',type=Path);args=p.parse_args()
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('exports',nargs='+',type=Path)
+    p.add_argument('--ascending-first',action='store_true',help='Preserve the native branch orientation as a separate hypothesis')
+    args=p.parse_args();body=BODY_ASCENDING_FIRST if args.ascending_first else BODY
+    stem='tree_iterators'+('_ascending_first' if args.ascending_first else '')
     reference=DLL.read_bytes();base,sections=section_map(reference)
     prototype=function_bytes(reference,0x101d4810,88,base,sections)
     records=load_records(args.exports)
@@ -32,8 +36,8 @@ def main():
     for r in candidates:
         entry=r['entry'];owner='Recovered_'+entry
         source+=f'// Reference entry {entry}; body size 88 bytes.\nstruct {owner} {{ RecoveredIteratorNode *node; {owner} FUN_{entry}(int unused); }};\n'
-        source+=f'{owner} {owner}::FUN_{entry}(int unused) '+BODY.replace('ENTRY',entry)
-    directory=ROOT/'analysis/compiled-cpp-tree-iterators';directory.mkdir(exist_ok=True)
+        source+=f'{owner} {owner}::FUN_{entry}(int unused) '+body.replace('ENTRY',entry)
+    directory=ROOT/'analysis'/('compiled-cpp-'+stem.replace('_','-'));directory.mkdir(exist_ok=True)
     target=directory/'ghidra_recovered.cpp';target.write_text(source);obj=target.with_suffix('.obj')
     result=subprocess.run([str(COMPILER),'/nologo','/O2','/bigobj','/MD','/GS','/GR','/EHsc','/Zi','/c',
         '/clang:--target=i686-pc-windows-msvc',f'/Fo{obj}',os.path.relpath(target,ROOT)],cwd=ROOT,capture_output=True,text=True)
@@ -41,8 +45,8 @@ def main():
     index=directory/'compiled-index.tsv'
     with index.open('w',newline='') as file:
         w=csv.writer(file,delimiter='\t');w.writerow(['entry','name','reference_body_bytes']);w.writerows((r['entry'],r['name'],r['body_bytes']) for r in candidates)
-    emit=ROOT/'src/generated/member_abi';(emit/'tree_iterators.cpp').write_text(source);(emit/'tree_iterators-index.tsv').write_bytes(index.read_bytes())
-    path=emit/'tranches.json';manifest=json.loads(path.read_text());name='tree_iterators_reference_flags'
+    emit=ROOT/'src/generated/member_abi';(emit/(stem+'.cpp')).write_text(source);(emit/(stem+'-index.tsv')).write_bytes(index.read_bytes())
+    path=emit/'tranches.json';manifest=json.loads(path.read_text());name=stem+'_reference_flags'
     manifest=[r for r in manifest if r['object']!=name]+[{'object':name,'directory':str(directory.relative_to(ROOT))}]
     path.write_text(json.dumps(manifest,indent=2)+'\n');print(json.dumps({'compiled_functions':len(candidates),'reference_bytes':88*len(candidates),'pinned_msvc_verified':False}))
 
