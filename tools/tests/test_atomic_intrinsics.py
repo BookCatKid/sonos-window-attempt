@@ -52,7 +52,9 @@ char old; LOCK(); old = *p; *p = value; UNLOCK(); return old; }''')
     def test_control_flow_and_multiple_writes_remain_unlowered(self):
         for body in ['LOCK(); if (x) *p = 1; UNLOCK();',
                      'LOCK(); *p = 1; *q = 2; UNLOCK();',
-                     'LOCK(); old = *p; next = old + 1; *p = next; UNLOCK();']:
+                     'LOCK(); old = *p; next = old + 1; *p = next; UNLOCK();',
+                     'LOCK(); old = *p; *p = old + old; UNLOCK();',
+                     'LOCK(); old = *p; p = q; *p = old + 1; UNLOCK();']:
             lowered, count = lower_atomic_blocks(body)
             self.assertEqual((lowered, count), (body, 0))
 

@@ -8,7 +8,7 @@ on:
         type: boolean
         default: false
       focused_probe:
-        description: Compile member ABI, owner parameter, and packed data experiments
+        description: Compile member ABI and owner parameter experiments
         type: boolean
         default: false
   push:
@@ -19,6 +19,10 @@ on:
       - tools/build_flag_sweep.cmd
       - tools/msvc_flag_sweep.json
       - .github/workflows/msvc-142-probe.yml
+      include_data_probe:
+        description: Also rebuild packed non-executable data during a focused probe
+        type: boolean
+        default: false
 
 jobs:
   compile:
@@ -79,6 +83,7 @@ jobs:
       - name: Compile C++ candidates for x86
         env:
           SONOS_SWEEP_FLAGS: ${{ github.event.inputs.sweep_flags == 'true' && '1' || '0' }}
+          SONOS_INCLUDE_DATA_PROBE: ${{ github.event.inputs.include_data_probe == 'true' && '1' || '0' }}
           SONOS_FOCUSED_PROBE: ${{ github.event.inputs.focused_probe == 'true' && '1' || '0' }}
         shell: cmd
         run: |

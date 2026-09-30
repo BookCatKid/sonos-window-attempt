@@ -44,6 +44,8 @@ def lower_atomic_blocks(source):
             assignment=re.fullmatch(r'(\w+)\s*=\s*(.+)',statement)
             if not assignment:valid=False;break
             name,rhs=assignment.groups()
+            if aliases and re.search(r'\b'+re.escape(name)+r'\b',address):
+                valid=False;break
             if canonical(rhs)==canonical_destination:aliases.append(name)
             elif canonical_destination in canonical(rhs) or re.search(r'\b'+('|'.join(map(re.escape,aliases)) or '(?!)')+r'\b',rhs):
                 valid=False;break
@@ -64,6 +66,8 @@ def lower_atomic_blocks(source):
         is_add=bool(add)
         if is_add:
             amount=add.group(1).strip()
+            # Fetch-add evaluates its increment before obtaining the old value.
+            if canonical_destination in canonical(amount) or any(re.search(r'\b'+re.escape(a)+r'\b',amount) for a in aliases):continue
             if width==4 and not aliases and amount in {'1','-1'}:
                 op='_InterlockedIncrement' if amount=='1' else '_InterlockedDecrement'
                 invocation=op+f'((volatile {typ} *)({address}))'

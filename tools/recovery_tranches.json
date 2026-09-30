@@ -366,5 +366,9 @@
   {
     "object": "direct_jump_031",
     "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_031"
+  },
+  {
+    "object": "atomic_intrinsics_reference_flags",
+    "directory": "analysis/compiled-cpp-atomic-intrinsics"
   }
 ]
