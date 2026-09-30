@@ -88,11 +88,15 @@
     "directory": "analysis/compiled-cpp-atomic-intrinsics"
   },
   {
+    "object": "scstr_local_raii_storage_typed_spill_reference_flags",
+    "directory": "analysis/compiled-cpp-scstr-local-raii-storage-typed-spill"
+  },
+  {
     "object": "empty_tree_arguments_none_nontrivial_homes_ordered_reference_flags",
     "directory": "analysis/compiled-cpp-empty-tree-arguments-none-nontrivial-homes-ordered"
   },
   {
-    "object": "scstr_local_raii_storage_typed_spill_reference_flags",
-    "directory": "analysis/compiled-cpp-scstr-local-raii-storage-typed-spill"
+    "object": "atomic_intrinsics_stack_arity_reference_flags",
+    "directory": "analysis/compiled-cpp-atomic-intrinsics-stack-arity"
   }
 ]

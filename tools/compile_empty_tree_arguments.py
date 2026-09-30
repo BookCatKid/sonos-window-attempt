@@ -84,7 +84,7 @@ def lower(record,evidence,abi,volatility,nontrivial_copy=False,stack_homes=False
             f'~{tree}(); }};\nstatic_assert(sizeof({tree}) == 8, "Two-word argument");\n'
             'static_assert(sizeof(RecoveredTreeNode) == 28, "Sentinel node");'),
         consumer:f'struct {consumer} {{ void thunk_FUN_10dee620(SCStr *, int, int, {tree}); }};'}
-    if ordered_homes:declarations['A_construction_barrier']='extern \"C\" void _ReadWriteBarrier();\n#pragma intrinsic(_ReadWriteBarrier)'
+    if ordered_homes:declarations[tree]='extern \"C\" void _ReadWriteBarrier();\n#pragma intrinsic(_ReadWriteBarrier)\n'+declarations[tree]
     return {**candidate,'source':source,'abi_declarations':declarations}
 
 

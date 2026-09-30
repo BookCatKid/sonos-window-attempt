@@ -10,7 +10,9 @@ from pathlib import Path
 
 from compile_ghidra_cpp import ROOT,COMPILER,load_records,width_preserving_pointer_casts,msvc_compatible_labels
 from compile_scstr_cpp import normalize_definition,cpp_source,split_valid,eligible,restore_virtual_zero_arg_calls
-from recovered_call_abi import CallABI
+from recovered_call_abi import CallABI, arguments
+from classify_functions import DLL, section_map, function_bytes
+from compare_compiled_ghidra import DISASSEMBLER
 
 DECLARATIONS='''extern "C" {
 long _InterlockedIncrement(volatile long *);
@@ -91,8 +93,28 @@ def lower_atomic_blocks(source):
     return source,count
 
 
+def restore_stack_arity(source, code):
+    header,separator,body=source.partition('{')
+    if '__thiscall' not in header:return source
+    parameters=re.search(r'FUN_[0-9a-f]{8}\s*\((.*?)\)',header,re.S)
+    if not parameters:return source
+    values=arguments(parameters.group(1))
+    if not values or any(not re.fullmatch(r'(?:undefined[124]|int|uint|char|byte|short|ushort|long)(?:\s*\*)*\s+\w+',v) for v in values):return source
+    cleanup={int(i.op_str,0) if i.op_str else 0 for i in DISASSEMBLER.disasm(code,0) if i.mnemonic=='ret'}
+    if len(cleanup)!=1:return source
+    byte_count=next(iter(cleanup))
+    missing=byte_count//4-(len(values)-1)
+    if byte_count%4 or not 0<missing<=4:return source
+    addition=''.join(', unsigned int recovered_unused_stack_'+str(i) for i in range(missing))
+    header=header[:parameters.end(1)]+addition+header[parameters.end(1):]
+    return header+separator+body
+
+
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('exports',nargs='+',type=Path);args=p.parse_args()
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('exports',nargs='+',type=Path)
+    p.add_argument('--restore-stack-arity',action='store_true',help='Preserve unused word arguments proven by native thiscall RET cleanup')
+    args=p.parse_args()
+    reference=DLL.read_bytes();base,sections=section_map(reference)
     records=load_records(args.exports);abi=CallABI(args.exports,recover_implicit_register=True);candidates=[]
     for record in records.values():
         source=normalize_definition(record)
@@ -100,11 +122,15 @@ def main():
         source,count=lower_atomic_blocks(source)
         if not count or 'LOCK();' in source or 'UNLOCK();' in source:continue
         if not eligible(re.sub(r'\b_Interlocked\w+\b','operator_new',source)):continue
+        if args.restore_stack_arity:
+            code=function_bytes(reference,int(record['entry'],16),record['body_bytes'],base,sections)
+            source=restore_stack_arity(source,code)
         source=msvc_compatible_labels(width_preserving_pointer_casts(source))
         source,_,slots=restore_virtual_zero_arg_calls(source)
         source,decls,_=abi.lower(source);decls['atomic_intrinsics']=DECLARATIONS
         candidates.append({**record,'source':source,'virtual_slots':sorted(slots),'abi_declarations':decls})
-    candidates.sort(key=lambda row:row['entry']);directory=ROOT/'analysis/compiled-cpp-atomic-intrinsics';directory.mkdir(exist_ok=True)
+    stem='atomic_intrinsics'+('_stack_arity' if args.restore_stack_arity else '')
+    candidates.sort(key=lambda row:row['entry']);directory=ROOT/'analysis'/('compiled-cpp-'+stem.replace('_','-'));directory.mkdir(exist_ok=True)
     failures=[];accepted=[];scratch=directory/'.syntax-probe.cpp'
     for start in range(0,len(candidates),100):accepted+=split_valid(candidates[start:start+100],scratch,failures)
     scratch.unlink(missing_ok=True)
@@ -117,9 +143,9 @@ def main():
     with index.open('w',newline='') as file:
         w=csv.writer(file,delimiter='\t');w.writerow(['entry','name','reference_body_bytes'])
         w.writerows((row['entry'],row['name'],row['body_bytes']) for row in accepted)
-    emit=ROOT/'src/generated/member_abi';(emit/'atomic_intrinsics.cpp').write_text(source.read_text())
-    (emit/'atomic_intrinsics-index.tsv').write_bytes(index.read_bytes());manifest_path=emit/'tranches.json';rows=json.loads(manifest_path.read_text())
-    rows=[r for r in rows if r['object']!='atomic_intrinsics_reference_flags']+[{'object':'atomic_intrinsics_reference_flags','directory':str(directory.relative_to(ROOT))}]
+    emit=ROOT/'src/generated/member_abi';(emit/(stem+'.cpp')).write_text(source.read_text())
+    (emit/(stem+'-index.tsv')).write_bytes(index.read_bytes());manifest_path=emit/'tranches.json';rows=json.loads(manifest_path.read_text())
+    rows=[r for r in rows if r['object']!=stem+'_reference_flags']+[{'object':stem+'_reference_flags','directory':str(directory.relative_to(ROOT))}]
     manifest_path.write_text(json.dumps(rows,indent=2)+'\n')
     print(json.dumps({'compiled_functions':len(accepted),'reference_bytes':sum(row['body_bytes'] for row in accepted),
         'syntax_rejected':len(failures),'pinned_msvc_verified':False},indent=2))

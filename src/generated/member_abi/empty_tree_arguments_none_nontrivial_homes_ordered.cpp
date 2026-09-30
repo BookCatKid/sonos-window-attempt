@@ -83,13 +83,13 @@ public:
 };
 struct RecoveredString_FUN_1008c50b_10df5400 { undefined4 rep; __forceinline RecoveredString_FUN_1008c50b_10df5400(char * p0) { ((SCStr *)this)->int_allocRep(p0); } ~RecoveredString_FUN_1008c50b_10df5400() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 extern void * __cdecl operator_new(unsigned int bytes);
+extern "C" void _ReadWriteBarrier();
+#pragma intrinsic(_ReadWriteBarrier)
 struct RecoveredTreeNode { RecoveredTreeNode *next, *previous, *parent; unsigned char color, is_nil; unsigned char payload[14]; };
 struct RecoveredEmptyTree { RecoveredTreeNode * head; unsigned int size; RecoveredEmptyTree(const RecoveredEmptyTree &); RecoveredEmptyTree(RecoveredEmptyTree &&); __forceinline RecoveredEmptyTree() { RecoveredEmptyTree * volatile construction_home = this; _ReadWriteBarrier(); head = 0; size = 0; RecoveredTreeNode *node = (RecoveredTreeNode *)operator_new(sizeof(RecoveredTreeNode)); node->next = node; node->previous = node; node->parent = node; node->color = 1; node->is_nil = 1; head = node; } ~RecoveredEmptyTree(); };
 static_assert(sizeof(RecoveredEmptyTree) == 8, "Two-word argument");
 static_assert(sizeof(RecoveredTreeNode) == 28, "Sentinel node");
 struct RecoveredTreeConsumer { void thunk_FUN_10dee620(SCStr *, int, int, RecoveredEmptyTree); };
-extern "C" void _ReadWriteBarrier();
-#pragma intrinsic(_ReadWriteBarrier)
 struct RecoveredString_FUN_1008c50b_10df54d0 { undefined4 rep; __forceinline RecoveredString_FUN_1008c50b_10df54d0(char * p0) { ((SCStr *)this)->int_allocRep(p0); } ~RecoveredString_FUN_1008c50b_10df54d0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct RecoveredString_FUN_1008c50b_10df5720 { undefined4 rep; __forceinline RecoveredString_FUN_1008c50b_10df5720(char * p0) { ((SCStr *)this)->int_allocRep(p0); } ~RecoveredString_FUN_1008c50b_10df5720() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct RecoveredString_FUN_1008c50b_10df57f0 { undefined4 rep; __forceinline RecoveredString_FUN_1008c50b_10df57f0(char * p0) { ((SCStr *)this)->int_allocRep(p0); } ~RecoveredString_FUN_1008c50b_10df57f0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
