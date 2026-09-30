@@ -86,7 +86,7 @@ findings were addressed.
 
 ## Direct-call and string-lifetime continuation
 
-The active 100% goal's next checkpoint is 165,646 distinct exact bodies /
+The direct-call/string-lifetime checkpoint recorded 165,646 distinct exact bodies /
 1,765,210 executable bytes (6.900022%). The additional gain over 6.800963% is
 494 bodies / 25,342 bytes. The consolidated audit is
 `analysis/recovery-msvc-bulk-call-lifetime-final/coverage-audit.json`, pinned to
@@ -116,8 +116,8 @@ No reference application is executed and no original Ghidra project is modified.
 
 ## Physical PE placement and C++ data recovery
 
-The partial PE places all 165,757 proven function bodies and accepted compiler
-EH/literal fragments at reference offsets. Its `.text` has 1,953,762 verified
+The partial PE places all 165,761 proven function bodies and accepted compiler
+EH/literal fragments at reference offsets. Its `.text` has 1,953,980 verified
 compiler bytes, including EH helpers. A conflicting overlap, unresolved fixup,
 or mismatched marked byte aborts. Unknown regions remain empty and are reported.
 
@@ -128,10 +128,10 @@ as data input. All 74 full-data objects / 9,691,648 bytes compile and pass final
 byte/fixup proofs under pinned MSVC in
 [run 36680111341](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36680111341).
 
-`analysis/linked-placement-tree-atomic/recovery-layout.dll` has six byte-identical
+`analysis/linked-placement-bulk-stack-arity/recovery-layout.dll` has six byte-identical
 sections: `.rdata`, `.data`, `.idata`, `.tls`, `.00cfg`, and `.rsrc`. It contains
-11,645,410 proven compiler bytes (31.343799% of the file). The independent
-full-file comparator scores 37.3077%, including coincidental empty-region zero
+11,645,628 proven compiler bytes (31.344386% of the file). The independent
+full-file comparator scores 37.3076%, including coincidental empty-region zero
 matches, and **fails the 100% gate**. The image lacks an entry point and
 import/export header directories; its base relocations are incomplete. It is a
 placement artifact, not a usable or complete DLL. No reference instructions are
@@ -142,17 +142,18 @@ Reproduce the current placement using the pinned artifacts available locally:
 ```sh
 python3 tools/compile_recovered_data.py --tag full
 python3 tools/link_recovery_image.py \
-  --artifact-dirs ci-output/run-36687349560 ci-output/run-36680111341 \
+  --artifact-dirs ci-output/run-36690135114 ci-output/run-36687349560 \
+    ci-output/run-36680111341 \
     ci-output/run-36661659252 \
     analysis/msvc-14-28-x86-objects-5490d21-run36626235420 \
-  --include-flag-sweep --output-dir analysis/linked-placement-tree-atomic
-python3 tools/compare.py analysis/linked-placement-tree-atomic/recovery-layout.dll
+  --include-flag-sweep --output-dir analysis/linked-placement-bulk-stack-arity
+python3 tools/compare.py analysis/linked-placement-bulk-stack-arity/recovery-layout.dll
 ```
 
 Generation alone is a local Clang syntax/COFF experiment. Placement requires
 artifact `toolchain.txt` evidence for pinned MSVC 19.28.29919. Each data source
 has a manifest hash and page index. Reports retain object provenance, fixups,
-missing targets and unbuilt byte counts. Twenty-one tests pass. CodeRabbit's
+missing targets and unbuilt byte counts. The original placement pass had twenty-one passing tests. CodeRabbit's
 placement review returned zero findings; its later data-tooling review reached
 the service's free-review rate limit.
 
@@ -202,7 +203,7 @@ cleanup can establish omitted unused word parameters. The final atomic object
 verifies 21 exact functions / 433 bytes. Together these families add 111 distinct
 functions / 14,836 bytes over the previous checkpoint.
 
-The current function-body audit is
+The tree/atomic checkpoint audit is
 `analysis/recovery-msvc-tree-barrier-atomic-arity/coverage-audit.json`: 165,757
 exact bodies / 1,780,046 distinct bytes / 6.958014% executable coverage. Thirty
 tests pass. CodeRabbit reported two tooling findings; both were addressed and
@@ -218,3 +219,42 @@ The next bulk pass should apply native argument-count evidence across the
 remaining Ghidra headers and generalize container recovery where node/layout
 proofs support it. Exact caller bodies, full EH graphs, and final file offsets
 remain the acceptance criteria.
+
+
+## Broad member stack-arity probes
+
+`tools/promote_stack_arity.py` restores unused word arguments where native RET
+cleanup exceeds the emitted genuine C++ member parameter list. It updates both
+member declarations and definitions, rejects ambiguous or non-word signatures,
+and preserves baseline source. Across six batches, 148 source hypotheses compile.
+Pinned [run 36688344412](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36688344412)
+accepts four exact bodies / 218 new bytes. Other five variants add zero and remain
+outside the default recovery manifest.
+
+The authoritative audit is now
+`analysis/recovery-msvc-bulk-stack-arity/coverage-audit.json`: 165,761 distinct
+bodies / 1,780,264 bytes / 6.958867% executable coverage. The current physical
+placement uses the latest focused objects from run 36690135114 and older pinned
+data/full/sweep artifacts. Proven file bytes increase to 11,645,628. The 100%
+gate still fails. Raw aligned coincidences decrease by 22 bytes because newly
+emitted relocations shift the incomplete relocation table; this score includes
+unbuilt zero-fill and is not the reconstructed-source byte count.
+
+`tools/compile_tree_iterators.py` probes genuine class-valued postfix increment
+for 12 identical 88-byte tree traversals. Native return behavior establishes the
+hidden result pointer and unused postfix argument. Branch orientation removes
+three excess bytes; caching the current node gives the correct length but
+register allocation still differs. Four variants add zero bytes. Traversal tests
+execute only synthetic trees, covering left/right descent, ascent, sentinel end,
+returned snapshots, and receiver mutation. Thirty-six tests pass.
+
+CodeRabbit's stack-arity review identified fresh-checkout directory creation and
+partial-output manifest durability; both were addressed. Suggestions to discard
+Clang mismatches before MSVC or remove production compiler flags were declined:
+Clang is the local compilation gate, while original MSVC/relocation/EH proofs
+control acceptance. Candidate metrics explicitly mark matching as unverified.
+
+Next experiments should batch iterator/helper source variants in one pinned job,
+and restore the verified eight-byte container call ABI in an isolated Ghidra
+project for the 36 remaining branch/multistate callers. Original projects and
+reference binaries remain immutable.

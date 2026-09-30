@@ -378,5 +378,9 @@
   {
     "object": "atomic_intrinsics_stack_arity_reference_flags",
     "directory": "analysis/compiled-cpp-atomic-intrinsics-stack-arity"
+  },
+  {
+    "object": "thunk_members_stack_arity_reference_flags",
+    "directory": "analysis/compiled-cpp-thunk-members-stack-arity"
   }
 ]

@@ -418,3 +418,38 @@ Focused probes now omit unchanged data unless `include_data_probe=true`; full
 builds always compile data. Pinned data artifacts remain required for placement.
 The goal remains active. Next priority is bulk unused-argument recovery and
 expanding the proven container families across existing Ghidra output.
+
+
+## Bulk stack arity and iterator evidence (2026-09-30)
+
+The broad stack-arity scan covers 148 compiling member hypotheses across six
+batches. Pinned run 36688344412 verifies four new bodies / 218 bytes in
+`thunk_members_stack_arity_reference_flags.obj`. Only this positive variant is
+added to the default recovery manifest. Audit
+`analysis/recovery-msvc-bulk-stack-arity/coverage-audit.json` verifies 165,761
+functions / 1,780,264 bytes / 6.958867% executable coverage.
+
+`analysis/linked-placement-bulk-stack-arity/recovery-layout.dll` places the new
+bodies and has SHA-256
+`a89e627641b94bde737f4766989e79b760f3e876709553ae328fc79cb111d92e`.
+It contains 11,645,628 proven compiler bytes (31.344386% file coverage), including
+1,953,980 executable bytes with EH helpers. Six non-executable sections remain
+100% identical. Independent full-file comparison reports 13,861,193 aligned
+matches / 37.3076%, matching file size, and a FAILED 100% gate. Relocation layout
+is incomplete; source proof increases despite a small decrease in zero-fill
+coincidences as new relocations shift that table.
+
+Four genuine C++ iterator variants target 12 identical 88-byte postfix-increment
+bodies. Pinned runs 36688984860, 36689303030, 36689749626, and 36690135114 add zero
+coverage. The cached-node variant has correct native length and traversal but
+different registers. These variants remain outside the authoritative manifest.
+Thirty-six tests pass, including exact native cleanup from a compiled member
+and semantic traversal on synthetic trees. No reference binary is executed.
+Review disposition is saved locally in
+`analysis/stack-arity-tooling-review-disposition.md`.
+
+A corpus scan finds 126 callers with the known outgoing empty-tree pattern;
+90 are already fully recovered. Remaining 36 involve branches/multiple lifetime
+states and lost stack/receiver facts. Next work should restore the now-proven
+callee parameter layout in an isolated Ghidra copy and batch further iterator
+source variants. The 100% goal remains active.
