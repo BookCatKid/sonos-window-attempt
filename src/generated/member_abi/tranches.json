@@ -150,5 +150,13 @@
   {
     "object": "event_factories_output_temporary_reference_flags",
     "directory": "analysis/compiled-cpp-event-factories-output-temporary"
+  },
+  {
+    "object": "event_factories_output_throwing_reference_flags",
+    "directory": "analysis/compiled-cpp-event-factories-output-throwing"
+  },
+  {
+    "object": "event_factories_output_key_release_reference_flags",
+    "directory": "analysis/compiled-cpp-event-factories-output-key-release"
   }
 ]

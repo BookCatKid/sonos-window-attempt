@@ -54,6 +54,9 @@ static_assert(sizeof(FactoryTree)==8,"Two-word outgoing container");
 static_assert(sizeof(FactoryTreeNode)==28,"Sentinel node");
 static_assert(sizeof(Event_thunk_FUN_10def0d0)==24,"Event value");
 '''
+OUTPUT_PLACEMENT='''struct FactoryOutputLocation { void *receiver; };
+__forceinline void *operator new(unsigned int,FactoryOutputLocation location) { return location.receiver; }
+'''
 BODY='''Event_thunk_FUN_10def0d0 FUN_ENTRY(FactoryVariant *source) {
 int kind;
 { FactoryString key("value"); kind=source->value((SCStr *)&key); }
@@ -77,12 +80,28 @@ def main():
             'Event_thunk_FUN_10def0d0 *FUN_ENTRY(Event_thunk_FUN_10def0d0 *result,FactoryVariant *source)').replace(
             'STOP event; return Event_thunk_FUN_10def0d0(event);','new(result) EventCopy_thunk_FUN_10deea50(STOP().representation); return result;').replace(
             'ALERT event; return Event_thunk_FUN_10def0d0(event);','new(result) EventCopy_thunk_FUN_10deea50(ALERT().representation); return result;')}
+    improved_library=LIBRARY.replace('FactoryString','RecoveredString_FUN_1008c50b').replace(
+        '~Event_thunk_FUN_10def0d0() noexcept(false);','~Event_thunk_FUN_10def0d0() noexcept;')+OUTPUT_PLACEMENT
+    improved_body=variants['event_factories_output_buffer'].replace('new(result)', 'new(FactoryOutputLocation{result})')
+    variants['event_factories_output_throwing']=improved_body
+    variants['event_factories_output_key_release']=improved_body.replace('FactoryString key', 'FactoryKeyString key')
+    libraries={name:LIBRARY for name in variants}
+    libraries['event_factories_output_throwing']=improved_library
+    libraries['event_factories_output_key_release']=improved_library+'''struct FactoryKeyString {
+unsigned int rep;
+__forceinline FactoryKeyString(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+~FactoryKeyString() noexcept { ((SCStr *)this)->int_release(); }
+};
+'''
     for name,body in variants.items():
+        library=libraries[name]
+        if name.startswith('event_factories_output_throwing'):
+            body=body.replace('FactoryString','RecoveredString_FUN_1008c50b')
         candidates=[]
         for entry,stop,alert in [('10e00c90','Stopped_thunk_FUN_10dfd540','Cancelled'),('10e00e20','Started_thunk_FUN_10dfd470','Shown')]:
             r=rows[entry]
             candidates.append({**r,'source':body.replace('ENTRY',entry).replace('STOP',stop).replace('ALERT',alert),
-                               'abi_declarations':{'factory_library':LIBRARY}})
+                               'abi_declarations':{'factory_library':library}})
         emit_variant(name,candidates,evidence)
 
 
