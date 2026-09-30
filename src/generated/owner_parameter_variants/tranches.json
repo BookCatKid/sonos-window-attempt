@@ -4,6 +4,10 @@
     "directory": "analysis/compiled-cpp-owner-parameter-throw-spec"
   },
   {
+    "object": "owner_parameter_nothrow_release_reference_flags",
+    "directory": "analysis/compiled-cpp-owner-parameter-nothrow-release"
+  },
+  {
     "object": "owner_parameter_maythrow_reference_flags",
     "directory": "analysis/compiled-cpp-owner-parameter-maythrow"
   },

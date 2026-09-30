@@ -13,6 +13,7 @@ def main():
     source = (ROOT / "src/generated/owner_parameter_raii.cpp").read_text()
     variants = {
         "owner_parameter_throw_spec": source.replace("() noexcept { if (second)", "() throw() { if (second)"),
+        "owner_parameter_nothrow_release": source.replace("virtual int VirtualSlot2();", "virtual int VirtualSlot2() noexcept;"),
         "owner_parameter_maythrow": source.replace("() noexcept { if (second)", "() noexcept(false) { if (second)"),
         "owner_parameter_nothrow": source.replace("~RecoveredParamOwner_FUN_", "__declspec(nothrow) ~RecoveredParamOwner_FUN_").replace("() noexcept { if (second)", "() { if (second)"),
         "owner_parameter_lambda_guard": re.sub(
