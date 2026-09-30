@@ -142,5 +142,13 @@
   {
     "object": "event_factories_reference_flags",
     "directory": "analysis/compiled-cpp-event-factories"
+  },
+  {
+    "object": "event_factories_output_buffer_reference_flags",
+    "directory": "analysis/compiled-cpp-event-factories-output-buffer"
+  },
+  {
+    "object": "event_factories_output_temporary_reference_flags",
+    "directory": "analysis/compiled-cpp-event-factories-output-temporary"
   }
 ]

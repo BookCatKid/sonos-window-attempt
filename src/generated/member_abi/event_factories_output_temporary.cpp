@@ -133,24 +133,24 @@ static_assert(sizeof(Event_thunk_FUN_10def0d0)==24,"Event value");
 
 // Reference entry 10e00c90; body size 308 bytes.
 #line 1 "ENTRY_10e00c90"
-Event_thunk_FUN_10def0d0 FUN_10e00c90(FactoryVariant *source) {
+Event_thunk_FUN_10def0d0 *FUN_10e00c90(Event_thunk_FUN_10def0d0 *result,FactoryVariant *source) {
 int kind;
 { FactoryString key("value"); kind=source->value((SCStr *)&key); }
 switch(kind) {
-case 4: { Stopped_thunk_FUN_10dfd540 event; return Event_thunk_FUN_10def0d0(event); }
-case 5: { Cancelled event; return Event_thunk_FUN_10def0d0(event); }
-default: { Stopped_thunk_FUN_10dfd540 event; return Event_thunk_FUN_10def0d0(event); }
+case 4: { new(result) EventCopy_thunk_FUN_10deea50(Stopped_thunk_FUN_10dfd540().representation); return result; }
+case 5: { new(result) EventCopy_thunk_FUN_10deea50(Cancelled().representation); return result; }
+default: { new(result) EventCopy_thunk_FUN_10deea50(Stopped_thunk_FUN_10dfd540().representation); return result; }
 }
 }
 
 // Reference entry 10e00e20; body size 308 bytes.
 #line 1 "ENTRY_10e00e20"
-Event_thunk_FUN_10def0d0 FUN_10e00e20(FactoryVariant *source) {
+Event_thunk_FUN_10def0d0 *FUN_10e00e20(Event_thunk_FUN_10def0d0 *result,FactoryVariant *source) {
 int kind;
 { FactoryString key("value"); kind=source->value((SCStr *)&key); }
 switch(kind) {
-case 4: { Started_thunk_FUN_10dfd470 event; return Event_thunk_FUN_10def0d0(event); }
-case 5: { Shown event; return Event_thunk_FUN_10def0d0(event); }
-default: { Started_thunk_FUN_10dfd470 event; return Event_thunk_FUN_10def0d0(event); }
+case 4: { new(result) EventCopy_thunk_FUN_10deea50(Started_thunk_FUN_10dfd470().representation); return result; }
+case 5: { new(result) EventCopy_thunk_FUN_10deea50(Shown().representation); return result; }
+default: { new(result) EventCopy_thunk_FUN_10deea50(Started_thunk_FUN_10dfd470().representation); return result; }
 }
 }
