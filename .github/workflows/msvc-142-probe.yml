@@ -7,6 +7,10 @@ on:
         description: Run the full compiler settings matrix
         type: boolean
         default: false
+      focused_probe:
+        description: Compile only the member ABI and owner parameter experiments
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -67,8 +71,10 @@ jobs:
       - name: Compile C++ candidates for x86
         env:
           SONOS_SWEEP_FLAGS: ${{ github.event.inputs.sweep_flags == 'true' && '1' || '0' }}
+          SONOS_FOCUSED_PROBE: ${{ github.event.inputs.focused_probe == 'true' && '1' || '0' }}
         shell: cmd
-        run: call tools\build_probe.cmd
+        run: |
+          if "%SONOS_FOCUSED_PROBE%"=="1" (call tools\build_focused_probe.cmd) else (call tools\build_probe.cmd)
 
       - name: Upload compiler outputs
         if: always()

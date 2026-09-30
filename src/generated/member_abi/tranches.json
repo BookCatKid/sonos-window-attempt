@@ -1,0 +1,18 @@
+[
+  {
+    "object": "thunk_members_reference_flags",
+    "directory": "analysis/compiled-cpp-thunk-members"
+  },
+  {
+    "object": "globals_members_reference_flags",
+    "directory": "analysis/compiled-cpp-globals-members"
+  },
+  {
+    "object": "high_thunk_members_reference_flags",
+    "directory": "analysis/compiled-cpp-high-thunk-members"
+  },
+  {
+    "object": "high_members_reference_flags",
+    "directory": "analysis/compiled-cpp-high-members"
+  }
+]

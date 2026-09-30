@@ -1,0 +1,18 @@
+[
+  {
+    "object": "owner_parameter_throw_spec_reference_flags",
+    "directory": "analysis/compiled-cpp-owner-parameter-throw-spec"
+  },
+  {
+    "object": "owner_parameter_maythrow_reference_flags",
+    "directory": "analysis/compiled-cpp-owner-parameter-maythrow"
+  },
+  {
+    "object": "owner_parameter_nothrow_reference_flags",
+    "directory": "analysis/compiled-cpp-owner-parameter-nothrow"
+  },
+  {
+    "object": "owner_parameter_lambda_guard_reference_flags",
+    "directory": "analysis/compiled-cpp-owner-parameter-lambda-guard"
+  }
+]
