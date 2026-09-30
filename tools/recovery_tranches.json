@@ -40,11 +40,359 @@
     "directory": "analysis/compiled-cpp-owner-pair-raii"
   },
   {
+    "object": "owner_parameter_raii_reference_flags",
+    "directory": "analysis/compiled-cpp-owner-parameter-raii"
+  },
+  {
     "object": "signature_pilot_reference_flags",
     "directory": "analysis/compiled-cpp-signature-pilot"
   },
   {
     "object": "signature_ret_pilot_reference_flags",
     "directory": "analysis/compiled-cpp-signature-ret-pilot"
+  },
+  {
+    "object": "thunk_reference_flags",
+    "directory": "analysis/compiled-cpp-thunk"
+  },
+  {
+    "object": "globals_reference_flags",
+    "directory": "analysis/compiled-cpp-globals"
+  },
+  {
+    "object": "bulk_base_reference_flags",
+    "directory": "analysis/compiled-cpp"
+  },
+  {
+    "object": "high_thunk_reference_flags",
+    "directory": "analysis/compiled-cpp-high-thunk"
+  },
+  {
+    "object": "high_reference_flags",
+    "directory": "analysis/compiled-cpp-high"
+  },
+  {
+    "object": "eh_part-00001_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00001"
+  },
+  {
+    "object": "eh_part-00002_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00002"
+  },
+  {
+    "object": "eh_part-00003_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00003"
+  },
+  {
+    "object": "eh_part-00004_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00004"
+  },
+  {
+    "object": "eh_part-00005_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00005"
+  },
+  {
+    "object": "eh_part-00006_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00006"
+  },
+  {
+    "object": "eh_part-00007_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00007"
+  },
+  {
+    "object": "eh_part-00008_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00008"
+  },
+  {
+    "object": "eh_part-00009_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00009"
+  },
+  {
+    "object": "eh_part-00010_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00010"
+  },
+  {
+    "object": "eh_part-00011_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00011"
+  },
+  {
+    "object": "eh_part-00012_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00012"
+  },
+  {
+    "object": "eh_part-00013_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00013"
+  },
+  {
+    "object": "eh_part-00014_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00014"
+  },
+  {
+    "object": "eh_part-00015_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00015"
+  },
+  {
+    "object": "eh_part-00016_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00016"
+  },
+  {
+    "object": "eh_part-00017_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00017"
+  },
+  {
+    "object": "eh_part-00018_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00018"
+  },
+  {
+    "object": "eh_part-00019_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00019"
+  },
+  {
+    "object": "eh_part-00020_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00020"
+  },
+  {
+    "object": "eh_part-00021_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00021"
+  },
+  {
+    "object": "eh_part-00022_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00022"
+  },
+  {
+    "object": "eh_part-00023_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00023"
+  },
+  {
+    "object": "eh_part-00024_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00024"
+  },
+  {
+    "object": "eh_part-00037_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00037"
+  },
+  {
+    "object": "eh_part-00039_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00039"
+  },
+  {
+    "object": "eh_part-00041_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00041"
+  },
+  {
+    "object": "eh_part-00042_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00042"
+  },
+  {
+    "object": "eh_part-00045_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00045"
+  },
+  {
+    "object": "eh_part-00047_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00047"
+  },
+  {
+    "object": "eh_part-00050_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00050"
+  },
+  {
+    "object": "eh_part-00055_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00055"
+  },
+  {
+    "object": "eh_part-00056_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00056"
+  },
+  {
+    "object": "eh_part-00059_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00059"
+  },
+  {
+    "object": "eh_part-00061_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00061"
+  },
+  {
+    "object": "eh_part-00063_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00063"
+  },
+  {
+    "object": "eh_part-00066_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00066"
+  },
+  {
+    "object": "eh_part-00067_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00067"
+  },
+  {
+    "object": "eh_part-00068_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00068"
+  },
+  {
+    "object": "eh_part-00075_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00075"
+  },
+  {
+    "object": "eh_part-00078_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00078"
+  },
+  {
+    "object": "eh_part-00080_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00080"
+  },
+  {
+    "object": "eh_part-00083_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00083"
+  },
+  {
+    "object": "eh_part-00087_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00087"
+  },
+  {
+    "object": "eh_part-00088_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00088"
+  },
+  {
+    "object": "eh_part-00090_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00090"
+  },
+  {
+    "object": "eh_part-00092_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00092"
+  },
+  {
+    "object": "eh_part-00095_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00095"
+  },
+  {
+    "object": "eh_part-00097_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00097"
+  },
+  {
+    "object": "eh_part-00099_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00099"
+  },
+  {
+    "object": "eh_part-00103_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00103"
+  },
+  {
+    "object": "eh_part-00106_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00106"
+  },
+  {
+    "object": "eh_part-00108_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00108"
+  },
+  {
+    "object": "eh_part-00116_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00116"
+  },
+  {
+    "object": "eh_part-00118_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00118"
+  },
+  {
+    "object": "eh_part-00122_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00122"
+  },
+  {
+    "object": "eh_part-00124_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00124"
+  },
+  {
+    "object": "eh_part-00128_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00128"
+  },
+  {
+    "object": "eh_part-00130_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00130"
+  },
+  {
+    "object": "eh_part-00132_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00132"
+  },
+  {
+    "object": "eh_part-00134_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00134"
+  },
+  {
+    "object": "eh_part-00137_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00137"
+  },
+  {
+    "object": "eh_part-00140_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00140"
+  },
+  {
+    "object": "eh_part-00141_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00141"
+  },
+  {
+    "object": "eh_part-00145_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00145"
+  },
+  {
+    "object": "eh_part-00146_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00146"
+  },
+  {
+    "object": "eh_part-00147_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00147"
+  },
+  {
+    "object": "eh_part-00148_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00148"
+  },
+  {
+    "object": "eh_part-00157_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00157"
+  },
+  {
+    "object": "eh_part-00159_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00159"
+  },
+  {
+    "object": "eh_part-00161_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00161"
+  },
+  {
+    "object": "eh_part-00167_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00167"
+  },
+  {
+    "object": "eh_part-00170_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00170"
+  },
+  {
+    "object": "eh_part-00172_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00172"
+  },
+  {
+    "object": "eh_part-00181_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00181"
+  },
+  {
+    "object": "eh_part-00182_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00182"
+  },
+  {
+    "object": "eh_part-00183_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00183"
+  },
+  {
+    "object": "eh_part-00184_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00184"
+  },
+  {
+    "object": "eh_part-00185_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00185"
+  },
+  {
+    "object": "eh_part-00186_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00186"
+  },
+  {
+    "object": "eh_part-00187_reference_flags",
+    "directory": "analysis/compiled-cpp-eh-part-00187"
   }
 ]
