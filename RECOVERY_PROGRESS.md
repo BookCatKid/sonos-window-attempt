@@ -144,3 +144,33 @@ Inspection of the closest remaining bodies identified a repeated two-byte defici
 The next repeated graph combines a two-pointer owner destructor with a terminate-protected normal cleanup. `tools/compile_owner_pair_raii.py` recognizes the shared constructor thunk, two-field release pattern, destructor action target, and three-argument virtual call. It reconstructs a real C++ automatic owner whose inline constructor retains the cdecl stack receiver, whose slot-10 call uses thiscall, and whose noexcept destructor reproduces both the inlined normal cleanup and the compiler-owned unwind action. The generator emits 107 functions / 13,696 reference bytes with zero syntax rejects and no assembly.
 
 Pinned run https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36645069465 produces identical lengths and fixed bytes for all 107 functions. The EH verifier now recursively checks ordinary recovered action targets through reference incremental thunks. It proves the parent handler and two-state FuncInfo, owner unwind funclet, complete out-of-line destructor body, the destructor's nested handler and FuncInfo, security-cookie references, runtime imports, and all relocations. All 107 bodies / 13,696 bytes are exact, and all 107 nested graphs / 24,610 graph bytes verify with zero rejects. The cumulative audit `analysis/recovery-msvc-owner-pair-raii-verified/coverage-audit.json` contains 163,123 exact bodies / 1,605,839 executable bytes (6.277057%).
+
+## Measuring the previously unmeasured tranches
+
+An audit of the local generated families against the pinned coverage reports
+found 19,507 functions / 1.48 MB of reference body bytes that already compiled
+locally but had never been compared under MSVC 14.28, because their families
+were never wired into `tools/build_probe.cmd`. Wiring all 86 of them failed the
+pinned build: 70 tranches emit `__thiscall` on free functions, which MSVC
+rejects with C3865 although clang-cl accepts it. Every family already carrying a
+verified coverage report contains zero `__thiscall`, so this is the reason those
+tranches were never admitted rather than an oversight.
+
+The remaining 17 tranches compile. Pinned run
+https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36654316359
+measured them and added **zero** exact bodies, leaving the cumulative audit at
+163,123 exact bodies / 1,605,839 executable bytes (6.277057%).
+
+The 16 EH-normalized parts contribute 254 functions and produce neither an
+exact body nor a same-length fixed-byte match, confirming the local Clang
+evidence that this tier is syntax coverage rather than byte recovery.
+`owner_parameter_raii` is the stronger signal: all 52 functions have identical
+lengths with every fixed byte matching and no unresolved relocations, but
+`verify_eh_placement.py` rejects all 52 because the generated `FuncInfo` and
+handler bytes differ from the reference. The by-value owner parameter
+reconstructs a C++ exception specification the reference does not carry, so its
+6,024 bytes stay one EH graph shape fix away rather than recovered.
+
+Unlocking the 0.56 MB of `__thiscall` thunk, globals and bulk-base tranches
+requires recovering that calling convention into a form MSVC accepts, which is
+the callee-side analogue of the existing `tools/recovered_call_abi.py` work.
