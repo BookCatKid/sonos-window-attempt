@@ -258,3 +258,52 @@ Next experiments should batch iterator/helper source variants in one pinned job,
 and restore the verified eight-byte container call ABI in an isolated Ghidra
 project for the 36 remaining branch/multistate callers. Original projects and
 reference binaries remain immutable.
+
+
+## Isolated Ghidra container and event ABI recovery (2026-09-30)
+
+`tools/recover_container_abi.py` restores the independently proven outgoing
+container ABI in `analysis/container-call-abi/ghidra`, an APFS copy of the
+original project. The Java script rejects other project paths; the runner also
+rejects symlink redirection and verifies original-project hashes before/after.
+It catches Ghidra script failures even when the headless process exits zero.
+
+Native `FUN_10dee620` receives ECX plus twenty stack bytes: a text pointer,
+event ID, properties pointer, and an eight-byte head/size container by value.
+Restoring this storage exposes the missing argument across all 126 callers.
+The optional event pass uses the pinned, hash-matched ninety-constructor index,
+restores 24-byte event values, copy/destructor arguments and dispatcher arguments,
+and gives virtual slot nine its receiver/key prototype. The two factory exports
+now show the key explicitly rather than dropping its pushed stack argument.
+
+Reproduce the guarded export:
+
+```sh
+python3 tools/recover_container_abi.py --event-objects \
+  --output-dir analysis/container-call-abi/verified-event-vtable
+```
+
+The execution proof records 131 exported functions and unchanged original
+project hashes. The second guarded run is idempotent (zero changed pseudocode).
+Forty tests pass, including database-change detection, symlink rejection,
+incomplete exports, and silent script failure. No reference binary is executed.
+
+`tools/compile_event_factories.py` emits genuine C++ hypotheses for two 308-byte
+factory bodies. Pinned runs 36728666054, 36729923629, 36730729383, and 36731922091
+add zero verified bytes. Native evidence supports an explicit output pointer;
+class-valued return hypotheses are also tested. Field layouts remove unwanted
+stack-cookie checks, base construction restores the seven-state cleanup shape,
+and nonnull temporary expressions recover constructor-result register use.
+Remaining differences include temporary masks, string clearing, stack allocation,
+and separate constructor/destructor symbol identities. These experiments remain
+outside the authoritative default manifest. Run 36732748770 tests the remaining
+noexcept class-valued forms and also adds zero verified bytes. Nine distinct
+source variants were tested across five pinned runs; no factory hypothesis has
+passed the full body/relocation/EH proof. CodeRabbit reported zero findings for
+the reviewed generator and Java-script changes; the runner is additionally
+covered by the isolation and export-failure tests.
+
+Authoritative recovery remains 165,761 exact bodies / 1,780,264 executable bytes
+(6.958867%), with 11,645,628 compiler-produced bytes physically placed. The full
+DLL is still not byte-identical. Typed pseudocode and compiling hypotheses do
+not increase these counts.
