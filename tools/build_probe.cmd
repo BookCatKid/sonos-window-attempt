@@ -49,101 +49,19 @@ cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\single_state_guards_refer
 if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\multistate_terminate_guards_reference_flags.obj src\generated\multistate_terminate_guards.cpp > out\multistate_terminate_guards_reference_flags.log 2>&1
 if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\owner_pair_raii_reference_flags.obj src\generated\owner_pair_raii.cpp > out\owner_pair_raii_reference_flags.log 2>&1
-if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\owner_parameter_raii_reference_flags.obj src\generated\owner_parameter_raii.cpp > out\owner_parameter_raii_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\thunk_reference_flags.obj src\generated\thunk.cpp > out\thunk_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\globals_reference_flags.obj src\generated\globals.cpp > out\globals_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\bulk_base_reference_flags.obj src\generated\bulk_base.cpp > out\base_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\high_thunk_reference_flags.obj src\generated\high_thunk.cpp > out\high_thunk_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\high_reference_flags.obj src\generated\high.cpp > out\high_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00001_reference_flags.obj src\generated\eh_part-00001.cpp > out\eh_part-00001_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00002_reference_flags.obj src\generated\eh_part-00002.cpp > out\eh_part-00002_reference_flags.log 2>&1
 if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00003_reference_flags.obj src\generated\eh_part-00003.cpp > out\eh_part-00003_reference_flags.log 2>&1
 if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00004_reference_flags.obj src\generated\eh_part-00004.cpp > out\eh_part-00004_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00005_reference_flags.obj src\generated\eh_part-00005.cpp > out\eh_part-00005_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00006_reference_flags.obj src\generated\eh_part-00006.cpp > out\eh_part-00006_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00007_reference_flags.obj src\generated\eh_part-00007.cpp > out\eh_part-00007_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00008_reference_flags.obj src\generated\eh_part-00008.cpp > out\eh_part-00008_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00009_reference_flags.obj src\generated\eh_part-00009.cpp > out\eh_part-00009_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00010_reference_flags.obj src\generated\eh_part-00010.cpp > out\eh_part-00010_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00011_reference_flags.obj src\generated\eh_part-00011.cpp > out\eh_part-00011_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00012_reference_flags.obj src\generated\eh_part-00012.cpp > out\eh_part-00012_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00013_reference_flags.obj src\generated\eh_part-00013.cpp > out\eh_part-00013_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00014_reference_flags.obj src\generated\eh_part-00014.cpp > out\eh_part-00014_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00015_reference_flags.obj src\generated\eh_part-00015.cpp > out\eh_part-00015_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00016_reference_flags.obj src\generated\eh_part-00016.cpp > out\eh_part-00016_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00017_reference_flags.obj src\generated\eh_part-00017.cpp > out\eh_part-00017_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00018_reference_flags.obj src\generated\eh_part-00018.cpp > out\eh_part-00018_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00019_reference_flags.obj src\generated\eh_part-00019.cpp > out\eh_part-00019_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00020_reference_flags.obj src\generated\eh_part-00020.cpp > out\eh_part-00020_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00021_reference_flags.obj src\generated\eh_part-00021.cpp > out\eh_part-00021_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00022_reference_flags.obj src\generated\eh_part-00022.cpp > out\eh_part-00022_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00023_reference_flags.obj src\generated\eh_part-00023.cpp > out\eh_part-00023_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00024_reference_flags.obj src\generated\eh_part-00024.cpp > out\eh_part-00024_reference_flags.log 2>&1
-if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00037_reference_flags.obj src\generated\eh_part-00037.cpp > out\eh_part-00037_reference_flags.log 2>&1
 if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00039_reference_flags.obj src\generated\eh_part-00039.cpp > out\eh_part-00039_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00041_reference_flags.obj src\generated\eh_part-00041.cpp > out\eh_part-00041_reference_flags.log 2>&1
-if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00042_reference_flags.obj src\generated\eh_part-00042.cpp > out\eh_part-00042_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00045_reference_flags.obj src\generated\eh_part-00045.cpp > out\eh_part-00045_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00047_reference_flags.obj src\generated\eh_part-00047.cpp > out\eh_part-00047_reference_flags.log 2>&1
 if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00050_reference_flags.obj src\generated\eh_part-00050.cpp > out\eh_part-00050_reference_flags.log 2>&1
 if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00055_reference_flags.obj src\generated\eh_part-00055.cpp > out\eh_part-00055_reference_flags.log 2>&1
 if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00056_reference_flags.obj src\generated\eh_part-00056.cpp > out\eh_part-00056_reference_flags.log 2>&1
-if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00059_reference_flags.obj src\generated\eh_part-00059.cpp > out\eh_part-00059_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00061_reference_flags.obj src\generated\eh_part-00061.cpp > out\eh_part-00061_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00063_reference_flags.obj src\generated\eh_part-00063.cpp > out\eh_part-00063_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00066_reference_flags.obj src\generated\eh_part-00066.cpp > out\eh_part-00066_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00067_reference_flags.obj src\generated\eh_part-00067.cpp > out\eh_part-00067_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00068_reference_flags.obj src\generated\eh_part-00068.cpp > out\eh_part-00068_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00075_reference_flags.obj src\generated\eh_part-00075.cpp > out\eh_part-00075_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00078_reference_flags.obj src\generated\eh_part-00078.cpp > out\eh_part-00078_reference_flags.log 2>&1
 if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00080_reference_flags.obj src\generated\eh_part-00080.cpp > out\eh_part-00080_reference_flags.log 2>&1
 if errorlevel 1 goto failed
@@ -151,79 +69,21 @@ cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00083_reference_f
 if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00087_reference_flags.obj src\generated\eh_part-00087.cpp > out\eh_part-00087_reference_flags.log 2>&1
 if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00088_reference_flags.obj src\generated\eh_part-00088.cpp > out\eh_part-00088_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00090_reference_flags.obj src\generated\eh_part-00090.cpp > out\eh_part-00090_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00092_reference_flags.obj src\generated\eh_part-00092.cpp > out\eh_part-00092_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00095_reference_flags.obj src\generated\eh_part-00095.cpp > out\eh_part-00095_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00097_reference_flags.obj src\generated\eh_part-00097.cpp > out\eh_part-00097_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00099_reference_flags.obj src\generated\eh_part-00099.cpp > out\eh_part-00099_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00103_reference_flags.obj src\generated\eh_part-00103.cpp > out\eh_part-00103_reference_flags.log 2>&1
-if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00106_reference_flags.obj src\generated\eh_part-00106.cpp > out\eh_part-00106_reference_flags.log 2>&1
 if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00108_reference_flags.obj src\generated\eh_part-00108.cpp > out\eh_part-00108_reference_flags.log 2>&1
 if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00116_reference_flags.obj src\generated\eh_part-00116.cpp > out\eh_part-00116_reference_flags.log 2>&1
 if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00118_reference_flags.obj src\generated\eh_part-00118.cpp > out\eh_part-00118_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00122_reference_flags.obj src\generated\eh_part-00122.cpp > out\eh_part-00122_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00124_reference_flags.obj src\generated\eh_part-00124.cpp > out\eh_part-00124_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00128_reference_flags.obj src\generated\eh_part-00128.cpp > out\eh_part-00128_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00130_reference_flags.obj src\generated\eh_part-00130.cpp > out\eh_part-00130_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00132_reference_flags.obj src\generated\eh_part-00132.cpp > out\eh_part-00132_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00134_reference_flags.obj src\generated\eh_part-00134.cpp > out\eh_part-00134_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00137_reference_flags.obj src\generated\eh_part-00137.cpp > out\eh_part-00137_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00140_reference_flags.obj src\generated\eh_part-00140.cpp > out\eh_part-00140_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00141_reference_flags.obj src\generated\eh_part-00141.cpp > out\eh_part-00141_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00145_reference_flags.obj src\generated\eh_part-00145.cpp > out\eh_part-00145_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00146_reference_flags.obj src\generated\eh_part-00146.cpp > out\eh_part-00146_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00147_reference_flags.obj src\generated\eh_part-00147.cpp > out\eh_part-00147_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00148_reference_flags.obj src\generated\eh_part-00148.cpp > out\eh_part-00148_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00157_reference_flags.obj src\generated\eh_part-00157.cpp > out\eh_part-00157_reference_flags.log 2>&1
-if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00159_reference_flags.obj src\generated\eh_part-00159.cpp > out\eh_part-00159_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00161_reference_flags.obj src\generated\eh_part-00161.cpp > out\eh_part-00161_reference_flags.log 2>&1
 if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00167_reference_flags.obj src\generated\eh_part-00167.cpp > out\eh_part-00167_reference_flags.log 2>&1
 if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00170_reference_flags.obj src\generated\eh_part-00170.cpp > out\eh_part-00170_reference_flags.log 2>&1
 if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00172_reference_flags.obj src\generated\eh_part-00172.cpp > out\eh_part-00172_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00181_reference_flags.obj src\generated\eh_part-00181.cpp > out\eh_part-00181_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00182_reference_flags.obj src\generated\eh_part-00182.cpp > out\eh_part-00182_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00183_reference_flags.obj src\generated\eh_part-00183.cpp > out\eh_part-00183_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00184_reference_flags.obj src\generated\eh_part-00184.cpp > out\eh_part-00184_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00185_reference_flags.obj src\generated\eh_part-00185.cpp > out\eh_part-00185_reference_flags.log 2>&1
-if errorlevel 1 goto failed
-cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00186_reference_flags.obj src\generated\eh_part-00186.cpp > out\eh_part-00186_reference_flags.log 2>&1
-if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\eh_part-00187_reference_flags.obj src\generated\eh_part-00187.cpp > out\eh_part-00187_reference_flags.log 2>&1
+if errorlevel 1 goto failed
+cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\owner_pair_raii_reference_flags.obj src\generated\owner_pair_raii.cpp > out\owner_pair_raii_reference_flags.log 2>&1
 if errorlevel 1 goto failed
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\inline_cleanup_reference_flags.obj src\generated\inline_cleanup.cpp > out\inline_cleanup_reference_flags.log 2>&1
 if errorlevel 1 goto failed
@@ -333,94 +193,24 @@ for %%F in (out\signature_pilot*.log) do if exist %%F type %%F
 for %%F in (out\signature_ret_pilot*.log) do if exist %%F type %%F
 for %%F in (out\single_state_guards*.log) do if exist %%F type %%F
 for %%F in (out\multistate_terminate_guards*.log) do if exist %%F type %%F
-for %%F in (out\owner_pair_raii*.log) do if exist %%F type %%F
-for %%F in (out\owner_parameter_raii*.log) do if exist %%F type %%F
-for %%F in (out\thunk_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\globals_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\bulk_base_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\high_thunk_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\high_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00001_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00002_reference_flags*.log) do if exist %%F type %%F
+for %%F in (out\owner_parameter_raii_reference_flags*.log) do if exist %%F type %%F
 for %%F in (out\eh_part-00003_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00004_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00005_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00006_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00007_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00008_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00009_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00010_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00011_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00012_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00013_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00014_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00015_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00016_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00017_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00018_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00019_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00020_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00021_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00022_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00023_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00024_reference_flags*.log) do if exist %%F type %%F
 for %%F in (out\eh_part-00037_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00039_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00041_reference_flags*.log) do if exist %%F type %%F
 for %%F in (out\eh_part-00042_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00045_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00047_reference_flags*.log) do if exist %%F type %%F
 for %%F in (out\eh_part-00050_reference_flags*.log) do if exist %%F type %%F
 for %%F in (out\eh_part-00055_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00056_reference_flags*.log) do if exist %%F type %%F
 for %%F in (out\eh_part-00059_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00061_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00063_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00066_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00067_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00068_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00075_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00078_reference_flags*.log) do if exist %%F type %%F
 for %%F in (out\eh_part-00080_reference_flags*.log) do if exist %%F type %%F
 for %%F in (out\eh_part-00083_reference_flags*.log) do if exist %%F type %%F
 for %%F in (out\eh_part-00087_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00088_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00090_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00092_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00095_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00097_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00099_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00103_reference_flags*.log) do if exist %%F type %%F
 for %%F in (out\eh_part-00106_reference_flags*.log) do if exist %%F type %%F
 for %%F in (out\eh_part-00108_reference_flags*.log) do if exist %%F type %%F
 for %%F in (out\eh_part-00116_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00118_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00122_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00124_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00128_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00130_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00132_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00134_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00137_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00140_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00141_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00145_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00146_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00147_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00148_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00157_reference_flags*.log) do if exist %%F type %%F
 for %%F in (out\eh_part-00159_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00161_reference_flags*.log) do if exist %%F type %%F
 for %%F in (out\eh_part-00167_reference_flags*.log) do if exist %%F type %%F
 for %%F in (out\eh_part-00170_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00172_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00181_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00182_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00183_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00184_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00185_reference_flags*.log) do if exist %%F type %%F
-for %%F in (out\eh_part-00186_reference_flags*.log) do if exist %%F type %%F
 for %%F in (out\eh_part-00187_reference_flags*.log) do if exist %%F type %%F
+for %%F in (out\owner_pair_raii*.log) do if exist %%F type %%F
 for %%F in (out\inline_cleanup*.log) do if exist %%F type %%F
 for %%F in (out\noexcept_cleanup*.log) do if exist %%F type %%F
 for %%F in (out\scstr_virtual_slots*.log) do if exist %%F type %%F
