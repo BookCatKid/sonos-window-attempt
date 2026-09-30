@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Recover class-valued event factories using native receiver/return ABI evidence."""
-import csv,json,os,struct,subprocess
+import csv,json,os,re,struct,subprocess
 from pathlib import Path
 from compile_ghidra_cpp import ROOT,COMPILER
 from compile_scstr_cpp import cpp_source
@@ -180,6 +180,24 @@ extern template struct ExternalKey_FUN_1008c50b<0>;
             'source':'void NativeEventFinalizer::FUN_'+entry+'() { ((Event_thunk_FUN_10074c85 *)this)->~Event_thunk_FUN_10074c85(); }',
             'abi_declarations':{'event_bridge_library':bridge_library}})
     emit_variant('event_destructor_bridges',candidates,evidence)
+    callback_rows={r['entry']:r for r in map(json.loads,(ROOT/'analysis/container-call-abi/verified-event-vtable/after.jsonl').open())}
+    callbacks=[]
+    for record in callback_rows.values():
+        text=record.get('decompiled_c','')
+        if record['body_bytes'] not in (190,192) or text.count('thunk_FUN_10dee620(')!=1:continue
+        label=re.search(r'SCStr::int_allocRep\([^;]+,"([^"]+)"\);',text)
+        event_id=re.search(r'thunk_FUN_10dee620\([^;]+,([^,]+),\(undefined1 \*\)0x0,tree\);',text)
+        dispatcher=re.search(r'thunk_FUN_10df15a0\(\(undefined1 \*\)\(param_1 \+ (-?0x[0-9a-f]+)\),&\w+\);',text)
+        if not label or not event_id or not dispatcher:continue
+        entry=record['entry'];offset=int(dispatcher.group(1),16)
+        source='void NativeEventCallback::FUN_'+entry+'() { Event_thunk_FUN_10def0d0 event("'+label.group(1)+'",'+event_id.group(1)+'); '+\
+            '((NativeEventDispatcher *)((char *)this + '+str(offset)+'))->thunk_FUN_10df15a0(&event); }'
+        callbacks.append({**record,'source':source})
+    if callbacks:
+        callback_library=improved_library+'struct NativeEventDispatcher { void thunk_FUN_10df15a0(Event_thunk_FUN_10def0d0 *); };\n'
+        callback_library+='struct NativeEventCallback { '+''.join('void FUN_'+r['entry']+'(); ' for r in callbacks)+'};\n'
+        callbacks=[{**r,'abi_declarations':{'callback_library':callback_library}} for r in callbacks]
+        emit_variant('event_callbacks',callbacks,evidence)
 
 
 def emit_variant(name,candidates,evidence):
@@ -195,7 +213,7 @@ def emit_variant(name,candidates,evidence):
         'reference_metadata':evidence[r['entry']]['metadata']['address'],'reference_state_count':evidence[r['entry']]['metadata']['state_count']}
         for r in candidates if r['entry'] in evidence and evidence[r['entry']].get('handler')]
     (directory/'reference-eh-inventory.json').write_text(json.dumps(inventory,indent=2)+'\n')
-    bindings=auxiliary_bindings(inventory) if inventory else []
+    bindings=auxiliary_bindings(inventory) if {'10e00c90','10e00e20'} <= {r['entry'] for r in inventory} else []
     (directory/'reference-auxiliary-symbols.json').write_text(json.dumps(bindings,indent=2)+'\n')
     emit=ROOT/'src/generated/member_abi';(emit/(name+'.cpp')).write_text(target.read_text());(emit/(name+'-index.tsv')).write_bytes(index.read_bytes())
     (emit/(name+'-auxiliary-symbols.json')).write_text(json.dumps(bindings,indent=2)+'\n')

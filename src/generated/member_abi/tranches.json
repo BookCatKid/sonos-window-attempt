@@ -198,5 +198,9 @@
   {
     "object": "event_destructor_bridges_reference_flags",
     "directory": "analysis/compiled-cpp-event-destructor-bridges"
+  },
+  {
+    "object": "event_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-event-callbacks"
   }
 ]
