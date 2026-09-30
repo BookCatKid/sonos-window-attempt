@@ -78,5 +78,13 @@
   {
     "object": "empty_tree_arguments_none_nontrivial_reference_flags",
     "directory": "analysis/compiled-cpp-empty-tree-arguments-none-nontrivial"
+  },
+  {
+    "object": "atomic_intrinsics_reference_flags",
+    "directory": "analysis/compiled-cpp-atomic-intrinsics"
+  },
+  {
+    "object": "empty_tree_arguments_none_nontrivial_homes_reference_flags",
+    "directory": "analysis/compiled-cpp-empty-tree-arguments-none-nontrivial-homes"
   }
 ]

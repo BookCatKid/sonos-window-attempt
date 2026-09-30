@@ -19,7 +19,7 @@ from compile_scstr_local_raii import lower as lower_string
 from recovered_call_abi import CallABI,arguments
 
 
-def lower(record,evidence,abi,volatility,nontrivial_copy=False):
+def lower(record,evidence,abi,volatility,nontrivial_copy=False,stack_homes=False):
     candidate=lower_string(record,evidence,abi,extended_storage=True,preserve_storage_type=True)
     if not candidate:return None
     source=candidate['source']
@@ -42,9 +42,20 @@ def lower(record,evidence,abi,volatility,nontrivial_copy=False):
     if re.search(r'\b'+re.escape(node)+r'\b',before[declaration.end():]+after):return None
     before=before[:declaration.start()]+before[declaration.end():]
     tree='RecoveredEmptyTree';consumer='RecoveredTreeConsumer'
-    replacement='(('+consumer+' *)(param_1))->FUN_10dee620('+', '.join([
+    replacement='(('+consumer+' *)(param_1))->thunk_FUN_10dee620('+', '.join([
         '(SCStr *)('+values[0]+')','(int)('+values[1]+')','(int)('+values[2]+')',tree+'()'])+')'
     source=before+replacement+after
+    if stack_homes:
+        classname='RecoveredString_FUN_1008c50b_'+record['entry']
+        declaration=candidate['abi_declarations'][classname]
+        # Preserve the ECX spill in storage immediately overwritten by construction.
+        declaration=declaration.replace('char * p0)', 'char * p0, undefined4 receiver)')
+        declaration=declaration.replace('{ ((SCStr *)this)->int_allocRep', '{ *(volatile undefined4 *)&rep = receiver; ((SCStr *)this)->int_allocRep')
+        candidate['abi_declarations'][classname]=declaration
+        initialization=re.search(r'recovered_string\((.*?)\);',source)
+        if not initialization:return None
+        source=source[:initialization.end()-2]+', param_1'+source[initialization.end()-2:]
+    construction_home='RecoveredEmptyTree * volatile construction_home = this; ' if stack_homes else ''
     head_qualifier=' volatile' if volatility in {'head','both'} else ''
     size_qualifier='volatile ' if volatility=='both' else ''
     copy_declarations=(f'{tree}(const {tree} &); {tree}({tree} &&); ' if nontrivial_copy else '')
@@ -56,11 +67,11 @@ def lower(record,evidence,abi,volatility,nontrivial_copy=False):
             f'struct {tree} {{ RecoveredTreeNode *{head_qualifier} head; {size_qualifier}unsigned int size; '
             +copy_declarations+
             f'__forceinline {tree}() : head(0), size(0) {{ '
-            'RecoveredTreeNode *node = (RecoveredTreeNode *)operator_new(sizeof(RecoveredTreeNode)); '
+            +construction_home+'RecoveredTreeNode *node = (RecoveredTreeNode *)operator_new(sizeof(RecoveredTreeNode)); '
             'node->next = node; node->previous = node; node->parent = node; '+flags_initialization+' head = node; } '
             f'~{tree}(); }};\nstatic_assert(sizeof({tree}) == 8, "Two-word argument");\n'
             'static_assert(sizeof(RecoveredTreeNode) == 28, "Sentinel node");'),
-        consumer:f'struct {consumer} {{ void FUN_10dee620(SCStr *, int, int, {tree}); }};'}
+        consumer:f'struct {consumer} {{ void thunk_FUN_10dee620(SCStr *, int, int, {tree}); }};'}
     return {**candidate,'source':source,'abi_declarations':declarations}
 
 
@@ -68,16 +79,18 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('exports',nargs='+',type=Path)
     p.add_argument('--volatility',choices=['none','head','both'],default='none')
+    p.add_argument('--stack-homes',action='store_true',help='Preserve observed incoming receiver and construction receiver stack stores')
     p.add_argument('--nontrivial-copy',action='store_true',help='Restore the container copy/move ABI and adjacent byte flags')
     args=p.parse_args();records=load_records(args.exports);abi=CallABI(args.exports,recover_implicit_register=True)
     candidates=[]
     for line in (ROOT/'analysis/eh-lifetime-evidence.jsonl').open():
         evidence=json.loads(line);record=records.get(evidence['entry'])
         if record:
-            candidate=lower(record,evidence,abi,args.volatility,args.nontrivial_copy)
+            candidate=lower(record,evidence,abi,args.volatility,args.nontrivial_copy,args.stack_homes)
             if candidate:candidates.append(candidate)
     candidates.sort(key=lambda row:row['entry']);stem='empty_tree_arguments_'+args.volatility
     if args.nontrivial_copy:stem+='_nontrivial'
+    if args.stack_homes:stem+='_homes'
     directory=ROOT/'analysis'/('compiled-cpp-'+stem.replace('_','-'));directory.mkdir(parents=True,exist_ok=True)
     failures=[];accepted=[];scratch=directory/'.syntax-probe.cpp'
     for start in range(0,len(candidates),100):accepted+=split_valid(candidates[start:start+100],scratch,failures)
