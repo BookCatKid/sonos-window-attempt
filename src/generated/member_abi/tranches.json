@@ -74,5 +74,9 @@
   {
     "object": "empty_tree_arguments_head_reference_flags",
     "directory": "analysis/compiled-cpp-empty-tree-arguments-head"
+  },
+  {
+    "object": "empty_tree_arguments_none_nontrivial_reference_flags",
+    "directory": "analysis/compiled-cpp-empty-tree-arguments-none-nontrivial"
   }
 ]

@@ -19,7 +19,7 @@ from compile_scstr_local_raii import lower as lower_string
 from recovered_call_abi import CallABI,arguments
 
 
-def lower(record,evidence,abi,volatility):
+def lower(record,evidence,abi,volatility,nontrivial_copy=False):
     candidate=lower_string(record,evidence,abi,extended_storage=True,preserve_storage_type=True)
     if not candidate:return None
     source=candidate['source']
@@ -47,13 +47,17 @@ def lower(record,evidence,abi,volatility):
     source=before+replacement+after
     head_qualifier=' volatile' if volatility in {'head','both'} else ''
     size_qualifier='volatile ' if volatility=='both' else ''
+    copy_declarations=(f'{tree}(const {tree} &); {tree}({tree} &&); ' if nontrivial_copy else '')
+    flags_fields='unsigned char color, is_nil;' if nontrivial_copy else 'unsigned short flags;'
+    flags_initialization='node->color = 1; node->is_nil = 1;' if nontrivial_copy else 'node->flags = 0x101;'
     declarations={**candidate['abi_declarations'],
         'operator_new':'extern void * __cdecl operator_new(unsigned int bytes);',
-        tree:(f'struct RecoveredTreeNode {{ RecoveredTreeNode *next, *previous, *parent; unsigned short flags; unsigned char payload[14]; }};\n'
+        tree:(f'struct RecoveredTreeNode {{ RecoveredTreeNode *next, *previous, *parent; {flags_fields} unsigned char payload[14]; }};\n'
             f'struct {tree} {{ RecoveredTreeNode *{head_qualifier} head; {size_qualifier}unsigned int size; '
+            +copy_declarations+
             f'__forceinline {tree}() : head(0), size(0) {{ '
             'RecoveredTreeNode *node = (RecoveredTreeNode *)operator_new(sizeof(RecoveredTreeNode)); '
-            'node->next = node; node->previous = node; node->parent = node; node->flags = 0x101; head = node; } '
+            'node->next = node; node->previous = node; node->parent = node; '+flags_initialization+' head = node; } '
             f'~{tree}(); }};\nstatic_assert(sizeof({tree}) == 8, "Two-word argument");\n'
             'static_assert(sizeof(RecoveredTreeNode) == 28, "Sentinel node");'),
         consumer:f'struct {consumer} {{ void FUN_10dee620(SCStr *, int, int, {tree}); }};'}
@@ -64,14 +68,16 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('exports',nargs='+',type=Path)
     p.add_argument('--volatility',choices=['none','head','both'],default='none')
+    p.add_argument('--nontrivial-copy',action='store_true',help='Restore the container copy/move ABI and adjacent byte flags')
     args=p.parse_args();records=load_records(args.exports);abi=CallABI(args.exports,recover_implicit_register=True)
     candidates=[]
     for line in (ROOT/'analysis/eh-lifetime-evidence.jsonl').open():
         evidence=json.loads(line);record=records.get(evidence['entry'])
         if record:
-            candidate=lower(record,evidence,abi,args.volatility)
+            candidate=lower(record,evidence,abi,args.volatility,args.nontrivial_copy)
             if candidate:candidates.append(candidate)
     candidates.sort(key=lambda row:row['entry']);stem='empty_tree_arguments_'+args.volatility
+    if args.nontrivial_copy:stem+='_nontrivial'
     directory=ROOT/'analysis'/('compiled-cpp-'+stem.replace('_','-'));directory.mkdir(parents=True,exist_ok=True)
     failures=[];accepted=[];scratch=directory/'.syntax-probe.cpp'
     for start in range(0,len(candidates),100):accepted+=split_valid(candidates[start:start+100],scratch,failures)
