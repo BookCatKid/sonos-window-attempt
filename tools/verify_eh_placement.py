@@ -74,6 +74,7 @@ def verified_eh_targets(directory,obj,reference,base,pe_sections,symbol_vas):
             ends[section_number,start]=ordered[i+1] if i+1<len(ordered) else size
     disasm=Cs(CS_ARCH_X86,CS_MODE_32)
     targets={'___security_cookie':[cookie]}
+    indexed_addresses={address for values in symbol_vas.values() for address in values}
     verified=[];rejected=[];current_diagnostics=[]
 
     def refbytes(va,n):return function_bytes(reference,va,n,base,pe_sections)
@@ -225,6 +226,11 @@ def verified_eh_targets(directory,obj,reference,base,pe_sections,symbol_vas):
                 if not ok and declared is not None:
                     known_body=symbol_vas.get('FUN_'+f'{declared:08x}',[])
                     ok=(declared in known_body and follow_reference_thunks(target_va)==declared)
+                if not ok and declared==target_va:
+                    # Named native constructors/destructors need not retain a
+                    # Ghidra FUN_ alias. The explicit address must itself be an
+                    # indexed symbol, and its linker chain must end at one too.
+                    ok=(declared in indexed_addresses and follow_reference_thunks(target_va) in indexed_addresses)
                 if ok:local[target_name]=target_va
             elif target_name=='___security_cookie':ok=target_va==cookie
             elif target_name=='@__security_check_cookie@4':

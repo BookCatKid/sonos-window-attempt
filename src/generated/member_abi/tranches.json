@@ -192,6 +192,10 @@
     "directory": "analysis/compiled-cpp-event-factories-value-const-reference"
   },
   {
+    "object": "event_factories_value_external_key_reference_flags",
+    "directory": "analysis/compiled-cpp-event-factories-value-external-key"
+  },
+  {
     "object": "event_destructor_bridges_reference_flags",
     "directory": "analysis/compiled-cpp-event-destructor-bridges"
   }

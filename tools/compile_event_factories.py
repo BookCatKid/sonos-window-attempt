@@ -150,6 +150,15 @@ __forceinline SCStr::~SCStr() { int_release(); rep=0; }
         '{ SCStr key("value"); kind=source->value((SCStr *)&key); }', 'kind=source->value(SCStr("value"));')
     libraries['event_factories_value_const_reference']=libraries['event_factories_value_scstr_key'].replace(
         'virtual int value(SCStr *key);', 'virtual int value(const SCStr &key);')
+    variants['event_factories_value_external_key']=variants['event_factories_value_temporary'].replace(
+        'RecoveredString_FUN_1008c50b key', 'ExternalKey_FUN_1008c50b<0> key')
+    libraries['event_factories_value_external_key']=improved_library+'''template<int Tag> struct ExternalKey_FUN_1008c50b {
+unsigned int rep;
+__forceinline ExternalKey_FUN_1008c50b(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+__forceinline ~ExternalKey_FUN_1008c50b() noexcept { ((SCStr *)this)->int_release(); }
+};
+extern template struct ExternalKey_FUN_1008c50b<0>;
+'''
     for name,body in variants.items():
         library=libraries[name]
         if name.startswith('event_factories_output_throwing'):
