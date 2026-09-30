@@ -138,5 +138,9 @@
   {
     "object": "tree_iterators_shared_node_reference_flags",
     "directory": "analysis/compiled-cpp-tree-iterators-shared-node"
+  },
+  {
+    "object": "event_factories_reference_flags",
+    "directory": "analysis/compiled-cpp-event-factories"
   }
 ]
