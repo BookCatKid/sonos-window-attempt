@@ -99,7 +99,7 @@ def restore_stack_arity(source, code):
     parameters=re.search(r'FUN_[0-9a-f]{8}\s*\((.*?)\)',header,re.S)
     if not parameters:return source
     values=arguments(parameters.group(1))
-    if not values or any(not re.fullmatch(r'(?:undefined[124]|int|uint|char|byte|short|ushort|long)(?:\s*\*)*\s+\w+',v) for v in values):return source
+    if not values or any(not re.fullmatch(r'(?:undefined[124]|int|uint|char|byte|short|ushort|long)(?:\s*\*+\s*|\s+)\w+',v) for v in values):return source
     cleanup={int(i.op_str,0) if i.op_str else 0 for i in DISASSEMBLER.disasm(code,0) if i.mnemonic=='ret'}
     if len(cleanup)!=1:return source
     byte_count=next(iter(cleanup))

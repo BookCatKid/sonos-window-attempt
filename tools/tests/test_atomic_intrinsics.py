@@ -6,8 +6,10 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from compile_atomic_intrinsics import DECLARATIONS, lower_atomic_blocks
+from compile_atomic_intrinsics import DECLARATIONS, lower_atomic_blocks, restore_stack_arity
 from compile_ghidra_cpp import COMPILER, ROOT
+from compile_scstr_cpp import cpp_source
+from classify_functions import DLL, section_map, function_bytes
 from compare_compiled_ghidra import DISASSEMBLER, function_symbols, read_coff
 
 
@@ -27,6 +29,23 @@ class AtomicIntrinsicsTests(unittest.TestCase):
             code, relocations = function_symbols(sections, symbols, indices)['10123456']
             self.assertEqual(relocations, [])
             return list(DISASSEMBLER.disasm(code, 0))
+
+    def test_unused_argument_preserves_native_stack_cleanup(self):
+        reference=DLL.read_bytes();base,sections=section_map(reference)
+        code=function_bytes(reference,0x112ef590,11,base,sections)
+        source=restore_stack_arity('int __thiscall FUN_10123456(int *p, int value) { return value; }',code)
+        record={'entry':'10123456','body_bytes':11,'source':source}
+        with tempfile.TemporaryDirectory(dir=ROOT/'analysis') as directory:
+            path=Path(directory)/'arity.cpp';obj=path.with_suffix('.obj')
+            path.write_text(cpp_source([record]))
+            result=subprocess.run([str(COMPILER),'/nologo','/O2','/c',
+                '/clang:--target=i686-pc-windows-msvc',f'/Fo{obj}',os.path.relpath(path,ROOT)],
+                cwd=ROOT,capture_output=True,text=True)
+            self.assertEqual(result.returncode,0,result.stdout+result.stderr)
+            sections,symbols,indices=read_coff(obj)
+            body,_=function_symbols(sections,symbols,indices)['10123456']
+            returns=[i.op_str for i in DISASSEMBLER.disasm(body,0) if i.mnemonic=='ret']
+            self.assertEqual(returns,['8'])
 
     def test_increment_emits_one_atomic_memory_instruction(self):
         instructions = self.compile_body('''void __fastcall FUN_10123456(int *p) {

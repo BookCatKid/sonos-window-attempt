@@ -110,10 +110,10 @@ struct Recovered_102dc820 { undefined4 * FUN_102dc820(undefined4 *param_2); };
 struct Recovered_10c7cfb0 { void FUN_10c7cfb0(int param_2); };
 struct Recovered_11272500 { void FUN_11272500(undefined4 *param_2); };
 struct Recovered_11272bd0 { undefined4 * FUN_11272bd0(undefined4 *param_2); };
-struct Recovered_112ef590 { int FUN_112ef590(int param_2); };
+struct Recovered_112ef590 { int FUN_112ef590(int param_2, unsigned int recovered_unused_stack_0); };
 struct Recovered_113cf770 { void FUN_113cf770(undefined1 param_2); };
 struct Recovered_113cf800 { undefined4 FUN_113cf800(undefined4 param_2); };
-struct Recovered_113cf860 { undefined4 FUN_113cf860(undefined4 param_2); };
+struct Recovered_113cf860 { undefined4 FUN_113cf860(undefined4 param_2, unsigned int recovered_unused_stack_0); };
 struct Recovered_113cf880 { undefined4 FUN_113cf880(undefined4 param_2); };
 struct Recovered_113cf890 { undefined4 FUN_113cf890(undefined4 param_2,undefined4 param_3); };
 struct Recovered_113cf8f0 { undefined1 FUN_113cf8f0(undefined1 param_2); };
@@ -554,7 +554,7 @@ void FUN_112eeea0(int param_1)
 
 
 
-int Recovered_112ef590::FUN_112ef590(int param_2)
+int Recovered_112ef590::FUN_112ef590(int param_2, unsigned int recovered_unused_stack_0)
 
 {
   int * param_1 = (int *)this;
@@ -662,7 +662,7 @@ undefined4 Recovered_113cf800::FUN_113cf800(undefined4 param_2)
 
 
 
-undefined4 Recovered_113cf860::FUN_113cf860(undefined4 param_2)
+undefined4 Recovered_113cf860::FUN_113cf860(undefined4 param_2, unsigned int recovered_unused_stack_0)
 
 {
   undefined4 * param_1 = (undefined4 *)this;

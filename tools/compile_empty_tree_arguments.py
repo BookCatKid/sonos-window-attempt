@@ -64,7 +64,7 @@ def lower(record,evidence,abi,volatility,nontrivial_copy=False,stack_homes=False
         initialization=re.search(r'recovered_string\((.*?)\);',source)
         if not initialization:return None
         argument=initialization.group(1)
-        source=source[:initialization.start()]+f'recovered_string{{(*(volatile undefined4 *)&recovered_string = param_1, {argument})}};'+source[initialization.end():]
+        source=source[:initialization.start()]+f'recovered_string{{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), {argument})}};'+source[initialization.end():]
     construction_home='RecoveredEmptyTree * volatile construction_home = this; ' if stack_homes else ''
     head_qualifier=' volatile' if volatility in {'head','both'} else ''
     size_qualifier='volatile ' if volatility=='both' else ''

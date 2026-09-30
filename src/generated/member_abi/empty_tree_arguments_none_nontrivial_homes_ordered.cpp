@@ -190,7 +190,7 @@ undefined4 __fastcall FUN_10df5400(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df5400 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("accountChanged"))};
+RecoveredString_FUN_1008c50b_10df5400 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("accountChanged"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x4b), (int)(0), RecoveredEmptyTree());
   }
@@ -208,7 +208,7 @@ undefined4 __fastcall FUN_10df54d0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df54d0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("accountInfoRefreshed"))};
+RecoveredString_FUN_1008c50b_10df54d0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("accountInfoRefreshed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x4c), (int)(0), RecoveredEmptyTree());
   }
@@ -226,7 +226,7 @@ undefined4 __fastcall FUN_10df5720(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df5720 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("accountTokenFetchFailed"))};
+RecoveredString_FUN_1008c50b_10df5720 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("accountTokenFetchFailed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x4e), (int)(0), RecoveredEmptyTree());
   }
@@ -244,7 +244,7 @@ undefined4 __fastcall FUN_10df57f0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df57f0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("accountTokenReady"))};
+RecoveredString_FUN_1008c50b_10df57f0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("accountTokenReady"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x4d), (int)(0), RecoveredEmptyTree());
   }
@@ -262,7 +262,7 @@ undefined4 __fastcall FUN_10df59d0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df59d0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("alertCancelPressed"))};
+RecoveredString_FUN_1008c50b_10df59d0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("alertCancelPressed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(6), (int)(0), RecoveredEmptyTree());
   }
@@ -280,7 +280,7 @@ undefined4 __fastcall FUN_10df5aa0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df5aa0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("alertDismissPressed"))};
+RecoveredString_FUN_1008c50b_10df5aa0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("alertDismissPressed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(9), (int)(0), RecoveredEmptyTree());
   }
@@ -298,7 +298,7 @@ undefined4 __fastcall FUN_10df5b70(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df5b70 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("alertDismissWithActionPressed"))};
+RecoveredString_FUN_1008c50b_10df5b70 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("alertDismissWithActionPressed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(10), (int)(0), RecoveredEmptyTree());
   }
@@ -316,7 +316,7 @@ undefined4 __fastcall FUN_10df5c40(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df5c40 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("alertShown"))};
+RecoveredString_FUN_1008c50b_10df5c40 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("alertShown"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(4), (int)(0), RecoveredEmptyTree());
   }
@@ -334,7 +334,7 @@ undefined4 __fastcall FUN_10df6290(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df6290 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("appBackgrounded"))};
+RecoveredString_FUN_1008c50b_10df6290 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("appBackgrounded"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0xd), (int)(0), RecoveredEmptyTree());
   }
@@ -352,7 +352,7 @@ undefined4 __fastcall FUN_10df6360(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df6360 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("appForegrounded"))};
+RecoveredString_FUN_1008c50b_10df6360 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("appForegrounded"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0xc), (int)(0), RecoveredEmptyTree());
   }
@@ -370,7 +370,7 @@ undefined4 __fastcall FUN_10df6430(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df6430 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("assetDownloadFailed"))};
+RecoveredString_FUN_1008c50b_10df6430 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("assetDownloadFailed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x3e), (int)(0), RecoveredEmptyTree());
   }
@@ -388,7 +388,7 @@ undefined4 __fastcall FUN_10df65d0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df65d0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("assetDownloadSucceeded"))};
+RecoveredString_FUN_1008c50b_10df65d0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("assetDownloadSucceeded"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x3d), (int)(0), RecoveredEmptyTree());
   }
@@ -406,7 +406,7 @@ undefined4 __fastcall FUN_10df66a0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df66a0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("autoDismissal"))};
+RecoveredString_FUN_1008c50b_10df66a0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("autoDismissal"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0xb), (int)(0), RecoveredEmptyTree());
   }
@@ -424,7 +424,7 @@ undefined4 __fastcall FUN_10df6770(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df6770 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("btProductConnectionStateChanged"))};
+RecoveredString_FUN_1008c50b_10df6770 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("btProductConnectionStateChanged"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x27), (int)(0), RecoveredEmptyTree());
   }
@@ -442,7 +442,7 @@ undefined4 __fastcall FUN_10df6840(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df6840 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("btProductDiscovered"))};
+RecoveredString_FUN_1008c50b_10df6840 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("btProductDiscovered"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x28), (int)(0), RecoveredEmptyTree());
   }
@@ -460,7 +460,7 @@ undefined4 __fastcall FUN_10df6910(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df6910 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("btProductPairingAttemptCompleted"))};
+RecoveredString_FUN_1008c50b_10df6910 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("btProductPairingAttemptCompleted"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x2a), (int)(0), RecoveredEmptyTree());
   }
@@ -478,7 +478,7 @@ undefined4 __fastcall FUN_10df69e0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df69e0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("btScanDataReady"))};
+RecoveredString_FUN_1008c50b_10df69e0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("btScanDataReady"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x29), (int)(0), RecoveredEmptyTree());
   }
@@ -496,7 +496,7 @@ undefined4 __fastcall FUN_10df6da0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df6da0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("chirpDataReceived"))};
+RecoveredString_FUN_1008c50b_10df6da0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("chirpDataReceived"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x43), (int)(0), RecoveredEmptyTree());
   }
@@ -514,7 +514,7 @@ undefined4 __fastcall FUN_10df7c20(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df7c20 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("discoveryHistoryUpdated"))};
+RecoveredString_FUN_1008c50b_10df7c20 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("discoveryHistoryUpdated"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x56), (int)(0), RecoveredEmptyTree());
   }
@@ -532,7 +532,7 @@ undefined4 __fastcall FUN_10df7ed0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df7ed0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("echoMsgReceived"))};
+RecoveredString_FUN_1008c50b_10df7ed0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("echoMsgReceived"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x2c), (int)(0), RecoveredEmptyTree());
   }
@@ -550,7 +550,7 @@ undefined4 __fastcall FUN_10df8600(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df8600 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("peripheralGATTServiceCreated"))};
+RecoveredString_FUN_1008c50b_10df8600 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("peripheralGATTServiceCreated"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x51), (int)(0), RecoveredEmptyTree());
   }
@@ -568,7 +568,7 @@ undefined4 __fastcall FUN_10df86d0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df86d0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("peripheralGATTServiceFailed"))};
+RecoveredString_FUN_1008c50b_10df86d0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("peripheralGATTServiceFailed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x52), (int)(0), RecoveredEmptyTree());
   }
@@ -586,7 +586,7 @@ undefined4 __fastcall FUN_10df87a0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df87a0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("googleAssistantSetupCompleted"))};
+RecoveredString_FUN_1008c50b_10df87a0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("googleAssistantSetupCompleted"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x77), (int)(0), RecoveredEmptyTree());
   }
@@ -604,7 +604,7 @@ undefined4 __fastcall FUN_10df8a60(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df8a60 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("joinAPCanceled"))};
+RecoveredString_FUN_1008c50b_10df8a60 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("joinAPCanceled"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x36), (int)(0), RecoveredEmptyTree());
   }
@@ -622,7 +622,7 @@ undefined4 __fastcall FUN_10df8b30(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df8b30 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("joinAPFailed"))};
+RecoveredString_FUN_1008c50b_10df8b30 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("joinAPFailed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x35), (int)(0), RecoveredEmptyTree());
   }
@@ -640,7 +640,7 @@ undefined4 __fastcall FUN_10df8c00(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df8c00 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("joinAPSucceeded"))};
+RecoveredString_FUN_1008c50b_10df8c00 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("joinAPSucceeded"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x34), (int)(0), RecoveredEmptyTree());
   }
@@ -658,7 +658,7 @@ undefined4 __fastcall FUN_10df8cd0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df8cd0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("killed"))};
+RecoveredString_FUN_1008c50b_10df8cd0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("killed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(1), (int)(0), RecoveredEmptyTree());
   }
@@ -676,7 +676,7 @@ undefined4 __fastcall FUN_10df8f50(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df8f50 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("lifecycleManagerLegacyManifestReady"))};
+RecoveredString_FUN_1008c50b_10df8f50 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("lifecycleManagerLegacyManifestReady"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x48), (int)(0), RecoveredEmptyTree());
   }
@@ -694,7 +694,7 @@ undefined4 __fastcall FUN_10df9020(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df9020 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("lifecycleManagerReadyForSetup"))};
+RecoveredString_FUN_1008c50b_10df9020 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("lifecycleManagerReadyForSetup"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x47), (int)(0), RecoveredEmptyTree());
   }
@@ -712,7 +712,7 @@ undefined4 __fastcall FUN_10df90f0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df90f0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("museBleClientConnected"))};
+RecoveredString_FUN_1008c50b_10df90f0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("museBleClientConnected"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x54), (int)(0), RecoveredEmptyTree());
   }
@@ -730,7 +730,7 @@ undefined4 __fastcall FUN_10df91c0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df91c0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("museBleClientDisconnected"))};
+RecoveredString_FUN_1008c50b_10df91c0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("museBleClientDisconnected"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x55), (int)(0), RecoveredEmptyTree());
   }
@@ -748,7 +748,7 @@ undefined4 __fastcall FUN_10df92c0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df92c0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("museBleClientMessage"))};
+RecoveredString_FUN_1008c50b_10df92c0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("museBleClientMessage"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x53), (int)(0), RecoveredEmptyTree());
   }
@@ -766,7 +766,7 @@ undefined4 __fastcall FUN_10df9440(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df9440 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2BeginSetupFailed"))};
+RecoveredString_FUN_1008c50b_10df9440 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2BeginSetupFailed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x61), (int)(0), RecoveredEmptyTree());
   }
@@ -784,7 +784,7 @@ undefined4 __fastcall FUN_10df9510(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df9510 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2BeginSetupSucceeded"))};
+RecoveredString_FUN_1008c50b_10df9510 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2BeginSetupSucceeded"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x60), (int)(0), RecoveredEmptyTree());
   }
@@ -802,7 +802,7 @@ undefined4 __fastcall FUN_10df9690(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df9690 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2CancelSetupFailed"))};
+RecoveredString_FUN_1008c50b_10df9690 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2CancelSetupFailed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x69), (int)(0), RecoveredEmptyTree());
   }
@@ -820,7 +820,7 @@ undefined4 __fastcall FUN_10df9760(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df9760 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2CancelSetupSucceeded"))};
+RecoveredString_FUN_1008c50b_10df9760 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2CancelSetupSucceeded"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x68), (int)(0), RecoveredEmptyTree());
   }
@@ -838,7 +838,7 @@ undefined4 __fastcall FUN_10df9830(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df9830 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2DiscoveryTimeoutReceived"))};
+RecoveredString_FUN_1008c50b_10df9830 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2DiscoveryTimeoutReceived"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x74), (int)(0), RecoveredEmptyTree());
   }
@@ -856,7 +856,7 @@ undefined4 __fastcall FUN_10df9900(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df9900 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2EchoResponseReceived"))};
+RecoveredString_FUN_1008c50b_10df9900 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2EchoResponseReceived"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x70), (int)(0), RecoveredEmptyTree());
   }
@@ -874,7 +874,7 @@ undefined4 __fastcall FUN_10df9a80(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df9a80 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2EndSessionFailed"))};
+RecoveredString_FUN_1008c50b_10df9a80 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2EndSessionFailed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x67), (int)(0), RecoveredEmptyTree());
   }
@@ -892,7 +892,7 @@ undefined4 __fastcall FUN_10df9b50(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df9b50 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2EndSessionSucceeded"))};
+RecoveredString_FUN_1008c50b_10df9b50 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2EndSessionSucceeded"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x66), (int)(0), RecoveredEmptyTree());
   }
@@ -910,7 +910,7 @@ undefined4 __fastcall FUN_10df9d60(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df9d60 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2GetPskFailed"))};
+RecoveredString_FUN_1008c50b_10df9d60 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2GetPskFailed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x5f), (int)(0), RecoveredEmptyTree());
   }
@@ -928,7 +928,7 @@ undefined4 __fastcall FUN_10df9e30(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df9e30 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2GetPskSucceeded"))};
+RecoveredString_FUN_1008c50b_10df9e30 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2GetPskSucceeded"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x5e), (int)(0), RecoveredEmptyTree());
   }
@@ -946,7 +946,7 @@ undefined4 __fastcall FUN_10df9fb0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10df9fb0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2GetScanListFailed"))};
+RecoveredString_FUN_1008c50b_10df9fb0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2GetScanListFailed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x73), (int)(0), RecoveredEmptyTree());
   }
@@ -964,7 +964,7 @@ undefined4 __fastcall FUN_10dfa080(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfa080 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2GetScanListSucceeded"))};
+RecoveredString_FUN_1008c50b_10dfa080 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2GetScanListSucceeded"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x72), (int)(0), RecoveredEmptyTree());
   }
@@ -982,7 +982,7 @@ undefined4 __fastcall FUN_10dfa150(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfa150 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2SendEchoRequestFailed"))};
+RecoveredString_FUN_1008c50b_10dfa150 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2SendEchoRequestFailed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x69), (int)(0), RecoveredEmptyTree());
   }
@@ -1000,7 +1000,7 @@ undefined4 __fastcall FUN_10dfa2d0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfa2d0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2SendSetNetSettingsFailed"))};
+RecoveredString_FUN_1008c50b_10dfa2d0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2SendSetNetSettingsFailed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x65), (int)(0), RecoveredEmptyTree());
   }
@@ -1018,7 +1018,7 @@ undefined4 __fastcall FUN_10dfa3a0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfa3a0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2SendSetNetSettingsSucceeded"))};
+RecoveredString_FUN_1008c50b_10dfa3a0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2SendSetNetSettingsSucceeded"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(100), (int)(0), RecoveredEmptyTree());
   }
@@ -1036,7 +1036,7 @@ undefined4 __fastcall FUN_10dfa520(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfa520 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2SendSetupContinueFailed"))};
+RecoveredString_FUN_1008c50b_10dfa520 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2SendSetupContinueFailed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(99), (int)(0), RecoveredEmptyTree());
   }
@@ -1054,7 +1054,7 @@ undefined4 __fastcall FUN_10dfa5f0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfa5f0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2SendSetupContinueSucceeded"))};
+RecoveredString_FUN_1008c50b_10dfa5f0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2SendSetupContinueSucceeded"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x62), (int)(0), RecoveredEmptyTree());
   }
@@ -1072,7 +1072,7 @@ undefined4 __fastcall FUN_10dfa6c0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfa6c0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2SendStartIslandFailed"))};
+RecoveredString_FUN_1008c50b_10dfa6c0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2SendStartIslandFailed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x6f), (int)(0), RecoveredEmptyTree());
   }
@@ -1090,7 +1090,7 @@ undefined4 __fastcall FUN_10dfa790(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfa790 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2SendStartIslandSucceeded"))};
+RecoveredString_FUN_1008c50b_10dfa790 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2SendStartIslandSucceeded"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x6e), (int)(0), RecoveredEmptyTree());
   }
@@ -1108,7 +1108,7 @@ undefined4 __fastcall FUN_10dfa860(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfa860 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2SendStartOpenApFailed"))};
+RecoveredString_FUN_1008c50b_10dfa860 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2SendStartOpenApFailed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x6d), (int)(0), RecoveredEmptyTree());
   }
@@ -1126,7 +1126,7 @@ undefined4 __fastcall FUN_10dfa930(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfa930 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2SendStartOpenApSucceeded"))};
+RecoveredString_FUN_1008c50b_10dfa930 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2SendStartOpenApSucceeded"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x6c), (int)(0), RecoveredEmptyTree());
   }
@@ -1144,7 +1144,7 @@ undefined4 __fastcall FUN_10dfaa00(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfaa00 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2SetupContinueReceived"))};
+RecoveredString_FUN_1008c50b_10dfaa00 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2SetupContinueReceived"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x71), (int)(0), RecoveredEmptyTree());
   }
@@ -1162,7 +1162,7 @@ undefined4 __fastcall FUN_10dfab80(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfab80 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2StartInitialSessionFailed"))};
+RecoveredString_FUN_1008c50b_10dfab80 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2StartInitialSessionFailed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x5b), (int)(0), RecoveredEmptyTree());
   }
@@ -1180,7 +1180,7 @@ undefined4 __fastcall FUN_10dfac50(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfac50 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2StartInitialSessionSucceeded"))};
+RecoveredString_FUN_1008c50b_10dfac50 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2StartInitialSessionSucceeded"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x5a), (int)(0), RecoveredEmptyTree());
   }
@@ -1198,7 +1198,7 @@ undefined4 __fastcall FUN_10dfadd0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfadd0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2StartSecureSessionFailed"))};
+RecoveredString_FUN_1008c50b_10dfadd0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2StartSecureSessionFailed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x5d), (int)(0), RecoveredEmptyTree());
   }
@@ -1216,7 +1216,7 @@ undefined4 __fastcall FUN_10dfaea0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfaea0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2StartSecureSessionSucceeded"))};
+RecoveredString_FUN_1008c50b_10dfaea0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2StartSecureSessionSucceeded"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x5c), (int)(0), RecoveredEmptyTree());
   }
@@ -1234,7 +1234,7 @@ undefined4 __fastcall FUN_10dfb020(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfb020 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2CancelSetupFailed"))};
+RecoveredString_FUN_1008c50b_10dfb020 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2CancelSetupFailed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x6b), (int)(0), RecoveredEmptyTree());
   }
@@ -1252,7 +1252,7 @@ undefined4 __fastcall FUN_10dfb0f0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfb0f0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstart2UpgradeSucceeded"))};
+RecoveredString_FUN_1008c50b_10dfb0f0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstart2UpgradeSucceeded"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x6a), (int)(0), RecoveredEmptyTree());
   }
@@ -1270,7 +1270,7 @@ undefined4 __fastcall FUN_10dfb250(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfb250 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstartStoreRefreshComplete"))};
+RecoveredString_FUN_1008c50b_10dfb250 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstartStoreRefreshComplete"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x75), (int)(0), RecoveredEmptyTree());
   }
@@ -1288,7 +1288,7 @@ undefined4 __fastcall FUN_10dfb320(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfb320 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("netstartStoreRefreshFailed"))};
+RecoveredString_FUN_1008c50b_10dfb320 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("netstartStoreRefreshFailed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x76), (int)(0), RecoveredEmptyTree());
   }
@@ -1306,7 +1306,7 @@ undefined4 __fastcall FUN_10dfb530(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfb530 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("nfcScanFailed"))};
+RecoveredString_FUN_1008c50b_10dfb530 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("nfcScanFailed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x41), (int)(0), RecoveredEmptyTree());
   }
@@ -1324,7 +1324,7 @@ undefined4 __fastcall FUN_10dfb600(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfb600 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("nfcScanSucceeded"))};
+RecoveredString_FUN_1008c50b_10dfb600 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("nfcScanSucceeded"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x40), (int)(0), RecoveredEmptyTree());
   }
@@ -1342,7 +1342,7 @@ undefined4 __fastcall FUN_10dfbb10(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfbb10 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("pageEntered"))};
+RecoveredString_FUN_1008c50b_10dfbb10 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("pageEntered"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0xe), (int)(0), RecoveredEmptyTree());
   }
@@ -1360,7 +1360,7 @@ undefined4 __fastcall FUN_10dfbbe0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfbbe0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("pageExited"))};
+RecoveredString_FUN_1008c50b_10dfbbe0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("pageExited"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0xf), (int)(0), RecoveredEmptyTree());
   }
@@ -1378,7 +1378,7 @@ undefined4 __fastcall FUN_10dfbcb0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfbcb0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("peripheralConnected"))};
+RecoveredString_FUN_1008c50b_10dfbcb0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("peripheralConnected"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x4f), (int)(0), RecoveredEmptyTree());
   }
@@ -1396,7 +1396,7 @@ undefined4 __fastcall FUN_10dfbd80(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfbd80 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("peripheralDisconnected"))};
+RecoveredString_FUN_1008c50b_10dfbd80 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("peripheralDisconnected"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x50), (int)(0), RecoveredEmptyTree());
   }
@@ -1414,7 +1414,7 @@ undefined4 __fastcall FUN_10dfbe50(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfbe50 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("polled"))};
+RecoveredString_FUN_1008c50b_10dfbe50 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("polled"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x20), (int)(0), RecoveredEmptyTree());
   }
@@ -1432,7 +1432,7 @@ undefined4 __fastcall FUN_10dfc370(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfc370 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("productBatteryChargeLevelChanged"))};
+RecoveredString_FUN_1008c50b_10dfc370 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("productBatteryChargeLevelChanged"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x49), (int)(0), RecoveredEmptyTree());
   }
@@ -1450,7 +1450,7 @@ undefined4 __fastcall FUN_10dfc440(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfc440 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("productBatteryChargeStateChanged"))};
+RecoveredString_FUN_1008c50b_10dfc440 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("productBatteryChargeStateChanged"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x4a), (int)(0), RecoveredEmptyTree());
   }
@@ -1468,7 +1468,7 @@ undefined4 __fastcall FUN_10dfc510(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfc510 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("productReceivedBleConfig"))};
+RecoveredString_FUN_1008c50b_10dfc510 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("productReceivedBleConfig"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x57), (int)(0), RecoveredEmptyTree());
   }
@@ -1486,7 +1486,7 @@ undefined4 __fastcall FUN_10dfcdc0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfcdc0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("productUpdateEnded"))};
+RecoveredString_FUN_1008c50b_10dfcdc0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("productUpdateEnded"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x3a), (int)(0), RecoveredEmptyTree());
   }
@@ -1504,7 +1504,7 @@ undefined4 __fastcall FUN_10dfce90(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfce90 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("productUpdateProgressed"))};
+RecoveredString_FUN_1008c50b_10dfce90 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("productUpdateProgressed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x3c), (int)(0), RecoveredEmptyTree());
   }
@@ -1522,7 +1522,7 @@ undefined4 __fastcall FUN_10dfcf60(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfcf60 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("productUpdateStarted"))};
+RecoveredString_FUN_1008c50b_10dfcf60 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("productUpdateStarted"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x3b), (int)(0), RecoveredEmptyTree());
   }
@@ -1540,7 +1540,7 @@ undefined4 __fastcall FUN_10dfd030(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfd030 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("roomOrientationFinished"))};
+RecoveredString_FUN_1008c50b_10dfd030 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("roomOrientationFinished"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x58), (int)(0), RecoveredEmptyTree());
   }
@@ -1558,7 +1558,7 @@ undefined4 __fastcall FUN_10dfd100(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfd100 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("roomOrientationTargetDetected"))};
+RecoveredString_FUN_1008c50b_10dfd100 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("roomOrientationTargetDetected"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x59), (int)(0), RecoveredEmptyTree());
   }
@@ -1576,7 +1576,7 @@ undefined4 __fastcall FUN_10dfd2d0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfd2d0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("secureSettingsChanged"))};
+RecoveredString_FUN_1008c50b_10dfd2d0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("secureSettingsChanged"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x2e), (int)(0), RecoveredEmptyTree());
   }
@@ -1594,7 +1594,7 @@ undefined4 __fastcall FUN_10dfd3a0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfd3a0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("summoned"))};
+RecoveredString_FUN_1008c50b_10dfd3a0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("summoned"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(2), (int)(0), RecoveredEmptyTree());
   }
@@ -1612,7 +1612,7 @@ undefined4 __fastcall FUN_10dfd470(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfd470 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("swipeStarted"))};
+RecoveredString_FUN_1008c50b_10dfd470 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("swipeStarted"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(3), (int)(0), RecoveredEmptyTree());
   }
@@ -1630,7 +1630,7 @@ undefined4 __fastcall FUN_10dfd540(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfd540 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("swipeStopped"))};
+RecoveredString_FUN_1008c50b_10dfd540 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("swipeStopped"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(5), (int)(0), RecoveredEmptyTree());
   }
@@ -1648,7 +1648,7 @@ undefined4 __fastcall FUN_10dfd610(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfd610 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("swipedAway"))};
+RecoveredString_FUN_1008c50b_10dfd610 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("swipedAway"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(7), (int)(0), RecoveredEmptyTree());
   }
@@ -1666,7 +1666,7 @@ undefined4 __fastcall FUN_10dfd6e0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfd6e0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("tappedOutside"))};
+RecoveredString_FUN_1008c50b_10dfd6e0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("tappedOutside"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(8), (int)(0), RecoveredEmptyTree());
   }
@@ -1684,7 +1684,7 @@ undefined4 __fastcall FUN_10dfd8c0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfd8c0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("transferTestUpdate"))};
+RecoveredString_FUN_1008c50b_10dfd8c0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("transferTestUpdate"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x2b), (int)(0), RecoveredEmptyTree());
   }
@@ -1703,7 +1703,7 @@ undefined4 Recovered_10dfd990::FUN_10dfd990(undefined4 param_2)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfd990 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("transitionCompleted"))};
+RecoveredString_FUN_1008c50b_10dfd990 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("transitionCompleted"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x10), (int)(param_2), RecoveredEmptyTree());
   }
@@ -1721,7 +1721,7 @@ undefined4 __fastcall FUN_10dfda60(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfda60 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("transitionCompleted"))};
+RecoveredString_FUN_1008c50b_10dfda60 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("transitionCompleted"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x10), (int)(0), RecoveredEmptyTree());
   }
@@ -1739,7 +1739,7 @@ undefined4 __fastcall FUN_10dfdff0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfdff0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("wacCanceled"))};
+RecoveredString_FUN_1008c50b_10dfdff0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("wacCanceled"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x39), (int)(0), RecoveredEmptyTree());
   }
@@ -1757,7 +1757,7 @@ undefined4 __fastcall FUN_10dfe0c0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfe0c0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("wacFailed"))};
+RecoveredString_FUN_1008c50b_10dfe0c0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("wacFailed"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x38), (int)(0), RecoveredEmptyTree());
   }
@@ -1775,7 +1775,7 @@ undefined4 __fastcall FUN_10dfe190(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfe190 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("wacSucceeded"))};
+RecoveredString_FUN_1008c50b_10dfe190 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("wacSucceeded"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x37), (int)(0), RecoveredEmptyTree());
   }
@@ -1793,7 +1793,7 @@ undefined4 __fastcall FUN_10dfe3d0(undefined4 param_1)
 
 
 {
-RecoveredString_FUN_1008c50b_10dfe3d0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, (char *)("zoneGroupsChanged"))};
+RecoveredString_FUN_1008c50b_10dfe3d0 recovered_string{(*(volatile undefined4 *)&recovered_string = param_1, _ReadWriteBarrier(), (char *)("zoneGroupsChanged"))};
 
   ((RecoveredTreeConsumer *)(param_1))->thunk_FUN_10dee620((SCStr *)(((SCStr *)&recovered_string)), (int)(0x2d), (int)(0), RecoveredEmptyTree());
   }
