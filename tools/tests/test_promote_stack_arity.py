@@ -22,6 +22,9 @@ return _InterlockedExchangeAdd((volatile long *)this,value);
 
 
 class StackArityTests(unittest.TestCase):
+    def setUp(self):
+        (ROOT/'analysis').mkdir(parents=True,exist_ok=True)
+
     def test_real_member_has_correct_arguments_and_exact_native_body(self):
         reference=DLL.read_bytes();base,sections=section_map(reference)
         rows={'112ef590':{'entry':'112ef590','reference_body_bytes':'11'}}

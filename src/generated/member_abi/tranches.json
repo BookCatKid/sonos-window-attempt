@@ -122,5 +122,9 @@
   {
     "object": "globals_members_virtual_arguments_stack_arity_reference_flags",
     "directory": "analysis/compiled-cpp-globals-members-virtual-arguments-stack-arity"
+  },
+  {
+    "object": "tree_iterators_reference_flags",
+    "directory": "analysis/compiled-cpp-tree-iterators"
   }
 ]

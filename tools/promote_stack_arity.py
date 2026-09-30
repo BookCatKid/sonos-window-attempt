@@ -6,6 +6,7 @@ compiled and fully byte-verified bodies can enter recovery coverage.
 """
 import argparse
 import csv
+import hashlib
 import json
 import os
 import re
@@ -79,7 +80,14 @@ def main():
                 (directory/'reference-eh-inventory.json').write_text(json.dumps([r for r in json.loads(eh.read_text()) if r['entry'] in selected],indent=2)+'\n')
         (emit/(stem+'.cpp')).write_text(text);(emit/(stem+'-index.tsv')).write_bytes(inventory.read_bytes())
         name=stem+'_reference_flags';manifest=[r for r in manifest if r['object']!=name]+[{'object':name,'directory':str(directory.relative_to(ROOT))}]
-        print(json.dumps({'object':name,'compiled_functions':len(accepted),'reference_bytes':sum(int(r['reference_body_bytes']) for r in accepted)}),flush=True)
+        metrics={'object':name,'compiled_functions':len(accepted),'reference_bytes':sum(int(r['reference_body_bytes']) for r in accepted),
+                 'pinned_msvc_verified':False,'byte_match_verified':False,
+                 'input_source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),
+                 'source_sha256':hashlib.sha256(target.read_bytes()).hexdigest(),
+                 'index_sha256':hashlib.sha256(inventory.read_bytes()).hexdigest()}
+        (directory/'coverage.json').write_text(json.dumps(metrics,indent=2)+'\n')
+        manifest_path.write_text(json.dumps(manifest,indent=2)+'\n')
+        print(json.dumps(metrics),flush=True)
     manifest_path.write_text(json.dumps(manifest,indent=2)+'\n')
 
 
