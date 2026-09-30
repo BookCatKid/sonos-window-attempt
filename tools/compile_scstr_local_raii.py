@@ -192,7 +192,10 @@ def main():
     parser.add_argument('--signature-exports',nargs='+',type=Path,
                         help='Overlay an isolated signature propagation experiment as a separate tranche')
     parser.add_argument('--extended-storage',action='store_true',help='Probe scalar string slots and unused parameter spills separately')
-    args=parser.parse_args();paths=args.exports+(args.signature_exports or [])
+    parser.add_argument('--tag',help='Keep an additional experiment separate, using a lowercase word or hyphenated words')
+    args=parser.parse_args()
+    if args.tag and not re.fullmatch(r'[a-z][a-z0-9]*(?:-[a-z0-9]+)*',args.tag):parser.error('Invalid experiment tag')
+    paths=args.exports+(args.signature_exports or [])
     records=load_records(paths);abi=CallABI(paths,recover_implicit_register=True)
     if args.signature_exports:
         reference=DLL.read_bytes();base,sections=section_map(reference)
@@ -208,6 +211,7 @@ def main():
     print('Candidates:',len(candidates),'bytes:',sum(row['body_bytes'] for row in candidates),flush=True)
     suffix='-signatures' if args.signature_exports else ''
     if args.extended_storage:suffix+='-storage'
+    if args.tag:suffix+='-'+args.tag
     output=ROOT/('analysis/compiled-cpp-scstr-local-raii'+suffix);output.mkdir(parents=True,exist_ok=True)
     failures=[];accepted=[];scratch=output/'.syntax-probe.cpp'
     for start in range(0,len(candidates),100):accepted+=split_valid(candidates[start:start+100],scratch,failures)
