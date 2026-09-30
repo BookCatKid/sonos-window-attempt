@@ -208,3 +208,18 @@ failures were systemic rather than specific to the terminate family.
 identical lengths with every fixed byte matching, but its generated exception
 graph is rejected because a by-value owner parameter reconstructs a C++
 exception specification the reference does not carry.
+
+Admitting the reference's own runtime and exported calls widened both guard
+tranches. Pinned run
+https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36661659252
+takes the single-state guards from 4635 to 4783 compiled functions and from
+4466 to 4594 exact ones, and the cumulative audit to 163,711 exact bodies /
+1,699,600 executable bytes (6.643559%), a gain of 14,224 bytes. The native
+typed family regresses under the same widening and keeps its earlier source.
+
+The 1,706-function multi-state terminate tranche holds at 925 exact bodies, so
+its additional 77 functions remain pending. Of its 447 inexact functions,
+186 / 50,165 bytes are held by the generated exception handler differing from
+the reference handler; the recovered thunks tranche's remaining 8,392 inexact
+functions fail on instruction differences rather than relocation failures, which
+no resolution change can reach.
