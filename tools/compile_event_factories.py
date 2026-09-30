@@ -93,6 +93,15 @@ __forceinline FactoryKeyString(const char *text) { ((SCStr *)this)->int_allocRep
 ~FactoryKeyString() noexcept { ((SCStr *)this)->int_release(); }
 };
 '''
+    temporary_body=variants['event_factories_output_temporary'].replace('new(result)', 'new(FactoryOutputLocation{result})').replace(
+        'int kind;', '__assume(result != 0);\nint kind;').replace('FactoryString','RecoveredString_FUN_1008c50b')
+    variants['event_factories_output_nonnull_temporary']=temporary_body
+    libraries['event_factories_output_nonnull_temporary']=improved_library
+    variants['event_factories_output_nonnull_key_temporary']=temporary_body.replace(
+        '{ RecoveredString_FUN_1008c50b key("value"); kind=source->value((SCStr *)&key); }',
+        'kind=source->value(factory_key_address(RecoveredString_FUN_1008c50b("value")));')
+    libraries['event_factories_output_nonnull_key_temporary']=improved_library+'''__forceinline SCStr *factory_key_address(RecoveredString_FUN_1008c50b &&key) { return (SCStr *)&key; }
+'''
     for name,body in variants.items():
         library=libraries[name]
         if name.startswith('event_factories_output_throwing'):

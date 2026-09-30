@@ -13,6 +13,25 @@ import java.util.*;
 public class RestoreContainerCallABI extends GhidraScript {
     private final Gson gson=new Gson();
     private DecompInterface decompiler;
+    private void requireIsolatedProject() throws Exception {
+        Path root=Path.of(getSourceFile().getAbsolutePath()).getParent().getParent().getParent().toRealPath();
+        Path allowed=root.resolve("analysis/container-call-abi/ghidra").toRealPath();
+        Path actual=Path.of(currentProgram.getDomainFile().getProjectLocator().getLocation()).toRealPath();
+        if(!actual.equals(allowed))throw new IOException("ABI edits require the isolated analysis/container-call-abi/ghidra project");
+    }
+    private void memberABI(String entry,DataType receiver,DataType result,int cleanup,DataType... arguments) throws Exception {
+        Function f=getFunctionAt(toAddr(entry));if(f==null||f.isThunk())throw new IOException("Missing native function "+entry);
+        List<Parameter> params=new ArrayList<>();
+        params.add(new ParameterImpl("receiver",receiver,currentProgram.getRegister("ECX"),currentProgram));
+        int offset=4;
+        for(int i=0;i<arguments.length;i++) {
+            params.add(new ParameterImpl("argument_"+i,arguments[i],offset,currentProgram));offset+=arguments[i].getLength();
+        }
+        Parameter ret=result==VoidDataType.dataType?new ReturnParameterImpl(result,currentProgram):
+            new ReturnParameterImpl(result,currentProgram.getRegister("EAX"),currentProgram);
+        f.updateFunction("__thiscall",ret,Function.FunctionUpdateType.CUSTOM_STORAGE,true,SourceType.USER_DEFINED,params.toArray(new Parameter[0]));
+        f.setStackPurgeSize(cleanup);
+    }
     private void export(List<String> entries,Path path) throws Exception {
         try(PrintWriter out=new PrintWriter(new FileWriter(path.toFile()))) {
             for(String entry:entries) {
@@ -28,9 +47,11 @@ public class RestoreContainerCallABI extends GhidraScript {
         }
     }
     public void run() throws Exception {
-        String[] args=getScriptArgs();if(args.length!=2)throw new IllegalArgumentException("callers.txt output_directory");
+        requireIsolatedProject();
+        String[] args=getScriptArgs();if(args.length!=2&&args.length!=3)throw new IllegalArgumentException("callers.txt output_directory [proven_event_constructor_index.tsv]");
         Path output=Path.of(args[1]);Files.createDirectories(output);
         List<String> entries=new ArrayList<>(Files.readAllLines(Path.of(args[0])));entries.add("10dee620");
+        if(args.length==3)entries.addAll(Arrays.asList("10deea50","10def0d0","10df15a0","105ad940"));
         decompiler=new DecompInterface();if(!decompiler.openProgram(currentProgram))throw new IOException("Decompiler cannot open program");
         try {
             export(entries,output.resolve("before.jsonl"));
@@ -51,7 +72,32 @@ public class RestoreContainerCallABI extends GhidraScript {
                     new ParameterImpl("tree",container,16,currentProgram)};
                 Parameter result=new ReturnParameterImpl(pointer,currentProgram.getRegister("EAX"),currentProgram);
                 target.updateFunction("__thiscall",result,Function.FunctionUpdateType.CUSTOM_STORAGE,true,SourceType.USER_DEFINED,parameters);
-                target.setStackPurgeSize(20);ok=true;
+                target.setStackPurgeSize(20);
+                if(args.length==3) {
+                    StructureDataType event=new StructureDataType(new CategoryPath("/RecoveryProof"),"RecoveredEvent",0,dtm);
+                    event.add(pointer,4,"text_rep",null);event.add(UnsignedIntegerDataType.dataType,4,"event_id",null);
+                    event.add(pointer,4,"properties",null);event.add(pointer,4,"interface_pointer",null);
+                    event.add(container,8,"tree",null);
+                    DataType eventType=dtm.addDataType(event,DataTypeConflictHandler.REPLACE_HANDLER);
+                    DataType eventPointer=new PointerDataType(eventType,4,dtm);
+                    List<String> index=Files.readAllLines(Path.of(args[2]));
+                    for(String line:index.subList(1,index.size())) {
+                        String[] fields=line.split("\t");if(fields.length!=3||!Arrays.asList("160","163").contains(fields[2]))throw new IOException("Expected proven event constructor");
+                        Function ctor=getFunctionAt(toAddr(fields[0]));
+                        if(ctor==null||ctor.getBody().getNumAddresses()!=Integer.parseInt(fields[2]))throw new IOException("Native constructor extent differs");
+                        memberABI(fields[0],eventPointer,eventPointer,0);
+                    }
+                    memberABI("10deea50",eventPointer,eventPointer,4,eventPointer);
+                    memberABI("10def0d0",eventPointer,VoidDataType.dataType,0);
+                    memberABI("10df15a0",pointer,VoidDataType.dataType,4,eventPointer);
+                    memberABI("105ad940",pointer,VoidDataType.dataType,4,eventPointer);
+                    for(String entry:Arrays.asList("10e00c90","10e00e20")) {
+                        Function f=getFunctionAt(toAddr(entry));
+                        Parameter ret=new ReturnParameterImpl(eventPointer,currentProgram.getRegister("EAX"),currentProgram);
+                        Parameter[] params={new ParameterImpl("result",eventPointer,4,currentProgram),new ParameterImpl("variant",pointer,8,currentProgram)};
+                        f.updateFunction("__cdecl",ret,Function.FunctionUpdateType.CUSTOM_STORAGE,true,SourceType.USER_DEFINED,params);f.setStackPurgeSize(0);
+                    }
+                }
                 List<Map<String,Object>> storage=new ArrayList<>();
                 for(Parameter param:target.getParameters()) {
                     Map<String,Object> row=new LinkedHashMap<>();row.put("name",param.getName());row.put("type",param.getDataType().getName());
@@ -59,6 +105,7 @@ public class RestoreContainerCallABI extends GhidraScript {
                 }
                 Map<String,Object> report=new LinkedHashMap<>();report.put("entry","10dee620");report.put("signature",target.getSignature().getPrototypeString());report.put("parameters",storage);report.put("ret_cleanup_bytes",target.getStackPurgeSize());
                 Files.writeString(output.resolve("applied-abi.json"),gson.toJson(report)+"\n");
+                ok=true;
             } finally {currentProgram.endTransaction(tx,ok);}
             decompiler.flushCache();export(entries,output.resolve("after.jsonl"));
         } finally {decompiler.dispose();}

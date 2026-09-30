@@ -158,5 +158,13 @@
   {
     "object": "event_factories_output_key_release_reference_flags",
     "directory": "analysis/compiled-cpp-event-factories-output-key-release"
+  },
+  {
+    "object": "event_factories_output_nonnull_temporary_reference_flags",
+    "directory": "analysis/compiled-cpp-event-factories-output-nonnull-temporary"
+  },
+  {
+    "object": "event_factories_output_nonnull_key_temporary_reference_flags",
+    "directory": "analysis/compiled-cpp-event-factories-output-nonnull-key-temporary"
   }
 ]
