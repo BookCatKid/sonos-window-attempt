@@ -134,5 +134,9 @@
   {
     "object": "tree_iterators_cached_node_reference_flags",
     "directory": "analysis/compiled-cpp-tree-iterators-cached-node"
+  },
+  {
+    "object": "tree_iterators_shared_node_reference_flags",
+    "directory": "analysis/compiled-cpp-tree-iterators-shared-node"
   }
 ]

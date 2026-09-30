@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from compile_tree_iterators import NODE,BODY,BODY_ASCENDING_FIRST,BODY_CACHED_NODE
+from compile_tree_iterators import NODE,BODY,BODY_ASCENDING_FIRST,BODY_CACHED_NODE,BODY_SHARED_NODE
 from compile_ghidra_cpp import ROOT
 
 
@@ -18,6 +18,9 @@ class TreeIteratorTests(unittest.TestCase):
 
     def test_cached_node_preserves_traversal(self):
         self.check_traversal(BODY_CACHED_NODE)
+
+    def test_shared_node_preserves_traversal(self):
+        self.check_traversal(BODY_SHARED_NODE)
 
     def check_traversal(self,body):
         source=NODE+'''struct Recovered_test {
