@@ -8,7 +8,7 @@ on:
         type: boolean
         default: false
       focused_probe:
-        description: Compile only the member ABI and owner parameter experiments
+        description: Compile member ABI, owner parameter, and packed data experiments
         type: boolean
         default: false
   push:

@@ -114,6 +114,51 @@ separate tranche. `tools/run_signature_propagation.py --storage-only` performs
 the callee experiment on an isolated project, preserving before/after exports.
 No reference application is executed and no original Ghidra project is modified.
 
+## Physical PE placement and C++ data recovery
+
+The partial PE places all 165,646 proven function bodies and accepted compiler
+EH/literal fragments at reference offsets. Its `.text` has 1,935,596 verified
+compiler bytes, including EH helpers. A conflicting overlap, unresolved fixup,
+or mismatched marked byte aborts. Unknown regions remain empty and are reported.
+
+Packed C++ constants and symbolic pointer initializers reconstruct all six
+non-executable payload sections, including 490,344 HIGHLOW fields. The compiler
+produces their pointer relocations. Executable sections and `.reloc` are rejected
+as data input. All 74 full-data objects / 9,691,648 bytes compile and pass final
+byte/fixup proofs under pinned MSVC in
+[run 36680111341](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36680111341).
+
+`analysis/linked-placement-data-full/recovery-layout.dll` has six byte-identical
+sections: `.rdata`, `.data`, `.idata`, `.tls`, `.00cfg`, and `.rsrc`. It contains
+11,627,244 proven compiler bytes (31.294905% of the file). The independent
+full-file comparator scores 37.2673%, including coincidental empty-region zero
+matches, and **fails the 100% gate**. The image lacks an entry point and
+import/export header directories; its base relocations are incomplete. It is a
+placement artifact, not a usable or complete DLL. No reference instructions are
+embedded.
+
+Reproduce the current placement using the pinned artifacts available locally:
+
+```sh
+python3 tools/compile_recovered_data.py --tag full
+python3 tools/link_recovery_image.py \
+  --artifact-dirs ci-output/run-36680111341 ci-output/run-36661659252 \
+    analysis/msvc-14-28-x86-objects-5490d21-run36626235420 \
+  --include-flag-sweep --output-dir analysis/linked-placement-data-full
+python3 tools/compare.py analysis/linked-placement-data-full/recovery-layout.dll
+```
+
+Generation alone is a local Clang syntax/COFF experiment. Placement requires
+artifact `toolchain.txt` evidence for pinned MSVC 19.28.29919. Each data source
+has a manifest hash and page index. Reports retain object provenance, fixups,
+missing targets and unbuilt byte counts. Twenty-one tests pass. CodeRabbit's
+placement review returned zero findings; its later data-tooling review reached
+the service's free-review rate limit.
+
+Wider callee-signature propagation added zero bytes and regressed a previously
+verified string batch. That source remains separate and is not selected by
+default. Future inference must preserve proven caller signatures and variants.
+
 ## Following work, in priority order
 
 Rank remaining failures by distinct reference bytes and repeated instruction/EH
@@ -125,11 +170,12 @@ run targeted Ghidra signature propagation in an isolated project; retain the
 before/after corpus and independently check its conventions against reference
 instructions. Avoid speculative signature propagation across the entire project.
 
-In parallel with body recovery, develop a linked-layout tranche that places
-already verified definitions, data, incremental thunks, and EH metadata at their
-reference locations. The .text, .rdata, and .reloc sections must be measured
-together. Reference placement in an object verifier is a constraint for the
-linker work, not evidence that the linker already meets it.
+Extend physical placement with new source definitions, complete compiler
+relocation coverage, and PE startup/header reconstruction. Measure `.text`,
+`.rdata`, and `.reloc` together. Data and existing thunks now have final-offset
+proofs, but most native executable code remains missing. The full relocation
+table must follow real recovered address fields; copying instruction bodies or
+counting empty holes is excluded.
 
 The final acceptance command remains `python3 tools/compare.py <rebuilt.dll>`.
 No function count, pseudocode percentage, syntax percentage, or placement-based

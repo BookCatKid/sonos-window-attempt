@@ -16,7 +16,13 @@ reference executable bytes are excluded.
 The latest [recovery strategy and measured results](docs/recovery-strategy.md)
 record 165,646 verified object bodies / 1,765,210 executable bytes (6.900022%),
 including a further 25,342-byte gain from direct-call ABI and string-lifetime recovery.
-This is reference-placement object coverage; no full matching DLL exists yet.
+This is function-body coverage; no full matching DLL exists yet.
+
+The partial PE placement build contains 11,627,244 verified compiler-produced
+bytes at their final file offsets. All six recovered non-executable sections
+are byte-identical. Its complete-file aligned match is 37.2673%, including
+coincidental matches in zero-filled unbuilt regions; the 100% gate still fails.
+See the recovery strategy for the reproducible placement command.
 
 ## Layout
 
