@@ -108,6 +108,13 @@ __forceinline FactoryKeyString(const char *text) { ((SCStr *)this)->int_allocRep
         'STOP event; return Event_thunk_FUN_10def0d0(event);', 'return STOP();').replace(
         'ALERT event; return Event_thunk_FUN_10def0d0(event);', 'return ALERT();')
     libraries['event_factories_value_temporary']=improved_library
+    variants['event_factories_value_pointer_key']=variants['event_factories_value_temporary']
+    libraries['event_factories_value_pointer_key']=improved_library.replace('unsigned int rep;', 'void *rep;')
+    variants['event_factories_value_scstr_key']=variants['event_factories_value_temporary'].replace(
+        'RecoveredString_FUN_1008c50b key', 'SCStr key')
+    libraries['event_factories_value_scstr_key']=improved_library+'''__forceinline SCStr::SCStr(const char *text) { int_allocRep((char *)text); }
+__forceinline SCStr::~SCStr() { int_release(); rep=0; }
+'''
     for name,body in variants.items():
         library=libraries[name]
         if name.startswith('event_factories_output_throwing'):
