@@ -174,5 +174,197 @@
   {
     "object": "scstr_local_raii_signatures_storage_reference_flags",
     "directory": "analysis/compiled-cpp-scstr-local-raii-signatures-storage"
+  },
+  {
+    "object": "recovered_thunks_o2",
+    "directory": "analysis/compiled-cpp-recovered-thunks-expanded"
+  },
+  {
+    "object": "recovered_thunks_reference_flags",
+    "directory": "analysis/compiled-cpp-recovered-thunks-expanded"
+  },
+  {
+    "object": "recovered_vftables_o2",
+    "directory": "analysis/compiled-cpp-vftables"
+  },
+  {
+    "object": "recovered_vftables_reference_flags",
+    "directory": "analysis/compiled-cpp-vftables"
+  },
+  {
+    "object": "native_virtual_o2",
+    "directory": "analysis/compiled-cpp-native-virtual"
+  },
+  {
+    "object": "native_virtual_reference_flags",
+    "directory": "analysis/compiled-cpp-native-virtual"
+  },
+  {
+    "object": "scstr_expanded_o2",
+    "directory": "analysis/compiled-cpp-scstr-expanded"
+  },
+  {
+    "object": "scstr_expanded_reference_flags",
+    "directory": "analysis/compiled-cpp-scstr-expanded"
+  },
+  {
+    "object": "scstr_byte_offsets_o2",
+    "directory": "analysis/compiled-cpp-scstr-byte-offsets"
+  },
+  {
+    "object": "scstr_byte_virtual_o2",
+    "directory": "analysis/compiled-cpp-scstr-byte-virtual"
+  },
+  {
+    "object": "scstr_byte_virtual_reference_flags",
+    "directory": "analysis/compiled-cpp-scstr-byte-virtual"
+  },
+  {
+    "object": "scstr_typed_o2",
+    "directory": "analysis/compiled-cpp-scstr-typed"
+  },
+  {
+    "object": "scstr_virtual_o2",
+    "directory": "analysis/compiled-cpp-scstr-virtual"
+  },
+  {
+    "object": "native_typed_o2",
+    "directory": "analysis/compiled-cpp-native-typed"
+  },
+  {
+    "object": "native_typed_reference_flags",
+    "directory": "analysis/compiled-cpp-native-typed"
+  },
+  {
+    "object": "scstr_recovered",
+    "directory": "analysis/compiled-cpp-scstr"
+  },
+  {
+    "object": "direct_jump_000",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_000"
+  },
+  {
+    "object": "direct_jump_001",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_001"
+  },
+  {
+    "object": "direct_jump_002",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_002"
+  },
+  {
+    "object": "direct_jump_003",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_003"
+  },
+  {
+    "object": "direct_jump_004",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_004"
+  },
+  {
+    "object": "direct_jump_005",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_005"
+  },
+  {
+    "object": "direct_jump_006",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_006"
+  },
+  {
+    "object": "direct_jump_007",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_007"
+  },
+  {
+    "object": "direct_jump_008",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_008"
+  },
+  {
+    "object": "direct_jump_009",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_009"
+  },
+  {
+    "object": "direct_jump_010",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_010"
+  },
+  {
+    "object": "direct_jump_011",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_011"
+  },
+  {
+    "object": "direct_jump_012",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_012"
+  },
+  {
+    "object": "direct_jump_013",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_013"
+  },
+  {
+    "object": "direct_jump_014",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_014"
+  },
+  {
+    "object": "direct_jump_015",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_015"
+  },
+  {
+    "object": "direct_jump_016",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_016"
+  },
+  {
+    "object": "direct_jump_017",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_017"
+  },
+  {
+    "object": "direct_jump_018",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_018"
+  },
+  {
+    "object": "direct_jump_019",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_019"
+  },
+  {
+    "object": "direct_jump_020",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_020"
+  },
+  {
+    "object": "direct_jump_021",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_021"
+  },
+  {
+    "object": "direct_jump_022",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_022"
+  },
+  {
+    "object": "direct_jump_023",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_023"
+  },
+  {
+    "object": "direct_jump_024",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_024"
+  },
+  {
+    "object": "direct_jump_025",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_025"
+  },
+  {
+    "object": "direct_jump_026",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_026"
+  },
+  {
+    "object": "direct_jump_027",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_027"
+  },
+  {
+    "object": "direct_jump_028",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_028"
+  },
+  {
+    "object": "direct_jump_029",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_029"
+  },
+  {
+    "object": "direct_jump_030",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_030"
+  },
+  {
+    "object": "direct_jump_031",
+    "directory": "analysis/compiled-cpp-direct-jumps/direct_jump_031"
   }
 ]

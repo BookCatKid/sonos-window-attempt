@@ -1,0 +1,8 @@
+[
+  {
+    "object": "recovered_data_pilot_000",
+    "directory": "analysis/compiled-data-pilot/recovered_data_pilot_000",
+    "source": "src/generated/data/recovered_data_pilot_000.cpp",
+    "source_sha256": "9e712f50a1df4530f32e6143ae40356f705a0df66ad4356bc78537446d174285"
+  }
+]

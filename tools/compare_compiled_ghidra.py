@@ -74,7 +74,7 @@ def read_coff(path):
             for i in range(rel_count)
         ]
         sections.append({'name': name, 'code': data[raw_start:raw_start + raw_size],
-                         'relocations': relocs})
+                         'relocations': relocs,'characteristics':u32(data,head+36)})
     symbols = []
     symbols_by_index = {}
     index = 0
@@ -300,7 +300,8 @@ def security_cookie_va(reference, image_base, pe_sections):
     return cookie if function_bytes(reference, cookie, 4, image_base, pe_sections) else None
 
 
-def compare_directory(directory, reference, image_base, pe_sections, symbol_vas, object_path=None):
+def compare_directory(directory, reference, image_base, pe_sections, symbol_vas, object_path=None,
+                      accepted_fragment_sink=None):
     selected_object = object_path or directory / 'ghidra_recovered.obj'
     sections, symbols, symbols_by_index = read_coff(
         selected_object)
@@ -357,6 +358,9 @@ def compare_directory(directory, reference, image_base, pe_sections, symbol_vas,
                                 and unresolved_relocs == 0)
             same_length_fixed_match = (bool(expected) and len(candidate) == len(expected)
                                        and fixed_matches == len(fixed_positions))
+            if relocation_exact and accepted_fragment_sink is not None:
+                accepted_fragment_sink(entry, resolved_candidate, candidate, relocs,
+                                       targets_for_function, literals)
             rows.append({'entry': entry, 'name': row['name'],
                          'reference_bytes': len(expected), 'compiled_bytes': len(candidate),
                          'relocations': len(relocs), 'fixed_compared': len(fixed_positions),

@@ -16,4 +16,8 @@ for %%F in (src\generated\owner_parameter_variants\*.cpp) do (
   cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\%%~nF_reference_flags.obj %%F > out\%%~nF_reference_flags.log 2>&1
   if errorlevel 1 set PROBE_FAILED=1
 )
+if exist src\generated\data\*.cpp for %%F in (src\generated\data\*.cpp) do (
+  cl /nologo /O2 /bigobj /c /Foout\%%~nF.obj %%F > out\%%~nF.log 2>&1
+  if errorlevel 1 set PROBE_FAILED=1
+)
 exit /b %PROBE_FAILED%
