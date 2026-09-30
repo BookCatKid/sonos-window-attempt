@@ -59,7 +59,7 @@ def strip_cookie(source):
     return source if 'DAT_12126b84' not in source else None
 
 
-def lower(record,evidence,abi,extended_storage=False,preserve_storage_type=False):
+def lower(record,evidence,abi,extended_storage=False,preserve_storage_type=False,preserve_spill=False):
     meta=evidence['metadata'];actions=meta['actions']
     if record['body_bytes']<=5 or meta['state_count']!=2 or len(actions)!=2:return None
     if any(meta['words'][3:8]) or any(x['next_state']!=-1 for x in actions):return None
@@ -107,8 +107,16 @@ def lower(record,evidence,abi,extended_storage=False,preserve_storage_type=False
             initializer=re.search(r'(?m)^\s*'+name+r'\s*=\s*(?:param_\d+|ghidra_this);',prior)
             if initializer and not re.search(r'\b'+name+r'\b',prior[:initializer.start()]+prior[initializer.end():]):
                 start=declaration.end()+initializer.start();end=declaration.end()+initializer.end()
-                return lower({**record,'decompiled_c':source[:start]+source[end:]},evidence,abi,
-                             extended_storage=True,preserve_storage_type=preserve_storage_type)
+                candidate=lower({**record,'decompiled_c':source[:start]+source[end:]},evidence,abi,
+                             extended_storage=True,preserve_storage_type=preserve_storage_type,preserve_spill=preserve_spill)
+                if candidate and preserve_spill:
+                    value=initializer.group(0).split('=',1)[1].rstrip(';').strip()
+                    construction=re.search(r'recovered_string\((.*?)\);',candidate['source'])
+                    if not construction:return None
+                    argument=construction.group(1)
+                    replacement=f'recovered_string{{(*(volatile undefined4 *)&recovered_string = (undefined4)({value}), {argument})}};'
+                    candidate['source']=candidate['source'][:construction.start()]+replacement+candidate['source'][construction.end():]
+                return candidate
         return None
     cleanup_end=end+1
     semicolon=re.match(r'\s*;',source[cleanup_end:])
@@ -194,6 +202,7 @@ def main():
     parser.add_argument('--signature-exports',nargs='+',type=Path,
                         help='Overlay an isolated signature propagation experiment as a separate tranche')
     parser.add_argument('--extended-storage',action='store_true',help='Probe scalar string slots and unused parameter spills separately')
+    parser.add_argument('--preserve-spill',action='store_true',help='Sequence the observed stack-slot parameter write before string construction')
     parser.add_argument('--preserve-storage-type',action='store_true',help='Retain recovered scalar field types as a separate source hypothesis')
     parser.add_argument('--tag',help='Keep an additional experiment separate, using a lowercase word or hyphenated words')
     args=parser.parse_args()
@@ -208,7 +217,7 @@ def main():
         evidence=json.loads(line);record=records.get(evidence['entry'])
         if record:
             item=lower(record,evidence,abi,extended_storage=args.extended_storage,
-                       preserve_storage_type=args.preserve_storage_type)
+                       preserve_storage_type=args.preserve_storage_type,preserve_spill=args.preserve_spill)
             if item:candidates.append(item)
     candidates.sort(key=lambda row:row['entry'])
     if args.limit:candidates=candidates[:args.limit]
@@ -216,6 +225,7 @@ def main():
     suffix='-signatures' if args.signature_exports else ''
     if args.extended_storage:suffix+='-storage'
     if args.preserve_storage_type:suffix+='-typed'
+    if args.preserve_spill:suffix+='-spill'
     if args.tag:suffix+='-'+args.tag
     output=ROOT/('analysis/compiled-cpp-scstr-local-raii'+suffix);output.mkdir(parents=True,exist_ok=True)
     failures=[];accepted=[];scratch=output/'.syntax-probe.cpp'

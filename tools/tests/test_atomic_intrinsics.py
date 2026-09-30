@@ -54,7 +54,9 @@ char old; LOCK(); old = *p; *p = value; UNLOCK(); return old; }''')
                      'LOCK(); *p = 1; *q = 2; UNLOCK();',
                      'LOCK(); old = *p; next = old + 1; *p = next; UNLOCK();',
                      'LOCK(); old = *p; *p = old + old; UNLOCK();',
-                     'LOCK(); old = *p; p = q; *p = old + 1; UNLOCK();']:
+                     'LOCK(); old = *p; p = q; *p = old + 1; UNLOCK();',
+                     'long long FUN_10123456(long long *p) { LOCK(); *p = 0; UNLOCK(); }',
+                     'void FUN_10123456(void *p) { LOCK(); *(double *)p = 0; UNLOCK(); }']:
             lowered, count = lower_atomic_blocks(body)
             self.assertEqual((lowered, count), (body, 0))
 

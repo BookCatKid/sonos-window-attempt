@@ -51,14 +51,21 @@ def lower_atomic_blocks(source):
                 valid=False;break
             else:prefix.append(statement+';')
         if not valid:continue
-        width=4
-        if re.search(r'\((?:undefined1|char|byte)\s*\*\)',destination):width=1
-        elif re.search(r'\((?:undefined2|short|ushort)\s*\*\)',destination):width=2
+        widths={'undefined1':1,'char':1,'byte':1,'undefined2':2,'short':2,
+                'ushort':2,'undefined4':4,'int':4,'uint':4,'long':4,'ulong':4}
+        cast=re.match(r'\*\s*\(\s*(\w+)\s*\*\s*\)',destination)
+        if cast:
+            width=widths.get(cast.group(1))
         elif re.fullmatch(r'\*\w+',destination):
+            # Restrict lookup to a named parameter or standalone local declaration.
             name=address
-            pointer=re.search(r'\b(undefined1|char|byte|undefined2|short|ushort|undefined4|int|uint)\s*\*\s*'+re.escape(name)+r'\b',source)
-            if pointer and pointer.group(1) in {'undefined1','char','byte'}:width=1
-            elif pointer and pointer.group(1) in {'undefined2','short','ushort'}:width=2
+            header,_,body=source.partition('{')
+            parameter=re.search(r'(?:[,(])\s*(\w+)\s*\*\s*'+re.escape(name)+r'\s*(?=[,)])',header)
+            local=re.search(r'(?m)^\s*(\w+)\s*\*\s*'+re.escape(name)+r'\s*;',body)
+            declaration=parameter or local
+            width=widths.get(declaration.group(1)) if declaration else None
+        else:width=None
+        if width is None:continue
         typ={1:'char',2:'short',4:'long'}[width];suffix={1:'8',2:'16',4:''}[width]
         destination_pattern=r'\s*'.join(re.escape(c) for c in canonical_destination)
         alternatives=[destination_pattern]+[re.escape(name) for name in aliases]

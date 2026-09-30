@@ -45,14 +45,14 @@ EVIDENCE = {'handler': '1172e53d', 'metadata': {
 
 
 class EmptyTreeTests(unittest.TestCase):
-    def candidate(self, source=SOURCE):
+    def candidate(self, source=SOURCE, ordered_homes=False):
         record = {'entry': '10df5400', 'name': 'FUN_10df5400',
                   'body_bytes': 160, 'decompiled_c': source}
         abi = SimpleNamespace(lower=lambda text: (text, {}, 0))
-        return lower(record, EVIDENCE, abi, 'none', nontrivial_copy=True, stack_homes=True)
+        return lower(record, EVIDENCE, abi, 'none', nontrivial_copy=True, stack_homes=True, ordered_homes=ordered_homes)
 
     def test_by_value_container_has_compiler_owned_lifetime_and_layout(self):
-        candidate = self.candidate()
+        candidate = self.candidate(ordered_homes=True)
         self.assertIsNotNone(candidate)
         source = cpp_source([candidate])
         with tempfile.TemporaryDirectory(dir=ROOT / 'analysis') as directory:

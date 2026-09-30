@@ -47,10 +47,15 @@ def lower(record,evidence,abi,volatility,nontrivial_copy=False,stack_homes=False
     source=before+replacement+after
     if stack_homes and not ordered_homes:
         classname='RecoveredString_FUN_1008c50b_'+record['entry']
-        declaration=candidate['abi_declarations'][classname]
+        declaration=candidate['abi_declarations'].get(classname)
+        if not declaration:return None
         # Preserve the ECX spill in storage immediately overwritten by construction.
-        declaration=declaration.replace('char * p0)', 'char * p0, undefined4 receiver)')
-        declaration=declaration.replace('{ ((SCStr *)this)->int_allocRep', '{ *(volatile undefined4 *)&rep = receiver; ((SCStr *)this)->int_allocRep')
+        rewritten=declaration.replace('char * p0)', 'char * p0, undefined4 receiver)')
+        if rewritten==declaration:return None
+        declaration=rewritten
+        rewritten=declaration.replace('{ ((SCStr *)this)->int_allocRep', '{ *(volatile undefined4 *)&rep = receiver; ((SCStr *)this)->int_allocRep')
+        if rewritten==declaration:return None
+        declaration=rewritten
         candidate['abi_declarations'][classname]=declaration
         initialization=re.search(r'recovered_string\((.*?)\);',source)
         if not initialization:return None
@@ -59,7 +64,7 @@ def lower(record,evidence,abi,volatility,nontrivial_copy=False,stack_homes=False
         initialization=re.search(r'recovered_string\((.*?)\);',source)
         if not initialization:return None
         argument=initialization.group(1)
-        source=source[:initialization.start()]+f'recovered_string((*(volatile undefined4 *)&recovered_string = param_1, {argument}));'+source[initialization.end():]
+        source=source[:initialization.start()]+f'recovered_string{{(*(volatile undefined4 *)&recovered_string = param_1, {argument})}};'+source[initialization.end():]
     construction_home='RecoveredEmptyTree * volatile construction_home = this; ' if stack_homes else ''
     head_qualifier=' volatile' if volatility in {'head','both'} else ''
     size_qualifier='volatile ' if volatility=='both' else ''
@@ -79,7 +84,7 @@ def lower(record,evidence,abi,volatility,nontrivial_copy=False,stack_homes=False
             f'~{tree}(); }};\nstatic_assert(sizeof({tree}) == 8, "Two-word argument");\n'
             'static_assert(sizeof(RecoveredTreeNode) == 28, "Sentinel node");'),
         consumer:f'struct {consumer} {{ void thunk_FUN_10dee620(SCStr *, int, int, {tree}); }};'}
-    if ordered_homes:declarations['construction_barrier']='extern \"C\" void _ReadWriteBarrier();\n#pragma intrinsic(_ReadWriteBarrier)'
+    if ordered_homes:declarations['A_construction_barrier']='extern \"C\" void _ReadWriteBarrier();\n#pragma intrinsic(_ReadWriteBarrier)'
     return {**candidate,'source':source,'abi_declarations':declarations}
 
 
