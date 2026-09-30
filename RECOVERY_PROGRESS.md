@@ -1,6 +1,6 @@
 # Recovery checkpoint: 2026-09-29
 
-The target remains a C++ rebuilt DLL matching at least 95% of the reference by byte and PE metrics. No Sonos/DLL execution and no assembly embedding are permitted.
+The active target is a C/C++ rebuilt DLL matching 100% of the reference bytes. Earlier 95% checkpoints below record historical targets. No Sonos/DLL execution and no assembly embedding are permitted.
 
 ## SCStr expansion
 
@@ -378,3 +378,43 @@ later isolated data-tooling review reached the service's free-review rate limit;
 pinned compilation, complete data verification, and local tests completed
 independently. The goal remains active. Remaining work includes genuine C++
 executable recovery, complete relocation layout, and PE startup/headers.
+
+
+## Empty outgoing containers and compiler atomic intrinsics (2026-09-30)
+
+Pinned MSVC run https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36687349560
+verifies all 90 restored empty-tree argument callers / 14,403 bytes and their
+complete EH graphs. Nontrivial copy/move declarations restore construction
+straight into the outgoing eight-byte parameter slot. The sentinel is an ordinary
+28-byte C++ aggregate. Volatile storage homes and compiler memory barriers
+preserve required instruction sequencing; no authored assembly or instruction
+payload is present.
+
+The atomic generator verifies 21 functions / 433 bytes with real MSVC intrinsics.
+It preserves access width and old-value returns, and rejects unsupported or
+ambiguous patterns. Native thiscall RET cleanup recovers two unused stack
+arguments. The prior scalar storage-type/spill probes add no distinct bytes;
+none of those variants enters the default recovery manifest.
+
+Together this pass adds 111 distinct functions / 14,836 executable bytes. Audit
+`analysis/recovery-msvc-tree-barrier-atomic-arity/coverage-audit.json` now records
+165,757 bodies / 1,780,046 bytes / 6.958014% executable coverage.
+
+Physical placement `analysis/linked-placement-tree-atomic/recovery-layout.dll`
+has 11,645,410 proven compiler bytes at final offsets (31.343799% of the file),
+including 1,953,762 `.text` bytes. Its SHA-256 is
+`59f7762cf27ac536cef667c4250f660d4fc13cfa589dcc58502f5ac11dfd81cb`.
+All six non-executable sections remain 100% identical. The independent full-file
+comparison verifies matching file size and 13,861,215 aligned identical bytes /
+37.3077%, including coincidental zero-filled hole matches. The final 100% gate
+still FAILS. Generated base relocations occupy 1,077,544 bytes; unbuilt code,
+startup/import/export headers, and missing relocation layout remain.
+
+Thirty tests pass, including actual compiler atomic instructions, byte accesses,
+old-value returns, rejected multi-write/dependent patterns, genuine C++ outgoing
+container lifetimes, and native stack cleanup. CodeRabbit's tooling review found
+two issues; width inference and constructor-rewrite rejection were corrected.
+Focused probes now omit unchanged data unless `include_data_probe=true`; full
+builds always compile data. Pinned data artifacts remain required for placement.
+The goal remains active. Next priority is bulk unused-argument recovery and
+expanding the proven container families across existing Ghidra output.

@@ -116,8 +116,8 @@ No reference application is executed and no original Ghidra project is modified.
 
 ## Physical PE placement and C++ data recovery
 
-The partial PE places all 165,646 proven function bodies and accepted compiler
-EH/literal fragments at reference offsets. Its `.text` has 1,935,596 verified
+The partial PE places all 165,757 proven function bodies and accepted compiler
+EH/literal fragments at reference offsets. Its `.text` has 1,953,762 verified
 compiler bytes, including EH helpers. A conflicting overlap, unresolved fixup,
 or mismatched marked byte aborts. Unknown regions remain empty and are reported.
 
@@ -128,10 +128,10 @@ as data input. All 74 full-data objects / 9,691,648 bytes compile and pass final
 byte/fixup proofs under pinned MSVC in
 [run 36680111341](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36680111341).
 
-`analysis/linked-placement-data-full/recovery-layout.dll` has six byte-identical
+`analysis/linked-placement-tree-atomic/recovery-layout.dll` has six byte-identical
 sections: `.rdata`, `.data`, `.idata`, `.tls`, `.00cfg`, and `.rsrc`. It contains
-11,627,244 proven compiler bytes (31.294905% of the file). The independent
-full-file comparator scores 37.2673%, including coincidental empty-region zero
+11,645,410 proven compiler bytes (31.343799% of the file). The independent
+full-file comparator scores 37.3077%, including coincidental empty-region zero
 matches, and **fails the 100% gate**. The image lacks an entry point and
 import/export header directories; its base relocations are incomplete. It is a
 placement artifact, not a usable or complete DLL. No reference instructions are
@@ -142,10 +142,11 @@ Reproduce the current placement using the pinned artifacts available locally:
 ```sh
 python3 tools/compile_recovered_data.py --tag full
 python3 tools/link_recovery_image.py \
-  --artifact-dirs ci-output/run-36680111341 ci-output/run-36661659252 \
+  --artifact-dirs ci-output/run-36687349560 ci-output/run-36680111341 \
+    ci-output/run-36661659252 \
     analysis/msvc-14-28-x86-objects-5490d21-run36626235420 \
-  --include-flag-sweep --output-dir analysis/linked-placement-data-full
-python3 tools/compare.py analysis/linked-placement-data-full/recovery-layout.dll
+  --include-flag-sweep --output-dir analysis/linked-placement-tree-atomic
+python3 tools/compare.py analysis/linked-placement-tree-atomic/recovery-layout.dll
 ```
 
 Generation alone is a local Clang syntax/COFF experiment. Placement requires
@@ -180,3 +181,40 @@ counting empty holes is excluded.
 The final acceptance command remains `python3 tools/compare.py <rebuilt.dll>`.
 No function count, pseudocode percentage, syntax percentage, or placement-based
 object proof substitutes for that complete file comparison.
+
+
+## Empty tree arguments and atomic operations
+
+Pinned [run 36687349560](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36687349560)
+verifies all 90 empty-tree argument callers / 14,403 bytes. Ghidra omitted an
+eight-byte outgoing container. A genuine C++ by-value object restores its
+allocation, 28-byte self-linked sentinel, two adjacent flag bytes, copy/move ABI,
+and parameter lifetime. Volatile storage writes and compiler-only
+`_ReadWriteBarrier` sequencing preserve the observed receiver homes. The complete
+EH graph is independently verified for all 90 callers; no handler byte or
+exception state is patched into the generated source.
+
+`tools/compile_atomic_intrinsics.py` translates conservative LOCK/UNLOCK patterns
+into MSVC intrinsics. Pointer declarations/casts must establish a supported
+1/2/4-byte width. Unknown widths, multiple writes, dependent increments, pointer
+mutation after reading the old value, and control flow are rejected. Native RET
+cleanup can establish omitted unused word parameters. The final atomic object
+verifies 21 exact functions / 433 bytes. Together these families add 111 distinct
+functions / 14,836 bytes over the previous checkpoint.
+
+The current function-body audit is
+`analysis/recovery-msvc-tree-barrier-atomic-arity/coverage-audit.json`: 165,757
+exact bodies / 1,780,046 distinct bytes / 6.958014% executable coverage. Thirty
+tests pass. CodeRabbit reported two tooling findings; both were addressed and
+validated. Broader scalar storage/spill variants added zero coverage and remain
+outside the accepted manifest.
+
+Focused code probes now omit unchanged packed data by default. Add
+`-f include_data_probe=true` to rebuild data in a focused job; normal builds
+always include it. This reduces repeated compilation and artifact transfer while
+placement still requires the previously pinned, hash-verified data objects.
+
+The next bulk pass should apply native argument-count evidence across the
+remaining Ghidra headers and generalize container recovery where node/layout
+proofs support it. Exact caller bodies, full EH graphs, and final file offsets
+remain the acceptance criteria.

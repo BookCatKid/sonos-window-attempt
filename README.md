@@ -14,13 +14,13 @@ mechanically generated and need not be readable; authored assembly and embedded
 reference executable bytes are excluded.
 
 The latest [recovery strategy and measured results](docs/recovery-strategy.md)
-record 165,646 verified object bodies / 1,765,210 executable bytes (6.900022%),
-including a further 25,342-byte gain from direct-call ABI and string-lifetime recovery.
+record 165,757 verified object bodies / 1,780,046 executable bytes (6.958014%),
+including another 14,836-byte gain from by-value tree arguments and compiler atomic intrinsics.
 This is function-body coverage; no full matching DLL exists yet.
 
-The partial PE placement build contains 11,627,244 verified compiler-produced
+The partial PE placement build contains 11,645,410 verified compiler-produced
 bytes at their final file offsets. All six recovered non-executable sections
-are byte-identical. Its complete-file aligned match is 37.2673%, including
+are byte-identical. Its complete-file aligned match is 37.3077%, including
 coincidental matches in zero-filled unbuilt regions; the 100% gate still fails.
 See the recovery strategy for the reproducible placement command.
 
