@@ -84,6 +84,36 @@ a typed thiscall pointer, argument parsing, and conservative rejection. All pass
 CodeRabbit reviewed the tooling; its output-path and manifest/index robustness
 findings were addressed.
 
+## Direct-call and string-lifetime continuation
+
+The active 100% goal's next checkpoint is 165,646 distinct exact bodies /
+1,765,210 executable bytes (6.900022%). The additional gain over 6.800963% is
+494 bodies / 25,342 bytes. The consolidated audit is
+`analysis/recovery-msvc-bulk-call-lifetime-final/coverage-audit.json`, pinned to
+[run 36677278050](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36677278050).
+
+Recovered direct-call prototypes add 367 bodies / 11,543 bytes across three
+member batches. True C++ local string lifetimes add 127 bodies / 13,799 bytes.
+The strongest string batch combines scalar storage recovery with callee
+propagation in a separate Ghidra project; separate variants preserve all earlier
+proofs. The out-of-line destructor's entire bytes and nested exception graph are
+verified. External release identities come from the PE export table; they do not
+count the release implementation as rebuilt. Unknown-export mutation tests
+reject the graph, and the previous owner-graph regression remains intact.
+
+Fifteen checks pass. Further nontrivial owner copy/move declarations add zero
+bytes and remain recorded negative results. CodeRabbit's missing-manifest
+finding was addressed; its follow-up review reported zero findings. The seven
+new source tranches are part of the default build and comparison manifest.
+
+Reproduce the local lifetime source by running
+`tools/compile_scstr_local_raii.py` against the bulk and recovered-target JSONL
+corpus. `--extended-storage` enables the separate scalar/spill experiment.
+`--signature-exports` overlays the isolated propagation corpus and emits another
+separate tranche. `tools/run_signature_propagation.py --storage-only` performs
+the callee experiment on an isolated project, preserving before/after exports.
+No reference application is executed and no original Ghidra project is modified.
+
 ## Following work, in priority order
 
 Rank remaining failures by distinct reference bytes and repeated instruction/EH

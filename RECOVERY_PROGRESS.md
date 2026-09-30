@@ -267,3 +267,50 @@ x86 instruction equality for member receiver conversion and virtual dispatch
 against a typed thiscall pointer. CodeRabbit's tooling robustness findings were
 addressed. Work is on branch `codex/bulk-member-abi`; generated sources, indexes,
 and manifests are checked in, while immutable reference and analysis stay local.
+
+## Direct-call ABI and local string lifetimes
+
+The explicit 100% C/C++ byte-identity goal remains active. No complete matching
+DLL exists. The new checkpoint adds 494 distinct bodies / 25,342 executable
+bytes, bringing reference-placement coverage to 165,646 / 1,765,210 bytes
+(6.900022%). The consolidated audit is
+`analysis/recovery-msvc-bulk-call-lifetime-final/coverage-audit.json`, using pinned
+MSVC run https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36677278050
+against the preceding 6.800963% checkpoint.
+
+`tools/promote_call_abi.py` applies inferred callee prototypes to the old member
+batches, including preserved implicit receivers. Three batches compile 2,714
+functions / 243,886 reference bytes and add 367 distinct bodies / 11,543 bytes.
+Prototypes are hypotheses until the complete instruction and relocation proof
+passes. Declaring nontrivial owner copy/move constructors preserves the previous
+52 normal bodies but still adds zero verified EH bodies.
+
+`tools/compile_scstr_local_raii.py` reconstructs the two-state local `SCStr`
+family through actual inline C++ constructors and noexcept destructors. The
+strict batch verifies one 109-byte body. A targeted, isolated APFS project clone
+propagates 95 callee signatures for 68 callers, exposing missing ECX uses.
+Receiver recovery requires agreement between word-sized stack parameters and
+native RET cleanup; final body/EH proof remains mandatory. Its separate source
+batch verifies 16 bodies / 1,792 bytes (1,683 new).
+
+The extended-storage batch recovers scalar string slots and removes only a
+pure parameter spill that has no read before output-buffer construction.
+Of 338 candidates, 233 compile and 112 pass full proofs / 12,116 bytes
+(12,007 new). Combined storage and propagated-signature recovery verifies
+127 bodies / 13,799 bytes but adds no bytes beyond the separate variants.
+Source variants and indexes remain separate, so a later experiment cannot erase
+an earlier verified body.
+
+The EH verifier now establishes external `SCStr` operand identities from the
+immutable PE export table, follows reference thunks, and still checks the entire
+recovered destructor, handler, FuncInfo and unwind graph. The earlier 107-owner
+graph regression passes. An unknown-export mutation rejects all affected string
+destructor graphs. Fifteen tests pass; CodeRabbit's missing-manifest finding was
+fixed, and its subsequent review returned zero findings. All seven new source
+tranches are included in the default comparison manifest and object build.
+
+Next priorities are broader callee/receiver propagation for the remaining string
+family, genuine by-value owner lifetime reconstruction, and explicit linked PE
+placement of proven code/data/EH definitions. These object proofs do not prove
+the reference's exported release body has been rebuilt, or that a linker can yet
+produce matching file layout. Final acceptance is still the full 100% comparison.

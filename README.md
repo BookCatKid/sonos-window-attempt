@@ -14,8 +14,8 @@ mechanically generated and need not be readable; authored assembly and embedded
 reference executable bytes are excluded.
 
 The latest [recovery strategy and measured results](docs/recovery-strategy.md)
-record 165,152 verified object bodies / 1,739,868 executable bytes (6.800963%),
-including a new 40,268-byte gain from bulk member and virtual-call ABI recovery.
+record 165,646 verified object bodies / 1,765,210 executable bytes (6.900022%),
+including a further 25,342-byte gain from direct-call ABI and string-lifetime recovery.
 This is reference-placement object coverage; no full matching DLL exists yet.
 
 ## Layout

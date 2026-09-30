@@ -146,5 +146,33 @@
   {
     "object": "high_thunk_members_virtual_arguments_reference_flags",
     "directory": "analysis/compiled-cpp-high-thunk-members-virtual-arguments"
+  },
+  {
+    "object": "thunk_members_call_abi_reference_flags",
+    "directory": "analysis/compiled-cpp-thunk-members-call-abi"
+  },
+  {
+    "object": "globals_members_call_abi_reference_flags",
+    "directory": "analysis/compiled-cpp-globals-members-call-abi"
+  },
+  {
+    "object": "high_thunk_members_call_abi_reference_flags",
+    "directory": "analysis/compiled-cpp-high-thunk-members-call-abi"
+  },
+  {
+    "object": "scstr_local_raii_reference_flags",
+    "directory": "analysis/compiled-cpp-scstr-local-raii"
+  },
+  {
+    "object": "scstr_local_raii_signatures_reference_flags",
+    "directory": "analysis/compiled-cpp-scstr-local-raii-signatures"
+  },
+  {
+    "object": "scstr_local_raii_storage_reference_flags",
+    "directory": "analysis/compiled-cpp-scstr-local-raii-storage"
+  },
+  {
+    "object": "scstr_local_raii_signatures_storage_reference_flags",
+    "directory": "analysis/compiled-cpp-scstr-local-raii-signatures-storage"
   }
 ]
