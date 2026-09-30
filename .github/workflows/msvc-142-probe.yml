@@ -11,6 +11,10 @@ on:
         description: Compile member ABI and owner parameter experiments
         type: boolean
         default: false
+      include_data_probe:
+        description: Also rebuild packed non-executable data during a focused probe
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -19,10 +23,6 @@ on:
       - tools/build_flag_sweep.cmd
       - tools/msvc_flag_sweep.json
       - .github/workflows/msvc-142-probe.yml
-      include_data_probe:
-        description: Also rebuild packed non-executable data during a focused probe
-        type: boolean
-        default: false
 
 jobs:
   compile:
