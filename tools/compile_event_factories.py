@@ -102,6 +102,12 @@ __forceinline FactoryKeyString(const char *text) { ((SCStr *)this)->int_allocRep
         'kind=source->value(factory_key_address(RecoveredString_FUN_1008c50b("value")));')
     libraries['event_factories_output_nonnull_key_temporary']=improved_library+'''__forceinline SCStr *factory_key_address(RecoveredString_FUN_1008c50b &&key) { return (SCStr *)&key; }
 '''
+    variants['event_factories_value_noexcept']=BODY.replace('FactoryString','RecoveredString_FUN_1008c50b')
+    libraries['event_factories_value_noexcept']=improved_library
+    variants['event_factories_value_temporary']=variants['event_factories_value_noexcept'].replace(
+        'STOP event; return Event_thunk_FUN_10def0d0(event);', 'return STOP();').replace(
+        'ALERT event; return Event_thunk_FUN_10def0d0(event);', 'return ALERT();')
+    libraries['event_factories_value_temporary']=improved_library
     for name,body in variants.items():
         library=libraries[name]
         if name.startswith('event_factories_output_throwing'):

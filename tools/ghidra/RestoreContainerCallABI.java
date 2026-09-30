@@ -80,6 +80,19 @@ public class RestoreContainerCallABI extends GhidraScript {
                     event.add(container,8,"tree",null);
                     DataType eventType=dtm.addDataType(event,DataTypeConflictHandler.REPLACE_HANDLER);
                     DataType eventPointer=new PointerDataType(eventType,4,dtm);
+                    // Slot nine is loaded from [vptr+0x24]; ECX carries the
+                    // variant receiver and the caller pushes one key pointer.
+                    StructureDataType variant=new StructureDataType(new CategoryPath("/RecoveryProof"),"RecoveredFactoryVariant",0,dtm);
+                    DataType variantPointer=new PointerDataType(variant,4,dtm);
+                    FunctionDefinitionDataType value=new FunctionDefinitionDataType("RecoveredFactoryValue",dtm);
+                    value.setCallingConvention("__thiscall");value.setReturnType(IntegerDataType.dataType);
+                    value.setArguments(new ParameterDefinition[]{new ParameterDefinitionImpl("receiver",variantPointer,null),
+                        new ParameterDefinitionImpl("key",pointer,null)});
+                    StructureDataType vtable=new StructureDataType(new CategoryPath("/RecoveryProof"),"RecoveredFactoryVtable",36,dtm);
+                    vtable.add(new PointerDataType(value,4,dtm),4,"value",null);
+                    variant.add(new PointerDataType(vtable,4,dtm),4,"vtable",null);
+                    DataType resolvedVariant=dtm.addDataType(variant,DataTypeConflictHandler.REPLACE_HANDLER);
+                    variantPointer=new PointerDataType(resolvedVariant,4,dtm);
                     List<String> index=Files.readAllLines(Path.of(args[2]));
                     for(String line:index.subList(1,index.size())) {
                         String[] fields=line.split("\t");if(fields.length!=3||!Arrays.asList("160","163").contains(fields[2]))throw new IOException("Expected proven event constructor");
@@ -94,7 +107,7 @@ public class RestoreContainerCallABI extends GhidraScript {
                     for(String entry:Arrays.asList("10e00c90","10e00e20")) {
                         Function f=getFunctionAt(toAddr(entry));
                         Parameter ret=new ReturnParameterImpl(eventPointer,currentProgram.getRegister("EAX"),currentProgram);
-                        Parameter[] params={new ParameterImpl("result",eventPointer,4,currentProgram),new ParameterImpl("variant",pointer,8,currentProgram)};
+                        Parameter[] params={new ParameterImpl("result",eventPointer,4,currentProgram),new ParameterImpl("variant",variantPointer,8,currentProgram)};
                         f.updateFunction("__cdecl",ret,Function.FunctionUpdateType.CUSTOM_STORAGE,true,SourceType.USER_DEFINED,params);f.setStackPurgeSize(0);
                     }
                 }

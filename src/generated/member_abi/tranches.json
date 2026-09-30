@@ -166,5 +166,13 @@
   {
     "object": "event_factories_output_nonnull_key_temporary_reference_flags",
     "directory": "analysis/compiled-cpp-event-factories-output-nonnull-key-temporary"
+  },
+  {
+    "object": "event_factories_value_noexcept_reference_flags",
+    "directory": "analysis/compiled-cpp-event-factories-value-noexcept"
+  },
+  {
+    "object": "event_factories_value_temporary_reference_flags",
+    "directory": "analysis/compiled-cpp-event-factories-value-temporary"
   }
 ]
