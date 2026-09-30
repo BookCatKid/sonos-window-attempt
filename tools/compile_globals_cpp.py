@@ -20,7 +20,8 @@ from compile_ghidra_cpp import COMPILER, HEADER, KNOWN_CALLS, ROOT, load_records
 
 GLOBAL = re.compile(
     r"\b(?:DAT_[0-9a-f]{8}|_DAT_[0-9a-f]{8}|PTR_[A-Za-z0-9_]+|"
-    r"_?UNK_[0-9a-f]+|Ordinal_\d+|switchD_[0-9a-f]+|s_[A-Za-z0-9_]+)\b")
+    r"_?UNK_[0-9a-f]+|Ordinal_\d+|switchD_[0-9a-f]+|s_[A-Za-z0-9_]+|"
+    r"g_[A-Za-z0-9_]+)\b")
 FUN = re.compile(r"\b(?:thunk_)?FUN_[0-9a-f]{8}\b")
 FUNCTION_POINTER_USE = re.compile(r"\(\s*\*\s*(?P<name>" + GLOBAL.pattern[2:-2] + r")\s*\)\s*\(")
 LOCAL_DECL = re.compile(

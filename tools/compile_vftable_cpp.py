@@ -28,14 +28,19 @@ from compile_ghidra_cpp import (
 )
 
 
-VFTABLE = re.compile(r'(?<![\w:])((?:[A-Za-z_]\w*::)+vftable)')
+# Ghidra demangles MSVC vtable labels, so a class template prints as
+# ``SCIObjImpl<SCIObj>::vftable`` rather than ``SCIObjImpl::vftable``. Matching
+# only the plain form left the template arguments in the lowered source, where
+# the scope resolution operator is not accepted downstream.
+VFTABLE = re.compile(
+    r'(?<![\w:])([A-Za-z_]\w*(?:<[^<>]*>)?(?:::[A-Za-z_]\w*)*::vftable)')
 SCOPED = re.compile(r'(?<![\w:])(?:[A-Za-z_]\w*::)+[A-Za-z_]\w*')
 THUNK = re.compile(r'\bthunk_FUN_[0-9a-f]{8}\b')
 
 
 def symbol_name(qualified):
     owner = qualified[:-len('::vftable')]
-    return 'ghidra_vftable_' + owner.replace('::', '__')
+    return 'ghidra_vftable_' + re.sub(r'[^0-9A-Za-z_]', '_', owner.replace('::', '__'))
 
 
 def lower_vftables(source):
