@@ -6,6 +6,7 @@ The declarations are ABI hypotheses; pinned body/EH verification is mandatory.
 """
 import csv
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -61,6 +62,8 @@ def main():
     family = original.name.removeprefix("compiled-cpp-")
     stem = family.replace("-", "_") + "_virtual_arguments"
     markers = list(MARKER.finditer(source))
+    if not markers:
+        parser.error("Input source has no address-indexed function markers")
     blocks, declarations, calls = {}, {}, 0
     for index, marker in enumerate(markers):
         end = markers[index + 1].start() if index + 1 < len(markers) else len(source)
@@ -98,9 +101,14 @@ def main():
     ], cwd=ROOT, capture_output=True, text=True)
     if result.returncode:
         raise SystemExit(result.stdout + result.stderr)
-    rows = [row for row in csv.DictReader((original / "compiled-index.tsv").open(), delimiter="\t") if row["entry"] in blocks]
+    with (original / "compiled-index.tsv").open(newline="") as file:
+        reader = csv.DictReader(file, delimiter="\t")
+        fields = reader.fieldnames
+        rows = [row for row in reader if row["entry"] in blocks]
+    if not fields or not rows or {row["entry"] for row in rows} != blocks.keys():
+        raise SystemExit("Compiled index does not cover every surviving source entry")
     with (output / "compiled-index.tsv").open("w", newline="") as file:
-        writer = csv.DictWriter(file, fieldnames=list(rows[0]), delimiter="\t")
+        writer = csv.DictWriter(file, fieldnames=fields, delimiter="\t")
         writer.writeheader()
         writer.writerows(rows)
     inventory_path = original / "reference-eh-inventory.json"
@@ -108,13 +116,16 @@ def main():
         inventory = [row for row in json.loads(inventory_path.read_text()) if row["entry"] in blocks]
         (output / "reference-eh-inventory.json").write_text(json.dumps(inventory, indent=2) + "\n")
     emit_dir = ROOT / "src/generated/member_abi"
+    emit_dir.mkdir(parents=True, exist_ok=True)
     (emit_dir / (stem + ".cpp")).write_text(target.read_text())
     (emit_dir / (stem + "-index.tsv")).write_bytes((output / "compiled-index.tsv").read_bytes())
     metrics = {"compiled_functions": len(rows), "reference_body_bytes": sum(int(row["reference_body_bytes"]) for row in rows),
-               "candidate_virtual_calls": calls, "syntax_rejected": rejected, "pinned_msvc_verified": False}
+               "candidate_virtual_calls": calls, "syntax_rejected": rejected, "pinned_msvc_verified": False,
+               "input_source_sha256": hashlib.sha256(source.encode()).hexdigest(),
+               "generated_source_sha256": hashlib.sha256(target.read_bytes()).hexdigest()}
     (output / "coverage.json").write_text(json.dumps(metrics, indent=2) + "\n")
     manifest_path = ROOT / "src/generated/member_abi/tranches.json"
-    manifest = json.loads(manifest_path.read_text())
+    manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else []
     object_name = stem + "_reference_flags"
     manifest = [row for row in manifest if row["object"] != object_name]
     manifest.append({"object": object_name, "directory": str(output.relative_to(ROOT))})

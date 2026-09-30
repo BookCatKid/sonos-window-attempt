@@ -13,6 +13,11 @@ The earlier 95% scores are intermediate milestones. C or C++ source may be
 mechanically generated and need not be readable; authored assembly and embedded
 reference executable bytes are excluded.
 
+The latest [recovery strategy and measured results](docs/recovery-strategy.md)
+record 165,152 verified object bodies / 1,739,868 executable bytes (6.800963%),
+including a new 40,268-byte gain from bulk member and virtual-call ABI recovery.
+This is reference-placement object coverage; no full matching DLL exists yet.
+
 ## Layout
 
 - `reference/SonosV2/`: complete copied Windows Sonos installation (110 MB).

@@ -86,6 +86,8 @@ def audit(paths, reference_path=DLL):
         'overlapping_body_bytes_removed': body_sum - unique_bytes,
         'executable_byte_coverage_percent': round(100 * unique_bytes / executable_bytes, 6),
         'required_executable_bytes_at_95_percent': (95 * executable_bytes + 99) // 100,
+        'required_executable_bytes_at_100_percent': executable_bytes,
+        'final_file_acceptance_percent': 100,
         'reports': reports,
         'linked_dll_match_verified': False,
         'scope': 'Verified object-function bodies assuming reference-address placement; '

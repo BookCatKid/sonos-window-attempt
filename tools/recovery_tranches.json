@@ -114,5 +114,37 @@
   {
     "object": "eh_part-00187_reference_flags",
     "directory": "analysis/compiled-cpp-eh-part-00187"
+  },
+  {
+    "object": "thunk_members_reference_flags",
+    "directory": "analysis/compiled-cpp-thunk-members"
+  },
+  {
+    "object": "globals_members_reference_flags",
+    "directory": "analysis/compiled-cpp-globals-members"
+  },
+  {
+    "object": "high_thunk_members_reference_flags",
+    "directory": "analysis/compiled-cpp-high-thunk-members"
+  },
+  {
+    "object": "high_members_reference_flags",
+    "directory": "analysis/compiled-cpp-high-members"
+  },
+  {
+    "object": "multistate_terminate_virtual_arguments_reference_flags",
+    "directory": "analysis/compiled-cpp-multistate-terminate-virtual-arguments"
+  },
+  {
+    "object": "thunk_members_virtual_arguments_reference_flags",
+    "directory": "analysis/compiled-cpp-thunk-members-virtual-arguments"
+  },
+  {
+    "object": "globals_members_virtual_arguments_reference_flags",
+    "directory": "analysis/compiled-cpp-globals-members-virtual-arguments"
+  },
+  {
+    "object": "high_thunk_members_virtual_arguments_reference_flags",
+    "directory": "analysis/compiled-cpp-high-thunk-members-virtual-arguments"
   }
 ]

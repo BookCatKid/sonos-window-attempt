@@ -38,9 +38,51 @@ Reproduce the member candidates with:
 
 ```sh
 python3 tools/promote_msvc_members.py analysis/compiled-cpp-thunk analysis/compiled-cpp-globals analysis/compiled-cpp-high-thunk analysis/compiled-cpp-high
+python3 tools/generate_owner_parameter_variants.py
+python3 tools/promote_virtual_arguments.py
+python3 tools/promote_virtual_arguments.py analysis/compiled-cpp-thunk-members
+python3 tools/promote_virtual_arguments.py analysis/compiled-cpp-globals-members
+python3 tools/promote_virtual_arguments.py analysis/compiled-cpp-high-thunk-members
 gh workflow run msvc-142-probe.yml --ref codex/bulk-member-abi -f focused_probe=true
 python3 tools/compare_recovery_tranches.py <downloaded-artifact-directory> --manifest src/generated/member_abi/tranches.json --baseline analysis/recovery-msvc-round2/coverage-audit.json --output-dir analysis/recovery-msvc-member-abi
 ```
+
+## Measured outcome
+
+Pinned [run 36671806043](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36671806043)
+compiled all four promoted batches and added 1,324 distinct exact bodies /
+36,772 executable bytes. The four initial owner specification variants added
+zero bytes; the lambda formulation preserved all 52 normal bodies but did not
+reproduce their complete exception graphs.
+
+Pinned [run 36672322099](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36672322099)
+compiled 1,850 virtual-argument candidates across four batches. Restoring their
+implicit member receivers added another 117 bodies / 3,496 distinct executable
+bytes. The multi-state batch added zero, so receiver recovery alone does not
+resolve those larger lifetime/stack discrepancies. Declaring virtual release
+`noexcept` in [run 36672486405](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36672486405)
+also added zero owner-family bytes.
+
+The final audit is
+`analysis/recovery-msvc-bulk-abi-final/coverage-audit.json`:
+165,152 bodies / 1,739,868 executable bytes (6.800963%). The total gain is
+1,441 bodies / 40,268 bytes over the starting checkpoint. None of this is a
+full linked DLL score. The reference SHA-256 remains
+`3518f71487c58f378cc62562d257e1ffd7145288aba9153823b49ec3009af9ca`.
+
+The focused build now caches only the pinned compiler binaries; it requires no
+Windows headers or import libraries because these experiments are self-contained
+object compilations. The successful cache-hit run finished in 30 seconds and
+skipped installation, compared with more than four minutes in the preceding run.
+The full build retains SDK/toolchain setup and linked probes. The eight new
+member/virtual batches are also wired into the default object build and default
+recovery-tranche manifest. A consolidated comparison of all thirteen experiments
+against run 36672486405 reproduces the full 40,268-byte gain.
+
+Seven tests check receiver and stack ABI preservation, virtual dispatch against
+a typed thiscall pointer, argument parsing, and conservative rejection. All pass.
+CodeRabbit reviewed the tooling; its output-path and manifest/index robustness
+findings were addressed.
 
 ## Following work, in priority order
 

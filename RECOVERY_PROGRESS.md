@@ -223,3 +223,47 @@ its additional 77 functions remain pending. Of its 447 inexact functions,
 the reference handler; the recovered thunks tranche's remaining 8,392 inexact
 functions fail on instruction differences rather than relocation failures, which
 no resolution change can reach.
+
+## Bulk member and virtual-argument ABI recovery
+
+The final acceptance target is now explicitly 100% file-byte identity from C or
+C++, without authored assembly or embedded executable reference bytes. Readability
+is optional. `docs/recovery-strategy.md` records the investigation and priorities.
+
+`tools/promote_msvc_members.py` reuses the typed generator's genuine C++ member
+lowering on four older primitive/global batches. Their 15,353 functions / 762,316
+reference body bytes compile under pinned MSVC 19.28.29919 in run
+https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36671806043 .
+After relocation checks and the distinct executable-byte audit, this adds 1,324
+functions / 36,772 bytes. The initial MSVC reject was an empty terminal case
+label; applying the existing empty-statement normalization resolves it.
+
+`tools/promote_virtual_arguments.py` restores implicit thiscall receivers for
+simple Ghidra virtual calls with word-sized argument hypotheses. Run
+https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36672322099
+compiles 1,850 candidates and verifies 117 additional bodies / 3,496 distinct
+bytes. The affected multi-state guard batch adds zero bytes. Provisional virtual
+signatures remain hypotheses wherever complete body/relocation/EH proofs fail.
+
+Five reproducible owner-parameter destructor variants were also measured.
+Changing exception specifications, wrapping release in a noexcept lambda, or
+marking virtual release noexcept adds zero exact bytes. The parent reference
+FuncInfo has two states versus the current candidate's three; the reference's
+out-of-line destructor has zero states and flags 5. The lambda variant preserves
+all 52 normal bodies but fails its nested exception graph. These are recorded
+negative results; the verifier was not relaxed.
+
+The authoritative final audit is
+`analysis/recovery-msvc-bulk-abi-final/coverage-audit.json`: 165,152 distinct
+exact bodies / 1,739,868 executable bytes (6.800963%), up by 1,441 functions /
+40,268 bytes from the preceding 6.643559% checkpoint. These remain object proofs
+under reference-placement constraints. No full reconstructed DLL or 100% linked
+file match is produced by this tranche.
+
+The focused Windows probe caches only the pinned compiler binaries and skips
+installation on a cache hit. Its first successful cache-hit run completed in
+30 seconds instead of more than four minutes. Seven tests pass, including actual
+x86 instruction equality for member receiver conversion and virtual dispatch
+against a typed thiscall pointer. CodeRabbit's tooling robustness findings were
+addressed. Work is on branch `codex/bulk-member-abi`; generated sources, indexes,
+and manifests are checked in, while immutable reference and analysis stay local.

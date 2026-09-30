@@ -54,7 +54,8 @@ def main():
     if not args.output_root.is_relative_to(ROOT):
         parser.error("--output-root must be inside the repository for portable tranche paths")
     args.emit_dir.mkdir(parents=True, exist_ok=True)
-    manifest = []
+    manifest_path = args.emit_dir / "tranches.json"
+    manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else []
     for directory in args.directories:
         source = directory / "ghidra_recovered.cpp"
         text, count = promote(source.read_text())
@@ -82,9 +83,11 @@ def main():
         (output / "coverage.json").write_text(json.dumps(metrics, indent=2) + "\n")
         (args.emit_dir / (stem + ".cpp")).write_text(text)
         (args.emit_dir / (stem + "-index.tsv")).write_bytes(index.read_bytes())
-        manifest.append({"object": stem + "_reference_flags", "directory": str(output.relative_to(ROOT))})
+        object_name = stem + "_reference_flags"
+        manifest = [row for row in manifest if row["object"] != object_name]
+        manifest.append({"object": object_name, "directory": str(output.relative_to(ROOT))})
         print(json.dumps(metrics), flush=True)
-    (args.emit_dir / "tranches.json").write_text(json.dumps(manifest, indent=2) + "\n")
+    manifest_path.write_text(json.dumps(manifest, indent=2) + "\n")
 
 
 if __name__ == "__main__":
