@@ -90,6 +90,14 @@ ALLOWED_CALLS = {'if', 'while', 'switch', 'sizeof', 'return', 'int', 'uint',
                  'long', 'short', 'char', 'float', 'double', 'undefined',
                  'undefined1', 'undefined2', 'undefined4', 'undefined8',
                  'code', 'SCStr', 'operator', 'AddRef', 'Release', 'new', 'for', 'byte', 'ushort', *SUPPORTED}
+# Runtime and exported entry points the reference calls by name. They are real
+# functions in the image or in the import library, so a declaration lets the
+# compiler emit the reference's own call and the resolver reaches its thunk.
+RUNTIME_CALLS = {'free', 'fclose', 'LOCK', 'operator_new',
+                 '_invalid_parameter_noinfo_noreturn', 'SCLibFixCpUdnInUri',
+                 'SCLibGetFixedSCUri', 'SCLibGetFixedSCUriTitle',
+                 '_eh_vector_destructor_iterator_'}
+ALLOWED_CALLS |= RUNTIME_CALLS
 THISCALL = re.compile(
     r'(?P<result>[^\n]+?)\s+__thiscall\s+(?P<name>(?:thunk_)?FUN_[0-9a-f]{8})'
     r'\((?P<parameters>[^)]*)\)')
@@ -363,6 +371,10 @@ def cpp_source(records):
                     re.findall(r'\b(?:thunk_)?FUN_[0-9a-f]{8}\b',
                                r['source'].split('{', 1)[-1])})
     declarations.extend(f'extern int {name}(...);' for name in calls
+                        if name not in typed_declarations)
+    runtime = sorted({name for r in records for name in RUNTIME_CALLS
+                      if re.search(r'\b' + re.escape(name) + r'\s*\(', r['source'])})
+    declarations.extend(f'extern int {name}(...);' for name in runtime
                         if name not in typed_declarations)
     declarations = '\n'.join(declarations)
     # Different recovered functions can infer opposite signedness for the same
