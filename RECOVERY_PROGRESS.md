@@ -174,3 +174,20 @@ reconstructs a C++ exception specification the reference does not carry, so its
 Unlocking the 0.56 MB of `__thiscall` thunk, globals and bulk-base tranches
 requires recovering that calling convention into a form MSVC accepts, which is
 the callee-side analogue of the existing `tools/recovered_call_abi.py` work.
+
+The two emit filters above accounted for the entire gap in the multi-state
+terminate family. Widening them took the tranche from 824 to 1,629 functions and
+from 152,503 to 322,156 reference body bytes, and raised EH graph verification
+from 466 to 1,404 functions / 126,068 graph bytes. Pinned run
+https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36659830884
+adds no exact bodies, leaving the audit at 163,123 exact bodies / 1,605,839
+executable bytes (6.277057%).
+
+The remaining 459 same-length fixed-byte matches in the tranche are blocked by
+how imported methods are called. Their dominant call forms are `int_release`
+(2,608 sites) and `VirtualSlot2` (2,597 sites): the reference reaches these
+through an indirect call through the import address table, while the recovered
+source emits a direct call to a locally declared member function. The
+instruction forms differ, so no relocation can reconcile them. Reproducing the
+reference requires emitting the call through the import slot rather than to a
+local declaration.
