@@ -66,5 +66,13 @@
   {
     "object": "scstr_local_raii_storage_typed_reference_flags",
     "directory": "analysis/compiled-cpp-scstr-local-raii-storage-typed"
+  },
+  {
+    "object": "empty_tree_arguments_none_reference_flags",
+    "directory": "analysis/compiled-cpp-empty-tree-arguments-none"
+  },
+  {
+    "object": "empty_tree_arguments_head_reference_flags",
+    "directory": "analysis/compiled-cpp-empty-tree-arguments-head"
   }
 ]
