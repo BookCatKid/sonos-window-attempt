@@ -191,3 +191,20 @@ source emits a direct call to a locally declared member function. The
 instruction forms differ, so no relocation can reconcile them. Reproducing the
 reference requires emitting the call through the import slot rather than to a
 local declaration.
+
+Resolving those relocations raised the multi-state terminate tranche from 466 to
+925 exact functions and from 74,338 to 153,855 reference body bytes. Because the
+four fixes apply to every family, the cumulative audit was recomputed over all
+seventeen re-measured MSVC objects plus the carried-forward reports. Pinned run
+https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36659830884
+gives 163,583 exact bodies / 1,685,376 executable bytes (6.587959%), against
+163,123 / 1,605,839 (6.277057%) before, for a gain of 79,537 bytes.
+
+The recovered thunks tranche also gains, from 23,695 to 24,322 exact functions,
+and the native typed tranche from 497 to 498, which confirms the resolution
+failures were systemic rather than specific to the terminate family.
+
+`owner_parameter_raii` remains at zero exact bodies: all 52 functions have
+identical lengths with every fixed byte matching, but its generated exception
+graph is rejected because a by-value owner parameter reconstructs a C++
+exception specification the reference does not carry.
