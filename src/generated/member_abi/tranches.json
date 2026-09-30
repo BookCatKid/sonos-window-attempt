@@ -42,5 +42,9 @@
   {
     "object": "high_thunk_members_call_abi_reference_flags",
     "directory": "analysis/compiled-cpp-high-thunk-members-call-abi"
+  },
+  {
+    "object": "scstr_local_raii_reference_flags",
+    "directory": "analysis/compiled-cpp-scstr-local-raii"
   }
 ]

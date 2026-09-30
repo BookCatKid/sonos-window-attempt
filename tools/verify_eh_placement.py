@@ -11,7 +11,7 @@ from functools import lru_cache
 from pathlib import Path
 from capstone import Cs,CS_ARCH_X86,CS_MODE_32
 from classify_functions import function_bytes
-from compare_compiled_ghidra import read_coff,relocation_value,generated_symbol_name
+from compare_compiled_ghidra import read_coff,relocation_value,generated_symbol_name,scstr_abi_key
 
 U32=lambda data,pos=0:struct.unpack_from('<I',data,pos)[0]
 
@@ -94,6 +94,35 @@ def verified_eh_targets(directory,obj,reference,base,pe_sections,symbol_vas):
             if m and m.group(1).lstrip('_')==bare:result.extend(values)
         return sorted(set(result))
 
+    @lru_cache(maxsize=1)
+    def scstr_exports():
+        # Establish these method identities from the immutable PE export table,
+        # independently of Ghidra names or generated source declarations.
+        export_rva=U32(reference,optional+96)
+        export_size=U32(reference,optional+100)
+        header=refbytes(base+export_rva,40)
+        result=defaultdict(set)
+        if len(header)!=40:return result
+        count=U32(header,24);functions=U32(header,28)
+        names_rva=U32(header,32);ordinals=U32(header,36)
+        if count>100000:return result
+        for index in range(count):
+            name_pointer=refbytes(base+names_rva+index*4,4)
+            ordinal=refbytes(base+ordinals+index*2,2)
+            if len(name_pointer)!=4 or len(ordinal)!=2:continue
+            raw=refbytes(base+U32(name_pointer),512).split(b'\0',1)[0]
+            name=raw.decode('ascii',errors='replace')
+            if '@SCStr@@' not in name:continue
+            number=struct.unpack('<H',ordinal)[0]
+            if number>=U32(header,20):continue
+            pointer=refbytes(base+functions+number*4,4)
+            if len(pointer)!=4:continue
+            rva=U32(pointer)
+            if export_rva<=rva<export_rva+export_size:continue
+            address=base+rva;real=follow_reference_thunks(address)
+            if real is not None:result[scstr_abi_key(name)].add(real)
+        return result
+
     def graph(name,va,size,local,proofs,call_placements,state_count=None,depth=0):
         def fail(reason):
             current_diagnostics.append({'symbol':name,'reference_va':f'{va:08x}','reason':reason})
@@ -165,6 +194,12 @@ def verified_eh_targets(directory,obj,reference,base,pe_sections,symbol_vas):
                 if ok:local[target_name]=target_va
             elif target_name.startswith('__imp_'):
                 ok=target_va in import_targets(target_name)
+                if ok:local[target_name]=target_va
+            elif '@SCStr@@' in target_name:
+                # A local recovered destructor may call the real exported
+                # release method. Its own entire body/graph is still verified;
+                # this external operand is constrained to the PE-proven method.
+                ok=follow_reference_thunks(target_va) in scstr_exports().get(scstr_abi_key(target_name),set())
                 if ok:local[target_name]=target_va
             if not ok:return fail('relocation target graph mismatch: '+target_name)
             value=relocation_value(rel['type'],target_va,addend,va,off,base)
