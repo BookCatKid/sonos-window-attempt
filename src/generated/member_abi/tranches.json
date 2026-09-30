@@ -98,5 +98,29 @@
   {
     "object": "atomic_intrinsics_stack_arity_reference_flags",
     "directory": "analysis/compiled-cpp-atomic-intrinsics-stack-arity"
+  },
+  {
+    "object": "globals_members_stack_arity_reference_flags",
+    "directory": "analysis/compiled-cpp-globals-members-stack-arity"
+  },
+  {
+    "object": "high_members_stack_arity_reference_flags",
+    "directory": "analysis/compiled-cpp-high-members-stack-arity"
+  },
+  {
+    "object": "high_thunk_members_stack_arity_reference_flags",
+    "directory": "analysis/compiled-cpp-high-thunk-members-stack-arity"
+  },
+  {
+    "object": "thunk_members_stack_arity_reference_flags",
+    "directory": "analysis/compiled-cpp-thunk-members-stack-arity"
+  },
+  {
+    "object": "globals_members_call_abi_stack_arity_reference_flags",
+    "directory": "analysis/compiled-cpp-globals-members-call-abi-stack-arity"
+  },
+  {
+    "object": "globals_members_virtual_arguments_stack_arity_reference_flags",
+    "directory": "analysis/compiled-cpp-globals-members-virtual-arguments-stack-arity"
   }
 ]
