@@ -6,13 +6,14 @@ explicit Ghidra thiscall receiver; provisional callees remain provisional.
 """
 import argparse
 import csv
+import hashlib
 import json
 import os
 import re
 import subprocess
 from pathlib import Path
 
-from compile_ghidra_cpp import COMPILER, ROOT
+from compile_ghidra_cpp import COMPILER, ROOT, msvc_compatible_labels
 from compile_scstr_cpp import make_msvc_member
 
 MARKER = re.compile(r"(?m)^// Reference entry ([0-9a-f]{8}); body size \d+ bytes\.\n")
@@ -39,7 +40,7 @@ def promote(source):
             changed += 1
         if "__thiscall" in definition:
             raise ValueError(f"Unlowered thiscall in {marker.group(1)}")
-        parts.extend([marker.group(0), definition])
+        parts.extend([marker.group(0), msvc_compatible_labels(definition)])
     return "".join(parts), changed
 
 
@@ -49,6 +50,9 @@ def main():
     parser.add_argument("--output-root", type=Path, default=ROOT / "analysis")
     parser.add_argument("--emit-dir", type=Path, default=ROOT / "src/generated/member_abi")
     args = parser.parse_args()
+    args.output_root = args.output_root.resolve()
+    if not args.output_root.is_relative_to(ROOT):
+        parser.error("--output-root must be inside the repository for portable tranche paths")
     args.emit_dir.mkdir(parents=True, exist_ok=True)
     manifest = []
     for directory in args.directories:
@@ -71,7 +75,10 @@ def main():
         rows = list(csv.DictReader(index.open(), delimiter="\t"))
         metrics = {"compiled_functions": len(rows), "member_definitions": count,
                    "compiled_reference_body_bytes": sum(int(row["reference_body_bytes"]) for row in rows),
-                   "source_directory": str(directory), "pinned_msvc_verified": False}
+                   "source_directory": str(directory), "pinned_msvc_verified": False,
+                   "input_source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
+                   "generated_source_sha256": hashlib.sha256(text.encode()).hexdigest(),
+                   "index_sha256": hashlib.sha256(index.read_bytes()).hexdigest()}
         (output / "coverage.json").write_text(json.dumps(metrics, indent=2) + "\n")
         (args.emit_dir / (stem + ".cpp")).write_text(text)
         (args.emit_dir / (stem + "-index.tsv")).write_bytes(index.read_bytes())

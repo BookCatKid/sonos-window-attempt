@@ -27,7 +27,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Restore pinned compiler binaries for focused probes
+        id: focused_compiler
+        uses: actions/cache@v4
+        with:
+          path: C:\VS2019BuildTools\VC\Tools\MSVC\14.28.29910\bin\HostX64
+          key: windows-2022-msvc-19.28.29919-hostx64-v1
+
       - name: Install Visual Studio 2019 16.9.10 Build Tools
+        if: github.event.inputs.focused_probe != 'true' || steps.focused_compiler.outputs.cache-hit != 'true'
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'

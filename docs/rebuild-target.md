@@ -4,14 +4,16 @@ The target is a DLL linked from recovered C++ source, without authored assembly
 or embedded copies of executable bytes. The installed Sonos DLL is read-only
 reference material. No Sonos application is launched during reconstruction.
 
-## Primary score
+## Primary score: complete byte identity
 
-The reference is 37,153,792 bytes. A 95% aligned byte match requires at least
-35,296,103 identical bytes at the same file offsets. The candidate must also
-have the same file size, and each reference PE section must independently reach
-95%. `python3 tools/compare.py <candidate.dll> --threshold 95` enforces
-these scores. The same
-command with its default threshold requires complete byte identity.
+The reference is 37,153,792 bytes. The acceptance requirement is **100% byte
+identity**: all 37,153,792 bytes must equal the reference at their original file
+offsets, including headers, code, data, padding, resources, and relocations.
+`python3 tools/compare.py <candidate.dll>` enforces complete identity by default.
+A 95% score is only an intermediate milestone, never completion of this task.
+All authored reconstruction must be C or C++, without inline or handwritten
+assembly or embedded copies of reference executable bytes. Readability is not
+an acceptance condition.
 
 The section byte counts show why function matching alone is insufficient:
 
@@ -22,9 +24,10 @@ The section byte counts show why function matching alone is insufficient:
 | `.reloc` | 1,878,016 | 5.05% |
 | all other sections and headers | 577,024 | 1.55% |
 
-The complete mismatch allowance at 95% is 1,857,689 bytes. The relocation
-section alone exceeds that allowance, so reproducing code without compatible
-link layout cannot meet the file target.
+The mismatch allowance at 100% is zero. At the intermediate 95% milestone,
+the allowance is 1,857,689 bytes. The relocation section alone exceeds that
+allowance, so reproducing code without compatible link layout cannot meet
+even the intermediate milestone.
 
 ## Independent progress measures
 

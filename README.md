@@ -7,8 +7,11 @@ byte with the installed Windows binary. The installed files are retained as immu
 reference inputs. A matching build has **not** been produced yet.
 All authored reconstruction source in this workspace is C++ only; do not add
 handwritten assembler source or inline assembler instructions.
-The [rebuild target](docs/rebuild-target.md) defines the 95% aligned-byte goal
+The [rebuild target](docs/rebuild-target.md) requires 100% byte identity
 and distinguishes pseudocode, compiled objects, matched functions, and a linked DLL.
+The earlier 95% scores are intermediate milestones. C or C++ source may be
+mechanically generated and need not be readable; authored assembly and embedded
+reference executable bytes are excluded.
 
 ## Layout
 
