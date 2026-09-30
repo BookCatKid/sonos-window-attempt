@@ -16,8 +16,9 @@ from verify_eh_placement import verified_eh_targets
 
 
 class LocalStringTests(unittest.TestCase):
-    def candidate(self,tail='return 7;',array='4',spill=None,extended_storage=False):
-        declaration=f'SCStr local_14[{array}];' if spill is None else 'int *local_14;'
+    def candidate(self,tail='return 7;',array='4',spill=None,extended_storage=False,
+                  storage_type='int *',live_write='',preserve_storage_type=False):
+        declaration=f'SCStr local_14[{array}];' if spill is None else storage_type+' local_14;'
         receiver='local_14' if spill is None else '&local_14'
         record={'entry':'10123456','name':'FUN_10123456','body_bytes':120,
                 'decompiled_c':f'''int FUN_10123456(char *param_1) {{
@@ -27,6 +28,7 @@ local_8 = 0xffffffff;
 {spill or ''}
 FUN_10123457({receiver},param_1);
 local_8 = 0;
+{live_write}
 FUN_10123458({receiver});
 local_8 = 1;
 SCStr::int_release({'local_14' if spill is None else '(SCStr *)&local_14'});
@@ -37,7 +39,20 @@ SCStr::int_release({'local_14' if spill is None else '(SCStr *)&local_14'});
                        {'next_state':-1,'action':'1148cdcf','instructions':[]}]}}
         abi=CallABI.__new__(CallABI);abi.recover_implicit_register=True
         abi.resolve=lambda name:{'result':'void','cc':'__cdecl','parameters':['void *','char *'] if name=='FUN_10123457' else ['void *'],'entry':name[-8:]}
-        return lower(record,evidence,abi,extended_storage=extended_storage)
+        return lower(record,evidence,abi,extended_storage=extended_storage,
+                     preserve_storage_type=preserve_storage_type)
+
+    def test_scalar_word_storage_preserves_integer_writes_and_x86_width(self):
+        candidate=self.candidate(spill='',storage_type='undefined4',live_write='local_14 = 42;',
+                                 extended_storage=True,preserve_storage_type=True)
+        self.assertIsNotNone(candidate)
+        source=cpp_source([candidate])
+        source+='\nstatic_assert(sizeof(RecoveredString_FUN_1008c50b_10123456)==4,"word width");\n'
+        with tempfile.TemporaryDirectory(dir=ROOT/'analysis') as scratch:
+            path=Path(scratch)/'word.cpp';path.write_text(source)
+            result=subprocess.run([str(COMPILER),'/nologo','/Zs','/clang:--target=i686-pc-windows-msvc',
+                os.path.relpath(path,ROOT)],cwd=ROOT,capture_output=True,text=True)
+            self.assertEqual(result.returncode,0,result.stdout+result.stderr)
 
     def test_lifetime_generates_real_compiler_exception_handler(self):
         candidate=self.candidate()

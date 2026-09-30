@@ -62,5 +62,9 @@
   {
     "object": "scstr_local_raii_signatures_storage_wide_reference_flags",
     "directory": "analysis/compiled-cpp-scstr-local-raii-signatures-storage-wide"
+  },
+  {
+    "object": "scstr_local_raii_storage_typed_reference_flags",
+    "directory": "analysis/compiled-cpp-scstr-local-raii-storage-typed"
   }
 ]

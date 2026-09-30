@@ -59,7 +59,7 @@ def strip_cookie(source):
     return source if 'DAT_12126b84' not in source else None
 
 
-def lower(record,evidence,abi,extended_storage=False):
+def lower(record,evidence,abi,extended_storage=False,preserve_storage_type=False):
     meta=evidence['metadata'];actions=meta['actions']
     if record['body_bytes']<=5 or meta['state_count']!=2 or len(actions)!=2:return None
     if any(meta['words'][3:8]) or any(x['next_state']!=-1 for x in actions):return None
@@ -107,7 +107,8 @@ def lower(record,evidence,abi,extended_storage=False):
             initializer=re.search(r'(?m)^\s*'+name+r'\s*=\s*(?:param_\d+|ghidra_this);',prior)
             if initializer and not re.search(r'\b'+name+r'\b',prior[:initializer.start()]+prior[initializer.end():]):
                 start=declaration.end()+initializer.start();end=declaration.end()+initializer.end()
-                return lower({**record,'decompiled_c':source[:start]+source[end:]},evidence,abi,extended_storage=True)
+                return lower({**record,'decompiled_c':source[:start]+source[end:]},evidence,abi,
+                             extended_storage=True,preserve_storage_type=preserve_storage_type)
         return None
     cleanup_end=end+1
     semicolon=re.match(r'\s*;',source[cleanup_end:])
@@ -152,7 +153,8 @@ def lower(record,evidence,abi,extended_storage=False):
         invocation='*recovered_result = ('+result_type+')('+invocation.rstrip(';')+');'
     ctor_params=([result_type+' *recovered_result'] if result_type else [])+[typ+' p'+str(i) for i,typ in enumerate(types)]
     ctor_args=(['&'+result_name] if result_name else [])+[f'({typ})({value})' for typ,value in zip(types,args)]
-    declarations[classname]=(f'struct {classname} {{ void *rep; '
+    storage_type=declaration.group(1) if preserve_storage_type and not array else 'void *'
+    declarations[classname]=(f'struct {classname} {{ {storage_type} rep; '
         f'__forceinline {classname}('+', '.join(ctor_params)+') { '+invocation+' } '
         f'~{classname}() noexcept {{ ((SCStr *)this)->int_release(); rep = 0; }} }};')
     # Apply backwards so original construction/cleanup offsets remain valid.
@@ -192,6 +194,7 @@ def main():
     parser.add_argument('--signature-exports',nargs='+',type=Path,
                         help='Overlay an isolated signature propagation experiment as a separate tranche')
     parser.add_argument('--extended-storage',action='store_true',help='Probe scalar string slots and unused parameter spills separately')
+    parser.add_argument('--preserve-storage-type',action='store_true',help='Retain recovered scalar field types as a separate source hypothesis')
     parser.add_argument('--tag',help='Keep an additional experiment separate, using a lowercase word or hyphenated words')
     args=parser.parse_args()
     if args.tag and not re.fullmatch(r'[a-z][a-z0-9]*(?:-[a-z0-9]+)*',args.tag):parser.error('Invalid experiment tag')
@@ -204,13 +207,15 @@ def main():
     for line in (ROOT/'analysis/eh-lifetime-evidence.jsonl').open():
         evidence=json.loads(line);record=records.get(evidence['entry'])
         if record:
-            item=lower(record,evidence,abi,extended_storage=args.extended_storage)
+            item=lower(record,evidence,abi,extended_storage=args.extended_storage,
+                       preserve_storage_type=args.preserve_storage_type)
             if item:candidates.append(item)
     candidates.sort(key=lambda row:row['entry'])
     if args.limit:candidates=candidates[:args.limit]
     print('Candidates:',len(candidates),'bytes:',sum(row['body_bytes'] for row in candidates),flush=True)
     suffix='-signatures' if args.signature_exports else ''
     if args.extended_storage:suffix+='-storage'
+    if args.preserve_storage_type:suffix+='-typed'
     if args.tag:suffix+='-'+args.tag
     output=ROOT/('analysis/compiled-cpp-scstr-local-raii'+suffix);output.mkdir(parents=True,exist_ok=True)
     failures=[];accepted=[];scratch=output/'.syntax-probe.cpp'
