@@ -75,7 +75,7 @@ class RefcountReleaseCallbackTests(unittest.TestCase):
         candidate = self.candidate()
         self.assertIsNotNone(candidate)
         self.assertIn('NativeRefCountedHost::FUN_10687970()', candidate['source'])
-        self.assertIn('NativeGuard guard((int *)this);', candidate['source'])
+        self.assertIn('NativeGuard_thunk_FUN_101b91d0 guard((int *)this);', candidate['source'])
         self.assertIn('SCThreadSafeDec(&this->refcount);', candidate['source'])
         self.assertIn('guard.thunk_FUN_101b9240();', candidate['source'])
         self.assertIn('slot4(1);', candidate['source'])

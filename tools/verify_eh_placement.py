@@ -31,9 +31,13 @@ def bound_helper_body(binding,target_va,inventory,refbytes):
     if len(record)!=8:return None
     action=U32(record,4)
     instructions=list(Cs(CS_ARCH_X86,CS_MODE_32).disasm(refbytes(action,16),action))
-    if len(instructions)<2 or instructions[0].mnemonic!='lea' or not instructions[0].op_str.startswith('ecx, [ebp '):return None
-    jump=instructions[1]
-    if jump.mnemonic!='jmp' or not jump.op_str.startswith('0x'):return None
+    jump=None
+    for ins in instructions:
+        if ins.mnemonic in ('jmp','call') and ins.op_str.startswith('0x'):
+            jump=ins
+            break
+        if ins.mnemonic=='int3':break
+    if jump is None:return None
     call_target=int(binding['call_target'],16)
     if target_va!=call_target or int(jump.op_str,16)!=call_target:return None
     thunk=refbytes(call_target,5)

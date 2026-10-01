@@ -75,7 +75,7 @@ def lower(record, reference, base, sections):
     if pushes != ['esi', 'eax', '1']:
         return None
     source = (f'int NativeRefCountedHost::FUN_{entry}() {{\n'
-              f'NativeGuard guard((int *)this);\n'
+              f'NativeGuard_thunk_FUN_101b91d0 guard((int *)this);\n'
               f'int r = SCThreadSafeDec(&this->refcount);\n'
               f'if (r == 0) {{\n'
               f'guard.thunk_FUN_101b9240();\n'
@@ -111,13 +111,12 @@ def main():
     library += ('int __cdecl SCThreadSafeDec(int *);\n'
                 'struct NativeRefVtable { virtual void r0(); virtual void r1(); '
                 'virtual void r2(); virtual void r3(); virtual void slot4(int); };\n'
-                'struct NativeGuard {\n'
+                'struct NativeGuard_thunk_FUN_101b91d0 {\n'
                 'void *owner;\n'
                 'void thunk_FUN_101b9190(int *);\n'
                 'void thunk_FUN_101b9240();\n'
-                'void thunk_FUN_101b91d0();\n'
-                '__forceinline NativeGuard(int *p) { thunk_FUN_101b9190(p); }\n'
-                '__forceinline ~NativeGuard() { thunk_FUN_101b91d0(); }\n};\n')
+                '~NativeGuard_thunk_FUN_101b91d0();\n'
+                '__forceinline NativeGuard_thunk_FUN_101b91d0(int *p) { thunk_FUN_101b9190(p); }\n};\n')
     library += ('struct NativeRefCountedHost { void *vtbl; int refcount; ' +
                 ''.join(f"int FUN_{r['entry']}(); " for r in candidates) + '};\n')
     candidates = [{**r, 'abi_declarations': {'refcount_release_library': library}} for r in candidates]

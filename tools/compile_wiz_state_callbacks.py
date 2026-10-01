@@ -163,15 +163,15 @@ def main():
     if not candidates:
         raise SystemExit('No wizard state constructor accepted')
     library = LIBRARY.replace('FactoryString', 'RecoveredString_FUN_1008c50b')
-    library += ('struct NativeWizDtorBase { ~NativeWizDtorBase(); };\n'
-                'struct NativeWizFlagged { void *rep; ~NativeWizFlagged(); };\n')
+    library += ('struct NativeWizDtorBase_thunk_FUN_106de7d0 { ~NativeWizDtorBase_thunk_FUN_106de7d0(); };\n'
+                'struct NativeWizFlagged_thunk_FUN_106de7d0 { void *rep; ~NativeWizFlagged_thunk_FUN_106de7d0(); };\n')
     for r in candidates:
         klass = r['wiz_class']
         params = 'const char *, RecoveredString_FUN_1008c50b' \
             if r['source'].startswith(f'{klass}::{klass}(const char *') \
             else 'RecoveredString_FUN_1008c50b'
-        member = 'NativeWizFlagged extra; ' if r['flag'] == 2 else ''
-        library += (f'struct {klass} : NativeWizDtorBase {{ void *vftable; {member}~{klass}();\n'
+        member = 'NativeWizFlagged_thunk_FUN_106de7d0 extra; ' if r['flag'] == 2 else ''
+        library += (f'struct {klass} : NativeWizDtorBase_thunk_FUN_106de7d0 {{ void *vftable; {member}~{klass}();\n'
                     f'void thunk_FUN_106de0c0(RecoveredString_FUN_1008c50b *, RecoveredString_FUN_1008c50b);\n'
                     f'SCStr *thunk_FUN_106dfa00(RecoveredString_FUN_1008c50b *);\n'
                     f'{klass}({params}); }};\n')
@@ -180,9 +180,9 @@ def main():
     roles = []
     for r in candidates:
         roles.append(('??1RecoveredString_FUN_1008c50b@@QAE@XZ', r['entry'], 0))
-        roles.append(('??1NativeWizDtorBase@@QAE@XZ', r['entry'], 1))
+        roles.append(('??1NativeWizDtorBase_thunk_FUN_106de7d0@@QAE@XZ', r['entry'], 1))
         if r['flag'] == 2:
-            roles.append(('??1NativeWizFlagged@@QAE@XZ', r['entry'], 1))
+            roles.append(('??1NativeWizFlagged_thunk_FUN_106de7d0@@QAE@XZ', r['entry'], 1))
     emit_variant('wiz_state_callbacks', candidates, evidence, roles)
 
 

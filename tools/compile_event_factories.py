@@ -8,6 +8,26 @@ from classify_functions import DLL,function_bytes,section_map
 from compare_compiled_ghidra import DISASSEMBLER
 
 
+def funclet_jump_target(metadata_va,state,read):
+    """Resolve one native unwind slot to (call_target, body_entry) or None."""
+    metadata=read(metadata_va,36)
+    if len(metadata)!=36:return None
+    table=struct.unpack_from('<I',metadata,8)[0]
+    action=struct.unpack_from('<I',read(table+state*8,8),4)[0]
+    instructions=list(DISASSEMBLER.disasm(read(action,16),action))
+    target=None
+    for ins in instructions:
+        if ins.mnemonic in ('jmp','call') and ins.op_str.startswith('0x'):
+            target=int(ins.op_str,16)
+            break
+        if ins.mnemonic=='int3':break
+    if target is None:return None
+    thunk=read(target,5)
+    if thunk[0]!=0xe9:return None
+    body=(target+5+struct.unpack_from('<i',thunk,1)[0])&0xffffffff
+    return target,body
+
+
 def auxiliary_bindings(inventory,roles=None):
     reference=DLL.read_bytes();base,sections=section_map(reference)
     def read(va,size):return function_bytes(reference,va,size,base,sections)
@@ -19,24 +39,17 @@ def auxiliary_bindings(inventory,roles=None):
            ('??1SCStr@@QAE@XZ','10e00c90',0)]
     result=[]
     for symbol,entry,state in roles:
-        metadata=read(int(owners[entry]['reference_metadata'],16),36)
-        table=struct.unpack_from('<I',metadata,8)[0]
-        action=struct.unpack_from('<I',read(table+state*8,8),4)[0]
-        code=read(action,16)
-        if code[:2] not in (b'\x8d\x4d', b'\x8b\x4d'):
+        resolved=funclet_jump_target(int(owners[entry]['reference_metadata'],16),state,read)
+        if resolved is None:
             raise ValueError('Expected native frame-relative destructor action')
-        pos=3
-        while code[pos:pos+2]==b'\x83\xc1':
-            pos+=3
-        if code[pos]!=0xe9:
-            raise ValueError('Expected native frame-relative destructor action')
-        target=(action+pos+5+struct.unpack_from('<i',code,pos+1)[0])&0xffffffff
-        thunk=read(target,5)
-        if thunk[0]!=0xe9:raise ValueError('Expected native linker jump')
-        body=(target+5+struct.unpack_from('<i',thunk,1)[0])&0xffffffff
+        target,body=resolved
         result.append({'symbol':symbol,'owner_entry':entry,'state':state,
                        'call_target':f'{target:08x}','body_entry':f'{body:08x}'})
-    return result
+    unique={}
+    for binding in result:
+        key=(binding['symbol'],binding['state'],binding['call_target'],binding['body_entry'])
+        unique.setdefault(key,binding)
+    return list(unique.values())
 
 LIBRARY='''extern "C" void _ReadWriteBarrier();
 #pragma intrinsic(_ReadWriteBarrier)

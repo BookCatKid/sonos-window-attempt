@@ -124,10 +124,10 @@ def main():
     library = LIBRARY
     for va in sorted({va for r in candidates for va in r['vtables']}):
         library += f'extern unsigned int DAT_{va:08x};\n'
-    library += 'void thunk_FUN_1148a50e(void *, unsigned int);\n'
+    library += 'void thunk_FUN_1148c970(void *);\n'
     library += '__forceinline void *operator new(unsigned int size) { return operator_new(size); }\n'
-    library += ('__forceinline void operator delete(void *p, unsigned int size)'
-                ' { thunk_FUN_1148a50e(p, size); }\n'
+    library += ('void operator delete(void *p, unsigned int size)'
+                ' { thunk_FUN_1148c970(p); }\n'
                 'struct NativePageHelper { void *f0; void *f4; void *f8; '
                 'unsigned int thunk_FUN_10eae120(void *owner, unsigned int a, unsigned int b); };\n')
     for r in candidates:
@@ -145,7 +145,8 @@ def main():
                         for r in candidates) + '};\n')
     candidates = [{**r, 'abi_declarations': {'page_factory_library': library}} for r in candidates]
     evidence = {r['entry']: r for r in map(json.loads, (ROOT/'analysis/eh-lifetime-evidence.jsonl').open())}
-    emit_variant('page_factories', candidates, evidence, [])
+    roles = [('??3@YAXPAXI@Z', r['entry'], 0) for r in candidates]
+    emit_variant('page_factories', candidates, evidence, roles)
 
 
 if __name__ == '__main__':

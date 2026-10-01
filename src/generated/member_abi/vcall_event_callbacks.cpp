@@ -158,11 +158,216 @@ virtual void *v60();
 };
 struct NativeVcallM28 { virtual void *v0(); virtual void *v4(); virtual void *v8();
 virtual void *vC(); virtual void *v10(); virtual void *v14(); virtual void v18(); };
-struct NativeVcallPair { NativeVcallThis8 *rep; NativeVcallObj *next;
-  __forceinline ~NativeVcallPair() noexcept {
+struct NativeVcallPair_10001c71 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_10001c71() noexcept {
     NativeVcallObj *t = next;
     if (t != 0) { rep = 0; next = 0; t->v8(); } }
-  NativeVcallPair(); };
+  NativeVcallPair_10001c71(); };
+struct NativeVcallPair_100045f2 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_100045f2() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_100045f2(); };
+struct NativeVcallPair_10004c00 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_10004c00() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_10004c00(); };
+struct NativeVcallPair_10006992 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_10006992() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_10006992(); };
+struct NativeVcallPair_1000e278 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_1000e278() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_1000e278(); };
+struct NativeVcallPair_100128cd { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_100128cd() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_100128cd(); };
+struct NativeVcallPair_100141a5 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_100141a5() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_100141a5(); };
+struct NativeVcallPair_1001ebdc { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_1001ebdc() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_1001ebdc(); };
+struct NativeVcallPair_1001f889 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_1001f889() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_1001f889(); };
+struct NativeVcallPair_100271ba { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_100271ba() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_100271ba(); };
+struct NativeVcallPair_10029de8 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_10029de8() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_10029de8(); };
+struct NativeVcallPair_1002ee51 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_1002ee51() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_1002ee51(); };
+struct NativeVcallPair_10030710 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_10030710() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_10030710(); };
+struct NativeVcallPair_100312f0 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_100312f0() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_100312f0(); };
+struct NativeVcallPair_10035931 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_10035931() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_10035931(); };
+struct NativeVcallPair_10040b5b { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_10040b5b() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_10040b5b(); };
+struct NativeVcallPair_10049eea { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_10049eea() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_10049eea(); };
+struct NativeVcallPair_1004b641 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_1004b641() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_1004b641(); };
+struct NativeVcallPair_100501f5 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_100501f5() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_100501f5(); };
+struct NativeVcallPair_10051b4a { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_10051b4a() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_10051b4a(); };
+struct NativeVcallPair_10053283 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_10053283() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_10053283(); };
+struct NativeVcallPair_10056dbb { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_10056dbb() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_10056dbb(); };
+struct NativeVcallPair_100580cb { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_100580cb() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_100580cb(); };
+struct NativeVcallPair_1005c3d8 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_1005c3d8() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_1005c3d8(); };
+struct NativeVcallPair_1005e87c { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_1005e87c() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_1005e87c(); };
+struct NativeVcallPair_10061f5e { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_10061f5e() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_10061f5e(); };
+struct NativeVcallPair_10065e60 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_10065e60() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_10065e60(); };
+struct NativeVcallPair_100664ff { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_100664ff() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_100664ff(); };
+struct NativeVcallPair_10067634 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_10067634() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_10067634(); };
+struct NativeVcallPair_1006c94f { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_1006c94f() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_1006c94f(); };
+struct NativeVcallPair_1006cde6 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_1006cde6() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_1006cde6(); };
+struct NativeVcallPair_100708dd { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_100708dd() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_100708dd(); };
+struct NativeVcallPair_10078484 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_10078484() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_10078484(); };
+struct NativeVcallPair_1007a27f { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_1007a27f() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_1007a27f(); };
+struct NativeVcallPair_1007ac7a { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_1007ac7a() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_1007ac7a(); };
+struct NativeVcallPair_10082aec { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_10082aec() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_10082aec(); };
+struct NativeVcallPair_10084fe5 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_10084fe5() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_10084fe5(); };
+struct NativeVcallPair_1008675a { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_1008675a() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_1008675a(); };
+struct NativeVcallPair_1008a3dc { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_1008a3dc() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_1008a3dc(); };
+struct NativeVcallPair_10095624 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_10095624() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_10095624(); };
+struct NativeVcallPair_1009770d { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_1009770d() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_1009770d(); };
+struct NativeVcallPair_10099175 { NativeVcallThis8 *rep; NativeVcallObj *next;
+  __forceinline ~NativeVcallPair_10099175() noexcept {
+    NativeVcallObj *t = next;
+    if (t != 0) { rep = 0; next = 0; t->v8(); } }
+  NativeVcallPair_10099175(); };
 struct NativeVcallHost_FUN_1068b210 {
 void *v0; NativeVcallTwoArg *f4; NativeVcallObj *f8;
 void *fc; void *f10; void *f14; void *f18;
@@ -686,7 +891,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -715,7 +920,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1008675a pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -744,7 +949,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1005e87c pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -773,7 +978,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1002ee51 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -802,7 +1007,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1009770d pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -831,7 +1036,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_10099175 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -860,7 +1065,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_10001c71 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -889,7 +1094,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_10049eea pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -918,7 +1123,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1001f889 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -947,7 +1152,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_100580cb pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -976,7 +1181,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1006c94f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1005,7 +1210,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1034,7 +1239,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_10061f5e pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1063,7 +1268,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_100708dd pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1092,7 +1297,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1000e278 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1121,7 +1326,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_10006992 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1150,7 +1355,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_100501f5 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1179,7 +1384,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_10051b4a pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1208,7 +1413,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1008a3dc pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1237,7 +1442,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1005c3d8 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1266,7 +1471,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_10078484 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1295,7 +1500,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_10084fe5 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1324,7 +1529,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1353,7 +1558,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1382,7 +1587,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1004b641 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1411,7 +1616,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1440,7 +1645,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1469,7 +1674,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1498,7 +1703,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1527,7 +1732,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1556,7 +1761,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1585,7 +1790,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1614,7 +1819,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1643,7 +1848,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1672,7 +1877,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_10056dbb pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1701,7 +1906,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_10082aec pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1730,7 +1935,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_10065e60 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1759,7 +1964,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_10095624 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1788,7 +1993,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1817,7 +2022,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1846,7 +2051,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1875,7 +2080,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1904,7 +2109,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_10040b5b pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1933,7 +2138,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_100664ff pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1962,7 +2167,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007ac7a pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -1991,7 +2196,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2020,7 +2225,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_100271ba pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2049,7 +2254,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_100271ba pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2078,7 +2283,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_100271ba pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2107,7 +2312,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2136,7 +2341,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2165,7 +2370,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2194,7 +2399,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2223,7 +2428,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2252,7 +2457,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_100312f0 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2281,7 +2486,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_100045f2 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2310,7 +2515,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_100141a5 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2339,7 +2544,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_10030710 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2368,7 +2573,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_10053283 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2397,7 +2602,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2426,7 +2631,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_10029de8 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2455,7 +2660,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2484,7 +2689,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2513,7 +2718,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2542,7 +2747,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2571,7 +2776,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2600,7 +2805,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_10067634 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2629,7 +2834,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1001ebdc pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2658,7 +2863,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_10035931 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2687,7 +2892,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1006cde6 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2716,7 +2921,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_10004c00 pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2745,7 +2950,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_1007a27f pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;
@@ -2774,7 +2979,7 @@ if (piVar1 != 0) {
   piVar2->v4();
 }
 f1c = (unsigned short)param_3;
-NativeVcallPair pair;
+NativeVcallPair_100128cd pair;
 pair.rep = piVar1;
 pair.next = piVar2;
 f14 = 0;

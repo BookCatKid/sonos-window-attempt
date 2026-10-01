@@ -1905,9 +1905,9 @@ extern unsigned int DAT_1190a63c;
 extern unsigned int DAT_1190a698;
 extern unsigned int DAT_1190a6a4;
 extern unsigned int DAT_1190a6b0;
-void thunk_FUN_1148a50e(void *, unsigned int);
+void thunk_FUN_1148c970(void *);
 __forceinline void *operator new(unsigned int size) { return operator_new(size); }
-__forceinline void operator delete(void *p, unsigned int size) { thunk_FUN_1148a50e(p, size); }
+void operator delete(void *p, unsigned int size) { thunk_FUN_1148c970(p); }
 struct NativePageHelper { void *f0; void *f4; void *f8; unsigned int thunk_FUN_10eae120(void *owner, unsigned int a, unsigned int b); };
 struct NativeWizardPage_FUN_1061ffa0 {
 void *v0; char p0[12]; void *v1; char p1[120]; void *v2; char p2[24]; void *v3; char tail[52];

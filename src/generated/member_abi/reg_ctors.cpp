@@ -217,11 +217,6 @@ virtual int value(SCStr *key);
 static_assert(sizeof(FactoryTree)==8,"Two-word outgoing container");
 static_assert(sizeof(FactoryTreeNode)==28,"Sentinel node");
 static_assert(sizeof(Event_thunk_FUN_10def0d0)==24,"Event value");
-struct NativeRegStr_thunk_FUN_1008c50b {
-  unsigned int rep;
-  __forceinline NativeRegStr_thunk_FUN_1008c50b(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
-  ~NativeRegStr_thunk_FUN_1008c50b() noexcept { ((SCStr *)this)->int_release(); }
-};
 extern unsigned int DAT_1188d58c;
 extern unsigned int DAT_11936848;
 extern unsigned int DAT_11936850;
@@ -310,94 +305,361 @@ extern unsigned int DAT_11937488;
 extern unsigned int DAT_1193749c;
 extern unsigned int DAT_119374b8;
 extern unsigned int DAT_119374d0;
+struct NativeRegStr_10df5400 { unsigned int rep;
+  __forceinline NativeRegStr_10df5400(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df5400() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df5400 { NativeRegCtor_FUN_10df5400(); };
+struct NativeRegStr_10df54d0 { unsigned int rep;
+  __forceinline NativeRegStr_10df54d0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df54d0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df54d0 { NativeRegCtor_FUN_10df54d0(); };
+struct NativeRegStr_10df5720 { unsigned int rep;
+  __forceinline NativeRegStr_10df5720(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df5720() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df5720 { NativeRegCtor_FUN_10df5720(); };
+struct NativeRegStr_10df57f0 { unsigned int rep;
+  __forceinline NativeRegStr_10df57f0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df57f0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df57f0 { NativeRegCtor_FUN_10df57f0(); };
+struct NativeRegStr_10df59d0 { unsigned int rep;
+  __forceinline NativeRegStr_10df59d0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df59d0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df59d0 { NativeRegCtor_FUN_10df59d0(); };
+struct NativeRegStr_10df5aa0 { unsigned int rep;
+  __forceinline NativeRegStr_10df5aa0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df5aa0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df5aa0 { NativeRegCtor_FUN_10df5aa0(); };
+struct NativeRegStr_10df5b70 { unsigned int rep;
+  __forceinline NativeRegStr_10df5b70(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df5b70() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df5b70 { NativeRegCtor_FUN_10df5b70(); };
+struct NativeRegStr_10df5c40 { unsigned int rep;
+  __forceinline NativeRegStr_10df5c40(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df5c40() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df5c40 { NativeRegCtor_FUN_10df5c40(); };
+struct NativeRegStr_10df6290 { unsigned int rep;
+  __forceinline NativeRegStr_10df6290(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df6290() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df6290 { NativeRegCtor_FUN_10df6290(); };
+struct NativeRegStr_10df6360 { unsigned int rep;
+  __forceinline NativeRegStr_10df6360(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df6360() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df6360 { NativeRegCtor_FUN_10df6360(); };
+struct NativeRegStr_10df6430 { unsigned int rep;
+  __forceinline NativeRegStr_10df6430(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df6430() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df6430 { NativeRegCtor_FUN_10df6430(); };
+struct NativeRegStr_10df65d0 { unsigned int rep;
+  __forceinline NativeRegStr_10df65d0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df65d0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df65d0 { NativeRegCtor_FUN_10df65d0(); };
+struct NativeRegStr_10df66a0 { unsigned int rep;
+  __forceinline NativeRegStr_10df66a0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df66a0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df66a0 { NativeRegCtor_FUN_10df66a0(); };
+struct NativeRegStr_10df6770 { unsigned int rep;
+  __forceinline NativeRegStr_10df6770(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df6770() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df6770 { NativeRegCtor_FUN_10df6770(); };
+struct NativeRegStr_10df6840 { unsigned int rep;
+  __forceinline NativeRegStr_10df6840(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df6840() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df6840 { NativeRegCtor_FUN_10df6840(); };
+struct NativeRegStr_10df6910 { unsigned int rep;
+  __forceinline NativeRegStr_10df6910(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df6910() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df6910 { NativeRegCtor_FUN_10df6910(); };
+struct NativeRegStr_10df69e0 { unsigned int rep;
+  __forceinline NativeRegStr_10df69e0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df69e0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df69e0 { NativeRegCtor_FUN_10df69e0(); };
+struct NativeRegStr_10df6da0 { unsigned int rep;
+  __forceinline NativeRegStr_10df6da0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df6da0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df6da0 { NativeRegCtor_FUN_10df6da0(); };
+struct NativeRegStr_10df7c20 { unsigned int rep;
+  __forceinline NativeRegStr_10df7c20(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df7c20() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df7c20 { NativeRegCtor_FUN_10df7c20(); };
+struct NativeRegStr_10df7ed0 { unsigned int rep;
+  __forceinline NativeRegStr_10df7ed0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df7ed0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df7ed0 { NativeRegCtor_FUN_10df7ed0(); };
+struct NativeRegStr_10df8600 { unsigned int rep;
+  __forceinline NativeRegStr_10df8600(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df8600() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df8600 { NativeRegCtor_FUN_10df8600(); };
+struct NativeRegStr_10df86d0 { unsigned int rep;
+  __forceinline NativeRegStr_10df86d0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df86d0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df86d0 { NativeRegCtor_FUN_10df86d0(); };
+struct NativeRegStr_10df87a0 { unsigned int rep;
+  __forceinline NativeRegStr_10df87a0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df87a0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df87a0 { NativeRegCtor_FUN_10df87a0(); };
+struct NativeRegStr_10df8a60 { unsigned int rep;
+  __forceinline NativeRegStr_10df8a60(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df8a60() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df8a60 { NativeRegCtor_FUN_10df8a60(); };
+struct NativeRegStr_10df8b30 { unsigned int rep;
+  __forceinline NativeRegStr_10df8b30(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df8b30() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df8b30 { NativeRegCtor_FUN_10df8b30(); };
+struct NativeRegStr_10df8c00 { unsigned int rep;
+  __forceinline NativeRegStr_10df8c00(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df8c00() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df8c00 { NativeRegCtor_FUN_10df8c00(); };
+struct NativeRegStr_10df8cd0 { unsigned int rep;
+  __forceinline NativeRegStr_10df8cd0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df8cd0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df8cd0 { NativeRegCtor_FUN_10df8cd0(); };
+struct NativeRegStr_10df8f50 { unsigned int rep;
+  __forceinline NativeRegStr_10df8f50(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df8f50() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df8f50 { NativeRegCtor_FUN_10df8f50(); };
+struct NativeRegStr_10df9020 { unsigned int rep;
+  __forceinline NativeRegStr_10df9020(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df9020() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df9020 { NativeRegCtor_FUN_10df9020(); };
+struct NativeRegStr_10df90f0 { unsigned int rep;
+  __forceinline NativeRegStr_10df90f0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df90f0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df90f0 { NativeRegCtor_FUN_10df90f0(); };
+struct NativeRegStr_10df91c0 { unsigned int rep;
+  __forceinline NativeRegStr_10df91c0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df91c0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df91c0 { NativeRegCtor_FUN_10df91c0(); };
+struct NativeRegStr_10df92c0 { unsigned int rep;
+  __forceinline NativeRegStr_10df92c0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df92c0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df92c0 { NativeRegCtor_FUN_10df92c0(); };
+struct NativeRegStr_10df9440 { unsigned int rep;
+  __forceinline NativeRegStr_10df9440(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df9440() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df9440 { NativeRegCtor_FUN_10df9440(); };
+struct NativeRegStr_10df9510 { unsigned int rep;
+  __forceinline NativeRegStr_10df9510(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df9510() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df9510 { NativeRegCtor_FUN_10df9510(); };
+struct NativeRegStr_10df9690 { unsigned int rep;
+  __forceinline NativeRegStr_10df9690(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df9690() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df9690 { NativeRegCtor_FUN_10df9690(); };
+struct NativeRegStr_10df9760 { unsigned int rep;
+  __forceinline NativeRegStr_10df9760(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df9760() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df9760 { NativeRegCtor_FUN_10df9760(); };
+struct NativeRegStr_10df9830 { unsigned int rep;
+  __forceinline NativeRegStr_10df9830(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df9830() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df9830 { NativeRegCtor_FUN_10df9830(); };
+struct NativeRegStr_10df9900 { unsigned int rep;
+  __forceinline NativeRegStr_10df9900(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df9900() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df9900 { NativeRegCtor_FUN_10df9900(); };
+struct NativeRegStr_10df9a80 { unsigned int rep;
+  __forceinline NativeRegStr_10df9a80(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df9a80() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df9a80 { NativeRegCtor_FUN_10df9a80(); };
+struct NativeRegStr_10df9b50 { unsigned int rep;
+  __forceinline NativeRegStr_10df9b50(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df9b50() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df9b50 { NativeRegCtor_FUN_10df9b50(); };
+struct NativeRegStr_10df9d60 { unsigned int rep;
+  __forceinline NativeRegStr_10df9d60(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df9d60() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df9d60 { NativeRegCtor_FUN_10df9d60(); };
+struct NativeRegStr_10df9e30 { unsigned int rep;
+  __forceinline NativeRegStr_10df9e30(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df9e30() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df9e30 { NativeRegCtor_FUN_10df9e30(); };
+struct NativeRegStr_10df9fb0 { unsigned int rep;
+  __forceinline NativeRegStr_10df9fb0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10df9fb0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10df9fb0 { NativeRegCtor_FUN_10df9fb0(); };
+struct NativeRegStr_10dfa080 { unsigned int rep;
+  __forceinline NativeRegStr_10dfa080(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfa080() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfa080 { NativeRegCtor_FUN_10dfa080(); };
+struct NativeRegStr_10dfa150 { unsigned int rep;
+  __forceinline NativeRegStr_10dfa150(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfa150() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfa150 { NativeRegCtor_FUN_10dfa150(); };
+struct NativeRegStr_10dfa2d0 { unsigned int rep;
+  __forceinline NativeRegStr_10dfa2d0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfa2d0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfa2d0 { NativeRegCtor_FUN_10dfa2d0(); };
+struct NativeRegStr_10dfa3a0 { unsigned int rep;
+  __forceinline NativeRegStr_10dfa3a0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfa3a0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfa3a0 { NativeRegCtor_FUN_10dfa3a0(); };
+struct NativeRegStr_10dfa520 { unsigned int rep;
+  __forceinline NativeRegStr_10dfa520(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfa520() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfa520 { NativeRegCtor_FUN_10dfa520(); };
+struct NativeRegStr_10dfa5f0 { unsigned int rep;
+  __forceinline NativeRegStr_10dfa5f0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfa5f0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfa5f0 { NativeRegCtor_FUN_10dfa5f0(); };
+struct NativeRegStr_10dfa6c0 { unsigned int rep;
+  __forceinline NativeRegStr_10dfa6c0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfa6c0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfa6c0 { NativeRegCtor_FUN_10dfa6c0(); };
+struct NativeRegStr_10dfa790 { unsigned int rep;
+  __forceinline NativeRegStr_10dfa790(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfa790() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfa790 { NativeRegCtor_FUN_10dfa790(); };
+struct NativeRegStr_10dfa860 { unsigned int rep;
+  __forceinline NativeRegStr_10dfa860(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfa860() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfa860 { NativeRegCtor_FUN_10dfa860(); };
+struct NativeRegStr_10dfa930 { unsigned int rep;
+  __forceinline NativeRegStr_10dfa930(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfa930() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfa930 { NativeRegCtor_FUN_10dfa930(); };
+struct NativeRegStr_10dfaa00 { unsigned int rep;
+  __forceinline NativeRegStr_10dfaa00(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfaa00() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfaa00 { NativeRegCtor_FUN_10dfaa00(); };
+struct NativeRegStr_10dfab80 { unsigned int rep;
+  __forceinline NativeRegStr_10dfab80(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfab80() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfab80 { NativeRegCtor_FUN_10dfab80(); };
+struct NativeRegStr_10dfac50 { unsigned int rep;
+  __forceinline NativeRegStr_10dfac50(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfac50() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfac50 { NativeRegCtor_FUN_10dfac50(); };
+struct NativeRegStr_10dfadd0 { unsigned int rep;
+  __forceinline NativeRegStr_10dfadd0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfadd0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfadd0 { NativeRegCtor_FUN_10dfadd0(); };
+struct NativeRegStr_10dfaea0 { unsigned int rep;
+  __forceinline NativeRegStr_10dfaea0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfaea0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfaea0 { NativeRegCtor_FUN_10dfaea0(); };
+struct NativeRegStr_10dfb020 { unsigned int rep;
+  __forceinline NativeRegStr_10dfb020(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfb020() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfb020 { NativeRegCtor_FUN_10dfb020(); };
+struct NativeRegStr_10dfb0f0 { unsigned int rep;
+  __forceinline NativeRegStr_10dfb0f0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfb0f0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfb0f0 { NativeRegCtor_FUN_10dfb0f0(); };
+struct NativeRegStr_10dfb250 { unsigned int rep;
+  __forceinline NativeRegStr_10dfb250(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfb250() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfb250 { NativeRegCtor_FUN_10dfb250(); };
+struct NativeRegStr_10dfb320 { unsigned int rep;
+  __forceinline NativeRegStr_10dfb320(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfb320() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfb320 { NativeRegCtor_FUN_10dfb320(); };
+struct NativeRegStr_10dfb530 { unsigned int rep;
+  __forceinline NativeRegStr_10dfb530(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfb530() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfb530 { NativeRegCtor_FUN_10dfb530(); };
+struct NativeRegStr_10dfb600 { unsigned int rep;
+  __forceinline NativeRegStr_10dfb600(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfb600() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfb600 { NativeRegCtor_FUN_10dfb600(); };
+struct NativeRegStr_10dfbb10 { unsigned int rep;
+  __forceinline NativeRegStr_10dfbb10(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfbb10() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfbb10 { NativeRegCtor_FUN_10dfbb10(); };
+struct NativeRegStr_10dfbbe0 { unsigned int rep;
+  __forceinline NativeRegStr_10dfbbe0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfbbe0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfbbe0 { NativeRegCtor_FUN_10dfbbe0(); };
+struct NativeRegStr_10dfbcb0 { unsigned int rep;
+  __forceinline NativeRegStr_10dfbcb0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfbcb0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfbcb0 { NativeRegCtor_FUN_10dfbcb0(); };
+struct NativeRegStr_10dfbd80 { unsigned int rep;
+  __forceinline NativeRegStr_10dfbd80(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfbd80() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfbd80 { NativeRegCtor_FUN_10dfbd80(); };
+struct NativeRegStr_10dfbe50 { unsigned int rep;
+  __forceinline NativeRegStr_10dfbe50(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfbe50() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfbe50 { NativeRegCtor_FUN_10dfbe50(); };
+struct NativeRegStr_10dfc370 { unsigned int rep;
+  __forceinline NativeRegStr_10dfc370(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfc370() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfc370 { NativeRegCtor_FUN_10dfc370(); };
+struct NativeRegStr_10dfc440 { unsigned int rep;
+  __forceinline NativeRegStr_10dfc440(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfc440() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfc440 { NativeRegCtor_FUN_10dfc440(); };
+struct NativeRegStr_10dfc510 { unsigned int rep;
+  __forceinline NativeRegStr_10dfc510(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfc510() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfc510 { NativeRegCtor_FUN_10dfc510(); };
+struct NativeRegStr_10dfcdc0 { unsigned int rep;
+  __forceinline NativeRegStr_10dfcdc0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfcdc0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfcdc0 { NativeRegCtor_FUN_10dfcdc0(); };
+struct NativeRegStr_10dfce90 { unsigned int rep;
+  __forceinline NativeRegStr_10dfce90(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfce90() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfce90 { NativeRegCtor_FUN_10dfce90(); };
+struct NativeRegStr_10dfcf60 { unsigned int rep;
+  __forceinline NativeRegStr_10dfcf60(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfcf60() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfcf60 { NativeRegCtor_FUN_10dfcf60(); };
+struct NativeRegStr_10dfd030 { unsigned int rep;
+  __forceinline NativeRegStr_10dfd030(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfd030() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfd030 { NativeRegCtor_FUN_10dfd030(); };
+struct NativeRegStr_10dfd100 { unsigned int rep;
+  __forceinline NativeRegStr_10dfd100(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfd100() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfd100 { NativeRegCtor_FUN_10dfd100(); };
+struct NativeRegStr_10dfd2d0 { unsigned int rep;
+  __forceinline NativeRegStr_10dfd2d0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfd2d0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfd2d0 { NativeRegCtor_FUN_10dfd2d0(); };
+struct NativeRegStr_10dfd3a0 { unsigned int rep;
+  __forceinline NativeRegStr_10dfd3a0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfd3a0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfd3a0 { NativeRegCtor_FUN_10dfd3a0(); };
+struct NativeRegStr_10dfd470 { unsigned int rep;
+  __forceinline NativeRegStr_10dfd470(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfd470() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfd470 { NativeRegCtor_FUN_10dfd470(); };
+struct NativeRegStr_10dfd540 { unsigned int rep;
+  __forceinline NativeRegStr_10dfd540(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfd540() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfd540 { NativeRegCtor_FUN_10dfd540(); };
+struct NativeRegStr_10dfd610 { unsigned int rep;
+  __forceinline NativeRegStr_10dfd610(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfd610() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfd610 { NativeRegCtor_FUN_10dfd610(); };
+struct NativeRegStr_10dfd6e0 { unsigned int rep;
+  __forceinline NativeRegStr_10dfd6e0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfd6e0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfd6e0 { NativeRegCtor_FUN_10dfd6e0(); };
+struct NativeRegStr_10dfd8c0 { unsigned int rep;
+  __forceinline NativeRegStr_10dfd8c0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfd8c0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfd8c0 { NativeRegCtor_FUN_10dfd8c0(); };
+struct NativeRegStr_10dfda60 { unsigned int rep;
+  __forceinline NativeRegStr_10dfda60(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfda60() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfda60 { NativeRegCtor_FUN_10dfda60(); };
+struct NativeRegStr_10dfdff0 { unsigned int rep;
+  __forceinline NativeRegStr_10dfdff0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfdff0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfdff0 { NativeRegCtor_FUN_10dfdff0(); };
+struct NativeRegStr_10dfe0c0 { unsigned int rep;
+  __forceinline NativeRegStr_10dfe0c0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfe0c0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfe0c0 { NativeRegCtor_FUN_10dfe0c0(); };
+struct NativeRegStr_10dfe190 { unsigned int rep;
+  __forceinline NativeRegStr_10dfe190(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfe190() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfe190 { NativeRegCtor_FUN_10dfe190(); };
+struct NativeRegStr_10dfe3d0 { unsigned int rep;
+  __forceinline NativeRegStr_10dfe3d0(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+  ~NativeRegStr_10dfe3d0() noexcept { ((SCStr *)this)->int_release(); rep = 0; } };
 struct NativeRegCtor_FUN_10dfe3d0 { NativeRegCtor_FUN_10dfe3d0(); };
 
 extern int thunk_FUN_10dee620(...);
@@ -405,622 +667,622 @@ extern int thunk_FUN_10dee620(...);
 // Reference entry 10df5400; body size 160 bytes.
 #line 1 "ENTRY_10df5400"
 NativeRegCtor_FUN_10df5400::NativeRegCtor_FUN_10df5400() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937488)};
+NativeRegStr_10df5400 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937488)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 75, 0, FactoryTree());
 }
 
 // Reference entry 10df54d0; body size 160 bytes.
 #line 1 "ENTRY_10df54d0"
 NativeRegCtor_FUN_10df54d0::NativeRegCtor_FUN_10df54d0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_1193749c)};
+NativeRegStr_10df54d0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_1193749c)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 76, 0, FactoryTree());
 }
 
 // Reference entry 10df5720; body size 160 bytes.
 #line 1 "ENTRY_10df5720"
 NativeRegCtor_FUN_10df5720::NativeRegCtor_FUN_10df5720() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119374d0)};
+NativeRegStr_10df5720 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119374d0)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 78, 0, FactoryTree());
 }
 
 // Reference entry 10df57f0; body size 160 bytes.
 #line 1 "ENTRY_10df57f0"
 NativeRegCtor_FUN_10df57f0::NativeRegCtor_FUN_10df57f0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119374b8)};
+NativeRegStr_10df57f0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119374b8)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 77, 0, FactoryTree());
 }
 
 // Reference entry 10df59d0; body size 160 bytes.
 #line 1 "ENTRY_10df59d0"
 NativeRegCtor_FUN_10df59d0::NativeRegCtor_FUN_10df59d0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936880)};
+NativeRegStr_10df59d0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936880)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 6, 0, FactoryTree());
 }
 
 // Reference entry 10df5aa0; body size 160 bytes.
 #line 1 "ENTRY_10df5aa0"
 NativeRegCtor_FUN_10df5aa0::NativeRegCtor_FUN_10df5aa0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119368b8)};
+NativeRegStr_10df5aa0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119368b8)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 9, 0, FactoryTree());
 }
 
 // Reference entry 10df5b70; body size 160 bytes.
 #line 1 "ENTRY_10df5b70"
 NativeRegCtor_FUN_10df5b70::NativeRegCtor_FUN_10df5b70() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119368d0)};
+NativeRegStr_10df5b70 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119368d0)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 10, 0, FactoryTree());
 }
 
 // Reference entry 10df5c40; body size 160 bytes.
 #line 1 "ENTRY_10df5c40"
 NativeRegCtor_FUN_10df5c40::NativeRegCtor_FUN_10df5c40() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936860)};
+NativeRegStr_10df5c40 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936860)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 4, 0, FactoryTree());
 }
 
 // Reference entry 10df6290; body size 160 bytes.
 #line 1 "ENTRY_10df6290"
 NativeRegCtor_FUN_10df6290::NativeRegCtor_FUN_10df6290() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936938)};
+NativeRegStr_10df6290 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936938)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 13, 0, FactoryTree());
 }
 
 // Reference entry 10df6360; body size 160 bytes.
 #line 1 "ENTRY_10df6360"
 NativeRegCtor_FUN_10df6360::NativeRegCtor_FUN_10df6360() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936924)};
+NativeRegStr_10df6360 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936924)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 12, 0, FactoryTree());
 }
 
 // Reference entry 10df6430; body size 160 bytes.
 #line 1 "ENTRY_10df6430"
 NativeRegCtor_FUN_10df6430::NativeRegCtor_FUN_10df6430() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936dc8)};
+NativeRegStr_10df6430 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936dc8)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 62, 0, FactoryTree());
 }
 
 // Reference entry 10df65d0; body size 160 bytes.
 #line 1 "ENTRY_10df65d0"
 NativeRegCtor_FUN_10df65d0::NativeRegCtor_FUN_10df65d0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936dac)};
+NativeRegStr_10df65d0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936dac)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 61, 0, FactoryTree());
 }
 
 // Reference entry 10df66a0; body size 160 bytes.
 #line 1 "ENTRY_10df66a0"
 NativeRegCtor_FUN_10df66a0::NativeRegCtor_FUN_10df66a0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119368f4)};
+NativeRegStr_10df66a0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119368f4)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 11, 0, FactoryTree());
 }
 
 // Reference entry 10df6770; body size 160 bytes.
 #line 1 "ENTRY_10df6770"
 NativeRegCtor_FUN_10df6770::NativeRegCtor_FUN_10df6770() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936a84)};
+NativeRegStr_10df6770 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936a84)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 39, 0, FactoryTree());
 }
 
 // Reference entry 10df6840; body size 160 bytes.
 #line 1 "ENTRY_10df6840"
 NativeRegCtor_FUN_10df6840::NativeRegCtor_FUN_10df6840() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936ab8)};
+NativeRegStr_10df6840 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936ab8)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 40, 0, FactoryTree());
 }
 
 // Reference entry 10df6910; body size 160 bytes.
 #line 1 "ENTRY_10df6910"
 NativeRegCtor_FUN_10df6910::NativeRegCtor_FUN_10df6910() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936af4)};
+NativeRegStr_10df6910 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936af4)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 42, 0, FactoryTree());
 }
 
 // Reference entry 10df69e0; body size 160 bytes.
 #line 1 "ENTRY_10df69e0"
 NativeRegCtor_FUN_10df69e0::NativeRegCtor_FUN_10df69e0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936ae0)};
+NativeRegStr_10df69e0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936ae0)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 41, 0, FactoryTree());
 }
 
 // Reference entry 10df6da0; body size 160 bytes.
 #line 1 "ENTRY_10df6da0"
 NativeRegCtor_FUN_10df6da0::NativeRegCtor_FUN_10df6da0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936e54)};
+NativeRegStr_10df6da0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936e54)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 67, 0, FactoryTree());
 }
 
 // Reference entry 10df7c20; body size 160 bytes.
 #line 1 "ENTRY_10df7c20"
 NativeRegCtor_FUN_10df7c20::NativeRegCtor_FUN_10df7c20() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936fa0)};
+NativeRegStr_10df7c20 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936fa0)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 86, 0, FactoryTree());
 }
 
 // Reference entry 10df7ed0; body size 160 bytes.
 #line 1 "ENTRY_10df7ed0"
 NativeRegCtor_FUN_10df7ed0::NativeRegCtor_FUN_10df7ed0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936b44)};
+NativeRegStr_10df7ed0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936b44)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 44, 0, FactoryTree());
 }
 
 // Reference entry 10df8600; body size 160 bytes.
 #line 1 "ENTRY_10df8600"
 NativeRegCtor_FUN_10df8600::NativeRegCtor_FUN_10df8600() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936ef0)};
+NativeRegStr_10df8600 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936ef0)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 81, 0, FactoryTree());
 }
 
 // Reference entry 10df86d0; body size 160 bytes.
 #line 1 "ENTRY_10df86d0"
 NativeRegCtor_FUN_10df86d0::NativeRegCtor_FUN_10df86d0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936f14)};
+NativeRegStr_10df86d0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936f14)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 82, 0, FactoryTree());
 }
 
 // Reference entry 10df87a0; body size 160 bytes.
 #line 1 "ENTRY_10df87a0"
 NativeRegCtor_FUN_10df87a0::NativeRegCtor_FUN_10df87a0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937464)};
+NativeRegStr_10df87a0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937464)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 119, 0, FactoryTree());
 }
 
 // Reference entry 10df8a60; body size 160 bytes.
 #line 1 "ENTRY_10df8a60"
 NativeRegCtor_FUN_10df8a60::NativeRegCtor_FUN_10df8a60() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936c0c)};
+NativeRegStr_10df8a60 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936c0c)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 54, 0, FactoryTree());
 }
 
 // Reference entry 10df8b30; body size 160 bytes.
 #line 1 "ENTRY_10df8b30"
 NativeRegCtor_FUN_10df8b30::NativeRegCtor_FUN_10df8b30() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936bfc)};
+NativeRegStr_10df8b30 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936bfc)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 53, 0, FactoryTree());
 }
 
 // Reference entry 10df8c00; body size 160 bytes.
 #line 1 "ENTRY_10df8c00"
 NativeRegCtor_FUN_10df8c00::NativeRegCtor_FUN_10df8c00() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936be8)};
+NativeRegStr_10df8c00 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936be8)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 52, 0, FactoryTree());
 }
 
 // Reference entry 10df8cd0; body size 160 bytes.
 #line 1 "ENTRY_10df8cd0"
 NativeRegCtor_FUN_10df8cd0::NativeRegCtor_FUN_10df8cd0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936848)};
+NativeRegStr_10df8cd0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936848)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 1, 0, FactoryTree());
 }
 
 // Reference entry 10df8f50; body size 160 bytes.
 #line 1 "ENTRY_10df8f50"
 NativeRegCtor_FUN_10df8f50::NativeRegCtor_FUN_10df8f50() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936e90)};
+NativeRegStr_10df8f50 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936e90)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 72, 0, FactoryTree());
 }
 
 // Reference entry 10df9020; body size 160 bytes.
 #line 1 "ENTRY_10df9020"
 NativeRegCtor_FUN_10df9020::NativeRegCtor_FUN_10df9020() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936e6c)};
+NativeRegStr_10df9020 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936e6c)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 71, 0, FactoryTree());
 }
 
 // Reference entry 10df90f0; body size 160 bytes.
 #line 1 "ENTRY_10df90f0"
 NativeRegCtor_FUN_10df90f0::NativeRegCtor_FUN_10df90f0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936f54)};
+NativeRegStr_10df90f0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936f54)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 84, 0, FactoryTree());
 }
 
 // Reference entry 10df91c0; body size 160 bytes.
 #line 1 "ENTRY_10df91c0"
 NativeRegCtor_FUN_10df91c0::NativeRegCtor_FUN_10df91c0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936f70)};
+NativeRegStr_10df91c0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936f70)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 85, 0, FactoryTree());
 }
 
 // Reference entry 10df92c0; body size 160 bytes.
 #line 1 "ENTRY_10df92c0"
 NativeRegCtor_FUN_10df92c0::NativeRegCtor_FUN_10df92c0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936f38)};
+NativeRegStr_10df92c0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936f38)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 83, 0, FactoryTree());
 }
 
 // Reference entry 10df9440; body size 160 bytes.
 #line 1 "ENTRY_10df9440"
 NativeRegCtor_FUN_10df9440::NativeRegCtor_FUN_10df9440() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937174)};
+NativeRegStr_10df9440 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937174)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 97, 0, FactoryTree());
 }
 
 // Reference entry 10df9510; body size 160 bytes.
 #line 1 "ENTRY_10df9510"
 NativeRegCtor_FUN_10df9510::NativeRegCtor_FUN_10df9510() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937150)};
+NativeRegStr_10df9510 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937150)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 96, 0, FactoryTree());
 }
 
 // Reference entry 10df9690; body size 160 bytes.
 #line 1 "ENTRY_10df9690"
 NativeRegCtor_FUN_10df9690::NativeRegCtor_FUN_10df9690() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119372a4)};
+NativeRegStr_10df9690 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119372a4)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 105, 0, FactoryTree());
 }
 
 // Reference entry 10df9760; body size 160 bytes.
 #line 1 "ENTRY_10df9760"
 NativeRegCtor_FUN_10df9760::NativeRegCtor_FUN_10df9760() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937280)};
+NativeRegStr_10df9760 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937280)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 104, 0, FactoryTree());
 }
 
 // Reference entry 10df9830; body size 160 bytes.
 #line 1 "ENTRY_10df9830"
 NativeRegCtor_FUN_10df9830::NativeRegCtor_FUN_10df9830() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_1193743c)};
+NativeRegStr_10df9830 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_1193743c)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 116, 0, FactoryTree());
 }
 
 // Reference entry 10df9900; body size 160 bytes.
 #line 1 "ENTRY_10df9900"
 NativeRegCtor_FUN_10df9900::NativeRegCtor_FUN_10df9900() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119372e4)};
+NativeRegStr_10df9900 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119372e4)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 112, 0, FactoryTree());
 }
 
 // Reference entry 10df9a80; body size 160 bytes.
 #line 1 "ENTRY_10df9a80"
 NativeRegCtor_FUN_10df9a80::NativeRegCtor_FUN_10df9a80() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937260)};
+NativeRegStr_10df9a80 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937260)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 103, 0, FactoryTree());
 }
 
 // Reference entry 10df9b50; body size 160 bytes.
 #line 1 "ENTRY_10df9b50"
 NativeRegCtor_FUN_10df9b50::NativeRegCtor_FUN_10df9b50() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_1193723c)};
+NativeRegStr_10df9b50 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_1193723c)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 102, 0, FactoryTree());
 }
 
 // Reference entry 10df9d60; body size 160 bytes.
 #line 1 "ENTRY_10df9d60"
 NativeRegCtor_FUN_10df9d60::NativeRegCtor_FUN_10df9d60() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937134)};
+NativeRegStr_10df9d60 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937134)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 95, 0, FactoryTree());
 }
 
 // Reference entry 10df9e30; body size 160 bytes.
 #line 1 "ENTRY_10df9e30"
 NativeRegCtor_FUN_10df9e30::NativeRegCtor_FUN_10df9e30() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937114)};
+NativeRegStr_10df9e30 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937114)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 94, 0, FactoryTree());
 }
 
 // Reference entry 10df9fb0; body size 160 bytes.
 #line 1 "ENTRY_10df9fb0"
 NativeRegCtor_FUN_10df9fb0::NativeRegCtor_FUN_10df9fb0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_1193741c)};
+NativeRegStr_10df9fb0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_1193741c)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 115, 0, FactoryTree());
 }
 
 // Reference entry 10dfa080; body size 160 bytes.
 #line 1 "ENTRY_10dfa080"
 NativeRegCtor_FUN_10dfa080::NativeRegCtor_FUN_10dfa080() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119373f8)};
+NativeRegStr_10dfa080 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119373f8)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 114, 0, FactoryTree());
 }
 
 // Reference entry 10dfa150; body size 160 bytes.
 #line 1 "ENTRY_10dfa150"
 NativeRegCtor_FUN_10dfa150::NativeRegCtor_FUN_10dfa150() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937308)};
+NativeRegStr_10dfa150 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937308)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 105, 0, FactoryTree());
 }
 
 // Reference entry 10dfa2d0; body size 160 bytes.
 #line 1 "ENTRY_10dfa2d0"
 NativeRegCtor_FUN_10dfa2d0::NativeRegCtor_FUN_10dfa2d0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937214)};
+NativeRegStr_10dfa2d0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937214)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 101, 0, FactoryTree());
 }
 
 // Reference entry 10dfa3a0; body size 160 bytes.
 #line 1 "ENTRY_10dfa3a0"
 NativeRegCtor_FUN_10dfa3a0::NativeRegCtor_FUN_10dfa3a0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119371e8)};
+NativeRegStr_10dfa3a0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119371e8)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 100, 0, FactoryTree());
 }
 
 // Reference entry 10dfa520; body size 160 bytes.
 #line 1 "ENTRY_10dfa520"
 NativeRegCtor_FUN_10dfa520::NativeRegCtor_FUN_10dfa520() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119371c0)};
+NativeRegStr_10dfa520 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119371c0)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 99, 0, FactoryTree());
 }
 
 // Reference entry 10dfa5f0; body size 160 bytes.
 #line 1 "ENTRY_10dfa5f0"
 NativeRegCtor_FUN_10dfa5f0::NativeRegCtor_FUN_10dfa5f0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937194)};
+NativeRegStr_10dfa5f0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937194)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 98, 0, FactoryTree());
 }
 
 // Reference entry 10dfa6c0; body size 160 bytes.
 #line 1 "ENTRY_10dfa6c0"
 NativeRegCtor_FUN_10dfa6c0::NativeRegCtor_FUN_10dfa6c0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119373a8)};
+NativeRegStr_10dfa6c0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119373a8)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 111, 0, FactoryTree());
 }
 
 // Reference entry 10dfa790; body size 160 bytes.
 #line 1 "ENTRY_10dfa790"
 NativeRegCtor_FUN_10dfa790::NativeRegCtor_FUN_10dfa790() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937380)};
+NativeRegStr_10dfa790 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937380)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 110, 0, FactoryTree());
 }
 
 // Reference entry 10dfa860; body size 160 bytes.
 #line 1 "ENTRY_10dfa860"
 NativeRegCtor_FUN_10dfa860::NativeRegCtor_FUN_10dfa860() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937358)};
+NativeRegStr_10dfa860 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937358)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 109, 0, FactoryTree());
 }
 
 // Reference entry 10dfa930; body size 160 bytes.
 #line 1 "ENTRY_10dfa930"
 NativeRegCtor_FUN_10dfa930::NativeRegCtor_FUN_10dfa930() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937330)};
+NativeRegStr_10dfa930 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937330)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 108, 0, FactoryTree());
 }
 
 // Reference entry 10dfaa00; body size 160 bytes.
 #line 1 "ENTRY_10dfaa00"
 NativeRegCtor_FUN_10dfaa00::NativeRegCtor_FUN_10dfaa00() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119373d0)};
+NativeRegStr_10dfaa00 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119373d0)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 113, 0, FactoryTree());
 }
 
 // Reference entry 10dfab80; body size 160 bytes.
 #line 1 "ENTRY_10dfab80"
 NativeRegCtor_FUN_10dfab80::NativeRegCtor_FUN_10dfab80() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937094)};
+NativeRegStr_10dfab80 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937094)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 91, 0, FactoryTree());
 }
 
 // Reference entry 10dfac50; body size 160 bytes.
 #line 1 "ENTRY_10dfac50"
 NativeRegCtor_FUN_10dfac50::NativeRegCtor_FUN_10dfac50() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937064)};
+NativeRegStr_10dfac50 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937064)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 90, 0, FactoryTree());
 }
 
 // Reference entry 10dfadd0; body size 160 bytes.
 #line 1 "ENTRY_10dfadd0"
 NativeRegCtor_FUN_10dfadd0::NativeRegCtor_FUN_10dfadd0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119370ec)};
+NativeRegStr_10dfadd0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119370ec)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 93, 0, FactoryTree());
 }
 
 // Reference entry 10dfaea0; body size 160 bytes.
 #line 1 "ENTRY_10dfaea0"
 NativeRegCtor_FUN_10dfaea0::NativeRegCtor_FUN_10dfaea0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119370c0)};
+NativeRegStr_10dfaea0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119370c0)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 92, 0, FactoryTree());
 }
 
 // Reference entry 10dfb020; body size 160 bytes.
 #line 1 "ENTRY_10dfb020"
 NativeRegCtor_FUN_10dfb020::NativeRegCtor_FUN_10dfb020() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119372a4)};
+NativeRegStr_10dfb020 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119372a4)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 107, 0, FactoryTree());
 }
 
 // Reference entry 10dfb0f0; body size 160 bytes.
 #line 1 "ENTRY_10dfb0f0"
 NativeRegCtor_FUN_10dfb0f0::NativeRegCtor_FUN_10dfb0f0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119372c4)};
+NativeRegStr_10dfb0f0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119372c4)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 106, 0, FactoryTree());
 }
 
 // Reference entry 10dfb250; body size 160 bytes.
 #line 1 "ENTRY_10dfb250"
 NativeRegCtor_FUN_10dfb250::NativeRegCtor_FUN_10dfb250() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936fbc)};
+NativeRegStr_10dfb250 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936fbc)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 117, 0, FactoryTree());
 }
 
 // Reference entry 10dfb320; body size 160 bytes.
 #line 1 "ENTRY_10dfb320"
 NativeRegCtor_FUN_10dfb320::NativeRegCtor_FUN_10dfb320() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936ff0)};
+NativeRegStr_10dfb320 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936ff0)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 118, 0, FactoryTree());
 }
 
 // Reference entry 10dfb530; body size 160 bytes.
 #line 1 "ENTRY_10dfb530"
 NativeRegCtor_FUN_10dfb530::NativeRegCtor_FUN_10dfb530() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936e44)};
+NativeRegStr_10dfb530 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936e44)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 65, 0, FactoryTree());
 }
 
 // Reference entry 10dfb600; body size 160 bytes.
 #line 1 "ENTRY_10dfb600"
 NativeRegCtor_FUN_10dfb600::NativeRegCtor_FUN_10dfb600() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936e30)};
+NativeRegStr_10dfb600 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936e30)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 64, 0, FactoryTree());
 }
 
 // Reference entry 10dfbb10; body size 160 bytes.
 #line 1 "ENTRY_10dfbb10"
 NativeRegCtor_FUN_10dfbb10::NativeRegCtor_FUN_10dfbb10() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936904)};
+NativeRegStr_10dfbb10 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936904)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 14, 0, FactoryTree());
 }
 
 // Reference entry 10dfbbe0; body size 160 bytes.
 #line 1 "ENTRY_10dfbbe0"
 NativeRegCtor_FUN_10dfbbe0::NativeRegCtor_FUN_10dfbbe0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936914)};
+NativeRegStr_10dfbbe0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936914)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 15, 0, FactoryTree());
 }
 
 // Reference entry 10dfbcb0; body size 160 bytes.
 #line 1 "ENTRY_10dfbcb0"
 NativeRegCtor_FUN_10dfbcb0::NativeRegCtor_FUN_10dfbcb0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936ebc)};
+NativeRegStr_10dfbcb0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936ebc)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 79, 0, FactoryTree());
 }
 
 // Reference entry 10dfbd80; body size 160 bytes.
 #line 1 "ENTRY_10dfbd80"
 NativeRegCtor_FUN_10dfbd80::NativeRegCtor_FUN_10dfbd80() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936ed4)};
+NativeRegStr_10dfbd80 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936ed4)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 80, 0, FactoryTree());
 }
 
 // Reference entry 10dfbe50; body size 160 bytes.
 #line 1 "ENTRY_10dfbe50"
 NativeRegCtor_FUN_10dfbe50::NativeRegCtor_FUN_10dfbe50() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936a6c)};
+NativeRegStr_10dfbe50 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936a6c)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 32, 0, FactoryTree());
 }
 
 // Reference entry 10dfc370; body size 160 bytes.
 #line 1 "ENTRY_10dfc370"
 NativeRegCtor_FUN_10dfc370::NativeRegCtor_FUN_10dfc370() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936d5c)};
+NativeRegStr_10dfc370 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936d5c)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 73, 0, FactoryTree());
 }
 
 // Reference entry 10dfc440; body size 160 bytes.
 #line 1 "ENTRY_10dfc440"
 NativeRegCtor_FUN_10dfc440::NativeRegCtor_FUN_10dfc440() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936d84)};
+NativeRegStr_10dfc440 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936d84)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 74, 0, FactoryTree());
 }
 
 // Reference entry 10dfc510; body size 160 bytes.
 #line 1 "ENTRY_10dfc510"
 NativeRegCtor_FUN_10dfc510::NativeRegCtor_FUN_10dfc510() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936d08)};
+NativeRegStr_10dfc510 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936d08)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 87, 0, FactoryTree());
 }
 
 // Reference entry 10dfcdc0; body size 160 bytes.
 #line 1 "ENTRY_10dfcdc0"
 NativeRegCtor_FUN_10dfcdc0::NativeRegCtor_FUN_10dfcdc0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936e18)};
+NativeRegStr_10dfcdc0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936e18)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 58, 0, FactoryTree());
 }
 
 // Reference entry 10dfce90; body size 160 bytes.
 #line 1 "ENTRY_10dfce90"
 NativeRegCtor_FUN_10dfce90::NativeRegCtor_FUN_10dfce90() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936dfc)};
+NativeRegStr_10dfce90 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936dfc)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 60, 0, FactoryTree());
 }
 
 // Reference entry 10dfcf60; body size 160 bytes.
 #line 1 "ENTRY_10dfcf60"
 NativeRegCtor_FUN_10dfcf60::NativeRegCtor_FUN_10dfcf60() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936de0)};
+NativeRegStr_10dfcf60 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936de0)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 59, 0, FactoryTree());
 }
 
 // Reference entry 10dfd030; body size 160 bytes.
 #line 1 "ENTRY_10dfd030"
 NativeRegCtor_FUN_10dfd030::NativeRegCtor_FUN_10dfd030() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937010)};
+NativeRegStr_10dfd030 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937010)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 88, 0, FactoryTree());
 }
 
 // Reference entry 10dfd100; body size 160 bytes.
 #line 1 "ENTRY_10dfd100"
 NativeRegCtor_FUN_10dfd100::NativeRegCtor_FUN_10dfd100() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937040)};
+NativeRegStr_10dfd100 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11937040)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 89, 0, FactoryTree());
 }
 
 // Reference entry 10dfd2d0; body size 160 bytes.
 #line 1 "ENTRY_10dfd2d0"
 NativeRegCtor_FUN_10dfd2d0::NativeRegCtor_FUN_10dfd2d0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936c38)};
+NativeRegStr_10dfd2d0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936c38)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 46, 0, FactoryTree());
 }
 
 // Reference entry 10dfd3a0; body size 160 bytes.
 #line 1 "ENTRY_10dfd3a0"
 NativeRegCtor_FUN_10dfd3a0::NativeRegCtor_FUN_10dfd3a0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_1188d58c)};
+NativeRegStr_10dfd3a0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_1188d58c)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 2, 0, FactoryTree());
 }
 
 // Reference entry 10dfd470; body size 160 bytes.
 #line 1 "ENTRY_10dfd470"
 NativeRegCtor_FUN_10dfd470::NativeRegCtor_FUN_10dfd470() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936850)};
+NativeRegStr_10dfd470 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936850)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 3, 0, FactoryTree());
 }
 
 // Reference entry 10dfd540; body size 160 bytes.
 #line 1 "ENTRY_10dfd540"
 NativeRegCtor_FUN_10dfd540::NativeRegCtor_FUN_10dfd540() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936870)};
+NativeRegStr_10dfd540 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936870)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 5, 0, FactoryTree());
 }
 
 // Reference entry 10dfd610; body size 160 bytes.
 #line 1 "ENTRY_10dfd610"
 NativeRegCtor_FUN_10dfd610::NativeRegCtor_FUN_10dfd610() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936898)};
+NativeRegStr_10dfd610 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936898)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 7, 0, FactoryTree());
 }
 
 // Reference entry 10dfd6e0; body size 160 bytes.
 #line 1 "ENTRY_10dfd6e0"
 NativeRegCtor_FUN_10dfd6e0::NativeRegCtor_FUN_10dfd6e0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119368a8)};
+NativeRegStr_10dfd6e0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119368a8)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 8, 0, FactoryTree());
 }
 
 // Reference entry 10dfd8c0; body size 160 bytes.
 #line 1 "ENTRY_10dfd8c0"
 NativeRegCtor_FUN_10dfd8c0::NativeRegCtor_FUN_10dfd8c0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936b1c)};
+NativeRegStr_10dfd8c0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936b1c)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 43, 0, FactoryTree());
 }
 
 // Reference entry 10dfda60; body size 160 bytes.
 #line 1 "ENTRY_10dfda60"
 NativeRegCtor_FUN_10dfda60::NativeRegCtor_FUN_10dfda60() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119369ec)};
+NativeRegStr_10dfda60 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_119369ec)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 16, 0, FactoryTree());
 }
 
 // Reference entry 10dfdff0; body size 160 bytes.
 #line 1 "ENTRY_10dfdff0"
 NativeRegCtor_FUN_10dfdff0::NativeRegCtor_FUN_10dfdff0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936bd8)};
+NativeRegStr_10dfdff0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936bd8)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 57, 0, FactoryTree());
 }
 
 // Reference entry 10dfe0c0; body size 160 bytes.
 #line 1 "ENTRY_10dfe0c0"
 NativeRegCtor_FUN_10dfe0c0::NativeRegCtor_FUN_10dfe0c0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936bcc)};
+NativeRegStr_10dfe0c0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936bcc)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 56, 0, FactoryTree());
 }
 
 // Reference entry 10dfe190; body size 160 bytes.
 #line 1 "ENTRY_10dfe190"
 NativeRegCtor_FUN_10dfe190::NativeRegCtor_FUN_10dfe190() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936bbc)};
+NativeRegStr_10dfe190 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936bbc)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 55, 0, FactoryTree());
 }
 
 // Reference entry 10dfe3d0; body size 160 bytes.
 #line 1 "ENTRY_10dfe3d0"
 NativeRegCtor_FUN_10dfe3d0::NativeRegCtor_FUN_10dfe3d0() {
-NativeRegStr_thunk_FUN_1008c50b text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936c20)};
+NativeRegStr_10dfe3d0 text{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_11936c20)};
 ((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, 45, 0, FactoryTree());
 }

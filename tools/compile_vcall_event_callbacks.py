@@ -5,7 +5,7 @@ import json
 import re
 import struct
 
-from compile_event_factories import LIBRARY, emit_variant, auxiliary_bindings
+from compile_event_factories import LIBRARY, emit_variant, auxiliary_bindings, funclet_jump_target
 from compile_ghidra_cpp import ROOT
 from classify_functions import DLL, function_bytes, section_map
 from compare_compiled_ghidra import DISASSEMBLER
@@ -154,12 +154,21 @@ def main():
         library += f'virtual void *v{slot:x}();\n'
     library += ('};\n'
                 'struct NativeVcallM28 { virtual void *v0(); virtual void *v4(); virtual void *v8();\n'
-                'virtual void *vC(); virtual void *v10(); virtual void *v14(); virtual void v18(); };\n'
-                'struct NativeVcallPair { NativeVcallThis8 *rep; NativeVcallObj *next;\n'
-                '  __forceinline ~NativeVcallPair() noexcept {\n'
-                '    NativeVcallObj *t = next;\n'
-                '    if (t != 0) { rep = 0; next = 0; t->v8(); } }\n'
-                '  NativeVcallPair(); };\n')
+                'virtual void *vC(); virtual void *v10(); virtual void *v14(); virtual void v18(); };\n')
+    read = lambda va, size: function_bytes(reference, va, size, base, sections)
+    evidence = {r['entry']: r for r in map(json.loads, (ROOT/'analysis/eh-lifetime-evidence.jsonl').open())}
+    for r in candidates:
+        resolved = funclet_jump_target(int(evidence[r['entry']]['metadata']['address'], 16), 0, read)
+        if resolved is None:
+            raise SystemExit(f'No pair-destructor funclet for {r["entry"]}')
+        r['pair_class'] = f'NativeVcallPair_{resolved[0]:08x}'
+        r['source'] = r['source'].replace('NativeVcallPair', r['pair_class'])
+    for pair in sorted({r['pair_class'] for r in candidates}):
+        library += (f'struct {pair} {{ NativeVcallThis8 *rep; NativeVcallObj *next;\n'
+                    f'  __forceinline ~{pair}() noexcept {{\n'
+                    f'    NativeVcallObj *t = next;\n'
+                    f'    if (t != 0) {{ rep = 0; next = 0; t->v8(); }} }}\n'
+                    f'  {pair}(); }};\n')
     for r in candidates:
         klass = r['vclass']
         library += (f'struct {klass} {{\n'
@@ -169,8 +178,7 @@ def main():
                     f'NativeVcallM28 m28;\n'
                     f'void FUN_{r["entry"]}(unsigned int param_2, unsigned int param_3);\n}};\n')
     candidates = [{**r, 'abi_declarations': {'vcall_library': library}} for r in candidates]
-    evidence = {r['entry']: r for r in map(json.loads, (ROOT/'analysis/eh-lifetime-evidence.jsonl').open())}
-    roles = [('??1NativeVcallPair@@QAE@XZ', r['entry'], 0) for r in candidates]
+    roles = [(f'??1{r["pair_class"]}@@QAE@XZ', r['entry'], 0) for r in candidates]
     emit_variant('vcall_event_callbacks', candidates, evidence, roles)
 
 

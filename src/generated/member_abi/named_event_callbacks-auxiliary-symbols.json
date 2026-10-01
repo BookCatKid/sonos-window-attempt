@@ -21,25 +21,11 @@
     "body_entry": "107ec170"
   },
   {
-    "symbol": "??1RecoveredString_FUN_1008c50b@@QAE@XZ",
-    "owner_entry": "10e03750",
-    "state": 1,
-    "call_target": "1008c50b",
-    "body_entry": "101201c0"
-  },
-  {
     "symbol": "??1NativeNamedEvent_FUN_10df9d60@@QAE@XZ",
     "owner_entry": "10e039c0",
     "state": 0,
     "call_target": "10011f81",
     "body_entry": "107ec1b0"
-  },
-  {
-    "symbol": "??1RecoveredString_FUN_1008c50b@@QAE@XZ",
-    "owner_entry": "10e039c0",
-    "state": 1,
-    "call_target": "1008c50b",
-    "body_entry": "101201c0"
   },
   {
     "symbol": "??1NativeNamedEvent_FUN_10df9fb0@@QAE@XZ",
@@ -49,25 +35,11 @@
     "body_entry": "108a22e0"
   },
   {
-    "symbol": "??1RecoveredString_FUN_1008c50b@@QAE@XZ",
-    "owner_entry": "10e03a80",
-    "state": 1,
-    "call_target": "1008c50b",
-    "body_entry": "101201c0"
-  },
-  {
     "symbol": "??1NativeNamedEvent_FUN_10dfa2d0@@QAE@XZ",
     "owner_entry": "10e05a20",
     "state": 0,
     "call_target": "10048ae5",
     "body_entry": "108a2320"
-  },
-  {
-    "symbol": "??1RecoveredString_FUN_1008c50b@@QAE@XZ",
-    "owner_entry": "10e05a20",
-    "state": 1,
-    "call_target": "1008c50b",
-    "body_entry": "101201c0"
   },
   {
     "symbol": "??1NativeNamedEvent_FUN_10dfa3a0@@QAE@XZ",
@@ -77,25 +49,11 @@
     "body_entry": "108a2330"
   },
   {
-    "symbol": "??1RecoveredString_FUN_1008c50b@@QAE@XZ",
-    "owner_entry": "10e05ae0",
-    "state": 1,
-    "call_target": "1008c50b",
-    "body_entry": "101201c0"
-  },
-  {
     "symbol": "??1NativeNamedEvent_FUN_10df9690@@QAE@XZ",
     "owner_entry": "10e05ba0",
     "state": 0,
     "call_target": "10066f59",
     "body_entry": "10dff000"
-  },
-  {
-    "symbol": "??1RecoveredString_FUN_1008c50b@@QAE@XZ",
-    "owner_entry": "10e05ba0",
-    "state": 1,
-    "call_target": "1008c50b",
-    "body_entry": "101201c0"
   },
   {
     "symbol": "??1NativeNamedEvent_FUN_10dfa520@@QAE@XZ",
@@ -105,25 +63,11 @@
     "body_entry": "107ec1d0"
   },
   {
-    "symbol": "??1RecoveredString_FUN_1008c50b@@QAE@XZ",
-    "owner_entry": "10e05cd0",
-    "state": 1,
-    "call_target": "1008c50b",
-    "body_entry": "101201c0"
-  },
-  {
     "symbol": "??1NativeNamedEvent_FUN_10dfb020@@QAE@XZ",
     "owner_entry": "10e06260",
     "state": 0,
     "call_target": "1003c038",
     "body_entry": "1062cc50"
-  },
-  {
-    "symbol": "??1RecoveredString_FUN_1008c50b@@QAE@XZ",
-    "owner_entry": "10e06260",
-    "state": 1,
-    "call_target": "1008c50b",
-    "body_entry": "101201c0"
   },
   {
     "symbol": "??1NativeNamedEvent_FUN_10dfab80@@QAE@XZ",
@@ -133,24 +77,10 @@
     "body_entry": "107ec220"
   },
   {
-    "symbol": "??1RecoveredString_FUN_1008c50b@@QAE@XZ",
-    "owner_entry": "10e06480",
-    "state": 1,
-    "call_target": "1008c50b",
-    "body_entry": "101201c0"
-  },
-  {
     "symbol": "??1NativeNamedEvent_FUN_10dfadd0@@QAE@XZ",
     "owner_entry": "10e065b0",
     "state": 0,
     "call_target": "10047014",
     "body_entry": "107ec240"
-  },
-  {
-    "symbol": "??1RecoveredString_FUN_1008c50b@@QAE@XZ",
-    "owner_entry": "10e065b0",
-    "state": 1,
-    "call_target": "1008c50b",
-    "body_entry": "101201c0"
   }
 ]

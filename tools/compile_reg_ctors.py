@@ -136,12 +136,14 @@ def lower(record, reference, base, sections):
     if count(instructions, 'add', 'esp, 4') != 1:
         return None
     klass = 'NativeRegCtor_FUN_' + entry
+    string = f'NativeRegStr_{entry}'
     source = (
         f'{klass}::{klass}() {{\n'
-        f'NativeRegStr_thunk_FUN_1008c50b text{{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_{name_va:08x})}};\n'
+        f'{string} text{{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_{name_va:08x})}};\n'
         f'((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, {imm}, 0, FactoryTree());\n'
         f'}}\n')
-    return {**record, 'source': source, 'vclass': klass, 'name_va': name_va}
+    return {**record, 'source': source, 'vclass': klass, 'string_class': string,
+            'name_va': name_va}
 
 
 def main():
@@ -167,20 +169,19 @@ def main():
                 candidates.append(candidate)
     if not candidates:
         raise SystemExit('No registration constructor accepted')
-    library = (LIBRARY +
-               'struct NativeRegStr_thunk_FUN_1008c50b {\n'
-               '  unsigned int rep;\n'
-               '  __forceinline NativeRegStr_thunk_FUN_1008c50b(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }\n'
-               '  ~NativeRegStr_thunk_FUN_1008c50b() noexcept { ((SCStr *)this)->int_release(); }\n'
-               '};\n')
+    library = LIBRARY
     for va in sorted({r['name_va'] for r in candidates}):
         library += f'extern unsigned int DAT_{va:08x};\n'
     for r in candidates:
         klass = r['vclass']
-        library += f'struct {klass} {{ {klass}(); }};\n'
+        string = r['string_class']
+        library += (f'struct {string} {{ unsigned int rep;\n'
+                    f'  __forceinline {string}(const char *text) {{ ((SCStr *)this)->int_allocRep((char *)text); }}\n'
+                    f'  ~{string}() noexcept {{ ((SCStr *)this)->int_release(); rep = 0; }} }};\n'
+                    f'struct {klass} {{ {klass}(); }};\n')
     candidates = [{**r, 'abi_declarations': {'reg_ctor_library': library}} for r in candidates]
     evidence = {r['entry']: r for r in map(json.loads, (ROOT/'analysis/eh-lifetime-evidence.jsonl').open())}
-    roles = [('??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ', r['entry'], 0) for r in candidates]
+    roles = [(f'??1{r["string_class"]}@@QAE@XZ', r['entry'], 0) for r in candidates]
     emit_variant('reg_ctors', candidates, evidence, roles)
 
 

@@ -123,14 +123,13 @@ class OpImplCtorTests(unittest.TestCase):
         source = candidate['source']
         self.assertIn('NativeOpImpl_FUN_10687e80::NativeOpImpl_FUN_10687e80(void *param_2)',
                       source)
-        self.assertIn('m8.vptr = (void *)&DAT_1188206c;', source)
+        self.assertIn('m8.vptr = (void *)&DAT_118c634c;', source)
         self.assertIn('v0 = (void *)&DAT_118c6304;', source)
-        self.assertIn('fc.rep = 0; fc.next = 0;', source)
-        self.assertIn('m14.f4 = param_2;', source)
-        self.assertIn('thunk_FUN_1123fce0((char *)param_2 + 4);', source)
+        self.assertIn(': m14(param_2) {', source)
+        self.assertIn('m14.vptr = (void *)&DAT_118c62f8;', source)
         self.assertIn('f24 = 1000;', source)
         self.assertIn('g_lSCObjCount++;', source)
-        self.assertIn('f38.d = 0.0; f38.w.hi = 0;', source)
+        self.assertIn('f38.q = 0; f38.w.hi = 0;', source)
         self.assertEqual(candidate['base_vtable'], '11882180')
         self.assertNotIn('DAT_118f1d34', source)
 
