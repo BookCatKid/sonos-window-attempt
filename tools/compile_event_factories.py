@@ -218,7 +218,7 @@ def emit_variant(name,candidates,evidence,roles=None):
     if result.returncode:raise SystemExit(result.stdout+result.stderr)
     index=directory/'compiled-index.tsv'
     with index.open('w',newline='') as file:
-        w=csv.writer(file,delimiter='\t');w.writerow(['entry','name','reference_body_bytes']);w.writerows((r['entry'],r['name'],r['body_bytes']) for r in candidates)
+        w=csv.writer(file,delimiter='\t',lineterminator='\n');w.writerow(['entry','name','reference_body_bytes']);w.writerows((r['entry'],r['name'],r['body_bytes']) for r in candidates)
     inventory=[{'entry':r['entry'],'reference_handler':evidence[r['entry']]['handler'],
         'reference_metadata':evidence[r['entry']]['metadata']['address'],'reference_state_count':evidence[r['entry']]['metadata']['state_count']}
         for r in candidates if r['entry'] in evidence and evidence[r['entry']].get('handler')]

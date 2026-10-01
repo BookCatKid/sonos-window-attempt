@@ -566,6 +566,9 @@ their stack homes for later keys. Native indirect-call slots and RET cleanup
 must agree with the recovered parameter sequence before a candidate is emitted.
 All candidates compile locally with Clang. Forty-nine tooling tests pass,
 including rejection of incorrect slots, cleanup sizes, and forwarded arguments.
+Generated indexes now use LF line endings and pass `git diff --check`.
+The attempted CodeRabbit review failed to connect to its service; no review
+result is claimed for this batch.
 
 These are experimental candidates, excluded from the authoritative default
 manifest. GitHub and its API time out during this continuation, preventing the
