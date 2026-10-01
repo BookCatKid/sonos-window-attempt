@@ -1,0 +1,30 @@
+[
+  {
+    "symbol": "??1NativeConditionalEvent_10e04320_0@@QAE@XZ",
+    "owner_entry": "10e04320",
+    "state": 5,
+    "call_target": "100022e3",
+    "body_entry": "10dff200"
+  },
+  {
+    "symbol": "??1NativeConditionalEvent_10e04320_1@@QAE@XZ",
+    "owner_entry": "10e04320",
+    "state": 2,
+    "call_target": "10069c63",
+    "body_entry": "10dff1f0"
+  },
+  {
+    "symbol": "??1NativeConditionalEvent_10e044d0_0@@QAE@XZ",
+    "owner_entry": "10e044d0",
+    "state": 5,
+    "call_target": "1003ae0e",
+    "body_entry": "10dfed40"
+  },
+  {
+    "symbol": "??1NativeConditionalEvent_10e044d0_1@@QAE@XZ",
+    "owner_entry": "10e044d0",
+    "state": 2,
+    "call_target": "10053c47",
+    "body_entry": "10dfed30"
+  }
+]

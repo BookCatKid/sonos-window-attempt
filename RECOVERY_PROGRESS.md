@@ -638,3 +638,13 @@ forced tree home loses its three-byte store and does not fix frame allocation.
 The next pinned probes retain volatile key writes while making the outgoing-tree
 home a normally typed pointer or union, written through a volatile-qualified
 lvalue, to test whether MSVC can then reuse its stack slot for the first key.
+
+Run 36799879656 rejects both normally typed home variants as well: all fourteen
+lengths and relocations match, but the same frame-offset differences remain.
+No probe from this continuation increases authoritative coverage. To advance
+an independent family, `tools/compile_conditional_event_callbacks.py` emits
+two boolean dispatch callbacks (662 candidate bytes), each with distinct
+derived events for its two branches. Native byte comparison and four-byte
+RET cleanup establish the boolean argument; native unwind states establish
+separate destructor identities. These candidates also require full pinned
+body/relocation/EH proofs before admission.

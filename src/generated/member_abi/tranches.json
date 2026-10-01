@@ -238,5 +238,9 @@
   {
     "object": "property_callbacks_volatile_union_home_reference_flags",
     "directory": "analysis/compiled-cpp-property-callbacks-volatile-union-home"
+  },
+  {
+    "object": "conditional_event_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-conditional-event-callbacks"
   }
 ]
