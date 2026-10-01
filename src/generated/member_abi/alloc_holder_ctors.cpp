@@ -130,93 +130,180 @@ static_assert(sizeof(FactoryTree)==8,"Two-word outgoing container");
 static_assert(sizeof(FactoryTreeNode)==28,"Sentinel node");
 static_assert(sizeof(Event_thunk_FUN_10def0d0)==24,"Event value");
 void *operator_new(unsigned int);
-struct NativeAllocBase_thunk_FUN_1027f780 { void *f0; ~NativeAllocBase_thunk_FUN_1027f780(); };
-struct NativeAllocBase_thunk_FUN_10683f60 { void *f0; ~NativeAllocBase_thunk_FUN_10683f60(); };
-struct NativeAllocBase_thunk_FUN_10683f80 { void *f0; ~NativeAllocBase_thunk_FUN_10683f80(); };
-struct NativeAllocBase_thunk_FUN_106b3630 { void *f0; ~NativeAllocBase_thunk_FUN_106b3630(); };
-struct NativeAllocBase_thunk_FUN_106b3650 { void *f0; ~NativeAllocBase_thunk_FUN_106b3650(); };
-struct NativeAllocBase_thunk_FUN_106d2b10 { void *f0; ~NativeAllocBase_thunk_FUN_106d2b10(); };
-struct NativeAllocBase_thunk_FUN_106da2e0 { void *f0; ~NativeAllocBase_thunk_FUN_106da2e0(); };
-struct NativeAllocBase_thunk_FUN_106da300 { void *f0; ~NativeAllocBase_thunk_FUN_106da300(); };
-struct NativeAllocBase_thunk_FUN_106de510 { void *f0; ~NativeAllocBase_thunk_FUN_106de510(); };
-struct NativeAllocBase_thunk_FUN_106de530 { void *f0; ~NativeAllocBase_thunk_FUN_106de530(); };
-struct NativeAllocBase_thunk_FUN_106e4f80 { void *f0; ~NativeAllocBase_thunk_FUN_106e4f80(); };
-struct NativeAllocBase_thunk_FUN_1072ae00 { void *f0; ~NativeAllocBase_thunk_FUN_1072ae00(); };
-struct NativeAllocBase_thunk_FUN_1082b4a0 { void *f0; ~NativeAllocBase_thunk_FUN_1082b4a0(); };
-struct NativeAllocBase_thunk_FUN_109901d0 { void *f0; ~NativeAllocBase_thunk_FUN_109901d0(); };
-struct NativeAllocBase_thunk_FUN_10af6910 { void *f0; ~NativeAllocBase_thunk_FUN_10af6910(); };
-struct NativeAllocBase_thunk_FUN_10af6930 { void *f0; ~NativeAllocBase_thunk_FUN_10af6930(); };
-struct NativeAllocBase_thunk_FUN_10b04d80 { void *f0; ~NativeAllocBase_thunk_FUN_10b04d80(); };
-struct NativeAllocBase_thunk_FUN_10b5da30 { void *f0; ~NativeAllocBase_thunk_FUN_10b5da30(); };
-struct NativeAllocBase_thunk_FUN_10ba6c30 { void *f0; ~NativeAllocBase_thunk_FUN_10ba6c30(); };
-struct NativeAllocBase_thunk_FUN_10ba6c50 { void *f0; ~NativeAllocBase_thunk_FUN_10ba6c50(); };
-struct NativeAllocBase_thunk_FUN_10bb58d0 { void *f0; ~NativeAllocBase_thunk_FUN_10bb58d0(); };
-struct NativeAllocBase_thunk_FUN_10bc0390 { void *f0; ~NativeAllocBase_thunk_FUN_10bc0390(); };
-struct NativeAllocBase_thunk_FUN_10bd6260 { void *f0; ~NativeAllocBase_thunk_FUN_10bd6260(); };
-struct NativeAllocBase_thunk_FUN_10bd6280 { void *f0; ~NativeAllocBase_thunk_FUN_10bd6280(); };
-struct NativeAllocBase_thunk_FUN_10bd62a0 { void *f0; ~NativeAllocBase_thunk_FUN_10bd62a0(); };
-struct NativeAllocBase_thunk_FUN_10bd62c0 { void *f0; ~NativeAllocBase_thunk_FUN_10bd62c0(); };
-struct NativeAllocBase_thunk_FUN_10bd62e0 { void *f0; ~NativeAllocBase_thunk_FUN_10bd62e0(); };
-struct NativeAllocBase_thunk_FUN_10bd6300 { void *f0; ~NativeAllocBase_thunk_FUN_10bd6300(); };
-struct NativeAllocBase_thunk_FUN_10bd6320 { void *f0; ~NativeAllocBase_thunk_FUN_10bd6320(); };
-struct NativeAllocBase_thunk_FUN_10bd6340 { void *f0; ~NativeAllocBase_thunk_FUN_10bd6340(); };
-struct NativeAllocBase_thunk_FUN_10bd6360 { void *f0; ~NativeAllocBase_thunk_FUN_10bd6360(); };
-struct NativeAllocBase_thunk_FUN_10c5f930 { void *f0; ~NativeAllocBase_thunk_FUN_10c5f930(); };
-struct NativeAllocBase_thunk_FUN_10cb9340 { void *f0; ~NativeAllocBase_thunk_FUN_10cb9340(); };
-struct NativeAllocBase_thunk_FUN_10d27420 { void *f0; ~NativeAllocBase_thunk_FUN_10d27420(); };
-struct NativeAllocBase_thunk_FUN_10d69760 { void *f0; ~NativeAllocBase_thunk_FUN_10d69760(); };
-struct NativeAllocBase_thunk_FUN_10d9f950 { void *f0; ~NativeAllocBase_thunk_FUN_10d9f950(); };
-struct NativeAllocBase_thunk_FUN_10db3250 { void *f0; ~NativeAllocBase_thunk_FUN_10db3250(); };
-struct NativeAllocBase_thunk_FUN_10db3270 { void *f0; ~NativeAllocBase_thunk_FUN_10db3270(); };
-struct NativeAllocBase_thunk_FUN_10dd7ec0 { void *f0; ~NativeAllocBase_thunk_FUN_10dd7ec0(); };
-struct NativeAllocBase_thunk_FUN_10dd7ee0 { void *f0; ~NativeAllocBase_thunk_FUN_10dd7ee0(); };
-struct NativeAllocBase_thunk_FUN_10deef50 { void *f0; ~NativeAllocBase_thunk_FUN_10deef50(); };
-struct NativeAllocBase_thunk_FUN_10deef70 { void *f0; ~NativeAllocBase_thunk_FUN_10deef70(); };
-struct NativeAllocBase_thunk_FUN_10e0c410 { void *f0; ~NativeAllocBase_thunk_FUN_10e0c410(); };
-struct NativeAllocBase_thunk_FUN_10e0c430 { void *f0; ~NativeAllocBase_thunk_FUN_10e0c430(); };
-struct NativeAllocBase_thunk_FUN_10e5e300 { void *f0; ~NativeAllocBase_thunk_FUN_10e5e300(); };
-struct NativeAllocBase_thunk_FUN_10eab2a0 { void *f0; ~NativeAllocBase_thunk_FUN_10eab2a0(); };
-struct NativeAllocBase_thunk_FUN_10eb66d0 { void *f0; ~NativeAllocBase_thunk_FUN_10eb66d0(); };
-struct NativeAllocBase_thunk_FUN_10eb66f0 { void *f0; ~NativeAllocBase_thunk_FUN_10eb66f0(); };
-struct NativeAllocBase_thunk_FUN_10eb6710 { void *f0; ~NativeAllocBase_thunk_FUN_10eb6710(); };
-struct NativeAllocBase_thunk_FUN_10ed0c50 { void *f0; ~NativeAllocBase_thunk_FUN_10ed0c50(); };
-struct NativeAllocBase_thunk_FUN_10eedbb0 { void *f0; ~NativeAllocBase_thunk_FUN_10eedbb0(); };
-struct NativeAllocBase_thunk_FUN_10eef240 { void *f0; ~NativeAllocBase_thunk_FUN_10eef240(); };
-struct NativeAllocBase_thunk_FUN_10ef5120 { void *f0; ~NativeAllocBase_thunk_FUN_10ef5120(); };
-struct NativeAllocBase_thunk_FUN_10ef9de0 { void *f0; ~NativeAllocBase_thunk_FUN_10ef9de0(); };
-struct NativeAllocBase_thunk_FUN_10f02dd0 { void *f0; ~NativeAllocBase_thunk_FUN_10f02dd0(); };
-struct NativeAllocBase_thunk_FUN_10f174e0 { void *f0; ~NativeAllocBase_thunk_FUN_10f174e0(); };
-struct NativeAllocBase_thunk_FUN_10f1c470 { void *f0; ~NativeAllocBase_thunk_FUN_10f1c470(); };
-struct NativeAllocBase_thunk_FUN_10f1c490 { void *f0; ~NativeAllocBase_thunk_FUN_10f1c490(); };
-struct NativeAllocBase_thunk_FUN_10f1c4b0 { void *f0; ~NativeAllocBase_thunk_FUN_10f1c4b0(); };
-struct NativeAllocBase_thunk_FUN_10f25b40 { void *f0; ~NativeAllocBase_thunk_FUN_10f25b40(); };
-struct NativeAllocBase_thunk_FUN_10f38170 { void *f0; ~NativeAllocBase_thunk_FUN_10f38170(); };
-struct NativeAllocBase_thunk_FUN_10f38190 { void *f0; ~NativeAllocBase_thunk_FUN_10f38190(); };
-struct NativeAllocBase_thunk_FUN_10f6bc80 { void *f0; ~NativeAllocBase_thunk_FUN_10f6bc80(); };
-struct NativeAllocBase_thunk_FUN_10f7db60 { void *f0; ~NativeAllocBase_thunk_FUN_10f7db60(); };
-struct NativeAllocBase_thunk_FUN_10f9b030 { void *f0; ~NativeAllocBase_thunk_FUN_10f9b030(); };
-struct NativeAllocBase_thunk_FUN_10f9b050 { void *f0; ~NativeAllocBase_thunk_FUN_10f9b050(); };
-struct NativeAllocBase_thunk_FUN_10fc1d60 { void *f0; ~NativeAllocBase_thunk_FUN_10fc1d60(); };
-struct NativeAllocBase_thunk_FUN_10fed720 { void *f0; ~NativeAllocBase_thunk_FUN_10fed720(); };
-struct NativeAllocBase_thunk_FUN_11027110 { void *f0; ~NativeAllocBase_thunk_FUN_11027110(); };
-struct NativeAllocBase_thunk_FUN_11078bc0 { void *f0; ~NativeAllocBase_thunk_FUN_11078bc0(); };
-struct NativeAllocBase_thunk_FUN_11078be0 { void *f0; ~NativeAllocBase_thunk_FUN_11078be0(); };
-struct NativeAllocBase_thunk_FUN_11078c00 { void *f0; ~NativeAllocBase_thunk_FUN_11078c00(); };
-struct NativeAllocBase_thunk_FUN_11078c20 { void *f0; ~NativeAllocBase_thunk_FUN_11078c20(); };
-struct NativeAllocBase_thunk_FUN_110991c0 { void *f0; ~NativeAllocBase_thunk_FUN_110991c0(); };
-struct NativeAllocBase_thunk_FUN_110c79f0 { void *f0; ~NativeAllocBase_thunk_FUN_110c79f0(); };
-struct NativeAllocBase_thunk_FUN_110f0440 { void *f0; ~NativeAllocBase_thunk_FUN_110f0440(); };
-struct NativeAllocBase_thunk_FUN_1110b2f0 { void *f0; ~NativeAllocBase_thunk_FUN_1110b2f0(); };
-struct NativeAllocBase_thunk_FUN_1117fa40 { void *f0; ~NativeAllocBase_thunk_FUN_1117fa40(); };
-struct NativeAllocBase_thunk_FUN_1117fa60 { void *f0; ~NativeAllocBase_thunk_FUN_1117fa60(); };
-struct NativeAllocBase_thunk_FUN_1117fa80 { void *f0; ~NativeAllocBase_thunk_FUN_1117fa80(); };
-struct NativeAllocBase_thunk_FUN_1117faa0 { void *f0; ~NativeAllocBase_thunk_FUN_1117faa0(); };
-struct NativeAllocBase_thunk_FUN_1117fac0 { void *f0; ~NativeAllocBase_thunk_FUN_1117fac0(); };
-struct NativeAllocBase_thunk_FUN_1118dcc0 { void *f0; ~NativeAllocBase_thunk_FUN_1118dcc0(); };
-struct NativeAllocBase_thunk_FUN_111c3960 { void *f0; ~NativeAllocBase_thunk_FUN_111c3960(); };
-struct NativeAllocBase_thunk_FUN_111d2f20 { void *f0; ~NativeAllocBase_thunk_FUN_111d2f20(); };
-struct NativeAllocBase_thunk_FUN_1126e270 { void *f0; ~NativeAllocBase_thunk_FUN_1126e270(); };
-struct NativeAllocBase_thunk_FUN_11294ae0 { void *f0; ~NativeAllocBase_thunk_FUN_11294ae0(); };
+struct NativeAllocBase_thunk_FUN_1027f780 { void *f0; ~NativeAllocBase_thunk_FUN_1027f780();
+__forceinline NativeAllocBase_thunk_FUN_1027f780(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10683f60 { void *f0; ~NativeAllocBase_thunk_FUN_10683f60();
+__forceinline NativeAllocBase_thunk_FUN_10683f60(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10683f80 { void *f0; ~NativeAllocBase_thunk_FUN_10683f80();
+__forceinline NativeAllocBase_thunk_FUN_10683f80(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_106b3630 { void *f0; ~NativeAllocBase_thunk_FUN_106b3630();
+__forceinline NativeAllocBase_thunk_FUN_106b3630(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_106b3650 { void *f0; ~NativeAllocBase_thunk_FUN_106b3650();
+__forceinline NativeAllocBase_thunk_FUN_106b3650(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_106d2b10 { void *f0; ~NativeAllocBase_thunk_FUN_106d2b10();
+__forceinline NativeAllocBase_thunk_FUN_106d2b10(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_106da2e0 { void *f0; ~NativeAllocBase_thunk_FUN_106da2e0();
+__forceinline NativeAllocBase_thunk_FUN_106da2e0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_106da300 { void *f0; ~NativeAllocBase_thunk_FUN_106da300();
+__forceinline NativeAllocBase_thunk_FUN_106da300(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_106de510 { void *f0; ~NativeAllocBase_thunk_FUN_106de510();
+__forceinline NativeAllocBase_thunk_FUN_106de510(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_106de530 { void *f0; ~NativeAllocBase_thunk_FUN_106de530();
+__forceinline NativeAllocBase_thunk_FUN_106de530(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_106e4f80 { void *f0; ~NativeAllocBase_thunk_FUN_106e4f80();
+__forceinline NativeAllocBase_thunk_FUN_106e4f80(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_1072ae00 { void *f0; ~NativeAllocBase_thunk_FUN_1072ae00();
+__forceinline NativeAllocBase_thunk_FUN_1072ae00(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_1082b4a0 { void *f0; ~NativeAllocBase_thunk_FUN_1082b4a0();
+__forceinline NativeAllocBase_thunk_FUN_1082b4a0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_109901d0 { void *f0; ~NativeAllocBase_thunk_FUN_109901d0();
+__forceinline NativeAllocBase_thunk_FUN_109901d0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10af6910 { void *f0; ~NativeAllocBase_thunk_FUN_10af6910();
+__forceinline NativeAllocBase_thunk_FUN_10af6910(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10af6930 { void *f0; ~NativeAllocBase_thunk_FUN_10af6930();
+__forceinline NativeAllocBase_thunk_FUN_10af6930(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10b04d80 { void *f0; ~NativeAllocBase_thunk_FUN_10b04d80();
+__forceinline NativeAllocBase_thunk_FUN_10b04d80(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10b5da30 { void *f0; ~NativeAllocBase_thunk_FUN_10b5da30();
+__forceinline NativeAllocBase_thunk_FUN_10b5da30(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10ba6c30 { void *f0; ~NativeAllocBase_thunk_FUN_10ba6c30();
+__forceinline NativeAllocBase_thunk_FUN_10ba6c30(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10ba6c50 { void *f0; ~NativeAllocBase_thunk_FUN_10ba6c50();
+__forceinline NativeAllocBase_thunk_FUN_10ba6c50(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10bb58d0 { void *f0; ~NativeAllocBase_thunk_FUN_10bb58d0();
+__forceinline NativeAllocBase_thunk_FUN_10bb58d0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10bc0390 { void *f0; ~NativeAllocBase_thunk_FUN_10bc0390();
+__forceinline NativeAllocBase_thunk_FUN_10bc0390(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10bd6260 { void *f0; ~NativeAllocBase_thunk_FUN_10bd6260();
+__forceinline NativeAllocBase_thunk_FUN_10bd6260(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10bd6280 { void *f0; ~NativeAllocBase_thunk_FUN_10bd6280();
+__forceinline NativeAllocBase_thunk_FUN_10bd6280(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10bd62a0 { void *f0; ~NativeAllocBase_thunk_FUN_10bd62a0();
+__forceinline NativeAllocBase_thunk_FUN_10bd62a0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10bd62c0 { void *f0; ~NativeAllocBase_thunk_FUN_10bd62c0();
+__forceinline NativeAllocBase_thunk_FUN_10bd62c0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10bd62e0 { void *f0; ~NativeAllocBase_thunk_FUN_10bd62e0();
+__forceinline NativeAllocBase_thunk_FUN_10bd62e0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10bd6300 { void *f0; ~NativeAllocBase_thunk_FUN_10bd6300();
+__forceinline NativeAllocBase_thunk_FUN_10bd6300(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10bd6320 { void *f0; ~NativeAllocBase_thunk_FUN_10bd6320();
+__forceinline NativeAllocBase_thunk_FUN_10bd6320(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10bd6340 { void *f0; ~NativeAllocBase_thunk_FUN_10bd6340();
+__forceinline NativeAllocBase_thunk_FUN_10bd6340(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10bd6360 { void *f0; ~NativeAllocBase_thunk_FUN_10bd6360();
+__forceinline NativeAllocBase_thunk_FUN_10bd6360(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10c5f930 { void *f0; ~NativeAllocBase_thunk_FUN_10c5f930();
+__forceinline NativeAllocBase_thunk_FUN_10c5f930(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10cb9340 { void *f0; ~NativeAllocBase_thunk_FUN_10cb9340();
+__forceinline NativeAllocBase_thunk_FUN_10cb9340(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10d27420 { void *f0; ~NativeAllocBase_thunk_FUN_10d27420();
+__forceinline NativeAllocBase_thunk_FUN_10d27420(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10d69760 { void *f0; ~NativeAllocBase_thunk_FUN_10d69760();
+__forceinline NativeAllocBase_thunk_FUN_10d69760(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10d9f950 { void *f0; ~NativeAllocBase_thunk_FUN_10d9f950();
+__forceinline NativeAllocBase_thunk_FUN_10d9f950(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10db3250 { void *f0; ~NativeAllocBase_thunk_FUN_10db3250();
+__forceinline NativeAllocBase_thunk_FUN_10db3250(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10db3270 { void *f0; ~NativeAllocBase_thunk_FUN_10db3270();
+__forceinline NativeAllocBase_thunk_FUN_10db3270(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10dd7ec0 { void *f0; ~NativeAllocBase_thunk_FUN_10dd7ec0();
+__forceinline NativeAllocBase_thunk_FUN_10dd7ec0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10dd7ee0 { void *f0; ~NativeAllocBase_thunk_FUN_10dd7ee0();
+__forceinline NativeAllocBase_thunk_FUN_10dd7ee0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10deef50 { void *f0; ~NativeAllocBase_thunk_FUN_10deef50();
+__forceinline NativeAllocBase_thunk_FUN_10deef50(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10deef70 { void *f0; ~NativeAllocBase_thunk_FUN_10deef70();
+__forceinline NativeAllocBase_thunk_FUN_10deef70(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10e0c410 { void *f0; ~NativeAllocBase_thunk_FUN_10e0c410();
+__forceinline NativeAllocBase_thunk_FUN_10e0c410(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10e0c430 { void *f0; ~NativeAllocBase_thunk_FUN_10e0c430();
+__forceinline NativeAllocBase_thunk_FUN_10e0c430(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10e5e300 { void *f0; ~NativeAllocBase_thunk_FUN_10e5e300();
+__forceinline NativeAllocBase_thunk_FUN_10e5e300(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10eab2a0 { void *f0; ~NativeAllocBase_thunk_FUN_10eab2a0();
+__forceinline NativeAllocBase_thunk_FUN_10eab2a0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10eb66d0 { void *f0; ~NativeAllocBase_thunk_FUN_10eb66d0();
+__forceinline NativeAllocBase_thunk_FUN_10eb66d0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10eb66f0 { void *f0; ~NativeAllocBase_thunk_FUN_10eb66f0();
+__forceinline NativeAllocBase_thunk_FUN_10eb66f0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10eb6710 { void *f0; ~NativeAllocBase_thunk_FUN_10eb6710();
+__forceinline NativeAllocBase_thunk_FUN_10eb6710(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10ed0c50 { void *f0; ~NativeAllocBase_thunk_FUN_10ed0c50();
+__forceinline NativeAllocBase_thunk_FUN_10ed0c50(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10eedbb0 { void *f0; ~NativeAllocBase_thunk_FUN_10eedbb0();
+__forceinline NativeAllocBase_thunk_FUN_10eedbb0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10eef240 { void *f0; ~NativeAllocBase_thunk_FUN_10eef240();
+__forceinline NativeAllocBase_thunk_FUN_10eef240(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10ef5120 { void *f0; ~NativeAllocBase_thunk_FUN_10ef5120();
+__forceinline NativeAllocBase_thunk_FUN_10ef5120(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10ef9de0 { void *f0; ~NativeAllocBase_thunk_FUN_10ef9de0();
+__forceinline NativeAllocBase_thunk_FUN_10ef9de0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10f02dd0 { void *f0; ~NativeAllocBase_thunk_FUN_10f02dd0();
+__forceinline NativeAllocBase_thunk_FUN_10f02dd0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10f174e0 { void *f0; ~NativeAllocBase_thunk_FUN_10f174e0();
+__forceinline NativeAllocBase_thunk_FUN_10f174e0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10f1c470 { void *f0; ~NativeAllocBase_thunk_FUN_10f1c470();
+__forceinline NativeAllocBase_thunk_FUN_10f1c470(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10f1c490 { void *f0; ~NativeAllocBase_thunk_FUN_10f1c490();
+__forceinline NativeAllocBase_thunk_FUN_10f1c490(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10f1c4b0 { void *f0; ~NativeAllocBase_thunk_FUN_10f1c4b0();
+__forceinline NativeAllocBase_thunk_FUN_10f1c4b0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10f25b40 { void *f0; ~NativeAllocBase_thunk_FUN_10f25b40();
+__forceinline NativeAllocBase_thunk_FUN_10f25b40(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10f38170 { void *f0; ~NativeAllocBase_thunk_FUN_10f38170();
+__forceinline NativeAllocBase_thunk_FUN_10f38170(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10f38190 { void *f0; ~NativeAllocBase_thunk_FUN_10f38190();
+__forceinline NativeAllocBase_thunk_FUN_10f38190(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10f6bc80 { void *f0; ~NativeAllocBase_thunk_FUN_10f6bc80();
+__forceinline NativeAllocBase_thunk_FUN_10f6bc80(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10f7db60 { void *f0; ~NativeAllocBase_thunk_FUN_10f7db60();
+__forceinline NativeAllocBase_thunk_FUN_10f7db60(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10f9b030 { void *f0; ~NativeAllocBase_thunk_FUN_10f9b030();
+__forceinline NativeAllocBase_thunk_FUN_10f9b030(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10f9b050 { void *f0; ~NativeAllocBase_thunk_FUN_10f9b050();
+__forceinline NativeAllocBase_thunk_FUN_10f9b050(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10fc1d60 { void *f0; ~NativeAllocBase_thunk_FUN_10fc1d60();
+__forceinline NativeAllocBase_thunk_FUN_10fc1d60(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_10fed720 { void *f0; ~NativeAllocBase_thunk_FUN_10fed720();
+__forceinline NativeAllocBase_thunk_FUN_10fed720(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_11027110 { void *f0; ~NativeAllocBase_thunk_FUN_11027110();
+__forceinline NativeAllocBase_thunk_FUN_11027110(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_11078bc0 { void *f0; ~NativeAllocBase_thunk_FUN_11078bc0();
+__forceinline NativeAllocBase_thunk_FUN_11078bc0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_11078be0 { void *f0; ~NativeAllocBase_thunk_FUN_11078be0();
+__forceinline NativeAllocBase_thunk_FUN_11078be0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_11078c00 { void *f0; ~NativeAllocBase_thunk_FUN_11078c00();
+__forceinline NativeAllocBase_thunk_FUN_11078c00(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_11078c20 { void *f0; ~NativeAllocBase_thunk_FUN_11078c20();
+__forceinline NativeAllocBase_thunk_FUN_11078c20(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_110991c0 { void *f0; ~NativeAllocBase_thunk_FUN_110991c0();
+__forceinline NativeAllocBase_thunk_FUN_110991c0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_110c79f0 { void *f0; ~NativeAllocBase_thunk_FUN_110c79f0();
+__forceinline NativeAllocBase_thunk_FUN_110c79f0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_110f0440 { void *f0; ~NativeAllocBase_thunk_FUN_110f0440();
+__forceinline NativeAllocBase_thunk_FUN_110f0440(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_1110b2f0 { void *f0; ~NativeAllocBase_thunk_FUN_1110b2f0();
+__forceinline NativeAllocBase_thunk_FUN_1110b2f0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_1117fa40 { void *f0; ~NativeAllocBase_thunk_FUN_1117fa40();
+__forceinline NativeAllocBase_thunk_FUN_1117fa40(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_1117fa60 { void *f0; ~NativeAllocBase_thunk_FUN_1117fa60();
+__forceinline NativeAllocBase_thunk_FUN_1117fa60(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_1117fa80 { void *f0; ~NativeAllocBase_thunk_FUN_1117fa80();
+__forceinline NativeAllocBase_thunk_FUN_1117fa80(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_1117faa0 { void *f0; ~NativeAllocBase_thunk_FUN_1117faa0();
+__forceinline NativeAllocBase_thunk_FUN_1117faa0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_1117fac0 { void *f0; ~NativeAllocBase_thunk_FUN_1117fac0();
+__forceinline NativeAllocBase_thunk_FUN_1117fac0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_1118dcc0 { void *f0; ~NativeAllocBase_thunk_FUN_1118dcc0();
+__forceinline NativeAllocBase_thunk_FUN_1118dcc0(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_111c3960 { void *f0; ~NativeAllocBase_thunk_FUN_111c3960();
+__forceinline NativeAllocBase_thunk_FUN_111c3960(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_111d2f20 { void *f0; ~NativeAllocBase_thunk_FUN_111d2f20();
+__forceinline NativeAllocBase_thunk_FUN_111d2f20(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_1126e270 { void *f0; ~NativeAllocBase_thunk_FUN_1126e270();
+__forceinline NativeAllocBase_thunk_FUN_1126e270(void *a) { f0 = a; } };
+struct NativeAllocBase_thunk_FUN_11294ae0 { void *f0; ~NativeAllocBase_thunk_FUN_11294ae0();
+__forceinline NativeAllocBase_thunk_FUN_11294ae0(void *a) { f0 = a; } };
 struct NativeAllocHolder_FUN_10683170 : NativeAllocBase_thunk_FUN_10683f60 { void *f4;
 NativeAllocHolder_FUN_10683170(void *param_2); };
 struct NativeAllocHolder_FUN_106831f0 : NativeAllocBase_thunk_FUN_10683f80 { void *f4;
@@ -396,696 +483,609 @@ extern int operator_new(...);
 
 // Reference entry 10683170; body size 93 bytes.
 #line 1 "ENTRY_10683170"
-NativeAllocHolder_FUN_10683170::NativeAllocHolder_FUN_10683170(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10683f60::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10683170::NativeAllocHolder_FUN_10683170(void *param_2)
+    : NativeAllocBase_thunk_FUN_10683f60(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 106831f0; body size 93 bytes.
 #line 1 "ENTRY_106831f0"
-NativeAllocHolder_FUN_106831f0::NativeAllocHolder_FUN_106831f0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10683f80::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_106831f0::NativeAllocHolder_FUN_106831f0(void *param_2)
+    : NativeAllocBase_thunk_FUN_10683f80(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 106a3b50; body size 93 bytes.
 #line 1 "ENTRY_106a3b50"
-NativeAllocHolder_FUN_106a3b50::NativeAllocHolder_FUN_106a3b50(void *param_2) {
-this->NativeAllocBase_thunk_FUN_1027f780::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_106a3b50::NativeAllocHolder_FUN_106a3b50(void *param_2)
+    : NativeAllocBase_thunk_FUN_1027f780(param_2), f4(0) {
 f4 = operator_new(0x20);
 }
 
 // Reference entry 106b09f0; body size 93 bytes.
 #line 1 "ENTRY_106b09f0"
-NativeAllocHolder_FUN_106b09f0::NativeAllocHolder_FUN_106b09f0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_106b3630::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_106b09f0::NativeAllocHolder_FUN_106b09f0(void *param_2)
+    : NativeAllocBase_thunk_FUN_106b3630(param_2), f4(0) {
 f4 = operator_new(0x20);
 }
 
 // Reference entry 106b0a70; body size 93 bytes.
 #line 1 "ENTRY_106b0a70"
-NativeAllocHolder_FUN_106b0a70::NativeAllocHolder_FUN_106b0a70(void *param_2) {
-this->NativeAllocBase_thunk_FUN_106b3650::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_106b0a70::NativeAllocHolder_FUN_106b0a70(void *param_2)
+    : NativeAllocBase_thunk_FUN_106b3650(param_2), f4(0) {
 f4 = operator_new(0x28);
 }
 
 // Reference entry 106d2580; body size 93 bytes.
 #line 1 "ENTRY_106d2580"
-NativeAllocHolder_FUN_106d2580::NativeAllocHolder_FUN_106d2580(void *param_2) {
-this->NativeAllocBase_thunk_FUN_106d2b10::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_106d2580::NativeAllocHolder_FUN_106d2580(void *param_2)
+    : NativeAllocBase_thunk_FUN_106d2b10(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 106d9d00; body size 93 bytes.
 #line 1 "ENTRY_106d9d00"
-NativeAllocHolder_FUN_106d9d00::NativeAllocHolder_FUN_106d9d00(void *param_2) {
-this->NativeAllocBase_thunk_FUN_106da2e0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_106d9d00::NativeAllocHolder_FUN_106d9d00(void *param_2)
+    : NativeAllocBase_thunk_FUN_106da2e0(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 106d9d80; body size 93 bytes.
 #line 1 "ENTRY_106d9d80"
-NativeAllocHolder_FUN_106d9d80::NativeAllocHolder_FUN_106d9d80(void *param_2) {
-this->NativeAllocBase_thunk_FUN_106da300::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_106d9d80::NativeAllocHolder_FUN_106d9d80(void *param_2)
+    : NativeAllocBase_thunk_FUN_106da300(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 106ddec0; body size 93 bytes.
 #line 1 "ENTRY_106ddec0"
-NativeAllocHolder_FUN_106ddec0::NativeAllocHolder_FUN_106ddec0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_106de510::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_106ddec0::NativeAllocHolder_FUN_106ddec0(void *param_2)
+    : NativeAllocBase_thunk_FUN_106de510(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 106ddf40; body size 93 bytes.
 #line 1 "ENTRY_106ddf40"
-NativeAllocHolder_FUN_106ddf40::NativeAllocHolder_FUN_106ddf40(void *param_2) {
-this->NativeAllocBase_thunk_FUN_106de530::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_106ddf40::NativeAllocHolder_FUN_106ddf40(void *param_2)
+    : NativeAllocBase_thunk_FUN_106de530(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 106e27f0; body size 93 bytes.
 #line 1 "ENTRY_106e27f0"
-NativeAllocHolder_FUN_106e27f0::NativeAllocHolder_FUN_106e27f0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_106e4f80::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_106e27f0::NativeAllocHolder_FUN_106e27f0(void *param_2)
+    : NativeAllocBase_thunk_FUN_106e4f80(param_2), f4(0) {
 f4 = operator_new(0x14);
 }
 
 // Reference entry 10726ca0; body size 93 bytes.
 #line 1 "ENTRY_10726ca0"
-NativeAllocHolder_FUN_10726ca0::NativeAllocHolder_FUN_10726ca0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_1072ae00::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10726ca0::NativeAllocHolder_FUN_10726ca0(void *param_2)
+    : NativeAllocBase_thunk_FUN_1072ae00(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 10829d10; body size 93 bytes.
 #line 1 "ENTRY_10829d10"
-NativeAllocHolder_FUN_10829d10::NativeAllocHolder_FUN_10829d10(void *param_2) {
-this->NativeAllocBase_thunk_FUN_1082b4a0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10829d10::NativeAllocHolder_FUN_10829d10(void *param_2)
+    : NativeAllocBase_thunk_FUN_1082b4a0(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 1098ef60; body size 93 bytes.
 #line 1 "ENTRY_1098ef60"
-NativeAllocHolder_FUN_1098ef60::NativeAllocHolder_FUN_1098ef60(void *param_2) {
-this->NativeAllocBase_thunk_FUN_109901d0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_1098ef60::NativeAllocHolder_FUN_1098ef60(void *param_2)
+    : NativeAllocBase_thunk_FUN_109901d0(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 10af56e0; body size 93 bytes.
 #line 1 "ENTRY_10af56e0"
-NativeAllocHolder_FUN_10af56e0::NativeAllocHolder_FUN_10af56e0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10af6910::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10af56e0::NativeAllocHolder_FUN_10af56e0(void *param_2)
+    : NativeAllocBase_thunk_FUN_10af6910(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 10af5760; body size 93 bytes.
 #line 1 "ENTRY_10af5760"
-NativeAllocHolder_FUN_10af5760::NativeAllocHolder_FUN_10af5760(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10af6930::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10af5760::NativeAllocHolder_FUN_10af5760(void *param_2)
+    : NativeAllocBase_thunk_FUN_10af6930(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 10b04170; body size 93 bytes.
 #line 1 "ENTRY_10b04170"
-NativeAllocHolder_FUN_10b04170::NativeAllocHolder_FUN_10b04170(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10b04d80::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10b04170::NativeAllocHolder_FUN_10b04170(void *param_2)
+    : NativeAllocBase_thunk_FUN_10b04d80(param_2), f4(0) {
 f4 = operator_new(0x14);
 }
 
 // Reference entry 10b5b4c0; body size 93 bytes.
 #line 1 "ENTRY_10b5b4c0"
-NativeAllocHolder_FUN_10b5b4c0::NativeAllocHolder_FUN_10b5b4c0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10b5da30::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10b5b4c0::NativeAllocHolder_FUN_10b5b4c0(void *param_2)
+    : NativeAllocBase_thunk_FUN_10b5da30(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 10ba5310; body size 93 bytes.
 #line 1 "ENTRY_10ba5310"
-NativeAllocHolder_FUN_10ba5310::NativeAllocHolder_FUN_10ba5310(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10ba6c30::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10ba5310::NativeAllocHolder_FUN_10ba5310(void *param_2)
+    : NativeAllocBase_thunk_FUN_10ba6c30(param_2), f4(0) {
 f4 = operator_new(0x2c);
 }
 
 // Reference entry 10ba5390; body size 93 bytes.
 #line 1 "ENTRY_10ba5390"
-NativeAllocHolder_FUN_10ba5390::NativeAllocHolder_FUN_10ba5390(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10ba6c50::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10ba5390::NativeAllocHolder_FUN_10ba5390(void *param_2)
+    : NativeAllocBase_thunk_FUN_10ba6c50(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 10bb5350; body size 93 bytes.
 #line 1 "ENTRY_10bb5350"
-NativeAllocHolder_FUN_10bb5350::NativeAllocHolder_FUN_10bb5350(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10bb58d0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10bb5350::NativeAllocHolder_FUN_10bb5350(void *param_2)
+    : NativeAllocBase_thunk_FUN_10bb58d0(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 10bc0100; body size 93 bytes.
 #line 1 "ENTRY_10bc0100"
-NativeAllocHolder_FUN_10bc0100::NativeAllocHolder_FUN_10bc0100(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10bc0390::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10bc0100::NativeAllocHolder_FUN_10bc0100(void *param_2)
+    : NativeAllocBase_thunk_FUN_10bc0390(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 10bd3750; body size 93 bytes.
 #line 1 "ENTRY_10bd3750"
-NativeAllocHolder_FUN_10bd3750::NativeAllocHolder_FUN_10bd3750(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10bd6260::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10bd3750::NativeAllocHolder_FUN_10bd3750(void *param_2)
+    : NativeAllocBase_thunk_FUN_10bd6260(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 10bd37d0; body size 93 bytes.
 #line 1 "ENTRY_10bd37d0"
-NativeAllocHolder_FUN_10bd37d0::NativeAllocHolder_FUN_10bd37d0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10bd6280::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10bd37d0::NativeAllocHolder_FUN_10bd37d0(void *param_2)
+    : NativeAllocBase_thunk_FUN_10bd6280(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 10bd3850; body size 93 bytes.
 #line 1 "ENTRY_10bd3850"
-NativeAllocHolder_FUN_10bd3850::NativeAllocHolder_FUN_10bd3850(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10bd62a0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10bd3850::NativeAllocHolder_FUN_10bd3850(void *param_2)
+    : NativeAllocBase_thunk_FUN_10bd62a0(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 10bd38d0; body size 93 bytes.
 #line 1 "ENTRY_10bd38d0"
-NativeAllocHolder_FUN_10bd38d0::NativeAllocHolder_FUN_10bd38d0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10bd62c0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10bd38d0::NativeAllocHolder_FUN_10bd38d0(void *param_2)
+    : NativeAllocBase_thunk_FUN_10bd62c0(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 10bd3950; body size 93 bytes.
 #line 1 "ENTRY_10bd3950"
-NativeAllocHolder_FUN_10bd3950::NativeAllocHolder_FUN_10bd3950(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10bd62e0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10bd3950::NativeAllocHolder_FUN_10bd3950(void *param_2)
+    : NativeAllocBase_thunk_FUN_10bd62e0(param_2), f4(0) {
 f4 = operator_new(0x30);
 }
 
 // Reference entry 10bd39d0; body size 93 bytes.
 #line 1 "ENTRY_10bd39d0"
-NativeAllocHolder_FUN_10bd39d0::NativeAllocHolder_FUN_10bd39d0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10bd6300::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10bd39d0::NativeAllocHolder_FUN_10bd39d0(void *param_2)
+    : NativeAllocBase_thunk_FUN_10bd6300(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 10bd3a50; body size 93 bytes.
 #line 1 "ENTRY_10bd3a50"
-NativeAllocHolder_FUN_10bd3a50::NativeAllocHolder_FUN_10bd3a50(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10bd6320::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10bd3a50::NativeAllocHolder_FUN_10bd3a50(void *param_2)
+    : NativeAllocBase_thunk_FUN_10bd6320(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 10bd3ad0; body size 93 bytes.
 #line 1 "ENTRY_10bd3ad0"
-NativeAllocHolder_FUN_10bd3ad0::NativeAllocHolder_FUN_10bd3ad0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10bd6340::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10bd3ad0::NativeAllocHolder_FUN_10bd3ad0(void *param_2)
+    : NativeAllocBase_thunk_FUN_10bd6340(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 10bd3b50; body size 93 bytes.
 #line 1 "ENTRY_10bd3b50"
-NativeAllocHolder_FUN_10bd3b50::NativeAllocHolder_FUN_10bd3b50(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10bd6360::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10bd3b50::NativeAllocHolder_FUN_10bd3b50(void *param_2)
+    : NativeAllocBase_thunk_FUN_10bd6360(param_2), f4(0) {
 f4 = operator_new(0x14);
 }
 
 // Reference entry 10c5eb40; body size 93 bytes.
 #line 1 "ENTRY_10c5eb40"
-NativeAllocHolder_FUN_10c5eb40::NativeAllocHolder_FUN_10c5eb40(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10c5f930::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10c5eb40::NativeAllocHolder_FUN_10c5eb40(void *param_2)
+    : NativeAllocBase_thunk_FUN_10c5f930(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 10cb8f90; body size 93 bytes.
 #line 1 "ENTRY_10cb8f90"
-NativeAllocHolder_FUN_10cb8f90::NativeAllocHolder_FUN_10cb8f90(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10cb9340::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10cb8f90::NativeAllocHolder_FUN_10cb8f90(void *param_2)
+    : NativeAllocBase_thunk_FUN_10cb9340(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 10d26370; body size 93 bytes.
 #line 1 "ENTRY_10d26370"
-NativeAllocHolder_FUN_10d26370::NativeAllocHolder_FUN_10d26370(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10d27420::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10d26370::NativeAllocHolder_FUN_10d26370(void *param_2)
+    : NativeAllocBase_thunk_FUN_10d27420(param_2), f4(0) {
 f4 = operator_new(0x14);
 }
 
 // Reference entry 10d68aa0; body size 93 bytes.
 #line 1 "ENTRY_10d68aa0"
-NativeAllocHolder_FUN_10d68aa0::NativeAllocHolder_FUN_10d68aa0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10d69760::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10d68aa0::NativeAllocHolder_FUN_10d68aa0(void *param_2)
+    : NativeAllocBase_thunk_FUN_10d69760(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 10d9f590; body size 93 bytes.
 #line 1 "ENTRY_10d9f590"
-NativeAllocHolder_FUN_10d9f590::NativeAllocHolder_FUN_10d9f590(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10d9f950::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10d9f590::NativeAllocHolder_FUN_10d9f590(void *param_2)
+    : NativeAllocBase_thunk_FUN_10d9f950(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 10db3130; body size 93 bytes.
 #line 1 "ENTRY_10db3130"
-NativeAllocHolder_FUN_10db3130::NativeAllocHolder_FUN_10db3130(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10db3250::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10db3130::NativeAllocHolder_FUN_10db3130(void *param_2)
+    : NativeAllocBase_thunk_FUN_10db3250(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 10db31b0; body size 93 bytes.
 #line 1 "ENTRY_10db31b0"
-NativeAllocHolder_FUN_10db31b0::NativeAllocHolder_FUN_10db31b0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10db3270::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10db31b0::NativeAllocHolder_FUN_10db31b0(void *param_2)
+    : NativeAllocBase_thunk_FUN_10db3270(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 10dd72e0; body size 93 bytes.
 #line 1 "ENTRY_10dd72e0"
-NativeAllocHolder_FUN_10dd72e0::NativeAllocHolder_FUN_10dd72e0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10dd7ec0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10dd72e0::NativeAllocHolder_FUN_10dd72e0(void *param_2)
+    : NativeAllocBase_thunk_FUN_10dd7ec0(param_2), f4(0) {
 f4 = operator_new(0x20);
 }
 
 // Reference entry 10dd7360; body size 93 bytes.
 #line 1 "ENTRY_10dd7360"
-NativeAllocHolder_FUN_10dd7360::NativeAllocHolder_FUN_10dd7360(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10dd7ee0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10dd7360::NativeAllocHolder_FUN_10dd7360(void *param_2)
+    : NativeAllocBase_thunk_FUN_10dd7ee0(param_2), f4(0) {
 f4 = operator_new(0x20);
 }
 
 // Reference entry 10dee300; body size 93 bytes.
 #line 1 "ENTRY_10dee300"
-NativeAllocHolder_FUN_10dee300::NativeAllocHolder_FUN_10dee300(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10deef50::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10dee300::NativeAllocHolder_FUN_10dee300(void *param_2)
+    : NativeAllocBase_thunk_FUN_10deef50(param_2), f4(0) {
 f4 = operator_new(0x2c);
 }
 
 // Reference entry 10df4f60; body size 93 bytes.
 #line 1 "ENTRY_10df4f60"
-NativeAllocHolder_FUN_10df4f60::NativeAllocHolder_FUN_10df4f60(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10deef70::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10df4f60::NativeAllocHolder_FUN_10df4f60(void *param_2)
+    : NativeAllocBase_thunk_FUN_10deef70(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 10e0bf90; body size 93 bytes.
 #line 1 "ENTRY_10e0bf90"
-NativeAllocHolder_FUN_10e0bf90::NativeAllocHolder_FUN_10e0bf90(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10e0c410::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10e0bf90::NativeAllocHolder_FUN_10e0bf90(void *param_2)
+    : NativeAllocBase_thunk_FUN_10e0c410(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 10e0c010; body size 93 bytes.
 #line 1 "ENTRY_10e0c010"
-NativeAllocHolder_FUN_10e0c010::NativeAllocHolder_FUN_10e0c010(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10e0c430::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10e0c010::NativeAllocHolder_FUN_10e0c010(void *param_2)
+    : NativeAllocBase_thunk_FUN_10e0c430(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 10e5c060; body size 93 bytes.
 #line 1 "ENTRY_10e5c060"
-NativeAllocHolder_FUN_10e5c060::NativeAllocHolder_FUN_10e5c060(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10e5e300::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10e5c060::NativeAllocHolder_FUN_10e5c060(void *param_2)
+    : NativeAllocBase_thunk_FUN_10e5e300(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 10eb6130; body size 93 bytes.
 #line 1 "ENTRY_10eb6130"
-NativeAllocHolder_FUN_10eb6130::NativeAllocHolder_FUN_10eb6130(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10eb66d0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10eb6130::NativeAllocHolder_FUN_10eb6130(void *param_2)
+    : NativeAllocBase_thunk_FUN_10eb66d0(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 10eb61b0; body size 93 bytes.
 #line 1 "ENTRY_10eb61b0"
-NativeAllocHolder_FUN_10eb61b0::NativeAllocHolder_FUN_10eb61b0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10eb66f0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10eb61b0::NativeAllocHolder_FUN_10eb61b0(void *param_2)
+    : NativeAllocBase_thunk_FUN_10eb66f0(param_2), f4(0) {
 f4 = operator_new(0x20);
 }
 
 // Reference entry 10eb6230; body size 93 bytes.
 #line 1 "ENTRY_10eb6230"
-NativeAllocHolder_FUN_10eb6230::NativeAllocHolder_FUN_10eb6230(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10eb6710::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10eb6230::NativeAllocHolder_FUN_10eb6230(void *param_2)
+    : NativeAllocBase_thunk_FUN_10eb6710(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 10ed0a10; body size 93 bytes.
 #line 1 "ENTRY_10ed0a10"
-NativeAllocHolder_FUN_10ed0a10::NativeAllocHolder_FUN_10ed0a10(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10ed0c50::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10ed0a10::NativeAllocHolder_FUN_10ed0a10(void *param_2)
+    : NativeAllocBase_thunk_FUN_10ed0c50(param_2), f4(0) {
 f4 = operator_new(0x30);
 }
 
 // Reference entry 10eedb00; body size 93 bytes.
 #line 1 "ENTRY_10eedb00"
-NativeAllocHolder_FUN_10eedb00::NativeAllocHolder_FUN_10eedb00(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10eedbb0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10eedb00::NativeAllocHolder_FUN_10eedb00(void *param_2)
+    : NativeAllocBase_thunk_FUN_10eedbb0(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 10eef110; body size 93 bytes.
 #line 1 "ENTRY_10eef110"
-NativeAllocHolder_FUN_10eef110::NativeAllocHolder_FUN_10eef110(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10eef240::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10eef110::NativeAllocHolder_FUN_10eef110(void *param_2)
+    : NativeAllocBase_thunk_FUN_10eef240(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 10ef4e80; body size 93 bytes.
 #line 1 "ENTRY_10ef4e80"
-NativeAllocHolder_FUN_10ef4e80::NativeAllocHolder_FUN_10ef4e80(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10ef5120::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10ef4e80::NativeAllocHolder_FUN_10ef4e80(void *param_2)
+    : NativeAllocBase_thunk_FUN_10ef5120(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 10ef9d30; body size 93 bytes.
 #line 1 "ENTRY_10ef9d30"
-NativeAllocHolder_FUN_10ef9d30::NativeAllocHolder_FUN_10ef9d30(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10ef9de0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10ef9d30::NativeAllocHolder_FUN_10ef9d30(void *param_2)
+    : NativeAllocBase_thunk_FUN_10ef9de0(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 10f02250; body size 93 bytes.
 #line 1 "ENTRY_10f02250"
-NativeAllocHolder_FUN_10f02250::NativeAllocHolder_FUN_10f02250(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10f02dd0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10f02250::NativeAllocHolder_FUN_10f02250(void *param_2)
+    : NativeAllocBase_thunk_FUN_10f02dd0(param_2), f4(0) {
 f4 = operator_new(0x74);
 }
 
 // Reference entry 10f022d0; body size 93 bytes.
 #line 1 "ENTRY_10f022d0"
-NativeAllocHolder_FUN_10f022d0::NativeAllocHolder_FUN_10f022d0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10eab2a0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10f022d0::NativeAllocHolder_FUN_10f022d0(void *param_2)
+    : NativeAllocBase_thunk_FUN_10eab2a0(param_2), f4(0) {
 f4 = operator_new(0x14);
 }
 
 // Reference entry 10f16f90; body size 93 bytes.
 #line 1 "ENTRY_10f16f90"
-NativeAllocHolder_FUN_10f16f90::NativeAllocHolder_FUN_10f16f90(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10f174e0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10f16f90::NativeAllocHolder_FUN_10f16f90(void *param_2)
+    : NativeAllocBase_thunk_FUN_10f174e0(param_2), f4(0) {
 f4 = operator_new(0x30);
 }
 
 // Reference entry 10f1bfc0; body size 93 bytes.
 #line 1 "ENTRY_10f1bfc0"
-NativeAllocHolder_FUN_10f1bfc0::NativeAllocHolder_FUN_10f1bfc0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10f1c470::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10f1bfc0::NativeAllocHolder_FUN_10f1bfc0(void *param_2)
+    : NativeAllocBase_thunk_FUN_10f1c470(param_2), f4(0) {
 f4 = operator_new(0x20);
 }
 
 // Reference entry 10f1c040; body size 93 bytes.
 #line 1 "ENTRY_10f1c040"
-NativeAllocHolder_FUN_10f1c040::NativeAllocHolder_FUN_10f1c040(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10f1c490::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10f1c040::NativeAllocHolder_FUN_10f1c040(void *param_2)
+    : NativeAllocBase_thunk_FUN_10f1c490(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 10f1c0c0; body size 93 bytes.
 #line 1 "ENTRY_10f1c0c0"
-NativeAllocHolder_FUN_10f1c0c0::NativeAllocHolder_FUN_10f1c0c0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10f1c4b0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10f1c0c0::NativeAllocHolder_FUN_10f1c0c0(void *param_2)
+    : NativeAllocBase_thunk_FUN_10f1c4b0(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 10f24b20; body size 93 bytes.
 #line 1 "ENTRY_10f24b20"
-NativeAllocHolder_FUN_10f24b20::NativeAllocHolder_FUN_10f24b20(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10f25b40::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10f24b20::NativeAllocHolder_FUN_10f24b20(void *param_2)
+    : NativeAllocBase_thunk_FUN_10f25b40(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 10f37ea0; body size 93 bytes.
 #line 1 "ENTRY_10f37ea0"
-NativeAllocHolder_FUN_10f37ea0::NativeAllocHolder_FUN_10f37ea0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10f38170::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10f37ea0::NativeAllocHolder_FUN_10f37ea0(void *param_2)
+    : NativeAllocBase_thunk_FUN_10f38170(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 10f37f20; body size 93 bytes.
 #line 1 "ENTRY_10f37f20"
-NativeAllocHolder_FUN_10f37f20::NativeAllocHolder_FUN_10f37f20(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10f38190::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10f37f20::NativeAllocHolder_FUN_10f37f20(void *param_2)
+    : NativeAllocBase_thunk_FUN_10f38190(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 10f6b9e0; body size 93 bytes.
 #line 1 "ENTRY_10f6b9e0"
-NativeAllocHolder_FUN_10f6b9e0::NativeAllocHolder_FUN_10f6b9e0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10f6bc80::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10f6b9e0::NativeAllocHolder_FUN_10f6b9e0(void *param_2)
+    : NativeAllocBase_thunk_FUN_10f6bc80(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 10f7c710; body size 93 bytes.
 #line 1 "ENTRY_10f7c710"
-NativeAllocHolder_FUN_10f7c710::NativeAllocHolder_FUN_10f7c710(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10f7db60::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10f7c710::NativeAllocHolder_FUN_10f7c710(void *param_2)
+    : NativeAllocBase_thunk_FUN_10f7db60(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 10f9a790; body size 93 bytes.
 #line 1 "ENTRY_10f9a790"
-NativeAllocHolder_FUN_10f9a790::NativeAllocHolder_FUN_10f9a790(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10f9b030::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10f9a790::NativeAllocHolder_FUN_10f9a790(void *param_2)
+    : NativeAllocBase_thunk_FUN_10f9b030(param_2), f4(0) {
 f4 = operator_new(0x24);
 }
 
 // Reference entry 10f9a810; body size 93 bytes.
 #line 1 "ENTRY_10f9a810"
-NativeAllocHolder_FUN_10f9a810::NativeAllocHolder_FUN_10f9a810(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10f9b050::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10f9a810::NativeAllocHolder_FUN_10f9a810(void *param_2)
+    : NativeAllocBase_thunk_FUN_10f9b050(param_2), f4(0) {
 f4 = operator_new(0x1c);
 }
 
 // Reference entry 10fc1320; body size 93 bytes.
 #line 1 "ENTRY_10fc1320"
-NativeAllocHolder_FUN_10fc1320::NativeAllocHolder_FUN_10fc1320(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10fc1d60::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10fc1320::NativeAllocHolder_FUN_10fc1320(void *param_2)
+    : NativeAllocBase_thunk_FUN_10fc1d60(param_2), f4(0) {
 f4 = operator_new(0x24);
 }
 
 // Reference entry 10fec2e0; body size 93 bytes.
 #line 1 "ENTRY_10fec2e0"
-NativeAllocHolder_FUN_10fec2e0::NativeAllocHolder_FUN_10fec2e0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_10fed720::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_10fec2e0::NativeAllocHolder_FUN_10fec2e0(void *param_2)
+    : NativeAllocBase_thunk_FUN_10fed720(param_2), f4(0) {
 f4 = operator_new(0x14);
 }
 
 // Reference entry 110262f0; body size 93 bytes.
 #line 1 "ENTRY_110262f0"
-NativeAllocHolder_FUN_110262f0::NativeAllocHolder_FUN_110262f0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_11027110::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_110262f0::NativeAllocHolder_FUN_110262f0(void *param_2)
+    : NativeAllocBase_thunk_FUN_11027110(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 11076d30; body size 93 bytes.
 #line 1 "ENTRY_11076d30"
-NativeAllocHolder_FUN_11076d30::NativeAllocHolder_FUN_11076d30(void *param_2) {
-this->NativeAllocBase_thunk_FUN_11078bc0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_11076d30::NativeAllocHolder_FUN_11076d30(void *param_2)
+    : NativeAllocBase_thunk_FUN_11078bc0(param_2), f4(0) {
 f4 = operator_new(0x14);
 }
 
 // Reference entry 11076db0; body size 93 bytes.
 #line 1 "ENTRY_11076db0"
-NativeAllocHolder_FUN_11076db0::NativeAllocHolder_FUN_11076db0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_11078be0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_11076db0::NativeAllocHolder_FUN_11076db0(void *param_2)
+    : NativeAllocBase_thunk_FUN_11078be0(param_2), f4(0) {
 f4 = operator_new(0x14);
 }
 
 // Reference entry 11076e30; body size 93 bytes.
 #line 1 "ENTRY_11076e30"
-NativeAllocHolder_FUN_11076e30::NativeAllocHolder_FUN_11076e30(void *param_2) {
-this->NativeAllocBase_thunk_FUN_11078c00::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_11076e30::NativeAllocHolder_FUN_11076e30(void *param_2)
+    : NativeAllocBase_thunk_FUN_11078c00(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 11076eb0; body size 93 bytes.
 #line 1 "ENTRY_11076eb0"
-NativeAllocHolder_FUN_11076eb0::NativeAllocHolder_FUN_11076eb0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_11078c20::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_11076eb0::NativeAllocHolder_FUN_11076eb0(void *param_2)
+    : NativeAllocBase_thunk_FUN_11078c20(param_2), f4(0) {
 f4 = operator_new(0x14);
 }
 
 // Reference entry 11098f50; body size 93 bytes.
 #line 1 "ENTRY_11098f50"
-NativeAllocHolder_FUN_11098f50::NativeAllocHolder_FUN_11098f50(void *param_2) {
-this->NativeAllocBase_thunk_FUN_110991c0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_11098f50::NativeAllocHolder_FUN_11098f50(void *param_2)
+    : NativeAllocBase_thunk_FUN_110991c0(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 110c6600; body size 93 bytes.
 #line 1 "ENTRY_110c6600"
-NativeAllocHolder_FUN_110c6600::NativeAllocHolder_FUN_110c6600(void *param_2) {
-this->NativeAllocBase_thunk_FUN_110c79f0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_110c6600::NativeAllocHolder_FUN_110c6600(void *param_2)
+    : NativeAllocBase_thunk_FUN_110c79f0(param_2), f4(0) {
 f4 = operator_new(0x50);
 }
 
 // Reference entry 110ee5a0; body size 93 bytes.
 #line 1 "ENTRY_110ee5a0"
-NativeAllocHolder_FUN_110ee5a0::NativeAllocHolder_FUN_110ee5a0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_110f0440::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_110ee5a0::NativeAllocHolder_FUN_110ee5a0(void *param_2)
+    : NativeAllocBase_thunk_FUN_110f0440(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 111099f0; body size 93 bytes.
 #line 1 "ENTRY_111099f0"
-NativeAllocHolder_FUN_111099f0::NativeAllocHolder_FUN_111099f0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_1110b2f0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_111099f0::NativeAllocHolder_FUN_111099f0(void *param_2)
+    : NativeAllocBase_thunk_FUN_1110b2f0(param_2), f4(0) {
 f4 = operator_new(0x20);
 }
 
 // Reference entry 1117e280; body size 93 bytes.
 #line 1 "ENTRY_1117e280"
-NativeAllocHolder_FUN_1117e280::NativeAllocHolder_FUN_1117e280(void *param_2) {
-this->NativeAllocBase_thunk_FUN_1117fa40::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_1117e280::NativeAllocHolder_FUN_1117e280(void *param_2)
+    : NativeAllocBase_thunk_FUN_1117fa40(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 1117e300; body size 93 bytes.
 #line 1 "ENTRY_1117e300"
-NativeAllocHolder_FUN_1117e300::NativeAllocHolder_FUN_1117e300(void *param_2) {
-this->NativeAllocBase_thunk_FUN_1117fa60::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_1117e300::NativeAllocHolder_FUN_1117e300(void *param_2)
+    : NativeAllocBase_thunk_FUN_1117fa60(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 1117e380; body size 93 bytes.
 #line 1 "ENTRY_1117e380"
-NativeAllocHolder_FUN_1117e380::NativeAllocHolder_FUN_1117e380(void *param_2) {
-this->NativeAllocBase_thunk_FUN_1117fa80::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_1117e380::NativeAllocHolder_FUN_1117e380(void *param_2)
+    : NativeAllocBase_thunk_FUN_1117fa80(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 1117e400; body size 93 bytes.
 #line 1 "ENTRY_1117e400"
-NativeAllocHolder_FUN_1117e400::NativeAllocHolder_FUN_1117e400(void *param_2) {
-this->NativeAllocBase_thunk_FUN_1117faa0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_1117e400::NativeAllocHolder_FUN_1117e400(void *param_2)
+    : NativeAllocBase_thunk_FUN_1117faa0(param_2), f4(0) {
 f4 = operator_new(0x18);
 }
 
 // Reference entry 1117e480; body size 93 bytes.
 #line 1 "ENTRY_1117e480"
-NativeAllocHolder_FUN_1117e480::NativeAllocHolder_FUN_1117e480(void *param_2) {
-this->NativeAllocBase_thunk_FUN_1117fac0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_1117e480::NativeAllocHolder_FUN_1117e480(void *param_2)
+    : NativeAllocBase_thunk_FUN_1117fac0(param_2), f4(0) {
 f4 = operator_new(0x24);
 }
 
 // Reference entry 1118d950; body size 93 bytes.
 #line 1 "ENTRY_1118d950"
-NativeAllocHolder_FUN_1118d950::NativeAllocHolder_FUN_1118d950(void *param_2) {
-this->NativeAllocBase_thunk_FUN_1118dcc0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_1118d950::NativeAllocHolder_FUN_1118d950(void *param_2)
+    : NativeAllocBase_thunk_FUN_1118dcc0(param_2), f4(0) {
 f4 = operator_new(0x24);
 }
 
 // Reference entry 111c3030; body size 93 bytes.
 #line 1 "ENTRY_111c3030"
-NativeAllocHolder_FUN_111c3030::NativeAllocHolder_FUN_111c3030(void *param_2) {
-this->NativeAllocBase_thunk_FUN_111c3960::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_111c3030::NativeAllocHolder_FUN_111c3030(void *param_2)
+    : NativeAllocBase_thunk_FUN_111c3960(param_2), f4(0) {
 f4 = operator_new(0x2c);
 }
 
 // Reference entry 111c9ff0; body size 93 bytes.
 #line 1 "ENTRY_111c9ff0"
-NativeAllocHolder_FUN_111c9ff0::NativeAllocHolder_FUN_111c9ff0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_111d2f20::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_111c9ff0::NativeAllocHolder_FUN_111c9ff0(void *param_2)
+    : NativeAllocBase_thunk_FUN_111d2f20(param_2), f4(0) {
 f4 = operator_new(0x44);
 }
 
 // Reference entry 1126ddf0; body size 93 bytes.
 #line 1 "ENTRY_1126ddf0"
-NativeAllocHolder_FUN_1126ddf0::NativeAllocHolder_FUN_1126ddf0(void *param_2) {
-this->NativeAllocBase_thunk_FUN_1126e270::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_1126ddf0::NativeAllocHolder_FUN_1126ddf0(void *param_2)
+    : NativeAllocBase_thunk_FUN_1126e270(param_2), f4(0) {
 f4 = operator_new(0x38);
 }
 
 // Reference entry 11294860; body size 93 bytes.
 #line 1 "ENTRY_11294860"
-NativeAllocHolder_FUN_11294860::NativeAllocHolder_FUN_11294860(void *param_2) {
-this->NativeAllocBase_thunk_FUN_11294ae0::f0 = param_2;
-f4 = 0;
+NativeAllocHolder_FUN_11294860::NativeAllocHolder_FUN_11294860(void *param_2)
+    : NativeAllocBase_thunk_FUN_11294ae0(param_2), f4(0) {
 f4 = operator_new(0x18);
 }

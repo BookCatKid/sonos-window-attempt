@@ -96,7 +96,8 @@ def main():
                       re.findall(r'DAT_([0-9a-f]{8})', r['source'])}):
         library += f'extern unsigned int DAT_{va};\n'
     candidates = [{**r, 'abi_declarations': {'global_release_library': library}} for r in candidates]
-    emit_variant('global_release_dtors', candidates, {}, [])
+    evidence = {r['entry']: r for r in map(json.loads, (ROOT/'analysis/eh-lifetime-evidence.jsonl').open())}
+    emit_variant('global_release_dtors', candidates, evidence, [])
 
 
 if __name__ == '__main__':

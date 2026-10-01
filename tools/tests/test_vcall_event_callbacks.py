@@ -129,8 +129,7 @@ class VcallEventCallbackTests(unittest.TestCase):
         self.assertIn('m28.v18();', source)
         self.assertIn('piVar1->v34();', source)
         self.assertIn('f4->v14(param_2, param_3);', source)
-        self.assertIn('NativeVcallPair pair;', source)
-        self.assertIn('pair.next = piVar2;', source)
+        self.assertIn('NativeVcallPair pair = {piVar1, piVar2};', source)
 
     def test_alternate_slot(self):
         candidate = self.candidate(slot='0x60')

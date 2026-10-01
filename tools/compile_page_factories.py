@@ -124,7 +124,7 @@ def main():
     library = LIBRARY
     for va in sorted({va for r in candidates for va in r['vtables']}):
         library += f'extern unsigned int DAT_{va:08x};\n'
-    library += 'void thunk_FUN_1148c970(void *);\n'
+    library += 'void thunk_FUN_1148c970(void *) noexcept;\n'
     library += '__forceinline void *operator new(unsigned int size) { return operator_new(size); }\n'
     library += ('void operator delete(void *p, unsigned int size)'
                 ' { thunk_FUN_1148c970(p); }\n'

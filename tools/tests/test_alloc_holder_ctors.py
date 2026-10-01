@@ -76,7 +76,7 @@ class AllocHolderCtorTests(unittest.TestCase):
         source = candidate['source']
         self.assertIn('NativeAllocHolder_FUN_105a5b40::NativeAllocHolder_FUN_105a5b40(void *param_2)',
                       source)
-        self.assertIn('f0 = param_2;', source)
+        self.assertIn('f4(0)', source)
         self.assertIn('f4 = operator_new(0x14);', source)
 
     def test_wrong_calls_rejected(self):

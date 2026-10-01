@@ -100,9 +100,8 @@ def lower(record, reference, base, sections):
         f'  piVar2->v4();\n'
         f'}}\n'
         f'f1c = (unsigned short)param_3;\n'
-        f'NativeVcallPair pair;\n'
-        f'pair.rep = piVar1;\n'
-        f'pair.next = piVar2;\n'
+        f'{{\n'
+        f'NativeVcallPair pair = {{piVar1, piVar2}};\n'
         f'f14 = 0;\n'
         f'm28.v18();\n'
         f'if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {{\n'
@@ -116,6 +115,7 @@ def lower(record, reference, base, sections):
         f'    t->v8();\n'
         f'  }}\n'
         f'  f4 = 0; f8 = 0;\n'
+        f'}}\n'
         f'}}\n'
         f'}}\n')
     return {**record, 'source': source, 'vclass': klass}
@@ -168,7 +168,7 @@ def main():
                     f'  __forceinline ~{pair}() noexcept {{\n'
                     f'    NativeVcallObj *t = next;\n'
                     f'    if (t != 0) {{ rep = 0; next = 0; t->v8(); }} }}\n'
-                    f'  {pair}(); }};\n')
+                    f'}};\n')
     for r in candidates:
         klass = r['vclass']
         library += (f'struct {klass} {{\n'

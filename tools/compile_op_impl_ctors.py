@@ -165,7 +165,6 @@ def main():
                 'struct NativeOpMember14V { void *vptr;\n'
                 '    __forceinline NativeOpMember14V() { vptr = (void *)&DAT_1188207c; } };\n'
                 'struct NativeOpMember14 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 f4; void *f8; '
-                '~NativeOpMember14();\n'
                 '    __forceinline NativeOpMember14(void *param) : f4(param) { f8 = 0; } };\n'
                 'union NativeOpF38 { unsigned __int64 q; struct { unsigned int lo; unsigned int hi; } w; };\n')
     read = lambda va, size: function_bytes(reference, va, size, base, sections)

@@ -71,6 +71,7 @@ def lower(record, reference, base, sections):
     if v30b != scobj:
         return None
     b8 = f'NativeOpDB8_{entry}'
+    b14 = f'NativeOpDB14_{entry}'
     source = (
         f'{klass}::~{klass}() {{\n'
         f'v0 = (void *)&DAT_{v2:08x};\n'
@@ -83,6 +84,16 @@ def lower(record, reference, base, sections):
         f'v30 = (void *)&DAT_{v30a:08x};\n'
         f'g_lSCObjCount--;\n'
         f'v30 = (void *)&DAT_{v30b:08x};\n'
+        f'[&]() noexcept {{ s2c.thunk_FUN_101a4bf0(); s2c.rep = 0; }}();\n'
+        f'[&]() noexcept {{ s28.thunk_FUN_101a4bf0(); s28.rep = 0;\n'
+        f'  {b14}::vptr = (void *)&DAT_{v5:08x}; {b14}::thunk_FUN_101ba0d0(); }}();\n'
+        f'void *q = {b8}::next;\n'
+        f'[&]() noexcept {{\n'
+        f'  if (q != 0) {{ {b8}::rep = 0; {b8}::next = 0; ((NativeOpDtorIface *)q)->slot8(); }}\n'
+        f'  {b8}::vptr = (void *)&DAT_{v1:08x}; {b8}::thunk_FUN_11240850();\n'
+        f'  NativeOpDP_{entry}::v0 = (void *)&DAT_{v0a:08x}; g_lSCObjCount--;\n'
+        f'  NativeOpDP_{entry}::v0 = (void *)&DAT_{scobj:08x};\n'
+        f'}}();\n'
         f'}}\n')
     return {**record, 'source': source, 'op_class': klass,
             'derived_vtables': (v2, v3), 'vtables': vtables,
@@ -123,20 +134,11 @@ def main():
         klass = r['op_class']
         e = r['entry']
         library += (
-            f'struct NativeOpDP_{e} {{ void *v0; void *f4;\n'
-            f'__forceinline ~NativeOpDP_{e}() {{ v0 = (void *)&DAT_{r["base_vtable"]}; '
-            f'g_lSCObjCount--; v0 = (void *)&DAT_{r["scobj_vtable"]}; }} }};\n'
+            f'struct NativeOpDP_{e} {{ void *v0; void *f4; }};\n'
             f'struct NativeOpDB8_{e} {{ void *vptr; void *rep; void *next;\n'
-            f'void thunk_FUN_11240850();\n'
-            f'__forceinline ~NativeOpDB8_{e}() {{ void *p = next; if (p != 0) {{ rep = 0; '
-            f'next = 0; ((NativeOpDtorIface *)p)->slot8(); }} vptr = (void *)&DAT_{r["m8_vtable"]}; '
-            f'thunk_FUN_11240850(); }} }};\n'
-            f'struct NativeOpDB14_{e} {{ void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();\n'
-            f'__forceinline ~NativeOpDB14_{e}() {{ vptr = (void *)&DAT_{r["m14_vtable"]}; '
-            f'thunk_FUN_101ba0d0(); }} }};\n'
-            f'struct NativeOpDStr_{e} {{ void *rep; void thunk_FUN_101a4bf0();\n'
-            f'__forceinline ~NativeOpDStr_{e}() {{\n'
-            f'thunk_FUN_101a4bf0(); rep = 0; }} }};\n'
+            f'void thunk_FUN_11240850(); }};\n'
+            f'struct NativeOpDB14_{e} {{ void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0(); }};\n'
+            f'struct NativeOpDStr_{e} {{ void *rep; void thunk_FUN_101a4bf0(); }};\n'
             f'struct {klass} : NativeOpDP_{e}, NativeOpDB8_{e}, NativeOpDB14_{e} {{\n'
             f'void *f20; unsigned short f24; NativeOpDStr_{e} s28; NativeOpDStr_{e} s2c;\n'
             f'void *v30; void *f34; unsigned long long f38; void *f40; void *f44;\n'

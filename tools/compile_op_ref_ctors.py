@@ -65,7 +65,10 @@ def lower(record, reference, base, sections):
     klass = 'NativeOpRefCtor_FUN_' + entry
     source = (
         f'{klass}::{klass}(void *param_2)\n'
-        f'    : NativeOpRefBase_FUN_{entry}(), m4(param_2), f8(0) {{\n'
+        f'    : NativeOpRefBase_FUN_{entry}(), m4() {{\n'
+        f'm4.rep = param_2;\n'
+        f'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+        f'f8 = 0;\n'
         f'vptr = (void *)&DAT_{vb:08x};\n'
         f'}}\n')
     return {**record, 'source': source, 'op_class': klass,
@@ -100,9 +103,7 @@ def main():
                       re.findall(r'DAT_([0-9a-f]{8})', r['source'] + ' DAT_' + r['first_vtable'])}):
         library += f'extern unsigned int DAT_{va};\n'
     library += 'void __cdecl thunk_FUN_1123fce0(void *);\n'
-    library += ('struct NativeOpRefMember_thunk_FUN_101ba1b0 { void *p;\n'
-                'NativeOpRefMember_thunk_FUN_101ba1b0(void *a) : p(a) {\n'
-                'if (a) thunk_FUN_1123fce0((char *)a + 4); }\n'
+    library += ('struct NativeOpRefMember_thunk_FUN_101ba1b0 { void *rep;\n'
                 '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n')
     for r in candidates:
         klass = r['op_class']

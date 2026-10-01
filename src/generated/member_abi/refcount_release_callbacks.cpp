@@ -133,6 +133,7 @@ int __cdecl SCThreadSafeDec(int *);
 struct NativeRefVtable { virtual void r0(); virtual void r1(); virtual void r2(); virtual void r3(); virtual void slot4(int); };
 struct NativeGuard_thunk_FUN_101b91d0 {
 void *owner;
+char flag;
 void thunk_FUN_101b9190(int *);
 void thunk_FUN_101b9240();
 ~NativeGuard_thunk_FUN_101b91d0();

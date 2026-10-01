@@ -728,8 +728,7 @@ struct NativeOpSmart14_thunk_FUN_101ba1b0 { void *p; ~NativeOpSmart14_thunk_FUN_
     __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };
 struct NativeOpMember14V { void *vptr;
     __forceinline NativeOpMember14V() { vptr = (void *)&DAT_1188207c; } };
-struct NativeOpMember14 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 f4; void *f8; ~NativeOpMember14();
-    __forceinline NativeOpMember14(void *param) : f4(param) { f8 = 0; } };
+struct NativeOpMember14 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 f4; void *f8;     __forceinline NativeOpMember14(void *param) : f4(param) { f8 = 0; } };
 union NativeOpF38 { unsigned __int64 q; struct { unsigned int lo; unsigned int hi; } w; };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10687e80 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10687e80();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10687e80() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };

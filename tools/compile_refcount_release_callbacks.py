@@ -113,6 +113,7 @@ def main():
                 'virtual void r2(); virtual void r3(); virtual void slot4(int); };\n'
                 'struct NativeGuard_thunk_FUN_101b91d0 {\n'
                 'void *owner;\n'
+                'char flag;\n'
                 'void thunk_FUN_101b9190(int *);\n'
                 'void thunk_FUN_101b9240();\n'
                 '~NativeGuard_thunk_FUN_101b91d0();\n'

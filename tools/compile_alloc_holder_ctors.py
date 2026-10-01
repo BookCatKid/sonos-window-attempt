@@ -71,9 +71,8 @@ def lower(record, reference, base, sections, evidence):
     klass = 'NativeAllocHolder_FUN_' + entry
     base_klass = f'NativeAllocBase_thunk_FUN_{base_dtor:08x}'
     source = (
-        f'{klass}::{klass}(void *param_2) {{\n'
-        f'this->{base_klass}::f0 = param_2;\n'
-        f'f4 = 0;\n'
+        f'{klass}::{klass}(void *param_2)\n'
+        f'    : {base_klass}(param_2), f4(0) {{\n'
         f'f4 = operator_new(0x{size:x});\n'
         f'}}\n')
     return {**record, 'source': source, 'op_class': klass, 'base_class': base_klass}
@@ -105,7 +104,8 @@ def main():
         raise SystemExit('No alloc-holder constructor accepted')
     library = LIBRARY + 'void *operator_new(unsigned int);\n'
     for base_klass in sorted({r['base_class'] for r in candidates}):
-        library += (f'struct {base_klass} {{ void *f0; ~{base_klass}(); }};\n')
+        library += (f'struct {base_klass} {{ void *f0; ~{base_klass}();\n'
+                    f'__forceinline {base_klass}(void *a) {{ f0 = a; }} }};\n')
     for r in candidates:
         klass = r['op_class']
         library += (f'struct {klass} : {r["base_class"]} {{ void *f4;\n'
