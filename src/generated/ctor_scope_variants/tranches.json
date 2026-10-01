@@ -104,6 +104,22 @@
     "directory": "analysis/ctor-scope-op-ref-m4-nsdmi"
   },
   {
+    "object": "op_ref_m4_callarg_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-callarg"
+  },
+  {
+    "object": "op_ref_m4_derefarg_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-derefarg"
+  },
+  {
+    "object": "op_ref_m4_condarg_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-condarg"
+  },
+  {
+    "object": "op_ref_m4_commaarg_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-commaarg"
+  },
+  {
     "object": "op_impl_control_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-control"
   },
@@ -252,6 +268,18 @@
     "directory": "analysis/ctor-scope-named-event-tracked-place"
   },
   {
+    "object": "named_event_intcast_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-intcast"
+  },
+  {
+    "object": "named_event_copyinit_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-copyinit"
+  },
+  {
+    "object": "named_event_predcl_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-predcl"
+  },
+  {
     "object": "wiz_temp_current_reference_flags",
     "directory": "analysis/ctor-scope-wiz-temp-current"
   },
@@ -310,6 +338,14 @@
   {
     "object": "wiz_and_temp_reference_flags",
     "directory": "analysis/ctor-scope-wiz-and-temp"
+  },
+  {
+    "object": "wiz_byval_reinit_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-byval-reinit"
+  },
+  {
+    "object": "wiz_outslot_chain_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-outslot-chain"
   },
   {
     "object": "copier_named_reference_flags",

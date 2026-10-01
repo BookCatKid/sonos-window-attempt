@@ -344,6 +344,52 @@ def op_ref_variants():
             'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
             'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
             + ctor_tail),
+        # member-init arg is a CALL: &m4 must be materialized before arg
+        # evaluation (calls clobber ecx/eax) so the init-target address spills
+        # and the member funclet reads the spilled address bare
+        'op_ref_m4_callarg': (
+            m4_inline +
+            'extern void * __cdecl adjust_FUN(void *);\n'
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0 m4; void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(adjust_FUN(param_2)) {\n'
+            'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # member-init arg through a deref'd pointer param
+        'op_ref_m4_derefarg': (
+            m4_inline +
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0 m4; void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void **param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void **param_2)\n'
+            '    : m4(*param_2) {\n'
+            'if (*param_2) thunk_FUN_1123fce0(*(char **)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # member-init arg is a conditional expression: the ?: value forces
+        # MSVC to compute &m4 before evaluating the branch
+        'op_ref_m4_condarg': (
+            m4_inline +
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0 m4; void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(param_2 ? param_2 : (void *)0) {\n'
+            'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # member-init arg is a comma expression: MSVC materializes the init
+        # target before evaluating the comma's left side
+        'op_ref_m4_commaarg': (
+            m4_inline +
+            'extern void * __cdecl adjust_FUN(void *);\n'
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0 m4; void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4((adjust_FUN(param_2), param_2)) {\n'
+            'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
     }
     out = {}
     for name, (member, definition) in variants.items():
@@ -707,6 +753,29 @@ def named_event_variants():
             'NativeNamedEvent_FUN_10df9440 event;\n'
             'NativeNamedEvent_FUN_10df9440 *pe = (NativeNamedEvent_FUN_10df9440 *)\n'
             '    new (&event) NativeNamedEvent_FUN_10df9440();\n'),
+        # pe bound through an integer round-trip: MSVC may fail to fold the
+        # cast chain back to &event, keeping pe an opaque pointer pinned in
+        # a callee-saved register
+        'named_event_intcast': (
+            ctor_decl,
+            'NativeNamedEvent_FUN_10df9440 event;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = (NativeNamedEvent_FUN_10df9440 *)\n'
+            '    (unsigned int)(void *)&event;\n'),
+        # copy-initialized event: Event event = Event() runs the ctor as a
+        # temp whose eax result is the construction address; pe = &event may
+        # reuse it
+        'named_event_copyinit': (
+            ctor_decl,
+            'NativeNamedEvent_FUN_10df9440 event = '
+            'NativeNamedEvent_FUN_10df9440();\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = &event;\n'),
+        # pe declared before the object and assigned from a forwarded
+        # expression: pe outlives the ctor eax but binds opaquely
+        'named_event_predcl': (
+            ctor_decl,
+            'NativeNamedEvent_FUN_10df9440 *pe;\n'
+            'NativeNamedEvent_FUN_10df9440 event;\n'
+            'pe = &event;\n'),
     }
     out = {}
     for name, (decl, opening) in variants.items():
@@ -915,6 +984,29 @@ def wiz_state_variants():
         '#line 1 "ENTRY_1061e8b0"\n' +
         source_marker + '\n' + tail_common +
         'arg != 0 && thunk_FUN_106dfa00().endsWith("Page");\n' + tail_end)
+    # by-value class param re-initialized through its own address: the param
+    # slot holds a live object that the callee overwrites — MSVC flag-tracks
+    # which contents owns the slot at unwind time
+    out['wiz_byval_reinit'] = (
+        prefix.replace(old_klass, sret_type + klass.replace(
+            'NativeWizState_FUN_1061e8b0(void *);',
+            'NativeWizState_FUN_1061e8b0(NativeWizSret);')) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker.replace('void *arg', 'NativeWizSret arg') + '\n' +
+        tail_common.replace('thunk_FUN_106de0c0(&name, arg)',
+                            'thunk_FUN_106de0c0(&name, (void *)arg.rep)') +
+        'thunk_FUN_106dfa00(&arg)->endsWith("Page");\n' + tail_end)
+    # sret call whose destination is the param slot but which returns the
+    # destination for method chaining (SCStr* out-echo): models
+    # thunk_FUN_106dfa00(&arg)->endsWith where the temp was callee-constructed
+    out['wiz_outslot_chain'] = (
+        prefix.replace(old_klass, sret_type + klass) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'thunk_FUN_106dfa00((NativeWizSret *)&arg)->endsWith("Page");\n' +
+        '((NativeWizSret *)&arg)->~NativeWizSret();\n' + tail_end)
     return out
 
 
