@@ -593,6 +593,14 @@ def event_copier_variants():
             'NativeCopierAggregate_FUN_10deee60 agg(a);\n'
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this, agg);\n'
             'return this;\n'),
+        # fully nested temporaries: Event().thunk(this, Aggregate(Source())) —
+        # right-to-left arg eval constructs Source then Aggregate then the
+        # receiver; each temp's ctor eax is reused (push eax / mov ecx,eax)
+        # and all three destruct at end of the full expression in reverse
+        'copier_nested_all': head + (
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'
+            'return this;\n'),
     }
     out = {}
     for name, body in variants.items():

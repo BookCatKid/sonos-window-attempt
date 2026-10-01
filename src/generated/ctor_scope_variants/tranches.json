@@ -204,6 +204,10 @@
     "directory": "analysis/ctor-scope-copier-both-temp"
   },
   {
+    "object": "copier_nested_all_reference_flags",
+    "directory": "analysis/ctor-scope-copier-nested-all"
+  },
+  {
     "object": "delayed_plain_reference_flags",
     "directory": "analysis/ctor-scope-delayed-plain"
   },
