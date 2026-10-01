@@ -1,0 +1,163 @@
+[
+  {
+    "symbol": "??1NativeCopierSource_FUN_10df9440@@QAE@XZ",
+    "owner_entry": "10df9390",
+    "state": 0,
+    "call_target": "1000bb86",
+    "body_entry": "107ec140"
+  },
+  {
+    "symbol": "??1NativeCopierSource_FUN_10df9690@@QAE@XZ",
+    "owner_entry": "10df95e0",
+    "state": 0,
+    "call_target": "10066f59",
+    "body_entry": "10dff000"
+  },
+  {
+    "symbol": "??1NativeCopierSource_FUN_10df9a80@@QAE@XZ",
+    "owner_entry": "10df99d0",
+    "state": 0,
+    "call_target": "1008efae",
+    "body_entry": "107ec170"
+  },
+  {
+    "symbol": "??1NativeCopierSource_FUN_10df9d60@@QAE@XZ",
+    "owner_entry": "10df9cb0",
+    "state": 0,
+    "call_target": "10011f81",
+    "body_entry": "107ec1b0"
+  },
+  {
+    "symbol": "??1NativeCopierSource_FUN_10df9fb0@@QAE@XZ",
+    "owner_entry": "10df9f00",
+    "state": 0,
+    "call_target": "10072831",
+    "body_entry": "108a22e0"
+  },
+  {
+    "symbol": "??1NativeCopierSource_FUN_10dfa2d0@@QAE@XZ",
+    "owner_entry": "10dfa220",
+    "state": 0,
+    "call_target": "10048ae5",
+    "body_entry": "108a2320"
+  },
+  {
+    "symbol": "??1NativeCopierSource_FUN_10dfa520@@QAE@XZ",
+    "owner_entry": "10dfa470",
+    "state": 0,
+    "call_target": "1000fdc1",
+    "body_entry": "107ec1d0"
+  },
+  {
+    "symbol": "??1NativeCopierSource_FUN_10dfab80@@QAE@XZ",
+    "owner_entry": "10dfaad0",
+    "state": 0,
+    "call_target": "1005393b",
+    "body_entry": "107ec220"
+  },
+  {
+    "symbol": "??1NativeCopierSource_FUN_10dfadd0@@QAE@XZ",
+    "owner_entry": "10dfad20",
+    "state": 0,
+    "call_target": "10047014",
+    "body_entry": "107ec240"
+  },
+  {
+    "symbol": "??1NativeCopierSource_FUN_10dfb020@@QAE@XZ",
+    "owner_entry": "10dfaf70",
+    "state": 0,
+    "call_target": "1003c038",
+    "body_entry": "1062cc50"
+  },
+  {
+    "symbol": "??1NativeCopierSource_FUN_10dfb530@@QAE@XZ",
+    "owner_entry": "10dfb480",
+    "state": 0,
+    "call_target": "100364ee",
+    "body_entry": "1092ed80"
+  },
+  {
+    "symbol": "??1NativeCopierAggregate_FUN_10deee60@@QAE@XZ",
+    "owner_entry": "10df9390",
+    "state": 1,
+    "call_target": "10012d3c",
+    "body_entry": "105a0530"
+  },
+  {
+    "symbol": "??1NativeCopierEvent_FUN_10df9510@@QAE@XZ",
+    "owner_entry": "10df9390",
+    "state": 2,
+    "call_target": "100132dc",
+    "body_entry": "107ec150"
+  },
+  {
+    "symbol": "??1NativeCopierEvent_FUN_10df9760@@QAE@XZ",
+    "owner_entry": "10df95e0",
+    "state": 2,
+    "call_target": "100099ad",
+    "body_entry": "10600260"
+  },
+  {
+    "symbol": "??1NativeCopierEvent_FUN_10df9b50@@QAE@XZ",
+    "owner_entry": "10df99d0",
+    "state": 2,
+    "call_target": "100699b1",
+    "body_entry": "107ec180"
+  },
+  {
+    "symbol": "??1NativeCopierEvent_FUN_10df9e30@@QAE@XZ",
+    "owner_entry": "10df9cb0",
+    "state": 2,
+    "call_target": "100826a5",
+    "body_entry": "107ec1c0"
+  },
+  {
+    "symbol": "??1NativeCopierEvent_FUN_10dfa080@@QAE@XZ",
+    "owner_entry": "10df9f00",
+    "state": 2,
+    "call_target": "1009299c",
+    "body_entry": "108a22f0"
+  },
+  {
+    "symbol": "??1NativeCopierEvent_FUN_10dfa3a0@@QAE@XZ",
+    "owner_entry": "10dfa220",
+    "state": 2,
+    "call_target": "10079622",
+    "body_entry": "108a2330"
+  },
+  {
+    "symbol": "??1NativeCopierEvent_FUN_10dfa5f0@@QAE@XZ",
+    "owner_entry": "10dfa470",
+    "state": 2,
+    "call_target": "100651e0",
+    "body_entry": "107ec1e0"
+  },
+  {
+    "symbol": "??1NativeCopierEvent_FUN_10dfac50@@QAE@XZ",
+    "owner_entry": "10dfaad0",
+    "state": 2,
+    "call_target": "1004d59f",
+    "body_entry": "107ec230"
+  },
+  {
+    "symbol": "??1NativeCopierEvent_FUN_10dfaea0@@QAE@XZ",
+    "owner_entry": "10dfad20",
+    "state": 2,
+    "call_target": "1003503f",
+    "body_entry": "107ec250"
+  },
+  {
+    "symbol": "??1NativeCopierEvent_FUN_10dfb0f0@@QAE@XZ",
+    "owner_entry": "10dfaf70",
+    "state": 2,
+    "call_target": "10051659",
+    "body_entry": "1062cc60"
+  },
+  {
+    "symbol": "??1NativeCopierEvent_FUN_10dfb600@@QAE@XZ",
+    "owner_entry": "10dfb480",
+    "state": 2,
+    "call_target": "1005888c",
+    "body_entry": "1092ed90"
+  }
+]
