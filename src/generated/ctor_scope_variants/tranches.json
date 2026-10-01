@@ -160,6 +160,14 @@
     "directory": "analysis/ctor-scope-named-event-rref-temp"
   },
   {
+    "object": "named_event_array_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-array"
+  },
+  {
+    "object": "named_event_sret_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-sret"
+  },
+  {
     "object": "wiz_temp_current_reference_flags",
     "directory": "analysis/ctor-scope-wiz-temp-current"
   },

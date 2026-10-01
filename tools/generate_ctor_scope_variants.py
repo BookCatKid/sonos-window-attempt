@@ -456,6 +456,24 @@ def named_event_variants():
             ctor_decl,
             'NativeNamedEvent_FUN_10df9440 &&event = '
             'NativeNamedEvent_FUN_10df9440();\n'),
+        # 1-element array + decay: pe binds to the element-ctor's eax result
+        'named_event_array': (
+            ctor_decl,
+            'NativeNamedEvent_FUN_10df9440 event[1];\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = event;\n'),
+        # sret-initialized local: Event event = f() emits lea ecx,[ebp-0x28];
+        # call f — same bytes as the ctor call — and MSVC may bind esi=eax
+        'named_event_sret': (
+            ctor_decl.replace('struct NativeNamedEvent_FUN_10df9440 : '
+                              'Event_thunk_FUN_10def0d0 {'
+                              ' NativeNamedEvent_FUN_10df9440(); };\n',
+                              ctor_decl.replace(
+                                  'NativeNamedEvent_FUN_10df9440();',
+                                  'NativeNamedEvent_FUN_10df9440() = default;') +
+                              'NativeNamedEvent_FUN_10df9440 __cdecl '
+                              'thunk_FUN_10df9440();\n'),
+            'NativeNamedEvent_FUN_10df9440 event = thunk_FUN_10df9440();\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = &event;\n'),
     }
     out = {}
     for name, (decl, opening) in variants.items():
