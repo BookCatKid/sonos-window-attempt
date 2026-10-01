@@ -4,6 +4,14 @@ The acceptance target is the complete 37,153,792-byte reference DLL, built from
 C or C++ with no authored assembly and no embedded reference executable bytes.
 The default `tools/compare.py` gate requires complete identity.
 
+The latest accepted object-body audit is
+`analysis/recovery-msvc-upstream-libraries/coverage-audit.json`: 165,868 distinct
+bodies / 1,808,891 executable bytes (7.070766%). Reverified upstream zlib/Expat
+C objects add 25,867 distinct bytes over the conditional-event checkpoint.
+The partial physical placement build remains at 11,649,005 proven bytes;
+integration of the new library bodies is pending. See
+[whole-library recovery](large-scale-recovery.md) for the reproducible audit.
+
 ## Evidence at the start of this investigation
 
 The latest prior audit, `analysis/recovery-msvc-round2/coverage-audit.json`,

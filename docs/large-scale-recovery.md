@@ -1,8 +1,9 @@
 # Whole-library and original-layout recovery
 
-The accepted reconstruction remains at 1,783,024 executable bytes (6.969655%)
-and 11,649,005 physically placed compiler bytes (31.353475% of the file).
-The experiments below do not alter those numbers. The goal remains paused.
+The accepted object-body audit now contains 1,808,891 executable bytes (7.070766%).
+The partial PE placement build still contains 11,649,005 physically placed compiler
+bytes (31.353475% of the file); upstream-library placement remains to be integrated.
+The active goal remains 100% binary identity from C/C++.
 
 ## Reproduce LINK behavior, then reconstruct the layout
 
@@ -69,7 +70,7 @@ The first strict correspondence pass finds:
 | zlib `/O1` | 9 | 1 | 42 |
 | All `/Oy-` configurations | 0 | 0 | 0 |
 
-These are per-configuration totals, with overlaps, not new distinct coverage.
+These historical first-pass totals include overlaps and are not new distinct coverage.
 The DTD-on and `/O2` results identify the most productive next configurations.
 The matcher searches whole inventoried body extents, requires a unique full
 fixed-byte correspondence, validates every relocation, and removes functions
@@ -92,6 +93,38 @@ Stock SQLite is therefore not an established source match. Determine the codec
 implementation and local patches before rebuilding it as an original module.
 The Rich fingerprint also contains multiple toolchain builds, so another library
 may require an older compiler rather than the application compiler.
+
+### Accepted upstream-library body audit
+
+The dependency verifier now independently identifies the MSVC fastcall security
+cookie checker against the cookie address in the PE load config, including its
+success return and failure jump. It also checks complete immutable data definitions
+across object files, and verifies compiler-emitted five-byte C forwarding functions
+as dependency aliases. Runtime identities and forwarding aliases receive zero
+additional byte credit. Missing callees, modified tables, writable memory and wrong
+forwarding destinations remain rejected, with per-relocation diagnostics.
+
+Reverification of the existing pinned `/O2` C objects yields 46 zlib bodies / 15,386
+bytes and 94 Expat bodies / 11,808 bytes. The union with the prior accepted audit adds
+94 distinct functions and **25,867 distinct executable bytes** after removing overlaps.
+The resulting audit is `analysis/recovery-msvc-upstream-libraries/coverage-audit.json`:
+165,868 distinct bodies / 1,808,891 executable bytes / 7.070766%.
+
+Reproduce it without recompiling or executing any DLL:
+
+```sh
+python3 tools/audit_library_recovery.py \
+  ci-output/build-experiments-run-36803682931/libraries \
+  --baseline analysis/recovery-msvc-conditional-event/coverage-audit.json \
+  --output-dir analysis/recovery-msvc-upstream-libraries
+```
+
+The admission tool checks the pinned compiler, source-archive records, recorded
+configuration and reference hash; then reruns full correspondence/relocation-graph
+verification and the distinct-body audit. It records object hashes and environment
+provenance. This proves object bodies at reference-address placement constraints,
+not a complete linked DLL. Integrating these normal C symbol names and bindings into
+the physical placement pipeline is the next required step.
 
 ## Structured Ghidra evidence
 

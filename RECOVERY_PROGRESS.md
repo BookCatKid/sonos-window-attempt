@@ -2,6 +2,15 @@
 
 The active target is a C/C++ rebuilt DLL matching 100% of the reference bytes. Earlier 95% checkpoints below record historical targets. No Sonos/DLL execution and no assembly embedding are permitted.
 
+Latest upstream-library checkpoint: pinned zlib/Expat `/O2` objects verify 140
+bodies / 27,194 body bytes. Their union with the prior accepted audit adds 94
+distinct functions / 25,867 distinct executable bytes, bringing object-body
+coverage to 165,868 bodies / 1,808,891 bytes / 7.070766%. Runtime-cookie identities,
+compiled forwarding aliases and constant tables receive no additional byte credit.
+The 11,649,005-byte partial physical placement artifact has not yet integrated
+these library bodies. Reproduce with `tools/audit_library_recovery.py`; full
+details and remaining constraints are in `docs/large-scale-recovery.md`.
+
 ## SCStr expansion
 
 Commit `04d8031` adds placement constructors, exported method overloads, exported-definition normalization, global declarations, and support for lowering vtable addresses. The generated source is `src/generated/scstr_expanded.cpp`; its inventory is `src/generated/scstr-expanded-index.tsv`.

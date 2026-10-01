@@ -12,7 +12,51 @@ import struct
 from collections import defaultdict
 from pathlib import Path
 from classify_functions import DLL, ROOT, section_map, function_bytes
-from compare_compiled_ghidra import DISASSEMBLER, read_coff, resolve_known_relocations
+from compare_compiled_ghidra import DISASSEMBLER, read_coff, resolve_known_relocations, security_cookie_va
+
+
+def security_cookie_targets(reference, inventory):
+    """Identify the native fastcall cookie check from the PE load-config cookie.
+
+    This establishes an external runtime dependency's identity, not recovery of
+    its body. The comparison and success-return flow match the existing EH gate.
+    """
+    base,sections=section_map(reference)
+    cookie=security_cookie_va(reference,base,sections)
+    if cookie is None:return {},[]
+    entries=set()
+    with inventory.open(newline='') as stream:
+        for row in csv.DictReader(stream,delimiter='\t'):entries.add(int(row['entry'],16))
+    checks=[];evidence=[]
+    for entry in sorted(entries):
+        va=entry;seen=set()
+        for _ in range(16):
+            if va in seen or va not in entries:break
+            seen.add(va);raw=function_bytes(reference,va,32,base,sections)
+            if len(raw)!=32:break
+            if raw[:1]==b'\xe9':
+                va=va+5+struct.unpack_from('<i',raw,1)[0];continue
+            if struct.pack('<I',cookie) not in raw[:8]:break
+            ins=list(DISASSEMBLER.disasm(raw,va))
+            if (len(ins)>=3 and ins[0].mnemonic=='cmp' and
+                ins[0].op_str==f'ecx, dword ptr [0x{cookie:x}]' and
+                ins[1].mnemonic in ('jne','bnd jne') and
+                ins[2].mnemonic in ('ret','bnd ret')):
+                failure=int(ins[1].op_str,16)
+                failure_target=failure
+                if failure not in entries:
+                    if len(ins)<4 or failure!=ins[3].address or ins[3].mnemonic not in ('jmp','bnd jmp'):break
+                    failure_target=int(ins[3].op_str,16)
+                    if failure_target not in entries:break
+                checks.append(entry)
+                evidence.append({'entry':f'{entry:08x}','comparison_entry':f'{va:08x}',
+                                 'cookie_va':f'{cookie:08x}','failure_entry':f'{failure:08x}',
+                                 'failure_target':f'{failure_target:08x}',
+                                 'scope':'Runtime identity only; adds no recovered helper bytes'})
+            break
+    targets={'___security_cookie':[cookie]}
+    if checks:targets['@__security_check_cookie@4']=checks
+    return targets,evidence
 
 
 def imported_targets(reference, inventory):
@@ -104,6 +148,24 @@ def fixed_runs(code, relocs):
     return runs
 
 
+def immutable_data_definitions(sections, symbols):
+    """Extract entire read-only symbol extents, never partial data prefixes."""
+    result=[]
+    for symbol in symbols:
+        if symbol['storage'] not in (2,3) or symbol['type']&0x20:continue
+        if not 0<symbol['section']<=len(sections):continue
+        section=sections[symbol['section']-1]
+        if section['characteristics']&(0x20000000|0x80000000):continue
+        start=symbol['offset']
+        ends=[s['offset'] for s in symbols if s['section']==symbol['section'] and s['offset']>start]
+        stop=min(ends,default=len(section['code']))
+        data=section['code'][start:stop]
+        if len(data)<4 or not any(data):continue
+        if any(start<=r['offset']<stop for r in section['relocations']):continue
+        result.append({'symbol':symbol['name'],'public':symbol['storage']==2,'data':data})
+    return result
+
+
 def match(objects, reference, inventory):
     base, sections=section_map(reference)
     pe=struct.unpack_from('<I',reference,0x3c)[0];optional=pe+24
@@ -113,12 +175,23 @@ def match(objects, reference, inventory):
     with inventory.open(newline='') as stream:
         for r in csv.DictReader(stream,delimiter='\t'):
             if r['thunk']=='false' and r['external']=='false':sizes[int(r['entry'],16)]=int(r['body_bytes'])
-    candidates=[]
+    candidates=[];forwarders=[]
     imports=imported_targets(reference,inventory)
+    cookie_targets,cookie_evidence=security_cookie_targets(reference,inventory)
+    imports.update(cookie_targets)
+    local_data=defaultdict(list);global_data=defaultdict(list)
+    for path in objects:
+        source_sections,source_symbols,_=read_coff(path)
+        for item in immutable_data_definitions(source_sections,source_symbols):
+            local_data[str(path),item['symbol']].append(item['data'])
+            if item['public']:global_data[item['symbol']].append(item['data'])
     for path in objects:
         for b in bodies(path):
             code=b['code'];runs=fixed_runs(code,b['relocs'])
-            if len(code)<16 or not runs:continue
+            if (len(code)==5 and code[:1]==b'\xe9' and len(b['relocs'])==1 and
+                b['relocs'][0]['offset']==1 and b['relocs'][0]['type']==20 and code[1:]==b'\0'*4):
+                forwarders.append(b)
+            if len(code)<8 or not runs:continue
             anchor_offset,anchor=max(runs,key=lambda r:len(r[1]))
             if len(anchor)<8:continue
             hits=[]
@@ -157,7 +230,28 @@ def match(objects, reference, inventory):
         for mapping in (global_names,local_names):
             for name,vas in mapping.items():
                 mapping[name]=sorted(set(vas+[t for v in vas for t in destinations[v]]))
-        return global_names,local_names
+        forwarding_evidence=[]
+        # A compiler-emitted five-byte C forwarding function is fully verified
+        # only when its entire native JMP reaches an independently bound callee.
+        # Multiple exact forwarding copies are dependency aliases, never new
+        # unique function correspondences or additional recovered-byte credit.
+        pending=list(forwarders)
+        for _ in range(len(pending)+1):
+            next_pending=[];changed=False
+            for b in pending:
+                callee=b['relocs'][0]['symbol']
+                known=local_names.get((b['object'],callee),[]) or global_names.get(callee,[])
+                addresses=sorted({source for target in known for source in destinations[target]})
+                if not addresses:next_pending.append(b);continue
+                local_names[b['object'],b['symbol']]=addresses
+                if b['public']:global_names[b['symbol']]=sorted(set(global_names.get(b['symbol'],[])+addresses))
+                forwarding_evidence.append({'object':b['object'],'symbol':b['symbol'],'callee':callee,
+                                            'entries':[f'{va:08x}' for va in addresses],
+                                            'scope':'Entire compiled forwarding body verified as dependency aliases; zero added byte credit'})
+                changed=True
+            pending=next_pending
+            if not changed:break
+        return global_names,local_names,forwarding_evidence
     def verify(b,global_names,local_names):
         known=dict(global_names)
         for (obj,name),vas in local_names.items():
@@ -167,37 +261,50 @@ def match(objects, reference, inventory):
         # assign a symbol solely from the address occupying the reference slot.
         for r in b['relocs']:
             if r['type']!=6 or r['symbol'] in known:continue
-            symbol=next((s for s in b['symbols'] if s['name']==r['symbol']),None)
-            if not symbol or not 0<symbol['section']<=len(b['sections']):continue
-            section=b['sections'][symbol['section']-1]
-            if section['characteristics']&(0x20000000|0x80000000):continue
-            start=symbol['offset'];ends=[s['offset'] for s in b['symbols'] if s['section']==symbol['section'] and s['offset']>start]
-            stop=min(ends,default=len(section['code']))
-            data=section['code'][start:stop]
-            if len(data)<4 or not any(data) or any(start<=x['offset']<stop for x in section['relocations']):continue
             addend=struct.unpack_from('<I',b['code'],r['offset'])[0]
             address=struct.unpack_from('<I',expected,r['offset'])[0]-addend
-            native_section=next((i for i,(rva,size,_) in enumerate(sections)
-                                 if base+rva<=address and address+len(data)<=base+rva+size),None)
-            if native_section is None or native_characteristics[native_section]&(0x20000000|0x80000000):continue
-            if function_bytes(reference,address,len(data),base,sections)==data:
-                known[r['symbol']]=[address]
+            definitions=local_data.get((b['object'],r['symbol']),[]) or global_data.get(r['symbol'],[])
+            for data in definitions:
+                native_section=next((i for i,(rva,size,_) in enumerate(sections)
+                                     if base+rva<=address and address+len(data)<=base+rva+size),None)
+                if native_section is None or native_characteristics[native_section]&(0x20000000|0x80000000):continue
+                if function_bytes(reference,address,len(data),base,sections)==data:
+                    known[r['symbol']]=[address];break
         patched,_,unresolved=resolve_known_relocations(b['code'],expected,b['relocs'],b['entry'],base,known)
-        return unresolved==0 and patched==expected
+        diagnostics=[]
+        for r in b['relocs']:
+            offset=r['offset']
+            actual=struct.unpack_from('<I',expected,offset)[0]
+            original=struct.unpack_from('<I',b['code'],offset)[0]
+            if r['type']==20:actual=(b['entry']+offset+4+actual-original)&0xffffffff
+            elif r['type']==6:actual=(actual-original)&0xffffffff
+            if r['symbol'] not in known:
+                diagnostics.append({'symbol':r['symbol'],'offset':offset,'type':r['type'],
+                                    'native_target':f'{actual:08x}','reason':'dependency not independently verified'})
+            elif patched[offset:offset+4]!=expected[offset:offset+4]:
+                diagnostics.append({'symbol':r['symbol'],'offset':offset,'type':r['type'],
+                                    'native_target':f'{actual:08x}','reason':'verified targets do not match this relocation'})
+        return unresolved==0 and patched==expected,diagnostics,unresolved
     while active:
-        global_names,local_names=targets(active)
-        remaining={i for i in active if verify(candidates[i],global_names,local_names)}
+        global_names,local_names,_=targets(active)
+        remaining={i for i in active if verify(candidates[i],global_names,local_names)[0]}
         if remaining==active:break
         active=remaining
+    global_names,local_names,forwarding_evidence=targets(active)
+    final_verification={i:verify(b,global_names,local_names) for i,b in enumerate(candidates)}
     rows=[{'object':b['object'],'symbol':b['symbol'],'entry':f'{b["entry"]:08x}',
            'bytes':len(b['code']),'relocations':len(b['relocs']),
-           'unique_fixed_candidate':True,'closed_graph_exact':i in active}
+           'unique_fixed_candidate':True,'closed_graph_exact':i in active,
+           'unresolved_relocations':final_verification[i][2],
+           'rejected_dependencies':final_verification[i][1] if i not in active else []}
           for i,b in enumerate(candidates)]
     return {'reference_sha256':hashlib.sha256(reference).hexdigest(),
             'inventory_sha256':hashlib.sha256(inventory.read_bytes()).hexdigest(),
             'objects':{str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in objects},
             'unique_fixed_candidates':len(rows),'closed_graph_exact_functions':len(active),
             'closed_graph_body_bytes':sum(len(candidates[i]['code']) for i in active),
+            'runtime_cookie_identity_evidence':cookie_evidence,
+            'compiled_forwarding_identity_evidence':forwarding_evidence,
             'coverage_added':0,'scope':'Experimental upstream correspondence; no coverage promotion', 'functions':rows}
 
 

@@ -14,8 +14,8 @@ mechanically generated and need not be readable; authored assembly and embedded
 reference executable bytes are excluded.
 
 The latest [recovery strategy and measured results](docs/recovery-strategy.md)
-record 165,774 verified object bodies / 1,783,024 executable bytes (6.969655%),
-including by-value tree arguments, compiler atomic intrinsics, and unused-argument recovery.
+record 165,868 verified object bodies / 1,808,891 executable bytes (7.070766%),
+including upstream C library bodies, by-value tree arguments, compiler atomic intrinsics, and unused-argument recovery.
 This is function-body coverage; no full matching DLL exists yet.
 The guarded Ghidra ABI runner now recovers omitted container arguments and
 24-byte event objects across 132 exports; these exports add no verified byte
@@ -30,7 +30,8 @@ See the recovery strategy for the reproducible placement command.
 The [whole-library and original-layout experiments](docs/large-scale-recovery.md)
 test genuine LINK reservations, rebuild fingerprinted zlib/Expat C modules,
 export structured native/SSA evidence, and prepare same-host Windows matching.
-Their experimental results do not increase the accepted coverage figures above.
+The strict upstream-library body audit contributes 25,867 new distinct code bytes.
+Those library bodies have not yet been integrated into the partial PE placement build.
 
 ## Layout
 
