@@ -5,13 +5,14 @@ from pathlib import Path
 from compile_ghidra_cpp import ROOT,COMPILER
 from compile_scstr_cpp import cpp_source
 from classify_functions import DLL,function_bytes,section_map
+from compare_compiled_ghidra import DISASSEMBLER
 
 
-def auxiliary_bindings(inventory):
+def auxiliary_bindings(inventory,roles=None):
     reference=DLL.read_bytes();base,sections=section_map(reference)
     def read(va,size):return function_bytes(reference,va,size,base,sections)
     owners={row['entry']:row for row in inventory}
-    roles=[('??1Stopped_thunk_FUN_10dfd540@@QAE@XZ','10e00c90',2),
+    if roles is None:roles=[('??1Stopped_thunk_FUN_10dfd540@@QAE@XZ','10e00c90',2),
            ('??1Started_thunk_FUN_10dfd470@@QAE@XZ','10e00e20',2),
            ('??1Cancelled@@QAE@XZ','10e00c90',5),
            ('??1Shown@@QAE@XZ','10e00e20',5),
@@ -181,6 +182,7 @@ extern template struct ExternalKey_FUN_1008c50b<0>;
             'abi_declarations':{'event_bridge_library':bridge_library}})
     emit_variant('event_destructor_bridges',candidates,evidence)
     callback_rows={r['entry']:r for r in map(json.loads,(ROOT/'analysis/container-call-abi/verified-event-vtable/after.jsonl').open())}
+    reference=DLL.read_bytes();base,sections=section_map(reference)
     callbacks=[]
     for record in callback_rows.values():
         text=record.get('decompiled_c','')
@@ -190,17 +192,25 @@ extern template struct ExternalKey_FUN_1008c50b<0>;
         dispatcher=re.search(r'thunk_FUN_10df15a0\(\(undefined1 \*\)\(param_1 \+ (-?0x[0-9a-f]+)\),&\w+\);',text)
         if not label or not event_id or not dispatcher:continue
         entry=record['entry'];offset=int(dispatcher.group(1),16)
-        source='void NativeEventCallback::FUN_'+entry+'() { Event_thunk_FUN_10def0d0 event("'+label.group(1)+'",'+event_id.group(1)+'); '+\
+        native=function_bytes(reference,int(entry,16),record['body_bytes'],base,sections)
+        returns=[int(i.op_str,0) if i.op_str else 0 for i in DISASSEMBLER.disasm(native,int(entry,16)) if i.mnemonic=='ret']
+        if not returns or len(set(returns))!=1 or returns[0] not in (0,4):continue
+        parameters='unsigned int unused0' if returns[0] else ''
+        value_class='NativeEventValue_'+entry
+        source='void NativeEventCallback::FUN_'+entry+'('+parameters+') { '+value_class+' event; '+\
             '((NativeEventDispatcher *)((char *)this + '+str(offset)+'))->thunk_FUN_10df15a0(&event); }'
-        callbacks.append({**record,'source':source})
+        value_declaration='struct '+value_class+' : Event_thunk_FUN_10def0d0 { __forceinline '+value_class+'():Event_thunk_FUN_10def0d0("'+label.group(1)+'",'+event_id.group(1)+') {} };\n'
+        callbacks.append({**record,'source':source,'parameters':parameters,'value_declaration':value_declaration})
     if callbacks:
         callback_library=improved_library+'struct NativeEventDispatcher { void thunk_FUN_10df15a0(Event_thunk_FUN_10def0d0 *); };\n'
-        callback_library+='struct NativeEventCallback { '+''.join('void FUN_'+r['entry']+'(); ' for r in callbacks)+'};\n'
+        callback_library+=''.join(r['value_declaration'] for r in callbacks)
+        callback_library+='struct NativeEventCallback { '+''.join('void FUN_'+r['entry']+'('+r['parameters']+'); ' for r in callbacks)+'};\n'
         callbacks=[{**r,'abi_declarations':{'callback_library':callback_library}} for r in callbacks]
-        emit_variant('event_callbacks',callbacks,evidence)
+        roles=[('??1NativeEventValue_'+r['entry']+'@@QAE@XZ',r['entry'],2) for r in callbacks]
+        emit_variant('event_callbacks',callbacks,evidence,roles)
 
 
-def emit_variant(name,candidates,evidence):
+def emit_variant(name,candidates,evidence,roles=None):
     directory=ROOT/('analysis/compiled-cpp-'+name.replace('_','-'));directory.mkdir(exist_ok=True)
     target=directory/'ghidra_recovered.cpp';target.write_text(cpp_source(candidates));obj=target.with_suffix('.obj')
     result=subprocess.run([str(COMPILER),'/nologo','/O2','/bigobj','/MD','/GS','/GR','/EHsc','/Zi','/c',
@@ -213,7 +223,7 @@ def emit_variant(name,candidates,evidence):
         'reference_metadata':evidence[r['entry']]['metadata']['address'],'reference_state_count':evidence[r['entry']]['metadata']['state_count']}
         for r in candidates if r['entry'] in evidence and evidence[r['entry']].get('handler')]
     (directory/'reference-eh-inventory.json').write_text(json.dumps(inventory,indent=2)+'\n')
-    bindings=auxiliary_bindings(inventory) if {'10e00c90','10e00e20'} <= {r['entry'] for r in inventory} else []
+    bindings=auxiliary_bindings(inventory,roles) if roles is not None or {'10e00c90','10e00e20'} <= {r['entry'] for r in inventory} else []
     (directory/'reference-auxiliary-symbols.json').write_text(json.dumps(bindings,indent=2)+'\n')
     emit=ROOT/'src/generated/member_abi';(emit/(name+'.cpp')).write_text(target.read_text());(emit/(name+'-index.tsv')).write_bytes(index.read_bytes())
     (emit/(name+'-auxiliary-symbols.json')).write_text(json.dumps(bindings,indent=2)+'\n')

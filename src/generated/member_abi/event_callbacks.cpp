@@ -132,40 +132,51 @@ static_assert(sizeof(Event_thunk_FUN_10def0d0)==24,"Event value");
 struct FactoryOutputLocation { void *receiver; };
 __forceinline void *operator new(unsigned int,FactoryOutputLocation location) { return location.receiver; }
 struct NativeEventDispatcher { void thunk_FUN_10df15a0(Event_thunk_FUN_10def0d0 *); };
-struct NativeEventCallback { void FUN_10e02820(); void FUN_10e02dd0(); void FUN_10e032f0(); void FUN_10e033e0(); void FUN_10e03d30(); void FUN_10e03e20(); void FUN_10e057f0(); void FUN_10e05f40(); void FUN_10e06170(); void FUN_10e06390(); void FUN_10e069b0(); };
+struct NativeEventValue_10e02820 : Event_thunk_FUN_10def0d0 { __forceinline NativeEventValue_10e02820():Event_thunk_FUN_10def0d0("productUpdateStarted",0x3b) {} };
+struct NativeEventValue_10e02dd0 : Event_thunk_FUN_10def0d0 { __forceinline NativeEventValue_10e02dd0():Event_thunk_FUN_10def0d0("btScanDataReady",0x29) {} };
+struct NativeEventValue_10e032f0 : Event_thunk_FUN_10def0d0 { __forceinline NativeEventValue_10e032f0():Event_thunk_FUN_10def0d0("discoveryHistoryUpdated",0x56) {} };
+struct NativeEventValue_10e033e0 : Event_thunk_FUN_10def0d0 { __forceinline NativeEventValue_10e033e0():Event_thunk_FUN_10def0d0("netstart2DiscoveryTimeoutReceived",0x74) {} };
+struct NativeEventValue_10e03d30 : Event_thunk_FUN_10def0d0 { __forceinline NativeEventValue_10e03d30():Event_thunk_FUN_10def0d0("lifecycleManagerReadyForSetup",0x47) {} };
+struct NativeEventValue_10e03e20 : Event_thunk_FUN_10def0d0 { __forceinline NativeEventValue_10e03e20():Event_thunk_FUN_10def0d0("lifecycleManagerLegacyManifestReady",0x48) {} };
+struct NativeEventValue_10e057f0 : Event_thunk_FUN_10def0d0 { __forceinline NativeEventValue_10e057f0():Event_thunk_FUN_10def0d0("secureSettingsChanged",0x2e) {} };
+struct NativeEventValue_10e05f40 : Event_thunk_FUN_10def0d0 { __forceinline NativeEventValue_10e05f40():Event_thunk_FUN_10def0d0("netstart2SendStartIslandSucceeded",0x6e) {} };
+struct NativeEventValue_10e06170 : Event_thunk_FUN_10def0d0 { __forceinline NativeEventValue_10e06170():Event_thunk_FUN_10def0d0("netstart2SendStartOpenApSucceeded",0x6c) {} };
+struct NativeEventValue_10e06390 : Event_thunk_FUN_10def0d0 { __forceinline NativeEventValue_10e06390():Event_thunk_FUN_10def0d0("netstart2SetupContinueReceived",0x71) {} };
+struct NativeEventValue_10e069b0 : Event_thunk_FUN_10def0d0 { __forceinline NativeEventValue_10e069b0():Event_thunk_FUN_10def0d0("zoneGroupsChanged",0x2d) {} };
+struct NativeEventCallback { void FUN_10e02820(); void FUN_10e02dd0(); void FUN_10e032f0(); void FUN_10e033e0(); void FUN_10e03d30(unsigned int unused0); void FUN_10e03e20(unsigned int unused0); void FUN_10e057f0(unsigned int unused0); void FUN_10e05f40(); void FUN_10e06170(); void FUN_10e06390(); void FUN_10e069b0(unsigned int unused0); };
 
 extern int thunk_FUN_10df15a0(...);
 
 // Reference entry 10e02820; body size 190 bytes.
 #line 1 "ENTRY_10e02820"
-void NativeEventCallback::FUN_10e02820() { Event_thunk_FUN_10def0d0 event("productUpdateStarted",0x3b); ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
+void NativeEventCallback::FUN_10e02820() { NativeEventValue_10e02820 event; ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
 // Reference entry 10e02dd0; body size 190 bytes.
 #line 1 "ENTRY_10e02dd0"
-void NativeEventCallback::FUN_10e02dd0() { Event_thunk_FUN_10def0d0 event("btScanDataReady",0x29); ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
+void NativeEventCallback::FUN_10e02dd0() { NativeEventValue_10e02dd0 event; ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
 // Reference entry 10e032f0; body size 190 bytes.
 #line 1 "ENTRY_10e032f0"
-void NativeEventCallback::FUN_10e032f0() { Event_thunk_FUN_10def0d0 event("discoveryHistoryUpdated",0x56); ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
+void NativeEventCallback::FUN_10e032f0() { NativeEventValue_10e032f0 event; ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
 // Reference entry 10e033e0; body size 190 bytes.
 #line 1 "ENTRY_10e033e0"
-void NativeEventCallback::FUN_10e033e0() { Event_thunk_FUN_10def0d0 event("netstart2DiscoveryTimeoutReceived",0x74); ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
+void NativeEventCallback::FUN_10e033e0() { NativeEventValue_10e033e0 event; ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
 // Reference entry 10e03d30; body size 192 bytes.
 #line 1 "ENTRY_10e03d30"
-void NativeEventCallback::FUN_10e03d30() { Event_thunk_FUN_10def0d0 event("lifecycleManagerReadyForSetup",0x47); ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
+void NativeEventCallback::FUN_10e03d30(unsigned int unused0) { NativeEventValue_10e03d30 event; ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
 // Reference entry 10e03e20; body size 192 bytes.
 #line 1 "ENTRY_10e03e20"
-void NativeEventCallback::FUN_10e03e20() { Event_thunk_FUN_10def0d0 event("lifecycleManagerLegacyManifestReady",0x48); ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
+void NativeEventCallback::FUN_10e03e20(unsigned int unused0) { NativeEventValue_10e03e20 event; ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
 // Reference entry 10e057f0; body size 192 bytes.
 #line 1 "ENTRY_10e057f0"
-void NativeEventCallback::FUN_10e057f0() { Event_thunk_FUN_10def0d0 event("secureSettingsChanged",0x2e); ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
+void NativeEventCallback::FUN_10e057f0(unsigned int unused0) { NativeEventValue_10e057f0 event; ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
 // Reference entry 10e05f40; body size 190 bytes.
 #line 1 "ENTRY_10e05f40"
-void NativeEventCallback::FUN_10e05f40() { Event_thunk_FUN_10def0d0 event("netstart2SendStartIslandSucceeded",0x6e); ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
+void NativeEventCallback::FUN_10e05f40() { NativeEventValue_10e05f40 event; ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
 // Reference entry 10e06170; body size 190 bytes.
 #line 1 "ENTRY_10e06170"
-void NativeEventCallback::FUN_10e06170() { Event_thunk_FUN_10def0d0 event("netstart2SendStartOpenApSucceeded",0x6c); ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
+void NativeEventCallback::FUN_10e06170() { NativeEventValue_10e06170 event; ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
 // Reference entry 10e06390; body size 190 bytes.
 #line 1 "ENTRY_10e06390"
-void NativeEventCallback::FUN_10e06390() { Event_thunk_FUN_10def0d0 event("netstart2SetupContinueReceived",0x71); ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
+void NativeEventCallback::FUN_10e06390() { NativeEventValue_10e06390 event; ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
 // Reference entry 10e069b0; body size 192 bytes.
 #line 1 "ENTRY_10e069b0"
-void NativeEventCallback::FUN_10e069b0() { Event_thunk_FUN_10def0d0 event("zoneGroupsChanged",0x2d); ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
+void NativeEventCallback::FUN_10e069b0(unsigned int unused0) { NativeEventValue_10e069b0 event; ((NativeEventDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event); }
