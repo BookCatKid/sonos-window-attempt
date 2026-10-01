@@ -262,12 +262,193 @@ def op_impl_variants():
     return out
 
 
+def named_event_variants():
+    """esi=eax constructor-result reuse hypotheses for entry 10e026f0."""
+    generated = (GENERATED / 'named_event_callbacks.cpp').read_text()
+    prefix = generated[:generated.find('// Reference entry')]
+    ctor_decl = ('struct NativeNamedEvent_FUN_10df9440 : Event_thunk_FUN_10def0d0 {'
+                 ' NativeNamedEvent_FUN_10df9440(); };\n')
+    assert ctor_decl in prefix
+    tail = ('((NativeEventProperties *)pe->representation.properties)->slot('
+            'RecoveredString_FUN_1008c50b("opResult"), arg);\n'
+            '((NativeEventDispatcher *)((char *)this - 0x10))'
+            '->thunk_FUN_10df15a0(pe);\n}\n')
+    variants = {
+        # init-style member returning this: pe binds to the call's eax result
+        'named_event_memberinit': (
+            ctor_decl.replace('NativeNamedEvent_FUN_10df9440();',
+                              'NativeNamedEvent_FUN_10df9440 *thunk_FUN_10df9440();'),
+            'NativeNamedEvent_FUN_10df9440 event;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = event.thunk_FUN_10df9440();\n'),
+        # tracked base-typed buffer + placement-new of the derived event:
+        # the new-expression binds esi=eax while the funclet covers the buffer
+        'named_event_placement_base': (
+            ctor_decl,
+            'Event_thunk_FUN_10def0d0 event;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = (NativeNamedEvent_FUN_10df9440 *)\n'
+            '    new (&event) NativeNamedEvent_FUN_10df9440();\n'),
+        # raw union storage + placement-new + explicit dtor: isolates whether
+        # MSVC emits the construction-state funclet for a placement object
+        'named_event_placement_union': (
+            ctor_decl,
+            'union NativeEventBuf { char b[24]; NativeNamedEvent_FUN_10df9440 e;\n'
+            'NativeEventBuf() {} ~NativeEventBuf() {} } u;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = (NativeNamedEvent_FUN_10df9440 *)\n'
+            '    new (&u.e) NativeNamedEvent_FUN_10df9440();\n'),
+    }
+    out = {}
+    for name, (decl, opening) in variants.items():
+        library = prefix.replace(ctor_decl, decl, 1)
+        out[name] = (library +
+                     '\n// Reference entry 10e026f0; body size 149 bytes.\n'
+                     '#line 1 "ENTRY_10e026f0"\n'
+                     'void NativeNamedEventCallback::FUN_10e026f0(unsigned int arg) {\n'
+                     + opening + tail)
+        if name == 'named_event_placement_union':
+            out[name] = out[name].replace(
+                '->thunk_FUN_10df15a0(pe);\n}\n',
+                '->thunk_FUN_10df15a0(pe);\n'
+                'u.e.Event_thunk_FUN_10def0d0::~Event_thunk_FUN_10def0d0();\n}\n')
+    return out
+
+
+def wiz_state_variants():
+    """sret-temp flag-word hypotheses for entry 1061e8b0."""
+    generated = (GENERATED / 'wiz_state_callbacks.cpp').read_text()
+    prefix = generated[:generated.find('// Reference entry')]
+    source_marker = 'NativeWizState_FUN_1061e8b0::NativeWizState_FUN_1061e8b0(void *arg) {'
+    # the two trailing ops after the sret query call differ per variant
+    tail_common = ('{ RecoveredString_FUN_1008c50b name("SCSubmitDiagsWizardDonePage");\n'
+                   'thunk_FUN_106de0c0(&name, arg); }\n'
+                   'vftable = &DAT_118bea44;\n')
+    tail_end = ('vftable = &DAT_118bea58;\n'
+                'DAT_121a2244 = (unsigned int)this;\n}\n')
+    variants = {
+        # control: bare temporary form (current tranche model)
+        'wiz_temp_current': tail_common + 'thunk_FUN_106dfa00().endsWith("Page");\n',
+        # named local initialized by sret — MSVC marks it flag-constructed
+        'wiz_named_sret': tail_common + (
+            'RecoveredString_FUN_1008c50b s2 = thunk_FUN_106dfa00();\n'
+            's2.endsWith("Page");\n'),
+        # placement-new into the dead scalar param slot: callee constructs
+        # directly into arg storage via copy-elided sret
+        'wiz_placement_param': tail_common + (
+            'RecoveredString_FUN_1008c50b *pa = new (&arg) '
+            'RecoveredString_FUN_1008c50b(thunk_FUN_106dfa00());\n'
+            'pa->endsWith("Page");\n'
+            'pa->~RecoveredString_FUN_1008c50b();\n'),
+        # condition-scoped temporary
+        'wiz_if_temp': tail_common + (
+            'if (thunk_FUN_106dfa00().endsWith("Page")) { }\n'),
+    }
+    out = {}
+    for name, body in variants.items():
+        out[name] = (prefix +
+                     '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+                     '#line 1 "ENTRY_1061e8b0"\n'
+                     + source_marker + '\n' + body + tail_end)
+    return out
+
+
+def event_copier_variants():
+    """ctor-result eax reuse hypotheses for entry 10df9390."""
+    generated = (GENERATED / 'event_copier_callbacks.cpp').read_text()
+    prefix = generated[:generated.find('// Reference entry')]
+    sig = 'NativeCopierOutput *NativeCopierOutput::FUN_10df9390() {'
+    head = 'NativeCopierOutput * volatile self = this;\n'
+    variants = {
+        # control: named locals (current tranche model)
+        'copier_named': head + (
+            'NativeCopierSource_FUN_10df9440 a;\n'
+            'NativeCopierAggregate_FUN_10deee60 agg(a);\n'
+            'NativeCopierEvent_FUN_10df9510 e;\n'
+            'e.thunk_FUN_10defac0(this, agg);\n'
+            'return this;\n'),
+        # const-ref bound temporary source: MSVC pushes the ctor eax result
+        'copier_ref_temp': head + (
+            'const NativeCopierSource_FUN_10df9440 &a = NativeCopierSource_FUN_10df9440();\n'
+            'NativeCopierAggregate_FUN_10deee60 agg(a);\n'
+            'NativeCopierEvent_FUN_10df9510 e;\n'
+            'e.thunk_FUN_10defac0(this, agg);\n'
+            'return this;\n'),
+        # temporary receiver: Event().thunk binds ecx to the ctor eax result
+        'copier_temp_recv': head + (
+            'NativeCopierSource_FUN_10df9440 a;\n'
+            'NativeCopierAggregate_FUN_10deee60 agg(a);\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this, agg);\n'
+            'return this;\n'),
+        # both: ref-bound source temp + temporary receiver
+        'copier_both_temp': head + (
+            'const NativeCopierSource_FUN_10df9440 &a = NativeCopierSource_FUN_10df9440();\n'
+            'NativeCopierAggregate_FUN_10deee60 agg(a);\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this, agg);\n'
+            'return this;\n'),
+    }
+    out = {}
+    for name, body in variants.items():
+        out[name] = (prefix +
+                     '\n// Reference entry 10df9390; body size 137 bytes.\n'
+                     '#line 1 "ENTRY_10df9390"\n' + sig + '\n' + body + '}\n')
+    return out
+
+
+def delayed_variants():
+    """param-reload hypotheses for entry 107fef90 (native reloads [ebp+8])."""
+    generated = (GENERATED / 'delayed_event_callbacks.cpp').read_text()
+    prefix = generated[:generated.find('// Reference entry')]
+    decl = 'void FUN_107fef90(NativeDelayedDispatcher *);'
+    body1 = ('if (dispatcher->thunk_FUN_10def450(NativeDelayedEvent_FUN_10dfbb10()))'
+             ' { thunk_FUN_10ebbab0(16456); return; }')
+    body2 = ('if (dispatcher->thunk_FUN_10def490(NativeFallbackEvent_FUN_10dfcab0())) {\n'
+             '((NativeFallbackResult_10c *)thunk_FUN_10eb41b0())->flag = 1;\n}')
+    variants = {
+        # control: plain param
+        'delayed_plain': ('NativeDelayedCallback::FUN_107fef90(NativeDelayedDispatcher *dispatcher)',
+                          decl, body1 + '\n' + body2),
+        # volatile param slot: forces a fresh [ebp+8] read per use
+        'delayed_volatile_param': (
+            'NativeDelayedCallback::FUN_107fef90(NativeDelayedDispatcher * volatile dispatcher)',
+            'void FUN_107fef90(NativeDelayedDispatcher * volatile);',
+            body1 + '\n' + body2),
+        # volatile lvalue read of the param at each use site (old form)
+        'delayed_volatile_read': (
+            'NativeDelayedCallback::FUN_107fef90(NativeDelayedDispatcher *dispatcher)',
+            decl,
+            ('if ((*(NativeDelayedDispatcher * volatile *)&dispatcher)'
+             '->thunk_FUN_10def450(NativeDelayedEvent_FUN_10dfbb10()))'
+             ' { thunk_FUN_10ebbab0(16456); return; }\n'
+             'if ((*(NativeDelayedDispatcher * volatile *)&dispatcher)'
+             '->thunk_FUN_10def490(NativeFallbackEvent_FUN_10dfcab0())) {\n'
+             '((NativeFallbackResult_10c *)thunk_FUN_10eb41b0())->flag = 1;\n}')),
+        # param address escapes: MSVC may stop proving the slot unmodified
+        'delayed_addr_taken': (
+            'NativeDelayedCallback::FUN_107fef90(NativeDelayedDispatcher *dispatcher)',
+            decl,
+            'NativeDelayedDispatcher **slot = &dispatcher;\n(void)slot;\n' + body1 + '\n' + body2),
+    }
+    out = {}
+    for name, (sig_tail, decl_repl, body) in variants.items():
+        src = prefix.replace(decl, decl_repl)
+        out[name] = (src +
+                     '\n// Reference entry 107fef90; body size 203 bytes.\n'
+                     '#line 1 "ENTRY_107fef90"\nvoid ' + sig_tail + ' {\n' + body + '\n}\n')
+    return out
+
+
 def main():
     VARIANTS.mkdir(parents=True, exist_ok=True)
     manifest = []
     for entry, variants, inventory_dir in (
             ('10687d70', op_ref_variants(), 'compiled-cpp-op-ref-ctors'),
-            ('10687e80', op_impl_variants(), 'compiled-cpp-op-impl-ctors')):
+            ('10687e80', op_impl_variants(), 'compiled-cpp-op-impl-ctors'),
+            ('10e026f0', named_event_variants(),
+             'compiled-cpp-named-event-callbacks'),
+            ('1061e8b0', wiz_state_variants(),
+             'compiled-cpp-wiz-state-callbacks'),
+            ('10df9390', event_copier_variants(),
+             'compiled-cpp-event-copier-callbacks'),
+            ('107fef90', delayed_variants(),
+             'compiled-cpp-delayed-event-callbacks')):
         inventory = json.loads(
             (ANALYSIS / inventory_dir / 'reference-eh-inventory.json').read_text())
         row = [r for r in inventory if r['entry'] == entry]

@@ -82,5 +82,65 @@
   {
     "object": "op_impl_smart_decl_empty_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-smart-decl-empty"
+  },
+  {
+    "object": "named_event_memberinit_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-memberinit"
+  },
+  {
+    "object": "named_event_placement_base_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-placement-base"
+  },
+  {
+    "object": "named_event_placement_union_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-placement-union"
+  },
+  {
+    "object": "wiz_temp_current_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-temp-current"
+  },
+  {
+    "object": "wiz_named_sret_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-named-sret"
+  },
+  {
+    "object": "wiz_placement_param_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-placement-param"
+  },
+  {
+    "object": "wiz_if_temp_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-if-temp"
+  },
+  {
+    "object": "copier_named_reference_flags",
+    "directory": "analysis/ctor-scope-copier-named"
+  },
+  {
+    "object": "copier_ref_temp_reference_flags",
+    "directory": "analysis/ctor-scope-copier-ref-temp"
+  },
+  {
+    "object": "copier_temp_recv_reference_flags",
+    "directory": "analysis/ctor-scope-copier-temp-recv"
+  },
+  {
+    "object": "copier_both_temp_reference_flags",
+    "directory": "analysis/ctor-scope-copier-both-temp"
+  },
+  {
+    "object": "delayed_plain_reference_flags",
+    "directory": "analysis/ctor-scope-delayed-plain"
+  },
+  {
+    "object": "delayed_volatile_param_reference_flags",
+    "directory": "analysis/ctor-scope-delayed-volatile-param"
+  },
+  {
+    "object": "delayed_volatile_read_reference_flags",
+    "directory": "analysis/ctor-scope-delayed-volatile-read"
+  },
+  {
+    "object": "delayed_addr_taken_reference_flags",
+    "directory": "analysis/ctor-scope-delayed-addr-taken"
   }
 ]
