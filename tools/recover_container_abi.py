@@ -72,7 +72,7 @@ def main():
         if proof['exact_functions'] != 90 or proof['compiled_functions'] != 90 or hashlib.sha256(index.read_bytes()).hexdigest() != proof['index_sha256']:
             raise ValueError('Event constructor inventory lacks the pinned ninety-function proof')
         command.append(str(index))
-        expected |= {'10deea50', '10def0d0', '10df15a0', '105ad940'}
+        expected |= {'10deea50', '10def0d0', '10df15a0', '105ad940', '1034e100'}
     # Ghidra sometimes exits zero after a script exception; validate its exports
     # as well as the process result, and always verify original-project hashes.
     try:

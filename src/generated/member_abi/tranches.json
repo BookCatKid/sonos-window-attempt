@@ -206,5 +206,9 @@
   {
     "object": "property_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-property-callbacks"
+  },
+  {
+    "object": "string_property_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-string-property-callbacks"
   }
 ]

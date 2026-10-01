@@ -51,7 +51,7 @@ public class RestoreContainerCallABI extends GhidraScript {
         String[] args=getScriptArgs();if(args.length!=2&&args.length!=3)throw new IllegalArgumentException("callers.txt output_directory [proven_event_constructor_index.tsv]");
         Path output=Path.of(args[1]);Files.createDirectories(output);
         List<String> entries=new ArrayList<>(Files.readAllLines(Path.of(args[0])));entries.add("10dee620");
-        if(args.length==3)entries.addAll(Arrays.asList("10deea50","10def0d0","10df15a0","105ad940"));
+        if(args.length==3)entries.addAll(Arrays.asList("10deea50","10def0d0","10df15a0","105ad940","1034e100"));
         decompiler=new DecompInterface();if(!decompiler.openProgram(currentProgram))throw new IOException("Decompiler cannot open program");
         try {
             export(entries,output.resolve("before.jsonl"));
@@ -128,6 +128,13 @@ public class RestoreContainerCallABI extends GhidraScript {
                     memberABI("10def0d0",eventPointer,VoidDataType.dataType,0);
                     memberABI("10df15a0",pointer,VoidDataType.dataType,4,eventPointer);
                     memberABI("105ad940",pointer,VoidDataType.dataType,4,eventPointer);
+                    // Both native exits return the caller's four-byte string
+                    // storage in EAX and pop its pointer; ECX is the source.
+                    StructureDataType stringValue=new StructureDataType(new CategoryPath("/RecoveryProof"),"RecoveredStringValue",0,dtm);
+                    stringValue.add(UnsignedIntegerDataType.dataType,4,"rep",null);
+                    DataType stringType=dtm.addDataType(stringValue,DataTypeConflictHandler.REPLACE_HANDLER);
+                    DataType stringPointer=new PointerDataType(stringType,4,dtm);
+                    memberABI("1034e100",pointer,stringPointer,4,stringPointer);
                     for(String entry:Arrays.asList("10e00c90","10e00e20")) {
                         Function f=getFunctionAt(toAddr(entry));
                         Parameter ret=new ReturnParameterImpl(eventPointer,currentProgram.getRegister("EAX"),currentProgram);

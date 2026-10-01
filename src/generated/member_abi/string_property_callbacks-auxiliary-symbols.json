@@ -1,0 +1,16 @@
+[
+  {
+    "symbol": "??1NativeStringPropertyEvent_10e023b0@@QAE@XZ",
+    "owner_entry": "10e023b0",
+    "state": 3,
+    "call_target": "10073c27",
+    "body_entry": "10dff220"
+  },
+  {
+    "symbol": "??1NativeStringPropertyEvent_10e02550@@QAE@XZ",
+    "owner_entry": "10e02550",
+    "state": 3,
+    "call_target": "10098bc6",
+    "body_entry": "10954c80"
+  }
+]
