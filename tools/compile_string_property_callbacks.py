@@ -49,19 +49,18 @@ def main():
         source+='RecoveredStringValue_FUN_1008c50b *value=source->thunk_FUN_1034e100(&product);\n'
         source+='{ '+classname+' event;\n'
         for key,method,value in [(labels[1],'setInteger','protocol'),(labels[2],'setString','(SCStr *)value')]:
-            source+='{ RecoveredString_FUN_1008c50b key("'+key+'");\n'
-            source+='((NativePropertyBag *)event.representation.properties)->'+method+'((SCStr *)&key,'+value+'); }\n'
+            source+='((NativePropertyBag *)event.representation.properties)->'+method+'(RecoveredString_FUN_1008c50b("'+key+'"),'+value+');\n'
         source+='((NativePropertyDispatcher *)((char *)this + '+str(int(receiver.group(1),16))+'))->thunk_FUN_10df15a0(&event);\n}\n}\n'
         candidates.append({**record,'source':source,'value_declaration':declaration})
     if not candidates:raise SystemExit('No caller-owned string callbacks accepted')
     library=LIBRARY.replace('FactoryString','RecoveredString_FUN_1008c50b').replace(
-        '~Event_thunk_FUN_10def0d0() noexcept(false);','~Event_thunk_FUN_10def0d0() noexcept;')+PROPERTY_LIBRARY+STRING_LIBRARY
+        '~Event_thunk_FUN_10def0d0() noexcept(false);','~Event_thunk_FUN_10def0d0() noexcept;')+PROPERTY_LIBRARY.replace('SCStr *key,','const RecoveredString_FUN_1008c50b &key,')+STRING_LIBRARY
     library+=''.join(r['value_declaration'] for r in candidates)
     library+='struct NativeStringPropertyCallback { '+''.join('void FUN_'+r['entry']+'(NativeStringSource *,unsigned int); ' for r in candidates)+'};\n'
     candidates=[{**r,'abi_declarations':{'string_property_callback_library':library}} for r in candidates]
     evidence={r['entry']:r for r in map(json.loads,(ROOT/'analysis/eh-lifetime-evidence.jsonl').open())}
     roles=[('??1NativeStringPropertyEvent_'+r['entry']+'@@QAE@XZ',r['entry'],3) for r in candidates]
-    emit_variant('string_property_callbacks',candidates,evidence,roles)
+    emit_variant('string_property_callbacks_temporary',candidates,evidence,roles)
 
 
 if __name__=='__main__':main()
