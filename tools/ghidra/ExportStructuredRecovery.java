@@ -51,6 +51,7 @@ public class ExportStructuredRecovery extends GhidraScript {
         if(args[1].endsWith(".gz"))output=new GZIPOutputStream(output);
         try(PrintWriter out=new PrintWriter(new OutputStreamWriter(output,StandardCharsets.UTF_8))) {
             for(String entry:Files.readAllLines(Path.of(args[0]))) {
+                if(entry.trim().isEmpty())continue;
                 monitor.checkCancelled();Function f=getFunctionAt(toAddr(entry.trim()));
                 if(f==null||f.isThunk())throw new IOException("Expected native non-thunk function "+entry);
                 Map<String,Object> row=new LinkedHashMap<>();row.put("schema",1);row.put("entry",entry.trim());

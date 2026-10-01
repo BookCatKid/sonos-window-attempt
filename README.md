@@ -5,7 +5,7 @@
 Reconstruct `sclib-csharp.dll` from source and compare each candidate build byte for
 byte with the installed Windows binary. The installed files are retained as immutable
 reference inputs. A matching build has **not** been produced yet.
-All authored reconstruction source in this workspace is C++ only; do not add
+Reconstruction source is C or C++; do not add
 handwritten assembler source or inline assembler instructions.
 The [rebuild target](docs/rebuild-target.md) requires 100% byte identity
 and distinguishes pseudocode, compiled objects, matched functions, and a linked DLL.
@@ -26,6 +26,11 @@ bytes at their final file offsets. All six recovered non-executable sections
 are byte-identical. Its complete-file aligned match is 37.3162%, including
 coincidental matches in zero-filled unbuilt regions; the 100% gate still fails.
 See the recovery strategy for the reproducible placement command.
+
+The [whole-library and original-layout experiments](docs/large-scale-recovery.md)
+test genuine LINK reservations, rebuild fingerprinted zlib/Expat C modules,
+export structured native/SSA evidence, and prepare same-host Windows matching.
+Their experimental results do not increase the accepted coverage figures above.
 
 ## Layout
 

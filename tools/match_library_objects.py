@@ -15,6 +15,50 @@ from classify_functions import DLL, ROOT, section_map, function_bytes
 from compare_compiled_ghidra import DISASSEMBLER, read_coff, resolve_known_relocations
 
 
+def imported_targets(reference, inventory):
+    """Bind CRT calls from native PE import names and decoded import/thunk chains."""
+    base,sections=section_map(reference)
+    optional=struct.unpack_from('<I',reference,0x3c)[0]+24
+    import_rva,import_size=struct.unpack_from('<II',reference,optional+96+8)
+    result=defaultdict(list);iat_names={}
+    def read(va,size):return function_bytes(reference,va,size,base,sections)
+    def cstring(va):
+        value=bytearray()
+        for i in range(4096):
+            byte=read(va+i,1)
+            if not byte or byte==b'\0':return bytes(value).decode('ascii')
+            value.extend(byte)
+        raise ValueError('Unterminated PE import name')
+    for offset in range(0,import_size,20):
+        descriptor=read(base+import_rva+offset,20)
+        if len(descriptor)!=20:raise ValueError('Invalid import descriptor')
+        if descriptor==b'\0'*20:break
+        original,_,_,_,first=struct.unpack('<IIIII',descriptor)
+        for i in range(65536):
+            raw=read(base+(original or first)+i*4,4)
+            if len(raw)!=4:raise ValueError('Invalid import lookup table')
+            name_rva=struct.unpack('<I',raw)[0]
+            if name_rva==0:break
+            if name_rva&0x80000000:continue
+            name=cstring(base+name_rva+2);iat=base+first+i*4;iat_names[iat]=name
+            result['__imp__'+name].append(iat)
+    jumps=[]
+    with inventory.open(newline='') as stream:
+        for row in csv.DictReader(stream,delimiter='\t'):
+            entry=int(row['entry'],16);size=int(row['body_bytes']);code=read(entry,min(size,6))
+            if code[:2]==b'\xff\x25' and len(code)==6:
+                name=iat_names.get(struct.unpack_from('<I',code,2)[0])
+                if name:result['_'+name].append(entry)
+            elif size==5 and code[:1]==b'\xe9':
+                jumps.append((entry,entry+5+struct.unpack_from('<i',code,1)[0]))
+    for _ in range(len(jumps)+1):
+        destination_names={va:name for name,vas in result.items() if not name.startswith('__imp__') for va in vas}
+        additions=[(source,destination_names[target]) for source,target in jumps if target in destination_names and source not in destination_names]
+        if not additions:break
+        for va,name in additions:result[name].append(va)
+    return dict(result)
+
+
 def bodies(path):
     sections, symbols, by_index=read_coff(path)
     grouped=defaultdict(list)
@@ -70,6 +114,7 @@ def match(objects, reference, inventory):
         for r in csv.DictReader(stream,delimiter='\t'):
             if r['thunk']=='false' and r['external']=='false':sizes[int(r['entry'],16)]=int(r['body_bytes'])
     candidates=[]
+    imports=imported_targets(reference,inventory)
     for path in objects:
         for b in bodies(path):
             code=b['code'];runs=fixed_runs(code,b['relocs'])
@@ -93,7 +138,7 @@ def match(objects, reference, inventory):
     # guessed displacements. Admit only a closed graph of completely verified bodies.
     active={i for i in range(len(candidates))}
     def targets(active):
-        global_names=defaultdict(list);local_names=defaultdict(list)
+        global_names=defaultdict(list,{k:list(v) for k,v in imports.items()});local_names=defaultdict(list)
         for i in active:
             b=candidates[i];local_names[(b['object'],b['symbol'])].append(b['entry'])
             if b['public']:global_names[b['symbol']].append(b['entry'])

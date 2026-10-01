@@ -15,7 +15,8 @@ def inspect(directory):
     for name in ('fresh','full','incremental'):
         dll=(directory/(name+'.dll')).read_bytes();base,sections=section_map(dll)
         mappings=[(symbol,int(address,16)) for symbol,address in re.findall(
-            r'\s(_checksum_\d)\s+([0-9a-fA-F]{8})\s+f\s+', (directory/(name+'.map')).read_text())]
+            r'\s(_?checksum_\d)\s+([0-9a-fA-F]{8})\s+f\s+', (directory/(name+'.map')).read_text())]
+        if len(mappings)!=6:raise ValueError('Expected six native checksum functions in '+name+' MAP')
         mappings.sort(key=lambda item:item[1]);rows=[]
         for i,(symbol,address) in enumerate(mappings[:-1]):
             next_va=mappings[i+1][1];raw=function_bytes(dll,address,next_va-address,base,sections)

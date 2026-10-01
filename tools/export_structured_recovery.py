@@ -41,7 +41,8 @@ def main():
     for project in [isolated,*originals]:
         if output==project.resolve() or project.resolve() in output.parents:raise ValueError('Export overlaps project')
     output.mkdir(parents=True,exist_ok=True);export=output/'functions.jsonl.gz'
-    expected=set(a.entries.read_text().splitlines())
+    expected={line.strip() for line in a.entries.read_text().splitlines() if line.strip()}
+    if not expected:raise ValueError('No native functions selected')
     command=[str(a.headless),str(isolated),'WindowAttempt','-process','sclib-csharp.dll',
              '-noanalysis','-readOnly','-scriptPath',str(ROOT/'tools/ghidra'),'-postScript',
              'ExportStructuredRecovery.java',str(a.entries.resolve()),str(export)]

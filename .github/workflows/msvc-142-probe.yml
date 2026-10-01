@@ -120,12 +120,16 @@ jobs:
           if errorlevel 1 exit /b 1
 
       - name: Compare on persistent Windows worker
-        if: github.event.inputs.persistent_worker == 'true' && github.event.inputs.build_experiments == 'true'
+        if: github.event.inputs.persistent_worker == 'true'
         shell: cmd
         run: |
           python -m pip install capstone==5.0.9
           if errorlevel 1 exit /b 1
-          python tools\run_worker_matching.py --evidence-root C:\SonosRecovery\evidence --objects-root out\libraries --output out\matching
+          if "${{ github.event.inputs.build_experiments }}"=="true" (
+            python tools\run_worker_matching.py --evidence-root C:\SonosRecovery\evidence --objects-root out\libraries --output out\matching
+          ) else (
+            python tools\run_worker_matching.py --evidence-root C:\SonosRecovery\evidence --member-objects-root out --output out\matching
+          )
           if errorlevel 1 exit /b 1
 
       - name: Upload compiler outputs
