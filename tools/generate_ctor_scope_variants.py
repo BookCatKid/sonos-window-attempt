@@ -879,6 +879,16 @@ def main():
             manifest.append({'object': name + '_reference_flags',
                              'directory': str(directory.relative_to(ROOT))})
     (VARIANTS / 'tranches.json').write_text(json.dumps(manifest, indent=2) + '\n')
+    # LTCG probes: the native repoint signature (call-scope spill + funclet
+    # reading it bare) implies member ctors were real calls at frontend
+    # lowering and inlined afterwards — the /GL + /LTCG shape. Emit sources
+    # for a separate /GL compile + /LTCG link step in the probe build.
+    ltcg_dir = ROOT / 'src/generated/ltcg_variants'
+    ltcg_dir.mkdir(parents=True, exist_ok=True)
+    for name in ('op_ref_outline_split', 'op_impl_smart_outline_split',
+                 'op_impl_smart_split', 'op_ref_split'):
+        (ltcg_dir / (name + '_ltcg.cpp')).write_text(
+            (VARIANTS / (name + '.cpp')).read_text())
     print(f'{len(manifest)} ctor-scope variants emitted')
 
 

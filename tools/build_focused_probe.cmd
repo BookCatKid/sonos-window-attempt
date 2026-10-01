@@ -20,6 +20,14 @@ for %%F in (src\generated\ctor_scope_variants\*.cpp) do (
   cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\%%~nF_reference_flags.obj %%F > out\%%~nF_reference_flags.log 2>&1
   if errorlevel 1 set PROBE_FAILED=1
 )
+rem LTCG probes: /GL objects carry IL, so member-ctor calls keep their
+rem construction scopes until link time; link /LTCG inlines the bodies and
+rem the realized machine code shows whether the spill repoint survives
+for %%F in (src\generated\ltcg_variants\*.cpp) do (
+  cl /nologo /O2 /bigobj /GS /GR /EHsc /GL /c /Foout\%%~nF_ltcg.obj %%F > out\%%~nF_ltcg.log 2>&1
+  if errorlevel 1 set PROBE_FAILED=1
+  link /nologo /LTCG /DLL /NOENTRY /NODEFAULTLIB /FORCE:UNRESOLVED /OUT:out\%%~nF_ltcg.dll /MAP:out\%%~nF_ltcg.map out\%%~nF_ltcg.obj >> out\%%~nF_ltcg.log 2>&1
+)
 if "%SONOS_INCLUDE_DATA_PROBE%"=="1" if exist src\generated\data\*.cpp for %%F in (src\generated\data\*.cpp) do (
   cl /nologo /O2 /bigobj /c /Foout\%%~nF.obj %%F > out\%%~nF.log 2>&1
   if errorlevel 1 set PROBE_FAILED=1
