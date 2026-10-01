@@ -1400,6 +1400,7 @@ extern int thunk_FUN_11240850(...);
 NativeOpDtor_FUN_10688910::~NativeOpDtor_FUN_10688910() {
 (void *volatile &)v0 = (void *)&DAT_118c6304;
 (void *volatile &)NativeOpDB8_10688910::vptr = (void *)&DAT_118c634c;
+_ReadWriteBarrier();
 if (NativeOpDB8_10688910::rep != 0) {
   void *p = NativeOpDB8_10688910::next;
   if (p != 0) { NativeOpDB8_10688910::rep = 0; NativeOpDB8_10688910::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1425,6 +1426,7 @@ void *q = NativeOpDB8_10688910::next;
 NativeOpDtor_FUN_109f78b0::~NativeOpDtor_FUN_109f78b0() {
 (void *volatile &)v0 = (void *)&DAT_118f1cdc;
 (void *volatile &)NativeOpDB8_109f78b0::vptr = (void *)&DAT_118f1d24;
+_ReadWriteBarrier();
 if (NativeOpDB8_109f78b0::rep != 0) {
   void *p = NativeOpDB8_109f78b0::next;
   if (p != 0) { NativeOpDB8_109f78b0::rep = 0; NativeOpDB8_109f78b0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1450,6 +1452,7 @@ void *q = NativeOpDB8_109f78b0::next;
 NativeOpDtor_FUN_109f7a00::~NativeOpDtor_FUN_109f7a00() {
 (void *volatile &)v0 = (void *)&DAT_118f1a18;
 (void *volatile &)NativeOpDB8_109f7a00::vptr = (void *)&DAT_118f1a60;
+_ReadWriteBarrier();
 if (NativeOpDB8_109f7a00::rep != 0) {
   void *p = NativeOpDB8_109f7a00::next;
   if (p != 0) { NativeOpDB8_109f7a00::rep = 0; NativeOpDB8_109f7a00::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1475,6 +1478,7 @@ void *q = NativeOpDB8_109f7a00::next;
 NativeOpDtor_FUN_109f7b50::~NativeOpDtor_FUN_109f7b50() {
 (void *volatile &)v0 = (void *)&DAT_118f1e48;
 (void *volatile &)NativeOpDB8_109f7b50::vptr = (void *)&DAT_118f1e94;
+_ReadWriteBarrier();
 if (NativeOpDB8_109f7b50::rep != 0) {
   void *p = NativeOpDB8_109f7b50::next;
   if (p != 0) { NativeOpDB8_109f7b50::rep = 0; NativeOpDB8_109f7b50::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1500,6 +1504,7 @@ void *q = NativeOpDB8_109f7b50::next;
 NativeOpDtor_FUN_109f7ca0::~NativeOpDtor_FUN_109f7ca0() {
 (void *volatile &)v0 = (void *)&DAT_118f1b74;
 (void *volatile &)NativeOpDB8_109f7ca0::vptr = (void *)&DAT_118f1bbc;
+_ReadWriteBarrier();
 if (NativeOpDB8_109f7ca0::rep != 0) {
   void *p = NativeOpDB8_109f7ca0::next;
   if (p != 0) { NativeOpDB8_109f7ca0::rep = 0; NativeOpDB8_109f7ca0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1525,6 +1530,7 @@ void *q = NativeOpDB8_109f7ca0::next;
 NativeOpDtor_FUN_10b6d3c0::~NativeOpDtor_FUN_10b6d3c0() {
 (void *volatile &)v0 = (void *)&DAT_1190a9b0;
 (void *volatile &)NativeOpDB8_10b6d3c0::vptr = (void *)&DAT_1190a9f8;
+_ReadWriteBarrier();
 if (NativeOpDB8_10b6d3c0::rep != 0) {
   void *p = NativeOpDB8_10b6d3c0::next;
   if (p != 0) { NativeOpDB8_10b6d3c0::rep = 0; NativeOpDB8_10b6d3c0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1550,6 +1556,7 @@ void *q = NativeOpDB8_10b6d3c0::next;
 NativeOpDtor_FUN_10b7cc90::~NativeOpDtor_FUN_10b7cc90() {
 (void *volatile &)v0 = (void *)&DAT_1190e1e8;
 (void *volatile &)NativeOpDB8_10b7cc90::vptr = (void *)&DAT_1190e234;
+_ReadWriteBarrier();
 if (NativeOpDB8_10b7cc90::rep != 0) {
   void *p = NativeOpDB8_10b7cc90::next;
   if (p != 0) { NativeOpDB8_10b7cc90::rep = 0; NativeOpDB8_10b7cc90::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1575,6 +1582,7 @@ void *q = NativeOpDB8_10b7cc90::next;
 NativeOpDtor_FUN_10b87b00::~NativeOpDtor_FUN_10b87b00() {
 (void *volatile &)v0 = (void *)&DAT_1190eb20;
 (void *volatile &)NativeOpDB8_10b87b00::vptr = (void *)&DAT_1190eb74;
+_ReadWriteBarrier();
 if (NativeOpDB8_10b87b00::rep != 0) {
   void *p = NativeOpDB8_10b87b00::next;
   if (p != 0) { NativeOpDB8_10b87b00::rep = 0; NativeOpDB8_10b87b00::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1600,6 +1608,7 @@ void *q = NativeOpDB8_10b87b00::next;
 NativeOpDtor_FUN_10b87c50::~NativeOpDtor_FUN_10b87c50() {
 (void *volatile &)v0 = (void *)&DAT_1190e7cc;
 (void *volatile &)NativeOpDB8_10b87c50::vptr = (void *)&DAT_1190e820;
+_ReadWriteBarrier();
 if (NativeOpDB8_10b87c50::rep != 0) {
   void *p = NativeOpDB8_10b87c50::next;
   if (p != 0) { NativeOpDB8_10b87c50::rep = 0; NativeOpDB8_10b87c50::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1625,6 +1634,7 @@ void *q = NativeOpDB8_10b87c50::next;
 NativeOpDtor_FUN_10b87da0::~NativeOpDtor_FUN_10b87da0() {
 (void *volatile &)v0 = (void *)&DAT_1190e8e8;
 (void *volatile &)NativeOpDB8_10b87da0::vptr = (void *)&DAT_1190e93c;
+_ReadWriteBarrier();
 if (NativeOpDB8_10b87da0::rep != 0) {
   void *p = NativeOpDB8_10b87da0::next;
   if (p != 0) { NativeOpDB8_10b87da0::rep = 0; NativeOpDB8_10b87da0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1650,6 +1660,7 @@ void *q = NativeOpDB8_10b87da0::next;
 NativeOpDtor_FUN_10b87ef0::~NativeOpDtor_FUN_10b87ef0() {
 (void *volatile &)v0 = (void *)&DAT_1190ea04;
 (void *volatile &)NativeOpDB8_10b87ef0::vptr = (void *)&DAT_1190ea58;
+_ReadWriteBarrier();
 if (NativeOpDB8_10b87ef0::rep != 0) {
   void *p = NativeOpDB8_10b87ef0::next;
   if (p != 0) { NativeOpDB8_10b87ef0::rep = 0; NativeOpDB8_10b87ef0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1675,6 +1686,7 @@ void *q = NativeOpDB8_10b87ef0::next;
 NativeOpDtor_FUN_10c4afd0::~NativeOpDtor_FUN_10c4afd0() {
 (void *volatile &)v0 = (void *)&DAT_11916cac;
 (void *volatile &)NativeOpDB8_10c4afd0::vptr = (void *)&DAT_11916cf4;
+_ReadWriteBarrier();
 if (NativeOpDB8_10c4afd0::rep != 0) {
   void *p = NativeOpDB8_10c4afd0::next;
   if (p != 0) { NativeOpDB8_10c4afd0::rep = 0; NativeOpDB8_10c4afd0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1700,6 +1712,7 @@ void *q = NativeOpDB8_10c4afd0::next;
 NativeOpDtor_FUN_10c4f390::~NativeOpDtor_FUN_10c4f390() {
 (void *volatile &)v0 = (void *)&DAT_11917598;
 (void *volatile &)NativeOpDB8_10c4f390::vptr = (void *)&DAT_119175e4;
+_ReadWriteBarrier();
 if (NativeOpDB8_10c4f390::rep != 0) {
   void *p = NativeOpDB8_10c4f390::next;
   if (p != 0) { NativeOpDB8_10c4f390::rep = 0; NativeOpDB8_10c4f390::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1725,6 +1738,7 @@ void *q = NativeOpDB8_10c4f390::next;
 NativeOpDtor_FUN_10c4f4e0::~NativeOpDtor_FUN_10c4f4e0() {
 (void *volatile &)v0 = (void *)&DAT_119176a0;
 (void *volatile &)NativeOpDB8_10c4f4e0::vptr = (void *)&DAT_119176ec;
+_ReadWriteBarrier();
 if (NativeOpDB8_10c4f4e0::rep != 0) {
   void *p = NativeOpDB8_10c4f4e0::next;
   if (p != 0) { NativeOpDB8_10c4f4e0::rep = 0; NativeOpDB8_10c4f4e0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1750,6 +1764,7 @@ void *q = NativeOpDB8_10c4f4e0::next;
 NativeOpDtor_FUN_10c4f630::~NativeOpDtor_FUN_10c4f630() {
 (void *volatile &)v0 = (void *)&DAT_119177a8;
 (void *volatile &)NativeOpDB8_10c4f630::vptr = (void *)&DAT_119177f4;
+_ReadWriteBarrier();
 if (NativeOpDB8_10c4f630::rep != 0) {
   void *p = NativeOpDB8_10c4f630::next;
   if (p != 0) { NativeOpDB8_10c4f630::rep = 0; NativeOpDB8_10c4f630::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1775,6 +1790,7 @@ void *q = NativeOpDB8_10c4f630::next;
 NativeOpDtor_FUN_10c4f780::~NativeOpDtor_FUN_10c4f780() {
 (void *volatile &)v0 = (void *)&DAT_11917a14;
 (void *volatile &)NativeOpDB8_10c4f780::vptr = (void *)&DAT_11917a60;
+_ReadWriteBarrier();
 if (NativeOpDB8_10c4f780::rep != 0) {
   void *p = NativeOpDB8_10c4f780::next;
   if (p != 0) { NativeOpDB8_10c4f780::rep = 0; NativeOpDB8_10c4f780::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1800,6 +1816,7 @@ void *q = NativeOpDB8_10c4f780::next;
 NativeOpDtor_FUN_10c4f8d0::~NativeOpDtor_FUN_10c4f8d0() {
 (void *volatile &)v0 = (void *)&DAT_11917914;
 (void *volatile &)NativeOpDB8_10c4f8d0::vptr = (void *)&DAT_1191795c;
+_ReadWriteBarrier();
 if (NativeOpDB8_10c4f8d0::rep != 0) {
   void *p = NativeOpDB8_10c4f8d0::next;
   if (p != 0) { NativeOpDB8_10c4f8d0::rep = 0; NativeOpDB8_10c4f8d0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1825,6 +1842,7 @@ void *q = NativeOpDB8_10c4f8d0::next;
 NativeOpDtor_FUN_10c55600::~NativeOpDtor_FUN_10c55600() {
 (void *volatile &)v0 = (void *)&DAT_11917ff0;
 (void *volatile &)NativeOpDB8_10c55600::vptr = (void *)&DAT_11918044;
+_ReadWriteBarrier();
 if (NativeOpDB8_10c55600::rep != 0) {
   void *p = NativeOpDB8_10c55600::next;
   if (p != 0) { NativeOpDB8_10c55600::rep = 0; NativeOpDB8_10c55600::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1850,6 +1868,7 @@ void *q = NativeOpDB8_10c55600::next;
 NativeOpDtor_FUN_10c55750::~NativeOpDtor_FUN_10c55750() {
 (void *volatile &)v0 = (void *)&DAT_1191825c;
 (void *volatile &)NativeOpDB8_10c55750::vptr = (void *)&DAT_119182b0;
+_ReadWriteBarrier();
 if (NativeOpDB8_10c55750::rep != 0) {
   void *p = NativeOpDB8_10c55750::next;
   if (p != 0) { NativeOpDB8_10c55750::rep = 0; NativeOpDB8_10c55750::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1875,6 +1894,7 @@ void *q = NativeOpDB8_10c55750::next;
 NativeOpDtor_FUN_10c558a0::~NativeOpDtor_FUN_10c558a0() {
 (void *volatile &)v0 = (void *)&DAT_11917eec;
 (void *volatile &)NativeOpDB8_10c558a0::vptr = (void *)&DAT_11917f34;
+_ReadWriteBarrier();
 if (NativeOpDB8_10c558a0::rep != 0) {
   void *p = NativeOpDB8_10c558a0::next;
   if (p != 0) { NativeOpDB8_10c558a0::rep = 0; NativeOpDB8_10c558a0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1900,6 +1920,7 @@ void *q = NativeOpDB8_10c558a0::next;
 NativeOpDtor_FUN_10c559f0::~NativeOpDtor_FUN_10c559f0() {
 (void *volatile &)v0 = (void *)&DAT_11918158;
 (void *volatile &)NativeOpDB8_10c559f0::vptr = (void *)&DAT_119181a0;
+_ReadWriteBarrier();
 if (NativeOpDB8_10c559f0::rep != 0) {
   void *p = NativeOpDB8_10c559f0::next;
   if (p != 0) { NativeOpDB8_10c559f0::rep = 0; NativeOpDB8_10c559f0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1925,6 +1946,7 @@ void *q = NativeOpDB8_10c559f0::next;
 NativeOpDtor_FUN_10c59700::~NativeOpDtor_FUN_10c59700() {
 (void *volatile &)v0 = (void *)&DAT_11918578;
 (void *volatile &)NativeOpDB8_10c59700::vptr = (void *)&DAT_119185c4;
+_ReadWriteBarrier();
 if (NativeOpDB8_10c59700::rep != 0) {
   void *p = NativeOpDB8_10c59700::next;
   if (p != 0) { NativeOpDB8_10c59700::rep = 0; NativeOpDB8_10c59700::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1950,6 +1972,7 @@ void *q = NativeOpDB8_10c59700::next;
 NativeOpDtor_FUN_10c80f90::~NativeOpDtor_FUN_10c80f90() {
 (void *volatile &)v0 = (void *)&DAT_1191af90;
 (void *volatile &)NativeOpDB8_10c80f90::vptr = (void *)&DAT_1191afd8;
+_ReadWriteBarrier();
 if (NativeOpDB8_10c80f90::rep != 0) {
   void *p = NativeOpDB8_10c80f90::next;
   if (p != 0) { NativeOpDB8_10c80f90::rep = 0; NativeOpDB8_10c80f90::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1975,6 +1998,7 @@ void *q = NativeOpDB8_10c80f90::next;
 NativeOpDtor_FUN_10c810e0::~NativeOpDtor_FUN_10c810e0() {
 (void *volatile &)v0 = (void *)&DAT_1191b04c;
 (void *volatile &)NativeOpDB8_10c810e0::vptr = (void *)&DAT_1191b094;
+_ReadWriteBarrier();
 if (NativeOpDB8_10c810e0::rep != 0) {
   void *p = NativeOpDB8_10c810e0::next;
   if (p != 0) { NativeOpDB8_10c810e0::rep = 0; NativeOpDB8_10c810e0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2000,6 +2024,7 @@ void *q = NativeOpDB8_10c810e0::next;
 NativeOpDtor_FUN_10cc12a0::~NativeOpDtor_FUN_10cc12a0() {
 (void *volatile &)v0 = (void *)&DAT_1191edd4;
 (void *volatile &)NativeOpDB8_10cc12a0::vptr = (void *)&DAT_1191ee50;
+_ReadWriteBarrier();
 if (NativeOpDB8_10cc12a0::rep != 0) {
   void *p = NativeOpDB8_10cc12a0::next;
   if (p != 0) { NativeOpDB8_10cc12a0::rep = 0; NativeOpDB8_10cc12a0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2025,6 +2050,7 @@ void *q = NativeOpDB8_10cc12a0::next;
 NativeOpDtor_FUN_10cca490::~NativeOpDtor_FUN_10cca490() {
 (void *volatile &)v0 = (void *)&DAT_1191f540;
 (void *volatile &)NativeOpDB8_10cca490::vptr = (void *)&DAT_1191f588;
+_ReadWriteBarrier();
 if (NativeOpDB8_10cca490::rep != 0) {
   void *p = NativeOpDB8_10cca490::next;
   if (p != 0) { NativeOpDB8_10cca490::rep = 0; NativeOpDB8_10cca490::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2050,6 +2076,7 @@ void *q = NativeOpDB8_10cca490::next;
 NativeOpDtor_FUN_10cca5e0::~NativeOpDtor_FUN_10cca5e0() {
 (void *volatile &)v0 = (void *)&DAT_1191f194;
 (void *volatile &)NativeOpDB8_10cca5e0::vptr = (void *)&DAT_1191f1dc;
+_ReadWriteBarrier();
 if (NativeOpDB8_10cca5e0::rep != 0) {
   void *p = NativeOpDB8_10cca5e0::next;
   if (p != 0) { NativeOpDB8_10cca5e0::rep = 0; NativeOpDB8_10cca5e0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2075,6 +2102,7 @@ void *q = NativeOpDB8_10cca5e0::next;
 NativeOpDtor_FUN_10cca730::~NativeOpDtor_FUN_10cca730() {
 (void *volatile &)v0 = (void *)&DAT_1191ef60;
 (void *volatile &)NativeOpDB8_10cca730::vptr = (void *)&DAT_1191efa8;
+_ReadWriteBarrier();
 if (NativeOpDB8_10cca730::rep != 0) {
   void *p = NativeOpDB8_10cca730::next;
   if (p != 0) { NativeOpDB8_10cca730::rep = 0; NativeOpDB8_10cca730::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2100,6 +2128,7 @@ void *q = NativeOpDB8_10cca730::next;
 NativeOpDtor_FUN_10cca880::~NativeOpDtor_FUN_10cca880() {
 (void *volatile &)v0 = (void *)&DAT_1191f0d8;
 (void *volatile &)NativeOpDB8_10cca880::vptr = (void *)&DAT_1191f120;
+_ReadWriteBarrier();
 if (NativeOpDB8_10cca880::rep != 0) {
   void *p = NativeOpDB8_10cca880::next;
   if (p != 0) { NativeOpDB8_10cca880::rep = 0; NativeOpDB8_10cca880::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2125,6 +2154,7 @@ void *q = NativeOpDB8_10cca880::next;
 NativeOpDtor_FUN_10cca9d0::~NativeOpDtor_FUN_10cca9d0() {
 (void *volatile &)v0 = (void *)&DAT_1191f01c;
 (void *volatile &)NativeOpDB8_10cca9d0::vptr = (void *)&DAT_1191f064;
+_ReadWriteBarrier();
 if (NativeOpDB8_10cca9d0::rep != 0) {
   void *p = NativeOpDB8_10cca9d0::next;
   if (p != 0) { NativeOpDB8_10cca9d0::rep = 0; NativeOpDB8_10cca9d0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2150,6 +2180,7 @@ void *q = NativeOpDB8_10cca9d0::next;
 NativeOpDtor_FUN_10ccab20::~NativeOpDtor_FUN_10ccab20() {
 (void *volatile &)v0 = (void *)&DAT_1191f250;
 (void *volatile &)NativeOpDB8_10ccab20::vptr = (void *)&DAT_1191f298;
+_ReadWriteBarrier();
 if (NativeOpDB8_10ccab20::rep != 0) {
   void *p = NativeOpDB8_10ccab20::next;
   if (p != 0) { NativeOpDB8_10ccab20::rep = 0; NativeOpDB8_10ccab20::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2175,6 +2206,7 @@ void *q = NativeOpDB8_10ccab20::next;
 NativeOpDtor_FUN_10ccac70::~NativeOpDtor_FUN_10ccac70() {
 (void *volatile &)v0 = (void *)&DAT_1191f3c8;
 (void *volatile &)NativeOpDB8_10ccac70::vptr = (void *)&DAT_1191f410;
+_ReadWriteBarrier();
 if (NativeOpDB8_10ccac70::rep != 0) {
   void *p = NativeOpDB8_10ccac70::next;
   if (p != 0) { NativeOpDB8_10ccac70::rep = 0; NativeOpDB8_10ccac70::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2200,6 +2232,7 @@ void *q = NativeOpDB8_10ccac70::next;
 NativeOpDtor_FUN_10ccadc0::~NativeOpDtor_FUN_10ccadc0() {
 (void *volatile &)v0 = (void *)&DAT_1191f484;
 (void *volatile &)NativeOpDB8_10ccadc0::vptr = (void *)&DAT_1191f4cc;
+_ReadWriteBarrier();
 if (NativeOpDB8_10ccadc0::rep != 0) {
   void *p = NativeOpDB8_10ccadc0::next;
   if (p != 0) { NativeOpDB8_10ccadc0::rep = 0; NativeOpDB8_10ccadc0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2225,6 +2258,7 @@ void *q = NativeOpDB8_10ccadc0::next;
 NativeOpDtor_FUN_10ccaf10::~NativeOpDtor_FUN_10ccaf10() {
 (void *volatile &)v0 = (void *)&DAT_1191f30c;
 (void *volatile &)NativeOpDB8_10ccaf10::vptr = (void *)&DAT_1191f354;
+_ReadWriteBarrier();
 if (NativeOpDB8_10ccaf10::rep != 0) {
   void *p = NativeOpDB8_10ccaf10::next;
   if (p != 0) { NativeOpDB8_10ccaf10::rep = 0; NativeOpDB8_10ccaf10::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2250,6 +2284,7 @@ void *q = NativeOpDB8_10ccaf10::next;
 NativeOpDtor_FUN_10cdbb90::~NativeOpDtor_FUN_10cdbb90() {
 (void *volatile &)v0 = (void *)&DAT_11920b84;
 (void *volatile &)NativeOpDB8_10cdbb90::vptr = (void *)&DAT_11920bd0;
+_ReadWriteBarrier();
 if (NativeOpDB8_10cdbb90::rep != 0) {
   void *p = NativeOpDB8_10cdbb90::next;
   if (p != 0) { NativeOpDB8_10cdbb90::rep = 0; NativeOpDB8_10cdbb90::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2275,6 +2310,7 @@ void *q = NativeOpDB8_10cdbb90::next;
 NativeOpDtor_FUN_10cdbce0::~NativeOpDtor_FUN_10cdbce0() {
 (void *volatile &)v0 = (void *)&DAT_11920a10;
 (void *volatile &)NativeOpDB8_10cdbce0::vptr = (void *)&DAT_11920a58;
+_ReadWriteBarrier();
 if (NativeOpDB8_10cdbce0::rep != 0) {
   void *p = NativeOpDB8_10cdbce0::next;
   if (p != 0) { NativeOpDB8_10cdbce0::rep = 0; NativeOpDB8_10cdbce0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2300,6 +2336,7 @@ void *q = NativeOpDB8_10cdbce0::next;
 NativeOpDtor_FUN_10ce10f0::~NativeOpDtor_FUN_10ce10f0() {
 (void *volatile &)v0 = (void *)&DAT_119211cc;
 (void *volatile &)NativeOpDB8_10ce10f0::vptr = (void *)&DAT_11921218;
+_ReadWriteBarrier();
 if (NativeOpDB8_10ce10f0::rep != 0) {
   void *p = NativeOpDB8_10ce10f0::next;
   if (p != 0) { NativeOpDB8_10ce10f0::rep = 0; NativeOpDB8_10ce10f0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2325,6 +2362,7 @@ void *q = NativeOpDB8_10ce10f0::next;
 NativeOpDtor_FUN_10cf58e0::~NativeOpDtor_FUN_10cf58e0() {
 (void *volatile &)v0 = (void *)&DAT_1192275c;
 (void *volatile &)NativeOpDB8_10cf58e0::vptr = (void *)&DAT_119227b8;
+_ReadWriteBarrier();
 if (NativeOpDB8_10cf58e0::rep != 0) {
   void *p = NativeOpDB8_10cf58e0::next;
   if (p != 0) { NativeOpDB8_10cf58e0::rep = 0; NativeOpDB8_10cf58e0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2350,6 +2388,7 @@ void *q = NativeOpDB8_10cf58e0::next;
 NativeOpDtor_FUN_10d806c0::~NativeOpDtor_FUN_10d806c0() {
 (void *volatile &)v0 = (void *)&DAT_1192f220;
 (void *volatile &)NativeOpDB8_10d806c0::vptr = (void *)&DAT_1192f268;
+_ReadWriteBarrier();
 if (NativeOpDB8_10d806c0::rep != 0) {
   void *p = NativeOpDB8_10d806c0::next;
   if (p != 0) { NativeOpDB8_10d806c0::rep = 0; NativeOpDB8_10d806c0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2375,6 +2414,7 @@ void *q = NativeOpDB8_10d806c0::next;
 NativeOpDtor_FUN_10d80810::~NativeOpDtor_FUN_10d80810() {
 (void *volatile &)v0 = (void *)&DAT_1192f398;
 (void *volatile &)NativeOpDB8_10d80810::vptr = (void *)&DAT_1192f3e0;
+_ReadWriteBarrier();
 if (NativeOpDB8_10d80810::rep != 0) {
   void *p = NativeOpDB8_10d80810::next;
   if (p != 0) { NativeOpDB8_10d80810::rep = 0; NativeOpDB8_10d80810::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2400,6 +2440,7 @@ void *q = NativeOpDB8_10d80810::next;
 NativeOpDtor_FUN_10d80960::~NativeOpDtor_FUN_10d80960() {
 (void *volatile &)v0 = (void *)&DAT_1192f164;
 (void *volatile &)NativeOpDB8_10d80960::vptr = (void *)&DAT_1192f1ac;
+_ReadWriteBarrier();
 if (NativeOpDB8_10d80960::rep != 0) {
   void *p = NativeOpDB8_10d80960::next;
   if (p != 0) { NativeOpDB8_10d80960::rep = 0; NativeOpDB8_10d80960::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2425,6 +2466,7 @@ void *q = NativeOpDB8_10d80960::next;
 NativeOpDtor_FUN_10d80ab0::~NativeOpDtor_FUN_10d80ab0() {
 (void *volatile &)v0 = (void *)&DAT_1192f2dc;
 (void *volatile &)NativeOpDB8_10d80ab0::vptr = (void *)&DAT_1192f324;
+_ReadWriteBarrier();
 if (NativeOpDB8_10d80ab0::rep != 0) {
   void *p = NativeOpDB8_10d80ab0::next;
   if (p != 0) { NativeOpDB8_10d80ab0::rep = 0; NativeOpDB8_10d80ab0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2450,6 +2492,7 @@ void *q = NativeOpDB8_10d80ab0::next;
 NativeOpDtor_FUN_10d9b8e0::~NativeOpDtor_FUN_10d9b8e0() {
 (void *volatile &)v0 = (void *)&DAT_119319d0;
 (void *volatile &)NativeOpDB8_10d9b8e0::vptr = (void *)&DAT_11931a18;
+_ReadWriteBarrier();
 if (NativeOpDB8_10d9b8e0::rep != 0) {
   void *p = NativeOpDB8_10d9b8e0::next;
   if (p != 0) { NativeOpDB8_10d9b8e0::rep = 0; NativeOpDB8_10d9b8e0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2475,6 +2518,7 @@ void *q = NativeOpDB8_10d9b8e0::next;
 NativeOpDtor_FUN_10de4fe0::~NativeOpDtor_FUN_10de4fe0() {
 (void *volatile &)v0 = (void *)&DAT_11935fbc;
 (void *volatile &)NativeOpDB8_10de4fe0::vptr = (void *)&DAT_11936014;
+_ReadWriteBarrier();
 if (NativeOpDB8_10de4fe0::rep != 0) {
   void *p = NativeOpDB8_10de4fe0::next;
   if (p != 0) { NativeOpDB8_10de4fe0::rep = 0; NativeOpDB8_10de4fe0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2500,6 +2544,7 @@ void *q = NativeOpDB8_10de4fe0::next;
 NativeOpDtor_FUN_10e92f40::~NativeOpDtor_FUN_10e92f40() {
 (void *volatile &)v0 = (void *)&DAT_119468ac;
 (void *volatile &)NativeOpDB8_10e92f40::vptr = (void *)&DAT_119468f8;
+_ReadWriteBarrier();
 if (NativeOpDB8_10e92f40::rep != 0) {
   void *p = NativeOpDB8_10e92f40::next;
   if (p != 0) { NativeOpDB8_10e92f40::rep = 0; NativeOpDB8_10e92f40::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2525,6 +2570,7 @@ void *q = NativeOpDB8_10e92f40::next;
 NativeOpDtor_FUN_10ef1910::~NativeOpDtor_FUN_10ef1910() {
 (void *volatile &)v0 = (void *)&DAT_1194b774;
 (void *volatile &)NativeOpDB8_10ef1910::vptr = (void *)&DAT_1194b7bc;
+_ReadWriteBarrier();
 if (NativeOpDB8_10ef1910::rep != 0) {
   void *p = NativeOpDB8_10ef1910::next;
   if (p != 0) { NativeOpDB8_10ef1910::rep = 0; NativeOpDB8_10ef1910::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2550,6 +2596,7 @@ void *q = NativeOpDB8_10ef1910::next;
 NativeOpDtor_FUN_10f0ef30::~NativeOpDtor_FUN_10f0ef30() {
 (void *volatile &)v0 = (void *)&DAT_1194ce28;
 (void *volatile &)NativeOpDB8_10f0ef30::vptr = (void *)&DAT_1194ce88;
+_ReadWriteBarrier();
 if (NativeOpDB8_10f0ef30::rep != 0) {
   void *p = NativeOpDB8_10f0ef30::next;
   if (p != 0) { NativeOpDB8_10f0ef30::rep = 0; NativeOpDB8_10f0ef30::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2575,6 +2622,7 @@ void *q = NativeOpDB8_10f0ef30::next;
 NativeOpDtor_FUN_10f0f080::~NativeOpDtor_FUN_10f0f080() {
 (void *volatile &)v0 = (void *)&DAT_1194cc50;
 (void *volatile &)NativeOpDB8_10f0f080::vptr = (void *)&DAT_1194ccb0;
+_ReadWriteBarrier();
 if (NativeOpDB8_10f0f080::rep != 0) {
   void *p = NativeOpDB8_10f0f080::next;
   if (p != 0) { NativeOpDB8_10f0f080::rep = 0; NativeOpDB8_10f0f080::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2600,6 +2648,7 @@ void *q = NativeOpDB8_10f0f080::next;
 NativeOpDtor_FUN_10f0f1d0::~NativeOpDtor_FUN_10f0f1d0() {
 (void *volatile &)v0 = (void *)&DAT_1194cd3c;
 (void *volatile &)NativeOpDB8_10f0f1d0::vptr = (void *)&DAT_1194cd9c;
+_ReadWriteBarrier();
 if (NativeOpDB8_10f0f1d0::rep != 0) {
   void *p = NativeOpDB8_10f0f1d0::next;
   if (p != 0) { NativeOpDB8_10f0f1d0::rep = 0; NativeOpDB8_10f0f1d0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2625,6 +2674,7 @@ void *q = NativeOpDB8_10f0f1d0::next;
 NativeOpDtor_FUN_10f259f0::~NativeOpDtor_FUN_10f259f0() {
 (void *volatile &)v0 = (void *)&DAT_1194e61c;
 (void *volatile &)NativeOpDB8_10f259f0::vptr = (void *)&DAT_1194e664;
+_ReadWriteBarrier();
 if (NativeOpDB8_10f259f0::rep != 0) {
   void *p = NativeOpDB8_10f259f0::next;
   if (p != 0) { NativeOpDB8_10f259f0::rep = 0; NativeOpDB8_10f259f0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2650,6 +2700,7 @@ void *q = NativeOpDB8_10f259f0::next;
 NativeOpDtor_FUN_10f31800::~NativeOpDtor_FUN_10f31800() {
 (void *volatile &)v0 = (void *)&DAT_1194f378;
 (void *volatile &)NativeOpDB8_10f31800::vptr = (void *)&DAT_1194f3c0;
+_ReadWriteBarrier();
 if (NativeOpDB8_10f31800::rep != 0) {
   void *p = NativeOpDB8_10f31800::next;
   if (p != 0) { NativeOpDB8_10f31800::rep = 0; NativeOpDB8_10f31800::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2675,6 +2726,7 @@ void *q = NativeOpDB8_10f31800::next;
 NativeOpDtor_FUN_10f31950::~NativeOpDtor_FUN_10f31950() {
 (void *volatile &)v0 = (void *)&DAT_1194f2b8;
 (void *volatile &)NativeOpDB8_10f31950::vptr = (void *)&DAT_1194f300;
+_ReadWriteBarrier();
 if (NativeOpDB8_10f31950::rep != 0) {
   void *p = NativeOpDB8_10f31950::next;
   if (p != 0) { NativeOpDB8_10f31950::rep = 0; NativeOpDB8_10f31950::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2700,6 +2752,7 @@ void *q = NativeOpDB8_10f31950::next;
 NativeOpDtor_FUN_10f31aa0::~NativeOpDtor_FUN_10f31aa0() {
 (void *volatile &)v0 = (void *)&DAT_1194f1f8;
 (void *volatile &)NativeOpDB8_10f31aa0::vptr = (void *)&DAT_1194f240;
+_ReadWriteBarrier();
 if (NativeOpDB8_10f31aa0::rep != 0) {
   void *p = NativeOpDB8_10f31aa0::next;
   if (p != 0) { NativeOpDB8_10f31aa0::rep = 0; NativeOpDB8_10f31aa0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2725,6 +2778,7 @@ void *q = NativeOpDB8_10f31aa0::next;
 NativeOpDtor_FUN_10f31bf0::~NativeOpDtor_FUN_10f31bf0() {
 (void *volatile &)v0 = (void *)&DAT_1194f138;
 (void *volatile &)NativeOpDB8_10f31bf0::vptr = (void *)&DAT_1194f180;
+_ReadWriteBarrier();
 if (NativeOpDB8_10f31bf0::rep != 0) {
   void *p = NativeOpDB8_10f31bf0::next;
   if (p != 0) { NativeOpDB8_10f31bf0::rep = 0; NativeOpDB8_10f31bf0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2750,6 +2804,7 @@ void *q = NativeOpDB8_10f31bf0::next;
 NativeOpDtor_FUN_10f570c0::~NativeOpDtor_FUN_10f570c0() {
 (void *volatile &)v0 = (void *)&DAT_11952090;
 (void *volatile &)NativeOpDB8_10f570c0::vptr = (void *)&DAT_119520dc;
+_ReadWriteBarrier();
 if (NativeOpDB8_10f570c0::rep != 0) {
   void *p = NativeOpDB8_10f570c0::next;
   if (p != 0) { NativeOpDB8_10f570c0::rep = 0; NativeOpDB8_10f570c0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2775,6 +2830,7 @@ void *q = NativeOpDB8_10f570c0::next;
 NativeOpDtor_FUN_10f57210::~NativeOpDtor_FUN_10f57210() {
 (void *volatile &)v0 = (void *)&DAT_11951f24;
 (void *volatile &)NativeOpDB8_10f57210::vptr = (void *)&DAT_11951f6c;
+_ReadWriteBarrier();
 if (NativeOpDB8_10f57210::rep != 0) {
   void *p = NativeOpDB8_10f57210::next;
   if (p != 0) { NativeOpDB8_10f57210::rep = 0; NativeOpDB8_10f57210::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2800,6 +2856,7 @@ void *q = NativeOpDB8_10f57210::next;
 NativeOpDtor_FUN_10f57360::~NativeOpDtor_FUN_10f57360() {
 (void *volatile &)v0 = (void *)&DAT_119521fc;
 (void *volatile &)NativeOpDB8_10f57360::vptr = (void *)&DAT_11952244;
+_ReadWriteBarrier();
 if (NativeOpDB8_10f57360::rep != 0) {
   void *p = NativeOpDB8_10f57360::next;
   if (p != 0) { NativeOpDB8_10f57360::rep = 0; NativeOpDB8_10f57360::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2825,6 +2882,7 @@ void *q = NativeOpDB8_10f57360::next;
 NativeOpDtor_FUN_10f574b0::~NativeOpDtor_FUN_10f574b0() {
 (void *volatile &)v0 = (void *)&DAT_11952380;
 (void *volatile &)NativeOpDB8_10f574b0::vptr = (void *)&DAT_119523d4;
+_ReadWriteBarrier();
 if (NativeOpDB8_10f574b0::rep != 0) {
   void *p = NativeOpDB8_10f574b0::next;
   if (p != 0) { NativeOpDB8_10f574b0::rep = 0; NativeOpDB8_10f574b0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2850,6 +2908,7 @@ void *q = NativeOpDB8_10f574b0::next;
 NativeOpDtor_FUN_10f65b40::~NativeOpDtor_FUN_10f65b40() {
 (void *volatile &)v0 = (void *)&DAT_1195278c;
 (void *volatile &)NativeOpDB8_10f65b40::vptr = (void *)&DAT_119527d8;
+_ReadWriteBarrier();
 if (NativeOpDB8_10f65b40::rep != 0) {
   void *p = NativeOpDB8_10f65b40::next;
   if (p != 0) { NativeOpDB8_10f65b40::rep = 0; NativeOpDB8_10f65b40::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2875,6 +2934,7 @@ void *q = NativeOpDB8_10f65b40::next;
 NativeOpDtor_FUN_10f708b0::~NativeOpDtor_FUN_10f708b0() {
 (void *volatile &)v0 = (void *)&DAT_11952b1c;
 (void *volatile &)NativeOpDB8_10f708b0::vptr = (void *)&DAT_11952b64;
+_ReadWriteBarrier();
 if (NativeOpDB8_10f708b0::rep != 0) {
   void *p = NativeOpDB8_10f708b0::next;
   if (p != 0) { NativeOpDB8_10f708b0::rep = 0; NativeOpDB8_10f708b0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2900,6 +2960,7 @@ void *q = NativeOpDB8_10f708b0::next;
 NativeOpDtor_FUN_10f77a80::~NativeOpDtor_FUN_10f77a80() {
 (void *volatile &)v0 = (void *)&DAT_11953540;
 (void *volatile &)NativeOpDB8_10f77a80::vptr = (void *)&DAT_1195358c;
+_ReadWriteBarrier();
 if (NativeOpDB8_10f77a80::rep != 0) {
   void *p = NativeOpDB8_10f77a80::next;
   if (p != 0) { NativeOpDB8_10f77a80::rep = 0; NativeOpDB8_10f77a80::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2925,6 +2986,7 @@ void *q = NativeOpDB8_10f77a80::next;
 NativeOpDtor_FUN_10f7d8c0::~NativeOpDtor_FUN_10f7d8c0() {
 (void *volatile &)v0 = (void *)&DAT_11953b34;
 (void *volatile &)NativeOpDB8_10f7d8c0::vptr = (void *)&DAT_11953b7c;
+_ReadWriteBarrier();
 if (NativeOpDB8_10f7d8c0::rep != 0) {
   void *p = NativeOpDB8_10f7d8c0::next;
   if (p != 0) { NativeOpDB8_10f7d8c0::rep = 0; NativeOpDB8_10f7d8c0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2950,6 +3012,7 @@ void *q = NativeOpDB8_10f7d8c0::next;
 NativeOpDtor_FUN_10f7da10::~NativeOpDtor_FUN_10f7da10() {
 (void *volatile &)v0 = (void *)&DAT_11953a78;
 (void *volatile &)NativeOpDB8_10f7da10::vptr = (void *)&DAT_11953ac0;
+_ReadWriteBarrier();
 if (NativeOpDB8_10f7da10::rep != 0) {
   void *p = NativeOpDB8_10f7da10::next;
   if (p != 0) { NativeOpDB8_10f7da10::rep = 0; NativeOpDB8_10f7da10::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2975,6 +3038,7 @@ void *q = NativeOpDB8_10f7da10::next;
 NativeOpDtor_FUN_10f8b460::~NativeOpDtor_FUN_10f8b460() {
 (void *volatile &)v0 = (void *)&DAT_11954758;
 (void *volatile &)NativeOpDB8_10f8b460::vptr = (void *)&DAT_119547a0;
+_ReadWriteBarrier();
 if (NativeOpDB8_10f8b460::rep != 0) {
   void *p = NativeOpDB8_10f8b460::next;
   if (p != 0) { NativeOpDB8_10f8b460::rep = 0; NativeOpDB8_10f8b460::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -3000,6 +3064,7 @@ void *q = NativeOpDB8_10f8b460::next;
 NativeOpDtor_FUN_10f8b5b0::~NativeOpDtor_FUN_10f8b5b0() {
 (void *volatile &)v0 = (void *)&DAT_11954818;
 (void *volatile &)NativeOpDB8_10f8b5b0::vptr = (void *)&DAT_11954860;
+_ReadWriteBarrier();
 if (NativeOpDB8_10f8b5b0::rep != 0) {
   void *p = NativeOpDB8_10f8b5b0::next;
   if (p != 0) { NativeOpDB8_10f8b5b0::rep = 0; NativeOpDB8_10f8b5b0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -3025,6 +3090,7 @@ void *q = NativeOpDB8_10f8b5b0::next;
 NativeOpDtor_FUN_10f8b700::~NativeOpDtor_FUN_10f8b700() {
 (void *volatile &)v0 = (void *)&DAT_119548d8;
 (void *volatile &)NativeOpDB8_10f8b700::vptr = (void *)&DAT_11954920;
+_ReadWriteBarrier();
 if (NativeOpDB8_10f8b700::rep != 0) {
   void *p = NativeOpDB8_10f8b700::next;
   if (p != 0) { NativeOpDB8_10f8b700::rep = 0; NativeOpDB8_10f8b700::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -3050,6 +3116,7 @@ void *q = NativeOpDB8_10f8b700::next;
 NativeOpDtor_FUN_11017ca0::~NativeOpDtor_FUN_11017ca0() {
 (void *volatile &)v0 = (void *)&DAT_119606b4;
 (void *volatile &)NativeOpDB8_11017ca0::vptr = (void *)&DAT_11960714;
+_ReadWriteBarrier();
 if (NativeOpDB8_11017ca0::rep != 0) {
   void *p = NativeOpDB8_11017ca0::next;
   if (p != 0) { NativeOpDB8_11017ca0::rep = 0; NativeOpDB8_11017ca0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -3075,6 +3142,7 @@ void *q = NativeOpDB8_11017ca0::next;
 NativeOpDtor_FUN_11026d20::~NativeOpDtor_FUN_11026d20() {
 (void *volatile &)v0 = (void *)&DAT_11963d10;
 (void *volatile &)NativeOpDB8_11026d20::vptr = (void *)&DAT_11963d64;
+_ReadWriteBarrier();
 if (NativeOpDB8_11026d20::rep != 0) {
   void *p = NativeOpDB8_11026d20::next;
   if (p != 0) { NativeOpDB8_11026d20::rep = 0; NativeOpDB8_11026d20::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -3100,6 +3168,7 @@ void *q = NativeOpDB8_11026d20::next;
 NativeOpDtor_FUN_1105f600::~NativeOpDtor_FUN_1105f600() {
 (void *volatile &)v0 = (void *)&DAT_1196610c;
 (void *volatile &)NativeOpDB8_1105f600::vptr = (void *)&DAT_11966160;
+_ReadWriteBarrier();
 if (NativeOpDB8_1105f600::rep != 0) {
   void *p = NativeOpDB8_1105f600::next;
   if (p != 0) { NativeOpDB8_1105f600::rep = 0; NativeOpDB8_1105f600::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -3125,6 +3194,7 @@ void *q = NativeOpDB8_1105f600::next;
 NativeOpDtor_FUN_11061920::~NativeOpDtor_FUN_11061920() {
 (void *volatile &)v0 = (void *)&DAT_119662b4;
 (void *volatile &)NativeOpDB8_11061920::vptr = (void *)&DAT_1196630c;
+_ReadWriteBarrier();
 if (NativeOpDB8_11061920::rep != 0) {
   void *p = NativeOpDB8_11061920::next;
   if (p != 0) { NativeOpDB8_11061920::rep = 0; NativeOpDB8_11061920::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -3150,6 +3220,7 @@ void *q = NativeOpDB8_11061920::next;
 NativeOpDtor_FUN_11062550::~NativeOpDtor_FUN_11062550() {
 (void *volatile &)v0 = (void *)&DAT_11966428;
 (void *volatile &)NativeOpDB8_11062550::vptr = (void *)&DAT_11966474;
+_ReadWriteBarrier();
 if (NativeOpDB8_11062550::rep != 0) {
   void *p = NativeOpDB8_11062550::next;
   if (p != 0) { NativeOpDB8_11062550::rep = 0; NativeOpDB8_11062550::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -3175,6 +3246,7 @@ void *q = NativeOpDB8_11062550::next;
 NativeOpDtor_FUN_11064c80::~NativeOpDtor_FUN_11064c80() {
 (void *volatile &)v0 = (void *)&DAT_11966528;
 (void *volatile &)NativeOpDB8_11064c80::vptr = (void *)&DAT_11966570;
+_ReadWriteBarrier();
 if (NativeOpDB8_11064c80::rep != 0) {
   void *p = NativeOpDB8_11064c80::next;
   if (p != 0) { NativeOpDB8_11064c80::rep = 0; NativeOpDB8_11064c80::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -3200,6 +3272,7 @@ void *q = NativeOpDB8_11064c80::next;
 NativeOpDtor_FUN_11067870::~NativeOpDtor_FUN_11067870() {
 (void *volatile &)v0 = (void *)&DAT_119668b8;
 (void *volatile &)NativeOpDB8_11067870::vptr = (void *)&DAT_11966914;
+_ReadWriteBarrier();
 if (NativeOpDB8_11067870::rep != 0) {
   void *p = NativeOpDB8_11067870::next;
   if (p != 0) { NativeOpDB8_11067870::rep = 0; NativeOpDB8_11067870::next = 0; ((NativeOpDtorIface *)p)->slot8(); }

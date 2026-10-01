@@ -181,10 +181,10 @@ def main():
         library += (f'struct {base_class} {{ void *v0; void *f4; ~{base_class}();\n'
                     f'__forceinline {base_class}() {{ v0 = (void *)&DAT_{r["base_vtable"]}; '
                     f'f4 = 0; g_lSCObjCount++; }} }};\n')
-        library += (f'struct NativeOpMember14_{r["entry"]} : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 {{'
-                    f' void *f8;\n'
+        library += (f'struct NativeOpMember14_{r["entry"]} : NativeOpMember14V {{'
+                    f' NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;\n'
                     f'    __forceinline NativeOpMember14_{r["entry"]}(void *param)'
-                    f' : NativeOpSmart14_thunk_FUN_101ba1b0(param) {{ f8 = 0;'
+                    f' : smart(param) {{ f8 = 0;'
                     f' vptr = (void *)&DAT_{r["m14_vtable"]:08x}; }} }};\n')
         library += (f'struct {klass}_vt {{\n'
                     f'__forceinline {klass}_vt(void *self) {{ *(void **)self = (void *)&DAT_{v0b:08x}; '

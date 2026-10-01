@@ -252,10 +252,6 @@
     "directory": "analysis/compiled-cpp-conditional-event-callbacks"
   },
   {
-    "object": "delayed_event_callbacks_reference_flags",
-    "directory": "analysis/compiled-cpp-delayed-event-callbacks"
-  },
-  {
     "object": "external_event_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-external-event-callbacks"
   },
@@ -284,20 +280,16 @@
     "directory": "analysis/compiled-cpp-alloc-holder-ctors"
   },
   {
+    "object": "global_release_dtors_reference_flags",
+    "directory": "analysis/compiled-cpp-global-release-dtors"
+  },
+  {
     "object": "op_impl_ctors_reference_flags",
     "directory": "analysis/compiled-cpp-op-impl-ctors"
   },
   {
     "object": "op_ref_ctors_reference_flags",
     "directory": "analysis/compiled-cpp-op-ref-ctors"
-  },
-  {
-    "object": "global_release_dtors_reference_flags",
-    "directory": "analysis/compiled-cpp-global-release-dtors"
-  },
-  {
-    "object": "op_impl_dtors_reference_flags",
-    "directory": "analysis/compiled-cpp-op-impl-dtors"
   },
   {
     "object": "vcall_event_callbacks_reference_flags",
@@ -312,7 +304,15 @@
     "directory": "analysis/compiled-cpp-page-factories"
   },
   {
+    "object": "delayed_event_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-delayed-event-callbacks"
+  },
+  {
     "object": "named_event_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-named-event-callbacks"
+  },
+  {
+    "object": "op_impl_dtors_reference_flags",
+    "directory": "analysis/compiled-cpp-op-impl-dtors"
   }
 ]

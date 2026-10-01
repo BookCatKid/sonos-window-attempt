@@ -76,6 +76,7 @@ def lower(record, reference, base, sections):
         f'{klass}::~{klass}() {{\n'
         f'(void *volatile &)v0 = (void *)&DAT_{v2:08x};\n'
         f'(void *volatile &){b8}::vptr = (void *)&DAT_{v3:08x};\n'
+        f'_ReadWriteBarrier();\n'
         f'if ({b8}::rep != 0) {{\n'
         f'  void *p = {b8}::next;\n'
         f'  if (p != 0) {{ {b8}::rep = 0; {b8}::next = 0; ((NativeOpDtorIface *)p)->slot8(); }}\n'

@@ -162,9 +162,11 @@ extern int thunk_FUN_10defac0(...);
 NativeCopierOutput *NativeCopierOutput::FUN_10df9390() {
 NativeCopierOutput * volatile self = this;
 NativeCopierSource_FUN_10df9440 a;
-NativeCopierAggregate_FUN_10deee60 agg(a);
+NativeCopierSource_FUN_10df9440 *pa = &a;
+NativeCopierAggregate_FUN_10deee60 agg(*pa);
 NativeCopierEvent_FUN_10df9510 c;
-c.thunk_FUN_10defac0(this, agg);
+NativeCopierEvent_FUN_10df9510 *pc = &c;
+pc->thunk_FUN_10defac0(self, agg);
 return this;
 }
 
@@ -173,9 +175,11 @@ return this;
 NativeCopierOutput *NativeCopierOutput::FUN_10df95e0() {
 NativeCopierOutput * volatile self = this;
 NativeCopierSource_FUN_10df9690 a;
-NativeCopierAggregate_FUN_10deee60 agg(a);
+NativeCopierSource_FUN_10df9690 *pa = &a;
+NativeCopierAggregate_FUN_10deee60 agg(*pa);
 NativeCopierEvent_FUN_10df9760 c;
-c.thunk_FUN_10defac0(this, agg);
+NativeCopierEvent_FUN_10df9760 *pc = &c;
+pc->thunk_FUN_10defac0(self, agg);
 return this;
 }
 
@@ -184,9 +188,11 @@ return this;
 NativeCopierOutput *NativeCopierOutput::FUN_10df99d0() {
 NativeCopierOutput * volatile self = this;
 NativeCopierSource_FUN_10df9a80 a;
-NativeCopierAggregate_FUN_10deee60 agg(a);
+NativeCopierSource_FUN_10df9a80 *pa = &a;
+NativeCopierAggregate_FUN_10deee60 agg(*pa);
 NativeCopierEvent_FUN_10df9b50 c;
-c.thunk_FUN_10defac0(this, agg);
+NativeCopierEvent_FUN_10df9b50 *pc = &c;
+pc->thunk_FUN_10defac0(self, agg);
 return this;
 }
 
@@ -195,9 +201,11 @@ return this;
 NativeCopierOutput *NativeCopierOutput::FUN_10df9cb0() {
 NativeCopierOutput * volatile self = this;
 NativeCopierSource_FUN_10df9d60 a;
-NativeCopierAggregate_FUN_10deee60 agg(a);
+NativeCopierSource_FUN_10df9d60 *pa = &a;
+NativeCopierAggregate_FUN_10deee60 agg(*pa);
 NativeCopierEvent_FUN_10df9e30 c;
-c.thunk_FUN_10defac0(this, agg);
+NativeCopierEvent_FUN_10df9e30 *pc = &c;
+pc->thunk_FUN_10defac0(self, agg);
 return this;
 }
 
@@ -206,9 +214,11 @@ return this;
 NativeCopierOutput *NativeCopierOutput::FUN_10df9f00() {
 NativeCopierOutput * volatile self = this;
 NativeCopierSource_FUN_10df9fb0 a;
-NativeCopierAggregate_FUN_10deee60 agg(a);
+NativeCopierSource_FUN_10df9fb0 *pa = &a;
+NativeCopierAggregate_FUN_10deee60 agg(*pa);
 NativeCopierEvent_FUN_10dfa080 c;
-c.thunk_FUN_10defac0(this, agg);
+NativeCopierEvent_FUN_10dfa080 *pc = &c;
+pc->thunk_FUN_10defac0(self, agg);
 return this;
 }
 
@@ -217,9 +227,11 @@ return this;
 NativeCopierOutput *NativeCopierOutput::FUN_10dfa220() {
 NativeCopierOutput * volatile self = this;
 NativeCopierSource_FUN_10dfa2d0 a;
-NativeCopierAggregate_FUN_10deee60 agg(a);
+NativeCopierSource_FUN_10dfa2d0 *pa = &a;
+NativeCopierAggregate_FUN_10deee60 agg(*pa);
 NativeCopierEvent_FUN_10dfa3a0 c;
-c.thunk_FUN_10defac0(this, agg);
+NativeCopierEvent_FUN_10dfa3a0 *pc = &c;
+pc->thunk_FUN_10defac0(self, agg);
 return this;
 }
 
@@ -228,9 +240,11 @@ return this;
 NativeCopierOutput *NativeCopierOutput::FUN_10dfa470() {
 NativeCopierOutput * volatile self = this;
 NativeCopierSource_FUN_10dfa520 a;
-NativeCopierAggregate_FUN_10deee60 agg(a);
+NativeCopierSource_FUN_10dfa520 *pa = &a;
+NativeCopierAggregate_FUN_10deee60 agg(*pa);
 NativeCopierEvent_FUN_10dfa5f0 c;
-c.thunk_FUN_10defac0(this, agg);
+NativeCopierEvent_FUN_10dfa5f0 *pc = &c;
+pc->thunk_FUN_10defac0(self, agg);
 return this;
 }
 
@@ -239,9 +253,11 @@ return this;
 NativeCopierOutput *NativeCopierOutput::FUN_10dfaad0() {
 NativeCopierOutput * volatile self = this;
 NativeCopierSource_FUN_10dfab80 a;
-NativeCopierAggregate_FUN_10deee60 agg(a);
+NativeCopierSource_FUN_10dfab80 *pa = &a;
+NativeCopierAggregate_FUN_10deee60 agg(*pa);
 NativeCopierEvent_FUN_10dfac50 c;
-c.thunk_FUN_10defac0(this, agg);
+NativeCopierEvent_FUN_10dfac50 *pc = &c;
+pc->thunk_FUN_10defac0(self, agg);
 return this;
 }
 
@@ -250,9 +266,11 @@ return this;
 NativeCopierOutput *NativeCopierOutput::FUN_10dfad20() {
 NativeCopierOutput * volatile self = this;
 NativeCopierSource_FUN_10dfadd0 a;
-NativeCopierAggregate_FUN_10deee60 agg(a);
+NativeCopierSource_FUN_10dfadd0 *pa = &a;
+NativeCopierAggregate_FUN_10deee60 agg(*pa);
 NativeCopierEvent_FUN_10dfaea0 c;
-c.thunk_FUN_10defac0(this, agg);
+NativeCopierEvent_FUN_10dfaea0 *pc = &c;
+pc->thunk_FUN_10defac0(self, agg);
 return this;
 }
 
@@ -261,9 +279,11 @@ return this;
 NativeCopierOutput *NativeCopierOutput::FUN_10dfaf70() {
 NativeCopierOutput * volatile self = this;
 NativeCopierSource_FUN_10dfb020 a;
-NativeCopierAggregate_FUN_10deee60 agg(a);
+NativeCopierSource_FUN_10dfb020 *pa = &a;
+NativeCopierAggregate_FUN_10deee60 agg(*pa);
 NativeCopierEvent_FUN_10dfb0f0 c;
-c.thunk_FUN_10defac0(this, agg);
+NativeCopierEvent_FUN_10dfb0f0 *pc = &c;
+pc->thunk_FUN_10defac0(self, agg);
 return this;
 }
 
@@ -272,8 +292,10 @@ return this;
 NativeCopierOutput *NativeCopierOutput::FUN_10dfb480() {
 NativeCopierOutput * volatile self = this;
 NativeCopierSource_FUN_10dfb530 a;
-NativeCopierAggregate_FUN_10deee60 agg(a);
+NativeCopierSource_FUN_10dfb530 *pa = &a;
+NativeCopierAggregate_FUN_10deee60 agg(*pa);
 NativeCopierEvent_FUN_10dfb600 c;
-c.thunk_FUN_10defac0(this, agg);
+NativeCopierEvent_FUN_10dfb600 *pc = &c;
+pc->thunk_FUN_10defac0(self, agg);
 return this;
 }

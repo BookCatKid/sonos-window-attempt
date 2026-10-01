@@ -65,9 +65,11 @@ def lower(record, reference, base, sections):
     source = (f'NativeCopierOutput *NativeCopierOutput::FUN_{entry}() {{\n'
               f'NativeCopierOutput * volatile self = this;\n'
               f'{source_class} a;\n'
-              f'NativeCopierAggregate_FUN_10deee60 agg(a);\n'
+              f'{source_class} *pa = &a;\n'
+              f'NativeCopierAggregate_FUN_10deee60 agg(*pa);\n'
               f'{event} c;\n'
-              f'c.thunk_FUN_10defac0(this, agg);\n'
+              f'{event} *pc = &c;\n'
+              f'pc->thunk_FUN_10defac0(self, agg);\n'
               f'return this;\n}}\n')
     return {**record, 'source': source, 'event_class': event, 'source_class': source_class,
             'constructor': f'{ctor:08x}', 'source_constructor': f'{calls[0]:08x}'}

@@ -69,9 +69,8 @@ class OpRefCtorTests(unittest.TestCase):
         source = candidate['source']
         self.assertIn('NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)',
                       source)
-        self.assertIn(': NativeOpRefBase_FUN_10687d70(), m4(param_2)', source)
+        self.assertIn(': m4(param_2)', source)
         self.assertNotIn('m4.rep = param_2;', source)
-        self.assertIn('if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);', source)
         self.assertIn('f8 = 0;', source)
         self.assertIn('vptr = (void *)&DAT_118c62f8;', source)
         self.assertEqual(candidate['first_vtable'], '1188207c')

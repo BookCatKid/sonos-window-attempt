@@ -527,8 +527,8 @@ struct NativeOpM30 : NativeOpS30 {
 union NativeOpF38 { unsigned __int64 q; struct { unsigned int lo; unsigned int hi; } w; };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10687e80 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10687e80();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10687e80() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10687e80 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10687e80(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_118c62f8; } };
+struct NativeOpMember14_10687e80 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10687e80(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118c62f8; } };
 struct NativeOpImpl_FUN_10687e80_vt {
 __forceinline NativeOpImpl_FUN_10687e80_vt(void *self) { *(void **)self = (void *)&DAT_118c6304; *(void **)((char *)self + 8) = (void *)&DAT_118c634c; } };
 struct NativeOpImpl_FUN_10687e80 : NativeOpImplBase_thunk_FUN_101b9b80_10687e80, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10687e80_vt {
@@ -539,8 +539,8 @@ NativeOpImpl_FUN_10687e80(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_109f7750_109f4aa0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_109f7750_109f4aa0();
 __forceinline NativeOpImplBase_thunk_FUN_109f7750_109f4aa0() { v0 = (void *)&DAT_118f1c90; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_109f4aa0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_109f4aa0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_118f1cd0; } };
+struct NativeOpMember14_109f4aa0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_109f4aa0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118f1cd0; } };
 struct NativeOpImpl_FUN_109f4aa0_vt {
 __forceinline NativeOpImpl_FUN_109f4aa0_vt(void *self) { *(void **)self = (void *)&DAT_118f1cdc; *(void **)((char *)self + 8) = (void *)&DAT_118f1d24; } };
 struct NativeOpImpl_FUN_109f4aa0 : NativeOpImplBase_thunk_FUN_109f7750_109f4aa0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_109f4aa0_vt {
@@ -551,8 +551,8 @@ NativeOpImpl_FUN_109f4aa0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_109f7770_109f4c00 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_109f7770_109f4c00();
 __forceinline NativeOpImplBase_thunk_FUN_109f7770_109f4c00() { v0 = (void *)&DAT_118f19cc; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_109f4c00 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_109f4c00(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_118f1a0c; } };
+struct NativeOpMember14_109f4c00 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_109f4c00(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118f1a0c; } };
 struct NativeOpImpl_FUN_109f4c00_vt {
 __forceinline NativeOpImpl_FUN_109f4c00_vt(void *self) { *(void **)self = (void *)&DAT_118f1a18; *(void **)((char *)self + 8) = (void *)&DAT_118f1a60; } };
 struct NativeOpImpl_FUN_109f4c00 : NativeOpImplBase_thunk_FUN_109f7770_109f4c00, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_109f4c00_vt {
@@ -563,8 +563,8 @@ NativeOpImpl_FUN_109f4c00(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_109f7790_109f4d60 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_109f7790_109f4d60();
 __forceinline NativeOpImplBase_thunk_FUN_109f7790_109f4d60() { v0 = (void *)&DAT_118f1df8; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_109f4d60 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_109f4d60(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_118f1e3c; } };
+struct NativeOpMember14_109f4d60 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_109f4d60(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118f1e3c; } };
 struct NativeOpImpl_FUN_109f4d60_vt {
 __forceinline NativeOpImpl_FUN_109f4d60_vt(void *self) { *(void **)self = (void *)&DAT_118f1e48; *(void **)((char *)self + 8) = (void *)&DAT_118f1e94; } };
 struct NativeOpImpl_FUN_109f4d60 : NativeOpImplBase_thunk_FUN_109f7790_109f4d60, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_109f4d60_vt {
@@ -575,8 +575,8 @@ NativeOpImpl_FUN_109f4d60(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_109f77b0_109f4ec0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_109f77b0_109f4ec0();
 __forceinline NativeOpImplBase_thunk_FUN_109f77b0_109f4ec0() { v0 = (void *)&DAT_118f1b28; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_109f4ec0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_109f4ec0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_118f1b68; } };
+struct NativeOpMember14_109f4ec0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_109f4ec0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118f1b68; } };
 struct NativeOpImpl_FUN_109f4ec0_vt {
 __forceinline NativeOpImpl_FUN_109f4ec0_vt(void *self) { *(void **)self = (void *)&DAT_118f1b74; *(void **)((char *)self + 8) = (void *)&DAT_118f1bbc; } };
 struct NativeOpImpl_FUN_109f4ec0 : NativeOpImplBase_thunk_FUN_109f77b0_109f4ec0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_109f4ec0_vt {
@@ -587,8 +587,8 @@ NativeOpImpl_FUN_109f4ec0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_109f7750_109f5470 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_109f7750_109f5470();
 __forceinline NativeOpImplBase_thunk_FUN_109f7750_109f5470() { v0 = (void *)&DAT_118f1c90; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_109f5470 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_109f5470(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_118f1cd0; } };
+struct NativeOpMember14_109f5470 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_109f5470(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118f1cd0; } };
 struct NativeOpImpl_FUN_109f5470_vt {
 __forceinline NativeOpImpl_FUN_109f5470_vt(void *self) { *(void **)self = (void *)&DAT_118f1cdc; *(void **)((char *)self + 8) = (void *)&DAT_118f1d24; } };
 struct NativeOpImpl_FUN_109f5470 : NativeOpImplBase_thunk_FUN_109f7750_109f5470, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_109f5470_vt {
@@ -599,8 +599,8 @@ NativeOpImpl_FUN_109f5470(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_109f7770_109f55e0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_109f7770_109f55e0();
 __forceinline NativeOpImplBase_thunk_FUN_109f7770_109f55e0() { v0 = (void *)&DAT_118f19cc; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_109f55e0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_109f55e0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_118f1a0c; } };
+struct NativeOpMember14_109f55e0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_109f55e0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118f1a0c; } };
 struct NativeOpImpl_FUN_109f55e0_vt {
 __forceinline NativeOpImpl_FUN_109f55e0_vt(void *self) { *(void **)self = (void *)&DAT_118f1a18; *(void **)((char *)self + 8) = (void *)&DAT_118f1a60; } };
 struct NativeOpImpl_FUN_109f55e0 : NativeOpImplBase_thunk_FUN_109f7770_109f55e0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_109f55e0_vt {
@@ -611,8 +611,8 @@ NativeOpImpl_FUN_109f55e0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_109f7790_109f5750 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_109f7790_109f5750();
 __forceinline NativeOpImplBase_thunk_FUN_109f7790_109f5750() { v0 = (void *)&DAT_118f1df8; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_109f5750 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_109f5750(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_118f1e3c; } };
+struct NativeOpMember14_109f5750 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_109f5750(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118f1e3c; } };
 struct NativeOpImpl_FUN_109f5750_vt {
 __forceinline NativeOpImpl_FUN_109f5750_vt(void *self) { *(void **)self = (void *)&DAT_118f1e48; *(void **)((char *)self + 8) = (void *)&DAT_118f1e94; } };
 struct NativeOpImpl_FUN_109f5750 : NativeOpImplBase_thunk_FUN_109f7790_109f5750, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_109f5750_vt {
@@ -623,8 +623,8 @@ NativeOpImpl_FUN_109f5750(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_109f77b0_109f58c0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_109f77b0_109f58c0();
 __forceinline NativeOpImplBase_thunk_FUN_109f77b0_109f58c0() { v0 = (void *)&DAT_118f1b28; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_109f58c0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_109f58c0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_118f1b68; } };
+struct NativeOpMember14_109f58c0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_109f58c0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118f1b68; } };
 struct NativeOpImpl_FUN_109f58c0_vt {
 __forceinline NativeOpImpl_FUN_109f58c0_vt(void *self) { *(void **)self = (void *)&DAT_118f1b74; *(void **)((char *)self + 8) = (void *)&DAT_118f1bbc; } };
 struct NativeOpImpl_FUN_109f58c0 : NativeOpImplBase_thunk_FUN_109f77b0_109f58c0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_109f58c0_vt {
@@ -635,8 +635,8 @@ NativeOpImpl_FUN_109f58c0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10b6d380_10b6cd30 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10b6d380_10b6cd30();
 __forceinline NativeOpImplBase_thunk_FUN_10b6d380_10b6cd30() { v0 = (void *)&DAT_1190a964; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10b6cd30 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10b6cd30(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1190a9a4; } };
+struct NativeOpMember14_10b6cd30 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10b6cd30(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1190a9a4; } };
 struct NativeOpImpl_FUN_10b6cd30_vt {
 __forceinline NativeOpImpl_FUN_10b6cd30_vt(void *self) { *(void **)self = (void *)&DAT_1190a9b0; *(void **)((char *)self + 8) = (void *)&DAT_1190a9f8; } };
 struct NativeOpImpl_FUN_10b6cd30 : NativeOpImplBase_thunk_FUN_10b6d380_10b6cd30, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10b6cd30_vt {
@@ -647,8 +647,8 @@ NativeOpImpl_FUN_10b6cd30(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10b6d380_10b6d0a0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10b6d380_10b6d0a0();
 __forceinline NativeOpImplBase_thunk_FUN_10b6d380_10b6d0a0() { v0 = (void *)&DAT_1190a964; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10b6d0a0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10b6d0a0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1190a9a4; } };
+struct NativeOpMember14_10b6d0a0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10b6d0a0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1190a9a4; } };
 struct NativeOpImpl_FUN_10b6d0a0_vt {
 __forceinline NativeOpImpl_FUN_10b6d0a0_vt(void *self) { *(void **)self = (void *)&DAT_1190a9b0; *(void **)((char *)self + 8) = (void *)&DAT_1190a9f8; } };
 struct NativeOpImpl_FUN_10b6d0a0 : NativeOpImplBase_thunk_FUN_10b6d380_10b6d0a0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10b6d0a0_vt {
@@ -659,8 +659,8 @@ NativeOpImpl_FUN_10b6d0a0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10b7cb50_10b7bf50 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10b7cb50_10b7bf50();
 __forceinline NativeOpImplBase_thunk_FUN_10b7cb50_10b7bf50() { v0 = (void *)&DAT_1190e198; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10b7bf50 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10b7bf50(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1190e1dc; } };
+struct NativeOpMember14_10b7bf50 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10b7bf50(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1190e1dc; } };
 struct NativeOpImpl_FUN_10b7bf50_vt {
 __forceinline NativeOpImpl_FUN_10b7bf50_vt(void *self) { *(void **)self = (void *)&DAT_1190e1e8; *(void **)((char *)self + 8) = (void *)&DAT_1190e234; } };
 struct NativeOpImpl_FUN_10b7bf50 : NativeOpImplBase_thunk_FUN_10b7cb50_10b7bf50, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10b7bf50_vt {
@@ -671,8 +671,8 @@ NativeOpImpl_FUN_10b7bf50(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10b7cb50_10b7c6a0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10b7cb50_10b7c6a0();
 __forceinline NativeOpImplBase_thunk_FUN_10b7cb50_10b7c6a0() { v0 = (void *)&DAT_1190e198; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10b7c6a0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10b7c6a0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1190e1dc; } };
+struct NativeOpMember14_10b7c6a0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10b7c6a0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1190e1dc; } };
 struct NativeOpImpl_FUN_10b7c6a0_vt {
 __forceinline NativeOpImpl_FUN_10b7c6a0_vt(void *self) { *(void **)self = (void *)&DAT_1190e1e8; *(void **)((char *)self + 8) = (void *)&DAT_1190e234; } };
 struct NativeOpImpl_FUN_10b7c6a0 : NativeOpImplBase_thunk_FUN_10b7cb50_10b7c6a0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10b7c6a0_vt {
@@ -683,8 +683,8 @@ NativeOpImpl_FUN_10b7c6a0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10c4a3b0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10c4a3b0();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10c4a3b0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c4a3b0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c4a3b0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11916ca0; } };
+struct NativeOpMember14_10c4a3b0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c4a3b0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11916ca0; } };
 struct NativeOpImpl_FUN_10c4a3b0_vt {
 __forceinline NativeOpImpl_FUN_10c4a3b0_vt(void *self) { *(void **)self = (void *)&DAT_11916cac; *(void **)((char *)self + 8) = (void *)&DAT_11916cf4; } };
 struct NativeOpImpl_FUN_10c4a3b0 : NativeOpImplBase_thunk_FUN_101b9b80_10c4a3b0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c4a3b0_vt {
@@ -695,8 +695,8 @@ NativeOpImpl_FUN_10c4a3b0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10c4f2b0_10c4de80 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10c4f2b0_10c4de80();
 __forceinline NativeOpImplBase_thunk_FUN_10c4f2b0_10c4de80() { v0 = (void *)&DAT_11917548; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c4de80 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c4de80(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191758c; } };
+struct NativeOpMember14_10c4de80 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c4de80(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191758c; } };
 struct NativeOpImpl_FUN_10c4de80_vt {
 __forceinline NativeOpImpl_FUN_10c4de80_vt(void *self) { *(void **)self = (void *)&DAT_11917598; *(void **)((char *)self + 8) = (void *)&DAT_119175e4; } };
 struct NativeOpImpl_FUN_10c4de80 : NativeOpImplBase_thunk_FUN_10c4f2b0_10c4de80, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c4de80_vt {
@@ -707,8 +707,8 @@ NativeOpImpl_FUN_10c4de80(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10c4f2d0_10c4dfe0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10c4f2d0_10c4dfe0();
 __forceinline NativeOpImplBase_thunk_FUN_10c4f2d0_10c4dfe0() { v0 = (void *)&DAT_11917650; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c4dfe0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c4dfe0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11917694; } };
+struct NativeOpMember14_10c4dfe0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c4dfe0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11917694; } };
 struct NativeOpImpl_FUN_10c4dfe0_vt {
 __forceinline NativeOpImpl_FUN_10c4dfe0_vt(void *self) { *(void **)self = (void *)&DAT_119176a0; *(void **)((char *)self + 8) = (void *)&DAT_119176ec; } };
 struct NativeOpImpl_FUN_10c4dfe0 : NativeOpImplBase_thunk_FUN_10c4f2d0_10c4dfe0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c4dfe0_vt {
@@ -719,8 +719,8 @@ NativeOpImpl_FUN_10c4dfe0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10c4f2f0_10c4e140 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10c4f2f0_10c4e140();
 __forceinline NativeOpImplBase_thunk_FUN_10c4f2f0_10c4e140() { v0 = (void *)&DAT_11917758; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c4e140 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c4e140(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191779c; } };
+struct NativeOpMember14_10c4e140 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c4e140(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191779c; } };
 struct NativeOpImpl_FUN_10c4e140_vt {
 __forceinline NativeOpImpl_FUN_10c4e140_vt(void *self) { *(void **)self = (void *)&DAT_119177a8; *(void **)((char *)self + 8) = (void *)&DAT_119177f4; } };
 struct NativeOpImpl_FUN_10c4e140 : NativeOpImplBase_thunk_FUN_10c4f2f0_10c4e140, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c4e140_vt {
@@ -731,8 +731,8 @@ NativeOpImpl_FUN_10c4e140(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10c4f310_10c4e2a0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10c4f310_10c4e2a0();
 __forceinline NativeOpImplBase_thunk_FUN_10c4f310_10c4e2a0() { v0 = (void *)&DAT_119179c4; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c4e2a0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c4e2a0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11917a08; } };
+struct NativeOpMember14_10c4e2a0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c4e2a0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11917a08; } };
 struct NativeOpImpl_FUN_10c4e2a0_vt {
 __forceinline NativeOpImpl_FUN_10c4e2a0_vt(void *self) { *(void **)self = (void *)&DAT_11917a14; *(void **)((char *)self + 8) = (void *)&DAT_11917a60; } };
 struct NativeOpImpl_FUN_10c4e2a0 : NativeOpImplBase_thunk_FUN_10c4f310_10c4e2a0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c4e2a0_vt {
@@ -743,8 +743,8 @@ NativeOpImpl_FUN_10c4e2a0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10c4f330_10c4e400 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10c4f330_10c4e400();
 __forceinline NativeOpImplBase_thunk_FUN_10c4f330_10c4e400() { v0 = (void *)&DAT_119178d4; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c4e400 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c4e400(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_118ba4a0; } };
+struct NativeOpMember14_10c4e400 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c4e400(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118ba4a0; } };
 struct NativeOpImpl_FUN_10c4e400_vt {
 __forceinline NativeOpImpl_FUN_10c4e400_vt(void *self) { *(void **)self = (void *)&DAT_11917914; *(void **)((char *)self + 8) = (void *)&DAT_1191795c; } };
 struct NativeOpImpl_FUN_10c4e400 : NativeOpImplBase_thunk_FUN_10c4f330_10c4e400, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c4e400_vt {
@@ -755,8 +755,8 @@ NativeOpImpl_FUN_10c4e400(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10c4f2b0_10c4eb20 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10c4f2b0_10c4eb20();
 __forceinline NativeOpImplBase_thunk_FUN_10c4f2b0_10c4eb20() { v0 = (void *)&DAT_11917548; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c4eb20 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c4eb20(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191758c; } };
+struct NativeOpMember14_10c4eb20 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c4eb20(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191758c; } };
 struct NativeOpImpl_FUN_10c4eb20_vt {
 __forceinline NativeOpImpl_FUN_10c4eb20_vt(void *self) { *(void **)self = (void *)&DAT_11917598; *(void **)((char *)self + 8) = (void *)&DAT_119175e4; } };
 struct NativeOpImpl_FUN_10c4eb20 : NativeOpImplBase_thunk_FUN_10c4f2b0_10c4eb20, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c4eb20_vt {
@@ -767,8 +767,8 @@ NativeOpImpl_FUN_10c4eb20(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10c4f2d0_10c4ec90 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10c4f2d0_10c4ec90();
 __forceinline NativeOpImplBase_thunk_FUN_10c4f2d0_10c4ec90() { v0 = (void *)&DAT_11917650; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c4ec90 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c4ec90(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11917694; } };
+struct NativeOpMember14_10c4ec90 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c4ec90(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11917694; } };
 struct NativeOpImpl_FUN_10c4ec90_vt {
 __forceinline NativeOpImpl_FUN_10c4ec90_vt(void *self) { *(void **)self = (void *)&DAT_119176a0; *(void **)((char *)self + 8) = (void *)&DAT_119176ec; } };
 struct NativeOpImpl_FUN_10c4ec90 : NativeOpImplBase_thunk_FUN_10c4f2d0_10c4ec90, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c4ec90_vt {
@@ -779,8 +779,8 @@ NativeOpImpl_FUN_10c4ec90(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10c4f2f0_10c4ee00 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10c4f2f0_10c4ee00();
 __forceinline NativeOpImplBase_thunk_FUN_10c4f2f0_10c4ee00() { v0 = (void *)&DAT_11917758; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c4ee00 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c4ee00(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191779c; } };
+struct NativeOpMember14_10c4ee00 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c4ee00(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191779c; } };
 struct NativeOpImpl_FUN_10c4ee00_vt {
 __forceinline NativeOpImpl_FUN_10c4ee00_vt(void *self) { *(void **)self = (void *)&DAT_119177a8; *(void **)((char *)self + 8) = (void *)&DAT_119177f4; } };
 struct NativeOpImpl_FUN_10c4ee00 : NativeOpImplBase_thunk_FUN_10c4f2f0_10c4ee00, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c4ee00_vt {
@@ -791,8 +791,8 @@ NativeOpImpl_FUN_10c4ee00(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10c4f310_10c4ef70 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10c4f310_10c4ef70();
 __forceinline NativeOpImplBase_thunk_FUN_10c4f310_10c4ef70() { v0 = (void *)&DAT_119179c4; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c4ef70 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c4ef70(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11917a08; } };
+struct NativeOpMember14_10c4ef70 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c4ef70(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11917a08; } };
 struct NativeOpImpl_FUN_10c4ef70_vt {
 __forceinline NativeOpImpl_FUN_10c4ef70_vt(void *self) { *(void **)self = (void *)&DAT_11917a14; *(void **)((char *)self + 8) = (void *)&DAT_11917a60; } };
 struct NativeOpImpl_FUN_10c4ef70 : NativeOpImplBase_thunk_FUN_10c4f310_10c4ef70, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c4ef70_vt {
@@ -803,8 +803,8 @@ NativeOpImpl_FUN_10c4ef70(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10c4f330_10c4f0e0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10c4f330_10c4f0e0();
 __forceinline NativeOpImplBase_thunk_FUN_10c4f330_10c4f0e0() { v0 = (void *)&DAT_119178d4; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c4f0e0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c4f0e0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_118ba4a0; } };
+struct NativeOpMember14_10c4f0e0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c4f0e0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118ba4a0; } };
 struct NativeOpImpl_FUN_10c4f0e0_vt {
 __forceinline NativeOpImpl_FUN_10c4f0e0_vt(void *self) { *(void **)self = (void *)&DAT_11917914; *(void **)((char *)self + 8) = (void *)&DAT_1191795c; } };
 struct NativeOpImpl_FUN_10c4f0e0 : NativeOpImplBase_thunk_FUN_10c4f330_10c4f0e0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c4f0e0_vt {
@@ -815,8 +815,8 @@ NativeOpImpl_FUN_10c4f0e0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10c55540_10c54630 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10c55540_10c54630();
 __forceinline NativeOpImplBase_thunk_FUN_10c55540_10c54630() { v0 = (void *)&DAT_11917f9c; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c54630 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c54630(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11917fe4; } };
+struct NativeOpMember14_10c54630 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c54630(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11917fe4; } };
 struct NativeOpImpl_FUN_10c54630_vt {
 __forceinline NativeOpImpl_FUN_10c54630_vt(void *self) { *(void **)self = (void *)&DAT_11917ff0; *(void **)((char *)self + 8) = (void *)&DAT_11918044; } };
 struct NativeOpImpl_FUN_10c54630 : NativeOpImplBase_thunk_FUN_10c55540_10c54630, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c54630_vt {
@@ -827,8 +827,8 @@ NativeOpImpl_FUN_10c54630(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10c55560_10c54790 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10c55560_10c54790();
 __forceinline NativeOpImplBase_thunk_FUN_10c55560_10c54790() { v0 = (void *)&DAT_11918208; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c54790 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c54790(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11918250; } };
+struct NativeOpMember14_10c54790 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c54790(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11918250; } };
 struct NativeOpImpl_FUN_10c54790_vt {
 __forceinline NativeOpImpl_FUN_10c54790_vt(void *self) { *(void **)self = (void *)&DAT_1191825c; *(void **)((char *)self + 8) = (void *)&DAT_119182b0; } };
 struct NativeOpImpl_FUN_10c54790 : NativeOpImplBase_thunk_FUN_10c55560_10c54790, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c54790_vt {
@@ -839,8 +839,8 @@ NativeOpImpl_FUN_10c54790(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10c55580_10c548f0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10c55580_10c548f0();
 __forceinline NativeOpImplBase_thunk_FUN_10c55580_10c548f0() { v0 = (void *)&DAT_11917eac; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c548f0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c548f0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_118ba17c; } };
+struct NativeOpMember14_10c548f0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c548f0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118ba17c; } };
 struct NativeOpImpl_FUN_10c548f0_vt {
 __forceinline NativeOpImpl_FUN_10c548f0_vt(void *self) { *(void **)self = (void *)&DAT_11917eec; *(void **)((char *)self + 8) = (void *)&DAT_11917f34; } };
 struct NativeOpImpl_FUN_10c548f0 : NativeOpImplBase_thunk_FUN_10c55580_10c548f0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c548f0_vt {
@@ -851,8 +851,8 @@ NativeOpImpl_FUN_10c548f0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10c555a0_10c54a50 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10c555a0_10c54a50();
 __forceinline NativeOpImplBase_thunk_FUN_10c555a0_10c54a50() { v0 = (void *)&DAT_11918118; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c54a50 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c54a50(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_118ba188; } };
+struct NativeOpMember14_10c54a50 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c54a50(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118ba188; } };
 struct NativeOpImpl_FUN_10c54a50_vt {
 __forceinline NativeOpImpl_FUN_10c54a50_vt(void *self) { *(void **)self = (void *)&DAT_11918158; *(void **)((char *)self + 8) = (void *)&DAT_119181a0; } };
 struct NativeOpImpl_FUN_10c54a50 : NativeOpImplBase_thunk_FUN_10c555a0_10c54a50, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c54a50_vt {
@@ -863,8 +863,8 @@ NativeOpImpl_FUN_10c54a50(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10c55540_10c54f40 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10c55540_10c54f40();
 __forceinline NativeOpImplBase_thunk_FUN_10c55540_10c54f40() { v0 = (void *)&DAT_11917f9c; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c54f40 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c54f40(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11917fe4; } };
+struct NativeOpMember14_10c54f40 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c54f40(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11917fe4; } };
 struct NativeOpImpl_FUN_10c54f40_vt {
 __forceinline NativeOpImpl_FUN_10c54f40_vt(void *self) { *(void **)self = (void *)&DAT_11917ff0; *(void **)((char *)self + 8) = (void *)&DAT_11918044; } };
 struct NativeOpImpl_FUN_10c54f40 : NativeOpImplBase_thunk_FUN_10c55540_10c54f40, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c54f40_vt {
@@ -875,8 +875,8 @@ NativeOpImpl_FUN_10c54f40(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10c55560_10c550b0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10c55560_10c550b0();
 __forceinline NativeOpImplBase_thunk_FUN_10c55560_10c550b0() { v0 = (void *)&DAT_11918208; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c550b0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c550b0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11918250; } };
+struct NativeOpMember14_10c550b0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c550b0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11918250; } };
 struct NativeOpImpl_FUN_10c550b0_vt {
 __forceinline NativeOpImpl_FUN_10c550b0_vt(void *self) { *(void **)self = (void *)&DAT_1191825c; *(void **)((char *)self + 8) = (void *)&DAT_119182b0; } };
 struct NativeOpImpl_FUN_10c550b0 : NativeOpImplBase_thunk_FUN_10c55560_10c550b0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c550b0_vt {
@@ -887,8 +887,8 @@ NativeOpImpl_FUN_10c550b0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10c55580_10c55220 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10c55580_10c55220();
 __forceinline NativeOpImplBase_thunk_FUN_10c55580_10c55220() { v0 = (void *)&DAT_11917eac; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c55220 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c55220(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_118ba17c; } };
+struct NativeOpMember14_10c55220 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c55220(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118ba17c; } };
 struct NativeOpImpl_FUN_10c55220_vt {
 __forceinline NativeOpImpl_FUN_10c55220_vt(void *self) { *(void **)self = (void *)&DAT_11917eec; *(void **)((char *)self + 8) = (void *)&DAT_11917f34; } };
 struct NativeOpImpl_FUN_10c55220 : NativeOpImplBase_thunk_FUN_10c55580_10c55220, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c55220_vt {
@@ -899,8 +899,8 @@ NativeOpImpl_FUN_10c55220(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10c555a0_10c55390 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10c555a0_10c55390();
 __forceinline NativeOpImplBase_thunk_FUN_10c555a0_10c55390() { v0 = (void *)&DAT_11918118; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c55390 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c55390(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_118ba188; } };
+struct NativeOpMember14_10c55390 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c55390(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118ba188; } };
 struct NativeOpImpl_FUN_10c55390_vt {
 __forceinline NativeOpImpl_FUN_10c55390_vt(void *self) { *(void **)self = (void *)&DAT_11918158; *(void **)((char *)self + 8) = (void *)&DAT_119181a0; } };
 struct NativeOpImpl_FUN_10c55390 : NativeOpImplBase_thunk_FUN_10c555a0_10c55390, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c55390_vt {
@@ -911,8 +911,8 @@ NativeOpImpl_FUN_10c55390(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10c596a0_10c59210 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10c596a0_10c59210();
 __forceinline NativeOpImplBase_thunk_FUN_10c596a0_10c59210() { v0 = (void *)&DAT_11918528; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c59210 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c59210(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191856c; } };
+struct NativeOpMember14_10c59210 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c59210(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191856c; } };
 struct NativeOpImpl_FUN_10c59210_vt {
 __forceinline NativeOpImpl_FUN_10c59210_vt(void *self) { *(void **)self = (void *)&DAT_11918578; *(void **)((char *)self + 8) = (void *)&DAT_119185c4; } };
 struct NativeOpImpl_FUN_10c59210 : NativeOpImplBase_thunk_FUN_10c596a0_10c59210, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c59210_vt {
@@ -923,8 +923,8 @@ NativeOpImpl_FUN_10c59210(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10c596a0_10c59500 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10c596a0_10c59500();
 __forceinline NativeOpImplBase_thunk_FUN_10c596a0_10c59500() { v0 = (void *)&DAT_11918528; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c59500 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c59500(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191856c; } };
+struct NativeOpMember14_10c59500 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c59500(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191856c; } };
 struct NativeOpImpl_FUN_10c59500_vt {
 __forceinline NativeOpImpl_FUN_10c59500_vt(void *self) { *(void **)self = (void *)&DAT_11918578; *(void **)((char *)self + 8) = (void *)&DAT_119185c4; } };
 struct NativeOpImpl_FUN_10c59500 : NativeOpImplBase_thunk_FUN_10c596a0_10c59500, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c59500_vt {
@@ -935,8 +935,8 @@ NativeOpImpl_FUN_10c59500(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10c803a0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10c803a0();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10c803a0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c803a0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c803a0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191af84; } };
+struct NativeOpMember14_10c803a0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c803a0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191af84; } };
 struct NativeOpImpl_FUN_10c803a0_vt {
 __forceinline NativeOpImpl_FUN_10c803a0_vt(void *self) { *(void **)self = (void *)&DAT_1191af90; *(void **)((char *)self + 8) = (void *)&DAT_1191afd8; } };
 struct NativeOpImpl_FUN_10c803a0 : NativeOpImplBase_thunk_FUN_101b9b80_10c803a0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c803a0_vt {
@@ -947,8 +947,8 @@ NativeOpImpl_FUN_10c803a0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10c80500 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10c80500();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10c80500() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10c80500 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10c80500(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191b040; } };
+struct NativeOpMember14_10c80500 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10c80500(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191b040; } };
 struct NativeOpImpl_FUN_10c80500_vt {
 __forceinline NativeOpImpl_FUN_10c80500_vt(void *self) { *(void **)self = (void *)&DAT_1191b04c; *(void **)((char *)self + 8) = (void *)&DAT_1191b094; } };
 struct NativeOpImpl_FUN_10c80500 : NativeOpImplBase_thunk_FUN_101b9b80_10c80500, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10c80500_vt {
@@ -959,8 +959,8 @@ NativeOpImpl_FUN_10c80500(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10cc1280_10cc0b70 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10cc1280_10cc0b70();
 __forceinline NativeOpImplBase_thunk_FUN_10cc1280_10cc0b70() { v0 = (void *)&DAT_1191ed54; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10cc0b70 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10cc0b70(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191edc8; } };
+struct NativeOpMember14_10cc0b70 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10cc0b70(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191edc8; } };
 struct NativeOpImpl_FUN_10cc0b70_vt {
 __forceinline NativeOpImpl_FUN_10cc0b70_vt(void *self) { *(void **)self = (void *)&DAT_1191edd4; *(void **)((char *)self + 8) = (void *)&DAT_1191ee50; } };
 struct NativeOpImpl_FUN_10cc0b70 : NativeOpImplBase_thunk_FUN_10cc1280_10cc0b70, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10cc0b70_vt {
@@ -971,8 +971,8 @@ NativeOpImpl_FUN_10cc0b70(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10cc1280_10cc0ff0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10cc1280_10cc0ff0();
 __forceinline NativeOpImplBase_thunk_FUN_10cc1280_10cc0ff0() { v0 = (void *)&DAT_1191ed54; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10cc0ff0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10cc0ff0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191edc8; } };
+struct NativeOpMember14_10cc0ff0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10cc0ff0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191edc8; } };
 struct NativeOpImpl_FUN_10cc0ff0_vt {
 __forceinline NativeOpImpl_FUN_10cc0ff0_vt(void *self) { *(void **)self = (void *)&DAT_1191edd4; *(void **)((char *)self + 8) = (void *)&DAT_1191ee50; } };
 struct NativeOpImpl_FUN_10cc0ff0 : NativeOpImplBase_thunk_FUN_10cc1280_10cc0ff0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10cc0ff0_vt {
@@ -983,8 +983,8 @@ NativeOpImpl_FUN_10cc0ff0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10cc6100 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10cc6100();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10cc6100() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10cc6100 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10cc6100(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191f534; } };
+struct NativeOpMember14_10cc6100 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10cc6100(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191f534; } };
 struct NativeOpImpl_FUN_10cc6100_vt {
 __forceinline NativeOpImpl_FUN_10cc6100_vt(void *self) { *(void **)self = (void *)&DAT_1191f540; *(void **)((char *)self + 8) = (void *)&DAT_1191f588; } };
 struct NativeOpImpl_FUN_10cc6100 : NativeOpImplBase_thunk_FUN_101b9b80_10cc6100, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10cc6100_vt {
@@ -995,8 +995,8 @@ NativeOpImpl_FUN_10cc6100(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10cc6260 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10cc6260();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10cc6260() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10cc6260 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10cc6260(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191f188; } };
+struct NativeOpMember14_10cc6260 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10cc6260(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191f188; } };
 struct NativeOpImpl_FUN_10cc6260_vt {
 __forceinline NativeOpImpl_FUN_10cc6260_vt(void *self) { *(void **)self = (void *)&DAT_1191f194; *(void **)((char *)self + 8) = (void *)&DAT_1191f1dc; } };
 struct NativeOpImpl_FUN_10cc6260 : NativeOpImplBase_thunk_FUN_101b9b80_10cc6260, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10cc6260_vt {
@@ -1007,8 +1007,8 @@ NativeOpImpl_FUN_10cc6260(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10cc63c0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10cc63c0();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10cc63c0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10cc63c0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10cc63c0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191ef54; } };
+struct NativeOpMember14_10cc63c0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10cc63c0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191ef54; } };
 struct NativeOpImpl_FUN_10cc63c0_vt {
 __forceinline NativeOpImpl_FUN_10cc63c0_vt(void *self) { *(void **)self = (void *)&DAT_1191ef60; *(void **)((char *)self + 8) = (void *)&DAT_1191efa8; } };
 struct NativeOpImpl_FUN_10cc63c0 : NativeOpImplBase_thunk_FUN_101b9b80_10cc63c0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10cc63c0_vt {
@@ -1019,8 +1019,8 @@ NativeOpImpl_FUN_10cc63c0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10cc6520 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10cc6520();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10cc6520() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10cc6520 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10cc6520(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191f0cc; } };
+struct NativeOpMember14_10cc6520 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10cc6520(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191f0cc; } };
 struct NativeOpImpl_FUN_10cc6520_vt {
 __forceinline NativeOpImpl_FUN_10cc6520_vt(void *self) { *(void **)self = (void *)&DAT_1191f0d8; *(void **)((char *)self + 8) = (void *)&DAT_1191f120; } };
 struct NativeOpImpl_FUN_10cc6520 : NativeOpImplBase_thunk_FUN_101b9b80_10cc6520, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10cc6520_vt {
@@ -1031,8 +1031,8 @@ NativeOpImpl_FUN_10cc6520(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10cc6680 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10cc6680();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10cc6680() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10cc6680 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10cc6680(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191f010; } };
+struct NativeOpMember14_10cc6680 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10cc6680(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191f010; } };
 struct NativeOpImpl_FUN_10cc6680_vt {
 __forceinline NativeOpImpl_FUN_10cc6680_vt(void *self) { *(void **)self = (void *)&DAT_1191f01c; *(void **)((char *)self + 8) = (void *)&DAT_1191f064; } };
 struct NativeOpImpl_FUN_10cc6680 : NativeOpImplBase_thunk_FUN_101b9b80_10cc6680, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10cc6680_vt {
@@ -1043,8 +1043,8 @@ NativeOpImpl_FUN_10cc6680(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10cc67e0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10cc67e0();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10cc67e0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10cc67e0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10cc67e0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191f244; } };
+struct NativeOpMember14_10cc67e0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10cc67e0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191f244; } };
 struct NativeOpImpl_FUN_10cc67e0_vt {
 __forceinline NativeOpImpl_FUN_10cc67e0_vt(void *self) { *(void **)self = (void *)&DAT_1191f250; *(void **)((char *)self + 8) = (void *)&DAT_1191f298; } };
 struct NativeOpImpl_FUN_10cc67e0 : NativeOpImplBase_thunk_FUN_101b9b80_10cc67e0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10cc67e0_vt {
@@ -1055,8 +1055,8 @@ NativeOpImpl_FUN_10cc67e0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10cc6940 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10cc6940();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10cc6940() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10cc6940 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10cc6940(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191f3bc; } };
+struct NativeOpMember14_10cc6940 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10cc6940(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191f3bc; } };
 struct NativeOpImpl_FUN_10cc6940_vt {
 __forceinline NativeOpImpl_FUN_10cc6940_vt(void *self) { *(void **)self = (void *)&DAT_1191f3c8; *(void **)((char *)self + 8) = (void *)&DAT_1191f410; } };
 struct NativeOpImpl_FUN_10cc6940 : NativeOpImplBase_thunk_FUN_101b9b80_10cc6940, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10cc6940_vt {
@@ -1067,8 +1067,8 @@ NativeOpImpl_FUN_10cc6940(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10cc6aa0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10cc6aa0();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10cc6aa0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10cc6aa0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10cc6aa0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191f478; } };
+struct NativeOpMember14_10cc6aa0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10cc6aa0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191f478; } };
 struct NativeOpImpl_FUN_10cc6aa0_vt {
 __forceinline NativeOpImpl_FUN_10cc6aa0_vt(void *self) { *(void **)self = (void *)&DAT_1191f484; *(void **)((char *)self + 8) = (void *)&DAT_1191f4cc; } };
 struct NativeOpImpl_FUN_10cc6aa0 : NativeOpImplBase_thunk_FUN_101b9b80_10cc6aa0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10cc6aa0_vt {
@@ -1079,8 +1079,8 @@ NativeOpImpl_FUN_10cc6aa0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10cc6c00 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10cc6c00();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10cc6c00() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10cc6c00 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10cc6c00(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191f300; } };
+struct NativeOpMember14_10cc6c00 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10cc6c00(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191f300; } };
 struct NativeOpImpl_FUN_10cc6c00_vt {
 __forceinline NativeOpImpl_FUN_10cc6c00_vt(void *self) { *(void **)self = (void *)&DAT_1191f30c; *(void **)((char *)self + 8) = (void *)&DAT_1191f354; } };
 struct NativeOpImpl_FUN_10cc6c00 : NativeOpImplBase_thunk_FUN_101b9b80_10cc6c00, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10cc6c00_vt {
@@ -1091,8 +1091,8 @@ NativeOpImpl_FUN_10cc6c00(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10cc88e0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10cc88e0();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10cc88e0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10cc88e0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10cc88e0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191f534; } };
+struct NativeOpMember14_10cc88e0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10cc88e0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191f534; } };
 struct NativeOpImpl_FUN_10cc88e0_vt {
 __forceinline NativeOpImpl_FUN_10cc88e0_vt(void *self) { *(void **)self = (void *)&DAT_1191f540; *(void **)((char *)self + 8) = (void *)&DAT_1191f588; } };
 struct NativeOpImpl_FUN_10cc88e0 : NativeOpImplBase_thunk_FUN_101b9b80_10cc88e0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10cc88e0_vt {
@@ -1103,8 +1103,8 @@ NativeOpImpl_FUN_10cc88e0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10cdbb50_10cdaeb0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10cdbb50_10cdaeb0();
 __forceinline NativeOpImplBase_thunk_FUN_10cdbb50_10cdaeb0() { v0 = (void *)&DAT_11920b34; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10cdaeb0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10cdaeb0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11920b78; } };
+struct NativeOpMember14_10cdaeb0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10cdaeb0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11920b78; } };
 struct NativeOpImpl_FUN_10cdaeb0_vt {
 __forceinline NativeOpImpl_FUN_10cdaeb0_vt(void *self) { *(void **)self = (void *)&DAT_11920b84; *(void **)((char *)self + 8) = (void *)&DAT_11920bd0; } };
 struct NativeOpImpl_FUN_10cdaeb0 : NativeOpImplBase_thunk_FUN_10cdbb50_10cdaeb0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10cdaeb0_vt {
@@ -1115,8 +1115,8 @@ NativeOpImpl_FUN_10cdaeb0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10cdbb70_10cdb010 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10cdbb70_10cdb010();
 __forceinline NativeOpImplBase_thunk_FUN_10cdbb70_10cdb010() { v0 = (void *)&DAT_119209c4; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10cdb010 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10cdb010(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11920a04; } };
+struct NativeOpMember14_10cdb010 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10cdb010(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11920a04; } };
 struct NativeOpImpl_FUN_10cdb010_vt {
 __forceinline NativeOpImpl_FUN_10cdb010_vt(void *self) { *(void **)self = (void *)&DAT_11920a10; *(void **)((char *)self + 8) = (void *)&DAT_11920a58; } };
 struct NativeOpImpl_FUN_10cdb010 : NativeOpImplBase_thunk_FUN_10cdbb70_10cdb010, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10cdb010_vt {
@@ -1127,8 +1127,8 @@ NativeOpImpl_FUN_10cdb010(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10cdbb50_10cdb820 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10cdbb50_10cdb820();
 __forceinline NativeOpImplBase_thunk_FUN_10cdbb50_10cdb820() { v0 = (void *)&DAT_11920b34; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10cdb820 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10cdb820(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11920b78; } };
+struct NativeOpMember14_10cdb820 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10cdb820(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11920b78; } };
 struct NativeOpImpl_FUN_10cdb820_vt {
 __forceinline NativeOpImpl_FUN_10cdb820_vt(void *self) { *(void **)self = (void *)&DAT_11920b84; *(void **)((char *)self + 8) = (void *)&DAT_11920bd0; } };
 struct NativeOpImpl_FUN_10cdb820 : NativeOpImplBase_thunk_FUN_10cdbb50_10cdb820, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10cdb820_vt {
@@ -1139,8 +1139,8 @@ NativeOpImpl_FUN_10cdb820(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10cdbb70_10cdb990 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10cdbb70_10cdb990();
 __forceinline NativeOpImplBase_thunk_FUN_10cdbb70_10cdb990() { v0 = (void *)&DAT_119209c4; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10cdb990 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10cdb990(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11920a04; } };
+struct NativeOpMember14_10cdb990 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10cdb990(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11920a04; } };
 struct NativeOpImpl_FUN_10cdb990_vt {
 __forceinline NativeOpImpl_FUN_10cdb990_vt(void *self) { *(void **)self = (void *)&DAT_11920a10; *(void **)((char *)self + 8) = (void *)&DAT_11920a58; } };
 struct NativeOpImpl_FUN_10cdb990 : NativeOpImplBase_thunk_FUN_10cdbb70_10cdb990, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10cdb990_vt {
@@ -1151,8 +1151,8 @@ NativeOpImpl_FUN_10cdb990(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10ce10b0_10ce0c30 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10ce10b0_10ce0c30();
 __forceinline NativeOpImplBase_thunk_FUN_10ce10b0_10ce0c30() { v0 = (void *)&DAT_11921188; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10ce0c30 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10ce0c30(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191c0dc; } };
+struct NativeOpMember14_10ce0c30 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10ce0c30(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191c0dc; } };
 struct NativeOpImpl_FUN_10ce0c30_vt {
 __forceinline NativeOpImpl_FUN_10ce0c30_vt(void *self) { *(void **)self = (void *)&DAT_119211cc; *(void **)((char *)self + 8) = (void *)&DAT_11921218; } };
 struct NativeOpImpl_FUN_10ce0c30 : NativeOpImplBase_thunk_FUN_10ce10b0_10ce0c30, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10ce0c30_vt {
@@ -1163,8 +1163,8 @@ NativeOpImpl_FUN_10ce0c30(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10ce10b0_10ce0f40 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10ce10b0_10ce0f40();
 __forceinline NativeOpImplBase_thunk_FUN_10ce10b0_10ce0f40() { v0 = (void *)&DAT_11921188; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10ce0f40 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10ce0f40(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1191c0dc; } };
+struct NativeOpMember14_10ce0f40 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10ce0f40(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1191c0dc; } };
 struct NativeOpImpl_FUN_10ce0f40_vt {
 __forceinline NativeOpImpl_FUN_10ce0f40_vt(void *self) { *(void **)self = (void *)&DAT_119211cc; *(void **)((char *)self + 8) = (void *)&DAT_11921218; } };
 struct NativeOpImpl_FUN_10ce0f40 : NativeOpImplBase_thunk_FUN_10ce10b0_10ce0f40, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10ce0f40_vt {
@@ -1175,8 +1175,8 @@ NativeOpImpl_FUN_10ce0f40(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10cf58c0_10cf54b0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10cf58c0_10cf54b0();
 __forceinline NativeOpImplBase_thunk_FUN_10cf58c0_10cf54b0() { v0 = (void *)&DAT_119226fc; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10cf54b0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10cf54b0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11922750; } };
+struct NativeOpMember14_10cf54b0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10cf54b0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11922750; } };
 struct NativeOpImpl_FUN_10cf54b0_vt {
 __forceinline NativeOpImpl_FUN_10cf54b0_vt(void *self) { *(void **)self = (void *)&DAT_1192275c; *(void **)((char *)self + 8) = (void *)&DAT_119227b8; } };
 struct NativeOpImpl_FUN_10cf54b0 : NativeOpImplBase_thunk_FUN_10cf58c0_10cf54b0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10cf54b0_vt {
@@ -1187,8 +1187,8 @@ NativeOpImpl_FUN_10cf54b0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10d7c4d0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10d7c4d0();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10d7c4d0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10d7c4d0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10d7c4d0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1192f214; } };
+struct NativeOpMember14_10d7c4d0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10d7c4d0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1192f214; } };
 struct NativeOpImpl_FUN_10d7c4d0_vt {
 __forceinline NativeOpImpl_FUN_10d7c4d0_vt(void *self) { *(void **)self = (void *)&DAT_1192f220; *(void **)((char *)self + 8) = (void *)&DAT_1192f268; } };
 struct NativeOpImpl_FUN_10d7c4d0 : NativeOpImplBase_thunk_FUN_101b9b80_10d7c4d0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10d7c4d0_vt {
@@ -1199,8 +1199,8 @@ NativeOpImpl_FUN_10d7c4d0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10d7c630 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10d7c630();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10d7c630() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10d7c630 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10d7c630(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1192f38c; } };
+struct NativeOpMember14_10d7c630 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10d7c630(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1192f38c; } };
 struct NativeOpImpl_FUN_10d7c630_vt {
 __forceinline NativeOpImpl_FUN_10d7c630_vt(void *self) { *(void **)self = (void *)&DAT_1192f398; *(void **)((char *)self + 8) = (void *)&DAT_1192f3e0; } };
 struct NativeOpImpl_FUN_10d7c630 : NativeOpImplBase_thunk_FUN_101b9b80_10d7c630, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10d7c630_vt {
@@ -1211,8 +1211,8 @@ NativeOpImpl_FUN_10d7c630(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10d7c790 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10d7c790();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10d7c790() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10d7c790 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10d7c790(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1189e9f4; } };
+struct NativeOpMember14_10d7c790 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10d7c790(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1189e9f4; } };
 struct NativeOpImpl_FUN_10d7c790_vt {
 __forceinline NativeOpImpl_FUN_10d7c790_vt(void *self) { *(void **)self = (void *)&DAT_1192f164; *(void **)((char *)self + 8) = (void *)&DAT_1192f1ac; } };
 struct NativeOpImpl_FUN_10d7c790 : NativeOpImplBase_thunk_FUN_101b9b80_10d7c790, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10d7c790_vt {
@@ -1223,8 +1223,8 @@ NativeOpImpl_FUN_10d7c790(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10d7c8f0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10d7c8f0();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10d7c8f0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10d7c8f0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10d7c8f0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1192f2d0; } };
+struct NativeOpMember14_10d7c8f0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10d7c8f0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1192f2d0; } };
 struct NativeOpImpl_FUN_10d7c8f0_vt {
 __forceinline NativeOpImpl_FUN_10d7c8f0_vt(void *self) { *(void **)self = (void *)&DAT_1192f2dc; *(void **)((char *)self + 8) = (void *)&DAT_1192f324; } };
 struct NativeOpImpl_FUN_10d7c8f0 : NativeOpImplBase_thunk_FUN_101b9b80_10d7c8f0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10d7c8f0_vt {
@@ -1235,8 +1235,8 @@ NativeOpImpl_FUN_10d7c8f0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10d9b8c0_10d9ab50 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10d9b8c0_10d9ab50();
 __forceinline NativeOpImplBase_thunk_FUN_10d9b8c0_10d9ab50() { v0 = (void *)&DAT_11931990; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10d9ab50 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10d9ab50(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11920e2c; } };
+struct NativeOpMember14_10d9ab50 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10d9ab50(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11920e2c; } };
 struct NativeOpImpl_FUN_10d9ab50_vt {
 __forceinline NativeOpImpl_FUN_10d9ab50_vt(void *self) { *(void **)self = (void *)&DAT_119319d0; *(void **)((char *)self + 8) = (void *)&DAT_11931a18; } };
 struct NativeOpImpl_FUN_10d9ab50 : NativeOpImplBase_thunk_FUN_10d9b8c0_10d9ab50, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10d9ab50_vt {
@@ -1247,8 +1247,8 @@ NativeOpImpl_FUN_10d9ab50(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10d9b8c0_10d9b0a0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10d9b8c0_10d9b0a0();
 __forceinline NativeOpImplBase_thunk_FUN_10d9b8c0_10d9b0a0() { v0 = (void *)&DAT_11931990; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10d9b0a0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10d9b0a0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11920e2c; } };
+struct NativeOpMember14_10d9b0a0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10d9b0a0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11920e2c; } };
 struct NativeOpImpl_FUN_10d9b0a0_vt {
 __forceinline NativeOpImpl_FUN_10d9b0a0_vt(void *self) { *(void **)self = (void *)&DAT_119319d0; *(void **)((char *)self + 8) = (void *)&DAT_11931a18; } };
 struct NativeOpImpl_FUN_10d9b0a0 : NativeOpImplBase_thunk_FUN_10d9b8c0_10d9b0a0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10d9b0a0_vt {
@@ -1259,8 +1259,8 @@ NativeOpImpl_FUN_10d9b0a0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10de4fc0_10de4720 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10de4fc0_10de4720();
 __forceinline NativeOpImplBase_thunk_FUN_10de4fc0_10de4720() { v0 = (void *)&DAT_11935f64; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10de4720 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10de4720(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11935fb0; } };
+struct NativeOpMember14_10de4720 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10de4720(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11935fb0; } };
 struct NativeOpImpl_FUN_10de4720_vt {
 __forceinline NativeOpImpl_FUN_10de4720_vt(void *self) { *(void **)self = (void *)&DAT_11935fbc; *(void **)((char *)self + 8) = (void *)&DAT_11936014; } };
 struct NativeOpImpl_FUN_10de4720 : NativeOpImplBase_thunk_FUN_10de4fc0_10de4720, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10de4720_vt {
@@ -1271,8 +1271,8 @@ NativeOpImpl_FUN_10de4720(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10de4fc0_10de4d40 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10de4fc0_10de4d40();
 __forceinline NativeOpImplBase_thunk_FUN_10de4fc0_10de4d40() { v0 = (void *)&DAT_11935f64; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10de4d40 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10de4d40(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11935fb0; } };
+struct NativeOpMember14_10de4d40 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10de4d40(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11935fb0; } };
 struct NativeOpImpl_FUN_10de4d40_vt {
 __forceinline NativeOpImpl_FUN_10de4d40_vt(void *self) { *(void **)self = (void *)&DAT_11935fbc; *(void **)((char *)self + 8) = (void *)&DAT_11936014; } };
 struct NativeOpImpl_FUN_10de4d40 : NativeOpImplBase_thunk_FUN_10de4fc0_10de4d40, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10de4d40_vt {
@@ -1283,8 +1283,8 @@ NativeOpImpl_FUN_10de4d40(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10e92ee0_10e8b520 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10e92ee0_10e8b520();
 __forceinline NativeOpImplBase_thunk_FUN_10e92ee0_10e8b520() { v0 = (void *)&DAT_1194685c; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10e8b520 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10e8b520(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_119468a0; } };
+struct NativeOpMember14_10e8b520 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10e8b520(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_119468a0; } };
 struct NativeOpImpl_FUN_10e8b520_vt {
 __forceinline NativeOpImpl_FUN_10e8b520_vt(void *self) { *(void **)self = (void *)&DAT_119468ac; *(void **)((char *)self + 8) = (void *)&DAT_119468f8; } };
 struct NativeOpImpl_FUN_10e8b520 : NativeOpImplBase_thunk_FUN_10e92ee0_10e8b520, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10e8b520_vt {
@@ -1295,8 +1295,8 @@ NativeOpImpl_FUN_10e8b520(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10e92ee0_10e8f200 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10e92ee0_10e8f200();
 __forceinline NativeOpImplBase_thunk_FUN_10e92ee0_10e8f200() { v0 = (void *)&DAT_1194685c; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10e8f200 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10e8f200(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_119468a0; } };
+struct NativeOpMember14_10e8f200 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10e8f200(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_119468a0; } };
 struct NativeOpImpl_FUN_10e8f200_vt {
 __forceinline NativeOpImpl_FUN_10e8f200_vt(void *self) { *(void **)self = (void *)&DAT_119468ac; *(void **)((char *)self + 8) = (void *)&DAT_119468f8; } };
 struct NativeOpImpl_FUN_10e8f200 : NativeOpImplBase_thunk_FUN_10e92ee0_10e8f200, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10e8f200_vt {
@@ -1307,8 +1307,8 @@ NativeOpImpl_FUN_10e8f200(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10ef1290 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10ef1290();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10ef1290() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10ef1290 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10ef1290(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1194b768; } };
+struct NativeOpMember14_10ef1290 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10ef1290(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1194b768; } };
 struct NativeOpImpl_FUN_10ef1290_vt {
 __forceinline NativeOpImpl_FUN_10ef1290_vt(void *self) { *(void **)self = (void *)&DAT_1194b774; *(void **)((char *)self + 8) = (void *)&DAT_1194b7bc; } };
 struct NativeOpImpl_FUN_10ef1290 : NativeOpImplBase_thunk_FUN_101b9b80_10ef1290, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10ef1290_vt {
@@ -1319,8 +1319,8 @@ NativeOpImpl_FUN_10ef1290(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10f0ef10_10f0d720 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10f0ef10_10f0d720();
 __forceinline NativeOpImplBase_thunk_FUN_10f0ef10_10f0d720() { v0 = (void *)&DAT_1194cbec; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f0d720 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f0d720(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1194ce1c; } };
+struct NativeOpMember14_10f0d720 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f0d720(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1194ce1c; } };
 struct NativeOpImpl_FUN_10f0d720_vt {
 __forceinline NativeOpImpl_FUN_10f0d720_vt(void *self) { *(void **)self = (void *)&DAT_1194ce28; *(void **)((char *)self + 8) = (void *)&DAT_1194ce88; } };
 struct NativeOpImpl_FUN_10f0d720 : NativeOpImplBase_thunk_FUN_10f0ef10_10f0d720, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f0d720_vt {
@@ -1331,8 +1331,8 @@ NativeOpImpl_FUN_10f0d720(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10f0ef10_10f0d880 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10f0ef10_10f0d880();
 __forceinline NativeOpImplBase_thunk_FUN_10f0ef10_10f0d880() { v0 = (void *)&DAT_1194cbec; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f0d880 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f0d880(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1194cc44; } };
+struct NativeOpMember14_10f0d880 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f0d880(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1194cc44; } };
 struct NativeOpImpl_FUN_10f0d880_vt {
 __forceinline NativeOpImpl_FUN_10f0d880_vt(void *self) { *(void **)self = (void *)&DAT_1194cc50; *(void **)((char *)self + 8) = (void *)&DAT_1194ccb0; } };
 struct NativeOpImpl_FUN_10f0d880 : NativeOpImplBase_thunk_FUN_10f0ef10_10f0d880, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f0d880_vt {
@@ -1343,8 +1343,8 @@ NativeOpImpl_FUN_10f0d880(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10f0ef10_10f0d9e0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10f0ef10_10f0d9e0();
 __forceinline NativeOpImplBase_thunk_FUN_10f0ef10_10f0d9e0() { v0 = (void *)&DAT_1194cbec; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f0d9e0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f0d9e0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1194cd30; } };
+struct NativeOpMember14_10f0d9e0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f0d9e0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1194cd30; } };
 struct NativeOpImpl_FUN_10f0d9e0_vt {
 __forceinline NativeOpImpl_FUN_10f0d9e0_vt(void *self) { *(void **)self = (void *)&DAT_1194cd3c; *(void **)((char *)self + 8) = (void *)&DAT_1194cd9c; } };
 struct NativeOpImpl_FUN_10f0d9e0 : NativeOpImplBase_thunk_FUN_10f0ef10_10f0d9e0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f0d9e0_vt {
@@ -1355,8 +1355,8 @@ NativeOpImpl_FUN_10f0d9e0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10f24730 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10f24730();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10f24730() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f24730 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f24730(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1194e610; } };
+struct NativeOpMember14_10f24730 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f24730(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1194e610; } };
 struct NativeOpImpl_FUN_10f24730_vt {
 __forceinline NativeOpImpl_FUN_10f24730_vt(void *self) { *(void **)self = (void *)&DAT_1194e61c; *(void **)((char *)self + 8) = (void *)&DAT_1194e664; } };
 struct NativeOpImpl_FUN_10f24730 : NativeOpImplBase_thunk_FUN_101b9b80_10f24730, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f24730_vt {
@@ -1367,8 +1367,8 @@ NativeOpImpl_FUN_10f24730(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10f2f9b0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10f2f9b0();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10f2f9b0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f2f9b0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f2f9b0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1194f36c; } };
+struct NativeOpMember14_10f2f9b0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f2f9b0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1194f36c; } };
 struct NativeOpImpl_FUN_10f2f9b0_vt {
 __forceinline NativeOpImpl_FUN_10f2f9b0_vt(void *self) { *(void **)self = (void *)&DAT_1194f378; *(void **)((char *)self + 8) = (void *)&DAT_1194f3c0; } };
 struct NativeOpImpl_FUN_10f2f9b0 : NativeOpImplBase_thunk_FUN_101b9b80_10f2f9b0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f2f9b0_vt {
@@ -1379,8 +1379,8 @@ NativeOpImpl_FUN_10f2f9b0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10f2fb10 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10f2fb10();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10f2fb10() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f2fb10 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f2fb10(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1194f2ac; } };
+struct NativeOpMember14_10f2fb10 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f2fb10(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1194f2ac; } };
 struct NativeOpImpl_FUN_10f2fb10_vt {
 __forceinline NativeOpImpl_FUN_10f2fb10_vt(void *self) { *(void **)self = (void *)&DAT_1194f2b8; *(void **)((char *)self + 8) = (void *)&DAT_1194f300; } };
 struct NativeOpImpl_FUN_10f2fb10 : NativeOpImplBase_thunk_FUN_101b9b80_10f2fb10, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f2fb10_vt {
@@ -1391,8 +1391,8 @@ NativeOpImpl_FUN_10f2fb10(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10f2fc70 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10f2fc70();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10f2fc70() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f2fc70 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f2fc70(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1194f1ec; } };
+struct NativeOpMember14_10f2fc70 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f2fc70(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1194f1ec; } };
 struct NativeOpImpl_FUN_10f2fc70_vt {
 __forceinline NativeOpImpl_FUN_10f2fc70_vt(void *self) { *(void **)self = (void *)&DAT_1194f1f8; *(void **)((char *)self + 8) = (void *)&DAT_1194f240; } };
 struct NativeOpImpl_FUN_10f2fc70 : NativeOpImplBase_thunk_FUN_101b9b80_10f2fc70, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f2fc70_vt {
@@ -1403,8 +1403,8 @@ NativeOpImpl_FUN_10f2fc70(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10f2fdd0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10f2fdd0();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10f2fdd0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f2fdd0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f2fdd0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1194f12c; } };
+struct NativeOpMember14_10f2fdd0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f2fdd0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1194f12c; } };
 struct NativeOpImpl_FUN_10f2fdd0_vt {
 __forceinline NativeOpImpl_FUN_10f2fdd0_vt(void *self) { *(void **)self = (void *)&DAT_1194f138; *(void **)((char *)self + 8) = (void *)&DAT_1194f180; } };
 struct NativeOpImpl_FUN_10f2fdd0 : NativeOpImplBase_thunk_FUN_101b9b80_10f2fdd0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f2fdd0_vt {
@@ -1415,8 +1415,8 @@ NativeOpImpl_FUN_10f2fdd0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10f57040_10f55c60 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10f57040_10f55c60();
 __forceinline NativeOpImplBase_thunk_FUN_10f57040_10f55c60() { v0 = (void *)&DAT_11952040; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f55c60 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f55c60(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11952084; } };
+struct NativeOpMember14_10f55c60 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f55c60(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11952084; } };
 struct NativeOpImpl_FUN_10f55c60_vt {
 __forceinline NativeOpImpl_FUN_10f55c60_vt(void *self) { *(void **)self = (void *)&DAT_11952090; *(void **)((char *)self + 8) = (void *)&DAT_119520dc; } };
 struct NativeOpImpl_FUN_10f55c60 : NativeOpImplBase_thunk_FUN_10f57040_10f55c60, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f55c60_vt {
@@ -1427,8 +1427,8 @@ NativeOpImpl_FUN_10f55c60(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10f57060_10f55dc0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10f57060_10f55dc0();
 __forceinline NativeOpImplBase_thunk_FUN_10f57060_10f55dc0() { v0 = (void *)&DAT_11951ed8; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f55dc0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f55dc0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11951f18; } };
+struct NativeOpMember14_10f55dc0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f55dc0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11951f18; } };
 struct NativeOpImpl_FUN_10f55dc0_vt {
 __forceinline NativeOpImpl_FUN_10f55dc0_vt(void *self) { *(void **)self = (void *)&DAT_11951f24; *(void **)((char *)self + 8) = (void *)&DAT_11951f6c; } };
 struct NativeOpImpl_FUN_10f55dc0 : NativeOpImplBase_thunk_FUN_10f57060_10f55dc0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f55dc0_vt {
@@ -1439,8 +1439,8 @@ NativeOpImpl_FUN_10f55dc0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10f57080_10f55f20 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10f57080_10f55f20();
 __forceinline NativeOpImplBase_thunk_FUN_10f57080_10f55f20() { v0 = (void *)&DAT_119521b0; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f55f20 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f55f20(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_119521f0; } };
+struct NativeOpMember14_10f55f20 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f55f20(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_119521f0; } };
 struct NativeOpImpl_FUN_10f55f20_vt {
 __forceinline NativeOpImpl_FUN_10f55f20_vt(void *self) { *(void **)self = (void *)&DAT_119521fc; *(void **)((char *)self + 8) = (void *)&DAT_11952244; } };
 struct NativeOpImpl_FUN_10f55f20 : NativeOpImplBase_thunk_FUN_10f57080_10f55f20, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f55f20_vt {
@@ -1451,8 +1451,8 @@ NativeOpImpl_FUN_10f55f20(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10f570a0_10f56080 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10f570a0_10f56080();
 __forceinline NativeOpImplBase_thunk_FUN_10f570a0_10f56080() { v0 = (void *)&DAT_1195232c; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f56080 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f56080(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11952374; } };
+struct NativeOpMember14_10f56080 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f56080(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11952374; } };
 struct NativeOpImpl_FUN_10f56080_vt {
 __forceinline NativeOpImpl_FUN_10f56080_vt(void *self) { *(void **)self = (void *)&DAT_11952380; *(void **)((char *)self + 8) = (void *)&DAT_119523d4; } };
 struct NativeOpImpl_FUN_10f56080 : NativeOpImplBase_thunk_FUN_10f570a0_10f56080, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f56080_vt {
@@ -1463,8 +1463,8 @@ NativeOpImpl_FUN_10f56080(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10f57040_10f56480 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10f57040_10f56480();
 __forceinline NativeOpImplBase_thunk_FUN_10f57040_10f56480() { v0 = (void *)&DAT_11952040; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f56480 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f56480(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11952084; } };
+struct NativeOpMember14_10f56480 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f56480(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11952084; } };
 struct NativeOpImpl_FUN_10f56480_vt {
 __forceinline NativeOpImpl_FUN_10f56480_vt(void *self) { *(void **)self = (void *)&DAT_11952090; *(void **)((char *)self + 8) = (void *)&DAT_119520dc; } };
 struct NativeOpImpl_FUN_10f56480 : NativeOpImplBase_thunk_FUN_10f57040_10f56480, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f56480_vt {
@@ -1475,8 +1475,8 @@ NativeOpImpl_FUN_10f56480(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10f57060_10f565f0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10f57060_10f565f0();
 __forceinline NativeOpImplBase_thunk_FUN_10f57060_10f565f0() { v0 = (void *)&DAT_11951ed8; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f565f0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f565f0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11951f18; } };
+struct NativeOpMember14_10f565f0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f565f0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11951f18; } };
 struct NativeOpImpl_FUN_10f565f0_vt {
 __forceinline NativeOpImpl_FUN_10f565f0_vt(void *self) { *(void **)self = (void *)&DAT_11951f24; *(void **)((char *)self + 8) = (void *)&DAT_11951f6c; } };
 struct NativeOpImpl_FUN_10f565f0 : NativeOpImplBase_thunk_FUN_10f57060_10f565f0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f565f0_vt {
@@ -1487,8 +1487,8 @@ NativeOpImpl_FUN_10f565f0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10f57080_10f56760 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10f57080_10f56760();
 __forceinline NativeOpImplBase_thunk_FUN_10f57080_10f56760() { v0 = (void *)&DAT_119521b0; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f56760 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f56760(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_119521f0; } };
+struct NativeOpMember14_10f56760 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f56760(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_119521f0; } };
 struct NativeOpImpl_FUN_10f56760_vt {
 __forceinline NativeOpImpl_FUN_10f56760_vt(void *self) { *(void **)self = (void *)&DAT_119521fc; *(void **)((char *)self + 8) = (void *)&DAT_11952244; } };
 struct NativeOpImpl_FUN_10f56760 : NativeOpImplBase_thunk_FUN_10f57080_10f56760, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f56760_vt {
@@ -1499,8 +1499,8 @@ NativeOpImpl_FUN_10f56760(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10f570a0_10f568d0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10f570a0_10f568d0();
 __forceinline NativeOpImplBase_thunk_FUN_10f570a0_10f568d0() { v0 = (void *)&DAT_1195232c; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f568d0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f568d0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11952374; } };
+struct NativeOpMember14_10f568d0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f568d0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11952374; } };
 struct NativeOpImpl_FUN_10f568d0_vt {
 __forceinline NativeOpImpl_FUN_10f568d0_vt(void *self) { *(void **)self = (void *)&DAT_11952380; *(void **)((char *)self + 8) = (void *)&DAT_119523d4; } };
 struct NativeOpImpl_FUN_10f568d0 : NativeOpImplBase_thunk_FUN_10f570a0_10f568d0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f568d0_vt {
@@ -1511,8 +1511,8 @@ NativeOpImpl_FUN_10f568d0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10f65b20_10f64e00 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10f65b20_10f64e00();
 __forceinline NativeOpImplBase_thunk_FUN_10f65b20_10f64e00() { v0 = (void *)&DAT_1195273c; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f64e00 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f64e00(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11952780; } };
+struct NativeOpMember14_10f64e00 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f64e00(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11952780; } };
 struct NativeOpImpl_FUN_10f64e00_vt {
 __forceinline NativeOpImpl_FUN_10f64e00_vt(void *self) { *(void **)self = (void *)&DAT_1195278c; *(void **)((char *)self + 8) = (void *)&DAT_119527d8; } };
 struct NativeOpImpl_FUN_10f64e00 : NativeOpImplBase_thunk_FUN_10f65b20_10f64e00, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f64e00_vt {
@@ -1523,8 +1523,8 @@ NativeOpImpl_FUN_10f64e00(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10f65b20_10f65290 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10f65b20_10f65290();
 __forceinline NativeOpImplBase_thunk_FUN_10f65b20_10f65290() { v0 = (void *)&DAT_1195273c; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f65290 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f65290(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11952780; } };
+struct NativeOpMember14_10f65290 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f65290(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11952780; } };
 struct NativeOpImpl_FUN_10f65290_vt {
 __forceinline NativeOpImpl_FUN_10f65290_vt(void *self) { *(void **)self = (void *)&DAT_1195278c; *(void **)((char *)self + 8) = (void *)&DAT_119527d8; } };
 struct NativeOpImpl_FUN_10f65290 : NativeOpImplBase_thunk_FUN_10f65b20_10f65290, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f65290_vt {
@@ -1535,8 +1535,8 @@ NativeOpImpl_FUN_10f65290(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10f6fb30 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10f6fb30();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10f6fb30() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f6fb30 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f6fb30(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11952b10; } };
+struct NativeOpMember14_10f6fb30 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f6fb30(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11952b10; } };
 struct NativeOpImpl_FUN_10f6fb30_vt {
 __forceinline NativeOpImpl_FUN_10f6fb30_vt(void *self) { *(void **)self = (void *)&DAT_11952b1c; *(void **)((char *)self + 8) = (void *)&DAT_11952b64; } };
 struct NativeOpImpl_FUN_10f6fb30 : NativeOpImplBase_thunk_FUN_101b9b80_10f6fb30, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f6fb30_vt {
@@ -1547,8 +1547,8 @@ NativeOpImpl_FUN_10f6fb30(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_10f77a60_10f77460 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_10f77a60_10f77460();
 __forceinline NativeOpImplBase_thunk_FUN_10f77a60_10f77460() { v0 = (void *)&DAT_119534fc; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f77460 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f77460(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11950a7c; } };
+struct NativeOpMember14_10f77460 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f77460(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11950a7c; } };
 struct NativeOpImpl_FUN_10f77460_vt {
 __forceinline NativeOpImpl_FUN_10f77460_vt(void *self) { *(void **)self = (void *)&DAT_11953540; *(void **)((char *)self + 8) = (void *)&DAT_1195358c; } };
 struct NativeOpImpl_FUN_10f77460 : NativeOpImplBase_thunk_FUN_10f77a60_10f77460, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f77460_vt {
@@ -1559,8 +1559,8 @@ NativeOpImpl_FUN_10f77460(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10f7c3e0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10f7c3e0();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10f7c3e0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f7c3e0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f7c3e0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11953b28; } };
+struct NativeOpMember14_10f7c3e0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f7c3e0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11953b28; } };
 struct NativeOpImpl_FUN_10f7c3e0_vt {
 __forceinline NativeOpImpl_FUN_10f7c3e0_vt(void *self) { *(void **)self = (void *)&DAT_11953b34; *(void **)((char *)self + 8) = (void *)&DAT_11953b7c; } };
 struct NativeOpImpl_FUN_10f7c3e0 : NativeOpImplBase_thunk_FUN_101b9b80_10f7c3e0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f7c3e0_vt {
@@ -1571,8 +1571,8 @@ NativeOpImpl_FUN_10f7c3e0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10f7c540 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10f7c540();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10f7c540() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f7c540 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f7c540(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11953a6c; } };
+struct NativeOpMember14_10f7c540 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f7c540(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11953a6c; } };
 struct NativeOpImpl_FUN_10f7c540_vt {
 __forceinline NativeOpImpl_FUN_10f7c540_vt(void *self) { *(void **)self = (void *)&DAT_11953a78; *(void **)((char *)self + 8) = (void *)&DAT_11953ac0; } };
 struct NativeOpImpl_FUN_10f7c540 : NativeOpImplBase_thunk_FUN_101b9b80_10f7c540, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f7c540_vt {
@@ -1583,8 +1583,8 @@ NativeOpImpl_FUN_10f7c540(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10f8a230 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10f8a230();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10f8a230() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f8a230 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f8a230(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1195474c; } };
+struct NativeOpMember14_10f8a230 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f8a230(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1195474c; } };
 struct NativeOpImpl_FUN_10f8a230_vt {
 __forceinline NativeOpImpl_FUN_10f8a230_vt(void *self) { *(void **)self = (void *)&DAT_11954758; *(void **)((char *)self + 8) = (void *)&DAT_119547a0; } };
 struct NativeOpImpl_FUN_10f8a230 : NativeOpImplBase_thunk_FUN_101b9b80_10f8a230, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f8a230_vt {
@@ -1595,8 +1595,8 @@ NativeOpImpl_FUN_10f8a230(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10f8a390 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10f8a390();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10f8a390() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f8a390 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f8a390(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1195480c; } };
+struct NativeOpMember14_10f8a390 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f8a390(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1195480c; } };
 struct NativeOpImpl_FUN_10f8a390_vt {
 __forceinline NativeOpImpl_FUN_10f8a390_vt(void *self) { *(void **)self = (void *)&DAT_11954818; *(void **)((char *)self + 8) = (void *)&DAT_11954860; } };
 struct NativeOpImpl_FUN_10f8a390 : NativeOpImplBase_thunk_FUN_101b9b80_10f8a390, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f8a390_vt {
@@ -1607,8 +1607,8 @@ NativeOpImpl_FUN_10f8a390(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_10f8a4f0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_10f8a4f0();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10f8a4f0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_10f8a4f0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_10f8a4f0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_119548cc; } };
+struct NativeOpMember14_10f8a4f0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_10f8a4f0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_119548cc; } };
 struct NativeOpImpl_FUN_10f8a4f0_vt {
 __forceinline NativeOpImpl_FUN_10f8a4f0_vt(void *self) { *(void **)self = (void *)&DAT_119548d8; *(void **)((char *)self + 8) = (void *)&DAT_11954920; } };
 struct NativeOpImpl_FUN_10f8a4f0 : NativeOpImplBase_thunk_FUN_101b9b80_10f8a4f0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_10f8a4f0_vt {
@@ -1619,8 +1619,8 @@ NativeOpImpl_FUN_10f8a4f0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_11017c80_11017960 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_11017c80_11017960();
 __forceinline NativeOpImplBase_thunk_FUN_11017c80_11017960() { v0 = (void *)&DAT_11960650; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_11017960 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_11017960(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_119606a8; } };
+struct NativeOpMember14_11017960 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_11017960(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_119606a8; } };
 struct NativeOpImpl_FUN_11017960_vt {
 __forceinline NativeOpImpl_FUN_11017960_vt(void *self) { *(void **)self = (void *)&DAT_119606b4; *(void **)((char *)self + 8) = (void *)&DAT_11960714; } };
 struct NativeOpImpl_FUN_11017960 : NativeOpImplBase_thunk_FUN_11017c80_11017960, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_11017960_vt {
@@ -1631,8 +1631,8 @@ NativeOpImpl_FUN_11017960(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_11026c80_11025ee0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_11026c80_11025ee0();
 __forceinline NativeOpImplBase_thunk_FUN_11026c80_11025ee0() { v0 = (void *)&DAT_11963cc8; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_11025ee0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_11025ee0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_119639e0; } };
+struct NativeOpMember14_11025ee0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_11025ee0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_119639e0; } };
 struct NativeOpImpl_FUN_11025ee0_vt {
 __forceinline NativeOpImpl_FUN_11025ee0_vt(void *self) { *(void **)self = (void *)&DAT_11963d10; *(void **)((char *)self + 8) = (void *)&DAT_11963d64; } };
 struct NativeOpImpl_FUN_11025ee0 : NativeOpImplBase_thunk_FUN_11026c80_11025ee0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_11025ee0_vt {
@@ -1643,8 +1643,8 @@ NativeOpImpl_FUN_11025ee0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_11026c80_110267e0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_11026c80_110267e0();
 __forceinline NativeOpImplBase_thunk_FUN_11026c80_110267e0() { v0 = (void *)&DAT_11963cc8; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_110267e0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_110267e0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_119639e0; } };
+struct NativeOpMember14_110267e0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_110267e0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_119639e0; } };
 struct NativeOpImpl_FUN_110267e0_vt {
 __forceinline NativeOpImpl_FUN_110267e0_vt(void *self) { *(void **)self = (void *)&DAT_11963d10; *(void **)((char *)self + 8) = (void *)&DAT_11963d64; } };
 struct NativeOpImpl_FUN_110267e0 : NativeOpImplBase_thunk_FUN_11026c80_110267e0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_110267e0_vt {
@@ -1655,8 +1655,8 @@ NativeOpImpl_FUN_110267e0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_1105f5e0_1105f250 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_1105f5e0_1105f250();
 __forceinline NativeOpImplBase_thunk_FUN_1105f5e0_1105f250() { v0 = (void *)&DAT_119660b8; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_1105f250 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_1105f250(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11966100; } };
+struct NativeOpMember14_1105f250 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_1105f250(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11966100; } };
 struct NativeOpImpl_FUN_1105f250_vt {
 __forceinline NativeOpImpl_FUN_1105f250_vt(void *self) { *(void **)self = (void *)&DAT_1196610c; *(void **)((char *)self + 8) = (void *)&DAT_11966160; } };
 struct NativeOpImpl_FUN_1105f250 : NativeOpImplBase_thunk_FUN_1105f5e0_1105f250, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_1105f250_vt {
@@ -1667,8 +1667,8 @@ NativeOpImpl_FUN_1105f250(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_1105f5e0_1105f460 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_1105f5e0_1105f460();
 __forceinline NativeOpImplBase_thunk_FUN_1105f5e0_1105f460() { v0 = (void *)&DAT_119660b8; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_1105f460 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_1105f460(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_11966100; } };
+struct NativeOpMember14_1105f460 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_1105f460(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_11966100; } };
 struct NativeOpImpl_FUN_1105f460_vt {
 __forceinline NativeOpImpl_FUN_1105f460_vt(void *self) { *(void **)self = (void *)&DAT_1196610c; *(void **)((char *)self + 8) = (void *)&DAT_11966160; } };
 struct NativeOpImpl_FUN_1105f460 : NativeOpImplBase_thunk_FUN_1105f5e0_1105f460, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_1105f460_vt {
@@ -1679,8 +1679,8 @@ NativeOpImpl_FUN_1105f460(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_11061900_110615e0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_11061900_110615e0();
 __forceinline NativeOpImplBase_thunk_FUN_11061900_110615e0() { v0 = (void *)&DAT_11966268; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_110615e0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_110615e0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_118af10c; } };
+struct NativeOpMember14_110615e0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_110615e0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118af10c; } };
 struct NativeOpImpl_FUN_110615e0_vt {
 __forceinline NativeOpImpl_FUN_110615e0_vt(void *self) { *(void **)self = (void *)&DAT_119662b4; *(void **)((char *)self + 8) = (void *)&DAT_1196630c; } };
 struct NativeOpImpl_FUN_110615e0 : NativeOpImplBase_thunk_FUN_11061900_110615e0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_110615e0_vt {
@@ -1691,8 +1691,8 @@ NativeOpImpl_FUN_110615e0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_11061900_11061790 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_11061900_11061790();
 __forceinline NativeOpImplBase_thunk_FUN_11061900_11061790() { v0 = (void *)&DAT_11966268; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_11061790 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_11061790(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_118af10c; } };
+struct NativeOpMember14_11061790 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_11061790(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118af10c; } };
 struct NativeOpImpl_FUN_11061790_vt {
 __forceinline NativeOpImpl_FUN_11061790_vt(void *self) { *(void **)self = (void *)&DAT_119662b4; *(void **)((char *)self + 8) = (void *)&DAT_1196630c; } };
 struct NativeOpImpl_FUN_11061790 : NativeOpImplBase_thunk_FUN_11061900_11061790, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_11061790_vt {
@@ -1703,8 +1703,8 @@ NativeOpImpl_FUN_11061790(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_11062530_110621c0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_11062530_110621c0();
 __forceinline NativeOpImplBase_thunk_FUN_11062530_110621c0() { v0 = (void *)&DAT_119663e4; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_110621c0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_110621c0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_118821c0; } };
+struct NativeOpMember14_110621c0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_110621c0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118821c0; } };
 struct NativeOpImpl_FUN_110621c0_vt {
 __forceinline NativeOpImpl_FUN_110621c0_vt(void *self) { *(void **)self = (void *)&DAT_11966428; *(void **)((char *)self + 8) = (void *)&DAT_11966474; } };
 struct NativeOpImpl_FUN_110621c0 : NativeOpImplBase_thunk_FUN_11062530_110621c0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_110621c0_vt {
@@ -1715,8 +1715,8 @@ NativeOpImpl_FUN_110621c0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_101b9b80_110646c0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_101b9b80_110646c0();
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_110646c0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_110646c0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_110646c0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_1196651c; } };
+struct NativeOpMember14_110646c0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_110646c0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_1196651c; } };
 struct NativeOpImpl_FUN_110646c0_vt {
 __forceinline NativeOpImpl_FUN_110646c0_vt(void *self) { *(void **)self = (void *)&DAT_11966528; *(void **)((char *)self + 8) = (void *)&DAT_11966570; } };
 struct NativeOpImpl_FUN_110646c0 : NativeOpImplBase_thunk_FUN_101b9b80_110646c0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_110646c0_vt {
@@ -1727,8 +1727,8 @@ NativeOpImpl_FUN_110646c0(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_11067850_11067520 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_11067850_11067520();
 __forceinline NativeOpImplBase_thunk_FUN_11067850_11067520() { v0 = (void *)&DAT_11966858; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_11067520 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_11067520(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_119668ac; } };
+struct NativeOpMember14_11067520 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_11067520(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_119668ac; } };
 struct NativeOpImpl_FUN_11067520_vt {
 __forceinline NativeOpImpl_FUN_11067520_vt(void *self) { *(void **)self = (void *)&DAT_119668b8; *(void **)((char *)self + 8) = (void *)&DAT_11966914; } };
 struct NativeOpImpl_FUN_11067520 : NativeOpImplBase_thunk_FUN_11067850_11067520, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_11067520_vt {
@@ -1739,8 +1739,8 @@ NativeOpImpl_FUN_11067520(void *param_2);
 };
 struct NativeOpImplBase_thunk_FUN_11067850_110676d0 { void *v0; void *f4; ~NativeOpImplBase_thunk_FUN_11067850_110676d0();
 __forceinline NativeOpImplBase_thunk_FUN_11067850_110676d0() { v0 = (void *)&DAT_11966858; f4 = 0; g_lSCObjCount++; } };
-struct NativeOpMember14_110676d0 : NativeOpMember14V, NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;
-    __forceinline NativeOpMember14_110676d0(void *param) : NativeOpSmart14_thunk_FUN_101ba1b0(param) { f8 = 0; vptr = (void *)&DAT_119668ac; } };
+struct NativeOpMember14_110676d0 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
+    __forceinline NativeOpMember14_110676d0(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_119668ac; } };
 struct NativeOpImpl_FUN_110676d0_vt {
 __forceinline NativeOpImpl_FUN_110676d0_vt(void *self) { *(void **)self = (void *)&DAT_119668b8; *(void **)((char *)self + 8) = (void *)&DAT_11966914; } };
 struct NativeOpImpl_FUN_110676d0 : NativeOpImplBase_thunk_FUN_11067850_110676d0, NativeOpMember8_thunk_FUN_101ba0c0, NativeOpImpl_FUN_110676d0_vt {

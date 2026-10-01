@@ -94,11 +94,7 @@ def lower(record, reference, base, sections):
     source = (
         f'void {klass}::FUN_{entry}(unsigned int param_2, unsigned int param_3) {{\n'
         f'NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);\n'
-        f'NativeVcallPair pair = {{piVar1, 0}};\n'
-        f'if (piVar1 != 0) {{\n'
-        f'  pair.next = piVar1->vC();\n'
-        f'  pair.next->v4();\n'
-        f'}}\n'
+        f'NativeVcallPair pair(piVar1);\n'
         f'f1c = (unsigned short)param_3;\n'
         f'{{\n'
         f'f14 = 0;\n'
@@ -164,6 +160,9 @@ def main():
         r['source'] = r['source'].replace('NativeVcallPair', r['pair_class'])
     for pair in sorted({r['pair_class'] for r in candidates}):
         library += (f'struct {pair} {{ NativeVcallThis8 *rep; NativeVcallObj *next;\n'
+                    f'  __forceinline {pair}(NativeVcallThis8 *r) {{\n'
+                    f'    rep = r; next = 0;\n'
+                    f'    if (r != 0) {{ next = r->vC(); next->v4(); }} }}\n'
                     f'  __forceinline ~{pair}() noexcept {{\n'
                     f'    NativeVcallObj *t = next;\n'
                     f'    if (t != 0) {{ rep = 0; next = 0; t->v8(); }} }}\n'

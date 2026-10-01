@@ -81,8 +81,8 @@ class EventCopierCallbackTests(unittest.TestCase):
         self.assertEqual(candidate['source_constructor'], '10df9440')
         self.assertEqual(candidate['event_class'], 'NativeCopierEvent_FUN_10df9510')
         self.assertIn('NativeCopierSource_FUN_10df9440 a;', candidate['source'])
-        self.assertIn('NativeCopierAggregate_FUN_10deee60 agg(a);', candidate['source'])
-        self.assertIn('c.thunk_FUN_10defac0(this, agg);', candidate['source'])
+        self.assertIn('NativeCopierAggregate_FUN_10deee60 agg(*pa);', candidate['source'])
+        self.assertIn('pc->thunk_FUN_10defac0(self, agg);', candidate['source'])
         self.assertIn('return this;', candidate['source'])
 
     def test_wrong_call_sequence_rejected(self):

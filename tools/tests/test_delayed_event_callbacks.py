@@ -231,7 +231,7 @@ class DelayedEventCallbackTests(unittest.TestCase):
         self.assertEqual(candidate['fallback_high'], 'NativeFallbackHigh_FUN_105a1d20')
         self.assertEqual(candidate['flag_offset'], 0x10c)
         self.assertIn('thunk_FUN_10ebbab0(16456); return;', candidate['source'])
-        self.assertIn('dispatcher->thunk_FUN_10def490(NativeFallbackEvent_FUN_10dfcab0())',
+        self.assertIn('&dispatcher)->thunk_FUN_10def490(NativeFallbackEvent_FUN_10dfcab0())',
                       candidate['source'])
         self.assertIn('((NativeFallbackResult_10c *)thunk_FUN_10eb41b0())->flag = 1;',
                       candidate['source'])
