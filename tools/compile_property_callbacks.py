@@ -21,7 +21,7 @@ struct NativePropertyDispatcher { void thunk_FUN_10df15a0(Event_thunk_FUN_10def0
 '''
 
 
-def lower(record, reference, base, sections):
+def lower(record, reference, base, sections, temporary_keys=False):
     text=record.get('decompiled_c','')
     property_count={247:1,302:2,357:3}.get(record['body_bytes'])
     if not property_count or text.count('thunk_FUN_10dee620(')!=1:return None
@@ -46,8 +46,11 @@ def lower(record, reference, base, sections):
     declaration='struct '+classname+' : Event_thunk_FUN_10def0d0 { __forceinline '+classname+'():Event_thunk_FUN_10def0d0("'+labels[0]+'",'+event_id.group(1)+') {} };\n'
     source='void NativePropertyCallback::FUN_'+entry+'('+parameters+') {\n'+classname+' event;\n'
     for i,method in enumerate(setters):
-        source+='{ RecoveredString_FUN_1008c50b key("'+labels[i+1]+'");\n'
-        source+='((NativePropertyBag *)event.representation.properties)->'+method+'((SCStr *)&key,value'+str(i)+'); }\n'
+        if temporary_keys:
+            source+='((NativePropertyBag *)event.representation.properties)->'+method+'(RecoveredString_FUN_1008c50b("'+labels[i+1]+'"),value'+str(i)+');\n'
+        else:
+            source+='{ RecoveredString_FUN_1008c50b key("'+labels[i+1]+'");\n'
+            source+='((NativePropertyBag *)event.representation.properties)->'+method+'((SCStr *)&key,value'+str(i)+'); }\n'
     source+='((NativePropertyDispatcher *)((char *)this + '+str(int(receiver.group(1),16))+'))->thunk_FUN_10df15a0(&event);\n}\n'
     return {**record,'source':source,'value_declaration':declaration,'parameters':parameters}
 
@@ -55,16 +58,16 @@ def lower(record, reference, base, sections):
 def main():
     rows=list(map(json.loads,(ROOT/'analysis/container-call-abi/property-setters-word/after.jsonl').open()))
     reference=DLL.read_bytes();base,sections=section_map(reference)
-    candidates=[candidate for row in rows if (candidate:=lower(row,reference,base,sections))]
+    candidates=[candidate for row in rows if (candidate:=lower(row,reference,base,sections,temporary_keys=True))]
     if not candidates:raise SystemExit('No typed property callbacks accepted')
     library=LIBRARY.replace('FactoryString','RecoveredString_FUN_1008c50b').replace(
-        '~Event_thunk_FUN_10def0d0() noexcept(false);','~Event_thunk_FUN_10def0d0() noexcept;')+PROPERTY_LIBRARY
+        '~Event_thunk_FUN_10def0d0() noexcept(false);','~Event_thunk_FUN_10def0d0() noexcept;')+PROPERTY_LIBRARY.replace('SCStr *key,','const RecoveredString_FUN_1008c50b &key,')
     library+=''.join(r['value_declaration'] for r in candidates)
     library+='struct NativePropertyCallback { '+''.join('void FUN_'+r['entry']+'('+r['parameters']+'); ' for r in candidates)+'};\n'
     candidates=[{**r,'abi_declarations':{'property_callback_library':library}} for r in candidates]
     evidence={r['entry']:r for r in map(json.loads,(ROOT/'analysis/eh-lifetime-evidence.jsonl').open())}
     roles=[('??1NativePropertyEvent_'+r['entry']+'@@QAE@XZ',r['entry'],2) for r in candidates]
-    emit_variant('property_callbacks',candidates,evidence,roles)
+    emit_variant('property_callbacks_temporary',candidates,evidence,roles)
 
 
 if __name__=='__main__':main()
