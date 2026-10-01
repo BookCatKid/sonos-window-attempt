@@ -75,6 +75,13 @@ jobs:
             $process = Start-Process -FilePath $bootstrapper -ArgumentList $arguments -Wait -PassThru
           }
           if ($process.ExitCode -ne 0) {
+            Get-ChildItem $env:TEMP -Filter 'dd_*.log' -ErrorAction SilentlyContinue |
+              Sort-Object LastWriteTime -Descending | Select-Object -First 4 |
+              ForEach-Object {
+                Write-Output "::group::$($_.Name)"
+                Get-Content $_.FullName -Tail 60 -ErrorAction SilentlyContinue
+                Write-Output '::endgroup::'
+              }
             throw "VS 2019 installer exited with code $($process.ExitCode)"
           }
           $vcvars = 'C:\VS2019BuildTools\VC\Auxiliary\Build\vcvarsall.bat'
