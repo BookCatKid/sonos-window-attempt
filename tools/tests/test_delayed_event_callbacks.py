@@ -133,7 +133,8 @@ def fallback_instructions(value='0x4048', offset='0x10c'):
         instruction(a + 0x34, 'push', value),
         instruction(a + 0x39, 'mov', 'ecx, esi'),
         instruction(a + 0x3b, 'call', '0x10000006'),
-        instruction(a + 0x40, 'ret', '4'),
+        instruction(a + 0x40, 'mov', 'ecx, dword ptr [ebp - 0xc]'),
+        instruction(a + 0x43, 'ret', '4'),
         instruction(e, 'lea', 'ecx, [ebp - 0x40]'),
         instruction(e + 3, 'call', '0x10000007'),
         instruction(e + 8, 'mov', 'ecx, dword ptr [ebp + 8]'),
@@ -304,10 +305,39 @@ bool FUN_10ccccc0(void)
         self.assertIsNone(self.candidate(FALLBACK_TEXT, fallback_instructions(offset='0x10d'),
                                          body_bytes=203))
         bad = fallback_instructions()
-        bad[22] = instruction(0x10ccd000 + 0x1b, 'lea', 'ecx, [ebp - 0x38]')
+        bad[23] = instruction(0x10ccd000 + 0x1b, 'lea', 'ecx, [ebp - 0x38]')
         self.assertIsNone(self.candidate(FALLBACK_TEXT, bad, body_bytes=203))
         bad = [i for i in fallback_instructions() if i.op_str != 'byte ptr [eax + 0x10c], 1']
         self.assertIsNone(self.candidate(FALLBACK_TEXT, bad, body_bytes=203))
+
+    CHAINED_TEXT = FALLBACK_TEXT.replace('thunk_FUN_10ebbab0(0x4048);',
+        'thunk_FUN_10ebbab0(0x4048);\n    thunk_FUN_10ee48c0();\n    thunk_FUN_10eeb270();')
+
+    def chained_instructions(self):
+        ins = fallback_instructions()
+        ins[13:13] = [instruction(ENTRY + 0x40, 'call', '0x1000000c'),
+                      instruction(ENTRY + 0x45, 'mov', 'ecx, eax'),
+                      instruction(ENTRY + 0x47, 'call', '0x1000000d')]
+        return ins
+
+    def test_chained_fallback_source(self):
+        record = {'entry': f'{ENTRY:08x}', 'body_bytes': 215,
+                  'decompiled_c': self.CHAINED_TEXT}
+        targets = {0x10000001: 0x10dfbb10, 0x10000002: delayed.DISPATCH,
+                   0x10000003: delayed.DESTRUCTOR, 0x10000006: 0x10ebbab0,
+                   0x10000007: 0x10dfcab0, 0x10000008: delayed.FALLBACK_PREDICATE,
+                   0x10000009: 0x105a1d20, 0x1000000a: 0x105a1c80,
+                   0x1000000b: delayed.RESULT_STORE,
+                   0x1000000c: 0x10ee48c0, 0x1000000d: 0x10eeb270}
+        with patch.object(delayed, 'function_bytes', return_value=b'\0' * 215), \
+             patch.object(delayed, 'thunk_target', side_effect=lambda read, va: targets.get(va, va)), \
+             patch.object(delayed, 'DISASSEMBLER') as decoder:
+            decoder.disasm.return_value = self.chained_instructions()
+            candidate = delayed.lower(record, None, 0, [])
+        self.assertIsNotNone(candidate)
+        self.assertEqual(candidate['chain_getter'], 'thunk_FUN_10ee48c0')
+        self.assertEqual(candidate['chain_call'], 'thunk_FUN_10eeb270')
+        self.assertIn('thunk_FUN_10ee48c0()->thunk_FUN_10eeb270();', candidate['source'])
 
 
 if __name__ == '__main__':

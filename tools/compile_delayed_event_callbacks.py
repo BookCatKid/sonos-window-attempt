@@ -17,7 +17,7 @@ TIMER = 0x10ebb8e0
 RESULT_STORE = 0x10eb41b0
 FALLBACK_PREDICATE = 0x10def490
 SIMPLE_ACTIONS = {0x10ebbab0, 0x10ebb850}
-BODY_BYTES = {97, 114, 119, 122, 203}
+BODY_BYTES = {97, 114, 119, 122, 203, 215}
 
 
 def thunk_target(read, va):
@@ -37,9 +37,13 @@ def lower_fallback(record, instructions, calls):
     entry = record['entry']
     if text.count('thunk_FUN_10def450(') != 1 or text.count('thunk_FUN_10def490(') != 1:
         return None
-    if calls[1] != DISPATCH or calls[2] != DESTRUCTOR or calls[5] != FALLBACK_PREDICATE:
+    if len(calls) not in (9, 11):
         return None
-    if calls[3] not in SIMPLE_ACTIONS or calls[8] != RESULT_STORE:
+    chained = len(calls) == 11
+    base = 2 if chained else 0
+    if calls[1] != DISPATCH or calls[2] != DESTRUCTOR or calls[5 + base] != FALLBACK_PREDICATE:
+        return None
+    if calls[3] not in SIMPLE_ACTIONS or calls[8 + base] != RESULT_STORE:
         return None
     if [i.op_str for i in instructions if i.mnemonic == 'ret'] != ['4', '4']:
         return None
@@ -54,7 +58,11 @@ def lower_fallback(record, instructions, calls):
                 and instructions[n + 1].mnemonic == 'je']
     if len(branches) != 2 or branches[1] <= branches[0]:
         return None
-    tail_block = instructions[branches[0] + 2:branches[1] - 1]
+    else_address = int(instructions[branches[0] + 1].op_str, 16)
+    else_index = next((n for n, i in enumerate(instructions) if i.address == else_address), None)
+    if else_index is None:
+        return None
+    tail_block = instructions[branches[0] + 2:else_index]
     if len(tail_block) < 3 or [i.mnemonic for i in tail_block[:3]] != ['push', 'mov', 'call']:
         return None
     if tail_block[1].op_str != 'ecx, esi':
@@ -72,7 +80,15 @@ def lower_fallback(record, instructions, calls):
             return None
     except ValueError:
         return None
-    else_address = int(instructions[branches[0] + 1].op_str, 16)
+    rest = tail_block[3:]
+    if chained:
+        if len(rest) < 3 or rest[0].mnemonic != 'call' or rest[2].mnemonic != 'call':
+            return None
+        if rest[1].mnemonic != 'mov' or rest[1].op_str != 'ecx, eax':
+            return None
+        rest = rest[3:]
+    if not rest or rest[0].mnemonic != 'mov' or rest[0].op_str != 'ecx, dword ptr [ebp - 0xc]':
+        return None
     fallback = [i for i in instructions if i.address >= else_address and i.address < instructions[branches[1]].address]
     if [i.op_str for i in fallback if i.mnemonic == 'lea' and i.op_str.startswith('ecx, [ebp')] != [
             'ecx, [ebp - 0x40]', 'ecx, [ebp - 0x30]', 'ecx, [ebp - 0x3c]']:
@@ -90,18 +106,27 @@ def lower_fallback(record, instructions, calls):
     if sum(1 for i in instructions[branches[1]:] if i.mnemonic == 'mov' and i.op_str == 'ecx, esi') != 1:
         return None
     constructor = calls[0]
-    fallback_class = 'NativeFallbackEvent_FUN_' + f'{calls[4]:08x}'
+    fallback_class = 'NativeFallbackEvent_FUN_' + f'{calls[4 + base]:08x}'
     event = 'NativeDelayedEvent_FUN_' + f'{constructor:08x}'
-    low = 'NativeFallbackLow_FUN_' + f'{calls[7]:08x}'
-    high = 'NativeFallbackHigh_FUN_' + f'{calls[6]:08x}'
+    low = 'NativeFallbackLow_FUN_' + f'{calls[7 + base]:08x}'
+    high = 'NativeFallbackHigh_FUN_' + f'{calls[6 + base]:08x}'
     action = f'{action_name}({pushed});'
+    if chained:
+        chain_result = f'NativeChainResult_FUN_{calls[5]:08x}'
+        action += f' thunk_FUN_{calls[4]:08x}()->thunk_FUN_{calls[5]:08x}();'
     source = (f'void NativeDelayedCallback::FUN_{entry}(NativeDelayedDispatcher *dispatcher) {{\n'
               f'if (dispatcher->thunk_FUN_10def450({event}())) {{ {action} return; }}\n'
               f'if (dispatcher->thunk_FUN_10def490({fallback_class}())) {{\n'
               f'((NativeFallbackResult_{offset:x} *)thunk_FUN_10eb41b0())->flag = 1;\n}}\n}}\n')
-    return {**record, 'source': source, 'event_class': event, 'constructor': f'{constructor:08x}',
-            'fallback_class': fallback_class, 'fallback_low': low, 'fallback_high': high,
-            'flag_offset': offset}
+    candidate = {**record, 'source': source, 'event_class': event,
+                 'constructor': f'{constructor:08x}',
+                 'fallback_class': fallback_class, 'fallback_low': low, 'fallback_high': high,
+                 'flag_offset': offset}
+    if chained:
+        candidate['chain_getter'] = f'thunk_FUN_{calls[4]:08x}'
+        candidate['chain_result'] = chain_result
+        candidate['chain_call'] = f'thunk_FUN_{calls[5]:08x}'
+    return candidate
 
 
 def lower_passthrough(record, instructions, calls):
@@ -155,7 +180,7 @@ def lower(record, reference, base, sections):
     read = lambda va, size: function_bytes(reference, va, size, base, sections)
     calls = [thunk_target(read, int(i.op_str, 16))
              for i in instructions if i.mnemonic == 'call' and i.op_str.startswith('0x')]
-    if len(calls) == 9:
+    if len(calls) in (9, 11):
         return lower_fallback(record, instructions, calls)
     if len(calls) == 3:
         return lower_passthrough(record, instructions, calls)
@@ -321,6 +346,12 @@ def main():
     if predicates:
         library += ('struct NativePassthroughDispatcher { ' +
                     ''.join(f'bool {p}(const Event_thunk_FUN_10def0d0 &); ' for p in predicates) + '};\n')
+    seen_chains = set()
+    for c in candidates:
+        if 'chain_result' in c and c['chain_result'] not in seen_chains:
+            seen_chains.add(c['chain_result'])
+            library += f'struct {c["chain_result"]} {{ void {c["chain_call"]}(); }};\n'
+            library += f'{c["chain_result"]} *{c["chain_getter"]}();\n'
     library += 'struct NativeDelayedDispatcher { bool thunk_FUN_10def450(const Event_thunk_FUN_10def0d0 &); '
     for name in fallback_classes:
         library += f'bool thunk_FUN_10def490(const {name} &); '
@@ -332,7 +363,9 @@ def main():
                 'NativeDelayedResult *thunk_FUN_10eb41b0(); ' +
                 ''.join(r.get('member_decl', f"void FUN_{r['entry']}(NativeDelayedDispatcher *); ")
                         for r in candidates) + '};\n')
-    candidates = [{**r, 'abi_declarations': {'delayed_event_callback_library': library}} for r in candidates]
+    abi = {'delayed_event_callback_library': library}
+    abi.update({g: '' for g in {c['chain_getter'] for c in candidates if 'chain_getter' in c}})
+    candidates = [{**r, 'abi_declarations': abi} for r in candidates]
     evidence = {r['entry']: r for r in map(json.loads, (ROOT/'analysis/eh-lifetime-evidence.jsonl').open())}
     roles = []
     for name in classes:
