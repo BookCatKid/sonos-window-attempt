@@ -62,6 +62,9 @@ def fixed_runs(code, relocs):
 
 def match(objects, reference, inventory):
     base, sections=section_map(reference)
+    pe=struct.unpack_from('<I',reference,0x3c)[0];optional=pe+24
+    headers=optional+struct.unpack_from('<H',reference,pe+20)[0]
+    native_characteristics=[struct.unpack_from('<I',reference,headers+i*40+36)[0] for i in range(len(sections))]
     sizes={}
     with inventory.open(newline='') as stream:
         for r in csv.DictReader(stream,delimiter='\t'):
@@ -122,13 +125,16 @@ def match(objects, reference, inventory):
             symbol=next((s for s in b['symbols'] if s['name']==r['symbol']),None)
             if not symbol or not 0<symbol['section']<=len(b['sections']):continue
             section=b['sections'][symbol['section']-1]
-            if section['characteristics']&0x20000000:continue
+            if section['characteristics']&(0x20000000|0x80000000):continue
             start=symbol['offset'];ends=[s['offset'] for s in b['symbols'] if s['section']==symbol['section'] and s['offset']>start]
             stop=min(ends,default=len(section['code']))
             data=section['code'][start:stop]
             if len(data)<4 or not any(data) or any(start<=x['offset']<stop for x in section['relocations']):continue
             addend=struct.unpack_from('<I',b['code'],r['offset'])[0]
             address=struct.unpack_from('<I',expected,r['offset'])[0]-addend
+            native_section=next((i for i,(rva,size,_) in enumerate(sections)
+                                 if base+rva<=address and address+len(data)<=base+rva+size),None)
+            if native_section is None or native_characteristics[native_section]&(0x20000000|0x80000000):continue
             if function_bytes(reference,address,len(data),base,sections)==data:
                 known[r['symbol']]=[address]
         patched,_,unresolved=resolve_known_relocations(b['code'],expected,b['relocs'],b['entry'],base,known)
@@ -143,6 +149,7 @@ def match(objects, reference, inventory):
            'unique_fixed_candidate':True,'closed_graph_exact':i in active}
           for i,b in enumerate(candidates)]
     return {'reference_sha256':hashlib.sha256(reference).hexdigest(),
+            'inventory_sha256':hashlib.sha256(inventory.read_bytes()).hexdigest(),
             'objects':{str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in objects},
             'unique_fixed_candidates':len(rows),'closed_graph_exact_functions':len(active),
             'closed_graph_body_bytes':sum(len(candidates[i]['code']) for i in active),

@@ -43,6 +43,12 @@ def inspect(image, inventory):
                      'next_alignment_16': (base+rva+end)%16,
                      'preceding_entry': f'{functions[left][0]:08x}' if left>=0 else None,
                      'preceding_body_bytes': functions[left][1] if left>=0 else None})
+        gap=gaps[-1]
+        if left>=0:
+            entry,size,_=functions[left]
+            gap['immediately_after_preceding_body']=entry+size==base+rva+start
+            gap['quarter_reservation_align16']=((entry+size+size//4+15)&~15)-(entry+size)
+            gap['fits_quarter_rule']=gap['immediately_after_preceding_body'] and gap['quarter_reservation_align16']==end-start
     strings = []
     for match in re.finditer(rb'[\x20-\x7e]{5,}', image):
         value = match.group().decode('ascii')
@@ -54,6 +60,8 @@ def inspect(image, inventory):
             'all_cc_gap_bytes': sum(g['bytes'] for g in gaps if g['all_cc']),
             'mixed_gap_cc_bytes': sum(g['cc_bytes'] for g in gaps if not g['all_cc']),
             'all_cc_gap_count': sum(g['all_cc'] for g in gaps),
+            'quarter_rule_hypothesis_gap_bytes':sum(g['bytes'] for g in gaps if g['all_cc'] and g.get('fits_quarter_rule')),
+            'quarter_rule_hypothesis_gap_count':sum(g['all_cc'] and g.get('fits_quarter_rule',False) for g in gaps),
             'all_cc_end_alignment_mod16': dict(Counter(g['next_alignment_16'] for g in gaps if g['all_cc'])),
             'library_evidence': strings, 'gaps': gaps, 'coverage_added': 0,
             'scope': 'Unclassified native gaps and string fingerprints, not proof of linker padding or library byte matches'}

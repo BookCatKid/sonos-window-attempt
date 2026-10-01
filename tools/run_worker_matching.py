@@ -7,6 +7,7 @@ from pathlib import Path
 from match_library_objects import match
 
 REFERENCE_SHA256='3518f71487c58f378cc62562d257e1ffd7145288aba9153823b49ec3009af9ca'
+INVENTORY_SHA256='5ad6a6707036175ed5883d022e675844774b67b6d2f02d9dc65aa7e01f7835c2'
 
 
 def main():
@@ -20,6 +21,7 @@ def main():
     data=reference.read_bytes()
     if hashlib.sha256(data).hexdigest()!=REFERENCE_SHA256:raise ValueError('Wrong worker reference DLL')
     if not inventory.is_file():raise ValueError('Worker function inventory is missing')
+    if hashlib.sha256(inventory.read_bytes()).hexdigest()!=INVENTORY_SHA256:raise ValueError('Wrong worker native inventory')
     a.output.mkdir(parents=True,exist_ok=True);summaries=[]
     for directory in sorted(a.objects_root.iterdir()):
         if not directory.is_dir():continue
