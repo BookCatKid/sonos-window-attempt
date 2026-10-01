@@ -276,6 +276,10 @@
     "directory": "analysis/compiled-cpp-refcount-release-callbacks"
   },
   {
+    "object": "op_impl_dtors_reference_flags",
+    "directory": "analysis/compiled-cpp-op-impl-dtors"
+  },
+  {
     "object": "op_impl_ctors_reference_flags",
     "directory": "analysis/compiled-cpp-op-impl-ctors"
   }

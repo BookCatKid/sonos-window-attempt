@@ -1,0 +1,2810 @@
+// Mechanically recovered Ghidra C-like functions, compiled as x86 C++.
+// Types below are width-preserving placeholders, pending semantic recovery.
+using undefined1 = unsigned char;
+using undefined2 = unsigned short;
+using undefined4 = unsigned int;
+using undefined8 = unsigned long long;
+using undefined = unsigned int;
+using uint = unsigned int;
+using ulong = unsigned long;
+using byte = unsigned char;
+using ushort = unsigned short;
+using longlong = long long;
+using float10 = long double;
+using code = int(...);
+
+using byte = unsigned char;
+using uchar = unsigned char;
+using ushort = unsigned short;
+using longlong = long long;
+using ulonglong = unsigned long long;
+using float10 = long double;
+using DWORD = unsigned long;
+using BOOL = int;
+using LPCSTR = const char *;
+using __time64_t = long long;
+struct FILE;
+struct tm;
+struct ThrowInfo;
+
+struct RefCounted {
+    virtual void Reserved();
+    virtual void AddRef();
+    virtual void Release();
+};
+
+// Placement construction calls the actual constructor at the recovered receiver.
+inline void *operator new(unsigned int, void *receiver) noexcept { return receiver; }
+class SwfStr;
+class SCStr {
+public:
+    void *rep;
+    SCStr();
+    SCStr(const char *text);
+    SCStr(const char *text, unsigned int length);
+    SCStr(const SCStr &other);
+    SCStr(const SwfStr &other);
+    ~SCStr();
+    bool operator<(const SCStr &other) const;
+    bool operator<(const SwfStr &other) const;
+    bool endsWith(const char *suffix) const;
+    bool endsWith(const SCStr &suffix) const;
+    bool endsWith(const SwfStr &suffix) const;
+    SCStr &append(const char *text);
+    SCStr &append(const char *text, unsigned int length);
+    SCStr &append(char value);
+    SCStr &append(const SCStr &other);
+    SCStr &prepend(const char *text);
+    SCStr &prepend(const char *text, unsigned int length);
+    SCStr &prepend(const SCStr &other);
+    SCStr &setFromUTF16(const unsigned short *text);
+    SCStr &setFromUTF16(const unsigned short *text, unsigned int length);
+    SCStr &replace(const char *from, const char *to, bool ignoreCase);
+    char *getBuffer(unsigned int length);
+    void empty();
+    unsigned int utf8_length() const;
+    bool int_endsWith(const char *text, unsigned int length, unsigned int suffixLength) const;
+    unsigned int __cdecl trimRear(char *text, char *characters);
+    int __cdecl format(const char *format, ...);
+    bool operator==(const char *other) const;
+    bool operator==(SCStr *other) const;
+    bool operator!=(const char *other) const;
+    bool operator!=(SCStr *other) const;
+    bool beginsWith(const char *prefix) const;
+    bool beginsWith(SCStr *prefix) const;
+    bool contains(const char *needle, bool ignoreCase) const;
+    bool contains(SCStr *needle, bool ignoreCase) const;
+    unsigned int length() const;
+    unsigned int hash() const;
+    void int_addref();
+    void int_release();
+    void int_allocRep(char *text);
+    void int_allocRep(char *text, unsigned int length);
+};
+extern undefined4 DAT_1186d2f4;
+extern undefined4 DAT_118820e4;
+extern undefined4 DAT_118c6304;
+extern undefined4 DAT_118c634c;
+extern undefined4 DAT_118f1a18;
+extern undefined4 DAT_118f1a60;
+extern undefined4 DAT_118f1b74;
+extern undefined4 DAT_118f1bbc;
+extern undefined4 DAT_118f1cdc;
+extern undefined4 DAT_118f1d24;
+extern undefined4 DAT_118f1e48;
+extern undefined4 DAT_118f1e94;
+extern undefined4 DAT_1190a9b0;
+extern undefined4 DAT_1190a9f8;
+extern undefined4 DAT_1190e1e8;
+extern undefined4 DAT_1190e234;
+extern undefined4 DAT_1190e7cc;
+extern undefined4 DAT_1190e820;
+extern undefined4 DAT_1190e8e8;
+extern undefined4 DAT_1190e93c;
+extern undefined4 DAT_1190ea04;
+extern undefined4 DAT_1190ea58;
+extern undefined4 DAT_1190eb20;
+extern undefined4 DAT_1190eb74;
+extern undefined4 DAT_11916cac;
+extern undefined4 DAT_11916cf4;
+extern undefined4 DAT_11917598;
+extern undefined4 DAT_119175e4;
+extern undefined4 DAT_119176a0;
+extern undefined4 DAT_119176ec;
+extern undefined4 DAT_119177a8;
+extern undefined4 DAT_119177f4;
+extern undefined4 DAT_11917914;
+extern undefined4 DAT_1191795c;
+extern undefined4 DAT_11917a14;
+extern undefined4 DAT_11917a60;
+extern undefined4 DAT_11917eec;
+extern undefined4 DAT_11917f34;
+extern undefined4 DAT_11917ff0;
+extern undefined4 DAT_11918044;
+extern undefined4 DAT_11918158;
+extern undefined4 DAT_119181a0;
+extern undefined4 DAT_1191825c;
+extern undefined4 DAT_119182b0;
+extern undefined4 DAT_11918578;
+extern undefined4 DAT_119185c4;
+extern undefined4 DAT_1191af90;
+extern undefined4 DAT_1191afd8;
+extern undefined4 DAT_1191b04c;
+extern undefined4 DAT_1191b094;
+extern undefined4 DAT_1191edd4;
+extern undefined4 DAT_1191ee50;
+extern undefined4 DAT_1191ef60;
+extern undefined4 DAT_1191efa8;
+extern undefined4 DAT_1191f01c;
+extern undefined4 DAT_1191f064;
+extern undefined4 DAT_1191f0d8;
+extern undefined4 DAT_1191f120;
+extern undefined4 DAT_1191f194;
+extern undefined4 DAT_1191f1dc;
+extern undefined4 DAT_1191f250;
+extern undefined4 DAT_1191f298;
+extern undefined4 DAT_1191f30c;
+extern undefined4 DAT_1191f354;
+extern undefined4 DAT_1191f3c8;
+extern undefined4 DAT_1191f410;
+extern undefined4 DAT_1191f484;
+extern undefined4 DAT_1191f4cc;
+extern undefined4 DAT_1191f540;
+extern undefined4 DAT_1191f588;
+extern undefined4 DAT_11920a10;
+extern undefined4 DAT_11920a58;
+extern undefined4 DAT_11920b84;
+extern undefined4 DAT_11920bd0;
+extern undefined4 DAT_119211cc;
+extern undefined4 DAT_11921218;
+extern undefined4 DAT_1192275c;
+extern undefined4 DAT_119227b8;
+extern undefined4 DAT_1192f164;
+extern undefined4 DAT_1192f1ac;
+extern undefined4 DAT_1192f220;
+extern undefined4 DAT_1192f268;
+extern undefined4 DAT_1192f2dc;
+extern undefined4 DAT_1192f324;
+extern undefined4 DAT_1192f398;
+extern undefined4 DAT_1192f3e0;
+extern undefined4 DAT_119319d0;
+extern undefined4 DAT_11931a18;
+extern undefined4 DAT_11935fbc;
+extern undefined4 DAT_11936014;
+extern undefined4 DAT_119468ac;
+extern undefined4 DAT_119468f8;
+extern undefined4 DAT_1194b774;
+extern undefined4 DAT_1194b7bc;
+extern undefined4 DAT_1194cc50;
+extern undefined4 DAT_1194ccb0;
+extern undefined4 DAT_1194cd3c;
+extern undefined4 DAT_1194cd9c;
+extern undefined4 DAT_1194ce28;
+extern undefined4 DAT_1194ce88;
+extern undefined4 DAT_1194e61c;
+extern undefined4 DAT_1194e664;
+extern undefined4 DAT_1194f138;
+extern undefined4 DAT_1194f180;
+extern undefined4 DAT_1194f1f8;
+extern undefined4 DAT_1194f240;
+extern undefined4 DAT_1194f2b8;
+extern undefined4 DAT_1194f300;
+extern undefined4 DAT_1194f378;
+extern undefined4 DAT_1194f3c0;
+extern undefined4 DAT_11951f24;
+extern undefined4 DAT_11951f6c;
+extern undefined4 DAT_11952090;
+extern undefined4 DAT_119520dc;
+extern undefined4 DAT_119521fc;
+extern undefined4 DAT_11952244;
+extern undefined4 DAT_11952380;
+extern undefined4 DAT_119523d4;
+extern undefined4 DAT_1195278c;
+extern undefined4 DAT_119527d8;
+extern undefined4 DAT_11952b1c;
+extern undefined4 DAT_11952b64;
+extern undefined4 DAT_11953540;
+extern undefined4 DAT_1195358c;
+extern undefined4 DAT_11953a78;
+extern undefined4 DAT_11953ac0;
+extern undefined4 DAT_11953b34;
+extern undefined4 DAT_11953b7c;
+extern undefined4 DAT_11954758;
+extern undefined4 DAT_119547a0;
+extern undefined4 DAT_11954818;
+extern undefined4 DAT_11954860;
+extern undefined4 DAT_119548d8;
+extern undefined4 DAT_11954920;
+extern undefined4 DAT_119606b4;
+extern undefined4 DAT_11960714;
+extern undefined4 DAT_11963d10;
+extern undefined4 DAT_11963d64;
+extern undefined4 DAT_1196610c;
+extern undefined4 DAT_11966160;
+extern undefined4 DAT_119662b4;
+extern undefined4 DAT_1196630c;
+extern undefined4 DAT_11966428;
+extern undefined4 DAT_11966474;
+extern undefined4 DAT_11966528;
+extern undefined4 DAT_11966570;
+extern undefined4 DAT_119668b8;
+extern undefined4 DAT_11966914;
+extern undefined4 g_lSCObjCount;
+extern "C" void _ReadWriteBarrier();
+#pragma intrinsic(_ReadWriteBarrier)
+extern void * __cdecl operator_new(unsigned int);
+struct FactoryTreeNode { FactoryTreeNode *left,*parent,*right; unsigned char color,nil; unsigned char payload[14]; };
+struct FactoryTree {
+FactoryTreeNode *head; unsigned int size;
+FactoryTree(const FactoryTree &); FactoryTree(FactoryTree &&);
+__forceinline FactoryTree() {
+FactoryTree * volatile home=this; _ReadWriteBarrier(); head=0; size=0;
+FactoryTreeNode *node=(FactoryTreeNode *)operator_new(28);
+node->left=node; node->parent=node; node->right=node; node->color=1; node->nil=1; head=node;
+}
+~FactoryTree();
+};
+struct FactoryString {
+unsigned int rep;
+__forceinline FactoryString(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+~FactoryString() noexcept { ((SCStr *)this)->int_release(); rep=0; }
+};
+struct EventCopy_thunk_FUN_10deea50 {
+unsigned int text,event_id; void *properties,*interface_pointer,*head; unsigned int size;
+__forceinline EventCopy_thunk_FUN_10deea50() {}
+EventCopy_thunk_FUN_10deea50(const EventCopy_thunk_FUN_10deea50 &);
+};
+struct Event_thunk_FUN_10def0d0 {
+EventCopy_thunk_FUN_10deea50 representation;
+__forceinline Event_thunk_FUN_10def0d0() {}
+__forceinline Event_thunk_FUN_10def0d0(const char *name,unsigned int id);
+~Event_thunk_FUN_10def0d0() noexcept(false);
+};
+struct Stopped_thunk_FUN_10dfd540 : Event_thunk_FUN_10def0d0 { Stopped_thunk_FUN_10dfd540(); };
+struct Started_thunk_FUN_10dfd470 : Event_thunk_FUN_10def0d0 { Started_thunk_FUN_10dfd470(); };
+struct FactoryConsumer { void thunk_FUN_10dee620(SCStr *,unsigned int,void *,FactoryTree); };
+__forceinline Event_thunk_FUN_10def0d0::Event_thunk_FUN_10def0d0(const char *name,unsigned int id) {
+FactoryString text(name);
+((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text,id,0,FactoryTree());
+}
+struct Cancelled : Event_thunk_FUN_10def0d0 { __forceinline Cancelled():Event_thunk_FUN_10def0d0("alertCancelPressed",6) {} };
+struct Shown : Event_thunk_FUN_10def0d0 { __forceinline Shown():Event_thunk_FUN_10def0d0("alertShown",4) {} };
+struct FactoryVariant {
+virtual void unused0(); virtual void unused1(); virtual void unused2();
+virtual void unused3(); virtual void unused4(); virtual void unused5();
+virtual void unused6(); virtual void unused7(); virtual void unused8();
+virtual int value(SCStr *key);
+};
+static_assert(sizeof(FactoryTree)==8,"Two-word outgoing container");
+static_assert(sizeof(FactoryTreeNode)==28,"Sentinel node");
+static_assert(sizeof(Event_thunk_FUN_10def0d0)==24,"Event value");
+extern unsigned int DAT_1186d2f4;
+extern unsigned int DAT_1188206c;
+extern unsigned int DAT_118820e4;
+extern unsigned int DAT_11882180;
+extern unsigned int DAT_118821c0;
+extern unsigned int DAT_1189e9f4;
+extern unsigned int DAT_118af10c;
+extern unsigned int DAT_118ba17c;
+extern unsigned int DAT_118ba188;
+extern unsigned int DAT_118ba4a0;
+extern unsigned int DAT_118c62f8;
+extern unsigned int DAT_118c6304;
+extern unsigned int DAT_118c634c;
+extern unsigned int DAT_118f19cc;
+extern unsigned int DAT_118f1a0c;
+extern unsigned int DAT_118f1a18;
+extern unsigned int DAT_118f1a60;
+extern unsigned int DAT_118f1b28;
+extern unsigned int DAT_118f1b68;
+extern unsigned int DAT_118f1b74;
+extern unsigned int DAT_118f1bbc;
+extern unsigned int DAT_118f1c90;
+extern unsigned int DAT_118f1cd0;
+extern unsigned int DAT_118f1cdc;
+extern unsigned int DAT_118f1d24;
+extern unsigned int DAT_118f1df8;
+extern unsigned int DAT_118f1e3c;
+extern unsigned int DAT_118f1e48;
+extern unsigned int DAT_118f1e94;
+extern unsigned int DAT_1190a964;
+extern unsigned int DAT_1190a9a4;
+extern unsigned int DAT_1190a9b0;
+extern unsigned int DAT_1190a9f8;
+extern unsigned int DAT_1190e198;
+extern unsigned int DAT_1190e1dc;
+extern unsigned int DAT_1190e1e8;
+extern unsigned int DAT_1190e234;
+extern unsigned int DAT_1190e778;
+extern unsigned int DAT_1190e7c0;
+extern unsigned int DAT_1190e7cc;
+extern unsigned int DAT_1190e820;
+extern unsigned int DAT_1190e894;
+extern unsigned int DAT_1190e8dc;
+extern unsigned int DAT_1190e8e8;
+extern unsigned int DAT_1190e93c;
+extern unsigned int DAT_1190e9b0;
+extern unsigned int DAT_1190e9f8;
+extern unsigned int DAT_1190ea04;
+extern unsigned int DAT_1190ea58;
+extern unsigned int DAT_1190eacc;
+extern unsigned int DAT_1190eb14;
+extern unsigned int DAT_1190eb20;
+extern unsigned int DAT_1190eb74;
+extern unsigned int DAT_11916ca0;
+extern unsigned int DAT_11916cac;
+extern unsigned int DAT_11916cf4;
+extern unsigned int DAT_11917548;
+extern unsigned int DAT_1191758c;
+extern unsigned int DAT_11917598;
+extern unsigned int DAT_119175e4;
+extern unsigned int DAT_11917650;
+extern unsigned int DAT_11917694;
+extern unsigned int DAT_119176a0;
+extern unsigned int DAT_119176ec;
+extern unsigned int DAT_11917758;
+extern unsigned int DAT_1191779c;
+extern unsigned int DAT_119177a8;
+extern unsigned int DAT_119177f4;
+extern unsigned int DAT_119178d4;
+extern unsigned int DAT_11917914;
+extern unsigned int DAT_1191795c;
+extern unsigned int DAT_119179c4;
+extern unsigned int DAT_11917a08;
+extern unsigned int DAT_11917a14;
+extern unsigned int DAT_11917a60;
+extern unsigned int DAT_11917eac;
+extern unsigned int DAT_11917eec;
+extern unsigned int DAT_11917f34;
+extern unsigned int DAT_11917f9c;
+extern unsigned int DAT_11917fe4;
+extern unsigned int DAT_11917ff0;
+extern unsigned int DAT_11918044;
+extern unsigned int DAT_11918118;
+extern unsigned int DAT_11918158;
+extern unsigned int DAT_119181a0;
+extern unsigned int DAT_11918208;
+extern unsigned int DAT_11918250;
+extern unsigned int DAT_1191825c;
+extern unsigned int DAT_119182b0;
+extern unsigned int DAT_11918528;
+extern unsigned int DAT_1191856c;
+extern unsigned int DAT_11918578;
+extern unsigned int DAT_119185c4;
+extern unsigned int DAT_1191af84;
+extern unsigned int DAT_1191af90;
+extern unsigned int DAT_1191afd8;
+extern unsigned int DAT_1191b040;
+extern unsigned int DAT_1191b04c;
+extern unsigned int DAT_1191b094;
+extern unsigned int DAT_1191c0dc;
+extern unsigned int DAT_1191ed54;
+extern unsigned int DAT_1191edc8;
+extern unsigned int DAT_1191edd4;
+extern unsigned int DAT_1191ee50;
+extern unsigned int DAT_1191ef54;
+extern unsigned int DAT_1191ef60;
+extern unsigned int DAT_1191efa8;
+extern unsigned int DAT_1191f010;
+extern unsigned int DAT_1191f01c;
+extern unsigned int DAT_1191f064;
+extern unsigned int DAT_1191f0cc;
+extern unsigned int DAT_1191f0d8;
+extern unsigned int DAT_1191f120;
+extern unsigned int DAT_1191f188;
+extern unsigned int DAT_1191f194;
+extern unsigned int DAT_1191f1dc;
+extern unsigned int DAT_1191f244;
+extern unsigned int DAT_1191f250;
+extern unsigned int DAT_1191f298;
+extern unsigned int DAT_1191f300;
+extern unsigned int DAT_1191f30c;
+extern unsigned int DAT_1191f354;
+extern unsigned int DAT_1191f3bc;
+extern unsigned int DAT_1191f3c8;
+extern unsigned int DAT_1191f410;
+extern unsigned int DAT_1191f478;
+extern unsigned int DAT_1191f484;
+extern unsigned int DAT_1191f4cc;
+extern unsigned int DAT_1191f534;
+extern unsigned int DAT_1191f540;
+extern unsigned int DAT_1191f588;
+extern unsigned int DAT_119209c4;
+extern unsigned int DAT_11920a04;
+extern unsigned int DAT_11920a10;
+extern unsigned int DAT_11920a58;
+extern unsigned int DAT_11920b34;
+extern unsigned int DAT_11920b78;
+extern unsigned int DAT_11920b84;
+extern unsigned int DAT_11920bd0;
+extern unsigned int DAT_11920e2c;
+extern unsigned int DAT_11921188;
+extern unsigned int DAT_119211cc;
+extern unsigned int DAT_11921218;
+extern unsigned int DAT_119226fc;
+extern unsigned int DAT_11922750;
+extern unsigned int DAT_1192275c;
+extern unsigned int DAT_119227b8;
+extern unsigned int DAT_1192f164;
+extern unsigned int DAT_1192f1ac;
+extern unsigned int DAT_1192f214;
+extern unsigned int DAT_1192f220;
+extern unsigned int DAT_1192f268;
+extern unsigned int DAT_1192f2d0;
+extern unsigned int DAT_1192f2dc;
+extern unsigned int DAT_1192f324;
+extern unsigned int DAT_1192f38c;
+extern unsigned int DAT_1192f398;
+extern unsigned int DAT_1192f3e0;
+extern unsigned int DAT_11931990;
+extern unsigned int DAT_119319d0;
+extern unsigned int DAT_11931a18;
+extern unsigned int DAT_11935f64;
+extern unsigned int DAT_11935fb0;
+extern unsigned int DAT_11935fbc;
+extern unsigned int DAT_11936014;
+extern unsigned int DAT_1194685c;
+extern unsigned int DAT_119468a0;
+extern unsigned int DAT_119468ac;
+extern unsigned int DAT_119468f8;
+extern unsigned int DAT_1194b768;
+extern unsigned int DAT_1194b774;
+extern unsigned int DAT_1194b7bc;
+extern unsigned int DAT_1194cbec;
+extern unsigned int DAT_1194cc44;
+extern unsigned int DAT_1194cc50;
+extern unsigned int DAT_1194ccb0;
+extern unsigned int DAT_1194cd30;
+extern unsigned int DAT_1194cd3c;
+extern unsigned int DAT_1194cd9c;
+extern unsigned int DAT_1194ce1c;
+extern unsigned int DAT_1194ce28;
+extern unsigned int DAT_1194ce88;
+extern unsigned int DAT_1194e610;
+extern unsigned int DAT_1194e61c;
+extern unsigned int DAT_1194e664;
+extern unsigned int DAT_1194f12c;
+extern unsigned int DAT_1194f138;
+extern unsigned int DAT_1194f180;
+extern unsigned int DAT_1194f1ec;
+extern unsigned int DAT_1194f1f8;
+extern unsigned int DAT_1194f240;
+extern unsigned int DAT_1194f2ac;
+extern unsigned int DAT_1194f2b8;
+extern unsigned int DAT_1194f300;
+extern unsigned int DAT_1194f36c;
+extern unsigned int DAT_1194f378;
+extern unsigned int DAT_1194f3c0;
+extern unsigned int DAT_11950a7c;
+extern unsigned int DAT_11951ed8;
+extern unsigned int DAT_11951f18;
+extern unsigned int DAT_11951f24;
+extern unsigned int DAT_11951f6c;
+extern unsigned int DAT_11952040;
+extern unsigned int DAT_11952084;
+extern unsigned int DAT_11952090;
+extern unsigned int DAT_119520dc;
+extern unsigned int DAT_119521b0;
+extern unsigned int DAT_119521f0;
+extern unsigned int DAT_119521fc;
+extern unsigned int DAT_11952244;
+extern unsigned int DAT_1195232c;
+extern unsigned int DAT_11952374;
+extern unsigned int DAT_11952380;
+extern unsigned int DAT_119523d4;
+extern unsigned int DAT_1195273c;
+extern unsigned int DAT_11952780;
+extern unsigned int DAT_1195278c;
+extern unsigned int DAT_119527d8;
+extern unsigned int DAT_11952b10;
+extern unsigned int DAT_11952b1c;
+extern unsigned int DAT_11952b64;
+extern unsigned int DAT_119534fc;
+extern unsigned int DAT_11953540;
+extern unsigned int DAT_1195358c;
+extern unsigned int DAT_11953a6c;
+extern unsigned int DAT_11953a78;
+extern unsigned int DAT_11953ac0;
+extern unsigned int DAT_11953b28;
+extern unsigned int DAT_11953b34;
+extern unsigned int DAT_11953b7c;
+extern unsigned int DAT_1195474c;
+extern unsigned int DAT_11954758;
+extern unsigned int DAT_119547a0;
+extern unsigned int DAT_1195480c;
+extern unsigned int DAT_11954818;
+extern unsigned int DAT_11954860;
+extern unsigned int DAT_119548cc;
+extern unsigned int DAT_119548d8;
+extern unsigned int DAT_11954920;
+extern unsigned int DAT_11960650;
+extern unsigned int DAT_119606a8;
+extern unsigned int DAT_119606b4;
+extern unsigned int DAT_11960714;
+extern unsigned int DAT_119639e0;
+extern unsigned int DAT_11963cc8;
+extern unsigned int DAT_11963d10;
+extern unsigned int DAT_11963d64;
+extern unsigned int DAT_119660b8;
+extern unsigned int DAT_11966100;
+extern unsigned int DAT_1196610c;
+extern unsigned int DAT_11966160;
+extern unsigned int DAT_11966268;
+extern unsigned int DAT_119662b4;
+extern unsigned int DAT_1196630c;
+extern unsigned int DAT_119663e4;
+extern unsigned int DAT_11966428;
+extern unsigned int DAT_11966474;
+extern unsigned int DAT_1196651c;
+extern unsigned int DAT_11966528;
+extern unsigned int DAT_11966570;
+extern unsigned int DAT_11966858;
+extern unsigned int DAT_119668ac;
+extern unsigned int DAT_119668b8;
+extern unsigned int DAT_11966914;
+extern unsigned int g_lSCObjCount;
+struct NativeOpDtorIface { virtual void slot0(); virtual void slot4(); virtual void slot8(); };
+struct NativeOpDS8_10688910 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10688910() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10688910 { void *rep; void *next;
+__forceinline ~NativeOpDC_10688910() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10688910 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10688910() { vptr = (void *)&DAT_118c62f8; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10688910 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10688910() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10688910 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10688910() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10688910 : NativeOpDBase_10688910 {
+NativeOpDS8_10688910 m8; NativeOpDC_10688910 fc; NativeOpD14_10688910 m14;
+void *f20; unsigned short f24; NativeOpDStr_10688910 s28; NativeOpDStr_10688910 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10688910();
+};
+struct NativeOpDS8_109f78b0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_109f78b0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_109f78b0 { void *rep; void *next;
+__forceinline ~NativeOpDC_109f78b0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_109f78b0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_109f78b0() { vptr = (void *)&DAT_118f1cd0; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_109f78b0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_109f78b0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_109f78b0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_109f78b0() { v0 = (void *)&DAT_118f1c90; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_109f78b0 : NativeOpDBase_109f78b0 {
+NativeOpDS8_109f78b0 m8; NativeOpDC_109f78b0 fc; NativeOpD14_109f78b0 m14;
+void *f20; unsigned short f24; NativeOpDStr_109f78b0 s28; NativeOpDStr_109f78b0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_109f78b0();
+};
+struct NativeOpDS8_109f7a00 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_109f7a00() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_109f7a00 { void *rep; void *next;
+__forceinline ~NativeOpDC_109f7a00() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_109f7a00 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_109f7a00() { vptr = (void *)&DAT_118f1a0c; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_109f7a00 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_109f7a00() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_109f7a00 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_109f7a00() { v0 = (void *)&DAT_118f19cc; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_109f7a00 : NativeOpDBase_109f7a00 {
+NativeOpDS8_109f7a00 m8; NativeOpDC_109f7a00 fc; NativeOpD14_109f7a00 m14;
+void *f20; unsigned short f24; NativeOpDStr_109f7a00 s28; NativeOpDStr_109f7a00 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_109f7a00();
+};
+struct NativeOpDS8_109f7b50 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_109f7b50() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_109f7b50 { void *rep; void *next;
+__forceinline ~NativeOpDC_109f7b50() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_109f7b50 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_109f7b50() { vptr = (void *)&DAT_118f1e3c; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_109f7b50 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_109f7b50() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_109f7b50 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_109f7b50() { v0 = (void *)&DAT_118f1df8; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_109f7b50 : NativeOpDBase_109f7b50 {
+NativeOpDS8_109f7b50 m8; NativeOpDC_109f7b50 fc; NativeOpD14_109f7b50 m14;
+void *f20; unsigned short f24; NativeOpDStr_109f7b50 s28; NativeOpDStr_109f7b50 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_109f7b50();
+};
+struct NativeOpDS8_109f7ca0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_109f7ca0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_109f7ca0 { void *rep; void *next;
+__forceinline ~NativeOpDC_109f7ca0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_109f7ca0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_109f7ca0() { vptr = (void *)&DAT_118f1b68; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_109f7ca0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_109f7ca0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_109f7ca0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_109f7ca0() { v0 = (void *)&DAT_118f1b28; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_109f7ca0 : NativeOpDBase_109f7ca0 {
+NativeOpDS8_109f7ca0 m8; NativeOpDC_109f7ca0 fc; NativeOpD14_109f7ca0 m14;
+void *f20; unsigned short f24; NativeOpDStr_109f7ca0 s28; NativeOpDStr_109f7ca0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_109f7ca0();
+};
+struct NativeOpDS8_10b6d3c0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10b6d3c0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10b6d3c0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10b6d3c0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10b6d3c0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10b6d3c0() { vptr = (void *)&DAT_1190a9a4; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10b6d3c0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10b6d3c0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10b6d3c0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10b6d3c0() { v0 = (void *)&DAT_1190a964; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10b6d3c0 : NativeOpDBase_10b6d3c0 {
+NativeOpDS8_10b6d3c0 m8; NativeOpDC_10b6d3c0 fc; NativeOpD14_10b6d3c0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10b6d3c0 s28; NativeOpDStr_10b6d3c0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10b6d3c0();
+};
+struct NativeOpDS8_10b7cc90 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10b7cc90() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10b7cc90 { void *rep; void *next;
+__forceinline ~NativeOpDC_10b7cc90() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10b7cc90 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10b7cc90() { vptr = (void *)&DAT_1190e1dc; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10b7cc90 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10b7cc90() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10b7cc90 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10b7cc90() { v0 = (void *)&DAT_1190e198; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10b7cc90 : NativeOpDBase_10b7cc90 {
+NativeOpDS8_10b7cc90 m8; NativeOpDC_10b7cc90 fc; NativeOpD14_10b7cc90 m14;
+void *f20; unsigned short f24; NativeOpDStr_10b7cc90 s28; NativeOpDStr_10b7cc90 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10b7cc90();
+};
+struct NativeOpDS8_10b87b00 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10b87b00() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10b87b00 { void *rep; void *next;
+__forceinline ~NativeOpDC_10b87b00() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10b87b00 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10b87b00() { vptr = (void *)&DAT_1190eb14; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10b87b00 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10b87b00() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10b87b00 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10b87b00() { v0 = (void *)&DAT_1190eacc; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10b87b00 : NativeOpDBase_10b87b00 {
+NativeOpDS8_10b87b00 m8; NativeOpDC_10b87b00 fc; NativeOpD14_10b87b00 m14;
+void *f20; unsigned short f24; NativeOpDStr_10b87b00 s28; NativeOpDStr_10b87b00 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10b87b00();
+};
+struct NativeOpDS8_10b87c50 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10b87c50() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10b87c50 { void *rep; void *next;
+__forceinline ~NativeOpDC_10b87c50() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10b87c50 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10b87c50() { vptr = (void *)&DAT_1190e7c0; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10b87c50 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10b87c50() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10b87c50 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10b87c50() { v0 = (void *)&DAT_1190e778; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10b87c50 : NativeOpDBase_10b87c50 {
+NativeOpDS8_10b87c50 m8; NativeOpDC_10b87c50 fc; NativeOpD14_10b87c50 m14;
+void *f20; unsigned short f24; NativeOpDStr_10b87c50 s28; NativeOpDStr_10b87c50 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10b87c50();
+};
+struct NativeOpDS8_10b87da0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10b87da0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10b87da0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10b87da0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10b87da0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10b87da0() { vptr = (void *)&DAT_1190e8dc; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10b87da0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10b87da0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10b87da0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10b87da0() { v0 = (void *)&DAT_1190e894; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10b87da0 : NativeOpDBase_10b87da0 {
+NativeOpDS8_10b87da0 m8; NativeOpDC_10b87da0 fc; NativeOpD14_10b87da0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10b87da0 s28; NativeOpDStr_10b87da0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10b87da0();
+};
+struct NativeOpDS8_10b87ef0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10b87ef0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10b87ef0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10b87ef0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10b87ef0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10b87ef0() { vptr = (void *)&DAT_1190e9f8; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10b87ef0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10b87ef0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10b87ef0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10b87ef0() { v0 = (void *)&DAT_1190e9b0; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10b87ef0 : NativeOpDBase_10b87ef0 {
+NativeOpDS8_10b87ef0 m8; NativeOpDC_10b87ef0 fc; NativeOpD14_10b87ef0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10b87ef0 s28; NativeOpDStr_10b87ef0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10b87ef0();
+};
+struct NativeOpDS8_10c4afd0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10c4afd0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10c4afd0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10c4afd0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10c4afd0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10c4afd0() { vptr = (void *)&DAT_11916ca0; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10c4afd0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10c4afd0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10c4afd0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10c4afd0() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10c4afd0 : NativeOpDBase_10c4afd0 {
+NativeOpDS8_10c4afd0 m8; NativeOpDC_10c4afd0 fc; NativeOpD14_10c4afd0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10c4afd0 s28; NativeOpDStr_10c4afd0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10c4afd0();
+};
+struct NativeOpDS8_10c4f390 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10c4f390() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10c4f390 { void *rep; void *next;
+__forceinline ~NativeOpDC_10c4f390() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10c4f390 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10c4f390() { vptr = (void *)&DAT_1191758c; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10c4f390 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10c4f390() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10c4f390 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10c4f390() { v0 = (void *)&DAT_11917548; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10c4f390 : NativeOpDBase_10c4f390 {
+NativeOpDS8_10c4f390 m8; NativeOpDC_10c4f390 fc; NativeOpD14_10c4f390 m14;
+void *f20; unsigned short f24; NativeOpDStr_10c4f390 s28; NativeOpDStr_10c4f390 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10c4f390();
+};
+struct NativeOpDS8_10c4f4e0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10c4f4e0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10c4f4e0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10c4f4e0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10c4f4e0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10c4f4e0() { vptr = (void *)&DAT_11917694; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10c4f4e0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10c4f4e0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10c4f4e0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10c4f4e0() { v0 = (void *)&DAT_11917650; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10c4f4e0 : NativeOpDBase_10c4f4e0 {
+NativeOpDS8_10c4f4e0 m8; NativeOpDC_10c4f4e0 fc; NativeOpD14_10c4f4e0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10c4f4e0 s28; NativeOpDStr_10c4f4e0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10c4f4e0();
+};
+struct NativeOpDS8_10c4f630 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10c4f630() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10c4f630 { void *rep; void *next;
+__forceinline ~NativeOpDC_10c4f630() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10c4f630 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10c4f630() { vptr = (void *)&DAT_1191779c; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10c4f630 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10c4f630() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10c4f630 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10c4f630() { v0 = (void *)&DAT_11917758; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10c4f630 : NativeOpDBase_10c4f630 {
+NativeOpDS8_10c4f630 m8; NativeOpDC_10c4f630 fc; NativeOpD14_10c4f630 m14;
+void *f20; unsigned short f24; NativeOpDStr_10c4f630 s28; NativeOpDStr_10c4f630 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10c4f630();
+};
+struct NativeOpDS8_10c4f780 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10c4f780() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10c4f780 { void *rep; void *next;
+__forceinline ~NativeOpDC_10c4f780() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10c4f780 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10c4f780() { vptr = (void *)&DAT_11917a08; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10c4f780 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10c4f780() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10c4f780 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10c4f780() { v0 = (void *)&DAT_119179c4; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10c4f780 : NativeOpDBase_10c4f780 {
+NativeOpDS8_10c4f780 m8; NativeOpDC_10c4f780 fc; NativeOpD14_10c4f780 m14;
+void *f20; unsigned short f24; NativeOpDStr_10c4f780 s28; NativeOpDStr_10c4f780 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10c4f780();
+};
+struct NativeOpDS8_10c4f8d0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10c4f8d0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10c4f8d0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10c4f8d0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10c4f8d0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10c4f8d0() { vptr = (void *)&DAT_118ba4a0; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10c4f8d0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10c4f8d0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10c4f8d0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10c4f8d0() { v0 = (void *)&DAT_119178d4; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10c4f8d0 : NativeOpDBase_10c4f8d0 {
+NativeOpDS8_10c4f8d0 m8; NativeOpDC_10c4f8d0 fc; NativeOpD14_10c4f8d0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10c4f8d0 s28; NativeOpDStr_10c4f8d0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10c4f8d0();
+};
+struct NativeOpDS8_10c55600 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10c55600() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10c55600 { void *rep; void *next;
+__forceinline ~NativeOpDC_10c55600() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10c55600 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10c55600() { vptr = (void *)&DAT_11917fe4; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10c55600 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10c55600() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10c55600 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10c55600() { v0 = (void *)&DAT_11917f9c; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10c55600 : NativeOpDBase_10c55600 {
+NativeOpDS8_10c55600 m8; NativeOpDC_10c55600 fc; NativeOpD14_10c55600 m14;
+void *f20; unsigned short f24; NativeOpDStr_10c55600 s28; NativeOpDStr_10c55600 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10c55600();
+};
+struct NativeOpDS8_10c55750 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10c55750() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10c55750 { void *rep; void *next;
+__forceinline ~NativeOpDC_10c55750() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10c55750 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10c55750() { vptr = (void *)&DAT_11918250; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10c55750 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10c55750() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10c55750 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10c55750() { v0 = (void *)&DAT_11918208; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10c55750 : NativeOpDBase_10c55750 {
+NativeOpDS8_10c55750 m8; NativeOpDC_10c55750 fc; NativeOpD14_10c55750 m14;
+void *f20; unsigned short f24; NativeOpDStr_10c55750 s28; NativeOpDStr_10c55750 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10c55750();
+};
+struct NativeOpDS8_10c558a0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10c558a0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10c558a0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10c558a0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10c558a0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10c558a0() { vptr = (void *)&DAT_118ba17c; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10c558a0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10c558a0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10c558a0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10c558a0() { v0 = (void *)&DAT_11917eac; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10c558a0 : NativeOpDBase_10c558a0 {
+NativeOpDS8_10c558a0 m8; NativeOpDC_10c558a0 fc; NativeOpD14_10c558a0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10c558a0 s28; NativeOpDStr_10c558a0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10c558a0();
+};
+struct NativeOpDS8_10c559f0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10c559f0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10c559f0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10c559f0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10c559f0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10c559f0() { vptr = (void *)&DAT_118ba188; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10c559f0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10c559f0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10c559f0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10c559f0() { v0 = (void *)&DAT_11918118; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10c559f0 : NativeOpDBase_10c559f0 {
+NativeOpDS8_10c559f0 m8; NativeOpDC_10c559f0 fc; NativeOpD14_10c559f0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10c559f0 s28; NativeOpDStr_10c559f0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10c559f0();
+};
+struct NativeOpDS8_10c59700 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10c59700() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10c59700 { void *rep; void *next;
+__forceinline ~NativeOpDC_10c59700() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10c59700 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10c59700() { vptr = (void *)&DAT_1191856c; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10c59700 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10c59700() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10c59700 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10c59700() { v0 = (void *)&DAT_11918528; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10c59700 : NativeOpDBase_10c59700 {
+NativeOpDS8_10c59700 m8; NativeOpDC_10c59700 fc; NativeOpD14_10c59700 m14;
+void *f20; unsigned short f24; NativeOpDStr_10c59700 s28; NativeOpDStr_10c59700 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10c59700();
+};
+struct NativeOpDS8_10c80f90 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10c80f90() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10c80f90 { void *rep; void *next;
+__forceinline ~NativeOpDC_10c80f90() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10c80f90 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10c80f90() { vptr = (void *)&DAT_1191af84; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10c80f90 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10c80f90() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10c80f90 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10c80f90() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10c80f90 : NativeOpDBase_10c80f90 {
+NativeOpDS8_10c80f90 m8; NativeOpDC_10c80f90 fc; NativeOpD14_10c80f90 m14;
+void *f20; unsigned short f24; NativeOpDStr_10c80f90 s28; NativeOpDStr_10c80f90 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10c80f90();
+};
+struct NativeOpDS8_10c810e0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10c810e0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10c810e0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10c810e0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10c810e0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10c810e0() { vptr = (void *)&DAT_1191b040; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10c810e0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10c810e0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10c810e0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10c810e0() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10c810e0 : NativeOpDBase_10c810e0 {
+NativeOpDS8_10c810e0 m8; NativeOpDC_10c810e0 fc; NativeOpD14_10c810e0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10c810e0 s28; NativeOpDStr_10c810e0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10c810e0();
+};
+struct NativeOpDS8_10cc12a0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10cc12a0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10cc12a0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10cc12a0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10cc12a0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10cc12a0() { vptr = (void *)&DAT_1191edc8; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10cc12a0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10cc12a0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10cc12a0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10cc12a0() { v0 = (void *)&DAT_1191ed54; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10cc12a0 : NativeOpDBase_10cc12a0 {
+NativeOpDS8_10cc12a0 m8; NativeOpDC_10cc12a0 fc; NativeOpD14_10cc12a0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10cc12a0 s28; NativeOpDStr_10cc12a0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10cc12a0();
+};
+struct NativeOpDS8_10cca490 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10cca490() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10cca490 { void *rep; void *next;
+__forceinline ~NativeOpDC_10cca490() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10cca490 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10cca490() { vptr = (void *)&DAT_1191f534; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10cca490 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10cca490() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10cca490 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10cca490() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10cca490 : NativeOpDBase_10cca490 {
+NativeOpDS8_10cca490 m8; NativeOpDC_10cca490 fc; NativeOpD14_10cca490 m14;
+void *f20; unsigned short f24; NativeOpDStr_10cca490 s28; NativeOpDStr_10cca490 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10cca490();
+};
+struct NativeOpDS8_10cca5e0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10cca5e0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10cca5e0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10cca5e0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10cca5e0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10cca5e0() { vptr = (void *)&DAT_1191f188; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10cca5e0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10cca5e0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10cca5e0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10cca5e0() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10cca5e0 : NativeOpDBase_10cca5e0 {
+NativeOpDS8_10cca5e0 m8; NativeOpDC_10cca5e0 fc; NativeOpD14_10cca5e0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10cca5e0 s28; NativeOpDStr_10cca5e0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10cca5e0();
+};
+struct NativeOpDS8_10cca730 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10cca730() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10cca730 { void *rep; void *next;
+__forceinline ~NativeOpDC_10cca730() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10cca730 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10cca730() { vptr = (void *)&DAT_1191ef54; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10cca730 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10cca730() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10cca730 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10cca730() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10cca730 : NativeOpDBase_10cca730 {
+NativeOpDS8_10cca730 m8; NativeOpDC_10cca730 fc; NativeOpD14_10cca730 m14;
+void *f20; unsigned short f24; NativeOpDStr_10cca730 s28; NativeOpDStr_10cca730 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10cca730();
+};
+struct NativeOpDS8_10cca880 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10cca880() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10cca880 { void *rep; void *next;
+__forceinline ~NativeOpDC_10cca880() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10cca880 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10cca880() { vptr = (void *)&DAT_1191f0cc; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10cca880 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10cca880() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10cca880 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10cca880() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10cca880 : NativeOpDBase_10cca880 {
+NativeOpDS8_10cca880 m8; NativeOpDC_10cca880 fc; NativeOpD14_10cca880 m14;
+void *f20; unsigned short f24; NativeOpDStr_10cca880 s28; NativeOpDStr_10cca880 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10cca880();
+};
+struct NativeOpDS8_10cca9d0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10cca9d0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10cca9d0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10cca9d0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10cca9d0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10cca9d0() { vptr = (void *)&DAT_1191f010; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10cca9d0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10cca9d0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10cca9d0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10cca9d0() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10cca9d0 : NativeOpDBase_10cca9d0 {
+NativeOpDS8_10cca9d0 m8; NativeOpDC_10cca9d0 fc; NativeOpD14_10cca9d0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10cca9d0 s28; NativeOpDStr_10cca9d0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10cca9d0();
+};
+struct NativeOpDS8_10ccab20 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10ccab20() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10ccab20 { void *rep; void *next;
+__forceinline ~NativeOpDC_10ccab20() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10ccab20 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10ccab20() { vptr = (void *)&DAT_1191f244; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10ccab20 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10ccab20() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10ccab20 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10ccab20() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10ccab20 : NativeOpDBase_10ccab20 {
+NativeOpDS8_10ccab20 m8; NativeOpDC_10ccab20 fc; NativeOpD14_10ccab20 m14;
+void *f20; unsigned short f24; NativeOpDStr_10ccab20 s28; NativeOpDStr_10ccab20 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10ccab20();
+};
+struct NativeOpDS8_10ccac70 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10ccac70() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10ccac70 { void *rep; void *next;
+__forceinline ~NativeOpDC_10ccac70() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10ccac70 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10ccac70() { vptr = (void *)&DAT_1191f3bc; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10ccac70 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10ccac70() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10ccac70 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10ccac70() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10ccac70 : NativeOpDBase_10ccac70 {
+NativeOpDS8_10ccac70 m8; NativeOpDC_10ccac70 fc; NativeOpD14_10ccac70 m14;
+void *f20; unsigned short f24; NativeOpDStr_10ccac70 s28; NativeOpDStr_10ccac70 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10ccac70();
+};
+struct NativeOpDS8_10ccadc0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10ccadc0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10ccadc0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10ccadc0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10ccadc0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10ccadc0() { vptr = (void *)&DAT_1191f478; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10ccadc0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10ccadc0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10ccadc0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10ccadc0() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10ccadc0 : NativeOpDBase_10ccadc0 {
+NativeOpDS8_10ccadc0 m8; NativeOpDC_10ccadc0 fc; NativeOpD14_10ccadc0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10ccadc0 s28; NativeOpDStr_10ccadc0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10ccadc0();
+};
+struct NativeOpDS8_10ccaf10 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10ccaf10() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10ccaf10 { void *rep; void *next;
+__forceinline ~NativeOpDC_10ccaf10() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10ccaf10 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10ccaf10() { vptr = (void *)&DAT_1191f300; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10ccaf10 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10ccaf10() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10ccaf10 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10ccaf10() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10ccaf10 : NativeOpDBase_10ccaf10 {
+NativeOpDS8_10ccaf10 m8; NativeOpDC_10ccaf10 fc; NativeOpD14_10ccaf10 m14;
+void *f20; unsigned short f24; NativeOpDStr_10ccaf10 s28; NativeOpDStr_10ccaf10 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10ccaf10();
+};
+struct NativeOpDS8_10cdbb90 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10cdbb90() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10cdbb90 { void *rep; void *next;
+__forceinline ~NativeOpDC_10cdbb90() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10cdbb90 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10cdbb90() { vptr = (void *)&DAT_11920b78; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10cdbb90 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10cdbb90() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10cdbb90 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10cdbb90() { v0 = (void *)&DAT_11920b34; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10cdbb90 : NativeOpDBase_10cdbb90 {
+NativeOpDS8_10cdbb90 m8; NativeOpDC_10cdbb90 fc; NativeOpD14_10cdbb90 m14;
+void *f20; unsigned short f24; NativeOpDStr_10cdbb90 s28; NativeOpDStr_10cdbb90 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10cdbb90();
+};
+struct NativeOpDS8_10cdbce0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10cdbce0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10cdbce0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10cdbce0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10cdbce0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10cdbce0() { vptr = (void *)&DAT_11920a04; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10cdbce0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10cdbce0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10cdbce0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10cdbce0() { v0 = (void *)&DAT_119209c4; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10cdbce0 : NativeOpDBase_10cdbce0 {
+NativeOpDS8_10cdbce0 m8; NativeOpDC_10cdbce0 fc; NativeOpD14_10cdbce0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10cdbce0 s28; NativeOpDStr_10cdbce0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10cdbce0();
+};
+struct NativeOpDS8_10ce10f0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10ce10f0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10ce10f0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10ce10f0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10ce10f0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10ce10f0() { vptr = (void *)&DAT_1191c0dc; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10ce10f0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10ce10f0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10ce10f0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10ce10f0() { v0 = (void *)&DAT_11921188; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10ce10f0 : NativeOpDBase_10ce10f0 {
+NativeOpDS8_10ce10f0 m8; NativeOpDC_10ce10f0 fc; NativeOpD14_10ce10f0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10ce10f0 s28; NativeOpDStr_10ce10f0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10ce10f0();
+};
+struct NativeOpDS8_10cf58e0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10cf58e0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10cf58e0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10cf58e0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10cf58e0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10cf58e0() { vptr = (void *)&DAT_11922750; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10cf58e0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10cf58e0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10cf58e0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10cf58e0() { v0 = (void *)&DAT_119226fc; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10cf58e0 : NativeOpDBase_10cf58e0 {
+NativeOpDS8_10cf58e0 m8; NativeOpDC_10cf58e0 fc; NativeOpD14_10cf58e0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10cf58e0 s28; NativeOpDStr_10cf58e0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10cf58e0();
+};
+struct NativeOpDS8_10d806c0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10d806c0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10d806c0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10d806c0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10d806c0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10d806c0() { vptr = (void *)&DAT_1192f214; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10d806c0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10d806c0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10d806c0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10d806c0() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10d806c0 : NativeOpDBase_10d806c0 {
+NativeOpDS8_10d806c0 m8; NativeOpDC_10d806c0 fc; NativeOpD14_10d806c0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10d806c0 s28; NativeOpDStr_10d806c0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10d806c0();
+};
+struct NativeOpDS8_10d80810 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10d80810() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10d80810 { void *rep; void *next;
+__forceinline ~NativeOpDC_10d80810() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10d80810 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10d80810() { vptr = (void *)&DAT_1192f38c; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10d80810 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10d80810() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10d80810 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10d80810() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10d80810 : NativeOpDBase_10d80810 {
+NativeOpDS8_10d80810 m8; NativeOpDC_10d80810 fc; NativeOpD14_10d80810 m14;
+void *f20; unsigned short f24; NativeOpDStr_10d80810 s28; NativeOpDStr_10d80810 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10d80810();
+};
+struct NativeOpDS8_10d80960 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10d80960() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10d80960 { void *rep; void *next;
+__forceinline ~NativeOpDC_10d80960() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10d80960 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10d80960() { vptr = (void *)&DAT_1189e9f4; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10d80960 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10d80960() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10d80960 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10d80960() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10d80960 : NativeOpDBase_10d80960 {
+NativeOpDS8_10d80960 m8; NativeOpDC_10d80960 fc; NativeOpD14_10d80960 m14;
+void *f20; unsigned short f24; NativeOpDStr_10d80960 s28; NativeOpDStr_10d80960 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10d80960();
+};
+struct NativeOpDS8_10d80ab0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10d80ab0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10d80ab0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10d80ab0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10d80ab0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10d80ab0() { vptr = (void *)&DAT_1192f2d0; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10d80ab0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10d80ab0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10d80ab0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10d80ab0() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10d80ab0 : NativeOpDBase_10d80ab0 {
+NativeOpDS8_10d80ab0 m8; NativeOpDC_10d80ab0 fc; NativeOpD14_10d80ab0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10d80ab0 s28; NativeOpDStr_10d80ab0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10d80ab0();
+};
+struct NativeOpDS8_10d9b8e0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10d9b8e0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10d9b8e0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10d9b8e0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10d9b8e0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10d9b8e0() { vptr = (void *)&DAT_11920e2c; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10d9b8e0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10d9b8e0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10d9b8e0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10d9b8e0() { v0 = (void *)&DAT_11931990; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10d9b8e0 : NativeOpDBase_10d9b8e0 {
+NativeOpDS8_10d9b8e0 m8; NativeOpDC_10d9b8e0 fc; NativeOpD14_10d9b8e0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10d9b8e0 s28; NativeOpDStr_10d9b8e0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10d9b8e0();
+};
+struct NativeOpDS8_10de4fe0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10de4fe0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10de4fe0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10de4fe0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10de4fe0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10de4fe0() { vptr = (void *)&DAT_11935fb0; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10de4fe0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10de4fe0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10de4fe0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10de4fe0() { v0 = (void *)&DAT_11935f64; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10de4fe0 : NativeOpDBase_10de4fe0 {
+NativeOpDS8_10de4fe0 m8; NativeOpDC_10de4fe0 fc; NativeOpD14_10de4fe0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10de4fe0 s28; NativeOpDStr_10de4fe0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10de4fe0();
+};
+struct NativeOpDS8_10e92f40 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10e92f40() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10e92f40 { void *rep; void *next;
+__forceinline ~NativeOpDC_10e92f40() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10e92f40 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10e92f40() { vptr = (void *)&DAT_119468a0; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10e92f40 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10e92f40() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10e92f40 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10e92f40() { v0 = (void *)&DAT_1194685c; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10e92f40 : NativeOpDBase_10e92f40 {
+NativeOpDS8_10e92f40 m8; NativeOpDC_10e92f40 fc; NativeOpD14_10e92f40 m14;
+void *f20; unsigned short f24; NativeOpDStr_10e92f40 s28; NativeOpDStr_10e92f40 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10e92f40();
+};
+struct NativeOpDS8_10ef1910 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10ef1910() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10ef1910 { void *rep; void *next;
+__forceinline ~NativeOpDC_10ef1910() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10ef1910 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10ef1910() { vptr = (void *)&DAT_1194b768; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10ef1910 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10ef1910() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10ef1910 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10ef1910() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10ef1910 : NativeOpDBase_10ef1910 {
+NativeOpDS8_10ef1910 m8; NativeOpDC_10ef1910 fc; NativeOpD14_10ef1910 m14;
+void *f20; unsigned short f24; NativeOpDStr_10ef1910 s28; NativeOpDStr_10ef1910 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10ef1910();
+};
+struct NativeOpDS8_10f0ef30 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10f0ef30() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10f0ef30 { void *rep; void *next;
+__forceinline ~NativeOpDC_10f0ef30() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10f0ef30 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10f0ef30() { vptr = (void *)&DAT_1194ce1c; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10f0ef30 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10f0ef30() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10f0ef30 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10f0ef30() { v0 = (void *)&DAT_1194cbec; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10f0ef30 : NativeOpDBase_10f0ef30 {
+NativeOpDS8_10f0ef30 m8; NativeOpDC_10f0ef30 fc; NativeOpD14_10f0ef30 m14;
+void *f20; unsigned short f24; NativeOpDStr_10f0ef30 s28; NativeOpDStr_10f0ef30 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10f0ef30();
+};
+struct NativeOpDS8_10f0f080 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10f0f080() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10f0f080 { void *rep; void *next;
+__forceinline ~NativeOpDC_10f0f080() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10f0f080 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10f0f080() { vptr = (void *)&DAT_1194cc44; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10f0f080 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10f0f080() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10f0f080 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10f0f080() { v0 = (void *)&DAT_1194cbec; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10f0f080 : NativeOpDBase_10f0f080 {
+NativeOpDS8_10f0f080 m8; NativeOpDC_10f0f080 fc; NativeOpD14_10f0f080 m14;
+void *f20; unsigned short f24; NativeOpDStr_10f0f080 s28; NativeOpDStr_10f0f080 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10f0f080();
+};
+struct NativeOpDS8_10f0f1d0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10f0f1d0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10f0f1d0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10f0f1d0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10f0f1d0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10f0f1d0() { vptr = (void *)&DAT_1194cd30; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10f0f1d0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10f0f1d0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10f0f1d0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10f0f1d0() { v0 = (void *)&DAT_1194cbec; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10f0f1d0 : NativeOpDBase_10f0f1d0 {
+NativeOpDS8_10f0f1d0 m8; NativeOpDC_10f0f1d0 fc; NativeOpD14_10f0f1d0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10f0f1d0 s28; NativeOpDStr_10f0f1d0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10f0f1d0();
+};
+struct NativeOpDS8_10f259f0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10f259f0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10f259f0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10f259f0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10f259f0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10f259f0() { vptr = (void *)&DAT_1194e610; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10f259f0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10f259f0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10f259f0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10f259f0() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10f259f0 : NativeOpDBase_10f259f0 {
+NativeOpDS8_10f259f0 m8; NativeOpDC_10f259f0 fc; NativeOpD14_10f259f0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10f259f0 s28; NativeOpDStr_10f259f0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10f259f0();
+};
+struct NativeOpDS8_10f31800 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10f31800() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10f31800 { void *rep; void *next;
+__forceinline ~NativeOpDC_10f31800() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10f31800 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10f31800() { vptr = (void *)&DAT_1194f36c; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10f31800 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10f31800() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10f31800 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10f31800() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10f31800 : NativeOpDBase_10f31800 {
+NativeOpDS8_10f31800 m8; NativeOpDC_10f31800 fc; NativeOpD14_10f31800 m14;
+void *f20; unsigned short f24; NativeOpDStr_10f31800 s28; NativeOpDStr_10f31800 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10f31800();
+};
+struct NativeOpDS8_10f31950 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10f31950() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10f31950 { void *rep; void *next;
+__forceinline ~NativeOpDC_10f31950() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10f31950 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10f31950() { vptr = (void *)&DAT_1194f2ac; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10f31950 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10f31950() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10f31950 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10f31950() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10f31950 : NativeOpDBase_10f31950 {
+NativeOpDS8_10f31950 m8; NativeOpDC_10f31950 fc; NativeOpD14_10f31950 m14;
+void *f20; unsigned short f24; NativeOpDStr_10f31950 s28; NativeOpDStr_10f31950 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10f31950();
+};
+struct NativeOpDS8_10f31aa0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10f31aa0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10f31aa0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10f31aa0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10f31aa0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10f31aa0() { vptr = (void *)&DAT_1194f1ec; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10f31aa0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10f31aa0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10f31aa0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10f31aa0() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10f31aa0 : NativeOpDBase_10f31aa0 {
+NativeOpDS8_10f31aa0 m8; NativeOpDC_10f31aa0 fc; NativeOpD14_10f31aa0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10f31aa0 s28; NativeOpDStr_10f31aa0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10f31aa0();
+};
+struct NativeOpDS8_10f31bf0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10f31bf0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10f31bf0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10f31bf0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10f31bf0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10f31bf0() { vptr = (void *)&DAT_1194f12c; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10f31bf0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10f31bf0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10f31bf0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10f31bf0() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10f31bf0 : NativeOpDBase_10f31bf0 {
+NativeOpDS8_10f31bf0 m8; NativeOpDC_10f31bf0 fc; NativeOpD14_10f31bf0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10f31bf0 s28; NativeOpDStr_10f31bf0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10f31bf0();
+};
+struct NativeOpDS8_10f570c0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10f570c0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10f570c0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10f570c0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10f570c0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10f570c0() { vptr = (void *)&DAT_11952084; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10f570c0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10f570c0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10f570c0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10f570c0() { v0 = (void *)&DAT_11952040; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10f570c0 : NativeOpDBase_10f570c0 {
+NativeOpDS8_10f570c0 m8; NativeOpDC_10f570c0 fc; NativeOpD14_10f570c0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10f570c0 s28; NativeOpDStr_10f570c0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10f570c0();
+};
+struct NativeOpDS8_10f57210 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10f57210() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10f57210 { void *rep; void *next;
+__forceinline ~NativeOpDC_10f57210() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10f57210 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10f57210() { vptr = (void *)&DAT_11951f18; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10f57210 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10f57210() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10f57210 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10f57210() { v0 = (void *)&DAT_11951ed8; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10f57210 : NativeOpDBase_10f57210 {
+NativeOpDS8_10f57210 m8; NativeOpDC_10f57210 fc; NativeOpD14_10f57210 m14;
+void *f20; unsigned short f24; NativeOpDStr_10f57210 s28; NativeOpDStr_10f57210 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10f57210();
+};
+struct NativeOpDS8_10f57360 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10f57360() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10f57360 { void *rep; void *next;
+__forceinline ~NativeOpDC_10f57360() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10f57360 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10f57360() { vptr = (void *)&DAT_119521f0; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10f57360 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10f57360() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10f57360 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10f57360() { v0 = (void *)&DAT_119521b0; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10f57360 : NativeOpDBase_10f57360 {
+NativeOpDS8_10f57360 m8; NativeOpDC_10f57360 fc; NativeOpD14_10f57360 m14;
+void *f20; unsigned short f24; NativeOpDStr_10f57360 s28; NativeOpDStr_10f57360 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10f57360();
+};
+struct NativeOpDS8_10f574b0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10f574b0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10f574b0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10f574b0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10f574b0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10f574b0() { vptr = (void *)&DAT_11952374; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10f574b0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10f574b0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10f574b0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10f574b0() { v0 = (void *)&DAT_1195232c; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10f574b0 : NativeOpDBase_10f574b0 {
+NativeOpDS8_10f574b0 m8; NativeOpDC_10f574b0 fc; NativeOpD14_10f574b0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10f574b0 s28; NativeOpDStr_10f574b0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10f574b0();
+};
+struct NativeOpDS8_10f65b40 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10f65b40() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10f65b40 { void *rep; void *next;
+__forceinline ~NativeOpDC_10f65b40() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10f65b40 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10f65b40() { vptr = (void *)&DAT_11952780; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10f65b40 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10f65b40() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10f65b40 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10f65b40() { v0 = (void *)&DAT_1195273c; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10f65b40 : NativeOpDBase_10f65b40 {
+NativeOpDS8_10f65b40 m8; NativeOpDC_10f65b40 fc; NativeOpD14_10f65b40 m14;
+void *f20; unsigned short f24; NativeOpDStr_10f65b40 s28; NativeOpDStr_10f65b40 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10f65b40();
+};
+struct NativeOpDS8_10f708b0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10f708b0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10f708b0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10f708b0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10f708b0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10f708b0() { vptr = (void *)&DAT_11952b10; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10f708b0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10f708b0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10f708b0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10f708b0() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10f708b0 : NativeOpDBase_10f708b0 {
+NativeOpDS8_10f708b0 m8; NativeOpDC_10f708b0 fc; NativeOpD14_10f708b0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10f708b0 s28; NativeOpDStr_10f708b0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10f708b0();
+};
+struct NativeOpDS8_10f77a80 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10f77a80() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10f77a80 { void *rep; void *next;
+__forceinline ~NativeOpDC_10f77a80() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10f77a80 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10f77a80() { vptr = (void *)&DAT_11950a7c; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10f77a80 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10f77a80() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10f77a80 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10f77a80() { v0 = (void *)&DAT_119534fc; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10f77a80 : NativeOpDBase_10f77a80 {
+NativeOpDS8_10f77a80 m8; NativeOpDC_10f77a80 fc; NativeOpD14_10f77a80 m14;
+void *f20; unsigned short f24; NativeOpDStr_10f77a80 s28; NativeOpDStr_10f77a80 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10f77a80();
+};
+struct NativeOpDS8_10f7d8c0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10f7d8c0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10f7d8c0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10f7d8c0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10f7d8c0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10f7d8c0() { vptr = (void *)&DAT_11953b28; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10f7d8c0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10f7d8c0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10f7d8c0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10f7d8c0() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10f7d8c0 : NativeOpDBase_10f7d8c0 {
+NativeOpDS8_10f7d8c0 m8; NativeOpDC_10f7d8c0 fc; NativeOpD14_10f7d8c0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10f7d8c0 s28; NativeOpDStr_10f7d8c0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10f7d8c0();
+};
+struct NativeOpDS8_10f7da10 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10f7da10() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10f7da10 { void *rep; void *next;
+__forceinline ~NativeOpDC_10f7da10() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10f7da10 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10f7da10() { vptr = (void *)&DAT_11953a6c; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10f7da10 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10f7da10() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10f7da10 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10f7da10() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10f7da10 : NativeOpDBase_10f7da10 {
+NativeOpDS8_10f7da10 m8; NativeOpDC_10f7da10 fc; NativeOpD14_10f7da10 m14;
+void *f20; unsigned short f24; NativeOpDStr_10f7da10 s28; NativeOpDStr_10f7da10 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10f7da10();
+};
+struct NativeOpDS8_10f8b460 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10f8b460() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10f8b460 { void *rep; void *next;
+__forceinline ~NativeOpDC_10f8b460() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10f8b460 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10f8b460() { vptr = (void *)&DAT_1195474c; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10f8b460 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10f8b460() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10f8b460 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10f8b460() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10f8b460 : NativeOpDBase_10f8b460 {
+NativeOpDS8_10f8b460 m8; NativeOpDC_10f8b460 fc; NativeOpD14_10f8b460 m14;
+void *f20; unsigned short f24; NativeOpDStr_10f8b460 s28; NativeOpDStr_10f8b460 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10f8b460();
+};
+struct NativeOpDS8_10f8b5b0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10f8b5b0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10f8b5b0 { void *rep; void *next;
+__forceinline ~NativeOpDC_10f8b5b0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10f8b5b0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10f8b5b0() { vptr = (void *)&DAT_1195480c; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10f8b5b0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10f8b5b0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10f8b5b0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10f8b5b0() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10f8b5b0 : NativeOpDBase_10f8b5b0 {
+NativeOpDS8_10f8b5b0 m8; NativeOpDC_10f8b5b0 fc; NativeOpD14_10f8b5b0 m14;
+void *f20; unsigned short f24; NativeOpDStr_10f8b5b0 s28; NativeOpDStr_10f8b5b0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10f8b5b0();
+};
+struct NativeOpDS8_10f8b700 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_10f8b700() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_10f8b700 { void *rep; void *next;
+__forceinline ~NativeOpDC_10f8b700() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_10f8b700 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_10f8b700() { vptr = (void *)&DAT_119548cc; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_10f8b700 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_10f8b700() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_10f8b700 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_10f8b700() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_10f8b700 : NativeOpDBase_10f8b700 {
+NativeOpDS8_10f8b700 m8; NativeOpDC_10f8b700 fc; NativeOpD14_10f8b700 m14;
+void *f20; unsigned short f24; NativeOpDStr_10f8b700 s28; NativeOpDStr_10f8b700 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_10f8b700();
+};
+struct NativeOpDS8_11017ca0 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_11017ca0() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_11017ca0 { void *rep; void *next;
+__forceinline ~NativeOpDC_11017ca0() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_11017ca0 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_11017ca0() { vptr = (void *)&DAT_119606a8; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_11017ca0 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_11017ca0() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_11017ca0 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_11017ca0() { v0 = (void *)&DAT_11960650; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_11017ca0 : NativeOpDBase_11017ca0 {
+NativeOpDS8_11017ca0 m8; NativeOpDC_11017ca0 fc; NativeOpD14_11017ca0 m14;
+void *f20; unsigned short f24; NativeOpDStr_11017ca0 s28; NativeOpDStr_11017ca0 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_11017ca0();
+};
+struct NativeOpDS8_11026d20 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_11026d20() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_11026d20 { void *rep; void *next;
+__forceinline ~NativeOpDC_11026d20() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_11026d20 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_11026d20() { vptr = (void *)&DAT_119639e0; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_11026d20 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_11026d20() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_11026d20 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_11026d20() { v0 = (void *)&DAT_11963cc8; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_11026d20 : NativeOpDBase_11026d20 {
+NativeOpDS8_11026d20 m8; NativeOpDC_11026d20 fc; NativeOpD14_11026d20 m14;
+void *f20; unsigned short f24; NativeOpDStr_11026d20 s28; NativeOpDStr_11026d20 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_11026d20();
+};
+struct NativeOpDS8_1105f600 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_1105f600() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_1105f600 { void *rep; void *next;
+__forceinline ~NativeOpDC_1105f600() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_1105f600 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_1105f600() { vptr = (void *)&DAT_11966100; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_1105f600 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_1105f600() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_1105f600 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_1105f600() { v0 = (void *)&DAT_119660b8; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_1105f600 : NativeOpDBase_1105f600 {
+NativeOpDS8_1105f600 m8; NativeOpDC_1105f600 fc; NativeOpD14_1105f600 m14;
+void *f20; unsigned short f24; NativeOpDStr_1105f600 s28; NativeOpDStr_1105f600 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_1105f600();
+};
+struct NativeOpDS8_11061920 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_11061920() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_11061920 { void *rep; void *next;
+__forceinline ~NativeOpDC_11061920() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_11061920 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_11061920() { vptr = (void *)&DAT_118af10c; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_11061920 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_11061920() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_11061920 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_11061920() { v0 = (void *)&DAT_11966268; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_11061920 : NativeOpDBase_11061920 {
+NativeOpDS8_11061920 m8; NativeOpDC_11061920 fc; NativeOpD14_11061920 m14;
+void *f20; unsigned short f24; NativeOpDStr_11061920 s28; NativeOpDStr_11061920 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_11061920();
+};
+struct NativeOpDS8_11062550 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_11062550() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_11062550 { void *rep; void *next;
+__forceinline ~NativeOpDC_11062550() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_11062550 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_11062550() { vptr = (void *)&DAT_118821c0; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_11062550 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_11062550() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_11062550 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_11062550() { v0 = (void *)&DAT_119663e4; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_11062550 : NativeOpDBase_11062550 {
+NativeOpDS8_11062550 m8; NativeOpDC_11062550 fc; NativeOpD14_11062550 m14;
+void *f20; unsigned short f24; NativeOpDStr_11062550 s28; NativeOpDStr_11062550 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_11062550();
+};
+struct NativeOpDS8_11064c80 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_11064c80() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_11064c80 { void *rep; void *next;
+__forceinline ~NativeOpDC_11064c80() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_11064c80 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_11064c80() { vptr = (void *)&DAT_1196651c; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_11064c80 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_11064c80() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_11064c80 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_11064c80() { v0 = (void *)&DAT_11882180; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_11064c80 : NativeOpDBase_11064c80 {
+NativeOpDS8_11064c80 m8; NativeOpDC_11064c80 fc; NativeOpD14_11064c80 m14;
+void *f20; unsigned short f24; NativeOpDStr_11064c80 s28; NativeOpDStr_11064c80 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_11064c80();
+};
+struct NativeOpDS8_11067870 { void *vptr; void thunk_FUN_11240850();
+__forceinline ~NativeOpDS8_11067870() { vptr = (void *)&DAT_1188206c; thunk_FUN_11240850(); } };
+struct NativeOpDC_11067870 { void *rep; void *next;
+__forceinline ~NativeOpDC_11067870() { void *p = next; if (p != 0) { rep = 0; next = 0; ((NativeOpDtorIface *)p)->slot8(); } } };
+struct NativeOpD14_11067870 { void *vptr; void *f4; void *f8; void thunk_FUN_101ba0d0();
+__forceinline ~NativeOpD14_11067870() { vptr = (void *)&DAT_119668ac; thunk_FUN_101ba0d0(); } };
+struct NativeOpDStr_11067870 { void *rep; void thunk_FUN_101a4bf0();
+__forceinline ~NativeOpDStr_11067870() { thunk_FUN_101a4bf0(); rep = 0; } };
+struct NativeOpDBase_11067870 { void *v0; void *f4;
+__forceinline ~NativeOpDBase_11067870() { v0 = (void *)&DAT_11966858; g_lSCObjCount--; v0 = (void *)&DAT_1186d2f4; } };
+struct NativeOpDtor_FUN_11067870 : NativeOpDBase_11067870 {
+NativeOpDS8_11067870 m8; NativeOpDC_11067870 fc; NativeOpD14_11067870 m14;
+void *f20; unsigned short f24; NativeOpDStr_11067870 s28; NativeOpDStr_11067870 s2c;
+void *v30; void *f34; unsigned long long f38; void *f40; void *f44;
+~NativeOpDtor_FUN_11067870();
+};
+
+
+// Reference entry 10688910; body size 260 bytes.
+#line 1 "ENTRY_10688910"
+NativeOpDtor_FUN_10688910::~NativeOpDtor_FUN_10688910() {
+v0 = (void *)&DAT_118c6304;
+m8.vptr = (void *)&DAT_118c634c;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 109f78b0; body size 260 bytes.
+#line 1 "ENTRY_109f78b0"
+NativeOpDtor_FUN_109f78b0::~NativeOpDtor_FUN_109f78b0() {
+v0 = (void *)&DAT_118f1cdc;
+m8.vptr = (void *)&DAT_118f1d24;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 109f7a00; body size 260 bytes.
+#line 1 "ENTRY_109f7a00"
+NativeOpDtor_FUN_109f7a00::~NativeOpDtor_FUN_109f7a00() {
+v0 = (void *)&DAT_118f1a18;
+m8.vptr = (void *)&DAT_118f1a60;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 109f7b50; body size 260 bytes.
+#line 1 "ENTRY_109f7b50"
+NativeOpDtor_FUN_109f7b50::~NativeOpDtor_FUN_109f7b50() {
+v0 = (void *)&DAT_118f1e48;
+m8.vptr = (void *)&DAT_118f1e94;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 109f7ca0; body size 260 bytes.
+#line 1 "ENTRY_109f7ca0"
+NativeOpDtor_FUN_109f7ca0::~NativeOpDtor_FUN_109f7ca0() {
+v0 = (void *)&DAT_118f1b74;
+m8.vptr = (void *)&DAT_118f1bbc;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10b6d3c0; body size 260 bytes.
+#line 1 "ENTRY_10b6d3c0"
+NativeOpDtor_FUN_10b6d3c0::~NativeOpDtor_FUN_10b6d3c0() {
+v0 = (void *)&DAT_1190a9b0;
+m8.vptr = (void *)&DAT_1190a9f8;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10b7cc90; body size 260 bytes.
+#line 1 "ENTRY_10b7cc90"
+NativeOpDtor_FUN_10b7cc90::~NativeOpDtor_FUN_10b7cc90() {
+v0 = (void *)&DAT_1190e1e8;
+m8.vptr = (void *)&DAT_1190e234;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10b87b00; body size 260 bytes.
+#line 1 "ENTRY_10b87b00"
+NativeOpDtor_FUN_10b87b00::~NativeOpDtor_FUN_10b87b00() {
+v0 = (void *)&DAT_1190eb20;
+m8.vptr = (void *)&DAT_1190eb74;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10b87c50; body size 260 bytes.
+#line 1 "ENTRY_10b87c50"
+NativeOpDtor_FUN_10b87c50::~NativeOpDtor_FUN_10b87c50() {
+v0 = (void *)&DAT_1190e7cc;
+m8.vptr = (void *)&DAT_1190e820;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10b87da0; body size 260 bytes.
+#line 1 "ENTRY_10b87da0"
+NativeOpDtor_FUN_10b87da0::~NativeOpDtor_FUN_10b87da0() {
+v0 = (void *)&DAT_1190e8e8;
+m8.vptr = (void *)&DAT_1190e93c;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10b87ef0; body size 260 bytes.
+#line 1 "ENTRY_10b87ef0"
+NativeOpDtor_FUN_10b87ef0::~NativeOpDtor_FUN_10b87ef0() {
+v0 = (void *)&DAT_1190ea04;
+m8.vptr = (void *)&DAT_1190ea58;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10c4afd0; body size 260 bytes.
+#line 1 "ENTRY_10c4afd0"
+NativeOpDtor_FUN_10c4afd0::~NativeOpDtor_FUN_10c4afd0() {
+v0 = (void *)&DAT_11916cac;
+m8.vptr = (void *)&DAT_11916cf4;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10c4f390; body size 260 bytes.
+#line 1 "ENTRY_10c4f390"
+NativeOpDtor_FUN_10c4f390::~NativeOpDtor_FUN_10c4f390() {
+v0 = (void *)&DAT_11917598;
+m8.vptr = (void *)&DAT_119175e4;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10c4f4e0; body size 260 bytes.
+#line 1 "ENTRY_10c4f4e0"
+NativeOpDtor_FUN_10c4f4e0::~NativeOpDtor_FUN_10c4f4e0() {
+v0 = (void *)&DAT_119176a0;
+m8.vptr = (void *)&DAT_119176ec;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10c4f630; body size 260 bytes.
+#line 1 "ENTRY_10c4f630"
+NativeOpDtor_FUN_10c4f630::~NativeOpDtor_FUN_10c4f630() {
+v0 = (void *)&DAT_119177a8;
+m8.vptr = (void *)&DAT_119177f4;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10c4f780; body size 260 bytes.
+#line 1 "ENTRY_10c4f780"
+NativeOpDtor_FUN_10c4f780::~NativeOpDtor_FUN_10c4f780() {
+v0 = (void *)&DAT_11917a14;
+m8.vptr = (void *)&DAT_11917a60;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10c4f8d0; body size 260 bytes.
+#line 1 "ENTRY_10c4f8d0"
+NativeOpDtor_FUN_10c4f8d0::~NativeOpDtor_FUN_10c4f8d0() {
+v0 = (void *)&DAT_11917914;
+m8.vptr = (void *)&DAT_1191795c;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10c55600; body size 260 bytes.
+#line 1 "ENTRY_10c55600"
+NativeOpDtor_FUN_10c55600::~NativeOpDtor_FUN_10c55600() {
+v0 = (void *)&DAT_11917ff0;
+m8.vptr = (void *)&DAT_11918044;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10c55750; body size 260 bytes.
+#line 1 "ENTRY_10c55750"
+NativeOpDtor_FUN_10c55750::~NativeOpDtor_FUN_10c55750() {
+v0 = (void *)&DAT_1191825c;
+m8.vptr = (void *)&DAT_119182b0;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10c558a0; body size 260 bytes.
+#line 1 "ENTRY_10c558a0"
+NativeOpDtor_FUN_10c558a0::~NativeOpDtor_FUN_10c558a0() {
+v0 = (void *)&DAT_11917eec;
+m8.vptr = (void *)&DAT_11917f34;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10c559f0; body size 260 bytes.
+#line 1 "ENTRY_10c559f0"
+NativeOpDtor_FUN_10c559f0::~NativeOpDtor_FUN_10c559f0() {
+v0 = (void *)&DAT_11918158;
+m8.vptr = (void *)&DAT_119181a0;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10c59700; body size 260 bytes.
+#line 1 "ENTRY_10c59700"
+NativeOpDtor_FUN_10c59700::~NativeOpDtor_FUN_10c59700() {
+v0 = (void *)&DAT_11918578;
+m8.vptr = (void *)&DAT_119185c4;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10c80f90; body size 260 bytes.
+#line 1 "ENTRY_10c80f90"
+NativeOpDtor_FUN_10c80f90::~NativeOpDtor_FUN_10c80f90() {
+v0 = (void *)&DAT_1191af90;
+m8.vptr = (void *)&DAT_1191afd8;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10c810e0; body size 260 bytes.
+#line 1 "ENTRY_10c810e0"
+NativeOpDtor_FUN_10c810e0::~NativeOpDtor_FUN_10c810e0() {
+v0 = (void *)&DAT_1191b04c;
+m8.vptr = (void *)&DAT_1191b094;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10cc12a0; body size 260 bytes.
+#line 1 "ENTRY_10cc12a0"
+NativeOpDtor_FUN_10cc12a0::~NativeOpDtor_FUN_10cc12a0() {
+v0 = (void *)&DAT_1191edd4;
+m8.vptr = (void *)&DAT_1191ee50;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10cca490; body size 260 bytes.
+#line 1 "ENTRY_10cca490"
+NativeOpDtor_FUN_10cca490::~NativeOpDtor_FUN_10cca490() {
+v0 = (void *)&DAT_1191f540;
+m8.vptr = (void *)&DAT_1191f588;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10cca5e0; body size 260 bytes.
+#line 1 "ENTRY_10cca5e0"
+NativeOpDtor_FUN_10cca5e0::~NativeOpDtor_FUN_10cca5e0() {
+v0 = (void *)&DAT_1191f194;
+m8.vptr = (void *)&DAT_1191f1dc;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10cca730; body size 260 bytes.
+#line 1 "ENTRY_10cca730"
+NativeOpDtor_FUN_10cca730::~NativeOpDtor_FUN_10cca730() {
+v0 = (void *)&DAT_1191ef60;
+m8.vptr = (void *)&DAT_1191efa8;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10cca880; body size 260 bytes.
+#line 1 "ENTRY_10cca880"
+NativeOpDtor_FUN_10cca880::~NativeOpDtor_FUN_10cca880() {
+v0 = (void *)&DAT_1191f0d8;
+m8.vptr = (void *)&DAT_1191f120;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10cca9d0; body size 260 bytes.
+#line 1 "ENTRY_10cca9d0"
+NativeOpDtor_FUN_10cca9d0::~NativeOpDtor_FUN_10cca9d0() {
+v0 = (void *)&DAT_1191f01c;
+m8.vptr = (void *)&DAT_1191f064;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10ccab20; body size 260 bytes.
+#line 1 "ENTRY_10ccab20"
+NativeOpDtor_FUN_10ccab20::~NativeOpDtor_FUN_10ccab20() {
+v0 = (void *)&DAT_1191f250;
+m8.vptr = (void *)&DAT_1191f298;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10ccac70; body size 260 bytes.
+#line 1 "ENTRY_10ccac70"
+NativeOpDtor_FUN_10ccac70::~NativeOpDtor_FUN_10ccac70() {
+v0 = (void *)&DAT_1191f3c8;
+m8.vptr = (void *)&DAT_1191f410;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10ccadc0; body size 260 bytes.
+#line 1 "ENTRY_10ccadc0"
+NativeOpDtor_FUN_10ccadc0::~NativeOpDtor_FUN_10ccadc0() {
+v0 = (void *)&DAT_1191f484;
+m8.vptr = (void *)&DAT_1191f4cc;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10ccaf10; body size 260 bytes.
+#line 1 "ENTRY_10ccaf10"
+NativeOpDtor_FUN_10ccaf10::~NativeOpDtor_FUN_10ccaf10() {
+v0 = (void *)&DAT_1191f30c;
+m8.vptr = (void *)&DAT_1191f354;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10cdbb90; body size 260 bytes.
+#line 1 "ENTRY_10cdbb90"
+NativeOpDtor_FUN_10cdbb90::~NativeOpDtor_FUN_10cdbb90() {
+v0 = (void *)&DAT_11920b84;
+m8.vptr = (void *)&DAT_11920bd0;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10cdbce0; body size 260 bytes.
+#line 1 "ENTRY_10cdbce0"
+NativeOpDtor_FUN_10cdbce0::~NativeOpDtor_FUN_10cdbce0() {
+v0 = (void *)&DAT_11920a10;
+m8.vptr = (void *)&DAT_11920a58;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10ce10f0; body size 260 bytes.
+#line 1 "ENTRY_10ce10f0"
+NativeOpDtor_FUN_10ce10f0::~NativeOpDtor_FUN_10ce10f0() {
+v0 = (void *)&DAT_119211cc;
+m8.vptr = (void *)&DAT_11921218;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10cf58e0; body size 260 bytes.
+#line 1 "ENTRY_10cf58e0"
+NativeOpDtor_FUN_10cf58e0::~NativeOpDtor_FUN_10cf58e0() {
+v0 = (void *)&DAT_1192275c;
+m8.vptr = (void *)&DAT_119227b8;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10d806c0; body size 260 bytes.
+#line 1 "ENTRY_10d806c0"
+NativeOpDtor_FUN_10d806c0::~NativeOpDtor_FUN_10d806c0() {
+v0 = (void *)&DAT_1192f220;
+m8.vptr = (void *)&DAT_1192f268;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10d80810; body size 260 bytes.
+#line 1 "ENTRY_10d80810"
+NativeOpDtor_FUN_10d80810::~NativeOpDtor_FUN_10d80810() {
+v0 = (void *)&DAT_1192f398;
+m8.vptr = (void *)&DAT_1192f3e0;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10d80960; body size 260 bytes.
+#line 1 "ENTRY_10d80960"
+NativeOpDtor_FUN_10d80960::~NativeOpDtor_FUN_10d80960() {
+v0 = (void *)&DAT_1192f164;
+m8.vptr = (void *)&DAT_1192f1ac;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10d80ab0; body size 260 bytes.
+#line 1 "ENTRY_10d80ab0"
+NativeOpDtor_FUN_10d80ab0::~NativeOpDtor_FUN_10d80ab0() {
+v0 = (void *)&DAT_1192f2dc;
+m8.vptr = (void *)&DAT_1192f324;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10d9b8e0; body size 260 bytes.
+#line 1 "ENTRY_10d9b8e0"
+NativeOpDtor_FUN_10d9b8e0::~NativeOpDtor_FUN_10d9b8e0() {
+v0 = (void *)&DAT_119319d0;
+m8.vptr = (void *)&DAT_11931a18;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10de4fe0; body size 260 bytes.
+#line 1 "ENTRY_10de4fe0"
+NativeOpDtor_FUN_10de4fe0::~NativeOpDtor_FUN_10de4fe0() {
+v0 = (void *)&DAT_11935fbc;
+m8.vptr = (void *)&DAT_11936014;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10e92f40; body size 260 bytes.
+#line 1 "ENTRY_10e92f40"
+NativeOpDtor_FUN_10e92f40::~NativeOpDtor_FUN_10e92f40() {
+v0 = (void *)&DAT_119468ac;
+m8.vptr = (void *)&DAT_119468f8;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10ef1910; body size 260 bytes.
+#line 1 "ENTRY_10ef1910"
+NativeOpDtor_FUN_10ef1910::~NativeOpDtor_FUN_10ef1910() {
+v0 = (void *)&DAT_1194b774;
+m8.vptr = (void *)&DAT_1194b7bc;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10f0ef30; body size 260 bytes.
+#line 1 "ENTRY_10f0ef30"
+NativeOpDtor_FUN_10f0ef30::~NativeOpDtor_FUN_10f0ef30() {
+v0 = (void *)&DAT_1194ce28;
+m8.vptr = (void *)&DAT_1194ce88;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10f0f080; body size 260 bytes.
+#line 1 "ENTRY_10f0f080"
+NativeOpDtor_FUN_10f0f080::~NativeOpDtor_FUN_10f0f080() {
+v0 = (void *)&DAT_1194cc50;
+m8.vptr = (void *)&DAT_1194ccb0;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10f0f1d0; body size 260 bytes.
+#line 1 "ENTRY_10f0f1d0"
+NativeOpDtor_FUN_10f0f1d0::~NativeOpDtor_FUN_10f0f1d0() {
+v0 = (void *)&DAT_1194cd3c;
+m8.vptr = (void *)&DAT_1194cd9c;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10f259f0; body size 260 bytes.
+#line 1 "ENTRY_10f259f0"
+NativeOpDtor_FUN_10f259f0::~NativeOpDtor_FUN_10f259f0() {
+v0 = (void *)&DAT_1194e61c;
+m8.vptr = (void *)&DAT_1194e664;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10f31800; body size 260 bytes.
+#line 1 "ENTRY_10f31800"
+NativeOpDtor_FUN_10f31800::~NativeOpDtor_FUN_10f31800() {
+v0 = (void *)&DAT_1194f378;
+m8.vptr = (void *)&DAT_1194f3c0;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10f31950; body size 260 bytes.
+#line 1 "ENTRY_10f31950"
+NativeOpDtor_FUN_10f31950::~NativeOpDtor_FUN_10f31950() {
+v0 = (void *)&DAT_1194f2b8;
+m8.vptr = (void *)&DAT_1194f300;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10f31aa0; body size 260 bytes.
+#line 1 "ENTRY_10f31aa0"
+NativeOpDtor_FUN_10f31aa0::~NativeOpDtor_FUN_10f31aa0() {
+v0 = (void *)&DAT_1194f1f8;
+m8.vptr = (void *)&DAT_1194f240;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10f31bf0; body size 260 bytes.
+#line 1 "ENTRY_10f31bf0"
+NativeOpDtor_FUN_10f31bf0::~NativeOpDtor_FUN_10f31bf0() {
+v0 = (void *)&DAT_1194f138;
+m8.vptr = (void *)&DAT_1194f180;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10f570c0; body size 260 bytes.
+#line 1 "ENTRY_10f570c0"
+NativeOpDtor_FUN_10f570c0::~NativeOpDtor_FUN_10f570c0() {
+v0 = (void *)&DAT_11952090;
+m8.vptr = (void *)&DAT_119520dc;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10f57210; body size 260 bytes.
+#line 1 "ENTRY_10f57210"
+NativeOpDtor_FUN_10f57210::~NativeOpDtor_FUN_10f57210() {
+v0 = (void *)&DAT_11951f24;
+m8.vptr = (void *)&DAT_11951f6c;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10f57360; body size 260 bytes.
+#line 1 "ENTRY_10f57360"
+NativeOpDtor_FUN_10f57360::~NativeOpDtor_FUN_10f57360() {
+v0 = (void *)&DAT_119521fc;
+m8.vptr = (void *)&DAT_11952244;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10f574b0; body size 260 bytes.
+#line 1 "ENTRY_10f574b0"
+NativeOpDtor_FUN_10f574b0::~NativeOpDtor_FUN_10f574b0() {
+v0 = (void *)&DAT_11952380;
+m8.vptr = (void *)&DAT_119523d4;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10f65b40; body size 260 bytes.
+#line 1 "ENTRY_10f65b40"
+NativeOpDtor_FUN_10f65b40::~NativeOpDtor_FUN_10f65b40() {
+v0 = (void *)&DAT_1195278c;
+m8.vptr = (void *)&DAT_119527d8;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10f708b0; body size 260 bytes.
+#line 1 "ENTRY_10f708b0"
+NativeOpDtor_FUN_10f708b0::~NativeOpDtor_FUN_10f708b0() {
+v0 = (void *)&DAT_11952b1c;
+m8.vptr = (void *)&DAT_11952b64;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10f77a80; body size 260 bytes.
+#line 1 "ENTRY_10f77a80"
+NativeOpDtor_FUN_10f77a80::~NativeOpDtor_FUN_10f77a80() {
+v0 = (void *)&DAT_11953540;
+m8.vptr = (void *)&DAT_1195358c;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10f7d8c0; body size 260 bytes.
+#line 1 "ENTRY_10f7d8c0"
+NativeOpDtor_FUN_10f7d8c0::~NativeOpDtor_FUN_10f7d8c0() {
+v0 = (void *)&DAT_11953b34;
+m8.vptr = (void *)&DAT_11953b7c;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10f7da10; body size 260 bytes.
+#line 1 "ENTRY_10f7da10"
+NativeOpDtor_FUN_10f7da10::~NativeOpDtor_FUN_10f7da10() {
+v0 = (void *)&DAT_11953a78;
+m8.vptr = (void *)&DAT_11953ac0;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10f8b460; body size 260 bytes.
+#line 1 "ENTRY_10f8b460"
+NativeOpDtor_FUN_10f8b460::~NativeOpDtor_FUN_10f8b460() {
+v0 = (void *)&DAT_11954758;
+m8.vptr = (void *)&DAT_119547a0;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10f8b5b0; body size 260 bytes.
+#line 1 "ENTRY_10f8b5b0"
+NativeOpDtor_FUN_10f8b5b0::~NativeOpDtor_FUN_10f8b5b0() {
+v0 = (void *)&DAT_11954818;
+m8.vptr = (void *)&DAT_11954860;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 10f8b700; body size 260 bytes.
+#line 1 "ENTRY_10f8b700"
+NativeOpDtor_FUN_10f8b700::~NativeOpDtor_FUN_10f8b700() {
+v0 = (void *)&DAT_119548d8;
+m8.vptr = (void *)&DAT_11954920;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 11017ca0; body size 260 bytes.
+#line 1 "ENTRY_11017ca0"
+NativeOpDtor_FUN_11017ca0::~NativeOpDtor_FUN_11017ca0() {
+v0 = (void *)&DAT_119606b4;
+m8.vptr = (void *)&DAT_11960714;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 11026d20; body size 260 bytes.
+#line 1 "ENTRY_11026d20"
+NativeOpDtor_FUN_11026d20::~NativeOpDtor_FUN_11026d20() {
+v0 = (void *)&DAT_11963d10;
+m8.vptr = (void *)&DAT_11963d64;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 1105f600; body size 260 bytes.
+#line 1 "ENTRY_1105f600"
+NativeOpDtor_FUN_1105f600::~NativeOpDtor_FUN_1105f600() {
+v0 = (void *)&DAT_1196610c;
+m8.vptr = (void *)&DAT_11966160;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 11061920; body size 260 bytes.
+#line 1 "ENTRY_11061920"
+NativeOpDtor_FUN_11061920::~NativeOpDtor_FUN_11061920() {
+v0 = (void *)&DAT_119662b4;
+m8.vptr = (void *)&DAT_1196630c;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 11062550; body size 260 bytes.
+#line 1 "ENTRY_11062550"
+NativeOpDtor_FUN_11062550::~NativeOpDtor_FUN_11062550() {
+v0 = (void *)&DAT_11966428;
+m8.vptr = (void *)&DAT_11966474;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 11064c80; body size 260 bytes.
+#line 1 "ENTRY_11064c80"
+NativeOpDtor_FUN_11064c80::~NativeOpDtor_FUN_11064c80() {
+v0 = (void *)&DAT_11966528;
+m8.vptr = (void *)&DAT_11966570;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}
+
+// Reference entry 11067870; body size 260 bytes.
+#line 1 "ENTRY_11067870"
+NativeOpDtor_FUN_11067870::~NativeOpDtor_FUN_11067870() {
+v0 = (void *)&DAT_119668b8;
+m8.vptr = (void *)&DAT_11966914;
+if (fc.rep != 0) {
+  void *p = fc.next;
+  if (p != 0) { fc.rep = 0; fc.next = 0; ((NativeOpDtorIface *)p)->slot8(); }
+  fc.rep = 0; fc.next = 0;
+}
+v30 = (void *)&DAT_118820e4;
+g_lSCObjCount--;
+v30 = (void *)&DAT_1186d2f4;
+}

@@ -125,7 +125,7 @@ class OpImplCtorTests(unittest.TestCase):
                       source)
         self.assertIn('m8.vptr = (void *)&DAT_1188206c;', source)
         self.assertIn('v0 = (void *)&DAT_118c6304;', source)
-        self.assertIn('fc.rep = 0; f10 = 0;', source)
+        self.assertIn('fc.rep = 0; fc.next = 0;', source)
         self.assertIn('m14.f4 = param_2;', source)
         self.assertIn('thunk_FUN_1123fce0((char *)param_2 + 4);', source)
         self.assertIn('f24 = 1000;', source)

@@ -725,13 +725,13 @@ extern unsigned int DAT_11966980;
 extern unsigned int g_lSCObjCount;
 void __cdecl thunk_FUN_1123fce0(void *);
 struct NativeOpMember8 { void *vptr; void thunk_FUN_11240650(); ~NativeOpMember8(); __forceinline NativeOpMember8() { thunk_FUN_11240650(); } };
-struct NativeOpMemberC { void *rep; ~NativeOpMemberC(); __forceinline NativeOpMemberC() {} };
+struct NativeOpMemberC { void *rep; void *next; ~NativeOpMemberC(); __forceinline NativeOpMemberC() {} };
 struct NativeOpMember14 { void *vptr; void *f4; void *f8; ~NativeOpMember14(); __forceinline NativeOpMember14() {} };
 union NativeOpF38 { double d; struct { unsigned int lo; unsigned int hi; } w; };
 struct NativeOpImplBase_FUN_10687e80 { void *v0; void *f4; ~NativeOpImplBase_FUN_10687e80();
 __forceinline NativeOpImplBase_FUN_10687e80() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10687e80 : NativeOpImplBase_FUN_10687e80 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10687e80(void *param_2);
@@ -739,7 +739,7 @@ NativeOpImpl_FUN_10687e80(void *param_2);
 struct NativeOpImplBase_FUN_109f4aa0 { void *v0; void *f4; ~NativeOpImplBase_FUN_109f4aa0();
 __forceinline NativeOpImplBase_FUN_109f4aa0() { v0 = (void *)&DAT_118f1c90; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_109f4aa0 : NativeOpImplBase_FUN_109f4aa0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_109f4aa0(void *param_2);
@@ -747,7 +747,7 @@ NativeOpImpl_FUN_109f4aa0(void *param_2);
 struct NativeOpImplBase_FUN_109f4c00 { void *v0; void *f4; ~NativeOpImplBase_FUN_109f4c00();
 __forceinline NativeOpImplBase_FUN_109f4c00() { v0 = (void *)&DAT_118f19cc; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_109f4c00 : NativeOpImplBase_FUN_109f4c00 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_109f4c00(void *param_2);
@@ -755,7 +755,7 @@ NativeOpImpl_FUN_109f4c00(void *param_2);
 struct NativeOpImplBase_FUN_109f4d60 { void *v0; void *f4; ~NativeOpImplBase_FUN_109f4d60();
 __forceinline NativeOpImplBase_FUN_109f4d60() { v0 = (void *)&DAT_118f1df8; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_109f4d60 : NativeOpImplBase_FUN_109f4d60 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_109f4d60(void *param_2);
@@ -763,7 +763,7 @@ NativeOpImpl_FUN_109f4d60(void *param_2);
 struct NativeOpImplBase_FUN_109f4ec0 { void *v0; void *f4; ~NativeOpImplBase_FUN_109f4ec0();
 __forceinline NativeOpImplBase_FUN_109f4ec0() { v0 = (void *)&DAT_118f1b28; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_109f4ec0 : NativeOpImplBase_FUN_109f4ec0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_109f4ec0(void *param_2);
@@ -771,7 +771,7 @@ NativeOpImpl_FUN_109f4ec0(void *param_2);
 struct NativeOpImplBase_FUN_109f5470 { void *v0; void *f4; ~NativeOpImplBase_FUN_109f5470();
 __forceinline NativeOpImplBase_FUN_109f5470() { v0 = (void *)&DAT_118f1c90; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_109f5470 : NativeOpImplBase_FUN_109f5470 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_109f5470(void *param_2);
@@ -779,7 +779,7 @@ NativeOpImpl_FUN_109f5470(void *param_2);
 struct NativeOpImplBase_FUN_109f55e0 { void *v0; void *f4; ~NativeOpImplBase_FUN_109f55e0();
 __forceinline NativeOpImplBase_FUN_109f55e0() { v0 = (void *)&DAT_118f19cc; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_109f55e0 : NativeOpImplBase_FUN_109f55e0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_109f55e0(void *param_2);
@@ -787,7 +787,7 @@ NativeOpImpl_FUN_109f55e0(void *param_2);
 struct NativeOpImplBase_FUN_109f5750 { void *v0; void *f4; ~NativeOpImplBase_FUN_109f5750();
 __forceinline NativeOpImplBase_FUN_109f5750() { v0 = (void *)&DAT_118f1df8; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_109f5750 : NativeOpImplBase_FUN_109f5750 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_109f5750(void *param_2);
@@ -795,7 +795,7 @@ NativeOpImpl_FUN_109f5750(void *param_2);
 struct NativeOpImplBase_FUN_109f58c0 { void *v0; void *f4; ~NativeOpImplBase_FUN_109f58c0();
 __forceinline NativeOpImplBase_FUN_109f58c0() { v0 = (void *)&DAT_118f1b28; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_109f58c0 : NativeOpImplBase_FUN_109f58c0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_109f58c0(void *param_2);
@@ -803,7 +803,7 @@ NativeOpImpl_FUN_109f58c0(void *param_2);
 struct NativeOpImplBase_FUN_10b6cd30 { void *v0; void *f4; ~NativeOpImplBase_FUN_10b6cd30();
 __forceinline NativeOpImplBase_FUN_10b6cd30() { v0 = (void *)&DAT_1190a964; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10b6cd30 : NativeOpImplBase_FUN_10b6cd30 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10b6cd30(void *param_2);
@@ -811,7 +811,7 @@ NativeOpImpl_FUN_10b6cd30(void *param_2);
 struct NativeOpImplBase_FUN_10b6d0a0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10b6d0a0();
 __forceinline NativeOpImplBase_FUN_10b6d0a0() { v0 = (void *)&DAT_1190a964; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10b6d0a0 : NativeOpImplBase_FUN_10b6d0a0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10b6d0a0(void *param_2);
@@ -819,7 +819,7 @@ NativeOpImpl_FUN_10b6d0a0(void *param_2);
 struct NativeOpImplBase_FUN_10b7bf50 { void *v0; void *f4; ~NativeOpImplBase_FUN_10b7bf50();
 __forceinline NativeOpImplBase_FUN_10b7bf50() { v0 = (void *)&DAT_1190e198; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10b7bf50 : NativeOpImplBase_FUN_10b7bf50 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10b7bf50(void *param_2);
@@ -827,7 +827,7 @@ NativeOpImpl_FUN_10b7bf50(void *param_2);
 struct NativeOpImplBase_FUN_10b7c6a0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10b7c6a0();
 __forceinline NativeOpImplBase_FUN_10b7c6a0() { v0 = (void *)&DAT_1190e198; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10b7c6a0 : NativeOpImplBase_FUN_10b7c6a0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10b7c6a0(void *param_2);
@@ -835,7 +835,7 @@ NativeOpImpl_FUN_10b7c6a0(void *param_2);
 struct NativeOpImplBase_FUN_10c4a3b0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c4a3b0();
 __forceinline NativeOpImplBase_FUN_10c4a3b0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c4a3b0 : NativeOpImplBase_FUN_10c4a3b0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c4a3b0(void *param_2);
@@ -843,7 +843,7 @@ NativeOpImpl_FUN_10c4a3b0(void *param_2);
 struct NativeOpImplBase_FUN_10c4de80 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c4de80();
 __forceinline NativeOpImplBase_FUN_10c4de80() { v0 = (void *)&DAT_11917548; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c4de80 : NativeOpImplBase_FUN_10c4de80 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c4de80(void *param_2);
@@ -851,7 +851,7 @@ NativeOpImpl_FUN_10c4de80(void *param_2);
 struct NativeOpImplBase_FUN_10c4dfe0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c4dfe0();
 __forceinline NativeOpImplBase_FUN_10c4dfe0() { v0 = (void *)&DAT_11917650; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c4dfe0 : NativeOpImplBase_FUN_10c4dfe0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c4dfe0(void *param_2);
@@ -859,7 +859,7 @@ NativeOpImpl_FUN_10c4dfe0(void *param_2);
 struct NativeOpImplBase_FUN_10c4e140 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c4e140();
 __forceinline NativeOpImplBase_FUN_10c4e140() { v0 = (void *)&DAT_11917758; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c4e140 : NativeOpImplBase_FUN_10c4e140 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c4e140(void *param_2);
@@ -867,7 +867,7 @@ NativeOpImpl_FUN_10c4e140(void *param_2);
 struct NativeOpImplBase_FUN_10c4e2a0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c4e2a0();
 __forceinline NativeOpImplBase_FUN_10c4e2a0() { v0 = (void *)&DAT_119179c4; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c4e2a0 : NativeOpImplBase_FUN_10c4e2a0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c4e2a0(void *param_2);
@@ -875,7 +875,7 @@ NativeOpImpl_FUN_10c4e2a0(void *param_2);
 struct NativeOpImplBase_FUN_10c4e400 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c4e400();
 __forceinline NativeOpImplBase_FUN_10c4e400() { v0 = (void *)&DAT_119178d4; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c4e400 : NativeOpImplBase_FUN_10c4e400 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c4e400(void *param_2);
@@ -883,7 +883,7 @@ NativeOpImpl_FUN_10c4e400(void *param_2);
 struct NativeOpImplBase_FUN_10c4eb20 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c4eb20();
 __forceinline NativeOpImplBase_FUN_10c4eb20() { v0 = (void *)&DAT_11917548; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c4eb20 : NativeOpImplBase_FUN_10c4eb20 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c4eb20(void *param_2);
@@ -891,7 +891,7 @@ NativeOpImpl_FUN_10c4eb20(void *param_2);
 struct NativeOpImplBase_FUN_10c4ec90 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c4ec90();
 __forceinline NativeOpImplBase_FUN_10c4ec90() { v0 = (void *)&DAT_11917650; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c4ec90 : NativeOpImplBase_FUN_10c4ec90 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c4ec90(void *param_2);
@@ -899,7 +899,7 @@ NativeOpImpl_FUN_10c4ec90(void *param_2);
 struct NativeOpImplBase_FUN_10c4ee00 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c4ee00();
 __forceinline NativeOpImplBase_FUN_10c4ee00() { v0 = (void *)&DAT_11917758; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c4ee00 : NativeOpImplBase_FUN_10c4ee00 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c4ee00(void *param_2);
@@ -907,7 +907,7 @@ NativeOpImpl_FUN_10c4ee00(void *param_2);
 struct NativeOpImplBase_FUN_10c4ef70 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c4ef70();
 __forceinline NativeOpImplBase_FUN_10c4ef70() { v0 = (void *)&DAT_119179c4; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c4ef70 : NativeOpImplBase_FUN_10c4ef70 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c4ef70(void *param_2);
@@ -915,7 +915,7 @@ NativeOpImpl_FUN_10c4ef70(void *param_2);
 struct NativeOpImplBase_FUN_10c4f0e0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c4f0e0();
 __forceinline NativeOpImplBase_FUN_10c4f0e0() { v0 = (void *)&DAT_119178d4; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c4f0e0 : NativeOpImplBase_FUN_10c4f0e0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c4f0e0(void *param_2);
@@ -923,7 +923,7 @@ NativeOpImpl_FUN_10c4f0e0(void *param_2);
 struct NativeOpImplBase_FUN_10c54630 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c54630();
 __forceinline NativeOpImplBase_FUN_10c54630() { v0 = (void *)&DAT_11917f9c; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c54630 : NativeOpImplBase_FUN_10c54630 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c54630(void *param_2);
@@ -931,7 +931,7 @@ NativeOpImpl_FUN_10c54630(void *param_2);
 struct NativeOpImplBase_FUN_10c54790 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c54790();
 __forceinline NativeOpImplBase_FUN_10c54790() { v0 = (void *)&DAT_11918208; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c54790 : NativeOpImplBase_FUN_10c54790 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c54790(void *param_2);
@@ -939,7 +939,7 @@ NativeOpImpl_FUN_10c54790(void *param_2);
 struct NativeOpImplBase_FUN_10c548f0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c548f0();
 __forceinline NativeOpImplBase_FUN_10c548f0() { v0 = (void *)&DAT_11917eac; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c548f0 : NativeOpImplBase_FUN_10c548f0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c548f0(void *param_2);
@@ -947,7 +947,7 @@ NativeOpImpl_FUN_10c548f0(void *param_2);
 struct NativeOpImplBase_FUN_10c54a50 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c54a50();
 __forceinline NativeOpImplBase_FUN_10c54a50() { v0 = (void *)&DAT_11918118; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c54a50 : NativeOpImplBase_FUN_10c54a50 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c54a50(void *param_2);
@@ -955,7 +955,7 @@ NativeOpImpl_FUN_10c54a50(void *param_2);
 struct NativeOpImplBase_FUN_10c54f40 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c54f40();
 __forceinline NativeOpImplBase_FUN_10c54f40() { v0 = (void *)&DAT_11917f9c; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c54f40 : NativeOpImplBase_FUN_10c54f40 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c54f40(void *param_2);
@@ -963,7 +963,7 @@ NativeOpImpl_FUN_10c54f40(void *param_2);
 struct NativeOpImplBase_FUN_10c550b0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c550b0();
 __forceinline NativeOpImplBase_FUN_10c550b0() { v0 = (void *)&DAT_11918208; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c550b0 : NativeOpImplBase_FUN_10c550b0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c550b0(void *param_2);
@@ -971,7 +971,7 @@ NativeOpImpl_FUN_10c550b0(void *param_2);
 struct NativeOpImplBase_FUN_10c55220 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c55220();
 __forceinline NativeOpImplBase_FUN_10c55220() { v0 = (void *)&DAT_11917eac; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c55220 : NativeOpImplBase_FUN_10c55220 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c55220(void *param_2);
@@ -979,7 +979,7 @@ NativeOpImpl_FUN_10c55220(void *param_2);
 struct NativeOpImplBase_FUN_10c55390 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c55390();
 __forceinline NativeOpImplBase_FUN_10c55390() { v0 = (void *)&DAT_11918118; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c55390 : NativeOpImplBase_FUN_10c55390 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c55390(void *param_2);
@@ -987,7 +987,7 @@ NativeOpImpl_FUN_10c55390(void *param_2);
 struct NativeOpImplBase_FUN_10c59210 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c59210();
 __forceinline NativeOpImplBase_FUN_10c59210() { v0 = (void *)&DAT_11918528; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c59210 : NativeOpImplBase_FUN_10c59210 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c59210(void *param_2);
@@ -995,7 +995,7 @@ NativeOpImpl_FUN_10c59210(void *param_2);
 struct NativeOpImplBase_FUN_10c59500 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c59500();
 __forceinline NativeOpImplBase_FUN_10c59500() { v0 = (void *)&DAT_11918528; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c59500 : NativeOpImplBase_FUN_10c59500 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c59500(void *param_2);
@@ -1003,7 +1003,7 @@ NativeOpImpl_FUN_10c59500(void *param_2);
 struct NativeOpImplBase_FUN_10c803a0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c803a0();
 __forceinline NativeOpImplBase_FUN_10c803a0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c803a0 : NativeOpImplBase_FUN_10c803a0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c803a0(void *param_2);
@@ -1011,7 +1011,7 @@ NativeOpImpl_FUN_10c803a0(void *param_2);
 struct NativeOpImplBase_FUN_10c80500 { void *v0; void *f4; ~NativeOpImplBase_FUN_10c80500();
 __forceinline NativeOpImplBase_FUN_10c80500() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10c80500 : NativeOpImplBase_FUN_10c80500 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10c80500(void *param_2);
@@ -1019,7 +1019,7 @@ NativeOpImpl_FUN_10c80500(void *param_2);
 struct NativeOpImplBase_FUN_10cc0b70 { void *v0; void *f4; ~NativeOpImplBase_FUN_10cc0b70();
 __forceinline NativeOpImplBase_FUN_10cc0b70() { v0 = (void *)&DAT_1191ed54; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10cc0b70 : NativeOpImplBase_FUN_10cc0b70 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10cc0b70(void *param_2);
@@ -1027,7 +1027,7 @@ NativeOpImpl_FUN_10cc0b70(void *param_2);
 struct NativeOpImplBase_FUN_10cc0ff0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10cc0ff0();
 __forceinline NativeOpImplBase_FUN_10cc0ff0() { v0 = (void *)&DAT_1191ed54; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10cc0ff0 : NativeOpImplBase_FUN_10cc0ff0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10cc0ff0(void *param_2);
@@ -1035,7 +1035,7 @@ NativeOpImpl_FUN_10cc0ff0(void *param_2);
 struct NativeOpImplBase_FUN_10cc6100 { void *v0; void *f4; ~NativeOpImplBase_FUN_10cc6100();
 __forceinline NativeOpImplBase_FUN_10cc6100() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10cc6100 : NativeOpImplBase_FUN_10cc6100 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10cc6100(void *param_2);
@@ -1043,7 +1043,7 @@ NativeOpImpl_FUN_10cc6100(void *param_2);
 struct NativeOpImplBase_FUN_10cc6260 { void *v0; void *f4; ~NativeOpImplBase_FUN_10cc6260();
 __forceinline NativeOpImplBase_FUN_10cc6260() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10cc6260 : NativeOpImplBase_FUN_10cc6260 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10cc6260(void *param_2);
@@ -1051,7 +1051,7 @@ NativeOpImpl_FUN_10cc6260(void *param_2);
 struct NativeOpImplBase_FUN_10cc63c0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10cc63c0();
 __forceinline NativeOpImplBase_FUN_10cc63c0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10cc63c0 : NativeOpImplBase_FUN_10cc63c0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10cc63c0(void *param_2);
@@ -1059,7 +1059,7 @@ NativeOpImpl_FUN_10cc63c0(void *param_2);
 struct NativeOpImplBase_FUN_10cc6520 { void *v0; void *f4; ~NativeOpImplBase_FUN_10cc6520();
 __forceinline NativeOpImplBase_FUN_10cc6520() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10cc6520 : NativeOpImplBase_FUN_10cc6520 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10cc6520(void *param_2);
@@ -1067,7 +1067,7 @@ NativeOpImpl_FUN_10cc6520(void *param_2);
 struct NativeOpImplBase_FUN_10cc6680 { void *v0; void *f4; ~NativeOpImplBase_FUN_10cc6680();
 __forceinline NativeOpImplBase_FUN_10cc6680() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10cc6680 : NativeOpImplBase_FUN_10cc6680 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10cc6680(void *param_2);
@@ -1075,7 +1075,7 @@ NativeOpImpl_FUN_10cc6680(void *param_2);
 struct NativeOpImplBase_FUN_10cc67e0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10cc67e0();
 __forceinline NativeOpImplBase_FUN_10cc67e0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10cc67e0 : NativeOpImplBase_FUN_10cc67e0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10cc67e0(void *param_2);
@@ -1083,7 +1083,7 @@ NativeOpImpl_FUN_10cc67e0(void *param_2);
 struct NativeOpImplBase_FUN_10cc6940 { void *v0; void *f4; ~NativeOpImplBase_FUN_10cc6940();
 __forceinline NativeOpImplBase_FUN_10cc6940() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10cc6940 : NativeOpImplBase_FUN_10cc6940 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10cc6940(void *param_2);
@@ -1091,7 +1091,7 @@ NativeOpImpl_FUN_10cc6940(void *param_2);
 struct NativeOpImplBase_FUN_10cc6aa0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10cc6aa0();
 __forceinline NativeOpImplBase_FUN_10cc6aa0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10cc6aa0 : NativeOpImplBase_FUN_10cc6aa0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10cc6aa0(void *param_2);
@@ -1099,7 +1099,7 @@ NativeOpImpl_FUN_10cc6aa0(void *param_2);
 struct NativeOpImplBase_FUN_10cc6c00 { void *v0; void *f4; ~NativeOpImplBase_FUN_10cc6c00();
 __forceinline NativeOpImplBase_FUN_10cc6c00() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10cc6c00 : NativeOpImplBase_FUN_10cc6c00 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10cc6c00(void *param_2);
@@ -1107,7 +1107,7 @@ NativeOpImpl_FUN_10cc6c00(void *param_2);
 struct NativeOpImplBase_FUN_10cc88e0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10cc88e0();
 __forceinline NativeOpImplBase_FUN_10cc88e0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10cc88e0 : NativeOpImplBase_FUN_10cc88e0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10cc88e0(void *param_2);
@@ -1115,7 +1115,7 @@ NativeOpImpl_FUN_10cc88e0(void *param_2);
 struct NativeOpImplBase_FUN_10cdaeb0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10cdaeb0();
 __forceinline NativeOpImplBase_FUN_10cdaeb0() { v0 = (void *)&DAT_11920b34; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10cdaeb0 : NativeOpImplBase_FUN_10cdaeb0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10cdaeb0(void *param_2);
@@ -1123,7 +1123,7 @@ NativeOpImpl_FUN_10cdaeb0(void *param_2);
 struct NativeOpImplBase_FUN_10cdb010 { void *v0; void *f4; ~NativeOpImplBase_FUN_10cdb010();
 __forceinline NativeOpImplBase_FUN_10cdb010() { v0 = (void *)&DAT_119209c4; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10cdb010 : NativeOpImplBase_FUN_10cdb010 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10cdb010(void *param_2);
@@ -1131,7 +1131,7 @@ NativeOpImpl_FUN_10cdb010(void *param_2);
 struct NativeOpImplBase_FUN_10cdb820 { void *v0; void *f4; ~NativeOpImplBase_FUN_10cdb820();
 __forceinline NativeOpImplBase_FUN_10cdb820() { v0 = (void *)&DAT_11920b34; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10cdb820 : NativeOpImplBase_FUN_10cdb820 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10cdb820(void *param_2);
@@ -1139,7 +1139,7 @@ NativeOpImpl_FUN_10cdb820(void *param_2);
 struct NativeOpImplBase_FUN_10cdb990 { void *v0; void *f4; ~NativeOpImplBase_FUN_10cdb990();
 __forceinline NativeOpImplBase_FUN_10cdb990() { v0 = (void *)&DAT_119209c4; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10cdb990 : NativeOpImplBase_FUN_10cdb990 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10cdb990(void *param_2);
@@ -1147,7 +1147,7 @@ NativeOpImpl_FUN_10cdb990(void *param_2);
 struct NativeOpImplBase_FUN_10ce0c30 { void *v0; void *f4; ~NativeOpImplBase_FUN_10ce0c30();
 __forceinline NativeOpImplBase_FUN_10ce0c30() { v0 = (void *)&DAT_11921188; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10ce0c30 : NativeOpImplBase_FUN_10ce0c30 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10ce0c30(void *param_2);
@@ -1155,7 +1155,7 @@ NativeOpImpl_FUN_10ce0c30(void *param_2);
 struct NativeOpImplBase_FUN_10ce0f40 { void *v0; void *f4; ~NativeOpImplBase_FUN_10ce0f40();
 __forceinline NativeOpImplBase_FUN_10ce0f40() { v0 = (void *)&DAT_11921188; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10ce0f40 : NativeOpImplBase_FUN_10ce0f40 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10ce0f40(void *param_2);
@@ -1163,7 +1163,7 @@ NativeOpImpl_FUN_10ce0f40(void *param_2);
 struct NativeOpImplBase_FUN_10cf54b0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10cf54b0();
 __forceinline NativeOpImplBase_FUN_10cf54b0() { v0 = (void *)&DAT_119226fc; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10cf54b0 : NativeOpImplBase_FUN_10cf54b0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10cf54b0(void *param_2);
@@ -1171,7 +1171,7 @@ NativeOpImpl_FUN_10cf54b0(void *param_2);
 struct NativeOpImplBase_FUN_10d7c4d0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10d7c4d0();
 __forceinline NativeOpImplBase_FUN_10d7c4d0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10d7c4d0 : NativeOpImplBase_FUN_10d7c4d0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10d7c4d0(void *param_2);
@@ -1179,7 +1179,7 @@ NativeOpImpl_FUN_10d7c4d0(void *param_2);
 struct NativeOpImplBase_FUN_10d7c630 { void *v0; void *f4; ~NativeOpImplBase_FUN_10d7c630();
 __forceinline NativeOpImplBase_FUN_10d7c630() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10d7c630 : NativeOpImplBase_FUN_10d7c630 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10d7c630(void *param_2);
@@ -1187,7 +1187,7 @@ NativeOpImpl_FUN_10d7c630(void *param_2);
 struct NativeOpImplBase_FUN_10d7c790 { void *v0; void *f4; ~NativeOpImplBase_FUN_10d7c790();
 __forceinline NativeOpImplBase_FUN_10d7c790() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10d7c790 : NativeOpImplBase_FUN_10d7c790 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10d7c790(void *param_2);
@@ -1195,7 +1195,7 @@ NativeOpImpl_FUN_10d7c790(void *param_2);
 struct NativeOpImplBase_FUN_10d7c8f0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10d7c8f0();
 __forceinline NativeOpImplBase_FUN_10d7c8f0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10d7c8f0 : NativeOpImplBase_FUN_10d7c8f0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10d7c8f0(void *param_2);
@@ -1203,7 +1203,7 @@ NativeOpImpl_FUN_10d7c8f0(void *param_2);
 struct NativeOpImplBase_FUN_10d9ab50 { void *v0; void *f4; ~NativeOpImplBase_FUN_10d9ab50();
 __forceinline NativeOpImplBase_FUN_10d9ab50() { v0 = (void *)&DAT_11931990; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10d9ab50 : NativeOpImplBase_FUN_10d9ab50 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10d9ab50(void *param_2);
@@ -1211,7 +1211,7 @@ NativeOpImpl_FUN_10d9ab50(void *param_2);
 struct NativeOpImplBase_FUN_10d9b0a0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10d9b0a0();
 __forceinline NativeOpImplBase_FUN_10d9b0a0() { v0 = (void *)&DAT_11931990; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10d9b0a0 : NativeOpImplBase_FUN_10d9b0a0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10d9b0a0(void *param_2);
@@ -1219,7 +1219,7 @@ NativeOpImpl_FUN_10d9b0a0(void *param_2);
 struct NativeOpImplBase_FUN_10de4720 { void *v0; void *f4; ~NativeOpImplBase_FUN_10de4720();
 __forceinline NativeOpImplBase_FUN_10de4720() { v0 = (void *)&DAT_11935f64; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10de4720 : NativeOpImplBase_FUN_10de4720 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10de4720(void *param_2);
@@ -1227,7 +1227,7 @@ NativeOpImpl_FUN_10de4720(void *param_2);
 struct NativeOpImplBase_FUN_10de4d40 { void *v0; void *f4; ~NativeOpImplBase_FUN_10de4d40();
 __forceinline NativeOpImplBase_FUN_10de4d40() { v0 = (void *)&DAT_11935f64; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10de4d40 : NativeOpImplBase_FUN_10de4d40 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10de4d40(void *param_2);
@@ -1235,7 +1235,7 @@ NativeOpImpl_FUN_10de4d40(void *param_2);
 struct NativeOpImplBase_FUN_10e8b520 { void *v0; void *f4; ~NativeOpImplBase_FUN_10e8b520();
 __forceinline NativeOpImplBase_FUN_10e8b520() { v0 = (void *)&DAT_1194685c; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10e8b520 : NativeOpImplBase_FUN_10e8b520 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10e8b520(void *param_2);
@@ -1243,7 +1243,7 @@ NativeOpImpl_FUN_10e8b520(void *param_2);
 struct NativeOpImplBase_FUN_10e8f200 { void *v0; void *f4; ~NativeOpImplBase_FUN_10e8f200();
 __forceinline NativeOpImplBase_FUN_10e8f200() { v0 = (void *)&DAT_1194685c; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10e8f200 : NativeOpImplBase_FUN_10e8f200 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10e8f200(void *param_2);
@@ -1251,7 +1251,7 @@ NativeOpImpl_FUN_10e8f200(void *param_2);
 struct NativeOpImplBase_FUN_10ef1290 { void *v0; void *f4; ~NativeOpImplBase_FUN_10ef1290();
 __forceinline NativeOpImplBase_FUN_10ef1290() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10ef1290 : NativeOpImplBase_FUN_10ef1290 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10ef1290(void *param_2);
@@ -1259,7 +1259,7 @@ NativeOpImpl_FUN_10ef1290(void *param_2);
 struct NativeOpImplBase_FUN_10f0d720 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f0d720();
 __forceinline NativeOpImplBase_FUN_10f0d720() { v0 = (void *)&DAT_1194cbec; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f0d720 : NativeOpImplBase_FUN_10f0d720 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f0d720(void *param_2);
@@ -1267,7 +1267,7 @@ NativeOpImpl_FUN_10f0d720(void *param_2);
 struct NativeOpImplBase_FUN_10f0d880 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f0d880();
 __forceinline NativeOpImplBase_FUN_10f0d880() { v0 = (void *)&DAT_1194cbec; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f0d880 : NativeOpImplBase_FUN_10f0d880 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f0d880(void *param_2);
@@ -1275,7 +1275,7 @@ NativeOpImpl_FUN_10f0d880(void *param_2);
 struct NativeOpImplBase_FUN_10f0d9e0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f0d9e0();
 __forceinline NativeOpImplBase_FUN_10f0d9e0() { v0 = (void *)&DAT_1194cbec; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f0d9e0 : NativeOpImplBase_FUN_10f0d9e0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f0d9e0(void *param_2);
@@ -1283,7 +1283,7 @@ NativeOpImpl_FUN_10f0d9e0(void *param_2);
 struct NativeOpImplBase_FUN_10f24730 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f24730();
 __forceinline NativeOpImplBase_FUN_10f24730() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f24730 : NativeOpImplBase_FUN_10f24730 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f24730(void *param_2);
@@ -1291,7 +1291,7 @@ NativeOpImpl_FUN_10f24730(void *param_2);
 struct NativeOpImplBase_FUN_10f2f9b0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f2f9b0();
 __forceinline NativeOpImplBase_FUN_10f2f9b0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f2f9b0 : NativeOpImplBase_FUN_10f2f9b0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f2f9b0(void *param_2);
@@ -1299,7 +1299,7 @@ NativeOpImpl_FUN_10f2f9b0(void *param_2);
 struct NativeOpImplBase_FUN_10f2fb10 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f2fb10();
 __forceinline NativeOpImplBase_FUN_10f2fb10() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f2fb10 : NativeOpImplBase_FUN_10f2fb10 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f2fb10(void *param_2);
@@ -1307,7 +1307,7 @@ NativeOpImpl_FUN_10f2fb10(void *param_2);
 struct NativeOpImplBase_FUN_10f2fc70 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f2fc70();
 __forceinline NativeOpImplBase_FUN_10f2fc70() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f2fc70 : NativeOpImplBase_FUN_10f2fc70 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f2fc70(void *param_2);
@@ -1315,7 +1315,7 @@ NativeOpImpl_FUN_10f2fc70(void *param_2);
 struct NativeOpImplBase_FUN_10f2fdd0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f2fdd0();
 __forceinline NativeOpImplBase_FUN_10f2fdd0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f2fdd0 : NativeOpImplBase_FUN_10f2fdd0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f2fdd0(void *param_2);
@@ -1323,7 +1323,7 @@ NativeOpImpl_FUN_10f2fdd0(void *param_2);
 struct NativeOpImplBase_FUN_10f55c60 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f55c60();
 __forceinline NativeOpImplBase_FUN_10f55c60() { v0 = (void *)&DAT_11952040; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f55c60 : NativeOpImplBase_FUN_10f55c60 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f55c60(void *param_2);
@@ -1331,7 +1331,7 @@ NativeOpImpl_FUN_10f55c60(void *param_2);
 struct NativeOpImplBase_FUN_10f55dc0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f55dc0();
 __forceinline NativeOpImplBase_FUN_10f55dc0() { v0 = (void *)&DAT_11951ed8; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f55dc0 : NativeOpImplBase_FUN_10f55dc0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f55dc0(void *param_2);
@@ -1339,7 +1339,7 @@ NativeOpImpl_FUN_10f55dc0(void *param_2);
 struct NativeOpImplBase_FUN_10f55f20 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f55f20();
 __forceinline NativeOpImplBase_FUN_10f55f20() { v0 = (void *)&DAT_119521b0; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f55f20 : NativeOpImplBase_FUN_10f55f20 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f55f20(void *param_2);
@@ -1347,7 +1347,7 @@ NativeOpImpl_FUN_10f55f20(void *param_2);
 struct NativeOpImplBase_FUN_10f56080 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f56080();
 __forceinline NativeOpImplBase_FUN_10f56080() { v0 = (void *)&DAT_1195232c; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f56080 : NativeOpImplBase_FUN_10f56080 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f56080(void *param_2);
@@ -1355,7 +1355,7 @@ NativeOpImpl_FUN_10f56080(void *param_2);
 struct NativeOpImplBase_FUN_10f56480 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f56480();
 __forceinline NativeOpImplBase_FUN_10f56480() { v0 = (void *)&DAT_11952040; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f56480 : NativeOpImplBase_FUN_10f56480 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f56480(void *param_2);
@@ -1363,7 +1363,7 @@ NativeOpImpl_FUN_10f56480(void *param_2);
 struct NativeOpImplBase_FUN_10f565f0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f565f0();
 __forceinline NativeOpImplBase_FUN_10f565f0() { v0 = (void *)&DAT_11951ed8; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f565f0 : NativeOpImplBase_FUN_10f565f0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f565f0(void *param_2);
@@ -1371,7 +1371,7 @@ NativeOpImpl_FUN_10f565f0(void *param_2);
 struct NativeOpImplBase_FUN_10f56760 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f56760();
 __forceinline NativeOpImplBase_FUN_10f56760() { v0 = (void *)&DAT_119521b0; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f56760 : NativeOpImplBase_FUN_10f56760 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f56760(void *param_2);
@@ -1379,7 +1379,7 @@ NativeOpImpl_FUN_10f56760(void *param_2);
 struct NativeOpImplBase_FUN_10f568d0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f568d0();
 __forceinline NativeOpImplBase_FUN_10f568d0() { v0 = (void *)&DAT_1195232c; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f568d0 : NativeOpImplBase_FUN_10f568d0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f568d0(void *param_2);
@@ -1387,7 +1387,7 @@ NativeOpImpl_FUN_10f568d0(void *param_2);
 struct NativeOpImplBase_FUN_10f64e00 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f64e00();
 __forceinline NativeOpImplBase_FUN_10f64e00() { v0 = (void *)&DAT_1195273c; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f64e00 : NativeOpImplBase_FUN_10f64e00 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f64e00(void *param_2);
@@ -1395,7 +1395,7 @@ NativeOpImpl_FUN_10f64e00(void *param_2);
 struct NativeOpImplBase_FUN_10f65290 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f65290();
 __forceinline NativeOpImplBase_FUN_10f65290() { v0 = (void *)&DAT_1195273c; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f65290 : NativeOpImplBase_FUN_10f65290 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f65290(void *param_2);
@@ -1403,7 +1403,7 @@ NativeOpImpl_FUN_10f65290(void *param_2);
 struct NativeOpImplBase_FUN_10f6fb30 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f6fb30();
 __forceinline NativeOpImplBase_FUN_10f6fb30() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f6fb30 : NativeOpImplBase_FUN_10f6fb30 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f6fb30(void *param_2);
@@ -1411,7 +1411,7 @@ NativeOpImpl_FUN_10f6fb30(void *param_2);
 struct NativeOpImplBase_FUN_10f77460 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f77460();
 __forceinline NativeOpImplBase_FUN_10f77460() { v0 = (void *)&DAT_119534fc; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f77460 : NativeOpImplBase_FUN_10f77460 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f77460(void *param_2);
@@ -1419,7 +1419,7 @@ NativeOpImpl_FUN_10f77460(void *param_2);
 struct NativeOpImplBase_FUN_10f7c3e0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f7c3e0();
 __forceinline NativeOpImplBase_FUN_10f7c3e0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f7c3e0 : NativeOpImplBase_FUN_10f7c3e0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f7c3e0(void *param_2);
@@ -1427,7 +1427,7 @@ NativeOpImpl_FUN_10f7c3e0(void *param_2);
 struct NativeOpImplBase_FUN_10f7c540 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f7c540();
 __forceinline NativeOpImplBase_FUN_10f7c540() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f7c540 : NativeOpImplBase_FUN_10f7c540 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f7c540(void *param_2);
@@ -1435,7 +1435,7 @@ NativeOpImpl_FUN_10f7c540(void *param_2);
 struct NativeOpImplBase_FUN_10f8a230 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f8a230();
 __forceinline NativeOpImplBase_FUN_10f8a230() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f8a230 : NativeOpImplBase_FUN_10f8a230 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f8a230(void *param_2);
@@ -1443,7 +1443,7 @@ NativeOpImpl_FUN_10f8a230(void *param_2);
 struct NativeOpImplBase_FUN_10f8a390 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f8a390();
 __forceinline NativeOpImplBase_FUN_10f8a390() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f8a390 : NativeOpImplBase_FUN_10f8a390 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f8a390(void *param_2);
@@ -1451,7 +1451,7 @@ NativeOpImpl_FUN_10f8a390(void *param_2);
 struct NativeOpImplBase_FUN_10f8a4f0 { void *v0; void *f4; ~NativeOpImplBase_FUN_10f8a4f0();
 __forceinline NativeOpImplBase_FUN_10f8a4f0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_10f8a4f0 : NativeOpImplBase_FUN_10f8a4f0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_10f8a4f0(void *param_2);
@@ -1459,7 +1459,7 @@ NativeOpImpl_FUN_10f8a4f0(void *param_2);
 struct NativeOpImplBase_FUN_11017960 { void *v0; void *f4; ~NativeOpImplBase_FUN_11017960();
 __forceinline NativeOpImplBase_FUN_11017960() { v0 = (void *)&DAT_11960650; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_11017960 : NativeOpImplBase_FUN_11017960 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_11017960(void *param_2);
@@ -1467,7 +1467,7 @@ NativeOpImpl_FUN_11017960(void *param_2);
 struct NativeOpImplBase_FUN_11025ee0 { void *v0; void *f4; ~NativeOpImplBase_FUN_11025ee0();
 __forceinline NativeOpImplBase_FUN_11025ee0() { v0 = (void *)&DAT_11963cc8; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_11025ee0 : NativeOpImplBase_FUN_11025ee0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_11025ee0(void *param_2);
@@ -1475,7 +1475,7 @@ NativeOpImpl_FUN_11025ee0(void *param_2);
 struct NativeOpImplBase_FUN_110267e0 { void *v0; void *f4; ~NativeOpImplBase_FUN_110267e0();
 __forceinline NativeOpImplBase_FUN_110267e0() { v0 = (void *)&DAT_11963cc8; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_110267e0 : NativeOpImplBase_FUN_110267e0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_110267e0(void *param_2);
@@ -1483,7 +1483,7 @@ NativeOpImpl_FUN_110267e0(void *param_2);
 struct NativeOpImplBase_FUN_1105f250 { void *v0; void *f4; ~NativeOpImplBase_FUN_1105f250();
 __forceinline NativeOpImplBase_FUN_1105f250() { v0 = (void *)&DAT_119660b8; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_1105f250 : NativeOpImplBase_FUN_1105f250 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_1105f250(void *param_2);
@@ -1491,7 +1491,7 @@ NativeOpImpl_FUN_1105f250(void *param_2);
 struct NativeOpImplBase_FUN_1105f460 { void *v0; void *f4; ~NativeOpImplBase_FUN_1105f460();
 __forceinline NativeOpImplBase_FUN_1105f460() { v0 = (void *)&DAT_119660b8; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_1105f460 : NativeOpImplBase_FUN_1105f460 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_1105f460(void *param_2);
@@ -1499,7 +1499,7 @@ NativeOpImpl_FUN_1105f460(void *param_2);
 struct NativeOpImplBase_FUN_110615e0 { void *v0; void *f4; ~NativeOpImplBase_FUN_110615e0();
 __forceinline NativeOpImplBase_FUN_110615e0() { v0 = (void *)&DAT_11966268; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_110615e0 : NativeOpImplBase_FUN_110615e0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_110615e0(void *param_2);
@@ -1507,7 +1507,7 @@ NativeOpImpl_FUN_110615e0(void *param_2);
 struct NativeOpImplBase_FUN_11061790 { void *v0; void *f4; ~NativeOpImplBase_FUN_11061790();
 __forceinline NativeOpImplBase_FUN_11061790() { v0 = (void *)&DAT_11966268; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_11061790 : NativeOpImplBase_FUN_11061790 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_11061790(void *param_2);
@@ -1515,7 +1515,7 @@ NativeOpImpl_FUN_11061790(void *param_2);
 struct NativeOpImplBase_FUN_110621c0 { void *v0; void *f4; ~NativeOpImplBase_FUN_110621c0();
 __forceinline NativeOpImplBase_FUN_110621c0() { v0 = (void *)&DAT_119663e4; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_110621c0 : NativeOpImplBase_FUN_110621c0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_110621c0(void *param_2);
@@ -1523,7 +1523,7 @@ NativeOpImpl_FUN_110621c0(void *param_2);
 struct NativeOpImplBase_FUN_110646c0 { void *v0; void *f4; ~NativeOpImplBase_FUN_110646c0();
 __forceinline NativeOpImplBase_FUN_110646c0() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_110646c0 : NativeOpImplBase_FUN_110646c0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_110646c0(void *param_2);
@@ -1531,7 +1531,7 @@ NativeOpImpl_FUN_110646c0(void *param_2);
 struct NativeOpImplBase_FUN_11067520 { void *v0; void *f4; ~NativeOpImplBase_FUN_11067520();
 __forceinline NativeOpImplBase_FUN_11067520() { v0 = (void *)&DAT_11966858; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_11067520 : NativeOpImplBase_FUN_11067520 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_11067520(void *param_2);
@@ -1539,7 +1539,7 @@ NativeOpImpl_FUN_11067520(void *param_2);
 struct NativeOpImplBase_FUN_110676d0 { void *v0; void *f4; ~NativeOpImplBase_FUN_110676d0();
 __forceinline NativeOpImplBase_FUN_110676d0() { v0 = (void *)&DAT_11966858; f4 = 0; g_lSCObjCount++; } };
 struct NativeOpImpl_FUN_110676d0 : NativeOpImplBase_FUN_110676d0 {
-NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;
+NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;
 void *f20; unsigned short f24; void *f28; void *f2c;
 void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;
 NativeOpImpl_FUN_110676d0(void *param_2);
@@ -1553,7 +1553,7 @@ NativeOpImpl_FUN_10687e80::NativeOpImpl_FUN_10687e80(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_118c6304;
 m8.vptr = (void *)&DAT_118c634c;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -1574,7 +1574,7 @@ NativeOpImpl_FUN_109f4aa0::NativeOpImpl_FUN_109f4aa0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_118f1cdc;
 m8.vptr = (void *)&DAT_118f1d24;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -1595,7 +1595,7 @@ NativeOpImpl_FUN_109f4c00::NativeOpImpl_FUN_109f4c00(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_118f1a18;
 m8.vptr = (void *)&DAT_118f1a60;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -1616,7 +1616,7 @@ NativeOpImpl_FUN_109f4d60::NativeOpImpl_FUN_109f4d60(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_118f1e48;
 m8.vptr = (void *)&DAT_118f1e94;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -1637,7 +1637,7 @@ NativeOpImpl_FUN_109f4ec0::NativeOpImpl_FUN_109f4ec0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_118f1b74;
 m8.vptr = (void *)&DAT_118f1bbc;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -1658,7 +1658,7 @@ NativeOpImpl_FUN_109f5470::NativeOpImpl_FUN_109f5470(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_118f1cdc;
 m8.vptr = (void *)&DAT_118f1d24;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -1680,7 +1680,7 @@ NativeOpImpl_FUN_109f55e0::NativeOpImpl_FUN_109f55e0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_118f1a18;
 m8.vptr = (void *)&DAT_118f1a60;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -1702,7 +1702,7 @@ NativeOpImpl_FUN_109f5750::NativeOpImpl_FUN_109f5750(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_118f1e48;
 m8.vptr = (void *)&DAT_118f1e94;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -1724,7 +1724,7 @@ NativeOpImpl_FUN_109f58c0::NativeOpImpl_FUN_109f58c0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_118f1b74;
 m8.vptr = (void *)&DAT_118f1bbc;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -1746,7 +1746,7 @@ NativeOpImpl_FUN_10b6cd30::NativeOpImpl_FUN_10b6cd30(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1190a9b0;
 m8.vptr = (void *)&DAT_1190a9f8;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -1767,7 +1767,7 @@ NativeOpImpl_FUN_10b6d0a0::NativeOpImpl_FUN_10b6d0a0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1190a9b0;
 m8.vptr = (void *)&DAT_1190a9f8;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -1789,7 +1789,7 @@ NativeOpImpl_FUN_10b7bf50::NativeOpImpl_FUN_10b7bf50(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1190e1e8;
 m8.vptr = (void *)&DAT_1190e234;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -1810,7 +1810,7 @@ NativeOpImpl_FUN_10b7c6a0::NativeOpImpl_FUN_10b7c6a0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1190e1e8;
 m8.vptr = (void *)&DAT_1190e234;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -1832,7 +1832,7 @@ NativeOpImpl_FUN_10c4a3b0::NativeOpImpl_FUN_10c4a3b0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11916cac;
 m8.vptr = (void *)&DAT_11916cf4;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -1853,7 +1853,7 @@ NativeOpImpl_FUN_10c4de80::NativeOpImpl_FUN_10c4de80(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11917598;
 m8.vptr = (void *)&DAT_119175e4;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -1874,7 +1874,7 @@ NativeOpImpl_FUN_10c4dfe0::NativeOpImpl_FUN_10c4dfe0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_119176a0;
 m8.vptr = (void *)&DAT_119176ec;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -1895,7 +1895,7 @@ NativeOpImpl_FUN_10c4e140::NativeOpImpl_FUN_10c4e140(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_119177a8;
 m8.vptr = (void *)&DAT_119177f4;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -1916,7 +1916,7 @@ NativeOpImpl_FUN_10c4e2a0::NativeOpImpl_FUN_10c4e2a0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11917a14;
 m8.vptr = (void *)&DAT_11917a60;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -1937,7 +1937,7 @@ NativeOpImpl_FUN_10c4e400::NativeOpImpl_FUN_10c4e400(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11917914;
 m8.vptr = (void *)&DAT_1191795c;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -1958,7 +1958,7 @@ NativeOpImpl_FUN_10c4eb20::NativeOpImpl_FUN_10c4eb20(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11917598;
 m8.vptr = (void *)&DAT_119175e4;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -1980,7 +1980,7 @@ NativeOpImpl_FUN_10c4ec90::NativeOpImpl_FUN_10c4ec90(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_119176a0;
 m8.vptr = (void *)&DAT_119176ec;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2002,7 +2002,7 @@ NativeOpImpl_FUN_10c4ee00::NativeOpImpl_FUN_10c4ee00(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_119177a8;
 m8.vptr = (void *)&DAT_119177f4;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2024,7 +2024,7 @@ NativeOpImpl_FUN_10c4ef70::NativeOpImpl_FUN_10c4ef70(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11917a14;
 m8.vptr = (void *)&DAT_11917a60;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2046,7 +2046,7 @@ NativeOpImpl_FUN_10c4f0e0::NativeOpImpl_FUN_10c4f0e0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11917914;
 m8.vptr = (void *)&DAT_1191795c;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2068,7 +2068,7 @@ NativeOpImpl_FUN_10c54630::NativeOpImpl_FUN_10c54630(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11917ff0;
 m8.vptr = (void *)&DAT_11918044;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2089,7 +2089,7 @@ NativeOpImpl_FUN_10c54790::NativeOpImpl_FUN_10c54790(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1191825c;
 m8.vptr = (void *)&DAT_119182b0;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2110,7 +2110,7 @@ NativeOpImpl_FUN_10c548f0::NativeOpImpl_FUN_10c548f0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11917eec;
 m8.vptr = (void *)&DAT_11917f34;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2131,7 +2131,7 @@ NativeOpImpl_FUN_10c54a50::NativeOpImpl_FUN_10c54a50(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11918158;
 m8.vptr = (void *)&DAT_119181a0;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2152,7 +2152,7 @@ NativeOpImpl_FUN_10c54f40::NativeOpImpl_FUN_10c54f40(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11917ff0;
 m8.vptr = (void *)&DAT_11918044;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2174,7 +2174,7 @@ NativeOpImpl_FUN_10c550b0::NativeOpImpl_FUN_10c550b0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1191825c;
 m8.vptr = (void *)&DAT_119182b0;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2196,7 +2196,7 @@ NativeOpImpl_FUN_10c55220::NativeOpImpl_FUN_10c55220(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11917eec;
 m8.vptr = (void *)&DAT_11917f34;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2218,7 +2218,7 @@ NativeOpImpl_FUN_10c55390::NativeOpImpl_FUN_10c55390(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11918158;
 m8.vptr = (void *)&DAT_119181a0;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2240,7 +2240,7 @@ NativeOpImpl_FUN_10c59210::NativeOpImpl_FUN_10c59210(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11918578;
 m8.vptr = (void *)&DAT_119185c4;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2261,7 +2261,7 @@ NativeOpImpl_FUN_10c59500::NativeOpImpl_FUN_10c59500(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11918578;
 m8.vptr = (void *)&DAT_119185c4;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2283,7 +2283,7 @@ NativeOpImpl_FUN_10c803a0::NativeOpImpl_FUN_10c803a0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1191af90;
 m8.vptr = (void *)&DAT_1191afd8;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2304,7 +2304,7 @@ NativeOpImpl_FUN_10c80500::NativeOpImpl_FUN_10c80500(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1191b04c;
 m8.vptr = (void *)&DAT_1191b094;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2325,7 +2325,7 @@ NativeOpImpl_FUN_10cc0b70::NativeOpImpl_FUN_10cc0b70(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1191edd4;
 m8.vptr = (void *)&DAT_1191ee50;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2346,7 +2346,7 @@ NativeOpImpl_FUN_10cc0ff0::NativeOpImpl_FUN_10cc0ff0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1191edd4;
 m8.vptr = (void *)&DAT_1191ee50;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2368,7 +2368,7 @@ NativeOpImpl_FUN_10cc6100::NativeOpImpl_FUN_10cc6100(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1191f540;
 m8.vptr = (void *)&DAT_1191f588;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2389,7 +2389,7 @@ NativeOpImpl_FUN_10cc6260::NativeOpImpl_FUN_10cc6260(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1191f194;
 m8.vptr = (void *)&DAT_1191f1dc;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2410,7 +2410,7 @@ NativeOpImpl_FUN_10cc63c0::NativeOpImpl_FUN_10cc63c0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1191ef60;
 m8.vptr = (void *)&DAT_1191efa8;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2431,7 +2431,7 @@ NativeOpImpl_FUN_10cc6520::NativeOpImpl_FUN_10cc6520(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1191f0d8;
 m8.vptr = (void *)&DAT_1191f120;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2452,7 +2452,7 @@ NativeOpImpl_FUN_10cc6680::NativeOpImpl_FUN_10cc6680(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1191f01c;
 m8.vptr = (void *)&DAT_1191f064;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2473,7 +2473,7 @@ NativeOpImpl_FUN_10cc67e0::NativeOpImpl_FUN_10cc67e0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1191f250;
 m8.vptr = (void *)&DAT_1191f298;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2494,7 +2494,7 @@ NativeOpImpl_FUN_10cc6940::NativeOpImpl_FUN_10cc6940(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1191f3c8;
 m8.vptr = (void *)&DAT_1191f410;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2515,7 +2515,7 @@ NativeOpImpl_FUN_10cc6aa0::NativeOpImpl_FUN_10cc6aa0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1191f484;
 m8.vptr = (void *)&DAT_1191f4cc;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2536,7 +2536,7 @@ NativeOpImpl_FUN_10cc6c00::NativeOpImpl_FUN_10cc6c00(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1191f30c;
 m8.vptr = (void *)&DAT_1191f354;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2557,7 +2557,7 @@ NativeOpImpl_FUN_10cc88e0::NativeOpImpl_FUN_10cc88e0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1191f540;
 m8.vptr = (void *)&DAT_1191f588;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2579,7 +2579,7 @@ NativeOpImpl_FUN_10cdaeb0::NativeOpImpl_FUN_10cdaeb0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11920b84;
 m8.vptr = (void *)&DAT_11920bd0;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2600,7 +2600,7 @@ NativeOpImpl_FUN_10cdb010::NativeOpImpl_FUN_10cdb010(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11920a10;
 m8.vptr = (void *)&DAT_11920a58;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2621,7 +2621,7 @@ NativeOpImpl_FUN_10cdb820::NativeOpImpl_FUN_10cdb820(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11920b84;
 m8.vptr = (void *)&DAT_11920bd0;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2643,7 +2643,7 @@ NativeOpImpl_FUN_10cdb990::NativeOpImpl_FUN_10cdb990(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11920a10;
 m8.vptr = (void *)&DAT_11920a58;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2665,7 +2665,7 @@ NativeOpImpl_FUN_10ce0c30::NativeOpImpl_FUN_10ce0c30(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_119211cc;
 m8.vptr = (void *)&DAT_11921218;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2686,7 +2686,7 @@ NativeOpImpl_FUN_10ce0f40::NativeOpImpl_FUN_10ce0f40(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_119211cc;
 m8.vptr = (void *)&DAT_11921218;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2708,7 +2708,7 @@ NativeOpImpl_FUN_10cf54b0::NativeOpImpl_FUN_10cf54b0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1192275c;
 m8.vptr = (void *)&DAT_119227b8;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2729,7 +2729,7 @@ NativeOpImpl_FUN_10d7c4d0::NativeOpImpl_FUN_10d7c4d0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1192f220;
 m8.vptr = (void *)&DAT_1192f268;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2750,7 +2750,7 @@ NativeOpImpl_FUN_10d7c630::NativeOpImpl_FUN_10d7c630(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1192f398;
 m8.vptr = (void *)&DAT_1192f3e0;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2771,7 +2771,7 @@ NativeOpImpl_FUN_10d7c790::NativeOpImpl_FUN_10d7c790(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1192f164;
 m8.vptr = (void *)&DAT_1192f1ac;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2792,7 +2792,7 @@ NativeOpImpl_FUN_10d7c8f0::NativeOpImpl_FUN_10d7c8f0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1192f2dc;
 m8.vptr = (void *)&DAT_1192f324;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2813,7 +2813,7 @@ NativeOpImpl_FUN_10d9ab50::NativeOpImpl_FUN_10d9ab50(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_119319d0;
 m8.vptr = (void *)&DAT_11931a18;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2834,7 +2834,7 @@ NativeOpImpl_FUN_10d9b0a0::NativeOpImpl_FUN_10d9b0a0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_119319d0;
 m8.vptr = (void *)&DAT_11931a18;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2856,7 +2856,7 @@ NativeOpImpl_FUN_10de4720::NativeOpImpl_FUN_10de4720(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11935fbc;
 m8.vptr = (void *)&DAT_11936014;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2877,7 +2877,7 @@ NativeOpImpl_FUN_10de4d40::NativeOpImpl_FUN_10de4d40(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11935fbc;
 m8.vptr = (void *)&DAT_11936014;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2899,7 +2899,7 @@ NativeOpImpl_FUN_10e8b520::NativeOpImpl_FUN_10e8b520(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_119468ac;
 m8.vptr = (void *)&DAT_119468f8;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2920,7 +2920,7 @@ NativeOpImpl_FUN_10e8f200::NativeOpImpl_FUN_10e8f200(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_119468ac;
 m8.vptr = (void *)&DAT_119468f8;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2942,7 +2942,7 @@ NativeOpImpl_FUN_10ef1290::NativeOpImpl_FUN_10ef1290(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1194b774;
 m8.vptr = (void *)&DAT_1194b7bc;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2963,7 +2963,7 @@ NativeOpImpl_FUN_10f0d720::NativeOpImpl_FUN_10f0d720(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1194ce28;
 m8.vptr = (void *)&DAT_1194ce88;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -2984,7 +2984,7 @@ NativeOpImpl_FUN_10f0d880::NativeOpImpl_FUN_10f0d880(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1194cc50;
 m8.vptr = (void *)&DAT_1194ccb0;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3005,7 +3005,7 @@ NativeOpImpl_FUN_10f0d9e0::NativeOpImpl_FUN_10f0d9e0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1194cd3c;
 m8.vptr = (void *)&DAT_1194cd9c;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3026,7 +3026,7 @@ NativeOpImpl_FUN_10f24730::NativeOpImpl_FUN_10f24730(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1194e61c;
 m8.vptr = (void *)&DAT_1194e664;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3047,7 +3047,7 @@ NativeOpImpl_FUN_10f2f9b0::NativeOpImpl_FUN_10f2f9b0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1194f378;
 m8.vptr = (void *)&DAT_1194f3c0;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3068,7 +3068,7 @@ NativeOpImpl_FUN_10f2fb10::NativeOpImpl_FUN_10f2fb10(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1194f2b8;
 m8.vptr = (void *)&DAT_1194f300;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3089,7 +3089,7 @@ NativeOpImpl_FUN_10f2fc70::NativeOpImpl_FUN_10f2fc70(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1194f1f8;
 m8.vptr = (void *)&DAT_1194f240;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3110,7 +3110,7 @@ NativeOpImpl_FUN_10f2fdd0::NativeOpImpl_FUN_10f2fdd0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1194f138;
 m8.vptr = (void *)&DAT_1194f180;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3131,7 +3131,7 @@ NativeOpImpl_FUN_10f55c60::NativeOpImpl_FUN_10f55c60(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11952090;
 m8.vptr = (void *)&DAT_119520dc;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3152,7 +3152,7 @@ NativeOpImpl_FUN_10f55dc0::NativeOpImpl_FUN_10f55dc0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11951f24;
 m8.vptr = (void *)&DAT_11951f6c;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3173,7 +3173,7 @@ NativeOpImpl_FUN_10f55f20::NativeOpImpl_FUN_10f55f20(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_119521fc;
 m8.vptr = (void *)&DAT_11952244;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3194,7 +3194,7 @@ NativeOpImpl_FUN_10f56080::NativeOpImpl_FUN_10f56080(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11952380;
 m8.vptr = (void *)&DAT_119523d4;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3215,7 +3215,7 @@ NativeOpImpl_FUN_10f56480::NativeOpImpl_FUN_10f56480(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11952090;
 m8.vptr = (void *)&DAT_119520dc;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3237,7 +3237,7 @@ NativeOpImpl_FUN_10f565f0::NativeOpImpl_FUN_10f565f0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11951f24;
 m8.vptr = (void *)&DAT_11951f6c;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3259,7 +3259,7 @@ NativeOpImpl_FUN_10f56760::NativeOpImpl_FUN_10f56760(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_119521fc;
 m8.vptr = (void *)&DAT_11952244;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3281,7 +3281,7 @@ NativeOpImpl_FUN_10f568d0::NativeOpImpl_FUN_10f568d0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11952380;
 m8.vptr = (void *)&DAT_119523d4;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3303,7 +3303,7 @@ NativeOpImpl_FUN_10f64e00::NativeOpImpl_FUN_10f64e00(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1195278c;
 m8.vptr = (void *)&DAT_119527d8;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3324,7 +3324,7 @@ NativeOpImpl_FUN_10f65290::NativeOpImpl_FUN_10f65290(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1195278c;
 m8.vptr = (void *)&DAT_119527d8;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3346,7 +3346,7 @@ NativeOpImpl_FUN_10f6fb30::NativeOpImpl_FUN_10f6fb30(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11952b1c;
 m8.vptr = (void *)&DAT_11952b64;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3367,7 +3367,7 @@ NativeOpImpl_FUN_10f77460::NativeOpImpl_FUN_10f77460(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11953540;
 m8.vptr = (void *)&DAT_1195358c;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3388,7 +3388,7 @@ NativeOpImpl_FUN_10f7c3e0::NativeOpImpl_FUN_10f7c3e0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11953b34;
 m8.vptr = (void *)&DAT_11953b7c;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3409,7 +3409,7 @@ NativeOpImpl_FUN_10f7c540::NativeOpImpl_FUN_10f7c540(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11953a78;
 m8.vptr = (void *)&DAT_11953ac0;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3430,7 +3430,7 @@ NativeOpImpl_FUN_10f8a230::NativeOpImpl_FUN_10f8a230(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11954758;
 m8.vptr = (void *)&DAT_119547a0;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3451,7 +3451,7 @@ NativeOpImpl_FUN_10f8a390::NativeOpImpl_FUN_10f8a390(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11954818;
 m8.vptr = (void *)&DAT_11954860;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3472,7 +3472,7 @@ NativeOpImpl_FUN_10f8a4f0::NativeOpImpl_FUN_10f8a4f0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_119548d8;
 m8.vptr = (void *)&DAT_11954920;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3493,7 +3493,7 @@ NativeOpImpl_FUN_11017960::NativeOpImpl_FUN_11017960(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_119606b4;
 m8.vptr = (void *)&DAT_11960714;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3514,7 +3514,7 @@ NativeOpImpl_FUN_11025ee0::NativeOpImpl_FUN_11025ee0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11963d10;
 m8.vptr = (void *)&DAT_11963d64;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3535,7 +3535,7 @@ NativeOpImpl_FUN_110267e0::NativeOpImpl_FUN_110267e0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11963d10;
 m8.vptr = (void *)&DAT_11963d64;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3557,7 +3557,7 @@ NativeOpImpl_FUN_1105f250::NativeOpImpl_FUN_1105f250(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1196610c;
 m8.vptr = (void *)&DAT_11966160;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3578,7 +3578,7 @@ NativeOpImpl_FUN_1105f460::NativeOpImpl_FUN_1105f460(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_1196610c;
 m8.vptr = (void *)&DAT_11966160;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3600,7 +3600,7 @@ NativeOpImpl_FUN_110615e0::NativeOpImpl_FUN_110615e0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_119662b4;
 m8.vptr = (void *)&DAT_1196630c;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3621,7 +3621,7 @@ NativeOpImpl_FUN_11061790::NativeOpImpl_FUN_11061790(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_119662b4;
 m8.vptr = (void *)&DAT_1196630c;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3643,7 +3643,7 @@ NativeOpImpl_FUN_110621c0::NativeOpImpl_FUN_110621c0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11966428;
 m8.vptr = (void *)&DAT_11966474;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3664,7 +3664,7 @@ NativeOpImpl_FUN_110646c0::NativeOpImpl_FUN_110646c0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_11966528;
 m8.vptr = (void *)&DAT_11966570;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3685,7 +3685,7 @@ NativeOpImpl_FUN_11067520::NativeOpImpl_FUN_11067520(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_119668b8;
 m8.vptr = (void *)&DAT_11966914;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);
@@ -3706,7 +3706,7 @@ NativeOpImpl_FUN_110676d0::NativeOpImpl_FUN_110676d0(void *param_2) {
 m8.vptr = (void *)&DAT_1188206c;
 v0 = (void *)&DAT_119668b8;
 m8.vptr = (void *)&DAT_11966914;
-fc.rep = 0; f10 = 0;
+fc.rep = 0; fc.next = 0;
 m14.vptr = (void *)&DAT_1188207c;
 m14.f4 = param_2;
 if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);

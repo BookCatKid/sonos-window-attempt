@@ -113,7 +113,7 @@ def lower(record, reference, base, sections):
         f'm8.vptr = (void *)&DAT_{m8a:08x};\n'
         f'v0 = (void *)&DAT_{v0b:08x};\n'
         f'm8.vptr = (void *)&DAT_{m8b:08x};\n'
-        f'fc.rep = 0; f10 = 0;\n'
+        f'fc.rep = 0; fc.next = 0;\n'
         f'm14.vptr = (void *)&DAT_{m14a:08x};\n'
         f'm14.f4 = param_2;\n'
         f'if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
@@ -162,7 +162,7 @@ def main():
                 'void __cdecl thunk_FUN_1123fce0(void *);\n'
                 'struct NativeOpMember8 { void *vptr; void thunk_FUN_11240650(); '
                 '~NativeOpMember8(); __forceinline NativeOpMember8() { thunk_FUN_11240650(); } };\n'
-                'struct NativeOpMemberC { void *rep; ~NativeOpMemberC(); '
+                'struct NativeOpMemberC { void *rep; void *next; ~NativeOpMemberC(); '
                 '__forceinline NativeOpMemberC() {} };\n'
                 'struct NativeOpMember14 { void *vptr; void *f4; void *f8; '
                 '~NativeOpMember14(); __forceinline NativeOpMember14() {} };\n'
@@ -174,7 +174,7 @@ def main():
                     f'__forceinline {base}() {{ v0 = (void *)&DAT_{r["base_vtable"]}; '
                     f'f4 = 0; g_lSCObjCount++; }} }};\n')
         library += (f'struct {klass} : {base} {{\n'
-                    f'NativeOpMember8 m8; NativeOpMemberC fc; void *f10; NativeOpMember14 m14;\n'
+                    f'NativeOpMember8 m8; NativeOpMemberC fc; NativeOpMember14 m14;\n'
                     f'void *f20; unsigned short f24; void *f28; void *f2c;\n'
                     f'void *v30; void *f34; NativeOpF38 f38; void *f40; void *f44;\n'
                     f'{klass}(void *param_2);\n}};\n')
