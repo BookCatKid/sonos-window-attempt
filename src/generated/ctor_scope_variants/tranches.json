@@ -208,6 +208,10 @@
     "directory": "analysis/ctor-scope-op-impl-smart-bodystore"
   },
   {
+    "object": "op_impl_smart_nestedrep_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-smart-nestedrep"
+  },
+  {
     "object": "op_impl_smart_decl_empty_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-smart-decl-empty"
   },

@@ -650,7 +650,18 @@ def op_impl_variants():
         ' : smart(param) { f8 = 0;',
         ' { smart.p = param; '
         'if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0;')
-    # smart ctor DECLARED in-class but defined out-of-line EMPTY: the frontend
+    # smart wraps a Sub submember whose store happens inside smart's ctor
+    # body: the submember-tracking scope is what repoints the shared
+    # construction-object slot to &smart when member14 inlines
+    variants['op_impl_smart_nestedrep'] = decls.replace(
+        'struct NativeOpSmart14_thunk_FUN_101ba1b0 { void *p; ~NativeOpSmart14_thunk_FUN_101ba1b0();\n'
+        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
+        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
+        'struct NativeOpRepSub { void *p; ~NativeOpRepSub(); };\n'
+        'struct NativeOpSmart14_thunk_FUN_101ba1b0 { NativeOpRepSub rep;\n'
+        '    NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { rep.p = value; '
+        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); }\n'
+        '    ~NativeOpSmart14_thunk_FUN_101ba1b0(); };')
     # emits the ctor-call scope (lea &smart + spill repoint + arm3) and the
     # backend inlines the empty body, leaving the nested repoint + [eax] store
     variants['op_impl_smart_decl_empty'] = decls.replace(
