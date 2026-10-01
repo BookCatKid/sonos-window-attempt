@@ -65,8 +65,7 @@ def lower(record, reference, base, sections):
     klass = 'NativeOpRefCtor_FUN_' + entry
     source = (
         f'{klass}::{klass}(void *param_2)\n'
-        f'    : NativeOpRefBase_FUN_{entry}(), m4() {{\n'
-        f'm4.rep = param_2;\n'
+        f'    : NativeOpRefBase_FUN_{entry}(), m4(param_2) {{\n'
         f'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
         f'f8 = 0;\n'
         f'vptr = (void *)&DAT_{vb:08x};\n'
@@ -104,6 +103,7 @@ def main():
         library += f'extern unsigned int DAT_{va};\n'
     library += 'void __cdecl thunk_FUN_1123fce0(void *);\n'
     library += ('struct NativeOpRefMember_thunk_FUN_101ba1b0 { void *rep;\n'
+                '__forceinline NativeOpRefMember_thunk_FUN_101ba1b0(void *p) { rep = p; }\n'
                 '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n')
     for r in candidates:
         klass = r['op_class']

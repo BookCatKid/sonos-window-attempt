@@ -123,21 +123,20 @@ class OpImplCtorTests(unittest.TestCase):
         source = candidate['source']
         self.assertIn('NativeOpImpl_FUN_10687e80::NativeOpImpl_FUN_10687e80(void *param_2)',
                       source)
-        self.assertIn('m8.vptr = (void *)&DAT_118c634c;', source)
-        self.assertIn('v0 = (void *)&DAT_118c6304;', source)
-        self.assertIn(': m14(param_2) {', source)
-        self.assertIn('m14.vptr = (void *)&DAT_118c62f8;', source)
+        self.assertIn(': NativeOpImpl_FUN_10687e80_vt(this), m14(param_2) {', source)
         self.assertIn('f24 = 1000;', source)
-        self.assertIn('g_lSCObjCount++;', source)
         self.assertIn('f38.q = 0; f38.w.hi = 0;', source)
         self.assertEqual(candidate['base_vtable'], '11882180')
+        self.assertEqual(candidate['derived_vtables'], (0x118c6304, 0x118c634c))
+        self.assertEqual(candidate['m14_vtable'], 0x118c62f8)
         self.assertNotIn('DAT_118f1d34', source)
 
     def test_292_tail(self):
         candidate = self.candidate(text=TEXT_292, size=292)
         self.assertIsNotNone(candidate)
         self.assertIn('v0 = (void *)&DAT_118f1d34;', candidate['source'])
-        self.assertIn('m8.vptr = (void *)&DAT_118f1d7c;', candidate['source'])
+        self.assertIn('NativeOpMember8_thunk_FUN_101ba0c0::vptr = (void *)&DAT_118f1d7c;',
+                      candidate['source'])
 
     def test_wrong_calls_rejected(self):
         bad = ctor_instructions()

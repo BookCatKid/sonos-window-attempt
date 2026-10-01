@@ -126,8 +126,10 @@ def main():
         library += f'extern unsigned int DAT_{va:08x};\n'
     library += 'void thunk_FUN_1148c970(void *) noexcept;\n'
     library += '__forceinline void *operator new(unsigned int size) { return operator_new(size); }\n'
-    library += ('void operator delete(void *p, unsigned int size)'
+    library += ('#pragma optimize("y", off)\n'
+                'void operator delete(void *p, unsigned int size)'
                 ' { thunk_FUN_1148c970(p); }\n'
+                '#pragma optimize("y", on)\n'
                 'struct NativePageHelper { void *f0; void *f4; void *f8; '
                 'unsigned int thunk_FUN_10eae120(void *owner, unsigned int a, unsigned int b); };\n')
     for r in candidates:

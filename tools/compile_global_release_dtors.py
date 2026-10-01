@@ -53,7 +53,7 @@ def lower(record, reference, base, sections):
         return None
     klass = 'NativeGlobalRelease_FUN_' + entry
     source = (
-        f'void FUN_{entry}() noexcept {{\n'
+        f'void FUN_{entry}() {{\n'
         f'NativeReleaseIface *p = (NativeReleaseIface *)DAT_{hi:08x};\n'
         f'[&]() noexcept {{\n'
         f'if (p != 0) {{\n'

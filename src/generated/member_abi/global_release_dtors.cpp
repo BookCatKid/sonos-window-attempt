@@ -415,7 +415,7 @@ extern unsigned int DAT_121a7568;
 
 // Reference entry 117e8ad0; body size 91 bytes.
 #line 1 "ENTRY_117e8ad0"
-void FUN_117e8ad0() noexcept {
+void FUN_117e8ad0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a071c;
 [&]() noexcept {
 if (p != 0) {
@@ -427,7 +427,7 @@ if (p != 0) {
 
 // Reference entry 117e9d10; body size 91 bytes.
 #line 1 "ENTRY_117e9d10"
-void FUN_117e9d10() noexcept {
+void FUN_117e9d10() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0834;
 [&]() noexcept {
 if (p != 0) {
@@ -439,7 +439,7 @@ if (p != 0) {
 
 // Reference entry 117ea340; body size 91 bytes.
 #line 1 "ENTRY_117ea340"
-void FUN_117ea340() noexcept {
+void FUN_117ea340() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a08d8;
 [&]() noexcept {
 if (p != 0) {
@@ -451,7 +451,7 @@ if (p != 0) {
 
 // Reference entry 117ea900; body size 91 bytes.
 #line 1 "ENTRY_117ea900"
-void FUN_117ea900() noexcept {
+void FUN_117ea900() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a08f8;
 [&]() noexcept {
 if (p != 0) {
@@ -463,7 +463,7 @@ if (p != 0) {
 
 // Reference entry 117eb4b0; body size 91 bytes.
 #line 1 "ENTRY_117eb4b0"
-void FUN_117eb4b0() noexcept {
+void FUN_117eb4b0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a097c;
 [&]() noexcept {
 if (p != 0) {
@@ -475,7 +475,7 @@ if (p != 0) {
 
 // Reference entry 117eb530; body size 91 bytes.
 #line 1 "ENTRY_117eb530"
-void FUN_117eb530() noexcept {
+void FUN_117eb530() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a09c8;
 [&]() noexcept {
 if (p != 0) {
@@ -487,7 +487,7 @@ if (p != 0) {
 
 // Reference entry 117ebc50; body size 91 bytes.
 #line 1 "ENTRY_117ebc50"
-void FUN_117ebc50() noexcept {
+void FUN_117ebc50() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0a1c;
 [&]() noexcept {
 if (p != 0) {
@@ -499,7 +499,7 @@ if (p != 0) {
 
 // Reference entry 117ec520; body size 91 bytes.
 #line 1 "ENTRY_117ec520"
-void FUN_117ec520() noexcept {
+void FUN_117ec520() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0a84;
 [&]() noexcept {
 if (p != 0) {
@@ -511,7 +511,7 @@ if (p != 0) {
 
 // Reference entry 117ecb50; body size 91 bytes.
 #line 1 "ENTRY_117ecb50"
-void FUN_117ecb50() noexcept {
+void FUN_117ecb50() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0ad8;
 [&]() noexcept {
 if (p != 0) {
@@ -523,7 +523,7 @@ if (p != 0) {
 
 // Reference entry 117ecc40; body size 91 bytes.
 #line 1 "ENTRY_117ecc40"
-void FUN_117ecc40() noexcept {
+void FUN_117ecc40() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0a98;
 [&]() noexcept {
 if (p != 0) {
@@ -535,7 +535,7 @@ if (p != 0) {
 
 // Reference entry 117eccc0; body size 91 bytes.
 #line 1 "ENTRY_117eccc0"
-void FUN_117eccc0() noexcept {
+void FUN_117eccc0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0af4;
 [&]() noexcept {
 if (p != 0) {
@@ -547,7 +547,7 @@ if (p != 0) {
 
 // Reference entry 117ecd40; body size 91 bytes.
 #line 1 "ENTRY_117ecd40"
-void FUN_117ecd40() noexcept {
+void FUN_117ecd40() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0ae8;
 [&]() noexcept {
 if (p != 0) {
@@ -559,7 +559,7 @@ if (p != 0) {
 
 // Reference entry 117ecdc0; body size 91 bytes.
 #line 1 "ENTRY_117ecdc0"
-void FUN_117ecdc0() noexcept {
+void FUN_117ecdc0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0b04;
 [&]() noexcept {
 if (p != 0) {
@@ -571,7 +571,7 @@ if (p != 0) {
 
 // Reference entry 117ecfd0; body size 91 bytes.
 #line 1 "ENTRY_117ecfd0"
-void FUN_117ecfd0() noexcept {
+void FUN_117ecfd0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0b28;
 [&]() noexcept {
 if (p != 0) {
@@ -583,7 +583,7 @@ if (p != 0) {
 
 // Reference entry 117eda60; body size 91 bytes.
 #line 1 "ENTRY_117eda60"
-void FUN_117eda60() noexcept {
+void FUN_117eda60() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0bb8;
 [&]() noexcept {
 if (p != 0) {
@@ -595,7 +595,7 @@ if (p != 0) {
 
 // Reference entry 117ee570; body size 91 bytes.
 #line 1 "ENTRY_117ee570"
-void FUN_117ee570() noexcept {
+void FUN_117ee570() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0c5c;
 [&]() noexcept {
 if (p != 0) {
@@ -607,7 +607,7 @@ if (p != 0) {
 
 // Reference entry 117eeba0; body size 91 bytes.
 #line 1 "ENTRY_117eeba0"
-void FUN_117eeba0() noexcept {
+void FUN_117eeba0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0cac;
 [&]() noexcept {
 if (p != 0) {
@@ -619,7 +619,7 @@ if (p != 0) {
 
 // Reference entry 117f0730; body size 91 bytes.
 #line 1 "ENTRY_117f0730"
-void FUN_117f0730() noexcept {
+void FUN_117f0730() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0dc4;
 [&]() noexcept {
 if (p != 0) {
@@ -631,7 +631,7 @@ if (p != 0) {
 
 // Reference entry 117f41e0; body size 91 bytes.
 #line 1 "ENTRY_117f41e0"
-void FUN_117f41e0() noexcept {
+void FUN_117f41e0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a11ac;
 [&]() noexcept {
 if (p != 0) {
@@ -643,7 +643,7 @@ if (p != 0) {
 
 // Reference entry 117f61c0; body size 91 bytes.
 #line 1 "ENTRY_117f61c0"
-void FUN_117f61c0() noexcept {
+void FUN_117f61c0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1364;
 [&]() noexcept {
 if (p != 0) {
@@ -655,7 +655,7 @@ if (p != 0) {
 
 // Reference entry 117f6cc0; body size 91 bytes.
 #line 1 "ENTRY_117f6cc0"
-void FUN_117f6cc0() noexcept {
+void FUN_117f6cc0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a13fc;
 [&]() noexcept {
 if (p != 0) {
@@ -667,7 +667,7 @@ if (p != 0) {
 
 // Reference entry 117f6d40; body size 91 bytes.
 #line 1 "ENTRY_117f6d40"
-void FUN_117f6d40() noexcept {
+void FUN_117f6d40() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a140c;
 [&]() noexcept {
 if (p != 0) {
@@ -679,7 +679,7 @@ if (p != 0) {
 
 // Reference entry 117f6dc0; body size 91 bytes.
 #line 1 "ENTRY_117f6dc0"
-void FUN_117f6dc0() noexcept {
+void FUN_117f6dc0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a13ec;
 [&]() noexcept {
 if (p != 0) {
@@ -691,7 +691,7 @@ if (p != 0) {
 
 // Reference entry 117f7a10; body size 91 bytes.
 #line 1 "ENTRY_117f7a10"
-void FUN_117f7a10() noexcept {
+void FUN_117f7a10() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1538;
 [&]() noexcept {
 if (p != 0) {
@@ -703,7 +703,7 @@ if (p != 0) {
 
 // Reference entry 117f7a90; body size 91 bytes.
 #line 1 "ENTRY_117f7a90"
-void FUN_117f7a90() noexcept {
+void FUN_117f7a90() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1528;
 [&]() noexcept {
 if (p != 0) {
@@ -715,7 +715,7 @@ if (p != 0) {
 
 // Reference entry 117f7b10; body size 91 bytes.
 #line 1 "ENTRY_117f7b10"
-void FUN_117f7b10() noexcept {
+void FUN_117f7b10() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1548;
 [&]() noexcept {
 if (p != 0) {
@@ -727,7 +727,7 @@ if (p != 0) {
 
 // Reference entry 117f8240; body size 91 bytes.
 #line 1 "ENTRY_117f8240"
-void FUN_117f8240() noexcept {
+void FUN_117f8240() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a15a0;
 [&]() noexcept {
 if (p != 0) {
@@ -739,7 +739,7 @@ if (p != 0) {
 
 // Reference entry 117f8fe0; body size 91 bytes.
 #line 1 "ENTRY_117f8fe0"
-void FUN_117f8fe0() noexcept {
+void FUN_117f8fe0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1648;
 [&]() noexcept {
 if (p != 0) {
@@ -751,7 +751,7 @@ if (p != 0) {
 
 // Reference entry 117f9ae0; body size 91 bytes.
 #line 1 "ENTRY_117f9ae0"
-void FUN_117f9ae0() noexcept {
+void FUN_117f9ae0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1750;
 [&]() noexcept {
 if (p != 0) {
@@ -763,7 +763,7 @@ if (p != 0) {
 
 // Reference entry 117f9b60; body size 91 bytes.
 #line 1 "ENTRY_117f9b60"
-void FUN_117f9b60() noexcept {
+void FUN_117f9b60() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1740;
 [&]() noexcept {
 if (p != 0) {
@@ -775,7 +775,7 @@ if (p != 0) {
 
 // Reference entry 117f9be0; body size 91 bytes.
 #line 1 "ENTRY_117f9be0"
-void FUN_117f9be0() noexcept {
+void FUN_117f9be0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a16d0;
 [&]() noexcept {
 if (p != 0) {
@@ -787,7 +787,7 @@ if (p != 0) {
 
 // Reference entry 117f9c60; body size 91 bytes.
 #line 1 "ENTRY_117f9c60"
-void FUN_117f9c60() noexcept {
+void FUN_117f9c60() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a16f0;
 [&]() noexcept {
 if (p != 0) {
@@ -799,7 +799,7 @@ if (p != 0) {
 
 // Reference entry 117f9ce0; body size 91 bytes.
 #line 1 "ENTRY_117f9ce0"
-void FUN_117f9ce0() noexcept {
+void FUN_117f9ce0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1720;
 [&]() noexcept {
 if (p != 0) {
@@ -811,7 +811,7 @@ if (p != 0) {
 
 // Reference entry 117f9d60; body size 91 bytes.
 #line 1 "ENTRY_117f9d60"
-void FUN_117f9d60() noexcept {
+void FUN_117f9d60() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1710;
 [&]() noexcept {
 if (p != 0) {
@@ -823,7 +823,7 @@ if (p != 0) {
 
 // Reference entry 117f9de0; body size 91 bytes.
 #line 1 "ENTRY_117f9de0"
-void FUN_117f9de0() noexcept {
+void FUN_117f9de0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a16e0;
 [&]() noexcept {
 if (p != 0) {
@@ -835,7 +835,7 @@ if (p != 0) {
 
 // Reference entry 117f9e60; body size 91 bytes.
 #line 1 "ENTRY_117f9e60"
-void FUN_117f9e60() noexcept {
+void FUN_117f9e60() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1700;
 [&]() noexcept {
 if (p != 0) {
@@ -847,7 +847,7 @@ if (p != 0) {
 
 // Reference entry 117f9ee0; body size 91 bytes.
 #line 1 "ENTRY_117f9ee0"
-void FUN_117f9ee0() noexcept {
+void FUN_117f9ee0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1730;
 [&]() noexcept {
 if (p != 0) {
@@ -859,7 +859,7 @@ if (p != 0) {
 
 // Reference entry 117fbe00; body size 91 bytes.
 #line 1 "ENTRY_117fbe00"
-void FUN_117fbe00() noexcept {
+void FUN_117fbe00() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a18b8;
 [&]() noexcept {
 if (p != 0) {
@@ -871,7 +871,7 @@ if (p != 0) {
 
 // Reference entry 117fbef0; body size 91 bytes.
 #line 1 "ENTRY_117fbef0"
-void FUN_117fbef0() noexcept {
+void FUN_117fbef0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a18c8;
 [&]() noexcept {
 if (p != 0) {
@@ -883,7 +883,7 @@ if (p != 0) {
 
 // Reference entry 117fe9e0; body size 91 bytes.
 #line 1 "ENTRY_117fe9e0"
-void FUN_117fe9e0() noexcept {
+void FUN_117fe9e0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1abc;
 [&]() noexcept {
 if (p != 0) {
@@ -895,7 +895,7 @@ if (p != 0) {
 
 // Reference entry 11802ff0; body size 91 bytes.
 #line 1 "ENTRY_11802ff0"
-void FUN_11802ff0() noexcept {
+void FUN_11802ff0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1dac;
 [&]() noexcept {
 if (p != 0) {
@@ -907,7 +907,7 @@ if (p != 0) {
 
 // Reference entry 118055a0; body size 91 bytes.
 #line 1 "ENTRY_118055a0"
-void FUN_118055a0() noexcept {
+void FUN_118055a0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1f94;
 [&]() noexcept {
 if (p != 0) {
@@ -919,7 +919,7 @@ if (p != 0) {
 
 // Reference entry 1180a9b0; body size 91 bytes.
 #line 1 "ENTRY_1180a9b0"
-void FUN_1180a9b0() noexcept {
+void FUN_1180a9b0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a25f4;
 [&]() noexcept {
 if (p != 0) {
@@ -931,7 +931,7 @@ if (p != 0) {
 
 // Reference entry 1180abf0; body size 91 bytes.
 #line 1 "ENTRY_1180abf0"
-void FUN_1180abf0() noexcept {
+void FUN_1180abf0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a2654;
 [&]() noexcept {
 if (p != 0) {
@@ -943,7 +943,7 @@ if (p != 0) {
 
 // Reference entry 1180baa0; body size 91 bytes.
 #line 1 "ENTRY_1180baa0"
-void FUN_1180baa0() noexcept {
+void FUN_1180baa0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a2688;
 [&]() noexcept {
 if (p != 0) {
@@ -955,7 +955,7 @@ if (p != 0) {
 
 // Reference entry 1182acc0; body size 91 bytes.
 #line 1 "ENTRY_1182acc0"
-void FUN_1182acc0() noexcept {
+void FUN_1182acc0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a4a2c;
 [&]() noexcept {
 if (p != 0) {
@@ -967,7 +967,7 @@ if (p != 0) {
 
 // Reference entry 1182fa20; body size 91 bytes.
 #line 1 "ENTRY_1182fa20"
-void FUN_1182fa20() noexcept {
+void FUN_1182fa20() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a5038;
 [&]() noexcept {
 if (p != 0) {
@@ -979,7 +979,7 @@ if (p != 0) {
 
 // Reference entry 118301a0; body size 91 bytes.
 #line 1 "ENTRY_118301a0"
-void FUN_118301a0() noexcept {
+void FUN_118301a0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a5090;
 [&]() noexcept {
 if (p != 0) {
@@ -991,7 +991,7 @@ if (p != 0) {
 
 // Reference entry 118308b0; body size 91 bytes.
 #line 1 "ENTRY_118308b0"
-void FUN_118308b0() noexcept {
+void FUN_118308b0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a50e8;
 [&]() noexcept {
 if (p != 0) {
@@ -1003,7 +1003,7 @@ if (p != 0) {
 
 // Reference entry 118309a0; body size 91 bytes.
 #line 1 "ENTRY_118309a0"
-void FUN_118309a0() noexcept {
+void FUN_118309a0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a50f4;
 [&]() noexcept {
 if (p != 0) {
@@ -1015,7 +1015,7 @@ if (p != 0) {
 
 // Reference entry 118316e0; body size 91 bytes.
 #line 1 "ENTRY_118316e0"
-void FUN_118316e0() noexcept {
+void FUN_118316e0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a5298;
 [&]() noexcept {
 if (p != 0) {
@@ -1027,7 +1027,7 @@ if (p != 0) {
 
 // Reference entry 11833980; body size 91 bytes.
 #line 1 "ENTRY_11833980"
-void FUN_11833980() noexcept {
+void FUN_11833980() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a53d0;
 [&]() noexcept {
 if (p != 0) {
@@ -1039,7 +1039,7 @@ if (p != 0) {
 
 // Reference entry 11834500; body size 91 bytes.
 #line 1 "ENTRY_11834500"
-void FUN_11834500() noexcept {
+void FUN_11834500() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a54c4;
 [&]() noexcept {
 if (p != 0) {
@@ -1051,7 +1051,7 @@ if (p != 0) {
 
 // Reference entry 11834580; body size 91 bytes.
 #line 1 "ENTRY_11834580"
-void FUN_11834580() noexcept {
+void FUN_11834580() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a54e8;
 [&]() noexcept {
 if (p != 0) {
@@ -1063,7 +1063,7 @@ if (p != 0) {
 
 // Reference entry 11834600; body size 91 bytes.
 #line 1 "ENTRY_11834600"
-void FUN_11834600() noexcept {
+void FUN_11834600() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a54d8;
 [&]() noexcept {
 if (p != 0) {
@@ -1075,7 +1075,7 @@ if (p != 0) {
 
 // Reference entry 11834bf0; body size 91 bytes.
 #line 1 "ENTRY_11834bf0"
-void FUN_11834bf0() noexcept {
+void FUN_11834bf0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a55b0;
 [&]() noexcept {
 if (p != 0) {
@@ -1087,7 +1087,7 @@ if (p != 0) {
 
 // Reference entry 11834d60; body size 91 bytes.
 #line 1 "ENTRY_11834d60"
-void FUN_11834d60() noexcept {
+void FUN_11834d60() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a5690;
 [&]() noexcept {
 if (p != 0) {
@@ -1099,7 +1099,7 @@ if (p != 0) {
 
 // Reference entry 11842710; body size 91 bytes.
 #line 1 "ENTRY_11842710"
-void FUN_11842710() noexcept {
+void FUN_11842710() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a628c;
 [&]() noexcept {
 if (p != 0) {
@@ -1111,7 +1111,7 @@ if (p != 0) {
 
 // Reference entry 11844910; body size 91 bytes.
 #line 1 "ENTRY_11844910"
-void FUN_11844910() noexcept {
+void FUN_11844910() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a6418;
 [&]() noexcept {
 if (p != 0) {
@@ -1123,7 +1123,7 @@ if (p != 0) {
 
 // Reference entry 11859aa0; body size 91 bytes.
 #line 1 "ENTRY_11859aa0"
-void FUN_11859aa0() noexcept {
+void FUN_11859aa0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a7398;
 [&]() noexcept {
 if (p != 0) {
@@ -1135,7 +1135,7 @@ if (p != 0) {
 
 // Reference entry 11859ba0; body size 91 bytes.
 #line 1 "ENTRY_11859ba0"
-void FUN_11859ba0() noexcept {
+void FUN_11859ba0() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a73b8;
 [&]() noexcept {
 if (p != 0) {
@@ -1147,7 +1147,7 @@ if (p != 0) {
 
 // Reference entry 11859c20; body size 91 bytes.
 #line 1 "ENTRY_11859c20"
-void FUN_11859c20() noexcept {
+void FUN_11859c20() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a73a8;
 [&]() noexcept {
 if (p != 0) {
@@ -1159,7 +1159,7 @@ if (p != 0) {
 
 // Reference entry 1185a720; body size 91 bytes.
 #line 1 "ENTRY_1185a720"
-void FUN_1185a720() noexcept {
+void FUN_1185a720() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a7444;
 [&]() noexcept {
 if (p != 0) {
@@ -1171,7 +1171,7 @@ if (p != 0) {
 
 // Reference entry 1185a810; body size 91 bytes.
 #line 1 "ENTRY_1185a810"
-void FUN_1185a810() noexcept {
+void FUN_1185a810() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a7454;
 [&]() noexcept {
 if (p != 0) {
@@ -1183,7 +1183,7 @@ if (p != 0) {
 
 // Reference entry 1185a890; body size 91 bytes.
 #line 1 "ENTRY_1185a890"
-void FUN_1185a890() noexcept {
+void FUN_1185a890() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a7464;
 [&]() noexcept {
 if (p != 0) {
@@ -1195,7 +1195,7 @@ if (p != 0) {
 
 // Reference entry 1185a910; body size 91 bytes.
 #line 1 "ENTRY_1185a910"
-void FUN_1185a910() noexcept {
+void FUN_1185a910() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a7488;
 [&]() noexcept {
 if (p != 0) {
@@ -1207,7 +1207,7 @@ if (p != 0) {
 
 // Reference entry 1185a990; body size 91 bytes.
 #line 1 "ENTRY_1185a990"
-void FUN_1185a990() noexcept {
+void FUN_1185a990() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a7478;
 [&]() noexcept {
 if (p != 0) {
@@ -1219,7 +1219,7 @@ if (p != 0) {
 
 // Reference entry 1185b490; body size 91 bytes.
 #line 1 "ENTRY_1185b490"
-void FUN_1185b490() noexcept {
+void FUN_1185b490() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a7540;
 [&]() noexcept {
 if (p != 0) {
@@ -1231,7 +1231,7 @@ if (p != 0) {
 
 // Reference entry 1185b510; body size 91 bytes.
 #line 1 "ENTRY_1185b510"
-void FUN_1185b510() noexcept {
+void FUN_1185b510() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a7530;
 [&]() noexcept {
 if (p != 0) {
@@ -1243,7 +1243,7 @@ if (p != 0) {
 
 // Reference entry 1185b630; body size 91 bytes.
 #line 1 "ENTRY_1185b630"
-void FUN_1185b630() noexcept {
+void FUN_1185b630() {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a7568;
 [&]() noexcept {
 if (p != 0) {

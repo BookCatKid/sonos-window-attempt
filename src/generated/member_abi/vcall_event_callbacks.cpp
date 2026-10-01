@@ -885,14 +885,13 @@ void FUN_11067ef0(unsigned int param_2, unsigned int param_3);
 #line 1 "ENTRY_1068b210"
 void NativeVcallHost_FUN_1068b210::FUN_1068b210(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -914,14 +913,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10a07c10"
 void NativeVcallHost_FUN_10a07c10::FUN_10a07c10(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1008675a pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1008675a pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -943,14 +941,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10a07d40"
 void NativeVcallHost_FUN_10a07d40::FUN_10a07d40(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1005e87c pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1005e87c pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -972,14 +969,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10a07e70"
 void NativeVcallHost_FUN_10a07e70::FUN_10a07e70(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1002ee51 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1002ee51 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1001,14 +997,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10a07fa0"
 void NativeVcallHost_FUN_10a07fa0::FUN_10a07fa0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1009770d pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1009770d pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1030,14 +1025,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10b72070"
 void NativeVcallHost_FUN_10b72070::FUN_10b72070(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_10099175 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_10099175 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1059,14 +1053,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10b82d00"
 void NativeVcallHost_FUN_10b82d00::FUN_10b82d00(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_10001c71 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_10001c71 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1088,14 +1081,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10b8d0f0"
 void NativeVcallHost_FUN_10b8d0f0::FUN_10b8d0f0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_10049eea pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_10049eea pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1117,14 +1109,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10b8d220"
 void NativeVcallHost_FUN_10b8d220::FUN_10b8d220(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1001f889 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1001f889 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1146,14 +1137,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10b8d350"
 void NativeVcallHost_FUN_10b8d350::FUN_10b8d350(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_100580cb pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_100580cb pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1175,14 +1165,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10b8d480"
 void NativeVcallHost_FUN_10b8d480::FUN_10b8d480(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1006c94f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1006c94f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1204,14 +1193,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10c4ce50"
 void NativeVcallHost_FUN_10c4ce50::FUN_10c4ce50(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1233,14 +1221,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10c52a10"
 void NativeVcallHost_FUN_10c52a10::FUN_10c52a10(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_10061f5e pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_10061f5e pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1262,14 +1249,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10c52b40"
 void NativeVcallHost_FUN_10c52b40::FUN_10c52b40(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_100708dd pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_100708dd pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1291,14 +1277,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10c52c70"
 void NativeVcallHost_FUN_10c52c70::FUN_10c52c70(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1000e278 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1000e278 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1320,14 +1305,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10c52da0"
 void NativeVcallHost_FUN_10c52da0::FUN_10c52da0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_10006992 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_10006992 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1349,14 +1333,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10c52ed0"
 void NativeVcallHost_FUN_10c52ed0::FUN_10c52ed0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_100501f5 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_100501f5 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1378,14 +1361,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10c57da0"
 void NativeVcallHost_FUN_10c57da0::FUN_10c57da0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_10051b4a pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_10051b4a pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1407,14 +1389,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10c57ed0"
 void NativeVcallHost_FUN_10c57ed0::FUN_10c57ed0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1008a3dc pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1008a3dc pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1436,14 +1417,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10c58000"
 void NativeVcallHost_FUN_10c58000::FUN_10c58000(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1005c3d8 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1005c3d8 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1465,14 +1445,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10c58130"
 void NativeVcallHost_FUN_10c58130::FUN_10c58130(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_10078484 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_10078484 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1494,14 +1473,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10c5a7d0"
 void NativeVcallHost_FUN_10c5a7d0::FUN_10c5a7d0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_10084fe5 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_10084fe5 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1523,14 +1501,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10c831c0"
 void NativeVcallHost_FUN_10c831c0::FUN_10c831c0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1552,14 +1529,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10c832f0"
 void NativeVcallHost_FUN_10c832f0::FUN_10c832f0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1581,14 +1557,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10cc3370"
 void NativeVcallHost_FUN_10cc3370::FUN_10cc3370(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1004b641 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1004b641 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1610,14 +1585,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10cd7ce0"
 void NativeVcallHost_FUN_10cd7ce0::FUN_10cd7ce0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1639,14 +1613,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10cd7e10"
 void NativeVcallHost_FUN_10cd7e10::FUN_10cd7e10(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1668,14 +1641,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10cd7f40"
 void NativeVcallHost_FUN_10cd7f40::FUN_10cd7f40(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1697,14 +1669,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10cd8070"
 void NativeVcallHost_FUN_10cd8070::FUN_10cd8070(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1726,14 +1697,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10cd81a0"
 void NativeVcallHost_FUN_10cd81a0::FUN_10cd81a0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1755,14 +1725,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10cd82d0"
 void NativeVcallHost_FUN_10cd82d0::FUN_10cd82d0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1784,14 +1753,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10cd8400"
 void NativeVcallHost_FUN_10cd8400::FUN_10cd8400(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1813,14 +1781,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10cd8530"
 void NativeVcallHost_FUN_10cd8530::FUN_10cd8530(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1842,14 +1809,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10cd8660"
 void NativeVcallHost_FUN_10cd8660::FUN_10cd8660(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1871,14 +1837,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10cde7e0"
 void NativeVcallHost_FUN_10cde7e0::FUN_10cde7e0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_10056dbb pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_10056dbb pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1900,14 +1865,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10cde910"
 void NativeVcallHost_FUN_10cde910::FUN_10cde910(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_10082aec pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_10082aec pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1929,14 +1893,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10ce1c00"
 void NativeVcallHost_FUN_10ce1c00::FUN_10ce1c00(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_10065e60 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_10065e60 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1958,14 +1921,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10cf62a0"
 void NativeVcallHost_FUN_10cf62a0::FUN_10cf62a0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_10095624 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_10095624 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -1987,14 +1949,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10d86860"
 void NativeVcallHost_FUN_10d86860::FUN_10d86860(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2016,14 +1977,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10d86990"
 void NativeVcallHost_FUN_10d86990::FUN_10d86990(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2045,14 +2005,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10d86ac0"
 void NativeVcallHost_FUN_10d86ac0::FUN_10d86ac0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2074,14 +2033,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10d86bf0"
 void NativeVcallHost_FUN_10d86bf0::FUN_10d86bf0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2103,14 +2061,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10d9daf0"
 void NativeVcallHost_FUN_10d9daf0::FUN_10d9daf0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_10040b5b pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_10040b5b pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2132,14 +2089,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10de8770"
 void NativeVcallHost_FUN_10de8770::FUN_10de8770(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_100664ff pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_100664ff pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2161,14 +2117,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10ea27a0"
 void NativeVcallHost_FUN_10ea27a0::FUN_10ea27a0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007ac7a pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007ac7a pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2190,14 +2145,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10ef2a30"
 void NativeVcallHost_FUN_10ef2a30::FUN_10ef2a30(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2219,14 +2173,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10f13920"
 void NativeVcallHost_FUN_10f13920::FUN_10f13920(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_100271ba pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_100271ba pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2248,14 +2201,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10f13a50"
 void NativeVcallHost_FUN_10f13a50::FUN_10f13a50(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_100271ba pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_100271ba pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2277,14 +2229,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10f13b80"
 void NativeVcallHost_FUN_10f13b80::FUN_10f13b80(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_100271ba pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_100271ba pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2306,14 +2257,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10f2bb40"
 void NativeVcallHost_FUN_10f2bb40::FUN_10f2bb40(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2335,14 +2285,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10f35c60"
 void NativeVcallHost_FUN_10f35c60::FUN_10f35c60(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2364,14 +2313,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10f35d90"
 void NativeVcallHost_FUN_10f35d90::FUN_10f35d90(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2393,14 +2341,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10f35ec0"
 void NativeVcallHost_FUN_10f35ec0::FUN_10f35ec0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2422,14 +2369,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10f35ff0"
 void NativeVcallHost_FUN_10f35ff0::FUN_10f35ff0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2451,14 +2397,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10f61b80"
 void NativeVcallHost_FUN_10f61b80::FUN_10f61b80(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_100312f0 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_100312f0 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2480,14 +2425,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10f61cb0"
 void NativeVcallHost_FUN_10f61cb0::FUN_10f61cb0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_100045f2 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_100045f2 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2509,14 +2453,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10f61de0"
 void NativeVcallHost_FUN_10f61de0::FUN_10f61de0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_100141a5 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_100141a5 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2538,14 +2481,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10f61f10"
 void NativeVcallHost_FUN_10f61f10::FUN_10f61f10(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_10030710 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_10030710 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2567,14 +2509,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10f677b0"
 void NativeVcallHost_FUN_10f677b0::FUN_10f677b0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_10053283 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_10053283 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2596,14 +2537,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10f73500"
 void NativeVcallHost_FUN_10f73500::FUN_10f73500(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2625,14 +2565,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10f79fd0"
 void NativeVcallHost_FUN_10f79fd0::FUN_10f79fd0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_10029de8 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_10029de8 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2654,14 +2593,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10f80a70"
 void NativeVcallHost_FUN_10f80a70::FUN_10f80a70(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2683,14 +2621,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10f80ba0"
 void NativeVcallHost_FUN_10f80ba0::FUN_10f80ba0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2712,14 +2649,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10f8e050"
 void NativeVcallHost_FUN_10f8e050::FUN_10f8e050(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2741,14 +2677,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10f8e180"
 void NativeVcallHost_FUN_10f8e180::FUN_10f8e180(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2770,14 +2705,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_10f8e2b0"
 void NativeVcallHost_FUN_10f8e2b0::FUN_10f8e2b0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2799,14 +2733,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_110182c0"
 void NativeVcallHost_FUN_110182c0::FUN_110182c0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_10067634 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_10067634 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2828,14 +2761,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_1102d970"
 void NativeVcallHost_FUN_1102d970::FUN_1102d970(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1001ebdc pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1001ebdc pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2857,14 +2789,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_11060a50"
 void NativeVcallHost_FUN_11060a50::FUN_11060a50(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_10035931 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_10035931 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2886,14 +2817,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_11061e90"
 void NativeVcallHost_FUN_11061e90::FUN_11061e90(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1006cde6 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1006cde6 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2915,14 +2845,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_11062e20"
 void NativeVcallHost_FUN_11062e20::FUN_11062e20(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_10004c00 pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_10004c00 pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2944,14 +2873,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_11065b80"
 void NativeVcallHost_FUN_11065b80::FUN_11065b80(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_1007a27f pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_1007a27f pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {
@@ -2973,14 +2901,13 @@ if (f4 != 0) {
 #line 1 "ENTRY_11067ef0"
 void NativeVcallHost_FUN_11067ef0::FUN_11067ef0(unsigned int param_2, unsigned int param_3) {
 NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);
-NativeVcallObj *piVar2 = 0;
+NativeVcallPair_100128cd pair = {piVar1, 0};
 if (piVar1 != 0) {
-  piVar2 = piVar1->vC();
-  piVar2->v4();
+  pair.next = piVar1->vC();
+  pair.next->v4();
 }
 f1c = (unsigned short)param_3;
 {
-NativeVcallPair_100128cd pair = {piVar1, piVar2};
 f14 = 0;
 m28.v18();
 if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {

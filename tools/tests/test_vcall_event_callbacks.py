@@ -125,11 +125,11 @@ class VcallEventCallbackTests(unittest.TestCase):
         self.assertIn('void NativeVcallHost_FUN_1068b210::FUN_1068b210(unsigned int param_2, unsigned int param_3)',
                       source)
         self.assertIn('(char *)this - 8', source)
-        self.assertIn('piVar2 = piVar1->vC();', source)
+        self.assertIn('pair.next = piVar1->vC();', source)
         self.assertIn('m28.v18();', source)
         self.assertIn('piVar1->v34();', source)
         self.assertIn('f4->v14(param_2, param_3);', source)
-        self.assertIn('NativeVcallPair pair = {piVar1, piVar2};', source)
+        self.assertIn('NativeVcallPair pair = {piVar1, 0};', source)
 
     def test_alternate_slot(self):
         candidate = self.candidate(slot='0x60')

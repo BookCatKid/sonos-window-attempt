@@ -256,16 +256,8 @@
     "directory": "analysis/compiled-cpp-delayed-event-callbacks"
   },
   {
-    "object": "event_copier_callbacks_reference_flags",
-    "directory": "analysis/compiled-cpp-event-copier-callbacks"
-  },
-  {
     "object": "external_event_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-external-event-callbacks"
-  },
-  {
-    "object": "named_event_callbacks_reference_flags",
-    "directory": "analysis/compiled-cpp-named-event-callbacks"
   },
   {
     "object": "pair_move_setters_reference_flags",
@@ -284,28 +276,20 @@
     "directory": "analysis/compiled-cpp-query-interface-callbacks"
   },
   {
-    "object": "op_ref_ctors_reference_flags",
-    "directory": "analysis/compiled-cpp-op-ref-ctors"
-  },
-  {
-    "object": "vcall_event_callbacks_reference_flags",
-    "directory": "analysis/compiled-cpp-vcall-event-callbacks"
-  },
-  {
     "object": "refcount_release_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-refcount-release-callbacks"
   },
   {
-    "object": "page_factories_reference_flags",
-    "directory": "analysis/compiled-cpp-page-factories"
+    "object": "alloc_holder_ctors_reference_flags",
+    "directory": "analysis/compiled-cpp-alloc-holder-ctors"
   },
   {
     "object": "op_impl_ctors_reference_flags",
     "directory": "analysis/compiled-cpp-op-impl-ctors"
   },
   {
-    "object": "alloc_holder_ctors_reference_flags",
-    "directory": "analysis/compiled-cpp-alloc-holder-ctors"
+    "object": "op_ref_ctors_reference_flags",
+    "directory": "analysis/compiled-cpp-op-ref-ctors"
   },
   {
     "object": "global_release_dtors_reference_flags",
@@ -314,5 +298,21 @@
   {
     "object": "op_impl_dtors_reference_flags",
     "directory": "analysis/compiled-cpp-op-impl-dtors"
+  },
+  {
+    "object": "vcall_event_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-vcall-event-callbacks"
+  },
+  {
+    "object": "event_copier_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-event-copier-callbacks"
+  },
+  {
+    "object": "page_factories_reference_flags",
+    "directory": "analysis/compiled-cpp-page-factories"
+  },
+  {
+    "object": "named_event_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-named-event-callbacks"
   }
 ]

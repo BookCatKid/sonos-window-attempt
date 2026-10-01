@@ -1398,8 +1398,8 @@ extern int thunk_FUN_11240850(...);
 // Reference entry 10688910; body size 260 bytes.
 #line 1 "ENTRY_10688910"
 NativeOpDtor_FUN_10688910::~NativeOpDtor_FUN_10688910() {
-v0 = (void *)&DAT_118c6304;
-NativeOpDB8_10688910::vptr = (void *)&DAT_118c634c;
+(void *volatile &)v0 = (void *)&DAT_118c6304;
+(void *volatile &)NativeOpDB8_10688910::vptr = (void *)&DAT_118c634c;
 if (NativeOpDB8_10688910::rep != 0) {
   void *p = NativeOpDB8_10688910::next;
   if (p != 0) { NativeOpDB8_10688910::rep = 0; NativeOpDB8_10688910::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1423,8 +1423,8 @@ void *q = NativeOpDB8_10688910::next;
 // Reference entry 109f78b0; body size 260 bytes.
 #line 1 "ENTRY_109f78b0"
 NativeOpDtor_FUN_109f78b0::~NativeOpDtor_FUN_109f78b0() {
-v0 = (void *)&DAT_118f1cdc;
-NativeOpDB8_109f78b0::vptr = (void *)&DAT_118f1d24;
+(void *volatile &)v0 = (void *)&DAT_118f1cdc;
+(void *volatile &)NativeOpDB8_109f78b0::vptr = (void *)&DAT_118f1d24;
 if (NativeOpDB8_109f78b0::rep != 0) {
   void *p = NativeOpDB8_109f78b0::next;
   if (p != 0) { NativeOpDB8_109f78b0::rep = 0; NativeOpDB8_109f78b0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1448,8 +1448,8 @@ void *q = NativeOpDB8_109f78b0::next;
 // Reference entry 109f7a00; body size 260 bytes.
 #line 1 "ENTRY_109f7a00"
 NativeOpDtor_FUN_109f7a00::~NativeOpDtor_FUN_109f7a00() {
-v0 = (void *)&DAT_118f1a18;
-NativeOpDB8_109f7a00::vptr = (void *)&DAT_118f1a60;
+(void *volatile &)v0 = (void *)&DAT_118f1a18;
+(void *volatile &)NativeOpDB8_109f7a00::vptr = (void *)&DAT_118f1a60;
 if (NativeOpDB8_109f7a00::rep != 0) {
   void *p = NativeOpDB8_109f7a00::next;
   if (p != 0) { NativeOpDB8_109f7a00::rep = 0; NativeOpDB8_109f7a00::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1473,8 +1473,8 @@ void *q = NativeOpDB8_109f7a00::next;
 // Reference entry 109f7b50; body size 260 bytes.
 #line 1 "ENTRY_109f7b50"
 NativeOpDtor_FUN_109f7b50::~NativeOpDtor_FUN_109f7b50() {
-v0 = (void *)&DAT_118f1e48;
-NativeOpDB8_109f7b50::vptr = (void *)&DAT_118f1e94;
+(void *volatile &)v0 = (void *)&DAT_118f1e48;
+(void *volatile &)NativeOpDB8_109f7b50::vptr = (void *)&DAT_118f1e94;
 if (NativeOpDB8_109f7b50::rep != 0) {
   void *p = NativeOpDB8_109f7b50::next;
   if (p != 0) { NativeOpDB8_109f7b50::rep = 0; NativeOpDB8_109f7b50::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1498,8 +1498,8 @@ void *q = NativeOpDB8_109f7b50::next;
 // Reference entry 109f7ca0; body size 260 bytes.
 #line 1 "ENTRY_109f7ca0"
 NativeOpDtor_FUN_109f7ca0::~NativeOpDtor_FUN_109f7ca0() {
-v0 = (void *)&DAT_118f1b74;
-NativeOpDB8_109f7ca0::vptr = (void *)&DAT_118f1bbc;
+(void *volatile &)v0 = (void *)&DAT_118f1b74;
+(void *volatile &)NativeOpDB8_109f7ca0::vptr = (void *)&DAT_118f1bbc;
 if (NativeOpDB8_109f7ca0::rep != 0) {
   void *p = NativeOpDB8_109f7ca0::next;
   if (p != 0) { NativeOpDB8_109f7ca0::rep = 0; NativeOpDB8_109f7ca0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1523,8 +1523,8 @@ void *q = NativeOpDB8_109f7ca0::next;
 // Reference entry 10b6d3c0; body size 260 bytes.
 #line 1 "ENTRY_10b6d3c0"
 NativeOpDtor_FUN_10b6d3c0::~NativeOpDtor_FUN_10b6d3c0() {
-v0 = (void *)&DAT_1190a9b0;
-NativeOpDB8_10b6d3c0::vptr = (void *)&DAT_1190a9f8;
+(void *volatile &)v0 = (void *)&DAT_1190a9b0;
+(void *volatile &)NativeOpDB8_10b6d3c0::vptr = (void *)&DAT_1190a9f8;
 if (NativeOpDB8_10b6d3c0::rep != 0) {
   void *p = NativeOpDB8_10b6d3c0::next;
   if (p != 0) { NativeOpDB8_10b6d3c0::rep = 0; NativeOpDB8_10b6d3c0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1548,8 +1548,8 @@ void *q = NativeOpDB8_10b6d3c0::next;
 // Reference entry 10b7cc90; body size 260 bytes.
 #line 1 "ENTRY_10b7cc90"
 NativeOpDtor_FUN_10b7cc90::~NativeOpDtor_FUN_10b7cc90() {
-v0 = (void *)&DAT_1190e1e8;
-NativeOpDB8_10b7cc90::vptr = (void *)&DAT_1190e234;
+(void *volatile &)v0 = (void *)&DAT_1190e1e8;
+(void *volatile &)NativeOpDB8_10b7cc90::vptr = (void *)&DAT_1190e234;
 if (NativeOpDB8_10b7cc90::rep != 0) {
   void *p = NativeOpDB8_10b7cc90::next;
   if (p != 0) { NativeOpDB8_10b7cc90::rep = 0; NativeOpDB8_10b7cc90::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1573,8 +1573,8 @@ void *q = NativeOpDB8_10b7cc90::next;
 // Reference entry 10b87b00; body size 260 bytes.
 #line 1 "ENTRY_10b87b00"
 NativeOpDtor_FUN_10b87b00::~NativeOpDtor_FUN_10b87b00() {
-v0 = (void *)&DAT_1190eb20;
-NativeOpDB8_10b87b00::vptr = (void *)&DAT_1190eb74;
+(void *volatile &)v0 = (void *)&DAT_1190eb20;
+(void *volatile &)NativeOpDB8_10b87b00::vptr = (void *)&DAT_1190eb74;
 if (NativeOpDB8_10b87b00::rep != 0) {
   void *p = NativeOpDB8_10b87b00::next;
   if (p != 0) { NativeOpDB8_10b87b00::rep = 0; NativeOpDB8_10b87b00::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1598,8 +1598,8 @@ void *q = NativeOpDB8_10b87b00::next;
 // Reference entry 10b87c50; body size 260 bytes.
 #line 1 "ENTRY_10b87c50"
 NativeOpDtor_FUN_10b87c50::~NativeOpDtor_FUN_10b87c50() {
-v0 = (void *)&DAT_1190e7cc;
-NativeOpDB8_10b87c50::vptr = (void *)&DAT_1190e820;
+(void *volatile &)v0 = (void *)&DAT_1190e7cc;
+(void *volatile &)NativeOpDB8_10b87c50::vptr = (void *)&DAT_1190e820;
 if (NativeOpDB8_10b87c50::rep != 0) {
   void *p = NativeOpDB8_10b87c50::next;
   if (p != 0) { NativeOpDB8_10b87c50::rep = 0; NativeOpDB8_10b87c50::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1623,8 +1623,8 @@ void *q = NativeOpDB8_10b87c50::next;
 // Reference entry 10b87da0; body size 260 bytes.
 #line 1 "ENTRY_10b87da0"
 NativeOpDtor_FUN_10b87da0::~NativeOpDtor_FUN_10b87da0() {
-v0 = (void *)&DAT_1190e8e8;
-NativeOpDB8_10b87da0::vptr = (void *)&DAT_1190e93c;
+(void *volatile &)v0 = (void *)&DAT_1190e8e8;
+(void *volatile &)NativeOpDB8_10b87da0::vptr = (void *)&DAT_1190e93c;
 if (NativeOpDB8_10b87da0::rep != 0) {
   void *p = NativeOpDB8_10b87da0::next;
   if (p != 0) { NativeOpDB8_10b87da0::rep = 0; NativeOpDB8_10b87da0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1648,8 +1648,8 @@ void *q = NativeOpDB8_10b87da0::next;
 // Reference entry 10b87ef0; body size 260 bytes.
 #line 1 "ENTRY_10b87ef0"
 NativeOpDtor_FUN_10b87ef0::~NativeOpDtor_FUN_10b87ef0() {
-v0 = (void *)&DAT_1190ea04;
-NativeOpDB8_10b87ef0::vptr = (void *)&DAT_1190ea58;
+(void *volatile &)v0 = (void *)&DAT_1190ea04;
+(void *volatile &)NativeOpDB8_10b87ef0::vptr = (void *)&DAT_1190ea58;
 if (NativeOpDB8_10b87ef0::rep != 0) {
   void *p = NativeOpDB8_10b87ef0::next;
   if (p != 0) { NativeOpDB8_10b87ef0::rep = 0; NativeOpDB8_10b87ef0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1673,8 +1673,8 @@ void *q = NativeOpDB8_10b87ef0::next;
 // Reference entry 10c4afd0; body size 260 bytes.
 #line 1 "ENTRY_10c4afd0"
 NativeOpDtor_FUN_10c4afd0::~NativeOpDtor_FUN_10c4afd0() {
-v0 = (void *)&DAT_11916cac;
-NativeOpDB8_10c4afd0::vptr = (void *)&DAT_11916cf4;
+(void *volatile &)v0 = (void *)&DAT_11916cac;
+(void *volatile &)NativeOpDB8_10c4afd0::vptr = (void *)&DAT_11916cf4;
 if (NativeOpDB8_10c4afd0::rep != 0) {
   void *p = NativeOpDB8_10c4afd0::next;
   if (p != 0) { NativeOpDB8_10c4afd0::rep = 0; NativeOpDB8_10c4afd0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1698,8 +1698,8 @@ void *q = NativeOpDB8_10c4afd0::next;
 // Reference entry 10c4f390; body size 260 bytes.
 #line 1 "ENTRY_10c4f390"
 NativeOpDtor_FUN_10c4f390::~NativeOpDtor_FUN_10c4f390() {
-v0 = (void *)&DAT_11917598;
-NativeOpDB8_10c4f390::vptr = (void *)&DAT_119175e4;
+(void *volatile &)v0 = (void *)&DAT_11917598;
+(void *volatile &)NativeOpDB8_10c4f390::vptr = (void *)&DAT_119175e4;
 if (NativeOpDB8_10c4f390::rep != 0) {
   void *p = NativeOpDB8_10c4f390::next;
   if (p != 0) { NativeOpDB8_10c4f390::rep = 0; NativeOpDB8_10c4f390::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1723,8 +1723,8 @@ void *q = NativeOpDB8_10c4f390::next;
 // Reference entry 10c4f4e0; body size 260 bytes.
 #line 1 "ENTRY_10c4f4e0"
 NativeOpDtor_FUN_10c4f4e0::~NativeOpDtor_FUN_10c4f4e0() {
-v0 = (void *)&DAT_119176a0;
-NativeOpDB8_10c4f4e0::vptr = (void *)&DAT_119176ec;
+(void *volatile &)v0 = (void *)&DAT_119176a0;
+(void *volatile &)NativeOpDB8_10c4f4e0::vptr = (void *)&DAT_119176ec;
 if (NativeOpDB8_10c4f4e0::rep != 0) {
   void *p = NativeOpDB8_10c4f4e0::next;
   if (p != 0) { NativeOpDB8_10c4f4e0::rep = 0; NativeOpDB8_10c4f4e0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1748,8 +1748,8 @@ void *q = NativeOpDB8_10c4f4e0::next;
 // Reference entry 10c4f630; body size 260 bytes.
 #line 1 "ENTRY_10c4f630"
 NativeOpDtor_FUN_10c4f630::~NativeOpDtor_FUN_10c4f630() {
-v0 = (void *)&DAT_119177a8;
-NativeOpDB8_10c4f630::vptr = (void *)&DAT_119177f4;
+(void *volatile &)v0 = (void *)&DAT_119177a8;
+(void *volatile &)NativeOpDB8_10c4f630::vptr = (void *)&DAT_119177f4;
 if (NativeOpDB8_10c4f630::rep != 0) {
   void *p = NativeOpDB8_10c4f630::next;
   if (p != 0) { NativeOpDB8_10c4f630::rep = 0; NativeOpDB8_10c4f630::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1773,8 +1773,8 @@ void *q = NativeOpDB8_10c4f630::next;
 // Reference entry 10c4f780; body size 260 bytes.
 #line 1 "ENTRY_10c4f780"
 NativeOpDtor_FUN_10c4f780::~NativeOpDtor_FUN_10c4f780() {
-v0 = (void *)&DAT_11917a14;
-NativeOpDB8_10c4f780::vptr = (void *)&DAT_11917a60;
+(void *volatile &)v0 = (void *)&DAT_11917a14;
+(void *volatile &)NativeOpDB8_10c4f780::vptr = (void *)&DAT_11917a60;
 if (NativeOpDB8_10c4f780::rep != 0) {
   void *p = NativeOpDB8_10c4f780::next;
   if (p != 0) { NativeOpDB8_10c4f780::rep = 0; NativeOpDB8_10c4f780::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1798,8 +1798,8 @@ void *q = NativeOpDB8_10c4f780::next;
 // Reference entry 10c4f8d0; body size 260 bytes.
 #line 1 "ENTRY_10c4f8d0"
 NativeOpDtor_FUN_10c4f8d0::~NativeOpDtor_FUN_10c4f8d0() {
-v0 = (void *)&DAT_11917914;
-NativeOpDB8_10c4f8d0::vptr = (void *)&DAT_1191795c;
+(void *volatile &)v0 = (void *)&DAT_11917914;
+(void *volatile &)NativeOpDB8_10c4f8d0::vptr = (void *)&DAT_1191795c;
 if (NativeOpDB8_10c4f8d0::rep != 0) {
   void *p = NativeOpDB8_10c4f8d0::next;
   if (p != 0) { NativeOpDB8_10c4f8d0::rep = 0; NativeOpDB8_10c4f8d0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1823,8 +1823,8 @@ void *q = NativeOpDB8_10c4f8d0::next;
 // Reference entry 10c55600; body size 260 bytes.
 #line 1 "ENTRY_10c55600"
 NativeOpDtor_FUN_10c55600::~NativeOpDtor_FUN_10c55600() {
-v0 = (void *)&DAT_11917ff0;
-NativeOpDB8_10c55600::vptr = (void *)&DAT_11918044;
+(void *volatile &)v0 = (void *)&DAT_11917ff0;
+(void *volatile &)NativeOpDB8_10c55600::vptr = (void *)&DAT_11918044;
 if (NativeOpDB8_10c55600::rep != 0) {
   void *p = NativeOpDB8_10c55600::next;
   if (p != 0) { NativeOpDB8_10c55600::rep = 0; NativeOpDB8_10c55600::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1848,8 +1848,8 @@ void *q = NativeOpDB8_10c55600::next;
 // Reference entry 10c55750; body size 260 bytes.
 #line 1 "ENTRY_10c55750"
 NativeOpDtor_FUN_10c55750::~NativeOpDtor_FUN_10c55750() {
-v0 = (void *)&DAT_1191825c;
-NativeOpDB8_10c55750::vptr = (void *)&DAT_119182b0;
+(void *volatile &)v0 = (void *)&DAT_1191825c;
+(void *volatile &)NativeOpDB8_10c55750::vptr = (void *)&DAT_119182b0;
 if (NativeOpDB8_10c55750::rep != 0) {
   void *p = NativeOpDB8_10c55750::next;
   if (p != 0) { NativeOpDB8_10c55750::rep = 0; NativeOpDB8_10c55750::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1873,8 +1873,8 @@ void *q = NativeOpDB8_10c55750::next;
 // Reference entry 10c558a0; body size 260 bytes.
 #line 1 "ENTRY_10c558a0"
 NativeOpDtor_FUN_10c558a0::~NativeOpDtor_FUN_10c558a0() {
-v0 = (void *)&DAT_11917eec;
-NativeOpDB8_10c558a0::vptr = (void *)&DAT_11917f34;
+(void *volatile &)v0 = (void *)&DAT_11917eec;
+(void *volatile &)NativeOpDB8_10c558a0::vptr = (void *)&DAT_11917f34;
 if (NativeOpDB8_10c558a0::rep != 0) {
   void *p = NativeOpDB8_10c558a0::next;
   if (p != 0) { NativeOpDB8_10c558a0::rep = 0; NativeOpDB8_10c558a0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1898,8 +1898,8 @@ void *q = NativeOpDB8_10c558a0::next;
 // Reference entry 10c559f0; body size 260 bytes.
 #line 1 "ENTRY_10c559f0"
 NativeOpDtor_FUN_10c559f0::~NativeOpDtor_FUN_10c559f0() {
-v0 = (void *)&DAT_11918158;
-NativeOpDB8_10c559f0::vptr = (void *)&DAT_119181a0;
+(void *volatile &)v0 = (void *)&DAT_11918158;
+(void *volatile &)NativeOpDB8_10c559f0::vptr = (void *)&DAT_119181a0;
 if (NativeOpDB8_10c559f0::rep != 0) {
   void *p = NativeOpDB8_10c559f0::next;
   if (p != 0) { NativeOpDB8_10c559f0::rep = 0; NativeOpDB8_10c559f0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1923,8 +1923,8 @@ void *q = NativeOpDB8_10c559f0::next;
 // Reference entry 10c59700; body size 260 bytes.
 #line 1 "ENTRY_10c59700"
 NativeOpDtor_FUN_10c59700::~NativeOpDtor_FUN_10c59700() {
-v0 = (void *)&DAT_11918578;
-NativeOpDB8_10c59700::vptr = (void *)&DAT_119185c4;
+(void *volatile &)v0 = (void *)&DAT_11918578;
+(void *volatile &)NativeOpDB8_10c59700::vptr = (void *)&DAT_119185c4;
 if (NativeOpDB8_10c59700::rep != 0) {
   void *p = NativeOpDB8_10c59700::next;
   if (p != 0) { NativeOpDB8_10c59700::rep = 0; NativeOpDB8_10c59700::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1948,8 +1948,8 @@ void *q = NativeOpDB8_10c59700::next;
 // Reference entry 10c80f90; body size 260 bytes.
 #line 1 "ENTRY_10c80f90"
 NativeOpDtor_FUN_10c80f90::~NativeOpDtor_FUN_10c80f90() {
-v0 = (void *)&DAT_1191af90;
-NativeOpDB8_10c80f90::vptr = (void *)&DAT_1191afd8;
+(void *volatile &)v0 = (void *)&DAT_1191af90;
+(void *volatile &)NativeOpDB8_10c80f90::vptr = (void *)&DAT_1191afd8;
 if (NativeOpDB8_10c80f90::rep != 0) {
   void *p = NativeOpDB8_10c80f90::next;
   if (p != 0) { NativeOpDB8_10c80f90::rep = 0; NativeOpDB8_10c80f90::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1973,8 +1973,8 @@ void *q = NativeOpDB8_10c80f90::next;
 // Reference entry 10c810e0; body size 260 bytes.
 #line 1 "ENTRY_10c810e0"
 NativeOpDtor_FUN_10c810e0::~NativeOpDtor_FUN_10c810e0() {
-v0 = (void *)&DAT_1191b04c;
-NativeOpDB8_10c810e0::vptr = (void *)&DAT_1191b094;
+(void *volatile &)v0 = (void *)&DAT_1191b04c;
+(void *volatile &)NativeOpDB8_10c810e0::vptr = (void *)&DAT_1191b094;
 if (NativeOpDB8_10c810e0::rep != 0) {
   void *p = NativeOpDB8_10c810e0::next;
   if (p != 0) { NativeOpDB8_10c810e0::rep = 0; NativeOpDB8_10c810e0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -1998,8 +1998,8 @@ void *q = NativeOpDB8_10c810e0::next;
 // Reference entry 10cc12a0; body size 260 bytes.
 #line 1 "ENTRY_10cc12a0"
 NativeOpDtor_FUN_10cc12a0::~NativeOpDtor_FUN_10cc12a0() {
-v0 = (void *)&DAT_1191edd4;
-NativeOpDB8_10cc12a0::vptr = (void *)&DAT_1191ee50;
+(void *volatile &)v0 = (void *)&DAT_1191edd4;
+(void *volatile &)NativeOpDB8_10cc12a0::vptr = (void *)&DAT_1191ee50;
 if (NativeOpDB8_10cc12a0::rep != 0) {
   void *p = NativeOpDB8_10cc12a0::next;
   if (p != 0) { NativeOpDB8_10cc12a0::rep = 0; NativeOpDB8_10cc12a0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2023,8 +2023,8 @@ void *q = NativeOpDB8_10cc12a0::next;
 // Reference entry 10cca490; body size 260 bytes.
 #line 1 "ENTRY_10cca490"
 NativeOpDtor_FUN_10cca490::~NativeOpDtor_FUN_10cca490() {
-v0 = (void *)&DAT_1191f540;
-NativeOpDB8_10cca490::vptr = (void *)&DAT_1191f588;
+(void *volatile &)v0 = (void *)&DAT_1191f540;
+(void *volatile &)NativeOpDB8_10cca490::vptr = (void *)&DAT_1191f588;
 if (NativeOpDB8_10cca490::rep != 0) {
   void *p = NativeOpDB8_10cca490::next;
   if (p != 0) { NativeOpDB8_10cca490::rep = 0; NativeOpDB8_10cca490::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2048,8 +2048,8 @@ void *q = NativeOpDB8_10cca490::next;
 // Reference entry 10cca5e0; body size 260 bytes.
 #line 1 "ENTRY_10cca5e0"
 NativeOpDtor_FUN_10cca5e0::~NativeOpDtor_FUN_10cca5e0() {
-v0 = (void *)&DAT_1191f194;
-NativeOpDB8_10cca5e0::vptr = (void *)&DAT_1191f1dc;
+(void *volatile &)v0 = (void *)&DAT_1191f194;
+(void *volatile &)NativeOpDB8_10cca5e0::vptr = (void *)&DAT_1191f1dc;
 if (NativeOpDB8_10cca5e0::rep != 0) {
   void *p = NativeOpDB8_10cca5e0::next;
   if (p != 0) { NativeOpDB8_10cca5e0::rep = 0; NativeOpDB8_10cca5e0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2073,8 +2073,8 @@ void *q = NativeOpDB8_10cca5e0::next;
 // Reference entry 10cca730; body size 260 bytes.
 #line 1 "ENTRY_10cca730"
 NativeOpDtor_FUN_10cca730::~NativeOpDtor_FUN_10cca730() {
-v0 = (void *)&DAT_1191ef60;
-NativeOpDB8_10cca730::vptr = (void *)&DAT_1191efa8;
+(void *volatile &)v0 = (void *)&DAT_1191ef60;
+(void *volatile &)NativeOpDB8_10cca730::vptr = (void *)&DAT_1191efa8;
 if (NativeOpDB8_10cca730::rep != 0) {
   void *p = NativeOpDB8_10cca730::next;
   if (p != 0) { NativeOpDB8_10cca730::rep = 0; NativeOpDB8_10cca730::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2098,8 +2098,8 @@ void *q = NativeOpDB8_10cca730::next;
 // Reference entry 10cca880; body size 260 bytes.
 #line 1 "ENTRY_10cca880"
 NativeOpDtor_FUN_10cca880::~NativeOpDtor_FUN_10cca880() {
-v0 = (void *)&DAT_1191f0d8;
-NativeOpDB8_10cca880::vptr = (void *)&DAT_1191f120;
+(void *volatile &)v0 = (void *)&DAT_1191f0d8;
+(void *volatile &)NativeOpDB8_10cca880::vptr = (void *)&DAT_1191f120;
 if (NativeOpDB8_10cca880::rep != 0) {
   void *p = NativeOpDB8_10cca880::next;
   if (p != 0) { NativeOpDB8_10cca880::rep = 0; NativeOpDB8_10cca880::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2123,8 +2123,8 @@ void *q = NativeOpDB8_10cca880::next;
 // Reference entry 10cca9d0; body size 260 bytes.
 #line 1 "ENTRY_10cca9d0"
 NativeOpDtor_FUN_10cca9d0::~NativeOpDtor_FUN_10cca9d0() {
-v0 = (void *)&DAT_1191f01c;
-NativeOpDB8_10cca9d0::vptr = (void *)&DAT_1191f064;
+(void *volatile &)v0 = (void *)&DAT_1191f01c;
+(void *volatile &)NativeOpDB8_10cca9d0::vptr = (void *)&DAT_1191f064;
 if (NativeOpDB8_10cca9d0::rep != 0) {
   void *p = NativeOpDB8_10cca9d0::next;
   if (p != 0) { NativeOpDB8_10cca9d0::rep = 0; NativeOpDB8_10cca9d0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2148,8 +2148,8 @@ void *q = NativeOpDB8_10cca9d0::next;
 // Reference entry 10ccab20; body size 260 bytes.
 #line 1 "ENTRY_10ccab20"
 NativeOpDtor_FUN_10ccab20::~NativeOpDtor_FUN_10ccab20() {
-v0 = (void *)&DAT_1191f250;
-NativeOpDB8_10ccab20::vptr = (void *)&DAT_1191f298;
+(void *volatile &)v0 = (void *)&DAT_1191f250;
+(void *volatile &)NativeOpDB8_10ccab20::vptr = (void *)&DAT_1191f298;
 if (NativeOpDB8_10ccab20::rep != 0) {
   void *p = NativeOpDB8_10ccab20::next;
   if (p != 0) { NativeOpDB8_10ccab20::rep = 0; NativeOpDB8_10ccab20::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2173,8 +2173,8 @@ void *q = NativeOpDB8_10ccab20::next;
 // Reference entry 10ccac70; body size 260 bytes.
 #line 1 "ENTRY_10ccac70"
 NativeOpDtor_FUN_10ccac70::~NativeOpDtor_FUN_10ccac70() {
-v0 = (void *)&DAT_1191f3c8;
-NativeOpDB8_10ccac70::vptr = (void *)&DAT_1191f410;
+(void *volatile &)v0 = (void *)&DAT_1191f3c8;
+(void *volatile &)NativeOpDB8_10ccac70::vptr = (void *)&DAT_1191f410;
 if (NativeOpDB8_10ccac70::rep != 0) {
   void *p = NativeOpDB8_10ccac70::next;
   if (p != 0) { NativeOpDB8_10ccac70::rep = 0; NativeOpDB8_10ccac70::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2198,8 +2198,8 @@ void *q = NativeOpDB8_10ccac70::next;
 // Reference entry 10ccadc0; body size 260 bytes.
 #line 1 "ENTRY_10ccadc0"
 NativeOpDtor_FUN_10ccadc0::~NativeOpDtor_FUN_10ccadc0() {
-v0 = (void *)&DAT_1191f484;
-NativeOpDB8_10ccadc0::vptr = (void *)&DAT_1191f4cc;
+(void *volatile &)v0 = (void *)&DAT_1191f484;
+(void *volatile &)NativeOpDB8_10ccadc0::vptr = (void *)&DAT_1191f4cc;
 if (NativeOpDB8_10ccadc0::rep != 0) {
   void *p = NativeOpDB8_10ccadc0::next;
   if (p != 0) { NativeOpDB8_10ccadc0::rep = 0; NativeOpDB8_10ccadc0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2223,8 +2223,8 @@ void *q = NativeOpDB8_10ccadc0::next;
 // Reference entry 10ccaf10; body size 260 bytes.
 #line 1 "ENTRY_10ccaf10"
 NativeOpDtor_FUN_10ccaf10::~NativeOpDtor_FUN_10ccaf10() {
-v0 = (void *)&DAT_1191f30c;
-NativeOpDB8_10ccaf10::vptr = (void *)&DAT_1191f354;
+(void *volatile &)v0 = (void *)&DAT_1191f30c;
+(void *volatile &)NativeOpDB8_10ccaf10::vptr = (void *)&DAT_1191f354;
 if (NativeOpDB8_10ccaf10::rep != 0) {
   void *p = NativeOpDB8_10ccaf10::next;
   if (p != 0) { NativeOpDB8_10ccaf10::rep = 0; NativeOpDB8_10ccaf10::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2248,8 +2248,8 @@ void *q = NativeOpDB8_10ccaf10::next;
 // Reference entry 10cdbb90; body size 260 bytes.
 #line 1 "ENTRY_10cdbb90"
 NativeOpDtor_FUN_10cdbb90::~NativeOpDtor_FUN_10cdbb90() {
-v0 = (void *)&DAT_11920b84;
-NativeOpDB8_10cdbb90::vptr = (void *)&DAT_11920bd0;
+(void *volatile &)v0 = (void *)&DAT_11920b84;
+(void *volatile &)NativeOpDB8_10cdbb90::vptr = (void *)&DAT_11920bd0;
 if (NativeOpDB8_10cdbb90::rep != 0) {
   void *p = NativeOpDB8_10cdbb90::next;
   if (p != 0) { NativeOpDB8_10cdbb90::rep = 0; NativeOpDB8_10cdbb90::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2273,8 +2273,8 @@ void *q = NativeOpDB8_10cdbb90::next;
 // Reference entry 10cdbce0; body size 260 bytes.
 #line 1 "ENTRY_10cdbce0"
 NativeOpDtor_FUN_10cdbce0::~NativeOpDtor_FUN_10cdbce0() {
-v0 = (void *)&DAT_11920a10;
-NativeOpDB8_10cdbce0::vptr = (void *)&DAT_11920a58;
+(void *volatile &)v0 = (void *)&DAT_11920a10;
+(void *volatile &)NativeOpDB8_10cdbce0::vptr = (void *)&DAT_11920a58;
 if (NativeOpDB8_10cdbce0::rep != 0) {
   void *p = NativeOpDB8_10cdbce0::next;
   if (p != 0) { NativeOpDB8_10cdbce0::rep = 0; NativeOpDB8_10cdbce0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2298,8 +2298,8 @@ void *q = NativeOpDB8_10cdbce0::next;
 // Reference entry 10ce10f0; body size 260 bytes.
 #line 1 "ENTRY_10ce10f0"
 NativeOpDtor_FUN_10ce10f0::~NativeOpDtor_FUN_10ce10f0() {
-v0 = (void *)&DAT_119211cc;
-NativeOpDB8_10ce10f0::vptr = (void *)&DAT_11921218;
+(void *volatile &)v0 = (void *)&DAT_119211cc;
+(void *volatile &)NativeOpDB8_10ce10f0::vptr = (void *)&DAT_11921218;
 if (NativeOpDB8_10ce10f0::rep != 0) {
   void *p = NativeOpDB8_10ce10f0::next;
   if (p != 0) { NativeOpDB8_10ce10f0::rep = 0; NativeOpDB8_10ce10f0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2323,8 +2323,8 @@ void *q = NativeOpDB8_10ce10f0::next;
 // Reference entry 10cf58e0; body size 260 bytes.
 #line 1 "ENTRY_10cf58e0"
 NativeOpDtor_FUN_10cf58e0::~NativeOpDtor_FUN_10cf58e0() {
-v0 = (void *)&DAT_1192275c;
-NativeOpDB8_10cf58e0::vptr = (void *)&DAT_119227b8;
+(void *volatile &)v0 = (void *)&DAT_1192275c;
+(void *volatile &)NativeOpDB8_10cf58e0::vptr = (void *)&DAT_119227b8;
 if (NativeOpDB8_10cf58e0::rep != 0) {
   void *p = NativeOpDB8_10cf58e0::next;
   if (p != 0) { NativeOpDB8_10cf58e0::rep = 0; NativeOpDB8_10cf58e0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2348,8 +2348,8 @@ void *q = NativeOpDB8_10cf58e0::next;
 // Reference entry 10d806c0; body size 260 bytes.
 #line 1 "ENTRY_10d806c0"
 NativeOpDtor_FUN_10d806c0::~NativeOpDtor_FUN_10d806c0() {
-v0 = (void *)&DAT_1192f220;
-NativeOpDB8_10d806c0::vptr = (void *)&DAT_1192f268;
+(void *volatile &)v0 = (void *)&DAT_1192f220;
+(void *volatile &)NativeOpDB8_10d806c0::vptr = (void *)&DAT_1192f268;
 if (NativeOpDB8_10d806c0::rep != 0) {
   void *p = NativeOpDB8_10d806c0::next;
   if (p != 0) { NativeOpDB8_10d806c0::rep = 0; NativeOpDB8_10d806c0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2373,8 +2373,8 @@ void *q = NativeOpDB8_10d806c0::next;
 // Reference entry 10d80810; body size 260 bytes.
 #line 1 "ENTRY_10d80810"
 NativeOpDtor_FUN_10d80810::~NativeOpDtor_FUN_10d80810() {
-v0 = (void *)&DAT_1192f398;
-NativeOpDB8_10d80810::vptr = (void *)&DAT_1192f3e0;
+(void *volatile &)v0 = (void *)&DAT_1192f398;
+(void *volatile &)NativeOpDB8_10d80810::vptr = (void *)&DAT_1192f3e0;
 if (NativeOpDB8_10d80810::rep != 0) {
   void *p = NativeOpDB8_10d80810::next;
   if (p != 0) { NativeOpDB8_10d80810::rep = 0; NativeOpDB8_10d80810::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2398,8 +2398,8 @@ void *q = NativeOpDB8_10d80810::next;
 // Reference entry 10d80960; body size 260 bytes.
 #line 1 "ENTRY_10d80960"
 NativeOpDtor_FUN_10d80960::~NativeOpDtor_FUN_10d80960() {
-v0 = (void *)&DAT_1192f164;
-NativeOpDB8_10d80960::vptr = (void *)&DAT_1192f1ac;
+(void *volatile &)v0 = (void *)&DAT_1192f164;
+(void *volatile &)NativeOpDB8_10d80960::vptr = (void *)&DAT_1192f1ac;
 if (NativeOpDB8_10d80960::rep != 0) {
   void *p = NativeOpDB8_10d80960::next;
   if (p != 0) { NativeOpDB8_10d80960::rep = 0; NativeOpDB8_10d80960::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2423,8 +2423,8 @@ void *q = NativeOpDB8_10d80960::next;
 // Reference entry 10d80ab0; body size 260 bytes.
 #line 1 "ENTRY_10d80ab0"
 NativeOpDtor_FUN_10d80ab0::~NativeOpDtor_FUN_10d80ab0() {
-v0 = (void *)&DAT_1192f2dc;
-NativeOpDB8_10d80ab0::vptr = (void *)&DAT_1192f324;
+(void *volatile &)v0 = (void *)&DAT_1192f2dc;
+(void *volatile &)NativeOpDB8_10d80ab0::vptr = (void *)&DAT_1192f324;
 if (NativeOpDB8_10d80ab0::rep != 0) {
   void *p = NativeOpDB8_10d80ab0::next;
   if (p != 0) { NativeOpDB8_10d80ab0::rep = 0; NativeOpDB8_10d80ab0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2448,8 +2448,8 @@ void *q = NativeOpDB8_10d80ab0::next;
 // Reference entry 10d9b8e0; body size 260 bytes.
 #line 1 "ENTRY_10d9b8e0"
 NativeOpDtor_FUN_10d9b8e0::~NativeOpDtor_FUN_10d9b8e0() {
-v0 = (void *)&DAT_119319d0;
-NativeOpDB8_10d9b8e0::vptr = (void *)&DAT_11931a18;
+(void *volatile &)v0 = (void *)&DAT_119319d0;
+(void *volatile &)NativeOpDB8_10d9b8e0::vptr = (void *)&DAT_11931a18;
 if (NativeOpDB8_10d9b8e0::rep != 0) {
   void *p = NativeOpDB8_10d9b8e0::next;
   if (p != 0) { NativeOpDB8_10d9b8e0::rep = 0; NativeOpDB8_10d9b8e0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2473,8 +2473,8 @@ void *q = NativeOpDB8_10d9b8e0::next;
 // Reference entry 10de4fe0; body size 260 bytes.
 #line 1 "ENTRY_10de4fe0"
 NativeOpDtor_FUN_10de4fe0::~NativeOpDtor_FUN_10de4fe0() {
-v0 = (void *)&DAT_11935fbc;
-NativeOpDB8_10de4fe0::vptr = (void *)&DAT_11936014;
+(void *volatile &)v0 = (void *)&DAT_11935fbc;
+(void *volatile &)NativeOpDB8_10de4fe0::vptr = (void *)&DAT_11936014;
 if (NativeOpDB8_10de4fe0::rep != 0) {
   void *p = NativeOpDB8_10de4fe0::next;
   if (p != 0) { NativeOpDB8_10de4fe0::rep = 0; NativeOpDB8_10de4fe0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2498,8 +2498,8 @@ void *q = NativeOpDB8_10de4fe0::next;
 // Reference entry 10e92f40; body size 260 bytes.
 #line 1 "ENTRY_10e92f40"
 NativeOpDtor_FUN_10e92f40::~NativeOpDtor_FUN_10e92f40() {
-v0 = (void *)&DAT_119468ac;
-NativeOpDB8_10e92f40::vptr = (void *)&DAT_119468f8;
+(void *volatile &)v0 = (void *)&DAT_119468ac;
+(void *volatile &)NativeOpDB8_10e92f40::vptr = (void *)&DAT_119468f8;
 if (NativeOpDB8_10e92f40::rep != 0) {
   void *p = NativeOpDB8_10e92f40::next;
   if (p != 0) { NativeOpDB8_10e92f40::rep = 0; NativeOpDB8_10e92f40::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2523,8 +2523,8 @@ void *q = NativeOpDB8_10e92f40::next;
 // Reference entry 10ef1910; body size 260 bytes.
 #line 1 "ENTRY_10ef1910"
 NativeOpDtor_FUN_10ef1910::~NativeOpDtor_FUN_10ef1910() {
-v0 = (void *)&DAT_1194b774;
-NativeOpDB8_10ef1910::vptr = (void *)&DAT_1194b7bc;
+(void *volatile &)v0 = (void *)&DAT_1194b774;
+(void *volatile &)NativeOpDB8_10ef1910::vptr = (void *)&DAT_1194b7bc;
 if (NativeOpDB8_10ef1910::rep != 0) {
   void *p = NativeOpDB8_10ef1910::next;
   if (p != 0) { NativeOpDB8_10ef1910::rep = 0; NativeOpDB8_10ef1910::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2548,8 +2548,8 @@ void *q = NativeOpDB8_10ef1910::next;
 // Reference entry 10f0ef30; body size 260 bytes.
 #line 1 "ENTRY_10f0ef30"
 NativeOpDtor_FUN_10f0ef30::~NativeOpDtor_FUN_10f0ef30() {
-v0 = (void *)&DAT_1194ce28;
-NativeOpDB8_10f0ef30::vptr = (void *)&DAT_1194ce88;
+(void *volatile &)v0 = (void *)&DAT_1194ce28;
+(void *volatile &)NativeOpDB8_10f0ef30::vptr = (void *)&DAT_1194ce88;
 if (NativeOpDB8_10f0ef30::rep != 0) {
   void *p = NativeOpDB8_10f0ef30::next;
   if (p != 0) { NativeOpDB8_10f0ef30::rep = 0; NativeOpDB8_10f0ef30::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2573,8 +2573,8 @@ void *q = NativeOpDB8_10f0ef30::next;
 // Reference entry 10f0f080; body size 260 bytes.
 #line 1 "ENTRY_10f0f080"
 NativeOpDtor_FUN_10f0f080::~NativeOpDtor_FUN_10f0f080() {
-v0 = (void *)&DAT_1194cc50;
-NativeOpDB8_10f0f080::vptr = (void *)&DAT_1194ccb0;
+(void *volatile &)v0 = (void *)&DAT_1194cc50;
+(void *volatile &)NativeOpDB8_10f0f080::vptr = (void *)&DAT_1194ccb0;
 if (NativeOpDB8_10f0f080::rep != 0) {
   void *p = NativeOpDB8_10f0f080::next;
   if (p != 0) { NativeOpDB8_10f0f080::rep = 0; NativeOpDB8_10f0f080::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2598,8 +2598,8 @@ void *q = NativeOpDB8_10f0f080::next;
 // Reference entry 10f0f1d0; body size 260 bytes.
 #line 1 "ENTRY_10f0f1d0"
 NativeOpDtor_FUN_10f0f1d0::~NativeOpDtor_FUN_10f0f1d0() {
-v0 = (void *)&DAT_1194cd3c;
-NativeOpDB8_10f0f1d0::vptr = (void *)&DAT_1194cd9c;
+(void *volatile &)v0 = (void *)&DAT_1194cd3c;
+(void *volatile &)NativeOpDB8_10f0f1d0::vptr = (void *)&DAT_1194cd9c;
 if (NativeOpDB8_10f0f1d0::rep != 0) {
   void *p = NativeOpDB8_10f0f1d0::next;
   if (p != 0) { NativeOpDB8_10f0f1d0::rep = 0; NativeOpDB8_10f0f1d0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2623,8 +2623,8 @@ void *q = NativeOpDB8_10f0f1d0::next;
 // Reference entry 10f259f0; body size 260 bytes.
 #line 1 "ENTRY_10f259f0"
 NativeOpDtor_FUN_10f259f0::~NativeOpDtor_FUN_10f259f0() {
-v0 = (void *)&DAT_1194e61c;
-NativeOpDB8_10f259f0::vptr = (void *)&DAT_1194e664;
+(void *volatile &)v0 = (void *)&DAT_1194e61c;
+(void *volatile &)NativeOpDB8_10f259f0::vptr = (void *)&DAT_1194e664;
 if (NativeOpDB8_10f259f0::rep != 0) {
   void *p = NativeOpDB8_10f259f0::next;
   if (p != 0) { NativeOpDB8_10f259f0::rep = 0; NativeOpDB8_10f259f0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2648,8 +2648,8 @@ void *q = NativeOpDB8_10f259f0::next;
 // Reference entry 10f31800; body size 260 bytes.
 #line 1 "ENTRY_10f31800"
 NativeOpDtor_FUN_10f31800::~NativeOpDtor_FUN_10f31800() {
-v0 = (void *)&DAT_1194f378;
-NativeOpDB8_10f31800::vptr = (void *)&DAT_1194f3c0;
+(void *volatile &)v0 = (void *)&DAT_1194f378;
+(void *volatile &)NativeOpDB8_10f31800::vptr = (void *)&DAT_1194f3c0;
 if (NativeOpDB8_10f31800::rep != 0) {
   void *p = NativeOpDB8_10f31800::next;
   if (p != 0) { NativeOpDB8_10f31800::rep = 0; NativeOpDB8_10f31800::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2673,8 +2673,8 @@ void *q = NativeOpDB8_10f31800::next;
 // Reference entry 10f31950; body size 260 bytes.
 #line 1 "ENTRY_10f31950"
 NativeOpDtor_FUN_10f31950::~NativeOpDtor_FUN_10f31950() {
-v0 = (void *)&DAT_1194f2b8;
-NativeOpDB8_10f31950::vptr = (void *)&DAT_1194f300;
+(void *volatile &)v0 = (void *)&DAT_1194f2b8;
+(void *volatile &)NativeOpDB8_10f31950::vptr = (void *)&DAT_1194f300;
 if (NativeOpDB8_10f31950::rep != 0) {
   void *p = NativeOpDB8_10f31950::next;
   if (p != 0) { NativeOpDB8_10f31950::rep = 0; NativeOpDB8_10f31950::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2698,8 +2698,8 @@ void *q = NativeOpDB8_10f31950::next;
 // Reference entry 10f31aa0; body size 260 bytes.
 #line 1 "ENTRY_10f31aa0"
 NativeOpDtor_FUN_10f31aa0::~NativeOpDtor_FUN_10f31aa0() {
-v0 = (void *)&DAT_1194f1f8;
-NativeOpDB8_10f31aa0::vptr = (void *)&DAT_1194f240;
+(void *volatile &)v0 = (void *)&DAT_1194f1f8;
+(void *volatile &)NativeOpDB8_10f31aa0::vptr = (void *)&DAT_1194f240;
 if (NativeOpDB8_10f31aa0::rep != 0) {
   void *p = NativeOpDB8_10f31aa0::next;
   if (p != 0) { NativeOpDB8_10f31aa0::rep = 0; NativeOpDB8_10f31aa0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2723,8 +2723,8 @@ void *q = NativeOpDB8_10f31aa0::next;
 // Reference entry 10f31bf0; body size 260 bytes.
 #line 1 "ENTRY_10f31bf0"
 NativeOpDtor_FUN_10f31bf0::~NativeOpDtor_FUN_10f31bf0() {
-v0 = (void *)&DAT_1194f138;
-NativeOpDB8_10f31bf0::vptr = (void *)&DAT_1194f180;
+(void *volatile &)v0 = (void *)&DAT_1194f138;
+(void *volatile &)NativeOpDB8_10f31bf0::vptr = (void *)&DAT_1194f180;
 if (NativeOpDB8_10f31bf0::rep != 0) {
   void *p = NativeOpDB8_10f31bf0::next;
   if (p != 0) { NativeOpDB8_10f31bf0::rep = 0; NativeOpDB8_10f31bf0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2748,8 +2748,8 @@ void *q = NativeOpDB8_10f31bf0::next;
 // Reference entry 10f570c0; body size 260 bytes.
 #line 1 "ENTRY_10f570c0"
 NativeOpDtor_FUN_10f570c0::~NativeOpDtor_FUN_10f570c0() {
-v0 = (void *)&DAT_11952090;
-NativeOpDB8_10f570c0::vptr = (void *)&DAT_119520dc;
+(void *volatile &)v0 = (void *)&DAT_11952090;
+(void *volatile &)NativeOpDB8_10f570c0::vptr = (void *)&DAT_119520dc;
 if (NativeOpDB8_10f570c0::rep != 0) {
   void *p = NativeOpDB8_10f570c0::next;
   if (p != 0) { NativeOpDB8_10f570c0::rep = 0; NativeOpDB8_10f570c0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2773,8 +2773,8 @@ void *q = NativeOpDB8_10f570c0::next;
 // Reference entry 10f57210; body size 260 bytes.
 #line 1 "ENTRY_10f57210"
 NativeOpDtor_FUN_10f57210::~NativeOpDtor_FUN_10f57210() {
-v0 = (void *)&DAT_11951f24;
-NativeOpDB8_10f57210::vptr = (void *)&DAT_11951f6c;
+(void *volatile &)v0 = (void *)&DAT_11951f24;
+(void *volatile &)NativeOpDB8_10f57210::vptr = (void *)&DAT_11951f6c;
 if (NativeOpDB8_10f57210::rep != 0) {
   void *p = NativeOpDB8_10f57210::next;
   if (p != 0) { NativeOpDB8_10f57210::rep = 0; NativeOpDB8_10f57210::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2798,8 +2798,8 @@ void *q = NativeOpDB8_10f57210::next;
 // Reference entry 10f57360; body size 260 bytes.
 #line 1 "ENTRY_10f57360"
 NativeOpDtor_FUN_10f57360::~NativeOpDtor_FUN_10f57360() {
-v0 = (void *)&DAT_119521fc;
-NativeOpDB8_10f57360::vptr = (void *)&DAT_11952244;
+(void *volatile &)v0 = (void *)&DAT_119521fc;
+(void *volatile &)NativeOpDB8_10f57360::vptr = (void *)&DAT_11952244;
 if (NativeOpDB8_10f57360::rep != 0) {
   void *p = NativeOpDB8_10f57360::next;
   if (p != 0) { NativeOpDB8_10f57360::rep = 0; NativeOpDB8_10f57360::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2823,8 +2823,8 @@ void *q = NativeOpDB8_10f57360::next;
 // Reference entry 10f574b0; body size 260 bytes.
 #line 1 "ENTRY_10f574b0"
 NativeOpDtor_FUN_10f574b0::~NativeOpDtor_FUN_10f574b0() {
-v0 = (void *)&DAT_11952380;
-NativeOpDB8_10f574b0::vptr = (void *)&DAT_119523d4;
+(void *volatile &)v0 = (void *)&DAT_11952380;
+(void *volatile &)NativeOpDB8_10f574b0::vptr = (void *)&DAT_119523d4;
 if (NativeOpDB8_10f574b0::rep != 0) {
   void *p = NativeOpDB8_10f574b0::next;
   if (p != 0) { NativeOpDB8_10f574b0::rep = 0; NativeOpDB8_10f574b0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2848,8 +2848,8 @@ void *q = NativeOpDB8_10f574b0::next;
 // Reference entry 10f65b40; body size 260 bytes.
 #line 1 "ENTRY_10f65b40"
 NativeOpDtor_FUN_10f65b40::~NativeOpDtor_FUN_10f65b40() {
-v0 = (void *)&DAT_1195278c;
-NativeOpDB8_10f65b40::vptr = (void *)&DAT_119527d8;
+(void *volatile &)v0 = (void *)&DAT_1195278c;
+(void *volatile &)NativeOpDB8_10f65b40::vptr = (void *)&DAT_119527d8;
 if (NativeOpDB8_10f65b40::rep != 0) {
   void *p = NativeOpDB8_10f65b40::next;
   if (p != 0) { NativeOpDB8_10f65b40::rep = 0; NativeOpDB8_10f65b40::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2873,8 +2873,8 @@ void *q = NativeOpDB8_10f65b40::next;
 // Reference entry 10f708b0; body size 260 bytes.
 #line 1 "ENTRY_10f708b0"
 NativeOpDtor_FUN_10f708b0::~NativeOpDtor_FUN_10f708b0() {
-v0 = (void *)&DAT_11952b1c;
-NativeOpDB8_10f708b0::vptr = (void *)&DAT_11952b64;
+(void *volatile &)v0 = (void *)&DAT_11952b1c;
+(void *volatile &)NativeOpDB8_10f708b0::vptr = (void *)&DAT_11952b64;
 if (NativeOpDB8_10f708b0::rep != 0) {
   void *p = NativeOpDB8_10f708b0::next;
   if (p != 0) { NativeOpDB8_10f708b0::rep = 0; NativeOpDB8_10f708b0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2898,8 +2898,8 @@ void *q = NativeOpDB8_10f708b0::next;
 // Reference entry 10f77a80; body size 260 bytes.
 #line 1 "ENTRY_10f77a80"
 NativeOpDtor_FUN_10f77a80::~NativeOpDtor_FUN_10f77a80() {
-v0 = (void *)&DAT_11953540;
-NativeOpDB8_10f77a80::vptr = (void *)&DAT_1195358c;
+(void *volatile &)v0 = (void *)&DAT_11953540;
+(void *volatile &)NativeOpDB8_10f77a80::vptr = (void *)&DAT_1195358c;
 if (NativeOpDB8_10f77a80::rep != 0) {
   void *p = NativeOpDB8_10f77a80::next;
   if (p != 0) { NativeOpDB8_10f77a80::rep = 0; NativeOpDB8_10f77a80::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2923,8 +2923,8 @@ void *q = NativeOpDB8_10f77a80::next;
 // Reference entry 10f7d8c0; body size 260 bytes.
 #line 1 "ENTRY_10f7d8c0"
 NativeOpDtor_FUN_10f7d8c0::~NativeOpDtor_FUN_10f7d8c0() {
-v0 = (void *)&DAT_11953b34;
-NativeOpDB8_10f7d8c0::vptr = (void *)&DAT_11953b7c;
+(void *volatile &)v0 = (void *)&DAT_11953b34;
+(void *volatile &)NativeOpDB8_10f7d8c0::vptr = (void *)&DAT_11953b7c;
 if (NativeOpDB8_10f7d8c0::rep != 0) {
   void *p = NativeOpDB8_10f7d8c0::next;
   if (p != 0) { NativeOpDB8_10f7d8c0::rep = 0; NativeOpDB8_10f7d8c0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2948,8 +2948,8 @@ void *q = NativeOpDB8_10f7d8c0::next;
 // Reference entry 10f7da10; body size 260 bytes.
 #line 1 "ENTRY_10f7da10"
 NativeOpDtor_FUN_10f7da10::~NativeOpDtor_FUN_10f7da10() {
-v0 = (void *)&DAT_11953a78;
-NativeOpDB8_10f7da10::vptr = (void *)&DAT_11953ac0;
+(void *volatile &)v0 = (void *)&DAT_11953a78;
+(void *volatile &)NativeOpDB8_10f7da10::vptr = (void *)&DAT_11953ac0;
 if (NativeOpDB8_10f7da10::rep != 0) {
   void *p = NativeOpDB8_10f7da10::next;
   if (p != 0) { NativeOpDB8_10f7da10::rep = 0; NativeOpDB8_10f7da10::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2973,8 +2973,8 @@ void *q = NativeOpDB8_10f7da10::next;
 // Reference entry 10f8b460; body size 260 bytes.
 #line 1 "ENTRY_10f8b460"
 NativeOpDtor_FUN_10f8b460::~NativeOpDtor_FUN_10f8b460() {
-v0 = (void *)&DAT_11954758;
-NativeOpDB8_10f8b460::vptr = (void *)&DAT_119547a0;
+(void *volatile &)v0 = (void *)&DAT_11954758;
+(void *volatile &)NativeOpDB8_10f8b460::vptr = (void *)&DAT_119547a0;
 if (NativeOpDB8_10f8b460::rep != 0) {
   void *p = NativeOpDB8_10f8b460::next;
   if (p != 0) { NativeOpDB8_10f8b460::rep = 0; NativeOpDB8_10f8b460::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -2998,8 +2998,8 @@ void *q = NativeOpDB8_10f8b460::next;
 // Reference entry 10f8b5b0; body size 260 bytes.
 #line 1 "ENTRY_10f8b5b0"
 NativeOpDtor_FUN_10f8b5b0::~NativeOpDtor_FUN_10f8b5b0() {
-v0 = (void *)&DAT_11954818;
-NativeOpDB8_10f8b5b0::vptr = (void *)&DAT_11954860;
+(void *volatile &)v0 = (void *)&DAT_11954818;
+(void *volatile &)NativeOpDB8_10f8b5b0::vptr = (void *)&DAT_11954860;
 if (NativeOpDB8_10f8b5b0::rep != 0) {
   void *p = NativeOpDB8_10f8b5b0::next;
   if (p != 0) { NativeOpDB8_10f8b5b0::rep = 0; NativeOpDB8_10f8b5b0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -3023,8 +3023,8 @@ void *q = NativeOpDB8_10f8b5b0::next;
 // Reference entry 10f8b700; body size 260 bytes.
 #line 1 "ENTRY_10f8b700"
 NativeOpDtor_FUN_10f8b700::~NativeOpDtor_FUN_10f8b700() {
-v0 = (void *)&DAT_119548d8;
-NativeOpDB8_10f8b700::vptr = (void *)&DAT_11954920;
+(void *volatile &)v0 = (void *)&DAT_119548d8;
+(void *volatile &)NativeOpDB8_10f8b700::vptr = (void *)&DAT_11954920;
 if (NativeOpDB8_10f8b700::rep != 0) {
   void *p = NativeOpDB8_10f8b700::next;
   if (p != 0) { NativeOpDB8_10f8b700::rep = 0; NativeOpDB8_10f8b700::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -3048,8 +3048,8 @@ void *q = NativeOpDB8_10f8b700::next;
 // Reference entry 11017ca0; body size 260 bytes.
 #line 1 "ENTRY_11017ca0"
 NativeOpDtor_FUN_11017ca0::~NativeOpDtor_FUN_11017ca0() {
-v0 = (void *)&DAT_119606b4;
-NativeOpDB8_11017ca0::vptr = (void *)&DAT_11960714;
+(void *volatile &)v0 = (void *)&DAT_119606b4;
+(void *volatile &)NativeOpDB8_11017ca0::vptr = (void *)&DAT_11960714;
 if (NativeOpDB8_11017ca0::rep != 0) {
   void *p = NativeOpDB8_11017ca0::next;
   if (p != 0) { NativeOpDB8_11017ca0::rep = 0; NativeOpDB8_11017ca0::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -3073,8 +3073,8 @@ void *q = NativeOpDB8_11017ca0::next;
 // Reference entry 11026d20; body size 260 bytes.
 #line 1 "ENTRY_11026d20"
 NativeOpDtor_FUN_11026d20::~NativeOpDtor_FUN_11026d20() {
-v0 = (void *)&DAT_11963d10;
-NativeOpDB8_11026d20::vptr = (void *)&DAT_11963d64;
+(void *volatile &)v0 = (void *)&DAT_11963d10;
+(void *volatile &)NativeOpDB8_11026d20::vptr = (void *)&DAT_11963d64;
 if (NativeOpDB8_11026d20::rep != 0) {
   void *p = NativeOpDB8_11026d20::next;
   if (p != 0) { NativeOpDB8_11026d20::rep = 0; NativeOpDB8_11026d20::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -3098,8 +3098,8 @@ void *q = NativeOpDB8_11026d20::next;
 // Reference entry 1105f600; body size 260 bytes.
 #line 1 "ENTRY_1105f600"
 NativeOpDtor_FUN_1105f600::~NativeOpDtor_FUN_1105f600() {
-v0 = (void *)&DAT_1196610c;
-NativeOpDB8_1105f600::vptr = (void *)&DAT_11966160;
+(void *volatile &)v0 = (void *)&DAT_1196610c;
+(void *volatile &)NativeOpDB8_1105f600::vptr = (void *)&DAT_11966160;
 if (NativeOpDB8_1105f600::rep != 0) {
   void *p = NativeOpDB8_1105f600::next;
   if (p != 0) { NativeOpDB8_1105f600::rep = 0; NativeOpDB8_1105f600::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -3123,8 +3123,8 @@ void *q = NativeOpDB8_1105f600::next;
 // Reference entry 11061920; body size 260 bytes.
 #line 1 "ENTRY_11061920"
 NativeOpDtor_FUN_11061920::~NativeOpDtor_FUN_11061920() {
-v0 = (void *)&DAT_119662b4;
-NativeOpDB8_11061920::vptr = (void *)&DAT_1196630c;
+(void *volatile &)v0 = (void *)&DAT_119662b4;
+(void *volatile &)NativeOpDB8_11061920::vptr = (void *)&DAT_1196630c;
 if (NativeOpDB8_11061920::rep != 0) {
   void *p = NativeOpDB8_11061920::next;
   if (p != 0) { NativeOpDB8_11061920::rep = 0; NativeOpDB8_11061920::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -3148,8 +3148,8 @@ void *q = NativeOpDB8_11061920::next;
 // Reference entry 11062550; body size 260 bytes.
 #line 1 "ENTRY_11062550"
 NativeOpDtor_FUN_11062550::~NativeOpDtor_FUN_11062550() {
-v0 = (void *)&DAT_11966428;
-NativeOpDB8_11062550::vptr = (void *)&DAT_11966474;
+(void *volatile &)v0 = (void *)&DAT_11966428;
+(void *volatile &)NativeOpDB8_11062550::vptr = (void *)&DAT_11966474;
 if (NativeOpDB8_11062550::rep != 0) {
   void *p = NativeOpDB8_11062550::next;
   if (p != 0) { NativeOpDB8_11062550::rep = 0; NativeOpDB8_11062550::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -3173,8 +3173,8 @@ void *q = NativeOpDB8_11062550::next;
 // Reference entry 11064c80; body size 260 bytes.
 #line 1 "ENTRY_11064c80"
 NativeOpDtor_FUN_11064c80::~NativeOpDtor_FUN_11064c80() {
-v0 = (void *)&DAT_11966528;
-NativeOpDB8_11064c80::vptr = (void *)&DAT_11966570;
+(void *volatile &)v0 = (void *)&DAT_11966528;
+(void *volatile &)NativeOpDB8_11064c80::vptr = (void *)&DAT_11966570;
 if (NativeOpDB8_11064c80::rep != 0) {
   void *p = NativeOpDB8_11064c80::next;
   if (p != 0) { NativeOpDB8_11064c80::rep = 0; NativeOpDB8_11064c80::next = 0; ((NativeOpDtorIface *)p)->slot8(); }
@@ -3198,8 +3198,8 @@ void *q = NativeOpDB8_11064c80::next;
 // Reference entry 11067870; body size 260 bytes.
 #line 1 "ENTRY_11067870"
 NativeOpDtor_FUN_11067870::~NativeOpDtor_FUN_11067870() {
-v0 = (void *)&DAT_119668b8;
-NativeOpDB8_11067870::vptr = (void *)&DAT_11966914;
+(void *volatile &)v0 = (void *)&DAT_119668b8;
+(void *volatile &)NativeOpDB8_11067870::vptr = (void *)&DAT_11966914;
 if (NativeOpDB8_11067870::rep != 0) {
   void *p = NativeOpDB8_11067870::next;
   if (p != 0) { NativeOpDB8_11067870::rep = 0; NativeOpDB8_11067870::next = 0; ((NativeOpDtorIface *)p)->slot8(); }

@@ -98,7 +98,7 @@ node->left=node; node->parent=node; node->right=node; node->color=1; node->nil=1
 struct RecoveredString_FUN_1008c50b {
 unsigned int rep;
 __forceinline RecoveredString_FUN_1008c50b(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
-~RecoveredString_FUN_1008c50b() noexcept { ((SCStr *)this)->int_release(); rep=0; }
+~RecoveredString_FUN_1008c50b() noexcept { ((SCStr *)this)->int_release(); *(volatile unsigned int *)&rep=0; }
 };
 struct EventCopy_thunk_FUN_10deea50 {
 unsigned int text,event_id; void *properties,*interface_pointer,*head; unsigned int size;
@@ -151,86 +151,97 @@ extern int thunk_FUN_10df15a0(...);
 #line 1 "ENTRY_10e026f0"
 void NativeNamedEventCallback::FUN_10e026f0(unsigned int arg) {
 NativeNamedEvent_FUN_10df9440 event;
-((NativeEventProperties *)event.representation.properties)->slot(RecoveredString_FUN_1008c50b("opResult"), arg);
-((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(&event);
+NativeNamedEvent_FUN_10df9440 *pe = &event;
+((NativeEventProperties *)pe->representation.properties)->slot(RecoveredString_FUN_1008c50b("opResult"), arg);
+((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(pe);
 }
 
 // Reference entry 10e03750; body size 149 bytes.
 #line 1 "ENTRY_10e03750"
 void NativeNamedEventCallback::FUN_10e03750(unsigned int arg) {
 NativeNamedEvent_FUN_10df9a80 event;
-((NativeEventProperties *)event.representation.properties)->slot(RecoveredString_FUN_1008c50b("opResult"), arg);
-((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(&event);
+NativeNamedEvent_FUN_10df9a80 *pe = &event;
+((NativeEventProperties *)pe->representation.properties)->slot(RecoveredString_FUN_1008c50b("opResult"), arg);
+((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(pe);
 }
 
 // Reference entry 10e039c0; body size 149 bytes.
 #line 1 "ENTRY_10e039c0"
 void NativeNamedEventCallback::FUN_10e039c0(unsigned int arg) {
 NativeNamedEvent_FUN_10df9d60 event;
-((NativeEventProperties *)event.representation.properties)->slot(RecoveredString_FUN_1008c50b("opResult"), arg);
-((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(&event);
+NativeNamedEvent_FUN_10df9d60 *pe = &event;
+((NativeEventProperties *)pe->representation.properties)->slot(RecoveredString_FUN_1008c50b("opResult"), arg);
+((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(pe);
 }
 
 // Reference entry 10e03a80; body size 149 bytes.
 #line 1 "ENTRY_10e03a80"
 void NativeNamedEventCallback::FUN_10e03a80(unsigned int arg) {
 NativeNamedEvent_FUN_10df9fb0 event;
-((NativeEventProperties *)event.representation.properties)->slot(RecoveredString_FUN_1008c50b("opResult"), arg);
-((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(&event);
+NativeNamedEvent_FUN_10df9fb0 *pe = &event;
+((NativeEventProperties *)pe->representation.properties)->slot(RecoveredString_FUN_1008c50b("opResult"), arg);
+((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(pe);
 }
 
 // Reference entry 10e05a20; body size 149 bytes.
 #line 1 "ENTRY_10e05a20"
 void NativeNamedEventCallback::FUN_10e05a20(unsigned int arg) {
 NativeNamedEvent_FUN_10dfa2d0 event;
-((NativeEventProperties *)event.representation.properties)->slot(RecoveredString_FUN_1008c50b("setupStatus"), arg);
-((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(&event);
+NativeNamedEvent_FUN_10dfa2d0 *pe = &event;
+((NativeEventProperties *)pe->representation.properties)->slot(RecoveredString_FUN_1008c50b("setupStatus"), arg);
+((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(pe);
 }
 
 // Reference entry 10e05ae0; body size 149 bytes.
 #line 1 "ENTRY_10e05ae0"
 void NativeNamedEventCallback::FUN_10e05ae0(unsigned int arg) {
 NativeNamedEvent_FUN_10dfa3a0 event;
-((NativeEventProperties *)event.representation.properties)->slot(RecoveredString_FUN_1008c50b("setupStatus"), arg);
-((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(&event);
+NativeNamedEvent_FUN_10dfa3a0 *pe = &event;
+((NativeEventProperties *)pe->representation.properties)->slot(RecoveredString_FUN_1008c50b("setupStatus"), arg);
+((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(pe);
 }
 
 // Reference entry 10e05ba0; body size 149 bytes.
 #line 1 "ENTRY_10e05ba0"
 void NativeNamedEventCallback::FUN_10e05ba0(unsigned int arg) {
 NativeNamedEvent_FUN_10df9690 event;
-((NativeEventProperties *)event.representation.properties)->slot(RecoveredString_FUN_1008c50b("opResult"), arg);
-((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(&event);
+NativeNamedEvent_FUN_10df9690 *pe = &event;
+((NativeEventProperties *)pe->representation.properties)->slot(RecoveredString_FUN_1008c50b("opResult"), arg);
+((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(pe);
 }
 
 // Reference entry 10e05cd0; body size 149 bytes.
 #line 1 "ENTRY_10e05cd0"
 void NativeNamedEventCallback::FUN_10e05cd0(unsigned int arg) {
 NativeNamedEvent_FUN_10dfa520 event;
-((NativeEventProperties *)event.representation.properties)->slot(RecoveredString_FUN_1008c50b("opResult"), arg);
-((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(&event);
+NativeNamedEvent_FUN_10dfa520 *pe = &event;
+((NativeEventProperties *)pe->representation.properties)->slot(RecoveredString_FUN_1008c50b("opResult"), arg);
+((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(pe);
 }
 
 // Reference entry 10e06260; body size 149 bytes.
 #line 1 "ENTRY_10e06260"
 void NativeNamedEventCallback::FUN_10e06260(unsigned int arg) {
 NativeNamedEvent_FUN_10dfb020 event;
-((NativeEventProperties *)event.representation.properties)->slot(RecoveredString_FUN_1008c50b("opResult"), arg);
-((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(&event);
+NativeNamedEvent_FUN_10dfb020 *pe = &event;
+((NativeEventProperties *)pe->representation.properties)->slot(RecoveredString_FUN_1008c50b("opResult"), arg);
+((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(pe);
 }
 
 // Reference entry 10e06480; body size 149 bytes.
 #line 1 "ENTRY_10e06480"
 void NativeNamedEventCallback::FUN_10e06480(unsigned int arg) {
 NativeNamedEvent_FUN_10dfab80 event;
-((NativeEventProperties *)event.representation.properties)->slot(RecoveredString_FUN_1008c50b("opResult"), arg);
-((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(&event);
+NativeNamedEvent_FUN_10dfab80 *pe = &event;
+((NativeEventProperties *)pe->representation.properties)->slot(RecoveredString_FUN_1008c50b("opResult"), arg);
+((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(pe);
 }
 
 // Reference entry 10e065b0; body size 149 bytes.
 #line 1 "ENTRY_10e065b0"
 void NativeNamedEventCallback::FUN_10e065b0(unsigned int arg) {
 NativeNamedEvent_FUN_10dfadd0 event;
-((NativeEventProperties *)event.representation.properties)->slot(RecoveredString_FUN_1008c50b("opResult"), arg);
-((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(&event);
+NativeNamedEvent_FUN_10dfadd0 *pe = &event;
+((NativeEventProperties *)pe->representation.properties)->slot(RecoveredString_FUN_1008c50b("opResult"), arg);
+((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(pe);
 }

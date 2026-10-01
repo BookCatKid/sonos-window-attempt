@@ -90,7 +90,7 @@ class NamedEventCallbackTests(unittest.TestCase):
         self.assertIn('NativeNamedEvent_FUN_10df9440 event;', candidate['source'])
         self.assertIn('->slot(RecoveredString_FUN_1008c50b("opResult"), arg);', candidate['source'])
         self.assertIn('((char *)this - 0x10)', candidate['source'])
-        self.assertIn('thunk_FUN_10df15a0(&event);', candidate['source'])
+        self.assertIn('thunk_FUN_10df15a0(pe);', candidate['source'])
 
     def test_wrong_call_sequence_rejected(self):
         bad = named_instructions()

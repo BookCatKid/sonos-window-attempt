@@ -84,9 +84,10 @@ def lower(record, reference, base, sections):
     event = 'NativeNamedEvent_FUN_' + f'{constructor:08x}'
     source = (f'void NativeNamedEventCallback::FUN_{entry}(unsigned int arg) {{\n'
               f'{event} event;\n'
-              f'((NativeEventProperties *)event.representation.properties)'
+              f'{event} *pe = &event;\n'
+              f'((NativeEventProperties *)pe->representation.properties)'
               f'->slot(RecoveredString_FUN_1008c50b("{literal.group(1)}"), arg);\n'
-              f'((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(&event);\n}}\n')
+              f'((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(pe);\n}}\n')
     return {**record, 'source': source, 'event_class': event, 'constructor': f'{constructor:08x}'}
 
 
@@ -126,7 +127,8 @@ def main():
         raise SystemExit('No named event callback accepted')
     classes = sorted({c['event_class'] for c in candidates})
     library = LIBRARY.replace('FactoryString', 'RecoveredString_FUN_1008c50b').replace(
-        '~Event_thunk_FUN_10def0d0() noexcept(false);', '~Event_thunk_FUN_10def0d0() noexcept;')
+        '~Event_thunk_FUN_10def0d0() noexcept(false);', '~Event_thunk_FUN_10def0d0() noexcept;').replace(
+        'int_release(); rep=0; }', 'int_release(); *(volatile unsigned int *)&rep=0; }')
     library += ''.join(f'struct {name} : Event_thunk_FUN_10def0d0 {{ {name}(); }};\n' for name in classes)
     library += 'struct RecoveredString_FUN_1008c50b;\n'
     library += ('struct NativeEventProperties { virtual void r0(); virtual void r1(); '
