@@ -258,5 +258,9 @@
   {
     "object": "named_event_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-named-event-callbacks"
+  },
+  {
+    "object": "wiz_state_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-wiz-state-callbacks"
   }
 ]

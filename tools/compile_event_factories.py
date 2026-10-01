@@ -23,7 +23,8 @@ def auxiliary_bindings(inventory,roles=None):
         table=struct.unpack_from('<I',metadata,8)[0]
         action=struct.unpack_from('<I',read(table+state*8,8),4)[0]
         code=read(action,8)
-        if code[:2]!=b'\x8d\x4d' or code[3]!=0xe9:raise ValueError('Expected native frame-relative destructor action')
+        if (code[:2]!=b'\x8d\x4d' and code[:2]!=b'\x8b\x4d') or code[3]!=0xe9:
+            raise ValueError('Expected native frame-relative destructor action')
         target=(action+8+struct.unpack_from('<i',code,4)[0])&0xffffffff
         thunk=read(target,5)
         if thunk[0]!=0xe9:raise ValueError('Expected native linker jump')
