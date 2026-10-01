@@ -1,0 +1,50 @@
+[
+  {
+    "object": "op_ref_control_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-control"
+  },
+  {
+    "object": "op_ref_inline_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-inline"
+  },
+  {
+    "object": "op_ref_outline_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-outline"
+  },
+  {
+    "object": "op_ref_default_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-default"
+  },
+  {
+    "object": "op_ref_split_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-split"
+  },
+  {
+    "object": "op_impl_control_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-control"
+  },
+  {
+    "object": "op_impl_smart_inline_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-smart-inline"
+  },
+  {
+    "object": "op_impl_m14_inline_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-m14-inline"
+  },
+  {
+    "object": "op_impl_both_inline_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-both-inline"
+  },
+  {
+    "object": "op_impl_smart_outline_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-smart-outline"
+  },
+  {
+    "object": "op_impl_m14_outline_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-m14-outline"
+  },
+  {
+    "object": "op_impl_both_outline_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-both-outline"
+  }
+]

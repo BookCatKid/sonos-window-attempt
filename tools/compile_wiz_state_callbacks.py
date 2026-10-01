@@ -163,6 +163,10 @@ def main():
     if not candidates:
         raise SystemExit('No wizard state constructor accepted')
     library = LIBRARY.replace('FactoryString', 'RecoveredString_FUN_1008c50b')
+    library = library.replace(
+        '__forceinline RecoveredString_FUN_1008c50b(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }',
+        '__forceinline RecoveredString_FUN_1008c50b(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }\n'
+        '__forceinline RecoveredString_FUN_1008c50b(const RecoveredString_FUN_1008c50b &o) { rep = o.rep; }')
     library += ('struct NativeWizDtorBase_thunk_FUN_106de7d0 { ~NativeWizDtorBase_thunk_FUN_106de7d0(); };\n'
                 'struct NativeWizFlagged_thunk_FUN_106de7d0 { void *rep; ~NativeWizFlagged_thunk_FUN_106de7d0(); };\n')
     for r in candidates:

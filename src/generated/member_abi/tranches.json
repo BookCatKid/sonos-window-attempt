@@ -244,10 +244,6 @@
     "directory": "analysis/compiled-cpp-reg-ctors"
   },
   {
-    "object": "wiz_state_callbacks_reference_flags",
-    "directory": "analysis/compiled-cpp-wiz-state-callbacks"
-  },
-  {
     "object": "conditional_event_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-conditional-event-callbacks"
   },
@@ -314,5 +310,9 @@
   {
     "object": "op_impl_dtors_reference_flags",
     "directory": "analysis/compiled-cpp-op-impl-dtors"
+  },
+  {
+    "object": "wiz_state_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-wiz-state-callbacks"
   }
 ]

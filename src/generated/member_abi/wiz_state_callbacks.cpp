@@ -2372,6 +2372,7 @@ node->left=node; node->parent=node; node->right=node; node->color=1; node->nil=1
 struct RecoveredString_FUN_1008c50b {
 unsigned int rep;
 __forceinline RecoveredString_FUN_1008c50b(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }
+__forceinline RecoveredString_FUN_1008c50b(const RecoveredString_FUN_1008c50b &o) { rep = o.rep; }
 ~RecoveredString_FUN_1008c50b() noexcept { ((SCStr *)this)->int_release(); rep=0; }
 };
 struct EventCopy_thunk_FUN_10deea50 {
