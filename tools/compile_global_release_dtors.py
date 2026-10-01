@@ -53,8 +53,7 @@ def lower(record, reference, base, sections):
         return None
     klass = 'NativeGlobalRelease_FUN_' + entry
     source = (
-        f'void FUN_{entry}() {{\n'
-        f'NativePairRelGuard g;\n'
+        f'void FUN_{entry}() noexcept {{\n'
         f'NativeReleaseIface *p = (NativeReleaseIface *)DAT_{hi:08x};\n'
         f'if (p != 0) {{\n'
         f'  DAT_{hi - 4:08x} = 0; DAT_{hi:08x} = 0;\n'
@@ -90,7 +89,7 @@ def main():
     library = (LIBRARY +
                'struct NativeReleaseIface { virtual void *v0(); virtual void v4();\n'
                '  virtual void v8(); virtual void *vC(); };\n'
-               'struct NativePairRelGuard { void *p; ~NativePairRelGuard(); };\n')
+)
     for va in sorted({va for r in candidates for va in
                       re.findall(r'DAT_([0-9a-f]{8})', r['source'])}):
         library += f'extern unsigned int DAT_{va};\n'

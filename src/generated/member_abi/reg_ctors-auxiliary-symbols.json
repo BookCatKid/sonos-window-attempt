@@ -1,0 +1,625 @@
+[
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df5400",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df54d0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df5720",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df57f0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df59d0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df5aa0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df5b70",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df5c40",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df6290",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df6360",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df6430",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df65d0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df66a0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df6770",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df6840",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df6910",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df69e0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df6da0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df7c20",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df7ed0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df8600",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df86d0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df87a0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df8a60",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df8b30",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df8c00",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df8cd0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df8f50",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df9020",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df90f0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df91c0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df92c0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df9440",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df9510",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df9690",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df9760",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df9830",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df9900",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df9a80",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df9b50",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df9d60",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df9e30",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10df9fb0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfa080",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfa150",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfa2d0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfa3a0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfa520",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfa5f0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfa6c0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfa790",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfa860",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfa930",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfaa00",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfab80",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfac50",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfadd0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfaea0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfb020",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfb0f0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfb250",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfb320",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfb530",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfb600",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfbb10",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfbbe0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfbcb0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfbd80",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfbe50",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfc370",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfc440",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfc510",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfcdc0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfce90",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfcf60",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfd030",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfd100",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfd2d0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfd3a0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfd470",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfd540",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfd610",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfd6e0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfd8c0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfda60",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfdff0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfe0c0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfe190",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  },
+  {
+    "symbol": "??1NativeRegStr_thunk_FUN_1008c50b@@QAE@XZ",
+    "owner_entry": "10dfe3d0",
+    "state": 0,
+    "call_target": "1008c50b",
+    "body_entry": "101201c0"
+  }
+]

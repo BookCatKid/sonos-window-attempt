@@ -48,8 +48,7 @@ def lower(record, reference, base, sections):
         return None
     klass = 'NativePairRelease_FUN_' + entry
     source = (
-        f'void {klass}::FUN_{entry}() {{\n'
-        f'NativePairRelGuard g;\n'
+        f'void {klass}::FUN_{entry}() noexcept {{\n'
         f'NativeReleaseIface *p = (NativeReleaseIface *)next;\n'
         f'if (p != 0) {{\n'
         f'  rep = 0; next = 0;\n'
@@ -84,7 +83,7 @@ def main():
         raise SystemExit('No pair-release helper accepted')
     library = (LIBRARY +
                'struct NativeReleaseIface { virtual void *v0(); virtual void *v4(); virtual void v8(); };\n'
-               'struct NativePairRelGuard { void *p; ~NativePairRelGuard(); };\n')
+)
     for r in candidates:
         klass = r['vclass']
         library += (f'struct {klass} {{ void *rep; void *next; ~{klass}();\n'

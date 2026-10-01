@@ -130,7 +130,6 @@ static_assert(sizeof(FactoryTree)==8,"Two-word outgoing container");
 static_assert(sizeof(FactoryTreeNode)==28,"Sentinel node");
 static_assert(sizeof(Event_thunk_FUN_10def0d0)==24,"Event value");
 struct NativeReleaseIface { virtual void *v0(); virtual void *v4(); virtual void v8(); };
-struct NativePairRelGuard { void *p; ~NativePairRelGuard(); };
 struct NativePairRelease_FUN_1062cca0 { void *rep; void *next; ~NativePairRelease_FUN_1062cca0();
 void FUN_1062cca0(); };
 struct NativePairRelease_FUN_1062cd10 { void *rep; void *next; ~NativePairRelease_FUN_1062cd10();
@@ -177,8 +176,7 @@ void FUN_10f70830(); };
 
 // Reference entry 1062cca0; body size 83 bytes.
 #line 1 "ENTRY_1062cca0"
-void NativePairRelease_FUN_1062cca0::FUN_1062cca0() {
-NativePairRelGuard g;
+void NativePairRelease_FUN_1062cca0::FUN_1062cca0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)next;
 if (p != 0) {
   rep = 0; next = 0;
@@ -188,8 +186,7 @@ if (p != 0) {
 
 // Reference entry 1062cd10; body size 83 bytes.
 #line 1 "ENTRY_1062cd10"
-void NativePairRelease_FUN_1062cd10::FUN_1062cd10() {
-NativePairRelGuard g;
+void NativePairRelease_FUN_1062cd10::FUN_1062cd10() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)next;
 if (p != 0) {
   rep = 0; next = 0;
@@ -199,8 +196,7 @@ if (p != 0) {
 
 // Reference entry 1062ce10; body size 83 bytes.
 #line 1 "ENTRY_1062ce10"
-void NativePairRelease_FUN_1062ce10::FUN_1062ce10() {
-NativePairRelGuard g;
+void NativePairRelease_FUN_1062ce10::FUN_1062ce10() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)next;
 if (p != 0) {
   rep = 0; next = 0;
@@ -210,8 +206,7 @@ if (p != 0) {
 
 // Reference entry 106567c0; body size 83 bytes.
 #line 1 "ENTRY_106567c0"
-void NativePairRelease_FUN_106567c0::FUN_106567c0() {
-NativePairRelGuard g;
+void NativePairRelease_FUN_106567c0::FUN_106567c0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)next;
 if (p != 0) {
   rep = 0; next = 0;
@@ -221,8 +216,7 @@ if (p != 0) {
 
 // Reference entry 106d29d0; body size 83 bytes.
 #line 1 "ENTRY_106d29d0"
-void NativePairRelease_FUN_106d29d0::FUN_106d29d0() {
-NativePairRelGuard g;
+void NativePairRelease_FUN_106d29d0::FUN_106d29d0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)next;
 if (p != 0) {
   rep = 0; next = 0;
@@ -232,8 +226,7 @@ if (p != 0) {
 
 // Reference entry 106e5850; body size 83 bytes.
 #line 1 "ENTRY_106e5850"
-void NativePairRelease_FUN_106e5850::FUN_106e5850() {
-NativePairRelGuard g;
+void NativePairRelease_FUN_106e5850::FUN_106e5850() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)next;
 if (p != 0) {
   rep = 0; next = 0;
@@ -243,8 +236,7 @@ if (p != 0) {
 
 // Reference entry 106e58c0; body size 83 bytes.
 #line 1 "ENTRY_106e58c0"
-void NativePairRelease_FUN_106e58c0::FUN_106e58c0() {
-NativePairRelGuard g;
+void NativePairRelease_FUN_106e58c0::FUN_106e58c0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)next;
 if (p != 0) {
   rep = 0; next = 0;
@@ -254,8 +246,7 @@ if (p != 0) {
 
 // Reference entry 106e5930; body size 83 bytes.
 #line 1 "ENTRY_106e5930"
-void NativePairRelease_FUN_106e5930::FUN_106e5930() {
-NativePairRelGuard g;
+void NativePairRelease_FUN_106e5930::FUN_106e5930() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)next;
 if (p != 0) {
   rep = 0; next = 0;
@@ -265,8 +256,7 @@ if (p != 0) {
 
 // Reference entry 1072bbb0; body size 83 bytes.
 #line 1 "ENTRY_1072bbb0"
-void NativePairRelease_FUN_1072bbb0::FUN_1072bbb0() {
-NativePairRelGuard g;
+void NativePairRelease_FUN_1072bbb0::FUN_1072bbb0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)next;
 if (p != 0) {
   rep = 0; next = 0;
@@ -276,8 +266,7 @@ if (p != 0) {
 
 // Reference entry 1075a1d0; body size 83 bytes.
 #line 1 "ENTRY_1075a1d0"
-void NativePairRelease_FUN_1075a1d0::FUN_1075a1d0() {
-NativePairRelGuard g;
+void NativePairRelease_FUN_1075a1d0::FUN_1075a1d0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)next;
 if (p != 0) {
   rep = 0; next = 0;
@@ -287,8 +276,7 @@ if (p != 0) {
 
 // Reference entry 10982890; body size 83 bytes.
 #line 1 "ENTRY_10982890"
-void NativePairRelease_FUN_10982890::FUN_10982890() {
-NativePairRelGuard g;
+void NativePairRelease_FUN_10982890::FUN_10982890() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)next;
 if (p != 0) {
   rep = 0; next = 0;
@@ -298,8 +286,7 @@ if (p != 0) {
 
 // Reference entry 109cc3b0; body size 83 bytes.
 #line 1 "ENTRY_109cc3b0"
-void NativePairRelease_FUN_109cc3b0::FUN_109cc3b0() {
-NativePairRelGuard g;
+void NativePairRelease_FUN_109cc3b0::FUN_109cc3b0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)next;
 if (p != 0) {
   rep = 0; next = 0;
@@ -309,8 +296,7 @@ if (p != 0) {
 
 // Reference entry 10b1bd10; body size 83 bytes.
 #line 1 "ENTRY_10b1bd10"
-void NativePairRelease_FUN_10b1bd10::FUN_10b1bd10() {
-NativePairRelGuard g;
+void NativePairRelease_FUN_10b1bd10::FUN_10b1bd10() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)next;
 if (p != 0) {
   rep = 0; next = 0;
@@ -320,8 +306,7 @@ if (p != 0) {
 
 // Reference entry 10b1bd80; body size 83 bytes.
 #line 1 "ENTRY_10b1bd80"
-void NativePairRelease_FUN_10b1bd80::FUN_10b1bd80() {
-NativePairRelGuard g;
+void NativePairRelease_FUN_10b1bd80::FUN_10b1bd80() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)next;
 if (p != 0) {
   rep = 0; next = 0;
@@ -331,8 +316,7 @@ if (p != 0) {
 
 // Reference entry 10b34cd0; body size 83 bytes.
 #line 1 "ENTRY_10b34cd0"
-void NativePairRelease_FUN_10b34cd0::FUN_10b34cd0() {
-NativePairRelGuard g;
+void NativePairRelease_FUN_10b34cd0::FUN_10b34cd0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)next;
 if (p != 0) {
   rep = 0; next = 0;
@@ -342,8 +326,7 @@ if (p != 0) {
 
 // Reference entry 10bc0320; body size 83 bytes.
 #line 1 "ENTRY_10bc0320"
-void NativePairRelease_FUN_10bc0320::FUN_10bc0320() {
-NativePairRelGuard g;
+void NativePairRelease_FUN_10bc0320::FUN_10bc0320() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)next;
 if (p != 0) {
   rep = 0; next = 0;
@@ -353,8 +336,7 @@ if (p != 0) {
 
 // Reference entry 10c05990; body size 83 bytes.
 #line 1 "ENTRY_10c05990"
-void NativePairRelease_FUN_10c05990::FUN_10c05990() {
-NativePairRelGuard g;
+void NativePairRelease_FUN_10c05990::FUN_10c05990() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)next;
 if (p != 0) {
   rep = 0; next = 0;
@@ -364,8 +346,7 @@ if (p != 0) {
 
 // Reference entry 10c05a00; body size 83 bytes.
 #line 1 "ENTRY_10c05a00"
-void NativePairRelease_FUN_10c05a00::FUN_10c05a00() {
-NativePairRelGuard g;
+void NativePairRelease_FUN_10c05a00::FUN_10c05a00() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)next;
 if (p != 0) {
   rep = 0; next = 0;
@@ -375,8 +356,7 @@ if (p != 0) {
 
 // Reference entry 10c05a70; body size 83 bytes.
 #line 1 "ENTRY_10c05a70"
-void NativePairRelease_FUN_10c05a70::FUN_10c05a70() {
-NativePairRelGuard g;
+void NativePairRelease_FUN_10c05a70::FUN_10c05a70() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)next;
 if (p != 0) {
   rep = 0; next = 0;
@@ -386,8 +366,7 @@ if (p != 0) {
 
 // Reference entry 10f38490; body size 83 bytes.
 #line 1 "ENTRY_10f38490"
-void NativePairRelease_FUN_10f38490::FUN_10f38490() {
-NativePairRelGuard g;
+void NativePairRelease_FUN_10f38490::FUN_10f38490() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)next;
 if (p != 0) {
   rep = 0; next = 0;
@@ -397,8 +376,7 @@ if (p != 0) {
 
 // Reference entry 10f70830; body size 83 bytes.
 #line 1 "ENTRY_10f70830"
-void NativePairRelease_FUN_10f70830::FUN_10f70830() {
-NativePairRelGuard g;
+void NativePairRelease_FUN_10f70830::FUN_10f70830() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)next;
 if (p != 0) {
   rep = 0; next = 0;
