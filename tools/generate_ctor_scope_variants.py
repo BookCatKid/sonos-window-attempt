@@ -168,6 +168,17 @@ def op_ref_variants():
             '    new (&m4) NativeOpRefMember_thunk_FUN_101ba1b0();\n'
             'pm->rep = param_2;\nif (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
             f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # m4 as a SECOND BASE: MSVC gives each base its own construction scope —
+        # repoint [ebp-0x10]=&m4, arm0 before the base ctor body stores rep
+        'op_ref_m4_base': (
+            m4_inline +
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70,'
+            ' NativeOpRefMember_thunk_FUN_101ba1b0 {\nvoid *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : NativeOpRefMember_thunk_FUN_101ba1b0(param_2) {\n'
+            'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
     }
     out = {}
     for name, (member, definition) in variants.items():
@@ -275,6 +286,16 @@ def op_impl_variants():
         ' : smart(param) { f8 = 0;',
         ' {\nNativeOpSmart14_thunk_FUN_101ba1b0 *ps = new (&smart) '
         'NativeOpSmart14_thunk_FUN_101ba1b0(param);\n(void)ps; f8 = 0;')
+    # smart as a SECOND BASE of m14: MSVC emits a construction scope for each
+    # base — repointing the construction-this spill to &base and arming the
+    # state before the inlined base ctor body stores through eax
+    variants['op_impl_smart_base'] = decls.replace(
+        'struct NativeOpMember14_10687e80 : NativeOpMember14V {'
+        ' NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;',
+        'struct NativeOpMember14_10687e80 : NativeOpMember14V,'
+        ' NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;').replace(
+        ' : smart(param) {',
+        ' : NativeOpSmart14_thunk_FUN_101ba1b0(param) {')
     header = ('// Constructor-scope hypothesis variants for entry 10687e80.\n'
               'inline void *operator new(unsigned int, void *receiver) noexcept { return receiver; }\n')
     out = {}
