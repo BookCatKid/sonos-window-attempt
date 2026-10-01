@@ -93,14 +93,76 @@ def simple_instructions(value='8'):
     ]
 
 
+FALLBACK_TEXT = '''
+void FUN_10ccccc0(void)
+{
+  uVar2 = thunk_FUN_10dfbb10(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+  cVar1 = thunk_FUN_10def450(uVar2);
+  thunk_FUN_10def0d0();
+  if (cVar1 != '\\0') {
+    thunk_FUN_10ebbab0(0x4048);
+    return;
+  }
+  uVar2 = thunk_FUN_10dfcab0();
+  cVar1 = thunk_FUN_10def490(uVar2);
+  thunk_FUN_105a1d20();
+  thunk_FUN_105a1c80();
+  if (cVar1 != '\\0') {
+    iVar3 = thunk_FUN_10eb41b0();
+    *(undefined1 *)(iVar3 + 0x10c) = 1;
+  }
+  return;
+}
+'''
+
+
+def fallback_instructions(value='0x4048', offset='0x10c'):
+    a = ENTRY
+    e = 0x10ccd000
+    return [
+        instruction(a, 'mov', 'esi, ecx'),
+        instruction(a + 4, 'lea', 'ecx, [ebp - 0x24]'),
+        instruction(a + 8, 'call', '0x10000001'),
+        instruction(a + 0x10, 'mov', 'ecx, dword ptr [ebp + 8]'),
+        instruction(a + 0x14, 'push', 'eax'),
+        instruction(a + 0x18, 'call', '0x10000002'),
+        instruction(a + 0x20, 'lea', 'ecx, [ebp - 0x24]'),
+        instruction(a + 0x24, 'call', '0x10000003'),
+        instruction(a + 0x30, 'test', 'bl, bl'),
+        instruction(a + 0x32, 'je', hex(e)),
+        instruction(a + 0x34, 'push', value),
+        instruction(a + 0x39, 'mov', 'ecx, esi'),
+        instruction(a + 0x3b, 'call', '0x10000006'),
+        instruction(a + 0x40, 'ret', '4'),
+        instruction(e, 'lea', 'ecx, [ebp - 0x40]'),
+        instruction(e + 3, 'call', '0x10000007'),
+        instruction(e + 8, 'mov', 'ecx, dword ptr [ebp + 8]'),
+        instruction(e + 0xb, 'push', 'eax'),
+        instruction(e + 0xc, 'call', '0x10000008'),
+        instruction(e + 0x11, 'lea', 'ecx, [ebp - 0x30]'),
+        instruction(e + 0x14, 'mov', 'bl, al'),
+        instruction(e + 0x16, 'call', '0x10000009'),
+        instruction(e + 0x1b, 'lea', 'ecx, [ebp - 0x3c]'),
+        instruction(e + 0x1e, 'call', '0x1000000a'),
+        instruction(e + 0x23, 'test', 'bl, bl'),
+        instruction(e + 0x25, 'je', '0x10ccd040'),
+        instruction(e + 0x27, 'mov', 'ecx, esi'),
+        instruction(e + 0x29, 'call', '0x1000000b'),
+        instruction(e + 0x2e, 'mov', f'byte ptr [eax + {offset}], 1'),
+        instruction(e + 0x35, 'ret', '4'),
+    ]
+
+
 class DelayedEventCallbackTests(unittest.TestCase):
-    def candidate(self, text=TIMER_TEXT, instructions=None, native=None):
-        record = {'entry': f'{ENTRY:08x}', 'body_bytes': 122,
+    def candidate(self, text=TIMER_TEXT, instructions=None, native=None, body_bytes=122):
+        record = {'entry': f'{ENTRY:08x}', 'body_bytes': body_bytes,
                   'decompiled_c': text}
         targets = {0x10000001: 0x10dfbb10,
                    0x10000002: delayed.DISPATCH, 0x10000003: delayed.DESTRUCTOR,
                    0x10000004: delayed.TIMER, 0x10000005: delayed.RESULT_STORE,
-                   0x10000006: 0x10ebbab0}
+                   0x10000006: 0x10ebbab0, 0x10000007: 0x10dfcab0,
+                   0x10000008: delayed.FALLBACK_PREDICATE, 0x10000009: 0x105a1d20,
+                   0x1000000a: 0x105a1c80, 0x1000000b: delayed.RESULT_STORE}
         def read(va, size):
             if va == 0x118c11e0:
                 return b'delay\0'[:size]
@@ -158,6 +220,37 @@ class DelayedEventCallbackTests(unittest.TestCase):
         self.assertIsNone(self.candidate(STORE_TEXT, bad))
         bad = [i for i in timer_instructions() if i.mnemonic != 'test']
         self.assertIsNone(self.candidate(instructions=bad))
+
+    def test_fallback_dispatch_shape_and_source(self):
+        candidate = self.candidate(FALLBACK_TEXT, fallback_instructions(), body_bytes=203)
+        self.assertIsNotNone(candidate)
+        self.assertEqual(candidate['constructor'], '10dfbb10')
+        self.assertEqual(candidate['fallback_class'], 'NativeFallbackEvent_FUN_10dfcab0')
+        self.assertEqual(candidate['fallback_low'], 'NativeFallbackLow_FUN_105a1c80')
+        self.assertEqual(candidate['fallback_high'], 'NativeFallbackHigh_FUN_105a1d20')
+        self.assertEqual(candidate['flag_offset'], 0x10c)
+        self.assertIn('thunk_FUN_10ebbab0(16456); return;', candidate['source'])
+        self.assertIn('dispatcher->thunk_FUN_10def490(NativeFallbackEvent_FUN_10dfcab0())',
+                      candidate['source'])
+        self.assertIn('((NativeFallbackResult_10c *)thunk_FUN_10eb41b0())->flag = 1;',
+                      candidate['source'])
+
+    def test_fallback_flag_offset(self):
+        candidate = self.candidate(
+            FALLBACK_TEXT.replace('0x10c', '0x110'),
+            fallback_instructions(offset='0x110'), body_bytes=203)
+        self.assertIn('NativeFallbackResult_110', candidate['source'])
+
+    def test_fallback_rejects_wrong_action_or_offset(self):
+        self.assertIsNone(self.candidate(FALLBACK_TEXT, fallback_instructions('0x4049'),
+                                         body_bytes=203))
+        self.assertIsNone(self.candidate(FALLBACK_TEXT, fallback_instructions(offset='0x10d'),
+                                         body_bytes=203))
+        bad = fallback_instructions()
+        bad[22] = instruction(0x10ccd000 + 0x1b, 'lea', 'ecx, [ebp - 0x38]')
+        self.assertIsNone(self.candidate(FALLBACK_TEXT, bad, body_bytes=203))
+        bad = [i for i in fallback_instructions() if i.op_str != 'byte ptr [eax + 0x10c], 1']
+        self.assertIsNone(self.candidate(FALLBACK_TEXT, bad, body_bytes=203))
 
 
 if __name__ == '__main__':

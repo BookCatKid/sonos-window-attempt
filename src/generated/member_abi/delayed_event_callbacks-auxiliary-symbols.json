@@ -12,5 +12,12 @@
     "state": 0,
     "call_target": "1006cfc6",
     "body_entry": "105a8900"
+  },
+  {
+    "symbol": "??1NativeFallbackEvent_FUN_10dfcab0@@QAE@XZ",
+    "owner_entry": "107fef90",
+    "state": 1,
+    "call_target": "1002200c",
+    "body_entry": "10774410"
   }
 ]
