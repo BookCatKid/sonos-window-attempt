@@ -168,6 +168,55 @@ def op_ref_variants():
             '    new (&m4) NativeOpRefMember_thunk_FUN_101ba1b0();\n'
             'pm->rep = param_2;\nif (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
             f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # m4 ctor defined AFTER K's ctor in the TU: the frontend lowers the
+        # init-list invocation as a call scope (lea &m4 + spill repoint + arm)
+        # because the callee body is not yet visible; the backend inlines it
+        # later, leaving the repoint + [eax] rep store
+        'op_ref_m4_late': (
+            'struct NativeOpRefMember_thunk_FUN_101ba1b0 { void *rep;\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0(void *p);\n'
+            '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n'
+            + klass,
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(param_2) {\nf8 = 0;\nvptr = (void *)&DAT_' + vtable + ';\n}\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0::NativeOpRefMember_thunk_FUN_101ba1b0(void *p) '
+            '{ rep = p;\nif (p != 0) thunk_FUN_1123fce0((char *)p + 4); }\n'),
+        # same late-definition trick but the member ctor only stores rep;
+        # the addref call stays in K's body after the construction scope
+        'op_ref_m4_late_split': (
+            'struct NativeOpRefMember_thunk_FUN_101ba1b0 { void *rep;\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0(void *p);\n'
+            '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n'
+            + klass,
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(param_2) {\nif (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            'f8 = 0;\nvptr = (void *)&DAT_' + vtable + ';\n}\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0::NativeOpRefMember_thunk_FUN_101ba1b0(void *p) '
+            '{ rep = p; }\n'),
+        # m4 as a 1-ELEMENT ARRAY member: MSVC tracks array-element
+        # construction through the dynamic construction-this spill —
+        # lea eax,[esi+4]; mov [ebp-0x10],eax — and the funclet reads the
+        # spill bare because the element address is not a fixed offset
+        'op_ref_m4_array': (
+            m4_inline +
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0 m4[1]; void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4{param_2} {\nif (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            'f8 = 0;\nvptr = (void *)&DAT_' + vtable + ';\n}\n'),
+        # m4 nested inside a sub-struct member: the nested construction scope
+        # repoints construction-this to &sub.m4
+        'op_ref_m4_nested': (
+            m4_inline +
+            'struct NativeOpRefSub_FUN_10687d70 { NativeOpRefMember_thunk_FUN_101ba1b0 m4;\n'
+            'NativeOpRefSub_FUN_10687d70(void *p) : m4(p) {} };\n'
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'NativeOpRefSub_FUN_10687d70 m4; void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(param_2) {\nif (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            'f8 = 0;\nvptr = (void *)&DAT_' + vtable + ';\n}\n'),
         # m4 as a SECOND BASE: MSVC gives each base its own construction scope —
         # repoint [ebp-0x10]=&m4, arm0 before the base ctor body stores rep
         'op_ref_m4_base': (
@@ -296,6 +345,17 @@ def op_impl_variants():
         ' NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;').replace(
         ' : smart(param) {',
         ' : NativeOpSmart14_thunk_FUN_101ba1b0(param) {')
+    # smart as a 1-ELEMENT ARRAY member of m14: MSVC tracks array-element
+    # construction via the dynamic construction-this spill — emits
+    # lea eax,[esi+4]; mov [ebp-0x14],eax — and the funclet reads it bare
+    variants['op_impl_smart_array'] = decls.replace(
+        ' NativeOpSmart14_thunk_FUN_101ba1b0 smart;',
+        ' NativeOpSmart14_thunk_FUN_101ba1b0 smart[1];').replace(
+        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
+        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
+        '    NativeOpSmart14_thunk_FUN_101ba1b0() {} };').replace(
+        ' : smart(param) { f8 = 0;',
+        ' { smart[0].p = param; if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0;')
     header = ('// Constructor-scope hypothesis variants for entry 10687e80.\n'
               'inline void *operator new(unsigned int, void *receiver) noexcept { return receiver; }\n')
     out = {}

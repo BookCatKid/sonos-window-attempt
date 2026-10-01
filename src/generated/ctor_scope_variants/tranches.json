@@ -44,6 +44,22 @@
     "directory": "analysis/ctor-scope-op-ref-m4-place"
   },
   {
+    "object": "op_ref_m4_late_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-late"
+  },
+  {
+    "object": "op_ref_m4_late_split_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-late-split"
+  },
+  {
+    "object": "op_ref_m4_array_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-array"
+  },
+  {
+    "object": "op_ref_m4_nested_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-nested"
+  },
+  {
     "object": "op_ref_m4_base_reference_flags",
     "directory": "analysis/ctor-scope-op-ref-m4-base"
   },
@@ -98,6 +114,10 @@
   {
     "object": "op_impl_smart_base_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-smart-base"
+  },
+  {
+    "object": "op_impl_smart_array_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-smart-array"
   },
   {
     "object": "named_event_memberinit_reference_flags",
