@@ -160,142 +160,87 @@ extern int thunk_FUN_10defac0(...);
 // Reference entry 10df9390; body size 137 bytes.
 #line 1 "ENTRY_10df9390"
 NativeCopierOutput *NativeCopierOutput::FUN_10df9390() {
-NativeCopierOutput * volatile self = this;
-NativeCopierSource_FUN_10df9440 a;
-NativeCopierSource_FUN_10df9440 *pa = &a;
-NativeCopierAggregate_FUN_10deee60 agg(*pa);
-NativeCopierEvent_FUN_10df9510 c;
-NativeCopierEvent_FUN_10df9510 *pc = &c;
-pc->thunk_FUN_10defac0(self, agg);
+NativeCopierAggregate_FUN_10deee60 agg((NativeCopierSource_FUN_10df9440()));
+NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this, agg);
 return this;
 }
 
 // Reference entry 10df95e0; body size 137 bytes.
 #line 1 "ENTRY_10df95e0"
 NativeCopierOutput *NativeCopierOutput::FUN_10df95e0() {
-NativeCopierOutput * volatile self = this;
-NativeCopierSource_FUN_10df9690 a;
-NativeCopierSource_FUN_10df9690 *pa = &a;
-NativeCopierAggregate_FUN_10deee60 agg(*pa);
-NativeCopierEvent_FUN_10df9760 c;
-NativeCopierEvent_FUN_10df9760 *pc = &c;
-pc->thunk_FUN_10defac0(self, agg);
+NativeCopierAggregate_FUN_10deee60 agg((NativeCopierSource_FUN_10df9690()));
+NativeCopierEvent_FUN_10df9760().thunk_FUN_10defac0(this, agg);
 return this;
 }
 
 // Reference entry 10df99d0; body size 137 bytes.
 #line 1 "ENTRY_10df99d0"
 NativeCopierOutput *NativeCopierOutput::FUN_10df99d0() {
-NativeCopierOutput * volatile self = this;
-NativeCopierSource_FUN_10df9a80 a;
-NativeCopierSource_FUN_10df9a80 *pa = &a;
-NativeCopierAggregate_FUN_10deee60 agg(*pa);
-NativeCopierEvent_FUN_10df9b50 c;
-NativeCopierEvent_FUN_10df9b50 *pc = &c;
-pc->thunk_FUN_10defac0(self, agg);
+NativeCopierAggregate_FUN_10deee60 agg((NativeCopierSource_FUN_10df9a80()));
+NativeCopierEvent_FUN_10df9b50().thunk_FUN_10defac0(this, agg);
 return this;
 }
 
 // Reference entry 10df9cb0; body size 137 bytes.
 #line 1 "ENTRY_10df9cb0"
 NativeCopierOutput *NativeCopierOutput::FUN_10df9cb0() {
-NativeCopierOutput * volatile self = this;
-NativeCopierSource_FUN_10df9d60 a;
-NativeCopierSource_FUN_10df9d60 *pa = &a;
-NativeCopierAggregate_FUN_10deee60 agg(*pa);
-NativeCopierEvent_FUN_10df9e30 c;
-NativeCopierEvent_FUN_10df9e30 *pc = &c;
-pc->thunk_FUN_10defac0(self, agg);
+NativeCopierAggregate_FUN_10deee60 agg((NativeCopierSource_FUN_10df9d60()));
+NativeCopierEvent_FUN_10df9e30().thunk_FUN_10defac0(this, agg);
 return this;
 }
 
 // Reference entry 10df9f00; body size 137 bytes.
 #line 1 "ENTRY_10df9f00"
 NativeCopierOutput *NativeCopierOutput::FUN_10df9f00() {
-NativeCopierOutput * volatile self = this;
-NativeCopierSource_FUN_10df9fb0 a;
-NativeCopierSource_FUN_10df9fb0 *pa = &a;
-NativeCopierAggregate_FUN_10deee60 agg(*pa);
-NativeCopierEvent_FUN_10dfa080 c;
-NativeCopierEvent_FUN_10dfa080 *pc = &c;
-pc->thunk_FUN_10defac0(self, agg);
+NativeCopierAggregate_FUN_10deee60 agg((NativeCopierSource_FUN_10df9fb0()));
+NativeCopierEvent_FUN_10dfa080().thunk_FUN_10defac0(this, agg);
 return this;
 }
 
 // Reference entry 10dfa220; body size 137 bytes.
 #line 1 "ENTRY_10dfa220"
 NativeCopierOutput *NativeCopierOutput::FUN_10dfa220() {
-NativeCopierOutput * volatile self = this;
-NativeCopierSource_FUN_10dfa2d0 a;
-NativeCopierSource_FUN_10dfa2d0 *pa = &a;
-NativeCopierAggregate_FUN_10deee60 agg(*pa);
-NativeCopierEvent_FUN_10dfa3a0 c;
-NativeCopierEvent_FUN_10dfa3a0 *pc = &c;
-pc->thunk_FUN_10defac0(self, agg);
+NativeCopierAggregate_FUN_10deee60 agg((NativeCopierSource_FUN_10dfa2d0()));
+NativeCopierEvent_FUN_10dfa3a0().thunk_FUN_10defac0(this, agg);
 return this;
 }
 
 // Reference entry 10dfa470; body size 137 bytes.
 #line 1 "ENTRY_10dfa470"
 NativeCopierOutput *NativeCopierOutput::FUN_10dfa470() {
-NativeCopierOutput * volatile self = this;
-NativeCopierSource_FUN_10dfa520 a;
-NativeCopierSource_FUN_10dfa520 *pa = &a;
-NativeCopierAggregate_FUN_10deee60 agg(*pa);
-NativeCopierEvent_FUN_10dfa5f0 c;
-NativeCopierEvent_FUN_10dfa5f0 *pc = &c;
-pc->thunk_FUN_10defac0(self, agg);
+NativeCopierAggregate_FUN_10deee60 agg((NativeCopierSource_FUN_10dfa520()));
+NativeCopierEvent_FUN_10dfa5f0().thunk_FUN_10defac0(this, agg);
 return this;
 }
 
 // Reference entry 10dfaad0; body size 137 bytes.
 #line 1 "ENTRY_10dfaad0"
 NativeCopierOutput *NativeCopierOutput::FUN_10dfaad0() {
-NativeCopierOutput * volatile self = this;
-NativeCopierSource_FUN_10dfab80 a;
-NativeCopierSource_FUN_10dfab80 *pa = &a;
-NativeCopierAggregate_FUN_10deee60 agg(*pa);
-NativeCopierEvent_FUN_10dfac50 c;
-NativeCopierEvent_FUN_10dfac50 *pc = &c;
-pc->thunk_FUN_10defac0(self, agg);
+NativeCopierAggregate_FUN_10deee60 agg((NativeCopierSource_FUN_10dfab80()));
+NativeCopierEvent_FUN_10dfac50().thunk_FUN_10defac0(this, agg);
 return this;
 }
 
 // Reference entry 10dfad20; body size 137 bytes.
 #line 1 "ENTRY_10dfad20"
 NativeCopierOutput *NativeCopierOutput::FUN_10dfad20() {
-NativeCopierOutput * volatile self = this;
-NativeCopierSource_FUN_10dfadd0 a;
-NativeCopierSource_FUN_10dfadd0 *pa = &a;
-NativeCopierAggregate_FUN_10deee60 agg(*pa);
-NativeCopierEvent_FUN_10dfaea0 c;
-NativeCopierEvent_FUN_10dfaea0 *pc = &c;
-pc->thunk_FUN_10defac0(self, agg);
+NativeCopierAggregate_FUN_10deee60 agg((NativeCopierSource_FUN_10dfadd0()));
+NativeCopierEvent_FUN_10dfaea0().thunk_FUN_10defac0(this, agg);
 return this;
 }
 
 // Reference entry 10dfaf70; body size 137 bytes.
 #line 1 "ENTRY_10dfaf70"
 NativeCopierOutput *NativeCopierOutput::FUN_10dfaf70() {
-NativeCopierOutput * volatile self = this;
-NativeCopierSource_FUN_10dfb020 a;
-NativeCopierSource_FUN_10dfb020 *pa = &a;
-NativeCopierAggregate_FUN_10deee60 agg(*pa);
-NativeCopierEvent_FUN_10dfb0f0 c;
-NativeCopierEvent_FUN_10dfb0f0 *pc = &c;
-pc->thunk_FUN_10defac0(self, agg);
+NativeCopierAggregate_FUN_10deee60 agg((NativeCopierSource_FUN_10dfb020()));
+NativeCopierEvent_FUN_10dfb0f0().thunk_FUN_10defac0(this, agg);
 return this;
 }
 
 // Reference entry 10dfb480; body size 137 bytes.
 #line 1 "ENTRY_10dfb480"
 NativeCopierOutput *NativeCopierOutput::FUN_10dfb480() {
-NativeCopierOutput * volatile self = this;
-NativeCopierSource_FUN_10dfb530 a;
-NativeCopierSource_FUN_10dfb530 *pa = &a;
-NativeCopierAggregate_FUN_10deee60 agg(*pa);
-NativeCopierEvent_FUN_10dfb600 c;
-NativeCopierEvent_FUN_10dfb600 *pc = &c;
-pc->thunk_FUN_10defac0(self, agg);
+NativeCopierAggregate_FUN_10deee60 agg((NativeCopierSource_FUN_10dfb530()));
+NativeCopierEvent_FUN_10dfb600().thunk_FUN_10defac0(this, agg);
 return this;
 }

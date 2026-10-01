@@ -292,10 +292,6 @@
     "directory": "analysis/compiled-cpp-vcall-event-callbacks"
   },
   {
-    "object": "event_copier_callbacks_reference_flags",
-    "directory": "analysis/compiled-cpp-event-copier-callbacks"
-  },
-  {
     "object": "page_factories_reference_flags",
     "directory": "analysis/compiled-cpp-page-factories"
   },
@@ -314,5 +310,9 @@
   {
     "object": "wiz_state_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-wiz-state-callbacks"
+  },
+  {
+    "object": "event_copier_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-event-copier-callbacks"
   }
 ]

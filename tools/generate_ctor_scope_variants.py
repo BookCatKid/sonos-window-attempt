@@ -136,6 +136,26 @@ def op_ref_variants():
             '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n',
             'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
             '    : m4(param_2) ' + ctor_tail),
+        # member ctor DECLARED only, defined out-of-class empty: the frontend
+        # emits the ctor-call scope (lea this + spill repoint + arm) and the
+        # backend inlines the empty body, leaving repoint + eax store
+        'op_ref_m4_decl_empty': (
+            'struct NativeOpRefMember_thunk_FUN_101ba1b0 { void *rep;\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0(void *p);\n'
+            '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0::NativeOpRefMember_thunk_FUN_101ba1b0(void *p) {}\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(param_2) ' + ctor_tail),
+        # same but the ctor keeps a rep-store body; addref stays in outer body
+        'op_ref_m4_decl_store': (
+            'struct NativeOpRefMember_thunk_FUN_101ba1b0 { void *rep;\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0(void *p);\n'
+            '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0::NativeOpRefMember_thunk_FUN_101ba1b0(void *p) '
+            '{ rep = p; }\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(param_2) {\nif (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
     }
     out = {}
     for name, (member, definition) in variants.items():
@@ -219,6 +239,17 @@ def op_impl_variants():
         ' : smart(param) { smart.p = param; '
         'if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0;')
     variants['op_impl_smart_arg_empty'] = smart_arg_empty
+    # smart ctor DECLARED in-class but defined out-of-line EMPTY: the frontend
+    # emits the ctor-call scope (lea &smart + spill repoint + arm3) and the
+    # backend inlines the empty body, leaving the nested repoint + [eax] store
+    variants['op_impl_smart_decl_empty'] = decls.replace(
+        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
+        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
+        '    NativeOpSmart14_thunk_FUN_101ba1b0(void *value); };\n'
+        'NativeOpSmart14_thunk_FUN_101ba1b0::NativeOpSmart14_thunk_FUN_101ba1b0(void *value) {}').replace(
+        ' : smart(param) { f8 = 0;',
+        ' : smart(param) { smart.p = param; '
+        'if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0;')
     header = '// Constructor-scope hypothesis variants for entry 10687e80.\n'
     out = {}
     for name, library in variants.items():

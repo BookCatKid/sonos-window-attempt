@@ -32,6 +32,14 @@
     "directory": "analysis/ctor-scope-op-ref-m4-arg-ctor"
   },
   {
+    "object": "op_ref_m4_decl_empty_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-decl-empty"
+  },
+  {
+    "object": "op_ref_m4_decl_store_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-decl-store"
+  },
+  {
     "object": "op_impl_control_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-control"
   },
@@ -70,5 +78,9 @@
   {
     "object": "op_impl_smart_arg_empty_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-smart-arg-empty"
+  },
+  {
+    "object": "op_impl_smart_decl_empty_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-smart-decl-empty"
   }
 ]
