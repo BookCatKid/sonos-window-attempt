@@ -282,5 +282,9 @@
   {
     "object": "op_impl_ctors_reference_flags",
     "directory": "analysis/compiled-cpp-op-impl-ctors"
+  },
+  {
+    "object": "vcall_event_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-vcall-event-callbacks"
   }
 ]
