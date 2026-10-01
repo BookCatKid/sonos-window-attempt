@@ -193,8 +193,11 @@ def fixed_runs(code, relocs):
     return runs
 
 
-def immutable_data_definitions(sections, symbols):
-    """Extract entire read-only symbol extents, never partial data prefixes."""
+def immutable_data_definitions(sections, symbols, by_index=None, include_relocations=False):
+    """Extract entire read-only symbol extents, never partial data prefixes.
+
+    Relocated definitions are opt-in and require recursive child verification.
+    """
     result=[]
     for symbol in symbols:
         if symbol['storage'] not in (2,3) or symbol['type']&0x20:continue
@@ -205,10 +208,65 @@ def immutable_data_definitions(sections, symbols):
         ends=[s['offset'] for s in symbols if s['section']==symbol['section'] and s['offset']>start]
         stop=min(ends,default=len(section['code']))
         data=section['code'][start:stop]
-        if len(data)<4 or not any(data):continue
-        if any(start<=r['offset']<stop for r in section['relocations']):continue
-        result.append({'symbol':symbol['name'],'public':symbol['storage']==2,'data':data})
+        if not include_relocations and any(start<=r['offset']<stop for r in section['relocations']):continue
+        relocs=[]
+        for r in section['relocations']:
+            if start<=r['offset']<stop:
+                target=(by_index or {}).get(r['symbol_index'])
+                relocs.append({'offset':r['offset']-start,'type':r['type'],
+                               'symbol':target['name'] if target else ''})
+        if relocs and not include_relocations:continue
+        literal=symbol['name'].startswith('??_C@')
+        if not data or (len(data)<4 and not literal) or (not any(data) and not relocs and not literal):continue
+        if any(r['type']!=6 or r['offset']+4>len(data) or not r['symbol'] for r in relocs):continue
+        occupied=[o for r in relocs for o in range(r['offset'],r['offset']+4)]
+        if len(occupied)!=len(set(occupied)):continue
+        result.append({'symbol':symbol['name'],'public':symbol['storage']==2,'data':data,'relocs':relocs})
     return result
+
+
+def verify_readonly_definition(obj, symbol, address, local_data, global_data,
+                               global_names, local_names, read_native, readonly, visiting=None):
+    """Prove a complete constant initializer and every pointed-to child.
+
+    Slot addresses propose placement constraints only. Fixed bytes, complete leaf
+    extents and independently bound function endpoints must prove those constraints.
+    Cyclic data or unknown children fail closed; this grants no separate byte credit.
+    """
+    visiting=set() if visiting is None else visiting
+    key=(obj,symbol,address)
+    if key in visiting:return False,[]
+    definitions=local_data.get((obj,symbol),[]) or global_data.get(symbol,[])
+    for definition in definitions:
+        data=definition['data']
+        if not readonly(address,len(data)):continue
+        expected=read_native(address,len(data))
+        if len(expected)!=len(data):continue
+        relocs=definition['relocs'];runs=fixed_runs(data,relocs)
+        if not all(expected[o:o+len(value)]==value for o,value in runs):continue
+        # fixed_runs returns no runs for malformed or entirely pointer-only data;
+        # independently validate all fixups even when there is no fixed anchor.
+        if any(r['type']!=6 or r['offset']<0 or r['offset']+4>len(data) for r in relocs):continue
+        patched=bytearray(data);children=[];valid=True
+        owner=definition['object']
+        for relocation in relocs:
+            offset=relocation['offset'];child=relocation['symbol']
+            addend=struct.unpack_from('<I',data,offset)[0]
+            target=(struct.unpack_from('<I',expected,offset)[0]-addend)&0xffffffff
+            known=local_names.get((owner,child),[]) or global_names.get(child,[])
+            if known:
+                if target not in known:valid=False;break
+            else:
+                verified,evidence=verify_readonly_definition(owner,child,target,local_data,global_data,
+                    global_names,local_names,read_native,readonly,visiting|{key})
+                if not verified:valid=False;break
+                children.extend(evidence)
+            struct.pack_into('<I',patched,offset,(target+addend)&0xffffffff)
+        if valid and bytes(patched)==expected:
+            return True,[{'object':owner,'symbol':symbol,'address':f'{address:08x}',
+                          'bytes':len(data),'relocations':len(relocs),
+                          'scope':'Full compiler constant initializer verified; zero separate byte credit'}]+children
+    return False,[]
 
 
 def match(objects, reference, inventory, accepted_fragment_sink=None):
@@ -226,10 +284,11 @@ def match(objects, reference, inventory, accepted_fragment_sink=None):
     imports.update(cookie_targets)
     local_data=defaultdict(list);global_data=defaultdict(list)
     for path in objects:
-        source_sections,source_symbols,_=read_coff(path)
-        for item in immutable_data_definitions(source_sections,source_symbols):
-            local_data[str(path),item['symbol']].append(item['data'])
-            if item['public']:global_data[item['symbol']].append(item['data'])
+        source_sections,source_symbols,source_index=read_coff(path)
+        for item in immutable_data_definitions(source_sections,source_symbols,source_index,include_relocations=True):
+            item['object']=str(path)
+            local_data[str(path),item['symbol']].append(item)
+            if item['public']:global_data[item['symbol']].append(item)
     for path in objects:
         for b in bodies(path):
             code=b['code'];runs=fixed_runs(code,b['relocs'])
@@ -303,23 +362,24 @@ def match(objects, reference, inventory, accepted_fragment_sink=None):
             if not changed:break
         return global_names,local_names,forwarding_evidence
     def verify(b,global_names,local_names):
-        known=dict(global_names)
+        known=dict(global_names);data_evidence=[]
         for (obj,name),vas in local_names.items():
             if obj==b['object']:known[name]=vas
         expected=function_bytes(reference,b['entry'],len(b['code']),base,sections)
-        # Independently validate immutable, relocation-free compiler data. Never
-        # assign a symbol solely from the address occupying the reference slot.
+        def readonly(address,length):
+            native_section=next((i for i,(rva,size,_) in enumerate(sections)
+                                 if base+rva<=address and address+length<=base+rva+size),None)
+            return native_section is not None and not native_characteristics[native_section]&(0x20000000|0x80000000)
+        # A reference operand only proposes a constant's address. The complete
+        # compiler initializer and all children must independently verify it.
         for r in b['relocs']:
             if r['type']!=6 or r['symbol'] in known:continue
             addend=struct.unpack_from('<I',b['code'],r['offset'])[0]
-            address=struct.unpack_from('<I',expected,r['offset'])[0]-addend
-            definitions=local_data.get((b['object'],r['symbol']),[]) or global_data.get(r['symbol'],[])
-            for data in definitions:
-                native_section=next((i for i,(rva,size,_) in enumerate(sections)
-                                     if base+rva<=address and address+len(data)<=base+rva+size),None)
-                if native_section is None or native_characteristics[native_section]&(0x20000000|0x80000000):continue
-                if function_bytes(reference,address,len(data),base,sections)==data:
-                    known[r['symbol']]=[address];break
+            address=(struct.unpack_from('<I',expected,r['offset'])[0]-addend)&0xffffffff
+            verified,evidence=verify_readonly_definition(b['object'],r['symbol'],address,local_data,global_data,
+                global_names,local_names,lambda va,size:function_bytes(reference,va,size,base,sections),readonly)
+            if verified:
+                known[r['symbol']]=[address];data_evidence.extend(evidence)
         patched,_,unresolved=resolve_known_relocations(b['code'],expected,b['relocs'],b['entry'],base,known)
         diagnostics=[]
         for r in b['relocs']:
@@ -334,7 +394,7 @@ def match(objects, reference, inventory, accepted_fragment_sink=None):
             elif patched[offset:offset+4]!=expected[offset:offset+4]:
                 diagnostics.append({'symbol':r['symbol'],'offset':offset,'type':r['type'],
                                     'native_target':f'{actual:08x}','reason':'verified targets do not match this relocation'})
-        return unresolved==0 and patched==expected,diagnostics,unresolved,patched
+        return unresolved==0 and patched==expected,diagnostics,unresolved,patched,data_evidence
     while active:
         global_names,local_names,_=targets(active)
         remaining={i for i in active if verify(candidates[i],global_names,local_names)[0]}
@@ -344,13 +404,14 @@ def match(objects, reference, inventory, accepted_fragment_sink=None):
     final_verification={i:verify(b,global_names,local_names) for i,b in enumerate(candidates)}
     if accepted_fragment_sink is not None:
         for i in sorted(active):
-            verified,_,unresolved,patched=final_verification[i]
+            verified,_,unresolved,patched,_=final_verification[i]
             if not verified or unresolved:raise ValueError('Final library dependency graph changed')
             accepted_fragment_sink(candidates[i],patched)
     rows=[{'object':b['object'],'symbol':b['symbol'],'entry':f'{b["entry"]:08x}',
            'bytes':len(b['code']),'relocations':len(b['relocs']),
            'unique_fixed_candidate':True,'closed_graph_exact':i in active,
            'unresolved_relocations':final_verification[i][2],
+           'readonly_dependency_evidence':final_verification[i][4] if i in active else [],
            'rejected_dependencies':final_verification[i][1] if i not in active else []}
           for i,b in enumerate(candidates)]
     return {'reference_sha256':hashlib.sha256(reference).hexdigest(),

@@ -718,3 +718,46 @@ comparison reports 13,892,167 aligned bytes / 37.3910% and rejects identity,
 including incidental zero-filled matches; those are not executable recovery
 credit. Source object compilation remains the existing pinned MSVC artifact run
 36803682931; this checkpoint changes verification and placement only.
+
+## Recursive relocated constants and pointer-table placement (2026-09-30)
+
+Library matching now admits read-only symbol extents that contain DIR32
+pointer fixups. `immutable_data_definitions` emits entire compiler constant
+initializers with their relocations only when every fixup is an in-bounds,
+non-overlapping DIR32 against a resolvable symbol.
+`verify_readonly_definition` treats a native operand address as a proposal:
+fixed byte runs must match, and every pointer child must independently verify —
+bound function endpoints via the closed dependency graph, or data children by
+the same complete-extent proof applied recursively. Cyclic tables and unknown
+children fail closed. Verified constants contribute dependency evidence only;
+they grant zero separate byte credit.
+
+Against the pinned library objects from run 36803682931 this unlocks the
+bodies whose relocations reach relocated constant tables. Zlib verifies 57
+bodies / 20,389 bytes and Expat 95 / 11,924 bytes. Thirteen accepted bodies
+carry readonly dependency evidence, including `_z_errmsg` (the `_z_errmsg`
+string pointer table), `_crc32_z`, `deflate`/`compress` static descriptor and
+code tables, `inflate_table` local `lbase`/`lext`/`dbase`/`dext` tables, and
+Expat `getEncodingIndex` (the `encodingNames` pointer table).
+`analysis/recovery-msvc-upstream-pointer-tables/coverage-audit.json` records
+165,879 distinct bodies / 1,813,993 executable bytes / 7.090710% coverage —
+105 new distinct functions / 30,969 new distinct bytes over the
+conditional-event baseline, or +3 distinct bodies / +435 bytes over the
+linker-aliases checkpoint.
+
+The placement pipeline reruns all pinned checks and places only closed-graph
+compiler bytes. `analysis/linked-placement-upstream-pointer-tables/recovery-layout.dll`
+contains 11,679,974 proven compiler bytes / 31.436829% of the file, including
+1,988,326 `.text` bytes. SHA-256 is
+`43a7f55c0dcb06bdfc31e7f326f22be55abc9224254b9210f60049bd98f30562`. Its
+generated base-relocation directory is 1,077,988 bytes. All six recovered
+non-executable sections remain byte-identical. The independent whole-file
+comparator reports 13,891,746 aligned bytes / 37.3898% and still FAILS
+identity; the image remains a partial, nonloadable placement artifact.
+
+Validation: all 63 local tooling tests pass, including new recursive
+pointer-table, empty-string leaf, and cyclic-rejection cases. Source object
+compilation remains the pinned MSVC run 36803682931; this checkpoint changes
+verification and placement only. Older superseded `analysis/linked-placement-*`
+directories were removed locally to reclaim disk space; each is regenerable
+from the pinned artifacts and the documented commands.

@@ -1,8 +1,8 @@
 # Whole-library and original-layout recovery
 
-The accepted object-body audit now contains 1,813,558 executable bytes (7.089009%).
-The partial PE placement build contains 11,679,539 physically placed compiler
-bytes (31.435658% of the file), including the verified upstream-library bodies.
+The accepted object-body audit now contains 1,813,993 executable bytes (7.090710%).
+The partial PE placement build contains 11,679,974 physically placed compiler
+bytes (31.436829% of the file), including the verified upstream-library bodies.
 The active goal remains 100% binary identity from C/C++.
 
 ## Reproduce LINK behavior, then reconstruct the layout
@@ -132,6 +132,20 @@ An additional indexed LINK E9 thunk to a verified C forwarder unlocks eight zlib
 bodies / 4,667 bytes. Forwarders and their aliases add no separate coverage.
 Compiler CodeView procedure bounds also recover three Expat extraction omissions,
 without increasing accepted coverage; these bodies remain outside the proven graph.
+
+Recursive verification of relocated constant definitions extends the audit.
+Complete read-only symbol extents that contain in-bounds, non-overlapping DIR32
+fixups are admitted only when all fixed bytes match and every pointer child
+independently verifies — bound functions through the closed graph, data through
+the same complete-extent proof recursively. Cyclic tables and unknown children
+fail closed; verified constants record evidence but earn zero separate bytes.
+This unlocks zlib bodies depending on `crc_table`, the `static_*` descriptor
+trees, `z_errmsg`, and Expat `getEncodingIndex`'s `encodingNames` table, raising
+the reverification to 57 zlib bodies / 20,389 bytes and 95 Expat bodies / 11,924
+bytes. The resulting audit is
+`analysis/recovery-msvc-upstream-pointer-tables/coverage-audit.json`:
+165,879 distinct bodies / 1,813,993 executable bytes / 7.090710%, reproduced by
+the same command with `--output-dir analysis/recovery-msvc-upstream-pointer-tables`.
 
 ## Structured Ghidra evidence
 

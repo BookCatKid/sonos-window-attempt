@@ -7,7 +7,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from match_library_objects import fixed_runs, match, imported_targets, immutable_data_definitions, security_cookie_targets, codeview_function_sizes
+from match_library_objects import fixed_runs, match, imported_targets, immutable_data_definitions, security_cookie_targets, codeview_function_sizes, verify_readonly_definition
 from types import SimpleNamespace
 
 
@@ -105,6 +105,35 @@ class LibraryMatchingTests(unittest.TestCase):
         oversized=bytearray(payload);struct.pack_into('<I',oversized,12+16,9)
         with self.assertRaises(ValueError):codeview_function_sizes([code,dict(debug,code=oversized)],symbols)
         with self.assertRaises(ValueError):codeview_function_sizes([code,dict(debug,code=payload[:-1])],symbols)
+
+    def test_pointer_table_requires_complete_recursive_children_and_bound_functions(self):
+        table={'object':'a.obj','symbol':'_table','data':b'ABCD'+b'\0'*8,
+               'relocs':[{'offset':4,'type':6,'symbol':'_text'},{'offset':8,'type':6,'symbol':'_fn'}]}
+        text={'object':'b.obj','symbol':'_text','data':b'hello\0','relocs':[]}
+        local={('a.obj','_table'):[table]};global_data={'_text':[text]}
+        native={0x2000:b'ABCD'+struct.pack('<II',0x3000,0x4000),0x3000:b'hello\0'}
+        read=lambda address,size:native.get(address,b'')[:size]
+        check=lambda names={'_fn':[0x4000]},readonly=lambda address,size:True:verify_readonly_definition(
+            'a.obj','_table',0x2000,local,global_data,names,{},read,readonly)
+        ok,evidence=check();self.assertTrue(ok);self.assertEqual(len(evidence),2)
+        self.assertFalse(check(names={})[0])
+        self.assertFalse(check(names={'_fn':[0x4004]})[0])
+        self.assertFalse(check(readonly=lambda address,size:address!=0x3000)[0])
+        native[0x3000]=b'hellX\0';self.assertFalse(check()[0]);native[0x3000]=b'hello\0'
+        native[0x2000]=b'ABCE'+struct.pack('<II',0x3000,0x4000);self.assertFalse(check()[0])
+
+    def test_pointer_only_and_empty_string_constants_need_all_child_proofs(self):
+        table={'object':'a','symbol':'_table','data':b'\0'*4,
+               'relocs':[{'offset':0,'type':6,'symbol':'??_C@empty'}]}
+        leaf={'object':'a','symbol':'??_C@empty','data':b'\0','relocs':[]}
+        local={('a','_table'):[table],('a','??_C@empty'):[leaf]}
+        native={0x2000:struct.pack('<I',0x3000),0x3000:b'\0'}
+        check=lambda:verify_readonly_definition('a','_table',0x2000,local,{}, {},{},
+            lambda va,size:native.get(va,b'')[:size],lambda va,size:True)
+        self.assertTrue(check()[0]);native[0x3000]=b'x';self.assertFalse(check()[0])
+        native[0x3000]=struct.pack('<I',0x2000)
+        leaf['data']=b'\0'*4;leaf['relocs']=[{'offset':0,'type':6,'symbol':'_table'}]
+        self.assertFalse(check()[0])
 
     def test_import_targets_require_named_iat_and_actual_jump_chain(self):
         image=bytearray(1024);struct.pack_into('<I',image,0x3c,0x80)
