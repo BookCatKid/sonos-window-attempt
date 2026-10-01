@@ -448,6 +448,18 @@ def op_impl_variants():
         '{ p = value; }').replace(
         ' : smart(param) { f8 = 0;',
         ' : smart(param) { if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0;')
+    # split + BOTH smart's and m14's ctors defined out-of-class: under /GL
+    # each member-init is an IL call scope that /LTCG inlines after the EH
+    # spill was committed — the shape native shows for both &m14 and &smart
+    variants['op_impl_both_outline_split'] = (
+        variants['op_impl_smart_outline_split'].replace(
+            '    __forceinline NativeOpMember14_10687e80(void *param) : smart(param)'
+            ' { if (param != 0) thunk_FUN_1123fce0((char *)param + 4);'
+            ' f8 = 0; vptr = (void *)&DAT_118c62f8; } };',
+            '    NativeOpMember14_10687e80(void *param); };\n'
+            'NativeOpMember14_10687e80::NativeOpMember14_10687e80(void *param)'
+            ' : smart(param) { if (param != 0) thunk_FUN_1123fce0((char *)param + 4);'
+            ' f8 = 0; vptr = (void *)&DAT_118c62f8; }'))
     # same split but the addref is a METHOD call on smart — the member call
     # binds ecx=&smart which becomes the tracked construction-this
     variants['op_impl_smart_split_method'] = decls.replace(
@@ -826,6 +838,62 @@ def event_copier_variants():
     return out
 
 
+def ltcgize(text):
+    """Make a variant TU self-contained for link /LTCG: external data and
+    declared-only member functions become real definitions so the link
+    resolves them (calls stay calls — only the reference is satisfied)."""
+    # extern globals -> definitions
+    text = re.sub(r'extern unsigned int (\w+);', r'unsigned int \1 = 0;', text)
+    text = re.sub(r'extern int (\w+)\(\.\.\.\);\s*\n', '', text)
+    # typed free-function decls -> keep decl + emit a stub def
+    stubs = []
+    seen_stubs = set()
+    for m in re.finditer(
+            r'^(?:extern )?((?:void|int|bool|unsigned|char|const)\s*'
+            r'(?:[\w\* ]*?))\s+(__cdecl |__thiscall |__fastcall )?'
+            r'(\w+)\(([^;{]*)\);[ \t]*$', text, re.M):
+        ret, conv, name, args = m.groups()
+        if name in seen_stubs:
+            continue
+        seen_stubs.add(name)
+        stubs.append(f'{ret} {conv or ""}{name}({args}) {{'
+                     + (' return 0;' if 'void' not in ret else '') + ' }')
+    # member decls inside structs: NAME(args); or ~NAME(); with no body —
+    # skip members that already have an out-of-class definition in the file
+    for sm in re.finditer(r'struct (\w+)[^;{]*\{(.*?)\};', text, re.S):
+        sname, body = sm.groups()
+        for mm in re.finditer(r'(?<![\w:~])(~?)(\w+)\(([^;{}]*)\);', body):
+            tilde, mname, args = mm.groups()
+            if mname != sname.lstrip('~') and '~' + sname != tilde + mname:
+                continue
+            defined = (f'{sname}::~{sname}(' if tilde
+                       else f'{sname}::{sname}(')
+            if defined in text:
+                continue
+            key = f'{sname}::{tilde}{mname}({args})'
+            if key in seen_stubs:
+                continue
+            seen_stubs.add(key)
+            if tilde:
+                stubs.append(f'{sname}::~{sname}() {{ }}')
+            else:
+                stubs.append(f'{sname}::{sname}({args}) {{ }}')
+    # CRT entry points referenced by /EHsc + /GS codegen — stubbed so the
+    # /NODEFAULTLIB link resolves them; they are only call targets
+    text += ('\nextern "C" {\n'
+             'int __cdecl __CxxFrameHandler3(void *, void *, void *, void *)'
+             ' { return 0; }\n'
+             'void __fastcall __security_check_cookie(unsigned int) { }\n'
+             'unsigned int __security_cookie = 0x12345678;\n'
+             '}\n'
+             'void __cdecl __std_terminate() { for (;;) { } }\n')
+    # Export every class so /LTCG does not dead-strip the .text we want to
+    # inspect — a /NOENTRY dll has no other roots.
+    text = re.sub(r'\bstruct (\w+)',
+                  r'struct __declspec(dllexport) \1', text)
+    return text + '\n// ltcg link stubs\n' + '\n'.join(stubs) + '\n'
+
+
 def delayed_variants():
     """param-reload hypotheses for entry 107fef90 (native reloads [ebp+8])."""
     generated = (GENERATED / 'delayed_event_callbacks.cpp').read_text()
@@ -921,9 +989,10 @@ def main():
     ltcg_dir = ROOT / 'src/generated/ltcg_variants'
     ltcg_dir.mkdir(parents=True, exist_ok=True)
     for name in ('op_ref_outline_split', 'op_impl_smart_outline_split',
-                 'op_impl_smart_split', 'op_ref_split'):
+                 'op_impl_both_outline_split', 'op_impl_smart_split',
+                 'op_ref_split'):
         (ltcg_dir / (name + '_ltcg.cpp')).write_text(
-            (VARIANTS / (name + '.cpp')).read_text())
+            ltcgize((VARIANTS / (name + '.cpp')).read_text()))
     print(f'{len(manifest)} ctor-scope variants emitted')
 
 

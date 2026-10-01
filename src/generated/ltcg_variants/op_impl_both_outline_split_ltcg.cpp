@@ -28,7 +28,8 @@ struct __declspec(dllexport) NativeOpImplBase_thunk_FUN_101b9b80_10687e80 { void
 __forceinline NativeOpImplBase_thunk_FUN_101b9b80_10687e80() { v0 = (void *)&DAT_11882180; f4 = 0; g_lSCObjCount++; } };
 
 struct __declspec(dllexport) NativeOpMember14_10687e80 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;
-    __forceinline NativeOpMember14_10687e80(void *param) : smart(param) { if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0; vptr = (void *)&DAT_118c62f8; } };
+    NativeOpMember14_10687e80(void *param); };
+NativeOpMember14_10687e80::NativeOpMember14_10687e80(void *param) : smart(param) { if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0; vptr = (void *)&DAT_118c62f8; }
 
 struct __declspec(dllexport) NativeOpImpl_FUN_10687e80_vt {
 __forceinline NativeOpImpl_FUN_10687e80_vt(void *self) { *(void **)self = (void *)&DAT_118c6304; *(void **)((char *)self + 8) = (void *)&DAT_118c634c; } };

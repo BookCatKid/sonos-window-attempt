@@ -152,6 +152,10 @@
     "directory": "analysis/ctor-scope-op-impl-smart-outline-split"
   },
   {
+    "object": "op_impl_both_outline_split_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-both-outline-split"
+  },
+  {
     "object": "op_impl_smart_split_method_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-smart-split-method"
   },
