@@ -204,6 +204,10 @@
     "directory": "analysis/ctor-scope-op-impl-smart-arg-empty"
   },
   {
+    "object": "op_impl_smart_bodystore_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-smart-bodystore"
+  },
+  {
     "object": "op_impl_smart_decl_empty_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-smart-decl-empty"
   },

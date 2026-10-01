@@ -639,6 +639,17 @@ def op_impl_variants():
         ' : smart(param) { smart.p = param; '
         'if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0;')
     variants['op_impl_smart_arg_empty'] = smart_arg_empty
+    # smart has NO user ctor (implicit trivial default); m14's ctor BODY does
+    # the smart.p store + addref — the store runs inside m14's armed
+    # construction scope: arm lands before the store and the spill repoints
+    # to &smart (the exact 10687d70 body_store shape nested one level deeper)
+    variants['op_impl_smart_bodystore'] = decls.replace(
+        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
+        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
+        ' };').replace(
+        ' : smart(param) { f8 = 0;',
+        ' { smart.p = param; '
+        'if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0;')
     # smart ctor DECLARED in-class but defined out-of-line EMPTY: the frontend
     # emits the ctor-call scope (lea &smart + spill repoint + arm3) and the
     # backend inlines the empty body, leaving the nested repoint + [eax] store

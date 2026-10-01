@@ -284,10 +284,6 @@
     "directory": "analysis/compiled-cpp-op-impl-ctors"
   },
   {
-    "object": "op_ref_ctors_reference_flags",
-    "directory": "analysis/compiled-cpp-op-ref-ctors"
-  },
-  {
     "object": "vcall_event_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-vcall-event-callbacks"
   },
@@ -314,5 +310,9 @@
   {
     "object": "delayed_event_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-delayed-event-callbacks"
+  },
+  {
+    "object": "op_ref_ctors_reference_flags",
+    "directory": "analysis/compiled-cpp-op-ref-ctors"
   }
 ]

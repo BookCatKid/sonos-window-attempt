@@ -101,21 +101,25 @@ def main():
                       re.findall(r'DAT_([0-9a-f]{8})', r['source'] + ' DAT_' + r['first_vtable'])}):
         library += f'extern unsigned int DAT_{va};\n'
     library += 'void __cdecl thunk_FUN_1123fce0(void *);\n'
-    library += ('struct NativeOpRefMember_thunk_FUN_101ba1b0 { void *rep;\n'
-                '__forceinline NativeOpRefMember_thunk_FUN_101ba1b0(void *p) { rep = p;\n'
+    # m4 is a nested tracked member: rep is an implicit-default-init'd
+    # sub-object whose p store runs inside m4's armed construction scope,
+    # producing MSVC's construction-this repoint + bare-CTL funclet
+    library += ('struct NativeOpRefSub { void *p; ~NativeOpRefSub(); };\n'
+                'struct NativeOpRefMember_thunk_FUN_101ba1b0 { NativeOpRefSub rep;\n'
+                'NativeOpRefMember_thunk_FUN_101ba1b0(void *p) { rep.p = p;\n'
                 'if (p != 0) thunk_FUN_1123fce0((char *)p + 4); }\n'
                 '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n')
     for r in candidates:
         klass = r['op_class']
         library += (f'struct NativeOpRefBase_FUN_{r["entry"]} {{ void *vptr;\n'
-                    f'NativeOpRefBase_FUN_{r["entry"]}() {{ vptr = (void *)&DAT_{r["first_vtable"]}; }} }};\n'
+                    f'__forceinline NativeOpRefBase_FUN_{r["entry"]}() {{ vptr = (void *)&DAT_{r["first_vtable"]}; }} }};\n'
                     f'struct {klass} : NativeOpRefBase_FUN_{r["entry"]} {{\n'
                     f'NativeOpRefMember_thunk_FUN_101ba1b0 m4;\n'
                     f'void *f8;\n'
                     f'{klass}(void *param_2); }};\n')
     candidates = [{**r, 'abi_declarations': {'op_ref_library': library}} for r in candidates]
     evidence = {r['entry']: r for r in map(json.loads, (ROOT/'analysis/eh-lifetime-evidence.jsonl').open())}
-    roles = [('??1NativeOpRefMember_thunk_FUN_101ba1b0@@QAE@XZ', r['entry'], 0) for r in candidates]
+    roles = [('??1NativeOpRefSub@@QAE@XZ', r['entry'], 0) for r in candidates]
     emit_variant('op_ref_ctors', candidates, evidence, roles)
 
 
