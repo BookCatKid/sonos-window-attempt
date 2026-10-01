@@ -436,6 +436,18 @@ def op_impl_variants():
         '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; } };').replace(
         ' : smart(param) { f8 = 0;',
         ' : smart(param) { if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0;')
+    # split + smart's ctor defined OUT-OF-CLASS: the member-init lowers as a
+    # real call scope (repoint to &smart), the backend inlines {p=v}, and the
+    # addref in m14's body runs while smart is alive so the funclet reads the
+    # repointed spill bare
+    variants['op_impl_smart_outline_split'] = decls.replace(
+        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
+        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
+        '    NativeOpSmart14_thunk_FUN_101ba1b0(void *value); };\n'
+        'NativeOpSmart14_thunk_FUN_101ba1b0::NativeOpSmart14_thunk_FUN_101ba1b0(void *value) '
+        '{ p = value; }').replace(
+        ' : smart(param) { f8 = 0;',
+        ' : smart(param) { if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0;')
     # same split but the addref is a METHOD call on smart — the member call
     # binds ecx=&smart which becomes the tracked construction-this
     variants['op_impl_smart_split_method'] = decls.replace(
@@ -752,19 +764,23 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
             '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'
             'return this;\n'),
-        # named locals throughout but the aggregate built from a nested
-        # Source() temp arg — pushes the source ctor's eax result like the
-        # reference while keeping the named agg's lea remat
+        # named agg built from a Source() ctor-arg temp + temp event
+        # receiver: MSVC's non-standard C4239 temp extension may keep the
+        # arg temp alive to scope end (~source lands last) while temp-ness
+        # forwards the ctor's eax into the push
         'copier_temp_arg': head + (
-            'NativeCopierAggregate_FUN_10deee60 agg(NativeCopierSource_FUN_10df9440());\n'
-            'NativeCopierEvent_FUN_10df9510 e;\n'
-            'e.thunk_FUN_10defac0(this, agg);\n'
+            'NativeCopierAggregate_FUN_10deee60 agg((NativeCopierSource_FUN_10df9440()));\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this, agg);\n'
             'return this;\n'),
-        # nested temp aggregate bound through an explicit lvalue deref so MSVC
-        # rematerializes its frame address instead of keeping the ctor eax
-        'copier_nested_deref': head + (
-            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
-            '    *&NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'
+        # ref-bound temp whose ADDRESS feeds a pointer-param agg ctor: the
+        # ref binds to the ctor-result register so &a can reuse eax
+        'copier_ref_ptr_arg': head.replace(
+            'NativeCopierAggregate_FUN_10deee60(const Event_thunk_FUN_10def0d0 &);',
+            'NativeCopierAggregate_FUN_10deee60(const Event_thunk_FUN_10def0d0 &);'
+            ' NativeCopierAggregate_FUN_10deee60(const NativeCopierSource_FUN_10df9440 *);') + (
+            'const NativeCopierSource_FUN_10df9440 &a = NativeCopierSource_FUN_10df9440();\n'
+            'NativeCopierAggregate_FUN_10deee60 agg(&a);\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this, agg);\n'
             'return this;\n'),
     }
     out = {}

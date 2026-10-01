@@ -162,7 +162,8 @@ extern int thunk_FUN_10defac0(...);
 #line 1 "ENTRY_10df9390"
 NativeCopierOutput *NativeCopierOutput::FUN_10df9390() {
 NativeCopierOutput * volatile self = this;
-NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,
-    *&NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));
+const NativeCopierSource_FUN_10df9440 &a = NativeCopierSource_FUN_10df9440();
+NativeCopierAggregate_FUN_10deee60 agg(&a);
+NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this, agg);
 return this;
 }

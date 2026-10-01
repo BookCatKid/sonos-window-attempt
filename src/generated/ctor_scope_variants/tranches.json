@@ -148,6 +148,10 @@
     "directory": "analysis/ctor-scope-op-impl-smart-split"
   },
   {
+    "object": "op_impl_smart_outline_split_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-smart-outline-split"
+  },
+  {
     "object": "op_impl_smart_split_method_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-smart-split-method"
   },
@@ -256,8 +260,8 @@
     "directory": "analysis/ctor-scope-copier-temp-arg"
   },
   {
-    "object": "copier_nested_deref_reference_flags",
-    "directory": "analysis/ctor-scope-copier-nested-deref"
+    "object": "copier_ref_ptr_arg_reference_flags",
+    "directory": "analysis/ctor-scope-copier-ref-ptr-arg"
   },
   {
     "object": "delayed_plain_reference_flags",
