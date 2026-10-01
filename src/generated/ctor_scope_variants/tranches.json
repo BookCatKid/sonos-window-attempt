@@ -156,6 +156,14 @@
     "directory": "analysis/ctor-scope-op-ref-m4-subbody"
   },
   {
+    "object": "op_ref_m4_body_store_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-body-store"
+  },
+  {
+    "object": "op_ref_m4_body_only_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-body-only"
+  },
+  {
     "object": "op_impl_control_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-control"
   },

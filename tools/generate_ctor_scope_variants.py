@@ -527,6 +527,35 @@ def op_ref_variants():
             '    : m4(param_2) {\n'
             'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
             f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # rep has no user ctor (implicit default-init is trivial); M4's ctor
+        # body does the store + addref — the whole body runs inside M4's
+        # armed construction scope → arm lands BEFORE the rep store
+        'op_ref_m4_body_store': (
+            'struct NativeOpRefSub { void *p; ~NativeOpRefSub(); };\n'
+            'struct NativeOpRefMember_thunk_FUN_101ba1b0 { NativeOpRefSub rep;\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0(void *p) { rep.p = p;\n'
+            'if (p) thunk_FUN_1123fce0((char *)p + 4); }\n'
+            '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n'
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0 m4; void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(param_2) {\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # same but addref back in K's body — isolates whether the armed
+        # scope covers M4's body store alone
+        'op_ref_m4_body_only': (
+            'struct NativeOpRefSub { void *p; ~NativeOpRefSub(); };\n'
+            'struct NativeOpRefMember_thunk_FUN_101ba1b0 { NativeOpRefSub rep;\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0(void *p) { rep.p = p; }\n'
+            '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n'
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0 m4; void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(param_2) {\n'
+            'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
     }
     out = {}
     for name, (member, definition) in variants.items():
