@@ -217,6 +217,26 @@ def op_ref_variants():
             'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
             '    : m4(param_2) {\nif (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
             'f8 = 0;\nvptr = (void *)&DAT_' + vtable + ';\n}\n'),
+        # const member: MSVC must route initialization through the ctor
+        # invocation — the construction scope may keep its this-spill repoint
+        'op_ref_m4_const': (
+            m4_inline +
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'const NativeOpRefMember_thunk_FUN_101ba1b0 m4; void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(param_2) {\nif (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            'f8 = 0;\nvptr = (void *)&DAT_' + vtable + ';\n}\n'),
+        # member ctor marked noexcept(false): the throwing ctor forces a real
+        # construction scope (repoint + arm) around its inlined body
+        'op_ref_m4_noexcept': (
+            'struct NativeOpRefMember_thunk_FUN_101ba1b0 { void *rep;\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0(void *p) noexcept(false) { rep = p; }\n'
+            '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n'
+            + klass,
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(param_2) {\nif (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            'f8 = 0;\nvptr = (void *)&DAT_' + vtable + ';\n}\n'),
         # m4 as a SECOND BASE: MSVC gives each base its own construction scope —
         # repoint [ebp-0x10]=&m4, arm0 before the base ctor body stores rep
         'op_ref_m4_base': (
@@ -345,6 +365,22 @@ def op_impl_variants():
         ' NativeOpSmart14_thunk_FUN_101ba1b0 { void *f8;').replace(
         ' : smart(param) {',
         ' : NativeOpSmart14_thunk_FUN_101ba1b0(param) {')
+    # const smart member: ctor-only init forces a tracked construction scope
+    variants['op_impl_smart_const'] = decls.replace(
+        ' NativeOpSmart14_thunk_FUN_101ba1b0 smart;',
+        ' const NativeOpSmart14_thunk_FUN_101ba1b0 smart;').replace(
+        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
+        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
+        '    NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; } };').replace(
+        ' : smart(param) { f8 = 0;',
+        ' : smart(param) { if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0;')
+    # smart ctor noexcept(false): a potentially-throwing ctor keeps the
+    # construction scope materialized through inlining
+    variants['op_impl_smart_noexcept'] = decls.replace(
+        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
+        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
+        '    NativeOpSmart14_thunk_FUN_101ba1b0(void *value) noexcept(false) '
+        '{ p = value; if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };')
     # smart as a 1-ELEMENT ARRAY member of m14: MSVC tracks array-element
     # construction via the dynamic construction-this spill — emits
     # lea eax,[esi+4]; mov [ebp-0x14],eax — and the funclet reads it bare

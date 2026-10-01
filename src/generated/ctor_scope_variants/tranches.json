@@ -60,6 +60,14 @@
     "directory": "analysis/ctor-scope-op-ref-m4-nested"
   },
   {
+    "object": "op_ref_m4_const_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-const"
+  },
+  {
+    "object": "op_ref_m4_noexcept_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-noexcept"
+  },
+  {
     "object": "op_ref_m4_base_reference_flags",
     "directory": "analysis/ctor-scope-op-ref-m4-base"
   },
@@ -114,6 +122,14 @@
   {
     "object": "op_impl_smart_base_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-smart-base"
+  },
+  {
+    "object": "op_impl_smart_const_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-smart-const"
+  },
+  {
+    "object": "op_impl_smart_noexcept_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-smart-noexcept"
   },
   {
     "object": "op_impl_smart_array_reference_flags",
