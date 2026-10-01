@@ -386,5 +386,9 @@
   {
     "object": "event_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-event-callbacks"
+  },
+  {
+    "object": "conditional_event_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-conditional-event-callbacks"
   }
 ]

@@ -1,0 +1,65 @@
+[
+  {
+    "symbol": "??1NativeExternalEvent_FUN_10df9510@@QAE@XZ",
+    "owner_entry": "10e027b0",
+    "state": 0,
+    "call_target": "100132dc",
+    "body_entry": "107ec150"
+  },
+  {
+    "symbol": "??1NativeExternalEvent_FUN_10df9b50@@QAE@XZ",
+    "owner_entry": "10e03810",
+    "state": 0,
+    "call_target": "100699b1",
+    "body_entry": "107ec180"
+  },
+  {
+    "symbol": "??1NativeExternalEvent_FUN_10df9e30@@QAE@XZ",
+    "owner_entry": "10e05710",
+    "state": 0,
+    "call_target": "100826a5",
+    "body_entry": "107ec1c0"
+  },
+  {
+    "symbol": "??1NativeExternalEvent_FUN_10dfa080@@QAE@XZ",
+    "owner_entry": "10e05780",
+    "state": 0,
+    "call_target": "1009299c",
+    "body_entry": "108a22f0"
+  },
+  {
+    "symbol": "??1NativeExternalEvent_FUN_10df9760@@QAE@XZ",
+    "owner_entry": "10e05c60",
+    "state": 0,
+    "call_target": "100099ad",
+    "body_entry": "10600260"
+  },
+  {
+    "symbol": "??1NativeExternalEvent_FUN_10dfa5f0@@QAE@XZ",
+    "owner_entry": "10e05d90",
+    "state": 0,
+    "call_target": "100651e0",
+    "body_entry": "107ec1e0"
+  },
+  {
+    "symbol": "??1NativeExternalEvent_FUN_10dfb0f0@@QAE@XZ",
+    "owner_entry": "10e06320",
+    "state": 0,
+    "call_target": "10051659",
+    "body_entry": "1062cc60"
+  },
+  {
+    "symbol": "??1NativeExternalEvent_FUN_10dfac50@@QAE@XZ",
+    "owner_entry": "10e06540",
+    "state": 0,
+    "call_target": "1004d59f",
+    "body_entry": "107ec230"
+  },
+  {
+    "symbol": "??1NativeExternalEvent_FUN_10dfaea0@@QAE@XZ",
+    "owner_entry": "10e06670",
+    "state": 0,
+    "call_target": "1003503f",
+    "body_entry": "107ec250"
+  }
+]

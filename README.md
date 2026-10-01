@@ -14,16 +14,16 @@ mechanically generated and need not be readable; authored assembly and embedded
 reference executable bytes are excluded.
 
 The latest [recovery strategy and measured results](docs/recovery-strategy.md)
-record 165,772 verified object bodies / 1,782,362 executable bytes (6.967067%),
+record 165,774 verified object bodies / 1,783,024 executable bytes (6.969655%),
 including by-value tree arguments, compiler atomic intrinsics, and unused-argument recovery.
 This is function-body coverage; no full matching DLL exists yet.
 The guarded Ghidra ABI runner now recovers omitted container arguments and
-24-byte event objects across 131 exports; these exports add no verified byte
+24-byte event objects across 132 exports; these exports add no verified byte
 coverage. See [the runner](tools/recover_container_abi.py) and recovery strategy.
 
-The partial PE placement build contains 11,648,221 verified compiler-produced
+The partial PE placement build contains 11,649,005 verified compiler-produced
 bytes at their final file offsets. All six recovered non-executable sections
-are byte-identical. Its complete-file aligned match is 37.3146%, including
+are byte-identical. Its complete-file aligned match is 37.3162%, including
 coincidental matches in zero-filled unbuilt regions; the 100% gate still fails.
 See the recovery strategy for the reproducible placement command.
 

@@ -116,8 +116,8 @@ No reference application is executed and no original Ghidra project is modified.
 
 ## Physical PE placement and C++ data recovery
 
-The partial PE places all 165,772 proven function bodies and accepted compiler
-EH/literal fragments at reference offsets. Its `.text` has 1,956,573 verified
+The partial PE places all 165,774 proven function bodies and accepted compiler
+EH/literal fragments at reference offsets. Its `.text` has 1,957,357 verified
 compiler bytes, including EH helpers. A conflicting overlap, unresolved fixup,
 or mismatched marked byte aborts. Unknown regions remain empty and are reported.
 
@@ -128,10 +128,10 @@ as data input. All 74 full-data objects / 9,691,648 bytes compile and pass final
 byte/fixup proofs under pinned MSVC in
 [run 36680111341](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36680111341).
 
-`analysis/linked-placement-event-callbacks/recovery-layout.dll` has six byte-identical
+`analysis/linked-placement-conditional-event/recovery-layout.dll` has six byte-identical
 sections: `.rdata`, `.data`, `.idata`, `.tls`, `.00cfg`, and `.rsrc`. It contains
-11,648,221 proven compiler bytes (31.351365% of the file). The independent
-full-file comparator scores 37.3146%, including coincidental empty-region zero
+11,649,005 proven compiler bytes (31.353475% of the file). The independent
+full-file comparator scores 37.3162%, including coincidental empty-region zero
 matches, and **fails the 100% gate**. The image lacks an entry point and
 import/export header directories; its base relocations are incomplete. It is a
 placement artifact, not a usable or complete DLL. No reference instructions are
@@ -142,13 +142,14 @@ Reproduce the current placement using the pinned artifacts available locally:
 ```sh
 python3 tools/compile_recovered_data.py --tag full
 python3 tools/link_recovery_image.py \
-  --artifact-dirs ci-output/run-36794110579 ci-output/run-36690135114 \
+  --artifact-dirs ci-output/conditional-event-run-36800266351 \
+    ci-output/run-36794110579 ci-output/run-36690135114 \
     ci-output/run-36687349560 \
     ci-output/run-36680111341 \
     ci-output/run-36661659252 \
     analysis/msvc-14-28-x86-objects-5490d21-run36626235420 \
-  --include-flag-sweep --output-dir analysis/linked-placement-event-callbacks
-python3 tools/compare.py analysis/linked-placement-event-callbacks/recovery-layout.dll
+  --include-flag-sweep --output-dir analysis/linked-placement-conditional-event
+python3 tools/compare.py analysis/linked-placement-conditional-event/recovery-layout.dll
 ```
 
 Generation alone is a local Clang syntax/COFF experiment. Placement requires

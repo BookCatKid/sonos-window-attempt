@@ -648,3 +648,31 @@ derived events for its two branches. Native byte comparison and four-byte
 RET cleanup establish the boolean argument; native unwind states establish
 separate destructor identities. These candidates also require full pinned
 body/relocation/EH proofs before admission.
+
+## Exact conditional event callbacks and constructor fan-out (2026-09-30)
+
+Pinned run 36800266351 matches both conditional callbacks / 662 reference
+body bytes with zero unresolved relocations. Both complete EH graphs verify
+(568 summed graph bytes); only this positive batch enters the default manifest.
+`analysis/recovery-msvc-conditional-event/coverage-audit.json` records
+165,774 exact bodies / 1,783,024 executable bytes / 6.969655% coverage.
+
+`analysis/linked-placement-conditional-event/recovery-layout.dll` places
+11,649,005 proven compiler bytes / 31.353475% of the file, including
+1,957,357 executable bytes. SHA-256 is
+`947696b9b5227f98c5ceab494f9beba6cb793d31cfccf9ba68181324119fef19`.
+The increase is 784 bytes: 662 callback bytes plus 122 new EH-helper bytes.
+All six recovered non-executable sections remain byte-identical. File size is
+37,153,792; the independent full-file comparator still FAILS identity, with
+13,864,396 aligned matches / 37.3162%. The image remains a partial, nonloadable
+placement artifact; its generated base-relocation directory is 1,077,708 bytes.
+
+Scanning the existing Ghidra exports finds 549 constructor-call leads. Some
+contain decompiler-inlined callee bodies, so native calls must confirm every
+lead. `tools/compile_external_event_callbacks.py` discovers and locally compiles
+nine 88-byte callbacks (792 candidate bytes). Each constructs an externally
+declared event using one of the ninety pinned, proven constructors, dispatches
+it as a temporary reference, and destroys it. Native call endpoints, receiver
+adjustments and RET cleanup constrain source generation; state-zero unwind
+actions constrain derived destructor identities. These candidates remain
+outside the default manifest until pinned body/relocation/EH checks succeed.

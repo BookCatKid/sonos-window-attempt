@@ -242,5 +242,9 @@
   {
     "object": "conditional_event_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-conditional-event-callbacks"
+  },
+  {
+    "object": "external_event_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-external-event-callbacks"
   }
 ]
