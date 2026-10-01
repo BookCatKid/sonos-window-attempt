@@ -720,6 +720,41 @@ def wiz_state_variants():
         tail_common.replace('thunk_FUN_106de0c0(&name, arg)',
                             'thunk_FUN_106de0c0(&name, (void *)arg.rep)') +
         'thunk_FUN_106dfa00().endsWith("Page");\n' + tail_end)
+    # by-value param + out-call into &arg: the callee writes a new object
+    # into the live param's slot so MSVC must flag which occupant owns it
+    out['wiz_byval_out'] = (
+        prefix.replace(old_klass, sret_type + klass.replace(
+            'NativeWizSret *thunk_FUN_106dfa00(NativeWizSret *);',
+            'NativeWizSret *thunk_FUN_106dfa00(NativeWizSret *);') .replace(
+            'NativeWizState_FUN_1061e8b0(void *);',
+            'NativeWizState_FUN_1061e8b0(NativeWizSret);')) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker.replace('void *arg', 'NativeWizSret arg') + '\n' +
+        tail_common.replace('thunk_FUN_106de0c0(&name, arg)',
+                            'thunk_FUN_106de0c0(&name, (void *)arg.rep)') +
+        'NativeWizSret *s2 = thunk_FUN_106dfa00(&arg);\n'
+        's2->endsWith("Page");\n' + tail_end)
+    # const-ref bound sret temp: MSVC flag-tracks ref-bound temporaries
+    # (the flag marks whether the temp behind the reference materialized)
+    out['wiz_refbound_sret'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'const RecoveredString_FUN_1008c50b &s2 = thunk_FUN_106dfa00();\n'
+        's2.endsWith("Page");\n' + tail_end)
+    # by-value param reassigned from an sret call: MSVC may evaluate the
+    # result directly into &arg with a construction flag on the slot
+    out['wiz_byval_assign'] = (
+        prefix.replace(old_klass, byval_klass) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker.replace('void *arg', 'RecoveredString_FUN_1008c50b arg') + '\n' +
+        tail_common.replace('thunk_FUN_106de0c0(&name, arg)',
+                            'thunk_FUN_106de0c0(&name, (void *)arg.rep)') +
+        'arg = thunk_FUN_106dfa00();\n'
+        'arg.endsWith("Page");\n' + tail_end)
     return out
 
 
