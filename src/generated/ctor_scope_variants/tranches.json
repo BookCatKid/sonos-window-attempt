@@ -20,6 +20,10 @@
     "directory": "analysis/ctor-scope-op-ref-split"
   },
   {
+    "object": "op_ref_outline_split_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-outline-split"
+  },
+  {
     "object": "op_ref_m4_empty_ctor_reference_flags",
     "directory": "analysis/ctor-scope-op-ref-m4-empty-ctor"
   },
@@ -140,6 +144,14 @@
     "directory": "analysis/ctor-scope-op-impl-smart-template"
   },
   {
+    "object": "op_impl_smart_split_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-smart-split"
+  },
+  {
+    "object": "op_impl_smart_split_method_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-smart-split-method"
+  },
+  {
     "object": "op_impl_smart_template_only_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-smart-template-only"
   },
@@ -216,6 +228,10 @@
     "directory": "analysis/ctor-scope-wiz-union-param"
   },
   {
+    "object": "wiz_byval_param_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-byval-param"
+  },
+  {
     "object": "copier_named_reference_flags",
     "directory": "analysis/ctor-scope-copier-named"
   },
@@ -234,6 +250,14 @@
   {
     "object": "copier_nested_all_reference_flags",
     "directory": "analysis/ctor-scope-copier-nested-all"
+  },
+  {
+    "object": "copier_temp_arg_reference_flags",
+    "directory": "analysis/ctor-scope-copier-temp-arg"
+  },
+  {
+    "object": "copier_nested_deref_reference_flags",
+    "directory": "analysis/ctor-scope-copier-nested-deref"
   },
   {
     "object": "delayed_plain_reference_flags",

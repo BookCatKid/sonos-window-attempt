@@ -113,6 +113,18 @@ def op_ref_variants():
             'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
             '    : m4(param_2) {\nif (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
             f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # out-of-class member ctor {rep=p} + addref as a separate call after:
+        # the frontend lowers the member-init as a call scope (lea &m4 +
+        # spill repoint + arm — not FE-spliceable), the backend inlines the
+        # body, and the addref call runs while m4 is alive so the funclet
+        # must read the construction-this spill
+        'op_ref_outline_split': (
+            m4_outline_decl,
+            'NativeOpRefMember_thunk_FUN_101ba1b0::NativeOpRefMember_thunk_FUN_101ba1b0(void *p) '
+            '{ rep = p; }\n' +
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(param_2) {\nif (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
         # user-provided empty member ctor: materialized scope repoints
         # construction-this, arm precedes the body's rep store
         'op_ref_m4_empty_ctor': (
@@ -414,6 +426,27 @@ def op_impl_variants():
     variants['op_impl_smart_template'] = (
         template_decls,
         'm14((NativeOpT14_tag *)param_2)')
+    # smart's ctor is a TRIVIAL {p=v} store and the addref is a separate call
+    # in m14's body while smart is alive: if it throws, ~smart must run —
+    # so MSVC arms a tracked state covering the call and repoints the
+    # construction-this spill to &smart for the funclet
+    variants['op_impl_smart_split'] = decls.replace(
+        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
+        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
+        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; } };').replace(
+        ' : smart(param) { f8 = 0;',
+        ' : smart(param) { if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0;')
+    # same split but the addref is a METHOD call on smart — the member call
+    # binds ecx=&smart which becomes the tracked construction-this
+    variants['op_impl_smart_split_method'] = decls.replace(
+        'struct NativeOpSmart14_thunk_FUN_101ba1b0 { void *p; ~NativeOpSmart14_thunk_FUN_101ba1b0();\n'
+        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
+        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
+        'struct NativeOpSmart14_thunk_FUN_101ba1b0 { void *p; ~NativeOpSmart14_thunk_FUN_101ba1b0();\n'
+        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; }\n'
+        '    void addref() { if (p != 0) thunk_FUN_1123fce0((char *)p + 4); } };').replace(
+        ' : smart(param) { f8 = 0;',
+        ' : smart(param) { smart.addref(); f8 = 0;')
     # only smart is a template member: the smart ctor alone defers
     smart_template_decls = decls.replace(
         'struct NativeOpSmart14_thunk_FUN_101ba1b0 { void *p; ~NativeOpSmart14_thunk_FUN_101ba1b0();\n'
@@ -661,6 +694,20 @@ def wiz_state_variants():
         'NativeWizSret *s2 = thunk_FUN_106dfa00(&arg.s);\n'
         's2->endsWith("Page");\n'
         'arg.s.~NativeWizSret();\n' + tail_end)
+    # by-value RecoveredString param: MSVC owns a class-typed [ebp+8] slot,
+    # reuses it for the sret temp of thunk_FUN_106dfa00(), and emits the
+    # flag-gated funclet (test flag&1 / clear flag / ~SCStr) seen in the
+    # reference unwind map
+    byval_klass = old_klass.replace('NativeWizState_FUN_1061e8b0(void *);',
+                                  'NativeWizState_FUN_1061e8b0(RecoveredString_FUN_1008c50b);')
+    out['wiz_byval_param'] = (
+        prefix.replace(old_klass, byval_klass) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker.replace('void *arg', 'RecoveredString_FUN_1008c50b arg') + '\n' +
+        tail_common.replace('thunk_FUN_106de0c0(&name, arg)',
+                            'thunk_FUN_106de0c0(&name, (void *)arg.rep)') +
+        'thunk_FUN_106dfa00().endsWith("Page");\n' + tail_end)
     return out
 
 
@@ -704,6 +751,20 @@ def event_copier_variants():
         'copier_nested_all': head + (
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
             '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'
+            'return this;\n'),
+        # named locals throughout but the aggregate built from a nested
+        # Source() temp arg — pushes the source ctor's eax result like the
+        # reference while keeping the named agg's lea remat
+        'copier_temp_arg': head + (
+            'NativeCopierAggregate_FUN_10deee60 agg(NativeCopierSource_FUN_10df9440());\n'
+            'NativeCopierEvent_FUN_10df9510 e;\n'
+            'e.thunk_FUN_10defac0(this, agg);\n'
+            'return this;\n'),
+        # nested temp aggregate bound through an explicit lvalue deref so MSVC
+        # rematerializes its frame address instead of keeping the ctor eax
+        'copier_nested_deref': head + (
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    *&NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'
             'return this;\n'),
     }
     out = {}
