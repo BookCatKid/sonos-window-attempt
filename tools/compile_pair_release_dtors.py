@@ -87,7 +87,7 @@ def main():
     for r in candidates:
         klass = r['vclass']
         library += (f'struct {klass} {{ void *rep; void *next; ~{klass}();\n'
-                    f'void FUN_{r["entry"]}(); }};\n')
+                    f'void FUN_{r["entry"]}() noexcept; }};\n')
     candidates = [{**r, 'abi_declarations': {'pair_release_library': library}} for r in candidates]
     evidence = {r['entry']: r for r in map(json.loads, (ROOT/'analysis/eh-lifetime-evidence.jsonl').open())}
     emit_variant('pair_release_dtors', candidates, evidence, [])

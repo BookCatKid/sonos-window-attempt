@@ -287,6 +287,36 @@ def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base,
     return bytes(patched), resolved, unresolved
 
 
+def add_thunk_site_targets(symbol_vas, reference, image_base, pe_sections, inventory_path):
+    """Alias every five-byte ``E9`` forwarder as a ``thunk_FUN_<target>`` site.
+
+    The reference calls the same recovered body through several distinct jump
+    thunks (incremental-link, export forwarders, Ordinal_ entries). Ghidra only
+    records ``thunk_FUN_`` names at a subset of the sites, so a generated call
+    can otherwise resolve to the body or the wrong site instead of the site the
+    reference used.
+    """
+    if not inventory_path or not Path(inventory_path).is_file():
+        return
+    thunk_sites = defaultdict(list)
+    with Path(inventory_path).open(newline='') as file:
+        for row in csv.DictReader(file, delimiter='\t'):
+            if row.get('body_bytes') != '5':
+                continue
+            va = int(row['entry'], 16)
+            code = function_bytes(reference, va, 5, image_base, pe_sections)
+            if len(code) != 5 or code[0] != 0xE9:
+                continue
+            target = va + 5 + struct.unpack_from('<i', code, 1)[0]
+            thunk_sites[target].append(va)
+    for target, sites in thunk_sites.items():
+        # REL32 relocations may legally land on any forwarder for the body, so
+        # both the bare FUN_ name and the thunk_ alias must offer every site.
+        for key in (f'thunk_FUN_{target:08x}', f'FUN_{target:08x}'):
+            merged = sorted(set(symbol_vas.get(key, ())) | set(sites))
+            symbol_vas[key] = merged
+
+
 def security_cookie_va(reference, image_base, pe_sections):
     """Read the /GS security cookie address out of the reference load config."""
     if len(reference) < 0x40:
@@ -391,6 +421,8 @@ def main():
     image_base, pe_sections = section_map(reference)
     symbol_vas = load_symbol_vas(args.symbols)
     add_scstr_export_targets(symbol_vas, reference, image_base, pe_sections)
+    add_thunk_site_targets(symbol_vas, reference, image_base, pe_sections,
+                           args.symbols.parent / 'final-function-inventory.tsv')
     unique = {}
     for directory in args.output_dirs:
         rows = compare_directory(directory, reference, image_base, pe_sections,

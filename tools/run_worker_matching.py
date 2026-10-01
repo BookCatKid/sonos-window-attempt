@@ -15,6 +15,8 @@ def members(objects_root,evidence_root,data,output):
     compare.DEFAULT_SYMBOLS=evidence_root/'analysis/thunk-recovery-full/symbols.jsonl'
     targets=compare.load_symbol_vas(compare.DEFAULT_SYMBOLS)
     base,sections=section_map(data);compare.add_scstr_export_targets(targets,data,base,sections)
+    compare.add_thunk_site_targets(targets,data,base,sections,
+        evidence_root/'analysis/thunk-recovery-full/final-function-inventory.tsv')
     summaries=[]
     for item in manifest:
         obj=objects_root/(item['object']+'.obj')
