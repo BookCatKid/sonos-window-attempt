@@ -17,7 +17,7 @@ TIMER = 0x10ebb8e0
 RESULT_STORE = 0x10eb41b0
 FALLBACK_PREDICATE = 0x10def490
 SIMPLE_ACTIONS = {0x10ebbab0, 0x10ebb850}
-BODY_BYTES = {114, 122, 203}
+BODY_BYTES = {97, 114, 119, 122, 203}
 
 
 def thunk_target(read, va):
@@ -35,6 +35,8 @@ def lower_fallback(record, instructions, calls):
     """Lower a dispatch-or-fallback callback with an early-return action tail."""
     text = record.get('decompiled_c', '')
     entry = record['entry']
+    if text.count('thunk_FUN_10def450(') != 1 or text.count('thunk_FUN_10def490(') != 1:
+        return None
     if calls[1] != DISPATCH or calls[2] != DESTRUCTOR or calls[5] != FALLBACK_PREDICATE:
         return None
     if calls[3] not in SIMPLE_ACTIONS or calls[8] != RESULT_STORE:
@@ -102,12 +104,51 @@ def lower_fallback(record, instructions, calls):
             'flag_offset': offset}
 
 
+def lower_passthrough(record, instructions, calls):
+    """Lower a callback returning a sub-dispatcher predicate on a temporary event."""
+    text = record.get('decompiled_c', '')
+    entry = record['entry']
+    if calls[2] != DESTRUCTOR:
+        return None
+    if text.count(f'thunk_FUN_{calls[0]:08x}(') != 1:
+        return None
+    if text.count(f'thunk_FUN_{calls[1]:08x}(') != 1:
+        return None
+    if [i.op_str for i in instructions if i.mnemonic == 'ret'] != ['']:
+        return None
+    if sum(1 for i in instructions if i.mnemonic == 'mov' and i.op_str == 'esi, ecx') != 1:
+        return None
+    first_call = next((n for n, i in enumerate(instructions) if i.mnemonic == 'call'), None)
+    if sum(1 for i in instructions[first_call:] if i.mnemonic == 'push' and i.op_str == 'eax') != 1:
+        return None
+    if sum(1 for i in instructions if i.mnemonic == 'lea' and i.op_str == 'ecx, [ebp - 0x24]') != 2:
+        return None
+    receiver = [i for i in instructions if i.mnemonic == 'lea'
+                and re.fullmatch(r'ecx, \[esi \+ 0x[0-9a-f]+\]', i.op_str)]
+    if len(receiver) != 1:
+        return None
+    offset = int(receiver[0].op_str.rsplit('0x', 1)[1][:-1], 16)
+    if sum(1 for i in instructions if i.mnemonic == 'mov' and i.op_str == 'bl, al') != 1:
+        return None
+    if sum(1 for i in instructions if i.mnemonic == 'mov' and i.op_str == 'al, bl') != 1:
+        return None
+    constructor = calls[0]
+    predicate = f'thunk_FUN_{calls[1]:08x}'
+    event = 'NativeDelayedEvent_FUN_' + f'{constructor:08x}'
+    source = (f'bool NativeDelayedCallback::FUN_{entry}() {{\n'
+              f'return ((NativePassthroughDispatcher *)((char *)this + 0x{offset:x}))'
+              f'->{predicate}({event}());\n}}\n')
+    return {**record, 'source': source, 'event_class': event, 'constructor': f'{constructor:08x}',
+            'predicate': predicate, 'receiver_offset': offset,
+            'member_decl': f'bool FUN_{entry}(); '}
+
+
 def lower(record, reference, base, sections):
     if record['body_bytes'] not in BODY_BYTES:
         return None
     text = record.get('decompiled_c', '')
     entry = record['entry']
-    if text.count('thunk_FUN_10def450(') != 1 or text.count('thunk_FUN_10def0d0()') != 1:
+    if text.count('thunk_FUN_10def0d0()') != 1:
         return None
     code = function_bytes(reference, int(entry, 16), record['body_bytes'], base, sections)
     instructions = list(DISASSEMBLER.disasm(code, int(entry, 16)))
@@ -116,7 +157,11 @@ def lower(record, reference, base, sections):
              for i in instructions if i.mnemonic == 'call' and i.op_str.startswith('0x')]
     if len(calls) == 9:
         return lower_fallback(record, instructions, calls)
+    if len(calls) == 3:
+        return lower_passthrough(record, instructions, calls)
     if len(calls) != 4 or calls[1] != DISPATCH or calls[2] != DESTRUCTOR:
+        return None
+    if text.count('thunk_FUN_10def450(') != 1:
         return None
     returns = [i.op_str for i in instructions if i.mnemonic == 'ret']
     if returns != ['4']:
@@ -139,12 +184,17 @@ def lower(record, reference, base, sections):
     condition = f'dispatcher->thunk_FUN_10def450({event}())'
     if tail == TIMER:
         pushes = [i for i in tail_block if i.mnemonic == 'push']
-        if len(pushes) != 2 or not all(p.op_str.startswith('0x') for p in pushes):
+        if len(pushes) != 2:
+            return None
+        try:
+            delay = int(pushes[0].op_str, 0)
+            name_va = int(pushes[1].op_str, 0)
+        except ValueError:
+            return None
+        if name_va <= 0xffff:
             return None
         if not any(i.mnemonic == 'mov' and i.op_str == 'ecx, esi' for i in tail_block):
             return None
-        delay = int(pushes[0].op_str, 16)
-        name_va = int(pushes[1].op_str, 16)
         argument = re.search(r'thunk_FUN_10ebb8e0\(([^,]+),[^)]*\)', text)
         if argument is None:
             return None
@@ -165,9 +215,20 @@ def lower(record, reference, base, sections):
     elif tail == RESULT_STORE:
         if len(tail_block) < 3 or [i.mnemonic for i in tail_block[:3]] != ['mov', 'call', 'mov']:
             return None
-        if tail_block[0].op_str != 'ecx, esi' or tail_block[2].op_str != 'dword ptr [eax + 0x108], 0':
+        store = re.fullmatch(r'(dword|byte) ptr \[eax \+ (0x[0-9a-f]+)\], 0', tail_block[2].op_str)
+        if tail_block[0].op_str != 'ecx, esi' or store is None:
             return None
-        action = 'thunk_FUN_10eb41b0()->value = 0;'
+        if store.group(1) == 'dword':
+            if store.group(2) != '0x108':
+                return None
+            action = 'thunk_FUN_10eb41b0()->value = 0;'
+        else:
+            field = re.findall(r'\(iVar\d+ \+ (0x[0-9a-f]+)\) = 0;', text)
+            if len(field) != 1 or field[0] != store.group(2):
+                return None
+            action = (f'((NativeByteResult_{int(store.group(2), 16):x} *)'
+                      f'thunk_FUN_10eb41b0())->flag = 0;')
+            record = {**record, 'byte_result_offset': int(store.group(2), 16)}
     elif tail in SIMPLE_ACTIONS:
         if len(tail_block) < 3 or [i.mnemonic for i in tail_block[:3]] != ['push', 'mov', 'call']:
             return None
@@ -254,6 +315,12 @@ def main():
     fallback_classes = sorted(set(fallback_classes))
     for offset in sorted({c['flag_offset'] for c in candidates if 'fallback_class' in c}):
         library += f'struct NativeFallbackResult_{offset:x} {{ unsigned char padding[0x{offset:x}]; unsigned char flag; }};\n'
+    for offset in sorted({c['byte_result_offset'] for c in candidates if 'byte_result_offset' in c}):
+        library += f'struct NativeByteResult_{offset:x} {{ unsigned char padding[0x{offset:x}]; unsigned char flag; }};\n'
+    predicates = sorted({c['predicate'] for c in candidates if 'predicate' in c})
+    if predicates:
+        library += ('struct NativePassthroughDispatcher { ' +
+                    ''.join(f'bool {p}(const Event_thunk_FUN_10def0d0 &); ' for p in predicates) + '};\n')
     library += 'struct NativeDelayedDispatcher { bool thunk_FUN_10def450(const Event_thunk_FUN_10def0d0 &); '
     for name in fallback_classes:
         library += f'bool thunk_FUN_10def490(const {name} &); '
@@ -263,7 +330,8 @@ def main():
     library += ('struct NativeDelayedCallback { void thunk_FUN_10ebb8e0(const char *, int); '
                 'void thunk_FUN_10ebbab0(int); void thunk_FUN_10ebb850(int); '
                 'NativeDelayedResult *thunk_FUN_10eb41b0(); ' +
-                ''.join(f"void FUN_{r['entry']}(NativeDelayedDispatcher *); " for r in candidates) + '};\n')
+                ''.join(r.get('member_decl', f"void FUN_{r['entry']}(NativeDelayedDispatcher *); ")
+                        for r in candidates) + '};\n')
     candidates = [{**r, 'abi_declarations': {'delayed_event_callback_library': library}} for r in candidates]
     evidence = {r['entry']: r for r in map(json.loads, (ROOT/'analysis/eh-lifetime-evidence.jsonl').open())}
     roles = []

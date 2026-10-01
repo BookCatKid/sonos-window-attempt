@@ -1,5 +1,12 @@
 [
   {
+    "symbol": "??1NativeDelayedEvent_FUN_10df9e30@@QAE@XZ",
+    "owner_entry": "107f7160",
+    "state": 0,
+    "call_target": "100826a5",
+    "body_entry": "107ec1c0"
+  },
+  {
     "symbol": "??1NativeDelayedEvent_FUN_10dfbb10@@QAE@XZ",
     "owner_entry": "10767520",
     "state": 0,

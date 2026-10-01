@@ -241,6 +241,63 @@ class DelayedEventCallbackTests(unittest.TestCase):
             fallback_instructions(offset='0x110'), body_bytes=203)
         self.assertIn('NativeFallbackResult_110', candidate['source'])
 
+    PASSTHROUGH_TEXT = '''
+bool FUN_10ccccc0(void)
+{
+  uVar2 = thunk_FUN_10df9e30(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+  uVar1 = thunk_FUN_10df10f0(uVar2);
+  thunk_FUN_10def0d0();
+  return uVar1;
+}
+'''
+
+    def passthrough_instructions(self):
+        a = ENTRY
+        return [
+            instruction(a, 'mov', 'esi, ecx'),
+            instruction(a + 4, 'lea', 'ecx, [ebp - 0x24]'),
+            instruction(a + 8, 'call', '0x10000010'),
+            instruction(a + 0x10, 'push', 'eax'),
+            instruction(a + 0x14, 'lea', 'ecx, [esi + 0xac]'),
+            instruction(a + 0x18, 'call', '0x10000011'),
+            instruction(a + 0x20, 'lea', 'ecx, [ebp - 0x24]'),
+            instruction(a + 0x24, 'mov', 'bl, al'),
+            instruction(a + 0x28, 'call', '0x10000003'),
+            instruction(a + 0x30, 'mov', 'al, bl'),
+            instruction(a + 0x3d, 'ret'),
+        ]
+
+    def test_passthrough_shape_and_source(self):
+        targets = {0x10000010: 0x10df9e30, 0x10000011: 0x10df10f0}
+        record = {'entry': f'{ENTRY:08x}', 'body_bytes': 97,
+                  'decompiled_c': self.PASSTHROUGH_TEXT}
+        with patch.object(delayed, 'function_bytes', return_value=b'\0' * 97), \
+             patch.object(delayed, 'thunk_target',
+                          side_effect=lambda read, va: targets.get(va, {0x10000003: delayed.DESTRUCTOR}.get(va, va))), \
+             patch.object(delayed, 'DISASSEMBLER') as decoder:
+            decoder.disasm.return_value = self.passthrough_instructions()
+            candidate = delayed.lower(record, None, 0, [])
+        self.assertIsNotNone(candidate)
+        self.assertEqual(candidate['predicate'], 'thunk_FUN_10df10f0')
+        self.assertEqual(candidate['receiver_offset'], 0xac)
+        self.assertEqual(candidate['member_decl'], f'bool FUN_{ENTRY:08x}(); ')
+        self.assertIn('->thunk_FUN_10df10f0(NativeDelayedEvent_FUN_10df9e30());',
+                      candidate['source'])
+
+    def test_passthrough_rejects_wrong_receiver(self):
+        bad = self.passthrough_instructions()
+        bad[4] = instruction(ENTRY + 0x14, 'lea', 'ecx, [esi + 0xac]')
+        bad.insert(4, instruction(ENTRY + 0x14, 'lea', 'ecx, [esi + 0xb0]'))
+        targets = {0x10000010: 0x10df9e30, 0x10000011: 0x10df10f0}
+        record = {'entry': f'{ENTRY:08x}', 'body_bytes': 97,
+                  'decompiled_c': self.PASSTHROUGH_TEXT}
+        with patch.object(delayed, 'function_bytes', return_value=b'\0' * 97), \
+             patch.object(delayed, 'thunk_target',
+                          side_effect=lambda read, va: targets.get(va, {0x10000003: delayed.DESTRUCTOR}.get(va, va))), \
+             patch.object(delayed, 'DISASSEMBLER') as decoder:
+            decoder.disasm.return_value = bad
+            self.assertIsNone(delayed.lower(record, None, 0, []))
+
     def test_fallback_rejects_wrong_action_or_offset(self):
         self.assertIsNone(self.candidate(FALLBACK_TEXT, fallback_instructions('0x4049'),
                                          body_bytes=203))
