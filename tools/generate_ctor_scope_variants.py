@@ -387,6 +387,12 @@ def named_event_variants():
                               'NativeNamedEvent_FUN_10df9440 *thunk_FUN_10df9440();'),
             'NativeNamedEvent_FUN_10df9440 event;\n'
             'NativeNamedEvent_FUN_10df9440 *pe = event.thunk_FUN_10df9440();\n'),
+        # no pointer alias at all: MSVC promotes &event to esi and reuses the
+        # ctor's eax return (mov esi,eax) — arm lands lazily after the call
+        'named_event_direct': (
+            ctor_decl,
+            'NativeNamedEvent_FUN_10df9440 event;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = &event;\n'),
         # tracked base-typed buffer + placement-new of the derived event:
         # the new-expression binds esi=eax while the funclet covers the buffer
         'named_event_placement_base': (
@@ -428,6 +434,11 @@ def named_event_variants():
                    .replace('thunk_FUN_10df15a0(pe)',
                             'thunk_FUN_10df15a0('
                             '(NativeNamedEvent_FUN_10df9440 *)&event)'))
+        if name == 'named_event_direct':
+            src = (src.replace('NativeNamedEvent_FUN_10df9440 *pe = &event;\n', '')
+                   .replace('pe->representation', 'event.representation')
+                   .replace('thunk_FUN_10df15a0(pe)',
+                            'thunk_FUN_10df15a0(&event)'))
         out[name] = src
         if name == 'named_event_placement_union':
             out[name] = out[name].replace(

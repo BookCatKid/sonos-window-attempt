@@ -124,6 +124,10 @@
     "directory": "analysis/ctor-scope-named-event-memberinit"
   },
   {
+    "object": "named_event_direct_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-direct"
+  },
+  {
     "object": "named_event_placement_base_reference_flags",
     "directory": "analysis/ctor-scope-named-event-placement-base"
   },
