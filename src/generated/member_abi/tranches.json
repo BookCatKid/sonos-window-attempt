@@ -254,5 +254,9 @@
   {
     "object": "delayed_event_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-delayed-event-callbacks"
+  },
+  {
+    "object": "named_event_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-named-event-callbacks"
   }
 ]
