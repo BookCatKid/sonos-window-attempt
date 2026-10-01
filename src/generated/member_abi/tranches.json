@@ -262,5 +262,9 @@
   {
     "object": "wiz_state_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-wiz-state-callbacks"
+  },
+  {
+    "object": "page_factories_reference_flags",
+    "directory": "analysis/compiled-cpp-page-factories"
   }
 ]
