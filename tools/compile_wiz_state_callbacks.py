@@ -103,7 +103,7 @@ def lower(record, reference, base, sections):
             return None
         source = (f'{klass}::{klass}(RecoveredString_FUN_1008c50b arg) {{\n'
                   f'{{ RecoveredString_FUN_1008c50b name("{name.group(1)}");\n'
-                  f'thunk_FUN_106de0c0(&name, arg); }}\n'
+                  f'thunk_FUN_106de0c0(&name, (void *)arg.rep); }}\n'
                   f'vftable = &DAT_{stores[0]:08x};\n'
                   f'thunk_FUN_106dfa00(&arg)->endsWith("{suffix.group(1)}");\n'
                   f'vftable = &DAT_{stores[1]:08x};\n'
@@ -130,7 +130,7 @@ def lower(record, reference, base, sections):
             return None
         source = (f'{klass}::{klass}(const char *type, RecoveredString_FUN_1008c50b arg) {{\n'
                   f'{{ RecoveredString_FUN_1008c50b name(type);\n'
-                  f'thunk_FUN_106de0c0(&name, arg); }}\n'
+                  f'thunk_FUN_106de0c0(&name, (void *)arg.rep); }}\n'
                   f'vftable = &DAT_{stores[0]:08x};\n'
                   f'thunk_FUN_106dfa00(&arg)->endsWith("{suffix.group(1)}");\n}}\n')
     else:
@@ -176,7 +176,7 @@ def main():
             else 'RecoveredString_FUN_1008c50b'
         member = 'NativeWizFlagged_thunk_FUN_106de7d0 extra; ' if r['flag'] == 2 else ''
         library += (f'struct {klass} : NativeWizDtorBase_thunk_FUN_106de7d0 {{ void *vftable; {member}~{klass}();\n'
-                    f'void thunk_FUN_106de0c0(RecoveredString_FUN_1008c50b *, RecoveredString_FUN_1008c50b);\n'
+                    f'void thunk_FUN_106de0c0(RecoveredString_FUN_1008c50b *, void *);\n'
                     f'SCStr *thunk_FUN_106dfa00(RecoveredString_FUN_1008c50b *);\n'
                     f'{klass}({params}); }};\n')
     candidates = [{**r, 'abi_declarations': {'wiz_state_callback_library': library}} for r in candidates]

@@ -28,6 +28,10 @@
     "directory": "analysis/ctor-scope-op-ref-m4-empty-list"
   },
   {
+    "object": "op_ref_m4_arg_ctor_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-arg-ctor"
+  },
+  {
     "object": "op_impl_control_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-control"
   },
@@ -62,5 +66,9 @@
   {
     "object": "op_impl_smart_empty_dbl_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-smart-empty-dbl"
+  },
+  {
+    "object": "op_impl_smart_arg_empty_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-smart-arg-empty"
   }
 ]

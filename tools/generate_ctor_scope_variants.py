@@ -127,6 +127,15 @@ def op_ref_variants():
             '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n',
             'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
             '    : m4() ' + ctor_tail),
+        # param-taking EMPTY ctor invoked via init list: the ctor invocation
+        # materializes the member this-spill (repoint) while the body stays
+        # empty so the arm still precedes the outer rep store
+        'op_ref_m4_arg_ctor': (
+            'struct NativeOpRefMember_thunk_FUN_101ba1b0 { void *rep;\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0(void *p) {}\n'
+            '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(param_2) ' + ctor_tail),
     }
     out = {}
     for name, (member, definition) in variants.items():
@@ -199,6 +208,17 @@ def op_impl_variants():
     variants['op_impl_smart_empty_dbl'] = smart_empty.replace(
         'union NativeOpF38 { unsigned __int64 q; struct { unsigned int lo; unsigned int hi; } w; };',
         'union NativeOpF38 { double d; struct { unsigned int lo; unsigned int hi; } w; };')
+    # smart ctor takes the arg but is EMPTY: the init-list invocation
+    # materializes the nested construction-this repoint while the state arm
+    # still precedes the smart.p store in m14's body
+    smart_arg_empty = decls.replace(
+        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
+        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
+        '    NativeOpSmart14_thunk_FUN_101ba1b0(void *value) {} };').replace(
+        ' : smart(param) { f8 = 0;',
+        ' : smart(param) { smart.p = param; '
+        'if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0;')
+    variants['op_impl_smart_arg_empty'] = smart_arg_empty
     header = '// Constructor-scope hypothesis variants for entry 10687e80.\n'
     out = {}
     for name, library in variants.items():
