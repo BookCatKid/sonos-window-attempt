@@ -17,7 +17,7 @@ for %%F in (src\generated\owner_parameter_variants\*.cpp) do (
   if errorlevel 1 set PROBE_FAILED=1
 )
 for %%F in (src\generated\ctor_scope_variants\*.cpp) do (
-  cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\%%~nF_reference_flags.obj %%F > out\%%~nF_reference_flags.log 2>&1
+  cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /FAcs /Faout\%%~nF.cod /c /Foout\%%~nF_reference_flags.obj %%F > out\%%~nF_reference_flags.log 2>&1
   if errorlevel 1 set PROBE_FAILED=1
 )
 rem LTCG probes: /GL objects carry IL, so member-ctor calls keep their
