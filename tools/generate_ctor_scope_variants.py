@@ -390,6 +390,81 @@ def op_ref_variants():
             '    : m4((adjust_FUN(param_2), param_2)) {\n'
             'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
             f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # m4 is a member of the BASE Mid: K(p) : Mid(p) inlines Mid's ctor
+        # whose own member-init m4(p) repoints the construction-this slot —
+        # the funclet then reads the spilled member address bare
+        'op_ref_m4_inbase': (
+            m4_inline +
+            'struct NativeOpRefMid_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0 m4;\n'
+            'NativeOpRefMid_FUN_10687d70(void *p) : m4(p) {} };\n'
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefMid_FUN_10687d70 {\n'
+            'void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : NativeOpRefMid_FUN_10687d70(param_2) {\n'
+            'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # same but Mid's ctor is forceinline — different inlining phase
+        'op_ref_m4_inbase_fi': (
+            m4_inline +
+            'struct NativeOpRefMid_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0 m4;\n'
+            '__forceinline NativeOpRefMid_FUN_10687d70(void *p) : m4(p) {} };\n'
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefMid_FUN_10687d70 {\n'
+            'void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : NativeOpRefMid_FUN_10687d70(param_2) {\n'
+            'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # same but Mid's ctor is out-of-class: the base-init is a real call
+        # scope at FE time, inlined by the backend — construction-this slot
+        'op_ref_m4_inbase_outline': (
+            m4_inline +
+            'struct NativeOpRefMid_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0 m4;\n'
+            'NativeOpRefMid_FUN_10687d70(void *p); };\n'
+            'NativeOpRefMid_FUN_10687d70::NativeOpRefMid_FUN_10687d70(void *p) : m4(p) {}\n'
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefMid_FUN_10687d70 {\n'
+            'void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : NativeOpRefMid_FUN_10687d70(param_2) {\n'
+            'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # M4's ctor itself uses a member-init list : rep(p) — a nested
+        # member-init scope inside the inlined member ctor is what repoints
+        # the construction-this slot to &m4
+        'op_ref_m4_initlist': (
+            'struct NativeOpRefMember_thunk_FUN_101ba1b0 { void *rep;\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0(void *p) : rep(p) {}\n'
+            '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n'
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0 m4; void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(param_2) {\n'
+            'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # M4 has a class-typed sub-member Sub{p}: M4(p):rep(p) invokes a real
+        # member-init ctor call for rep — the inner construction scope uses
+        # the shared ctor-this slot and leaves it pointing at &m4
+        'op_ref_m4_submember': (
+            'struct NativeOpRefSub { void *p; NativeOpRefSub(void *x);\n'
+            '~NativeOpRefSub(); };\n'
+            'struct NativeOpRefMember_thunk_FUN_101ba1b0 { NativeOpRefSub rep;\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0(void *p);\n'
+            '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0::NativeOpRefMember_thunk_FUN_101ba1b0(void *p)\n'
+            '    : rep(p) {}\n'
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0 m4; void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(param_2) {\n'
+            'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
     }
     out = {}
     for name, (member, definition) in variants.items():

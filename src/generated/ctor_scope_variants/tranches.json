@@ -120,6 +120,26 @@
     "directory": "analysis/ctor-scope-op-ref-m4-commaarg"
   },
   {
+    "object": "op_ref_m4_inbase_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-inbase"
+  },
+  {
+    "object": "op_ref_m4_inbase_fi_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-inbase-fi"
+  },
+  {
+    "object": "op_ref_m4_inbase_outline_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-inbase-outline"
+  },
+  {
+    "object": "op_ref_m4_initlist_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-initlist"
+  },
+  {
+    "object": "op_ref_m4_submember_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-submember"
+  },
+  {
     "object": "op_impl_control_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-control"
   },
