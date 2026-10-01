@@ -392,11 +392,52 @@ def op_impl_variants():
         '    NativeOpSmart14_thunk_FUN_101ba1b0() {} };').replace(
         ' : smart(param) { f8 = 0;',
         ' { smart[0].p = param; if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0;')
+    # smart and m14 as class TEMPLATES (the reference family is
+    # RControlAIOOpRef<T>): template member ctors instantiate lazily, so the
+    # frontend lowers each construction as a call scope whose spill+arm the
+    # backend keeps while inlining — reproducing the nested repoint
+    template_decls = decls.replace(
+        'struct NativeOpSmart14_thunk_FUN_101ba1b0 { void *p; ~NativeOpSmart14_thunk_FUN_101ba1b0();\n'
+        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
+        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
+        'struct NativeOpT14_tag;\n'
+        'template<class T> struct NativeOpSmart14_thunk_FUN_101ba1b0 { T *p; ~NativeOpSmart14_thunk_FUN_101ba1b0();\n'
+        '    NativeOpSmart14_thunk_FUN_101ba1b0(T *value) { p = value; '
+        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };').replace(
+        'struct NativeOpMember14_10687e80 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;\n'
+        '    __forceinline NativeOpMember14_10687e80(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118c62f8; } };',
+        'template<class T> struct NativeOpMember14T_10687e80 : NativeOpMember14V {'
+        ' NativeOpSmart14_thunk_FUN_101ba1b0<T> smart; void *f8;\n'
+        '    NativeOpMember14T_10687e80(T *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118c62f8; } };').replace(
+        'NativeOpMember14_10687e80 m14;',
+        'NativeOpMember14T_10687e80<NativeOpT14_tag> m14;')
+    variants['op_impl_smart_template'] = (
+        template_decls,
+        'm14((NativeOpT14_tag *)param_2)')
+    # only smart is a template member: the smart ctor alone defers
+    smart_template_decls = decls.replace(
+        'struct NativeOpSmart14_thunk_FUN_101ba1b0 { void *p; ~NativeOpSmart14_thunk_FUN_101ba1b0();\n'
+        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
+        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
+        'struct NativeOpT14_tag;\n'
+        'template<class T> struct NativeOpSmart14_thunk_FUN_101ba1b0 { T *p; ~NativeOpSmart14_thunk_FUN_101ba1b0();\n'
+        '    NativeOpSmart14_thunk_FUN_101ba1b0(T *value) { p = value; '
+        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };').replace(
+        ' NativeOpSmart14_thunk_FUN_101ba1b0 smart;',
+        ' NativeOpSmart14_thunk_FUN_101ba1b0<NativeOpT14_tag> smart;').replace(
+        ' : smart(param) {',
+        ' : smart((NativeOpT14_tag *)param) {')
+    variants['op_impl_smart_template_only'] = (smart_template_decls, None)
     header = ('// Constructor-scope hypothesis variants for entry 10687e80.\n'
               'inline void *operator new(unsigned int, void *receiver) noexcept { return receiver; }\n')
     out = {}
     for name, library in variants.items():
         body = definition
+        init_repl = None
+        if isinstance(library, tuple):
+            library, init_repl = library
+        if init_repl is not None:
+            body = body.replace('m14(param_2)', init_repl)
         if name.endswith('_dbl'):
             body = body.replace('f38.q = 0;', 'f38.d = 0.0;')
         out[name] = (header + library +

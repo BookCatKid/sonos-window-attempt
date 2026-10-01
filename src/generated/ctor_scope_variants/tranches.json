@@ -136,6 +136,14 @@
     "directory": "analysis/ctor-scope-op-impl-smart-array"
   },
   {
+    "object": "op_impl_smart_template_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-smart-template"
+  },
+  {
+    "object": "op_impl_smart_template_only_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-smart-template-only"
+  },
+  {
     "object": "named_event_memberinit_reference_flags",
     "directory": "analysis/ctor-scope-named-event-memberinit"
   },
