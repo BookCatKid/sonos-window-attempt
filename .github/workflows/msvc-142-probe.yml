@@ -55,6 +55,15 @@ jobs:
             Write-Output 'Using existing Build Tools installation; experiments verify the compiler version.'
             exit 0
           }
+          if (Test-Path 'C:\VS2019BuildTools') {
+            # The compiler-binary cache restores into the install root, and the
+            # VS installer refuses to install into a nonempty directory.
+            Write-Output 'Moving cache-restored compiler tree aside so the installer accepts the install path'
+            if (Test-Path 'C:\VS2019BuildTools.cachedbin') {
+              Remove-Item 'C:\VS2019BuildTools.cachedbin' -Recurse -Force
+            }
+            Move-Item 'C:\VS2019BuildTools' 'C:\VS2019BuildTools.cachedbin'
+          }
           # 16.9.10 BuildTools link from Microsoft's VS 2019 release history.
           $uri = 'https://download.visualstudio.microsoft.com/download/pr/3daa9785-bfd4-4cb1-bdc3-6d8d52159671/b24f75623e522f42ef6c5668bdb1683f7af3cfca48cddef77d0ead38207de802/vs_BuildTools.exe'
           $bootstrapper = Join-Path $env:RUNNER_TEMP 'vs_BuildTools_16_9_10.exe'

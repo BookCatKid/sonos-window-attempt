@@ -306,5 +306,9 @@
   {
     "object": "global_release_dtors_reference_flags",
     "directory": "analysis/compiled-cpp-global-release-dtors"
+  },
+  {
+    "object": "pair_move_setters_reference_flags",
+    "directory": "analysis/compiled-cpp-pair-move-setters"
   }
 ]
