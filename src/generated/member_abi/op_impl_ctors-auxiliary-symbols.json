@@ -1,0 +1,2858 @@
+[
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10687e80@@QAE@XZ",
+    "owner_entry": "10687e80",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10687e80",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10687e80",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10687e80",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_109f4aa0@@QAE@XZ",
+    "owner_entry": "109f4aa0",
+    "state": 0,
+    "call_target": "10009a48",
+    "body_entry": "109f7750"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "109f4aa0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "109f4aa0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "109f4aa0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_109f4c00@@QAE@XZ",
+    "owner_entry": "109f4c00",
+    "state": 0,
+    "call_target": "1003b912",
+    "body_entry": "109f7770"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "109f4c00",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "109f4c00",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "109f4c00",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_109f4d60@@QAE@XZ",
+    "owner_entry": "109f4d60",
+    "state": 0,
+    "call_target": "1005fc04",
+    "body_entry": "109f7790"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "109f4d60",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "109f4d60",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "109f4d60",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_109f4ec0@@QAE@XZ",
+    "owner_entry": "109f4ec0",
+    "state": 0,
+    "call_target": "10057b08",
+    "body_entry": "109f77b0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "109f4ec0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "109f4ec0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "109f4ec0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_109f5470@@QAE@XZ",
+    "owner_entry": "109f5470",
+    "state": 0,
+    "call_target": "10009a48",
+    "body_entry": "109f7750"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "109f5470",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "109f5470",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "109f5470",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_109f55e0@@QAE@XZ",
+    "owner_entry": "109f55e0",
+    "state": 0,
+    "call_target": "1003b912",
+    "body_entry": "109f7770"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "109f55e0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "109f55e0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "109f55e0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_109f5750@@QAE@XZ",
+    "owner_entry": "109f5750",
+    "state": 0,
+    "call_target": "1005fc04",
+    "body_entry": "109f7790"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "109f5750",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "109f5750",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "109f5750",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_109f58c0@@QAE@XZ",
+    "owner_entry": "109f58c0",
+    "state": 0,
+    "call_target": "10057b08",
+    "body_entry": "109f77b0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "109f58c0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "109f58c0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "109f58c0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10b6cd30@@QAE@XZ",
+    "owner_entry": "10b6cd30",
+    "state": 0,
+    "call_target": "10005c4a",
+    "body_entry": "10b6d380"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10b6cd30",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10b6cd30",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10b6cd30",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10b6d0a0@@QAE@XZ",
+    "owner_entry": "10b6d0a0",
+    "state": 0,
+    "call_target": "10005c4a",
+    "body_entry": "10b6d380"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10b6d0a0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10b6d0a0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10b6d0a0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10b7bf50@@QAE@XZ",
+    "owner_entry": "10b7bf50",
+    "state": 0,
+    "call_target": "1001a56e",
+    "body_entry": "10b7cb50"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10b7bf50",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10b7bf50",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10b7bf50",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10b7c6a0@@QAE@XZ",
+    "owner_entry": "10b7c6a0",
+    "state": 0,
+    "call_target": "1001a56e",
+    "body_entry": "10b7cb50"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10b7c6a0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10b7c6a0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10b7c6a0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c4a3b0@@QAE@XZ",
+    "owner_entry": "10c4a3b0",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c4a3b0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c4a3b0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c4a3b0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c4de80@@QAE@XZ",
+    "owner_entry": "10c4de80",
+    "state": 0,
+    "call_target": "100680ac",
+    "body_entry": "10c4f2b0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c4de80",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c4de80",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c4de80",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c4dfe0@@QAE@XZ",
+    "owner_entry": "10c4dfe0",
+    "state": 0,
+    "call_target": "10059a1b",
+    "body_entry": "10c4f2d0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c4dfe0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c4dfe0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c4dfe0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c4e140@@QAE@XZ",
+    "owner_entry": "10c4e140",
+    "state": 0,
+    "call_target": "1008314a",
+    "body_entry": "10c4f2f0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c4e140",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c4e140",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c4e140",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c4e2a0@@QAE@XZ",
+    "owner_entry": "10c4e2a0",
+    "state": 0,
+    "call_target": "10067b89",
+    "body_entry": "10c4f310"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c4e2a0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c4e2a0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c4e2a0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c4e400@@QAE@XZ",
+    "owner_entry": "10c4e400",
+    "state": 0,
+    "call_target": "1005836e",
+    "body_entry": "10c4f330"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c4e400",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c4e400",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c4e400",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c4eb20@@QAE@XZ",
+    "owner_entry": "10c4eb20",
+    "state": 0,
+    "call_target": "100680ac",
+    "body_entry": "10c4f2b0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c4eb20",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c4eb20",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c4eb20",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c4ec90@@QAE@XZ",
+    "owner_entry": "10c4ec90",
+    "state": 0,
+    "call_target": "10059a1b",
+    "body_entry": "10c4f2d0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c4ec90",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c4ec90",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c4ec90",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c4ee00@@QAE@XZ",
+    "owner_entry": "10c4ee00",
+    "state": 0,
+    "call_target": "1008314a",
+    "body_entry": "10c4f2f0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c4ee00",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c4ee00",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c4ee00",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c4ef70@@QAE@XZ",
+    "owner_entry": "10c4ef70",
+    "state": 0,
+    "call_target": "10067b89",
+    "body_entry": "10c4f310"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c4ef70",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c4ef70",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c4ef70",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c4f0e0@@QAE@XZ",
+    "owner_entry": "10c4f0e0",
+    "state": 0,
+    "call_target": "1005836e",
+    "body_entry": "10c4f330"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c4f0e0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c4f0e0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c4f0e0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c54630@@QAE@XZ",
+    "owner_entry": "10c54630",
+    "state": 0,
+    "call_target": "100410ab",
+    "body_entry": "10c55540"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c54630",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c54630",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c54630",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c54790@@QAE@XZ",
+    "owner_entry": "10c54790",
+    "state": 0,
+    "call_target": "1001014f",
+    "body_entry": "10c55560"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c54790",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c54790",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c54790",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c548f0@@QAE@XZ",
+    "owner_entry": "10c548f0",
+    "state": 0,
+    "call_target": "100924c4",
+    "body_entry": "10c55580"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c548f0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c548f0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c548f0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c54a50@@QAE@XZ",
+    "owner_entry": "10c54a50",
+    "state": 0,
+    "call_target": "10022ca5",
+    "body_entry": "10c555a0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c54a50",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c54a50",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c54a50",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c54f40@@QAE@XZ",
+    "owner_entry": "10c54f40",
+    "state": 0,
+    "call_target": "100410ab",
+    "body_entry": "10c55540"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c54f40",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c54f40",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c54f40",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c550b0@@QAE@XZ",
+    "owner_entry": "10c550b0",
+    "state": 0,
+    "call_target": "1001014f",
+    "body_entry": "10c55560"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c550b0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c550b0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c550b0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c55220@@QAE@XZ",
+    "owner_entry": "10c55220",
+    "state": 0,
+    "call_target": "100924c4",
+    "body_entry": "10c55580"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c55220",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c55220",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c55220",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c55390@@QAE@XZ",
+    "owner_entry": "10c55390",
+    "state": 0,
+    "call_target": "10022ca5",
+    "body_entry": "10c555a0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c55390",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c55390",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c55390",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c59210@@QAE@XZ",
+    "owner_entry": "10c59210",
+    "state": 0,
+    "call_target": "10073844",
+    "body_entry": "10c596a0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c59210",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c59210",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c59210",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c59500@@QAE@XZ",
+    "owner_entry": "10c59500",
+    "state": 0,
+    "call_target": "10073844",
+    "body_entry": "10c596a0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c59500",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c59500",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c59500",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c803a0@@QAE@XZ",
+    "owner_entry": "10c803a0",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c803a0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c803a0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c803a0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10c80500@@QAE@XZ",
+    "owner_entry": "10c80500",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10c80500",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10c80500",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10c80500",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10cc0b70@@QAE@XZ",
+    "owner_entry": "10cc0b70",
+    "state": 0,
+    "call_target": "10004ccd",
+    "body_entry": "10cc1280"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10cc0b70",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10cc0b70",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10cc0b70",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10cc0ff0@@QAE@XZ",
+    "owner_entry": "10cc0ff0",
+    "state": 0,
+    "call_target": "10004ccd",
+    "body_entry": "10cc1280"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10cc0ff0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10cc0ff0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10cc0ff0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10cc6100@@QAE@XZ",
+    "owner_entry": "10cc6100",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10cc6100",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10cc6100",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10cc6100",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10cc6260@@QAE@XZ",
+    "owner_entry": "10cc6260",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10cc6260",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10cc6260",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10cc6260",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10cc63c0@@QAE@XZ",
+    "owner_entry": "10cc63c0",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10cc63c0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10cc63c0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10cc63c0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10cc6520@@QAE@XZ",
+    "owner_entry": "10cc6520",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10cc6520",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10cc6520",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10cc6520",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10cc6680@@QAE@XZ",
+    "owner_entry": "10cc6680",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10cc6680",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10cc6680",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10cc6680",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10cc67e0@@QAE@XZ",
+    "owner_entry": "10cc67e0",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10cc67e0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10cc67e0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10cc67e0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10cc6940@@QAE@XZ",
+    "owner_entry": "10cc6940",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10cc6940",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10cc6940",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10cc6940",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10cc6aa0@@QAE@XZ",
+    "owner_entry": "10cc6aa0",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10cc6aa0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10cc6aa0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10cc6aa0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10cc6c00@@QAE@XZ",
+    "owner_entry": "10cc6c00",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10cc6c00",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10cc6c00",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10cc6c00",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10cc88e0@@QAE@XZ",
+    "owner_entry": "10cc88e0",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10cc88e0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10cc88e0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10cc88e0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10cdaeb0@@QAE@XZ",
+    "owner_entry": "10cdaeb0",
+    "state": 0,
+    "call_target": "1006feab",
+    "body_entry": "10cdbb50"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10cdaeb0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10cdaeb0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10cdaeb0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10cdb010@@QAE@XZ",
+    "owner_entry": "10cdb010",
+    "state": 0,
+    "call_target": "10066e28",
+    "body_entry": "10cdbb70"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10cdb010",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10cdb010",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10cdb010",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10cdb820@@QAE@XZ",
+    "owner_entry": "10cdb820",
+    "state": 0,
+    "call_target": "1006feab",
+    "body_entry": "10cdbb50"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10cdb820",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10cdb820",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10cdb820",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10cdb990@@QAE@XZ",
+    "owner_entry": "10cdb990",
+    "state": 0,
+    "call_target": "10066e28",
+    "body_entry": "10cdbb70"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10cdb990",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10cdb990",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10cdb990",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10ce0c30@@QAE@XZ",
+    "owner_entry": "10ce0c30",
+    "state": 0,
+    "call_target": "1001cb07",
+    "body_entry": "10ce10b0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10ce0c30",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10ce0c30",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10ce0c30",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10ce0f40@@QAE@XZ",
+    "owner_entry": "10ce0f40",
+    "state": 0,
+    "call_target": "1001cb07",
+    "body_entry": "10ce10b0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10ce0f40",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10ce0f40",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10ce0f40",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10cf54b0@@QAE@XZ",
+    "owner_entry": "10cf54b0",
+    "state": 0,
+    "call_target": "10030562",
+    "body_entry": "10cf58c0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10cf54b0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10cf54b0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10cf54b0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10d7c4d0@@QAE@XZ",
+    "owner_entry": "10d7c4d0",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10d7c4d0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10d7c4d0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10d7c4d0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10d7c630@@QAE@XZ",
+    "owner_entry": "10d7c630",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10d7c630",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10d7c630",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10d7c630",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10d7c790@@QAE@XZ",
+    "owner_entry": "10d7c790",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10d7c790",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10d7c790",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10d7c790",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10d7c8f0@@QAE@XZ",
+    "owner_entry": "10d7c8f0",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10d7c8f0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10d7c8f0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10d7c8f0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10d9ab50@@QAE@XZ",
+    "owner_entry": "10d9ab50",
+    "state": 0,
+    "call_target": "100292f8",
+    "body_entry": "10d9b8c0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10d9ab50",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10d9ab50",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10d9ab50",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10d9b0a0@@QAE@XZ",
+    "owner_entry": "10d9b0a0",
+    "state": 0,
+    "call_target": "100292f8",
+    "body_entry": "10d9b8c0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10d9b0a0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10d9b0a0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10d9b0a0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10de4720@@QAE@XZ",
+    "owner_entry": "10de4720",
+    "state": 0,
+    "call_target": "1005ee71",
+    "body_entry": "10de4fc0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10de4720",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10de4720",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10de4720",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10de4d40@@QAE@XZ",
+    "owner_entry": "10de4d40",
+    "state": 0,
+    "call_target": "1005ee71",
+    "body_entry": "10de4fc0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10de4d40",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10de4d40",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10de4d40",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10e8b520@@QAE@XZ",
+    "owner_entry": "10e8b520",
+    "state": 0,
+    "call_target": "10017931",
+    "body_entry": "10e92ee0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10e8b520",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10e8b520",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10e8b520",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10e8f200@@QAE@XZ",
+    "owner_entry": "10e8f200",
+    "state": 0,
+    "call_target": "10017931",
+    "body_entry": "10e92ee0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10e8f200",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10e8f200",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10e8f200",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10ef1290@@QAE@XZ",
+    "owner_entry": "10ef1290",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10ef1290",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10ef1290",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10ef1290",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f0d720@@QAE@XZ",
+    "owner_entry": "10f0d720",
+    "state": 0,
+    "call_target": "1001b932",
+    "body_entry": "10f0ef10"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f0d720",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f0d720",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f0d720",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f0d880@@QAE@XZ",
+    "owner_entry": "10f0d880",
+    "state": 0,
+    "call_target": "1001b932",
+    "body_entry": "10f0ef10"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f0d880",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f0d880",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f0d880",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f0d9e0@@QAE@XZ",
+    "owner_entry": "10f0d9e0",
+    "state": 0,
+    "call_target": "1001b932",
+    "body_entry": "10f0ef10"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f0d9e0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f0d9e0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f0d9e0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f24730@@QAE@XZ",
+    "owner_entry": "10f24730",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f24730",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f24730",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f24730",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f2f9b0@@QAE@XZ",
+    "owner_entry": "10f2f9b0",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f2f9b0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f2f9b0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f2f9b0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f2fb10@@QAE@XZ",
+    "owner_entry": "10f2fb10",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f2fb10",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f2fb10",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f2fb10",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f2fc70@@QAE@XZ",
+    "owner_entry": "10f2fc70",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f2fc70",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f2fc70",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f2fc70",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f2fdd0@@QAE@XZ",
+    "owner_entry": "10f2fdd0",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f2fdd0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f2fdd0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f2fdd0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f55c60@@QAE@XZ",
+    "owner_entry": "10f55c60",
+    "state": 0,
+    "call_target": "10096c27",
+    "body_entry": "10f57040"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f55c60",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f55c60",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f55c60",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f55dc0@@QAE@XZ",
+    "owner_entry": "10f55dc0",
+    "state": 0,
+    "call_target": "100888fc",
+    "body_entry": "10f57060"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f55dc0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f55dc0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f55dc0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f55f20@@QAE@XZ",
+    "owner_entry": "10f55f20",
+    "state": 0,
+    "call_target": "100425c3",
+    "body_entry": "10f57080"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f55f20",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f55f20",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f55f20",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f56080@@QAE@XZ",
+    "owner_entry": "10f56080",
+    "state": 0,
+    "call_target": "1004f0d9",
+    "body_entry": "10f570a0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f56080",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f56080",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f56080",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f56480@@QAE@XZ",
+    "owner_entry": "10f56480",
+    "state": 0,
+    "call_target": "10096c27",
+    "body_entry": "10f57040"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f56480",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f56480",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f56480",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f565f0@@QAE@XZ",
+    "owner_entry": "10f565f0",
+    "state": 0,
+    "call_target": "100888fc",
+    "body_entry": "10f57060"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f565f0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f565f0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f565f0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f56760@@QAE@XZ",
+    "owner_entry": "10f56760",
+    "state": 0,
+    "call_target": "100425c3",
+    "body_entry": "10f57080"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f56760",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f56760",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f56760",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f568d0@@QAE@XZ",
+    "owner_entry": "10f568d0",
+    "state": 0,
+    "call_target": "1004f0d9",
+    "body_entry": "10f570a0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f568d0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f568d0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f568d0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f64e00@@QAE@XZ",
+    "owner_entry": "10f64e00",
+    "state": 0,
+    "call_target": "1005619a",
+    "body_entry": "10f65b20"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f64e00",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f64e00",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f64e00",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f65290@@QAE@XZ",
+    "owner_entry": "10f65290",
+    "state": 0,
+    "call_target": "1005619a",
+    "body_entry": "10f65b20"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f65290",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f65290",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f65290",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f6fb30@@QAE@XZ",
+    "owner_entry": "10f6fb30",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f6fb30",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f6fb30",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f6fb30",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f77460@@QAE@XZ",
+    "owner_entry": "10f77460",
+    "state": 0,
+    "call_target": "1004d310",
+    "body_entry": "10f77a60"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f77460",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f77460",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f77460",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f7c3e0@@QAE@XZ",
+    "owner_entry": "10f7c3e0",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f7c3e0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f7c3e0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f7c3e0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f7c540@@QAE@XZ",
+    "owner_entry": "10f7c540",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f7c540",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f7c540",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f7c540",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f8a230@@QAE@XZ",
+    "owner_entry": "10f8a230",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f8a230",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f8a230",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f8a230",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f8a390@@QAE@XZ",
+    "owner_entry": "10f8a390",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f8a390",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f8a390",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f8a390",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_10f8a4f0@@QAE@XZ",
+    "owner_entry": "10f8a4f0",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "10f8a4f0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "10f8a4f0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "10f8a4f0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_11017960@@QAE@XZ",
+    "owner_entry": "11017960",
+    "state": 0,
+    "call_target": "1009465c",
+    "body_entry": "11017c80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "11017960",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "11017960",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "11017960",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_11025ee0@@QAE@XZ",
+    "owner_entry": "11025ee0",
+    "state": 0,
+    "call_target": "10081b60",
+    "body_entry": "11026c80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "11025ee0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "11025ee0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "11025ee0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_110267e0@@QAE@XZ",
+    "owner_entry": "110267e0",
+    "state": 0,
+    "call_target": "10081b60",
+    "body_entry": "11026c80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "110267e0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "110267e0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "110267e0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_1105f250@@QAE@XZ",
+    "owner_entry": "1105f250",
+    "state": 0,
+    "call_target": "10098063",
+    "body_entry": "1105f5e0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "1105f250",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "1105f250",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "1105f250",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_1105f460@@QAE@XZ",
+    "owner_entry": "1105f460",
+    "state": 0,
+    "call_target": "10098063",
+    "body_entry": "1105f5e0"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "1105f460",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "1105f460",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "1105f460",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_110615e0@@QAE@XZ",
+    "owner_entry": "110615e0",
+    "state": 0,
+    "call_target": "10047a87",
+    "body_entry": "11061900"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "110615e0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "110615e0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "110615e0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_11061790@@QAE@XZ",
+    "owner_entry": "11061790",
+    "state": 0,
+    "call_target": "10047a87",
+    "body_entry": "11061900"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "11061790",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "11061790",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "11061790",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_110621c0@@QAE@XZ",
+    "owner_entry": "110621c0",
+    "state": 0,
+    "call_target": "1003e342",
+    "body_entry": "11062530"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "110621c0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "110621c0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "110621c0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_110646c0@@QAE@XZ",
+    "owner_entry": "110646c0",
+    "state": 0,
+    "call_target": "1000a880",
+    "body_entry": "101b9b80"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "110646c0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "110646c0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "110646c0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_11067520@@QAE@XZ",
+    "owner_entry": "11067520",
+    "state": 0,
+    "call_target": "100399eb",
+    "body_entry": "11067850"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "11067520",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "11067520",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "11067520",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpImplBase_FUN_110676d0@@QAE@XZ",
+    "owner_entry": "110676d0",
+    "state": 0,
+    "call_target": "100399eb",
+    "body_entry": "11067850"
+  },
+  {
+    "symbol": "??1NativeOpMember8@@QAE@XZ",
+    "owner_entry": "110676d0",
+    "state": 1,
+    "call_target": "1005d625",
+    "body_entry": "101ba0c0"
+  },
+  {
+    "symbol": "??1NativeOpMemberC@@QAE@XZ",
+    "owner_entry": "110676d0",
+    "state": 2,
+    "call_target": "100709eb",
+    "body_entry": "101b9eb0"
+  },
+  {
+    "symbol": "??1NativeOpMember14@@QAE@XZ",
+    "owner_entry": "110676d0",
+    "state": 3,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  }
+]
