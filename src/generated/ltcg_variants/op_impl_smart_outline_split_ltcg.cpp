@@ -50,6 +50,7 @@ f38.q = 0; f38.w.hi = 0;
 f40 = 0; f44 = 0;
 }
 
+void (__cdecl * volatile ltcg_opaque)(void) = 0;
 extern "C" {
 int __cdecl __CxxFrameHandler3(void *, void *, void *, void *) { return 0; }
 void __fastcall __security_check_cookie(unsigned int) { }
@@ -58,10 +59,10 @@ unsigned int __security_cookie = 0x12345678;
 void __cdecl __std_terminate() { for (;;) { } }
 
 // ltcg link stubs
-void __cdecl thunk_FUN_1123fce0(void *) { }
-NativeOpMember8V_thunk_FUN_11240650::NativeOpMember8V_thunk_FUN_11240650() { }
-NativeOpMember8V_thunk_FUN_11240650::~NativeOpMember8V_thunk_FUN_11240650() { }
-NativeOpMember8_thunk_FUN_101ba0c0::~NativeOpMember8_thunk_FUN_101ba0c0() { }
-NativeOpMemberC_thunk_FUN_101b9eb0::~NativeOpMemberC_thunk_FUN_101b9eb0() { }
-NativeOpSmart14_thunk_FUN_101ba1b0::~NativeOpSmart14_thunk_FUN_101ba1b0() { }
-NativeOpImplBase_thunk_FUN_101b9b80_10687e80::~NativeOpImplBase_thunk_FUN_101b9b80_10687e80() { }
+void __cdecl thunk_FUN_1123fce0(void *) { ltcg_opaque(); }
+NativeOpMember8V_thunk_FUN_11240650::NativeOpMember8V_thunk_FUN_11240650() { ltcg_opaque(); }
+NativeOpMember8V_thunk_FUN_11240650::~NativeOpMember8V_thunk_FUN_11240650() { ltcg_opaque(); }
+NativeOpMember8_thunk_FUN_101ba0c0::~NativeOpMember8_thunk_FUN_101ba0c0() { ltcg_opaque(); }
+NativeOpMemberC_thunk_FUN_101b9eb0::~NativeOpMemberC_thunk_FUN_101b9eb0() { ltcg_opaque(); }
+NativeOpSmart14_thunk_FUN_101ba1b0::~NativeOpSmart14_thunk_FUN_101ba1b0() { ltcg_opaque(); }
+NativeOpImplBase_thunk_FUN_101b9b80_10687e80::~NativeOpImplBase_thunk_FUN_101b9b80_10687e80() { ltcg_opaque(); }

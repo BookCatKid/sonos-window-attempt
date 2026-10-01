@@ -21,6 +21,7 @@ f8 = 0;
 vptr = (void *)&DAT_118c62f8;
 }
 
+void (__cdecl * volatile ltcg_opaque)(void) = 0;
 extern "C" {
 int __cdecl __CxxFrameHandler3(void *, void *, void *, void *) { return 0; }
 void __fastcall __security_check_cookie(unsigned int) { }
@@ -29,5 +30,5 @@ unsigned int __security_cookie = 0x12345678;
 void __cdecl __std_terminate() { for (;;) { } }
 
 // ltcg link stubs
-void __cdecl thunk_FUN_1123fce0(void *) { }
-NativeOpRefMember_thunk_FUN_101ba1b0::~NativeOpRefMember_thunk_FUN_101ba1b0() { }
+void __cdecl thunk_FUN_1123fce0(void *) { ltcg_opaque(); }
+NativeOpRefMember_thunk_FUN_101ba1b0::~NativeOpRefMember_thunk_FUN_101ba1b0() { ltcg_opaque(); }

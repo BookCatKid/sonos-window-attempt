@@ -856,7 +856,10 @@ def ltcgize(text):
         if name in seen_stubs:
             continue
         seen_stubs.add(name)
-        stubs.append(f'{ret} {conv or ""}{name}({args}) {{'
+        # Opaque call inside every stub: an empty inlined body proves the
+        # callee cannot throw, which lets /LTCG elide the EH scopes under
+        # test. A volatile indirect call is unanalyzable, so scopes stay.
+        stubs.append(f'{ret} {conv or ""}{name}({args}) {{ ltcg_opaque();'
                      + (' return 0;' if 'void' not in ret else '') + ' }')
     # member decls inside structs: NAME(args); or ~NAME(); with no body —
     # skip members that already have an out-of-class definition in the file
@@ -875,12 +878,13 @@ def ltcgize(text):
                 continue
             seen_stubs.add(key)
             if tilde:
-                stubs.append(f'{sname}::~{sname}() {{ }}')
+                stubs.append(f'{sname}::~{sname}() {{ ltcg_opaque(); }}')
             else:
-                stubs.append(f'{sname}::{sname}({args}) {{ }}')
+                stubs.append(f'{sname}::{sname}({args}) {{ ltcg_opaque(); }}')
     # CRT entry points referenced by /EHsc + /GS codegen — stubbed so the
     # /NODEFAULTLIB link resolves them; they are only call targets
-    text += ('\nextern "C" {\n'
+    text += ('\nvoid (__cdecl * volatile ltcg_opaque)(void) = 0;\n'
+             'extern "C" {\n'
              'int __cdecl __CxxFrameHandler3(void *, void *, void *, void *)'
              ' { return 0; }\n'
              'void __fastcall __security_check_cookie(unsigned int) { }\n'
