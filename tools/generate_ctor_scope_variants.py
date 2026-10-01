@@ -62,6 +62,7 @@ def op_ref_variants():
         r'NativeOpRefBase_FUN_10687d70\(\) \{ vptr = \(void \*\)&DAT_([0-9a-f]{8})',
         generated).group(1)
     library = (
+        'inline void *operator new(unsigned int, void *receiver) noexcept { return receiver; }\n'
         f'extern unsigned int DAT_{base_vtable};\n'
         f'extern unsigned int DAT_{vtable};\n'
         'void __cdecl thunk_FUN_1123fce0(void *);\n')
@@ -155,6 +156,17 @@ def op_ref_variants():
             '{ rep = p; }\n',
             'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
             '    : m4(param_2) {\nif (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # placement-new into the member: binds eax=&m4, MSVC repoints the
+        # construction-this spill so the funclet reads [ebp-0x10] bare
+        'op_ref_m4_place': (
+            'struct NativeOpRefMember_thunk_FUN_101ba1b0 { void *rep;\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0() {}\n'
+            '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '{\nNativeOpRefMember_thunk_FUN_101ba1b0 *pm =\n'
+            '    new (&m4) NativeOpRefMember_thunk_FUN_101ba1b0();\n'
+            'pm->rep = param_2;\nif (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
             f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
     }
     out = {}
@@ -250,7 +262,21 @@ def op_impl_variants():
         ' : smart(param) { f8 = 0;',
         ' : smart(param) { smart.p = param; '
         'if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0;')
-    header = '// Constructor-scope hypothesis variants for entry 10687e80.\n'
+    # smart placement-newed inside m14's body: the new-expression's &smart is
+    # materialized in eax, MSVC repoints the construction spill to it (the
+    # funclet reads [ebp-0x14] bare), arms state3, and the ctor body stores
+    # smart.p through eax
+    variants['op_impl_smart_place'] = decls.replace(
+        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
+        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
+        '    NativeOpSmart14_thunk_FUN_101ba1b0() {}\n'
+        '    NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
+        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };').replace(
+        ' : smart(param) { f8 = 0;',
+        ' {\nNativeOpSmart14_thunk_FUN_101ba1b0 *ps = new (&smart) '
+        'NativeOpSmart14_thunk_FUN_101ba1b0(param);\n(void)ps; f8 = 0;')
+    header = ('// Constructor-scope hypothesis variants for entry 10687e80.\n'
+              'inline void *operator new(unsigned int, void *receiver) noexcept { return receiver; }\n')
     out = {}
     for name, library in variants.items():
         body = definition
