@@ -628,3 +628,13 @@ this evidence narrows the next source work to zero-store retention and reuse of
 the outgoing-container pointer home by the first key. The storage-variant
 artifact download is being retried after an incomplete transfer; no acceptance
 is inferred from a successful compilation or partial download.
+
+The storage-variant artifact has now been retrieved and compared. Run
+36799109447 adds zero bytes. Volatile key representation restores all fourteen
+body lengths and resolves every relocation, but frame offsets still disagree
+(six fixed instruction bytes in each single-property callback). Compiler
+barriers also preserve stores but change instruction scheduling. Removing the
+forced tree home loses its three-byte store and does not fix frame allocation.
+The next pinned probes retain volatile key writes while making the outgoing-tree
+home a normally typed pointer or union, written through a volatile-qualified
+lvalue, to test whether MSVC can then reuse its stack slot for the first key.

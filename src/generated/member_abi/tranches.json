@@ -230,5 +230,13 @@
   {
     "object": "property_callbacks_volatile_no_tree_home_reference_flags",
     "directory": "analysis/compiled-cpp-property-callbacks-volatile-no-tree-home"
+  },
+  {
+    "object": "property_callbacks_volatile_access_home_reference_flags",
+    "directory": "analysis/compiled-cpp-property-callbacks-volatile-access-home"
+  },
+  {
+    "object": "property_callbacks_volatile_union_home_reference_flags",
+    "directory": "analysis/compiled-cpp-property-callbacks-volatile-union-home"
   }
 ]

@@ -72,6 +72,8 @@ def main():
         'property_callbacks_volatile':library.replace('unsigned int rep;','volatile unsigned int rep;'),
         'property_callbacks_barrier':library.replace('int_release(); rep=0;', 'int_release(); rep=0; _ReadWriteBarrier();'),
         'property_callbacks_volatile_no_tree_home':library.replace('unsigned int rep;','volatile unsigned int rep;').replace('FactoryTree * volatile home=this; _ReadWriteBarrier();','_ReadWriteBarrier();'),
+        'property_callbacks_volatile_access_home':library.replace('unsigned int rep;','volatile unsigned int rep;').replace('FactoryTree * volatile home=this; _ReadWriteBarrier();','FactoryTree *home; *(FactoryTree * volatile *)&home=this; _ReadWriteBarrier();'),
+        'property_callbacks_volatile_union_home':library.replace('unsigned int rep;','volatile unsigned int rep;').replace('FactoryTree * volatile home=this; _ReadWriteBarrier();','union { FactoryTree *tree; unsigned int word; } home; *(FactoryTree * volatile *)&home.tree=this; _ReadWriteBarrier();'),
     }
     for name,variant_library in variants.items():
         emit_variant(name,[{**r,'abi_declarations':{'property_callback_library':variant_library}} for r in candidates],evidence,roles)
