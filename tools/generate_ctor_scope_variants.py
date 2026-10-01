@@ -554,9 +554,23 @@ def wiz_state_variants():
         # condition-scoped temporary
         'wiz_if_temp': tail_common + (
             'if (thunk_FUN_106dfa00().endsWith("Page")) { }\n'),
+        # by-value union param: the param slot is raw storage; the helper
+        # constructs an SCStr into it — MSVC flag-tracks union members whose
+        # lifetime is started manually by a callee write
+        'wiz_union_param': tail_common + (
+            'NativeWizSret *s2 = thunk_FUN_106dfa00(&arg.s);\n'
+            's2->endsWith("Page");\n'
+            'arg.s.~NativeWizSret();\n'),
+        # raw int param + placement write through the out pointer
+        'wiz_slot_out': tail_common + (
+            'NativeWizSret *s2 = thunk_FUN_106dfa00((NativeWizSret *)&arg);\n'
+            's2->endsWith("Page");\n'
+            '((NativeWizSret *)&arg)->~NativeWizSret();\n'),
     }
     out = {}
     for name, body in variants.items():
+        if name in ('wiz_union_param', 'wiz_slot_out'):
+            continue
         out[name] = (prefix +
                      '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
                      '#line 1 "ENTRY_1061e8b0"\n'
@@ -581,6 +595,31 @@ def wiz_state_variants():
         source_marker + '\n' + tail_common +
         'NativeWizSret s2;\n'
         'thunk_FUN_106dfa00(&s2)->endsWith("Page");\n' + tail_end)
+    # param-slot construction: the helper writes the SCStr into the raw
+    # param slot — MSVC flag-tracks the callee-constructed object
+    out['wiz_slot_out'] = (
+        prefix.replace(old_klass, sret_type + klass) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'NativeWizSret *s2 = thunk_FUN_106dfa00((NativeWizSret *)&arg);\n'
+        's2->endsWith("Page");\n'
+        '((NativeWizSret *)&arg)->~NativeWizSret();\n' + tail_end)
+    # by-value union param whose member is constructed by the callee
+    union_type = ('union NativeWizSlot { void *raw; NativeWizSret s;\n'
+                  'NativeWizSlot() {} ~NativeWizSlot() {} };\n')
+    union_klass = klass.replace('NativeWizState_FUN_1061e8b0(void *);',
+                                'NativeWizState_FUN_1061e8b0(NativeWizSlot);')
+    out['wiz_union_param'] = (
+        prefix.replace(old_klass, sret_type + union_type + union_klass) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker.replace('void *arg', 'NativeWizSlot arg') + '\n' +
+        tail_common.replace('thunk_FUN_106de0c0(&name, arg)',
+                            'thunk_FUN_106de0c0(&name, arg.raw)') +
+        'NativeWizSret *s2 = thunk_FUN_106dfa00(&arg.s);\n'
+        's2->endsWith("Page");\n'
+        'arg.s.~NativeWizSret();\n' + tail_end)
     return out
 
 

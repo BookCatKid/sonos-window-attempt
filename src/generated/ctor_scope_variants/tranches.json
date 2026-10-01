@@ -200,6 +200,14 @@
     "directory": "analysis/ctor-scope-wiz-outparam"
   },
   {
+    "object": "wiz_slot_out_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-slot-out"
+  },
+  {
+    "object": "wiz_union_param_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-union-param"
+  },
+  {
     "object": "copier_named_reference_flags",
     "directory": "analysis/ctor-scope-copier-named"
   },
