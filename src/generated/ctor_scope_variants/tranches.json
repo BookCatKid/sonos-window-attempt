@@ -140,6 +140,22 @@
     "directory": "analysis/ctor-scope-op-ref-m4-submember"
   },
   {
+    "object": "op_ref_m4_subtrivial_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-subtrivial"
+  },
+  {
+    "object": "op_ref_m4_sub_addref_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-sub-addref"
+  },
+  {
+    "object": "op_ref_m4_sub_fi_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-sub-fi"
+  },
+  {
+    "object": "op_ref_m4_subbody_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-subbody"
+  },
+  {
     "object": "op_impl_control_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-control"
   },
@@ -354,6 +370,10 @@
   {
     "object": "wiz_cond_temp_reference_flags",
     "directory": "analysis/ctor-scope-wiz-cond-temp"
+  },
+  {
+    "object": "wiz_const_cond_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-const-cond"
   },
   {
     "object": "wiz_and_temp_reference_flags",

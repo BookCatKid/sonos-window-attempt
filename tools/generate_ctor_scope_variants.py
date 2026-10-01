@@ -465,6 +465,68 @@ def op_ref_variants():
             '    : m4(param_2) {\n'
             'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
             f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # Sub's ctor is trivial-inline (p=x store) but ~Sub is real: M4's
+        # ctor inlines fully into K's ctor while the rep member-init scope
+        # still needs the construction-this repoint for its unwind entry
+        'op_ref_m4_subtrivial': (
+            'struct NativeOpRefSub { void *p; NativeOpRefSub(void *x) : p(x) {}\n'
+            '~NativeOpRefSub(); };\n'
+            'struct NativeOpRefMember_thunk_FUN_101ba1b0 { NativeOpRefSub rep;\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0(void *p) : rep(p) {}\n'
+            '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n'
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0 m4; void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(param_2) {\n'
+            'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # addref inside M4's own ctor body: rep is built, then a throwing call
+        # forces a real unwind scope inside M4's inlined ctor — the scope's
+        # construction-this points at &m4 and the funclet reads it bare
+        'op_ref_m4_sub_addref': (
+            'struct NativeOpRefSub { void *p; NativeOpRefSub(void *x) : p(x) {}\n'
+            '~NativeOpRefSub(); };\n'
+            'struct NativeOpRefMember_thunk_FUN_101ba1b0 { NativeOpRefSub rep;\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0(void *p) : rep(p) {\n'
+            'if (p) thunk_FUN_1123fce0((char *)p + 4); }\n'
+            '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n'
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0 m4; void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(param_2) {\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # forceinline M4's call-containing ctor: the rep member-init call is
+        # folded by the backend inside an already-armed construction scope
+        'op_ref_m4_sub_fi': (
+            'struct NativeOpRefSub { void *p; NativeOpRefSub(void *x);\n'
+            '~NativeOpRefSub(); };\n'
+            'struct NativeOpRefMember_thunk_FUN_101ba1b0 { NativeOpRefSub rep;\n'
+            '__forceinline NativeOpRefMember_thunk_FUN_101ba1b0(void *p) : rep(p) {}\n'
+            '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n'
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0 m4; void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(param_2) {\n'
+            'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # M4's ctor default-init's rep then stores through it in the body:
+        # the body store runs inside the armed member-construction state
+        'op_ref_m4_subbody': (
+            'struct NativeOpRefSub { void *p; NativeOpRefSub();\n'
+            '~NativeOpRefSub(); };\n'
+            'struct NativeOpRefMember_thunk_FUN_101ba1b0 { NativeOpRefSub rep;\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0(void *p) : rep() { rep.p = p; }\n'
+            '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n'
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0 m4; void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(param_2) {\n'
+            'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
     }
     out = {}
     for name, (member, definition) in variants.items():
@@ -1052,6 +1114,16 @@ def wiz_state_variants():
         'const RecoveredString_FUN_1008c50b &s2 =\n'
         '    arg != 0 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00();\n'
         's2.endsWith("Page");\n' + tail_end)
+    # constant-folded condition: MSVC may keep the flag machinery while
+    # folding the branch — producing the linear flag=1 + flag-gated funclet
+    out['wiz_const_cond'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'const RecoveredString_FUN_1008c50b &s2 =\n'
+        '    1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00();\n'
+        's2.endsWith("Page");\n' + tail_end)
     # short-circuit second-operand temp
     out['wiz_and_temp'] = (
         prefix +
@@ -1139,7 +1211,7 @@ def event_copier_variants():
         'copier_ref_ptr_arg': (prefix.replace(
             'NativeCopierAggregate_FUN_10deee60(const Event_thunk_FUN_10def0d0 &);',
             'NativeCopierAggregate_FUN_10deee60(const Event_thunk_FUN_10def0d0 &);'
-            ' NativeCopierAggregate_FUN_10deee60(const NativeCopierSource_FUN_10df9440 *);'),
+            ' NativeCopierAggregate_FUN_10deee60(const void *);'),
             head +
             'const NativeCopierSource_FUN_10df9440 &a = NativeCopierSource_FUN_10df9440();\n'
             'NativeCopierAggregate_FUN_10deee60 agg(&a);\n'
