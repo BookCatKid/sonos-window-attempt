@@ -68,6 +68,13 @@ def main():
     evidence={r['entry']:r for r in map(json.loads,(ROOT/'analysis/eh-lifetime-evidence.jsonl').open())}
     roles=[('??1NativePropertyEvent_'+r['entry']+'@@QAE@XZ',r['entry'],2) for r in candidates]
     emit_variant('property_callbacks_temporary',candidates,evidence,roles)
+    variants={
+        'property_callbacks_volatile':library.replace('unsigned int rep;','volatile unsigned int rep;'),
+        'property_callbacks_barrier':library.replace('int_release(); rep=0;', 'int_release(); rep=0; _ReadWriteBarrier();'),
+        'property_callbacks_volatile_no_tree_home':library.replace('unsigned int rep;','volatile unsigned int rep;').replace('FactoryTree * volatile home=this; _ReadWriteBarrier();','_ReadWriteBarrier();'),
+    }
+    for name,variant_library in variants.items():
+        emit_variant(name,[{**r,'abi_declarations':{'property_callback_library':variant_library}} for r in candidates],evidence,roles)
 
 
 if __name__=='__main__':main()

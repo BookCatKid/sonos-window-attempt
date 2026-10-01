@@ -212,11 +212,23 @@
     "directory": "analysis/compiled-cpp-string-property-callbacks"
   },
   {
+    "object": "string_property_callbacks_temporary_reference_flags",
+    "directory": "analysis/compiled-cpp-string-property-callbacks-temporary"
+  },
+  {
     "object": "property_callbacks_temporary_reference_flags",
     "directory": "analysis/compiled-cpp-property-callbacks-temporary"
   },
   {
-    "object": "string_property_callbacks_temporary_reference_flags",
-    "directory": "analysis/compiled-cpp-string-property-callbacks-temporary"
+    "object": "property_callbacks_volatile_reference_flags",
+    "directory": "analysis/compiled-cpp-property-callbacks-volatile"
+  },
+  {
+    "object": "property_callbacks_barrier_reference_flags",
+    "directory": "analysis/compiled-cpp-property-callbacks-barrier"
+  },
+  {
+    "object": "property_callbacks_volatile_no_tree_home_reference_flags",
+    "directory": "analysis/compiled-cpp-property-callbacks-volatile-no-tree-home"
   }
 ]

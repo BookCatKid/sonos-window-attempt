@@ -1,0 +1,100 @@
+[
+  {
+    "symbol": "??1NativePropertyEvent_10e02910@@QAE@XZ",
+    "owner_entry": "10e02910",
+    "state": 2,
+    "call_target": "1007eaaa",
+    "body_entry": "10dfea60"
+  },
+  {
+    "symbol": "??1NativePropertyEvent_10e02a90@@QAE@XZ",
+    "owner_entry": "10e02a90",
+    "state": 2,
+    "call_target": "1006886d",
+    "body_entry": "10dfea70"
+  },
+  {
+    "symbol": "??1NativePropertyEvent_10e02c10@@QAE@XZ",
+    "owner_entry": "10e02c10",
+    "state": 2,
+    "call_target": "1002c79b",
+    "body_entry": "10dfea80"
+  },
+  {
+    "symbol": "??1NativePropertyEvent_10e03040@@QAE@XZ",
+    "owner_entry": "10e03040",
+    "state": 2,
+    "call_target": "1007e1ef",
+    "body_entry": "107ec110"
+  },
+  {
+    "symbol": "??1NativePropertyEvent_10e034d0@@QAE@XZ",
+    "owner_entry": "10e034d0",
+    "state": 2,
+    "call_target": "1007f0f4",
+    "body_entry": "10dfec60"
+  },
+  {
+    "symbol": "??1NativePropertyEvent_10e03610@@QAE@XZ",
+    "owner_entry": "10e03610",
+    "state": 2,
+    "call_target": "1002abda",
+    "body_entry": "10a9bbd0"
+  },
+  {
+    "symbol": "??1NativePropertyEvent_10e03880@@QAE@XZ",
+    "owner_entry": "10e03880",
+    "state": 2,
+    "call_target": "10028aec",
+    "body_entry": "10838890"
+  },
+  {
+    "symbol": "??1NativePropertyEvent_10e03f20@@QAE@XZ",
+    "owner_entry": "10e03f20",
+    "state": 2,
+    "call_target": "10006dcf",
+    "body_entry": "10893940"
+  },
+  {
+    "symbol": "??1NativePropertyEvent_10e04070@@QAE@XZ",
+    "owner_entry": "10e04070",
+    "state": 2,
+    "call_target": "1004209b",
+    "body_entry": "10893950"
+  },
+  {
+    "symbol": "??1NativePropertyEvent_10e04b50@@QAE@XZ",
+    "owner_entry": "10e04b50",
+    "state": 2,
+    "call_target": "10097fd7",
+    "body_entry": "10dff230"
+  },
+  {
+    "symbol": "??1NativePropertyEvent_10e058e0@@QAE@XZ",
+    "owner_entry": "10e058e0",
+    "state": 2,
+    "call_target": "10010edd",
+    "body_entry": "10a9bbe0"
+  },
+  {
+    "symbol": "??1NativePropertyEvent_10e05e00@@QAE@XZ",
+    "owner_entry": "10e05e00",
+    "state": 2,
+    "call_target": "1005be7e",
+    "body_entry": "10908520"
+  },
+  {
+    "symbol": "??1NativePropertyEvent_10e06030@@QAE@XZ",
+    "owner_entry": "10e06030",
+    "state": 2,
+    "call_target": "1007bc47",
+    "body_entry": "10600270"
+  },
+  {
+    "symbol": "??1NativePropertyEvent_10e06830@@QAE@XZ",
+    "owner_entry": "10e06830",
+    "state": 2,
+    "call_target": "10082321",
+    "body_entry": "108388a0"
+  }
+]
