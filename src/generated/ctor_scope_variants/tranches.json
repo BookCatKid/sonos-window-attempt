@@ -96,6 +96,10 @@
     "directory": "analysis/ctor-scope-op-ref-m4-argtemp"
   },
   {
+    "object": "op_ref_m4_union_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-union"
+  },
+  {
     "object": "op_ref_m4_nsdmi_reference_flags",
     "directory": "analysis/ctor-scope-op-ref-m4-nsdmi"
   },
@@ -232,6 +236,22 @@
     "directory": "analysis/ctor-scope-named-event-holder"
   },
   {
+    "object": "named_event_buf_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-buf"
+  },
+  {
+    "object": "named_event_pe_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-pe"
+  },
+  {
+    "object": "named_event_commadecl_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-commadecl"
+  },
+  {
+    "object": "named_event_tracked_place_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-tracked-place"
+  },
+  {
     "object": "wiz_temp_current_reference_flags",
     "directory": "analysis/ctor-scope-wiz-temp-current"
   },
@@ -274,6 +294,22 @@
   {
     "object": "wiz_byval_assign_reference_flags",
     "directory": "analysis/ctor-scope-wiz-byval-assign"
+  },
+  {
+    "object": "wiz_ref_outslot_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-ref-outslot"
+  },
+  {
+    "object": "wiz_place_ref_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-place-ref"
+  },
+  {
+    "object": "wiz_cond_temp_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-cond-temp"
+  },
+  {
+    "object": "wiz_and_temp_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-and-temp"
   },
   {
     "object": "copier_named_reference_flags",

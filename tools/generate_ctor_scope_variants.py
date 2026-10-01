@@ -319,6 +319,18 @@ def op_ref_variants():
             '    : m4(NativeOpRefArg(param_2).v) {\n'
             'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
             f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # m4 inside an anonymous union: union-member inits lower through
+        # placement-style tracking — MSVC materializes the member address and
+        # the funclet reads the spilled address bare
+        'op_ref_m4_union': (
+            m4_inline +
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'union { NativeOpRefMember_thunk_FUN_101ba1b0 m4; };\n'
+            'void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(param_2) {\nif (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
         # NSDMI: `M4 m4 = M4()` default member init in-class — the ctor body
         # then assigns rep; the NSDMI scope may keep its materialized address
         'op_ref_m4_nsdmi': (
@@ -668,6 +680,33 @@ def named_event_variants():
             'struct NativeEventHolder { NativeNamedEvent_FUN_10df9440 event; };\n',
             'NativeEventHolder holder;\n'
             'NativeNamedEvent_FUN_10df9440 *pe = &holder.event;\n'),
+        # raw byte buffer + placement new + frame-addressed explicit dtor:
+        # the placement call runs unprotected (buffer untracked), pe binds
+        # esi=eax, and ((T*)buf)->~T() rematerializes lea ecx,[ebp-0x28]
+        'named_event_buf': (
+            ctor_decl,
+            'char ebuf[24];\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = (NativeNamedEvent_FUN_10df9440 *)\n'
+            '    new (ebuf) NativeNamedEvent_FUN_10df9440();\n'),
+        # plain local + separate pointer: the simplest model — ctor at state
+        # -1, arm after, and MSVC may bind pe to the ctor's eax result
+        'named_event_pe': (
+            ctor_decl,
+            'NativeNamedEvent_FUN_10df9440 event;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = &event;\n'),
+        # same-declaration pointer: `Event event, *pe = &event` — the ctor's
+        # eax return is live when pe initializes, so MSVC can reuse it
+        'named_event_commadecl': (
+            ctor_decl,
+            'NativeNamedEvent_FUN_10df9440 event, *pe = &event;\n'),
+        # placement-new on a TRACKED same-type local: new(&event) discards the
+        # implicit-init path so the placement call runs unprotected, eax binds
+        # pe, and the object stays tracked for the unwind map
+        'named_event_tracked_place': (
+            ctor_decl,
+            'NativeNamedEvent_FUN_10df9440 event;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = (NativeNamedEvent_FUN_10df9440 *)\n'
+            '    new (&event) NativeNamedEvent_FUN_10df9440();\n'),
     }
     out = {}
     for name, (decl, opening) in variants.items():
@@ -839,6 +878,43 @@ def wiz_state_variants():
                             'thunk_FUN_106de0c0(&name, (void *)arg.rep)') +
         'arg = thunk_FUN_106dfa00();\n'
         'arg.endsWith("Page");\n' + tail_end)
+    # ref bound to callee-constructed storage in the param slot: the ref's
+    # referent is flag-tracked because MSVC cannot prove the callee wrote it
+    out['wiz_ref_outslot'] = (
+        prefix.replace(old_klass, sret_type + klass) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'NativeWizSret &s2 = *thunk_FUN_106dfa00((NativeWizSret *)&arg);\n'
+        's2.endsWith("Page");\n'
+        's2.~NativeWizSret();\n' + tail_end)
+    # placement-new result bound to ref in the param slot: ref-bound
+    # placement objects are flag-tracked (construction committed by callee)
+    out['wiz_place_ref'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'RecoveredString_FUN_1008c50b &s2 = *new (&arg) '
+        'RecoveredString_FUN_1008c50b(thunk_FUN_106dfa00());\n'
+        's2.endsWith("Page");\n' + tail_end)
+    # conditional-expression temp: both arms sret into the same slot and
+    # MSVC flag-marks which constructed — the classic flag-word producer
+    out['wiz_cond_temp'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'const RecoveredString_FUN_1008c50b &s2 =\n'
+        '    arg != 0 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00();\n'
+        's2.endsWith("Page");\n' + tail_end)
+    # short-circuit second-operand temp
+    out['wiz_and_temp'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'arg != 0 && thunk_FUN_106dfa00().endsWith("Page");\n' + tail_end)
     return out
 
 
