@@ -325,11 +325,11 @@ def main():
             continue
         if c['fallback_low'] not in seen_members:
             seen_members.add(c['fallback_low'])
-            library += (f'struct {c["fallback_low"]} {{ unsigned int fields[3]; '
+            library += (f'struct {c["fallback_low"]} {{ void *begin_,*end_,*cap_; '
                         f'~{c["fallback_low"]}() noexcept; }};\n')
         if c['fallback_high'] not in seen_members:
             seen_members.add(c['fallback_high'])
-            library += (f'struct {c["fallback_high"]} {{ unsigned int fields[3]; '
+            library += (f'struct {c["fallback_high"]} {{ void *begin_,*end_,*cap_; '
                         f'~{c["fallback_high"]}() noexcept; }};\n')
         if c['fallback_class'] in seen_members:
             continue
