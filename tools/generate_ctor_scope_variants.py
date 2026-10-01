@@ -828,6 +828,46 @@ def op_impl_variants():
                  '    : NativeOpImpl_FUN_10687e80_vt(this), m14(param_2),'
                  ' f24(1000), f20(0), f28(0), f2c(0), f40(0), f44(0) {}')
     variants['op_impl_tail_initlist'] = (initlist, None, init_body)
+    # f38 store-shape probes: native emits xorps+movq (an 8-byte integer store
+    # through xmm0) plus one trailing dword at +0x3c. Try forms that push the
+    # u64 member-init through SSE instead of splitting into dword pairs.
+    f38_struct = nestedrep_decls.replace(
+        'union NativeOpF38 { unsigned __int64 q; struct { unsigned int lo; unsigned int hi; } w; };',
+        'struct NativeOpF38 { void *lo; void *hi;\n'
+        '    NativeOpF38() : lo(0), hi(0) {} };').replace(
+        'void *f20; unsigned short f24; void *f28; void *f2c;\n'
+        'NativeOpM30 m30; NativeOpF38 f38; void *f40; void *f44;',
+        'void *f20 = 0; unsigned short f24 = 1000; void *f28 = 0; void *f2c = 0;\n'
+        'NativeOpM30 m30; NativeOpF38 f38; void *f40 = 0; void *f44 = 0;')
+    hi_body = ('NativeOpImpl_FUN_10687e80::NativeOpImpl_FUN_10687e80(void *param_2)\n'
+               '    : NativeOpImpl_FUN_10687e80_vt(this), m14(param_2) { f38.hi = 0; }')
+    variants['op_impl_f38_struct'] = (f38_struct, None, hi_body)
+    # u64 member-init inside the union ctor: member-init scalar stores are
+    # the form MSVC most readily materializes through SSE
+    f38_uctor = nestedrep_decls.replace(
+        'union NativeOpF38 { unsigned __int64 q; struct { unsigned int lo; unsigned int hi; } w; };',
+        'union NativeOpF38 { unsigned __int64 q; struct { unsigned int lo; unsigned int hi; } w;\n'
+        '    NativeOpF38() : q(0) {} };').replace(
+        'void *f20; unsigned short f24; void *f28; void *f2c;\n'
+        'NativeOpM30 m30; NativeOpF38 f38; void *f40; void *f44;',
+        'void *f20 = 0; unsigned short f24 = 1000; void *f28 = 0; void *f2c = 0;\n'
+        'NativeOpM30 m30; NativeOpF38 f38; void *f40 = 0; void *f44 = 0;')
+    whi_body = ('NativeOpImpl_FUN_10687e80::NativeOpImpl_FUN_10687e80(void *param_2)\n'
+                '    : NativeOpImpl_FUN_10687e80_vt(this), m14(param_2) { f38.w.hi = 0; }')
+    variants['op_impl_f38_uctor'] = (f38_uctor, None, whi_body)
+    # plain __int64 member at +0x38, unioned against an aliased dword member is
+    # impossible, so test whether the +0x3c dword is a separate re-store: f38 is
+    # a struct pair whose second field is re-assigned in the body
+    f38_pair = nestedrep_decls.replace(
+        'union NativeOpF38 { unsigned __int64 q; struct { unsigned int lo; unsigned int hi; } w; };',
+        'struct NativeOpF38 { unsigned int lo; unsigned int hi; };').replace(
+        'void *f20; unsigned short f24; void *f28; void *f2c;\n'
+        'NativeOpM30 m30; NativeOpF38 f38; void *f40; void *f44;',
+        'void *f20 = 0; unsigned short f24 = 1000; void *f28 = 0; void *f2c = 0;\n'
+        'NativeOpM30 m30; NativeOpF38 f38 = {}; void *f40 = 0; void *f44 = 0;')
+    f38_pair_body = ('NativeOpImpl_FUN_10687e80::NativeOpImpl_FUN_10687e80(void *param_2)\n'
+                     '    : NativeOpImpl_FUN_10687e80_vt(this), m14(param_2) { f38.hi = 0; }')
+    variants['op_impl_f38_pair'] = (f38_pair, None, f38_pair_body)
     header = ('// Constructor-scope hypothesis variants for entry 10687e80.\n'
               'inline void *operator new(unsigned int, void *receiver) noexcept { return receiver; }\n')
     out = {}

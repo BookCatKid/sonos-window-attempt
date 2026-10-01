@@ -268,6 +268,18 @@
     "directory": "analysis/ctor-scope-op-impl-tail-initlist"
   },
   {
+    "object": "op_impl_f38_struct_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-f38-struct"
+  },
+  {
+    "object": "op_impl_f38_uctor_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-f38-uctor"
+  },
+  {
+    "object": "op_impl_f38_pair_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-f38-pair"
+  },
+  {
     "object": "named_event_memberinit_reference_flags",
     "directory": "analysis/ctor-scope-named-event-memberinit"
   },
