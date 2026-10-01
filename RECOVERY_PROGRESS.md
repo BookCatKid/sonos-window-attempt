@@ -502,3 +502,50 @@ Authoritative recovery remains 165,761 exact bodies / 1,780,264 executable bytes
 (6.958867%), with 11,645,628 compiler-produced bytes physically placed. The full
 DLL is still not byte-identical. Typed pseudocode and compiling hypotheses do
 not increase these counts.
+
+
+## Exact derived event callbacks (2026-09-30)
+
+The typed Ghidra corpus exposes 11 straight-line dispatch callbacks, including
+four whose unused stack word is absent from the decompiled header. Native RET
+cleanup establishes the genuine C++ member parameters. Each callback constructs
+a distinct 24-byte derived event; its separate destructor identity is required
+for the native unwind action, while normal cleanup calls the common base dtor.
+
+`tools/compile_event_factories.py` emits these C++ members and per-event classes.
+`tools/verify_eh_placement.py` verifies auxiliary identities through a specific
+native FuncInfo state, frame-relative unwind jump, and linker jump to the helper
+body. Every defined helper body and its relocations still require complete byte
+identity. Incorrect helper addresses, states, call operands, owners, and altered
+linker jumps are rejected by six new tests. The prior ninety constructors remain
+exact with zero unresolved relocations; forty-six tests pass. CodeRabbit reports
+zero findings in the completed generator/verifier reviews.
+
+Pinned run 36794110579 matches all 11 callbacks / 2,098 reference bytes, with all
+11 EH graphs accepted and zero unresolved relocations. Only this positive batch
+enters the default recovery manifest. Audit
+`analysis/recovery-msvc-event-callbacks-derived/coverage-audit.json` records
+165,772 bodies / 1,782,362 executable bytes / 6.967067% coverage.
+
+`analysis/linked-placement-event-callbacks/recovery-layout.dll` has SHA-256
+`cc5d2dc86fbaca3742d9a5e4b0e26ee93d1415a9641c979223941700f34cfc9f`.
+It places 11,648,221 proven compiler bytes (31.351365% file coverage), including
+1,956,573 executable bytes. The increase is 2,593 bytes: 2,098 callback bytes and
+495 new EH-helper bytes. All six non-executable sections remain 100% identical.
+The independent full-file gate matches size but FAILS identity, with 13,863,779
+aligned matches / 37.3146%; unbuilt zero-fill contributes coincidental matches.
+The regenerated relocation directory has 1,077,680 bytes and is incomplete.
+
+Factory experiments remain separate from the default manifest. Their derived
+helper identities now give complete EH proofs for the 315-byte variants. An
+extern-template key produces the correct 308-byte body and matching fixed
+instructions, but its locally emitted unwind destructor differs, so neither
+factory is admitted. Four standalone derived destructor bridges match their
+five-byte bodies; they were already covered and add no distinct bytes.
+
+Next work should restore property-bag virtual setter prototypes at offsets 0x1c
+and 0x28 in the isolated project. The remaining 247-byte callbacks lose their
+forwarded value arguments there. Recover native stack cleanup alongside those
+prototypes, then emit genuine derived event values and scoped property keys.
+Linker alignment/reservation padding is another candidate for independently
+verified compiler/linker coverage. Full-file identity remains the objective.

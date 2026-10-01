@@ -116,8 +116,8 @@ No reference application is executed and no original Ghidra project is modified.
 
 ## Physical PE placement and C++ data recovery
 
-The partial PE places all 165,761 proven function bodies and accepted compiler
-EH/literal fragments at reference offsets. Its `.text` has 1,953,980 verified
+The partial PE places all 165,772 proven function bodies and accepted compiler
+EH/literal fragments at reference offsets. Its `.text` has 1,956,573 verified
 compiler bytes, including EH helpers. A conflicting overlap, unresolved fixup,
 or mismatched marked byte aborts. Unknown regions remain empty and are reported.
 
@@ -128,10 +128,10 @@ as data input. All 74 full-data objects / 9,691,648 bytes compile and pass final
 byte/fixup proofs under pinned MSVC in
 [run 36680111341](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36680111341).
 
-`analysis/linked-placement-bulk-stack-arity/recovery-layout.dll` has six byte-identical
+`analysis/linked-placement-event-callbacks/recovery-layout.dll` has six byte-identical
 sections: `.rdata`, `.data`, `.idata`, `.tls`, `.00cfg`, and `.rsrc`. It contains
-11,645,628 proven compiler bytes (31.344386% of the file). The independent
-full-file comparator scores 37.3076%, including coincidental empty-region zero
+11,648,221 proven compiler bytes (31.351365% of the file). The independent
+full-file comparator scores 37.3146%, including coincidental empty-region zero
 matches, and **fails the 100% gate**. The image lacks an entry point and
 import/export header directories; its base relocations are incomplete. It is a
 placement artifact, not a usable or complete DLL. No reference instructions are
@@ -142,12 +142,13 @@ Reproduce the current placement using the pinned artifacts available locally:
 ```sh
 python3 tools/compile_recovered_data.py --tag full
 python3 tools/link_recovery_image.py \
-  --artifact-dirs ci-output/run-36690135114 ci-output/run-36687349560 \
+  --artifact-dirs ci-output/run-36794110579 ci-output/run-36690135114 \
+    ci-output/run-36687349560 \
     ci-output/run-36680111341 \
     ci-output/run-36661659252 \
     analysis/msvc-14-28-x86-objects-5490d21-run36626235420 \
-  --include-flag-sweep --output-dir analysis/linked-placement-bulk-stack-arity
-python3 tools/compare.py analysis/linked-placement-bulk-stack-arity/recovery-layout.dll
+  --include-flag-sweep --output-dir analysis/linked-placement-event-callbacks
+python3 tools/compare.py analysis/linked-placement-event-callbacks/recovery-layout.dll
 ```
 
 Generation alone is a local Clang syntax/COFF experiment. Placement requires
@@ -307,3 +308,50 @@ Authoritative recovery remains 165,761 exact bodies / 1,780,264 executable bytes
 (6.958867%), with 11,645,628 compiler-produced bytes physically placed. The full
 DLL is still not byte-identical. Typed pseudocode and compiling hypotheses do
 not increase these counts.
+
+
+## Exact derived event callbacks (2026-09-30)
+
+The typed Ghidra corpus exposes 11 straight-line dispatch callbacks, including
+four whose unused stack word is absent from the decompiled header. Native RET
+cleanup establishes the genuine C++ member parameters. Each callback constructs
+a distinct 24-byte derived event; its separate destructor identity is required
+for the native unwind action, while normal cleanup calls the common base dtor.
+
+`tools/compile_event_factories.py` emits these C++ members and per-event classes.
+`tools/verify_eh_placement.py` verifies auxiliary identities through a specific
+native FuncInfo state, frame-relative unwind jump, and linker jump to the helper
+body. Every defined helper body and its relocations still require complete byte
+identity. Incorrect helper addresses, states, call operands, owners, and altered
+linker jumps are rejected by six new tests. The prior ninety constructors remain
+exact with zero unresolved relocations; forty-six tests pass. CodeRabbit reports
+zero findings in the completed generator/verifier reviews.
+
+Pinned run 36794110579 matches all 11 callbacks / 2,098 reference bytes, with all
+11 EH graphs accepted and zero unresolved relocations. Only this positive batch
+enters the default recovery manifest. Audit
+`analysis/recovery-msvc-event-callbacks-derived/coverage-audit.json` records
+165,772 bodies / 1,782,362 executable bytes / 6.967067% coverage.
+
+`analysis/linked-placement-event-callbacks/recovery-layout.dll` has SHA-256
+`cc5d2dc86fbaca3742d9a5e4b0e26ee93d1415a9641c979223941700f34cfc9f`.
+It places 11,648,221 proven compiler bytes (31.351365% file coverage), including
+1,956,573 executable bytes. The increase is 2,593 bytes: 2,098 callback bytes and
+495 new EH-helper bytes. All six non-executable sections remain 100% identical.
+The independent full-file gate matches size but FAILS identity, with 13,863,779
+aligned matches / 37.3146%; unbuilt zero-fill contributes coincidental matches.
+The regenerated relocation directory has 1,077,680 bytes and is incomplete.
+
+Factory experiments remain separate from the default manifest. Their derived
+helper identities now give complete EH proofs for the 315-byte variants. An
+extern-template key produces the correct 308-byte body and matching fixed
+instructions, but its locally emitted unwind destructor differs, so neither
+factory is admitted. Four standalone derived destructor bridges match their
+five-byte bodies; they were already covered and add no distinct bytes.
+
+Next work should restore property-bag virtual setter prototypes at offsets 0x1c
+and 0x28 in the isolated project. The remaining 247-byte callbacks lose their
+forwarded value arguments there. Recover native stack cleanup alongside those
+prototypes, then emit genuine derived event values and scoped property keys.
+Linker alignment/reservation padding is another candidate for independently
+verified compiler/linker coverage. Full-file identity remains the objective.

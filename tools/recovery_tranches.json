@@ -382,5 +382,9 @@
   {
     "object": "thunk_members_stack_arity_reference_flags",
     "directory": "analysis/compiled-cpp-thunk-members-stack-arity"
+  },
+  {
+    "object": "event_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-event-callbacks"
   }
 ]
