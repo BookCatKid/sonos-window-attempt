@@ -270,5 +270,9 @@
   {
     "object": "query_interface_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-query-interface-callbacks"
+  },
+  {
+    "object": "refcount_release_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-refcount-release-callbacks"
   }
 ]
