@@ -76,6 +76,30 @@
     "directory": "analysis/ctor-scope-op-ref-m4-base"
   },
   {
+    "object": "op_ref_m4_vbase_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-vbase"
+  },
+  {
+    "object": "op_ref_m4_delegate_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-delegate"
+  },
+  {
+    "object": "op_ref_m4_functry_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-functry"
+  },
+  {
+    "object": "op_ref_m4_two_members_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-two-members"
+  },
+  {
+    "object": "op_ref_m4_argtemp_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-argtemp"
+  },
+  {
+    "object": "op_ref_m4_nsdmi_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-nsdmi"
+  },
+  {
     "object": "op_impl_control_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-control"
   },

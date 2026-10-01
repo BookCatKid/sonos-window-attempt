@@ -260,6 +260,78 @@ def op_ref_variants():
             '    : NativeOpRefMember_thunk_FUN_101ba1b0(param_2) {\n'
             'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
             f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # K has a virtual base: member tracking routes through the vbtable so
+        # member addresses are materialized into the frame — the funclet can
+        # no longer assume this+off and reads the spilled address bare
+        'op_ref_m4_vbase': (
+            'struct NativeOpRefVBase { void *vb; NativeOpRefVBase();\n'
+            '~NativeOpRefVBase(); };\n' +
+            m4_inline +
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70,'
+            ' virtual NativeOpRefVBase {\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0 m4; void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(param_2) {\nif (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # delegating ctor: the delegate target's member tracking uses the
+        # construction-this slot which the body then repoints for its stores
+        'op_ref_m4_delegate': (
+            m4_inline + klass.replace(
+                'NativeOpRefCtor_FUN_10687d70(void *param_2);',
+                'NativeOpRefCtor_FUN_10687d70();\n'
+                'NativeOpRefCtor_FUN_10687d70(void *param_2);'),
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70()\n'
+            '    : m4(0) {\nf8 = 0;\nvptr = (void *)&DAT_' + vtable + ';\n}\n'
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : NativeOpRefCtor_FUN_10687d70() {\nm4.rep = param_2;\n'
+            'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n}\n'),
+        # function-try-block ctor: member-init runs inside a try region whose
+        # funclet destroys via the materialized member address
+        'op_ref_m4_functry': (
+            m4_inline + klass,
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    try : m4(param_2) {\nif (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}} catch (...) {{ throw; }}\n'),
+        # a second tracked member BEFORE m4: MSVC may switch to construction-
+        # this tracking once multiple member scopes exist in one ctor
+        'op_ref_m4_two_members': (
+            m4_inline +
+            'struct NativeOpRefM0 { void *x; NativeOpRefM0();\n~NativeOpRefM0(); };\n'
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'NativeOpRefM0 m0; NativeOpRefMember_thunk_FUN_101ba1b0 m4; void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m0(), m4(param_2) {\nif (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # member-init arg is a throwing temp: MSVC materializes &m4 before the
+        # arg evaluation, spilling the construction target into the frame
+        'op_ref_m4_argtemp': (
+            'struct NativeOpRefMember_thunk_FUN_101ba1b0 { void *rep;\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0(void *p) { rep = p; }\n'
+            '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n'
+            'struct NativeOpRefArg { void *v; NativeOpRefArg(void *p) : v(p) {}\n'
+            '~NativeOpRefArg(); };\n'
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0 m4; void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(NativeOpRefArg(param_2).v) {\n'
+            'if (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # NSDMI: `M4 m4 = M4()` default member init in-class — the ctor body
+        # then assigns rep; the NSDMI scope may keep its materialized address
+        'op_ref_m4_nsdmi': (
+            'struct NativeOpRefMember_thunk_FUN_101ba1b0 { void *rep;\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0() { rep = 0; }\n'
+            '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n'
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0 m4 = '
+            'NativeOpRefMember_thunk_FUN_101ba1b0();\n'
+            'void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            + ctor_tail),
     }
     out = {}
     for name, (member, definition) in variants.items():
