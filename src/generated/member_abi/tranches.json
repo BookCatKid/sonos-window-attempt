@@ -296,10 +296,6 @@
     "directory": "analysis/compiled-cpp-page-factories"
   },
   {
-    "object": "delayed_event_callbacks_reference_flags",
-    "directory": "analysis/compiled-cpp-delayed-event-callbacks"
-  },
-  {
     "object": "named_event_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-named-event-callbacks"
   },
@@ -308,11 +304,15 @@
     "directory": "analysis/compiled-cpp-op-impl-dtors"
   },
   {
-    "object": "event_copier_callbacks_reference_flags",
-    "directory": "analysis/compiled-cpp-event-copier-callbacks"
-  },
-  {
     "object": "wiz_state_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-wiz-state-callbacks"
+  },
+  {
+    "object": "delayed_event_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-delayed-event-callbacks"
+  },
+  {
+    "object": "event_copier_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-event-copier-callbacks"
   }
 ]

@@ -114,10 +114,9 @@ def lower_fallback(record, instructions, calls):
     if chained:
         chain_result = f'NativeChainResult_FUN_{calls[5]:08x}'
         action += f' thunk_FUN_{calls[4]:08x}()->thunk_FUN_{calls[5]:08x}();'
-    reload = '(*(NativeDelayedDispatcher * volatile *)&dispatcher)'
     source = (f'void NativeDelayedCallback::FUN_{entry}(NativeDelayedDispatcher *dispatcher) {{\n'
-              f'if ({reload}->thunk_FUN_10def450({event}())) {{ {action} return; }}\n'
-              f'if ({reload}->thunk_FUN_10def490({fallback_class}())) {{\n'
+              f'if (dispatcher->thunk_FUN_10def450({event}())) {{ {action} return; }}\n'
+              f'if (dispatcher->thunk_FUN_10def490({fallback_class}())) {{\n'
               f'((NativeFallbackResult_{offset:x} *)thunk_FUN_10eb41b0())->flag = 1;\n}}\n}}\n')
     candidate = {**record, 'source': source, 'event_class': event,
                  'constructor': f'{constructor:08x}',
