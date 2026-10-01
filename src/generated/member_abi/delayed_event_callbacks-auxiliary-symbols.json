@@ -1,0 +1,16 @@
+[
+  {
+    "symbol": "??1NativeDelayedEvent_FUN_10dfbb10@@QAE@XZ",
+    "owner_entry": "1076bef0",
+    "state": 0,
+    "call_target": "10026832",
+    "body_entry": "10600290"
+  },
+  {
+    "symbol": "??1NativeDelayedEvent_FUN_10dfda60@@QAE@XZ",
+    "owner_entry": "10644850",
+    "state": 0,
+    "call_target": "1006cfc6",
+    "body_entry": "105a8900"
+  }
+]

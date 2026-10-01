@@ -246,5 +246,9 @@
   {
     "object": "external_event_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-external-event-callbacks"
+  },
+  {
+    "object": "delayed_event_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-delayed-event-callbacks"
   }
 ]
