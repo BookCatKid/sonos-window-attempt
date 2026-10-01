@@ -1,4 +1,5 @@
 // Constructor-scope hypothesis variants for entry 10687e80.
+inline void *operator new(unsigned int, void *receiver) noexcept { return receiver; }
 extern unsigned int DAT_1188206c;
 extern unsigned int DAT_1188207c;
 extern unsigned int DAT_118820e4;

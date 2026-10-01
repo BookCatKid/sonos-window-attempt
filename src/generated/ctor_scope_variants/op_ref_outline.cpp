@@ -1,3 +1,4 @@
+inline void *operator new(unsigned int, void *receiver) noexcept { return receiver; }
 extern unsigned int DAT_1188207c;
 extern unsigned int DAT_118c62f8;
 void __cdecl thunk_FUN_1123fce0(void *);

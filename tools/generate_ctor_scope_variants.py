@@ -321,15 +321,33 @@ def named_event_variants():
             'NativeEventBuf() {} ~NativeEventBuf() {} } u;\n'
             'NativeNamedEvent_FUN_10df9440 *pe = (NativeNamedEvent_FUN_10df9440 *)\n'
             '    new (&u.e) NativeNamedEvent_FUN_10df9440();\n'),
+        # const-ref bound temporary: MSVC materializes the temp through the
+        # ctor's eax result (mov esi,eax) and the temp stays EH-tracked so
+        # the state0 funclet destroys [ebp-0x28]
+        'named_event_ref_temp': (
+            ctor_decl,
+            'const NativeNamedEvent_FUN_10df9440 &event = '
+            'NativeNamedEvent_FUN_10df9440();\n'),
+        # rvalue-ref bound temp variant
+        'named_event_rref_temp': (
+            ctor_decl,
+            'NativeNamedEvent_FUN_10df9440 &&event = '
+            'NativeNamedEvent_FUN_10df9440();\n'),
     }
     out = {}
     for name, (decl, opening) in variants.items():
         library = prefix.replace(ctor_decl, decl, 1)
-        out[name] = (library +
-                     '\n// Reference entry 10e026f0; body size 149 bytes.\n'
-                     '#line 1 "ENTRY_10e026f0"\n'
-                     'void NativeNamedEventCallback::FUN_10e026f0(unsigned int arg) {\n'
-                     + opening + tail)
+        src = (library +
+               '\n// Reference entry 10e026f0; body size 149 bytes.\n'
+               '#line 1 "ENTRY_10e026f0"\n'
+               'void NativeNamedEventCallback::FUN_10e026f0(unsigned int arg) {\n'
+               + opening + tail)
+        if name.endswith('_temp'):
+            src = (src.replace('pe->representation', 'event.representation')
+                   .replace('thunk_FUN_10df15a0(pe)',
+                            'thunk_FUN_10df15a0('
+                            '(NativeNamedEvent_FUN_10df9440 *)&event)'))
+        out[name] = src
         if name == 'named_event_placement_union':
             out[name] = out[name].replace(
                 '->thunk_FUN_10df15a0(pe);\n}\n',
@@ -373,6 +391,26 @@ def wiz_state_variants():
                      '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
                      '#line 1 "ENTRY_1061e8b0"\n'
                      + source_marker + '\n' + body + tail_end)
+    # out-param construction: s2 is uninitialized at decl, helper constructs
+    # into &s2 and MSVC emits the construction flag plus flag-gated funclet;
+    # thunk_FUN_106dfa00 becomes a member taking an out pointer
+    sret_type = ('struct NativeWizSret { unsigned int rep;\n'
+                 '~NativeWizSret() noexcept { ((SCStr *)this)->int_release(); rep = 0; }\n'
+                 'bool endsWith(const char *suffix) const; };\n')
+    old_klass = ('struct NativeWizState_FUN_1061e8b0 : NativeWizDtorBase_thunk_FUN_106de7d0 { void *vftable; ~NativeWizState_FUN_1061e8b0();\n'
+                 'void thunk_FUN_106de0c0(RecoveredString_FUN_1008c50b *, void *);\n'
+                 'RecoveredString_FUN_1008c50b thunk_FUN_106dfa00();\n'
+                 'NativeWizState_FUN_1061e8b0(void *); };\n')
+    klass = old_klass.replace('RecoveredString_FUN_1008c50b thunk_FUN_106dfa00();',
+                              'NativeWizSret *thunk_FUN_106dfa00(NativeWizSret *);')
+    assert old_klass in prefix
+    out['wiz_outparam'] = (
+        prefix.replace(old_klass, sret_type + klass) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'NativeWizSret s2;\n'
+        'thunk_FUN_106dfa00(&s2)->endsWith("Page");\n' + tail_end)
     return out
 
 

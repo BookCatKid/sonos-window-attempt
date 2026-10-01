@@ -40,6 +40,10 @@
     "directory": "analysis/ctor-scope-op-ref-m4-decl-store"
   },
   {
+    "object": "op_ref_m4_place_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-place"
+  },
+  {
     "object": "op_impl_control_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-control"
   },
@@ -84,6 +88,10 @@
     "directory": "analysis/ctor-scope-op-impl-smart-decl-empty"
   },
   {
+    "object": "op_impl_smart_place_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-smart-place"
+  },
+  {
     "object": "named_event_memberinit_reference_flags",
     "directory": "analysis/ctor-scope-named-event-memberinit"
   },
@@ -94,6 +102,14 @@
   {
     "object": "named_event_placement_union_reference_flags",
     "directory": "analysis/ctor-scope-named-event-placement-union"
+  },
+  {
+    "object": "named_event_ref_temp_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-ref-temp"
+  },
+  {
+    "object": "named_event_rref_temp_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-rref-temp"
   },
   {
     "object": "wiz_temp_current_reference_flags",
@@ -110,6 +126,10 @@
   {
     "object": "wiz_if_temp_reference_flags",
     "directory": "analysis/ctor-scope-wiz-if-temp"
+  },
+  {
+    "object": "wiz_outparam_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-outparam"
   },
   {
     "object": "copier_named_reference_flags",
