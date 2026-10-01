@@ -130,7 +130,7 @@ static_assert(sizeof(FactoryTree)==8,"Two-word outgoing container");
 static_assert(sizeof(FactoryTreeNode)==28,"Sentinel node");
 static_assert(sizeof(Event_thunk_FUN_10def0d0)==24,"Event value");
 struct NativeCopierOutput;
-struct NativeCopierAggregate_FUN_10deee60 { EventCopy_thunk_FUN_10deea50 fields; unsigned int extra; NativeCopierAggregate_FUN_10deee60(const Event_thunk_FUN_10def0d0 &); ~NativeCopierAggregate_FUN_10deee60() noexcept; };
+struct NativeCopierAggregate_FUN_10deee60 { EventCopy_thunk_FUN_10deea50 fields; unsigned int extra; NativeCopierAggregate_FUN_10deee60(const Event_thunk_FUN_10def0d0 &); NativeCopierAggregate_FUN_10deee60(const NativeCopierSource_FUN_10df9440 *); ~NativeCopierAggregate_FUN_10deee60() noexcept; };
 struct NativeCopierSource_FUN_10df9440 : Event_thunk_FUN_10def0d0 { NativeCopierSource_FUN_10df9440(); };
 struct NativeCopierSource_FUN_10df9690 : Event_thunk_FUN_10def0d0 { NativeCopierSource_FUN_10df9690(); };
 struct NativeCopierSource_FUN_10df9a80 : Event_thunk_FUN_10def0d0 { NativeCopierSource_FUN_10df9a80(); };

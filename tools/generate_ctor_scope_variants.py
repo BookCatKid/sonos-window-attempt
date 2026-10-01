@@ -821,18 +821,23 @@ def event_copier_variants():
             'return this;\n'),
         # ref-bound temp whose ADDRESS feeds a pointer-param agg ctor: the
         # ref binds to the ctor-result register so &a can reuse eax
-        'copier_ref_ptr_arg': head.replace(
+        'copier_ref_ptr_arg': (prefix.replace(
             'NativeCopierAggregate_FUN_10deee60(const Event_thunk_FUN_10def0d0 &);',
             'NativeCopierAggregate_FUN_10deee60(const Event_thunk_FUN_10def0d0 &);'
-            ' NativeCopierAggregate_FUN_10deee60(const NativeCopierSource_FUN_10df9440 *);') + (
+            ' NativeCopierAggregate_FUN_10deee60(const NativeCopierSource_FUN_10df9440 *);'),
+            head +
             'const NativeCopierSource_FUN_10df9440 &a = NativeCopierSource_FUN_10df9440();\n'
             'NativeCopierAggregate_FUN_10deee60 agg(&a);\n'
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this, agg);\n'
             'return this;\n'),
     }
     out = {}
-    for name, body in variants.items():
-        out[name] = (prefix +
+    for name, spec in variants.items():
+        if isinstance(spec, tuple):
+            pfx, body = spec
+        else:
+            pfx, body = prefix, spec
+        out[name] = (pfx +
                      '\n// Reference entry 10df9390; body size 137 bytes.\n'
                      '#line 1 "ENTRY_10df9390"\n' + sig + '\n' + body + '}\n')
     return out
