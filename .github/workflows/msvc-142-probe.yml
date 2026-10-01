@@ -15,6 +15,14 @@ on:
         description: Also rebuild packed non-executable data during a focused probe
         type: boolean
         default: false
+      build_experiments:
+        description: Run real LINK layout and upstream C library experiments
+        type: boolean
+        default: false
+      persistent_worker:
+        description: Use a registered Windows x64 worker labelled sonos-msvc142
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -26,7 +34,7 @@ on:
 
 jobs:
   compile:
-    runs-on: windows-2022
+    runs-on: ${{ github.event.inputs.persistent_worker == 'true' && fromJSON('["self-hosted","Windows","X64","sonos-msvc142"]') || fromJSON('["windows-2022"]') }}
     timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
@@ -43,6 +51,10 @@ jobs:
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
+          if (Test-Path 'C:\VS2019BuildTools\VC\Auxiliary\Build\vcvarsall.bat') {
+            Write-Output 'Using existing Build Tools installation; experiments verify the compiler version.'
+            exit 0
+          }
           # 16.9.10 BuildTools link from Microsoft's VS 2019 release history.
           $uri = 'https://download.visualstudio.microsoft.com/download/pr/3daa9785-bfd4-4cb1-bdc3-6d8d52159671/b24f75623e522f42ef6c5668bdb1683f7af3cfca48cddef77d0ead38207de802/vs_BuildTools.exe'
           $bootstrapper = Join-Path $env:RUNNER_TEMP 'vs_BuildTools_16_9_10.exe'
@@ -81,6 +93,7 @@ jobs:
           }
 
       - name: Compile C++ candidates for x86
+        if: github.event.inputs.build_experiments != 'true'
         env:
           SONOS_SWEEP_FLAGS: ${{ github.event.inputs.sweep_flags == 'true' && '1' || '0' }}
           SONOS_INCLUDE_DATA_PROBE: ${{ github.event.inputs.include_data_probe == 'true' && '1' || '0' }}
@@ -88,6 +101,17 @@ jobs:
         shell: cmd
         run: |
           if "%SONOS_FOCUSED_PROBE%"=="1" (call tools\build_focused_probe.cmd) else (call tools\build_probe.cmd)
+
+      - name: Compile genuine linker and library experiments
+        if: github.event.inputs.build_experiments == 'true'
+        shell: cmd
+        run: |
+          call C:\VS2019BuildTools\VC\Auxiliary\Build\vcvarsall.bat amd64_x86 -vcvars_ver=14.28
+          if errorlevel 1 exit /b 1
+          python tools\run_build_experiments.py layout --output out\layout
+          if errorlevel 1 exit /b 1
+          python tools\run_build_experiments.py libraries --output out\libraries
+          if errorlevel 1 exit /b 1
 
       - name: Upload compiler outputs
         if: always()
@@ -101,4 +125,6 @@ jobs:
             out/*.pdb
             out/toolchain.txt
             out/*.log
+            out/layout/**
+            out/libraries/**
           if-no-files-found: warn
