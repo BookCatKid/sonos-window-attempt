@@ -135,16 +135,30 @@ struct NativeDelayedDispatcher { bool thunk_FUN_10def450(const Event_thunk_FUN_1
 struct NativeDelayedResult { unsigned char padding[0x108]; int value; };
 struct NativeDelayedEvent_FUN_10dfbb10 : Event_thunk_FUN_10def0d0 { NativeDelayedEvent_FUN_10dfbb10(); };
 struct NativeDelayedEvent_FUN_10dfda60 : Event_thunk_FUN_10def0d0 { NativeDelayedEvent_FUN_10dfda60(); };
-struct NativeDelayedCallback { void thunk_FUN_10ebb8e0(const char *, int); NativeDelayedResult *thunk_FUN_10eb41b0(); void FUN_10644850(NativeDelayedDispatcher *); void FUN_1076bef0(NativeDelayedDispatcher *); void FUN_10783270(NativeDelayedDispatcher *); void FUN_108c6dd0(NativeDelayedDispatcher *); void FUN_108f5360(NativeDelayedDispatcher *); void FUN_108f5400(NativeDelayedDispatcher *); void FUN_108f6710(NativeDelayedDispatcher *); void FUN_1097f930(NativeDelayedDispatcher *); void FUN_109e0d30(NativeDelayedDispatcher *); void FUN_10a07790(NativeDelayedDispatcher *); void FUN_10ab2e30(NativeDelayedDispatcher *); void FUN_10b19560(NativeDelayedDispatcher *); void FUN_10b4fa10(NativeDelayedDispatcher *); void FUN_10b6bb30(NativeDelayedDispatcher *); void FUN_10b6bbd0(NativeDelayedDispatcher *); };
+struct NativeDelayedCallback { void thunk_FUN_10ebb8e0(const char *, int); void thunk_FUN_10ebbab0(int); void thunk_FUN_10ebb850(int); NativeDelayedResult *thunk_FUN_10eb41b0(); void FUN_10644850(NativeDelayedDispatcher *); void FUN_10767520(NativeDelayedDispatcher *); void FUN_107675b0(NativeDelayedDispatcher *); void FUN_1076bef0(NativeDelayedDispatcher *); void FUN_10783270(NativeDelayedDispatcher *); void FUN_1089d870(NativeDelayedDispatcher *); void FUN_108c6dd0(NativeDelayedDispatcher *); void FUN_108f5360(NativeDelayedDispatcher *); void FUN_108f5400(NativeDelayedDispatcher *); void FUN_108f6710(NativeDelayedDispatcher *); void FUN_10914630(NativeDelayedDispatcher *); void FUN_1097f540(NativeDelayedDispatcher *); void FUN_1097f930(NativeDelayedDispatcher *); void FUN_109e0d30(NativeDelayedDispatcher *); void FUN_10a07790(NativeDelayedDispatcher *); void FUN_10ab2e30(NativeDelayedDispatcher *); void FUN_10b19560(NativeDelayedDispatcher *); void FUN_10b4fa10(NativeDelayedDispatcher *); void FUN_10b58460(NativeDelayedDispatcher *); void FUN_10b6bb30(NativeDelayedDispatcher *); void FUN_10b6bbd0(NativeDelayedDispatcher *); };
 
 extern int thunk_FUN_10def450(...);
 extern int thunk_FUN_10eb41b0(...);
+extern int thunk_FUN_10ebb850(...);
 extern int thunk_FUN_10ebb8e0(...);
+extern int thunk_FUN_10ebbab0(...);
 
 // Reference entry 10644850; body size 122 bytes.
 #line 1 "ENTRY_10644850"
 void NativeDelayedCallback::FUN_10644850(NativeDelayedDispatcher *dispatcher) {
 if (dispatcher->thunk_FUN_10def450(NativeDelayedEvent_FUN_10dfda60())) thunk_FUN_10ebb8e0("delay",2000);
+}
+
+// Reference entry 10767520; body size 114 bytes.
+#line 1 "ENTRY_10767520"
+void NativeDelayedCallback::FUN_10767520(NativeDelayedDispatcher *dispatcher) {
+if (dispatcher->thunk_FUN_10def450(NativeDelayedEvent_FUN_10dfbb10())) thunk_FUN_10ebbab0(8);
+}
+
+// Reference entry 107675b0; body size 114 bytes.
+#line 1 "ENTRY_107675b0"
+void NativeDelayedCallback::FUN_107675b0(NativeDelayedDispatcher *dispatcher) {
+if (dispatcher->thunk_FUN_10def450(NativeDelayedEvent_FUN_10dfbb10())) thunk_FUN_10ebbab0(8);
 }
 
 // Reference entry 1076bef0; body size 122 bytes.
@@ -157,6 +171,12 @@ if (dispatcher->thunk_FUN_10def450(NativeDelayedEvent_FUN_10dfbb10())) thunk_FUN
 #line 1 "ENTRY_10783270"
 void NativeDelayedCallback::FUN_10783270(NativeDelayedDispatcher *dispatcher) {
 if (dispatcher->thunk_FUN_10def450(NativeDelayedEvent_FUN_10dfbb10())) thunk_FUN_10ebb8e0("afterGestureWait",15000);
+}
+
+// Reference entry 1089d870; body size 114 bytes.
+#line 1 "ENTRY_1089d870"
+void NativeDelayedCallback::FUN_1089d870(NativeDelayedDispatcher *dispatcher) {
+if (dispatcher->thunk_FUN_10def450(NativeDelayedEvent_FUN_10dfbb10())) thunk_FUN_10ebbab0(8);
 }
 
 // Reference entry 108c6dd0; body size 122 bytes.
@@ -181,6 +201,18 @@ if (dispatcher->thunk_FUN_10def450(NativeDelayedEvent_FUN_10dfbb10())) thunk_FUN
 #line 1 "ENTRY_108f6710"
 void NativeDelayedCallback::FUN_108f6710(NativeDelayedDispatcher *dispatcher) {
 if (dispatcher->thunk_FUN_10def450(NativeDelayedEvent_FUN_10dfbb10())) thunk_FUN_10ebb8e0("successWait",2000);
+}
+
+// Reference entry 10914630; body size 114 bytes.
+#line 1 "ENTRY_10914630"
+void NativeDelayedCallback::FUN_10914630(NativeDelayedDispatcher *dispatcher) {
+if (dispatcher->thunk_FUN_10def450(NativeDelayedEvent_FUN_10dfbb10())) thunk_FUN_10ebbab0(8);
+}
+
+// Reference entry 1097f540; body size 114 bytes.
+#line 1 "ENTRY_1097f540"
+void NativeDelayedCallback::FUN_1097f540(NativeDelayedDispatcher *dispatcher) {
+if (dispatcher->thunk_FUN_10def450(NativeDelayedEvent_FUN_10dfbb10())) thunk_FUN_10ebbab0(2);
 }
 
 // Reference entry 1097f930; body size 122 bytes.
@@ -217,6 +249,12 @@ if (dispatcher->thunk_FUN_10def450(NativeDelayedEvent_FUN_10dfda60())) thunk_FUN
 #line 1 "ENTRY_10b4fa10"
 void NativeDelayedCallback::FUN_10b4fa10(NativeDelayedDispatcher *dispatcher) {
 if (dispatcher->thunk_FUN_10def450(NativeDelayedEvent_FUN_10dfbb10())) thunk_FUN_10ebb8e0((const char *)&DAT_11907e20,500);
+}
+
+// Reference entry 10b58460; body size 114 bytes.
+#line 1 "ENTRY_10b58460"
+void NativeDelayedCallback::FUN_10b58460(NativeDelayedDispatcher *dispatcher) {
+if (dispatcher->thunk_FUN_10def450(NativeDelayedEvent_FUN_10dfbb10())) thunk_FUN_10ebb850(100);
 }
 
 // Reference entry 10b6bb30; body size 122 bytes.

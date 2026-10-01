@@ -15,7 +15,8 @@ DISPATCH = 0x10def450
 DESTRUCTOR = 0x10def0d0
 TIMER = 0x10ebb8e0
 RESULT_STORE = 0x10eb41b0
-BODY_BYTES = 122
+SIMPLE_ACTIONS = {0x10ebbab0, 0x10ebb850}
+BODY_BYTES = {114, 122}
 
 
 def thunk_target(read, va):
@@ -30,13 +31,13 @@ def thunk_target(read, va):
 
 
 def lower(record, reference, base, sections):
-    if record['body_bytes'] != BODY_BYTES:
+    if record['body_bytes'] not in BODY_BYTES:
         return None
     text = record.get('decompiled_c', '')
     entry = record['entry']
     if text.count('thunk_FUN_10def450(') != 1 or text.count('thunk_FUN_10def0d0()') != 1:
         return None
-    code = function_bytes(reference, int(entry, 16), BODY_BYTES, base, sections)
+    code = function_bytes(reference, int(entry, 16), record['body_bytes'], base, sections)
     instructions = list(DISASSEMBLER.disasm(code, int(entry, 16)))
     read = lambda va, size: function_bytes(reference, va, size, base, sections)
     calls = [thunk_target(read, int(i.op_str, 16))
@@ -93,6 +94,26 @@ def lower(record, reference, base, sections):
         if tail_block[0].op_str != 'ecx, esi' or tail_block[2].op_str != 'dword ptr [eax + 0x108], 0':
             return None
         action = 'thunk_FUN_10eb41b0()->value = 0;'
+    elif tail in SIMPLE_ACTIONS:
+        if len(tail_block) < 3 or [i.mnemonic for i in tail_block[:3]] != ['push', 'mov', 'call']:
+            return None
+        if tail_block[1].op_str != 'ecx, esi':
+            return None
+        try:
+            pushed = int(tail_block[0].op_str, 0)
+        except ValueError:
+            return None
+        name = f'thunk_FUN_{tail:08x}'
+        if text.count(name + '(') != 1:
+            return None
+        argument = re.search(re.escape(name) + r'\(([^)]*)\)', text).group(1).strip()
+        try:
+            value = int(argument, 0)
+        except ValueError:
+            return None
+        if value != pushed:
+            return None
+        action = f'{name}({value});'
     else:
         return None
     source = (f'void NativeDelayedCallback::FUN_{entry}(NativeDelayedDispatcher *dispatcher) {{\n'
@@ -120,7 +141,7 @@ def main():
                 if not line.endswith('\n'):
                     break
                 raise
-            if record.get('body_bytes') != BODY_BYTES:
+            if record.get('body_bytes') not in BODY_BYTES:
                 continue
             text = record.get('decompiled_c', '')
             ctor_calls = {int(e, 16) for e in call_pattern.findall(text[text.find('{'):])} & ctors
@@ -141,6 +162,7 @@ def main():
     library += 'struct NativeDelayedResult { unsigned char padding[0x108]; int value; };\n'
     library += ''.join(f'struct {name} : Event_thunk_FUN_10def0d0 {{ {name}(); }};\n' for name in classes)
     library += ('struct NativeDelayedCallback { void thunk_FUN_10ebb8e0(const char *, int); '
+                'void thunk_FUN_10ebbab0(int); void thunk_FUN_10ebb850(int); '
                 'NativeDelayedResult *thunk_FUN_10eb41b0(); ' +
                 ''.join(f"void FUN_{r['entry']}(NativeDelayedDispatcher *); " for r in candidates) + '};\n')
     candidates = [{**r, 'abi_declarations': {'delayed_event_callback_library': library}} for r in candidates]

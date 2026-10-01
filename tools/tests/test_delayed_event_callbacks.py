@@ -24,6 +24,8 @@ STORE_TEXT = TIMER_TEXT.replace('thunk_FUN_10ebb8e0("delay",2000);',
                                 'iVar3 = thunk_FUN_10eb41b0();\n    *(undefined4 *)(iVar3 + 0x108) = 0;')
 DAT_TEXT = TIMER_TEXT.replace('thunk_FUN_10ebb8e0("delay",2000);',
                               'thunk_FUN_10ebb8e0(&DAT_11907e20,500);')
+SIMPLE_TEXT = TIMER_TEXT.replace('thunk_FUN_10ebb8e0("delay",2000);',
+                                 'thunk_FUN_10ebbab0(8);')
 
 
 def instruction(address, mnemonic, op_str=''):
@@ -71,13 +73,34 @@ def store_instructions():
     ]
 
 
+def simple_instructions(value='8'):
+    a = ENTRY
+    return [
+        instruction(a, 'mov', 'esi, ecx'),
+        instruction(a + 4, 'lea', 'ecx, [ebp - 0x24]'),
+        instruction(a + 8, 'call', '0x10000001'),
+        instruction(a + 0x10, 'mov', 'ecx, dword ptr [ebp + 8]'),
+        instruction(a + 0x14, 'push', 'eax'),
+        instruction(a + 0x18, 'call', '0x10000002'),
+        instruction(a + 0x20, 'lea', 'ecx, [ebp - 0x24]'),
+        instruction(a + 0x24, 'call', '0x10000003'),
+        instruction(a + 0x30, 'test', 'bl, bl'),
+        instruction(a + 0x32, 'je', '0x10ccd000'),
+        instruction(a + 0x34, 'push', value),
+        instruction(a + 0x36, 'mov', 'ecx, esi'),
+        instruction(a + 0x38, 'call', '0x10000006'),
+        instruction(a + 0x3d, 'ret', '4'),
+    ]
+
+
 class DelayedEventCallbackTests(unittest.TestCase):
     def candidate(self, text=TIMER_TEXT, instructions=None, native=None):
-        record = {'entry': f'{ENTRY:08x}', 'body_bytes': delayed.BODY_BYTES,
+        record = {'entry': f'{ENTRY:08x}', 'body_bytes': 122,
                   'decompiled_c': text}
         targets = {0x10000001: 0x10dfbb10,
                    0x10000002: delayed.DISPATCH, 0x10000003: delayed.DESTRUCTOR,
-                   0x10000004: delayed.TIMER, 0x10000005: delayed.RESULT_STORE}
+                   0x10000004: delayed.TIMER, 0x10000005: delayed.RESULT_STORE,
+                   0x10000006: 0x10ebbab0}
         def read(va, size):
             if va == 0x118c11e0:
                 return b'delay\0'[:size]
@@ -121,6 +144,14 @@ class DelayedEventCallbackTests(unittest.TestCase):
         bad = timer_instructions()
         bad[0] = instruction(ENTRY, 'mov', 'edi, ecx')
         self.assertIsNone(self.candidate(instructions=bad))
+
+    def test_single_argument_action(self):
+        candidate = self.candidate(SIMPLE_TEXT, simple_instructions())
+        self.assertIn('thunk_FUN_10ebbab0(8);', candidate['source'])
+        bad = self.candidate(SIMPLE_TEXT.replace('(8)', '(9)'), simple_instructions())
+        self.assertIsNone(bad)
+        bad = self.candidate(SIMPLE_TEXT, simple_instructions('0x20'))
+        self.assertIsNone(bad)
 
     def test_missing_branch_guard_or_store_rejected(self):
         bad = [i for i in store_instructions() if i.op_str != 'dword ptr [eax + 0x108], 0']
