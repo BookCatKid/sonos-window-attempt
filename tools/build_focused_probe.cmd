@@ -1,5 +1,5 @@
 @echo off
-setlocal
+setlocal enabledelayedexpansion
 if not exist out mkdir out
 set "PROBE_BIN=C:\VS2019BuildTools\VC\Tools\MSVC\14.28.29910\bin\HostX64"
 if not exist "%PROBE_BIN%\x86\cl.exe" exit /b 1
@@ -26,7 +26,15 @@ rem the realized machine code shows whether the spill repoint survives
 for %%F in (src\generated\ltcg_variants\*.cpp) do (
   cl /nologo /O2 /bigobj /GS /GR /EHsc /GL /c /Foout\%%~nF_ltcg.obj %%F > out\%%~nF_ltcg.log 2>&1
   if errorlevel 1 set PROBE_FAILED=1
-  link /nologo /LTCG /DLL /NOENTRY /NODEFAULTLIB /FORCE:UNRESOLVED /OUT:out\%%~nF_ltcg.dll /MAP:out\%%~nF_ltcg.map out\%%~nF_ltcg.obj >> out\%%~nF_ltcg.log 2>&1
+)
+rem two-TU probes link their _a+_b object pair; the rest link alone
+for %%F in (src\generated\ltcg_variants\*_2tu_a_ltcg.cpp) do (
+  set "PAIR_A=%%~nF"
+  set "PAIR_B=!PAIR_A:_a_ltcg=_b_ltcg!"
+  link /nologo /LTCG /DLL /NOENTRY /NODEFAULTLIB /FORCE:UNRESOLVED /OUT:out\!PAIR_A!_ltcg.dll /MAP:out\!PAIR_A!_ltcg.map out\!PAIR_A!_ltcg.obj out\!PAIR_B!_ltcg.obj >> out\%%~nF_ltcg.log 2>&1
+)
+for %%F in (src\generated\ltcg_variants\*.cpp) do (
+  echo %%~nF | findstr /C:"_2tu_" >nul || link /nologo /LTCG /DLL /NOENTRY /NODEFAULTLIB /FORCE:UNRESOLVED /OUT:out\%%~nF_ltcg.dll /MAP:out\%%~nF_ltcg.map out\%%~nF_ltcg.obj >> out\%%~nF_ltcg.log 2>&1
 )
 if "%SONOS_INCLUDE_DATA_PROBE%"=="1" if exist src\generated\data\*.cpp for %%F in (src\generated\data\*.cpp) do (
   cl /nologo /O2 /bigobj /c /Foout\%%~nF.obj %%F > out\%%~nF.log 2>&1

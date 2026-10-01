@@ -843,10 +843,15 @@ def event_copier_variants():
     return out
 
 
-def ltcgize(text):
+def ltcgize(text, keep_extern=()):
     """Make a variant TU self-contained for link /LTCG: external data and
     declared-only member functions become real definitions so the link
-    resolves them (calls stay calls — only the reference is satisfied)."""
+    resolves them (calls stay calls — only the reference is satisfied).
+
+    keep_extern names member functions (NAME(args) decl text) that must stay
+    undefined in this TU — they are supplied by a paired TU_B source so the
+    frontend emits a real construction-call scope for a callee whose body is
+    invisible at IL emission."""
     # extern globals -> definitions
     text = re.sub(r'extern unsigned int (\w+);', r'unsigned int \1 = 0;', text)
     text = re.sub(r'extern int (\w+)\(\.\.\.\);\s*\n', '', text)
@@ -858,7 +863,7 @@ def ltcgize(text):
             r'(?:[\w\* ]*?))\s+(__cdecl |__thiscall |__fastcall )?'
             r'(\w+)\(([^;{]*)\);[ \t]*$', text, re.M):
         ret, conv, name, args = m.groups()
-        if name in seen_stubs:
+        if name in seen_stubs or name in keep_extern:
             continue
         seen_stubs.add(name)
         # Opaque call inside every stub: an empty inlined body proves the
@@ -873,6 +878,8 @@ def ltcgize(text):
         for mm in re.finditer(r'(?<![\w:~])(~?)(\w+)\(([^;{}]*)\);', body):
             tilde, mname, args = mm.groups()
             if mname != sname.lstrip('~') and '~' + sname != tilde + mname:
+                continue
+            if f'{tilde}{mname}({args})' in keep_extern:
                 continue
             defined = (f'{sname}::~{sname}(' if tilde
                        else f'{sname}::{sname}(')
@@ -1003,6 +1010,45 @@ def main():
                  'op_impl_both_outline', 'op_impl_m14_outline'):
         (ltcg_dir / (name + '_ltcg.cpp')).write_text(
             ltcgize((VARIANTS / (name + '.cpp')).read_text()))
+    # Two-TU probes: the member ctor stays DECLARED-ONLY in TU_A so the
+    # frontend emits a construction-call scope against an opaque callee;
+    # TU_B supplies the body and link /LTCG inlines it.  If the scope spill
+    # was committed in the IL, the repoint survives — matching the native
+    # nested-member shape (a real multi-TU build would do exactly this).
+    op_impl_a = (VARIANTS / 'op_impl_both_outline_split.cpp').read_text()
+    op_impl_a = re.sub(
+        r'NativeOpSmart14_thunk_FUN_101ba1b0::NativeOpSmart14_thunk_FUN_101ba1b0'
+        r'\(void \*value\) \{[^}]*\}\n', '', op_impl_a)
+    (ltcg_dir / 'op_impl_2tu_a_ltcg.cpp').write_text(ltcgize(
+        op_impl_a,
+        keep_extern=('NativeOpSmart14_thunk_FUN_101ba1b0(void *value)',
+                     '~NativeOpSmart14_thunk_FUN_101ba1b0()')))
+    (ltcg_dir / 'op_impl_2tu_b_ltcg.cpp').write_text(
+        'void __cdecl thunk_FUN_1123fce0(void *);\n'
+        'struct __declspec(dllexport) NativeOpSmart14_thunk_FUN_101ba1b0 {'
+        ' void *p; NativeOpSmart14_thunk_FUN_101ba1b0(void *value);'
+        ' ~NativeOpSmart14_thunk_FUN_101ba1b0(); };\n'
+        'NativeOpSmart14_thunk_FUN_101ba1b0::NativeOpSmart14_thunk_FUN_101ba1b0'
+        '(void *value) { p = value; }\n'
+        'NativeOpSmart14_thunk_FUN_101ba1b0::~NativeOpSmart14_thunk_FUN_101ba1b0()'
+        ' { if (p != 0) thunk_FUN_1123fce0(p); }\n')
+    op_ref_a = (VARIANTS / 'op_ref_outline_split.cpp').read_text()
+    op_ref_a = re.sub(
+        r'NativeOpRefMember_thunk_FUN_101ba1b0::NativeOpRefMember_thunk_FUN_101ba1b0'
+        r'\(void \*p\) \{[^}]*\}\n', '', op_ref_a)
+    (ltcg_dir / 'op_ref_2tu_a_ltcg.cpp').write_text(ltcgize(
+        op_ref_a,
+        keep_extern=('NativeOpRefMember_thunk_FUN_101ba1b0(void *p)',
+                     '~NativeOpRefMember_thunk_FUN_101ba1b0()')))
+    (ltcg_dir / 'op_ref_2tu_b_ltcg.cpp').write_text(
+        'void __cdecl thunk_FUN_1123fce0(void *);\n'
+        'struct __declspec(dllexport) NativeOpRefMember_thunk_FUN_101ba1b0 {'
+        ' void *rep; NativeOpRefMember_thunk_FUN_101ba1b0(void *p);'
+        ' ~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n'
+        'NativeOpRefMember_thunk_FUN_101ba1b0::NativeOpRefMember_thunk_FUN_101ba1b0'
+        '(void *p) { rep = p; }\n'
+        'NativeOpRefMember_thunk_FUN_101ba1b0::~NativeOpRefMember_thunk_FUN_101ba1b0()'
+        ' { if (rep != 0) thunk_FUN_1123fce0(rep); }\n')
     print(f'{len(manifest)} ctor-scope variants emitted')
 
 
