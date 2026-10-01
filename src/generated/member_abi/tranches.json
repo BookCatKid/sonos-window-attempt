@@ -286,5 +286,17 @@
   {
     "object": "vcall_event_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-vcall-event-callbacks"
+  },
+  {
+    "object": "op_ref_ctors_reference_flags",
+    "directory": "analysis/compiled-cpp-op-ref-ctors"
+  },
+  {
+    "object": "alloc_holder_ctors_reference_flags",
+    "directory": "analysis/compiled-cpp-alloc-holder-ctors"
+  },
+  {
+    "object": "pair_release_dtors_reference_flags",
+    "directory": "analysis/compiled-cpp-pair-release-dtors"
   }
 ]

@@ -1,0 +1,513 @@
+[
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10687d70@@QAE@XZ",
+    "owner_entry": "10687d70",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_109f3cd0@@QAE@XZ",
+    "owner_entry": "109f3cd0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_109f3d60@@QAE@XZ",
+    "owner_entry": "109f3d60",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_109f3df0@@QAE@XZ",
+    "owner_entry": "109f3df0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_109f3eb0@@QAE@XZ",
+    "owner_entry": "109f3eb0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10b6cc40@@QAE@XZ",
+    "owner_entry": "10b6cc40",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10b7bc50@@QAE@XZ",
+    "owner_entry": "10b7bc50",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10c4a320@@QAE@XZ",
+    "owner_entry": "10c4a320",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10c4da10@@QAE@XZ",
+    "owner_entry": "10c4da10",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10c4daa0@@QAE@XZ",
+    "owner_entry": "10c4daa0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10c4db30@@QAE@XZ",
+    "owner_entry": "10c4db30",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10c4dbc0@@QAE@XZ",
+    "owner_entry": "10c4dbc0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10c4dc50@@QAE@XZ",
+    "owner_entry": "10c4dc50",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10c54280@@QAE@XZ",
+    "owner_entry": "10c54280",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10c54310@@QAE@XZ",
+    "owner_entry": "10c54310",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10c543a0@@QAE@XZ",
+    "owner_entry": "10c543a0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10c54430@@QAE@XZ",
+    "owner_entry": "10c54430",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10c590a0@@QAE@XZ",
+    "owner_entry": "10c590a0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10c80280@@QAE@XZ",
+    "owner_entry": "10c80280",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10c80310@@QAE@XZ",
+    "owner_entry": "10c80310",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10cc0ab0@@QAE@XZ",
+    "owner_entry": "10cc0ab0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10cc5bf0@@QAE@XZ",
+    "owner_entry": "10cc5bf0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10cc5c80@@QAE@XZ",
+    "owner_entry": "10cc5c80",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10cc5d10@@QAE@XZ",
+    "owner_entry": "10cc5d10",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10cc5da0@@QAE@XZ",
+    "owner_entry": "10cc5da0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10cc5e30@@QAE@XZ",
+    "owner_entry": "10cc5e30",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10cc5ec0@@QAE@XZ",
+    "owner_entry": "10cc5ec0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10cc5f50@@QAE@XZ",
+    "owner_entry": "10cc5f50",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10cc5fe0@@QAE@XZ",
+    "owner_entry": "10cc5fe0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10cc6070@@QAE@XZ",
+    "owner_entry": "10cc6070",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10cdacd0@@QAE@XZ",
+    "owner_entry": "10cdacd0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10cdad60@@QAE@XZ",
+    "owner_entry": "10cdad60",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10ce0b40@@QAE@XZ",
+    "owner_entry": "10ce0b40",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10ce2220@@QAE@XZ",
+    "owner_entry": "10ce2220",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10cf53f0@@QAE@XZ",
+    "owner_entry": "10cf53f0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10d7c290@@QAE@XZ",
+    "owner_entry": "10d7c290",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10d7c320@@QAE@XZ",
+    "owner_entry": "10d7c320",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10d7c3b0@@QAE@XZ",
+    "owner_entry": "10d7c3b0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10d7c440@@QAE@XZ",
+    "owner_entry": "10d7c440",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10d9aa90@@QAE@XZ",
+    "owner_entry": "10d9aa90",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10de4660@@QAE@XZ",
+    "owner_entry": "10de4660",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10e8b3d0@@QAE@XZ",
+    "owner_entry": "10e8b3d0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10ef1200@@QAE@XZ",
+    "owner_entry": "10ef1200",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10f0d4e0@@QAE@XZ",
+    "owner_entry": "10f0d4e0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10f0d5a0@@QAE@XZ",
+    "owner_entry": "10f0d5a0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10f0d630@@QAE@XZ",
+    "owner_entry": "10f0d630",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10f246a0@@QAE@XZ",
+    "owner_entry": "10f246a0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10f2f770@@QAE@XZ",
+    "owner_entry": "10f2f770",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10f2f800@@QAE@XZ",
+    "owner_entry": "10f2f800",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10f2f890@@QAE@XZ",
+    "owner_entry": "10f2f890",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10f2f920@@QAE@XZ",
+    "owner_entry": "10f2f920",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10f55960@@QAE@XZ",
+    "owner_entry": "10f55960",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10f559f0@@QAE@XZ",
+    "owner_entry": "10f559f0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10f55a80@@QAE@XZ",
+    "owner_entry": "10f55a80",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10f55b10@@QAE@XZ",
+    "owner_entry": "10f55b10",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10f64d40@@QAE@XZ",
+    "owner_entry": "10f64d40",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10f6faa0@@QAE@XZ",
+    "owner_entry": "10f6faa0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10f77370@@QAE@XZ",
+    "owner_entry": "10f77370",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10f7c2c0@@QAE@XZ",
+    "owner_entry": "10f7c2c0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10f7c350@@QAE@XZ",
+    "owner_entry": "10f7c350",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10f8a080@@QAE@XZ",
+    "owner_entry": "10f8a080",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10f8a110@@QAE@XZ",
+    "owner_entry": "10f8a110",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_10f8a1a0@@QAE@XZ",
+    "owner_entry": "10f8a1a0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_110178a0@@QAE@XZ",
+    "owner_entry": "110178a0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_11025cf0@@QAE@XZ",
+    "owner_entry": "11025cf0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_1105f190@@QAE@XZ",
+    "owner_entry": "1105f190",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_11061520@@QAE@XZ",
+    "owner_entry": "11061520",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_11064630@@QAE@XZ",
+    "owner_entry": "11064630",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_11067460@@QAE@XZ",
+    "owner_entry": "11067460",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_111c9920@@QAE@XZ",
+    "owner_entry": "111c9920",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_111c99b0@@QAE@XZ",
+    "owner_entry": "111c99b0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_111c9a40@@QAE@XZ",
+    "owner_entry": "111c9a40",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  },
+  {
+    "symbol": "??1NativeOpRefCtor_FUN_111c9ad0@@QAE@XZ",
+    "owner_entry": "111c9ad0",
+    "state": 0,
+    "call_target": "1007bb1b",
+    "body_entry": "101ba1b0"
+  }
+]
