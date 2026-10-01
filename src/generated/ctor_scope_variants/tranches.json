@@ -20,6 +20,14 @@
     "directory": "analysis/ctor-scope-op-ref-split"
   },
   {
+    "object": "op_ref_m4_empty_ctor_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-empty-ctor"
+  },
+  {
+    "object": "op_ref_m4_empty_list_reference_flags",
+    "directory": "analysis/ctor-scope-op-ref-m4-empty-list"
+  },
+  {
     "object": "op_impl_control_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-control"
   },
@@ -46,5 +54,13 @@
   {
     "object": "op_impl_both_outline_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-both-outline"
+  },
+  {
+    "object": "op_impl_smart_empty_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-smart-empty"
+  },
+  {
+    "object": "op_impl_smart_empty_dbl_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-smart-empty-dbl"
   }
 ]

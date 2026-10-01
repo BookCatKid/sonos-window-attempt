@@ -112,6 +112,21 @@ def op_ref_variants():
             'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
             '    : m4(param_2) {\nif (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
             f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # user-provided empty member ctor: materialized scope repoints
+        # construction-this, arm precedes the body's rep store
+        'op_ref_m4_empty_ctor': (
+            'struct NativeOpRefMember_thunk_FUN_101ba1b0 { void *rep;\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0() {}\n'
+            '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            + ctor_tail),
+        # same empty ctor, explicitly value-initialized in the init list
+        'op_ref_m4_empty_list': (
+            'struct NativeOpRefMember_thunk_FUN_101ba1b0 { void *rep;\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0() {}\n'
+            '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4() ' + ctor_tail),
     }
     out = {}
     for name, (member, definition) in variants.items():
@@ -171,12 +186,28 @@ def op_impl_variants():
             '    NativeOpMember14_10687e80(void *param); };\n'
             'NativeOpMember14_10687e80::NativeOpMember14_10687e80(void *param)\n'
             ' : smart(param) { f8 = 0; vptr = (void *)&DAT_118c62f8; }'))
+    # smart gets a user-provided EMPTY ctor: its tracked scope materializes so
+    # MSVC repoints construction-this and arms state3 before m14's body stores
+    smart_empty = decls.replace(
+        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
+        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
+        '    NativeOpSmart14_thunk_FUN_101ba1b0() {} };').replace(
+        ' : smart(param) { f8 = 0;',
+        ' { smart.p = param; if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0;')
+    variants['op_impl_smart_empty'] = smart_empty
+    # same, plus f38 modeled as double-init to probe the xorps/movq store
+    variants['op_impl_smart_empty_dbl'] = smart_empty.replace(
+        'union NativeOpF38 { unsigned __int64 q; struct { unsigned int lo; unsigned int hi; } w; };',
+        'union NativeOpF38 { double d; struct { unsigned int lo; unsigned int hi; } w; };')
     header = '// Constructor-scope hypothesis variants for entry 10687e80.\n'
     out = {}
     for name, library in variants.items():
+        body = definition
+        if name.endswith('_dbl'):
+            body = body.replace('f38.q = 0;', 'f38.d = 0.0;')
         out[name] = (header + library +
                      '\n// Reference entry 10687e80; body size 278 bytes.\n'
-                     '#line 1 "ENTRY_10687e80"\n' + definition + '\n')
+                     '#line 1 "ENTRY_10687e80"\n' + body + '\n')
     return out
 
 
