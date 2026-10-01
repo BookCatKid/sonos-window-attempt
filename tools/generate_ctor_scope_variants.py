@@ -489,13 +489,27 @@ def delayed_variants():
             'NativeDelayedCallback::FUN_107fef90(NativeDelayedDispatcher *dispatcher)',
             decl,
             'NativeDelayedDispatcher **slot = &dispatcher;\n(void)slot;\n' + body1 + '\n' + body2),
+        # favor-size pragma: MSVC reloads the param instead of spending edi
+        'delayed_os': (
+            'NativeDelayedCallback::FUN_107fef90(NativeDelayedDispatcher *dispatcher)',
+            decl,
+            body1 + '\n' + body2),
+        # global-opt off: MSVC cannot CSE the param load across the branches
+        'delayed_barrier': (
+            'NativeDelayedCallback::FUN_107fef90(NativeDelayedDispatcher *dispatcher)',
+            decl,
+            body1 + '\n' + body2),
     }
+    pragma = {'delayed_os': '#pragma optimize("s", on)\n',
+              'delayed_barrier': '#pragma optimize("g", off)\n'}
     out = {}
     for name, (sig_tail, decl_repl, body) in variants.items():
         src = prefix.replace(decl, decl_repl)
         out[name] = (src +
                      '\n// Reference entry 107fef90; body size 203 bytes.\n'
-                     '#line 1 "ENTRY_107fef90"\nvoid ' + sig_tail + ' {\n' + body + '\n}\n')
+                     '#line 1 "ENTRY_107fef90"\n' + pragma.get(name, '') +
+                     'void ' + sig_tail + ' {\n' + body + '\n}\n'
+                     + ('#pragma optimize("", on)\n' if name in pragma else ''))
     return out
 
 

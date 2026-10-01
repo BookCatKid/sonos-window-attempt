@@ -162,5 +162,13 @@
   {
     "object": "delayed_addr_taken_reference_flags",
     "directory": "analysis/ctor-scope-delayed-addr-taken"
+  },
+  {
+    "object": "delayed_os_reference_flags",
+    "directory": "analysis/ctor-scope-delayed-os"
+  },
+  {
+    "object": "delayed_barrier_reference_flags",
+    "directory": "analysis/ctor-scope-delayed-barrier"
   }
 ]
