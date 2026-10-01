@@ -130,7 +130,7 @@ static_assert(sizeof(FactoryTree)==8,"Two-word outgoing container");
 static_assert(sizeof(FactoryTreeNode)==28,"Sentinel node");
 static_assert(sizeof(Event_thunk_FUN_10def0d0)==24,"Event value");
 struct NativeNamedEvent_FUN_10df9440 : Event_thunk_FUN_10def0d0 { NativeNamedEvent_FUN_10df9440() = default; };
-NativeNamedEvent_FUN_10df9440 __cdecl thunk_FUN_10df9440();
+NativeNamedEvent_FUN_10df9440 __fastcall thunk_FUN_10df9440();
 struct NativeNamedEvent_FUN_10df9690 : Event_thunk_FUN_10def0d0 { NativeNamedEvent_FUN_10df9690(); };
 struct NativeNamedEvent_FUN_10df9a80 : Event_thunk_FUN_10def0d0 { NativeNamedEvent_FUN_10df9a80(); };
 struct NativeNamedEvent_FUN_10df9d60 : Event_thunk_FUN_10def0d0 { NativeNamedEvent_FUN_10df9d60(); };

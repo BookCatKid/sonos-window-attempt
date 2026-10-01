@@ -470,7 +470,7 @@ def named_event_variants():
                               ctor_decl.replace(
                                   'NativeNamedEvent_FUN_10df9440();',
                                   'NativeNamedEvent_FUN_10df9440() = default;') +
-                              'NativeNamedEvent_FUN_10df9440 __cdecl '
+                              'NativeNamedEvent_FUN_10df9440 __fastcall '
                               'thunk_FUN_10df9440();\n'),
             'NativeNamedEvent_FUN_10df9440 event = thunk_FUN_10df9440();\n'
             'NativeNamedEvent_FUN_10df9440 *pe = &event;\n'),
