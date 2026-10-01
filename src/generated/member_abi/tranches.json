@@ -266,5 +266,9 @@
   {
     "object": "page_factories_reference_flags",
     "directory": "analysis/compiled-cpp-page-factories"
+  },
+  {
+    "object": "query_interface_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-query-interface-callbacks"
   }
 ]
