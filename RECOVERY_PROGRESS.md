@@ -549,3 +549,36 @@ forwarded value arguments there. Recover native stack cleanup alongside those
 prototypes, then emit genuine derived event values and scoped property keys.
 Linker alignment/reservation padding is another candidate for independently
 verified compiler/linker coverage. Full-file identity remains the objective.
+
+## Typed property callbacks awaiting pinned compilation (2026-09-30)
+
+The isolated Ghidra project now models property-bag setters at vtable offsets
+0x1c, 0x28, and 0x40, each with two four-byte stack arguments. The final slot
+retains an opaque word payload; its semantic type is not established. The first
+pass restores arguments in 19 decompilations; the additional word setter changes
+two more. Both execution proofs confirm that the original project is unchanged.
+
+`python3 tools/compile_property_callbacks.py` generates 14 genuine C++ members:
+eight single-property callbacks, five two-property callbacks, and one
+three-property callback, representing 3,843 reference body bytes. Keys have
+separate lexical lifetimes; incoming values remain distinct when Ghidra reuses
+their stack homes for later keys. Native indirect-call slots and RET cleanup
+must agree with the recovered parameter sequence before a candidate is emitted.
+All candidates compile locally with Clang. Forty-nine tooling tests pass,
+including rejection of incorrect slots, cleanup sizes, and forwarded arguments.
+
+These are experimental candidates, excluded from the authoritative default
+manifest. GitHub and its API time out during this continuation, preventing the
+branch push and pinned Windows build. **No verified bytes have been added**:
+the latest accepted executable total remains 1,782,362 bytes / 6.967067%, with
+11,648,221 proven compiler bytes physically placed. The full DLL still fails
+identity.
+
+When connectivity returns, push `codex/bulk-member-abi`, dispatch
+`msvc-142-probe.yml` with `focused_probe=true`, download the actual run artifact,
+and compare `property_callbacks_reference_flags` using
+`src/generated/member_abi/tranches.json`, with baseline
+`analysis/recovery-msvc-event-callbacks-derived/coverage-audit.json`.
+Admission requires complete body, relocation, and EH proofs. Next ABI work can
+recover the string-producing call used by the 329-byte callbacks; its omitted
+receiver/result storage currently prevents faithful source generation.

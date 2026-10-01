@@ -135,68 +135,165 @@ virtual void reserved3(); virtual void reserved4(); virtual void reserved5();
 virtual void reserved6(); virtual void setString(SCStr *key,SCStr *value);
 virtual void reserved8(); virtual void reserved9();
 virtual void setInteger(SCStr *key,unsigned int value);
+virtual void reserved11(); virtual void reserved12(); virtual void reserved13();
+virtual void reserved14(); virtual void reserved15();
+virtual void setWord(SCStr *key,unsigned int value);
 };
 struct NativePropertyDispatcher { void thunk_FUN_10df15a0(Event_thunk_FUN_10def0d0 *); };
+struct NativePropertyEvent_10e02910 : Event_thunk_FUN_10def0d0 { __forceinline NativePropertyEvent_10e02910():Event_thunk_FUN_10def0d0("btProductConnectionStateChanged",0x27) {} };
+struct NativePropertyEvent_10e02a90 : Event_thunk_FUN_10def0d0 { __forceinline NativePropertyEvent_10e02a90():Event_thunk_FUN_10def0d0("btProductDiscovered",0x28) {} };
+struct NativePropertyEvent_10e02c10 : Event_thunk_FUN_10def0d0 { __forceinline NativePropertyEvent_10e02c10():Event_thunk_FUN_10def0d0("btProductPairingAttemptCompleted",0x2a) {} };
+struct NativePropertyEvent_10e03040 : Event_thunk_FUN_10def0d0 { __forceinline NativePropertyEvent_10e03040():Event_thunk_FUN_10def0d0("chirpDataReceived",0x43) {} };
 struct NativePropertyEvent_10e034d0 : Event_thunk_FUN_10def0d0 { __forceinline NativePropertyEvent_10e034d0():Event_thunk_FUN_10def0d0("echoMsgReceived",0x2c) {} };
+struct NativePropertyEvent_10e03610 : Event_thunk_FUN_10def0d0 { __forceinline NativePropertyEvent_10e03610():Event_thunk_FUN_10def0d0("netstart2EchoResponseReceived",0x70) {} };
 struct NativePropertyEvent_10e03880 : Event_thunk_FUN_10def0d0 { __forceinline NativePropertyEvent_10e03880():Event_thunk_FUN_10def0d0("productUpdateEnded",0x3a) {} };
+struct NativePropertyEvent_10e03f20 : Event_thunk_FUN_10def0d0 { __forceinline NativePropertyEvent_10e03f20():Event_thunk_FUN_10def0d0("netstartStoreRefreshComplete",0x75) {} };
 struct NativePropertyEvent_10e04070 : Event_thunk_FUN_10def0d0 { __forceinline NativePropertyEvent_10e04070():Event_thunk_FUN_10def0d0("netstartStoreRefreshFailed",0x76) {} };
+struct NativePropertyEvent_10e04b50 : Event_thunk_FUN_10def0d0 { __forceinline NativePropertyEvent_10e04b50():Event_thunk_FUN_10def0d0("productReceivedBleConfig",0x57) {} };
 struct NativePropertyEvent_10e058e0 : Event_thunk_FUN_10def0d0 { __forceinline NativePropertyEvent_10e058e0():Event_thunk_FUN_10def0d0("netstart2SendEchoRequestFailed",0x69) {} };
 struct NativePropertyEvent_10e05e00 : Event_thunk_FUN_10def0d0 { __forceinline NativePropertyEvent_10e05e00():Event_thunk_FUN_10def0d0("netstart2SendStartIslandFailed",0x6f) {} };
 struct NativePropertyEvent_10e06030 : Event_thunk_FUN_10def0d0 { __forceinline NativePropertyEvent_10e06030():Event_thunk_FUN_10def0d0("netstart2SendStartOpenApFailed",0x6d) {} };
-struct NativePropertyCallback { void FUN_10e034d0(unsigned int value); void FUN_10e03880(unsigned int value); void FUN_10e04070(unsigned int value); void FUN_10e058e0(unsigned int value); void FUN_10e05e00(unsigned int value); void FUN_10e06030(unsigned int value); };
+struct NativePropertyEvent_10e06830 : Event_thunk_FUN_10def0d0 { __forceinline NativePropertyEvent_10e06830():Event_thunk_FUN_10def0d0("productUpdateProgressed",0x3c) {} };
+struct NativePropertyCallback { void FUN_10e02910(SCStr *value0, unsigned int value1); void FUN_10e02a90(SCStr *value0, SCStr *value1); void FUN_10e02c10(SCStr *value0, SCStr *value1, unsigned int value2); void FUN_10e03040(SCStr *value0, unsigned int value1); void FUN_10e034d0(unsigned int value0); void FUN_10e03610(SCStr *value0); void FUN_10e03880(unsigned int value0); void FUN_10e03f20(unsigned int value0); void FUN_10e04070(unsigned int value0); void FUN_10e04b50(unsigned int value0, unsigned int value1); void FUN_10e058e0(unsigned int value0); void FUN_10e05e00(unsigned int value0); void FUN_10e06030(unsigned int value0); void FUN_10e06830(unsigned int value0, unsigned int value1); };
 
 extern int thunk_FUN_10df15a0(...);
 
+// Reference entry 10e02910; body size 302 bytes.
+#line 1 "ENTRY_10e02910"
+void NativePropertyCallback::FUN_10e02910(SCStr *value0, unsigned int value1) {
+NativePropertyEvent_10e02910 event;
+{ RecoveredString_FUN_1008c50b key("deviceid");
+((NativePropertyBag *)event.representation.properties)->setString((SCStr *)&key,value0); }
+{ RecoveredString_FUN_1008c50b key("state");
+((NativePropertyBag *)event.representation.properties)->setInteger((SCStr *)&key,value1); }
+((NativePropertyDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event);
+}
+
+// Reference entry 10e02a90; body size 302 bytes.
+#line 1 "ENTRY_10e02a90"
+void NativePropertyCallback::FUN_10e02a90(SCStr *value0, SCStr *value1) {
+NativePropertyEvent_10e02a90 event;
+{ RecoveredString_FUN_1008c50b key("deviceid");
+((NativePropertyBag *)event.representation.properties)->setString((SCStr *)&key,value0); }
+{ RecoveredString_FUN_1008c50b key("devicename");
+((NativePropertyBag *)event.representation.properties)->setString((SCStr *)&key,value1); }
+((NativePropertyDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event);
+}
+
+// Reference entry 10e02c10; body size 357 bytes.
+#line 1 "ENTRY_10e02c10"
+void NativePropertyCallback::FUN_10e02c10(SCStr *value0, SCStr *value1, unsigned int value2) {
+NativePropertyEvent_10e02c10 event;
+{ RecoveredString_FUN_1008c50b key("deviceid");
+((NativePropertyBag *)event.representation.properties)->setString((SCStr *)&key,value0); }
+{ RecoveredString_FUN_1008c50b key("devicename");
+((NativePropertyBag *)event.representation.properties)->setString((SCStr *)&key,value1); }
+{ RecoveredString_FUN_1008c50b key("result");
+((NativePropertyBag *)event.representation.properties)->setInteger((SCStr *)&key,value2); }
+((NativePropertyDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event);
+}
+
+// Reference entry 10e03040; body size 302 bytes.
+#line 1 "ENTRY_10e03040"
+void NativePropertyCallback::FUN_10e03040(SCStr *value0, unsigned int value1) {
+NativePropertyEvent_10e03040 event;
+{ RecoveredString_FUN_1008c50b key("chirpData");
+((NativePropertyBag *)event.representation.properties)->setString((SCStr *)&key,value0); }
+{ RecoveredString_FUN_1008c50b key("channel");
+((NativePropertyBag *)event.representation.properties)->setInteger((SCStr *)&key,value1); }
+((NativePropertyDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event);
+}
+
 // Reference entry 10e034d0; body size 247 bytes.
 #line 1 "ENTRY_10e034d0"
-void NativePropertyCallback::FUN_10e034d0(unsigned int value) {
+void NativePropertyCallback::FUN_10e034d0(unsigned int value0) {
 NativePropertyEvent_10e034d0 event;
 { RecoveredString_FUN_1008c50b key("msgLen");
-((NativePropertyBag *)event.representation.properties)->setInteger((SCStr *)&key,value); }
+((NativePropertyBag *)event.representation.properties)->setInteger((SCStr *)&key,value0); }
+((NativePropertyDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event);
+}
+
+// Reference entry 10e03610; body size 247 bytes.
+#line 1 "ENTRY_10e03610"
+void NativePropertyCallback::FUN_10e03610(SCStr *value0) {
+NativePropertyEvent_10e03610 event;
+{ RecoveredString_FUN_1008c50b key("response");
+((NativePropertyBag *)event.representation.properties)->setString((SCStr *)&key,value0); }
 ((NativePropertyDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event);
 }
 
 // Reference entry 10e03880; body size 247 bytes.
 #line 1 "ENTRY_10e03880"
-void NativePropertyCallback::FUN_10e03880(unsigned int value) {
+void NativePropertyCallback::FUN_10e03880(unsigned int value0) {
 NativePropertyEvent_10e03880 event;
 { RecoveredString_FUN_1008c50b key("endUpdateStatus");
-((NativePropertyBag *)event.representation.properties)->setInteger((SCStr *)&key,value); }
+((NativePropertyBag *)event.representation.properties)->setInteger((SCStr *)&key,value0); }
+((NativePropertyDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event);
+}
+
+// Reference entry 10e03f20; body size 247 bytes.
+#line 1 "ENTRY_10e03f20"
+void NativePropertyCallback::FUN_10e03f20(unsigned int value0) {
+NativePropertyEvent_10e03f20 event;
+{ RecoveredString_FUN_1008c50b key("dataUpdated");
+((NativePropertyBag *)event.representation.properties)->setWord((SCStr *)&key,value0); }
 ((NativePropertyDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event);
 }
 
 // Reference entry 10e04070; body size 247 bytes.
 #line 1 "ENTRY_10e04070"
-void NativePropertyCallback::FUN_10e04070(unsigned int value) {
+void NativePropertyCallback::FUN_10e04070(unsigned int value0) {
 NativePropertyEvent_10e04070 event;
 { RecoveredString_FUN_1008c50b key("opResult");
-((NativePropertyBag *)event.representation.properties)->setInteger((SCStr *)&key,value); }
+((NativePropertyBag *)event.representation.properties)->setInteger((SCStr *)&key,value0); }
+((NativePropertyDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event);
+}
+
+// Reference entry 10e04b50; body size 302 bytes.
+#line 1 "ENTRY_10e04b50"
+void NativePropertyCallback::FUN_10e04b50(unsigned int value0, unsigned int value1) {
+NativePropertyEvent_10e04b50 event;
+{ RecoveredString_FUN_1008c50b key("configPacketInterval");
+((NativePropertyBag *)event.representation.properties)->setInteger((SCStr *)&key,value0); }
+{ RecoveredString_FUN_1008c50b key("configPacketCount");
+((NativePropertyBag *)event.representation.properties)->setInteger((SCStr *)&key,value1); }
 ((NativePropertyDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event);
 }
 
 // Reference entry 10e058e0; body size 247 bytes.
 #line 1 "ENTRY_10e058e0"
-void NativePropertyCallback::FUN_10e058e0(unsigned int value) {
+void NativePropertyCallback::FUN_10e058e0(unsigned int value0) {
 NativePropertyEvent_10e058e0 event;
 { RecoveredString_FUN_1008c50b key("opResult");
-((NativePropertyBag *)event.representation.properties)->setInteger((SCStr *)&key,value); }
+((NativePropertyBag *)event.representation.properties)->setInteger((SCStr *)&key,value0); }
 ((NativePropertyDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event);
 }
 
 // Reference entry 10e05e00; body size 247 bytes.
 #line 1 "ENTRY_10e05e00"
-void NativePropertyCallback::FUN_10e05e00(unsigned int value) {
+void NativePropertyCallback::FUN_10e05e00(unsigned int value0) {
 NativePropertyEvent_10e05e00 event;
 { RecoveredString_FUN_1008c50b key("opResult");
-((NativePropertyBag *)event.representation.properties)->setInteger((SCStr *)&key,value); }
+((NativePropertyBag *)event.representation.properties)->setInteger((SCStr *)&key,value0); }
 ((NativePropertyDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event);
 }
 
 // Reference entry 10e06030; body size 247 bytes.
 #line 1 "ENTRY_10e06030"
-void NativePropertyCallback::FUN_10e06030(unsigned int value) {
+void NativePropertyCallback::FUN_10e06030(unsigned int value0) {
 NativePropertyEvent_10e06030 event;
 { RecoveredString_FUN_1008c50b key("opResult");
-((NativePropertyBag *)event.representation.properties)->setInteger((SCStr *)&key,value); }
+((NativePropertyBag *)event.representation.properties)->setInteger((SCStr *)&key,value0); }
+((NativePropertyDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event);
+}
+
+// Reference entry 10e06830; body size 302 bytes.
+#line 1 "ENTRY_10e06830"
+void NativePropertyCallback::FUN_10e06830(unsigned int value0, unsigned int value1) {
+NativePropertyEvent_10e06830 event;
+{ RecoveredString_FUN_1008c50b key("updatePhase");
+((NativePropertyBag *)event.representation.properties)->setInteger((SCStr *)&key,value0); }
+{ RecoveredString_FUN_1008c50b key("updatePercent");
+((NativePropertyBag *)event.representation.properties)->setInteger((SCStr *)&key,value1); }
 ((NativePropertyDispatcher *)((char *)this + -16))->thunk_FUN_10df15a0(&event);
 }

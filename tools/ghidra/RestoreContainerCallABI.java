@@ -89,6 +89,12 @@ public class RestoreContainerCallABI extends GhidraScript {
                     StructureDataType bagVtable=new StructureDataType(new CategoryPath("/RecoveryProof"),"RecoveredPropertyBagVtable",40,dtm);
                     bagVtable.replaceAtOffset(28,new PointerDataType(setString,4,dtm),4,"setString",null);
                     bagVtable.add(new PointerDataType(setInteger,4,dtm),4,"setInteger",null);
+                    FunctionDefinitionDataType setWord=new FunctionDefinitionDataType("RecoveredSetWord",dtm);
+                    setWord.setCallingConvention("__thiscall");setWord.setReturnType(VoidDataType.dataType);
+                    setWord.setArguments(new ParameterDefinition[]{new ParameterDefinitionImpl("receiver",bagPointer,null),
+                        new ParameterDefinitionImpl("key",pointer,null),new ParameterDefinitionImpl("value",UnsignedIntegerDataType.dataType,null)});
+                    bagVtable.growStructure(20);
+                    bagVtable.add(new PointerDataType(setWord,4,dtm),4,"setWord",null);
                     bag.add(new PointerDataType(bagVtable,4,dtm),4,"vtable",null);
                     DataType resolvedBag=dtm.addDataType(bag,DataTypeConflictHandler.REPLACE_HANDLER);
                     bagPointer=new PointerDataType(resolvedBag,4,dtm);
