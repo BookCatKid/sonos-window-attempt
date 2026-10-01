@@ -417,698 +417,838 @@ extern unsigned int DAT_121a7568;
 #line 1 "ENTRY_117e8ad0"
 void FUN_117e8ad0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a071c;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a0718 = 0; DAT_121a071c = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117e9d10; body size 91 bytes.
 #line 1 "ENTRY_117e9d10"
 void FUN_117e9d10() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0834;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a0830 = 0; DAT_121a0834 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117ea340; body size 91 bytes.
 #line 1 "ENTRY_117ea340"
 void FUN_117ea340() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a08d8;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a08d4 = 0; DAT_121a08d8 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117ea900; body size 91 bytes.
 #line 1 "ENTRY_117ea900"
 void FUN_117ea900() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a08f8;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a08f4 = 0; DAT_121a08f8 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117eb4b0; body size 91 bytes.
 #line 1 "ENTRY_117eb4b0"
 void FUN_117eb4b0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a097c;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a0978 = 0; DAT_121a097c = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117eb530; body size 91 bytes.
 #line 1 "ENTRY_117eb530"
 void FUN_117eb530() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a09c8;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a09c4 = 0; DAT_121a09c8 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117ebc50; body size 91 bytes.
 #line 1 "ENTRY_117ebc50"
 void FUN_117ebc50() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0a1c;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a0a18 = 0; DAT_121a0a1c = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117ec520; body size 91 bytes.
 #line 1 "ENTRY_117ec520"
 void FUN_117ec520() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0a84;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a0a80 = 0; DAT_121a0a84 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117ecb50; body size 91 bytes.
 #line 1 "ENTRY_117ecb50"
 void FUN_117ecb50() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0ad8;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a0ad4 = 0; DAT_121a0ad8 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117ecc40; body size 91 bytes.
 #line 1 "ENTRY_117ecc40"
 void FUN_117ecc40() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0a98;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a0a94 = 0; DAT_121a0a98 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117eccc0; body size 91 bytes.
 #line 1 "ENTRY_117eccc0"
 void FUN_117eccc0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0af4;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a0af0 = 0; DAT_121a0af4 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117ecd40; body size 91 bytes.
 #line 1 "ENTRY_117ecd40"
 void FUN_117ecd40() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0ae8;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a0ae4 = 0; DAT_121a0ae8 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117ecdc0; body size 91 bytes.
 #line 1 "ENTRY_117ecdc0"
 void FUN_117ecdc0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0b04;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a0b00 = 0; DAT_121a0b04 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117ecfd0; body size 91 bytes.
 #line 1 "ENTRY_117ecfd0"
 void FUN_117ecfd0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0b28;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a0b24 = 0; DAT_121a0b28 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117eda60; body size 91 bytes.
 #line 1 "ENTRY_117eda60"
 void FUN_117eda60() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0bb8;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a0bb4 = 0; DAT_121a0bb8 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117ee570; body size 91 bytes.
 #line 1 "ENTRY_117ee570"
 void FUN_117ee570() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0c5c;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a0c58 = 0; DAT_121a0c5c = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117eeba0; body size 91 bytes.
 #line 1 "ENTRY_117eeba0"
 void FUN_117eeba0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0cac;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a0ca8 = 0; DAT_121a0cac = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117f0730; body size 91 bytes.
 #line 1 "ENTRY_117f0730"
 void FUN_117f0730() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a0dc4;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a0dc0 = 0; DAT_121a0dc4 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117f41e0; body size 91 bytes.
 #line 1 "ENTRY_117f41e0"
 void FUN_117f41e0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a11ac;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a11a8 = 0; DAT_121a11ac = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117f61c0; body size 91 bytes.
 #line 1 "ENTRY_117f61c0"
 void FUN_117f61c0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1364;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a1360 = 0; DAT_121a1364 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117f6cc0; body size 91 bytes.
 #line 1 "ENTRY_117f6cc0"
 void FUN_117f6cc0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a13fc;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a13f8 = 0; DAT_121a13fc = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117f6d40; body size 91 bytes.
 #line 1 "ENTRY_117f6d40"
 void FUN_117f6d40() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a140c;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a1408 = 0; DAT_121a140c = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117f6dc0; body size 91 bytes.
 #line 1 "ENTRY_117f6dc0"
 void FUN_117f6dc0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a13ec;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a13e8 = 0; DAT_121a13ec = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117f7a10; body size 91 bytes.
 #line 1 "ENTRY_117f7a10"
 void FUN_117f7a10() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1538;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a1534 = 0; DAT_121a1538 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117f7a90; body size 91 bytes.
 #line 1 "ENTRY_117f7a90"
 void FUN_117f7a90() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1528;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a1524 = 0; DAT_121a1528 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117f7b10; body size 91 bytes.
 #line 1 "ENTRY_117f7b10"
 void FUN_117f7b10() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1548;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a1544 = 0; DAT_121a1548 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117f8240; body size 91 bytes.
 #line 1 "ENTRY_117f8240"
 void FUN_117f8240() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a15a0;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a159c = 0; DAT_121a15a0 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117f8fe0; body size 91 bytes.
 #line 1 "ENTRY_117f8fe0"
 void FUN_117f8fe0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1648;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a1644 = 0; DAT_121a1648 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117f9ae0; body size 91 bytes.
 #line 1 "ENTRY_117f9ae0"
 void FUN_117f9ae0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1750;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a174c = 0; DAT_121a1750 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117f9b60; body size 91 bytes.
 #line 1 "ENTRY_117f9b60"
 void FUN_117f9b60() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1740;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a173c = 0; DAT_121a1740 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117f9be0; body size 91 bytes.
 #line 1 "ENTRY_117f9be0"
 void FUN_117f9be0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a16d0;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a16cc = 0; DAT_121a16d0 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117f9c60; body size 91 bytes.
 #line 1 "ENTRY_117f9c60"
 void FUN_117f9c60() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a16f0;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a16ec = 0; DAT_121a16f0 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117f9ce0; body size 91 bytes.
 #line 1 "ENTRY_117f9ce0"
 void FUN_117f9ce0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1720;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a171c = 0; DAT_121a1720 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117f9d60; body size 91 bytes.
 #line 1 "ENTRY_117f9d60"
 void FUN_117f9d60() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1710;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a170c = 0; DAT_121a1710 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117f9de0; body size 91 bytes.
 #line 1 "ENTRY_117f9de0"
 void FUN_117f9de0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a16e0;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a16dc = 0; DAT_121a16e0 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117f9e60; body size 91 bytes.
 #line 1 "ENTRY_117f9e60"
 void FUN_117f9e60() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1700;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a16fc = 0; DAT_121a1700 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117f9ee0; body size 91 bytes.
 #line 1 "ENTRY_117f9ee0"
 void FUN_117f9ee0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1730;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a172c = 0; DAT_121a1730 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117fbe00; body size 91 bytes.
 #line 1 "ENTRY_117fbe00"
 void FUN_117fbe00() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a18b8;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a18b4 = 0; DAT_121a18b8 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117fbef0; body size 91 bytes.
 #line 1 "ENTRY_117fbef0"
 void FUN_117fbef0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a18c8;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a18c4 = 0; DAT_121a18c8 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 117fe9e0; body size 91 bytes.
 #line 1 "ENTRY_117fe9e0"
 void FUN_117fe9e0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1abc;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a1ab8 = 0; DAT_121a1abc = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 11802ff0; body size 91 bytes.
 #line 1 "ENTRY_11802ff0"
 void FUN_11802ff0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1dac;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a1da8 = 0; DAT_121a1dac = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 118055a0; body size 91 bytes.
 #line 1 "ENTRY_118055a0"
 void FUN_118055a0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a1f94;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a1f90 = 0; DAT_121a1f94 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 1180a9b0; body size 91 bytes.
 #line 1 "ENTRY_1180a9b0"
 void FUN_1180a9b0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a25f4;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a25f0 = 0; DAT_121a25f4 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 1180abf0; body size 91 bytes.
 #line 1 "ENTRY_1180abf0"
 void FUN_1180abf0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a2654;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a2650 = 0; DAT_121a2654 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 1180baa0; body size 91 bytes.
 #line 1 "ENTRY_1180baa0"
 void FUN_1180baa0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a2688;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a2684 = 0; DAT_121a2688 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 1182acc0; body size 91 bytes.
 #line 1 "ENTRY_1182acc0"
 void FUN_1182acc0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a4a2c;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a4a28 = 0; DAT_121a4a2c = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 1182fa20; body size 91 bytes.
 #line 1 "ENTRY_1182fa20"
 void FUN_1182fa20() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a5038;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a5034 = 0; DAT_121a5038 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 118301a0; body size 91 bytes.
 #line 1 "ENTRY_118301a0"
 void FUN_118301a0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a5090;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a508c = 0; DAT_121a5090 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 118308b0; body size 91 bytes.
 #line 1 "ENTRY_118308b0"
 void FUN_118308b0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a50e8;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a50e4 = 0; DAT_121a50e8 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 118309a0; body size 91 bytes.
 #line 1 "ENTRY_118309a0"
 void FUN_118309a0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a50f4;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a50f0 = 0; DAT_121a50f4 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 118316e0; body size 91 bytes.
 #line 1 "ENTRY_118316e0"
 void FUN_118316e0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a5298;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a5294 = 0; DAT_121a5298 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 11833980; body size 91 bytes.
 #line 1 "ENTRY_11833980"
 void FUN_11833980() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a53d0;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a53cc = 0; DAT_121a53d0 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 11834500; body size 91 bytes.
 #line 1 "ENTRY_11834500"
 void FUN_11834500() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a54c4;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a54c0 = 0; DAT_121a54c4 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 11834580; body size 91 bytes.
 #line 1 "ENTRY_11834580"
 void FUN_11834580() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a54e8;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a54e4 = 0; DAT_121a54e8 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 11834600; body size 91 bytes.
 #line 1 "ENTRY_11834600"
 void FUN_11834600() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a54d8;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a54d4 = 0; DAT_121a54d8 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 11834bf0; body size 91 bytes.
 #line 1 "ENTRY_11834bf0"
 void FUN_11834bf0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a55b0;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a55ac = 0; DAT_121a55b0 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 11834d60; body size 91 bytes.
 #line 1 "ENTRY_11834d60"
 void FUN_11834d60() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a5690;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a568c = 0; DAT_121a5690 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 11842710; body size 91 bytes.
 #line 1 "ENTRY_11842710"
 void FUN_11842710() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a628c;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a6288 = 0; DAT_121a628c = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 11844910; body size 91 bytes.
 #line 1 "ENTRY_11844910"
 void FUN_11844910() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a6418;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a6414 = 0; DAT_121a6418 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 11859aa0; body size 91 bytes.
 #line 1 "ENTRY_11859aa0"
 void FUN_11859aa0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a7398;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a7394 = 0; DAT_121a7398 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 11859ba0; body size 91 bytes.
 #line 1 "ENTRY_11859ba0"
 void FUN_11859ba0() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a73b8;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a73b4 = 0; DAT_121a73b8 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 11859c20; body size 91 bytes.
 #line 1 "ENTRY_11859c20"
 void FUN_11859c20() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a73a8;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a73a4 = 0; DAT_121a73a8 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 1185a720; body size 91 bytes.
 #line 1 "ENTRY_1185a720"
 void FUN_1185a720() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a7444;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a7440 = 0; DAT_121a7444 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 1185a810; body size 91 bytes.
 #line 1 "ENTRY_1185a810"
 void FUN_1185a810() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a7454;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a7450 = 0; DAT_121a7454 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 1185a890; body size 91 bytes.
 #line 1 "ENTRY_1185a890"
 void FUN_1185a890() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a7464;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a7460 = 0; DAT_121a7464 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 1185a910; body size 91 bytes.
 #line 1 "ENTRY_1185a910"
 void FUN_1185a910() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a7488;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a7484 = 0; DAT_121a7488 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 1185a990; body size 91 bytes.
 #line 1 "ENTRY_1185a990"
 void FUN_1185a990() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a7478;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a7474 = 0; DAT_121a7478 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 1185b490; body size 91 bytes.
 #line 1 "ENTRY_1185b490"
 void FUN_1185b490() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a7540;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a753c = 0; DAT_121a7540 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 1185b510; body size 91 bytes.
 #line 1 "ENTRY_1185b510"
 void FUN_1185b510() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a7530;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a752c = 0; DAT_121a7530 = 0;
   p->v8();
 }
+}();
 }
 
 // Reference entry 1185b630; body size 91 bytes.
 #line 1 "ENTRY_1185b630"
 void FUN_1185b630() noexcept {
 NativeReleaseIface *p = (NativeReleaseIface *)DAT_121a7568;
+[&]() noexcept {
 if (p != 0) {
   DAT_121a7564 = 0; DAT_121a7568 = 0;
   p->v8();
 }
+}();
 }

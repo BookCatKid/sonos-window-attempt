@@ -112,6 +112,7 @@ def main():
                 'struct NativeRefVtable { virtual void r0(); virtual void r1(); '
                 'virtual void r2(); virtual void r3(); virtual void slot4(int); };\n'
                 'struct NativeGuard {\n'
+                'void *owner;\n'
                 'void thunk_FUN_101b9190(int *);\n'
                 'void thunk_FUN_101b9240();\n'
                 'void thunk_FUN_101b91d0();\n'

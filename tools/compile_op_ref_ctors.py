@@ -64,14 +64,12 @@ def lower(record, reference, base, sections):
     va, vb = vtables
     klass = 'NativeOpRefCtor_FUN_' + entry
     source = (
-        f'{klass}::{klass}(void *param_2) {{\n'
-        f'vptr = (void *)&DAT_{va:08x};\n'
-        f'f4 = param_2;\n'
-        f'if (param_2 != 0) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
-        f'f8 = 0;\n'
+        f'{klass}::{klass}(void *param_2)\n'
+        f'    : NativeOpRefBase_FUN_{entry}(), m4(param_2), f8(0) {{\n'
         f'vptr = (void *)&DAT_{vb:08x};\n'
         f'}}\n')
-    return {**record, 'source': source, 'op_class': klass}
+    return {**record, 'source': source, 'op_class': klass,
+            'first_vtable': f'{va:08x}'}
 
 
 def main():
@@ -99,16 +97,23 @@ def main():
         raise SystemExit('No op-ref constructor accepted')
     library = LIBRARY
     for va in sorted({va for r in candidates for va in
-                      re.findall(r'DAT_([0-9a-f]{8})', r['source'])}):
+                      re.findall(r'DAT_([0-9a-f]{8})', r['source'] + ' DAT_' + r['first_vtable'])}):
         library += f'extern unsigned int DAT_{va};\n'
     library += 'void __cdecl thunk_FUN_1123fce0(void *);\n'
+    library += ('struct NativeOpRefMember_thunk_FUN_101ba1b0 { void *p;\n'
+                'NativeOpRefMember_thunk_FUN_101ba1b0(void *a) : p(a) {\n'
+                'if (a) thunk_FUN_1123fce0((char *)a + 4); }\n'
+                '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n')
     for r in candidates:
         klass = r['op_class']
-        library += (f'struct {klass} {{ void *vptr; void *f4; void *f8; ~{klass}();\n'
+        library += (f'struct NativeOpRefBase_FUN_{r["entry"]} {{ void *vptr;\n'
+                    f'NativeOpRefBase_FUN_{r["entry"]}() {{ vptr = (void *)&DAT_{r["first_vtable"]}; }} }};\n'
+                    f'struct {klass} : NativeOpRefBase_FUN_{r["entry"]} {{\n'
+                    f'NativeOpRefMember_thunk_FUN_101ba1b0 m4; void *f8;\n'
                     f'{klass}(void *param_2); }};\n')
     candidates = [{**r, 'abi_declarations': {'op_ref_library': library}} for r in candidates]
     evidence = {r['entry']: r for r in map(json.loads, (ROOT/'analysis/eh-lifetime-evidence.jsonl').open())}
-    roles = [(f'??1{r["op_class"]}@@QAE@XZ', r['entry'], 0) for r in candidates]
+    roles = [('??1NativeOpRefMember_thunk_FUN_101ba1b0@@QAE@XZ', r['entry'], 0) for r in candidates]
     emit_variant('op_ref_ctors', candidates, evidence, roles)
 
 

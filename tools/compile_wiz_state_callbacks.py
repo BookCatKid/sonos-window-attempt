@@ -62,6 +62,13 @@ def lower(record, reference, base, sections):
     if count(instructions, 'mov', 'dword ptr [ebp - 0x14], esi') + \
             count(instructions, 'mov', 'dword ptr [ebp - 0x18], esi') != 1:
         return None
+    flag_stores = [int(i.op_str.rsplit(', ', 1)[1])
+                   for i in instructions if i.mnemonic == 'mov'
+                   and i.op_str.startswith('dword ptr [ebp - 0x')
+                   and i.op_str.rsplit(', ', 1)[-1] in ('1', '2', '3', '4')]
+    if len(flag_stores) != 1:
+        return None
+    flag = flag_stores[0]
     stores = [int(i.op_str.rsplit('0x', 1)[1], 16)
               for i in instructions if i.mnemonic == 'mov' and i.op_str.startswith('dword ptr [esi], 0x')]
     globals_ = [int(i.op_str.split('0x', 1)[1].split(']')[0], 16)
@@ -94,7 +101,7 @@ def lower(record, reference, base, sections):
             return None
         if count(instructions, 'mov', 'dword ptr [ebp - 0x10], 0') != 1:
             return None
-        source = (f'{klass}::{klass}(NativeWizArg arg) {{\n'
+        source = (f'{klass}::{klass}(RecoveredString_FUN_1008c50b arg) {{\n'
                   f'{{ RecoveredString_FUN_1008c50b name("{name.group(1)}");\n'
                   f'thunk_FUN_106de0c0(&name, arg); }}\n'
                   f'vftable = &DAT_{stores[0]:08x};\n'
@@ -121,14 +128,14 @@ def lower(record, reference, base, sections):
             return None
         if count(instructions, 'mov', 'dword ptr [ebp + 8], 0') != 1:
             return None
-        source = (f'{klass}::{klass}(const char *type, NativeWizArg arg) {{\n'
+        source = (f'{klass}::{klass}(const char *type, RecoveredString_FUN_1008c50b arg) {{\n'
                   f'{{ RecoveredString_FUN_1008c50b name(type);\n'
                   f'thunk_FUN_106de0c0(&name, arg); }}\n'
                   f'vftable = &DAT_{stores[0]:08x};\n'
                   f'thunk_FUN_106dfa00(&arg)->endsWith("{suffix.group(1)}");\n}}\n')
     else:
         return None
-    return {**record, 'source': source, 'wiz_class': klass}
+    return {**record, 'source': source, 'wiz_class': klass, 'flag': flag}
 
 
 def main():
@@ -156,21 +163,26 @@ def main():
     if not candidates:
         raise SystemExit('No wizard state constructor accepted')
     library = LIBRARY.replace('FactoryString', 'RecoveredString_FUN_1008c50b')
-    library += 'struct NativeWizArg { void *rep; __forceinline ~NativeWizArg() { ((SCStr *)this)->int_release(); } };\n'
+    library += ('struct NativeWizDtorBase { ~NativeWizDtorBase(); };\n'
+                'struct NativeWizFlagged { void *rep; ~NativeWizFlagged(); };\n')
     for r in candidates:
         klass = r['wiz_class']
-        params = 'const char *, NativeWizArg' if r['source'].startswith(f'{klass}::{klass}(const char *') \
-            else 'NativeWizArg'
-        library += (f'struct {klass} {{ void *vftable; ~{klass}();\n'
-                    f'void thunk_FUN_106de0c0(RecoveredString_FUN_1008c50b *, NativeWizArg);\n'
-                    f'SCStr *thunk_FUN_106dfa00(NativeWizArg *);\n'
+        params = 'const char *, RecoveredString_FUN_1008c50b' \
+            if r['source'].startswith(f'{klass}::{klass}(const char *') \
+            else 'RecoveredString_FUN_1008c50b'
+        member = 'NativeWizFlagged extra; ' if r['flag'] == 2 else ''
+        library += (f'struct {klass} : NativeWizDtorBase {{ void *vftable; {member}~{klass}();\n'
+                    f'void thunk_FUN_106de0c0(RecoveredString_FUN_1008c50b *, RecoveredString_FUN_1008c50b);\n'
+                    f'SCStr *thunk_FUN_106dfa00(RecoveredString_FUN_1008c50b *);\n'
                     f'{klass}({params}); }};\n')
     candidates = [{**r, 'abi_declarations': {'wiz_state_callback_library': library}} for r in candidates]
     evidence = {r['entry']: r for r in map(json.loads, (ROOT/'analysis/eh-lifetime-evidence.jsonl').open())}
     roles = []
     for r in candidates:
         roles.append(('??1RecoveredString_FUN_1008c50b@@QAE@XZ', r['entry'], 0))
-        roles.append(('??1' + r['wiz_class'] + '@@QAE@XZ', r['entry'], 1))
+        roles.append(('??1NativeWizDtorBase@@QAE@XZ', r['entry'], 1))
+        if r['flag'] == 2:
+            roles.append(('??1NativeWizFlagged@@QAE@XZ', r['entry'], 1))
     emit_variant('wiz_state_callbacks', candidates, evidence, roles)
 
 

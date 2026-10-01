@@ -1,510 +1,510 @@
 [
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "1068b210",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10a07c10",
     "state": 0,
     "call_target": "1008675a",
     "body_entry": "109f7df0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10a07d40",
     "state": 0,
     "call_target": "1005e87c",
     "body_entry": "109f7e60"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10a07e70",
     "state": 0,
     "call_target": "1002ee51",
     "body_entry": "109f7ed0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10a07fa0",
     "state": 0,
     "call_target": "1009770d",
     "body_entry": "109f7f40"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10b72070",
     "state": 0,
     "call_target": "10099175",
     "body_entry": "10b6d510"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10b82d00",
     "state": 0,
     "call_target": "10001c71",
     "body_entry": "10b7cde0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10b8d0f0",
     "state": 0,
     "call_target": "10049eea",
     "body_entry": "10b88040"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10b8d220",
     "state": 0,
     "call_target": "1001f889",
     "body_entry": "10b880b0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10b8d350",
     "state": 0,
     "call_target": "100580cb",
     "body_entry": "10b88120"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10b8d480",
     "state": 0,
     "call_target": "1006c94f",
     "body_entry": "10b88190"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10c4ce50",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10c52a10",
     "state": 0,
     "call_target": "10061f5e",
     "body_entry": "10c4fa20"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10c52b40",
     "state": 0,
     "call_target": "100708dd",
     "body_entry": "10c4fa90"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10c52c70",
     "state": 0,
     "call_target": "1000e278",
     "body_entry": "10c4fb00"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10c52da0",
     "state": 0,
     "call_target": "10006992",
     "body_entry": "10c4fb70"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10c52ed0",
     "state": 0,
     "call_target": "100501f5",
     "body_entry": "10c4fbe0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10c57da0",
     "state": 0,
     "call_target": "10051b4a",
     "body_entry": "10c55b40"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10c57ed0",
     "state": 0,
     "call_target": "1008a3dc",
     "body_entry": "10c55bb0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10c58000",
     "state": 0,
     "call_target": "1005c3d8",
     "body_entry": "10c55c20"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10c58130",
     "state": 0,
     "call_target": "10078484",
     "body_entry": "10c55c90"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10c5a7d0",
     "state": 0,
     "call_target": "10084fe5",
     "body_entry": "10c59850"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10c831c0",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10c832f0",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10cc3370",
     "state": 0,
     "call_target": "1004b641",
     "body_entry": "10cc13f0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10cd7ce0",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10cd7e10",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10cd7f40",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10cd8070",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10cd81a0",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10cd82d0",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10cd8400",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10cd8530",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10cd8660",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10cde7e0",
     "state": 0,
     "call_target": "10056dbb",
     "body_entry": "10cdbf20"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10cde910",
     "state": 0,
     "call_target": "10082aec",
     "body_entry": "10cdbf90"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10ce1c00",
     "state": 0,
     "call_target": "10065e60",
     "body_entry": "10ce1240"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10cf62a0",
     "state": 0,
     "call_target": "10095624",
     "body_entry": "10cf5a30"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10d86860",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10d86990",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10d86ac0",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10d86bf0",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10d9daf0",
     "state": 0,
     "call_target": "10040b5b",
     "body_entry": "10d9ba30"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10de8770",
     "state": 0,
     "call_target": "100664ff",
     "body_entry": "10de5130"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10ea27a0",
     "state": 0,
     "call_target": "1007ac7a",
     "body_entry": "10e93630"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10ef2a30",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10f13920",
     "state": 0,
     "call_target": "100271ba",
     "body_entry": "10f0f320"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10f13a50",
     "state": 0,
     "call_target": "100271ba",
     "body_entry": "10f0f320"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10f13b80",
     "state": 0,
     "call_target": "100271ba",
     "body_entry": "10f0f320"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10f2bb40",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10f35c60",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10f35d90",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10f35ec0",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10f35ff0",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10f61b80",
     "state": 0,
     "call_target": "100312f0",
     "body_entry": "10f57600"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10f61cb0",
     "state": 0,
     "call_target": "100045f2",
     "body_entry": "10f57670"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10f61de0",
     "state": 0,
     "call_target": "100141a5",
     "body_entry": "10f576e0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10f61f10",
     "state": 0,
     "call_target": "10030710",
     "body_entry": "10f57750"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10f677b0",
     "state": 0,
     "call_target": "10053283",
     "body_entry": "10f65d80"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10f73500",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10f79fd0",
     "state": 0,
     "call_target": "10029de8",
     "body_entry": "10f77bd0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10f80a70",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10f80ba0",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10f8e050",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10f8e180",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "10f8e2b0",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "110182c0",
     "state": 0,
     "call_target": "10067634",
     "body_entry": "11017df0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "1102d970",
     "state": 0,
     "call_target": "1001ebdc",
     "body_entry": "11026ee0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "11060a50",
     "state": 0,
     "call_target": "10035931",
     "body_entry": "1105f750"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "11061e90",
     "state": 0,
     "call_target": "1006cde6",
     "body_entry": "11061a70"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "11062e20",
     "state": 0,
     "call_target": "10004c00",
     "body_entry": "110626a0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "11065b80",
     "state": 0,
     "call_target": "1007a27f",
     "body_entry": "101b9cf0"
   },
   {
-    "symbol": "??1NativeVcallGuard1@@QAE@XZ",
+    "symbol": "??1NativeVcallPair@@QAE@XZ",
     "owner_entry": "11067ef0",
     "state": 0,
     "call_target": "100128cd",

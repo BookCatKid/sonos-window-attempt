@@ -120,8 +120,8 @@ class OpImplDtorTests(unittest.TestCase):
         source = candidate['source']
         self.assertIn('NativeOpDtor_FUN_10688910::~NativeOpDtor_FUN_10688910()', source)
         self.assertIn('v0 = (void *)&DAT_118c6304;', source)
-        self.assertIn('m8.vptr = (void *)&DAT_118c634c;', source)
-        self.assertIn('if (fc.rep != 0)', source)
+        self.assertIn('NativeOpDB8_10688910::vptr = (void *)&DAT_118c634c;', source)
+        self.assertIn('if (NativeOpDB8_10688910::rep != 0)', source)
         self.assertIn('((NativeOpDtorIface *)p)->slot8();', source)
         self.assertIn('v30 = (void *)&DAT_118820e4;', source)
         self.assertIn('g_lSCObjCount--;', source)

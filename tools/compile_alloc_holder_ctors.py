@@ -19,11 +19,22 @@ def count(instructions, mnemonic, op_str):
     return sum(1 for i in instructions if i.mnemonic == mnemonic and i.op_str == op_str)
 
 
-def lower(record, reference, base, sections):
+def lower(record, reference, base, sections, evidence):
     if record['body_bytes'] != BODY_BYTES:
         return None
     text = record.get('decompiled_c', '')
     entry = record['entry']
+    actions = (evidence.get(entry) or {}).get('metadata', {}).get('actions', [])
+    if len(actions) != 1 or actions[0].get('state') != 0:
+        return None
+    funclet = actions[0]['instructions']
+    if (len(funclet) < 2 or not funclet[0].startswith('mov ecx, dword ptr [ebp - 0x10]')
+            or not funclet[1].startswith('jmp 0x')):
+        return None
+    read0 = lambda va, size: function_bytes(reference, va, size, base, sections)
+    base_dtor = thunk_target(read0, int(funclet[1].rsplit('0x', 1)[1], 16))
+    if not 0x10000000 <= base_dtor < 0x13000000:
+        return None
     compact = re.sub(r'\s+', ' ', text)
     if 'param_1[1] = 0;' not in compact or 'operator_new' not in text:
         return None
@@ -58,13 +69,14 @@ def lower(record, reference, base, sections):
     if count(instructions, 'add', 'esp, 4') != 1:
         return None
     klass = 'NativeAllocHolder_FUN_' + entry
+    base_klass = f'NativeAllocBase_thunk_FUN_{base_dtor:08x}'
     source = (
         f'{klass}::{klass}(void *param_2) {{\n'
-        f'f0 = param_2;\n'
+        f'this->{base_klass}::f0 = param_2;\n'
         f'f4 = 0;\n'
         f'f4 = operator_new(0x{size:x});\n'
         f'}}\n')
-    return {**record, 'source': source, 'op_class': klass}
+    return {**record, 'source': source, 'op_class': klass, 'base_class': base_klass}
 
 
 def main():
@@ -74,6 +86,7 @@ def main():
         raise SystemExit('External event constructors lack the pinned ninety-function proof')
     reference = DLL.read_bytes()
     base, sections = section_map(reference)
+    evidence = {r['entry']: r for r in map(json.loads, (ROOT/'analysis/eh-lifetime-evidence.jsonl').open())}
     candidates = []
     for export in sorted(ROOT.glob('analysis/bulk*/**/*.jsonl')):
         for line in export.open():
@@ -85,19 +98,20 @@ def main():
                 raise
             if record.get('body_bytes') != BODY_BYTES:
                 continue
-            candidate = lower(record, reference, base, sections)
+            candidate = lower(record, reference, base, sections, evidence)
             if candidate is not None:
                 candidates.append(candidate)
     if not candidates:
         raise SystemExit('No alloc-holder constructor accepted')
     library = LIBRARY + 'void *operator_new(unsigned int);\n'
+    for base_klass in sorted({r['base_class'] for r in candidates}):
+        library += (f'struct {base_klass} {{ void *f0; ~{base_klass}(); }};\n')
     for r in candidates:
         klass = r['op_class']
-        library += (f'struct {klass} {{ void *f0; void *f4; ~{klass}();\n'
+        library += (f'struct {klass} : {r["base_class"]} {{ void *f4;\n'
                     f'{klass}(void *param_2); }};\n')
     candidates = [{**r, 'abi_declarations': {'alloc_holder_library': library}} for r in candidates]
-    evidence = {r['entry']: r for r in map(json.loads, (ROOT/'analysis/eh-lifetime-evidence.jsonl').open())}
-    roles = [(f'??1{r["op_class"]}@@QAE@XZ', r['entry'], 0) for r in candidates]
+    roles = [(f'??1{r["base_class"]}@@QAE@XZ', r['entry'], 0) for r in candidates]
     emit_variant('alloc_holder_ctors', candidates, evidence, roles)
 
 

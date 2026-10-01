@@ -55,10 +55,12 @@ def lower(record, reference, base, sections):
     source = (
         f'void FUN_{entry}() noexcept {{\n'
         f'NativeReleaseIface *p = (NativeReleaseIface *)DAT_{hi:08x};\n'
+        f'[&]() noexcept {{\n'
         f'if (p != 0) {{\n'
         f'  DAT_{hi - 4:08x} = 0; DAT_{hi:08x} = 0;\n'
         f'  p->v8();\n'
         f'}}\n'
+        f'}}();\n'
         f'}}\n')
     return {**record, 'source': source, 'vclass': klass}
 

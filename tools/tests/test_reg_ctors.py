@@ -117,8 +117,8 @@ class RegCtorTests(unittest.TestCase):
         self.assertIsNotNone(candidate)
         source = candidate['source']
         self.assertIn('NativeRegCtor_FUN_10df5400::NativeRegCtor_FUN_10df5400()', source)
-        self.assertIn('NativeRegStr_thunk_FUN_1008c50b text((const char *)&DAT_11937488);',
-                      source)
+        self.assertIn('*(volatile unsigned int *)&text = (unsigned int)this', source)
+        self.assertIn('(char *)&DAT_11937488', source)
         self.assertIn('thunk_FUN_10dee620((SCStr *)&text, 75, 0, FactoryTree());', source)
 
     def test_wrong_calls_rejected(self):

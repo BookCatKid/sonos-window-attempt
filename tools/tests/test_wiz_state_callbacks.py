@@ -74,6 +74,7 @@ def instructions_a():
         instruction(a + 0x43, 'call', '0x10000004'),
         instruction(a + 0x48, 'push', f'0x{SUFFIX_VA:x}'),
         instruction(a + 0x4D, 'mov', 'ecx, eax'),
+        instruction(a + 0x4E, 'mov', 'dword ptr [ebp - 0x10], 1'),
         instruction(a + 0x4F, 'call', '0x10000005'),
         instruction(a + 0x54, 'lea', 'ecx, [ebp + 0xc]'),
         instruction(a + 0x57, 'call', '0x10000006'),
@@ -105,6 +106,7 @@ def instructions_b():
         instruction(a + 0x3E, 'call', '0x10000004'),
         instruction(a + 0x43, 'push', f'0x{SUFFIX_VA:x}'),
         instruction(a + 0x48, 'mov', 'ecx, eax'),
+        instruction(a + 0x49, 'mov', 'dword ptr [ebp - 0x14], 1'),
         instruction(a + 0x4A, 'call', '0x10000005'),
         instruction(a + 0x4F, 'lea', 'ecx, [ebp + 8]'),
         instruction(a + 0x52, 'call', '0x10000006'),
@@ -137,7 +139,7 @@ class WizStateCallbackTests(unittest.TestCase):
         candidate = self.candidate('a', TEXT_A)
         self.assertIsNotNone(candidate)
         self.assertEqual(candidate['wiz_class'], 'NativeWizState_FUN_1061e420')
-        self.assertIn('(const char *type, NativeWizArg arg)', candidate['source'])
+        self.assertIn('(const char *type, RecoveredString_FUN_1008c50b arg)', candidate['source'])
         self.assertIn('RecoveredString_FUN_1008c50b name(type);', candidate['source'])
         self.assertIn('vftable = &DAT_118bea44;', candidate['source'])
         self.assertIn('thunk_FUN_106dfa00(&arg)->endsWith("Page");', candidate['source'])
@@ -146,7 +148,7 @@ class WizStateCallbackTests(unittest.TestCase):
     def test_variant_b_shape_and_source(self):
         candidate = self.candidate('b', TEXT_B)
         self.assertIsNotNone(candidate)
-        self.assertIn('(NativeWizArg arg)', candidate['source'])
+        self.assertIn('(RecoveredString_FUN_1008c50b arg)', candidate['source'])
         self.assertIn('name("SCSubmitDiagsWizardDonePage")', candidate['source'])
         self.assertIn('vftable = &DAT_118bea44;', candidate['source'])
         self.assertIn('vftable = &DAT_118bea58;', candidate['source'])

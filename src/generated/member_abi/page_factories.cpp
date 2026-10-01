@@ -1908,7 +1908,7 @@ extern unsigned int DAT_1190a6b0;
 void thunk_FUN_1148a50e(void *, unsigned int);
 __forceinline void *operator new(unsigned int size) { return operator_new(size); }
 __forceinline void operator delete(void *p, unsigned int size) { thunk_FUN_1148a50e(p, size); }
-struct NativePageHelper { unsigned int thunk_FUN_10eae120(void *owner, unsigned int a, unsigned int b); };
+struct NativePageHelper { void *f0; void *f4; void *f8; unsigned int thunk_FUN_10eae120(void *owner, unsigned int a, unsigned int b); };
 struct NativeWizardPage_FUN_1061ffa0 {
 void *v0; char p0[12]; void *v1; char p1[120]; void *v2; char p2[24]; void *v3; char tail[52];
 void thunk_FUN_10eb64f0(unsigned int);

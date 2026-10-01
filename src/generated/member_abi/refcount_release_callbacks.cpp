@@ -132,6 +132,7 @@ static_assert(sizeof(Event_thunk_FUN_10def0d0)==24,"Event value");
 int __cdecl SCThreadSafeDec(int *);
 struct NativeRefVtable { virtual void r0(); virtual void r1(); virtual void r2(); virtual void r3(); virtual void slot4(int); };
 struct NativeGuard {
+void *owner;
 void thunk_FUN_101b9190(int *);
 void thunk_FUN_101b9240();
 void thunk_FUN_101b91d0();

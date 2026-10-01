@@ -59,12 +59,16 @@ class AllocHolderCtorTests(unittest.TestCase):
     def candidate(self, text=TEXT, instructions=None):
         record = {'entry': f'{ENTRY:08x}', 'body_bytes': 93,
                   'decompiled_c': text}
+        evidence = {f'{ENTRY:08x}': {'metadata': {'actions': [
+            {'state': 0, 'instructions': [
+                'mov ecx, dword ptr [ebp - 0x10]', 'jmp 0x1005270c',
+                'int3', 'int3']}]}}}
         with patch.object(hold, 'function_bytes', return_value=b'\0' * 93), \
              patch.object(hold, 'thunk_target', side_effect=lambda read, va: hold.OPERATOR_NEW), \
              patch.object(hold, 'DISASSEMBLER') as decoder:
             decoder.disasm.return_value = (instructions if instructions is not None
                                            else ctor_instructions())
-            return hold.lower(record, None, 0, [])
+            return hold.lower(record, None, 0, [], evidence)
 
     def test_ctor_shape_and_source(self):
         candidate = self.candidate()

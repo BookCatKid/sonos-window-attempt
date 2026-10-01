@@ -138,7 +138,7 @@ def lower(record, reference, base, sections):
     klass = 'NativeRegCtor_FUN_' + entry
     source = (
         f'{klass}::{klass}() {{\n'
-        f'NativeRegStr_thunk_FUN_1008c50b text((const char *)&DAT_{name_va:08x});\n'
+        f'NativeRegStr_thunk_FUN_1008c50b text{{(*(volatile unsigned int *)&text = (unsigned int)this, _ReadWriteBarrier(), (char *)&DAT_{name_va:08x})}};\n'
         f'((FactoryConsumer *)this)->thunk_FUN_10dee620((SCStr *)&text, {imm}, 0, FactoryTree());\n'
         f'}}\n')
     return {**record, 'source': source, 'vclass': klass, 'name_va': name_va}

@@ -1,608 +1,608 @@
 [
   {
-    "symbol": "??1NativeAllocHolder_FUN_10683170@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10683f60@@QAE@XZ",
     "owner_entry": "10683170",
     "state": 0,
     "call_target": "1005270c",
     "body_entry": "10683f60"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_106831f0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10683f80@@QAE@XZ",
     "owner_entry": "106831f0",
     "state": 0,
     "call_target": "100138b8",
     "body_entry": "10683f80"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_106a3b50@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_1027f780@@QAE@XZ",
     "owner_entry": "106a3b50",
     "state": 0,
     "call_target": "1006dedf",
     "body_entry": "1027f780"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_106b09f0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_106b3630@@QAE@XZ",
     "owner_entry": "106b09f0",
     "state": 0,
     "call_target": "100701da",
     "body_entry": "106b3630"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_106b0a70@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_106b3650@@QAE@XZ",
     "owner_entry": "106b0a70",
     "state": 0,
     "call_target": "1008546d",
     "body_entry": "106b3650"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_106d2580@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_106d2b10@@QAE@XZ",
     "owner_entry": "106d2580",
     "state": 0,
     "call_target": "10094fee",
     "body_entry": "106d2b10"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_106d9d00@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_106da2e0@@QAE@XZ",
     "owner_entry": "106d9d00",
     "state": 0,
     "call_target": "10056000",
     "body_entry": "106da2e0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_106d9d80@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_106da300@@QAE@XZ",
     "owner_entry": "106d9d80",
     "state": 0,
     "call_target": "100224c1",
     "body_entry": "106da300"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_106ddec0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_106de510@@QAE@XZ",
     "owner_entry": "106ddec0",
     "state": 0,
     "call_target": "1003e7c0",
     "body_entry": "106de510"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_106ddf40@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_106de530@@QAE@XZ",
     "owner_entry": "106ddf40",
     "state": 0,
     "call_target": "10094a30",
     "body_entry": "106de530"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_106e27f0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_106e4f80@@QAE@XZ",
     "owner_entry": "106e27f0",
     "state": 0,
     "call_target": "1001af64",
     "body_entry": "106e4f80"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10726ca0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_1072ae00@@QAE@XZ",
     "owner_entry": "10726ca0",
     "state": 0,
     "call_target": "10059af7",
     "body_entry": "1072ae00"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10829d10@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_1082b4a0@@QAE@XZ",
     "owner_entry": "10829d10",
     "state": 0,
     "call_target": "1003d46a",
     "body_entry": "1082b4a0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_1098ef60@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_109901d0@@QAE@XZ",
     "owner_entry": "1098ef60",
     "state": 0,
     "call_target": "10053e5e",
     "body_entry": "109901d0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10af56e0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10af6910@@QAE@XZ",
     "owner_entry": "10af56e0",
     "state": 0,
     "call_target": "1005f86c",
     "body_entry": "10af6910"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10af5760@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10af6930@@QAE@XZ",
     "owner_entry": "10af5760",
     "state": 0,
     "call_target": "10037f3d",
     "body_entry": "10af6930"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10b04170@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10b04d80@@QAE@XZ",
     "owner_entry": "10b04170",
     "state": 0,
     "call_target": "1003a7e7",
     "body_entry": "10b04d80"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10b5b4c0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10b5da30@@QAE@XZ",
     "owner_entry": "10b5b4c0",
     "state": 0,
     "call_target": "1007a2cf",
     "body_entry": "10b5da30"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10ba5310@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10ba6c30@@QAE@XZ",
     "owner_entry": "10ba5310",
     "state": 0,
     "call_target": "10015b90",
     "body_entry": "10ba6c30"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10ba5390@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10ba6c50@@QAE@XZ",
     "owner_entry": "10ba5390",
     "state": 0,
     "call_target": "1001fb8b",
     "body_entry": "10ba6c50"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10bb5350@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10bb58d0@@QAE@XZ",
     "owner_entry": "10bb5350",
     "state": 0,
     "call_target": "100732b8",
     "body_entry": "10bb58d0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10bc0100@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10bc0390@@QAE@XZ",
     "owner_entry": "10bc0100",
     "state": 0,
     "call_target": "10042087",
     "body_entry": "10bc0390"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10bd3750@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10bd6260@@QAE@XZ",
     "owner_entry": "10bd3750",
     "state": 0,
     "call_target": "1003dac8",
     "body_entry": "10bd6260"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10bd37d0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10bd6280@@QAE@XZ",
     "owner_entry": "10bd37d0",
     "state": 0,
     "call_target": "100749dd",
     "body_entry": "10bd6280"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10bd3850@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10bd62a0@@QAE@XZ",
     "owner_entry": "10bd3850",
     "state": 0,
     "call_target": "100593a4",
     "body_entry": "10bd62a0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10bd38d0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10bd62c0@@QAE@XZ",
     "owner_entry": "10bd38d0",
     "state": 0,
     "call_target": "10092235",
     "body_entry": "10bd62c0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10bd3950@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10bd62e0@@QAE@XZ",
     "owner_entry": "10bd3950",
     "state": 0,
     "call_target": "1004a4c6",
     "body_entry": "10bd62e0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10bd39d0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10bd6300@@QAE@XZ",
     "owner_entry": "10bd39d0",
     "state": 0,
     "call_target": "1001015e",
     "body_entry": "10bd6300"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10bd3a50@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10bd6320@@QAE@XZ",
     "owner_entry": "10bd3a50",
     "state": 0,
     "call_target": "1002e3cf",
     "body_entry": "10bd6320"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10bd3ad0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10bd6340@@QAE@XZ",
     "owner_entry": "10bd3ad0",
     "state": 0,
     "call_target": "100760df",
     "body_entry": "10bd6340"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10bd3b50@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10bd6360@@QAE@XZ",
     "owner_entry": "10bd3b50",
     "state": 0,
     "call_target": "1001e830",
     "body_entry": "10bd6360"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10c5eb40@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10c5f930@@QAE@XZ",
     "owner_entry": "10c5eb40",
     "state": 0,
     "call_target": "1002ce8a",
     "body_entry": "10c5f930"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10cb8f90@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10cb9340@@QAE@XZ",
     "owner_entry": "10cb8f90",
     "state": 0,
     "call_target": "1005bc49",
     "body_entry": "10cb9340"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10d26370@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10d27420@@QAE@XZ",
     "owner_entry": "10d26370",
     "state": 0,
     "call_target": "1009909e",
     "body_entry": "10d27420"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10d68aa0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10d69760@@QAE@XZ",
     "owner_entry": "10d68aa0",
     "state": 0,
     "call_target": "10008940",
     "body_entry": "10d69760"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10d9f590@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10d9f950@@QAE@XZ",
     "owner_entry": "10d9f590",
     "state": 0,
     "call_target": "10043f4a",
     "body_entry": "10d9f950"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10db3130@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10db3250@@QAE@XZ",
     "owner_entry": "10db3130",
     "state": 0,
     "call_target": "1008a73d",
     "body_entry": "10db3250"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10db31b0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10db3270@@QAE@XZ",
     "owner_entry": "10db31b0",
     "state": 0,
     "call_target": "1006cee0",
     "body_entry": "10db3270"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10dd72e0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10dd7ec0@@QAE@XZ",
     "owner_entry": "10dd72e0",
     "state": 0,
     "call_target": "10071dd7",
     "body_entry": "10dd7ec0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10dd7360@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10dd7ee0@@QAE@XZ",
     "owner_entry": "10dd7360",
     "state": 0,
     "call_target": "1004cd93",
     "body_entry": "10dd7ee0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10dee300@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10deef50@@QAE@XZ",
     "owner_entry": "10dee300",
     "state": 0,
     "call_target": "10009386",
     "body_entry": "10deef50"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10df4f60@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10deef70@@QAE@XZ",
     "owner_entry": "10df4f60",
     "state": 0,
     "call_target": "10061608",
     "body_entry": "10deef70"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10e0bf90@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10e0c410@@QAE@XZ",
     "owner_entry": "10e0bf90",
     "state": 0,
     "call_target": "10019c63",
     "body_entry": "10e0c410"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10e0c010@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10e0c430@@QAE@XZ",
     "owner_entry": "10e0c010",
     "state": 0,
     "call_target": "1007358d",
     "body_entry": "10e0c430"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10e5c060@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10e5e300@@QAE@XZ",
     "owner_entry": "10e5c060",
     "state": 0,
     "call_target": "1004dc84",
     "body_entry": "10e5e300"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10eb6130@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10eb66d0@@QAE@XZ",
     "owner_entry": "10eb6130",
     "state": 0,
     "call_target": "1005fffb",
     "body_entry": "10eb66d0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10eb61b0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10eb66f0@@QAE@XZ",
     "owner_entry": "10eb61b0",
     "state": 0,
     "call_target": "1004fb4c",
     "body_entry": "10eb66f0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10eb6230@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10eb6710@@QAE@XZ",
     "owner_entry": "10eb6230",
     "state": 0,
     "call_target": "1008b8f9",
     "body_entry": "10eb6710"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10ed0a10@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10ed0c50@@QAE@XZ",
     "owner_entry": "10ed0a10",
     "state": 0,
     "call_target": "10063f20",
     "body_entry": "10ed0c50"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10eedb00@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10eedbb0@@QAE@XZ",
     "owner_entry": "10eedb00",
     "state": 0,
     "call_target": "1003dd39",
     "body_entry": "10eedbb0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10eef110@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10eef240@@QAE@XZ",
     "owner_entry": "10eef110",
     "state": 0,
     "call_target": "10072e94",
     "body_entry": "10eef240"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10ef4e80@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10ef5120@@QAE@XZ",
     "owner_entry": "10ef4e80",
     "state": 0,
     "call_target": "1004984b",
     "body_entry": "10ef5120"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10ef9d30@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10ef9de0@@QAE@XZ",
     "owner_entry": "10ef9d30",
     "state": 0,
     "call_target": "1006d575",
     "body_entry": "10ef9de0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10f02250@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10f02dd0@@QAE@XZ",
     "owner_entry": "10f02250",
     "state": 0,
     "call_target": "1008047c",
     "body_entry": "10f02dd0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10f022d0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10eab2a0@@QAE@XZ",
     "owner_entry": "10f022d0",
     "state": 0,
     "call_target": "1001f0d7",
     "body_entry": "10eab2a0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10f16f90@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10f174e0@@QAE@XZ",
     "owner_entry": "10f16f90",
     "state": 0,
     "call_target": "10055998",
     "body_entry": "10f174e0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10f1bfc0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10f1c470@@QAE@XZ",
     "owner_entry": "10f1bfc0",
     "state": 0,
     "call_target": "1004c537",
     "body_entry": "10f1c470"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10f1c040@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10f1c490@@QAE@XZ",
     "owner_entry": "10f1c040",
     "state": 0,
     "call_target": "10066991",
     "body_entry": "10f1c490"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10f1c0c0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10f1c4b0@@QAE@XZ",
     "owner_entry": "10f1c0c0",
     "state": 0,
     "call_target": "100136dd",
     "body_entry": "10f1c4b0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10f24b20@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10f25b40@@QAE@XZ",
     "owner_entry": "10f24b20",
     "state": 0,
     "call_target": "100614b4",
     "body_entry": "10f25b40"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10f37ea0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10f38170@@QAE@XZ",
     "owner_entry": "10f37ea0",
     "state": 0,
     "call_target": "1009253c",
     "body_entry": "10f38170"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10f37f20@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10f38190@@QAE@XZ",
     "owner_entry": "10f37f20",
     "state": 0,
     "call_target": "100318d1",
     "body_entry": "10f38190"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10f6b9e0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10f6bc80@@QAE@XZ",
     "owner_entry": "10f6b9e0",
     "state": 0,
     "call_target": "100374b1",
     "body_entry": "10f6bc80"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10f7c710@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10f7db60@@QAE@XZ",
     "owner_entry": "10f7c710",
     "state": 0,
     "call_target": "1008ccf9",
     "body_entry": "10f7db60"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10f9a790@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10f9b030@@QAE@XZ",
     "owner_entry": "10f9a790",
     "state": 0,
     "call_target": "10097fd2",
     "body_entry": "10f9b030"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10f9a810@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10f9b050@@QAE@XZ",
     "owner_entry": "10f9a810",
     "state": 0,
     "call_target": "1004d61c",
     "body_entry": "10f9b050"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10fc1320@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10fc1d60@@QAE@XZ",
     "owner_entry": "10fc1320",
     "state": 0,
     "call_target": "1006cd87",
     "body_entry": "10fc1d60"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_10fec2e0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_10fed720@@QAE@XZ",
     "owner_entry": "10fec2e0",
     "state": 0,
     "call_target": "1008af94",
     "body_entry": "10fed720"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_110262f0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_11027110@@QAE@XZ",
     "owner_entry": "110262f0",
     "state": 0,
     "call_target": "1008fc47",
     "body_entry": "11027110"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_11076d30@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_11078bc0@@QAE@XZ",
     "owner_entry": "11076d30",
     "state": 0,
     "call_target": "100173e1",
     "body_entry": "11078bc0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_11076db0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_11078be0@@QAE@XZ",
     "owner_entry": "11076db0",
     "state": 0,
     "call_target": "10062733",
     "body_entry": "11078be0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_11076e30@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_11078c00@@QAE@XZ",
     "owner_entry": "11076e30",
     "state": 0,
     "call_target": "1002f87e",
     "body_entry": "11078c00"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_11076eb0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_11078c20@@QAE@XZ",
     "owner_entry": "11076eb0",
     "state": 0,
     "call_target": "10021a44",
     "body_entry": "11078c20"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_11098f50@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_110991c0@@QAE@XZ",
     "owner_entry": "11098f50",
     "state": 0,
     "call_target": "1006d70f",
     "body_entry": "110991c0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_110c6600@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_110c79f0@@QAE@XZ",
     "owner_entry": "110c6600",
     "state": 0,
     "call_target": "10078e7f",
     "body_entry": "110c79f0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_110ee5a0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_110f0440@@QAE@XZ",
     "owner_entry": "110ee5a0",
     "state": 0,
     "call_target": "1002bf1c",
     "body_entry": "110f0440"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_111099f0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_1110b2f0@@QAE@XZ",
     "owner_entry": "111099f0",
     "state": 0,
     "call_target": "10067067",
     "body_entry": "1110b2f0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_1117e280@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_1117fa40@@QAE@XZ",
     "owner_entry": "1117e280",
     "state": 0,
     "call_target": "1007fed2",
     "body_entry": "1117fa40"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_1117e300@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_1117fa60@@QAE@XZ",
     "owner_entry": "1117e300",
     "state": 0,
     "call_target": "10006965",
     "body_entry": "1117fa60"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_1117e380@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_1117fa80@@QAE@XZ",
     "owner_entry": "1117e380",
     "state": 0,
     "call_target": "10063b7e",
     "body_entry": "1117fa80"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_1117e400@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_1117faa0@@QAE@XZ",
     "owner_entry": "1117e400",
     "state": 0,
     "call_target": "1001181a",
     "body_entry": "1117faa0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_1117e480@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_1117fac0@@QAE@XZ",
     "owner_entry": "1117e480",
     "state": 0,
     "call_target": "1000bd8e",
     "body_entry": "1117fac0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_1118d950@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_1118dcc0@@QAE@XZ",
     "owner_entry": "1118d950",
     "state": 0,
     "call_target": "10033ec9",
     "body_entry": "1118dcc0"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_111c3030@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_111c3960@@QAE@XZ",
     "owner_entry": "111c3030",
     "state": 0,
     "call_target": "1001afbe",
     "body_entry": "111c3960"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_111c9ff0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_111d2f20@@QAE@XZ",
     "owner_entry": "111c9ff0",
     "state": 0,
     "call_target": "1000878d",
     "body_entry": "111d2f20"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_1126ddf0@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_1126e270@@QAE@XZ",
     "owner_entry": "1126ddf0",
     "state": 0,
     "call_target": "1005e63d",
     "body_entry": "1126e270"
   },
   {
-    "symbol": "??1NativeAllocHolder_FUN_11294860@@QAE@XZ",
+    "symbol": "??1NativeAllocBase_thunk_FUN_11294ae0@@QAE@XZ",
     "owner_entry": "11294860",
     "state": 0,
     "call_target": "1006ad98",

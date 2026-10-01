@@ -128,7 +128,7 @@ def main():
     library += '__forceinline void *operator new(unsigned int size) { return operator_new(size); }\n'
     library += ('__forceinline void operator delete(void *p, unsigned int size)'
                 ' { thunk_FUN_1148a50e(p, size); }\n'
-                'struct NativePageHelper { '
+                'struct NativePageHelper { void *f0; void *f4; void *f8; '
                 'unsigned int thunk_FUN_10eae120(void *owner, unsigned int a, unsigned int b); };\n')
     for r in candidates:
         klass = r['page_class']

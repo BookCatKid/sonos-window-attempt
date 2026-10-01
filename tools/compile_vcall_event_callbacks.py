@@ -95,14 +95,14 @@ def lower(record, reference, base, sections):
         f'void {klass}::FUN_{entry}(unsigned int param_2, unsigned int param_3) {{\n'
         f'NativeVcallThis8 *piVar1 = (NativeVcallThis8 *)((char *)this - 8);\n'
         f'NativeVcallObj *piVar2 = 0;\n'
-        f'NativeVcallGuard1 g1; g1.p = piVar1;\n'
-        f'NativeVcallGuard2 g2; g2.p = 0;\n'
         f'if (piVar1 != 0) {{\n'
         f'  piVar2 = piVar1->vC();\n'
-        f'  g2.p = piVar2;\n'
         f'  piVar2->v4();\n'
         f'}}\n'
         f'f1c = (unsigned short)param_3;\n'
+        f'NativeVcallPair pair;\n'
+        f'pair.rep = piVar1;\n'
+        f'pair.next = piVar2;\n'
         f'f14 = 0;\n'
         f'm28.v18();\n'
         f'if (f20 != 0 && *f20 != 0 && f24 != 0 && *f24 != 0) {{\n'
@@ -117,7 +117,6 @@ def lower(record, reference, base, sections):
         f'  }}\n'
         f'  f4 = 0; f8 = 0;\n'
         f'}}\n'
-        f'if (g2.p != 0) ((NativeVcallObj *)g2.p)->v8();\n'
         f'}}\n')
     return {**record, 'source': source, 'vclass': klass}
 
@@ -156,8 +155,11 @@ def main():
     library += ('};\n'
                 'struct NativeVcallM28 { virtual void *v0(); virtual void *v4(); virtual void *v8();\n'
                 'virtual void *vC(); virtual void *v10(); virtual void *v14(); virtual void v18(); };\n'
-                'struct NativeVcallGuard1 { void *p; ~NativeVcallGuard1(); };\n'
-                'struct NativeVcallGuard2 { void *p; ~NativeVcallGuard2(); };\n')
+                'struct NativeVcallPair { NativeVcallThis8 *rep; NativeVcallObj *next;\n'
+                '  __forceinline ~NativeVcallPair() noexcept {\n'
+                '    NativeVcallObj *t = next;\n'
+                '    if (t != 0) { rep = 0; next = 0; t->v8(); } }\n'
+                '  NativeVcallPair(); };\n')
     for r in candidates:
         klass = r['vclass']
         library += (f'struct {klass} {{\n'
@@ -168,7 +170,7 @@ def main():
                     f'void FUN_{r["entry"]}(unsigned int param_2, unsigned int param_3);\n}};\n')
     candidates = [{**r, 'abi_declarations': {'vcall_library': library}} for r in candidates]
     evidence = {r['entry']: r for r in map(json.loads, (ROOT/'analysis/eh-lifetime-evidence.jsonl').open())}
-    roles = [('??1NativeVcallGuard1@@QAE@XZ', r['entry'], 0) for r in candidates]
+    roles = [('??1NativeVcallPair@@QAE@XZ', r['entry'], 0) for r in candidates]
     emit_variant('vcall_event_callbacks', candidates, evidence, roles)
 
 
