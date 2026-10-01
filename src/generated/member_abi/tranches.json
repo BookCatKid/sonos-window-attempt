@@ -202,5 +202,9 @@
   {
     "object": "event_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-event-callbacks"
+  },
+  {
+    "object": "property_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-property-callbacks"
   }
 ]

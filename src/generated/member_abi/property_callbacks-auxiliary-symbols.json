@@ -1,0 +1,44 @@
+[
+  {
+    "symbol": "??1NativePropertyEvent_10e034d0@@QAE@XZ",
+    "owner_entry": "10e034d0",
+    "state": 2,
+    "call_target": "1007f0f4",
+    "body_entry": "10dfec60"
+  },
+  {
+    "symbol": "??1NativePropertyEvent_10e03880@@QAE@XZ",
+    "owner_entry": "10e03880",
+    "state": 2,
+    "call_target": "10028aec",
+    "body_entry": "10838890"
+  },
+  {
+    "symbol": "??1NativePropertyEvent_10e04070@@QAE@XZ",
+    "owner_entry": "10e04070",
+    "state": 2,
+    "call_target": "1004209b",
+    "body_entry": "10893950"
+  },
+  {
+    "symbol": "??1NativePropertyEvent_10e058e0@@QAE@XZ",
+    "owner_entry": "10e058e0",
+    "state": 2,
+    "call_target": "10010edd",
+    "body_entry": "10a9bbe0"
+  },
+  {
+    "symbol": "??1NativePropertyEvent_10e05e00@@QAE@XZ",
+    "owner_entry": "10e05e00",
+    "state": 2,
+    "call_target": "1005be7e",
+    "body_entry": "10908520"
+  },
+  {
+    "symbol": "??1NativePropertyEvent_10e06030@@QAE@XZ",
+    "owner_entry": "10e06030",
+    "state": 2,
+    "call_target": "1007bc47",
+    "body_entry": "10600270"
+  }
+]

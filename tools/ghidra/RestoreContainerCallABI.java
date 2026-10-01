@@ -74,9 +74,27 @@ public class RestoreContainerCallABI extends GhidraScript {
                 target.updateFunction("__thiscall",result,Function.FunctionUpdateType.CUSTOM_STORAGE,true,SourceType.USER_DEFINED,parameters);
                 target.setStackPurgeSize(20);
                 if(args.length==3) {
+                    // Native calls push value then key; slots 7 and 10 consume
+                    // two four-byte arguments with the bag receiver in ECX.
+                    StructureDataType bag=new StructureDataType(new CategoryPath("/RecoveryProof"),"RecoveredPropertyBag",0,dtm);
+                    DataType bagPointer=new PointerDataType(bag,4,dtm);
+                    FunctionDefinitionDataType setString=new FunctionDefinitionDataType("RecoveredSetString",dtm);
+                    setString.setCallingConvention("__thiscall");setString.setReturnType(VoidDataType.dataType);
+                    setString.setArguments(new ParameterDefinition[]{new ParameterDefinitionImpl("receiver",bagPointer,null),
+                        new ParameterDefinitionImpl("key",pointer,null),new ParameterDefinitionImpl("value",pointer,null)});
+                    FunctionDefinitionDataType setInteger=new FunctionDefinitionDataType("RecoveredSetInteger",dtm);
+                    setInteger.setCallingConvention("__thiscall");setInteger.setReturnType(VoidDataType.dataType);
+                    setInteger.setArguments(new ParameterDefinition[]{new ParameterDefinitionImpl("receiver",bagPointer,null),
+                        new ParameterDefinitionImpl("key",pointer,null),new ParameterDefinitionImpl("value",UnsignedIntegerDataType.dataType,null)});
+                    StructureDataType bagVtable=new StructureDataType(new CategoryPath("/RecoveryProof"),"RecoveredPropertyBagVtable",40,dtm);
+                    bagVtable.replaceAtOffset(28,new PointerDataType(setString,4,dtm),4,"setString",null);
+                    bagVtable.add(new PointerDataType(setInteger,4,dtm),4,"setInteger",null);
+                    bag.add(new PointerDataType(bagVtable,4,dtm),4,"vtable",null);
+                    DataType resolvedBag=dtm.addDataType(bag,DataTypeConflictHandler.REPLACE_HANDLER);
+                    bagPointer=new PointerDataType(resolvedBag,4,dtm);
                     StructureDataType event=new StructureDataType(new CategoryPath("/RecoveryProof"),"RecoveredEvent",0,dtm);
                     event.add(pointer,4,"text_rep",null);event.add(UnsignedIntegerDataType.dataType,4,"event_id",null);
-                    event.add(pointer,4,"properties",null);event.add(pointer,4,"interface_pointer",null);
+                    event.add(bagPointer,4,"properties",null);event.add(pointer,4,"interface_pointer",null);
                     event.add(container,8,"tree",null);
                     DataType eventType=dtm.addDataType(event,DataTypeConflictHandler.REPLACE_HANDLER);
                     DataType eventPointer=new PointerDataType(eventType,4,dtm);
