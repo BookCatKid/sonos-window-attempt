@@ -168,6 +168,18 @@
     "directory": "analysis/ctor-scope-named-event-sret"
   },
   {
+    "object": "named_event_memberinit_noexcept_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-memberinit-noexcept"
+  },
+  {
+    "object": "named_event_placement_base_noexcept_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-placement-base-noexcept"
+  },
+  {
+    "object": "named_event_holder_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-holder"
+  },
+  {
     "object": "wiz_temp_current_reference_flags",
     "directory": "analysis/ctor-scope-wiz-temp-current"
   },

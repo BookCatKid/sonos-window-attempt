@@ -474,6 +474,30 @@ def named_event_variants():
                               'thunk_FUN_10df9440();\n'),
             'NativeNamedEvent_FUN_10df9440 event = thunk_FUN_10df9440();\n'
             'NativeNamedEvent_FUN_10df9440 *pe = &event;\n'),
+        # noexcept init: the arm need not precede the (nonthrowing) call so
+        # MSVC's scheduler can float it past the next arg-eval — matching the
+        # reference's late arm while keeping pe = call-result → mov esi,eax
+        'named_event_memberinit_noexcept': (
+            ctor_decl.replace('NativeNamedEvent_FUN_10df9440();',
+                              'NativeNamedEvent_FUN_10df9440 '
+                              '*thunk_FUN_10df9440() noexcept;'),
+            'NativeNamedEvent_FUN_10df9440 event;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = event.thunk_FUN_10df9440();\n'),
+        # noexcept placement-new into a tracked base buffer: the placement
+        # call is nonthrowing so the arm floats late like the reference
+        'named_event_placement_base_noexcept': (
+            ctor_decl.replace('NativeNamedEvent_FUN_10df9440();',
+                              'NativeNamedEvent_FUN_10df9440() noexcept;'),
+            'Event_thunk_FUN_10def0d0 event;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = (NativeNamedEvent_FUN_10df9440 *)\n'
+            '    new (&event) NativeNamedEvent_FUN_10df9440();\n'),
+        # holder aggregate: MSVC lowers the member construction as a ctor-call
+        # scope (lazy arm after the call) and &h.event may reuse eax → esi
+        'named_event_holder': (
+            ctor_decl +
+            'struct NativeEventHolder { NativeNamedEvent_FUN_10df9440 event; };\n',
+            'NativeEventHolder holder;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = &holder.event;\n'),
     }
     out = {}
     for name, (decl, opening) in variants.items():
