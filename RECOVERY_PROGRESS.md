@@ -585,3 +585,46 @@ and compare `property_callbacks_reference_flags` using
 Admission requires complete body, relocation, and EH proofs. Next ABI work can
 recover the string-producing call used by the 329-byte callbacks; its omitted
 receiver/result storage currently prevents faithful source generation.
+
+## Property callback ABI and pinned lifetime probes (2026-09-30)
+
+Connectivity returned and the previously queued source commits were pushed.
+Pinned run 36797974225 compiles the fourteen named-key callbacks, but all fail
+the exact gate: their bodies are seven bytes shorter per property and their
+stack homes differ. Temporary keys passed by const reference in run 36798507703
+produce the same mismatch, disproving that source change as a sufficient fix.
+Neither experiment enters the authoritative default manifest; the accepted
+coverage and physical PE placement remain unchanged.
+
+The isolated project additionally restores FUN_1034e100 as a member taking a
+caller-provided four-byte string destination, returning that destination in EAX
+and popping four bytes. Both native exits establish this ABI. The caller loads
+ECX from its first incoming word and pushes a frame-local destination pointer.
+The resulting 132-function export exposes three changed decompilations, including
+the two 329-byte callbacks. Original-project hashes remain unchanged in
+`analysis/container-call-abi/string-result/execution-proof.json`.
+
+`tools/compile_string_property_callbacks.py` now generates those two genuine
+C++ callbacks (658 candidate bytes) with separate string-result and event
+lifetimes. Both named-key and temporary-key variants compile locally. The
+named-key variant in run 36798507703 also adds zero bytes; the temporary-key
+variant is tested in run 36798702182. Additional property-key variants test
+volatile representation storage and compiler barriers, including removal of
+the manually forced outgoing-tree stack home. These remain experimental until
+complete body, relocation, and EH verification succeeds. Forty-nine tests pass;
+the attempted CodeRabbit review disconnected and supplied no completed result.
+
+Run 36799004855 (the same source head as 36798702182) provides the downloaded
+temporary-string callback evidence: both bodies still fail and add zero bytes.
+Run 36799109447 builds the three storage/barrier variants at source head
+64da924; its artifact is pending retrieval. A completed CodeRabbit review in
+`analysis/property-callback-final-tooling-review.txt` reports zero findings for
+the two generators, ABI runner/script, shared index writer, and parser tests.
+
+`analysis/property-callback-lifetime-differences.json` records all fourteen
+reference/compiler frame allocations, zero stores, and cleanup sizes. The
+measured missing-byte counts are exactly 7, 14, and 21, tracking property count;
+this evidence narrows the next source work to zero-store retention and reuse of
+the outgoing-container pointer home by the first key. The storage-variant
+artifact download is being retried after an incomplete transfer; no acceptance
+is inferred from a successful compilation or partial download.
