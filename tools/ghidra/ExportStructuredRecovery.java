@@ -10,6 +10,8 @@ import ghidra.program.model.symbol.*;
 import java.nio.file.*;
 import java.io.*;
 import java.util.*;
+import java.util.zip.GZIPOutputStream;
+import java.nio.charset.StandardCharsets;
 
 public class ExportStructuredRecovery extends GhidraScript {
     private final Gson gson = new Gson();
@@ -45,7 +47,9 @@ public class ExportStructuredRecovery extends GhidraScript {
         if(!actual.equals(root.resolve("analysis/container-call-abi/ghidra").toRealPath()))
             throw new IOException("Structured recovery requires the isolated project");
         DecompInterface d=new DecompInterface();if(!d.openProgram(currentProgram))throw new IOException("Cannot open decompiler");
-        try(PrintWriter out=new PrintWriter(Files.newBufferedWriter(Path.of(args[1])))) {
+        OutputStream output=Files.newOutputStream(Path.of(args[1]));
+        if(args[1].endsWith(".gz"))output=new GZIPOutputStream(output);
+        try(PrintWriter out=new PrintWriter(new OutputStreamWriter(output,StandardCharsets.UTF_8))) {
             for(String entry:Files.readAllLines(Path.of(args[0]))) {
                 monitor.checkCancelled();Function f=getFunctionAt(toAddr(entry.trim()));
                 if(f==null||f.isThunk())throw new IOException("Expected native non-thunk function "+entry);
@@ -70,8 +74,10 @@ public class ExportStructuredRecovery extends GhidraScript {
                 }row.put("instructions",instructions);
                 DecompileResults result=d.decompileFunction(f,90,monitor);
                 if(!result.decompileCompleted()||result.getHighFunction()==null)throw new IOException("Decompiler failed "+entry+": "+result.getErrorMessage());
-                HighFunction h=result.getHighFunction();List<Object> ops=new ArrayList<>();Iterator<PcodeOpAST> oi=h.getPcodeOps();
-                while(oi.hasNext())ops.add(op(oi.next()));row.put("high_pcode",ops);
+                HighFunction h=result.getHighFunction();List<Object> ops=new ArrayList<>();Iterator<PcodeOpAST> oi=h.getPcodeOps();int outside=0;
+                while(oi.hasNext()) {PcodeOpAST po=oi.next();ops.add(op(po));if(!f.getBody().contains(po.getSeqnum().getTarget()))outside++;}
+                row.put("high_pcode",ops);row.put("high_operations_outside_native_body",outside);
+                row.put("eligible_for_automated_lowering",outside==0);
                 List<Object> blocks=new ArrayList<>();for(PcodeBlockBasic b:h.getBasicBlocks()) {
                     Map<String,Object> br=new LinkedHashMap<>();br.put("id",b.getIndex());br.put("start",b.getStart().toString());br.put("end",b.getStop().toString());
                     List<Integer> successors=new ArrayList<>();for(int i=0;i<b.getOutSize();i++)successors.add(b.getOut(i).getIndex());br.put("successors",successors);blocks.add(br);

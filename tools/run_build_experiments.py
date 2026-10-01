@@ -3,6 +3,7 @@
 import argparse
 import hashlib
 import json
+import os
 import shutil
 import subprocess
 from pathlib import Path
@@ -84,6 +85,10 @@ def main():
     if '19.28.29919' not in toolchain or 'for x86' not in toolchain:
         raise ValueError('Experiments require MSVC 19.28.29919 for x86')
     (out/'toolchain.txt').write_text(toolchain)
+    environment={'header_profile':os.environ.get('SONOS_EXPERIMENT_HEADER_PROFILE','installed-vs2019-toolset'),
+                 'include':os.environ.get('INCLUDE',''), 'lib':os.environ.get('LIB',''),
+                 'compiler':shutil.which('cl'),'linker':shutil.which('link')}
+    (out/'environment.json').write_text(json.dumps(environment,indent=2)+'\n')
     {'layout':layout,'libraries':libraries}[a.experiment](out)
     hashes={str(f.relative_to(out)):hashlib.sha256(f.read_bytes()).hexdigest()
             for f in out.rglob('*') if f.is_file()}
