@@ -308,11 +308,11 @@
     "directory": "analysis/compiled-cpp-op-impl-dtors"
   },
   {
-    "object": "wiz_state_callbacks_reference_flags",
-    "directory": "analysis/compiled-cpp-wiz-state-callbacks"
-  },
-  {
     "object": "event_copier_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-event-copier-callbacks"
+  },
+  {
+    "object": "wiz_state_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-wiz-state-callbacks"
   }
 ]

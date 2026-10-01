@@ -101,11 +101,11 @@ def lower(record, reference, base, sections):
             return None
         if count(instructions, 'mov', 'dword ptr [ebp - 0x10], 0') != 1:
             return None
-        source = (f'{klass}::{klass}(RecoveredString_FUN_1008c50b arg) {{\n'
+        source = (f'{klass}::{klass}(void *arg) {{\n'
                   f'{{ RecoveredString_FUN_1008c50b name("{name.group(1)}");\n'
-                  f'thunk_FUN_106de0c0(&name, (void *)arg.rep); }}\n'
+                  f'thunk_FUN_106de0c0(&name, arg); }}\n'
                   f'vftable = &DAT_{stores[0]:08x};\n'
-                  f'thunk_FUN_106dfa00(&arg)->endsWith("{suffix.group(1)}");\n'
+                  f'thunk_FUN_106dfa00().endsWith("{suffix.group(1)}");\n'
                   f'vftable = &DAT_{stores[1]:08x};\n'
                   f'DAT_{globals_[0]:08x} = (unsigned int)this;\n}}\n')
     elif rets == ['8']:
@@ -128,11 +128,11 @@ def lower(record, reference, base, sections):
             return None
         if count(instructions, 'mov', 'dword ptr [ebp + 8], 0') != 1:
             return None
-        source = (f'{klass}::{klass}(const char *type, RecoveredString_FUN_1008c50b arg) {{\n'
+        source = (f'{klass}::{klass}(const char *type, void *arg) {{\n'
                   f'{{ RecoveredString_FUN_1008c50b name(type);\n'
-                  f'thunk_FUN_106de0c0(&name, (void *)arg.rep); }}\n'
+                  f'thunk_FUN_106de0c0(&name, arg); }}\n'
                   f'vftable = &DAT_{stores[0]:08x};\n'
-                  f'thunk_FUN_106dfa00(&arg)->endsWith("{suffix.group(1)}");\n}}\n')
+                  f'thunk_FUN_106dfa00().endsWith("{suffix.group(1)}");\n}}\n')
     else:
         return None
     return {**record, 'source': source, 'wiz_class': klass, 'flag': flag}
@@ -166,18 +166,19 @@ def main():
     library = library.replace(
         '__forceinline RecoveredString_FUN_1008c50b(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }',
         '__forceinline RecoveredString_FUN_1008c50b(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }\n'
-        '__forceinline RecoveredString_FUN_1008c50b(const RecoveredString_FUN_1008c50b &o) { rep = o.rep; }')
+        '__forceinline RecoveredString_FUN_1008c50b(const RecoveredString_FUN_1008c50b &o) { rep = o.rep; }\n'
+        'bool endsWith(const char *suffix) const;')
     library += ('struct NativeWizDtorBase_thunk_FUN_106de7d0 { ~NativeWizDtorBase_thunk_FUN_106de7d0(); };\n'
                 'struct NativeWizFlagged_thunk_FUN_106de7d0 { void *rep; ~NativeWizFlagged_thunk_FUN_106de7d0(); };\n')
     for r in candidates:
         klass = r['wiz_class']
-        params = 'const char *, RecoveredString_FUN_1008c50b' \
+        params = 'const char *, void *' \
             if r['source'].startswith(f'{klass}::{klass}(const char *') \
-            else 'RecoveredString_FUN_1008c50b'
+            else 'void *'
         member = 'NativeWizFlagged_thunk_FUN_106de7d0 extra; ' if r['flag'] == 2 else ''
         library += (f'struct {klass} : NativeWizDtorBase_thunk_FUN_106de7d0 {{ void *vftable; {member}~{klass}();\n'
                     f'void thunk_FUN_106de0c0(RecoveredString_FUN_1008c50b *, void *);\n'
-                    f'SCStr *thunk_FUN_106dfa00(RecoveredString_FUN_1008c50b *);\n'
+                    f'RecoveredString_FUN_1008c50b thunk_FUN_106dfa00();\n'
                     f'{klass}({params}); }};\n')
     candidates = [{**r, 'abi_declarations': {'wiz_state_callback_library': library}} for r in candidates]
     evidence = {r['entry']: r for r in map(json.loads, (ROOT/'analysis/eh-lifetime-evidence.jsonl').open())}
