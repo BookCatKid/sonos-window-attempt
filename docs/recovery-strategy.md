@@ -5,11 +5,11 @@ C or C++ with no authored assembly and no embedded reference executable bytes.
 The default `tools/compare.py` gate requires complete identity.
 
 The latest accepted object-body audit is
-`analysis/recovery-msvc-upstream-libraries/coverage-audit.json`: 165,868 distinct
-bodies / 1,808,891 executable bytes (7.070766%). Reverified upstream zlib/Expat
-C objects add 25,867 distinct bytes over the conditional-event checkpoint.
-The partial physical placement build remains at 11,649,005 proven bytes;
-integration of the new library bodies is pending. See
+`analysis/recovery-msvc-upstream-libraries-linker-aliases/coverage-audit.json`: 165,876 distinct
+bodies / 1,813,558 executable bytes (7.089009%). Reverified upstream zlib/Expat
+C objects add 30,534 distinct bytes over the conditional-event checkpoint.
+The partial physical placement build includes these bodies and contains
+11,679,539 proven compiler bytes (31.435658% of the file). See
 [whole-library recovery](large-scale-recovery.md) for the reproducible audit.
 
 ## Evidence at the start of this investigation
@@ -124,8 +124,8 @@ No reference application is executed and no original Ghidra project is modified.
 
 ## Physical PE placement and C++ data recovery
 
-The partial PE places all 165,774 proven function bodies and accepted compiler
-EH/literal fragments at reference offsets. Its `.text` has 1,957,357 verified
+The partial PE places all 165,876 proven function bodies and accepted compiler
+EH/literal fragments at reference offsets. Its `.text` has 1,987,891 verified
 compiler bytes, including EH helpers. A conflicting overlap, unresolved fixup,
 or mismatched marked byte aborts. Unknown regions remain empty and are reported.
 
@@ -136,10 +136,10 @@ as data input. All 74 full-data objects / 9,691,648 bytes compile and pass final
 byte/fixup proofs under pinned MSVC in
 [run 36680111341](https://github.com/BookCatKid/sonos-window-attempt/actions/runs/36680111341).
 
-`analysis/linked-placement-conditional-event/recovery-layout.dll` has six byte-identical
+`analysis/linked-placement-upstream-linker-aliases/recovery-layout.dll` has six byte-identical
 sections: `.rdata`, `.data`, `.idata`, `.tls`, `.00cfg`, and `.rsrc`. It contains
-11,649,005 proven compiler bytes (31.353475% of the file). The independent
-full-file comparator scores 37.3162%, including coincidental empty-region zero
+11,679,539 proven compiler bytes (31.435658% of the file). The independent
+full-file comparator scores 37.3910%, including coincidental empty-region zero
 matches, and **fails the 100% gate**. The image lacks an entry point and
 import/export header directories; its base relocations are incomplete. It is a
 placement artifact, not a usable or complete DLL. No reference instructions are
@@ -156,8 +156,10 @@ python3 tools/link_recovery_image.py \
     ci-output/run-36680111341 \
     ci-output/run-36661659252 \
     analysis/msvc-14-28-x86-objects-5490d21-run36626235420 \
-  --include-flag-sweep --output-dir analysis/linked-placement-conditional-event
-python3 tools/compare.py analysis/linked-placement-conditional-event/recovery-layout.dll
+  --include-flag-sweep \
+  --library-artifact-root ci-output/build-experiments-run-36803682931/libraries \
+  --output-dir analysis/linked-placement-upstream-linker-aliases
+python3 tools/compare.py analysis/linked-placement-upstream-linker-aliases/recovery-layout.dll
 ```
 
 Generation alone is a local Clang syntax/COFF experiment. Placement requires

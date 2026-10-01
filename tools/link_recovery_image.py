@@ -167,6 +167,38 @@ def place_data(directory,obj,image,reference,base,pe_sections,targets):
     return {**source_id,'data_fragments':len(rows),'accepted_data_bytes':accepted}
 
 
+def place_libraries(root,variants,image,reference):
+    """Reverify pinned C object graphs and emit only relocated compiler bodies."""
+    from fetch_library_sources import SOURCES
+    from match_library_objects import match
+    root=root.resolve()
+    toolchain=(root/'toolchain.txt').read_text()
+    if 'Compiler Version 19.28.29919 for x86' not in toolchain:raise ValueError('Wrong library compiler')
+    if json.loads((root/'sources.json').read_text())!=SOURCES:raise ValueError('Unpinned library sources')
+    configurations=json.loads((root/'variants.json').read_text())
+    available={c['library']+'_'+c['variant'].lower() for c in configurations}
+    if set(variants)-available:raise ValueError('Unrecorded library variants')
+    summaries=[]
+    for variant in variants:
+        objects=sorted((root/variant).glob('*.obj'))
+        if not objects:raise ValueError('Missing library objects: '+variant)
+        hashes={str(obj):digest(obj.read_bytes()) for obj in objects}
+        def emit(body,patched):
+            va=body['entry']
+            origin={'object':body['object'],'object_sha256':hashes[body['object']],
+                    'symbol':body['symbol'],'variant':variant,'entry':f'{va:08x}'}
+            image.place(va,patched,'library_function',origin,
+                        fixups_for(va,body['code'],patched,body['relocs'],image.layout['image_base']))
+        proof=match(objects,reference,ROOT/'analysis/thunk-recovery-full/final-function-inventory.tsv',
+                    accepted_fragment_sink=emit)
+        summary={'library_variant':variant,'objects':proof['objects'],
+                 'accepted_functions':proof['closed_graph_exact_functions'],
+                 'accepted_body_bytes':proof['closed_graph_body_bytes'],
+                 'source_archives':SOURCES,'toolchain_sha256':digest((root/'toolchain.txt').read_bytes())}
+        summaries.append(summary);print(json.dumps(summary),flush=True)
+    return summaries
+
+
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--artifact-dirs',nargs='+',type=Path,required=True,help='Most recent first; each must attest pinned MSVC')
@@ -174,9 +206,12 @@ def main():
     p.add_argument('--data-manifest',type=Path,default=ROOT/'src/generated/data/tranches.json')
     p.add_argument('--data-only',action='store_true',help='Measure only recovered non-executable data')
     p.add_argument('--include-flag-sweep',action='store_true')
+    p.add_argument('--library-artifact-root',type=Path,help='Pinned upstream C object artifact directory')
+    p.add_argument('--library-variants',nargs='+',default=['zlib_o2','expat_on_o2'])
     p.add_argument('--only',nargs='+')
     p.add_argument('--output-dir',type=Path,required=True)
     args=p.parse_args();output=args.output_dir.resolve()
+    if args.data_only and args.library_artifact_root:p.error('Library code cannot be placed in data-only mode')
     if not output.is_relative_to(ROOT) or output.is_relative_to(ROOT/'reference'):
         p.error('Output must be inside the workspace and outside immutable reference')
     rows=[] if args.data_only else json.loads(args.manifest.read_text())
@@ -235,6 +270,8 @@ def main():
                     {**source_id,'entry':record['entry'],'symbol':proof['symbol']},fixups_for(va,original,patched,relocs,base))
         summary={**source_id,'compiled_functions':len(compared),'accepted_functions':len(accepted)}
         summaries.append(summary);print(json.dumps(summary),flush=True)
+    if args.library_artifact_root:
+        summaries.extend(place_libraries(args.library_artifact_root,args.library_variants,image,reference))
     if not summaries or not image.fragments:raise SystemExit('No proven fragments to place')
     relocation_bytes=image.finish_relocations();output.mkdir(parents=True,exist_ok=True)
     candidate=output/'recovery-layout.dll'

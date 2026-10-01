@@ -1,8 +1,8 @@
 # Whole-library and original-layout recovery
 
-The accepted object-body audit now contains 1,808,891 executable bytes (7.070766%).
-The partial PE placement build still contains 11,649,005 physically placed compiler
-bytes (31.353475% of the file); upstream-library placement remains to be integrated.
+The accepted object-body audit now contains 1,813,558 executable bytes (7.089009%).
+The partial PE placement build contains 11,679,539 physically placed compiler
+bytes (31.435658% of the file), including the verified upstream-library bodies.
 The active goal remains 100% binary identity from C/C++.
 
 ## Reproduce LINK behavior, then reconstruct the layout
@@ -104,11 +104,11 @@ as dependency aliases. Runtime identities and forwarding aliases receive zero
 additional byte credit. Missing callees, modified tables, writable memory and wrong
 forwarding destinations remain rejected, with per-relocation diagnostics.
 
-Reverification of the existing pinned `/O2` C objects yields 46 zlib bodies / 15,386
+Reverification of the existing pinned `/O2` C objects yields 54 zlib bodies / 20,053
 bytes and 94 Expat bodies / 11,808 bytes. The union with the prior accepted audit adds
-94 distinct functions and **25,867 distinct executable bytes** after removing overlaps.
-The resulting audit is `analysis/recovery-msvc-upstream-libraries/coverage-audit.json`:
-165,868 distinct bodies / 1,808,891 executable bytes / 7.070766%.
+102 distinct functions and **30,534 distinct executable bytes** after removing overlaps.
+The resulting audit is `analysis/recovery-msvc-upstream-libraries-linker-aliases/coverage-audit.json`:
+165,876 distinct bodies / 1,813,558 executable bytes / 7.089009%.
 
 Reproduce it without recompiling or executing any DLL:
 
@@ -116,15 +116,22 @@ Reproduce it without recompiling or executing any DLL:
 python3 tools/audit_library_recovery.py \
   ci-output/build-experiments-run-36803682931/libraries \
   --baseline analysis/recovery-msvc-conditional-event/coverage-audit.json \
-  --output-dir analysis/recovery-msvc-upstream-libraries
+  --output-dir analysis/recovery-msvc-upstream-libraries-linker-aliases
 ```
 
 The admission tool checks the pinned compiler, source-archive records, recorded
 configuration and reference hash; then reruns full correspondence/relocation-graph
 verification and the distinct-body audit. It records object hashes and environment
 provenance. This proves object bodies at reference-address placement constraints,
-not a complete linked DLL. Integrating these normal C symbol names and bindings into
-the physical placement pipeline is the next required step.
+not a complete linked DLL. The placement pipeline accepts the same pinned artifact
+root through `--library-artifact-root`, reruns verification, and emits only patched
+compiler bodies from the final closed graph. See the placement command in
+[the recovery strategy](recovery-strategy.md).
+
+An additional indexed LINK E9 thunk to a verified C forwarder unlocks eight zlib
+bodies / 4,667 bytes. Forwarders and their aliases add no separate coverage.
+Compiler CodeView procedure bounds also recover three Expat extraction omissions,
+without increasing accepted coverage; these bodies remain outside the proven graph.
 
 ## Structured Ghidra evidence
 

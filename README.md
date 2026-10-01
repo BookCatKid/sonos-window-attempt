@@ -14,24 +14,24 @@ mechanically generated and need not be readable; authored assembly and embedded
 reference executable bytes are excluded.
 
 The latest [recovery strategy and measured results](docs/recovery-strategy.md)
-record 165,868 verified object bodies / 1,808,891 executable bytes (7.070766%),
+record 165,876 verified object bodies / 1,813,558 executable bytes (7.089009%),
 including upstream C library bodies, by-value tree arguments, compiler atomic intrinsics, and unused-argument recovery.
 This is function-body coverage; no full matching DLL exists yet.
 The guarded Ghidra ABI runner now recovers omitted container arguments and
 24-byte event objects across 132 exports; these exports add no verified byte
 coverage. See [the runner](tools/recover_container_abi.py) and recovery strategy.
 
-The partial PE placement build contains 11,649,005 verified compiler-produced
+The partial PE placement build contains 11,679,539 verified compiler-produced
 bytes at their final file offsets. All six recovered non-executable sections
-are byte-identical. Its complete-file aligned match is 37.3162%, including
+are byte-identical. Its complete-file aligned match is 37.3910%, including
 coincidental matches in zero-filled unbuilt regions; the 100% gate still fails.
 See the recovery strategy for the reproducible placement command.
 
 The [whole-library and original-layout experiments](docs/large-scale-recovery.md)
 test genuine LINK reservations, rebuild fingerprinted zlib/Expat C modules,
 export structured native/SSA evidence, and prepare same-host Windows matching.
-The strict upstream-library body audit contributes 25,867 new distinct code bytes.
-Those library bodies have not yet been integrated into the partial PE placement build.
+The strict upstream-library body audit contributes 30,534 new distinct code bytes.
+Those library bodies are now integrated into the partial PE placement build.
 
 ## Layout
 

@@ -7,12 +7,12 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from match_library_objects import fixed_runs, match, imported_targets, immutable_data_definitions, security_cookie_targets
+from match_library_objects import fixed_runs, match, imported_targets, immutable_data_definitions, security_cookie_targets, codeview_function_sizes
 from types import SimpleNamespace
 
 
 class LibraryMatchingTests(unittest.TestCase):
-    def fixture(self, broken_dependency=False, unknown=False, forwarding=False, bad_forward=False):
+    def fixture(self, broken_dependency=False, unknown=False, forwarding=False, bad_forward=False, linker_alias=False, sink=None):
         image=bytearray(1024);image[:2]=b'MZ';struct.pack_into('<I',image,0x3c,0x80)
         image[0x80:0x84]=b'PE\0\0';struct.pack_into('<HH',image,0x84,0x14c,1)
         struct.pack_into('<H',image,0x94,224);struct.pack_into('<I',image,0x98+28,0x10000000)
@@ -23,9 +23,11 @@ class LibraryMatchingTests(unittest.TestCase):
         # The verifier only needs byte extents here; no executable test is generated.
         native_a=a[:4]+struct.pack('<i',0x10001040-(0x10001000+4+4))+a[8:]
         if forwarding:
-            native_a=a[:4]+struct.pack('<i',0x10001080-(0x10001000+4+4))+a[8:]
+            destination=0x100010c0 if linker_alias else 0x10001080
+            native_a=a[:4]+struct.pack('<i',destination-(0x10001000+4+4))+a[8:]
             target=0x10009999 if bad_forward else 0x10001040
             image[640:645]=b'\xe9'+struct.pack('<i',target-(0x10001080+5))
+            if linker_alias:image[704:709]=b'\xe9'+struct.pack('<i',0x10001080-(0x100010c0+5))
         image[512:528]=native_a;image[576:592]=b if not broken_dependency else b'xxxx'+b[4:]
         obj=Path(self.tmp.name)/'example.obj';obj.write_bytes(b'test object provenance')
         inventory=Path(self.tmp.name)/'inventory.tsv'
@@ -33,13 +35,14 @@ class LibraryMatchingTests(unittest.TestCase):
             w=csv.writer(stream,delimiter='\t');w.writerow(['entry','body_bytes','thunk','external'])
             w.writerows([['10001000',16,'false','false'],['10001040',16,'false','false']])
             if forwarding:w.writerow(['10001080',5,'true','false'])
+            if linker_alias:w.writerow(['100010c0',5,'true','false'])
         rows=[{'object':str(obj),'symbol':'_a','public':True,'code':a[:4]+b'\0'*4+a[8:],
                'relocs':[{'offset':4,'type':20,'symbol':'_missing' if unknown else '_forward' if forwarding else '_b'}], 'sections':[], 'symbols':[]},
               {'object':str(obj),'symbol':'_b','public':True,'code':b,'relocs':[], 'sections':[], 'symbols':[]}]
         if forwarding:rows.append({'object':str(obj),'symbol':'_forward','public':True,'code':b'\xe9'+b'\0'*4,
                                    'relocs':[{'offset':1,'type':20,'symbol':'_b'}],'sections':[],'symbols':[]})
         with patch('match_library_objects.bodies',return_value=rows),patch('match_library_objects.read_coff',return_value=([],[],{})):
-            return match([obj],bytes(image),inventory)
+            return match([obj],bytes(image),inventory,accepted_fragment_sink=sink)
 
     def setUp(self):self.tmp=tempfile.TemporaryDirectory()
     def tearDown(self):self.tmp.cleanup()
@@ -69,6 +72,39 @@ class LibraryMatchingTests(unittest.TestCase):
             rejected=self.fixture(forwarding=True,**kwargs)
             self.assertFalse(next(r for r in rejected['functions'] if r['symbol']=='_a')['closed_graph_exact'])
             self.assertFalse(rejected['compiled_forwarding_identity_evidence'])
+
+    def test_linker_alias_to_verified_forwarder_does_not_award_extra_bytes(self):
+        result=self.fixture(forwarding=True,linker_alias=True)
+        self.assertEqual(result['closed_graph_exact_functions'],2)
+        self.assertEqual(result['closed_graph_body_bytes'],32)
+        evidence=result['compiled_forwarding_identity_evidence'][0]
+        self.assertIn('100010c0',evidence['entries']+evidence['linker_alias_entries'])
+        self.assertEqual(self.fixture(forwarding=True,linker_alias=True,bad_forward=True)['closed_graph_exact_functions'],1)
+
+    def test_sink_emits_relocated_compiler_bytes_only_for_closed_graph(self):
+        emitted=[]
+        self.fixture(sink=lambda body,patched:emitted.append((body['symbol'],body['code'],patched)))
+        caller=next(x for x in emitted if x[0]=='_a')
+        self.assertEqual(caller[1][4:8],b'\0'*4)
+        self.assertEqual(caller[2][4:8],struct.pack('<i',0x10001040-(0x10001000+8)))
+        emitted.clear()
+        self.fixture(unknown=True,sink=lambda body,patched:emitted.append(body['symbol']))
+        self.assertEqual(emitted,['_b'])
+
+    def test_codeview_extent_requires_paired_fixups_and_stays_inside_section(self):
+        record=bytearray(40);struct.pack_into('<HH',record,0,38,0x1110)
+        struct.pack_into('<I',record,16,8)
+        payload=struct.pack('<III',4,0xf1,len(record))+record
+        debug={'name':'.debug$S','code':payload,'relocations':[
+            {'offset':44,'type':11,'symbol_index':5},{'offset':48,'type':10,'symbol_index':5}]}
+        code={'name':'.text','code':b'x'*8,'relocations':[]}
+        symbols={5:{'section':1,'offset':0,'type':32}}
+        self.assertEqual(codeview_function_sizes([code,debug],symbols),{(1,0):8})
+        unpaired=dict(debug,relocations=debug['relocations'][:1])
+        self.assertEqual(codeview_function_sizes([code,unpaired],symbols),{})
+        oversized=bytearray(payload);struct.pack_into('<I',oversized,12+16,9)
+        with self.assertRaises(ValueError):codeview_function_sizes([code,dict(debug,code=oversized)],symbols)
+        with self.assertRaises(ValueError):codeview_function_sizes([code,dict(debug,code=payload[:-1])],symbols)
 
     def test_import_targets_require_named_iat_and_actual_jump_chain(self):
         image=bytearray(1024);struct.pack_into('<I',image,0x3c,0x80)

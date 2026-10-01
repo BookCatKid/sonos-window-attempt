@@ -2,14 +2,15 @@
 
 The active target is a C/C++ rebuilt DLL matching 100% of the reference bytes. Earlier 95% checkpoints below record historical targets. No Sonos/DLL execution and no assembly embedding are permitted.
 
-Latest upstream-library checkpoint: pinned zlib/Expat `/O2` objects verify 140
-bodies / 27,194 body bytes. Their union with the prior accepted audit adds 94
-distinct functions / 25,867 distinct executable bytes, bringing object-body
-coverage to 165,868 bodies / 1,808,891 bytes / 7.070766%. Runtime-cookie identities,
+Latest upstream-library checkpoint: pinned zlib/Expat `/O2` objects verify 148
+bodies / 31,861 body bytes. Their union with the prior accepted audit adds 102
+distinct functions / 30,534 distinct executable bytes, bringing object-body
+coverage to 165,876 bodies / 1,813,558 bytes / 7.089009%. Runtime-cookie identities,
 compiled forwarding aliases and constant tables receive no additional byte credit.
-The 11,649,005-byte partial physical placement artifact has not yet integrated
-these library bodies. Reproduce with `tools/audit_library_recovery.py`; full
-details and remaining constraints are in `docs/large-scale-recovery.md`.
+The partial physical placement artifact now includes these bodies, with
+11,679,539 proven compiler bytes / 31.435658% of the file. Reproduce with
+`tools/audit_library_recovery.py` and `tools/link_recovery_image.py`; full details
+and remaining constraints are in `docs/large-scale-recovery.md`.
 
 ## SCStr expansion
 
@@ -685,3 +686,35 @@ it as a temporary reference, and destroys it. Native call endpoints, receiver
 adjustments and RET cleanup constrain source generation; state-zero unwind
 actions constrain derived destructor identities. These candidates remain
 outside the default manifest until pinned body/relocation/EH checks succeed.
+
+## Upstream C bodies physically placed and LINK forwarding verified (2026-09-30)
+
+The strict dependency graph now follows an additional inventoried native E9
+linker thunk to an independently verified compiler-emitted C forwarder. Both
+hops must resolve to accepted dependencies; unknown or modified destinations
+remain rejected. The additional hop unlocks eight zlib bodies / 4,667 bytes.
+Zlib now verifies 54 bodies / 20,053 bytes and Expat 94 / 11,808 bytes.
+`analysis/recovery-msvc-upstream-libraries-linker-aliases/coverage-audit.json`
+records 165,876 distinct bodies / 1,813,558 executable bytes / 7.089009%.
+
+The placement pipeline reruns pinned-library source, compiler, object and closed
+relocation-graph checks, then emits patched compiler bytes only for accepted
+bodies. `analysis/linked-placement-upstream-linker-aliases/recovery-layout.dll`
+contains 11,679,539 proven compiler bytes, including 1,987,891 `.text` bytes.
+SHA-256: `24015a1ebfa3c89f944cb2ff2366faa8f7f4993498781e1670bdabedd282fa94`.
+Its generated base-relocation directory is 1,077,968 bytes. All six recovered
+non-executable sections remain byte-identical. The whole-file identity gate
+still fails; this remains a nonloadable partial placement artifact.
+
+Compiler CodeView procedure extents now permit extraction of functions whose
+sections contain embedded jump tables. Both COFF debug fixups must refer to the
+same defined function, and the extent must fit its section without crossing the
+next function. Entire native-body length, every fixed byte and all relocation
+dependencies still must match. This extracts three additional Expat procedures,
+but adds zero verified bytes in this checkpoint.
+
+Validation: all 61 local verifier/placement tests pass. The independent whole-file
+comparison reports 13,892,167 aligned bytes / 37.3910% and rejects identity,
+including incidental zero-filled matches; those are not executable recovery
+credit. Source object compilation remains the existing pinned MSVC artifact run
+36803682931; this checkpoint changes verification and placement only.

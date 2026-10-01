@@ -103,8 +103,49 @@ def imported_targets(reference, inventory):
     return dict(result)
 
 
+def codeview_function_sizes(sections, by_index):
+    """Read compiler procedure extents, anchored by both COFF debug relocations.
+
+    ProcSym layout and record kinds follow LLVM's CodeView SymbolRecord.h and
+    CodeViewSymbols.def. Debug extents do not themselves establish a native match.
+    """
+    sizes={}
+    for section in sections:
+        if section['name']!='.debug$S':continue
+        data=section['code']
+        if len(data)<4 or struct.unpack_from('<I',data,0)[0]!=4:continue
+        relocations={r['offset']:r for r in section['relocations']}
+        position=4
+        while position+8<=len(data):
+            kind,length=struct.unpack_from('<II',data,position);start=position+8;end=start+length
+            if end>len(data):raise ValueError('Truncated CodeView subsection')
+            if kind==0xf1:
+                record=start
+                while record+4<=end:
+                    size,record_kind=struct.unpack_from('<HH',data,record)
+                    stop=record+size+2
+                    if size<2 or stop>end:raise ValueError('Truncated CodeView symbol')
+                    if record_kind in (0x110f,0x1110,0x1146,0x1147) and size>=37:
+                        offset_fixup=relocations.get(record+32);section_fixup=relocations.get(record+36)
+                        if (offset_fixup and section_fixup and offset_fixup['type']==11 and section_fixup['type']==10 and
+                            offset_fixup['symbol_index']==section_fixup['symbol_index']):
+                            symbol=by_index.get(offset_fixup['symbol_index'])
+                            if symbol and symbol['type']&0x20 and 0<symbol['section']<=len(sections):
+                                offset=symbol['offset']+struct.unpack_from('<I',data,record+32)[0]
+                                code_size=struct.unpack_from('<I',data,record+16)[0]
+                                key=(symbol['section'],offset)
+                                if code_size<=0 or offset+code_size>len(sections[symbol['section']-1]['code']):
+                                    raise ValueError('CodeView extent exceeds compiler section')
+                                if key in sizes and sizes[key]!=code_size:raise ValueError('Conflicting CodeView extents')
+                                sizes[key]=code_size
+                    record=stop
+            position=(end+3)&~3
+    return sizes
+
+
 def bodies(path):
     sections, symbols, by_index=read_coff(path)
+    debug_sizes=codeview_function_sizes(sections,by_index)
     grouped=defaultdict(list)
     for s in symbols:
         if s['type']&0x20 and s['storage'] in (2,3) and 0<s['section']<=len(sections):
@@ -116,13 +157,16 @@ def bodies(path):
         for i,s in enumerate(entries):
             stop=entries[i+1]['offset'] if i+1<len(entries) else len(section['code'])
             code=section['code'][s['offset']:stop]
-            instructions=list(DISASSEMBLER.disasm(code,0))
-            if not instructions or sum(ins.size for ins in instructions)!=len(code):
-                continue
-            while instructions and instructions[-1].mnemonic in ('nop','int3'):
-                instructions.pop()
-            if not instructions:continue
-            code=code[:instructions[-1].address+instructions[-1].size]
+            recorded_size=debug_sizes.get((number,s['offset']))
+            if recorded_size is not None:
+                if recorded_size>len(code):raise ValueError('CodeView procedure overlaps another function')
+                code=code[:recorded_size]
+            else:
+                instructions=list(DISASSEMBLER.disasm(code,0))
+                if not instructions or sum(ins.size for ins in instructions)!=len(code):continue
+                while instructions and instructions[-1].mnemonic in ('nop','int3'):instructions.pop()
+                if not instructions:continue
+                code=code[:instructions[-1].address+instructions[-1].size]
             relocs=[]
             for r in section['relocations']:
                 offset=r['offset']-s['offset']
@@ -130,7 +174,8 @@ def bodies(path):
                     target=by_index.get(r['symbol_index'])
                     relocs.append({'offset':offset,'type':r['type'],'symbol':target['name'] if target else ''})
             result.append({'object':str(path),'symbol':s['name'],'public':s['storage']==2,
-                           'code':code,'relocs':relocs,'sections':sections,'symbols':symbols})
+                           'code':code,'relocs':relocs,'sections':sections,'symbols':symbols,
+                           'extent_source':'codeview' if recorded_size is not None else 'decoded-section'})
     return result
 
 
@@ -166,7 +211,7 @@ def immutable_data_definitions(sections, symbols):
     return result
 
 
-def match(objects, reference, inventory):
+def match(objects, reference, inventory, accepted_fragment_sink=None):
     base, sections=section_map(reference)
     pe=struct.unpack_from('<I',reference,0x3c)[0];optional=pe+24
     headers=optional+struct.unpack_from('<H',reference,pe+20)[0]
@@ -243,10 +288,15 @@ def match(objects, reference, inventory):
                 known=local_names.get((b['object'],callee),[]) or global_names.get(callee,[])
                 addresses=sorted({source for target in known for source in destinations[target]})
                 if not addresses:next_pending.append(b);continue
-                local_names[b['object'],b['symbol']]=addresses
-                if b['public']:global_names[b['symbol']]=sorted(set(global_names.get(b['symbol'],[])+addresses))
+                # LINK may route the call through another indexed E9 thunk to
+                # the verified compiled forwarder. Keep that relationship explicit.
+                linker_aliases=sorted({source for target in addresses for source in destinations[target]}-set(addresses))
+                bound_addresses=sorted(set(addresses+linker_aliases))
+                local_names[b['object'],b['symbol']]=bound_addresses
+                if b['public']:global_names[b['symbol']]=sorted(set(global_names.get(b['symbol'],[])+bound_addresses))
                 forwarding_evidence.append({'object':b['object'],'symbol':b['symbol'],'callee':callee,
                                             'entries':[f'{va:08x}' for va in addresses],
+                                            'linker_alias_entries':[f'{va:08x}' for va in linker_aliases],
                                             'scope':'Entire compiled forwarding body verified as dependency aliases; zero added byte credit'})
                 changed=True
             pending=next_pending
@@ -284,7 +334,7 @@ def match(objects, reference, inventory):
             elif patched[offset:offset+4]!=expected[offset:offset+4]:
                 diagnostics.append({'symbol':r['symbol'],'offset':offset,'type':r['type'],
                                     'native_target':f'{actual:08x}','reason':'verified targets do not match this relocation'})
-        return unresolved==0 and patched==expected,diagnostics,unresolved
+        return unresolved==0 and patched==expected,diagnostics,unresolved,patched
     while active:
         global_names,local_names,_=targets(active)
         remaining={i for i in active if verify(candidates[i],global_names,local_names)[0]}
@@ -292,6 +342,11 @@ def match(objects, reference, inventory):
         active=remaining
     global_names,local_names,forwarding_evidence=targets(active)
     final_verification={i:verify(b,global_names,local_names) for i,b in enumerate(candidates)}
+    if accepted_fragment_sink is not None:
+        for i in sorted(active):
+            verified,_,unresolved,patched=final_verification[i]
+            if not verified or unresolved:raise ValueError('Final library dependency graph changed')
+            accepted_fragment_sink(candidates[i],patched)
     rows=[{'object':b['object'],'symbol':b['symbol'],'entry':f'{b["entry"]:08x}',
            'bytes':len(b['code']),'relocations':len(b['relocs']),
            'unique_fixed_candidate':True,'closed_graph_exact':i in active,
