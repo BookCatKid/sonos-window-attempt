@@ -260,6 +260,14 @@
     "directory": "analysis/ctor-scope-op-impl-smart-template-only"
   },
   {
+    "object": "op_impl_tail_nsdmi_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-tail-nsdmi"
+  },
+  {
+    "object": "op_impl_tail_initlist_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-tail-initlist"
+  },
+  {
     "object": "named_event_memberinit_reference_flags",
     "directory": "analysis/ctor-scope-named-event-memberinit"
   },

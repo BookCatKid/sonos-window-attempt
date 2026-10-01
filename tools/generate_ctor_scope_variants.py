@@ -803,16 +803,47 @@ def op_impl_variants():
         ' : smart(param) {',
         ' : smart((NativeOpT14_tag *)param) {')
     variants['op_impl_smart_template_only'] = (smart_template_decls, None)
+    # tail-ordering hypotheses on top of the proven nestedrep model: native
+    # emits f24..f2c stores BEFORE m30's inlined member construction, so those
+    # fields are probably initialized during member-init (NSDMI), and f38's
+    # movq+dword-overlap comes from a union member whose ctor writes q then w.hi
+    nestedrep_decls = variants['op_impl_smart_nestedrep']
+    nsdmi = nestedrep_decls.replace(
+        'union NativeOpF38 { unsigned __int64 q; struct { unsigned int lo; unsigned int hi; } w; };',
+        'union NativeOpF38 { unsigned __int64 q; struct { unsigned int lo; unsigned int hi; } w;\n'
+        '    NativeOpF38() { q = 0; w.hi = 0; } };').replace(
+        'void *f20; unsigned short f24; void *f28; void *f2c;\n'
+        'NativeOpM30 m30; NativeOpF38 f38; void *f40; void *f44;',
+        'void *f20 = 0; unsigned short f24 = 1000; void *f28 = 0; void *f2c = 0;\n'
+        'NativeOpM30 m30; NativeOpF38 f38; void *f40 = 0; void *f44 = 0;')
+    empty_body = ('NativeOpImpl_FUN_10687e80::NativeOpImpl_FUN_10687e80(void *param_2)\n'
+                  '    : NativeOpImpl_FUN_10687e80_vt(this), m14(param_2) {}')
+    variants['op_impl_tail_nsdmi'] = (nsdmi, None, empty_body)
+    # member-init-list form of the same model
+    initlist = nestedrep_decls.replace(
+        'union NativeOpF38 { unsigned __int64 q; struct { unsigned int lo; unsigned int hi; } w; };',
+        'union NativeOpF38 { unsigned __int64 q; struct { unsigned int lo; unsigned int hi; } w;\n'
+        '    NativeOpF38() { q = 0; w.hi = 0; } };')
+    init_body = ('NativeOpImpl_FUN_10687e80::NativeOpImpl_FUN_10687e80(void *param_2)\n'
+                 '    : NativeOpImpl_FUN_10687e80_vt(this), m14(param_2),'
+                 ' f24(1000), f20(0), f28(0), f2c(0), f40(0), f44(0) {}')
+    variants['op_impl_tail_initlist'] = (initlist, None, init_body)
     header = ('// Constructor-scope hypothesis variants for entry 10687e80.\n'
               'inline void *operator new(unsigned int, void *receiver) noexcept { return receiver; }\n')
     out = {}
     for name, library in variants.items():
         body = definition
         init_repl = None
+        body_repl = None
         if isinstance(library, tuple):
-            library, init_repl = library
+            if len(library) == 3:
+                library, init_repl, body_repl = library
+            else:
+                library, init_repl = library
         if init_repl is not None:
             body = body.replace('m14(param_2)', init_repl)
+        if body_repl is not None:
+            body = body_repl
         if name.endswith('_dbl'):
             body = body.replace('f38.q = 0;', 'f38.d = 0.0;')
         out[name] = (header + library +
