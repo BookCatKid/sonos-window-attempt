@@ -292,6 +292,14 @@
     "directory": "analysis/ctor-scope-named-event-placement-base-noexcept"
   },
   {
+    "object": "named_event_slot_union_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-slot-union"
+  },
+  {
+    "object": "named_event_slot_struct_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-slot-struct"
+  },
+  {
     "object": "named_event_holder_reference_flags",
     "directory": "analysis/ctor-scope-named-event-holder"
   },

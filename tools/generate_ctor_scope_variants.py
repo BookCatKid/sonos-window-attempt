@@ -909,6 +909,26 @@ def named_event_variants():
             'Event_thunk_FUN_10def0d0 event;\n'
             'NativeNamedEvent_FUN_10df9440 *pe = (NativeNamedEvent_FUN_10df9440 *)\n'
             '    new (&event) NativeNamedEvent_FUN_10df9440();\n'),
+        # placement-new into a union whose only buffer member is scalar (no
+        # char[]/array → no GS-array cookie): pe binds eax (mov esi,eax), the
+        # Event member is EH-tracked so the state0 funclet covers [ebp-0x28]
+        'named_event_slot_union': (
+            ctor_decl +
+            'union NativeEventSlot { NativeNamedEvent_FUN_10df9440 e;\n'
+            'void *p0,*p1,*p2,*p3,*p4,*p5;\n'
+            'NativeEventSlot() {} ~NativeEventSlot() {} };\n',
+            'NativeEventSlot u;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = (NativeNamedEvent_FUN_10df9440 *)\n'
+            '    new (&u.e) NativeNamedEvent_FUN_10df9440();\n'),
+        # same idea through a struct member, so the slot is plainly a POD
+        'named_event_slot_struct': (
+            ctor_decl +
+            'struct NativeEventSlot { union { void *p0,*p1,*p2,*p3,*p4,*p5;\n'
+            'NativeNamedEvent_FUN_10df9440 e; }; NativeEventSlot() {}\n'
+            '~NativeEventSlot() {} };\n',
+            'NativeEventSlot u;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = (NativeNamedEvent_FUN_10df9440 *)\n'
+            '    new (&u.e) NativeNamedEvent_FUN_10df9440();\n'),
         # holder aggregate: MSVC lowers the member construction as a ctor-call
         # scope (lazy arm after the call) and &h.event may reuse eax → esi
         'named_event_holder': (
@@ -1031,7 +1051,8 @@ def named_event_variants():
                    .replace('thunk_FUN_10df15a0(pe)',
                             'thunk_FUN_10df15a0(&event)'))
         out[name] = src
-        if name == 'named_event_placement_union':
+        if name in ('named_event_placement_union', 'named_event_slot_union',
+                    'named_event_slot_struct'):
             out[name] = out[name].replace(
                 '->thunk_FUN_10df15a0(pe);\n}\n',
                 '->thunk_FUN_10df15a0(pe);\n'
