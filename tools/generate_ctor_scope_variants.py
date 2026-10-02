@@ -1575,6 +1575,36 @@ def wiz_state_variants():
         source_marker + '\n' + tail_common +
         'NativeWizSret &s2 = *thunk_FUN_106dfa00((NativeWizSret *)&arg);\n'
         's2.endsWith("Page");\n' + tail_end)
+    # conditional-expression receiver temp: (cond ? f() : f()).endsWith() —
+    # MSVC flag-tracks the ?: result temp even when the foldable condition
+    # makes the body linear; the temp is used in place with no ref copy
+    out['wiz_cond_recv'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        '(arg != 0 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00())\n'
+        '    .endsWith("Page");\n' + tail_end)
+    # constant-folded ?: receiver temp: 1 ? f() : f() — MSVC keeps the flag
+    # machinery while folding the branch (wiz_const_cond proved the flag
+    # survives; dropping the ref binding removes the $S1 copy object)
+    out['wiz_cond_recv_c'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        '(1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00()).endsWith("Page");\n'
+        + tail_end)
+    # ?: with the ref-bound result used directly: both arms sret into the
+    # param slot, flag picks the committed arm; the copy avoids $S1
+    out['wiz_cond_direct'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'const RecoveredString_FUN_1008c50b &s2 =\n'
+        '    arg != 0 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00();\n'
+        '(void)s2.endsWith("Page");\n' + tail_end)
     return out
 
 

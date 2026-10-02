@@ -524,6 +524,18 @@
     "directory": "analysis/ctor-scope-wiz-refadopt"
   },
   {
+    "object": "wiz_cond_recv_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-cond-recv"
+  },
+  {
+    "object": "wiz_cond_recv_c_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-cond-recv-c"
+  },
+  {
+    "object": "wiz_cond_direct_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-cond-direct"
+  },
+  {
     "object": "copier_named_reference_flags",
     "directory": "analysis/ctor-scope-copier-named"
   },
