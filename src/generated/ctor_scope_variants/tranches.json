@@ -336,6 +336,14 @@
     "directory": "analysis/ctor-scope-named-event-place"
   },
   {
+    "object": "named_event_addrtemp_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-addrtemp"
+  },
+  {
+    "object": "named_event_ref_addr_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-ref-addr"
+  },
+  {
     "object": "named_event_place_vol_reference_flags",
     "directory": "analysis/ctor-scope-named-event-place-vol"
   },

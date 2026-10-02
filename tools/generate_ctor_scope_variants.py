@@ -990,6 +990,19 @@ def named_event_variants():
             'Event_thunk_FUN_10def0d0 event;\n'
             'NativeNamedEvent_FUN_10df9440 *pe = (NativeNamedEvent_FUN_10df9440 *)\n'
             '    new (&event) NativeNamedEvent_FUN_10df9440();\n'),
+        # &-temp pointer binding (MSVC extension): pe binds the ctor's eax
+        # directly (mov esi,eax), the temp stays EH-tracked at [ebp-0x28],
+        # and pe's later uses flow through esi — matching the native pin
+        'named_event_addrtemp': (
+            ctor_decl,
+            'NativeNamedEvent_FUN_10df9440 *pe = '
+            '&NativeNamedEvent_FUN_10df9440();\n'),
+        # bound-temp + &-of-bound: event is the tracked bound temp, pe folds
+        'named_event_ref_addr': (
+            ctor_decl,
+            'NativeNamedEvent_FUN_10df9440 &event = '
+            'NativeNamedEvent_FUN_10df9440();\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = &event;\n'),
         # placement-new into a tracked member of a local struct whose sole
         # member is the event: the member's arm may land lazily at the call
         'named_event_place_vol': (
