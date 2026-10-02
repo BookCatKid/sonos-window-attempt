@@ -30,7 +30,7 @@ struct ThrowInfo;
 extern undefined4 DAT_1189dc98;
 extern undefined4 DAT_119260bc;
 extern undefined4 DAT_12126b84;
-extern undefined4 __fastcall FUN_11117750(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3, unsigned int recovered_unused_stack_4);
+extern undefined4 __fastcall FUN_11117750(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3);
 extern void __stdcall FUN_11117e90(undefined4 param_1,undefined4 param_2,undefined4 *param_3);
 extern int thunk_FUN_110828b0(...);
 extern int thunk_FUN_11095e00(...);
@@ -51,7 +51,7 @@ extern int thunk_FUN_1148ac28(...);
 namespace recovered_11117750 {
 #line 1 "ENTRY_11117750"
 
-undefined4 __fastcall FUN_11117750(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3, unsigned int recovered_unused_stack_4)
+undefined4 __fastcall FUN_11117750(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3)
 
 {
   undefined4 ghidra_cookie_frame_slot;

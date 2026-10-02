@@ -186,6 +186,43 @@ def reference_arity(source):
         entry, size = int(marker.group(1), 16), int(marker.group(2))
         stop = markers[index + 1].start() if index + 1 < len(markers) else len(source)
         block = source[marker.end():stop]
+        member = re.search(
+            r'(?m)^(?P<result>[A-Za-z_][\w\s\*]*?)\s+Recovered_' + marker.group(1) +
+            r'::(?P<name>FUN_' + marker.group(1) + r')\s*\((?P<params>[^()]*)\)'
+            r'\s*(?:noexcept\s*)?\{', block)
+        if member:
+            # A __thiscall member keeps `this` in ecx and cleans every explicit
+            # argument on the stack; growing the parameter list fixes a
+            # reference ret N larger than the declared argument bytes. Both the
+            # out-of-line definition and the struct declaration carry the same
+            # `FUN_e(params)` text and are rewritten together.
+            params = [p.strip() for p in member.group('params').split(',')
+                      if p.strip() and p.strip() != 'void']
+            code = function_bytes(data, entry, size, base, sections)
+            pops = [int(i.operands[0].imm) if i.operands else 0
+                    for i in disassembler.disasm(code, 0) if i.mnemonic == 'ret']
+            if len(pops) != 1 or pops[0] <= 0 or pops[0] % 4:
+                continue
+            need = pops[0] // 4
+            present = len(params)
+            if need <= present or need - present > 8:
+                continue
+            name = 'FUN_' + marker.group(1)
+            old = member.group('params')
+            extra = [f'unsigned int recovered_unused_stack_{i}'
+                     for i in range(need - present)]
+            base_params = old.strip() if old.strip() and old.strip() != 'void' else ''
+            new = base_params + (', ' if base_params else '') + ', '.join(extra)
+            prototype = re.compile(re.escape(name + '(' + old + ')'))
+            hits = list(prototype.finditer(source))
+            # Only a clean declaration+definition pair may be grown: any call
+            # spelling the same typed argument list would otherwise be edited.
+            if len(hits) != 2:
+                continue
+            for hit in hits:
+                edits.append((hit.start(), hit.end(), name + '(' + new + ')'))
+            changed += 1
+            continue
         definition = FREE_DEFINITION.search(block)
         if not definition or definition.group('name') != 'FUN_' + marker.group(1):
             continue
@@ -218,7 +255,7 @@ def reference_arity(source):
             continue
         total = need + 2 if fastcall else need
         extra = [f'unsigned int recovered_unused_stack_{i}'
-                 for i in range(present, total)]
+                 for i in range(total - present)]
         new_params = ', '.join(params + extra)
         # Growth is only safe when no same-unit call site would then pass a
         # different argument count against the new typed declaration.

@@ -1974,10 +1974,10 @@ void Recovered_1031a560::FUN_1031a560(int *param_2,undefined4 param_3)
 
 
 // Reference entry 1032ad10; body size 69 bytes.
-struct Recovered_1032ad10 { undefined4 FUN_1032ad10(undefined4 param_2); };
+struct Recovered_1032ad10 { undefined4 FUN_1032ad10(undefined4 param_2, unsigned int recovered_unused_stack_0); };
 #line 1 "ENTRY_1032ad10"
 
-undefined4 Recovered_1032ad10::FUN_1032ad10(undefined4 param_2)
+undefined4 Recovered_1032ad10::FUN_1032ad10(undefined4 param_2, unsigned int recovered_unused_stack_0)
 
 {
   undefined4 param_1 = (undefined4)this;
@@ -1992,10 +1992,10 @@ undefined4 Recovered_1032ad10::FUN_1032ad10(undefined4 param_2)
 
 
 // Reference entry 1032add0; body size 127 bytes.
-struct Recovered_1032add0 { undefined4 FUN_1032add0(undefined4 param_2); };
+struct Recovered_1032add0 { undefined4 FUN_1032add0(undefined4 param_2, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2); };
 #line 1 "ENTRY_1032add0"
 
-undefined4 Recovered_1032add0::FUN_1032add0(undefined4 param_2)
+undefined4 Recovered_1032add0::FUN_1032add0(undefined4 param_2, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   undefined4 param_1 = (undefined4)this;
@@ -2506,10 +2506,10 @@ int Recovered_10395cd0::FUN_10395cd0(undefined4 param_2,undefined4 param_3)
 
 
 // Reference entry 10396540; body size 69 bytes.
-struct Recovered_10396540 { undefined4 FUN_10396540(undefined4 param_2); };
+struct Recovered_10396540 { undefined4 FUN_10396540(undefined4 param_2, unsigned int recovered_unused_stack_0); };
 #line 1 "ENTRY_10396540"
 
-undefined4 Recovered_10396540::FUN_10396540(undefined4 param_2)
+undefined4 Recovered_10396540::FUN_10396540(undefined4 param_2, unsigned int recovered_unused_stack_0)
 
 {
   undefined4 param_1 = (undefined4)this;
@@ -2618,10 +2618,10 @@ void Recovered_103a0700::FUN_103a0700(int *param_2,undefined4 param_3)
 
 
 // Reference entry 103a3f30; body size 129 bytes.
-struct Recovered_103a3f30 { int FUN_103a3f30(undefined4 param_2,undefined4 param_3); };
+struct Recovered_103a3f30 { int FUN_103a3f30(undefined4 param_2,undefined4 param_3, unsigned int recovered_unused_stack_0); };
 #line 1 "ENTRY_103a3f30"
 
-int Recovered_103a3f30::FUN_103a3f30(undefined4 param_2,undefined4 param_3)
+int Recovered_103a3f30::FUN_103a3f30(undefined4 param_2,undefined4 param_3, unsigned int recovered_unused_stack_0)
 
 {
   int param_1 = (int)this;
@@ -2644,10 +2644,10 @@ int Recovered_103a3f30::FUN_103a3f30(undefined4 param_2,undefined4 param_3)
 
 
 // Reference entry 103a3fe0; body size 275 bytes.
-struct Recovered_103a3fe0 { int FUN_103a3fe0(undefined4 param_2,undefined4 param_3); };
+struct Recovered_103a3fe0 { int FUN_103a3fe0(undefined4 param_2,undefined4 param_3, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3, unsigned int recovered_unused_stack_4, unsigned int recovered_unused_stack_5); };
 #line 1 "ENTRY_103a3fe0"
 
-int Recovered_103a3fe0::FUN_103a3fe0(undefined4 param_2,undefined4 param_3)
+int Recovered_103a3fe0::FUN_103a3fe0(undefined4 param_2,undefined4 param_3, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3, unsigned int recovered_unused_stack_4, unsigned int recovered_unused_stack_5)
 
 {
   int param_1 = (int)this;
@@ -3988,10 +3988,10 @@ void __fastcall FUN_1042bf10(int param_1)
 
 
 // Reference entry 1043b030; body size 109 bytes.
-struct Recovered_1043b030 { void FUN_1043b030(int param_2); };
+struct Recovered_1043b030 { void FUN_1043b030(int param_2, unsigned int recovered_unused_stack_0); };
 #line 1 "ENTRY_1043b030"
 
-void Recovered_1043b030::FUN_1043b030(int param_2)
+void Recovered_1043b030::FUN_1043b030(int param_2, unsigned int recovered_unused_stack_0)
 
 {
   int param_1 = (int)this;
@@ -4492,11 +4492,11 @@ void __fastcall FUN_10520f40(int param_1)
 
 // Reference entry 10524a20; body size 362 bytes.
 struct Recovered_10524a20 { int FUN_10524a20(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6); };
+            ,undefined4 param_6, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3); };
 #line 1 "ENTRY_10524a20"
 
 int Recovered_10524a20::FUN_10524a20(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6)
+            ,undefined4 param_6, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3)
 
 {
   int param_1 = (int)this;
@@ -4607,10 +4607,10 @@ undefined4 * Recovered_1053cf30::FUN_1053cf30(undefined4 *param_2)
 
 
 // Reference entry 1054b470; body size 65 bytes.
-struct Recovered_1054b470 { undefined4 FUN_1054b470(undefined4 param_2); };
+struct Recovered_1054b470 { undefined4 FUN_1054b470(undefined4 param_2, unsigned int recovered_unused_stack_0); };
 #line 1 "ENTRY_1054b470"
 
-undefined4 Recovered_1054b470::FUN_1054b470(undefined4 param_2)
+undefined4 Recovered_1054b470::FUN_1054b470(undefined4 param_2, unsigned int recovered_unused_stack_0)
 
 {
   undefined4 param_1 = (undefined4)this;
@@ -4760,10 +4760,10 @@ undefined4 Recovered_10579340::FUN_10579340(undefined4 param_2,undefined4 param_
 
 
 // Reference entry 105793a0; body size 98 bytes.
-struct Recovered_105793a0 { undefined4 FUN_105793a0(undefined4 param_2,undefined4 param_3); };
+struct Recovered_105793a0 { undefined4 FUN_105793a0(undefined4 param_2,undefined4 param_3, unsigned int recovered_unused_stack_0); };
 #line 1 "ENTRY_105793a0"
 
-undefined4 Recovered_105793a0::FUN_105793a0(undefined4 param_2,undefined4 param_3)
+undefined4 Recovered_105793a0::FUN_105793a0(undefined4 param_2,undefined4 param_3, unsigned int recovered_unused_stack_0)
 
 {
   undefined4 param_1 = (undefined4)this;
@@ -4780,10 +4780,10 @@ undefined4 Recovered_105793a0::FUN_105793a0(undefined4 param_2,undefined4 param_
 
 
 // Reference entry 10585de0; body size 252 bytes.
-struct Recovered_10585de0 { int FUN_10585de0(undefined4 param_2,undefined4 param_3); };
+struct Recovered_10585de0 { int FUN_10585de0(undefined4 param_2,undefined4 param_3, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1); };
 #line 1 "ENTRY_10585de0"
 
-int Recovered_10585de0::FUN_10585de0(undefined4 param_2,undefined4 param_3)
+int Recovered_10585de0::FUN_10585de0(undefined4 param_2,undefined4 param_3, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   int param_1 = (int)this;
@@ -4817,10 +4817,10 @@ int Recovered_10585de0::FUN_10585de0(undefined4 param_2,undefined4 param_3)
 
 
 // Reference entry 10585f50; body size 98 bytes.
-struct Recovered_10585f50 { undefined4 FUN_10585f50(undefined4 param_2); };
+struct Recovered_10585f50 { undefined4 FUN_10585f50(undefined4 param_2, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1); };
 #line 1 "ENTRY_10585f50"
 
-undefined4 Recovered_10585f50::FUN_10585f50(undefined4 param_2)
+undefined4 Recovered_10585f50::FUN_10585f50(undefined4 param_2, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   undefined4 param_1 = (undefined4)this;
@@ -5145,10 +5145,10 @@ void Recovered_105d75e0::FUN_105d75e0(int *param_2,undefined4 param_3)
 
 
 // Reference entry 105e71e0; body size 69 bytes.
-struct Recovered_105e71e0 { undefined4 FUN_105e71e0(undefined4 param_2); };
+struct Recovered_105e71e0 { undefined4 FUN_105e71e0(undefined4 param_2, unsigned int recovered_unused_stack_0); };
 #line 1 "ENTRY_105e71e0"
 
-undefined4 Recovered_105e71e0::FUN_105e71e0(undefined4 param_2)
+undefined4 Recovered_105e71e0::FUN_105e71e0(undefined4 param_2, unsigned int recovered_unused_stack_0)
 
 {
   undefined4 param_1 = (undefined4)this;
@@ -5181,10 +5181,10 @@ undefined4 Recovered_105e72a0::FUN_105e72a0(undefined4 param_2,undefined4 param_
 
 
 // Reference entry 105e73c0; body size 69 bytes.
-struct Recovered_105e73c0 { undefined4 FUN_105e73c0(undefined4 param_2); };
+struct Recovered_105e73c0 { undefined4 FUN_105e73c0(undefined4 param_2, unsigned int recovered_unused_stack_0); };
 #line 1 "ENTRY_105e73c0"
 
-undefined4 Recovered_105e73c0::FUN_105e73c0(undefined4 param_2)
+undefined4 Recovered_105e73c0::FUN_105e73c0(undefined4 param_2, unsigned int recovered_unused_stack_0)
 
 {
   undefined4 param_1 = (undefined4)this;
@@ -5413,10 +5413,10 @@ void Recovered_106896f0::FUN_106896f0(int *param_2,undefined4 param_3)
 
 
 // Reference entry 1068ba00; body size 139 bytes.
-struct Recovered_1068ba00 { int FUN_1068ba00(undefined4 param_2); };
+struct Recovered_1068ba00 { int FUN_1068ba00(undefined4 param_2, unsigned int recovered_unused_stack_0); };
 #line 1 "ENTRY_1068ba00"
 
-int Recovered_1068ba00::FUN_1068ba00(undefined4 param_2)
+int Recovered_1068ba00::FUN_1068ba00(undefined4 param_2, unsigned int recovered_unused_stack_0)
 
 {
   int param_1 = (int)this;
@@ -5749,10 +5749,10 @@ void Recovered_109fa5e0::FUN_109fa5e0(int *param_2,undefined4 param_3)
 
 
 // Reference entry 10a08be0; body size 69 bytes.
-struct Recovered_10a08be0 { undefined4 FUN_10a08be0(undefined4 param_2); };
+struct Recovered_10a08be0 { undefined4 FUN_10a08be0(undefined4 param_2, unsigned int recovered_unused_stack_0); };
 #line 1 "ENTRY_10a08be0"
 
-undefined4 Recovered_10a08be0::FUN_10a08be0(undefined4 param_2)
+undefined4 Recovered_10a08be0::FUN_10a08be0(undefined4 param_2, unsigned int recovered_unused_stack_0)
 
 {
   undefined4 param_1 = (undefined4)this;
@@ -5888,10 +5888,10 @@ void Recovered_10b7e370::FUN_10b7e370(int *param_2,undefined4 param_3)
 
 
 // Reference entry 10b84420; body size 94 bytes.
-struct Recovered_10b84420 { undefined4 FUN_10b84420(undefined4 param_2,undefined4 param_3); };
+struct Recovered_10b84420 { undefined4 FUN_10b84420(undefined4 param_2,undefined4 param_3, unsigned int recovered_unused_stack_0); };
 #line 1 "ENTRY_10b84420"
 
-undefined4 Recovered_10b84420::FUN_10b84420(undefined4 param_2,undefined4 param_3)
+undefined4 Recovered_10b84420::FUN_10b84420(undefined4 param_2,undefined4 param_3, unsigned int recovered_unused_stack_0)
 
 {
   undefined4 param_1 = (undefined4)this;
@@ -5926,10 +5926,10 @@ undefined4 Recovered_10b844a0::FUN_10b844a0(undefined4 param_2,undefined4 param_
 
 
 // Reference entry 10b84500; body size 190 bytes.
-struct Recovered_10b84500 { int FUN_10b84500(undefined4 param_2); };
+struct Recovered_10b84500 { int FUN_10b84500(undefined4 param_2, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3, unsigned int recovered_unused_stack_4); };
 #line 1 "ENTRY_10b84500"
 
-int Recovered_10b84500::FUN_10b84500(undefined4 param_2)
+int Recovered_10b84500::FUN_10b84500(undefined4 param_2, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3, unsigned int recovered_unused_stack_4)
 
 {
   int param_1 = (int)this;
@@ -8306,7 +8306,7 @@ void Recovered_10d50840::FUN_10d50840(uint param_2,uint param_3)
 // Reference entry 10d54470; body size 155 bytes.
 #line 1 "ENTRY_10d54470"
 
-void __fastcall FUN_10d54470(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3)
+void __fastcall FUN_10d54470(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int *piVar1;
@@ -8894,10 +8894,10 @@ int Recovered_10da4890::FUN_10da4890(int *param_2)
 
 
 // Reference entry 10da7870; body size 69 bytes.
-struct Recovered_10da7870 { undefined4 FUN_10da7870(undefined4 param_2); };
+struct Recovered_10da7870 { undefined4 FUN_10da7870(undefined4 param_2, unsigned int recovered_unused_stack_0); };
 #line 1 "ENTRY_10da7870"
 
-undefined4 Recovered_10da7870::FUN_10da7870(undefined4 param_2)
+undefined4 Recovered_10da7870::FUN_10da7870(undefined4 param_2, unsigned int recovered_unused_stack_0)
 
 {
   undefined4 param_1 = (undefined4)this;
@@ -8912,10 +8912,10 @@ undefined4 Recovered_10da7870::FUN_10da7870(undefined4 param_2)
 
 
 // Reference entry 10da78d0; body size 69 bytes.
-struct Recovered_10da78d0 { undefined4 FUN_10da78d0(undefined4 param_2); };
+struct Recovered_10da78d0 { undefined4 FUN_10da78d0(undefined4 param_2, unsigned int recovered_unused_stack_0); };
 #line 1 "ENTRY_10da78d0"
 
-undefined4 Recovered_10da78d0::FUN_10da78d0(undefined4 param_2)
+undefined4 Recovered_10da78d0::FUN_10da78d0(undefined4 param_2, unsigned int recovered_unused_stack_0)
 
 {
   undefined4 param_1 = (undefined4)this;

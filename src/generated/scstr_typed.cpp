@@ -193,9 +193,9 @@ struct Recovered_10508a20 { SCStr * FUN_10508a20(SCStr *param_2,int param_3); };
 struct Recovered_10508da0 { SCStr * FUN_10508da0(SCStr *param_2,undefined4 param_3); };
 struct Recovered_10509680 { void FUN_10509680(SCStr *param_2); };
 struct Recovered_105150a0 { void FUN_105150a0(SCStr *param_2); };
-struct Recovered_1068ae60 { void FUN_1068ae60(undefined4 *param_2,SCStr *param_3); };
+struct Recovered_1068ae60 { void FUN_1068ae60(undefined4 *param_2,SCStr *param_3, unsigned int recovered_unused_stack_0); };
 struct Recovered_10b81cb0 { SCStr * FUN_10b81cb0(SCStr *param_2); };
-struct Recovered_10bbac00 { void FUN_10bbac00(SCStr *param_2,SCStr *param_3); };
+struct Recovered_10bbac00 { void FUN_10bbac00(SCStr *param_2,SCStr *param_3, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3); };
 struct Recovered_10cf08b0 { undefined4 FUN_10cf08b0(SCStr *param_2); };
 struct Recovered_10d3c3c0 { void FUN_10d3c3c0(SCStr *param_2); };
 struct Recovered_10da2790 { void FUN_10da2790(undefined4 param_2,SCStr *param_3); };
@@ -691,7 +691,7 @@ void Recovered_103e9bc0::FUN_103e9bc0(undefined4 *param_2,undefined4 *param_3)
 
 
 
-void __fastcall FUN_103f3aa0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
+void __fastcall FUN_103f3aa0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   SCStr *ghidra_this;
@@ -712,7 +712,7 @@ void __fastcall FUN_103f3aa0(int param_1, unsigned int recovered_unused_stack_1,
 
 
 
-void __fastcall FUN_103f3b20(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
+void __fastcall FUN_103f3b20(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   SCStr *ghidra_this;
@@ -1295,7 +1295,7 @@ void FUN_105cc740(SCStr *param_1,int param_2,SCStr *param_3,undefined4 param_4,u
 // Reference entry 1068ae60; body size 122 bytes.
 #line 1 "ENTRY_1068ae60"
 
-void Recovered_1068ae60::FUN_1068ae60(undefined4 *param_2,SCStr *param_3)
+void Recovered_1068ae60::FUN_1068ae60(undefined4 *param_2,SCStr *param_3, unsigned int recovered_unused_stack_0)
 
 {
   int param_1 = (int)this;
@@ -1385,7 +1385,7 @@ SCStr * FUN_10bb7a80(SCStr *param_1,undefined4 param_2)
 // Reference entry 10bbac00; body size 100 bytes.
 #line 1 "ENTRY_10bbac00"
 
-void Recovered_10bbac00::FUN_10bbac00(SCStr *param_2,SCStr *param_3)
+void Recovered_10bbac00::FUN_10bbac00(SCStr *param_2,SCStr *param_3, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3)
 
 {
   int param_1 = (int)this;
