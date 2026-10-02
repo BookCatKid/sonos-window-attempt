@@ -1371,6 +1371,56 @@ def wiz_state_variants():
         source_marker + '\n' + tail_common +
         '{ RecoveredString_FUN_1008c50b s2 = thunk_FUN_106dfa00();\n'
         '  s2.endsWith("Page"); }\n' + tail_end)
+    # C++17 if-init: MSVC flag-tracks the init-statement variable because its
+    # lifetime is scoped to a conditional — flag machinery without a linear
+    # branch when the if-body is empty
+    out['wiz_if_init'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'if (RecoveredString_FUN_1008c50b s2 = thunk_FUN_106dfa00();\n'
+        '    s2.endsWith("Page")) { }\n' + tail_end)
+    # C++17 if-init where the condition reads the object but the flag still
+    # marks the init temp; body consumed unconditionally
+    out['wiz_if_init_void'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'if (RecoveredString_FUN_1008c50b s2 = thunk_FUN_106dfa00(); true) {\n'
+        '  s2.endsWith("Page"); }\n' + tail_end)
+    # for-init scoped variable: MSVC flag-marks declaration temps inside
+    # for-initializers
+    out['wiz_for_init'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'for (RecoveredString_FUN_1008c50b s2 = thunk_FUN_106dfa00();\n'
+        '     s2.endsWith("Page"); ) { break; }\n' + tail_end)
+    # uninitialized decl then callee-side construction: MSVC flag-tracks the
+    # adopted object because construction is not a visible ctor call
+    adopt_klass = old_klass.replace(
+        'RecoveredString_FUN_1008c50b thunk_FUN_106dfa00();',
+        'void thunk_FUN_106dfa00(RecoveredString_FUN_1008c50b *);')
+    adopt_str = ('struct RecoveredStringAdopt_FUN_1008c50b {\n'
+                 'unsigned int rep;\n'
+                 '__forceinline RecoveredStringAdopt_FUN_1008c50b() {}\n'
+                 '__forceinline RecoveredStringAdopt_FUN_1008c50b(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }\n'
+                 'bool endsWith(const char *suffix) const;\n'
+                 '~RecoveredStringAdopt_FUN_1008c50b() noexcept { ((SCStr *)this)->int_release(); rep=0; }\n'
+                 '};\n')
+    out['wiz_decl_adopt'] = (
+        prefix.replace(old_klass, adopt_str + adopt_klass.replace(
+            'void thunk_FUN_106dfa00(RecoveredString_FUN_1008c50b *);',
+            'void thunk_FUN_106dfa00(RecoveredStringAdopt_FUN_1008c50b *);')) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'RecoveredStringAdopt_FUN_1008c50b s2;\n'
+        'thunk_FUN_106dfa00(&s2);\n'
+        's2.endsWith("Page");\n' + tail_end)
     return out
 
 

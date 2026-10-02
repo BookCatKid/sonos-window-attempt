@@ -452,6 +452,22 @@
     "directory": "analysis/ctor-scope-wiz-inner-scope"
   },
   {
+    "object": "wiz_if_init_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-if-init"
+  },
+  {
+    "object": "wiz_if_init_void_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-if-init-void"
+  },
+  {
+    "object": "wiz_for_init_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-for-init"
+  },
+  {
+    "object": "wiz_decl_adopt_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-decl-adopt"
+  },
+  {
     "object": "copier_named_reference_flags",
     "directory": "analysis/ctor-scope-copier-named"
   },
