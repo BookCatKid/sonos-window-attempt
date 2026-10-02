@@ -1076,6 +1076,18 @@ def named_event_variants():
                               '    NativeNamedEvent_FUN_10df9440 *self();'),
             'NativeNamedEvent_FUN_10df9440 event;\n'
             'NativeNamedEvent_FUN_10df9440 *pe = event.self();\n'),
+        # container whose own ctor does the placement: `EvBox u` is the single
+        # construction call (inlined new -> lea ecx,&u; call Ev::ctor -> eax=&u),
+        # so the tracked state arms AFTER it while eax=&u can flow to pe.
+        'named_event_boxctor': (
+            ctor_decl +
+            'union NativeEventSlot { void *p0,*p1,*p2,*p3,*p4,*p5;\n'
+            'NativeNamedEvent_FUN_10df9440 e;\n'
+            '__forceinline NativeEventSlot() {\n'
+            '    new(&e) NativeNamedEvent_FUN_10df9440(); }\n'
+            '~NativeEventSlot() { e.~NativeNamedEvent_FUN_10df9440(); } };\n',
+            'NativeEventSlot u;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = (NativeNamedEvent_FUN_10df9440 *)&u.e;\n'),
     }
     # Variants suffixed `_outctor` force the RecoveredString const-char* ctor
     # out-of-line: native calls 0x1005273e (the real ctor) rather than inlining
