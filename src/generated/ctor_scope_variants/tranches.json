@@ -936,6 +936,18 @@
     "directory": "analysis/ctor-scope-copier-wm0-vol-decl"
   },
   {
+    "object": "copier_wm0_scptr_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-scptr"
+  },
+  {
+    "object": "copier_wm0_scptr_x_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-scptr-x"
+  },
+  {
+    "object": "copier_wm0_scptr_d_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-scptr-d"
+  },
+  {
     "object": "delayed_plain_reference_flags",
     "directory": "analysis/ctor-scope-delayed-plain"
   },

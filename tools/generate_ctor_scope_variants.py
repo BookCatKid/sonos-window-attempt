@@ -2762,6 +2762,50 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
             '    CopierWrapMember0vd(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return this;\n'),
+        # by-value smart-pointer arg1: thunk(SCPtr(this), agg) — the SCPtr
+        # temp's p_ init is a leaf store MSVC may emit before temp ctors
+        'copier_wm0_scptr': (
+            prefix +
+            'struct SCPtrX { NativeCopierOutput *p_;\n'
+            '  SCPtrX(NativeCopierOutput *p) : p_(p) {} };\n'
+            'struct NativeCopierEventX : Event_thunk_FUN_10def0d0 {\n'
+            '  NativeCopierEventX();\n'
+            '  void thunk_FUN_10defac0(SCPtrX, const NativeCopierAggregate_FUN_10deee60 &); };\n'
+            'struct CopierWrapMember0sc { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0sc(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierEventX().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0sc(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # explicit SCPtr conversion at the call site
+        'copier_wm0_scptr_x': (
+            prefix +
+            'struct SCPtrX2 { NativeCopierOutput *p_;\n'
+            '  explicit SCPtrX2(NativeCopierOutput *p) : p_(p) {} };\n'
+            'struct NativeCopierEventX2 : Event_thunk_FUN_10def0d0 {\n'
+            '  NativeCopierEventX2();\n'
+            '  void thunk_FUN_10defac0(SCPtrX2, const NativeCopierAggregate_FUN_10deee60 &); };\n'
+            'struct CopierWrapMember0sx { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0sx(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierEventX2().thunk_FUN_10defac0(SCPtrX2(this),\n'
+            '    CopierWrapMember0sx(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # SCPtr with nontrivial dtor — temp may need EH tracking / _this$ home
+        'copier_wm0_scptr_d': (
+            prefix +
+            'struct SCPtrXD { NativeCopierOutput *p_;\n'
+            '  SCPtrXD(NativeCopierOutput *p) : p_(p) {}\n'
+            '  ~SCPtrXD() {} };\n'
+            'struct NativeCopierEventXD : Event_thunk_FUN_10def0d0 {\n'
+            '  NativeCopierEventXD();\n'
+            '  void thunk_FUN_10defac0(SCPtrXD, const NativeCopierAggregate_FUN_10deee60 &); };\n'
+            'struct CopierWrapMember0sd { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0sd(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierEventXD().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0sd(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
     }
     out = {}
     for name, spec in variants.items():
