@@ -1327,9 +1327,9 @@ extern int FUN_10176980(...);
 extern int FUN_101769b0(...);
 extern int FUN_101782e0(...);
 extern void __stdcall FUN_1017b980(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-extern int FUN_1017b9b0(...);
-extern int FUN_1017ba90(...);
-extern int FUN_1017bac0(...);
+extern void __stdcall FUN_1017b9b0(int *param_1,undefined4 param_2);
+extern void __stdcall FUN_1017ba90(int *param_1,undefined4 param_2,undefined4 param_3);
+extern void __stdcall FUN_1017bac0(int *param_1,undefined4 param_2,undefined4 param_3);
 extern int FUN_1018c650(...);
 extern int FUN_1018c6d0(...);
 extern int FUN_1018ee60(...);
@@ -4733,7 +4733,7 @@ void __stdcall FUN_1017b980(int *param_1,undefined4 param_2,undefined4 param_3,u
 namespace recovered_1017b9b0 {
 #line 1 "ENTRY_1017b9b0"
 
-void FUN_1017b9b0(int *param_1,undefined4 param_2)
+void __stdcall FUN_1017b9b0(int *param_1,undefined4 param_2)
 
 {
   undefined4 uVar1;
@@ -4750,7 +4750,7 @@ void FUN_1017b9b0(int *param_1,undefined4 param_2)
 namespace recovered_1017ba90 {
 #line 1 "ENTRY_1017ba90"
 
-void FUN_1017ba90(int *param_1,undefined4 param_2,undefined4 param_3)
+void __stdcall FUN_1017ba90(int *param_1,undefined4 param_2,undefined4 param_3)
 
 {
   undefined4 uVar1;
@@ -4767,7 +4767,7 @@ void FUN_1017ba90(int *param_1,undefined4 param_2,undefined4 param_3)
 namespace recovered_1017bac0 {
 #line 1 "ENTRY_1017bac0"
 
-void FUN_1017bac0(int *param_1,undefined4 param_2,undefined4 param_3)
+void __stdcall FUN_1017bac0(int *param_1,undefined4 param_2,undefined4 param_3)
 
 {
   undefined4 uVar1;

@@ -7314,7 +7314,7 @@ void __stdcall FUN_10170410(int *param_1)
 // Reference entry 10193db0; body size 29 bytes.
 #line 1 "ENTRY_10193db0"
 
-void FUN_10193db0(SCStr *param_1)
+void __stdcall FUN_10193db0(SCStr *param_1)
 
 {
   (param_1)->int_release();
@@ -7327,7 +7327,7 @@ void FUN_10193db0(SCStr *param_1)
 // Reference entry 10193de0; body size 19 bytes.
 #line 1 "ENTRY_10193de0"
 
-int FUN_10193de0(SCStr *param_1)
+int __stdcall FUN_10193de0(SCStr *param_1)
 
 {
   uint uVar1;
@@ -7976,7 +7976,7 @@ SCStr * FUN_101b4e80(SCStr *param_1,undefined4 param_2)
 // Reference entry 101b5270; body size 21 bytes.
 #line 1 "ENTRY_101b5270"
 
-SCStr * FUN_101b5270(SCStr *param_1)
+SCStr * __stdcall FUN_101b5270(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("ability_manager");
@@ -8123,7 +8123,7 @@ undefined4 * Recovered_101b69f0::FUN_101b69f0(undefined4 *param_2,SCStr *param_3
 // Reference entry 101b8720; body size 21 bytes.
 #line 1 "ENTRY_101b8720"
 
-SCStr * FUN_101b8720(SCStr *param_1)
+SCStr * __stdcall FUN_101b8720(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCVersion");
@@ -8221,7 +8221,7 @@ void Recovered_101bb010::FUN_101bb010(undefined4 param_2,SCStr *param_3)
 // Reference entry 101bb0e0; body size 21 bytes.
 #line 1 "ENTRY_101bb0e0"
 
-SCStr * FUN_101bb0e0(SCStr *param_1)
+SCStr * __stdcall FUN_101bb0e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCElapsedTimeMeasurement");
@@ -8232,7 +8232,7 @@ SCStr * FUN_101bb0e0(SCStr *param_1)
 // Reference entry 101bb870; body size 21 bytes.
 #line 1 "ENTRY_101bb870"
 
-SCStr * FUN_101bb870(SCStr *param_1)
+SCStr * __stdcall FUN_101bb870(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -8872,7 +8872,7 @@ SCStr * FUN_101c15b0(SCStr *param_1,undefined4 param_2)
 // Reference entry 101ca950; body size 21 bytes.
 #line 1 "ENTRY_101ca950"
 
-SCStr * FUN_101ca950(SCStr *param_1)
+SCStr * __stdcall FUN_101ca950(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCFetchTokenAction");
@@ -9050,7 +9050,7 @@ void Recovered_101d8de0::FUN_101d8de0(undefined4 param_2,SCStr *param_3)
 // Reference entry 101d96d0; body size 21 bytes.
 #line 1 "ENTRY_101d96d0"
 
-SCStr * FUN_101d96d0(SCStr *param_1)
+SCStr * __stdcall FUN_101d96d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("Fetc\x14hToken");
@@ -9061,7 +9061,7 @@ SCStr * FUN_101d96d0(SCStr *param_1)
 // Reference entry 101d96f0; body size 21 bytes.
 #line 1 "ENTRY_101d96f0"
 
-SCStr * FUN_101d96f0(SCStr *param_1)
+SCStr * __stdcall FUN_101d96f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -9072,7 +9072,7 @@ SCStr * FUN_101d96f0(SCStr *param_1)
 // Reference entry 101d9d40; body size 21 bytes.
 #line 1 "ENTRY_101d9d40"
 
-SCStr * FUN_101d9d40(SCStr *param_1)
+SCStr * __stdcall FUN_101d9d40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -9083,7 +9083,7 @@ SCStr * FUN_101d9d40(SCStr *param_1)
 // Reference entry 101d9fb0; body size 32 bytes.
 #line 1 "ENTRY_101d9fb0"
 
-SCStr * FUN_101d9fb0(SCStr *param_1)
+SCStr * __stdcall FUN_101d9fb0(SCStr *param_1)
 
 {
   new (param_1) SCStr(*((SCStr *)&DAT_121a07b0));
@@ -9095,7 +9095,7 @@ SCStr * FUN_101d9fb0(SCStr *param_1)
 // Reference entry 101d9fe0; body size 21 bytes.
 #line 1 "ENTRY_101d9fe0"
 
-SCStr * FUN_101d9fe0(SCStr *param_1)
+SCStr * __stdcall FUN_101d9fe0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionNoArgDescriptor");
@@ -9144,7 +9144,7 @@ SCStr * Recovered_101da040::FUN_101da040(SCStr *param_2)
 // Reference entry 101dcf70; body size 17 bytes.
 #line 1 "ENTRY_101dcf70"
 
-void FUN_101dcf70(SCStr *param_1)
+void __stdcall FUN_101dcf70(SCStr *param_1)
 
 {
   (param_1)->operator==("SCIHousehold:onSettingsChanged");
@@ -9155,7 +9155,7 @@ void FUN_101dcf70(SCStr *param_1)
 // Reference entry 101dcf90; body size 17 bytes.
 #line 1 "ENTRY_101dcf90"
 
-void FUN_101dcf90(SCStr *param_1)
+void __stdcall FUN_101dcf90(SCStr *param_1)
 
 {
   (param_1)->operator==("SCISystemStatusManager:onUserDismissedSystemStatus");
@@ -9566,7 +9566,7 @@ void FUN_101e0e20(undefined4 param_1,SCStr *param_2,undefined4 param_3,undefined
 
 
 
-void FUN_101e19b0(SCStr *param_1,SCStr *param_2)
+void __stdcall FUN_101e19b0(SCStr *param_1,SCStr *param_2)
 
 {
   (param_1)->operator<(*(param_2));
@@ -9787,7 +9787,7 @@ SCStr * Recovered_101e7220::FUN_101e7220(SCStr *param_2)
 // Reference entry 101ee2e0; body size 21 bytes.
 #line 1 "ENTRY_101ee2e0"
 
-SCStr * FUN_101ee2e0(SCStr *param_1)
+SCStr * __stdcall FUN_101ee2e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("RequireTokenAction");
@@ -9798,7 +9798,7 @@ SCStr * FUN_101ee2e0(SCStr *param_1)
 // Reference entry 101ee310; body size 21 bytes.
 #line 1 "ENTRY_101ee310"
 
-SCStr * FUN_101ee310(SCStr *param_1)
+SCStr * __stdcall FUN_101ee310(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -9821,7 +9821,7 @@ SCStr * Recovered_101ee340::FUN_101ee340(SCStr *param_2)
 // Reference entry 101ee630; body size 21 bytes.
 #line 1 "ENTRY_101ee630"
 
-SCStr * FUN_101ee630(SCStr *param_1)
+SCStr * __stdcall FUN_101ee630(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -10310,7 +10310,7 @@ SCStr * FUN_101fad10(SCStr *param_1,undefined4 param_2)
 // Reference entry 101fb3a0; body size 21 bytes.
 #line 1 "ENTRY_101fb3a0"
 
-SCStr * FUN_101fb3a0(SCStr *param_1)
+SCStr * __stdcall FUN_101fb3a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAppSessionManager");
@@ -10447,7 +10447,7 @@ void Recovered_1020a2b0::FUN_1020a2b0(undefined4 param_2,SCStr *param_3)
 // Reference entry 1020a330; body size 21 bytes.
 #line 1 "ENTRY_1020a330"
 
-SCStr * FUN_1020a330(SCStr *param_1)
+SCStr * __stdcall FUN_1020a330(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCCompoundAction");
@@ -10458,7 +10458,7 @@ SCStr * FUN_1020a330(SCStr *param_1)
 // Reference entry 1020a350; body size 21 bytes.
 #line 1 "ENTRY_1020a350"
 
-SCStr * FUN_1020a350(SCStr *param_1)
+SCStr * __stdcall FUN_1020a350(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCInnerActionFactory");
@@ -10513,7 +10513,7 @@ void Recovered_1020a5b0::FUN_1020a5b0(undefined4 param_2)
 // Reference entry 1020a620; body size 21 bytes.
 #line 1 "ENTRY_1020a620"
 
-SCStr * FUN_1020a620(SCStr *param_1)
+SCStr * __stdcall FUN_1020a620(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -10536,7 +10536,7 @@ SCStr * Recovered_1020a6a0::FUN_1020a6a0(SCStr *param_2)
 // Reference entry 1020a6c0; body size 21 bytes.
 #line 1 "ENTRY_1020a6c0"
 
-SCStr * FUN_1020a6c0(SCStr *param_1)
+SCStr * __stdcall FUN_1020a6c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("AddCustomRadioStation");
@@ -10547,7 +10547,7 @@ SCStr * FUN_1020a6c0(SCStr *param_1)
 // Reference entry 1020a6e0; body size 21 bytes.
 #line 1 "ENTRY_1020a6e0"
 
-SCStr * FUN_1020a6e0(SCStr *param_1)
+SCStr * __stdcall FUN_1020a6e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SelectedItemsAddToQueueAtIndex");
@@ -10558,7 +10558,7 @@ SCStr * FUN_1020a6e0(SCStr *param_1)
 // Reference entry 1020a700; body size 21 bytes.
 #line 1 "ENTRY_1020a700"
 
-SCStr * FUN_1020a700(SCStr *param_1)
+SCStr * __stdcall FUN_1020a700(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SelectedItemsAddToQueue");
@@ -10569,7 +10569,7 @@ SCStr * FUN_1020a700(SCStr *param_1)
 // Reference entry 1020a720; body size 21 bytes.
 #line 1 "ENTRY_1020a720"
 
-SCStr * FUN_1020a720(SCStr *param_1)
+SCStr * __stdcall FUN_1020a720(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SelectedItemsPlayNext");
@@ -10580,7 +10580,7 @@ SCStr * FUN_1020a720(SCStr *param_1)
 // Reference entry 1020a740; body size 21 bytes.
 #line 1 "ENTRY_1020a740"
 
-SCStr * FUN_1020a740(SCStr *param_1)
+SCStr * __stdcall FUN_1020a740(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SelectedItemsReplaceQueue");
@@ -10591,7 +10591,7 @@ SCStr * FUN_1020a740(SCStr *param_1)
 // Reference entry 1020c210; body size 21 bytes.
 #line 1 "ENTRY_1020c210"
 
-SCStr * FUN_1020c210(SCStr *param_1)
+SCStr * __stdcall FUN_1020c210(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -10614,7 +10614,7 @@ SCStr * Recovered_1020d100::FUN_1020d100(SCStr *param_2)
 // Reference entry 1020d120; body size 21 bytes.
 #line 1 "ENTRY_1020d120"
 
-SCStr * FUN_1020d120(SCStr *param_1)
+SCStr * __stdcall FUN_1020d120(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -10625,7 +10625,7 @@ SCStr * FUN_1020d120(SCStr *param_1)
 // Reference entry 1020d140; body size 21 bytes.
 #line 1 "ENTRY_1020d140"
 
-SCStr * FUN_1020d140(SCStr *param_1)
+SCStr * __stdcall FUN_1020d140(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -10636,7 +10636,7 @@ SCStr * FUN_1020d140(SCStr *param_1)
 // Reference entry 1020d160; body size 21 bytes.
 #line 1 "ENTRY_1020d160"
 
-SCStr * FUN_1020d160(SCStr *param_1)
+SCStr * __stdcall FUN_1020d160(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDragAndDrop");
@@ -10647,7 +10647,7 @@ SCStr * FUN_1020d160(SCStr *param_1)
 // Reference entry 1020d180; body size 21 bytes.
 #line 1 "ENTRY_1020d180"
 
-SCStr * FUN_1020d180(SCStr *param_1)
+SCStr * __stdcall FUN_1020d180(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -10658,7 +10658,7 @@ SCStr * FUN_1020d180(SCStr *param_1)
 // Reference entry 1020d1a0; body size 21 bytes.
 #line 1 "ENTRY_1020d1a0"
 
-SCStr * FUN_1020d1a0(SCStr *param_1)
+SCStr * __stdcall FUN_1020d1a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -10669,7 +10669,7 @@ SCStr * FUN_1020d1a0(SCStr *param_1)
 // Reference entry 1020d1c0; body size 21 bytes.
 #line 1 "ENTRY_1020d1c0"
 
-SCStr * FUN_1020d1c0(SCStr *param_1)
+SCStr * __stdcall FUN_1020d1c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -10680,7 +10680,7 @@ SCStr * FUN_1020d1c0(SCStr *param_1)
 // Reference entry 1020d2f0; body size 21 bytes.
 #line 1 "ENTRY_1020d2f0"
 
-SCStr * FUN_1020d2f0(SCStr *param_1)
+SCStr * __stdcall FUN_1020d2f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -10703,7 +10703,7 @@ SCStr * Recovered_1020d310::FUN_1020d310(SCStr *param_2)
 // Reference entry 1020d330; body size 21 bytes.
 #line 1 "ENTRY_1020d330"
 
-SCStr * FUN_1020d330(SCStr *param_1)
+SCStr * __stdcall FUN_1020d330(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -10714,7 +10714,7 @@ SCStr * FUN_1020d330(SCStr *param_1)
 // Reference entry 1020db70; body size 32 bytes.
 #line 1 "ENTRY_1020db70"
 
-SCStr * FUN_1020db70(SCStr *param_1)
+SCStr * __stdcall FUN_1020db70(SCStr *param_1)
 
 {
   new (param_1) SCStr(*((SCStr *)&DAT_121a07b0));
@@ -10739,7 +10739,7 @@ SCStr * Recovered_1020dba0::FUN_1020dba0(SCStr *param_2)
 // Reference entry 1020dbd0; body size 32 bytes.
 #line 1 "ENTRY_1020dbd0"
 
-SCStr * FUN_1020dbd0(SCStr *param_1)
+SCStr * __stdcall FUN_1020dbd0(SCStr *param_1)
 
 {
   new (param_1) SCStr(*((SCStr *)&DAT_121a07b0));
@@ -10751,7 +10751,7 @@ SCStr * FUN_1020dbd0(SCStr *param_1)
 // Reference entry 1020f4b0; body size 21 bytes.
 #line 1 "ENTRY_1020f4b0"
 
-SCStr * FUN_1020f4b0(SCStr *param_1)
+SCStr * __stdcall FUN_1020f4b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionOnGroupDescriptor");
@@ -10762,7 +10762,7 @@ SCStr * FUN_1020f4b0(SCStr *param_1)
 // Reference entry 1020f4d0; body size 21 bytes.
 #line 1 "ENTRY_1020f4d0"
 
-SCStr * FUN_1020f4d0(SCStr *param_1)
+SCStr * __stdcall FUN_1020f4d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIAddToQueueAtNumberDescriptor");
@@ -10925,7 +10925,7 @@ SCStr * Recovered_10216e80::FUN_10216e80(SCStr *param_2)
 // Reference entry 10216ea0; body size 21 bytes.
 #line 1 "ENTRY_10216ea0"
 
-SCStr * FUN_10216ea0(SCStr *param_1)
+SCStr * __stdcall FUN_10216ea0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -11060,7 +11060,7 @@ undefined1 __fastcall FUN_1021b200(int *param_1)
 // Reference entry 1021b280; body size 17 bytes.
 #line 1 "ENTRY_1021b280"
 
-void FUN_1021b280(SCStr *param_1)
+void __stdcall FUN_1021b280(SCStr *param_1)
 
 {
   (param_1)->operator==("SCIBrowseItem:onItemChanged");
@@ -11570,7 +11570,7 @@ SCStr * Recovered_10221b60::FUN_10221b60(SCStr *param_2)
 // Reference entry 102223b0; body size 21 bytes.
 #line 1 "ENTRY_102223b0"
 
-SCStr * FUN_102223b0(SCStr *param_1)
+SCStr * __stdcall FUN_102223b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -11581,7 +11581,7 @@ SCStr * FUN_102223b0(SCStr *param_1)
 // Reference entry 102223d0; body size 21 bytes.
 #line 1 "ENTRY_102223d0"
 
-SCStr * FUN_102223d0(SCStr *param_1)
+SCStr * __stdcall FUN_102223d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -11997,7 +11997,7 @@ SCStr * Recovered_10236820::FUN_10236820(SCStr *param_2)
 // Reference entry 10236840; body size 21 bytes.
 #line 1 "ENTRY_10236840"
 
-SCStr * FUN_10236840(SCStr *param_1)
+SCStr * __stdcall FUN_10236840(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAppUrlActionDescriptor");
@@ -12008,7 +12008,7 @@ SCStr * FUN_10236840(SCStr *param_1)
 // Reference entry 10236860; body size 21 bytes.
 #line 1 "ENTRY_10236860"
 
-SCStr * FUN_10236860(SCStr *param_1)
+SCStr * __stdcall FUN_10236860(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("DisplayWizard");
@@ -12019,7 +12019,7 @@ SCStr * FUN_10236860(SCStr *param_1)
 // Reference entry 10236880; body size 21 bytes.
 #line 1 "ENTRY_10236880"
 
-SCStr * FUN_10236880(SCStr *param_1)
+SCStr * __stdcall FUN_10236880(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIncrementHHSwgenAndOnlineUpdateWizardActionDescriptor");
@@ -12030,7 +12030,7 @@ SCStr * FUN_10236880(SCStr *param_1)
 // Reference entry 102368a0; body size 21 bytes.
 #line 1 "ENTRY_102368a0"
 
-SCStr * FUN_102368a0(SCStr *param_1)
+SCStr * __stdcall FUN_102368a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -12053,7 +12053,7 @@ SCStr * Recovered_102368c0::FUN_102368c0(SCStr *param_2)
 // Reference entry 102368e0; body size 21 bytes.
 #line 1 "ENTRY_102368e0"
 
-SCStr * FUN_102368e0(SCStr *param_1)
+SCStr * __stdcall FUN_102368e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("OpenURlAction");
@@ -12064,7 +12064,7 @@ SCStr * FUN_102368e0(SCStr *param_1)
 // Reference entry 10236900; body size 21 bytes.
 #line 1 "ENTRY_10236900"
 
-SCStr * FUN_10236900(SCStr *param_1)
+SCStr * __stdcall FUN_10236900(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("DisplayWizard");
@@ -12075,7 +12075,7 @@ SCStr * FUN_10236900(SCStr *param_1)
 // Reference entry 10236920; body size 21 bytes.
 #line 1 "ENTRY_10236920"
 
-SCStr * FUN_10236920(SCStr *param_1)
+SCStr * __stdcall FUN_10236920(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -12098,7 +12098,7 @@ SCStr * Recovered_10236940::FUN_10236940(SCStr *param_2)
 // Reference entry 10236960; body size 21 bytes.
 #line 1 "ENTRY_10236960"
 
-SCStr * FUN_10236960(SCStr *param_1)
+SCStr * __stdcall FUN_10236960(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -12109,7 +12109,7 @@ SCStr * FUN_10236960(SCStr *param_1)
 // Reference entry 10236980; body size 21 bytes.
 #line 1 "ENTRY_10236980"
 
-SCStr * FUN_10236980(SCStr *param_1)
+SCStr * __stdcall FUN_10236980(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -12120,7 +12120,7 @@ SCStr * FUN_10236980(SCStr *param_1)
 // Reference entry 102369a0; body size 21 bytes.
 #line 1 "ENTRY_102369a0"
 
-SCStr * FUN_102369a0(SCStr *param_1)
+SCStr * __stdcall FUN_102369a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -12131,7 +12131,7 @@ SCStr * FUN_102369a0(SCStr *param_1)
 // Reference entry 102369c0; body size 21 bytes.
 #line 1 "ENTRY_102369c0"
 
-SCStr * FUN_102369c0(SCStr *param_1)
+SCStr * __stdcall FUN_102369c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -12142,7 +12142,7 @@ SCStr * FUN_102369c0(SCStr *param_1)
 // Reference entry 102369e0; body size 21 bytes.
 #line 1 "ENTRY_102369e0"
 
-SCStr * FUN_102369e0(SCStr *param_1)
+SCStr * __stdcall FUN_102369e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -12153,7 +12153,7 @@ SCStr * FUN_102369e0(SCStr *param_1)
 // Reference entry 10236a00; body size 21 bytes.
 #line 1 "ENTRY_10236a00"
 
-SCStr * FUN_10236a00(SCStr *param_1)
+SCStr * __stdcall FUN_10236a00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -12164,7 +12164,7 @@ SCStr * FUN_10236a00(SCStr *param_1)
 // Reference entry 10236a20; body size 21 bytes.
 #line 1 "ENTRY_10236a20"
 
-SCStr * FUN_10236a20(SCStr *param_1)
+SCStr * __stdcall FUN_10236a20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -12175,7 +12175,7 @@ SCStr * FUN_10236a20(SCStr *param_1)
 // Reference entry 10236a40; body size 21 bytes.
 #line 1 "ENTRY_10236a40"
 
-SCStr * FUN_10236a40(SCStr *param_1)
+SCStr * __stdcall FUN_10236a40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -12259,7 +12259,7 @@ SCStr * Recovered_10236c90::FUN_10236c90(SCStr *param_2)
 // Reference entry 10236cb0; body size 21 bytes.
 #line 1 "ENTRY_10236cb0"
 
-SCStr * FUN_10236cb0(SCStr *param_1)
+SCStr * __stdcall FUN_10236cb0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -12270,7 +12270,7 @@ SCStr * FUN_10236cb0(SCStr *param_1)
 // Reference entry 10236cd0; body size 35 bytes.
 #line 1 "ENTRY_10236cd0"
 
-SCStr * FUN_10236cd0(SCStr *param_1)
+SCStr * __stdcall FUN_10236cd0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -12284,7 +12284,7 @@ SCStr * FUN_10236cd0(SCStr *param_1)
 // Reference entry 10236d00; body size 35 bytes.
 #line 1 "ENTRY_10236d00"
 
-SCStr * FUN_10236d00(SCStr *param_1)
+SCStr * __stdcall FUN_10236d00(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -12298,7 +12298,7 @@ SCStr * FUN_10236d00(SCStr *param_1)
 // Reference entry 10236d30; body size 21 bytes.
 #line 1 "ENTRY_10236d30"
 
-SCStr * FUN_10236d30(SCStr *param_1)
+SCStr * __stdcall FUN_10236d30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -12309,7 +12309,7 @@ SCStr * FUN_10236d30(SCStr *param_1)
 // Reference entry 10236d50; body size 21 bytes.
 #line 1 "ENTRY_10236d50"
 
-SCStr * FUN_10236d50(SCStr *param_1)
+SCStr * __stdcall FUN_10236d50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -12320,7 +12320,7 @@ SCStr * FUN_10236d50(SCStr *param_1)
 // Reference entry 10236e20; body size 35 bytes.
 #line 1 "ENTRY_10236e20"
 
-SCStr * FUN_10236e20(SCStr *param_1)
+SCStr * __stdcall FUN_10236e20(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -12349,7 +12349,7 @@ SCStr * Recovered_10236e50::FUN_10236e50(SCStr *param_2)
 // Reference entry 10236e90; body size 35 bytes.
 #line 1 "ENTRY_10236e90"
 
-SCStr * FUN_10236e90(SCStr *param_1)
+SCStr * __stdcall FUN_10236e90(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -12363,7 +12363,7 @@ SCStr * FUN_10236e90(SCStr *param_1)
 // Reference entry 10236ec0; body size 35 bytes.
 #line 1 "ENTRY_10236ec0"
 
-SCStr * FUN_10236ec0(SCStr *param_1)
+SCStr * __stdcall FUN_10236ec0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -12377,7 +12377,7 @@ SCStr * FUN_10236ec0(SCStr *param_1)
 // Reference entry 10236fb0; body size 35 bytes.
 #line 1 "ENTRY_10236fb0"
 
-SCStr * FUN_10236fb0(SCStr *param_1)
+SCStr * __stdcall FUN_10236fb0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -12391,7 +12391,7 @@ SCStr * FUN_10236fb0(SCStr *param_1)
 // Reference entry 10236fe0; body size 35 bytes.
 #line 1 "ENTRY_10236fe0"
 
-SCStr * FUN_10236fe0(SCStr *param_1)
+SCStr * __stdcall FUN_10236fe0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -12405,7 +12405,7 @@ SCStr * FUN_10236fe0(SCStr *param_1)
 // Reference entry 10237010; body size 21 bytes.
 #line 1 "ENTRY_10237010"
 
-SCStr * FUN_10237010(SCStr *param_1)
+SCStr * __stdcall FUN_10237010(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -12416,7 +12416,7 @@ SCStr * FUN_10237010(SCStr *param_1)
 // Reference entry 10237030; body size 35 bytes.
 #line 1 "ENTRY_10237030"
 
-SCStr * FUN_10237030(SCStr *param_1)
+SCStr * __stdcall FUN_10237030(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -12430,7 +12430,7 @@ SCStr * FUN_10237030(SCStr *param_1)
 // Reference entry 10237060; body size 35 bytes.
 #line 1 "ENTRY_10237060"
 
-SCStr * FUN_10237060(SCStr *param_1)
+SCStr * __stdcall FUN_10237060(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -12444,7 +12444,7 @@ SCStr * FUN_10237060(SCStr *param_1)
 // Reference entry 10237090; body size 21 bytes.
 #line 1 "ENTRY_10237090"
 
-SCStr * FUN_10237090(SCStr *param_1)
+SCStr * __stdcall FUN_10237090(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -12455,7 +12455,7 @@ SCStr * FUN_10237090(SCStr *param_1)
 // Reference entry 102370b0; body size 21 bytes.
 #line 1 "ENTRY_102370b0"
 
-SCStr * FUN_102370b0(SCStr *param_1)
+SCStr * __stdcall FUN_102370b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -12466,7 +12466,7 @@ SCStr * FUN_102370b0(SCStr *param_1)
 // Reference entry 10237180; body size 35 bytes.
 #line 1 "ENTRY_10237180"
 
-SCStr * FUN_10237180(SCStr *param_1)
+SCStr * __stdcall FUN_10237180(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -12496,7 +12496,7 @@ SCStr * Recovered_102371b0::FUN_102371b0(SCStr *param_2)
 // Reference entry 102371f0; body size 35 bytes.
 #line 1 "ENTRY_102371f0"
 
-SCStr * FUN_102371f0(SCStr *param_1)
+SCStr * __stdcall FUN_102371f0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -12510,7 +12510,7 @@ SCStr * FUN_102371f0(SCStr *param_1)
 // Reference entry 10237220; body size 35 bytes.
 #line 1 "ENTRY_10237220"
 
-SCStr * FUN_10237220(SCStr *param_1)
+SCStr * __stdcall FUN_10237220(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -12524,7 +12524,7 @@ SCStr * FUN_10237220(SCStr *param_1)
 // Reference entry 10237310; body size 35 bytes.
 #line 1 "ENTRY_10237310"
 
-SCStr * FUN_10237310(SCStr *param_1)
+SCStr * __stdcall FUN_10237310(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -12538,7 +12538,7 @@ SCStr * FUN_10237310(SCStr *param_1)
 // Reference entry 10237340; body size 35 bytes.
 #line 1 "ENTRY_10237340"
 
-SCStr * FUN_10237340(SCStr *param_1)
+SCStr * __stdcall FUN_10237340(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -12552,7 +12552,7 @@ SCStr * FUN_10237340(SCStr *param_1)
 // Reference entry 1023a400; body size 21 bytes.
 #line 1 "ENTRY_1023a400"
 
-SCStr * FUN_1023a400(SCStr *param_1)
+SCStr * __stdcall FUN_1023a400(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -12563,7 +12563,7 @@ SCStr * FUN_1023a400(SCStr *param_1)
 // Reference entry 1023a420; body size 35 bytes.
 #line 1 "ENTRY_1023a420"
 
-SCStr * FUN_1023a420(SCStr *param_1)
+SCStr * __stdcall FUN_1023a420(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -12577,7 +12577,7 @@ SCStr * FUN_1023a420(SCStr *param_1)
 // Reference entry 1023a450; body size 35 bytes.
 #line 1 "ENTRY_1023a450"
 
-SCStr * FUN_1023a450(SCStr *param_1)
+SCStr * __stdcall FUN_1023a450(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -12591,7 +12591,7 @@ SCStr * FUN_1023a450(SCStr *param_1)
 // Reference entry 1023a480; body size 21 bytes.
 #line 1 "ENTRY_1023a480"
 
-SCStr * FUN_1023a480(SCStr *param_1)
+SCStr * __stdcall FUN_1023a480(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -12602,7 +12602,7 @@ SCStr * FUN_1023a480(SCStr *param_1)
 // Reference entry 1023a4a0; body size 21 bytes.
 #line 1 "ENTRY_1023a4a0"
 
-SCStr * FUN_1023a4a0(SCStr *param_1)
+SCStr * __stdcall FUN_1023a4a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -12613,7 +12613,7 @@ SCStr * FUN_1023a4a0(SCStr *param_1)
 // Reference entry 1023a5f0; body size 35 bytes.
 #line 1 "ENTRY_1023a5f0"
 
-SCStr * FUN_1023a5f0(SCStr *param_1)
+SCStr * __stdcall FUN_1023a5f0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -12627,7 +12627,7 @@ SCStr * FUN_1023a5f0(SCStr *param_1)
 // Reference entry 1023a620; body size 35 bytes.
 #line 1 "ENTRY_1023a620"
 
-SCStr * FUN_1023a620(SCStr *param_1)
+SCStr * __stdcall FUN_1023a620(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -12641,7 +12641,7 @@ SCStr * FUN_1023a620(SCStr *param_1)
 // Reference entry 1023a650; body size 35 bytes.
 #line 1 "ENTRY_1023a650"
 
-SCStr * FUN_1023a650(SCStr *param_1)
+SCStr * __stdcall FUN_1023a650(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -12655,7 +12655,7 @@ SCStr * FUN_1023a650(SCStr *param_1)
 // Reference entry 1023a6f0; body size 35 bytes.
 #line 1 "ENTRY_1023a6f0"
 
-SCStr * FUN_1023a6f0(SCStr *param_1)
+SCStr * __stdcall FUN_1023a6f0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -12669,7 +12669,7 @@ SCStr * FUN_1023a6f0(SCStr *param_1)
 // Reference entry 1023a720; body size 35 bytes.
 #line 1 "ENTRY_1023a720"
 
-SCStr * FUN_1023a720(SCStr *param_1)
+SCStr * __stdcall FUN_1023a720(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -12683,7 +12683,7 @@ SCStr * FUN_1023a720(SCStr *param_1)
 // Reference entry 1023a750; body size 21 bytes.
 #line 1 "ENTRY_1023a750"
 
-SCStr * FUN_1023a750(SCStr *param_1)
+SCStr * __stdcall FUN_1023a750(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("BatteryWeakChargerData");
@@ -12694,7 +12694,7 @@ SCStr * FUN_1023a750(SCStr *param_1)
 // Reference entry 1023a770; body size 21 bytes.
 #line 1 "ENTRY_1023a770"
 
-SCStr * FUN_1023a770(SCStr *param_1)
+SCStr * __stdcall FUN_1023a770(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("FactoryReset");
@@ -12705,7 +12705,7 @@ SCStr * FUN_1023a770(SCStr *param_1)
 // Reference entry 1023a790; body size 21 bytes.
 #line 1 "ENTRY_1023a790"
 
-SCStr * FUN_1023a790(SCStr *param_1)
+SCStr * __stdcall FUN_1023a790(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("ForgotHousehold");
@@ -12716,7 +12716,7 @@ SCStr * FUN_1023a790(SCStr *param_1)
 // Reference entry 1023a7b0; body size 21 bytes.
 #line 1 "ENTRY_1023a7b0"
 
-SCStr * FUN_1023a7b0(SCStr *param_1)
+SCStr * __stdcall FUN_1023a7b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("InvalidOptimo2OrientationData");
@@ -12754,7 +12754,7 @@ SCStr * Recovered_1023a7d0::FUN_1023a7d0(SCStr *param_2)
 // Reference entry 1023a890; body size 21 bytes.
 #line 1 "ENTRY_1023a890"
 
-SCStr * FUN_1023a890(SCStr *param_1)
+SCStr * __stdcall FUN_1023a890(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("LegacyCRModernHH");
@@ -12765,7 +12765,7 @@ SCStr * FUN_1023a890(SCStr *param_1)
 // Reference entry 1023a8b0; body size 21 bytes.
 #line 1 "ENTRY_1023a8b0"
 
-SCStr * FUN_1023a8b0(SCStr *param_1)
+SCStr * __stdcall FUN_1023a8b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("ModernCRLegacyZPsAndHHSWGen");
@@ -12776,7 +12776,7 @@ SCStr * FUN_1023a8b0(SCStr *param_1)
 // Reference entry 1023a8d0; body size 21 bytes.
 #line 1 "ENTRY_1023a8d0"
 
-SCStr * FUN_1023a8d0(SCStr *param_1)
+SCStr * __stdcall FUN_1023a8d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("NoNetwork");
@@ -12787,7 +12787,7 @@ SCStr * FUN_1023a8d0(SCStr *param_1)
 // Reference entry 1023a8f0; body size 21 bytes.
 #line 1 "ENTRY_1023a8f0"
 
-SCStr * FUN_1023a8f0(SCStr *param_1)
+SCStr * __stdcall FUN_1023a8f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("OutdatedController");
@@ -12798,7 +12798,7 @@ SCStr * FUN_1023a8f0(SCStr *param_1)
 // Reference entry 1023a910; body size 21 bytes.
 #line 1 "ENTRY_1023a910"
 
-SCStr * FUN_1023a910(SCStr *param_1)
+SCStr * __stdcall FUN_1023a910(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("GuestMode");
@@ -12809,7 +12809,7 @@ SCStr * FUN_1023a910(SCStr *param_1)
 // Reference entry 1023a930; body size 21 bytes.
 #line 1 "ENTRY_1023a930"
 
-SCStr * FUN_1023a930(SCStr *param_1)
+SCStr * __stdcall FUN_1023a930(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("ModernCRMixedLegacyHH");
@@ -12820,7 +12820,7 @@ SCStr * FUN_1023a930(SCStr *param_1)
 // Reference entry 1023a950; body size 21 bytes.
 #line 1 "ENTRY_1023a950"
 
-SCStr * FUN_1023a950(SCStr *param_1)
+SCStr * __stdcall FUN_1023a950(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("EndOfLife");
@@ -12831,7 +12831,7 @@ SCStr * FUN_1023a950(SCStr *param_1)
 // Reference entry 1023a970; body size 21 bytes.
 #line 1 "ENTRY_1023a970"
 
-SCStr * FUN_1023a970(SCStr *param_1)
+SCStr * __stdcall FUN_1023a970(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("Updating");
@@ -13099,7 +13099,7 @@ undefined4 * Recovered_10249970::FUN_10249970(undefined4 *param_2,SCStr *param_3
 // Reference entry 1024ac20; body size 17 bytes.
 #line 1 "ENTRY_1024ac20"
 
-void FUN_1024ac20(SCStr *param_1)
+void __stdcall FUN_1024ac20(SCStr *param_1)
 
 {
   (param_1)->operator==("SCIHousehold:onSettingsChanged");
@@ -13928,7 +13928,7 @@ undefined4 * Recovered_1025df70::FUN_1025df70(undefined4 *param_2,SCStr *param_3
 // Reference entry 1025e510; body size 21 bytes.
 #line 1 "ENTRY_1025e510"
 
-SCStr * FUN_1025e510(SCStr *param_1)
+SCStr * __stdcall FUN_1025e510(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCTime");
@@ -14074,7 +14074,7 @@ void Recovered_10260f40::FUN_10260f40(int *param_2,SCStr *param_3)
 // Reference entry 10260fb0; body size 21 bytes.
 #line 1 "ENTRY_10260fb0"
 
-SCStr * FUN_10260fb0(SCStr *param_1)
+SCStr * __stdcall FUN_10260fb0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("Shares");
@@ -14085,7 +14085,7 @@ SCStr * FUN_10260fb0(SCStr *param_1)
 // Reference entry 10260fd0; body size 21 bytes.
 #line 1 "ENTRY_10260fd0"
 
-SCStr * FUN_10260fd0(SCStr *param_1)
+SCStr * __stdcall FUN_10260fd0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIStringInput");
@@ -14096,7 +14096,7 @@ SCStr * FUN_10260fd0(SCStr *param_1)
 // Reference entry 10260ff0; body size 21 bytes.
 #line 1 "ENTRY_10260ff0"
 
-SCStr * FUN_10260ff0(SCStr *param_1)
+SCStr * __stdcall FUN_10260ff0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIStringInput");
@@ -14144,7 +14144,7 @@ SCStr * Recovered_10261330::FUN_10261330(SCStr *param_2)
 // Reference entry 10261350; body size 21 bytes.
 #line 1 "ENTRY_10261350"
 
-SCStr * FUN_10261350(SCStr *param_1)
+SCStr * __stdcall FUN_10261350(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -14155,7 +14155,7 @@ SCStr * FUN_10261350(SCStr *param_1)
 // Reference entry 10261d60; body size 18 bytes.
 #line 1 "ENTRY_10261d60"
 
-bool FUN_10261d60(SCStr *param_1)
+bool __stdcall FUN_10261d60(SCStr *param_1)
 
 {
   uint uVar1;
@@ -15546,7 +15546,7 @@ undefined4 * Recovered_10271880::FUN_10271880(undefined4 *param_2,SCStr *param_3
 // Reference entry 10278f20; body size 35 bytes.
 #line 1 "ENTRY_10278f20"
 
-SCStr * FUN_10278f20(SCStr *param_1)
+SCStr * __stdcall FUN_10278f20(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -15572,7 +15572,7 @@ SCStr * Recovered_10278f50::FUN_10278f50(SCStr *param_2)
 // Reference entry 10278f80; body size 35 bytes.
 #line 1 "ENTRY_10278f80"
 
-SCStr * FUN_10278f80(SCStr *param_1)
+SCStr * __stdcall FUN_10278f80(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -15654,7 +15654,7 @@ SCStr * FUN_1027e3e0(SCStr *param_1,SCStr *param_2,SCStr *param_3)
 // Reference entry 10281570; body size 21 bytes.
 #line 1 "ENTRY_10281570"
 
-SCStr * FUN_10281570(SCStr *param_1)
+SCStr * __stdcall FUN_10281570(SCStr *param_1)
 
 {
   (param_1)->int_allocRep(".cal");
@@ -15665,7 +15665,7 @@ SCStr * FUN_10281570(SCStr *param_1)
 // Reference entry 10281590; body size 21 bytes.
 #line 1 "ENTRY_10281590"
 
-SCStr * FUN_10281590(SCStr *param_1)
+SCStr * __stdcall FUN_10281590(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("%Y-%m-%d_%H-%M-%S");
@@ -15676,7 +15676,7 @@ SCStr * FUN_10281590(SCStr *param_1)
 // Reference entry 102815b0; body size 21 bytes.
 #line 1 "ENTRY_102815b0"
 
-SCStr * FUN_102815b0(SCStr *param_1)
+SCStr * __stdcall FUN_102815b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("trueplay_");
@@ -15687,7 +15687,7 @@ SCStr * FUN_102815b0(SCStr *param_1)
 // Reference entry 102815d0; body size 21 bytes.
 #line 1 "ENTRY_102815d0"
 
-SCStr * FUN_102815d0(SCStr *param_1)
+SCStr * __stdcall FUN_102815d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep(".tar");
@@ -15698,7 +15698,7 @@ SCStr * FUN_102815d0(SCStr *param_1)
 // Reference entry 10281600; body size 21 bytes.
 #line 1 "ENTRY_10281600"
 
-SCStr * FUN_10281600(SCStr *param_1)
+SCStr * __stdcall FUN_10281600(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("text/plain");
@@ -15709,7 +15709,7 @@ SCStr * FUN_10281600(SCStr *param_1)
 // Reference entry 10281770; body size 21 bytes.
 #line 1 "ENTRY_10281770"
 
-SCStr * FUN_10281770(SCStr *param_1)
+SCStr * __stdcall FUN_10281770(SCStr *param_1)
 
 {
   (param_1)->int_allocRep(".csv");
@@ -15720,7 +15720,7 @@ SCStr * FUN_10281770(SCStr *param_1)
 // Reference entry 102824a0; body size 21 bytes.
 #line 1 "ENTRY_102824a0"
 
-SCStr * FUN_102824a0(SCStr *param_1)
+SCStr * __stdcall FUN_102824a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep(".wav");
@@ -15815,7 +15815,7 @@ SCStr * Recovered_10285540::FUN_10285540(SCStr *param_2)
 // Reference entry 10287fd0; body size 21 bytes.
 #line 1 "ENTRY_10287fd0"
 
-SCStr * FUN_10287fd0(SCStr *param_1)
+SCStr * __stdcall FUN_10287fd0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("WizardManager");
@@ -15826,7 +15826,7 @@ SCStr * FUN_10287fd0(SCStr *param_1)
 // Reference entry 10287ff0; body size 21 bytes.
 #line 1 "ENTRY_10287ff0"
 
-SCStr * FUN_10287ff0(SCStr *param_1)
+SCStr * __stdcall FUN_10287ff0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("newwiz");
@@ -16368,7 +16368,7 @@ SCStr * Recovered_1029ae40::FUN_1029ae40(SCStr *param_2)
 // Reference entry 1029b290; body size 21 bytes.
 #line 1 "ENTRY_1029b290"
 
-SCStr * FUN_1029b290(SCStr *param_1)
+SCStr * __stdcall FUN_1029b290(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -16379,7 +16379,7 @@ SCStr * FUN_1029b290(SCStr *param_1)
 // Reference entry 1029b2b0; body size 21 bytes.
 #line 1 "ENTRY_1029b2b0"
 
-SCStr * FUN_1029b2b0(SCStr *param_1)
+SCStr * __stdcall FUN_1029b2b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -16390,7 +16390,7 @@ SCStr * FUN_1029b2b0(SCStr *param_1)
 // Reference entry 1029b2d0; body size 21 bytes.
 #line 1 "ENTRY_1029b2d0"
 
-SCStr * FUN_1029b2d0(SCStr *param_1)
+SCStr * __stdcall FUN_1029b2d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -16401,7 +16401,7 @@ SCStr * FUN_1029b2d0(SCStr *param_1)
 // Reference entry 1029b2f0; body size 21 bytes.
 #line 1 "ENTRY_1029b2f0"
 
-SCStr * FUN_1029b2f0(SCStr *param_1)
+SCStr * __stdcall FUN_1029b2f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -16412,7 +16412,7 @@ SCStr * FUN_1029b2f0(SCStr *param_1)
 // Reference entry 1029b310; body size 21 bytes.
 #line 1 "ENTRY_1029b310"
 
-SCStr * FUN_1029b310(SCStr *param_1)
+SCStr * __stdcall FUN_1029b310(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -16423,7 +16423,7 @@ SCStr * FUN_1029b310(SCStr *param_1)
 // Reference entry 1029b330; body size 21 bytes.
 #line 1 "ENTRY_1029b330"
 
-SCStr * FUN_1029b330(SCStr *param_1)
+SCStr * __stdcall FUN_1029b330(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -17030,7 +17030,7 @@ int Recovered_102aa8a0::FUN_102aa8a0(int param_2)
 // Reference entry 102aeb40; body size 33 bytes.
 #line 1 "ENTRY_102aeb40"
 
-void FUN_102aeb40(undefined4 param_1,SCStr *param_2)
+void __stdcall FUN_102aeb40(undefined4 param_1,SCStr *param_2)
 
 {
   bool bVar1;
@@ -17046,7 +17046,7 @@ void FUN_102aeb40(undefined4 param_1,SCStr *param_2)
 // Reference entry 102aeb70; body size 21 bytes.
 #line 1 "ENTRY_102aeb70"
 
-SCStr * FUN_102aeb70(SCStr *param_1)
+SCStr * __stdcall FUN_102aeb70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCCompositeSearchable");
@@ -17057,7 +17057,7 @@ SCStr * FUN_102aeb70(SCStr *param_1)
 // Reference entry 102aeb90; body size 21 bytes.
 #line 1 "ENTRY_102aeb90"
 
-SCStr * FUN_102aeb90(SCStr *param_1)
+SCStr * __stdcall FUN_102aeb90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCSearchable");
@@ -17068,7 +17068,7 @@ SCStr * FUN_102aeb90(SCStr *param_1)
 // Reference entry 102aebb0; body size 21 bytes.
 #line 1 "ENTRY_102aebb0"
 
-SCStr * FUN_102aebb0(SCStr *param_1)
+SCStr * __stdcall FUN_102aebb0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCSearchableCategory");
@@ -17236,7 +17236,7 @@ SCStr * Recovered_102b0660::FUN_102b0660(SCStr *param_2)
 // Reference entry 102b0db0; body size 21 bytes.
 #line 1 "ENTRY_102b0db0"
 
-SCStr * FUN_102b0db0(SCStr *param_1)
+SCStr * __stdcall FUN_102b0db0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("aggregate");
@@ -17502,7 +17502,7 @@ undefined4 * Recovered_102c0020::FUN_102c0020(undefined4 *param_2,SCStr *param_3
 // Reference entry 102c08e0; body size 21 bytes.
 #line 1 "ENTRY_102c08e0"
 
-SCStr * FUN_102c08e0(SCStr *param_1)
+SCStr * __stdcall FUN_102c08e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCSearchQuery");
@@ -17513,7 +17513,7 @@ SCStr * FUN_102c08e0(SCStr *param_1)
 // Reference entry 102c0900; body size 18 bytes.
 #line 1 "ENTRY_102c0900"
 
-SCStr * FUN_102c0900(SCStr *param_1)
+SCStr * __stdcall FUN_102c0900(SCStr *param_1)
 
 {
   (param_1)->int_allocRep((char *)0x0);
@@ -17658,7 +17658,7 @@ void Recovered_102c6e60::FUN_102c6e60(undefined4 param_2,SCStr *param_3)
 // Reference entry 102c6f30; body size 21 bytes.
 #line 1 "ENTRY_102c6f30"
 
-SCStr * FUN_102c6f30(SCStr *param_1)
+SCStr * __stdcall FUN_102c6f30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCServiceAccountManager");
@@ -17669,7 +17669,7 @@ SCStr * FUN_102c6f30(SCStr *param_1)
 // Reference entry 102c75b0; body size 21 bytes.
 #line 1 "ENTRY_102c75b0"
 
-SCStr * FUN_102c75b0(SCStr *param_1)
+SCStr * __stdcall FUN_102c75b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("AccountPicker");
@@ -17698,7 +17698,7 @@ SCStr * Recovered_102c75d0::FUN_102c75d0(SCStr *param_2)
 // Reference entry 102c7710; body size 21 bytes.
 #line 1 "ENTRY_102c7710"
 
-SCStr * FUN_102c7710(SCStr *param_1)
+SCStr * __stdcall FUN_102c7710(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -17709,7 +17709,7 @@ SCStr * FUN_102c7710(SCStr *param_1)
 // Reference entry 102c7c40; body size 32 bytes.
 #line 1 "ENTRY_102c7c40"
 
-SCStr * FUN_102c7c40(SCStr *param_1)
+SCStr * __stdcall FUN_102c7c40(SCStr *param_1)
 
 {
   new (param_1) SCStr(*((SCStr *)&DAT_121a07b0));
@@ -17721,7 +17721,7 @@ SCStr * FUN_102c7c40(SCStr *param_1)
 // Reference entry 102c7c70; body size 21 bytes.
 #line 1 "ENTRY_102c7c70"
 
-SCStr * FUN_102c7c70(SCStr *param_1)
+SCStr * __stdcall FUN_102c7c70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionSelectableDescriptor");
@@ -17890,7 +17890,7 @@ undefined4 * Recovered_102c9d40::FUN_102c9d40(undefined4 *param_2,SCStr *param_3
 // Reference entry 102cf580; body size 21 bytes.
 #line 1 "ENTRY_102cf580"
 
-SCStr * FUN_102cf580(SCStr *param_1)
+SCStr * __stdcall FUN_102cf580(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCServiceDescriptorManager");
@@ -18147,7 +18147,7 @@ SCStr * Recovered_102dbb90::FUN_102dbb90(SCStr *param_2)
 // Reference entry 102dbf50; body size 32 bytes.
 #line 1 "ENTRY_102dbf50"
 
-SCStr * FUN_102dbf50(SCStr *param_1,undefined4 param_2,uint *param_3)
+SCStr * __stdcall FUN_102dbf50(SCStr *param_1,undefined4 param_2,uint *param_3)
 
 {
   if (param_3 != (uint *)0x0) {
@@ -18161,7 +18161,7 @@ SCStr * FUN_102dbf50(SCStr *param_1,undefined4 param_2,uint *param_3)
 // Reference entry 102dbf80; body size 32 bytes.
 #line 1 "ENTRY_102dbf80"
 
-SCStr * FUN_102dbf80(SCStr *param_1,undefined4 param_2,uint *param_3)
+SCStr * __stdcall FUN_102dbf80(SCStr *param_1,undefined4 param_2,uint *param_3)
 
 {
   if (param_3 != (uint *)0x0) {
@@ -18175,7 +18175,7 @@ SCStr * FUN_102dbf80(SCStr *param_1,undefined4 param_2,uint *param_3)
 // Reference entry 102dbfb0; body size 32 bytes.
 #line 1 "ENTRY_102dbfb0"
 
-SCStr * FUN_102dbfb0(SCStr *param_1,undefined4 param_2,uint *param_3)
+SCStr * __stdcall FUN_102dbfb0(SCStr *param_1,undefined4 param_2,uint *param_3)
 
 {
   if (param_3 != (uint *)0x0) {
@@ -18189,7 +18189,7 @@ SCStr * FUN_102dbfb0(SCStr *param_1,undefined4 param_2,uint *param_3)
 // Reference entry 102dd640; body size 17 bytes.
 #line 1 "ENTRY_102dd640"
 
-void FUN_102dd640(undefined4 param_1,SCStr *param_2)
+void __stdcall FUN_102dd640(undefined4 param_1,SCStr *param_2)
 
 {
   (param_2)->operator==("SCIExperimentManager:onExperimentsChanged");
@@ -18200,7 +18200,7 @@ void FUN_102dd640(undefined4 param_1,SCStr *param_2)
 // Reference entry 102ddf00; body size 32 bytes.
 #line 1 "ENTRY_102ddf00"
 
-SCStr * FUN_102ddf00(SCStr *param_1)
+SCStr * __stdcall FUN_102ddf00(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -18614,7 +18614,7 @@ void FUN_102e94b0(undefined4 param_1,SCStr *param_2,undefined4 param_3,undefined
 // Reference entry 102f4570; body size 21 bytes.
 #line 1 "ENTRY_102f4570"
 
-SCStr * FUN_102f4570(SCStr *param_1)
+SCStr * __stdcall FUN_102f4570(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCCompoundAction");
@@ -18625,7 +18625,7 @@ SCStr * FUN_102f4570(SCStr *param_1)
 // Reference entry 102f4590; body size 21 bytes.
 #line 1 "ENTRY_102f4590"
 
-SCStr * FUN_102f4590(SCStr *param_1)
+SCStr * __stdcall FUN_102f4590(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCLibraryDefaultURLHandler");
@@ -18672,7 +18672,7 @@ SCStr * Recovered_102f4b20::FUN_102f4b20(SCStr *param_2)
 // Reference entry 102f4b40; body size 21 bytes.
 #line 1 "ENTRY_102f4b40"
 
-SCStr * FUN_102f4b40(SCStr *param_1)
+SCStr * __stdcall FUN_102f4b40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("StoreSubmitDiagnostics");
@@ -18695,7 +18695,7 @@ SCStr * Recovered_102f53d0::FUN_102f53d0(SCStr *param_2)
 // Reference entry 102f53f0; body size 21 bytes.
 #line 1 "ENTRY_102f53f0"
 
-SCStr * FUN_102f53f0(SCStr *param_1)
+SCStr * __stdcall FUN_102f53f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -18741,7 +18741,7 @@ SCStr * Recovered_102f7430::FUN_102f7430(SCStr *param_2)
 // Reference entry 102f7450; body size 21 bytes.
 #line 1 "ENTRY_102f7450"
 
-SCStr * FUN_102f7450(SCStr *param_1)
+SCStr * __stdcall FUN_102f7450(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -19043,7 +19043,7 @@ void Recovered_10300a20::FUN_10300a20(SCStr *param_2)
 // Reference entry 103021b0; body size 21 bytes.
 #line 1 "ENTRY_103021b0"
 
-SCStr * FUN_103021b0(SCStr *param_1)
+SCStr * __stdcall FUN_103021b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -19054,7 +19054,7 @@ SCStr * FUN_103021b0(SCStr *param_1)
 // Reference entry 103021d0; body size 21 bytes.
 #line 1 "ENTRY_103021d0"
 
-SCStr * FUN_103021d0(SCStr *param_1)
+SCStr * __stdcall FUN_103021d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -19231,7 +19231,7 @@ void FUN_10304630(undefined4 param_1,SCStr *param_2,undefined4 param_3,undefined
 
 
 
-void FUN_10306950(SCStr *param_1,SCStr *param_2)
+void __stdcall FUN_10306950(SCStr *param_1,SCStr *param_2)
 
 {
   (param_1)->operator<(*(param_2));
@@ -19266,7 +19266,7 @@ void Recovered_10309310::FUN_10309310(int *param_2,SCStr *param_3)
 // Reference entry 1031dc60; body size 22 bytes.
 #line 1 "ENTRY_1031dc60"
 
-SCStr * FUN_1031dc60(SCStr *param_1)
+SCStr * __stdcall FUN_1031dc60(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -19375,7 +19375,7 @@ SCStr * Recovered_103208b0::FUN_103208b0(SCStr *param_2)
 // Reference entry 10320900; body size 21 bytes.
 #line 1 "ENTRY_10320900"
 
-SCStr * FUN_10320900(SCStr *param_1)
+SCStr * __stdcall FUN_10320900(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -19541,7 +19541,7 @@ SCStr * Recovered_10321b50::FUN_10321b50(SCStr *param_2)
 // Reference entry 10322e60; body size 21 bytes.
 #line 1 "ENTRY_10322e60"
 
-SCStr * FUN_10322e60(SCStr *param_1)
+SCStr * __stdcall FUN_10322e60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -19552,7 +19552,7 @@ SCStr * FUN_10322e60(SCStr *param_1)
 // Reference entry 10322e80; body size 21 bytes.
 #line 1 "ENTRY_10322e80"
 
-SCStr * FUN_10322e80(SCStr *param_1)
+SCStr * __stdcall FUN_10322e80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -19563,7 +19563,7 @@ SCStr * FUN_10322e80(SCStr *param_1)
 // Reference entry 10322ea0; body size 21 bytes.
 #line 1 "ENTRY_10322ea0"
 
-SCStr * FUN_10322ea0(SCStr *param_1)
+SCStr * __stdcall FUN_10322ea0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -19574,7 +19574,7 @@ SCStr * FUN_10322ea0(SCStr *param_1)
 // Reference entry 10322ec0; body size 21 bytes.
 #line 1 "ENTRY_10322ec0"
 
-SCStr * FUN_10322ec0(SCStr *param_1)
+SCStr * __stdcall FUN_10322ec0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -19585,7 +19585,7 @@ SCStr * FUN_10322ec0(SCStr *param_1)
 // Reference entry 10322ee0; body size 21 bytes.
 #line 1 "ENTRY_10322ee0"
 
-SCStr * FUN_10322ee0(SCStr *param_1)
+SCStr * __stdcall FUN_10322ee0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -20166,7 +20166,7 @@ void FUN_10331b70(undefined4 param_1,SCStr *param_2,undefined4 param_3,undefined
 // Reference entry 1033cd90; body size 21 bytes.
 #line 1 "ENTRY_1033cd90"
 
-SCStr * FUN_1033cd90(SCStr *param_1)
+SCStr * __stdcall FUN_1033cd90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("found_product_manager");
@@ -20616,7 +20616,7 @@ SCStr * Recovered_1034d190::FUN_1034d190(SCStr *param_2)
 // Reference entry 1034d8d0; body size 21 bytes.
 #line 1 "ENTRY_1034d8d0"
 
-SCStr * FUN_1034d8d0(SCStr *param_1)
+SCStr * __stdcall FUN_1034d8d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("found_product");
@@ -21498,7 +21498,7 @@ void FUN_10378380(void)
 // Reference entry 10378730; body size 21 bytes.
 #line 1 "ENTRY_10378730"
 
-SCStr * FUN_10378730(SCStr *param_1)
+SCStr * __stdcall FUN_10378730(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("DisplayWizard");
@@ -21509,7 +21509,7 @@ SCStr * FUN_10378730(SCStr *param_1)
 // Reference entry 10378770; body size 21 bytes.
 #line 1 "ENTRY_10378770"
 
-SCStr * FUN_10378770(SCStr *param_1)
+SCStr * __stdcall FUN_10378770(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("DialogUpdateSettings");
@@ -21534,7 +21534,7 @@ SCStr * Recovered_103796f0::FUN_103796f0(SCStr *param_2)
 // Reference entry 10379fd0; body size 21 bytes.
 #line 1 "ENTRY_10379fd0"
 
-SCStr * FUN_10379fd0(SCStr *param_1)
+SCStr * __stdcall FUN_10379fd0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -21545,7 +21545,7 @@ SCStr * FUN_10379fd0(SCStr *param_1)
 // Reference entry 1037a010; body size 21 bytes.
 #line 1 "ENTRY_1037a010"
 
-SCStr * FUN_1037a010(SCStr *param_1)
+SCStr * __stdcall FUN_1037a010(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -21556,7 +21556,7 @@ SCStr * FUN_1037a010(SCStr *param_1)
 // Reference entry 1037a220; body size 93 bytes.
 #line 1 "ENTRY_1037a220"
 
-void FUN_1037a220(SCStr *param_1)
+void __stdcall FUN_1037a220(SCStr *param_1)
 
 {
   SCStr *local_40c;
@@ -21639,7 +21639,7 @@ SCStr * Recovered_1037e9d0::FUN_1037e9d0(SCStr *param_2)
 // Reference entry 1037ef60; body size 21 bytes.
 #line 1 "ENTRY_1037ef60"
 
-SCStr * FUN_1037ef60(SCStr *param_1)
+SCStr * __stdcall FUN_1037ef60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -21718,7 +21718,7 @@ void __fastcall FUN_10386970(int param_1)
 // Reference entry 1038f170; body size 17 bytes.
 #line 1 "ENTRY_1038f170"
 
-void FUN_1038f170(SCStr *param_1)
+void __stdcall FUN_1038f170(SCStr *param_1)
 
 {
   (param_1)->operator==("SCINowPlaying:onMusicChanged");
@@ -21729,7 +21729,7 @@ void FUN_1038f170(SCStr *param_1)
 // Reference entry 1038f1a0; body size 17 bytes.
 #line 1 "ENTRY_1038f1a0"
 
-void FUN_1038f1a0(SCStr *param_1)
+void __stdcall FUN_1038f1a0(SCStr *param_1)
 
 {
   (param_1)->operator==("SCISystemStatusManager:onUserDismissedSystemStatus");
@@ -22305,7 +22305,7 @@ undefined1 Recovered_103a13d0::FUN_103a13d0(SCStr *param_2)
 // Reference entry 103a1490; body size 21 bytes.
 #line 1 "ENTRY_103a1490"
 
-SCStr * FUN_103a1490(SCStr *param_1)
+SCStr * __stdcall FUN_103a1490(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCOpAddAccountX");
@@ -22316,7 +22316,7 @@ SCStr * FUN_103a1490(SCStr *param_1)
 // Reference entry 103a14b0; body size 21 bytes.
 #line 1 "ENTRY_103a14b0"
 
-SCStr * FUN_103a14b0(SCStr *param_1)
+SCStr * __stdcall FUN_103a14b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCServiceDescriptor");
@@ -22327,7 +22327,7 @@ SCStr * FUN_103a14b0(SCStr *param_1)
 // Reference entry 103a14d0; body size 21 bytes.
 #line 1 "ENTRY_103a14d0"
 
-SCStr * FUN_103a14d0(SCStr *param_1)
+SCStr * __stdcall FUN_103a14d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCServiceDescriptorInternals");
@@ -22338,7 +22338,7 @@ SCStr * FUN_103a14d0(SCStr *param_1)
 // Reference entry 103a1540; body size 21 bytes.
 #line 1 "ENTRY_103a1540"
 
-SCStr * FUN_103a1540(SCStr *param_1)
+SCStr * __stdcall FUN_103a1540(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -22401,7 +22401,7 @@ undefined4 Recovered_103a17e0::FUN_103a17e0(undefined4 param_2)
 // Reference entry 103a1850; body size 21 bytes.
 #line 1 "ENTRY_103a1850"
 
-SCStr * FUN_103a1850(SCStr *param_1)
+SCStr * __stdcall FUN_103a1850(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -22412,7 +22412,7 @@ SCStr * FUN_103a1850(SCStr *param_1)
 // Reference entry 103a1870; body size 21 bytes.
 #line 1 "ENTRY_103a1870"
 
-SCStr * FUN_103a1870(SCStr *param_1)
+SCStr * __stdcall FUN_103a1870(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -22916,7 +22916,7 @@ void __fastcall FUN_103b70a0(int param_1)
 // Reference entry 103b7840; body size 21 bytes.
 #line 1 "ENTRY_103b7840"
 
-SCStr * FUN_103b7840(SCStr *param_1)
+SCStr * __stdcall FUN_103b7840(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -22927,7 +22927,7 @@ SCStr * FUN_103b7840(SCStr *param_1)
 // Reference entry 103b78c0; body size 21 bytes.
 #line 1 "ENTRY_103b78c0"
 
-SCStr * FUN_103b78c0(SCStr *param_1)
+SCStr * __stdcall FUN_103b78c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -23526,7 +23526,7 @@ SCStr * Recovered_103c8290::FUN_103c8290(SCStr *param_2)
 // Reference entry 103c82b0; body size 21 bytes.
 #line 1 "ENTRY_103c82b0"
 
-SCStr * FUN_103c82b0(SCStr *param_1)
+SCStr * __stdcall FUN_103c82b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -23537,7 +23537,7 @@ SCStr * FUN_103c82b0(SCStr *param_1)
 // Reference entry 103c82d0; body size 21 bytes.
 #line 1 "ENTRY_103c82d0"
 
-SCStr * FUN_103c82d0(SCStr *param_1)
+SCStr * __stdcall FUN_103c82d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -24244,7 +24244,7 @@ SCStr * Recovered_103d46d0::FUN_103d46d0(SCStr *param_2)
 
 
 
-SCStr * FUN_103d46f0(SCStr *param_1)
+SCStr * __stdcall FUN_103d46f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("Parameter must be set");
@@ -24972,7 +24972,7 @@ SCStr * Recovered_103eb5b0::FUN_103eb5b0(SCStr *param_2)
 // Reference entry 103eb660; body size 21 bytes.
 #line 1 "ENTRY_103eb660"
 
-SCStr * FUN_103eb660(SCStr *param_1)
+SCStr * __stdcall FUN_103eb660(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -24983,7 +24983,7 @@ SCStr * FUN_103eb660(SCStr *param_1)
 // Reference entry 103eb680; body size 21 bytes.
 #line 1 "ENTRY_103eb680"
 
-SCStr * FUN_103eb680(SCStr *param_1)
+SCStr * __stdcall FUN_103eb680(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -24994,7 +24994,7 @@ SCStr * FUN_103eb680(SCStr *param_1)
 // Reference entry 103eb6a0; body size 21 bytes.
 #line 1 "ENTRY_103eb6a0"
 
-SCStr * FUN_103eb6a0(SCStr *param_1)
+SCStr * __stdcall FUN_103eb6a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -25005,7 +25005,7 @@ SCStr * FUN_103eb6a0(SCStr *param_1)
 // Reference entry 103eb6c0; body size 21 bytes.
 #line 1 "ENTRY_103eb6c0"
 
-SCStr * FUN_103eb6c0(SCStr *param_1)
+SCStr * __stdcall FUN_103eb6c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -25016,7 +25016,7 @@ SCStr * FUN_103eb6c0(SCStr *param_1)
 // Reference entry 103eb6e0; body size 21 bytes.
 #line 1 "ENTRY_103eb6e0"
 
-SCStr * FUN_103eb6e0(SCStr *param_1)
+SCStr * __stdcall FUN_103eb6e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -25027,7 +25027,7 @@ SCStr * FUN_103eb6e0(SCStr *param_1)
 // Reference entry 103eb700; body size 21 bytes.
 #line 1 "ENTRY_103eb700"
 
-SCStr * FUN_103eb700(SCStr *param_1)
+SCStr * __stdcall FUN_103eb700(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -25038,7 +25038,7 @@ SCStr * FUN_103eb700(SCStr *param_1)
 // Reference entry 103eb720; body size 21 bytes.
 #line 1 "ENTRY_103eb720"
 
-SCStr * FUN_103eb720(SCStr *param_1)
+SCStr * __stdcall FUN_103eb720(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -25049,7 +25049,7 @@ SCStr * FUN_103eb720(SCStr *param_1)
 // Reference entry 103eb740; body size 21 bytes.
 #line 1 "ENTRY_103eb740"
 
-SCStr * FUN_103eb740(SCStr *param_1)
+SCStr * __stdcall FUN_103eb740(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -25060,7 +25060,7 @@ SCStr * FUN_103eb740(SCStr *param_1)
 // Reference entry 103eb760; body size 21 bytes.
 #line 1 "ENTRY_103eb760"
 
-SCStr * FUN_103eb760(SCStr *param_1)
+SCStr * __stdcall FUN_103eb760(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -25071,7 +25071,7 @@ SCStr * FUN_103eb760(SCStr *param_1)
 // Reference entry 103eb780; body size 21 bytes.
 #line 1 "ENTRY_103eb780"
 
-SCStr * FUN_103eb780(SCStr *param_1)
+SCStr * __stdcall FUN_103eb780(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -25082,7 +25082,7 @@ SCStr * FUN_103eb780(SCStr *param_1)
 // Reference entry 103eb7a0; body size 21 bytes.
 #line 1 "ENTRY_103eb7a0"
 
-SCStr * FUN_103eb7a0(SCStr *param_1)
+SCStr * __stdcall FUN_103eb7a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -25093,7 +25093,7 @@ SCStr * FUN_103eb7a0(SCStr *param_1)
 // Reference entry 103eb7c0; body size 21 bytes.
 #line 1 "ENTRY_103eb7c0"
 
-SCStr * FUN_103eb7c0(SCStr *param_1)
+SCStr * __stdcall FUN_103eb7c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -25104,7 +25104,7 @@ SCStr * FUN_103eb7c0(SCStr *param_1)
 // Reference entry 103eb7e0; body size 21 bytes.
 #line 1 "ENTRY_103eb7e0"
 
-SCStr * FUN_103eb7e0(SCStr *param_1)
+SCStr * __stdcall FUN_103eb7e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -25115,7 +25115,7 @@ SCStr * FUN_103eb7e0(SCStr *param_1)
 // Reference entry 103eb800; body size 21 bytes.
 #line 1 "ENTRY_103eb800"
 
-SCStr * FUN_103eb800(SCStr *param_1)
+SCStr * __stdcall FUN_103eb800(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -25126,7 +25126,7 @@ SCStr * FUN_103eb800(SCStr *param_1)
 // Reference entry 103eb820; body size 21 bytes.
 #line 1 "ENTRY_103eb820"
 
-SCStr * FUN_103eb820(SCStr *param_1)
+SCStr * __stdcall FUN_103eb820(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -25137,7 +25137,7 @@ SCStr * FUN_103eb820(SCStr *param_1)
 // Reference entry 103eb840; body size 21 bytes.
 #line 1 "ENTRY_103eb840"
 
-SCStr * FUN_103eb840(SCStr *param_1)
+SCStr * __stdcall FUN_103eb840(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -25148,7 +25148,7 @@ SCStr * FUN_103eb840(SCStr *param_1)
 // Reference entry 103eb860; body size 21 bytes.
 #line 1 "ENTRY_103eb860"
 
-SCStr * FUN_103eb860(SCStr *param_1)
+SCStr * __stdcall FUN_103eb860(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -27085,7 +27085,7 @@ SCStr * Recovered_10419cc0::FUN_10419cc0(SCStr *param_2)
 // Reference entry 10419ce0; body size 21 bytes.
 #line 1 "ENTRY_10419ce0"
 
-SCStr * FUN_10419ce0(SCStr *param_1)
+SCStr * __stdcall FUN_10419ce0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("DisplayText");
@@ -27096,7 +27096,7 @@ SCStr * FUN_10419ce0(SCStr *param_1)
 // Reference entry 10419d00; body size 21 bytes.
 #line 1 "ENTRY_10419d00"
 
-SCStr * FUN_10419d00(SCStr *param_1)
+SCStr * __stdcall FUN_10419d00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("ShowUnsupportedOSMessage");
@@ -27107,7 +27107,7 @@ SCStr * FUN_10419d00(SCStr *param_1)
 // Reference entry 10419d20; body size 21 bytes.
 #line 1 "ENTRY_10419d20"
 
-SCStr * FUN_10419d20(SCStr *param_1)
+SCStr * __stdcall FUN_10419d20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("ShowUpdateMessage");
@@ -27118,7 +27118,7 @@ SCStr * FUN_10419d20(SCStr *param_1)
 // Reference entry 10419d50; body size 21 bytes.
 #line 1 "ENTRY_10419d50"
 
-SCStr * FUN_10419d50(SCStr *param_1)
+SCStr * __stdcall FUN_10419d50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -27129,7 +27129,7 @@ SCStr * FUN_10419d50(SCStr *param_1)
 // Reference entry 10419d70; body size 21 bytes.
 #line 1 "ENTRY_10419d70"
 
-SCStr * FUN_10419d70(SCStr *param_1)
+SCStr * __stdcall FUN_10419d70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -27140,7 +27140,7 @@ SCStr * FUN_10419d70(SCStr *param_1)
 // Reference entry 10419d90; body size 21 bytes.
 #line 1 "ENTRY_10419d90"
 
-SCStr * FUN_10419d90(SCStr *param_1)
+SCStr * __stdcall FUN_10419d90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -27498,7 +27498,7 @@ void Recovered_1041d630::FUN_1041d630(SCStr *param_2)
 // Reference entry 10422ef0; body size 21 bytes.
 #line 1 "ENTRY_10422ef0"
 
-SCStr * FUN_10422ef0(SCStr *param_1)
+SCStr * __stdcall FUN_10422ef0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCResetPasswordActionDescriptor");
@@ -27509,7 +27509,7 @@ SCStr * FUN_10422ef0(SCStr *param_1)
 // Reference entry 10422f10; body size 21 bytes.
 #line 1 "ENTRY_10422f10"
 
-SCStr * FUN_10422f10(SCStr *param_1)
+SCStr * __stdcall FUN_10422f10(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCSignOutDescriptor");
@@ -27520,7 +27520,7 @@ SCStr * FUN_10422f10(SCStr *param_1)
 // Reference entry 10422f30; body size 21 bytes.
 #line 1 "ENTRY_10422f30"
 
-SCStr * FUN_10422f30(SCStr *param_1)
+SCStr * __stdcall FUN_10422f30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -27531,7 +27531,7 @@ SCStr * FUN_10422f30(SCStr *param_1)
 // Reference entry 10422f50; body size 21 bytes.
 #line 1 "ENTRY_10422f50"
 
-SCStr * FUN_10422f50(SCStr *param_1)
+SCStr * __stdcall FUN_10422f50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -27542,7 +27542,7 @@ SCStr * FUN_10422f50(SCStr *param_1)
 // Reference entry 10422f70; body size 21 bytes.
 #line 1 "ENTRY_10422f70"
 
-SCStr * FUN_10422f70(SCStr *param_1)
+SCStr * __stdcall FUN_10422f70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("ResetPassword");
@@ -27553,7 +27553,7 @@ SCStr * FUN_10422f70(SCStr *param_1)
 // Reference entry 10422f90; body size 21 bytes.
 #line 1 "ENTRY_10422f90"
 
-SCStr * FUN_10422f90(SCStr *param_1)
+SCStr * __stdcall FUN_10422f90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SignOut");
@@ -27652,7 +27652,7 @@ void Recovered_10423ac0::FUN_10423ac0(SCStr *param_2)
 // Reference entry 10424cf0; body size 17 bytes.
 #line 1 "ENTRY_10424cf0"
 
-void FUN_10424cf0(SCStr *param_1)
+void __stdcall FUN_10424cf0(SCStr *param_1)
 
 {
   (param_1)->operator==("SCIHousehold:onZoneGroupsChanged");
@@ -27724,7 +27724,7 @@ void FUN_1042ce30(undefined4 param_1,SCStr *param_2)
 // Reference entry 1042cef0; body size 21 bytes.
 #line 1 "ENTRY_1042cef0"
 
-SCStr * FUN_1042cef0(SCStr *param_1)
+SCStr * __stdcall FUN_1042cef0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("DeleteAlarm");
@@ -27735,7 +27735,7 @@ SCStr * FUN_1042cef0(SCStr *param_1)
 // Reference entry 1042cf10; body size 21 bytes.
 #line 1 "ENTRY_1042cf10"
 
-SCStr * FUN_1042cf10(SCStr *param_1)
+SCStr * __stdcall FUN_1042cf10(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("OfflineTroubleshootAction");
@@ -27746,7 +27746,7 @@ SCStr * FUN_1042cf10(SCStr *param_1)
 // Reference entry 1042d190; body size 21 bytes.
 #line 1 "ENTRY_1042d190"
 
-SCStr * FUN_1042d190(SCStr *param_1)
+SCStr * __stdcall FUN_1042d190(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -27757,7 +27757,7 @@ SCStr * FUN_1042d190(SCStr *param_1)
 // Reference entry 1042d1b0; body size 21 bytes.
 #line 1 "ENTRY_1042d1b0"
 
-SCStr * FUN_1042d1b0(SCStr *param_1)
+SCStr * __stdcall FUN_1042d1b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -27768,7 +27768,7 @@ SCStr * FUN_1042d1b0(SCStr *param_1)
 // Reference entry 1042d4d0; body size 35 bytes.
 #line 1 "ENTRY_1042d4d0"
 
-SCStr * FUN_1042d4d0(SCStr *param_1)
+SCStr * __stdcall FUN_1042d4d0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -27782,7 +27782,7 @@ SCStr * FUN_1042d4d0(SCStr *param_1)
 // Reference entry 1042d500; body size 21 bytes.
 #line 1 "ENTRY_1042d500"
 
-SCStr * FUN_1042d500(SCStr *param_1)
+SCStr * __stdcall FUN_1042d500(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -28148,7 +28148,7 @@ undefined4 * Recovered_1043e380::FUN_1043e380(undefined4 *param_2,SCStr *param_3
 // Reference entry 1043ee10; body size 17 bytes.
 #line 1 "ENTRY_1043ee10"
 
-void FUN_1043ee10(SCStr *param_1)
+void __stdcall FUN_1043ee10(SCStr *param_1)
 
 {
   (param_1)->operator==("SCIHousehold:onZoneGroupsChanged");
@@ -28182,7 +28182,7 @@ undefined4 * Recovered_1043f690::FUN_1043f690(undefined4 *param_2,SCStr *param_3
 // Reference entry 10440820; body size 21 bytes.
 #line 1 "ENTRY_10440820"
 
-SCStr * FUN_10440820(SCStr *param_1)
+SCStr * __stdcall FUN_10440820(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("TurnOnRecentlyPlayed");
@@ -28193,7 +28193,7 @@ SCStr * FUN_10440820(SCStr *param_1)
 // Reference entry 10440840; body size 21 bytes.
 #line 1 "ENTRY_10440840"
 
-SCStr * FUN_10440840(SCStr *param_1)
+SCStr * __stdcall FUN_10440840(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -28284,7 +28284,7 @@ undefined4 * Recovered_10442180::FUN_10442180(undefined4 *param_2,SCStr *param_3
 // Reference entry 10445f50; body size 21 bytes.
 #line 1 "ENTRY_10445f50"
 
-SCStr * FUN_10445f50(SCStr *param_1)
+SCStr * __stdcall FUN_10445f50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("OfflineHideDeviceAction");
@@ -28295,7 +28295,7 @@ SCStr * FUN_10445f50(SCStr *param_1)
 // Reference entry 10445f70; body size 21 bytes.
 #line 1 "ENTRY_10445f70"
 
-SCStr * FUN_10445f70(SCStr *param_1)
+SCStr * __stdcall FUN_10445f70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("enableDisableWifi");
@@ -28306,7 +28306,7 @@ SCStr * FUN_10445f70(SCStr *param_1)
 // Reference entry 10445f90; body size 21 bytes.
 #line 1 "ENTRY_10445f90"
 
-SCStr * FUN_10445f90(SCStr *param_1)
+SCStr * __stdcall FUN_10445f90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -28317,7 +28317,7 @@ SCStr * FUN_10445f90(SCStr *param_1)
 // Reference entry 10445fb0; body size 21 bytes.
 #line 1 "ENTRY_10445fb0"
 
-SCStr * FUN_10445fb0(SCStr *param_1)
+SCStr * __stdcall FUN_10445fb0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -28328,7 +28328,7 @@ SCStr * FUN_10445fb0(SCStr *param_1)
 // Reference entry 10445fd0; body size 21 bytes.
 #line 1 "ENTRY_10445fd0"
 
-SCStr * FUN_10445fd0(SCStr *param_1)
+SCStr * __stdcall FUN_10445fd0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -28423,7 +28423,7 @@ undefined4 * Recovered_1044e9a0::FUN_1044e9a0(undefined4 *param_2,SCStr *param_3
 // Reference entry 10450590; body size 21 bytes.
 #line 1 "ENTRY_10450590"
 
-SCStr * FUN_10450590(SCStr *param_1)
+SCStr * __stdcall FUN_10450590(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SearchTerm");
@@ -28568,7 +28568,7 @@ undefined4 * Recovered_10455200::FUN_10455200(undefined4 *param_2,SCStr *param_3
 // Reference entry 10458d90; body size 21 bytes.
 #line 1 "ENTRY_10458d90"
 
-SCStr * FUN_10458d90(SCStr *param_1)
+SCStr * __stdcall FUN_10458d90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("AreaAction");
@@ -28579,7 +28579,7 @@ SCStr * FUN_10458d90(SCStr *param_1)
 // Reference entry 10459200; body size 21 bytes.
 #line 1 "ENTRY_10459200"
 
-SCStr * FUN_10459200(SCStr *param_1)
+SCStr * __stdcall FUN_10459200(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -28590,7 +28590,7 @@ SCStr * FUN_10459200(SCStr *param_1)
 // Reference entry 10459220; body size 21 bytes.
 #line 1 "ENTRY_10459220"
 
-SCStr * FUN_10459220(SCStr *param_1)
+SCStr * __stdcall FUN_10459220(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("GroupName");
@@ -28601,7 +28601,7 @@ SCStr * FUN_10459220(SCStr *param_1)
 // Reference entry 10459240; body size 21 bytes.
 #line 1 "ENTRY_10459240"
 
-SCStr * FUN_10459240(SCStr *param_1)
+SCStr * __stdcall FUN_10459240(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("Area Action");
@@ -28677,7 +28677,7 @@ undefined4 * Recovered_1045b5f0::FUN_1045b5f0(undefined4 *param_2,SCStr *param_3
 // Reference entry 1045d450; body size 21 bytes.
 #line 1 "ENTRY_1045d450"
 
-SCStr * FUN_1045d450(SCStr *param_1)
+SCStr * __stdcall FUN_1045d450(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("MuseHouseholdName");
@@ -28884,7 +28884,7 @@ void Recovered_10462f30::FUN_10462f30(int param_2,short param_3)
 // Reference entry 10464810; body size 21 bytes.
 #line 1 "ENTRY_10464810"
 
-SCStr * FUN_10464810(SCStr *param_1)
+SCStr * __stdcall FUN_10464810(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("RemoveSSID");
@@ -28895,7 +28895,7 @@ SCStr * FUN_10464810(SCStr *param_1)
 // Reference entry 10464840; body size 21 bytes.
 #line 1 "ENTRY_10464840"
 
-SCStr * FUN_10464840(SCStr *param_1)
+SCStr * __stdcall FUN_10464840(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -28918,7 +28918,7 @@ SCStr * Recovered_10464860::FUN_10464860(SCStr *param_2)
 // Reference entry 10464880; body size 21 bytes.
 #line 1 "ENTRY_10464880"
 
-SCStr * FUN_10464880(SCStr *param_1)
+SCStr * __stdcall FUN_10464880(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -29086,7 +29086,7 @@ void Recovered_10468af0::FUN_10468af0(undefined4 param_2,SCStr *param_3)
 // Reference entry 10468ba0; body size 21 bytes.
 #line 1 "ENTRY_10468ba0"
 
-SCStr * FUN_10468ba0(SCStr *param_1)
+SCStr * __stdcall FUN_10468ba0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("UpdateMusicIndex");
@@ -29097,7 +29097,7 @@ SCStr * FUN_10468ba0(SCStr *param_1)
 // Reference entry 10468bc0; body size 21 bytes.
 #line 1 "ENTRY_10468bc0"
 
-SCStr * FUN_10468bc0(SCStr *param_1)
+SCStr * __stdcall FUN_10468bc0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -29219,7 +29219,7 @@ void __stdcall FUN_1046c660(undefined4 param_1,SCStr *param_2)
 // Reference entry 1046c890; body size 56 bytes.
 #line 1 "ENTRY_1046c890"
 
-void FUN_1046c890(undefined4 param_1,SCStr *param_2)
+void __stdcall FUN_1046c890(undefined4 param_1,SCStr *param_2)
 
 {
   bool bVar1;
@@ -29261,7 +29261,7 @@ undefined4 * Recovered_1046d9d0::FUN_1046d9d0(undefined4 *param_2,SCStr *param_3
 // Reference entry 1046ee60; body size 21 bytes.
 #line 1 "ENTRY_1046ee60"
 
-SCStr * FUN_1046ee60(SCStr *param_1)
+SCStr * __stdcall FUN_1046ee60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("ExplicitFilter");
@@ -29272,7 +29272,7 @@ SCStr * FUN_1046ee60(SCStr *param_1)
 // Reference entry 1046ee80; body size 21 bytes.
 #line 1 "ENTRY_1046ee80"
 
-SCStr * FUN_1046ee80(SCStr *param_1)
+SCStr * __stdcall FUN_1046ee80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -29283,7 +29283,7 @@ SCStr * FUN_1046ee80(SCStr *param_1)
 // Reference entry 1046f0a0; body size 78 bytes.
 #line 1 "ENTRY_1046f0a0"
 
-SCStr * FUN_1046f0a0(SCStr *param_1)
+SCStr * __stdcall FUN_1046f0a0(SCStr *param_1)
 
 {
   char cVar1;
@@ -29312,7 +29312,7 @@ SCStr * FUN_1046f0a0(SCStr *param_1)
 // Reference entry 1046f110; body size 21 bytes.
 #line 1 "ENTRY_1046f110"
 
-SCStr * FUN_1046f110(SCStr *param_1)
+SCStr * __stdcall FUN_1046f110(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -29323,7 +29323,7 @@ SCStr * FUN_1046f110(SCStr *param_1)
 // Reference entry 1046f2f0; body size 17 bytes.
 #line 1 "ENTRY_1046f2f0"
 
-void FUN_1046f2f0(SCStr *param_1)
+void __stdcall FUN_1046f2f0(SCStr *param_1)
 
 {
   (param_1)->operator==("SCIHousehold:onSecureSettingsChanged");
@@ -29380,7 +29380,7 @@ undefined4 * Recovered_104715e0::FUN_104715e0(undefined4 *param_2,SCStr *param_3
 // Reference entry 10473c70; body size 21 bytes.
 #line 1 "ENTRY_10473c70"
 
-SCStr * FUN_10473c70(SCStr *param_1)
+SCStr * __stdcall FUN_10473c70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("DeviceName");
@@ -29414,7 +29414,7 @@ undefined4 * Recovered_104743a0::FUN_104743a0(undefined4 *param_2,SCStr *param_3
 // Reference entry 10478100; body size 21 bytes.
 #line 1 "ENTRY_10478100"
 
-SCStr * FUN_10478100(SCStr *param_1)
+SCStr * __stdcall FUN_10478100(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("OfflineMissingPlayerAction");
@@ -29425,7 +29425,7 @@ SCStr * FUN_10478100(SCStr *param_1)
 // Reference entry 10478120; body size 21 bytes.
 #line 1 "ENTRY_10478120"
 
-SCStr * FUN_10478120(SCStr *param_1)
+SCStr * __stdcall FUN_10478120(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -29436,7 +29436,7 @@ SCStr * FUN_10478120(SCStr *param_1)
 // Reference entry 10478140; body size 21 bytes.
 #line 1 "ENTRY_10478140"
 
-SCStr * FUN_10478140(SCStr *param_1)
+SCStr * __stdcall FUN_10478140(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -29470,7 +29470,7 @@ undefined4 * Recovered_104789a0::FUN_104789a0(undefined4 *param_2,SCStr *param_3
 // Reference entry 1047c210; body size 36 bytes.
 #line 1 "ENTRY_1047c210"
 
-void FUN_1047c210(undefined4 param_1,SCStr *param_2)
+void __stdcall FUN_1047c210(undefined4 param_1,SCStr *param_2)
 
 {
   bool bVar1;
@@ -29689,7 +29689,7 @@ void __stdcall FUN_1049b790(undefined4 param_1,SCStr *param_2)
 // Reference entry 1049b840; body size 21 bytes.
 #line 1 "ENTRY_1049b840"
 
-SCStr * FUN_1049b840(SCStr *param_1)
+SCStr * __stdcall FUN_1049b840(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("RemoveConnectedPartner");
@@ -29700,7 +29700,7 @@ SCStr * FUN_1049b840(SCStr *param_1)
 // Reference entry 1049b860; body size 21 bytes.
 #line 1 "ENTRY_1049b860"
 
-SCStr * FUN_1049b860(SCStr *param_1)
+SCStr * __stdcall FUN_1049b860(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -29780,7 +29780,7 @@ undefined4 * Recovered_1049cd80::FUN_1049cd80(undefined4 *param_2,SCStr *param_3
 // Reference entry 104a1f20; body size 17 bytes.
 #line 1 "ENTRY_104a1f20"
 
-void FUN_104a1f20(SCStr *param_1)
+void __stdcall FUN_104a1f20(SCStr *param_1)
 
 {
   (param_1)->operator==("SCIHousehold:onZoneGroupsChanged");
@@ -29929,7 +29929,7 @@ undefined4 * Recovered_104a7430::FUN_104a7430(undefined4 *param_2,SCStr *param_3
 // Reference entry 104a9070; body size 21 bytes.
 #line 1 "ENTRY_104a9070"
 
-SCStr * FUN_104a9070(SCStr *param_1)
+SCStr * __stdcall FUN_104a9070(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("DeviceName");
@@ -30009,7 +30009,7 @@ undefined4 * Recovered_104aaf00::FUN_104aaf00(undefined4 *param_2,SCStr *param_3
 // Reference entry 104ad6e0; body size 32 bytes.
 #line 1 "ENTRY_104ad6e0"
 
-void FUN_104ad6e0(undefined4 param_1,SCStr *param_2)
+void __stdcall FUN_104ad6e0(undefined4 param_1,SCStr *param_2)
 
 {
   bool bVar1;
@@ -30025,7 +30025,7 @@ void FUN_104ad6e0(undefined4 param_1,SCStr *param_2)
 // Reference entry 104addb0; body size 33 bytes.
 #line 1 "ENTRY_104addb0"
 
-void FUN_104addb0(undefined4 param_1,SCStr *param_2)
+void __stdcall FUN_104addb0(undefined4 param_1,SCStr *param_2)
 
 {
   bool bVar1;
@@ -30085,7 +30085,7 @@ void __stdcall FUN_104b0c10(undefined4 param_1,SCStr *param_2)
 // Reference entry 104b0cc0; body size 21 bytes.
 #line 1 "ENTRY_104b0cc0"
 
-SCStr * FUN_104b0cc0(SCStr *param_1)
+SCStr * __stdcall FUN_104b0cc0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCUnregisteredDeviceMessageDescriptor");
@@ -30096,7 +30096,7 @@ SCStr * FUN_104b0cc0(SCStr *param_1)
 // Reference entry 104b0ce0; body size 21 bytes.
 #line 1 "ENTRY_104b0ce0"
 
-SCStr * FUN_104b0ce0(SCStr *param_1)
+SCStr * __stdcall FUN_104b0ce0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -30176,7 +30176,7 @@ undefined4 * Recovered_104b4920::FUN_104b4920(undefined4 *param_2,SCStr *param_3
 // Reference entry 104b9e00; body size 21 bytes.
 #line 1 "ENTRY_104b9e00"
 
-SCStr * FUN_104b9e00(SCStr *param_1)
+SCStr * __stdcall FUN_104b9e00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("NumPlayersUnavailableMessageDescriptor");
@@ -30187,7 +30187,7 @@ SCStr * FUN_104b9e00(SCStr *param_1)
 // Reference entry 104b9e20; body size 21 bytes.
 #line 1 "ENTRY_104b9e20"
 
-SCStr * FUN_104b9e20(SCStr *param_1)
+SCStr * __stdcall FUN_104b9e20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -30506,7 +30506,7 @@ SCStr * Recovered_104c35e0::FUN_104c35e0(SCStr *param_2)
 // Reference entry 104c6f50; body size 21 bytes.
 #line 1 "ENTRY_104c6f50"
 
-SCStr * FUN_104c6f50(SCStr *param_1)
+SCStr * __stdcall FUN_104c6f50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("DeleteVoiceAccount");
@@ -30517,7 +30517,7 @@ SCStr * FUN_104c6f50(SCStr *param_1)
 // Reference entry 104c6f70; body size 21 bytes.
 #line 1 "ENTRY_104c6f70"
 
-SCStr * FUN_104c6f70(SCStr *param_1)
+SCStr * __stdcall FUN_104c6f70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -30618,7 +30618,7 @@ undefined4 * Recovered_104cb060::FUN_104cb060(undefined4 *param_2,SCStr *param_3
 // Reference entry 104d1430; body size 21 bytes.
 #line 1 "ENTRY_104d1430"
 
-SCStr * FUN_104d1430(SCStr *param_1)
+SCStr * __stdcall FUN_104d1430(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCDismissMessageAction");
@@ -30698,7 +30698,7 @@ SCStr * Recovered_104d2b40::FUN_104d2b40(SCStr *param_2)
 // Reference entry 104d2df0; body size 21 bytes.
 #line 1 "ENTRY_104d2df0"
 
-SCStr * FUN_104d2df0(SCStr *param_1)
+SCStr * __stdcall FUN_104d2df0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("DisplayHelpSheetAction");
@@ -30757,7 +30757,7 @@ SCStr * Recovered_104d2e10::FUN_104d2e10(SCStr *param_2)
 // Reference entry 104d3320; body size 21 bytes.
 #line 1 "ENTRY_104d3320"
 
-SCStr * FUN_104d3320(SCStr *param_1)
+SCStr * __stdcall FUN_104d3320(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -30768,7 +30768,7 @@ SCStr * FUN_104d3320(SCStr *param_1)
 // Reference entry 104d3340; body size 21 bytes.
 #line 1 "ENTRY_104d3340"
 
-SCStr * FUN_104d3340(SCStr *param_1)
+SCStr * __stdcall FUN_104d3340(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -30781,7 +30781,7 @@ SCStr * FUN_104d3340(SCStr *param_1)
 
 
 
-SCStr * FUN_104d3360(SCStr *param_1)
+SCStr * __stdcall FUN_104d3360(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -30892,7 +30892,7 @@ SCStr * Recovered_104d3390::FUN_104d3390(SCStr *param_2)
 // Reference entry 104d37c0; body size 21 bytes.
 #line 1 "ENTRY_104d37c0"
 
-SCStr * FUN_104d37c0(SCStr *param_1)
+SCStr * __stdcall FUN_104d37c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -30903,7 +30903,7 @@ SCStr * FUN_104d37c0(SCStr *param_1)
 // Reference entry 104d3b80; body size 35 bytes.
 #line 1 "ENTRY_104d3b80"
 
-SCStr * FUN_104d3b80(SCStr *param_1)
+SCStr * __stdcall FUN_104d3b80(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -31144,7 +31144,7 @@ void Recovered_104d8370::FUN_104d8370(undefined4 param_2)
 // Reference entry 104d8510; body size 21 bytes.
 #line 1 "ENTRY_104d8510"
 
-SCStr * FUN_104d8510(SCStr *param_1)
+SCStr * __stdcall FUN_104d8510(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SMAPI");
@@ -31155,7 +31155,7 @@ SCStr * FUN_104d8510(SCStr *param_1)
 // Reference entry 104d8550; body size 21 bytes.
 #line 1 "ENTRY_104d8550"
 
-SCStr * FUN_104d8550(SCStr *param_1)
+SCStr * __stdcall FUN_104d8550(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -31166,7 +31166,7 @@ SCStr * FUN_104d8550(SCStr *param_1)
 // Reference entry 104d9270; body size 35 bytes.
 #line 1 "ENTRY_104d9270"
 
-SCStr * FUN_104d9270(SCStr *param_1)
+SCStr * __stdcall FUN_104d9270(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -31234,7 +31234,7 @@ undefined4 * Recovered_104d9d90::FUN_104d9d90(undefined4 *param_2,SCStr *param_3
 // Reference entry 104da990; body size 21 bytes.
 #line 1 "ENTRY_104da990"
 
-SCStr * FUN_104da990(SCStr *param_1)
+SCStr * __stdcall FUN_104da990(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -31245,7 +31245,7 @@ SCStr * FUN_104da990(SCStr *param_1)
 // Reference entry 104dac40; body size 32 bytes.
 #line 1 "ENTRY_104dac40"
 
-SCStr * FUN_104dac40(SCStr *param_1)
+SCStr * __stdcall FUN_104dac40(SCStr *param_1)
 
 {
   new (param_1) SCStr(*((SCStr *)&DAT_121a07b0));
@@ -31257,7 +31257,7 @@ SCStr * FUN_104dac40(SCStr *param_1)
 // Reference entry 104dacd0; body size 21 bytes.
 #line 1 "ENTRY_104dacd0"
 
-SCStr * FUN_104dacd0(SCStr *param_1)
+SCStr * __stdcall FUN_104dacd0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -31268,7 +31268,7 @@ SCStr * FUN_104dacd0(SCStr *param_1)
 // Reference entry 104db0d0; body size 21 bytes.
 #line 1 "ENTRY_104db0d0"
 
-SCStr * FUN_104db0d0(SCStr *param_1)
+SCStr * __stdcall FUN_104db0d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -31291,7 +31291,7 @@ SCStr * FUN_104db100(SCStr *param_1)
 // Reference entry 104db600; body size 21 bytes.
 #line 1 "ENTRY_104db600"
 
-SCStr * FUN_104db600(SCStr *param_1)
+SCStr * __stdcall FUN_104db600(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -31344,7 +31344,7 @@ void Recovered_104dce30::FUN_104dce30(undefined4 param_2,SCStr *param_3)
 
 
 
-SCStr * FUN_104dcf30(SCStr *param_1)
+SCStr * __stdcall FUN_104dcf30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCSelectionManager");
@@ -31424,7 +31424,7 @@ undefined4 * Recovered_104dd760::FUN_104dd760(undefined4 *param_2,SCStr *param_3
 // Reference entry 104ea0a0; body size 21 bytes.
 #line 1 "ENTRY_104ea0a0"
 
-SCStr * FUN_104ea0a0(SCStr *param_1)
+SCStr * __stdcall FUN_104ea0a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCFavoritesManager");
@@ -31500,7 +31500,7 @@ undefined4 * Recovered_104ecb90::FUN_104ecb90(undefined4 *param_2,SCStr *param_3
 // Reference entry 104ede50; body size 21 bytes.
 #line 1 "ENTRY_104ede50"
 
-SCStr * FUN_104ede50(SCStr *param_1)
+SCStr * __stdcall FUN_104ede50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCActionContext object");
@@ -31908,7 +31908,7 @@ SCStr * Recovered_10507860::FUN_10507860(SCStr *param_2)
 // Reference entry 10507cd0; body size 18 bytes.
 #line 1 "ENTRY_10507cd0"
 
-SCStr * FUN_10507cd0(SCStr *param_1)
+SCStr * __stdcall FUN_10507cd0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep((char *)0x0);
@@ -31955,7 +31955,7 @@ SCStr * Recovered_10507f60::FUN_10507f60(SCStr *param_2)
 // Reference entry 10508240; body size 18 bytes.
 #line 1 "ENTRY_10508240"
 
-SCStr * FUN_10508240(SCStr *param_1)
+SCStr * __stdcall FUN_10508240(SCStr *param_1)
 
 {
   (param_1)->int_allocRep((char *)0x0);
@@ -32545,7 +32545,7 @@ void Recovered_105150a0::FUN_105150a0(SCStr *param_2)
 // Reference entry 10516880; body size 21 bytes.
 #line 1 "ENTRY_10516880"
 
-SCStr * FUN_10516880(SCStr *param_1)
+SCStr * __stdcall FUN_10516880(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -32667,7 +32667,7 @@ void Recovered_1051a400::FUN_1051a400(int *param_2)
 // Reference entry 1051f960; body size 21 bytes.
 #line 1 "ENTRY_1051f960"
 
-SCStr * FUN_1051f960(SCStr *param_1)
+SCStr * __stdcall FUN_1051f960(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCOpWithProgressInfo");
@@ -32678,7 +32678,7 @@ SCStr * FUN_1051f960(SCStr *param_1)
 // Reference entry 1051f980; body size 21 bytes.
 #line 1 "ENTRY_1051f980"
 
-SCStr * FUN_1051f980(SCStr *param_1)
+SCStr * __stdcall FUN_1051f980(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCSelectedItemsAddToQueueAtIdxAction");
@@ -32689,7 +32689,7 @@ SCStr * FUN_1051f980(SCStr *param_1)
 // Reference entry 1051f9a0; body size 21 bytes.
 #line 1 "ENTRY_1051f9a0"
 
-SCStr * FUN_1051f9a0(SCStr *param_1)
+SCStr * __stdcall FUN_1051f9a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCSelectedItemsPlayNextAction");
@@ -32700,7 +32700,7 @@ SCStr * FUN_1051f9a0(SCStr *param_1)
 // Reference entry 1051f9c0; body size 21 bytes.
 #line 1 "ENTRY_1051f9c0"
 
-SCStr * FUN_1051f9c0(SCStr *param_1)
+SCStr * __stdcall FUN_1051f9c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCSelectedItemsPlayNowAction");
@@ -32711,7 +32711,7 @@ SCStr * FUN_1051f9c0(SCStr *param_1)
 // Reference entry 1051f9e0; body size 21 bytes.
 #line 1 "ENTRY_1051f9e0"
 
-SCStr * FUN_1051f9e0(SCStr *param_1)
+SCStr * __stdcall FUN_1051f9e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCSelectedItemsReplaceQueueAction");
@@ -32722,7 +32722,7 @@ SCStr * FUN_1051f9e0(SCStr *param_1)
 // Reference entry 105208d0; body size 35 bytes.
 #line 1 "ENTRY_105208d0"
 
-SCStr * FUN_105208d0(SCStr *param_1)
+SCStr * __stdcall FUN_105208d0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -32736,7 +32736,7 @@ SCStr * FUN_105208d0(SCStr *param_1)
 // Reference entry 10520900; body size 35 bytes.
 #line 1 "ENTRY_10520900"
 
-SCStr * FUN_10520900(SCStr *param_1)
+SCStr * __stdcall FUN_10520900(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -32750,7 +32750,7 @@ SCStr * FUN_10520900(SCStr *param_1)
 // Reference entry 10520930; body size 35 bytes.
 #line 1 "ENTRY_10520930"
 
-SCStr * FUN_10520930(SCStr *param_1)
+SCStr * __stdcall FUN_10520930(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -32766,7 +32766,7 @@ SCStr * FUN_10520930(SCStr *param_1)
 
 
 
-SCStr * FUN_10520960(SCStr *param_1)
+SCStr * __stdcall FUN_10520960(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -32780,7 +32780,7 @@ SCStr * FUN_10520960(SCStr *param_1)
 // Reference entry 10520990; body size 35 bytes.
 #line 1 "ENTRY_10520990"
 
-SCStr * FUN_10520990(SCStr *param_1)
+SCStr * __stdcall FUN_10520990(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -32794,7 +32794,7 @@ SCStr * FUN_10520990(SCStr *param_1)
 // Reference entry 10523d10; body size 17 bytes.
 #line 1 "ENTRY_10523d10"
 
-void FUN_10523d10(SCStr *param_1)
+void __stdcall FUN_10523d10(SCStr *param_1)
 
 {
   (param_1)->operator==("SCIBrowseItem:onItemChanged");
@@ -32934,7 +32934,7 @@ SCStr * Recovered_10534000::FUN_10534000(SCStr *param_2)
 // Reference entry 10534170; body size 21 bytes.
 #line 1 "ENTRY_10534170"
 
-SCStr * FUN_10534170(SCStr *param_1)
+SCStr * __stdcall FUN_10534170(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -32979,7 +32979,7 @@ SCStr * FUN_105346e0(SCStr *param_1,int param_2)
 // Reference entry 105349e0; body size 21 bytes.
 #line 1 "ENTRY_105349e0"
 
-SCStr * FUN_105349e0(SCStr *param_1)
+SCStr * __stdcall FUN_105349e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("MusicServiceLogin");
@@ -32990,7 +32990,7 @@ SCStr * FUN_105349e0(SCStr *param_1)
 // Reference entry 10534a20; body size 21 bytes.
 #line 1 "ENTRY_10534a20"
 
-SCStr * FUN_10534a20(SCStr *param_1)
+SCStr * __stdcall FUN_10534a20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("MusicServiceNickname");
@@ -33001,7 +33001,7 @@ SCStr * FUN_10534a20(SCStr *param_1)
 // Reference entry 10534a40; body size 21 bytes.
 #line 1 "ENTRY_10534a40"
 
-SCStr * FUN_10534a40(SCStr *param_1)
+SCStr * __stdcall FUN_10534a40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("MusicServicePassword");
@@ -33012,7 +33012,7 @@ SCStr * FUN_10534a40(SCStr *param_1)
 // Reference entry 10534b00; body size 21 bytes.
 #line 1 "ENTRY_10534b00"
 
-SCStr * FUN_10534b00(SCStr *param_1)
+SCStr * __stdcall FUN_10534b00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_ACCOUNTNEEDED");
@@ -33023,7 +33023,7 @@ SCStr * FUN_10534b00(SCStr *param_1)
 // Reference entry 10534b20; body size 21 bytes.
 #line 1 "ENTRY_10534b20"
 
-SCStr * FUN_10534b20(SCStr *param_1)
+SCStr * __stdcall FUN_10534b20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_INSTALLFAIL_APP_LINK");
@@ -33034,7 +33034,7 @@ SCStr * FUN_10534b20(SCStr *param_1)
 // Reference entry 10534b40; body size 21 bytes.
 #line 1 "ENTRY_10534b40"
 
-SCStr * FUN_10534b40(SCStr *param_1)
+SCStr * __stdcall FUN_10534b40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_CALLTOACTION_APP_LINK");
@@ -33045,7 +33045,7 @@ SCStr * FUN_10534b40(SCStr *param_1)
 // Reference entry 10534b60; body size 21 bytes.
 #line 1 "ENTRY_10534b60"
 
-SCStr * FUN_10534b60(SCStr *param_1)
+SCStr * __stdcall FUN_10534b60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_COMPLETE");
@@ -33056,7 +33056,7 @@ SCStr * FUN_10534b60(SCStr *param_1)
 // Reference entry 10534b80; body size 21 bytes.
 #line 1 "ENTRY_10534b80"
 
-SCStr * FUN_10534b80(SCStr *param_1)
+SCStr * __stdcall FUN_10534b80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_GET_APP_LINK_RETRY");
@@ -33067,7 +33067,7 @@ SCStr * FUN_10534b80(SCStr *param_1)
 // Reference entry 10534ba0; body size 21 bytes.
 #line 1 "ENTRY_10534ba0"
 
-SCStr * FUN_10534ba0(SCStr *param_1)
+SCStr * __stdcall FUN_10534ba0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_GET_LINK_CODE");
@@ -33078,7 +33078,7 @@ SCStr * FUN_10534ba0(SCStr *param_1)
 // Reference entry 10534bc0; body size 21 bytes.
 #line 1 "ENTRY_10534bc0"
 
-SCStr * FUN_10534bc0(SCStr *param_1)
+SCStr * __stdcall FUN_10534bc0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_GET_SHARE_USAGE");
@@ -33089,7 +33089,7 @@ SCStr * FUN_10534bc0(SCStr *param_1)
 // Reference entry 10534be0; body size 21 bytes.
 #line 1 "ENTRY_10534be0"
 
-SCStr * FUN_10534be0(SCStr *param_1)
+SCStr * __stdcall FUN_10534be0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_INIT");
@@ -33100,7 +33100,7 @@ SCStr * FUN_10534be0(SCStr *param_1)
 // Reference entry 10534c00; body size 21 bytes.
 #line 1 "ENTRY_10534c00"
 
-SCStr * FUN_10534c00(SCStr *param_1)
+SCStr * __stdcall FUN_10534c00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_INTRO");
@@ -33111,7 +33111,7 @@ SCStr * FUN_10534c00(SCStr *param_1)
 // Reference entry 10534c20; body size 21 bytes.
 #line 1 "ENTRY_10534c20"
 
-SCStr * FUN_10534c20(SCStr *param_1)
+SCStr * __stdcall FUN_10534c20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_LAUNCH_APP_LINK");
@@ -33122,7 +33122,7 @@ SCStr * FUN_10534c20(SCStr *param_1)
 // Reference entry 10534c40; body size 21 bytes.
 #line 1 "ENTRY_10534c40"
 
-SCStr * FUN_10534c40(SCStr *param_1)
+SCStr * __stdcall FUN_10534c40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_LINK_CODE");
@@ -33133,7 +33133,7 @@ SCStr * FUN_10534c40(SCStr *param_1)
 // Reference entry 10534c60; body size 21 bytes.
 #line 1 "ENTRY_10534c60"
 
-SCStr * FUN_10534c60(SCStr *param_1)
+SCStr * __stdcall FUN_10534c60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_LIST");
@@ -33144,7 +33144,7 @@ SCStr * FUN_10534c60(SCStr *param_1)
 // Reference entry 10534c80; body size 21 bytes.
 #line 1 "ENTRY_10534c80"
 
-SCStr * FUN_10534c80(SCStr *param_1)
+SCStr * __stdcall FUN_10534c80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_LIST_WAITING");
@@ -33155,7 +33155,7 @@ SCStr * FUN_10534c80(SCStr *param_1)
 // Reference entry 10534ca0; body size 21 bytes.
 #line 1 "ENTRY_10534ca0"
 
-SCStr * FUN_10534ca0(SCStr *param_1)
+SCStr * __stdcall FUN_10534ca0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_LOAD_MS_INFO");
@@ -33166,7 +33166,7 @@ SCStr * FUN_10534ca0(SCStr *param_1)
 // Reference entry 10534cc0; body size 21 bytes.
 #line 1 "ENTRY_10534cc0"
 
-SCStr * FUN_10534cc0(SCStr *param_1)
+SCStr * __stdcall FUN_10534cc0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_LOGINPASSWORD");
@@ -33177,7 +33177,7 @@ SCStr * FUN_10534cc0(SCStr *param_1)
 // Reference entry 10534ce0; body size 21 bytes.
 #line 1 "ENTRY_10534ce0"
 
-SCStr * FUN_10534ce0(SCStr *param_1)
+SCStr * __stdcall FUN_10534ce0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_MULTIPLE_ACCOUNTS_ADDED");
@@ -33188,7 +33188,7 @@ SCStr * FUN_10534ce0(SCStr *param_1)
 // Reference entry 10534d00; body size 21 bytes.
 #line 1 "ENTRY_10534d00"
 
-SCStr * FUN_10534d00(SCStr *param_1)
+SCStr * __stdcall FUN_10534d00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_PASSWORD");
@@ -33199,7 +33199,7 @@ SCStr * FUN_10534d00(SCStr *param_1)
 // Reference entry 10534d20; body size 21 bytes.
 #line 1 "ENTRY_10534d20"
 
-SCStr * FUN_10534d20(SCStr *param_1)
+SCStr * __stdcall FUN_10534d20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_PROMOTED_INTRO");
@@ -33210,7 +33210,7 @@ SCStr * FUN_10534d20(SCStr *param_1)
 // Reference entry 10534d40; body size 21 bytes.
 #line 1 "ENTRY_10534d40"
 
-SCStr * FUN_10534d40(SCStr *param_1)
+SCStr * __stdcall FUN_10534d40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_RESULT_ERROR");
@@ -33221,7 +33221,7 @@ SCStr * FUN_10534d40(SCStr *param_1)
 // Reference entry 10534d60; body size 21 bytes.
 #line 1 "ENTRY_10534d60"
 
-SCStr * FUN_10534d60(SCStr *param_1)
+SCStr * __stdcall FUN_10534d60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_RESULT");
@@ -33232,7 +33232,7 @@ SCStr * FUN_10534d60(SCStr *param_1)
 // Reference entry 10534d80; body size 21 bytes.
 #line 1 "ENTRY_10534d80"
 
-SCStr * FUN_10534d80(SCStr *param_1)
+SCStr * __stdcall FUN_10534d80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_RESULT_NICKNAME_ERROR");
@@ -33243,7 +33243,7 @@ SCStr * FUN_10534d80(SCStr *param_1)
 // Reference entry 10534da0; body size 21 bytes.
 #line 1 "ENTRY_10534da0"
 
-SCStr * FUN_10534da0(SCStr *param_1)
+SCStr * __stdcall FUN_10534da0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_SET_NICKNAME");
@@ -33254,7 +33254,7 @@ SCStr * FUN_10534da0(SCStr *param_1)
 // Reference entry 10534dc0; body size 21 bytes.
 #line 1 "ENTRY_10534dc0"
 
-SCStr * FUN_10534dc0(SCStr *param_1)
+SCStr * __stdcall FUN_10534dc0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_SET_SHARE_USAGE");
@@ -33265,7 +33265,7 @@ SCStr * FUN_10534dc0(SCStr *param_1)
 // Reference entry 10534de0; body size 21 bytes.
 #line 1 "ENTRY_10534de0"
 
-SCStr * FUN_10534de0(SCStr *param_1)
+SCStr * __stdcall FUN_10534de0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_WORKING");
@@ -33276,7 +33276,7 @@ SCStr * FUN_10534de0(SCStr *param_1)
 // Reference entry 10534e00; body size 21 bytes.
 #line 1 "ENTRY_10534e00"
 
-SCStr * FUN_10534e00(SCStr *param_1)
+SCStr * __stdcall FUN_10534e00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_MUSICSERVICE_SERVICE_INFO_DOWNLOAD_RETRY");
@@ -33287,7 +33287,7 @@ SCStr * FUN_10534e00(SCStr *param_1)
 // Reference entry 10534e20; body size 21 bytes.
 #line 1 "ENTRY_10534e20"
 
-SCStr * FUN_10534e20(SCStr *param_1)
+SCStr * __stdcall FUN_10534e20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -33298,7 +33298,7 @@ SCStr * FUN_10534e20(SCStr *param_1)
 // Reference entry 10534f30; body size 21 bytes.
 #line 1 "ENTRY_10534f30"
 
-SCStr * FUN_10534f30(SCStr *param_1)
+SCStr * __stdcall FUN_10534f30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIStringInput");
@@ -33309,7 +33309,7 @@ SCStr * FUN_10534f30(SCStr *param_1)
 // Reference entry 10534f50; body size 21 bytes.
 #line 1 "ENTRY_10534f50"
 
-SCStr * FUN_10534f50(SCStr *param_1)
+SCStr * __stdcall FUN_10534f50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIStringInput");
@@ -33320,7 +33320,7 @@ SCStr * FUN_10534f50(SCStr *param_1)
 // Reference entry 10534f70; body size 21 bytes.
 #line 1 "ENTRY_10534f70"
 
-SCStr * FUN_10534f70(SCStr *param_1)
+SCStr * __stdcall FUN_10534f70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIStringInput");
@@ -33346,7 +33346,7 @@ SCStr * Recovered_10534fc0::FUN_10534fc0(SCStr *param_2)
 // Reference entry 10535000; body size 35 bytes.
 #line 1 "ENTRY_10535000"
 
-SCStr * FUN_10535000(SCStr *param_1)
+SCStr * __stdcall FUN_10535000(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -33536,7 +33536,7 @@ SCStr * Recovered_10536290::FUN_10536290(SCStr *param_2)
 // Reference entry 10536850; body size 21 bytes.
 #line 1 "ENTRY_10536850"
 
-SCStr * FUN_10536850(SCStr *param_1)
+SCStr * __stdcall FUN_10536850(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -33547,7 +33547,7 @@ SCStr * FUN_10536850(SCStr *param_1)
 // Reference entry 10536a00; body size 21 bytes.
 #line 1 "ENTRY_10536a00"
 
-SCStr * FUN_10536a00(SCStr *param_1)
+SCStr * __stdcall FUN_10536a00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -33558,7 +33558,7 @@ SCStr * FUN_10536a00(SCStr *param_1)
 // Reference entry 1053d150; body size 21 bytes.
 #line 1 "ENTRY_1053d150"
 
-SCStr * FUN_1053d150(SCStr *param_1)
+SCStr * __stdcall FUN_1053d150(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("MusicServiceWizard");
@@ -34032,7 +34032,7 @@ SCStr * Recovered_1054cfc0::FUN_1054cfc0(SCStr *param_2)
 // Reference entry 1054cff0; body size 21 bytes.
 #line 1 "ENTRY_1054cff0"
 
-SCStr * FUN_1054cff0(SCStr *param_1)
+SCStr * __stdcall FUN_1054cff0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -34323,7 +34323,7 @@ SCStr * Recovered_10553f90::FUN_10553f90(SCStr *param_2)
 // Reference entry 10553fb0; body size 21 bytes.
 #line 1 "ENTRY_10553fb0"
 
-SCStr * FUN_10553fb0(SCStr *param_1)
+SCStr * __stdcall FUN_10553fb0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -34552,7 +34552,7 @@ SCStr * Recovered_1055d3c0::FUN_1055d3c0(SCStr *param_2)
 // Reference entry 1055d3e0; body size 21 bytes.
 #line 1 "ENTRY_1055d3e0"
 
-SCStr * FUN_1055d3e0(SCStr *param_1)
+SCStr * __stdcall FUN_1055d3e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("RadioEditCustomStation");
@@ -34575,7 +34575,7 @@ SCStr * Recovered_1055d400::FUN_1055d400(SCStr *param_2)
 // Reference entry 1055d420; body size 21 bytes.
 #line 1 "ENTRY_1055d420"
 
-SCStr * FUN_1055d420(SCStr *param_1)
+SCStr * __stdcall FUN_1055d420(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("RadioLocationCity");
@@ -34586,7 +34586,7 @@ SCStr * FUN_1055d420(SCStr *param_1)
 // Reference entry 1055d440; body size 21 bytes.
 #line 1 "ENTRY_1055d440"
 
-SCStr * FUN_1055d440(SCStr *param_1)
+SCStr * __stdcall FUN_1055d440(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("RadioLocationZIP");
@@ -34597,7 +34597,7 @@ SCStr * FUN_1055d440(SCStr *param_1)
 // Reference entry 1055d470; body size 21 bytes.
 #line 1 "ENTRY_1055d470"
 
-SCStr * FUN_1055d470(SCStr *param_1)
+SCStr * __stdcall FUN_1055d470(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("none");
@@ -34620,7 +34620,7 @@ SCStr * Recovered_1055d580::FUN_1055d580(SCStr *param_2)
 // Reference entry 1055d5a0; body size 21 bytes.
 #line 1 "ENTRY_1055d5a0"
 
-SCStr * FUN_1055d5a0(SCStr *param_1)
+SCStr * __stdcall FUN_1055d5a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryLongInput");
@@ -34643,7 +34643,7 @@ SCStr * Recovered_1055d5c0::FUN_1055d5c0(SCStr *param_2)
 // Reference entry 1055d5e0; body size 21 bytes.
 #line 1 "ENTRY_1055d5e0"
 
-SCStr * FUN_1055d5e0(SCStr *param_1)
+SCStr * __stdcall FUN_1055d5e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -34654,7 +34654,7 @@ SCStr * FUN_1055d5e0(SCStr *param_1)
 // Reference entry 1055d600; body size 21 bytes.
 #line 1 "ENTRY_1055d600"
 
-SCStr * FUN_1055d600(SCStr *param_1)
+SCStr * __stdcall FUN_1055d600(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -34665,7 +34665,7 @@ SCStr * FUN_1055d600(SCStr *param_1)
 // Reference entry 1055db60; body size 35 bytes.
 #line 1 "ENTRY_1055db60"
 
-SCStr * FUN_1055db60(SCStr *param_1)
+SCStr * __stdcall FUN_1055db60(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -34691,7 +34691,7 @@ SCStr * Recovered_1055db90::FUN_1055db90(SCStr *param_2)
 // Reference entry 1055dbb0; body size 35 bytes.
 #line 1 "ENTRY_1055dbb0"
 
-SCStr * FUN_1055dbb0(SCStr *param_1)
+SCStr * __stdcall FUN_1055dbb0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -34717,7 +34717,7 @@ SCStr * Recovered_1055dbe0::FUN_1055dbe0(SCStr *param_2)
 // Reference entry 1055dc00; body size 35 bytes.
 #line 1 "ENTRY_1055dc00"
 
-SCStr * FUN_1055dc00(SCStr *param_1)
+SCStr * __stdcall FUN_1055dc00(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -34731,7 +34731,7 @@ SCStr * FUN_1055dc00(SCStr *param_1)
 // Reference entry 1055dc30; body size 35 bytes.
 #line 1 "ENTRY_1055dc30"
 
-SCStr * FUN_1055dc30(SCStr *param_1)
+SCStr * __stdcall FUN_1055dc30(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -34745,7 +34745,7 @@ SCStr * FUN_1055dc30(SCStr *param_1)
 // Reference entry 1055dce0; body size 35 bytes.
 #line 1 "ENTRY_1055dce0"
 
-SCStr * FUN_1055dce0(SCStr *param_1)
+SCStr * __stdcall FUN_1055dce0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -34759,7 +34759,7 @@ SCStr * FUN_1055dce0(SCStr *param_1)
 // Reference entry 1055ec50; body size 21 bytes.
 #line 1 "ENTRY_1055ec50"
 
-SCStr * FUN_1055ec50(SCStr *param_1)
+SCStr * __stdcall FUN_1055ec50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("x-sonos-scuri://radiosetlocation/enterzip");
@@ -34770,7 +34770,7 @@ SCStr * FUN_1055ec50(SCStr *param_1)
 // Reference entry 1055f260; body size 21 bytes.
 #line 1 "ENTRY_1055f260"
 
-SCStr * FUN_1055f260(SCStr *param_1)
+SCStr * __stdcall FUN_1055f260(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -34858,7 +34858,7 @@ SCStr * FUN_105607a0(SCStr *param_1,int param_2,undefined4 param_3)
 // Reference entry 10572510; body size 21 bytes.
 #line 1 "ENTRY_10572510"
 
-SCStr * FUN_10572510(SCStr *param_1)
+SCStr * __stdcall FUN_10572510(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIAddToAction");
@@ -34869,7 +34869,7 @@ SCStr * FUN_10572510(SCStr *param_1)
 // Reference entry 10572530; body size 21 bytes.
 #line 1 "ENTRY_10572530"
 
-SCStr * FUN_10572530(SCStr *param_1)
+SCStr * __stdcall FUN_10572530(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIAddToQueueUIAction");
@@ -34880,7 +34880,7 @@ SCStr * FUN_10572530(SCStr *param_1)
 // Reference entry 10572550; body size 21 bytes.
 #line 1 "ENTRY_10572550"
 
-SCStr * FUN_10572550(SCStr *param_1)
+SCStr * __stdcall FUN_10572550(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIPlayNextUIAction");
@@ -34891,7 +34891,7 @@ SCStr * FUN_10572550(SCStr *param_1)
 // Reference entry 10572570; body size 21 bytes.
 #line 1 "ENTRY_10572570"
 
-SCStr * FUN_10572570(SCStr *param_1)
+SCStr * __stdcall FUN_10572570(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIPlayNowUIAction");
@@ -34902,7 +34902,7 @@ SCStr * FUN_10572570(SCStr *param_1)
 // Reference entry 10572590; body size 21 bytes.
 #line 1 "ENTRY_10572590"
 
-SCStr * FUN_10572590(SCStr *param_1)
+SCStr * __stdcall FUN_10572590(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIReplaceQueueUIAction");
@@ -34913,7 +34913,7 @@ SCStr * FUN_10572590(SCStr *param_1)
 // Reference entry 10574610; body size 21 bytes.
 #line 1 "ENTRY_10574610"
 
-SCStr * FUN_10574610(SCStr *param_1)
+SCStr * __stdcall FUN_10574610(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("AddToGeneric");
@@ -34924,7 +34924,7 @@ SCStr * FUN_10574610(SCStr *param_1)
 // Reference entry 10574630; body size 21 bytes.
 #line 1 "ENTRY_10574630"
 
-SCStr * FUN_10574630(SCStr *param_1)
+SCStr * __stdcall FUN_10574630(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("AddAtNumber");
@@ -34935,7 +34935,7 @@ SCStr * FUN_10574630(SCStr *param_1)
 // Reference entry 10574650; body size 21 bytes.
 #line 1 "ENTRY_10574650"
 
-SCStr * FUN_10574650(SCStr *param_1)
+SCStr * __stdcall FUN_10574650(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("ShowInfoview");
@@ -34946,7 +34946,7 @@ SCStr * FUN_10574650(SCStr *param_1)
 // Reference entry 10574770; body size 21 bytes.
 #line 1 "ENTRY_10574770"
 
-SCStr * FUN_10574770(SCStr *param_1)
+SCStr * __stdcall FUN_10574770(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("PlayMenuAdd");
@@ -34975,7 +34975,7 @@ SCStr * Recovered_10574790::FUN_10574790(SCStr *param_2)
 // Reference entry 105747c0; body size 21 bytes.
 #line 1 "ENTRY_105747c0"
 
-SCStr * FUN_105747c0(SCStr *param_1)
+SCStr * __stdcall FUN_105747c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("PlayMenuPlayNext");
@@ -35004,7 +35004,7 @@ SCStr * Recovered_105747e0::FUN_105747e0(SCStr *param_2)
 // Reference entry 10574810; body size 21 bytes.
 #line 1 "ENTRY_10574810"
 
-SCStr * FUN_10574810(SCStr *param_1)
+SCStr * __stdcall FUN_10574810(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("PlayMenuReplace");
@@ -35015,7 +35015,7 @@ SCStr * FUN_10574810(SCStr *param_1)
 // Reference entry 10574830; body size 21 bytes.
 #line 1 "ENTRY_10574830"
 
-SCStr * FUN_10574830(SCStr *param_1)
+SCStr * __stdcall FUN_10574830(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("PlayNow");
@@ -35040,7 +35040,7 @@ SCStr * Recovered_10574860::FUN_10574860(SCStr *param_2)
 // Reference entry 10574880; body size 21 bytes.
 #line 1 "ENTRY_10574880"
 
-SCStr * FUN_10574880(SCStr *param_1)
+SCStr * __stdcall FUN_10574880(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryCollection");
@@ -35051,7 +35051,7 @@ SCStr * FUN_10574880(SCStr *param_1)
 // Reference entry 105748a0; body size 21 bytes.
 #line 1 "ENTRY_105748a0"
 
-SCStr * FUN_105748a0(SCStr *param_1)
+SCStr * __stdcall FUN_105748a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -35062,7 +35062,7 @@ SCStr * FUN_105748a0(SCStr *param_1)
 // Reference entry 105748c0; body size 21 bytes.
 #line 1 "ENTRY_105748c0"
 
-SCStr * FUN_105748c0(SCStr *param_1)
+SCStr * __stdcall FUN_105748c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDiscovery");
@@ -35093,7 +35093,7 @@ SCStr * Recovered_105748e0::FUN_105748e0(SCStr *param_2)
 // Reference entry 10574950; body size 21 bytes.
 #line 1 "ENTRY_10574950"
 
-SCStr * FUN_10574950(SCStr *param_1)
+SCStr * __stdcall FUN_10574950(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -35104,7 +35104,7 @@ SCStr * FUN_10574950(SCStr *param_1)
 // Reference entry 10574970; body size 21 bytes.
 #line 1 "ENTRY_10574970"
 
-SCStr * FUN_10574970(SCStr *param_1)
+SCStr * __stdcall FUN_10574970(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryInstant");
@@ -35115,7 +35115,7 @@ SCStr * FUN_10574970(SCStr *param_1)
 // Reference entry 10574990; body size 21 bytes.
 #line 1 "ENTRY_10574990"
 
-SCStr * FUN_10574990(SCStr *param_1)
+SCStr * __stdcall FUN_10574990(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -35144,7 +35144,7 @@ SCStr * Recovered_105749b0::FUN_105749b0(SCStr *param_2)
 // Reference entry 105749e0; body size 21 bytes.
 #line 1 "ENTRY_105749e0"
 
-SCStr * FUN_105749e0(SCStr *param_1)
+SCStr * __stdcall FUN_105749e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -35155,7 +35155,7 @@ SCStr * FUN_105749e0(SCStr *param_1)
 // Reference entry 10574a00; body size 21 bytes.
 #line 1 "ENTRY_10574a00"
 
-SCStr * FUN_10574a00(SCStr *param_1)
+SCStr * __stdcall FUN_10574a00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -35166,7 +35166,7 @@ SCStr * FUN_10574a00(SCStr *param_1)
 // Reference entry 10574a30; body size 21 bytes.
 #line 1 "ENTRY_10574a30"
 
-SCStr * FUN_10574a30(SCStr *param_1)
+SCStr * __stdcall FUN_10574a30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -35177,7 +35177,7 @@ SCStr * FUN_10574a30(SCStr *param_1)
 // Reference entry 10574a50; body size 21 bytes.
 #line 1 "ENTRY_10574a50"
 
-SCStr * FUN_10574a50(SCStr *param_1)
+SCStr * __stdcall FUN_10574a50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -35188,7 +35188,7 @@ SCStr * FUN_10574a50(SCStr *param_1)
 // Reference entry 10574b70; body size 32 bytes.
 #line 1 "ENTRY_10574b70"
 
-SCStr * FUN_10574b70(SCStr *param_1)
+SCStr * __stdcall FUN_10574b70(SCStr *param_1)
 
 {
   new (param_1) SCStr(*((SCStr *)&DAT_121a07b0));
@@ -35200,7 +35200,7 @@ SCStr * FUN_10574b70(SCStr *param_1)
 // Reference entry 10574ba0; body size 32 bytes.
 #line 1 "ENTRY_10574ba0"
 
-SCStr * FUN_10574ba0(SCStr *param_1)
+SCStr * __stdcall FUN_10574ba0(SCStr *param_1)
 
 {
   new (param_1) SCStr(*((SCStr *)&DAT_121a07b0));
@@ -35212,7 +35212,7 @@ SCStr * FUN_10574ba0(SCStr *param_1)
 // Reference entry 10574cf0; body size 21 bytes.
 #line 1 "ENTRY_10574cf0"
 
-SCStr * FUN_10574cf0(SCStr *param_1)
+SCStr * __stdcall FUN_10574cf0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIAddToQueueAtNumberDescriptor");
@@ -35223,7 +35223,7 @@ SCStr * FUN_10574cf0(SCStr *param_1)
 // Reference entry 10574d10; body size 21 bytes.
 #line 1 "ENTRY_10574d10"
 
-SCStr * FUN_10574d10(SCStr *param_1)
+SCStr * __stdcall FUN_10574d10(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionWithBoolDescriptor");
@@ -35234,7 +35234,7 @@ SCStr * FUN_10574d10(SCStr *param_1)
 // Reference entry 10574d30; body size 35 bytes.
 #line 1 "ENTRY_10574d30"
 
-SCStr * FUN_10574d30(SCStr *param_1)
+SCStr * __stdcall FUN_10574d30(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -35248,7 +35248,7 @@ SCStr * FUN_10574d30(SCStr *param_1)
 // Reference entry 10574d60; body size 35 bytes.
 #line 1 "ENTRY_10574d60"
 
-SCStr * FUN_10574d60(SCStr *param_1)
+SCStr * __stdcall FUN_10574d60(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -35262,7 +35262,7 @@ SCStr * FUN_10574d60(SCStr *param_1)
 // Reference entry 10574d90; body size 35 bytes.
 #line 1 "ENTRY_10574d90"
 
-SCStr * FUN_10574d90(SCStr *param_1)
+SCStr * __stdcall FUN_10574d90(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -35296,7 +35296,7 @@ SCStr * Recovered_10574dc0::FUN_10574dc0(SCStr *param_2)
 // Reference entry 10574e30; body size 35 bytes.
 #line 1 "ENTRY_10574e30"
 
-SCStr * FUN_10574e30(SCStr *param_1)
+SCStr * __stdcall FUN_10574e30(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -35330,7 +35330,7 @@ SCStr * Recovered_10574e60::FUN_10574e60(SCStr *param_2)
 // Reference entry 10574ea0; body size 35 bytes.
 #line 1 "ENTRY_10574ea0"
 
-SCStr * FUN_10574ea0(SCStr *param_1)
+SCStr * __stdcall FUN_10574ea0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -35344,7 +35344,7 @@ SCStr * FUN_10574ea0(SCStr *param_1)
 // Reference entry 10574ed0; body size 35 bytes.
 #line 1 "ENTRY_10574ed0"
 
-SCStr * FUN_10574ed0(SCStr *param_1)
+SCStr * __stdcall FUN_10574ed0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -35358,7 +35358,7 @@ SCStr * FUN_10574ed0(SCStr *param_1)
 // Reference entry 10574f00; body size 35 bytes.
 #line 1 "ENTRY_10574f00"
 
-SCStr * FUN_10574f00(SCStr *param_1)
+SCStr * __stdcall FUN_10574f00(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -35372,7 +35372,7 @@ SCStr * FUN_10574f00(SCStr *param_1)
 // Reference entry 10574f30; body size 35 bytes.
 #line 1 "ENTRY_10574f30"
 
-SCStr * FUN_10574f30(SCStr *param_1)
+SCStr * __stdcall FUN_10574f30(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -35386,7 +35386,7 @@ SCStr * FUN_10574f30(SCStr *param_1)
 // Reference entry 10574f70; body size 21 bytes.
 #line 1 "ENTRY_10574f70"
 
-SCStr * FUN_10574f70(SCStr *param_1)
+SCStr * __stdcall FUN_10574f70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -35523,7 +35523,7 @@ void Recovered_105788a0::FUN_105788a0(SCStr *param_2,SCStr *param_3)
 // Reference entry 10580800; body size 21 bytes.
 #line 1 "ENTRY_10580800"
 
-SCStr * FUN_10580800(SCStr *param_1)
+SCStr * __stdcall FUN_10580800(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCPlaylistsBrowseItem");
@@ -35534,7 +35534,7 @@ SCStr * FUN_10580800(SCStr *param_1)
 // Reference entry 105818e0; body size 21 bytes.
 #line 1 "ENTRY_105818e0"
 
-SCStr * FUN_105818e0(SCStr *param_1)
+SCStr * __stdcall FUN_105818e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("PlaylistNew");
@@ -35545,7 +35545,7 @@ SCStr * FUN_105818e0(SCStr *param_1)
 // Reference entry 10581900; body size 21 bytes.
 #line 1 "ENTRY_10581900"
 
-SCStr * FUN_10581900(SCStr *param_1)
+SCStr * __stdcall FUN_10581900(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("AddToPlaylist");
@@ -35556,7 +35556,7 @@ SCStr * FUN_10581900(SCStr *param_1)
 // Reference entry 10581920; body size 21 bytes.
 #line 1 "ENTRY_10581920"
 
-SCStr * FUN_10581920(SCStr *param_1)
+SCStr * __stdcall FUN_10581920(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("AddToPlaylist");
@@ -35567,7 +35567,7 @@ SCStr * FUN_10581920(SCStr *param_1)
 // Reference entry 10581940; body size 21 bytes.
 #line 1 "ENTRY_10581940"
 
-SCStr * FUN_10581940(SCStr *param_1)
+SCStr * __stdcall FUN_10581940(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("DeleteItem");
@@ -35578,7 +35578,7 @@ SCStr * FUN_10581940(SCStr *param_1)
 // Reference entry 10581960; body size 21 bytes.
 #line 1 "ENTRY_10581960"
 
-SCStr * FUN_10581960(SCStr *param_1)
+SCStr * __stdcall FUN_10581960(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("RenameItem");
@@ -35635,7 +35635,7 @@ SCStr * Recovered_10581a60::FUN_10581a60(SCStr *param_2)
 // Reference entry 10581a80; body size 21 bytes.
 #line 1 "ENTRY_10581a80"
 
-SCStr * FUN_10581a80(SCStr *param_1)
+SCStr * __stdcall FUN_10581a80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -35646,7 +35646,7 @@ SCStr * FUN_10581a80(SCStr *param_1)
 // Reference entry 10581aa0; body size 21 bytes.
 #line 1 "ENTRY_10581aa0"
 
-SCStr * FUN_10581aa0(SCStr *param_1)
+SCStr * __stdcall FUN_10581aa0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -35657,7 +35657,7 @@ SCStr * FUN_10581aa0(SCStr *param_1)
 // Reference entry 10581b90; body size 21 bytes.
 #line 1 "ENTRY_10581b90"
 
-SCStr * FUN_10581b90(SCStr *param_1)
+SCStr * __stdcall FUN_10581b90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryEdit");
@@ -35668,7 +35668,7 @@ SCStr * FUN_10581b90(SCStr *param_1)
 // Reference entry 10581bb0; body size 21 bytes.
 #line 1 "ENTRY_10581bb0"
 
-SCStr * FUN_10581bb0(SCStr *param_1)
+SCStr * __stdcall FUN_10581bb0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryEdit");
@@ -35679,7 +35679,7 @@ SCStr * FUN_10581bb0(SCStr *param_1)
 // Reference entry 10582630; body size 35 bytes.
 #line 1 "ENTRY_10582630"
 
-SCStr * FUN_10582630(SCStr *param_1)
+SCStr * __stdcall FUN_10582630(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -35693,7 +35693,7 @@ SCStr * FUN_10582630(SCStr *param_1)
 // Reference entry 10582660; body size 21 bytes.
 #line 1 "ENTRY_10582660"
 
-SCStr * FUN_10582660(SCStr *param_1)
+SCStr * __stdcall FUN_10582660(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -35704,7 +35704,7 @@ SCStr * FUN_10582660(SCStr *param_1)
 // Reference entry 10582b20; body size 35 bytes.
 #line 1 "ENTRY_10582b20"
 
-SCStr * FUN_10582b20(SCStr *param_1)
+SCStr * __stdcall FUN_10582b20(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -35820,7 +35820,7 @@ void __fastcall FUN_1058a6e0(int param_1)
 // Reference entry 1058d100; body size 21 bytes.
 #line 1 "ENTRY_1058d100"
 
-SCStr * FUN_1058d100(SCStr *param_1)
+SCStr * __stdcall FUN_1058d100(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("AddFavorite");
@@ -35831,7 +35831,7 @@ SCStr * FUN_1058d100(SCStr *param_1)
 // Reference entry 1058d120; body size 21 bytes.
 #line 1 "ENTRY_1058d120"
 
-SCStr * FUN_1058d120(SCStr *param_1)
+SCStr * __stdcall FUN_1058d120(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("DeleteItem");
@@ -35842,7 +35842,7 @@ SCStr * FUN_1058d120(SCStr *param_1)
 // Reference entry 1058d140; body size 21 bytes.
 #line 1 "ENTRY_1058d140"
 
-SCStr * FUN_1058d140(SCStr *param_1)
+SCStr * __stdcall FUN_1058d140(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("RenameFavorite");
@@ -35908,7 +35908,7 @@ SCStr * Recovered_1058de60::FUN_1058de60(SCStr *param_2)
 // Reference entry 1058de90; body size 21 bytes.
 #line 1 "ENTRY_1058de90"
 
-SCStr * FUN_1058de90(SCStr *param_1)
+SCStr * __stdcall FUN_1058de90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryEdit");
@@ -35933,7 +35933,7 @@ SCStr * Recovered_1058deb0::FUN_1058deb0(SCStr *param_2)
 // Reference entry 1058e810; body size 35 bytes.
 #line 1 "ENTRY_1058e810"
 
-SCStr * FUN_1058e810(SCStr *param_1)
+SCStr * __stdcall FUN_1058e810(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -35947,7 +35947,7 @@ SCStr * FUN_1058e810(SCStr *param_1)
 // Reference entry 1058f660; body size 21 bytes.
 #line 1 "ENTRY_1058f660"
 
-SCStr * FUN_1058f660(SCStr *param_1)
+SCStr * __stdcall FUN_1058f660(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -36309,7 +36309,7 @@ SCStr * Recovered_105978f0::FUN_105978f0(SCStr *param_2)
 // Reference entry 10598470; body size 17 bytes.
 #line 1 "ENTRY_10598470"
 
-void FUN_10598470(SCStr *param_1)
+void __stdcall FUN_10598470(SCStr *param_1)
 
 {
   (param_1)->operator==("SCINowPlaying:onMusicChanged");
@@ -36710,7 +36710,7 @@ void Recovered_105ad6d0::FUN_105ad6d0(int *param_2,SCStr *param_3)
 // Reference entry 105ad820; body size 21 bytes.
 #line 1 "ENTRY_105ad820"
 
-SCStr * FUN_105ad820(SCStr *param_1)
+SCStr * __stdcall FUN_105ad820(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("newwiz");
@@ -37091,7 +37091,7 @@ switchD_105bea98_caseD_3ea:
 // Reference entry 105bee40; body size 21 bytes.
 #line 1 "ENTRY_105bee40"
 
-SCStr * FUN_105bee40(SCStr *param_1)
+SCStr * __stdcall FUN_105bee40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SetupProductAssets");
@@ -37149,7 +37149,7 @@ SCStr * Recovered_105befa0::FUN_105befa0(SCStr *param_2)
 // Reference entry 105bf0d0; body size 21 bytes.
 #line 1 "ENTRY_105bf0d0"
 
-SCStr * FUN_105bf0d0(SCStr *param_1)
+SCStr * __stdcall FUN_105bf0d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -37289,7 +37289,7 @@ void Recovered_105c0640::FUN_105c0640(SCStr *param_2,SCStr *param_3)
 // Reference entry 105c66c0; body size 35 bytes.
 #line 1 "ENTRY_105c66c0"
 
-SCStr * FUN_105c66c0(SCStr *param_1)
+SCStr * __stdcall FUN_105c66c0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -37303,7 +37303,7 @@ SCStr * FUN_105c66c0(SCStr *param_1)
 // Reference entry 105c66f0; body size 35 bytes.
 #line 1 "ENTRY_105c66f0"
 
-SCStr * FUN_105c66f0(SCStr *param_1)
+SCStr * __stdcall FUN_105c66f0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -37317,7 +37317,7 @@ SCStr * FUN_105c66f0(SCStr *param_1)
 // Reference entry 105c6720; body size 35 bytes.
 #line 1 "ENTRY_105c6720"
 
-SCStr * FUN_105c6720(SCStr *param_1)
+SCStr * __stdcall FUN_105c6720(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -37365,7 +37365,7 @@ SCStr * Recovered_105c6750::FUN_105c6750(SCStr *param_2)
 // Reference entry 105c6840; body size 35 bytes.
 #line 1 "ENTRY_105c6840"
 
-SCStr * FUN_105c6840(SCStr *param_1)
+SCStr * __stdcall FUN_105c6840(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -37379,7 +37379,7 @@ SCStr * FUN_105c6840(SCStr *param_1)
 // Reference entry 105c69d0; body size 35 bytes.
 #line 1 "ENTRY_105c69d0"
 
-SCStr * FUN_105c69d0(SCStr *param_1)
+SCStr * __stdcall FUN_105c69d0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -37393,7 +37393,7 @@ SCStr * FUN_105c69d0(SCStr *param_1)
 // Reference entry 105c7190; body size 35 bytes.
 #line 1 "ENTRY_105c7190"
 
-SCStr * FUN_105c7190(SCStr *param_1)
+SCStr * __stdcall FUN_105c7190(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -37419,7 +37419,7 @@ SCStr * Recovered_105c71c0::FUN_105c71c0(SCStr *param_2)
 // Reference entry 105c75d0; body size 35 bytes.
 #line 1 "ENTRY_105c75d0"
 
-SCStr * FUN_105c75d0(SCStr *param_1)
+SCStr * __stdcall FUN_105c75d0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -37433,7 +37433,7 @@ SCStr * FUN_105c75d0(SCStr *param_1)
 // Reference entry 105c97a0; body size 21 bytes.
 #line 1 "ENTRY_105c97a0"
 
-SCStr * FUN_105c97a0(SCStr *param_1)
+SCStr * __stdcall FUN_105c97a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("ChangeEmailWizard");
@@ -37529,7 +37529,7 @@ SCStr * Recovered_105d4840::FUN_105d4840(SCStr *param_2)
 // Reference entry 105dd4b0; body size 21 bytes.
 #line 1 "ENTRY_105dd4b0"
 
-SCStr * FUN_105dd4b0(SCStr *param_1)
+SCStr * __stdcall FUN_105dd4b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("FactoryReset");
@@ -37540,7 +37540,7 @@ SCStr * FUN_105dd4b0(SCStr *param_1)
 // Reference entry 105dd4d0; body size 21 bytes.
 #line 1 "ENTRY_105dd4d0"
 
-SCStr * FUN_105dd4d0(SCStr *param_1)
+SCStr * __stdcall FUN_105dd4d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("ForgetHHID");
@@ -37551,7 +37551,7 @@ SCStr * FUN_105dd4d0(SCStr *param_1)
 // Reference entry 105dd4f0; body size 21 bytes.
 #line 1 "ENTRY_105dd4f0"
 
-SCStr * FUN_105dd4f0(SCStr *param_1)
+SCStr * __stdcall FUN_105dd4f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("OfflineHideDeviceSignInAction");
@@ -37562,7 +37562,7 @@ SCStr * FUN_105dd4f0(SCStr *param_1)
 // Reference entry 105dd520; body size 21 bytes.
 #line 1 "ENTRY_105dd520"
 
-SCStr * FUN_105dd520(SCStr *param_1)
+SCStr * __stdcall FUN_105dd520(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -37573,7 +37573,7 @@ SCStr * FUN_105dd520(SCStr *param_1)
 // Reference entry 105dd540; body size 21 bytes.
 #line 1 "ENTRY_105dd540"
 
-SCStr * FUN_105dd540(SCStr *param_1)
+SCStr * __stdcall FUN_105dd540(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -37584,7 +37584,7 @@ SCStr * FUN_105dd540(SCStr *param_1)
 // Reference entry 105dd560; body size 21 bytes.
 #line 1 "ENTRY_105dd560"
 
-SCStr * FUN_105dd560(SCStr *param_1)
+SCStr * __stdcall FUN_105dd560(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -37595,7 +37595,7 @@ SCStr * FUN_105dd560(SCStr *param_1)
 // Reference entry 105dd590; body size 35 bytes.
 #line 1 "ENTRY_105dd590"
 
-SCStr * FUN_105dd590(SCStr *param_1)
+SCStr * __stdcall FUN_105dd590(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -37621,7 +37621,7 @@ SCStr * Recovered_105dd5d0::FUN_105dd5d0(SCStr *param_2)
 // Reference entry 105dd600; body size 35 bytes.
 #line 1 "ENTRY_105dd600"
 
-SCStr * FUN_105dd600(SCStr *param_1)
+SCStr * __stdcall FUN_105dd600(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -37635,7 +37635,7 @@ SCStr * FUN_105dd600(SCStr *param_1)
 // Reference entry 105dd630; body size 35 bytes.
 #line 1 "ENTRY_105dd630"
 
-SCStr * FUN_105dd630(SCStr *param_1)
+SCStr * __stdcall FUN_105dd630(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -37661,7 +37661,7 @@ SCStr * Recovered_105dd660::FUN_105dd660(SCStr *param_2)
 // Reference entry 105dd680; body size 21 bytes.
 #line 1 "ENTRY_105dd680"
 
-SCStr * FUN_105dd680(SCStr *param_1)
+SCStr * __stdcall FUN_105dd680(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -37674,7 +37674,7 @@ SCStr * FUN_105dd680(SCStr *param_1)
 
 
 
-SCStr * FUN_105dd6a0(SCStr *param_1)
+SCStr * __stdcall FUN_105dd6a0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -37700,7 +37700,7 @@ SCStr * Recovered_105ddfd0::FUN_105ddfd0(SCStr *param_2)
 // Reference entry 105de490; body size 21 bytes.
 #line 1 "ENTRY_105de490"
 
-SCStr * FUN_105de490(SCStr *param_1)
+SCStr * __stdcall FUN_105de490(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -38209,7 +38209,7 @@ SCStr * Recovered_1066d540::FUN_1066d540(SCStr *param_2)
 // Reference entry 1066d560; body size 21 bytes.
 #line 1 "ENTRY_1066d560"
 
-SCStr * FUN_1066d560(SCStr *param_1)
+SCStr * __stdcall FUN_1066d560(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("Helpsheets");
@@ -38220,7 +38220,7 @@ SCStr * FUN_1066d560(SCStr *param_1)
 // Reference entry 1066d580; body size 21 bytes.
 #line 1 "ENTRY_1066d580"
 
-SCStr * FUN_1066d580(SCStr *param_1)
+SCStr * __stdcall FUN_1066d580(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("UpdateTips");
@@ -38231,7 +38231,7 @@ SCStr * FUN_1066d580(SCStr *param_1)
 // Reference entry 10677120; body size 21 bytes.
 #line 1 "ENTRY_10677120"
 
-SCStr * FUN_10677120(SCStr *param_1)
+SCStr * __stdcall FUN_10677120(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -38770,7 +38770,7 @@ undefined4 * Recovered_106878f0::FUN_106878f0(undefined4 *param_2,SCStr *param_3
 
 
 
-SCStr * FUN_1068a180(SCStr *param_1)
+SCStr * __stdcall FUN_1068a180(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCShareManager");
@@ -38781,7 +38781,7 @@ SCStr * FUN_1068a180(SCStr *param_1)
 // Reference entry 1068a3c0; body size 21 bytes.
 #line 1 "ENTRY_1068a3c0"
 
-SCStr * FUN_1068a3c0(SCStr *param_1)
+SCStr * __stdcall FUN_1068a3c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCRemoveShareActionDescriptor");
@@ -38792,7 +38792,7 @@ SCStr * FUN_1068a3c0(SCStr *param_1)
 // Reference entry 1068a5a0; body size 21 bytes.
 #line 1 "ENTRY_1068a5a0"
 
-SCStr * FUN_1068a5a0(SCStr *param_1)
+SCStr * __stdcall FUN_1068a5a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -38803,7 +38803,7 @@ SCStr * FUN_1068a5a0(SCStr *param_1)
 // Reference entry 1068a5c0; body size 21 bytes.
 #line 1 "ENTRY_1068a5c0"
 
-SCStr * FUN_1068a5c0(SCStr *param_1)
+SCStr * __stdcall FUN_1068a5c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryEdit");
@@ -38814,7 +38814,7 @@ SCStr * FUN_1068a5c0(SCStr *param_1)
 // Reference entry 1068a700; body size 35 bytes.
 #line 1 "ENTRY_1068a700"
 
-SCStr * FUN_1068a700(SCStr *param_1)
+SCStr * __stdcall FUN_1068a700(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -38828,7 +38828,7 @@ SCStr * FUN_1068a700(SCStr *param_1)
 // Reference entry 1068a780; body size 21 bytes.
 #line 1 "ENTRY_1068a780"
 
-SCStr * FUN_1068a780(SCStr *param_1)
+SCStr * __stdcall FUN_1068a780(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -39021,7 +39021,7 @@ undefined4 * Recovered_10696b60::FUN_10696b60(undefined4 *param_2,SCStr *param_3
 // Reference entry 10699550; body size 21 bytes.
 #line 1 "ENTRY_10699550"
 
-SCStr * FUN_10699550(SCStr *param_1)
+SCStr * __stdcall FUN_10699550(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("RunWizard.AddAccount");
@@ -39032,7 +39032,7 @@ SCStr * FUN_10699550(SCStr *param_1)
 // Reference entry 10699570; body size 21 bytes.
 #line 1 "ENTRY_10699570"
 
-SCStr * FUN_10699570(SCStr *param_1)
+SCStr * __stdcall FUN_10699570(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -39043,7 +39043,7 @@ SCStr * FUN_10699570(SCStr *param_1)
 // Reference entry 10699590; body size 21 bytes.
 #line 1 "ENTRY_10699590"
 
-SCStr * FUN_10699590(SCStr *param_1)
+SCStr * __stdcall FUN_10699590(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCMusicServiceShowMenuAction");
@@ -39054,7 +39054,7 @@ SCStr * FUN_10699590(SCStr *param_1)
 // Reference entry 106995b0; body size 21 bytes.
 #line 1 "ENTRY_106995b0"
 
-SCStr * FUN_106995b0(SCStr *param_1)
+SCStr * __stdcall FUN_106995b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -39065,7 +39065,7 @@ SCStr * FUN_106995b0(SCStr *param_1)
 // Reference entry 106995d0; body size 21 bytes.
 #line 1 "ENTRY_106995d0"
 
-SCStr * FUN_106995d0(SCStr *param_1)
+SCStr * __stdcall FUN_106995d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -39076,7 +39076,7 @@ SCStr * FUN_106995d0(SCStr *param_1)
 // Reference entry 106995f0; body size 21 bytes.
 #line 1 "ENTRY_106995f0"
 
-SCStr * FUN_106995f0(SCStr *param_1)
+SCStr * __stdcall FUN_106995f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -39087,7 +39087,7 @@ SCStr * FUN_106995f0(SCStr *param_1)
 // Reference entry 10699610; body size 21 bytes.
 #line 1 "ENTRY_10699610"
 
-SCStr * FUN_10699610(SCStr *param_1)
+SCStr * __stdcall FUN_10699610(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -39098,7 +39098,7 @@ SCStr * FUN_10699610(SCStr *param_1)
 // Reference entry 10699630; body size 21 bytes.
 #line 1 "ENTRY_10699630"
 
-SCStr * FUN_10699630(SCStr *param_1)
+SCStr * __stdcall FUN_10699630(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -39122,7 +39122,7 @@ SCStr * Recovered_10699700::FUN_10699700(SCStr *param_2)
 // Reference entry 10699730; body size 35 bytes.
 #line 1 "ENTRY_10699730"
 
-SCStr * FUN_10699730(SCStr *param_1)
+SCStr * __stdcall FUN_10699730(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -39136,7 +39136,7 @@ SCStr * FUN_10699730(SCStr *param_1)
 // Reference entry 10699760; body size 35 bytes.
 #line 1 "ENTRY_10699760"
 
-SCStr * FUN_10699760(SCStr *param_1)
+SCStr * __stdcall FUN_10699760(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -39150,7 +39150,7 @@ SCStr * FUN_10699760(SCStr *param_1)
 // Reference entry 10699790; body size 35 bytes.
 #line 1 "ENTRY_10699790"
 
-SCStr * FUN_10699790(SCStr *param_1)
+SCStr * __stdcall FUN_10699790(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -40324,7 +40324,7 @@ undefined4 FUN_106bddb0(SCStr *param_1)
 // Reference entry 106c1d10; body size 21 bytes.
 #line 1 "ENTRY_106c1d10"
 
-SCStr * FUN_106c1d10(SCStr *param_1)
+SCStr * __stdcall FUN_106c1d10(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("setup_engine_denylist");
@@ -40335,7 +40335,7 @@ SCStr * FUN_106c1d10(SCStr *param_1)
 // Reference entry 106c1d30; body size 21 bytes.
 #line 1 "ENTRY_106c1d30"
 
-SCStr * FUN_106c1d30(SCStr *param_1)
+SCStr * __stdcall FUN_106c1d30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("setup_engine_launchable");
@@ -40346,7 +40346,7 @@ SCStr * FUN_106c1d30(SCStr *param_1)
 // Reference entry 106c1d50; body size 21 bytes.
 #line 1 "ENTRY_106c1d50"
 
-SCStr * FUN_106c1d50(SCStr *param_1)
+SCStr * __stdcall FUN_106c1d50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("setup_engine");
@@ -40784,7 +40784,7 @@ void Recovered_106d5630::FUN_106d5630(int *param_2,SCStr *param_3)
 // Reference entry 106d5ab0; body size 21 bytes.
 #line 1 "ENTRY_106d5ab0"
 
-SCStr * FUN_106d5ab0(SCStr *param_1)
+SCStr * __stdcall FUN_106d5ab0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("ControllerUPnPClient");
@@ -41002,7 +41002,7 @@ SCStr * FUN_106d8870(SCStr *param_1,int param_2)
 // Reference entry 106dc500; body size 21 bytes.
 #line 1 "ENTRY_106dc500"
 
-SCStr * FUN_106dc500(SCStr *param_1)
+SCStr * __stdcall FUN_106dc500(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("newwiz");
@@ -41307,7 +41307,7 @@ SCStr * Recovered_106ee050::FUN_106ee050(SCStr *param_2)
 // Reference entry 106ee070; body size 21 bytes.
 #line 1 "ENTRY_106ee070"
 
-SCStr * FUN_106ee070(SCStr *param_1)
+SCStr * __stdcall FUN_106ee070(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIStringInput");
@@ -41330,7 +41330,7 @@ SCStr * Recovered_106f1f90::FUN_106f1f90(SCStr *param_2)
 // Reference entry 106f2020; body size 21 bytes.
 #line 1 "ENTRY_106f2020"
 
-SCStr * FUN_106f2020(SCStr *param_1)
+SCStr * __stdcall FUN_106f2020(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -41505,7 +41505,7 @@ SCStr * Recovered_10706810::FUN_10706810(SCStr *param_2)
 // Reference entry 10707940; body size 21 bytes.
 #line 1 "ENTRY_10707940"
 
-SCStr * FUN_10707940(SCStr *param_1)
+SCStr * __stdcall FUN_10707940(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -41757,7 +41757,7 @@ void Recovered_1072e190::FUN_1072e190(int *param_2)
 // Reference entry 1073c360; body size 21 bytes.
 #line 1 "ENTRY_1073c360"
 
-SCStr * FUN_1073c360(SCStr *param_1)
+SCStr * __stdcall FUN_1073c360(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("Display wizard");
@@ -41768,7 +41768,7 @@ SCStr * FUN_1073c360(SCStr *param_1)
 // Reference entry 1073c380; body size 21 bytes.
 #line 1 "ENTRY_1073c380"
 
-SCStr * FUN_1073c380(SCStr *param_1)
+SCStr * __stdcall FUN_1073c380(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("voice_services_assets");
@@ -41779,7 +41779,7 @@ SCStr * FUN_1073c380(SCStr *param_1)
 // Reference entry 1073c3a0; body size 21 bytes.
 #line 1 "ENTRY_1073c3a0"
 
-SCStr * FUN_1073c3a0(SCStr *param_1)
+SCStr * __stdcall FUN_1073c3a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("VoiceServicesAssets");
@@ -42256,7 +42256,7 @@ void Recovered_1085d6c0::FUN_1085d6c0(SCStr *param_2)
 // Reference entry 10868000; body size 21 bytes.
 #line 1 "ENTRY_10868000"
 
-SCStr * FUN_10868000(SCStr *param_1)
+SCStr * __stdcall FUN_10868000(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("onboarding_assets");
@@ -42267,7 +42267,7 @@ SCStr * FUN_10868000(SCStr *param_1)
 // Reference entry 10868020; body size 21 bytes.
 #line 1 "ENTRY_10868020"
 
-SCStr * FUN_10868020(SCStr *param_1)
+SCStr * __stdcall FUN_10868020(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("OnboardingProductAssets");
@@ -43056,7 +43056,7 @@ void Recovered_109f05a0::FUN_109f05a0(int *param_2,SCStr *param_3)
 // Reference entry 10a044b0; body size 21 bytes.
 #line 1 "ENTRY_10a044b0"
 
-SCStr * FUN_10a044b0(SCStr *param_1)
+SCStr * __stdcall FUN_10a044b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -43067,7 +43067,7 @@ SCStr * FUN_10a044b0(SCStr *param_1)
 // Reference entry 10a044d0; body size 21 bytes.
 #line 1 "ENTRY_10a044d0"
 
-SCStr * FUN_10a044d0(SCStr *param_1)
+SCStr * __stdcall FUN_10a044d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -43078,7 +43078,7 @@ SCStr * FUN_10a044d0(SCStr *param_1)
 // Reference entry 10a044f0; body size 21 bytes.
 #line 1 "ENTRY_10a044f0"
 
-SCStr * FUN_10a044f0(SCStr *param_1)
+SCStr * __stdcall FUN_10a044f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -43089,7 +43089,7 @@ SCStr * FUN_10a044f0(SCStr *param_1)
 // Reference entry 10a04510; body size 21 bytes.
 #line 1 "ENTRY_10a04510"
 
-SCStr * FUN_10a04510(SCStr *param_1)
+SCStr * __stdcall FUN_10a04510(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -44619,7 +44619,7 @@ SCStr * Recovered_10b6ff10::FUN_10b6ff10(SCStr *param_2)
 // Reference entry 10b70400; body size 21 bytes.
 #line 1 "ENTRY_10b70400"
 
-SCStr * FUN_10b70400(SCStr *param_1)
+SCStr * __stdcall FUN_10b70400(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -44796,7 +44796,7 @@ SCStr * FUN_10b75860(SCStr *param_1)
 // Reference entry 10b78e10; body size 21 bytes.
 #line 1 "ENTRY_10b78e10"
 
-SCStr * FUN_10b78e10(SCStr *param_1)
+SCStr * __stdcall FUN_10b78e10(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("DeepLinkIntoPartnerApp");
@@ -44807,7 +44807,7 @@ SCStr * FUN_10b78e10(SCStr *param_1)
 // Reference entry 10b78e30; body size 21 bytes.
 #line 1 "ENTRY_10b78e30"
 
-SCStr * FUN_10b78e30(SCStr *param_1)
+SCStr * __stdcall FUN_10b78e30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("LaunchDCApp");
@@ -44818,7 +44818,7 @@ SCStr * FUN_10b78e30(SCStr *param_1)
 // Reference entry 10b78e50; body size 21 bytes.
 #line 1 "ENTRY_10b78e50"
 
-SCStr * FUN_10b78e50(SCStr *param_1)
+SCStr * __stdcall FUN_10b78e50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryInstant");
@@ -44829,7 +44829,7 @@ SCStr * FUN_10b78e50(SCStr *param_1)
 // Reference entry 10b78e70; body size 21 bytes.
 #line 1 "ENTRY_10b78e70"
 
-SCStr * FUN_10b78e70(SCStr *param_1)
+SCStr * __stdcall FUN_10b78e70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -44928,7 +44928,7 @@ undefined4 * Recovered_10b7ab20::FUN_10b7ab20(undefined4 *param_2,SCStr *param_3
 // Reference entry 10b803e0; body size 21 bytes.
 #line 1 "ENTRY_10b803e0"
 
-SCStr * FUN_10b803e0(SCStr *param_1)
+SCStr * __stdcall FUN_10b803e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCOpReplaceAccountX");
@@ -44939,7 +44939,7 @@ SCStr * FUN_10b803e0(SCStr *param_1)
 // Reference entry 10b80400; body size 21 bytes.
 #line 1 "ENTRY_10b80400"
 
-SCStr * FUN_10b80400(SCStr *param_1)
+SCStr * __stdcall FUN_10b80400(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCServiceAccount");
@@ -44980,7 +44980,7 @@ SCStr * Recovered_10b80510::FUN_10b80510(SCStr *param_2)
 // Reference entry 10b80540; body size 21 bytes.
 #line 1 "ENTRY_10b80540"
 
-SCStr * FUN_10b80540(SCStr *param_1)
+SCStr * __stdcall FUN_10b80540(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("ToggleScrobble");
@@ -44991,7 +44991,7 @@ SCStr * FUN_10b80540(SCStr *param_1)
 // Reference entry 10b81530; body size 21 bytes.
 #line 1 "ENTRY_10b81530"
 
-SCStr * FUN_10b81530(SCStr *param_1)
+SCStr * __stdcall FUN_10b81530(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -45002,7 +45002,7 @@ SCStr * FUN_10b81530(SCStr *param_1)
 // Reference entry 10b81550; body size 21 bytes.
 #line 1 "ENTRY_10b81550"
 
-SCStr * FUN_10b81550(SCStr *param_1)
+SCStr * __stdcall FUN_10b81550(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -45013,7 +45013,7 @@ SCStr * FUN_10b81550(SCStr *param_1)
 // Reference entry 10b81570; body size 21 bytes.
 #line 1 "ENTRY_10b81570"
 
-SCStr * FUN_10b81570(SCStr *param_1)
+SCStr * __stdcall FUN_10b81570(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -45036,7 +45036,7 @@ SCStr * Recovered_10b81660::FUN_10b81660(SCStr *param_2)
 // Reference entry 10b81a30; body size 21 bytes.
 #line 1 "ENTRY_10b81a30"
 
-SCStr * FUN_10b81a30(SCStr *param_1)
+SCStr * __stdcall FUN_10b81a30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -45066,7 +45066,7 @@ SCStr * Recovered_10b81cb0::FUN_10b81cb0(SCStr *param_2)
 // Reference entry 10b81cf0; body size 32 bytes.
 #line 1 "ENTRY_10b81cf0"
 
-SCStr * FUN_10b81cf0(SCStr *param_1)
+SCStr * __stdcall FUN_10b81cf0(SCStr *param_1)
 
 {
   int *piVar1;
@@ -45082,7 +45082,7 @@ SCStr * FUN_10b81cf0(SCStr *param_1)
 // Reference entry 10b81d20; body size 32 bytes.
 #line 1 "ENTRY_10b81d20"
 
-SCStr * FUN_10b81d20(SCStr *param_1)
+SCStr * __stdcall FUN_10b81d20(SCStr *param_1)
 
 {
   int *piVar1;
@@ -45334,7 +45334,7 @@ SCStr * Recovered_10b8b510::FUN_10b8b510(SCStr *param_2)
 // Reference entry 10b8b990; body size 21 bytes.
 #line 1 "ENTRY_10b8b990"
 
-SCStr * FUN_10b8b990(SCStr *param_1)
+SCStr * __stdcall FUN_10b8b990(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -45345,7 +45345,7 @@ SCStr * FUN_10b8b990(SCStr *param_1)
 // Reference entry 10b8b9b0; body size 21 bytes.
 #line 1 "ENTRY_10b8b9b0"
 
-SCStr * FUN_10b8b9b0(SCStr *param_1)
+SCStr * __stdcall FUN_10b8b9b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -45356,7 +45356,7 @@ SCStr * FUN_10b8b9b0(SCStr *param_1)
 // Reference entry 10b8b9d0; body size 21 bytes.
 #line 1 "ENTRY_10b8b9d0"
 
-SCStr * FUN_10b8b9d0(SCStr *param_1)
+SCStr * __stdcall FUN_10b8b9d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -45367,7 +45367,7 @@ SCStr * FUN_10b8b9d0(SCStr *param_1)
 // Reference entry 10b8b9f0; body size 21 bytes.
 #line 1 "ENTRY_10b8b9f0"
 
-SCStr * FUN_10b8b9f0(SCStr *param_1)
+SCStr * __stdcall FUN_10b8b9f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -45701,7 +45701,7 @@ undefined4 * Recovered_10b94f70::FUN_10b94f70(undefined4 *param_2,SCStr *param_3
 // Reference entry 10b9c370; body size 21 bytes.
 #line 1 "ENTRY_10b9c370"
 
-SCStr * FUN_10b9c370(SCStr *param_1)
+SCStr * __stdcall FUN_10b9c370(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCArtworkData");
@@ -45712,7 +45712,7 @@ SCStr * FUN_10b9c370(SCStr *param_1)
 // Reference entry 10b9c390; body size 21 bytes.
 #line 1 "ENTRY_10b9c390"
 
-SCStr * FUN_10b9c390(SCStr *param_1)
+SCStr * __stdcall FUN_10b9c390(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCLogoArtworkData");
@@ -46055,7 +46055,7 @@ void __fastcall FUN_10ba8810(int param_1)
 
 
 
-SCStr * FUN_10bab350(SCStr *param_1)
+SCStr * __stdcall FUN_10bab350(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAlarmManager");
@@ -46319,7 +46319,7 @@ void FUN_10bb5190(undefined4 param_1,SCStr *param_2,undefined4 param_3,undefined
 // Reference entry 10bb7a60; body size 21 bytes.
 #line 1 "ENTRY_10bb7a60"
 
-SCStr * FUN_10bb7a60(SCStr *param_1)
+SCStr * __stdcall FUN_10bb7a60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("CUSTOM_SUB_WIZARD_FIREWALL");
@@ -46400,7 +46400,7 @@ SCStr * FUN_10bb7bc0(SCStr *param_1,int param_2)
 // Reference entry 10bb7d30; body size 21 bytes.
 #line 1 "ENTRY_10bb7d30"
 
-SCStr * FUN_10bb7d30(SCStr *param_1)
+SCStr * __stdcall FUN_10bb7d30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("legacy_join_existing.button_press");
@@ -46411,7 +46411,7 @@ SCStr * FUN_10bb7d30(SCStr *param_1)
 // Reference entry 10bb7d50; body size 21 bytes.
 #line 1 "ENTRY_10bb7d50"
 
-SCStr * FUN_10bb7d50(SCStr *param_1)
+SCStr * __stdcall FUN_10bb7d50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("legacy_join_existing.complete");
@@ -46422,7 +46422,7 @@ SCStr * FUN_10bb7d50(SCStr *param_1)
 // Reference entry 10bb7d70; body size 21 bytes.
 #line 1 "ENTRY_10bb7d70"
 
-SCStr * FUN_10bb7d70(SCStr *param_1)
+SCStr * __stdcall FUN_10bb7d70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("legacy_join_existing.connecting");
@@ -46433,7 +46433,7 @@ SCStr * FUN_10bb7d70(SCStr *param_1)
 // Reference entry 10bb7d90; body size 21 bytes.
 #line 1 "ENTRY_10bb7d90"
 
-SCStr * FUN_10bb7d90(SCStr *param_1)
+SCStr * __stdcall FUN_10bb7d90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("legacy_join_existing.firewall_subwizard");
@@ -46444,7 +46444,7 @@ SCStr * FUN_10bb7d90(SCStr *param_1)
 // Reference entry 10bb7db0; body size 21 bytes.
 #line 1 "ENTRY_10bb7db0"
 
-SCStr * FUN_10bb7db0(SCStr *param_1)
+SCStr * __stdcall FUN_10bb7db0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("legacy_join_existing.init");
@@ -46455,7 +46455,7 @@ SCStr * FUN_10bb7db0(SCStr *param_1)
 // Reference entry 10bb7dd0; body size 21 bytes.
 #line 1 "ENTRY_10bb7dd0"
 
-SCStr * FUN_10bb7dd0(SCStr *param_1)
+SCStr * __stdcall FUN_10bb7dd0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("legacy_join_existing.intro");
@@ -46466,7 +46466,7 @@ SCStr * FUN_10bb7dd0(SCStr *param_1)
 // Reference entry 10bb7df0; body size 21 bytes.
 #line 1 "ENTRY_10bb7df0"
 
-SCStr * FUN_10bb7df0(SCStr *param_1)
+SCStr * __stdcall FUN_10bb7df0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("legacy_join_existing.setup_not_allowed");
@@ -46477,7 +46477,7 @@ SCStr * FUN_10bb7df0(SCStr *param_1)
 // Reference entry 10bb7e10; body size 21 bytes.
 #line 1 "ENTRY_10bb7e10"
 
-SCStr * FUN_10bb7e10(SCStr *param_1)
+SCStr * __stdcall FUN_10bb7e10(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("legacy_join_existing.success");
@@ -46488,7 +46488,7 @@ SCStr * FUN_10bb7e10(SCStr *param_1)
 // Reference entry 10bb7e30; body size 21 bytes.
 #line 1 "ENTRY_10bb7e30"
 
-SCStr * FUN_10bb7e30(SCStr *param_1)
+SCStr * __stdcall FUN_10bb7e30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("legacy_join_existing.timeout");
@@ -46499,7 +46499,7 @@ SCStr * FUN_10bb7e30(SCStr *param_1)
 // Reference entry 10bb7e60; body size 35 bytes.
 #line 1 "ENTRY_10bb7e60"
 
-SCStr * FUN_10bb7e60(SCStr *param_1)
+SCStr * __stdcall FUN_10bb7e60(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -46527,7 +46527,7 @@ SCStr * Recovered_10bb7eb0::FUN_10bb7eb0(SCStr *param_2)
 // Reference entry 10bba430; body size 21 bytes.
 #line 1 "ENTRY_10bba430"
 
-SCStr * FUN_10bba430(SCStr *param_1)
+SCStr * __stdcall FUN_10bba430(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCLegacyJoinExistingWizard");
@@ -46540,7 +46540,7 @@ SCStr * FUN_10bba430(SCStr *param_1)
 
 
 
-void FUN_10bbabb0(SCStr *param_1)
+void __stdcall FUN_10bbabb0(SCStr *param_1)
 
 {
   (param_1)->operator==("SCIHousehold:onNetworkChanged");
@@ -46700,7 +46700,7 @@ undefined4 * Recovered_10bbc630::FUN_10bbc630(undefined4 *param_2,SCStr *param_3
 
 
 
-SCStr * FUN_10bbe880(SCStr *param_1)
+SCStr * __stdcall FUN_10bbe880(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCChirpManager");
@@ -46711,7 +46711,7 @@ SCStr * FUN_10bbe880(SCStr *param_1)
 // Reference entry 10bbe8d0; body size 21 bytes.
 #line 1 "ENTRY_10bbe8d0"
 
-SCStr * FUN_10bbe8d0(SCStr *param_1)
+SCStr * __stdcall FUN_10bbe8d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("chirp_manager");
@@ -46929,7 +46929,7 @@ void FUN_10bbfe80(undefined4 param_1,SCStr *param_2,undefined4 param_3,undefined
 // Reference entry 10bc1c60; body size 21 bytes.
 #line 1 "ENTRY_10bc1c60"
 
-SCStr * FUN_10bc1c60(SCStr *param_1)
+SCStr * __stdcall FUN_10bc1c60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("AppInterop");
@@ -46940,7 +46940,7 @@ SCStr * FUN_10bc1c60(SCStr *param_1)
 // Reference entry 10bc1c80; body size 21 bytes.
 #line 1 "ENTRY_10bc1c80"
 
-SCStr * FUN_10bc1c80(SCStr *param_1)
+SCStr * __stdcall FUN_10bc1c80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -46965,7 +46965,7 @@ SCStr * Recovered_10bc1ca0::FUN_10bc1ca0(SCStr *param_2)
 
 
 
-SCStr * FUN_10bc47a0(SCStr *param_1)
+SCStr * __stdcall FUN_10bc47a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCNfcManager");
@@ -46976,7 +46976,7 @@ SCStr * FUN_10bc47a0(SCStr *param_1)
 // Reference entry 10bc4800; body size 21 bytes.
 #line 1 "ENTRY_10bc4800"
 
-SCStr * FUN_10bc4800(SCStr *param_1)
+SCStr * __stdcall FUN_10bc4800(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("nfc_manager");
@@ -47687,7 +47687,7 @@ void Recovered_10be2500::FUN_10be2500(int *param_2,SCStr *param_3)
 // Reference entry 10be5040; body size 27 bytes.
 #line 1 "ENTRY_10be5040"
 
-SCStr * FUN_10be5040(SCStr *param_1)
+SCStr * __stdcall FUN_10be5040(SCStr *param_1)
 
 {
   int iVar1;
@@ -47798,7 +47798,7 @@ undefined4 * Recovered_10bedc30::FUN_10bedc30(undefined4 *param_2,SCStr *param_3
 // Reference entry 10bee5d0; body size 35 bytes.
 #line 1 "ENTRY_10bee5d0"
 
-SCStr * FUN_10bee5d0(SCStr *param_1)
+SCStr * __stdcall FUN_10bee5d0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -48052,7 +48052,7 @@ undefined4 * Recovered_10bf3040::FUN_10bf3040(undefined4 *param_2,SCStr *param_3
 // Reference entry 10bf34a0; body size 21 bytes.
 #line 1 "ENTRY_10bf34a0"
 
-SCStr * FUN_10bf34a0(SCStr *param_1)
+SCStr * __stdcall FUN_10bf34a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAudioInputResource");
@@ -48156,7 +48156,7 @@ undefined4 * Recovered_10bfdb00::FUN_10bfdb00(undefined4 *param_2,SCStr *param_3
 // Reference entry 10bff8c0; body size 21 bytes.
 #line 1 "ENTRY_10bff8c0"
 
-SCStr * FUN_10bff8c0(SCStr *param_1)
+SCStr * __stdcall FUN_10bff8c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCMusicServer");
@@ -48487,7 +48487,7 @@ SCStr * Recovered_10c02510::FUN_10c02510(SCStr *param_2)
 // Reference entry 10c02e50; body size 21 bytes.
 #line 1 "ENTRY_10c02e50"
 
-SCStr * FUN_10c02e50(SCStr *param_1)
+SCStr * __stdcall FUN_10c02e50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCServiceAppInteropManager");
@@ -48544,7 +48544,7 @@ undefined4 * Recovered_10c039d0::FUN_10c039d0(undefined4 *param_2,SCStr *param_3
 // Reference entry 10c0cf10; body size 21 bytes.
 #line 1 "ENTRY_10c0cf10"
 
-SCStr * FUN_10c0cf10(SCStr *param_1)
+SCStr * __stdcall FUN_10c0cf10(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("ChickenExit");
@@ -48555,7 +48555,7 @@ SCStr * FUN_10c0cf10(SCStr *param_1)
 // Reference entry 10c0e800; body size 21 bytes.
 #line 1 "ENTRY_10c0e800"
 
-SCStr * FUN_10c0e800(SCStr *param_1)
+SCStr * __stdcall FUN_10c0e800(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -48566,7 +48566,7 @@ SCStr * FUN_10c0e800(SCStr *param_1)
 // Reference entry 10c0ed70; body size 21 bytes.
 #line 1 "ENTRY_10c0ed70"
 
-SCStr * FUN_10c0ed70(SCStr *param_1)
+SCStr * __stdcall FUN_10c0ed70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("Secure Player Wizard");
@@ -48600,7 +48600,7 @@ undefined4 * Recovered_10c15630::FUN_10c15630(undefined4 *param_2,SCStr *param_3
 // Reference entry 10c18420; body size 21 bytes.
 #line 1 "ENTRY_10c18420"
 
-SCStr * FUN_10c18420(SCStr *param_1)
+SCStr * __stdcall FUN_10c18420(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("allnode");
@@ -48611,7 +48611,7 @@ SCStr * FUN_10c18420(SCStr *param_1)
 // Reference entry 10c18540; body size 21 bytes.
 #line 1 "ENTRY_10c18540"
 
-SCStr * FUN_10c18540(SCStr *param_1)
+SCStr * __stdcall FUN_10c18540(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("shuffleallnode");
@@ -48668,7 +48668,7 @@ SCStr * Recovered_10c1bbc0::FUN_10c1bbc0(SCStr *param_2)
 // Reference entry 10c1c720; body size 35 bytes.
 #line 1 "ENTRY_10c1c720"
 
-SCStr * FUN_10c1c720(SCStr *param_1)
+SCStr * __stdcall FUN_10c1c720(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -48682,7 +48682,7 @@ SCStr * FUN_10c1c720(SCStr *param_1)
 // Reference entry 10c1e790; body size 21 bytes.
 #line 1 "ENTRY_10c1e790"
 
-SCStr * FUN_10c1e790(SCStr *param_1)
+SCStr * __stdcall FUN_10c1e790(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -48947,7 +48947,7 @@ undefined4 * Recovered_10c27280::FUN_10c27280(undefined4 *param_2,SCStr *param_3
 // Reference entry 10c2a580; body size 35 bytes.
 #line 1 "ENTRY_10c2a580"
 
-SCStr * FUN_10c2a580(SCStr *param_1)
+SCStr * __stdcall FUN_10c2a580(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -48984,7 +48984,7 @@ undefined4 * Recovered_10c2a670::FUN_10c2a670(undefined4 *param_2,SCStr *param_3
 // Reference entry 10c2c0e0; body size 45 bytes.
 #line 1 "ENTRY_10c2c0e0"
 
-void FUN_10c2c0e0(undefined4 param_1,SCStr *param_2)
+void __stdcall FUN_10c2c0e0(undefined4 param_1,SCStr *param_2)
 
 {
   bool bVar1;
@@ -49004,7 +49004,7 @@ void FUN_10c2c0e0(undefined4 param_1,SCStr *param_2)
 // Reference entry 10c2c400; body size 47 bytes.
 #line 1 "ENTRY_10c2c400"
 
-void FUN_10c2c400(undefined4 param_1,SCStr *param_2)
+void __stdcall FUN_10c2c400(undefined4 param_1,SCStr *param_2)
 
 {
   bool bVar1;
@@ -49103,7 +49103,7 @@ undefined4 * Recovered_10c32770::FUN_10c32770(undefined4 *param_2,SCStr *param_3
 // Reference entry 10c37b00; body size 21 bytes.
 #line 1 "ENTRY_10c37b00"
 
-SCStr * FUN_10c37b00(SCStr *param_1)
+SCStr * __stdcall FUN_10c37b00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SaveAlarm");
@@ -49114,7 +49114,7 @@ SCStr * FUN_10c37b00(SCStr *param_1)
 // Reference entry 10c37ec0; body size 21 bytes.
 #line 1 "ENTRY_10c37ec0"
 
-SCStr * FUN_10c37ec0(SCStr *param_1)
+SCStr * __stdcall FUN_10c37ec0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -49125,7 +49125,7 @@ SCStr * FUN_10c37ec0(SCStr *param_1)
 // Reference entry 10c37ef0; body size 35 bytes.
 #line 1 "ENTRY_10c37ef0"
 
-SCStr * FUN_10c37ef0(SCStr *param_1)
+SCStr * __stdcall FUN_10c37ef0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -49230,7 +49230,7 @@ void Recovered_10c3ba30::FUN_10c3ba30(SCStr *param_2,undefined4 param_3)
 // Reference entry 10c46f60; body size 17 bytes.
 #line 1 "ENTRY_10c46f60"
 
-void FUN_10c46f60(SCStr *param_1)
+void __stdcall FUN_10c46f60(SCStr *param_1)
 
 {
   (param_1)->operator==("SCIHousehold:onSearchablesListChanged");
@@ -49266,7 +49266,7 @@ undefined4 * Recovered_10c478e0::FUN_10c478e0(undefined4 *param_2,SCStr *param_3
 
 
 
-SCStr * FUN_10c48f40(SCStr *param_1)
+SCStr * __stdcall FUN_10c48f40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("unavailable");
@@ -49279,7 +49279,7 @@ SCStr * FUN_10c48f40(SCStr *param_1)
 
 
 
-SCStr * FUN_10c49450(SCStr *param_1)
+SCStr * __stdcall FUN_10c49450(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("unavailable");
@@ -49292,7 +49292,7 @@ SCStr * FUN_10c49450(SCStr *param_1)
 
 
 
-SCStr * FUN_10c49470(SCStr *param_1)
+SCStr * __stdcall FUN_10c49470(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("unavailable");
@@ -49305,7 +49305,7 @@ SCStr * FUN_10c49470(SCStr *param_1)
 
 
 
-SCStr * FUN_10c495e0(SCStr *param_1)
+SCStr * __stdcall FUN_10c495e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("unavailable");
@@ -49318,7 +49318,7 @@ SCStr * FUN_10c495e0(SCStr *param_1)
 
 
 
-SCStr * FUN_10c496e0(SCStr *param_1)
+SCStr * __stdcall FUN_10c496e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("unavailable");
@@ -49329,7 +49329,7 @@ SCStr * FUN_10c496e0(SCStr *param_1)
 // Reference entry 10c4cb40; body size 21 bytes.
 #line 1 "ENTRY_10c4cb40"
 
-SCStr * FUN_10c4cb40(SCStr *param_1)
+SCStr * __stdcall FUN_10c4cb40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -49411,7 +49411,7 @@ void Recovered_10c4d0f0::FUN_10c4d0f0(SCStr *param_2,SCStr *param_3)
 // Reference entry 10c52500; body size 21 bytes.
 #line 1 "ENTRY_10c52500"
 
-SCStr * FUN_10c52500(SCStr *param_1)
+SCStr * __stdcall FUN_10c52500(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -49422,7 +49422,7 @@ SCStr * FUN_10c52500(SCStr *param_1)
 // Reference entry 10c52520; body size 21 bytes.
 #line 1 "ENTRY_10c52520"
 
-SCStr * FUN_10c52520(SCStr *param_1)
+SCStr * __stdcall FUN_10c52520(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -49433,7 +49433,7 @@ SCStr * FUN_10c52520(SCStr *param_1)
 // Reference entry 10c52540; body size 21 bytes.
 #line 1 "ENTRY_10c52540"
 
-SCStr * FUN_10c52540(SCStr *param_1)
+SCStr * __stdcall FUN_10c52540(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -49444,7 +49444,7 @@ SCStr * FUN_10c52540(SCStr *param_1)
 // Reference entry 10c52560; body size 21 bytes.
 #line 1 "ENTRY_10c52560"
 
-SCStr * FUN_10c52560(SCStr *param_1)
+SCStr * __stdcall FUN_10c52560(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -49455,7 +49455,7 @@ SCStr * FUN_10c52560(SCStr *param_1)
 // Reference entry 10c52580; body size 21 bytes.
 #line 1 "ENTRY_10c52580"
 
-SCStr * FUN_10c52580(SCStr *param_1)
+SCStr * __stdcall FUN_10c52580(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -49865,7 +49865,7 @@ SCStr * Recovered_10c578f0::FUN_10c578f0(SCStr *param_2,uint param_3)
 // Reference entry 10c579c0; body size 21 bytes.
 #line 1 "ENTRY_10c579c0"
 
-SCStr * FUN_10c579c0(SCStr *param_1)
+SCStr * __stdcall FUN_10c579c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -49876,7 +49876,7 @@ SCStr * FUN_10c579c0(SCStr *param_1)
 // Reference entry 10c579e0; body size 21 bytes.
 #line 1 "ENTRY_10c579e0"
 
-SCStr * FUN_10c579e0(SCStr *param_1)
+SCStr * __stdcall FUN_10c579e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -49887,7 +49887,7 @@ SCStr * FUN_10c579e0(SCStr *param_1)
 // Reference entry 10c57a00; body size 21 bytes.
 #line 1 "ENTRY_10c57a00"
 
-SCStr * FUN_10c57a00(SCStr *param_1)
+SCStr * __stdcall FUN_10c57a00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -49898,7 +49898,7 @@ SCStr * FUN_10c57a00(SCStr *param_1)
 // Reference entry 10c57a20; body size 21 bytes.
 #line 1 "ENTRY_10c57a20"
 
-SCStr * FUN_10c57a20(SCStr *param_1)
+SCStr * __stdcall FUN_10c57a20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -50216,7 +50216,7 @@ void Recovered_10c58f00::FUN_10c58f00(SCStr *param_2,SCStr *param_3)
 // Reference entry 10c5a580; body size 21 bytes.
 #line 1 "ENTRY_10c5a580"
 
-SCStr * FUN_10c5a580(SCStr *param_1)
+SCStr * __stdcall FUN_10c5a580(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -50468,7 +50468,7 @@ void Recovered_10c5c170::FUN_10c5c170(undefined4 param_2,SCStr *param_3)
 // Reference entry 10c5c820; body size 35 bytes.
 #line 1 "ENTRY_10c5c820"
 
-SCStr * FUN_10c5c820(SCStr *param_1)
+SCStr * __stdcall FUN_10c5c820(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -51337,7 +51337,7 @@ SCStr * FUN_10c63000(undefined4 param_1,SCStr *param_2)
 // Reference entry 10c67820; body size 21 bytes.
 #line 1 "ENTRY_10c67820"
 
-SCStr * FUN_10c67820(SCStr *param_1)
+SCStr * __stdcall FUN_10c67820(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("base_connector");
@@ -51421,7 +51421,7 @@ undefined4 * Recovered_10c6c1c0::FUN_10c6c1c0(undefined4 *param_2,SCStr *param_3
 // Reference entry 10c6d7f0; body size 21 bytes.
 #line 1 "ENTRY_10c6d7f0"
 
-SCStr * FUN_10c6d7f0(SCStr *param_1)
+SCStr * __stdcall FUN_10c6d7f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("wifi_connector");
@@ -51557,7 +51557,7 @@ SCStr * Recovered_10c81e30::FUN_10c81e30(SCStr *param_2)
 // Reference entry 10c81e50; body size 21 bytes.
 #line 1 "ENTRY_10c81e50"
 
-SCStr * FUN_10c81e50(SCStr *param_1)
+SCStr * __stdcall FUN_10c81e50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -51568,7 +51568,7 @@ SCStr * FUN_10c81e50(SCStr *param_1)
 // Reference entry 10c81e70; body size 21 bytes.
 #line 1 "ENTRY_10c81e70"
 
-SCStr * FUN_10c81e70(SCStr *param_1)
+SCStr * __stdcall FUN_10c81e70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -51713,7 +51713,7 @@ SCStr * Recovered_10c84410::FUN_10c84410(SCStr *param_2)
 // Reference entry 10c844e0; body size 18 bytes.
 #line 1 "ENTRY_10c844e0"
 
-SCStr * FUN_10c844e0(SCStr *param_1)
+SCStr * __stdcall FUN_10c844e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep((char *)0x0);
@@ -52192,7 +52192,7 @@ undefined4 * Recovered_10ca2370::FUN_10ca2370(undefined4 *param_2)
 // Reference entry 10ca8360; body size 21 bytes.
 #line 1 "ENTRY_10ca8360"
 
-SCStr * FUN_10ca8360(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8360(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("CUSTOM_SUB_WIZARD_SELF_UPDATE");
@@ -52239,7 +52239,7 @@ SCStr * FUN_10ca8650(SCStr *param_1,undefined4 param_2)
 // Reference entry 10ca8d00; body size 21 bytes.
 #line 1 "ENTRY_10ca8d00"
 
-SCStr * FUN_10ca8d00(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8d00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_NO_SECURE");
@@ -52250,7 +52250,7 @@ SCStr * FUN_10ca8d00(SCStr *param_1)
 // Reference entry 10ca8d20; body size 21 bytes.
 #line 1 "ENTRY_10ca8d20"
 
-SCStr * FUN_10ca8d20(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8d20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_SECURE_INTRO");
@@ -52261,7 +52261,7 @@ SCStr * FUN_10ca8d20(SCStr *param_1)
 // Reference entry 10ca8d40; body size 21 bytes.
 #line 1 "ENTRY_10ca8d40"
 
-SCStr * FUN_10ca8d40(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8d40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_WARNING");
@@ -52272,7 +52272,7 @@ SCStr * FUN_10ca8d40(SCStr *param_1)
 // Reference entry 10ca8d60; body size 21 bytes.
 #line 1 "ENTRY_10ca8d60"
 
-SCStr * FUN_10ca8d60(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8d60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_CANCELED");
@@ -52283,7 +52283,7 @@ SCStr * FUN_10ca8d60(SCStr *param_1)
 // Reference entry 10ca8d80; body size 21 bytes.
 #line 1 "ENTRY_10ca8d80"
 
-SCStr * FUN_10ca8d80(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8d80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_CHECK_FOR_UPDATES");
@@ -52294,7 +52294,7 @@ SCStr * FUN_10ca8d80(SCStr *param_1)
 // Reference entry 10ca8da0; body size 21 bytes.
 #line 1 "ENTRY_10ca8da0"
 
-SCStr * FUN_10ca8da0(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8da0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_CHOICE");
@@ -52305,7 +52305,7 @@ SCStr * FUN_10ca8da0(SCStr *param_1)
 // Reference entry 10ca8dc0; body size 21 bytes.
 #line 1 "ENTRY_10ca8dc0"
 
-SCStr * FUN_10ca8dc0(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8dc0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_COMPLETE");
@@ -52316,7 +52316,7 @@ SCStr * FUN_10ca8dc0(SCStr *param_1)
 // Reference entry 10ca8de0; body size 21 bytes.
 #line 1 "ENTRY_10ca8de0"
 
-SCStr * FUN_10ca8de0(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8de0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_CONTROLLER_NEEDS_UPDATING");
@@ -52327,7 +52327,7 @@ SCStr * FUN_10ca8de0(SCStr *param_1)
 // Reference entry 10ca8e00; body size 21 bytes.
 #line 1 "ENTRY_10ca8e00"
 
-SCStr * FUN_10ca8e00(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8e00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_CONTROLLER_SELFUPDATE_SUBWIZ");
@@ -52338,7 +52338,7 @@ SCStr * FUN_10ca8e00(SCStr *param_1)
 // Reference entry 10ca8e20; body size 21 bytes.
 #line 1 "ENTRY_10ca8e20"
 
-SCStr * FUN_10ca8e20(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8e20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_DEVICES_UPGRADE_IN_PROGRESS");
@@ -52349,7 +52349,7 @@ SCStr * FUN_10ca8e20(SCStr *param_1)
 // Reference entry 10ca8e40; body size 21 bytes.
 #line 1 "ENTRY_10ca8e40"
 
-SCStr * FUN_10ca8e40(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8e40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_DEVICES_UPGRADED");
@@ -52360,7 +52360,7 @@ SCStr * FUN_10ca8e40(SCStr *param_1)
 // Reference entry 10ca8e60; body size 21 bytes.
 #line 1 "ENTRY_10ca8e60"
 
-SCStr * FUN_10ca8e60(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8e60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_ERROR_INFO");
@@ -52371,7 +52371,7 @@ SCStr * FUN_10ca8e60(SCStr *param_1)
 // Reference entry 10ca8e80; body size 21 bytes.
 #line 1 "ENTRY_10ca8e80"
 
-SCStr * FUN_10ca8e80(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8e80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_ERROR");
@@ -52382,7 +52382,7 @@ SCStr * FUN_10ca8e80(SCStr *param_1)
 // Reference entry 10ca8ea0; body size 21 bytes.
 #line 1 "ENTRY_10ca8ea0"
 
-SCStr * FUN_10ca8ea0(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8ea0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_FINISH_SECURE_REG");
@@ -52393,7 +52393,7 @@ SCStr * FUN_10ca8ea0(SCStr *param_1)
 // Reference entry 10ca8ec0; body size 21 bytes.
 #line 1 "ENTRY_10ca8ec0"
 
-SCStr * FUN_10ca8ec0(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8ec0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_FINISH_SECURE_REG_FAILED");
@@ -52404,7 +52404,7 @@ SCStr * FUN_10ca8ec0(SCStr *param_1)
 // Reference entry 10ca8ee0; body size 21 bytes.
 #line 1 "ENTRY_10ca8ee0"
 
-SCStr * FUN_10ca8ee0(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8ee0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_FINISHED");
@@ -52415,7 +52415,7 @@ SCStr * FUN_10ca8ee0(SCStr *param_1)
 // Reference entry 10ca8f00; body size 21 bytes.
 #line 1 "ENTRY_10ca8f00"
 
-SCStr * FUN_10ca8f00(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8f00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_INIT");
@@ -52426,7 +52426,7 @@ SCStr * FUN_10ca8f00(SCStr *param_1)
 // Reference entry 10ca8f20; body size 21 bytes.
 #line 1 "ENTRY_10ca8f20"
 
-SCStr * FUN_10ca8f20(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8f20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_INTRODUCTION");
@@ -52437,7 +52437,7 @@ SCStr * FUN_10ca8f20(SCStr *param_1)
 // Reference entry 10ca8f40; body size 21 bytes.
 #line 1 "ENTRY_10ca8f40"
 
-SCStr * FUN_10ca8f40(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8f40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_NO_INLINE_SELF_UPDATE");
@@ -52448,7 +52448,7 @@ SCStr * FUN_10ca8f40(SCStr *param_1)
 // Reference entry 10ca8f60; body size 21 bytes.
 #line 1 "ENTRY_10ca8f60"
 
-SCStr * FUN_10ca8f60(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8f60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_NOT_REQUIRED");
@@ -52459,7 +52459,7 @@ SCStr * FUN_10ca8f60(SCStr *param_1)
 // Reference entry 10ca8f80; body size 21 bytes.
 #line 1 "ENTRY_10ca8f80"
 
-SCStr * FUN_10ca8f80(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8f80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_PENDING");
@@ -52470,7 +52470,7 @@ SCStr * FUN_10ca8f80(SCStr *param_1)
 // Reference entry 10ca8fa0; body size 21 bytes.
 #line 1 "ENTRY_10ca8fa0"
 
-SCStr * FUN_10ca8fa0(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8fa0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_POST_UPDATE_REINDEXING_NEEDED");
@@ -52481,7 +52481,7 @@ SCStr * FUN_10ca8fa0(SCStr *param_1)
 // Reference entry 10ca8fc0; body size 21 bytes.
 #line 1 "ENTRY_10ca8fc0"
 
-SCStr * FUN_10ca8fc0(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8fc0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_RESUME_CONNECTING");
@@ -52492,7 +52492,7 @@ SCStr * FUN_10ca8fc0(SCStr *param_1)
 // Reference entry 10ca8fe0; body size 21 bytes.
 #line 1 "ENTRY_10ca8fe0"
 
-SCStr * FUN_10ca8fe0(SCStr *param_1)
+SCStr * __stdcall FUN_10ca8fe0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ONLINEUPDATE_SEC_REG_WARNING");
@@ -52503,7 +52503,7 @@ SCStr * FUN_10ca8fe0(SCStr *param_1)
 // Reference entry 10cb0e30; body size 21 bytes.
 #line 1 "ENTRY_10cb0e30"
 
-SCStr * FUN_10cb0e30(SCStr *param_1)
+SCStr * __stdcall FUN_10cb0e30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("OnlineUpdateWizard");
@@ -52798,7 +52798,7 @@ void Recovered_10cbc860::FUN_10cbc860(SCStr *param_2)
 // Reference entry 10cbd990; body size 18 bytes.
 #line 1 "ENTRY_10cbd990"
 
-SCStr * FUN_10cbd990(SCStr *param_1)
+SCStr * __stdcall FUN_10cbd990(SCStr *param_1)
 
 {
   (param_1)->int_allocRep((char *)0x0);
@@ -52821,7 +52821,7 @@ SCStr * Recovered_10cbda20::FUN_10cbda20(SCStr *param_2)
 // Reference entry 10cbda40; body size 18 bytes.
 #line 1 "ENTRY_10cbda40"
 
-SCStr * FUN_10cbda40(SCStr *param_1)
+SCStr * __stdcall FUN_10cbda40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep((char *)0x0);
@@ -52832,7 +52832,7 @@ SCStr * FUN_10cbda40(SCStr *param_1)
 // Reference entry 10cbdac0; body size 18 bytes.
 #line 1 "ENTRY_10cbdac0"
 
-SCStr * FUN_10cbdac0(SCStr *param_1)
+SCStr * __stdcall FUN_10cbdac0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep((char *)0x0);
@@ -52917,7 +52917,7 @@ SCStr * Recovered_10cc2280::FUN_10cc2280(SCStr *param_2)
 // Reference entry 10cc23f0; body size 35 bytes.
 #line 1 "ENTRY_10cc23f0"
 
-SCStr * FUN_10cc23f0(SCStr *param_1)
+SCStr * __stdcall FUN_10cc23f0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -52983,7 +52983,7 @@ SCStr * Recovered_10cc2830::FUN_10cc2830(SCStr *param_2)
 // Reference entry 10cc2850; body size 21 bytes.
 #line 1 "ENTRY_10cc2850"
 
-SCStr * FUN_10cc2850(SCStr *param_1)
+SCStr * __stdcall FUN_10cc2850(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -53398,7 +53398,7 @@ SCStr * Recovered_10cd3a90::FUN_10cd3a90(SCStr *param_2)
 // Reference entry 10cd3cc0; body size 21 bytes.
 #line 1 "ENTRY_10cd3cc0"
 
-SCStr * FUN_10cd3cc0(SCStr *param_1)
+SCStr * __stdcall FUN_10cd3cc0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -53409,7 +53409,7 @@ SCStr * FUN_10cd3cc0(SCStr *param_1)
 // Reference entry 10cd3ce0; body size 21 bytes.
 #line 1 "ENTRY_10cd3ce0"
 
-SCStr * FUN_10cd3ce0(SCStr *param_1)
+SCStr * __stdcall FUN_10cd3ce0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -53420,7 +53420,7 @@ SCStr * FUN_10cd3ce0(SCStr *param_1)
 // Reference entry 10cd3d00; body size 21 bytes.
 #line 1 "ENTRY_10cd3d00"
 
-SCStr * FUN_10cd3d00(SCStr *param_1)
+SCStr * __stdcall FUN_10cd3d00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -53431,7 +53431,7 @@ SCStr * FUN_10cd3d00(SCStr *param_1)
 // Reference entry 10cd3d20; body size 21 bytes.
 #line 1 "ENTRY_10cd3d20"
 
-SCStr * FUN_10cd3d20(SCStr *param_1)
+SCStr * __stdcall FUN_10cd3d20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -53442,7 +53442,7 @@ SCStr * FUN_10cd3d20(SCStr *param_1)
 // Reference entry 10cd3d40; body size 21 bytes.
 #line 1 "ENTRY_10cd3d40"
 
-SCStr * FUN_10cd3d40(SCStr *param_1)
+SCStr * __stdcall FUN_10cd3d40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -53453,7 +53453,7 @@ SCStr * FUN_10cd3d40(SCStr *param_1)
 // Reference entry 10cd3d60; body size 21 bytes.
 #line 1 "ENTRY_10cd3d60"
 
-SCStr * FUN_10cd3d60(SCStr *param_1)
+SCStr * __stdcall FUN_10cd3d60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -53464,7 +53464,7 @@ SCStr * FUN_10cd3d60(SCStr *param_1)
 // Reference entry 10cd3d80; body size 21 bytes.
 #line 1 "ENTRY_10cd3d80"
 
-SCStr * FUN_10cd3d80(SCStr *param_1)
+SCStr * __stdcall FUN_10cd3d80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -53475,7 +53475,7 @@ SCStr * FUN_10cd3d80(SCStr *param_1)
 // Reference entry 10cd3da0; body size 21 bytes.
 #line 1 "ENTRY_10cd3da0"
 
-SCStr * FUN_10cd3da0(SCStr *param_1)
+SCStr * __stdcall FUN_10cd3da0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -53486,7 +53486,7 @@ SCStr * FUN_10cd3da0(SCStr *param_1)
 // Reference entry 10cd3dc0; body size 21 bytes.
 #line 1 "ENTRY_10cd3dc0"
 
-SCStr * FUN_10cd3dc0(SCStr *param_1)
+SCStr * __stdcall FUN_10cd3dc0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -54018,7 +54018,7 @@ SCStr * Recovered_10cddac0::FUN_10cddac0(SCStr *param_2)
 // Reference entry 10cddbe0; body size 21 bytes.
 #line 1 "ENTRY_10cddbe0"
 
-SCStr * FUN_10cddbe0(SCStr *param_1)
+SCStr * __stdcall FUN_10cddbe0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -54029,7 +54029,7 @@ SCStr * FUN_10cddbe0(SCStr *param_1)
 // Reference entry 10cddc00; body size 21 bytes.
 #line 1 "ENTRY_10cddc00"
 
-SCStr * FUN_10cddc00(SCStr *param_1)
+SCStr * __stdcall FUN_10cddc00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -54225,7 +54225,7 @@ void __fastcall FUN_10cdf0d0(int param_1)
 // Reference entry 10cdffe0; body size 33 bytes.
 #line 1 "ENTRY_10cdffe0"
 
-void FUN_10cdffe0(undefined4 param_1,SCStr *param_2)
+void __stdcall FUN_10cdffe0(undefined4 param_1,SCStr *param_2)
 
 {
   bool bVar1;
@@ -54241,7 +54241,7 @@ void FUN_10cdffe0(undefined4 param_1,SCStr *param_2)
 // Reference entry 10ce07c0; body size 17 bytes.
 #line 1 "ENTRY_10ce07c0"
 
-void FUN_10ce07c0(SCStr *param_1)
+void __stdcall FUN_10ce07c0(SCStr *param_1)
 
 {
   (param_1)->operator==("SCIHousehold:onZoneGroupsChanged");
@@ -54275,7 +54275,7 @@ undefined4 * Recovered_10ce0a20::FUN_10ce0a20(undefined4 *param_2,SCStr *param_3
 // Reference entry 10ce1960; body size 21 bytes.
 #line 1 "ENTRY_10ce1960"
 
-SCStr * FUN_10ce1960(SCStr *param_1)
+SCStr * __stdcall FUN_10ce1960(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCOpGetStr instance");
@@ -54286,7 +54286,7 @@ SCStr * FUN_10ce1960(SCStr *param_1)
 // Reference entry 10ce1980; body size 21 bytes.
 #line 1 "ENTRY_10ce1980"
 
-SCStr * FUN_10ce1980(SCStr *param_1)
+SCStr * __stdcall FUN_10ce1980(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCOpGetUsageDataShareOption");
@@ -54297,7 +54297,7 @@ SCStr * FUN_10ce1980(SCStr *param_1)
 // Reference entry 10ce19c0; body size 21 bytes.
 #line 1 "ENTRY_10ce19c0"
 
-SCStr * FUN_10ce19c0(SCStr *param_1)
+SCStr * __stdcall FUN_10ce19c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -54308,7 +54308,7 @@ SCStr * FUN_10ce19c0(SCStr *param_1)
 // Reference entry 10ce19e0; body size 21 bytes.
 #line 1 "ENTRY_10ce19e0"
 
-SCStr * FUN_10ce19e0(SCStr *param_1)
+SCStr * __stdcall FUN_10ce19e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -54319,7 +54319,7 @@ SCStr * FUN_10ce19e0(SCStr *param_1)
 // Reference entry 10ce1a00; body size 21 bytes.
 #line 1 "ENTRY_10ce1a00"
 
-SCStr * FUN_10ce1a00(SCStr *param_1)
+SCStr * __stdcall FUN_10ce1a00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -54462,7 +54462,7 @@ void Recovered_10ce2180::FUN_10ce2180(SCStr *param_2,SCStr *param_3)
 // Reference entry 10ce28e0; body size 21 bytes.
 #line 1 "ENTRY_10ce28e0"
 
-SCStr * FUN_10ce28e0(SCStr *param_1)
+SCStr * __stdcall FUN_10ce28e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCOpGetRDM instance");
@@ -54473,7 +54473,7 @@ SCStr * FUN_10ce28e0(SCStr *param_1)
 // Reference entry 10ce2940; body size 21 bytes.
 #line 1 "ENTRY_10ce2940"
 
-SCStr * FUN_10ce2940(SCStr *param_1)
+SCStr * __stdcall FUN_10ce2940(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -54516,7 +54516,7 @@ undefined4 * Recovered_10ce2a80::FUN_10ce2a80(undefined4 *param_2,SCStr *param_3
 // Reference entry 10ce3da0; body size 21 bytes.
 #line 1 "ENTRY_10ce3da0"
 
-SCStr * FUN_10ce3da0(SCStr *param_1)
+SCStr * __stdcall FUN_10ce3da0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("NavigateToRoomsMenu");
@@ -54527,7 +54527,7 @@ SCStr * FUN_10ce3da0(SCStr *param_1)
 // Reference entry 10ce3ee0; body size 21 bytes.
 #line 1 "ENTRY_10ce3ee0"
 
-SCStr * FUN_10ce3ee0(SCStr *param_1)
+SCStr * __stdcall FUN_10ce3ee0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -54538,7 +54538,7 @@ SCStr * FUN_10ce3ee0(SCStr *param_1)
 // Reference entry 10ce4060; body size 21 bytes.
 #line 1 "ENTRY_10ce4060"
 
-SCStr * FUN_10ce4060(SCStr *param_1)
+SCStr * __stdcall FUN_10ce4060(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -54549,7 +54549,7 @@ SCStr * FUN_10ce4060(SCStr *param_1)
 // Reference entry 10ce42a0; body size 35 bytes.
 #line 1 "ENTRY_10ce42a0"
 
-SCStr * FUN_10ce42a0(SCStr *param_1)
+SCStr * __stdcall FUN_10ce42a0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -54834,7 +54834,7 @@ undefined4 * Recovered_10cf52a0::FUN_10cf52a0(undefined4 *param_2,SCStr *param_3
 // Reference entry 10cf5f40; body size 21 bytes.
 #line 1 "ENTRY_10cf5f40"
 
-SCStr * FUN_10cf5f40(SCStr *param_1)
+SCStr * __stdcall FUN_10cf5f40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCOpValidateServiceCredentials");
@@ -54865,7 +54865,7 @@ SCStr * Recovered_10cf6150::FUN_10cf6150(SCStr *param_2)
 // Reference entry 10cf6190; body size 21 bytes.
 #line 1 "ENTRY_10cf6190"
 
-SCStr * FUN_10cf6190(SCStr *param_1)
+SCStr * __stdcall FUN_10cf6190(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -54966,7 +54966,7 @@ SCStr * Recovered_10cf7ac0::FUN_10cf7ac0(SCStr *param_2)
 // Reference entry 10cf7db0; body size 21 bytes.
 #line 1 "ENTRY_10cf7db0"
 
-SCStr * FUN_10cf7db0(SCStr *param_1)
+SCStr * __stdcall FUN_10cf7db0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -55144,7 +55144,7 @@ void Recovered_10cf8df0::FUN_10cf8df0(SCStr *param_2)
 // Reference entry 10cf9cf0; body size 21 bytes.
 #line 1 "ENTRY_10cf9cf0"
 
-SCStr * FUN_10cf9cf0(SCStr *param_1)
+SCStr * __stdcall FUN_10cf9cf0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -55155,7 +55155,7 @@ SCStr * FUN_10cf9cf0(SCStr *param_1)
 // Reference entry 10cf9f50; body size 35 bytes.
 #line 1 "ENTRY_10cf9f50"
 
-SCStr * FUN_10cf9f50(SCStr *param_1)
+SCStr * __stdcall FUN_10cf9f50(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -55213,7 +55213,7 @@ undefined4 * Recovered_10cfb040::FUN_10cfb040(undefined4 *param_2,SCStr *param_3
 // Reference entry 10cfc180; body size 21 bytes.
 #line 1 "ENTRY_10cfc180"
 
-SCStr * FUN_10cfc180(SCStr *param_1)
+SCStr * __stdcall FUN_10cfc180(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -55224,7 +55224,7 @@ SCStr * FUN_10cfc180(SCStr *param_1)
 // Reference entry 10cfc460; body size 35 bytes.
 #line 1 "ENTRY_10cfc460"
 
-SCStr * FUN_10cfc460(SCStr *param_1)
+SCStr * __stdcall FUN_10cfc460(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -55338,7 +55338,7 @@ undefined4 * Recovered_10cfdeb0::FUN_10cfdeb0(undefined4 *param_2,SCStr *param_3
 // Reference entry 10d03ae0; body size 21 bytes.
 #line 1 "ENTRY_10d03ae0"
 
-SCStr * FUN_10d03ae0(SCStr *param_1)
+SCStr * __stdcall FUN_10d03ae0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("AlarmMusicChimeItem");
@@ -55349,7 +55349,7 @@ SCStr * FUN_10d03ae0(SCStr *param_1)
 // Reference entry 10d03b00; body size 21 bytes.
 #line 1 "ENTRY_10d03b00"
 
-SCStr * FUN_10d03b00(SCStr *param_1)
+SCStr * __stdcall FUN_10d03b00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAlarmContentBrowseItem");
@@ -55360,7 +55360,7 @@ SCStr * FUN_10d03b00(SCStr *param_1)
 // Reference entry 10d03b20; body size 21 bytes.
 #line 1 "ENTRY_10d03b20"
 
-SCStr * FUN_10d03b20(SCStr *param_1)
+SCStr * __stdcall FUN_10d03b20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("AlarmMusicBrowseItem");
@@ -55371,7 +55371,7 @@ SCStr * FUN_10d03b20(SCStr *param_1)
 // Reference entry 10d03b40; body size 21 bytes.
 #line 1 "ENTRY_10d03b40"
 
-SCStr * FUN_10d03b40(SCStr *param_1)
+SCStr * __stdcall FUN_10d03b40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("AlarmMusicItem");
@@ -55382,7 +55382,7 @@ SCStr * FUN_10d03b40(SCStr *param_1)
 // Reference entry 10d03b60; body size 21 bytes.
 #line 1 "ENTRY_10d03b60"
 
-SCStr * FUN_10d03b60(SCStr *param_1)
+SCStr * __stdcall FUN_10d03b60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("AlarmMusicRootItem");
@@ -55393,7 +55393,7 @@ SCStr * FUN_10d03b60(SCStr *param_1)
 // Reference entry 10d03fd0; body size 21 bytes.
 #line 1 "ENTRY_10d03fd0"
 
-SCStr * FUN_10d03fd0(SCStr *param_1)
+SCStr * __stdcall FUN_10d03fd0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("InvalidateStack");
@@ -55404,7 +55404,7 @@ SCStr * FUN_10d03fd0(SCStr *param_1)
 // Reference entry 10d03ff0; body size 21 bytes.
 #line 1 "ENTRY_10d03ff0"
 
-SCStr * FUN_10d03ff0(SCStr *param_1)
+SCStr * __stdcall FUN_10d03ff0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCSetAlarmMusicDescriptor");
@@ -55415,7 +55415,7 @@ SCStr * FUN_10d03ff0(SCStr *param_1)
 // Reference entry 10d04850; body size 21 bytes.
 #line 1 "ENTRY_10d04850"
 
-SCStr * FUN_10d04850(SCStr *param_1)
+SCStr * __stdcall FUN_10d04850(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -55426,7 +55426,7 @@ SCStr * FUN_10d04850(SCStr *param_1)
 // Reference entry 10d04870; body size 21 bytes.
 #line 1 "ENTRY_10d04870"
 
-SCStr * FUN_10d04870(SCStr *param_1)
+SCStr * __stdcall FUN_10d04870(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -55437,7 +55437,7 @@ SCStr * FUN_10d04870(SCStr *param_1)
 // Reference entry 10d04b90; body size 35 bytes.
 #line 1 "ENTRY_10d04b90"
 
-SCStr * FUN_10d04b90(SCStr *param_1)
+SCStr * __stdcall FUN_10d04b90(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -55451,7 +55451,7 @@ SCStr * FUN_10d04b90(SCStr *param_1)
 // Reference entry 10d04bc0; body size 53 bytes.
 #line 1 "ENTRY_10d04bc0"
 
-SCStr * FUN_10d04bc0(SCStr *param_1)
+SCStr * __stdcall FUN_10d04bc0(SCStr *param_1)
 
 {
   char cVar1;
@@ -55474,7 +55474,7 @@ SCStr * FUN_10d04bc0(SCStr *param_1)
 // Reference entry 10d04c20; body size 21 bytes.
 #line 1 "ENTRY_10d04c20"
 
-SCStr * FUN_10d04c20(SCStr *param_1)
+SCStr * __stdcall FUN_10d04c20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -55485,7 +55485,7 @@ SCStr * FUN_10d04c20(SCStr *param_1)
 // Reference entry 10d04df0; body size 21 bytes.
 #line 1 "ENTRY_10d04df0"
 
-SCStr * FUN_10d04df0(SCStr *param_1)
+SCStr * __stdcall FUN_10d04df0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -55508,7 +55508,7 @@ SCStr * Recovered_10d04e10::FUN_10d04e10(SCStr *param_2)
 // Reference entry 10d04e30; body size 35 bytes.
 #line 1 "ENTRY_10d04e30"
 
-SCStr * FUN_10d04e30(SCStr *param_1)
+SCStr * __stdcall FUN_10d04e30(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -55534,7 +55534,7 @@ SCStr * Recovered_10d04e60::FUN_10d04e60(SCStr *param_2)
 // Reference entry 10d04e80; body size 21 bytes.
 #line 1 "ENTRY_10d04e80"
 
-SCStr * FUN_10d04e80(SCStr *param_1)
+SCStr * __stdcall FUN_10d04e80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -55545,7 +55545,7 @@ SCStr * FUN_10d04e80(SCStr *param_1)
 // Reference entry 10d04ea0; body size 21 bytes.
 #line 1 "ENTRY_10d04ea0"
 
-SCStr * FUN_10d04ea0(SCStr *param_1)
+SCStr * __stdcall FUN_10d04ea0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("x-rincon-buzzer:0");
@@ -55580,7 +55580,7 @@ SCStr * Recovered_10d04ee0::FUN_10d04ee0(SCStr *param_2)
 // Reference entry 10d04f00; body size 21 bytes.
 #line 1 "ENTRY_10d04f00"
 
-SCStr * FUN_10d04f00(SCStr *param_1)
+SCStr * __stdcall FUN_10d04f00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -55703,7 +55703,7 @@ undefined4 * Recovered_10d07520::FUN_10d07520(undefined4 *param_2,SCStr *param_3
 // Reference entry 10d0b4c0; body size 21 bytes.
 #line 1 "ENTRY_10d0b4c0"
 
-SCStr * FUN_10d0b4c0(SCStr *param_1)
+SCStr * __stdcall FUN_10d0b4c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCContentBrowseItem");
@@ -55714,7 +55714,7 @@ SCStr * FUN_10d0b4c0(SCStr *param_1)
 // Reference entry 10d0b4e0; body size 21 bytes.
 #line 1 "ENTRY_10d0b4e0"
 
-SCStr * FUN_10d0b4e0(SCStr *param_1)
+SCStr * __stdcall FUN_10d0b4e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCContentViewBrowseItem");
@@ -55725,7 +55725,7 @@ SCStr * FUN_10d0b4e0(SCStr *param_1)
 // Reference entry 10d0b940; body size 21 bytes.
 #line 1 "ENTRY_10d0b940"
 
-SCStr * FUN_10d0b940(SCStr *param_1)
+SCStr * __stdcall FUN_10d0b940(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("REST");
@@ -55736,7 +55736,7 @@ SCStr * FUN_10d0b940(SCStr *param_1)
 // Reference entry 10d0b960; body size 21 bytes.
 #line 1 "ENTRY_10d0b960"
 
-SCStr * FUN_10d0b960(SCStr *param_1)
+SCStr * __stdcall FUN_10d0b960(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("REST");
@@ -55747,7 +55747,7 @@ SCStr * FUN_10d0b960(SCStr *param_1)
 // Reference entry 10d0b980; body size 21 bytes.
 #line 1 "ENTRY_10d0b980"
 
-SCStr * FUN_10d0b980(SCStr *param_1)
+SCStr * __stdcall FUN_10d0b980(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("REST");
@@ -55781,7 +55781,7 @@ undefined4 * Recovered_10d102d0::FUN_10d102d0(undefined4 *param_2,SCStr *param_3
 // Reference entry 10d13720; body size 21 bytes.
 #line 1 "ENTRY_10d13720"
 
-SCStr * FUN_10d13720(SCStr *param_1)
+SCStr * __stdcall FUN_10d13720(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIBadgeIndicatorSettingsProperty");
@@ -55792,7 +55792,7 @@ SCStr * FUN_10d13720(SCStr *param_1)
 // Reference entry 10d137a0; body size 21 bytes.
 #line 1 "ENTRY_10d137a0"
 
-SCStr * FUN_10d137a0(SCStr *param_1)
+SCStr * __stdcall FUN_10d137a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -55815,7 +55815,7 @@ SCStr * Recovered_10d137c0::FUN_10d137c0(SCStr *param_2)
 // Reference entry 10d13cd0; body size 35 bytes.
 #line 1 "ENTRY_10d13cd0"
 
-SCStr * FUN_10d13cd0(SCStr *param_1)
+SCStr * __stdcall FUN_10d13cd0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -55829,7 +55829,7 @@ SCStr * FUN_10d13cd0(SCStr *param_1)
 // Reference entry 10d14070; body size 17 bytes.
 #line 1 "ENTRY_10d14070"
 
-void FUN_10d14070(SCStr *param_1)
+void __stdcall FUN_10d14070(SCStr *param_1)
 
 {
   (param_1)->operator==("SCIHousehold:onVoiceAccountInfoChanged");
@@ -55983,7 +55983,7 @@ void Recovered_10d16fb0::FUN_10d16fb0(int param_2,SCStr *param_3)
 // Reference entry 10d17010; body size 21 bytes.
 #line 1 "ENTRY_10d17010"
 
-SCStr * FUN_10d17010(SCStr *param_1)
+SCStr * __stdcall FUN_10d17010(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCHistoryBrowseItem");
@@ -55994,7 +55994,7 @@ SCStr * FUN_10d17010(SCStr *param_1)
 // Reference entry 10d17040; body size 21 bytes.
 #line 1 "ENTRY_10d17040"
 
-SCStr * FUN_10d17040(SCStr *param_1)
+SCStr * __stdcall FUN_10d17040(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("DeleteItem");
@@ -56005,7 +56005,7 @@ SCStr * FUN_10d17040(SCStr *param_1)
 // Reference entry 10d17060; body size 21 bytes.
 #line 1 "ENTRY_10d17060"
 
-SCStr * FUN_10d17060(SCStr *param_1)
+SCStr * __stdcall FUN_10d17060(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("ClearAllRecentlyPlayed");
@@ -56016,7 +56016,7 @@ SCStr * FUN_10d17060(SCStr *param_1)
 // Reference entry 10d17080; body size 21 bytes.
 #line 1 "ENTRY_10d17080"
 
-SCStr * FUN_10d17080(SCStr *param_1)
+SCStr * __stdcall FUN_10d17080(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCHistorySignInActionDescriptor");
@@ -56027,7 +56027,7 @@ SCStr * FUN_10d17080(SCStr *param_1)
 // Reference entry 10d176d0; body size 21 bytes.
 #line 1 "ENTRY_10d176d0"
 
-SCStr * FUN_10d176d0(SCStr *param_1)
+SCStr * __stdcall FUN_10d176d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryEdit");
@@ -56056,7 +56056,7 @@ SCStr * Recovered_10d176f0::FUN_10d176f0(SCStr *param_2)
 // Reference entry 10d17720; body size 21 bytes.
 #line 1 "ENTRY_10d17720"
 
-SCStr * FUN_10d17720(SCStr *param_1)
+SCStr * __stdcall FUN_10d17720(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -56115,7 +56115,7 @@ undefined1 __fastcall FUN_10d189f0(int *param_1)
 // Reference entry 10d18a10; body size 17 bytes.
 #line 1 "ENTRY_10d18a10"
 
-void FUN_10d18a10(SCStr *param_1)
+void __stdcall FUN_10d18a10(SCStr *param_1)
 
 {
   (param_1)->operator==("SCIHousehold:onSecureSettingsChanged");
@@ -56149,7 +56149,7 @@ undefined4 * Recovered_10d19410::FUN_10d19410(undefined4 *param_2,SCStr *param_3
 // Reference entry 10d1c200; body size 21 bytes.
 #line 1 "ENTRY_10d1c200"
 
-SCStr * FUN_10d1c200(SCStr *param_1)
+SCStr * __stdcall FUN_10d1c200(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("PlayMenuInstantPlayNowTV");
@@ -56160,7 +56160,7 @@ SCStr * FUN_10d1c200(SCStr *param_1)
 // Reference entry 10d1c220; body size 21 bytes.
 #line 1 "ENTRY_10d1c220"
 
-SCStr * FUN_10d1c220(SCStr *param_1)
+SCStr * __stdcall FUN_10d1c220(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("PlayMenuPlayNowTV");
@@ -56171,7 +56171,7 @@ SCStr * FUN_10d1c220(SCStr *param_1)
 // Reference entry 10d1c240; body size 21 bytes.
 #line 1 "ENTRY_10d1c240"
 
-SCStr * FUN_10d1c240(SCStr *param_1)
+SCStr * __stdcall FUN_10d1c240(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("PlayNowTV");
@@ -56182,7 +56182,7 @@ SCStr * FUN_10d1c240(SCStr *param_1)
 // Reference entry 10d1c390; body size 21 bytes.
 #line 1 "ENTRY_10d1c390"
 
-SCStr * FUN_10d1c390(SCStr *param_1)
+SCStr * __stdcall FUN_10d1c390(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("tvaudio");
@@ -56193,7 +56193,7 @@ SCStr * FUN_10d1c390(SCStr *param_1)
 // Reference entry 10d1c3d0; body size 21 bytes.
 #line 1 "ENTRY_10d1c3d0"
 
-SCStr * FUN_10d1c3d0(SCStr *param_1)
+SCStr * __stdcall FUN_10d1c3d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryInstant");
@@ -56204,7 +56204,7 @@ SCStr * FUN_10d1c3d0(SCStr *param_1)
 // Reference entry 10d1c540; body size 21 bytes.
 #line 1 "ENTRY_10d1c540"
 
-SCStr * FUN_10d1c540(SCStr *param_1)
+SCStr * __stdcall FUN_10d1c540(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -56227,7 +56227,7 @@ SCStr * Recovered_10d1c5a0::FUN_10d1c5a0(SCStr *param_2)
 // Reference entry 10d1c5c0; body size 35 bytes.
 #line 1 "ENTRY_10d1c5c0"
 
-SCStr * FUN_10d1c5c0(SCStr *param_1)
+SCStr * __stdcall FUN_10d1c5c0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -56253,7 +56253,7 @@ SCStr * Recovered_10d1ccc0::FUN_10d1ccc0(SCStr *param_2)
 // Reference entry 10d1cce0; body size 18 bytes.
 #line 1 "ENTRY_10d1cce0"
 
-SCStr * FUN_10d1cce0(SCStr *param_1)
+SCStr * __stdcall FUN_10d1cce0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep((char *)0x0);
@@ -56310,7 +56310,7 @@ undefined4 * Recovered_10d1d570::FUN_10d1d570(undefined4 *param_2,SCStr *param_3
 // Reference entry 10d1e110; body size 21 bytes.
 #line 1 "ENTRY_10d1e110"
 
-SCStr * FUN_10d1e110(SCStr *param_1)
+SCStr * __stdcall FUN_10d1e110(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("none");
@@ -56321,7 +56321,7 @@ SCStr * FUN_10d1e110(SCStr *param_1)
 // Reference entry 10d1e2d0; body size 35 bytes.
 #line 1 "ENTRY_10d1e2d0"
 
-SCStr * FUN_10d1e2d0(SCStr *param_1)
+SCStr * __stdcall FUN_10d1e2d0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -56335,7 +56335,7 @@ SCStr * FUN_10d1e2d0(SCStr *param_1)
 // Reference entry 10d1e500; body size 21 bytes.
 #line 1 "ENTRY_10d1e500"
 
-SCStr * FUN_10d1e500(SCStr *param_1)
+SCStr * __stdcall FUN_10d1e500(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("invalid");
@@ -56346,7 +56346,7 @@ SCStr * FUN_10d1e500(SCStr *param_1)
 // Reference entry 10d1e520; body size 21 bytes.
 #line 1 "ENTRY_10d1e520"
 
-SCStr * FUN_10d1e520(SCStr *param_1)
+SCStr * __stdcall FUN_10d1e520(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -56401,7 +56401,7 @@ undefined4 * Recovered_10d1e560::FUN_10d1e560(undefined4 *param_2,SCStr *param_3
 // Reference entry 10d20400; body size 21 bytes.
 #line 1 "ENTRY_10d20400"
 
-SCStr * FUN_10d20400(SCStr *param_1)
+SCStr * __stdcall FUN_10d20400(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("linein");
@@ -56412,7 +56412,7 @@ SCStr * FUN_10d20400(SCStr *param_1)
 // Reference entry 10d20580; body size 21 bytes.
 #line 1 "ENTRY_10d20580"
 
-SCStr * FUN_10d20580(SCStr *param_1)
+SCStr * __stdcall FUN_10d20580(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -56484,7 +56484,7 @@ SCStr * Recovered_10d21870::FUN_10d21870(SCStr *param_2)
 // Reference entry 10d21890; body size 18 bytes.
 #line 1 "ENTRY_10d21890"
 
-SCStr * FUN_10d21890(SCStr *param_1)
+SCStr * __stdcall FUN_10d21890(SCStr *param_1)
 
 {
   (param_1)->int_allocRep((char *)0x0);
@@ -56576,7 +56576,7 @@ void __fastcall FUN_10d23590(int param_1)
 
 
 
-void FUN_10d23ed0(SCStr *param_1,SCStr *param_2)
+void __stdcall FUN_10d23ed0(SCStr *param_1,SCStr *param_2)
 
 {
   (param_1)->operator<(*(param_2));
@@ -56760,7 +56760,7 @@ void FUN_10d25380(int param_1,int param_2,int param_3,SCStr *param_4)
 // Reference entry 10d29860; body size 21 bytes.
 #line 1 "ENTRY_10d29860"
 
-SCStr * FUN_10d29860(SCStr *param_1)
+SCStr * __stdcall FUN_10d29860(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAvailableServicesMenu");
@@ -56771,7 +56771,7 @@ SCStr * FUN_10d29860(SCStr *param_1)
 // Reference entry 10d29880; body size 21 bytes.
 #line 1 "ENTRY_10d29880"
 
-SCStr * FUN_10d29880(SCStr *param_1)
+SCStr * __stdcall FUN_10d29880(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCMusicServicesDataSource");
@@ -56782,7 +56782,7 @@ SCStr * FUN_10d29880(SCStr *param_1)
 // Reference entry 10d298a0; body size 21 bytes.
 #line 1 "ENTRY_10d298a0"
 
-SCStr * FUN_10d298a0(SCStr *param_1)
+SCStr * __stdcall FUN_10d298a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCMusicServicesDataSource");
@@ -56808,7 +56808,7 @@ SCStr * Recovered_10d29c20::FUN_10d29c20(SCStr *param_2)
 // Reference entry 10d2a060; body size 21 bytes.
 #line 1 "ENTRY_10d2a060"
 
-SCStr * FUN_10d2a060(SCStr *param_1)
+SCStr * __stdcall FUN_10d2a060(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -56837,7 +56837,7 @@ SCStr * FUN_10d2a100(SCStr *param_1,int param_2)
 // Reference entry 10d2a180; body size 25 bytes.
 #line 1 "ENTRY_10d2a180"
 
-SCStr * FUN_10d2a180(SCStr *param_1)
+SCStr * __stdcall FUN_10d2a180(SCStr *param_1)
 
 {
   SCStr *pSVar1;
@@ -56851,7 +56851,7 @@ SCStr * FUN_10d2a180(SCStr *param_1)
 // Reference entry 10d2a1e0; body size 25 bytes.
 #line 1 "ENTRY_10d2a1e0"
 
-SCStr * FUN_10d2a1e0(SCStr *param_1)
+SCStr * __stdcall FUN_10d2a1e0(SCStr *param_1)
 
 {
   SCStr *pSVar1;
@@ -56880,7 +56880,7 @@ SCStr * Recovered_10d2a200::FUN_10d2a200(SCStr *param_2)
 // Reference entry 10d2a220; body size 35 bytes.
 #line 1 "ENTRY_10d2a220"
 
-SCStr * FUN_10d2a220(SCStr *param_1)
+SCStr * __stdcall FUN_10d2a220(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -56894,7 +56894,7 @@ SCStr * FUN_10d2a220(SCStr *param_1)
 // Reference entry 10d2a780; body size 21 bytes.
 #line 1 "ENTRY_10d2a780"
 
-SCStr * FUN_10d2a780(SCStr *param_1)
+SCStr * __stdcall FUN_10d2a780(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -56905,7 +56905,7 @@ SCStr * FUN_10d2a780(SCStr *param_1)
 // Reference entry 10d2a7a0; body size 21 bytes.
 #line 1 "ENTRY_10d2a7a0"
 
-SCStr * FUN_10d2a7a0(SCStr *param_1)
+SCStr * __stdcall FUN_10d2a7a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -56916,7 +56916,7 @@ SCStr * FUN_10d2a7a0(SCStr *param_1)
 // Reference entry 10d2a8c0; body size 35 bytes.
 #line 1 "ENTRY_10d2a8c0"
 
-SCStr * FUN_10d2a8c0(SCStr *param_1)
+SCStr * __stdcall FUN_10d2a8c0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -57159,7 +57159,7 @@ void Recovered_10d35460::FUN_10d35460(undefined4 param_2,SCStr *param_3)
 // Reference entry 10d354e0; body size 21 bytes.
 #line 1 "ENTRY_10d354e0"
 
-SCStr * FUN_10d354e0(SCStr *param_1)
+SCStr * __stdcall FUN_10d354e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("InfoViewWrapper");
@@ -57209,7 +57209,7 @@ SCStr * Recovered_10d356e0::FUN_10d356e0(SCStr *param_2)
 // Reference entry 10d35ca0; body size 21 bytes.
 #line 1 "ENTRY_10d35ca0"
 
-SCStr * FUN_10d35ca0(SCStr *param_1)
+SCStr * __stdcall FUN_10d35ca0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -57220,7 +57220,7 @@ SCStr * FUN_10d35ca0(SCStr *param_1)
 // Reference entry 10d36430; body size 21 bytes.
 #line 1 "ENTRY_10d36430"
 
-SCStr * FUN_10d36430(SCStr *param_1)
+SCStr * __stdcall FUN_10d36430(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -57231,7 +57231,7 @@ SCStr * FUN_10d36430(SCStr *param_1)
 // Reference entry 10d36460; body size 21 bytes.
 #line 1 "ENTRY_10d36460"
 
-SCStr * FUN_10d36460(SCStr *param_1)
+SCStr * __stdcall FUN_10d36460(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -57420,7 +57420,7 @@ SCStr * Recovered_10d3c540::FUN_10d3c540(SCStr *param_2)
 // Reference entry 10d3c580; body size 35 bytes.
 #line 1 "ENTRY_10d3c580"
 
-SCStr * FUN_10d3c580(SCStr *param_1)
+SCStr * __stdcall FUN_10d3c580(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -57446,7 +57446,7 @@ SCStr * Recovered_10d3c5d0::FUN_10d3c5d0(SCStr *param_2)
 // Reference entry 10d3c700; body size 21 bytes.
 #line 1 "ENTRY_10d3c700"
 
-SCStr * FUN_10d3c700(SCStr *param_1)
+SCStr * __stdcall FUN_10d3c700(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -57457,7 +57457,7 @@ SCStr * FUN_10d3c700(SCStr *param_1)
 // Reference entry 10d3c720; body size 21 bytes.
 #line 1 "ENTRY_10d3c720"
 
-SCStr * FUN_10d3c720(SCStr *param_1)
+SCStr * __stdcall FUN_10d3c720(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -57582,7 +57582,7 @@ void Recovered_10d3ee70::FUN_10d3ee70(undefined4 param_2,SCStr *param_3)
 // Reference entry 10d3ef90; body size 21 bytes.
 #line 1 "ENTRY_10d3ef90"
 
-SCStr * FUN_10d3ef90(SCStr *param_1)
+SCStr * __stdcall FUN_10d3ef90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCScheduleIndexUpdateSettingsItem");
@@ -57593,7 +57593,7 @@ SCStr * FUN_10d3ef90(SCStr *param_1)
 // Reference entry 10d3efb0; body size 21 bytes.
 #line 1 "ENTRY_10d3efb0"
 
-SCStr * FUN_10d3efb0(SCStr *param_1)
+SCStr * __stdcall FUN_10d3efb0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCSpinnerSettingsItem");
@@ -57604,7 +57604,7 @@ SCStr * FUN_10d3efb0(SCStr *param_1)
 // Reference entry 10d3efd0; body size 21 bytes.
 #line 1 "ENTRY_10d3efd0"
 
-SCStr * FUN_10d3efd0(SCStr *param_1)
+SCStr * __stdcall FUN_10d3efd0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCSpinnerSettingsProperty");
@@ -57615,7 +57615,7 @@ SCStr * FUN_10d3efd0(SCStr *param_1)
 // Reference entry 10d3eff0; body size 21 bytes.
 #line 1 "ENTRY_10d3eff0"
 
-SCStr * FUN_10d3eff0(SCStr *param_1)
+SCStr * __stdcall FUN_10d3eff0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCViewContributingArtistsSettingsItem");
@@ -57626,7 +57626,7 @@ SCStr * FUN_10d3eff0(SCStr *param_1)
 // Reference entry 10d3f7c0; body size 21 bytes.
 #line 1 "ENTRY_10d3f7c0"
 
-SCStr * FUN_10d3f7c0(SCStr *param_1)
+SCStr * __stdcall FUN_10d3f7c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIBooleanSettingsProperty");
@@ -57637,7 +57637,7 @@ SCStr * FUN_10d3f7c0(SCStr *param_1)
 // Reference entry 10d3f7e0; body size 21 bytes.
 #line 1 "ENTRY_10d3f7e0"
 
-SCStr * FUN_10d3f7e0(SCStr *param_1)
+SCStr * __stdcall FUN_10d3f7e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCISpinnerSettingsProperty");
@@ -57684,7 +57684,7 @@ SCStr * Recovered_10d3f8a0::FUN_10d3f8a0(SCStr *param_2)
 // Reference entry 10d3fb00; body size 35 bytes.
 #line 1 "ENTRY_10d3fb00"
 
-SCStr * FUN_10d3fb00(SCStr *param_1)
+SCStr * __stdcall FUN_10d3fb00(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -57698,7 +57698,7 @@ SCStr * FUN_10d3fb00(SCStr *param_1)
 // Reference entry 10d3fc90; body size 21 bytes.
 #line 1 "ENTRY_10d3fc90"
 
-SCStr * FUN_10d3fc90(SCStr *param_1)
+SCStr * __stdcall FUN_10d3fc90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -57709,7 +57709,7 @@ SCStr * FUN_10d3fc90(SCStr *param_1)
 // Reference entry 10d3fcd0; body size 21 bytes.
 #line 1 "ENTRY_10d3fcd0"
 
-SCStr * FUN_10d3fcd0(SCStr *param_1)
+SCStr * __stdcall FUN_10d3fcd0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -58009,7 +58009,7 @@ void Recovered_10d44200::FUN_10d44200(undefined4 param_2,SCStr *param_3)
 // Reference entry 10d45f10; body size 21 bytes.
 #line 1 "ENTRY_10d45f10"
 
-SCStr * FUN_10d45f10(SCStr *param_1)
+SCStr * __stdcall FUN_10d45f10(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -58084,7 +58084,7 @@ SCStr * FUN_10d46080(SCStr *param_1,int param_2)
 // Reference entry 10d460e0; body size 35 bytes.
 #line 1 "ENTRY_10d460e0"
 
-SCStr * FUN_10d460e0(SCStr *param_1)
+SCStr * __stdcall FUN_10d460e0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -58098,7 +58098,7 @@ SCStr * FUN_10d460e0(SCStr *param_1)
 // Reference entry 10d46110; body size 35 bytes.
 #line 1 "ENTRY_10d46110"
 
-SCStr * FUN_10d46110(SCStr *param_1)
+SCStr * __stdcall FUN_10d46110(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -58124,7 +58124,7 @@ SCStr * Recovered_10d46740::FUN_10d46740(SCStr *param_2)
 // Reference entry 10d467f0; body size 17 bytes.
 #line 1 "ENTRY_10d467f0"
 
-void FUN_10d467f0(SCStr *param_1)
+void __stdcall FUN_10d467f0(SCStr *param_1)
 
 {
   (param_1)->operator==("SCIHousehold:onZoneGroupsChanged");
@@ -58419,7 +58419,7 @@ void __fastcall FUN_10d49e60(int param_1)
 // Reference entry 10d4d940; body size 21 bytes.
 #line 1 "ENTRY_10d4d940"
 
-SCStr * FUN_10d4d940(SCStr *param_1)
+SCStr * __stdcall FUN_10d4d940(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCGroupQueueSaveAction");
@@ -58430,7 +58430,7 @@ SCStr * FUN_10d4d940(SCStr *param_1)
 // Reference entry 10d4d960; body size 21 bytes.
 #line 1 "ENTRY_10d4d960"
 
-SCStr * FUN_10d4d960(SCStr *param_1)
+SCStr * __stdcall FUN_10d4d960(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCGroupSaveAction");
@@ -58441,7 +58441,7 @@ SCStr * FUN_10d4d960(SCStr *param_1)
 // Reference entry 10d4d980; body size 21 bytes.
 #line 1 "ENTRY_10d4d980"
 
-SCStr * FUN_10d4d980(SCStr *param_1)
+SCStr * __stdcall FUN_10d4d980(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCGroupQueueSaveAction");
@@ -58452,7 +58452,7 @@ SCStr * FUN_10d4d980(SCStr *param_1)
 // Reference entry 10d4ea90; body size 21 bytes.
 #line 1 "ENTRY_10d4ea90"
 
-SCStr * FUN_10d4ea90(SCStr *param_1)
+SCStr * __stdcall FUN_10d4ea90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -58463,7 +58463,7 @@ SCStr * FUN_10d4ea90(SCStr *param_1)
 // Reference entry 10d4eab0; body size 32 bytes.
 #line 1 "ENTRY_10d4eab0"
 
-SCStr * FUN_10d4eab0(SCStr *param_1)
+SCStr * __stdcall FUN_10d4eab0(SCStr *param_1)
 
 {
   new (param_1) SCStr(*((SCStr *)&DAT_121a07b0));
@@ -58475,7 +58475,7 @@ SCStr * FUN_10d4eab0(SCStr *param_1)
 // Reference entry 10d4eae0; body size 21 bytes.
 #line 1 "ENTRY_10d4eae0"
 
-SCStr * FUN_10d4eae0(SCStr *param_1)
+SCStr * __stdcall FUN_10d4eae0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIAddToQueueAtNumberDescriptor");
@@ -58706,7 +58706,7 @@ SCStr * FUN_10d554f0(SCStr *param_1,int param_2,undefined4 param_3)
 // Reference entry 10d57050; body size 17 bytes.
 #line 1 "ENTRY_10d57050"
 
-void FUN_10d57050(SCStr *param_1)
+void __stdcall FUN_10d57050(SCStr *param_1)
 
 {
   (param_1)->operator==("SCIHousehold:onSearchablesListChanged");
@@ -58761,7 +58761,7 @@ undefined4 * Recovered_10d58880::FUN_10d58880(undefined4 *param_2,SCStr *param_3
 // Reference entry 10d59d80; body size 21 bytes.
 #line 1 "ENTRY_10d59d80"
 
-SCStr * FUN_10d59d80(SCStr *param_1)
+SCStr * __stdcall FUN_10d59d80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCMySonosDataSource");
@@ -58916,7 +58916,7 @@ void Recovered_10d5eec0::FUN_10d5eec0(int param_2)
 // Reference entry 10d5f020; body size 36 bytes.
 #line 1 "ENTRY_10d5f020"
 
-void FUN_10d5f020(undefined4 param_1,SCStr *param_2)
+void __stdcall FUN_10d5f020(undefined4 param_1,SCStr *param_2)
 
 {
   bool bVar1;
@@ -58932,7 +58932,7 @@ void FUN_10d5f020(undefined4 param_1,SCStr *param_2)
 // Reference entry 10d5f050; body size 21 bytes.
 #line 1 "ENTRY_10d5f050"
 
-SCStr * FUN_10d5f050(SCStr *param_1)
+SCStr * __stdcall FUN_10d5f050(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCMyPlaylistsDataSource");
@@ -58943,7 +58943,7 @@ SCStr * FUN_10d5f050(SCStr *param_1)
 // Reference entry 10d5f370; body size 21 bytes.
 #line 1 "ENTRY_10d5f370"
 
-SCStr * FUN_10d5f370(SCStr *param_1)
+SCStr * __stdcall FUN_10d5f370(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryEdit");
@@ -58992,7 +58992,7 @@ undefined4 * Recovered_10d60300::FUN_10d60300(undefined4 *param_2,SCStr *param_3
 // Reference entry 10d615f0; body size 21 bytes.
 #line 1 "ENTRY_10d615f0"
 
-SCStr * FUN_10d615f0(SCStr *param_1)
+SCStr * __stdcall FUN_10d615f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAccountEmailItem");
@@ -59003,7 +59003,7 @@ SCStr * FUN_10d615f0(SCStr *param_1)
 // Reference entry 10d61610; body size 21 bytes.
 #line 1 "ENTRY_10d61610"
 
-SCStr * FUN_10d61610(SCStr *param_1)
+SCStr * __stdcall FUN_10d61610(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAccountSettingsDataSource");
@@ -59014,7 +59014,7 @@ SCStr * FUN_10d61610(SCStr *param_1)
 // Reference entry 10d61630; body size 21 bytes.
 #line 1 "ENTRY_10d61630"
 
-SCStr * FUN_10d61630(SCStr *param_1)
+SCStr * __stdcall FUN_10d61630(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAccountSignInItem");
@@ -59027,7 +59027,7 @@ SCStr * FUN_10d61630(SCStr *param_1)
 
 
 
-SCStr * FUN_10d61650(SCStr *param_1)
+SCStr * __stdcall FUN_10d61650(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAccountTransferAccountItem");
@@ -59038,7 +59038,7 @@ SCStr * FUN_10d61650(SCStr *param_1)
 // Reference entry 10d61ed0; body size 21 bytes.
 #line 1 "ENTRY_10d61ed0"
 
-SCStr * FUN_10d61ed0(SCStr *param_1)
+SCStr * __stdcall FUN_10d61ed0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -59049,7 +59049,7 @@ SCStr * FUN_10d61ed0(SCStr *param_1)
 // Reference entry 10d62130; body size 21 bytes.
 #line 1 "ENTRY_10d62130"
 
-SCStr * FUN_10d62130(SCStr *param_1)
+SCStr * __stdcall FUN_10d62130(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -59060,7 +59060,7 @@ SCStr * FUN_10d62130(SCStr *param_1)
 // Reference entry 10d62440; body size 21 bytes.
 #line 1 "ENTRY_10d62440"
 
-SCStr * FUN_10d62440(SCStr *param_1)
+SCStr * __stdcall FUN_10d62440(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -59071,7 +59071,7 @@ SCStr * FUN_10d62440(SCStr *param_1)
 // Reference entry 10d62460; body size 21 bytes.
 #line 1 "ENTRY_10d62460"
 
-SCStr * FUN_10d62460(SCStr *param_1)
+SCStr * __stdcall FUN_10d62460(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -59082,7 +59082,7 @@ SCStr * FUN_10d62460(SCStr *param_1)
 // Reference entry 10d626c0; body size 21 bytes.
 #line 1 "ENTRY_10d626c0"
 
-SCStr * FUN_10d626c0(SCStr *param_1)
+SCStr * __stdcall FUN_10d626c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -59093,7 +59093,7 @@ SCStr * FUN_10d626c0(SCStr *param_1)
 // Reference entry 10d626e0; body size 21 bytes.
 #line 1 "ENTRY_10d626e0"
 
-SCStr * FUN_10d626e0(SCStr *param_1)
+SCStr * __stdcall FUN_10d626e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -59104,7 +59104,7 @@ SCStr * FUN_10d626e0(SCStr *param_1)
 // Reference entry 10d62700; body size 21 bytes.
 #line 1 "ENTRY_10d62700"
 
-SCStr * FUN_10d62700(SCStr *param_1)
+SCStr * __stdcall FUN_10d62700(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -59159,7 +59159,7 @@ undefined4 * Recovered_10d63500::FUN_10d63500(undefined4 *param_2,SCStr *param_3
 // Reference entry 10d65550; body size 21 bytes.
 #line 1 "ENTRY_10d65550"
 
-SCStr * FUN_10d65550(SCStr *param_1)
+SCStr * __stdcall FUN_10d65550(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCSearchHistoryBrowseDataSource");
@@ -59170,7 +59170,7 @@ SCStr * FUN_10d65550(SCStr *param_1)
 // Reference entry 10d65570; body size 21 bytes.
 #line 1 "ENTRY_10d65570"
 
-SCStr * FUN_10d65570(SCStr *param_1)
+SCStr * __stdcall FUN_10d65570(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCSearchHistoryBrowseItem");
@@ -59181,7 +59181,7 @@ SCStr * FUN_10d65570(SCStr *param_1)
 // Reference entry 10d65590; body size 21 bytes.
 #line 1 "ENTRY_10d65590"
 
-SCStr * FUN_10d65590(SCStr *param_1)
+SCStr * __stdcall FUN_10d65590(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCSearchHistoryPageDataSource");
@@ -59192,7 +59192,7 @@ SCStr * FUN_10d65590(SCStr *param_1)
 // Reference entry 10d65860; body size 21 bytes.
 #line 1 "ENTRY_10d65860"
 
-SCStr * FUN_10d65860(SCStr *param_1)
+SCStr * __stdcall FUN_10d65860(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("ClearSearchHistory");
@@ -59203,7 +59203,7 @@ SCStr * FUN_10d65860(SCStr *param_1)
 // Reference entry 10d65cc0; body size 21 bytes.
 #line 1 "ENTRY_10d65cc0"
 
-SCStr * FUN_10d65cc0(SCStr *param_1)
+SCStr * __stdcall FUN_10d65cc0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryEdit");
@@ -59226,7 +59226,7 @@ SCStr * Recovered_10d66740::FUN_10d66740(SCStr *param_2)
 // Reference entry 10d66760; body size 35 bytes.
 #line 1 "ENTRY_10d66760"
 
-SCStr * FUN_10d66760(SCStr *param_1)
+SCStr * __stdcall FUN_10d66760(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -59267,7 +59267,7 @@ SCStr * Recovered_10d66970::FUN_10d66970(SCStr *param_2)
 // Reference entry 10d66990; body size 35 bytes.
 #line 1 "ENTRY_10d66990"
 
-SCStr * FUN_10d66990(SCStr *param_1)
+SCStr * __stdcall FUN_10d66990(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -59305,7 +59305,7 @@ SCStr * Recovered_10d66e30::FUN_10d66e30(SCStr *param_2)
 // Reference entry 10d66e50; body size 21 bytes.
 #line 1 "ENTRY_10d66e50"
 
-SCStr * FUN_10d66e50(SCStr *param_1)
+SCStr * __stdcall FUN_10d66e50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -59492,7 +59492,7 @@ undefined4 * Recovered_10d675b0::FUN_10d675b0(undefined4 *param_2,SCStr *param_3
 // Reference entry 10d6bb30; body size 21 bytes.
 #line 1 "ENTRY_10d6bb30"
 
-SCStr * FUN_10d6bb30(SCStr *param_1)
+SCStr * __stdcall FUN_10d6bb30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCSearchPageDataSource");
@@ -59503,7 +59503,7 @@ SCStr * FUN_10d6bb30(SCStr *param_1)
 // Reference entry 10d6bb50; body size 21 bytes.
 #line 1 "ENTRY_10d6bb50"
 
-SCStr * FUN_10d6bb50(SCStr *param_1)
+SCStr * __stdcall FUN_10d6bb50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCSearchResultBrowseItem");
@@ -59514,7 +59514,7 @@ SCStr * FUN_10d6bb50(SCStr *param_1)
 // Reference entry 10d6bb70; body size 21 bytes.
 #line 1 "ENTRY_10d6bb70"
 
-SCStr * FUN_10d6bb70(SCStr *param_1)
+SCStr * __stdcall FUN_10d6bb70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCSearchViewBrowseItem");
@@ -59525,7 +59525,7 @@ SCStr * FUN_10d6bb70(SCStr *param_1)
 // Reference entry 10d6c020; body size 21 bytes.
 #line 1 "ENTRY_10d6c020"
 
-SCStr * FUN_10d6c020(SCStr *param_1)
+SCStr * __stdcall FUN_10d6c020(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("REST");
@@ -59725,7 +59725,7 @@ SCStr * FUN_10d77dc0(SCStr *param_1,int param_2)
 // Reference entry 10d77e70; body size 21 bytes.
 #line 1 "ENTRY_10d77e70"
 
-SCStr * FUN_10d77e70(SCStr *param_1)
+SCStr * __stdcall FUN_10d77e70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("acct_sign_in.complete");
@@ -59736,7 +59736,7 @@ SCStr * FUN_10d77e70(SCStr *param_1)
 // Reference entry 10d77e90; body size 21 bytes.
 #line 1 "ENTRY_10d77e90"
 
-SCStr * FUN_10d77e90(SCStr *param_1)
+SCStr * __stdcall FUN_10d77e90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("acct_sign_in.init");
@@ -59747,7 +59747,7 @@ SCStr * FUN_10d77e90(SCStr *param_1)
 // Reference entry 10d77eb0; body size 21 bytes.
 #line 1 "ENTRY_10d77eb0"
 
-SCStr * FUN_10d77eb0(SCStr *param_1)
+SCStr * __stdcall FUN_10d77eb0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("acct_sign_in.main_page");
@@ -59758,7 +59758,7 @@ SCStr * FUN_10d77eb0(SCStr *param_1)
 // Reference entry 10d77f20; body size 35 bytes.
 #line 1 "ENTRY_10d77f20"
 
-SCStr * FUN_10d77f20(SCStr *param_1)
+SCStr * __stdcall FUN_10d77f20(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -59772,7 +59772,7 @@ SCStr * FUN_10d77f20(SCStr *param_1)
 // Reference entry 10d79410; body size 21 bytes.
 #line 1 "ENTRY_10d79410"
 
-SCStr * FUN_10d79410(SCStr *param_1)
+SCStr * __stdcall FUN_10d79410(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("AccountSignInWizard");
@@ -59991,7 +59991,7 @@ SCStr * Recovered_10d839c0::FUN_10d839c0(SCStr *param_2)
 // Reference entry 10d83a40; body size 21 bytes.
 #line 1 "ENTRY_10d83a40"
 
-SCStr * FUN_10d83a40(SCStr *param_1)
+SCStr * __stdcall FUN_10d83a40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -60002,7 +60002,7 @@ SCStr * FUN_10d83a40(SCStr *param_1)
 // Reference entry 10d83a60; body size 21 bytes.
 #line 1 "ENTRY_10d83a60"
 
-SCStr * FUN_10d83a60(SCStr *param_1)
+SCStr * __stdcall FUN_10d83a60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -60013,7 +60013,7 @@ SCStr * FUN_10d83a60(SCStr *param_1)
 // Reference entry 10d83a80; body size 21 bytes.
 #line 1 "ENTRY_10d83a80"
 
-SCStr * FUN_10d83a80(SCStr *param_1)
+SCStr * __stdcall FUN_10d83a80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -60024,7 +60024,7 @@ SCStr * FUN_10d83a80(SCStr *param_1)
 // Reference entry 10d83aa0; body size 21 bytes.
 #line 1 "ENTRY_10d83aa0"
 
-SCStr * FUN_10d83aa0(SCStr *param_1)
+SCStr * __stdcall FUN_10d83aa0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -60405,7 +60405,7 @@ undefined4 * Recovered_10d89300::FUN_10d89300(undefined4 *param_2,SCStr *param_3
 // Reference entry 10d8ace0; body size 35 bytes.
 #line 1 "ENTRY_10d8ace0"
 
-SCStr * FUN_10d8ace0(SCStr *param_1)
+SCStr * __stdcall FUN_10d8ace0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -60419,7 +60419,7 @@ SCStr * FUN_10d8ace0(SCStr *param_1)
 // Reference entry 10d8ad10; body size 35 bytes.
 #line 1 "ENTRY_10d8ad10"
 
-SCStr * FUN_10d8ad10(SCStr *param_1)
+SCStr * __stdcall FUN_10d8ad10(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -60433,7 +60433,7 @@ SCStr * FUN_10d8ad10(SCStr *param_1)
 // Reference entry 10d8ad40; body size 35 bytes.
 #line 1 "ENTRY_10d8ad40"
 
-SCStr * FUN_10d8ad40(SCStr *param_1)
+SCStr * __stdcall FUN_10d8ad40(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -60447,7 +60447,7 @@ SCStr * FUN_10d8ad40(SCStr *param_1)
 // Reference entry 10d8ad70; body size 35 bytes.
 #line 1 "ENTRY_10d8ad70"
 
-SCStr * FUN_10d8ad70(SCStr *param_1)
+SCStr * __stdcall FUN_10d8ad70(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -60507,7 +60507,7 @@ undefined4 * Recovered_10d93ac0::FUN_10d93ac0(undefined4 *param_2,SCStr *param_3
 // Reference entry 10d97030; body size 35 bytes.
 #line 1 "ENTRY_10d97030"
 
-SCStr * FUN_10d97030(SCStr *param_1)
+SCStr * __stdcall FUN_10d97030(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -60521,7 +60521,7 @@ SCStr * FUN_10d97030(SCStr *param_1)
 // Reference entry 10d97060; body size 35 bytes.
 #line 1 "ENTRY_10d97060"
 
-SCStr * FUN_10d97060(SCStr *param_1)
+SCStr * __stdcall FUN_10d97060(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -60535,7 +60535,7 @@ SCStr * FUN_10d97060(SCStr *param_1)
 // Reference entry 10d97090; body size 35 bytes.
 #line 1 "ENTRY_10d97090"
 
-SCStr * FUN_10d97090(SCStr *param_1)
+SCStr * __stdcall FUN_10d97090(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -60549,7 +60549,7 @@ SCStr * FUN_10d97090(SCStr *param_1)
 // Reference entry 10d970c0; body size 35 bytes.
 #line 1 "ENTRY_10d970c0"
 
-SCStr * FUN_10d970c0(SCStr *param_1)
+SCStr * __stdcall FUN_10d970c0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -60563,7 +60563,7 @@ SCStr * FUN_10d970c0(SCStr *param_1)
 // Reference entry 10d970f0; body size 35 bytes.
 #line 1 "ENTRY_10d970f0"
 
-SCStr * FUN_10d970f0(SCStr *param_1)
+SCStr * __stdcall FUN_10d970f0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -60646,7 +60646,7 @@ undefined4 * Recovered_10d9a480::FUN_10d9a480(undefined4 *param_2,SCStr *param_3
 // Reference entry 10d9c930; body size 35 bytes.
 #line 1 "ENTRY_10d9c930"
 
-SCStr * FUN_10d9c930(SCStr *param_1)
+SCStr * __stdcall FUN_10d9c930(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -60660,7 +60660,7 @@ SCStr * FUN_10d9c930(SCStr *param_1)
 // Reference entry 10d9c960; body size 35 bytes.
 #line 1 "ENTRY_10d9c960"
 
-SCStr * FUN_10d9c960(SCStr *param_1)
+SCStr * __stdcall FUN_10d9c960(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -60674,7 +60674,7 @@ SCStr * FUN_10d9c960(SCStr *param_1)
 // Reference entry 10d9c990; body size 35 bytes.
 #line 1 "ENTRY_10d9c990"
 
-SCStr * FUN_10d9c990(SCStr *param_1)
+SCStr * __stdcall FUN_10d9c990(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -60688,7 +60688,7 @@ SCStr * FUN_10d9c990(SCStr *param_1)
 // Reference entry 10d9cb10; body size 21 bytes.
 #line 1 "ENTRY_10d9cb10"
 
-SCStr * FUN_10d9cb10(SCStr *param_1)
+SCStr * __stdcall FUN_10d9cb10(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -61078,7 +61078,7 @@ undefined4 * Recovered_10d9f800::FUN_10d9f800(undefined4 *param_2)
 // Reference entry 10da0840; body size 21 bytes.
 #line 1 "ENTRY_10da0840"
 
-SCStr * FUN_10da0840(SCStr *param_1)
+SCStr * __stdcall FUN_10da0840(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("MenuDismissSetting");
@@ -61089,7 +61089,7 @@ SCStr * FUN_10da0840(SCStr *param_1)
 // Reference entry 10da0860; body size 21 bytes.
 #line 1 "ENTRY_10da0860"
 
-SCStr * FUN_10da0860(SCStr *param_1)
+SCStr * __stdcall FUN_10da0860(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -61228,7 +61228,7 @@ int Recovered_10da53c0::FUN_10da53c0(int param_2)
 
 
 
-SCStr * FUN_10da68b0(SCStr *param_1)
+SCStr * __stdcall FUN_10da68b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCDateTimeManager");
@@ -61484,7 +61484,7 @@ undefined4 * Recovered_10da7640::FUN_10da7640(undefined4 *param_2,SCStr *param_3
 // Reference entry 10da8a80; body size 21 bytes.
 #line 1 "ENTRY_10da8a80"
 
-SCStr * FUN_10da8a80(SCStr *param_1)
+SCStr * __stdcall FUN_10da8a80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCDeleteVoiceAccountAction");
@@ -61495,7 +61495,7 @@ SCStr * FUN_10da8a80(SCStr *param_1)
 // Reference entry 10da8ca0; body size 21 bytes.
 #line 1 "ENTRY_10da8ca0"
 
-SCStr * FUN_10da8ca0(SCStr *param_1)
+SCStr * __stdcall FUN_10da8ca0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -61506,7 +61506,7 @@ SCStr * FUN_10da8ca0(SCStr *param_1)
 // Reference entry 10db1e60; body size 21 bytes.
 #line 1 "ENTRY_10db1e60"
 
-SCStr * FUN_10db1e60(SCStr *param_1)
+SCStr * __stdcall FUN_10db1e60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("InfoViewWrapper");
@@ -61517,7 +61517,7 @@ SCStr * FUN_10db1e60(SCStr *param_1)
 // Reference entry 10db1e80; body size 21 bytes.
 #line 1 "ENTRY_10db1e80"
 
-SCStr * FUN_10db1e80(SCStr *param_1)
+SCStr * __stdcall FUN_10db1e80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("InfoViewWrapper");
@@ -61528,7 +61528,7 @@ SCStr * FUN_10db1e80(SCStr *param_1)
 // Reference entry 10db1ea0; body size 21 bytes.
 #line 1 "ENTRY_10db1ea0"
 
-SCStr * FUN_10db1ea0(SCStr *param_1)
+SCStr * __stdcall FUN_10db1ea0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryPush");
@@ -61539,7 +61539,7 @@ SCStr * FUN_10db1ea0(SCStr *param_1)
 // Reference entry 10db1ec0; body size 21 bytes.
 #line 1 "ENTRY_10db1ec0"
 
-SCStr * FUN_10db1ec0(SCStr *param_1)
+SCStr * __stdcall FUN_10db1ec0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryPush");
@@ -61747,7 +61747,7 @@ SCStr * Recovered_10db8e40::FUN_10db8e40(SCStr *param_2)
 // Reference entry 10dc5230; body size 21 bytes.
 #line 1 "ENTRY_10dc5230"
 
-SCStr * FUN_10dc5230(SCStr *param_1)
+SCStr * __stdcall FUN_10dc5230(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("InfoViewWrapper");
@@ -61758,7 +61758,7 @@ SCStr * FUN_10dc5230(SCStr *param_1)
 // Reference entry 10dc5370; body size 21 bytes.
 #line 1 "ENTRY_10dc5370"
 
-SCStr * FUN_10dc5370(SCStr *param_1)
+SCStr * __stdcall FUN_10dc5370(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("InfoViewWrapper");
@@ -61769,7 +61769,7 @@ SCStr * FUN_10dc5370(SCStr *param_1)
 // Reference entry 10dc5390; body size 21 bytes.
 #line 1 "ENTRY_10dc5390"
 
-SCStr * FUN_10dc5390(SCStr *param_1)
+SCStr * __stdcall FUN_10dc5390(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("InfoViewWrapper");
@@ -61794,7 +61794,7 @@ SCStr * Recovered_10dc5670::FUN_10dc5670(SCStr *param_2)
 // Reference entry 10dc5690; body size 21 bytes.
 #line 1 "ENTRY_10dc5690"
 
-SCStr * FUN_10dc5690(SCStr *param_1)
+SCStr * __stdcall FUN_10dc5690(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryPush");
@@ -61805,7 +61805,7 @@ SCStr * FUN_10dc5690(SCStr *param_1)
 // Reference entry 10dc56b0; body size 21 bytes.
 #line 1 "ENTRY_10dc56b0"
 
-SCStr * FUN_10dc56b0(SCStr *param_1)
+SCStr * __stdcall FUN_10dc56b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -61816,7 +61816,7 @@ SCStr * FUN_10dc56b0(SCStr *param_1)
 // Reference entry 10dc56d0; body size 21 bytes.
 #line 1 "ENTRY_10dc56d0"
 
-SCStr * FUN_10dc56d0(SCStr *param_1)
+SCStr * __stdcall FUN_10dc56d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -61827,7 +61827,7 @@ SCStr * FUN_10dc56d0(SCStr *param_1)
 // Reference entry 10dc56f0; body size 21 bytes.
 #line 1 "ENTRY_10dc56f0"
 
-SCStr * FUN_10dc56f0(SCStr *param_1)
+SCStr * __stdcall FUN_10dc56f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -61945,7 +61945,7 @@ SCStr * Recovered_10dc5c20::FUN_10dc5c20(SCStr *param_2)
 // Reference entry 10dc5c40; body size 21 bytes.
 #line 1 "ENTRY_10dc5c40"
 
-SCStr * FUN_10dc5c40(SCStr *param_1)
+SCStr * __stdcall FUN_10dc5c40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -61956,7 +61956,7 @@ SCStr * FUN_10dc5c40(SCStr *param_1)
 // Reference entry 10dc5c60; body size 21 bytes.
 #line 1 "ENTRY_10dc5c60"
 
-SCStr * FUN_10dc5c60(SCStr *param_1)
+SCStr * __stdcall FUN_10dc5c60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -62034,7 +62034,7 @@ void Recovered_10dc7c50::FUN_10dc7c50(SCStr *param_2)
 // Reference entry 10dcd630; body size 21 bytes.
 #line 1 "ENTRY_10dcd630"
 
-SCStr * FUN_10dcd630(SCStr *param_1)
+SCStr * __stdcall FUN_10dcd630(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("InfoViewWrapper");
@@ -62045,7 +62045,7 @@ SCStr * FUN_10dcd630(SCStr *param_1)
 // Reference entry 10dcd650; body size 21 bytes.
 #line 1 "ENTRY_10dcd650"
 
-SCStr * FUN_10dcd650(SCStr *param_1)
+SCStr * __stdcall FUN_10dcd650(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("InfoViewWrapper");
@@ -62056,7 +62056,7 @@ SCStr * FUN_10dcd650(SCStr *param_1)
 // Reference entry 10dcd670; body size 21 bytes.
 #line 1 "ENTRY_10dcd670"
 
-SCStr * FUN_10dcd670(SCStr *param_1)
+SCStr * __stdcall FUN_10dcd670(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -62067,7 +62067,7 @@ SCStr * FUN_10dcd670(SCStr *param_1)
 // Reference entry 10dcd690; body size 21 bytes.
 #line 1 "ENTRY_10dcd690"
 
-SCStr * FUN_10dcd690(SCStr *param_1)
+SCStr * __stdcall FUN_10dcd690(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -62142,7 +62142,7 @@ SCStr * Recovered_10dcd760::FUN_10dcd760(SCStr *param_2,int param_3)
 // Reference entry 10dcd7f0; body size 21 bytes.
 #line 1 "ENTRY_10dcd7f0"
 
-SCStr * FUN_10dcd7f0(SCStr *param_1)
+SCStr * __stdcall FUN_10dcd7f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -62153,7 +62153,7 @@ SCStr * FUN_10dcd7f0(SCStr *param_1)
 // Reference entry 10dcd810; body size 21 bytes.
 #line 1 "ENTRY_10dcd810"
 
-SCStr * FUN_10dcd810(SCStr *param_1)
+SCStr * __stdcall FUN_10dcd810(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -62375,7 +62375,7 @@ void Recovered_10dcf2c0::FUN_10dcf2c0(SCStr *param_2)
 // Reference entry 10dcfac0; body size 21 bytes.
 #line 1 "ENTRY_10dcfac0"
 
-SCStr * FUN_10dcfac0(SCStr *param_1)
+SCStr * __stdcall FUN_10dcfac0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("DisplayCustomControl.ShareMusic");
@@ -62386,7 +62386,7 @@ SCStr * FUN_10dcfac0(SCStr *param_1)
 // Reference entry 10dcfae0; body size 21 bytes.
 #line 1 "ENTRY_10dcfae0"
 
-SCStr * FUN_10dcfae0(SCStr *param_1)
+SCStr * __stdcall FUN_10dcfae0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -62463,7 +62463,7 @@ SCStr * Recovered_10dd2780::FUN_10dd2780(SCStr *param_2)
 // Reference entry 10dd2fa0; body size 21 bytes.
 #line 1 "ENTRY_10dd2fa0"
 
-SCStr * FUN_10dd2fa0(SCStr *param_1)
+SCStr * __stdcall FUN_10dd2fa0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("UnknownWizardType");
@@ -62821,7 +62821,7 @@ undefined4 * Recovered_10de4590::FUN_10de4590(undefined4 *param_2,SCStr *param_3
 // Reference entry 10de6b80; body size 21 bytes.
 #line 1 "ENTRY_10de6b80"
 
-SCStr * FUN_10de6b80(SCStr *param_1)
+SCStr * __stdcall FUN_10de6b80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("InvalidateStack");
@@ -62832,7 +62832,7 @@ SCStr * FUN_10de6b80(SCStr *param_1)
 // Reference entry 10de6d90; body size 21 bytes.
 #line 1 "ENTRY_10de6d90"
 
-SCStr * FUN_10de6d90(SCStr *param_1)
+SCStr * __stdcall FUN_10de6d90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -62843,7 +62843,7 @@ SCStr * FUN_10de6d90(SCStr *param_1)
 // Reference entry 10de6db0; body size 35 bytes.
 #line 1 "ENTRY_10de6db0"
 
-SCStr * FUN_10de6db0(SCStr *param_1)
+SCStr * __stdcall FUN_10de6db0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -62857,7 +62857,7 @@ SCStr * FUN_10de6db0(SCStr *param_1)
 // Reference entry 10de6e50; body size 21 bytes.
 #line 1 "ENTRY_10de6e50"
 
-SCStr * FUN_10de6e50(SCStr *param_1)
+SCStr * __stdcall FUN_10de6e50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -63505,7 +63505,7 @@ undefined4 * Recovered_10e06af0::FUN_10e06af0(undefined4 *param_2,SCStr *param_3
 // Reference entry 10e0ae30; body size 21 bytes.
 #line 1 "ENTRY_10e0ae30"
 
-SCStr * FUN_10e0ae30(SCStr *param_1)
+SCStr * __stdcall FUN_10e0ae30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -63683,7 +63683,7 @@ undefined4 FUN_10e0eb50(SCStr *param_1)
 // Reference entry 10e0fde0; body size 21 bytes.
 #line 1 "ENTRY_10e0fde0"
 
-SCStr * FUN_10e0fde0(SCStr *param_1)
+SCStr * __stdcall FUN_10e0fde0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("wizard/setup/v4.1");
@@ -63790,7 +63790,7 @@ void FUN_10e16b80(void)
 // Reference entry 10e19a90; body size 21 bytes.
 #line 1 "ENTRY_10e19a90"
 
-SCStr * FUN_10e19a90(SCStr *param_1)
+SCStr * __stdcall FUN_10e19a90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_EXISTING_ORPHAN_ACCOUNT_NO_ACCESS");
@@ -63801,7 +63801,7 @@ SCStr * FUN_10e19a90(SCStr *param_1)
 // Reference entry 10e19ab0; body size 21 bytes.
 #line 1 "ENTRY_10e19ab0"
 
-SCStr * FUN_10e19ab0(SCStr *param_1)
+SCStr * __stdcall FUN_10e19ab0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_EXISTING_BEGIN_SECURE_TRANSFER");
@@ -63812,7 +63812,7 @@ SCStr * FUN_10e19ab0(SCStr *param_1)
 // Reference entry 10e19ad0; body size 21 bytes.
 #line 1 "ENTRY_10e19ad0"
 
-SCStr * FUN_10e19ad0(SCStr *param_1)
+SCStr * __stdcall FUN_10e19ad0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_EXISTING_BUTTONS");
@@ -63823,7 +63823,7 @@ SCStr * FUN_10e19ad0(SCStr *param_1)
 // Reference entry 10e19af0; body size 21 bytes.
 #line 1 "ENTRY_10e19af0"
 
-SCStr * FUN_10e19af0(SCStr *param_1)
+SCStr * __stdcall FUN_10e19af0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_EXISTING_CHECK_EXISTING");
@@ -63834,7 +63834,7 @@ SCStr * FUN_10e19af0(SCStr *param_1)
 // Reference entry 10e19b10; body size 21 bytes.
 #line 1 "ENTRY_10e19b10"
 
-SCStr * FUN_10e19b10(SCStr *param_1)
+SCStr * __stdcall FUN_10e19b10(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_EXISTING_COMPLETE");
@@ -63845,7 +63845,7 @@ SCStr * FUN_10e19b10(SCStr *param_1)
 // Reference entry 10e19b30; body size 21 bytes.
 #line 1 "ENTRY_10e19b30"
 
-SCStr * FUN_10e19b30(SCStr *param_1)
+SCStr * __stdcall FUN_10e19b30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_EXISTING_EMAIL");
@@ -63856,7 +63856,7 @@ SCStr * FUN_10e19b30(SCStr *param_1)
 // Reference entry 10e19b50; body size 21 bytes.
 #line 1 "ENTRY_10e19b50"
 
-SCStr * FUN_10e19b50(SCStr *param_1)
+SCStr * __stdcall FUN_10e19b50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_EXISTING_FINISH_SECURE_REG");
@@ -63867,7 +63867,7 @@ SCStr * FUN_10e19b50(SCStr *param_1)
 // Reference entry 10e19b70; body size 21 bytes.
 #line 1 "ENTRY_10e19b70"
 
-SCStr * FUN_10e19b70(SCStr *param_1)
+SCStr * __stdcall FUN_10e19b70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_EXISTING_INIT");
@@ -63878,7 +63878,7 @@ SCStr * FUN_10e19b70(SCStr *param_1)
 // Reference entry 10e19b90; body size 21 bytes.
 #line 1 "ENTRY_10e19b90"
 
-SCStr * FUN_10e19b90(SCStr *param_1)
+SCStr * __stdcall FUN_10e19b90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_EXISTING_KNOWN_EMAIL_MATCH");
@@ -63889,7 +63889,7 @@ SCStr * FUN_10e19b90(SCStr *param_1)
 // Reference entry 10e19bb0; body size 21 bytes.
 #line 1 "ENTRY_10e19bb0"
 
-SCStr * FUN_10e19bb0(SCStr *param_1)
+SCStr * __stdcall FUN_10e19bb0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_EXISTING_SYSTEM_REGISTRATION_LOOKUP");
@@ -63900,7 +63900,7 @@ SCStr * FUN_10e19bb0(SCStr *param_1)
 // Reference entry 10e19bd0; body size 21 bytes.
 #line 1 "ENTRY_10e19bd0"
 
-SCStr * FUN_10e19bd0(SCStr *param_1)
+SCStr * __stdcall FUN_10e19bd0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_EXISTING_ERROR_NETWORK");
@@ -63911,7 +63911,7 @@ SCStr * FUN_10e19bd0(SCStr *param_1)
 // Reference entry 10e19bf0; body size 21 bytes.
 #line 1 "ENTRY_10e19bf0"
 
-SCStr * FUN_10e19bf0(SCStr *param_1)
+SCStr * __stdcall FUN_10e19bf0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_EXISTING_PRESS_BUTTON");
@@ -63922,7 +63922,7 @@ SCStr * FUN_10e19bf0(SCStr *param_1)
 // Reference entry 10e19c10; body size 21 bytes.
 #line 1 "ENTRY_10e19c10"
 
-SCStr * FUN_10e19c10(SCStr *param_1)
+SCStr * __stdcall FUN_10e19c10(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_EXISTING_SPEAKER_CHOICE");
@@ -63933,7 +63933,7 @@ SCStr * FUN_10e19c10(SCStr *param_1)
 // Reference entry 10e19c30; body size 21 bytes.
 #line 1 "ENTRY_10e19c30"
 
-SCStr * FUN_10e19c30(SCStr *param_1)
+SCStr * __stdcall FUN_10e19c30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_EXISTING_WAITING_FOR_TRANSFER");
@@ -63944,7 +63944,7 @@ SCStr * FUN_10e19c30(SCStr *param_1)
 // Reference entry 10e19cc0; body size 35 bytes.
 #line 1 "ENTRY_10e19cc0"
 
-SCStr * FUN_10e19cc0(SCStr *param_1)
+SCStr * __stdcall FUN_10e19cc0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -63958,7 +63958,7 @@ SCStr * FUN_10e19cc0(SCStr *param_1)
 // Reference entry 10e1ca90; body size 21 bytes.
 #line 1 "ENTRY_10e1ca90"
 
-SCStr * FUN_10e1ca90(SCStr *param_1)
+SCStr * __stdcall FUN_10e1ca90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SecureExistingWizard");
@@ -64099,7 +64099,7 @@ SCStr * FUN_10e24160(SCStr *param_1,int param_2)
 // Reference entry 10e24280; body size 21 bytes.
 #line 1 "ENTRY_10e24280"
 
-SCStr * FUN_10e24280(SCStr *param_1)
+SCStr * __stdcall FUN_10e24280(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("legacy_welcome_login.complete");
@@ -64110,7 +64110,7 @@ SCStr * FUN_10e24280(SCStr *param_1)
 // Reference entry 10e242a0; body size 21 bytes.
 #line 1 "ENTRY_10e242a0"
 
-SCStr * FUN_10e242a0(SCStr *param_1)
+SCStr * __stdcall FUN_10e242a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("legacy_welcome_login.init");
@@ -64121,7 +64121,7 @@ SCStr * FUN_10e242a0(SCStr *param_1)
 // Reference entry 10e242c0; body size 21 bytes.
 #line 1 "ENTRY_10e242c0"
 
-SCStr * FUN_10e242c0(SCStr *param_1)
+SCStr * __stdcall FUN_10e242c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("legacy_welcome_login.sec_reg_subwiz");
@@ -64132,7 +64132,7 @@ SCStr * FUN_10e242c0(SCStr *param_1)
 // Reference entry 10e24350; body size 35 bytes.
 #line 1 "ENTRY_10e24350"
 
-SCStr * FUN_10e24350(SCStr *param_1)
+SCStr * __stdcall FUN_10e24350(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -64146,7 +64146,7 @@ SCStr * FUN_10e24350(SCStr *param_1)
 // Reference entry 10e24860; body size 21 bytes.
 #line 1 "ENTRY_10e24860"
 
-SCStr * FUN_10e24860(SCStr *param_1)
+SCStr * __stdcall FUN_10e24860(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCLegacyWelcomeLoginWizard");
@@ -64557,7 +64557,7 @@ void FUN_10e2e8d0(void)
 // Reference entry 10e2f1f0; body size 21 bytes.
 #line 1 "ENTRY_10e2f1f0"
 
-SCStr * FUN_10e2f1f0(SCStr *param_1)
+SCStr * __stdcall FUN_10e2f1f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCPasswordResetURLHandler");
@@ -64568,7 +64568,7 @@ SCStr * FUN_10e2f1f0(SCStr *param_1)
 // Reference entry 10e2f210; body size 21 bytes.
 #line 1 "ENTRY_10e2f210"
 
-SCStr * FUN_10e2f210(SCStr *param_1)
+SCStr * __stdcall FUN_10e2f210(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCVerifyEmailURLHandler");
@@ -64579,7 +64579,7 @@ SCStr * FUN_10e2f210(SCStr *param_1)
 // Reference entry 10e30450; body size 21 bytes.
 #line 1 "ENTRY_10e30450"
 
-SCStr * FUN_10e30450(SCStr *param_1)
+SCStr * __stdcall FUN_10e30450(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.account_email");
@@ -64590,7 +64590,7 @@ SCStr * FUN_10e30450(SCStr *param_1)
 // Reference entry 10e30470; body size 21 bytes.
 #line 1 "ENTRY_10e30470"
 
-SCStr * FUN_10e30470(SCStr *param_1)
+SCStr * __stdcall FUN_10e30470(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.account_email_submit");
@@ -64601,7 +64601,7 @@ SCStr * FUN_10e30470(SCStr *param_1)
 // Reference entry 10e30490; body size 21 bytes.
 #line 1 "ENTRY_10e30490"
 
-SCStr * FUN_10e30490(SCStr *param_1)
+SCStr * __stdcall FUN_10e30490(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.error.account_already_exists");
@@ -64612,7 +64612,7 @@ SCStr * FUN_10e30490(SCStr *param_1)
 // Reference entry 10e304b0; body size 21 bytes.
 #line 1 "ENTRY_10e304b0"
 
-SCStr * FUN_10e304b0(SCStr *param_1)
+SCStr * __stdcall FUN_10e304b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.password_email_submit");
@@ -64623,7 +64623,7 @@ SCStr * FUN_10e304b0(SCStr *param_1)
 // Reference entry 10e304d0; body size 21 bytes.
 #line 1 "ENTRY_10e304d0"
 
-SCStr * FUN_10e304d0(SCStr *param_1)
+SCStr * __stdcall FUN_10e304d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.complete");
@@ -64634,7 +64634,7 @@ SCStr * FUN_10e304d0(SCStr *param_1)
 // Reference entry 10e304f0; body size 21 bytes.
 #line 1 "ENTRY_10e304f0"
 
-SCStr * FUN_10e304f0(SCStr *param_1)
+SCStr * __stdcall FUN_10e304f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.country");
@@ -64663,7 +64663,7 @@ SCStr * Recovered_10e30510::FUN_10e30510(SCStr *param_2)
 // Reference entry 10e30540; body size 21 bytes.
 #line 1 "ENTRY_10e30540"
 
-SCStr * FUN_10e30540(SCStr *param_1)
+SCStr * __stdcall FUN_10e30540(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.account_created");
@@ -64674,7 +64674,7 @@ SCStr * FUN_10e30540(SCStr *param_1)
 // Reference entry 10e30560; body size 21 bytes.
 #line 1 "ENTRY_10e30560"
 
-SCStr * FUN_10e30560(SCStr *param_1)
+SCStr * __stdcall FUN_10e30560(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.data_opt_in_submit");
@@ -64685,7 +64685,7 @@ SCStr * FUN_10e30560(SCStr *param_1)
 // Reference entry 10e30580; body size 21 bytes.
 #line 1 "ENTRY_10e30580"
 
-SCStr * FUN_10e30580(SCStr *param_1)
+SCStr * __stdcall FUN_10e30580(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("secure_registration.init");
@@ -64696,7 +64696,7 @@ SCStr * FUN_10e30580(SCStr *param_1)
 // Reference entry 10e305a0; body size 21 bytes.
 #line 1 "ENTRY_10e305a0"
 
-SCStr * FUN_10e305a0(SCStr *param_1)
+SCStr * __stdcall FUN_10e305a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.login_prep");
@@ -64707,7 +64707,7 @@ SCStr * FUN_10e305a0(SCStr *param_1)
 // Reference entry 10e305c0; body size 21 bytes.
 #line 1 "ENTRY_10e305c0"
 
-SCStr * FUN_10e305c0(SCStr *param_1)
+SCStr * __stdcall FUN_10e305c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.input_login");
@@ -64718,7 +64718,7 @@ SCStr * FUN_10e305c0(SCStr *param_1)
 // Reference entry 10e305e0; body size 21 bytes.
 #line 1 "ENTRY_10e305e0"
 
-SCStr * FUN_10e305e0(SCStr *param_1)
+SCStr * __stdcall FUN_10e305e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.login_submit");
@@ -64729,7 +64729,7 @@ SCStr * FUN_10e305e0(SCStr *param_1)
 // Reference entry 10e30600; body size 21 bytes.
 #line 1 "ENTRY_10e30600"
 
-SCStr * FUN_10e30600(SCStr *param_1)
+SCStr * __stdcall FUN_10e30600(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.error.network");
@@ -64740,7 +64740,7 @@ SCStr * FUN_10e30600(SCStr *param_1)
 // Reference entry 10e30620; body size 21 bytes.
 #line 1 "ENTRY_10e30620"
 
-SCStr * FUN_10e30620(SCStr *param_1)
+SCStr * __stdcall FUN_10e30620(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.new_account_intro");
@@ -64751,7 +64751,7 @@ SCStr * FUN_10e30620(SCStr *param_1)
 // Reference entry 10e30640; body size 21 bytes.
 #line 1 "ENTRY_10e30640"
 
-SCStr * FUN_10e30640(SCStr *param_1)
+SCStr * __stdcall FUN_10e30640(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.error.new_account.network");
@@ -64762,7 +64762,7 @@ SCStr * FUN_10e30640(SCStr *param_1)
 // Reference entry 10e30660; body size 21 bytes.
 #line 1 "ENTRY_10e30660"
 
-SCStr * FUN_10e30660(SCStr *param_1)
+SCStr * __stdcall FUN_10e30660(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.new_account");
@@ -64773,7 +64773,7 @@ SCStr * FUN_10e30660(SCStr *param_1)
 // Reference entry 10e30680; body size 21 bytes.
 #line 1 "ENTRY_10e30680"
 
-SCStr * FUN_10e30680(SCStr *param_1)
+SCStr * __stdcall FUN_10e30680(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.password_set");
@@ -64784,7 +64784,7 @@ SCStr * FUN_10e30680(SCStr *param_1)
 // Reference entry 10e306a0; body size 21 bytes.
 #line 1 "ENTRY_10e306a0"
 
-SCStr * FUN_10e306a0(SCStr *param_1)
+SCStr * __stdcall FUN_10e306a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.phone");
@@ -64795,7 +64795,7 @@ SCStr * FUN_10e306a0(SCStr *param_1)
 // Reference entry 10e306c0; body size 21 bytes.
 #line 1 "ENTRY_10e306c0"
 
-SCStr * FUN_10e306c0(SCStr *param_1)
+SCStr * __stdcall FUN_10e306c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.postal");
@@ -64806,7 +64806,7 @@ SCStr * FUN_10e306c0(SCStr *param_1)
 // Reference entry 10e306e0; body size 21 bytes.
 #line 1 "ENTRY_10e306e0"
 
-SCStr * FUN_10e306e0(SCStr *param_1)
+SCStr * __stdcall FUN_10e306e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.reset_password_email_fail");
@@ -64817,7 +64817,7 @@ SCStr * FUN_10e306e0(SCStr *param_1)
 // Reference entry 10e30700; body size 21 bytes.
 #line 1 "ENTRY_10e30700"
 
-SCStr * FUN_10e30700(SCStr *param_1)
+SCStr * __stdcall FUN_10e30700(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.reset_password_fail");
@@ -64828,7 +64828,7 @@ SCStr * FUN_10e30700(SCStr *param_1)
 // Reference entry 10e30720; body size 21 bytes.
 #line 1 "ENTRY_10e30720"
 
-SCStr * FUN_10e30720(SCStr *param_1)
+SCStr * __stdcall FUN_10e30720(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.reset_password");
@@ -64839,7 +64839,7 @@ SCStr * FUN_10e30720(SCStr *param_1)
 // Reference entry 10e30740; body size 21 bytes.
 #line 1 "ENTRY_10e30740"
 
-SCStr * FUN_10e30740(SCStr *param_1)
+SCStr * __stdcall FUN_10e30740(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.reset_password_success_other");
@@ -64850,7 +64850,7 @@ SCStr * FUN_10e30740(SCStr *param_1)
 // Reference entry 10e30760; body size 21 bytes.
 #line 1 "ENTRY_10e30760"
 
-SCStr * FUN_10e30760(SCStr *param_1)
+SCStr * __stdcall FUN_10e30760(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_registration.verify_email_error");
@@ -64945,7 +64945,7 @@ SCStr * Recovered_10e30d60::FUN_10e30d60(SCStr *param_2)
 // Reference entry 10e381c0; body size 21 bytes.
 #line 1 "ENTRY_10e381c0"
 
-SCStr * FUN_10e381c0(SCStr *param_1)
+SCStr * __stdcall FUN_10e381c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SecureRegistrationWizard");
@@ -65044,7 +65044,7 @@ void FUN_10e4a310(void)
 // Reference entry 10e4ae30; body size 21 bytes.
 #line 1 "ENTRY_10e4ae30"
 
-SCStr * FUN_10e4ae30(SCStr *param_1)
+SCStr * __stdcall FUN_10e4ae30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_player_calc_confirm");
@@ -65055,7 +65055,7 @@ SCStr * FUN_10e4ae30(SCStr *param_1)
 // Reference entry 10e4ae50; body size 21 bytes.
 #line 1 "ENTRY_10e4ae50"
 
-SCStr * FUN_10e4ae50(SCStr *param_1)
+SCStr * __stdcall FUN_10e4ae50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_player.complete");
@@ -65066,7 +65066,7 @@ SCStr * FUN_10e4ae50(SCStr *param_1)
 // Reference entry 10e4ae70; body size 21 bytes.
 #line 1 "ENTRY_10e4ae70"
 
-SCStr * FUN_10e4ae70(SCStr *param_1)
+SCStr * __stdcall FUN_10e4ae70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_player_confirm");
@@ -65077,7 +65077,7 @@ SCStr * FUN_10e4ae70(SCStr *param_1)
 // Reference entry 10e4ae90; body size 21 bytes.
 #line 1 "ENTRY_10e4ae90"
 
-SCStr * FUN_10e4ae90(SCStr *param_1)
+SCStr * __stdcall FUN_10e4ae90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_player_do_register");
@@ -65088,7 +65088,7 @@ SCStr * FUN_10e4ae90(SCStr *param_1)
 // Reference entry 10e4aeb0; body size 21 bytes.
 #line 1 "ENTRY_10e4aeb0"
 
-SCStr * FUN_10e4aeb0(SCStr *param_1)
+SCStr * __stdcall FUN_10e4aeb0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_player_failure_bad_token");
@@ -65099,7 +65099,7 @@ SCStr * FUN_10e4aeb0(SCStr *param_1)
 // Reference entry 10e4aed0; body size 21 bytes.
 #line 1 "ENTRY_10e4aed0"
 
-SCStr * FUN_10e4aed0(SCStr *param_1)
+SCStr * __stdcall FUN_10e4aed0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_player_failure");
@@ -65110,7 +65110,7 @@ SCStr * FUN_10e4aed0(SCStr *param_1)
 // Reference entry 10e4aef0; body size 21 bytes.
 #line 1 "ENTRY_10e4aef0"
 
-SCStr * FUN_10e4aef0(SCStr *param_1)
+SCStr * __stdcall FUN_10e4aef0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("init");
@@ -65121,7 +65121,7 @@ SCStr * FUN_10e4aef0(SCStr *param_1)
 // Reference entry 10e4af10; body size 21 bytes.
 #line 1 "ENTRY_10e4af10"
 
-SCStr * FUN_10e4af10(SCStr *param_1)
+SCStr * __stdcall FUN_10e4af10(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_player_link_players_intro");
@@ -65132,7 +65132,7 @@ SCStr * FUN_10e4af10(SCStr *param_1)
 // Reference entry 10e4af30; body size 21 bytes.
 #line 1 "ENTRY_10e4af30"
 
-SCStr * FUN_10e4af30(SCStr *param_1)
+SCStr * __stdcall FUN_10e4af30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_player_success");
@@ -65143,7 +65143,7 @@ SCStr * FUN_10e4af30(SCStr *param_1)
 // Reference entry 10e4af50; body size 21 bytes.
 #line 1 "ENTRY_10e4af50"
 
-SCStr * FUN_10e4af50(SCStr *param_1)
+SCStr * __stdcall FUN_10e4af50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_player_transfer_failure");
@@ -65154,7 +65154,7 @@ SCStr * FUN_10e4af50(SCStr *param_1)
 // Reference entry 10e4af70; body size 21 bytes.
 #line 1 "ENTRY_10e4af70"
 
-SCStr * FUN_10e4af70(SCStr *param_1)
+SCStr * __stdcall FUN_10e4af70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sec_player_unconfirmed");
@@ -65165,7 +65165,7 @@ SCStr * FUN_10e4af70(SCStr *param_1)
 // Reference entry 10e4b000; body size 35 bytes.
 #line 1 "ENTRY_10e4b000"
 
-SCStr * FUN_10e4b000(SCStr *param_1)
+SCStr * __stdcall FUN_10e4b000(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -65179,7 +65179,7 @@ SCStr * FUN_10e4b000(SCStr *param_1)
 // Reference entry 10e4d360; body size 21 bytes.
 #line 1 "ENTRY_10e4d360"
 
-SCStr * FUN_10e4d360(SCStr *param_1)
+SCStr * __stdcall FUN_10e4d360(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SecurePlayerWizard");
@@ -65272,7 +65272,7 @@ undefined4 * Recovered_10e4e5e0::FUN_10e4e5e0(undefined4 *param_2,SCStr *param_3
 // Reference entry 10e555f0; body size 21 bytes.
 #line 1 "ENTRY_10e555f0"
 
-SCStr * FUN_10e555f0(SCStr *param_1)
+SCStr * __stdcall FUN_10e555f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_TRANSFER_BEGIN_SECURE_TRANSFER");
@@ -65283,7 +65283,7 @@ SCStr * FUN_10e555f0(SCStr *param_1)
 // Reference entry 10e55610; body size 21 bytes.
 #line 1 "ENTRY_10e55610"
 
-SCStr * FUN_10e55610(SCStr *param_1)
+SCStr * __stdcall FUN_10e55610(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_TRANSFER_EXISTING_BUTTONS");
@@ -65294,7 +65294,7 @@ SCStr * FUN_10e55610(SCStr *param_1)
 // Reference entry 10e55630; body size 21 bytes.
 #line 1 "ENTRY_10e55630"
 
-SCStr * FUN_10e55630(SCStr *param_1)
+SCStr * __stdcall FUN_10e55630(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_TRANSFER_ERROR_NETWORK");
@@ -65305,7 +65305,7 @@ SCStr * FUN_10e55630(SCStr *param_1)
 // Reference entry 10e55650; body size 21 bytes.
 #line 1 "ENTRY_10e55650"
 
-SCStr * FUN_10e55650(SCStr *param_1)
+SCStr * __stdcall FUN_10e55650(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_TRANSFER_PRESS_BUTTON");
@@ -65316,7 +65316,7 @@ SCStr * FUN_10e55650(SCStr *param_1)
 // Reference entry 10e55670; body size 21 bytes.
 #line 1 "ENTRY_10e55670"
 
-SCStr * FUN_10e55670(SCStr *param_1)
+SCStr * __stdcall FUN_10e55670(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_TRANSFER_SPEAKER_CHOICE");
@@ -65327,7 +65327,7 @@ SCStr * FUN_10e55670(SCStr *param_1)
 // Reference entry 10e55690; body size 21 bytes.
 #line 1 "ENTRY_10e55690"
 
-SCStr * FUN_10e55690(SCStr *param_1)
+SCStr * __stdcall FUN_10e55690(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_TRANSFER_PLAYER_SUCCESS");
@@ -65338,7 +65338,7 @@ SCStr * FUN_10e55690(SCStr *param_1)
 // Reference entry 10e556b0; body size 21 bytes.
 #line 1 "ENTRY_10e556b0"
 
-SCStr * FUN_10e556b0(SCStr *param_1)
+SCStr * __stdcall FUN_10e556b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_TRANSFER_WAITING_FOR_TRANSFER");
@@ -65349,7 +65349,7 @@ SCStr * FUN_10e556b0(SCStr *param_1)
 // Reference entry 10e556d0; body size 21 bytes.
 #line 1 "ENTRY_10e556d0"
 
-SCStr * FUN_10e556d0(SCStr *param_1)
+SCStr * __stdcall FUN_10e556d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_TRANSFER_COMPLETE");
@@ -65360,7 +65360,7 @@ SCStr * FUN_10e556d0(SCStr *param_1)
 // Reference entry 10e556f0; body size 21 bytes.
 #line 1 "ENTRY_10e556f0"
 
-SCStr * FUN_10e556f0(SCStr *param_1)
+SCStr * __stdcall FUN_10e556f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_TRANSFER_INIT");
@@ -65371,7 +65371,7 @@ SCStr * FUN_10e556f0(SCStr *param_1)
 // Reference entry 10e55710; body size 21 bytes.
 #line 1 "ENTRY_10e55710"
 
-SCStr * FUN_10e55710(SCStr *param_1)
+SCStr * __stdcall FUN_10e55710(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SECURE_TRANSFER_INTRO");
@@ -65382,7 +65382,7 @@ SCStr * FUN_10e55710(SCStr *param_1)
 // Reference entry 10e557a0; body size 35 bytes.
 #line 1 "ENTRY_10e557a0"
 
-SCStr * FUN_10e557a0(SCStr *param_1)
+SCStr * __stdcall FUN_10e557a0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -65396,7 +65396,7 @@ SCStr * FUN_10e557a0(SCStr *param_1)
 // Reference entry 10e57980; body size 21 bytes.
 #line 1 "ENTRY_10e57980"
 
-SCStr * FUN_10e57980(SCStr *param_1)
+SCStr * __stdcall FUN_10e57980(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SecureTransferWizard");
@@ -65555,7 +65555,7 @@ SCStr * Recovered_10e5f7a0::FUN_10e5f7a0(SCStr *param_2)
 // Reference entry 10e69660; body size 21 bytes.
 #line 1 "ENTRY_10e69660"
 
-SCStr * FUN_10e69660(SCStr *param_1)
+SCStr * __stdcall FUN_10e69660(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCVoiceResponseHandler");
@@ -65566,7 +65566,7 @@ SCStr * FUN_10e69660(SCStr *param_1)
 // Reference entry 10e69a20; body size 21 bytes.
 #line 1 "ENTRY_10e69a20"
 
-SCStr * FUN_10e69a20(SCStr *param_1)
+SCStr * __stdcall FUN_10e69a20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ALEXA_AUTH_CHECKLIST_DOWNLOAD_ALEXA");
@@ -65577,7 +65577,7 @@ SCStr * FUN_10e69a20(SCStr *param_1)
 // Reference entry 10e69a40; body size 21 bytes.
 #line 1 "ENTRY_10e69a40"
 
-SCStr * FUN_10e69a40(SCStr *param_1)
+SCStr * __stdcall FUN_10e69a40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ALEXA_AUTH_CHECKLIST_MSP_ALEXA_EDUCATION");
@@ -65588,7 +65588,7 @@ SCStr * FUN_10e69a40(SCStr *param_1)
 // Reference entry 10e69a60; body size 21 bytes.
 #line 1 "ENTRY_10e69a60"
 
-SCStr * FUN_10e69a60(SCStr *param_1)
+SCStr * __stdcall FUN_10e69a60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ALEXA_AUTH_CHECKLIST_VOICE_EDUCATION");
@@ -65599,7 +65599,7 @@ SCStr * FUN_10e69a60(SCStr *param_1)
 // Reference entry 10e69a80; body size 21 bytes.
 #line 1 "ENTRY_10e69a80"
 
-SCStr * FUN_10e69a80(SCStr *param_1)
+SCStr * __stdcall FUN_10e69a80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ALEXA_AUTH_COMPLETE");
@@ -65610,7 +65610,7 @@ SCStr * FUN_10e69a80(SCStr *param_1)
 // Reference entry 10e69aa0; body size 21 bytes.
 #line 1 "ENTRY_10e69aa0"
 
-SCStr * FUN_10e69aa0(SCStr *param_1)
+SCStr * __stdcall FUN_10e69aa0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ALEXA_ENABLE_ACK_CHIME_SPINNER_STATE");
@@ -65621,7 +65621,7 @@ SCStr * FUN_10e69aa0(SCStr *param_1)
 // Reference entry 10e69ac0; body size 21 bytes.
 #line 1 "ENTRY_10e69ac0"
 
-SCStr * FUN_10e69ac0(SCStr *param_1)
+SCStr * __stdcall FUN_10e69ac0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ALEXA_ENABLE_ACK_CHIME_STATE");
@@ -65632,7 +65632,7 @@ SCStr * FUN_10e69ac0(SCStr *param_1)
 // Reference entry 10e69ae0; body size 21 bytes.
 #line 1 "ENTRY_10e69ae0"
 
-SCStr * FUN_10e69ae0(SCStr *param_1)
+SCStr * __stdcall FUN_10e69ae0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ALEXA_AUTH_GENERIC_ERROR");
@@ -65643,7 +65643,7 @@ SCStr * FUN_10e69ae0(SCStr *param_1)
 // Reference entry 10e69b00; body size 21 bytes.
 #line 1 "ENTRY_10e69b00"
 
-SCStr * FUN_10e69b00(SCStr *param_1)
+SCStr * __stdcall FUN_10e69b00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ALEXA_AUTH_INIT");
@@ -65654,7 +65654,7 @@ SCStr * FUN_10e69b00(SCStr *param_1)
 // Reference entry 10e69b20; body size 21 bytes.
 #line 1 "ENTRY_10e69b20"
 
-SCStr * FUN_10e69b20(SCStr *param_1)
+SCStr * __stdcall FUN_10e69b20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ALEXA_AUTH_INTRO_STATE");
@@ -65665,7 +65665,7 @@ SCStr * FUN_10e69b20(SCStr *param_1)
 // Reference entry 10e69b40; body size 21 bytes.
 #line 1 "ENTRY_10e69b40"
 
-SCStr * FUN_10e69b40(SCStr *param_1)
+SCStr * __stdcall FUN_10e69b40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ALEXA_AUTH_LWA");
@@ -65676,7 +65676,7 @@ SCStr * FUN_10e69b40(SCStr *param_1)
 // Reference entry 10e69b60; body size 21 bytes.
 #line 1 "ENTRY_10e69b60"
 
-SCStr * FUN_10e69b60(SCStr *param_1)
+SCStr * __stdcall FUN_10e69b60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ALEXA_AUTH_LOW_MEMORY_ERROR");
@@ -65687,7 +65687,7 @@ SCStr * FUN_10e69b60(SCStr *param_1)
 // Reference entry 10e69b80; body size 21 bytes.
 #line 1 "ENTRY_10e69b80"
 
-SCStr * FUN_10e69b80(SCStr *param_1)
+SCStr * __stdcall FUN_10e69b80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ALEXA_AUTH_MIC_INFO");
@@ -65698,7 +65698,7 @@ SCStr * FUN_10e69b80(SCStr *param_1)
 // Reference entry 10e69ba0; body size 21 bytes.
 #line 1 "ENTRY_10e69ba0"
 
-SCStr * FUN_10e69ba0(SCStr *param_1)
+SCStr * __stdcall FUN_10e69ba0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ALEXA_AUTH_MISSING_PLAYERS_ERROR");
@@ -65709,7 +65709,7 @@ SCStr * FUN_10e69ba0(SCStr *param_1)
 // Reference entry 10e69bc0; body size 21 bytes.
 #line 1 "ENTRY_10e69bc0"
 
-SCStr * FUN_10e69bc0(SCStr *param_1)
+SCStr * __stdcall FUN_10e69bc0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ALEXA_AUTH_PUSH_AUTH_CODE");
@@ -65720,7 +65720,7 @@ SCStr * FUN_10e69bc0(SCStr *param_1)
 // Reference entry 10e69be0; body size 21 bytes.
 #line 1 "ENTRY_10e69be0"
 
-SCStr * FUN_10e69be0(SCStr *param_1)
+SCStr * __stdcall FUN_10e69be0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ALEXA_AUTH_ROOM");
@@ -65731,7 +65731,7 @@ SCStr * FUN_10e69be0(SCStr *param_1)
 // Reference entry 10e69c00; body size 21 bytes.
 #line 1 "ENTRY_10e69c00"
 
-SCStr * FUN_10e69c00(SCStr *param_1)
+SCStr * __stdcall FUN_10e69c00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("alexa_auth.select_rooms");
@@ -65742,7 +65742,7 @@ SCStr * FUN_10e69c00(SCStr *param_1)
 // Reference entry 10e69c20; body size 21 bytes.
 #line 1 "ENTRY_10e69c20"
 
-SCStr * FUN_10e69c20(SCStr *param_1)
+SCStr * __stdcall FUN_10e69c20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ALEXA_AUTH_AUTH_SUCCESS");
@@ -65753,7 +65753,7 @@ SCStr * FUN_10e69c20(SCStr *param_1)
 // Reference entry 10e69c40; body size 21 bytes.
 #line 1 "ENTRY_10e69c40"
 
-SCStr * FUN_10e69c40(SCStr *param_1)
+SCStr * __stdcall FUN_10e69c40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ALEXA_AUTH_WRONG_ACCOUNT_ERROR");
@@ -65764,7 +65764,7 @@ SCStr * FUN_10e69c40(SCStr *param_1)
 // Reference entry 10e69c60; body size 21 bytes.
 #line 1 "ENTRY_10e69c60"
 
-SCStr * FUN_10e69c60(SCStr *param_1)
+SCStr * __stdcall FUN_10e69c60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ALEXA_AUTH_WRONG_ACCOUNT_ERROR");
@@ -65775,7 +65775,7 @@ SCStr * FUN_10e69c60(SCStr *param_1)
 // Reference entry 10e69c80; body size 21 bytes.
 #line 1 "ENTRY_10e69c80"
 
-SCStr * FUN_10e69c80(SCStr *param_1)
+SCStr * __stdcall FUN_10e69c80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_ALEXA_SETUP_MUSIC_SERVICES_STATE");
@@ -65786,7 +65786,7 @@ SCStr * FUN_10e69c80(SCStr *param_1)
 // Reference entry 10e69d70; body size 35 bytes.
 #line 1 "ENTRY_10e69d70"
 
-SCStr * FUN_10e69d70(SCStr *param_1)
+SCStr * __stdcall FUN_10e69d70(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -65800,7 +65800,7 @@ SCStr * FUN_10e69d70(SCStr *param_1)
 // Reference entry 10e70060; body size 21 bytes.
 #line 1 "ENTRY_10e70060"
 
-SCStr * FUN_10e70060(SCStr *param_1)
+SCStr * __stdcall FUN_10e70060(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("AlexaAuthenticationWizard");
@@ -65833,7 +65833,7 @@ undefined1 FUN_10e71680(SCStr *param_1)
 // Reference entry 10e716d0; body size 17 bytes.
 #line 1 "ENTRY_10e716d0"
 
-void FUN_10e716d0(SCStr *param_1)
+void __stdcall FUN_10e716d0(SCStr *param_1)
 
 {
   (param_1)->operator==("SCINowPlaying:onMusicChanged");
@@ -65966,7 +65966,7 @@ SCStr * FUN_10e794a0(SCStr *param_1,int param_2)
 // Reference entry 10e79650; body size 21 bytes.
 #line 1 "ENTRY_10e79650"
 
-SCStr * FUN_10e79650(SCStr *param_1)
+SCStr * __stdcall FUN_10e79650(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sonance_detection.complete");
@@ -65977,7 +65977,7 @@ SCStr * FUN_10e79650(SCStr *param_1)
 // Reference entry 10e79670; body size 21 bytes.
 #line 1 "ENTRY_10e79670"
 
-SCStr * FUN_10e79670(SCStr *param_1)
+SCStr * __stdcall FUN_10e79670(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sonance_detection.detect.error");
@@ -65988,7 +65988,7 @@ SCStr * FUN_10e79670(SCStr *param_1)
 // Reference entry 10e79690; body size 21 bytes.
 #line 1 "ENTRY_10e79690"
 
-SCStr * FUN_10e79690(SCStr *param_1)
+SCStr * __stdcall FUN_10e79690(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sonance_detection.detect.results");
@@ -65999,7 +65999,7 @@ SCStr * FUN_10e79690(SCStr *param_1)
 // Reference entry 10e796b0; body size 21 bytes.
 #line 1 "ENTRY_10e796b0"
 
-SCStr * FUN_10e796b0(SCStr *param_1)
+SCStr * __stdcall FUN_10e796b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sonance_detection.detect");
@@ -66010,7 +66010,7 @@ SCStr * FUN_10e796b0(SCStr *param_1)
 // Reference entry 10e796d0; body size 21 bytes.
 #line 1 "ENTRY_10e796d0"
 
-SCStr * FUN_10e796d0(SCStr *param_1)
+SCStr * __stdcall FUN_10e796d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sonance_detection.init");
@@ -66021,7 +66021,7 @@ SCStr * FUN_10e796d0(SCStr *param_1)
 // Reference entry 10e796f0; body size 21 bytes.
 #line 1 "ENTRY_10e796f0"
 
-SCStr * FUN_10e796f0(SCStr *param_1)
+SCStr * __stdcall FUN_10e796f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("sonance_detection.intro");
@@ -66032,7 +66032,7 @@ SCStr * FUN_10e796f0(SCStr *param_1)
 // Reference entry 10e7ad20; body size 21 bytes.
 #line 1 "ENTRY_10e7ad20"
 
-SCStr * FUN_10e7ad20(SCStr *param_1)
+SCStr * __stdcall FUN_10e7ad20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SonanceDetectionWizard");
@@ -66153,7 +66153,7 @@ void FUN_10e80e30(void)
 // Reference entry 10e80eb0; body size 21 bytes.
 #line 1 "ENTRY_10e80eb0"
 
-SCStr * FUN_10e80eb0(SCStr *param_1)
+SCStr * __stdcall FUN_10e80eb0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("change_email.complete");
@@ -66164,7 +66164,7 @@ SCStr * FUN_10e80eb0(SCStr *param_1)
 // Reference entry 10e80ed0; body size 21 bytes.
 #line 1 "ENTRY_10e80ed0"
 
-SCStr * FUN_10e80ed0(SCStr *param_1)
+SCStr * __stdcall FUN_10e80ed0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("change_email.init");
@@ -66175,7 +66175,7 @@ SCStr * FUN_10e80ed0(SCStr *param_1)
 // Reference entry 10e80ef0; body size 21 bytes.
 #line 1 "ENTRY_10e80ef0"
 
-SCStr * FUN_10e80ef0(SCStr *param_1)
+SCStr * __stdcall FUN_10e80ef0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("change_email.mainpage");
@@ -66186,7 +66186,7 @@ SCStr * FUN_10e80ef0(SCStr *param_1)
 // Reference entry 10e80f10; body size 21 bytes.
 #line 1 "ENTRY_10e80f10"
 
-SCStr * FUN_10e80f10(SCStr *param_1)
+SCStr * __stdcall FUN_10e80f10(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("change_email.transfer");
@@ -66197,7 +66197,7 @@ SCStr * FUN_10e80f10(SCStr *param_1)
 // Reference entry 10e80f30; body size 21 bytes.
 #line 1 "ENTRY_10e80f30"
 
-SCStr * FUN_10e80f30(SCStr *param_1)
+SCStr * __stdcall FUN_10e80f30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("change_email.verify");
@@ -66208,7 +66208,7 @@ SCStr * FUN_10e80f30(SCStr *param_1)
 // Reference entry 10e80f50; body size 35 bytes.
 #line 1 "ENTRY_10e80f50"
 
-SCStr * FUN_10e80f50(SCStr *param_1)
+SCStr * __stdcall FUN_10e80f50(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -66222,7 +66222,7 @@ SCStr * FUN_10e80f50(SCStr *param_1)
 // Reference entry 10e84d60; body size 21 bytes.
 #line 1 "ENTRY_10e84d60"
 
-SCStr * FUN_10e84d60(SCStr *param_1)
+SCStr * __stdcall FUN_10e84d60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_modern.display_bridge_removal");
@@ -66233,7 +66233,7 @@ SCStr * FUN_10e84d60(SCStr *param_1)
 // Reference entry 10e84d80; body size 21 bytes.
 #line 1 "ENTRY_10e84d80"
 
-SCStr * FUN_10e84d80(SCStr *param_1)
+SCStr * __stdcall FUN_10e84d80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_modern.complete");
@@ -66244,7 +66244,7 @@ SCStr * FUN_10e84d80(SCStr *param_1)
 // Reference entry 10e84da0; body size 21 bytes.
 #line 1 "ENTRY_10e84da0"
 
-SCStr * FUN_10e84da0(SCStr *param_1)
+SCStr * __stdcall FUN_10e84da0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_modern.ready_for_download");
@@ -66255,7 +66255,7 @@ SCStr * FUN_10e84da0(SCStr *param_1)
 // Reference entry 10e84dc0; body size 21 bytes.
 #line 1 "ENTRY_10e84dc0"
 
-SCStr * FUN_10e84dc0(SCStr *param_1)
+SCStr * __stdcall FUN_10e84dc0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_modern.remind_me_later");
@@ -66266,7 +66266,7 @@ SCStr * FUN_10e84dc0(SCStr *param_1)
 // Reference entry 10e84de0; body size 21 bytes.
 #line 1 "ENTRY_10e84de0"
 
-SCStr * FUN_10e84de0(SCStr *param_1)
+SCStr * __stdcall FUN_10e84de0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_modern.terms_of_use");
@@ -66277,7 +66277,7 @@ SCStr * FUN_10e84de0(SCStr *param_1)
 // Reference entry 10e84e00; body size 21 bytes.
 #line 1 "ENTRY_10e84e00"
 
-SCStr * FUN_10e84e00(SCStr *param_1)
+SCStr * __stdcall FUN_10e84e00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_modern.init");
@@ -66288,7 +66288,7 @@ SCStr * FUN_10e84e00(SCStr *param_1)
 // Reference entry 10e84e90; body size 35 bytes.
 #line 1 "ENTRY_10e84e90"
 
-SCStr * FUN_10e84e90(SCStr *param_1)
+SCStr * __stdcall FUN_10e84e90(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -66302,7 +66302,7 @@ SCStr * FUN_10e84e90(SCStr *param_1)
 // Reference entry 10e85f70; body size 21 bytes.
 #line 1 "ENTRY_10e85f70"
 
-SCStr * FUN_10e85f70(SCStr *param_1)
+SCStr * __stdcall FUN_10e85f70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCLifecycleModernWizard");
@@ -66395,7 +66395,7 @@ undefined4 * Recovered_10e86840::FUN_10e86840(undefined4 *param_2,SCStr *param_3
 // Reference entry 10e877c0; body size 21 bytes.
 #line 1 "ENTRY_10e877c0"
 
-SCStr * FUN_10e877c0(SCStr *param_1)
+SCStr * __stdcall FUN_10e877c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_mixedlegacy.complete");
@@ -66406,7 +66406,7 @@ SCStr * FUN_10e877c0(SCStr *param_1)
 // Reference entry 10e877e0; body size 21 bytes.
 #line 1 "ENTRY_10e877e0"
 
-SCStr * FUN_10e877e0(SCStr *param_1)
+SCStr * __stdcall FUN_10e877e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_mixedlegacy.incompat_players");
@@ -66417,7 +66417,7 @@ SCStr * FUN_10e877e0(SCStr *param_1)
 // Reference entry 10e87800; body size 21 bytes.
 #line 1 "ENTRY_10e87800"
 
-SCStr * FUN_10e87800(SCStr *param_1)
+SCStr * __stdcall FUN_10e87800(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_mixedlegacy.options");
@@ -66428,7 +66428,7 @@ SCStr * FUN_10e87800(SCStr *param_1)
 // Reference entry 10e87820; body size 21 bytes.
 #line 1 "ENTRY_10e87820"
 
-SCStr * FUN_10e87820(SCStr *param_1)
+SCStr * __stdcall FUN_10e87820(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_mixedlegacy.outro");
@@ -66439,7 +66439,7 @@ SCStr * FUN_10e87820(SCStr *param_1)
 // Reference entry 10e87840; body size 21 bytes.
 #line 1 "ENTRY_10e87840"
 
-SCStr * FUN_10e87840(SCStr *param_1)
+SCStr * __stdcall FUN_10e87840(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_mixedlegacy.remind_me_later");
@@ -66450,7 +66450,7 @@ SCStr * FUN_10e87840(SCStr *param_1)
 // Reference entry 10e87860; body size 21 bytes.
 #line 1 "ENTRY_10e87860"
 
-SCStr * FUN_10e87860(SCStr *param_1)
+SCStr * __stdcall FUN_10e87860(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_mixedlegacy.init");
@@ -66461,7 +66461,7 @@ SCStr * FUN_10e87860(SCStr *param_1)
 // Reference entry 10e87890; body size 35 bytes.
 #line 1 "ENTRY_10e87890"
 
-SCStr * FUN_10e87890(SCStr *param_1)
+SCStr * __stdcall FUN_10e87890(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -66475,7 +66475,7 @@ SCStr * FUN_10e87890(SCStr *param_1)
 // Reference entry 10e892a0; body size 21 bytes.
 #line 1 "ENTRY_10e892a0"
 
-SCStr * FUN_10e892a0(SCStr *param_1)
+SCStr * __stdcall FUN_10e892a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCLifecycleMixedLegacyWizard");
@@ -66486,7 +66486,7 @@ SCStr * FUN_10e892a0(SCStr *param_1)
 // Reference entry 10e89dd0; body size 21 bytes.
 #line 1 "ENTRY_10e89dd0"
 
-SCStr * FUN_10e89dd0(SCStr *param_1)
+SCStr * __stdcall FUN_10e89dd0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("CUSTOM_SUB_WIZARD_LIBRARY_SETUP");
@@ -66497,7 +66497,7 @@ SCStr * FUN_10e89dd0(SCStr *param_1)
 // Reference entry 10e89e20; body size 21 bytes.
 #line 1 "ENTRY_10e89e20"
 
-SCStr * FUN_10e89e20(SCStr *param_1)
+SCStr * __stdcall FUN_10e89e20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("legacy_music_library_setup.complete");
@@ -66508,7 +66508,7 @@ SCStr * FUN_10e89e20(SCStr *param_1)
 // Reference entry 10e89e40; body size 21 bytes.
 #line 1 "ENTRY_10e89e40"
 
-SCStr * FUN_10e89e40(SCStr *param_1)
+SCStr * __stdcall FUN_10e89e40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("legacy_music_library_setup.init");
@@ -66519,7 +66519,7 @@ SCStr * FUN_10e89e40(SCStr *param_1)
 // Reference entry 10e89e60; body size 21 bytes.
 #line 1 "ENTRY_10e89e60"
 
-SCStr * FUN_10e89e60(SCStr *param_1)
+SCStr * __stdcall FUN_10e89e60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("legacy_music_library_setup.subwiz");
@@ -66530,7 +66530,7 @@ SCStr * FUN_10e89e60(SCStr *param_1)
 // Reference entry 10e89e90; body size 35 bytes.
 #line 1 "ENTRY_10e89e90"
 
-SCStr * FUN_10e89e90(SCStr *param_1)
+SCStr * __stdcall FUN_10e89e90(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -66544,7 +66544,7 @@ SCStr * FUN_10e89e90(SCStr *param_1)
 // Reference entry 10e89ec0; body size 21 bytes.
 #line 1 "ENTRY_10e89ec0"
 
-SCStr * FUN_10e89ec0(SCStr *param_1)
+SCStr * __stdcall FUN_10e89ec0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCLegacyMusicLibrarySetupWizard");
@@ -66696,7 +66696,7 @@ void Recovered_10e9c4f0::FUN_10e9c4f0(int param_2,short param_3)
 // Reference entry 10e9d460; body size 21 bytes.
 #line 1 "ENTRY_10e9d460"
 
-SCStr * FUN_10e9d460(SCStr *param_1)
+SCStr * __stdcall FUN_10e9d460(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("MenuSelectSetting");
@@ -66707,7 +66707,7 @@ SCStr * FUN_10e9d460(SCStr *param_1)
 // Reference entry 10e9d480; body size 21 bytes.
 #line 1 "ENTRY_10e9d480"
 
-SCStr * FUN_10e9d480(SCStr *param_1)
+SCStr * __stdcall FUN_10e9d480(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("RenameLineIn");
@@ -66718,7 +66718,7 @@ SCStr * FUN_10e9d480(SCStr *param_1)
 // Reference entry 10e9d4a0; body size 21 bytes.
 #line 1 "ENTRY_10e9d4a0"
 
-SCStr * FUN_10e9d4a0(SCStr *param_1)
+SCStr * __stdcall FUN_10e9d4a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SliderSelectSetting");
@@ -66729,7 +66729,7 @@ SCStr * FUN_10e9d4a0(SCStr *param_1)
 // Reference entry 10e9d4c0; body size 21 bytes.
 #line 1 "ENTRY_10e9d4c0"
 
-SCStr * FUN_10e9d4c0(SCStr *param_1)
+SCStr * __stdcall FUN_10e9d4c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("ToggleBoolSetting");
@@ -66740,7 +66740,7 @@ SCStr * FUN_10e9d4c0(SCStr *param_1)
 // Reference entry 10e9d4e0; body size 21 bytes.
 #line 1 "ENTRY_10e9d4e0"
 
-SCStr * FUN_10e9d4e0(SCStr *param_1)
+SCStr * __stdcall FUN_10e9d4e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -66751,7 +66751,7 @@ SCStr * FUN_10e9d4e0(SCStr *param_1)
 // Reference entry 10e9d500; body size 21 bytes.
 #line 1 "ENTRY_10e9d500"
 
-SCStr * FUN_10e9d500(SCStr *param_1)
+SCStr * __stdcall FUN_10e9d500(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -66762,7 +66762,7 @@ SCStr * FUN_10e9d500(SCStr *param_1)
 // Reference entry 10e9d520; body size 21 bytes.
 #line 1 "ENTRY_10e9d520"
 
-SCStr * FUN_10e9d520(SCStr *param_1)
+SCStr * __stdcall FUN_10e9d520(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -66773,7 +66773,7 @@ SCStr * FUN_10e9d520(SCStr *param_1)
 // Reference entry 10e9d540; body size 21 bytes.
 #line 1 "ENTRY_10e9d540"
 
-SCStr * FUN_10e9d540(SCStr *param_1)
+SCStr * __stdcall FUN_10e9d540(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -66796,7 +66796,7 @@ SCStr * Recovered_10e9d720::FUN_10e9d720(SCStr *param_2)
 // Reference entry 10e9dab0; body size 21 bytes.
 #line 1 "ENTRY_10e9dab0"
 
-SCStr * FUN_10e9dab0(SCStr *param_1)
+SCStr * __stdcall FUN_10e9dab0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIIntegerSettingsProperty");
@@ -66807,7 +66807,7 @@ SCStr * FUN_10e9dab0(SCStr *param_1)
 // Reference entry 10e9dad0; body size 21 bytes.
 #line 1 "ENTRY_10e9dad0"
 
-SCStr * FUN_10e9dad0(SCStr *param_1)
+SCStr * __stdcall FUN_10e9dad0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIStringFromCustomSettingsProperty");
@@ -66818,7 +66818,7 @@ SCStr * FUN_10e9dad0(SCStr *param_1)
 // Reference entry 10e9daf0; body size 21 bytes.
 #line 1 "ENTRY_10e9daf0"
 
-SCStr * FUN_10e9daf0(SCStr *param_1)
+SCStr * __stdcall FUN_10e9daf0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIStringFromListSettingsProperty");
@@ -66829,7 +66829,7 @@ SCStr * FUN_10e9daf0(SCStr *param_1)
 // Reference entry 10e9db30; body size 21 bytes.
 #line 1 "ENTRY_10e9db30"
 
-SCStr * FUN_10e9db30(SCStr *param_1)
+SCStr * __stdcall FUN_10e9db30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -66840,7 +66840,7 @@ SCStr * FUN_10e9db30(SCStr *param_1)
 // Reference entry 10e9db50; body size 35 bytes.
 #line 1 "ENTRY_10e9db50"
 
-SCStr * FUN_10e9db50(SCStr *param_1)
+SCStr * __stdcall FUN_10e9db50(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -66854,7 +66854,7 @@ SCStr * FUN_10e9db50(SCStr *param_1)
 // Reference entry 10e9db80; body size 35 bytes.
 #line 1 "ENTRY_10e9db80"
 
-SCStr * FUN_10e9db80(SCStr *param_1)
+SCStr * __stdcall FUN_10e9db80(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -66868,7 +66868,7 @@ SCStr * FUN_10e9db80(SCStr *param_1)
 // Reference entry 10e9dbb0; body size 35 bytes.
 #line 1 "ENTRY_10e9dbb0"
 
-SCStr * FUN_10e9dbb0(SCStr *param_1)
+SCStr * __stdcall FUN_10e9dbb0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -66882,7 +66882,7 @@ SCStr * FUN_10e9dbb0(SCStr *param_1)
 // Reference entry 10e9dbe0; body size 35 bytes.
 #line 1 "ENTRY_10e9dbe0"
 
-SCStr * FUN_10e9dbe0(SCStr *param_1)
+SCStr * __stdcall FUN_10e9dbe0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -66896,7 +66896,7 @@ SCStr * FUN_10e9dbe0(SCStr *param_1)
 // Reference entry 10e9dc10; body size 35 bytes.
 #line 1 "ENTRY_10e9dc10"
 
-SCStr * FUN_10e9dc10(SCStr *param_1)
+SCStr * __stdcall FUN_10e9dc10(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -66910,7 +66910,7 @@ SCStr * FUN_10e9dc10(SCStr *param_1)
 // Reference entry 10e9dc40; body size 35 bytes.
 #line 1 "ENTRY_10e9dc40"
 
-SCStr * FUN_10e9dc40(SCStr *param_1)
+SCStr * __stdcall FUN_10e9dc40(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -66924,7 +66924,7 @@ SCStr * FUN_10e9dc40(SCStr *param_1)
 // Reference entry 10e9dc70; body size 35 bytes.
 #line 1 "ENTRY_10e9dc70"
 
-SCStr * FUN_10e9dc70(SCStr *param_1)
+SCStr * __stdcall FUN_10e9dc70(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -66938,7 +66938,7 @@ SCStr * FUN_10e9dc70(SCStr *param_1)
 // Reference entry 10e9dca0; body size 35 bytes.
 #line 1 "ENTRY_10e9dca0"
 
-SCStr * FUN_10e9dca0(SCStr *param_1)
+SCStr * __stdcall FUN_10e9dca0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -66952,7 +66952,7 @@ SCStr * FUN_10e9dca0(SCStr *param_1)
 // Reference entry 10e9dcd0; body size 35 bytes.
 #line 1 "ENTRY_10e9dcd0"
 
-SCStr * FUN_10e9dcd0(SCStr *param_1)
+SCStr * __stdcall FUN_10e9dcd0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -66966,7 +66966,7 @@ SCStr * FUN_10e9dcd0(SCStr *param_1)
 // Reference entry 10e9dd00; body size 35 bytes.
 #line 1 "ENTRY_10e9dd00"
 
-SCStr * FUN_10e9dd00(SCStr *param_1)
+SCStr * __stdcall FUN_10e9dd00(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -66980,7 +66980,7 @@ SCStr * FUN_10e9dd00(SCStr *param_1)
 // Reference entry 10e9dd30; body size 35 bytes.
 #line 1 "ENTRY_10e9dd30"
 
-SCStr * FUN_10e9dd30(SCStr *param_1)
+SCStr * __stdcall FUN_10e9dd30(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -66994,7 +66994,7 @@ SCStr * FUN_10e9dd30(SCStr *param_1)
 // Reference entry 10e9dd60; body size 35 bytes.
 #line 1 "ENTRY_10e9dd60"
 
-SCStr * FUN_10e9dd60(SCStr *param_1)
+SCStr * __stdcall FUN_10e9dd60(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -67008,7 +67008,7 @@ SCStr * FUN_10e9dd60(SCStr *param_1)
 // Reference entry 10e9dd90; body size 35 bytes.
 #line 1 "ENTRY_10e9dd90"
 
-SCStr * FUN_10e9dd90(SCStr *param_1)
+SCStr * __stdcall FUN_10e9dd90(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -67022,7 +67022,7 @@ SCStr * FUN_10e9dd90(SCStr *param_1)
 // Reference entry 10e9ddc0; body size 35 bytes.
 #line 1 "ENTRY_10e9ddc0"
 
-SCStr * FUN_10e9ddc0(SCStr *param_1)
+SCStr * __stdcall FUN_10e9ddc0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -67036,7 +67036,7 @@ SCStr * FUN_10e9ddc0(SCStr *param_1)
 // Reference entry 10e9ddf0; body size 35 bytes.
 #line 1 "ENTRY_10e9ddf0"
 
-SCStr * FUN_10e9ddf0(SCStr *param_1)
+SCStr * __stdcall FUN_10e9ddf0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -67122,7 +67122,7 @@ SCStr * Recovered_10e9dfb0::FUN_10e9dfb0(SCStr *param_2)
 // Reference entry 10e9dfd0; body size 21 bytes.
 #line 1 "ENTRY_10e9dfd0"
 
-SCStr * FUN_10e9dfd0(SCStr *param_1)
+SCStr * __stdcall FUN_10e9dfd0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -67133,7 +67133,7 @@ SCStr * FUN_10e9dfd0(SCStr *param_1)
 // Reference entry 10ea1810; body size 18 bytes.
 #line 1 "ENTRY_10ea1810"
 
-SCStr * FUN_10ea1810(SCStr *param_1)
+SCStr * __stdcall FUN_10ea1810(SCStr *param_1)
 
 {
   (param_1)->int_allocRep((char *)0x0);
@@ -67144,7 +67144,7 @@ SCStr * FUN_10ea1810(SCStr *param_1)
 // Reference entry 10ea1830; body size 18 bytes.
 #line 1 "ENTRY_10ea1830"
 
-SCStr * FUN_10ea1830(SCStr *param_1)
+SCStr * __stdcall FUN_10ea1830(SCStr *param_1)
 
 {
   (param_1)->int_allocRep((char *)0x0);
@@ -67155,7 +67155,7 @@ SCStr * FUN_10ea1830(SCStr *param_1)
 // Reference entry 10ea1850; body size 18 bytes.
 #line 1 "ENTRY_10ea1850"
 
-SCStr * FUN_10ea1850(SCStr *param_1)
+SCStr * __stdcall FUN_10ea1850(SCStr *param_1)
 
 {
   (param_1)->int_allocRep((char *)0x0);
@@ -68312,7 +68312,7 @@ void Recovered_10eadd90::FUN_10eadd90(SCStr *param_2)
 // Reference entry 10eb4180; body size 21 bytes.
 #line 1 "ENTRY_10eb4180"
 
-SCStr * FUN_10eb4180(SCStr *param_1)
+SCStr * __stdcall FUN_10eb4180(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("newwiz");
@@ -69084,7 +69084,7 @@ SCStr * Recovered_10ed0ef0::FUN_10ed0ef0(SCStr *param_2)
 // Reference entry 10ee0730; body size 21 bytes.
 #line 1 "ENTRY_10ee0730"
 
-SCStr * FUN_10ee0730(SCStr *param_1)
+SCStr * __stdcall FUN_10ee0730(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCOpCheckForUpdate");
@@ -69095,7 +69095,7 @@ SCStr * FUN_10ee0730(SCStr *param_1)
 // Reference entry 10ee0750; body size 21 bytes.
 #line 1 "ENTRY_10ee0750"
 
-SCStr * FUN_10ee0750(SCStr *param_1)
+SCStr * __stdcall FUN_10ee0750(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("setup_ops");
@@ -69106,7 +69106,7 @@ SCStr * FUN_10ee0750(SCStr *param_1)
 // Reference entry 10ee07a0; body size 21 bytes.
 #line 1 "ENTRY_10ee07a0"
 
-SCStr * FUN_10ee07a0(SCStr *param_1)
+SCStr * __stdcall FUN_10ee07a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -69140,7 +69140,7 @@ undefined4 * Recovered_10ee0c10::FUN_10ee0c10(undefined4 *param_2,SCStr *param_3
 // Reference entry 10ee1590; body size 21 bytes.
 #line 1 "ENTRY_10ee1590"
 
-SCStr * FUN_10ee1590(SCStr *param_1)
+SCStr * __stdcall FUN_10ee1590(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -69174,7 +69174,7 @@ undefined4 * Recovered_10ee1790::FUN_10ee1790(undefined4 *param_2,SCStr *param_3
 // Reference entry 10ee43d0; body size 21 bytes.
 #line 1 "ENTRY_10ee43d0"
 
-SCStr * FUN_10ee43d0(SCStr *param_1)
+SCStr * __stdcall FUN_10ee43d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("Netstart2Manager");
@@ -69185,7 +69185,7 @@ SCStr * FUN_10ee43d0(SCStr *param_1)
 // Reference entry 10ee43f0; body size 21 bytes.
 #line 1 "ENTRY_10ee43f0"
 
-SCStr * FUN_10ee43f0(SCStr *param_1)
+SCStr * __stdcall FUN_10ee43f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("ns2");
@@ -69219,7 +69219,7 @@ undefined4 * Recovered_10ee8760::FUN_10ee8760(undefined4 *param_2,SCStr *param_3
 // Reference entry 10eeceb0; body size 21 bytes.
 #line 1 "ENTRY_10eeceb0"
 
-SCStr * FUN_10eeceb0(SCStr *param_1)
+SCStr * __stdcall FUN_10eeceb0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCOpVerifyProduct");
@@ -69230,7 +69230,7 @@ SCStr * FUN_10eeceb0(SCStr *param_1)
 // Reference entry 10eeced0; body size 21 bytes.
 #line 1 "ENTRY_10eeced0"
 
-SCStr * FUN_10eeced0(SCStr *param_1)
+SCStr * __stdcall FUN_10eeced0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("setup_ops");
@@ -69241,7 +69241,7 @@ SCStr * FUN_10eeced0(SCStr *param_1)
 // Reference entry 10eecf80; body size 21 bytes.
 #line 1 "ENTRY_10eecf80"
 
-SCStr * FUN_10eecf80(SCStr *param_1)
+SCStr * __stdcall FUN_10eecf80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -69424,7 +69424,7 @@ undefined4 FUN_10eee200(SCStr *param_1)
 // Reference entry 10eee810; body size 21 bytes.
 #line 1 "ENTRY_10eee810"
 
-SCStr * FUN_10eee810(SCStr *param_1)
+SCStr * __stdcall FUN_10eee810(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("wizard/helpsheets/v2.1");
@@ -69576,7 +69576,7 @@ undefined4 FUN_10eefe10(SCStr *param_1)
 // Reference entry 10ef05f0; body size 21 bytes.
 #line 1 "ENTRY_10ef05f0"
 
-SCStr * FUN_10ef05f0(SCStr *param_1)
+SCStr * __stdcall FUN_10ef05f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("wizard/update/v4.1");
@@ -69622,7 +69622,7 @@ SCStr * Recovered_10ef2210::FUN_10ef2210(SCStr *param_2)
 // Reference entry 10ef22f0; body size 21 bytes.
 #line 1 "ENTRY_10ef22f0"
 
-SCStr * FUN_10ef22f0(SCStr *param_1)
+SCStr * __stdcall FUN_10ef22f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -69681,7 +69681,7 @@ void Recovered_10ef2be0::FUN_10ef2be0(SCStr *param_2,SCStr *param_3)
 // Reference entry 10ef30f0; body size 21 bytes.
 #line 1 "ENTRY_10ef30f0"
 
-SCStr * FUN_10ef30f0(SCStr *param_1)
+SCStr * __stdcall FUN_10ef30f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCShare");
@@ -69887,7 +69887,7 @@ undefined4 * Recovered_10f04d30::FUN_10f04d30(undefined4 *param_2,SCStr *param_3
 // Reference entry 10f084a0; body size 21 bytes.
 #line 1 "ENTRY_10f084a0"
 
-SCStr * FUN_10f084a0(SCStr *param_1)
+SCStr * __stdcall FUN_10f084a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -69898,7 +69898,7 @@ SCStr * FUN_10f084a0(SCStr *param_1)
 // Reference entry 10f08a80; body size 18 bytes.
 #line 1 "ENTRY_10f08a80"
 
-SCStr * FUN_10f08a80(SCStr *param_1)
+SCStr * __stdcall FUN_10f08a80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep((char *)0x0);
@@ -69909,7 +69909,7 @@ SCStr * FUN_10f08a80(SCStr *param_1)
 // Reference entry 10f08aa0; body size 18 bytes.
 #line 1 "ENTRY_10f08aa0"
 
-SCStr * FUN_10f08aa0(SCStr *param_1)
+SCStr * __stdcall FUN_10f08aa0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep((char *)0x0);
@@ -69920,7 +69920,7 @@ SCStr * FUN_10f08aa0(SCStr *param_1)
 // Reference entry 10f091a0; body size 18 bytes.
 #line 1 "ENTRY_10f091a0"
 
-SCStr * FUN_10f091a0(SCStr *param_1)
+SCStr * __stdcall FUN_10f091a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep((char *)0x0);
@@ -69931,7 +69931,7 @@ SCStr * FUN_10f091a0(SCStr *param_1)
 // Reference entry 10f0c7b0; body size 21 bytes.
 #line 1 "ENTRY_10f0c7b0"
 
-SCStr * FUN_10f0c7b0(SCStr *param_1)
+SCStr * __stdcall FUN_10f0c7b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -69942,7 +69942,7 @@ SCStr * FUN_10f0c7b0(SCStr *param_1)
 // Reference entry 10f11b70; body size 21 bytes.
 #line 1 "ENTRY_10f11b70"
 
-SCStr * FUN_10f11b70(SCStr *param_1)
+SCStr * __stdcall FUN_10f11b70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -69993,7 +69993,7 @@ SCStr * Recovered_10f11bf0::FUN_10f11bf0(SCStr *param_2)
 // Reference entry 10f11c10; body size 21 bytes.
 #line 1 "ENTRY_10f11c10"
 
-SCStr * FUN_10f11c10(SCStr *param_1)
+SCStr * __stdcall FUN_10f11c10(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -70016,7 +70016,7 @@ SCStr * Recovered_10f11c30::FUN_10f11c30(SCStr *param_2)
 // Reference entry 10f11f40; body size 21 bytes.
 #line 1 "ENTRY_10f11f40"
 
-SCStr * FUN_10f11f40(SCStr *param_1)
+SCStr * __stdcall FUN_10f11f40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -70027,7 +70027,7 @@ SCStr * FUN_10f11f40(SCStr *param_1)
 // Reference entry 10f11f60; body size 21 bytes.
 #line 1 "ENTRY_10f11f60"
 
-SCStr * FUN_10f11f60(SCStr *param_1)
+SCStr * __stdcall FUN_10f11f60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -70038,7 +70038,7 @@ SCStr * FUN_10f11f60(SCStr *param_1)
 // Reference entry 10f11f80; body size 21 bytes.
 #line 1 "ENTRY_10f11f80"
 
-SCStr * FUN_10f11f80(SCStr *param_1)
+SCStr * __stdcall FUN_10f11f80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -70089,7 +70089,7 @@ SCStr * Recovered_10f11ff0::FUN_10f11ff0(SCStr *param_2)
 // Reference entry 10f12010; body size 21 bytes.
 #line 1 "ENTRY_10f12010"
 
-SCStr * FUN_10f12010(SCStr *param_1)
+SCStr * __stdcall FUN_10f12010(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -70627,7 +70627,7 @@ undefined4 FUN_10f1f8a0(SCStr *param_1)
 // Reference entry 10f20790; body size 21 bytes.
 #line 1 "ENTRY_10f20790"
 
-SCStr * FUN_10f20790(SCStr *param_1)
+SCStr * __stdcall FUN_10f20790(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("wizard/voiceservices/v2");
@@ -70638,7 +70638,7 @@ SCStr * FUN_10f20790(SCStr *param_1)
 // Reference entry 10f207b0; body size 21 bytes.
 #line 1 "ENTRY_10f207b0"
 
-SCStr * FUN_10f207b0(SCStr *param_1)
+SCStr * __stdcall FUN_10f207b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("voice_services_assets");
@@ -70670,7 +70670,7 @@ undefined4 FUN_10f209a0(SCStr *param_1)
 // Reference entry 10f21f60; body size 21 bytes.
 #line 1 "ENTRY_10f21f60"
 
-SCStr * FUN_10f21f60(SCStr *param_1)
+SCStr * __stdcall FUN_10f21f60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCOpSendSetupMessage");
@@ -70681,7 +70681,7 @@ SCStr * FUN_10f21f60(SCStr *param_1)
 // Reference entry 10f21f80; body size 21 bytes.
 #line 1 "ENTRY_10f21f80"
 
-SCStr * FUN_10f21f80(SCStr *param_1)
+SCStr * __stdcall FUN_10f21f80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("setup_ops");
@@ -70692,7 +70692,7 @@ SCStr * FUN_10f21f80(SCStr *param_1)
 // Reference entry 10f21fc0; body size 21 bytes.
 #line 1 "ENTRY_10f21fc0"
 
-SCStr * FUN_10f21fc0(SCStr *param_1)
+SCStr * __stdcall FUN_10f21fc0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -70786,7 +70786,7 @@ SCStr * Recovered_10f2a930::FUN_10f2a930(SCStr *param_2)
 // Reference entry 10f2a950; body size 21 bytes.
 #line 1 "ENTRY_10f2a950"
 
-SCStr * FUN_10f2a950(SCStr *param_1)
+SCStr * __stdcall FUN_10f2a950(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -70958,7 +70958,7 @@ undefined1 * __fastcall FUN_10f33e00(SCStr *param_1)
 // Reference entry 10f34070; body size 21 bytes.
 #line 1 "ENTRY_10f34070"
 
-SCStr * FUN_10f34070(SCStr *param_1)
+SCStr * __stdcall FUN_10f34070(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -70969,7 +70969,7 @@ SCStr * FUN_10f34070(SCStr *param_1)
 // Reference entry 10f34090; body size 21 bytes.
 #line 1 "ENTRY_10f34090"
 
-SCStr * FUN_10f34090(SCStr *param_1)
+SCStr * __stdcall FUN_10f34090(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -70980,7 +70980,7 @@ SCStr * FUN_10f34090(SCStr *param_1)
 // Reference entry 10f340b0; body size 21 bytes.
 #line 1 "ENTRY_10f340b0"
 
-SCStr * FUN_10f340b0(SCStr *param_1)
+SCStr * __stdcall FUN_10f340b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -70991,7 +70991,7 @@ SCStr * FUN_10f340b0(SCStr *param_1)
 // Reference entry 10f340d0; body size 21 bytes.
 #line 1 "ENTRY_10f340d0"
 
-SCStr * FUN_10f340d0(SCStr *param_1)
+SCStr * __stdcall FUN_10f340d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -71454,7 +71454,7 @@ SCStr * Recovered_10f3a0c0::FUN_10f3a0c0(SCStr *param_2)
 // Reference entry 10f3bae0; body size 21 bytes.
 #line 1 "ENTRY_10f3bae0"
 
-SCStr * FUN_10f3bae0(SCStr *param_1)
+SCStr * __stdcall FUN_10f3bae0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("wizard/onboarding/v3");
@@ -71465,7 +71465,7 @@ SCStr * FUN_10f3bae0(SCStr *param_1)
 // Reference entry 10f3bb00; body size 21 bytes.
 #line 1 "ENTRY_10f3bb00"
 
-SCStr * FUN_10f3bb00(SCStr *param_1)
+SCStr * __stdcall FUN_10f3bb00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("onboarding_assets");
@@ -71497,7 +71497,7 @@ undefined4 FUN_10f3bdb0(SCStr *param_1)
 // Reference entry 10f3d950; body size 21 bytes.
 #line 1 "ENTRY_10f3d950"
 
-SCStr * FUN_10f3d950(SCStr *param_1)
+SCStr * __stdcall FUN_10f3d950(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCOpJoinHousehold");
@@ -71508,7 +71508,7 @@ SCStr * FUN_10f3d950(SCStr *param_1)
 // Reference entry 10f3d970; body size 21 bytes.
 #line 1 "ENTRY_10f3d970"
 
-SCStr * FUN_10f3d970(SCStr *param_1)
+SCStr * __stdcall FUN_10f3d970(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCOpLegacyApConnectJoinNetwork");
@@ -71519,7 +71519,7 @@ SCStr * FUN_10f3d970(SCStr *param_1)
 // Reference entry 10f3d990; body size 21 bytes.
 #line 1 "ENTRY_10f3d990"
 
-SCStr * FUN_10f3d990(SCStr *param_1)
+SCStr * __stdcall FUN_10f3d990(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("setup_ops");
@@ -71530,7 +71530,7 @@ SCStr * FUN_10f3d990(SCStr *param_1)
 // Reference entry 10f3d9b0; body size 21 bytes.
 #line 1 "ENTRY_10f3d9b0"
 
-SCStr * FUN_10f3d9b0(SCStr *param_1)
+SCStr * __stdcall FUN_10f3d9b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("setup_ops");
@@ -71541,7 +71541,7 @@ SCStr * FUN_10f3d9b0(SCStr *param_1)
 // Reference entry 10f3da10; body size 21 bytes.
 #line 1 "ENTRY_10f3da10"
 
-SCStr * FUN_10f3da10(SCStr *param_1)
+SCStr * __stdcall FUN_10f3da10(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -71552,7 +71552,7 @@ SCStr * FUN_10f3da10(SCStr *param_1)
 // Reference entry 10f3da30; body size 21 bytes.
 #line 1 "ENTRY_10f3da30"
 
-SCStr * FUN_10f3da30(SCStr *param_1)
+SCStr * __stdcall FUN_10f3da30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -71651,7 +71651,7 @@ undefined4 * Recovered_10f42e50::FUN_10f42e50(undefined4 *param_2,SCStr *param_3
 // Reference entry 10f459b0; body size 21 bytes.
 #line 1 "ENTRY_10f459b0"
 
-SCStr * FUN_10f459b0(SCStr *param_1)
+SCStr * __stdcall FUN_10f459b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCPlayQueueDataSource");
@@ -71674,7 +71674,7 @@ SCStr * Recovered_10f45f80::FUN_10f45f80(SCStr *param_2)
 // Reference entry 10f45fa0; body size 35 bytes.
 #line 1 "ENTRY_10f45fa0"
 
-SCStr * FUN_10f45fa0(SCStr *param_1)
+SCStr * __stdcall FUN_10f45fa0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -71688,7 +71688,7 @@ SCStr * FUN_10f45fa0(SCStr *param_1)
 // Reference entry 10f46df0; body size 17 bytes.
 #line 1 "ENTRY_10f46df0"
 
-void FUN_10f46df0(SCStr *param_1)
+void __stdcall FUN_10f46df0(SCStr *param_1)
 
 {
   (param_1)->operator==("SCINowPlaying:onMusicChanged");
@@ -71930,7 +71930,7 @@ void Recovered_10f4d160::FUN_10f4d160(SCStr *param_2)
 // Reference entry 10f4fa50; body size 33 bytes.
 #line 1 "ENTRY_10f4fa50"
 
-void FUN_10f4fa50(undefined4 param_1,SCStr *param_2)
+void __stdcall FUN_10f4fa50(undefined4 param_1,SCStr *param_2)
 
 {
   bool bVar1;
@@ -72053,7 +72053,7 @@ SCStr * Recovered_10f531e0::FUN_10f531e0(SCStr *param_2)
 // Reference entry 10f614e0; body size 21 bytes.
 #line 1 "ENTRY_10f614e0"
 
-SCStr * FUN_10f614e0(SCStr *param_1)
+SCStr * __stdcall FUN_10f614e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -72064,7 +72064,7 @@ SCStr * FUN_10f614e0(SCStr *param_1)
 // Reference entry 10f61500; body size 21 bytes.
 #line 1 "ENTRY_10f61500"
 
-SCStr * FUN_10f61500(SCStr *param_1)
+SCStr * __stdcall FUN_10f61500(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -72075,7 +72075,7 @@ SCStr * FUN_10f61500(SCStr *param_1)
 // Reference entry 10f61520; body size 21 bytes.
 #line 1 "ENTRY_10f61520"
 
-SCStr * FUN_10f61520(SCStr *param_1)
+SCStr * __stdcall FUN_10f61520(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -72086,7 +72086,7 @@ SCStr * FUN_10f61520(SCStr *param_1)
 // Reference entry 10f61540; body size 21 bytes.
 #line 1 "ENTRY_10f61540"
 
-SCStr * FUN_10f61540(SCStr *param_1)
+SCStr * __stdcall FUN_10f61540(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -72425,7 +72425,7 @@ void Recovered_10f63e00::FUN_10f63e00(SCStr *param_2,undefined1 param_3)
 // Reference entry 10f675c0; body size 21 bytes.
 #line 1 "ENTRY_10f675c0"
 
-SCStr * FUN_10f675c0(SCStr *param_1)
+SCStr * __stdcall FUN_10f675c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -72573,7 +72573,7 @@ void Recovered_10f6ee70::FUN_10f6ee70(SCStr *param_2)
 // Reference entry 10f72640; body size 21 bytes.
 #line 1 "ENTRY_10f72640"
 
-SCStr * FUN_10f72640(SCStr *param_1)
+SCStr * __stdcall FUN_10f72640(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -72687,7 +72687,7 @@ void __fastcall FUN_10f782e0(int param_1)
 
 
 
-SCStr * FUN_10f78f70(SCStr *param_1)
+SCStr * __stdcall FUN_10f78f70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAlarm");
@@ -72763,7 +72763,7 @@ SCStr * Recovered_10f79860::FUN_10f79860(SCStr *param_2)
 // Reference entry 10f79a90; body size 21 bytes.
 #line 1 "ENTRY_10f79a90"
 
-SCStr * FUN_10f79a90(SCStr *param_1)
+SCStr * __stdcall FUN_10f79a90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -72883,7 +72883,7 @@ undefined1 * __fastcall FUN_10f7f7c0(SCStr *param_1)
 // Reference entry 10f7fa20; body size 21 bytes.
 #line 1 "ENTRY_10f7fa20"
 
-SCStr * FUN_10f7fa20(SCStr *param_1)
+SCStr * __stdcall FUN_10f7fa20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -72894,7 +72894,7 @@ SCStr * FUN_10f7fa20(SCStr *param_1)
 // Reference entry 10f7fa40; body size 21 bytes.
 #line 1 "ENTRY_10f7fa40"
 
-SCStr * FUN_10f7fa40(SCStr *param_1)
+SCStr * __stdcall FUN_10f7fa40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -73015,7 +73015,7 @@ void Recovered_10f80e30::FUN_10f80e30(SCStr *param_2,SCStr *param_3)
 // Reference entry 10f8cfa0; body size 21 bytes.
 #line 1 "ENTRY_10f8cfa0"
 
-SCStr * FUN_10f8cfa0(SCStr *param_1)
+SCStr * __stdcall FUN_10f8cfa0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -73026,7 +73026,7 @@ SCStr * FUN_10f8cfa0(SCStr *param_1)
 // Reference entry 10f8cfc0; body size 21 bytes.
 #line 1 "ENTRY_10f8cfc0"
 
-SCStr * FUN_10f8cfc0(SCStr *param_1)
+SCStr * __stdcall FUN_10f8cfc0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -73037,7 +73037,7 @@ SCStr * FUN_10f8cfc0(SCStr *param_1)
 // Reference entry 10f8cfe0; body size 21 bytes.
 #line 1 "ENTRY_10f8cfe0"
 
-SCStr * FUN_10f8cfe0(SCStr *param_1)
+SCStr * __stdcall FUN_10f8cfe0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -73249,7 +73249,7 @@ undefined4 Recovered_10f8ed80::FUN_10f8ed80(char *param_2,uint param_3)
 // Reference entry 10f8ff60; body size 21 bytes.
 #line 1 "ENTRY_10f8ff60"
 
-SCStr * FUN_10f8ff60(SCStr *param_1)
+SCStr * __stdcall FUN_10f8ff60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_USAGE_DATA_COMPLETE");
@@ -73260,7 +73260,7 @@ SCStr * FUN_10f8ff60(SCStr *param_1)
 // Reference entry 10f8ff80; body size 21 bytes.
 #line 1 "ENTRY_10f8ff80"
 
-SCStr * FUN_10f8ff80(SCStr *param_1)
+SCStr * __stdcall FUN_10f8ff80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_USAGE_DATA_INIT");
@@ -73271,7 +73271,7 @@ SCStr * FUN_10f8ff80(SCStr *param_1)
 // Reference entry 10f8ffa0; body size 21 bytes.
 #line 1 "ENTRY_10f8ffa0"
 
-SCStr * FUN_10f8ffa0(SCStr *param_1)
+SCStr * __stdcall FUN_10f8ffa0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_USAGE_DATA_OPT_IN");
@@ -73282,7 +73282,7 @@ SCStr * FUN_10f8ffa0(SCStr *param_1)
 // Reference entry 10f8ffc0; body size 21 bytes.
 #line 1 "ENTRY_10f8ffc0"
 
-SCStr * FUN_10f8ffc0(SCStr *param_1)
+SCStr * __stdcall FUN_10f8ffc0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_USAGE_DATA_POST_COMPLETE");
@@ -73293,7 +73293,7 @@ SCStr * FUN_10f8ffc0(SCStr *param_1)
 // Reference entry 10f8ffe0; body size 21 bytes.
 #line 1 "ENTRY_10f8ffe0"
 
-SCStr * FUN_10f8ffe0(SCStr *param_1)
+SCStr * __stdcall FUN_10f8ffe0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_USAGE_DATA_POST_COMPLETE");
@@ -73304,7 +73304,7 @@ SCStr * FUN_10f8ffe0(SCStr *param_1)
 // Reference entry 10f90000; body size 21 bytes.
 #line 1 "ENTRY_10f90000"
 
-SCStr * FUN_10f90000(SCStr *param_1)
+SCStr * __stdcall FUN_10f90000(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_USAGE_DATA_START");
@@ -73315,7 +73315,7 @@ SCStr * FUN_10f90000(SCStr *param_1)
 // Reference entry 10f90060; body size 35 bytes.
 #line 1 "ENTRY_10f90060"
 
-SCStr * FUN_10f90060(SCStr *param_1)
+SCStr * __stdcall FUN_10f90060(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -73329,7 +73329,7 @@ SCStr * FUN_10f90060(SCStr *param_1)
 // Reference entry 10f90800; body size 21 bytes.
 #line 1 "ENTRY_10f90800"
 
-SCStr * FUN_10f90800(SCStr *param_1)
+SCStr * __stdcall FUN_10f90800(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("UsageDataWizard");
@@ -73340,7 +73340,7 @@ SCStr * FUN_10f90800(SCStr *param_1)
 // Reference entry 10f93710; body size 21 bytes.
 #line 1 "ENTRY_10f93710"
 
-SCStr * FUN_10f93710(SCStr *param_1)
+SCStr * __stdcall FUN_10f93710(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SelfTrueplayEnabled");
@@ -73351,7 +73351,7 @@ SCStr * FUN_10f93710(SCStr *param_1)
 // Reference entry 10f93730; body size 21 bytes.
 #line 1 "ENTRY_10f93730"
 
-SCStr * FUN_10f93730(SCStr *param_1)
+SCStr * __stdcall FUN_10f93730(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SelfTrueplayIntro");
@@ -73362,7 +73362,7 @@ SCStr * FUN_10f93730(SCStr *param_1)
 // Reference entry 10f93750; body size 21 bytes.
 #line 1 "ENTRY_10f93750"
 
-SCStr * FUN_10f93750(SCStr *param_1)
+SCStr * __stdcall FUN_10f93750(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SelfTrueplaySkipped");
@@ -73373,7 +73373,7 @@ SCStr * FUN_10f93750(SCStr *param_1)
 // Reference entry 10f93770; body size 21 bytes.
 #line 1 "ENTRY_10f93770"
 
-SCStr * FUN_10f93770(SCStr *param_1)
+SCStr * __stdcall FUN_10f93770(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("TrueplayEnd");
@@ -73384,7 +73384,7 @@ SCStr * FUN_10f93770(SCStr *param_1)
 // Reference entry 10f93790; body size 21 bytes.
 #line 1 "ENTRY_10f93790"
 
-SCStr * FUN_10f93790(SCStr *param_1)
+SCStr * __stdcall FUN_10f93790(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("TrueplayInit");
@@ -73395,7 +73395,7 @@ SCStr * FUN_10f93790(SCStr *param_1)
 // Reference entry 10f937b0; body size 21 bytes.
 #line 1 "ENTRY_10f937b0"
 
-SCStr * FUN_10f937b0(SCStr *param_1)
+SCStr * __stdcall FUN_10f937b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("TrueplayIntro");
@@ -73406,7 +73406,7 @@ SCStr * FUN_10f937b0(SCStr *param_1)
 // Reference entry 10f937e0; body size 21 bytes.
 #line 1 "ENTRY_10f937e0"
 
-SCStr * FUN_10f937e0(SCStr *param_1)
+SCStr * __stdcall FUN_10f937e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("Sonar Title");
@@ -73417,7 +73417,7 @@ SCStr * FUN_10f937e0(SCStr *param_1)
 // Reference entry 10f95960; body size 21 bytes.
 #line 1 "ENTRY_10f95960"
 
-SCStr * FUN_10f95960(SCStr *param_1)
+SCStr * __stdcall FUN_10f95960(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SonarWizard");
@@ -73428,7 +73428,7 @@ SCStr * FUN_10f95960(SCStr *param_1)
 // Reference entry 10f97bb0; body size 21 bytes.
 #line 1 "ENTRY_10f97bb0"
 
-SCStr * FUN_10f97bb0(SCStr *param_1)
+SCStr * __stdcall FUN_10f97bb0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SUBMITDIAGS_COMPLETE");
@@ -73439,7 +73439,7 @@ SCStr * FUN_10f97bb0(SCStr *param_1)
 // Reference entry 10f97bd0; body size 21 bytes.
 #line 1 "ENTRY_10f97bd0"
 
-SCStr * FUN_10f97bd0(SCStr *param_1)
+SCStr * __stdcall FUN_10f97bd0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SUBMITDIAGS_DONE");
@@ -73450,7 +73450,7 @@ SCStr * FUN_10f97bd0(SCStr *param_1)
 // Reference entry 10f97bf0; body size 21 bytes.
 #line 1 "ENTRY_10f97bf0"
 
-SCStr * FUN_10f97bf0(SCStr *param_1)
+SCStr * __stdcall FUN_10f97bf0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SUBMITDIAGS_ERROR");
@@ -73461,7 +73461,7 @@ SCStr * FUN_10f97bf0(SCStr *param_1)
 // Reference entry 10f97c10; body size 21 bytes.
 #line 1 "ENTRY_10f97c10"
 
-SCStr * FUN_10f97c10(SCStr *param_1)
+SCStr * __stdcall FUN_10f97c10(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SUBMITDIAGS_INIT");
@@ -73472,7 +73472,7 @@ SCStr * FUN_10f97c10(SCStr *param_1)
 // Reference entry 10f97c30; body size 21 bytes.
 #line 1 "ENTRY_10f97c30"
 
-SCStr * FUN_10f97c30(SCStr *param_1)
+SCStr * __stdcall FUN_10f97c30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SUBMITDIAGS_INTRO");
@@ -73483,7 +73483,7 @@ SCStr * FUN_10f97c30(SCStr *param_1)
 // Reference entry 10f97c50; body size 21 bytes.
 #line 1 "ENTRY_10f97c50"
 
-SCStr * FUN_10f97c50(SCStr *param_1)
+SCStr * __stdcall FUN_10f97c50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("STATE_SUBMITDIAGS_SUBMITTING");
@@ -73494,7 +73494,7 @@ SCStr * FUN_10f97c50(SCStr *param_1)
 // Reference entry 10f97c80; body size 35 bytes.
 #line 1 "ENTRY_10f97c80"
 
-SCStr * FUN_10f97c80(SCStr *param_1)
+SCStr * __stdcall FUN_10f97c80(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -73508,7 +73508,7 @@ SCStr * FUN_10f97c80(SCStr *param_1)
 // Reference entry 10f98e70; body size 21 bytes.
 #line 1 "ENTRY_10f98e70"
 
-SCStr * FUN_10f98e70(SCStr *param_1)
+SCStr * __stdcall FUN_10f98e70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SubmitDiagsWizard");
@@ -73519,7 +73519,7 @@ SCStr * FUN_10f98e70(SCStr *param_1)
 // Reference entry 10fa0290; body size 21 bytes.
 #line 1 "ENTRY_10fa0290"
 
-SCStr * FUN_10fa0290(SCStr *param_1)
+SCStr * __stdcall FUN_10fa0290(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("bridge_removal.complete");
@@ -73530,7 +73530,7 @@ SCStr * FUN_10fa0290(SCStr *param_1)
 // Reference entry 10fa02b0; body size 21 bytes.
 #line 1 "ENTRY_10fa02b0"
 
-SCStr * FUN_10fa02b0(SCStr *param_1)
+SCStr * __stdcall FUN_10fa02b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("bridge_removal.do_not_remove");
@@ -73541,7 +73541,7 @@ SCStr * FUN_10fa02b0(SCStr *param_1)
 // Reference entry 10fa02d0; body size 21 bytes.
 #line 1 "ENTRY_10fa02d0"
 
-SCStr * FUN_10fa02d0(SCStr *param_1)
+SCStr * __stdcall FUN_10fa02d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("bridge_removal.factory_reset");
@@ -73552,7 +73552,7 @@ SCStr * FUN_10fa02d0(SCStr *param_1)
 // Reference entry 10fa02f0; body size 21 bytes.
 #line 1 "ENTRY_10fa02f0"
 
-SCStr * FUN_10fa02f0(SCStr *param_1)
+SCStr * __stdcall FUN_10fa02f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("bridge_removal.init");
@@ -73563,7 +73563,7 @@ SCStr * FUN_10fa02f0(SCStr *param_1)
 // Reference entry 10fa0310; body size 21 bytes.
 #line 1 "ENTRY_10fa0310"
 
-SCStr * FUN_10fa0310(SCStr *param_1)
+SCStr * __stdcall FUN_10fa0310(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("bridge_removal.intro");
@@ -73574,7 +73574,7 @@ SCStr * FUN_10fa0310(SCStr *param_1)
 // Reference entry 10fa0330; body size 21 bytes.
 #line 1 "ENTRY_10fa0330"
 
-SCStr * FUN_10fa0330(SCStr *param_1)
+SCStr * __stdcall FUN_10fa0330(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("bridge_removal.network_test_intro");
@@ -73585,7 +73585,7 @@ SCStr * FUN_10fa0330(SCStr *param_1)
 // Reference entry 10fa0350; body size 21 bytes.
 #line 1 "ENTRY_10fa0350"
 
-SCStr * FUN_10fa0350(SCStr *param_1)
+SCStr * __stdcall FUN_10fa0350(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("bridge_removal.reset_complete");
@@ -73596,7 +73596,7 @@ SCStr * FUN_10fa0350(SCStr *param_1)
 // Reference entry 10fa0370; body size 21 bytes.
 #line 1 "ENTRY_10fa0370"
 
-SCStr * FUN_10fa0370(SCStr *param_1)
+SCStr * __stdcall FUN_10fa0370(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("bridge_removal.reset_failed");
@@ -73607,7 +73607,7 @@ SCStr * FUN_10fa0370(SCStr *param_1)
 // Reference entry 10fa0390; body size 21 bytes.
 #line 1 "ENTRY_10fa0390"
 
-SCStr * FUN_10fa0390(SCStr *param_1)
+SCStr * __stdcall FUN_10fa0390(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("bridge_removal.network_test_fail");
@@ -73618,7 +73618,7 @@ SCStr * FUN_10fa0390(SCStr *param_1)
 // Reference entry 10fa03b0; body size 21 bytes.
 #line 1 "ENTRY_10fa03b0"
 
-SCStr * FUN_10fa03b0(SCStr *param_1)
+SCStr * __stdcall FUN_10fa03b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("bridge_removal.network_test_pass");
@@ -73629,7 +73629,7 @@ SCStr * FUN_10fa03b0(SCStr *param_1)
 // Reference entry 10fa03d0; body size 21 bytes.
 #line 1 "ENTRY_10fa03d0"
 
-SCStr * FUN_10fa03d0(SCStr *param_1)
+SCStr * __stdcall FUN_10fa03d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("bridge_removal.display_network_test");
@@ -73640,7 +73640,7 @@ SCStr * FUN_10fa03d0(SCStr *param_1)
 // Reference entry 10fa0470; body size 35 bytes.
 #line 1 "ENTRY_10fa0470"
 
-SCStr * FUN_10fa0470(SCStr *param_1)
+SCStr * __stdcall FUN_10fa0470(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -73654,7 +73654,7 @@ SCStr * FUN_10fa0470(SCStr *param_1)
 // Reference entry 10fa2e20; body size 21 bytes.
 #line 1 "ENTRY_10fa2e20"
 
-SCStr * FUN_10fa2e20(SCStr *param_1)
+SCStr * __stdcall FUN_10fa2e20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCBridgeRemovalWizard");
@@ -73747,7 +73747,7 @@ undefined4 * Recovered_10fa36e0::FUN_10fa36e0(undefined4 *param_2,SCStr *param_3
 // Reference entry 10fa7720; body size 21 bytes.
 #line 1 "ENTRY_10fa7720"
 
-SCStr * FUN_10fa7720(SCStr *param_1)
+SCStr * __stdcall FUN_10fa7720(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_launcher.complete");
@@ -73758,7 +73758,7 @@ SCStr * FUN_10fa7720(SCStr *param_1)
 // Reference entry 10fa7740; body size 21 bytes.
 #line 1 "ENTRY_10fa7740"
 
-SCStr * FUN_10fa7740(SCStr *param_1)
+SCStr * __stdcall FUN_10fa7740(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_launcher.info");
@@ -73769,7 +73769,7 @@ SCStr * FUN_10fa7740(SCStr *param_1)
 // Reference entry 10fa7760; body size 21 bytes.
 #line 1 "ENTRY_10fa7760"
 
-SCStr * FUN_10fa7760(SCStr *param_1)
+SCStr * __stdcall FUN_10fa7760(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_launcher.init");
@@ -73780,7 +73780,7 @@ SCStr * FUN_10fa7760(SCStr *param_1)
 // Reference entry 10fa7780; body size 21 bytes.
 #line 1 "ENTRY_10fa7780"
 
-SCStr * FUN_10fa7780(SCStr *param_1)
+SCStr * __stdcall FUN_10fa7780(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_launcher.missing_products");
@@ -73791,7 +73791,7 @@ SCStr * FUN_10fa7780(SCStr *param_1)
 // Reference entry 10fa77a0; body size 21 bytes.
 #line 1 "ENTRY_10fa77a0"
 
-SCStr * FUN_10fa77a0(SCStr *param_1)
+SCStr * __stdcall FUN_10fa77a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_launcher.mixed_hh");
@@ -73802,7 +73802,7 @@ SCStr * FUN_10fa77a0(SCStr *param_1)
 // Reference entry 10fa77c0; body size 21 bytes.
 #line 1 "ENTRY_10fa77c0"
 
-SCStr * FUN_10fa77c0(SCStr *param_1)
+SCStr * __stdcall FUN_10fa77c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_launcher.modern_hh");
@@ -73813,7 +73813,7 @@ SCStr * FUN_10fa77c0(SCStr *param_1)
 // Reference entry 10fa77e0; body size 21 bytes.
 #line 1 "ENTRY_10fa77e0"
 
-SCStr * FUN_10fa77e0(SCStr *param_1)
+SCStr * __stdcall FUN_10fa77e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_launcher.remind_me");
@@ -73824,7 +73824,7 @@ SCStr * FUN_10fa77e0(SCStr *param_1)
 // Reference entry 10fa7800; body size 21 bytes.
 #line 1 "ENTRY_10fa7800"
 
-SCStr * FUN_10fa7800(SCStr *param_1)
+SCStr * __stdcall FUN_10fa7800(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_launcher.retrieving_products");
@@ -73835,7 +73835,7 @@ SCStr * FUN_10fa7800(SCStr *param_1)
 // Reference entry 10fa78a0; body size 35 bytes.
 #line 1 "ENTRY_10fa78a0"
 
-SCStr * FUN_10fa78a0(SCStr *param_1)
+SCStr * __stdcall FUN_10fa78a0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -73849,7 +73849,7 @@ SCStr * FUN_10fa78a0(SCStr *param_1)
 // Reference entry 10fa9470; body size 21 bytes.
 #line 1 "ENTRY_10fa9470"
 
-SCStr * FUN_10fa9470(SCStr *param_1)
+SCStr * __stdcall FUN_10fa9470(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCLifecycleLauncherWizard");
@@ -73882,7 +73882,7 @@ undefined1 FUN_10fa9ac0(SCStr *param_1)
 // Reference entry 10fa9b10; body size 17 bytes.
 #line 1 "ENTRY_10fa9b10"
 
-void FUN_10fa9b10(SCStr *param_1)
+void __stdcall FUN_10fa9b10(SCStr *param_1)
 
 {
   (param_1)->operator==("SCIHousehold:onLifecycleFetchedDevices");
@@ -74006,7 +74006,7 @@ int * Recovered_10fb0da0::FUN_10fb0da0(int *param_2)
 // Reference entry 10fb8590; body size 21 bytes.
 #line 1 "ENTRY_10fb8590"
 
-SCStr * FUN_10fb8590(SCStr *param_1)
+SCStr * __stdcall FUN_10fb8590(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCLifecycleNetworkTestWizard");
@@ -74068,7 +74068,7 @@ SCStr * FUN_10fb8f40(SCStr *param_1,int param_2)
 // Reference entry 10fb90e0; body size 21 bytes.
 #line 1 "ENTRY_10fb90e0"
 
-SCStr * FUN_10fb90e0(SCStr *param_1)
+SCStr * __stdcall FUN_10fb90e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecyclenetworktest.aggregate_results");
@@ -74079,7 +74079,7 @@ SCStr * FUN_10fb90e0(SCStr *param_1)
 // Reference entry 10fb9100; body size 21 bytes.
 #line 1 "ENTRY_10fb9100"
 
-SCStr * FUN_10fb9100(SCStr *param_1)
+SCStr * __stdcall FUN_10fb9100(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecyclenetworktest.all_errored");
@@ -74090,7 +74090,7 @@ SCStr * FUN_10fb9100(SCStr *param_1)
 // Reference entry 10fb9120; body size 21 bytes.
 #line 1 "ENTRY_10fb9120"
 
-SCStr * FUN_10fb9120(SCStr *param_1)
+SCStr * __stdcall FUN_10fb9120(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecyclenetworktest.complete");
@@ -74101,7 +74101,7 @@ SCStr * FUN_10fb9120(SCStr *param_1)
 // Reference entry 10fb9140; body size 21 bytes.
 #line 1 "ENTRY_10fb9140"
 
-SCStr * FUN_10fb9140(SCStr *param_1)
+SCStr * __stdcall FUN_10fb9140(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecyclenetworktest.error");
@@ -74112,7 +74112,7 @@ SCStr * FUN_10fb9140(SCStr *param_1)
 // Reference entry 10fb9160; body size 21 bytes.
 #line 1 "ENTRY_10fb9160"
 
-SCStr * FUN_10fb9160(SCStr *param_1)
+SCStr * __stdcall FUN_10fb9160(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecyclenetworktest.init");
@@ -74123,7 +74123,7 @@ SCStr * FUN_10fb9160(SCStr *param_1)
 // Reference entry 10fb9180; body size 21 bytes.
 #line 1 "ENTRY_10fb9180"
 
-SCStr * FUN_10fb9180(SCStr *param_1)
+SCStr * __stdcall FUN_10fb9180(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecyclenetworktest.connectivity_test");
@@ -74134,7 +74134,7 @@ SCStr * FUN_10fb9180(SCStr *param_1)
 // Reference entry 10fb91a0; body size 21 bytes.
 #line 1 "ENTRY_10fb91a0"
 
-SCStr * FUN_10fb91a0(SCStr *param_1)
+SCStr * __stdcall FUN_10fb91a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecyclenetworktest.start_wifi");
@@ -74145,7 +74145,7 @@ SCStr * FUN_10fb91a0(SCStr *param_1)
 // Reference entry 10fb91c0; body size 21 bytes.
 #line 1 "ENTRY_10fb91c0"
 
-SCStr * FUN_10fb91c0(SCStr *param_1)
+SCStr * __stdcall FUN_10fb91c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecyclenetworktest.wifi_credential");
@@ -74156,7 +74156,7 @@ SCStr * FUN_10fb91c0(SCStr *param_1)
 // Reference entry 10fb91e0; body size 21 bytes.
 #line 1 "ENTRY_10fb91e0"
 
-SCStr * FUN_10fb91e0(SCStr *param_1)
+SCStr * __stdcall FUN_10fb91e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecyclenetworktest.wifi_names");
@@ -74167,7 +74167,7 @@ SCStr * FUN_10fb91e0(SCStr *param_1)
 // Reference entry 10fb9200; body size 21 bytes.
 #line 1 "ENTRY_10fb9200"
 
-SCStr * FUN_10fb9200(SCStr *param_1)
+SCStr * __stdcall FUN_10fb9200(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecyclenetworktest.wifi_submitting");
@@ -74178,7 +74178,7 @@ SCStr * FUN_10fb9200(SCStr *param_1)
 // Reference entry 10fb9250; body size 35 bytes.
 #line 1 "ENTRY_10fb9250"
 
-SCStr * FUN_10fb9250(SCStr *param_1)
+SCStr * __stdcall FUN_10fb9250(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -74192,7 +74192,7 @@ SCStr * FUN_10fb9250(SCStr *param_1)
 // Reference entry 10fbc490; body size 21 bytes.
 #line 1 "ENTRY_10fbc490"
 
-SCStr * FUN_10fbc490(SCStr *param_1)
+SCStr * __stdcall FUN_10fbc490(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("LifecycleNetworkTestWizard");
@@ -74226,7 +74226,7 @@ undefined4 * Recovered_10fbcea0::FUN_10fbcea0(undefined4 *param_2,SCStr *param_3
 // Reference entry 10fc5c20; body size 21 bytes.
 #line 1 "ENTRY_10fc5c20"
 
-SCStr * FUN_10fc5c20(SCStr *param_1)
+SCStr * __stdcall FUN_10fc5c20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_player_removal.display_network_test");
@@ -74237,7 +74237,7 @@ SCStr * FUN_10fc5c20(SCStr *param_1)
 // Reference entry 10fc5c40; body size 21 bytes.
 #line 1 "ENTRY_10fc5c40"
 
-SCStr * FUN_10fc5c40(SCStr *param_1)
+SCStr * __stdcall FUN_10fc5c40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_player_removal.complete");
@@ -74248,7 +74248,7 @@ SCStr * FUN_10fc5c40(SCStr *param_1)
 // Reference entry 10fc5c60; body size 21 bytes.
 #line 1 "ENTRY_10fc5c60"
 
-SCStr * FUN_10fc5c60(SCStr *param_1)
+SCStr * __stdcall FUN_10fc5c60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_player_removal.confirm_removal");
@@ -74259,7 +74259,7 @@ SCStr * FUN_10fc5c60(SCStr *param_1)
 // Reference entry 10fc5c80; body size 21 bytes.
 #line 1 "ENTRY_10fc5c80"
 
-SCStr * FUN_10fc5c80(SCStr *param_1)
+SCStr * __stdcall FUN_10fc5c80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_player_removal.factory_reset");
@@ -74270,7 +74270,7 @@ SCStr * FUN_10fc5c80(SCStr *param_1)
 // Reference entry 10fc5ca0; body size 21 bytes.
 #line 1 "ENTRY_10fc5ca0"
 
-SCStr * FUN_10fc5ca0(SCStr *param_1)
+SCStr * __stdcall FUN_10fc5ca0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_player_removal.init");
@@ -74281,7 +74281,7 @@ SCStr * FUN_10fc5ca0(SCStr *param_1)
 // Reference entry 10fc5cc0; body size 21 bytes.
 #line 1 "ENTRY_10fc5cc0"
 
-SCStr * FUN_10fc5cc0(SCStr *param_1)
+SCStr * __stdcall FUN_10fc5cc0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_player_removal.intro");
@@ -74292,7 +74292,7 @@ SCStr * FUN_10fc5cc0(SCStr *param_1)
 // Reference entry 10fc5ce0; body size 21 bytes.
 #line 1 "ENTRY_10fc5ce0"
 
-SCStr * FUN_10fc5ce0(SCStr *param_1)
+SCStr * __stdcall FUN_10fc5ce0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_player_removal.network_test_intro");
@@ -74303,7 +74303,7 @@ SCStr * FUN_10fc5ce0(SCStr *param_1)
 // Reference entry 10fc5d00; body size 21 bytes.
 #line 1 "ENTRY_10fc5d00"
 
-SCStr * FUN_10fc5d00(SCStr *param_1)
+SCStr * __stdcall FUN_10fc5d00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_player_removal.ready_for_download");
@@ -74314,7 +74314,7 @@ SCStr * FUN_10fc5d00(SCStr *param_1)
 // Reference entry 10fc5d20; body size 21 bytes.
 #line 1 "ENTRY_10fc5d20"
 
-SCStr * FUN_10fc5d20(SCStr *param_1)
+SCStr * __stdcall FUN_10fc5d20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_player_removal.reset_failed");
@@ -74325,7 +74325,7 @@ SCStr * FUN_10fc5d20(SCStr *param_1)
 // Reference entry 10fc5d40; body size 21 bytes.
 #line 1 "ENTRY_10fc5d40"
 
-SCStr * FUN_10fc5d40(SCStr *param_1)
+SCStr * __stdcall FUN_10fc5d40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_player_removal.terms_of_use");
@@ -74336,7 +74336,7 @@ SCStr * FUN_10fc5d40(SCStr *param_1)
 // Reference entry 10fc5d60; body size 21 bytes.
 #line 1 "ENTRY_10fc5d60"
 
-SCStr * FUN_10fc5d60(SCStr *param_1)
+SCStr * __stdcall FUN_10fc5d60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_player_removal.network_test_fail");
@@ -74347,7 +74347,7 @@ SCStr * FUN_10fc5d60(SCStr *param_1)
 // Reference entry 10fc5d80; body size 21 bytes.
 #line 1 "ENTRY_10fc5d80"
 
-SCStr * FUN_10fc5d80(SCStr *param_1)
+SCStr * __stdcall FUN_10fc5d80(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("lifecycle_player_removal.network_test_pass");
@@ -74358,7 +74358,7 @@ SCStr * FUN_10fc5d80(SCStr *param_1)
 // Reference entry 10fc5e20; body size 35 bytes.
 #line 1 "ENTRY_10fc5e20"
 
-SCStr * FUN_10fc5e20(SCStr *param_1)
+SCStr * __stdcall FUN_10fc5e20(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -74372,7 +74372,7 @@ SCStr * FUN_10fc5e20(SCStr *param_1)
 // Reference entry 10fc89e0; body size 21 bytes.
 #line 1 "ENTRY_10fc89e0"
 
-SCStr * FUN_10fc89e0(SCStr *param_1)
+SCStr * __stdcall FUN_10fc89e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCLifecyclePlayerRemovalWizard");
@@ -74465,7 +74465,7 @@ undefined4 * Recovered_10fc95e0::FUN_10fc95e0(undefined4 *param_2,SCStr *param_3
 // Reference entry 10fcaf50; body size 21 bytes.
 #line 1 "ENTRY_10fcaf50"
 
-SCStr * FUN_10fcaf50(SCStr *param_1)
+SCStr * __stdcall FUN_10fcaf50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -74526,7 +74526,7 @@ void Recovered_10fcbb30::FUN_10fcbb30(SCStr *param_2,SCStr *param_3)
 // Reference entry 10fcd510; body size 21 bytes.
 #line 1 "ENTRY_10fcd510"
 
-SCStr * FUN_10fcd510(SCStr *param_1)
+SCStr * __stdcall FUN_10fcd510(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -74537,7 +74537,7 @@ SCStr * FUN_10fcd510(SCStr *param_1)
 // Reference entry 10fcd550; body size 35 bytes.
 #line 1 "ENTRY_10fcd550"
 
-SCStr * FUN_10fcd550(SCStr *param_1)
+SCStr * __stdcall FUN_10fcd550(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -74551,7 +74551,7 @@ SCStr * FUN_10fcd550(SCStr *param_1)
 // Reference entry 10fcecc0; body size 21 bytes.
 #line 1 "ENTRY_10fcecc0"
 
-SCStr * FUN_10fcecc0(SCStr *param_1)
+SCStr * __stdcall FUN_10fcecc0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -74586,7 +74586,7 @@ SCStr * FUN_10fced40(SCStr *param_1)
 // Reference entry 10fced70; body size 32 bytes.
 #line 1 "ENTRY_10fced70"
 
-SCStr * FUN_10fced70(SCStr *param_1)
+SCStr * __stdcall FUN_10fced70(SCStr *param_1)
 
 {
   new (param_1) SCStr(*((SCStr *)&DAT_121a07b0));
@@ -74620,7 +74620,7 @@ SCStr * FUN_10fcede0(SCStr *param_1)
 // Reference entry 10fcee00; body size 21 bytes.
 #line 1 "ENTRY_10fcee00"
 
-SCStr * FUN_10fcee00(SCStr *param_1)
+SCStr * __stdcall FUN_10fcee00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -74631,7 +74631,7 @@ SCStr * FUN_10fcee00(SCStr *param_1)
 // Reference entry 10fcee20; body size 21 bytes.
 #line 1 "ENTRY_10fcee20"
 
-SCStr * FUN_10fcee20(SCStr *param_1)
+SCStr * __stdcall FUN_10fcee20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -74653,7 +74653,7 @@ SCStr * FUN_10fcee80(SCStr *param_1)
 // Reference entry 10fcefc0; body size 18 bytes.
 #line 1 "ENTRY_10fcefc0"
 
-SCStr * FUN_10fcefc0(SCStr *param_1)
+SCStr * __stdcall FUN_10fcefc0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep((char *)0x0);
@@ -74721,7 +74721,7 @@ SCStr * FUN_10fcf110(SCStr *param_1)
 // Reference entry 10fcf130; body size 21 bytes.
 #line 1 "ENTRY_10fcf130"
 
-SCStr * FUN_10fcf130(SCStr *param_1)
+SCStr * __stdcall FUN_10fcf130(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -74732,7 +74732,7 @@ SCStr * FUN_10fcf130(SCStr *param_1)
 // Reference entry 10fcf150; body size 21 bytes.
 #line 1 "ENTRY_10fcf150"
 
-SCStr * FUN_10fcf150(SCStr *param_1)
+SCStr * __stdcall FUN_10fcf150(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -74743,7 +74743,7 @@ SCStr * FUN_10fcf150(SCStr *param_1)
 // Reference entry 10fcf180; body size 21 bytes.
 #line 1 "ENTRY_10fcf180"
 
-SCStr * FUN_10fcf180(SCStr *param_1)
+SCStr * __stdcall FUN_10fcf180(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -74766,7 +74766,7 @@ SCStr * Recovered_10fcf1a0::FUN_10fcf1a0(SCStr *param_2)
 // Reference entry 10fcf1c0; body size 21 bytes.
 #line 1 "ENTRY_10fcf1c0"
 
-SCStr * FUN_10fcf1c0(SCStr *param_1)
+SCStr * __stdcall FUN_10fcf1c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -74847,7 +74847,7 @@ undefined4 * Recovered_10fcf4f0::FUN_10fcf4f0(undefined4 *param_2,SCStr *param_3
 // Reference entry 10fcf640; body size 21 bytes.
 #line 1 "ENTRY_10fcf640"
 
-SCStr * FUN_10fcf640(SCStr *param_1)
+SCStr * __stdcall FUN_10fcf640(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -74858,7 +74858,7 @@ SCStr * FUN_10fcf640(SCStr *param_1)
 // Reference entry 10fd17f0; body size 21 bytes.
 #line 1 "ENTRY_10fd17f0"
 
-SCStr * FUN_10fd17f0(SCStr *param_1)
+SCStr * __stdcall FUN_10fd17f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCCompilationAlbumsSettingItem");
@@ -74869,7 +74869,7 @@ SCStr * FUN_10fd17f0(SCStr *param_1)
 // Reference entry 10fd1810; body size 21 bytes.
 #line 1 "ENTRY_10fd1810"
 
-SCStr * FUN_10fd1810(SCStr *param_1)
+SCStr * __stdcall FUN_10fd1810(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCSpinnerSettingsProperty");
@@ -74880,7 +74880,7 @@ SCStr * FUN_10fd1810(SCStr *param_1)
 // Reference entry 10fd1a70; body size 21 bytes.
 #line 1 "ENTRY_10fd1a70"
 
-SCStr * FUN_10fd1a70(SCStr *param_1)
+SCStr * __stdcall FUN_10fd1a70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SetDateTime");
@@ -74891,7 +74891,7 @@ SCStr * FUN_10fd1a70(SCStr *param_1)
 // Reference entry 10fd1a90; body size 21 bytes.
 #line 1 "ENTRY_10fd1a90"
 
-SCStr * FUN_10fd1a90(SCStr *param_1)
+SCStr * __stdcall FUN_10fd1a90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -74902,7 +74902,7 @@ SCStr * FUN_10fd1a90(SCStr *param_1)
 // Reference entry 10fd1ca0; body size 21 bytes.
 #line 1 "ENTRY_10fd1ca0"
 
-SCStr * FUN_10fd1ca0(SCStr *param_1)
+SCStr * __stdcall FUN_10fd1ca0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCITimeSettingsProperty");
@@ -74913,7 +74913,7 @@ SCStr * FUN_10fd1ca0(SCStr *param_1)
 // Reference entry 10fd1cc0; body size 21 bytes.
 #line 1 "ENTRY_10fd1cc0"
 
-SCStr * FUN_10fd1cc0(SCStr *param_1)
+SCStr * __stdcall FUN_10fd1cc0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -74968,7 +74968,7 @@ undefined4 * Recovered_10fd25c0::FUN_10fd25c0(undefined4 *param_2,SCStr *param_3
 // Reference entry 10fdaf30; body size 21 bytes.
 #line 1 "ENTRY_10fdaf30"
 
-SCStr * FUN_10fdaf30(SCStr *param_1)
+SCStr * __stdcall FUN_10fdaf30(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAlarmSettingsDurationItem");
@@ -74979,7 +74979,7 @@ SCStr * FUN_10fdaf30(SCStr *param_1)
 // Reference entry 10fdaf50; body size 21 bytes.
 #line 1 "ENTRY_10fdaf50"
 
-SCStr * FUN_10fdaf50(SCStr *param_1)
+SCStr * __stdcall FUN_10fdaf50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAlarmSettingsDurationNoLimitItem");
@@ -74990,7 +74990,7 @@ SCStr * FUN_10fdaf50(SCStr *param_1)
 // Reference entry 10fdaf70; body size 21 bytes.
 #line 1 "ENTRY_10fdaf70"
 
-SCStr * FUN_10fdaf70(SCStr *param_1)
+SCStr * __stdcall FUN_10fdaf70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAlarmSettingsEnabledItem");
@@ -75001,7 +75001,7 @@ SCStr * FUN_10fdaf70(SCStr *param_1)
 // Reference entry 10fdaf90; body size 21 bytes.
 #line 1 "ENTRY_10fdaf90"
 
-SCStr * FUN_10fdaf90(SCStr *param_1)
+SCStr * __stdcall FUN_10fdaf90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAlarmSettingsFrequencyItem");
@@ -75012,7 +75012,7 @@ SCStr * FUN_10fdaf90(SCStr *param_1)
 // Reference entry 10fdafb0; body size 21 bytes.
 #line 1 "ENTRY_10fdafb0"
 
-SCStr * FUN_10fdafb0(SCStr *param_1)
+SCStr * __stdcall FUN_10fdafb0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAlarmSettingsIncludeGroupedZonesItem");
@@ -75023,7 +75023,7 @@ SCStr * FUN_10fdafb0(SCStr *param_1)
 // Reference entry 10fdafd0; body size 21 bytes.
 #line 1 "ENTRY_10fdafd0"
 
-SCStr * FUN_10fdafd0(SCStr *param_1)
+SCStr * __stdcall FUN_10fdafd0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAlarmSettingsShuffleMusicItem");
@@ -75034,7 +75034,7 @@ SCStr * FUN_10fdafd0(SCStr *param_1)
 // Reference entry 10fdaff0; body size 21 bytes.
 #line 1 "ENTRY_10fdaff0"
 
-SCStr * FUN_10fdaff0(SCStr *param_1)
+SCStr * __stdcall FUN_10fdaff0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAlarmSettingsSnoozeDurationItem");
@@ -75045,7 +75045,7 @@ SCStr * FUN_10fdaff0(SCStr *param_1)
 // Reference entry 10fdb010; body size 21 bytes.
 #line 1 "ENTRY_10fdb010"
 
-SCStr * FUN_10fdb010(SCStr *param_1)
+SCStr * __stdcall FUN_10fdb010(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAlarmSettingsSnoozeItem");
@@ -75056,7 +75056,7 @@ SCStr * FUN_10fdb010(SCStr *param_1)
 // Reference entry 10fdb030; body size 21 bytes.
 #line 1 "ENTRY_10fdb030"
 
-SCStr * FUN_10fdb030(SCStr *param_1)
+SCStr * __stdcall FUN_10fdb030(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAlarmSettingsTimeItem");
@@ -75067,7 +75067,7 @@ SCStr * FUN_10fdb030(SCStr *param_1)
 // Reference entry 10fdb050; body size 21 bytes.
 #line 1 "ENTRY_10fdb050"
 
-SCStr * FUN_10fdb050(SCStr *param_1)
+SCStr * __stdcall FUN_10fdb050(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAlarmSettingsVolumeItem");
@@ -75078,7 +75078,7 @@ SCStr * FUN_10fdb050(SCStr *param_1)
 // Reference entry 10fdb070; body size 21 bytes.
 #line 1 "ENTRY_10fdb070"
 
-SCStr * FUN_10fdb070(SCStr *param_1)
+SCStr * __stdcall FUN_10fdb070(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAlarmSettingsZoneItem");
@@ -75089,7 +75089,7 @@ SCStr * FUN_10fdb070(SCStr *param_1)
 // Reference entry 10fdb090; body size 21 bytes.
 #line 1 "ENTRY_10fdb090"
 
-SCStr * FUN_10fdb090(SCStr *param_1)
+SCStr * __stdcall FUN_10fdb090(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("DisplayCustomControl.AlarmFrequency");
@@ -75100,7 +75100,7 @@ SCStr * FUN_10fdb090(SCStr *param_1)
 // Reference entry 10fdb320; body size 21 bytes.
 #line 1 "ENTRY_10fdb320"
 
-SCStr * FUN_10fdb320(SCStr *param_1)
+SCStr * __stdcall FUN_10fdb320(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySettings");
@@ -75111,7 +75111,7 @@ SCStr * FUN_10fdb320(SCStr *param_1)
 // Reference entry 10fdb340; body size 35 bytes.
 #line 1 "ENTRY_10fdb340"
 
-SCStr * FUN_10fdb340(SCStr *param_1)
+SCStr * __stdcall FUN_10fdb340(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -75125,7 +75125,7 @@ SCStr * FUN_10fdb340(SCStr *param_1)
 // Reference entry 10fdb370; body size 21 bytes.
 #line 1 "ENTRY_10fdb370"
 
-SCStr * FUN_10fdb370(SCStr *param_1)
+SCStr * __stdcall FUN_10fdb370(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -75619,7 +75619,7 @@ void Recovered_10fe6460::FUN_10fe6460(SCStr *param_2)
 // Reference entry 10fe6c20; body size 21 bytes.
 #line 1 "ENTRY_10fe6c20"
 
-SCStr * FUN_10fe6c20(SCStr *param_1)
+SCStr * __stdcall FUN_10fe6c20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("MoveItem");
@@ -75630,7 +75630,7 @@ SCStr * FUN_10fe6c20(SCStr *param_1)
 // Reference entry 10fe6c40; body size 21 bytes.
 #line 1 "ENTRY_10fe6c40"
 
-SCStr * FUN_10fe6c40(SCStr *param_1)
+SCStr * __stdcall FUN_10fe6c40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDragAndDrop");
@@ -75641,7 +75641,7 @@ SCStr * FUN_10fe6c40(SCStr *param_1)
 // Reference entry 10fe6c60; body size 21 bytes.
 #line 1 "ENTRY_10fe6c60"
 
-SCStr * FUN_10fe6c60(SCStr *param_1)
+SCStr * __stdcall FUN_10fe6c60(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -75652,7 +75652,7 @@ SCStr * FUN_10fe6c60(SCStr *param_1)
 // Reference entry 10fe6c80; body size 32 bytes.
 #line 1 "ENTRY_10fe6c80"
 
-SCStr * FUN_10fe6c80(SCStr *param_1)
+SCStr * __stdcall FUN_10fe6c80(SCStr *param_1)
 
 {
   new (param_1) SCStr(*((SCStr *)&DAT_121a07b0));
@@ -75664,7 +75664,7 @@ SCStr * FUN_10fe6c80(SCStr *param_1)
 // Reference entry 10fe6cb0; body size 21 bytes.
 #line 1 "ENTRY_10fe6cb0"
 
-SCStr * FUN_10fe6cb0(SCStr *param_1)
+SCStr * __stdcall FUN_10fe6cb0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionWithIntDescriptor");
@@ -75675,7 +75675,7 @@ SCStr * FUN_10fe6cb0(SCStr *param_1)
 // Reference entry 10fe6cd0; body size 35 bytes.
 #line 1 "ENTRY_10fe6cd0"
 
-SCStr * FUN_10fe6cd0(SCStr *param_1)
+SCStr * __stdcall FUN_10fe6cd0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -75744,7 +75744,7 @@ undefined4 * Recovered_10fe6e20::FUN_10fe6e20(undefined4 *param_2,SCStr *param_3
 // Reference entry 10fe8190; body size 21 bytes.
 #line 1 "ENTRY_10fe8190"
 
-SCStr * FUN_10fe8190(SCStr *param_1)
+SCStr * __stdcall FUN_10fe8190(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("DeleteItem");
@@ -75755,7 +75755,7 @@ SCStr * FUN_10fe8190(SCStr *param_1)
 // Reference entry 10fe81b0; body size 21 bytes.
 #line 1 "ENTRY_10fe81b0"
 
-SCStr * FUN_10fe81b0(SCStr *param_1)
+SCStr * __stdcall FUN_10fe81b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("DeleteSelectedItems");
@@ -75766,7 +75766,7 @@ SCStr * FUN_10fe81b0(SCStr *param_1)
 // Reference entry 10fe81d0; body size 21 bytes.
 #line 1 "ENTRY_10fe81d0"
 
-SCStr * FUN_10fe81d0(SCStr *param_1)
+SCStr * __stdcall FUN_10fe81d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("MoveSelectedItems");
@@ -75777,7 +75777,7 @@ SCStr * FUN_10fe81d0(SCStr *param_1)
 // Reference entry 10fe81f0; body size 21 bytes.
 #line 1 "ENTRY_10fe81f0"
 
-SCStr * FUN_10fe81f0(SCStr *param_1)
+SCStr * __stdcall FUN_10fe81f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryEdit");
@@ -75788,7 +75788,7 @@ SCStr * FUN_10fe81f0(SCStr *param_1)
 // Reference entry 10fe8210; body size 21 bytes.
 #line 1 "ENTRY_10fe8210"
 
-SCStr * FUN_10fe8210(SCStr *param_1)
+SCStr * __stdcall FUN_10fe8210(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryEdit");
@@ -75799,7 +75799,7 @@ SCStr * FUN_10fe8210(SCStr *param_1)
 // Reference entry 10fe8230; body size 21 bytes.
 #line 1 "ENTRY_10fe8230"
 
-SCStr * FUN_10fe8230(SCStr *param_1)
+SCStr * __stdcall FUN_10fe8230(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDragAndDrop");
@@ -75810,7 +75810,7 @@ SCStr * FUN_10fe8230(SCStr *param_1)
 // Reference entry 10fe8250; body size 21 bytes.
 #line 1 "ENTRY_10fe8250"
 
-SCStr * FUN_10fe8250(SCStr *param_1)
+SCStr * __stdcall FUN_10fe8250(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -75821,7 +75821,7 @@ SCStr * FUN_10fe8250(SCStr *param_1)
 // Reference entry 10fe8270; body size 32 bytes.
 #line 1 "ENTRY_10fe8270"
 
-SCStr * FUN_10fe8270(SCStr *param_1)
+SCStr * __stdcall FUN_10fe8270(SCStr *param_1)
 
 {
   new (param_1) SCStr(*((SCStr *)&DAT_121a07b0));
@@ -75833,7 +75833,7 @@ SCStr * FUN_10fe8270(SCStr *param_1)
 // Reference entry 10fe82a0; body size 21 bytes.
 #line 1 "ENTRY_10fe82a0"
 
-SCStr * FUN_10fe82a0(SCStr *param_1)
+SCStr * __stdcall FUN_10fe82a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionWithIntDescriptor");
@@ -75844,7 +75844,7 @@ SCStr * FUN_10fe82a0(SCStr *param_1)
 // Reference entry 10fe8460; body size 35 bytes.
 #line 1 "ENTRY_10fe8460"
 
-SCStr * FUN_10fe8460(SCStr *param_1)
+SCStr * __stdcall FUN_10fe8460(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -75858,7 +75858,7 @@ SCStr * FUN_10fe8460(SCStr *param_1)
 // Reference entry 10fe8490; body size 35 bytes.
 #line 1 "ENTRY_10fe8490"
 
-SCStr * FUN_10fe8490(SCStr *param_1)
+SCStr * __stdcall FUN_10fe8490(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -76034,7 +76034,7 @@ void Recovered_10ff0e60::FUN_10ff0e60(int param_2,SCStr *param_3)
 // Reference entry 10ff10c0; body size 21 bytes.
 #line 1 "ENTRY_10ff10c0"
 
-SCStr * FUN_10ff10c0(SCStr *param_1)
+SCStr * __stdcall FUN_10ff10c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCHomePageBrowseItem");
@@ -76045,7 +76045,7 @@ SCStr * FUN_10ff10c0(SCStr *param_1)
 // Reference entry 10ff10e0; body size 21 bytes.
 #line 1 "ENTRY_10ff10e0"
 
-SCStr * FUN_10ff10e0(SCStr *param_1)
+SCStr * __stdcall FUN_10ff10e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCHomePageDataSource");
@@ -76056,7 +76056,7 @@ SCStr * FUN_10ff10e0(SCStr *param_1)
 // Reference entry 10ff1100; body size 21 bytes.
 #line 1 "ENTRY_10ff1100"
 
-SCStr * FUN_10ff1100(SCStr *param_1)
+SCStr * __stdcall FUN_10ff1100(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCHomePagePinnedItem");
@@ -76067,7 +76067,7 @@ SCStr * FUN_10ff1100(SCStr *param_1)
 // Reference entry 10ff1490; body size 21 bytes.
 #line 1 "ENTRY_10ff1490"
 
-SCStr * FUN_10ff1490(SCStr *param_1)
+SCStr * __stdcall FUN_10ff1490(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("HideSwimlane");
@@ -76094,7 +76094,7 @@ SCStr * Recovered_10ff15e0::FUN_10ff15e0(SCStr *param_2,int param_3,undefined4 p
 // Reference entry 10ff1630; body size 21 bytes.
 #line 1 "ENTRY_10ff1630"
 
-SCStr * FUN_10ff1630(SCStr *param_1)
+SCStr * __stdcall FUN_10ff1630(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategorySwimlane");
@@ -76179,7 +76179,7 @@ SCStr * Recovered_10ff2ba0::FUN_10ff2ba0(SCStr *param_2)
 // Reference entry 10ff6f90; body size 17 bytes.
 #line 1 "ENTRY_10ff6f90"
 
-void FUN_10ff6f90(SCStr *param_1)
+void __stdcall FUN_10ff6f90(SCStr *param_1)
 
 {
   (param_1)->operator==("SCIHousehold:onSecureSettingsChanged");
@@ -76303,7 +76303,7 @@ undefined4 * Recovered_10ff86c0::FUN_10ff86c0(undefined4 *param_2,SCStr *param_3
 // Reference entry 10ffb630; body size 21 bytes.
 #line 1 "ENTRY_10ffb630"
 
-SCStr * FUN_10ffb630(SCStr *param_1)
+SCStr * __stdcall FUN_10ffb630(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCAggregateHelper");
@@ -76337,7 +76337,7 @@ undefined4 * Recovered_10ffbb30::FUN_10ffbb30(undefined4 *param_2,SCStr *param_3
 // Reference entry 10ffc9f0; body size 21 bytes.
 #line 1 "ENTRY_10ffc9f0"
 
-SCStr * FUN_10ffc9f0(SCStr *param_1)
+SCStr * __stdcall FUN_10ffc9f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -76360,7 +76360,7 @@ SCStr * Recovered_10ffca60::FUN_10ffca60(SCStr *param_2)
 // Reference entry 10ffca80; body size 32 bytes.
 #line 1 "ENTRY_10ffca80"
 
-SCStr * FUN_10ffca80(SCStr *param_1)
+SCStr * __stdcall FUN_10ffca80(SCStr *param_1)
 
 {
   new (param_1) SCStr(*((SCStr *)&DAT_121a07b0));
@@ -76372,7 +76372,7 @@ SCStr * FUN_10ffca80(SCStr *param_1)
 // Reference entry 10ffcb40; body size 21 bytes.
 #line 1 "ENTRY_10ffcb40"
 
-SCStr * FUN_10ffcb40(SCStr *param_1)
+SCStr * __stdcall FUN_10ffcb40(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -76383,7 +76383,7 @@ SCStr * FUN_10ffcb40(SCStr *param_1)
 // Reference entry 10ffcb70; body size 32 bytes.
 #line 1 "ENTRY_10ffcb70"
 
-SCStr * FUN_10ffcb70(SCStr *param_1)
+SCStr * __stdcall FUN_10ffcb70(SCStr *param_1)
 
 {
   new (param_1) SCStr(*((SCStr *)&DAT_121a07b0));
@@ -76395,7 +76395,7 @@ SCStr * FUN_10ffcb70(SCStr *param_1)
 // Reference entry 10ffcbb0; body size 32 bytes.
 #line 1 "ENTRY_10ffcbb0"
 
-SCStr * FUN_10ffcbb0(SCStr *param_1)
+SCStr * __stdcall FUN_10ffcbb0(SCStr *param_1)
 
 {
   new (param_1) SCStr(*((SCStr *)&DAT_121a07b0));
@@ -76407,7 +76407,7 @@ SCStr * FUN_10ffcbb0(SCStr *param_1)
 // Reference entry 10ffcc00; body size 18 bytes.
 #line 1 "ENTRY_10ffcc00"
 
-SCStr * FUN_10ffcc00(SCStr *param_1)
+SCStr * __stdcall FUN_10ffcc00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep((char *)0x0);
@@ -76974,7 +76974,7 @@ undefined4 * Recovered_11010770::FUN_11010770(undefined4 *param_2)
 // Reference entry 110133a0; body size 21 bytes.
 #line 1 "ENTRY_110133a0"
 
-SCStr * FUN_110133a0(SCStr *param_1)
+SCStr * __stdcall FUN_110133a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("select_rooms.complete");
@@ -76985,7 +76985,7 @@ SCStr * FUN_110133a0(SCStr *param_1)
 // Reference entry 110133c0; body size 21 bytes.
 #line 1 "ENTRY_110133c0"
 
-SCStr * FUN_110133c0(SCStr *param_1)
+SCStr * __stdcall FUN_110133c0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("select_rooms.generic_error");
@@ -76996,7 +76996,7 @@ SCStr * FUN_110133c0(SCStr *param_1)
 // Reference entry 110133e0; body size 21 bytes.
 #line 1 "ENTRY_110133e0"
 
-SCStr * FUN_110133e0(SCStr *param_1)
+SCStr * __stdcall FUN_110133e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("select_rooms.init");
@@ -77007,7 +77007,7 @@ SCStr * FUN_110133e0(SCStr *param_1)
 // Reference entry 11013400; body size 21 bytes.
 #line 1 "ENTRY_11013400"
 
-SCStr * FUN_11013400(SCStr *param_1)
+SCStr * __stdcall FUN_11013400(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("select_rooms.list");
@@ -77018,7 +77018,7 @@ SCStr * FUN_11013400(SCStr *param_1)
 // Reference entry 11013420; body size 21 bytes.
 #line 1 "ENTRY_11013420"
 
-SCStr * FUN_11013420(SCStr *param_1)
+SCStr * __stdcall FUN_11013420(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("select_rooms.remove_voice_service");
@@ -77029,7 +77029,7 @@ SCStr * FUN_11013420(SCStr *param_1)
 // Reference entry 11013440; body size 21 bytes.
 #line 1 "ENTRY_11013440"
 
-SCStr * FUN_11013440(SCStr *param_1)
+SCStr * __stdcall FUN_11013440(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("select_rooms.switch_voice");
@@ -77040,7 +77040,7 @@ SCStr * FUN_11013440(SCStr *param_1)
 // Reference entry 11013470; body size 35 bytes.
 #line 1 "ENTRY_11013470"
 
-SCStr * FUN_11013470(SCStr *param_1)
+SCStr * __stdcall FUN_11013470(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -77054,7 +77054,7 @@ SCStr * FUN_11013470(SCStr *param_1)
 // Reference entry 11015070; body size 21 bytes.
 #line 1 "ENTRY_11015070"
 
-SCStr * FUN_11015070(SCStr *param_1)
+SCStr * __stdcall FUN_11015070(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SelectRoomsWizard");
@@ -77065,7 +77065,7 @@ SCStr * FUN_11015070(SCStr *param_1)
 // Reference entry 11018120; body size 21 bytes.
 #line 1 "ENTRY_11018120"
 
-SCStr * FUN_11018120(SCStr *param_1)
+SCStr * __stdcall FUN_11018120(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -77275,7 +77275,7 @@ undefined4 * Recovered_1101bf10::FUN_1101bf10(undefined4 *param_2,SCStr *param_3
 // Reference entry 1101d950; body size 60 bytes.
 #line 1 "ENTRY_1101d950"
 
-undefined4 FUN_1101d950(char *param_1)
+undefined4 __stdcall FUN_1101d950(char *param_1)
 
 {
   undefined4 uVar1;
@@ -77291,7 +77291,7 @@ undefined4 FUN_1101d950(char *param_1)
 // Reference entry 1101df90; body size 17 bytes.
 #line 1 "ENTRY_1101df90"
 
-void FUN_1101df90(SCStr *param_1)
+void __stdcall FUN_1101df90(SCStr *param_1)
 
 {
   (param_1)->operator==("SCINowPlaying:onMusicChanged");
@@ -77325,7 +77325,7 @@ undefined4 * Recovered_1101e290::FUN_1101e290(undefined4 *param_2,SCStr *param_3
 // Reference entry 11020710; body size 21 bytes.
 #line 1 "ENTRY_11020710"
 
-SCStr * FUN_11020710(SCStr *param_1)
+SCStr * __stdcall FUN_11020710(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCNowPlayingTransportOther");
@@ -77401,7 +77401,7 @@ undefined4 * Recovered_11022410::FUN_11022410(undefined4 *param_2,SCStr *param_3
 // Reference entry 1102ae20; body size 21 bytes.
 #line 1 "ENTRY_1102ae20"
 
-SCStr * FUN_1102ae20(SCStr *param_1)
+SCStr * __stdcall FUN_1102ae20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCPlayQueueMgr");
@@ -77441,7 +77441,7 @@ SCStr * Recovered_1102b260::FUN_1102b260(SCStr *param_2)
 // Reference entry 1102b2a0; body size 21 bytes.
 #line 1 "ENTRY_1102b2a0"
 
-SCStr * FUN_1102b2a0(SCStr *param_1)
+SCStr * __stdcall FUN_1102b2a0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -77627,7 +77627,7 @@ void Recovered_1102e370::FUN_1102e370(SCStr *param_2,SCStr *param_3)
 // Reference entry 11030400; body size 21 bytes.
 #line 1 "ENTRY_11030400"
 
-SCStr * FUN_11030400(SCStr *param_1)
+SCStr * __stdcall FUN_11030400(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCPlayQueueItem");
@@ -77638,7 +77638,7 @@ SCStr * FUN_11030400(SCStr *param_1)
 // Reference entry 11030420; body size 21 bytes.
 #line 1 "ENTRY_11030420"
 
-SCStr * FUN_11030420(SCStr *param_1)
+SCStr * __stdcall FUN_11030420(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCPlayQueueItemState");
@@ -77649,7 +77649,7 @@ SCStr * FUN_11030420(SCStr *param_1)
 // Reference entry 11030c90; body size 21 bytes.
 #line 1 "ENTRY_11030c90"
 
-SCStr * FUN_11030c90(SCStr *param_1)
+SCStr * __stdcall FUN_11030c90(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("QueuePlayPauseToggle");
@@ -77660,7 +77660,7 @@ SCStr * FUN_11030c90(SCStr *param_1)
 // Reference entry 11030cb0; body size 21 bytes.
 #line 1 "ENTRY_11030cb0"
 
-SCStr * FUN_11030cb0(SCStr *param_1)
+SCStr * __stdcall FUN_11030cb0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("QueueRemoveItem");
@@ -77726,7 +77726,7 @@ SCStr * Recovered_11030e00::FUN_11030e00(SCStr *param_2)
 // Reference entry 11030e50; body size 21 bytes.
 #line 1 "ENTRY_11030e50"
 
-SCStr * FUN_11030e50(SCStr *param_1)
+SCStr * __stdcall FUN_11030e50(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -77737,7 +77737,7 @@ SCStr * FUN_11030e50(SCStr *param_1)
 // Reference entry 11030e70; body size 21 bytes.
 #line 1 "ENTRY_11030e70"
 
-SCStr * FUN_11030e70(SCStr *param_1)
+SCStr * __stdcall FUN_11030e70(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -77748,7 +77748,7 @@ SCStr * FUN_11030e70(SCStr *param_1)
 // Reference entry 110312c0; body size 35 bytes.
 #line 1 "ENTRY_110312c0"
 
-SCStr * FUN_110312c0(SCStr *param_1)
+SCStr * __stdcall FUN_110312c0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -77762,7 +77762,7 @@ SCStr * FUN_110312c0(SCStr *param_1)
 // Reference entry 11032c90; body size 17 bytes.
 #line 1 "ENTRY_11032c90"
 
-void FUN_11032c90(SCStr *param_1)
+void __stdcall FUN_11032c90(SCStr *param_1)
 
 {
   (param_1)->operator==("SCINowPlaying:onMusicChanged");
@@ -77842,7 +77842,7 @@ undefined4 * Recovered_11034ef0::FUN_11034ef0(undefined4 *param_2,SCStr *param_3
 // Reference entry 110372b0; body size 21 bytes.
 #line 1 "ENTRY_110372b0"
 
-SCStr * FUN_110372b0(SCStr *param_1)
+SCStr * __stdcall FUN_110372b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("DeleteItem");
@@ -77853,7 +77853,7 @@ SCStr * FUN_110372b0(SCStr *param_1)
 // Reference entry 110372d0; body size 21 bytes.
 #line 1 "ENTRY_110372d0"
 
-SCStr * FUN_110372d0(SCStr *param_1)
+SCStr * __stdcall FUN_110372d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("DeleteSelectedItems");
@@ -77864,7 +77864,7 @@ SCStr * FUN_110372d0(SCStr *param_1)
 // Reference entry 110372f0; body size 21 bytes.
 #line 1 "ENTRY_110372f0"
 
-SCStr * FUN_110372f0(SCStr *param_1)
+SCStr * __stdcall FUN_110372f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("MoveItem");
@@ -77875,7 +77875,7 @@ SCStr * FUN_110372f0(SCStr *param_1)
 // Reference entry 11037310; body size 21 bytes.
 #line 1 "ENTRY_11037310"
 
-SCStr * FUN_11037310(SCStr *param_1)
+SCStr * __stdcall FUN_11037310(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("MoveSelectedItems");
@@ -77886,7 +77886,7 @@ SCStr * FUN_11037310(SCStr *param_1)
 // Reference entry 11037330; body size 21 bytes.
 #line 1 "ENTRY_11037330"
 
-SCStr * FUN_11037330(SCStr *param_1)
+SCStr * __stdcall FUN_11037330(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryEdit");
@@ -77897,7 +77897,7 @@ SCStr * FUN_11037330(SCStr *param_1)
 // Reference entry 11037470; body size 21 bytes.
 #line 1 "ENTRY_11037470"
 
-SCStr * FUN_11037470(SCStr *param_1)
+SCStr * __stdcall FUN_11037470(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDragAndDrop");
@@ -77908,7 +77908,7 @@ SCStr * FUN_11037470(SCStr *param_1)
 // Reference entry 11037490; body size 21 bytes.
 #line 1 "ENTRY_11037490"
 
-SCStr * FUN_11037490(SCStr *param_1)
+SCStr * __stdcall FUN_11037490(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDragAndDrop");
@@ -77919,7 +77919,7 @@ SCStr * FUN_11037490(SCStr *param_1)
 // Reference entry 110374b0; body size 21 bytes.
 #line 1 "ENTRY_110374b0"
 
-SCStr * FUN_110374b0(SCStr *param_1)
+SCStr * __stdcall FUN_110374b0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -77930,7 +77930,7 @@ SCStr * FUN_110374b0(SCStr *param_1)
 // Reference entry 110374d0; body size 21 bytes.
 #line 1 "ENTRY_110374d0"
 
-SCStr * FUN_110374d0(SCStr *param_1)
+SCStr * __stdcall FUN_110374d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -77941,7 +77941,7 @@ SCStr * FUN_110374d0(SCStr *param_1)
 // Reference entry 110374f0; body size 32 bytes.
 #line 1 "ENTRY_110374f0"
 
-SCStr * FUN_110374f0(SCStr *param_1)
+SCStr * __stdcall FUN_110374f0(SCStr *param_1)
 
 {
   new (param_1) SCStr(*((SCStr *)&DAT_121a07b0));
@@ -77953,7 +77953,7 @@ SCStr * FUN_110374f0(SCStr *param_1)
 // Reference entry 11037520; body size 32 bytes.
 #line 1 "ENTRY_11037520"
 
-SCStr * FUN_11037520(SCStr *param_1)
+SCStr * __stdcall FUN_11037520(SCStr *param_1)
 
 {
   new (param_1) SCStr(*((SCStr *)&DAT_121a07b0));
@@ -77965,7 +77965,7 @@ SCStr * FUN_11037520(SCStr *param_1)
 // Reference entry 11037550; body size 21 bytes.
 #line 1 "ENTRY_11037550"
 
-SCStr * FUN_11037550(SCStr *param_1)
+SCStr * __stdcall FUN_11037550(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionWithIntDescriptor");
@@ -77976,7 +77976,7 @@ SCStr * FUN_11037550(SCStr *param_1)
 // Reference entry 11037570; body size 21 bytes.
 #line 1 "ENTRY_11037570"
 
-SCStr * FUN_11037570(SCStr *param_1)
+SCStr * __stdcall FUN_11037570(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionWithIntDescriptor");
@@ -77987,7 +77987,7 @@ SCStr * FUN_11037570(SCStr *param_1)
 // Reference entry 11037690; body size 35 bytes.
 #line 1 "ENTRY_11037690"
 
-SCStr * FUN_11037690(SCStr *param_1)
+SCStr * __stdcall FUN_11037690(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -78001,7 +78001,7 @@ SCStr * FUN_11037690(SCStr *param_1)
 // Reference entry 110376c0; body size 35 bytes.
 #line 1 "ENTRY_110376c0"
 
-SCStr * FUN_110376c0(SCStr *param_1)
+SCStr * __stdcall FUN_110376c0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -78015,7 +78015,7 @@ SCStr * FUN_110376c0(SCStr *param_1)
 // Reference entry 110376f0; body size 35 bytes.
 #line 1 "ENTRY_110376f0"
 
-SCStr * FUN_110376f0(SCStr *param_1)
+SCStr * __stdcall FUN_110376f0(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -78185,7 +78185,7 @@ undefined4 * Recovered_11037ab0::FUN_11037ab0(undefined4 *param_2,SCStr *param_3
 // Reference entry 1103b2d0; body size 21 bytes.
 #line 1 "ENTRY_1103b2d0"
 
-SCStr * FUN_1103b2d0(SCStr *param_1)
+SCStr * __stdcall FUN_1103b2d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("com.sonos.bluetooth");
@@ -78208,7 +78208,7 @@ SCStr * Recovered_1103b2f0::FUN_1103b2f0(SCStr *param_2)
 // Reference entry 1103ed00; body size 21 bytes.
 #line 1 "ENTRY_1103ed00"
 
-SCStr * FUN_1103ed00(SCStr *param_1)
+SCStr * __stdcall FUN_1103ed00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIMOAPIRateTrack");
@@ -78219,7 +78219,7 @@ SCStr * FUN_1103ed00(SCStr *param_1)
 // Reference entry 1103ed20; body size 21 bytes.
 #line 1 "ENTRY_1103ed20"
 
-SCStr * FUN_1103ed20(SCStr *param_1)
+SCStr * __stdcall FUN_1103ed20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCRateTrackAction");
@@ -78350,7 +78350,7 @@ undefined4 * Recovered_1105d8e0::FUN_1105d8e0(undefined4 *param_2,SCStr *param_3
 // Reference entry 11060730; body size 21 bytes.
 #line 1 "ENTRY_11060730"
 
-SCStr * FUN_11060730(SCStr *param_1)
+SCStr * __stdcall FUN_11060730(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -78361,7 +78361,7 @@ SCStr * FUN_11060730(SCStr *param_1)
 // Reference entry 11060960; body size 35 bytes.
 #line 1 "ENTRY_11060960"
 
-SCStr * FUN_11060960(SCStr *param_1)
+SCStr * __stdcall FUN_11060960(SCStr *param_1)
 
 {
   char *pcVar1;
@@ -78446,7 +78446,7 @@ void Recovered_11060e80::FUN_11060e80(SCStr *param_2,SCStr *param_3)
 // Reference entry 11061da0; body size 21 bytes.
 #line 1 "ENTRY_11061da0"
 
-SCStr * FUN_11061da0(SCStr *param_1)
+SCStr * __stdcall FUN_11061da0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -78505,7 +78505,7 @@ void Recovered_11062110::FUN_11062110(SCStr *param_2,SCStr *param_3)
 // Reference entry 11062d20; body size 21 bytes.
 #line 1 "ENTRY_11062d20"
 
-SCStr * FUN_11062d20(SCStr *param_1)
+SCStr * __stdcall FUN_11062d20(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -78576,7 +78576,7 @@ SCStr * Recovered_110652f0::FUN_110652f0(SCStr *param_2)
 // Reference entry 11065310; body size 21 bytes.
 #line 1 "ENTRY_11065310"
 
-SCStr * FUN_11065310(SCStr *param_1)
+SCStr * __stdcall FUN_11065310(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -78707,7 +78707,7 @@ undefined4 * Recovered_11067290::FUN_11067290(undefined4 *param_2,SCStr *param_3
 // Reference entry 11067d00; body size 21 bytes.
 #line 1 "ENTRY_11067d00"
 
-SCStr * FUN_11067d00(SCStr *param_1)
+SCStr * __stdcall FUN_11067d00(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");

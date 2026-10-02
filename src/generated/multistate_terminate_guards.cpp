@@ -4020,7 +4020,7 @@ undefined4 __stdcall FUN_10194970(ushort *param_1)
 // Reference entry 10195a20; body size 143 bytes.
 #line 1 "ENTRY_10195a20"
 
-void FUN_10195a20(undefined4 *param_1,ushort *param_2,undefined4 param_3,ushort *param_4)
+void __stdcall FUN_10195a20(undefined4 *param_1,ushort *param_2,undefined4 param_3,ushort *param_4)
 
 {
 

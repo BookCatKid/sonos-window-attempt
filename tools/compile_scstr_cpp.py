@@ -61,6 +61,7 @@ def reference_stdcall(source):
     except Exception:
         return source, 0
     markers = list(ENTRY_MARKER.finditer(source))
+    edits = []
     changed = 0
     for index, marker in enumerate(markers):
         entry, size = int(marker.group(1), 16), int(marker.group(2))
@@ -88,18 +89,23 @@ def reference_stdcall(source):
             definition.group('name'),
             '__stdcall ' + definition.group('name'), 1)
         start = marker.end() + definition.start()
-        source = source[:start] + rewritten + source[start + len(definition.group(0)):]
+        edits.append((start, start + len(definition.group(0)), rewritten))
+        changed += 1
         # Any same-unit forward declaration must carry the convention too: a
         # variadic ``extern ... FUN_X(...)`` redeclared as a typed __stdcall is
         # a conflicting declaration under MSVC.
         extern = re.compile(
             r'(?m)^extern\s+[A-Za-z_][\w\s\*]*?\s+' +
             re.escape(definition.group('name')) + r'\s*\(\s*\.\.\.\s*\)\s*;')
-        source = extern.sub(
-            'extern ' + ' '.join(definition.group('result').split()) +
-            ' __stdcall ' + definition.group('name') +
-            '(' + definition.group('params').strip() + ');', source)
-        changed += 1
+        typed = ('extern ' + ' '.join(definition.group('result').split()) +
+                 ' __stdcall ' + definition.group('name') +
+                 '(' + definition.group('params').strip() + ');')
+        for decl in extern.finditer(source):
+            edits.append((decl.start(), decl.end(), typed))
+    # Apply every rewrite right-to-left so earlier edits never shift the
+    # recorded offsets of later ones.
+    for start, end, replacement in sorted(edits, key=lambda e: -e[0]):
+        source = source[:start] + replacement + source[end:]
     return source, changed
 
 

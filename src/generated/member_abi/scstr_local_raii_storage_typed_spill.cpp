@@ -1426,7 +1426,7 @@ RecoveredString_FUN_1008c50b_109ec600 recovered_string{(*(volatile undefined4 *)
 // Reference entry 10bf1220; body size 101 bytes.
 #line 1 "ENTRY_10bf1220"
 
-SCStr * FUN_10bf1220(SCStr *param_1)
+SCStr * __stdcall FUN_10bf1220(SCStr *param_1)
 
 {
 

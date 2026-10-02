@@ -30659,7 +30659,7 @@ void Recovered_106d4340::FUN_106d4340(int *param_2)
 // Reference entry 106d6ab0; body size 67 bytes.
 #line 1 "ENTRY_106d6ab0"
 
-void FUN_106d6ab0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void __stdcall FUN_106d6ab0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8)
 
 {

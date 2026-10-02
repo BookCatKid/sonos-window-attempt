@@ -4723,7 +4723,7 @@ undefined1 __stdcall FUN_10151610(int *param_1)
 // Reference entry 10151650; body size 20 bytes.
 #line 1 "ENTRY_10151650"
 
-undefined1 FUN_10151650(int *param_1)
+undefined1 __stdcall FUN_10151650(int *param_1)
 
 {
   undefined1 uVar1;
@@ -4736,7 +4736,7 @@ undefined1 FUN_10151650(int *param_1)
 // Reference entry 10151730; body size 17 bytes.
 #line 1 "ENTRY_10151730"
 
-undefined1 FUN_10151730(int *param_1)
+undefined1 __stdcall FUN_10151730(int *param_1)
 
 {
   undefined1 uVar1;
@@ -4749,7 +4749,7 @@ undefined1 FUN_10151730(int *param_1)
 // Reference entry 10151750; body size 17 bytes.
 #line 1 "ENTRY_10151750"
 
-undefined1 FUN_10151750(int *param_1)
+undefined1 __stdcall FUN_10151750(int *param_1)
 
 {
   undefined1 uVar1;
@@ -4762,7 +4762,7 @@ undefined1 FUN_10151750(int *param_1)
 // Reference entry 10151ff0; body size 17 bytes.
 #line 1 "ENTRY_10151ff0"
 
-undefined1 FUN_10151ff0(int *param_1)
+undefined1 __stdcall FUN_10151ff0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -4775,7 +4775,7 @@ undefined1 FUN_10151ff0(int *param_1)
 // Reference entry 10152010; body size 17 bytes.
 #line 1 "ENTRY_10152010"
 
-undefined1 FUN_10152010(int *param_1)
+undefined1 __stdcall FUN_10152010(int *param_1)
 
 {
   undefined1 uVar1;
@@ -4788,7 +4788,7 @@ undefined1 FUN_10152010(int *param_1)
 // Reference entry 10152030; body size 17 bytes.
 #line 1 "ENTRY_10152030"
 
-undefined1 FUN_10152030(int *param_1)
+undefined1 __stdcall FUN_10152030(int *param_1)
 
 {
   undefined1 uVar1;
@@ -4801,7 +4801,7 @@ undefined1 FUN_10152030(int *param_1)
 // Reference entry 10152160; body size 17 bytes.
 #line 1 "ENTRY_10152160"
 
-undefined1 FUN_10152160(int *param_1)
+undefined1 __stdcall FUN_10152160(int *param_1)
 
 {
   undefined1 uVar1;
@@ -4814,7 +4814,7 @@ undefined1 FUN_10152160(int *param_1)
 // Reference entry 101532f0; body size 17 bytes.
 #line 1 "ENTRY_101532f0"
 
-undefined1 FUN_101532f0(int *param_1)
+undefined1 __stdcall FUN_101532f0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -4827,7 +4827,7 @@ undefined1 FUN_101532f0(int *param_1)
 // Reference entry 10153c80; body size 17 bytes.
 #line 1 "ENTRY_10153c80"
 
-undefined1 FUN_10153c80(int *param_1)
+undefined1 __stdcall FUN_10153c80(int *param_1)
 
 {
   undefined1 uVar1;
@@ -4840,7 +4840,7 @@ undefined1 FUN_10153c80(int *param_1)
 // Reference entry 10153ca0; body size 17 bytes.
 #line 1 "ENTRY_10153ca0"
 
-undefined1 FUN_10153ca0(int *param_1)
+undefined1 __stdcall FUN_10153ca0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -4853,7 +4853,7 @@ undefined1 FUN_10153ca0(int *param_1)
 // Reference entry 10153cc0; body size 17 bytes.
 #line 1 "ENTRY_10153cc0"
 
-undefined1 FUN_10153cc0(int *param_1)
+undefined1 __stdcall FUN_10153cc0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -4866,7 +4866,7 @@ undefined1 FUN_10153cc0(int *param_1)
 // Reference entry 10153d70; body size 17 bytes.
 #line 1 "ENTRY_10153d70"
 
-undefined1 FUN_10153d70(int *param_1)
+undefined1 __stdcall FUN_10153d70(int *param_1)
 
 {
   undefined1 uVar1;
@@ -4879,7 +4879,7 @@ undefined1 FUN_10153d70(int *param_1)
 // Reference entry 10154460; body size 17 bytes.
 #line 1 "ENTRY_10154460"
 
-undefined1 FUN_10154460(int *param_1)
+undefined1 __stdcall FUN_10154460(int *param_1)
 
 {
   undefined1 uVar1;
@@ -4892,7 +4892,7 @@ undefined1 FUN_10154460(int *param_1)
 // Reference entry 10154480; body size 17 bytes.
 #line 1 "ENTRY_10154480"
 
-undefined1 FUN_10154480(int *param_1)
+undefined1 __stdcall FUN_10154480(int *param_1)
 
 {
   undefined1 uVar1;
@@ -4905,7 +4905,7 @@ undefined1 FUN_10154480(int *param_1)
 // Reference entry 101547f0; body size 17 bytes.
 #line 1 "ENTRY_101547f0"
 
-undefined1 FUN_101547f0(int *param_1)
+undefined1 __stdcall FUN_101547f0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -4918,7 +4918,7 @@ undefined1 FUN_101547f0(int *param_1)
 // Reference entry 10154a00; body size 17 bytes.
 #line 1 "ENTRY_10154a00"
 
-undefined1 FUN_10154a00(int *param_1)
+undefined1 __stdcall FUN_10154a00(int *param_1)
 
 {
   undefined1 uVar1;
@@ -4931,7 +4931,7 @@ undefined1 FUN_10154a00(int *param_1)
 // Reference entry 10154f50; body size 17 bytes.
 #line 1 "ENTRY_10154f50"
 
-undefined1 FUN_10154f50(int *param_1)
+undefined1 __stdcall FUN_10154f50(int *param_1)
 
 {
   undefined1 uVar1;
@@ -4944,7 +4944,7 @@ undefined1 FUN_10154f50(int *param_1)
 // Reference entry 10154f70; body size 17 bytes.
 #line 1 "ENTRY_10154f70"
 
-undefined1 FUN_10154f70(int *param_1)
+undefined1 __stdcall FUN_10154f70(int *param_1)
 
 {
   undefined1 uVar1;
@@ -4957,7 +4957,7 @@ undefined1 FUN_10154f70(int *param_1)
 // Reference entry 10154fc0; body size 17 bytes.
 #line 1 "ENTRY_10154fc0"
 
-undefined1 FUN_10154fc0(int *param_1)
+undefined1 __stdcall FUN_10154fc0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -4970,7 +4970,7 @@ undefined1 FUN_10154fc0(int *param_1)
 // Reference entry 10155330; body size 17 bytes.
 #line 1 "ENTRY_10155330"
 
-undefined1 FUN_10155330(int *param_1)
+undefined1 __stdcall FUN_10155330(int *param_1)
 
 {
   undefined1 uVar1;
@@ -4983,7 +4983,7 @@ undefined1 FUN_10155330(int *param_1)
 // Reference entry 10155830; body size 17 bytes.
 #line 1 "ENTRY_10155830"
 
-undefined1 FUN_10155830(int *param_1)
+undefined1 __stdcall FUN_10155830(int *param_1)
 
 {
   undefined1 uVar1;
@@ -4996,7 +4996,7 @@ undefined1 FUN_10155830(int *param_1)
 // Reference entry 10155970; body size 17 bytes.
 #line 1 "ENTRY_10155970"
 
-undefined1 FUN_10155970(int *param_1)
+undefined1 __stdcall FUN_10155970(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5009,7 +5009,7 @@ undefined1 FUN_10155970(int *param_1)
 // Reference entry 101559a0; body size 20 bytes.
 #line 1 "ENTRY_101559a0"
 
-undefined1 FUN_101559a0(int *param_1)
+undefined1 __stdcall FUN_101559a0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5022,7 +5022,7 @@ undefined1 FUN_101559a0(int *param_1)
 // Reference entry 10156bf0; body size 17 bytes.
 #line 1 "ENTRY_10156bf0"
 
-undefined1 FUN_10156bf0(int *param_1)
+undefined1 __stdcall FUN_10156bf0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5035,7 +5035,7 @@ undefined1 FUN_10156bf0(int *param_1)
 // Reference entry 10156c10; body size 20 bytes.
 #line 1 "ENTRY_10156c10"
 
-undefined1 FUN_10156c10(int *param_1)
+undefined1 __stdcall FUN_10156c10(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5048,7 +5048,7 @@ undefined1 FUN_10156c10(int *param_1)
 // Reference entry 10156c30; body size 20 bytes.
 #line 1 "ENTRY_10156c30"
 
-undefined1 FUN_10156c30(int *param_1)
+undefined1 __stdcall FUN_10156c30(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5061,7 +5061,7 @@ undefined1 FUN_10156c30(int *param_1)
 // Reference entry 10156c50; body size 17 bytes.
 #line 1 "ENTRY_10156c50"
 
-undefined1 FUN_10156c50(int *param_1)
+undefined1 __stdcall FUN_10156c50(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5074,7 +5074,7 @@ undefined1 FUN_10156c50(int *param_1)
 // Reference entry 10156c70; body size 17 bytes.
 #line 1 "ENTRY_10156c70"
 
-undefined1 FUN_10156c70(int *param_1)
+undefined1 __stdcall FUN_10156c70(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5087,7 +5087,7 @@ undefined1 FUN_10156c70(int *param_1)
 // Reference entry 10156c90; body size 20 bytes.
 #line 1 "ENTRY_10156c90"
 
-undefined1 FUN_10156c90(int *param_1)
+undefined1 __stdcall FUN_10156c90(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5100,7 +5100,7 @@ undefined1 FUN_10156c90(int *param_1)
 // Reference entry 10156cd0; body size 20 bytes.
 #line 1 "ENTRY_10156cd0"
 
-undefined1 FUN_10156cd0(int *param_1)
+undefined1 __stdcall FUN_10156cd0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5113,7 +5113,7 @@ undefined1 FUN_10156cd0(int *param_1)
 // Reference entry 10156cf0; body size 17 bytes.
 #line 1 "ENTRY_10156cf0"
 
-undefined1 FUN_10156cf0(int *param_1)
+undefined1 __stdcall FUN_10156cf0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5126,7 +5126,7 @@ undefined1 FUN_10156cf0(int *param_1)
 // Reference entry 10156d10; body size 17 bytes.
 #line 1 "ENTRY_10156d10"
 
-undefined1 FUN_10156d10(int *param_1)
+undefined1 __stdcall FUN_10156d10(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5139,7 +5139,7 @@ undefined1 FUN_10156d10(int *param_1)
 // Reference entry 10156d30; body size 17 bytes.
 #line 1 "ENTRY_10156d30"
 
-undefined1 FUN_10156d30(int *param_1)
+undefined1 __stdcall FUN_10156d30(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5152,7 +5152,7 @@ undefined1 FUN_10156d30(int *param_1)
 // Reference entry 10156d50; body size 17 bytes.
 #line 1 "ENTRY_10156d50"
 
-undefined1 FUN_10156d50(int *param_1)
+undefined1 __stdcall FUN_10156d50(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5165,7 +5165,7 @@ undefined1 FUN_10156d50(int *param_1)
 // Reference entry 10156d70; body size 20 bytes.
 #line 1 "ENTRY_10156d70"
 
-undefined1 FUN_10156d70(int *param_1)
+undefined1 __stdcall FUN_10156d70(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5178,7 +5178,7 @@ undefined1 FUN_10156d70(int *param_1)
 // Reference entry 10156d90; body size 20 bytes.
 #line 1 "ENTRY_10156d90"
 
-undefined1 FUN_10156d90(int *param_1)
+undefined1 __stdcall FUN_10156d90(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5191,7 +5191,7 @@ undefined1 FUN_10156d90(int *param_1)
 // Reference entry 10156e60; body size 20 bytes.
 #line 1 "ENTRY_10156e60"
 
-undefined1 FUN_10156e60(int *param_1)
+undefined1 __stdcall FUN_10156e60(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5204,7 +5204,7 @@ undefined1 FUN_10156e60(int *param_1)
 // Reference entry 10156e80; body size 20 bytes.
 #line 1 "ENTRY_10156e80"
 
-undefined1 FUN_10156e80(int *param_1)
+undefined1 __stdcall FUN_10156e80(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5217,7 +5217,7 @@ undefined1 FUN_10156e80(int *param_1)
 // Reference entry 10156ec0; body size 20 bytes.
 #line 1 "ENTRY_10156ec0"
 
-undefined1 FUN_10156ec0(int *param_1)
+undefined1 __stdcall FUN_10156ec0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5230,7 +5230,7 @@ undefined1 FUN_10156ec0(int *param_1)
 // Reference entry 10157810; body size 17 bytes.
 #line 1 "ENTRY_10157810"
 
-undefined1 FUN_10157810(int *param_1)
+undefined1 __stdcall FUN_10157810(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5243,7 +5243,7 @@ undefined1 FUN_10157810(int *param_1)
 // Reference entry 10157830; body size 17 bytes.
 #line 1 "ENTRY_10157830"
 
-undefined1 FUN_10157830(int *param_1)
+undefined1 __stdcall FUN_10157830(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5256,7 +5256,7 @@ undefined1 FUN_10157830(int *param_1)
 // Reference entry 10158c40; body size 17 bytes.
 #line 1 "ENTRY_10158c40"
 
-undefined1 FUN_10158c40(int *param_1)
+undefined1 __stdcall FUN_10158c40(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5269,7 +5269,7 @@ undefined1 FUN_10158c40(int *param_1)
 // Reference entry 10158c60; body size 17 bytes.
 #line 1 "ENTRY_10158c60"
 
-undefined1 FUN_10158c60(int *param_1)
+undefined1 __stdcall FUN_10158c60(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5282,7 +5282,7 @@ undefined1 FUN_10158c60(int *param_1)
 // Reference entry 10158ca0; body size 17 bytes.
 #line 1 "ENTRY_10158ca0"
 
-undefined1 FUN_10158ca0(int *param_1)
+undefined1 __stdcall FUN_10158ca0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5295,7 +5295,7 @@ undefined1 FUN_10158ca0(int *param_1)
 // Reference entry 10158cc0; body size 20 bytes.
 #line 1 "ENTRY_10158cc0"
 
-undefined1 FUN_10158cc0(int *param_1)
+undefined1 __stdcall FUN_10158cc0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5308,7 +5308,7 @@ undefined1 FUN_10158cc0(int *param_1)
 // Reference entry 10158ce0; body size 20 bytes.
 #line 1 "ENTRY_10158ce0"
 
-undefined1 FUN_10158ce0(int *param_1)
+undefined1 __stdcall FUN_10158ce0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5321,7 +5321,7 @@ undefined1 FUN_10158ce0(int *param_1)
 // Reference entry 10158d00; body size 20 bytes.
 #line 1 "ENTRY_10158d00"
 
-undefined1 FUN_10158d00(int *param_1)
+undefined1 __stdcall FUN_10158d00(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5334,7 +5334,7 @@ undefined1 FUN_10158d00(int *param_1)
 // Reference entry 10158d20; body size 20 bytes.
 #line 1 "ENTRY_10158d20"
 
-undefined1 FUN_10158d20(int *param_1)
+undefined1 __stdcall FUN_10158d20(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5347,7 +5347,7 @@ undefined1 FUN_10158d20(int *param_1)
 // Reference entry 10158d40; body size 17 bytes.
 #line 1 "ENTRY_10158d40"
 
-undefined1 FUN_10158d40(int *param_1)
+undefined1 __stdcall FUN_10158d40(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5360,7 +5360,7 @@ undefined1 FUN_10158d40(int *param_1)
 // Reference entry 10158d60; body size 20 bytes.
 #line 1 "ENTRY_10158d60"
 
-undefined1 FUN_10158d60(int *param_1)
+undefined1 __stdcall FUN_10158d60(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5373,7 +5373,7 @@ undefined1 FUN_10158d60(int *param_1)
 // Reference entry 10158d80; body size 20 bytes.
 #line 1 "ENTRY_10158d80"
 
-undefined1 FUN_10158d80(int *param_1)
+undefined1 __stdcall FUN_10158d80(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5386,7 +5386,7 @@ undefined1 FUN_10158d80(int *param_1)
 // Reference entry 10158da0; body size 17 bytes.
 #line 1 "ENTRY_10158da0"
 
-undefined1 FUN_10158da0(int *param_1)
+undefined1 __stdcall FUN_10158da0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5399,7 +5399,7 @@ undefined1 FUN_10158da0(int *param_1)
 // Reference entry 10158dc0; body size 20 bytes.
 #line 1 "ENTRY_10158dc0"
 
-undefined1 FUN_10158dc0(int *param_1)
+undefined1 __stdcall FUN_10158dc0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5412,7 +5412,7 @@ undefined1 FUN_10158dc0(int *param_1)
 // Reference entry 10158de0; body size 17 bytes.
 #line 1 "ENTRY_10158de0"
 
-undefined1 FUN_10158de0(int *param_1)
+undefined1 __stdcall FUN_10158de0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5425,7 +5425,7 @@ undefined1 FUN_10158de0(int *param_1)
 // Reference entry 10159830; body size 17 bytes.
 #line 1 "ENTRY_10159830"
 
-undefined1 FUN_10159830(int *param_1)
+undefined1 __stdcall FUN_10159830(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5438,7 +5438,7 @@ undefined1 FUN_10159830(int *param_1)
 // Reference entry 10159910; body size 17 bytes.
 #line 1 "ENTRY_10159910"
 
-undefined1 FUN_10159910(int *param_1)
+undefined1 __stdcall FUN_10159910(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5451,7 +5451,7 @@ undefined1 FUN_10159910(int *param_1)
 // Reference entry 10159f60; body size 17 bytes.
 #line 1 "ENTRY_10159f60"
 
-undefined1 FUN_10159f60(int *param_1)
+undefined1 __stdcall FUN_10159f60(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5464,7 +5464,7 @@ undefined1 FUN_10159f60(int *param_1)
 // Reference entry 10159f80; body size 17 bytes.
 #line 1 "ENTRY_10159f80"
 
-undefined1 FUN_10159f80(int *param_1)
+undefined1 __stdcall FUN_10159f80(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5477,7 +5477,7 @@ undefined1 FUN_10159f80(int *param_1)
 // Reference entry 1015a970; body size 17 bytes.
 #line 1 "ENTRY_1015a970"
 
-undefined1 FUN_1015a970(int *param_1)
+undefined1 __stdcall FUN_1015a970(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5490,7 +5490,7 @@ undefined1 FUN_1015a970(int *param_1)
 // Reference entry 1015bd40; body size 17 bytes.
 #line 1 "ENTRY_1015bd40"
 
-undefined1 FUN_1015bd40(int *param_1)
+undefined1 __stdcall FUN_1015bd40(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5503,7 +5503,7 @@ undefined1 FUN_1015bd40(int *param_1)
 // Reference entry 1015bd60; body size 17 bytes.
 #line 1 "ENTRY_1015bd60"
 
-undefined1 FUN_1015bd60(int *param_1)
+undefined1 __stdcall FUN_1015bd60(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5516,7 +5516,7 @@ undefined1 FUN_1015bd60(int *param_1)
 // Reference entry 1015bd80; body size 17 bytes.
 #line 1 "ENTRY_1015bd80"
 
-undefined1 FUN_1015bd80(int *param_1)
+undefined1 __stdcall FUN_1015bd80(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5529,7 +5529,7 @@ undefined1 FUN_1015bd80(int *param_1)
 // Reference entry 1015bda0; body size 17 bytes.
 #line 1 "ENTRY_1015bda0"
 
-undefined1 FUN_1015bda0(int *param_1)
+undefined1 __stdcall FUN_1015bda0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5542,7 +5542,7 @@ undefined1 FUN_1015bda0(int *param_1)
 // Reference entry 1015c0d0; body size 17 bytes.
 #line 1 "ENTRY_1015c0d0"
 
-undefined1 FUN_1015c0d0(int *param_1)
+undefined1 __stdcall FUN_1015c0d0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5555,7 +5555,7 @@ undefined1 FUN_1015c0d0(int *param_1)
 // Reference entry 1015c440; body size 17 bytes.
 #line 1 "ENTRY_1015c440"
 
-undefined1 FUN_1015c440(int *param_1)
+undefined1 __stdcall FUN_1015c440(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5568,7 +5568,7 @@ undefined1 FUN_1015c440(int *param_1)
 // Reference entry 1015c460; body size 17 bytes.
 #line 1 "ENTRY_1015c460"
 
-undefined1 FUN_1015c460(int *param_1)
+undefined1 __stdcall FUN_1015c460(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5581,7 +5581,7 @@ undefined1 FUN_1015c460(int *param_1)
 // Reference entry 1015c480; body size 17 bytes.
 #line 1 "ENTRY_1015c480"
 
-undefined1 FUN_1015c480(int *param_1)
+undefined1 __stdcall FUN_1015c480(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5594,7 +5594,7 @@ undefined1 FUN_1015c480(int *param_1)
 // Reference entry 1015c760; body size 17 bytes.
 #line 1 "ENTRY_1015c760"
 
-undefined1 FUN_1015c760(int *param_1)
+undefined1 __stdcall FUN_1015c760(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5607,7 +5607,7 @@ undefined1 FUN_1015c760(int *param_1)
 // Reference entry 1015c830; body size 17 bytes.
 #line 1 "ENTRY_1015c830"
 
-undefined1 FUN_1015c830(int *param_1)
+undefined1 __stdcall FUN_1015c830(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5620,7 +5620,7 @@ undefined1 FUN_1015c830(int *param_1)
 // Reference entry 1015cd50; body size 17 bytes.
 #line 1 "ENTRY_1015cd50"
 
-undefined1 FUN_1015cd50(int *param_1)
+undefined1 __stdcall FUN_1015cd50(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5633,7 +5633,7 @@ undefined1 FUN_1015cd50(int *param_1)
 // Reference entry 1015d9a0; body size 17 bytes.
 #line 1 "ENTRY_1015d9a0"
 
-undefined1 FUN_1015d9a0(int *param_1)
+undefined1 __stdcall FUN_1015d9a0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5646,7 +5646,7 @@ undefined1 FUN_1015d9a0(int *param_1)
 // Reference entry 1015dc40; body size 17 bytes.
 #line 1 "ENTRY_1015dc40"
 
-undefined1 FUN_1015dc40(int *param_1)
+undefined1 __stdcall FUN_1015dc40(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5659,7 +5659,7 @@ undefined1 FUN_1015dc40(int *param_1)
 // Reference entry 1015dc60; body size 17 bytes.
 #line 1 "ENTRY_1015dc60"
 
-undefined1 FUN_1015dc60(int *param_1)
+undefined1 __stdcall FUN_1015dc60(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5672,7 +5672,7 @@ undefined1 FUN_1015dc60(int *param_1)
 // Reference entry 1015ddf0; body size 17 bytes.
 #line 1 "ENTRY_1015ddf0"
 
-undefined1 FUN_1015ddf0(int *param_1)
+undefined1 __stdcall FUN_1015ddf0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5685,7 +5685,7 @@ undefined1 FUN_1015ddf0(int *param_1)
 // Reference entry 1015f1c0; body size 17 bytes.
 #line 1 "ENTRY_1015f1c0"
 
-undefined1 FUN_1015f1c0(int *param_1)
+undefined1 __stdcall FUN_1015f1c0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5698,7 +5698,7 @@ undefined1 FUN_1015f1c0(int *param_1)
 // Reference entry 1015f200; body size 20 bytes.
 #line 1 "ENTRY_1015f200"
 
-undefined1 FUN_1015f200(int *param_1)
+undefined1 __stdcall FUN_1015f200(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5711,7 +5711,7 @@ undefined1 FUN_1015f200(int *param_1)
 // Reference entry 1015f330; body size 20 bytes.
 #line 1 "ENTRY_1015f330"
 
-undefined1 FUN_1015f330(int *param_1)
+undefined1 __stdcall FUN_1015f330(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5724,7 +5724,7 @@ undefined1 FUN_1015f330(int *param_1)
 // Reference entry 1015f360; body size 20 bytes.
 #line 1 "ENTRY_1015f360"
 
-undefined1 FUN_1015f360(int *param_1)
+undefined1 __stdcall FUN_1015f360(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5737,7 +5737,7 @@ undefined1 FUN_1015f360(int *param_1)
 // Reference entry 1015f380; body size 20 bytes.
 #line 1 "ENTRY_1015f380"
 
-undefined1 FUN_1015f380(int *param_1)
+undefined1 __stdcall FUN_1015f380(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5750,7 +5750,7 @@ undefined1 FUN_1015f380(int *param_1)
 // Reference entry 1015f400; body size 20 bytes.
 #line 1 "ENTRY_1015f400"
 
-undefined1 FUN_1015f400(int *param_1)
+undefined1 __stdcall FUN_1015f400(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5763,7 +5763,7 @@ undefined1 FUN_1015f400(int *param_1)
 // Reference entry 1015f430; body size 17 bytes.
 #line 1 "ENTRY_1015f430"
 
-undefined1 FUN_1015f430(int *param_1)
+undefined1 __stdcall FUN_1015f430(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5776,7 +5776,7 @@ undefined1 FUN_1015f430(int *param_1)
 // Reference entry 1015f750; body size 20 bytes.
 #line 1 "ENTRY_1015f750"
 
-undefined1 FUN_1015f750(int *param_1)
+undefined1 __stdcall FUN_1015f750(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5789,7 +5789,7 @@ undefined1 FUN_1015f750(int *param_1)
 // Reference entry 1015f770; body size 17 bytes.
 #line 1 "ENTRY_1015f770"
 
-undefined1 FUN_1015f770(int *param_1)
+undefined1 __stdcall FUN_1015f770(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5802,7 +5802,7 @@ undefined1 FUN_1015f770(int *param_1)
 // Reference entry 1015faa0; body size 17 bytes.
 #line 1 "ENTRY_1015faa0"
 
-undefined1 FUN_1015faa0(int *param_1)
+undefined1 __stdcall FUN_1015faa0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5815,7 +5815,7 @@ undefined1 FUN_1015faa0(int *param_1)
 // Reference entry 1015fac0; body size 17 bytes.
 #line 1 "ENTRY_1015fac0"
 
-undefined1 FUN_1015fac0(int *param_1)
+undefined1 __stdcall FUN_1015fac0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5828,7 +5828,7 @@ undefined1 FUN_1015fac0(int *param_1)
 // Reference entry 10160890; body size 17 bytes.
 #line 1 "ENTRY_10160890"
 
-undefined1 FUN_10160890(int *param_1)
+undefined1 __stdcall FUN_10160890(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5841,7 +5841,7 @@ undefined1 FUN_10160890(int *param_1)
 // Reference entry 101608b0; body size 17 bytes.
 #line 1 "ENTRY_101608b0"
 
-undefined1 FUN_101608b0(int *param_1)
+undefined1 __stdcall FUN_101608b0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5854,7 +5854,7 @@ undefined1 FUN_101608b0(int *param_1)
 // Reference entry 101608d0; body size 17 bytes.
 #line 1 "ENTRY_101608d0"
 
-undefined1 FUN_101608d0(int *param_1)
+undefined1 __stdcall FUN_101608d0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5867,7 +5867,7 @@ undefined1 FUN_101608d0(int *param_1)
 // Reference entry 101608f0; body size 17 bytes.
 #line 1 "ENTRY_101608f0"
 
-undefined1 FUN_101608f0(int *param_1)
+undefined1 __stdcall FUN_101608f0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5880,7 +5880,7 @@ undefined1 FUN_101608f0(int *param_1)
 // Reference entry 10160910; body size 17 bytes.
 #line 1 "ENTRY_10160910"
 
-undefined1 FUN_10160910(int *param_1)
+undefined1 __stdcall FUN_10160910(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5893,7 +5893,7 @@ undefined1 FUN_10160910(int *param_1)
 // Reference entry 10160930; body size 17 bytes.
 #line 1 "ENTRY_10160930"
 
-undefined1 FUN_10160930(int *param_1)
+undefined1 __stdcall FUN_10160930(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5906,7 +5906,7 @@ undefined1 FUN_10160930(int *param_1)
 // Reference entry 10160950; body size 17 bytes.
 #line 1 "ENTRY_10160950"
 
-undefined1 FUN_10160950(int *param_1)
+undefined1 __stdcall FUN_10160950(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5919,7 +5919,7 @@ undefined1 FUN_10160950(int *param_1)
 // Reference entry 10160970; body size 17 bytes.
 #line 1 "ENTRY_10160970"
 
-undefined1 FUN_10160970(int *param_1)
+undefined1 __stdcall FUN_10160970(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5932,7 +5932,7 @@ undefined1 FUN_10160970(int *param_1)
 // Reference entry 10160990; body size 17 bytes.
 #line 1 "ENTRY_10160990"
 
-undefined1 FUN_10160990(int *param_1)
+undefined1 __stdcall FUN_10160990(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5945,7 +5945,7 @@ undefined1 FUN_10160990(int *param_1)
 // Reference entry 101609b0; body size 17 bytes.
 #line 1 "ENTRY_101609b0"
 
-undefined1 FUN_101609b0(int *param_1)
+undefined1 __stdcall FUN_101609b0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5958,7 +5958,7 @@ undefined1 FUN_101609b0(int *param_1)
 // Reference entry 101609d0; body size 17 bytes.
 #line 1 "ENTRY_101609d0"
 
-undefined1 FUN_101609d0(int *param_1)
+undefined1 __stdcall FUN_101609d0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5971,7 +5971,7 @@ undefined1 FUN_101609d0(int *param_1)
 // Reference entry 101609f0; body size 17 bytes.
 #line 1 "ENTRY_101609f0"
 
-undefined1 FUN_101609f0(int *param_1)
+undefined1 __stdcall FUN_101609f0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5984,7 +5984,7 @@ undefined1 FUN_101609f0(int *param_1)
 // Reference entry 10160a10; body size 17 bytes.
 #line 1 "ENTRY_10160a10"
 
-undefined1 FUN_10160a10(int *param_1)
+undefined1 __stdcall FUN_10160a10(int *param_1)
 
 {
   undefined1 uVar1;
@@ -5997,7 +5997,7 @@ undefined1 FUN_10160a10(int *param_1)
 // Reference entry 10160a30; body size 17 bytes.
 #line 1 "ENTRY_10160a30"
 
-undefined1 FUN_10160a30(int *param_1)
+undefined1 __stdcall FUN_10160a30(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6010,7 +6010,7 @@ undefined1 FUN_10160a30(int *param_1)
 // Reference entry 10160a50; body size 17 bytes.
 #line 1 "ENTRY_10160a50"
 
-undefined1 FUN_10160a50(int *param_1)
+undefined1 __stdcall FUN_10160a50(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6023,7 +6023,7 @@ undefined1 FUN_10160a50(int *param_1)
 // Reference entry 10160a70; body size 17 bytes.
 #line 1 "ENTRY_10160a70"
 
-undefined1 FUN_10160a70(int *param_1)
+undefined1 __stdcall FUN_10160a70(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6036,7 +6036,7 @@ undefined1 FUN_10160a70(int *param_1)
 // Reference entry 10160a90; body size 17 bytes.
 #line 1 "ENTRY_10160a90"
 
-undefined1 FUN_10160a90(int *param_1)
+undefined1 __stdcall FUN_10160a90(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6049,7 +6049,7 @@ undefined1 FUN_10160a90(int *param_1)
 // Reference entry 10160ab0; body size 17 bytes.
 #line 1 "ENTRY_10160ab0"
 
-undefined1 FUN_10160ab0(int *param_1)
+undefined1 __stdcall FUN_10160ab0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6062,7 +6062,7 @@ undefined1 FUN_10160ab0(int *param_1)
 // Reference entry 10160ad0; body size 17 bytes.
 #line 1 "ENTRY_10160ad0"
 
-undefined1 FUN_10160ad0(int *param_1)
+undefined1 __stdcall FUN_10160ad0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6075,7 +6075,7 @@ undefined1 FUN_10160ad0(int *param_1)
 // Reference entry 10160af0; body size 17 bytes.
 #line 1 "ENTRY_10160af0"
 
-undefined1 FUN_10160af0(int *param_1)
+undefined1 __stdcall FUN_10160af0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6088,7 +6088,7 @@ undefined1 FUN_10160af0(int *param_1)
 // Reference entry 10160b10; body size 17 bytes.
 #line 1 "ENTRY_10160b10"
 
-undefined1 FUN_10160b10(int *param_1)
+undefined1 __stdcall FUN_10160b10(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6101,7 +6101,7 @@ undefined1 FUN_10160b10(int *param_1)
 // Reference entry 10160b30; body size 17 bytes.
 #line 1 "ENTRY_10160b30"
 
-undefined1 FUN_10160b30(int *param_1)
+undefined1 __stdcall FUN_10160b30(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6114,7 +6114,7 @@ undefined1 FUN_10160b30(int *param_1)
 // Reference entry 10160b50; body size 17 bytes.
 #line 1 "ENTRY_10160b50"
 
-undefined1 FUN_10160b50(int *param_1)
+undefined1 __stdcall FUN_10160b50(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6127,7 +6127,7 @@ undefined1 FUN_10160b50(int *param_1)
 // Reference entry 10160b70; body size 20 bytes.
 #line 1 "ENTRY_10160b70"
 
-undefined1 FUN_10160b70(int *param_1)
+undefined1 __stdcall FUN_10160b70(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6140,7 +6140,7 @@ undefined1 FUN_10160b70(int *param_1)
 // Reference entry 10160b90; body size 17 bytes.
 #line 1 "ENTRY_10160b90"
 
-undefined1 FUN_10160b90(int *param_1)
+undefined1 __stdcall FUN_10160b90(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6153,7 +6153,7 @@ undefined1 FUN_10160b90(int *param_1)
 // Reference entry 10160c90; body size 17 bytes.
 #line 1 "ENTRY_10160c90"
 
-undefined1 FUN_10160c90(int *param_1)
+undefined1 __stdcall FUN_10160c90(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6166,7 +6166,7 @@ undefined1 FUN_10160c90(int *param_1)
 // Reference entry 10160da0; body size 17 bytes.
 #line 1 "ENTRY_10160da0"
 
-undefined1 FUN_10160da0(int *param_1)
+undefined1 __stdcall FUN_10160da0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6179,7 +6179,7 @@ undefined1 FUN_10160da0(int *param_1)
 // Reference entry 101613a0; body size 17 bytes.
 #line 1 "ENTRY_101613a0"
 
-undefined1 FUN_101613a0(int *param_1)
+undefined1 __stdcall FUN_101613a0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6192,7 +6192,7 @@ undefined1 FUN_101613a0(int *param_1)
 // Reference entry 101613c0; body size 17 bytes.
 #line 1 "ENTRY_101613c0"
 
-undefined1 FUN_101613c0(int *param_1)
+undefined1 __stdcall FUN_101613c0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6205,7 +6205,7 @@ undefined1 FUN_101613c0(int *param_1)
 // Reference entry 10161750; body size 17 bytes.
 #line 1 "ENTRY_10161750"
 
-undefined1 FUN_10161750(int *param_1)
+undefined1 __stdcall FUN_10161750(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6218,7 +6218,7 @@ undefined1 FUN_10161750(int *param_1)
 // Reference entry 10161f60; body size 17 bytes.
 #line 1 "ENTRY_10161f60"
 
-undefined1 FUN_10161f60(int *param_1)
+undefined1 __stdcall FUN_10161f60(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6231,7 +6231,7 @@ undefined1 FUN_10161f60(int *param_1)
 // Reference entry 10162b20; body size 17 bytes.
 #line 1 "ENTRY_10162b20"
 
-undefined1 FUN_10162b20(int *param_1)
+undefined1 __stdcall FUN_10162b20(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6244,7 +6244,7 @@ undefined1 FUN_10162b20(int *param_1)
 // Reference entry 10164090; body size 17 bytes.
 #line 1 "ENTRY_10164090"
 
-undefined1 FUN_10164090(int *param_1)
+undefined1 __stdcall FUN_10164090(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6257,7 +6257,7 @@ undefined1 FUN_10164090(int *param_1)
 // Reference entry 10164280; body size 17 bytes.
 #line 1 "ENTRY_10164280"
 
-undefined1 FUN_10164280(int *param_1)
+undefined1 __stdcall FUN_10164280(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6270,7 +6270,7 @@ undefined1 FUN_10164280(int *param_1)
 // Reference entry 101644f0; body size 17 bytes.
 #line 1 "ENTRY_101644f0"
 
-undefined1 FUN_101644f0(int *param_1)
+undefined1 __stdcall FUN_101644f0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6283,7 +6283,7 @@ undefined1 FUN_101644f0(int *param_1)
 // Reference entry 10164890; body size 17 bytes.
 #line 1 "ENTRY_10164890"
 
-undefined1 FUN_10164890(int *param_1)
+undefined1 __stdcall FUN_10164890(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6296,7 +6296,7 @@ undefined1 FUN_10164890(int *param_1)
 // Reference entry 101648b0; body size 17 bytes.
 #line 1 "ENTRY_101648b0"
 
-undefined1 FUN_101648b0(int *param_1)
+undefined1 __stdcall FUN_101648b0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6309,7 +6309,7 @@ undefined1 FUN_101648b0(int *param_1)
 // Reference entry 101648d0; body size 17 bytes.
 #line 1 "ENTRY_101648d0"
 
-undefined1 FUN_101648d0(int *param_1)
+undefined1 __stdcall FUN_101648d0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6322,7 +6322,7 @@ undefined1 FUN_101648d0(int *param_1)
 // Reference entry 10164b70; body size 17 bytes.
 #line 1 "ENTRY_10164b70"
 
-undefined1 FUN_10164b70(int *param_1)
+undefined1 __stdcall FUN_10164b70(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6335,7 +6335,7 @@ undefined1 FUN_10164b70(int *param_1)
 // Reference entry 10164b90; body size 17 bytes.
 #line 1 "ENTRY_10164b90"
 
-undefined1 FUN_10164b90(int *param_1)
+undefined1 __stdcall FUN_10164b90(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6348,7 +6348,7 @@ undefined1 FUN_10164b90(int *param_1)
 // Reference entry 10164bb0; body size 17 bytes.
 #line 1 "ENTRY_10164bb0"
 
-undefined1 FUN_10164bb0(int *param_1)
+undefined1 __stdcall FUN_10164bb0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6361,7 +6361,7 @@ undefined1 FUN_10164bb0(int *param_1)
 // Reference entry 10164bd0; body size 17 bytes.
 #line 1 "ENTRY_10164bd0"
 
-undefined1 FUN_10164bd0(int *param_1)
+undefined1 __stdcall FUN_10164bd0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6374,7 +6374,7 @@ undefined1 FUN_10164bd0(int *param_1)
 // Reference entry 10164bf0; body size 17 bytes.
 #line 1 "ENTRY_10164bf0"
 
-undefined1 FUN_10164bf0(int *param_1)
+undefined1 __stdcall FUN_10164bf0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6387,7 +6387,7 @@ undefined1 FUN_10164bf0(int *param_1)
 // Reference entry 10166320; body size 20 bytes.
 #line 1 "ENTRY_10166320"
 
-undefined1 FUN_10166320(int *param_1)
+undefined1 __stdcall FUN_10166320(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6400,7 +6400,7 @@ undefined1 FUN_10166320(int *param_1)
 // Reference entry 10167360; body size 20 bytes.
 #line 1 "ENTRY_10167360"
 
-undefined1 FUN_10167360(int *param_1)
+undefined1 __stdcall FUN_10167360(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6413,7 +6413,7 @@ undefined1 FUN_10167360(int *param_1)
 // Reference entry 10167380; body size 17 bytes.
 #line 1 "ENTRY_10167380"
 
-undefined1 FUN_10167380(int *param_1)
+undefined1 __stdcall FUN_10167380(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6426,7 +6426,7 @@ undefined1 FUN_10167380(int *param_1)
 // Reference entry 101673a0; body size 20 bytes.
 #line 1 "ENTRY_101673a0"
 
-undefined1 FUN_101673a0(int *param_1)
+undefined1 __stdcall FUN_101673a0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6439,7 +6439,7 @@ undefined1 FUN_101673a0(int *param_1)
 // Reference entry 101673c0; body size 20 bytes.
 #line 1 "ENTRY_101673c0"
 
-undefined1 FUN_101673c0(int *param_1)
+undefined1 __stdcall FUN_101673c0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6452,7 +6452,7 @@ undefined1 FUN_101673c0(int *param_1)
 // Reference entry 101673e0; body size 20 bytes.
 #line 1 "ENTRY_101673e0"
 
-undefined1 FUN_101673e0(int *param_1)
+undefined1 __stdcall FUN_101673e0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6465,7 +6465,7 @@ undefined1 FUN_101673e0(int *param_1)
 // Reference entry 10167400; body size 17 bytes.
 #line 1 "ENTRY_10167400"
 
-undefined1 FUN_10167400(int *param_1)
+undefined1 __stdcall FUN_10167400(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6478,7 +6478,7 @@ undefined1 FUN_10167400(int *param_1)
 // Reference entry 10167420; body size 20 bytes.
 #line 1 "ENTRY_10167420"
 
-undefined1 FUN_10167420(int *param_1)
+undefined1 __stdcall FUN_10167420(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6491,7 +6491,7 @@ undefined1 FUN_10167420(int *param_1)
 // Reference entry 10167440; body size 20 bytes.
 #line 1 "ENTRY_10167440"
 
-undefined1 FUN_10167440(int *param_1)
+undefined1 __stdcall FUN_10167440(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6504,7 +6504,7 @@ undefined1 FUN_10167440(int *param_1)
 // Reference entry 10167460; body size 17 bytes.
 #line 1 "ENTRY_10167460"
 
-undefined1 FUN_10167460(int *param_1)
+undefined1 __stdcall FUN_10167460(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6517,7 +6517,7 @@ undefined1 FUN_10167460(int *param_1)
 // Reference entry 10167480; body size 20 bytes.
 #line 1 "ENTRY_10167480"
 
-undefined1 FUN_10167480(int *param_1)
+undefined1 __stdcall FUN_10167480(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6530,7 +6530,7 @@ undefined1 FUN_10167480(int *param_1)
 // Reference entry 101674a0; body size 20 bytes.
 #line 1 "ENTRY_101674a0"
 
-undefined1 FUN_101674a0(int *param_1)
+undefined1 __stdcall FUN_101674a0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6543,7 +6543,7 @@ undefined1 FUN_101674a0(int *param_1)
 // Reference entry 101674c0; body size 17 bytes.
 #line 1 "ENTRY_101674c0"
 
-undefined1 FUN_101674c0(int *param_1)
+undefined1 __stdcall FUN_101674c0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6556,7 +6556,7 @@ undefined1 FUN_101674c0(int *param_1)
 // Reference entry 101679c0; body size 20 bytes.
 #line 1 "ENTRY_101679c0"
 
-undefined1 FUN_101679c0(int *param_1)
+undefined1 __stdcall FUN_101679c0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6569,7 +6569,7 @@ undefined1 FUN_101679c0(int *param_1)
 // Reference entry 101679e0; body size 20 bytes.
 #line 1 "ENTRY_101679e0"
 
-undefined1 FUN_101679e0(int *param_1)
+undefined1 __stdcall FUN_101679e0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6582,7 +6582,7 @@ undefined1 FUN_101679e0(int *param_1)
 // Reference entry 10168020; body size 17 bytes.
 #line 1 "ENTRY_10168020"
 
-undefined1 FUN_10168020(int *param_1)
+undefined1 __stdcall FUN_10168020(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6595,7 +6595,7 @@ undefined1 FUN_10168020(int *param_1)
 // Reference entry 10168640; body size 17 bytes.
 #line 1 "ENTRY_10168640"
 
-undefined1 FUN_10168640(int *param_1)
+undefined1 __stdcall FUN_10168640(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6608,7 +6608,7 @@ undefined1 FUN_10168640(int *param_1)
 // Reference entry 10168e00; body size 17 bytes.
 #line 1 "ENTRY_10168e00"
 
-undefined1 FUN_10168e00(int *param_1)
+undefined1 __stdcall FUN_10168e00(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6621,7 +6621,7 @@ undefined1 FUN_10168e00(int *param_1)
 // Reference entry 101692a0; body size 17 bytes.
 #line 1 "ENTRY_101692a0"
 
-undefined1 FUN_101692a0(int *param_1)
+undefined1 __stdcall FUN_101692a0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6634,7 +6634,7 @@ undefined1 FUN_101692a0(int *param_1)
 // Reference entry 101692c0; body size 17 bytes.
 #line 1 "ENTRY_101692c0"
 
-undefined1 FUN_101692c0(int *param_1)
+undefined1 __stdcall FUN_101692c0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6647,7 +6647,7 @@ undefined1 FUN_101692c0(int *param_1)
 // Reference entry 10169730; body size 17 bytes.
 #line 1 "ENTRY_10169730"
 
-undefined1 FUN_10169730(int *param_1)
+undefined1 __stdcall FUN_10169730(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6660,7 +6660,7 @@ undefined1 FUN_10169730(int *param_1)
 // Reference entry 10169ec0; body size 17 bytes.
 #line 1 "ENTRY_10169ec0"
 
-undefined1 FUN_10169ec0(int *param_1)
+undefined1 __stdcall FUN_10169ec0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6673,7 +6673,7 @@ undefined1 FUN_10169ec0(int *param_1)
 // Reference entry 10169ee0; body size 17 bytes.
 #line 1 "ENTRY_10169ee0"
 
-undefined1 FUN_10169ee0(int *param_1)
+undefined1 __stdcall FUN_10169ee0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6686,7 +6686,7 @@ undefined1 FUN_10169ee0(int *param_1)
 // Reference entry 10169f00; body size 17 bytes.
 #line 1 "ENTRY_10169f00"
 
-undefined1 FUN_10169f00(int *param_1)
+undefined1 __stdcall FUN_10169f00(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6699,7 +6699,7 @@ undefined1 FUN_10169f00(int *param_1)
 // Reference entry 10169f20; body size 17 bytes.
 #line 1 "ENTRY_10169f20"
 
-undefined1 FUN_10169f20(int *param_1)
+undefined1 __stdcall FUN_10169f20(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6712,7 +6712,7 @@ undefined1 FUN_10169f20(int *param_1)
 // Reference entry 10169f40; body size 17 bytes.
 #line 1 "ENTRY_10169f40"
 
-undefined1 FUN_10169f40(int *param_1)
+undefined1 __stdcall FUN_10169f40(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6725,7 +6725,7 @@ undefined1 FUN_10169f40(int *param_1)
 // Reference entry 10169f60; body size 17 bytes.
 #line 1 "ENTRY_10169f60"
 
-undefined1 FUN_10169f60(int *param_1)
+undefined1 __stdcall FUN_10169f60(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6738,7 +6738,7 @@ undefined1 FUN_10169f60(int *param_1)
 // Reference entry 10169f80; body size 17 bytes.
 #line 1 "ENTRY_10169f80"
 
-undefined1 FUN_10169f80(int *param_1)
+undefined1 __stdcall FUN_10169f80(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6751,7 +6751,7 @@ undefined1 FUN_10169f80(int *param_1)
 // Reference entry 10169fa0; body size 17 bytes.
 #line 1 "ENTRY_10169fa0"
 
-undefined1 FUN_10169fa0(int *param_1)
+undefined1 __stdcall FUN_10169fa0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6764,7 +6764,7 @@ undefined1 FUN_10169fa0(int *param_1)
 // Reference entry 1016b040; body size 17 bytes.
 #line 1 "ENTRY_1016b040"
 
-undefined1 FUN_1016b040(int *param_1)
+undefined1 __stdcall FUN_1016b040(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6777,7 +6777,7 @@ undefined1 FUN_1016b040(int *param_1)
 // Reference entry 1016e970; body size 17 bytes.
 #line 1 "ENTRY_1016e970"
 
-undefined1 FUN_1016e970(int *param_1)
+undefined1 __stdcall FUN_1016e970(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6790,7 +6790,7 @@ undefined1 FUN_1016e970(int *param_1)
 // Reference entry 1016e990; body size 17 bytes.
 #line 1 "ENTRY_1016e990"
 
-undefined1 FUN_1016e990(int *param_1)
+undefined1 __stdcall FUN_1016e990(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6803,7 +6803,7 @@ undefined1 FUN_1016e990(int *param_1)
 // Reference entry 10170210; body size 17 bytes.
 #line 1 "ENTRY_10170210"
 
-undefined1 FUN_10170210(int *param_1)
+undefined1 __stdcall FUN_10170210(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6816,7 +6816,7 @@ undefined1 FUN_10170210(int *param_1)
 // Reference entry 10170230; body size 17 bytes.
 #line 1 "ENTRY_10170230"
 
-undefined1 FUN_10170230(int *param_1)
+undefined1 __stdcall FUN_10170230(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6829,7 +6829,7 @@ undefined1 FUN_10170230(int *param_1)
 // Reference entry 10170450; body size 17 bytes.
 #line 1 "ENTRY_10170450"
 
-undefined1 FUN_10170450(int *param_1)
+undefined1 __stdcall FUN_10170450(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6842,7 +6842,7 @@ undefined1 FUN_10170450(int *param_1)
 // Reference entry 10170d30; body size 17 bytes.
 #line 1 "ENTRY_10170d30"
 
-undefined1 FUN_10170d30(int *param_1)
+undefined1 __stdcall FUN_10170d30(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6855,7 +6855,7 @@ undefined1 FUN_10170d30(int *param_1)
 // Reference entry 10170e60; body size 17 bytes.
 #line 1 "ENTRY_10170e60"
 
-undefined1 FUN_10170e60(int *param_1)
+undefined1 __stdcall FUN_10170e60(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6868,7 +6868,7 @@ undefined1 FUN_10170e60(int *param_1)
 // Reference entry 10170e80; body size 17 bytes.
 #line 1 "ENTRY_10170e80"
 
-undefined1 FUN_10170e80(int *param_1)
+undefined1 __stdcall FUN_10170e80(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6881,7 +6881,7 @@ undefined1 FUN_10170e80(int *param_1)
 // Reference entry 10172cf0; body size 17 bytes.
 #line 1 "ENTRY_10172cf0"
 
-undefined1 FUN_10172cf0(int *param_1)
+undefined1 __stdcall FUN_10172cf0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6894,7 +6894,7 @@ undefined1 FUN_10172cf0(int *param_1)
 // Reference entry 10173250; body size 20 bytes.
 #line 1 "ENTRY_10173250"
 
-undefined1 FUN_10173250(int *param_1)
+undefined1 __stdcall FUN_10173250(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6907,7 +6907,7 @@ undefined1 FUN_10173250(int *param_1)
 // Reference entry 10173d70; body size 20 bytes.
 #line 1 "ENTRY_10173d70"
 
-undefined1 FUN_10173d70(int *param_1)
+undefined1 __stdcall FUN_10173d70(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6920,7 +6920,7 @@ undefined1 FUN_10173d70(int *param_1)
 // Reference entry 101741e0; body size 20 bytes.
 #line 1 "ENTRY_101741e0"
 
-undefined1 FUN_101741e0(int *param_1)
+undefined1 __stdcall FUN_101741e0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6933,7 +6933,7 @@ undefined1 FUN_101741e0(int *param_1)
 // Reference entry 10174200; body size 20 bytes.
 #line 1 "ENTRY_10174200"
 
-undefined1 FUN_10174200(int *param_1)
+undefined1 __stdcall FUN_10174200(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6946,7 +6946,7 @@ undefined1 FUN_10174200(int *param_1)
 // Reference entry 10174220; body size 20 bytes.
 #line 1 "ENTRY_10174220"
 
-undefined1 FUN_10174220(int *param_1)
+undefined1 __stdcall FUN_10174220(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6959,7 +6959,7 @@ undefined1 FUN_10174220(int *param_1)
 // Reference entry 10174240; body size 20 bytes.
 #line 1 "ENTRY_10174240"
 
-undefined1 FUN_10174240(int *param_1)
+undefined1 __stdcall FUN_10174240(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6972,7 +6972,7 @@ undefined1 FUN_10174240(int *param_1)
 // Reference entry 10174260; body size 20 bytes.
 #line 1 "ENTRY_10174260"
 
-undefined1 FUN_10174260(int *param_1)
+undefined1 __stdcall FUN_10174260(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6985,7 +6985,7 @@ undefined1 FUN_10174260(int *param_1)
 // Reference entry 10174280; body size 20 bytes.
 #line 1 "ENTRY_10174280"
 
-undefined1 FUN_10174280(int *param_1)
+undefined1 __stdcall FUN_10174280(int *param_1)
 
 {
   undefined1 uVar1;
@@ -6998,7 +6998,7 @@ undefined1 FUN_10174280(int *param_1)
 // Reference entry 101742a0; body size 20 bytes.
 #line 1 "ENTRY_101742a0"
 
-undefined1 FUN_101742a0(int *param_1)
+undefined1 __stdcall FUN_101742a0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7011,7 +7011,7 @@ undefined1 FUN_101742a0(int *param_1)
 // Reference entry 101742c0; body size 20 bytes.
 #line 1 "ENTRY_101742c0"
 
-undefined1 FUN_101742c0(int *param_1)
+undefined1 __stdcall FUN_101742c0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7024,7 +7024,7 @@ undefined1 FUN_101742c0(int *param_1)
 // Reference entry 101743a0; body size 20 bytes.
 #line 1 "ENTRY_101743a0"
 
-undefined1 FUN_101743a0(int *param_1)
+undefined1 __stdcall FUN_101743a0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7037,7 +7037,7 @@ undefined1 FUN_101743a0(int *param_1)
 // Reference entry 101753b0; body size 20 bytes.
 #line 1 "ENTRY_101753b0"
 
-undefined1 FUN_101753b0(int *param_1)
+undefined1 __stdcall FUN_101753b0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7050,7 +7050,7 @@ undefined1 FUN_101753b0(int *param_1)
 // Reference entry 10175820; body size 20 bytes.
 #line 1 "ENTRY_10175820"
 
-undefined1 FUN_10175820(int *param_1)
+undefined1 __stdcall FUN_10175820(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7063,7 +7063,7 @@ undefined1 FUN_10175820(int *param_1)
 // Reference entry 10175ab0; body size 20 bytes.
 #line 1 "ENTRY_10175ab0"
 
-undefined1 FUN_10175ab0(int *param_1)
+undefined1 __stdcall FUN_10175ab0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7076,7 +7076,7 @@ undefined1 FUN_10175ab0(int *param_1)
 // Reference entry 10175ad0; body size 20 bytes.
 #line 1 "ENTRY_10175ad0"
 
-undefined1 FUN_10175ad0(int *param_1)
+undefined1 __stdcall FUN_10175ad0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7089,7 +7089,7 @@ undefined1 FUN_10175ad0(int *param_1)
 // Reference entry 10175b10; body size 17 bytes.
 #line 1 "ENTRY_10175b10"
 
-undefined1 FUN_10175b10(int *param_1)
+undefined1 __stdcall FUN_10175b10(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7102,7 +7102,7 @@ undefined1 FUN_10175b10(int *param_1)
 // Reference entry 10175b30; body size 17 bytes.
 #line 1 "ENTRY_10175b30"
 
-undefined1 FUN_10175b30(int *param_1)
+undefined1 __stdcall FUN_10175b30(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7115,7 +7115,7 @@ undefined1 FUN_10175b30(int *param_1)
 // Reference entry 10175b50; body size 17 bytes.
 #line 1 "ENTRY_10175b50"
 
-undefined1 FUN_10175b50(int *param_1)
+undefined1 __stdcall FUN_10175b50(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7128,7 +7128,7 @@ undefined1 FUN_10175b50(int *param_1)
 // Reference entry 10175b70; body size 20 bytes.
 #line 1 "ENTRY_10175b70"
 
-undefined1 FUN_10175b70(int *param_1)
+undefined1 __stdcall FUN_10175b70(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7141,7 +7141,7 @@ undefined1 FUN_10175b70(int *param_1)
 // Reference entry 10175bd0; body size 17 bytes.
 #line 1 "ENTRY_10175bd0"
 
-undefined1 FUN_10175bd0(int *param_1)
+undefined1 __stdcall FUN_10175bd0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7154,7 +7154,7 @@ undefined1 FUN_10175bd0(int *param_1)
 // Reference entry 10175bf0; body size 20 bytes.
 #line 1 "ENTRY_10175bf0"
 
-undefined1 FUN_10175bf0(int *param_1)
+undefined1 __stdcall FUN_10175bf0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7167,7 +7167,7 @@ undefined1 FUN_10175bf0(int *param_1)
 // Reference entry 10175c10; body size 20 bytes.
 #line 1 "ENTRY_10175c10"
 
-undefined1 FUN_10175c10(int *param_1)
+undefined1 __stdcall FUN_10175c10(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7180,7 +7180,7 @@ undefined1 FUN_10175c10(int *param_1)
 // Reference entry 10175e50; body size 17 bytes.
 #line 1 "ENTRY_10175e50"
 
-undefined1 FUN_10175e50(int *param_1)
+undefined1 __stdcall FUN_10175e50(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7193,7 +7193,7 @@ undefined1 FUN_10175e50(int *param_1)
 // Reference entry 10176730; body size 17 bytes.
 #line 1 "ENTRY_10176730"
 
-undefined1 FUN_10176730(int *param_1)
+undefined1 __stdcall FUN_10176730(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7206,7 +7206,7 @@ undefined1 FUN_10176730(int *param_1)
 // Reference entry 10176800; body size 17 bytes.
 #line 1 "ENTRY_10176800"
 
-undefined1 FUN_10176800(int *param_1)
+undefined1 __stdcall FUN_10176800(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7219,7 +7219,7 @@ undefined1 FUN_10176800(int *param_1)
 // Reference entry 101768d0; body size 17 bytes.
 #line 1 "ENTRY_101768d0"
 
-undefined1 FUN_101768d0(int *param_1)
+undefined1 __stdcall FUN_101768d0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7232,7 +7232,7 @@ undefined1 FUN_101768d0(int *param_1)
 // Reference entry 10176900; body size 17 bytes.
 #line 1 "ENTRY_10176900"
 
-undefined1 FUN_10176900(int *param_1)
+undefined1 __stdcall FUN_10176900(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7245,7 +7245,7 @@ undefined1 FUN_10176900(int *param_1)
 // Reference entry 101769e0; body size 17 bytes.
 #line 1 "ENTRY_101769e0"
 
-undefined1 FUN_101769e0(int *param_1)
+undefined1 __stdcall FUN_101769e0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7258,7 +7258,7 @@ undefined1 FUN_101769e0(int *param_1)
 // Reference entry 10176ab0; body size 17 bytes.
 #line 1 "ENTRY_10176ab0"
 
-undefined1 FUN_10176ab0(int *param_1)
+undefined1 __stdcall FUN_10176ab0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7271,7 +7271,7 @@ undefined1 FUN_10176ab0(int *param_1)
 // Reference entry 10177770; body size 17 bytes.
 #line 1 "ENTRY_10177770"
 
-undefined1 FUN_10177770(int *param_1)
+undefined1 __stdcall FUN_10177770(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7284,7 +7284,7 @@ undefined1 FUN_10177770(int *param_1)
 // Reference entry 10177aa0; body size 17 bytes.
 #line 1 "ENTRY_10177aa0"
 
-undefined1 FUN_10177aa0(int *param_1)
+undefined1 __stdcall FUN_10177aa0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7297,7 +7297,7 @@ undefined1 FUN_10177aa0(int *param_1)
 // Reference entry 10177ad0; body size 17 bytes.
 #line 1 "ENTRY_10177ad0"
 
-undefined1 FUN_10177ad0(int *param_1)
+undefined1 __stdcall FUN_10177ad0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7310,7 +7310,7 @@ undefined1 FUN_10177ad0(int *param_1)
 // Reference entry 10177f80; body size 17 bytes.
 #line 1 "ENTRY_10177f80"
 
-undefined1 FUN_10177f80(int *param_1)
+undefined1 __stdcall FUN_10177f80(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7323,7 +7323,7 @@ undefined1 FUN_10177f80(int *param_1)
 // Reference entry 10178290; body size 17 bytes.
 #line 1 "ENTRY_10178290"
 
-undefined1 FUN_10178290(int *param_1)
+undefined1 __stdcall FUN_10178290(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7336,7 +7336,7 @@ undefined1 FUN_10178290(int *param_1)
 // Reference entry 101782b0; body size 17 bytes.
 #line 1 "ENTRY_101782b0"
 
-undefined1 FUN_101782b0(int *param_1)
+undefined1 __stdcall FUN_101782b0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7349,7 +7349,7 @@ undefined1 FUN_101782b0(int *param_1)
 // Reference entry 10178440; body size 17 bytes.
 #line 1 "ENTRY_10178440"
 
-undefined1 FUN_10178440(int *param_1)
+undefined1 __stdcall FUN_10178440(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7362,7 +7362,7 @@ undefined1 FUN_10178440(int *param_1)
 // Reference entry 101789e0; body size 17 bytes.
 #line 1 "ENTRY_101789e0"
 
-undefined1 FUN_101789e0(int *param_1)
+undefined1 __stdcall FUN_101789e0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7375,7 +7375,7 @@ undefined1 FUN_101789e0(int *param_1)
 // Reference entry 10179480; body size 17 bytes.
 #line 1 "ENTRY_10179480"
 
-undefined1 FUN_10179480(int *param_1)
+undefined1 __stdcall FUN_10179480(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7388,7 +7388,7 @@ undefined1 FUN_10179480(int *param_1)
 // Reference entry 10179690; body size 17 bytes.
 #line 1 "ENTRY_10179690"
 
-undefined1 FUN_10179690(int *param_1)
+undefined1 __stdcall FUN_10179690(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7401,7 +7401,7 @@ undefined1 FUN_10179690(int *param_1)
 // Reference entry 10179840; body size 17 bytes.
 #line 1 "ENTRY_10179840"
 
-undefined1 FUN_10179840(int *param_1)
+undefined1 __stdcall FUN_10179840(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7414,7 +7414,7 @@ undefined1 FUN_10179840(int *param_1)
 // Reference entry 10179b70; body size 17 bytes.
 #line 1 "ENTRY_10179b70"
 
-undefined1 FUN_10179b70(int *param_1)
+undefined1 __stdcall FUN_10179b70(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7427,7 +7427,7 @@ undefined1 FUN_10179b70(int *param_1)
 // Reference entry 10179b90; body size 17 bytes.
 #line 1 "ENTRY_10179b90"
 
-undefined1 FUN_10179b90(int *param_1)
+undefined1 __stdcall FUN_10179b90(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7440,7 +7440,7 @@ undefined1 FUN_10179b90(int *param_1)
 // Reference entry 1017b0d0; body size 17 bytes.
 #line 1 "ENTRY_1017b0d0"
 
-undefined1 FUN_1017b0d0(int *param_1)
+undefined1 __stdcall FUN_1017b0d0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7453,7 +7453,7 @@ undefined1 FUN_1017b0d0(int *param_1)
 // Reference entry 1017b4f0; body size 17 bytes.
 #line 1 "ENTRY_1017b4f0"
 
-undefined1 FUN_1017b4f0(int *param_1)
+undefined1 __stdcall FUN_1017b4f0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7466,7 +7466,7 @@ undefined1 FUN_1017b4f0(int *param_1)
 // Reference entry 1017b560; body size 17 bytes.
 #line 1 "ENTRY_1017b560"
 
-undefined1 FUN_1017b560(int *param_1)
+undefined1 __stdcall FUN_1017b560(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7479,7 +7479,7 @@ undefined1 FUN_1017b560(int *param_1)
 // Reference entry 1017b580; body size 17 bytes.
 #line 1 "ENTRY_1017b580"
 
-undefined1 FUN_1017b580(int *param_1)
+undefined1 __stdcall FUN_1017b580(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7492,7 +7492,7 @@ undefined1 FUN_1017b580(int *param_1)
 // Reference entry 1017d950; body size 17 bytes.
 #line 1 "ENTRY_1017d950"
 
-undefined1 FUN_1017d950(int *param_1)
+undefined1 __stdcall FUN_1017d950(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7505,7 +7505,7 @@ undefined1 FUN_1017d950(int *param_1)
 // Reference entry 1017e4b0; body size 17 bytes.
 #line 1 "ENTRY_1017e4b0"
 
-undefined1 FUN_1017e4b0(int *param_1)
+undefined1 __stdcall FUN_1017e4b0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7518,7 +7518,7 @@ undefined1 FUN_1017e4b0(int *param_1)
 // Reference entry 1017e4d0; body size 17 bytes.
 #line 1 "ENTRY_1017e4d0"
 
-undefined1 FUN_1017e4d0(int *param_1)
+undefined1 __stdcall FUN_1017e4d0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7531,7 +7531,7 @@ undefined1 FUN_1017e4d0(int *param_1)
 // Reference entry 1017e4f0; body size 17 bytes.
 #line 1 "ENTRY_1017e4f0"
 
-undefined1 FUN_1017e4f0(int *param_1)
+undefined1 __stdcall FUN_1017e4f0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7544,7 +7544,7 @@ undefined1 FUN_1017e4f0(int *param_1)
 // Reference entry 1017e530; body size 17 bytes.
 #line 1 "ENTRY_1017e530"
 
-undefined1 FUN_1017e530(int *param_1)
+undefined1 __stdcall FUN_1017e530(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7557,7 +7557,7 @@ undefined1 FUN_1017e530(int *param_1)
 // Reference entry 1017e550; body size 17 bytes.
 #line 1 "ENTRY_1017e550"
 
-undefined1 FUN_1017e550(int *param_1)
+undefined1 __stdcall FUN_1017e550(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7570,7 +7570,7 @@ undefined1 FUN_1017e550(int *param_1)
 // Reference entry 1017f0f0; body size 17 bytes.
 #line 1 "ENTRY_1017f0f0"
 
-undefined1 FUN_1017f0f0(int *param_1)
+undefined1 __stdcall FUN_1017f0f0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7583,7 +7583,7 @@ undefined1 FUN_1017f0f0(int *param_1)
 // Reference entry 1017f5b0; body size 17 bytes.
 #line 1 "ENTRY_1017f5b0"
 
-undefined1 FUN_1017f5b0(int *param_1)
+undefined1 __stdcall FUN_1017f5b0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7596,7 +7596,7 @@ undefined1 FUN_1017f5b0(int *param_1)
 // Reference entry 1017fb90; body size 17 bytes.
 #line 1 "ENTRY_1017fb90"
 
-undefined1 FUN_1017fb90(int *param_1)
+undefined1 __stdcall FUN_1017fb90(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7609,7 +7609,7 @@ undefined1 FUN_1017fb90(int *param_1)
 // Reference entry 1017fd40; body size 17 bytes.
 #line 1 "ENTRY_1017fd40"
 
-undefined1 FUN_1017fd40(int *param_1)
+undefined1 __stdcall FUN_1017fd40(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7622,7 +7622,7 @@ undefined1 FUN_1017fd40(int *param_1)
 // Reference entry 10180500; body size 17 bytes.
 #line 1 "ENTRY_10180500"
 
-undefined1 FUN_10180500(int *param_1)
+undefined1 __stdcall FUN_10180500(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7635,7 +7635,7 @@ undefined1 FUN_10180500(int *param_1)
 // Reference entry 10180520; body size 17 bytes.
 #line 1 "ENTRY_10180520"
 
-undefined1 FUN_10180520(int *param_1)
+undefined1 __stdcall FUN_10180520(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7648,7 +7648,7 @@ undefined1 FUN_10180520(int *param_1)
 // Reference entry 10180de0; body size 17 bytes.
 #line 1 "ENTRY_10180de0"
 
-undefined1 FUN_10180de0(int *param_1)
+undefined1 __stdcall FUN_10180de0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7661,7 +7661,7 @@ undefined1 FUN_10180de0(int *param_1)
 // Reference entry 10180e00; body size 17 bytes.
 #line 1 "ENTRY_10180e00"
 
-undefined1 FUN_10180e00(int *param_1)
+undefined1 __stdcall FUN_10180e00(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7674,7 +7674,7 @@ undefined1 FUN_10180e00(int *param_1)
 // Reference entry 10180e20; body size 17 bytes.
 #line 1 "ENTRY_10180e20"
 
-undefined1 FUN_10180e20(int *param_1)
+undefined1 __stdcall FUN_10180e20(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7687,7 +7687,7 @@ undefined1 FUN_10180e20(int *param_1)
 // Reference entry 10180e40; body size 17 bytes.
 #line 1 "ENTRY_10180e40"
 
-undefined1 FUN_10180e40(int *param_1)
+undefined1 __stdcall FUN_10180e40(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7700,7 +7700,7 @@ undefined1 FUN_10180e40(int *param_1)
 // Reference entry 10181d60; body size 17 bytes.
 #line 1 "ENTRY_10181d60"
 
-undefined1 FUN_10181d60(int *param_1)
+undefined1 __stdcall FUN_10181d60(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7713,7 +7713,7 @@ undefined1 FUN_10181d60(int *param_1)
 // Reference entry 10181d80; body size 17 bytes.
 #line 1 "ENTRY_10181d80"
 
-undefined1 FUN_10181d80(int *param_1)
+undefined1 __stdcall FUN_10181d80(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7726,7 +7726,7 @@ undefined1 FUN_10181d80(int *param_1)
 // Reference entry 10181da0; body size 17 bytes.
 #line 1 "ENTRY_10181da0"
 
-undefined1 FUN_10181da0(int *param_1)
+undefined1 __stdcall FUN_10181da0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7739,7 +7739,7 @@ undefined1 FUN_10181da0(int *param_1)
 // Reference entry 10181dd0; body size 17 bytes.
 #line 1 "ENTRY_10181dd0"
 
-undefined1 FUN_10181dd0(int *param_1)
+undefined1 __stdcall FUN_10181dd0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7752,7 +7752,7 @@ undefined1 FUN_10181dd0(int *param_1)
 // Reference entry 101825e0; body size 17 bytes.
 #line 1 "ENTRY_101825e0"
 
-undefined1 FUN_101825e0(int *param_1)
+undefined1 __stdcall FUN_101825e0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7765,7 +7765,7 @@ undefined1 FUN_101825e0(int *param_1)
 // Reference entry 10182600; body size 17 bytes.
 #line 1 "ENTRY_10182600"
 
-undefined1 FUN_10182600(int *param_1)
+undefined1 __stdcall FUN_10182600(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7778,7 +7778,7 @@ undefined1 FUN_10182600(int *param_1)
 // Reference entry 10183000; body size 17 bytes.
 #line 1 "ENTRY_10183000"
 
-undefined1 FUN_10183000(int *param_1)
+undefined1 __stdcall FUN_10183000(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7791,7 +7791,7 @@ undefined1 FUN_10183000(int *param_1)
 // Reference entry 10183020; body size 17 bytes.
 #line 1 "ENTRY_10183020"
 
-undefined1 FUN_10183020(int *param_1)
+undefined1 __stdcall FUN_10183020(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7804,7 +7804,7 @@ undefined1 FUN_10183020(int *param_1)
 // Reference entry 10183040; body size 17 bytes.
 #line 1 "ENTRY_10183040"
 
-undefined1 FUN_10183040(int *param_1)
+undefined1 __stdcall FUN_10183040(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7817,7 +7817,7 @@ undefined1 FUN_10183040(int *param_1)
 // Reference entry 10183060; body size 17 bytes.
 #line 1 "ENTRY_10183060"
 
-undefined1 FUN_10183060(int *param_1)
+undefined1 __stdcall FUN_10183060(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7830,7 +7830,7 @@ undefined1 FUN_10183060(int *param_1)
 // Reference entry 10183080; body size 17 bytes.
 #line 1 "ENTRY_10183080"
 
-undefined1 FUN_10183080(int *param_1)
+undefined1 __stdcall FUN_10183080(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7843,7 +7843,7 @@ undefined1 FUN_10183080(int *param_1)
 // Reference entry 101830a0; body size 17 bytes.
 #line 1 "ENTRY_101830a0"
 
-undefined1 FUN_101830a0(int *param_1)
+undefined1 __stdcall FUN_101830a0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7856,7 +7856,7 @@ undefined1 FUN_101830a0(int *param_1)
 // Reference entry 10183a50; body size 17 bytes.
 #line 1 "ENTRY_10183a50"
 
-undefined1 FUN_10183a50(int *param_1)
+undefined1 __stdcall FUN_10183a50(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7869,7 +7869,7 @@ undefined1 FUN_10183a50(int *param_1)
 // Reference entry 10184280; body size 17 bytes.
 #line 1 "ENTRY_10184280"
 
-undefined1 FUN_10184280(int *param_1)
+undefined1 __stdcall FUN_10184280(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7882,7 +7882,7 @@ undefined1 FUN_10184280(int *param_1)
 // Reference entry 10185660; body size 17 bytes.
 #line 1 "ENTRY_10185660"
 
-undefined1 FUN_10185660(int *param_1)
+undefined1 __stdcall FUN_10185660(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7895,7 +7895,7 @@ undefined1 FUN_10185660(int *param_1)
 // Reference entry 10185680; body size 17 bytes.
 #line 1 "ENTRY_10185680"
 
-undefined1 FUN_10185680(int *param_1)
+undefined1 __stdcall FUN_10185680(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7908,7 +7908,7 @@ undefined1 FUN_10185680(int *param_1)
 // Reference entry 101856a0; body size 17 bytes.
 #line 1 "ENTRY_101856a0"
 
-undefined1 FUN_101856a0(int *param_1)
+undefined1 __stdcall FUN_101856a0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7921,7 +7921,7 @@ undefined1 FUN_101856a0(int *param_1)
 // Reference entry 101856c0; body size 17 bytes.
 #line 1 "ENTRY_101856c0"
 
-undefined1 FUN_101856c0(int *param_1)
+undefined1 __stdcall FUN_101856c0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7934,7 +7934,7 @@ undefined1 FUN_101856c0(int *param_1)
 // Reference entry 101856e0; body size 17 bytes.
 #line 1 "ENTRY_101856e0"
 
-undefined1 FUN_101856e0(int *param_1)
+undefined1 __stdcall FUN_101856e0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7947,7 +7947,7 @@ undefined1 FUN_101856e0(int *param_1)
 // Reference entry 10185700; body size 17 bytes.
 #line 1 "ENTRY_10185700"
 
-undefined1 FUN_10185700(int *param_1)
+undefined1 __stdcall FUN_10185700(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7960,7 +7960,7 @@ undefined1 FUN_10185700(int *param_1)
 // Reference entry 10185800; body size 17 bytes.
 #line 1 "ENTRY_10185800"
 
-undefined1 FUN_10185800(int *param_1)
+undefined1 __stdcall FUN_10185800(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7973,7 +7973,7 @@ undefined1 FUN_10185800(int *param_1)
 // Reference entry 10186130; body size 17 bytes.
 #line 1 "ENTRY_10186130"
 
-undefined1 FUN_10186130(int *param_1)
+undefined1 __stdcall FUN_10186130(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7986,7 +7986,7 @@ undefined1 FUN_10186130(int *param_1)
 // Reference entry 10186150; body size 17 bytes.
 #line 1 "ENTRY_10186150"
 
-undefined1 FUN_10186150(int *param_1)
+undefined1 __stdcall FUN_10186150(int *param_1)
 
 {
   undefined1 uVar1;
@@ -7999,7 +7999,7 @@ undefined1 FUN_10186150(int *param_1)
 // Reference entry 10186170; body size 17 bytes.
 #line 1 "ENTRY_10186170"
 
-undefined1 FUN_10186170(int *param_1)
+undefined1 __stdcall FUN_10186170(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8012,7 +8012,7 @@ undefined1 FUN_10186170(int *param_1)
 // Reference entry 10186190; body size 17 bytes.
 #line 1 "ENTRY_10186190"
 
-undefined1 FUN_10186190(int *param_1)
+undefined1 __stdcall FUN_10186190(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8025,7 +8025,7 @@ undefined1 FUN_10186190(int *param_1)
 // Reference entry 101869b0; body size 17 bytes.
 #line 1 "ENTRY_101869b0"
 
-undefined1 FUN_101869b0(int *param_1)
+undefined1 __stdcall FUN_101869b0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8038,7 +8038,7 @@ undefined1 FUN_101869b0(int *param_1)
 // Reference entry 10187ac0; body size 17 bytes.
 #line 1 "ENTRY_10187ac0"
 
-undefined1 FUN_10187ac0(int *param_1)
+undefined1 __stdcall FUN_10187ac0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8051,7 +8051,7 @@ undefined1 FUN_10187ac0(int *param_1)
 // Reference entry 101884d0; body size 17 bytes.
 #line 1 "ENTRY_101884d0"
 
-undefined1 FUN_101884d0(int *param_1)
+undefined1 __stdcall FUN_101884d0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8064,7 +8064,7 @@ undefined1 FUN_101884d0(int *param_1)
 // Reference entry 10188610; body size 17 bytes.
 #line 1 "ENTRY_10188610"
 
-undefined1 FUN_10188610(int *param_1)
+undefined1 __stdcall FUN_10188610(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8077,7 +8077,7 @@ undefined1 FUN_10188610(int *param_1)
 // Reference entry 10188a20; body size 17 bytes.
 #line 1 "ENTRY_10188a20"
 
-undefined1 FUN_10188a20(int *param_1)
+undefined1 __stdcall FUN_10188a20(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8090,7 +8090,7 @@ undefined1 FUN_10188a20(int *param_1)
 // Reference entry 1018ac30; body size 17 bytes.
 #line 1 "ENTRY_1018ac30"
 
-undefined1 FUN_1018ac30(int *param_1)
+undefined1 __stdcall FUN_1018ac30(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8103,7 +8103,7 @@ undefined1 FUN_1018ac30(int *param_1)
 // Reference entry 1018ac50; body size 17 bytes.
 #line 1 "ENTRY_1018ac50"
 
-undefined1 FUN_1018ac50(int *param_1)
+undefined1 __stdcall FUN_1018ac50(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8116,7 +8116,7 @@ undefined1 FUN_1018ac50(int *param_1)
 // Reference entry 1018ac70; body size 17 bytes.
 #line 1 "ENTRY_1018ac70"
 
-undefined1 FUN_1018ac70(int *param_1)
+undefined1 __stdcall FUN_1018ac70(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8129,7 +8129,7 @@ undefined1 FUN_1018ac70(int *param_1)
 // Reference entry 1018ac90; body size 17 bytes.
 #line 1 "ENTRY_1018ac90"
 
-undefined1 FUN_1018ac90(int *param_1)
+undefined1 __stdcall FUN_1018ac90(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8142,7 +8142,7 @@ undefined1 FUN_1018ac90(int *param_1)
 // Reference entry 1018afa0; body size 17 bytes.
 #line 1 "ENTRY_1018afa0"
 
-undefined1 FUN_1018afa0(int *param_1)
+undefined1 __stdcall FUN_1018afa0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8155,7 +8155,7 @@ undefined1 FUN_1018afa0(int *param_1)
 // Reference entry 1018b0d0; body size 17 bytes.
 #line 1 "ENTRY_1018b0d0"
 
-undefined1 FUN_1018b0d0(int *param_1)
+undefined1 __stdcall FUN_1018b0d0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8168,7 +8168,7 @@ undefined1 FUN_1018b0d0(int *param_1)
 // Reference entry 1018bc40; body size 17 bytes.
 #line 1 "ENTRY_1018bc40"
 
-undefined1 FUN_1018bc40(int *param_1)
+undefined1 __stdcall FUN_1018bc40(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8181,7 +8181,7 @@ undefined1 FUN_1018bc40(int *param_1)
 // Reference entry 1018bc60; body size 17 bytes.
 #line 1 "ENTRY_1018bc60"
 
-undefined1 FUN_1018bc60(int *param_1)
+undefined1 __stdcall FUN_1018bc60(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8194,7 +8194,7 @@ undefined1 FUN_1018bc60(int *param_1)
 // Reference entry 1018bc80; body size 17 bytes.
 #line 1 "ENTRY_1018bc80"
 
-undefined1 FUN_1018bc80(int *param_1)
+undefined1 __stdcall FUN_1018bc80(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8207,7 +8207,7 @@ undefined1 FUN_1018bc80(int *param_1)
 // Reference entry 1018c1f0; body size 17 bytes.
 #line 1 "ENTRY_1018c1f0"
 
-undefined1 FUN_1018c1f0(int *param_1)
+undefined1 __stdcall FUN_1018c1f0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8220,7 +8220,7 @@ undefined1 FUN_1018c1f0(int *param_1)
 // Reference entry 1018c550; body size 17 bytes.
 #line 1 "ENTRY_1018c550"
 
-undefined1 FUN_1018c550(int *param_1)
+undefined1 __stdcall FUN_1018c550(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8233,7 +8233,7 @@ undefined1 FUN_1018c550(int *param_1)
 // Reference entry 1018c710; body size 17 bytes.
 #line 1 "ENTRY_1018c710"
 
-undefined1 FUN_1018c710(int *param_1)
+undefined1 __stdcall FUN_1018c710(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8246,7 +8246,7 @@ undefined1 FUN_1018c710(int *param_1)
 // Reference entry 1018c730; body size 17 bytes.
 #line 1 "ENTRY_1018c730"
 
-undefined1 FUN_1018c730(int *param_1)
+undefined1 __stdcall FUN_1018c730(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8259,7 +8259,7 @@ undefined1 FUN_1018c730(int *param_1)
 // Reference entry 1018cea0; body size 17 bytes.
 #line 1 "ENTRY_1018cea0"
 
-undefined1 FUN_1018cea0(int *param_1)
+undefined1 __stdcall FUN_1018cea0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8272,7 +8272,7 @@ undefined1 FUN_1018cea0(int *param_1)
 // Reference entry 1018d0a0; body size 17 bytes.
 #line 1 "ENTRY_1018d0a0"
 
-undefined1 FUN_1018d0a0(int *param_1)
+undefined1 __stdcall FUN_1018d0a0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8285,7 +8285,7 @@ undefined1 FUN_1018d0a0(int *param_1)
 // Reference entry 1018d3d0; body size 17 bytes.
 #line 1 "ENTRY_1018d3d0"
 
-undefined1 FUN_1018d3d0(int *param_1)
+undefined1 __stdcall FUN_1018d3d0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8298,7 +8298,7 @@ undefined1 FUN_1018d3d0(int *param_1)
 // Reference entry 1018d740; body size 17 bytes.
 #line 1 "ENTRY_1018d740"
 
-undefined1 FUN_1018d740(int *param_1)
+undefined1 __stdcall FUN_1018d740(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8311,7 +8311,7 @@ undefined1 FUN_1018d740(int *param_1)
 // Reference entry 1018d760; body size 17 bytes.
 #line 1 "ENTRY_1018d760"
 
-undefined1 FUN_1018d760(int *param_1)
+undefined1 __stdcall FUN_1018d760(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8324,7 +8324,7 @@ undefined1 FUN_1018d760(int *param_1)
 // Reference entry 1018daf0; body size 17 bytes.
 #line 1 "ENTRY_1018daf0"
 
-undefined1 FUN_1018daf0(int *param_1)
+undefined1 __stdcall FUN_1018daf0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8337,7 +8337,7 @@ undefined1 FUN_1018daf0(int *param_1)
 // Reference entry 1018e050; body size 17 bytes.
 #line 1 "ENTRY_1018e050"
 
-undefined1 FUN_1018e050(int *param_1)
+undefined1 __stdcall FUN_1018e050(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8350,7 +8350,7 @@ undefined1 FUN_1018e050(int *param_1)
 // Reference entry 1018e070; body size 17 bytes.
 #line 1 "ENTRY_1018e070"
 
-undefined1 FUN_1018e070(int *param_1)
+undefined1 __stdcall FUN_1018e070(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8363,7 +8363,7 @@ undefined1 FUN_1018e070(int *param_1)
 // Reference entry 1018e090; body size 17 bytes.
 #line 1 "ENTRY_1018e090"
 
-undefined1 FUN_1018e090(int *param_1)
+undefined1 __stdcall FUN_1018e090(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8376,7 +8376,7 @@ undefined1 FUN_1018e090(int *param_1)
 // Reference entry 1018ecb0; body size 17 bytes.
 #line 1 "ENTRY_1018ecb0"
 
-undefined1 FUN_1018ecb0(int *param_1)
+undefined1 __stdcall FUN_1018ecb0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8389,7 +8389,7 @@ undefined1 FUN_1018ecb0(int *param_1)
 // Reference entry 1018ed20; body size 17 bytes.
 #line 1 "ENTRY_1018ed20"
 
-undefined1 FUN_1018ed20(int *param_1)
+undefined1 __stdcall FUN_1018ed20(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8402,7 +8402,7 @@ undefined1 FUN_1018ed20(int *param_1)
 // Reference entry 1018f320; body size 17 bytes.
 #line 1 "ENTRY_1018f320"
 
-undefined1 FUN_1018f320(int *param_1)
+undefined1 __stdcall FUN_1018f320(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8415,7 +8415,7 @@ undefined1 FUN_1018f320(int *param_1)
 // Reference entry 1018f340; body size 17 bytes.
 #line 1 "ENTRY_1018f340"
 
-undefined1 FUN_1018f340(int *param_1)
+undefined1 __stdcall FUN_1018f340(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8428,7 +8428,7 @@ undefined1 FUN_1018f340(int *param_1)
 // Reference entry 1018f360; body size 17 bytes.
 #line 1 "ENTRY_1018f360"
 
-undefined1 FUN_1018f360(int *param_1)
+undefined1 __stdcall FUN_1018f360(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8441,7 +8441,7 @@ undefined1 FUN_1018f360(int *param_1)
 // Reference entry 1018f380; body size 17 bytes.
 #line 1 "ENTRY_1018f380"
 
-undefined1 FUN_1018f380(int *param_1)
+undefined1 __stdcall FUN_1018f380(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8454,7 +8454,7 @@ undefined1 FUN_1018f380(int *param_1)
 // Reference entry 1018f580; body size 17 bytes.
 #line 1 "ENTRY_1018f580"
 
-undefined1 FUN_1018f580(int *param_1)
+undefined1 __stdcall FUN_1018f580(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8467,7 +8467,7 @@ undefined1 FUN_1018f580(int *param_1)
 // Reference entry 10190820; body size 17 bytes.
 #line 1 "ENTRY_10190820"
 
-undefined1 FUN_10190820(int *param_1)
+undefined1 __stdcall FUN_10190820(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8480,7 +8480,7 @@ undefined1 FUN_10190820(int *param_1)
 // Reference entry 10190840; body size 17 bytes.
 #line 1 "ENTRY_10190840"
 
-undefined1 FUN_10190840(int *param_1)
+undefined1 __stdcall FUN_10190840(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8493,7 +8493,7 @@ undefined1 FUN_10190840(int *param_1)
 // Reference entry 10190860; body size 17 bytes.
 #line 1 "ENTRY_10190860"
 
-undefined1 FUN_10190860(int *param_1)
+undefined1 __stdcall FUN_10190860(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8506,7 +8506,7 @@ undefined1 FUN_10190860(int *param_1)
 // Reference entry 10190880; body size 20 bytes.
 #line 1 "ENTRY_10190880"
 
-undefined1 FUN_10190880(int *param_1)
+undefined1 __stdcall FUN_10190880(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8519,7 +8519,7 @@ undefined1 FUN_10190880(int *param_1)
 // Reference entry 101908a0; body size 17 bytes.
 #line 1 "ENTRY_101908a0"
 
-undefined1 FUN_101908a0(int *param_1)
+undefined1 __stdcall FUN_101908a0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8532,7 +8532,7 @@ undefined1 FUN_101908a0(int *param_1)
 // Reference entry 101908c0; body size 17 bytes.
 #line 1 "ENTRY_101908c0"
 
-undefined1 FUN_101908c0(int *param_1)
+undefined1 __stdcall FUN_101908c0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8545,7 +8545,7 @@ undefined1 FUN_101908c0(int *param_1)
 // Reference entry 101909a0; body size 20 bytes.
 #line 1 "ENTRY_101909a0"
 
-undefined1 FUN_101909a0(int *param_1)
+undefined1 __stdcall FUN_101909a0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8558,7 +8558,7 @@ undefined1 FUN_101909a0(int *param_1)
 // Reference entry 101918d0; body size 17 bytes.
 #line 1 "ENTRY_101918d0"
 
-undefined1 FUN_101918d0(int *param_1)
+undefined1 __stdcall FUN_101918d0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8571,7 +8571,7 @@ undefined1 FUN_101918d0(int *param_1)
 // Reference entry 101918f0; body size 17 bytes.
 #line 1 "ENTRY_101918f0"
 
-undefined1 FUN_101918f0(int *param_1)
+undefined1 __stdcall FUN_101918f0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8584,7 +8584,7 @@ undefined1 FUN_101918f0(int *param_1)
 // Reference entry 10191910; body size 17 bytes.
 #line 1 "ENTRY_10191910"
 
-undefined1 FUN_10191910(int *param_1)
+undefined1 __stdcall FUN_10191910(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8597,7 +8597,7 @@ undefined1 FUN_10191910(int *param_1)
 // Reference entry 10191930; body size 20 bytes.
 #line 1 "ENTRY_10191930"
 
-undefined1 FUN_10191930(int *param_1)
+undefined1 __stdcall FUN_10191930(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8610,7 +8610,7 @@ undefined1 FUN_10191930(int *param_1)
 // Reference entry 10191950; body size 17 bytes.
 #line 1 "ENTRY_10191950"
 
-undefined1 FUN_10191950(int *param_1)
+undefined1 __stdcall FUN_10191950(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8623,7 +8623,7 @@ undefined1 FUN_10191950(int *param_1)
 // Reference entry 10191970; body size 17 bytes.
 #line 1 "ENTRY_10191970"
 
-undefined1 FUN_10191970(int *param_1)
+undefined1 __stdcall FUN_10191970(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8636,7 +8636,7 @@ undefined1 FUN_10191970(int *param_1)
 // Reference entry 10191990; body size 17 bytes.
 #line 1 "ENTRY_10191990"
 
-undefined1 FUN_10191990(int *param_1)
+undefined1 __stdcall FUN_10191990(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8649,7 +8649,7 @@ undefined1 FUN_10191990(int *param_1)
 // Reference entry 101919b0; body size 17 bytes.
 #line 1 "ENTRY_101919b0"
 
-undefined1 FUN_101919b0(int *param_1)
+undefined1 __stdcall FUN_101919b0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8662,7 +8662,7 @@ undefined1 FUN_101919b0(int *param_1)
 // Reference entry 101919d0; body size 17 bytes.
 #line 1 "ENTRY_101919d0"
 
-undefined1 FUN_101919d0(int *param_1)
+undefined1 __stdcall FUN_101919d0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8675,7 +8675,7 @@ undefined1 FUN_101919d0(int *param_1)
 // Reference entry 10191a80; body size 17 bytes.
 #line 1 "ENTRY_10191a80"
 
-undefined1 FUN_10191a80(int *param_1)
+undefined1 __stdcall FUN_10191a80(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8688,7 +8688,7 @@ undefined1 FUN_10191a80(int *param_1)
 // Reference entry 10191ad0; body size 17 bytes.
 #line 1 "ENTRY_10191ad0"
 
-undefined1 FUN_10191ad0(int *param_1)
+undefined1 __stdcall FUN_10191ad0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8701,7 +8701,7 @@ undefined1 FUN_10191ad0(int *param_1)
 // Reference entry 10191d80; body size 20 bytes.
 #line 1 "ENTRY_10191d80"
 
-undefined1 FUN_10191d80(int *param_1)
+undefined1 __stdcall FUN_10191d80(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8714,7 +8714,7 @@ undefined1 FUN_10191d80(int *param_1)
 // Reference entry 10191da0; body size 20 bytes.
 #line 1 "ENTRY_10191da0"
 
-undefined1 FUN_10191da0(int *param_1)
+undefined1 __stdcall FUN_10191da0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8727,7 +8727,7 @@ undefined1 FUN_10191da0(int *param_1)
 // Reference entry 10192370; body size 17 bytes.
 #line 1 "ENTRY_10192370"
 
-undefined1 FUN_10192370(int *param_1)
+undefined1 __stdcall FUN_10192370(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8740,7 +8740,7 @@ undefined1 FUN_10192370(int *param_1)
 // Reference entry 10192390; body size 17 bytes.
 #line 1 "ENTRY_10192390"
 
-undefined1 FUN_10192390(int *param_1)
+undefined1 __stdcall FUN_10192390(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8753,7 +8753,7 @@ undefined1 FUN_10192390(int *param_1)
 // Reference entry 101923b0; body size 17 bytes.
 #line 1 "ENTRY_101923b0"
 
-undefined1 FUN_101923b0(int *param_1)
+undefined1 __stdcall FUN_101923b0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8766,7 +8766,7 @@ undefined1 FUN_101923b0(int *param_1)
 // Reference entry 101923d0; body size 17 bytes.
 #line 1 "ENTRY_101923d0"
 
-undefined1 FUN_101923d0(int *param_1)
+undefined1 __stdcall FUN_101923d0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8779,7 +8779,7 @@ undefined1 FUN_101923d0(int *param_1)
 // Reference entry 10192620; body size 17 bytes.
 #line 1 "ENTRY_10192620"
 
-undefined1 FUN_10192620(int *param_1)
+undefined1 __stdcall FUN_10192620(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8792,7 +8792,7 @@ undefined1 FUN_10192620(int *param_1)
 // Reference entry 10192640; body size 17 bytes.
 #line 1 "ENTRY_10192640"
 
-undefined1 FUN_10192640(int *param_1)
+undefined1 __stdcall FUN_10192640(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8805,7 +8805,7 @@ undefined1 FUN_10192640(int *param_1)
 // Reference entry 101927e0; body size 17 bytes.
 #line 1 "ENTRY_101927e0"
 
-undefined1 FUN_101927e0(int *param_1)
+undefined1 __stdcall FUN_101927e0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8818,7 +8818,7 @@ undefined1 FUN_101927e0(int *param_1)
 // Reference entry 10192800; body size 17 bytes.
 #line 1 "ENTRY_10192800"
 
-undefined1 FUN_10192800(int *param_1)
+undefined1 __stdcall FUN_10192800(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8831,7 +8831,7 @@ undefined1 FUN_10192800(int *param_1)
 // Reference entry 10192820; body size 17 bytes.
 #line 1 "ENTRY_10192820"
 
-undefined1 FUN_10192820(int *param_1)
+undefined1 __stdcall FUN_10192820(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8844,7 +8844,7 @@ undefined1 FUN_10192820(int *param_1)
 // Reference entry 10193040; body size 17 bytes.
 #line 1 "ENTRY_10193040"
 
-undefined1 FUN_10193040(int *param_1)
+undefined1 __stdcall FUN_10193040(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8857,7 +8857,7 @@ undefined1 FUN_10193040(int *param_1)
 // Reference entry 10193060; body size 17 bytes.
 #line 1 "ENTRY_10193060"
 
-undefined1 FUN_10193060(int *param_1)
+undefined1 __stdcall FUN_10193060(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8870,7 +8870,7 @@ undefined1 FUN_10193060(int *param_1)
 // Reference entry 10193080; body size 17 bytes.
 #line 1 "ENTRY_10193080"
 
-undefined1 FUN_10193080(int *param_1)
+undefined1 __stdcall FUN_10193080(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8883,7 +8883,7 @@ undefined1 FUN_10193080(int *param_1)
 // Reference entry 101930a0; body size 17 bytes.
 #line 1 "ENTRY_101930a0"
 
-undefined1 FUN_101930a0(int *param_1)
+undefined1 __stdcall FUN_101930a0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8896,7 +8896,7 @@ undefined1 FUN_101930a0(int *param_1)
 // Reference entry 101930c0; body size 17 bytes.
 #line 1 "ENTRY_101930c0"
 
-undefined1 FUN_101930c0(int *param_1)
+undefined1 __stdcall FUN_101930c0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8909,7 +8909,7 @@ undefined1 FUN_101930c0(int *param_1)
 // Reference entry 101930e0; body size 17 bytes.
 #line 1 "ENTRY_101930e0"
 
-undefined1 FUN_101930e0(int *param_1)
+undefined1 __stdcall FUN_101930e0(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8922,7 +8922,7 @@ undefined1 FUN_101930e0(int *param_1)
 // Reference entry 10193100; body size 17 bytes.
 #line 1 "ENTRY_10193100"
 
-undefined1 FUN_10193100(int *param_1)
+undefined1 __stdcall FUN_10193100(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8935,7 +8935,7 @@ undefined1 FUN_10193100(int *param_1)
 // Reference entry 10193120; body size 17 bytes.
 #line 1 "ENTRY_10193120"
 
-undefined1 FUN_10193120(int *param_1)
+undefined1 __stdcall FUN_10193120(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8948,7 +8948,7 @@ undefined1 FUN_10193120(int *param_1)
 // Reference entry 10193140; body size 17 bytes.
 #line 1 "ENTRY_10193140"
 
-undefined1 FUN_10193140(int *param_1)
+undefined1 __stdcall FUN_10193140(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8961,7 +8961,7 @@ undefined1 FUN_10193140(int *param_1)
 // Reference entry 10193160; body size 17 bytes.
 #line 1 "ENTRY_10193160"
 
-undefined1 FUN_10193160(int *param_1)
+undefined1 __stdcall FUN_10193160(int *param_1)
 
 {
   undefined1 uVar1;
@@ -8974,7 +8974,7 @@ undefined1 FUN_10193160(int *param_1)
 // Reference entry 10193180; body size 17 bytes.
 #line 1 "ENTRY_10193180"
 
-undefined1 FUN_10193180(int *param_1)
+undefined1 __stdcall FUN_10193180(int *param_1)
 
 {
   undefined1 uVar1;
@@ -9015,7 +9015,7 @@ void __stdcall FUN_10196370(int param_1,int *param_2)
 // Reference entry 10198020; body size 17 bytes.
 #line 1 "ENTRY_10198020"
 
-undefined1 FUN_10198020(int *param_1)
+undefined1 __stdcall FUN_10198020(int *param_1)
 
 {
   undefined1 uVar1;
@@ -9028,7 +9028,7 @@ undefined1 FUN_10198020(int *param_1)
 // Reference entry 10198520; body size 17 bytes.
 #line 1 "ENTRY_10198520"
 
-undefined1 FUN_10198520(int *param_1)
+undefined1 __stdcall FUN_10198520(int *param_1)
 
 {
   undefined1 uVar1;
@@ -9041,7 +9041,7 @@ undefined1 FUN_10198520(int *param_1)
 // Reference entry 10198560; body size 17 bytes.
 #line 1 "ENTRY_10198560"
 
-undefined1 FUN_10198560(int *param_1)
+undefined1 __stdcall FUN_10198560(int *param_1)
 
 {
   undefined1 uVar1;
@@ -9110,7 +9110,7 @@ void __stdcall FUN_101996d0(int param_1,int *param_2)
 // Reference entry 1019c350; body size 16 bytes.
 #line 1 "ENTRY_1019c350"
 
-void FUN_1019c350(int *param_1)
+void __stdcall FUN_1019c350(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9123,7 +9123,7 @@ void FUN_1019c350(int *param_1)
 // Reference entry 1019c370; body size 16 bytes.
 #line 1 "ENTRY_1019c370"
 
-void FUN_1019c370(int *param_1)
+void __stdcall FUN_1019c370(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9136,7 +9136,7 @@ void FUN_1019c370(int *param_1)
 // Reference entry 1019c390; body size 16 bytes.
 #line 1 "ENTRY_1019c390"
 
-void FUN_1019c390(int *param_1)
+void __stdcall FUN_1019c390(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9149,7 +9149,7 @@ void FUN_1019c390(int *param_1)
 // Reference entry 1019c3b0; body size 16 bytes.
 #line 1 "ENTRY_1019c3b0"
 
-void FUN_1019c3b0(int *param_1)
+void __stdcall FUN_1019c3b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9162,7 +9162,7 @@ void FUN_1019c3b0(int *param_1)
 // Reference entry 1019c3d0; body size 16 bytes.
 #line 1 "ENTRY_1019c3d0"
 
-void FUN_1019c3d0(int *param_1)
+void __stdcall FUN_1019c3d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9175,7 +9175,7 @@ void FUN_1019c3d0(int *param_1)
 // Reference entry 1019c3f0; body size 16 bytes.
 #line 1 "ENTRY_1019c3f0"
 
-void FUN_1019c3f0(int *param_1)
+void __stdcall FUN_1019c3f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9188,7 +9188,7 @@ void FUN_1019c3f0(int *param_1)
 // Reference entry 1019c410; body size 16 bytes.
 #line 1 "ENTRY_1019c410"
 
-void FUN_1019c410(int *param_1)
+void __stdcall FUN_1019c410(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9201,7 +9201,7 @@ void FUN_1019c410(int *param_1)
 // Reference entry 1019c430; body size 16 bytes.
 #line 1 "ENTRY_1019c430"
 
-void FUN_1019c430(int *param_1)
+void __stdcall FUN_1019c430(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9214,7 +9214,7 @@ void FUN_1019c430(int *param_1)
 // Reference entry 1019c450; body size 16 bytes.
 #line 1 "ENTRY_1019c450"
 
-void FUN_1019c450(int *param_1)
+void __stdcall FUN_1019c450(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9227,7 +9227,7 @@ void FUN_1019c450(int *param_1)
 // Reference entry 1019c470; body size 16 bytes.
 #line 1 "ENTRY_1019c470"
 
-void FUN_1019c470(int *param_1)
+void __stdcall FUN_1019c470(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9240,7 +9240,7 @@ void FUN_1019c470(int *param_1)
 // Reference entry 1019c490; body size 16 bytes.
 #line 1 "ENTRY_1019c490"
 
-void FUN_1019c490(int *param_1)
+void __stdcall FUN_1019c490(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9253,7 +9253,7 @@ void FUN_1019c490(int *param_1)
 // Reference entry 1019c4b0; body size 16 bytes.
 #line 1 "ENTRY_1019c4b0"
 
-void FUN_1019c4b0(int *param_1)
+void __stdcall FUN_1019c4b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9266,7 +9266,7 @@ void FUN_1019c4b0(int *param_1)
 // Reference entry 1019c4d0; body size 16 bytes.
 #line 1 "ENTRY_1019c4d0"
 
-void FUN_1019c4d0(int *param_1)
+void __stdcall FUN_1019c4d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9279,7 +9279,7 @@ void FUN_1019c4d0(int *param_1)
 // Reference entry 1019c4f0; body size 16 bytes.
 #line 1 "ENTRY_1019c4f0"
 
-void FUN_1019c4f0(int *param_1)
+void __stdcall FUN_1019c4f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9292,7 +9292,7 @@ void FUN_1019c4f0(int *param_1)
 // Reference entry 1019c510; body size 16 bytes.
 #line 1 "ENTRY_1019c510"
 
-void FUN_1019c510(int *param_1)
+void __stdcall FUN_1019c510(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9305,7 +9305,7 @@ void FUN_1019c510(int *param_1)
 // Reference entry 1019c530; body size 16 bytes.
 #line 1 "ENTRY_1019c530"
 
-void FUN_1019c530(int *param_1)
+void __stdcall FUN_1019c530(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9318,7 +9318,7 @@ void FUN_1019c530(int *param_1)
 // Reference entry 1019c550; body size 16 bytes.
 #line 1 "ENTRY_1019c550"
 
-void FUN_1019c550(int *param_1)
+void __stdcall FUN_1019c550(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9331,7 +9331,7 @@ void FUN_1019c550(int *param_1)
 // Reference entry 1019c570; body size 16 bytes.
 #line 1 "ENTRY_1019c570"
 
-void FUN_1019c570(int *param_1)
+void __stdcall FUN_1019c570(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9344,7 +9344,7 @@ void FUN_1019c570(int *param_1)
 // Reference entry 1019c590; body size 16 bytes.
 #line 1 "ENTRY_1019c590"
 
-void FUN_1019c590(int *param_1)
+void __stdcall FUN_1019c590(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9357,7 +9357,7 @@ void FUN_1019c590(int *param_1)
 // Reference entry 1019c5b0; body size 16 bytes.
 #line 1 "ENTRY_1019c5b0"
 
-void FUN_1019c5b0(int *param_1)
+void __stdcall FUN_1019c5b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9370,7 +9370,7 @@ void FUN_1019c5b0(int *param_1)
 // Reference entry 1019c5d0; body size 16 bytes.
 #line 1 "ENTRY_1019c5d0"
 
-void FUN_1019c5d0(int *param_1)
+void __stdcall FUN_1019c5d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9383,7 +9383,7 @@ void FUN_1019c5d0(int *param_1)
 // Reference entry 1019c5f0; body size 16 bytes.
 #line 1 "ENTRY_1019c5f0"
 
-void FUN_1019c5f0(int *param_1)
+void __stdcall FUN_1019c5f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9396,7 +9396,7 @@ void FUN_1019c5f0(int *param_1)
 // Reference entry 1019c610; body size 16 bytes.
 #line 1 "ENTRY_1019c610"
 
-void FUN_1019c610(int *param_1)
+void __stdcall FUN_1019c610(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9409,7 +9409,7 @@ void FUN_1019c610(int *param_1)
 // Reference entry 1019c630; body size 16 bytes.
 #line 1 "ENTRY_1019c630"
 
-void FUN_1019c630(int *param_1)
+void __stdcall FUN_1019c630(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9422,7 +9422,7 @@ void FUN_1019c630(int *param_1)
 // Reference entry 1019c650; body size 16 bytes.
 #line 1 "ENTRY_1019c650"
 
-void FUN_1019c650(int *param_1)
+void __stdcall FUN_1019c650(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9435,7 +9435,7 @@ void FUN_1019c650(int *param_1)
 // Reference entry 1019c670; body size 16 bytes.
 #line 1 "ENTRY_1019c670"
 
-void FUN_1019c670(int *param_1)
+void __stdcall FUN_1019c670(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9448,7 +9448,7 @@ void FUN_1019c670(int *param_1)
 // Reference entry 1019c690; body size 16 bytes.
 #line 1 "ENTRY_1019c690"
 
-void FUN_1019c690(int *param_1)
+void __stdcall FUN_1019c690(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9461,7 +9461,7 @@ void FUN_1019c690(int *param_1)
 // Reference entry 1019c6b0; body size 16 bytes.
 #line 1 "ENTRY_1019c6b0"
 
-void FUN_1019c6b0(int *param_1)
+void __stdcall FUN_1019c6b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9474,7 +9474,7 @@ void FUN_1019c6b0(int *param_1)
 // Reference entry 1019c6d0; body size 16 bytes.
 #line 1 "ENTRY_1019c6d0"
 
-void FUN_1019c6d0(int *param_1)
+void __stdcall FUN_1019c6d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9487,7 +9487,7 @@ void FUN_1019c6d0(int *param_1)
 // Reference entry 1019c6f0; body size 16 bytes.
 #line 1 "ENTRY_1019c6f0"
 
-void FUN_1019c6f0(int *param_1)
+void __stdcall FUN_1019c6f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9500,7 +9500,7 @@ void FUN_1019c6f0(int *param_1)
 // Reference entry 1019c710; body size 16 bytes.
 #line 1 "ENTRY_1019c710"
 
-void FUN_1019c710(int *param_1)
+void __stdcall FUN_1019c710(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9513,7 +9513,7 @@ void FUN_1019c710(int *param_1)
 // Reference entry 1019c730; body size 16 bytes.
 #line 1 "ENTRY_1019c730"
 
-void FUN_1019c730(int *param_1)
+void __stdcall FUN_1019c730(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9526,7 +9526,7 @@ void FUN_1019c730(int *param_1)
 // Reference entry 1019c750; body size 16 bytes.
 #line 1 "ENTRY_1019c750"
 
-void FUN_1019c750(int *param_1)
+void __stdcall FUN_1019c750(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9539,7 +9539,7 @@ void FUN_1019c750(int *param_1)
 // Reference entry 1019c770; body size 16 bytes.
 #line 1 "ENTRY_1019c770"
 
-void FUN_1019c770(int *param_1)
+void __stdcall FUN_1019c770(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9552,7 +9552,7 @@ void FUN_1019c770(int *param_1)
 // Reference entry 1019c790; body size 16 bytes.
 #line 1 "ENTRY_1019c790"
 
-void FUN_1019c790(int *param_1)
+void __stdcall FUN_1019c790(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9565,7 +9565,7 @@ void FUN_1019c790(int *param_1)
 // Reference entry 1019c7b0; body size 16 bytes.
 #line 1 "ENTRY_1019c7b0"
 
-void FUN_1019c7b0(int *param_1)
+void __stdcall FUN_1019c7b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9578,7 +9578,7 @@ void FUN_1019c7b0(int *param_1)
 // Reference entry 1019c7d0; body size 16 bytes.
 #line 1 "ENTRY_1019c7d0"
 
-void FUN_1019c7d0(int *param_1)
+void __stdcall FUN_1019c7d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9591,7 +9591,7 @@ void FUN_1019c7d0(int *param_1)
 // Reference entry 1019c7f0; body size 16 bytes.
 #line 1 "ENTRY_1019c7f0"
 
-void FUN_1019c7f0(int *param_1)
+void __stdcall FUN_1019c7f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9604,7 +9604,7 @@ void FUN_1019c7f0(int *param_1)
 // Reference entry 1019c810; body size 16 bytes.
 #line 1 "ENTRY_1019c810"
 
-void FUN_1019c810(int *param_1)
+void __stdcall FUN_1019c810(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9617,7 +9617,7 @@ void FUN_1019c810(int *param_1)
 // Reference entry 1019c830; body size 16 bytes.
 #line 1 "ENTRY_1019c830"
 
-void FUN_1019c830(int *param_1)
+void __stdcall FUN_1019c830(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9630,7 +9630,7 @@ void FUN_1019c830(int *param_1)
 // Reference entry 1019c850; body size 16 bytes.
 #line 1 "ENTRY_1019c850"
 
-void FUN_1019c850(int *param_1)
+void __stdcall FUN_1019c850(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9643,7 +9643,7 @@ void FUN_1019c850(int *param_1)
 // Reference entry 1019c870; body size 16 bytes.
 #line 1 "ENTRY_1019c870"
 
-void FUN_1019c870(int *param_1)
+void __stdcall FUN_1019c870(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9656,7 +9656,7 @@ void FUN_1019c870(int *param_1)
 // Reference entry 1019c890; body size 16 bytes.
 #line 1 "ENTRY_1019c890"
 
-void FUN_1019c890(int *param_1)
+void __stdcall FUN_1019c890(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9669,7 +9669,7 @@ void FUN_1019c890(int *param_1)
 // Reference entry 1019c8b0; body size 16 bytes.
 #line 1 "ENTRY_1019c8b0"
 
-void FUN_1019c8b0(int *param_1)
+void __stdcall FUN_1019c8b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9682,7 +9682,7 @@ void FUN_1019c8b0(int *param_1)
 // Reference entry 1019c8d0; body size 16 bytes.
 #line 1 "ENTRY_1019c8d0"
 
-void FUN_1019c8d0(int *param_1)
+void __stdcall FUN_1019c8d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9695,7 +9695,7 @@ void FUN_1019c8d0(int *param_1)
 // Reference entry 1019c8f0; body size 16 bytes.
 #line 1 "ENTRY_1019c8f0"
 
-void FUN_1019c8f0(int *param_1)
+void __stdcall FUN_1019c8f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9708,7 +9708,7 @@ void FUN_1019c8f0(int *param_1)
 // Reference entry 1019c910; body size 16 bytes.
 #line 1 "ENTRY_1019c910"
 
-void FUN_1019c910(int *param_1)
+void __stdcall FUN_1019c910(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9721,7 +9721,7 @@ void FUN_1019c910(int *param_1)
 // Reference entry 1019c930; body size 16 bytes.
 #line 1 "ENTRY_1019c930"
 
-void FUN_1019c930(int *param_1)
+void __stdcall FUN_1019c930(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9734,7 +9734,7 @@ void FUN_1019c930(int *param_1)
 // Reference entry 1019c950; body size 16 bytes.
 #line 1 "ENTRY_1019c950"
 
-void FUN_1019c950(int *param_1)
+void __stdcall FUN_1019c950(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9747,7 +9747,7 @@ void FUN_1019c950(int *param_1)
 // Reference entry 1019c970; body size 16 bytes.
 #line 1 "ENTRY_1019c970"
 
-void FUN_1019c970(int *param_1)
+void __stdcall FUN_1019c970(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9760,7 +9760,7 @@ void FUN_1019c970(int *param_1)
 // Reference entry 1019c990; body size 16 bytes.
 #line 1 "ENTRY_1019c990"
 
-void FUN_1019c990(int *param_1)
+void __stdcall FUN_1019c990(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9773,7 +9773,7 @@ void FUN_1019c990(int *param_1)
 // Reference entry 1019c9b0; body size 16 bytes.
 #line 1 "ENTRY_1019c9b0"
 
-void FUN_1019c9b0(int *param_1)
+void __stdcall FUN_1019c9b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9786,7 +9786,7 @@ void FUN_1019c9b0(int *param_1)
 // Reference entry 1019c9d0; body size 16 bytes.
 #line 1 "ENTRY_1019c9d0"
 
-void FUN_1019c9d0(int *param_1)
+void __stdcall FUN_1019c9d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9799,7 +9799,7 @@ void FUN_1019c9d0(int *param_1)
 // Reference entry 1019c9f0; body size 16 bytes.
 #line 1 "ENTRY_1019c9f0"
 
-void FUN_1019c9f0(int *param_1)
+void __stdcall FUN_1019c9f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9812,7 +9812,7 @@ void FUN_1019c9f0(int *param_1)
 // Reference entry 1019ca10; body size 16 bytes.
 #line 1 "ENTRY_1019ca10"
 
-void FUN_1019ca10(int *param_1)
+void __stdcall FUN_1019ca10(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9825,7 +9825,7 @@ void FUN_1019ca10(int *param_1)
 // Reference entry 1019ca30; body size 16 bytes.
 #line 1 "ENTRY_1019ca30"
 
-void FUN_1019ca30(int *param_1)
+void __stdcall FUN_1019ca30(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9838,7 +9838,7 @@ void FUN_1019ca30(int *param_1)
 // Reference entry 1019ca50; body size 16 bytes.
 #line 1 "ENTRY_1019ca50"
 
-void FUN_1019ca50(int *param_1)
+void __stdcall FUN_1019ca50(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9851,7 +9851,7 @@ void FUN_1019ca50(int *param_1)
 // Reference entry 1019ca70; body size 16 bytes.
 #line 1 "ENTRY_1019ca70"
 
-void FUN_1019ca70(int *param_1)
+void __stdcall FUN_1019ca70(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9864,7 +9864,7 @@ void FUN_1019ca70(int *param_1)
 // Reference entry 1019ca90; body size 16 bytes.
 #line 1 "ENTRY_1019ca90"
 
-void FUN_1019ca90(int *param_1)
+void __stdcall FUN_1019ca90(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9877,7 +9877,7 @@ void FUN_1019ca90(int *param_1)
 // Reference entry 1019cab0; body size 16 bytes.
 #line 1 "ENTRY_1019cab0"
 
-void FUN_1019cab0(int *param_1)
+void __stdcall FUN_1019cab0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9890,7 +9890,7 @@ void FUN_1019cab0(int *param_1)
 // Reference entry 1019cad0; body size 16 bytes.
 #line 1 "ENTRY_1019cad0"
 
-void FUN_1019cad0(int *param_1)
+void __stdcall FUN_1019cad0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9903,7 +9903,7 @@ void FUN_1019cad0(int *param_1)
 // Reference entry 1019caf0; body size 16 bytes.
 #line 1 "ENTRY_1019caf0"
 
-void FUN_1019caf0(int *param_1)
+void __stdcall FUN_1019caf0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9916,7 +9916,7 @@ void FUN_1019caf0(int *param_1)
 // Reference entry 1019cb10; body size 16 bytes.
 #line 1 "ENTRY_1019cb10"
 
-void FUN_1019cb10(int *param_1)
+void __stdcall FUN_1019cb10(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9929,7 +9929,7 @@ void FUN_1019cb10(int *param_1)
 // Reference entry 1019cb30; body size 16 bytes.
 #line 1 "ENTRY_1019cb30"
 
-void FUN_1019cb30(int *param_1)
+void __stdcall FUN_1019cb30(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9942,7 +9942,7 @@ void FUN_1019cb30(int *param_1)
 // Reference entry 1019cb50; body size 16 bytes.
 #line 1 "ENTRY_1019cb50"
 
-void FUN_1019cb50(int *param_1)
+void __stdcall FUN_1019cb50(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9955,7 +9955,7 @@ void FUN_1019cb50(int *param_1)
 // Reference entry 1019cb70; body size 16 bytes.
 #line 1 "ENTRY_1019cb70"
 
-void FUN_1019cb70(int *param_1)
+void __stdcall FUN_1019cb70(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9968,7 +9968,7 @@ void FUN_1019cb70(int *param_1)
 // Reference entry 1019cb90; body size 16 bytes.
 #line 1 "ENTRY_1019cb90"
 
-void FUN_1019cb90(int *param_1)
+void __stdcall FUN_1019cb90(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9981,7 +9981,7 @@ void FUN_1019cb90(int *param_1)
 // Reference entry 1019cbb0; body size 16 bytes.
 #line 1 "ENTRY_1019cbb0"
 
-void FUN_1019cbb0(int *param_1)
+void __stdcall FUN_1019cbb0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -9994,7 +9994,7 @@ void FUN_1019cbb0(int *param_1)
 // Reference entry 1019cbd0; body size 16 bytes.
 #line 1 "ENTRY_1019cbd0"
 
-void FUN_1019cbd0(int *param_1)
+void __stdcall FUN_1019cbd0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10007,7 +10007,7 @@ void FUN_1019cbd0(int *param_1)
 // Reference entry 1019cbf0; body size 16 bytes.
 #line 1 "ENTRY_1019cbf0"
 
-void FUN_1019cbf0(int *param_1)
+void __stdcall FUN_1019cbf0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10020,7 +10020,7 @@ void FUN_1019cbf0(int *param_1)
 // Reference entry 1019cc10; body size 16 bytes.
 #line 1 "ENTRY_1019cc10"
 
-void FUN_1019cc10(int *param_1)
+void __stdcall FUN_1019cc10(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10033,7 +10033,7 @@ void FUN_1019cc10(int *param_1)
 // Reference entry 1019cc30; body size 16 bytes.
 #line 1 "ENTRY_1019cc30"
 
-void FUN_1019cc30(int *param_1)
+void __stdcall FUN_1019cc30(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10046,7 +10046,7 @@ void FUN_1019cc30(int *param_1)
 // Reference entry 1019cc50; body size 16 bytes.
 #line 1 "ENTRY_1019cc50"
 
-void FUN_1019cc50(int *param_1)
+void __stdcall FUN_1019cc50(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10059,7 +10059,7 @@ void FUN_1019cc50(int *param_1)
 // Reference entry 1019cc70; body size 16 bytes.
 #line 1 "ENTRY_1019cc70"
 
-void FUN_1019cc70(int *param_1)
+void __stdcall FUN_1019cc70(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10072,7 +10072,7 @@ void FUN_1019cc70(int *param_1)
 // Reference entry 1019cc90; body size 16 bytes.
 #line 1 "ENTRY_1019cc90"
 
-void FUN_1019cc90(int *param_1)
+void __stdcall FUN_1019cc90(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10085,7 +10085,7 @@ void FUN_1019cc90(int *param_1)
 // Reference entry 1019ccb0; body size 16 bytes.
 #line 1 "ENTRY_1019ccb0"
 
-void FUN_1019ccb0(int *param_1)
+void __stdcall FUN_1019ccb0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10098,7 +10098,7 @@ void FUN_1019ccb0(int *param_1)
 // Reference entry 1019ccd0; body size 16 bytes.
 #line 1 "ENTRY_1019ccd0"
 
-void FUN_1019ccd0(int *param_1)
+void __stdcall FUN_1019ccd0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10111,7 +10111,7 @@ void FUN_1019ccd0(int *param_1)
 // Reference entry 1019ccf0; body size 16 bytes.
 #line 1 "ENTRY_1019ccf0"
 
-void FUN_1019ccf0(int *param_1)
+void __stdcall FUN_1019ccf0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10124,7 +10124,7 @@ void FUN_1019ccf0(int *param_1)
 // Reference entry 1019cd10; body size 16 bytes.
 #line 1 "ENTRY_1019cd10"
 
-void FUN_1019cd10(int *param_1)
+void __stdcall FUN_1019cd10(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10137,7 +10137,7 @@ void FUN_1019cd10(int *param_1)
 // Reference entry 1019cd30; body size 16 bytes.
 #line 1 "ENTRY_1019cd30"
 
-void FUN_1019cd30(int *param_1)
+void __stdcall FUN_1019cd30(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10150,7 +10150,7 @@ void FUN_1019cd30(int *param_1)
 // Reference entry 1019cd50; body size 16 bytes.
 #line 1 "ENTRY_1019cd50"
 
-void FUN_1019cd50(int *param_1)
+void __stdcall FUN_1019cd50(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10163,7 +10163,7 @@ void FUN_1019cd50(int *param_1)
 // Reference entry 1019cd70; body size 16 bytes.
 #line 1 "ENTRY_1019cd70"
 
-void FUN_1019cd70(int *param_1)
+void __stdcall FUN_1019cd70(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10176,7 +10176,7 @@ void FUN_1019cd70(int *param_1)
 // Reference entry 1019cd90; body size 16 bytes.
 #line 1 "ENTRY_1019cd90"
 
-void FUN_1019cd90(int *param_1)
+void __stdcall FUN_1019cd90(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10189,7 +10189,7 @@ void FUN_1019cd90(int *param_1)
 // Reference entry 1019cdb0; body size 16 bytes.
 #line 1 "ENTRY_1019cdb0"
 
-void FUN_1019cdb0(int *param_1)
+void __stdcall FUN_1019cdb0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10202,7 +10202,7 @@ void FUN_1019cdb0(int *param_1)
 // Reference entry 1019cdd0; body size 16 bytes.
 #line 1 "ENTRY_1019cdd0"
 
-void FUN_1019cdd0(int *param_1)
+void __stdcall FUN_1019cdd0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10215,7 +10215,7 @@ void FUN_1019cdd0(int *param_1)
 // Reference entry 1019cdf0; body size 16 bytes.
 #line 1 "ENTRY_1019cdf0"
 
-void FUN_1019cdf0(int *param_1)
+void __stdcall FUN_1019cdf0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10228,7 +10228,7 @@ void FUN_1019cdf0(int *param_1)
 // Reference entry 1019ce10; body size 16 bytes.
 #line 1 "ENTRY_1019ce10"
 
-void FUN_1019ce10(int *param_1)
+void __stdcall FUN_1019ce10(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10241,7 +10241,7 @@ void FUN_1019ce10(int *param_1)
 // Reference entry 1019ce30; body size 16 bytes.
 #line 1 "ENTRY_1019ce30"
 
-void FUN_1019ce30(int *param_1)
+void __stdcall FUN_1019ce30(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10254,7 +10254,7 @@ void FUN_1019ce30(int *param_1)
 // Reference entry 1019ce50; body size 16 bytes.
 #line 1 "ENTRY_1019ce50"
 
-void FUN_1019ce50(int *param_1)
+void __stdcall FUN_1019ce50(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10267,7 +10267,7 @@ void FUN_1019ce50(int *param_1)
 // Reference entry 1019ce70; body size 16 bytes.
 #line 1 "ENTRY_1019ce70"
 
-void FUN_1019ce70(int *param_1)
+void __stdcall FUN_1019ce70(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10280,7 +10280,7 @@ void FUN_1019ce70(int *param_1)
 // Reference entry 1019ce90; body size 16 bytes.
 #line 1 "ENTRY_1019ce90"
 
-void FUN_1019ce90(int *param_1)
+void __stdcall FUN_1019ce90(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10293,7 +10293,7 @@ void FUN_1019ce90(int *param_1)
 // Reference entry 1019ceb0; body size 16 bytes.
 #line 1 "ENTRY_1019ceb0"
 
-void FUN_1019ceb0(int *param_1)
+void __stdcall FUN_1019ceb0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10306,7 +10306,7 @@ void FUN_1019ceb0(int *param_1)
 // Reference entry 1019ced0; body size 16 bytes.
 #line 1 "ENTRY_1019ced0"
 
-void FUN_1019ced0(int *param_1)
+void __stdcall FUN_1019ced0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10319,7 +10319,7 @@ void FUN_1019ced0(int *param_1)
 // Reference entry 1019cef0; body size 16 bytes.
 #line 1 "ENTRY_1019cef0"
 
-void FUN_1019cef0(int *param_1)
+void __stdcall FUN_1019cef0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10332,7 +10332,7 @@ void FUN_1019cef0(int *param_1)
 // Reference entry 1019cf10; body size 16 bytes.
 #line 1 "ENTRY_1019cf10"
 
-void FUN_1019cf10(int *param_1)
+void __stdcall FUN_1019cf10(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10345,7 +10345,7 @@ void FUN_1019cf10(int *param_1)
 // Reference entry 1019cf30; body size 16 bytes.
 #line 1 "ENTRY_1019cf30"
 
-void FUN_1019cf30(int *param_1)
+void __stdcall FUN_1019cf30(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10358,7 +10358,7 @@ void FUN_1019cf30(int *param_1)
 // Reference entry 1019cf50; body size 16 bytes.
 #line 1 "ENTRY_1019cf50"
 
-void FUN_1019cf50(int *param_1)
+void __stdcall FUN_1019cf50(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10371,7 +10371,7 @@ void FUN_1019cf50(int *param_1)
 // Reference entry 1019cf70; body size 16 bytes.
 #line 1 "ENTRY_1019cf70"
 
-void FUN_1019cf70(int *param_1)
+void __stdcall FUN_1019cf70(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10384,7 +10384,7 @@ void FUN_1019cf70(int *param_1)
 // Reference entry 1019cf90; body size 16 bytes.
 #line 1 "ENTRY_1019cf90"
 
-void FUN_1019cf90(int *param_1)
+void __stdcall FUN_1019cf90(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10397,7 +10397,7 @@ void FUN_1019cf90(int *param_1)
 // Reference entry 1019cfb0; body size 16 bytes.
 #line 1 "ENTRY_1019cfb0"
 
-void FUN_1019cfb0(int *param_1)
+void __stdcall FUN_1019cfb0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10410,7 +10410,7 @@ void FUN_1019cfb0(int *param_1)
 // Reference entry 1019cfd0; body size 16 bytes.
 #line 1 "ENTRY_1019cfd0"
 
-void FUN_1019cfd0(int *param_1)
+void __stdcall FUN_1019cfd0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10423,7 +10423,7 @@ void FUN_1019cfd0(int *param_1)
 // Reference entry 1019cff0; body size 16 bytes.
 #line 1 "ENTRY_1019cff0"
 
-void FUN_1019cff0(int *param_1)
+void __stdcall FUN_1019cff0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10436,7 +10436,7 @@ void FUN_1019cff0(int *param_1)
 // Reference entry 1019d010; body size 16 bytes.
 #line 1 "ENTRY_1019d010"
 
-void FUN_1019d010(int *param_1)
+void __stdcall FUN_1019d010(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10449,7 +10449,7 @@ void FUN_1019d010(int *param_1)
 // Reference entry 1019d030; body size 16 bytes.
 #line 1 "ENTRY_1019d030"
 
-void FUN_1019d030(int *param_1)
+void __stdcall FUN_1019d030(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10462,7 +10462,7 @@ void FUN_1019d030(int *param_1)
 // Reference entry 1019d050; body size 16 bytes.
 #line 1 "ENTRY_1019d050"
 
-void FUN_1019d050(int *param_1)
+void __stdcall FUN_1019d050(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10475,7 +10475,7 @@ void FUN_1019d050(int *param_1)
 // Reference entry 1019d070; body size 16 bytes.
 #line 1 "ENTRY_1019d070"
 
-void FUN_1019d070(int *param_1)
+void __stdcall FUN_1019d070(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10488,7 +10488,7 @@ void FUN_1019d070(int *param_1)
 // Reference entry 1019d090; body size 16 bytes.
 #line 1 "ENTRY_1019d090"
 
-void FUN_1019d090(int *param_1)
+void __stdcall FUN_1019d090(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10501,7 +10501,7 @@ void FUN_1019d090(int *param_1)
 // Reference entry 1019d0b0; body size 16 bytes.
 #line 1 "ENTRY_1019d0b0"
 
-void FUN_1019d0b0(int *param_1)
+void __stdcall FUN_1019d0b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10514,7 +10514,7 @@ void FUN_1019d0b0(int *param_1)
 // Reference entry 1019d0d0; body size 16 bytes.
 #line 1 "ENTRY_1019d0d0"
 
-void FUN_1019d0d0(int *param_1)
+void __stdcall FUN_1019d0d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10527,7 +10527,7 @@ void FUN_1019d0d0(int *param_1)
 // Reference entry 1019d0f0; body size 16 bytes.
 #line 1 "ENTRY_1019d0f0"
 
-void FUN_1019d0f0(int *param_1)
+void __stdcall FUN_1019d0f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10540,7 +10540,7 @@ void FUN_1019d0f0(int *param_1)
 // Reference entry 1019d110; body size 16 bytes.
 #line 1 "ENTRY_1019d110"
 
-void FUN_1019d110(int *param_1)
+void __stdcall FUN_1019d110(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10553,7 +10553,7 @@ void FUN_1019d110(int *param_1)
 // Reference entry 1019d130; body size 16 bytes.
 #line 1 "ENTRY_1019d130"
 
-void FUN_1019d130(int *param_1)
+void __stdcall FUN_1019d130(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10566,7 +10566,7 @@ void FUN_1019d130(int *param_1)
 // Reference entry 1019d150; body size 16 bytes.
 #line 1 "ENTRY_1019d150"
 
-void FUN_1019d150(int *param_1)
+void __stdcall FUN_1019d150(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10579,7 +10579,7 @@ void FUN_1019d150(int *param_1)
 // Reference entry 1019d170; body size 16 bytes.
 #line 1 "ENTRY_1019d170"
 
-void FUN_1019d170(int *param_1)
+void __stdcall FUN_1019d170(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10592,7 +10592,7 @@ void FUN_1019d170(int *param_1)
 // Reference entry 1019d190; body size 16 bytes.
 #line 1 "ENTRY_1019d190"
 
-void FUN_1019d190(int *param_1)
+void __stdcall FUN_1019d190(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10605,7 +10605,7 @@ void FUN_1019d190(int *param_1)
 // Reference entry 1019d1b0; body size 16 bytes.
 #line 1 "ENTRY_1019d1b0"
 
-void FUN_1019d1b0(int *param_1)
+void __stdcall FUN_1019d1b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10618,7 +10618,7 @@ void FUN_1019d1b0(int *param_1)
 // Reference entry 1019d1d0; body size 16 bytes.
 #line 1 "ENTRY_1019d1d0"
 
-void FUN_1019d1d0(int *param_1)
+void __stdcall FUN_1019d1d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10631,7 +10631,7 @@ void FUN_1019d1d0(int *param_1)
 // Reference entry 1019d1f0; body size 16 bytes.
 #line 1 "ENTRY_1019d1f0"
 
-void FUN_1019d1f0(int *param_1)
+void __stdcall FUN_1019d1f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10644,7 +10644,7 @@ void FUN_1019d1f0(int *param_1)
 // Reference entry 1019d210; body size 16 bytes.
 #line 1 "ENTRY_1019d210"
 
-void FUN_1019d210(int *param_1)
+void __stdcall FUN_1019d210(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10657,7 +10657,7 @@ void FUN_1019d210(int *param_1)
 // Reference entry 1019d230; body size 16 bytes.
 #line 1 "ENTRY_1019d230"
 
-void FUN_1019d230(int *param_1)
+void __stdcall FUN_1019d230(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10670,7 +10670,7 @@ void FUN_1019d230(int *param_1)
 // Reference entry 1019d250; body size 16 bytes.
 #line 1 "ENTRY_1019d250"
 
-void FUN_1019d250(int *param_1)
+void __stdcall FUN_1019d250(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10683,7 +10683,7 @@ void FUN_1019d250(int *param_1)
 // Reference entry 1019d270; body size 16 bytes.
 #line 1 "ENTRY_1019d270"
 
-void FUN_1019d270(int *param_1)
+void __stdcall FUN_1019d270(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10696,7 +10696,7 @@ void FUN_1019d270(int *param_1)
 // Reference entry 1019d290; body size 16 bytes.
 #line 1 "ENTRY_1019d290"
 
-void FUN_1019d290(int *param_1)
+void __stdcall FUN_1019d290(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10709,7 +10709,7 @@ void FUN_1019d290(int *param_1)
 // Reference entry 1019d2b0; body size 16 bytes.
 #line 1 "ENTRY_1019d2b0"
 
-void FUN_1019d2b0(int *param_1)
+void __stdcall FUN_1019d2b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10722,7 +10722,7 @@ void FUN_1019d2b0(int *param_1)
 // Reference entry 1019d2d0; body size 16 bytes.
 #line 1 "ENTRY_1019d2d0"
 
-void FUN_1019d2d0(int *param_1)
+void __stdcall FUN_1019d2d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10735,7 +10735,7 @@ void FUN_1019d2d0(int *param_1)
 // Reference entry 1019d2f0; body size 16 bytes.
 #line 1 "ENTRY_1019d2f0"
 
-void FUN_1019d2f0(int *param_1)
+void __stdcall FUN_1019d2f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10748,7 +10748,7 @@ void FUN_1019d2f0(int *param_1)
 // Reference entry 1019d310; body size 16 bytes.
 #line 1 "ENTRY_1019d310"
 
-void FUN_1019d310(int *param_1)
+void __stdcall FUN_1019d310(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10761,7 +10761,7 @@ void FUN_1019d310(int *param_1)
 // Reference entry 1019d330; body size 16 bytes.
 #line 1 "ENTRY_1019d330"
 
-void FUN_1019d330(int *param_1)
+void __stdcall FUN_1019d330(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10774,7 +10774,7 @@ void FUN_1019d330(int *param_1)
 // Reference entry 1019d350; body size 16 bytes.
 #line 1 "ENTRY_1019d350"
 
-void FUN_1019d350(int *param_1)
+void __stdcall FUN_1019d350(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10787,7 +10787,7 @@ void FUN_1019d350(int *param_1)
 // Reference entry 1019d370; body size 16 bytes.
 #line 1 "ENTRY_1019d370"
 
-void FUN_1019d370(int *param_1)
+void __stdcall FUN_1019d370(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10800,7 +10800,7 @@ void FUN_1019d370(int *param_1)
 // Reference entry 1019d390; body size 16 bytes.
 #line 1 "ENTRY_1019d390"
 
-void FUN_1019d390(int *param_1)
+void __stdcall FUN_1019d390(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10813,7 +10813,7 @@ void FUN_1019d390(int *param_1)
 // Reference entry 1019d3b0; body size 16 bytes.
 #line 1 "ENTRY_1019d3b0"
 
-void FUN_1019d3b0(int *param_1)
+void __stdcall FUN_1019d3b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10826,7 +10826,7 @@ void FUN_1019d3b0(int *param_1)
 // Reference entry 1019d3d0; body size 16 bytes.
 #line 1 "ENTRY_1019d3d0"
 
-void FUN_1019d3d0(int *param_1)
+void __stdcall FUN_1019d3d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10839,7 +10839,7 @@ void FUN_1019d3d0(int *param_1)
 // Reference entry 1019d3f0; body size 16 bytes.
 #line 1 "ENTRY_1019d3f0"
 
-void FUN_1019d3f0(int *param_1)
+void __stdcall FUN_1019d3f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10852,7 +10852,7 @@ void FUN_1019d3f0(int *param_1)
 // Reference entry 1019d410; body size 16 bytes.
 #line 1 "ENTRY_1019d410"
 
-void FUN_1019d410(int *param_1)
+void __stdcall FUN_1019d410(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10865,7 +10865,7 @@ void FUN_1019d410(int *param_1)
 // Reference entry 1019d430; body size 16 bytes.
 #line 1 "ENTRY_1019d430"
 
-void FUN_1019d430(int *param_1)
+void __stdcall FUN_1019d430(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10878,7 +10878,7 @@ void FUN_1019d430(int *param_1)
 // Reference entry 1019d450; body size 16 bytes.
 #line 1 "ENTRY_1019d450"
 
-void FUN_1019d450(int *param_1)
+void __stdcall FUN_1019d450(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10891,7 +10891,7 @@ void FUN_1019d450(int *param_1)
 // Reference entry 1019d470; body size 16 bytes.
 #line 1 "ENTRY_1019d470"
 
-void FUN_1019d470(int *param_1)
+void __stdcall FUN_1019d470(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10904,7 +10904,7 @@ void FUN_1019d470(int *param_1)
 // Reference entry 1019d490; body size 16 bytes.
 #line 1 "ENTRY_1019d490"
 
-void FUN_1019d490(int *param_1)
+void __stdcall FUN_1019d490(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10917,7 +10917,7 @@ void FUN_1019d490(int *param_1)
 // Reference entry 1019d4b0; body size 16 bytes.
 #line 1 "ENTRY_1019d4b0"
 
-void FUN_1019d4b0(int *param_1)
+void __stdcall FUN_1019d4b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10930,7 +10930,7 @@ void FUN_1019d4b0(int *param_1)
 // Reference entry 1019d4d0; body size 16 bytes.
 #line 1 "ENTRY_1019d4d0"
 
-void FUN_1019d4d0(int *param_1)
+void __stdcall FUN_1019d4d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10943,7 +10943,7 @@ void FUN_1019d4d0(int *param_1)
 // Reference entry 1019d4f0; body size 16 bytes.
 #line 1 "ENTRY_1019d4f0"
 
-void FUN_1019d4f0(int *param_1)
+void __stdcall FUN_1019d4f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10956,7 +10956,7 @@ void FUN_1019d4f0(int *param_1)
 // Reference entry 1019d510; body size 16 bytes.
 #line 1 "ENTRY_1019d510"
 
-void FUN_1019d510(int *param_1)
+void __stdcall FUN_1019d510(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10969,7 +10969,7 @@ void FUN_1019d510(int *param_1)
 // Reference entry 1019d530; body size 16 bytes.
 #line 1 "ENTRY_1019d530"
 
-void FUN_1019d530(int *param_1)
+void __stdcall FUN_1019d530(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10982,7 +10982,7 @@ void FUN_1019d530(int *param_1)
 // Reference entry 1019d550; body size 16 bytes.
 #line 1 "ENTRY_1019d550"
 
-void FUN_1019d550(int *param_1)
+void __stdcall FUN_1019d550(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -10995,7 +10995,7 @@ void FUN_1019d550(int *param_1)
 // Reference entry 1019d570; body size 16 bytes.
 #line 1 "ENTRY_1019d570"
 
-void FUN_1019d570(int *param_1)
+void __stdcall FUN_1019d570(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11008,7 +11008,7 @@ void FUN_1019d570(int *param_1)
 // Reference entry 1019d590; body size 16 bytes.
 #line 1 "ENTRY_1019d590"
 
-void FUN_1019d590(int *param_1)
+void __stdcall FUN_1019d590(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11021,7 +11021,7 @@ void FUN_1019d590(int *param_1)
 // Reference entry 1019d5b0; body size 16 bytes.
 #line 1 "ENTRY_1019d5b0"
 
-void FUN_1019d5b0(int *param_1)
+void __stdcall FUN_1019d5b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11034,7 +11034,7 @@ void FUN_1019d5b0(int *param_1)
 // Reference entry 1019d5d0; body size 16 bytes.
 #line 1 "ENTRY_1019d5d0"
 
-void FUN_1019d5d0(int *param_1)
+void __stdcall FUN_1019d5d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11047,7 +11047,7 @@ void FUN_1019d5d0(int *param_1)
 // Reference entry 1019d5f0; body size 16 bytes.
 #line 1 "ENTRY_1019d5f0"
 
-void FUN_1019d5f0(int *param_1)
+void __stdcall FUN_1019d5f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11060,7 +11060,7 @@ void FUN_1019d5f0(int *param_1)
 // Reference entry 1019d610; body size 16 bytes.
 #line 1 "ENTRY_1019d610"
 
-void FUN_1019d610(int *param_1)
+void __stdcall FUN_1019d610(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11073,7 +11073,7 @@ void FUN_1019d610(int *param_1)
 // Reference entry 1019d630; body size 16 bytes.
 #line 1 "ENTRY_1019d630"
 
-void FUN_1019d630(int *param_1)
+void __stdcall FUN_1019d630(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11086,7 +11086,7 @@ void FUN_1019d630(int *param_1)
 // Reference entry 1019d650; body size 16 bytes.
 #line 1 "ENTRY_1019d650"
 
-void FUN_1019d650(int *param_1)
+void __stdcall FUN_1019d650(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11099,7 +11099,7 @@ void FUN_1019d650(int *param_1)
 // Reference entry 1019d670; body size 16 bytes.
 #line 1 "ENTRY_1019d670"
 
-void FUN_1019d670(int *param_1)
+void __stdcall FUN_1019d670(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11112,7 +11112,7 @@ void FUN_1019d670(int *param_1)
 // Reference entry 1019d690; body size 16 bytes.
 #line 1 "ENTRY_1019d690"
 
-void FUN_1019d690(int *param_1)
+void __stdcall FUN_1019d690(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11125,7 +11125,7 @@ void FUN_1019d690(int *param_1)
 // Reference entry 1019d6b0; body size 16 bytes.
 #line 1 "ENTRY_1019d6b0"
 
-void FUN_1019d6b0(int *param_1)
+void __stdcall FUN_1019d6b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11138,7 +11138,7 @@ void FUN_1019d6b0(int *param_1)
 // Reference entry 1019d6d0; body size 16 bytes.
 #line 1 "ENTRY_1019d6d0"
 
-void FUN_1019d6d0(int *param_1)
+void __stdcall FUN_1019d6d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11151,7 +11151,7 @@ void FUN_1019d6d0(int *param_1)
 // Reference entry 1019d6f0; body size 16 bytes.
 #line 1 "ENTRY_1019d6f0"
 
-void FUN_1019d6f0(int *param_1)
+void __stdcall FUN_1019d6f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11164,7 +11164,7 @@ void FUN_1019d6f0(int *param_1)
 // Reference entry 1019d710; body size 16 bytes.
 #line 1 "ENTRY_1019d710"
 
-void FUN_1019d710(int *param_1)
+void __stdcall FUN_1019d710(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11177,7 +11177,7 @@ void FUN_1019d710(int *param_1)
 // Reference entry 1019d730; body size 16 bytes.
 #line 1 "ENTRY_1019d730"
 
-void FUN_1019d730(int *param_1)
+void __stdcall FUN_1019d730(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11190,7 +11190,7 @@ void FUN_1019d730(int *param_1)
 // Reference entry 1019d750; body size 16 bytes.
 #line 1 "ENTRY_1019d750"
 
-void FUN_1019d750(int *param_1)
+void __stdcall FUN_1019d750(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11203,7 +11203,7 @@ void FUN_1019d750(int *param_1)
 // Reference entry 1019d770; body size 16 bytes.
 #line 1 "ENTRY_1019d770"
 
-void FUN_1019d770(int *param_1)
+void __stdcall FUN_1019d770(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11216,7 +11216,7 @@ void FUN_1019d770(int *param_1)
 // Reference entry 1019d790; body size 16 bytes.
 #line 1 "ENTRY_1019d790"
 
-void FUN_1019d790(int *param_1)
+void __stdcall FUN_1019d790(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11229,7 +11229,7 @@ void FUN_1019d790(int *param_1)
 // Reference entry 1019d7b0; body size 16 bytes.
 #line 1 "ENTRY_1019d7b0"
 
-void FUN_1019d7b0(int *param_1)
+void __stdcall FUN_1019d7b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11242,7 +11242,7 @@ void FUN_1019d7b0(int *param_1)
 // Reference entry 1019d7d0; body size 16 bytes.
 #line 1 "ENTRY_1019d7d0"
 
-void FUN_1019d7d0(int *param_1)
+void __stdcall FUN_1019d7d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11255,7 +11255,7 @@ void FUN_1019d7d0(int *param_1)
 // Reference entry 1019d7f0; body size 16 bytes.
 #line 1 "ENTRY_1019d7f0"
 
-void FUN_1019d7f0(int *param_1)
+void __stdcall FUN_1019d7f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11268,7 +11268,7 @@ void FUN_1019d7f0(int *param_1)
 // Reference entry 1019d810; body size 16 bytes.
 #line 1 "ENTRY_1019d810"
 
-void FUN_1019d810(int *param_1)
+void __stdcall FUN_1019d810(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11281,7 +11281,7 @@ void FUN_1019d810(int *param_1)
 // Reference entry 1019d830; body size 16 bytes.
 #line 1 "ENTRY_1019d830"
 
-void FUN_1019d830(int *param_1)
+void __stdcall FUN_1019d830(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11294,7 +11294,7 @@ void FUN_1019d830(int *param_1)
 // Reference entry 1019d850; body size 16 bytes.
 #line 1 "ENTRY_1019d850"
 
-void FUN_1019d850(int *param_1)
+void __stdcall FUN_1019d850(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11307,7 +11307,7 @@ void FUN_1019d850(int *param_1)
 // Reference entry 1019d870; body size 16 bytes.
 #line 1 "ENTRY_1019d870"
 
-void FUN_1019d870(int *param_1)
+void __stdcall FUN_1019d870(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11320,7 +11320,7 @@ void FUN_1019d870(int *param_1)
 // Reference entry 1019d890; body size 16 bytes.
 #line 1 "ENTRY_1019d890"
 
-void FUN_1019d890(int *param_1)
+void __stdcall FUN_1019d890(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11333,7 +11333,7 @@ void FUN_1019d890(int *param_1)
 // Reference entry 1019d8b0; body size 16 bytes.
 #line 1 "ENTRY_1019d8b0"
 
-void FUN_1019d8b0(int *param_1)
+void __stdcall FUN_1019d8b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11346,7 +11346,7 @@ void FUN_1019d8b0(int *param_1)
 // Reference entry 1019d8d0; body size 16 bytes.
 #line 1 "ENTRY_1019d8d0"
 
-void FUN_1019d8d0(int *param_1)
+void __stdcall FUN_1019d8d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11359,7 +11359,7 @@ void FUN_1019d8d0(int *param_1)
 // Reference entry 1019d8f0; body size 16 bytes.
 #line 1 "ENTRY_1019d8f0"
 
-void FUN_1019d8f0(int *param_1)
+void __stdcall FUN_1019d8f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11372,7 +11372,7 @@ void FUN_1019d8f0(int *param_1)
 // Reference entry 1019d910; body size 16 bytes.
 #line 1 "ENTRY_1019d910"
 
-void FUN_1019d910(int *param_1)
+void __stdcall FUN_1019d910(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11385,7 +11385,7 @@ void FUN_1019d910(int *param_1)
 // Reference entry 1019d930; body size 16 bytes.
 #line 1 "ENTRY_1019d930"
 
-void FUN_1019d930(int *param_1)
+void __stdcall FUN_1019d930(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11398,7 +11398,7 @@ void FUN_1019d930(int *param_1)
 // Reference entry 1019d950; body size 16 bytes.
 #line 1 "ENTRY_1019d950"
 
-void FUN_1019d950(int *param_1)
+void __stdcall FUN_1019d950(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11411,7 +11411,7 @@ void FUN_1019d950(int *param_1)
 // Reference entry 1019d970; body size 16 bytes.
 #line 1 "ENTRY_1019d970"
 
-void FUN_1019d970(int *param_1)
+void __stdcall FUN_1019d970(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11424,7 +11424,7 @@ void FUN_1019d970(int *param_1)
 // Reference entry 1019d990; body size 16 bytes.
 #line 1 "ENTRY_1019d990"
 
-void FUN_1019d990(int *param_1)
+void __stdcall FUN_1019d990(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11437,7 +11437,7 @@ void FUN_1019d990(int *param_1)
 // Reference entry 1019d9b0; body size 16 bytes.
 #line 1 "ENTRY_1019d9b0"
 
-void FUN_1019d9b0(int *param_1)
+void __stdcall FUN_1019d9b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11450,7 +11450,7 @@ void FUN_1019d9b0(int *param_1)
 // Reference entry 1019d9d0; body size 16 bytes.
 #line 1 "ENTRY_1019d9d0"
 
-void FUN_1019d9d0(int *param_1)
+void __stdcall FUN_1019d9d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11463,7 +11463,7 @@ void FUN_1019d9d0(int *param_1)
 // Reference entry 1019d9f0; body size 16 bytes.
 #line 1 "ENTRY_1019d9f0"
 
-void FUN_1019d9f0(int *param_1)
+void __stdcall FUN_1019d9f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11476,7 +11476,7 @@ void FUN_1019d9f0(int *param_1)
 // Reference entry 1019da10; body size 16 bytes.
 #line 1 "ENTRY_1019da10"
 
-void FUN_1019da10(int *param_1)
+void __stdcall FUN_1019da10(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11489,7 +11489,7 @@ void FUN_1019da10(int *param_1)
 // Reference entry 1019da30; body size 16 bytes.
 #line 1 "ENTRY_1019da30"
 
-void FUN_1019da30(int *param_1)
+void __stdcall FUN_1019da30(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11502,7 +11502,7 @@ void FUN_1019da30(int *param_1)
 // Reference entry 1019da50; body size 16 bytes.
 #line 1 "ENTRY_1019da50"
 
-void FUN_1019da50(int *param_1)
+void __stdcall FUN_1019da50(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11515,7 +11515,7 @@ void FUN_1019da50(int *param_1)
 // Reference entry 1019da70; body size 16 bytes.
 #line 1 "ENTRY_1019da70"
 
-void FUN_1019da70(int *param_1)
+void __stdcall FUN_1019da70(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11528,7 +11528,7 @@ void FUN_1019da70(int *param_1)
 // Reference entry 1019da90; body size 16 bytes.
 #line 1 "ENTRY_1019da90"
 
-void FUN_1019da90(int *param_1)
+void __stdcall FUN_1019da90(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11541,7 +11541,7 @@ void FUN_1019da90(int *param_1)
 // Reference entry 1019dab0; body size 16 bytes.
 #line 1 "ENTRY_1019dab0"
 
-void FUN_1019dab0(int *param_1)
+void __stdcall FUN_1019dab0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11554,7 +11554,7 @@ void FUN_1019dab0(int *param_1)
 // Reference entry 1019dad0; body size 16 bytes.
 #line 1 "ENTRY_1019dad0"
 
-void FUN_1019dad0(int *param_1)
+void __stdcall FUN_1019dad0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11567,7 +11567,7 @@ void FUN_1019dad0(int *param_1)
 // Reference entry 1019daf0; body size 16 bytes.
 #line 1 "ENTRY_1019daf0"
 
-void FUN_1019daf0(int *param_1)
+void __stdcall FUN_1019daf0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11580,7 +11580,7 @@ void FUN_1019daf0(int *param_1)
 // Reference entry 1019db10; body size 16 bytes.
 #line 1 "ENTRY_1019db10"
 
-void FUN_1019db10(int *param_1)
+void __stdcall FUN_1019db10(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11593,7 +11593,7 @@ void FUN_1019db10(int *param_1)
 // Reference entry 1019db30; body size 16 bytes.
 #line 1 "ENTRY_1019db30"
 
-void FUN_1019db30(int *param_1)
+void __stdcall FUN_1019db30(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11606,7 +11606,7 @@ void FUN_1019db30(int *param_1)
 // Reference entry 1019db50; body size 16 bytes.
 #line 1 "ENTRY_1019db50"
 
-void FUN_1019db50(int *param_1)
+void __stdcall FUN_1019db50(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11619,7 +11619,7 @@ void FUN_1019db50(int *param_1)
 // Reference entry 1019db70; body size 16 bytes.
 #line 1 "ENTRY_1019db70"
 
-void FUN_1019db70(int *param_1)
+void __stdcall FUN_1019db70(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11632,7 +11632,7 @@ void FUN_1019db70(int *param_1)
 // Reference entry 1019db90; body size 16 bytes.
 #line 1 "ENTRY_1019db90"
 
-void FUN_1019db90(int *param_1)
+void __stdcall FUN_1019db90(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11645,7 +11645,7 @@ void FUN_1019db90(int *param_1)
 // Reference entry 1019dbb0; body size 16 bytes.
 #line 1 "ENTRY_1019dbb0"
 
-void FUN_1019dbb0(int *param_1)
+void __stdcall FUN_1019dbb0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11658,7 +11658,7 @@ void FUN_1019dbb0(int *param_1)
 // Reference entry 1019dbd0; body size 16 bytes.
 #line 1 "ENTRY_1019dbd0"
 
-void FUN_1019dbd0(int *param_1)
+void __stdcall FUN_1019dbd0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11671,7 +11671,7 @@ void FUN_1019dbd0(int *param_1)
 // Reference entry 1019dbf0; body size 16 bytes.
 #line 1 "ENTRY_1019dbf0"
 
-void FUN_1019dbf0(int *param_1)
+void __stdcall FUN_1019dbf0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11684,7 +11684,7 @@ void FUN_1019dbf0(int *param_1)
 // Reference entry 1019dc10; body size 16 bytes.
 #line 1 "ENTRY_1019dc10"
 
-void FUN_1019dc10(int *param_1)
+void __stdcall FUN_1019dc10(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11697,7 +11697,7 @@ void FUN_1019dc10(int *param_1)
 // Reference entry 1019dc30; body size 16 bytes.
 #line 1 "ENTRY_1019dc30"
 
-void FUN_1019dc30(int *param_1)
+void __stdcall FUN_1019dc30(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11710,7 +11710,7 @@ void FUN_1019dc30(int *param_1)
 // Reference entry 1019dc50; body size 16 bytes.
 #line 1 "ENTRY_1019dc50"
 
-void FUN_1019dc50(int *param_1)
+void __stdcall FUN_1019dc50(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11723,7 +11723,7 @@ void FUN_1019dc50(int *param_1)
 // Reference entry 1019dc70; body size 16 bytes.
 #line 1 "ENTRY_1019dc70"
 
-void FUN_1019dc70(int *param_1)
+void __stdcall FUN_1019dc70(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11736,7 +11736,7 @@ void FUN_1019dc70(int *param_1)
 // Reference entry 1019dc90; body size 16 bytes.
 #line 1 "ENTRY_1019dc90"
 
-void FUN_1019dc90(int *param_1)
+void __stdcall FUN_1019dc90(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11749,7 +11749,7 @@ void FUN_1019dc90(int *param_1)
 // Reference entry 1019dcb0; body size 16 bytes.
 #line 1 "ENTRY_1019dcb0"
 
-void FUN_1019dcb0(int *param_1)
+void __stdcall FUN_1019dcb0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11762,7 +11762,7 @@ void FUN_1019dcb0(int *param_1)
 // Reference entry 1019dcd0; body size 16 bytes.
 #line 1 "ENTRY_1019dcd0"
 
-void FUN_1019dcd0(int *param_1)
+void __stdcall FUN_1019dcd0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11775,7 +11775,7 @@ void FUN_1019dcd0(int *param_1)
 // Reference entry 1019dcf0; body size 16 bytes.
 #line 1 "ENTRY_1019dcf0"
 
-void FUN_1019dcf0(int *param_1)
+void __stdcall FUN_1019dcf0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11788,7 +11788,7 @@ void FUN_1019dcf0(int *param_1)
 // Reference entry 1019dd10; body size 16 bytes.
 #line 1 "ENTRY_1019dd10"
 
-void FUN_1019dd10(int *param_1)
+void __stdcall FUN_1019dd10(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11801,7 +11801,7 @@ void FUN_1019dd10(int *param_1)
 // Reference entry 1019dd30; body size 16 bytes.
 #line 1 "ENTRY_1019dd30"
 
-void FUN_1019dd30(int *param_1)
+void __stdcall FUN_1019dd30(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11814,7 +11814,7 @@ void FUN_1019dd30(int *param_1)
 // Reference entry 1019dd50; body size 16 bytes.
 #line 1 "ENTRY_1019dd50"
 
-void FUN_1019dd50(int *param_1)
+void __stdcall FUN_1019dd50(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11827,7 +11827,7 @@ void FUN_1019dd50(int *param_1)
 // Reference entry 1019dd70; body size 16 bytes.
 #line 1 "ENTRY_1019dd70"
 
-void FUN_1019dd70(int *param_1)
+void __stdcall FUN_1019dd70(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11840,7 +11840,7 @@ void FUN_1019dd70(int *param_1)
 // Reference entry 1019dd90; body size 16 bytes.
 #line 1 "ENTRY_1019dd90"
 
-void FUN_1019dd90(int *param_1)
+void __stdcall FUN_1019dd90(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11853,7 +11853,7 @@ void FUN_1019dd90(int *param_1)
 // Reference entry 1019ddb0; body size 16 bytes.
 #line 1 "ENTRY_1019ddb0"
 
-void FUN_1019ddb0(int *param_1)
+void __stdcall FUN_1019ddb0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11866,7 +11866,7 @@ void FUN_1019ddb0(int *param_1)
 // Reference entry 1019ddd0; body size 16 bytes.
 #line 1 "ENTRY_1019ddd0"
 
-void FUN_1019ddd0(int *param_1)
+void __stdcall FUN_1019ddd0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11879,7 +11879,7 @@ void FUN_1019ddd0(int *param_1)
 // Reference entry 1019ddf0; body size 16 bytes.
 #line 1 "ENTRY_1019ddf0"
 
-void FUN_1019ddf0(int *param_1)
+void __stdcall FUN_1019ddf0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11892,7 +11892,7 @@ void FUN_1019ddf0(int *param_1)
 // Reference entry 1019de10; body size 16 bytes.
 #line 1 "ENTRY_1019de10"
 
-void FUN_1019de10(int *param_1)
+void __stdcall FUN_1019de10(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11905,7 +11905,7 @@ void FUN_1019de10(int *param_1)
 // Reference entry 1019de30; body size 16 bytes.
 #line 1 "ENTRY_1019de30"
 
-void FUN_1019de30(int *param_1)
+void __stdcall FUN_1019de30(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11918,7 +11918,7 @@ void FUN_1019de30(int *param_1)
 // Reference entry 1019de50; body size 16 bytes.
 #line 1 "ENTRY_1019de50"
 
-void FUN_1019de50(int *param_1)
+void __stdcall FUN_1019de50(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11931,7 +11931,7 @@ void FUN_1019de50(int *param_1)
 // Reference entry 1019de70; body size 16 bytes.
 #line 1 "ENTRY_1019de70"
 
-void FUN_1019de70(int *param_1)
+void __stdcall FUN_1019de70(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11944,7 +11944,7 @@ void FUN_1019de70(int *param_1)
 // Reference entry 1019de90; body size 16 bytes.
 #line 1 "ENTRY_1019de90"
 
-void FUN_1019de90(int *param_1)
+void __stdcall FUN_1019de90(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11957,7 +11957,7 @@ void FUN_1019de90(int *param_1)
 // Reference entry 1019deb0; body size 16 bytes.
 #line 1 "ENTRY_1019deb0"
 
-void FUN_1019deb0(int *param_1)
+void __stdcall FUN_1019deb0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11970,7 +11970,7 @@ void FUN_1019deb0(int *param_1)
 // Reference entry 1019ded0; body size 16 bytes.
 #line 1 "ENTRY_1019ded0"
 
-void FUN_1019ded0(int *param_1)
+void __stdcall FUN_1019ded0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -11999,7 +11999,7 @@ void __stdcall FUN_1019def0(int *param_1)
 // Reference entry 1019df10; body size 16 bytes.
 #line 1 "ENTRY_1019df10"
 
-void FUN_1019df10(int *param_1)
+void __stdcall FUN_1019df10(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12012,7 +12012,7 @@ void FUN_1019df10(int *param_1)
 // Reference entry 1019df30; body size 16 bytes.
 #line 1 "ENTRY_1019df30"
 
-void FUN_1019df30(int *param_1)
+void __stdcall FUN_1019df30(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12025,7 +12025,7 @@ void FUN_1019df30(int *param_1)
 // Reference entry 1019df50; body size 16 bytes.
 #line 1 "ENTRY_1019df50"
 
-void FUN_1019df50(int *param_1)
+void __stdcall FUN_1019df50(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12038,7 +12038,7 @@ void FUN_1019df50(int *param_1)
 // Reference entry 1019df70; body size 16 bytes.
 #line 1 "ENTRY_1019df70"
 
-void FUN_1019df70(int *param_1)
+void __stdcall FUN_1019df70(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12051,7 +12051,7 @@ void FUN_1019df70(int *param_1)
 // Reference entry 1019df90; body size 16 bytes.
 #line 1 "ENTRY_1019df90"
 
-void FUN_1019df90(int *param_1)
+void __stdcall FUN_1019df90(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12064,7 +12064,7 @@ void FUN_1019df90(int *param_1)
 // Reference entry 1019dfb0; body size 16 bytes.
 #line 1 "ENTRY_1019dfb0"
 
-void FUN_1019dfb0(int *param_1)
+void __stdcall FUN_1019dfb0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12077,7 +12077,7 @@ void FUN_1019dfb0(int *param_1)
 // Reference entry 1019dfd0; body size 16 bytes.
 #line 1 "ENTRY_1019dfd0"
 
-void FUN_1019dfd0(int *param_1)
+void __stdcall FUN_1019dfd0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12090,7 +12090,7 @@ void FUN_1019dfd0(int *param_1)
 // Reference entry 1019dff0; body size 16 bytes.
 #line 1 "ENTRY_1019dff0"
 
-void FUN_1019dff0(int *param_1)
+void __stdcall FUN_1019dff0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12103,7 +12103,7 @@ void FUN_1019dff0(int *param_1)
 // Reference entry 1019e010; body size 16 bytes.
 #line 1 "ENTRY_1019e010"
 
-void FUN_1019e010(int *param_1)
+void __stdcall FUN_1019e010(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12116,7 +12116,7 @@ void FUN_1019e010(int *param_1)
 // Reference entry 1019e030; body size 16 bytes.
 #line 1 "ENTRY_1019e030"
 
-void FUN_1019e030(int *param_1)
+void __stdcall FUN_1019e030(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12129,7 +12129,7 @@ void FUN_1019e030(int *param_1)
 // Reference entry 1019e050; body size 16 bytes.
 #line 1 "ENTRY_1019e050"
 
-void FUN_1019e050(int *param_1)
+void __stdcall FUN_1019e050(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12142,7 +12142,7 @@ void FUN_1019e050(int *param_1)
 // Reference entry 1019e070; body size 16 bytes.
 #line 1 "ENTRY_1019e070"
 
-void FUN_1019e070(int *param_1)
+void __stdcall FUN_1019e070(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12155,7 +12155,7 @@ void FUN_1019e070(int *param_1)
 // Reference entry 1019e090; body size 16 bytes.
 #line 1 "ENTRY_1019e090"
 
-void FUN_1019e090(int *param_1)
+void __stdcall FUN_1019e090(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12168,7 +12168,7 @@ void FUN_1019e090(int *param_1)
 // Reference entry 1019e0b0; body size 16 bytes.
 #line 1 "ENTRY_1019e0b0"
 
-void FUN_1019e0b0(int *param_1)
+void __stdcall FUN_1019e0b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12181,7 +12181,7 @@ void FUN_1019e0b0(int *param_1)
 // Reference entry 1019e0d0; body size 16 bytes.
 #line 1 "ENTRY_1019e0d0"
 
-void FUN_1019e0d0(int *param_1)
+void __stdcall FUN_1019e0d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12194,7 +12194,7 @@ void FUN_1019e0d0(int *param_1)
 // Reference entry 1019e0f0; body size 16 bytes.
 #line 1 "ENTRY_1019e0f0"
 
-void FUN_1019e0f0(int *param_1)
+void __stdcall FUN_1019e0f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12207,7 +12207,7 @@ void FUN_1019e0f0(int *param_1)
 // Reference entry 1019e110; body size 16 bytes.
 #line 1 "ENTRY_1019e110"
 
-void FUN_1019e110(int *param_1)
+void __stdcall FUN_1019e110(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12220,7 +12220,7 @@ void FUN_1019e110(int *param_1)
 // Reference entry 1019e130; body size 16 bytes.
 #line 1 "ENTRY_1019e130"
 
-void FUN_1019e130(int *param_1)
+void __stdcall FUN_1019e130(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12233,7 +12233,7 @@ void FUN_1019e130(int *param_1)
 // Reference entry 1019e150; body size 16 bytes.
 #line 1 "ENTRY_1019e150"
 
-void FUN_1019e150(int *param_1)
+void __stdcall FUN_1019e150(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12246,7 +12246,7 @@ void FUN_1019e150(int *param_1)
 // Reference entry 1019e170; body size 16 bytes.
 #line 1 "ENTRY_1019e170"
 
-void FUN_1019e170(int *param_1)
+void __stdcall FUN_1019e170(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12259,7 +12259,7 @@ void FUN_1019e170(int *param_1)
 // Reference entry 1019e190; body size 16 bytes.
 #line 1 "ENTRY_1019e190"
 
-void FUN_1019e190(int *param_1)
+void __stdcall FUN_1019e190(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12272,7 +12272,7 @@ void FUN_1019e190(int *param_1)
 // Reference entry 1019e1b0; body size 16 bytes.
 #line 1 "ENTRY_1019e1b0"
 
-void FUN_1019e1b0(int *param_1)
+void __stdcall FUN_1019e1b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12285,7 +12285,7 @@ void FUN_1019e1b0(int *param_1)
 // Reference entry 1019e1d0; body size 16 bytes.
 #line 1 "ENTRY_1019e1d0"
 
-void FUN_1019e1d0(int *param_1)
+void __stdcall FUN_1019e1d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12298,7 +12298,7 @@ void FUN_1019e1d0(int *param_1)
 // Reference entry 1019e1f0; body size 16 bytes.
 #line 1 "ENTRY_1019e1f0"
 
-void FUN_1019e1f0(int *param_1)
+void __stdcall FUN_1019e1f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12311,7 +12311,7 @@ void FUN_1019e1f0(int *param_1)
 // Reference entry 1019e210; body size 16 bytes.
 #line 1 "ENTRY_1019e210"
 
-void FUN_1019e210(int *param_1)
+void __stdcall FUN_1019e210(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12324,7 +12324,7 @@ void FUN_1019e210(int *param_1)
 // Reference entry 1019e230; body size 16 bytes.
 #line 1 "ENTRY_1019e230"
 
-void FUN_1019e230(int *param_1)
+void __stdcall FUN_1019e230(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12337,7 +12337,7 @@ void FUN_1019e230(int *param_1)
 // Reference entry 1019e250; body size 16 bytes.
 #line 1 "ENTRY_1019e250"
 
-void FUN_1019e250(int *param_1)
+void __stdcall FUN_1019e250(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12350,7 +12350,7 @@ void FUN_1019e250(int *param_1)
 // Reference entry 1019e270; body size 16 bytes.
 #line 1 "ENTRY_1019e270"
 
-void FUN_1019e270(int *param_1)
+void __stdcall FUN_1019e270(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12363,7 +12363,7 @@ void FUN_1019e270(int *param_1)
 // Reference entry 1019e290; body size 16 bytes.
 #line 1 "ENTRY_1019e290"
 
-void FUN_1019e290(int *param_1)
+void __stdcall FUN_1019e290(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12376,7 +12376,7 @@ void FUN_1019e290(int *param_1)
 // Reference entry 1019e2b0; body size 16 bytes.
 #line 1 "ENTRY_1019e2b0"
 
-void FUN_1019e2b0(int *param_1)
+void __stdcall FUN_1019e2b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12389,7 +12389,7 @@ void FUN_1019e2b0(int *param_1)
 // Reference entry 1019e2d0; body size 16 bytes.
 #line 1 "ENTRY_1019e2d0"
 
-void FUN_1019e2d0(int *param_1)
+void __stdcall FUN_1019e2d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12402,7 +12402,7 @@ void FUN_1019e2d0(int *param_1)
 // Reference entry 1019e2f0; body size 16 bytes.
 #line 1 "ENTRY_1019e2f0"
 
-void FUN_1019e2f0(int *param_1)
+void __stdcall FUN_1019e2f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12415,7 +12415,7 @@ void FUN_1019e2f0(int *param_1)
 // Reference entry 1019e310; body size 16 bytes.
 #line 1 "ENTRY_1019e310"
 
-void FUN_1019e310(int *param_1)
+void __stdcall FUN_1019e310(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12428,7 +12428,7 @@ void FUN_1019e310(int *param_1)
 // Reference entry 1019e330; body size 16 bytes.
 #line 1 "ENTRY_1019e330"
 
-void FUN_1019e330(int *param_1)
+void __stdcall FUN_1019e330(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12441,7 +12441,7 @@ void FUN_1019e330(int *param_1)
 // Reference entry 1019e350; body size 16 bytes.
 #line 1 "ENTRY_1019e350"
 
-void FUN_1019e350(int *param_1)
+void __stdcall FUN_1019e350(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12454,7 +12454,7 @@ void FUN_1019e350(int *param_1)
 // Reference entry 1019e370; body size 16 bytes.
 #line 1 "ENTRY_1019e370"
 
-void FUN_1019e370(int *param_1)
+void __stdcall FUN_1019e370(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12467,7 +12467,7 @@ void FUN_1019e370(int *param_1)
 // Reference entry 1019e390; body size 16 bytes.
 #line 1 "ENTRY_1019e390"
 
-void FUN_1019e390(int *param_1)
+void __stdcall FUN_1019e390(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12480,7 +12480,7 @@ void FUN_1019e390(int *param_1)
 // Reference entry 1019e3b0; body size 16 bytes.
 #line 1 "ENTRY_1019e3b0"
 
-void FUN_1019e3b0(int *param_1)
+void __stdcall FUN_1019e3b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12493,7 +12493,7 @@ void FUN_1019e3b0(int *param_1)
 // Reference entry 1019e3d0; body size 16 bytes.
 #line 1 "ENTRY_1019e3d0"
 
-void FUN_1019e3d0(int *param_1)
+void __stdcall FUN_1019e3d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12506,7 +12506,7 @@ void FUN_1019e3d0(int *param_1)
 // Reference entry 1019e3f0; body size 16 bytes.
 #line 1 "ENTRY_1019e3f0"
 
-void FUN_1019e3f0(int *param_1)
+void __stdcall FUN_1019e3f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12519,7 +12519,7 @@ void FUN_1019e3f0(int *param_1)
 // Reference entry 1019e410; body size 16 bytes.
 #line 1 "ENTRY_1019e410"
 
-void FUN_1019e410(int *param_1)
+void __stdcall FUN_1019e410(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12532,7 +12532,7 @@ void FUN_1019e410(int *param_1)
 // Reference entry 1019e430; body size 16 bytes.
 #line 1 "ENTRY_1019e430"
 
-void FUN_1019e430(int *param_1)
+void __stdcall FUN_1019e430(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12545,7 +12545,7 @@ void FUN_1019e430(int *param_1)
 // Reference entry 1019e450; body size 16 bytes.
 #line 1 "ENTRY_1019e450"
 
-void FUN_1019e450(int *param_1)
+void __stdcall FUN_1019e450(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12558,7 +12558,7 @@ void FUN_1019e450(int *param_1)
 // Reference entry 1019e470; body size 16 bytes.
 #line 1 "ENTRY_1019e470"
 
-void FUN_1019e470(int *param_1)
+void __stdcall FUN_1019e470(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12571,7 +12571,7 @@ void FUN_1019e470(int *param_1)
 // Reference entry 1019e490; body size 16 bytes.
 #line 1 "ENTRY_1019e490"
 
-void FUN_1019e490(int *param_1)
+void __stdcall FUN_1019e490(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12584,7 +12584,7 @@ void FUN_1019e490(int *param_1)
 // Reference entry 1019e4b0; body size 16 bytes.
 #line 1 "ENTRY_1019e4b0"
 
-void FUN_1019e4b0(int *param_1)
+void __stdcall FUN_1019e4b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12597,7 +12597,7 @@ void FUN_1019e4b0(int *param_1)
 // Reference entry 1019e4d0; body size 16 bytes.
 #line 1 "ENTRY_1019e4d0"
 
-void FUN_1019e4d0(int *param_1)
+void __stdcall FUN_1019e4d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12610,7 +12610,7 @@ void FUN_1019e4d0(int *param_1)
 // Reference entry 1019e4f0; body size 16 bytes.
 #line 1 "ENTRY_1019e4f0"
 
-void FUN_1019e4f0(int *param_1)
+void __stdcall FUN_1019e4f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12623,7 +12623,7 @@ void FUN_1019e4f0(int *param_1)
 // Reference entry 1019e510; body size 16 bytes.
 #line 1 "ENTRY_1019e510"
 
-void FUN_1019e510(int *param_1)
+void __stdcall FUN_1019e510(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12636,7 +12636,7 @@ void FUN_1019e510(int *param_1)
 // Reference entry 1019e530; body size 16 bytes.
 #line 1 "ENTRY_1019e530"
 
-void FUN_1019e530(int *param_1)
+void __stdcall FUN_1019e530(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12649,7 +12649,7 @@ void FUN_1019e530(int *param_1)
 // Reference entry 1019e550; body size 16 bytes.
 #line 1 "ENTRY_1019e550"
 
-void FUN_1019e550(int *param_1)
+void __stdcall FUN_1019e550(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12662,7 +12662,7 @@ void FUN_1019e550(int *param_1)
 // Reference entry 1019e570; body size 16 bytes.
 #line 1 "ENTRY_1019e570"
 
-void FUN_1019e570(int *param_1)
+void __stdcall FUN_1019e570(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12675,7 +12675,7 @@ void FUN_1019e570(int *param_1)
 // Reference entry 1019e590; body size 16 bytes.
 #line 1 "ENTRY_1019e590"
 
-void FUN_1019e590(int *param_1)
+void __stdcall FUN_1019e590(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12688,7 +12688,7 @@ void FUN_1019e590(int *param_1)
 // Reference entry 1019e5b0; body size 16 bytes.
 #line 1 "ENTRY_1019e5b0"
 
-void FUN_1019e5b0(int *param_1)
+void __stdcall FUN_1019e5b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12701,7 +12701,7 @@ void FUN_1019e5b0(int *param_1)
 // Reference entry 1019e5d0; body size 16 bytes.
 #line 1 "ENTRY_1019e5d0"
 
-void FUN_1019e5d0(int *param_1)
+void __stdcall FUN_1019e5d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12714,7 +12714,7 @@ void FUN_1019e5d0(int *param_1)
 // Reference entry 1019e5f0; body size 16 bytes.
 #line 1 "ENTRY_1019e5f0"
 
-void FUN_1019e5f0(int *param_1)
+void __stdcall FUN_1019e5f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12727,7 +12727,7 @@ void FUN_1019e5f0(int *param_1)
 // Reference entry 1019e610; body size 16 bytes.
 #line 1 "ENTRY_1019e610"
 
-void FUN_1019e610(int *param_1)
+void __stdcall FUN_1019e610(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12740,7 +12740,7 @@ void FUN_1019e610(int *param_1)
 // Reference entry 1019e630; body size 16 bytes.
 #line 1 "ENTRY_1019e630"
 
-void FUN_1019e630(int *param_1)
+void __stdcall FUN_1019e630(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12753,7 +12753,7 @@ void FUN_1019e630(int *param_1)
 // Reference entry 1019e650; body size 16 bytes.
 #line 1 "ENTRY_1019e650"
 
-void FUN_1019e650(int *param_1)
+void __stdcall FUN_1019e650(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12766,7 +12766,7 @@ void FUN_1019e650(int *param_1)
 // Reference entry 1019e670; body size 16 bytes.
 #line 1 "ENTRY_1019e670"
 
-void FUN_1019e670(int *param_1)
+void __stdcall FUN_1019e670(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12779,7 +12779,7 @@ void FUN_1019e670(int *param_1)
 // Reference entry 1019e690; body size 16 bytes.
 #line 1 "ENTRY_1019e690"
 
-void FUN_1019e690(int *param_1)
+void __stdcall FUN_1019e690(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12792,7 +12792,7 @@ void FUN_1019e690(int *param_1)
 // Reference entry 1019e6b0; body size 16 bytes.
 #line 1 "ENTRY_1019e6b0"
 
-void FUN_1019e6b0(int *param_1)
+void __stdcall FUN_1019e6b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12805,7 +12805,7 @@ void FUN_1019e6b0(int *param_1)
 // Reference entry 1019e6d0; body size 16 bytes.
 #line 1 "ENTRY_1019e6d0"
 
-void FUN_1019e6d0(int *param_1)
+void __stdcall FUN_1019e6d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12818,7 +12818,7 @@ void FUN_1019e6d0(int *param_1)
 // Reference entry 1019e6f0; body size 16 bytes.
 #line 1 "ENTRY_1019e6f0"
 
-void FUN_1019e6f0(int *param_1)
+void __stdcall FUN_1019e6f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12831,7 +12831,7 @@ void FUN_1019e6f0(int *param_1)
 // Reference entry 1019e710; body size 16 bytes.
 #line 1 "ENTRY_1019e710"
 
-void FUN_1019e710(int *param_1)
+void __stdcall FUN_1019e710(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12844,7 +12844,7 @@ void FUN_1019e710(int *param_1)
 // Reference entry 1019e730; body size 16 bytes.
 #line 1 "ENTRY_1019e730"
 
-void FUN_1019e730(int *param_1)
+void __stdcall FUN_1019e730(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12857,7 +12857,7 @@ void FUN_1019e730(int *param_1)
 // Reference entry 1019e750; body size 16 bytes.
 #line 1 "ENTRY_1019e750"
 
-void FUN_1019e750(int *param_1)
+void __stdcall FUN_1019e750(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12870,7 +12870,7 @@ void FUN_1019e750(int *param_1)
 // Reference entry 1019e770; body size 16 bytes.
 #line 1 "ENTRY_1019e770"
 
-void FUN_1019e770(int *param_1)
+void __stdcall FUN_1019e770(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12883,7 +12883,7 @@ void FUN_1019e770(int *param_1)
 // Reference entry 1019e790; body size 16 bytes.
 #line 1 "ENTRY_1019e790"
 
-void FUN_1019e790(int *param_1)
+void __stdcall FUN_1019e790(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12896,7 +12896,7 @@ void FUN_1019e790(int *param_1)
 // Reference entry 1019e7b0; body size 16 bytes.
 #line 1 "ENTRY_1019e7b0"
 
-void FUN_1019e7b0(int *param_1)
+void __stdcall FUN_1019e7b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12909,7 +12909,7 @@ void FUN_1019e7b0(int *param_1)
 // Reference entry 1019e7d0; body size 16 bytes.
 #line 1 "ENTRY_1019e7d0"
 
-void FUN_1019e7d0(int *param_1)
+void __stdcall FUN_1019e7d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12922,7 +12922,7 @@ void FUN_1019e7d0(int *param_1)
 // Reference entry 1019e7f0; body size 16 bytes.
 #line 1 "ENTRY_1019e7f0"
 
-void FUN_1019e7f0(int *param_1)
+void __stdcall FUN_1019e7f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12935,7 +12935,7 @@ void FUN_1019e7f0(int *param_1)
 // Reference entry 1019e810; body size 16 bytes.
 #line 1 "ENTRY_1019e810"
 
-void FUN_1019e810(int *param_1)
+void __stdcall FUN_1019e810(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12964,7 +12964,7 @@ void __stdcall FUN_1019e830(int *param_1)
 // Reference entry 1019e850; body size 16 bytes.
 #line 1 "ENTRY_1019e850"
 
-void FUN_1019e850(int *param_1)
+void __stdcall FUN_1019e850(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12977,7 +12977,7 @@ void FUN_1019e850(int *param_1)
 // Reference entry 1019e870; body size 16 bytes.
 #line 1 "ENTRY_1019e870"
 
-void FUN_1019e870(int *param_1)
+void __stdcall FUN_1019e870(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -12990,7 +12990,7 @@ void FUN_1019e870(int *param_1)
 // Reference entry 1019e890; body size 16 bytes.
 #line 1 "ENTRY_1019e890"
 
-void FUN_1019e890(int *param_1)
+void __stdcall FUN_1019e890(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13003,7 +13003,7 @@ void FUN_1019e890(int *param_1)
 // Reference entry 1019e8b0; body size 16 bytes.
 #line 1 "ENTRY_1019e8b0"
 
-void FUN_1019e8b0(int *param_1)
+void __stdcall FUN_1019e8b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13016,7 +13016,7 @@ void FUN_1019e8b0(int *param_1)
 // Reference entry 1019e8d0; body size 16 bytes.
 #line 1 "ENTRY_1019e8d0"
 
-void FUN_1019e8d0(int *param_1)
+void __stdcall FUN_1019e8d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13029,7 +13029,7 @@ void FUN_1019e8d0(int *param_1)
 // Reference entry 1019e8f0; body size 16 bytes.
 #line 1 "ENTRY_1019e8f0"
 
-void FUN_1019e8f0(int *param_1)
+void __stdcall FUN_1019e8f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13042,7 +13042,7 @@ void FUN_1019e8f0(int *param_1)
 // Reference entry 1019e910; body size 16 bytes.
 #line 1 "ENTRY_1019e910"
 
-void FUN_1019e910(int *param_1)
+void __stdcall FUN_1019e910(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13055,7 +13055,7 @@ void FUN_1019e910(int *param_1)
 // Reference entry 1019e930; body size 16 bytes.
 #line 1 "ENTRY_1019e930"
 
-void FUN_1019e930(int *param_1)
+void __stdcall FUN_1019e930(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13068,7 +13068,7 @@ void FUN_1019e930(int *param_1)
 // Reference entry 1019e950; body size 16 bytes.
 #line 1 "ENTRY_1019e950"
 
-void FUN_1019e950(int *param_1)
+void __stdcall FUN_1019e950(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13081,7 +13081,7 @@ void FUN_1019e950(int *param_1)
 // Reference entry 1019e970; body size 16 bytes.
 #line 1 "ENTRY_1019e970"
 
-void FUN_1019e970(int *param_1)
+void __stdcall FUN_1019e970(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13094,7 +13094,7 @@ void FUN_1019e970(int *param_1)
 // Reference entry 1019e990; body size 16 bytes.
 #line 1 "ENTRY_1019e990"
 
-void FUN_1019e990(int *param_1)
+void __stdcall FUN_1019e990(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13107,7 +13107,7 @@ void FUN_1019e990(int *param_1)
 // Reference entry 1019e9b0; body size 16 bytes.
 #line 1 "ENTRY_1019e9b0"
 
-void FUN_1019e9b0(int *param_1)
+void __stdcall FUN_1019e9b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13120,7 +13120,7 @@ void FUN_1019e9b0(int *param_1)
 // Reference entry 1019e9d0; body size 16 bytes.
 #line 1 "ENTRY_1019e9d0"
 
-void FUN_1019e9d0(int *param_1)
+void __stdcall FUN_1019e9d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13133,7 +13133,7 @@ void FUN_1019e9d0(int *param_1)
 // Reference entry 1019e9f0; body size 16 bytes.
 #line 1 "ENTRY_1019e9f0"
 
-void FUN_1019e9f0(int *param_1)
+void __stdcall FUN_1019e9f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13146,7 +13146,7 @@ void FUN_1019e9f0(int *param_1)
 // Reference entry 1019ea10; body size 16 bytes.
 #line 1 "ENTRY_1019ea10"
 
-void FUN_1019ea10(int *param_1)
+void __stdcall FUN_1019ea10(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13159,7 +13159,7 @@ void FUN_1019ea10(int *param_1)
 // Reference entry 1019ea30; body size 16 bytes.
 #line 1 "ENTRY_1019ea30"
 
-void FUN_1019ea30(int *param_1)
+void __stdcall FUN_1019ea30(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13172,7 +13172,7 @@ void FUN_1019ea30(int *param_1)
 // Reference entry 1019eaf0; body size 16 bytes.
 #line 1 "ENTRY_1019eaf0"
 
-void FUN_1019eaf0(int *param_1)
+void __stdcall FUN_1019eaf0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13185,7 +13185,7 @@ void FUN_1019eaf0(int *param_1)
 // Reference entry 1019eb10; body size 16 bytes.
 #line 1 "ENTRY_1019eb10"
 
-void FUN_1019eb10(int *param_1)
+void __stdcall FUN_1019eb10(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13198,7 +13198,7 @@ void FUN_1019eb10(int *param_1)
 // Reference entry 1019eb30; body size 16 bytes.
 #line 1 "ENTRY_1019eb30"
 
-void FUN_1019eb30(int *param_1)
+void __stdcall FUN_1019eb30(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13211,7 +13211,7 @@ void FUN_1019eb30(int *param_1)
 // Reference entry 1019eb50; body size 16 bytes.
 #line 1 "ENTRY_1019eb50"
 
-void FUN_1019eb50(int *param_1)
+void __stdcall FUN_1019eb50(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13224,7 +13224,7 @@ void FUN_1019eb50(int *param_1)
 // Reference entry 1019ebf0; body size 16 bytes.
 #line 1 "ENTRY_1019ebf0"
 
-void FUN_1019ebf0(int *param_1)
+void __stdcall FUN_1019ebf0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13237,7 +13237,7 @@ void FUN_1019ebf0(int *param_1)
 // Reference entry 1019ec10; body size 16 bytes.
 #line 1 "ENTRY_1019ec10"
 
-void FUN_1019ec10(int *param_1)
+void __stdcall FUN_1019ec10(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13250,7 +13250,7 @@ void FUN_1019ec10(int *param_1)
 // Reference entry 1019ec30; body size 16 bytes.
 #line 1 "ENTRY_1019ec30"
 
-void FUN_1019ec30(int *param_1)
+void __stdcall FUN_1019ec30(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13263,7 +13263,7 @@ void FUN_1019ec30(int *param_1)
 // Reference entry 1019ec50; body size 16 bytes.
 #line 1 "ENTRY_1019ec50"
 
-void FUN_1019ec50(int *param_1)
+void __stdcall FUN_1019ec50(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13276,7 +13276,7 @@ void FUN_1019ec50(int *param_1)
 // Reference entry 1019ec70; body size 16 bytes.
 #line 1 "ENTRY_1019ec70"
 
-void FUN_1019ec70(int *param_1)
+void __stdcall FUN_1019ec70(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13289,7 +13289,7 @@ void FUN_1019ec70(int *param_1)
 // Reference entry 1019ec90; body size 16 bytes.
 #line 1 "ENTRY_1019ec90"
 
-void FUN_1019ec90(int *param_1)
+void __stdcall FUN_1019ec90(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13302,7 +13302,7 @@ void FUN_1019ec90(int *param_1)
 // Reference entry 1019ecb0; body size 16 bytes.
 #line 1 "ENTRY_1019ecb0"
 
-void FUN_1019ecb0(int *param_1)
+void __stdcall FUN_1019ecb0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13315,7 +13315,7 @@ void FUN_1019ecb0(int *param_1)
 // Reference entry 1019ecd0; body size 16 bytes.
 #line 1 "ENTRY_1019ecd0"
 
-void FUN_1019ecd0(int *param_1)
+void __stdcall FUN_1019ecd0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13328,7 +13328,7 @@ void FUN_1019ecd0(int *param_1)
 // Reference entry 1019ecf0; body size 16 bytes.
 #line 1 "ENTRY_1019ecf0"
 
-void FUN_1019ecf0(int *param_1)
+void __stdcall FUN_1019ecf0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13341,7 +13341,7 @@ void FUN_1019ecf0(int *param_1)
 // Reference entry 1019edb0; body size 24 bytes.
 #line 1 "ENTRY_1019edb0"
 
-void FUN_1019edb0(int *param_1)
+void __stdcall FUN_1019edb0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13357,7 +13357,7 @@ void FUN_1019edb0(int *param_1)
 // Reference entry 1019edd0; body size 24 bytes.
 #line 1 "ENTRY_1019edd0"
 
-void FUN_1019edd0(int *param_1)
+void __stdcall FUN_1019edd0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13373,7 +13373,7 @@ void FUN_1019edd0(int *param_1)
 // Reference entry 1019edf0; body size 24 bytes.
 #line 1 "ENTRY_1019edf0"
 
-void FUN_1019edf0(int *param_1)
+void __stdcall FUN_1019edf0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13389,7 +13389,7 @@ void FUN_1019edf0(int *param_1)
 // Reference entry 1019ee10; body size 24 bytes.
 #line 1 "ENTRY_1019ee10"
 
-void FUN_1019ee10(int *param_1)
+void __stdcall FUN_1019ee10(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13405,7 +13405,7 @@ void FUN_1019ee10(int *param_1)
 // Reference entry 1019ee30; body size 24 bytes.
 #line 1 "ENTRY_1019ee30"
 
-void FUN_1019ee30(int *param_1)
+void __stdcall FUN_1019ee30(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13421,7 +13421,7 @@ void FUN_1019ee30(int *param_1)
 // Reference entry 1019ee50; body size 24 bytes.
 #line 1 "ENTRY_1019ee50"
 
-void FUN_1019ee50(int *param_1)
+void __stdcall FUN_1019ee50(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13437,7 +13437,7 @@ void FUN_1019ee50(int *param_1)
 // Reference entry 1019ee70; body size 24 bytes.
 #line 1 "ENTRY_1019ee70"
 
-void FUN_1019ee70(int *param_1)
+void __stdcall FUN_1019ee70(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13453,7 +13453,7 @@ void FUN_1019ee70(int *param_1)
 // Reference entry 1019ee90; body size 24 bytes.
 #line 1 "ENTRY_1019ee90"
 
-void FUN_1019ee90(int *param_1)
+void __stdcall FUN_1019ee90(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13469,7 +13469,7 @@ void FUN_1019ee90(int *param_1)
 // Reference entry 1019eee0; body size 24 bytes.
 #line 1 "ENTRY_1019eee0"
 
-void FUN_1019eee0(int *param_1)
+void __stdcall FUN_1019eee0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13485,7 +13485,7 @@ void FUN_1019eee0(int *param_1)
 // Reference entry 1019ef00; body size 16 bytes.
 #line 1 "ENTRY_1019ef00"
 
-void FUN_1019ef00(int *param_1)
+void __stdcall FUN_1019ef00(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13498,7 +13498,7 @@ void FUN_1019ef00(int *param_1)
 // Reference entry 1019ef20; body size 24 bytes.
 #line 1 "ENTRY_1019ef20"
 
-void FUN_1019ef20(int *param_1)
+void __stdcall FUN_1019ef20(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13514,7 +13514,7 @@ void FUN_1019ef20(int *param_1)
 // Reference entry 1019ef40; body size 16 bytes.
 #line 1 "ENTRY_1019ef40"
 
-void FUN_1019ef40(int *param_1)
+void __stdcall FUN_1019ef40(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13527,7 +13527,7 @@ void FUN_1019ef40(int *param_1)
 // Reference entry 1019ef60; body size 16 bytes.
 #line 1 "ENTRY_1019ef60"
 
-void FUN_1019ef60(int *param_1)
+void __stdcall FUN_1019ef60(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13540,7 +13540,7 @@ void FUN_1019ef60(int *param_1)
 // Reference entry 1019ef80; body size 16 bytes.
 #line 1 "ENTRY_1019ef80"
 
-void FUN_1019ef80(int *param_1)
+void __stdcall FUN_1019ef80(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -13553,7 +13553,7 @@ void FUN_1019ef80(int *param_1)
 // Reference entry 1019efa0; body size 24 bytes.
 #line 1 "ENTRY_1019efa0"
 
-void FUN_1019efa0(int *param_1)
+void __stdcall FUN_1019efa0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -78600,7 +78600,7 @@ void __fastcall FUN_106a1f10(undefined4 *param_1)
 
 
 
-void FUN_106a48c0(undefined4 *param_1)
+void __stdcall FUN_106a48c0(undefined4 *param_1)
 
 {
   if (param_1 != (undefined4 *)0x0) {
@@ -98526,7 +98526,7 @@ int * Recovered_10c76670::FUN_10c76670(int *param_2)
 
 
 
-void FUN_10c76f50(undefined4 *param_1)
+void __stdcall FUN_10c76f50(undefined4 *param_1)
 
 {
   if (param_1 != (undefined4 *)0x0) {
@@ -134299,7 +134299,7 @@ void __fastcall FUN_11091910(int param_1)
 
 
 
-void FUN_11091990(int *param_1)
+void __stdcall FUN_11091990(int *param_1)
 
 {
   int iVar1;
@@ -135473,7 +135473,7 @@ void __fastcall FUN_1111c7b0(int param_1)
 
 
 
-void FUN_1111d3c0(undefined4 *param_1)
+void __stdcall FUN_1111d3c0(undefined4 *param_1)
 
 {
   if (param_1 != (undefined4 *)0x0) {
@@ -135578,7 +135578,7 @@ uint FUN_11128ff0(int param_1,int *param_2)
 
 
 
-void FUN_1112d650(undefined4 *param_1)
+void __stdcall FUN_1112d650(undefined4 *param_1)
 
 {
   if (param_1 != (undefined4 *)0x0) {
@@ -137263,7 +137263,7 @@ void __fastcall FUN_111fc3e0(int param_1)
 
 
 
-void FUN_111fed50(undefined4 *param_1)
+void __stdcall FUN_111fed50(undefined4 *param_1)
 
 {
   if (param_1 != (undefined4 *)0x0) {

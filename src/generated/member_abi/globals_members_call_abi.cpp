@@ -1809,13 +1809,13 @@ extern int FUN_110d2820(...);
 extern int FUN_110d2f00(...);
 extern int FUN_110d57c0(...);
 extern int FUN_110d5c80(...);
-extern int FUN_110d67a0(...);
+extern void __stdcall FUN_110d67a0(int param_1,int param_2,int param_3,undefined4 param_4);
 extern int FUN_110d7950(...);
 extern int FUN_110d7a70(...);
 extern int FUN_110d81a0(...);
 extern void __stdcall FUN_110db840(undefined4 param_1,undefined4 param_2);
 extern int FUN_110dd3a0(...);
-extern int FUN_110ddb10(...);
+extern void __stdcall FUN_110ddb10(undefined4 *param_1);
 extern int FUN_110df140(...);
 extern int FUN_110dff50(...);
 extern int FUN_110e1da0(...);
@@ -1975,7 +1975,7 @@ extern int FUN_111752f0(...);
 extern int FUN_11175630(...);
 extern int FUN_11175770(...);
 extern int FUN_11176190(...);
-extern int FUN_111772d0(...);
+extern void __stdcall FUN_111772d0(int param_1,char *param_2,int param_3);
 extern int FUN_1118c400(...);
 extern int FUN_1118ed90(...);
 extern int FUN_1118f7f0(...);
@@ -2108,7 +2108,7 @@ extern int FUN_1122ded0(...);
 extern int FUN_1122e450(...);
 extern int FUN_1122ed30(...);
 extern int FUN_1122ff90(...);
-extern int FUN_11230d40(...);
+extern void __stdcall FUN_11230d40(char *param_1);
 extern int FUN_112332a0(...);
 extern int FUN_11233e30(...);
 extern int FUN_11234b80(...);
@@ -2217,7 +2217,7 @@ extern int FUN_11269b80(...);
 extern int FUN_1126b3e0(...);
 extern int FUN_1126b550(...);
 extern int FUN_1126bf20(...);
-extern int FUN_1126c480(...);
+extern void __stdcall FUN_1126c480(int *param_1);
 extern int FUN_1126c5a0(...);
 extern int FUN_1126c7a0(...);
 extern int FUN_1126ca70(...);
@@ -12386,7 +12386,7 @@ void __fastcall FUN_110d5c80(int param_1)
 namespace recovered_110d67a0 {
 #line 1 "ENTRY_110d67a0"
 
-void FUN_110d67a0(int param_1,int param_2,int param_3,undefined4 param_4)
+void __stdcall FUN_110d67a0(int param_1,int param_2,int param_3,undefined4 param_4)
 
 {
   int iVar1;
@@ -12481,7 +12481,7 @@ void __stdcall FUN_110db840(undefined4 param_1,undefined4 param_2)
 namespace recovered_110ddb10 {
 #line 1 "ENTRY_110ddb10"
 
-void FUN_110ddb10(undefined4 *param_1)
+void __stdcall FUN_110ddb10(undefined4 *param_1)
 
 {
   char cVar1;
@@ -15454,7 +15454,7 @@ namespace recovered_111772d0 {
 
 /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
 
-void FUN_111772d0(int param_1,char *param_2,int param_3)
+void __stdcall FUN_111772d0(int param_1,char *param_2,int param_3)
 
 {
   char cVar1;
@@ -18402,7 +18402,7 @@ void FUN_1122e450(void)
 namespace recovered_11230d40 {
 #line 1 "ENTRY_11230d40"
 
-void FUN_11230d40(char *param_1)
+void __stdcall FUN_11230d40(char *param_1)
 
 {
   char cVar1;
@@ -21076,7 +21076,7 @@ void FUN_1126bf20(void)
 namespace recovered_1126c480 {
 #line 1 "ENTRY_1126c480"
 
-void FUN_1126c480(int *param_1)
+void __stdcall FUN_1126c480(int *param_1)
 
 {
   char cVar1;
