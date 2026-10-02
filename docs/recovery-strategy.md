@@ -273,6 +273,43 @@ project for the 36 remaining branch/multistate callers. Original projects and
 reference binaries remain immutable.
 
 
+## Reference-epilogue callee-cleanup recovery (2026-10-02)
+
+Two systematic signature mismatches came from Ghidra emitting bare `FUN_*`
+definitions that default to `__cdecl` while the installed body proves callee
+cleanup. Both are reference-driven: a single `ret N` epilogue is the only proof
+accepted, and the recovery is split across two transforms in
+`tools/compile_scstr_cpp.py` that every generated source passes through.
+
+`reference_stdcall` handles the exact-match case: when `N` equals four times the
+explicit parameter count, the definition gains `__stdcall` and any same-unit
+variadic `extern` declaration is rewritten to the matching typed signature so
+MSVC does not see a conflicting convention. Source edits are collected and
+applied right-to-left so marker offsets never drift. Pinned run 37030425131
+compiled cleanly; the relocation-aware audit gained +2,054 distinct functions /
++41,981 bytes with zero regressions over the prior partial pass.
+
+`reference_arity` handles the under-declared case: when `N` exceeds the declared
+stack-argument bytes the signature is missing parameters, so
+`recovered_unused_stack_N` slots are appended until the epilogue matches. Bare
+signatures gain `__stdcall`; `__fastcall` signatures keep their ecx/edx register
+slots and grow only the stack tail; `__thiscall` `Recovered_*::FUN_*` members
+grow when the identical declaration+definition pair is the only match, so no
+call spelling is rewritten. Growth is skipped when a same-unit call site would
+become arity-incompatible. Across the generated sources this grows ~4,393
+signatures; pinned run 37036393530 adds +2,179 distinct functions / +29,080
+bytes with zero regressions.
+
+After both transforms the union audit reports 170,108 distinct exact functions /
+1,863,702 executable bytes / 7.285% `.text` coverage. The dominant remaining
+category is structural: ~18,000 bodies whose compiled length still differs from
+the reference. Near-misses that are not exact under any committed variant now
+number ~1,961 (mostly comparison-direction encodings such as `jb`/`ja` and
+`setae`/`seta`, and register-allocation/scheduling differences in longer
+bodies), so each further gain needs a distinct source-idiom change rather than a
+signature fix.
+
+
 ## Isolated Ghidra container and event ABI recovery (2026-09-30)
 
 `tools/recover_container_abi.py` restores the independently proven outgoing
