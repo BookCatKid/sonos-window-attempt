@@ -2879,6 +2879,33 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
             '    CopierWrapMember0a2(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return this;\n'),
+        # trivial RAII/smart-ptr local adopting this: SCPKeepAlive keep(this)
+        # — a named local whose inlined ctor is a single mov [slot],esi at
+        # statement position (ctor calls aren't hoisted past like pure stores)
+        'copier_wm0_keeploc': (
+            prefix +
+            'struct SCPKeepAliveX { NativeCopierOutput *p_;\n'
+            '  SCPKeepAliveX(NativeCopierOutput *p) : p_(p) {} };\n'
+            'struct CopierWrapMember0kl { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0kl(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'SCPKeepAliveX keep(this);\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0kl(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # same but the keep-local takes the address of this — &this shape
+        'copier_wm0_keepref': (
+            prefix +
+            'struct SCPKeepAliveR { NativeCopierOutput * volatile *p_;\n'
+            '  SCPKeepAliveR(NativeCopierOutput * volatile *p) : p_(p) {} };\n'
+            'struct CopierWrapMember0kr { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0kr(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierOutput * volatile self_ = this;\n'
+            'SCPKeepAliveR keep(&self_);\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0kr(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
         # member helper inlined on this: this->h_(this)
         'copier_wm0_ihelp_m': (
             prefix.replace(
