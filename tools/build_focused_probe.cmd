@@ -22,6 +22,14 @@ for %%F in (src\generated\ctor_scope_variants\*.cpp) do (
   cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /FAcs !EXTRA_FLAGS! /Faout\%%~nF.cod /c /Foout\%%~nF_reference_flags.obj %%F > out\%%~nF_reference_flags.log 2>&1
   if errorlevel 1 set PROBE_FAILED=1
 )
+rem flag sweep on the best copier candidate — the native TU may have been
+rem built with different optimization flags, which could reorder the dead
+rem this-store relative to the first temp-ctor lea
+cl /nologo /O1 /bigobj /MD /GS /GR /EHsc /Zi /FAcs /Faout\copier_wm0_o1.cod /c /Foout\copier_wm0_o1.obj src\generated\ctor_scope_variants\copier_wrap_member0.cpp > out\copier_wm0_o1.log 2>&1
+cl /nologo /Os /O2 /bigobj /MD /GS /GR /EHsc /Zi /FAcs /Faout\copier_wm0_os.cod /c /Foout\copier_wm0_os.obj src\generated\ctor_scope_variants\copier_wrap_member0.cpp > out\copier_wm0_os.log 2>&1
+cl /nologo /O2 /Oy- /bigobj /MD /GS /GR /EHsc /Zi /FAcs /Faout\copier_wm0_oym.cod /c /Foout\copier_wm0_oym.obj src\generated\ctor_scope_variants\copier_wrap_member0.cpp > out\copier_wm0_oym.log 2>&1
+cl /nologo /O2 /bigobj /MD /GS /GR /EHa /Zi /FAcs /Faout\copier_wm0_eha.cod /c /Foout\copier_wm0_eha.obj src\generated\ctor_scope_variants\copier_wrap_member0.cpp > out\copier_wm0_eha.log 2>&1
+cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /guard:ehcont /FAcs /Faout\copier_wm0_geh.cod /c /Foout\copier_wm0_geh.obj src\generated\ctor_scope_variants\copier_wrap_member0.cpp > out\copier_wm0_geh.log 2>&1
 rem LTCG probes: /GL objects carry IL, so member-ctor calls keep their
 rem construction scopes until link time; link /LTCG inlines the bodies and
 rem the realized machine code shows whether the spill repoint survives

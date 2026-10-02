@@ -2499,13 +2499,12 @@ def event_copier_variants():
         'copier_wm0_basecast': (
             prefix.replace(
                 'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
-                'struct NativeCopierSink;\n'
-                'void thunk_FUN_10defac0(NativeCopierSink *, NativeCopierAggregate_FUN_10deee60 &)') +
+                'void thunk_FUN_10defac0(void *, NativeCopierAggregate_FUN_10deee60 &)') +
             'struct CopierWrapMember0bc { NativeCopierAggregate_FUN_10deee60 agg;\n'
             '  CopierWrapMember0bc(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
             'NativeCopierOutput *NativeCopierOutput::FUN_10df9390() {',
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
-            '    (NativeCopierSink *)this,\n'
+            '    (void *)this,\n'
             '    CopierWrapMember0bc(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return this;\n'),
         # volatile self but split decl from assign: assignment is a separate
