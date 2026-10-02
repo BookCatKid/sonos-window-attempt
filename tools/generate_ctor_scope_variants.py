@@ -2729,6 +2729,39 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(*pp,\n'
             '    CopierWrapMember0pp(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return *pp;\n'),
+        # per-function #pragma optimize — a TU may turn size/global opt on for
+        # selected functions, changing local allocation
+        'copier_wm0_opts': (
+            prefix +
+            'struct CopierWrapMember0os { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0os(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            '#pragma optimize("s", on)\n' + sig,
+            'NativeCopierOutput * volatile self = this;\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0os(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n}\n#pragma optimize("", on)\n'
+            'inline void wm0_optpad_os() {'),
+        'copier_wm0_optg_off': (
+            prefix +
+            'struct CopierWrapMember0og { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0og(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            '#pragma optimize("g", off)\n' + sig,
+            'NativeCopierOutput * volatile self = this;\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0og(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n}\n#pragma optimize("", on)\n'
+            'inline void wm0_optpad_og() {'),
+        # p stmnt to force materialization early — a decl statement that
+        # reads this before the expr (hoping scheduler keeps it first)
+        'copier_wm0_vol_decl': (
+            prefix +
+            'struct CopierWrapMember0vd { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0vd(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'volatile NativeCopierOutput *self = this; (void)self;\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0vd(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
     }
     out = {}
     for name, spec in variants.items():
