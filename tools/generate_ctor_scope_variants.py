@@ -2351,6 +2351,35 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
             '    (NativeCopierOutput *)this,\n'
             '    CopierWrapMember0p(NativeCopierSource_FUN_10df9440()).agg);\n'),
+        # wrap_member0 where NativeCopierOutput is polymorphic — MSVC may
+        # emit the prologue this-spill for member fns of classes with a
+        # vftable (catch-handler this adjustment), matching native's early
+        # mov [ebp-0x10],esi without a user store
+        'copier_wm0_vtbl': (
+            prefix +
+            'struct NativeCopierOutputV { virtual ~NativeCopierOutputV() {}\n'
+            '  NativeCopierOutputV *FUN_10df9390(); };\n'
+            'struct CopierWrapMember0t { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0t(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            'NativeCopierOutputV *NativeCopierOutputV::FUN_10df9390() {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierOutput *)this,\n'
+            '    CopierWrapMember0t(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # polymorphic + volatile self: check whether class vtable-ness plus a
+        # user store produces native ordering
+        'copier_wm0_vtbl_vol': (
+            prefix +
+            'struct NativeCopierOutputW { virtual ~NativeCopierOutputW() {}\n'
+            '  NativeCopierOutputW *FUN_10df9390(); };\n'
+            'struct CopierWrapMember0w { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0w(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            'NativeCopierOutputW *NativeCopierOutputW::FUN_10df9390() {',
+            'NativeCopierOutputW * volatile self = this;\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierOutput *)this,\n'
+            '    CopierWrapMember0w(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
         # volatile self but split decl from assign: assignment is a separate
         # statement MSVC emits before the expression arg eval
         'copier_wm0_sep': (
