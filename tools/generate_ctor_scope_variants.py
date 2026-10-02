@@ -1676,6 +1676,58 @@ def wiz_state_variants():
         + tail_end.replace('vftable = &DAT_118bea58;',
                            'vftable = &DAT_118bea58;\n'
                            '(void)name.endsWith("x");\n'))
+    # cond_recv_c + volatile-backed rep: the dtor's rep=0 store cannot be
+    # elided so name's slot stays written and the flag packs to [ebp-0x14]
+    vol_klass = old_klass.replace(
+        'struct RecoveredString_FUN_1008c50b {\nunsigned int rep;',
+        'struct RecoveredString_FUN_1008c50b {\nvolatile unsigned int rep;')
+    if vol_klass == old_klass:
+        vol_klass = old_klass.replace('unsigned int rep;',
+                                      'volatile unsigned int rep;', 1)
+    out['wiz_cond_recv_v'] = (
+        prefix.replace(old_klass, vol_klass) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        '(1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00()).endsWith("Page");\n'
+        + tail_end)
+    # cond_recv_c + a still-live shadow local holding name's slot: a second
+    # in-scope object forces the flag temp onto its own [ebp-0x14] dword
+    # while name's mid-body release/rep=0 is preserved
+    out['wiz_cond_recv_s'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' +
+        'RecoveredString_FUN_1008c50b *pname;\n' +
+        '{ RecoveredString_FUN_1008c50b name("SCSubmitDiagsWizardDonePage");\n'
+        'thunk_FUN_106de0c0(&name, arg);\n'
+        'pname = &name; }\n' +
+        '(1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00()).endsWith("Page");\n'
+        + tail_end.replace('vftable = &DAT_118bea58;',
+                           'vftable = &DAT_118bea58;\n'
+                           '(void)*pname;\n'))
+    # cond_recv_c + by-value SCStr param reassigned through the ?: so MSVC
+    # may sret directly into the [ebp+8] param slot with a commit flag
+    out['wiz_cond_recv_b'] = (
+        prefix.replace(old_klass, byval_klass) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker.replace('void *arg', 'RecoveredString_FUN_1008c50b arg') + '\n' +
+        tail_common.replace('thunk_FUN_106de0c0(&name, arg)',
+                            'thunk_FUN_106de0c0(&name, (void *)arg.rep)') +
+        'arg = (1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00());\n'
+        'arg.endsWith("Page");\n' + tail_end)
+    # cond_recv_c + the ?: temp moved by copy-init into the param slot:
+    # SCStr arg = (?:) reuses the dead void* slot for the sret object
+    out['wiz_cond_recv_i'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'RecoveredString_FUN_1008c50b s2 =\n'
+        '    (1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00());\n'
+        's2.endsWith("Page");\n' + tail_end)
     return out
 
 
@@ -1862,16 +1914,49 @@ def event_copier_variants():
             'NativeCopierAggregate_FUN_10deee60 agg(&a);\n'
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this, agg);\n'
             'return this;\n'),
+        # entry as a real ??0 ctor of its own class: MSVC pins this to esi
+        # and emits the [ebp-0x10] this-spill for ctor EH tracking, forcing
+        # the agg temp's address to rematerialize via ecx at the push site
+        'copier_ctor_nested': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)') +
+            'struct NativeCopierCtor { NativeCopierCtor(); };\n',
+            'NativeCopierCtor::NativeCopierCtor() {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierOutput *)this,\n'
+            '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'),
+        # ctor + named locals: this->esi pin + spill, remat &agg
+        'copier_ctor_named': (
+            prefix + 'struct NativeCopierCtor { NativeCopierCtor(); };\n',
+            'NativeCopierCtor::NativeCopierCtor() {',
+            'NativeCopierSource_FUN_10df9440 a;\n'
+            'NativeCopierAggregate_FUN_10deee60 agg(a);\n'
+            'NativeCopierEvent_FUN_10df9510 e;\n'
+            'e.thunk_FUN_10defac0((NativeCopierOutput *)this, agg);\n'),
+        # ctor + ref-bound source temp (dies at scope end = native tail
+        # dtor) + temp event receiver (dies at stmt end = mov ecx,eax + the
+        # immediate ~Event) + named agg rematerialized through ecx
+        'copier_ctor_mix': (
+            prefix + 'struct NativeCopierCtor { NativeCopierCtor(); };\n',
+            'NativeCopierCtor::NativeCopierCtor() {',
+            'const NativeCopierSource_FUN_10df9440 &a = NativeCopierSource_FUN_10df9440();\n'
+            'NativeCopierAggregate_FUN_10deee60 agg(a);\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierOutput *)this, agg);\n'),
     }
     out = {}
     for name, spec in variants.items():
         if isinstance(spec, tuple):
-            pfx, body = spec
+            if len(spec) == 3:
+                pfx, fsig, body = spec
+            else:
+                pfx, fsig, body = spec[0], sig, spec[1]
         else:
-            pfx, body = prefix, spec
+            pfx, fsig, body = prefix, sig, spec
         out[name] = (pfx +
                      '\n// Reference entry 10df9390; body size 137 bytes.\n'
-                     '#line 1 "ENTRY_10df9390"\n' + sig + '\n' + body + '}\n')
+                     '#line 1 "ENTRY_10df9390"\n' + fsig + '\n' + body + '}\n')
     return out
 
 
