@@ -3048,6 +3048,33 @@ def event_copier_variants():
             'template struct SCSubOuter<int>;\n'
             'static void wm0_ntpad() { SCSubOuter<int>::EventSink e; e.FUN_10df9390(); }\n',
             'void wm0_ntpad2() {', ''),
+        # ctor with a trivial empty member — the member-init list may trigger
+        # _this$ allocation while emitting no init code or arm
+        'copier_wm0_ctor_empty': (
+            prefix.replace(
+                'struct NativeCopierOutput {',
+                'struct SCEmptyMember {};\n'
+                'struct NativeCopierOutput { SCEmptyMember m_;\n'
+                '  NativeCopierOutput();\n') +
+            'struct CopierWrapMember0ce { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0ce(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            'NativeCopierOutput::NativeCopierOutput() : m_() {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0ce(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return; /* ctor returns void -> this in eax */;\n'),
+        # ctor with a user-declared empty-ctor member (nontrivial but inlines)
+        'copier_wm0_ctor_emptyud': (
+            prefix.replace(
+                'struct NativeCopierOutput {',
+                'struct SCEmptyUD { SCEmptyUD() {} };\n'
+                'struct NativeCopierOutput { SCEmptyUD m_;\n'
+                '  NativeCopierOutput();\n') +
+            'struct CopierWrapMember0cu { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0cu(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            'NativeCopierOutput::NativeCopierOutput() : m_() {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0cu(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return;\n'),
         # member helper inlined on this: this->h_(this)
         'copier_wm0_ihelp_m': (
             prefix.replace(

@@ -1020,6 +1020,14 @@
     "directory": "analysis/ctor-scope-copier-wm0-nested-tpl"
   },
   {
+    "object": "copier_wm0_ctor_empty_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-ctor-empty"
+  },
+  {
+    "object": "copier_wm0_ctor_emptyud_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-ctor-emptyud"
+  },
+  {
     "object": "copier_wm0_ihelp_m_reference_flags",
     "directory": "analysis/ctor-scope-copier-wm0-ihelp-m"
   },
