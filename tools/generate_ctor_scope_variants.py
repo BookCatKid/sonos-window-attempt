@@ -2707,6 +2707,28 @@ def event_copier_variants():
             '    (NativeCopierOutput *)this,\n'
             '    CopierWrapMember0n2(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return this;\n'),
+        # conditional this in arg position: (cond ? this : this) materializes
+        # a temp that may land before arg-setup
+        'copier_wm0_ternary': (
+            prefix +
+            'struct CopierWrapMember0t { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0t(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (this ? this : (NativeCopierOutput *)0),\n'
+            '    CopierWrapMember0t(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # this stored through a pointer-to-pointer — needs this materialized
+        'copier_wm0_pptr': (
+            prefix +
+            'struct CopierWrapMember0pp { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0pp(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierOutput *p = this;\n'
+            'NativeCopierOutput **pp = &p;\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(*pp,\n'
+            '    CopierWrapMember0pp(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return *pp;\n'),
     }
     out = {}
     for name, spec in variants.items():

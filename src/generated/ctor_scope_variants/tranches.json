@@ -916,6 +916,14 @@
     "directory": "analysis/ctor-scope-copier-wm0-mcall2"
   },
   {
+    "object": "copier_wm0_ternary_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-ternary"
+  },
+  {
+    "object": "copier_wm0_pptr_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-pptr"
+  },
+  {
     "object": "delayed_plain_reference_flags",
     "directory": "analysis/ctor-scope-delayed-plain"
   },
