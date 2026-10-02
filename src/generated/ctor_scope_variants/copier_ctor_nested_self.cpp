@@ -162,8 +162,8 @@ struct NativeCopierCtor { NativeCopierCtor(); };
 // Reference entry 10df9390; body size 137 bytes.
 #line 1 "ENTRY_10df9390"
 NativeCopierCtor::NativeCopierCtor() {
-NativeCopierOutput * volatile self = this;
+NativeCopierOutput * volatile self = (NativeCopierOutput *)this;
 NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(
-    (NativeCopierOutput *)this,
+    self,
     NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));
 }

@@ -2006,9 +2006,9 @@ def event_copier_variants():
                 'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)') +
             'struct NativeCopierCtor { NativeCopierCtor(); };\n',
             'NativeCopierCtor::NativeCopierCtor() {',
-            'NativeCopierOutput * volatile self = this;\n'
+            'NativeCopierOutput * volatile self = (NativeCopierOutput *)this;\n'
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
-            '    (NativeCopierOutput *)this,\n'
+            '    self,\n'
             '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'),
         # nested temps where the agg temp is the right operand of a comma:
         # the temp is still expression-lived but its address may no longer
@@ -2223,21 +2223,24 @@ def main():
     # nested-member shape (a real multi-TU build would do exactly this).
     op_impl_a = (VARIANTS / 'op_impl_both_outline_split.cpp').read_text()
     op_impl_a = re.sub(
-        r'NativeOpSmart14_thunk_FUN_101ba1b0::NativeOpSmart14_thunk_FUN_101ba1b0'
-        r'\(void \*value\) \{[^}]*\}\n', '', op_impl_a)
+        r'NativeOpSmart14_thunk_FUN_101ba1b0\(void \*value\) \{[^}]*\}',
+        'NativeOpSmart14_thunk_FUN_101ba1b0(void *value);', op_impl_a)
     (ltcg_dir / 'op_impl_2tu_a_ltcg.cpp').write_text(ltcgize(
         op_impl_a,
         keep_extern=('NativeOpSmart14_thunk_FUN_101ba1b0(void *value)',
                      '~NativeOpSmart14_thunk_FUN_101ba1b0()')))
     (ltcg_dir / 'op_impl_2tu_b_ltcg.cpp').write_text(
         'void __cdecl thunk_FUN_1123fce0(void *);\n'
+        'struct NativeOpRepSub { void *p; ~NativeOpRepSub(); };\n'
         'struct __declspec(dllexport) NativeOpSmart14_thunk_FUN_101ba1b0 {'
-        ' void *p; NativeOpSmart14_thunk_FUN_101ba1b0(void *value);'
+        ' NativeOpRepSub rep;'
+        ' NativeOpSmart14_thunk_FUN_101ba1b0(void *value);'
         ' ~NativeOpSmart14_thunk_FUN_101ba1b0(); };\n'
         'NativeOpSmart14_thunk_FUN_101ba1b0::NativeOpSmart14_thunk_FUN_101ba1b0'
-        '(void *value) { p = value; }\n'
+        '(void *value) { rep.p = value; if (value != 0)'
+        ' thunk_FUN_1123fce0((char *)value + 4); }\n'
         'NativeOpSmart14_thunk_FUN_101ba1b0::~NativeOpSmart14_thunk_FUN_101ba1b0()'
-        ' { if (p != 0) thunk_FUN_1123fce0(p); }\n')
+        ' { if (rep.p != 0) thunk_FUN_1123fce0(rep.p); }\n')
     op_ref_a = (VARIANTS / 'op_ref_outline_split.cpp').read_text()
     op_ref_a = re.sub(
         r'NativeOpRefMember_thunk_FUN_101ba1b0::NativeOpRefMember_thunk_FUN_101ba1b0'
