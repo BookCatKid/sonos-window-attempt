@@ -235,6 +235,13 @@ def verified_eh_targets(directory,obj,reference,base,pe_sections,symbol_vas):
                     # Ghidra FUN_ alias. The explicit address must itself be an
                     # indexed symbol, and its linker chain must end at one too.
                     ok=(declared in indexed_addresses and follow_reference_thunks(target_va) in indexed_addresses)
+                if not ok and declared is None:
+                    # Data operands in verified bodies: ``DAT_<va>`` encodes
+                    # its target address directly, while named globals and
+                    # vftable aliases resolve through the exported index.
+                    dmatch=re.fullmatch(r'_?DAT_([0-9a-fA-F]{8})',logical)
+                    ok=((dmatch is not None and int(dmatch.group(1),16)==target_va
+                         and target_va in indexed_addresses) or target_va in known)
                 if ok:local[target_name]=target_va
             elif target_name=='___security_cookie':ok=target_va==cookie
             elif target_name=='@__security_check_cookie@4':
