@@ -1514,6 +1514,41 @@ def wiz_state_variants():
         source_marker.replace('void *arg', 'RecoveredStringRaw_FUN_1008c50b arg') + '\n' +
         tail_common +
         'thunk_FUN_106dfa00().endsWith("Page");\n' + tail_end)
+    # destructive reassignment of a by-value param: de0c0 consumes arg by
+    # value (rep pushed raw, slot vacated), then `arg = f()` is lowered to
+    # f(&arg) with the commit flag marking the reconstructed object
+    assign_klass = old_klass.replace(
+        'void thunk_FUN_106de0c0(RecoveredString_FUN_1008c50b *, void *);',
+        'void thunk_FUN_106de0c0(RecoveredString_FUN_1008c50b *, RecoveredString_FUN_1008c50b);').replace(
+        'NativeWizState_FUN_1061e8b0(void *);',
+        'NativeWizState_FUN_1061e8b0(RecoveredString_FUN_1008c50b);')
+    out['wiz_assign_recon'] = (
+        prefix.replace(old_klass, assign_klass) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker.replace('void *arg', 'RecoveredString_FUN_1008c50b arg') + '\n' +
+        tail_common +
+        'arg = thunk_FUN_106dfa00();\n'
+        'arg.endsWith("Page");\n' + tail_end)
+    # same but the assign is written through a reference bound to the param
+    out['wiz_assign_ref'] = (
+        prefix.replace(old_klass, assign_klass) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker.replace('void *arg', 'RecoveredString_FUN_1008c50b arg') + '\n' +
+        tail_common +
+        'RecoveredString_FUN_1008c50b &r = arg;\n'
+        'r = thunk_FUN_106dfa00();\n'
+        'r.endsWith("Page");\n' + tail_end)
+    # assignment into reinterpreted dead scalar slot: *(S*)&arg = f()
+    out['wiz_assign_slot'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        '*(RecoveredString_FUN_1008c50b *)&arg = thunk_FUN_106dfa00();\n'
+        '((RecoveredString_FUN_1008c50b *)&arg)->endsWith("Page");\n'
+        '((RecoveredString_FUN_1008c50b *)&arg)->~RecoveredString_FUN_1008c50b();\n' + tail_end)
     # out-call into the param slot where the result object is bound via a
     # named reference and destroyed at scope end through that reference —
     # MSVC may flag-track the adopted object behind the reference

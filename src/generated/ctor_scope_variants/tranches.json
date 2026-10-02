@@ -500,6 +500,18 @@
     "directory": "analysis/ctor-scope-wiz-byval-trivial"
   },
   {
+    "object": "wiz_assign_recon_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-assign-recon"
+  },
+  {
+    "object": "wiz_assign_ref_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-assign-ref"
+  },
+  {
+    "object": "wiz_assign_slot_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-assign-slot"
+  },
+  {
     "object": "wiz_refadopt_reference_flags",
     "directory": "analysis/ctor-scope-wiz-refadopt"
   },
