@@ -2151,6 +2151,19 @@ def event_copier_variants():
             '    static_cast<NativeCopierAggregate_FUN_10deee60 &>(\n'
             '        NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440())));\n'
             'return this;\n'),
+        # named local + pointer var bound to &a: MSVC forwards ctor eax into
+        # bound pointer vars (the native mov esi,eax sites) so agg(*pa) may
+        # push eax directly while a stays a scope-lived named local
+        'copier_pa_arg': (
+            prefix,
+            sig,
+            head +
+            'NativeCopierSource_FUN_10df9440 a;\n'
+            'NativeCopierSource_FUN_10df9440 *pa = &a;\n'
+            'NativeCopierAggregate_FUN_10deee60 agg(*pa);\n'
+            'NativeCopierEvent_FUN_10df9510 e;\n'
+            'e.thunk_FUN_10defac0(this, agg);\n'
+            'return this;\n'),
         # nested temps where the agg temp is the right operand of a comma:
         # the temp is still expression-lived but its address may no longer
         # be the bound call result
@@ -2369,7 +2382,8 @@ def main():
                  'copier_nested_cref', 'copier_bound_src_nested',
                  'copier_named_src_nested', 'copier_nested_rref',
                  'copier_lambda_agg', 'copier_nested_ptr',
-                 'copier_nested_bcref', 'copier_nested_bref'):
+                 'copier_nested_bcref', 'copier_nested_bref',
+                 'copier_pa_arg'):
         (ltcg_dir / (name + '_ltcg.cpp')).write_text(
             ltcgize((VARIANTS / (name + '.cpp')).read_text()))
     # Two-TU probes: the member ctor stays DECLARED-ONLY in TU_A so the

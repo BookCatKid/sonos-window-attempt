@@ -744,6 +744,10 @@
     "directory": "analysis/ctor-scope-copier-nested-bref"
   },
   {
+    "object": "copier_pa_arg_reference_flags",
+    "directory": "analysis/ctor-scope-copier-pa-arg"
+  },
+  {
     "object": "copier_ctor_nested_comma_reference_flags",
     "directory": "analysis/ctor-scope-copier-ctor-nested-comma"
   },
