@@ -2432,6 +2432,54 @@ def event_copier_variants():
             '    (NativeCopierOutput *)this,\n'
             '    CopierWrapMember0vv(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return this;\n'),
+        # volatile-qualified member fn: 'this' is volatile T* — MSVC may home
+        # it early at the fixed [ebp-0x10] slot
+        'copier_wm0_volmethod': (
+            prefix +
+            'struct NativeCopierOutputVm { NativeCopierOutputVm *FUN_10df9390() volatile; };\n'
+            'struct CopierWrapMember0vm { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0vm(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            'NativeCopierOutputVm *NativeCopierOutputVm::FUN_10df9390() volatile {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    const_cast<NativeCopierOutput *>((NativeCopierOutputVm *)this),\n'
+            '    CopierWrapMember0vm(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return const_cast<NativeCopierOutputVm *>(this);\n'),
+        # dllexport class: exported member fns may get extra this handling
+        'copier_wm0_dllexport': (
+            prefix +
+            'struct __declspec(dllexport) NativeCopierOutputDx {\n'
+            '  NativeCopierOutputDx *FUN_10df9390(); };\n'
+            'struct CopierWrapMember0x { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0x(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            'NativeCopierOutputDx *NativeCopierOutputDx::FUN_10df9390() {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierOutput *)this,\n'
+            '    CopierWrapMember0x(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # a member store as the first statement: whether any early this-use
+        # stays ahead of the temp-ctor lea
+        'copier_wm0_mstore': (
+            prefix.replace(
+                'struct NativeCopierOutput {',
+                'struct NativeCopierOutput { void *m_flag;') +
+            'struct CopierWrapMember0m { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0m(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'm_flag = this;\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0m(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # const-qualified member fn
+        'copier_wm0_const': (
+            prefix +
+            'struct NativeCopierOutputC { NativeCopierOutputC *FUN_10df9390() const; };\n'
+            'struct CopierWrapMember0c { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0c(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            'NativeCopierOutputC *NativeCopierOutputC::FUN_10df9390() const {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    const_cast<NativeCopierOutput *>((const NativeCopierOutputC *)this),\n'
+            '    CopierWrapMember0c(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return const_cast<NativeCopierOutputC *>(this);\n'),
         # volatile self but split decl from assign: assignment is a separate
         # statement MSVC emits before the expression arg eval
         'copier_wm0_sep': (

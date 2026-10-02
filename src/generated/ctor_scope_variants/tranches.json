@@ -828,6 +828,22 @@
     "directory": "analysis/ctor-scope-copier-wm0-virt-vol"
   },
   {
+    "object": "copier_wm0_volmethod_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-volmethod"
+  },
+  {
+    "object": "copier_wm0_dllexport_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-dllexport"
+  },
+  {
+    "object": "copier_wm0_mstore_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-mstore"
+  },
+  {
+    "object": "copier_wm0_const_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-const"
+  },
+  {
     "object": "copier_wm0_sep_reference_flags",
     "directory": "analysis/ctor-scope-copier-wm0-sep"
   },
