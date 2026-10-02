@@ -157,6 +157,7 @@ struct NativeCopierOutput { NativeCopierOutput *FUN_10df9390(); NativeCopierOutp
 
 extern int thunk_FUN_10defac0(...);
 
+inline void wm0_ihelp(NativeCopierOutput *t) { (void)t; }
 struct CopierWrapMember0ih { NativeCopierAggregate_FUN_10deee60 agg;
   CopierWrapMember0ih(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };
 

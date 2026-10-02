@@ -2809,10 +2809,8 @@ def event_copier_variants():
         # inlined helper taking X* — its param may home to a frame local that
         # survives even when the inlined use folds away
         'copier_wm0_ihelp': (
-            prefix.replace(
-                '// Reference entry',
-                'inline void wm0_ihelp(NativeCopierOutput *t) { (void)t; }\n'
-                '// Reference entry') +
+            prefix +
+            'inline void wm0_ihelp(NativeCopierOutput *t) { (void)t; }\n'
             'struct CopierWrapMember0ih { NativeCopierAggregate_FUN_10deee60 agg;\n'
             '  CopierWrapMember0ih(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
             sig,
@@ -2823,11 +2821,9 @@ def event_copier_variants():
         # inlined helper storing param through a pointer — keeps t live but as
         # a stored value, not a use
         'copier_wm0_ihelp_v': (
-            prefix.replace(
-                '// Reference entry',
-                'extern NativeCopierOutput *wm0_sink;\n'
-                'inline void wm0_ihelpv(NativeCopierOutput *t) { wm0_sink = t; }\n'
-                '// Reference entry') +
+            prefix +
+            'extern NativeCopierOutput *wm0_sink;\n'
+            'inline void wm0_ihelpv(NativeCopierOutput *t) { wm0_sink = t; }\n'
             'struct CopierWrapMember0ihv { NativeCopierAggregate_FUN_10deee60 agg;\n'
             '  CopierWrapMember0ihv(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
             sig,
@@ -2838,10 +2834,8 @@ def event_copier_variants():
         # inlined helper with VOLATILE param — the param-init is a volatile
         # store emitted at the inline site, before the expr's arg setup
         'copier_wm0_ihelp_vp': (
-            prefix.replace(
-                '// Reference entry',
-                'inline void wm0_ihelpvp(NativeCopierOutput * volatile t) {}\n'
-                '// Reference entry') +
+            prefix +
+            'inline void wm0_ihelpvp(NativeCopierOutput * volatile t) {}\n'
             'struct CopierWrapMember0ivp { NativeCopierAggregate_FUN_10deee60 agg;\n'
             '  CopierWrapMember0ivp(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
             sig,
@@ -2849,13 +2843,11 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
             '    CopierWrapMember0ivp(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return this;\n'),
-        # volatile param helper called INSIDE the arg list (comma-expr) — the
-        # store may land inside arg evaluation
+        # volatile param helper called INSIDE the arg list — the store may
+        # land inside arg evaluation
         'copier_wm0_ihelp_arg': (
-            prefix.replace(
-                '// Reference entry',
-                'inline NativeCopierOutput *wm0_ihelpa(NativeCopierOutput * volatile t) { return t; }\n'
-                '// Reference entry') +
+            prefix +
+            'inline NativeCopierOutput *wm0_ihelpa(NativeCopierOutput * volatile t) { return t; }\n'
             'struct CopierWrapMember0ia { NativeCopierAggregate_FUN_10deee60 agg;\n'
             '  CopierWrapMember0ia(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
             sig,
