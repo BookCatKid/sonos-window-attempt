@@ -372,6 +372,10 @@
     "directory": "analysis/ctor-scope-named-event-vol-self"
   },
   {
+    "object": "named_event_place_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-place"
+  },
+  {
     "object": "named_event_place_vol_reference_flags",
     "directory": "analysis/ctor-scope-named-event-place-vol"
   },

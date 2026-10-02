@@ -1098,6 +1098,14 @@ def named_event_variants():
             'NativeNamedEvent_FUN_10df9440 event;\n'
             'NativeNamedEvent_FUN_10df9440 *pe = &event;\n'
             '(void)self;\n'),
+        # placement-new without volatile: the new-expression's eax result
+        # pins esi before this can claim it, leaving this for edi at its
+        # late use in the dispatcher's lea ecx,[edi-0x10]
+        'named_event_place': (
+            ctor_decl,
+            'Event_thunk_FUN_10def0d0 event;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = (NativeNamedEvent_FUN_10df9440 *)\n'
+            '    new (&event) NativeNamedEvent_FUN_10df9440();\n'),
         # placement-new into a tracked member of a local struct whose sole
         # member is the event: the member's arm may land lazily at the call
         'named_event_place_vol': (
