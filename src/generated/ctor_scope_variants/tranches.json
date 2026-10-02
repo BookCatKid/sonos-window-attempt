@@ -584,6 +584,30 @@
     "directory": "analysis/ctor-scope-wiz-gated-arg"
   },
   {
+    "object": "wiz8_cond_reference_flags",
+    "directory": "analysis/ctor-scope-wiz8-cond"
+  },
+  {
+    "object": "wiz8_cond_rt_reference_flags",
+    "directory": "analysis/ctor-scope-wiz8-cond-rt"
+  },
+  {
+    "object": "wiz8_cond_named_reference_flags",
+    "directory": "analysis/ctor-scope-wiz8-cond-named"
+  },
+  {
+    "object": "wiz8_sret_named_reference_flags",
+    "directory": "analysis/ctor-scope-wiz8-sret-named"
+  },
+  {
+    "object": "wiz8_cond_ref_reference_flags",
+    "directory": "analysis/ctor-scope-wiz8-cond-ref"
+  },
+  {
+    "object": "wiz8_cond_arg_reference_flags",
+    "directory": "analysis/ctor-scope-wiz8-cond-arg"
+  },
+  {
     "object": "copier_named_reference_flags",
     "directory": "analysis/ctor-scope-copier-named"
   },

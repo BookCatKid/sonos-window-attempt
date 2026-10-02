@@ -1736,6 +1736,42 @@ def wiz_state_variants():
         'vftable = &DAT_118bea44;\n'
         '(1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00()).endsWith("Page");\n'
         + tail_end)
+    # ---- ret-8 family (entry 1061e420): two-param ctor where both params are
+    # reused as object slots.  Native layout:
+    #   _this$ [ebp-0x14] | flag [ebp-0x10] | name [ebp+8] (built from `type`,
+    #   its dead slot) | result [ebp+0xc] (sret into `arg`'s dead slot) with
+    #   [ebp+8] re-borrowed as the sret "constructed" marker after ~name.  The
+    #   flag is the ?: result's commit flag.  Subfamily is half the tranche.
+    marker8 = ('NativeWizState_FUN_1061e420::NativeWizState_FUN_1061e420('
+               'const char *type, void *arg) {')
+    t8c = ('{ RecoveredString_FUN_1008c50b name(type);\n'
+           'thunk_FUN_106de0c0(&name, arg); }\n'
+           'vftable = &DAT_118bea44;\n')
+    ref8 = ('\n// Reference entry 1061e420; body size 180 bytes.\n'
+            '#line 1 "ENTRY_1061e420"\n')
+    out['wiz8_cond'] = (prefix + ref8 + marker8 + '\n' + t8c +
+        '(1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00()).endsWith("Page");\n'
+        '}\n')
+    out['wiz8_cond_rt'] = (prefix + ref8 + marker8 + '\n' + t8c +
+        '(arg != 0 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00())\n'
+        '    .endsWith("Page");\n}\n')
+    out['wiz8_cond_named'] = (prefix + ref8 + marker8 + '\n' + t8c +
+        'RecoveredString_FUN_1008c50b s2 =\n'
+        '    (1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00());\n'
+        's2.endsWith("Page");\n}\n')
+    out['wiz8_sret_named'] = (prefix + ref8 + marker8 + '\n' + t8c +
+        'RecoveredString_FUN_1008c50b s2 = thunk_FUN_106dfa00();\n'
+        's2.endsWith("Page");\n}\n')
+    out['wiz8_cond_ref'] = (prefix + ref8 + marker8 + '\n' + t8c +
+        'const RecoveredString_FUN_1008c50b &s2 =\n'
+        '    (1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00());\n'
+        's2.endsWith("Page");\n}\n')
+    # ?: whose receiver binds the arg param by reference so its slot is the
+    # committed object — flag word tracks the arg-slot object
+    out['wiz8_cond_arg'] = (prefix + ref8 + marker8 + '\n' + t8c +
+        'RecoveredString_FUN_1008c50b *pa = (RecoveredString_FUN_1008c50b *)&arg;\n'
+        '(1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00()).endsWith("Page");\n'
+        '(void)pa;\n}\n')
     return out
 
 
