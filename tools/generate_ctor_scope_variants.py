@@ -2380,6 +2380,31 @@ def event_copier_variants():
             '    (NativeCopierOutput *)this,\n'
             '    CopierWrapMember0w(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return this;\n'),
+        # free __fastcall taking the impl ptr in ecx — native may not be a
+        # member fn at all; MSVC homes fastcall reg params used across EH
+        # regions to [ebp-0x10] early, matching the dead-store placement
+        'copier_wm0_fastcall': (
+            prefix +
+            'struct CopierWrapMember0f { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0f(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n'
+            'NativeCopierOutput *__fastcall copier_wm0_fastcall(NativeCopierOutput *p);\n',
+            'NativeCopierOutput *__fastcall copier_wm0_fastcall(NativeCopierOutput *p) {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    p,\n'
+            '    CopierWrapMember0f(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return p;\n'),
+        # free __fastcall with a second edx param (unused) — two reg params may
+        # force ecx homing
+        'copier_wm0_fastcall2': (
+            prefix +
+            'struct CopierWrapMember0q { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0q(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n'
+            'NativeCopierOutput *__fastcall copier_wm0_fastcall2(NativeCopierOutput *p, void *q);\n',
+            'NativeCopierOutput *__fastcall copier_wm0_fastcall2(NativeCopierOutput *p, void *) {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    p,\n'
+            '    CopierWrapMember0q(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return p;\n'),
         # volatile self but split decl from assign: assignment is a separate
         # statement MSVC emits before the expression arg eval
         'copier_wm0_sep': (
