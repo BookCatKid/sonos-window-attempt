@@ -153,22 +153,30 @@ struct NativeCopierEvent_FUN_10dfac50 : Event_thunk_FUN_10def0d0 { NativeCopierE
 struct NativeCopierEvent_FUN_10dfaea0 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10dfaea0(); void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &); };
 struct NativeCopierEvent_FUN_10dfb0f0 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10dfb0f0(); void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &); };
 struct NativeCopierEvent_FUN_10dfb600 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10dfb600(); void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &); };
-template <class To> struct SCSubOuter {
+template <class To> struct SCSubOuter2 {
   struct EventSink {
     EventSink *FUN_10df9390();
   };
 };
+template <class To>
+typename SCSubOuter2<To>::EventSink *
+SCSubOuter2<To>::EventSink::FUN_10df9390() {
+  NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(
+      reinterpret_cast<NativeCopierOutput *>(this),
+      CopierWrapMember0nt(NativeCopierSource_FUN_10df9440()).agg);
+  return this;
+}
+template struct SCSubOuter2<int>;
+struct CopierWrapMember0nt { NativeCopierAggregate_FUN_10deee60 agg;
+  CopierWrapMember0nt(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };
+static void wm0_ntforce() { SCSubOuter2<int>::EventSink e; e.FUN_10df9390(); }
 struct NativeCopierOutput { NativeCopierOutput *FUN_10df9390(); NativeCopierOutput *FUN_10df95e0(); NativeCopierOutput *FUN_10df99d0(); NativeCopierOutput *FUN_10df9cb0(); NativeCopierOutput *FUN_10df9f00(); NativeCopierOutput *FUN_10dfa220(); NativeCopierOutput *FUN_10dfa470(); NativeCopierOutput *FUN_10dfaad0(); NativeCopierOutput *FUN_10dfad20(); NativeCopierOutput *FUN_10dfaf70(); NativeCopierOutput *FUN_10dfb480(); };
 
 extern int thunk_FUN_10defac0(...);
 
-struct CopierWrapMember0nt { NativeCopierAggregate_FUN_10deee60 agg;
-  CopierWrapMember0nt(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };
 
 // Reference entry 10df9390; body size 137 bytes.
 #line 1 "ENTRY_10df9390"
 NativeCopierOutput *NativeCopierOutput::FUN_10df9390() {
-NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,
-    CopierWrapMember0nt(NativeCopierSource_FUN_10df9440()).agg);
-return this;
+return this; /* reached via nested fn above */
 }

@@ -3037,17 +3037,35 @@ def event_copier_variants():
                 '};\n'
                 'struct NativeCopierOutput {') +
             'struct CopierWrapMember0nt { NativeCopierAggregate_FUN_10deee60 agg;\n'
-            '  CopierWrapMember0nt(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n'
-            'template <class To>\n'
-            'SCSubOuter<To>::EventSink *SCSubOuter<To>::EventSink::FUN_10df9390() {\n'
-            '  NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
-            '      (NativeCopierOutput *)this,\n'
-            '      CopierWrapMember0nt(NativeCopierSource_FUN_10df9440()).agg);\n'
-            '  return this;\n'
-            '}\n'
-            'template struct SCSubOuter<int>;\n'
-            'static void wm0_ntpad() { SCSubOuter<int>::EventSink e; e.FUN_10df9390(); }\n',
-            'void wm0_ntpad2() {', ''),
+            '  CopierWrapMember0nt(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0nt(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # out-of-line def of nested-template member fn (the actual target shape)
+        'copier_wm0_nested_tpl2': (
+            prefix.replace(
+                'struct NativeCopierOutput {',
+                'template <class To> struct SCSubOuter2 {\n'
+                '  struct EventSink {\n'
+                '    EventSink *FUN_10df9390();\n'
+                '  };\n'
+                '};\n'
+                'template <class To>\n'
+                'typename SCSubOuter2<To>::EventSink *\n'
+                'SCSubOuter2<To>::EventSink::FUN_10df9390() {\n'
+                '  NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+                '      reinterpret_cast<NativeCopierOutput *>(this),\n'
+                '      CopierWrapMember0nt(NativeCopierSource_FUN_10df9440()).agg);\n'
+                '  return this;\n'
+                '}\n'
+                'template struct SCSubOuter2<int>;\n'
+                'struct CopierWrapMember0nt { NativeCopierAggregate_FUN_10deee60 agg;\n'
+                '  CopierWrapMember0nt(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n'
+                'static void wm0_ntforce() { SCSubOuter2<int>::EventSink e; e.FUN_10df9390(); }\n'
+                'struct NativeCopierOutput {'),
+            sig,
+            'return this; /* reached via nested fn above */\n'),
         # ctor with a trivial empty member — the member-init list may trigger
         # _this$ allocation while emitting no init code or arm
         'copier_wm0_ctor_empty': (
