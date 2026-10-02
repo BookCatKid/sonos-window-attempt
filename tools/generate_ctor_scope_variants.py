@@ -1823,6 +1823,66 @@ def event_copier_variants():
             'NativeCopierAggregate_FUN_10deee60 agg(a);\n'
             'NativeCopierEvent_FUN_10df9510 e;\n'
             'e.thunk_FUN_10defac0((NativeCopierOutput *)this, agg);\n'),
+        # thunk param2 by-value: MSVC materializes Aggregate(Source()) as
+        # the formal arg object at a fixed temp slot and pushes its address
+        # (lea ecx,$T;push ecx) rather than pinning the ctor eax into esi —
+        # matching native's remat while the temps die in reverse at tail
+        'copier_byval': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60)'),
+            sig,
+            head +
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'
+            'return this;\n'),
+        # bound agg temp (its slot rematerializes for the push) whose nested
+        # Source temp still forwards ctor eax — tests whether MSVC keeps the
+        # inner arg temp alive to scope end under the bound ref's state
+        'copier_bound_nested': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)'),
+            sig,
+            head +
+            'const NativeCopierAggregate_FUN_10deee60 &agg =\n'
+            '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440());\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this, agg);\n'
+            'return this;\n'),
+        # nested temps but the receiver is evaluated as a named bound ref:
+        # changes eval order so &agg need not survive another construction
+        'copier_bound_evt_nested': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)'),
+            sig,
+            head +
+            'NativeCopierAggregate_FUN_10deee60 &&agg =\n'
+            '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440());\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this, agg);\n'
+            'return this;\n'),
+        # agg temp's address dereferenced through a bound pointer variable:
+        # MSVC may fold *pagg back to the fixed temp slot and rematerialize
+        # lea ecx,$T2 at the push instead of pinning the ctor eax into esi
+        'copier_ptrbind': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)'),
+            sig,
+            head +
+            'NativeCopierAggregate_FUN_10deee60 *pagg =\n'
+            '    &NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440());\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this, *pagg);\n'
+            'return this;\n'),
+        # *&temp inside the nested expression: the dereference may make MSVC
+        # treat the arg as a fixed slot rather than a kept call-result
+        'copier_derefstar': (
+            prefix,
+            sig,
+            head +
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    *&NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'
+            'return this;\n'),
         # ctor + ref-bound source temp (dies at scope end = native tail
         # dtor) + temp event receiver (dies at stmt end = mov ecx,eax + the
         # immediate ~Event) + named agg rematerialized through ecx
@@ -1882,6 +1942,61 @@ def event_copier_variants():
             '    (NativeCopierOutput *)this,\n'
             '    static_cast<const NativeCopierAggregate_FUN_10deee60 &>(\n'
             '        NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440())));\n'),
+        # method model: a/agg/e are decl-armed tracked locals; the three
+        # calls are noexcept pointer-returning methods whose results bind to
+        # pa/pe — pa flows into the agg-method arg push (push eax) and pe
+        # becomes the thunk receiver (mov ecx,eax); all three objects die in
+        # reverse decl order at scope end; arms defer past noexcept calls
+        'copier_methods': (
+            prefix +
+            'struct NativeCopierMethodAgg { EventCopy_thunk_FUN_10deea50 fields; unsigned int extra; '
+            'void thunk_FUN_10deee60(void *) noexcept; ~NativeCopierMethodAgg() noexcept; };\n'
+            'struct NativeCopierMethodA : Event_thunk_FUN_10def0d0 { void *thunk_FUN_10df9440() noexcept; };\n'
+            'struct NativeCopierMethodE : Event_thunk_FUN_10def0d0 { NativeCopierMethodE *thunk_FUN_10df9510() noexcept; '
+            'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierMethodAgg &); };\n',
+            sig,
+            head +
+            'NativeCopierMethodA a;\n'
+            'NativeCopierMethodAgg agg;\n'
+            'NativeCopierMethodE e;\n'
+            'void *pa = a.thunk_FUN_10df9440();\n'
+            'agg.thunk_FUN_10deee60(pa);\n'
+            'NativeCopierMethodE *pe = e.thunk_FUN_10df9510();\n'
+            'pe->thunk_FUN_10defac0(this, agg);\n'
+            'return this;\n'),
+        # method model without the volatile self head — measures whether the
+        # dead [ebp-0x10] store is the volatile self or something else
+        'copier_methods_novol': (
+            prefix +
+            'struct NativeCopierMethodAgg2 { EventCopy_thunk_FUN_10deea50 fields; unsigned int extra; '
+            'void thunk_FUN_10deee60(void *) noexcept; ~NativeCopierMethodAgg2() noexcept; };\n'
+            'struct NativeCopierMethodA2 : Event_thunk_FUN_10def0d0 { void *thunk_FUN_10df9440() noexcept; };\n'
+            'struct NativeCopierMethodE2 : Event_thunk_FUN_10def0d0 { NativeCopierMethodE2 *thunk_FUN_10df9510() noexcept; '
+            'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierMethodAgg2 &); };\n',
+            sig,
+            'NativeCopierMethodA2 a;\n'
+            'NativeCopierMethodAgg2 agg;\n'
+            'NativeCopierMethodE2 e;\n'
+            'void *pa = a.thunk_FUN_10df9440();\n'
+            'agg.thunk_FUN_10deee60(pa);\n'
+            'NativeCopierMethodE2 *pe = e.thunk_FUN_10df9510();\n'
+            'pe->thunk_FUN_10defac0(this, agg);\n'
+            'return this;\n'),
+        # ctor + volatile self + nested temps: the volatile self store
+        # reproduces native's [ebp-0x10] dead spill AND pins this to esi,
+        # which should force the agg temp's address to rematerialize via
+        # lea ecx instead of pinning esi — all three temps die at the tail
+        # in reverse completion order (e, agg, a)
+        'copier_ctor_nested_self': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)') +
+            'struct NativeCopierCtor { NativeCopierCtor(); };\n',
+            'NativeCopierCtor::NativeCopierCtor() {',
+            'NativeCopierOutput * volatile self = this;\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierOutput *)this,\n'
+            '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'),
         # nested temps where the agg temp is the right operand of a comma:
         # the temp is still expression-lived but its address may no longer
         # be the bound call result

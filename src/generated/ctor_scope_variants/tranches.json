@@ -640,6 +640,26 @@
     "directory": "analysis/ctor-scope-copier-ctor-named"
   },
   {
+    "object": "copier_byval_reference_flags",
+    "directory": "analysis/ctor-scope-copier-byval"
+  },
+  {
+    "object": "copier_bound_nested_reference_flags",
+    "directory": "analysis/ctor-scope-copier-bound-nested"
+  },
+  {
+    "object": "copier_bound_evt_nested_reference_flags",
+    "directory": "analysis/ctor-scope-copier-bound-evt-nested"
+  },
+  {
+    "object": "copier_ptrbind_reference_flags",
+    "directory": "analysis/ctor-scope-copier-ptrbind"
+  },
+  {
+    "object": "copier_derefstar_reference_flags",
+    "directory": "analysis/ctor-scope-copier-derefstar"
+  },
+  {
     "object": "copier_ctor_mix_reference_flags",
     "directory": "analysis/ctor-scope-copier-ctor-mix"
   },
@@ -658,6 +678,18 @@
   {
     "object": "copier_ctor_nested_cref_reference_flags",
     "directory": "analysis/ctor-scope-copier-ctor-nested-cref"
+  },
+  {
+    "object": "copier_methods_reference_flags",
+    "directory": "analysis/ctor-scope-copier-methods"
+  },
+  {
+    "object": "copier_methods_novol_reference_flags",
+    "directory": "analysis/ctor-scope-copier-methods-novol"
+  },
+  {
+    "object": "copier_ctor_nested_self_reference_flags",
+    "directory": "analysis/ctor-scope-copier-ctor-nested-self"
   },
   {
     "object": "copier_ctor_nested_comma_reference_flags",
