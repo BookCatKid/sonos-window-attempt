@@ -2105,6 +2105,12 @@ def ltcgize(text, keep_extern=()):
             r'(?:[\w\* ]*?))\s+(__cdecl |__thiscall |__fastcall )?'
             r'(\w+)\(([^;{]*)\);[ \t]*$', text, re.M):
         ret, conv, name, args = m.groups()
+        if conv is None:
+            for c in ('__cdecl', '__thiscall', '__fastcall'):
+                head, sep, tail = ret.rpartition(' ' + c)
+                if sep and tail == '':
+                    ret, conv = head, c + ' '
+                    break
         if name in seen_stubs or name in keep_extern:
             continue
         seen_stubs.add(name)
