@@ -672,6 +672,10 @@
     "directory": "analysis/ctor-scope-copier-ctor-mix"
   },
   {
+    "object": "copier_ctor_namedarg_reference_flags",
+    "directory": "analysis/ctor-scope-copier-ctor-namedarg"
+  },
+  {
     "object": "copier_ctor_ptr_reference_flags",
     "directory": "analysis/ctor-scope-copier-ctor-ptr"
   },

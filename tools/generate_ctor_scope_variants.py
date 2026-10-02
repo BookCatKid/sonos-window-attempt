@@ -1906,6 +1906,15 @@ def event_copier_variants():
             'NativeCopierAggregate_FUN_10deee60 agg(a);\n'
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
             '    (NativeCopierOutput *)this, agg);\n'),
+        # ctor + named agg built from a temp arg: the inner Source temp
+        # dies at the decl end (early ~ vs native tail) but pins this to
+        # esi and remats &agg — measures how close a decl-arg temp gets
+        'copier_ctor_namedarg': (
+            prefix + 'struct NativeCopierCtor { NativeCopierCtor(); };\n',
+            'NativeCopierCtor::NativeCopierCtor() {',
+            'NativeCopierAggregate_FUN_10deee60 agg((NativeCopierSource_FUN_10df9440()));\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierOutput *)this, agg);\n'),
         # address-of-temp for the agg arg: &Aggregate(Source()) may
         # rematerialize the temp slot via lea instead of pinning the ctor
         # eax into esi — which would leave esi for this
