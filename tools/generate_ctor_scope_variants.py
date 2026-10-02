@@ -1441,6 +1441,89 @@ def wiz_state_variants():
         'RecoveredStringAdopt_FUN_1008c50b s2;\n'
         'thunk_FUN_106dfa00(&s2);\n'
         's2.endsWith("Page");\n' + tail_end)
+    # function-try-block ctor: MSVC flag-tracks objects inside the try body
+    # because member/base cleanup needs the "constructed" bits
+    out['wiz_fn_try'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common.replace(
+            'NativeWizState_FUN_1061e8b0::NativeWizState_FUN_1061e8b0(void *arg) {',
+            'NativeWizState_FUN_1061e8b0::NativeWizState_FUN_1061e8b0(void *arg) try {') +
+        'thunk_FUN_106dfa00().endsWith("Page");\n' +
+        tail_end.replace('return this;\n}',
+                         'return this;\n} catch (...) { throw; }'))
+    # default-argument temp: MSVC flag-marks the materialized default arg
+    defarg_klass = old_klass.replace(
+        'NativeWizState_FUN_1061e8b0(void *);',
+        'NativeWizState_FUN_1061e8b0(void *, int);')
+    out['wiz_defarg'] = (
+        prefix.replace(old_klass, defarg_klass) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker.replace('void *arg', 'void *arg, int mode = 0') + '\n' +
+        tail_common +
+        'thunk_FUN_106dfa00().endsWith("Page");\n' + tail_end)
+    # non-const ref binding of an sret temp (MSVC C4239 extension): MSVC
+    # flag-tracks the temp's materialization for the permissive binding
+    out['wiz_ncref_sret'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'RecoveredString_FUN_1008c50b &s2 = thunk_FUN_106dfa00();\n'
+        's2.endsWith("Page");\n' + tail_end)
+    # explicit destructor call on a tracked sret local: MSVC flag-marks the
+    # object so the unwind funclet does not double-destroy it
+    out['wiz_expl_dtor'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'RecoveredString_FUN_1008c50b s2 = thunk_FUN_106dfa00();\n'
+        's2.endsWith("Page");\n'
+        's2.~RecoveredString_FUN_1008c50b();\n' + tail_end)
+    # explicit destructor call on the reinterpreted param slot after an
+    # out-param construction — MSVC flags the adopted object in the slot
+    out['wiz_slot_dtor'] = (
+        prefix.replace(old_klass, sret_type + klass) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'thunk_FUN_106dfa00((NativeWizSret *)&arg)->endsWith("Page");\n'
+        '((NativeWizSret *)&arg)->~NativeWizSret();\n' + tail_end)
+    # trivially-copyable by-value param consumed by a by-value forward:
+    # MSVC destructive-reads the rep into the callee arg, the param slot
+    # dies, and the sret temp lands there with flag tracking
+    trivial_str = ('struct RecoveredStringRaw_FUN_1008c50b {\n'
+                   'unsigned int rep;\n'
+                   'bool endsWith(const char *suffix) const;\n'
+                   '~RecoveredStringRaw_FUN_1008c50b() noexcept { ((SCStr *)this)->int_release(); rep=0; }\n'
+                   '};\n')
+    trivial_klass = old_klass.replace(
+        'void thunk_FUN_106de0c0(RecoveredString_FUN_1008c50b *, void *);',
+        'void thunk_FUN_106de0c0(RecoveredString_FUN_1008c50b *, RecoveredStringRaw_FUN_1008c50b);').replace(
+        'RecoveredString_FUN_1008c50b thunk_FUN_106dfa00();',
+        'RecoveredStringRaw_FUN_1008c50b thunk_FUN_106dfa00();').replace(
+        'NativeWizState_FUN_1061e8b0(void *);',
+        'NativeWizState_FUN_1061e8b0(RecoveredStringRaw_FUN_1008c50b);')
+    out['wiz_byval_trivial'] = (
+        prefix.replace(old_klass, trivial_str + trivial_klass) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker.replace('void *arg', 'RecoveredStringRaw_FUN_1008c50b arg') + '\n' +
+        tail_common +
+        'thunk_FUN_106dfa00().endsWith("Page");\n' + tail_end)
+    # out-call into the param slot where the result object is bound via a
+    # named reference and destroyed at scope end through that reference —
+    # MSVC may flag-track the adopted object behind the reference
+    out['wiz_refadopt'] = (
+        prefix.replace(old_klass, sret_type + klass) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'NativeWizSret &s2 = *thunk_FUN_106dfa00((NativeWizSret *)&arg);\n'
+        's2.endsWith("Page");\n' + tail_end)
     return out
 
 
@@ -1516,7 +1599,59 @@ def event_copier_variants():
             'NativeCopierAggregate_FUN_10deee60 agg((NativeCopierSource_FUN_10df9440()));\n'
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this, agg);\n'
             'return this;\n'),
-        # named agg built from a Source() ctor-arg temp + temp event
+        # non-const ref-bound temps (MSVC extension C4239): the compiler may
+        # forward the ctor-result eax for the bound temp's address while still
+        # destroying it at scope end
+        'copier_ncref_src': (
+            'NativeCopierSource_FUN_10df9440 &a = NativeCopierSource_FUN_10df9440();\n'
+            'NativeCopierAggregate_FUN_10deee60 agg(a);\n'
+            'NativeCopierEvent_FUN_10df9510 e;\n'
+            'e.thunk_FUN_10defac0(this, agg);\n'
+            'return this;\n'),
+        'copier_ncref_evt': (
+            'NativeCopierSource_FUN_10df9440 a;\n'
+            'NativeCopierAggregate_FUN_10deee60 agg(a);\n'
+            'NativeCopierEvent_FUN_10df9510 &e = NativeCopierEvent_FUN_10df9510();\n'
+            'e.thunk_FUN_10defac0(this, agg);\n'
+            'return this;\n'),
+        'copier_ncref_both': (
+            'NativeCopierSource_FUN_10df9440 &a = NativeCopierSource_FUN_10df9440();\n'
+            'NativeCopierAggregate_FUN_10deee60 agg(a);\n'
+            'NativeCopierEvent_FUN_10df9510 &e = NativeCopierEvent_FUN_10df9510();\n'
+            'e.thunk_FUN_10defac0(this, agg);\n'
+            'return this;\n'),
+        # rvalue-ref bound temps: scope-lived and the bound slot may flow the
+        # ctor result eax into both the push and the receiver ecx
+        'copier_rref_both': (
+            'NativeCopierSource_FUN_10df9440 &&a = NativeCopierSource_FUN_10df9440();\n'
+            'NativeCopierAggregate_FUN_10deee60 agg(a);\n'
+            'NativeCopierEvent_FUN_10df9510 &&e = NativeCopierEvent_FUN_10df9510();\n'
+            'e.thunk_FUN_10defac0(this, agg);\n'
+            'return this;\n'),
+        # nested single-expression but with an extra this-use so RA prefers
+        # esi for this and rematerializes &agg instead of pinning it
+        'copier_nested_self2': (
+            'NativeCopierOutput *self = this;\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'
+            'return self;\n'),
+        # volatile self head (this-spill model) + nested expression passing
+        # this directly — tests whether the volatile init commits esi to this
+        # before the agg temp's address can be pinned
+        'copier_nested_esi': (
+            'NativeCopierOutput * volatile self = this;\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'
+            'return this;\n'),
+        # volatile self head + nested expression where the return reads the
+        # spilled self instead of this — changes which SSA values cross the
+        # final call and may unpin the agg temp address
+        'copier_nested_ret': (
+            'NativeCopierOutput * volatile self = this;\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'
+            'return self;\n'),
+        # named agg + temp source + temp event, no volatile: source temp dies
         # receiver: MSVC's non-standard C4239 temp extension may keep the
         # arg temp alive to scope end (~source lands last) while temp-ness
         # forwards the ctor's eax into the push
