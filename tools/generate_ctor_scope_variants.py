@@ -2048,6 +2048,46 @@ def event_copier_variants():
             '    &NativeCopierAggregate_FUN_10deee60(\n'
             '        NativeCopierSource_FUN_10df9440()));\n'
             'return this;\n'),
+        # nested temps where the temp binds a CONST ref param: a const-ref
+        # bound temp materializes as a slot object (like bound_nested) so
+        # the arg push may rematerialize lea ecx,$T instead of pinning
+        # esi=eax — while all three temps still die at the stmt tail
+        'copier_nested_cref': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)'),
+            sig,
+            head +
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'
+            'return this;\n'),
+        # bound source temp (scope-lived, dies at tail last) feeding a temp
+        # Aggregate arg inside the final thunk expression: the agg temp is
+        # const-ref bound by the callee so it may remat its slot, and the
+        # temps die in reverse completion order (e, agg, then bound s)
+        'copier_bound_src_nested': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)'),
+            sig,
+            head +
+            'const NativeCopierSource_FUN_10df9440 &a = NativeCopierSource_FUN_10df9440();\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    NativeCopierAggregate_FUN_10deee60(a));\n'
+            'return this;\n'),
+        # named Source local feeding the nested temp arg: tests whether the
+        # named object's push forwards the just-returned ctor eax (the arm
+        # store may sink past the push under the backend scheduler)
+        'copier_named_src_nested': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)'),
+            sig,
+            head +
+            'NativeCopierSource_FUN_10df9440 a;\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    NativeCopierAggregate_FUN_10deee60(a));\n'
+            'return this;\n'),
         # nested temps where the agg temp is the right operand of a comma:
         # the temp is still expression-lived but its address may no longer
         # be the bound call result
@@ -2262,7 +2302,9 @@ def main():
                  'op_ref_split', 'op_ref_outline', 'op_impl_smart_outline',
                  'op_impl_both_outline', 'op_impl_m14_outline',
                  'copier_nested_all', 'copier_temp_arg', 'copier_byval',
-                 'copier_bound_nested', 'copier_named_novol'):
+                 'copier_bound_nested', 'copier_named_novol',
+                 'copier_nested_cref', 'copier_bound_src_nested',
+                 'copier_named_src_nested'):
         (ltcg_dir / (name + '_ltcg.cpp')).write_text(
             ltcgize((VARIANTS / (name + '.cpp')).read_text()))
     # Two-TU probes: the member ctor stays DECLARED-ONLY in TU_A so the

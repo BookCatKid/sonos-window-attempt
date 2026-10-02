@@ -712,6 +712,18 @@
     "directory": "analysis/ctor-scope-copier-addr-arg"
   },
   {
+    "object": "copier_nested_cref_reference_flags",
+    "directory": "analysis/ctor-scope-copier-nested-cref"
+  },
+  {
+    "object": "copier_bound_src_nested_reference_flags",
+    "directory": "analysis/ctor-scope-copier-bound-src-nested"
+  },
+  {
+    "object": "copier_named_src_nested_reference_flags",
+    "directory": "analysis/ctor-scope-copier-named-src-nested"
+  },
+  {
     "object": "copier_ctor_nested_comma_reference_flags",
     "directory": "analysis/ctor-scope-copier-ctor-nested-comma"
   },
