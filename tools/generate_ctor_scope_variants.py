@@ -2641,6 +2641,31 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(self,\n'
             '    CopierWrapMember0sc(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return self;\n'),
+        # safebuffers changes the /GS frame layout and may force a this home
+        'copier_wm0_safebuf': (
+            prefix.replace(
+                'NativeCopierOutput *FUN_10df9390();',
+                '__declspec(safebuffers) NativeCopierOutput *FUN_10df9390();') +
+            'struct CopierWrapMember0sb { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0sb(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierOutput * volatile self = this;\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0sb(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # dynamic exception specification throw() adds an estTypeList and
+        # changes member-fn this handling
+        'copier_wm0_throw0': (
+            prefix.replace(
+                'NativeCopierOutput *FUN_10df9390();',
+                'NativeCopierOutput *FUN_10df9390() throw();') +
+            'struct CopierWrapMember0t0 { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0t0(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            'NativeCopierOutput *NativeCopierOutput::FUN_10df9390() throw() {',
+            'NativeCopierOutput * volatile self = this;\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0t0(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
     }
     out = {}
     for name, spec in variants.items():

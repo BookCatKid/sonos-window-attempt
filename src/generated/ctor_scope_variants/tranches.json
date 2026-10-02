@@ -896,6 +896,14 @@
     "directory": "analysis/ctor-scope-copier-wm0-scast"
   },
   {
+    "object": "copier_wm0_safebuf_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-safebuf"
+  },
+  {
+    "object": "copier_wm0_throw0_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-throw0"
+  },
+  {
     "object": "delayed_plain_reference_flags",
     "directory": "analysis/ctor-scope-delayed-plain"
   },
