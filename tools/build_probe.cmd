@@ -24,6 +24,11 @@ for %%F in (src\generated\member_abi\*.cpp) do (
   if errorlevel 1 goto failed
 )
 
+for %%F in (src\generated\bulk\*.cpp) do (
+  cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\%%~nF.obj %%F > out\%%~nF.log 2>&1
+  if errorlevel 1 echo %%F >> out\bulk-failures.log
+)
+
 cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\zonegroup_getter.obj src\zonegroup_getter.cpp > out\getter.log 2>&1
 if errorlevel 1 goto failed
 cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\zonegroup_result.obj src\zonegroup_result.cpp > out\result.log 2>&1
