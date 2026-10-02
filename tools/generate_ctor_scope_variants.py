@@ -1374,7 +1374,7 @@ def wiz_state_variants():
     # C++17 if-init: MSVC flag-tracks the init-statement variable because its
     # lifetime is scoped to a conditional — flag machinery without a linear
     # branch when the if-body is empty
-    out['wiz_if_init'] = (
+    out['wiz_if_init_cxx17'] = (
         prefix +
         '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
         '#line 1 "ENTRY_1061e8b0"\n' +
@@ -1383,13 +1383,33 @@ def wiz_state_variants():
         '    s2.endsWith("Page")) { }\n' + tail_end)
     # C++17 if-init where the condition reads the object but the flag still
     # marks the init temp; body consumed unconditionally
-    out['wiz_if_init_void'] = (
+    out['wiz_if_init_void_cxx17'] = (
         prefix +
         '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
         '#line 1 "ENTRY_1061e8b0"\n' +
         source_marker + '\n' + tail_common +
         'if (RecoveredString_FUN_1008c50b s2 = thunk_FUN_106dfa00(); true) {\n'
         '  s2.endsWith("Page"); }\n' + tail_end)
+    # rvalue-ref bound sret temp: MSVC flag-tracks the lifetime extension of
+    # a temp bound to T&& (non-const lvalue ref can't bind, so the flag marks
+    # temp materialization)
+    out['wiz_rvref'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'RecoveredString_FUN_1008c50b &&s2 = thunk_FUN_106dfa00();\n'
+        's2.endsWith("Page");\n' + tail_end)
+    # move-constructed named object from the call temp: T s2 = move(f()) —
+    # two tracked objects (temp + move result) may produce flag machinery
+    out['wiz_move_bind'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'RecoveredString_FUN_1008c50b s2 = static_cast<RecoveredString_FUN_1008c50b &&>(\n'
+        '    thunk_FUN_106dfa00());\n'
+        's2.endsWith("Page");\n' + tail_end)
     # for-init scoped variable: MSVC flag-marks declaration temps inside
     # for-initializers
     out['wiz_for_init'] = (
@@ -1471,6 +1491,30 @@ def event_copier_variants():
         'copier_nested_novol': (
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
             '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'
+            'return this;\n'),
+        # three named locals with no volatile head: source ctor eax forwards
+        # into the agg push, event ctor eax forwards into the receiver ecx,
+        # and agg's address rematerializes per use — all three destroy in
+        # reverse declaration order at scope end
+        'copier_named_novol': (
+            'NativeCopierSource_FUN_10df9440 a;\n'
+            'NativeCopierAggregate_FUN_10deee60 agg(a);\n'
+            'NativeCopierEvent_FUN_10df9510 e;\n'
+            'e.thunk_FUN_10defac0(this, agg);\n'
+            'return this;\n'),
+        # nested full-expression via a plain self alias: changes the register
+        # pressure shape so MSVC rematerializes &agg instead of pinning esi
+        'copier_nested_dbluse': (
+            'NativeCopierOutput *self = this;\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(self,\n'
+            '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'
+            'return self;\n'),
+        # named agg + temp source + temp event, no volatile: source temp dies
+        # with the agg statement in MSVC mode but its eax pushes directly;
+        # agg named so &agg rematerializes; event temp forwards ecx=eax
+        'copier_temp_arg_novol': (
+            'NativeCopierAggregate_FUN_10deee60 agg((NativeCopierSource_FUN_10df9440()));\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this, agg);\n'
             'return this;\n'),
         # named agg built from a Source() ctor-arg temp + temp event
         # receiver: MSVC's non-standard C4239 temp extension may keep the

@@ -452,12 +452,20 @@
     "directory": "analysis/ctor-scope-wiz-inner-scope"
   },
   {
-    "object": "wiz_if_init_reference_flags",
-    "directory": "analysis/ctor-scope-wiz-if-init"
+    "object": "wiz_if_init_cxx17_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-if-init-cxx17"
   },
   {
-    "object": "wiz_if_init_void_reference_flags",
-    "directory": "analysis/ctor-scope-wiz-if-init-void"
+    "object": "wiz_if_init_void_cxx17_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-if-init-void-cxx17"
+  },
+  {
+    "object": "wiz_rvref_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-rvref"
+  },
+  {
+    "object": "wiz_move_bind_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-move-bind"
   },
   {
     "object": "wiz_for_init_reference_flags",
@@ -490,6 +498,18 @@
   {
     "object": "copier_nested_novol_reference_flags",
     "directory": "analysis/ctor-scope-copier-nested-novol"
+  },
+  {
+    "object": "copier_named_novol_reference_flags",
+    "directory": "analysis/ctor-scope-copier-named-novol"
+  },
+  {
+    "object": "copier_nested_dbluse_reference_flags",
+    "directory": "analysis/ctor-scope-copier-nested-dbluse"
+  },
+  {
+    "object": "copier_temp_arg_novol_reference_flags",
+    "directory": "analysis/ctor-scope-copier-temp-arg-novol"
   },
   {
     "object": "copier_temp_arg_reference_flags",
