@@ -174,33 +174,35 @@ unsigned int __security_cookie = 0x12345678;
 void __cdecl __std_terminate() { for (;;) { } }
 
 // ltcg link stubs
-void * __cdecl operator_new(unsigned int) { ltcg_opaque(); return 0; }
-FactoryTree::FactoryTree(const FactoryTree &) { ltcg_opaque(); }
-FactoryTree::FactoryTree(FactoryTree &&) { ltcg_opaque(); }
-FactoryTree::~FactoryTree() { ltcg_opaque(); }
-EventCopy_thunk_FUN_10deea50::EventCopy_thunk_FUN_10deea50(const EventCopy_thunk_FUN_10deea50 &) { ltcg_opaque(); }
-Stopped_thunk_FUN_10dfd540::Stopped_thunk_FUN_10dfd540() { ltcg_opaque(); }
-Started_thunk_FUN_10dfd470::Started_thunk_FUN_10dfd470() { ltcg_opaque(); }
-NativeCopierAggregate_FUN_10deee60::NativeCopierAggregate_FUN_10deee60(const Event_thunk_FUN_10def0d0 &) { ltcg_opaque(); }
-NativeCopierSource_FUN_10df9440::NativeCopierSource_FUN_10df9440() { ltcg_opaque(); }
-NativeCopierSource_FUN_10df9690::NativeCopierSource_FUN_10df9690() { ltcg_opaque(); }
-NativeCopierSource_FUN_10df9a80::NativeCopierSource_FUN_10df9a80() { ltcg_opaque(); }
-NativeCopierSource_FUN_10df9d60::NativeCopierSource_FUN_10df9d60() { ltcg_opaque(); }
-NativeCopierSource_FUN_10df9fb0::NativeCopierSource_FUN_10df9fb0() { ltcg_opaque(); }
-NativeCopierSource_FUN_10dfa2d0::NativeCopierSource_FUN_10dfa2d0() { ltcg_opaque(); }
-NativeCopierSource_FUN_10dfa520::NativeCopierSource_FUN_10dfa520() { ltcg_opaque(); }
-NativeCopierSource_FUN_10dfab80::NativeCopierSource_FUN_10dfab80() { ltcg_opaque(); }
-NativeCopierSource_FUN_10dfadd0::NativeCopierSource_FUN_10dfadd0() { ltcg_opaque(); }
-NativeCopierSource_FUN_10dfb020::NativeCopierSource_FUN_10dfb020() { ltcg_opaque(); }
-NativeCopierSource_FUN_10dfb530::NativeCopierSource_FUN_10dfb530() { ltcg_opaque(); }
-NativeCopierEvent_FUN_10df9510::NativeCopierEvent_FUN_10df9510() { ltcg_opaque(); }
-NativeCopierEvent_FUN_10df9760::NativeCopierEvent_FUN_10df9760() { ltcg_opaque(); }
-NativeCopierEvent_FUN_10df9b50::NativeCopierEvent_FUN_10df9b50() { ltcg_opaque(); }
-NativeCopierEvent_FUN_10df9e30::NativeCopierEvent_FUN_10df9e30() { ltcg_opaque(); }
-NativeCopierEvent_FUN_10dfa080::NativeCopierEvent_FUN_10dfa080() { ltcg_opaque(); }
-NativeCopierEvent_FUN_10dfa3a0::NativeCopierEvent_FUN_10dfa3a0() { ltcg_opaque(); }
-NativeCopierEvent_FUN_10dfa5f0::NativeCopierEvent_FUN_10dfa5f0() { ltcg_opaque(); }
-NativeCopierEvent_FUN_10dfac50::NativeCopierEvent_FUN_10dfac50() { ltcg_opaque(); }
-NativeCopierEvent_FUN_10dfaea0::NativeCopierEvent_FUN_10dfaea0() { ltcg_opaque(); }
-NativeCopierEvent_FUN_10dfb0f0::NativeCopierEvent_FUN_10dfb0f0() { ltcg_opaque(); }
-NativeCopierEvent_FUN_10dfb600::NativeCopierEvent_FUN_10dfb600() { ltcg_opaque(); }
+__declspec(noinline) void * __cdecl operator_new(unsigned int) { ltcg_opaque(); return 0; }
+__declspec(noinline) FactoryTree::FactoryTree(const FactoryTree &) { ltcg_opaque(); }
+__declspec(noinline) FactoryTree::FactoryTree(FactoryTree &&) { ltcg_opaque(); }
+__declspec(noinline) FactoryTree::~FactoryTree() noexcept { ltcg_opaque(); }
+__declspec(noinline) EventCopy_thunk_FUN_10deea50::EventCopy_thunk_FUN_10deea50(const EventCopy_thunk_FUN_10deea50 &) { ltcg_opaque(); }
+__declspec(noinline) Event_thunk_FUN_10def0d0::~Event_thunk_FUN_10def0d0() noexcept { ltcg_opaque(); }
+__declspec(noinline) Stopped_thunk_FUN_10dfd540::Stopped_thunk_FUN_10dfd540() { ltcg_opaque(); }
+__declspec(noinline) Started_thunk_FUN_10dfd470::Started_thunk_FUN_10dfd470() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierAggregate_FUN_10deee60::NativeCopierAggregate_FUN_10deee60(const Event_thunk_FUN_10def0d0 &) { ltcg_opaque(); }
+__declspec(noinline) NativeCopierAggregate_FUN_10deee60::~NativeCopierAggregate_FUN_10deee60() noexcept { ltcg_opaque(); }
+__declspec(noinline) NativeCopierSource_FUN_10df9440::NativeCopierSource_FUN_10df9440() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierSource_FUN_10df9690::NativeCopierSource_FUN_10df9690() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierSource_FUN_10df9a80::NativeCopierSource_FUN_10df9a80() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierSource_FUN_10df9d60::NativeCopierSource_FUN_10df9d60() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierSource_FUN_10df9fb0::NativeCopierSource_FUN_10df9fb0() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierSource_FUN_10dfa2d0::NativeCopierSource_FUN_10dfa2d0() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierSource_FUN_10dfa520::NativeCopierSource_FUN_10dfa520() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierSource_FUN_10dfab80::NativeCopierSource_FUN_10dfab80() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierSource_FUN_10dfadd0::NativeCopierSource_FUN_10dfadd0() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierSource_FUN_10dfb020::NativeCopierSource_FUN_10dfb020() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierSource_FUN_10dfb530::NativeCopierSource_FUN_10dfb530() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierEvent_FUN_10df9510::NativeCopierEvent_FUN_10df9510() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierEvent_FUN_10df9760::NativeCopierEvent_FUN_10df9760() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierEvent_FUN_10df9b50::NativeCopierEvent_FUN_10df9b50() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierEvent_FUN_10df9e30::NativeCopierEvent_FUN_10df9e30() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierEvent_FUN_10dfa080::NativeCopierEvent_FUN_10dfa080() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierEvent_FUN_10dfa3a0::NativeCopierEvent_FUN_10dfa3a0() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierEvent_FUN_10dfa5f0::NativeCopierEvent_FUN_10dfa5f0() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierEvent_FUN_10dfac50::NativeCopierEvent_FUN_10dfac50() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierEvent_FUN_10dfaea0::NativeCopierEvent_FUN_10dfaea0() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierEvent_FUN_10dfb0f0::NativeCopierEvent_FUN_10dfb0f0() { ltcg_opaque(); }
+__declspec(noinline) NativeCopierEvent_FUN_10dfb600::NativeCopierEvent_FUN_10dfb600() { ltcg_opaque(); }

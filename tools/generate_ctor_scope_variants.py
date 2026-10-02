@@ -2117,13 +2117,16 @@ def ltcgize(text, keep_extern=()):
         # Opaque call inside every stub: an empty inlined body proves the
         # callee cannot throw, which lets /LTCG elide the EH scopes under
         # test. A volatile indirect call is unanalyzable, so scopes stay.
-        stubs.append(f'{ret} {conv or ""}{name}({args}) {{ ltcg_opaque();'
+        stubs.append(f'__declspec(noinline) {ret} {conv or ""}{name}({args})'
+                     ' { ltcg_opaque();'
                      + ('' if ret.strip() == 'void' else ' return 0;') + ' }')
     # member decls inside structs: NAME(args); or ~NAME(); with no body —
     # skip members that already have an out-of-class definition in the file
     for sm in re.finditer(r'struct (\w+)[^;{]*\{(.*?)\};', text, re.S):
         sname, body = sm.groups()
-        for mm in re.finditer(r'(?<![\w:~])(~?)(\w+)\(([^;{}]*)\);', body):
+        for mm in re.finditer(
+                r'(?<![\w:~])(~?)(\w+)\(([^;{}]*)\)'
+                r'(?:\s*(?:noexcept|const|override|final))*;', body):
             tilde, mname, args = mm.groups()
             if mname != sname.lstrip('~') and '~' + sname != tilde + mname:
                 continue
@@ -2138,9 +2141,11 @@ def ltcgize(text, keep_extern=()):
                 continue
             seen_stubs.add(key)
             if tilde:
-                stubs.append(f'{sname}::~{sname}() {{ ltcg_opaque(); }}')
+                stubs.append(f'__declspec(noinline) {sname}::~{sname}()'
+                             ' noexcept { ltcg_opaque(); }')
             else:
-                stubs.append(f'{sname}::{sname}({args}) {{ ltcg_opaque(); }}')
+                stubs.append(f'__declspec(noinline) {sname}::{sname}({args})'
+                             ' { ltcg_opaque(); }')
     # CRT entry points referenced by /EHsc + /GS codegen — stubbed so the
     # /NODEFAULTLIB link resolves them; they are only call targets
     text += ('\nvoid (__cdecl * volatile ltcg_opaque)(void) = 0;\n'
