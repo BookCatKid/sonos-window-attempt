@@ -1540,6 +1540,22 @@ def wiz_state_variants():
         'RecoveredString_FUN_1008c50b &r = arg;\n'
         'r = thunk_FUN_106dfa00();\n'
         'r.endsWith("Page");\n' + tail_end)
+    # do-once loop scope: MSVC flag-tracks objects inside loop bodies because
+    # their construction is iteration-conditional — the linear flag still
+    # appears when the loop folds to a single pass
+    out['wiz_do_once'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'do { thunk_FUN_106dfa00().endsWith("Page"); } while (0);\n' + tail_end)
+    # for-loop scoped temp: flag-tracked construction, loop collapses
+    out['wiz_loop_once'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'for (;;) { thunk_FUN_106dfa00().endsWith("Page"); break; }\n' + tail_end)
     # assignment into reinterpreted dead scalar slot: *(S*)&arg = f()
     out['wiz_assign_slot'] = (
         prefix +

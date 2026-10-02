@@ -508,6 +508,14 @@
     "directory": "analysis/ctor-scope-wiz-assign-ref"
   },
   {
+    "object": "wiz_do_once_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-do-once"
+  },
+  {
+    "object": "wiz_loop_once_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-loop-once"
+  },
+  {
     "object": "wiz_assign_slot_reference_flags",
     "directory": "analysis/ctor-scope-wiz-assign-slot"
   },
