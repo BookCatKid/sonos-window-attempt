@@ -2310,6 +2310,61 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
             '    CopierWrapMember0s(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return this;\n'),
+        # aggregate-init a single-field struct: the member-init store
+        # mov [ebp-0x10],esi is a plain decl-position write — MSVC may keep
+        # it ahead of the next statement's hoisted temp-slot lea
+        'copier_wm0_agginit': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)') +
+            'struct CopierSelfSlot { NativeCopierOutput *p; };\n'
+            'struct CopierWrapMember0g { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0g(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'volatile CopierSelfSlot holder = { this };\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0g(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # same but through an array-of-one init list
+        'copier_wm0_arrinit': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)') +
+            'struct CopierWrapMember0r { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0r(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierOutput * volatile holder[1] = { this };\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0r(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # ctor model where the -0x10 slot is a no-tracking member-qualifying
+        # store: a class whose ctor body inits a member pointer from this —
+        # reproduces mov [ebp-0x10],esi prologue-early without member EH
+        'copier_wm0_memberptr': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)') +
+            'struct CopierWrapMember0p { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0p(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n'
+            'struct NativeCopierOutPtr { void *m_self; NativeCopierOutPtr(); };\n',
+            'NativeCopierOutPtr::NativeCopierOutPtr() : m_self(this) {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierOutput *)this,\n'
+            '    CopierWrapMember0p(NativeCopierSource_FUN_10df9440()).agg);\n'),
+        # volatile self but split decl from assign: assignment is a separate
+        # statement MSVC emits before the expression arg eval
+        'copier_wm0_sep': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)') +
+            'struct CopierWrapMember0v { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0v(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierOutput * volatile self;\n'
+            'self = this;\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0v(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
     }
     out = {}
     for name, spec in variants.items():
