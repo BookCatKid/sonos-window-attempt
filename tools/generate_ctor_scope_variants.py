@@ -1100,6 +1100,14 @@ def named_event_variants():
             'NativeNamedEvent_FUN_10df9440 &event =\n'
             '    *new(&u.e) NativeNamedEvent_FUN_10df9440();\n'
             'NativeNamedEvent_FUN_10df9440 *pe = &event;\n'),
+        # sret construction: `event = factory()` pushes &event as the hidden
+        # return slot and the callee returns it in eax, so pe=&event can reuse
+        # the call result (mov esi,eax) while `event` stays tracked/armed-after.
+        'named_event_sret': (
+            ctor_decl +
+            'NativeNamedEvent_FUN_10df9440 thunk_FUN_makeEvent();\n',
+            'NativeNamedEvent_FUN_10df9440 event = thunk_FUN_makeEvent();\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = &event;\n'),
     }
     # Variants suffixed `_outctor` force the RecoveredString const-char* ctor
     # out-of-line: native calls 0x1005273e (the real ctor) rather than inlining

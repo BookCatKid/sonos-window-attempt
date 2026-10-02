@@ -129,8 +129,8 @@ virtual int value(SCStr *key);
 static_assert(sizeof(FactoryTree)==8,"Two-word outgoing container");
 static_assert(sizeof(FactoryTreeNode)==28,"Sentinel node");
 static_assert(sizeof(Event_thunk_FUN_10def0d0)==24,"Event value");
-struct NativeNamedEvent_FUN_10df9440 : Event_thunk_FUN_10def0d0 { NativeNamedEvent_FUN_10df9440() = default; };
-NativeNamedEvent_FUN_10df9440 __fastcall thunk_FUN_10df9440();
+struct NativeNamedEvent_FUN_10df9440 : Event_thunk_FUN_10def0d0 { NativeNamedEvent_FUN_10df9440(); };
+NativeNamedEvent_FUN_10df9440 thunk_FUN_makeEvent();
 struct NativeNamedEvent_FUN_10df9690 : Event_thunk_FUN_10def0d0 { NativeNamedEvent_FUN_10df9690(); };
 struct NativeNamedEvent_FUN_10df9a80 : Event_thunk_FUN_10def0d0 { NativeNamedEvent_FUN_10df9a80(); };
 struct NativeNamedEvent_FUN_10df9d60 : Event_thunk_FUN_10def0d0 { NativeNamedEvent_FUN_10df9d60(); };
@@ -152,7 +152,7 @@ extern int thunk_FUN_10df15a0(...);
 // Reference entry 10e026f0; body size 149 bytes.
 #line 1 "ENTRY_10e026f0"
 void NativeNamedEventCallback::FUN_10e026f0(unsigned int arg) {
-NativeNamedEvent_FUN_10df9440 event = thunk_FUN_10df9440();
+NativeNamedEvent_FUN_10df9440 event = thunk_FUN_makeEvent();
 NativeNamedEvent_FUN_10df9440 *pe = &event;
 ((NativeEventProperties *)pe->representation.properties)->slot(RecoveredString_FUN_1008c50b("opResult"), arg);
 ((NativeEventDispatcher *)((char *)this - 0x10))->thunk_FUN_10df15a0(pe);
