@@ -1115,7 +1115,7 @@ def named_event_variants():
         'named_event_guardlate': (
             ctor_decl +
             'union NativeEventSlot { void *p0,*p1,*p2,*p3,*p4,*p5;\n'
-            'NativeNamedEvent_FUN_10df9440 e; };\n'
+            'NativeNamedEvent_FUN_10df9440 e; NativeEventSlot() {} };\n'
             'struct NativeEventGuard { NativeNamedEvent_FUN_10df9440 *p;\n'
             'NativeEventGuard(NativeNamedEvent_FUN_10df9440 *q):p(q){}\n'
             '~NativeEventGuard(){ p->~NativeNamedEvent_FUN_10df9440(); } };\n',

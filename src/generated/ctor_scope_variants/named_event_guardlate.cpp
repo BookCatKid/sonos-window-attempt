@@ -131,7 +131,7 @@ static_assert(sizeof(FactoryTreeNode)==28,"Sentinel node");
 static_assert(sizeof(Event_thunk_FUN_10def0d0)==24,"Event value");
 struct NativeNamedEvent_FUN_10df9440 : Event_thunk_FUN_10def0d0 { NativeNamedEvent_FUN_10df9440(); };
 union NativeEventSlot { void *p0,*p1,*p2,*p3,*p4,*p5;
-NativeNamedEvent_FUN_10df9440 e; };
+NativeNamedEvent_FUN_10df9440 e; NativeEventSlot() {} };
 struct NativeEventGuard { NativeNamedEvent_FUN_10df9440 *p;
 NativeEventGuard(NativeNamedEvent_FUN_10df9440 *q):p(q){}
 ~NativeEventGuard(){ p->~NativeNamedEvent_FUN_10df9440(); } };
