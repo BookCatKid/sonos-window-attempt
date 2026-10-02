@@ -2521,6 +2521,67 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
             '    CopierWrapMember0v(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return this;\n'),
+        # this passed via a REAL base-class param: thunk takes SCBase*, the
+        # derived->base conversion may make MSVC materialize/home this
+        'copier_wm0_base': (
+            prefix +
+            'struct NativeSinkBase { void *m_sink; };\n'
+            'struct NativeCopierOutputB : NativeSinkBase { NativeCopierOutputB *FUN_10df9390(); };\n'
+            'struct NativeCopierEventB : Event_thunk_FUN_10def0d0 { NativeCopierEventB();\n'
+            '  void thunk_FUN_10defac0(NativeSinkBase *, NativeCopierAggregate_FUN_10deee60 &); };\n'
+            'struct CopierWrapMember0bs { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0bs(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            'NativeCopierOutputB *NativeCopierOutputB::FUN_10df9390() {',
+            'NativeCopierEventB().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0bs(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # method returns a base-class pointer: return conversion homes this
+        'copier_wm0_retbase': (
+            prefix +
+            'struct NativeSinkBase2 { void *m_sink; };\n'
+            'struct NativeCopierOutputRB : NativeSinkBase2 { NativeSinkBase2 *FUN_10df9390(); };\n'
+            'struct CopierWrapMember0rb { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0rb(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            'NativeSinkBase2 *NativeCopierOutputRB::FUN_10df9390() {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierOutput *)this,\n'
+            '    CopierWrapMember0rb(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # an inlined no-op member call on this before the expression:
+        # the this-use for a member call may make MSVC home this to _this$
+        'copier_wm0_mcall': (
+            prefix +
+            'struct NativeCopierOutputMC { void noop_() {}\n'
+            '  NativeCopierOutputMC *FUN_10df9390(); };\n'
+            'struct CopierWrapMember0mc { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0mc(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            'NativeCopierOutputMC *NativeCopierOutputMC::FUN_10df9390() {',
+            'noop_();\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierOutput *)this,\n'
+            '    CopierWrapMember0mc(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # this captured by an immediately-invoked lambda — the capture homes this
+        'copier_wm0_lamcap': (
+            prefix +
+            'struct CopierWrapMember0lc { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0lc(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            '[&](){};\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0lc(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # return value stored via a pointer local: X *p = this; ...; return p;
+        # the named-alias keeps this homed
+        'copier_wm0_alias': (
+            prefix +
+            'struct CopierWrapMember0al { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0al(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierOutput *p = this;\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(p,\n'
+            '    CopierWrapMember0al(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return p;\n'),
     }
     out = {}
     for name, spec in variants.items():

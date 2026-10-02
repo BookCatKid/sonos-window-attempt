@@ -856,6 +856,26 @@
     "directory": "analysis/ctor-scope-copier-wm0-sep"
   },
   {
+    "object": "copier_wm0_base_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-base"
+  },
+  {
+    "object": "copier_wm0_retbase_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-retbase"
+  },
+  {
+    "object": "copier_wm0_mcall_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-mcall"
+  },
+  {
+    "object": "copier_wm0_lamcap_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-lamcap"
+  },
+  {
+    "object": "copier_wm0_alias_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-alias"
+  },
+  {
     "object": "delayed_plain_reference_flags",
     "directory": "analysis/ctor-scope-delayed-plain"
   },

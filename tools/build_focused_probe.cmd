@@ -30,6 +30,11 @@ cl /nologo /Os /O2 /bigobj /MD /GS /GR /EHsc /Zi /FAcs /Faout\copier_wm0_os.cod 
 cl /nologo /O2 /Oy- /bigobj /MD /GS /GR /EHsc /Zi /FAcs /Faout\copier_wm0_oym.cod /c /Foout\copier_wm0_oym.obj src\generated\ctor_scope_variants\copier_wrap_member0.cpp > out\copier_wm0_oym.log 2>&1
 cl /nologo /O2 /bigobj /MD /GS /GR /EHa /Zi /FAcs /Faout\copier_wm0_eha.cod /c /Foout\copier_wm0_eha.obj src\generated\ctor_scope_variants\copier_wrap_member0.cpp > out\copier_wm0_eha.log 2>&1
 cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /guard:ehcont /FAcs /Faout\copier_wm0_geh.cod /c /Foout\copier_wm0_geh.obj src\generated\ctor_scope_variants\copier_wrap_member0.cpp > out\copier_wm0_geh.log 2>&1
+cl /nologo /O2 /bigobj /MD /GS /GR /EHs /Zi /FAcs /Faout\copier_wm0_ehs.cod /c /Foout\copier_wm0_ehs.obj src\generated\ctor_scope_variants\copier_wrap_member0.cpp > out\copier_wm0_ehs.log 2>&1
+cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /JMC /FAcs /Faout\copier_wm0_jmc.cod /c /Foout\copier_wm0_jmc.obj src\generated\ctor_scope_variants\copier_wrap_member0.cpp > out\copier_wm0_jmc.log 2>&1
+cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /ZI /FAcs /Faout\copier_wm0_zi.cod /c /Foout\copier_wm0_zi.obj src\generated\ctor_scope_variants\copier_wrap_member0.cpp > out\copier_wm0_zi.log 2>&1
+cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /std:c++17 /Zi /FAcs /Faout\copier_wm0_c17.cod /c /Foout\copier_wm0_c17.obj src\generated\ctor_scope_variants\copier_wrap_member0.cpp > out\copier_wm0_c17.log 2>&1
+cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /arch:IA32 /Zi /FAcs /Faout\copier_wm0_ia32.cod /c /Foout\copier_wm0_ia32.obj src\generated\ctor_scope_variants\copier_wrap_member0.cpp > out\copier_wm0_ia32.log 2>&1
 rem LTCG probes: /GL objects carry IL, so member-ctor calls keep their
 rem construction scopes until link time; link /LTCG inlines the bodies and
 rem the realized machine code shows whether the spill repoint survives
