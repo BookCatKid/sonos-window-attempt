@@ -3075,6 +3075,31 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
             '    CopierWrapMember0cu(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return;\n'),
+        # [this]-capturing lambda local — closure's this member materializes
+        # as mov [slot],esi; unused lambda leaves a dead-looking store
+        'copier_wm0_lamcap2': (
+            prefix.replace(
+                'struct NativeCopierOutput {',
+                'struct SCCallbackRunner { void run(void (*)()); };\n'
+                'struct NativeCopierOutput {') +
+            'struct CopierWrapMember0lc { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0lc(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'auto lam = [this]() { };\n'
+            '(void)lam;\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0lc(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # [this] capture stored to a field-ish closure passed along
+        'copier_wm0_lamcap3': (
+            prefix +
+            'struct CopierWrapMember0l3 { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0l3(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'auto lam = [this](int) { };\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0l3(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
         # member helper inlined on this: this->h_(this)
         'copier_wm0_ihelp_m': (
             prefix.replace(

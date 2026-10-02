@@ -1028,6 +1028,14 @@
     "directory": "analysis/ctor-scope-copier-wm0-ctor-emptyud"
   },
   {
+    "object": "copier_wm0_lamcap2_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-lamcap2"
+  },
+  {
+    "object": "copier_wm0_lamcap3_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-lamcap3"
+  },
+  {
     "object": "copier_wm0_ihelp_m_reference_flags",
     "directory": "analysis/ctor-scope-copier-wm0-ihelp-m"
   },
