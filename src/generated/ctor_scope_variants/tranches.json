@@ -616,6 +616,14 @@
     "directory": "analysis/ctor-scope-wiz8-cond-arg"
   },
   {
+    "object": "wiz8_inplace_reference_flags",
+    "directory": "analysis/ctor-scope-wiz8-inplace"
+  },
+  {
+    "object": "wiz8_res_inplace_reference_flags",
+    "directory": "analysis/ctor-scope-wiz8-res-inplace"
+  },
+  {
     "object": "copier_named_reference_flags",
     "directory": "analysis/ctor-scope-copier-named"
   },

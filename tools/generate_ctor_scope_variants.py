@@ -1793,6 +1793,26 @@ def wiz_state_variants():
         'RecoveredString_FUN_1008c50b *pa = (RecoveredString_FUN_1008c50b *)&arg;\n'
         '(1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00()).endsWith("Page");\n'
         '(void)pa;\n}\n')
+    # name placement-new'd into the `type` param slot [ebp+8]: MSVC treats the
+    # slot as already-live (param), so the construction is untracked and the
+    # state-0 arm lands AFTER the ctor — matching the reference.  The ?:
+    # temp reuses the now-dead `arg` slot [ebp+0xc].
+    out['wiz8_inplace'] = (prefix + ref8 + marker8 + '\n'
+        '{ RecoveredString_FUN_1008c50b &name =\n'
+        '      *new((void *)&type) RecoveredString_FUN_1008c50b(type);\n'
+        '  thunk_FUN_106de0c0(&name, arg);\n'
+        '  (&name)->~RecoveredString_FUN_1008c50b(); }\n'
+        'vftable = &DAT_118bea44;\n'
+        '(1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00()).endsWith("Page");\n'
+        '}\n')
+    # result placement-new'd into the `arg` param slot [ebp+0xc]: sret dest is
+    # literally &arg so the ?: temp overlays it directly
+    out['wiz8_res_inplace'] = (prefix + ref8 + marker8 + '\n' + t8c +
+        'RecoveredString_FUN_1008c50b &res = *new(&arg)\n'
+        '    RecoveredString_FUN_1008c50b(\n'
+        '        (1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00()));\n'
+        'res.endsWith("Page");\n'
+        '(&res)->~RecoveredString_FUN_1008c50b();\n}\n')
     return out
 
 
