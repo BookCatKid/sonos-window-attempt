@@ -768,6 +768,10 @@
     "directory": "analysis/ctor-scope-copier-wrap-member"
   },
   {
+    "object": "copier_wrap_member0_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wrap-member0"
+  },
+  {
     "object": "copier_ctor_nested_comma_reference_flags",
     "directory": "analysis/ctor-scope-copier-ctor-nested-comma"
   },
