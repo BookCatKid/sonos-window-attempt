@@ -956,6 +956,14 @@
     "directory": "analysis/ctor-scope-copier-wm0-ihelp-v"
   },
   {
+    "object": "copier_wm0_ihelp_vp_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-ihelp-vp"
+  },
+  {
+    "object": "copier_wm0_ihelp_arg_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-ihelp-arg"
+  },
+  {
     "object": "copier_wm0_ihelp_m_reference_flags",
     "directory": "analysis/ctor-scope-copier-wm0-ihelp-m"
   },
