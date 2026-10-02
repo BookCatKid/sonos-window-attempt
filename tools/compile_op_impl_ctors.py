@@ -111,10 +111,6 @@ def lower(record, reference, base, sections):
     source = (
         f'{klass}::{klass}(void *param_2)\n'
         f'    : {klass}_vt(this), m14(param_2) {{\n'
-        f'f24 = 1000;\n'
-        f'f20 = 0; f28 = 0; f2c = 0;\n'
-        f'f38.q = 0; f38.w.hi = 0;\n'
-        f'f40 = 0; f44 = 0;\n'
         + tail + '}\n')
     return {**record, 'source': source, 'op_class': klass,
             'base_vtable': f'{v0a:08x}', 'vtables': vt,
@@ -151,25 +147,48 @@ def main():
     library += ('#pragma warning(disable: 4355)\n'
                 'extern unsigned int g_lSCObjCount;\n'
                 'void __cdecl thunk_FUN_1123fce0(void *);\n'
+                'int __cdecl thunk_FUN_1123fcd0(void *);\n'
                 'struct NativeOpMember8V_thunk_FUN_11240650 { void *vptr; '
-                'NativeOpMember8V_thunk_FUN_11240650(); ~NativeOpMember8V_thunk_FUN_11240650(); };\n'
+                'NativeOpMember8V_thunk_FUN_11240650(); };\n'
+                'extern unsigned int DAT_1188eb3c;\n'
+                'struct NativeOpMember8VDtor_thunk_FUN_100748ed { void *vptr;\n'
+                '~NativeOpMember8VDtor_thunk_FUN_100748ed() { *(void *volatile *)&vptr = (void *)&DAT_1188eb3c; } };\n'
                 'struct NativeOpMember8_thunk_FUN_101ba0c0 : NativeOpMember8V_thunk_FUN_11240650 { '
-                '~NativeOpMember8_thunk_FUN_101ba0c0(); __forceinline NativeOpMember8_thunk_FUN_101ba0c0() { '
+                '~NativeOpMember8_thunk_FUN_101ba0c0() { *(void *volatile *)&vptr = (void *)&DAT_1188206c;\n'
+                '    ((NativeOpMember8VDtor_thunk_FUN_100748ed *)this)->~NativeOpMember8VDtor_thunk_FUN_100748ed(); }'
+                ' __forceinline NativeOpMember8_thunk_FUN_101ba0c0() { '
                 '*(void *volatile *)&vptr = (void *)&DAT_1188206c; } };\n'
-                'struct NativeOpMemberC_thunk_FUN_101b9eb0 { void *rep; void *next; ~NativeOpMemberC_thunk_FUN_101b9eb0(); '
+                'struct NativeOpMemberCItem { virtual void a(); virtual void b(); virtual void release(); };\n'
+                'struct NativeOpMemberC_thunk_FUN_101b9eb0 { void *rep; NativeOpMemberCItem *next; ~NativeOpMemberC_thunk_FUN_101b9eb0(); '
                 '__forceinline NativeOpMemberC_thunk_FUN_101b9eb0() { rep = 0; next = 0; } };\n'
-                'struct NativeOpSmart14_thunk_FUN_101ba1b0 { void *p; ~NativeOpSmart14_thunk_FUN_101ba1b0();\n'
-                '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
-                'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };\n'
+                'NativeOpMemberC_thunk_FUN_101b9eb0::~NativeOpMemberC_thunk_FUN_101b9eb0() {\n'
+                'NativeOpMemberCItem *n = next;\n'
+                'if (n != 0) { rep = 0; next = 0; n->release(); }\n'
+                '}\n'
+                'struct NativeOpRepSub { void *p; ~NativeOpRepSub(); };\n'
+                'struct NativeOpSmart14_thunk_FUN_101ba1b0 { NativeOpRepSub rep;\n'
+                '    NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { rep.p = value; '
+                'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); }\n'
+                '    ~NativeOpSmart14_thunk_FUN_101ba1b0(); };\n'
                 'struct NativeOpMember14V { void *vptr;\n'
                 '    __forceinline NativeOpMember14V() { vptr = (void *)&DAT_1188207c; } };\n'
                 'struct NativeOpS30 { void *vptr; void *f4;\n'
                 '    __forceinline NativeOpS30() { vptr = (void *)&DAT_118820e4; f4 = 0; g_lSCObjCount++; } };\n'
                 'struct NativeOpM30 : NativeOpS30 {\n'
                 '    __forceinline NativeOpM30() { vptr = (void *)&DAT_11882120; } };\n'
-                'union NativeOpF38 { unsigned __int64 q; struct { unsigned int lo; unsigned int hi; } w; };\n')
+                'struct NativeOpF38Base { unsigned int lo; unsigned int hi; };\n'
+                'struct NativeOpF38 : NativeOpF38Base { NativeOpF38() : NativeOpF38Base{} { hi = 0; } };\n'
+                'struct NativeOpTarget { virtual ~NativeOpTarget(); };\n'
+                'NativeOpRepSub::~NativeOpRepSub() {\n'
+                'void *v = p;\n'
+                'if (v != 0) {\n'
+                'if (thunk_FUN_1123fcd0((char *)v + 4) == 0)\n'
+                'delete (NativeOpTarget *)v;\n'
+                '}\n'
+                '}\n')
     read = lambda va, size: function_bytes(reference, va, size, base, sections)
     evidence = {r['entry']: r for r in map(json.loads, (ROOT/'analysis/eh-lifetime-evidence.jsonl').open())}
+    emitted_roots = set()
     for r in candidates:
         klass = r['op_class']
         resolved = funclet_jump_target(int(evidence[r['entry']]['metadata']['address'], 16), 0, read)
@@ -177,10 +196,30 @@ def main():
             raise SystemExit(f'No base destructor funclet for {r["entry"]}')
         base_class = f'NativeOpImplBase_thunk_FUN_{resolved[1]:08x}_{r["entry"]}'
         r['base_class'] = base_class
+        # Recover the two-stage base destruction: the derived dtor restores its
+        # own vtable and decrements the object count, then the inlined root dtor
+        # restores the root vtable. Pull both immediates out of the native body.
+        dtor_body = read(resolved[1], 32)
+        dtor_vtables = [int(i.op_str.rsplit('0x', 1)[1], 16)
+                        for i in DISASSEMBLER.disasm(dtor_body, resolved[1])
+                        if i.mnemonic == 'mov'
+                        and re.match(r'dword ptr \[ecx\], 0x[0-9a-f]+', i.op_str)]
+        if len(dtor_vtables) != 2:
+            raise SystemExit(f'Unrecognized base destructor body at {resolved[1]:08x}')
+        self_vtbl, root_vtbl = dtor_vtables
+        root_class = f'NativeOpImplRoot_{resolved[1]:08x}'
         v0b, m8b = r['derived_vtables']
-        library += (f'struct {base_class} {{ void *v0; void *f4; ~{base_class}();\n'
+        if root_class not in emitted_roots:
+            emitted_roots.add(root_class)
+            library += (f'extern unsigned int DAT_{root_vtbl:08x};\n'
+                        f'struct {root_class} {{ void *v0;\n'
+                        f'~{root_class}() {{ v0 = (void *)&DAT_{root_vtbl:08x}; }} }};\n')
+        library += (f'extern unsigned int DAT_{self_vtbl:08x};\n'
+                    f'struct {base_class} : {root_class} {{ void *f4; ~{base_class}();\n'
                     f'__forceinline {base_class}() {{ v0 = (void *)&DAT_{r["base_vtable"]}; '
-                    f'f4 = 0; g_lSCObjCount++; }} }};\n')
+                    f'f4 = 0; g_lSCObjCount++; }} }};\n'
+                    f'{base_class}::~{base_class}() {{ v0 = (void *)&DAT_{self_vtbl:08x}; '
+                    f'g_lSCObjCount--; }};\n')
         library += (f'struct NativeOpMember14_{r["entry"]} : NativeOpMember14V {{'
                     f' NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;\n'
                     f'    __forceinline NativeOpMember14_{r["entry"]}(void *param)'
@@ -191,8 +230,8 @@ def main():
                     f'*(void **)((char *)self + 8) = (void *)&DAT_{m8b:08x}; }} }};\n')
         library += (f'struct {klass} : {base_class}, NativeOpMember8_thunk_FUN_101ba0c0, {klass}_vt {{\n'
                     f'NativeOpMemberC_thunk_FUN_101b9eb0 fc; NativeOpMember14_{r["entry"]} m14;\n'
-                    f'void *f20; unsigned short f24; void *f28; void *f2c;\n'
-                    f'NativeOpM30 m30; NativeOpF38 f38; void *f40; void *f44;\n'
+                    f'void *f20 = 0; unsigned short f24 = 1000; void *f28 = 0; void *f2c = 0;\n'
+                    f'NativeOpM30 m30; NativeOpF38 f38; void *f40 = 0; void *f44 = 0;\n'
                     f'{klass}(void *param_2);\n}};\n')
     candidates = [{**r, 'abi_declarations': {'op_impl_library': library}} for r in candidates]
     roles = []
@@ -200,7 +239,7 @@ def main():
         roles.append(('??1' + r['base_class'] + '@@QAE@XZ', r['entry'], 0))
         roles.append(('??1NativeOpMember8_thunk_FUN_101ba0c0@@QAE@XZ', r['entry'], 1))
         roles.append(('??1NativeOpMemberC_thunk_FUN_101b9eb0@@QAE@XZ', r['entry'], 2))
-        roles.append(('??1NativeOpSmart14_thunk_FUN_101ba1b0@@QAE@XZ', r['entry'], 3))
+        roles.append(('??1NativeOpRepSub@@QAE@XZ', r['entry'], 3))
     emit_variant('op_impl_ctors', candidates, evidence, roles)
 
 

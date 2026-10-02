@@ -892,6 +892,29 @@ def op_impl_variants():
     f38_pair_body = ('NativeOpImpl_FUN_10687e80::NativeOpImpl_FUN_10687e80(void *param_2)\n'
                      '    : NativeOpImpl_FUN_10687e80_vt(this), m14(param_2) { f38.hi = 0; }')
     variants['op_impl_f38_pair'] = (f38_pair, None, f38_pair_body)
+    # native stores +0x3c BEFORE f40/f44, so the hi re-store must run inside
+    # f38's own construction: derived class over an aggregate base — base
+    # value-init should keep the xorps+movq while the derived body re-stores hi
+    # during the member-init slot
+    f38_derived = nestedrep_decls.replace(
+        'union NativeOpF38 { unsigned __int64 q; struct { unsigned int lo; unsigned int hi; } w; };',
+        'struct NativeOpF38Base { unsigned int lo; unsigned int hi; };\n'
+        'struct NativeOpF38 : NativeOpF38Base { NativeOpF38() { hi = 0; } };').replace(
+        'void *f20; unsigned short f24; void *f28; void *f2c;\n'
+        'NativeOpM30 m30; NativeOpF38 f38; void *f40; void *f44;',
+        'void *f20 = 0; unsigned short f24 = 1000; void *f28 = 0; void *f2c = 0;\n'
+        'NativeOpM30 m30; NativeOpF38 f38; void *f40 = 0; void *f44 = 0;')
+    variants['op_impl_f38_derived'] = (f38_derived, None, empty_body)
+    # same but with an explicit aggregate base-init in the member-init list
+    f38_baseinit = nestedrep_decls.replace(
+        'union NativeOpF38 { unsigned __int64 q; struct { unsigned int lo; unsigned int hi; } w; };',
+        'struct NativeOpF38Base { unsigned int lo; unsigned int hi; };\n'
+        'struct NativeOpF38 : NativeOpF38Base { NativeOpF38() : NativeOpF38Base{} { hi = 0; } };').replace(
+        'void *f20; unsigned short f24; void *f28; void *f2c;\n'
+        'NativeOpM30 m30; NativeOpF38 f38; void *f40; void *f44;',
+        'void *f20 = 0; unsigned short f24 = 1000; void *f28 = 0; void *f2c = 0;\n'
+        'NativeOpM30 m30; NativeOpF38 f38; void *f40 = 0; void *f44 = 0;')
+    variants['op_impl_f38_baseinit'] = (f38_baseinit, None, empty_body)
     header = ('// Constructor-scope hypothesis variants for entry 10687e80.\n'
               'inline void *operator new(unsigned int, void *receiver) noexcept { return receiver; }\n')
     out = {}

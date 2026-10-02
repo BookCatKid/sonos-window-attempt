@@ -280,10 +280,6 @@
     "directory": "analysis/compiled-cpp-global-release-dtors"
   },
   {
-    "object": "op_impl_ctors_reference_flags",
-    "directory": "analysis/compiled-cpp-op-impl-ctors"
-  },
-  {
     "object": "vcall_event_callbacks_reference_flags",
     "directory": "analysis/compiled-cpp-vcall-event-callbacks"
   },
@@ -314,5 +310,9 @@
   {
     "object": "op_ref_ctors_reference_flags",
     "directory": "analysis/compiled-cpp-op-ref-ctors"
+  },
+  {
+    "object": "op_impl_ctors_reference_flags",
+    "directory": "analysis/compiled-cpp-op-impl-ctors"
   }
 ]

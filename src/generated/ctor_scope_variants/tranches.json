@@ -284,6 +284,14 @@
     "directory": "analysis/ctor-scope-op-impl-f38-pair"
   },
   {
+    "object": "op_impl_f38_derived_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-f38-derived"
+  },
+  {
+    "object": "op_impl_f38_baseinit_reference_flags",
+    "directory": "analysis/ctor-scope-op-impl-f38-baseinit"
+  },
+  {
     "object": "named_event_memberinit_reference_flags",
     "directory": "analysis/ctor-scope-named-event-memberinit"
   },

@@ -21,7 +21,7 @@
     "body_entry": "101b9eb0"
   },
   {
-    "symbol": "??1NativeOpSmart14_thunk_FUN_101ba1b0@@QAE@XZ",
+    "symbol": "??1NativeOpRepSub@@QAE@XZ",
     "owner_entry": "10687e80",
     "state": 3,
     "call_target": "1007bb1b",
