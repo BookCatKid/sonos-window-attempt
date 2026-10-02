@@ -157,14 +157,13 @@ struct NativeCopierOutput { NativeCopierOutput *FUN_10df9390(); NativeCopierOutp
 
 extern int thunk_FUN_10defac0(...);
 
-struct CopierWrapMember0lc { NativeCopierAggregate_FUN_10deee60 agg;
-  CopierWrapMember0lc(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };
+struct CopierWrapMember0la { NativeCopierAggregate_FUN_10deee60 agg;
+  CopierWrapMember0la(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };
 
 // Reference entry 10df9390; body size 137 bytes.
 #line 1 "ENTRY_10df9390"
 NativeCopierOutput *NativeCopierOutput::FUN_10df9390() {
-[this](){}();
-NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,
-    CopierWrapMember0lc(NativeCopierSource_FUN_10df9440()).agg);
+[this]{ NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,
+    CopierWrapMember0la(NativeCopierSource_FUN_10df9440()).agg); }();
 return this;
 }

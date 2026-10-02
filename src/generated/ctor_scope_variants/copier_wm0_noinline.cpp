@@ -153,18 +153,17 @@ struct NativeCopierEvent_FUN_10dfac50 : Event_thunk_FUN_10def0d0 { NativeCopierE
 struct NativeCopierEvent_FUN_10dfaea0 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10dfaea0(); void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &); };
 struct NativeCopierEvent_FUN_10dfb0f0 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10dfb0f0(); void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &); };
 struct NativeCopierEvent_FUN_10dfb600 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10dfb600(); void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &); };
-struct NativeCopierOutput { NativeCopierOutput *FUN_10df9390(); NativeCopierOutput *FUN_10df95e0(); NativeCopierOutput *FUN_10df99d0(); NativeCopierOutput *FUN_10df9cb0(); NativeCopierOutput *FUN_10df9f00(); NativeCopierOutput *FUN_10dfa220(); NativeCopierOutput *FUN_10dfa470(); NativeCopierOutput *FUN_10dfaad0(); NativeCopierOutput *FUN_10dfad20(); NativeCopierOutput *FUN_10dfaf70(); NativeCopierOutput *FUN_10dfb480(); };
+struct NativeCopierOutput { __declspec(noinline) NativeCopierOutput *FUN_10df9390(); NativeCopierOutput *FUN_10df95e0(); NativeCopierOutput *FUN_10df99d0(); NativeCopierOutput *FUN_10df9cb0(); NativeCopierOutput *FUN_10df9f00(); NativeCopierOutput *FUN_10dfa220(); NativeCopierOutput *FUN_10dfa470(); NativeCopierOutput *FUN_10dfaad0(); NativeCopierOutput *FUN_10dfad20(); NativeCopierOutput *FUN_10dfaf70(); NativeCopierOutput *FUN_10dfb480(); };
 
 extern int thunk_FUN_10defac0(...);
 
-struct CopierWrapMember0lc { NativeCopierAggregate_FUN_10deee60 agg;
-  CopierWrapMember0lc(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };
+struct CopierWrapMember0ni { NativeCopierAggregate_FUN_10deee60 agg;
+  CopierWrapMember0ni(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };
 
 // Reference entry 10df9390; body size 137 bytes.
 #line 1 "ENTRY_10df9390"
 NativeCopierOutput *NativeCopierOutput::FUN_10df9390() {
-[this](){}();
 NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,
-    CopierWrapMember0lc(NativeCopierSource_FUN_10df9440()).agg);
+    CopierWrapMember0ni(NativeCopierSource_FUN_10df9440()).agg);
 return this;
 }

@@ -2561,15 +2561,37 @@ def event_copier_variants():
             '    (NativeCopierOutput *)this,\n'
             '    CopierWrapMember0mc(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return this;\n'),
-        # this captured by an immediately-invoked lambda — the capture homes this
+        # this captured by an immediately-invoked lambda — the [this] capture
+        # materializes this into the closure (a stack slot that could be -0x10)
         'copier_wm0_lamcap': (
             prefix +
             'struct CopierWrapMember0lc { NativeCopierAggregate_FUN_10deee60 agg;\n'
             '  CopierWrapMember0lc(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
             sig,
-            '[&](){};\n'
+            '[this](){}();\n'
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
             '    CopierWrapMember0lc(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # the whole call inside a this-capturing lambda: the closure this-init
+        # lands before the arg-setup lea
+        'copier_wm0_lamcall': (
+            prefix +
+            'struct CopierWrapMember0la { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0la(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            '[this]{ NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0la(NativeCopierSource_FUN_10df9440()).agg); }();\n'
+            'return this;\n'),
+        # noinline forces out-of-line instantiation bookkeeping
+        'copier_wm0_noinline': (
+            prefix.replace(
+                'NativeCopierOutput *FUN_10df9390();',
+                '__declspec(noinline) NativeCopierOutput *FUN_10df9390();') +
+            'struct CopierWrapMember0ni { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0ni(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0ni(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return this;\n'),
         # return value stored via a pointer local: X *p = this; ...; return p;
         # the named-alias keeps this homed
