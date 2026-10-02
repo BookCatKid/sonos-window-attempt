@@ -2666,6 +2666,47 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
             '    CopierWrapMember0t0(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return this;\n'),
+        # this->self() member call as thunk arg — the receiver-use may force
+        # _this$ allocation even though it inlines to plain this
+        'copier_wm0_selfmeth': (
+            prefix.replace(
+                'struct NativeCopierOutput {',
+                'struct NativeCopierOutput {\n'
+                '  NativeCopierOutput *self_() { return this; }\n') +
+            'struct CopierWrapMember0sm { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0sm(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    this->self_(),\n'
+            '    CopierWrapMember0sm(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # this-> member call returning a member: thunk(this->get(), agg)
+        'copier_wm0_marg': (
+            prefix.replace(
+                'struct NativeCopierOutput {',
+                'struct NativeCopierOutput {\n'
+                '  void *m_sink; NativeCopierOutput *get_() { return this; }\n') +
+            'struct CopierWrapMember0mg { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0mg(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    this->get_(),\n'
+            '    CopierWrapMember0mg(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # this->noop() statement + the expr — the member call receiver use
+        # may allocate _this$ even if noop inlines away
+        'copier_wm0_mcall2': (
+            prefix +
+            'struct NativeCopierOutputN { void register_(int) {}\n'
+            '  NativeCopierOutputN *FUN_10df9390(); };\n'
+            'struct CopierWrapMember0n2 { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0n2(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            'NativeCopierOutputN *NativeCopierOutputN::FUN_10df9390() {',
+            'register_(0);\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierOutput *)this,\n'
+            '    CopierWrapMember0n2(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
     }
     out = {}
     for name, spec in variants.items():
