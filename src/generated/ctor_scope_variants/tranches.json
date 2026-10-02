@@ -964,6 +964,14 @@
     "directory": "analysis/ctor-scope-copier-wm0-ihelp-arg"
   },
   {
+    "object": "copier_wm0_addrparam_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-addrparam"
+  },
+  {
+    "object": "copier_wm0_addrparam2_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-addrparam2"
+  },
+  {
     "object": "copier_wm0_ihelp_m_reference_flags",
     "directory": "analysis/ctor-scope-copier-wm0-ihelp-m"
   },

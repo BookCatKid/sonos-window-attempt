@@ -2855,6 +2855,30 @@ def event_copier_variants():
             '    wm0_ihelpa(this),\n'
             '    CopierWrapMember0ia(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return this;\n'),
+        # address-of-param forces a frame slot; (void)&t folds the use away
+        # leaving a write-only dead param-home store
+        'copier_wm0_addrparam': (
+            prefix +
+            'inline void wm0_addrp(NativeCopierOutput *t) { (void)&t; }\n'
+            'struct CopierWrapMember0ap { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0ap(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'wm0_addrp(this);\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0ap(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # param whose address is stored into a local that folds away
+        'copier_wm0_addrparam2': (
+            prefix +
+            'inline void wm0_addrp2(NativeCopierOutput *t) {\n'
+            '  NativeCopierOutput **pp = &t; (void)pp; }\n'
+            'struct CopierWrapMember0a2 { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0a2(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'wm0_addrp2(this);\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0a2(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
         # member helper inlined on this: this->h_(this)
         'copier_wm0_ihelp_m': (
             prefix.replace(
