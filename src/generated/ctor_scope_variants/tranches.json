@@ -988,6 +988,14 @@
     "directory": "analysis/ctor-scope-copier-wm0-constmem"
   },
   {
+    "object": "copier_wm0_membdtor_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-membdtor"
+  },
+  {
+    "object": "copier_wm0_basedtor_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-basedtor"
+  },
+  {
     "object": "copier_wm0_ihelp_m_reference_flags",
     "directory": "analysis/ctor-scope-copier-wm0-ihelp-m"
   },

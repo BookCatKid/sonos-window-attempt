@@ -2931,6 +2931,31 @@ def event_copier_variants():
             '    const_cast<NativeCopierOutput *>(this),\n'
             '    CopierWrapMember0cm(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return const_cast<NativeCopierOutput *>(this);\n'),
+        # class with a nontrivial member (dtor calls ~m_ needing this) —
+        # MSVC may conservatively home this in member fns for funclet dtor use
+        'copier_wm0_membdtor': (
+            prefix.replace(
+                'struct NativeCopierOutput {',
+                'struct SCMemberWithDtor { ~SCMemberWithDtor(); };\n'
+                'struct NativeCopierOutput { SCMemberWithDtor m_;\n') +
+            'struct CopierWrapMember0md { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0md(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0md(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # class deriving from a base with a nontrivial dtor
+        'copier_wm0_basedtor': (
+            prefix.replace(
+                'struct NativeCopierOutput {',
+                'struct SCBaseWithDtor { ~SCBaseWithDtor(); };\n'
+                'struct NativeCopierOutput : SCBaseWithDtor {\n') +
+            'struct CopierWrapMember0bd { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0bd(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0bd(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
         # member helper inlined on this: this->h_(this)
         'copier_wm0_ihelp_m': (
             prefix.replace(
