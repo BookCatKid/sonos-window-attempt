@@ -14,12 +14,10 @@ unsigned int DAT_118c634c = 0;
 unsigned int g_lSCObjCount = 0;
 void __cdecl thunk_FUN_1123fce0(void *);
 int __cdecl thunk_FUN_1123fcd0(void *);
-struct __declspec(dllexport) NativeOpMember8V_thunk_FUN_11240650 { void *vptr; NativeOpMember8V_thunk_FUN_11240650(); };
+struct __declspec(dllexport) NativeOpMember8V_thunk_FUN_11240650 { void *vptr; NativeOpMember8V_thunk_FUN_11240650(); ~NativeOpMember8V_thunk_FUN_11240650() {} };
 unsigned int DAT_1188eb3c = 0;
-struct __declspec(dllexport) NativeOpMember8VDtor_thunk_FUN_100748ed { void *vptr;
-~NativeOpMember8VDtor_thunk_FUN_100748ed() { *(void *volatile *)&vptr = (void *)&DAT_1188eb3c; } };
-struct __declspec(dllexport) NativeOpMember8_thunk_FUN_101ba0c0 : NativeOpMember8V_thunk_FUN_11240650 { ~NativeOpMember8_thunk_FUN_101ba0c0() { *(void *volatile *)&vptr = (void *)&DAT_1188206c;
-    ((NativeOpMember8VDtor_thunk_FUN_100748ed *)this)->~NativeOpMember8VDtor_thunk_FUN_100748ed(); } __forceinline NativeOpMember8_thunk_FUN_101ba0c0() { *(void *volatile *)&vptr = (void *)&DAT_1188206c; } };
+struct __declspec(dllexport) NativeOpMember8VD_thunk_FUN_11240850 : NativeOpMember8V_thunk_FUN_11240650 { ~NativeOpMember8VD_thunk_FUN_11240850(); };
+struct __declspec(dllexport) NativeOpMember8_thunk_FUN_101ba0c0 : NativeOpMember8VD_thunk_FUN_11240850 { ~NativeOpMember8_thunk_FUN_101ba0c0() { *(void *volatile *)&vptr = (void *)&DAT_1188206c; } __forceinline NativeOpMember8_thunk_FUN_101ba0c0() { *(void *volatile *)&vptr = (void *)&DAT_1188206c; } };
 struct __declspec(dllexport) NativeOpMemberCItem { virtual void a(); virtual void b(); virtual void release(); };
 struct __declspec(dllexport) NativeOpMemberC_thunk_FUN_101b9eb0 { void *rep; NativeOpMemberCItem *next; ~NativeOpMemberC_thunk_FUN_101b9eb0(); __forceinline NativeOpMemberC_thunk_FUN_101b9eb0() { rep = 0; next = 0; } };
 NativeOpMemberC_thunk_FUN_101b9eb0::~NativeOpMemberC_thunk_FUN_101b9eb0() {
@@ -86,5 +84,6 @@ void __cdecl __std_terminate() { for (;;) { } }
 void __cdecl thunk_FUN_1123fce0(void *) { ltcg_opaque(); }
 int __cdecl thunk_FUN_1123fcd0(void *) { ltcg_opaque(); return 0; }
 NativeOpMember8V_thunk_FUN_11240650::NativeOpMember8V_thunk_FUN_11240650() { ltcg_opaque(); }
+NativeOpMember8VD_thunk_FUN_11240850::~NativeOpMember8VD_thunk_FUN_11240850() { ltcg_opaque(); }
 NativeOpSmart14_thunk_FUN_101ba1b0::~NativeOpSmart14_thunk_FUN_101ba1b0() { ltcg_opaque(); }
 NativeOpTarget::~NativeOpTarget() { ltcg_opaque(); }

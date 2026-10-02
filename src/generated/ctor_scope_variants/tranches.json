@@ -456,6 +456,10 @@
     "directory": "analysis/ctor-scope-copier-nested-all"
   },
   {
+    "object": "copier_nested_novol_reference_flags",
+    "directory": "analysis/ctor-scope-copier-nested-novol"
+  },
+  {
     "object": "copier_temp_arg_reference_flags",
     "directory": "analysis/ctor-scope-copier-temp-arg"
   },

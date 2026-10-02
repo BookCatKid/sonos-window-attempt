@@ -1367,6 +1367,13 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
             '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'
             'return this;\n'),
+        # nested_all minus the volatile self head: the volatile slot may be
+        # what nudges regalloc into pinning &agg to esi instead of native's
+        # rematerialized lea ecx,[ebp-0x5c]
+        'copier_nested_novol': (
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'
+            'return this;\n'),
         # named agg built from a Source() ctor-arg temp + temp event
         # receiver: MSVC's non-standard C4239 temp extension may keep the
         # arg temp alive to scope end (~source lands last) while temp-ness

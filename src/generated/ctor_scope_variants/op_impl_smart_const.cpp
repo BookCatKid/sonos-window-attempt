@@ -14,12 +14,10 @@ extern unsigned int DAT_118c634c;
 extern unsigned int g_lSCObjCount;
 void __cdecl thunk_FUN_1123fce0(void *);
 int __cdecl thunk_FUN_1123fcd0(void *);
-struct NativeOpMember8V_thunk_FUN_11240650 { void *vptr; NativeOpMember8V_thunk_FUN_11240650(); };
+struct NativeOpMember8V_thunk_FUN_11240650 { void *vptr; NativeOpMember8V_thunk_FUN_11240650(); ~NativeOpMember8V_thunk_FUN_11240650() {} };
 extern unsigned int DAT_1188eb3c;
-struct NativeOpMember8VDtor_thunk_FUN_100748ed { void *vptr;
-~NativeOpMember8VDtor_thunk_FUN_100748ed() { *(void *volatile *)&vptr = (void *)&DAT_1188eb3c; } };
-struct NativeOpMember8_thunk_FUN_101ba0c0 : NativeOpMember8V_thunk_FUN_11240650 { ~NativeOpMember8_thunk_FUN_101ba0c0() { *(void *volatile *)&vptr = (void *)&DAT_1188206c;
-    ((NativeOpMember8VDtor_thunk_FUN_100748ed *)this)->~NativeOpMember8VDtor_thunk_FUN_100748ed(); } __forceinline NativeOpMember8_thunk_FUN_101ba0c0() { *(void *volatile *)&vptr = (void *)&DAT_1188206c; } };
+struct NativeOpMember8VD_thunk_FUN_11240850 : NativeOpMember8V_thunk_FUN_11240650 { ~NativeOpMember8VD_thunk_FUN_11240850(); };
+struct NativeOpMember8_thunk_FUN_101ba0c0 : NativeOpMember8VD_thunk_FUN_11240850 { ~NativeOpMember8_thunk_FUN_101ba0c0() { *(void *volatile *)&vptr = (void *)&DAT_1188206c; } __forceinline NativeOpMember8_thunk_FUN_101ba0c0() { *(void *volatile *)&vptr = (void *)&DAT_1188206c; } };
 struct NativeOpMemberCItem { virtual void a(); virtual void b(); virtual void release(); };
 struct NativeOpMemberC_thunk_FUN_101b9eb0 { void *rep; NativeOpMemberCItem *next; ~NativeOpMemberC_thunk_FUN_101b9eb0(); __forceinline NativeOpMemberC_thunk_FUN_101b9eb0() { rep = 0; next = 0; } };
 NativeOpMemberC_thunk_FUN_101b9eb0::~NativeOpMemberC_thunk_FUN_101b9eb0() {
