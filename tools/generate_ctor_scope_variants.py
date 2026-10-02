@@ -1052,10 +1052,42 @@ def named_event_variants():
             'NativeEventSlot u;\n'
             'NativeNamedEvent_FUN_10df9440 *pe = (NativeNamedEvent_FUN_10df9440 *)\n'
             '    new (&u.e) NativeNamedEvent_FUN_10df9440();\n'),
+        # slot_guard + out-of-line RecoveredString ctor (native calls the real
+        # 0x1005273e ctor, not inlined int_allocRep — shifts EH schedule)
+        'named_event_guard_outctor': (
+            ctor_decl +
+            'union NativeEventSlot { NativeNamedEvent_FUN_10df9440 e;\n'
+            'void *p0,*p1,*p2,*p3,*p4,*p5;\n'
+            'NativeEventSlot() {}\n'
+            '~NativeEventSlot() { e.~NativeNamedEvent_FUN_10df9440(); } };\n',
+            'NativeEventSlot u;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = (NativeNamedEvent_FUN_10df9440 *)\n'
+            '    new (&u.e) NativeNamedEvent_FUN_10df9440();\n'),
+        # canonical pe=&event + out-of-line str ctor: isolates whether the
+        # inlined-vs-called ctor is what forces the frame-access regalloc
+        'named_event_direct_outctor': (
+            ctor_decl,
+            'NativeNamedEvent_FUN_10df9440 event;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = &event;\n'),
+        # selfm + out-of-line str ctor
+        'named_event_selfm_outctor': (
+            ctor_decl.replace('NativeNamedEvent_FUN_10df9440();',
+                              'NativeNamedEvent_FUN_10df9440();\n'
+                              '    NativeNamedEvent_FUN_10df9440 *self();'),
+            'NativeNamedEvent_FUN_10df9440 event;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = event.self();\n'),
     }
+    # Variants suffixed `_outctor` force the RecoveredString const-char* ctor
+    # out-of-line: native calls 0x1005273e (the real ctor) rather than inlining
+    # int_allocRep, which also shifts the EH arm/schedule to match.
+    REC_INLINE = ('__forceinline RecoveredString_FUN_1008c50b(const char *text) '
+                  '{ ((SCStr *)this)->int_allocRep((char *)text); }')
+    REC_DECL = 'RecoveredString_FUN_1008c50b(const char *text);'
     out = {}
     for name, (decl, opening) in variants.items():
         library = prefix.replace(ctor_decl, decl, 1)
+        if name.endswith('_outctor'):
+            library = library.replace(REC_INLINE, REC_DECL)
         src = (library +
                '\n// Reference entry 10e026f0; body size 149 bytes.\n'
                '#line 1 "ENTRY_10e026f0"\n'

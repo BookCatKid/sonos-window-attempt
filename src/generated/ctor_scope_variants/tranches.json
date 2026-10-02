@@ -364,6 +364,18 @@
     "directory": "analysis/ctor-scope-named-event-slot-guard"
   },
   {
+    "object": "named_event_guard_outctor_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-guard-outctor"
+  },
+  {
+    "object": "named_event_direct_outctor_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-direct-outctor"
+  },
+  {
+    "object": "named_event_selfm_outctor_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-selfm-outctor"
+  },
+  {
     "object": "wiz_temp_current_reference_flags",
     "directory": "analysis/ctor-scope-wiz-temp-current"
   },
