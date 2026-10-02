@@ -2,6 +2,7 @@ inline void *operator new(unsigned int, void *receiver) noexcept { return receiv
 extern unsigned int DAT_1188207c;
 extern unsigned int DAT_118c62f8;
 void __cdecl thunk_FUN_1123fce0(void *);
+int __cdecl thunk_FUN_1123fcd0(void *);
 struct NativeOpRefBase_FUN_10687d70 { void *vptr;
 __forceinline NativeOpRefBase_FUN_10687d70() { vptr = (void *)&DAT_1188207c; } };
 struct NativeOpRefVBase { void *vb; NativeOpRefVBase();

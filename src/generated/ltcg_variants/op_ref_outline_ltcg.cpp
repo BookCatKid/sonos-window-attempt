@@ -2,6 +2,7 @@ inline void *operator new(unsigned int, void *receiver) noexcept { return receiv
 unsigned int DAT_1188207c = 0;
 unsigned int DAT_118c62f8 = 0;
 void __cdecl thunk_FUN_1123fce0(void *);
+int __cdecl thunk_FUN_1123fcd0(void *);
 struct __declspec(dllexport) NativeOpRefBase_FUN_10687d70 { void *vptr;
 __forceinline NativeOpRefBase_FUN_10687d70() { vptr = (void *)&DAT_1188207c; } };
 struct __declspec(dllexport) NativeOpRefMember_thunk_FUN_101ba1b0 { void *rep;
@@ -30,4 +31,5 @@ void __cdecl __std_terminate() { for (;;) { } }
 
 // ltcg link stubs
 void __cdecl thunk_FUN_1123fce0(void *) { ltcg_opaque(); }
+int __cdecl thunk_FUN_1123fcd0(void *) { ltcg_opaque(); return 0; }
 NativeOpRefMember_thunk_FUN_101ba1b0::~NativeOpRefMember_thunk_FUN_101ba1b0() { ltcg_opaque(); }

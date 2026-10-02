@@ -65,7 +65,8 @@ def op_ref_variants():
         'inline void *operator new(unsigned int, void *receiver) noexcept { return receiver; }\n'
         f'extern unsigned int DAT_{base_vtable};\n'
         f'extern unsigned int DAT_{vtable};\n'
-        'void __cdecl thunk_FUN_1123fce0(void *);\n')
+        'void __cdecl thunk_FUN_1123fce0(void *);\n'
+        'int __cdecl thunk_FUN_1123fcd0(void *);\n')
     base = ('struct NativeOpRefBase_FUN_10687d70 { void *vptr;\n'
             f'__forceinline NativeOpRefBase_FUN_10687d70() {{ vptr = (void *)&DAT_{base_vtable}; }} }};\n')
     ctor_tail = ('{\nm4.rep = param_2;\nif (param_2) thunk_FUN_1123fce0((char *)param_2 + 4);\n'
@@ -536,6 +537,28 @@ def op_ref_variants():
             'NativeOpRefMember_thunk_FUN_101ba1b0(void *p) { rep.p = p;\n'
             'if (p) thunk_FUN_1123fce0((char *)p + 4); }\n'
             '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n'
+            'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0 m4; void *f8;\n'
+            'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',
+            'NativeOpRefCtor_FUN_10687d70::NativeOpRefCtor_FUN_10687d70(void *param_2)\n'
+            '    : m4(param_2) {\n'
+            f'f8 = 0;\nvptr = (void *)&DAT_{vtable};\n}}\n'),
+        # body_store plus the real ~Sub definition (release+delete body
+        # recovered from native 0x101ba1b0): tests whether a defined member
+        # dtor keeps the repoint + bare funclet instead of inlining
+        'op_ref_m4_body_store_dtordef': (
+            'struct NativeOpRefSub { void *p; ~NativeOpRefSub(); };\n'
+            'struct NativeOpRefMember_thunk_FUN_101ba1b0 { NativeOpRefSub rep;\n'
+            'NativeOpRefMember_thunk_FUN_101ba1b0(void *p) { rep.p = p;\n'
+            'if (p) thunk_FUN_1123fce0((char *)p + 4); }\n'
+            '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n'
+            'NativeOpRefSub::~NativeOpRefSub() {\n'
+            'void *v = p;\n'
+            'if (v != 0) {\n'
+            'if (thunk_FUN_1123fcd0((char *)v + 4) == 0)\n'
+            '(*(void (__thiscall **)(void *, int))(*(void **)v))(v, 1);\n'
+            '}\n'
+            '}\n'
             'struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {\n'
             'NativeOpRefMember_thunk_FUN_101ba1b0 m4; void *f8;\n'
             'NativeOpRefCtor_FUN_10687d70(void *param_2); };\n',

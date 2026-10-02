@@ -101,6 +101,7 @@ def main():
                       re.findall(r'DAT_([0-9a-f]{8})', r['source'] + ' DAT_' + r['first_vtable'])}):
         library += f'extern unsigned int DAT_{va};\n'
     library += 'void __cdecl thunk_FUN_1123fce0(void *);\n'
+    library += 'int __cdecl thunk_FUN_1123fcd0(void *);\n'
     # m4 is a nested tracked member: rep is an implicit-default-init'd
     # sub-object whose p store runs inside m4's armed construction scope,
     # producing MSVC's construction-this repoint + bare-CTL funclet
@@ -108,7 +109,14 @@ def main():
                 'struct NativeOpRefMember_thunk_FUN_101ba1b0 { NativeOpRefSub rep;\n'
                 'NativeOpRefMember_thunk_FUN_101ba1b0(void *p) { rep.p = p;\n'
                 'if (p != 0) thunk_FUN_1123fce0((char *)p + 4); }\n'
-                '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n')
+                '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n'
+                'NativeOpRefSub::~NativeOpRefSub() {\n'
+                'void *v = p;\n'
+                'if (v != 0) {\n'
+                'if (thunk_FUN_1123fcd0((char *)v + 4) == 0)\n'
+                '(*(void (__thiscall **)(void *, int))(*(void **)v))(v, 1);\n'
+                '}\n'
+                '}\n')
     for r in candidates:
         klass = r['op_class']
         library += (f'struct NativeOpRefBase_FUN_{r["entry"]} {{ void *vptr;\n'

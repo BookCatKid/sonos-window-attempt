@@ -277,11 +277,19 @@ extern unsigned int DAT_119d3bbc;
 extern unsigned int DAT_119d3bc8;
 extern unsigned int DAT_119d3df0;
 void __cdecl thunk_FUN_1123fce0(void *);
+int __cdecl thunk_FUN_1123fcd0(void *);
 struct NativeOpRefSub { void *p; ~NativeOpRefSub(); };
 struct NativeOpRefMember_thunk_FUN_101ba1b0 { NativeOpRefSub rep;
 NativeOpRefMember_thunk_FUN_101ba1b0(void *p) { rep.p = p;
 if (p != 0) thunk_FUN_1123fce0((char *)p + 4); }
 ~NativeOpRefMember_thunk_FUN_101ba1b0(); };
+NativeOpRefSub::~NativeOpRefSub() {
+void *v = p;
+if (v != 0) {
+if (thunk_FUN_1123fcd0((char *)v + 4) == 0)
+(*(void (__thiscall **)(void *, int))(*(void **)v))(v, 1);
+}
+}
 struct NativeOpRefBase_FUN_10687d70 { void *vptr;
 __forceinline NativeOpRefBase_FUN_10687d70() { vptr = (void *)&DAT_1188207c; } };
 struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {
