@@ -10,11 +10,12 @@ struct NativeOpRefMember_thunk_FUN_101ba1b0 { NativeOpRefSub rep;
 NativeOpRefMember_thunk_FUN_101ba1b0(void *p) { rep.p = p;
 if (p) thunk_FUN_1123fce0((char *)p + 4); }
 ~NativeOpRefMember_thunk_FUN_101ba1b0(); };
+struct NativeOpRefTarget { virtual ~NativeOpRefTarget(); };
 NativeOpRefSub::~NativeOpRefSub() {
 void *v = p;
 if (v != 0) {
 if (thunk_FUN_1123fcd0((char *)v + 4) == 0)
-(*(void (__thiscall **)(void *, int))(*(void **)v))(v, 1);
+delete (NativeOpRefTarget *)v;
 }
 }
 struct NativeOpRefCtor_FUN_10687d70 : NativeOpRefBase_FUN_10687d70 {

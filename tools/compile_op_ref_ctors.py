@@ -110,11 +110,12 @@ def main():
                 'NativeOpRefMember_thunk_FUN_101ba1b0(void *p) { rep.p = p;\n'
                 'if (p != 0) thunk_FUN_1123fce0((char *)p + 4); }\n'
                 '~NativeOpRefMember_thunk_FUN_101ba1b0(); };\n'
+                'struct NativeOpRefTarget { virtual ~NativeOpRefTarget(); };\n'
                 'NativeOpRefSub::~NativeOpRefSub() {\n'
                 'void *v = p;\n'
                 'if (v != 0) {\n'
                 'if (thunk_FUN_1123fcd0((char *)v + 4) == 0)\n'
-                '(*(void (__thiscall **)(void *, int))(*(void **)v))(v, 1);\n'
+                'delete (NativeOpRefTarget *)v;\n'
                 '}\n'
                 '}\n')
     for r in candidates:
