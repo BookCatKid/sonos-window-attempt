@@ -3046,6 +3046,8 @@ def event_copier_variants():
         'copier_wm0_nested_tpl2': (
             prefix.replace(
                 'struct NativeCopierOutput {',
+                'struct CopierWrapMember0nt { NativeCopierAggregate_FUN_10deee60 agg;\n'
+                '  CopierWrapMember0nt(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n'
                 'template <class To> struct SCSubOuter2 {\n'
                 '  struct EventSink {\n'
                 '    EventSink *FUN_10df9390();\n'
@@ -3060,8 +3062,6 @@ def event_copier_variants():
                 '  return this;\n'
                 '}\n'
                 'template struct SCSubOuter2<int>;\n'
-                'struct CopierWrapMember0nt { NativeCopierAggregate_FUN_10deee60 agg;\n'
-                '  CopierWrapMember0nt(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n'
                 'static void wm0_ntforce() { SCSubOuter2<int>::EventSink e; e.FUN_10df9390(); }\n'
                 'struct NativeCopierOutput {'),
             sig,
