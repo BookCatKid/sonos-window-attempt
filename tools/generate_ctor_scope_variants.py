@@ -2164,6 +2164,18 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510 e;\n'
             'e.thunk_FUN_10defac0(this, agg);\n'
             'return this;\n'),
+        # placement-new into declared union storage inside the thunk call:
+        # the Aggregate is constructed at a fixed slot (remat lea ecx,$S)
+        # while the inner Source temp stays expression-lived (push eax +
+        # tail death); tests whether MSVC EH-tracks the placement object
+        'copier_union_place': (
+            prefix,
+            sig,
+            head +
+            'union CopierAggSlot { char raw[28]; NativeCopierAggregate_FUN_10deee60 agg; CopierAggSlot() {} ~CopierAggSlot() {} } uslot;\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    *new (&uslot.agg) NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'
+            'return this;\n'),
         # nested temps where the agg temp is the right operand of a comma:
         # the temp is still expression-lived but its address may no longer
         # be the bound call result
@@ -2383,7 +2395,7 @@ def main():
                  'copier_named_src_nested', 'copier_nested_rref',
                  'copier_lambda_agg', 'copier_nested_ptr',
                  'copier_nested_bcref', 'copier_nested_bref',
-                 'copier_pa_arg'):
+                 'copier_pa_arg', 'copier_union_place'):
         (ltcg_dir / (name + '_ltcg.cpp')).write_text(
             ltcgize((VARIANTS / (name + '.cpp')).read_text()))
     # Two-TU probes: the member ctor stays DECLARED-ONLY in TU_A so the
