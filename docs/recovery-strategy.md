@@ -401,3 +401,15 @@ Neither residual blocks correctness/semantics — only byte identity. Options:
 (a) keep searching MSVC-idiom space (diminishing returns), (b) accept
 structural parity for these two tranches, or (c) pivot to bulk .text coverage
 where the byte mass is.
+
+UPDATE on the named_event wall: decoding the native unwind map for 10e026f0
+(metadata 0x11fbae7c, maxState 3) shows state-0's funclet is
+`lea ecx,[ebp-0x28]; jmp ~dtor` — it destructs [ebp-0x28] DIRECTLY, so the
+tracked object is a plain `Event` local there, not a union member or pointer
+guard. Combined with `call ctor; mov esi,eax` (pe bound to the ctor's thiscall
+eax return), this is an unproducible source pair: `Event event` arms after the
+ctor correctly but MSVC constant-folds `&event` to a lea (no esi=eax), while
+`pe=new(&storage)` binds esi=eax but moves the tracked object's arm to its own
+declaration. MSVC exposes no "tracked-object construction that returns a
+bindable pointer"; the native bytes almost certainly came from a source
+construct (factory/helper macro) outside the modelled idiom space.
