@@ -1691,6 +1691,51 @@ def wiz_state_variants():
         source_marker + '\n' + tail_common +
         'RecoveredString_FUN_1008c50b s2 = thunk_FUN_106dfa00();\n'
         's2.endsWith("Page");\n' + tail_end)
+    # The reference writes [ebp-0x10]=0 at the query call AND uses [ebp-0x14]
+    # as the result guard flag — two compiler flag slots. MSVC reserves a
+    # shared $EHFlags$-style word only when a function has more than one
+    # flag-gated object; a single ?: packs its flag into name's dead slot.
+    # Give the register call its own flag-gated result so the result flag is
+    # forced onto the reserved word.
+    out['wiz_two_gated'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' +
+        '{ RecoveredString_FUN_1008c50b name("SCSubmitDiagsWizardDonePage");\n'
+        'thunk_FUN_106de0c0(&name, arg); }\n'
+        'vftable = &DAT_118bea44;\n'
+        '{ RecoveredString_FUN_1008c50b t2 =\n'
+        '    (1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00());\n'
+        '  t2.endsWith("Page"); }\n'
+        + tail_end)
+    # name itself is a conditionally-constructed object (?: of two SCStr) —
+    # flag-gated — so MSVC allocates a shared flags word plus the result's bit
+    out['wiz_gated_name'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' +
+        '{ RecoveredString_FUN_1008c50b name =\n'
+        '    (arg ? RecoveredString_FUN_1008c50b("SCSubmitDiagsWizardDonePage")\n'
+        '         : RecoveredString_FUN_1008c50b("SCSubmitDiagsWizardDonePage"));\n'
+        'thunk_FUN_106de0c0(&name, arg); }\n'
+        'vftable = &DAT_118bea44;\n'
+        '(1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00()).endsWith("Page");\n'
+        + tail_end)
+    # register consumes a class-valued temporary (copy of a local): the temp's
+    # construction flag shares the reserved flags word with the result flag
+    out['wiz_gated_arg'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' +
+        '{ RecoveredString_FUN_1008c50b name("SCSubmitDiagsWizardDonePage");\n'
+        'RecoveredString_FUN_1008c50b &rn = name;\n'
+        'thunk_FUN_106de0c0(&rn, arg); }\n'
+        'vftable = &DAT_118bea44;\n'
+        '(1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00()).endsWith("Page");\n'
+        + tail_end)
     return out
 
 
