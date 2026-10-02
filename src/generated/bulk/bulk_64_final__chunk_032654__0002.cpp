@@ -2240,36 +2240,143 @@ struct ZPSupportInfo { char _pad; ZPSupportInfo(...); template<class T> int oper
 struct ZoneGroupState { char _pad; ZoneGroupState(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct ZoneGroupTopology { char _pad; ZoneGroupTopology(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct ZonePlayer { char _pad; ZonePlayer(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct Recovered_Bulk { char _pad; undefined4 __thiscall FUN_111e8430(int param_2,short *param_3); undefined4 __thiscall FUN_111e84a0(int param_2,short *param_3); undefined4 __thiscall FUN_111e8510(undefined4 param_2,short *param_3); short __thiscall FUN_111e85e0(undefined4 param_2,undefined4 param_3,int *param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_111e9b50(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_111ea9f0(undefined4 param_2,char param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_111eaea0(int param_2,undefined4 param_3,int param_4,undefined4 param_5,
+            undefined4 *param_6,undefined1 *param_7); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_111ee6d0(undefined4 param_2); void __thiscall FUN_111f2720(char *param_2,undefined4 *param_3); void __thiscall FUN_111f2a80(undefined4 param_2); void __thiscall FUN_111f2b50(undefined4 param_2,undefined4 param_3,int param_4,undefined4 param_5,
+            undefined4 param_6,undefined4 param_7); void __thiscall FUN_111f3030(undefined4 param_2,undefined4 param_3); void __thiscall FUN_111f3430(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_111f3510(undefined4 param_2,undefined4 param_3,undefined4 param_4,
+            undefined4 param_5,int param_6); void __thiscall FUN_111f3c40(float param_2); int __thiscall FUN_111f4630(int param_2); int __thiscall FUN_111f46b0(int param_2); int __thiscall FUN_111f4730(int param_2); void __thiscall FUN_111f4aa0(char *param_2); void __thiscall FUN_111f4d20(undefined1 *param_2,undefined1 *param_3,undefined4 param_4); void __thiscall FUN_111f4e90(char *param_2,char *param_3); void __thiscall FUN_111f5040(int param_2); void __thiscall FUN_111f5250(char *param_2); void __thiscall FUN_111f5350(undefined4 param_2); void __thiscall FUN_111f5a50(undefined4 param_2); void __thiscall FUN_111f5af0(undefined4 param_2); void __thiscall FUN_111f5f30(undefined4 param_2); void __thiscall FUN_111f5fb0(undefined4 param_2,undefined4 param_3); void __thiscall FUN_111f6010(undefined4 param_2,undefined4 param_3); void __thiscall FUN_111f6350(undefined4 param_2,undefined4 param_3); void __thiscall FUN_111f6b70(int param_2); void __thiscall FUN_111f6c30(int param_2,int param_3,undefined1 param_4); void __thiscall FUN_111f6cc0(int param_2,int param_3,undefined4 param_4,undefined4 param_5); void __thiscall FUN_111f6d60(int param_2,int param_3,int param_4); void __thiscall FUN_111f7440(undefined1 *param_2); undefined4 * __thiscall FUN_111f7600(undefined4 param_2); undefined4 * __thiscall FUN_111f7960(byte param_2); void __thiscall FUN_111f7a60(void *param_2,size_t param_3); undefined4 * __thiscall FUN_111fbeb0(undefined4 param_2,undefined4 param_3,undefined4 param_4,
+            undefined1 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_111fc020(undefined4 param_2,undefined4 param_3,undefined4 param_4,
+            undefined1 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_111fc9a0(int param_2,ushort *param_3); void __thiscall FUN_111fd450(undefined4 param_2); undefined4 * __thiscall FUN_111fe560(int param_2,undefined4 param_3,undefined1 param_4,
+            undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+            undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
+            undefined4 param_13,undefined4 param_14,undefined4 param_15,undefined4 param_16); undefined4 * __thiscall FUN_111fe860(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_111fe970(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_111feea0(byte param_2); undefined4 * __thiscall FUN_111fef80(byte param_2); void __thiscall FUN_111ff420(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); void __thiscall FUN_111ff6c0(undefined4 param_2,int param_3,undefined4 param_4,undefined4 param_5,
+            undefined4 param_6,uint param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10); undefined4 __thiscall FUN_112004a0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,uint param_6,undefined4 param_7,uint *param_8); void __thiscall FUN_11201d30(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); undefined4 * __thiscall FUN_11202490(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_11203990(undefined4 *param_2); undefined4 __thiscall FUN_11204200(int param_2); void __thiscall FUN_11204250(int *param_2,uint param_3); void __thiscall FUN_112043d0(int param_2); uint __thiscall FUN_112044e0(undefined4 param_2); void __thiscall FUN_11204a30(undefined4 param_2); void __thiscall FUN_11205100(undefined4 param_2,undefined4 param_3,int param_4); void __thiscall FUN_112054d0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11205ac0(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11205d40(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11206000(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112062c0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112064f0(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11206980(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11206be0(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_112073e0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11208ed0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10,undefined4 param_11,undefined4 param_12); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112092c0(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112094e0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11209710(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11209970(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11209bd0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11209e90(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120a0c0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120a310(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120a590(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120a7e0(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120aa30(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120ac50(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120aeb0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120b110(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120b330(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120b570(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10,undefined4 param_11,undefined4 param_12); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120bb90(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120bdf0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120c040(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120c2a0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120c4e0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120c770(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120ccb0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13,
+            undefined4 param_14); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120d0e0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120d430(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120d7b0(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120d9d0(undefined4 param_2,undefined4 param_3,int param_4,undefined4 param_5,
+            int param_6); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120dc50(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13,
+            undefined4 param_14); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120e0c0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13,
+            undefined4 param_14,undefined4 param_15); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120e550(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120e850(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120ead0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120ed20(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120f090(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120f300(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120f520(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120f760(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120f9b0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120fc60(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13,
+            undefined4 param_14,undefined4 param_15,undefined4 param_16,undefined4 param_17,
+            undefined4 param_18,undefined4 param_19); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11210040(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13,
+            undefined4 param_14,undefined4 param_15); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112103e0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11210660(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11210910(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11210bc0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11210e40(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11211060(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112112b0(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112114d0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11211720(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11211940(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11211b60(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11211dd0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11212080(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11212330(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11212690(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11212a10(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11212cc0(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11212f40(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112131c0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11213400(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11213680(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112138d0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11213b20(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11213e00(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11214620(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10,undefined4 param_11); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112149e0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11214ca0(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11214ed0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11215190(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112153c0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11215680(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112158a0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11215ad0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11215d00(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11215f20(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11216150(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11216370(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112165a0(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112167d0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10,undefined4 param_11); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11216b90(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11216db0(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112175c0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112177f0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11217b60(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112180d0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10,undefined4 param_11,undefined4 param_12); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11218410(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11218630(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11218880(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11218ce0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11218f20(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11219160(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112193a0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112195e0(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11219850(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11219cc0(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11219ee0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121a110(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121a340(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121a560(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121a780(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121a9d0(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121abf0(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121b060(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121b2e0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121b9d0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121bdc0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10,undefined4 param_11); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121c160(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121c5f0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121c910(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121cbd0(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121ce40(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121d0f0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121d3c0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10,undefined4 param_11); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121d760(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121dd40(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121df80(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121e200(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121e440(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121e6c0(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121e940(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121eb80(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121edf0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121f030(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121f270(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121f4f0(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121f770(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121fa20(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121fd40(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11220040(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11220290(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112204e0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11220720(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11220970(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11220be0(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11220e50(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112210c0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11221300(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112215a0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112217e0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11221a20(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11221c90(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11222160(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11222380(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112225a0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112227f0(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11222a10(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11222c50(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11222ed0(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112230f0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11223940(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11223b60(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11223d90(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11223fb0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11224240(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11224460(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112246b0(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11224910(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11224b60(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11224d90(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11224fc0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112251f0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11225420(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11225670(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11225930(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13,
+            undefined4 param_14,undefined4 param_15,undefined4 param_16,undefined4 param_17,
+            undefined4 param_18,undefined4 param_19); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11225d20(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11225f70(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11226190(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11226420(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11226640(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11226860(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11226ab0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11226d10(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11226f60(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11227180(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112273a0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112275f0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11228030(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112282e0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112288a0(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11228b20(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11228d90(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11228fb0(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112291d0(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11229430(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11229680(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11229920(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11229b40(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11229d90(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1122a2d0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1122a520(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_1122b300(undefined2 param_2,undefined2 param_3,undefined2 param_4); undefined4 * __thiscall FUN_1122b6d0(undefined4 param_2); undefined4 * __thiscall FUN_1122b970(undefined4 *param_2); undefined4 * __thiscall FUN_1122ba00(undefined4 *param_2); undefined4 * __thiscall FUN_1122baa0(byte param_2); void __thiscall FUN_1122bc70(undefined4 *param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1122c300(char *param_2,int param_3,int param_4); void __thiscall FUN_1122c570(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 *param_9,
+            undefined2 param_10,undefined2 param_11,undefined2 param_12); void __thiscall FUN_1122cf10(undefined4 param_2); void __thiscall FUN_1122de60(undefined4 param_2,undefined4 param_3,undefined4 param_4); int __thiscall FUN_1122e150(int param_2); void __thiscall FUN_1122fd00(int *param_2); void __thiscall FUN_1122fdc0(undefined4 param_2,int param_3); void __thiscall FUN_112300d0(short *param_2); undefined4 * __thiscall FUN_112302f0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_11230c90(undefined4 param_2,undefined1 param_3,undefined4 param_4,
+            int param_5); undefined4 * __thiscall FUN_11230dd0(undefined4 param_2,undefined4 param_3,undefined4 param_4,
+            undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+            undefined4 param_9); undefined4 * __thiscall FUN_11230ea0(undefined4 param_2,undefined4 param_3,undefined4 param_4,
+            undefined4 param_5,undefined4 param_6,undefined1 param_7); undefined4 * __thiscall FUN_11231030(undefined4 param_2); undefined4 * __thiscall FUN_11231690(byte param_2); undefined4 * __thiscall FUN_11231740(byte param_2); undefined4 * __thiscall FUN_112317f0(byte param_2); undefined4 * __thiscall FUN_112318d0(byte param_2); undefined4 __thiscall FUN_11232570(int param_2); int __thiscall FUN_11232da0(int param_2); void __thiscall FUN_112332a0(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112334a0(char param_2); undefined4 __thiscall FUN_11233e30(undefined4 param_2,int param_3); uint * __thiscall FUN_11234290(void *param_2,size_t param_3); undefined4 * __thiscall FUN_11234640(byte param_2); size_t __thiscall FUN_11234c00(char *param_2,uint param_3); void __thiscall FUN_112352d0(undefined4 param_2); bool __thiscall FUN_112368f0(int param_2,int param_3,int *param_4); void __thiscall FUN_11237780(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11238320(char param_2); undefined4 * __thiscall FUN_11238ba0(undefined4 param_2,undefined4 param_3,undefined4 param_4,
+            undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+            undefined4 param_9); undefined4 * __thiscall FUN_11239470(byte param_2); int * __thiscall FUN_112395d0(int param_2); undefined4 * __thiscall FUN_11239640(int param_2,undefined4 param_3,int param_4,undefined4 param_5,
+            undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9); undefined4 * __thiscall FUN_11239bf0(byte param_2); undefined4 * __thiscall FUN_11239f30(undefined4 *param_2,undefined4 param_3,undefined4 param_4); int __thiscall FUN_1123a780(byte param_2); void __thiscall FUN_1123a890(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined1 param_5); void __thiscall FUN_1123aa70(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined1 param_5); void __thiscall FUN_1123ac50(int *param_2,undefined1 param_3,char param_4); void __thiscall FUN_1123c280(undefined4 param_2,uint param_3,uint param_4,uint *param_5); bool __thiscall FUN_1123efc0(uint param_2); uint __thiscall FUN_1123f160(undefined4 param_2); void __thiscall FUN_1123f230(char *param_2); void __thiscall FUN_1123f290(char *param_2,char *param_3); void __thiscall FUN_1123f320(char *param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1123f5c0(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1123f810(undefined4 param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1123fa60(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_11240560(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_112409e0(byte param_2); undefined4 __thiscall FUN_11240be0(char *param_2); undefined1 __thiscall FUN_11240e60(int param_2); int __thiscall FUN_11241bd0(uint param_2); int __thiscall FUN_11241d50(int param_2); undefined4 __thiscall FUN_11241e00(undefined4 param_2); int __thiscall FUN_11241ee0(int param_2); void __thiscall FUN_11242940(int param_2); undefined4 * __thiscall FUN_112429a0(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 __thiscall FUN_11242b50(uint param_2); undefined4 __thiscall FUN_11242dd0(uint param_2); undefined4 * __thiscall FUN_11243180(int param_2); undefined4 * __thiscall FUN_11243220(int param_2); undefined4 * __thiscall FUN_11243560(byte param_2); void __thiscall FUN_11243950(undefined4 param_2); void __thiscall FUN_11243a80(undefined4 param_2); void __thiscall FUN_11243b10(void *param_2,size_t param_3); void __thiscall FUN_11243c80(undefined4 param_2); void __thiscall FUN_11243d20(undefined8 param_2); void __thiscall FUN_11243e50(undefined4 param_2); void __thiscall FUN_11243f30(undefined4 param_2,undefined4 *param_3); void __thiscall FUN_11244310(undefined4 param_2,int *param_3); void __thiscall FUN_112447a0(char param_2); void __thiscall FUN_11244840(byte *param_2,int param_3,char param_4,char param_5); void __thiscall FUN_11244ac0(undefined4 param_2); void __thiscall FUN_11244b20(undefined4 param_2); void __thiscall FUN_11247c50(char *param_2,undefined4 param_3,char *param_4); bool __thiscall FUN_11248b40(undefined4 param_2); uint __thiscall FUN_11249230(char *param_2,char *param_3); void __thiscall FUN_112492e0(char *param_2,undefined4 *param_3); void __thiscall FUN_11249420(char *param_2,undefined4 param_3); void __thiscall FUN_11249560(char *param_2,undefined4 param_3); void __thiscall FUN_112496a0(char *param_2,float param_3); void __thiscall FUN_112497f0(char *param_2,undefined4 param_3,undefined4 param_4); void __thiscall FUN_11249930(char *param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11249c80(undefined *param_2,undefined4 param_3); undefined4 __thiscall FUN_11249d90(undefined4 param_2,undefined4 param_3); void __thiscall FUN_11249e60(undefined4 param_2,char *param_3); undefined4 * __thiscall FUN_11249fe0(undefined4 param_2); undefined4 * __thiscall FUN_1124a090(undefined4 param_2); undefined4 * __thiscall FUN_1124a160(char *param_2); undefined4 * __thiscall FUN_1124a490(byte param_2); undefined4 __thiscall FUN_1124a930(undefined4 param_2,undefined4 param_3,int param_4); undefined4 __thiscall FUN_1124aa10(undefined4 param_2,undefined4 param_3,int param_4); undefined4 __thiscall FUN_1124afd0(char *param_2); void __thiscall FUN_1124b120(uint param_2); int __thiscall FUN_1124b490(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6); int __thiscall FUN_1124b4f0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6); undefined4 __thiscall FUN_1124b550(undefined4 param_2,char *param_3,char *param_4,void *param_5,char *param_6); uint __thiscall FUN_1124c460(undefined4 param_2,uint param_3); uint __thiscall FUN_1124c4c0(undefined4 param_2,uint param_3); void __thiscall FUN_1124c8a0(int param_2,uint param_3); int __thiscall FUN_1124cf40(void *param_2,uint param_3); undefined1 __thiscall FUN_1124d810(undefined4 param_2,undefined4 param_3); undefined1 __thiscall FUN_1124d880(undefined4 param_2,undefined4 param_3); void __thiscall FUN_1124da30(undefined4 param_2,uint param_3); void __thiscall FUN_1124db80(undefined4 param_2,uint param_3); undefined4 * __thiscall FUN_1124df10(undefined4 param_2,undefined1 param_3,undefined1 param_4,
+            undefined4 param_5); undefined4 * __thiscall FUN_1124e4f0(undefined4 param_2,undefined4 param_3,undefined4 param_4,
+            undefined4 param_5,undefined4 param_6); undefined4 * __thiscall FUN_1124e590(undefined4 param_2,undefined4 param_3,undefined1 param_4); undefined4 * __thiscall FUN_1124e830(undefined2 param_2); void __thiscall FUN_1124f400(char *param_2); undefined4 * __thiscall FUN_1124f580(byte param_2); undefined4 * __thiscall FUN_1124f6b0(byte param_2); undefined4 * __thiscall FUN_1124f720(byte param_2); undefined4 * __thiscall FUN_1124f900(byte param_2); undefined4 * __thiscall FUN_1124f9a0(byte param_2); undefined4 * __thiscall FUN_1124fd20(byte param_2); void __thiscall FUN_1124fdc0(undefined1 *param_2,int param_3); int __thiscall FUN_1124ffa0(undefined4 param_2); int __thiscall FUN_11250000(undefined4 param_2); int __thiscall FUN_11250160(undefined4 param_2); int __thiscall FUN_112501c0(undefined4 param_2); int __thiscall FUN_11250230(undefined4 param_2); bool __thiscall FUN_11250a70(int param_2,int param_3,int *param_4); bool __thiscall FUN_11250dc0(int param_2,int param_3,int *param_4); void __thiscall FUN_11252e80(undefined4 param_2); void __thiscall FUN_11252fa0(undefined4 param_2); void __thiscall FUN_11253040(undefined4 param_2); undefined4 __thiscall FUN_112532e0(undefined4 param_2,int param_3); undefined4 * __thiscall FUN_11254cb0(undefined4 param_2,int param_3); int __thiscall FUN_112555b0(int param_2); undefined4 __thiscall FUN_11255c30(int *param_2); undefined4 __thiscall FUN_11255fd0(int param_2,uint param_3,undefined4 param_4,undefined4 param_5,
+            undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10,undefined4 param_11,undefined4 param_12,uint param_13,
+            undefined4 param_14,undefined4 param_15,undefined4 param_16); void __thiscall FUN_11257c40(int param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5,
+            undefined4 param_6); void __thiscall FUN_11257d80(char *param_2,char *param_3); void __thiscall FUN_11257f10(char *param_2,char *param_3); undefined4 __thiscall FUN_112580d0(char *param_2); void __thiscall FUN_11258490(undefined4 param_2,undefined4 param_3); undefined4 __thiscall FUN_112588d0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,char *param_7,char *param_8,undefined4 param_9,undefined4 param_10,
+            char param_11); void __thiscall FUN_11258b70(int param_2); void __thiscall FUN_1125a1b0(char param_2); void __thiscall FUN_1125a250(int param_2,undefined4 param_3); uint __thiscall FUN_1125b1d0(void *param_2,size_t param_3,void *param_4,size_t param_5); char * __thiscall FUN_1125b370(int param_2); undefined4 * __thiscall FUN_1125b6a0(undefined4 param_2,undefined4 param_3,undefined4 param_4,
+            undefined4 param_5,undefined4 param_6); undefined4 * __thiscall FUN_1125b720(undefined4 param_2,undefined4 param_3,undefined4 param_4,
+            undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+            undefined4 param_9); undefined4 * __thiscall FUN_1125b7a0(undefined4 param_2,undefined4 param_3,undefined4 param_4,
+            undefined4 param_5); undefined4 * __thiscall FUN_1125b810(undefined4 param_2,undefined4 param_3,undefined4 param_4,
+            undefined4 param_5); undefined4 * __thiscall FUN_1125b880(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1125ba20(int param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1125bae0(char *param_2); void __thiscall FUN_1125bbd0(char param_2); void __thiscall FUN_1125c860(undefined4 param_2,undefined4 param_3); undefined4 __thiscall FUN_1125cda0(undefined4 param_2,uint param_3); undefined4 __thiscall FUN_1125ce00(undefined4 param_2,uint param_3); undefined4 __thiscall FUN_1125ce60(undefined4 param_2,uint param_3); void __thiscall FUN_1125d360(undefined4 param_2,int param_3,undefined4 param_4,
+            undefined4 *param_5,int param_6); void __thiscall FUN_1125d400(undefined4 *param_2,undefined4 *param_3,int param_4,int param_5,int param_6); undefined4 * __thiscall FUN_112620c0(undefined4 param_2,undefined4 param_3,undefined1 param_4,
+            undefined4 param_5,undefined4 param_6,undefined4 param_7,int param_8,undefined4 param_9,
+            undefined2 param_10,undefined1 param_11,undefined1 *param_12,undefined1 *param_13); undefined4 __thiscall FUN_11262260(int param_2); undefined4 * __thiscall FUN_11262400(int *param_2); uint __thiscall FUN_11262f40(undefined4 param_2); uint __thiscall FUN_11262fc0(char *param_2); uint __thiscall FUN_11263050(char *param_2); uint __thiscall FUN_112630e0(undefined4 param_2); void __thiscall FUN_112631c0(int param_2,undefined4 param_3,char param_4); void __thiscall FUN_112634e0(undefined4 param_2); void __thiscall FUN_112641a0(undefined4 param_2,undefined4 param_3); void __thiscall FUN_11264480(undefined4 param_2,undefined4 param_3); void __thiscall FUN_112644e0(undefined4 param_2,undefined4 param_3); int __thiscall FUN_11265db0(int param_2); undefined4 * __thiscall FUN_11266960(byte param_2); undefined4 * __thiscall FUN_11266a30(byte param_2); undefined4 * __thiscall FUN_11266b00(byte param_2); undefined4 * __thiscall FUN_11266c00(byte param_2); int __thiscall FUN_11267410(int param_2,int param_3); void __thiscall FUN_11267640(int param_2); void __thiscall FUN_112676b0(int param_2); void __thiscall FUN_11267910(int param_2); void __thiscall FUN_112679f0(char *param_2); undefined4 __thiscall FUN_11267a70(char *param_2); undefined4 __thiscall FUN_11267b10(char *param_2); void __thiscall FUN_11267c20(char *param_2); int __thiscall FUN_11268fd0(undefined4 param_2); int __thiscall FUN_112695a0(undefined4 param_2,undefined4 param_3,undefined4 param_4,
+            undefined4 param_5,int param_6,int *param_7,int *param_8,undefined4 param_9,int param_10
+            ,int param_11,char param_12); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11269910(undefined1 *param_2,undefined4 param_3,undefined4 param_4,
+            undefined4 param_5,int param_6); void __thiscall FUN_1126a4b0(void *param_2,uint *param_3,undefined4 param_4); void __thiscall FUN_1126a7c0(void *param_2,uint *param_3); int __thiscall FUN_1126b0a0(uint param_2,uint param_3,undefined4 param_4,undefined4 param_5); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1126b3e0(undefined4 param_2); bool __thiscall FUN_1126b680(uint param_2,int param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1126b960(int param_2,undefined4 param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1126c2e0(int *param_2); undefined1 __thiscall FUN_1126c9a0(void *param_2,uint param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1126ca70(int param_2,uint param_3); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1126cc10(int param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1126cce0(int *param_2,undefined4 param_3); undefined4 __thiscall FUN_1126d1e0(undefined4 param_2,undefined4 *param_3); void __thiscall FUN_1126d2f0(undefined4 param_2); int * __thiscall FUN_1126d6d0(int *param_2,uint *param_3); void __thiscall FUN_1126ef30(int param_2); void __thiscall FUN_1126f020(int *param_2); undefined1 __thiscall FUN_1126f750(undefined4 param_2,undefined4 param_3); undefined1 __thiscall FUN_1126f940(uint param_2,uint param_3); void __thiscall FUN_1126fb00(int *param_2,uint *param_3); undefined1 __thiscall FUN_1126fb80(uint param_2,uint param_3); undefined1 __thiscall FUN_1126fe40(uint param_2,uint param_3); undefined1 __thiscall FUN_11270050(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6); undefined4 __thiscall FUN_112700f0(uint param_2,uint param_3,undefined4 param_4,undefined4 param_5,
+            undefined4 param_6); void __thiscall FUN_11270e80(undefined4 *param_2); void __thiscall FUN_112718f0(undefined4 *param_2); void __thiscall FUN_11271990(undefined4 *param_2); int * __thiscall FUN_11273c60(uint param_2,char param_3); void __thiscall FUN_11273fc0(int *param_2); void __thiscall FUN_112744d0(undefined4 param_2); void __thiscall FUN_112748e0(void *param_2,size_t param_3); void __thiscall FUN_11274990(void *param_2,size_t param_3); void __thiscall FUN_11274a10(void *param_2,size_t param_3); void __thiscall FUN_11274ac0(undefined4 param_2); void __thiscall FUN_11274b50(char *param_2,undefined4 param_3); undefined4 __thiscall FUN_11274e50(int param_2); undefined4 * __thiscall FUN_11274f50(byte param_2); undefined1 __thiscall FUN_11274fe0(char *param_2,undefined4 *param_3,uint param_4); undefined4 __thiscall FUN_11275460(undefined4 param_2); undefined4 __thiscall FUN_11275500(undefined4 param_2); char __thiscall FUN_112755e0(longlong *param_2); void __thiscall FUN_11275880(undefined4 param_2); void __thiscall FUN_11275f40(char *param_2); void __thiscall FUN_11276000(char *param_2); void __thiscall FUN_112760d0(int param_2); void __thiscall FUN_11276140(uint param_2,uint param_3); void __thiscall FUN_112761c0(int param_2,undefined4 param_3); void __thiscall FUN_11276280(int param_2); int __thiscall FUN_11276320(undefined4 param_2); undefined4 * __thiscall FUN_11276650(byte param_2); void __thiscall FUN_11278010(int param_2); bool __thiscall FUN_112780a0(undefined4 param_2,uint param_3,undefined4 param_4,undefined1 param_5,
+            int param_6,int param_7); void __thiscall FUN_112781b0(undefined4 param_2,undefined4 param_3,undefined4 param_4); void __thiscall FUN_11278660(undefined4 param_2,int param_3,int param_4,int param_5,undefined4 param_6,
+            undefined4 param_7,undefined4 param_8); void __thiscall FUN_11278730(undefined4 param_2,int param_3,int param_4,undefined4 param_5,
+            undefined4 param_6,undefined4 param_7); void __thiscall FUN_112789e0(int param_2,undefined1 param_3,undefined4 param_4); void __thiscall FUN_11278bc0(char *param_2); void __thiscall FUN_112796c0(int param_2,int param_3,int param_4); bool __thiscall FUN_1127a120(undefined4 *param_2); bool __thiscall FUN_1127a540(undefined4 *param_2,uint param_3); void __thiscall FUN_1127af20(uint param_2); void __thiscall FUN_1127b0e0(undefined4 *param_2,int param_3); bool __thiscall FUN_1127b8d0(undefined4 param_2,uint param_3); bool __thiscall FUN_1127bac0(int *param_2); bool __thiscall FUN_1127bd40(undefined1 *param_2,uint param_3); uint __thiscall FUN_1127c4e0(undefined4 param_2,int param_3); char __thiscall FUN_1127cc80(undefined4 param_2,int param_3,undefined4 *param_4); undefined4 * __thiscall FUN_1127d260(undefined4 *param_2); void __thiscall FUN_1127dfe0(undefined4 param_2,char *param_3,char *param_4,int param_5,char *param_6,
+            undefined2 param_7,undefined2 param_8,char *param_9); void __thiscall FUN_1127e160(undefined4 param_2,char *param_3,char *param_4,uint param_5,char *param_6,
+            undefined2 param_7,undefined2 param_8,char *param_9); undefined4 * __thiscall FUN_1127e450(undefined4 param_2); void __thiscall FUN_1127e820(uint param_2); uint __thiscall FUN_1127f210(char param_2); undefined4 __thiscall FUN_1127fa00(undefined4 param_2,undefined4 param_3); void __thiscall FUN_1127fa70(undefined4 param_2,undefined4 param_3,undefined4 param_4); void __thiscall FUN_1127fcb0(undefined4 param_2,undefined4 param_3); undefined4 __thiscall FUN_112810c0(undefined4 param_2,undefined4 param_3,ushort param_4); undefined4 * __thiscall FUN_11281780(undefined4 param_2); uint * __thiscall FUN_11281ad0(uint *param_2); undefined1 __thiscall FUN_11281d60(int param_2); uint __thiscall FUN_11281eb0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+            ,undefined4 param_6,undefined4 param_7); int __thiscall FUN_11283220(ushort param_2); void __thiscall FUN_11283ff0(undefined4 param_2); undefined4 __thiscall FUN_11284370(char *param_2); void __thiscall FUN_11285770(int param_2); int __thiscall FUN_112858c0(undefined4 param_2,undefined4 param_3,int param_4,int param_5); undefined4 __thiscall FUN_11285e60(int param_2,int param_3); char * __thiscall FUN_11286c20(int param_2,undefined4 param_3,int param_4,int param_5,int param_6); char * __thiscall FUN_11286da0(int param_2); void __thiscall FUN_112877d0(undefined4 param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11287a00(uint param_2,undefined4 param_3); int __thiscall FUN_11288340(uint param_2,int param_3); int __thiscall FUN_11288400(uint param_2,uint param_3); void __thiscall FUN_112884d0(void *param_2,uint param_3,int param_4,uint param_5); void __thiscall FUN_11288840(int param_2,int param_3,undefined4 *param_4,uint param_5); void __thiscall FUN_11288ae0(void *param_2,uint param_3); void __thiscall FUN_11288c90(int param_2,int param_3); void __thiscall FUN_1128a500(char *param_2); undefined4 * __thiscall FUN_1128a9b0(undefined4 param_2,undefined4 param_3,undefined2 param_4,
+            undefined1 param_5,undefined1 param_6,undefined4 param_7,undefined4 param_8,
+            undefined4 param_9); void __thiscall FUN_1128afb0(int param_2,int param_3); void __thiscall FUN_1128b030(int param_2,int param_3); undefined4 __thiscall FUN_1128b0e0(int *param_2); void __thiscall FUN_1128b300(int param_2,int *param_3); void __thiscall FUN_1128b3d0(undefined4 *param_2,int *param_3); void __thiscall FUN_1128c370(undefined4 *param_2); int __thiscall FUN_1128cdb0(undefined4 param_2,undefined4 param_3); void __thiscall FUN_1128d420(char param_2); undefined4 * __thiscall FUN_1128d490(int param_2); int __thiscall FUN_1128d660(int param_2,undefined4 param_3); undefined4 * __thiscall FUN_1128e7a0(byte param_2); undefined4 * __thiscall FUN_1128e840(byte param_2); undefined4 * __thiscall FUN_1128e8e0(byte param_2); undefined4 * __thiscall FUN_1128e980(byte param_2); undefined4 __thiscall FUN_1128f3c0(undefined4 param_2); void __thiscall FUN_1128f7b0(undefined4 param_2,uint param_3); undefined4 * __thiscall FUN_1128f9f0(int param_2); void __thiscall FUN_1128fc10(undefined4 param_2,undefined4 param_3); void __thiscall FUN_1128fd10(char param_2); void __thiscall FUN_1128fec0(char param_2); void __thiscall FUN_1128ff20(void *param_2,uint param_3); void __thiscall FUN_11292470(void *param_2,uint param_3,int *param_4); void __thiscall FUN_112926b0(int param_2,uint param_3,undefined1 *param_4,uint param_5); void __thiscall FUN_11292840(undefined4 param_2,int param_3,int param_4,undefined4 param_5); void __thiscall FUN_11292a90(undefined4 param_2,undefined4 param_3); undefined1 __thiscall FUN_11293060(int *param_2,int *param_3); void __thiscall FUN_11293850(void *param_2,uint *param_3); void __thiscall FUN_11294280(undefined4 param_2); int * __thiscall FUN_11294330(int *param_2,int *param_3); int * __thiscall FUN_11294410(int *param_2,int *param_3); int * __thiscall FUN_11294520(int *param_2,int *param_3); int __thiscall FUN_11294e30(int *param_2); int __thiscall FUN_11294f20(int *param_2); int __thiscall FUN_11295130(byte param_2); uint __thiscall FUN_112951e0(byte param_2); int __thiscall FUN_11295330(byte param_2); void __thiscall FUN_11296590(int param_2); undefined4 __thiscall FUN_11296810(undefined1 *param_2,undefined1 *param_3,int param_4,undefined1 *param_5,
+            int param_6,undefined1 *param_7,int param_8,undefined1 *param_9,int param_10,
+            undefined4 *param_11,undefined4 *param_12); undefined1 __thiscall FUN_11299470(undefined4 param_2,undefined4 param_3,undefined4 param_4,int param_5); void __thiscall FUN_1129b7d0(undefined4 *param_2); void __thiscall FUN_1129bd00(undefined4 *param_2); undefined4 * __thiscall FUN_1129c1a0(int param_2); undefined4 * __thiscall FUN_1129c830(undefined4 *param_2); undefined4 * __thiscall FUN_1129d040(undefined4 *param_2); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1129db80(int param_2,int param_3,byte *param_4,undefined4 param_5); };
 using namespace std;
-undefined4 __thiscall FUN_111e8430(int param_1,int param_2,short *param_3);
-undefined4 __thiscall FUN_111e84a0(int param_1,int param_2,short *param_3);
-undefined4 __thiscall FUN_111e8510(int param_1,undefined4 param_2,short *param_3);
-short __thiscall FUN_111e85e0(int *param_1,undefined4 param_2,undefined4 param_3,int *param_4);
 void __fastcall FUN_111e93e0(uint *param_1);
 void __fastcall FUN_111e9ad0(ushort *param_1);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_111e9b50(int *param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_111ea9f0(int *param_1,undefined4 param_2,char param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_111eaea0(int *param_1,int param_2,undefined4 param_3,int param_4,undefined4 param_5,
-            undefined4 *param_6,undefined1 *param_7);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_111ee6d0(int *param_1,undefined4 param_2);
 void FUN_111f1600(void);
 uint FUN_111f1670(char *param_1,char param_2);
 undefined4 FUN_111f1800(char *param_1,uint param_2);
 undefined4 FUN_111f2260(char *param_1);
-void __thiscall FUN_111f2720(int param_1,char *param_2,undefined4 *param_3);
-void __thiscall FUN_111f2a80(ushort *param_1,undefined4 param_2);
-void __thiscall
-FUN_111f2b50(char *param_1,undefined4 param_2,undefined4 param_3,int param_4,undefined4 param_5,
-            undefined4 param_6,undefined4 param_7);
 void __fastcall FUN_111f2f80(int param_1);
-void __thiscall FUN_111f3030(int param_1,undefined4 param_2,undefined4 param_3);
 void FUN_111f3240(int *param_1,uint param_2,uint param_3,uint *param_4,uint *param_5);
-void __thiscall FUN_111f3430(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_111f3510(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
-            undefined4 param_5,int param_6);
-void __thiscall FUN_111f3c40(float *param_1,float param_2);
 void __fastcall FUN_111f3e50(float *param_1);
 void __fastcall FUN_111f3f90(int param_1);
 void __fastcall FUN_111f4050(int param_1);
@@ -2277,449 +2384,38 @@ void __fastcall FUN_111f4140(int param_1);
 void __fastcall FUN_111f42c0(int param_1);
 void __fastcall FUN_111f43a0(undefined1 *param_1);
 void __fastcall FUN_111f4410(int param_1);
-int __thiscall FUN_111f4630(int param_1,int param_2);
-int __thiscall FUN_111f46b0(int param_1,int param_2);
-int __thiscall FUN_111f4730(int param_1,int param_2);
-void __thiscall FUN_111f4aa0(int param_1,char *param_2);
-void __thiscall FUN_111f4d20(int param_1,undefined1 *param_2,undefined1 *param_3,undefined4 param_4);
-void __thiscall FUN_111f4e90(int param_1,char *param_2,char *param_3);
-void __thiscall FUN_111f5040(int param_1,int param_2);
-void __thiscall FUN_111f5250(undefined4 param_1,char *param_2);
-void __thiscall FUN_111f5350(int param_1,undefined4 param_2);
-void __thiscall FUN_111f5a50(int param_1,undefined4 param_2);
-void __thiscall FUN_111f5af0(int param_1,undefined4 param_2);
-void __thiscall FUN_111f5f30(int param_1,undefined4 param_2);
-void __thiscall FUN_111f5fb0(int param_1,undefined4 param_2,undefined4 param_3);
-void __thiscall FUN_111f6010(int param_1,undefined4 param_2,undefined4 param_3);
-void __thiscall FUN_111f6350(int *param_1,undefined4 param_2,undefined4 param_3);
-void __thiscall FUN_111f6b70(int *param_1,int param_2);
-void __thiscall FUN_111f6c30(int *param_1,int param_2,int param_3,undefined1 param_4);
-void __thiscall
-FUN_111f6cc0(int *param_1,int param_2,int param_3,undefined4 param_4,undefined4 param_5);
-void __thiscall FUN_111f6d60(int *param_1,int param_2,int param_3,int param_4);
 /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void FUN_111f7060(void);
-void __thiscall FUN_111f7440(int *param_1,undefined1 *param_2);
-undefined4 * __thiscall FUN_111f7600(undefined4 *param_1,undefined4 param_2);
-undefined4 * __thiscall FUN_111f7960(undefined4 *param_1,byte param_2);
-void __thiscall FUN_111f7a60(int param_1,void *param_2,size_t param_3);
-undefined4 * __thiscall
-FUN_111fbeb0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
-            undefined1 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_111fc020(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
-            undefined1 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8);
 void __fastcall FUN_111fc270(undefined4 *param_1);
 void __fastcall FUN_111fc3e0(int param_1);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_111fc9a0(int param_1,int param_2,ushort *param_3);
 undefined4 * __fastcall FUN_111fcf40(int param_1);
 /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void FUN_111fd320(char *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5);
-void __thiscall FUN_111fd450(int param_1,undefined4 param_2);
 void FUN_111fd5b0(undefined4 param_1,undefined4 param_2,char param_3);
 uint FUN_111fdc10(char param_1,int param_2,int param_3,uint param_4);
 uint FUN_111fdca0(undefined4 param_1,int param_2,char *param_3,uint param_4);
 byte FUN_111fe010(char *param_1);
 void FUN_111fe0d0(int param_1,undefined4 param_2);
-undefined4 * __thiscall
-FUN_111fe560(undefined4 *param_1,int param_2,undefined4 param_3,undefined1 param_4,
-            undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
-            undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
-            undefined4 param_13,undefined4 param_14,undefined4 param_15,undefined4 param_16);
-undefined4 * __thiscall
-FUN_111fe860(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-undefined4 * __thiscall FUN_111fe970(undefined4 *param_1,undefined4 param_2,undefined4 param_3);
 void __fastcall FUN_111feb80(undefined4 *param_1);
 void __fastcall FUN_111fec40(undefined4 *param_1);
-undefined4 * __thiscall FUN_111feea0(undefined4 *param_1,byte param_2);
-undefined4 * __thiscall FUN_111fef80(undefined4 *param_1,byte param_2);
 void FUN_111ff170(char *param_1,int param_2,undefined4 param_3);
-void __thiscall
-FUN_111ff420(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
-void __thiscall
-FUN_111ff6c0(int param_1,undefined4 param_2,int param_3,undefined4 param_4,undefined4 param_5,
-            undefined4 param_6,uint param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10);
 undefined4 * __fastcall FUN_11200110(int param_1);
-undefined4 __thiscall
-FUN_112004a0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,uint param_6,undefined4 param_7,uint *param_8);
 void __fastcall FUN_112007d0(int param_1);
 void __fastcall FUN_112008a0(int param_1);
 undefined4 __fastcall FUN_11201610(int *param_1);
-void __thiscall
-FUN_11201d30(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
 /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void FUN_11201f60(undefined4 *param_1,int param_2,undefined4 param_3,undefined4 param_4);
 undefined4 FUN_112021b0(char *param_1);
-undefined4 * __thiscall FUN_11202490(undefined4 *param_1,undefined4 param_2,undefined4 param_3);
-undefined4 * __thiscall FUN_11203990(undefined4 *param_1,undefined4 *param_2);
-undefined4 __thiscall FUN_11204200(int param_1,int param_2);
-void __thiscall FUN_11204250(int param_1,int *param_2,uint param_3);
-void __thiscall FUN_112043d0(int param_1,int param_2);
-uint __thiscall FUN_112044e0(int param_1,undefined4 param_2);
 void __stdcall FUN_11204990(undefined4 param_1,undefined4 param_2);
-void __thiscall FUN_11204a30(int param_1,undefined4 param_2);
-void __thiscall FUN_11205100(int param_1,undefined4 param_2,undefined4 param_3,int param_4);
-void __thiscall
-FUN_112054d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11205ac0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11205d40(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11206000(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112062c0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112064f0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
 /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __fastcall FUN_11206780(int param_1);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11206980(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11206be0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
 void FUN_11206ef0(char *param_1,char *param_2,char *param_3,char *param_4,uint param_5);
-undefined4 * __thiscall FUN_112073e0(undefined4 *param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11208ed0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10,undefined4 param_11,undefined4 param_12);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112092c0(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112094e0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11209710(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11209970(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11209bd0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11209e90(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120a0c0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1120a310(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120a590(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120a7e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120aa30(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120ac50(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120aeb0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120b110(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120b330(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1120b570(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10,undefined4 param_11,undefined4 param_12);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1120bb90(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120bdf0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120c040(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120c2a0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1120c4e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120c770(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1120ccb0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13,
-            undefined4 param_14);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1120d0e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1120d430(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120d7b0(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1120d9d0(int param_1,undefined4 param_2,undefined4 param_3,int param_4,undefined4 param_5,
-            int param_6);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1120dc50(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13,
-            undefined4 param_14);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1120e0c0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13,
-            undefined4 param_14,undefined4 param_15);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1120e550(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120e850(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120ead0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1120ed20(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120f090(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120f300(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120f520(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1120f760(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1120f9b0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1120fc60(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13,
-            undefined4 param_14,undefined4 param_15,undefined4 param_16,undefined4 param_17,
-            undefined4 param_18,undefined4 param_19);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11210040(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13,
-            undefined4 param_14,undefined4 param_15);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_112103e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11210660(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11210910(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11210bc0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11210e40(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11211060(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112112b0(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112114d0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11211720(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11211940(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11211b60(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11211dd0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11212080(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11212330(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11212690(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11212a10(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11212cc0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11212f40(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112131c0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11213400(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11213680(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112138d0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11213b20(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11213e00(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11214620(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10,undefined4 param_11);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_112149e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11214ca0(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11214ed0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11215190(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_112153c0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11215680(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112158a0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11215ad0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11215d00(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11215f20(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11216150(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11216370(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112165a0(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_112167d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10,undefined4 param_11);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11216b90(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11216db0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112175c0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_112177f0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11217b60(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_112180d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10,undefined4 param_11,undefined4 param_12);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11218410(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11218630(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11218880(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11218ce0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11218f20(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11219160(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112193a0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112195e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11219850(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11219cc0(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11219ee0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121a110(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121a340(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121a560(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121a780(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121a9d0(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121abf0(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1121b060(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1121b2e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6);
 /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __fastcall FUN_1121b570(int param_1);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1121b9d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1121bdc0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10,undefined4 param_11);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1121c160(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
 /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __fastcall FUN_1121c3f0(int param_1);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1121c5f0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1121c910(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121cbd0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1121ce40(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1121d0f0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1121d3c0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10,undefined4 param_11);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1121d760(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121dd40(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121df80(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121e200(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121e440(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121e6c0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121e940(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121eb80(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121edf0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121f030(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121f270(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1121f4f0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1121f770(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1121fa20(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_1121fd40(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11220040(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11220290(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112204e0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11220720(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11220970(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11220be0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11220e50(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112210c0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11221300(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112215a0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112217e0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11221a20(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11221c90(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11222160(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11222380(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112225a0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112227f0(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11222a10(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11222c50(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11222ed0(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112230f0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11223940(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11223b60(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11223d90(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11223fb0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11224240(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11224460(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112246b0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11224910(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11224b60(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11224d90(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11224fc0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112251f0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11225420(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11225670(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11225930(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13,
-            undefined4 param_14,undefined4 param_15,undefined4 param_16,undefined4 param_17,
-            undefined4 param_18,undefined4 param_19);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11225d20(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11225f70(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11226190(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11226420(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11226640(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11226860(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11226ab0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11226d10(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11226f60(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11227180(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112273a0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_112275f0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11228030(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_112282e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13);
 /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __fastcall FUN_112286a0(int param_1);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112288a0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11228b20(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11228d90(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11228fb0(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112291d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11229430(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11229680(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11229920(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11229b40(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11229d90(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9);
 /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __fastcall FUN_1122a0d0(int param_1);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1122a2d0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1122a520(int param_1,undefined4 param_2,undefined4 param_3);
-undefined4 * __thiscall
-FUN_1122b300(undefined4 *param_1,undefined2 param_2,undefined2 param_3,undefined2 param_4);
 undefined4 * __fastcall FUN_1122b460(undefined4 *param_1);
 undefined4 * __fastcall FUN_1122b5e0(undefined4 *param_1);
-undefined4 * __thiscall FUN_1122b6d0(undefined4 *param_1,undefined4 param_2);
 void __fastcall FUN_1122b730(int param_1);
 void __fastcall FUN_1122b800(undefined4 *param_1);
-undefined4 * __thiscall FUN_1122b970(undefined4 *param_1,undefined4 *param_2);
-undefined4 * __thiscall FUN_1122ba00(undefined4 *param_1,undefined4 *param_2);
-undefined4 * __thiscall FUN_1122baa0(undefined4 *param_1,byte param_2);
-void __thiscall FUN_1122bc70(undefined4 *param_1,undefined4 *param_2);
 /* WARNING: Removing unreachable block (ram,0x1122c247) */ void FUN_1122c1f0(undefined1 *param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1122c300(int *param_1,char *param_2,int param_3,int param_4);
-void __thiscall
-FUN_1122c570(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 *param_9,
-            undefined2 param_10,undefined2 param_11,undefined2 param_12);
 void __stdcall FUN_1122c7d0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  int param_5,int param_6);
 undefined4
@@ -2727,145 +2423,56 @@ FUN_1122ca20(int param_1,int param_2,undefined4 param_3,int param_4,undefined4 p
             undefined4 param_7,int param_8,undefined4 param_9,int param_10,char *param_11,
             undefined2 param_12);
 /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void FUN_1122cde0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-void __thiscall FUN_1122cf10(int param_1,undefined4 param_2);
-void __thiscall FUN_1122de60(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-int __thiscall FUN_1122e150(int param_1,int param_2);
 /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void FUN_1122e2b0(undefined4 param_1,undefined4 param_2,undefined4 param_3,int *param_4);
 void FUN_1122ed30(int *param_1,undefined4 param_2,undefined4 param_3,char param_4,int *param_5,
                  undefined4 param_6,int *param_7);
 undefined1 __fastcall FUN_1122ee70(char *param_1);
-void __thiscall FUN_1122fd00(int param_1,int *param_2);
-void __thiscall FUN_1122fdc0(int *param_1,undefined4 param_2,int param_3);
 /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __stdcall FUN_11230000(undefined4 param_1,undefined4 param_2);
-void __thiscall FUN_112300d0(int *param_1,short *param_2);
 void __fastcall FUN_11230290(undefined4 *param_1);
-undefined4 * __thiscall FUN_112302f0(undefined4 *param_1,undefined4 param_2,undefined4 param_3);
-undefined4 * __thiscall
-FUN_11230c90(undefined4 *param_1,undefined4 param_2,undefined1 param_3,undefined4 param_4,
-            int param_5);
 void __stdcall FUN_11230d40(char *param_1);
-undefined4 * __thiscall
-FUN_11230dd0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
-            undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
-            undefined4 param_9);
-undefined4 * __thiscall
-FUN_11230ea0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
-            undefined4 param_5,undefined4 param_6,undefined1 param_7);
-undefined4 * __thiscall FUN_11231030(undefined4 *param_1,undefined4 param_2);
 void __fastcall FUN_11231460(undefined4 *param_1);
 void __fastcall FUN_11231570(undefined4 *param_1);
-undefined4 * __thiscall FUN_11231690(undefined4 *param_1,byte param_2);
-undefined4 * __thiscall FUN_11231740(undefined4 *param_1,byte param_2);
-undefined4 * __thiscall FUN_112317f0(undefined4 *param_1,byte param_2);
-undefined4 * __thiscall FUN_112318d0(undefined4 *param_1,byte param_2);
 void __fastcall FUN_112323e0(int param_1);
 undefined4 * __fastcall FUN_11232440(int param_1);
-undefined4 __thiscall FUN_11232570(int param_1,int param_2);
 undefined4 FUN_112328d0(undefined4 param_1,undefined4 param_2,undefined4 *param_3);
 uint __fastcall FUN_11232d30(int param_1);
-int __thiscall FUN_11232da0(int param_1,int param_2);
-void __thiscall FUN_112332a0(char *param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_112334a0(int param_1,char param_2);
 /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __fastcall FUN_11233690(int param_1);
-undefined4 __thiscall FUN_11233e30(int param_1,undefined4 param_2,int param_3);
 void FUN_11234040(undefined4 param_1,undefined4 param_2);
-uint * __thiscall FUN_11234290(uint *param_1,void *param_2,size_t param_3);
 undefined4 * __fastcall FUN_11234450(undefined4 *param_1);
 void __fastcall FUN_11234530(undefined4 *param_1);
-undefined4 * __thiscall FUN_11234640(undefined4 *param_1,byte param_2);
-size_t __thiscall FUN_11234c00(int param_1,char *param_2,uint param_3);
 void __fastcall FUN_11235190(int param_1);
-void __thiscall FUN_112352d0(int param_1,undefined4 param_2);
 void __fastcall FUN_11235de0(void *param_1);
-bool __thiscall FUN_112368f0(undefined4 *param_1,int param_2,int param_3,int *param_4);
-void __thiscall FUN_11237780(int param_1,undefined4 param_2,undefined4 param_3);
 int __fastcall FUN_11237c40(undefined4 *param_1);
 char * __fastcall FUN_11237dd0(int *param_1);
 int __fastcall FUN_11237e23(int param_1);
 void __fastcall FUN_11237f50(int param_1);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11238320(int param_1,char param_2);
-undefined4 * __thiscall
-FUN_11238ba0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
-            undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
-            undefined4 param_9);
 void __fastcall FUN_112393a0(undefined4 *param_1);
-undefined4 * __thiscall FUN_11239470(undefined4 *param_1,byte param_2);
-int * __thiscall FUN_112395d0(int *param_1,int param_2);
-undefined4 * __thiscall
-FUN_11239640(undefined4 *param_1,int param_2,undefined4 param_3,int param_4,undefined4 param_5,
-            undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9);
 void __fastcall FUN_11239a20(int *param_1);
 void __fastcall FUN_11239aa0(undefined4 *param_1);
-undefined4 * __thiscall FUN_11239bf0(undefined4 *param_1,byte param_2);
-undefined4 * __thiscall
-FUN_11239f30(undefined4 *param_1,undefined4 *param_2,undefined4 param_3,undefined4 param_4);
 undefined4 * __fastcall FUN_1123a040(undefined4 *param_1);
 void __fastcall FUN_1123a1b0(int param_1);
 void __fastcall FUN_1123a320(undefined4 *param_1);
 void __fastcall FUN_1123a680(int param_1);
-int __thiscall FUN_1123a780(int param_1,byte param_2);
-void __thiscall
-FUN_1123a890(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined1 param_5);
-void __thiscall
-FUN_1123aa70(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined1 param_5);
-void __thiscall FUN_1123ac50(int param_1,int *param_2,undefined1 param_3,char param_4);
 void __fastcall FUN_1123bf20(int param_1);
-void __thiscall FUN_1123c280(int param_1,undefined4 param_2,uint param_3,uint param_4,uint *param_5);
 /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void FUN_1123cf30(undefined4 param_1,char *param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,int param_6);
 void FUN_1123d1a0(int *param_1);
 /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __stdcall FUN_1123d2c0(int param_1,undefined4 *param_2,undefined4 *param_3,undefined4 param_4);
 void __fastcall FUN_1123d6d0(int param_1);
 void __fastcall FUN_1123ef30(int param_1);
-bool __thiscall FUN_1123efc0(int *param_1,uint param_2);
 bool __fastcall FUN_1123f090(int *param_1);
-uint __thiscall FUN_1123f160(int param_1,undefined4 param_2);
-void __thiscall FUN_1123f230(int param_1,char *param_2);
-void __thiscall FUN_1123f290(int param_1,char *param_2,char *param_3);
-void __thiscall FUN_1123f320(int param_1,char *param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1123f5c0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1123f810(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1123fa60(int param_1,undefined4 param_2,undefined4 param_3);
-undefined4 * __thiscall FUN_11240560(undefined4 *param_1,undefined4 param_2,undefined4 param_3);
 void __fastcall FUN_112406d0(int param_1);
 void __fastcall FUN_112407b0(undefined4 *param_1);
 void __fastcall FUN_11240870(int param_1);
-undefined4 * __thiscall FUN_112409e0(undefined4 *param_1,byte param_2);
 undefined4 * FUN_11240ae0(undefined4 *param_1);
-undefined4 __thiscall FUN_11240be0(int param_1,char *param_2);
-undefined1 __thiscall FUN_11240e60(int *param_1,int param_2);
 void FUN_11241080(int param_1);
 undefined4 __fastcall FUN_11241470(int *param_1);
 bool __fastcall FUN_11241a30(int param_1);
-int __thiscall FUN_11241bd0(int param_1,uint param_2);
-int __thiscall FUN_11241d50(int param_1,int param_2);
-undefined4 __thiscall FUN_11241e00(int param_1,undefined4 param_2);
-int __thiscall FUN_11241ee0(int param_1,int param_2);
-void __thiscall FUN_11242940(int param_1,int param_2);
-undefined4 * __thiscall
-FUN_112429a0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-undefined4 __thiscall FUN_11242b50(int param_1,uint param_2);
 undefined1 __fastcall FUN_11242c00(int param_1);
-undefined4 __thiscall FUN_11242dd0(int param_1,uint param_2);
 undefined1 __fastcall FUN_11242e90(int param_1);
-undefined4 * __thiscall FUN_11243180(undefined4 *param_1,int param_2);
-undefined4 * __thiscall FUN_11243220(undefined4 *param_1,int param_2);
 void __fastcall FUN_11243400(undefined4 *param_1);
-undefined4 * __thiscall FUN_11243560(undefined4 *param_1,byte param_2);
 void __fastcall FUN_112438b0(int *param_1);
-void __thiscall FUN_11243950(int *param_1,undefined4 param_2);
 void __fastcall FUN_112439e0(int *param_1);
-void __thiscall FUN_11243a80(int *param_1,undefined4 param_2);
-void __thiscall FUN_11243b10(int *param_1,void *param_2,size_t param_3);
-void __thiscall FUN_11243c80(int *param_1,undefined4 param_2);
-void __thiscall FUN_11243d20(int *param_1,undefined8 param_2);
-void __thiscall FUN_11243e50(int *param_1,undefined4 param_2);
-void __thiscall FUN_11243f30(int *param_1,undefined4 param_2,undefined4 *param_3);
-void __thiscall FUN_11244310(int *param_1,undefined4 param_2,int *param_3);
-void __thiscall FUN_112447a0(int *param_1,char param_2);
-void __thiscall FUN_11244840(int *param_1,byte *param_2,int param_3,char param_4,char param_5);
-void __thiscall FUN_11244ac0(int *param_1,undefined4 param_2);
-void __thiscall FUN_11244b20(int *param_1,undefined4 param_2);
 undefined4 FUN_11245540(char *param_1,char *param_2,char *param_3);
 uint FUN_11245770(uint param_1);
 uint FUN_11245d70(char *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
@@ -2873,73 +2480,28 @@ uint FUN_11245d70(char *param_1,undefined4 param_2,undefined4 param_3,undefined4
 void FUN_11245fa0(uint param_1,uint param_2,undefined4 param_3,undefined4 param_4);
 void FUN_112470f0(int param_1);
 /* WARNING: Type propagation algorithm not settling */ void FUN_112479e0(undefined4 param_1);
-void __thiscall FUN_11247c50(int param_1,char *param_2,undefined4 param_3,char *param_4);
 void FUN_11247d40(char *param_1,int param_2,void *param_3,uint param_4);
 void FUN_11247da0(char *param_1,char param_2);
 int FUN_11247fa0(char *param_1,undefined1 *param_2,uint param_3);
 void * __fastcall FUN_11248130(void *param_1);
 void __fastcall FUN_11248380(void *param_1);
 void __fastcall FUN_11248460(void *param_1);
-bool __thiscall FUN_11248b40(int param_1,undefined4 param_2);
 undefined1 __fastcall FUN_11248bd0(void *param_1);
-uint __thiscall FUN_11249230(int param_1,char *param_2,char *param_3);
-void __thiscall FUN_112492e0(int param_1,char *param_2,undefined4 *param_3);
-void __thiscall FUN_11249420(int param_1,char *param_2,undefined4 param_3);
-void __thiscall FUN_11249560(int param_1,char *param_2,undefined4 param_3);
-void __thiscall FUN_112496a0(int param_1,char *param_2,float param_3);
-void __thiscall FUN_112497f0(int param_1,char *param_2,undefined4 param_3,undefined4 param_4);
-void __thiscall FUN_11249930(int param_1,char *param_2,undefined4 param_3,undefined4 param_4);
 char * FUN_11249aa0(int param_1,undefined4 param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11249c80(int param_1,undefined *param_2,undefined4 param_3);
-undefined4 __thiscall FUN_11249d90(int param_1,undefined4 param_2,undefined4 param_3);
-void __thiscall FUN_11249e60(int param_1,undefined4 param_2,char *param_3);
-undefined4 * __thiscall FUN_11249fe0(undefined4 *param_1,undefined4 param_2);
-undefined4 * __thiscall FUN_1124a090(undefined4 *param_1,undefined4 param_2);
-undefined4 * __thiscall FUN_1124a160(undefined4 *param_1,char *param_2);
-undefined4 * __thiscall FUN_1124a490(undefined4 *param_1,byte param_2);
-undefined4 __thiscall FUN_1124a930(int *param_1,undefined4 param_2,undefined4 param_3,int param_4);
-undefined4 __thiscall FUN_1124aa10(int *param_1,undefined4 param_2,undefined4 param_3,int param_4);
 void __fastcall FUN_1124ab00(int param_1);
 void __fastcall FUN_1124abb0(int param_1);
-undefined4 __thiscall FUN_1124afd0(int *param_1,char *param_2);
-void __thiscall FUN_1124b120(int param_1,uint param_2);
-int __thiscall
-FUN_1124b490(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6);
-int __thiscall
-FUN_1124b4f0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6);
-undefined4 __thiscall
-FUN_1124b550(int param_1,undefined4 param_2,char *param_3,char *param_4,void *param_5,char *param_6);
 void __fastcall FUN_1124bce0(int param_1);
 void __fastcall FUN_1124bde0(int param_1);
 /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __fastcall FUN_1124c080(int param_1);
-uint __thiscall FUN_1124c460(int param_1,undefined4 param_2,uint param_3);
-uint __thiscall FUN_1124c4c0(int param_1,undefined4 param_2,uint param_3);
 void __fastcall FUN_1124c7a0(int param_1);
-void __thiscall FUN_1124c8a0(int param_1,int param_2,uint param_3);
-int __thiscall FUN_1124cf40(int param_1,void *param_2,uint param_3);
 void __fastcall FUN_1124d050(int param_1);
 void __fastcall FUN_1124d110(int param_1);
 void __fastcall FUN_1124d430(int param_1);
 undefined1 __fastcall FUN_1124d550(int param_1);
 undefined1 __fastcall FUN_1124d5d0(int param_1);
-undefined1 __thiscall FUN_1124d810(undefined4 param_1,undefined4 param_2,undefined4 param_3);
-undefined1 __thiscall FUN_1124d880(int param_1,undefined4 param_2,undefined4 param_3);
 int FUN_1124d980(int param_1,undefined4 param_2);
-void __thiscall FUN_1124da30(int param_1,undefined4 param_2,uint param_3);
-void __thiscall FUN_1124db80(undefined4 param_1,undefined4 param_2,uint param_3);
-undefined4 * __thiscall
-FUN_1124df10(undefined4 *param_1,undefined4 param_2,undefined1 param_3,undefined1 param_4,
-            undefined4 param_5);
 undefined4 * __fastcall FUN_1124e050(undefined4 *param_1);
 undefined4 * __fastcall FUN_1124e150(undefined4 *param_1);
-undefined4 * __thiscall
-FUN_1124e4f0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
-            undefined4 param_5,undefined4 param_6);
-undefined4 * __thiscall
-FUN_1124e590(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined1 param_4);
-undefined4 * __thiscall FUN_1124e830(undefined4 *param_1,undefined2 param_2);
 undefined4 * __fastcall FUN_1124eaa0(undefined4 *param_1);
 void __fastcall FUN_1124ebd0(undefined4 *param_1);
 void __fastcall FUN_1124ee40(undefined4 *param_1);
@@ -2947,63 +2509,22 @@ void __fastcall FUN_1124eec0(undefined4 *param_1);
 void __fastcall FUN_1124ef40(undefined4 *param_1);
 void __fastcall FUN_1124efc0(undefined4 *param_1);
 void __fastcall FUN_1124f230(undefined4 *param_1);
-void __thiscall FUN_1124f400(int param_1,char *param_2);
-undefined4 * __thiscall FUN_1124f580(undefined4 *param_1,byte param_2);
-undefined4 * __thiscall FUN_1124f6b0(undefined4 *param_1,byte param_2);
-undefined4 * __thiscall FUN_1124f720(undefined4 *param_1,byte param_2);
-undefined4 * __thiscall FUN_1124f900(undefined4 *param_1,byte param_2);
-undefined4 * __thiscall FUN_1124f9a0(undefined4 *param_1,byte param_2);
-undefined4 * __thiscall FUN_1124fd20(undefined4 *param_1,byte param_2);
-void __thiscall FUN_1124fdc0(int param_1,undefined1 *param_2,int param_3);
-int __thiscall FUN_1124ffa0(int param_1,undefined4 param_2);
-int __thiscall FUN_11250000(int param_1,undefined4 param_2);
-int __thiscall FUN_11250160(int param_1,undefined4 param_2);
-int __thiscall FUN_112501c0(int param_1,undefined4 param_2);
-int __thiscall FUN_11250230(int param_1,undefined4 param_2);
-bool __thiscall FUN_11250a70(int param_1,int param_2,int param_3,int *param_4);
-bool __thiscall FUN_11250dc0(int param_1,int param_2,int param_3,int *param_4);
 void __fastcall FUN_11252310(int param_1);
 uint __fastcall FUN_11252970(int *param_1);
 uint __fastcall FUN_11252ac0(int *param_1);
 char * __fastcall FUN_11252ba0(int *param_1);
 char * __fastcall FUN_11252c80(int param_1);
 char * FUN_11252dfd(void);
-void __thiscall FUN_11252e80(int *param_1,undefined4 param_2);
-void __thiscall FUN_11252fa0(int *param_1,undefined4 param_2);
-void __thiscall FUN_11253040(int *param_1,undefined4 param_2);
 int __fastcall FUN_11253130(int *param_1);
-undefined4 __thiscall FUN_112532e0(int param_1,undefined4 param_2,int param_3);
-undefined4 * __thiscall FUN_11254cb0(undefined4 *param_1,undefined4 param_2,int param_3);
-int __thiscall FUN_112555b0(int param_1,int param_2);
-undefined4 __thiscall FUN_11255c30(int *param_1,int *param_2);
 undefined1 FUN_11255e90(char *param_1,ulong *param_2);
-undefined4 __thiscall
-FUN_11255fd0(uint *param_1,int param_2,uint param_3,undefined4 param_4,undefined4 param_5,
-            undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10,undefined4 param_11,undefined4 param_12,uint param_13,
-            undefined4 param_14,undefined4 param_15,undefined4 param_16);
 void __fastcall FUN_11256260(undefined1 *param_1);
 char * FUN_112575f0(int param_1,char param_2);
 char * FUN_11257820(char *param_1);
 undefined4 __fastcall FUN_11257a80(int param_1);
-void __thiscall
-FUN_11257c40(int param_1,int param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5,
-            undefined4 param_6);
-void __thiscall FUN_11257d80(int param_1,char *param_2,char *param_3);
-void __thiscall FUN_11257f10(int param_1,char *param_2,char *param_3);
-undefined4 __thiscall FUN_112580d0(int param_1,char *param_2);
-void __thiscall FUN_11258490(int param_1,undefined4 param_2,undefined4 param_3);
-undefined4 __thiscall
-FUN_112588d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,char *param_7,char *param_8,undefined4 param_9,undefined4 param_10,
-            char param_11);
 undefined4 FUN_11258ae0(char *param_1,int param_2,undefined4 param_3);
-void __thiscall FUN_11258b70(int param_1,int param_2);
 void __fastcall FUN_11259410(int param_1);
 undefined4 * FUN_11259910(undefined4 param_1,undefined4 param_2,int param_3);
 /* WARNING: Removing unreachable block (ram,0x1125a11c) */ void __fastcall FUN_1125a0e0(undefined4 *param_1);
-void __thiscall FUN_1125a1b0(int param_1,char param_2);
-void __thiscall FUN_1125a250(int param_1,int param_2,undefined4 param_3);
 void __fastcall FUN_1125a2c0(int param_1);
 void FUN_1125a5d0(int param_1,char *param_2,int param_3);
 void FUN_1125a690(int param_1,undefined4 param_2,undefined4 param_3);
@@ -3012,40 +2533,11 @@ void FUN_1125ace0(undefined4 param_1,undefined8 *param_2);
 int FUN_1125aed0(char *param_1,undefined4 *param_2);
 undefined4 FUN_1125af80(char *param_1,char *param_2,int *param_3);
 undefined4 FUN_1125b030(char *param_1,int *param_2);
-uint __thiscall FUN_1125b1d0(int *param_1,void *param_2,size_t param_3,void *param_4,size_t param_5);
-char * __thiscall FUN_1125b370(undefined4 *param_1,int param_2);
 void FUN_1125b4a0(void);
 void FUN_1125b520(void);
 uint FUN_1125b590(int param_1,undefined4 param_2,int *param_3);
-undefined4 * __thiscall
-FUN_1125b6a0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
-            undefined4 param_5,undefined4 param_6);
-undefined4 * __thiscall
-FUN_1125b720(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
-            undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
-            undefined4 param_9);
-undefined4 * __thiscall
-FUN_1125b7a0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
-            undefined4 param_5);
-undefined4 * __thiscall
-FUN_1125b810(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
-            undefined4 param_5);
-undefined4 * __thiscall
-FUN_1125b880(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1125ba20(int *param_1,int param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1125bae0(int *param_1,char *param_2);
-void __thiscall FUN_1125bbd0(undefined4 param_1,char param_2);
 void __fastcall FUN_1125bf90(int *param_1);
-void __thiscall FUN_1125c860(int param_1,undefined4 param_2,undefined4 param_3);
 void FUN_1125c920(undefined4 param_1);
-undefined4 __thiscall FUN_1125cda0(undefined1 *param_1,undefined4 param_2,uint param_3);
-undefined4 __thiscall FUN_1125ce00(undefined1 *param_1,undefined4 param_2,uint param_3);
-undefined4 __thiscall FUN_1125ce60(undefined1 *param_1,undefined4 param_2,uint param_3);
-void __thiscall
-FUN_1125d360(undefined4 *param_1,undefined4 param_2,int param_3,undefined4 param_4,
-            undefined4 *param_5,int param_6);
-void __thiscall
-FUN_1125d400(int param_1,undefined4 *param_2,undefined4 *param_3,int param_4,int param_5,int param_6);
 void FUN_1125ed60(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
@@ -3061,23 +2553,8 @@ undefined4
 FUN_11261ab0(undefined4 param_1,uint param_2,int param_3,undefined4 param_4,undefined4 param_5);
 undefined4 FUN_11261c70(undefined4 param_1,uint param_2,int param_3);
 undefined4 * __fastcall FUN_11261e50(undefined4 *param_1);
-undefined4 * __thiscall
-FUN_112620c0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined1 param_4,
-            undefined4 param_5,undefined4 param_6,undefined4 param_7,int param_8,undefined4 param_9,
-            undefined2 param_10,undefined1 param_11,undefined1 *param_12,undefined1 *param_13);
-undefined4 __thiscall FUN_11262260(undefined4 param_1,int param_2);
-undefined4 * __thiscall FUN_11262400(undefined4 *param_1,int *param_2);
 undefined1 FUN_11262cf0(ushort param_1,ushort param_2);
-uint __thiscall FUN_11262f40(undefined1 *param_1,undefined4 param_2);
-uint __thiscall FUN_11262fc0(int param_1,char *param_2);
-uint __thiscall FUN_11263050(int param_1,char *param_2);
-uint __thiscall FUN_112630e0(undefined8 *param_1,undefined4 param_2);
-void __thiscall FUN_112631c0(int param_1,int param_2,undefined4 param_3,char param_4);
-void __thiscall FUN_112634e0(int param_1,undefined4 param_2);
 uint __fastcall FUN_11263620(int param_1);
-void __thiscall FUN_112641a0(undefined2 *param_1,undefined4 param_2,undefined4 param_3);
-void __thiscall FUN_11264480(short *param_1,undefined4 param_2,undefined4 param_3);
-void __thiscall FUN_112644e0(short *param_1,undefined4 param_2,undefined4 param_3);
 undefined1 FUN_112647f0(char *param_1);
 void FUN_11264d00(byte *param_1);
 void FUN_11264fd0(void);
@@ -3085,200 +2562,69 @@ undefined4 FUN_11265090(int param_1,undefined4 param_2);
 bool FUN_112652c0(void);
 bool FUN_11265410(int param_1);
 uint FUN_11265c00(uint param_1,uint param_2);
-int __thiscall FUN_11265db0(int param_1,int param_2);
 undefined4 * __fastcall FUN_11265ef0(undefined4 *param_1);
 void __fastcall FUN_11266500(undefined4 *param_1);
 void __fastcall FUN_112665b0(undefined4 *param_1);
 void __fastcall FUN_11266650(undefined4 *param_1);
 void __fastcall FUN_11266700(undefined4 *param_1);
 void __fastcall FUN_112667c0(undefined4 *param_1);
-undefined4 * __thiscall FUN_11266960(undefined4 *param_1,byte param_2);
-undefined4 * __thiscall FUN_11266a30(undefined4 *param_1,byte param_2);
-undefined4 * __thiscall FUN_11266b00(undefined4 *param_1,byte param_2);
-undefined4 * __thiscall FUN_11266c00(undefined4 *param_1,byte param_2);
 void FUN_11266df0(int param_1,int param_2,undefined4 *param_3,int param_4,size_t *param_5);
 void FUN_11267380(undefined4 param_1,undefined1 *param_2,undefined4 param_3,undefined2 param_4,
                  int param_5,undefined4 param_6);
-int __thiscall FUN_11267410(int param_1,int param_2,int param_3);
-void __thiscall FUN_11267640(int param_1,int param_2);
-void __thiscall FUN_112676b0(int param_1,int param_2);
-void __thiscall FUN_11267910(int param_1,int param_2);
-void __thiscall FUN_112679f0(int param_1,char *param_2);
-undefined4 __thiscall FUN_11267a70(int param_1,char *param_2);
-undefined4 __thiscall FUN_11267b10(int param_1,char *param_2);
-void __thiscall FUN_11267c20(int param_1,char *param_2);
 undefined4 __fastcall FUN_112681f0(int param_1);
 void __fastcall FUN_112682c0(int param_1);
 void FUN_11268c40(undefined4 param_1,undefined4 param_2);
-int __thiscall FUN_11268fd0(int param_1,undefined4 param_2);
 void FUN_11269310(undefined4 param_1,undefined4 param_2);
 undefined4 FUN_11269440(int param_1);
-int __thiscall
-FUN_112695a0(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
-            undefined4 param_5,int param_6,int *param_7,int *param_8,undefined4 param_9,int param_10
-            ,int param_11,char param_12);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall
-FUN_11269910(int *param_1,undefined1 *param_2,undefined4 param_3,undefined4 param_4,
-            undefined4 param_5,int param_6);
-void __thiscall FUN_1126a4b0(int param_1,void *param_2,uint *param_3,undefined4 param_4);
-void __thiscall FUN_1126a7c0(int param_1,void *param_2,uint *param_3);
-int __thiscall
-FUN_1126b0a0(int param_1,uint param_2,uint param_3,undefined4 param_4,undefined4 param_5);
 void __fastcall FUN_1126b1d0(int param_1);
 void __fastcall FUN_1126b2a0(int param_1);
 void __fastcall FUN_1126b370(int *param_1);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1126b3e0(int param_1,undefined4 param_2);
-bool __thiscall FUN_1126b680(int param_1,uint param_2,int param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1126b960(int *param_1,int param_2,undefined4 param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1126c2e0(int *param_1,int *param_2);
-undefined1 __thiscall FUN_1126c9a0(int *param_1,void *param_2,uint param_3);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1126ca70(int param_1,int param_2,uint param_3);
 undefined4 __fastcall FUN_1126cb90(int param_1);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1126cc10(int *param_1,int param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1126cce0(int *param_1,int *param_2,undefined4 param_3);
-undefined4 __thiscall FUN_1126d1e0(undefined4 *param_1,undefined4 param_2,undefined4 *param_3);
-void __thiscall FUN_1126d2f0(int *param_1,undefined4 param_2);
-int * __thiscall FUN_1126d6d0(int *param_1,int *param_2,uint *param_3);
 int * __fastcall FUN_1126e690(int *param_1);
-void __thiscall FUN_1126ef30(int *param_1,int param_2);
-void __thiscall FUN_1126f020(int *param_1,int *param_2);
 void __fastcall FUN_1126f610(int *param_1);
-undefined1 __thiscall FUN_1126f750(int param_1,undefined4 param_2,undefined4 param_3);
-undefined1 __thiscall FUN_1126f940(int param_1,uint param_2,uint param_3);
-void __thiscall FUN_1126fb00(int *param_1,int *param_2,uint *param_3);
-undefined1 __thiscall FUN_1126fb80(int param_1,uint param_2,uint param_3);
-undefined1 __thiscall FUN_1126fe40(int param_1,uint param_2,uint param_3);
-undefined1 __thiscall
-FUN_11270050(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6);
-undefined4 __thiscall
-FUN_112700f0(int param_1,uint param_2,uint param_3,undefined4 param_4,undefined4 param_5,
-            undefined4 param_6);
 undefined4 * __fastcall FUN_11270990(undefined4 *param_1);
 undefined4 * __fastcall FUN_11270a60(undefined4 *param_1);
 char * FUN_11270c60(int param_1,int param_2);
 /* WARNING: Removing unreachable block (ram,0x11270e06) */ void __fastcall FUN_11270dc0(int *param_1);
-void __thiscall FUN_11270e80(int param_1,undefined4 *param_2);
-void __thiscall FUN_112718f0(int param_1,undefined4 *param_2);
-void __thiscall FUN_11271990(int param_1,undefined4 *param_2);
 /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void FUN_11271a00(undefined4 param_1,int param_2);
 undefined1 FUN_112727c0(int *param_1,int *param_2,int param_3,int *param_4);
 /* WARNING: Restarted to delay deadcode elimination for space: ram */ void FUN_11273680(undefined4 param_1,undefined4 param_2);
 void __fastcall FUN_11273b70(int param_1);
-int * __thiscall FUN_11273c60(int *param_1,uint param_2,char param_3);
-void __thiscall FUN_11273fc0(int param_1,int *param_2);
-void __thiscall FUN_112744d0(int *param_1,undefined4 param_2);
 void __fastcall FUN_11274690(int *param_1);
 void __fastcall FUN_11274880(int *param_1);
-void __thiscall FUN_112748e0(int param_1,void *param_2,size_t param_3);
-void __thiscall FUN_11274990(int param_1,void *param_2,size_t param_3);
-void __thiscall FUN_11274a10(int param_1,void *param_2,size_t param_3);
-void __thiscall FUN_11274ac0(int *param_1,undefined4 param_2);
-void __thiscall FUN_11274b50(int *param_1,char *param_2,undefined4 param_3);
-undefined4 __thiscall FUN_11274e50(undefined4 param_1,int param_2);
 void __fastcall FUN_11274ef0(undefined4 *param_1);
-undefined4 * __thiscall FUN_11274f50(undefined4 *param_1,byte param_2);
-undefined1 __thiscall FUN_11274fe0(int param_1,char *param_2,undefined4 *param_3,uint param_4);
 /* WARNING: Removing unreachable block (ram,0x112753a1) */ void FUN_11275370(char *param_1,undefined4 param_2);
-undefined4 __thiscall FUN_11275460(int param_1,undefined4 param_2);
-undefined4 __thiscall FUN_11275500(int param_1,undefined4 param_2);
-char __thiscall FUN_112755e0(int param_1,longlong *param_2);
-void __thiscall FUN_11275880(int *param_1,undefined4 param_2);
 void __fastcall FUN_11275e20(int param_1);
-void __thiscall FUN_11275f40(int param_1,char *param_2);
-void __thiscall FUN_11276000(int param_1,char *param_2);
-void __thiscall FUN_112760d0(int param_1,int param_2);
-void __thiscall FUN_11276140(int param_1,uint param_2,uint param_3);
-void __thiscall FUN_112761c0(int param_1,int param_2,undefined4 param_3);
-void __thiscall FUN_11276280(int param_1,int param_2);
-int __thiscall FUN_11276320(int param_1,undefined4 param_2);
-undefined4 * __thiscall FUN_11276650(undefined4 *param_1,byte param_2);
-void __thiscall FUN_11278010(int param_1,int param_2);
-bool __thiscall
-FUN_112780a0(int param_1,undefined4 param_2,uint param_3,undefined4 param_4,undefined1 param_5,
-            int param_6,int param_7);
-void __thiscall FUN_112781b0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
 void __stdcall FUN_11278490(int param_1,int param_2,int param_3);
-void __thiscall
-FUN_11278660(int *param_1,undefined4 param_2,int param_3,int param_4,int param_5,undefined4 param_6,
-            undefined4 param_7,undefined4 param_8);
-void __thiscall
-FUN_11278730(int *param_1,undefined4 param_2,int param_3,int param_4,undefined4 param_5,
-            undefined4 param_6,undefined4 param_7);
-void __thiscall FUN_112789e0(int param_1,int param_2,undefined1 param_3,undefined4 param_4);
-void __thiscall FUN_11278bc0(int param_1,char *param_2);
 void __fastcall FUN_11279420(int *param_1);
-void __thiscall FUN_112796c0(int *param_1,int param_2,int param_3,int param_4);
 void __fastcall FUN_11279810(int *param_1);
 void __fastcall FUN_11279e90(int param_1);
-bool __thiscall FUN_1127a120(int param_1,undefined4 *param_2);
 void FUN_1127a470(void);
-bool __thiscall FUN_1127a540(int param_1,undefined4 *param_2,uint param_3);
 undefined4 FUN_1127a750(int param_1,int param_2);
-void __thiscall FUN_1127af20(int param_1,uint param_2);
-void __thiscall FUN_1127b0e0(undefined1 *param_1,undefined4 *param_2,int param_3);
-bool __thiscall FUN_1127b8d0(int param_1,undefined4 param_2,uint param_3);
 undefined1 FUN_1127ba10(undefined4 param_1,uint param_2);
-bool __thiscall FUN_1127bac0(int param_1,int *param_2);
-bool __thiscall FUN_1127bd40(char *param_1,undefined1 *param_2,uint param_3);
 undefined1 * __fastcall FUN_1127c100(int param_1);
 undefined4 __fastcall FUN_1127c160(char *param_1);
-uint __thiscall FUN_1127c4e0(int param_1,undefined4 param_2,int param_3);
 undefined1 * __fastcall FUN_1127c5f0(int param_1);
 undefined1 * __fastcall FUN_1127c650(int param_1);
 uint __fastcall FUN_1127c7c0(int param_1);
 undefined1 __fastcall FUN_1127ca70(int param_1);
-char __thiscall FUN_1127cc80(char *param_1,undefined4 param_2,int param_3,undefined4 *param_4);
 bool FUN_1127ce10(int param_1,short param_2,char *param_3,uint param_4);
 void FUN_1127cea0(char *param_1,int param_2,undefined4 param_3,int *param_4,undefined2 *param_5);
 undefined4 * __fastcall FUN_1127d140(undefined4 *param_1);
-undefined4 * __thiscall FUN_1127d260(undefined4 *param_1,undefined4 *param_2);
 void __fastcall FUN_1127d7e0(int *param_1);
-void __thiscall
-FUN_1127dfe0(int param_1,undefined4 param_2,char *param_3,char *param_4,int param_5,char *param_6,
-            undefined2 param_7,undefined2 param_8,char *param_9);
-void __thiscall
-FUN_1127e160(int param_1,undefined4 param_2,char *param_3,char *param_4,uint param_5,char *param_6,
-            undefined2 param_7,undefined2 param_8,char *param_9);
-undefined4 * __thiscall FUN_1127e450(undefined4 *param_1,undefined4 param_2);
 void __fastcall FUN_1127e5b0(int param_1);
-void __thiscall FUN_1127e820(undefined1 *param_1,uint param_2);
 uint __fastcall FUN_1127f190(int param_1);
-uint __thiscall FUN_1127f210(int param_1,char param_2);
-undefined4 __thiscall FUN_1127fa00(int param_1,undefined4 param_2,undefined4 param_3);
-void __thiscall
-FUN_1127fa70(undefined1 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-void __thiscall FUN_1127fcb0(int param_1,undefined4 param_2,undefined4 param_3);
 void __fastcall FUN_1127fd60(int param_1);
 void __fastcall FUN_11280140(undefined4 *param_1);
-undefined4 __thiscall FUN_112810c0(int param_1,undefined4 param_2,undefined4 param_3,ushort param_4);
 int __fastcall FUN_112816c0(int param_1);
-undefined4 * __thiscall FUN_11281780(undefined4 *param_1,undefined4 param_2);
 void __fastcall FUN_112818e0(int param_1);
-uint * __thiscall FUN_11281ad0(uint *param_1,uint *param_2);
-undefined1 __thiscall FUN_11281d60(uint *param_1,int param_2);
-uint __thiscall
-FUN_11281eb0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7);
 void __fastcall FUN_11282620(undefined4 *param_1);
 void __fastcall FUN_11282810(int param_1);
-int __thiscall FUN_11283220(int param_1,ushort param_2);
 bool FUN_112833b0(undefined4 param_1);
-void __thiscall FUN_11283ff0(int param_1,undefined4 param_2);
-undefined4 __thiscall FUN_11284370(undefined1 *param_1,char *param_2);
-void __thiscall FUN_11285770(int param_1,int param_2);
-int __thiscall
-FUN_112858c0(undefined4 param_1,undefined4 param_2,undefined4 param_3,int param_4,int param_5);
 undefined4 FUN_11285940(char *param_1);
-undefined4 __thiscall FUN_11285e60(int param_1,int param_2,int param_3);
 undefined1 * __fastcall FUN_11286490(undefined1 *param_1);
-char * __thiscall
-FUN_11286c20(char *param_1,int param_2,undefined4 param_3,int param_4,int param_5,int param_6);
-char * __thiscall FUN_11286da0(char *param_1,int param_2);
 void __fastcall FUN_11286ff0(int param_1);
 /* WARNING: Removing unreachable block (ram,0x112875b3) */ void __fastcall FUN_11287560(int param_1);
-void __thiscall FUN_112877d0(int param_1,undefined4 param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11287a00(int *param_1,uint param_2,undefined4 param_3);
 undefined4 FUN_11287b20(undefined4 *param_1,uint param_2);
 undefined4 FUN_11287bc0(undefined4 *param_1,uint param_2,undefined4 *param_3,uint param_4);
 void __stdcall FUN_11287f40(undefined4 param_1,undefined1 param_2);
@@ -3289,32 +2635,11 @@ void __stdcall FUN_11288100(undefined4 param_1,undefined1 param_2);
 void __stdcall FUN_11288170(undefined4 param_1,undefined2 param_2);
 void __stdcall FUN_112881e0(undefined4 param_1,undefined4 param_2);
 void __stdcall FUN_11288250(undefined4 param_1,undefined4 param_2,undefined4 param_3);
-int __thiscall FUN_11288340(int param_1,uint param_2,int param_3);
-int __thiscall FUN_11288400(int param_1,uint param_2,uint param_3);
-void __thiscall FUN_112884d0(int *param_1,void *param_2,uint param_3,int param_4,uint param_5);
-void __thiscall FUN_11288840(int *param_1,int param_2,int param_3,undefined4 *param_4,uint param_5);
-void __thiscall FUN_11288ae0(int param_1,void *param_2,uint param_3);
-void __thiscall FUN_11288c90(int param_1,int param_2,int param_3);
-void __thiscall FUN_1128a500(char *param_1,char *param_2);
-undefined4 * __thiscall
-FUN_1128a9b0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined2 param_4,
-            undefined1 param_5,undefined1 param_6,undefined4 param_7,undefined4 param_8,
-            undefined4 param_9);
-void __thiscall FUN_1128afb0(int param_1,int param_2,int param_3);
-void __thiscall FUN_1128b030(int param_1,int param_2,int param_3);
-undefined4 __thiscall FUN_1128b0e0(int param_1,int *param_2);
 void __fastcall FUN_1128b190(int param_1);
-void __thiscall FUN_1128b300(int param_1,int param_2,int *param_3);
-void __thiscall FUN_1128b3d0(int param_1,undefined4 *param_2,int *param_3);
 void FUN_1128b790(undefined4 param_1,undefined4 param_2,int param_3,int param_4);
 void FUN_1128b870(undefined4 param_1,int param_2,undefined4 param_3);
-void __thiscall FUN_1128c370(int param_1,undefined4 *param_2);
 void __fastcall FUN_1128ca90(char *param_1);
 void __fastcall FUN_1128cb10(int param_1);
-int __thiscall FUN_1128cdb0(int param_1,undefined4 param_2,undefined4 param_3);
-void __thiscall FUN_1128d420(int param_1,char param_2);
-undefined4 * __thiscall FUN_1128d490(int param_1,int param_2);
-int __thiscall FUN_1128d660(int param_1,int param_2,undefined4 param_3);
 void FUN_1128d8a0(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9);
@@ -3328,56 +2653,22 @@ void __fastcall FUN_1128e5c0(undefined4 *param_1);
 void __fastcall FUN_1128e640(undefined4 *param_1);
 void __fastcall FUN_1128e6c0(undefined4 *param_1);
 void __fastcall FUN_1128e740(undefined4 *param_1);
-undefined4 * __thiscall FUN_1128e7a0(undefined4 *param_1,byte param_2);
-undefined4 * __thiscall FUN_1128e840(undefined4 *param_1,byte param_2);
-undefined4 * __thiscall FUN_1128e8e0(undefined4 *param_1,byte param_2);
-undefined4 * __thiscall FUN_1128e980(undefined4 *param_1,byte param_2);
 void __fastcall FUN_1128efd0(int param_1);
-undefined4 __thiscall FUN_1128f3c0(int param_1,undefined4 param_2);
 int FUN_1128f650(char *param_1,undefined4 param_2,undefined4 param_3);
-void __thiscall FUN_1128f7b0(int param_1,undefined4 param_2,uint param_3);
-undefined4 * __thiscall FUN_1128f9f0(undefined4 *param_1,int param_2);
 void __fastcall FUN_1128fba0(int param_1);
-void __thiscall FUN_1128fc10(int *param_1,undefined4 param_2,undefined4 param_3);
-void __thiscall FUN_1128fd10(int *param_1,char param_2);
-void __thiscall FUN_1128fec0(int *param_1,char param_2);
-void __thiscall FUN_1128ff20(int param_1,void *param_2,uint param_3);
 void FUN_11291ee0(undefined4 param_1);
-void __thiscall FUN_11292470(int param_1,void *param_2,uint param_3,int *param_4);
-void __thiscall FUN_112926b0(int param_1,int param_2,uint param_3,undefined1 *param_4,uint param_5);
-void __thiscall
-FUN_11292840(int param_1,undefined4 param_2,int param_3,int param_4,undefined4 param_5);
-void __thiscall FUN_11292a90(int param_1,undefined4 param_2,undefined4 param_3);
-undefined1 __thiscall FUN_11293060(int *param_1,int *param_2,int *param_3);
-void __thiscall FUN_11293850(int param_1,void *param_2,uint *param_3);
 void FUN_11293bf0(char *param_1,uint param_2);
 char * __fastcall FUN_11293ed0(char *param_1);
-void __thiscall FUN_11294280(int *param_1,undefined4 param_2);
-int * __thiscall FUN_11294330(int *param_1,int *param_2,int *param_3);
-int * __thiscall FUN_11294410(undefined4 *param_1,int *param_2,int *param_3);
-int * __thiscall FUN_11294520(undefined4 *param_1,int *param_2,int *param_3);
 void __fastcall FUN_11294ba0(int param_1);
 void __fastcall FUN_11294c30(uint param_1);
 void __fastcall FUN_11294d60(int *param_1);
-int __thiscall FUN_11294e30(undefined4 *param_1,int *param_2);
-int __thiscall FUN_11294f20(undefined4 *param_1,int *param_2);
-int __thiscall FUN_11295130(int param_1,byte param_2);
-uint __thiscall FUN_112951e0(uint param_1,byte param_2);
-int __thiscall FUN_11295330(int param_1,byte param_2);
 undefined4 * FUN_11295940(undefined4 param_1,int param_2);
 void FUN_112960d0(void);
 void __fastcall FUN_11296140(int *param_1);
 undefined4 FUN_112961a0(int param_1);
-void __thiscall FUN_11296590(uint3 param_1,int param_2);
 void __fastcall FUN_11296750(uint param_1);
-undefined4 __thiscall
-FUN_11296810(int param_1,undefined1 *param_2,undefined1 *param_3,int param_4,undefined1 *param_5,
-            int param_6,undefined1 *param_7,int param_8,undefined1 *param_9,int param_10,
-            undefined4 *param_11,undefined4 *param_12);
 undefined4 * FUN_112969c0(undefined4 param_1,code *param_2);
 void __fastcall FUN_11298310(int param_1);
-undefined1 __thiscall
-FUN_11299470(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,int param_5);
 char * FUN_11299780(uint param_1);
 void FUN_11299830(char param_1);
 void FUN_112998d0(undefined4 param_1,undefined4 param_2);
@@ -3387,13 +2678,7 @@ void FUN_11299ea0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undef
 char * FUN_1129a440(undefined4 param_1);
 void FUN_1129abd0(void);
 undefined4 FUN_1129b2d0(char *param_1);
-void __thiscall FUN_1129b7d0(undefined4 *param_1,undefined4 *param_2);
-void __thiscall FUN_1129bd00(uint *param_1,undefined4 *param_2);
-undefined4 * __thiscall FUN_1129c1a0(undefined4 *param_1,int param_2);
-undefined4 * __thiscall FUN_1129c830(undefined4 *param_1,undefined4 *param_2);
-undefined4 * __thiscall FUN_1129d040(undefined4 *param_1,undefined4 *param_2);
 undefined4 * __fastcall FUN_1129dab0(undefined4 *param_1);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1129db80(int param_1,int param_2,int param_3,byte *param_4,undefined4 param_5);
 void * FUN_1129e120(size_t *param_1);
 uint FUN_1129e1c0(int *param_1,int param_2);
 undefined4 FUN_1129e280(int *param_1,char *param_2);
@@ -3450,9 +2735,9 @@ void FUN_112ab030(undefined4 param_1,undefined4 param_2);
 // Reference entry 111e8430; body size 88 bytes.
 #line 1 "ENTRY_111e8430"
 
-undefined4 __thiscall FUN_111e8430(int param_1,int param_2,short *param_3)
-
+undefined4 __thiscall Recovered_Bulk::FUN_111e8430(int param_2,short *param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   int iVar2;
   
@@ -3477,9 +2762,9 @@ undefined4 __thiscall FUN_111e8430(int param_1,int param_2,short *param_3)
 // Reference entry 111e84a0; body size 88 bytes.
 #line 1 "ENTRY_111e84a0"
 
-undefined4 __thiscall FUN_111e84a0(int param_1,int param_2,short *param_3)
-
+undefined4 __thiscall Recovered_Bulk::FUN_111e84a0(int param_2,short *param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   int iVar2;
   
@@ -3504,9 +2789,9 @@ undefined4 __thiscall FUN_111e84a0(int param_1,int param_2,short *param_3)
 // Reference entry 111e8510; body size 110 bytes.
 #line 1 "ENTRY_111e8510"
 
-undefined4 __thiscall FUN_111e8510(int param_1,undefined4 param_2,short *param_3)
-
+undefined4 __thiscall Recovered_Bulk::FUN_111e8510(undefined4 param_2,short *param_3)
 {
+  int param_1 = (int )this;
   undefined4 uVar1;
   
   if (((*param_3 == 0) && (*(char *)(param_1 + 0x3c) == '\0')) && (*(int *)(param_1 + 0x34) != 0)) {
@@ -3528,9 +2813,9 @@ undefined4 __thiscall FUN_111e8510(int param_1,undefined4 param_2,short *param_3
 // Reference entry 111e85e0; body size 157 bytes.
 #line 1 "ENTRY_111e85e0"
 
-short __thiscall FUN_111e85e0(int *param_1,undefined4 param_2,undefined4 param_3,int *param_4)
-
+short __thiscall Recovered_Bulk::FUN_111e85e0(undefined4 param_2,undefined4 param_3,int *param_4)
 {
+  int *param_1 = (int *)this;
   int iVar1;
   char cVar2;
   short sVar3;
@@ -3614,11 +2899,9 @@ void __fastcall FUN_111e9ad0(ushort *param_1)
 // Reference entry 111e9b50; body size 922 bytes.
 #line 1 "ENTRY_111e9b50"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_111e9b50(int *param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_111e9b50(undefined4 param_2)
 {
+  int *param_1 = (int *)this;
   int iVar1;
   short sVar2;
   undefined4 uVar3;
@@ -3757,11 +3040,9 @@ LAB_111e9e9e:
 // Reference entry 111ea9f0; body size 952 bytes.
 #line 1 "ENTRY_111ea9f0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_111ea9f0(int *param_1,undefined4 param_2,char param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_111ea9f0(undefined4 param_2,char param_3)
 {
+  int *param_1 = (int *)this;
   int iVar1;
   short sVar2;
   uint uVar3;
@@ -3875,13 +3156,10 @@ void __thiscall FUN_111ea9f0(int *param_1,undefined4 param_2,char param_3)
 // Reference entry 111eaea0; body size 1275 bytes.
 #line 1 "ENTRY_111eaea0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_111eaea0(int *param_1,int param_2,undefined4 param_3,int param_4,undefined4 param_5,
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_111eaea0(int param_2,undefined4 param_3,int param_4,undefined4 param_5,
             undefined4 *param_6,undefined1 *param_7)
-
 {
+  int *param_1 = (int *)this;
   short sVar1;
   int iVar2;
   undefined4 uVar3;
@@ -4045,11 +3323,9 @@ FUN_111eaea0(int *param_1,int param_2,undefined4 param_3,int param_4,undefined4 
 // Reference entry 111ee6d0; body size 1031 bytes.
 #line 1 "ENTRY_111ee6d0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_111ee6d0(int *param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_111ee6d0(undefined4 param_2)
 {
+  int *param_1 = (int *)this;
   int iVar1;
   short sVar2;
   undefined4 uVar3;
@@ -4437,9 +3713,9 @@ undefined4 FUN_111f2260(char *param_1)
 // Reference entry 111f2720; body size 402 bytes.
 #line 1 "ENTRY_111f2720"
 
-void __thiscall FUN_111f2720(int param_1,char *param_2,undefined4 *param_3)
-
+void __thiscall Recovered_Bulk::FUN_111f2720(char *param_2,undefined4 *param_3)
 {
+  int param_1 = (int )this;
   byte *pbVar1;
   char cVar2;
   undefined4 uVar3;
@@ -4559,9 +3835,9 @@ void __thiscall FUN_111f2720(int param_1,char *param_2,undefined4 *param_3)
 // Reference entry 111f2a80; body size 164 bytes.
 #line 1 "ENTRY_111f2a80"
 
-void __thiscall FUN_111f2a80(ushort *param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_111f2a80(undefined4 param_2)
 {
+  ushort *param_1 = (ushort *)this;
   uint uVar1;
   uint uVar2;
   int iVar3;
@@ -4598,11 +3874,10 @@ void __thiscall FUN_111f2a80(ushort *param_1,undefined4 param_2)
 // Reference entry 111f2b50; body size 344 bytes.
 #line 1 "ENTRY_111f2b50"
 
-void __thiscall
-FUN_111f2b50(char *param_1,undefined4 param_2,undefined4 param_3,int param_4,undefined4 param_5,
+void __thiscall Recovered_Bulk::FUN_111f2b50(undefined4 param_2,undefined4 param_3,int param_4,undefined4 param_5,
             undefined4 param_6,undefined4 param_7)
-
 {
+  char *param_1 = (char *)this;
   char cVar1;
   char *pcVar2;
   char *pcVar3;
@@ -4692,9 +3967,9 @@ void __fastcall FUN_111f2f80(int param_1)
 // Reference entry 111f3030; body size 411 bytes.
 #line 1 "ENTRY_111f3030"
 
-void __thiscall FUN_111f3030(int param_1,undefined4 param_2,undefined4 param_3)
-
+void __thiscall Recovered_Bulk::FUN_111f3030(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   int iVar1;
   short sVar2;
   
@@ -4785,9 +4060,9 @@ void FUN_111f3240(int *param_1,uint param_2,uint param_3,uint *param_4,uint *par
 // Reference entry 111f3430; body size 137 bytes.
 #line 1 "ENTRY_111f3430"
 
-void __thiscall FUN_111f3430(int param_1,undefined4 param_2,undefined4 param_3)
-
+void __thiscall Recovered_Bulk::FUN_111f3430(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   int *piVar1;
   
   if ((*(uint *)(param_1 + 0x1658) >> 3 & 1) == 0) {
@@ -4809,13 +4084,10 @@ void __thiscall FUN_111f3430(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 111f3510; body size 1417 bytes.
 #line 1 "ENTRY_111f3510"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_111f3510(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_111f3510(undefined4 param_2,undefined4 param_3,undefined4 param_4,
             undefined4 param_5,int param_6)
-
 {
+  int *param_1 = (int *)this;
   short sVar1;
   int iVar2;
   undefined4 uVar3;
@@ -4999,9 +4271,9 @@ FUN_111f3510(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param
 // Reference entry 111f3c40; body size 112 bytes.
 #line 1 "ENTRY_111f3c40"
 
-void __thiscall FUN_111f3c40(float *param_1,float param_2)
-
+void __thiscall Recovered_Bulk::FUN_111f3c40(float param_2)
 {
+  float *param_1 = (float *)this;
   float fVar1;
   
   ceil((double)((float)((double)(int)param_1[2] +
@@ -5224,9 +4496,9 @@ void __fastcall FUN_111f4410(int param_1)
 // Reference entry 111f4630; body size 99 bytes.
 #line 1 "ENTRY_111f4630"
 
-int __thiscall FUN_111f4630(int param_1,int param_2)
-
+int __thiscall Recovered_Bulk::FUN_111f4630(int param_2)
 {
+  int param_1 = (int )this;
   undefined4 *puVar1;
   int iVar2;
   
@@ -5255,9 +4527,9 @@ int __thiscall FUN_111f4630(int param_1,int param_2)
 // Reference entry 111f46b0; body size 99 bytes.
 #line 1 "ENTRY_111f46b0"
 
-int __thiscall FUN_111f46b0(int param_1,int param_2)
-
+int __thiscall Recovered_Bulk::FUN_111f46b0(int param_2)
 {
+  int param_1 = (int )this;
   undefined4 *puVar1;
   int iVar2;
   
@@ -5286,9 +4558,9 @@ int __thiscall FUN_111f46b0(int param_1,int param_2)
 // Reference entry 111f4730; body size 99 bytes.
 #line 1 "ENTRY_111f4730"
 
-int __thiscall FUN_111f4730(int param_1,int param_2)
-
+int __thiscall Recovered_Bulk::FUN_111f4730(int param_2)
 {
+  int param_1 = (int )this;
   undefined4 *puVar1;
   int iVar2;
   
@@ -5317,9 +4589,9 @@ int __thiscall FUN_111f4730(int param_1,int param_2)
 // Reference entry 111f4aa0; body size 287 bytes.
 #line 1 "ENTRY_111f4aa0"
 
-void __thiscall FUN_111f4aa0(int param_1,char *param_2)
-
+void __thiscall Recovered_Bulk::FUN_111f4aa0(char *param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   int *piVar2;
   char *pcVar3;
@@ -5380,9 +4652,9 @@ void __thiscall FUN_111f4aa0(int param_1,char *param_2)
 // Reference entry 111f4d20; body size 107 bytes.
 #line 1 "ENTRY_111f4d20"
 
-void __thiscall FUN_111f4d20(int param_1,undefined1 *param_2,undefined1 *param_3,undefined4 param_4)
-
+void __thiscall Recovered_Bulk::FUN_111f4d20(undefined1 *param_2,undefined1 *param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   int iVar1;
   
   param_1 = (int)(param_1 + 0x11ba0);
@@ -5403,9 +4675,9 @@ void __thiscall FUN_111f4d20(int param_1,undefined1 *param_2,undefined1 *param_3
 // Reference entry 111f4e90; body size 337 bytes.
 #line 1 "ENTRY_111f4e90"
 
-void __thiscall FUN_111f4e90(int param_1,char *param_2,char *param_3)
-
+void __thiscall Recovered_Bulk::FUN_111f4e90(char *param_2,char *param_3)
 {
+  int param_1 = (int )this;
   uint uVar1;
   int iVar2;
   int iVar3;
@@ -5457,9 +4729,9 @@ void __thiscall FUN_111f4e90(int param_1,char *param_2,char *param_3)
 // Reference entry 111f5040; body size 139 bytes.
 #line 1 "ENTRY_111f5040"
 
-void __thiscall FUN_111f5040(int param_1,int param_2)
-
+void __thiscall Recovered_Bulk::FUN_111f5040(int param_2)
 {
+  int param_1 = (int )this;
   int iVar1;
   uint uVar2;
   int iVar3;
@@ -5488,9 +4760,9 @@ void __thiscall FUN_111f5040(int param_1,int param_2)
 // Reference entry 111f5250; body size 164 bytes.
 #line 1 "ENTRY_111f5250"
 
-void __thiscall FUN_111f5250(undefined4 param_1,char *param_2)
-
+void __thiscall Recovered_Bulk::FUN_111f5250(char *param_2)
 {
+  undefined4 param_1 = (undefined4 )this;
   char cVar1;
   char *pcVar2;
   undefined1 local_4c [12];
@@ -5546,9 +4818,9 @@ void __thiscall FUN_111f5250(undefined4 param_1,char *param_2)
 // Reference entry 111f5350; body size 97 bytes.
 #line 1 "ENTRY_111f5350"
 
-void __thiscall FUN_111f5350(int param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_111f5350(undefined4 param_2)
 {
+  int param_1 = (int )this;
   short sVar1;
   
   thunk_FUN_11281ab0(param_2);
@@ -5567,9 +4839,9 @@ void __thiscall FUN_111f5350(int param_1,undefined4 param_2)
 // Reference entry 111f5a50; body size 117 bytes.
 #line 1 "ENTRY_111f5a50"
 
-void __thiscall FUN_111f5a50(int param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_111f5a50(undefined4 param_2)
 {
+  int param_1 = (int )this;
   undefined4 uVar1;
   
   if (*(char *)(param_1 + 0x40) == '\0') {
@@ -5596,9 +4868,9 @@ void __thiscall FUN_111f5a50(int param_1,undefined4 param_2)
 // Reference entry 111f5af0; body size 101 bytes.
 #line 1 "ENTRY_111f5af0"
 
-void __thiscall FUN_111f5af0(int param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_111f5af0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   undefined4 uVar2;
   
@@ -5628,9 +4900,9 @@ void __thiscall FUN_111f5af0(int param_1,undefined4 param_2)
 // Reference entry 111f5f30; body size 92 bytes.
 #line 1 "ENTRY_111f5f30"
 
-void __thiscall FUN_111f5f30(int param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_111f5f30(undefined4 param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   
   cVar1 = (char)(thunk_FUN_111f2ed0("header",param_2));
@@ -5651,9 +4923,9 @@ void __thiscall FUN_111f5f30(int param_1,undefined4 param_2)
 // Reference entry 111f5fb0; body size 72 bytes.
 #line 1 "ENTRY_111f5fb0"
 
-void __thiscall FUN_111f5fb0(int param_1,undefined4 param_2,undefined4 param_3)
-
+void __thiscall Recovered_Bulk::FUN_111f5fb0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   
   cVar1 = (char)(thunk_FUN_111f2ed0("positionInformation",param_2));
@@ -5674,9 +4946,9 @@ void __thiscall FUN_111f5fb0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 111f6010; body size 268 bytes.
 #line 1 "ENTRY_111f6010"
 
-void __thiscall FUN_111f6010(int param_1,undefined4 param_2,undefined4 param_3)
-
+void __thiscall Recovered_Bulk::FUN_111f6010(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   
   cVar1 = (char)(thunk_FUN_111f2ed0("trackMetadata",param_2));
@@ -5728,9 +5000,9 @@ void __thiscall FUN_111f6010(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 111f6350; body size 280 bytes.
 #line 1 "ENTRY_111f6350"
 
-void __thiscall FUN_111f6350(int *param_1,undefined4 param_2,undefined4 param_3)
-
+void __thiscall Recovered_Bulk::FUN_111f6350(undefined4 param_2,undefined4 param_3)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   
   cVar1 = (char)(thunk_FUN_111f2ed0("action",param_2));
@@ -5780,9 +5052,9 @@ void __thiscall FUN_111f6350(int *param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 111f6b70; body size 93 bytes.
 #line 1 "ENTRY_111f6b70"
 
-void __thiscall FUN_111f6b70(int *param_1,int param_2)
-
+void __thiscall Recovered_Bulk::FUN_111f6b70(int param_2)
 {
+  int *param_1 = (int *)this;
   int *piVar1;
   int iVar2;
   char cVar3;
@@ -5811,9 +5083,9 @@ LAB_111f6bba:
 // Reference entry 111f6c30; body size 111 bytes.
 #line 1 "ENTRY_111f6c30"
 
-void __thiscall FUN_111f6c30(int *param_1,int param_2,int param_3,undefined1 param_4)
-
+void __thiscall Recovered_Bulk::FUN_111f6c30(int param_2,int param_3,undefined1 param_4)
 {
+  int *param_1 = (int *)this;
   int iVar1;
   
   thunk_FUN_112a7f50(param_1 + 1);
@@ -5832,10 +5104,9 @@ void __thiscall FUN_111f6c30(int *param_1,int param_2,int param_3,undefined1 par
 // Reference entry 111f6cc0; body size 123 bytes.
 #line 1 "ENTRY_111f6cc0"
 
-void __thiscall
-FUN_111f6cc0(int *param_1,int param_2,int param_3,undefined4 param_4,undefined4 param_5)
-
+void __thiscall Recovered_Bulk::FUN_111f6cc0(int param_2,int param_3,undefined4 param_4,undefined4 param_5)
 {
+  int *param_1 = (int *)this;
   int iVar1;
   
   thunk_FUN_112a7f50(param_1 + 1);
@@ -5854,9 +5125,9 @@ FUN_111f6cc0(int *param_1,int param_2,int param_3,undefined4 param_4,undefined4 
 // Reference entry 111f6d60; body size 140 bytes.
 #line 1 "ENTRY_111f6d60"
 
-void __thiscall FUN_111f6d60(int *param_1,int param_2,int param_3,int param_4)
-
+void __thiscall Recovered_Bulk::FUN_111f6d60(int param_2,int param_3,int param_4)
 {
+  int *param_1 = (int *)this;
   int iVar1;
   
   thunk_FUN_112a7f50(param_1 + 1);
@@ -5902,9 +5173,9 @@ void FUN_111f7060(void)
 // Reference entry 111f7440; body size 254 bytes.
 #line 1 "ENTRY_111f7440"
 
-void __thiscall FUN_111f7440(int *param_1,undefined1 *param_2)
-
+void __thiscall Recovered_Bulk::FUN_111f7440(undefined1 *param_2)
 {
+  int *param_1 = (int *)this;
   int iVar1;
   int iVar2;
   short sVar3;
@@ -5949,9 +5220,9 @@ LAB_111f7523:
 // Reference entry 111f7600; body size 91 bytes.
 #line 1 "ENTRY_111f7600"
 
-undefined4 * __thiscall FUN_111f7600(undefined4 *param_1,undefined4 param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_111f7600(undefined4 param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_1125b720(param_1,0x7c,0,LAB_1003446e,LAB_10029d39,LAB_10006622,LAB_10059d40,0);
   param_1[2] = param_2;
   *param_1 = (undefined4)((uint)&Ext_RLastChangeProcessor_vftable);
@@ -5967,9 +5238,9 @@ undefined4 * __thiscall FUN_111f7600(undefined4 *param_1,undefined4 param_2)
 // Reference entry 111f7960; body size 68 bytes.
 #line 1 "ENTRY_111f7960"
 
-undefined4 * __thiscall FUN_111f7960(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_111f7960(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&Ext_RNotifyBodyParser_vftable);
   if ((void *)param_1[0x304] != (void *)((int)param_1 + 0x40f)) {
     free((void *)param_1[0x304]);
@@ -5985,9 +5256,9 @@ undefined4 * __thiscall FUN_111f7960(undefined4 *param_1,byte param_2)
 // Reference entry 111f7a60; body size 147 bytes.
 #line 1 "ENTRY_111f7a60"
 
-void __thiscall FUN_111f7a60(int param_1,void *param_2,size_t param_3)
-
+void __thiscall Recovered_Bulk::FUN_111f7a60(void *param_2,size_t param_3)
 {
+  int param_1 = (int )this;
   uint uVar1;
   void *_Dst;
   int iVar2;
@@ -6019,11 +5290,10 @@ void __thiscall FUN_111f7a60(int param_1,void *param_2,size_t param_3)
 // Reference entry 111fbeb0; body size 284 bytes.
 #line 1 "ENTRY_111fbeb0"
 
-undefined4 * __thiscall
-FUN_111fbeb0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+undefined4 * __thiscall Recovered_Bulk::FUN_111fbeb0(undefined4 param_2,undefined4 param_3,undefined4 param_4,
             undefined1 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8)
-
 {
+  undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_11261e50();
   param_1[7] = (uint)&Ext_RHTTPDataIO_vftable;
   *param_1 = (undefined4)((uint)&Ext_RAsyncGETIOOperation_vftable);
@@ -6062,13 +5332,10 @@ FUN_111fbeb0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined
 // Reference entry 111fc020; body size 468 bytes.
 #line 1 "ENTRY_111fc020"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_111fc020(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_111fc020(undefined4 param_2,undefined4 param_3,undefined4 param_4,
             undefined1 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8)
-
 {
+  undefined4 *param_1 = (undefined4 *)this;
   char cVar1;
   undefined4 *local_8010;
   undefined1 local_800c [16388];
@@ -6239,11 +5506,9 @@ void __fastcall FUN_111fc3e0(int param_1)
 // Reference entry 111fc9a0; body size 1140 bytes.
 #line 1 "ENTRY_111fc9a0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_111fc9a0(int param_1,int param_2,ushort *param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_111fc9a0(int param_2,ushort *param_3)
 {
+  int param_1 = (int )this;
   undefined4 *puVar1;
   char cVar2;
   int iVar3;
@@ -6508,9 +5773,9 @@ void FUN_111fd320(char *param_1,undefined4 param_2,undefined4 param_3,undefined4
 // Reference entry 111fd450; body size 130 bytes.
 #line 1 "ENTRY_111fd450"
 
-void __thiscall FUN_111fd450(int param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_111fd450(undefined4 param_2)
 {
+  int param_1 = (int )this;
   void *pvVar1;
   undefined4 uVar2;
   void *local_10;
@@ -6713,13 +5978,12 @@ void FUN_111fe0d0(int param_1,undefined4 param_2)
 // Reference entry 111fe560; body size 603 bytes.
 #line 1 "ENTRY_111fe560"
 
-undefined4 * __thiscall
-FUN_111fe560(undefined4 *param_1,int param_2,undefined4 param_3,undefined1 param_4,
+undefined4 * __thiscall Recovered_Bulk::FUN_111fe560(int param_2,undefined4 param_3,undefined1 param_4,
             undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
             undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
             undefined4 param_13,undefined4 param_14,undefined4 param_15,undefined4 param_16)
-
 {
+  undefined4 *param_1 = (undefined4 *)this;
   int iVar1;
   uint uVar2;
   undefined4 uVar3;
@@ -6796,10 +6060,9 @@ FUN_111fe560(undefined4 *param_1,int param_2,undefined4 param_3,undefined1 param
 // Reference entry 111fe860; body size 112 bytes.
 #line 1 "ENTRY_111fe860"
 
-undefined4 * __thiscall
-FUN_111fe860(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_111fe860(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_11202480();
   param_1[0x202] = param_4;
   *param_1 = (undefined4)((uint)&Ext_RSCPItemCallback_vftable);
@@ -6816,9 +6079,9 @@ FUN_111fe860(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined
 // Reference entry 111fe970; body size 73 bytes.
 #line 1 "ENTRY_111fe970"
 
-undefined4 * __thiscall FUN_111fe970(undefined4 *param_1,undefined4 param_2,undefined4 param_3)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_111fe970(undefined4 param_2,undefined4 param_3)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&Ext_RContentProvider_vftable);
   param_1[1] = 0;
   thunk_FUN_1145c930(param_1 + 2,0);
@@ -6893,9 +6156,9 @@ void __fastcall FUN_111fec40(undefined4 *param_1)
 // Reference entry 111feea0; body size 170 bytes.
 #line 1 "ENTRY_111feea0"
 
-undefined4 * __thiscall FUN_111feea0(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_111feea0(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
   undefined4 *puVar2;
   int iVar3;
@@ -6932,9 +6195,9 @@ undefined4 * __thiscall FUN_111feea0(undefined4 *param_1,byte param_2)
 // Reference entry 111fef80; body size 139 bytes.
 #line 1 "ENTRY_111fef80"
 
-undefined4 * __thiscall FUN_111fef80(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_111fef80(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&Ext_RSCPBrowseSOAPAIOOp_vftable);
   param_1[2] = (uint)&Ext_RSCPBrowseSOAPAIOOp_vftable;
   param_1[0x1a] = (uint)&Ext_RSCPBrowseSOAPAIOOp_vftable;
@@ -7002,11 +6265,9 @@ void FUN_111ff170(char *param_1,int param_2,undefined4 param_3)
 // Reference entry 111ff420; body size 154 bytes.
 #line 1 "ENTRY_111ff420"
 
-void __thiscall
-FUN_111ff420(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            )
-
+void __thiscall Recovered_Bulk::FUN_111ff420(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   char *pcStack_418;
   int iStack_414;
   undefined4 uStack_410;
@@ -7034,12 +6295,11 @@ FUN_111ff420(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 111ff6c0; body size 308 bytes.
 #line 1 "ENTRY_111ff6c0"
 
-void __thiscall
-FUN_111ff6c0(int param_1,undefined4 param_2,int param_3,undefined4 param_4,undefined4 param_5,
+void __thiscall Recovered_Bulk::FUN_111ff6c0(undefined4 param_2,int param_3,undefined4 param_4,undefined4 param_5,
             undefined4 param_6,uint param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10)
-
 {
+  int param_1 = (int )this;
   uint uVar1;
   char *pcVar2;
   void *local_998;
@@ -7124,11 +6384,10 @@ undefined4 * __fastcall FUN_11200110(int param_1)
 // Reference entry 112004a0; body size 155 bytes.
 #line 1 "ENTRY_112004a0"
 
-undefined4 __thiscall
-FUN_112004a0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+undefined4 __thiscall Recovered_Bulk::FUN_112004a0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,uint param_6,undefined4 param_7,uint *param_8)
-
 {
+  int param_1 = (int )this;
   void *pvVar1;
   int iVar2;
   void *local_10;
@@ -7246,11 +6505,9 @@ undefined4 __fastcall FUN_11201610(int *param_1)
 // Reference entry 11201d30; body size 166 bytes.
 #line 1 "ENTRY_11201d30"
 
-void __thiscall
-FUN_11201d30(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            )
-
+void __thiscall Recovered_Bulk::FUN_11201d30(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   char cVar1;
   undefined1 auStack_408 [1028];
   uint local_4;
@@ -7361,9 +6618,9 @@ undefined4 FUN_112021b0(char *param_1)
 // Reference entry 11202490; body size 83 bytes.
 #line 1 "ENTRY_11202490"
 
-undefined4 * __thiscall FUN_11202490(undefined4 *param_1,undefined4 param_2,undefined4 param_3)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11202490(undefined4 param_2,undefined4 param_3)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_1125b6a0(param_1,0x7c,LAB_1006e362,LAB_100844a5,LAB_1008d3cf);
   param_1[2] = param_2;
   param_1[3] = param_3;
@@ -7379,9 +6636,9 @@ undefined4 * __thiscall FUN_11202490(undefined4 *param_1,undefined4 param_2,unde
 // Reference entry 11203990; body size 133 bytes.
 #line 1 "ENTRY_11203990"
 
-undefined4 * __thiscall FUN_11203990(undefined4 *param_1,undefined4 *param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11203990(undefined4 *param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   undefined4 uVar1;
   
   thunk_FUN_11265ef0();
@@ -7407,9 +6664,9 @@ undefined4 * __thiscall FUN_11203990(undefined4 *param_1,undefined4 *param_2)
 // Reference entry 11204200; body size 64 bytes.
 #line 1 "ENTRY_11204200"
 
-undefined4 __thiscall FUN_11204200(int param_1,int param_2)
-
+undefined4 __thiscall Recovered_Bulk::FUN_11204200(int param_2)
 {
+  int param_1 = (int )this;
   if ((param_2 != 0) && (*(uint *)(param_1 + -0x40) < 6)) {
     thunk_FUN_1145c250(*(uint *)(param_1 + -0x40) * 0x81 + -0x348 + param_1,param_2,0x81);
     *(int *)(param_1 + -0x40) = *(int *)(param_1 + -0x40) + 1;
@@ -7422,9 +6679,9 @@ undefined4 __thiscall FUN_11204200(int param_1,int param_2)
 // Reference entry 11204250; body size 302 bytes.
 #line 1 "ENTRY_11204250"
 
-void __thiscall FUN_11204250(int param_1,int *param_2,uint param_3)
-
+void __thiscall Recovered_Bulk::FUN_11204250(int *param_2,uint param_3)
 {
+  int param_1 = (int )this;
   undefined2 uVar1;
   char *pcVar2;
   undefined4 uVar3;
@@ -7481,9 +6738,9 @@ void __thiscall FUN_11204250(int param_1,int *param_2,uint param_3)
 // Reference entry 112043d0; body size 212 bytes.
 #line 1 "ENTRY_112043d0"
 
-void __thiscall FUN_112043d0(int param_1,int param_2)
-
+void __thiscall Recovered_Bulk::FUN_112043d0(int param_2)
 {
+  int param_1 = (int )this;
   char *pcVar1;
   int iVar2;
   int iVar3;
@@ -7525,9 +6782,9 @@ void __thiscall FUN_112043d0(int param_1,int param_2)
 // Reference entry 112044e0; body size 72 bytes.
 #line 1 "ENTRY_112044e0"
 
-uint __thiscall FUN_112044e0(int param_1,undefined4 param_2)
-
+uint __thiscall Recovered_Bulk::FUN_112044e0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   int *piVar1;
   int iVar2;
   uint uVar3;
@@ -7572,9 +6829,9 @@ void __stdcall FUN_11204990(undefined4 param_1,undefined4 param_2)
 // Reference entry 11204a30; body size 82 bytes.
 #line 1 "ENTRY_11204a30"
 
-void __thiscall FUN_11204a30(int param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_11204a30(undefined4 param_2)
 {
+  int param_1 = (int )this;
   (**(code **)(*(int *)(param_1 + -0x680 + *(int *)(*(int *)(param_1 + -0x680) + 4)) + 0x28))
             (param_2);
   *(undefined1 *)(param_1 + -0x350) = 0;
@@ -7591,9 +6848,9 @@ void __thiscall FUN_11204a30(int param_1,undefined4 param_2)
 // Reference entry 11205100; body size 85 bytes.
 #line 1 "ENTRY_11205100"
 
-void __thiscall FUN_11205100(int param_1,undefined4 param_2,undefined4 param_3,int param_4)
-
+void __thiscall Recovered_Bulk::FUN_11205100(undefined4 param_2,undefined4 param_3,int param_4)
 {
+  int param_1 = (int )this;
   thunk_FUN_1145c250(param_1 + -0x67c,param_2,0xc0);
   thunk_FUN_1145c250(param_1 + -0x5bc,param_3,0xc0);
   if (param_4 != 0) {
@@ -7608,11 +6865,10 @@ void __thiscall FUN_11205100(int param_1,undefined4 param_2,undefined4 param_3,i
 // Reference entry 112054d0; body size 357 bytes.
 #line 1 "ENTRY_112054d0"
 
-void __thiscall
-FUN_112054d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+void __thiscall Recovered_Bulk::FUN_112054d0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6)
-
 {
+  int param_1 = (int )this;
   undefined2 uVar1;
   undefined4 uVar2;
   uint uVar3;
@@ -7667,11 +6923,9 @@ FUN_112054d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11205ac0; body size 503 bytes.
 #line 1 "ENTRY_11205ac0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11205ac0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11205ac0(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -7754,13 +7008,10 @@ void __thiscall FUN_11205ac0(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 11205d40; body size 544 bytes.
 #line 1 "ENTRY_11205d40"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11205d40(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11205d40(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -7845,13 +7096,10 @@ FUN_11205d40(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11206000; body size 559 bytes.
 #line 1 "ENTRY_11206000"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11206000(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11206000(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -7935,11 +7183,9 @@ FUN_11206000(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 112062c0; body size 436 bytes.
 #line 1 "ENTRY_112062c0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112062c0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112062c0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -8017,11 +7263,9 @@ void __thiscall FUN_112062c0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 112064f0; body size 515 bytes.
 #line 1 "ENTRY_112064f0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112064f0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112064f0(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -8184,11 +7428,9 @@ void __fastcall FUN_11206780(int param_1)
 // Reference entry 11206980; body size 475 bytes.
 #line 1 "ENTRY_11206980"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11206980(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11206980(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -8269,11 +7511,9 @@ void __thiscall FUN_11206980(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11206be0; body size 501 bytes.
 #line 1 "ENTRY_11206be0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11206be0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11206be0(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -8438,9 +7678,9 @@ void FUN_11206ef0(char *param_1,char *param_2,char *param_3,char *param_4,uint p
 // Reference entry 112073e0; body size 183 bytes.
 #line 1 "ENTRY_112073e0"
 
-undefined4 * __thiscall FUN_112073e0(undefined4 *param_1,undefined4 param_2,undefined4 param_3)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_112073e0(undefined4 param_2,undefined4 param_3)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_1125b810(param_1,LAB_10081b56,LAB_1000b4a6,LAB_1002c192);
   param_1[2] = param_2;
   param_1[3] = param_3;
@@ -8465,14 +7705,11 @@ undefined4 * __thiscall FUN_112073e0(undefined4 *param_1,undefined4 param_2,unde
 // Reference entry 11208ed0; body size 797 bytes.
 #line 1 "ENTRY_11208ed0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11208ed0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11208ed0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10,undefined4 param_11,undefined4 param_12)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -8571,11 +7808,9 @@ FUN_11208ed0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 112092c0; body size 432 bytes.
 #line 1 "ENTRY_112092c0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112092c0(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112092c0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -8653,11 +7888,9 @@ void __thiscall FUN_112092c0(int param_1,undefined4 param_2)
 // Reference entry 112094e0; body size 436 bytes.
 #line 1 "ENTRY_112094e0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112094e0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112094e0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -8735,13 +7968,9 @@ void __thiscall FUN_112094e0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11209710; body size 477 bytes.
 #line 1 "ENTRY_11209710"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11209710(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            )
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11209710(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -8821,11 +8050,9 @@ FUN_11209710(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11209970; body size 476 bytes.
 #line 1 "ENTRY_11209970"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11209970(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11209970(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -8906,13 +8133,10 @@ void __thiscall FUN_11209970(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 11209bd0; body size 556 bytes.
 #line 1 "ENTRY_11209bd0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11209bd0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11209bd0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -8996,11 +8220,9 @@ FUN_11209bd0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11209e90; body size 436 bytes.
 #line 1 "ENTRY_11209e90"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11209e90(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11209e90(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -9078,11 +8300,9 @@ void __thiscall FUN_11209e90(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1120a0c0; body size 471 bytes.
 #line 1 "ENTRY_1120a0c0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1120a0c0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120a0c0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -9162,13 +8382,9 @@ void __thiscall FUN_1120a0c0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1120a310; body size 512 bytes.
 #line 1 "ENTRY_1120a310"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1120a310(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            )
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120a310(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -9250,11 +8466,9 @@ FUN_1120a310(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1120a590; body size 464 bytes.
 #line 1 "ENTRY_1120a590"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1120a590(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120a590(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -9334,11 +8548,9 @@ void __thiscall FUN_1120a590(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 1120a7e0; body size 474 bytes.
 #line 1 "ENTRY_1120a7e0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1120a7e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120a7e0(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -9418,11 +8630,9 @@ void __thiscall FUN_1120a7e0(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 1120aa30; body size 435 bytes.
 #line 1 "ENTRY_1120aa30"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1120aa30(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120aa30(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -9501,11 +8711,9 @@ void __thiscall FUN_1120aa30(int param_1,undefined4 param_2)
 // Reference entry 1120ac50; body size 475 bytes.
 #line 1 "ENTRY_1120ac50"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1120ac50(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120ac50(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -9586,11 +8794,9 @@ void __thiscall FUN_1120ac50(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1120aeb0; body size 475 bytes.
 #line 1 "ENTRY_1120aeb0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1120aeb0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120aeb0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -9671,11 +8877,9 @@ void __thiscall FUN_1120aeb0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1120b110; body size 435 bytes.
 #line 1 "ENTRY_1120b110"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1120b110(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120b110(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -9754,11 +8958,9 @@ void __thiscall FUN_1120b110(int param_1,undefined4 param_2)
 // Reference entry 1120b330; body size 460 bytes.
 #line 1 "ENTRY_1120b330"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1120b330(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120b330(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -9838,14 +9040,11 @@ void __thiscall FUN_1120b330(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1120b570; body size 787 bytes.
 #line 1 "ENTRY_1120b570"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1120b570(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120b570(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10,undefined4 param_11,undefined4 param_12)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -9944,13 +9143,9 @@ FUN_1120b570(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1120bb90; body size 477 bytes.
 #line 1 "ENTRY_1120bb90"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1120bb90(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            )
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120bb90(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -10030,11 +9225,9 @@ FUN_1120bb90(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1120bdf0; body size 471 bytes.
 #line 1 "ENTRY_1120bdf0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1120bdf0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120bdf0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -10114,11 +9307,9 @@ void __thiscall FUN_1120bdf0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1120c040; body size 475 bytes.
 #line 1 "ENTRY_1120c040"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1120c040(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120c040(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -10199,11 +9390,9 @@ void __thiscall FUN_1120c040(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1120c2a0; body size 460 bytes.
 #line 1 "ENTRY_1120c2a0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1120c2a0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120c2a0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -10283,13 +9472,9 @@ void __thiscall FUN_1120c2a0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1120c4e0; body size 516 bytes.
 #line 1 "ENTRY_1120c4e0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1120c4e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            )
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120c4e0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -10372,11 +9557,9 @@ FUN_1120c4e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1120c770; body size 435 bytes.
 #line 1 "ENTRY_1120c770"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1120c770(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120c770(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -10455,15 +9638,12 @@ void __thiscall FUN_1120c770(int param_1,undefined4 param_2)
 // Reference entry 1120ccb0; body size 847 bytes.
 #line 1 "ENTRY_1120ccb0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1120ccb0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120ccb0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13,
             undefined4 param_14)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -10566,13 +9746,10 @@ FUN_1120ccb0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1120d0e0; body size 673 bytes.
 #line 1 "ENTRY_1120d0e0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1120d0e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120d0e0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -10665,14 +9842,11 @@ FUN_1120d0e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1120d430; body size 713 bytes.
 #line 1 "ENTRY_1120d430"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1120d430(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120d430(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -10767,11 +9941,9 @@ FUN_1120d430(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1120d7b0; body size 432 bytes.
 #line 1 "ENTRY_1120d7b0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1120d7b0(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120d7b0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -10849,13 +10021,10 @@ void __thiscall FUN_1120d7b0(int param_1,undefined4 param_2)
 // Reference entry 1120d9d0; body size 504 bytes.
 #line 1 "ENTRY_1120d9d0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1120d9d0(int param_1,undefined4 param_2,undefined4 param_3,int param_4,undefined4 param_5,
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120d9d0(undefined4 param_2,undefined4 param_3,int param_4,undefined4 param_5,
             int param_6)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -10941,15 +10110,12 @@ FUN_1120d9d0(int param_1,undefined4 param_2,undefined4 param_3,int param_4,undef
 // Reference entry 1120dc50; body size 903 bytes.
 #line 1 "ENTRY_1120dc50"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1120dc50(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120dc50(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13,
             undefined4 param_14)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -11052,15 +10218,12 @@ FUN_1120dc50(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1120e0c0; body size 931 bytes.
 #line 1 "ENTRY_1120e0c0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1120e0c0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120e0c0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13,
             undefined4 param_14,undefined4 param_15)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -11165,13 +10328,10 @@ FUN_1120e0c0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1120e550; body size 611 bytes.
 #line 1 "ENTRY_1120e550"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1120e550(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120e550(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -11260,11 +10420,9 @@ FUN_1120e550(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1120e850; body size 503 bytes.
 #line 1 "ENTRY_1120e850"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1120e850(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120e850(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -11347,11 +10505,9 @@ void __thiscall FUN_1120e850(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 1120ead0; body size 463 bytes.
 #line 1 "ENTRY_1120ead0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1120ead0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120ead0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -11432,14 +10588,11 @@ void __thiscall FUN_1120ead0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1120ed20; body size 698 bytes.
 #line 1 "ENTRY_1120ed20"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1120ed20(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120ed20(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -11532,11 +10685,9 @@ FUN_1120ed20(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1120f090; body size 491 bytes.
 #line 1 "ENTRY_1120f090"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1120f090(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120f090(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -11619,11 +10770,9 @@ void __thiscall FUN_1120f090(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 1120f300; body size 432 bytes.
 #line 1 "ENTRY_1120f300"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1120f300(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120f300(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -11701,11 +10850,9 @@ void __thiscall FUN_1120f300(int param_1,undefined4 param_2)
 // Reference entry 1120f520; body size 461 bytes.
 #line 1 "ENTRY_1120f520"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1120f520(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120f520(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -11785,11 +10932,9 @@ void __thiscall FUN_1120f520(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1120f760; body size 464 bytes.
 #line 1 "ENTRY_1120f760"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1120f760(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120f760(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -11869,13 +11014,10 @@ void __thiscall FUN_1120f760(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 1120f9b0; body size 546 bytes.
 #line 1 "ENTRY_1120f9b0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1120f9b0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120f9b0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -11959,16 +11101,13 @@ FUN_1120f9b0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1120fc60; body size 789 bytes.
 #line 1 "ENTRY_1120fc60"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1120fc60(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1120fc60(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13,
             undefined4 param_14,undefined4 param_15,undefined4 param_16,undefined4 param_17,
             undefined4 param_18,undefined4 param_19)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -12064,15 +11203,12 @@ FUN_1120fc60(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11210040; body size 742 bytes.
 #line 1 "ENTRY_11210040"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11210040(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11210040(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13,
             undefined4 param_14,undefined4 param_15)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -12166,13 +11302,9 @@ FUN_11210040(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 112103e0; body size 502 bytes.
 #line 1 "ENTRY_112103e0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_112103e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            )
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112103e0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -12254,13 +11386,10 @@ FUN_112103e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11210660; body size 543 bytes.
 #line 1 "ENTRY_11210660"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11210660(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11210660(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -12344,13 +11473,10 @@ FUN_11210660(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11210910; body size 546 bytes.
 #line 1 "ENTRY_11210910"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11210910(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11210910(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -12434,13 +11560,10 @@ FUN_11210910(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11210bc0; body size 505 bytes.
 #line 1 "ENTRY_11210bc0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11210bc0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11210bc0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -12522,11 +11645,9 @@ FUN_11210bc0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11210e40; body size 432 bytes.
 #line 1 "ENTRY_11210e40"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11210e40(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11210e40(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -12604,11 +11725,9 @@ void __thiscall FUN_11210e40(int param_1,undefined4 param_2)
 // Reference entry 11211060; body size 463 bytes.
 #line 1 "ENTRY_11211060"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11211060(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11211060(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -12689,11 +11808,9 @@ void __thiscall FUN_11211060(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 112112b0; body size 432 bytes.
 #line 1 "ENTRY_112112b0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112112b0(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112112b0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -12771,11 +11888,9 @@ void __thiscall FUN_112112b0(int param_1,undefined4 param_2)
 // Reference entry 112114d0; body size 463 bytes.
 #line 1 "ENTRY_112114d0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112114d0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112114d0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -12856,11 +11971,9 @@ void __thiscall FUN_112114d0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11211720; body size 432 bytes.
 #line 1 "ENTRY_11211720"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11211720(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11211720(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -12938,11 +12051,9 @@ void __thiscall FUN_11211720(int param_1,undefined4 param_2)
 // Reference entry 11211940; body size 432 bytes.
 #line 1 "ENTRY_11211940"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11211940(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11211940(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -13020,11 +12131,9 @@ void __thiscall FUN_11211940(int param_1,undefined4 param_2)
 // Reference entry 11211b60; body size 491 bytes.
 #line 1 "ENTRY_11211b60"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11211b60(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11211b60(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -13107,13 +12216,10 @@ void __thiscall FUN_11211b60(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 11211dd0; body size 545 bytes.
 #line 1 "ENTRY_11211dd0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11211dd0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11211dd0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -13199,13 +12305,10 @@ FUN_11211dd0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11212080; body size 544 bytes.
 #line 1 "ENTRY_11212080"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11212080(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11212080(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -13291,13 +12394,10 @@ FUN_11212080(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11212330; body size 685 bytes.
 #line 1 "ENTRY_11212330"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11212330(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11212330(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -13390,14 +12490,11 @@ FUN_11212330(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11212690; body size 707 bytes.
 #line 1 "ENTRY_11212690"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11212690(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11212690(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -13492,13 +12589,10 @@ FUN_11212690(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11212a10; body size 544 bytes.
 #line 1 "ENTRY_11212a10"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11212a10(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11212a10(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -13583,11 +12677,9 @@ FUN_11212a10(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11212cc0; body size 503 bytes.
 #line 1 "ENTRY_11212cc0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11212cc0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11212cc0(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -13670,11 +12762,9 @@ void __thiscall FUN_11212cc0(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 11212f40; body size 503 bytes.
 #line 1 "ENTRY_11212f40"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11212f40(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11212f40(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -13757,11 +12847,9 @@ void __thiscall FUN_11212f40(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 112131c0; body size 460 bytes.
 #line 1 "ENTRY_112131c0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112131c0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112131c0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -13841,11 +12929,9 @@ void __thiscall FUN_112131c0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11213400; body size 503 bytes.
 #line 1 "ENTRY_11213400"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11213400(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11213400(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -13928,11 +13014,9 @@ void __thiscall FUN_11213400(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 11213680; body size 463 bytes.
 #line 1 "ENTRY_11213680"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11213680(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11213680(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -14013,11 +13097,9 @@ void __thiscall FUN_11213680(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 112138d0; body size 463 bytes.
 #line 1 "ENTRY_112138d0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112138d0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112138d0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -14098,13 +13180,10 @@ void __thiscall FUN_112138d0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11213b20; body size 587 bytes.
 #line 1 "ENTRY_11213b20"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11213b20(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11213b20(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -14193,11 +13272,9 @@ FUN_11213b20(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11213e00; body size 432 bytes.
 #line 1 "ENTRY_11213e00"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11213e00(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11213e00(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -14275,14 +13352,11 @@ void __thiscall FUN_11213e00(int param_1,undefined4 param_2)
 // Reference entry 11214620; body size 765 bytes.
 #line 1 "ENTRY_11214620"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11214620(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11214620(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10,undefined4 param_11)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -14378,13 +13452,10 @@ FUN_11214620(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 112149e0; body size 559 bytes.
 #line 1 "ENTRY_112149e0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_112149e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112149e0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -14468,11 +13539,9 @@ FUN_112149e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11214ca0; body size 437 bytes.
 #line 1 "ENTRY_11214ca0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11214ca0(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11214ca0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -14550,13 +13619,9 @@ void __thiscall FUN_11214ca0(int param_1,undefined4 param_2)
 // Reference entry 11214ed0; body size 553 bytes.
 #line 1 "ENTRY_11214ed0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11214ed0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            )
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11214ed0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -14640,11 +13705,9 @@ FUN_11214ed0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11215190; body size 438 bytes.
 #line 1 "ENTRY_11215190"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11215190(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11215190(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -14721,13 +13784,10 @@ void __thiscall FUN_11215190(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 112153c0; body size 554 bytes.
 #line 1 "ENTRY_112153c0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_112153c0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112153c0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -14811,11 +13871,9 @@ FUN_112153c0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11215680; body size 435 bytes.
 #line 1 "ENTRY_11215680"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11215680(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11215680(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -14892,11 +13950,9 @@ void __thiscall FUN_11215680(int param_1,undefined4 param_2)
 // Reference entry 112158a0; body size 438 bytes.
 #line 1 "ENTRY_112158a0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112158a0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112158a0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -14973,11 +14029,9 @@ void __thiscall FUN_112158a0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11215ad0; body size 438 bytes.
 #line 1 "ENTRY_11215ad0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11215ad0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11215ad0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -15054,11 +14108,9 @@ void __thiscall FUN_11215ad0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11215d00; body size 435 bytes.
 #line 1 "ENTRY_11215d00"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11215d00(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11215d00(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -15135,11 +14187,9 @@ void __thiscall FUN_11215d00(int param_1,undefined4 param_2)
 // Reference entry 11215f20; body size 438 bytes.
 #line 1 "ENTRY_11215f20"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11215f20(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11215f20(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -15216,11 +14266,9 @@ void __thiscall FUN_11215f20(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11216150; body size 435 bytes.
 #line 1 "ENTRY_11216150"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11216150(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11216150(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -15297,11 +14345,9 @@ void __thiscall FUN_11216150(int param_1,undefined4 param_2)
 // Reference entry 11216370; body size 437 bytes.
 #line 1 "ENTRY_11216370"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11216370(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11216370(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -15379,11 +14425,9 @@ void __thiscall FUN_11216370(int param_1,undefined4 param_2)
 // Reference entry 112165a0; body size 437 bytes.
 #line 1 "ENTRY_112165a0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112165a0(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112165a0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -15461,14 +14505,11 @@ void __thiscall FUN_112165a0(int param_1,undefined4 param_2)
 // Reference entry 112167d0; body size 765 bytes.
 #line 1 "ENTRY_112167d0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_112167d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112167d0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10,undefined4 param_11)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -15564,11 +14605,9 @@ FUN_112167d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11216b90; body size 434 bytes.
 #line 1 "ENTRY_11216b90"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11216b90(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11216b90(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -15645,11 +14684,9 @@ void __thiscall FUN_11216b90(int param_1,undefined4 param_2)
 // Reference entry 11216db0; body size 517 bytes.
 #line 1 "ENTRY_11216db0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11216db0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11216db0(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -15731,11 +14768,9 @@ void __thiscall FUN_11216db0(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 112175c0; body size 436 bytes.
 #line 1 "ENTRY_112175c0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112175c0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112175c0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -15813,14 +14848,11 @@ void __thiscall FUN_112175c0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 112177f0; body size 701 bytes.
 #line 1 "ENTRY_112177f0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_112177f0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112177f0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -15912,13 +14944,9 @@ FUN_112177f0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11217b60; body size 477 bytes.
 #line 1 "ENTRY_11217b60"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11217b60(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            )
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11217b60(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -15998,14 +15026,11 @@ FUN_11217b60(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 112180d0; body size 665 bytes.
 #line 1 "ENTRY_112180d0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_112180d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112180d0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10,undefined4 param_11,undefined4 param_12)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -16096,11 +15121,9 @@ FUN_112180d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11218410; body size 435 bytes.
 #line 1 "ENTRY_11218410"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11218410(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11218410(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -16179,11 +15202,9 @@ void __thiscall FUN_11218410(int param_1,undefined4 param_2)
 // Reference entry 11218630; body size 463 bytes.
 #line 1 "ENTRY_11218630"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11218630(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11218630(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -16264,11 +15285,9 @@ void __thiscall FUN_11218630(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11218880; body size 435 bytes.
 #line 1 "ENTRY_11218880"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11218880(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11218880(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -16347,11 +15366,9 @@ void __thiscall FUN_11218880(int param_1,undefined4 param_2)
 // Reference entry 11218ce0; body size 461 bytes.
 #line 1 "ENTRY_11218ce0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11218ce0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11218ce0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -16431,11 +15448,9 @@ void __thiscall FUN_11218ce0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11218f20; body size 461 bytes.
 #line 1 "ENTRY_11218f20"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11218f20(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11218f20(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -16515,11 +15530,9 @@ void __thiscall FUN_11218f20(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11219160; body size 460 bytes.
 #line 1 "ENTRY_11219160"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11219160(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11219160(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -16599,11 +15612,9 @@ void __thiscall FUN_11219160(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 112193a0; body size 460 bytes.
 #line 1 "ENTRY_112193a0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112193a0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112193a0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -16683,11 +15694,9 @@ void __thiscall FUN_112193a0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 112195e0; body size 489 bytes.
 #line 1 "ENTRY_112195e0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112195e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112195e0(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -16769,11 +15778,9 @@ void __thiscall FUN_112195e0(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 11219850; body size 432 bytes.
 #line 1 "ENTRY_11219850"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11219850(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11219850(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -16851,11 +15858,9 @@ void __thiscall FUN_11219850(int param_1,undefined4 param_2)
 // Reference entry 11219cc0; body size 435 bytes.
 #line 1 "ENTRY_11219cc0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11219cc0(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11219cc0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -16934,11 +15939,9 @@ void __thiscall FUN_11219cc0(int param_1,undefined4 param_2)
 // Reference entry 11219ee0; body size 436 bytes.
 #line 1 "ENTRY_11219ee0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11219ee0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11219ee0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -17016,11 +16019,9 @@ void __thiscall FUN_11219ee0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1121a110; body size 436 bytes.
 #line 1 "ENTRY_1121a110"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1121a110(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121a110(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -17098,11 +16099,9 @@ void __thiscall FUN_1121a110(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1121a340; body size 432 bytes.
 #line 1 "ENTRY_1121a340"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1121a340(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121a340(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -17180,11 +16179,9 @@ void __thiscall FUN_1121a340(int param_1,undefined4 param_2)
 // Reference entry 1121a560; body size 433 bytes.
 #line 1 "ENTRY_1121a560"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1121a560(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121a560(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -17262,11 +16259,9 @@ void __thiscall FUN_1121a560(int param_1,undefined4 param_2)
 // Reference entry 1121a780; body size 463 bytes.
 #line 1 "ENTRY_1121a780"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1121a780(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121a780(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -17347,11 +16342,9 @@ void __thiscall FUN_1121a780(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1121a9d0; body size 435 bytes.
 #line 1 "ENTRY_1121a9d0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1121a9d0(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121a9d0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -17430,11 +16423,9 @@ void __thiscall FUN_1121a9d0(int param_1,undefined4 param_2)
 // Reference entry 1121abf0; body size 435 bytes.
 #line 1 "ENTRY_1121abf0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1121abf0(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121abf0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -17513,13 +16504,9 @@ void __thiscall FUN_1121abf0(int param_1,undefined4 param_2)
 // Reference entry 1121b060; body size 504 bytes.
 #line 1 "ENTRY_1121b060"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1121b060(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            )
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121b060(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -17602,13 +16589,10 @@ FUN_1121b060(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1121b2e0; body size 515 bytes.
 #line 1 "ENTRY_1121b2e0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1121b2e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121b2e0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -17770,14 +16754,11 @@ void __fastcall FUN_1121b570(int param_1)
 // Reference entry 1121b9d0; body size 807 bytes.
 #line 1 "ENTRY_1121b9d0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1121b9d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121b9d0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -17878,14 +16859,11 @@ FUN_1121b9d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1121bdc0; body size 739 bytes.
 #line 1 "ENTRY_1121bdc0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1121bdc0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121bdc0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10,undefined4 param_11)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -17982,13 +16960,9 @@ FUN_1121bdc0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1121c160; body size 514 bytes.
 #line 1 "ENTRY_1121c160"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1121c160(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            )
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121c160(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -18151,13 +17125,10 @@ void __fastcall FUN_1121c3f0(int param_1)
 // Reference entry 1121c5f0; body size 631 bytes.
 #line 1 "ENTRY_1121c5f0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1121c5f0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121c5f0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -18247,13 +17218,9 @@ FUN_1121c5f0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1121c910; body size 553 bytes.
 #line 1 "ENTRY_1121c910"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1121c910(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            )
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121c910(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -18338,11 +17305,9 @@ FUN_1121c910(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1121cbd0; body size 489 bytes.
 #line 1 "ENTRY_1121cbd0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1121cbd0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121cbd0(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -18424,13 +17389,10 @@ void __thiscall FUN_1121cbd0(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 1121ce40; body size 545 bytes.
 #line 1 "ENTRY_1121ce40"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1121ce40(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121ce40(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -18516,13 +17478,10 @@ FUN_1121ce40(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1121d0f0; body size 573 bytes.
 #line 1 "ENTRY_1121d0f0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1121d0f0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121d0f0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -18610,14 +17569,11 @@ FUN_1121d0f0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1121d3c0; body size 743 bytes.
 #line 1 "ENTRY_1121d3c0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1121d3c0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121d3c0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10,undefined4 param_11)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -18714,13 +17670,10 @@ FUN_1121d3c0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1121d760; body size 544 bytes.
 #line 1 "ENTRY_1121d760"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1121d760(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121d760(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -18805,11 +17758,9 @@ FUN_1121d760(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1121dd40; body size 461 bytes.
 #line 1 "ENTRY_1121dd40"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1121dd40(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121dd40(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -18889,11 +17840,9 @@ void __thiscall FUN_1121dd40(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1121df80; body size 501 bytes.
 #line 1 "ENTRY_1121df80"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1121df80(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121df80(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -18976,11 +17925,9 @@ void __thiscall FUN_1121df80(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 1121e200; body size 461 bytes.
 #line 1 "ENTRY_1121e200"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1121e200(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121e200(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -19060,11 +18007,9 @@ void __thiscall FUN_1121e200(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1121e440; body size 501 bytes.
 #line 1 "ENTRY_1121e440"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1121e440(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121e440(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -19147,11 +18092,9 @@ void __thiscall FUN_1121e440(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 1121e6c0; body size 501 bytes.
 #line 1 "ENTRY_1121e6c0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1121e6c0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121e6c0(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -19234,11 +18177,9 @@ void __thiscall FUN_1121e6c0(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 1121e940; body size 461 bytes.
 #line 1 "ENTRY_1121e940"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1121e940(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121e940(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -19318,11 +18259,9 @@ void __thiscall FUN_1121e940(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1121eb80; body size 499 bytes.
 #line 1 "ENTRY_1121eb80"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1121eb80(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121eb80(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -19404,11 +18343,9 @@ void __thiscall FUN_1121eb80(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 1121edf0; body size 461 bytes.
 #line 1 "ENTRY_1121edf0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1121edf0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121edf0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -19488,11 +18425,9 @@ void __thiscall FUN_1121edf0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1121f030; body size 461 bytes.
 #line 1 "ENTRY_1121f030"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1121f030(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121f030(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -19572,11 +18507,9 @@ void __thiscall FUN_1121f030(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1121f270; body size 501 bytes.
 #line 1 "ENTRY_1121f270"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1121f270(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121f270(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -19659,11 +18592,9 @@ void __thiscall FUN_1121f270(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 1121f4f0; body size 501 bytes.
 #line 1 "ENTRY_1121f4f0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1121f4f0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121f4f0(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -19746,13 +18677,9 @@ void __thiscall FUN_1121f4f0(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 1121f770; body size 539 bytes.
 #line 1 "ENTRY_1121f770"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1121f770(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            )
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121f770(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -19837,13 +18764,10 @@ FUN_1121f770(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1121fa20; body size 637 bytes.
 #line 1 "ENTRY_1121fa20"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1121fa20(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121fa20(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -19934,13 +18858,10 @@ FUN_1121fa20(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1121fd40; body size 613 bytes.
 #line 1 "ENTRY_1121fd40"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_1121fd40(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1121fd40(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -20028,11 +18949,9 @@ FUN_1121fd40(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11220040; body size 463 bytes.
 #line 1 "ENTRY_11220040"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11220040(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11220040(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -20113,11 +19032,9 @@ void __thiscall FUN_11220040(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11220290; body size 463 bytes.
 #line 1 "ENTRY_11220290"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11220290(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11220290(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -20198,11 +19115,9 @@ void __thiscall FUN_11220290(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 112204e0; body size 460 bytes.
 #line 1 "ENTRY_112204e0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112204e0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112204e0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -20282,11 +19197,9 @@ void __thiscall FUN_112204e0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11220720; body size 463 bytes.
 #line 1 "ENTRY_11220720"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11220720(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11220720(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -20367,11 +19280,9 @@ void __thiscall FUN_11220720(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11220970; body size 491 bytes.
 #line 1 "ENTRY_11220970"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11220970(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11220970(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -20454,11 +19365,9 @@ void __thiscall FUN_11220970(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 11220be0; body size 491 bytes.
 #line 1 "ENTRY_11220be0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11220be0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11220be0(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -20541,11 +19450,9 @@ void __thiscall FUN_11220be0(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 11220e50; body size 491 bytes.
 #line 1 "ENTRY_11220e50"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11220e50(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11220e50(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -20628,11 +19535,9 @@ void __thiscall FUN_11220e50(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 112210c0; body size 460 bytes.
 #line 1 "ENTRY_112210c0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112210c0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112210c0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -20712,13 +19617,9 @@ void __thiscall FUN_112210c0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11221300; body size 529 bytes.
 #line 1 "ENTRY_11221300"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11221300(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            )
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11221300(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -20803,11 +19704,9 @@ FUN_11221300(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 112215a0; body size 460 bytes.
 #line 1 "ENTRY_112215a0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112215a0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112215a0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -20887,11 +19786,9 @@ void __thiscall FUN_112215a0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 112217e0; body size 460 bytes.
 #line 1 "ENTRY_112217e0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112217e0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112217e0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -20971,11 +19868,9 @@ void __thiscall FUN_112217e0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11221a20; body size 491 bytes.
 #line 1 "ENTRY_11221a20"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11221a20(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11221a20(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -21058,11 +19953,9 @@ void __thiscall FUN_11221a20(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 11221c90; body size 491 bytes.
 #line 1 "ENTRY_11221c90"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11221c90(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11221c90(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -21145,11 +20038,9 @@ void __thiscall FUN_11221c90(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 11222160; body size 432 bytes.
 #line 1 "ENTRY_11222160"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11222160(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11222160(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -21227,11 +20118,9 @@ void __thiscall FUN_11222160(int param_1,undefined4 param_2)
 // Reference entry 11222380; body size 432 bytes.
 #line 1 "ENTRY_11222380"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11222380(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11222380(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -21309,11 +20198,9 @@ void __thiscall FUN_11222380(int param_1,undefined4 param_2)
 // Reference entry 112225a0; body size 463 bytes.
 #line 1 "ENTRY_112225a0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112225a0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112225a0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -21394,11 +20281,9 @@ void __thiscall FUN_112225a0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 112227f0; body size 432 bytes.
 #line 1 "ENTRY_112227f0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112227f0(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112227f0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -21476,11 +20361,9 @@ void __thiscall FUN_112227f0(int param_1,undefined4 param_2)
 // Reference entry 11222a10; body size 460 bytes.
 #line 1 "ENTRY_11222a10"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11222a10(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11222a10(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -21560,13 +20443,9 @@ void __thiscall FUN_11222a10(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11222c50; body size 504 bytes.
 #line 1 "ENTRY_11222c50"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11222c50(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            )
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11222c50(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -21649,11 +20528,9 @@ FUN_11222c50(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11222ed0; body size 432 bytes.
 #line 1 "ENTRY_11222ed0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11222ed0(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11222ed0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -21731,11 +20608,9 @@ void __thiscall FUN_11222ed0(int param_1,undefined4 param_2)
 // Reference entry 112230f0; body size 463 bytes.
 #line 1 "ENTRY_112230f0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112230f0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112230f0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -21816,11 +20691,9 @@ void __thiscall FUN_112230f0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11223940; body size 435 bytes.
 #line 1 "ENTRY_11223940"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11223940(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11223940(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -21899,11 +20772,9 @@ void __thiscall FUN_11223940(int param_1,undefined4 param_2)
 // Reference entry 11223b60; body size 435 bytes.
 #line 1 "ENTRY_11223b60"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11223b60(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11223b60(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -21982,11 +20853,9 @@ void __thiscall FUN_11223b60(int param_1,undefined4 param_2)
 // Reference entry 11223d90; body size 435 bytes.
 #line 1 "ENTRY_11223d90"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11223d90(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11223d90(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -22065,13 +20934,9 @@ void __thiscall FUN_11223d90(int param_1,undefined4 param_2)
 // Reference entry 11223fb0; body size 516 bytes.
 #line 1 "ENTRY_11223fb0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11223fb0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            )
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11223fb0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -22154,11 +21019,9 @@ FUN_11223fb0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11224240; body size 435 bytes.
 #line 1 "ENTRY_11224240"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11224240(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11224240(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -22237,11 +21100,9 @@ void __thiscall FUN_11224240(int param_1,undefined4 param_2)
 // Reference entry 11224460; body size 473 bytes.
 #line 1 "ENTRY_11224460"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11224460(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11224460(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -22322,11 +21183,9 @@ void __thiscall FUN_11224460(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 112246b0; body size 476 bytes.
 #line 1 "ENTRY_112246b0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112246b0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112246b0(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -22407,11 +21266,9 @@ void __thiscall FUN_112246b0(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 11224910; body size 473 bytes.
 #line 1 "ENTRY_11224910"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11224910(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11224910(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -22492,11 +21349,9 @@ void __thiscall FUN_11224910(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11224b60; body size 436 bytes.
 #line 1 "ENTRY_11224b60"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11224b60(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11224b60(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -22574,11 +21429,9 @@ void __thiscall FUN_11224b60(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11224d90; body size 436 bytes.
 #line 1 "ENTRY_11224d90"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11224d90(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11224d90(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -22656,11 +21509,9 @@ void __thiscall FUN_11224d90(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11224fc0; body size 436 bytes.
 #line 1 "ENTRY_11224fc0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11224fc0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11224fc0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -22738,11 +21589,9 @@ void __thiscall FUN_11224fc0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 112251f0; body size 436 bytes.
 #line 1 "ENTRY_112251f0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112251f0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112251f0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -22820,11 +21669,9 @@ void __thiscall FUN_112251f0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11225420; body size 473 bytes.
 #line 1 "ENTRY_11225420"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11225420(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11225420(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -22905,13 +21752,10 @@ void __thiscall FUN_11225420(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11225670; body size 563 bytes.
 #line 1 "ENTRY_11225670"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11225670(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11225670(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -22996,16 +21840,13 @@ FUN_11225670(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11225930; body size 807 bytes.
 #line 1 "ENTRY_11225930"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11225930(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11225930(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13,
             undefined4 param_14,undefined4 param_15,undefined4 param_16,undefined4 param_17,
             undefined4 param_18,undefined4 param_19)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -23103,11 +21944,9 @@ FUN_11225930(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11225d20; body size 463 bytes.
 #line 1 "ENTRY_11225d20"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11225d20(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11225d20(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -23188,11 +22027,9 @@ void __thiscall FUN_11225d20(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11225f70; body size 435 bytes.
 #line 1 "ENTRY_11225f70"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11225f70(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11225f70(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -23271,13 +22108,9 @@ void __thiscall FUN_11225f70(int param_1,undefined4 param_2)
 // Reference entry 11226190; body size 517 bytes.
 #line 1 "ENTRY_11226190"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11226190(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            )
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11226190(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -23361,11 +22194,9 @@ FUN_11226190(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11226420; body size 432 bytes.
 #line 1 "ENTRY_11226420"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11226420(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11226420(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -23443,11 +22274,9 @@ void __thiscall FUN_11226420(int param_1,undefined4 param_2)
 // Reference entry 11226640; body size 435 bytes.
 #line 1 "ENTRY_11226640"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11226640(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11226640(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -23526,11 +22355,9 @@ void __thiscall FUN_11226640(int param_1,undefined4 param_2)
 // Reference entry 11226860; body size 463 bytes.
 #line 1 "ENTRY_11226860"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11226860(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11226860(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -23611,11 +22438,9 @@ void __thiscall FUN_11226860(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11226ab0; body size 475 bytes.
 #line 1 "ENTRY_11226ab0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11226ab0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11226ab0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -23696,11 +22521,9 @@ void __thiscall FUN_11226ab0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11226d10; body size 463 bytes.
 #line 1 "ENTRY_11226d10"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11226d10(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11226d10(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -23781,11 +22604,9 @@ void __thiscall FUN_11226d10(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11226f60; body size 435 bytes.
 #line 1 "ENTRY_11226f60"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11226f60(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11226f60(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -23864,11 +22685,9 @@ void __thiscall FUN_11226f60(int param_1,undefined4 param_2)
 // Reference entry 11227180; body size 435 bytes.
 #line 1 "ENTRY_11227180"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11227180(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11227180(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -23947,11 +22766,9 @@ void __thiscall FUN_11227180(int param_1,undefined4 param_2)
 // Reference entry 112273a0; body size 463 bytes.
 #line 1 "ENTRY_112273a0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112273a0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112273a0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -24032,13 +22849,9 @@ void __thiscall FUN_112273a0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 112275f0; body size 555 bytes.
 #line 1 "ENTRY_112275f0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_112275f0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            )
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112275f0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -24123,13 +22936,10 @@ FUN_112275f0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11228030; body size 540 bytes.
 #line 1 "ENTRY_11228030"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11228030(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11228030(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -24214,14 +23024,11 @@ FUN_11228030(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 112282e0; body size 761 bytes.
 #line 1 "ENTRY_112282e0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_112282e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112282e0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -24398,11 +23205,9 @@ void __fastcall FUN_112286a0(int param_1)
 // Reference entry 112288a0; body size 503 bytes.
 #line 1 "ENTRY_112288a0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112288a0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112288a0(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -24485,11 +23290,9 @@ void __thiscall FUN_112288a0(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 11228b20; body size 499 bytes.
 #line 1 "ENTRY_11228b20"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11228b20(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11228b20(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -24572,11 +23375,9 @@ void __thiscall FUN_11228b20(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 11228d90; body size 432 bytes.
 #line 1 "ENTRY_11228d90"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11228d90(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11228d90(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -24654,11 +23455,9 @@ void __thiscall FUN_11228d90(int param_1,undefined4 param_2)
 // Reference entry 11228fb0; body size 433 bytes.
 #line 1 "ENTRY_11228fb0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11228fb0(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11228fb0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -24736,11 +23535,9 @@ void __thiscall FUN_11228fb0(int param_1,undefined4 param_2)
 // Reference entry 112291d0; body size 476 bytes.
 #line 1 "ENTRY_112291d0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112291d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112291d0(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -24821,11 +23618,9 @@ void __thiscall FUN_112291d0(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 11229430; body size 464 bytes.
 #line 1 "ENTRY_11229430"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11229430(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11229430(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -24905,13 +23700,9 @@ void __thiscall FUN_11229430(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 11229680; body size 527 bytes.
 #line 1 "ENTRY_11229680"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11229680(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            )
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11229680(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -24996,11 +23787,9 @@ FUN_11229680(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 11229920; body size 435 bytes.
 #line 1 "ENTRY_11229920"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11229920(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11229920(undefined4 param_2)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -25079,11 +23868,9 @@ void __thiscall FUN_11229920(int param_1,undefined4 param_2)
 // Reference entry 11229b40; body size 463 bytes.
 #line 1 "ENTRY_11229b40"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11229b40(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11229b40(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -25164,13 +23951,10 @@ void __thiscall FUN_11229b40(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11229d90; body size 664 bytes.
 #line 1 "ENTRY_11229d90"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11229d90(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11229d90(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9)
-
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -25341,11 +24125,9 @@ void __fastcall FUN_1122a0d0(int param_1)
 // Reference entry 1122a2d0; body size 471 bytes.
 #line 1 "ENTRY_1122a2d0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1122a2d0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1122a2d0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -25426,11 +24208,9 @@ void __thiscall FUN_1122a2d0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1122a520; body size 475 bytes.
 #line 1 "ENTRY_1122a520"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1122a520(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1122a520(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -25511,10 +24291,9 @@ void __thiscall FUN_1122a520(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1122b300; body size 270 bytes.
 #line 1 "ENTRY_1122b300"
 
-undefined4 * __thiscall
-FUN_1122b300(undefined4 *param_1,undefined2 param_2,undefined2 param_3,undefined2 param_4)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1122b300(undefined2 param_2,undefined2 param_3,undefined2 param_4)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
@@ -25606,9 +24385,9 @@ undefined4 * __fastcall FUN_1122b5e0(undefined4 *param_1)
 // Reference entry 1122b6d0; body size 68 bytes.
 #line 1 "ENTRY_1122b6d0"
 
-undefined4 * __thiscall FUN_1122b6d0(undefined4 *param_1,undefined4 param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1122b6d0(undefined4 param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   undefined4 local_8;
   undefined1 local_4;
   
@@ -25713,9 +24492,9 @@ void __fastcall FUN_1122b800(undefined4 *param_1)
 // Reference entry 1122b970; body size 110 bytes.
 #line 1 "ENTRY_1122b970"
 
-undefined4 * __thiscall FUN_1122b970(undefined4 *param_1,undefined4 *param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1122b970(undefined4 *param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   undefined4 uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -25739,9 +24518,9 @@ undefined4 * __thiscall FUN_1122b970(undefined4 *param_1,undefined4 *param_2)
 // Reference entry 1122ba00; body size 110 bytes.
 #line 1 "ENTRY_1122ba00"
 
-undefined4 * __thiscall FUN_1122ba00(undefined4 *param_1,undefined4 *param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1122ba00(undefined4 *param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   undefined4 uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -25765,9 +24544,9 @@ undefined4 * __thiscall FUN_1122ba00(undefined4 *param_1,undefined4 *param_2)
 // Reference entry 1122baa0; body size 259 bytes.
 #line 1 "ENTRY_1122baa0"
 
-undefined4 * __thiscall FUN_1122baa0(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1122baa0(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -25811,9 +24590,9 @@ undefined4 * __thiscall FUN_1122baa0(undefined4 *param_1,byte param_2)
 // Reference entry 1122bc70; body size 105 bytes.
 #line 1 "ENTRY_1122bc70"
 
-void __thiscall FUN_1122bc70(undefined4 *param_1,undefined4 *param_2)
-
+void __thiscall Recovered_Bulk::FUN_1122bc70(undefined4 *param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   undefined4 uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -25858,11 +24637,9 @@ void FUN_1122c1f0(undefined1 *param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1122c300; body size 492 bytes.
 #line 1 "ENTRY_1122c300"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1122c300(int *param_1,char *param_2,int param_3,int param_4)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1122c300(char *param_2,int param_3,int param_4)
 {
+  int *param_1 = (int *)this;
   char *pcVar1;
   int iVar2;
   int iVar3;
@@ -25930,12 +24707,11 @@ LAB_1122c4d1:
 // Reference entry 1122c570; body size 484 bytes.
 #line 1 "ENTRY_1122c570"
 
-void __thiscall
-FUN_1122c570(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+void __thiscall Recovered_Bulk::FUN_1122c570(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 *param_9,
             undefined2 param_10,undefined2 param_11,undefined2 param_12)
-
 {
+  int param_1 = (int )this;
   undefined1 uVar1;
   undefined2 uVar2;
   undefined4 *puVar3;
@@ -26143,9 +24919,9 @@ void FUN_1122cde0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undef
 // Reference entry 1122cf10; body size 148 bytes.
 #line 1 "ENTRY_1122cf10"
 
-void __thiscall FUN_1122cf10(int param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_1122cf10(undefined4 param_2)
 {
+  int param_1 = (int )this;
   thunk_FUN_11208410(param_2);
   thunk_FUN_11458440();
   *(undefined2 *)(param_1 + 0x488) = 0;
@@ -26171,9 +24947,9 @@ void __thiscall FUN_1122cf10(int param_1,undefined4 param_2)
 // Reference entry 1122de60; body size 83 bytes.
 #line 1 "ENTRY_1122de60"
 
-void __thiscall FUN_1122de60(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+void __thiscall Recovered_Bulk::FUN_1122de60(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   thunk_FUN_1106a8d0(param_1 + 0x489,param_2,0x41);
   thunk_FUN_1106a8d0(param_1 + 0x528,param_3,0x41);
   *(undefined2 *)(param_1 + 0x56a) = 1;
@@ -26186,9 +24962,9 @@ void __thiscall FUN_1122de60(int param_1,undefined4 param_2,undefined4 param_3,u
 // Reference entry 1122e150; body size 79 bytes.
 #line 1 "ENTRY_1122e150"
 
-int __thiscall FUN_1122e150(int param_1,int param_2)
-
+int __thiscall Recovered_Bulk::FUN_1122e150(int param_2)
 {
+  int param_1 = (int )this;
   *(undefined2 *)(param_1 + 4) = *(undefined2 *)(param_2 + 4);
   *(undefined2 *)(param_1 + 6) = *(undefined2 *)(param_2 + 6);
   *(undefined2 *)(param_1 + 8) = *(undefined2 *)(param_2 + 8);
@@ -26363,9 +25139,9 @@ undefined1 __fastcall FUN_1122ee70(char *param_1)
 // Reference entry 1122fd00; body size 153 bytes.
 #line 1 "ENTRY_1122fd00"
 
-void __thiscall FUN_1122fd00(int param_1,int *param_2)
-
+void __thiscall Recovered_Bulk::FUN_1122fd00(int *param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   undefined1 uVar2;
   short sVar3;
@@ -26393,9 +25169,9 @@ void __thiscall FUN_1122fd00(int param_1,int *param_2)
 // Reference entry 1122fdc0; body size 194 bytes.
 #line 1 "ENTRY_1122fdc0"
 
-void __thiscall FUN_1122fdc0(int *param_1,undefined4 param_2,int param_3)
-
+void __thiscall Recovered_Bulk::FUN_1122fdc0(undefined4 param_2,int param_3)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   undefined1 local_288 [592];
   undefined1 local_38 [36];
@@ -26460,9 +25236,9 @@ void __stdcall FUN_11230000(undefined4 param_1,undefined4 param_2)
 // Reference entry 112300d0; body size 278 bytes.
 #line 1 "ENTRY_112300d0"
 
-void __thiscall FUN_112300d0(int *param_1,short *param_2)
-
+void __thiscall Recovered_Bulk::FUN_112300d0(short *param_2)
 {
+  int *param_1 = (int *)this;
   undefined4 uVar1;
   int iVar2;
   char cVar3;
@@ -26525,9 +25301,9 @@ void __fastcall FUN_11230290(undefined4 *param_1)
 // Reference entry 112302f0; body size 64 bytes.
 #line 1 "ENTRY_112302f0"
 
-undefined4 * __thiscall FUN_112302f0(undefined4 *param_1,undefined4 param_2,undefined4 param_3)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_112302f0(undefined4 param_2,undefined4 param_3)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_1125b6a0(param_1,0x7c,LAB_1002c46c,LAB_10058d7d,LAB_10054061);
   param_1[2] = param_2;
   param_1[3] = param_3;
@@ -26540,11 +25316,10 @@ undefined4 * __thiscall FUN_112302f0(undefined4 *param_1,undefined4 param_2,unde
 // Reference entry 11230c90; body size 115 bytes.
 #line 1 "ENTRY_11230c90"
 
-undefined4 * __thiscall
-FUN_11230c90(undefined4 *param_1,undefined4 param_2,undefined1 param_3,undefined4 param_4,
+undefined4 * __thiscall Recovered_Bulk::FUN_11230c90(undefined4 param_2,undefined1 param_3,undefined4 param_4,
             int param_5)
-
 {
+  undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_111fe400();
   *(undefined1 *)((int)param_1 + 0x116) = param_3;
   *param_1 = (undefined4)((uint)&Ext_RLastFMContentProvider_vftable);
@@ -26587,12 +25362,11 @@ void __stdcall FUN_11230d40(char *param_1)
 // Reference entry 11230dd0; body size 166 bytes.
 #line 1 "ENTRY_11230dd0"
 
-undefined4 * __thiscall
-FUN_11230dd0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+undefined4 * __thiscall Recovered_Bulk::FUN_11230dd0(undefined4 param_2,undefined4 param_3,undefined4 param_4,
             undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
             undefined4 param_9)
-
 {
+  undefined4 *param_1 = (undefined4 *)this;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
@@ -26619,11 +25393,10 @@ FUN_11230dd0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined
 // Reference entry 11230ea0; body size 305 bytes.
 #line 1 "ENTRY_11230ea0"
 
-undefined4 * __thiscall
-FUN_11230ea0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+undefined4 * __thiscall Recovered_Bulk::FUN_11230ea0(undefined4 param_2,undefined4 param_3,undefined4 param_4,
             undefined4 param_5,undefined4 param_6,undefined1 param_7)
-
 {
+  undefined4 *param_1 = (undefined4 *)this;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
@@ -26662,9 +25435,9 @@ FUN_11230ea0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined
 // Reference entry 11231030; body size 147 bytes.
 #line 1 "ENTRY_11231030"
 
-undefined4 * __thiscall FUN_11231030(undefined4 *param_1,undefined4 param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11231030(undefined4 param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -26753,9 +25526,9 @@ void __fastcall FUN_11231570(undefined4 *param_1)
 // Reference entry 11231690; body size 88 bytes.
 #line 1 "ENTRY_11231690"
 
-undefined4 * __thiscall FUN_11231690(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11231690(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&Ext_RLastFMRequest_vftable);
   param_1[0x1b4d] = (uint)&Ext_RLastFMResultParser_vftable;
   thunk_FUN_112341b0();
@@ -26772,9 +25545,9 @@ undefined4 * __thiscall FUN_11231690(undefined4 *param_1,byte param_2)
 // Reference entry 11231740; body size 141 bytes.
 #line 1 "ENTRY_11231740"
 
-undefined4 * __thiscall FUN_11231740(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11231740(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&Ext_RLastFMOperation_vftable);
   param_1[0x1c67] = (uint)&Ext_RLastFMOperation_vftable;
   if ((undefined4 *)param_1[0x1c7f] != (undefined4 *)0x0) {
@@ -26798,9 +25571,9 @@ undefined4 * __thiscall FUN_11231740(undefined4 *param_1,byte param_2)
 // Reference entry 112317f0; body size 88 bytes.
 #line 1 "ENTRY_112317f0"
 
-undefined4 * __thiscall FUN_112317f0(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_112317f0(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&Ext_RLastFMRequest_vftable);
   param_1[0x1b4d] = (uint)&Ext_RLastFMResultParser_vftable;
   thunk_FUN_112341b0();
@@ -26817,9 +25590,9 @@ undefined4 * __thiscall FUN_112317f0(undefined4 *param_1,byte param_2)
 // Reference entry 112318d0; body size 188 bytes.
 #line 1 "ENTRY_112318d0"
 
-undefined4 * __thiscall FUN_112318d0(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_112318d0(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   undefined4 *puVar1;
   uint uVar2;
   int iVar3;
@@ -26921,9 +25694,9 @@ undefined4 * __fastcall FUN_11232440(int param_1)
 // Reference entry 11232570; body size 189 bytes.
 #line 1 "ENTRY_11232570"
 
-undefined4 __thiscall FUN_11232570(int param_1,int param_2)
-
+undefined4 __thiscall Recovered_Bulk::FUN_11232570(int param_2)
 {
+  int param_1 = (int )this;
   void *pvVar1;
   undefined4 uVar2;
   void *local_10;
@@ -27031,9 +25804,9 @@ uint __fastcall FUN_11232d30(int param_1)
 // Reference entry 11232da0; body size 83 bytes.
 #line 1 "ENTRY_11232da0"
 
-int __thiscall FUN_11232da0(int param_1,int param_2)
-
+int __thiscall Recovered_Bulk::FUN_11232da0(int param_2)
 {
+  int param_1 = (int )this;
   undefined2 uVar1;
   
   if (*(char *)(param_1 + -4) == '\0') {
@@ -27054,9 +25827,9 @@ int __thiscall FUN_11232da0(int param_1,int param_2)
 // Reference entry 112332a0; body size 205 bytes.
 #line 1 "ENTRY_112332a0"
 
-void __thiscall FUN_112332a0(char *param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_112332a0(undefined4 param_2)
 {
+  char *param_1 = (char *)this;
   char *pcVar1;
   byte bVar2;
   byte bVar3;
@@ -27093,11 +25866,9 @@ void __thiscall FUN_112332a0(char *param_1,undefined4 param_2)
 // Reference entry 112334a0; body size 395 bytes.
 #line 1 "ENTRY_112334a0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_112334a0(int param_1,char param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_112334a0(char param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   int iVar2;
   char *pcVar3;
@@ -27231,9 +26002,9 @@ void __fastcall FUN_11233690(int param_1)
 // Reference entry 11233e30; body size 69 bytes.
 #line 1 "ENTRY_11233e30"
 
-undefined4 __thiscall FUN_11233e30(int param_1,undefined4 param_2,int param_3)
-
+undefined4 __thiscall Recovered_Bulk::FUN_11233e30(undefined4 param_2,int param_3)
 {
+  int param_1 = (int )this;
   undefined4 uVar1;
   
   *(undefined1 *)(param_1 + 0x7198) = 1;
@@ -27285,9 +26056,9 @@ void FUN_11234040(undefined4 param_1,undefined4 param_2)
 // Reference entry 11234290; body size 131 bytes.
 #line 1 "ENTRY_11234290"
 
-uint * __thiscall FUN_11234290(uint *param_1,void *param_2,size_t param_3)
-
+uint * __thiscall Recovered_Bulk::FUN_11234290(void *param_2,size_t param_3)
 {
+  uint *param_1 = (uint *)this;
   uint *_Memory;
   uint uVar1;
   uint uVar2;
@@ -27385,9 +26156,9 @@ void __fastcall FUN_11234530(undefined4 *param_1)
 // Reference entry 11234640; body size 218 bytes.
 #line 1 "ENTRY_11234640"
 
-undefined4 * __thiscall FUN_11234640(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11234640(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -27422,9 +26193,9 @@ undefined4 * __thiscall FUN_11234640(undefined4 *param_1,byte param_2)
 // Reference entry 11234c00; body size 204 bytes.
 #line 1 "ENTRY_11234c00"
 
-size_t __thiscall FUN_11234c00(int param_1,char *param_2,uint param_3)
-
+size_t __thiscall Recovered_Bulk::FUN_11234c00(char *param_2,uint param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   char *pcVar2;
   uint _Size;
@@ -27514,9 +26285,9 @@ void __fastcall FUN_11235190(int param_1)
 // Reference entry 112352d0; body size 71 bytes.
 #line 1 "ENTRY_112352d0"
 
-void __thiscall FUN_112352d0(int param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_112352d0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   thunk_FUN_11208410(param_2);
   *(undefined2 *)(param_1 + 0x1819) = 0;
   *(undefined1 *)(param_1 + 0x17d8) = 0;
@@ -27551,9 +26322,9 @@ void __fastcall FUN_11235de0(void *param_1)
 // Reference entry 112368f0; body size 388 bytes.
 #line 1 "ENTRY_112368f0"
 
-bool __thiscall FUN_112368f0(undefined4 *param_1,int param_2,int param_3,int *param_4)
-
+bool __thiscall Recovered_Bulk::FUN_112368f0(int param_2,int param_3,int *param_4)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   int iVar1;
   char *pcVar2;
   char cVar3;
@@ -27670,9 +26441,9 @@ LAB_11236b2b:
 // Reference entry 11237780; body size 119 bytes.
 #line 1 "ENTRY_11237780"
 
-void __thiscall FUN_11237780(int param_1,undefined4 param_2,undefined4 param_3)
-
+void __thiscall Recovered_Bulk::FUN_11237780(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   uint uVar1;
   char cVar2;
   
@@ -27857,11 +26628,9 @@ void __fastcall FUN_11237f50(int param_1)
 // Reference entry 11238320; body size 258 bytes.
 #line 1 "ENTRY_11238320"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11238320(int param_1,char param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11238320(char param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   int iVar2;
   int iVar3;
@@ -27910,12 +26679,11 @@ void __thiscall FUN_11238320(int param_1,char param_2)
 // Reference entry 11238ba0; body size 1627 bytes.
 #line 1 "ENTRY_11238ba0"
 
-undefined4 * __thiscall
-FUN_11238ba0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+undefined4 * __thiscall Recovered_Bulk::FUN_11238ba0(undefined4 param_2,undefined4 param_3,undefined4 param_4,
             undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
             undefined4 param_9)
-
 {
+  undefined4 *param_1 = (undefined4 *)this;
   char cVar1;
   uint uVar2;
   undefined4 uVar3;
@@ -28135,9 +26903,9 @@ void __fastcall FUN_112393a0(undefined4 *param_1)
 // Reference entry 11239470; body size 169 bytes.
 #line 1 "ENTRY_11239470"
 
-undefined4 * __thiscall FUN_11239470(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11239470(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&Ext_RSonosAppLinkOp_vftable);
   param_1[0x18] = (uint)&Ext_RSonosAppLinkOp_vftable;
   param_1[0x11b] = (uint)&Ext_RSonosAppLinkOp_vftable;
@@ -28162,9 +26930,9 @@ undefined4 * __thiscall FUN_11239470(undefined4 *param_1,byte param_2)
 // Reference entry 112395d0; body size 89 bytes.
 #line 1 "ENTRY_112395d0"
 
-int * __thiscall FUN_112395d0(int *param_1,int param_2)
-
+int * __thiscall Recovered_Bulk::FUN_112395d0(int param_2)
 {
+  int *param_1 = (int *)this;
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -28187,11 +26955,10 @@ int * __thiscall FUN_112395d0(int *param_1,int param_2)
 // Reference entry 11239640; body size 782 bytes.
 #line 1 "ENTRY_11239640"
 
-undefined4 * __thiscall
-FUN_11239640(undefined4 *param_1,int param_2,undefined4 param_3,int param_4,undefined4 param_5,
+undefined4 * __thiscall Recovered_Bulk::FUN_11239640(int param_2,undefined4 param_3,int param_4,undefined4 param_5,
             undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9)
-
 {
+  undefined4 *param_1 = (undefined4 *)this;
   char *pcVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
@@ -28393,9 +27160,9 @@ void __fastcall FUN_11239aa0(undefined4 *param_1)
 // Reference entry 11239bf0; body size 181 bytes.
 #line 1 "ENTRY_11239bf0"
 
-undefined4 * __thiscall FUN_11239bf0(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11239bf0(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   undefined4 *puVar1;
   uint uVar2;
   int iVar3;
@@ -28436,10 +27203,9 @@ undefined4 * __thiscall FUN_11239bf0(undefined4 *param_1,byte param_2)
 // Reference entry 11239f30; body size 181 bytes.
 #line 1 "ENTRY_11239f30"
 
-undefined4 * __thiscall
-FUN_11239f30(undefined4 *param_1,undefined4 *param_2,undefined4 param_3,undefined4 param_4)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11239f30(undefined4 *param_2,undefined4 param_3,undefined4 param_4)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   char cVar1;
   char *pcVar2;
   void *local_10;
@@ -28771,9 +27537,9 @@ LAB_1123a718:
 // Reference entry 1123a780; body size 187 bytes.
 #line 1 "ENTRY_1123a780"
 
-int __thiscall FUN_1123a780(int param_1,byte param_2)
-
+int __thiscall Recovered_Bulk::FUN_1123a780(byte param_2)
 {
+  int param_1 = (int )this;
   uint uVar1;
   int iVar2;
   int iVar3;
@@ -28823,11 +27589,9 @@ LAB_1123a835:
 // Reference entry 1123a890; body size 375 bytes.
 #line 1 "ENTRY_1123a890"
 
-void __thiscall
-FUN_1123a890(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined1 param_5
-            )
-
+void __thiscall Recovered_Bulk::FUN_1123a890(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined1 param_5)
 {
+  int param_1 = (int )this;
   int iVar1;
   undefined4 *puVar2;
   undefined1 local_10 [12];
@@ -28886,11 +27650,9 @@ FUN_1123a890(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1123aa70; body size 375 bytes.
 #line 1 "ENTRY_1123aa70"
 
-void __thiscall
-FUN_1123aa70(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined1 param_5
-            )
-
+void __thiscall Recovered_Bulk::FUN_1123aa70(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined1 param_5)
 {
+  int param_1 = (int )this;
   int iVar1;
   undefined4 *puVar2;
   undefined1 local_10 [12];
@@ -28949,9 +27711,9 @@ FUN_1123aa70(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1123ac50; body size 166 bytes.
 #line 1 "ENTRY_1123ac50"
 
-void __thiscall FUN_1123ac50(int param_1,int *param_2,undefined1 param_3,char param_4)
-
+void __thiscall Recovered_Bulk::FUN_1123ac50(int *param_2,undefined1 param_3,char param_4)
 {
+  int param_1 = (int )this;
   int *piVar1;
   int iVar2;
   undefined4 *puVar3;
@@ -29011,9 +27773,9 @@ void __fastcall FUN_1123bf20(int param_1)
 // Reference entry 1123c280; body size 649 bytes.
 #line 1 "ENTRY_1123c280"
 
-void __thiscall FUN_1123c280(int param_1,undefined4 param_2,uint param_3,uint param_4,uint *param_5)
-
+void __thiscall Recovered_Bulk::FUN_1123c280(undefined4 param_2,uint param_3,uint param_4,uint *param_5)
 {
+  int param_1 = (int )this;
   uint uVar1;
   byte bVar2;
   byte bVar3;
@@ -29397,9 +28159,9 @@ void __fastcall FUN_1123ef30(int param_1)
 // Reference entry 1123efc0; body size 165 bytes.
 #line 1 "ENTRY_1123efc0"
 
-bool __thiscall FUN_1123efc0(int *param_1,uint param_2)
-
+bool __thiscall Recovered_Bulk::FUN_1123efc0(uint param_2)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   undefined4 uVar2;
   
@@ -29454,9 +28216,9 @@ bool __fastcall FUN_1123f090(int *param_1)
 // Reference entry 1123f160; body size 157 bytes.
 #line 1 "ENTRY_1123f160"
 
-uint __thiscall FUN_1123f160(int param_1,undefined4 param_2)
-
+uint __thiscall Recovered_Bulk::FUN_1123f160(undefined4 param_2)
 {
+  int param_1 = (int )this;
   uint in_EAX;
   int iVar1;
   undefined4 uVar2;
@@ -29482,9 +28244,9 @@ uint __thiscall FUN_1123f160(int param_1,undefined4 param_2)
 // Reference entry 1123f230; body size 77 bytes.
 #line 1 "ENTRY_1123f230"
 
-void __thiscall FUN_1123f230(int param_1,char *param_2)
-
+void __thiscall Recovered_Bulk::FUN_1123f230(char *param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   char *pcVar2;
   
@@ -29506,9 +28268,9 @@ void __thiscall FUN_1123f230(int param_1,char *param_2)
 // Reference entry 1123f290; body size 111 bytes.
 #line 1 "ENTRY_1123f290"
 
-void __thiscall FUN_1123f290(int param_1,char *param_2,char *param_3)
-
+void __thiscall Recovered_Bulk::FUN_1123f290(char *param_2,char *param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   int iVar2;
   char *pcVar3;
@@ -29539,9 +28301,9 @@ void __thiscall FUN_1123f290(int param_1,char *param_2,char *param_3)
 // Reference entry 1123f320; body size 91 bytes.
 #line 1 "ENTRY_1123f320"
 
-void __thiscall FUN_1123f320(int param_1,char *param_2,undefined4 param_3)
-
+void __thiscall Recovered_Bulk::FUN_1123f320(char *param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   int iVar2;
   char *pcVar3;
@@ -29565,11 +28327,9 @@ void __thiscall FUN_1123f320(int param_1,char *param_2,undefined4 param_3)
 // Reference entry 1123f5c0; body size 473 bytes.
 #line 1 "ENTRY_1123f5c0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1123f5c0(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1123f5c0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -29650,11 +28410,9 @@ void __thiscall FUN_1123f5c0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1123f810; body size 473 bytes.
 #line 1 "ENTRY_1123f810"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1123f810(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1123f810(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -29735,11 +28493,9 @@ void __thiscall FUN_1123f810(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1123fa60; body size 473 bytes.
 #line 1 "ENTRY_1123fa60"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1123fa60(int param_1,undefined4 param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1123fa60(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   bool bVar1;
   int iVar2;
   undefined4 ****ppppuVar3;
@@ -29819,9 +28575,9 @@ void __thiscall FUN_1123fa60(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11240560; body size 116 bytes.
 #line 1 "ENTRY_11240560"
 
-undefined4 * __thiscall FUN_11240560(undefined4 *param_1,undefined4 param_2,undefined4 param_3)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11240560(undefined4 param_2,undefined4 param_3)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   param_1[1] = 0;
   *param_1 = (undefined4)((uint)&Ext_RAsyncIOOperation_vftable);
   param_1[2] = 0;
@@ -29941,9 +28697,9 @@ void __fastcall FUN_11240870(int param_1)
 // Reference entry 112409e0; body size 122 bytes.
 #line 1 "ENTRY_112409e0"
 
-undefined4 * __thiscall FUN_112409e0(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_112409e0(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   undefined4 *puVar1;
   undefined4 *_Memory;
   
@@ -30013,9 +28769,9 @@ undefined4 * FUN_11240ae0(undefined4 *param_1)
 // Reference entry 11240be0; body size 173 bytes.
 #line 1 "ENTRY_11240be0"
 
-undefined4 __thiscall FUN_11240be0(int param_1,char *param_2)
-
+undefined4 __thiscall Recovered_Bulk::FUN_11240be0(char *param_2)
 {
+  int param_1 = (int )this;
   int *piVar1;
   int iVar2;
   char *pcVar3;
@@ -30054,9 +28810,9 @@ undefined4 __thiscall FUN_11240be0(int param_1,char *param_2)
 // Reference entry 11240e60; body size 371 bytes.
 #line 1 "ENTRY_11240e60"
 
-undefined1 __thiscall FUN_11240e60(int *param_1,int param_2)
-
+undefined1 __thiscall Recovered_Bulk::FUN_11240e60(int param_2)
 {
+  int *param_1 = (int *)this;
   int *piVar1;
   bool bVar2;
   bool bVar3;
@@ -30266,9 +29022,9 @@ bool __fastcall FUN_11241a30(int param_1)
 // Reference entry 11241bd0; body size 78 bytes.
 #line 1 "ENTRY_11241bd0"
 
-int __thiscall FUN_11241bd0(int param_1,uint param_2)
-
+int __thiscall Recovered_Bulk::FUN_11241bd0(uint param_2)
 {
+  int param_1 = (int )this;
   int iVar1;
   int iVar2;
   int *piVar3;
@@ -30298,9 +29054,9 @@ int __thiscall FUN_11241bd0(int param_1,uint param_2)
 // Reference entry 11241d50; body size 97 bytes.
 #line 1 "ENTRY_11241d50"
 
-int __thiscall FUN_11241d50(int param_1,int param_2)
-
+int __thiscall Recovered_Bulk::FUN_11241d50(int param_2)
 {
+  int param_1 = (int )this;
   int iVar1;
   int iVar2;
   
@@ -30325,9 +29081,9 @@ int __thiscall FUN_11241d50(int param_1,int param_2)
 // Reference entry 11241e00; body size 85 bytes.
 #line 1 "ENTRY_11241e00"
 
-undefined4 __thiscall FUN_11241e00(int param_1,undefined4 param_2)
-
+undefined4 __thiscall Recovered_Bulk::FUN_11241e00(undefined4 param_2)
 {
+  int param_1 = (int )this;
   undefined4 *puVar1;
   undefined4 *_Memory;
   undefined4 uVar2;
@@ -30349,9 +29105,9 @@ undefined4 __thiscall FUN_11241e00(int param_1,undefined4 param_2)
 // Reference entry 11241ee0; body size 143 bytes.
 #line 1 "ENTRY_11241ee0"
 
-int __thiscall FUN_11241ee0(int param_1,int param_2)
-
+int __thiscall Recovered_Bulk::FUN_11241ee0(int param_2)
 {
+  int param_1 = (int )this;
   int iVar1;
   undefined4 uVar2;
   int iVar3;
@@ -30383,9 +29139,9 @@ int __thiscall FUN_11241ee0(int param_1,int param_2)
 // Reference entry 11242940; body size 77 bytes.
 #line 1 "ENTRY_11242940"
 
-void __thiscall FUN_11242940(int param_1,int param_2)
-
+void __thiscall Recovered_Bulk::FUN_11242940(int param_2)
 {
+  int param_1 = (int )this;
   undefined4 uVar1;
   undefined4 *puVar2;
   int iVar3;
@@ -30407,10 +29163,9 @@ void __thiscall FUN_11242940(int param_1,int param_2)
 // Reference entry 112429a0; body size 86 bytes.
 #line 1 "ENTRY_112429a0"
 
-undefined4 * __thiscall
-FUN_112429a0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_112429a0(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   param_1[1] = param_4;
   param_1[3] = param_3;
   *param_1 = (undefined4)((uint)&Ext_RWLock_vftable);
@@ -30428,9 +29183,9 @@ FUN_112429a0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined
 // Reference entry 11242b50; body size 135 bytes.
 #line 1 "ENTRY_11242b50"
 
-undefined4 __thiscall FUN_11242b50(int param_1,uint param_2)
-
+undefined4 __thiscall Recovered_Bulk::FUN_11242b50(uint param_2)
 {
+  int param_1 = (int )this;
   uint uVar1;
   char cVar2;
   int iVar3;
@@ -30490,9 +29245,9 @@ undefined1 __fastcall FUN_11242c00(int param_1)
 // Reference entry 11242dd0; body size 142 bytes.
 #line 1 "ENTRY_11242dd0"
 
-undefined4 __thiscall FUN_11242dd0(int param_1,uint param_2)
-
+undefined4 __thiscall Recovered_Bulk::FUN_11242dd0(uint param_2)
 {
+  int param_1 = (int )this;
   uint uVar1;
   char cVar2;
   int iVar3;
@@ -30552,9 +29307,9 @@ undefined1 __fastcall FUN_11242e90(int param_1)
 // Reference entry 11243180; body size 120 bytes.
 #line 1 "ENTRY_11243180"
 
-undefined4 * __thiscall FUN_11243180(undefined4 *param_1,int param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11243180(int param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -30579,9 +29334,9 @@ undefined4 * __thiscall FUN_11243180(undefined4 *param_1,int param_2)
 // Reference entry 11243220; body size 157 bytes.
 #line 1 "ENTRY_11243220"
 
-undefined4 * __thiscall FUN_11243220(undefined4 *param_1,int param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11243220(int param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
   int iVar2;
   uint uVar3;
@@ -30654,9 +29409,9 @@ void __fastcall FUN_11243400(undefined4 *param_1)
 // Reference entry 11243560; body size 117 bytes.
 #line 1 "ENTRY_11243560"
 
-undefined4 * __thiscall FUN_11243560(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11243560(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
   int iVar2;
   int iVar3;
@@ -30718,9 +29473,9 @@ void __fastcall FUN_112438b0(int *param_1)
 // Reference entry 11243950; body size 109 bytes.
 #line 1 "ENTRY_11243950"
 
-void __thiscall FUN_11243950(int *param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_11243950(undefined4 param_2)
 {
+  int *param_1 = (int *)this;
   int iVar1;
   
   if (*(char *)(param_1[9] + 4 + (int)param_1) == '\0') {
@@ -30772,9 +29527,9 @@ void __fastcall FUN_112439e0(int *param_1)
 // Reference entry 11243a80; body size 109 bytes.
 #line 1 "ENTRY_11243a80"
 
-void __thiscall FUN_11243a80(int *param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_11243a80(undefined4 param_2)
 {
+  int *param_1 = (int *)this;
   int iVar1;
   
   if (*(char *)(param_1[9] + 4 + (int)param_1) == '\0') {
@@ -30800,9 +29555,9 @@ void __thiscall FUN_11243a80(int *param_1,undefined4 param_2)
 // Reference entry 11243b10; body size 119 bytes.
 #line 1 "ENTRY_11243b10"
 
-void __thiscall FUN_11243b10(int *param_1,void *param_2,size_t param_3)
-
+void __thiscall Recovered_Bulk::FUN_11243b10(void *param_2,size_t param_3)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   char *_Dst;
   char *pcVar2;
@@ -30830,9 +29585,9 @@ void __thiscall FUN_11243b10(int *param_1,void *param_2,size_t param_3)
 // Reference entry 11243c80; body size 120 bytes.
 #line 1 "ENTRY_11243c80"
 
-void __thiscall FUN_11243c80(int *param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_11243c80(undefined4 param_2)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   char *pcVar2;
   char local_24 [32];
@@ -30860,9 +29615,9 @@ void __thiscall FUN_11243c80(int *param_1,undefined4 param_2)
 // Reference entry 11243d20; body size 146 bytes.
 #line 1 "ENTRY_11243d20"
 
-void __thiscall FUN_11243d20(int *param_1,undefined8 param_2)
-
+void __thiscall Recovered_Bulk::FUN_11243d20(undefined8 param_2)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   char *pcVar2;
   char local_43c [1080];
@@ -30890,9 +29645,9 @@ void __thiscall FUN_11243d20(int *param_1,undefined8 param_2)
 // Reference entry 11243e50; body size 72 bytes.
 #line 1 "ENTRY_11243e50"
 
-void __thiscall FUN_11243e50(int *param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_11243e50(undefined4 param_2)
 {
+  int *param_1 = (int *)this;
   undefined4 unaff_ESI;
   
   if (*(char *)(param_1[9] + 4 + (int)param_1) == '\0') {
@@ -30909,9 +29664,9 @@ void __thiscall FUN_11243e50(int *param_1,undefined4 param_2)
 // Reference entry 11243f30; body size 303 bytes.
 #line 1 "ENTRY_11243f30"
 
-void __thiscall FUN_11243f30(int *param_1,undefined4 param_2,undefined4 *param_3)
-
+void __thiscall Recovered_Bulk::FUN_11243f30(undefined4 param_2,undefined4 *param_3)
 {
+  int *param_1 = (int *)this;
   undefined4 ****ppppuVar1;
   int iVar2;
   undefined4 uVar3;
@@ -30984,9 +29739,9 @@ LAB_11244009:
 // Reference entry 11244310; body size 151 bytes.
 #line 1 "ENTRY_11244310"
 
-void __thiscall FUN_11244310(int *param_1,undefined4 param_2,int *param_3)
-
+void __thiscall Recovered_Bulk::FUN_11244310(undefined4 param_2,int *param_3)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   undefined1 auStack_24 [32];
   uint local_4;
@@ -31013,9 +29768,9 @@ void __thiscall FUN_11244310(int *param_1,undefined4 param_2,int *param_3)
 // Reference entry 112447a0; body size 79 bytes.
 #line 1 "ENTRY_112447a0"
 
-void __thiscall FUN_112447a0(int *param_1,char param_2)
-
+void __thiscall Recovered_Bulk::FUN_112447a0(char param_2)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   char *pcVar2;
   char *pcVar3;
@@ -31043,9 +29798,9 @@ void __thiscall FUN_112447a0(int *param_1,char param_2)
 // Reference entry 11244840; body size 485 bytes.
 #line 1 "ENTRY_11244840"
 
-void __thiscall FUN_11244840(int *param_1,byte *param_2,int param_3,char param_4,char param_5)
-
+void __thiscall Recovered_Bulk::FUN_11244840(byte *param_2,int param_3,char param_4,char param_5)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   byte bVar2;
   char *pcVar3;
@@ -31159,9 +29914,9 @@ LAB_11244a11:
 // Reference entry 11244ac0; body size 67 bytes.
 #line 1 "ENTRY_11244ac0"
 
-void __thiscall FUN_11244ac0(int *param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_11244ac0(undefined4 param_2)
 {
+  int *param_1 = (int *)this;
   if (*(char *)(param_1[9] + 4 + (int)param_1) == '\0') {
     (**(code **)(*param_1 + 4))(&DAT_118850bc,1);
   }
@@ -31177,9 +29932,9 @@ void __thiscall FUN_11244ac0(int *param_1,undefined4 param_2)
 // Reference entry 11244b20; body size 84 bytes.
 #line 1 "ENTRY_11244b20"
 
-void __thiscall FUN_11244b20(int *param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_11244b20(undefined4 param_2)
 {
+  int *param_1 = (int *)this;
   if (*(char *)(param_1[9] + 4 + (int)param_1) == '\0') {
     (**(code **)(*param_1 + 4))(&DAT_118850bc,1);
   }
@@ -31531,9 +30286,9 @@ void FUN_112479e0(undefined4 param_1)
 // Reference entry 11247c50; body size 157 bytes.
 #line 1 "ENTRY_11247c50"
 
-void __thiscall FUN_11247c50(int param_1,char *param_2,undefined4 param_3,char *param_4)
-
+void __thiscall Recovered_Bulk::FUN_11247c50(char *param_2,undefined4 param_3,char *param_4)
 {
+  int param_1 = (int )this;
   undefined4 uVar1;
   char cVar2;
   uint uVar3;
@@ -31773,9 +30528,9 @@ void __fastcall FUN_11248460(void *param_1)
 // Reference entry 11248b40; body size 73 bytes.
 #line 1 "ENTRY_11248b40"
 
-bool __thiscall FUN_11248b40(int param_1,undefined4 param_2)
-
+bool __thiscall Recovered_Bulk::FUN_11248b40(undefined4 param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   int iVar2;
   
@@ -31855,9 +30610,9 @@ LAB_11248cf2:
 // Reference entry 11249230; body size 140 bytes.
 #line 1 "ENTRY_11249230"
 
-uint __thiscall FUN_11249230(int param_1,char *param_2,char *param_3)
-
+uint __thiscall Recovered_Bulk::FUN_11249230(char *param_2,char *param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   char *in_EAX;
   char *pcVar2;
@@ -31895,9 +30650,9 @@ uint __thiscall FUN_11249230(int param_1,char *param_2,char *param_3)
 // Reference entry 112492e0; body size 254 bytes.
 #line 1 "ENTRY_112492e0"
 
-void __thiscall FUN_112492e0(int param_1,char *param_2,undefined4 *param_3)
-
+void __thiscall Recovered_Bulk::FUN_112492e0(char *param_2,undefined4 *param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   char *pcVar2;
   char *pcVar3;
@@ -31943,9 +30698,9 @@ void __thiscall FUN_112492e0(int param_1,char *param_2,undefined4 *param_3)
 // Reference entry 11249420; body size 246 bytes.
 #line 1 "ENTRY_11249420"
 
-void __thiscall FUN_11249420(int param_1,char *param_2,undefined4 param_3)
-
+void __thiscall Recovered_Bulk::FUN_11249420(char *param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   char *pcVar2;
   char *pcVar3;
@@ -31991,9 +30746,9 @@ void __thiscall FUN_11249420(int param_1,char *param_2,undefined4 param_3)
 // Reference entry 11249560; body size 246 bytes.
 #line 1 "ENTRY_11249560"
 
-void __thiscall FUN_11249560(int param_1,char *param_2,undefined4 param_3)
-
+void __thiscall Recovered_Bulk::FUN_11249560(char *param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   char *pcVar2;
   char *pcVar3;
@@ -32039,9 +30794,9 @@ void __thiscall FUN_11249560(int param_1,char *param_2,undefined4 param_3)
 // Reference entry 112496a0; body size 262 bytes.
 #line 1 "ENTRY_112496a0"
 
-void __thiscall FUN_112496a0(int param_1,char *param_2,float param_3)
-
+void __thiscall Recovered_Bulk::FUN_112496a0(char *param_2,float param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   char *pcVar2;
   char *pcVar3;
@@ -32087,9 +30842,9 @@ void __thiscall FUN_112496a0(int param_1,char *param_2,float param_3)
 // Reference entry 112497f0; body size 246 bytes.
 #line 1 "ENTRY_112497f0"
 
-void __thiscall FUN_112497f0(int param_1,char *param_2,undefined4 param_3,undefined4 param_4)
-
+void __thiscall Recovered_Bulk::FUN_112497f0(char *param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   char cVar1;
   char *pcVar2;
   char *pcVar3;
@@ -32135,9 +30890,9 @@ void __thiscall FUN_112497f0(int param_1,char *param_2,undefined4 param_3,undefi
 // Reference entry 11249930; body size 246 bytes.
 #line 1 "ENTRY_11249930"
 
-void __thiscall FUN_11249930(int param_1,char *param_2,undefined4 param_3,undefined4 param_4)
-
+void __thiscall Recovered_Bulk::FUN_11249930(char *param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   char cVar1;
   char *pcVar2;
   char *pcVar3;
@@ -32243,11 +30998,9 @@ LAB_11249b81:
 // Reference entry 11249c80; body size 206 bytes.
 #line 1 "ENTRY_11249c80"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11249c80(int param_1,undefined *param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11249c80(undefined *param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   size_t _Size;
   uint uVar1;
   char *pcVar2;
@@ -32294,9 +31047,9 @@ void __thiscall FUN_11249c80(int param_1,undefined *param_2,undefined4 param_3)
 // Reference entry 11249d90; body size 76 bytes.
 #line 1 "ENTRY_11249d90"
 
-undefined4 __thiscall FUN_11249d90(int param_1,undefined4 param_2,undefined4 param_3)
-
+undefined4 __thiscall Recovered_Bulk::FUN_11249d90(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   undefined1 *local_8;
   undefined4 local_4;
   
@@ -32312,9 +31065,9 @@ undefined4 __thiscall FUN_11249d90(int param_1,undefined4 param_2,undefined4 par
 // Reference entry 11249e60; body size 272 bytes.
 #line 1 "ENTRY_11249e60"
 
-void __thiscall FUN_11249e60(int param_1,undefined4 param_2,char *param_3)
-
+void __thiscall Recovered_Bulk::FUN_11249e60(undefined4 param_2,char *param_3)
 {
+  int param_1 = (int )this;
   int iVar1;
   undefined1 *local_58;
   char *local_54;
@@ -32372,9 +31125,9 @@ void __thiscall FUN_11249e60(int param_1,undefined4 param_2,char *param_3)
 // Reference entry 11249fe0; body size 111 bytes.
 #line 1 "ENTRY_11249fe0"
 
-undefined4 * __thiscall FUN_11249fe0(undefined4 *param_1,undefined4 param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11249fe0(undefined4 param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   param_1[1] = param_2;
   *param_1 = (undefined4)((uint)&Ext_RAsyncSocketIOSession_vftable);
   param_1[2] = 0xffffffff;
@@ -32397,9 +31150,9 @@ undefined4 * __thiscall FUN_11249fe0(undefined4 *param_1,undefined4 param_2)
 // Reference entry 1124a090; body size 160 bytes.
 #line 1 "ENTRY_1124a090"
 
-undefined4 * __thiscall FUN_1124a090(undefined4 *param_1,undefined4 param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1124a090(undefined4 param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   param_1[1] = (uint)&Ext_RHTTPAsyncSocketIOSessionCB_vftable;
   *param_1 = (undefined4)((uint)&Ext_RHTTPAsyncSocketIOSessionCB_vftable);
   param_1[2] = param_2;
@@ -32425,9 +31178,9 @@ undefined4 * __thiscall FUN_1124a090(undefined4 *param_1,undefined4 param_2)
 // Reference entry 1124a160; body size 125 bytes.
 #line 1 "ENTRY_1124a160"
 
-undefined4 * __thiscall FUN_1124a160(undefined4 *param_1,char *param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1124a160(char *param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   char *pcVar1;
   char cVar2;
   char *pcVar3;
@@ -32460,9 +31213,9 @@ undefined4 * __thiscall FUN_1124a160(undefined4 *param_1,char *param_2)
 // Reference entry 1124a490; body size 67 bytes.
 #line 1 "ENTRY_1124a490"
 
-undefined4 * __thiscall FUN_1124a490(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1124a490(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&Ext_RHTTPAsyncSocketIOSessionCB_vftable);
   param_1[1] = (uint)&Ext_RHTTPAsyncSocketIOSessionCB_vftable;
   if (*(char *)(param_1 + 0x218) != '\0') {
@@ -32478,9 +31231,9 @@ undefined4 * __thiscall FUN_1124a490(undefined4 *param_1,byte param_2)
 // Reference entry 1124a930; body size 179 bytes.
 #line 1 "ENTRY_1124a930"
 
-undefined4 __thiscall FUN_1124a930(int *param_1,undefined4 param_2,undefined4 param_3,int param_4)
-
+undefined4 __thiscall Recovered_Bulk::FUN_1124a930(undefined4 param_2,undefined4 param_3,int param_4)
 {
+  int *param_1 = (int *)this;
   int iVar1;
   undefined2 uVar2;
   undefined4 uVar3;
@@ -32513,9 +31266,9 @@ undefined4 __thiscall FUN_1124a930(int *param_1,undefined4 param_2,undefined4 pa
 // Reference entry 1124aa10; body size 191 bytes.
 #line 1 "ENTRY_1124aa10"
 
-undefined4 __thiscall FUN_1124aa10(int *param_1,undefined4 param_2,undefined4 param_3,int param_4)
-
+undefined4 __thiscall Recovered_Bulk::FUN_1124aa10(undefined4 param_2,undefined4 param_3,int param_4)
 {
+  int *param_1 = (int *)this;
   int iVar1;
   undefined2 uVar2;
   undefined4 uVar3;
@@ -32645,9 +31398,9 @@ void __fastcall FUN_1124abb0(int param_1)
 // Reference entry 1124afd0; body size 93 bytes.
 #line 1 "ENTRY_1124afd0"
 
-undefined4 __thiscall FUN_1124afd0(int *param_1,char *param_2)
-
+undefined4 __thiscall Recovered_Bulk::FUN_1124afd0(char *param_2)
 {
+  int *param_1 = (int *)this;
   int iVar1;
   char *_Str1;
   
@@ -32677,9 +31430,9 @@ undefined4 __thiscall FUN_1124afd0(int *param_1,char *param_2)
 // Reference entry 1124b120; body size 652 bytes.
 #line 1 "ENTRY_1124b120"
 
-void __thiscall FUN_1124b120(int param_1,uint param_2)
-
+void __thiscall Recovered_Bulk::FUN_1124b120(uint param_2)
 {
+  int param_1 = (int )this;
   char *pcVar1;
   uint uVar2;
   int iVar3;
@@ -32798,11 +31551,10 @@ LAB_1124b395:
 // Reference entry 1124b490; body size 67 bytes.
 #line 1 "ENTRY_1124b490"
 
-int __thiscall
-FUN_1124b490(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+int __thiscall Recovered_Bulk::FUN_1124b490(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6)
-
 {
+  int param_1 = (int )this;
   char cVar1;
   int iVar2;
   
@@ -32821,11 +31573,10 @@ FUN_1124b490(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1124b4f0; body size 68 bytes.
 #line 1 "ENTRY_1124b4f0"
 
-int __thiscall
-FUN_1124b4f0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+int __thiscall Recovered_Bulk::FUN_1124b4f0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6)
-
 {
+  int param_1 = (int )this;
   char cVar1;
   int iVar2;
   
@@ -32844,10 +31595,9 @@ FUN_1124b4f0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 1124b550; body size 395 bytes.
 #line 1 "ENTRY_1124b550"
 
-undefined4 __thiscall
-FUN_1124b550(int param_1,undefined4 param_2,char *param_3,char *param_4,void *param_5,char *param_6)
-
+undefined4 __thiscall Recovered_Bulk::FUN_1124b550(undefined4 param_2,char *param_3,char *param_4,void *param_5,char *param_6)
 {
+  int param_1 = (int )this;
   char cVar1;
   undefined1 uVar2;
   undefined2 uVar3;
@@ -33064,9 +31814,9 @@ LAB_1124c18c:
 // Reference entry 1124c460; body size 77 bytes.
 #line 1 "ENTRY_1124c460"
 
-uint __thiscall FUN_1124c460(int param_1,undefined4 param_2,uint param_3)
-
+uint __thiscall Recovered_Bulk::FUN_1124c460(undefined4 param_2,uint param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   uint uVar2;
   uint uVar3;
@@ -33088,9 +31838,9 @@ uint __thiscall FUN_1124c460(int param_1,undefined4 param_2,uint param_3)
 // Reference entry 1124c4c0; body size 87 bytes.
 #line 1 "ENTRY_1124c4c0"
 
-uint __thiscall FUN_1124c4c0(int param_1,undefined4 param_2,uint param_3)
-
+uint __thiscall Recovered_Bulk::FUN_1124c4c0(undefined4 param_2,uint param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   uint uVar2;
   
@@ -33162,9 +31912,9 @@ void __fastcall FUN_1124c7a0(int param_1)
 // Reference entry 1124c8a0; body size 672 bytes.
 #line 1 "ENTRY_1124c8a0"
 
-void __thiscall FUN_1124c8a0(int param_1,int param_2,uint param_3)
-
+void __thiscall Recovered_Bulk::FUN_1124c8a0(int param_2,uint param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   ulong uVar2;
   uint uVar3;
@@ -33290,9 +32040,9 @@ LAB_1124cb0d:
 // Reference entry 1124cf40; body size 213 bytes.
 #line 1 "ENTRY_1124cf40"
 
-int __thiscall FUN_1124cf40(int param_1,void *param_2,uint param_3)
-
+int __thiscall Recovered_Bulk::FUN_1124cf40(void *param_2,uint param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   int iVar2;
   uint uVar3;
@@ -33480,9 +32230,9 @@ undefined1 __fastcall FUN_1124d5d0(int param_1)
 // Reference entry 1124d810; body size 80 bytes.
 #line 1 "ENTRY_1124d810"
 
-undefined1 __thiscall FUN_1124d810(undefined4 param_1,undefined4 param_2,undefined4 param_3)
-
+undefined1 __thiscall Recovered_Bulk::FUN_1124d810(undefined4 param_2,undefined4 param_3)
 {
+  undefined4 param_1 = (undefined4 )this;
   char cVar1;
   
   cVar1 = (char)(thunk_FUN_1145f960(param_1));
@@ -33500,9 +32250,9 @@ undefined1 __thiscall FUN_1124d810(undefined4 param_1,undefined4 param_2,undefin
 // Reference entry 1124d880; body size 81 bytes.
 #line 1 "ENTRY_1124d880"
 
-undefined1 __thiscall FUN_1124d880(int param_1,undefined4 param_2,undefined4 param_3)
-
+undefined1 __thiscall Recovered_Bulk::FUN_1124d880(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   
   cVar1 = (char)(thunk_FUN_1145f960(param_1 + 0x10));
@@ -33539,9 +32289,9 @@ int FUN_1124d980(int param_1,undefined4 param_2)
 // Reference entry 1124da30; body size 266 bytes.
 #line 1 "ENTRY_1124da30"
 
-void __thiscall FUN_1124da30(int param_1,undefined4 param_2,uint param_3)
-
+void __thiscall Recovered_Bulk::FUN_1124da30(undefined4 param_2,uint param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   char *pcVar2;
   char *pcVar3;
@@ -33587,9 +32337,9 @@ void __thiscall FUN_1124da30(int param_1,undefined4 param_2,uint param_3)
 // Reference entry 1124db80; body size 173 bytes.
 #line 1 "ENTRY_1124db80"
 
-void __thiscall FUN_1124db80(undefined4 param_1,undefined4 param_2,uint param_3)
-
+void __thiscall Recovered_Bulk::FUN_1124db80(undefined4 param_2,uint param_3)
 {
+  undefined4 param_1 = (undefined4 )this;
   char cVar1;
   uint uVar2;
   undefined1 local_2c [40];
@@ -33616,11 +32366,10 @@ void __thiscall FUN_1124db80(undefined4 param_1,undefined4 param_2,uint param_3)
 // Reference entry 1124df10; body size 247 bytes.
 #line 1 "ENTRY_1124df10"
 
-undefined4 * __thiscall
-FUN_1124df10(undefined4 *param_1,undefined4 param_2,undefined1 param_3,undefined1 param_4,
+undefined4 * __thiscall Recovered_Bulk::FUN_1124df10(undefined4 param_2,undefined1 param_3,undefined1 param_4,
             undefined4 param_5)
-
 {
+  undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -33725,11 +32474,10 @@ undefined4 * __fastcall FUN_1124e150(undefined4 *param_1)
 // Reference entry 1124e4f0; body size 120 bytes.
 #line 1 "ENTRY_1124e4f0"
 
-undefined4 * __thiscall
-FUN_1124e4f0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+undefined4 * __thiscall Recovered_Bulk::FUN_1124e4f0(undefined4 param_2,undefined4 param_3,undefined4 param_4,
             undefined4 param_5,undefined4 param_6)
-
 {
+  undefined4 *param_1 = (undefined4 *)this;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
@@ -33750,10 +32498,9 @@ FUN_1124e4f0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined
 // Reference entry 1124e590; body size 296 bytes.
 #line 1 "ENTRY_1124e590"
 
-undefined4 * __thiscall
-FUN_1124e590(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined1 param_4)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1124e590(undefined4 param_2,undefined4 param_3,undefined1 param_4)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -33802,9 +32549,9 @@ FUN_1124e590(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined
 // Reference entry 1124e830; body size 120 bytes.
 #line 1 "ENTRY_1124e830"
 
-undefined4 * __thiscall FUN_1124e830(undefined4 *param_1,undefined2 param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1124e830(undefined2 param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -33999,9 +32746,9 @@ void __fastcall FUN_1124f230(undefined4 *param_1)
 // Reference entry 1124f400; body size 100 bytes.
 #line 1 "ENTRY_1124f400"
 
-void __thiscall FUN_1124f400(int param_1,char *param_2)
-
+void __thiscall Recovered_Bulk::FUN_1124f400(char *param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   undefined1 *puVar2;
   int iVar3;
@@ -34033,9 +32780,9 @@ void __thiscall FUN_1124f400(int param_1,char *param_2)
 // Reference entry 1124f580; body size 66 bytes.
 #line 1 "ENTRY_1124f580"
 
-undefined4 * __thiscall FUN_1124f580(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1124f580(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&Ext_RCRInParamDeepCopy_vftable);
   free((void *)param_1[0x16]);
   free((void *)param_1[0x17]);
@@ -34051,9 +32798,9 @@ undefined4 * __thiscall FUN_1124f580(undefined4 *param_1,byte param_2)
 // Reference entry 1124f6b0; body size 79 bytes.
 #line 1 "ENTRY_1124f6b0"
 
-undefined4 * __thiscall FUN_1124f6b0(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1124f6b0(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&Ext_RCRResultParser_vftable);
   param_1[0x4a] = (uint)&Ext_REncryptedStringDecoder_vftable;
   param_1[8] = (uint)&Ext_RAesDecoder_vftable;
@@ -34070,9 +32817,9 @@ undefined4 * __thiscall FUN_1124f6b0(undefined4 *param_1,byte param_2)
 // Reference entry 1124f720; body size 79 bytes.
 #line 1 "ENTRY_1124f720"
 
-undefined4 * __thiscall FUN_1124f720(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1124f720(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&Ext_REncryptedStringEmitter_vftable);
   param_1[0x3f] = (uint)&Ext_REncryptedStringEncoder_vftable;
   param_1[7] = (uint)&Ext_RAesEncoder_vftable;
@@ -34089,9 +32836,9 @@ undefined4 * __thiscall FUN_1124f720(undefined4 *param_1,byte param_2)
 // Reference entry 1124f900; body size 118 bytes.
 #line 1 "ENTRY_1124f900"
 
-undefined4 * __thiscall FUN_1124f900(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1124f900(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -34116,9 +32863,9 @@ undefined4 * __thiscall FUN_1124f900(undefined4 *param_1,byte param_2)
 // Reference entry 1124f9a0; body size 118 bytes.
 #line 1 "ENTRY_1124f9a0"
 
-undefined4 * __thiscall FUN_1124f9a0(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1124f9a0(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -34143,9 +32890,9 @@ undefined4 * __thiscall FUN_1124f9a0(undefined4 *param_1,byte param_2)
 // Reference entry 1124fd20; body size 114 bytes.
 #line 1 "ENTRY_1124fd20"
 
-undefined4 * __thiscall FUN_1124fd20(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1124fd20(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -34170,9 +32917,9 @@ undefined4 * __thiscall FUN_1124fd20(undefined4 *param_1,byte param_2)
 // Reference entry 1124fdc0; body size 75 bytes.
 #line 1 "ENTRY_1124fdc0"
 
-void __thiscall FUN_1124fdc0(int param_1,undefined1 *param_2,int param_3)
-
+void __thiscall Recovered_Bulk::FUN_1124fdc0(undefined1 *param_2,int param_3)
 {
+  int param_1 = (int )this;
   undefined1 uVar1;
   
   if (*(int *)(param_1 + 4) == 8) {
@@ -34200,9 +32947,9 @@ void __thiscall FUN_1124fdc0(int param_1,undefined1 *param_2,int param_3)
 // Reference entry 1124ffa0; body size 71 bytes.
 #line 1 "ENTRY_1124ffa0"
 
-int __thiscall FUN_1124ffa0(int param_1,undefined4 param_2)
-
+int __thiscall Recovered_Bulk::FUN_1124ffa0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   uint uVar1;
   
   uVar1 = (uint)(*(uint *)(param_1 + 8));
@@ -34223,9 +32970,9 @@ int __thiscall FUN_1124ffa0(int param_1,undefined4 param_2)
 // Reference entry 11250000; body size 71 bytes.
 #line 1 "ENTRY_11250000"
 
-int __thiscall FUN_11250000(int param_1,undefined4 param_2)
-
+int __thiscall Recovered_Bulk::FUN_11250000(undefined4 param_2)
 {
+  int param_1 = (int )this;
   uint uVar1;
   
   uVar1 = (uint)(*(uint *)(param_1 + 8));
@@ -34246,9 +32993,9 @@ int __thiscall FUN_11250000(int param_1,undefined4 param_2)
 // Reference entry 11250160; body size 70 bytes.
 #line 1 "ENTRY_11250160"
 
-int __thiscall FUN_11250160(int param_1,undefined4 param_2)
-
+int __thiscall Recovered_Bulk::FUN_11250160(undefined4 param_2)
 {
+  int param_1 = (int )this;
   int iVar1;
   uint uVar2;
   
@@ -34270,9 +33017,9 @@ int __thiscall FUN_11250160(int param_1,undefined4 param_2)
 // Reference entry 112501c0; body size 84 bytes.
 #line 1 "ENTRY_112501c0"
 
-int __thiscall FUN_112501c0(int param_1,undefined4 param_2)
-
+int __thiscall Recovered_Bulk::FUN_112501c0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   uint uVar1;
   int iVar2;
   
@@ -34295,9 +33042,9 @@ int __thiscall FUN_112501c0(int param_1,undefined4 param_2)
 // Reference entry 11250230; body size 84 bytes.
 #line 1 "ENTRY_11250230"
 
-int __thiscall FUN_11250230(int param_1,undefined4 param_2)
-
+int __thiscall Recovered_Bulk::FUN_11250230(undefined4 param_2)
 {
+  int param_1 = (int )this;
   uint uVar1;
   int iVar2;
   
@@ -34320,9 +33067,9 @@ int __thiscall FUN_11250230(int param_1,undefined4 param_2)
 // Reference entry 11250a70; body size 257 bytes.
 #line 1 "ENTRY_11250a70"
 
-bool __thiscall FUN_11250a70(int param_1,int param_2,int param_3,int *param_4)
-
+bool __thiscall Recovered_Bulk::FUN_11250a70(int param_2,int param_3,int *param_4)
 {
+  int param_1 = (int )this;
   int iVar1;
   char cVar2;
   undefined4 uVar3;
@@ -34455,9 +33202,9 @@ bool __thiscall FUN_11250a70(int param_1,int param_2,int param_3,int *param_4)
 // Reference entry 11250dc0; body size 178 bytes.
 #line 1 "ENTRY_11250dc0"
 
-bool __thiscall FUN_11250dc0(int param_1,int param_2,int param_3,int *param_4)
-
+bool __thiscall Recovered_Bulk::FUN_11250dc0(int param_2,int param_3,int *param_4)
 {
+  int param_1 = (int )this;
   char cVar1;
   undefined4 uVar2;
   char *pcVar3;
@@ -34882,9 +33629,9 @@ char * FUN_11252dfd(void)
 // Reference entry 11252e80; body size 115 bytes.
 #line 1 "ENTRY_11252e80"
 
-void __thiscall FUN_11252e80(int *param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_11252e80(undefined4 param_2)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   undefined4 uVar2;
   int *piVar3;
@@ -34918,9 +33665,9 @@ void __thiscall FUN_11252e80(int *param_1,undefined4 param_2)
 // Reference entry 11252fa0; body size 117 bytes.
 #line 1 "ENTRY_11252fa0"
 
-void __thiscall FUN_11252fa0(int *param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_11252fa0(undefined4 param_2)
 {
+  int *param_1 = (int *)this;
   int *piVar1;
   undefined4 uVar2;
   char *pcVar3;
@@ -34955,9 +33702,9 @@ void __thiscall FUN_11252fa0(int *param_1,undefined4 param_2)
 // Reference entry 11253040; body size 161 bytes.
 #line 1 "ENTRY_11253040"
 
-void __thiscall FUN_11253040(int *param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_11253040(undefined4 param_2)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   int *piVar2;
   undefined4 uVar3;
@@ -35066,9 +33813,9 @@ int __fastcall FUN_11253130(int *param_1)
 // Reference entry 112532e0; body size 81 bytes.
 #line 1 "ENTRY_112532e0"
 
-undefined4 __thiscall FUN_112532e0(int param_1,undefined4 param_2,int param_3)
-
+undefined4 __thiscall Recovered_Bulk::FUN_112532e0(undefined4 param_2,int param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   
   if (param_3 != 0) {
@@ -35088,9 +33835,9 @@ undefined4 __thiscall FUN_112532e0(int param_1,undefined4 param_2,int param_3)
 // Reference entry 11254cb0; body size 100 bytes.
 #line 1 "ENTRY_11254cb0"
 
-undefined4 * __thiscall FUN_11254cb0(undefined4 *param_1,undefined4 param_2,int param_3)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11254cb0(undefined4 param_2,int param_3)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&Ext_RAccountsVectorClock_vftable);
   param_1[1] = 0;
   param_1[2] = 0;
@@ -35120,9 +33867,9 @@ undefined4 * __thiscall FUN_11254cb0(undefined4 *param_1,undefined4 param_2,int 
 // Reference entry 112555b0; body size 70 bytes.
 #line 1 "ENTRY_112555b0"
 
-int __thiscall FUN_112555b0(int param_1,int param_2)
-
+int __thiscall Recovered_Bulk::FUN_112555b0(int param_2)
 {
+  int param_1 = (int )this;
   undefined1 *puVar1;
   int iVar2;
   
@@ -35147,9 +33894,9 @@ int __thiscall FUN_112555b0(int param_1,int param_2)
 // Reference entry 11255c30; body size 118 bytes.
 #line 1 "ENTRY_11255c30"
 
-undefined4 __thiscall FUN_11255c30(int *param_1,int *param_2)
-
+undefined4 __thiscall Recovered_Bulk::FUN_11255c30(int *param_2)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   
   if (((param_1[1] == param_2[1]) && (*param_1 == *param_2)) && (param_1[0x7d] == param_2[0x7d])) {
@@ -35207,13 +33954,12 @@ undefined1 FUN_11255e90(char *param_1,ulong *param_2)
 // Reference entry 11255fd0; body size 222 bytes.
 #line 1 "ENTRY_11255fd0"
 
-undefined4 __thiscall
-FUN_11255fd0(uint *param_1,int param_2,uint param_3,undefined4 param_4,undefined4 param_5,
+undefined4 __thiscall Recovered_Bulk::FUN_11255fd0(int param_2,uint param_3,undefined4 param_4,undefined4 param_5,
             undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10,undefined4 param_11,undefined4 param_12,uint param_13,
             undefined4 param_14,undefined4 param_15,undefined4 param_16)
-
 {
+  uint *param_1 = (uint *)this;
   if ((*param_1 < 0x22) && (param_2 != 0)) {
     if (((param_3 != 0) || ((param_13 & 4) != 0)) && (((byte)param_13 & 5) != 5)) {
       thunk_FUN_103a3270(param_2);
@@ -35393,11 +34139,10 @@ undefined4 __fastcall FUN_11257a80(int param_1)
 // Reference entry 11257c40; body size 84 bytes.
 #line 1 "ENTRY_11257c40"
 
-void __thiscall
-FUN_11257c40(int param_1,int param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5,
+void __thiscall Recovered_Bulk::FUN_11257c40(int param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5,
             undefined4 param_6)
-
 {
+  int param_1 = (int )this;
   if ((param_2 == 1) || (param_2 == 2)) {
     param_2 = (int)(0xca07);
   }
@@ -35414,9 +34159,9 @@ FUN_11257c40(int param_1,int param_2,undefined4 param_3,undefined4 param_4,undef
 // Reference entry 11257d80; body size 145 bytes.
 #line 1 "ENTRY_11257d80"
 
-void __thiscall FUN_11257d80(int param_1,char *param_2,char *param_3)
-
+void __thiscall Recovered_Bulk::FUN_11257d80(char *param_2,char *param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   void *pvVar2;
   char *pcVar3;
@@ -35461,9 +34206,9 @@ void __thiscall FUN_11257d80(int param_1,char *param_2,char *param_3)
 // Reference entry 11257f10; body size 145 bytes.
 #line 1 "ENTRY_11257f10"
 
-void __thiscall FUN_11257f10(int param_1,char *param_2,char *param_3)
-
+void __thiscall Recovered_Bulk::FUN_11257f10(char *param_2,char *param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   void *pvVar2;
   char *pcVar3;
@@ -35508,9 +34253,9 @@ void __thiscall FUN_11257f10(int param_1,char *param_2,char *param_3)
 // Reference entry 112580d0; body size 285 bytes.
 #line 1 "ENTRY_112580d0"
 
-undefined4 __thiscall FUN_112580d0(int param_1,char *param_2)
-
+undefined4 __thiscall Recovered_Bulk::FUN_112580d0(char *param_2)
 {
+  int param_1 = (int )this;
   char *pcVar1;
   int iVar2;
   ulong uVar3;
@@ -35549,9 +34294,9 @@ undefined4 __thiscall FUN_112580d0(int param_1,char *param_2)
 // Reference entry 11258490; body size 67 bytes.
 #line 1 "ENTRY_11258490"
 
-void __thiscall FUN_11258490(int param_1,undefined4 param_2,undefined4 param_3)
-
+void __thiscall Recovered_Bulk::FUN_11258490(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   if ((*(char *)(param_1 + 8) != '\0') && (param_1 + 8 != 0)) {
     thunk_FUN_1145c720(param_2,param_3,"SA_RINCON%u_%s",*(undefined4 *)(param_1 + 4),param_1 + 8);
     return;
@@ -35564,12 +34309,11 @@ void __thiscall FUN_11258490(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 112588d0; body size 342 bytes.
 #line 1 "ENTRY_112588d0"
 
-undefined4 __thiscall
-FUN_112588d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+undefined4 __thiscall Recovered_Bulk::FUN_112588d0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,char *param_7,char *param_8,undefined4 param_9,undefined4 param_10,
             char param_11)
-
 {
+  int param_1 = (int )this;
   char cVar1;
   void *pvVar2;
   char *pcVar3;
@@ -35663,9 +34407,9 @@ undefined4 FUN_11258ae0(char *param_1,int param_2,undefined4 param_3)
 // Reference entry 11258b70; body size 67 bytes.
 #line 1 "ENTRY_11258b70"
 
-void __thiscall FUN_11258b70(int param_1,int param_2)
-
+void __thiscall Recovered_Bulk::FUN_11258b70(int param_2)
 {
+  int param_1 = (int )this;
   undefined1 *puVar1;
   int iVar2;
   
@@ -35805,9 +34549,9 @@ LAB_1125a12f:
 // Reference entry 1125a1b0; body size 110 bytes.
 #line 1 "ENTRY_1125a1b0"
 
-void __thiscall FUN_1125a1b0(int param_1,char param_2)
-
+void __thiscall Recovered_Bulk::FUN_1125a1b0(char param_2)
 {
+  int param_1 = (int )this;
   undefined1 local_28 [36];
   uint local_4;
   
@@ -35829,9 +34573,9 @@ void __thiscall FUN_1125a1b0(int param_1,char param_2)
 // Reference entry 1125a250; body size 81 bytes.
 #line 1 "ENTRY_1125a250"
 
-void __thiscall FUN_1125a250(int param_1,int param_2,undefined4 param_3)
-
+void __thiscall Recovered_Bulk::FUN_1125a250(int param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   if (*(char *)(param_1 + 8) == '\0') {
     *(undefined1 *)(param_1 + 8) = 1;
     thunk_FUN_11272150(LAB_10083050,param_1);
@@ -36223,9 +34967,9 @@ LAB_1125b097:
 // Reference entry 1125b1d0; body size 122 bytes.
 #line 1 "ENTRY_1125b1d0"
 
-uint __thiscall FUN_1125b1d0(int *param_1,void *param_2,size_t param_3,void *param_4,size_t param_5)
-
+uint __thiscall Recovered_Bulk::FUN_1125b1d0(void *param_2,size_t param_3,void *param_4,size_t param_5)
 {
+  int *param_1 = (int *)this;
   undefined1 *puVar1;
   uint uVar2;
   
@@ -36252,9 +34996,9 @@ uint __thiscall FUN_1125b1d0(int *param_1,void *param_2,size_t param_3,void *par
 // Reference entry 1125b370; body size 96 bytes.
 #line 1 "ENTRY_1125b370"
 
-char * __thiscall FUN_1125b370(undefined4 *param_1,int param_2)
-
+char * __thiscall Recovered_Bulk::FUN_1125b370(int param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   char cVar1;
   char *pcVar2;
   int iVar3;
@@ -36359,11 +35103,10 @@ uint FUN_1125b590(int param_1,undefined4 param_2,int *param_3)
 // Reference entry 1125b6a0; body size 91 bytes.
 #line 1 "ENTRY_1125b6a0"
 
-undefined4 * __thiscall
-FUN_1125b6a0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+undefined4 * __thiscall Recovered_Bulk::FUN_1125b6a0(undefined4 param_2,undefined4 param_3,undefined4 param_4,
             undefined4 param_5,undefined4 param_6)
-
 {
+  undefined4 *param_1 = (undefined4 *)this;
   int iVar1;
   
   thunk_FUN_112859a0();
@@ -36380,12 +35123,11 @@ FUN_1125b6a0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined
 // Reference entry 1125b720; body size 97 bytes.
 #line 1 "ENTRY_1125b720"
 
-undefined4 * __thiscall
-FUN_1125b720(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+undefined4 * __thiscall Recovered_Bulk::FUN_1125b720(undefined4 param_2,undefined4 param_3,undefined4 param_4,
             undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
             undefined4 param_9)
-
 {
+  undefined4 *param_1 = (undefined4 *)this;
   int iVar1;
   
   thunk_FUN_112859a0();
@@ -36402,11 +35144,10 @@ FUN_1125b720(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined
 // Reference entry 1125b7a0; body size 89 bytes.
 #line 1 "ENTRY_1125b7a0"
 
-undefined4 * __thiscall
-FUN_1125b7a0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+undefined4 * __thiscall Recovered_Bulk::FUN_1125b7a0(undefined4 param_2,undefined4 param_3,undefined4 param_4,
             undefined4 param_5)
-
 {
+  undefined4 *param_1 = (undefined4 *)this;
   int iVar1;
   
   thunk_FUN_112859a0();
@@ -36423,11 +35164,10 @@ FUN_1125b7a0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined
 // Reference entry 1125b810; body size 89 bytes.
 #line 1 "ENTRY_1125b810"
 
-undefined4 * __thiscall
-FUN_1125b810(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+undefined4 * __thiscall Recovered_Bulk::FUN_1125b810(undefined4 param_2,undefined4 param_3,undefined4 param_4,
             undefined4 param_5)
-
 {
+  undefined4 *param_1 = (undefined4 *)this;
   int iVar1;
   
   thunk_FUN_112859a0();
@@ -36444,10 +35184,9 @@ FUN_1125b810(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined
 // Reference entry 1125b880; body size 87 bytes.
 #line 1 "ENTRY_1125b880"
 
-undefined4 * __thiscall
-FUN_1125b880(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1125b880(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   int iVar1;
   
   thunk_FUN_112859a0();
@@ -36464,11 +35203,9 @@ FUN_1125b880(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined
 // Reference entry 1125ba20; body size 142 bytes.
 #line 1 "ENTRY_1125ba20"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1125ba20(int *param_1,int param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1125ba20(int param_2)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   int iVar2;
   int *piVar3;
@@ -36499,11 +35236,9 @@ LAB_1125ba93:
 // Reference entry 1125bae0; body size 177 bytes.
 #line 1 "ENTRY_1125bae0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1125bae0(int *param_1,char *param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1125bae0(char *param_2)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   int _FileHandle;
   int iVar2;
@@ -36540,9 +35275,9 @@ LAB_1125bb6a:
 // Reference entry 1125bbd0; body size 161 bytes.
 #line 1 "ENTRY_1125bbd0"
 
-void __thiscall FUN_1125bbd0(undefined4 param_1,char param_2)
-
+void __thiscall Recovered_Bulk::FUN_1125bbd0(char param_2)
 {
+  undefined4 param_1 = (undefined4 )this;
   undefined *puVar1;
   undefined4 local_10;
   undefined4 local_c;
@@ -36620,9 +35355,9 @@ void __fastcall FUN_1125bf90(int *param_1)
 // Reference entry 1125c860; body size 143 bytes.
 #line 1 "ENTRY_1125c860"
 
-void __thiscall FUN_1125c860(int param_1,undefined4 param_2,undefined4 param_3)
-
+void __thiscall Recovered_Bulk::FUN_1125c860(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   int iVar2;
   char *pcVar3;
@@ -36729,9 +35464,9 @@ void FUN_1125c920(undefined4 param_1)
 // Reference entry 1125cda0; body size 66 bytes.
 #line 1 "ENTRY_1125cda0"
 
-undefined4 __thiscall FUN_1125cda0(undefined1 *param_1,undefined4 param_2,uint param_3)
-
+undefined4 __thiscall Recovered_Bulk::FUN_1125cda0(undefined4 param_2,uint param_3)
 {
+  undefined1 *param_1 = (undefined1 *)this;
   if (param_3 < 0xd) {
     return (undefined4)(0);
   }
@@ -36744,9 +35479,9 @@ undefined4 __thiscall FUN_1125cda0(undefined1 *param_1,undefined4 param_2,uint p
 // Reference entry 1125ce00; body size 66 bytes.
 #line 1 "ENTRY_1125ce00"
 
-undefined4 __thiscall FUN_1125ce00(undefined1 *param_1,undefined4 param_2,uint param_3)
-
+undefined4 __thiscall Recovered_Bulk::FUN_1125ce00(undefined4 param_2,uint param_3)
 {
+  undefined1 *param_1 = (undefined1 *)this;
   if (param_3 < 0x12) {
     return (undefined4)(0);
   }
@@ -36759,9 +35494,9 @@ undefined4 __thiscall FUN_1125ce00(undefined1 *param_1,undefined4 param_2,uint p
 // Reference entry 1125ce60; body size 66 bytes.
 #line 1 "ENTRY_1125ce60"
 
-undefined4 __thiscall FUN_1125ce60(undefined1 *param_1,undefined4 param_2,uint param_3)
-
+undefined4 __thiscall Recovered_Bulk::FUN_1125ce60(undefined4 param_2,uint param_3)
 {
+  undefined1 *param_1 = (undefined1 *)this;
   if (param_3 < 0xd) {
     return (undefined4)(0);
   }
@@ -36774,11 +35509,10 @@ undefined4 __thiscall FUN_1125ce60(undefined1 *param_1,undefined4 param_2,uint p
 // Reference entry 1125d360; body size 126 bytes.
 #line 1 "ENTRY_1125d360"
 
-void __thiscall
-FUN_1125d360(undefined4 *param_1,undefined4 param_2,int param_3,undefined4 param_4,
+void __thiscall Recovered_Bulk::FUN_1125d360(undefined4 param_2,int param_3,undefined4 param_4,
             undefined4 *param_5,int param_6)
-
 {
+  undefined4 *param_1 = (undefined4 *)this;
   undefined4 uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -36834,11 +35568,9 @@ LAB_1125d397:
 // Reference entry 1125d400; body size 181 bytes.
 #line 1 "ENTRY_1125d400"
 
-void __thiscall
-FUN_1125d400(int param_1,undefined4 *param_2,undefined4 *param_3,int param_4,int param_5,int param_6
-            )
-
+void __thiscall Recovered_Bulk::FUN_1125d400(undefined4 *param_2,undefined4 *param_3,int param_4,int param_5,int param_6)
 {
+  int param_1 = (int )this;
   undefined4 uVar1;
   int iVar2;
   undefined4 uVar3;
@@ -37173,12 +35905,11 @@ undefined4 * __fastcall FUN_11261e50(undefined4 *param_1)
 // Reference entry 112620c0; body size 296 bytes.
 #line 1 "ENTRY_112620c0"
 
-undefined4 * __thiscall
-FUN_112620c0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined1 param_4,
+undefined4 * __thiscall Recovered_Bulk::FUN_112620c0(undefined4 param_2,undefined4 param_3,undefined1 param_4,
             undefined4 param_5,undefined4 param_6,undefined4 param_7,int param_8,undefined4 param_9,
             undefined2 param_10,undefined1 param_11,undefined1 *param_12,undefined1 *param_13)
-
 {
+  undefined4 *param_1 = (undefined4 *)this;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
@@ -37221,9 +35952,9 @@ FUN_112620c0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined
 // Reference entry 11262260; body size 123 bytes.
 #line 1 "ENTRY_11262260"
 
-undefined4 __thiscall FUN_11262260(undefined4 param_1,int param_2)
-
+undefined4 __thiscall Recovered_Bulk::FUN_11262260(int param_2)
 {
+  undefined4 param_1 = (undefined4 )this;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
@@ -37247,9 +35978,9 @@ undefined4 __thiscall FUN_11262260(undefined4 param_1,int param_2)
 // Reference entry 11262400; body size 70 bytes.
 #line 1 "ENTRY_11262400"
 
-undefined4 * __thiscall FUN_11262400(undefined4 *param_1,int *param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11262400(int *param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   int iVar1;
   
   param_1[1] = 0;
@@ -37288,9 +36019,9 @@ undefined1 FUN_11262cf0(ushort param_1,ushort param_2)
 // Reference entry 11262f40; body size 102 bytes.
 #line 1 "ENTRY_11262f40"
 
-uint __thiscall FUN_11262f40(undefined1 *param_1,undefined4 param_2)
-
+uint __thiscall Recovered_Bulk::FUN_11262f40(undefined4 param_2)
 {
+  undefined1 *param_1 = (undefined1 *)this;
   uint uVar1;
   ushort local_c [2];
   ushort local_8 [2];
@@ -37313,9 +36044,9 @@ uint __thiscall FUN_11262f40(undefined1 *param_1,undefined4 param_2)
 // Reference entry 11262fc0; body size 112 bytes.
 #line 1 "ENTRY_11262fc0"
 
-uint __thiscall FUN_11262fc0(int param_1,char *param_2)
-
+uint __thiscall Recovered_Bulk::FUN_11262fc0(char *param_2)
 {
+  int param_1 = (int )this;
   uint uVar1;
   char *pcVar2;
   
@@ -37339,9 +36070,9 @@ uint __thiscall FUN_11262fc0(int param_1,char *param_2)
 // Reference entry 11263050; body size 107 bytes.
 #line 1 "ENTRY_11263050"
 
-uint __thiscall FUN_11263050(int param_1,char *param_2)
-
+uint __thiscall Recovered_Bulk::FUN_11263050(char *param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   uint uVar2;
   char *pcVar3;
@@ -37366,9 +36097,9 @@ uint __thiscall FUN_11263050(int param_1,char *param_2)
 // Reference entry 112630e0; body size 179 bytes.
 #line 1 "ENTRY_112630e0"
 
-uint __thiscall FUN_112630e0(undefined8 *param_1,undefined4 param_2)
-
+uint __thiscall Recovered_Bulk::FUN_112630e0(undefined4 param_2)
 {
+  undefined8 *param_1 = (undefined8 *)this;
   uint uVar1;
   undefined1 local_20 [4];
   undefined1 local_1c [4];
@@ -37403,9 +36134,9 @@ uint __thiscall FUN_112630e0(undefined8 *param_1,undefined4 param_2)
 // Reference entry 112631c0; body size 118 bytes.
 #line 1 "ENTRY_112631c0"
 
-void __thiscall FUN_112631c0(int param_1,int param_2,undefined4 param_3,char param_4)
-
+void __thiscall Recovered_Bulk::FUN_112631c0(int param_2,undefined4 param_3,char param_4)
 {
+  int param_1 = (int )this;
   int iVar1;
   int iVar2;
   
@@ -37430,9 +36161,9 @@ void __thiscall FUN_112631c0(int param_1,int param_2,undefined4 param_3,char par
 // Reference entry 112634e0; body size 127 bytes.
 #line 1 "ENTRY_112634e0"
 
-void __thiscall FUN_112634e0(int param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_112634e0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   thunk_FUN_113d1d90(param_2,param_1 + 4,2);
   thunk_FUN_113d1d90(param_2,param_1 + 6,2);
   thunk_FUN_113d1d90(param_2,param_1 + 8,2);
@@ -37486,9 +36217,9 @@ uint __fastcall FUN_11263620(int param_1)
 // Reference entry 112641a0; body size 78 bytes.
 #line 1 "ENTRY_112641a0"
 
-void __thiscall FUN_112641a0(undefined2 *param_1,undefined4 param_2,undefined4 param_3)
-
+void __thiscall Recovered_Bulk::FUN_112641a0(undefined4 param_2,undefined4 param_3)
 {
+  undefined2 *param_1 = (undefined2 *)this;
   thunk_FUN_1145c720(param_2,param_3,"%04hx%02hx%02hx%02hx%02hx%04hx%02hx%02hx%02hx%02hx%04hx",
                      *param_1,*(undefined1 *)(param_1 + 1),*(undefined1 *)((int)param_1 + 3),
                      *(undefined1 *)(param_1 + 2),*(undefined1 *)((int)param_1 + 5),param_1[3],
@@ -37501,9 +36232,9 @@ void __thiscall FUN_112641a0(undefined2 *param_1,undefined4 param_2,undefined4 p
 // Reference entry 11264480; body size 67 bytes.
 #line 1 "ENTRY_11264480"
 
-void __thiscall FUN_11264480(short *param_1,undefined4 param_2,undefined4 param_3)
-
+void __thiscall Recovered_Bulk::FUN_11264480(undefined4 param_2,undefined4 param_3)
 {
+  short *param_1 = (short *)this;
   uint uVar1;
   
   uVar1 = (uint)(-(int)*param_1);
@@ -37516,9 +36247,9 @@ void __thiscall FUN_11264480(short *param_1,undefined4 param_2,undefined4 param_
 // Reference entry 112644e0; body size 280 bytes.
 #line 1 "ENTRY_112644e0"
 
-void __thiscall FUN_112644e0(short *param_1,undefined4 param_2,undefined4 param_3)
-
+void __thiscall Recovered_Bulk::FUN_112644e0(undefined4 param_2,undefined4 param_3)
 {
+  short *param_1 = (short *)this;
   uint uVar1;
   undefined **local_30;
   undefined4 local_2c;
@@ -37779,9 +36510,9 @@ uint FUN_11265c00(uint param_1,uint param_2)
 // Reference entry 11265db0; body size 93 bytes.
 #line 1 "ENTRY_11265db0"
 
-int __thiscall FUN_11265db0(int param_1,int param_2)
-
+int __thiscall Recovered_Bulk::FUN_11265db0(int param_2)
 {
+  int param_1 = (int )this;
   uint uVar1;
   undefined4 uVar2;
   void *local_10;
@@ -38001,9 +36732,9 @@ void __fastcall FUN_112667c0(undefined4 *param_1)
 // Reference entry 11266960; body size 154 bytes.
 #line 1 "ENTRY_11266960"
 
-undefined4 * __thiscall FUN_11266960(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11266960(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -38034,9 +36765,9 @@ undefined4 * __thiscall FUN_11266960(undefined4 *param_1,byte param_2)
 // Reference entry 11266a30; body size 154 bytes.
 #line 1 "ENTRY_11266a30"
 
-undefined4 * __thiscall FUN_11266a30(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11266a30(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -38067,9 +36798,9 @@ undefined4 * __thiscall FUN_11266a30(undefined4 *param_1,byte param_2)
 // Reference entry 11266b00; body size 154 bytes.
 #line 1 "ENTRY_11266b00"
 
-undefined4 * __thiscall FUN_11266b00(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11266b00(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -38100,9 +36831,9 @@ undefined4 * __thiscall FUN_11266b00(undefined4 *param_1,byte param_2)
 // Reference entry 11266c00; body size 154 bytes.
 #line 1 "ENTRY_11266c00"
 
-undefined4 * __thiscall FUN_11266c00(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11266c00(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -38280,9 +37011,9 @@ void FUN_11267380(undefined4 param_1,undefined1 *param_2,undefined4 param_3,unde
 // Reference entry 11267410; body size 88 bytes.
 #line 1 "ENTRY_11267410"
 
-int __thiscall FUN_11267410(int param_1,int param_2,int param_3)
-
+int __thiscall Recovered_Bulk::FUN_11267410(int param_2,int param_3)
 {
+  int param_1 = (int )this;
   int *piVar1;
   int *piVar2;
   int iVar3;
@@ -38308,9 +37039,9 @@ int __thiscall FUN_11267410(int param_1,int param_2,int param_3)
 // Reference entry 11267640; body size 84 bytes.
 #line 1 "ENTRY_11267640"
 
-void __thiscall FUN_11267640(int param_1,int param_2)
-
+void __thiscall Recovered_Bulk::FUN_11267640(int param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   int iVar2;
   char *pcVar3;
@@ -38335,9 +37066,9 @@ void __thiscall FUN_11267640(int param_1,int param_2)
 // Reference entry 112676b0; body size 486 bytes.
 #line 1 "ENTRY_112676b0"
 
-void __thiscall FUN_112676b0(int param_1,int param_2)
-
+void __thiscall Recovered_Bulk::FUN_112676b0(int param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   int iVar2;
   int iVar3;
@@ -38426,9 +37157,9 @@ LAB_11267837:
 // Reference entry 11267910; body size 170 bytes.
 #line 1 "ENTRY_11267910"
 
-void __thiscall FUN_11267910(int param_1,int param_2)
-
+void __thiscall Recovered_Bulk::FUN_11267910(int param_2)
 {
+  int param_1 = (int )this;
   char *pcVar1;
   char cVar2;
   int iVar3;
@@ -38465,9 +37196,9 @@ void __thiscall FUN_11267910(int param_1,int param_2)
 // Reference entry 112679f0; body size 99 bytes.
 #line 1 "ENTRY_112679f0"
 
-void __thiscall FUN_112679f0(int param_1,char *param_2)
-
+void __thiscall Recovered_Bulk::FUN_112679f0(char *param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   int iVar2;
   char *_Str;
@@ -38491,9 +37222,9 @@ void __thiscall FUN_112679f0(int param_1,char *param_2)
 // Reference entry 11267a70; body size 126 bytes.
 #line 1 "ENTRY_11267a70"
 
-undefined4 __thiscall FUN_11267a70(int param_1,char *param_2)
-
+undefined4 __thiscall Recovered_Bulk::FUN_11267a70(char *param_2)
 {
+  int param_1 = (int )this;
   int iVar1;
   
   thunk_FUN_112b0270("dataio",6,"HTTP Result: %s",param_2);
@@ -38514,9 +37245,9 @@ undefined4 __thiscall FUN_11267a70(int param_1,char *param_2)
 // Reference entry 11267b10; body size 193 bytes.
 #line 1 "ENTRY_11267b10"
 
-undefined4 __thiscall FUN_11267b10(int param_1,char *param_2)
-
+undefined4 __thiscall Recovered_Bulk::FUN_11267b10(char *param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   int iVar2;
   char *_Str;
@@ -38556,9 +37287,9 @@ undefined4 __thiscall FUN_11267b10(int param_1,char *param_2)
 // Reference entry 11267c20; body size 99 bytes.
 #line 1 "ENTRY_11267c20"
 
-void __thiscall FUN_11267c20(int param_1,char *param_2)
-
+void __thiscall Recovered_Bulk::FUN_11267c20(char *param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   int iVar2;
   char *_Str;
@@ -38712,9 +37443,9 @@ LAB_11268d64:
 // Reference entry 11268fd0; body size 69 bytes.
 #line 1 "ENTRY_11268fd0"
 
-int __thiscall FUN_11268fd0(int param_1,undefined4 param_2)
-
+int __thiscall Recovered_Bulk::FUN_11268fd0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   int iVar1;
   int iVar2;
   int iVar3;
@@ -38821,12 +37552,11 @@ undefined4 FUN_11269440(int param_1)
 // Reference entry 112695a0; body size 247 bytes.
 #line 1 "ENTRY_112695a0"
 
-int __thiscall
-FUN_112695a0(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+int __thiscall Recovered_Bulk::FUN_112695a0(undefined4 param_2,undefined4 param_3,undefined4 param_4,
             undefined4 param_5,int param_6,int *param_7,int *param_8,undefined4 param_9,int param_10
             ,int param_11,char param_12)
-
 {
+  int *param_1 = (int *)this;
   char cVar1;
   int iVar2;
   int iVar3;
@@ -38881,13 +37611,10 @@ FUN_112695a0(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param
 // Reference entry 11269910; body size 339 bytes.
 #line 1 "ENTRY_11269910"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall
-FUN_11269910(int *param_1,undefined1 *param_2,undefined4 param_3,undefined4 param_4,
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11269910(undefined1 *param_2,undefined4 param_3,undefined4 param_4,
             undefined4 param_5,int param_6)
-
 {
+  int *param_1 = (int *)this;
   int iVar1;
   uint uVar2;
   undefined4 local_4010;
@@ -38921,9 +37648,9 @@ FUN_11269910(int *param_1,undefined1 *param_2,undefined4 param_3,undefined4 para
 // Reference entry 1126a4b0; body size 618 bytes.
 #line 1 "ENTRY_1126a4b0"
 
-void __thiscall FUN_1126a4b0(int param_1,void *param_2,uint *param_3,undefined4 param_4)
-
+void __thiscall Recovered_Bulk::FUN_1126a4b0(void *param_2,uint *param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   uint uVar1;
   char cVar2;
   uint uVar3;
@@ -39038,9 +37765,9 @@ joined_r0x1126a624:
 // Reference entry 1126a7c0; body size 67 bytes.
 #line 1 "ENTRY_1126a7c0"
 
-void __thiscall FUN_1126a7c0(int param_1,void *param_2,uint *param_3)
-
+void __thiscall Recovered_Bulk::FUN_1126a7c0(void *param_2,uint *param_3)
 {
+  int param_1 = (int )this;
   uint _Size;
   uint uVar1;
   uint uVar2;
@@ -39062,10 +37789,9 @@ void __thiscall FUN_1126a7c0(int param_1,void *param_2,uint *param_3)
 // Reference entry 1126b0a0; body size 242 bytes.
 #line 1 "ENTRY_1126b0a0"
 
-int __thiscall
-FUN_1126b0a0(int param_1,uint param_2,uint param_3,undefined4 param_4,undefined4 param_5)
-
+int __thiscall Recovered_Bulk::FUN_1126b0a0(uint param_2,uint param_3,undefined4 param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   undefined1 uVar1;
   int iVar2;
   undefined4 uVar3;
@@ -39180,11 +37906,9 @@ void __fastcall FUN_1126b370(int *param_1)
 // Reference entry 1126b3e0; body size 283 bytes.
 #line 1 "ENTRY_1126b3e0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1126b3e0(int param_1,undefined4 param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1126b3e0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   int iVar1;
   char *pcVar2;
   undefined4 uVar3;
@@ -39223,9 +37947,9 @@ void __thiscall FUN_1126b3e0(int param_1,undefined4 param_2)
 // Reference entry 1126b680; body size 557 bytes.
 #line 1 "ENTRY_1126b680"
 
-bool __thiscall FUN_1126b680(int param_1,uint param_2,int param_3)
-
+bool __thiscall Recovered_Bulk::FUN_1126b680(uint param_2,int param_3)
 {
+  int param_1 = (int )this;
   uint uVar1;
   uint uVar2;
   uint uVar3;
@@ -39302,11 +38026,9 @@ LAB_1126b7e2:
 // Reference entry 1126b960; body size 283 bytes.
 #line 1 "ENTRY_1126b960"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1126b960(int *param_1,int param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1126b960(int param_2,undefined4 param_3)
 {
+  int *param_1 = (int *)this;
   int iVar1;
   char local_812c;
   char local_4120;
@@ -39348,11 +38070,9 @@ LAB_1126ba34:
 // Reference entry 1126c2e0; body size 273 bytes.
 #line 1 "ENTRY_1126c2e0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1126c2e0(int *param_1,int *param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1126c2e0(int *param_2)
 {
+  int *param_1 = (int *)this;
   int *piVar1;
   char cVar2;
   int iVar3;
@@ -39395,9 +38115,9 @@ LAB_1126c3bf:
 // Reference entry 1126c9a0; body size 93 bytes.
 #line 1 "ENTRY_1126c9a0"
 
-undefined1 __thiscall FUN_1126c9a0(int *param_1,void *param_2,uint param_3)
-
+undefined1 __thiscall Recovered_Bulk::FUN_1126c9a0(void *param_2,uint param_3)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   uint _Size;
   
@@ -39425,11 +38145,9 @@ undefined1 __thiscall FUN_1126c9a0(int *param_1,void *param_2,uint param_3)
 // Reference entry 1126ca70; body size 133 bytes.
 #line 1 "ENTRY_1126ca70"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1126ca70(int param_1,int param_2,uint param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1126ca70(int param_2,uint param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   undefined4 uVar2;
   uint uVar3;
@@ -39481,11 +38199,9 @@ undefined4 __fastcall FUN_1126cb90(int param_1)
 // Reference entry 1126cc10; body size 156 bytes.
 #line 1 "ENTRY_1126cc10"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1126cc10(int *param_1,int param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1126cc10(int param_2)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   int iVar2;
   undefined1 local_1004 [4096];
@@ -39509,11 +38225,9 @@ LAB_1126cc84:
 // Reference entry 1126cce0; body size 229 bytes.
 #line 1 "ENTRY_1126cce0"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1126cce0(int *param_1,int *param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1126cce0(int *param_2,undefined4 param_3)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   undefined1 *puStack_101c;
   undefined4 local_1010;
@@ -39550,9 +38264,9 @@ LAB_1126cd9e:
 // Reference entry 1126d1e0; body size 215 bytes.
 #line 1 "ENTRY_1126d1e0"
 
-undefined4 __thiscall FUN_1126d1e0(undefined4 *param_1,undefined4 param_2,undefined4 *param_3)
-
+undefined4 __thiscall Recovered_Bulk::FUN_1126d1e0(undefined4 param_2,undefined4 *param_3)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   undefined8 uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -39620,9 +38334,9 @@ undefined4 __thiscall FUN_1126d1e0(undefined4 *param_1,undefined4 param_2,undefi
 // Reference entry 1126d2f0; body size 71 bytes.
 #line 1 "ENTRY_1126d2f0"
 
-void __thiscall FUN_1126d2f0(int *param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_1126d2f0(undefined4 param_2)
 {
+  int *param_1 = (int *)this;
   int *piVar1;
   int iVar2;
   int *piVar3;
@@ -39646,9 +38360,9 @@ void __thiscall FUN_1126d2f0(int *param_1,undefined4 param_2)
 // Reference entry 1126d6d0; body size 85 bytes.
 #line 1 "ENTRY_1126d6d0"
 
-int * __thiscall FUN_1126d6d0(int *param_1,int *param_2,uint *param_3)
-
+int * __thiscall Recovered_Bulk::FUN_1126d6d0(int *param_2,uint *param_3)
 {
+  int *param_1 = (int *)this;
   uint uVar1;
   undefined4 *puVar2;
   int iVar3;
@@ -39727,9 +38441,9 @@ int * __fastcall FUN_1126e690(int *param_1)
 // Reference entry 1126ef30; body size 79 bytes.
 #line 1 "ENTRY_1126ef30"
 
-void __thiscall FUN_1126ef30(int *param_1,int param_2)
-
+void __thiscall Recovered_Bulk::FUN_1126ef30(int param_2)
 {
+  int *param_1 = (int *)this;
   int *piVar1;
   int *piVar2;
   
@@ -39762,9 +38476,9 @@ void __thiscall FUN_1126ef30(int *param_1,int param_2)
 // Reference entry 1126f020; body size 83 bytes.
 #line 1 "ENTRY_1126f020"
 
-void __thiscall FUN_1126f020(int *param_1,int *param_2)
-
+void __thiscall Recovered_Bulk::FUN_1126f020(int *param_2)
 {
+  int *param_1 = (int *)this;
   int iVar1;
   int *piVar2;
   
@@ -39826,9 +38540,9 @@ void __fastcall FUN_1126f610(int *param_1)
 // Reference entry 1126f750; body size 128 bytes.
 #line 1 "ENTRY_1126f750"
 
-undefined1 __thiscall FUN_1126f750(int param_1,undefined4 param_2,undefined4 param_3)
-
+undefined1 __thiscall Recovered_Bulk::FUN_1126f750(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   undefined1 uVar2;
   void *local_10;
@@ -39853,9 +38567,9 @@ undefined1 __thiscall FUN_1126f750(int param_1,undefined4 param_2,undefined4 par
 // Reference entry 1126f940; body size 349 bytes.
 #line 1 "ENTRY_1126f940"
 
-undefined1 __thiscall FUN_1126f940(int param_1,uint param_2,uint param_3)
-
+undefined1 __thiscall Recovered_Bulk::FUN_1126f940(uint param_2,uint param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   int iVar2;
   int iVar3;
@@ -39918,9 +38632,9 @@ LAB_1126fa22:
 // Reference entry 1126fb00; body size 79 bytes.
 #line 1 "ENTRY_1126fb00"
 
-void __thiscall FUN_1126fb00(int *param_1,int *param_2,uint *param_3)
-
+void __thiscall Recovered_Bulk::FUN_1126fb00(int *param_2,uint *param_3)
 {
+  int *param_1 = (int *)this;
   undefined1 local_c [8];
   int local_4;
   
@@ -39938,9 +38652,9 @@ void __thiscall FUN_1126fb00(int *param_1,int *param_2,uint *param_3)
 // Reference entry 1126fb80; body size 246 bytes.
 #line 1 "ENTRY_1126fb80"
 
-undefined1 __thiscall FUN_1126fb80(int param_1,uint param_2,uint param_3)
-
+undefined1 __thiscall Recovered_Bulk::FUN_1126fb80(uint param_2,uint param_3)
 {
+  int param_1 = (int )this;
   byte bVar1;
   short sVar2;
   int iVar3;
@@ -39993,9 +38707,9 @@ LAB_1126fc5a:
 // Reference entry 1126fe40; body size 285 bytes.
 #line 1 "ENTRY_1126fe40"
 
-undefined1 __thiscall FUN_1126fe40(int param_1,uint param_2,uint param_3)
-
+undefined1 __thiscall Recovered_Bulk::FUN_1126fe40(uint param_2,uint param_3)
 {
+  int param_1 = (int )this;
   byte bVar1;
   undefined4 uVar2;
   short sVar3;
@@ -40046,11 +38760,10 @@ undefined1 __thiscall FUN_1126fe40(int param_1,uint param_2,uint param_3)
 // Reference entry 11270050; body size 128 bytes.
 #line 1 "ENTRY_11270050"
 
-undefined1 __thiscall
-FUN_11270050(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+undefined1 __thiscall Recovered_Bulk::FUN_11270050(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6)
-
 {
+  int param_1 = (int )this;
   char cVar1;
   undefined1 uVar2;
   void *local_10;
@@ -40075,11 +38788,10 @@ FUN_11270050(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_
 // Reference entry 112700f0; body size 261 bytes.
 #line 1 "ENTRY_112700f0"
 
-undefined4 __thiscall
-FUN_112700f0(int param_1,uint param_2,uint param_3,undefined4 param_4,undefined4 param_5,
+undefined4 __thiscall Recovered_Bulk::FUN_112700f0(uint param_2,uint param_3,undefined4 param_4,undefined4 param_5,
             undefined4 param_6)
-
 {
+  int param_1 = (int )this;
   int iVar1;
   uint local_14;
   uint local_10;
@@ -40232,9 +38944,9 @@ void __fastcall FUN_11270dc0(int *param_1)
 // Reference entry 11270e80; body size 98 bytes.
 #line 1 "ENTRY_11270e80"
 
-void __thiscall FUN_11270e80(int param_1,undefined4 *param_2)
-
+void __thiscall Recovered_Bulk::FUN_11270e80(undefined4 *param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   undefined1 local_8 [8];
   
@@ -40256,9 +38968,9 @@ void __thiscall FUN_11270e80(int param_1,undefined4 *param_2)
 // Reference entry 112718f0; body size 122 bytes.
 #line 1 "ENTRY_112718f0"
 
-void __thiscall FUN_112718f0(int param_1,undefined4 *param_2)
-
+void __thiscall Recovered_Bulk::FUN_112718f0(undefined4 *param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   undefined1 local_8 [8];
   
@@ -40284,9 +38996,9 @@ void __thiscall FUN_112718f0(int param_1,undefined4 *param_2)
 // Reference entry 11271990; body size 87 bytes.
 #line 1 "ENTRY_11271990"
 
-void __thiscall FUN_11271990(int param_1,undefined4 *param_2)
-
+void __thiscall Recovered_Bulk::FUN_11271990(undefined4 *param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   undefined1 local_8 [8];
   
@@ -40589,9 +39301,9 @@ void __fastcall FUN_11273b70(int param_1)
 // Reference entry 11273c60; body size 231 bytes.
 #line 1 "ENTRY_11273c60"
 
-int * __thiscall FUN_11273c60(int *param_1,uint param_2,char param_3)
-
+int * __thiscall Recovered_Bulk::FUN_11273c60(uint param_2,char param_3)
 {
+  int *param_1 = (int *)this;
   uint uVar1;
   uint uVar2;
   int iVar3;
@@ -40657,9 +39369,9 @@ int * __thiscall FUN_11273c60(int *param_1,uint param_2,char param_3)
 // Reference entry 11273fc0; body size 94 bytes.
 #line 1 "ENTRY_11273fc0"
 
-void __thiscall FUN_11273fc0(int param_1,int *param_2)
-
+void __thiscall Recovered_Bulk::FUN_11273fc0(int *param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   char *pcVar2;
   char *pcVar3;
@@ -40691,9 +39403,9 @@ void __thiscall FUN_11273fc0(int param_1,int *param_2)
 // Reference entry 112744d0; body size 88 bytes.
 #line 1 "ENTRY_112744d0"
 
-void __thiscall FUN_112744d0(int *param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_112744d0(undefined4 param_2)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   char *pcVar2;
   char local_24 [32];
@@ -40780,9 +39492,9 @@ void __fastcall FUN_11274880(int *param_1)
 // Reference entry 112748e0; body size 131 bytes.
 #line 1 "ENTRY_112748e0"
 
-void __thiscall FUN_112748e0(int param_1,void *param_2,size_t param_3)
-
+void __thiscall Recovered_Bulk::FUN_112748e0(void *param_2,size_t param_3)
 {
+  int param_1 = (int )this;
   uint uVar1;
   void *_Dst;
   int iVar2;
@@ -40817,9 +39529,9 @@ void __thiscall FUN_112748e0(int param_1,void *param_2,size_t param_3)
 // Reference entry 11274990; body size 95 bytes.
 #line 1 "ENTRY_11274990"
 
-void __thiscall FUN_11274990(int param_1,void *param_2,size_t param_3)
-
+void __thiscall Recovered_Bulk::FUN_11274990(void *param_2,size_t param_3)
 {
+  int param_1 = (int )this;
   uint uVar1;
   int iVar2;
   uint uVar3;
@@ -40850,9 +39562,9 @@ void __thiscall FUN_11274990(int param_1,void *param_2,size_t param_3)
 // Reference entry 11274a10; body size 71 bytes.
 #line 1 "ENTRY_11274a10"
 
-void __thiscall FUN_11274a10(int param_1,void *param_2,size_t param_3)
-
+void __thiscall Recovered_Bulk::FUN_11274a10(void *param_2,size_t param_3)
 {
+  int param_1 = (int )this;
   if (*(char *)(param_1 + 0x14) == '\0') {
     if (*(uint *)(param_1 + 0xc) <= *(int *)(param_1 + 0x10) + param_3) {
       *(undefined1 *)(param_1 + 0x14) = 1;
@@ -40869,9 +39581,9 @@ void __thiscall FUN_11274a10(int param_1,void *param_2,size_t param_3)
 // Reference entry 11274ac0; body size 88 bytes.
 #line 1 "ENTRY_11274ac0"
 
-void __thiscall FUN_11274ac0(int *param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_11274ac0(undefined4 param_2)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   char *pcVar2;
   char local_24 [32];
@@ -40893,9 +39605,9 @@ void __thiscall FUN_11274ac0(int *param_1,undefined4 param_2)
 // Reference entry 11274b50; body size 92 bytes.
 #line 1 "ENTRY_11274b50"
 
-void __thiscall FUN_11274b50(int *param_1,char *param_2,undefined4 param_3)
-
+void __thiscall Recovered_Bulk::FUN_11274b50(char *param_2,undefined4 param_3)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   char *pcVar2;
   
@@ -40917,9 +39629,9 @@ void __thiscall FUN_11274b50(int *param_1,char *param_2,undefined4 param_3)
 // Reference entry 11274e50; body size 123 bytes.
 #line 1 "ENTRY_11274e50"
 
-undefined4 __thiscall FUN_11274e50(undefined4 param_1,int param_2)
-
+undefined4 __thiscall Recovered_Bulk::FUN_11274e50(int param_2)
 {
+  undefined4 param_1 = (undefined4 )this;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
@@ -40961,9 +39673,9 @@ void __fastcall FUN_11274ef0(undefined4 *param_1)
 // Reference entry 11274f50; body size 92 bytes.
 #line 1 "ENTRY_11274f50"
 
-undefined4 * __thiscall FUN_11274f50(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11274f50(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&Ext_RReportUploader_vftable);
   if ((void *)param_1[3] != (void *)0x0) {
     free((void *)param_1[3]);
@@ -40982,9 +39694,9 @@ undefined4 * __thiscall FUN_11274f50(undefined4 *param_1,byte param_2)
 // Reference entry 11274fe0; body size 598 bytes.
 #line 1 "ENTRY_11274fe0"
 
-undefined1 __thiscall FUN_11274fe0(int param_1,char *param_2,undefined4 *param_3,uint param_4)
-
+undefined1 __thiscall Recovered_Bulk::FUN_11274fe0(char *param_2,undefined4 *param_3,uint param_4)
 {
+  int param_1 = (int )this;
   int iVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -41129,9 +39841,9 @@ void FUN_11275370(char *param_1,undefined4 param_2)
 // Reference entry 11275460; body size 124 bytes.
 #line 1 "ENTRY_11275460"
 
-undefined4 __thiscall FUN_11275460(int param_1,undefined4 param_2)
-
+undefined4 __thiscall Recovered_Bulk::FUN_11275460(undefined4 param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -41155,9 +39867,9 @@ undefined4 __thiscall FUN_11275460(int param_1,undefined4 param_2)
 // Reference entry 11275500; body size 124 bytes.
 #line 1 "ENTRY_11275500"
 
-undefined4 __thiscall FUN_11275500(int param_1,undefined4 param_2)
-
+undefined4 __thiscall Recovered_Bulk::FUN_11275500(undefined4 param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -41181,9 +39893,9 @@ undefined4 __thiscall FUN_11275500(int param_1,undefined4 param_2)
 // Reference entry 112755e0; body size 512 bytes.
 #line 1 "ENTRY_112755e0"
 
-char __thiscall FUN_112755e0(int param_1,longlong *param_2)
-
+char __thiscall Recovered_Bulk::FUN_112755e0(longlong *param_2)
 {
+  int param_1 = (int )this;
   int iVar1;
   char cVar2;
   char cVar3;
@@ -41275,9 +39987,9 @@ char __thiscall FUN_112755e0(int param_1,longlong *param_2)
 // Reference entry 11275880; body size 724 bytes.
 #line 1 "ENTRY_11275880"
 
-void __thiscall FUN_11275880(int *param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_11275880(undefined4 param_2)
 {
+  int *param_1 = (int *)this;
   int iVar1;
   int *piVar2;
   undefined4 uVar3;
@@ -41401,9 +40113,9 @@ void __fastcall FUN_11275e20(int param_1)
 // Reference entry 11275f40; body size 152 bytes.
 #line 1 "ENTRY_11275f40"
 
-void __thiscall FUN_11275f40(int param_1,char *param_2)
-
+void __thiscall Recovered_Bulk::FUN_11275f40(char *param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   char cVar2;
   char *pcVar3;
@@ -41439,9 +40151,9 @@ void __thiscall FUN_11275f40(int param_1,char *param_2)
 // Reference entry 11276000; body size 152 bytes.
 #line 1 "ENTRY_11276000"
 
-void __thiscall FUN_11276000(int param_1,char *param_2)
-
+void __thiscall Recovered_Bulk::FUN_11276000(char *param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   char cVar2;
   char *pcVar3;
@@ -41477,9 +40189,9 @@ void __thiscall FUN_11276000(int param_1,char *param_2)
 // Reference entry 112760d0; body size 71 bytes.
 #line 1 "ENTRY_112760d0"
 
-void __thiscall FUN_112760d0(int param_1,int param_2)
-
+void __thiscall Recovered_Bulk::FUN_112760d0(int param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   
   cVar1 = (char)(thunk_FUN_112a7f50(param_1 + 0x164));
@@ -41499,9 +40211,9 @@ void __thiscall FUN_112760d0(int param_1,int param_2)
 // Reference entry 11276140; body size 84 bytes.
 #line 1 "ENTRY_11276140"
 
-void __thiscall FUN_11276140(int param_1,uint param_2,uint param_3)
-
+void __thiscall Recovered_Bulk::FUN_11276140(uint param_2,uint param_3)
 {
+  int param_1 = (int )this;
   uint uVar1;
   char cVar2;
   
@@ -41522,9 +40234,9 @@ void __thiscall FUN_11276140(int param_1,uint param_2,uint param_3)
 // Reference entry 112761c0; body size 81 bytes.
 #line 1 "ENTRY_112761c0"
 
-void __thiscall FUN_112761c0(int param_1,int param_2,undefined4 param_3)
-
+void __thiscall Recovered_Bulk::FUN_112761c0(int param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   
   cVar1 = (char)(thunk_FUN_112a7f50(param_1 + 0x164));
@@ -41545,9 +40257,9 @@ void __thiscall FUN_112761c0(int param_1,int param_2,undefined4 param_3)
 // Reference entry 11276280; body size 71 bytes.
 #line 1 "ENTRY_11276280"
 
-void __thiscall FUN_11276280(int param_1,int param_2)
-
+void __thiscall Recovered_Bulk::FUN_11276280(int param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   
   cVar1 = (char)(thunk_FUN_112a7f50(param_1 + 0x164));
@@ -41567,9 +40279,9 @@ void __thiscall FUN_11276280(int param_1,int param_2)
 // Reference entry 11276320; body size 157 bytes.
 #line 1 "ENTRY_11276320"
 
-int __thiscall FUN_11276320(int param_1,undefined4 param_2)
-
+int __thiscall Recovered_Bulk::FUN_11276320(undefined4 param_2)
 {
+  int param_1 = (int )this;
   char cVar1;
   uint uVar2;
   int iVar3;
@@ -41605,9 +40317,9 @@ int __thiscall FUN_11276320(int param_1,undefined4 param_2)
 // Reference entry 11276650; body size 73 bytes.
 #line 1 "ENTRY_11276650"
 
-undefined4 * __thiscall FUN_11276650(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11276650(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&Ext_RReportFileLoader_vftable);
   param_1[0x14a] = (uint)&Ext_RReportCategoryInfo_vftable;
   param_1[7] = (uint)&Ext_RReportUploaderInfo_vftable;
@@ -41624,9 +40336,9 @@ undefined4 * __thiscall FUN_11276650(undefined4 *param_1,byte param_2)
 // Reference entry 11278010; body size 105 bytes.
 #line 1 "ENTRY_11278010"
 
-void __thiscall FUN_11278010(int param_1,int param_2)
-
+void __thiscall Recovered_Bulk::FUN_11278010(int param_2)
 {
+  int param_1 = (int )this;
   int iVar1;
   char cVar2;
   undefined1 local_8 [4];
@@ -41648,11 +40360,10 @@ void __thiscall FUN_11278010(int param_1,int param_2)
 // Reference entry 112780a0; body size 164 bytes.
 #line 1 "ENTRY_112780a0"
 
-bool __thiscall
-FUN_112780a0(int param_1,undefined4 param_2,uint param_3,undefined4 param_4,undefined1 param_5,
+bool __thiscall Recovered_Bulk::FUN_112780a0(undefined4 param_2,uint param_3,undefined4 param_4,undefined1 param_5,
             int param_6,int param_7)
-
 {
+  int param_1 = (int )this;
   uint uVar1;
   
   thunk_FUN_112b0270("reporting",5,
@@ -41685,9 +40396,9 @@ FUN_112780a0(int param_1,undefined4 param_2,uint param_3,undefined4 param_4,unde
 // Reference entry 112781b0; body size 146 bytes.
 #line 1 "ENTRY_112781b0"
 
-void __thiscall FUN_112781b0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+void __thiscall Recovered_Bulk::FUN_112781b0(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   undefined1 local_108 [260];
   uint local_4;
   
@@ -41724,11 +40435,10 @@ void __stdcall FUN_11278490(int param_1,int param_2,int param_3)
 // Reference entry 11278660; body size 165 bytes.
 #line 1 "ENTRY_11278660"
 
-void __thiscall
-FUN_11278660(int *param_1,undefined4 param_2,int param_3,int param_4,int param_5,undefined4 param_6,
+void __thiscall Recovered_Bulk::FUN_11278660(undefined4 param_2,int param_3,int param_4,int param_5,undefined4 param_6,
             undefined4 param_7,undefined4 param_8)
-
 {
+  int *param_1 = (int *)this;
   undefined1 auStack_10c [3];
   undefined1 local_109;
   undefined1 local_108 [260];
@@ -41748,11 +40458,10 @@ FUN_11278660(int *param_1,undefined4 param_2,int param_3,int param_4,int param_5
 // Reference entry 11278730; body size 148 bytes.
 #line 1 "ENTRY_11278730"
 
-void __thiscall
-FUN_11278730(int *param_1,undefined4 param_2,int param_3,int param_4,undefined4 param_5,
+void __thiscall Recovered_Bulk::FUN_11278730(undefined4 param_2,int param_3,int param_4,undefined4 param_5,
             undefined4 param_6,undefined4 param_7)
-
 {
+  int *param_1 = (int *)this;
   undefined1 local_108 [260];
   uint local_4;
   
@@ -41769,9 +40478,9 @@ FUN_11278730(int *param_1,undefined4 param_2,int param_3,int param_4,undefined4 
 // Reference entry 112789e0; body size 100 bytes.
 #line 1 "ENTRY_112789e0"
 
-void __thiscall FUN_112789e0(int param_1,int param_2,undefined1 param_3,undefined4 param_4)
-
+void __thiscall Recovered_Bulk::FUN_112789e0(int param_2,undefined1 param_3,undefined4 param_4)
 {
+  int param_1 = (int )this;
   char cVar1;
   undefined1 local_8 [4];
   undefined4 local_4;
@@ -41791,9 +40500,9 @@ void __thiscall FUN_112789e0(int param_1,int param_2,undefined1 param_3,undefine
 // Reference entry 11278bc0; body size 104 bytes.
 #line 1 "ENTRY_11278bc0"
 
-void __thiscall FUN_11278bc0(int param_1,char *param_2)
-
+void __thiscall Recovered_Bulk::FUN_11278bc0(char *param_2)
 {
+  int param_1 = (int )this;
   char *_Str2;
   int iVar1;
   
@@ -41859,9 +40568,9 @@ void __fastcall FUN_11279420(int *param_1)
 // Reference entry 112796c0; body size 125 bytes.
 #line 1 "ENTRY_112796c0"
 
-void __thiscall FUN_112796c0(int *param_1,int param_2,int param_3,int param_4)
-
+void __thiscall Recovered_Bulk::FUN_112796c0(int param_2,int param_3,int param_4)
 {
+  int *param_1 = (int *)this;
   uint uVar1;
   int *piVar2;
   int *piVar3;
@@ -41978,9 +40687,9 @@ void __fastcall FUN_11279e90(int param_1)
 // Reference entry 1127a120; body size 81 bytes.
 #line 1 "ENTRY_1127a120"
 
-bool __thiscall FUN_1127a120(int param_1,undefined4 *param_2)
-
+bool __thiscall Recovered_Bulk::FUN_1127a120(undefined4 *param_2)
 {
+  int param_1 = (int )this;
   undefined4 uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -42052,9 +40761,9 @@ void FUN_1127a470(void)
 // Reference entry 1127a540; body size 176 bytes.
 #line 1 "ENTRY_1127a540"
 
-bool __thiscall FUN_1127a540(int param_1,undefined4 *param_2,uint param_3)
-
+bool __thiscall Recovered_Bulk::FUN_1127a540(undefined4 *param_2,uint param_3)
 {
+  int param_1 = (int )this;
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -42169,9 +40878,9 @@ undefined4 FUN_1127a750(int param_1,int param_2)
 // Reference entry 1127af20; body size 98 bytes.
 #line 1 "ENTRY_1127af20"
 
-void __thiscall FUN_1127af20(int param_1,uint param_2)
-
+void __thiscall Recovered_Bulk::FUN_1127af20(uint param_2)
 {
+  int param_1 = (int )this;
   undefined4 *puVar1;
   uint uVar2;
   
@@ -42213,9 +40922,9 @@ void __thiscall FUN_1127af20(int param_1,uint param_2)
 // Reference entry 1127b0e0; body size 98 bytes.
 #line 1 "ENTRY_1127b0e0"
 
-void __thiscall FUN_1127b0e0(undefined1 *param_1,undefined4 *param_2,int param_3)
-
+void __thiscall Recovered_Bulk::FUN_1127b0e0(undefined4 *param_2,int param_3)
 {
+  undefined1 *param_1 = (undefined1 *)this;
   undefined4 uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -42279,9 +40988,9 @@ void __thiscall FUN_1127b0e0(undefined1 *param_1,undefined4 *param_2,int param_3
 // Reference entry 1127b8d0; body size 170 bytes.
 #line 1 "ENTRY_1127b8d0"
 
-bool __thiscall FUN_1127b8d0(int param_1,undefined4 param_2,uint param_3)
-
+bool __thiscall Recovered_Bulk::FUN_1127b8d0(undefined4 param_2,uint param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   uint uVar2;
   int local_28 [5];
@@ -42342,9 +41051,9 @@ undefined1 FUN_1127ba10(undefined4 param_1,uint param_2)
 // Reference entry 1127bac0; body size 176 bytes.
 #line 1 "ENTRY_1127bac0"
 
-bool __thiscall FUN_1127bac0(int param_1,int *param_2)
-
+bool __thiscall Recovered_Bulk::FUN_1127bac0(int *param_2)
 {
+  int param_1 = (int )this;
   uint uVar1;
   int *piVar2;
   undefined *puVar3;
@@ -42406,9 +41115,9 @@ bool __thiscall FUN_1127bac0(int param_1,int *param_2)
 // Reference entry 1127bd40; body size 270 bytes.
 #line 1 "ENTRY_1127bd40"
 
-bool __thiscall FUN_1127bd40(char *param_1,undefined1 *param_2,uint param_3)
-
+bool __thiscall Recovered_Bulk::FUN_1127bd40(undefined1 *param_2,uint param_3)
 {
+  char *param_1 = (char *)this;
   char cVar1;
   uint uVar2;
   uint uVar3;
@@ -42555,9 +41264,9 @@ undefined4 __fastcall FUN_1127c160(char *param_1)
 // Reference entry 1127c4e0; body size 84 bytes.
 #line 1 "ENTRY_1127c4e0"
 
-uint __thiscall FUN_1127c4e0(int param_1,undefined4 param_2,int param_3)
-
+uint __thiscall Recovered_Bulk::FUN_1127c4e0(undefined4 param_2,int param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   uint uVar2;
   int iVar3;
@@ -42705,9 +41414,9 @@ undefined1 __fastcall FUN_1127ca70(int param_1)
 // Reference entry 1127cc80; body size 82 bytes.
 #line 1 "ENTRY_1127cc80"
 
-char __thiscall FUN_1127cc80(char *param_1,undefined4 param_2,int param_3,undefined4 *param_4)
-
+char __thiscall Recovered_Bulk::FUN_1127cc80(undefined4 param_2,int param_3,undefined4 *param_4)
 {
+  char *param_1 = (char *)this;
   char cVar1;
   
   thunk_FUN_1127b390(param_2);
@@ -42854,9 +41563,9 @@ undefined4 * __fastcall FUN_1127d140(undefined4 *param_1)
 // Reference entry 1127d260; body size 128 bytes.
 #line 1 "ENTRY_1127d260"
 
-undefined4 * __thiscall FUN_1127d260(undefined4 *param_1,undefined4 *param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1127d260(undefined4 *param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)(*param_2);
   thunk_FUN_1145c250(param_1 + 2,param_2 + 2,0x41);
   thunk_FUN_1145c250((int)param_1 + 0x49,(int)param_2 + 0x49,0x401);
@@ -42944,11 +41653,10 @@ void __fastcall FUN_1127d7e0(int *param_1)
 // Reference entry 1127dfe0; body size 306 bytes.
 #line 1 "ENTRY_1127dfe0"
 
-void __thiscall
-FUN_1127dfe0(int param_1,undefined4 param_2,char *param_3,char *param_4,int param_5,char *param_6,
+void __thiscall Recovered_Bulk::FUN_1127dfe0(undefined4 param_2,char *param_3,char *param_4,int param_5,char *param_6,
             undefined2 param_7,undefined2 param_8,char *param_9)
-
 {
+  int param_1 = (int )this;
   char cVar1;
   int *piVar2;
   int iVar3;
@@ -43020,11 +41728,10 @@ FUN_1127dfe0(int param_1,undefined4 param_2,char *param_3,char *param_4,int para
 // Reference entry 1127e160; body size 295 bytes.
 #line 1 "ENTRY_1127e160"
 
-void __thiscall
-FUN_1127e160(int param_1,undefined4 param_2,char *param_3,char *param_4,uint param_5,char *param_6,
+void __thiscall Recovered_Bulk::FUN_1127e160(undefined4 param_2,char *param_3,char *param_4,uint param_5,char *param_6,
             undefined2 param_7,undefined2 param_8,char *param_9)
-
 {
+  int param_1 = (int )this;
   char cVar1;
   uint *puVar2;
   uint uVar3;
@@ -43097,9 +41804,9 @@ LAB_1127e277:
 // Reference entry 1127e450; body size 277 bytes.
 #line 1 "ENTRY_1127e450"
 
-undefined4 * __thiscall FUN_1127e450(undefined4 *param_1,undefined4 param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1127e450(undefined4 param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_1125b810(param_1,LAB_1007cb1f,LAB_10021cba,LAB_10092f14);
   *param_1 = (undefined4)((uint)&Ext_RUpdManifestParser_vftable);
   param_1[2] = param_2;
@@ -43165,9 +41872,9 @@ void __fastcall FUN_1127e5b0(int param_1)
 // Reference entry 1127e820; body size 560 bytes.
 #line 1 "ENTRY_1127e820"
 
-void __thiscall FUN_1127e820(undefined1 *param_1,uint param_2)
-
+void __thiscall Recovered_Bulk::FUN_1127e820(uint param_2)
 {
+  undefined1 *param_1 = (undefined1 *)this;
   int iVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -43291,9 +41998,9 @@ uint __fastcall FUN_1127f190(int param_1)
 // Reference entry 1127f210; body size 106 bytes.
 #line 1 "ENTRY_1127f210"
 
-uint __thiscall FUN_1127f210(int param_1,char param_2)
-
+uint __thiscall Recovered_Bulk::FUN_1127f210(char param_2)
 {
+  int param_1 = (int )this;
   int iVar1;
   uint uVar2;
   
@@ -43316,9 +42023,9 @@ uint __thiscall FUN_1127f210(int param_1,char param_2)
 // Reference entry 1127fa00; body size 86 bytes.
 #line 1 "ENTRY_1127fa00"
 
-undefined4 __thiscall FUN_1127fa00(int param_1,undefined4 param_2,undefined4 param_3)
-
+undefined4 __thiscall Recovered_Bulk::FUN_1127fa00(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   undefined4 in_EAX;
   undefined2 uVar2;
   uint uVar1;
@@ -43352,10 +42059,9 @@ undefined4 __thiscall FUN_1127fa00(int param_1,undefined4 param_2,undefined4 par
 // Reference entry 1127fa70; body size 207 bytes.
 #line 1 "ENTRY_1127fa70"
 
-void __thiscall
-FUN_1127fa70(undefined1 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+void __thiscall Recovered_Bulk::FUN_1127fa70(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  undefined1 *param_1 = (undefined1 *)this;
   *param_1 = (undefined1)(0);
   param_1[0x401] = 0;
   param_1[0x442] = 0;
@@ -43385,9 +42091,9 @@ FUN_1127fa70(undefined1 *param_1,undefined4 param_2,undefined4 param_3,undefined
 // Reference entry 1127fcb0; body size 130 bytes.
 #line 1 "ENTRY_1127fcb0"
 
-void __thiscall FUN_1127fcb0(int param_1,undefined4 param_2,undefined4 param_3)
-
+void __thiscall Recovered_Bulk::FUN_1127fcb0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   undefined1 local_408 [1028];
   uint local_4;
@@ -43453,9 +42159,9 @@ void __fastcall FUN_11280140(undefined4 *param_1)
 // Reference entry 112810c0; body size 134 bytes.
 #line 1 "ENTRY_112810c0"
 
-undefined4 __thiscall FUN_112810c0(int param_1,undefined4 param_2,undefined4 param_3,ushort param_4)
-
+undefined4 __thiscall Recovered_Bulk::FUN_112810c0(undefined4 param_2,undefined4 param_3,ushort param_4)
 {
+  int param_1 = (int )this;
   uint uVar1;
   undefined4 uVar2;
   uint uVar3;
@@ -43504,9 +42210,9 @@ int __fastcall FUN_112816c0(int param_1)
 // Reference entry 11281780; body size 68 bytes.
 #line 1 "ENTRY_11281780"
 
-undefined4 * __thiscall FUN_11281780(undefined4 *param_1,undefined4 param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11281780(undefined4 param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_1125b880(param_1,LAB_10077ca0,LAB_1007ba08);
   param_1[2] = param_2;
   *param_1 = (undefined4)((uint)&Ext_RMusicServiceListParser_vftable);
@@ -43541,9 +42247,9 @@ void __fastcall FUN_112818e0(int param_1)
 // Reference entry 11281ad0; body size 78 bytes.
 #line 1 "ENTRY_11281ad0"
 
-uint * __thiscall FUN_11281ad0(uint *param_1,uint *param_2)
-
+uint * __thiscall Recovered_Bulk::FUN_11281ad0(uint *param_2)
 {
+  uint *param_1 = (uint *)this;
   uint uVar1;
   uint uVar2;
   uint *puVar3;
@@ -43570,9 +42276,9 @@ uint * __thiscall FUN_11281ad0(uint *param_1,uint *param_2)
 // Reference entry 11281d60; body size 118 bytes.
 #line 1 "ENTRY_11281d60"
 
-undefined1 __thiscall FUN_11281d60(uint *param_1,int param_2)
-
+undefined1 __thiscall Recovered_Bulk::FUN_11281d60(int param_2)
 {
+  uint *param_1 = (uint *)this;
   uint uVar1;
   uint *puVar2;
   uint uVar3;
@@ -43602,11 +42308,10 @@ LAB_11281dba:
 // Reference entry 11281eb0; body size 101 bytes.
 #line 1 "ENTRY_11281eb0"
 
-uint __thiscall
-FUN_11281eb0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
+uint __thiscall Recovered_Bulk::FUN_11281eb0(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7)
-
 {
+  int param_1 = (int )this;
   uint uVar1;
   int iVar2;
   
@@ -43838,9 +42543,9 @@ void __fastcall FUN_11282810(int param_1)
 // Reference entry 11283220; body size 67 bytes.
 #line 1 "ENTRY_11283220"
 
-int __thiscall FUN_11283220(int param_1,ushort param_2)
-
+int __thiscall Recovered_Bulk::FUN_11283220(ushort param_2)
 {
+  int param_1 = (int )this;
   int iVar1;
   ushort uVar2;
   
@@ -43883,9 +42588,9 @@ bool FUN_112833b0(undefined4 param_1)
 // Reference entry 11283ff0; body size 80 bytes.
 #line 1 "ENTRY_11283ff0"
 
-void __thiscall FUN_11283ff0(int param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_11283ff0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   undefined4 local_8;
   undefined4 local_4;
   
@@ -43901,9 +42606,9 @@ void __thiscall FUN_11283ff0(int param_1,undefined4 param_2)
 // Reference entry 11284370; body size 152 bytes.
 #line 1 "ENTRY_11284370"
 
-undefined4 __thiscall FUN_11284370(undefined1 *param_1,char *param_2)
-
+undefined4 __thiscall Recovered_Bulk::FUN_11284370(char *param_2)
 {
+  undefined1 *param_1 = (undefined1 *)this;
   char cVar1;
   undefined *puVar2;
   int iVar3;
@@ -43949,9 +42654,9 @@ undefined4 __thiscall FUN_11284370(undefined1 *param_1,char *param_2)
 // Reference entry 11285770; body size 174 bytes.
 #line 1 "ENTRY_11285770"
 
-void __thiscall FUN_11285770(int param_1,int param_2)
-
+void __thiscall Recovered_Bulk::FUN_11285770(int param_2)
 {
+  int param_1 = (int )this;
   uint uVar1;
   undefined1 local_158 [32];
   undefined1 local_138;
@@ -43993,10 +42698,9 @@ void __thiscall FUN_11285770(int param_1,int param_2)
 // Reference entry 112858c0; body size 72 bytes.
 #line 1 "ENTRY_112858c0"
 
-int __thiscall
-FUN_112858c0(undefined4 param_1,undefined4 param_2,undefined4 param_3,int param_4,int param_5)
-
+int __thiscall Recovered_Bulk::FUN_112858c0(undefined4 param_2,undefined4 param_3,int param_4,int param_5)
 {
+  undefined4 param_1 = (undefined4 )this;
   char cVar1;
   int iVar2;
   int iVar3;
@@ -44038,9 +42742,9 @@ undefined4 FUN_11285940(char *param_1)
 // Reference entry 11285e60; body size 70 bytes.
 #line 1 "ENTRY_11285e60"
 
-undefined4 __thiscall FUN_11285e60(int param_1,int param_2,int param_3)
-
+undefined4 __thiscall Recovered_Bulk::FUN_11285e60(int param_2,int param_3)
 {
+  int param_1 = (int )this;
   int iVar1;
   
   iVar1 = (int)(0);
@@ -44088,10 +42792,9 @@ undefined1 * __fastcall FUN_11286490(undefined1 *param_1)
 // Reference entry 11286c20; body size 297 bytes.
 #line 1 "ENTRY_11286c20"
 
-char * __thiscall
-FUN_11286c20(char *param_1,int param_2,undefined4 param_3,int param_4,int param_5,int param_6)
-
+char * __thiscall Recovered_Bulk::FUN_11286c20(int param_2,undefined4 param_3,int param_4,int param_5,int param_6)
 {
+  char *param_1 = (char *)this;
   char cVar1;
   int iVar2;
   char *pcVar3;
@@ -44159,9 +42862,9 @@ FUN_11286c20(char *param_1,int param_2,undefined4 param_3,int param_4,int param_
 // Reference entry 11286da0; body size 296 bytes.
 #line 1 "ENTRY_11286da0"
 
-char * __thiscall FUN_11286da0(char *param_1,int param_2)
-
+char * __thiscall Recovered_Bulk::FUN_11286da0(int param_2)
 {
+  char *param_1 = (char *)this;
   char cVar1;
   int iVar2;
   char *pcVar3;
@@ -44279,9 +42982,9 @@ void __fastcall FUN_11287560(int param_1)
 // Reference entry 112877d0; body size 94 bytes.
 #line 1 "ENTRY_112877d0"
 
-void __thiscall FUN_112877d0(int param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_112877d0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   undefined4 local_108;
   int local_104;
   uint local_4;
@@ -44298,11 +43001,9 @@ void __thiscall FUN_112877d0(int param_1,undefined4 param_2)
 // Reference entry 11287a00; body size 134 bytes.
 #line 1 "ENTRY_11287a00"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11287a00(int *param_1,uint param_2,undefined4 param_3)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11287a00(uint param_2,undefined4 param_3)
 {
+  int *param_1 = (int *)this;
   uint uVar1;
   uint local_1008;
   undefined1 local_1004 [4096];
@@ -44552,9 +43253,9 @@ void __stdcall FUN_11288250(undefined4 param_1,undefined4 param_2,undefined4 par
 // Reference entry 11288340; body size 142 bytes.
 #line 1 "ENTRY_11288340"
 
-int __thiscall FUN_11288340(int param_1,uint param_2,int param_3)
-
+int __thiscall Recovered_Bulk::FUN_11288340(uint param_2,int param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   int iVar2;
   uint uVar3;
@@ -44595,9 +43296,9 @@ int __thiscall FUN_11288340(int param_1,uint param_2,int param_3)
 // Reference entry 11288400; body size 139 bytes.
 #line 1 "ENTRY_11288400"
 
-int __thiscall FUN_11288400(int param_1,uint param_2,uint param_3)
-
+int __thiscall Recovered_Bulk::FUN_11288400(uint param_2,uint param_3)
 {
+  int param_1 = (int )this;
   uint uVar1;
   int iVar2;
   uint uVar3;
@@ -44641,9 +43342,9 @@ int __thiscall FUN_11288400(int param_1,uint param_2,uint param_3)
 // Reference entry 112884d0; body size 646 bytes.
 #line 1 "ENTRY_112884d0"
 
-void __thiscall FUN_112884d0(int *param_1,void *param_2,uint param_3,int param_4,uint param_5)
-
+void __thiscall Recovered_Bulk::FUN_112884d0(void *param_2,uint param_3,int param_4,uint param_5)
 {
+  int *param_1 = (int *)this;
   int iVar1;
   uint uVar2;
   undefined *puVar3;
@@ -44744,9 +43445,9 @@ LAB_1128873b:
 // Reference entry 11288840; body size 447 bytes.
 #line 1 "ENTRY_11288840"
 
-void __thiscall FUN_11288840(int *param_1,int param_2,int param_3,undefined4 *param_4,uint param_5)
-
+void __thiscall Recovered_Bulk::FUN_11288840(int param_2,int param_3,undefined4 *param_4,uint param_5)
 {
+  int *param_1 = (int *)this;
   uint uVar1;
   int iVar2;
   undefined *puVar3;
@@ -44817,9 +43518,9 @@ LAB_112889e4:
 // Reference entry 11288ae0; body size 343 bytes.
 #line 1 "ENTRY_11288ae0"
 
-void __thiscall FUN_11288ae0(int param_1,void *param_2,uint param_3)
-
+void __thiscall Recovered_Bulk::FUN_11288ae0(void *param_2,uint param_3)
 {
+  int param_1 = (int )this;
   int iVar1;
   uint uVar2;
   uint local_4c;
@@ -44869,9 +43570,9 @@ void __thiscall FUN_11288ae0(int param_1,void *param_2,uint param_3)
 // Reference entry 11288c90; body size 207 bytes.
 #line 1 "ENTRY_11288c90"
 
-void __thiscall FUN_11288c90(int param_1,int param_2,int param_3)
-
+void __thiscall Recovered_Bulk::FUN_11288c90(int param_2,int param_3)
 {
+  int param_1 = (int )this;
   int iVar1;
   int local_1c;
   int local_18;
@@ -44905,9 +43606,9 @@ void __thiscall FUN_11288c90(int param_1,int param_2,int param_3)
 // Reference entry 1128a500; body size 146 bytes.
 #line 1 "ENTRY_1128a500"
 
-void __thiscall FUN_1128a500(char *param_1,char *param_2)
-
+void __thiscall Recovered_Bulk::FUN_1128a500(char *param_2)
 {
+  char *param_1 = (char *)this;
   char cVar1;
   char *pcVar2;
   uint local_1c;
@@ -44955,12 +43656,11 @@ void __thiscall FUN_1128a500(char *param_1,char *param_2)
 // Reference entry 1128a9b0; body size 79 bytes.
 #line 1 "ENTRY_1128a9b0"
 
-undefined4 * __thiscall
-FUN_1128a9b0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined2 param_4,
+undefined4 * __thiscall Recovered_Bulk::FUN_1128a9b0(undefined4 param_2,undefined4 param_3,undefined2 param_4,
             undefined1 param_5,undefined1 param_6,undefined4 param_7,undefined4 param_8,
             undefined4 param_9)
-
 {
+  undefined4 *param_1 = (undefined4 *)this;
   param_1[1] = param_3;
   param_1[2] = param_3;
   param_1[3] = param_8;
@@ -44980,9 +43680,9 @@ FUN_1128a9b0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined
 // Reference entry 1128afb0; body size 92 bytes.
 #line 1 "ENTRY_1128afb0"
 
-void __thiscall FUN_1128afb0(int param_1,int param_2,int param_3)
-
+void __thiscall Recovered_Bulk::FUN_1128afb0(int param_2,int param_3)
 {
+  int param_1 = (int )this;
   int iVar1;
   
   iVar1 = (int)(*(int *)(param_1 + 0x14) + param_2 * 0x24);
@@ -45004,9 +43704,9 @@ void __thiscall FUN_1128afb0(int param_1,int param_2,int param_3)
 // Reference entry 1128b030; body size 129 bytes.
 #line 1 "ENTRY_1128b030"
 
-void __thiscall FUN_1128b030(int param_1,int param_2,int param_3)
-
+void __thiscall Recovered_Bulk::FUN_1128b030(int param_2,int param_3)
 {
+  int param_1 = (int )this;
   int iVar1;
   
   if (((param_2 == 0) && (*(int *)(param_3 + 0x1c) == 7)) && (*(int *)(param_3 + 4) != 0)) {
@@ -45032,9 +43732,9 @@ void __thiscall FUN_1128b030(int param_1,int param_2,int param_3)
 // Reference entry 1128b0e0; body size 133 bytes.
 #line 1 "ENTRY_1128b0e0"
 
-undefined4 __thiscall FUN_1128b0e0(int param_1,int *param_2)
-
+undefined4 __thiscall Recovered_Bulk::FUN_1128b0e0(int *param_2)
 {
+  int param_1 = (int )this;
   int *piVar1;
   bool bVar2;
   uint *puVar3;
@@ -45167,9 +43867,9 @@ void __fastcall FUN_1128b190(int param_1)
 // Reference entry 1128b300; body size 158 bytes.
 #line 1 "ENTRY_1128b300"
 
-void __thiscall FUN_1128b300(int param_1,int param_2,int *param_3)
-
+void __thiscall Recovered_Bulk::FUN_1128b300(int param_2,int *param_3)
 {
+  int param_1 = (int )this;
   int iVar1;
   int iVar2;
   uint *puVar3;
@@ -45212,9 +43912,9 @@ void __thiscall FUN_1128b300(int param_1,int param_2,int *param_3)
 // Reference entry 1128b3d0; body size 298 bytes.
 #line 1 "ENTRY_1128b3d0"
 
-void __thiscall FUN_1128b3d0(int param_1,undefined4 *param_2,int *param_3)
-
+void __thiscall Recovered_Bulk::FUN_1128b3d0(undefined4 *param_2,int *param_3)
 {
+  int param_1 = (int )this;
   int iVar1;
   undefined4 *puVar2;
   undefined4 local_60;
@@ -45348,9 +44048,9 @@ void FUN_1128b870(undefined4 param_1,int param_2,undefined4 param_3)
 // Reference entry 1128c370; body size 450 bytes.
 #line 1 "ENTRY_1128c370"
 
-void __thiscall FUN_1128c370(int param_1,undefined4 *param_2)
-
+void __thiscall Recovered_Bulk::FUN_1128c370(undefined4 *param_2)
 {
+  int param_1 = (int )this;
   int iVar1;
   int iVar2;
   char cVar3;
@@ -45564,9 +44264,9 @@ void __fastcall FUN_1128cb10(int param_1)
 // Reference entry 1128cdb0; body size 244 bytes.
 #line 1 "ENTRY_1128cdb0"
 
-int __thiscall FUN_1128cdb0(int param_1,undefined4 param_2,undefined4 param_3)
-
+int __thiscall Recovered_Bulk::FUN_1128cdb0(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   int *piVar1;
   uint uVar2;
   int iVar3;
@@ -45620,9 +44320,9 @@ int __thiscall FUN_1128cdb0(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1128d420; body size 80 bytes.
 #line 1 "ENTRY_1128d420"
 
-void __thiscall FUN_1128d420(int param_1,char param_2)
-
+void __thiscall Recovered_Bulk::FUN_1128d420(char param_2)
 {
+  int param_1 = (int )this;
   char *pcVar1;
   
   if (*(int *)(param_1 + 0x1c) == 6) {
@@ -45654,9 +44354,9 @@ LAB_1128d463:
 // Reference entry 1128d490; body size 156 bytes.
 #line 1 "ENTRY_1128d490"
 
-undefined4 * __thiscall FUN_1128d490(int param_1,int param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1128d490(int param_2)
 {
+  int param_1 = (int )this;
   undefined4 *puVar1;
   int iVar2;
   uint *puVar3;
@@ -45712,9 +44412,9 @@ undefined4 * __thiscall FUN_1128d490(int param_1,int param_2)
 // Reference entry 1128d660; body size 331 bytes.
 #line 1 "ENTRY_1128d660"
 
-int __thiscall FUN_1128d660(int param_1,int param_2,undefined4 param_3)
-
+int __thiscall Recovered_Bulk::FUN_1128d660(int param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   undefined4 *puVar1;
   int iVar2;
   int *piVar3;
@@ -45926,9 +44626,9 @@ void __fastcall FUN_1128e740(undefined4 *param_1)
 // Reference entry 1128e7a0; body size 116 bytes.
 #line 1 "ENTRY_1128e7a0"
 
-undefined4 * __thiscall FUN_1128e7a0(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1128e7a0(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -45954,9 +44654,9 @@ undefined4 * __thiscall FUN_1128e7a0(undefined4 *param_1,byte param_2)
 // Reference entry 1128e840; body size 116 bytes.
 #line 1 "ENTRY_1128e840"
 
-undefined4 * __thiscall FUN_1128e840(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1128e840(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -45982,9 +44682,9 @@ undefined4 * __thiscall FUN_1128e840(undefined4 *param_1,byte param_2)
 // Reference entry 1128e8e0; body size 116 bytes.
 #line 1 "ENTRY_1128e8e0"
 
-undefined4 * __thiscall FUN_1128e8e0(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1128e8e0(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -46010,9 +44710,9 @@ undefined4 * __thiscall FUN_1128e8e0(undefined4 *param_1,byte param_2)
 // Reference entry 1128e980; body size 99 bytes.
 #line 1 "ENTRY_1128e980"
 
-undefined4 * __thiscall FUN_1128e980(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1128e980(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
@@ -46059,9 +44759,9 @@ void __fastcall FUN_1128efd0(int param_1)
 // Reference entry 1128f3c0; body size 114 bytes.
 #line 1 "ENTRY_1128f3c0"
 
-undefined4 __thiscall FUN_1128f3c0(int param_1,undefined4 param_2)
-
+undefined4 __thiscall Recovered_Bulk::FUN_1128f3c0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   int iVar1;
   undefined1 local_b;
   char local_a;
@@ -46105,9 +44805,9 @@ int FUN_1128f650(char *param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1128f7b0; body size 209 bytes.
 #line 1 "ENTRY_1128f7b0"
 
-void __thiscall FUN_1128f7b0(int param_1,undefined4 param_2,uint param_3)
-
+void __thiscall Recovered_Bulk::FUN_1128f7b0(undefined4 param_2,uint param_3)
 {
+  int param_1 = (int )this;
   char cVar1;
   int iVar2;
   __time64_t _Var3;
@@ -46144,9 +44844,9 @@ void __thiscall FUN_1128f7b0(int param_1,undefined4 param_2,uint param_3)
 // Reference entry 1128f9f0; body size 190 bytes.
 #line 1 "ENTRY_1128f9f0"
 
-undefined4 * __thiscall FUN_1128f9f0(undefined4 *param_1,int param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1128f9f0(int param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   int iVar1;
   char *pcVar2;
   undefined4 *puVar3;
@@ -46230,9 +44930,9 @@ void __fastcall FUN_1128fba0(int param_1)
 // Reference entry 1128fc10; body size 197 bytes.
 #line 1 "ENTRY_1128fc10"
 
-void __thiscall FUN_1128fc10(int *param_1,undefined4 param_2,undefined4 param_3)
-
+void __thiscall Recovered_Bulk::FUN_1128fc10(undefined4 param_2,undefined4 param_3)
 {
+  int *param_1 = (int *)this;
   char *pcVar1;
   undefined4 uStack_54;
   char *pcStack_50;
@@ -46288,9 +44988,9 @@ void __thiscall FUN_1128fc10(int *param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1128fd10; body size 139 bytes.
 #line 1 "ENTRY_1128fd10"
 
-void __thiscall FUN_1128fd10(int *param_1,char param_2)
-
+void __thiscall Recovered_Bulk::FUN_1128fd10(char param_2)
 {
+  int *param_1 = (int *)this;
   undefined4 uVar1;
   char *pcVar2;
   char cStack_8;
@@ -46323,9 +45023,9 @@ void __thiscall FUN_1128fd10(int *param_1,char param_2)
 // Reference entry 1128fec0; body size 71 bytes.
 #line 1 "ENTRY_1128fec0"
 
-void __thiscall FUN_1128fec0(int *param_1,char param_2)
-
+void __thiscall Recovered_Bulk::FUN_1128fec0(char param_2)
 {
+  int *param_1 = (int *)this;
   int iVar1;
   char *pcVar2;
   undefined4 uVar3;
@@ -46354,9 +45054,9 @@ void __thiscall FUN_1128fec0(int *param_1,char param_2)
 // Reference entry 1128ff20; body size 72 bytes.
 #line 1 "ENTRY_1128ff20"
 
-void __thiscall FUN_1128ff20(int param_1,void *param_2,uint param_3)
-
+void __thiscall Recovered_Bulk::FUN_1128ff20(void *param_2,uint param_3)
 {
+  int param_1 = (int )this;
   if (*(char *)(param_1 + 0x20) == '\0') {
     if (*(int **)(param_1 + 0x24) != (int *)0x0) {
                     
@@ -46435,9 +45135,9 @@ void FUN_11291ee0(undefined4 param_1)
 // Reference entry 11292470; body size 461 bytes.
 #line 1 "ENTRY_11292470"
 
-void __thiscall FUN_11292470(int param_1,void *param_2,uint param_3,int *param_4)
-
+void __thiscall Recovered_Bulk::FUN_11292470(void *param_2,uint param_3,int *param_4)
 {
+  int param_1 = (int )this;
   uint uVar1;
   undefined4 uVar2;
   uint uVar3;
@@ -46524,9 +45224,9 @@ void __thiscall FUN_11292470(int param_1,void *param_2,uint param_3,int *param_4
 // Reference entry 112926b0; body size 308 bytes.
 #line 1 "ENTRY_112926b0"
 
-void __thiscall FUN_112926b0(int param_1,int param_2,uint param_3,undefined1 *param_4,uint param_5)
-
+void __thiscall Recovered_Bulk::FUN_112926b0(int param_2,uint param_3,undefined1 *param_4,uint param_5)
 {
+  int param_1 = (int )this;
   char cVar1;
   undefined4 uVar2;
   int iVar3;
@@ -46582,10 +45282,9 @@ LAB_112927c9:
 // Reference entry 11292840; body size 137 bytes.
 #line 1 "ENTRY_11292840"
 
-void __thiscall
-FUN_11292840(int param_1,undefined4 param_2,int param_3,int param_4,undefined4 param_5)
-
+void __thiscall Recovered_Bulk::FUN_11292840(undefined4 param_2,int param_3,int param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   int iVar1;
   undefined4 uVar2;
   int iVar3;
@@ -46605,9 +45304,9 @@ FUN_11292840(int param_1,undefined4 param_2,int param_3,int param_4,undefined4 p
 // Reference entry 11292a90; body size 77 bytes.
 #line 1 "ENTRY_11292a90"
 
-void __thiscall FUN_11292a90(int param_1,undefined4 param_2,undefined4 param_3)
-
+void __thiscall Recovered_Bulk::FUN_11292a90(undefined4 param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   thunk_FUN_11285e20(param_2,param_3,0);
   *(undefined2 *)(param_1 + 0x100) = 0x101;
   thunk_FUN_1145ed60(param_1 + 0x104);
@@ -46621,9 +45320,9 @@ void __thiscall FUN_11292a90(int param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11293060; body size 171 bytes.
 #line 1 "ENTRY_11293060"
 
-undefined1 __thiscall FUN_11293060(int *param_1,int *param_2,int *param_3)
-
+undefined1 __thiscall Recovered_Bulk::FUN_11293060(int *param_2,int *param_3)
 {
+  int *param_1 = (int *)this;
   byte bVar1;
   int iVar2;
   uint uVar3;
@@ -46667,9 +45366,9 @@ LAB_112930f5:
 // Reference entry 11293850; body size 74 bytes.
 #line 1 "ENTRY_11293850"
 
-void __thiscall FUN_11293850(int param_1,void *param_2,uint *param_3)
-
+void __thiscall Recovered_Bulk::FUN_11293850(void *param_2,uint *param_3)
 {
+  int param_1 = (int )this;
   uint uVar1;
   int *piVar2;
   undefined4 uVar3;
@@ -46793,9 +45492,9 @@ char * __fastcall FUN_11293ed0(char *param_1)
 // Reference entry 11294280; body size 71 bytes.
 #line 1 "ENTRY_11294280"
 
-void __thiscall FUN_11294280(int *param_1,undefined4 param_2)
-
+void __thiscall Recovered_Bulk::FUN_11294280(undefined4 param_2)
 {
+  int *param_1 = (int *)this;
   int *piVar1;
   int iVar2;
   int *piVar3;
@@ -46819,9 +45518,9 @@ void __thiscall FUN_11294280(int *param_1,undefined4 param_2)
 // Reference entry 11294330; body size 73 bytes.
 #line 1 "ENTRY_11294330"
 
-int * __thiscall FUN_11294330(int *param_1,int *param_2,int *param_3)
-
+int * __thiscall Recovered_Bulk::FUN_11294330(int *param_2,int *param_3)
 {
+  int *param_1 = (int *)this;
   int iVar1;
   int iVar2;
   undefined4 *puVar3;
@@ -46853,9 +45552,9 @@ int * __thiscall FUN_11294330(int *param_1,int *param_2,int *param_3)
 // Reference entry 11294410; body size 214 bytes.
 #line 1 "ENTRY_11294410"
 
-int * __thiscall FUN_11294410(undefined4 *param_1,int *param_2,int *param_3)
-
+int * __thiscall Recovered_Bulk::FUN_11294410(int *param_2,int *param_3)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -46907,9 +45606,9 @@ int * __thiscall FUN_11294410(undefined4 *param_1,int *param_2,int *param_3)
 // Reference entry 11294520; body size 214 bytes.
 #line 1 "ENTRY_11294520"
 
-int * __thiscall FUN_11294520(undefined4 *param_1,int *param_2,int *param_3)
-
+int * __thiscall Recovered_Bulk::FUN_11294520(int *param_2,int *param_3)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -47070,9 +45769,9 @@ void __fastcall FUN_11294d60(int *param_1)
 // Reference entry 11294e30; body size 181 bytes.
 #line 1 "ENTRY_11294e30"
 
-int __thiscall FUN_11294e30(undefined4 *param_1,int *param_2)
-
+int __thiscall Recovered_Bulk::FUN_11294e30(int *param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -47117,9 +45816,9 @@ int __thiscall FUN_11294e30(undefined4 *param_1,int *param_2)
 // Reference entry 11294f20; body size 181 bytes.
 #line 1 "ENTRY_11294f20"
 
-int __thiscall FUN_11294f20(undefined4 *param_1,int *param_2)
-
+int __thiscall Recovered_Bulk::FUN_11294f20(int *param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -47164,9 +45863,9 @@ int __thiscall FUN_11294f20(undefined4 *param_1,int *param_2)
 // Reference entry 11295130; body size 136 bytes.
 #line 1 "ENTRY_11295130"
 
-int __thiscall FUN_11295130(int param_1,byte param_2)
-
+int __thiscall Recovered_Bulk::FUN_11295130(byte param_2)
 {
+  int param_1 = (int )this;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
@@ -47195,9 +45894,9 @@ int __thiscall FUN_11295130(int param_1,byte param_2)
 // Reference entry 112951e0; body size 257 bytes.
 #line 1 "ENTRY_112951e0"
 
-uint __thiscall FUN_112951e0(uint param_1,byte param_2)
-
+uint __thiscall Recovered_Bulk::FUN_112951e0(byte param_2)
 {
+  uint param_1 = (uint )this;
   int iVar1;
   char cVar2;
   undefined4 uStack_14;
@@ -47250,9 +45949,9 @@ uint __thiscall FUN_112951e0(uint param_1,byte param_2)
 // Reference entry 11295330; body size 73 bytes.
 #line 1 "ENTRY_11295330"
 
-int __thiscall FUN_11295330(int param_1,byte param_2)
-
+int __thiscall Recovered_Bulk::FUN_11295330(byte param_2)
 {
+  int param_1 = (int )this;
   if (*(int *)(param_1 + 8) != 0) {
     thunk_FUN_113cfe50(*(int *)(param_1 + 8));
     *(undefined4 *)(param_1 + 8) = 0;
@@ -47409,9 +46108,9 @@ undefined4 FUN_112961a0(int param_1)
 // Reference entry 11296590; body size 165 bytes.
 #line 1 "ENTRY_11296590"
 
-void __thiscall FUN_11296590(uint3 param_1,int param_2)
-
+void __thiscall Recovered_Bulk::FUN_11296590(int param_2)
 {
+  uint3 param_1 = (uint3 )this;
   char cVar1;
   undefined4 uStack_14;
   void *local_10;
@@ -47480,12 +46179,11 @@ void __fastcall FUN_11296750(uint param_1)
 // Reference entry 11296810; body size 344 bytes.
 #line 1 "ENTRY_11296810"
 
-undefined4 __thiscall
-FUN_11296810(int param_1,undefined1 *param_2,undefined1 *param_3,int param_4,undefined1 *param_5,
+undefined4 __thiscall Recovered_Bulk::FUN_11296810(undefined1 *param_2,undefined1 *param_3,int param_4,undefined1 *param_5,
             int param_6,undefined1 *param_7,int param_8,undefined1 *param_9,int param_10,
             undefined4 *param_11,undefined4 *param_12)
-
 {
+  int param_1 = (int )this;
   undefined1 *puVar1;
   undefined1 uVar2;
   int iVar3;
@@ -47698,10 +46396,9 @@ void __fastcall FUN_11298310(int param_1)
 // Reference entry 11299470; body size 219 bytes.
 #line 1 "ENTRY_11299470"
 
-undefined1 __thiscall
-FUN_11299470(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,int param_5)
-
+undefined1 __thiscall Recovered_Bulk::FUN_11299470(undefined4 param_2,undefined4 param_3,undefined4 param_4,int param_5)
 {
+  int param_1 = (int )this;
   char cVar1;
   undefined1 uVar2;
   undefined4 uVar3;
@@ -47935,9 +46632,9 @@ undefined4 FUN_1129b2d0(char *param_1)
 // Reference entry 1129b7d0; body size 74 bytes.
 #line 1 "ENTRY_1129b7d0"
 
-void __thiscall FUN_1129b7d0(undefined4 *param_1,undefined4 *param_2)
-
+void __thiscall Recovered_Bulk::FUN_1129b7d0(undefined4 *param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   char *pcVar1;
   char cVar2;
   char *pcVar3;
@@ -47963,9 +46660,9 @@ void __thiscall FUN_1129b7d0(undefined4 *param_1,undefined4 *param_2)
 // Reference entry 1129bd00; body size 114 bytes.
 #line 1 "ENTRY_1129bd00"
 
-void __thiscall FUN_1129bd00(uint *param_1,undefined4 *param_2)
-
+void __thiscall Recovered_Bulk::FUN_1129bd00(undefined4 *param_2)
 {
+  uint *param_1 = (uint *)this;
   char cVar1;
   char *pcVar2;
   char *pcVar3;
@@ -48002,9 +46699,9 @@ void __thiscall FUN_1129bd00(uint *param_1,undefined4 *param_2)
 // Reference entry 1129c1a0; body size 126 bytes.
 #line 1 "ENTRY_1129c1a0"
 
-undefined4 * __thiscall FUN_1129c1a0(undefined4 *param_1,int param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1129c1a0(int param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   switch(*(undefined1 *)(param_1 + 6)) {
   case 0:
     (**(code **)*param_1)(0);
@@ -48029,9 +46726,9 @@ undefined4 * __thiscall FUN_1129c1a0(undefined4 *param_1,int param_2)
 // Reference entry 1129c830; body size 165 bytes.
 #line 1 "ENTRY_1129c830"
 
-undefined4 * __thiscall FUN_1129c830(undefined4 *param_1,undefined4 *param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1129c830(undefined4 *param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   char cVar1;
   char cVar2;
   undefined1 uVar3;
@@ -48100,9 +46797,9 @@ undefined4 * __thiscall FUN_1129c830(undefined4 *param_1,undefined4 *param_2)
 // Reference entry 1129d040; body size 165 bytes.
 #line 1 "ENTRY_1129d040"
 
-undefined4 * __thiscall FUN_1129d040(undefined4 *param_1,undefined4 *param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_1129d040(undefined4 *param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   char cVar1;
   char cVar2;
   undefined1 uVar3;
@@ -48194,11 +46891,9 @@ undefined4 * __fastcall FUN_1129dab0(undefined4 *param_1)
 // Reference entry 1129db80; body size 470 bytes.
 #line 1 "ENTRY_1129db80"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_1129db80(int param_1,int param_2,int param_3,byte *param_4,undefined4 param_5)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_1129db80(int param_2,int param_3,byte *param_4,undefined4 param_5)
 {
+  int param_1 = (int )this;
   int iVar1;
   uint *puVar2;
   uint uVar3;
