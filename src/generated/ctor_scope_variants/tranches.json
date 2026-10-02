@@ -980,6 +980,14 @@
     "directory": "analysis/ctor-scope-copier-wm0-keepref"
   },
   {
+    "object": "copier_wm0_volmem_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-volmem"
+  },
+  {
+    "object": "copier_wm0_constmem_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-constmem"
+  },
+  {
     "object": "copier_wm0_ihelp_m_reference_flags",
     "directory": "analysis/ctor-scope-copier-wm0-ihelp-m"
   },

@@ -2906,6 +2906,31 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
             '    CopierWrapMember0kr(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return this;\n'),
+        # volatile-qualified member fn — this becomes volatile X*, changing
+        # how MSVC materializes/homes it
+        'copier_wm0_volmem': (
+            prefix.replace(
+                'NativeCopierOutput *FUN_10df9390();',
+                'NativeCopierOutput *FUN_10df9390() volatile;') +
+            'struct CopierWrapMember0vm { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0vm(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            'NativeCopierOutput *NativeCopierOutput::FUN_10df9390() volatile {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    const_cast<NativeCopierOutput *>(this),\n'
+            '    CopierWrapMember0vm(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return const_cast<NativeCopierOutput *>(this);\n'),
+        # const-qualified member fn — this becomes const X*
+        'copier_wm0_constmem': (
+            prefix.replace(
+                'NativeCopierOutput *FUN_10df9390();',
+                'NativeCopierOutput *FUN_10df9390() const;') +
+            'struct CopierWrapMember0cm { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0cm(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            'NativeCopierOutput *NativeCopierOutput::FUN_10df9390() const {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    const_cast<NativeCopierOutput *>(this),\n'
+            '    CopierWrapMember0cm(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return const_cast<NativeCopierOutput *>(this);\n'),
         # member helper inlined on this: this->h_(this)
         'copier_wm0_ihelp_m': (
             prefix.replace(
