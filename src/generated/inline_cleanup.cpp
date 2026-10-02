@@ -246,7 +246,7 @@ SCStr * Recovered_10126940::FUN_10126940(byte param_2) noexcept
 // Reference entry 1019eb70; body size 91 bytes.
 #line 1 "ENTRY_1019eb70"
 
-void FUN_1019eb70(SCStr *param_1)
+void __stdcall FUN_1019eb70(SCStr *param_1)
 
 {
 
@@ -263,7 +263,7 @@ void FUN_1019eb70(SCStr *param_1)
 // Reference entry 1019ed10; body size 91 bytes.
 #line 1 "ENTRY_1019ed10"
 
-void FUN_1019ed10(SCStr *param_1)
+void __stdcall FUN_1019ed10(SCStr *param_1)
 
 {
 

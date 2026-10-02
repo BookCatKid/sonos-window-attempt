@@ -5149,7 +5149,7 @@ SCStr * Recovered_10145180::FUN_10145180(char *param_2)
 // Reference entry 10193db0; body size 29 bytes.
 #line 1 "ENTRY_10193db0"
 
-void FUN_10193db0(SCStr *param_1)
+void __stdcall FUN_10193db0(SCStr *param_1)
 
 {
   (param_1)->int_release();
@@ -5162,7 +5162,7 @@ void FUN_10193db0(SCStr *param_1)
 // Reference entry 10193de0; body size 19 bytes.
 #line 1 "ENTRY_10193de0"
 
-int FUN_10193de0(SCStr *param_1)
+int __stdcall FUN_10193de0(SCStr *param_1)
 
 {
   uint uVar1;
@@ -5406,7 +5406,7 @@ SCStr * FUN_101b4e80(SCStr *param_1,undefined4 param_2)
 // Reference entry 101b5270; body size 21 bytes.
 #line 1 "ENTRY_101b5270"
 
-SCStr * FUN_101b5270(SCStr *param_1)
+SCStr * __stdcall FUN_101b5270(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("ability_manager");
@@ -5553,7 +5553,7 @@ undefined4 * Recovered_101b69f0::FUN_101b69f0(undefined4 *param_2,SCStr *param_3
 // Reference entry 101b8720; body size 21 bytes.
 #line 1 "ENTRY_101b8720"
 
-SCStr * FUN_101b8720(SCStr *param_1)
+SCStr * __stdcall FUN_101b8720(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCVersion");
@@ -5622,7 +5622,7 @@ void Recovered_101bb010::FUN_101bb010(undefined4 param_2,SCStr *param_3)
 // Reference entry 101bb0e0; body size 21 bytes.
 #line 1 "ENTRY_101bb0e0"
 
-SCStr * FUN_101bb0e0(SCStr *param_1)
+SCStr * __stdcall FUN_101bb0e0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCElapsedTimeMeasurement");
@@ -5633,7 +5633,7 @@ SCStr * FUN_101bb0e0(SCStr *param_1)
 // Reference entry 101bb870; body size 21 bytes.
 #line 1 "ENTRY_101bb870"
 
-SCStr * FUN_101bb870(SCStr *param_1)
+SCStr * __stdcall FUN_101bb870(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("");
@@ -5993,7 +5993,7 @@ SCStr * FUN_101c0dd0(SCStr *param_1,undefined4 param_2)
 // Reference entry 101ca950; body size 21 bytes.
 #line 1 "ENTRY_101ca950"
 
-SCStr * FUN_101ca950(SCStr *param_1)
+SCStr * __stdcall FUN_101ca950(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCFetchTokenAction");
@@ -6171,7 +6171,7 @@ void Recovered_101d8de0::FUN_101d8de0(undefined4 param_2,SCStr *param_3)
 // Reference entry 101d96d0; body size 21 bytes.
 #line 1 "ENTRY_101d96d0"
 
-SCStr * FUN_101d96d0(SCStr *param_1)
+SCStr * __stdcall FUN_101d96d0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("Fetc\x14hToken");
@@ -6182,7 +6182,7 @@ SCStr * FUN_101d96d0(SCStr *param_1)
 // Reference entry 101d96f0; body size 21 bytes.
 #line 1 "ENTRY_101d96f0"
 
-SCStr * FUN_101d96f0(SCStr *param_1)
+SCStr * __stdcall FUN_101d96f0(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIActionCategoryDefault");
@@ -6226,7 +6226,7 @@ void FUN_101dcf70(SCStr *param_1)
 // Reference entry 101dcf90; body size 17 bytes.
 #line 1 "ENTRY_101dcf90"
 
-void FUN_101dcf90(SCStr *param_1)
+void __stdcall FUN_101dcf90(SCStr *param_1)
 
 {
   (param_1)->operator==("SCISystemStatusManager:onUserDismissedSystemStatus");
@@ -8007,7 +8007,7 @@ SCStr * FUN_10236860(SCStr *param_1)
 // Reference entry 10236880; body size 21 bytes.
 #line 1 "ENTRY_10236880"
 
-SCStr * FUN_10236880(SCStr *param_1)
+SCStr * __stdcall FUN_10236880(SCStr *param_1)
 
 {
   (param_1)->int_allocRep("SCIncrementHHSwgenAndOnlineUpdateWizardActionDescriptor");
@@ -10265,7 +10265,7 @@ int Recovered_102aa8a0::FUN_102aa8a0(int param_2)
 // Reference entry 102aeb40; body size 33 bytes.
 #line 1 "ENTRY_102aeb40"
 
-void FUN_102aeb40(undefined4 param_1,SCStr *param_2)
+void __stdcall FUN_102aeb40(undefined4 param_1,SCStr *param_2)
 
 {
   bool bVar1;
@@ -11098,7 +11098,7 @@ undefined4 * Recovered_102db880::FUN_102db880(undefined4 *param_2,SCStr *param_3
 // Reference entry 102dbf50; body size 32 bytes.
 #line 1 "ENTRY_102dbf50"
 
-SCStr * FUN_102dbf50(SCStr *param_1,undefined4 param_2,uint *param_3)
+SCStr * __stdcall FUN_102dbf50(SCStr *param_1,undefined4 param_2,uint *param_3)
 
 {
   if (param_3 != (uint *)0x0) {
@@ -15290,7 +15290,7 @@ undefined4 * Recovered_10414e90::FUN_10414e90(undefined4 *param_2,SCStr *param_3
 // Reference entry 104154a0; body size 74 bytes.
 #line 1 "ENTRY_104154a0"
 
-void FUN_104154a0(int param_1)
+void __stdcall FUN_104154a0(int param_1)
 
 {
   undefined4 uStack_14;
@@ -16727,7 +16727,7 @@ undefined4 * Recovered_10465da0::FUN_10465da0(undefined4 *param_2,SCStr *param_3
 // Reference entry 10468aa0; body size 52 bytes.
 #line 1 "ENTRY_10468aa0"
 
-void FUN_10468aa0(undefined4 param_1,SCStr *param_2)
+void __stdcall FUN_10468aa0(undefined4 param_1,SCStr *param_2)
 
 {
   bool bVar1;
@@ -16887,7 +16887,7 @@ undefined4 * Recovered_1046b890::FUN_1046b890(undefined4 *param_2,SCStr *param_3
 // Reference entry 1046c660; body size 55 bytes.
 #line 1 "ENTRY_1046c660"
 
-void FUN_1046c660(undefined4 param_1,SCStr *param_2)
+void __stdcall FUN_1046c660(undefined4 param_1,SCStr *param_2)
 
 {
   bool bVar1;
@@ -16906,7 +16906,7 @@ void FUN_1046c660(undefined4 param_1,SCStr *param_2)
 // Reference entry 1046c890; body size 56 bytes.
 #line 1 "ENTRY_1046c890"
 
-void FUN_1046c890(undefined4 param_1,SCStr *param_2)
+void __stdcall FUN_1046c890(undefined4 param_1,SCStr *param_2)
 
 {
   bool bVar1;
@@ -17209,7 +17209,7 @@ undefined4 * Recovered_104966e0::FUN_104966e0(undefined4 *param_2,SCStr *param_3
 // Reference entry 1049b790; body size 136 bytes.
 #line 1 "ENTRY_1049b790"
 
-void FUN_1049b790(undefined4 param_1,SCStr *param_2)
+void __stdcall FUN_1049b790(undefined4 param_1,SCStr *param_2)
 
 {
   bool bVar1;
@@ -17613,7 +17613,7 @@ undefined4 * Recovered_104b01d0::FUN_104b01d0(undefined4 *param_2,SCStr *param_3
 // Reference entry 104b0c10; body size 104 bytes.
 #line 1 "ENTRY_104b0c10"
 
-void FUN_104b0c10(undefined4 param_1,SCStr *param_2)
+void __stdcall FUN_104b0c10(undefined4 param_1,SCStr *param_2)
 
 {
   bool bVar1;
@@ -17816,7 +17816,7 @@ undefined4 * Recovered_104bce60::FUN_104bce60(undefined4 *param_2,SCStr *param_3
 // Reference entry 104bfbe0; body size 88 bytes.
 #line 1 "ENTRY_104bfbe0"
 
-void FUN_104bfbe0(undefined4 param_1,SCStr *param_2)
+void __stdcall FUN_104bfbe0(undefined4 param_1,SCStr *param_2)
 
 {
   bool bVar1;
@@ -24609,7 +24609,7 @@ undefined4 * Recovered_10bb3250::FUN_10bb3250(undefined4 *param_2,SCStr *param_3
 // Reference entry 10bb4610; body size 93 bytes.
 #line 1 "ENTRY_10bb4610"
 
-void FUN_10bb4610(int param_1)
+void __stdcall FUN_10bb4610(int param_1)
 
 {
   char cVar1;
@@ -26064,7 +26064,7 @@ undefined4 * Recovered_10c2a670::FUN_10c2a670(undefined4 *param_2,SCStr *param_3
 // Reference entry 10c2c0e0; body size 45 bytes.
 #line 1 "ENTRY_10c2c0e0"
 
-void FUN_10c2c0e0(undefined4 param_1,SCStr *param_2)
+void __stdcall FUN_10c2c0e0(undefined4 param_1,SCStr *param_2)
 
 {
   bool bVar1;
@@ -26084,7 +26084,7 @@ void FUN_10c2c0e0(undefined4 param_1,SCStr *param_2)
 // Reference entry 10c2c400; body size 47 bytes.
 #line 1 "ENTRY_10c2c400"
 
-void FUN_10c2c400(undefined4 param_1,SCStr *param_2)
+void __stdcall FUN_10c2c400(undefined4 param_1,SCStr *param_2)
 
 {
   bool bVar1;

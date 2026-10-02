@@ -31,7 +31,7 @@ extern undefined4 DAT_1189dc98;
 extern undefined4 DAT_119260bc;
 extern undefined4 DAT_12126b84;
 extern int FUN_11117750(...);
-extern int FUN_11117e90(...);
+extern void __stdcall FUN_11117e90(undefined4 param_1,undefined4 param_2,undefined4 *param_3);
 extern int thunk_FUN_110828b0(...);
 extern int thunk_FUN_11095e00(...);
 extern int thunk_FUN_110cb560(...);
@@ -126,7 +126,7 @@ LAB_111177da:
 namespace recovered_11117e90 {
 #line 1 "ENTRY_11117e90"
 
-void FUN_11117e90(undefined4 param_1,undefined4 param_2,undefined4 *param_3)
+void __stdcall FUN_11117e90(undefined4 param_1,undefined4 param_2,undefined4 *param_3)
 
 {
   undefined4 ghidra_cookie_frame_slot;

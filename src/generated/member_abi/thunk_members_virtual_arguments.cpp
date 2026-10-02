@@ -1833,7 +1833,7 @@ struct RecoveredVirtualArgumentsSlot5Count3 { virtual int Reserved0(); virtual i
 // Reference entry 1014cd90; body size 21 bytes.
 #line 1 "ENTRY_1014cd90"
 
-undefined1 FUN_1014cd90(int *param_1,undefined4 param_2)
+undefined1 __stdcall FUN_1014cd90(int *param_1,undefined4 param_2)
 
 {
   undefined1 uVar1;
@@ -1846,7 +1846,7 @@ undefined1 FUN_1014cd90(int *param_1,undefined4 param_2)
 // Reference entry 1014cdb0; body size 21 bytes.
 #line 1 "ENTRY_1014cdb0"
 
-undefined1 FUN_1014cdb0(int *param_1,undefined4 param_2)
+undefined1 __stdcall FUN_1014cdb0(int *param_1,undefined4 param_2)
 
 {
   undefined1 uVar1;
@@ -1859,7 +1859,7 @@ undefined1 FUN_1014cdb0(int *param_1,undefined4 param_2)
 // Reference entry 1014cdd0; body size 21 bytes.
 #line 1 "ENTRY_1014cdd0"
 
-undefined1 FUN_1014cdd0(int *param_1,undefined4 param_2)
+undefined1 __stdcall FUN_1014cdd0(int *param_1,undefined4 param_2)
 
 {
   undefined1 uVar1;
@@ -1872,7 +1872,7 @@ undefined1 FUN_1014cdd0(int *param_1,undefined4 param_2)
 // Reference entry 1014cdf0; body size 21 bytes.
 #line 1 "ENTRY_1014cdf0"
 
-undefined1 FUN_1014cdf0(int *param_1,undefined4 param_2)
+undefined1 __stdcall FUN_1014cdf0(int *param_1,undefined4 param_2)
 
 {
   undefined1 uVar1;
@@ -1885,7 +1885,7 @@ undefined1 FUN_1014cdf0(int *param_1,undefined4 param_2)
 // Reference entry 1014ce20; body size 16 bytes.
 #line 1 "ENTRY_1014ce20"
 
-void FUN_1014ce20(int *param_1,undefined4 param_2)
+void __stdcall FUN_1014ce20(int *param_1,undefined4 param_2)
 
 {
   ((RecoveredVirtualArgumentsSlot16Count1 *)param_1)->Invoke((void *)(param_2));
@@ -1896,7 +1896,7 @@ void FUN_1014ce20(int *param_1,undefined4 param_2)
 // Reference entry 1014ce40; body size 21 bytes.
 #line 1 "ENTRY_1014ce40"
 
-undefined1 FUN_1014ce40(int *param_1,undefined4 param_2)
+undefined1 __stdcall FUN_1014ce40(int *param_1,undefined4 param_2)
 
 {
   undefined1 uVar1;
@@ -1909,7 +1909,7 @@ undefined1 FUN_1014ce40(int *param_1,undefined4 param_2)
 // Reference entry 1014ce60; body size 21 bytes.
 #line 1 "ENTRY_1014ce60"
 
-undefined1 FUN_1014ce60(int *param_1,undefined4 param_2)
+undefined1 __stdcall FUN_1014ce60(int *param_1,undefined4 param_2)
 
 {
   undefined1 uVar1;
@@ -1922,7 +1922,7 @@ undefined1 FUN_1014ce60(int *param_1,undefined4 param_2)
 // Reference entry 1014ce80; body size 25 bytes.
 #line 1 "ENTRY_1014ce80"
 
-undefined1 FUN_1014ce80(int *param_1,undefined4 param_2,undefined4 param_3)
+undefined1 __stdcall FUN_1014ce80(int *param_1,undefined4 param_2,undefined4 param_3)
 
 {
   undefined1 uVar1;
@@ -1935,7 +1935,7 @@ undefined1 FUN_1014ce80(int *param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1014cea0; body size 21 bytes.
 #line 1 "ENTRY_1014cea0"
 
-undefined1 FUN_1014cea0(int *param_1,undefined4 param_2)
+undefined1 __stdcall FUN_1014cea0(int *param_1,undefined4 param_2)
 
 {
   undefined1 uVar1;
@@ -1948,7 +1948,7 @@ undefined1 FUN_1014cea0(int *param_1,undefined4 param_2)
 // Reference entry 1014cef0; body size 21 bytes.
 #line 1 "ENTRY_1014cef0"
 
-undefined1 FUN_1014cef0(int *param_1,undefined4 param_2)
+undefined1 __stdcall FUN_1014cef0(int *param_1,undefined4 param_2)
 
 {
   undefined1 uVar1;
@@ -1961,7 +1961,7 @@ undefined1 FUN_1014cef0(int *param_1,undefined4 param_2)
 // Reference entry 1014cf20; body size 20 bytes.
 #line 1 "ENTRY_1014cf20"
 
-void FUN_1014cf20(int *param_1,undefined4 param_2,undefined4 param_3)
+void __stdcall FUN_1014cf20(int *param_1,undefined4 param_2,undefined4 param_3)
 
 {
   ((RecoveredVirtualArgumentsSlot5Count2 *)param_1)->Invoke((void *)(param_2), (void *)(param_3));
@@ -2016,7 +2016,7 @@ void FUN_1014d740(int *param_1,undefined4 param_2)
 // Reference entry 1014d7c0; body size 20 bytes.
 #line 1 "ENTRY_1014d7c0"
 
-void FUN_1014d7c0(int *param_1,undefined4 param_2,undefined4 param_3)
+void __stdcall FUN_1014d7c0(int *param_1,undefined4 param_2,undefined4 param_3)
 
 {
   ((RecoveredVirtualArgumentsSlot5Count2 *)param_1)->Invoke((void *)(param_2), (void *)(param_3));
@@ -2027,7 +2027,7 @@ void FUN_1014d7c0(int *param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 1014f8a0; body size 21 bytes.
 #line 1 "ENTRY_1014f8a0"
 
-undefined1 FUN_1014f8a0(int *param_1,undefined4 param_2)
+undefined1 __stdcall FUN_1014f8a0(int *param_1,undefined4 param_2)
 
 {
   undefined1 uVar1;
@@ -2227,7 +2227,7 @@ void FUN_10151970(int *param_1,undefined4 param_2)
 // Reference entry 10151cf0; body size 24 bytes.
 #line 1 "ENTRY_10151cf0"
 
-void FUN_10151cf0(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
+void __stdcall FUN_10151cf0(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
   ((RecoveredVirtualArgumentsSlot9Count3 *)param_1)->Invoke((void *)(param_2), (void *)(param_3), (void *)(param_4));
@@ -2337,7 +2337,7 @@ void FUN_10152480(int *param_1,undefined4 param_2)
 // Reference entry 101525c0; body size 32 bytes.
 #line 1 "ENTRY_101525c0"
 
-void FUN_101525c0(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void __stdcall FUN_101525c0(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6)
 
 {
@@ -5408,7 +5408,7 @@ void FUN_1018c800(int *param_1,undefined4 param_2)
 // Reference entry 1018cec0; body size 25 bytes.
 #line 1 "ENTRY_1018cec0"
 
-undefined1 FUN_1018cec0(int *param_1,undefined4 param_2,undefined4 param_3)
+undefined1 __stdcall FUN_1018cec0(int *param_1,undefined4 param_2,undefined4 param_3)
 
 {
   undefined1 uVar1;
@@ -21436,7 +21436,7 @@ undefined4 Recovered_110223e0::FUN_110223e0(undefined4 param_2)
 // Reference entry 1103b680; body size 23 bytes.
 #line 1 "ENTRY_1103b680"
 
-undefined4 FUN_1103b680(undefined4 param_1)
+undefined4 __stdcall FUN_1103b680(undefined4 param_1)
 
 {
   int *piVar1;

@@ -21,6 +21,88 @@ from compile_ghidra_cpp import (
 from compile_globals_cpp import GLOBAL, global_types, DECLARATION_ALIASES
 from compile_vftable_cpp import VFTABLE, symbol_name
 
+_REFERENCE = None
+
+
+def _reference():
+    """Lazily load the reference image and its section map."""
+    global _REFERENCE
+    if _REFERENCE is None:
+        from classify_functions import DLL, section_map
+        data = DLL.read_bytes()
+        base, sections = section_map(data)
+        _REFERENCE = (data, base, sections)
+    return _REFERENCE
+
+
+ENTRY_MARKER = re.compile(
+    r'(?m)^// Reference entry ([0-9a-f]{8}); body size (\d+) bytes\.\n')
+FREE_DEFINITION = re.compile(
+    r'(?m)^(?P<result>[A-Za-z_][\w\s\*]*?)\s+'
+    r'(?P<name>(?:thunk_)?FUN_[0-9a-f]{8})\s*\((?P<params>[^()]*)\)')
+
+
+def reference_stdcall(source):
+    """Emit __stdcall where the reference epilogue proves callee cleanup.
+
+    A bare free FUN_* definition compiles as __cdecl and ends in a plain ``ret``.
+    When the installed image instead ends the same body in ``ret N`` with ``N``
+    equal to four times the explicit parameter count, every argument lives on
+    the stack and the callee cleans it: the genuine convention is __stdcall.
+    Member definitions (``Recovered_*::``) already use __thiscall, and any
+    signature carrying an explicit convention is left untouched.
+    """
+    try:
+        from capstone import Cs, CS_ARCH_X86, CS_MODE_32
+        from classify_functions import function_bytes
+        disassembler = Cs(CS_ARCH_X86, CS_MODE_32)
+        disassembler.detail = True
+        data, base, sections = _reference()
+    except Exception:
+        return source, 0
+    markers = list(ENTRY_MARKER.finditer(source))
+    changed = 0
+    for index, marker in enumerate(markers):
+        entry, size = int(marker.group(1), 16), int(marker.group(2))
+        stop = markers[index + 1].start() if index + 1 < len(markers) else len(source)
+        block = source[marker.end():stop]
+        definition = FREE_DEFINITION.search(block)
+        if not definition or definition.group('name') != 'FUN_' + marker.group(1):
+            continue
+        result = definition.group('result')
+        if '::' in result or re.search(
+                r'__(?:cdecl|stdcall|fastcall|thiscall)\b', result):
+            continue
+        params = [p for p in definition.group('params').split(',')
+                  if p.strip() and p.strip() != 'void']
+        code = function_bytes(data, entry, size, base, sections)
+        pops = [int(i.operands[0].imm) if i.operands else 0
+                for i in disassembler.disasm(code, 0) if i.mnemonic == 'ret']
+        # Only a single epilogue with an exact all-stack cleanup is conclusive.
+        # pop < 4*params means some arguments travelled in registers (not
+        # stdcall); pop > 4*params means missing arguments, which is handled by
+        # the separate stack-arity recovery.
+        if len(pops) != 1 or pops[0] != 4 * len(params) or pops[0] <= 0:
+            continue
+        rewritten = definition.group(0).replace(
+            definition.group('name'),
+            '__stdcall ' + definition.group('name'), 1)
+        start = marker.end() + definition.start()
+        source = source[:start] + rewritten + source[start + len(definition.group(0)):]
+        # Any same-unit forward declaration must carry the convention too: a
+        # variadic ``extern ... FUN_X(...)`` redeclared as a typed __stdcall is
+        # a conflicting declaration under MSVC.
+        extern = re.compile(
+            r'(?m)^extern\s+[A-Za-z_][\w\s\*]*?\s+' +
+            re.escape(definition.group('name')) + r'\s*\(\s*\.\.\.\s*\)\s*;')
+        source = extern.sub(
+            'extern ' + ' '.join(definition.group('result').split()) +
+            ' __stdcall ' + definition.group('name') +
+            '(' + definition.group('params').strip() + ');', source)
+        changed += 1
+    return source, changed
+
+
 SCSTR = '''
 struct RefCounted {
     virtual void Reserved();
@@ -402,7 +484,8 @@ def cpp_source(records):
     if any(r.get('inline_scstr_cleanup') for r in records):
         scstr_class = SCSTR.replace('    ~SCStr();',
             '    ~SCStr() noexcept { int_release(); rep = 0; }')
-    return HEADER + DECLARATION_ALIASES + scstr_class + virtual_class + declarations + '\n' + member_declarations + '\n' + functions
+    text = HEADER + DECLARATION_ALIASES + scstr_class + virtual_class + declarations + '\n' + member_declarations + '\n' + functions
+    return reference_stdcall(text)[0]
 
 
 def syntax(records, scratch):

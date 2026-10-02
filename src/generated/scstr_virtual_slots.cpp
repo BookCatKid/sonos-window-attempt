@@ -2540,7 +2540,7 @@ undefined4 * Recovered_1013e820::FUN_1013e820(undefined4 *param_2,SCStr *param_3
 // Reference entry 1016ffd0; body size 41 bytes.
 #line 1 "ENTRY_1016ffd0"
 
-void FUN_1016ffd0(int *param_1)
+void __stdcall FUN_1016ffd0(int *param_1)
 
 {
   SCStr *ghidra_this;
@@ -2561,7 +2561,7 @@ void FUN_1016ffd0(int *param_1)
 // Reference entry 10170010; body size 41 bytes.
 #line 1 "ENTRY_10170010"
 
-void FUN_10170010(int *param_1)
+void __stdcall FUN_10170010(int *param_1)
 
 {
   SCStr *ghidra_this;
@@ -2582,7 +2582,7 @@ void FUN_10170010(int *param_1)
 // Reference entry 10170100; body size 41 bytes.
 #line 1 "ENTRY_10170100"
 
-void FUN_10170100(int *param_1)
+void __stdcall FUN_10170100(int *param_1)
 
 {
   SCStr *ghidra_this;
@@ -2603,7 +2603,7 @@ void FUN_10170100(int *param_1)
 // Reference entry 10170140; body size 41 bytes.
 #line 1 "ENTRY_10170140"
 
-void FUN_10170140(int *param_1)
+void __stdcall FUN_10170140(int *param_1)
 
 {
   SCStr *ghidra_this;
@@ -2624,7 +2624,7 @@ void FUN_10170140(int *param_1)
 // Reference entry 10170180; body size 41 bytes.
 #line 1 "ENTRY_10170180"
 
-void FUN_10170180(int *param_1)
+void __stdcall FUN_10170180(int *param_1)
 
 {
   SCStr *ghidra_this;
@@ -2645,7 +2645,7 @@ void FUN_10170180(int *param_1)
 // Reference entry 101701d0; body size 41 bytes.
 #line 1 "ENTRY_101701d0"
 
-void FUN_101701d0(int *param_1)
+void __stdcall FUN_101701d0(int *param_1)
 
 {
   SCStr *ghidra_this;
@@ -2666,7 +2666,7 @@ void FUN_101701d0(int *param_1)
 // Reference entry 10170340; body size 41 bytes.
 #line 1 "ENTRY_10170340"
 
-void FUN_10170340(int *param_1)
+void __stdcall FUN_10170340(int *param_1)
 
 {
   SCStr *ghidra_this;
@@ -2687,7 +2687,7 @@ void FUN_10170340(int *param_1)
 // Reference entry 10170380; body size 41 bytes.
 #line 1 "ENTRY_10170380"
 
-void FUN_10170380(int *param_1)
+void __stdcall FUN_10170380(int *param_1)
 
 {
   SCStr *ghidra_this;
@@ -2708,7 +2708,7 @@ void FUN_10170380(int *param_1)
 // Reference entry 101703d0; body size 41 bytes.
 #line 1 "ENTRY_101703d0"
 
-void FUN_101703d0(int *param_1)
+void __stdcall FUN_101703d0(int *param_1)
 
 {
   SCStr *ghidra_this;
@@ -2729,7 +2729,7 @@ void FUN_101703d0(int *param_1)
 // Reference entry 10170410; body size 41 bytes.
 #line 1 "ENTRY_10170410"
 
-void FUN_10170410(int *param_1)
+void __stdcall FUN_10170410(int *param_1)
 
 {
   SCStr *ghidra_this;
@@ -5348,7 +5348,7 @@ void Recovered_108f8070::FUN_108f8070(SCStr *param_2)
 // Reference entry 10b81cf0; body size 32 bytes.
 #line 1 "ENTRY_10b81cf0"
 
-SCStr * FUN_10b81cf0(SCStr *param_1)
+SCStr * __stdcall FUN_10b81cf0(SCStr *param_1)
 
 {
   int *piVar1;
@@ -5364,7 +5364,7 @@ SCStr * FUN_10b81cf0(SCStr *param_1)
 // Reference entry 10b81d20; body size 32 bytes.
 #line 1 "ENTRY_10b81d20"
 
-SCStr * FUN_10b81d20(SCStr *param_1)
+SCStr * __stdcall FUN_10b81d20(SCStr *param_1)
 
 {
   int *piVar1;

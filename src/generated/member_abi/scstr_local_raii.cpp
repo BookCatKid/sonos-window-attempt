@@ -219,7 +219,7 @@ RecoveredString_FUN_1008c50b_101daf60 recovered_string((char *)(PTR_s_SCACCTMGR_
 // Reference entry 101f16a0; body size 101 bytes.
 #line 1 "ENTRY_101f16a0"
 
-SCStr * FUN_101f16a0(SCStr *param_1)
+SCStr * __stdcall FUN_101f16a0(SCStr *param_1)
 
 {
 
@@ -393,7 +393,7 @@ RecoveredString_FUN_1008c50b_102e4f40 recovered_string((char *)("WizardComponent
 // Reference entry 10379b70; body size 116 bytes.
 #line 1 "ENTRY_10379b70"
 
-undefined4 FUN_10379b70(undefined4 param_1,undefined4 param_2,undefined4 param_3)
+undefined4 __stdcall FUN_10379b70(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
 {
 
@@ -410,7 +410,7 @@ RecoveredString_FUN_1008c50b_10379b70 recovered_string((char *)(""));
 // Reference entry 1037c140; body size 115 bytes.
 #line 1 "ENTRY_1037c140"
 
-undefined4 FUN_1037c140(undefined4 param_1,undefined4 param_2)
+undefined4 __stdcall FUN_1037c140(undefined4 param_1,undefined4 param_2)
 
 {
 
@@ -427,7 +427,7 @@ RecoveredString_FUN_1008c50b_1037c140 recovered_string((char *)(""));
 // Reference entry 1037c2c0; body size 116 bytes.
 #line 1 "ENTRY_1037c2c0"
 
-undefined4 FUN_1037c2c0(undefined4 param_1,undefined4 param_2,undefined4 param_3)
+undefined4 __stdcall FUN_1037c2c0(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
 {
 
@@ -444,7 +444,7 @@ RecoveredString_FUN_1008c50b_1037c2c0 recovered_string((char *)(""));
 // Reference entry 10381060; body size 115 bytes.
 #line 1 "ENTRY_10381060"
 
-undefined4 FUN_10381060(undefined4 param_1,undefined4 param_2)
+undefined4 __stdcall FUN_10381060(undefined4 param_1,undefined4 param_2)
 
 {
 
@@ -461,7 +461,7 @@ RecoveredString_FUN_1008c50b_10381060 recovered_string((char *)(""));
 // Reference entry 10381240; body size 115 bytes.
 #line 1 "ENTRY_10381240"
 
-undefined4 FUN_10381240(undefined4 param_1,undefined4 param_2)
+undefined4 __stdcall FUN_10381240(undefined4 param_1,undefined4 param_2)
 
 {
 
@@ -478,7 +478,7 @@ RecoveredString_FUN_1008c50b_10381240 recovered_string((char *)(""));
 // Reference entry 10381620; body size 116 bytes.
 #line 1 "ENTRY_10381620"
 
-undefined4 FUN_10381620(undefined4 param_1,undefined4 param_2,undefined4 param_3)
+undefined4 __stdcall FUN_10381620(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
 {
 
@@ -495,7 +495,7 @@ RecoveredString_FUN_1008c50b_10381620 recovered_string((char *)(""));
 // Reference entry 10381810; body size 116 bytes.
 #line 1 "ENTRY_10381810"
 
-undefined4 FUN_10381810(undefined4 param_1,undefined4 param_2,undefined4 param_3)
+undefined4 __stdcall FUN_10381810(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
 {
 
@@ -512,7 +512,7 @@ RecoveredString_FUN_1008c50b_10381810 recovered_string((char *)(""));
 // Reference entry 10381bc0; body size 115 bytes.
 #line 1 "ENTRY_10381bc0"
 
-undefined4 FUN_10381bc0(undefined4 param_1,undefined4 param_2)
+undefined4 __stdcall FUN_10381bc0(undefined4 param_1,undefined4 param_2)
 
 {
 
@@ -529,7 +529,7 @@ RecoveredString_FUN_1008c50b_10381bc0 recovered_string((char *)(""));
 // Reference entry 10381c50; body size 116 bytes.
 #line 1 "ENTRY_10381c50"
 
-undefined4 FUN_10381c50(undefined4 param_1,undefined4 param_2,undefined4 param_3)
+undefined4 __stdcall FUN_10381c50(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
 {
 
@@ -546,7 +546,7 @@ RecoveredString_FUN_1008c50b_10381c50 recovered_string((char *)(""));
 // Reference entry 103b8cd0; body size 139 bytes.
 #line 1 "ENTRY_103b8cd0"
 
-undefined1 FUN_103b8cd0(int *param_1,SCStr *param_2)
+undefined1 __stdcall FUN_103b8cd0(int *param_1,SCStr *param_2)
 
 {
   undefined1 uVar1;
@@ -573,7 +573,7 @@ RecoveredString_FUN_1008c50b_103b8cd0 recovered_string((char *)("Feature-Browse:
 // Reference entry 103bcd10; body size 109 bytes.
 #line 1 "ENTRY_103bcd10"
 
-undefined4 FUN_103bcd10(undefined4 param_1)
+undefined4 __stdcall FUN_103bcd10(undefined4 param_1)
 
 {
   undefined4 uVar1;
@@ -591,7 +591,7 @@ RecoveredString_FUN_1008c50b_103bcd10 recovered_string((char *)(""));
 // Reference entry 10553b20; body size 108 bytes.
 #line 1 "ENTRY_10553b20"
 
-undefined4 FUN_10553b20(undefined4 param_1)
+undefined4 __stdcall FUN_10553b20(undefined4 param_1)
 
 {
 
@@ -626,7 +626,7 @@ RecoveredString_FUN_1008c50b_10553d60 recovered_string((char *)("presentationMap
 // Reference entry 10554060; body size 108 bytes.
 #line 1 "ENTRY_10554060"
 
-undefined4 FUN_10554060(undefined4 param_1)
+undefined4 __stdcall FUN_10554060(undefined4 param_1)
 
 {
 
@@ -661,7 +661,7 @@ RecoveredString_FUN_1008c50b_105542a0 recovered_string((char *)("strings"));
 // Reference entry 10799800; body size 114 bytes.
 #line 1 "ENTRY_10799800"
 
-undefined4 FUN_10799800(undefined4 param_1)
+undefined4 __stdcall FUN_10799800(undefined4 param_1)
 
 {
 
@@ -740,7 +740,7 @@ RecoveredString_FUN_1008c50b_10c26970 recovered_string((char *)(param_2));
 // Reference entry 10c65e50; body size 174 bytes.
 #line 1 "ENTRY_10c65e50"
 
-void FUN_10c65e50(undefined4 *param_1,undefined4 param_2)
+void __stdcall FUN_10c65e50(undefined4 *param_1,undefined4 param_2)
 
 {
   undefined1 *puVar1;
@@ -766,7 +766,7 @@ RecoveredString_FUN_1008c50b_10c65e50 recovered_string((char *)(local_418));
 // Reference entry 10c65f30; body size 174 bytes.
 #line 1 "ENTRY_10c65f30"
 
-void FUN_10c65f30(undefined4 *param_1,undefined4 param_2)
+void __stdcall FUN_10c65f30(undefined4 *param_1,undefined4 param_2)
 
 {
   undefined1 *puVar1;
@@ -792,7 +792,7 @@ RecoveredString_FUN_1008c50b_10c65f30 recovered_string((char *)(local_418));
 // Reference entry 10c66010; body size 174 bytes.
 #line 1 "ENTRY_10c66010"
 
-void FUN_10c66010(undefined4 *param_1,undefined4 param_2)
+void __stdcall FUN_10c66010(undefined4 *param_1,undefined4 param_2)
 
 {
   undefined1 *puVar1;
@@ -1566,7 +1566,7 @@ RecoveredString_FUN_1008c50b_10ecef50 recovered_string((char *)("text"));
 // Reference entry 10f0bdc0; body size 105 bytes.
 #line 1 "ENTRY_10f0bdc0"
 
-undefined4 FUN_10f0bdc0(undefined4 param_1)
+undefined4 __stdcall FUN_10f0bdc0(undefined4 param_1)
 
 {
 

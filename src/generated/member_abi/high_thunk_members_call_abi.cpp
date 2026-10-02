@@ -2843,7 +2843,7 @@ void __fastcall FUN_1034e2f0(int param_1)
 // Reference entry 103539c0; body size 67 bytes.
 #line 1 "ENTRY_103539c0"
 
-void FUN_103539c0(undefined4 param_1,int *param_2)
+void __stdcall FUN_103539c0(undefined4 param_1,int *param_2)
 
 {
   char cVar1;
@@ -4919,7 +4919,7 @@ void FUN_1054b2d0(int param_1,int param_2)
 // Reference entry 1054b400; body size 79 bytes.
 #line 1 "ENTRY_1054b400"
 
-void FUN_1054b400(int param_1,int param_2)
+void __stdcall FUN_1054b400(int param_1,int param_2)
 
 {
   abi_call_thunk_FUN_1145c250((char *)(param_1), (char *)(param_2), (int)(0x2001));
@@ -4951,7 +4951,7 @@ undefined4 Recovered_1054b470::FUN_1054b470(undefined4 param_2)
 // Reference entry 1054b530; body size 97 bytes.
 #line 1 "ENTRY_1054b530"
 
-void FUN_1054b530(int param_1,int param_2)
+void __stdcall FUN_1054b530(int param_1,int param_2)
 
 {
   abi_call_thunk_FUN_1145c250((char *)(param_1), (char *)(param_2), (int)(0x401));
@@ -5498,7 +5498,7 @@ void __fastcall FUN_105b5b90(int param_1)
 // Reference entry 105b6d40; body size 67 bytes.
 #line 1 "ENTRY_105b6d40"
 
-void FUN_105b6d40(undefined4 param_1,int *param_2)
+void __stdcall FUN_105b6d40(undefined4 param_1,int *param_2)
 
 {
   char cVar1;
@@ -6372,7 +6372,7 @@ void Recovered_106d9160::FUN_106d9160(undefined4 param_2)
 // Reference entry 106d91c0; body size 67 bytes.
 #line 1 "ENTRY_106d91c0"
 
-void FUN_106d91c0(undefined4 param_1,int *param_2)
+void __stdcall FUN_106d91c0(undefined4 param_1,int *param_2)
 
 {
   char cVar1;
@@ -7557,7 +7557,7 @@ undefined4 Recovered_10bc4de0::FUN_10bc4de0(int param_2)
 // Reference entry 10bc73f0; body size 76 bytes.
 #line 1 "ENTRY_10bc73f0"
 
-void FUN_10bc73f0(undefined4 *param_1,undefined4 param_2)
+void __stdcall FUN_10bc73f0(undefined4 *param_1,undefined4 param_2)
 
 {
   int *piVar1;
@@ -7901,7 +7901,7 @@ void Recovered_10bcee10::FUN_10bcee10(undefined4 param_2)
 // Reference entry 10bcf100; body size 67 bytes.
 #line 1 "ENTRY_10bcf100"
 
-void FUN_10bcf100(undefined4 param_1,int *param_2)
+void __stdcall FUN_10bcf100(undefined4 param_1,int *param_2)
 
 {
   char cVar1;

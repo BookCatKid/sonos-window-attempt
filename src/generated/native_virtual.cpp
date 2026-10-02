@@ -4145,7 +4145,7 @@ void __fastcall FUN_1013f610(int *param_1)
 // Reference entry 10196370; body size 72 bytes.
 #line 1 "ENTRY_10196370"
 
-void FUN_10196370(int param_1,int *param_2)
+void __stdcall FUN_10196370(int param_1,int *param_2)
 
 {
   int *piVar1;
@@ -4173,7 +4173,7 @@ void FUN_10196370(int param_1,int *param_2)
 // Reference entry 10199630; body size 72 bytes.
 #line 1 "ENTRY_10199630"
 
-void FUN_10199630(int param_1,int *param_2)
+void __stdcall FUN_10199630(int param_1,int *param_2)
 
 {
   int *piVar1;
@@ -4201,7 +4201,7 @@ void FUN_10199630(int param_1,int *param_2)
 // Reference entry 101996d0; body size 72 bytes.
 #line 1 "ENTRY_101996d0"
 
-void FUN_101996d0(int param_1,int *param_2)
+void __stdcall FUN_101996d0(int param_1,int *param_2)
 
 {
   int *piVar1;
@@ -4229,7 +4229,7 @@ void FUN_101996d0(int param_1,int *param_2)
 // Reference entry 1019c350; body size 16 bytes.
 #line 1 "ENTRY_1019c350"
 
-void FUN_1019c350(int *param_1)
+void __stdcall FUN_1019c350(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -4242,7 +4242,7 @@ void FUN_1019c350(int *param_1)
 // Reference entry 1019c370; body size 16 bytes.
 #line 1 "ENTRY_1019c370"
 
-void FUN_1019c370(int *param_1)
+void __stdcall FUN_1019c370(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -4255,7 +4255,7 @@ void FUN_1019c370(int *param_1)
 // Reference entry 1019c390; body size 16 bytes.
 #line 1 "ENTRY_1019c390"
 
-void FUN_1019c390(int *param_1)
+void __stdcall FUN_1019c390(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -4268,7 +4268,7 @@ void FUN_1019c390(int *param_1)
 // Reference entry 1019c3b0; body size 16 bytes.
 #line 1 "ENTRY_1019c3b0"
 
-void FUN_1019c3b0(int *param_1)
+void __stdcall FUN_1019c3b0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -4281,7 +4281,7 @@ void FUN_1019c3b0(int *param_1)
 // Reference entry 1019c3d0; body size 16 bytes.
 #line 1 "ENTRY_1019c3d0"
 
-void FUN_1019c3d0(int *param_1)
+void __stdcall FUN_1019c3d0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -4294,7 +4294,7 @@ void FUN_1019c3d0(int *param_1)
 // Reference entry 1019c3f0; body size 16 bytes.
 #line 1 "ENTRY_1019c3f0"
 
-void FUN_1019c3f0(int *param_1)
+void __stdcall FUN_1019c3f0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -4307,7 +4307,7 @@ void FUN_1019c3f0(int *param_1)
 // Reference entry 1019c410; body size 16 bytes.
 #line 1 "ENTRY_1019c410"
 
-void FUN_1019c410(int *param_1)
+void __stdcall FUN_1019c410(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -8428,7 +8428,7 @@ void FUN_1019ecf0(int *param_1)
 // Reference entry 1019edb0; body size 24 bytes.
 #line 1 "ENTRY_1019edb0"
 
-void FUN_1019edb0(int *param_1)
+void __stdcall FUN_1019edb0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -8444,7 +8444,7 @@ void FUN_1019edb0(int *param_1)
 // Reference entry 1019edd0; body size 24 bytes.
 #line 1 "ENTRY_1019edd0"
 
-void FUN_1019edd0(int *param_1)
+void __stdcall FUN_1019edd0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -8460,7 +8460,7 @@ void FUN_1019edd0(int *param_1)
 // Reference entry 1019edf0; body size 24 bytes.
 #line 1 "ENTRY_1019edf0"
 
-void FUN_1019edf0(int *param_1)
+void __stdcall FUN_1019edf0(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -8476,7 +8476,7 @@ void FUN_1019edf0(int *param_1)
 // Reference entry 1019ee10; body size 24 bytes.
 #line 1 "ENTRY_1019ee10"
 
-void FUN_1019ee10(int *param_1)
+void __stdcall FUN_1019ee10(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -8492,7 +8492,7 @@ void FUN_1019ee10(int *param_1)
 // Reference entry 1019ee30; body size 24 bytes.
 #line 1 "ENTRY_1019ee30"
 
-void FUN_1019ee30(int *param_1)
+void __stdcall FUN_1019ee30(int *param_1)
 
 {
   if (param_1 != (int *)0x0) {
@@ -38027,7 +38027,7 @@ int * Recovered_102f4e60::FUN_102f4e60(int *param_2)
 // Reference entry 102f5090; body size 29 bytes.
 #line 1 "ENTRY_102f5090"
 
-undefined4 * FUN_102f5090(undefined4 *param_1)
+undefined4 * __stdcall FUN_102f5090(undefined4 *param_1)
 
 {
   int *piVar1;

@@ -673,7 +673,7 @@ undefined1 * Recovered_10124ee0::FUN_10124ee0(undefined1 *param_2)
 // Reference entry 1014cce0; body size 102 bytes.
 #line 1 "ENTRY_1014cce0"
 
-void FUN_1014cce0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void __stdcall FUN_1014cce0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
                  undefined4 param_13,undefined4 param_14)
@@ -701,7 +701,7 @@ void FUN_1014cce0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 // Reference entry 1014de40; body size 211 bytes.
 #line 1 "ENTRY_1014de40"
 
-void FUN_1014de40(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void __stdcall FUN_1014de40(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
                  undefined4 param_13,undefined4 param_14,undefined4 param_15,undefined4 param_16,
@@ -748,7 +748,7 @@ void FUN_1014de40(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 // Reference entry 101541e0; body size 74 bytes.
 #line 1 "ENTRY_101541e0"
 
-void FUN_101541e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void __stdcall FUN_101541e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10)
 
@@ -771,7 +771,7 @@ void FUN_101541e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 // Reference entry 10155360; body size 102 bytes.
 #line 1 "ENTRY_10155360"
 
-void FUN_10155360(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void __stdcall FUN_10155360(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
                  undefined4 param_13,undefined4 param_14)
@@ -799,7 +799,7 @@ void FUN_10155360(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 // Reference entry 101557a0; body size 67 bytes.
 #line 1 "ENTRY_101557a0"
 
-void FUN_101557a0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void __stdcall FUN_101557a0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9)
 
@@ -821,7 +821,7 @@ void FUN_101557a0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 // Reference entry 101575d0; body size 423 bytes.
 #line 1 "ENTRY_101575d0"
 
-void FUN_101575d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void __stdcall FUN_101575d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
                  undefined4 param_13,undefined4 param_14,undefined4 param_15,undefined4 param_16,
@@ -889,7 +889,7 @@ void FUN_101575d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 // Reference entry 1015c380; body size 109 bytes.
 #line 1 "ENTRY_1015c380"
 
-void FUN_1015c380(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void __stdcall FUN_1015c380(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
                  undefined4 param_13,undefined4 param_14,undefined4 param_15)
@@ -918,7 +918,7 @@ void FUN_1015c380(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 // Reference entry 10162110; body size 130 bytes.
 #line 1 "ENTRY_10162110"
 
-void FUN_10162110(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void __stdcall FUN_10162110(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
                  undefined4 param_13,undefined4 param_14,undefined4 param_15,undefined4 param_16,
@@ -951,7 +951,7 @@ void FUN_10162110(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 // Reference entry 10167b10; body size 67 bytes.
 #line 1 "ENTRY_10167b10"
 
-void FUN_10167b10(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void __stdcall FUN_10167b10(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9)
 
@@ -973,7 +973,7 @@ void FUN_10167b10(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 // Reference entry 1016e490; body size 123 bytes.
 #line 1 "ENTRY_1016e490"
 
-void FUN_1016e490(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void __stdcall FUN_1016e490(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
                  undefined4 param_13,undefined4 param_14,undefined4 param_15,undefined4 param_16,
@@ -1005,7 +1005,7 @@ void FUN_1016e490(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 // Reference entry 1017cfb0; body size 102 bytes.
 #line 1 "ENTRY_1017cfb0"
 
-void FUN_1017cfb0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void __stdcall FUN_1017cfb0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
                  undefined4 param_13,undefined4 param_14)
@@ -1033,7 +1033,7 @@ void FUN_1017cfb0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 // Reference entry 1017fed0; body size 88 bytes.
 #line 1 "ENTRY_1017fed0"
 
-void FUN_1017fed0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void __stdcall FUN_1017fed0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12)
 
@@ -1058,7 +1058,7 @@ void FUN_1017fed0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 // Reference entry 101886c0; body size 81 bytes.
 #line 1 "ENTRY_101886c0"
 
-void FUN_101886c0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void __stdcall FUN_101886c0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10,undefined4 param_11)
 
@@ -1082,7 +1082,7 @@ void FUN_101886c0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 // Reference entry 1018e0c0; body size 81 bytes.
 #line 1 "ENTRY_1018e0c0"
 
-void FUN_1018e0c0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void __stdcall FUN_1018e0c0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10,undefined4 param_11)
 
@@ -1106,7 +1106,7 @@ void FUN_1018e0c0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 // Reference entry 1018f250; body size 123 bytes.
 #line 1 "ENTRY_1018f250"
 
-void FUN_1018f250(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void __stdcall FUN_1018f250(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
                  undefined4 param_13,undefined4 param_14,undefined4 param_15,undefined4 param_16,
@@ -1138,7 +1138,7 @@ void FUN_1018f250(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 // Reference entry 10196370; body size 72 bytes.
 #line 1 "ENTRY_10196370"
 
-void FUN_10196370(int param_1,int *param_2)
+void __stdcall FUN_10196370(int param_1,int *param_2)
 
 {
   int *piVar1;
@@ -1166,7 +1166,7 @@ void FUN_10196370(int param_1,int *param_2)
 // Reference entry 10198050; body size 162 bytes.
 #line 1 "ENTRY_10198050"
 
-void FUN_10198050(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+void __stdcall FUN_10198050(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
                  undefined4 param_13,undefined4 param_14,undefined4 param_15,undefined4 param_16,
@@ -1220,7 +1220,7 @@ void FUN_101986e0(int *param_1,undefined8 param_2,undefined8 param_3,undefined8 
 // Reference entry 10199630; body size 72 bytes.
 #line 1 "ENTRY_10199630"
 
-void FUN_10199630(int param_1,int *param_2)
+void __stdcall FUN_10199630(int param_1,int *param_2)
 
 {
   int *piVar1;
@@ -1248,7 +1248,7 @@ void FUN_10199630(int param_1,int *param_2)
 // Reference entry 101996d0; body size 72 bytes.
 #line 1 "ENTRY_101996d0"
 
-void FUN_101996d0(int param_1,int *param_2)
+void __stdcall FUN_101996d0(int param_1,int *param_2)
 
 {
   int *piVar1;
@@ -14355,7 +14355,7 @@ int * Recovered_103522f0::FUN_103522f0(int *param_2)
 // Reference entry 103539c0; body size 67 bytes.
 #line 1 "ENTRY_103539c0"
 
-void FUN_103539c0(undefined4 param_1,int *param_2)
+void __stdcall FUN_103539c0(undefined4 param_1,int *param_2)
 
 {
   char cVar1;
@@ -15722,7 +15722,7 @@ void __fastcall FUN_10376ce0(int param_1)
 // Reference entry 103799c0; body size 64 bytes.
 #line 1 "ENTRY_103799c0"
 
-undefined1 * FUN_103799c0(undefined1 *param_1)
+undefined1 * __stdcall FUN_103799c0(undefined1 *param_1)
 
 {
   char cVar1;
@@ -24105,7 +24105,7 @@ void FUN_1054b2d0(int param_1,int param_2)
 // Reference entry 1054b400; body size 79 bytes.
 #line 1 "ENTRY_1054b400"
 
-void FUN_1054b400(int param_1,int param_2)
+void __stdcall FUN_1054b400(int param_1,int param_2)
 
 {
   thunk_FUN_1145c250(param_1,param_2,0x2001);
@@ -24137,7 +24137,7 @@ undefined4 Recovered_1054b470::FUN_1054b470(undefined4 param_2)
 // Reference entry 1054b530; body size 97 bytes.
 #line 1 "ENTRY_1054b530"
 
-void FUN_1054b530(int param_1,int param_2)
+void __stdcall FUN_1054b530(int param_1,int param_2)
 
 {
   thunk_FUN_1145c250(param_1,param_2,0x401);
@@ -26318,7 +26318,7 @@ void __fastcall FUN_105b5b90(int param_1)
 // Reference entry 105b6d40; body size 67 bytes.
 #line 1 "ENTRY_105b6d40"
 
-void FUN_105b6d40(undefined4 param_1,int *param_2)
+void __stdcall FUN_105b6d40(undefined4 param_1,int *param_2)
 
 {
   char cVar1;
@@ -30732,7 +30732,7 @@ void Recovered_106d9160::FUN_106d9160(undefined4 param_2)
 // Reference entry 106d91c0; body size 67 bytes.
 #line 1 "ENTRY_106d91c0"
 
-void FUN_106d91c0(undefined4 param_1,int *param_2)
+void __stdcall FUN_106d91c0(undefined4 param_1,int *param_2)
 
 {
   char cVar1;
@@ -32075,7 +32075,7 @@ void Recovered_107cc410::FUN_107cc410(int param_2,int param_3,int param_4)
 // Reference entry 107cc7a0; body size 77 bytes.
 #line 1 "ENTRY_107cc7a0"
 
-void FUN_107cc7a0(int param_1,int param_2)
+void __stdcall FUN_107cc7a0(int param_1,int param_2)
 
 {
   undefined4 uStack_10;
@@ -37194,7 +37194,7 @@ int * Recovered_10bc6c50::FUN_10bc6c50(int *param_2)
 // Reference entry 10bc73f0; body size 76 bytes.
 #line 1 "ENTRY_10bc73f0"
 
-void FUN_10bc73f0(undefined4 *param_1,undefined4 param_2)
+void __stdcall FUN_10bc73f0(undefined4 *param_1,undefined4 param_2)
 
 {
   int *piVar1;
@@ -37580,7 +37580,7 @@ void Recovered_10bcee10::FUN_10bcee10(undefined4 param_2)
 // Reference entry 10bcf100; body size 67 bytes.
 #line 1 "ENTRY_10bcf100"
 
-void FUN_10bcf100(undefined4 param_1,int *param_2)
+void __stdcall FUN_10bcf100(undefined4 param_1,int *param_2)
 
 {
   char cVar1;
