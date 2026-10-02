@@ -3011,6 +3011,43 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
             '    CopierWrapMember0vf(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return this;\n'),
+        # class-TEMPLATE member fn — this has dependent type
+        # NativeCopierOutput<T>*, matching SCEventSubscriptionImpl<T>::EventSink
+        'copier_wm0_tplmem': (
+            prefix.replace(
+                'struct NativeCopierOutput {',
+                'template <class Td> struct NativeCopierOutputTpl {\n'
+                '  NativeCopierOutputTpl *FUN_10df9390(); };\n'
+                'template struct NativeCopierOutputTpl<int>;\n'
+                'struct NativeCopierOutput {') +
+            'struct CopierWrapMember0tm { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0tm(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0tm(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # nested class inside a template — SCEventSubscriptionImpl<T>::EventSink
+        'copier_wm0_nested_tpl': (
+            prefix.replace(
+                'struct NativeCopierOutput {',
+                'template <class To> struct SCSubOuter {\n'
+                '  struct EventSink {\n'
+                '    EventSink *FUN_10df9390();\n'
+                '  };\n'
+                '};\n'
+                'struct NativeCopierOutput {') +
+            'struct CopierWrapMember0nt { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0nt(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n'
+            'template <class To>\n'
+            'SCSubOuter<To>::EventSink *SCSubOuter<To>::EventSink::FUN_10df9390() {\n'
+            '  NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '      (NativeCopierOutput *)this,\n'
+            '      CopierWrapMember0nt(NativeCopierSource_FUN_10df9440()).agg);\n'
+            '  return this;\n'
+            '}\n'
+            'template struct SCSubOuter<int>;\n'
+            'static void wm0_ntpad() { SCSubOuter<int>::EventSink e; e.FUN_10df9390(); }\n',
+            'void wm0_ntpad2() {', ''),
         # member helper inlined on this: this->h_(this)
         'copier_wm0_ihelp_m': (
             prefix.replace(

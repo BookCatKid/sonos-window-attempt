@@ -1012,6 +1012,14 @@
     "directory": "analysis/ctor-scope-copier-wm0-vfull"
   },
   {
+    "object": "copier_wm0_tplmem_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-tplmem"
+  },
+  {
+    "object": "copier_wm0_nested_tpl_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-nested-tpl"
+  },
+  {
     "object": "copier_wm0_ihelp_m_reference_flags",
     "directory": "analysis/ctor-scope-copier-wm0-ihelp-m"
   },
