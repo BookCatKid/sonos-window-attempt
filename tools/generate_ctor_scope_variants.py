@@ -2981,6 +2981,36 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(ctx.owner,\n'
             '    CopierWrapMember0ol(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return this;\n'),
+        # polymorphic class with DECLARED (out-of-line, nontrivial) virtual
+        # dtor — funclets may need this for the vdtor dispatch
+        'copier_wm0_vdtor_decl': (
+            prefix.replace(
+                'struct NativeCopierOutput {',
+                'struct SCISinkBase { virtual ~SCISinkBase(); virtual void onEv(void *); };\n'
+                'struct NativeCopierOutput : SCISinkBase {\n') +
+            'struct CopierWrapMember0vd2 { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0vd2(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0vd2(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # polymorphic + multiple virtual overrides + members (realistic
+        # EventSink shape)
+        'copier_wm0_vfull': (
+            prefix.replace(
+                'struct NativeCopierOutput {',
+                'struct SCIEventSink { virtual ~SCIEventSink();\n'
+                '  virtual void onEvent(void *); virtual int getType(); };\n'
+                'struct NativeCopierOutput : SCIEventSink {\n'
+                '  void *m_src; int m_flags;\n'
+                '  void onEvent(void *) {}\n'
+                '  int getType() { return 0; }\n') +
+            'struct CopierWrapMember0vf { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0vf(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0vf(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
         # member helper inlined on this: this->h_(this)
         'copier_wm0_ihelp_m': (
             prefix.replace(

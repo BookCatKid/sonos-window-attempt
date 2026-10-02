@@ -1004,6 +1004,14 @@
     "directory": "analysis/ctor-scope-copier-wm0-ownerloc"
   },
   {
+    "object": "copier_wm0_vdtor_decl_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-vdtor-decl"
+  },
+  {
+    "object": "copier_wm0_vfull_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-vfull"
+  },
+  {
     "object": "copier_wm0_ihelp_m_reference_flags",
     "directory": "analysis/ctor-scope-copier-wm0-ihelp-m"
   },
