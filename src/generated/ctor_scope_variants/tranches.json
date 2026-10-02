@@ -380,6 +380,10 @@
     "directory": "analysis/ctor-scope-named-event-boxctor"
   },
   {
+    "object": "named_event_refnew_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-refnew"
+  },
+  {
     "object": "wiz_temp_current_reference_flags",
     "directory": "analysis/ctor-scope-wiz-temp-current"
   },

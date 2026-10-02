@@ -1088,6 +1088,18 @@ def named_event_variants():
             '~NativeEventSlot() { e.~NativeNamedEvent_FUN_10df9440(); } };\n',
             'NativeEventSlot u;\n'
             'NativeNamedEvent_FUN_10df9440 *pe = (NativeNamedEvent_FUN_10df9440 *)&u.e;\n'),
+        # bind a ref to the placement result, then take its address: `pe=&event`
+        # (a ref) may reuse the new-expression eax eagerly vs folding to lea.
+        'named_event_refnew': (
+            ctor_decl +
+            'union NativeEventSlot { void *p0,*p1,*p2,*p3,*p4,*p5;\n'
+            'NativeNamedEvent_FUN_10df9440 e;\n'
+            'NativeEventSlot() {}\n'
+            '~NativeEventSlot() { e.~NativeNamedEvent_FUN_10df9440(); } };\n',
+            'NativeEventSlot u;\n'
+            'NativeNamedEvent_FUN_10df9440 &event =\n'
+            '    *new(&u.e) NativeNamedEvent_FUN_10df9440();\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = &event;\n'),
     }
     # Variants suffixed `_outctor` force the RecoveredString const-char* ctor
     # out-of-line: native calls 0x1005273e (the real ctor) rather than inlining
