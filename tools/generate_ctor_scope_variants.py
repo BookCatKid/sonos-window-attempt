@@ -2173,6 +2173,20 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510 e;\n'
             'e.thunk_FUN_10defac0(this, agg);\n'
             'return this;\n'),
+        # agg ctor takes Event* and pa is bound to the ctor eax: agg(pa)
+        # pushes the pointer value — if MSVC keeps pa in the ctor's eax the
+        # push becomes push eax while a stays a scope-lived named local
+        'copier_pa_ptr': (
+            prefix.replace(
+                'NativeCopierAggregate_FUN_10deee60(const Event_thunk_FUN_10def0d0 &)',
+                'NativeCopierAggregate_FUN_10deee60(const Event_thunk_FUN_10def0d0 *)'),
+            sig,
+            head +
+            'NativeCopierSource_FUN_10df9440 a;\n'
+            'NativeCopierSource_FUN_10df9440 *pa = &a;\n'
+            'NativeCopierAggregate_FUN_10deee60 agg(pa);\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this, agg);\n'
+            'return this;\n'),
         # placement-new into declared union storage inside the thunk call:
         # the Aggregate is constructed at a fixed slot (remat lea ecx,$S)
         # while the inner Source temp stays expression-lived (push eax +
@@ -2413,7 +2427,7 @@ def main():
                  'copier_named_src_nested', 'copier_nested_rref',
                  'copier_lambda_agg', 'copier_nested_ptr',
                  'copier_nested_bcref', 'copier_nested_bref',
-                 'copier_pa_arg', 'copier_union_place',
+                 'copier_pa_arg', 'copier_pa_ptr', 'copier_union_place',
                  'copier_buf_place'):
         (ltcg_dir / (name + '_ltcg.cpp')).write_text(
             ltcgize((VARIANTS / (name + '.cpp')).read_text()))

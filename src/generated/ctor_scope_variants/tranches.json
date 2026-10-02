@@ -752,6 +752,10 @@
     "directory": "analysis/ctor-scope-copier-pa-arg"
   },
   {
+    "object": "copier_pa_ptr_reference_flags",
+    "directory": "analysis/ctor-scope-copier-pa-ptr"
+  },
+  {
     "object": "copier_union_place_reference_flags",
     "directory": "analysis/ctor-scope-copier-union-place"
   },
