@@ -1082,6 +1082,30 @@ def named_event_variants():
             'NativeNamedEvent_FUN_10df9440 *pe;\n'
             'NativeNamedEvent_FUN_10df9440 event;\n'
             'pe = &event;\n'),
+        # volatile self head: commits this to edi early so esi is free for
+        # the event address — MSVC may then forward the ctor's eax result
+        # (mov esi,eax) like the reference instead of rematerializing
+        'named_event_vol': (
+            ctor_decl,
+            'NativeNamedEventCallback * volatile self = this;\n'
+            'NativeNamedEvent_FUN_10df9440 event;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = &event;\n'),
+        # volatile self + this read through self at the dispatcher: changes
+        # RA so this is edi and the event pin can take esi
+        'named_event_vol_self': (
+            ctor_decl,
+            'NativeNamedEventCallback * volatile self = this;\n'
+            'NativeNamedEvent_FUN_10df9440 event;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = &event;\n'
+            '(void)self;\n'),
+        # placement-new into a tracked member of a local struct whose sole
+        # member is the event: the member's arm may land lazily at the call
+        'named_event_place_vol': (
+            ctor_decl,
+            'NativeNamedEventCallback * volatile self = this;\n'
+            'Event_thunk_FUN_10def0d0 event;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = (NativeNamedEvent_FUN_10df9440 *)\n'
+            '    new (&event) NativeNamedEvent_FUN_10df9440();\n'),
     }
     out = {}
     for name, (decl, opening) in variants.items():
@@ -1605,6 +1629,45 @@ def wiz_state_variants():
         'const RecoveredString_FUN_1008c50b &s2 =\n'
         '    arg != 0 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00();\n'
         '(void)s2.endsWith("Page");\n' + tail_end)
+    # cond_recv_c with an opaque (extern) SCStr ctor: MSVC arms name's EH
+    # state AFTER the ctor call like the reference instead of arming the
+    # in-construction state before the inlined int_allocRep call
+    extern_ctor = prefix.replace(
+        '__forceinline RecoveredString_FUN_1008c50b(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }',
+        'RecoveredString_FUN_1008c50b(const char *text);')
+    out['wiz_cond_recv_e'] = (
+        extern_ctor +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        '(1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00()).endsWith("Page");\n'
+        + tail_end)
+    # cond_recv_c over a by-value SCStr param: MSVC flag-tracks the param
+    # slot itself so the flag word gets a dedicated stack slot (live from
+    # entry) instead of sharing name's dead slot
+    out['wiz_cond_recv_p'] = (
+        prefix.replace(old_klass, byval_klass) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker.replace('void *arg', 'RecoveredString_FUN_1008c50b arg') + '\n' +
+        tail_common.replace('thunk_FUN_106de0c0(&name, arg)',
+                            'thunk_FUN_106de0c0(&name, (void *)arg.rep)') +
+        '(1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00()).endsWith("Page");\n'
+        + tail_end)
+    # cond_recv_c + keep name alive past the flag temp: an extra use forces
+    # the flag word into its own slot instead of packing into name's
+    out['wiz_cond_recv_k'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' +
+        'RecoveredString_FUN_1008c50b name("SCSubmitDiagsWizardDonePage");\n'
+        'thunk_FUN_106de0c0(&name, arg);\n'
+        'vftable = &DAT_118bea44;\n'
+        '(1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00()).endsWith("Page");\n'
+        + tail_end.replace('vftable = &DAT_118bea58;',
+                           'vftable = &DAT_118bea58;\n'
+                           '(void)name.endsWith("x");\n'))
     return out
 
 

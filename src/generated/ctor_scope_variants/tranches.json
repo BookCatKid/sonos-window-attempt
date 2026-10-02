@@ -364,6 +364,18 @@
     "directory": "analysis/ctor-scope-named-event-predcl"
   },
   {
+    "object": "named_event_vol_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-vol"
+  },
+  {
+    "object": "named_event_vol_self_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-vol-self"
+  },
+  {
+    "object": "named_event_place_vol_reference_flags",
+    "directory": "analysis/ctor-scope-named-event-place-vol"
+  },
+  {
     "object": "wiz_temp_current_reference_flags",
     "directory": "analysis/ctor-scope-wiz-temp-current"
   },
@@ -534,6 +546,18 @@
   {
     "object": "wiz_cond_direct_reference_flags",
     "directory": "analysis/ctor-scope-wiz-cond-direct"
+  },
+  {
+    "object": "wiz_cond_recv_e_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-cond-recv-e"
+  },
+  {
+    "object": "wiz_cond_recv_p_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-cond-recv-p"
+  },
+  {
+    "object": "wiz_cond_recv_k_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-cond-recv-k"
   },
   {
     "object": "copier_named_reference_flags",
