@@ -2211,7 +2211,9 @@ def main():
     for name in ('op_ref_outline_split', 'op_impl_smart_outline_split',
                  'op_impl_both_outline_split', 'op_impl_smart_split',
                  'op_ref_split', 'op_ref_outline', 'op_impl_smart_outline',
-                 'op_impl_both_outline', 'op_impl_m14_outline'):
+                 'op_impl_both_outline', 'op_impl_m14_outline',
+                 'copier_nested_all', 'copier_temp_arg', 'copier_byval',
+                 'copier_bound_nested', 'copier_named_novol'):
         (ltcg_dir / (name + '_ltcg.cpp')).write_text(
             ltcgize((VARIANTS / (name + '.cpp')).read_text()))
     # Two-TU probes: the member ctor stays DECLARED-ONLY in TU_A so the
