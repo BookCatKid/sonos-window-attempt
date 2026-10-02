@@ -2208,6 +2208,21 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
             '    *new (aggbuf) NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'
             'return this;\n'),
+        # agg as a nonzero-offset member of an inlined-ctor wrapper temp:
+        # W(Source()).agg materializes the Aggregate member at a fixed
+        # slot (lea ecx,$T+4 -> remat, not the pinned ctor eax) while the
+        # inner Source temp stays expression-lived to the tail
+        'copier_wrap_member': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)') +
+            'struct CopierWrapMember { unsigned int pad; NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            head +
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
         # nested temps where the agg temp is the right operand of a comma:
         # the temp is still expression-lived but its address may no longer
         # be the bound call result
@@ -2428,6 +2443,7 @@ def main():
                  'copier_lambda_agg', 'copier_nested_ptr',
                  'copier_nested_bcref', 'copier_nested_bref',
                  'copier_pa_arg', 'copier_pa_ptr', 'copier_union_place',
+                 'copier_wrap_member',
                  'copier_buf_place'):
         (ltcg_dir / (name + '_ltcg.cpp')).write_text(
             ltcgize((VARIANTS / (name + '.cpp')).read_text()))
