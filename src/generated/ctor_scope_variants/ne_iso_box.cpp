@@ -15,10 +15,12 @@ struct EvBox {
 
 struct CB {
     int m0, m1, m2, m3;
-    void FUN_probe(unsigned arg) {
-        EvBox box;
-        Ev *pe = (Ev *)new (&box.e) Ev();
-        ((EvProps *)pe->rep.properties)->slot(0, arg);
-        ((EvDisp *)((char *)this - 0x10))->dispatch(pe);
-    }
+    void FUN_probe(unsigned arg);
 };
+
+void CB::FUN_probe(unsigned arg) {
+    EvBox box;
+    Ev *pe = (Ev *)new (&box.e) Ev();
+    ((EvProps *)pe->rep.properties)->slot(0, arg);
+    ((EvDisp *)((char *)this - 0x10))->dispatch(pe);
+}
