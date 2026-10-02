@@ -1625,6 +1625,72 @@ def wiz_state_variants():
         'RecoveredString_FUN_1008c50b s2 =\n'
         '    (1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00());\n'
         's2.endsWith("Page");\n' + tail_end)
+    # The reference keeps a dedicated flag word at [ebp-0x14] (zero-init'd in
+    # the prologue next to _this$@-0x18) while name@-0x10 is released early and
+    # its slot is REUSED for the sret construction flag at the query call. The
+    # folded ?: alone packs the flag into name's dead slot; the goal is to give
+    # MSVC a second compiler temp that occupies [ebp-0x10] at query time so the
+    # ?: guard lands on the reserved [ebp-0x14].
+    # name in an inner scope + the ?: result bound to a named local that is
+    # written to the param slot: s2 lives at [ebp+8], its guard word at -0x14.
+    out['wiz_cond_named'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'RecoveredString_FUN_1008c50b s2 =\n'
+        '    (arg != 0 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00());\n'
+        's2.endsWith("Page");\n' + tail_end)
+    # ?: result move-constructed into a named local then queried in place:
+    # the move elision keeps the result on the param slot, the move guard is
+    # the reserved flag
+    out['wiz_cond_move'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'RecoveredString_FUN_1008c50b s2 =\n'
+        '    (1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00());\n'
+        '(void)s2.endsWith("Page");\n' + tail_end)
+    # the ?: receiver while arg stays address-taken through the query call:
+    # passing &arg keeps the param slot "live" so MSVC reserves the guard flag
+    out['wiz_cond_argref'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'void **parg = &arg;\n'
+        '(1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00()).endsWith("Page");\n'
+        '(void)*parg;\n' + tail_end)
+    # ?: receiver where the param slot is first re-typed by writing through a
+    # pointer: the aliasing forces MSVC to flag-track the overlaid temp
+    out['wiz_cond_aliased'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'RecoveredString_FUN_1008c50b &s2 =\n'
+        '    (1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00());\n'
+        's2.endsWith("Page");\n' + tail_end)
+    # ref-bound ?: temp where the reference escapes to a statement: the temp's
+    # materialization guard is a reserved word across the widening scope
+    out['wiz_cond_refbind'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'const RecoveredString_FUN_1008c50b &s2 =\n'
+        '    (1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00());\n'
+        's2.endsWith("Page");\n' + tail_end)
+    # sret call whose result object keeps its own "constructed" guard adjacent
+    # to the ?: flag: an output-param query returning into &arg reuses the slot
+    out['wiz_arg_sret'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        'RecoveredString_FUN_1008c50b s2 = thunk_FUN_106dfa00();\n'
+        's2.endsWith("Page");\n' + tail_end)
     return out
 
 

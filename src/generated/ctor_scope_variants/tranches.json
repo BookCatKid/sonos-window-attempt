@@ -548,6 +548,30 @@
     "directory": "analysis/ctor-scope-wiz-cond-recv-i"
   },
   {
+    "object": "wiz_cond_named_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-cond-named"
+  },
+  {
+    "object": "wiz_cond_move_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-cond-move"
+  },
+  {
+    "object": "wiz_cond_argref_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-cond-argref"
+  },
+  {
+    "object": "wiz_cond_aliased_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-cond-aliased"
+  },
+  {
+    "object": "wiz_cond_refbind_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-cond-refbind"
+  },
+  {
+    "object": "wiz_arg_sret_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-arg-sret"
+  },
+  {
     "object": "copier_named_reference_flags",
     "directory": "analysis/ctor-scope-copier-named"
   },
