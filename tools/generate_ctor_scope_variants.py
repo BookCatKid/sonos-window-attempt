@@ -2112,7 +2112,7 @@ def ltcgize(text, keep_extern=()):
         # callee cannot throw, which lets /LTCG elide the EH scopes under
         # test. A volatile indirect call is unanalyzable, so scopes stay.
         stubs.append(f'{ret} {conv or ""}{name}({args}) {{ ltcg_opaque();'
-                     + (' return 0;' if 'void' not in ret else '') + ' }')
+                     + ('' if ret.strip() == 'void' else ' return 0;') + ' }')
     # member decls inside structs: NAME(args); or ~NAME(); with no body —
     # skip members that already have an out-of-class definition in the file
     for sm in re.finditer(r'struct (\w+)[^;{]*\{(.*?)\};', text, re.S):

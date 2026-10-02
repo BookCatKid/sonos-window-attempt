@@ -174,7 +174,7 @@ unsigned int __security_cookie = 0x12345678;
 void __cdecl __std_terminate() { for (;;) { } }
 
 // ltcg link stubs
-void * __cdecl operator_new(unsigned int) { ltcg_opaque(); }
+void * __cdecl operator_new(unsigned int) { ltcg_opaque(); return 0; }
 FactoryTree::FactoryTree(const FactoryTree &) { ltcg_opaque(); }
 FactoryTree::FactoryTree(FactoryTree &&) { ltcg_opaque(); }
 FactoryTree::~FactoryTree() { ltcg_opaque(); }

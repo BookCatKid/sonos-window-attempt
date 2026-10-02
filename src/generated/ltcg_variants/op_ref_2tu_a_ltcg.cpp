@@ -30,5 +30,5 @@ unsigned int __security_cookie = 0x12345678;
 void __cdecl __std_terminate() { for (;;) { } }
 
 // ltcg link stubs
-void __cdecl thunk_FUN_1123fce0(void *) { ltcg_opaque(); }
+void __cdecl thunk_FUN_1123fce0(void *) { ltcg_opaque(); return 0; }
 int __cdecl thunk_FUN_1123fcd0(void *) { ltcg_opaque(); return 0; }
