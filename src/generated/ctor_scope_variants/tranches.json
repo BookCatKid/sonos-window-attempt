@@ -776,6 +776,22 @@
     "directory": "analysis/ctor-scope-copier-ctor-nested-comma"
   },
   {
+    "object": "copier_wm0_comma_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-comma"
+  },
+  {
+    "object": "copier_wm0_ctor_member_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-ctor-member"
+  },
+  {
+    "object": "copier_wm0_addrself_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-addrself"
+  },
+  {
+    "object": "copier_wm0_scope_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-scope"
+  },
+  {
     "object": "delayed_plain_reference_flags",
     "directory": "analysis/ctor-scope-delayed-plain"
   },

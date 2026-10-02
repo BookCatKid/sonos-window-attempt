@@ -2249,6 +2249,67 @@ def event_copier_variants():
             '    (NativeCopierOutput *)this,\n'
             '    (0,\n'
             '     NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440())));\n'),
+        # wrap_member0 with the volatile self store inside the same full
+        # expression via comma — sequencing may keep mov [ebp-0x10],esi
+        # ahead of the temp-ctor lea as native shows
+        'copier_wm0_comma': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)') +
+            'struct CopierWrapMember0c { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0c(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierOutput * volatile self;\n'
+            '(self = this,\n'
+            ' NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0c(NativeCopierSource_FUN_10df9440()).agg));\n'
+            'return this;\n'),
+        # wrap_member0 inside a real ctor of a class carrying a non-trivial
+        # member: member-init unwind funclets need this, so MSVC emits the
+        # prologue _this$ spill before any body lea — tests whether native's
+        # early store is ctor bookkeeping
+        'copier_wm0_ctor_member': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)') +
+            'struct CopierWrapMember0m { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0m(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n'
+            'struct NativeCopierOutCtor { NativeCopierSource_FUN_10df9440 m_src; NativeCopierOutCtor(); };\n',
+            'NativeCopierOutCtor::NativeCopierOutCtor() {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierOutput *)this,\n'
+            '    CopierWrapMember0m(NativeCopierSource_FUN_10df9440()).agg);\n'),
+        # wrap_member0 where self is address-taken rather than volatile: the
+        # materialization store is emitted at decl-init, possibly before the
+        # next statement hoists its temp-slot lea
+        'copier_wm0_addrself': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)') +
+            'struct CopierWrapMember0a { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0a(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierOutput *self = this;\n'
+            'NativeCopierOutput **pself = &self;\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0a(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return *pself;\n'),
+        # wrap_member0 with the volatile store forced early by an ordering-
+        # dependent second statement: the self store then a no-op statement
+        # boundary that separates it from the expression arg evaluation
+        'copier_wm0_scope': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)') +
+            'struct CopierWrapMember0s { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0s(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            '{\n'
+            '    NativeCopierOutput * volatile self = this;\n'
+            '}\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0s(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
     }
     out = {}
     for name, spec in variants.items():
