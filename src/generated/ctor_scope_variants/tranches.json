@@ -628,6 +628,26 @@
     "directory": "analysis/ctor-scope-copier-temp-arg"
   },
   {
+    "object": "copier_bound_agg_reference_flags",
+    "directory": "analysis/ctor-scope-copier-bound-agg"
+  },
+  {
+    "object": "copier_copyinit_reference_flags",
+    "directory": "analysis/ctor-scope-copier-copyinit"
+  },
+  {
+    "object": "copier_ret_comma_reference_flags",
+    "directory": "analysis/ctor-scope-copier-ret-comma"
+  },
+  {
+    "object": "copier_nested_self_arg_reference_flags",
+    "directory": "analysis/ctor-scope-copier-nested-self-arg"
+  },
+  {
+    "object": "copier_bound_a_reference_flags",
+    "directory": "analysis/ctor-scope-copier-bound-a"
+  },
+  {
     "object": "copier_ref_ptr_arg_reference_flags",
     "directory": "analysis/ctor-scope-copier-ref-ptr-arg"
   },

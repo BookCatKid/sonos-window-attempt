@@ -1803,6 +1803,46 @@ def event_copier_variants():
             'NativeCopierAggregate_FUN_10deee60 agg((NativeCopierSource_FUN_10df9440()));\n'
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this, agg);\n'
             'return this;\n'),
+        # bound-temp aggregate: const& binds the Aggregate(Source()) temp so
+        # it rematerializes (lea ecx) instead of pinning esi=eax, while the
+        # nested Source() temp still forwards eax — and bound temps die in
+        # reverse binding order at scope end (a last, e first)
+        'copier_bound_agg': head + (
+            'const NativeCopierSource_FUN_10df9440 &a = NativeCopierSource_FUN_10df9440();\n'
+            'const NativeCopierAggregate_FUN_10deee60 &agg =\n'
+            '    NativeCopierAggregate_FUN_10deee60(a);\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this, agg);\n'
+            'return this;\n'),
+        # copy-init named local: MSVC's elision may keep the temp's eax
+        # forward while a remains a scope-lived tracked object
+        'copier_copyinit': head + (
+            'NativeCopierSource_FUN_10df9440 a = NativeCopierSource_FUN_10df9440();\n'
+            'NativeCopierAggregate_FUN_10deee60 agg(a);\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this, agg);\n'
+            'return this;\n'),
+        # single-expression form returning this through a comma: temps die
+        # at the end of the return full-expression = tail
+        'copier_ret_comma': (
+            'return (NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440())),\n'
+            '    this);\n'),
+        # nested temps + self as a plain pinned alias used for BOTH the arg
+        # and the return: the alias value is born at entry so RA assigns it
+        # esi before the agg temp's address can claim a callee-saved slot
+        'copier_nested_self_arg': (
+            'NativeCopierOutput *self = this;\n'
+            'NativeCopierOutput *result = self;\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(self,\n'
+            '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'
+            'return result;\n'),
+        # bound-temp source (scope-lived, tail dtor) + named agg + temp
+        # receiver: tests whether MSVC forwards the bound temp's ctor eax
+        # into the push or rematerializes the temp's address
+        'copier_bound_a': head + (
+            'const NativeCopierSource_FUN_10df9440 &a = NativeCopierSource_FUN_10df9440();\n'
+            'NativeCopierAggregate_FUN_10deee60 agg(a);\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this, agg);\n'
+            'return this;\n'),
         # ref-bound temp whose ADDRESS feeds a pointer-param agg ctor: the
         # ref binds to the ctor-result register so &a can reuse eax
         'copier_ref_ptr_arg': (prefix.replace(
