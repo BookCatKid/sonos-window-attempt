@@ -1813,6 +1813,22 @@ def wiz_state_variants():
         '        (1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00()));\n'
         'res.endsWith("Page");\n'
         '(&res)->~RecoveredString_FUN_1008c50b();\n}\n')
+    # name ctor called OUT-OF-LINE: native emits `call 0x1005273e` (the
+    # RecoveredString ctor) rather than inlining it.  Declaring the ctor
+    # without a body makes it a real extern symbol so MSVC emits the call.
+    outctor_prefix = prefix.replace(
+        '__forceinline RecoveredString_FUN_1008c50b(const char *text) { ((SCStr *)this)->int_allocRep((char *)text); }',
+        'RecoveredString_FUN_1008c50b(const char *text);')
+    out['wiz8_outctor'] = (outctor_prefix + ref8 + marker8 + '\n' + t8c +
+        '(1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00()).endsWith("Page");\n'
+        '}\n')
+    # out-of-line name ctor + out-of-line copy ctor for the ?: result
+    outctor2_prefix = outctor_prefix.replace(
+        '__forceinline RecoveredString_FUN_1008c50b(const RecoveredString_FUN_1008c50b &o) { rep = o.rep; }',
+        'RecoveredString_FUN_1008c50b(const RecoveredString_FUN_1008c50b &o);')
+    out['wiz8_outctor_copy'] = (outctor2_prefix + ref8 + marker8 + '\n' + t8c +
+        '(1 ? thunk_FUN_106dfa00() : thunk_FUN_106dfa00()).endsWith("Page");\n'
+        '}\n')
     return out
 
 

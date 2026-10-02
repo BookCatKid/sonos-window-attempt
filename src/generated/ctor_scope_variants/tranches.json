@@ -624,6 +624,14 @@
     "directory": "analysis/ctor-scope-wiz8-res-inplace"
   },
   {
+    "object": "wiz8_outctor_reference_flags",
+    "directory": "analysis/ctor-scope-wiz8-outctor"
+  },
+  {
+    "object": "wiz8_outctor_copy_reference_flags",
+    "directory": "analysis/ctor-scope-wiz8-outctor-copy"
+  },
+  {
     "object": "copier_named_reference_flags",
     "directory": "analysis/ctor-scope-copier-named"
   },
