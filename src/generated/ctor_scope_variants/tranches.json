@@ -196,32 +196,8 @@
     "directory": "analysis/ctor-scope-op-impl-both-outline"
   },
   {
-    "object": "op_impl_smart_empty_reference_flags",
-    "directory": "analysis/ctor-scope-op-impl-smart-empty"
-  },
-  {
-    "object": "op_impl_smart_empty_dbl_reference_flags",
-    "directory": "analysis/ctor-scope-op-impl-smart-empty-dbl"
-  },
-  {
-    "object": "op_impl_smart_arg_empty_reference_flags",
-    "directory": "analysis/ctor-scope-op-impl-smart-arg-empty"
-  },
-  {
-    "object": "op_impl_smart_bodystore_reference_flags",
-    "directory": "analysis/ctor-scope-op-impl-smart-bodystore"
-  },
-  {
     "object": "op_impl_smart_nestedrep_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-smart-nestedrep"
-  },
-  {
-    "object": "op_impl_smart_decl_empty_reference_flags",
-    "directory": "analysis/ctor-scope-op-impl-smart-decl-empty"
-  },
-  {
-    "object": "op_impl_smart_place_reference_flags",
-    "directory": "analysis/ctor-scope-op-impl-smart-place"
   },
   {
     "object": "op_impl_smart_base_reference_flags",
@@ -236,14 +212,6 @@
     "directory": "analysis/ctor-scope-op-impl-smart-noexcept"
   },
   {
-    "object": "op_impl_smart_array_reference_flags",
-    "directory": "analysis/ctor-scope-op-impl-smart-array"
-  },
-  {
-    "object": "op_impl_smart_template_reference_flags",
-    "directory": "analysis/ctor-scope-op-impl-smart-template"
-  },
-  {
     "object": "op_impl_smart_split_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-smart-split"
   },
@@ -254,14 +222,6 @@
   {
     "object": "op_impl_both_outline_split_reference_flags",
     "directory": "analysis/ctor-scope-op-impl-both-outline-split"
-  },
-  {
-    "object": "op_impl_smart_split_method_reference_flags",
-    "directory": "analysis/ctor-scope-op-impl-smart-split-method"
-  },
-  {
-    "object": "op_impl_smart_template_only_reference_flags",
-    "directory": "analysis/ctor-scope-op-impl-smart-template-only"
   },
   {
     "object": "op_impl_tail_nsdmi_reference_flags",

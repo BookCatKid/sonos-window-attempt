@@ -69,4 +69,4 @@ extern unsigned int DAT_1186d2f4;
 // Reference entry 10687e80; body size 278 bytes.
 #line 1 "ENTRY_10687e80"
 NativeOpImpl_FUN_10687e80::NativeOpImpl_FUN_10687e80(void *param_2)
-    : NativeOpImpl_FUN_10687e80_vt(this), m14(param_2) { f38.w.hi = 0; }
+    : NativeOpImpl_FUN_10687e80_vt(this), m14(param_2) { f38.hi = 0; }

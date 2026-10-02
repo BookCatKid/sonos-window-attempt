@@ -639,41 +639,6 @@ def op_impl_variants():
             '    NativeOpMember14_10687e80(void *param); };\n'
             'NativeOpMember14_10687e80::NativeOpMember14_10687e80(void *param)\n'
             ' : smart(param) { f8 = 0; vptr = (void *)&DAT_118c62f8; }'))
-    # smart gets a user-provided EMPTY ctor: its tracked scope materializes so
-    # MSVC repoints construction-this and arms state3 before m14's body stores
-    smart_empty = decls.replace(
-        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
-        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
-        '    NativeOpSmart14_thunk_FUN_101ba1b0() {} };').replace(
-        ' : smart(param) { f8 = 0;',
-        ' { smart.p = param; if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0;')
-    variants['op_impl_smart_empty'] = smart_empty
-    # same, plus f38 modeled as double-init to probe the xorps/movq store
-    variants['op_impl_smart_empty_dbl'] = smart_empty.replace(
-        'union NativeOpF38 { unsigned __int64 q; struct { unsigned int lo; unsigned int hi; } w; };',
-        'union NativeOpF38 { double d; struct { unsigned int lo; unsigned int hi; } w; };')
-    # smart ctor takes the arg but is EMPTY: the init-list invocation
-    # materializes the nested construction-this repoint while the state arm
-    # still precedes the smart.p store in m14's body
-    smart_arg_empty = decls.replace(
-        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
-        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
-        '    NativeOpSmart14_thunk_FUN_101ba1b0(void *value) {} };').replace(
-        ' : smart(param) { f8 = 0;',
-        ' : smart(param) { smart.p = param; '
-        'if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0;')
-    variants['op_impl_smart_arg_empty'] = smart_arg_empty
-    # smart has NO user ctor (implicit trivial default); m14's ctor BODY does
-    # the smart.p store + addref — the store runs inside m14's armed
-    # construction scope: arm lands before the store and the spill repoints
-    # to &smart (the exact 10687d70 body_store shape nested one level deeper)
-    variants['op_impl_smart_bodystore'] = decls.replace(
-        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
-        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
-        ' };').replace(
-        ' : smart(param) { f8 = 0;',
-        ' { smart.p = param; '
-        'if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0;')
     # smart wraps a Sub submember whose store happens inside smart's ctor
     # body: the submember-tracking scope is what repoints the shared
     # construction-object slot to &smart when member14 inlines
@@ -686,29 +651,6 @@ def op_impl_variants():
         '    NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { rep.p = value; '
         'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); }\n'
         '    ~NativeOpSmart14_thunk_FUN_101ba1b0(); };')
-    # emits the ctor-call scope (lea &smart + spill repoint + arm3) and the
-    # backend inlines the empty body, leaving the nested repoint + [eax] store
-    variants['op_impl_smart_decl_empty'] = decls.replace(
-        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
-        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
-        '    NativeOpSmart14_thunk_FUN_101ba1b0(void *value); };\n'
-        'NativeOpSmart14_thunk_FUN_101ba1b0::NativeOpSmart14_thunk_FUN_101ba1b0(void *value) {}').replace(
-        ' : smart(param) { f8 = 0;',
-        ' : smart(param) { smart.p = param; '
-        'if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0;')
-    # smart placement-newed inside m14's body: the new-expression's &smart is
-    # materialized in eax, MSVC repoints the construction spill to it (the
-    # funclet reads [ebp-0x14] bare), arms state3, and the ctor body stores
-    # smart.p through eax
-    variants['op_impl_smart_place'] = decls.replace(
-        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
-        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
-        '    NativeOpSmart14_thunk_FUN_101ba1b0() {}\n'
-        '    NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
-        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };').replace(
-        ' : smart(param) { f8 = 0;',
-        ' {\nNativeOpSmart14_thunk_FUN_101ba1b0 *ps = new (&smart) '
-        'NativeOpSmart14_thunk_FUN_101ba1b0(param);\n(void)ps; f8 = 0;')
     # smart as a SECOND BASE of m14: MSVC emits a construction scope for each
     # base — repointing the construction-this spill to &base and arming the
     # state before the inlined base ctor body stores through eax
@@ -735,39 +677,6 @@ def op_impl_variants():
         'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
         '    NativeOpSmart14_thunk_FUN_101ba1b0(void *value) noexcept(false) '
         '{ p = value; if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };')
-    # smart as a 1-ELEMENT ARRAY member of m14: MSVC tracks array-element
-    # construction via the dynamic construction-this spill — emits
-    # lea eax,[esi+4]; mov [ebp-0x14],eax — and the funclet reads it bare
-    variants['op_impl_smart_array'] = decls.replace(
-        ' NativeOpSmart14_thunk_FUN_101ba1b0 smart;',
-        ' NativeOpSmart14_thunk_FUN_101ba1b0 smart[1];').replace(
-        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
-        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
-        '    NativeOpSmart14_thunk_FUN_101ba1b0() {} };').replace(
-        ' : smart(param) { f8 = 0;',
-        ' { smart[0].p = param; if (param != 0) thunk_FUN_1123fce0((char *)param + 4); f8 = 0;')
-    # smart and m14 as class TEMPLATES (the reference family is
-    # RControlAIOOpRef<T>): template member ctors instantiate lazily, so the
-    # frontend lowers each construction as a call scope whose spill+arm the
-    # backend keeps while inlining — reproducing the nested repoint
-    template_decls = decls.replace(
-        'struct NativeOpSmart14_thunk_FUN_101ba1b0 { void *p; ~NativeOpSmart14_thunk_FUN_101ba1b0();\n'
-        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
-        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
-        'struct NativeOpT14_tag;\n'
-        'template<class T> struct NativeOpSmart14_thunk_FUN_101ba1b0 { T *p; ~NativeOpSmart14_thunk_FUN_101ba1b0();\n'
-        '    NativeOpSmart14_thunk_FUN_101ba1b0(T *value) { p = value; '
-        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };').replace(
-        'struct NativeOpMember14_10687e80 : NativeOpMember14V { NativeOpSmart14_thunk_FUN_101ba1b0 smart; void *f8;\n'
-        '    __forceinline NativeOpMember14_10687e80(void *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118c62f8; } };',
-        'template<class T> struct NativeOpMember14T_10687e80 : NativeOpMember14V {'
-        ' NativeOpSmart14_thunk_FUN_101ba1b0<T> smart; void *f8;\n'
-        '    NativeOpMember14T_10687e80(T *param) : smart(param) { f8 = 0; vptr = (void *)&DAT_118c62f8; } };').replace(
-        'NativeOpMember14_10687e80 m14;',
-        'NativeOpMember14T_10687e80<NativeOpT14_tag> m14;')
-    variants['op_impl_smart_template'] = (
-        template_decls,
-        'm14((NativeOpT14_tag *)param_2)')
     # smart's ctor is a TRIVIAL {p=v} store and the addref is a separate call
     # in m14's body while smart is alive: if it throws, ~smart must run —
     # so MSVC arms a tracked state covering the call and repoints the
@@ -802,31 +711,6 @@ def op_impl_variants():
             'NativeOpMember14_10687e80::NativeOpMember14_10687e80(void *param)'
             ' : smart(param) { if (param != 0) thunk_FUN_1123fce0((char *)param + 4);'
             ' f8 = 0; vptr = (void *)&DAT_118c62f8; }'))
-    # same split but the addref is a METHOD call on smart — the member call
-    # binds ecx=&smart which becomes the tracked construction-this
-    variants['op_impl_smart_split_method'] = decls.replace(
-        'struct NativeOpSmart14_thunk_FUN_101ba1b0 { void *p; ~NativeOpSmart14_thunk_FUN_101ba1b0();\n'
-        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
-        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
-        'struct NativeOpSmart14_thunk_FUN_101ba1b0 { void *p; ~NativeOpSmart14_thunk_FUN_101ba1b0();\n'
-        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; }\n'
-        '    void addref() { if (p != 0) thunk_FUN_1123fce0((char *)p + 4); } };').replace(
-        ' : smart(param) { f8 = 0;',
-        ' : smart(param) { smart.addref(); f8 = 0;')
-    # only smart is a template member: the smart ctor alone defers
-    smart_template_decls = decls.replace(
-        'struct NativeOpSmart14_thunk_FUN_101ba1b0 { void *p; ~NativeOpSmart14_thunk_FUN_101ba1b0();\n'
-        '    __forceinline NativeOpSmart14_thunk_FUN_101ba1b0(void *value) { p = value; '
-        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };',
-        'struct NativeOpT14_tag;\n'
-        'template<class T> struct NativeOpSmart14_thunk_FUN_101ba1b0 { T *p; ~NativeOpSmart14_thunk_FUN_101ba1b0();\n'
-        '    NativeOpSmart14_thunk_FUN_101ba1b0(T *value) { p = value; '
-        'if (value != 0) thunk_FUN_1123fce0((char *)value + 4); } };').replace(
-        ' NativeOpSmart14_thunk_FUN_101ba1b0 smart;',
-        ' NativeOpSmart14_thunk_FUN_101ba1b0<NativeOpT14_tag> smart;').replace(
-        ' : smart(param) {',
-        ' : smart((NativeOpT14_tag *)param) {')
-    variants['op_impl_smart_template_only'] = (smart_template_decls, None)
     # tail-ordering hypotheses on top of the proven nestedrep model: native
     # emits f24..f2c stores BEFORE m30's inlined member construction, so those
     # fields are probably initialized during member-init (NSDMI), and f38's
@@ -877,7 +761,7 @@ def op_impl_variants():
         'void *f20 = 0; unsigned short f24 = 1000; void *f28 = 0; void *f2c = 0;\n'
         'NativeOpM30 m30; NativeOpF38 f38; void *f40 = 0; void *f44 = 0;')
     whi_body = ('NativeOpImpl_FUN_10687e80::NativeOpImpl_FUN_10687e80(void *param_2)\n'
-                '    : NativeOpImpl_FUN_10687e80_vt(this), m14(param_2) { f38.w.hi = 0; }')
+                '    : NativeOpImpl_FUN_10687e80_vt(this), m14(param_2) { f38.hi = 0; }')
     variants['op_impl_f38_uctor'] = (f38_uctor, None, whi_body)
     # plain __int64 member at +0x38, unioned against an aliased dword member is
     # impossible, so test whether the +0x3c dword is a separate re-store: f38 is
@@ -1867,7 +1751,12 @@ def event_copier_variants():
         # it rematerializes (lea ecx) instead of pinning esi=eax, while the
         # nested Source() temp still forwards eax — and bound temps die in
         # reverse binding order at scope end (a last, e first)
-        'copier_bound_agg': head + (
+        'copier_bound_agg': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)'),
+            sig,
+            head +
             'const NativeCopierSource_FUN_10df9440 &a = NativeCopierSource_FUN_10df9440();\n'
             'const NativeCopierAggregate_FUN_10deee60 &agg =\n'
             '    NativeCopierAggregate_FUN_10deee60(a);\n'

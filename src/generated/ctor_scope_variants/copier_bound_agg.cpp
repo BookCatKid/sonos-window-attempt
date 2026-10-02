@@ -142,17 +142,17 @@ struct NativeCopierSource_FUN_10dfab80 : Event_thunk_FUN_10def0d0 { NativeCopier
 struct NativeCopierSource_FUN_10dfadd0 : Event_thunk_FUN_10def0d0 { NativeCopierSource_FUN_10dfadd0(); };
 struct NativeCopierSource_FUN_10dfb020 : Event_thunk_FUN_10def0d0 { NativeCopierSource_FUN_10dfb020(); };
 struct NativeCopierSource_FUN_10dfb530 : Event_thunk_FUN_10def0d0 { NativeCopierSource_FUN_10dfb530(); };
-struct NativeCopierEvent_FUN_10df9510 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10df9510(); void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &); };
-struct NativeCopierEvent_FUN_10df9760 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10df9760(); void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &); };
-struct NativeCopierEvent_FUN_10df9b50 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10df9b50(); void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &); };
-struct NativeCopierEvent_FUN_10df9e30 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10df9e30(); void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &); };
-struct NativeCopierEvent_FUN_10dfa080 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10dfa080(); void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &); };
-struct NativeCopierEvent_FUN_10dfa3a0 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10dfa3a0(); void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &); };
-struct NativeCopierEvent_FUN_10dfa5f0 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10dfa5f0(); void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &); };
-struct NativeCopierEvent_FUN_10dfac50 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10dfac50(); void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &); };
-struct NativeCopierEvent_FUN_10dfaea0 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10dfaea0(); void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &); };
-struct NativeCopierEvent_FUN_10dfb0f0 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10dfb0f0(); void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &); };
-struct NativeCopierEvent_FUN_10dfb600 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10dfb600(); void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &); };
+struct NativeCopierEvent_FUN_10df9510 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10df9510(); void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &); };
+struct NativeCopierEvent_FUN_10df9760 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10df9760(); void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &); };
+struct NativeCopierEvent_FUN_10df9b50 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10df9b50(); void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &); };
+struct NativeCopierEvent_FUN_10df9e30 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10df9e30(); void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &); };
+struct NativeCopierEvent_FUN_10dfa080 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10dfa080(); void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &); };
+struct NativeCopierEvent_FUN_10dfa3a0 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10dfa3a0(); void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &); };
+struct NativeCopierEvent_FUN_10dfa5f0 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10dfa5f0(); void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &); };
+struct NativeCopierEvent_FUN_10dfac50 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10dfac50(); void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &); };
+struct NativeCopierEvent_FUN_10dfaea0 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10dfaea0(); void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &); };
+struct NativeCopierEvent_FUN_10dfb0f0 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10dfb0f0(); void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &); };
+struct NativeCopierEvent_FUN_10dfb600 : Event_thunk_FUN_10def0d0 { NativeCopierEvent_FUN_10dfb600(); void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &); };
 struct NativeCopierOutput { NativeCopierOutput *FUN_10df9390(); NativeCopierOutput *FUN_10df95e0(); NativeCopierOutput *FUN_10df99d0(); NativeCopierOutput *FUN_10df9cb0(); NativeCopierOutput *FUN_10df9f00(); NativeCopierOutput *FUN_10dfa220(); NativeCopierOutput *FUN_10dfa470(); NativeCopierOutput *FUN_10dfaad0(); NativeCopierOutput *FUN_10dfad20(); NativeCopierOutput *FUN_10dfaf70(); NativeCopierOutput *FUN_10dfb480(); };
 
 extern int thunk_FUN_10defac0(...);
