@@ -1031,6 +1031,27 @@ def named_event_variants():
             'Event_thunk_FUN_10def0d0 event;\n'
             'NativeNamedEvent_FUN_10df9440 *pe = (NativeNamedEvent_FUN_10df9440 *)\n'
             '    new (&event) NativeNamedEvent_FUN_10df9440();\n'),
+        # self-returning method on a real tracked local: probes show
+        # `pe=event.self()` gives edi=this + mov esi,eax + [esi+8] + arm-after
+        # (the event's real ctor arms state-0); costs a second call.
+        'named_event_selfm': (
+            ctor_decl.replace('NativeNamedEvent_FUN_10df9440();',
+                              'NativeNamedEvent_FUN_10df9440();\n'
+                              '    NativeNamedEvent_FUN_10df9440 *self();'),
+            'NativeNamedEvent_FUN_10df9440 event;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = event.self();\n'),
+        # placement-new into a union member guarded by an explicit member dtor:
+        # the union is EH-tracked (its ~ covers the event at [ebp-0x28]) while
+        # the new-expression binds pe=eax — one call, correct regalloc.
+        'named_event_slot_guard': (
+            ctor_decl +
+            'union NativeEventSlot { NativeNamedEvent_FUN_10df9440 e;\n'
+            'void *p0,*p1,*p2,*p3,*p4,*p5;\n'
+            'NativeEventSlot() {}\n'
+            '~NativeEventSlot() { e.~NativeNamedEvent_FUN_10df9440(); } };\n',
+            'NativeEventSlot u;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = (NativeNamedEvent_FUN_10df9440 *)\n'
+            '    new (&u.e) NativeNamedEvent_FUN_10df9440();\n'),
     }
     out = {}
     for name, (decl, opening) in variants.items():
