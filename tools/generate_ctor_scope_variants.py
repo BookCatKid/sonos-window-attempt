@@ -2806,6 +2806,48 @@ def event_copier_variants():
             'NativeCopierEventXD().thunk_FUN_10defac0(this,\n'
             '    CopierWrapMember0sd(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return this;\n'),
+        # inlined helper taking X* — its param may home to a frame local that
+        # survives even when the inlined use folds away
+        'copier_wm0_ihelp': (
+            prefix.replace(
+                '// Reference entry',
+                'inline void wm0_ihelp(NativeCopierOutput *t) { (void)t; }\n'
+                '// Reference entry') +
+            'struct CopierWrapMember0ih { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0ih(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'wm0_ihelp(this);\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0ih(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # inlined helper storing param through a pointer — keeps t live but as
+        # a stored value, not a use
+        'copier_wm0_ihelp_v': (
+            prefix.replace(
+                '// Reference entry',
+                'extern NativeCopierOutput *wm0_sink;\n'
+                'inline void wm0_ihelpv(NativeCopierOutput *t) { wm0_sink = t; }\n'
+                '// Reference entry') +
+            'struct CopierWrapMember0ihv { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0ihv(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'wm0_ihelpv(this);\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0ihv(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # member helper inlined on this: this->h_(this)
+        'copier_wm0_ihelp_m': (
+            prefix.replace(
+                'struct NativeCopierOutput {',
+                'struct NativeCopierOutput {\n'
+                '  inline void h_(NativeCopierOutput *t) { (void)t; }\n') +
+            'struct CopierWrapMember0ihm { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0ihm(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'this->h_(this);\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0ihm(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
     }
     out = {}
     for name, spec in variants.items():

@@ -948,6 +948,18 @@
     "directory": "analysis/ctor-scope-copier-wm0-scptr-d"
   },
   {
+    "object": "copier_wm0_ihelp_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-ihelp"
+  },
+  {
+    "object": "copier_wm0_ihelp_v_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-ihelp-v"
+  },
+  {
+    "object": "copier_wm0_ihelp_m_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-ihelp-m"
+  },
+  {
     "object": "delayed_plain_reference_flags",
     "directory": "analysis/ctor-scope-delayed-plain"
   },
