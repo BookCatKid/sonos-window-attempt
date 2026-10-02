@@ -2405,6 +2405,33 @@ def event_copier_variants():
             '    p,\n'
             '    CopierWrapMember0q(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return p;\n'),
+        # wrap_member0 where FUN_10df9390 is itself a virtual method — MSVC
+        # may home this to [ebp-0x10] early for virtual member fns (catch
+        # handler needs the adjusted this)
+        'copier_wm0_virt': (
+            prefix +
+            'struct NativeCopierOutputVirt { virtual ~NativeCopierOutputVirt() {}\n'
+            '  virtual NativeCopierOutputVirt *FUN_10df9390(); };\n'
+            'struct CopierWrapMember0virt { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0virt(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            'NativeCopierOutputVirt *NativeCopierOutputVirt::FUN_10df9390() {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierOutput *)this,\n'
+            '    CopierWrapMember0virt(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # virtual method + volatile self combined
+        'copier_wm0_virt_vol': (
+            prefix +
+            'struct NativeCopierOutputVv { virtual ~NativeCopierOutputVv() {}\n'
+            '  virtual NativeCopierOutputVv *FUN_10df9390(); };\n'
+            'struct CopierWrapMember0vv { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0vv(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            'NativeCopierOutputVv *NativeCopierOutputVv::FUN_10df9390() {',
+            'NativeCopierOutputVv * volatile self = this;\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierOutput *)this,\n'
+            '    CopierWrapMember0vv(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
         # volatile self but split decl from assign: assignment is a separate
         # statement MSVC emits before the expression arg eval
         'copier_wm0_sep': (

@@ -820,6 +820,14 @@
     "directory": "analysis/ctor-scope-copier-wm0-fastcall2"
   },
   {
+    "object": "copier_wm0_virt_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-virt"
+  },
+  {
+    "object": "copier_wm0_virt_vol_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-virt-vol"
+  },
+  {
     "object": "copier_wm0_sep_reference_flags",
     "directory": "analysis/ctor-scope-copier-wm0-sep"
   },
