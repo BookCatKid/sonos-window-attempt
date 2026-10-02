@@ -7312,7 +7312,7 @@ void __stdcall FUN_1021b280(SCStr *param_1)
 // Reference entry 1021ddb0; body size 89 bytes.
 #line 1 "ENTRY_1021ddb0"
 
-void __fastcall FUN_1021ddb0(int param_1)
+void __fastcall FUN_1021ddb0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   char cVar1;
@@ -7821,7 +7821,7 @@ SCStr * Recovered_10231810::FUN_10231810(SCStr *param_2)
 // Reference entry 102327c0; body size 41 bytes.
 #line 1 "ENTRY_102327c0"
 
-void __fastcall FUN_102327c0(int param_1)
+void __fastcall FUN_102327c0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iStack_14;
@@ -11171,7 +11171,7 @@ void Recovered_102de670::FUN_102de670(char *param_2,undefined4 param_3)
 // Reference entry 102de750; body size 58 bytes.
 #line 1 "ENTRY_102de750"
 
-undefined4 __fastcall FUN_102de750(int param_1)
+undefined4 __fastcall FUN_102de750(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   char cVar1;
@@ -13504,7 +13504,7 @@ void Recovered_103b9950::FUN_103b9950(SCStr *param_2,undefined4 *param_3)
 // Reference entry 103ba040; body size 49 bytes.
 #line 1 "ENTRY_103ba040"
 
-void __fastcall FUN_103ba040(int param_1)
+void __fastcall FUN_103ba040(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iStack_14;
@@ -14967,7 +14967,7 @@ void Recovered_103ff080::FUN_103ff080(undefined4 param_2,SCStr *param_3)
 // Reference entry 104017b0; body size 36 bytes.
 #line 1 "ENTRY_104017b0"
 
-void __fastcall FUN_104017b0(int param_1)
+void __fastcall FUN_104017b0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iStack_14;
@@ -14986,7 +14986,7 @@ void __fastcall FUN_104017b0(int param_1)
 // Reference entry 10401800; body size 36 bytes.
 #line 1 "ENTRY_10401800"
 
-void __fastcall FUN_10401800(int param_1)
+void __fastcall FUN_10401800(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iStack_14;
@@ -15412,7 +15412,7 @@ SCStr * Recovered_1041a680::FUN_1041a680(SCStr *param_2)
 // Reference entry 1041bff0; body size 21 bytes.
 #line 1 "ENTRY_1041bff0"
 
-SCStr * FUN_1041bff0(SCStr *param_1)
+SCStr * __stdcall FUN_1041bff0(SCStr *param_1, unsigned int recovered_unused_stack_1)
 
 {
   (param_1)->int_allocRep("");
@@ -15423,7 +15423,7 @@ SCStr * FUN_1041bff0(SCStr *param_1)
 // Reference entry 1041c010; body size 21 bytes.
 #line 1 "ENTRY_1041c010"
 
-SCStr * FUN_1041c010(SCStr *param_1)
+SCStr * __stdcall FUN_1041c010(SCStr *param_1, unsigned int recovered_unused_stack_1)
 
 {
   (param_1)->int_allocRep("");
@@ -18505,7 +18505,7 @@ SCStr * __stdcall FUN_104ea0a0(SCStr *param_1)
 // Reference entry 104ec220; body size 51 bytes.
 #line 1 "ENTRY_104ec220"
 
-void FUN_104ec220(SCStr *param_1,SCStr *param_2)
+void __stdcall FUN_104ec220(SCStr *param_1, SCStr *param_2, unsigned int recovered_unused_stack_2)
 
 {
   bool bVar1;
@@ -18810,7 +18810,7 @@ SCStr * __stdcall FUN_10508240(SCStr *param_1)
 // Reference entry 105088c0; body size 18 bytes.
 #line 1 "ENTRY_105088c0"
 
-SCStr * FUN_105088c0(SCStr *param_1)
+SCStr * __stdcall FUN_105088c0(SCStr *param_1, unsigned int recovered_unused_stack_1)
 
 {
   (param_1)->int_allocRep((char *)0x0);
@@ -18821,7 +18821,7 @@ SCStr * FUN_105088c0(SCStr *param_1)
 // Reference entry 105089e0; body size 18 bytes.
 #line 1 "ENTRY_105089e0"
 
-SCStr * FUN_105089e0(SCStr *param_1)
+SCStr * __stdcall FUN_105089e0(SCStr *param_1, unsigned int recovered_unused_stack_1)
 
 {
   (param_1)->int_allocRep((char *)0x0);
@@ -18832,7 +18832,7 @@ SCStr * FUN_105089e0(SCStr *param_1)
 // Reference entry 10508a00; body size 18 bytes.
 #line 1 "ENTRY_10508a00"
 
-SCStr * FUN_10508a00(SCStr *param_1)
+SCStr * __stdcall FUN_10508a00(SCStr *param_1, unsigned int recovered_unused_stack_1)
 
 {
   (param_1)->int_allocRep((char *)0x0);
@@ -19565,7 +19565,7 @@ SCStr * __stdcall FUN_10534f70(SCStr *param_1)
 // Reference entry 10535900; body size 21 bytes.
 #line 1 "ENTRY_10535900"
 
-SCStr * FUN_10535900(SCStr *param_1)
+SCStr * __stdcall FUN_10535900(SCStr *param_1, unsigned int recovered_unused_stack_1)
 
 {
   (param_1)->int_allocRep("");
@@ -20733,7 +20733,7 @@ SCStr * FUN_105839d0(SCStr *param_1,int param_2,undefined4 param_3)
 // Reference entry 10585850; body size 49 bytes.
 #line 1 "ENTRY_10585850"
 
-void __fastcall FUN_10585850(int param_1)
+void __fastcall FUN_10585850(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iStack_14;
@@ -21186,7 +21186,7 @@ void FUN_105b2c70(undefined4 *param_1,SCStr *param_2)
 // Reference entry 105b4be0; body size 49 bytes.
 #line 1 "ENTRY_105b4be0"
 
-void __fastcall FUN_105b4be0(int param_1)
+void __fastcall FUN_105b4be0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   char cVar1;
@@ -21209,7 +21209,7 @@ void __fastcall FUN_105b4be0(int param_1)
 // Reference entry 105b4c50; body size 36 bytes.
 #line 1 "ENTRY_105b4c50"
 
-void __fastcall FUN_105b4c50(int param_1)
+void __fastcall FUN_105b4c50(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iStack_14;
@@ -21228,7 +21228,7 @@ void __fastcall FUN_105b4c50(int param_1)
 // Reference entry 105b4ca0; body size 36 bytes.
 #line 1 "ENTRY_105b4ca0"
 
-void __fastcall FUN_105b4ca0(int param_1)
+void __fastcall FUN_105b4ca0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iStack_14;
@@ -24544,7 +24544,7 @@ void Recovered_10ba1160::FUN_10ba1160(undefined4 param_2)
 // Reference entry 10ba8810; body size 38 bytes.
 #line 1 "ENTRY_10ba8810"
 
-void __fastcall FUN_10ba8810(int param_1)
+void __fastcall FUN_10ba8810(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iStack_14;
@@ -25360,7 +25360,7 @@ undefined4 * Recovered_10bedc30::FUN_10bedc30(undefined4 *param_2,SCStr *param_3
 // Reference entry 10bee710; body size 36 bytes.
 #line 1 "ENTRY_10bee710"
 
-void __fastcall FUN_10bee710(int param_1)
+void __fastcall FUN_10bee710(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iStack_14;
@@ -25379,7 +25379,7 @@ void __fastcall FUN_10bee710(int param_1)
 // Reference entry 10bee740; body size 36 bytes.
 #line 1 "ENTRY_10bee740"
 
-void __fastcall FUN_10bee740(int param_1)
+void __fastcall FUN_10bee740(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iStack_14;
@@ -25398,7 +25398,7 @@ void __fastcall FUN_10bee740(int param_1)
 // Reference entry 10bee770; body size 36 bytes.
 #line 1 "ENTRY_10bee770"
 
-void __fastcall FUN_10bee770(int param_1)
+void __fastcall FUN_10bee770(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iStack_14;
@@ -30540,7 +30540,7 @@ SCStr * __stdcall FUN_10d04f00(SCStr *param_1)
 // Reference entry 10d05f30; body size 46 bytes.
 #line 1 "ENTRY_10d05f30"
 
-void __fastcall FUN_10d05f30(int param_1)
+void __fastcall FUN_10d05f30(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iStack_14;
@@ -34464,7 +34464,7 @@ void __fastcall FUN_10da7460(int param_1)
 // Reference entry 10da7490; body size 36 bytes.
 #line 1 "ENTRY_10da7490"
 
-void __fastcall FUN_10da7490(int param_1)
+void __fastcall FUN_10da7490(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iStack_14;
@@ -40269,7 +40269,7 @@ undefined4 * Recovered_10f3ef00::FUN_10f3ef00(undefined4 *param_2,SCStr *param_3
 // Reference entry 10f42dd0; body size 36 bytes.
 #line 1 "ENTRY_10f42dd0"
 
-void __fastcall FUN_10f42dd0(int param_1)
+void __fastcall FUN_10f42dd0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3)
 
 {
   int iStack_14;
@@ -42720,7 +42720,7 @@ SCStr * __stdcall FUN_10fcecc0(SCStr *param_1)
 // Reference entry 10fcedc0; body size 21 bytes.
 #line 1 "ENTRY_10fcedc0"
 
-SCStr * FUN_10fcedc0(SCStr *param_1)
+SCStr * __stdcall FUN_10fcedc0(SCStr *param_1, unsigned int recovered_unused_stack_1)
 
 {
   (param_1)->int_allocRep("");
@@ -42731,7 +42731,7 @@ SCStr * FUN_10fcedc0(SCStr *param_1)
 // Reference entry 10fcede0; body size 21 bytes.
 #line 1 "ENTRY_10fcede0"
 
-SCStr * FUN_10fcede0(SCStr *param_1)
+SCStr * __stdcall FUN_10fcede0(SCStr *param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   (param_1)->int_allocRep("");
@@ -42764,7 +42764,7 @@ SCStr * __stdcall FUN_10fcee20(SCStr *param_1)
 // Reference entry 10fcee80; body size 21 bytes.
 #line 1 "ENTRY_10fcee80"
 
-SCStr * FUN_10fcee80(SCStr *param_1)
+SCStr * __stdcall FUN_10fcee80(SCStr *param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   (param_1)->int_allocRep("");
@@ -42786,7 +42786,7 @@ SCStr * __stdcall FUN_10fcefc0(SCStr *param_1)
 // Reference entry 10fcf090; body size 21 bytes.
 #line 1 "ENTRY_10fcf090"
 
-SCStr * FUN_10fcf090(SCStr *param_1)
+SCStr * __stdcall FUN_10fcf090(SCStr *param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   (param_1)->int_allocRep("");
@@ -42797,7 +42797,7 @@ SCStr * FUN_10fcf090(SCStr *param_1)
 // Reference entry 10fcf0b0; body size 21 bytes.
 #line 1 "ENTRY_10fcf0b0"
 
-SCStr * FUN_10fcf0b0(SCStr *param_1)
+SCStr * __stdcall FUN_10fcf0b0(SCStr *param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3)
 
 {
   (param_1)->int_allocRep("");
@@ -42808,7 +42808,7 @@ SCStr * FUN_10fcf0b0(SCStr *param_1)
 // Reference entry 10fcf110; body size 21 bytes.
 #line 1 "ENTRY_10fcf110"
 
-SCStr * FUN_10fcf110(SCStr *param_1)
+SCStr * __stdcall FUN_10fcf110(SCStr *param_1, unsigned int recovered_unused_stack_1)
 
 {
   (param_1)->int_allocRep("");
@@ -44319,7 +44319,7 @@ undefined4 * Recovered_11019480::FUN_11019480(undefined4 *param_2,SCStr *param_3
 // Reference entry 1101b9c0; body size 21 bytes.
 #line 1 "ENTRY_1101b9c0"
 
-SCStr * FUN_1101b9c0(SCStr *param_1)
+SCStr * __stdcall FUN_1101b9c0(SCStr *param_1, unsigned int recovered_unused_stack_1)
 
 {
   (param_1)->int_allocRep("");
@@ -44330,7 +44330,7 @@ SCStr * FUN_1101b9c0(SCStr *param_1)
 // Reference entry 1101ba40; body size 21 bytes.
 #line 1 "ENTRY_1101ba40"
 
-SCStr * FUN_1101ba40(SCStr *param_1)
+SCStr * __stdcall FUN_1101ba40(SCStr *param_1, unsigned int recovered_unused_stack_1)
 
 {
   (param_1)->int_allocRep("");

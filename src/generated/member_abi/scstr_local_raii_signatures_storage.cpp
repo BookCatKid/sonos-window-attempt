@@ -3411,7 +3411,7 @@ RecoveredString_FUN_1008c50b_10ecb800 recovered_string((char *)("capitalization"
 // Reference entry 10ecb890; body size 132 bytes.
 #line 1 "ENTRY_10ecb890"
 
-int __fastcall FUN_10ecb890(int param_1)
+int __fastcall FUN_10ecb890(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -3433,7 +3433,7 @@ RecoveredString_FUN_1008c50b_10ecb890 recovered_string((char *)("animationCaptio
 // Reference entry 10ecb940; body size 132 bytes.
 #line 1 "ENTRY_10ecb940"
 
-int __fastcall FUN_10ecb940(int param_1)
+int __fastcall FUN_10ecb940(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -3455,7 +3455,7 @@ RecoveredString_FUN_1008c50b_10ecb940 recovered_string((char *)("captionText"));
 // Reference entry 10ecb9f0; body size 132 bytes.
 #line 1 "ENTRY_10ecb9f0"
 
-int __fastcall FUN_10ecb9f0(int param_1)
+int __fastcall FUN_10ecb9f0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -3477,7 +3477,7 @@ RecoveredString_FUN_1008c50b_10ecb9f0 recovered_string((char *)("imageCaptionTex
 // Reference entry 10ecbda0; body size 120 bytes.
 #line 1 "ENTRY_10ecbda0"
 
-int __fastcall FUN_10ecbda0(int param_1)
+int __fastcall FUN_10ecbda0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -3570,7 +3570,7 @@ RecoveredString_FUN_1008c50b_10ecccc0 recovered_string((char *)("inputAction"));
 // Reference entry 10eccec0; body size 132 bytes.
 #line 1 "ENTRY_10eccec0"
 
-int __fastcall FUN_10eccec0(int param_1)
+int __fastcall FUN_10eccec0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -3684,7 +3684,7 @@ RecoveredString_FUN_1008c50b_10ece320 recovered_string((char *)("rightPressable"
 // Reference entry 10ece7b0; body size 132 bytes.
 #line 1 "ENTRY_10ece7b0"
 
-int __fastcall FUN_10ece7b0(int param_1)
+int __fastcall FUN_10ece7b0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -3706,7 +3706,7 @@ RecoveredString_FUN_1008c50b_10ece7b0 recovered_string((char *)("subtext"));
 // Reference entry 10ece860; body size 131 bytes.
 #line 1 "ENTRY_10ece860"
 
-undefined4 * __fastcall FUN_10ece860(undefined4 *param_1)
+undefined4 * __fastcall FUN_10ece860(undefined4 *param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -3728,7 +3728,7 @@ RecoveredString_FUN_1008c50b_10ece860 recovered_string((char *)("subText"));
 // Reference entry 10ece910; body size 132 bytes.
 #line 1 "ENTRY_10ece910"
 
-int __fastcall FUN_10ece910(int param_1)
+int __fastcall FUN_10ece910(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -3750,7 +3750,7 @@ RecoveredString_FUN_1008c50b_10ece910 recovered_string((char *)("terminationText
 // Reference entry 10ece9c0; body size 120 bytes.
 #line 1 "ENTRY_10ece9c0"
 
-int __fastcall FUN_10ece9c0(int param_1)
+int __fastcall FUN_10ece9c0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -3772,7 +3772,7 @@ RecoveredString_FUN_1008c50b_10ece9c0 recovered_string((char *)("terminationVOTe
 // Reference entry 10ecea60; body size 132 bytes.
 #line 1 "ENTRY_10ecea60"
 
-int __fastcall FUN_10ecea60(int param_1)
+int __fastcall FUN_10ecea60(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -3794,7 +3794,7 @@ RecoveredString_FUN_1008c50b_10ecea60 recovered_string((char *)("text"));
 // Reference entry 10eceb10; body size 132 bytes.
 #line 1 "ENTRY_10eceb10"
 
-int __fastcall FUN_10eceb10(int param_1)
+int __fastcall FUN_10eceb10(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -3816,7 +3816,7 @@ RecoveredString_FUN_1008c50b_10eceb10 recovered_string((char *)("text"));
 // Reference entry 10ecebc0; body size 131 bytes.
 #line 1 "ENTRY_10ecebc0"
 
-undefined4 * __fastcall FUN_10ecebc0(undefined4 *param_1)
+undefined4 * __fastcall FUN_10ecebc0(undefined4 *param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -3838,7 +3838,7 @@ RecoveredString_FUN_1008c50b_10ecebc0 recovered_string((char *)("validationText"
 // Reference entry 10ecec70; body size 132 bytes.
 #line 1 "ENTRY_10ecec70"
 
-int __fastcall FUN_10ecec70(int param_1)
+int __fastcall FUN_10ecec70(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -3860,7 +3860,7 @@ RecoveredString_FUN_1008c50b_10ecec70 recovered_string((char *)("text"));
 // Reference entry 10eced20; body size 132 bytes.
 #line 1 "ENTRY_10eced20"
 
-int __fastcall FUN_10eced20(int param_1)
+int __fastcall FUN_10eced20(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -3882,7 +3882,7 @@ RecoveredString_FUN_1008c50b_10eced20 recovered_string((char *)("text"));
 // Reference entry 10ecef50; body size 131 bytes.
 #line 1 "ENTRY_10ecef50"
 
-undefined4 * __fastcall FUN_10ecef50(undefined4 *param_1)
+undefined4 * __fastcall FUN_10ecef50(undefined4 *param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -3904,7 +3904,7 @@ RecoveredString_FUN_1008c50b_10ecef50 recovered_string((char *)("text"));
 // Reference entry 10ecf000; body size 120 bytes.
 #line 1 "ENTRY_10ecf000"
 
-int __fastcall FUN_10ecf000(int param_1)
+int __fastcall FUN_10ecf000(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -3926,7 +3926,7 @@ RecoveredString_FUN_1008c50b_10ecf000 recovered_string((char *)("animationCaptio
 // Reference entry 10ecf0a0; body size 120 bytes.
 #line 1 "ENTRY_10ecf0a0"
 
-int __fastcall FUN_10ecf0a0(int param_1)
+int __fastcall FUN_10ecf0a0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -3948,7 +3948,7 @@ RecoveredString_FUN_1008c50b_10ecf0a0 recovered_string((char *)("captionVOText")
 // Reference entry 10ecf140; body size 120 bytes.
 #line 1 "ENTRY_10ecf140"
 
-int __fastcall FUN_10ecf140(int param_1)
+int __fastcall FUN_10ecf140(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -3970,7 +3970,7 @@ RecoveredString_FUN_1008c50b_10ecf140 recovered_string((char *)("imageCaptionVOT
 // Reference entry 10ecf1e0; body size 120 bytes.
 #line 1 "ENTRY_10ecf1e0"
 
-int __fastcall FUN_10ecf1e0(int param_1)
+int __fastcall FUN_10ecf1e0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -3992,7 +3992,7 @@ RecoveredString_FUN_1008c50b_10ecf1e0 recovered_string((char *)("labelVOText"));
 // Reference entry 10ecf280; body size 120 bytes.
 #line 1 "ENTRY_10ecf280"
 
-int __fastcall FUN_10ecf280(int param_1)
+int __fastcall FUN_10ecf280(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -4014,7 +4014,7 @@ RecoveredString_FUN_1008c50b_10ecf280 recovered_string((char *)("voOverride"));
 // Reference entry 10ecf320; body size 120 bytes.
 #line 1 "ENTRY_10ecf320"
 
-int __fastcall FUN_10ecf320(int param_1)
+int __fastcall FUN_10ecf320(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -4036,7 +4036,7 @@ RecoveredString_FUN_1008c50b_10ecf320 recovered_string((char *)("voSubtext"));
 // Reference entry 10ecf3c0; body size 120 bytes.
 #line 1 "ENTRY_10ecf3c0"
 
-int __fastcall FUN_10ecf3c0(int param_1)
+int __fastcall FUN_10ecf3c0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -4058,7 +4058,7 @@ RecoveredString_FUN_1008c50b_10ecf3c0 recovered_string((char *)("voText"));
 // Reference entry 10ecf460; body size 120 bytes.
 #line 1 "ENTRY_10ecf460"
 
-int __fastcall FUN_10ecf460(int param_1)
+int __fastcall FUN_10ecf460(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -4080,7 +4080,7 @@ RecoveredString_FUN_1008c50b_10ecf460 recovered_string((char *)("voText"));
 // Reference entry 10ecf500; body size 120 bytes.
 #line 1 "ENTRY_10ecf500"
 
-int __fastcall FUN_10ecf500(int param_1)
+int __fastcall FUN_10ecf500(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -4102,7 +4102,7 @@ RecoveredString_FUN_1008c50b_10ecf500 recovered_string((char *)("voText"));
 // Reference entry 10ecf640; body size 120 bytes.
 #line 1 "ENTRY_10ecf640"
 
-int __fastcall FUN_10ecf640(int param_1)
+int __fastcall FUN_10ecf640(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -4124,7 +4124,7 @@ RecoveredString_FUN_1008c50b_10ecf640 recovered_string((char *)("voText"));
 // Reference entry 10ecf6e0; body size 120 bytes.
 #line 1 "ENTRY_10ecf6e0"
 
-int __fastcall FUN_10ecf6e0(int param_1)
+int __fastcall FUN_10ecf6e0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -4146,7 +4146,7 @@ RecoveredString_FUN_1008c50b_10ecf6e0 recovered_string((char *)("voText"));
 // Reference entry 10ecf780; body size 120 bytes.
 #line 1 "ENTRY_10ecf780"
 
-int __fastcall FUN_10ecf780(int param_1)
+int __fastcall FUN_10ecf780(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;

@@ -15970,7 +15970,7 @@ undefined4 __fastcall FUN_1052e640(int param_1)
 
 // Reference entry 1052e970; body size 64 bytes.
 
-void __fastcall FUN_1052e970(int param_1)
+void __fastcall FUN_1052e970(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   uint uVar1;
@@ -15992,7 +15992,7 @@ void __fastcall FUN_1052e970(int param_1)
 
 // Reference entry 10534e70; body size 66 bytes.
 
-undefined4 __fastcall FUN_10534e70(int param_1)
+undefined4 __fastcall FUN_10534e70(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   uint uVar1;

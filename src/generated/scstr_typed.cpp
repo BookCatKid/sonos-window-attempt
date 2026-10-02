@@ -691,7 +691,7 @@ void Recovered_103e9bc0::FUN_103e9bc0(undefined4 *param_2,undefined4 *param_3)
 
 
 
-void __fastcall FUN_103f3aa0(int param_1)
+void __fastcall FUN_103f3aa0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   SCStr *ghidra_this;
@@ -712,7 +712,7 @@ void __fastcall FUN_103f3aa0(int param_1)
 
 
 
-void __fastcall FUN_103f3b20(int param_1)
+void __fastcall FUN_103f3b20(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   SCStr *ghidra_this;

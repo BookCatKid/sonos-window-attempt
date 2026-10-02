@@ -28802,7 +28802,7 @@ int * Recovered_102365f0::FUN_102365f0(int *param_2)
 // Reference entry 102431a0; body size 24 bytes.
 #line 1 "ENTRY_102431a0"
 
-void __fastcall FUN_102431a0(int param_1)
+void __fastcall FUN_102431a0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   thunk_FUN_1023d430();
@@ -35786,7 +35786,7 @@ void Recovered_10298b90::FUN_10298b90(int *param_2,undefined4 param_3)
 // Reference entry 1029c0a0; body size 41 bytes.
 #line 1 "ENTRY_1029c0a0"
 
-uint __fastcall FUN_1029c0a0(int *param_1)
+uint __fastcall FUN_1029c0a0(int *param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   uint uVar1;
@@ -68510,7 +68510,7 @@ undefined4 __fastcall FUN_1052e8f0(int *param_1)
 // Reference entry 1052e970; body size 64 bytes.
 #line 1 "ENTRY_1052e970"
 
-void __fastcall FUN_1052e970(int param_1)
+void __fastcall FUN_1052e970(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   uint uVar1;
@@ -68609,7 +68609,7 @@ void __fastcall FUN_10532ea0(int *param_1)
 // Reference entry 10534e70; body size 66 bytes.
 #line 1 "ENTRY_10534e70"
 
-undefined4 __fastcall FUN_10534e70(int param_1)
+undefined4 __fastcall FUN_10534e70(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   uint uVar1;
@@ -72843,7 +72843,7 @@ undefined4 __fastcall FUN_105a2aa0(int *param_1)
 // Reference entry 105a2c70; body size 31 bytes.
 #line 1 "ENTRY_105a2c70"
 
-void __fastcall FUN_105a2c70(int *param_1)
+void __fastcall FUN_105a2c70(int *param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -72864,7 +72864,7 @@ void __fastcall FUN_105a2c70(int *param_1)
 // Reference entry 105a2ca0; body size 31 bytes.
 #line 1 "ENTRY_105a2ca0"
 
-void __fastcall FUN_105a2ca0(int *param_1)
+void __fastcall FUN_105a2ca0(int *param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -75697,7 +75697,7 @@ void __fastcall FUN_105e6ee0(int *param_1)
 // Reference entry 105f15d0; body size 30 bytes.
 #line 1 "ENTRY_105f15d0"
 
-void __fastcall FUN_105f15d0(int param_1)
+void __fastcall FUN_105f15d0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int *piVar1;
@@ -75714,7 +75714,7 @@ void __fastcall FUN_105f15d0(int param_1)
 // Reference entry 105f1d10; body size 30 bytes.
 #line 1 "ENTRY_105f1d10"
 
-void __fastcall FUN_105f1d10(int param_1)
+void __fastcall FUN_105f1d10(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int *piVar1;
@@ -81426,7 +81426,7 @@ void Recovered_1070b2b0::FUN_1070b2b0(int *param_2)
 // Reference entry 1070b3a0; body size 53 bytes.
 #line 1 "ENTRY_1070b3a0"
 
-void __fastcall FUN_1070b3a0(int param_1)
+void __fastcall FUN_1070b3a0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3)
 
 {
   int *piVar1;
@@ -95771,7 +95771,7 @@ void __fastcall FUN_10c2d7f0(int param_1)
 // Reference entry 10c32620; body size 44 bytes.
 #line 1 "ENTRY_10c32620"
 
-void __fastcall FUN_10c32620(int param_1)
+void __fastcall FUN_10c32620(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   char cVar1;
@@ -104425,7 +104425,7 @@ void __fastcall FUN_10d19370(int param_1)
 // Reference entry 10d193b0; body size 50 bytes.
 #line 1 "ENTRY_10d193b0"
 
-void __fastcall FUN_10d193b0(int param_1)
+void __fastcall FUN_10d193b0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   char cVar1;
@@ -106025,7 +106025,7 @@ int * Recovered_10d45eb0::FUN_10d45eb0(int *param_2,uint param_3)
 // Reference entry 10d468e0; body size 37 bytes.
 #line 1 "ENTRY_10d468e0"
 
-void __fastcall FUN_10d468e0(int param_1)
+void __fastcall FUN_10d468e0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   ((RecoveredVirtualSlots *)(param_1 + -0xac))->VirtualSlot91();
@@ -106738,7 +106738,7 @@ int * Recovered_10d52860::FUN_10d52860(int *param_2)
 // Reference entry 10d54470; body size 155 bytes.
 #line 1 "ENTRY_10d54470"
 
-void __fastcall FUN_10d54470(int param_1)
+void __fastcall FUN_10d54470(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3)
 
 {
   int *piVar1;
@@ -106893,7 +106893,7 @@ void __fastcall FUN_10d57a90(int param_1)
 // Reference entry 10d57bf0; body size 42 bytes.
 #line 1 "ENTRY_10d57bf0"
 
-void __fastcall FUN_10d57bf0(int param_1)
+void __fastcall FUN_10d57bf0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   ((RecoveredVirtualSlots *)(param_1 + -0x94))->VirtualSlot88();
@@ -111625,7 +111625,7 @@ void __fastcall FUN_10dd2650(undefined4 *param_1)
 // Reference entry 10dd3040; body size 22 bytes.
 #line 1 "ENTRY_10dd3040"
 
-undefined4 FUN_10dd3040(void)
+undefined4 __stdcall FUN_10dd3040(unsigned int recovered_unused_stack_0)
 
 {
   undefined4 *puVar1;
@@ -121365,7 +121365,7 @@ void __fastcall FUN_10f459d0(undefined4 *param_1)
 // Reference entry 10f47810; body size 35 bytes.
 #line 1 "ENTRY_10f47810"
 
-void __fastcall FUN_10f47810(int param_1)
+void __fastcall FUN_10f47810(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   if (*(short *)(param_1 + -0x1c0) == 0x3ea) {
@@ -127982,7 +127982,7 @@ void Recovered_10fe28f0::FUN_10fe28f0(uint param_2,undefined4 *param_3)
 // Reference entry 10fe34f0; body size 39 bytes.
 #line 1 "ENTRY_10fe34f0"
 
-void __fastcall FUN_10fe34f0(int param_1)
+void __fastcall FUN_10fe34f0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   undefined4 uStack00000004;
@@ -134444,7 +134444,7 @@ int * FUN_110939e0(undefined4 param_1,undefined4 param_2)
 
 
 
-undefined4 FUN_11093f00(void)
+undefined4 __stdcall FUN_11093f00(unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int *piVar1;
@@ -135089,7 +135089,7 @@ int * Recovered_110e9d40::FUN_110e9d40(int *param_2,int *param_3,undefined4 para
 // Reference entry 110ea940; body size 50 bytes.
 #line 1 "ENTRY_110ea940"
 
-void __fastcall FUN_110ea940(int *param_1)
+void __fastcall FUN_110ea940(int *param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -135334,7 +135334,7 @@ void __fastcall FUN_110fbd70(int param_1)
 // Reference entry 11101940; body size 37 bytes.
 #line 1 "ENTRY_11101940"
 
-uint __fastcall FUN_11101940(int *param_1)
+uint __fastcall FUN_11101940(int *param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   uint uVar1;

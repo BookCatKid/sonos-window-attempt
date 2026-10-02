@@ -8306,7 +8306,7 @@ void Recovered_10d50840::FUN_10d50840(uint param_2,uint param_3)
 // Reference entry 10d54470; body size 155 bytes.
 #line 1 "ENTRY_10d54470"
 
-void __fastcall FUN_10d54470(int param_1)
+void __fastcall FUN_10d54470(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3)
 
 {
   int *piVar1;

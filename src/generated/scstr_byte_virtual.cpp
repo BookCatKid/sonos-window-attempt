@@ -2399,7 +2399,7 @@ undefined4 * Recovered_101dd860::FUN_101dd860(undefined4 *param_2,SCStr *param_3
 // Reference entry 101e55f0; body size 91 bytes.
 #line 1 "ENTRY_101e55f0"
 
-void __fastcall FUN_101e55f0(SCStr *param_1)
+void __fastcall FUN_101e55f0(SCStr *param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3)
 
 {
   int *piVar1;
@@ -2423,7 +2423,7 @@ void __fastcall FUN_101e55f0(SCStr *param_1)
 // Reference entry 101e5720; body size 81 bytes.
 #line 1 "ENTRY_101e5720"
 
-void __fastcall FUN_101e5720(SCStr *param_1)
+void __fastcall FUN_101e5720(SCStr *param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int *piVar1;

@@ -28,7 +28,7 @@ struct tm;
 struct ThrowInfo;
 
 extern undefined4 DAT_12126b84;
-extern int FUN_110e28f0(...);
+extern undefined4 __stdcall FUN_110e28f0(unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2);
 extern int free(...);
 extern int memcpy(...);
 extern undefined4 thunk_FUN_110828b0(...);
@@ -42,7 +42,7 @@ extern int thunk_FUN_1148b586(...);
 namespace recovered_110e28f0 {
 #line 1 "ENTRY_110e28f0"
 
-undefined4 FUN_110e28f0(void)
+undefined4 __stdcall FUN_110e28f0(unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   undefined4 ghidra_cookie_frame_slot;

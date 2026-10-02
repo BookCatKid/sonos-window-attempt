@@ -4490,7 +4490,7 @@ undefined4 * Recovered_101eb810::FUN_101eb810(undefined4 *param_2)
 
 
 
-void FUN_101ec2f0(undefined4 *param_1)
+void __stdcall FUN_101ec2f0(undefined4 *param_1, unsigned int recovered_unused_stack_1)
 
 {
   ((CallABI_thunk_FUN_101e8480 *)(*param_1))->thunk_FUN_101e8480((int)(param_1[1]), (int)(param_1));
@@ -4763,7 +4763,7 @@ void FUN_10206b50(undefined4 param_1)
 
 
 
-void FUN_10206d60(undefined4 *param_1)
+void __stdcall FUN_10206d60(undefined4 *param_1, unsigned int recovered_unused_stack_1)
 
 {
   ((CallABI_thunk_FUN_101fd7b0 *)(*param_1))->thunk_FUN_101fd7b0((int)(param_1[1]), (int)(param_1));
@@ -5240,7 +5240,7 @@ void __fastcall FUN_10242250(int param_1)
 // Reference entry 102431c0; body size 50 bytes.
 #line 1 "ENTRY_102431c0"
 
-void __fastcall FUN_102431c0(int param_1)
+void __fastcall FUN_102431c0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   if (*(int *)(param_1 + 0xac) != 1) {
@@ -5255,7 +5255,7 @@ void __fastcall FUN_102431c0(int param_1)
 // Reference entry 10243200; body size 26 bytes.
 #line 1 "ENTRY_10243200"
 
-void __fastcall FUN_10243200(int param_1)
+void __fastcall FUN_10243200(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   *(undefined1 *)(param_1 + 0x9d) = 1;
@@ -5267,7 +5267,7 @@ void __fastcall FUN_10243200(int param_1)
 // Reference entry 10243220; body size 19 bytes.
 #line 1 "ENTRY_10243220"
 
-void __fastcall FUN_10243220(int param_1)
+void __fastcall FUN_10243220(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   abi_call_thunk_FUN_1106b190((undefined4)(param_1 + -0x10), (undefined4)(0), (undefined4)(0));
@@ -5292,7 +5292,7 @@ void Recovered_10243240::FUN_10243240(undefined4 param_2,byte param_3)
 // Reference entry 10243270; body size 19 bytes.
 #line 1 "ENTRY_10243270"
 
-void __fastcall FUN_10243270(int param_1)
+void __fastcall FUN_10243270(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   abi_call_thunk_FUN_1106b190((undefined4)(param_1 + -4), (undefined4)(0), (undefined4)(0));
@@ -5303,7 +5303,7 @@ void __fastcall FUN_10243270(int param_1)
 // Reference entry 102432a0; body size 19 bytes.
 #line 1 "ENTRY_102432a0"
 
-void __fastcall FUN_102432a0(int param_1)
+void __fastcall FUN_102432a0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   abi_call_thunk_FUN_1106b190((undefined4)(param_1 + -4), (undefined4)(0), (undefined4)(0));
@@ -5314,7 +5314,7 @@ void __fastcall FUN_102432a0(int param_1)
 // Reference entry 102432d0; body size 31 bytes.
 #line 1 "ENTRY_102432d0"
 
-void __fastcall FUN_102432d0(int param_1)
+void __fastcall FUN_102432d0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   thunk_FUN_1023d430();
@@ -5378,7 +5378,7 @@ void Recovered_102433e0::FUN_102433e0(int param_2)
 // Reference entry 10243520; body size 124 bytes.
 #line 1 "ENTRY_10243520"
 
-void __fastcall FUN_10243520(int param_1)
+void __fastcall FUN_10243520(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -5406,7 +5406,7 @@ void __fastcall FUN_10243520(int param_1)
 // Reference entry 102435c0; body size 79 bytes.
 #line 1 "ENTRY_102435c0"
 
-void __fastcall FUN_102435c0(int param_1)
+void __fastcall FUN_102435c0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -5565,7 +5565,7 @@ void __fastcall FUN_10249bd0(int param_1)
 // Reference entry 1024ac40; body size 22 bytes.
 #line 1 "ENTRY_1024ac40"
 
-void FUN_1024ac40(void)
+void __stdcall FUN_1024ac40(unsigned int recovered_unused_stack_0)
 
 {
   abi_call_thunk_FUN_1024bf80();
@@ -5577,7 +5577,7 @@ void FUN_1024ac40(void)
 // Reference entry 1024ac60; body size 22 bytes.
 #line 1 "ENTRY_1024ac60"
 
-void FUN_1024ac60(void)
+void __stdcall FUN_1024ac60(unsigned int recovered_unused_stack_0)
 
 {
   abi_call_thunk_FUN_1024bf80();
@@ -5680,7 +5680,7 @@ undefined4 * Recovered_102760e0::FUN_102760e0(undefined4 *param_2)
 
 
 
-void FUN_10277480(undefined4 *param_1)
+void __stdcall FUN_10277480(undefined4 *param_1, unsigned int recovered_unused_stack_1)
 
 {
   ((CallABI_thunk_FUN_102725d0 *)(*param_1))->thunk_FUN_102725d0((int)(param_1[1]), (int)(param_1));
@@ -5807,7 +5807,7 @@ void __fastcall FUN_102804c0(int param_1)
 // Reference entry 10280510; body size 46 bytes.
 #line 1 "ENTRY_10280510"
 
-void __fastcall FUN_10280510(int param_1)
+void __fastcall FUN_10280510(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   abi_call_thunk_FUN_112a7f50((int *)(param_1 + 0x1c));
@@ -5824,7 +5824,7 @@ void __fastcall FUN_10280510(int param_1)
 
 
 
-void FUN_10280e50(undefined4 *param_1)
+void __stdcall FUN_10280e50(undefined4 *param_1, unsigned int recovered_unused_stack_1)
 
 {
   ((CallABI_thunk_FUN_1027ddb0 *)(*param_1))->thunk_FUN_1027ddb0((int)(param_1[1]), (SCStr *)(param_1));
@@ -6349,7 +6349,7 @@ undefined4 * Recovered_102aa850::FUN_102aa850(undefined4 *param_2)
 
 
 
-void FUN_102ac930(undefined4 *param_1)
+void __stdcall FUN_102ac930(undefined4 *param_1, unsigned int recovered_unused_stack_1)
 
 {
   ((CallABI_thunk_FUN_102a2ce0 *)(*param_1))->thunk_FUN_102a2ce0((int)(param_1[1]), (int)(param_1));
@@ -8481,7 +8481,7 @@ void __fastcall FUN_10365830(int *param_1)
 // Reference entry 10367860; body size 21 bytes.
 #line 1 "ENTRY_10367860"
 
-void FUN_10367860(void)
+void __stdcall FUN_10367860(unsigned int recovered_unused_stack_0)
 
 {
   thunk_FUN_1038c830();
@@ -8493,7 +8493,7 @@ void FUN_10367860(void)
 // Reference entry 1036b820; body size 23 bytes.
 #line 1 "ENTRY_1036b820"
 
-void FUN_1036b820(void)
+void __stdcall FUN_1036b820(unsigned int recovered_unused_stack_0)
 
 {
   thunk_FUN_1038c830();
@@ -8869,7 +8869,7 @@ void Recovered_10391970::FUN_10391970(int param_2)
 // Reference entry 10391dd0; body size 35 bytes.
 #line 1 "ENTRY_10391dd0"
 
-void FUN_10391dd0(void)
+void __stdcall FUN_10391dd0(unsigned int recovered_unused_stack_0)
 
 {
   abi_call_thunk_FUN_112af4e0((undefined4)("SCHousehold"), (undefined4)(2), (undefined4)("Fire zone groups changed event."));
@@ -9575,7 +9575,7 @@ void Recovered_1040a540::FUN_1040a540(int *param_2,undefined4 *param_3)
 
 
 
-void FUN_1040e5a0(undefined4 param_1,undefined8 param_2)
+void __stdcall FUN_1040e5a0(undefined4 param_1, undefined8 param_2, unsigned int recovered_unused_stack_2)
 
 {
   ((CallABI_thunk_FUN_11244550 *)(param_1))->thunk_FUN_11244550((undefined4)(param_2));
@@ -9884,7 +9884,7 @@ void __stdcall FUN_1045f950(undefined4 *param_1,undefined4 param_2)
 // Reference entry 1046c8e0; body size 36 bytes.
 #line 1 "ENTRY_1046c8e0"
 
-void FUN_1046c8e0(void)
+void __stdcall FUN_1046c8e0(unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   thunk_FUN_101ed0d0();
@@ -10508,7 +10508,7 @@ void FUN_104e5080(undefined4 param_1)
 
 
 
-void FUN_104e5990(undefined4 *param_1)
+void __stdcall FUN_104e5990(undefined4 *param_1, unsigned int recovered_unused_stack_1)
 
 {
   ((CallABI_thunk_FUN_104df920 *)(*param_1))->thunk_FUN_104df920((int)(param_1[1]), (int)(param_1));
@@ -11821,7 +11821,7 @@ undefined4 * Recovered_10595800::FUN_10595800(undefined4 *param_2)
 
 
 
-void FUN_10595f50(undefined4 *param_1)
+void __stdcall FUN_10595f50(undefined4 *param_1, unsigned int recovered_unused_stack_1)
 
 {
   ((CallABI_thunk_FUN_10593590 *)(*param_1))->thunk_FUN_10593590((int)(param_1[1]), (SCStr *)(param_1));
@@ -11941,7 +11941,7 @@ bool Recovered_1059d120::FUN_1059d120(uint param_2)
 // Reference entry 1059d2f0; body size 20 bytes.
 #line 1 "ENTRY_1059d2f0"
 
-undefined4 __fastcall FUN_1059d2f0(int param_1)
+undefined4 __fastcall FUN_1059d2f0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   *(undefined1 *)(param_1 + 4) = 1;
@@ -12186,7 +12186,7 @@ undefined4 * Recovered_105a0840::FUN_105a0840(undefined4 *param_2)
 
 
 
-void FUN_105a14d0(undefined4 *param_1)
+void __stdcall FUN_105a14d0(undefined4 *param_1, unsigned int recovered_unused_stack_1)
 
 {
   ((CallABI_thunk_FUN_1059e8c0 *)(*param_1))->thunk_FUN_1059e8c0((void *)(param_1[1]), (int)(param_1));
@@ -12199,7 +12199,7 @@ void FUN_105a14d0(undefined4 *param_1)
 
 
 
-void FUN_105a14f0(undefined4 *param_1)
+void __stdcall FUN_105a14f0(undefined4 *param_1, unsigned int recovered_unused_stack_1)
 
 {
   ((CallABI_thunk_FUN_1059ea10 *)(*param_1))->thunk_FUN_1059ea10((int)(param_1[1]), (int)(param_1));
@@ -12707,7 +12707,7 @@ void FUN_105cda80(int param_1,int param_2,undefined4 param_3)
 
 
 
-undefined1 FUN_105e2b50(void)
+undefined1 __stdcall FUN_105e2b50(unsigned int recovered_unused_stack_0)
 
 {
   abi_call_thunk_FUN_112af4e0((undefined4)("SCORDS"), (undefined4)(2), (undefined4)("hideDevice: no cloud support"));
@@ -13095,7 +13095,7 @@ undefined4 * Recovered_10656b00::FUN_10656b00(undefined4 *param_2)
 // Reference entry 1065a700; body size 21 bytes.
 #line 1 "ENTRY_1065a700"
 
-void FUN_1065a700(undefined4 *param_1)
+void __stdcall FUN_1065a700(undefined4 *param_1, unsigned int recovered_unused_stack_1)
 
 {
   ((CallABI_thunk_FUN_10648010 *)(*param_1))->thunk_FUN_10648010((int)(param_1[1]), (int)(param_1));
@@ -13885,7 +13885,7 @@ undefined4 * Recovered_106b57b0::FUN_106b57b0(undefined4 *param_2)
 
 
 
-void FUN_106b8a80(undefined4 *param_1)
+void __stdcall FUN_106b8a80(undefined4 *param_1, unsigned int recovered_unused_stack_1)
 
 {
   ((CallABI_thunk_FUN_106a9340 *)(*param_1))->thunk_FUN_106a9340((int)(param_1[1]), (int)(param_1));
@@ -13898,7 +13898,7 @@ void FUN_106b8a80(undefined4 *param_1)
 
 
 
-void FUN_106b8aa0(undefined4 *param_1)
+void __stdcall FUN_106b8aa0(undefined4 *param_1, unsigned int recovered_unused_stack_1)
 
 {
   ((CallABI_thunk_FUN_106a94b0 *)(*param_1))->thunk_FUN_106a94b0((int)(param_1[1]), (int)(param_1));
@@ -16310,7 +16310,7 @@ void __fastcall FUN_10bcb200(int param_1)
 // Reference entry 10bcb4d0; body size 25 bytes.
 #line 1 "ENTRY_10bcb4d0"
 
-undefined1 FUN_10bcb4d0(void)
+undefined1 __stdcall FUN_10bcb4d0(unsigned int recovered_unused_stack_0)
 
 {
   abi_call_thunk_FUN_112af4e0((undefined4)("SCDHS"), (undefined4)(2), (undefined4)("no cloud support"));
@@ -17478,7 +17478,7 @@ void Recovered_10c32530::FUN_10c32530(int *param_2)
 // Reference entry 10c32620; body size 44 bytes.
 #line 1 "ENTRY_10c32620"
 
-void __fastcall FUN_10c32620(int param_1)
+void __fastcall FUN_10c32620(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   char cVar1;
@@ -18179,7 +18179,7 @@ void Recovered_10c67ae0::FUN_10c67ae0(int param_2)
 // Reference entry 10c67bf0; body size 22 bytes.
 #line 1 "ENTRY_10c67bf0"
 
-void __fastcall FUN_10c67bf0(int param_1)
+void __fastcall FUN_10c67bf0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   abi_call_thunk_FUN_103021f0((undefined4)(param_1 + 0x20), (undefined4)(3), (char *)("Pairing requested on an unsupported protocol"));
@@ -19840,7 +19840,7 @@ void Recovered_10d1fa40::FUN_10d1fa40(undefined4 param_2,undefined4 param_3)
 // Reference entry 10d1fb80; body size 84 bytes.
 #line 1 "ENTRY_10d1fb80"
 
-void __fastcall FUN_10d1fb80(int param_1)
+void __fastcall FUN_10d1fb80(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3, unsigned int recovered_unused_stack_4, unsigned int recovered_unused_stack_5, unsigned int recovered_unused_stack_6)
 
 {
   int *piVar1;
@@ -20048,7 +20048,7 @@ undefined4 * Recovered_10d30290::FUN_10d30290(undefined4 *param_2)
 
 
 
-void FUN_10d30ac0(undefined4 *param_1)
+void __stdcall FUN_10d30ac0(undefined4 *param_1, unsigned int recovered_unused_stack_1)
 
 {
   ((CallABI_thunk_FUN_10d2d980 *)(*param_1))->thunk_FUN_10d2d980((int)(param_1[1]), (int)(param_1));
@@ -20758,7 +20758,7 @@ void __fastcall FUN_10dcbdf0(int param_1)
 // Reference entry 10dd3040; body size 22 bytes.
 #line 1 "ENTRY_10dd3040"
 
-undefined4 FUN_10dd3040(void)
+undefined4 __stdcall FUN_10dd3040(unsigned int recovered_unused_stack_0)
 
 {
   undefined4 *puVar1;
@@ -21249,7 +21249,7 @@ bool FUN_10e47840(undefined4 param_1,undefined4 param_2)
 
 
 
-void FUN_10e48380(undefined4 *param_1)
+void __stdcall FUN_10e48380(undefined4 *param_1, unsigned int recovered_unused_stack_1)
 
 {
   ((CallABI_thunk_FUN_10e45e20 *)(*param_1))->thunk_FUN_10e45e20((int)(param_1[1]), (int *)(param_1));
@@ -24151,7 +24151,7 @@ void __fastcall FUN_10fcbac0(int *param_1)
 // Reference entry 10fd2570; body size 23 bytes.
 #line 1 "ENTRY_10fd2570"
 
-void FUN_10fd2570(void)
+void __stdcall FUN_10fd2570(unsigned int recovered_unused_stack_0)
 
 {
   abi_call_thunk_FUN_112af4e0((undefined4)("MLMSettings"), (undefined4)(1), (undefined4)("Error getting Schedule Index Update setting "));
@@ -24162,7 +24162,7 @@ void FUN_10fd2570(void)
 // Reference entry 10fd2590; body size 23 bytes.
 #line 1 "ENTRY_10fd2590"
 
-void FUN_10fd2590(void)
+void __stdcall FUN_10fd2590(unsigned int recovered_unused_stack_0)
 
 {
   abi_call_thunk_FUN_112af4e0((undefined4)("MLMSettings"), (undefined4)(1), (undefined4)("Error getting View Contributing Artists System Property"));
@@ -24724,7 +24724,7 @@ undefined4 * Recovered_10ffb020::FUN_10ffb020(undefined4 *param_2)
 
 
 
-void FUN_10ffb430(undefined4 *param_1)
+void __stdcall FUN_10ffb430(undefined4 *param_1, unsigned int recovered_unused_stack_1)
 
 {
   ((CallABI_thunk_FUN_10ff8fb0 *)(*param_1))->thunk_FUN_10ff8fb0((int)(param_1[1]), (int)(param_1));
@@ -25397,7 +25397,7 @@ void Recovered_11038d30::FUN_11038d30(undefined4 param_2,undefined4 param_3)
 // Reference entry 11039140; body size 38 bytes.
 #line 1 "ENTRY_11039140"
 
-void __fastcall FUN_11039140(int param_1)
+void __fastcall FUN_11039140(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   if (*(int *)(param_1 + 8) != 0) {
@@ -25443,7 +25443,7 @@ void __fastcall FUN_11039f60(int param_1)
 // Reference entry 1103a250; body size 37 bytes.
 #line 1 "ENTRY_1103a250"
 
-void __fastcall FUN_1103a250(int param_1)
+void __fastcall FUN_1103a250(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   if (*(int *)(param_1 + 8) != 0) {
@@ -27224,7 +27224,7 @@ undefined4 Recovered_11093d10::FUN_11093d10(undefined4 param_2)
 
 
 
-undefined4 FUN_11093f00(void)
+undefined4 __stdcall FUN_11093f00(unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int *piVar1;
@@ -29332,7 +29332,7 @@ void __fastcall FUN_110c35f0(int param_1)
 // Reference entry 110c3c70; body size 109 bytes.
 #line 1 "ENTRY_110c3c70"
 
-undefined4 __fastcall FUN_110c3c70(int param_1)
+undefined4 __fastcall FUN_110c3c70(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3, unsigned int recovered_unused_stack_4)
 
 {
   char cVar1;
@@ -29649,7 +29649,7 @@ void __stdcall FUN_110d67a0(int param_1,int param_2,int param_3,undefined4 param
 // Reference entry 110d6ed0; body size 17 bytes.
 #line 1 "ENTRY_110d6ed0"
 
-void FUN_110d6ed0(undefined4 param_1)
+void __stdcall FUN_110d6ed0(undefined4 param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   abi_call_thunk_FUN_11069340((byte *)(param_1), (int)(0));
@@ -30322,7 +30322,7 @@ undefined4 * Recovered_110e93c0::FUN_110e93c0(undefined4 *param_2)
 
 
 
-void FUN_110e9af0(undefined4 *param_1)
+void __stdcall FUN_110e9af0(undefined4 *param_1, unsigned int recovered_unused_stack_1)
 
 {
   ((CallABI_thunk_FUN_110e83d0 *)(*param_1))->thunk_FUN_110e83d0((int)(param_1[1]), (int)(param_1));
@@ -30431,7 +30431,7 @@ int * Recovered_110e9d40::FUN_110e9d40(int *param_2,int *param_3,undefined4 para
 // Reference entry 110ea940; body size 50 bytes.
 #line 1 "ENTRY_110ea940"
 
-void __fastcall FUN_110ea940(int *param_1)
+void __fastcall FUN_110ea940(int *param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -31909,7 +31909,7 @@ void __fastcall FUN_11106f80(int param_1)
 
 
 
-undefined4 FUN_11107030(void)
+undefined4 __stdcall FUN_11107030(unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   undefined4 uVar1;
@@ -32211,7 +32211,7 @@ void FUN_1110d750(int param_1)
 
 
 
-void FUN_1110dcd0(undefined4 *param_1)
+void __stdcall FUN_1110dcd0(undefined4 *param_1, unsigned int recovered_unused_stack_1)
 
 {
   ((CallABI_thunk_FUN_111080f0 *)(*param_1))->thunk_FUN_111080f0((int)(param_1[1]), (int)(param_1));
@@ -32692,7 +32692,7 @@ int Recovered_1111b1c0::FUN_1111b1c0(undefined4 param_2)
 
 
 
-void __fastcall FUN_1111b240(int param_1)
+void __fastcall FUN_1111b240(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   *(undefined4 *)(param_1 + 0x1f0) = 0;
@@ -32788,7 +32788,7 @@ void Recovered_1111bc70::FUN_1111bc70(undefined4 param_2)
 
 
 
-void __fastcall FUN_1111c160(int param_1)
+void __fastcall FUN_1111c160(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   *(undefined4 *)(param_1 + 0x1c0) = 0;
@@ -32802,7 +32802,7 @@ void __fastcall FUN_1111c160(int param_1)
 
 
 
-void __fastcall FUN_1111c180(int param_1)
+void __fastcall FUN_1111c180(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   *(undefined4 *)(param_1 + 0x208) = 0;
@@ -32816,7 +32816,7 @@ void __fastcall FUN_1111c180(int param_1)
 
 
 
-void __fastcall FUN_1111c410(int param_1)
+void __fastcall FUN_1111c410(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   *(undefined4 *)(param_1 + 0x1d8) = 0;
@@ -33107,7 +33107,7 @@ undefined4 * Recovered_11127070::FUN_11127070(undefined4 *param_2)
 
 
 
-void FUN_111276c0(undefined4 *param_1)
+void __stdcall FUN_111276c0(undefined4 *param_1, unsigned int recovered_unused_stack_1)
 
 {
   ((CallABI_thunk_FUN_11125e60 *)(*param_1))->thunk_FUN_11125e60((int)(param_1[1]), (int)(param_1));
@@ -37098,7 +37098,7 @@ undefined4 * Recovered_11180d90::FUN_11180d90(undefined4 *param_2)
 
 
 
-void FUN_11182ba0(undefined4 *param_1)
+void __stdcall FUN_11182ba0(undefined4 *param_1, unsigned int recovered_unused_stack_1)
 
 {
   ((CallABI_thunk_FUN_111780a0 *)(*param_1))->thunk_FUN_111780a0((int)(param_1[1]), (int)(param_1));
@@ -37382,7 +37382,7 @@ bool __stdcall FUN_11192d20(undefined4 param_1)
 // Reference entry 11193c40; body size 27 bytes.
 #line 1 "ENTRY_11193c40"
 
-void FUN_11193c40(void)
+void __stdcall FUN_11193c40(unsigned int recovered_unused_stack_0)
 
 {
   undefined4 uVar1;
@@ -45754,7 +45754,7 @@ void FUN_11273130(undefined4 param_1,undefined4 param_2)
 
 
 
-void __fastcall FUN_11275ea0(int param_1)
+void __fastcall FUN_11275ea0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   abi_call_thunk_FUN_11274880((int *)(param_1 + 0x134));
@@ -45767,7 +45767,7 @@ void __fastcall FUN_11275ea0(int param_1)
 
 
 
-void __fastcall FUN_11275ec0(int param_1)
+void __fastcall FUN_11275ec0(int param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   abi_call_thunk_FUN_112747a0((undefined4)(param_1 + 0x134), (undefined4)(0), (undefined4)(0));
@@ -46226,7 +46226,7 @@ undefined4 * Recovered_1127d260::FUN_1127d260(undefined4 *param_2)
 // Reference entry 1127d7e0; body size 333 bytes.
 #line 1 "ENTRY_1127d7e0"
 
-void __fastcall FUN_1127d7e0(int *param_1)
+void __fastcall FUN_1127d7e0(int *param_1, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   int iVar1;
@@ -46666,7 +46666,7 @@ void Recovered_112803f0::FUN_112803f0(undefined4 param_2)
 
 
 
-void FUN_11282f70(void)
+void __stdcall FUN_11282f70(unsigned int recovered_unused_stack_0)
 
 {
   abi_call_thunk_FUN_112a8010((undefined4 *)(&DAT_122f5e94));

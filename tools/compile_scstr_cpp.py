@@ -109,6 +109,147 @@ def reference_stdcall(source):
     return source, changed
 
 
+def _call_arguments(source, opening):
+    """Top-level argument count for the call whose ``(`` sits at ``opening``.
+
+    ``None`` marks a call that cannot be safely redeclared: an unparseable
+    list or a variadic ``(...)`` declaration.
+    """
+    try:
+        close = call_end(source, opening)
+    except ValueError:
+        return None
+    text = source[opening + 1:close].strip()
+    if text in ('', 'void'):
+        return 0
+    if text == '...':
+        return None
+    depth = 0
+    quote = None
+    escaped = False
+    count = 1
+    for char in text:
+        if quote:
+            if escaped:
+                escaped = False
+            elif char == '\\':
+                escaped = True
+            elif char == quote:
+                quote = None
+        elif char in ('"', "'"):
+            quote = char
+        elif char in '([{':
+            depth += 1
+        elif char in ')]}':
+            depth -= 1
+        elif char == ',' and depth == 0:
+            count += 1
+    return count
+
+
+def reference_arity(source):
+    """Append the omitted stack arguments a single ``ret N`` proves.
+
+    Ghidra sometimes under-declares a free ``FUN_*``: the installed body cleans
+    more stack than the signature supplies. Like ``promote_stack_arity`` does for
+    members, the missing slots are appended as ``recovered_unused_stack_N`` so
+    MSVC emits the matching ``ret N``. A bare signature that needs extra stack
+    words also gains ``__stdcall`` (the proven callee-cleanup convention), and a
+    ``__fastcall`` signature keeps its two register slots so only the stack
+    argument count is grown. Any same-unit ``extern`` declaration is rewritten
+    to the new typed signature, and growth is skipped when a same-unit call site
+    already passes a different argument count (which would not compile).
+    """
+    try:
+        from capstone import Cs, CS_ARCH_X86, CS_MODE_32
+        from classify_functions import function_bytes
+        disassembler = Cs(CS_ARCH_X86, CS_MODE_32)
+        disassembler.detail = True
+        data, base, sections = _reference()
+    except Exception:
+        return source, 0
+    markers = list(ENTRY_MARKER.finditer(source))
+    # Index every FUN_<entry>( occurrence and every extern declaration once so
+    # same-unit call sites can be checked without rescanning for each candidate.
+    occurrences = {}
+    for call in re.finditer(r'\b(FUN_[0-9a-f]{8})\s*\(', source):
+        occurrences.setdefault(call.group(1), []).append(call.start())
+    extern = re.compile(
+        r'(?m)^extern\s+[A-Za-z_][\w\s\*]*?\s+(FUN_[0-9a-f]{8})\s*\([^;{}]*\)\s*;')
+    declarations = {}
+    for decl in extern.finditer(source):
+        declarations.setdefault(decl.group(1), []).append(
+            (decl.start(), decl.end(), decl.start() + decl.group(0).index(decl.group(1))))
+    edits = []
+    changed = 0
+    for index, marker in enumerate(markers):
+        entry, size = int(marker.group(1), 16), int(marker.group(2))
+        stop = markers[index + 1].start() if index + 1 < len(markers) else len(source)
+        block = source[marker.end():stop]
+        definition = FREE_DEFINITION.search(block)
+        if not definition or definition.group('name') != 'FUN_' + marker.group(1):
+            continue
+        result = ' '.join(definition.group('result').split())
+        if '::' in result or re.search(r'__(?:cdecl|thiscall)\b', result):
+            continue
+        fastcall = bool(re.search(r'__fastcall\b', result))
+        stdcall = bool(re.search(r'__stdcall\b', result))
+        if fastcall:
+            result = re.sub(r'\s*__fastcall\b', '', result).strip()
+            convention = '__fastcall'
+        elif stdcall:
+            result = re.sub(r'\s*__stdcall\b', '', result).strip()
+            convention = '__stdcall'
+        else:
+            convention = '__stdcall'
+        params = [p.strip() for p in definition.group('params').split(',')
+                  if p.strip() and p.strip() != 'void']
+        code = function_bytes(data, entry, size, base, sections)
+        pops = [int(i.operands[0].imm) if i.operands else 0
+                for i in disassembler.disasm(code, 0) if i.mnemonic == 'ret']
+        if len(pops) != 1 or pops[0] <= 0 or pops[0] % 4:
+            continue
+        need = pops[0] // 4
+        present = len(params)
+        # __fastcall reserves ecx/edx for the first two arguments; the stack
+        # holds the rest. Bare/__stdcall put every argument on the stack.
+        capacity = max(0, present - 2) if fastcall else present
+        if need <= capacity or need - capacity > 8:
+            continue
+        total = need + 2 if fastcall else need
+        extra = [f'unsigned int recovered_unused_stack_{i}'
+                 for i in range(present, total)]
+        new_params = ', '.join(params + extra)
+        # Growth is only safe when no same-unit call site would then pass a
+        # different argument count against the new typed declaration.
+        name = definition.group('name')
+        decls = declarations.get(name, [])
+        noncall = {marker.end() + definition.start('name')}
+        noncall.update(position for _, _, position in decls)
+        incompatible = False
+        for position in occurrences.get(name, []):
+            if position in noncall:
+                continue
+            nargs = _call_arguments(source, source.index('(', position))
+            if nargs is not None and nargs != total:
+                incompatible = True
+                break
+        if incompatible:
+            continue
+        rewritten = (result + ' ' + convention + ' ' + name +
+                     '(' + new_params + ')')
+        start = marker.end() + definition.start()
+        edits.append((start, start + len(definition.group(0)), rewritten))
+        changed += 1
+        typed = ('extern ' + result + ' ' + convention + ' ' + name +
+                 '(' + new_params + ');')
+        for decl_start, decl_end, _ in decls:
+            edits.append((decl_start, decl_end, typed))
+    for start, end, replacement in sorted(edits, key=lambda e: -e[0]):
+        source = source[:start] + replacement + source[end:]
+    return source, changed
+
+
 SCSTR = '''
 struct RefCounted {
     virtual void Reserved();
@@ -491,7 +632,7 @@ def cpp_source(records):
         scstr_class = SCSTR.replace('    ~SCStr();',
             '    ~SCStr() noexcept { int_release(); rep = 0; }')
     text = HEADER + DECLARATION_ALIASES + scstr_class + virtual_class + declarations + '\n' + member_declarations + '\n' + functions
-    return reference_stdcall(text)[0]
+    return reference_arity(reference_stdcall(text)[0])[0]
 
 
 def syntax(records, scratch):

@@ -9062,7 +9062,7 @@ return param_1;
 // Reference entry 10170c90; body size 108 bytes.
 #line 1 "ENTRY_10170c90"
 
-void FUN_10170c90(int *param_1,ushort *param_2)
+void __stdcall FUN_10170c90(int *param_1, ushort *param_2, unsigned int recovered_unused_stack_2)
 
 {
   undefined4 uStack_20;
