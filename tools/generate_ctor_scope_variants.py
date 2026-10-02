@@ -1323,6 +1323,54 @@ def wiz_state_variants():
         source_marker + '\n' + tail_common +
         'thunk_FUN_106dfa00((NativeWizSret *)&arg)->endsWith("Page");\n' +
         '((NativeWizSret *)&arg)->~NativeWizSret();\n' + tail_end)
+    # by-value SCStr param forwarded by value: MSVC treats the de0c0 pass as
+    # moving the rep out of the param slot (flag drops to 0), then the sret
+    # temp re-occupies [ebp+8] (flag rises to 1) — flag-gated funclet
+    move_klass = old_klass.replace(
+        'void thunk_FUN_106de0c0(RecoveredString_FUN_1008c50b *, void *);',
+        'void thunk_FUN_106de0c0(RecoveredString_FUN_1008c50b *, RecoveredString_FUN_1008c50b);') .replace(
+        'NativeWizState_FUN_1061e8b0(void *);',
+        'NativeWizState_FUN_1061e8b0(RecoveredString_FUN_1008c50b);')
+    out['wiz_byval_move'] = (
+        prefix.replace(old_klass, move_klass) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker.replace('void *arg', 'RecoveredString_FUN_1008c50b arg') + '\n' +
+        tail_common +
+        'thunk_FUN_106dfa00().endsWith("Page");\n' + tail_end)
+    # same by-value move but the sret result binds a named local — MSVC may
+    # still place it at the vacated [ebp+8] slot under the flag
+    out['wiz_byval_move_named'] = (
+        prefix.replace(old_klass, move_klass) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker.replace('void *arg', 'RecoveredString_FUN_1008c50b arg') + '\n' +
+        tail_common +
+        'RecoveredString_FUN_1008c50b s2 = thunk_FUN_106dfa00();\n'
+        's2.endsWith("Page");\n' + tail_end)
+    # by-value param whose slot is reconstructed in place by the out call:
+    # the flag distinguishes the original param from the callee-built object
+    out['wiz_move_out'] = (
+        prefix.replace(old_klass, sret_type + klass.replace(
+            'void thunk_FUN_106de0c0(RecoveredString_FUN_1008c50b *, void *);',
+            'void thunk_FUN_106de0c0(RecoveredString_FUN_1008c50b *, NativeWizSret);') .replace(
+            'NativeWizState_FUN_1061e8b0(void *);',
+            'NativeWizState_FUN_1061e8b0(NativeWizSret);')) +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker.replace('void *arg', 'NativeWizSret arg') + '\n' +
+        tail_common.replace('thunk_FUN_106de0c0(&name, arg)',
+                            'thunk_FUN_106de0c0(&name, arg)') +
+        'thunk_FUN_106dfa00(&arg)->endsWith("Page");\n' + tail_end)
+    # nested-scope temp: inner-block SCStr local after a dead scalar param —
+    # MSVC may co-locate it with the flag machinery at [ebp+8]
+    out['wiz_inner_scope'] = (
+        prefix +
+        '\n// Reference entry 1061e8b0; body size 194 bytes.\n'
+        '#line 1 "ENTRY_1061e8b0"\n' +
+        source_marker + '\n' + tail_common +
+        '{ RecoveredString_FUN_1008c50b s2 = thunk_FUN_106dfa00();\n'
+        '  s2.endsWith("Page"); }\n' + tail_end)
     return out
 
 

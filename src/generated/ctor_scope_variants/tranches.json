@@ -436,6 +436,22 @@
     "directory": "analysis/ctor-scope-wiz-outslot-chain"
   },
   {
+    "object": "wiz_byval_move_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-byval-move"
+  },
+  {
+    "object": "wiz_byval_move_named_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-byval-move-named"
+  },
+  {
+    "object": "wiz_move_out_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-move-out"
+  },
+  {
+    "object": "wiz_inner_scope_reference_flags",
+    "directory": "analysis/ctor-scope-wiz-inner-scope"
+  },
+  {
     "object": "copier_named_reference_flags",
     "directory": "analysis/ctor-scope-copier-named"
   },
