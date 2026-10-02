@@ -157,15 +157,17 @@ struct NativeCopierOutput { NativeCopierOutput *FUN_10df9390(); NativeCopierOutp
 
 extern int thunk_FUN_10defac0(...);
 
-struct NativeCopierOutputC { NativeCopierOutputC *FUN_10df9390() const; };
-struct CopierWrapMember0c { NativeCopierAggregate_FUN_10deee60 agg;
-  CopierWrapMember0c(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };
+struct NativeCopierVRoot { virtual ~NativeCopierVRoot() {} };
+struct NativeCopierVBase : virtual NativeCopierVRoot {
+  NativeCopierVBase *FUN_10df9390(); };
+struct CopierWrapMember0b { NativeCopierAggregate_FUN_10deee60 agg;
+  CopierWrapMember0b(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };
 
 // Reference entry 10df9390; body size 137 bytes.
 #line 1 "ENTRY_10df9390"
-NativeCopierOutputC *NativeCopierOutputC::FUN_10df9390() const {
+NativeCopierVBase *NativeCopierVBase::FUN_10df9390() {
 NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(
-    (NativeCopierOutput *)const_cast<NativeCopierOutputC *>(this),
-    CopierWrapMember0c(NativeCopierSource_FUN_10df9440()).agg);
-return const_cast<NativeCopierOutputC *>(this);
+    (NativeCopierOutput *)this,
+    CopierWrapMember0b(NativeCopierSource_FUN_10df9440()).agg);
+return this;
 }

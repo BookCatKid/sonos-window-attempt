@@ -2441,7 +2441,7 @@ def event_copier_variants():
             '  CopierWrapMember0vm(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
             'NativeCopierOutputVm *NativeCopierOutputVm::FUN_10df9390() volatile {',
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
-            '    const_cast<NativeCopierOutput *>((NativeCopierOutputVm *)this),\n'
+            '    (NativeCopierOutput *)const_cast<NativeCopierOutputVm *>(this),\n'
             '    CopierWrapMember0vm(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return const_cast<NativeCopierOutputVm *>(this);\n'),
         # dllexport class: exported member fns may get extra this handling
@@ -2477,9 +2477,37 @@ def event_copier_variants():
             '  CopierWrapMember0c(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
             'NativeCopierOutputC *NativeCopierOutputC::FUN_10df9390() const {',
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
-            '    const_cast<NativeCopierOutput *>((const NativeCopierOutputC *)this),\n'
+            '    (NativeCopierOutput *)const_cast<NativeCopierOutputC *>(this),\n'
             '    CopierWrapMember0c(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return const_cast<NativeCopierOutputC *>(this);\n'),
+        # class virtually inherits a base — MSVC may home this early for
+        # vbptr/funclet handling even in a method without tracked members
+        'copier_wm0_vbase': (
+            prefix +
+            'struct NativeCopierVRoot { virtual ~NativeCopierVRoot() {} };\n'
+            'struct NativeCopierVBase : virtual NativeCopierVRoot {\n'
+            '  NativeCopierVBase *FUN_10df9390(); };\n'
+            'struct CopierWrapMember0b { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0b(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            'NativeCopierVBase *NativeCopierVBase::FUN_10df9390() {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierOutput *)this,\n'
+            '    CopierWrapMember0b(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # this passed via a base-class-typed param: thunk takes SCIEventSink*
+        # and 'this' must convert — MSVC may materialize the conversion
+        'copier_wm0_basecast': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'struct NativeCopierSink;\n'
+                'void thunk_FUN_10defac0(NativeCopierSink *, NativeCopierAggregate_FUN_10deee60 &)') +
+            'struct CopierWrapMember0bc { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0bc(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            'NativeCopierOutput *NativeCopierOutput::FUN_10df9390() {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierSink *)this,\n'
+            '    CopierWrapMember0bc(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
         # volatile self but split decl from assign: assignment is a separate
         # statement MSVC emits before the expression arg eval
         'copier_wm0_sep': (

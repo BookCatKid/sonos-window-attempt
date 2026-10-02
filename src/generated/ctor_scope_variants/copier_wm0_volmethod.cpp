@@ -165,7 +165,7 @@ struct CopierWrapMember0vm { NativeCopierAggregate_FUN_10deee60 agg;
 #line 1 "ENTRY_10df9390"
 NativeCopierOutputVm *NativeCopierOutputVm::FUN_10df9390() volatile {
 NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(
-    const_cast<NativeCopierOutput *>((NativeCopierOutputVm *)this),
+    (NativeCopierOutput *)const_cast<NativeCopierOutputVm *>(this),
     CopierWrapMember0vm(NativeCopierSource_FUN_10df9440()).agg);
 return const_cast<NativeCopierOutputVm *>(this);
 }

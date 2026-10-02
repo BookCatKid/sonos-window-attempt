@@ -844,6 +844,14 @@
     "directory": "analysis/ctor-scope-copier-wm0-const"
   },
   {
+    "object": "copier_wm0_vbase_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-vbase"
+  },
+  {
+    "object": "copier_wm0_basecast_reference_flags",
+    "directory": "analysis/ctor-scope-copier-wm0-basecast"
+  },
+  {
     "object": "copier_wm0_sep_reference_flags",
     "directory": "analysis/ctor-scope-copier-wm0-sep"
   },
