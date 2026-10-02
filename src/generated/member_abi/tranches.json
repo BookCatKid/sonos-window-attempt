@@ -288,10 +288,6 @@
     "directory": "analysis/compiled-cpp-page-factories"
   },
   {
-    "object": "named_event_callbacks_reference_flags",
-    "directory": "analysis/compiled-cpp-named-event-callbacks"
-  },
-  {
     "object": "op_impl_dtors_reference_flags",
     "directory": "analysis/compiled-cpp-op-impl-dtors"
   },
@@ -314,5 +310,9 @@
   {
     "object": "op_impl_ctors_reference_flags",
     "directory": "analysis/compiled-cpp-op-impl-ctors"
+  },
+  {
+    "object": "named_event_callbacks_reference_flags",
+    "directory": "analysis/compiled-cpp-named-event-callbacks"
   }
 ]

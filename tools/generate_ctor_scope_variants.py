@@ -1858,8 +1858,16 @@ def ltcgize(text, keep_extern=()):
     undefined in this TU — they are supplied by a paired TU_B source so the
     frontend emits a real construction-call scope for a callee whose body is
     invisible at IL emission."""
-    # extern globals -> definitions
-    text = re.sub(r'extern unsigned int (\w+);', r'unsigned int \1 = 0;', text)
+    # extern globals -> definitions (first declaration only; later duplicate
+    # extern decls stay as declarations so the redefinition is legal)
+    defined_globals = set()
+    def _global_def(match):
+        name = match.group(1)
+        if name in defined_globals:
+            return match.group(0)
+        defined_globals.add(name)
+        return f'unsigned int {name} = 0;'
+    text = re.sub(r'extern unsigned int (\w+);', _global_def, text)
     text = re.sub(r'extern int (\w+)\(\.\.\.\);\s*\n', '', text)
     # typed free-function decls -> keep decl + emit a stub def
     stubs = []
