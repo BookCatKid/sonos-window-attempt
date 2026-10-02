@@ -367,3 +367,37 @@ forwarded value arguments there. Recover native stack cleanup alongside those
 prototypes, then emit genuine derived event values and scoped property keys.
 Linker alignment/reservation padding is another candidate for independently
 verified compiler/linker coverage. Full-file identity remains the objective.
+
+## MSVC scheduler wall on named_event 10e026f0 / wiz_state 1061e420 (codex/bulk-member-abi)
+
+Deep probe matrix (~100 source idioms under pinned MSVC 14.28 x86, runs
+37021154459/37021731696/37022141046/37022667454/37022986857/37023564629)
+narrowed both residuals to the same root cause: MSVC instruction scheduling of
+the EH state-arm and callee-saved pointer pinning, not a missing source feature.
+
+named_event 10e026f0 (native 149B): the body must be
+`lea ecx,[ebp-0x28]; call ctor; mov esi,eax; push; lea; mov[ebp-4],0; call`.
+`pe=&event` and `event.`+`&event` both fold `&event` to a lea/frame slot — no
+`mov esi,eax`, no `edi` (confirmed by ne_iso_pe/ne_iso_direct probes). Only a
+call-result pointer (`pe = new(&u.e) Ev()` into a member-dtor union
+`named_event_slot_guard`/`refnew`, or `pe=event.self()` `named_event_selfm`)
+produces `edi`=this + `mov esi,eax` + `[esi+8]` — but MSVC arms the tracked
+union/decl state BEFORE the call and schedules `esi=eax` lazily, while native
+arms AFTER. slot_guard is the closest at 16 masked diffs but its inlined
+`RecoveredString` ctor also mismatches the native out-of-line `0x1005273e`
+reloc target (the `_outctor` variant fixes the target but the different ctor
+reschedules the tail to 81 diffs). These are contradictory constraints under
+source-only control; the native source likely used a construct (factory /
+self-returning construction / macro) whose lowering MSVC scheduled differently.
+
+wiz_state 1061e420 (ret-8): `wiz8_inplace` reached 30 masked diffs — the ret-8
+param slots correctly host name→[ebp+8] and the dedicated flag word@[ebp-0x10]
+(0->1), and the `_outctor` variant made the name ctor an out-of-line call
+matching native `0x1005273e`. Residual: arm-state ordering (gen arms before
+the name ctor, native after) and EH state numbering (gen 0,1,2,5 vs nat
+0,3,2,4,5), i.e. a different EH object graph for the `?:`/sret temps.
+
+Neither residual blocks correctness/semantics — only byte identity. Options:
+(a) keep searching MSVC-idiom space (diminishing returns), (b) accept
+structural parity for these two tranches, or (c) pivot to bulk .text coverage
+where the byte mass is.
