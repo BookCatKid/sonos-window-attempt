@@ -2128,6 +2128,29 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
             '    &NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'
             'return this;\n'),
+        # nested temps where the agg prvalue is explicitly cast to const&:
+        # binding a prvalue to a reference materializes it as a slot object
+        # whose address remats (lea ecx,$T) while keeping full-expression
+        # lifetime so the inner Source temp still dies at the tail
+        'copier_nested_bcref': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)'),
+            sig,
+            head +
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    static_cast<const NativeCopierAggregate_FUN_10deee60 &>(\n'
+            '        NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440())));\n'
+            'return this;\n'),
+        # non-const ref cast (MSVC C4238 extension accepts binding a prvalue)
+        'copier_nested_bref': (
+            prefix,
+            sig,
+            head +
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    static_cast<NativeCopierAggregate_FUN_10deee60 &>(\n'
+            '        NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440())));\n'
+            'return this;\n'),
         # nested temps where the agg temp is the right operand of a comma:
         # the temp is still expression-lived but its address may no longer
         # be the bound call result
@@ -2345,7 +2368,8 @@ def main():
                  'copier_bound_nested', 'copier_named_novol',
                  'copier_nested_cref', 'copier_bound_src_nested',
                  'copier_named_src_nested', 'copier_nested_rref',
-                 'copier_lambda_agg', 'copier_nested_ptr'):
+                 'copier_lambda_agg', 'copier_nested_ptr',
+                 'copier_nested_bcref', 'copier_nested_bref'):
         (ltcg_dir / (name + '_ltcg.cpp')).write_text(
             ltcgize((VARIANTS / (name + '.cpp')).read_text()))
     # Two-TU probes: the member ctor stays DECLARED-ONLY in TU_A so the
