@@ -1108,6 +1108,21 @@ def named_event_variants():
             'NativeNamedEvent_FUN_10df9440 thunk_FUN_makeEvent();\n',
             'NativeNamedEvent_FUN_10df9440 event = thunk_FUN_makeEvent();\n'
             'NativeNamedEvent_FUN_10df9440 *pe = &event;\n'),
+        # untracked union storage + pe=new (eager esi=eax), then a tracked
+        # guard declared AFTER the new: its state arms post-call like native,
+        # and its dtor destructs the event member (funclet) — key question is
+        # whether MSVC elides the guard's member store.
+        'named_event_guardlate': (
+            ctor_decl +
+            'union NativeEventSlot { void *p0,*p1,*p2,*p3,*p4,*p5;\n'
+            'NativeNamedEvent_FUN_10df9440 e; };\n'
+            'struct NativeEventGuard { NativeNamedEvent_FUN_10df9440 *p;\n'
+            'NativeEventGuard(NativeNamedEvent_FUN_10df9440 *q):p(q){}\n'
+            '~NativeEventGuard(){ p->~NativeNamedEvent_FUN_10df9440(); } };\n',
+            'NativeEventSlot u;\n'
+            'NativeNamedEvent_FUN_10df9440 *pe = (NativeNamedEvent_FUN_10df9440 *)\n'
+            '    new (&u.e) NativeNamedEvent_FUN_10df9440();\n'
+            'NativeEventGuard g(pe);\n'),
     }
     # Variants suffixed `_outctor` force the RecoveredString const-char* ctor
     # out-of-line: native calls 0x1005273e (the real ctor) rather than inlining
