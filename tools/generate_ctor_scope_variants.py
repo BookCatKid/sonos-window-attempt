@@ -1833,6 +1833,68 @@ def event_copier_variants():
             'NativeCopierAggregate_FUN_10deee60 agg(a);\n'
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
             '    (NativeCopierOutput *)this, agg);\n'),
+        # address-of-temp for the agg arg: &Aggregate(Source()) may
+        # rematerialize the temp slot via lea instead of pinning the ctor
+        # eax into esi — which would leave esi for this
+        'copier_ctor_ptr': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 *)') +
+            'struct NativeCopierCtor { NativeCopierCtor(); };\n',
+            'NativeCopierCtor::NativeCopierCtor() {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierOutput *)this,\n'
+            '    &NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'),
+        # nested temps where the ctor class has a plain data member: tests
+        # whether a membered (but trivially-initialized) class triggers the
+        # ctor _this$ spill that native shows at [ebp-0x10]
+        'copier_ctor_nested_mem': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)') +
+            'struct NativeCopierCtor { void *vftable; NativeCopierCtor(); };\n',
+            'NativeCopierCtor::NativeCopierCtor() {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierOutput *)this,\n'
+            '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'),
+        # nested temps where the ctor class declares a nontrivial dtor:
+        # MSVC may emit the _this$ spill for unwind-time full-object
+        # destruction even though the body never constructs members
+        'copier_ctor_nested_dtor': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)') +
+            'struct NativeCopierCtor { ~NativeCopierCtor(); NativeCopierCtor(); };\n',
+            'NativeCopierCtor::NativeCopierCtor() {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierOutput *)this,\n'
+            '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'),
+        # nested temps where the agg temp is bound through an explicit
+        # const-ref cast: bound temps rematerialize their slot (lea) rather
+        # than pinning the ctor eax, which may leave esi for this
+        'copier_ctor_nested_cref': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)') +
+            'struct NativeCopierCtor { NativeCopierCtor(); };\n',
+            'NativeCopierCtor::NativeCopierCtor() {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierOutput *)this,\n'
+            '    static_cast<const NativeCopierAggregate_FUN_10deee60 &>(\n'
+            '        NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440())));\n'),
+        # nested temps where the agg temp is the right operand of a comma:
+        # the temp is still expression-lived but its address may no longer
+        # be the bound call result
+        'copier_ctor_nested_comma': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const NativeCopierAggregate_FUN_10deee60 &)') +
+            'struct NativeCopierCtor { NativeCopierCtor(); };\n',
+            'NativeCopierCtor::NativeCopierCtor() {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierOutput *)this,\n'
+            '    (0,\n'
+            '     NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440())));\n'),
     }
     out = {}
     for name, spec in variants.items():
