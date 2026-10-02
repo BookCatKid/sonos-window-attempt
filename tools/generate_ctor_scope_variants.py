@@ -2010,6 +2010,44 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
             '    self,\n'
             '    NativeCopierAggregate_FUN_10deee60(NativeCopierSource_FUN_10df9440()));\n'),
+        # member access on the temp: passing Aggregate(Source()).fields makes
+        # the temp a memory object — MSVC rematerializes its slot address
+        # (lea ecx,[ebp-N]) instead of pinning the ctor eax in a register
+        'copier_member_arg': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const EventCopy_thunk_FUN_10deea50 &)'),
+            sig,
+            head +
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    NativeCopierAggregate_FUN_10deee60(\n'
+            '        NativeCopierSource_FUN_10df9440()).fields);\n'
+            'return this;\n'),
+        # conversion operator: the temp is whole but an inlined conv-op
+        # folds to member access, which may remat the slot
+        'copier_convop_arg': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const EventCopy_thunk_FUN_10deea50 &)').replace(
+                'struct NativeCopierAggregate_FUN_10deee60 { EventCopy_thunk_FUN_10deea50 fields;',
+                'struct NativeCopierAggregate_FUN_10deee60 { operator const EventCopy_thunk_FUN_10deea50 &() { return fields; } EventCopy_thunk_FUN_10deea50 fields;'),
+            sig,
+            head +
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    NativeCopierAggregate_FUN_10deee60(\n'
+            '        NativeCopierSource_FUN_10df9440()));\n'
+            'return this;\n'),
+        # address-of-temp to a pointer param: &temp may remat as lea
+        'copier_addr_arg': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput *, const void *)'),
+            sig,
+            head +
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    &NativeCopierAggregate_FUN_10deee60(\n'
+            '        NativeCopierSource_FUN_10df9440()));\n'
+            'return this;\n'),
         # nested temps where the agg temp is the right operand of a comma:
         # the temp is still expression-lived but its address may no longer
         # be the bound call result
