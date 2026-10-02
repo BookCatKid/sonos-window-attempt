@@ -2604,6 +2604,43 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(p,\n'
             '    CopierWrapMember0al(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return p;\n'),
+        # class with a user-declared dtor — non-POD this may be homed so the
+        # EH funclets can reacquire it
+        'copier_wm0_dtor': (
+            prefix +
+            'struct NativeCopierOutputD { ~NativeCopierOutputD();\n'
+            '  NativeCopierOutputD *FUN_10df9390(); };\n'
+            'NativeCopierOutputD::~NativeCopierOutputD() {}\n'
+            'struct CopierWrapMember0d { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0d(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            'NativeCopierOutputD *NativeCopierOutputD::FUN_10df9390() {',
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(\n'
+            '    (NativeCopierOutput *)this,\n'
+            '    CopierWrapMember0d(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # member fn that passes this to a callee which could re-enter/throw:
+        # this wrapped in a guard object that needs materialization
+        'copier_wm0_thisref': (
+            prefix.replace(
+                'void thunk_FUN_10defac0(NativeCopierOutput *, NativeCopierAggregate_FUN_10deee60 &)',
+                'void thunk_FUN_10defac0(NativeCopierOutput * const &, NativeCopierAggregate_FUN_10deee60 &)') +
+            'struct CopierWrapMember0tr { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0tr(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
+            '    CopierWrapMember0tr(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # this returned through a static_cast — a cast expression may
+        # materialize this
+        'copier_wm0_scast': (
+            prefix +
+            'struct CopierWrapMember0sc { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0sc(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'NativeCopierOutput *self = static_cast<NativeCopierOutput *>(this);\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(self,\n'
+            '    CopierWrapMember0sc(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return self;\n'),
     }
     out = {}
     for name, spec in variants.items():
