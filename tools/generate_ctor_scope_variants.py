@@ -2956,6 +2956,31 @@ def event_copier_variants():
             'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(this,\n'
             '    CopierWrapMember0bd(NativeCopierSource_FUN_10df9440()).agg);\n'
             'return this;\n'),
+        # keep(this) then thunk(keep.p_, agg) — keep stays "used" via member
+        # read that folds to this, leaving the ctor-init store dead-looking
+        'copier_wm0_keeploc_use': (
+            prefix +
+            'struct SCPKeepAliveU { NativeCopierOutput *p_;\n'
+            '  SCPKeepAliveU(NativeCopierOutput *p) : p_(p) {} };\n'
+            'struct CopierWrapMember0ku { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0ku(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'SCPKeepAliveU keep(this);\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(keep.p_,\n'
+            '    CopierWrapMember0ku(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
+        # a 4-byte owner/context local assigned then member-read by thunk
+        'copier_wm0_ownerloc': (
+            prefix +
+            'struct SCPKeepAliveO { NativeCopierOutput *owner;\n'
+            '  SCPKeepAliveO(NativeCopierOutput *o) : owner(o) {} };\n'
+            'struct CopierWrapMember0ol { NativeCopierAggregate_FUN_10deee60 agg;\n'
+            '  CopierWrapMember0ol(const NativeCopierSource_FUN_10df9440 &s) : agg(s) {} };\n',
+            sig,
+            'SCPKeepAliveO ctx(this);\n'
+            'NativeCopierEvent_FUN_10df9510().thunk_FUN_10defac0(ctx.owner,\n'
+            '    CopierWrapMember0ol(NativeCopierSource_FUN_10df9440()).agg);\n'
+            'return this;\n'),
         # member helper inlined on this: this->h_(this)
         'copier_wm0_ihelp_m': (
             prefix.replace(
