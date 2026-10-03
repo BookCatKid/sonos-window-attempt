@@ -160,7 +160,13 @@ def generated_symbol_name(name):
     # reference's own member symbols: ?method@Class@@sig and ?field@Class@@3T.
     # Their logical name is the qualified Class::leaf form, which the symbol
     # table indexes with every overload's concrete address.
-    match = re.match(r'\?([A-Za-z_]\w*)@((?:[A-Za-z_]\w*@)+)', name)
+    match = re.match(r'\?+\$([A-Za-z_]\w*)@', name)
+    if match:
+        # ??$name@targs@class@@sig: the class qualifier closes the name section.
+        cls = re.findall(r'@([A-Za-z_]\w*)@@', name)
+        if cls:
+            return cls[-1] + '::' + match.group(1)
+    match = re.match(r'\?([A-Za-z_]\w*)@((?:[A-Za-z_]\w*@?)+?)@@', name)
     if match:
         classes = [part for part in match.group(2).split('@') if part]
         return '::'.join(reversed(classes)) + '::' + match.group(1)

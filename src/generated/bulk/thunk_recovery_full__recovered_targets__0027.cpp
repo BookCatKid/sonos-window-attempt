@@ -348,7 +348,7 @@ extern undefined1 LAB_117c4a43[];
 extern int *PTR_s_DOWNLOAD_1211eed0;
 extern int *stack0xfffffffc;
 extern void *ExceptionList;
-struct RBrowseCacheMgr { char _pad; RBrowseCacheMgr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int browse(...); };
+struct RBrowseCacheMgr { char _pad; RBrowseCacheMgr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class... A> int browse(A...); };
 typedef void *E9;
 typedef void *SWF;
 typedef void *WARNING;

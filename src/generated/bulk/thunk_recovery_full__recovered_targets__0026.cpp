@@ -468,7 +468,7 @@ extern int *stack0xfffffffc;
 extern char s_STATION_119318b8[];
 extern char s_UNKNOWN_1189488c[];
 extern void *ExceptionList;
-struct RAsyncBrowseCacheMgr { char _pad; RAsyncBrowseCacheMgr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int browse(...); };
+struct RAsyncBrowseCacheMgr { char _pad; RAsyncBrowseCacheMgr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class... A> int browse(A...); };
 typedef void *A;
 typedef void *ALBUM;
 typedef void *ALBUMARTIST;

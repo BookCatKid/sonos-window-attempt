@@ -670,7 +670,8 @@ def cpp_source(records, defined, bad_decls=()):
     fcalls = member_stubs.get('__fcall__', set())
     fields = member_stubs.get('__fields__', set()) - fcalls
     field_decls = (''.join(f' int {f};' for f in sorted(fields) if f.isidentifier()) +
-                   ''.join(f' int {f}(...);' for f in sorted(fcalls) if f.isidentifier()))
+                   ''.join(f' template<class... A> int {f}(A...);'
+                           for f in sorted(fcalls) if f.isidentifier()))
 
     ops = (' template<class T> int operator==(T);'
            ' template<class T> int operator!=(T);'
@@ -691,8 +692,8 @@ def cpp_source(records, defined, bad_decls=()):
 
     def emit_tree(node):
         methods = node.get('__methods__', set())
-        inner = ''.join(f' int {method}(...);' for method in sorted(methods)
-                        if method.isidentifier())
+        inner = ''.join(f' template<class... A> int {method}(A...);'
+                        for method in sorted(methods) if method.isidentifier())
         inner += ''.join(f' static int {leaf};'
                          for leaf in sorted(set(node.get('__leaves__', ())) - methods)
                          if leaf.isidentifier())

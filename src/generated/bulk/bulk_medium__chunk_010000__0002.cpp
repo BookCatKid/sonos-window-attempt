@@ -544,7 +544,7 @@ extern undefined1 LAB_1179a320[];
 extern int *PTR_DAT_1211a5d0;
 extern int *stack0xfffffffc;
 extern void *ExceptionList;
-struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int append(...); int format(...); int int_allocRep(...); int op_eq(...); int op_lt(...); int utf8_length(...); };
+struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class... A> int append(A...); template<class... A> int format(A...); template<class... A> int int_allocRep(A...); template<class... A> int op_eq(A...); template<class... A> int op_lt(A...); template<class... A> int utf8_length(A...); };
 typedef void *F;
 typedef void *LOCK;
 typedef void *SHUFFLE;
