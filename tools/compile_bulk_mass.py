@@ -77,6 +77,7 @@ typedef int FILE;
 typedef unsigned long DWORD;
 typedef unsigned short WORD;
 typedef unsigned char BYTE;
+typedef unsigned char uchar;
 typedef int BOOL;
 typedef void *HANDLE;
 typedef void *LPVOID;
@@ -209,9 +210,10 @@ def _scan_qualified_name(text, start):
                 part = 'op_' + sym
                 pos = pos2
             else:
-                m = re.match(r'[+\-*/<>=!&|%^~\[\]()]+', text[pos2:])
+                m = re.match(r'->\*|->|\[\]|\(\)|[+\-*/<>=!&|%^~]+',
+                             text[pos2:])
                 if m:
-                    part = 'op_' + re.sub(r'[^A-Za-z0-9]', '', str(ord(c) for c in m.group(0)) or 'x')
+                    part = _OP_TAGS.get(m.group(0), 'op_x')
                     pos = pos2 + len(m.group(0))
         templated = False
         if pos < len(text) and text[pos] == '<':
@@ -378,6 +380,13 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
         member_methods = {}
     """Return a C++-compilable form of one Ghidra definition."""
     source = re.sub(r'>\s*_+', '>', source)
+    # Ghidra spells multiword types with underscores inside template args and
+    # declarations (``_Tree_simple_types<unsigned_int>``).
+    source = re.sub(r'\b(unsigned|signed)_long_long_?\b',
+                    r'\1 long long', source)
+    source = re.sub(
+        r'\b(unsigned|signed)_(int|char|short|long|float|double)_?\b',
+        r'\1 \2', source)
     body_start = source.find('{')
     head, body = source[:body_start], source[body_start:]
     body = _pcode(body)
@@ -429,13 +438,19 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
                 pos = tail
             else:
                 stub_name = qualifier
+                # ``<...>`` arguments are not kept in ``qualifier``; detect
+                # them in the raw name instead.
+                was_templated = '<' in body[start:tail]
                 while '<' in stub_name:
                     stub_name = re.sub(r'<[^<>]*>', '', stub_name)
-                # X::~X(this) and X::X(this) are dtor/ctor invocations; emit
+                if was_templated:
+                    # The stub struct is emitted as `template<class...>`; a
+                    # bare name in the this-cast would be a template-id error.
+                    stub_name += '<>'
                 # them through identifier-legal member names the resolver maps
                 # back to X::~X / X::X.
-                call_leaf = ('op_ctor' if leaf == stub_name.split('::')[-1]
-                             else leaf)
+                call_leaf = ('op_ctor' if leaf == stub_name.split(
+                                '::')[-1].split('<')[0] else leaf)
                 member_methods.setdefault(qualifier, set()).add(call_leaf)
                 open_paren = tail
                 close_paren = _balanced(body, open_paren, '(', ')')
@@ -444,6 +459,10 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
                     pos = tail
                     continue
                 inner = body[open_paren + 1:close_paren]
+                # The scan jumps past the call arguments; `std::X` names
+                # used inside them still need std members/typedefs.
+                for argname in re.findall(r'\bstd::(\w+)\b', inner):
+                    member_stubs.setdefault('std', set()).add(argname)
                 depth = 0
                 first_comma = -1
                 for index, char in enumerate(inner):
@@ -487,9 +506,13 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
                     out.append(flat if before.endswith('&') else f'(uint)&{flat}')
                 else:
                     stub_name = qualifier
+                    was_templated = '<' in stub_name
                     while '<' in stub_name:
                         stub_name = re.sub(r'<[^<>]*>', '', stub_name)
-                    if leaf == 'op_dtor' or leaf == stub_name.split('::')[-1]:
+                    if was_templated:
+                        stub_name += '<>'
+                    if leaf == 'op_dtor' or leaf == stub_name.split(
+                            '::')[-1].split('<')[0]:
                         # X::~X / X::X as a value is Ghidra's rendering of a
                         # dtor/ctor function pointer (&eh_vector iterator arg).
                         member_methods.setdefault(qualifier, set()).add(
@@ -553,7 +576,10 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
             type_stubs.add(('struct', 'std_' + name))
     for match in re.finditer(r'\b([a-z_]\w*)\s*<[^(){};=]*>(?=\s*[*&])',
                              head + result_body):
-        type_stubs.add(('template', match.group(1)))
+        name = match.group(1)
+        if not re.search(r'\bstd::\s*' + re.escape(name) + r'\b',
+                         head + result_body):
+            type_stubs.add(('template', name))
     whole = head + result_body
     for symbol in SYMBOL_RE.findall(whole):
         bare = symbol.lstrip('_')
@@ -582,13 +608,29 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
         if name in KEYWORDS or re.match(r'^(FUN_|DAT_|PTR_|LAB_|Stub_|Ext_|ExceptionList|CONCAT|ZEXT|SEXT|SUB|CARRY|SCARRY|BORROW|unaff_|in_|stack0x|s_)', name):
             continue
         type_stubs.add(('struct' if re.search(r'[a-z]', name) else 'ptr', name))
+    # Capitalized template uses (`SCITearOffObjImpl<SCIObj,SCIPropertyBag> *p`)
+    # need template stubs, not the plain struct the scan above would emit.
+    # Skip names that exist under namespace std: a global twin would be
+    # ambiguous under `using namespace std`.
+    for name in re.findall(r'(?<![\w:])([A-Z]\w*)\s*<[^(){};=]*>(?=\s*[*&])',
+                           whole):
+        if not re.search(r'\bstd::\s*' + re.escape(name) + r'\b', whole):
+            type_stubs.add(('template', name))
     # Ghidra function-pointer typedefs (_func_4879) start with '_' so the
     # capitalized-name scan misses them.
     for name in re.findall(r'\b(_func_\w+)\b', whole):
         type_stubs.add(('ptr', name))
-    # _Capitalized enum/typedef names used in casts ((  _SCFixedSCUriID)&x).
-    for name in re.findall(r'\(\s*(_[A-Z]\w+)\s*\)', whole):
-        type_stubs.add(('ptr', name))
+    # _Capitalized enum/typedef names (_SCFixedSCUriID, _PtFuncCompare) need
+    # typedef stubs wherever they appear, not only in cast position; skip
+    # names the body declares as variables so the typedef never shadows a
+    # real declaration.
+    _declared = set(_varmap(whole))
+    for name in re.findall(r'\b(_[A-Z]\w+)\b', whole):
+        if name not in _declared and name not in extern_names:
+            type_stubs.add(('ptr', name))
+    # `_sm_*` is Ghidra's static-class-member naming; treat as data externs.
+    for name in re.findall(r'\b(_sm_\w+)\b', whole):
+        externs.add(('data', name))
     whole = re.sub(r'\bthis\b', 'this_', whole)
     head_end = whole.find('{')
     sig = whole[:head_end]
@@ -635,6 +677,9 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
     # take the address first so the cast is legal.
     body_part = re.sub(r'(\(\s*code\b[^)]*\*+\s*\)\s*)(LAB_\w+)', r'\1&\2',
                        body_part)
+    # `(LAB_x)(args)` calls a code label as a function; cast it to `code *`.
+    body_part = re.sub(r'(?<![&*\w)])(LAB_\w+)\s*\(',
+                       r'((code *)\1)(', body_part)
     # `(*(int *)(X))(args)` calls the dereferenced value as a function; the
     # target is code so retype the pointer as `code *` for the same call [mem].
     body_part = re.sub(r'\(\s*\*\s*\((?:u?int|undefined4|void|long|short|char)\s*\*+\s*\)'
@@ -654,7 +699,21 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
     # __readfsdword intrinsic reproduces the exact segment-load instruction.
     body_part = re.sub(r'\bThreadLocalStoragePointer\b',
                        '((void *)__readfsdword(0x18))', body_part)
-    return _rename_definition(head_part + body_part, entry)
+    # Names emitted as `template<class...> struct X` cannot be used bare;
+    # give unqualified non-template-id uses an empty argument list. Runs last
+    # so casts added by _fix_types are covered too.
+    _tmpl_names = {name for kind, name in type_stubs
+                   if kind in ('template', 'nstemplate')}
+    # ``std::X`` is also reachable as bare ``X`` once the part's
+    # ``using namespace std`` takes effect.
+    _tmpl_names |= {name.split('::')[-1] for name in _tmpl_names}
+    assembled = head_part + body_part
+    for name in sorted(_tmpl_names, key=len, reverse=True):
+        if name in _declared:
+            continue
+        assembled = re.sub(r'(?<![\w:])' + re.escape(name) + r'\b(?!\s*<)',
+                           name + '<>', assembled)
+    return _rename_definition(assembled, entry)
 
 
 def _eh_wrap(body):
@@ -831,7 +890,8 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
     # `T *name = rhs;` declaration-initializers (`*` blocks the name regex below)
     body = re.sub(
         r'^\s*([A-Za-z_][\w:<>]*(?:\s*\*+\s*)+)([A-Za-z_]\w*)\s*=(?![=])\s*((?:(?!\b(?:goto|return|break|continue|case|default|else|do|switch|if|while|for)\b)[^;{}])*);',
-        lambda m: f'{m.group(1)}{m.group(2)} = '
+        lambda m: m.group(0) if ':' in m.group(1).replace('::', '') else
+                  f'{m.group(1)}{m.group(2)} = '
                   f'({m.group(1).strip()})({m.group(3).strip()[:c]})'
                   f'{m.group(3).strip()[c:]};'
                   if (c := top_comma(m.group(3).strip())) >= 0 else
@@ -850,9 +910,9 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
     for name, target in varmap.items():
         if not target.rstrip().endswith('*'):
             continue
-        body = re.sub(r'(\b' + re.escape(name) + r'\s*[!=]=\s*)(&?\s*[A-Za-z_]\w*)',
+        body = re.sub(r'(?<![*&])(\b' + re.escape(name) + r'\s*[!=]=\s*)(?<![*&])(&?\s*[A-Za-z_]\w*)',
                       lambda m: m.group(1) + f'({target})({m.group(2).replace(" ", "")})', body)
-        body = re.sub(r'(&?\s*\b[A-Za-z_]\w*)\s*([!=]=)\s*(\b' + re.escape(name) + r'\b)',
+        body = re.sub(r'(?<![*&])(&?\s*\b[A-Za-z_]\w*)\s*([!=]=)\s*(?<![*&])(\b' + re.escape(name) + r'\b)',
                       lambda m: f'({target})({m.group(1).replace(" ", "")}) {m.group(2)} {m.group(3)}', body)
     # `(T *)expr op operand` and `operand op (T *)expr`: the pointer side is
     # explicit; cast the other operand to the same type. When that operand is
@@ -1037,6 +1097,18 @@ def cpp_source(records, defined, bad_decls=()):
             f'// Reference entry {record["entry"]}; body size {record["body_bytes"]} bytes.\n'
             f'#line 1 "ENTRY_{record["entry"]}"\n'
             f'{definition}')
+    # Gate bisection can drop a callee after callers were transformed under
+    # the assumption it would be defined here; give those dangling FUN_
+    # references a variadic extern so the part still compiles.
+    defined_here = set()
+    for sig_text in forward:
+        head_name = re.search(r'([A-Za-z_]\w*)\s*\(', sig_text)
+        if head_name:
+            defined_here.add(head_name.group(1))
+    extern_names = {name for _, name in externs}
+    used = set(re.findall(r'\b(?:thunk_)?FUN_\w+\b', ''.join(definitions)))
+    for name in sorted(used - defined_here - extern_names):
+        externs.add(('call', name))
     decls = []
     for kind, name in sorted(externs):
         if kind == 'call':
@@ -1099,39 +1171,78 @@ def cpp_source(records, defined, bad_decls=()):
            ' template<class T> operator T*();'
            ' template<class T> operator T();')
 
+    # Names used inside a `<...>` argument list must resolve to types; a leaf
+    # otherwise emitted as `static int` becomes a typedef instead.
+    arg_tokens = set()
+    for argtext in re.findall(r'<([^<>;]+)>', ''.join(definitions)):
+        arg_tokens.update(re.findall(r'\b([A-Za-z_]\w*)\b', argtext))
+    # Innermost-only misses outer args (`std::X` before `,`/`>` in a nested
+    # argument list).
+    arg_tokens.update(
+        re.findall(r'\bstd::([A-Za-z_]\w*)\b(?=\s*[,>])',
+                   ''.join(definitions)))
+
     def emit_tree(node, owner=''):
         methods = node.get('__methods__', set())
         inner = ''.join(
-            f' int {method}(...);' if method.startswith('op_')
+            f' static int {method}(...);' if method.startswith('op_')
             else f' template<class... A> static int {method}(A...);'
             for method in sorted(methods)
             if method.isidentifier() and method != owner)
-        inner += ''.join(f' static int {leaf};'
-                         for leaf in sorted(set(node.get('__leaves__', ())) - methods)
-                         if leaf.isidentifier() and leaf != owner)
+        inner += ''.join(
+            (f' typedef int {leaf};' if leaf in arg_tokens
+             else f' static int {leaf};')
+            for leaf in sorted(set(node.get('__leaves__', ())) - methods)
+            if leaf.isidentifier() and leaf != owner)
         for name, child in sorted(node.items()):
             if name in ('__leaves__', '__methods__'):
                 continue
-            inner += (f' struct {name} {{ char _pad; {name}(...);{ops}'
+            inner += (f' {"template<class...> " if ("template", name) in type_stubs else ""}'
+                      f'struct {name} {{ char _pad; {name}(...);{ops}'
                       f'{field_decls_for(name)}{emit_tree(child, name)} }};')
         return inner
 
     nstemplates = {name.split('::')[-1] for kind, name in type_stubs if kind == 'nstemplate'}
     std_node = tree.pop('std', None)
+    std_names = set()
     if std_node is not None:
         for name in nstemplates:
             std_node.pop(name, None)
             std_node.get('__leaves__', set()).discard(name)
+        def collect_std(node):
+            for key, child in node.items():
+                if key in ('__leaves__', '__methods__'):
+                    std_names.update(node[key])
+                    continue
+                std_names.add(key)
+                collect_std(child)
+        collect_std(std_node)
         decls.append(f'namespace std {{{emit_tree(std_node)}}}')
+    # A name that lives under `namespace std` must not get a global struct or
+    # typedef twin: unqualified uses would be ambiguous once the
+    # `using namespace std` line below takes effect.
+    for name in std_names:
+        tree.pop(name, None)
+        type_stubs = {kn for kn in type_stubs if kn[1].split('::')[-1] != name}
     for name, child in sorted(tree.items()):
-        decls.append(f'struct {name} {{ char _pad; {name}(...);{ops}'
+        decls.append(f'{"template<class...> " if ("template", name) in type_stubs else ""}'
+                     f'struct {name} {{ char _pad; {name}(...);{ops}'
                      f'{field_decls_for(name)}{emit_tree(child, name)} }};')
     emitted_types = set(tree.keys())
-    for kind, name in sorted(type_stubs):
+    extern_leaf_names = {name for _, name in externs}
+    for kind, name in sorted(
+            type_stubs,
+            key=lambda kn: (kn[0] in ('ptr',), kn)):
         leaf_name = name.split('::')[-1]
         # A name already declared inside namespace std must not get a global
-        # twin: ``using namespace std`` would make every use ambiguous.
+        # twin: ``using namespace std`` would make every use ambiguous. A
+        # typedef ('ptr') stub also yields to a template/struct stub for the
+        # same name, since `typedef void *T` makes `T<...>` ill-formed, and
+        # to a call extern (e.g. an imported CRT function) since a typedef
+        # cannot share a name with a function declaration.
         if (leaf_name in emitted_types or leaf_name in stubs or
+                (kind == 'struct' and ('template', name) in type_stubs) or
+                (kind == 'ptr' and leaf_name in extern_leaf_names) or
                 (kind != 'nstemplate' and leaf_name in nstemplates)):
             continue
         emitted_types.add(leaf_name)
@@ -1143,15 +1254,21 @@ def cpp_source(records, defined, bad_decls=()):
                          f'{{ char _pad; {leaf_name}(...);{ops}'
                          f'{field_decls_for(leaf_name)} }};')
         elif kind == 'nstemplate':
+            # ``std::X`` member calls (e.g. ``->op_inc()``) were collected
+            # into member_methods before the std tree node was popped above.
+            extra = ''.join(f' static int {m}(...);' for m in
+                            sorted(member_methods.get(name, ()))
+                            if m.isidentifier())
             decls.append(f'namespace std {{ template<class...> struct {leaf_name} '
                          f'{{ char _pad; {leaf_name}(...);{ops}'
-                         f'{field_decls_for(leaf_name)} }}; }}')
+                         f'{extra}{field_decls_for(leaf_name)} }}; }}')
         else:
             decls.append(f'typedef void *{leaf_name};')
     for stub, methods in sorted(stubs.items()):
-        decls.append(f'struct {stub} {{ {stub}(...);{ops}' + ''.join(
-            (f' int {method}(...);' if method.startswith('op_')
-             else f' static int {method}(...);')
+        prefix = ('template<class...> '
+                  if ('template', stub) in type_stubs else '')
+        decls.append(f'{prefix}struct {stub} {{ {stub}(...);{ops}' + ''.join(
+            f' static int {method}(...);'
             for method in sorted(methods)
             if method != stub) + ' };')
     decls.append('using namespace std;')
