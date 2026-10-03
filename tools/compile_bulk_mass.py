@@ -638,6 +638,35 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
     body = re.sub(
         r'(?<![=!<>+\-*/%&|^?:])([A-Za-z_]\w*)\s*\[([^\]\[]*)\]\s*=(?![=])\s*([^;{}]*);',
         cast_index, body)
+    # `*(T *)expr = rhs;` dereference-through-cast assignments: the pointee is
+    # spelled in the cast, so cast rhs to it.
+    body = re.sub(
+        r'\*\s*\(\s*([A-Za-z_][\w:\s<>]*?)\s*(\*+)\s*\)\s*'
+        r'([A-Za-z_][\w.\[\]()+\s>*-]*?)\s*=(?![=])\s*([^;{}]*);',
+        lambda m: '*({}{}){} = ({})({});'.format(
+            m.group(1), m.group(2), m.group(3),
+            (m.group(1) + ' ' + m.group(2)[:-1]).strip() or 'void',
+            m.group(4).strip()), body)
+    # `x->field = rhs;` / `x.field = rhs;`: stub fields are int, so cast rhs.
+    body = re.sub(
+        r'((?:\([\w\s:\*&<>\[\]+()]*\)|[A-Za-z_]\w*)\s*(?:->|\.)'
+        r'[A-Za-z_]\w*)\s*=(?![=])\s*([^;{}]*);',
+        lambda m: m.group(1) + ' = (int)({});'.format(m.group(2).strip()), body)
+    # `&(T *)name` takes the address of a cast rvalue; reinterpret the
+    # variable's own address instead (same value, legal lvalue).
+    body = re.sub(r'&\s*\(\s*([A-Za-z_][\w:<>\s]*\*)\s*\)\s*([A-Za-z_]\w*)',
+                  r'((\1*)&(\2))', body)
+    # `*name` where name is integral: Ghidra means dereference the address held
+    # in the variable. Unary contexts only (never `a * b`).
+    def deref_int(match):
+        name = match.group(2)
+        target = varmap.get(name)
+        if target and not target.rstrip().endswith('*'):
+            return match.group(1) + f'*(int *)(uint)({name})'
+        return match.group(0)
+    body = re.sub(
+        r'((?:^|[=(,;{}:&|^!~<>?:]|\s[+\-])\s*|(?<![\w])(?:return|case|sizeof|if|while|for)\s+)'
+        r'\*\s*([A-Za-z_]\w*)', deref_int, body, flags=re.M)
     # `T *name = rhs;` declaration-initializers (`*` blocks the name regex below)
     body = re.sub(
         r'^\s*([A-Za-z_][\w:<>]*(?:\s*\*+\s*)+)([A-Za-z_]\w*)\s*=\s*([^;{}]*);',
