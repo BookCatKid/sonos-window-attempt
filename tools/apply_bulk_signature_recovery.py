@@ -39,6 +39,9 @@ def sync_forward_decls(source):
     def replace(match):
         nonlocal changed
         decl = match.group(0)
+        if re.search(r'\(\s*\.\.\.\s*\)', decl):
+            # variadic overload for wrong-arity callers; keep as-is
+            return decl
         name = re.search(r'(FUN_\w+)\s*\(', decl).group(1)
         definition = defs.get(name)
         if not definition:

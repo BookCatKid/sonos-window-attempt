@@ -84,10 +84,27 @@ struct Too { char _pad; Too(...); template<class T> int operator==(T); template<
 struct Treating { char _pad; Treating(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 using namespace std;
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_1182ff00(void);
+extern /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_1182ff00(...);
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_1183cfb0(void);
+extern /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_1183cfb0(...);
 void FUN_11862250(void);
+extern void FUN_11862250(...);
+extern void FUN_11862250(...);
+void FUN_11862250(void);
+extern void FUN_11862250(...);
+extern void FUN_11862250(...);
 void FUN_118622f0(void);
+extern void FUN_118622f0(...);
+extern void FUN_118622f0(...);
+void FUN_118622f0(void);
+extern void FUN_118622f0(...);
+extern void FUN_118622f0(...);
 void FUN_11862580(void);
+extern void FUN_11862580(...);
+extern void FUN_11862580(...);
+void FUN_11862580(void);
+extern void FUN_11862580(...);
+extern void FUN_11862580(...);
 // Reference entry 1182ff00; body size 88 bytes.
 #line 1 "ENTRY_1182ff00"
 

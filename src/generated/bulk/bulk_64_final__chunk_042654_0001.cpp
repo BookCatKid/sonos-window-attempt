@@ -1484,8 +1484,14 @@ using namespace std;
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_11861d40(void);
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_11861db0(void);
 void FUN_11862250(void);
+extern void FUN_11862250(...);
+extern void FUN_11862250(...);
 void FUN_118622f0(void);
+extern void FUN_118622f0(...);
+extern void FUN_118622f0(...);
 void FUN_11862580(void);
+extern void FUN_11862580(...);
+extern void FUN_11862580(...);
 // Reference entry 11857e30; body size 76 bytes.
 #line 1 "ENTRY_11857e30"
 
