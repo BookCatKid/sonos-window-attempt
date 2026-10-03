@@ -518,6 +518,17 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
             lambda m: 'std_' + m.group(1) + '<', result_body)
         head = flatten.sub(lambda m: 'std_' + m.group(1) + '<', head)
         type_stubs.update(('template', 'std_' + n) for n in flat_templates)
+    # Bare lowercase type names (``codecvt_base *p``) likewise collide with a
+    # ``std::name`` struct stub under ``using namespace std``; flatten them to
+    # the global ``std_name`` struct.
+    whole = head + result_body
+    for name in set(re.findall(r'\bstd::([a-z]\w*)\b(?!\s*<)', whole)):
+        bare = re.compile(r'(?<![:\w.~])' + re.escape(name) +
+                          r'(?=\s*[*&]+\s*\w|\s+\w+\s*[,)=;])')
+        if bare.search(head + result_body):
+            head = bare.sub('std_' + name, head)
+            result_body = bare.sub('std_' + name, result_body)
+            type_stubs.add(('struct', 'std_' + name))
     for match in re.finditer(r'\b([a-z]\w*)\s*<[^(){};=]*>(?=\s*[*&])',
                              head + result_body):
         type_stubs.add(('template', match.group(1)))
@@ -982,8 +993,8 @@ def cpp_source(records, defined, bad_decls=()):
 
     fcalls = member_stubs.get('__fcall__', set())
     fields = member_stubs.get('__fields__', set()) - fcalls
-    field_decls = (''.join(f' int {f};' for f in sorted(fields) if f.isidentifier()) +
-                   ''.join(f' template<class... A> int {f}(A...);'
+    field_decls = (''.join(f' static int {f};' for f in sorted(fields) if f.isidentifier()) +
+                   ''.join(f' template<class... A> static int {f}(A...);'
                            for f in sorted(fcalls) if f.isidentifier()))
 
     ops = (' template<class T> int operator==(T);'
@@ -1010,7 +1021,7 @@ def cpp_source(records, defined, bad_decls=()):
 
     def emit_tree(node):
         methods = node.get('__methods__', set())
-        inner = ''.join(f' template<class... A> int {method}(A...);'
+        inner = ''.join(f' template<class... A> static int {method}(A...);'
                         for method in sorted(methods) if method.isidentifier())
         inner += ''.join(f' static int {leaf};'
                          for leaf in sorted(set(node.get('__leaves__', ())) - methods)
