@@ -132,6 +132,10 @@ def function_symbols(sections, symbols, symbols_by_index):
                         'offset': reloc['offset'] - start,
                         'type': reloc['type'],
                         'symbol': symbol['name'] if symbol else '',
+                        'target_section': symbol['section'] if symbol else 0,
+                        'target_offset': symbol['offset'] if symbol else 0,
+                        'func_section': section_number,
+                        'func_start': start,
                     })
             result[entry] = (code, relocs)
     return result
@@ -203,8 +207,13 @@ def load_symbol_vas(path):
                 result[scstr_abi_key(qualified_name)].add(address)
                 if qualified_name.endswith('::vftable'):
                     owner = qualified_name[:-len('::vftable')]
-                    alias = 'ghidra_vftable_' + re.sub(r'[^0-9A-Za-z_]', '_', owner.replace('::', '__'))
-                    result[alias].add(address)
+                    leaf = owner.split('::')[-1]
+                    # Emitters name the extern for the leaf class alone and
+                    # drop template arguments, so index both alias shapes.
+                    for form in (owner.replace('::', '__'), leaf,
+                                 re.sub(r'<[^<>]*>', '', leaf)):
+                        alias = 'ghidra_vftable_' + re.sub(r'[^0-9A-Za-z_]', '_', form)
+                        result[alias].add(address)
             if name:
                 # PTR_<import>_<va> labels mark the IAT dword the loader fills;
                 # __declspec(dllimport) references carry an __imp_ relocation
@@ -271,7 +280,21 @@ def relocation_value(reloc_type, target_va, addend, entry_va, offset, image_base
     return None
 
 
-def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base, symbol_vas):
+def _eh_handler_shape(code):
+    """Match the /GS-checked ``__ehhandler$`` funclet prologue.
+
+    MSVC generates ``mov edx,[esp+8]; lea eax,[edx+N]; mov ecx,[edx+M];
+    xor ecx,eax; call __security_check_cookie-thunk`` for every C++ EH
+    registration handler.  The shape identifies the reference-side funclet
+    address our ``push __ehhandler$FUN`` relocates against.
+    """
+    return (len(code) >= 14 and code[:4] == b'\x8b\x54\x24\x08' and
+            code[4:6] == b'\x8d\x42' and code[7:9] == b'\x8b\x4a' and
+            code[10:12] == b'\x33\xc8')
+
+
+def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base, symbol_vas,
+                              reference=None, pe_sections=None):
     """Apply x86 COFF relocations whose original target VA is encoded in the symbol.
 
     This resolves generated FUN_/thunk_FUN_ references and lowered Ghidra vtable
@@ -285,6 +308,36 @@ def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base,
         offset = reloc['offset']
         if offset < 0 or offset + 4 > len(patched):
             unresolved += 1
+            continue
+        if offset + 4 > len(expected):
+            unresolved += 1
+            continue
+        expected_field = u32(expected, offset)
+        # Intra-section $LN* labels (catch funclets, switch case labels):
+        # REL32 against a symbol in the same section is layout-invariant, so
+        # the value is computable pre-link and equality proves the same
+        # internal structure.
+        if (reloc['type'] == 0x14 and reloc.get('target_section') ==
+                reloc.get('func_section') and reloc['target_section']):
+            value = (reloc['target_offset'] - reloc['func_start']) - (offset + 4)
+            if value & 0xffffffff == expected_field:
+                struct.pack_into('<I', patched, offset, value & 0xffffffff)
+                resolved += 1
+            else:
+                unresolved += 1
+            continue
+        # /EH registration handler push: our funclet is compiler-generated, so
+        # verify the reference target carries the same funclet shape rather
+        # than a literal address.
+        if (reloc['type'] == 0x6 and reloc['symbol'].startswith('__ehhandler$') and
+                reference is not None and pe_sections is not None):
+            target = function_bytes(reference, expected_field, 16, image_base,
+                                    pe_sections)
+            if _eh_handler_shape(target):
+                struct.pack_into('<I', patched, offset, expected_field)
+                resolved += 1
+            else:
+                unresolved += 1
             continue
         logical_name = (reloc['symbol'] if reloc['symbol'] in symbol_vas else
                         generated_symbol_name(reloc['symbol']) or
@@ -304,6 +357,10 @@ def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base,
             elif re.fullmatch(r'@?[A-Za-z_]\w*@\d+', symbol):
                 # @name@n is MSVC's stdcall decoration for a plain name.
                 logical_name = symbol.lstrip('@').rsplit('@', 1)[0]
+            elif symbol[1:] in symbol_vas:
+                # Internal runtime helpers arrive underscored (_memcpy) where
+                # the Ghidra symbol table records the same function plain.
+                logical_name = symbol[1:]
         if logical_name is None:
             unresolved += 1
             continue
@@ -433,7 +490,9 @@ def compare_directory(directory, reference, image_base, pe_sections, symbol_vas,
                     targets_for_function.maps[0].setdefault(reloc['symbol'], []).append(
                         target - u32(candidate, offset))
             resolved_candidate, resolved_relocs, unresolved_relocs = resolve_known_relocations(
-                candidate, expected, relocs, int(entry, 16), image_base, targets_for_function)
+                candidate, expected, relocs, int(entry, 16), image_base,
+                targets_for_function, reference=reference,
+                pe_sections=pe_sections)
             relocation_exact = (bool(expected) and resolved_candidate == expected
                                 and unresolved_relocs == 0)
             same_length_fixed_match = (bool(expected) and len(candidate) == len(expected)
