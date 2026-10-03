@@ -3,6 +3,15 @@
 # out\bulk-failures.log exactly like the serial loop did.
 $ErrorActionPreference = 'Continue'
 $files = @(Get-ChildItem src\generated\bulk\*.cpp | ForEach-Object { $_.FullName })
+# Optional matrix slicing: SONOS_PART_MOD=4 SONOS_PART_SLICE=2 compiles only
+# every fourth part so several jobs can split a large corpus.
+$mod = 1
+if ($env:SONOS_PART_MOD) { $mod = [int]$env:SONOS_PART_MOD }
+$slice = 0
+if ($env:SONOS_PART_SLICE) { $slice = [int]$env:SONOS_PART_SLICE }
+if ($mod -gt 1) {
+    $files = @($files | Where-Object { [array]::IndexOf($files, $_) % $mod -eq $slice })
+}
 $workers = 6
 $root = (Get-Location).Path
 $jobs = @()

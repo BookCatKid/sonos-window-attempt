@@ -23,6 +23,10 @@ on:
         description: Use a registered Windows x64 worker labelled sonos-msvc142
         type: boolean
         default: false
+      bulk_matrix:
+        description: Matrix JSON for bulk-part slicing, e.g. {"slice":[0,1,2,3],"mod":[4]}
+        type: string
+        default: '{"slice":[0],"mod":[1]}'
   push:
     branches: [main]
     paths:
@@ -36,6 +40,9 @@ jobs:
   compile:
     runs-on: ${{ github.event.inputs.persistent_worker == 'true' && fromJSON('["self-hosted","Windows","X64","sonos-msvc142"]') || fromJSON('["windows-2022"]') }}
     timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(github.event.inputs.bulk_matrix || '{"slice":[0],"mod":[1]}') }}
     steps:
       - uses: actions/checkout@v4
 
@@ -119,6 +126,8 @@ jobs:
           SONOS_SWEEP_FLAGS: ${{ github.event.inputs.sweep_flags == 'true' && '1' || '0' }}
           SONOS_INCLUDE_DATA_PROBE: ${{ github.event.inputs.include_data_probe == 'true' && '1' || '0' }}
           SONOS_FOCUSED_PROBE: ${{ github.event.inputs.focused_probe == 'true' && '1' || '0' }}
+          SONOS_PART_MOD: ${{ matrix.mod }}
+          SONOS_PART_SLICE: ${{ matrix.slice }}
         shell: cmd
         run: |
           if "%SONOS_FOCUSED_PROBE%"=="1" (call tools\build_focused_probe.cmd) else (call tools\build_probe.cmd)
@@ -157,7 +166,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: msvc-14-28-x86-objects
+          name: msvc-14-28-x86-objects-${{ matrix.slice }}
           path: |
             out/*.obj
             out/*.dll
