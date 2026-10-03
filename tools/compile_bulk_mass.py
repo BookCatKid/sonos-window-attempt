@@ -1066,7 +1066,8 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         return f'({ctype})({operand}) {op} {expr}'
     body = re.sub(
         r'((?:\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)\s*)?'
-        r'\*?\s*' + _CAST_OPERAND + r')\s*(==|!=|<=|>=)\s*'
+        r'(?:\*|(?<=[)(,=!~;{}<>&|^?:+\-*/%])&)?\s*'
+        + _CAST_OPERAND + r')\s*(==|!=|<=|>=)\s*'
         r'(\*?\s*\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)'
         r'(?:\((?:[^()]|\([^()]*\))*\)|[^,;()])*)',
         cast_operand_rhs, body)
