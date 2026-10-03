@@ -56,6 +56,8 @@ extern "C" wchar_t *wcscpy(wchar_t *, const wchar_t *);
 extern "C" char *strstr(char *, const char *);
 extern "C" int strcmp(const char *, const char *);
 extern "C" int wcscmp(const wchar_t *, const wchar_t *);
+extern "C" unsigned long __readfsdword(unsigned long);
+#pragma intrinsic(__readfsdword)
 extern int FUN_10011e64(...);
 extern int FUN_100541fb(...);
 extern int FUN_1005d733(...);
@@ -260,6 +262,7 @@ extern int DAT_1186d2ee;
 extern int DAT_119e4e04;
 extern int DAT_1211954c;
 extern int DAT_12126b84;
+extern int DAT_121a0fd4;
 extern int DAT_121a0fd8;
 extern int DAT_121a100c;
 extern int DAT_121a1010;
@@ -569,6 +572,8 @@ int FUN_10307cb0(int param_1);
 extern int FUN_10307cb0(...);
 void __fastcall FUN_10307f30(int *param_1);
 extern void __fastcall FUN_10307f30(...);
+void FUN_10308cd0(void);
+extern void FUN_10308cd0(...);
 void FUN_10308dc0(void);
 extern void FUN_10308dc0(...);
 uint __fastcall FUN_10309760(int *param_1);
@@ -3399,6 +3404,20 @@ void __fastcall FUN_10307f30(int *param_1)
   if ((int *)(piVar1) != (int *)0x0) {
     (**(code **)(*piVar1 + 0x10))((int *)(piVar1) != (int *)(param_1));
     param_1[9] = (int)(0);
+  }
+  return;
+}
+
+
+// Reference entry 10308cd0; body size 27 bytes.
+#line 1 "ENTRY_10308cd0"
+
+void FUN_10308cd0(void)
+
+{
+  if ((undefined4 *)(DAT_121a0fd4) != (undefined4 *)0x0) {
+    (**(code **)DAT_121a0fd4)(1);
+    DAT_121a0fd4 = (int)((undefined4 *)0x0);
   }
   return;
 }

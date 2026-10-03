@@ -113,6 +113,8 @@ extern "C" wchar_t *wcscpy(wchar_t *, const wchar_t *);
 extern "C" char *strstr(char *, const char *);
 extern "C" int strcmp(const char *, const char *);
 extern "C" int wcscmp(const wchar_t *, const wchar_t *);
+extern "C" unsigned long __readfsdword(unsigned long);
+#pragma intrinsic(__readfsdword)
 '''
 
 KEYWORDS = {'if', 'while', 'switch', 'sizeof', 'return', 'int', 'uint', 'long',
@@ -578,6 +580,10 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
         r'\(\s*code\s*\*\*\s*\)\s*\*\s*'
         r'((?:DAT|PTR|uRam|uStack|_UNK)_\w+|s_\w+)',
         r'(code **)\1', body_part)
+    # ThreadLocalStoragePointer is Ghidra's name for fs:[0x18]; the
+    # __readfsdword intrinsic reproduces the exact segment-load instruction.
+    body_part = re.sub(r'\bThreadLocalStoragePointer\b',
+                       '((void *)__readfsdword(0x18))', body_part)
     return _rename_definition(head_part + body_part, entry)
 
 
@@ -713,7 +719,7 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         r'\*\s*([A-Za-z_]\w*)', deref_int, body, flags=re.M)
     # `T *name = rhs;` declaration-initializers (`*` blocks the name regex below)
     body = re.sub(
-        r'^\s*([A-Za-z_][\w:<>]*(?:\s*\*+\s*)+)([A-Za-z_]\w*)\s*=\s*([^;{}]*);',
+        r'^\s*([A-Za-z_][\w:<>]*(?:\s*\*+\s*)+)([A-Za-z_]\w*)\s*=(?![=])\s*([^;{}]*);',
         lambda m: f'{m.group(1)}{m.group(2)} = '
                   f'({m.group(1).strip()})({m.group(3).strip()});'
                   if not m.group(3).strip().startswith('{') else m.group(0),

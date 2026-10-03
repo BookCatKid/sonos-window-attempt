@@ -56,6 +56,8 @@ extern "C" wchar_t *wcscpy(wchar_t *, const wchar_t *);
 extern "C" char *strstr(char *, const char *);
 extern "C" int strcmp(const char *, const char *);
 extern "C" int wcscmp(const wchar_t *, const wchar_t *);
+extern "C" unsigned long __readfsdword(unsigned long);
+#pragma intrinsic(__readfsdword)
 extern __declspec(dllimport) int _invalid_parameter_noinfo_noreturn(...);
 extern int createPropertyBag(...);
 extern int endsWith(...);
@@ -120,6 +122,7 @@ extern int thunk_FUN_106bc6b0(...);
 extern int thunk_FUN_106d83f0(...);
 extern int thunk_FUN_106de0c0(...);
 extern int thunk_FUN_106de2c0(...);
+extern int thunk_FUN_106de840(...);
 extern int thunk_FUN_106dfa00(...);
 extern int thunk_FUN_106dfb80(...);
 extern int thunk_FUN_10765a30(...);
@@ -577,6 +580,8 @@ void __fastcall FUN_1061f5c0(undefined4 *param_1);
 extern void __fastcall FUN_1061f5c0(...);
 void __fastcall FUN_1061f730(undefined4 *param_1);
 extern void __fastcall FUN_1061f730(...);
+void __fastcall FUN_1061f800(undefined4 *param_1);
+extern void __fastcall FUN_1061f800(...);
 // Reference entry 1060c450; body size 2331 bytes.
 #line 1 "ENTRY_1060c450"
 
@@ -8613,7 +8618,7 @@ LAB_106191b7:
     }
   }
 
-  return (/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ int)(local_18);
+  return (int)(local_18);
 
  } catch (...) { }
 }
@@ -8721,7 +8726,7 @@ LAB_106193b2:
     }
   }
 
-  return (/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ int)(iVar1);
+  return (int)(iVar1);
 
  } catch (...) { }
 }
@@ -8844,7 +8849,7 @@ LAB_106195fc:
     }
   }
 
-  return (/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ int)(iVar6);
+  return (int)(iVar6);
 
  } catch (...) { }
 }
@@ -11777,6 +11782,30 @@ void __fastcall FUN_1061f730(undefined4 *param_1)
   return;
 
  } catch (...) { }
+}
+
+
+// Reference entry 1061f800; body size 81 bytes.
+#line 1 "ENTRY_1061f800"
+
+void __fastcall FUN_1061f800(undefined4 *param_1)
+
+{
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubmitDiagsWizardType);
+  if ((undefined4 *)(DAT_121a2238) != (undefined4 *)0x0) {
+    (**(code **)DAT_121a2238)(1);
+  }
+  if ((undefined4 *)(DAT_121a223c) != (undefined4 *)0x0) {
+    (**(code **)DAT_121a223c)(1);
+  }
+  if ((undefined4 *)(DAT_121a2240) != (undefined4 *)0x0) {
+    (**(code **)DAT_121a2240)(1);
+  }
+  if ((undefined4 *)(DAT_121a2244) != (undefined4 *)0x0) {
+    (**(code **)DAT_121a2244)(1);
+  }
+  thunk_FUN_106de840();
+  return;
 }
 
 

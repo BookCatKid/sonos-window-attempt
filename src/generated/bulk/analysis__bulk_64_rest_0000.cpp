@@ -56,6 +56,8 @@ extern "C" wchar_t *wcscpy(wchar_t *, const wchar_t *);
 extern "C" char *strstr(char *, const char *);
 extern "C" int strcmp(const char *, const char *);
 extern "C" int wcscmp(const wchar_t *, const wchar_t *);
+extern "C" unsigned long __readfsdword(unsigned long);
+#pragma intrinsic(__readfsdword)
 extern __declspec(dllimport) int _Xlength_error(...);
 extern __declspec(dllimport) int __stdio_common_vsprintf_p(...);
 extern int _eh_vector_destructor_iterator_(...);
@@ -4596,6 +4598,8 @@ void FUN_101c82e0(char *param_1);
 extern void FUN_101c82e0(...);
 void __fastcall FUN_101c8c50(float *param_1);
 extern void __fastcall FUN_101c8c50(...);
+void __fastcall FUN_101c8d30(int *param_1);
+extern void __fastcall FUN_101c8d30(...);
 // Reference entry 10155a50; body size 117 bytes.
 #line 1 "ENTRY_10155a50"
 
@@ -47256,7 +47260,7 @@ LAB_101a400d:
   free(local_18);
   free(local_28);
 
-  return (/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ undefined4)(uVar4);
+  return (undefined4)(uVar4);
 
  } catch (...) { }
 }
@@ -63892,6 +63896,35 @@ void __fastcall FUN_101c8c50(float *param_1)
                        (double)(&DAT_11880fb0)[-((int)param_1[2] + 1 >> 0x1f)]) / *param_1));
   thunk_FUN_1148ac80();
   thunk_FUN_101c8790();
+  return;
+}
+
+
+// Reference entry 101c8d30; body size 77 bytes.
+#line 1 "ENTRY_101c8d30"
+
+void __fastcall FUN_101c8d30(int *param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  uint uVar3;
+  
+  iVar1 = (int)(*param_1);
+  uVar3 = (uint)(param_1[1] - iVar1 & 0xfffffffc);
+  iVar2 = (int)(iVar1);
+  if (0xfff < uVar3) {
+    iVar2 = (int)(*(int *)(iVar1 + -4));
+    uVar3 = (uint)(uVar3 + 0x23);
+    if (0x1f < (iVar1 - iVar2) - 4U) {
+                    
+      _invalid_parameter_noinfo_noreturn();
+    }
+  }
+  thunk_FUN_1148a50e(iVar2,uVar3);
+  *param_1 = (int)(0);
+  param_1[1] = (int)(0);
+  param_1[2] = (int)(0);
   return;
 }
 
