@@ -1322,9 +1322,11 @@ def cpp_source(records, defined, bad_decls=()):
 
     def emit_tree(node, owner=''):
         methods = node.get('__methods__', set())
+        # Free static decls without a body are a hard error under MSVC
+        # (C2129); a trivial body also stays valid inside struct members.
         inner = ''.join(
-            f' static int {method}(...);' if method.startswith('op_')
-            else f' template<class... A> static int {method}(A...);'
+            f' static int {method}(...) {{ return 0; }}' if method.startswith('op_')
+            else f' template<class... A> static int {method}(A...) {{ return 0; }}'
             for method in sorted(methods)
             if method.isidentifier() and method != owner)
         inner += ''.join(

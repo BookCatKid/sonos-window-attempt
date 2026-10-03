@@ -17,10 +17,10 @@ from compile_scstr_cpp import (reference_arity, reference_narrow_returns,
                                reference_stdcall)
 
 DEFINITION = re.compile(
-    r'(?m)^([A-Za-z_][\w\s\*]*?\s+(?:__cdecl|__stdcall|__fastcall|__thiscall'
+    r'(?m)^([A-Za-z_](?:[\w\s\*<>,&]|::)*?\s+(?:__cdecl|__stdcall|__fastcall|__thiscall'
     r'\s+)?)(FUN_\w+)\s*\(([^;{}]*)\)\s*\n\{')
 FORWARD_DECL = re.compile(
-    r'(?m)^(?:/\*.*?\*/\s*)?[A-Za-z_][\w\s\*]*?\s+'
+    r'(?m)^(?:/\*.*?\*/\s*)?[A-Za-z_](?:[\w\s\*<>,&]|::)*?\s+'
     r'(?:__cdecl|__stdcall|__fastcall|__thiscall\s+)?FUN_\w+\s*'
     r'\([^;{}]*\)\s*;')
 
@@ -59,10 +59,10 @@ def sync_forward_decls(source):
 
 
 THISCALL_DEF = re.compile(
-    r'(?m)^((?:/\*[^\n]*?\*/\s*)?[A-Za-z_][\w\s\*]*?\s+)__thiscall\s+'
+    r'(?m)^((?:/\*[^\n]*?\*/\s*)?[A-Za-z_](?:[\w\s\*<>,&]|::)*?\s+)__thiscall\s+'
     r'(FUN_\w+)\s*\(([^;{}]*)\)\s*\n\{')
 THISCALL_DECL = re.compile(
-    r'(?m)^(?:/\*[^\n]*?\*/\s*)?[A-Za-z_][\w\s\*]*?\s+__thiscall\s+'
+    r'(?m)^(?:/\*[^\n]*?\*/\s*)?[A-Za-z_](?:[\w\s\*<>,&]|::)*?\s+__thiscall\s+'
     r'FUN_\w+\s*\([^;{}]*\)\s*;\n?')
 CALL = re.compile(r'(?<![\w:.>~])(FUN_\w+)\s*\(')
 
@@ -165,6 +165,19 @@ def lower_free_thiscall(source):
 
     # The struct's member decls use bare ``std`` names (``basic_ostream``),
     # so it must land after the ``using namespace std`` line, not before.
+    existing = re.search(r'struct Recovered_Bulk \{(.*?)\n?\};',
+                         rewritten, re.S)
+    if existing:
+        # Re-runs on already-lowered files must merge into the first struct:
+        # a second definition is a hard redefinition error.
+        known = set(re.findall(r'\bFUN_\w+', existing.group(1)))
+        merged = ''.join(m for m in methods
+                         if re.search(r'FUN_\w+', m).group(0) not in known)
+        if merged:
+            rewritten = (rewritten[:existing.start(1)] +
+                         existing.group(1) + merged +
+                         rewritten[existing.end(1):])
+        return rewritten, len(renamed)
     anchor = rewritten.find('using namespace std;')
     struct = ('struct Recovered_Bulk { char _pad;' + ''.join(methods) + ' };\n')
     if anchor >= 0:
