@@ -429,8 +429,19 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
                     externs.add(('data', flat))
                     out.append(flat if before.endswith('&') else f'(uint)&{flat}')
                 else:
-                    member_stubs.setdefault(qualifier, set()).add(leaf)
-                    out.append(body[start:name_end])
+                    stub_name = qualifier
+                    while '<' in stub_name:
+                        stub_name = re.sub(r'<[^<>]*>', '', stub_name)
+                    if leaf == 'op_dtor' or leaf == stub_name.split('::')[-1]:
+                        # X::~X / X::X as a value is Ghidra's rendering of a
+                        # dtor/ctor function pointer (&eh_vector iterator arg).
+                        member_methods.setdefault(qualifier, set()).add(
+                            'op_dtor' if leaf == 'op_dtor' else 'op_ctor')
+                        out.append(f'&{stub_name}::' + (
+                            'op_dtor' if leaf == 'op_dtor' else 'op_ctor'))
+                    else:
+                        member_stubs.setdefault(qualifier, set()).add(leaf)
+                        out.append(body[start:name_end])
                 pos = tail
     result_body = re.sub(r'&\s*(LAB_\w+)', r'\1', ''.join(out))
     head = _pcode(head)
