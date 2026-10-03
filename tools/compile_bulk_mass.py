@@ -545,7 +545,10 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
         whole = sig + whole[head_end:]
     ret_type = None
     head_end = whole.find('{')
-    tokens = whole[:head_end].split('(')[0].split()
+    # The head can carry Ghidra ``/* WARNING */`` comments whose own parens
+    # would otherwise poison the return-type tokenization.
+    head_clean = re.sub(r'/\*.*?\*/', ' ', whole[:head_end], flags=re.S)
+    tokens = head_clean.split('(')[0].split()
     if len(tokens) >= 2:
         ret_type = ' '.join(t for t in tokens[:-1]
                             if not t.startswith('__') and
@@ -569,6 +572,12 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
     body_part = re.sub(r'\(\s*\*\s*\((?:u?int|undefined4|void|long|short|char)\s*\*+\s*\)'
                        r'\s*((?:\([^()]*\)\s*)*(?:\([^()]*\)|[A-Za-z_]\w*))\s*\)\s*\(',
                        r'(*(code *)\1)(', body_part)
+    # ``(code **)*DAT_x`` dereferences an integer extern; the global's value
+    # is itself the pointer, so cast it rather than deref it.
+    body_part = re.sub(
+        r'\(\s*code\s*\*\*\s*\)\s*\*\s*'
+        r'((?:DAT|PTR|uRam|uStack|_UNK)_\w+|s_\w+)',
+        r'(code **)\1', body_part)
     return _rename_definition(head_part + body_part, entry)
 
 
