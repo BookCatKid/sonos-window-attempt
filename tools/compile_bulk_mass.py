@@ -258,35 +258,53 @@ def _pcode(source):
                 return [inner[:index], inner[index + 1:]], close
         return [inner], close
 
-    out = []
-    pos = 0
     pattern = re.compile(r'\b(CONCAT|ZEXT|SEXT|SUB)(\d)(\d)?\s*\(')
-    while True:
-        match = pattern.search(source, pos)
-        if not match:
-            out.append(source[pos:])
-            break
-        op, d1, d2 = match.group(1), int(match.group(2)), match.group(3)
-        d2 = int(d2) if d2 else 0
-        open_paren = match.end() - 1
-        args, close = split_args(source, open_paren)
-        out.append(source[pos:match.start()])
-        if args is None:
-            out.append(source[match.start():close + 1])
+
+    def expand(src):
+        out = []
+        pos = 0
+        while True:
+            match = pattern.search(src, pos)
+            if not match:
+                out.append(src[pos:])
+                break
+            op, d1, d2 = match.group(1), int(match.group(2)), match.group(3)
+            d2 = int(d2) if d2 else 0
+            open_paren = match.end() - 1
+            args, close = split_args(src, open_paren)
+            out.append(src[pos:match.start()])
+            if args is None:
+                out.append(src[match.start():close + 1])
+                pos = close + 1
+                continue
+            # Args may nest further pcode ops (CONCAT84(SUB84(x,0)&y, z));
+            # expand them recursively since pos jumps past the whole match.
+            args = [expand(arg) for arg in args]
+            if op == 'CONCAT' and len(args) == 2:
+                wide = 'unsigned long long' if d1 + d2 > 4 else 'uint'
+                out.append(f'(({wide})({args[0].strip()}) << {d2 * 8} | ({wide})({args[1].strip()}))')
+            elif op == 'ZEXT':
+                out.append(f'({INT_TYPE.get(d2, "uint")})({args[0].strip()})')
+            elif op == 'SEXT':
+                out.append(f'({SINT_TYPE.get(d2, "int")})({args[0].strip()})')
+            elif op == 'SUB' and len(args) == 2:
+                # SUB{in}{out}(x, off): extract the out-sized subpiece at byte
+                # offset `off` of the in-sized value x. Float operands need a
+                # bit reinterpretation, so lvalues go through *(IN *)&x.
+                arg0, arg1 = args[0].strip(), args[1].strip()
+                in_t, out_t = (INT_TYPE.get(d1, 'uint'),
+                               INT_TYPE.get(d2, 'uint'))
+                if re.fullmatch(r'[A-Za-z_]\w*(\s*\[[^\]]*\])*', arg0):
+                    bits = f'*({in_t} *)&({arg0})'
+                else:
+                    bits = f'({in_t})({arg0})'
+                out.append(f'({out_t})(({bits}) >> (({arg1}) * 8))')
+            else:
+                out.append(src[match.start():close + 1])
             pos = close + 1
-            continue
-        if op == 'CONCAT' and len(args) == 2:
-            wide = 'unsigned long long' if d1 + d2 > 4 else 'uint'
-            out.append(f'(({wide})({args[0].strip()}) << {d2 * 8} | ({wide})({args[1].strip()}))')
-        elif op == 'ZEXT':
-            out.append(f'({INT_TYPE.get(d2, "uint")})({args[0].strip()})')
-        elif op == 'SEXT':
-            out.append(f'({SINT_TYPE.get(d2, "int")})({args[0].strip()})')
-        elif op == 'SUB':
-            out.append(f'({INT_TYPE.get(d1, "uint")})(({args[0].strip()}) >> {d2 * 8})')
-        else:
-            out.append(source[match.start():close + 1])
-        pos = close + 1
+        return ''.join(out)
+
+    out = [expand(source)]
     # Carry/borrow pcode ops: CARRY4(a,b) is the unsigned carry-out of a+b,
     # BORROW4(a,b) the unsigned borrow of a-b. Both appear inside Ghidra's
     # 64-bit add/sub decompositions.
@@ -840,7 +858,8 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
     # explicit; cast the other operand to the same type. When that operand is
     # itself a ``(U *)x`` cast it is retargeted rather than double-wrapped.
     _CAST_OPERAND = (r'(?:\(\s*[A-Za-z_][\w:<>\s]*?\s*\*+\s*\)\s*'
-                     r'(?:\([^()]*\)|[A-Za-z_]\w*)|[A-Za-z_]\w*(?:\s*\[[^\]]*\])?)')
+                     r'(?:\((?:[^()]|\([^()]*\))*\)|0x[0-9a-fA-F]+|\d+|[A-Za-z_]\w*)'
+                     r'|[A-Za-z_]\w*(?:\s*\[[^\]]*\])?)')
     def cast_operand(match):
         expr, ctype, op, operand = (match.group(1), match.group(2),
                                     match.group(3), match.group(4))
@@ -853,7 +872,7 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
             inner = re.fullmatch(
                 r'\*\s*\(\s*[A-Za-z_][\w:<>\s]*?\s*\*+\s*\)\s*(.*)', expr, re.S)
             if inner:
-                return f'({pointee})({inner.group(1)}) {op} {operand}'
+                return f'*({pointee} *)({inner.group(1)}) {op} {operand}'
             retarget = re.fullmatch(
                 r'\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)\s*(.*)', expr, re.S)
             if retarget:
@@ -864,7 +883,8 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
             operand = retarget.group(2)
         return f'{expr} {op} ({ctype})({operand})'
     body = re.sub(
-        r'(\*?\s*\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)(?:\([^()]*\)|[^,;()])*?)'
+        r'(\*?\s*\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)'
+        r'(?:\((?:[^()]|\([^()]*\))*\)|[^,;()])*?)'
         r'\s*(==|!=|<=|>=)\s*(\*?\s*' + _CAST_OPERAND + r')',
         cast_operand, body)
     def cast_operand_rhs(match):
@@ -881,7 +901,7 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
             inner = re.fullmatch(
                 r'\*\s*\(\s*[A-Za-z_][\w:<>\s]*?\s*\*+\s*\)\s*(.*)', expr, re.S)
             if inner:
-                return f'{operand} {op} ({pointee})({inner.group(1)})'
+                return f'{operand} {op} *({pointee} *)({inner.group(1)})'
             retarget = re.fullmatch(
                 r'\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)\s*(.*)', expr, re.S)
             if retarget:
@@ -893,8 +913,13 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         return f'({ctype})({operand}) {op} {expr}'
     body = re.sub(
         r'(\*?\s*' + _CAST_OPERAND + r')\s*(==|!=|<=|>=)\s*'
-        r'(\*?\s*\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)(?:\([^()]*\)|[^,;()])*)',
+        r'(\*?\s*\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)'
+        r'(?:\((?:[^()]|\([^()]*\))*\)|[^,;()])*)',
         cast_operand_rhs, body)
+    # `**(T *)x` double-dereferences a scalar load: the loaded value is an
+    # address, so load a pointer instead (`*(T **)x`).
+    body = re.sub(r'\*(\s*\*\s*\(\s*(?:u?int|undefined\d|byte|char|short|long)\s*)\*(\s*\))',
+                  r'*\1**\2', body)
     # `(&name) op ...` treats the address as an integer: shifts, masks and
     # even +/- are byte arithmetic in pcode, not pointer arithmetic.
     body = re.sub(r'\(\s*&\s*([A-Za-z_]\w*)\s*\)\s*'
