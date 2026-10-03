@@ -484,6 +484,28 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
         if name[:1].isupper() or name.startswith('_') or 'std' in qualifier:
             kind = 'nstemplate' if 'std' in qualifier else 'template'
             type_stubs.add((kind, (qualifier.rstrip(':') + '::' + name) if qualifier else name))
+    # Lowercase template names in type position (``basic_ios<...> *x``) fall
+    # outside the capitalized-type scan but still need a template stub. When
+    # the same name exists as a bare ``std::name`` struct, an unqualified
+    # global template would be ambiguous under ``using namespace std``, so
+    # flatten the use to a global ``std_name`` template instead.
+    flat_templates = set()
+    for match in re.finditer(r'\b([a-z]\w*)\s*<[^(){};=]*>(?=\s*[*&])',
+                             head + result_body):
+        name = match.group(1)
+        if re.search(r'\bstd::\s*' + re.escape(name) + r'\b(?!\s*<)',
+                     head + result_body):
+            flat_templates.add(name)
+    if flat_templates:
+        flatten = re.compile(
+            r'\b(' + '|'.join(sorted(flat_templates)) + r')\s*<')
+        result_body = flatten.sub(
+            lambda m: 'std_' + m.group(1) + '<', result_body)
+        head = flatten.sub(lambda m: 'std_' + m.group(1) + '<', head)
+        type_stubs.update(('template', 'std_' + n) for n in flat_templates)
+    for match in re.finditer(r'\b([a-z]\w*)\s*<[^(){};=]*>(?=\s*[*&])',
+                             head + result_body):
+        type_stubs.add(('template', match.group(1)))
     whole = head + result_body
     for symbol in SYMBOL_RE.findall(whole):
         bare = symbol.lstrip('_')
@@ -762,7 +784,7 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
     # cannot retype the assignment.
     body = re.sub(
         r'\*\s*\(\s*([A-Za-z_][\w:\s<>]*?)\s*(\*+)\s*\)\s*'
-        r'([A-Za-z_][\w.\[\]()+\s>*-]*?)\s*=(?![=])\s*([^;{}]*);',
+        r'([A-Za-z_(][\w.\[\]()+\s>*-]*?)\s*=(?![=])\s*([^;{}]*);',
         lambda m: '*({}{}){} = ({})({});'.format(
             m.group(1), m.group(2), m.group(3),
             (m.group(1) + ' ' + m.group(2)[:-1]).strip() or 'void',
@@ -947,7 +969,10 @@ def cpp_source(records, defined, bad_decls=()):
     emitted_types = set(tree.keys())
     for kind, name in sorted(type_stubs):
         leaf_name = name.split('::')[-1]
-        if leaf_name in emitted_types or leaf_name in stubs:
+        # A name already declared inside namespace std must not get a global
+        # twin: ``using namespace std`` would make every use ambiguous.
+        if (leaf_name in emitted_types or leaf_name in stubs or
+                (kind != 'nstemplate' and leaf_name in nstemplates)):
             continue
         emitted_types.add(leaf_name)
         if kind == 'struct':
