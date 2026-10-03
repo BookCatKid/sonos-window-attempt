@@ -210,11 +210,19 @@ def generated_symbol_name(name):
         # ??$name@targs@class@@sig: the class qualifier closes the name section.
         cls = re.findall(r'@([A-Za-z_]\w*)@@', name)
         if cls:
+            if match.group(1) == 'op_dtor':
+                return cls[-1] + '::~' + cls[-1]
+            if match.group(1) == 'op_ctor':
+                return cls[-1] + '::' + cls[-1]
             leaf = _OP_LEAVES.get(match.group(1), match.group(1))
             return cls[-1] + '::' + leaf
     match = re.match(r'\?([A-Za-z_]\w*)@((?:[A-Za-z_]\w*@?)+?)@@', name)
     if match:
         classes = [part for part in match.group(2).split('@') if part]
+        if match.group(1) == 'op_dtor':
+            return '::'.join(reversed(classes)) + '::~' + classes[0]
+        if match.group(1) == 'op_ctor':
+            return '::'.join(reversed(classes)) + '::' + classes[0]
         leaf = _OP_LEAVES.get(match.group(1), match.group(1))
         return '::'.join(reversed(classes)) + '::' + leaf
     # A global the recovered source declares itself is emitted by the compiler

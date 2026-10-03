@@ -183,9 +183,16 @@ def _scan_qualified_name(text, start):
         pos += 2
         while pos < len(text) and text[pos].isspace():
             pos += 1
-        part, pos = _read_ident(text, pos)
-        if not part:
-            return None
+        if text[pos:pos + 1] == '~':
+            pos += 1
+            part, pos = _read_ident(text, pos)
+            if not part:
+                return None
+            part = 'op_dtor'
+        else:
+            part, pos = _read_ident(text, pos)
+            if not part:
+                return None
         if part == 'operator':
             pos2 = pos
             while pos2 < len(text) and text[pos2] in ' \t':
@@ -367,7 +374,12 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
                 stub_name = qualifier
                 while '<' in stub_name:
                     stub_name = re.sub(r'<[^<>]*>', '', stub_name)
-                member_methods.setdefault(qualifier, set()).add(leaf)
+                # X::~X(this) and X::X(this) are dtor/ctor invocations; emit
+                # them through identifier-legal member names the resolver maps
+                # back to X::~X / X::X.
+                call_leaf = ('op_ctor' if leaf == stub_name.split('::')[-1]
+                             else leaf)
+                member_methods.setdefault(qualifier, set()).add(call_leaf)
                 open_paren = tail
                 close_paren = _balanced(body, open_paren, '(', ')')
                 if close_paren < 0:
@@ -388,7 +400,7 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
                     this_arg, rest = (inner, '') if inner.strip() else ('0', '')
                 else:
                     this_arg, rest = inner[:first_comma], inner[first_comma + 1:]
-                out.append(f'(({stub_name} *)({this_arg.strip()}))->{leaf}({rest.strip()})')
+                out.append(f'(({stub_name} *)({this_arg.strip()}))->{call_leaf}({rest.strip()})')
                 pos = close_paren + 1
         else:
             after = tail

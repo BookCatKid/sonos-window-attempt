@@ -62,6 +62,7 @@ extern int getSingleton(...);
 extern int int_addref(...);
 extern int int_allocRep(...);
 extern int int_release(...);
+extern int op_ctor(...);
 extern int op_eq(...);
 extern int operator_new(...);
 extern int stringWithFormat(...);
@@ -75,6 +76,7 @@ extern int thunk_FUN_105a1c80(...);
 extern int thunk_FUN_105a1d20(...);
 extern int thunk_FUN_105a26b0(...);
 extern int thunk_FUN_105bebd0(...);
+extern int thunk_FUN_105f3ab0(...);
 extern int thunk_FUN_105f5920(...);
 extern int thunk_FUN_105f5a00(...);
 extern int thunk_FUN_105f5d20(...);
@@ -302,6 +304,7 @@ extern undefined1 LAB_115bddb5[];
 extern undefined1 LAB_115bde15[];
 extern undefined1 LAB_115bde6d[];
 extern undefined1 LAB_115bdeb5[];
+extern undefined1 LAB_115bdeed[];
 extern undefined1 LAB_115bdf35[];
 extern undefined1 LAB_115bdfd5[];
 extern undefined1 LAB_115be6cd[];
@@ -325,7 +328,7 @@ extern int *stack0x00000004;
 extern int *stack0xfffffffc;
 extern void *ExceptionList;
 struct SCLibrary { char _pad; SCLibrary(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class... A> int getSingleton(A...); };
-struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class... A> int endsWith(A...); template<class... A> int int_addref(A...); template<class... A> int int_allocRep(A...); template<class... A> int int_release(A...); template<class... A> int op_eq(A...); template<class... A> int stringWithFormat(A...); };
+struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class... A> int endsWith(A...); template<class... A> int int_addref(A...); template<class... A> int int_allocRep(A...); template<class... A> int int_release(A...); template<class... A> int op_ctor(A...); template<class... A> int op_eq(A...); template<class... A> int stringWithFormat(A...); };
 typedef void *WARNING;
 struct Page { char _pad; Page(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SCIClipboardDelegate { char _pad; SCIClipboardDelegate(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
@@ -339,7 +342,7 @@ struct SCSubmitDiagsWizardErrorPage { char _pad; SCSubmitDiagsWizardErrorPage(..
 struct SCSubmitDiagsWizardIntroPage { char _pad; SCSubmitDiagsWizardIntroPage(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SCSubmitDiagsWizardSubmittingPage { char _pad; SCSubmitDiagsWizardSubmittingPage(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Subroutine { char _pad; Subroutine(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct Recovered_Bulk { char _pad; undefined4 __thiscall FUN_10610e90(undefined4 param_2); undefined4 __thiscall FUN_106142d0(undefined4 param_2); SCStr * __thiscall FUN_10618a10(SCStr *param_2); void __thiscall FUN_1061c630(undefined4 param_2); void __thiscall FUN_1061c700(int param_2); undefined4 * __thiscall FUN_1061dcf0(undefined4 *param_2,SCStr *param_3); int * __thiscall FUN_1061e120(int *param_2); int * __thiscall FUN_1061e250(undefined4 *param_2); undefined4 * __thiscall FUN_1061e420(char *param_2,undefined4 param_3); undefined4 * __thiscall FUN_1061e510(char *param_2,undefined4 param_3); undefined4 * __thiscall FUN_1061e600(char *param_2,undefined4 param_3); undefined4 * __thiscall FUN_1061e6f0(char *param_2,undefined4 param_3); undefined4 * __thiscall FUN_1061e8b0(undefined4 param_2); undefined4 * __thiscall FUN_1061ea00(undefined4 param_2); undefined4 * __thiscall FUN_1061eb50(undefined4 param_2); undefined4 * __thiscall FUN_1061ecc0(undefined4 param_2); undefined4 * __thiscall FUN_1061f960(byte param_2); };
+struct Recovered_Bulk { char _pad; undefined4 __thiscall FUN_10610e90(undefined4 param_2); undefined4 __thiscall FUN_106142d0(undefined4 param_2); SCStr * __thiscall FUN_10618a10(SCStr *param_2); void __thiscall FUN_1061c370(undefined4 *param_2); void __thiscall FUN_1061c630(undefined4 param_2); void __thiscall FUN_1061c700(int param_2); undefined4 * __thiscall FUN_1061dcf0(undefined4 *param_2,SCStr *param_3); int * __thiscall FUN_1061e120(int *param_2); int * __thiscall FUN_1061e250(undefined4 *param_2); undefined4 * __thiscall FUN_1061e420(char *param_2,undefined4 param_3); undefined4 * __thiscall FUN_1061e510(char *param_2,undefined4 param_3); undefined4 * __thiscall FUN_1061e600(char *param_2,undefined4 param_3); undefined4 * __thiscall FUN_1061e6f0(char *param_2,undefined4 param_3); undefined4 * __thiscall FUN_1061e8b0(undefined4 param_2); undefined4 * __thiscall FUN_1061ea00(undefined4 param_2); undefined4 * __thiscall FUN_1061eb50(undefined4 param_2); undefined4 * __thiscall FUN_1061ecc0(undefined4 param_2); undefined4 * __thiscall FUN_1061f960(byte param_2); };
 using namespace std;
 undefined4 __stdcall FUN_1060dac0(undefined4 param_1);
 undefined4 __stdcall FUN_1060e600(undefined4 param_1);
@@ -7634,6 +7637,45 @@ void __fastcall FUN_1061c090(int param_1)
     iVar1 = (int)(thunk_FUN_10eb41b0());
     *(undefined1 *)(iVar1 + 0x120) = 0;
   }
+
+  return;
+
+ } catch (...) { }
+}
+
+
+// Reference entry 1061c370; body size 145 bytes.
+#line 1 "ENTRY_1061c370"
+
+void __thiscall Recovered_Bulk::FUN_1061c370(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+ try {
+  undefined4 *puVar1;
+  int *piVar2;
+  uint uVar3;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  uVar3 = (uint)(DAT_12126b84);
+
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    piVar2 = (int *)((int *)param_2[1]);
+    puVar1[1] = (undefined4)(piVar2);
+    if (piVar2 != (int *)0x0) {
+      (**(code **)(*piVar2 + 4))(uVar3);
+    }
+
+    ((SCStr *)((SCStr *)(puVar1 + 2)))->op_ctor((SCStr *)(param_2 + 2));
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 0xc;
+
+    return;
+  }
+  thunk_FUN_105f3ab0(puVar1,param_2);
 
   return;
 
