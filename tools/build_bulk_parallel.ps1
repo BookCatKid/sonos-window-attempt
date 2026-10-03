@@ -21,7 +21,7 @@ $jobs = @()
             if (-not $f) { continue }
             $f = $f.Trim()
             $name = [IO.Path]::GetFileNameWithoutExtension($f)
-            & cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c `
+            & cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /FS /c `
                 "/Foout\$name.obj" $f *> "out\$name.log"
             if ($LASTEXITCODE -ne 0) {
                 "$f" | Out-File -Append -Encoding ascii out\bulk-failures.log
