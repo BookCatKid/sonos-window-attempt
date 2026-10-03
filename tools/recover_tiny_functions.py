@@ -155,6 +155,35 @@ def emit(insns, entry, want_name):
             return rec(entry, 'void FUN_%s(int param_1)' % entry,
                        '  (**(code **)(*(int *)param_1 + %d))();\n' % md[1])
 
+    # mov eax, [esp+K] ; mov [ecx+J], eax ; ret N   (field setter)
+    if n == 3 and ops[0] == ('mov', 'eax, dword ptr [esp + 4]') \
+            and ops[1][0] == 'mov' and ops[2][0] == 'ret':
+        dst, src = ops[1][1].split(', ')
+        md = mem_disp(dst.replace('dword ptr ', ''))
+        if md and md[0] == 'ecx' and src == 'eax':
+            return rec(entry,
+                       'void __thiscall FUN_%s(int param_1, int param_2)'
+                       % entry,
+                       '  *(undefined4 *)(param_1 + %d) = param_2;\n'
+                       '  return;\n' % md[1])
+
+    # mov eax, [esp+4] ; mov eax, [eax+K] ; ret   (stack-arg field getter)
+    if n == 3 and ops[0] == ('mov', 'eax, dword ptr [esp + 4]') \
+            and ops[1][0] == 'mov' and ops[2][0] == 'ret':
+        md = mem_disp(ops[1][1].replace('eax, dword ptr ', ''))
+        if md and md[0] == 'eax':
+            return rec(entry, 'undefined4 FUN_%s(int param_1)' % entry,
+                       '  return *(undefined4 *)(param_1 + %d);\n' % md[1])
+
+    # mov eax, [ecx] ; call/jmp [eax+K]   (vcall, this already in ecx)
+    if n == 2 and ops[0] == ('mov', 'eax, dword ptr [ecx]') \
+            and ops[1][0] in ('call', 'jmp'):
+        md = mem_disp(ops[1][1].replace('dword ptr ', ''))
+        if md and md[0] == 'eax':
+            return rec(entry,
+                       'void __thiscall FUN_%s(int param_1)' % entry,
+                       '  (**(code **)(*(int *)param_1 + %d))();\n' % md[1])
+
     # mov ecx, [esp+4] ; mov eax, [ecx+K] ; jmp/call [eax+J] ; ret N
     if n == 4 and ops[0] == ('mov', 'ecx, dword ptr [esp + 4]') \
             and ops[1][0] == 'mov' and ops[1][1].startswith('eax, dword ptr [ecx') \
