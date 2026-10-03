@@ -1101,13 +1101,19 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         _qname = (r'[A-Za-z_]\w*(?:\s*<[^()]*>)?'
                   r'(?:::[A-Za-z_]\w*(?:\s*<[^()]*>)?)*')
         _cast_operand = (r'(?:&?\s*' + _qname + r'|0x[0-9a-fA-F]+|\d+'
-                         r'|(?:\((?:[^()]|\([^()]*\))*\)\s*)+'
-                         r'(?:[^,;()<>|&]|\((?:[^()]|\([^()]*\))*\))*)')
+                         r'|(?:\((?:[^()]|\((?:[^()]|\([^()]*\))*\))*\)\s*)+'
+                         r'(?:[^,;()<>|&]|&\s*[A-Za-z_]'
+                         r'|\((?:[^()]|\((?:[^()]|\([^()]*\))*\))*\))*)')
         def retarget_rhs(match):
             operand = match.group(2)
             # ``(U)(x)``: retype the head cast instead of double-wrapping
             # (which would parse ``(T *)(U)`` as a call of the cast group).
-            if re.match(r'\s*\(\s*[A-Za-z_][\w:<>\s]*\**\s*\)', operand):
+            # A lone ``(x)`` is a parenthesised expression, not a cast —
+            # stripping it would leave a bare ``(T *)``.
+            inner = re.match(r'^\s*(\(\s*[A-Za-z_][\w:<>\s]*\**\s*\))(.*)',
+                             operand, re.S)
+            if (inner and inner.group(2).strip()
+                    and re.match(r'[\(\w\d]', inner.group(2).lstrip())):
                 return match.group(1) + re.sub(
                     r'^\s*\(\s*[A-Za-z_][\w:<>\s]*\**\s*\)',
                     '(' + target + ')', operand, count=1)
