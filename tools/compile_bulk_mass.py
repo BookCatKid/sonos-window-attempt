@@ -536,7 +536,9 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
     head_part, body_part = whole[:head_end], whole[head_end:]
     body_part = _eh_wrap(body_part)
     # A label must precede a statement; Ghidra labels can sit at block ends.
-    body_part = re.sub(r'((?:LAB_\w+|[A-Za-z_]\w*)\s*:)\s*(?=\})', r'\1;', body_part)
+    body_part = re.sub(
+        r'((?:LAB_\w+|case\b[^:\n]*|default|[A-Za-z_]\w*)\s*:)\s*(?=\})',
+        r'\1;', body_part)
     # (code *)LAB_x casts an array extern straight to a function pointer;
     # take the address first so the cast is legal.
     body_part = re.sub(r'(\(\s*code\b[^)]*\*+\s*\)\s*)(LAB_\w+)', r'\1&\2',
