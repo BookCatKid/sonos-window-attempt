@@ -1319,6 +1319,26 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
                       lambda m: f'{m.group(1)} {m.group(2)} ({target})({m.group(3).replace(" ", "")})', body)
         body = re.sub(r'(?<![*&])(&?\s*\b' + _qname + r')\s*(' + _CMP + r')\s*(?<![*&])(\b' + re.escape(name) + r'\s*[-+](?![=>])\s*[^,;()<>!=&|]*)',
                       lambda m: f'({target})({m.group(1).replace(" ", "")}) {m.group(2)} {m.group(3)}', body)
+        # ``(scal)&x + n CMP name``: the arithmetic side retargets to the
+        # pointer name's type.
+        if target.rstrip().endswith('*'):
+            body = re.sub(
+                r'(\(\s*(?:u?int|short|ushort|char|byte|bool|long|'
+                r'longlong|float|double|undefined\d|sbyte|size_t|uint\d|'
+                r'DWORD)\s*\)\s*&?\s*\w*\s*[-+]\s*[^,;()]*?)'
+                r'\s*(' + _CMP + r')\s*(?<![*&])(?<!\))'
+                r'(\b' + re.escape(name) + r'\b(?!\s*(?:->|\.)))',
+                lambda m: f'(({target})({m.group(1).replace(" ", "")})) '
+                          f'{m.group(2)} {m.group(3)}', body)
+            body = re.sub(
+                r'(?<![*&])(?<!\))(?<!\) )(?<!\)  )'
+                r'(\b' + re.escape(name) + r'\b(?!\s*(?:->|\.)))'
+                r'\s*(' + _CMP + r')\s*'
+                r'(\(\s*(?:u?int|short|ushort|char|byte|bool|long|'
+                r'longlong|float|double|undefined\d|sbyte|size_t|uint\d|'
+                r'DWORD)\s*\)\s*&?\s*\w*\s*[-+]\s*[^,;()]*)',
+                lambda m: f'{m.group(1)} {m.group(2)} '
+                          f'(({target})({m.group(3).replace(" ", "")}))', body)
         # ``(T *)x op name[i]``: the indexed element is a scalar, so the
         # pointer cast must drop to the element type, not the other side up.
         if target.rstrip().endswith('*'):
@@ -1402,7 +1422,7 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
     # itself a ``(U *)x`` cast it is retargeted rather than double-wrapped.
     _CAST_OPERAND = (r'(?:\(\s*[A-Za-z_][\w:<>,\s]*?\s*\*+\s*\)\s*'
                      r'(?:\((?:[^()]|\([^()]*\))*\)|0x[0-9a-fA-F]+|\d+|'
-                     r'[A-Za-z_]\w*(?:\s*<[^()]*>)?'
+                     r'&?\s*[A-Za-z_]\w*(?:\s*<[^()]*>)?'
                      r'(?:::[A-Za-z_]\w*(?:\s*<[^()]*>)?)*)'
                      r'|[A-Za-z_]\w*(?:\s*<[^()]*>)?'
                      r'(?:::[A-Za-z_]\w*(?:\s*<[^()]*>)?)*'
@@ -1437,6 +1457,20 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         retarget = re.fullmatch(
             r'\(\s*([A-Za-z_][\w:<>,\s]*?\s*\*+)\s*\)\s*(.*)', operand, re.S)
         if retarget:
+            # `(T **)(e) CMP (U *)v`: the reference compares equal pointer
+            # depth; drop the deeper cast's extra stars rather than
+            # pushing the shallower side up a level.
+            uctype = retarget.group(1).rstrip()
+            if uctype.endswith('*') and ctype.count('*') > uctype.count('*'):
+                while ctype.rstrip().endswith('*') and \
+                        ctype.count('*') > uctype.count('*'):
+                    ctype = ctype.rstrip()[:-1].rstrip()
+                einner = re.fullmatch(
+                    r'\(\s*[A-Za-z_][\w:<>,\s]*?\s*\*+\s*\)\s*(.*)',
+                    expr, re.S)
+                if einner:
+                    return (f'({uctype})({einner.group(1)}) {op} '
+                            f'({uctype})({retarget.group(2)})')
             operand = retarget.group(2)
         return f'{expr} {op} ({ctype})({operand})'
     body = re.sub(
@@ -1483,6 +1517,18 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         if retarget:
             operand = retarget.group(2)
         return f'({ctype})({operand}) {op} {expr}'
+    # `&name` is a `T *` lvalue when `name` is `T`; compare wraps that cast
+    # it to `T` lose a level (`(char *)&x` on `char *x` is `char **` typed
+    # `char *`). Runs after the varmap loop so wraps produced above are seen.
+    for name, target in varmap.items():
+        if not target.rstrip().endswith('*'):
+            continue
+        base = target.rstrip()[:-1].rstrip()
+        body = re.sub(
+            r'\(\s*' + re.escape(base) + r'\s*\*\s*\)(?!\()'
+            r'&\s*(\b' + re.escape(name) + r'\b)',
+            lambda m: '(' + target + ' *)(&' + m.group(1) + ')',
+            body)
     # ``a + b == (T *)x``: the operand before the operator may be an addend
     # of a preceding arithmetic term — retargeting it to ``T *`` would
     # produce ``char * + char *``. The double lookbehind covers one or two
@@ -1636,16 +1682,16 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         r'(int)\1 \2 (int)(\3)', body)
     # `*(T *)x == &name` — `&extern` is `int *`; retarget to the peer.
     body = re.sub(
-        r'(\**\s*\(\s*([A-Za-z_][\w:<>,\s]*?)\s*\*+\s*\)\s*'
+        r'(\**\s*\(\s*([A-Za-z_][\w:<>,\s]*?\s*\*+)\s*\)\s*'
         r'(?:\((?:[^()]|\([^()]*\))*\)|[^,;()])*?)'
         r'\s*(==|!=|<=|>=)\s*&\s*([A-Za-z_]\w*)',
-        lambda m: f'{m.group(1)} {m.group(3)} ({m.group(2)}*)&{m.group(4)}',
+        lambda m: f'{m.group(1)} {m.group(3)} ({m.group(2)})&{m.group(4)}',
         body)
     body = re.sub(
         r'(?<!\))(?<!\) )(?<!\)  )&\s*([A-Za-z_]\w*)\s*(==|!=|<=|>=)\s*'
-        r'(\**\s*\(\s*([A-Za-z_][\w:<>,\s]*?)\s*\*+\s*\)\s*'
+        r'(\**\s*\(\s*([A-Za-z_][\w:<>,\s]*?\s*\*+)\s*\)\s*'
         r'(?:\((?:[^()]|\([^()]*\))*\)|[^,;()])*?)',
-        lambda m: f'({m.group(3)}*)&{m.group(1)} {m.group(2)} {m.group(4)}',
+        lambda m: f'({m.group(3)})&{m.group(1)} {m.group(2)} {m.group(4)}',
         body)
     # `(*(T **)x)[i] = rhs;` — the element type is `T`.
     body = re.sub(
@@ -1777,6 +1823,23 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         body = re.sub(r'(?<![*&\w])(?<![*&]\s)(?<!&\()'
                       r'(?<!&\s\()\b' + re.escape(name)
                       + r'\b(?!\s*\[)(?!\s*\)\s*\[)', '(uint)&' + name, body)
+    # The decay above runs after the compare passes, so reconcile
+    # `(uint)&buf ... CMP ptr` against the pointer operand's type now.
+    for name, target in varmap.items():
+        if not target.rstrip().endswith('*'):
+            continue
+        _addrop = (r'(\(\s*uint\s*\)\s*&\s*\w+'
+                   r'(?:\s*[-+]\s*[^,;()]*)?)')
+        body = re.sub(
+            _addrop + r'\s*(' + _CMP + r')\s*'
+            r'(\b' + re.escape(name) + r'\b(?!\s*(?:->|\.)))',
+            lambda m: f'(({target})({m.group(1)})) {m.group(2)} '
+                      f'{m.group(3)}', body)
+        body = re.sub(
+            r'(\b' + re.escape(name) + r'\b(?!\s*(?:->|\.)))'
+            r'\s*(' + _CMP + r')\s*' + _addrop,
+            lambda m: f'{m.group(1)} {m.group(2)} '
+                      f'(({target})({m.group(3)}))', body)
     # `name[i]` on a scalar or data extern is a pointer the decompiler
     # mistyped (`param_3[-4]`, `DAT_x[-1]`); subscript through the address.
     _scalar_bases = re.compile(
@@ -1814,7 +1877,10 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
     # In libc call position a `void *` is expected, not the `uint` form used
     # for arithmetic.
     def _libc_args(match):
-        text = re.sub(r'\(\s*uint\s*\)\s*&', '(void *)&', match.group(0))
+        # `char *` — `void *` would reject the pointer arithmetic Ghidra
+        # emits on buffer bases, and `char *` still converts to `void *`.
+        text = re.sub(r'\(\s*(?:uint|void \*)\s*\)\s*&', '(char *)&',
+                      match.group(0))
         fname, _, rest = text.partition('(')
         depth = 0
         commas, end = [], len(rest) - 1
@@ -1843,6 +1909,14 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         r'\b(?:memset|memcpy|memcmp|memmove|strlen|wcslen|strcpy|wcscpy|'
         r'strcmp|wcscmp|strstr|fread|fwrite|free|realloc|calloc|malloc)'
         r'\((?:[^()]|\((?:[^()]|\([^()]*\))*\))*\)', _libc_args, body)
+    # Wrap passes that parenthesise a literal leave the `U`/`L` suffix
+    # stranded outside the paren — drop it.
+    body = re.sub(r'\)\s*([uUlL]+)(?=[^0-9A-Za-z_]|$)', ')', body)
+    # `((scal))` — an emptied cast inside parens: `(int)((uint))x` reads as
+    # a cast with no operand. Collapse to `(int)(uint)x`.
+    body = re.sub(r'\(\s*(\(\s*(?:u?int|short|ushort|char|byte|bool|long|'
+                  r'longlong|float|double|undefined\d|sbyte|size_t|uint\d|'
+                  r'DWORD)\s*\))\s*\)', r'\1', body)
     # `()(` — an emptied operand group glued to a cast: `(int *)()(((x)))`.
     body = re.sub(r'\)\s*\(\s*\)\s*(?=\()', ')', body)
     # MSVC rejects data->function-pointer C casts (C2440) but accepts them
@@ -2002,10 +2076,24 @@ def cpp_source(records, defined, bad_decls=()):
                 if match.group(2) not in void_fns:
                     continue
                 paren = text.find('(', match.end() - 1)
-                end = _balanced(text, paren, '(', ')')
-                if end < 0:
+                call_end = _balanced(text, paren, '(', ')')
+                if call_end < 0:
                     continue
-                call = text[match.start(2):end + 1]
+                # `(T)((FUN_x(...)),0)`/`(T)(FUN_x(...),0)` are already
+                # void-safe; re-wrapping would orphan the trailing `,0)`.
+                if re.match(r'[\),]\s*,\s*0\b', text[call_end + 1:]):
+                    continue
+                end = call_end
+                # `(T)(call)` — the `(` after `(T)` was consumed by the
+                # match; its closing `)` must be swallowed or it orphans.
+                if re.search(r'\)\s*\(', match.group(0)):
+                    close = call_end + 1
+                    while text[close:close + 1] == ' ':
+                        close += 1
+                    if text[close:close + 1] != ')':
+                        continue
+                    end = close
+                call = text[match.start(2):call_end + 1]
                 out.append(text[pos:match.start()])
                 out.append(f'({match.group(1).strip()})(({call}), 0)')
                 pos = end + 1
