@@ -165,9 +165,10 @@ typedef void *X;
 typedef void *Y;
 typedef void *Z;
 typedef void *_func_4879;
+using namespace std;
 struct Recovered_Bulk { char _pad; undefined8 __thiscall FUN_113973c0(uint param_2,int param_3); template<class... A> int FUN_113973c0(A...); int __thiscall FUN_1139c620(int param_2); template<class... A> int FUN_1139c620(A...); int __thiscall FUN_113d2860(undefined4 *param_2,undefined4 param_3,uint param_4,int param_5,
             int *param_6); template<class... A> int FUN_113d2860(A...); };
-using namespace std;
+
 extern int FUN_1005ef7a(...);
 extern int FUN_1008d97e(...);
 extern int FUN_112fa7b0(...);

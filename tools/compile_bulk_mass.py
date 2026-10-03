@@ -492,6 +492,34 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
                 # used inside them still need std members/typedefs.
                 for argname in re.findall(r'\bstd::(\w+)\b', inner):
                     member_stubs.setdefault('std', set()).add(argname)
+                # ``X<args>::~X<args>`` used as a function-pointer argument
+                # (eh_vector iterator dtor) never reaches the main scan.
+                def arg_dtor(match):
+                    bare = re.sub(r'<[^<>]*>', '', match.group(1))
+                    member_methods.setdefault(bare, set()).add('op_dtor')
+                    templated = '<' in match.group(0)
+                    return ('((int (*)())&' + bare + ('<>' if templated else '')
+                            + '::op_dtor)')
+                def arg_ctor(match):
+                    bare = re.sub(r'<[^<>]*>', '', match.group(1))
+                    member_methods.setdefault(bare, set()).add('op_ctor')
+                    templated = '<' in match.group(0)
+                    return ('((int (*)())&' + bare + ('<>' if templated else '')
+                            + '::op_ctor)')
+                inner = re.sub(
+                    r'\b([A-Za-z_]\w*(?:\s*<[^;()]*>)?'
+                    r'(?:::\w+(?:\s*<[^;()]*>)?)*)'
+                    r'::~\s*\w+(?:\s*<[^;()]*>)?',
+                    arg_dtor, inner)
+                inner = re.sub(
+                    r'\b([A-Za-z_]\w*(?:\s*<[^;()]*>)?'
+                    r'(?:::\w+(?:\s*<[^;()]*>)?)*)::'
+                    r'([A-Za-z_]\w*(?:\s*<[^;()]*>)?)(?!\s*[(<])',
+                    lambda m: (arg_ctor(m) if re.sub(
+                                   r'<[^<>]*>', '', m.group(2)) ==
+                               re.sub(r'<[^<>]*>', '',
+                                      m.group(1).split('::')[-1])
+                               else m.group(0)), inner)
                 depth = 0
                 first_comma = -1
                 for index, char in enumerate(inner):
@@ -519,6 +547,15 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
                 externs.add(('data', flat))
                 out.append(flat if before.endswith('&') else f'(uint)&{flat}')
                 pos = tail
+            elif leaf == 'op_dtor':
+                # X::~X (templated or not) as a value is the dtor function
+                # pointer; the templated check below would eat it first.
+                stub_name = re.sub(r'<[^<>]*>', '', qualifier)
+                member_methods.setdefault(qualifier, set()).add('op_dtor')
+                out.append(f'((int (*)())&{stub_name}'
+                           + ('<>' if '<' in body[start:name_end] else '')
+                           + '::op_dtor)')
+                pos = name_end
             elif templated:
                 type_stubs.add(('nstemplate' if qualifier.startswith('std')
                                 else 'template', qualifier + '::' + leaf))
@@ -991,8 +1028,21 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         r'\s*(==|!=|<=|>=)\s*(\*?\s*' + _CAST_OPERAND + r')',
         cast_operand, body)
     def cast_operand_rhs(match):
-        operand, op, expr, ctype = (match.group(1), match.group(2),
-                                    match.group(3), match.group(4))
+        operand, op, expr, ctype = (match.group(1), match.group(3),
+                                    match.group(4), match.group(5))
+        lead_cast = match.group(2)
+        if lead_cast:
+            # ``(T *)*(U **)x op (V *)y``: the outer cast pins the
+            # comparison type; retarget the right side to it rather than
+            # retyping by the loaded pointee.
+            expr_inner = re.fullmatch(
+                r'\*?\s*\(\s*[A-Za-z_][\w:<>\s]*?\s*\*+\s*\)\s*(.*)',
+                expr, re.S)
+            expr_inner = (expr_inner.group(1) if expr_inner
+                          and not expr.lstrip().startswith('*') else expr)
+            return (f'{operand} {op} '
+                    f'({lead_cast})({expr_inner})')
+        operand = operand
         if expr.lstrip().startswith('*') and ctype.rstrip().endswith('*'):
             ctype = ctype.rstrip()[:-1].rstrip() or 'void *'
         # `*(T *)x op (U *)y` compares a pointee against a pointer: retarget
@@ -1015,10 +1065,19 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
             operand = retarget.group(2)
         return f'({ctype})({operand}) {op} {expr}'
     body = re.sub(
-        r'(\*?\s*' + _CAST_OPERAND + r')\s*(==|!=|<=|>=)\s*'
+        r'((?:\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)\s*)?'
+        r'\*?\s*' + _CAST_OPERAND + r')\s*(==|!=|<=|>=)\s*'
         r'(\*?\s*\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)'
         r'(?:\((?:[^()]|\([^()]*\))*\)|[^,;()])*)',
         cast_operand_rhs, body)
+    # `x == (StubType)0` compares a scalar to a default-constructed stub; the
+    # literal carries no type, so drop the value cast.
+    body = re.sub(
+        r'([!=]=)\s*\(\s*[A-Z]\w*(?:::\w+)?\s*\)\s*(0x0+|\b0)\b',
+        r'\1 \2', body)
+    body = re.sub(
+        r'\(\s*[A-Z]\w*(?:::\w+)?\s*\)\s*(0x0+|\b0)\b\s*([!=]=)',
+        r'\1 \2', body)
     # `**(T *)x` double-dereferences a scalar load: the loaded value is an
     # address, so load a pointer instead (`*(T **)x`).
     body = re.sub(r'\*(\s*\*\s*\(\s*(?:u?int|undefined\d|byte|char|short|long)\s*)\*(\s*\))',

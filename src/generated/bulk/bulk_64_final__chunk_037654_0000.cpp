@@ -153,8 +153,9 @@ typedef void *X;
 typedef void *Y;
 typedef void *Z;
 typedef void *_ROWID_;
-struct Recovered_Bulk { char _pad; int * __thiscall FUN_11316ba0(undefined4 *param_2,int *param_3,int *param_4,int param_5); template<class... A> int FUN_11316ba0(A...); uint __thiscall FUN_1131dd60(byte *param_2,int param_3,byte param_4); template<class... A> int FUN_1131dd60(A...); };
 using namespace std;
+struct Recovered_Bulk { char _pad; int * __thiscall FUN_11316ba0(undefined4 *param_2,int *param_3,int *param_4,int param_5); template<class... A> int FUN_11316ba0(A...); uint __thiscall FUN_1131dd60(byte *param_2,int param_3,byte param_4); template<class... A> int FUN_1131dd60(A...); };
+
 extern int FUN_112f74b0(...);
 extern int FUN_112f8240(...);
 extern int FUN_112fa7b0(...);

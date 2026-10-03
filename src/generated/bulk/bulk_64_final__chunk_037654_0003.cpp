@@ -105,7 +105,7 @@ extern int FUN_11482ed0(...);
 extern int FUN_114839e0(...);
 extern int FUN_11489350(...);
 extern int FUN_1148a52f(...);
-int __stdcall FUN_1148b143(HINSTANCE__ *param_1,ulong param_2,void *param_3);
+extern int FUN_1148b143(...);
 extern int FUN_1148b28d(...);
 extern int FUN_1148b387(...);
 extern int FUN_1148b394(...);
@@ -553,42 +553,42 @@ void FUN_114898e0(int *param_1,undefined1 *param_2);
 extern void FUN_114898e0(...);
 void FUN_11489a50(int param_1,int *param_2);
 extern void FUN_11489a50(...);
-/* Library Function - Single Match struct _IMAGE_SECTION_HEADER * __cdecl find_pe_section(unsigned char * const_,unsigned int_) Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */ _IMAGE_SECTION_HEADER * __cdecl FUN_1148a52f(uchar *param_1,uint param_2);
+/* Library Function - Single Match struct _IMAGE_SECTION_HEADER * __cdecl find_pe_section(unsigned char * const_,unsigned int_) Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */_IMAGE_SECTION_HEADER * __cdecl FUN_1148a52f(uchar *param_1,uint param_2);
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ undefined4 FUN_1148a74e(int param_1);
 extern /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ undefined4 FUN_1148a74e(...);
 void FUN_1148aaa4(int *param_1);
 extern void FUN_1148aaa4(...);
 void FUN_1148ab00(int *param_1);
 extern void FUN_1148ab00(...);
-/* Library Function - Single Match __Init_thread_wait Library: Visual Studio 2019 Release */ void FUN_1148abc7(DWORD param_1);
-extern /* Library Function - Single Match __Init_thread_wait Library: Visual Studio 2019 Release */ void FUN_1148abc7(...);
+/* Library Function - Single Match __Init_thread_wait Library: Visual Studio 2019 Release */void FUN_1148abc7(DWORD param_1);
+extern /* Library Function - Single Match __Init_thread_wait Library: Visual Studio 2019 Release */void FUN_1148abc7(...);
 uint FUN_1148ae00(void);
 extern uint FUN_1148ae00(...);
-/* Library Function - Single Match int __stdcall dllmain_crt_dispatch(struct HINSTANCE__ * const_,unsigned long_,void * const_) Library: Visual Studio 2019 Release */ int __stdcall FUN_1148b143(HINSTANCE__ *param_1,ulong param_2,void *param_3);
+/* Library Function - Single Match int __stdcall dllmain_crt_dispatch(struct HINSTANCE__ * const_,unsigned long_,void * const_) Library: Visual Studio 2019 Release */int FUN_1148b143(HINSTANCE__ *param_1,ulong param_2,void *param_3);
 /* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 */ undefined4 FUN_1148b1aa(undefined4 param_1,undefined4 param_2);
 extern /* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 */ undefined4 FUN_1148b1aa(...);
 /* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 */ byte FUN_1148b2f2(undefined4 param_1);
 extern /* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 */ byte FUN_1148b2f2(...);
-/* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 */ int __cdecl FUN_1148b3ce(HINSTANCE__ *param_1,ulong param_2,void *param_3);
-/* Library Function - Single Match __alldiv Library: Visual Studio */ undefined8 __stdcall FUN_1148b9a0(uint param_1,uint param_2,uint param_3,uint param_4);
-extern /* Library Function - Single Match __alldiv Library: Visual Studio */ undefined8 FUN_1148b9a0(...);
-/* Library Function - Single Match __allrem Library: Visual Studio */ undefined8 __stdcall FUN_1148bed0(uint param_1,uint param_2,uint param_3,uint param_4);
-extern /* Library Function - Single Match __allrem Library: Visual Studio */ undefined8 FUN_1148bed0(...);
+/* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 */ /* Library Function - Single Match int __cdecl dllmain_dispatch(struct HINSTANCE__ * const_,unsigned long_,void * const_) Library: Visual Studio 2019 Release */int __cdecl FUN_1148b3ce(HINSTANCE__ *param_1,ulong param_2,void *param_3);
+/* Library Function - Single Match __alldiv Library: Visual Studio */undefined8 FUN_1148b9a0(uint param_1,uint param_2,uint param_3,uint param_4);
+extern /* Library Function - Single Match __alldiv Library: Visual Studio */undefined8 FUN_1148b9a0(...);
+/* Library Function - Single Match __allrem Library: Visual Studio */undefined8 FUN_1148bed0(uint param_1,uint param_2,uint param_3,uint param_4);
+extern /* Library Function - Single Match __allrem Library: Visual Studio */undefined8 FUN_1148bed0(...);
 /* WARNING: Removing unreachable block (ram,0x1148c0b9) */ undefined4 FUN_1148c04b(void);
-/* Library Function - Single Match __aullrem Library: Visual Studio */ undefined8 __stdcall FUN_1148c350(uint param_1,uint param_2,uint param_3,uint param_4);
-extern /* Library Function - Single Match __aullrem Library: Visual Studio */ undefined8 FUN_1148c350(...);
-/* Library Function - Single Match __alldvrm Library: Visual Studio */ undefined8 __stdcall FUN_1148c3f0(uint param_1,uint param_2,uint param_3,uint param_4);
-extern /* Library Function - Single Match __alldvrm Library: Visual Studio */ undefined8 FUN_1148c3f0(...);
-/* Library Function - Single Match __aulldiv Library: Visual Studio */ undefined8 __stdcall FUN_1148c540(uint param_1,uint param_2,uint param_3,uint param_4);
-extern /* Library Function - Single Match __aulldiv Library: Visual Studio */ undefined8 FUN_1148c540(...);
-/* Library Function - Single Match __aulldvrm Library: Visual Studio */ undefined8 __stdcall FUN_1148c5d0(uint param_1,uint param_2,uint param_3,uint param_4);
-extern /* Library Function - Single Match __aulldvrm Library: Visual Studio */ undefined8 FUN_1148c5d0(...);
+/* Library Function - Single Match __aullrem Library: Visual Studio */undefined8 FUN_1148c350(uint param_1,uint param_2,uint param_3,uint param_4);
+extern /* Library Function - Single Match __aullrem Library: Visual Studio */undefined8 FUN_1148c350(...);
+/* Library Function - Single Match __alldvrm Library: Visual Studio */undefined8 FUN_1148c3f0(uint param_1,uint param_2,uint param_3,uint param_4);
+extern /* Library Function - Single Match __alldvrm Library: Visual Studio */undefined8 FUN_1148c3f0(...);
+/* Library Function - Single Match __aulldiv Library: Visual Studio */undefined8 FUN_1148c540(uint param_1,uint param_2,uint param_3,uint param_4);
+extern /* Library Function - Single Match __aulldiv Library: Visual Studio */undefined8 FUN_1148c540(...);
+/* Library Function - Single Match __aulldvrm Library: Visual Studio */undefined8 FUN_1148c5d0(uint param_1,uint param_2,uint param_3,uint param_4);
+extern /* Library Function - Single Match __aulldvrm Library: Visual Studio */undefined8 FUN_1148c5d0(...);
 void FUN_1148c7fb(int param_1,int param_2,uint param_3);
 extern void FUN_1148c7fb(...);
 undefined4 __stdcall FUN_1148cb93(int *param_1);
 undefined4 __stdcall FUN_1148cb93(int *param_1);
-/* Library Function - Single Match ___security_init_cookie Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */ void __cdecl FUN_1148cc68(void);
-extern /* Library Function - Single Match ___security_init_cookie Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */ void __cdecl FUN_1148cc68(...);
+/* Library Function - Single Match ___security_init_cookie Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */void __cdecl FUN_1148cc68(void);
+extern /* Library Function - Single Match ___security_init_cookie Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */void __cdecl FUN_1148cc68(...);
 void FUN_117e8ad0(void);
 extern void FUN_117e8ad0(...);
 void FUN_117e9d10(void);
@@ -3376,11 +3376,7 @@ void FUN_11489a50(int param_1,int *param_2)
 /* Library Function - Single Match
     struct _IMAGE_SECTION_HEADER * __cdecl find_pe_section(unsigned char * const_,unsigned int_)
    
-   Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */
-
-_IMAGE_SECTION_HEADER * __cdecl FUN_1148a52f(uchar *param_1,uint param_2)
-
-{
+   Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */_IMAGE_SECTION_HEADER * __cdecl FUN_1148a52f(uchar *param_1,uint param_2){
   int iVar1;
   _IMAGE_SECTION_HEADER *p_Var2;
   _IMAGE_SECTION_HEADER *p_Var3;
@@ -3488,11 +3484,7 @@ LAB_1148ab47:
 /* Library Function - Single Match
     __Init_thread_wait
    
-   Library: Visual Studio 2019 Release */
-
-void FUN_1148abc7(DWORD param_1)
-
-{
+   Library: Visual Studio 2019 Release */void FUN_1148abc7(DWORD param_1){
   code *pcVar1;
   
   pcVar1 = (code *)(DAT_122fac20);
@@ -3554,11 +3546,7 @@ uint FUN_1148ae00(void)
 /* Library Function - Single Match
     int __stdcall dllmain_crt_dispatch(struct HINSTANCE__ * const_,unsigned long_,void * const_)
    
-   Library: Visual Studio 2019 Release */
-
-int __stdcall FUN_1148b143(HINSTANCE__ *param_1,ulong param_2,void *param_3)
-
-{
+   Library: Visual Studio 2019 Release */int FUN_1148b143(HINSTANCE__ *param_1,ulong param_2,void *param_3){
   uint uVar1;
   
   if (param_2 == 0) {
@@ -3687,11 +3675,7 @@ byte FUN_1148b2f2(undefined4 param_1)
 /* Library Function - Single Match
     int __cdecl dllmain_dispatch(struct HINSTANCE__ * const_,unsigned long_,void * const_)
    
-   Library: Visual Studio 2019 Release */
-
-int __cdecl FUN_1148b3ce(HINSTANCE__ *param_1,ulong param_2,void *param_3)
-
-{
+   Library: Visual Studio 2019 Release */int __cdecl FUN_1148b3ce(HINSTANCE__ *param_1,ulong param_2,void *param_3){
  try {
   int iVar1;
   int iVar2;
@@ -3739,11 +3723,7 @@ int __cdecl FUN_1148b3ce(HINSTANCE__ *param_1,ulong param_2,void *param_3)
 /* Library Function - Single Match
     __alldiv
    
-   Library: Visual Studio */
-
-undefined8 __stdcall FUN_1148b9a0(uint param_1,uint param_2,uint param_3,uint param_4)
-
-{
+   Library: Visual Studio */undefined8 FUN_1148b9a0(uint param_1,uint param_2,uint param_3,uint param_4){
   ulonglong uVar1;
   longlong lVar2;
   uint uVar3;
@@ -3812,11 +3792,7 @@ undefined8 __stdcall FUN_1148b9a0(uint param_1,uint param_2,uint param_3,uint pa
 /* Library Function - Single Match
     __allrem
    
-   Library: Visual Studio */
-
-undefined8 __stdcall FUN_1148bed0(uint param_1,uint param_2,uint param_3,uint param_4)
-
-{
+   Library: Visual Studio */undefined8 FUN_1148bed0(uint param_1,uint param_2,uint param_3,uint param_4){
   ulonglong uVar1;
   longlong lVar2;
   uint uVar3;
@@ -3965,11 +3941,7 @@ undefined4 FUN_1148c04b(void)
 /* Library Function - Single Match
     __aullrem
    
-   Library: Visual Studio */
-
-undefined8 __stdcall FUN_1148c350(uint param_1,uint param_2,uint param_3,uint param_4)
-
-{
+   Library: Visual Studio */undefined8 FUN_1148c350(uint param_1,uint param_2,uint param_3,uint param_4){
   ulonglong uVar1;
   longlong lVar2;
   uint uVar3;
@@ -4025,11 +3997,7 @@ undefined8 __stdcall FUN_1148c350(uint param_1,uint param_2,uint param_3,uint pa
 /* Library Function - Single Match
     __alldvrm
    
-   Library: Visual Studio */
-
-undefined8 __stdcall FUN_1148c3f0(uint param_1,uint param_2,uint param_3,uint param_4)
-
-{
+   Library: Visual Studio */undefined8 FUN_1148c3f0(uint param_1,uint param_2,uint param_3,uint param_4){
   ulonglong uVar1;
   longlong lVar2;
   uint uVar3;
@@ -4098,11 +4066,7 @@ undefined8 __stdcall FUN_1148c3f0(uint param_1,uint param_2,uint param_3,uint pa
 /* Library Function - Single Match
     __aulldiv
    
-   Library: Visual Studio */
-
-undefined8 __stdcall FUN_1148c540(uint param_1,uint param_2,uint param_3,uint param_4)
-
-{
+   Library: Visual Studio */undefined8 FUN_1148c540(uint param_1,uint param_2,uint param_3,uint param_4){
   ulonglong uVar1;
   longlong lVar2;
   uint uVar3;
@@ -4152,11 +4116,7 @@ undefined8 __stdcall FUN_1148c540(uint param_1,uint param_2,uint param_3,uint pa
 /* Library Function - Single Match
     __aulldvrm
    
-   Library: Visual Studio */
-
-undefined8 __stdcall FUN_1148c5d0(uint param_1,uint param_2,uint param_3,uint param_4)
-
-{
+   Library: Visual Studio */undefined8 FUN_1148c5d0(uint param_1,uint param_2,uint param_3,uint param_4){
   ulonglong uVar1;
   longlong lVar2;
   uint uVar3;
@@ -4250,11 +4210,7 @@ undefined4 __stdcall FUN_1148cb93(int *param_1)
 /* Library Function - Single Match
     ___security_init_cookie
    
-   Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */
-
-void __cdecl FUN_1148cc68(void)
-
-{
+   Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */void __cdecl FUN_1148cc68(void){
   if ((DAT_12126b84 == 0xbb40e64e) || ((DAT_12126b84 & 0xffff0000) == 0)) {
     DAT_12126b84 = (int)(___get_entropy());
     if (DAT_12126b84 == 0xbb40e64e) {

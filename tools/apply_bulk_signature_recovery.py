@@ -163,10 +163,13 @@ def lower_free_thiscall(source):
     out.append(rewritten[pos:])
     rewritten = ''.join(out)
 
+    # The struct's member decls use bare ``std`` names (``basic_ostream``),
+    # so it must land after the ``using namespace std`` line, not before.
     anchor = rewritten.find('using namespace std;')
     struct = ('struct Recovered_Bulk { char _pad;' + ''.join(methods) + ' };\n')
     if anchor >= 0:
-        rewritten = rewritten[:anchor] + struct + rewritten[anchor:]
+        anchor += len('using namespace std;')
+        rewritten = rewritten[:anchor] + '\n' + struct + rewritten[anchor:]
     else:
         rewritten = struct + rewritten
     return rewritten, len(renamed)

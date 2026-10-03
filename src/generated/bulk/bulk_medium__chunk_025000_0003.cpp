@@ -63,61 +63,7 @@ extern "C" int strcmp(const char *, const char *);
 extern "C" int wcscmp(const wchar_t *, const wchar_t *);
 extern "C" unsigned long __readfsdword(unsigned long);
 #pragma intrinsic(__readfsdword)
-extern int _eh_vector_destructor_iterator_(...);
-extern __declspec(dllimport) int _invalid_parameter_noinfo_noreturn(...);
-extern int thunk_FUN_1011f780(...);
-extern int thunk_FUN_101f4150(...);
-extern int thunk_FUN_101fdb50(...);
-extern int thunk_FUN_10246290(...);
-extern int thunk_FUN_10264380(...);
-extern int thunk_FUN_102e6ba0(...);
-extern int thunk_FUN_10681f80(...);
-extern int thunk_FUN_106ab4f0(...);
-extern int thunk_FUN_106dd300(...);
-extern int thunk_FUN_106dd3c0(...);
-extern int thunk_FUN_10af42f0(...);
-extern int thunk_FUN_10b59b80(...);
-extern int thunk_FUN_10bcf100(...);
-extern int thunk_FUN_10c5e210(...);
-extern int thunk_FUN_10c7d430(...);
-extern int thunk_FUN_10d9ec90(...);
-extern int thunk_FUN_10ed00f0(...);
-extern int thunk_FUN_111a4830(...);
-extern int thunk_FUN_11236130(...);
-extern int thunk_FUN_11282620(...);
-extern int thunk_FUN_1148a50e(...);
-extern int thunk_FUN_1148b596(...);
-extern int thunk_FUN_1148c305(...);
-extern int DAT_00004494;
-extern int DAT_11c08aa2;
-extern int DAT_121a0938;
-extern int DAT_121a0b18;
-extern int DAT_121a0cf0;
-extern int DAT_121a0f38;
-extern int DAT_121a100c;
-extern int DAT_121a24d8;
-extern int DAT_121a2794;
-extern int DAT_121a279c;
-extern int DAT_121a3524;
-extern int DAT_121a4a8c;
-extern int DAT_121a4e48;
-extern int DAT_121a5138;
-extern int DAT_121a56e4;
-extern int DAT_121a63bc;
-extern int DAT_121a6bac;
-extern int DAT_121a75c8;
-extern int DAT_121a75e4;
-extern int DAT_122e8ab0;
-extern int DAT_122f6448;
-extern int DAT_122f646c;
-extern int ghidra_vftable_RMusicServiceListCB;
-extern int unaff_EBP;
-extern undefined1 LAB_10023128[];
-extern undefined1 LAB_1007b85f[];
-extern undefined1 LAB_100831f9[];
-extern int *PTR_PTR_12119b74;
-extern int *PTR_vftable_12119b50;
-extern int *PTR_vftable_12120e90;
+struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int op_dtor(...); };
 struct Could { char _pad; Could(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Subroutine { char _pad; Subroutine(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Too { char _pad; Too(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
@@ -202,6 +148,63 @@ struct Unwind_117d14a0 { char _pad; Unwind_117d14a0(...); template<class T> int 
 typedef void *WARNING;
 typedef void *_func_void_void_ptr;
 using namespace std;
+extern int _eh_vector_destructor_iterator_(...);
+extern __declspec(dllimport) int _invalid_parameter_noinfo_noreturn(...);
+extern int thunk_FUN_1011f780(...);
+extern int thunk_FUN_101f4150(...);
+extern int thunk_FUN_101fdb50(...);
+extern int thunk_FUN_10246290(...);
+extern int thunk_FUN_10264380(...);
+extern int thunk_FUN_102e6ba0(...);
+extern int thunk_FUN_10681f80(...);
+extern int thunk_FUN_106ab4f0(...);
+extern int thunk_FUN_106dd300(...);
+extern int thunk_FUN_106dd3c0(...);
+extern int thunk_FUN_10af42f0(...);
+extern int thunk_FUN_10b59b80(...);
+extern int thunk_FUN_10bcf100(...);
+extern int thunk_FUN_10c5e210(...);
+extern int thunk_FUN_10c7d430(...);
+extern int thunk_FUN_10d9ec90(...);
+extern int thunk_FUN_10ed00f0(...);
+extern int thunk_FUN_111a4830(...);
+extern int thunk_FUN_11236130(...);
+extern int thunk_FUN_11282620(...);
+extern int thunk_FUN_1148a50e(...);
+extern int thunk_FUN_1148b596(...);
+extern int thunk_FUN_1148c305(...);
+extern int DAT_00004494;
+extern int DAT_11c08aa2;
+extern int DAT_121a0938;
+extern int DAT_121a0b18;
+extern int DAT_121a0cf0;
+extern int DAT_121a0e80;
+extern int DAT_121a0f38;
+extern int DAT_121a100c;
+extern int DAT_121a24d8;
+extern int DAT_121a2794;
+extern int DAT_121a279c;
+extern int DAT_121a3524;
+extern int DAT_121a4a8c;
+extern int DAT_121a4e48;
+extern int DAT_121a5138;
+extern int DAT_121a56e4;
+extern int DAT_121a63bc;
+extern int DAT_121a6b1c;
+extern int DAT_121a6bac;
+extern int DAT_121a75c8;
+extern int DAT_121a75e4;
+extern int DAT_122e8ab0;
+extern int DAT_122f6448;
+extern int DAT_122f646c;
+extern int ghidra_vftable_RMusicServiceListCB;
+extern int unaff_EBP;
+extern undefined1 LAB_10023128[];
+extern undefined1 LAB_1007b85f[];
+extern undefined1 LAB_100831f9[];
+extern int *PTR_PTR_12119b74;
+extern int *PTR_vftable_12119b50;
+extern int *PTR_vftable_12120e90;
 void FUN_117c4432(void);
 extern void FUN_117c4432(...);
 void FUN_117c4444(void);
@@ -362,6 +365,8 @@ void FUN_117ecf20(void);
 extern void FUN_117ecf20(...);
 void FUN_117ef170(void);
 extern void FUN_117ef170(...);
+void FUN_117f1860(void);
+extern void FUN_117f1860(...);
 void FUN_117f1880(void);
 extern void FUN_117f1880(...);
 void FUN_117f18d0(void);
@@ -386,6 +391,8 @@ void FUN_11835520(void);
 extern void FUN_11835520(...);
 void FUN_118442b0(void);
 extern void FUN_118442b0(...);
+void FUN_1184e0c0(void);
+extern void FUN_1184e0c0(...);
 void FUN_1184ebd0(void);
 extern void FUN_1184ebd0(...);
 void FUN_1185bd50(void);
@@ -400,10 +407,7 @@ void FUN_118626e0(void);
 extern void FUN_118626e0(...);
 // Reference entry 117c4432; body size 18 bytes.
 #line 1 "ENTRY_117c4432"
-
-void FUN_117c4432(void)
-
-{
+void FUN_117c4432(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x27f68);
@@ -413,10 +417,7 @@ void FUN_117c4432(void)
 
 // Reference entry 117c4444; body size 18 bytes.
 #line 1 "ENTRY_117c4444"
-
-void FUN_117c4444(void)
-
-{
+void FUN_117c4444(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x27f68);
@@ -426,10 +427,7 @@ void FUN_117c4444(void)
 
 // Reference entry 117c4456; body size 18 bytes.
 #line 1 "ENTRY_117c4456"
-
-void FUN_117c4456(void)
-
-{
+void FUN_117c4456(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x184b8);
@@ -439,10 +437,7 @@ void FUN_117c4456(void)
 
 // Reference entry 117c4468; body size 18 bytes.
 #line 1 "ENTRY_117c4468"
-
-void FUN_117c4468(void)
-
-{
+void FUN_117c4468(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x27f68);
@@ -452,10 +447,7 @@ void FUN_117c4468(void)
 
 // Reference entry 117c447a; body size 18 bytes.
 #line 1 "ENTRY_117c447a"
-
-void FUN_117c447a(void)
-
-{
+void FUN_117c447a(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x9c0);
@@ -465,10 +457,7 @@ void FUN_117c447a(void)
 
 // Reference entry 117c448c; body size 18 bytes.
 #line 1 "ENTRY_117c448c"
-
-void FUN_117c448c(void)
-
-{
+void FUN_117c448c(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x1d578);
@@ -478,10 +467,7 @@ void FUN_117c448c(void)
 
 // Reference entry 117c449e; body size 18 bytes.
 #line 1 "ENTRY_117c449e"
-
-void FUN_117c449e(void)
-
-{
+void FUN_117c449e(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x9c0);
@@ -491,10 +477,7 @@ void FUN_117c449e(void)
 
 // Reference entry 117c4540; body size 18 bytes.
 #line 1 "ENTRY_117c4540"
-
-void FUN_117c4540(void)
-
-{
+void FUN_117c4540(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11908);
@@ -504,10 +487,7 @@ void FUN_117c4540(void)
 
 // Reference entry 117c4552; body size 18 bytes.
 #line 1 "ENTRY_117c4552"
-
-void FUN_117c4552(void)
-
-{
+void FUN_117c4552(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11908);
@@ -517,10 +497,7 @@ void FUN_117c4552(void)
 
 // Reference entry 117c45b0; body size 18 bytes.
 #line 1 "ENTRY_117c45b0"
-
-void FUN_117c45b0(void)
-
-{
+void FUN_117c45b0(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11e38);
@@ -530,10 +507,7 @@ void FUN_117c45b0(void)
 
 // Reference entry 117c45c2; body size 18 bytes.
 #line 1 "ENTRY_117c45c2"
-
-void FUN_117c45c2(void)
-
-{
+void FUN_117c45c2(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11e38);
@@ -543,10 +517,7 @@ void FUN_117c45c2(void)
 
 // Reference entry 117c4620; body size 18 bytes.
 #line 1 "ENTRY_117c4620"
-
-void FUN_117c4620(void)
-
-{
+void FUN_117c4620(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11908);
@@ -556,10 +527,7 @@ void FUN_117c4620(void)
 
 // Reference entry 117c4632; body size 18 bytes.
 #line 1 "ENTRY_117c4632"
-
-void FUN_117c4632(void)
-
-{
+void FUN_117c4632(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11908);
@@ -569,10 +537,7 @@ void FUN_117c4632(void)
 
 // Reference entry 117c4690; body size 18 bytes.
 #line 1 "ENTRY_117c4690"
-
-void FUN_117c4690(void)
-
-{
+void FUN_117c4690(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11908);
@@ -582,10 +547,7 @@ void FUN_117c4690(void)
 
 // Reference entry 117c46a2; body size 18 bytes.
 #line 1 "ENTRY_117c46a2"
-
-void FUN_117c46a2(void)
-
-{
+void FUN_117c46a2(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11908);
@@ -595,10 +557,7 @@ void FUN_117c46a2(void)
 
 // Reference entry 117c4700; body size 18 bytes.
 #line 1 "ENTRY_117c4700"
-
-void FUN_117c4700(void)
-
-{
+void FUN_117c4700(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x13790);
@@ -608,10 +567,7 @@ void FUN_117c4700(void)
 
 // Reference entry 117c474f; body size 18 bytes.
 #line 1 "ENTRY_117c474f"
-
-void FUN_117c474f(void)
-
-{
+void FUN_117c474f(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),0x988);
@@ -621,10 +577,7 @@ void FUN_117c474f(void)
 
 // Reference entry 117c47b0; body size 18 bytes.
 #line 1 "ENTRY_117c47b0"
-
-void FUN_117c47b0(void)
-
-{
+void FUN_117c47b0(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),74000);
@@ -634,10 +587,7 @@ void FUN_117c47b0(void)
 
 // Reference entry 117c47c2; body size 18 bytes.
 #line 1 "ENTRY_117c47c2"
-
-void FUN_117c47c2(void)
-
-{
+void FUN_117c47c2(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),74000);
@@ -647,10 +597,7 @@ void FUN_117c47c2(void)
 
 // Reference entry 117c4860; body size 18 bytes.
 #line 1 "ENTRY_117c4860"
-
-void FUN_117c4860(void)
-
-{
+void FUN_117c4860(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x12e08);
@@ -660,10 +607,7 @@ void FUN_117c4860(void)
 
 // Reference entry 117c48b0; body size 18 bytes.
 #line 1 "ENTRY_117c48b0"
-
-void FUN_117c48b0(void)
-
-{
+void FUN_117c48b0(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x27f68);
@@ -673,10 +617,7 @@ void FUN_117c48b0(void)
 
 // Reference entry 117c48c2; body size 18 bytes.
 #line 1 "ENTRY_117c48c2"
-
-void FUN_117c48c2(void)
-
-{
+void FUN_117c48c2(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x27f68);
@@ -686,10 +627,7 @@ void FUN_117c48c2(void)
 
 // Reference entry 117c4920; body size 18 bytes.
 #line 1 "ENTRY_117c4920"
-
-void FUN_117c4920(void)
-
-{
+void FUN_117c4920(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x13468);
@@ -699,10 +637,7 @@ void FUN_117c4920(void)
 
 // Reference entry 117c4932; body size 18 bytes.
 #line 1 "ENTRY_117c4932"
-
-void FUN_117c4932(void)
-
-{
+void FUN_117c4932(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x13468);
@@ -712,10 +647,7 @@ void FUN_117c4932(void)
 
 // Reference entry 117c499b; body size 21 bytes.
 #line 1 "ENTRY_117c499b"
-
-void FUN_117c499b(void)
-
-{
+void FUN_117c499b(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x2a8),0x125e0);
@@ -725,10 +657,7 @@ void FUN_117c499b(void)
 
 // Reference entry 117c4a00; body size 18 bytes.
 #line 1 "ENTRY_117c4a00"
-
-void FUN_117c4a00(void)
-
-{
+void FUN_117c4a00(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11e50);
@@ -738,10 +667,7 @@ void FUN_117c4a00(void)
 
 // Reference entry 117c4a12; body size 18 bytes.
 #line 1 "ENTRY_117c4a12"
-
-void FUN_117c4a12(void)
-
-{
+void FUN_117c4a12(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11e50);
@@ -751,10 +677,7 @@ void FUN_117c4a12(void)
 
 // Reference entry 117c4a24; body size 18 bytes.
 #line 1 "ENTRY_117c4a24"
-
-void FUN_117c4a24(void)
-
-{
+void FUN_117c4a24(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0x168);
@@ -764,10 +687,7 @@ void FUN_117c4a24(void)
 
 // Reference entry 117c4a80; body size 18 bytes.
 #line 1 "ENTRY_117c4a80"
-
-void FUN_117c4a80(void)
-
-{
+void FUN_117c4a80(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x13790);
@@ -777,10 +697,7 @@ void FUN_117c4a80(void)
 
 // Reference entry 117c4acf; body size 18 bytes.
 #line 1 "ENTRY_117c4acf"
-
-void FUN_117c4acf(void)
-
-{
+void FUN_117c4acf(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),0x988);
@@ -790,10 +707,7 @@ void FUN_117c4acf(void)
 
 // Reference entry 117c4bb0; body size 18 bytes.
 #line 1 "ENTRY_117c4bb0"
-
-void FUN_117c4bb0(void)
-
-{
+void FUN_117c4bb0(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11c38);
@@ -803,10 +717,7 @@ void FUN_117c4bb0(void)
 
 // Reference entry 117c4bc2; body size 18 bytes.
 #line 1 "ENTRY_117c4bc2"
-
-void FUN_117c4bc2(void)
-
-{
+void FUN_117c4bc2(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11c38);
@@ -816,10 +727,7 @@ void FUN_117c4bc2(void)
 
 // Reference entry 117c4c20; body size 18 bytes.
 #line 1 "ENTRY_117c4c20"
-
-void FUN_117c4c20(void)
-
-{
+void FUN_117c4c20(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11908);
@@ -829,10 +737,7 @@ void FUN_117c4c20(void)
 
 // Reference entry 117c4c32; body size 18 bytes.
 #line 1 "ENTRY_117c4c32"
-
-void FUN_117c4c32(void)
-
-{
+void FUN_117c4c32(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11908);
@@ -842,10 +747,7 @@ void FUN_117c4c32(void)
 
 // Reference entry 117c4c90; body size 18 bytes.
 #line 1 "ENTRY_117c4c90"
-
-void FUN_117c4c90(void)
-
-{
+void FUN_117c4c90(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11c38);
@@ -855,10 +757,7 @@ void FUN_117c4c90(void)
 
 // Reference entry 117c4ca2; body size 18 bytes.
 #line 1 "ENTRY_117c4ca2"
-
-void FUN_117c4ca2(void)
-
-{
+void FUN_117c4ca2(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x11c38);
@@ -868,10 +767,7 @@ void FUN_117c4ca2(void)
 
 // Reference entry 117c5070; body size 18 bytes.
 #line 1 "ENTRY_117c5070"
-
-void FUN_117c5070(void)
-
-{
+void FUN_117c5070(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x230);
@@ -881,10 +777,7 @@ void FUN_117c5070(void)
 
 // Reference entry 117c50c0; body size 18 bytes.
 #line 1 "ENTRY_117c50c0"
-
-void FUN_117c50c0(void)
-
-{
+void FUN_117c50c0(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x330);
@@ -894,10 +787,7 @@ void FUN_117c50c0(void)
 
 // Reference entry 117c51e0; body size 18 bytes.
 #line 1 "ENTRY_117c51e0"
-
-void FUN_117c51e0(void)
-
-{
+void FUN_117c51e0(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0xc),0x988);
@@ -907,10 +797,7 @@ void FUN_117c51e0(void)
 
 // Reference entry 117c51f2; body size 18 bytes.
 #line 1 "ENTRY_117c51f2"
-
-void FUN_117c51f2(void)
-
-{
+void FUN_117c51f2(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0xc),0x988);
@@ -920,10 +807,7 @@ void FUN_117c51f2(void)
 
 // Reference entry 117c60e0; body size 18 bytes.
 #line 1 "ENTRY_117c60e0"
-
-void FUN_117c60e0(void)
-
-{
+void FUN_117c60e0(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x610c);
@@ -933,10 +817,7 @@ void FUN_117c60e0(void)
 
 // Reference entry 117c60f2; body size 18 bytes.
 #line 1 "ENTRY_117c60f2"
-
-void FUN_117c60f2(void)
-
-{
+void FUN_117c60f2(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),&DAT_00004494);
@@ -946,10 +827,7 @@ void FUN_117c60f2(void)
 
 // Reference entry 117c64a0; body size 18 bytes.
 #line 1 "ENTRY_117c64a0"
-
-void FUN_117c64a0(void)
-
-{
+void FUN_117c64a0(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x18),0x428);
@@ -959,10 +837,7 @@ void FUN_117c64a0(void)
 
 // Reference entry 117c64f0; body size 18 bytes.
 #line 1 "ENTRY_117c64f0"
-
-void FUN_117c64f0(void)
-
-{
+void FUN_117c64f0(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0xc),0xf590);
@@ -972,10 +847,7 @@ void FUN_117c64f0(void)
 
 // Reference entry 117c6540; body size 18 bytes.
 #line 1 "ENTRY_117c6540"
-
-void FUN_117c6540(void)
-
-{
+void FUN_117c6540(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x998);
@@ -985,10 +857,7 @@ void FUN_117c6540(void)
 
 // Reference entry 117c6590; body size 18 bytes.
 #line 1 "ENTRY_117c6590"
-
-void FUN_117c6590(void)
-
-{
+void FUN_117c6590(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 0xc),0xf590);
@@ -998,10 +867,7 @@ void FUN_117c6590(void)
 
 // Reference entry 117c8300; body size 18 bytes.
 #line 1 "ENTRY_117c8300"
-
-void FUN_117c8300(void)
-
-{
+void FUN_117c8300(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x74c);
@@ -1011,10 +877,7 @@ void FUN_117c8300(void)
 
 // Reference entry 117c89b0; body size 18 bytes.
 #line 1 "ENTRY_117c89b0"
-
-void FUN_117c89b0(void)
-
-{
+void FUN_117c89b0(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x74c);
@@ -1024,10 +887,7 @@ void FUN_117c89b0(void)
 
 // Reference entry 117ca4c0; body size 18 bytes.
 #line 1 "ENTRY_117ca4c0"
-
-void FUN_117ca4c0(void)
-
-{
+void FUN_117ca4c0(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x68c);
@@ -1037,10 +897,7 @@ void FUN_117ca4c0(void)
 
 // Reference entry 117caf70; body size 18 bytes.
 #line 1 "ENTRY_117caf70"
-
-void FUN_117caf70(void)
-
-{
+void FUN_117caf70(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x68c);
@@ -1050,10 +907,7 @@ void FUN_117caf70(void)
 
 // Reference entry 117cafc0; body size 18 bytes.
 #line 1 "ENTRY_117cafc0"
-
-void FUN_117cafc0(void)
-
-{
+void FUN_117cafc0(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x68c);
@@ -1063,10 +917,7 @@ void FUN_117cafc0(void)
 
 // Reference entry 117cb650; body size 18 bytes.
 #line 1 "ENTRY_117cb650"
-
-void FUN_117cb650(void)
-
-{
+void FUN_117cb650(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x68c);
@@ -1076,10 +927,7 @@ void FUN_117cb650(void)
 
 // Reference entry 117cbdd6; body size 18 bytes.
 #line 1 "ENTRY_117cbdd6"
-
-void FUN_117cbdd6(void)
-
-{
+void FUN_117cbdd6(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0x7208);
@@ -1089,10 +937,7 @@ void FUN_117cbdd6(void)
 
 // Reference entry 117cbea0; body size 18 bytes.
 #line 1 "ENTRY_117cbea0"
-
-void FUN_117cbea0(void)
-
-{
+void FUN_117cbea0(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x118);
@@ -1102,10 +947,7 @@ void FUN_117cbea0(void)
 
 // Reference entry 117cbef0; body size 18 bytes.
 #line 1 "ENTRY_117cbef0"
-
-void FUN_117cbef0(void)
-
-{
+void FUN_117cbef0(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0x89c);
@@ -1115,10 +957,7 @@ void FUN_117cbef0(void)
 
 // Reference entry 117cbf02; body size 18 bytes.
 #line 1 "ENTRY_117cbf02"
-
-void FUN_117cbf02(void)
-
-{
+void FUN_117cbf02(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + 8),0x4488);
@@ -1128,10 +967,7 @@ void FUN_117cbf02(void)
 
 // Reference entry 117cbf50; body size 18 bytes.
 #line 1 "ENTRY_117cbf50"
-
-void FUN_117cbf50(void)
-
-{
+void FUN_117cbf50(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x14),0x7208);
@@ -1141,10 +977,7 @@ void FUN_117cbf50(void)
 
 // Reference entry 117cbfb0; body size 18 bytes.
 #line 1 "ENTRY_117cbfb0"
-
-void FUN_117cbfb0(void)
-
-{
+void FUN_117cbfb0(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0xfc);
@@ -1154,10 +987,7 @@ void FUN_117cbfb0(void)
 
 // Reference entry 117cc270; body size 19 bytes.
 #line 1 "ENTRY_117cc270"
-
-void FUN_117cc270(void)
-
-{
+void FUN_117cc270(void){
   int unaff_EBP;
   
   _eh_vector_destructor_iterator_(*(void **)(unaff_EBP + -0x10),0x38,0x10,thunk_FUN_11236130);
@@ -1167,10 +997,7 @@ void FUN_117cc270(void)
 
 // Reference entry 117cc2c8; body size 22 bytes.
 #line 1 "ENTRY_117cc2c8"
-
-void FUN_117cc2c8(void)
-
-{
+void FUN_117cc2c8(void){
   int unaff_EBP;
   
   _eh_vector_destructor_iterator_
@@ -1182,10 +1009,7 @@ void FUN_117cc2c8(void)
 
 // Reference entry 117cc370; body size 22 bytes.
 #line 1 "ENTRY_117cc370"
-
-void FUN_117cc370(void)
-
-{
+void FUN_117cc370(void){
   int unaff_EBP;
   
   _eh_vector_destructor_iterator_
@@ -1197,10 +1021,7 @@ void FUN_117cc370(void)
 
 // Reference entry 117cc3c8; body size 22 bytes.
 #line 1 "ENTRY_117cc3c8"
-
-void FUN_117cc3c8(void)
-
-{
+void FUN_117cc3c8(void){
   int unaff_EBP;
   
   _eh_vector_destructor_iterator_
@@ -1212,10 +1033,7 @@ void FUN_117cc3c8(void)
 
 // Reference entry 117cc470; body size 19 bytes.
 #line 1 "ENTRY_117cc470"
-
-void FUN_117cc470(void)
-
-{
+void FUN_117cc470(void){
   int unaff_EBP;
   
   _eh_vector_destructor_iterator_
@@ -1226,10 +1044,7 @@ void FUN_117cc470(void)
 
 // Reference entry 117cc804; body size 18 bytes.
 #line 1 "ENTRY_117cc804"
-
-void FUN_117cc804(void)
-
-{
+void FUN_117cc804(void){
   int unaff_EBP;
   
   thunk_FUN_1148c305(*(undefined4 *)(unaff_EBP + 0x10),&DAT_11c08aa2);
@@ -1239,10 +1054,7 @@ void FUN_117cc804(void)
 
 // Reference entry 117cccee; body size 34 bytes.
 #line 1 "ENTRY_117cccee"
-
-void FUN_117cccee(void)
-
-{
+void FUN_117cccee(void){
   int unaff_EBP;
   
   if ((*(uint *)(unaff_EBP + -0xa78c) & 1) != 0) {
@@ -1256,10 +1068,7 @@ void FUN_117cccee(void)
 
 // Reference entry 117cd360; body size 18 bytes.
 #line 1 "ENTRY_117cd360"
-
-void FUN_117cd360(void)
-
-{
+void FUN_117cd360(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),0x4f0);
@@ -1269,10 +1078,7 @@ void FUN_117cd360(void)
 
 // Reference entry 117cf7ab; body size 24 bytes.
 #line 1 "ENTRY_117cf7ab"
-
-void FUN_117cf7ab(void)
-
-{
+void FUN_117cf7ab(void){
   int unaff_EBP;
   
   _eh_vector_destructor_iterator_
@@ -1284,10 +1090,7 @@ void FUN_117cf7ab(void)
 
 // Reference entry 117cf80b; body size 24 bytes.
 #line 1 "ENTRY_117cf80b"
-
-void FUN_117cf80b(void)
-
-{
+void FUN_117cf80b(void){
   int unaff_EBP;
   
   _eh_vector_destructor_iterator_
@@ -1299,10 +1102,7 @@ void FUN_117cf80b(void)
 
 // Reference entry 117d017f; body size 18 bytes.
 #line 1 "ENTRY_117d017f"
-
-void FUN_117d017f(void)
-
-{
+void FUN_117d017f(void){
   int unaff_EBP;
   
   thunk_FUN_1148b596(*(undefined4 *)(unaff_EBP + 8),0x1804);
@@ -1312,10 +1112,7 @@ void FUN_117d017f(void)
 
 // Reference entry 117d01d0; body size 18 bytes.
 #line 1 "ENTRY_117d01d0"
-
-void FUN_117d01d0(void)
-
-{
+void FUN_117d01d0(void){
   int unaff_EBP;
   
   thunk_FUN_1148b596(*(undefined4 *)(unaff_EBP + 8),0x1804);
@@ -1325,10 +1122,7 @@ void FUN_117d01d0(void)
 
 // Reference entry 117d0250; body size 18 bytes.
 #line 1 "ENTRY_117d0250"
-
-void FUN_117d0250(void)
-
-{
+void FUN_117d0250(void){
   int unaff_EBP;
   
   thunk_FUN_1148b596(*(undefined4 *)(unaff_EBP + -0x10),0x1804);
@@ -1338,10 +1132,7 @@ void FUN_117d0250(void)
 
 // Reference entry 117d02be; body size 18 bytes.
 #line 1 "ENTRY_117d02be"
-
-void FUN_117d02be(void)
-
-{
+void FUN_117d02be(void){
   int unaff_EBP;
   
   thunk_FUN_1148b596(*(undefined4 *)(unaff_EBP + -0x1c),0x1804);
@@ -1351,10 +1142,7 @@ void FUN_117d02be(void)
 
 // Reference entry 117d0390; body size 18 bytes.
 #line 1 "ENTRY_117d0390"
-
-void FUN_117d0390(void)
-
-{
+void FUN_117d0390(void){
   int unaff_EBP;
   
   thunk_FUN_1148b596(*(undefined4 *)(unaff_EBP + -0x20),0x1804);
@@ -1364,10 +1152,7 @@ void FUN_117d0390(void)
 
 // Reference entry 117d0f50; body size 18 bytes.
 #line 1 "ENTRY_117d0f50"
-
-void FUN_117d0f50(void)
-
-{
+void FUN_117d0f50(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x24),0x14c);
@@ -1377,10 +1162,7 @@ void FUN_117d0f50(void)
 
 // Reference entry 117d0ff6; body size 21 bytes.
 #line 1 "ENTRY_117d0ff6"
-
-void FUN_117d0ff6(void)
-
-{
+void FUN_117d0ff6(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x90),0x674);
@@ -1390,10 +1172,7 @@ void FUN_117d0ff6(void)
 
 // Reference entry 117d1118; body size 18 bytes.
 #line 1 "ENTRY_117d1118"
-
-void FUN_117d1118(void)
-
-{
+void FUN_117d1118(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x20),0x14c);
@@ -1403,10 +1182,7 @@ void FUN_117d1118(void)
 
 // Reference entry 117d14a0; body size 18 bytes.
 #line 1 "ENTRY_117d14a0"
-
-void FUN_117d14a0(void)
-
-{
+void FUN_117d14a0(void){
   int unaff_EBP;
   
   thunk_FUN_1148a50e(*(undefined4 *)(unaff_EBP + -0x10),800);
@@ -1446,6 +1222,17 @@ void FUN_117ef170(void)
 {
   thunk_FUN_10246290(&DAT_121a0cf0,*(undefined4 *)(DAT_121a0cf0 + 4));
   thunk_FUN_1148a50e(DAT_121a0cf0,0x18);
+  return;
+}
+
+
+// Reference entry 117f1860; body size 20 bytes.
+#line 1 "ENTRY_117f1860"
+
+void FUN_117f1860(void)
+
+{
+  _eh_vector_destructor_iterator_(&DAT_121a0e80,4,0x2b,((int (*)())&SCStr::op_dtor));
   return;
 }
 
@@ -1600,6 +1387,17 @@ void FUN_118442b0(void)
 {
   thunk_FUN_10d9ec90(&DAT_121a63bc,*(undefined4 *)(DAT_121a63bc + 4));
   thunk_FUN_1148a50e(DAT_121a63bc,0x18);
+  return;
+}
+
+
+// Reference entry 1184e0c0; body size 20 bytes.
+#line 1 "ENTRY_1184e0c0"
+
+void FUN_1184e0c0(void)
+
+{
+  _eh_vector_destructor_iterator_(&DAT_121a6b1c,4,1,((int (*)())&SCStr::op_dtor));
   return;
 }
 
