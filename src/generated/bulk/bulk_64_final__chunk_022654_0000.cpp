@@ -64,6 +64,7 @@ extern int FUN_10c8de30(...);
 extern __declspec(dllimport) int _Xbad_function_call(...);
 extern __declspec(dllimport) int _Xlength_error(...);
 extern __declspec(dllimport) int _Xout_of_range(...);
+extern int _eh_vector_copy_constructor_iterator_(...);
 extern int _eh_vector_destructor_iterator_(...);
 extern __declspec(dllimport) int _errno(...);
 extern __declspec(dllimport) int _invalid_parameter_noinfo_noreturn(...);
@@ -616,12 +617,20 @@ extern int thunk_FUN_10c98c80(...);
 extern int thunk_FUN_10c9b9b0(...);
 extern int thunk_FUN_10c9bf20(...);
 extern int thunk_FUN_10c9db90(...);
+extern int thunk_FUN_10c9dd10(...);
+extern int thunk_FUN_10c9e150(...);
+extern int thunk_FUN_10c9e620(...);
+extern int thunk_FUN_10c9e8e0(...);
+extern int thunk_FUN_10c9f3a0(...);
+extern int thunk_FUN_10c9fb30(...);
 extern int thunk_FUN_10c9fff0(...);
+extern int thunk_FUN_10ca0260(...);
 extern int thunk_FUN_10ca06f0(...);
 extern int thunk_FUN_10ca0900(...);
 extern int thunk_FUN_10ca0ae0(...);
 extern int thunk_FUN_10ca0f20(...);
 extern int thunk_FUN_10ca10b0(...);
+extern int thunk_FUN_10ca2370(...);
 extern int thunk_FUN_10ca3370(...);
 extern int thunk_FUN_10ca43c0(...);
 extern int thunk_FUN_10ca49f0(...);
@@ -1066,6 +1075,31 @@ extern int ghidra_vftable_std_Node_base;
 extern int ghidra_vftable_std_Node_capture;
 extern int ghidra_vftable_std_Node_class;
 extern int ghidra_vftable_std_Node_end_group;
+extern int in_stack_0000001c;
+extern int uStack_14;
+extern int uStack_18;
+extern int uStack_1c;
+extern int uStack_20;
+extern int uStack_24;
+extern int uStack_28;
+extern int uStack_2c;
+extern int uStack_30;
+extern int uStack_34;
+extern int uStack_38;
+extern int uStack_3c;
+extern int uStack_4;
+extern int uStack_40;
+extern int uStack_44;
+extern int uStack_45c;
+extern int uStack_48;
+extern int uStack_4c;
+extern int uStack_4fb;
+extern int uStack_50;
+extern int uStack_53;
+extern int uStack_54;
+extern int uStack_7;
+extern int uStack_74;
+extern int uStack_8;
 extern undefined1 LAB_10c0eaca[];
 extern undefined1 LAB_10c10a87[];
 extern undefined1 LAB_10c13caf[];
@@ -1149,6 +1183,8 @@ extern undefined1 LAB_10c99427[];
 extern undefined1 LAB_10c9b507[];
 extern undefined1 LAB_10c9b93f[];
 extern undefined1 LAB_10c9bd2e[];
+extern undefined1 LAB_10c9ed56[];
+extern undefined1 LAB_10c9fc19[];
 extern undefined1 LAB_10ca3938[];
 extern undefined1 LAB_10ca39bc[];
 extern undefined1 LAB_10ca4190[];
@@ -1801,6 +1837,18 @@ extern undefined1 LAB_116ebbdd[];
 extern undefined1 LAB_116ebc2d[];
 extern undefined1 LAB_116ebc7d[];
 extern undefined1 LAB_116ebccd[];
+extern undefined1 LAB_116ebd00[];
+extern undefined1 LAB_116ebddd[];
+extern undefined1 LAB_116ebe3d[];
+extern undefined1 LAB_116ebeed[];
+extern undefined1 LAB_116ebf8d[];
+extern undefined1 LAB_116ec01d[];
+extern undefined1 LAB_116ec075[];
+extern undefined1 LAB_116ec0bd[];
+extern undefined1 LAB_116ec0fd[];
+extern undefined1 LAB_116ec130[];
+extern undefined1 LAB_116ec16d[];
+extern undefined1 LAB_116ec1bd[];
 extern undefined1 LAB_116ec20d[];
 extern undefined1 LAB_116ec4a8[];
 extern undefined1 LAB_116ec55d[];
@@ -1808,11 +1856,16 @@ extern undefined1 LAB_116ec6e0[];
 extern undefined1 LAB_116ec7d0[];
 extern undefined1 LAB_116ec8f0[];
 extern undefined1 LAB_116ec980[];
+extern undefined1 LAB_116ec9b0[];
+extern undefined1 LAB_116ecc2d[];
+extern undefined1 LAB_116ecc6d[];
+extern undefined1 LAB_116eccad[];
 extern undefined1 LAB_116ecd13[];
 extern undefined1 LAB_116ecd7d[];
 extern undefined1 LAB_116ecdd5[];
 extern undefined1 LAB_116ece25[];
 extern undefined1 LAB_116ece97[];
+extern undefined1 LAB_116eced0[];
 extern undefined1 LAB_116ecf65[];
 extern undefined1 LAB_116ecfc7[];
 extern undefined1 LAB_116ed04e[];
@@ -1974,6 +2027,7 @@ extern int *stack0x00000005;
 extern int *stack0x00000008;
 extern int *stack0x0000000c;
 extern int *stack0x00000010;
+extern int *stack0x00000020;
 extern int *stack0xfffffaac;
 extern int *stack0xfffffbac;
 extern int *stack0xfffffbb0;
@@ -1986,6 +2040,8 @@ extern int *stack0xffffff54;
 extern int *stack0xffffff58;
 extern int *stack0xffffff5c;
 extern int *stack0xffffff60;
+extern int *stack0xffffff6c;
+extern int *stack0xffffff80;
 extern int *stack0xffffff84;
 extern int *stack0xffffff8c;
 extern int *stack0xffffffa4;
@@ -2010,10 +2066,11 @@ struct SCLibParameters { char _pad; SCLibParameters(...); template<class T> int 
 struct SCLibrary { char _pad; SCLibrary(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class... A> int createActionContextForAction(A...); template<class... A> int createInlineControllerUpdateAction(A...); template<class... A> int createSCDisplayMessagePopupAction(A...); template<class... A> int getSCHousehold(A...); template<class... A> int getSingleton(A...); };
 struct SCOpRefBase { char _pad; SCOpRefBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class... A> int int_start(A...); };
 struct SCPropertyBag { char _pad; SCPropertyBag(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class... A> int createSCObject(A...); template<class... A> int op_ctor(A...); };
-struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class... A> int append(A...); template<class... A> int beginsWith(A...); template<class... A> int contains(A...); template<class... A> int endsWith(A...); template<class... A> int equalsIgnoringCase(A...); template<class... A> int escapeMarkdown(A...); template<class... A> int find(A...); template<class... A> int format(A...); template<class... A> int hash(A...); template<class... A> int int_addref(A...); template<class... A> int int_allocRep(A...); template<class... A> int int_release(A...); template<class... A> int length(A...); template<class... A> int op_ctor(A...); template<class... A> int op_eq(A...); template<class... A> int op_lt(A...); template<class... A> int prepend(A...); template<class... A> int replace(A...); template<class... A> int stringWithFormat(A...); template<class... A> int stringWithFormatList(A...); template<class... A> int substr(A...); template<class... A> int toLower(A...); template<class... A> int toUpper(A...); template<class... A> int trim(A...); template<class... A> int trimRear(A...); template<class... A> int utf8_length(A...); template<class... A> int utf8_substr(A...); };
+struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class... A> int append(A...); template<class... A> int beginsWith(A...); template<class... A> int contains(A...); template<class... A> int endsWith(A...); template<class... A> int equalsIgnoringCase(A...); template<class... A> int escapeMarkdown(A...); template<class... A> int find(A...); template<class... A> int format(A...); template<class... A> int hash(A...); template<class... A> int int_addref(A...); template<class... A> int int_allocRep(A...); template<class... A> int int_release(A...); template<class... A> int length(A...); template<class... A> int op_ctor(A...); template<class... A> int op_dtor(A...); template<class... A> int op_eq(A...); template<class... A> int op_lt(A...); template<class... A> int prepend(A...); template<class... A> int replace(A...); template<class... A> int stringWithFormat(A...); template<class... A> int stringWithFormatList(A...); template<class... A> int substr(A...); template<class... A> int toLower(A...); template<class... A> int toUpper(A...); template<class... A> int trim(A...); template<class... A> int trimRear(A...); template<class... A> int utf8_length(A...); template<class... A> int utf8_substr(A...); };
 namespace std { template<class...> struct _Parallelism_allocator { char _pad; _Parallelism_allocator(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); }; }
 namespace std { template<class...> struct allocator { char _pad; allocator(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); }; }
 namespace std { template<class...> struct greater { char _pad; greater(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); }; }
+namespace std { template<class...> struct pair { char _pad; pair(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); }; }
 namespace std { template<class...> struct priority_queue { char _pad; priority_queue(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); }; }
 namespace std { template<class...> struct vector { char _pad; vector(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); }; }
 typedef void *A;
@@ -2175,6 +2232,7 @@ struct More { char _pad; More(...); template<class T> int operator==(T); templat
 struct Moving { char _pad; Moving(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Multiple { char _pad; Multiple(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Music { char _pad; Music(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct Name { char _pad; Name(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Names { char _pad; Names(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct NewAccount { char _pad; NewAccount(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct No { char _pad; No(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
@@ -2255,6 +2313,7 @@ struct SCZoneGroupMgr { char _pad; SCZoneGroupMgr(...); template<class T> int op
 struct SECURE_PLAYER_WIZPROP_AddedPlayersIDsTypes { char _pad; SECURE_PLAYER_WIZPROP_AddedPlayersIDsTypes(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SPClient { char _pad; SPClient(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SWGen { char _pad; SWGen(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct Same { char _pad; Same(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Save { char _pad; Save(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SaveUpdateState { char _pad; SaveUpdateState(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Saving { char _pad; Saving(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
@@ -2338,7 +2397,7 @@ struct Recovered_Bulk { char _pad; void __thiscall FUN_10c04c00(undefined4 *para
             undefined4 param_5,undefined4 param_6); undefined4 * __thiscall FUN_10c81730(byte param_2); undefined4 * __thiscall FUN_10c81880(byte param_2); void __thiscall FUN_10c81a70(int *param_2,undefined4 param_3); void __thiscall FUN_10c81b50(int *param_2,undefined4 param_3); undefined4 __thiscall FUN_10c82ec0(undefined4 param_2,short *param_3); void __thiscall FUN_10c831c0(undefined4 param_2,undefined4 param_3); void __thiscall FUN_10c832f0(undefined4 param_2,undefined4 param_3); undefined4 __thiscall FUN_10c835f0(void *param_2,uint param_3,size_t *param_4); undefined4 __thiscall FUN_10c83950(char *param_2,uint param_3); undefined4 * __thiscall FUN_10c83af0(byte param_2); undefined4 * __thiscall FUN_10c83da0(byte param_2); undefined4 * __thiscall FUN_10c84750(undefined4 param_2,undefined4 param_3,undefined4 *param_4); undefined4 * __thiscall FUN_10c84800(undefined4 param_2,undefined4 param_3,undefined4 *param_4); int * __thiscall FUN_10c84aa0(int *param_2); int * __thiscall FUN_10c84b80(undefined4 *param_2); void __thiscall FUN_10c85070(int *param_2,SCStr *param_3); void __thiscall FUN_10c87fc0(int *param_2,byte *param_3); void __thiscall FUN_10c88040(int *param_2,byte *param_3); undefined8 * __thiscall FUN_10c886d0(undefined8 *param_2); undefined8 * __thiscall FUN_10c887b0(undefined8 *param_2); undefined4 * __thiscall FUN_10c88d60(void *param_2); void __thiscall FUN_10c8a550(uint param_2,undefined4 param_3); void __thiscall FUN_10c8a670(uint param_2,undefined4 param_3); uint __thiscall FUN_10c8a890(int param_2); uint __thiscall FUN_10c8a940(int param_2); void __thiscall FUN_10c8b560(int param_2); void __thiscall FUN_10c8b5d0(int param_2); undefined4 * __thiscall FUN_10c8ca10(undefined4 *param_2,undefined4 *param_3); undefined4 * __thiscall FUN_10c8cc40(undefined4 *param_2,SCStr *param_3,undefined4 *param_4); void __thiscall FUN_10c8d450(int *param_2,SCStr *param_3); void __thiscall FUN_10c8d4c0(int *param_2,SCStr *param_3); undefined4 * __thiscall FUN_10c8d530(undefined4 *param_2); undefined4 * __thiscall FUN_10c8d680(undefined4 *param_2); undefined4 * __thiscall FUN_10c8d790(undefined4 *param_2); int __thiscall FUN_10c8daa0(int param_2); undefined4 * __thiscall FUN_10c8dd20(undefined4 *param_2,int *param_3); undefined4 * __thiscall FUN_10c8df00(undefined4 *param_2,int *param_3); void __thiscall FUN_10c8e420(undefined4 *param_2); undefined4 * __thiscall FUN_10c915f0(undefined4 *param_2,int *param_3,undefined4 param_4); void __thiscall FUN_10c91730(undefined4 param_2,undefined4 *param_3); undefined4 * __thiscall FUN_10c91810(undefined4 *param_2,int *param_3); undefined4 * __thiscall FUN_10c91940(undefined4 *param_2,int *param_3); undefined4 * __thiscall FUN_10c91a60(undefined4 *param_2,int *param_3); void __thiscall FUN_10c92e90(undefined4 *param_2,undefined1 *param_3); int * __thiscall FUN_10c93520(undefined4 *param_2); void __thiscall FUN_10c93e20(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
             ,undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
             undefined4 param_10,undefined4 param_11,undefined4 param_12,undefined4 param_13,
-            undefined4 param_14); undefined4 __thiscall FUN_10c94cb0(undefined4 param_2); undefined4 * __thiscall FUN_10c95300(undefined4 *param_2,undefined4 param_3); SCStr * __thiscall FUN_10c96200(SCStr *param_2); SCStr * __thiscall FUN_10c966c0(SCStr *param_2); SCStr * __thiscall FUN_10c96cc0(SCStr *param_2); SCStr * __thiscall FUN_10c96f10(SCStr *param_2); SCStr * __thiscall FUN_10c97390(SCStr *param_2); undefined4 * __thiscall FUN_10c97420(undefined4 *param_2); undefined4 * __thiscall FUN_10c97560(undefined4 *param_2); undefined4 __thiscall FUN_10c97690(undefined4 param_2); SCStr * __thiscall FUN_10c977d0(SCStr *param_2); SCStr * __thiscall FUN_10c97910(SCStr *param_2); SCStr * __thiscall FUN_10c97bc0(SCStr *param_2); SCStr * __thiscall FUN_10c97d10(SCStr *param_2); undefined4 * __thiscall FUN_10c97f60(undefined4 *param_2); undefined4 * __thiscall FUN_10c98150(undefined4 *param_2); undefined4 * __thiscall FUN_10c98320(undefined4 *param_2); undefined4 * __thiscall FUN_10c98580(undefined4 *param_2); int * __thiscall FUN_10c987f0(int *param_2); undefined4 * __thiscall FUN_10c98910(undefined4 *param_2); SCStr * __thiscall FUN_10c98cd0(SCStr *param_2,undefined4 param_3); SCStr * __thiscall FUN_10c98e00(SCStr *param_2,undefined4 param_3); SCStr * __thiscall FUN_10c98f50(SCStr *param_2,int param_3); undefined4 * __thiscall FUN_10c99270(undefined4 *param_2); undefined1 __thiscall FUN_10c9a5f0(undefined4 param_2); undefined1 __thiscall FUN_10c9b560(undefined4 param_2); undefined1 __thiscall FUN_10c9be10(undefined4 param_2); void __thiscall FUN_10c9d040(undefined4 param_2); SCStr * __thiscall FUN_10c9d240(SCStr *param_2); SCStr * __thiscall FUN_10c9d390(SCStr *param_2); SCStr * __thiscall FUN_10c9d4e0(SCStr *param_2); SCStr * __thiscall FUN_10c9d630(SCStr *param_2); SCStr * __thiscall FUN_10c9d780(SCStr *param_2); SCStr * __thiscall FUN_10c9d8d0(SCStr *param_2); undefined4 * __thiscall FUN_10ca0490(undefined4 param_2,undefined4 param_3,undefined1 param_4); undefined4 * __thiscall FUN_10ca0560(undefined4 param_2); undefined4 * __thiscall FUN_10ca06f0(undefined4 param_2); undefined4 * __thiscall FUN_10ca0770(undefined4 param_2); undefined4 * __thiscall FUN_10ca07f0(undefined4 param_2); undefined4 * __thiscall FUN_10ca0f20(undefined4 param_2); undefined4 * __thiscall FUN_10ca10b0(int *param_2); undefined4 * __thiscall FUN_10ca24d0(byte param_2); undefined4 * __thiscall FUN_10ca2970(byte param_2); undefined4 * __thiscall FUN_10ca2fa0(byte param_2); void __thiscall FUN_10ca31b0(int param_2,int param_3,int param_4); void __thiscall FUN_10ca3640(int param_2); void __thiscall FUN_10ca3810(int *param_2,short param_3); undefined4 * __thiscall FUN_10ca6e50(undefined4 *param_2); undefined4 * __thiscall FUN_10ca7090(undefined4 *param_2); undefined4 * __thiscall FUN_10ca7450(undefined4 *param_2); void __thiscall FUN_10ca7790(int *param_2,SCStr *param_3); SCStr * __thiscall FUN_10ca9470(SCStr *param_2,int param_3); SCStr * __thiscall FUN_10ca9850(SCStr *param_2); SCStr * __thiscall FUN_10ca9960(SCStr *param_2); int * __thiscall FUN_10ca9c50(int *param_2); undefined4 * __thiscall FUN_10caaf90(undefined4 *param_2); int * __thiscall FUN_10cac220(int *param_2); undefined4 * __thiscall FUN_10caea20(undefined4 *param_2); undefined4 * __thiscall FUN_10caed50(undefined4 *param_2); undefined4 * __thiscall FUN_10cb0430(undefined4 *param_2); int * __thiscall FUN_10cb07a0(int *param_2); int * __thiscall FUN_10cb0880(int *param_2); int * __thiscall FUN_10cb09d0(int *param_2); int * __thiscall FUN_10cb0b00(int *param_2); int * __thiscall FUN_10cb0c10(int *param_2); int * __thiscall FUN_10cb0d20(int *param_2); void __thiscall FUN_10cb25d0(int param_2,undefined4 param_3); void __thiscall FUN_10cb2b70(void *param_2); void __thiscall FUN_10cb32d0(int param_2,char *param_3); void __thiscall FUN_10cb34f0(int param_2,char *param_3); void __thiscall FUN_10cb6930(int *param_2); void __thiscall FUN_10cb7230(undefined4 param_2); undefined4 * __thiscall FUN_10cb89c0(undefined4 param_2,undefined4 param_3,undefined4 param_4,
+            undefined4 param_14); undefined4 __thiscall FUN_10c94cb0(undefined4 param_2); undefined4 * __thiscall FUN_10c95300(undefined4 *param_2,undefined4 param_3); SCStr * __thiscall FUN_10c96200(SCStr *param_2); SCStr * __thiscall FUN_10c966c0(SCStr *param_2); SCStr * __thiscall FUN_10c96cc0(SCStr *param_2); SCStr * __thiscall FUN_10c96f10(SCStr *param_2); SCStr * __thiscall FUN_10c97390(SCStr *param_2); undefined4 * __thiscall FUN_10c97420(undefined4 *param_2); undefined4 * __thiscall FUN_10c97560(undefined4 *param_2); undefined4 __thiscall FUN_10c97690(undefined4 param_2); SCStr * __thiscall FUN_10c977d0(SCStr *param_2); SCStr * __thiscall FUN_10c97910(SCStr *param_2); SCStr * __thiscall FUN_10c97bc0(SCStr *param_2); SCStr * __thiscall FUN_10c97d10(SCStr *param_2); undefined4 * __thiscall FUN_10c97f60(undefined4 *param_2); undefined4 * __thiscall FUN_10c98150(undefined4 *param_2); undefined4 * __thiscall FUN_10c98320(undefined4 *param_2); undefined4 * __thiscall FUN_10c98580(undefined4 *param_2); int * __thiscall FUN_10c987f0(int *param_2); undefined4 * __thiscall FUN_10c98910(undefined4 *param_2); SCStr * __thiscall FUN_10c98cd0(SCStr *param_2,undefined4 param_3); SCStr * __thiscall FUN_10c98e00(SCStr *param_2,undefined4 param_3); SCStr * __thiscall FUN_10c98f50(SCStr *param_2,int param_3); undefined4 * __thiscall FUN_10c99270(undefined4 *param_2); undefined1 __thiscall FUN_10c9a5f0(undefined4 param_2); undefined1 __thiscall FUN_10c9b560(undefined4 param_2); undefined1 __thiscall FUN_10c9be10(undefined4 param_2); void __thiscall FUN_10c9d040(undefined4 param_2); SCStr * __thiscall FUN_10c9d240(SCStr *param_2); SCStr * __thiscall FUN_10c9d390(SCStr *param_2); SCStr * __thiscall FUN_10c9d4e0(SCStr *param_2); SCStr * __thiscall FUN_10c9d630(SCStr *param_2); SCStr * __thiscall FUN_10c9d780(SCStr *param_2); SCStr * __thiscall FUN_10c9d8d0(SCStr *param_2); void __thiscall FUN_10ca0190(undefined4 *param_2); undefined4 * __thiscall FUN_10ca0490(undefined4 param_2,undefined4 param_3,undefined1 param_4); undefined4 * __thiscall FUN_10ca0560(undefined4 param_2); undefined4 * __thiscall FUN_10ca06f0(undefined4 param_2); undefined4 * __thiscall FUN_10ca0770(undefined4 param_2); undefined4 * __thiscall FUN_10ca07f0(undefined4 param_2); undefined4 * __thiscall FUN_10ca0f20(undefined4 param_2); undefined4 * __thiscall FUN_10ca10b0(int *param_2); undefined4 * __thiscall FUN_10ca24d0(byte param_2); undefined4 * __thiscall FUN_10ca2970(byte param_2); undefined4 * __thiscall FUN_10ca2fa0(byte param_2); int __thiscall FUN_10ca30d0(byte param_2); void __thiscall FUN_10ca31b0(int param_2,int param_3,int param_4); void __thiscall FUN_10ca3640(int param_2); void __thiscall FUN_10ca3810(int *param_2,short param_3); undefined4 * __thiscall FUN_10ca6e50(undefined4 *param_2); undefined4 * __thiscall FUN_10ca7090(undefined4 *param_2); undefined4 * __thiscall FUN_10ca7450(undefined4 *param_2); void __thiscall FUN_10ca7790(int *param_2,SCStr *param_3); SCStr * __thiscall FUN_10ca9470(SCStr *param_2,int param_3); SCStr * __thiscall FUN_10ca9850(SCStr *param_2); SCStr * __thiscall FUN_10ca9960(SCStr *param_2); int * __thiscall FUN_10ca9c50(int *param_2); undefined4 * __thiscall FUN_10caaf90(undefined4 *param_2); int * __thiscall FUN_10cac220(int *param_2); undefined4 * __thiscall FUN_10caea20(undefined4 *param_2); undefined4 * __thiscall FUN_10caed50(undefined4 *param_2); undefined4 * __thiscall FUN_10cb0430(undefined4 *param_2); int * __thiscall FUN_10cb07a0(int *param_2); int * __thiscall FUN_10cb0880(int *param_2); int * __thiscall FUN_10cb09d0(int *param_2); int * __thiscall FUN_10cb0b00(int *param_2); int * __thiscall FUN_10cb0c10(int *param_2); int * __thiscall FUN_10cb0d20(int *param_2); void __thiscall FUN_10cb25d0(int param_2,undefined4 param_3); void __thiscall FUN_10cb2b70(void *param_2); void __thiscall FUN_10cb32d0(int param_2,char *param_3); void __thiscall FUN_10cb34f0(int param_2,char *param_3); void __thiscall FUN_10cb3860(undefined4 *param_2); void __thiscall FUN_10cb6930(int *param_2); void __thiscall FUN_10cb7230(undefined4 param_2); undefined4 * __thiscall FUN_10cb89c0(undefined4 param_2,undefined4 param_3,undefined4 param_4,
             undefined4 *param_5); int * __thiscall FUN_10cb8b80(int *param_2,SCStr *param_3); int * __thiscall FUN_10cb8c30(int *param_2,SCStr *param_3); undefined4 * __thiscall FUN_10cb8f90(undefined4 param_2); undefined4 * __thiscall FUN_10cb9030(int *param_2); int __thiscall FUN_10cb9580(SCStr *param_2); void __thiscall FUN_10cba240(int *param_2,SCStr *param_3); undefined4 __thiscall FUN_10cba2c0(undefined4 param_2,int *param_3); undefined4 __thiscall FUN_10cba3a0(undefined4 param_2,int *param_3); undefined4 __thiscall FUN_10cba420(undefined4 param_2,int *param_3); undefined4 __thiscall FUN_10cba500(undefined4 param_2,int *param_3); undefined4 __thiscall FUN_10cbab60(undefined4 param_2); undefined4 __thiscall FUN_10cbacb0(char *param_2); undefined4 __thiscall FUN_10cbafd0(int *param_2); undefined4 __thiscall FUN_10cbb0a0(int *param_2); undefined4 __thiscall FUN_10cbb350(int *param_2); undefined4 __thiscall FUN_10cbb420(int *param_2); undefined4 __thiscall FUN_10cbb4a0(int *param_2); undefined4 __thiscall FUN_10cbb570(int *param_2); void __thiscall FUN_10cbbe20(undefined4 *param_2,undefined4 param_3); void __thiscall FUN_10cbc630(SCStr *param_2,int *param_3); void __thiscall FUN_10cbc8c0(SCStr *param_2); void __thiscall FUN_10cbcff0(undefined4 param_2,int *param_3); void __thiscall FUN_10cbddc0(undefined4 *param_2,undefined4 *param_3); void __thiscall FUN_10cbe000(int param_2); undefined4 * __thiscall FUN_10cbe0d0(undefined4 *param_2,SCStr *param_3); /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void __thiscall FUN_10cbf710(int *param_2); void __thiscall FUN_10cc00d0(int *param_2); undefined4 * __thiscall FUN_10cc0820(void *param_2,undefined4 *param_3); undefined4 * __thiscall FUN_10cc0ab0(int param_2); undefined4 * __thiscall FUN_10cc0b70(int param_2); undefined4 * __thiscall FUN_10cc0e80(int *param_2,undefined1 param_3); undefined4 * __thiscall FUN_10cc0ff0(int param_2); undefined4 * __thiscall FUN_10cc1b50(byte param_2); void __thiscall FUN_10cc1c60(int param_2,int param_3,int param_4); void __thiscall FUN_10cc1ea0(int *param_2,undefined4 param_3); char * __thiscall FUN_10cc22a0(char *param_2); char * __thiscall FUN_10cc2340(char *param_2); void __thiscall FUN_10cc3370(undefined4 param_2,undefined4 param_3); int __thiscall FUN_10cc36c0(int param_2); void __thiscall FUN_10cc3a80(undefined4 param_2); void __thiscall FUN_10cc4230(undefined4 *param_2,undefined4 *param_3); undefined4 * __thiscall FUN_10cc5630(void *param_2,undefined4 *param_3); undefined4 * __thiscall FUN_10cc57e0(void *param_2,undefined4 *param_3); };
 using namespace std;
 void FUN_10c04ef0(undefined4 *param_1,int *param_2);
@@ -2417,8 +2476,8 @@ undefined4 * FUN_10c2b2d0(SCStr *param_1,SCStr *param_2,undefined4 *param_3);
 void FUN_10c2b470(undefined4 param_1,undefined4 *param_2,int param_3);
 void FUN_10c2b500(undefined4 param_1,undefined4 *param_2,int param_3);
 void FUN_10c2b590(undefined4 param_1,undefined4 *param_2,int param_3);
-/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_10c2bd10(int *param_1);
-/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_10c2c510(int *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcallFUN_10c2bd10(int *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcallFUN_10c2c510(int *param_1);
 undefined4 * __stdcall FUN_10c2c5b0(SCStr *param_1,SCStr *param_2,undefined4 *param_3);
 void FUN_10c2c6a0(SCStr *param_1,SCStr *param_2,undefined4 *param_3);
 void __stdcall FUN_10c2c790(SCStr *param_1,SCStr *param_2,undefined4 *param_3);
@@ -2480,7 +2539,8 @@ void __fastcall FUN_10c41320(int *param_1);
 void __fastcall FUN_10c41390(int *param_1);
 void __fastcall FUN_10c41400(int *param_1);
 void __fastcall FUN_10c41470(int *param_1);
-/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_10c417d0(int *param_1);
+/* Library Function - Multiple Matches With Same Base Name public: __thiscall std::pair<unsigned long const ,class std::vector<struct CHN *,class std::allocator<struct CHN *> > >::~pair<unsigned long const ,class std::vector<struct CHN *,class std::allocator<struct CHN *> > >(void_) public: __thiscall std::pair<unsigned long,class std::vector<struct CHN *,class std::allocator<struct CHN *> > >::~pair<unsigned long,class std::vector<struct CHN *,class std::allocator<struct CHN *> > >(void_) Library: Visual Studio 2019 Release */ void __fastcall FUN_10c41720(int param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcallFUN_10c417d0(int *param_1);
 int * __fastcall FUN_10c41fa0(int *param_1);
 void __fastcall FUN_10c43e20(float *param_1);
 void __fastcall FUN_10c43ed0(float *param_1);
@@ -2490,7 +2550,7 @@ void __fastcall FUN_10c44170(int *param_1);
 void __fastcall FUN_10c441e0(int *param_1);
 void __fastcall FUN_10c44250(int *param_1);
 void __fastcall FUN_10c442c0(int *param_1);
-/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_10c44450(int *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcallFUN_10c44450(int *param_1);
 int __stdcall FUN_10c453e0(byte *param_1);
 int __stdcall FUN_10c45470(byte *param_1);
 void __fastcall FUN_10c457a0(int param_1);
@@ -2603,7 +2663,9 @@ undefined4 FUN_10c6f940(void);
 undefined4 FUN_10c6fa20(void);
 void FUN_10c716e0(undefined4 *param_1,char *param_2,char *param_3,uint *param_4);
 void __fastcall FUN_10c75d80(int *param_1);
+/* Library Function - Multiple Matches With Same Base Name public: __thiscall std::pair<unsigned long const ,class std::vector<struct CHN *,class std::allocator<struct CHN *> > >::~pair<unsigned long const ,class std::vector<struct CHN *,class std::allocator<struct CHN *> > >(void_) public: __thiscall std::pair<unsigned long,class std::vector<struct CHN *,class std::allocator<struct CHN *> > >::~pair<unsigned long,class std::vector<struct CHN *,class std::allocator<struct CHN *> > >(void_) Library: Visual Studio 2019 Release */ void __fastcall FUN_10c75de0(int param_1);
 void __fastcall FUN_10c75e60(int param_1);
+/* Library Function - Multiple Matches With Same Base Name public: __thiscall std::pair<unsigned long const ,class std::vector<struct CHN *,class std::allocator<struct CHN *> > >::~pair<unsigned long const ,class std::vector<struct CHN *,class std::allocator<struct CHN *> > >(void_) public: __thiscall std::pair<unsigned long,class std::vector<struct CHN *,class std::allocator<struct CHN *> > >::~pair<unsigned long,class std::vector<struct CHN *,class std::allocator<struct CHN *> > >(void_) Library: Visual Studio 2019 Release */ void __fastcall FUN_10c75fd0(int param_1);
 void __fastcall FUN_10c76210(int *param_1);
 void __fastcall FUN_10c76280(int *param_1);
 void __fastcall FUN_10c762f0(int *param_1);
@@ -2762,14 +2824,30 @@ undefined1 __fastcall FUN_10c9ca70(int param_1);
 undefined1 FUN_10c9cb70(void);
 undefined1 __fastcall FUN_10c9ccb0(int param_1);
 undefined1 __fastcall FUN_10c9cdb0(int param_1);
+void FUN_10c9db90(int param_1,int param_2);
+void FUN_10c9e500(int param_1,int param_2,undefined4 param_3);
+void FUN_10c9e620(int param_1,undefined4 *param_2,undefined4 *param_3,code *param_4);
+void FUN_10c9e8e0(uint *param_1,undefined4 *param_2,undefined4 *param_3,code *param_4);
+void FUN_10c9f6f0(int param_1,int param_2,undefined4 param_3);
+void FUN_10c9f9b0(int param_1,int param_2,undefined4 param_3);
+void FUN_10c9fb30(int param_1,int param_2,int param_3,undefined4 param_4);
+undefined4 * FUN_10c9fe50(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3);
+undefined4 * FUN_10c9ff10(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3);
+void FUN_10ca0120(undefined4 param_1,int param_2);
+void FUN_10ca0260(undefined4 *param_1,undefined4 param_2);
+void FUN_10ca0390(undefined4 *param_1,undefined4 param_2);
 void __fastcall FUN_10ca1610(undefined4 *param_1);
 void __fastcall FUN_10ca1a20(undefined4 *param_1);
 void __fastcall FUN_10ca21b0(undefined4 *param_1);
 void __fastcall FUN_10ca3370(int *param_1);
+undefined4 * __stdcall FUN_10ca3410(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3);
+void FUN_10ca34c0(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3);
+void __stdcall FUN_10ca3570(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3);
 void __stdcall FUN_10ca3cb0(undefined4 param_1,int *param_2);
 undefined1 __fastcall FUN_10ca40c0(int param_1);
 void __fastcall FUN_10ca42e0(int param_1);
 undefined4 __fastcall FUN_10ca43c0(int *param_1);
+undefined4 FUN_10ca4660(undefined4 param_1,uint param_2);
 void __fastcall FUN_10ca4740(int param_1);
 undefined4 * __fastcall FUN_10ca49f0(undefined4 param_1);
 int * FUN_10ca4b90(int *param_1,undefined4 param_2,undefined4 param_3);
@@ -2872,9 +2950,9 @@ void __fastcall FUN_10cbe1d0(int param_1);
 void __stdcall FUN_10cbf9e0(undefined4 param_1,undefined4 param_2,undefined4 param_3);
 void FUN_10cbfc50(void);
 /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __fastcall FUN_10cc0290(int param_1);
-/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_10cc14d0(int *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcallFUN_10cc14d0(int *param_1);
 void __fastcall FUN_10cc17d0(undefined4 *param_1);
-/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_10cc1d30(int *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcallFUN_10cc1d30(int *param_1);
 void __fastcall FUN_10cc1e40(int param_1);
 void __fastcall FUN_10cc31c0(int param_1);
 int __fastcall FUN_10cc3740(int param_1);
@@ -12518,7 +12596,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10c2bbf0(SCStr *param_2,SCStr *param
    
    Library: Visual Studio 2019 Release */
 
-void __fastcall FID_conflict__Tidy_10c2bd10(int *param_1)
+void __fastcallFUN_10c2bd10(int *param_1)
 
 {
   int iVar1;
@@ -12595,7 +12673,7 @@ void __thiscall Recovered_Bulk::FUN_10c2c2a0(int param_2,int param_3,int param_4
    
    Library: Visual Studio 2019 Release */
 
-void __fastcall FID_conflict__Tidy_10c2c510(int *param_1)
+void __fastcallFUN_10c2c510(int *param_1)
 
 {
   int iVar1;
@@ -18740,6 +18818,47 @@ void __fastcall FUN_10c41470(int *param_1)
 }
 
 
+// Reference entry 10c41720; body size 83 bytes.
+#line 1 "ENTRY_10c41720"
+
+/* Library Function - Multiple Matches With Same Base Name
+    public: __thiscall std::pair<unsigned long const ,class std::vector<struct CHN *,class
+   std::allocator<struct CHN *> > >::~pair<unsigned long const ,class std::vector<struct CHN *,class
+   std::allocator<struct CHN *> > >(void_)
+    public: __thiscall std::pair<unsigned long,class std::vector<struct CHN *,class
+   std::allocator<struct CHN *> > >::~pair<unsigned long,class std::vector<struct CHN *,class
+   std::allocator<struct CHN *> > >(void_)
+   
+   Library: Visual Studio 2019 Release */
+
+void __fastcall FUN_10c41720(int param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  uint uVar3;
+  
+  iVar1 = (int)(*(int *)(param_1 + 4));
+  if (iVar1 != 0) {
+    uVar3 = (uint)(*(int *)(param_1 + 0xc) - iVar1 & 0xfffffffc);
+    iVar2 = (int)(iVar1);
+    if (0xfff < uVar3) {
+      iVar2 = (int)(*(int *)(iVar1 + -4));
+      uVar3 = (uint)(uVar3 + 0x23);
+      if (0x1f < (iVar1 - iVar2) - 4U) {
+                    
+        _invalid_parameter_noinfo_noreturn();
+      }
+    }
+    thunk_FUN_1148a50e(iVar2,uVar3);
+    *(undefined4 *)(param_1 + 4) = 0;
+    *(undefined4 *)(param_1 + 8) = 0;
+    *(undefined4 *)(param_1 + 0xc) = 0;
+  }
+  return;
+}
+
+
 // Reference entry 10c417d0; body size 81 bytes.
 #line 1 "ENTRY_10c417d0"
 
@@ -18758,7 +18877,7 @@ void __fastcall FUN_10c41470(int *param_1)
    
    Library: Visual Studio 2019 Release */
 
-void __fastcall FID_conflict__Tidy_10c417d0(int *param_1)
+void __fastcallFUN_10c417d0(int *param_1)
 
 {
   int iVar1;
@@ -19501,7 +19620,7 @@ void __fastcall FUN_10c442c0(int *param_1)
    
    Library: Visual Studio 2019 Release */
 
-void __fastcall FID_conflict__Tidy_10c44450(int *param_1)
+void __fastcallFUN_10c44450(int *param_1)
 
 {
   int iVar1;
@@ -34372,6 +34491,47 @@ void __fastcall FUN_10c75d80(int *param_1)
 }
 
 
+// Reference entry 10c75de0; body size 83 bytes.
+#line 1 "ENTRY_10c75de0"
+
+/* Library Function - Multiple Matches With Same Base Name
+    public: __thiscall std::pair<unsigned long const ,class std::vector<struct CHN *,class
+   std::allocator<struct CHN *> > >::~pair<unsigned long const ,class std::vector<struct CHN *,class
+   std::allocator<struct CHN *> > >(void_)
+    public: __thiscall std::pair<unsigned long,class std::vector<struct CHN *,class
+   std::allocator<struct CHN *> > >::~pair<unsigned long,class std::vector<struct CHN *,class
+   std::allocator<struct CHN *> > >(void_)
+   
+   Library: Visual Studio 2019 Release */
+
+void __fastcall FUN_10c75de0(int param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  uint uVar3;
+  
+  iVar1 = (int)(*(int *)(param_1 + 4));
+  if (iVar1 != 0) {
+    uVar3 = (uint)(*(int *)(param_1 + 0xc) - iVar1 & 0xfffffffc);
+    iVar2 = (int)(iVar1);
+    if (0xfff < uVar3) {
+      iVar2 = (int)(*(int *)(iVar1 + -4));
+      uVar3 = (uint)(uVar3 + 0x23);
+      if (0x1f < (iVar1 - iVar2) - 4U) {
+                    
+        _invalid_parameter_noinfo_noreturn();
+      }
+    }
+    thunk_FUN_1148a50e(iVar2,uVar3);
+    *(undefined4 *)(param_1 + 4) = 0;
+    *(undefined4 *)(param_1 + 8) = 0;
+    *(undefined4 *)(param_1 + 0xc) = 0;
+  }
+  return;
+}
+
+
 // Reference entry 10c75e60; body size 97 bytes.
 #line 1 "ENTRY_10c75e60"
 
@@ -34401,6 +34561,47 @@ void __fastcall FUN_10c75e60(int param_1)
   }
   thunk_FUN_10c76070();
   thunk_FUN_10c76070();
+  return;
+}
+
+
+// Reference entry 10c75fd0; body size 83 bytes.
+#line 1 "ENTRY_10c75fd0"
+
+/* Library Function - Multiple Matches With Same Base Name
+    public: __thiscall std::pair<unsigned long const ,class std::vector<struct CHN *,class
+   std::allocator<struct CHN *> > >::~pair<unsigned long const ,class std::vector<struct CHN *,class
+   std::allocator<struct CHN *> > >(void_)
+    public: __thiscall std::pair<unsigned long,class std::vector<struct CHN *,class
+   std::allocator<struct CHN *> > >::~pair<unsigned long,class std::vector<struct CHN *,class
+   std::allocator<struct CHN *> > >(void_)
+   
+   Library: Visual Studio 2019 Release */
+
+void __fastcall FUN_10c75fd0(int param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  uint uVar3;
+  
+  iVar1 = (int)(*(int *)(param_1 + 0x14));
+  if (iVar1 != 0) {
+    uVar3 = (uint)(*(int *)(param_1 + 0x1c) - iVar1 & 0xfffffffc);
+    iVar2 = (int)(iVar1);
+    if (0xfff < uVar3) {
+      iVar2 = (int)(*(int *)(iVar1 + -4));
+      uVar3 = (uint)(uVar3 + 0x23);
+      if (0x1f < (iVar1 - iVar2) - 4U) {
+                    
+        _invalid_parameter_noinfo_noreturn();
+      }
+    }
+    thunk_FUN_1148a50e(iVar2,uVar3);
+    *(undefined4 *)(param_1 + 0x14) = 0;
+    *(undefined4 *)(param_1 + 0x18) = 0;
+    *(undefined4 *)(param_1 + 0x1c) = 0;
+  }
   return;
 }
 
@@ -48577,6 +48778,791 @@ SCStr * __thiscall Recovered_Bulk::FUN_10c9d8d0(SCStr *param_2)
 }
 
 
+// Reference entry 10c9db90; body size 104 bytes.
+#line 1 "ENTRY_10c9db90"
+
+void FUN_10c9db90(int param_1,int param_2)
+
+{
+ try {
+  void **ppvVar1;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  ppvVar1 = (void **)(&local_10);
+
+  for (; ExceptionList = (void *)(ppvVar1, param_1 != param_2); param_1 = param_1 + 0x14) {
+
+    _eh_vector_destructor_iterator_((void *)(param_1 + 8),4,3,((int (SCStr::*)())&SCStr::op_dtor));
+
+  }
+
+  return;
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10c9e500; body size 227 bytes.
+#line 1 "ENTRY_10c9e500"
+
+void FUN_10c9e500(int param_1,int param_2,undefined4 param_3)
+
+{
+ try {
+  int iVar1;
+  uint uVar2;
+  void *pvVar3;
+  int iVar4;
+  undefined4 local_28;
+  undefined4 local_24;
+  undefined1 local_20 [12];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  uVar2 = (uint)(DAT_12126b84);
+
+  iVar1 = (int)((param_2 - param_1) / 0x14);
+  iVar4 = (int)(iVar1 >> 1);
+  local_14 = (uint)(uVar2);
+  if (0 < iVar4) {
+    pvVar3 = (void *)((void *)(param_1 + iVar4 * 0x14 + 8));
+    do {
+
+      local_28 = (undefined4)(*(undefined4 *)((int)pvVar3 + -0x1c));
+      iVar4 = (int)(iVar4 + -1);
+      local_24 = (undefined4)(*(undefined4 *)((int)pvVar3 + -0x18));
+      _eh_vector_copy_constructor_iterator_
+                (local_20,(void *)((int)pvVar3 + -0x14),4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+      thunk_FUN_10c9f3a0(param_1,iVar4,iVar1,&local_28,param_3,uVar2);
+
+      _eh_vector_destructor_iterator_(local_20,4,3,((int (SCStr::*)())&SCStr::op_dtor));
+      pvVar3 = (void *)((void *)((int)pvVar3 + -0x14));
+    } while (0 < iVar4);
+  }
+
+
+  thunk_FUN_1148ac28();
+  return;
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10c9e620; body size 426 bytes.
+#line 1 "ENTRY_10c9e620"
+
+void FUN_10c9e620(int param_1,undefined4 *param_2,undefined4 *param_3,code *param_4)
+
+{
+ try {
+  int iVar1;
+  undefined4 uVar2;
+  undefined4 uVar3;
+  undefined4 local_30;
+  undefined4 *puStack_2c;
+  undefined4 *puStack_28;
+  uint uStack_24;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  uStack_24 = (uint)(DAT_12126b84);
+
+  _eh_vector_copy_constructor_iterator_
+            (&local_30,(void *)(param_1 + 8),4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+  uVar2 = (undefined4)(*param_2);
+  uVar3 = (undefined4)(param_2[1]);
+  _eh_vector_copy_constructor_iterator_(&stack0xffffffbc,param_2 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor))
+  ;
+
+  iVar1 = (int)((*param_4)(uVar2,uVar3));
+  if (iVar1 != 0) {
+    puStack_28 = (undefined4 *)((undefined4 *)param_1);
+    puStack_2c = (undefined4 *)(param_2);
+
+    thunk_FUN_10ca0260();
+  }
+  _eh_vector_copy_constructor_iterator_(&local_30,param_2 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+  uVar2 = (undefined4)(*param_3);
+  uVar3 = (undefined4)(param_3[1]);
+  _eh_vector_copy_constructor_iterator_(&stack0xffffffbc,param_3 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor))
+  ;
+
+  iVar1 = (int)((*param_4)(uVar2,uVar3));
+  if (iVar1 != 0) {
+    puStack_28 = (undefined4 *)(param_2);
+    puStack_2c = (undefined4 *)(param_3);
+
+    thunk_FUN_10ca0260();
+    _eh_vector_copy_constructor_iterator_
+              (&local_30,(void *)(param_1 + 8),4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+    uVar2 = (undefined4)(*param_2);
+
+    uVar3 = (undefined4)(param_2[1]);
+    _eh_vector_copy_constructor_iterator_
+              (&stack0xffffffbc,param_2 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+    iVar1 = (int)((*param_4)(uVar2,uVar3));
+    if (iVar1 != 0) {
+      puStack_28 = (undefined4 *)((undefined4 *)param_1);
+      puStack_2c = (undefined4 *)(param_2);
+
+      thunk_FUN_10ca0260();
+    }
+  }
+
+  return;
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10c9e8e0; body size 2174 bytes.
+#line 1 "ENTRY_10c9e8e0"
+
+void FUN_10c9e8e0(uint *param_1,undefined4 *param_2,undefined4 *param_3,code *param_4)
+
+{
+ try {
+  int iVar1;
+  undefined4 *puVar2;
+  undefined4 *puVar3;
+  undefined4 *puVar4;
+  undefined4 *puVar5;
+  undefined4 *puVar6;
+  undefined4 *puVar7;
+  undefined4 uVar8;
+  undefined4 uVar9;
+  undefined4 *local_58;
+  undefined4 *local_48;
+  undefined4 *local_40;
+  undefined1 local_34 [12];
+  undefined4 local_28;
+  undefined4 local_24;
+  undefined1 local_20 [12];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  local_14 = (uint)(DAT_12126b84);
+
+  puVar4 = (undefined4 *)(param_3 + -5);
+  local_48 = (undefined4 *)(param_2 + (((int)param_3 - (int)param_2) / 0x14 >> 1) * 5);
+  iVar1 = (int)(((int)puVar4 - (int)param_2) / 0x14);
+  if (0x28 < iVar1) {
+    iVar1 = (int)(iVar1 + 1 >> 3);
+    thunk_FUN_10c9e620();
+    thunk_FUN_10c9e620();
+    thunk_FUN_10c9e620(puVar4 + iVar1 * -10,puVar4 + iVar1 * -5,puVar4,param_4);
+  }
+  thunk_FUN_10c9e620();
+  puVar4 = (undefined4 *)(local_48 + 5);
+  local_40 = (undefined4 *)(local_48);
+  if (param_2 < local_48) {
+    puVar6 = (undefined4 *)(local_48 + -4);
+    do {
+      _eh_vector_copy_constructor_iterator_
+                (&stack0xffffff80,puVar6 + 6,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+      uVar8 = (undefined4)(puVar6[-1]);
+
+      uVar9 = (undefined4)(*puVar6);
+      _eh_vector_copy_constructor_iterator_
+                (&stack0xffffff6c,puVar6 + 1,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+      iVar1 = (int)((*param_4)(uVar8,uVar9));
+      if (iVar1 != 0) break;
+      _eh_vector_copy_constructor_iterator_
+                (&stack0xffffff80,puVar6 + 1,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+      uVar8 = (undefined4)(*local_40);
+
+      uVar9 = (undefined4)(puVar6[5]);
+      _eh_vector_copy_constructor_iterator_
+                (&stack0xffffff6c,puVar6 + 6,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+      iVar1 = (int)((*param_4)(uVar8,uVar9));
+      if (iVar1 != 0) break;
+      local_40 = (undefined4 *)(local_40 + -5);
+      puVar6 = (undefined4 *)(puVar6 + -5);
+    } while (param_2 < local_40);
+  }
+  puVar6 = (undefined4 *)(puVar4);
+  local_58 = (undefined4 *)(puVar4);
+  puVar7 = (undefined4 *)(puVar4);
+  puVar5 = (undefined4 *)(local_40);
+  if (puVar4 < param_3) {
+    local_48 = (undefined4 *)(local_48 + 7);
+    do {
+      _eh_vector_copy_constructor_iterator_
+                (&stack0xffffff80,local_40 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+      uVar8 = (undefined4)(*puVar4);
+
+      uVar9 = (undefined4)(local_48[-1]);
+      _eh_vector_copy_constructor_iterator_
+                (&stack0xffffff6c,local_48,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+      iVar1 = (int)((*param_4)(uVar8,uVar9));
+      puVar6 = (undefined4 *)(puVar4);
+      local_58 = (undefined4 *)(puVar4);
+      puVar7 = (undefined4 *)(puVar4);
+      if (iVar1 != 0) break;
+      _eh_vector_copy_constructor_iterator_
+                (&stack0xffffff80,local_48,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+      uVar8 = (undefined4)(*local_40);
+
+      uVar9 = (undefined4)(local_40[1]);
+      _eh_vector_copy_constructor_iterator_
+                (&stack0xffffff6c,local_40 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+      iVar1 = (int)((*param_4)(uVar8,uVar9));
+      if (iVar1 != 0) break;
+      local_48 = (undefined4 *)(local_48 + 5);
+      puVar4 = (undefined4 *)(puVar4 + 5);
+      puVar6 = (undefined4 *)(puVar4);
+      local_58 = (undefined4 *)(puVar4);
+      puVar7 = (undefined4 *)(puVar4);
+    } while (puVar4 < param_3);
+  }
+joined_r0x10c9ebf2:
+  do {
+    local_48 = (undefined4 *)(puVar7);
+    if (param_3 <= puVar4) {
+LAB_10c9ed56:
+      puVar7 = (undefined4 *)(puVar6);
+      puVar6 = (undefined4 *)(local_40);
+      if (param_2 < local_40) {
+        puVar2 = (undefined4 *)(puVar5 + 2);
+        local_40 = (undefined4 *)(local_40 + -4);
+        do {
+          _eh_vector_copy_constructor_iterator_
+                    (&stack0xffffff80,puVar2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+          uVar8 = (undefined4)(local_40[-1]);
+          uVar9 = (undefined4)(*local_40);
+          _eh_vector_copy_constructor_iterator_
+                    (&stack0xffffff6c,local_40 + 1,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+          iVar1 = (int)((*param_4)(uVar8,uVar9));
+          puVar3 = (undefined4 *)(puVar2);
+          puVar4 = (undefined4 *)(local_58);
+          puVar7 = (undefined4 *)(local_48);
+          if (iVar1 == 0) {
+            _eh_vector_copy_constructor_iterator_
+                      (&stack0xffffff80,local_40 + 1,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+            uVar8 = (undefined4)(*puVar5);
+
+            uVar9 = (undefined4)(puVar2[-1]);
+            _eh_vector_copy_constructor_iterator_
+                      (&stack0xffffff6c,puVar2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+            iVar1 = (int)((*param_4)(uVar8,uVar9));
+            if (iVar1 != 0) break;
+            puVar5 = (undefined4 *)(puVar5 + -5);
+            puVar3 = (undefined4 *)(puVar2 + -5);
+            if (puVar5 != (undefined4 *)(local_40) + -1) {
+              local_28 = (undefined4)(*puVar5);
+              local_24 = (undefined4)(puVar2[-6]);
+              _eh_vector_copy_constructor_iterator_(local_20,puVar3,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+              thunk_FUN_10ca2370();
+              thunk_FUN_10ca2370();
+
+              _eh_vector_destructor_iterator_(local_20,4,3,((int (SCStr::*)())&SCStr::op_dtor));
+
+            }
+          }
+          local_40 = (undefined4 *)(local_40 + -5);
+          puVar6 = (undefined4 *)(puVar6 + -5);
+          puVar2 = (undefined4 *)(puVar3);
+        } while (param_2 < puVar6);
+      }
+      local_40 = (undefined4 *)(puVar6);
+      if (local_40 == (undefined4 *)(param_2)) {
+        if (puVar4 == (undefined4 *)(param_3)) {
+          *param_1 = (uint)((uint)puVar5);
+          param_1[1] = (uint)((uint)puVar7);
+
+          thunk_FUN_1148ac28();
+          return;
+        }
+        if ((undefined4 *)(puVar7) != puVar4) {
+          local_28 = (undefined4)(*puVar5);
+          local_24 = (undefined4)(puVar5[1]);
+          _eh_vector_copy_constructor_iterator_(local_20,puVar5 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+          thunk_FUN_10ca2370();
+          thunk_FUN_10ca2370();
+
+          _eh_vector_destructor_iterator_(local_20,4,3,((int (SCStr::*)())&SCStr::op_dtor));
+
+        }
+        local_28 = (undefined4)(*puVar5);
+        local_24 = (undefined4)(puVar5[1]);
+        _eh_vector_copy_constructor_iterator_(local_20,puVar5 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+        thunk_FUN_10ca2370();
+        thunk_FUN_10ca2370();
+
+        _eh_vector_destructor_iterator_(local_20,4,3,((int (SCStr::*)())&SCStr::op_dtor));
+        puVar4 = (undefined4 *)(puVar4 + 5);
+
+        puVar6 = (undefined4 *)(puVar7 + 5);
+        local_58 = (undefined4 *)(puVar4);
+        puVar7 = (undefined4 *)(puVar7 + 5);
+        puVar5 = (undefined4 *)(puVar5 + 5);
+      }
+      else {
+        puVar2 = (undefined4 *)(local_40 + -5);
+        if (puVar4 == (undefined4 *)(param_3)) {
+          puVar3 = (undefined4 *)(puVar5 + -5);
+          if (puVar2 != (undefined4 *)(puVar3)) {
+            local_28 = (undefined4)(*puVar2);
+            local_24 = (undefined4)(local_40[-4]);
+            _eh_vector_copy_constructor_iterator_
+                      (local_20,local_40 + -3,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+            thunk_FUN_10ca2370();
+            thunk_FUN_10ca2370();
+
+            _eh_vector_destructor_iterator_(local_20,4,3,((int (SCStr::*)())&SCStr::op_dtor));
+
+          }
+          local_28 = (undefined4)(*puVar3);
+          local_24 = (undefined4)(puVar5[-4]);
+          _eh_vector_copy_constructor_iterator_(local_20,puVar5 + -3,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor))
+          ;
+
+          thunk_FUN_10ca2370();
+          thunk_FUN_10ca2370();
+
+          _eh_vector_destructor_iterator_(local_20,4,3,((int (SCStr::*)())&SCStr::op_dtor));
+
+          puVar6 = (undefined4 *)(puVar7 + -5);
+          puVar7 = (undefined4 *)(puVar7 + -5);
+          local_40 = (undefined4 *)(puVar2);
+          puVar5 = (undefined4 *)(puVar3);
+        }
+        else {
+          _eh_vector_copy_constructor_iterator_(local_34,puVar4 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+          thunk_FUN_10ca2370();
+          thunk_FUN_10ca2370();
+
+          _eh_vector_destructor_iterator_(local_34,4,3,((int (SCStr::*)())&SCStr::op_dtor));
+          puVar4 = (undefined4 *)(puVar4 + 5);
+
+          puVar6 = (undefined4 *)(puVar7);
+          local_58 = (undefined4 *)(puVar4);
+          puVar7 = (undefined4 *)(local_48);
+          local_40 = (undefined4 *)(puVar2);
+        }
+      }
+      goto joined_r0x10c9ebf2;
+    }
+    _eh_vector_copy_constructor_iterator_
+              (&stack0xffffff80,puVar4 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+    uVar8 = (undefined4)(*puVar5);
+
+    uVar9 = (undefined4)(puVar5[1]);
+    _eh_vector_copy_constructor_iterator_
+              (&stack0xffffff6c,puVar5 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+    iVar1 = (int)((*param_4)(uVar8,uVar9));
+    if (iVar1 == 0) {
+      _eh_vector_copy_constructor_iterator_
+                (&stack0xffffff80,puVar5 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+      uVar8 = (undefined4)(*puVar4);
+
+      uVar9 = (undefined4)(puVar4[1]);
+      _eh_vector_copy_constructor_iterator_
+                (&stack0xffffff6c,puVar4 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+      iVar1 = (int)((*param_4)(uVar8,uVar9));
+      local_58 = (undefined4 *)(puVar4);
+      local_48 = (undefined4 *)(puVar6);
+      if (iVar1 != 0) goto LAB_10c9ed56;
+      if ((undefined4 *)(puVar6) != puVar4) {
+        local_28 = (undefined4)(*puVar6);
+        local_24 = (undefined4)(puVar6[1]);
+        _eh_vector_copy_constructor_iterator_(local_20,puVar6 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+        thunk_FUN_10ca2370();
+        thunk_FUN_10ca2370();
+
+        _eh_vector_destructor_iterator_(local_20,4,3,((int (SCStr::*)())&SCStr::op_dtor));
+
+      }
+      puVar6 = (undefined4 *)(puVar6 + 5);
+    }
+    puVar4 = (undefined4 *)(puVar4 + 5);
+    local_58 = (undefined4 *)(puVar4);
+    puVar7 = (undefined4 *)(puVar6);
+  } while( true );
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10c9f6f0; body size 224 bytes.
+#line 1 "ENTRY_10c9f6f0"
+
+void FUN_10c9f6f0(int param_1,int param_2,undefined4 param_3)
+
+{
+ try {
+  uint uVar1;
+  undefined4 local_28;
+  undefined4 local_24;
+  undefined1 local_20 [12];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  local_14 = (uint)(uVar1);
+  if (1 < (param_2 - param_1) / 0x14) {
+    local_28 = (undefined4)(*(undefined4 *)(param_2 + -0x14));
+    local_24 = (undefined4)(*(undefined4 *)(param_2 + -0x10));
+    _eh_vector_copy_constructor_iterator_
+              (local_20,(void *)(param_2 + -0xc),4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+    thunk_FUN_10ca2370(param_1);
+    thunk_FUN_10c9f3a0(param_1,0,((param_2 + -0x14) - param_1) / 0x14,&local_28,param_3,uVar1);
+
+    _eh_vector_destructor_iterator_(local_20,4,3,((int (SCStr::*)())&SCStr::op_dtor));
+  }
+
+  thunk_FUN_1148ac28();
+  return;
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10c9f9b0; body size 298 bytes.
+#line 1 "ENTRY_10c9f9b0"
+
+void FUN_10c9f9b0(int param_1,int param_2,undefined4 param_3)
+
+{
+ try {
+  uint uVar1;
+  void *pvVar2;
+  undefined4 local_28;
+  undefined4 local_24;
+  undefined1 local_20 [12];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  local_14 = (uint)(uVar1);
+  if (0x27 < param_2 - param_1) {
+    pvVar2 = (void *)((void *)(param_2 + -0xc));
+    do {
+
+      if (1 < ((0xc - param_1) + (int)pvVar2) / 0x14) {
+        local_28 = (undefined4)(*(undefined4 *)((int)pvVar2 + -8));
+        local_24 = (undefined4)(*(undefined4 *)((int)pvVar2 + -4));
+        _eh_vector_copy_constructor_iterator_(local_20,pvVar2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+        thunk_FUN_10ca2370(param_1);
+        thunk_FUN_10c9f3a0(param_1,0,((-8 - param_1) + (int)pvVar2) / 0x14,&local_28,param_3,uVar1);
+
+        _eh_vector_destructor_iterator_(local_20,4,3,((int (SCStr::*)())&SCStr::op_dtor));
+      }
+      pvVar2 = (void *)((void *)((int)pvVar2 + -0x14));
+    } while (0x27 < (0xc - param_1) + (int)pvVar2);
+  }
+
+
+  thunk_FUN_1148ac28();
+  return;
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10c9fb30; body size 624 bytes.
+#line 1 "ENTRY_10c9fb30"
+
+void FUN_10c9fb30(int param_1,int param_2,int param_3,undefined4 param_4)
+
+{
+ try {
+  void **ppvVar1;
+  uint uVar2;
+  int iVar3;
+  void *pvVar4;
+  int local_4c;
+  int local_48;
+  int local_44;
+  undefined4 local_40;
+  undefined4 local_3c;
+  undefined4 local_38;
+  undefined1 local_34 [12];
+  undefined4 local_28;
+  undefined4 local_24;
+  undefined1 local_20 [12];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  uVar2 = (uint)(DAT_12126b84);
+  iVar3 = (int)(param_2 - param_1);
+  local_14 = (uint)(uVar2);
+  ppvVar1 = (void **)(&local_10);
+
+  local_4c = (int)(param_2);
+  local_40 = (undefined4)(param_4);
+  do {
+
+    if (iVar3 < 0x294) {
+      thunk_FUN_10c9e150(param_1,param_2,local_40);
+LAB_10c9fc19:
+
+      thunk_FUN_1148ac28();
+      return;
+    }
+    if (param_3 < 1) {
+      local_44 = (int)((param_2 - param_1) / 0x14);
+      iVar3 = (int)(local_44 >> 1);
+      if (0 < iVar3) {
+        pvVar4 = (void *)((void *)(param_1 + (iVar3 * 5 + 2) * 4));
+        do {
+          local_28 = (undefined4)(*(undefined4 *)((int)pvVar4 + -0x1c));
+          iVar3 = (int)(iVar3 + -1);
+          local_24 = (undefined4)(*(undefined4 *)((int)pvVar4 + -0x18));
+          _eh_vector_copy_constructor_iterator_
+                    (local_20,(void *)((int)pvVar4 + -0x14),4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+          thunk_FUN_10c9f3a0(param_1,iVar3,local_44,&local_28,local_40);
+
+          _eh_vector_destructor_iterator_(local_20,4,3,((int (SCStr::*)())&SCStr::op_dtor));
+
+          param_2 = (int)(local_4c);
+          pvVar4 = (void *)((void *)((int)pvVar4 + -0x14));
+        } while (0 < iVar3);
+      }
+      if (1 < local_44) {
+        pvVar4 = (void *)((void *)(param_2 + -0xc));
+        local_44 = (int)(0xc - param_1);
+        do {
+          if (1 < (local_44 + (int)pvVar4) / 0x14) {
+            local_3c = (undefined4)(*(undefined4 *)((int)pvVar4 + -8));
+            local_38 = (undefined4)(*(undefined4 *)((int)pvVar4 + -4));
+            _eh_vector_copy_constructor_iterator_(local_34,pvVar4,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+            thunk_FUN_10ca2370(param_1);
+            thunk_FUN_10c9f3a0(param_1,0,((-8 - param_1) + (int)pvVar4) / 0x14,&local_3c,local_40);
+
+            _eh_vector_destructor_iterator_(local_34,4,3,((int (SCStr::*)())&SCStr::op_dtor));
+
+          }
+          pvVar4 = (void *)((void *)((int)pvVar4 + -0x14));
+        } while (0x27 < local_44 + (int)pvVar4);
+      }
+      goto LAB_10c9fc19;
+    }
+    thunk_FUN_10c9e8e0(&local_48,param_1,param_2,local_40,uVar2);
+    param_3 = (int)((param_3 >> 1) + (param_3 >> 2));
+    if ((local_48 - param_1) / 0x14 < (param_2 - local_44) / 0x14) {
+      thunk_FUN_10c9fb30(param_1,local_48,param_3,local_40);
+      param_1 = (int)(local_44);
+    }
+    else {
+      thunk_FUN_10c9fb30(local_44,param_2,param_3,local_40);
+      local_4c = (int)(local_48);
+      param_2 = (int)(local_48);
+    }
+    iVar3 = (int)(param_2 - param_1);
+
+  } while( true );
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10c9fe50; body size 150 bytes.
+#line 1 "ENTRY_10c9fe50"
+
+undefined4 * FUN_10c9fe50(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3)
+
+{
+ try {
+  void **ppvVar1;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  ppvVar1 = (void **)(&local_10);
+
+  for (; ExceptionList = (void *)(ppvVar1, param_1 != (undefined4 *)(param_2)); param_1 = param_1 + 5) {
+    *param_3 = (undefined4)(*param_1);
+    param_3[1] = (undefined4)(param_1[1]);
+    _eh_vector_copy_constructor_iterator_(param_3 + 2,param_1 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+    param_3 = (undefined4 *)(param_3 + 5);
+
+  }
+
+  return (undefined4 *)(param_3);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10c9ff10; body size 150 bytes.
+#line 1 "ENTRY_10c9ff10"
+
+undefined4 * FUN_10c9ff10(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3)
+
+{
+ try {
+  void **ppvVar1;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  ppvVar1 = (void **)(&local_10);
+
+  for (; ExceptionList = (void *)(ppvVar1, param_1 != (undefined4 *)(param_2)); param_1 = param_1 + 5) {
+    *param_3 = (undefined4)(*param_1);
+    param_3[1] = (undefined4)(param_1[1]);
+    _eh_vector_copy_constructor_iterator_(param_3 + 2,param_1 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+    param_3 = (undefined4 *)(param_3 + 5);
+
+  }
+
+  return (undefined4 *)(param_3);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10ca0120; body size 77 bytes.
+#line 1 "ENTRY_10ca0120"
+
+void FUN_10ca0120(undefined4 param_1,int param_2)
+
+{
+ try {
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  _eh_vector_destructor_iterator_((void *)(param_2 + 8),4,3,((int (SCStr::*)())&SCStr::op_dtor));
+
+  return;
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10ca0190; body size 76 bytes.
+#line 1 "ENTRY_10ca0190"
+
+void __thiscall Recovered_Bulk::FUN_10ca0190(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    puVar1[1] = (undefined4)(param_2[1]);
+    _eh_vector_copy_constructor_iterator_(puVar1 + 2,param_2 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 0x14;
+    return;
+  }
+  thunk_FUN_10c9dd10(puVar1,param_2);
+  return;
+}
+
+
+// Reference entry 10ca0260; body size 164 bytes.
+#line 1 "ENTRY_10ca0260"
+
+void FUN_10ca0260(undefined4 *param_1,undefined4 param_2)
+
+{
+ try {
+  undefined4 local_28;
+  undefined4 local_24;
+  undefined1 local_20 [12];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  local_14 = (uint)(DAT_12126b84);
+
+  local_28 = (undefined4)(*param_1);
+  local_24 = (undefined4)(param_1[1]);
+  _eh_vector_copy_constructor_iterator_(local_20,param_1 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+  thunk_FUN_10ca2370(param_2);
+  thunk_FUN_10ca2370(&local_28);
+
+  _eh_vector_destructor_iterator_(local_20,4,3,((int (SCStr::*)())&SCStr::op_dtor));
+
+  thunk_FUN_1148ac28();
+  return;
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10ca0390; body size 164 bytes.
+#line 1 "ENTRY_10ca0390"
+
+void FUN_10ca0390(undefined4 *param_1,undefined4 param_2)
+
+{
+ try {
+  undefined4 local_28;
+  undefined4 local_24;
+  undefined1 local_20 [12];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  local_14 = (uint)(DAT_12126b84);
+
+  local_28 = (undefined4)(*param_1);
+  local_24 = (undefined4)(param_1[1]);
+  _eh_vector_copy_constructor_iterator_(local_20,param_1 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+
+  thunk_FUN_10ca2370(param_2);
+  thunk_FUN_10ca2370(&local_28);
+
+  _eh_vector_destructor_iterator_(local_20,4,3,((int (SCStr::*)())&SCStr::op_dtor));
+
+  thunk_FUN_1148ac28();
+  return;
+
+ } catch (...) { }
+}
+
+
 // Reference entry 10ca0490; body size 165 bytes.
 #line 1 "ENTRY_10ca0490"
 
@@ -49103,6 +50089,31 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ca2fa0(byte param_2)
 }
 
 
+// Reference entry 10ca30d0; body size 99 bytes.
+#line 1 "ENTRY_10ca30d0"
+
+int __thiscall Recovered_Bulk::FUN_10ca30d0(byte param_2)
+{
+  int param_1 = (int )this;
+ try {
+  uint uVar1;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  _eh_vector_destructor_iterator_((void *)(param_1 + 8),4,3,((int (SCStr::*)())&SCStr::op_dtor));
+  if ((param_2 & 1) != 0) {
+    thunk_FUN_1148a50e(param_1,0x14,uVar1);
+  }
+
+  return (int)(param_1);
+
+ } catch (...) { }
+}
+
+
 // Reference entry 10ca31b0; body size 132 bytes.
 #line 1 "ENTRY_10ca31b0"
 
@@ -49164,6 +50175,90 @@ void __fastcall FUN_10ca3370(int *param_1)
     param_1[2] = (int)(0);
   }
   return;
+}
+
+
+// Reference entry 10ca3410; body size 141 bytes.
+#line 1 "ENTRY_10ca3410"
+
+undefined4 * __stdcall FUN_10ca3410(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3)
+
+{
+ try {
+  void **ppvVar1;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  ppvVar1 = (void **)(&local_10);
+
+  for (; ExceptionList = (void *)(ppvVar1, param_1 != (undefined4 *)(param_2)); param_1 = param_1 + 5) {
+    *param_3 = (undefined4)(*param_1);
+    param_3[1] = (undefined4)(param_1[1]);
+    _eh_vector_copy_constructor_iterator_(param_3 + 2,param_1 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+    param_3 = (undefined4 *)(param_3 + 5);
+
+  }
+
+  return (undefined4 *)(param_3);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10ca34c0; body size 139 bytes.
+#line 1 "ENTRY_10ca34c0"
+
+void FUN_10ca34c0(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3)
+
+{
+ try {
+  void **ppvVar1;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  ppvVar1 = (void **)(&local_10);
+
+  for (; ExceptionList = (void *)(ppvVar1, param_1 != (undefined4 *)(param_2)); param_1 = param_1 + 5) {
+    *param_3 = (undefined4)(*param_1);
+    param_3[1] = (undefined4)(param_1[1]);
+    _eh_vector_copy_constructor_iterator_(param_3 + 2,param_1 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+    param_3 = (undefined4 *)(param_3 + 5);
+
+  }
+
+  return;
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10ca3570; body size 139 bytes.
+#line 1 "ENTRY_10ca3570"
+
+void __stdcall FUN_10ca3570(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3)
+
+{
+ try {
+  void **ppvVar1;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  ppvVar1 = (void **)(&local_10);
+
+  for (; ExceptionList = (void *)(ppvVar1, param_1 != (undefined4 *)(param_2)); param_1 = param_1 + 5) {
+    *param_3 = (undefined4)(*param_1);
+    param_3[1] = (undefined4)(param_1[1]);
+    _eh_vector_copy_constructor_iterator_(param_3 + 2,param_1 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+    param_3 = (undefined4 *)(param_3 + 5);
+
+  }
+
+  return;
+
+ } catch (...) { }
 }
 
 
@@ -49650,6 +50745,39 @@ undefined4 __fastcall FUN_10ca43c0(int *param_1)
   ((SCStr *)((SCStr *)&local_18))->int_release();
 
   return (undefined4)(1);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10ca4660; body size 127 bytes.
+#line 1 "ENTRY_10ca4660"
+
+undefined4 FUN_10ca4660(undefined4 param_1,uint param_2)
+
+{
+ try {
+  undefined4 uVar1;
+  uint in_stack_0000001c;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  if (param_2 < in_stack_0000001c) {
+    uVar1 = (undefined4)(1);
+  }
+  else if (param_2 == in_stack_0000001c) {
+    uVar1 = (undefined4)(0);
+  }
+  else {
+    uVar1 = (undefined4)(0xffffffff);
+  }
+
+  _eh_vector_destructor_iterator_(&stack0x0000000c,4,3,((int (SCStr::*)())&SCStr::op_dtor));
+
+  _eh_vector_destructor_iterator_(&stack0x00000020,4,3,((int (SCStr::*)())&SCStr::op_dtor));
+
+  return (undefined4)(uVar1);
 
  } catch (...) { }
 }
@@ -57443,6 +58571,27 @@ void __thiscall Recovered_Bulk::FUN_10cb34f0(int param_2,char *param_3)
 }
 
 
+// Reference entry 10cb3860; body size 76 bytes.
+#line 1 "ENTRY_10cb3860"
+
+void __thiscall Recovered_Bulk::FUN_10cb3860(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    puVar1[1] = (undefined4)(param_2[1]);
+    _eh_vector_copy_constructor_iterator_(puVar1 + 2,param_2 + 2,4,3,((int (SCStr::*)())&SCStr::op_ctor),((int (SCStr::*)())&SCStr::op_dtor));
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 0x14;
+    return;
+  }
+  thunk_FUN_10c9dd10(puVar1,param_2);
+  return;
+}
+
+
 // Reference entry 10cb3970; body size 519 bytes.
 #line 1 "ENTRY_10cb3970"
 
@@ -62683,7 +63832,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10cc0ff0(int param_2)
    
    Library: Visual Studio 2019 Release */
 
-void __fastcall FID_conflict__Tidy_10cc14d0(int *param_1)
+void __fastcallFUN_10cc14d0(int *param_1)
 
 {
   int iVar1;
@@ -62829,7 +63978,7 @@ void __thiscall Recovered_Bulk::FUN_10cc1c60(int param_2,int param_3,int param_4
    
    Library: Visual Studio 2019 Release */
 
-void __fastcall FID_conflict__Tidy_10cc1d30(int *param_1)
+void __fastcallFUN_10cc1d30(int *param_1)
 
 {
   int iVar1;

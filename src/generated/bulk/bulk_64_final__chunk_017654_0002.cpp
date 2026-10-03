@@ -265,6 +265,7 @@ extern int thunk_FUN_1054ced0(...);
 extern int thunk_FUN_10563c30(...);
 extern int thunk_FUN_1059d5a0(...);
 extern int thunk_FUN_1059d940(...);
+extern int thunk_FUN_1059ee10(...);
 extern int thunk_FUN_105a1c80(...);
 extern int thunk_FUN_105a1d20(...);
 extern int thunk_FUN_105b3490(...);
@@ -274,6 +275,7 @@ extern int thunk_FUN_105b52c0(...);
 extern int thunk_FUN_105b5360(...);
 extern int thunk_FUN_105bebd0(...);
 extern int thunk_FUN_105c0c30(...);
+extern int thunk_FUN_105f5a00(...);
 extern int thunk_FUN_105f5d20(...);
 extern int thunk_FUN_105f5df0(...);
 extern int thunk_FUN_105f60e0(...);
@@ -283,6 +285,7 @@ extern int thunk_FUN_106045d0(...);
 extern int thunk_FUN_10604700(...);
 extern int thunk_FUN_10604790(...);
 extern int thunk_FUN_10604820(...);
+extern int thunk_FUN_10605020(...);
 extern int thunk_FUN_10605060(...);
 extern int thunk_FUN_106050a0(...);
 extern int thunk_FUN_10619290(...);
@@ -292,10 +295,6 @@ extern int thunk_FUN_106ab850(...);
 extern int thunk_FUN_106bc6b0(...);
 extern int thunk_FUN_106d83f0(...);
 extern int thunk_FUN_106da030(...);
-extern int thunk_FUN_106de0c0(...);
-extern int thunk_FUN_106de2c0(...);
-extern int thunk_FUN_106dfa00(...);
-extern int thunk_FUN_106dfb80(...);
 extern int thunk_FUN_107cc370(...);
 extern int thunk_FUN_107cc5b0(...);
 extern int thunk_FUN_10a23870(...);
@@ -741,7 +740,6 @@ extern int DAT_12119ca8;
 extern int DAT_12126b84;
 extern int DAT_121a07b0;
 extern int DAT_121a07b4;
-extern int DAT_121a4dc8;
 extern int DAT_121a4dcc;
 extern int DAT_121a4dd0;
 extern int DAT_121a4dd4;
@@ -771,6 +769,10 @@ extern int DAT_121a6650;
 extern int DAT_121a669c;
 extern int DAT_121a66ec;
 extern int DAT_122e8a30;
+extern int _DAT_118beee0;
+extern int _UNK_118beee4;
+extern int _UNK_118beee8;
+extern int _UNK_118beeec;
 extern int g_lSCObjCount;
 extern int ghidra_vftable_EtagFileParser;
 extern int ghidra_vftable_RControlAIOOpCB;
@@ -800,6 +802,8 @@ extern int ghidra_vftable_SCArtworkData;
 extern int ghidra_vftable_SCAudioInputResource;
 extern int ghidra_vftable_SCBTClassicConnectionCallback;
 extern int ghidra_vftable_SCBrowseService;
+extern int ghidra_vftable_SCConditionalElementTree;
+extern int ghidra_vftable_SCConditionalElementTreeNoAppendInterface;
 extern int ghidra_vftable_SCConditionalVectorBuilderTree;
 extern int ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface;
 extern int ghidra_vftable_SCDCAppLoadAsyncIOOperation;
@@ -826,7 +830,6 @@ extern int ghidra_vftable_SCLegacyJoinExistingWizardSuccessState;
 extern int ghidra_vftable_SCLegacyJoinExistingWizardTimeoutState;
 extern int ghidra_vftable_SCLogoArtworkCache;
 extern int ghidra_vftable_SCNetworkManagement;
-extern int ghidra_vftable_SCNewWizStateTypeFor;
 extern int ghidra_vftable_SCOpAVTransportEndDirectControlSession;
 extern int ghidra_vftable_SCOpCBProxy;
 extern int ghidra_vftable_SCOpDeviceDelete;
@@ -870,37 +873,21 @@ extern int ghidra_vftable_SCUrlDeleteRequest;
 extern int ghidra_vftable_SCUrlGetRequest;
 extern int ghidra_vftable_SCUrlRequest;
 extern int ghidra_vftable_SCVideoDemoSelectionPage;
-extern int ghidra_vftable_SCVideoDemoSelectionPageType;
 extern int ghidra_vftable_SCVideoDemoStaggeringTestAPage;
-extern int ghidra_vftable_SCVideoDemoStaggeringTestAPageType;
 extern int ghidra_vftable_SCVideoDemoStaggeringTestBPage;
-extern int ghidra_vftable_SCVideoDemoStaggeringTestBPageType;
 extern int ghidra_vftable_SCVideoDemoStaggeringTestCPage;
-extern int ghidra_vftable_SCVideoDemoStaggeringTestCPageType;
 extern int ghidra_vftable_SCVideoDemoTest1APage;
-extern int ghidra_vftable_SCVideoDemoTest1APageType;
 extern int ghidra_vftable_SCVideoDemoTest1BPage;
-extern int ghidra_vftable_SCVideoDemoTest1BPageType;
 extern int ghidra_vftable_SCVideoDemoTest1CPage;
-extern int ghidra_vftable_SCVideoDemoTest1CPageType;
 extern int ghidra_vftable_SCVideoDemoTest1DPage;
-extern int ghidra_vftable_SCVideoDemoTest1DPageType;
 extern int ghidra_vftable_SCVideoDemoTest2APage;
-extern int ghidra_vftable_SCVideoDemoTest2APageType;
 extern int ghidra_vftable_SCVideoDemoTest2BPage;
-extern int ghidra_vftable_SCVideoDemoTest2BPageType;
 extern int ghidra_vftable_SCVideoDemoTest2CPage;
-extern int ghidra_vftable_SCVideoDemoTest2CPageType;
 extern int ghidra_vftable_SCVideoDemoTest3APage;
-extern int ghidra_vftable_SCVideoDemoTest3APageType;
 extern int ghidra_vftable_SCVideoDemoTest3BPage;
-extern int ghidra_vftable_SCVideoDemoTest3BPageType;
 extern int ghidra_vftable_SCVideoDemoTimingsTestProductSelectionPage;
-extern int ghidra_vftable_SCVideoDemoTimingsTestProductSelectionPageType;
 extern int ghidra_vftable_SCVideoDemoTimingsTestVideoSequencePage;
-extern int ghidra_vftable_SCVideoDemoTimingsTestVideoSequencePageType;
 extern int ghidra_vftable_SCVideoDemoWizard;
-extern int ghidra_vftable_SCVideoDemoWizardType;
 extern int ghidra_vftable_SvgExtractor;
 extern int ghidra_vftable_SvgFileParser;
 extern int ghidra_vftable_SwfObjDeviceDiscovery_ProductListener;
@@ -908,6 +895,24 @@ extern int ghidra_vftable_std_Func_impl_no_alloc;
 extern int in_EAX;
 extern int in_stack_00000028;
 extern int in_stack_0000002c;
+extern int uStackY_5c;
+extern int uStack_10;
+extern int uStack_14;
+extern int uStack_18;
+extern int uStack_1c;
+extern int uStack_20;
+extern int uStack_24;
+extern int uStack_28;
+extern int uStack_2c;
+extern int uStack_30;
+extern int uStack_34;
+extern int uStack_3c;
+extern int uStack_40;
+extern int uStack_48;
+extern int uStack_4c;
+extern int uStack_64;
+extern int uStack_7;
+extern int uStack_8;
 extern undefined1 LAB_100537fb[];
 extern undefined1 LAB_1008a49a[];
 extern undefined1 LAB_10b5e2cc[];
@@ -925,6 +930,7 @@ extern undefined1 LAB_10b65265[];
 extern undefined1 LAB_10b65915[];
 extern undefined1 LAB_10b660b8[];
 extern undefined1 LAB_10b66dd8[];
+extern undefined1 LAB_10b6727c[];
 extern undefined1 LAB_10b67775[];
 extern undefined1 LAB_10b67f65[];
 extern undefined1 LAB_10b682a5[];
@@ -1039,9 +1045,6 @@ extern undefined1 LAB_10bfda79[];
 extern undefined1 LAB_10bfdbb0[];
 extern undefined1 LAB_10c00678[];
 extern undefined1 LAB_10c032d2[];
-extern undefined1 LAB_116b669e[];
-extern undefined1 LAB_116b66fe[];
-extern undefined1 LAB_116b6ac4[];
 extern undefined1 LAB_116b6c45[];
 extern undefined1 LAB_116b7377[];
 extern undefined1 LAB_116b73c7[];
@@ -1073,6 +1076,7 @@ extern undefined1 LAB_116b8265[];
 extern undefined1 LAB_116b837a[];
 extern undefined1 LAB_116b846b[];
 extern undefined1 LAB_116b8650[];
+extern undefined1 LAB_116b86cd[];
 extern undefined1 LAB_116b8862[];
 extern undefined1 LAB_116b8905[];
 extern undefined1 LAB_116b8990[];
@@ -1715,9 +1719,13 @@ struct SCImageResource { char _pad; SCImageResource(...); template<class T> int 
 struct SCLibParameters { char _pad; SCLibParameters(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class... A> int hasDeveloperOption(A...); };
 struct SCLibrary { char _pad; SCLibrary(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class... A> int createActionContextForAction(A...); template<class... A> int createPresentAlarmInterfaceAction(A...); template<class... A> int createSCDisplayMenuPopupAction(A...); template<class... A> int getCurrentThreadID(A...); template<class... A> int getMainThreadID(A...); template<class... A> int getSCHousehold(A...); template<class... A> int getSingleton(A...); };
 struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class... A> int append(A...); template<class... A> int beginsWith(A...); template<class... A> int contains(A...); template<class... A> int endsWith(A...); template<class... A> int equalsIgnoringCase(A...); template<class... A> int format(A...); template<class... A> int int_addref(A...); template<class... A> int int_allocRep(A...); template<class... A> int int_release(A...); template<class... A> int length(A...); template<class... A> int op_ctor(A...); template<class... A> int op_eq(A...); template<class... A> int op_lt(A...); template<class... A> int stringWithFormat(A...); template<class... A> int toLower(A...); template<class... A> int trim(A...); template<class... A> int utf8_find(A...); template<class... A> int utf8_length(A...); template<class... A> int utf8_rfind(A...); template<class... A> int utf8_substr(A...); };
+struct fuzzer { char _pad; fuzzer(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int fuzzer_allocator; struct TracePC { char _pad; TracePC(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int PCTableEntry; }; };
 namespace std { template<class...> struct _Parallelism_allocator { char _pad; _Parallelism_allocator(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); }; }
+namespace std { template<class...> struct _Tree { char _pad; _Tree(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); }; }
+namespace std { template<class...> struct _Tset_traits { char _pad; _Tset_traits(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); }; }
 namespace std { template<class...> struct allocator { char _pad; allocator(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); }; }
 namespace std { template<class...> struct greater { char _pad; greater(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); }; }
+namespace std { template<class...> struct less { char _pad; less(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); }; }
 namespace std { template<class...> struct priority_queue { char _pad; priority_queue(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); }; }
 namespace std { template<class...> struct vector { char _pad; vector(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); }; }
 typedef void *A0;
@@ -1804,6 +1812,7 @@ struct For { char _pad; For(...); template<class T> int operator==(T); template<
 struct Found { char _pad; Found(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Function { char _pad; Function(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Get { char _pad; Get(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct Globals { char _pad; Globals(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Google { char _pad; Google(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Group { char _pad; Group(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Helvetica { char _pad; Helvetica(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
@@ -1818,6 +1827,7 @@ struct Manually { char _pad; Manually(...); template<class T> int operator==(T);
 struct Matches { char _pad; Matches(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Multiple { char _pad; Multiple(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct MusicMenu { char _pad; MusicMenu(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct Name { char _pad; Name(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Names { char _pad; Names(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct New { char _pad; New(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct NewAccountID { char _pad; NewAccountID(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
@@ -1830,7 +1840,7 @@ struct OAuthDeviceID { char _pad; OAuthDeviceID(...); template<class T> int oper
 struct One { char _pad; One(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Only { char _pad; Only(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Optimizely { char _pad; Optimizely(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct Page { char _pad; Page(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct PCTableEntry { char _pad; PCTableEntry(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Pandora { char _pad; Pandora(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Post { char _pad; Post(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Preparing { char _pad; Preparing(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
@@ -1894,23 +1904,8 @@ struct SCMusicServer { char _pad; SCMusicServer(...); template<class T> int oper
 struct SCMusicServerData { char _pad; SCMusicServerData(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SCSwfObjMSDiscoveryListener { char _pad; SCSwfObjMSDiscoveryListener(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SCUrlGetRequest { char _pad; SCUrlGetRequest(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct SCVideoDemoSelectionPage { char _pad; SCVideoDemoSelectionPage(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct SCVideoDemoStaggeringTestAPage { char _pad; SCVideoDemoStaggeringTestAPage(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct SCVideoDemoStaggeringTestBPage { char _pad; SCVideoDemoStaggeringTestBPage(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct SCVideoDemoStaggeringTestCPage { char _pad; SCVideoDemoStaggeringTestCPage(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct SCVideoDemoTest1APage { char _pad; SCVideoDemoTest1APage(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct SCVideoDemoTest1BPage { char _pad; SCVideoDemoTest1BPage(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct SCVideoDemoTest1CPage { char _pad; SCVideoDemoTest1CPage(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct SCVideoDemoTest1DPage { char _pad; SCVideoDemoTest1DPage(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct SCVideoDemoTest2APage { char _pad; SCVideoDemoTest2APage(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct SCVideoDemoTest2BPage { char _pad; SCVideoDemoTest2BPage(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct SCVideoDemoTest2CPage { char _pad; SCVideoDemoTest2CPage(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct SCVideoDemoTest3APage { char _pad; SCVideoDemoTest3APage(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct SCVideoDemoTest3BPage { char _pad; SCVideoDemoTest3BPage(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct SCVideoDemoTimingsTestProductSelectionPage { char _pad; SCVideoDemoTimingsTestProductSelectionPage(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct SCVideoDemoTimingsTestVideoSequencePage { char _pad; SCVideoDemoTimingsTestVideoSequencePage(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct SCVideoDemoWizard { char _pad; SCVideoDemoWizard(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SCVoiceUtility { char _pad; SCVoiceUtility(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct Same { char _pad; Same(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Select { char _pad; Select(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Selected { char _pad; Selected(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Serial { char _pad; Serial(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
@@ -1942,6 +1937,7 @@ struct This { char _pad; This(...); template<class T> int operator==(T); templat
 struct Timings { char _pad; Timings(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Too { char _pad; Too(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct TotalBytes { char _pad; TotalBytes(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct TracePC { char _pad; TracePC(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Treating { char _pad; Treating(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Type { char _pad; Type(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct UPnPResult { char _pad; UPnPResult(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
@@ -1961,7 +1957,7 @@ struct WizardComponentKeyImageURL { char _pad; WizardComponentKeyImageURL(...); 
 struct WizardComponentKeyImageURLAlt { char _pad; WizardComponentKeyImageURLAlt(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct WizardComponentKeyString { char _pad; WizardComponentKeyString(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct WizardComponentKeyType { char _pad; WizardComponentKeyType(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct Recovered_Bulk { char _pad; undefined4 * __thiscall FUN_10b5c8b0(undefined4 param_2); undefined4 * __thiscall FUN_10b5ca00(undefined4 param_2); int __thiscall FUN_10b5e210(SCStr *param_2); undefined4 * __thiscall FUN_10b5fb10(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b5fbf0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b5fcd0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b5fdb0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b5fe90(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b5ff70(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b60050(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b60130(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b60210(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b602f0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b603d0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b604b0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b60590(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b60670(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b60750(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b60830(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 __thiscall FUN_10b6a670(undefined4 param_2); undefined4 __thiscall FUN_10b6afc0(undefined4 param_2); void __thiscall FUN_10b6b890(SCStr *param_2,SCStr *param_3); int * __thiscall FUN_10b6c2b0(int *param_2); int * __thiscall FUN_10b6c410(int *param_2); int * __thiscall FUN_10b6c5e0(undefined4 *param_2); int * __thiscall FUN_10b6c740(int *param_2); int * __thiscall FUN_10b6c870(undefined4 *param_2); undefined4 * __thiscall FUN_10b6cc40(int param_2); undefined4 * __thiscall FUN_10b6cd30(int param_2); undefined4 * __thiscall FUN_10b6d0a0(int param_2); void __thiscall FUN_10b6dde0(int *param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b6e000(undefined4 *param_2); undefined4 * __thiscall FUN_10b6ec40(undefined4 *param_2); undefined4 * __thiscall FUN_10b6f130(undefined4 *param_2,undefined1 *param_3); undefined4 __thiscall FUN_10b6f760(undefined4 param_2); undefined4 * __thiscall FUN_10b6f800(undefined4 *param_2); undefined4 * __thiscall FUN_10b6fa80(undefined4 *param_2); undefined4 * __thiscall FUN_10b70270(undefined4 *param_2); undefined4 * __thiscall FUN_10b702f0(undefined4 *param_2); undefined4 * __thiscall FUN_10b70ba0(undefined4 *param_2); SCStr * __thiscall FUN_10b70d00(SCStr *param_2); undefined4 * __thiscall FUN_10b71160(undefined4 *param_2); int * __thiscall FUN_10b71270(int *param_2); int * __thiscall FUN_10b71470(int *param_2); void __thiscall FUN_10b72070(undefined4 param_2,undefined4 param_3); int * __thiscall FUN_10b73270(int *param_2); int * __thiscall FUN_10b75700(int *param_2); int * __thiscall FUN_10b758b0(int *param_2); undefined4 * __thiscall FUN_10b75a50(undefined4 param_2,undefined4 param_3,undefined4 *param_4); undefined4 * __thiscall FUN_10b76440(SCStr *param_2,SCStr *param_3,SCStr *param_4,SCStr *param_5); undefined4 * __thiscall FUN_10b76500(SCStr *param_2,SCStr *param_3,int *param_4); undefined4 * __thiscall FUN_10b765d0(SCStr *param_2,SCStr *param_3,SCStr *param_4); float __thiscall FUN_10b77340(int param_2); void __thiscall FUN_10b77880(int param_2); int * __thiscall FUN_10b78bb0(int *param_2); undefined4 * __thiscall FUN_10b78ee0(undefined4 *param_2,SCStr *param_3); undefined4 * __thiscall FUN_10b79150(undefined4 *param_2,SCStr *param_3,SCStr *param_4,undefined4 param_5,
+struct Recovered_Bulk { char _pad; int __thiscall FUN_10b5e210(SCStr *param_2); undefined4 * __thiscall FUN_10b5fb10(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b5fbf0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b5fcd0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b5fdb0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b5fe90(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b5ff70(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b60050(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b60130(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b60210(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b602f0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b603d0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b604b0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b60590(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b60670(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b60750(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b60830(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 __thiscall FUN_10b6a670(undefined4 param_2); undefined4 __thiscall FUN_10b6afc0(undefined4 param_2); void __thiscall FUN_10b6b890(SCStr *param_2,SCStr *param_3); int * __thiscall FUN_10b6c2b0(int *param_2); int * __thiscall FUN_10b6c410(int *param_2); int * __thiscall FUN_10b6c5e0(undefined4 *param_2); int * __thiscall FUN_10b6c740(int *param_2); int * __thiscall FUN_10b6c870(undefined4 *param_2); undefined4 * __thiscall FUN_10b6cc40(int param_2); undefined4 * __thiscall FUN_10b6cd30(int param_2); undefined4 * __thiscall FUN_10b6d0a0(int param_2); void __thiscall FUN_10b6dde0(int *param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b6e000(undefined4 *param_2); undefined4 * __thiscall FUN_10b6ec40(undefined4 *param_2); undefined4 * __thiscall FUN_10b6f130(undefined4 *param_2,undefined1 *param_3); undefined4 __thiscall FUN_10b6f760(undefined4 param_2); undefined4 * __thiscall FUN_10b6f800(undefined4 *param_2); undefined4 * __thiscall FUN_10b6fa80(undefined4 *param_2); undefined4 * __thiscall FUN_10b70270(undefined4 *param_2); undefined4 * __thiscall FUN_10b702f0(undefined4 *param_2); undefined4 * __thiscall FUN_10b70ba0(undefined4 *param_2); SCStr * __thiscall FUN_10b70d00(SCStr *param_2); undefined4 * __thiscall FUN_10b71160(undefined4 *param_2); int * __thiscall FUN_10b71270(int *param_2); int * __thiscall FUN_10b71470(int *param_2); void __thiscall FUN_10b72070(undefined4 param_2,undefined4 param_3); int * __thiscall FUN_10b73270(int *param_2); int * __thiscall FUN_10b75700(int *param_2); int * __thiscall FUN_10b758b0(int *param_2); undefined4 * __thiscall FUN_10b75a50(undefined4 param_2,undefined4 param_3,undefined4 *param_4); undefined4 * __thiscall FUN_10b76440(SCStr *param_2,SCStr *param_3,SCStr *param_4,SCStr *param_5); undefined4 * __thiscall FUN_10b76500(SCStr *param_2,SCStr *param_3,int *param_4); undefined4 * __thiscall FUN_10b765d0(SCStr *param_2,SCStr *param_3,SCStr *param_4); float __thiscall FUN_10b77340(int param_2); void __thiscall FUN_10b77880(int param_2); int * __thiscall FUN_10b78bb0(int *param_2); undefined4 * __thiscall FUN_10b78ee0(undefined4 *param_2,SCStr *param_3); undefined4 * __thiscall FUN_10b79150(undefined4 *param_2,SCStr *param_3,SCStr *param_4,undefined4 param_5,
             int *param_6); undefined4 * __thiscall FUN_10b79930(undefined4 *param_2,SCStr *param_3); void __thiscall FUN_10b79ac0(undefined4 *param_2,undefined4 *param_3); SCStr * __thiscall FUN_10b79c20(SCStr *param_2,SCStr *param_3); void __thiscall FUN_10b7a750(int param_2,short param_3); void __thiscall FUN_10b7ad60(int *param_2); undefined4 * __thiscall FUN_10b7b510(byte param_2); int * __thiscall FUN_10b7b710(int *param_2); int * __thiscall FUN_10b7b870(undefined4 *param_2); undefined4 * __thiscall FUN_10b7bc50(int param_2); undefined4 * __thiscall FUN_10b7bf50(int param_2); undefined4 * __thiscall FUN_10b7c4a0(int param_2,undefined4 param_3,undefined4 param_4,
             undefined4 param_5,undefined4 param_6,char param_7); undefined4 * __thiscall FUN_10b7c590(SCStr *param_2,SCStr *param_3,SCStr *param_4,SCStr *param_5); undefined4 * __thiscall FUN_10b7c6a0(int param_2); undefined4 * __thiscall FUN_10b7c810(undefined1 param_2,SCStr *param_3); undefined4 * __thiscall FUN_10b7c8e0(undefined4 param_2); undefined4 * __thiscall FUN_10b7ca60(undefined4 param_2,int *param_3); void __thiscall FUN_10b7e370(int *param_2,undefined4 param_3); void __thiscall FUN_10b7e810(undefined4 *param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b7eb20(undefined4 *param_2); void __thiscall FUN_10b7edf0(undefined4 *param_2,int *param_3,undefined4 *param_4); void __thiscall FUN_10b7f1f0(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4,
             undefined4 *param_5,undefined4 *param_6,undefined1 param_7); void __thiscall FUN_10b7f610(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4,
@@ -1986,7 +1982,6 @@ struct Recovered_Bulk { char _pad; undefined4 * __thiscall FUN_10b5c8b0(undefine
             SCStr *param_5,undefined1 param_6); undefined4 * __thiscall FUN_10bf36c0(undefined4 param_2,undefined4 param_3,undefined4 *param_4); undefined4 * __thiscall FUN_10bf3840(undefined4 param_2,undefined4 param_3); void __thiscall FUN_10bf3bc0(int *param_2,undefined4 param_3,uint param_4); void __thiscall FUN_10bf4710(int *param_2,undefined4 *param_3); void __thiscall FUN_10bf4770(int *param_2,undefined4 *param_3); undefined4 * __thiscall FUN_10bf4d50(undefined4 *param_2); undefined4 * __thiscall FUN_10bf4e20(undefined4 *param_2); undefined4 * __thiscall FUN_10bf51d0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10bf54e0(undefined4 param_2); void __thiscall FUN_10bf6280(uint param_2,undefined4 param_3); void __thiscall FUN_10bf63a0(uint param_2,undefined4 param_3); float __thiscall FUN_10bf65f0(int param_2); float __thiscall FUN_10bf66a0(int param_2); void __thiscall FUN_10bf6e80(int param_2); void __thiscall FUN_10bf6ef0(int param_2); void __thiscall FUN_10bf88b0(undefined4 param_2); undefined4 * __thiscall FUN_10bfa290(undefined4 param_2,undefined4 param_3,undefined4 *param_4); undefined4 * __thiscall FUN_10bfab70(undefined4 *param_2); void __thiscall FUN_10bfbcf0(uint param_2,undefined4 param_3); float __thiscall FUN_10bfbe90(int param_2); void __thiscall FUN_10bfc2e0(int param_2); void __thiscall FUN_10bfd620(undefined4 param_2); void __thiscall FUN_10bfd6e0(int param_2); void __thiscall FUN_10bfd8e0(int param_2); void __thiscall FUN_10bfd9b0(int param_2); size_t __thiscall FUN_10bff9a0(uint param_2,void *param_3,size_t param_4); size_t __thiscall FUN_10bffb10(uint param_2,void *param_3,size_t param_4); undefined4 * __thiscall FUN_10bffc80(undefined4 *param_2,int *param_3); int * __thiscall FUN_10bffdd0(int *param_2); int * __thiscall FUN_10bfff40(int *param_2); SCStr * __thiscall FUN_10c00060(SCStr *param_2); SCStr * __thiscall FUN_10c00230(SCStr *param_2); undefined4 __thiscall FUN_10c00430(undefined4 param_2); int * __thiscall FUN_10c006f0(int *param_2); undefined4 * __thiscall FUN_10c00c70(undefined4 *param_2,SCStr *param_3); size_t __thiscall FUN_10c010a0(void *param_2,size_t param_3); size_t __thiscall FUN_10c01100(void *param_2,size_t param_3); undefined4 * __thiscall FUN_10c01ed0(SCStr *param_2,SCStr *param_3,SCStr *param_4,int *param_5,
             int *param_6); undefined4 * __thiscall FUN_10c01fe0(int *param_2); void __thiscall FUN_10c02910(int param_2,int param_3,int param_4); int * __thiscall FUN_10c02f60(int *param_2); undefined1 __thiscall FUN_10c03240(SCStr *param_2,int *param_3); int __thiscall FUN_10c04000(undefined4 param_2,int *param_3); int __thiscall FUN_10c04130(undefined4 param_2,int *param_3); int __thiscall FUN_10c04260(undefined4 param_2,int *param_3); };
 using namespace std;
-undefined4 * __fastcall FUN_10b5cb50(undefined4 *param_1);
 int * __fastcall FUN_10b5e3f0(int *param_1);
 undefined4 __stdcall FUN_10b609f0(undefined4 param_1);
 undefined4 __stdcall FUN_10b61150(undefined4 param_1);
@@ -2002,6 +1997,7 @@ undefined4 __stdcall FUN_10b64fc0(undefined4 param_1);
 undefined4 __stdcall FUN_10b654a0(undefined4 param_1);
 undefined4 __stdcall FUN_10b65d70(undefined4 param_1);
 undefined4 __stdcall FUN_10b66b20(undefined4 param_1);
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ undefined4 __stdcall FUN_10b67080(undefined4 param_1);
 undefined4 __stdcall FUN_10b67440(undefined4 param_1);
 undefined4 __stdcall FUN_10b67df0(undefined4 param_1);
 undefined4 __stdcall FUN_10b68100(undefined4 param_1);
@@ -2069,8 +2065,8 @@ void __fastcall FUN_10b89a80(int param_1);
 void __fastcall FUN_10b8a130(int param_1);
 void __fastcall FUN_10b8a570(int param_1);
 void __fastcall FUN_10b8ac20(int param_1);
-/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_10b8e550(int *param_1);
-/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_10b8e860(int *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcallFUN_10b8e550(int *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcallFUN_10b8e860(int *param_1);
 void FUN_10b8f4a0(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3);
 undefined4 * __fastcall FUN_10b8f5a0(undefined4 *param_1);
 undefined4 * __fastcall FUN_10b8fe70(undefined4 *param_1);
@@ -2139,6 +2135,7 @@ undefined4 * FUN_10ba3dd0(int param_1,int param_2,undefined4 *param_3);
 void FUN_10ba4140(undefined4 param_1,undefined4 *param_2,undefined4 *param_3);
 void FUN_10ba42c0(undefined4 param_1,int param_2);
 void __fastcall FUN_10ba67a0(int *param_1);
+/* Library Function - Multiple Matches With Same Base Name public: __thiscall std::_Tree<class std::_Tset_traits<unsigned int,struct std::less<unsigned int>,class fuzzer::fuzzer_allocator<unsigned int>,0> >::~_Tree<class std::_Tset_traits<unsigned int,struct std::less<unsigned int>,class fuzzer::fuzzer_allocator<unsigned int>,0> >(void_) public: __thiscall std::_Tree<class std::_Tset_traits<struct fuzzer::TracePC::PCTableEntry const *,struct std::less<struct fuzzer::TracePC::PCTableEntry const *>,class fuzzer::fuzzer_allocator<struct fuzzer::TracePC::PCTableEntry const *>,0> >::~_Tree<class std::_Tset_traits<struct fuzzer::TracePC::PCTableEntry const *,struct std::less<struct fuzzer::TracePC::PCTableEntry const *>,class fuzzer::fuzzer_allocator<struct fuzzer::TracePC::PCTableEntry const *>,0> >(void_) Library: Visual Studio 2019 Release */ void __fastcall FUN_10ba6ce0(int *param_1);
 void __fastcall FUN_10ba6f30(int param_1);
 void __fastcall FUN_10ba6fd0(int param_1);
 void __fastcall FUN_10ba74a0(int *param_1);
@@ -2207,8 +2204,8 @@ SCStr * FUN_10bbbae0(SCStr *param_1,undefined4 param_2);
 undefined4 * FUN_10bbbf60(undefined4 *param_1,int param_2);
 void __fastcall FUN_10bbc060(int *param_1);
 void __fastcall FUN_10bbe100(int *param_1);
-/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_10bbe160(int *param_1);
-/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_10bbe660(int *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcallFUN_10bbe160(int *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcallFUN_10bbe660(int *param_1);
 void __fastcall FUN_10bbe910(int param_1);
 void __fastcall FUN_10bbef60(int param_1);
 undefined4 * FUN_10bbfa70(undefined4 *param_1);
@@ -2219,9 +2216,9 @@ int * __stdcall FUN_10bc1cc0(int *param_1);
 void FUN_10bc1fd0(undefined4 param_1,int *param_2);
 void FUN_10bc3610(void);
 void __fastcall FUN_10bc3f40(int *param_1);
-/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_10bc3fa0(int *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcallFUN_10bc3fa0(int *param_1);
 void __fastcall FUN_10bc4010(int param_1);
-/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_10bc4580(int *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcallFUN_10bc4580(int *param_1);
 void __fastcall FUN_10bc4840(int param_1);
 void __fastcall FUN_10bc4f80(int param_1);
 undefined4 __fastcall FUN_10bc4ff0(int param_1);
@@ -2237,8 +2234,8 @@ void __stdcall FUN_10bc8c20(SCStr *param_1,undefined4 *param_2);
 void __fastcall FUN_10bc9460(int param_1);
 void __fastcall FUN_10bc94c0(int param_1);
 undefined4 * FUN_10bc9540(undefined4 *param_1);
-/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_10bc9d00(int *param_1);
-/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_10bca120(int *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcallFUN_10bc9d00(int *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcallFUN_10bca120(int *param_1);
 void __fastcall FUN_10bcaf90(int param_1);
 void __stdcall FUN_10bcb150(int param_1);
 bool __fastcall FUN_10bcb230(int param_1);
@@ -2266,6 +2263,8 @@ void FUN_10bd2430(undefined4 param_1,int param_2);
 void FUN_10bd24a0(undefined4 param_1,int param_2);
 undefined4 * __fastcall FUN_10bd45f0(undefined4 *param_1);
 void __fastcall FUN_10bd6200(int *param_1);
+/* Library Function - Multiple Matches With Same Base Name public: __thiscall std::_Tree<class std::_Tset_traits<unsigned int,struct std::less<unsigned int>,class fuzzer::fuzzer_allocator<unsigned int>,0> >::~_Tree<class std::_Tset_traits<unsigned int,struct std::less<unsigned int>,class fuzzer::fuzzer_allocator<unsigned int>,0> >(void_) public: __thiscall std::_Tree<class std::_Tset_traits<struct fuzzer::TracePC::PCTableEntry const *,struct std::less<struct fuzzer::TracePC::PCTableEntry const *>,class fuzzer::fuzzer_allocator<struct fuzzer::TracePC::PCTableEntry const *>,0> >::~_Tree<class std::_Tset_traits<struct fuzzer::TracePC::PCTableEntry const *,struct std::less<struct fuzzer::TracePC::PCTableEntry const *>,class fuzzer::fuzzer_allocator<struct fuzzer::TracePC::PCTableEntry const *>,0> >(void_) Library: Visual Studio 2019 Release */ void __fastcall FUN_10bd6390(int *param_1);
+/* Library Function - Multiple Matches With Same Base Name public: __thiscall std::_Tree<class std::_Tset_traits<unsigned int,struct std::less<unsigned int>,class fuzzer::fuzzer_allocator<unsigned int>,0> >::~_Tree<class std::_Tset_traits<unsigned int,struct std::less<unsigned int>,class fuzzer::fuzzer_allocator<unsigned int>,0> >(void_) public: __thiscall std::_Tree<class std::_Tset_traits<struct fuzzer::TracePC::PCTableEntry const *,struct std::less<struct fuzzer::TracePC::PCTableEntry const *>,class fuzzer::fuzzer_allocator<struct fuzzer::TracePC::PCTableEntry const *>,0> >::~_Tree<class std::_Tset_traits<struct fuzzer::TracePC::PCTableEntry const *,struct std::less<struct fuzzer::TracePC::PCTableEntry const *>,class fuzzer::fuzzer_allocator<struct fuzzer::TracePC::PCTableEntry const *>,0> >(void_) Library: Visual Studio 2019 Release */ void __fastcall FUN_10bd6530(int *param_1);
 void __fastcall FUN_10bd6780(int param_1);
 void __fastcall FUN_10bd6820(int param_1);
 void __fastcall FUN_10bd68c0(int param_1);
@@ -2273,12 +2272,12 @@ void __fastcall FUN_10bd6cb0(int param_1);
 void __fastcall FUN_10bd6d30(int param_1);
 void __fastcall FUN_10bd6da0(int param_1);
 void __fastcall FUN_10bd6e10(int param_1);
-/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_10bd6e90(int *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcallFUN_10bd6e90(int *param_1);
 void __fastcall FUN_10bd6f00(int *param_1);
 void __fastcall FUN_10bd6fa0(int *param_1);
 void __fastcall FUN_10bd7130(int param_1);
 int * __fastcall FUN_10bd8da0(int *param_1);
-/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_10bdc660(int *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcallFUN_10bdc660(int *param_1);
 void __fastcall FUN_10bdc6d0(int *param_1);
 void __fastcall FUN_10bdc770(int *param_1);
 undefined4 * __stdcall FUN_10bdc9d0(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3);
@@ -2401,548 +2400,6 @@ undefined4 * FUN_10c047f0(undefined4 *param_1);
 undefined4 * FUN_10c04880(undefined4 *param_1);
 undefined4 * FUN_10c04910(undefined4 *param_1);
 undefined4 * FUN_10c049a0(undefined4 *param_1);
-// Reference entry 10b5c8b0; body size 194 bytes.
-#line 1 "ENTRY_10b5c8b0"
-
-undefined4 * __thiscall Recovered_Bulk::FUN_10b5c8b0(undefined4 param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
- try {
-  SCStr *this_;
-  undefined4 local_14;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-
-  ((SCStr *)((SCStr *)&local_14))->int_allocRep("SCVideoDemoTimingsTestProductSelectionPage");
-
-  thunk_FUN_106de0c0(&local_14,param_2);
-  *(unsigned char *)((char *)&local_8 + 0) = 3;
-  ((SCStr *)((SCStr *)&local_14))->int_release();
-
-  *(unsigned char *)((char *)&local_8 + 0) = 2;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  this_ = (SCStr *)((SCStr *)thunk_FUN_106dfa00(&param_2));
-  local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(4)));
-  ((SCStr *)(this_))->endsWith("Page");
-
-  ((SCStr *)((SCStr *)&param_2))->int_release();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCVideoDemoTimingsTestProductSelectionPageType);
-  DAT_121a4dd0 = (int)(param_1);
-
-  return (undefined4 *)(param_1);
-
- } catch (...) { }
-}
-
-
-// Reference entry 10b5ca00; body size 194 bytes.
-#line 1 "ENTRY_10b5ca00"
-
-undefined4 * __thiscall Recovered_Bulk::FUN_10b5ca00(undefined4 param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
- try {
-  SCStr *this_;
-  undefined4 local_14;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-
-  ((SCStr *)((SCStr *)&local_14))->int_allocRep("SCVideoDemoTimingsTestVideoSequencePage");
-
-  thunk_FUN_106de0c0(&local_14,param_2);
-  *(unsigned char *)((char *)&local_8 + 0) = 3;
-  ((SCStr *)((SCStr *)&local_14))->int_release();
-
-  *(unsigned char *)((char *)&local_8 + 0) = 2;
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  this_ = (SCStr *)((SCStr *)thunk_FUN_106dfa00(&param_2));
-  local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(4)));
-  ((SCStr *)(this_))->endsWith("Page");
-
-  ((SCStr *)((SCStr *)&param_2))->int_release();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCVideoDemoTimingsTestVideoSequencePageType);
-  DAT_121a4dd4 = (int)(param_1);
-
-  return (undefined4 *)(param_1);
-
- } catch (...) { }
-}
-
-
-// Reference entry 10b5cb50; body size 2808 bytes.
-#line 1 "ENTRY_10b5cb50"
-
-undefined4 * __fastcall FUN_10b5cb50(undefined4 *param_1)
-
-{
- try {
-  bool bVar1;
-  undefined4 *puVar2;
-  SCStr *pSVar3;
-  SCStr local_20 [4];
-  undefined4 local_1c;
-  undefined4 local_18;
-  undefined4 local_14;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-
-  ((SCStr *)((SCStr *)&local_18))->int_allocRep("SCVideoDemoWizard");
-
-  thunk_FUN_106de2c0(&local_18);
-  *(unsigned char *)((char *)&local_8 + 0) = 3;
-  ((SCStr *)((SCStr *)&local_18))->int_release();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCVideoDemoWizardType);
-
-  *(unsigned char *)((char *)&local_8 + 0) = 2;
-  DAT_121a4dc8 = (int)(param_1);
-  puVar2 = (undefined4 *)(operator_new(0xc));
-  *(unsigned char *)((char *)&local_8 + 0) = 4;
-  if (puVar2 == (undefined4 *)0x0) {
-    puVar2 = (undefined4 *)((undefined4 *)0x0);
-  }
-  else {
-    ((SCStr *)((SCStr *)&local_1c))->int_allocRep("SCVideoDemoSelectionPage");
-    *(unsigned char *)((char *)&local_8 + 0) = 5;
-    thunk_FUN_106de0c0(&local_1c,param_1);
-    *(unsigned char *)((char *)&local_8 + 0) = 8;
-    ((SCStr *)((SCStr *)&local_1c))->int_release();
-
-    *(unsigned char *)((char *)&local_8 + 0) = 7;
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-    pSVar3 = (SCStr *)((SCStr *)thunk_FUN_106dfa00(local_20));
-    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(9)));
-
-    bVar1 = (bool)(((SCStr *)(pSVar3))->endsWith("Page"));
-    *(unsigned char *)((char *)&local_8 + 0) = 10;
-    *(unsigned short *)((char *)&local_8 + 1) = 0;
-    ((SCStr *)(local_20))->int_release();
-    if (bVar1) {
-      *(unsigned short *)((char *)&local_8 + 1) = 0;
-    }
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCVideoDemoSelectionPageType);
-    DAT_121a4dcc = (int)(puVar2);
-  }
-  *(unsigned char *)((char *)&local_8 + 0) = 2;
-  thunk_FUN_106dfb80(puVar2);
-  puVar2 = (undefined4 *)(operator_new(0xc));
-  *(unsigned char *)((char *)&local_8 + 0) = 0xd;
-  if (puVar2 == (undefined4 *)0x0) {
-    puVar2 = (undefined4 *)((undefined4 *)0x0);
-  }
-  else {
-    ((SCStr *)((SCStr *)&local_1c))->int_allocRep("SCVideoDemoTimingsTestProductSelectionPage");
-    *(unsigned char *)((char *)&local_8 + 0) = 0xe;
-    thunk_FUN_106de0c0(&local_1c,param_1);
-    *(unsigned char *)((char *)&local_8 + 0) = 0x11;
-    ((SCStr *)((SCStr *)&local_1c))->int_release();
-
-    *(unsigned char *)((char *)&local_8 + 0) = 0x10;
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-    pSVar3 = (SCStr *)((SCStr *)thunk_FUN_106dfa00(local_20));
-    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x12)));
-
-    bVar1 = (bool)(((SCStr *)(pSVar3))->endsWith("Page"));
-    *(unsigned char *)((char *)&local_8 + 0) = 0x13;
-    *(unsigned short *)((char *)&local_8 + 1) = 0;
-    ((SCStr *)(local_20))->int_release();
-    if (bVar1) {
-      *(unsigned short *)((char *)&local_8 + 1) = 0;
-    }
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCVideoDemoTimingsTestProductSelectionPageType);
-    DAT_121a4dd0 = (int)(puVar2);
-  }
-  *(unsigned char *)((char *)&local_8 + 0) = 2;
-  thunk_FUN_106dfb80(puVar2);
-  puVar2 = (undefined4 *)(operator_new(0xc));
-  *(unsigned char *)((char *)&local_8 + 0) = 0x16;
-  if (puVar2 == (undefined4 *)0x0) {
-    puVar2 = (undefined4 *)((undefined4 *)0x0);
-  }
-  else {
-    ((SCStr *)((SCStr *)&local_1c))->int_allocRep("SCVideoDemoTimingsTestVideoSequencePage");
-    *(unsigned char *)((char *)&local_8 + 0) = 0x17;
-    thunk_FUN_106de0c0(&local_1c,param_1);
-    *(unsigned char *)((char *)&local_8 + 0) = 0x1a;
-    ((SCStr *)((SCStr *)&local_1c))->int_release();
-
-    *(unsigned char *)((char *)&local_8 + 0) = 0x19;
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-    pSVar3 = (SCStr *)((SCStr *)thunk_FUN_106dfa00(local_20));
-    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x1b)));
-
-    bVar1 = (bool)(((SCStr *)(pSVar3))->endsWith("Page"));
-    *(unsigned char *)((char *)&local_8 + 0) = 0x1c;
-    *(unsigned short *)((char *)&local_8 + 1) = 0;
-    ((SCStr *)(local_20))->int_release();
-    if (bVar1) {
-      *(unsigned short *)((char *)&local_8 + 1) = 0;
-    }
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCVideoDemoTimingsTestVideoSequencePageType);
-    DAT_121a4dd4 = (int)(puVar2);
-  }
-  *(unsigned char *)((char *)&local_8 + 0) = 2;
-  thunk_FUN_106dfb80(puVar2);
-  puVar2 = (undefined4 *)(operator_new(0xc));
-  *(unsigned char *)((char *)&local_8 + 0) = 0x1f;
-  if (puVar2 == (undefined4 *)0x0) {
-    puVar2 = (undefined4 *)((undefined4 *)0x0);
-  }
-  else {
-    ((SCStr *)((SCStr *)&local_1c))->int_allocRep("SCVideoDemoStaggeringTestAPage");
-    *(unsigned char *)((char *)&local_8 + 0) = 0x20;
-    thunk_FUN_106de0c0(&local_1c,param_1);
-    *(unsigned char *)((char *)&local_8 + 0) = 0x23;
-    ((SCStr *)((SCStr *)&local_1c))->int_release();
-
-    *(unsigned char *)((char *)&local_8 + 0) = 0x22;
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-    pSVar3 = (SCStr *)((SCStr *)thunk_FUN_106dfa00(local_20));
-    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x24)));
-
-    bVar1 = (bool)(((SCStr *)(pSVar3))->endsWith("Page"));
-    *(unsigned char *)((char *)&local_8 + 0) = 0x25;
-    *(unsigned short *)((char *)&local_8 + 1) = 0;
-    ((SCStr *)(local_20))->int_release();
-    if (bVar1) {
-      *(unsigned short *)((char *)&local_8 + 1) = 0;
-    }
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCVideoDemoStaggeringTestAPageType);
-    DAT_121a4dd8 = (int)(puVar2);
-  }
-  *(unsigned char *)((char *)&local_8 + 0) = 2;
-  thunk_FUN_106dfb80(puVar2);
-  puVar2 = (undefined4 *)(operator_new(0xc));
-  *(unsigned char *)((char *)&local_8 + 0) = 0x28;
-  if (puVar2 == (undefined4 *)0x0) {
-    puVar2 = (undefined4 *)((undefined4 *)0x0);
-  }
-  else {
-    ((SCStr *)((SCStr *)&local_1c))->int_allocRep("SCVideoDemoStaggeringTestBPage");
-    *(unsigned char *)((char *)&local_8 + 0) = 0x29;
-    thunk_FUN_106de0c0(&local_1c,param_1);
-    *(unsigned char *)((char *)&local_8 + 0) = 0x2c;
-    ((SCStr *)((SCStr *)&local_1c))->int_release();
-
-    *(unsigned char *)((char *)&local_8 + 0) = 0x2b;
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-    pSVar3 = (SCStr *)((SCStr *)thunk_FUN_106dfa00(local_20));
-    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x2d)));
-
-    bVar1 = (bool)(((SCStr *)(pSVar3))->endsWith("Page"));
-    *(unsigned char *)((char *)&local_8 + 0) = 0x2e;
-    *(unsigned short *)((char *)&local_8 + 1) = 0;
-    ((SCStr *)(local_20))->int_release();
-    if (bVar1) {
-      *(unsigned short *)((char *)&local_8 + 1) = 0;
-    }
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCVideoDemoStaggeringTestBPageType);
-    DAT_121a4ddc = (int)(puVar2);
-  }
-  *(unsigned char *)((char *)&local_8 + 0) = 2;
-  thunk_FUN_106dfb80(puVar2);
-  puVar2 = (undefined4 *)(operator_new(0xc));
-  *(unsigned char *)((char *)&local_8 + 0) = 0x31;
-  if (puVar2 == (undefined4 *)0x0) {
-    puVar2 = (undefined4 *)((undefined4 *)0x0);
-  }
-  else {
-    ((SCStr *)((SCStr *)&local_1c))->int_allocRep("SCVideoDemoStaggeringTestCPage");
-    *(unsigned char *)((char *)&local_8 + 0) = 0x32;
-    thunk_FUN_106de0c0(&local_1c,param_1);
-    *(unsigned char *)((char *)&local_8 + 0) = 0x35;
-    ((SCStr *)((SCStr *)&local_1c))->int_release();
-
-    *(unsigned char *)((char *)&local_8 + 0) = 0x34;
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-    pSVar3 = (SCStr *)((SCStr *)thunk_FUN_106dfa00(local_20));
-    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x36)));
-
-    bVar1 = (bool)(((SCStr *)(pSVar3))->endsWith("Page"));
-    *(unsigned char *)((char *)&local_8 + 0) = 0x37;
-    *(unsigned short *)((char *)&local_8 + 1) = 0;
-    ((SCStr *)(local_20))->int_release();
-    if (bVar1) {
-      *(unsigned short *)((char *)&local_8 + 1) = 0;
-    }
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCVideoDemoStaggeringTestCPageType);
-    DAT_121a4de0 = (int)(puVar2);
-  }
-  *(unsigned char *)((char *)&local_8 + 0) = 2;
-  thunk_FUN_106dfb80(puVar2);
-  puVar2 = (undefined4 *)(operator_new(0xc));
-  *(unsigned char *)((char *)&local_8 + 0) = 0x3a;
-  if (puVar2 == (undefined4 *)0x0) {
-    puVar2 = (undefined4 *)((undefined4 *)0x0);
-  }
-  else {
-    ((SCStr *)((SCStr *)&local_1c))->int_allocRep("SCVideoDemoTest1APage");
-    *(unsigned char *)((char *)&local_8 + 0) = 0x3b;
-    thunk_FUN_106de0c0(&local_1c,param_1);
-    *(unsigned char *)((char *)&local_8 + 0) = 0x3e;
-    ((SCStr *)((SCStr *)&local_1c))->int_release();
-
-    *(unsigned char *)((char *)&local_8 + 0) = 0x3d;
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-    pSVar3 = (SCStr *)((SCStr *)thunk_FUN_106dfa00(local_20));
-    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x3f)));
-
-    bVar1 = (bool)(((SCStr *)(pSVar3))->endsWith("Page"));
-    *(unsigned char *)((char *)&local_8 + 0) = 0x40;
-    *(unsigned short *)((char *)&local_8 + 1) = 0;
-    ((SCStr *)(local_20))->int_release();
-    if (bVar1) {
-      *(unsigned short *)((char *)&local_8 + 1) = 0;
-    }
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCVideoDemoTest1APageType);
-    DAT_121a4de4 = (int)(puVar2);
-  }
-  *(unsigned char *)((char *)&local_8 + 0) = 2;
-  thunk_FUN_106dfb80(puVar2);
-  puVar2 = (undefined4 *)(operator_new(0xc));
-  *(unsigned char *)((char *)&local_8 + 0) = 0x43;
-  if (puVar2 == (undefined4 *)0x0) {
-    puVar2 = (undefined4 *)((undefined4 *)0x0);
-  }
-  else {
-    ((SCStr *)((SCStr *)&local_1c))->int_allocRep("SCVideoDemoTest1BPage");
-    *(unsigned char *)((char *)&local_8 + 0) = 0x44;
-    thunk_FUN_106de0c0(&local_1c,param_1);
-    *(unsigned char *)((char *)&local_8 + 0) = 0x47;
-    ((SCStr *)((SCStr *)&local_1c))->int_release();
-
-    *(unsigned char *)((char *)&local_8 + 0) = 0x46;
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-    pSVar3 = (SCStr *)((SCStr *)thunk_FUN_106dfa00(local_20));
-    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x48)));
-
-    bVar1 = (bool)(((SCStr *)(pSVar3))->endsWith("Page"));
-    *(unsigned char *)((char *)&local_8 + 0) = 0x49;
-    *(unsigned short *)((char *)&local_8 + 1) = 0;
-    ((SCStr *)(local_20))->int_release();
-    if (bVar1) {
-      *(unsigned short *)((char *)&local_8 + 1) = 0;
-    }
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCVideoDemoTest1BPageType);
-    DAT_121a4de8 = (int)(puVar2);
-  }
-  *(unsigned char *)((char *)&local_8 + 0) = 2;
-  thunk_FUN_106dfb80(puVar2);
-  puVar2 = (undefined4 *)(operator_new(0xc));
-  *(unsigned char *)((char *)&local_8 + 0) = 0x4c;
-  if (puVar2 == (undefined4 *)0x0) {
-    puVar2 = (undefined4 *)((undefined4 *)0x0);
-  }
-  else {
-    ((SCStr *)((SCStr *)&local_1c))->int_allocRep("SCVideoDemoTest1CPage");
-    *(unsigned char *)((char *)&local_8 + 0) = 0x4d;
-    thunk_FUN_106de0c0(&local_1c,param_1);
-    *(unsigned char *)((char *)&local_8 + 0) = 0x50;
-    ((SCStr *)((SCStr *)&local_1c))->int_release();
-
-    *(unsigned char *)((char *)&local_8 + 0) = 0x4f;
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-    pSVar3 = (SCStr *)((SCStr *)thunk_FUN_106dfa00(local_20));
-    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x51)));
-
-    bVar1 = (bool)(((SCStr *)(pSVar3))->endsWith("Page"));
-    *(unsigned char *)((char *)&local_8 + 0) = 0x52;
-    *(unsigned short *)((char *)&local_8 + 1) = 0;
-    ((SCStr *)(local_20))->int_release();
-    if (bVar1) {
-      *(unsigned short *)((char *)&local_8 + 1) = 0;
-    }
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCVideoDemoTest1CPageType);
-    DAT_121a4dec = (int)(puVar2);
-  }
-  *(unsigned char *)((char *)&local_8 + 0) = 2;
-  thunk_FUN_106dfb80(puVar2);
-  puVar2 = (undefined4 *)(operator_new(0xc));
-  *(unsigned char *)((char *)&local_8 + 0) = 0x55;
-  if (puVar2 == (undefined4 *)0x0) {
-    puVar2 = (undefined4 *)((undefined4 *)0x0);
-  }
-  else {
-    ((SCStr *)((SCStr *)&local_1c))->int_allocRep("SCVideoDemoTest1DPage");
-    *(unsigned char *)((char *)&local_8 + 0) = 0x56;
-    thunk_FUN_106de0c0(&local_1c,param_1);
-    *(unsigned char *)((char *)&local_8 + 0) = 0x59;
-    ((SCStr *)((SCStr *)&local_1c))->int_release();
-
-    *(unsigned char *)((char *)&local_8 + 0) = 0x58;
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-    pSVar3 = (SCStr *)((SCStr *)thunk_FUN_106dfa00(local_20));
-    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x5a)));
-
-    bVar1 = (bool)(((SCStr *)(pSVar3))->endsWith("Page"));
-    *(unsigned char *)((char *)&local_8 + 0) = 0x5b;
-    *(unsigned short *)((char *)&local_8 + 1) = 0;
-    ((SCStr *)(local_20))->int_release();
-    if (bVar1) {
-      *(unsigned short *)((char *)&local_8 + 1) = 0;
-    }
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCVideoDemoTest1DPageType);
-    DAT_121a4df0 = (int)(puVar2);
-  }
-  *(unsigned char *)((char *)&local_8 + 0) = 2;
-  thunk_FUN_106dfb80(puVar2);
-  puVar2 = (undefined4 *)(operator_new(0xc));
-  *(unsigned char *)((char *)&local_8 + 0) = 0x5e;
-  if (puVar2 == (undefined4 *)0x0) {
-    puVar2 = (undefined4 *)((undefined4 *)0x0);
-  }
-  else {
-    ((SCStr *)((SCStr *)&local_1c))->int_allocRep("SCVideoDemoTest2APage");
-    *(unsigned char *)((char *)&local_8 + 0) = 0x5f;
-    thunk_FUN_106de0c0(&local_1c,param_1);
-    *(unsigned char *)((char *)&local_8 + 0) = 0x62;
-    ((SCStr *)((SCStr *)&local_1c))->int_release();
-
-    *(unsigned char *)((char *)&local_8 + 0) = 0x61;
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-    pSVar3 = (SCStr *)((SCStr *)thunk_FUN_106dfa00(local_20));
-    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(99)));
-
-    bVar1 = (bool)(((SCStr *)(pSVar3))->endsWith("Page"));
-    *(unsigned char *)((char *)&local_8 + 0) = 100;
-    *(unsigned short *)((char *)&local_8 + 1) = 0;
-    ((SCStr *)(local_20))->int_release();
-    if (bVar1) {
-      *(unsigned short *)((char *)&local_8 + 1) = 0;
-    }
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCVideoDemoTest2APageType);
-    DAT_121a4df4 = (int)(puVar2);
-  }
-  *(unsigned char *)((char *)&local_8 + 0) = 2;
-  thunk_FUN_106dfb80(puVar2);
-  puVar2 = (undefined4 *)(operator_new(0xc));
-  *(unsigned char *)((char *)&local_8 + 0) = 0x67;
-  if (puVar2 == (undefined4 *)0x0) {
-    puVar2 = (undefined4 *)((undefined4 *)0x0);
-  }
-  else {
-    ((SCStr *)((SCStr *)&local_1c))->int_allocRep("SCVideoDemoTest2BPage");
-    *(unsigned char *)((char *)&local_8 + 0) = 0x68;
-    thunk_FUN_106de0c0(&local_1c,param_1);
-    *(unsigned char *)((char *)&local_8 + 0) = 0x6b;
-    ((SCStr *)((SCStr *)&local_1c))->int_release();
-
-    *(unsigned char *)((char *)&local_8 + 0) = 0x6a;
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-    pSVar3 = (SCStr *)((SCStr *)thunk_FUN_106dfa00(local_20));
-    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x6c)));
-
-    bVar1 = (bool)(((SCStr *)(pSVar3))->endsWith("Page"));
-    *(unsigned char *)((char *)&local_8 + 0) = 0x6d;
-    *(unsigned short *)((char *)&local_8 + 1) = 0;
-    ((SCStr *)(local_20))->int_release();
-    if (bVar1) {
-      *(unsigned short *)((char *)&local_8 + 1) = 0;
-    }
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCVideoDemoTest2BPageType);
-    DAT_121a4df8 = (int)(puVar2);
-  }
-  *(unsigned char *)((char *)&local_8 + 0) = 2;
-  thunk_FUN_106dfb80(puVar2);
-  puVar2 = (undefined4 *)(operator_new(0xc));
-  *(unsigned char *)((char *)&local_8 + 0) = 0x70;
-  if (puVar2 == (undefined4 *)0x0) {
-    puVar2 = (undefined4 *)((undefined4 *)0x0);
-  }
-  else {
-    ((SCStr *)((SCStr *)&local_1c))->int_allocRep("SCVideoDemoTest2CPage");
-    *(unsigned char *)((char *)&local_8 + 0) = 0x71;
-    thunk_FUN_106de0c0(&local_1c,param_1);
-    *(unsigned char *)((char *)&local_8 + 0) = 0x74;
-    ((SCStr *)((SCStr *)&local_1c))->int_release();
-
-    *(unsigned char *)((char *)&local_8 + 0) = 0x73;
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-    pSVar3 = (SCStr *)((SCStr *)thunk_FUN_106dfa00(local_20));
-    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x75)));
-
-    bVar1 = (bool)(((SCStr *)(pSVar3))->endsWith("Page"));
-    *(unsigned char *)((char *)&local_8 + 0) = 0x76;
-    *(unsigned short *)((char *)&local_8 + 1) = 0;
-    ((SCStr *)(local_20))->int_release();
-    if (bVar1) {
-      *(unsigned short *)((char *)&local_8 + 1) = 0;
-    }
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCVideoDemoTest2CPageType);
-    DAT_121a4dfc = (int)(puVar2);
-  }
-  *(unsigned char *)((char *)&local_8 + 0) = 2;
-  thunk_FUN_106dfb80(puVar2);
-  puVar2 = (undefined4 *)(operator_new(0xc));
-  *(unsigned char *)((char *)&local_8 + 0) = 0x79;
-  if (puVar2 == (undefined4 *)0x0) {
-    puVar2 = (undefined4 *)((undefined4 *)0x0);
-  }
-  else {
-    ((SCStr *)((SCStr *)&local_1c))->int_allocRep("SCVideoDemoTest3APage");
-    *(unsigned char *)((char *)&local_8 + 0) = 0x7a;
-    thunk_FUN_106de0c0(&local_1c,param_1);
-    *(unsigned char *)((char *)&local_8 + 0) = 0x7d;
-    ((SCStr *)((SCStr *)&local_1c))->int_release();
-
-    *(unsigned char *)((char *)&local_8 + 0) = 0x7c;
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-    pSVar3 = (SCStr *)((SCStr *)thunk_FUN_106dfa00(local_20));
-    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x7e)));
-
-    bVar1 = (bool)(((SCStr *)(pSVar3))->endsWith("Page"));
-    *(unsigned char *)((char *)&local_8 + 0) = 0x7f;
-    *(unsigned short *)((char *)&local_8 + 1) = 0;
-    ((SCStr *)(local_20))->int_release();
-    if (bVar1) {
-      *(unsigned short *)((char *)&local_8 + 1) = 0;
-    }
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCVideoDemoTest3APageType);
-    DAT_121a4e00 = (int)(puVar2);
-  }
-  *(unsigned char *)((char *)&local_8 + 0) = 2;
-  thunk_FUN_106dfb80(puVar2);
-  puVar2 = (undefined4 *)(operator_new(0xc));
-  *(unsigned char *)((char *)&local_8 + 0) = 0x82;
-  if (puVar2 == (undefined4 *)0x0) {
-    puVar2 = (undefined4 *)((undefined4 *)0x0);
-  }
-  else {
-    ((SCStr *)((SCStr *)&local_1c))->int_allocRep("SCVideoDemoTest3BPage");
-    *(unsigned char *)((char *)&local_8 + 0) = 0x83;
-    thunk_FUN_106de0c0(&local_1c,param_1);
-    *(unsigned char *)((char *)&local_8 + 0) = 0x86;
-    ((SCStr *)((SCStr *)&local_1c))->int_release();
-
-    *(unsigned char *)((char *)&local_8 + 0) = 0x85;
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-    pSVar3 = (SCStr *)((SCStr *)thunk_FUN_106dfa00(local_20));
-    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x87)));
-
-    bVar1 = (bool)(((SCStr *)(pSVar3))->endsWith("Page"));
-    *(unsigned char *)((char *)&local_8 + 0) = 0x88;
-    *(unsigned short *)((char *)&local_8 + 1) = 0;
-    ((SCStr *)(local_20))->int_release();
-    if (bVar1) {
-      *(unsigned short *)((char *)&local_8 + 1) = 0;
-    }
-    *puVar2 = (undefined4)((uint)&ghidra_vftable_SCVideoDemoTest3BPageType);
-    DAT_121a4e04 = (int)(puVar2);
-  }
-  local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
-  thunk_FUN_106dfb80(puVar2);
-
-  return (undefined4 *)(param_1);
-
- } catch (...) { }
-}
-
-
 // Reference entry 10b5e210; body size 216 bytes.
 #line 1 "ENTRY_10b5e210"
 
@@ -7425,6 +6882,138 @@ LAB_10b66dd8:
   ((SCStr *)(local_c))->int_release();
 
   return (undefined4)(param_1);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10b67080; body size 546 bytes.
+#line 1 "ENTRY_10b67080"
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+undefined4 __stdcall FUN_10b67080(undefined4 param_1)
+
+{
+ try {
+  undefined4 *puVar1;
+  uint uVar2;
+  int *piVar3;
+  undefined4 uVar4;
+  int iVar5;
+  undefined4 *puVar6;
+  undefined **local_54;
+  undefined4 local_50;
+  int iStack_4c;
+  undefined4 uStack_48;
+  int iStack_44;
+  undefined4 *local_40;
+  undefined4 *local_3c;
+  int local_38;
+  undefined **local_34;
+  undefined4 local_30;
+  int iStack_2c;
+  undefined4 uStack_28;
+  int iStack_24;
+  undefined4 *local_20;
+  undefined4 *local_1c;
+  int local_18;
+  undefined4 local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  uVar2 = (uint)(DAT_12126b84);
+
+  local_14 = (undefined4)(DAT_121a4dcc);
+  local_54 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTree);
+  local_50 = (undefined4)(_DAT_118beee0);
+  iStack_4c = (int)(_UNK_118beee4);
+  uStack_48 = (undefined4)(_UNK_118beee8);
+  iStack_44 = (int)(_UNK_118beeec);
+  local_40 = (undefined4 *)((undefined4 *)0x0);
+  local_3c = (undefined4 *)((undefined4 *)0x0);
+
+
+  thunk_FUN_1059ee10(0,&local_14);
+  local_34 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTree);
+
+  iStack_2c = (int)(0);
+
+  iStack_24 = (int)(0);
+  local_20 = (undefined4 *)((undefined4 *)0x0);
+  local_1c = (undefined4 *)((undefined4 *)0x0);
+
+
+  piVar3 = (int *)((int *)thunk_FUN_10605020(&local_54));
+  uVar4 = (undefined4)((**(code **)(*piVar3 + 4))(uVar2));
+  thunk_FUN_105f5a00(uVar4);
+  puVar1 = (undefined4 *)(local_1c);
+  puVar6 = (undefined4 *)(local_20);
+  if (local_20 != (undefined4 *)0x0) {
+    for (; (undefined4 *)(puVar6) != puVar1; puVar6 = puVar6 + 8) {
+      (**(code **)*puVar6)(0);
+    }
+    uVar2 = (uint)(local_18 - (int)local_20 & 0xffffffe0);
+    puVar6 = (undefined4 *)(local_20);
+    if (0xfff < uVar2) {
+      puVar6 = (undefined4 *)((undefined4 *)local_20[-1]);
+      uVar2 = (uint)(uVar2 + 0x23);
+      if (0x1f < (uint)((int)local_20 + (-4 - (int)puVar6))) goto LAB_10b6727c;
+    }
+    thunk_FUN_1148a50e(puVar6,uVar2);
+    local_20 = (undefined4 *)((undefined4 *)0x0);
+    local_1c = (undefined4 *)((undefined4 *)0x0);
+
+  }
+  if (iStack_2c != 0) {
+    uVar2 = (uint)(iStack_24 - iStack_2c & 0xfffffffc);
+    iVar5 = (int)(iStack_2c);
+    if (0xfff < uVar2) {
+      iVar5 = (int)(*(int *)(iStack_2c + -4));
+      uVar2 = (uint)(uVar2 + 0x23);
+      if (0x1f < (iStack_2c - iVar5) - 4U) goto LAB_10b6727c;
+    }
+    thunk_FUN_1148a50e(iVar5,uVar2);
+    iStack_2c = (int)(0);
+
+    iStack_24 = (int)(0);
+  }
+  puVar1 = (undefined4 *)(local_3c);
+  local_34 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTreeNoAppendInterface);
+  puVar6 = (undefined4 *)(local_40);
+  if (local_40 != (undefined4 *)0x0) {
+    for (; (undefined4 *)(puVar6) != puVar1; puVar6 = puVar6 + 8) {
+      (**(code **)*puVar6)(0);
+    }
+    uVar2 = (uint)(local_38 - (int)local_40 & 0xffffffe0);
+    puVar6 = (undefined4 *)(local_40);
+    if (0xfff < uVar2) {
+      puVar6 = (undefined4 *)((undefined4 *)local_40[-1]);
+      uVar2 = (uint)(uVar2 + 0x23);
+      if (0x1f < (uint)((int)local_40 + (-4 - (int)puVar6))) goto LAB_10b6727c;
+    }
+    thunk_FUN_1148a50e(puVar6,uVar2);
+    local_40 = (undefined4 *)((undefined4 *)0x0);
+    local_3c = (undefined4 *)((undefined4 *)0x0);
+
+  }
+  if (iStack_4c != 0) {
+    uVar2 = (uint)(iStack_44 - iStack_4c & 0xfffffffc);
+    iVar5 = (int)(iStack_4c);
+    if (0xfff < uVar2) {
+      iVar5 = (int)(*(int *)(iStack_4c + -4));
+      uVar2 = (uint)(uVar2 + 0x23);
+      if (0x1f < (iStack_4c - iVar5) - 4U) {
+LAB_10b6727c:
+                    
+        _invalid_parameter_noinfo_noreturn();
+      }
+    }
+    thunk_FUN_1148a50e(iVar5,uVar2);
+  }
+
+  return (/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ undefined4)(param_1);
 
  } catch (...) { }
 }
@@ -21035,7 +20624,7 @@ LAB_10b8e396:
    
    Library: Visual Studio 2019 Release */
 
-void __fastcall FID_conflict__Tidy_10b8e550(int *param_1)
+void __fastcallFUN_10b8e550(int *param_1)
 
 {
   int iVar1;
@@ -21112,7 +20701,7 @@ void __thiscall Recovered_Bulk::FUN_10b8e780(int param_2,int param_3,int param_4
    
    Library: Visual Studio 2019 Release */
 
-void __fastcall FID_conflict__Tidy_10b8e860(int *param_1)
+void __fastcallFUN_10b8e860(int *param_1)
 
 {
   int iVar1;
@@ -27318,6 +26907,45 @@ void __fastcall FUN_10ba67a0(int *param_1)
   return;
 
  } catch (...) { }
+}
+
+
+// Reference entry 10ba6ce0; body size 64 bytes.
+#line 1 "ENTRY_10ba6ce0"
+
+/* Library Function - Multiple Matches With Same Base Name
+    public: __thiscall std::_Tree<class std::_Tset_traits<unsigned int,struct std::less<unsigned
+   int>,class fuzzer::fuzzer_allocator<unsigned int>,0> >::~_Tree<class std::_Tset_traits<unsigned
+   int,struct std::less<unsigned int>,class fuzzer::fuzzer_allocator<unsigned int>,0> >(void_)
+    public: __thiscall std::_Tree<class std::_Tset_traits<struct fuzzer::TracePC::PCTableEntry const
+   *,struct std::less<struct fuzzer::TracePC::PCTableEntry const *>,class
+   fuzzer::fuzzer_allocator<struct fuzzer::TracePC::PCTableEntry const *>,0> >::~_Tree<class
+   std::_Tset_traits<struct fuzzer::TracePC::PCTableEntry const *,struct std::less<struct
+   fuzzer::TracePC::PCTableEntry const *>,class fuzzer::fuzzer_allocator<struct
+   fuzzer::TracePC::PCTableEntry const *>,0> >(void_)
+   
+   Library: Visual Studio 2019 Release */
+
+void __fastcall FUN_10ba6ce0(int *param_1)
+
+{
+  int *piVar1;
+  int iVar2;
+  int *piVar3;
+  
+  iVar2 = (int)(*param_1);
+  piVar3 = (int *)(*(int **)(iVar2 + 4));
+  if (*(char *)((int)*(int **)(iVar2 + 4) + 0xd) == '\0') {
+    do {
+      thunk_FUN_10ba31f0(param_1,piVar3[2]);
+      piVar1 = (int *)((int *)*piVar3);
+      thunk_FUN_1148a50e(piVar3,0x2c);
+      piVar3 = (int *)(piVar1);
+    } while (*(char *)((int)piVar1 + 0xd) == '\0');
+    iVar2 = (int)(*param_1);
+  }
+  thunk_FUN_1148a50e(iVar2,0x2c);
+  return;
 }
 
 
@@ -34925,7 +34553,7 @@ void __fastcall FUN_10bbe100(int *param_1)
    
    Library: Visual Studio 2019 Release */
 
-void __fastcall FID_conflict__Tidy_10bbe160(int *param_1)
+void __fastcallFUN_10bbe160(int *param_1)
 
 {
   int iVar1;
@@ -35002,7 +34630,7 @@ void __thiscall Recovered_Bulk::FUN_10bbe590(int param_2,int param_3,int param_4
    
    Library: Visual Studio 2019 Release */
 
-void __fastcall FID_conflict__Tidy_10bbe660(int *param_1)
+void __fastcallFUN_10bbe660(int *param_1)
 
 {
   int iVar1;
@@ -36530,7 +36158,7 @@ void __fastcall FUN_10bc3f40(int *param_1)
    
    Library: Visual Studio 2019 Release */
 
-void __fastcall FID_conflict__Tidy_10bc3fa0(int *param_1)
+void __fastcallFUN_10bc3fa0(int *param_1)
 
 {
   int iVar1;
@@ -36627,7 +36255,7 @@ void __thiscall Recovered_Bulk::FUN_10bc44b0(int param_2,int param_3,int param_4
    
    Library: Visual Studio 2019 Release */
 
-void __fastcall FID_conflict__Tidy_10bc4580(int *param_1)
+void __fastcallFUN_10bc4580(int *param_1)
 
 {
   int iVar1;
@@ -38282,7 +37910,7 @@ LAB_10bc99a6:
    
    Library: Visual Studio 2019 Release */
 
-void __fastcall FID_conflict__Tidy_10bc9d00(int *param_1)
+void __fastcallFUN_10bc9d00(int *param_1)
 
 {
   int iVar1;
@@ -38359,7 +37987,7 @@ void __thiscall Recovered_Bulk::FUN_10bca050(int param_2,int param_3,int param_4
    
    Library: Visual Studio 2019 Release */
 
-void __fastcall FID_conflict__Tidy_10bca120(int *param_1)
+void __fastcallFUN_10bca120(int *param_1)
 
 {
   int iVar1;
@@ -41843,6 +41471,84 @@ void __fastcall FUN_10bd6200(int *param_1)
 }
 
 
+// Reference entry 10bd6390; body size 64 bytes.
+#line 1 "ENTRY_10bd6390"
+
+/* Library Function - Multiple Matches With Same Base Name
+    public: __thiscall std::_Tree<class std::_Tset_traits<unsigned int,struct std::less<unsigned
+   int>,class fuzzer::fuzzer_allocator<unsigned int>,0> >::~_Tree<class std::_Tset_traits<unsigned
+   int,struct std::less<unsigned int>,class fuzzer::fuzzer_allocator<unsigned int>,0> >(void_)
+    public: __thiscall std::_Tree<class std::_Tset_traits<struct fuzzer::TracePC::PCTableEntry const
+   *,struct std::less<struct fuzzer::TracePC::PCTableEntry const *>,class
+   fuzzer::fuzzer_allocator<struct fuzzer::TracePC::PCTableEntry const *>,0> >::~_Tree<class
+   std::_Tset_traits<struct fuzzer::TracePC::PCTableEntry const *,struct std::less<struct
+   fuzzer::TracePC::PCTableEntry const *>,class fuzzer::fuzzer_allocator<struct
+   fuzzer::TracePC::PCTableEntry const *>,0> >(void_)
+   
+   Library: Visual Studio 2019 Release */
+
+void __fastcall FUN_10bd6390(int *param_1)
+
+{
+  int *piVar1;
+  int iVar2;
+  int *piVar3;
+  
+  iVar2 = (int)(*param_1);
+  piVar3 = (int *)(*(int **)(iVar2 + 4));
+  if (*(char *)((int)*(int **)(iVar2 + 4) + 0xd) == '\0') {
+    do {
+      thunk_FUN_10bcee70(param_1,piVar3[2]);
+      piVar1 = (int *)((int *)*piVar3);
+      thunk_FUN_1148a50e(piVar3,0x1c);
+      piVar3 = (int *)(piVar1);
+    } while (*(char *)((int)piVar1 + 0xd) == '\0');
+    iVar2 = (int)(*param_1);
+  }
+  thunk_FUN_1148a50e(iVar2,0x1c);
+  return;
+}
+
+
+// Reference entry 10bd6530; body size 64 bytes.
+#line 1 "ENTRY_10bd6530"
+
+/* Library Function - Multiple Matches With Same Base Name
+    public: __thiscall std::_Tree<class std::_Tset_traits<unsigned int,struct std::less<unsigned
+   int>,class fuzzer::fuzzer_allocator<unsigned int>,0> >::~_Tree<class std::_Tset_traits<unsigned
+   int,struct std::less<unsigned int>,class fuzzer::fuzzer_allocator<unsigned int>,0> >(void_)
+    public: __thiscall std::_Tree<class std::_Tset_traits<struct fuzzer::TracePC::PCTableEntry const
+   *,struct std::less<struct fuzzer::TracePC::PCTableEntry const *>,class
+   fuzzer::fuzzer_allocator<struct fuzzer::TracePC::PCTableEntry const *>,0> >::~_Tree<class
+   std::_Tset_traits<struct fuzzer::TracePC::PCTableEntry const *,struct std::less<struct
+   fuzzer::TracePC::PCTableEntry const *>,class fuzzer::fuzzer_allocator<struct
+   fuzzer::TracePC::PCTableEntry const *>,0> >(void_)
+   
+   Library: Visual Studio 2019 Release */
+
+void __fastcall FUN_10bd6530(int *param_1)
+
+{
+  int *piVar1;
+  int iVar2;
+  int *piVar3;
+  
+  iVar2 = (int)(*param_1);
+  piVar3 = (int *)(*(int **)(iVar2 + 4));
+  if (*(char *)((int)*(int **)(iVar2 + 4) + 0xd) == '\0') {
+    do {
+      thunk_FUN_10bcf3d0(param_1,piVar3[2]);
+      piVar1 = (int *)((int *)*piVar3);
+      thunk_FUN_1148a50e(piVar3,0x14);
+      piVar3 = (int *)(piVar1);
+    } while (*(char *)((int)piVar1 + 0xd) == '\0');
+    iVar2 = (int)(*param_1);
+  }
+  thunk_FUN_1148a50e(iVar2,0x14);
+  return;
+}
+
+
 // Reference entry 10bd6780; body size 111 bytes.
 #line 1 "ENTRY_10bd6780"
 
@@ -42079,7 +41785,7 @@ void __fastcall FUN_10bd6e10(int param_1)
    
    Library: Visual Studio 2019 Release */
 
-void __fastcall FID_conflict__Tidy_10bd6e90(int *param_1)
+void __fastcallFUN_10bd6e90(int *param_1)
 
 {
   int iVar1;
@@ -43142,7 +42848,7 @@ void __thiscall Recovered_Bulk::FUN_10bd9d90(int *param_2)
    
    Library: Visual Studio 2019 Release */
 
-void __fastcall FID_conflict__Tidy_10bdc660(int *param_1)
+void __fastcallFUN_10bdc660(int *param_1)
 
 {
   int iVar1;

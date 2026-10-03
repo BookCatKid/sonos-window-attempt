@@ -557,7 +557,15 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
     # take the address first so the cast is legal.
     body_part = re.sub(r'(\(\s*code\b[^)]*\*+\s*\)\s*)(LAB_\w+)', r'\1&\2',
                        body_part)
+    # `(*(int *)(X))(args)` calls the dereferenced value as a function; the
+    # target is code so retype the pointer as `code *` for the same call [mem].
+    body_part = re.sub(r'\(\s*\*\s*\((?:u?int|undefined4|void|long|short|char)\s*\*+\s*\)'
+                       r'\s*((?:\([^()]*\)\s*)*(?:\([^()]*\)|[A-Za-z_]\w*))\s*\)\s*\(',
+                       r'(*(code *)\1)(', body_part)
     body_part = _fix_types(body_part, ret_type, head_part, externs)
+    body_part = re.sub(r'\(\s*\*\s*\((?:u?int|undefined4|void|long|short|char)\s*\*+\s*\)'
+                       r'\s*((?:\([^()]*\)\s*)*(?:\([^()]*\)|[A-Za-z_]\w*))\s*\)\s*\(',
+                       r'(*(code *)\1)(', body_part)
     return _rename_definition(head_part + body_part, entry)
 
 
