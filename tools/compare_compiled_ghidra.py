@@ -205,7 +205,28 @@ def load_symbol_vas(path):
                     owner = qualified_name[:-len('::vftable')]
                     alias = 'ghidra_vftable_' + re.sub(r'[^0-9A-Za-z_]', '_', owner.replace('::', '__'))
                     result[alias].add(address)
-    return {name: sorted(addresses) for name, addresses in result.items()}
+            if name:
+                # PTR_<import>_<va> labels mark the IAT dword the loader fills;
+                # __declspec(dllimport) references carry an __imp_ relocation
+                # against that slot, indexed here under a collision-free key.
+                match = re.fullmatch(r'PTR_(.+)_([0-9a-fA-F]{8})', name)
+                if match:
+                    result['__imp_:' + match.group(1)].add(address)
+                # Decorated vftables ??_7Class@@6B@ expose the owning class for
+                # lowered ghidra_vftable_<Class> externs.
+                if name.startswith('??_7') and '@@6B' in name:
+                    owner = name[4:name.index('@@6B')]
+                    if owner.startswith('?$'):
+                        owner = owner[2:]
+                    result['ghidra_vftable_' + owner.split('@')[0]].add(address)
+    result = {name: sorted(addresses) for name, addresses in result.items()}
+    # Internal runtime helpers carry no import slot: the reference reaches the
+    # /GS cookie check through its incremental-link thunk like any other call.
+    for alias, source in (('__security_check_cookie', 'thunk_FUN_1148ac28'),):
+        if result.get(source):
+            merged = sorted(set(result.get(alias, ())) | set(result[source]))
+            result[alias] = merged
+    return result
 
 
 def scstr_abi_key(name):
@@ -268,6 +289,21 @@ def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base,
         logical_name = (reloc['symbol'] if reloc['symbol'] in symbol_vas else
                         generated_symbol_name(reloc['symbol']) or
                         scstr_abi_key(reloc['symbol']))
+        if logical_name is None or logical_name not in symbol_vas:
+            symbol = reloc['symbol']
+            if symbol.startswith('__imp_'):
+                # dllimport calls relocate against __imp_<name>; the linker's
+                # IAT slot is the PTR_<name>_<va> label in the reference.
+                imported = generated_symbol_name(symbol[len('__imp_'):]) or \
+                    symbol[len('__imp_'):]
+                for key in (f'__imp_:{imported}',
+                            f'__imp_:{imported.lstrip("_")}'):
+                    if key in symbol_vas:
+                        logical_name = key
+                        break
+            elif re.fullmatch(r'@?[A-Za-z_]\w*@\d+', symbol):
+                # @name@n is MSVC's stdcall decoration for a plain name.
+                logical_name = symbol.lstrip('@').rsplit('@', 1)[0]
         if logical_name is None:
             unresolved += 1
             continue

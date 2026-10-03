@@ -392,363 +392,247 @@
   "directory": "analysis/compiled-cpp-conditional-event-callbacks"
  },
  {
-  "object": "analysis__bulk_64_pilot__0000",
-  "directory": "analysis/compiled-cpp-bulk/analysis__bulk_64_pilot__0000"
+  "object": "analysis__bulk_64_pilot_0000",
+  "directory": "analysis/compiled-cpp-bulk/analysis__bulk_64_pilot_0000"
  },
  {
-  "object": "analysis__bulk_64_rest__0000",
-  "directory": "analysis/compiled-cpp-bulk/analysis__bulk_64_rest__0000"
+  "object": "analysis__bulk_64_rest_0000",
+  "directory": "analysis/compiled-cpp-bulk/analysis__bulk_64_rest_0000"
  },
  {
-  "object": "analysis__bulk_64_rest__0001",
-  "directory": "analysis/compiled-cpp-bulk/analysis__bulk_64_rest__0001"
+  "object": "analysis__bulk_64_rest_0001",
+  "directory": "analysis/compiled-cpp-bulk/analysis__bulk_64_rest_0001"
  },
  {
-  "object": "analysis__bulk_64_rest__0002",
-  "directory": "analysis/compiled-cpp-bulk/analysis__bulk_64_rest__0002"
+  "object": "analysis__bulk_64_rest_0002",
+  "directory": "analysis/compiled-cpp-bulk/analysis__bulk_64_rest_0002"
  },
  {
-  "object": "analysis__bulk_64_rest__0003",
-  "directory": "analysis/compiled-cpp-bulk/analysis__bulk_64_rest__0003"
+  "object": "analysis__bulk_64_rest_0003",
+  "directory": "analysis/compiled-cpp-bulk/analysis__bulk_64_rest_0003"
  },
  {
-  "object": "analysis__bulk_64_rest__0004",
-  "directory": "analysis/compiled-cpp-bulk/analysis__bulk_64_rest__0004"
+  "object": "analysis__bulk_64_rest_0004",
+  "directory": "analysis/compiled-cpp-bulk/analysis__bulk_64_rest_0004"
  },
  {
-  "object": "analysis__bulk_64_rest__0005",
-  "directory": "analysis/compiled-cpp-bulk/analysis__bulk_64_rest__0005"
+  "object": "analysis__bulk_64_rest_0005",
+  "directory": "analysis/compiled-cpp-bulk/analysis__bulk_64_rest_0005"
  },
  {
-  "object": "analysis__bulk_64_rest__0006",
-  "directory": "analysis/compiled-cpp-bulk/analysis__bulk_64_rest__0006"
+  "object": "analysis__bulk_64_rest_0006",
+  "directory": "analysis/compiled-cpp-bulk/analysis__bulk_64_rest_0006"
  },
  {
-  "object": "analysis__bulk_64_rest__0007",
-  "directory": "analysis/compiled-cpp-bulk/analysis__bulk_64_rest__0007"
+  "object": "analysis__bulk_64_rest_0007",
+  "directory": "analysis/compiled-cpp-bulk/analysis__bulk_64_rest_0007"
  },
  {
-  "object": "bulk_64_final__chunk_012554__0000",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_012554__0000"
+  "object": "bulk_64_final__chunk_012554_0000",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_012554_0000"
  },
  {
-  "object": "bulk_64_final__chunk_012654__0000",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_012654__0000"
+  "object": "bulk_64_final__chunk_012654_0000",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_012654_0000"
  },
  {
-  "object": "bulk_64_final__chunk_012654__0001",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_012654__0001"
+  "object": "bulk_64_final__chunk_012654_0001",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_012654_0001"
  },
  {
-  "object": "bulk_64_final__chunk_012654__0002",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_012654__0002"
+  "object": "bulk_64_final__chunk_012654_0002",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_012654_0002"
  },
  {
-  "object": "bulk_64_final__chunk_012654__0003",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_012654__0003"
+  "object": "bulk_64_final__chunk_012654_0003",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_012654_0003"
  },
  {
-  "object": "bulk_64_final__chunk_017654__0000",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_017654__0000"
+  "object": "bulk_64_final__chunk_017654_0000",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_017654_0000"
  },
  {
-  "object": "bulk_64_final__chunk_017654__0001",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_017654__0001"
+  "object": "bulk_64_final__chunk_017654_0001",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_017654_0001"
  },
  {
-  "object": "bulk_64_final__chunk_017654__0002",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_017654__0002"
+  "object": "bulk_64_final__chunk_017654_0002",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_017654_0002"
  },
  {
-  "object": "bulk_64_final__chunk_017654__0003",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_017654__0003"
+  "object": "bulk_64_final__chunk_017654_0003",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_017654_0003"
  },
  {
-  "object": "bulk_64_final__chunk_022654__0000",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_022654__0000"
+  "object": "bulk_64_final__chunk_022654_0000",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_022654_0000"
  },
  {
-  "object": "bulk_64_final__chunk_022654__0001",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_022654__0001"
+  "object": "bulk_64_final__chunk_022654_0001",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_022654_0001"
  },
  {
-  "object": "bulk_64_final__chunk_022654__0002",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_022654__0002"
+  "object": "bulk_64_final__chunk_022654_0002",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_022654_0002"
  },
  {
-  "object": "bulk_64_final__chunk_022654__0003",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_022654__0003"
+  "object": "bulk_64_final__chunk_022654_0003",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_022654_0003"
  },
  {
-  "object": "bulk_64_final__chunk_027654__0000",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_027654__0000"
+  "object": "bulk_64_final__chunk_027654_0000",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_027654_0000"
  },
  {
-  "object": "bulk_64_final__chunk_027654__0001",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_027654__0001"
+  "object": "bulk_64_final__chunk_027654_0001",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_027654_0001"
  },
  {
-  "object": "bulk_64_final__chunk_027654__0002",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_027654__0002"
+  "object": "bulk_64_final__chunk_027654_0002",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_027654_0002"
  },
  {
-  "object": "bulk_64_final__chunk_027654__0003",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_027654__0003"
+  "object": "bulk_64_final__chunk_027654_0003",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_027654_0003"
  },
  {
-  "object": "bulk_64_final__chunk_032654__0000",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_032654__0000"
+  "object": "bulk_64_final__chunk_032654_0000",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_032654_0000"
  },
  {
-  "object": "bulk_64_final__chunk_032654__0001",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_032654__0001"
+  "object": "bulk_64_final__chunk_032654_0001",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_032654_0001"
  },
  {
-  "object": "bulk_64_final__chunk_032654__0002",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_032654__0002"
+  "object": "bulk_64_final__chunk_032654_0002",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_032654_0002"
  },
  {
-  "object": "bulk_64_final__chunk_032654__0003",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_032654__0003"
+  "object": "bulk_64_final__chunk_032654_0003",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_032654_0003"
  },
  {
-  "object": "bulk_64_final__chunk_037654__0000",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_037654__0000"
+  "object": "bulk_64_final__chunk_037654_0000",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_037654_0000"
  },
  {
-  "object": "bulk_64_final__chunk_037654__0001",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_037654__0001"
+  "object": "bulk_64_final__chunk_037654_0001",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_037654_0001"
  },
  {
-  "object": "bulk_64_final__chunk_037654__0002",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_037654__0002"
+  "object": "bulk_64_final__chunk_037654_0002",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_037654_0002"
  },
  {
-  "object": "bulk_64_final__chunk_037654__0003",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_037654__0003"
+  "object": "bulk_64_final__chunk_037654_0003",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_037654_0003"
  },
  {
-  "object": "bulk_64_final__chunk_042654__0000",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_042654__0000"
+  "object": "bulk_64_final__chunk_042654_0000",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_042654_0000"
  },
  {
-  "object": "bulk_64_final__chunk_042654__0001",
-  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_042654__0001"
+  "object": "bulk_64_final__chunk_042654_0001",
+  "directory": "analysis/compiled-cpp-bulk/bulk_64_final__chunk_042654_0001"
  },
  {
-  "object": "bulk_medium__chunk_000000__0000",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_000000__0000"
+  "object": "bulk_medium__chunk_000000_0000",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_000000_0000"
  },
  {
-  "object": "bulk_medium__chunk_000000__0001",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_000000__0001"
+  "object": "bulk_medium__chunk_000000_0001",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_000000_0001"
  },
  {
-  "object": "bulk_medium__chunk_000000__0002",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_000000__0002"
+  "object": "bulk_medium__chunk_000000_0002",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_000000_0002"
  },
  {
-  "object": "bulk_medium__chunk_000000__0003",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_000000__0003"
+  "object": "bulk_medium__chunk_000000_0003",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_000000_0003"
  },
  {
-  "object": "bulk_medium__chunk_005000__0000",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_005000__0000"
+  "object": "bulk_medium__chunk_005000_0000",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_005000_0000"
  },
  {
-  "object": "bulk_medium__chunk_005000__0001",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_005000__0001"
+  "object": "bulk_medium__chunk_005000_0001",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_005000_0001"
  },
  {
-  "object": "bulk_medium__chunk_005000__0002",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_005000__0002"
+  "object": "bulk_medium__chunk_005000_0002",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_005000_0002"
  },
  {
-  "object": "bulk_medium__chunk_005000__0003",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_005000__0003"
+  "object": "bulk_medium__chunk_005000_0003",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_005000_0003"
  },
  {
-  "object": "bulk_medium__chunk_010000__0000",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_010000__0000"
+  "object": "bulk_medium__chunk_010000_0000",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_010000_0000"
  },
  {
-  "object": "bulk_medium__chunk_010000__0001",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_010000__0001"
+  "object": "bulk_medium__chunk_010000_0001",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_010000_0001"
  },
  {
-  "object": "bulk_medium__chunk_010000__0002",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_010000__0002"
+  "object": "bulk_medium__chunk_010000_0002",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_010000_0002"
  },
  {
-  "object": "bulk_medium__chunk_010000__0003",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_010000__0003"
+  "object": "bulk_medium__chunk_010000_0003",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_010000_0003"
  },
  {
-  "object": "bulk_medium__chunk_015000__0000",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_015000__0000"
+  "object": "bulk_medium__chunk_015000_0000",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_015000_0000"
  },
  {
-  "object": "bulk_medium__chunk_015000__0001",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_015000__0001"
+  "object": "bulk_medium__chunk_015000_0001",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_015000_0001"
  },
  {
-  "object": "bulk_medium__chunk_015000__0002",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_015000__0002"
+  "object": "bulk_medium__chunk_015000_0002",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_015000_0002"
  },
  {
-  "object": "bulk_medium__chunk_015000__0003",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_015000__0003"
+  "object": "bulk_medium__chunk_015000_0003",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_015000_0003"
  },
  {
-  "object": "bulk_medium__chunk_020000__0000",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_020000__0000"
+  "object": "bulk_medium__chunk_020000_0000",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_020000_0000"
  },
  {
-  "object": "bulk_medium__chunk_020000__0001",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_020000__0001"
+  "object": "bulk_medium__chunk_020000_0001",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_020000_0001"
  },
  {
-  "object": "bulk_medium__chunk_020000__0002",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_020000__0002"
+  "object": "bulk_medium__chunk_020000_0002",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_020000_0002"
  },
  {
-  "object": "bulk_medium__chunk_020000__0003",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_020000__0003"
+  "object": "bulk_medium__chunk_020000_0003",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_020000_0003"
  },
  {
-  "object": "bulk_medium__chunk_025000__0000",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_025000__0000"
+  "object": "bulk_medium__chunk_025000_0000",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_025000_0000"
  },
  {
-  "object": "bulk_medium__chunk_025000__0001",
-  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_025000__0001"
+  "object": "bulk_medium__chunk_025000_0001",
+  "directory": "analysis/compiled-cpp-bulk/bulk_medium__chunk_025000_0001"
  },
  {
-  "object": "bulk_small__chunk_000000__0000",
-  "directory": "analysis/compiled-cpp-bulk/bulk_small__chunk_000000__0000"
+  "object": "bulk_small__chunk_000000_0000",
+  "directory": "analysis/compiled-cpp-bulk/bulk_small__chunk_000000_0000"
  },
  {
-  "object": "thunk_recovery_full__recovered_targets__0000",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0000"
+  "object": "thunk_recovery__recovered_targets_0000",
+  "directory": "analysis/compiled-cpp-bulk/thunk_recovery__recovered_targets_0000"
  },
  {
-  "object": "thunk_recovery_full__recovered_targets__0001",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0001"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0002",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0002"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0003",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0003"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0004",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0004"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0005",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0005"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0006",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0006"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0007",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0007"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0008",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0008"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0009",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0009"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0010",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0010"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0011",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0011"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0012",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0012"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0013",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0013"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0014",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0014"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0015",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0015"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0016",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0016"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0017",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0017"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0018",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0018"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0019",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0019"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0020",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0020"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0021",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0021"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0022",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0022"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0023",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0023"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0024",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0024"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0025",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0025"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0026",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0026"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0027",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0027"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0028",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0028"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0029",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0029"
- },
- {
-  "object": "thunk_recovery_full__recovered_targets__0030",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets__0030"
+  "object": "thunk_recovery__recovered_targets_000010_000011_0000",
+  "directory": "analysis/compiled-cpp-bulk/thunk_recovery__recovered_targets_000010_000011_0000"
  }
 ]

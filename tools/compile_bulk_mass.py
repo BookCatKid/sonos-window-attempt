@@ -29,6 +29,31 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 COMPILER = Path('/opt/homebrew/opt/llvm/bin/clang-cl')
+SYMBOLS = ROOT / 'analysis' / 'thunk-recovery-full' / 'symbols.jsonl'
+
+
+def import_slot_names():
+    """Ghidra names that own a ``PTR_<name>_<va>`` IAT slot in the reference.
+
+    Calls to imported functions land on ``call dword ptr [__imp_*]`` in the
+    reference, so extern decls for them must be ``__declspec(dllimport)`` to
+    reproduce the indirect call instead of a direct E8 relocation.
+    """
+    names = set()
+    if SYMBOLS.is_file():
+        with SYMBOLS.open() as file:
+            for line in file:
+                try:
+                    name = json.loads(line).get('name', '')
+                except ValueError:
+                    continue
+                match = re.fullmatch(r'PTR_(.+)_([0-9a-fA-F]{8})', name)
+                if match:
+                    names.add(match.group(1))
+    return names
+
+
+IMPORT_SLOTS = import_slot_names()
 
 HEADER = '''// Bulk recovered functions with mechanical artifact repair.
 #define NULL 0
@@ -640,7 +665,8 @@ def cpp_source(records, defined, bad_decls=()):
     decls = []
     for kind, name in sorted(externs):
         if kind == 'call':
-            decls.append(f'extern int {name}(...);')
+            dllimport = ' __declspec(dllimport)' if name in IMPORT_SLOTS else ''
+            decls.append(f'extern{dllimport} int {name}(...);')
         elif kind == 'lab':
             decls.append(f'extern undefined1 {name}[];')
         elif kind == 'vptr':
