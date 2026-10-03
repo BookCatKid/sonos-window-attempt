@@ -496,6 +496,10 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
         if name in KEYWORDS or re.match(r'^(FUN_|DAT_|PTR_|LAB_|Stub_|Ext_|ExceptionList|CONCAT|ZEXT|SEXT|SUB|unaff_|in_|stack0x|s_)', name):
             continue
         type_stubs.add(('struct' if re.search(r'[a-z]', name) else 'ptr', name))
+    # Ghidra function-pointer typedefs (_func_4879) start with '_' so the
+    # capitalized-name scan misses them.
+    for name in re.findall(r'\b(_func_\w+)\b', whole):
+        type_stubs.add(('ptr', name))
     whole = re.sub(r'\bthis\b', 'this_', whole)
     head_end = whole.find('{')
     sig = whole[:head_end]
