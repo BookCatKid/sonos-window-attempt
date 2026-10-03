@@ -102,8 +102,15 @@ def lower_free_thiscall(source):
 
     def definition(match):
         result, name, params = match.groups()
-        comment_tail = '*/' if '*/' in result else ''
-        result = result.split('*/')[-1]
+        parts = result.split('*/')
+        if len(parts) > 1:
+            # `result` carries comment text: `/* ... */ T` keeps the whole
+            # comment in the head, while a stray `*/ T` is the unclosed tail
+            # of a multi-line comment and must re-close it.
+            member_type = parts[-1]
+            head_result = result if '/*' in result else '*/' + parts[-1]
+        else:
+            member_type = head_result = result
         params = params.strip()
         pieces = _split_args(params)
         first, rest = pieces[0], ','.join(pieces[1:]).strip()
@@ -112,7 +119,7 @@ def lower_free_thiscall(source):
         # resolving to the free extern decl; overloading them with the
         # member makes address-taken and call sites ambiguous.
         methods.append(
-            f' {" ".join(result.split())} __thiscall m_{name}({decl_params});'
+            f' {" ".join(member_type.split())} __thiscall m_{name}({decl_params});'
             f' template<class... A> int m_{name}(A...);')
         renamed.add(name)
         prologue = ''
@@ -124,7 +131,7 @@ def lower_free_thiscall(source):
             ptype = param.group(1)
             prologue = (f'\n  {ptype}{param.group(2)} = '
                         f'({ptype})this;')
-        head = (f'{comment_tail}{" ".join(result.split())} __thiscall '
+        head = (f'{" ".join(head_result.split())} __thiscall '
                 f'Recovered_Bulk::m_{name}({decl_params})\n{{{prologue}')
         return head
 
@@ -193,8 +200,36 @@ def lower_free_thiscall(source):
     return rewritten, len(renamed)
 
 
+STDCALL_DECL = re.compile(
+    r'\b__stdcall\s+((?:thunk_)?FUN_\w+)\s*\(')
+FUNREF_CAST = re.compile(
+    r'\(\(\s*[^(]*\(\*\)\s*\([^()]*\)\s*\)\s*&?((?:thunk_)?FUN_\w+)\)')
+
+
+def sync_funref_casts(source):
+    """Match `((R(*)(P))FUN_x)` casts to `__stdcall` decls.
+
+    cpp_source emits the cast with the cdecl spelling, then
+    ``reference_stdcall`` upgrades the decl — the cast must gain the same
+    convention or overload resolution finds no exact candidate.
+    """
+    names = set(STDCALL_DECL.findall(source))
+    if not names:
+        return source, 0
+    changed = 0
+
+    def replace(match):
+        nonlocal changed
+        if match.group(1) in names:
+            changed += 1
+            return match.group(0).replace('(*)', '(__stdcall*)', 1)
+        return match.group(0)
+
+    return FUNREF_CAST.sub(replace, source), changed
+
+
 def main():
-    total_stdcall = total_arity = total_decls = total_thiscall = total_narrow = files = 0
+    total_stdcall = total_arity = total_decls = total_thiscall = total_narrow = total_casts = files = 0
     for path in sorted((ROOT / 'src/generated').rglob('*.cpp')):
         source = path.read_text()
         source, n_thiscall = lower_free_thiscall(source)
@@ -202,7 +237,9 @@ def main():
         source, n_arity = reference_arity(source)
         source, n_narrow = reference_narrow_returns(source)
         source, n_decls = sync_forward_decls(source)
-        if n_stdcall or n_arity or n_decls or n_thiscall or n_narrow:
+        source, n_casts = sync_funref_casts(source)
+        if (n_stdcall or n_arity or n_decls or n_thiscall or n_narrow
+                or n_casts):
             path.write_text(source)
             files += 1
             total_stdcall += n_stdcall
@@ -210,6 +247,7 @@ def main():
             total_decls += n_decls
             total_thiscall += n_thiscall
             total_narrow += n_narrow
+            total_casts += n_casts
     print(f'__stdcall: {total_stdcall}, arity: {total_arity}, '
           f'decls synced: {total_decls}, thiscall->fastcall: {total_thiscall}, '
           f'narrowed returns: {total_narrow}, files changed: {files}')

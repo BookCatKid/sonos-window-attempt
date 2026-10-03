@@ -108,8 +108,10 @@ typedef long long int7;
 typedef unsigned int uintptr_t;
 typedef int intptr_t;
 typedef struct { char _p[10]; } unkuint10;
-#define NAN 0.0f/0.0f
-#define INFINITY 1.0f/0.0f
+static float _fzero;
+static int _izero;
+#define NAN 0.0f/_fzero
+#define INFINITY 1.0f/_fzero
 struct tm { int tm_sec; int tm_min; int tm_hour; int tm_mday; int tm_mon;
   int tm_year; int tm_wday; int tm_yday; int tm_isdst; };
 struct SYSTEMTIME { WORD wYear; WORD wMonth; WORD wDayOfWeek; WORD wDay;
@@ -1038,6 +1040,10 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
     body = re.sub(r'"(?:[^"\\]|\\.)*"|\'(?:[^\'\\]|\\.)*\'',
                   _blank_str, body)
     body = re.sub(r'/\*.*?\*/', '', body, flags=re.S)
+    # Ghidra wraps long RHS operands onto the next line (`x =\n  "..."`);
+    # line-scoped transform passes would see an empty operand and leave an
+    # unclosed cast paren. Join `=`/`+`/`,` line-ends with the next line.
+    body = re.sub(r'([=+,()])\s*\n\s*', r'\1 ', body)
     varmap = _varmap(body, decl_text)
     # Pure declaration lines (`type name;`) hide template <> and commas
     # that compare/cast passes would misread as operators. Blank them for
@@ -1839,7 +1845,14 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         r'\((?:[^()]|\((?:[^()]|\([^()]*\))*\))*\)', _libc_args, body)
     # `()(` — an emptied operand group glued to a cast: `(int *)()(((x)))`.
     body = re.sub(r'\)\s*\(\s*\)\s*(?=\()', ')', body)
-    body = re.sub(r'__DECL(\d+)__;',
+    # MSVC rejects data->function-pointer C casts (C2440) but accepts them
+    # routed through `void *`.
+    body = re.sub(r'\((_purecall_handler|_func_\w+)\)\s*(?!\(void \*\))'
+                  r'&?\s*([A-Za-z_]\w*)',
+                  r'(\1)(void *)\2', body)
+    # Transforms can eat the placeholder `;` (e.g. `__DECLn__, 0;` from
+    # a `, 0` injection); restore up to the next `;` regardless.
+    body = re.sub(r'__DECL(\d+)__[^;\n]*;',
                   lambda m: _decls[int(m.group(1))], body)
     if ret_type and ret_type != 'void':
         body = re.sub(r'\breturn\s+((?:(?!\b(?:goto|return|break|continue|case|default|else|do|switch|if|while|for)\b)[^;{}])*);',
@@ -1933,12 +1946,73 @@ def cpp_source(records, defined, bad_decls=()):
             if ('__thiscall' not in sig
                     and fname.startswith(('FUN_', 'thunk_FUN_'))
                     and ('call', fname) not in externs):
-                prefix = sig[:sig.index(fname)]
-                forward.append(f'extern {prefix}{fname}(...);')
+                # A `(...)` twin makes zero-arg calls ambiguous with
+                # `FUN_x(void)`; a template loses to the typed decl on
+                # exact matches but still accepts wrong-arity callers.
+                forward.append(f'template<class... A> int {fname}(A...);')
         definitions.append(
             f'// Reference entry {record["entry"]}; body size {record["body_bytes"]} bytes.\n'
             f'#line 1 "ENTRY_{record["entry"]}"\n'
             f'{definition}')
+    # ``&FUN_x``/bare ``FUN_x`` references are ambiguous once the typed decl
+    # and the template twin coexist; cast them to the typed signature so
+    # overload resolution has exactly one candidate. `__thiscall` names are
+    # left alone: the post-pass renames the member to `m_FUN_x`, leaving the
+    # free extern as the unique ``FUN_x``.
+    fun_sigs = {}
+    for sig_text in forward:
+        sig_m = re.match(r'(.*?)\b(FUN_\w+|thunk_FUN_\w+)\s*\(([^;]*)\)\s*;',
+                         sig_text.strip())
+        if (sig_m and '__thiscall' not in sig_m.group(1)
+                and sig_m.group(2) not in fun_sigs):
+            fun_sigs[sig_m.group(2)] = (sig_m.group(1).strip(),
+                                        sig_m.group(3).strip())
+
+    def _disambig_funref(match):
+        name = match.group(2)
+        ret, params = fun_sigs[name]
+        amp = match.group(1)
+        return f'(({ret}(*)({params})){amp}{name})'
+
+    if fun_sigs:
+        names = '|'.join(sorted(fun_sigs, key=len, reverse=True))
+        funref = re.compile(
+            r'(?<![\w:.>])([&\*]?)\s*\b(' + names + r')\b(?!\s*\()')
+        definitions = [funref.sub(_disambig_funref, d)
+                       for d in definitions]
+    # `(T)FUN_x(...)` on a void-returning callee is a void->type cast —
+    # clang tolerates it but MSVC errors (C2440); route through a comma so
+    # the cast sees `0` while the call still runs.
+    void_fns = set()
+    for sig_text in forward:
+        sig_m = re.match(r'(.*?)\b((?:thunk_)?FUN_\w+)\s*\([^;]*\)\s*;',
+                         sig_text.strip())
+        if (sig_m and
+                sig_m.group(1).replace('__thiscall', '').strip() == 'void'):
+            void_fns.add(sig_m.group(2))
+    if void_fns:
+        void_call = re.compile(
+            r'\(\s*([A-Za-z_][\w\s\*:&<>]*?)\s*\)\s*\(?\s*'
+            r'((?:thunk_)?FUN_\w+)\s*\(')
+
+        def _voidcall(text):
+            out = []
+            pos = 0
+            for match in void_call.finditer(text):
+                if match.group(2) not in void_fns:
+                    continue
+                paren = text.find('(', match.end() - 1)
+                end = _balanced(text, paren, '(', ')')
+                if end < 0:
+                    continue
+                call = text[match.start(2):end + 1]
+                out.append(text[pos:match.start()])
+                out.append(f'({match.group(1).strip()})(({call}), 0)')
+                pos = end + 1
+            out.append(text[pos:])
+            return ''.join(out)
+
+        definitions = [_voidcall(d) for d in definitions]
     # Gate bisection can drop a callee after callers were transformed under
     # the assumption it would be defined here; give those dangling FUN_
     # references a variadic extern so the part still compiles.
@@ -1959,7 +2033,13 @@ def cpp_source(records, defined, bad_decls=()):
     for kind, name in sorted(externs):
         if kind == 'call':
             dllimport = ' __declspec(dllimport)' if name in IMPORT_SLOTS else ''
-            extern_decls.append(f'extern{dllimport} int {name}(...);')
+            if name in defined_here and not dllimport:
+                # Same-unit typed decl + `(...)` makes every call ambiguous;
+                # a template twin loses on exact matches but still accepts
+                # wrong-arity callers.
+                extern_decls.append(f'template<class... A> int {name}(A...);')
+            else:
+                extern_decls.append(f'extern{dllimport} int {name}(...);')
         elif kind == 'lab':
             extern_decls.append(f'extern undefined1 {name}[];')
         elif kind == 'vptr':
