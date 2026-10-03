@@ -1648,7 +1648,7 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
     body = re.sub(
         r'(' + _CMP + r'|&&|\|\|)\s*((?:-\s*\d+\s*<<?\s*)?)'
         r'\(\s*[A-Za-z_][\w:<>,\s]*?\s*\*+\s*\)\s*'
-        r'(\((?:[^()]|\([^()]*\))*\)|[A-Za-z_]\w*)\s*-\s*',
+        r'(\((?:[^()]|\([^()]*\))*\)|[A-Za-z_]\w*)\s*-(?![=>])\s*',
         lambda m: f'{m.group(1)} {m.group(2)}(int)({m.group(3)}) - ', body)
     # `*(scal)(x)` — dereferencing a scalar cast means the value is a
     # pointer: `*(int)(x)` -> `*(int *)(x)`.
