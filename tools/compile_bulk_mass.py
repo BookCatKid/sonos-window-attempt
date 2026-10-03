@@ -715,7 +715,7 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         pointee = target.rstrip()[:-1].rstrip()
         return f'*{name} = ({pointee})({rhs.strip()});'
 
-    body = re.sub(r'\*\s*([A-Za-z_]\w*)\s*=(?![=])\s*([^;{}]*);', cast_deref, body)
+    body = re.sub(r'\*\s*([A-Za-z_]\w*)\s*=(?![=])\s*((?:(?!\b(?:goto|return|break|continue|case|default|else|do|switch|if|while|for)\b)[^;{}])*);', cast_deref, body)
 
     # `name[idx] = rhs;` element assignments: cast rhs to the element type.
     # Array declarations already store the element type in varmap; indexed
@@ -731,12 +731,12 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
             elem = elem[:-1].rstrip() or 'void'
         return f'{name}[{index}] = ({elem})({rhs.strip()});'
     body = re.sub(
-        r'(?<![=!<>+\-*/%&|^?:])([A-Za-z_]\w*)\s*\[([^\]\[]*)\]\s*=(?![=])\s*([^;{}]*);',
+        r'(?<![=!<>+\-*/%&|^?:])([A-Za-z_]\w*)\s*\[([^\]\[]*)\]\s*=(?![=])\s*((?:(?!\b(?:goto|return|break|continue|case|default|else|do|switch|if|while|for)\b)[^;{}])*);',
         cast_index, body)
     # `x->field = rhs;` / `x.field = rhs;`: stub fields are int, so cast rhs.
     body = re.sub(
         r'((?:\([\w\s:\*&<>\[\]+()]*\)|[A-Za-z_]\w*)\s*(?:->|\.)'
-        r'[A-Za-z_]\w*)\s*=(?![=])\s*([^;{}]*);',
+        r'[A-Za-z_]\w*)\s*=(?![=])\s*((?:(?!\b(?:goto|return|break|continue|case|default|else|do|switch|if|while|for)\b)[^;{}])*);',
         lambda m: m.group(1) + ' = (int)({});'.format(m.group(2).strip()), body)
     # `&(T *)name` takes the address of a cast rvalue; reinterpret the
     # variable's own address instead (same value, legal lvalue).
@@ -756,13 +756,17 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         r'\*\s*([A-Za-z_]\w*)', deref_int, body, flags=re.M)
     # `T *name = rhs;` declaration-initializers (`*` blocks the name regex below)
     body = re.sub(
-        r'^\s*([A-Za-z_][\w:<>]*(?:\s*\*+\s*)+)([A-Za-z_]\w*)\s*=(?![=])\s*([^;{}]*);',
+        r'^\s*([A-Za-z_][\w:<>]*(?:\s*\*+\s*)+)([A-Za-z_]\w*)\s*=(?![=])\s*((?:(?!\b(?:goto|return|break|continue|case|default|else|do|switch|if|while|for)\b)[^;{}])*);',
         lambda m: f'{m.group(1)}{m.group(2)} = '
                   f'({m.group(1).strip()})({m.group(3).strip()});'
                   if not m.group(3).strip().startswith('{') else m.group(0),
         body, flags=re.M)
-    # plain `name = rhs;` assignments (not ==, <=, >=, !=, op=)
-    body = re.sub(r'(?<![=!<>+\-*/%&|^?:])([A-Za-z_]\w*)\s*=(?![=])\s*([^;{}]*);',
+    # plain `name = rhs;` assignments (not ==, <=, >=, !=, op=). The RHS may
+    # be a parenthesised comma expression inside a condition, so stop before
+    # statement keywords rather than swallowing a following goto/return.
+    body = re.sub(r'(?<![=!<>+\-*/%&|^?:])([A-Za-z_]\w*)\s*=(?![=])\s*'
+                  r'((?:(?!\b(?:goto|return|break|continue|case|default|else|'
+                  r'do|switch|if|while|for)\b)[^;{}])*);',
                   cast_rhs, body)
     # comparisons ptrvar ==/!= sym and sym ==/!= ptrvar
     for name, target in varmap.items():
@@ -829,20 +833,26 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         return f'({ctype})({operand}) {op} {expr}'
     body = re.sub(
         r'(\*?\s*' + _CAST_OPERAND + r')\s*(==|!=|<=|>=)\s*'
-        r'(\*?\s*\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)(?:\([^()]*\)|[^,;()])*?)',
+        r'(\*?\s*\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)(?:\([^()]*\)|[^,;()])*)',
         cast_operand_rhs, body)
+    # `(&name) op ...` treats the address as an integer: shifts, masks and
+    # even +/- are byte arithmetic in pcode, not pointer arithmetic.
+    body = re.sub(r'\(\s*&\s*([A-Za-z_]\w*)\s*\)\s*'
+                  r'(?=>>|<<|\||\^|%|\+|-|\*(?!\s*\()|/|&(?!&))',
+                  r'((uint)&\1) ', body)
     # `*(T *)expr = rhs;` dereference-through-cast assignments: the pointee is
     # spelled in the cast, so cast rhs to it. Runs last so earlier RHS wraps
     # cannot retype the assignment.
     body = re.sub(
         r'\*\s*\(\s*([A-Za-z_][\w:\s<>]*?)\s*(\*+)\s*\)\s*'
-        r'([A-Za-z_(][\w.\[\]()+\s>*-]*?)\s*=(?![=])\s*([^;{}]*);',
+        r'([A-Za-z_(][\w.\[\]()+ \s>*-]*?)\s*=(?![=])\s*'
+        r'((?:(?!\b(?:goto|return|break|continue|case|default|else|do|switch|if|while|for)\b)[^;{}])*);',
         lambda m: '*({}{}){} = ({})({});'.format(
             m.group(1), m.group(2), m.group(3),
             (m.group(1) + ' ' + m.group(2)[:-1]).strip() or 'void',
             m.group(4).strip()), body)
     if ret_type and ret_type != 'void':
-        body = re.sub(r'\breturn\s+([^;]+);',
+        body = re.sub(r'\breturn\s+((?:(?!\b(?:goto|return|break|continue|case|default|else|do|switch|if|while|for)\b)[^;{}])*);',
                       lambda m: f'return ({ret_type})({m.group(1).strip()});', body)
     return body
 
@@ -928,7 +938,11 @@ def cpp_source(records, defined, bad_decls=()):
             forward.append(sig + ';')
             # Wrong-arity callers (Ghidra signature guesses) get a variadic
             # overload; the decorated `?FUN_x@@..ZZ` still maps to FUN_x.
-            if '__thiscall' not in sig and fname.startswith(('FUN_', 'thunk_FUN_')):
+            # A `('call', fname)` extern already provides the `(...)` decl, so
+            # skip the twin to avoid a same-signature return-type clash.
+            if ('__thiscall' not in sig
+                    and fname.startswith(('FUN_', 'thunk_FUN_'))
+                    and ('call', fname) not in externs):
                 prefix = sig[:sig.index(fname)]
                 forward.append(f'extern {prefix}{fname}(...);')
         definitions.append(
