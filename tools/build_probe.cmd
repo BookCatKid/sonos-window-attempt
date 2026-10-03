@@ -24,22 +24,7 @@ for %%F in (src\generated\member_abi\*.cpp) do (
   if errorlevel 1 goto failed
 )
 
-if exist out\bulk-jobs rmdir /s /q out\bulk-jobs
-mkdir out\bulk-jobs
-setlocal EnableDelayedExpansion
-set BN=0
-for %%F in (src\generated\bulk\*.cpp) do (
-  set /a BG=BN %% 6, BN+=1
-  echo %%F>> out\bulk-jobs\chunk!BG!.lst
-)
-for %%G in (0 1 2 3 4 5) do (
-  if exist out\bulk-jobs\chunk%%G.lst start /b cmd /c "for /f ""usebackq delims=""" %%F in (out\bulk-jobs\chunk%%G.lst) do (cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c /Foout\%%~nF.obj %%F > out\%%~nF.log 2>&1 || echo %%F>> out\bulk-failures.log) & echo done> out\bulk-jobs\done%%G"
-)
-for %%G in (0 1 2 3 4 5) do if not exist out\bulk-jobs\chunk%%G.lst echo done> out\bulk-jobs\done%%G
-:waitbulk
-timeout /t 5 /nobreak >nul
-for %%G in (0 1 2 3 4 5) do if not exist out\bulk-jobs\done%%G goto waitbulk
-endlocal
+powershell -NoProfile -ExecutionPolicy Bypass -File tools\build_bulk_parallel.ps1
 
 cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\zonegroup_getter.obj src\zonegroup_getter.cpp > out\getter.log 2>&1
 if errorlevel 1 goto failed

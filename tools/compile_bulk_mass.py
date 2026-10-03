@@ -1091,7 +1091,7 @@ def syntax_ok(source, scratch):
     # ``__thiscall`` is invalid on free functions but the post-pass lowers
     # every free thiscall def to a Recovered_Bulk member afterwards; strip it
     # for the probe so those records aren't rejected before the fix lands.
-    scratch.write_text(source.replace('__thiscall ', ''))
+    scratch.write_text(re.sub(r'\b__thiscall\b', '', source))
     result = subprocess.run([str(COMPILER), '/nologo', '/Zs', '/EHsc',
                              '/clang:--target=i686-pc-windows-msvc',
                              '/clang:-ferror-limit=0', os.path.relpath(scratch, ROOT)],
