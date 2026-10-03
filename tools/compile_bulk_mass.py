@@ -86,10 +86,14 @@ typedef long HRESULT;
 typedef wchar_t WCHAR;
 typedef int int3;
 typedef unsigned int uint3;
-typedef struct { char _p[3]; } undefined3;
-typedef struct { char _p[5]; } undefined5;
-typedef struct { char _p[6]; } undefined6;
-typedef struct { char _p[7]; } undefined7;
+typedef struct undefined3 { char _p[3]; undefined3(...);
+  template<class T> operator T*(); template<class T> operator T(); } undefined3;
+typedef struct undefined5 { char _p[5]; undefined5(...);
+  template<class T> operator T*(); template<class T> operator T(); } undefined5;
+typedef struct undefined6 { char _p[6]; undefined6(...);
+  template<class T> operator T*(); template<class T> operator T(); } undefined6;
+typedef struct undefined7 { char _p[7]; undefined7(...);
+  template<class T> operator T*(); template<class T> operator T(); } undefined7;
 using ulonglong = unsigned long long;
 using __time64_t = long long;
 typedef long fpos_t;
@@ -768,26 +772,63 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
                       lambda m: m.group(1) + f'({target})({m.group(2).replace(" ", "")})', body)
         body = re.sub(r'(&?\s*\b[A-Za-z_]\w*)\s*([!=]=)\s*(\b' + re.escape(name) + r'\b)',
                       lambda m: f'({target})({m.group(1).replace(" ", "")}) {m.group(2)} {m.group(3)}', body)
-    # `(T *)expr op name` and `name op (T *)expr`: the pointer side is
-    # explicit; cast the bare operand to the same pointer type.
+    # `(T *)expr op operand` and `operand op (T *)expr`: the pointer side is
+    # explicit; cast the other operand to the same type. When that operand is
+    # itself a ``(U *)x`` cast it is retargeted rather than double-wrapped.
+    _CAST_OPERAND = (r'(?:\(\s*[A-Za-z_][\w:<>\s]*?\s*\*+\s*\)\s*'
+                     r'(?:\([^()]*\)|[A-Za-z_]\w*)|[A-Za-z_]\w*(?:\s*\[[^\]]*\])?)')
     def cast_operand(match):
         expr, ctype, op, operand = (match.group(1), match.group(2),
                                     match.group(3), match.group(4))
         if expr.lstrip().startswith('*') and ctype.rstrip().endswith('*'):
             ctype = ctype.rstrip()[:-1].rstrip() or 'void *'
+        deref = re.fullmatch(
+            r'\*\s*\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)\s*(.*)', operand, re.S)
+        if deref:
+            pointee = deref.group(1).rstrip()[:-1].rstrip() or 'void'
+            inner = re.fullmatch(
+                r'\*\s*\(\s*[A-Za-z_][\w:<>\s]*?\s*\*+\s*\)\s*(.*)', expr, re.S)
+            if inner:
+                return f'({pointee})({inner.group(1)}) {op} {operand}'
+            retarget = re.fullmatch(
+                r'\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)\s*(.*)', expr, re.S)
+            if retarget:
+                return f'({pointee})({retarget.group(2)}) {op} {operand}'
+        retarget = re.fullmatch(
+            r'\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)\s*(.*)', operand, re.S)
+        if retarget:
+            operand = retarget.group(2)
         return f'{expr} {op} ({ctype})({operand})'
     body = re.sub(
         r'(\*?\s*\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)(?:\([^()]*\)|[^,;()])*?)'
-        r'\s*(==|!=|<=|>=)\s*([A-Za-z_]\w*(?:\s*\[[^\]]*\])?)\b',
+        r'\s*(==|!=|<=|>=)\s*(\*?\s*' + _CAST_OPERAND + r')',
         cast_operand, body)
     def cast_operand_rhs(match):
         operand, op, expr, ctype = (match.group(1), match.group(2),
                                     match.group(3), match.group(4))
         if expr.lstrip().startswith('*') and ctype.rstrip().endswith('*'):
             ctype = ctype.rstrip()[:-1].rstrip() or 'void *'
+        # `*(T *)x op (U *)y` compares a pointee against a pointer: retarget
+        # the pointer side's cast to the pointee type instead of wrapping x.
+        deref = re.fullmatch(
+            r'\*\s*\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)\s*(.*)', operand, re.S)
+        if deref:
+            pointee = deref.group(1).rstrip()[:-1].rstrip() or 'void'
+            inner = re.fullmatch(
+                r'\*\s*\(\s*[A-Za-z_][\w:<>\s]*?\s*\*+\s*\)\s*(.*)', expr, re.S)
+            if inner:
+                return f'{operand} {op} ({pointee})({inner.group(1)})'
+            retarget = re.fullmatch(
+                r'\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)\s*(.*)', expr, re.S)
+            if retarget:
+                return f'{operand} {op} ({pointee})({retarget.group(2)})'
+        retarget = re.fullmatch(
+            r'\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)\s*(.*)', operand, re.S)
+        if retarget:
+            operand = retarget.group(2)
         return f'({ctype})({operand}) {op} {expr}'
     body = re.sub(
-        r'([A-Za-z_]\w*(?:\s*\[[^\]]*\])?)\s*(==|!=|<=|>=)\s*'
+        r'(\*?\s*' + _CAST_OPERAND + r')\s*(==|!=|<=|>=)\s*'
         r'(\*?\s*\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)(?:\([^()]*\)|[^,;()])*?)',
         cast_operand_rhs, body)
     # `*(T *)expr = rhs;` dereference-through-cast assignments: the pointee is
