@@ -433,8 +433,8 @@ typedef void *_IMAGE_SECTION_HEADER;
 typedef void (*_func_void_void_ptr)(...);
 typedef void (*_func_void_void_ptr_void_ptr)(...);
 using namespace std;
-struct Recovered_Bulk { char _pad; void __thiscall FUN_1142341e(int param_2,undefined4 param_3); template<class... A> int FUN_1142341e(A...); int __thiscall FUN_11430720(undefined4 param_2,undefined4 param_3,undefined4 param_4,
-            undefined4 param_5,int param_6,uint param_7,uint *param_8,int param_9); template<class... A> int FUN_11430720(A...); int __thiscall FUN_1143d4c0(int param_2,int param_3,int param_4,byte param_5,byte param_6); template<class... A> int FUN_1143d4c0(A...); undefined4 __thiscall FUN_11455610(undefined4 param_2,uint param_3); template<class... A> int FUN_11455610(A...); void __thiscall FUN_11456040(int param_2); template<class... A> int FUN_11456040(A...); uint __thiscall FUN_11457080(byte *param_2); template<class... A> int FUN_11457080(A...); /* WARNING: Removing unreachable block (ram,0x11458412) */ void __thiscall FUN_114583d0(undefined4 param_2); template<class... A> int FUN_114583d0(A...); undefined4 * __thiscall FUN_11458eb0(char *param_2,undefined4 param_3); template<class... A> int FUN_11458eb0(A...); undefined4 * __thiscall FUN_11459330(byte param_2); template<class... A> int FUN_11459330(A...); void __thiscall FUN_114595f0(undefined4 param_2,long *param_3); template<class... A> int FUN_114595f0(A...); undefined2 __thiscall FUN_11459670(undefined4 param_2,undefined4 param_3,undefined4 param_4); template<class... A> int FUN_11459670(A...); void __thiscall FUN_11459710(byte *param_2,undefined4 param_3); template<class... A> int FUN_11459710(A...); void __thiscall FUN_11459780(undefined4 param_2,char *param_3); template<class... A> int FUN_11459780(A...); void __thiscall FUN_11459910(byte *param_2,char *param_3); template<class... A> int FUN_11459910(A...); undefined1 __thiscall FUN_11459ad0(int param_2,uint param_3,char param_4); template<class... A> int FUN_11459ad0(A...); uint __thiscall FUN_11459e70(byte *param_2); template<class... A> int FUN_11459e70(A...); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11459f10(int *param_2); template<class... A> int FUN_11459f10(A...); undefined2 __thiscall FUN_1145a310(int param_2,undefined4 *param_3,uint param_4); template<class... A> int FUN_1145a310(A...); undefined4 __thiscall FUN_1145a760(char *param_2,char *param_3); template<class... A> int FUN_1145a760(A...); bool __thiscall FUN_1145a8d0(int param_2); template<class... A> int FUN_1145a8d0(A...); uint __thiscall FUN_1145a960(char *param_2); template<class... A> int FUN_1145a960(A...); /* WARNING: Removing unreachable block_1145aa40 (ram,0x1145aad1) */ uint __thiscall FUN_1145aa40(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1145aa40(A...); uint __thiscall FUN_1145e1b0(int param_2,char param_3); template<class... A> int FUN_1145e1b0(A...); void __thiscall FUN_1147fe30(int param_2,int param_3); template<class... A> int FUN_1147fe30(A...); };
+struct Recovered_Bulk { char _pad; void __thiscall m_FUN_1142341e(int param_2,undefined4 param_3); template<class... A> int m_FUN_1142341e(A...); int __thiscall m_FUN_11430720(undefined4 param_2,undefined4 param_3,undefined4 param_4,
+            undefined4 param_5,int param_6,uint param_7,uint *param_8,int param_9); template<class... A> int m_FUN_11430720(A...); int __thiscall m_FUN_1143d4c0(int param_2,int param_3,int param_4,byte param_5,byte param_6); template<class... A> int m_FUN_1143d4c0(A...); undefined4 __thiscall m_FUN_11455610(undefined4 param_2,uint param_3); template<class... A> int m_FUN_11455610(A...); void __thiscall m_FUN_11456040(int param_2); template<class... A> int m_FUN_11456040(A...); uint __thiscall m_FUN_11457080(byte *param_2); template<class... A> int m_FUN_11457080(A...); /* WARNING: Removing unreachable block (ram,0x11458412) */ void __thiscall m_FUN_114583d0(undefined4 param_2); template<class... A> int m_FUN_114583d0(A...); undefined4 * __thiscall m_FUN_11458eb0(char *param_2,undefined4 param_3); template<class... A> int m_FUN_11458eb0(A...); undefined4 * __thiscall m_FUN_11459330(byte param_2); template<class... A> int m_FUN_11459330(A...); void __thiscall m_FUN_114595f0(undefined4 param_2,long *param_3); template<class... A> int m_FUN_114595f0(A...); undefined2 __thiscall m_FUN_11459670(undefined4 param_2,undefined4 param_3,undefined4 param_4); template<class... A> int m_FUN_11459670(A...); void __thiscall m_FUN_11459710(byte *param_2,undefined4 param_3); template<class... A> int m_FUN_11459710(A...); void __thiscall m_FUN_11459780(undefined4 param_2,char *param_3); template<class... A> int m_FUN_11459780(A...); void __thiscall m_FUN_11459910(byte *param_2,char *param_3); template<class... A> int m_FUN_11459910(A...); undefined1 __thiscall m_FUN_11459ad0(int param_2,uint param_3,char param_4); template<class... A> int m_FUN_11459ad0(A...); uint __thiscall m_FUN_11459e70(byte *param_2); template<class... A> int m_FUN_11459e70(A...); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall m_FUN_11459f10(int *param_2); template<class... A> int m_FUN_11459f10(A...); undefined2 __thiscall m_FUN_1145a310(int param_2,undefined4 *param_3,uint param_4); template<class... A> int m_FUN_1145a310(A...); undefined4 __thiscall m_FUN_1145a760(char *param_2,char *param_3); template<class... A> int m_FUN_1145a760(A...); bool __thiscall m_FUN_1145a8d0(int param_2); template<class... A> int m_FUN_1145a8d0(A...); uint __thiscall m_FUN_1145a960(char *param_2); template<class... A> int m_FUN_1145a960(A...); /* WARNING: Removing unreachable block_1145aa40 (ram,0x1145aad1) */ uint __thiscall m_FUN_1145aa40(undefined4 param_2,undefined4 param_3); template<class... A> int m_FUN_1145aa40(A...); uint __thiscall m_FUN_1145e1b0(int param_2,char param_3); template<class... A> int m_FUN_1145e1b0(A...); void __thiscall m_FUN_1147fe30(int param_2,int param_3); template<class... A> int m_FUN_1147fe30(A...); };
 
 extern __declspec(dllimport) int EnterCriticalSection(...);
 extern int FUN_1005ef7a(...);
@@ -16543,7 +16543,7 @@ void FUN_11423200(int param_1,int param_2,uint *param_3,uint param_4)
 // Reference entry 1142341e; body size 175 bytes.
 #line 1 "ENTRY_1142341e"
 
-void __thiscall Recovered_Bulk::FUN_1142341e(int param_2,undefined4 param_3)
+void __thiscall Recovered_Bulk::m_FUN_1142341e(int param_2,undefined4 param_3)
 {
   int param_1 = (int )this;
  try {
@@ -22794,7 +22794,7 @@ FUN_114305f0(undefined4 param_1,undefined4 param_2,void *param_3,void *param_4,v
     param_4 = (void *)(param_5);
     _Size = (size_t)(param_6);
   }
-  uVar2 = (undefined4)(((Recovered_Bulk*)(param_1))->FUN_11430720(param_2,_Dst,sVar1,_Src,param_6,param_7,1), 0);
+  uVar2 = (undefined4)(((Recovered_Bulk*)(param_1))->m_FUN_11430720(param_2,_Dst,sVar1,_Src,param_6,param_7,1), 0);
   thunk_FUN_11423f00(_Dst,local_4);
   if ((void *)(_Src) == (void *)(0x0)) {
     return (undefined4)(uVar2);
@@ -22814,7 +22814,7 @@ LAB_114306c8:
 // Reference entry 11430720; body size 238 bytes.
 #line 1 "ENTRY_11430720"
 
-int __thiscall Recovered_Bulk::FUN_11430720(undefined4 param_2,undefined4 param_3,undefined4 param_4,
+int __thiscall Recovered_Bulk::m_FUN_11430720(undefined4 param_2,undefined4 param_3,undefined4 param_4,
             undefined4 param_5,int param_6,uint param_7,uint *param_8,int param_9)
 {
   uint3 param_1 = (uint3 )this;
@@ -23198,7 +23198,7 @@ void FUN_11431020(undefined4 param_1,undefined4 param_2,void *param_3,size_t par
     memcpy(_Dst,local_4c,param_4);
     sVar3 = (size_t)(param_4);
   }
-  iVar1 = (int)(((Recovered_Bulk*)(param_1))->FUN_11430720(param_2,_Dst,param_4,(uint)&local_44,0x40,&local_58,0), 0);
+  iVar1 = (int)(((Recovered_Bulk*)(param_1))->m_FUN_11430720(param_2,_Dst,param_4,(uint)&local_44,0x40,&local_58,0), 0);
   if (((iVar1 == 0) && (param_6 == local_58)) &&
      (iVar1 = (int)(thunk_FUN_11429880(local_48,param_6,&local_54), 0), uVar2 = (undefined4)(local_54), iVar1 == 0)) {
     thunk_FUN_114351b0(local_54,(uint)&local_44,local_58);
@@ -27779,7 +27779,7 @@ void FUN_1143b320(undefined4 param_1,undefined4 param_2,undefined4 param_3,undef
     puVar1 = (undefined1 *)(puVar1 + 8);
     iVar2 = (int)(iVar2 + -1);
   } while (iVar2 != 0);
-  iVar2 = (int)(((Recovered_Bulk*)(param_1))->FUN_1143d4c0(param_2,local_48,param_4,*(undefined1 *)(param_5 + param_6)), 0);
+  iVar2 = (int)(((Recovered_Bulk*)(param_1))->m_FUN_1143d4c0(param_2,local_48,param_4,*(undefined1 *)(param_5 + param_6)), 0);
   if (iVar2 == 0) {
     if (local_44 != 0) {
       iVar2 = (int)(FUN_1143cd50(param_1,param_2,local_44,local_40), 0);
@@ -27790,7 +27790,7 @@ void FUN_1143b320(undefined4 param_1,undefined4 param_2,undefined4 param_3,undef
         param_6 = (int)(param_6 + -1);
         iVar2 = (int)(FUN_1143a3a0(param_1,param_2,param_2,(uint)&local_24), 0);
         if (iVar2 != 0) break;
-        iVar2 = (int)(((Recovered_Bulk*)(param_1))->FUN_1143d4c0((uint)&local_3c,local_48,param_4,*(undefined1 *)(param_6 + param_5)), 0);
+        iVar2 = (int)(((Recovered_Bulk*)(param_1))->m_FUN_1143d4c0((uint)&local_3c,local_48,param_4,*(undefined1 *)(param_6 + param_5)), 0);
         if (iVar2 != 0) break;
         iVar2 = (int)(FUN_11439590(param_1,param_2,param_2,(uint)&local_3c,(uint)&local_24), 0);
         if ((iVar2 != 0) || (param_6 == 0)) break;
@@ -28674,7 +28674,7 @@ int FUN_1143d430(int param_1,int param_2,byte param_3)
 // Reference entry 1143d4c0; body size 247 bytes.
 #line 1 "ENTRY_1143d4c0"
 
-int __thiscall Recovered_Bulk::FUN_1143d4c0(int param_2,int param_3,int param_4,byte param_5,byte param_6)
+int __thiscall Recovered_Bulk::m_FUN_1143d4c0(int param_2,int param_3,int param_4,byte param_5,byte param_6)
 {
   undefined4 param_1 = (undefined4 )this;
   int iVar1;
@@ -39830,7 +39830,7 @@ void FUN_11455360(undefined4 param_1,int param_2,undefined4 param_3)
 // Reference entry 11455610; body size 77 bytes.
 #line 1 "ENTRY_11455610"
 
-undefined4 __thiscall Recovered_Bulk::FUN_11455610(undefined4 param_2,uint param_3)
+undefined4 __thiscall Recovered_Bulk::m_FUN_11455610(undefined4 param_2,uint param_3)
 {
   int param_1 = (int )this;
   uint uVar1;
@@ -39908,7 +39908,7 @@ undefined4 * __fastcall FUN_11455ea0(undefined4 *param_1)
 // Reference entry 11456040; body size 256 bytes.
 #line 1 "ENTRY_11456040"
 
-void __thiscall Recovered_Bulk::FUN_11456040(int param_2)
+void __thiscall Recovered_Bulk::m_FUN_11456040(int param_2)
 {
   int param_1 = (int )this;
   undefined4 uVar1;
@@ -40398,7 +40398,7 @@ void FUN_11456cb0(char *param_1)
 // Reference entry 11457080; body size 343 bytes.
 #line 1 "ENTRY_11457080"
 
-uint __thiscall Recovered_Bulk::FUN_11457080(byte *param_2)
+uint __thiscall Recovered_Bulk::m_FUN_11457080(byte *param_2)
 {
   int param_1 = (int )this;
   byte bVar1;
@@ -40621,7 +40621,7 @@ undefined4 FUN_11458220(int param_1)
 /* WARNING: Removing unreachable block_114583d0 (ram,0x114583ff) */
 /* WARNING: Removing unreachable block (ram,0x11458406) */
 /* WARNING: Removing unreachable block (ram,0x11458408) */
-/* WARNING: Removing unreachable block (ram,0x11458412) */ void __thiscall Recovered_Bulk::FUN_114583d0(undefined4 param_2)
+/* WARNING: Removing unreachable block (ram,0x11458412) */ void __thiscall Recovered_Bulk::m_FUN_114583d0(undefined4 param_2)
 {
   int param_1 = (int )this;
   thunk_FUN_1145a960(param_2);
@@ -40687,7 +40687,7 @@ undefined4 __fastcall FUN_11458780(int *param_1)
 // Reference entry 11458eb0; body size 184 bytes.
 #line 1 "ENTRY_11458eb0"
 
-undefined4 * __thiscall Recovered_Bulk::FUN_11458eb0(char *param_2,undefined4 param_3)
+undefined4 * __thiscall Recovered_Bulk::m_FUN_11458eb0(char *param_2,undefined4 param_3)
 {
   undefined4 *param_1 = (undefined4 *)this;
  try {
@@ -40757,7 +40757,7 @@ void __fastcall FUN_114591e0(undefined4 *param_1)
 // Reference entry 11459330; body size 100 bytes.
 #line 1 "ENTRY_11459330"
 
-undefined4 * __thiscall Recovered_Bulk::FUN_11459330(byte param_2)
+undefined4 * __thiscall Recovered_Bulk::m_FUN_11459330(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_sonos_SettingsFileUpdater);
@@ -40782,7 +40782,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11459330(byte param_2)
 // Reference entry 114595f0; body size 102 bytes.
 #line 1 "ENTRY_114595f0"
 
-void __thiscall Recovered_Bulk::FUN_114595f0(undefined4 param_2,long *param_3)
+void __thiscall Recovered_Bulk::m_FUN_114595f0(undefined4 param_2,long *param_3)
 {
   int param_1 = (int )this;
  try {
@@ -40810,7 +40810,7 @@ void __thiscall Recovered_Bulk::FUN_114595f0(undefined4 param_2,long *param_3)
 // Reference entry 11459670; body size 118 bytes.
 #line 1 "ENTRY_11459670"
 
-undefined2 __thiscall Recovered_Bulk::FUN_11459670(undefined4 param_2,undefined4 param_3,undefined4 param_4)
+undefined2 __thiscall Recovered_Bulk::m_FUN_11459670(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
   int *param_1 = (int *)this;
   int iVar1;
@@ -40846,7 +40846,7 @@ undefined2 __thiscall Recovered_Bulk::FUN_11459670(undefined4 param_2,undefined4
 // Reference entry 11459710; body size 84 bytes.
 #line 1 "ENTRY_11459710"
 
-void __thiscall Recovered_Bulk::FUN_11459710(byte *param_2,undefined4 param_3)
+void __thiscall Recovered_Bulk::m_FUN_11459710(byte *param_2,undefined4 param_3)
 {
   int param_1 = (int )this;
   byte bVar1;
@@ -40883,7 +40883,7 @@ LAB_11459745:
 // Reference entry 11459780; body size 315 bytes.
 #line 1 "ENTRY_11459780"
 
-void __thiscall Recovered_Bulk::FUN_11459780(undefined4 param_2,char *param_3)
+void __thiscall Recovered_Bulk::m_FUN_11459780(undefined4 param_2,char *param_3)
 {
   int *param_1 = (int *)this;
   char cVar1;
@@ -40971,7 +40971,7 @@ LAB_1145989d:
 // Reference entry 11459910; body size 351 bytes.
 #line 1 "ENTRY_11459910"
 
-void __thiscall Recovered_Bulk::FUN_11459910(byte *param_2,char *param_3)
+void __thiscall Recovered_Bulk::m_FUN_11459910(byte *param_2,char *param_3)
 {
   int param_1 = (int )this;
   char *pcVar1;
@@ -41066,7 +41066,7 @@ LAB_11459a62:
 // Reference entry 11459ad0; body size 737 bytes.
 #line 1 "ENTRY_11459ad0"
 
-undefined1 __thiscall Recovered_Bulk::FUN_11459ad0(int param_2,uint param_3,char param_4)
+undefined1 __thiscall Recovered_Bulk::m_FUN_11459ad0(int param_2,uint param_3,char param_4)
 {
   int *param_1 = (int *)this;
  try {
@@ -41236,7 +41236,7 @@ LAB_11459d43:
 // Reference entry 11459e70; body size 124 bytes.
 #line 1 "ENTRY_11459e70"
 
-uint __thiscall Recovered_Bulk::FUN_11459e70(byte *param_2)
+uint __thiscall Recovered_Bulk::m_FUN_11459e70(byte *param_2)
 {
   int param_1 = (int )this;
   byte bVar1;
@@ -41296,7 +41296,7 @@ LAB_11459eb9:
 // Reference entry 11459f10; body size 659 bytes.
 #line 1 "ENTRY_11459f10"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11459f10(int *param_2)
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::m_FUN_11459f10(int *param_2)
 {
   int *param_1 = (int *)this;
   char cVar1;
@@ -41432,7 +41432,7 @@ LAB_1145a0a0:
 // Reference entry 1145a310; body size 844 bytes.
 #line 1 "ENTRY_1145a310"
 
-undefined2 __thiscall Recovered_Bulk::FUN_1145a310(int param_2,undefined4 *param_3,uint param_4)
+undefined2 __thiscall Recovered_Bulk::m_FUN_1145a310(int param_2,undefined4 *param_3,uint param_4)
 {
   int *param_1 = (int *)this;
  try {
@@ -41628,7 +41628,7 @@ LAB_1145a5d5:
 // Reference entry 1145a760; body size 147 bytes.
 #line 1 "ENTRY_1145a760"
 
-undefined4 __thiscall Recovered_Bulk::FUN_1145a760(char *param_2,char *param_3)
+undefined4 __thiscall Recovered_Bulk::m_FUN_1145a760(char *param_2,char *param_3)
 {
   int param_1 = (int )this;
   char *pcVar1;
@@ -41663,7 +41663,7 @@ undefined4 __thiscall Recovered_Bulk::FUN_1145a760(char *param_2,char *param_3)
 // Reference entry 1145a8d0; body size 111 bytes.
 #line 1 "ENTRY_1145a8d0"
 
-bool __thiscall Recovered_Bulk::FUN_1145a8d0(int param_2)
+bool __thiscall Recovered_Bulk::m_FUN_1145a8d0(int param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   int iVar1;
@@ -41692,7 +41692,7 @@ bool __thiscall Recovered_Bulk::FUN_1145a8d0(int param_2)
 // Reference entry 1145a960; body size 170 bytes.
 #line 1 "ENTRY_1145a960"
 
-uint __thiscall Recovered_Bulk::FUN_1145a960(char *param_2)
+uint __thiscall Recovered_Bulk::m_FUN_1145a960(char *param_2)
 {
   byte *param_1 = (byte *)this;
   uint uVar1;
@@ -41722,7 +41722,7 @@ uint __thiscall Recovered_Bulk::FUN_1145a960(char *param_2)
 // Reference entry 1145aa40; body size 183 bytes.
 #line 1 "ENTRY_1145aa40"
 
-/* WARNING: Removing unreachable block_1145aa40 (ram,0x1145aad1) */ uint __thiscall Recovered_Bulk::FUN_1145aa40(undefined4 param_2,undefined4 param_3)
+/* WARNING: Removing unreachable block_1145aa40 (ram,0x1145aad1) */ uint __thiscall Recovered_Bulk::m_FUN_1145aa40(undefined4 param_2,undefined4 param_3)
 {
   undefined4 *param_1 = (undefined4 *)this;
   uint uVar1;
@@ -42847,8 +42847,8 @@ int FUN_1145e080(undefined1 *param_1,byte *param_2,int param_3)
   int iVar3;
   
   iVar3 = (int)(0);
-  bVar1 = (byte)(((Recovered_Bulk*)(param_1))->FUN_1145e1b0(param_1[1]), 0);
-  cVar2 = (char)(((Recovered_Bulk*)(param_1))->FUN_1145e1b0(*param_1), 0);
+  bVar1 = (byte)(((Recovered_Bulk*)(param_1))->m_FUN_1145e1b0(param_1[1]), 0);
+  cVar2 = (char)(((Recovered_Bulk*)(param_1))->m_FUN_1145e1b0(*param_1), 0);
   if ((byte *)(param_2) == (byte *)(0x0)) {
 LAB_1145e0c4:
     iVar3 = (int)(1);
@@ -42862,8 +42862,8 @@ LAB_1145e0c4:
     param_1[8] = (undefined1)(0);
   }
   if (param_1[2] != '=') {
-    bVar1 = (byte)(((Recovered_Bulk*)(param_1))->FUN_1145e1b0(param_1[2]), 0);
-    cVar2 = (char)(((Recovered_Bulk*)(param_1))->FUN_1145e1b0(param_1[1]), 0);
+    bVar1 = (byte)(((Recovered_Bulk*)(param_1))->m_FUN_1145e1b0(param_1[2]), 0);
+    cVar2 = (char)(((Recovered_Bulk*)(param_1))->m_FUN_1145e1b0(param_1[1]), 0);
     if ((byte *)(param_2) == (byte *)(0x0)) {
       iVar3 = (int)(iVar3 + 1);
     }
@@ -42877,8 +42877,8 @@ LAB_1145e0c4:
     }
   }
   if (param_1[3] != '=') {
-    cVar2 = (char)(((Recovered_Bulk*)(param_1))->FUN_1145e1b0(param_1[2]), 0);
-    bVar1 = (byte)(((Recovered_Bulk*)(param_1))->FUN_1145e1b0(param_1[3]), 0);
+    cVar2 = (char)(((Recovered_Bulk*)(param_1))->m_FUN_1145e1b0(param_1[2]), 0);
+    bVar1 = (byte)(((Recovered_Bulk*)(param_1))->m_FUN_1145e1b0(param_1[3]), 0);
     if ((byte *)(param_2) != (byte *)(0x0)) {
       if (param_3 == 0) {
         param_1[8] = (undefined1)(0);
@@ -42898,7 +42898,7 @@ LAB_1145e15c:
 // Reference entry 1145e1b0; body size 124 bytes.
 #line 1 "ENTRY_1145e1b0"
 
-uint __thiscall Recovered_Bulk::FUN_1145e1b0(int param_2,char param_3)
+uint __thiscall Recovered_Bulk::m_FUN_1145e1b0(int param_2,char param_3)
 {
   undefined4 param_1 = (undefined4 )this;
   uint in_EAX;
@@ -42969,18 +42969,18 @@ int FUN_1145e290(undefined1 *param_1,char *param_2,int param_3,int param_4,int p
       if (*(int *)(param_1 + 4) == 4) {
         uVar5 = (undefined4)(((uint)((int3)((uint)iVar3 >> 8)) << 8 | (uint)(param_1[1])));
         if (param_4 == 0) {
-          ((Recovered_Bulk*)(param_1))->FUN_1145e1b0(uVar5);
-          ((Recovered_Bulk*)(param_1))->FUN_1145e1b0(*param_1);
+          ((Recovered_Bulk*)(param_1))->m_FUN_1145e1b0(uVar5);
+          ((Recovered_Bulk*)(param_1))->m_FUN_1145e1b0(*param_1);
           iVar3 = (int)(1);
           if (param_1[2] != '=') {
-            ((Recovered_Bulk*)(param_1))->FUN_1145e1b0(param_1[2]);
-            ((Recovered_Bulk*)(param_1))->FUN_1145e1b0(param_1[1]);
+            ((Recovered_Bulk*)(param_1))->m_FUN_1145e1b0(param_1[2]);
+            ((Recovered_Bulk*)(param_1))->m_FUN_1145e1b0(param_1[1]);
             iVar3 = (int)(2);
           }
           local_4 = (int)(iVar6);
           if (param_1[3] != '=') {
-            ((Recovered_Bulk*)(param_1))->FUN_1145e1b0(param_1[2]);
-            ((Recovered_Bulk*)(param_1))->FUN_1145e1b0(param_1[3]);
+            ((Recovered_Bulk*)(param_1))->m_FUN_1145e1b0(param_1[2]);
+            ((Recovered_Bulk*)(param_1))->m_FUN_1145e1b0(param_1[3]);
             iVar3 = (int)(iVar3 + 1);
           }
         }
@@ -42988,8 +42988,8 @@ int FUN_1145e290(undefined1 *param_1,char *param_2,int param_3,int param_4,int p
           pbVar4 = (byte *)((byte *)(param_4 + iVar6));
           iVar6 = (int)(param_5 - iVar6);
           iVar3 = (int)(0);
-          bVar1 = (byte)(((Recovered_Bulk*)(param_1))->FUN_1145e1b0(uVar5), 0);
-          cVar2 = (char)(((Recovered_Bulk*)(param_1))->FUN_1145e1b0(*param_1), 0);
+          bVar1 = (byte)(((Recovered_Bulk*)(param_1))->m_FUN_1145e1b0(uVar5), 0);
+          cVar2 = (char)(((Recovered_Bulk*)(param_1))->m_FUN_1145e1b0(*param_1), 0);
           if ((byte *)(pbVar4) == (byte *)(0x0)) {
 LAB_1145e348:
             iVar3 = (int)(1);
@@ -43003,8 +43003,8 @@ LAB_1145e348:
             param_1[8] = (undefined1)(0);
           }
           if (param_1[2] != '=') {
-            bVar1 = (byte)(((Recovered_Bulk*)(param_1))->FUN_1145e1b0(((uint)((int3)((uint)pbVar4 >> 8)) << 8 | (uint)(param_1[2]))), 0);
-            cVar2 = (char)(((Recovered_Bulk*)(param_1))->FUN_1145e1b0(param_1[1]), 0);
+            bVar1 = (byte)(((Recovered_Bulk*)(param_1))->m_FUN_1145e1b0(((uint)((int3)((uint)pbVar4 >> 8)) << 8 | (uint)(param_1[2]))), 0);
+            cVar2 = (char)(((Recovered_Bulk*)(param_1))->m_FUN_1145e1b0(param_1[1]), 0);
             if ((byte *)(pbVar4) == (byte *)(0x0)) {
               iVar3 = (int)(iVar3 + 1);
             }
@@ -43018,8 +43018,8 @@ LAB_1145e348:
             }
           }
           if (param_1[3] != '=') {
-            cVar2 = (char)(((Recovered_Bulk*)(param_1))->FUN_1145e1b0(param_1[2]), 0);
-            bVar1 = (byte)(((Recovered_Bulk*)(param_1))->FUN_1145e1b0(param_1[3]), 0);
+            cVar2 = (char)(((Recovered_Bulk*)(param_1))->m_FUN_1145e1b0(param_1[2]), 0);
+            bVar1 = (byte)(((Recovered_Bulk*)(param_1))->m_FUN_1145e1b0(param_1[3]), 0);
             if ((byte *)(pbVar4) != (byte *)(0x0)) {
               if (iVar6 == 0) {
                 param_1[8] = (undefined1)(0);
@@ -58713,7 +58713,7 @@ LAB_1147fc68:
 // Reference entry 1147fe30; body size 144 bytes.
 #line 1 "ENTRY_1147fe30"
 
-void __thiscall Recovered_Bulk::FUN_1147fe30(int param_2,int param_3)
+void __thiscall Recovered_Bulk::m_FUN_1147fe30(int param_2,int param_3)
 {
   undefined4 param_1 = (undefined4 )this;
   undefined4 uVar1;

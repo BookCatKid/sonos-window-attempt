@@ -301,7 +301,7 @@ typedef void *Z;
 typedef void *_ROWID_;
 typedef void (*_func_4879)(...);
 using namespace std;
-struct Recovered_Bulk { char _pad; int * __thiscall FUN_11316ba0(undefined4 *param_2,int *param_3,int *param_4,int param_5); template<class... A> int FUN_11316ba0(A...); uint __thiscall FUN_1131dd60(byte *param_2,int param_3,byte param_4); template<class... A> int FUN_1131dd60(A...); undefined8 __thiscall FUN_113973c0(uint param_2,int param_3); template<class... A> int FUN_113973c0(A...); int __thiscall FUN_1139c620(int param_2); template<class... A> int FUN_1139c620(A...); };
+struct Recovered_Bulk { char _pad; int * __thiscall m_FUN_11316ba0(undefined4 *param_2,int *param_3,int *param_4,int param_5); template<class... A> int m_FUN_11316ba0(A...); uint __thiscall m_FUN_1131dd60(byte *param_2,int param_3,byte param_4); template<class... A> int m_FUN_1131dd60(A...); undefined8 __thiscall m_FUN_113973c0(uint param_2,int param_3); template<class... A> int m_FUN_113973c0(A...); int __thiscall m_FUN_1139c620(int param_2); template<class... A> int m_FUN_1139c620(A...); };
 
 extern __declspec(dllimport) int CloseHandle(...);
 extern int FUN_1005ef7a(...);
@@ -8668,7 +8668,7 @@ LAB_112fbc21:
       if (local_50 != 0) {
         uVar6 = (undefined4)(FUN_113119f0(local_50), 0);
         iVar11 = (int)(FUN_1139ebf0(uVar6,&DAT_119fe9d8), 0);
-        if ((iVar11 != 0) && (cVar3 = (char)(((Recovered_Bulk*)(iVar11))->FUN_1131dd60(1,1), 0), cVar3 == '\0')) goto LAB_112fc093;
+        if ((iVar11 != 0) && (cVar3 = (char)(((Recovered_Bulk*)(iVar11))->m_FUN_1131dd60(1,1), 0), cVar3 == '\0')) goto LAB_112fc093;
       }
       *(byte*)(puVar2 + 4) = (byte)(*(byte *)(puVar2 + 4) | 0x10);
 LAB_112fc093:
@@ -11469,7 +11469,7 @@ LAB_11302c94:
           }
           else {
             if (*(int *)(iVar1 + 0x60) != 0) {
-              iVar4 = (int)(((Recovered_Bulk*)(iVar11))->FUN_1139c620(), 0);
+              iVar4 = (int)(((Recovered_Bulk*)(iVar11))->m_FUN_1139c620(), 0);
               goto LAB_11302c94;
             }
             iVar4 = (int)(0);
@@ -11574,7 +11574,7 @@ LAB_113030b7:
                 if (iVar4 != 0) break;
               }
               else if (*(int *)(iVar11 + 0x60) != 0) {
-                iVar4 = (int)(((Recovered_Bulk*)(iVar6))->FUN_1139c620(), 0);
+                iVar4 = (int)(((Recovered_Bulk*)(iVar6))->m_FUN_1139c620(), 0);
                 goto LAB_113030b7;
               }
               uVar13 = (uint)(uVar9 - 1);
@@ -11619,7 +11619,7 @@ LAB_11303174:
                   iVar4 = (int)(0);
                 }
                 else {
-                  iVar4 = (int)(((Recovered_Bulk*)(iVar6))->FUN_1139c620(), 0);
+                  iVar4 = (int)(((Recovered_Bulk*)(iVar6))->m_FUN_1139c620(), 0);
 LAB_1130316b:
                   if (iVar4 != 0) goto LAB_11303174;
                 }
@@ -11649,7 +11649,7 @@ LAB_11302d5a:
             }
             else {
               if (*(int *)(iVar1 + 0x60) != 0) {
-                iVar4 = (int)(((Recovered_Bulk*)(iVar11))->FUN_1139c620(), 0);
+                iVar4 = (int)(((Recovered_Bulk*)(iVar11))->m_FUN_1139c620(), 0);
                 goto LAB_11302d5a;
               }
               iVar4 = (int)(0);
@@ -11681,7 +11681,7 @@ LAB_11302d5a:
                     **(undefined4**)(local_28 + 0x38) = (undefined4)(**(undefined4 **)(iVar6 + 0x38), 0);
                     goto LAB_11303198;
                   }
-                  iVar4 = (int)(((Recovered_Bulk*)(iVar11))->FUN_1139c620(), 0);
+                  iVar4 = (int)(((Recovered_Bulk*)(iVar11))->m_FUN_1139c620(), 0);
                 }
                 if (iVar4 != 0) break;
                 local_24 = (int)(0);
@@ -11724,7 +11724,7 @@ LAB_113031bc:
                 iVar4 = (int)(0);
               }
               else {
-                iVar4 = (int)(((Recovered_Bulk*)(iVar11))->FUN_1139c620(), 0);
+                iVar4 = (int)(((Recovered_Bulk*)(iVar11))->m_FUN_1139c620(), 0);
 LAB_11302e9b:
                 if (iVar4 != 0) goto LAB_113031bc;
               }
@@ -11761,7 +11761,7 @@ LAB_11302e9b:
                     local_24 = (int)(0);
                     goto LAB_11303198;
                   }
-                  iVar4 = (int)(((Recovered_Bulk*)(iVar6))->FUN_1139c620(), 0);
+                  iVar4 = (int)(((Recovered_Bulk*)(iVar6))->m_FUN_1139c620(), 0);
                 }
                 if (iVar4 != 0) break;
                 **(uint**)(iVar14 + 0x38) = (uint)(uVar13);
@@ -13264,7 +13264,7 @@ int FUN_11305980(int param_1,size_t param_2,int param_3,int param_4)
               iVar9 = (int)(0);
             }
             else {
-              iVar9 = (int)(((Recovered_Bulk*)(param_2))->FUN_1139c620(), 0);
+              iVar9 = (int)(((Recovered_Bulk*)(param_2))->m_FUN_1139c620(), 0);
 LAB_11305b23:
               if (iVar9 != 0) goto LAB_11305b8d;
             }
@@ -13380,7 +13380,7 @@ LAB_11306223:
     if (iVar4 != 0) goto LAB_1130629a;
   }
   else if (*(int *)(iVar7 + 0x60) != 0) {
-    iVar4 = (int)(((Recovered_Bulk*)(iVar5))->FUN_1139c620(), 0);
+    iVar4 = (int)(((Recovered_Bulk*)(iVar5))->m_FUN_1139c620(), 0);
     goto LAB_11306223;
   }
   local_c = (int)(FUN_11302b00(piVar1,&local_8,&local_10,*(undefined4 *)(iVar3 + 4),0), 0);
@@ -14509,7 +14509,7 @@ LAB_11309be9:
   }
   else {
     if (*(int *)(iVar1 + 0x60) == 0) goto LAB_11309b8c;
-    iVar4 = (int)(((Recovered_Bulk*)(iVar4))->FUN_1139c620(), 0);
+    iVar4 = (int)(((Recovered_Bulk*)(iVar4))->m_FUN_1139c620(), 0);
   }
   if (iVar4 != 0) {
     return (int)(iVar4);
@@ -18547,7 +18547,7 @@ int FUN_11310e70(void *param_1,void *param_2,size_t param_3,int param_4,int para
     }
     else {
       if (*(int *)(iVar1 + 0x60) == 0) goto LAB_11310ec3;
-      iVar1 = (int)(((Recovered_Bulk*)(param_5))->FUN_1139c620(), 0);
+      iVar1 = (int)(((Recovered_Bulk*)(param_5))->m_FUN_1139c620(), 0);
     }
     if (iVar1 == 0) {
 LAB_11310ec3:
@@ -21291,7 +21291,7 @@ undefined2 FUN_11316b30(int param_1)
 // Reference entry 11316ba0; body size 256 bytes.
 #line 1 "ENTRY_11316ba0"
 
-int * __thiscall Recovered_Bulk::FUN_11316ba0(undefined4 *param_2,int *param_3,int *param_4,int param_5)
+int * __thiscall Recovered_Bulk::m_FUN_11316ba0(undefined4 *param_2,int *param_3,int *param_4,int param_5)
 {
   int param_1 = (int )this;
   char *pcVar1;
@@ -24132,7 +24132,7 @@ int * FUN_1131d900(int *param_1,int *param_2,int param_3,int param_4)
 // Reference entry 1131dd60; body size 224 bytes.
 #line 1 "ENTRY_1131dd60"
 
-uint __thiscall Recovered_Bulk::FUN_1131dd60(byte *param_2,int param_3,byte param_4)
+uint __thiscall Recovered_Bulk::m_FUN_1131dd60(byte *param_2,int param_3,byte param_4)
 {
   undefined4 param_1 = (undefined4 )this;
   byte bVar1;
@@ -26989,7 +26989,7 @@ int FUN_11323590(int param_1)
   }
   else {
     if (*(int *)(iVar3 + 0x60) == 0) goto LAB_113235f6;
-    iVar7 = (int)(((Recovered_Bulk*)(iVar7))->FUN_1139c620(), 0);
+    iVar7 = (int)(((Recovered_Bulk*)(iVar7))->m_FUN_1139c620(), 0);
   }
   if (iVar7 != 0) {
     return (int)(iVar7);
@@ -28194,7 +28194,7 @@ undefined4 FUN_11326070(int param_1,int param_2)
     iVar1 = (int)(FUN_113281e0(param_1,param_2), 0);
   }
   else {
-    iVar1 = (int)(((Recovered_Bulk*)(param_2))->FUN_1139c620(), 0);
+    iVar1 = (int)(((Recovered_Bulk*)(param_2))->m_FUN_1139c620(), 0);
     if (iVar1 != 0) goto LAB_113260ff;
     iVar1 = (int)(FUN_11326340(param_1,param_2,0,0), 0);
   }
@@ -29449,7 +29449,7 @@ LAB_113280c2:
   iVar8 = (int)(0);
   *(ushort*)(param_1 + 0x1c) = (ushort)(*(ushort *)(param_1 + 0x1c) | 4);
   if (0 < (int)puVar2[0x18]) {
-    iVar8 = (int)(((Recovered_Bulk*)(param_1))->FUN_1139c620(), 0);
+    iVar8 = (int)(((Recovered_Bulk*)(param_1))->m_FUN_1139c620(), 0);
   }
   if ((uint)(uint)(puVar2[6]) < *(uint *)(param_1 + 0x18)) {
     puVar2[6] = (undefined4)(*(uint *)(param_1 + 0x18));
@@ -40583,7 +40583,7 @@ int FUN_1133dda0(int param_1,int param_2,uint param_3)
   }
   else {
     if (*(int *)(iVar3 + 0x60) == 0) goto LAB_1133de00;
-    iVar4 = (int)(((Recovered_Bulk*)(iVar4))->FUN_1139c620(), 0);
+    iVar4 = (int)(((Recovered_Bulk*)(iVar4))->m_FUN_1139c620(), 0);
   }
   if (iVar4 != 0) {
     return (int)(iVar4);
@@ -55834,14 +55834,14 @@ int FUN_1135b910(int param_1,int param_2,undefined4 param_3,int param_4)
     }
     else {
       if (*(int *)(iVar3 + 0x60) == 0) goto LAB_1135b972;
-      iVar3 = (int)(((Recovered_Bulk*)(param_2))->FUN_1139c620(), 0);
+      iVar3 = (int)(((Recovered_Bulk*)(param_2))->m_FUN_1139c620(), 0);
     }
     if (iVar3 != 0) {
       return (int)(iVar3);
     }
   }
 LAB_1135b972:
-  if (((*(byte *)(iVar4 + 0x1c) & 2) != 0) && (iVar3 = (int)(((Recovered_Bulk*)(iVar4))->FUN_1139c620(), 0), iVar3 != 0)) {
+  if (((*(byte *)(iVar4 + 0x1c) & 2) != 0) && (iVar3 = (int)(((Recovered_Bulk*)(iVar4))->m_FUN_1139c620(), 0), iVar3 != 0)) {
     return (int)(iVar3);
   }
   if (((*(ushort *)(iVar4 + 0x1c) & 8) != 0) && (param_4 == 0)) {
@@ -74745,7 +74745,7 @@ LAB_1138ee90:
         uVar11 = (uint)(0);
       }
       else {
-        uVar11 = (uint)(((Recovered_Bulk*)(iVar7))->FUN_1139c620(), 0);
+        uVar11 = (uint)(((Recovered_Bulk*)(iVar7))->m_FUN_1139c620(), 0);
 LAB_1138ef22:
         lVar5 = (longlong)(((unsigned long long)(iStack_14) << 32 | (unsigned long long)(uStack_30)));
         uStack_2c = (undefined8)(((unsigned long long)(*(uint *)((char *)&uStack_2c + 4)) << 32 | (unsigned long long)((uint)uStack_2c)));
@@ -74822,7 +74822,7 @@ LAB_1138ef22:
                   uVar11 = (uint)(0);
                 }
                 else {
-                  uVar11 = (uint)(((Recovered_Bulk*)(param_1))->FUN_1139c620(), 0);
+                  uVar11 = (uint)(((Recovered_Bulk*)(param_1))->m_FUN_1139c620(), 0);
                 }
                 lVar5 = (longlong)(((unsigned long long)(iStack_14) << 32 | (unsigned long long)(uStack_30)));
                 if ((int *)(param_1) != (int *)(0x0)) {
@@ -76806,7 +76806,7 @@ int FUN_11397320(int param_1,int param_2,undefined4 param_3)
 // Reference entry 113973c0; body size 263 bytes.
 #line 1 "ENTRY_113973c0"
 
-undefined8 __thiscall Recovered_Bulk::FUN_113973c0(uint param_2,int param_3)
+undefined8 __thiscall Recovered_Bulk::m_FUN_113973c0(uint param_2,int param_3)
 {
   undefined4 param_1 = (undefined4 )this;
   int iVar1;
@@ -77926,7 +77926,7 @@ void * FUN_1139c2c0(int *param_1)
 // Reference entry 1139c620; body size 347 bytes.
 #line 1 "ENTRY_1139c620"
 
-int __thiscall Recovered_Bulk::FUN_1139c620(int param_2)
+int __thiscall Recovered_Bulk::m_FUN_1139c620(int param_2)
 {
   uint param_1 = (uint )this;
   undefined4 *puVar1;
@@ -89361,7 +89361,7 @@ LAB_113afe46:
       uVar5 = (undefined4)(FUN_113119f0(*(int *)(param_1 + 0x1c)), 0);
       iVar6 = (int)(FUN_1139ebf0(uVar5,"readonly_shm"), 0);
       if (iVar6 == 0) goto LAB_113afe46;
-      cVar2 = (char)(((Recovered_Bulk*)(iVar6))->FUN_1131dd60(1,0), 0);
+      cVar2 = (char)(((Recovered_Bulk*)(iVar6))->m_FUN_1131dd60(1,0), 0);
       bVar10 = (bool)(cVar2 != '\0');
     }
     uVar5 = (undefined4)(0x80006);

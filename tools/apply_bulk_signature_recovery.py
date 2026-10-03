@@ -108,9 +108,12 @@ def lower_free_thiscall(source):
         pieces = _split_args(params)
         first, rest = pieces[0], ','.join(pieces[1:]).strip()
         decl_params = rest if rest else 'void'
+        # The member gets an ``m_`` name so bare ``FUN_x``/``&FUN_x`` keep
+        # resolving to the free extern decl; overloading them with the
+        # member makes address-taken and call sites ambiguous.
         methods.append(
-            f' {" ".join(result.split())} __thiscall {name}({decl_params});'
-            f' template<class... A> int {name}(A...);')
+            f' {" ".join(result.split())} __thiscall m_{name}({decl_params});'
+            f' template<class... A> int m_{name}(A...);')
         renamed.add(name)
         prologue = ''
         # ``first`` may span lines when the this parameter is a template
@@ -122,7 +125,7 @@ def lower_free_thiscall(source):
             prologue = (f'\n  {ptype}{param.group(2)} = '
                         f'({ptype})this;')
         head = (f'{comment_tail}{" ".join(result.split())} __thiscall '
-                f'Recovered_Bulk::{name}({decl_params})\n{{{prologue}')
+                f'Recovered_Bulk::m_{name}({decl_params})\n{{{prologue}')
         return head
 
     rewritten = THISCALL_DEF.sub(definition, source)
@@ -160,7 +163,7 @@ def lower_free_thiscall(source):
             continue
         first, rest = args[0].strip(), ','.join(args[1:])
         out.append(rewritten[pos:match.start()])
-        out.append(f'((Recovered_Bulk*)({first}))->' + name + '(' + rest + ')')
+        out.append(f'((Recovered_Bulk*)({first}))->m_' + name + '(' + rest + ')')
         pos = scan
     out.append(rewritten[pos:])
     rewritten = ''.join(out)
