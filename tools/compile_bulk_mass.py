@@ -339,10 +339,23 @@ def _rename_definition(source, entry):
         return source[:match_start] + 'FUN_' + entry + source[sig + match.end(1):]
     # Ghidra-named definitions such as `~pair<>` or `foo<bar>` are not valid
     # free-function declarators; rename the token before the parameter list.
+    # Qualified member definitions ``std::X<args>::operator++`` must lose the
+    # whole ``A::B<..>::`` qualifier, not just the leaf, or they become
+    # out-of-class member definitions that need ``template<>``.
     paren = head.find('(', sig)
     if paren < 0:
         return source
-    name = re.search(r'(~?\s*[A-Za-z_]\w*(?:\s*<[^()]*>)?)\s*$', head[:paren])
+    # Template arguments in Ghidra signatures span newlines; collapsing the
+    # head's whitespace makes the qualified-name match below line-safe.
+    head = head[:sig] + ' '.join(head[sig:].split())
+    source = head + source[header_end:]
+    paren = head.find('(', sig)
+    targs = (r'<(?:[^()<>\n]|<(?:[^()<>\n]|<[^()<>\n]*>)*>)*>')
+    name = re.search(
+        r'((?:[A-Za-z_]\w*\s*(?:' + targs + r')?\s*::\s*)+'
+        r'(?:operator[^\s(]*|~?\s*[A-Za-z_]\w*)\s*(?:' + targs + r')?|'
+        r'~?\s*(?:operator[^\s(]*|[A-Za-z_]\w*)(?:\s*' + targs + r')?)\s*$',
+        head[:paren])
     if not name:
         return source
     return source[:name.start(1)] + ' FUN_' + entry + source[paren:]
@@ -387,6 +400,11 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
     source = re.sub(
         r'\b(unsigned|signed)_(int|char|short|long|float|double)_?\b',
         r'\1 \2', source)
+    # ``struct_std::X``/``class_SCIFoo`` are the elaborated-type keywords
+    # glued onto the name; the keyword is redundant once the name resolves.
+    source = re.sub(r'\b(?:class|struct|enum|union)_std::', 'std::', source)
+    source = re.sub(r'\b(?:class|struct|enum|union)_(?=[A-Z])',
+                    '', source)
     body_start = source.find('{')
     head, body = source[:body_start], source[body_start:]
     body = _pcode(body)
@@ -673,6 +691,13 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
     # The head can carry Ghidra ``/* WARNING */`` comments whose own parens
     # would otherwise poison the return-type tokenization.
     head_clean = re.sub(r'/\*.*?\*/', ' ', whole[:head_end], flags=re.S)
+    # A ``std::X<args>::member`` declarator tail must not leak into the
+    # return type; drop the qualified name plus its parameter list open.
+    _targs = r'<(?:[^()<>\n]|<(?:[^()<>\n]|<[^()<>\n]*>)*>)*>'
+    head_clean = re.sub(
+        r'(?:[A-Za-z_]\w*\s*(?:' + _targs + r')?\s*::\s*)+'
+        r'(?:operator[^\s(]*|~?\s*[A-Za-z_]\w*)\s*(?:' + _targs +
+        r')?\s*\(', '(', ' '.join(head_clean.split()))
     tokens = head_clean.split('(')[0].split()
     if len(tokens) >= 2:
         ret_type = ' '.join(t for t in tokens[:-1]
@@ -710,6 +735,13 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
     # __readfsdword intrinsic reproduces the exact segment-load instruction.
     body_part = re.sub(r'\bThreadLocalStoragePointer\b',
                        '((void *)__readfsdword(0x18))', body_part)
+    # ``X<args>`` in the signature (e.g. an iterator parameter type) never
+    # reaches the body scan loop; register it so the decl is a template.
+    for head_tmpl in re.finditer(
+            r'(?<!::)\b([A-Z_]\w*)\s*<[^;()]*>', head_part):
+        name = head_tmpl.group(1)
+        if name not in KEYWORDS:
+            type_stubs.add(('template', name))
     # Names emitted as `template<class...> struct X` cannot be used bare;
     # give unqualified non-template-id uses an empty argument list. Runs last
     # so casts added by _fix_types are covered too.
@@ -779,11 +811,11 @@ _NOT_TYPES = {'return', 'if', 'while', 'for', 'do', 'else', 'case', 'switch',
               'operator', 'this', 'assert'}
 _DECL_RE = re.compile(
     r'^\s*((?:const\s+|unsigned\s+|signed\s+|struct\s+|long\s+|short\s+)*)'
-    r'([A-Za-z_][\w:<>]*?)(\s*\*+\s*|\s+)([A-Za-z_]\w*)\s*(?=[;=,\)\[])',
+    r'([A-Za-z_][\w:]*(?:<[^()]*>)*)(\s*\*+\s*|\s+)([A-Za-z_]\w*)\s*(?=[;=,\)\[])',
     re.M)
 _PARAM_RE = re.compile(
     r'((?:const\s+|unsigned\s+|signed\s+|struct\s+|long\s+|short\s+)*)'
-    r'([A-Za-z_][\w:<>]*?)(\s*\*+\s*|\s+)([A-Za-z_]\w*)\s*(?=[,\)])')
+    r'([A-Za-z_][\w:]*(?:<[^()]*>)*)(\s*\*+\s*|\s+)([A-Za-z_]\w*)\s*(?=[,\)])')
 
 
 def _varmap(text, params=''):
@@ -1232,7 +1264,22 @@ def cpp_source(records, defined, bad_decls=()):
                 std_names.add(key)
                 collect_std(child)
         collect_std(std_node)
-        decls.append(f'namespace std {{{emit_tree(std_node)}}}')
+        # Each top-level name gets its own `namespace std` line: the syntax
+        # gate bans decl *lines* wholesale, so one struct with an error must
+        # not take every sibling declaration down with it.
+        for name, child in sorted(std_node.items()):
+            if name in ('__leaves__', '__methods__'):
+                continue
+            decls.append(
+                f'namespace std {{ '
+                f'{"template<class...> " if ("template", name) in type_stubs else ""}'
+                f'struct {name} {{ char _pad; {name}(...);{ops}'
+                f'{field_decls_for(name)}{emit_tree(child, name)} }}; }}')
+        leftover = emit_tree({key: std_node[key] for key in
+                              ('__leaves__', '__methods__')
+                              if key in std_node})
+        if leftover.strip():
+            decls.append(f'namespace std {{{leftover} }}')
     # A name that lives under `namespace std` must not get a global struct or
     # typedef twin: unqualified uses would be ambiguous once the
     # `using namespace std` line below takes effect.
@@ -1404,8 +1451,11 @@ def main():
     scratch = args.index_dir / f'.syntax-probe-{args.name_prefix}-{os.getpid()}.cpp'
     failures = []
     accepted = []
-    bad_decls = set()
     for offset in range(0, len(candidates), args.part_size):
+        # A decl line banned during one part's bisection was only bad in
+        # that context; keeping the set per-part stops one blame from
+        # stripping the decl out of every later part's emitted source.
+        bad_decls = set()
         part = candidates[offset:offset + args.part_size]
         good = split_valid(part, scratch, failures, bad_decls)
         if not good:
@@ -1413,9 +1463,15 @@ def main():
             continue
         name = f'{args.name_prefix}_{offset // args.part_size:04d}'
         source_path = args.source_dir / f'{name}.cpp'
+        defined_good = frozenset('FUN_' + r['entry'] for r in good)
+        # Bisection bans decls blamed while a poisonous record was still in
+        # the window, so prefer the unfiltered emit and only fall back to
+        # the filtered one when it genuinely fails the gate.
+        full_source = cpp_source(good, defined_good)[0]
+        full_ok, _ = syntax_ok(full_source, scratch)
         source_path.write_text(
-            cpp_source(good, frozenset('FUN_' + r['entry'] for r in good),
-                       bad_decls)[0])
+            full_source if full_ok
+            else cpp_source(good, defined_good, bad_decls)[0])
         index_dir = args.index_dir / name
         index_dir.mkdir(parents=True, exist_ok=True)
         with (index_dir / 'compiled-index.tsv').open('w', newline='') as file:
