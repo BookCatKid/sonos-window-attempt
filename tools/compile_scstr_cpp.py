@@ -263,6 +263,13 @@ def reference_arity(source):
         decls = declarations.get(name, [])
         noncall = {marker.end() + definition.start('name')}
         noncall.update(position for _, _, position in decls)
+        # The bulk emitter writes every prototype (typed decls, variadic
+        # ``extern`` twins and member declarations) before the first entry
+        # marker, so any ``FUN_x(`` in that region is a declaration, not a
+        # call site whose argument count must agree with the new signature.
+        first_marker = markers[0].start()
+        noncall.update(position for position in occurrences.get(name, [])
+                       if position < first_marker)
         incompatible = False
         for position in occurrences.get(name, []):
             if position in noncall:

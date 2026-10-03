@@ -1271,6 +1271,7 @@ struct WaitForSingleObjectEx { char _pad; WaitForSingleObjectEx(...); template<c
 struct White { char _pad; White(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Writing { char _pad; Writing(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Wrote { char _pad; Wrote(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Recovered_Bulk { char _pad; int __thiscall FUN_1143d4c0(int param_2,int param_3,int param_4,byte param_5,byte param_6); template<class... A> int FUN_1143d4c0(A...); undefined4 __thiscall FUN_11455610(undefined4 param_2,uint param_3); template<class... A> int FUN_11455610(A...); /* WARNING: Removing unreachable block (ram,0x11458412) */ void __thiscall FUN_114583d0(undefined4 param_2); template<class... A> int FUN_114583d0(A...); undefined4 * __thiscall FUN_11458eb0(char *param_2,undefined4 param_3); template<class... A> int FUN_11458eb0(A...); undefined4 * __thiscall FUN_11459330(byte param_2); template<class... A> int FUN_11459330(A...); void __thiscall FUN_114595f0(undefined4 param_2,long *param_3); template<class... A> int FUN_114595f0(A...); undefined2 __thiscall FUN_11459670(undefined4 param_2,undefined4 param_3,undefined4 param_4); template<class... A> int FUN_11459670(A...); void __thiscall FUN_11459710(byte *param_2,undefined4 param_3); template<class... A> int FUN_11459710(A...); void __thiscall FUN_11459780(undefined4 param_2,char *param_3); template<class... A> int FUN_11459780(A...); undefined1 __thiscall FUN_11459ad0(int param_2,uint param_3,char param_4); template<class... A> int FUN_11459ad0(A...); uint __thiscall FUN_11459e70(byte *param_2); template<class... A> int FUN_11459e70(A...); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11459f10(int *param_2); template<class... A> int FUN_11459f10(A...); undefined2 __thiscall FUN_1145a310(int param_2,undefined4 *param_3,uint param_4); template<class... A> int FUN_1145a310(A...); undefined4 __thiscall FUN_1145a760(char *param_2,char *param_3); template<class... A> int FUN_1145a760(A...); bool __thiscall FUN_1145a8d0(int param_2); template<class... A> int FUN_1145a8d0(A...); uint __thiscall FUN_1145a960(char *param_2); template<class... A> int FUN_1145a960(A...); uint __thiscall FUN_1145e1b0(int param_2,char param_3); template<class... A> int FUN_1145e1b0(A...); };
 using namespace std;
 void FUN_11413a40(undefined4 param_1,undefined4 param_2,uint param_3);
 extern void FUN_11413a40(...);
@@ -1282,7 +1283,8 @@ int FUN_11413bf0(int *param_1,int *param_2);
 extern int FUN_11413bf0(...);
 void FUN_11413e30(undefined4 param_1,undefined4 param_2,undefined4 param_3,uint param_4);
 extern void FUN_11413e30(...);
-int FUN_11414850(undefined4 *param_1,int param_2,undefined4 *param_3,int param_4,undefined4 *param_5 ,int *param_6);
+int FUN_11414850(undefined4 *param_1,int param_2,undefined4 *param_3,int param_4,undefined4 *param_5
+                ,int *param_6);
 extern int FUN_11414850(...);
 int FUN_11414db0(undefined4 param_1,undefined4 param_2,undefined4 param_3);
 extern int FUN_11414db0(...);
@@ -1298,7 +1300,8 @@ void FUN_11417b50(undefined4 param_1,undefined4 param_2,uint param_3);
 extern void FUN_11417b50(...);
 int FUN_11418580(undefined4 *param_1);
 extern int FUN_11418580(...);
-void FUN_11418e60(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5,undefined4 param_6);
+void FUN_11418e60(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,undefined4 param_6);
 extern void FUN_11418e60(...);
 int FUN_11419070(byte *param_1,uint param_2,void *param_3,uint param_4,uint *param_5);
 extern int FUN_11419070(...);
@@ -1306,19 +1309,23 @@ undefined4 FUN_11419640(int param_1);
 extern undefined4 FUN_11419640(...);
 int FUN_11419700(int param_1);
 extern int FUN_11419700(...);
-int FUN_11419e00(int param_1,int param_2,undefined4 param_3,int param_4,undefined4 param_5, int param_6,undefined4 param_7,int param_8,undefined4 param_9,int param_10, undefined4 param_11);
+int FUN_11419e00(int param_1,int param_2,undefined4 param_3,int param_4,undefined4 param_5,
+                int param_6,undefined4 param_7,int param_8,undefined4 param_9,int param_10,
+                undefined4 param_11);
 extern int FUN_11419e00(...);
 int FUN_1141a6b0(int param_1,int param_2,int param_3);
 extern int FUN_1141a6b0(...);
 int FUN_1141aa40(int param_1,int param_2,int param_3);
 extern int FUN_1141aa40(...);
-void FUN_1141abb0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5,undefined4 param_6,undefined4 param_7);
+void FUN_1141abb0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7);
 extern void FUN_1141abb0(...);
 int FUN_1141b160(int param_1,int param_2,int param_3,int param_4,undefined4 param_5);
 extern int FUN_1141b160(...);
 int FUN_1141b990(int param_1,undefined4 param_2,undefined4 param_3);
 extern int FUN_1141b990(...);
-int FUN_1141c1f0(int param_1,undefined4 param_2,undefined4 param_3,int param_4,int param_5, int param_6,void *param_7);
+int FUN_1141c1f0(int param_1,undefined4 param_2,undefined4 param_3,int param_4,int param_5,
+                int param_6,void *param_7);
 extern int FUN_1141c1f0(...);
 int FUN_1141c360(int param_1,int param_2,int param_3,int param_4,undefined4 param_5);
 extern int FUN_1141c360(...);
@@ -1332,7 +1339,8 @@ undefined4 FUN_1141d740(int param_1,uint param_2,void *param_3,uint param_4,unde
 extern undefined4 FUN_1141d740(...);
 undefined4 FUN_1141dcc0(char *param_1,int *param_2,size_t *param_3);
 extern undefined4 FUN_1141dcc0(...);
-int FUN_1141e480(undefined4 param_1,undefined4 param_2,char *param_3,undefined4 param_4, undefined4 param_5);
+int FUN_1141e480(undefined4 param_1,undefined4 param_2,char *param_3,undefined4 param_4,
+                undefined4 param_5);
 extern int FUN_1141e480(...);
 int FUN_1141e520(undefined4 *param_1,int param_2,int param_3);
 extern int FUN_1141e520(...);
@@ -1352,7 +1360,8 @@ void FUN_11420160(undefined4 param_1,undefined4 param_2,undefined4 *param_3);
 extern void FUN_11420160(...);
 void FUN_11420320(undefined4 param_1,undefined4 param_2,undefined4 *param_3);
 extern void FUN_11420320(...);
-int FUN_11420610(undefined4 param_1,int param_2,uint param_3,undefined4 *param_4,undefined4 *param_5 ,undefined4 *param_6);
+int FUN_11420610(undefined4 param_1,int param_2,uint param_3,undefined4 *param_4,undefined4 *param_5
+                ,undefined4 *param_6);
 extern int FUN_11420610(...);
 void FUN_11420aa0(int *param_1,undefined4 param_2,undefined4 param_3);
 extern void FUN_11420aa0(...);
@@ -1360,21 +1369,26 @@ void FUN_11423200(int param_1,int param_2,uint *param_3,uint param_4);
 extern void FUN_11423200(...);
 void FUN_11423510(int param_1,undefined1 param_2,undefined1 *param_3,uint param_4);
 extern void FUN_11423510(...);
-int FUN_11423620(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5);
+int FUN_11423620(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                undefined4 param_5);
 extern int FUN_11423620(...);
 void FUN_11423d10(undefined4 param_1,char *param_2);
 extern void FUN_11423d10(...);
-int FUN_11423f30(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5);
+int FUN_11423f30(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                undefined4 param_5);
 extern int FUN_11423f30(...);
-void FUN_11423fd0(undefined4 param_1,int param_2,undefined4 param_3,undefined4 param_4,uint param_5, undefined4 param_6,char *param_7,undefined4 param_8);
+void FUN_11423fd0(undefined4 param_1,int param_2,undefined4 param_3,undefined4 param_4,uint param_5,
+                 undefined4 param_6,char *param_7,undefined4 param_8);
 extern void FUN_11423fd0(...);
-int FUN_11424ac0(int param_1,short param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5, undefined4 param_6,undefined4 param_7);
+int FUN_11424ac0(int param_1,short param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5,
+                undefined4 param_6,undefined4 param_7);
 extern int FUN_11424ac0(...);
 void FUN_114252f0(undefined4 *param_1);
 extern void FUN_114252f0(...);
 void FUN_11425390(undefined4 *param_1);
 extern void FUN_11425390(...);
-int FUN_11425660(undefined4 *param_1,int param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5,undefined4 param_6);
+int FUN_11425660(undefined4 *param_1,int param_2,undefined4 param_3,undefined4 param_4,
+                undefined4 param_5,undefined4 param_6);
 extern int FUN_11425660(...);
 int FUN_11425bb0(int *param_1);
 extern int FUN_11425bb0(...);
@@ -1390,7 +1404,8 @@ int FUN_11427450(int *param_1,undefined4 param_2,undefined4 param_3);
 extern int FUN_11427450(...);
 int FUN_11427980(int *param_1,void *param_2,uint param_3);
 extern int FUN_11427980(...);
-void FUN_11427ad0(int *param_1,void *param_2,size_t param_3,undefined4 *param_4,void *param_5, undefined4 *param_6);
+void FUN_11427ad0(int *param_1,void *param_2,size_t param_3,undefined4 *param_4,void *param_5,
+                 undefined4 *param_6);
 extern void FUN_11427ad0(...);
 int FUN_11428bc0(int *param_1,undefined4 param_2,uint param_3);
 extern int FUN_11428bc0(...);
@@ -1402,19 +1417,25 @@ undefined4 FUN_11429910(undefined4 param_1,size_t param_2,undefined4 *param_3);
 extern undefined4 FUN_11429910(...);
 int FUN_114299f0(int param_1);
 extern int FUN_114299f0(...);
-void FUN_11429ce0(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5,int param_6);
+void FUN_11429ce0(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,int param_6);
 extern void FUN_11429ce0(...);
-int FUN_1142a340(ushort *param_1,void *param_2,size_t param_3,void *param_4,undefined4 param_5, size_t *param_6,int *param_7);
+int FUN_1142a340(ushort *param_1,void *param_2,size_t param_3,void *param_4,undefined4 param_5,
+                size_t *param_6,int *param_7);
 extern int FUN_1142a340(...);
 undefined4 FUN_1142a7a0(ushort *param_1,undefined4 param_2,undefined4 param_3,uint param_4);
 extern undefined4 FUN_1142a7a0(...);
-void FUN_1142a900(undefined4 param_1,undefined4 param_2,undefined4 param_3,uint param_4, undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8, undefined4 param_9);
+void FUN_1142a900(undefined4 param_1,undefined4 param_2,undefined4 param_3,uint param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+                 undefined4 param_9);
 extern void FUN_1142a900(...);
 undefined4 FUN_1142aa60(ushort *param_1,undefined4 param_2,undefined4 param_3,uint param_4);
 extern undefined4 FUN_1142aa60(...);
-void FUN_1142abc0(undefined4 param_1,undefined4 param_2,undefined4 param_3,uint param_4, undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8);
+void FUN_1142abc0(undefined4 param_1,undefined4 param_2,undefined4 param_3,uint param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8);
 extern void FUN_1142abc0(...);
-undefined4 FUN_1142b1a0(ushort *param_1,void *param_2,uint param_3,void *param_4,uint param_5,uint *param_6);
+undefined4
+FUN_1142b1a0(ushort *param_1,void *param_2,uint param_3,void *param_4,uint param_5,uint *param_6);
 extern undefined4 FUN_1142b1a0(...);
 int FUN_1142b310(int param_1,undefined4 param_2,undefined4 *param_3);
 extern int FUN_1142b310(...);
@@ -1438,7 +1459,8 @@ void FUN_1142cb00(int *param_1,undefined4 param_2,int param_3);
 extern void FUN_1142cb00(...);
 int FUN_1142d1f0(int param_1,undefined4 param_2,uint param_3,undefined4 *param_4);
 extern int FUN_1142d1f0(...);
-int FUN_1142d242(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5,int param_6,undefined4 param_7,uint param_8,undefined4 param_9);
+int FUN_1142d242(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                undefined4 param_5,int param_6,undefined4 param_7,uint param_8,undefined4 param_9);
 extern int FUN_1142d242(...);
 undefined4 FUN_1142d580(int param_1,int param_2);
 extern undefined4 FUN_1142d580(...);
@@ -1472,7 +1494,9 @@ int FUN_11431b70(int param_1,undefined4 param_2,size_t param_3);
 extern int FUN_11431b70(...);
 int FUN_11431cd0(int param_1,undefined4 param_2,size_t param_3);
 extern int FUN_11431cd0(...);
-void FUN_11432c50(undefined4 param_1,undefined4 param_2,undefined4 param_3,uint param_4, undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8, undefined4 param_9);
+void FUN_11432c50(undefined4 param_1,undefined4 param_2,undefined4 param_3,uint param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+                 undefined4 param_9);
 extern void FUN_11432c50(...);
 int FUN_11432f10(undefined4 param_1,undefined4 *param_2,int *param_3,undefined4 *param_4);
 extern int FUN_11432f10(...);
@@ -1484,23 +1508,30 @@ undefined4 FUN_114336c0(int param_1,void *param_2,size_t param_3);
 extern undefined4 FUN_114336c0(...);
 undefined4 FUN_11433a20(ushort param_1,uint param_2);
 extern undefined4 FUN_11433a20(...);
-void FUN_11434280(undefined4 param_1,undefined4 param_2,undefined4 param_3,uint param_4, undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8);
+void FUN_11434280(undefined4 param_1,undefined4 param_2,undefined4 param_3,uint param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8);
 extern void FUN_11434280(...);
-int FUN_114344d0(int param_1,int *param_2,undefined4 param_3,uint param_4,undefined4 param_5, undefined4 param_6);
+int FUN_114344d0(int param_1,int *param_2,undefined4 param_3,uint param_4,undefined4 param_5,
+                undefined4 param_6);
 extern int FUN_114344d0(...);
-int FUN_11434630(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5,undefined4 param_6,undefined4 param_7);
+int FUN_11434630(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                undefined4 param_5,undefined4 param_6,undefined4 param_7);
 extern int FUN_11434630(...);
-int FUN_11434a60(int param_1,int *param_2,undefined4 param_3,uint param_4,undefined4 param_5, undefined4 param_6);
+int FUN_11434a60(int param_1,int *param_2,undefined4 param_3,uint param_4,undefined4 param_5,
+                undefined4 param_6);
 extern int FUN_11434a60(...);
-int FUN_11434be0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5,undefined4 param_6);
+int FUN_11434be0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                undefined4 param_5,undefined4 param_6);
 extern int FUN_11434be0(...);
 void FUN_11434c90(undefined1 *param_1);
 extern void FUN_11434c90(...);
 int FUN_11434d70(int param_1,int *param_2,int param_3);
 extern int FUN_11434d70(...);
-int FUN_11434e60(undefined1 *param_1,undefined4 *param_2,int param_3,int param_4,undefined4 param_5, undefined4 param_6);
+int FUN_11434e60(undefined1 *param_1,undefined4 *param_2,int param_3,int param_4,undefined4 param_5,
+                undefined4 param_6);
 extern int FUN_11434e60(...);
-int FUN_11434f50(undefined1 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5,undefined4 param_6);
+int FUN_11434f50(undefined1 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                undefined4 param_5,undefined4 param_6);
 extern int FUN_11434f50(...);
 int FUN_11434ff0(int param_1,int *param_2,int param_3);
 extern int FUN_11434ff0(...);
@@ -1510,7 +1541,8 @@ uint FUN_114350e0(undefined1 *param_1,undefined4 param_2);
 extern uint FUN_114350e0(...);
 byte FUN_114351b0(int param_1,byte *param_2,int param_3);
 extern byte FUN_114351b0(...);
-void FUN_114354e0(undefined4 param_1,int param_2,uint param_3,uint param_4,uint param_5, undefined4 param_6);
+void FUN_114354e0(undefined4 param_1,int param_2,uint param_3,uint param_4,uint param_5,
+                 undefined4 param_6);
 extern void FUN_114354e0(...);
 void FUN_11435570(int param_1,uint param_2,int param_3);
 extern void FUN_11435570(...);
@@ -1534,9 +1566,11 @@ undefined4 FUN_11437620(uint *param_1,int *param_2,char *param_3);
 extern undefined4 FUN_11437620(...);
 undefined4 FUN_114378b0(int *param_1,int param_2,uint param_3);
 extern undefined4 FUN_114378b0(...);
-int FUN_114381d0(char *param_1,char *param_2,undefined4 param_3,undefined4 param_4,void *param_5, char *param_6,undefined4 *param_7);
+int FUN_114381d0(char *param_1,char *param_2,undefined4 param_3,undefined4 param_4,void *param_5,
+                char *param_6,undefined4 *param_7);
 extern int FUN_114381d0(...);
-void FUN_114383f0(undefined4 param_1,uint param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5,undefined4 param_6);
+void FUN_114383f0(undefined4 param_1,uint param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,undefined4 param_6);
 extern void FUN_114383f0(...);
 undefined4 FUN_11438a50(int *param_1,int param_2,int param_3,undefined4 param_4);
 extern undefined4 FUN_11438a50(...);
@@ -1560,7 +1594,6 @@ int FUN_1143d190(int param_1,int param_2,undefined4 param_3,undefined4 param_4);
 extern int FUN_1143d190(...);
 int FUN_1143d430(int param_1,int param_2,byte param_3);
 extern int FUN_1143d430(...);
-int __thiscall FUN_1143d4c0(undefined4 param_1,int param_2,int param_3,int param_4,byte param_5,byte param_6);
 undefined4 FUN_1143d990(int param_1,undefined4 param_2);
 extern undefined4 FUN_1143d990(...);
 int FUN_1143e4d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
@@ -1581,7 +1614,8 @@ undefined4 FUN_1143fce0(undefined4 param_1,undefined4 param_2,int *param_3,uint 
 extern undefined4 FUN_1143fce0(...);
 undefined4 FUN_1143fd40(int *param_1,undefined4 *param_2,undefined1 *param_3,uint param_4);
 extern undefined4 FUN_1143fd40(...);
-int FUN_1143fdc0(undefined4 param_1,undefined4 param_2,int param_3,int *param_4,undefined1 *param_5, int param_6);
+int FUN_1143fdc0(undefined4 param_1,undefined4 param_2,int param_3,int *param_4,undefined1 *param_5,
+                int param_6);
 extern int FUN_1143fdc0(...);
 undefined4 FUN_1143fe20(int param_1,uint *param_2,undefined4 param_3,uint param_4);
 extern undefined4 FUN_1143fe20(...);
@@ -1619,15 +1653,19 @@ void FUN_11443b20(int param_1,undefined4 param_2,undefined4 param_3);
 extern void FUN_11443b20(...);
 int FUN_11443d60(int param_1);
 extern int FUN_11443d60(...);
-int FUN_114441b0(int param_1,int param_2,int param_3,undefined4 param_4,undefined4 param_5, undefined4 param_6);
+int FUN_114441b0(int param_1,int param_2,int param_3,undefined4 param_4,undefined4 param_5,
+                undefined4 param_6);
 extern int FUN_114441b0(...);
 void FUN_11444290(uint param_1,int param_2,uint *param_3);
 extern void FUN_11444290(...);
 void FUN_11444490(uint *param_1,int param_2,int param_3);
 extern void FUN_11444490(...);
-void FUN_114446b0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8, undefined4 param_9,undefined4 param_10);
+void FUN_114446b0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+                 undefined4 param_9,undefined4 param_10);
 extern void FUN_114446b0(...);
-void FUN_11444bf0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 *param_4, void *param_5,size_t param_6);
+void FUN_11444bf0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 *param_4,
+                 void *param_5,size_t param_6);
 extern void FUN_11444bf0(...);
 int FUN_11444dd0(undefined4 param_1,undefined4 param_2,undefined4 param_3,int param_4);
 extern int FUN_11444dd0(...);
@@ -1649,7 +1687,8 @@ int FUN_114463f0(byte *param_1,int param_2,uint param_3);
 extern int FUN_114463f0(...);
 void FUN_11446560(int param_1,int param_2,uint *param_3,uint param_4);
 extern void FUN_11446560(...);
-void FUN_11446a80(void *param_1,uint *param_2,uint param_3,int param_4,undefined4 param_5, uint param_6,int *param_7,uint *param_8);
+void FUN_11446a80(void *param_1,uint *param_2,uint param_3,int param_4,undefined4 param_5,
+                 uint param_6,int *param_7,uint *param_8);
 extern void FUN_11446a80(...);
 void FUN_11447000(int param_1,int param_2,uint *param_3,int param_4);
 extern void FUN_11447000(...);
@@ -1665,7 +1704,8 @@ uint FUN_11448570(uint *param_1,int param_2,uint param_3,int param_4);
 extern uint FUN_11448570(...);
 uint FUN_11448600(uint param_1,uint *param_2,uint param_3);
 extern uint FUN_11448600(...);
-int FUN_11448850(undefined4 param_1,undefined4 param_2,undefined4 param_3,int param_4,int param_5, int param_6);
+int FUN_11448850(undefined4 param_1,undefined4 param_2,undefined4 param_3,int param_4,int param_5,
+                int param_6);
 extern int FUN_11448850(...);
 int FUN_11448db0(undefined4 param_1,undefined4 param_2,undefined4 param_3,int param_4);
 extern int FUN_11448db0(...);
@@ -1673,9 +1713,12 @@ int FUN_11448f30(int param_1,int param_2,undefined4 param_3,int param_4,int para
 extern int FUN_11448f30(...);
 int FUN_11449d90(int *param_1,int param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5);
 extern int FUN_11449d90(...);
-int FUN_1144a210(undefined4 param_1,uint param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5,undefined4 param_6,int param_7,int param_8,undefined4 param_9, undefined4 param_10);
+int FUN_1144a210(undefined4 param_1,uint param_2,undefined4 param_3,undefined4 param_4,
+                undefined4 param_5,undefined4 param_6,int param_7,int param_8,undefined4 param_9,
+                undefined4 param_10);
 extern int FUN_1144a210(...);
-void FUN_1144a3d0(void *param_1,uint param_2,void *param_3,uint param_4,void *param_5,uint param_6, undefined4 param_7,byte param_8,uint param_9);
+void FUN_1144a3d0(void *param_1,uint param_2,void *param_3,uint param_4,void *param_5,uint param_6,
+                 undefined4 param_7,byte param_8,uint param_9);
 extern void FUN_1144a3d0(...);
 void FUN_1144b020(int *param_1);
 extern void FUN_1144b020(...);
@@ -1687,7 +1730,8 @@ int FUN_1144bbc0(int param_1);
 extern int FUN_1144bbc0(...);
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_1144bcf0(uint *param_1,char param_2,uint param_3);
 extern /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_1144bcf0(...);
-undefined4 FUN_1144c1d0(uint param_1,short param_2,undefined4 param_3,undefined4 *param_4,undefined4 *param_5);
+undefined4
+FUN_1144c1d0(uint param_1,short param_2,undefined4 param_3,undefined4 *param_4,undefined4 *param_5);
 extern undefined4 FUN_1144c1d0(...);
 void FUN_1144c8b0(int *param_1,void *param_2,uint param_3,uint *param_4);
 extern void FUN_1144c8b0(...);
@@ -1695,19 +1739,26 @@ int FUN_1144c9c0(uint *param_1,void *param_2,uint param_3,int param_4,uint param
 extern int FUN_1144c9c0(...);
 undefined4 FUN_1144cf70(int *param_1);
 extern undefined4 FUN_1144cf70(...);
-void FUN_1144cfe0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8, int param_9,uint param_10,undefined4 param_11,uint param_12,int *param_13);
+void FUN_1144cfe0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+                 int param_9,uint param_10,undefined4 param_11,uint param_12,int *param_13);
 extern void FUN_1144cfe0(...);
-void FUN_1144d2d0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8, undefined4 param_9,int param_10,int param_11,uint param_12,int *param_13);
+void FUN_1144d2d0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+                 undefined4 param_9,int param_10,int param_11,uint param_12,int *param_13);
 extern void FUN_1144d2d0(...);
-int FUN_1144d590(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 *param_4, undefined4 param_5,uint param_6,uint *param_7);
+int FUN_1144d590(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 *param_4,
+                undefined4 param_5,uint param_6,uint *param_7);
 extern int FUN_1144d590(...);
 undefined4 FUN_1144d6a0(int *param_1,undefined4 param_2,int param_3);
 extern undefined4 FUN_1144d6a0(...);
-int FUN_1144d770(int *param_1,undefined4 param_2,uint param_3,undefined4 param_4,uint param_5, uint *param_6);
+int FUN_1144d770(int *param_1,undefined4 param_2,uint param_3,undefined4 param_4,uint param_5,
+                uint *param_6);
 extern int FUN_1144d770(...);
 undefined4 FUN_1144d850(int *param_1,undefined4 param_2,undefined4 param_3);
 extern undefined4 FUN_1144d850(...);
-int FUN_1144d8f0(undefined4 *param_1,ushort *param_2,undefined4 param_3,undefined4 param_4, uint param_5);
+int FUN_1144d8f0(undefined4 *param_1,ushort *param_2,undefined4 param_3,undefined4 param_4,
+                uint param_5);
 extern int FUN_1144d8f0(...);
 int FUN_1144e1b0(byte *param_1,void *param_2,uint param_3,uint *param_4);
 extern int FUN_1144e1b0(...);
@@ -1729,37 +1780,50 @@ void FUN_1144f2e0(int *param_1);
 extern void FUN_1144f2e0(...);
 undefined4 FUN_1144f650(int *param_1,int param_2,void *param_3,uint param_4,uint *param_5);
 extern undefined4 FUN_1144f650(...);
-int FUN_1144fe20(short *param_1,undefined4 param_2,undefined4 param_3,uint param_4, undefined4 param_5,int param_6,undefined4 param_7,undefined4 param_8, undefined4 param_9,undefined4 param_10,undefined4 *param_11);
+int FUN_1144fe20(short *param_1,undefined4 param_2,undefined4 param_3,uint param_4,
+                undefined4 param_5,int param_6,undefined4 param_7,undefined4 param_8,
+                undefined4 param_9,undefined4 param_10,undefined4 *param_11);
 extern int FUN_1144fe20(...);
-int FUN_1144ff70(ushort *param_1,undefined4 param_2,undefined4 param_3,uint param_4, undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8, undefined4 param_9,uint param_10,undefined4 *param_11);
+int FUN_1144ff70(ushort *param_1,undefined4 param_2,undefined4 param_3,uint param_4,
+                undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+                undefined4 param_9,uint param_10,undefined4 *param_11);
 extern int FUN_1144ff70(...);
 undefined4 FUN_114500d0(uint param_1,undefined4 param_2,void *param_3,uint param_4,uint *param_5);
 extern undefined4 FUN_114500d0(...);
-int FUN_114501b0(undefined2 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5,undefined4 param_6);
+int FUN_114501b0(undefined2 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                undefined4 param_5,undefined4 param_6);
 extern int FUN_114501b0(...);
-undefined4 FUN_11450230(undefined2 *param_1,int param_2,uint param_3,undefined4 param_4,undefined4 param_5, undefined4 param_6);
+undefined4
+FUN_11450230(undefined2 *param_1,int param_2,uint param_3,undefined4 param_4,undefined4 param_5,
+            undefined4 param_6);
 extern undefined4 FUN_11450230(...);
-int FUN_11450330(undefined2 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5,undefined4 param_6,int *param_7);
+int FUN_11450330(undefined2 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                undefined4 param_5,undefined4 param_6,int *param_7);
 extern int FUN_11450330(...);
 int FUN_114503d0(uint param_1,undefined4 param_2,undefined4 param_3,undefined4 *param_4);
 extern int FUN_114503d0(...);
-int FUN_11450670(undefined2 *param_1,undefined4 param_2,undefined4 param_3,uint param_4, undefined4 param_5,int param_6,undefined4 param_7,int param_8);
+int FUN_11450670(undefined2 *param_1,undefined4 param_2,undefined4 param_3,uint param_4,
+                undefined4 param_5,int param_6,undefined4 param_7,int param_8);
 extern int FUN_11450670(...);
 int FUN_11450800(undefined4 param_1);
 extern int FUN_11450800(...);
 undefined4 FUN_11450880(uint param_1,uint param_2,uint *param_3);
 extern undefined4 FUN_11450880(...);
-void FUN_11450b50(undefined2 *param_1,undefined4 param_2,undefined4 param_3,uint param_4, undefined4 param_5,undefined4 param_6,int param_7,uint param_8,uint *param_9);
+void FUN_11450b50(undefined2 *param_1,undefined4 param_2,undefined4 param_3,uint param_4,
+                 undefined4 param_5,undefined4 param_6,int param_7,uint param_8,uint *param_9);
 extern void FUN_11450b50(...);
-int FUN_11450ce0(undefined2 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5,undefined4 param_6,int param_7,int param_8);
+int FUN_11450ce0(undefined2 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                undefined4 param_5,undefined4 param_6,int param_7,int param_8);
 extern int FUN_11450ce0(...);
 int FUN_11450e70(uint param_1,int param_2,void *param_3,size_t param_4,undefined4 param_5);
 extern int FUN_11450e70(...);
-int FUN_11450f40(ushort *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5,undefined4 param_6);
+int FUN_11450f40(ushort *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                undefined4 param_5,undefined4 param_6);
 extern int FUN_11450f40(...);
 undefined4 FUN_11450ff0(ushort *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
 extern undefined4 FUN_11450ff0(...);
-int FUN_114510f0(ushort *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5,undefined4 param_6,int *param_7);
+int FUN_114510f0(ushort *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                undefined4 param_5,undefined4 param_6,int *param_7);
 extern int FUN_114510f0(...);
 int FUN_11451b70(undefined4 param_1,undefined4 *param_2);
 extern int FUN_11451b70(...);
@@ -1783,11 +1847,14 @@ void FUN_11452a20(undefined4 param_1,undefined4 param_2,void *param_3,uint param
 extern void FUN_11452a20(...);
 int FUN_11452c40(int param_1,undefined4 param_2,undefined4 param_3,int param_4,int param_5);
 extern int FUN_11452c40(...);
-int FUN_11452d60(int param_1,undefined4 param_2,undefined4 param_3,int param_4,int param_5, undefined4 param_6);
+int FUN_11452d60(int param_1,undefined4 param_2,undefined4 param_3,int param_4,int param_5,
+                undefined4 param_6);
 extern int FUN_11452d60(...);
-int FUN_11453290(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4, undefined4 param_5,undefined4 param_6);
+int FUN_11453290(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                undefined4 param_5,undefined4 param_6);
 extern int FUN_11453290(...);
-void FUN_11453510(int param_1,undefined4 param_2,uint *param_3,undefined4 param_4,void *param_5, uint param_6,uint *param_7,int param_8,undefined4 param_9);
+void FUN_11453510(int param_1,undefined4 param_2,uint *param_3,undefined4 param_4,void *param_5,
+                 uint param_6,uint *param_7,int param_8,undefined4 param_9);
 extern void FUN_11453510(...);
 void FUN_114542e0(int *param_1,undefined4 param_2,undefined4 param_3);
 extern void FUN_114542e0(...);
@@ -1809,27 +1876,12 @@ void FUN_11455060(int param_1,int param_2,uint *param_3,uint param_4);
 extern void FUN_11455060(...);
 void FUN_11455360(undefined4 param_1,int param_2,undefined4 param_3);
 extern void FUN_11455360(...);
-undefined4 __thiscall FUN_11455610(int param_1,undefined4 param_2,uint param_3);
 undefined4 * __fastcall FUN_11455d80(undefined4 *param_1);
 extern undefined4 * __fastcall FUN_11455d80(...);
-/* WARNING: Removing unreachable block (ram,0x114583ff) */ /* WARNING: Removing unreachable block (ram,0x11458406) */ /* WARNING: Removing unreachable block (ram,0x11458408) */ /* WARNING: Removing unreachable block (ram,0x11458412) */ void __thiscall FUN_114583d0(int param_1,undefined4 param_2);
 undefined4 __fastcall FUN_11458780(int *param_1);
 extern undefined4 __fastcall FUN_11458780(...);
-undefined4 * __thiscall FUN_11458eb0(undefined4 *param_1,char *param_2,undefined4 param_3);
 void __fastcall FUN_114591e0(undefined4 *param_1);
 extern void __fastcall FUN_114591e0(...);
-undefined4 * __thiscall FUN_11459330(undefined4 *param_1,byte param_2);
-void __thiscall FUN_114595f0(int param_1,undefined4 param_2,long *param_3);
-undefined2 __thiscall FUN_11459670(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-void __thiscall FUN_11459710(int param_1,byte *param_2,undefined4 param_3);
-void __thiscall FUN_11459780(int *param_1,undefined4 param_2,char *param_3);
-undefined1 __thiscall FUN_11459ad0(int *param_1,int param_2,uint param_3,char param_4);
-uint __thiscall FUN_11459e70(int param_1,byte *param_2);
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_11459f10(int *param_1,int *param_2);
-undefined2 __thiscall FUN_1145a310(int *param_1,int param_2,undefined4 *param_3,uint param_4);
-undefined4 __thiscall FUN_1145a760(int param_1,char *param_2,char *param_3);
-bool __thiscall FUN_1145a8d0(undefined4 *param_1,int param_2);
-uint __thiscall FUN_1145a960(byte *param_1,char *param_2);
 void FUN_1145ad70(int *param_1,uint param_2);
 extern void FUN_1145ad70(...);
 void FUN_1145b0b0(int *param_1,uint param_2);
@@ -1878,7 +1930,6 @@ uint FUN_1145de60(int *param_1,int param_2,int param_3);
 extern uint FUN_1145de60(...);
 bool FUN_1145def0(int param_1,uint param_2,char *param_3);
 extern bool FUN_1145def0(...);
-uint __thiscall FUN_1145e1b0(undefined4 param_1,int param_2,char param_3);
 uint FUN_1145eab0(uint param_1,uint param_2,int *param_3);
 extern uint FUN_1145eab0(...);
 undefined4 FUN_1145eb70(byte *param_1,undefined1 *param_2,uint param_3);
@@ -1917,7 +1968,8 @@ extern /* WARNING: Globals starting with '_' overlap smaller symbols at the same
 extern /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_11461a50(...);
 void FUN_114621a0(int param_1,undefined4 param_2,int param_3);
 extern void FUN_114621a0(...);
-void FUN_11462200(int param_1,uint param_2,uint param_3,int param_4,int param_5,int param_6, int param_7,int param_8);
+void FUN_11462200(int param_1,uint param_2,uint param_3,int param_4,int param_5,int param_6,
+                 int param_7,int param_8);
 extern void FUN_11462200(...);
 void FUN_11462940(undefined4 param_1,undefined4 *param_2);
 extern void FUN_11462940(...);
@@ -1935,7 +1987,8 @@ void FUN_114631f0(int param_1,int *param_2,int param_3);
 extern void FUN_114631f0(...);
 void FUN_11463290(uint param_1);
 extern void FUN_11463290(...);
-undefined4 FUN_11463590(undefined4 param_1,int param_2,undefined4 *param_3,undefined4 *param_4,int param_5);
+undefined4
+FUN_11463590(undefined4 param_1,int param_2,undefined4 *param_3,undefined4 *param_4,int param_5);
 extern undefined4 FUN_11463590(...);
 void FUN_114636a0(int param_1,int param_2);
 extern void FUN_114636a0(...);
@@ -1983,9 +2036,11 @@ uint FUN_11466550(int param_1,uint param_2,int param_3);
 extern uint FUN_11466550(...);
 int FUN_114665d0(undefined4 param_1);
 extern int FUN_114665d0(...);
-uint FUN_11466790(undefined4 param_1,undefined4 param_2,undefined4 param_3,int param_4, undefined4 param_5,int param_6);
+uint FUN_11466790(undefined4 param_1,undefined4 param_2,undefined4 param_3,int param_4,
+                 undefined4 param_5,int param_6);
 extern uint FUN_11466790(...);
-void FUN_11466840(int *param_1,uint param_2,uint param_3,uint param_4,uint param_5,uint param_6, int param_7);
+void FUN_11466840(int *param_1,uint param_2,uint param_3,uint param_4,uint param_5,uint param_6,
+                 int param_7);
 extern void FUN_11466840(...);
 void FUN_11467010(int *param_1,undefined4 param_2,undefined4 param_3);
 extern void FUN_11467010(...);
@@ -2087,13 +2142,16 @@ void FUN_11476040(int param_1);
 extern void FUN_11476040(...);
 void FUN_114761b0(int param_1);
 extern void FUN_114761b0(...);
-undefined4 FUN_11476380(int param_1,undefined4 *param_2,undefined4 *param_3,undefined4 *param_4,uint *param_5, uint *param_6,uint *param_7,uint *param_8,uint *param_9);
+undefined4
+FUN_11476380(int param_1,undefined4 *param_2,undefined4 *param_3,undefined4 *param_4,uint *param_5,
+            uint *param_6,uint *param_7,uint *param_8,uint *param_9);
 extern undefined4 FUN_11476380(...);
 void FUN_11477f30(int *param_1);
 extern void FUN_11477f30(...);
 undefined4 FUN_11478410(undefined4 *param_1);
 extern undefined4 FUN_11478410(...);
-int FUN_11478d10(int param_1,int param_2,uint *param_3,undefined4 param_4,int param_5, undefined4 param_6,undefined4 param_7);
+int FUN_11478d10(int param_1,int param_2,uint *param_3,undefined4 param_4,int param_5,
+                undefined4 param_6,undefined4 param_7);
 extern int FUN_11478d10(...);
 void FUN_11479070(int param_1,int param_2,uint param_3);
 extern void FUN_11479070(...);
@@ -2173,17 +2231,26 @@ byte FUN_11480af0(int param_1,byte param_2);
 extern byte FUN_11480af0(...);
 void FUN_11480b70(undefined4 param_1,byte *param_2,byte *param_3);
 extern void FUN_11480b70(...);
-void FUN_11480d00(int param_1,int *param_2,int param_3,int param_4,undefined1 param_5, undefined1 param_6,undefined1 param_7,undefined1 param_8,undefined1 param_9);
+void FUN_11480d00(int param_1,int *param_2,int param_3,int param_4,undefined1 param_5,
+                 undefined1 param_6,undefined1 param_7,undefined1 param_8,undefined1 param_9);
 extern void FUN_11480d00(...);
 void FUN_11480e00(int param_1,int param_2,void *param_3,int param_4);
 extern void FUN_11480e00(...);
-void FUN_11480f90(int param_1,int param_2,undefined8 param_3,undefined8 param_4,undefined8 param_5, undefined8 param_6,undefined8 param_7,undefined8 param_8,undefined8 param_9, undefined8 param_10);
+void FUN_11480f90(int param_1,int param_2,undefined8 param_3,undefined8 param_4,undefined8 param_5,
+                 undefined8 param_6,undefined8 param_7,undefined8 param_8,undefined8 param_9,
+                 undefined8 param_10);
 extern void FUN_11480f90(...);
-void FUN_11481180(int param_1,int param_2,undefined8 param_3,undefined8 param_4,undefined8 param_5, undefined8 param_6,undefined8 param_7,undefined8 param_8,undefined8 param_9, undefined8 param_10,undefined8 param_11);
+void FUN_11481180(int param_1,int param_2,undefined8 param_3,undefined8 param_4,undefined8 param_5,
+                 undefined8 param_6,undefined8 param_7,undefined8 param_8,undefined8 param_9,
+                 undefined8 param_10,undefined8 param_11);
 extern void FUN_11481180(...);
-void FUN_114813a0(int param_1,int param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5, undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9, undefined4 param_10,undefined4 param_11);
+void FUN_114813a0(int param_1,int param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5,
+                 undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+                 undefined4 param_10,undefined4 param_11);
 extern void FUN_114813a0(...);
-void FUN_11481470(int param_1,int param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5, undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9, undefined4 param_10);
+void FUN_11481470(int param_1,int param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5,
+                 undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+                 undefined4 param_10);
 extern void FUN_11481470(...);
 void FUN_11481660(int param_1,int param_2,undefined4 param_3,int param_4);
 extern void FUN_11481660(...);
@@ -2191,9 +2258,11 @@ void FUN_114817c0(int param_1,int param_2,int param_3);
 extern void FUN_114817c0(...);
 void FUN_11481a20(int param_1,int param_2,int *param_3,int param_4);
 extern void FUN_11481a20(...);
-void FUN_11481c90(int param_1,int param_2,char *param_3,undefined4 param_4,undefined4 param_5, int param_6,int param_7,char *param_8,int param_9);
+void FUN_11481c90(int param_1,int param_2,char *param_3,undefined4 param_4,undefined4 param_5,
+                 int param_6,int param_7,char *param_8,int param_9);
 extern void FUN_11481c90(...);
-void FUN_114820b0(undefined4 param_1,undefined4 param_2,undefined4 param_3,double param_4, double param_5);
+void FUN_114820b0(undefined4 param_1,undefined4 param_2,undefined4 param_3,double param_4,
+                 double param_5);
 extern void FUN_114820b0(...);
 void FUN_114821b0(undefined4 param_1,undefined4 param_2,undefined4 param_3,int param_4,int param_5);
 extern void FUN_114821b0(...);
@@ -2243,11 +2312,13 @@ void FUN_114873e0(int param_1,int param_2,uint param_3);
 extern void FUN_114873e0(...);
 void FUN_114876f0(int param_1,undefined4 param_2,undefined4 param_3,int param_4);
 extern void FUN_114876f0(...);
-void FUN_11487bb0(int param_1,int param_2,int param_3,undefined4 param_4,int *param_5,int param_6, int *param_7);
+void FUN_11487bb0(int param_1,int param_2,int param_3,undefined4 param_4,int *param_5,int param_6,
+                 int *param_7);
 extern void FUN_11487bb0(...);
 void FUN_11487dc0(int param_1,undefined4 param_2);
 extern void FUN_11487dc0(...);
-int FUN_11487f40(int param_1,undefined4 param_2,uint param_3,uint *param_4,undefined4 param_5, int *param_6,int param_7);
+int FUN_11487f40(int param_1,undefined4 param_2,uint param_3,uint *param_4,undefined4 param_5,
+                int *param_6,int param_7);
 extern int FUN_11487f40(...);
 void FUN_11488160(int param_1,int param_2,int param_3);
 extern void FUN_11488160(...);
@@ -2281,8 +2352,8 @@ extern /* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 
 extern /* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 */ byte FUN_1148b2f2(...);
 void FUN_1148c7fb(int param_1,int param_2,uint param_3);
 extern void FUN_1148c7fb(...);
-undefined4 FUN_1148cb93(int *param_1);
-extern undefined4 FUN_1148cb93(...);
+undefined4 __stdcall FUN_1148cb93(int *param_1);
+undefined4 __stdcall FUN_1148cb93(int *param_1);
 /* Library Function - Single Match ___security_init_cookie Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */ void __cdecl FUN_1148cc68(void);
 extern /* Library Function - Single Match ___security_init_cookie Libraries: Visual Studio 2017 Release, Visual Studio 2019 Release */ void __cdecl FUN_1148cc68(...);
 void FUN_117e8ad0(void);
@@ -9664,10 +9735,9 @@ int FUN_1143d430(int param_1,int param_2,byte param_3)
 // Reference entry 1143d4c0; body size 247 bytes.
 #line 1 "ENTRY_1143d4c0"
 
-int __thiscall
-FUN_1143d4c0(undefined4 param_1,int param_2,int param_3,int param_4,byte param_5,byte param_6)
-
+int __thiscall Recovered_Bulk::FUN_1143d4c0(int param_2,int param_3,int param_4,byte param_5,byte param_6)
 {
+  undefined4 param_1 = (undefined4 )this;
   int iVar1;
   int iVar2;
   undefined4 extraout_ECX;
@@ -16474,9 +16544,9 @@ void FUN_11455360(undefined4 param_1,int param_2,undefined4 param_3)
 // Reference entry 11455610; body size 77 bytes.
 #line 1 "ENTRY_11455610"
 
-undefined4 __thiscall FUN_11455610(int param_1,undefined4 param_2,uint param_3)
-
+undefined4 __thiscall Recovered_Bulk::FUN_11455610(undefined4 param_2,uint param_3)
 {
+  int param_1 = (int )this;
   uint uVar1;
   
   uVar1 = (uint)(thunk_FUN_1145c720(param_2,param_3,"%u.%u.%u.%u-%u.%u",*(undefined4 *)(param_1 + 0x114),
@@ -16525,11 +16595,9 @@ undefined4 * __fastcall FUN_11455d80(undefined4 *param_1)
 /* WARNING: Removing unreachable block (ram,0x114583ff) */
 /* WARNING: Removing unreachable block (ram,0x11458406) */
 /* WARNING: Removing unreachable block (ram,0x11458408) */
-/* WARNING: Removing unreachable block (ram,0x11458412) */
-
-void __thiscall FUN_114583d0(int param_1,undefined4 param_2)
-
+/* WARNING: Removing unreachable block (ram,0x11458412) */ void __thiscall Recovered_Bulk::FUN_114583d0(undefined4 param_2)
 {
+  int param_1 = (int )this;
   thunk_FUN_1145a960(param_2);
   *(uint *)(param_1 + 0xdc) = *(uint *)(param_1 + 0xdc) | 0x20;
   return;
@@ -16565,9 +16633,9 @@ undefined4 __fastcall FUN_11458780(int *param_1)
 // Reference entry 11458eb0; body size 184 bytes.
 #line 1 "ENTRY_11458eb0"
 
-undefined4 * __thiscall FUN_11458eb0(undefined4 *param_1,char *param_2,undefined4 param_3)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11458eb0(char *param_2,undefined4 param_3)
 {
+  undefined4 *param_1 = (undefined4 *)this;
  try {
   undefined4 *puVar1;
   char cVar2;
@@ -16635,9 +16703,9 @@ void __fastcall FUN_114591e0(undefined4 *param_1)
 // Reference entry 11459330; body size 100 bytes.
 #line 1 "ENTRY_11459330"
 
-undefined4 * __thiscall FUN_11459330(undefined4 *param_1,byte param_2)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_11459330(byte param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_sonos_SettingsFileUpdater);
   if ((FILE *)(FILE *)(param_1[6]) != (FILE *)0x0) {
     fclose((FILE *)param_1[6]);
@@ -16660,9 +16728,9 @@ undefined4 * __thiscall FUN_11459330(undefined4 *param_1,byte param_2)
 // Reference entry 114595f0; body size 102 bytes.
 #line 1 "ENTRY_114595f0"
 
-void __thiscall FUN_114595f0(int param_1,undefined4 param_2,long *param_3)
-
+void __thiscall Recovered_Bulk::FUN_114595f0(undefined4 param_2,long *param_3)
 {
+  int param_1 = (int )this;
  try {
   long lVar1;
   undefined1 local_24 [32];
@@ -16688,10 +16756,9 @@ void __thiscall FUN_114595f0(int param_1,undefined4 param_2,long *param_3)
 // Reference entry 11459670; body size 118 bytes.
 #line 1 "ENTRY_11459670"
 
-undefined2 __thiscall
-FUN_11459670(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
-
+undefined2 __thiscall Recovered_Bulk::FUN_11459670(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
+  int *param_1 = (int *)this;
   int iVar1;
   undefined2 uVar2;
   undefined **ppuStack_18;
@@ -16725,9 +16792,9 @@ FUN_11459670(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param
 // Reference entry 11459710; body size 84 bytes.
 #line 1 "ENTRY_11459710"
 
-void __thiscall FUN_11459710(int param_1,byte *param_2,undefined4 param_3)
-
+void __thiscall Recovered_Bulk::FUN_11459710(byte *param_2,undefined4 param_3)
 {
+  int param_1 = (int )this;
   byte bVar1;
   uint uVar2;
   byte *pbVar3;
@@ -16762,9 +16829,9 @@ LAB_11459745:
 // Reference entry 11459780; body size 315 bytes.
 #line 1 "ENTRY_11459780"
 
-void __thiscall FUN_11459780(int *param_1,undefined4 param_2,char *param_3)
-
+void __thiscall Recovered_Bulk::FUN_11459780(undefined4 param_2,char *param_3)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   uint uVar2;
   char *pcVar3;
@@ -16850,9 +16917,9 @@ LAB_1145989d:
 // Reference entry 11459ad0; body size 737 bytes.
 #line 1 "ENTRY_11459ad0"
 
-undefined1 __thiscall FUN_11459ad0(int *param_1,int param_2,uint param_3,char param_4)
-
+undefined1 __thiscall Recovered_Bulk::FUN_11459ad0(int param_2,uint param_3,char param_4)
 {
+  int *param_1 = (int *)this;
  try {
   char *pcVar1;
   int iVar2;
@@ -17020,9 +17087,9 @@ LAB_11459d43:
 // Reference entry 11459e70; body size 124 bytes.
 #line 1 "ENTRY_11459e70"
 
-uint __thiscall FUN_11459e70(int param_1,byte *param_2)
-
+uint __thiscall Recovered_Bulk::FUN_11459e70(byte *param_2)
 {
+  int param_1 = (int )this;
   byte bVar1;
   uint in_EAX;
   uint3 uVar4;
@@ -17080,11 +17147,9 @@ LAB_11459eb9:
 // Reference entry 11459f10; body size 659 bytes.
 #line 1 "ENTRY_11459f10"
 
-/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */
-
-void __thiscall FUN_11459f10(int *param_1,int *param_2)
-
+/* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall Recovered_Bulk::FUN_11459f10(int *param_2)
 {
+  int *param_1 = (int *)this;
   char cVar1;
   undefined4 uVar2;
   FILE *_File;
@@ -17218,9 +17283,9 @@ LAB_1145a0a0:
 // Reference entry 1145a310; body size 844 bytes.
 #line 1 "ENTRY_1145a310"
 
-undefined2 __thiscall FUN_1145a310(int *param_1,int param_2,undefined4 *param_3,uint param_4)
-
+undefined2 __thiscall Recovered_Bulk::FUN_1145a310(int param_2,undefined4 *param_3,uint param_4)
 {
+  int *param_1 = (int *)this;
  try {
   char *pcVar1;
   bool bVar2;
@@ -17414,9 +17479,9 @@ LAB_1145a5d5:
 // Reference entry 1145a760; body size 147 bytes.
 #line 1 "ENTRY_1145a760"
 
-undefined4 __thiscall FUN_1145a760(int param_1,char *param_2,char *param_3)
-
+undefined4 __thiscall Recovered_Bulk::FUN_1145a760(char *param_2,char *param_3)
 {
+  int param_1 = (int )this;
   char *pcVar1;
   char cVar2;
   int iVar3;
@@ -17449,9 +17514,9 @@ undefined4 __thiscall FUN_1145a760(int param_1,char *param_2,char *param_3)
 // Reference entry 1145a8d0; body size 111 bytes.
 #line 1 "ENTRY_1145a8d0"
 
-bool __thiscall FUN_1145a8d0(undefined4 *param_1,int param_2)
-
+bool __thiscall Recovered_Bulk::FUN_1145a8d0(int param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   int iVar1;
   bool bVar2;
   
@@ -17478,9 +17543,9 @@ bool __thiscall FUN_1145a8d0(undefined4 *param_1,int param_2)
 // Reference entry 1145a960; body size 170 bytes.
 #line 1 "ENTRY_1145a960"
 
-uint __thiscall FUN_1145a960(byte *param_1,char *param_2)
-
+uint __thiscall Recovered_Bulk::FUN_1145a960(char *param_2)
 {
+  byte *param_1 = (byte *)this;
   uint uVar1;
   char *pcVar2;
   byte local_6;
@@ -18226,9 +18291,9 @@ bool FUN_1145def0(int param_1,uint param_2,char *param_3)
 // Reference entry 1145e1b0; body size 124 bytes.
 #line 1 "ENTRY_1145e1b0"
 
-uint __thiscall FUN_1145e1b0(undefined4 param_1,int param_2,char param_3)
-
+uint __thiscall Recovered_Bulk::FUN_1145e1b0(int param_2,char param_3)
 {
+  undefined4 param_1 = (undefined4 )this;
   uint in_EAX;
   uint3 uVar1;
   int iVar2;
@@ -32721,7 +32786,7 @@ void FUN_1148c7fb(int param_1,int param_2,uint param_3)
 // Reference entry 1148cb93; body size 85 bytes.
 #line 1 "ENTRY_1148cb93"
 
-undefined4 FUN_1148cb93(int *param_1)
+undefined4 __stdcall FUN_1148cb93(int *param_1)
 
 {
   int iVar1;

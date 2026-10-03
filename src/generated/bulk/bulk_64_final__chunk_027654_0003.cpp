@@ -712,9 +712,9 @@ extern void __fastcall FUN_1104f960(...);
 void __fastcall FUN_1104fa20(int param_1);
 extern void __fastcall FUN_1104fa20(...);
 extern void __fastcall FUN_1104fa20(...);
-undefined4 __fastcall FUN_1104fb70(int *param_1);
-extern undefined4 __fastcall FUN_1104fb70(...);
-extern undefined4 __fastcall FUN_1104fb70(...);
+undefined4 __fastcall FUN_1104fb70(int *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+undefined4 __fastcall FUN_1104fb70(int *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+undefined4 __fastcall FUN_1104fb70(int *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
 undefined1 __stdcall FUN_1104fd20(undefined4 param_1);
 extern undefined1 __stdcall FUN_1104fd20(...);
 extern undefined1 __stdcall FUN_1104fd20(...);
@@ -871,9 +871,9 @@ extern void __fastcall FUN_11065a60(...);
 void __fastcall FUN_11065ae0(int param_1);
 extern void __fastcall FUN_11065ae0(...);
 extern void __fastcall FUN_11065ae0(...);
-void __fastcall FUN_11065e30(int param_1);
-extern void __fastcall FUN_11065e30(...);
-extern void __fastcall FUN_11065e30(...);
+void __fastcall FUN_11065e30(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+void __fastcall FUN_11065e30(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+void __fastcall FUN_11065e30(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
 undefined4 FUN_110667a0(undefined4 param_1);
 extern undefined4 FUN_110667a0(...);
 extern undefined4 FUN_110667a0(...);
@@ -3050,7 +3050,7 @@ void __fastcall FUN_1104fa20(int param_1)
 // Reference entry 1104fb70; body size 302 bytes.
 #line 1 "ENTRY_1104fb70"
 
-undefined4 __fastcall FUN_1104fb70(int *param_1)
+undefined4 __fastcall FUN_1104fb70(int *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
  try {
@@ -8962,7 +8962,7 @@ undefined4 __thiscall Recovered_Bulk::FUN_11065d90(void *param_2,uint param_3,si
 // Reference entry 11065e30; body size 312 bytes.
 #line 1 "ENTRY_11065e30"
 
-void __fastcall FUN_11065e30(int param_1)
+void __fastcall FUN_11065e30(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
  try {

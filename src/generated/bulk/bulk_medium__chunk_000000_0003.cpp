@@ -299,24 +299,24 @@ extern void __stdcall FUN_1036b5d0(...);
 void __stdcall FUN_1036b650(undefined4 param_1,undefined4 param_2);
 extern void __stdcall FUN_1036b650(...);
 extern void __stdcall FUN_1036b650(...);
-void FUN_1036b680(void);
-extern void FUN_1036b680(...);
-extern void FUN_1036b680(...);
+void __stdcall FUN_1036b680(unsigned int recovered_unused_stack_0);
+void __stdcall FUN_1036b680(unsigned int recovered_unused_stack_0);
+void __stdcall FUN_1036b680(unsigned int recovered_unused_stack_0);
 void __stdcall FUN_1036b740(undefined4 param_1,undefined4 param_2);
 extern void __stdcall FUN_1036b740(...);
 extern void __stdcall FUN_1036b740(...);
-void __fastcall FUN_1036b770(int param_1);
-extern void __fastcall FUN_1036b770(...);
-extern void __fastcall FUN_1036b770(...);
-void __fastcall FUN_1036b7e0(int param_1);
-extern void __fastcall FUN_1036b7e0(...);
-extern void __fastcall FUN_1036b7e0(...);
-void __fastcall FUN_1036b800(int param_1);
-extern void __fastcall FUN_1036b800(...);
-extern void __fastcall FUN_1036b800(...);
-void FUN_1036b820(void);
-extern void FUN_1036b820(...);
-extern void FUN_1036b820(...);
+void __fastcall FUN_1036b770(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+void __fastcall FUN_1036b770(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+void __fastcall FUN_1036b770(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+void __fastcall FUN_1036b7e0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+void __fastcall FUN_1036b7e0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+void __fastcall FUN_1036b7e0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+void __fastcall FUN_1036b800(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+void __fastcall FUN_1036b800(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+void __fastcall FUN_1036b800(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+void __stdcall FUN_1036b820(unsigned int recovered_unused_stack_0);
+void __stdcall FUN_1036b820(unsigned int recovered_unused_stack_0);
+void __stdcall FUN_1036b820(unsigned int recovered_unused_stack_0);
 int FUN_1036d560(int param_1);
 extern int FUN_1036d560(...);
 extern int FUN_1036d560(...);
@@ -482,39 +482,39 @@ extern undefined1 FUN_1038da80(...);
 undefined4 __fastcall FUN_1038de80(int param_1);
 extern undefined4 __fastcall FUN_1038de80(...);
 extern undefined4 __fastcall FUN_1038de80(...);
-uint __fastcall FUN_1038f0b0(int param_1);
-extern uint __fastcall FUN_1038f0b0(...);
-extern uint __fastcall FUN_1038f0b0(...);
-uint __fastcall FUN_1038f0d0(int param_1);
-extern uint __fastcall FUN_1038f0d0(...);
-extern uint __fastcall FUN_1038f0d0(...);
-uint __fastcall FUN_1038f0f0(int param_1);
-extern uint __fastcall FUN_1038f0f0(...);
-extern uint __fastcall FUN_1038f0f0(...);
-uint __fastcall FUN_1038f110(int param_1);
-extern uint __fastcall FUN_1038f110(...);
-extern uint __fastcall FUN_1038f110(...);
-uint __fastcall FUN_1038f130(int param_1);
-extern uint __fastcall FUN_1038f130(...);
-extern uint __fastcall FUN_1038f130(...);
+uint __fastcall FUN_1038f0b0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+uint __fastcall FUN_1038f0b0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+uint __fastcall FUN_1038f0b0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+uint __fastcall FUN_1038f0d0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+uint __fastcall FUN_1038f0d0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+uint __fastcall FUN_1038f0d0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+uint __fastcall FUN_1038f0f0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+uint __fastcall FUN_1038f0f0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+uint __fastcall FUN_1038f0f0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+uint __fastcall FUN_1038f110(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+uint __fastcall FUN_1038f110(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+uint __fastcall FUN_1038f110(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+uint __fastcall FUN_1038f130(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+uint __fastcall FUN_1038f130(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+uint __fastcall FUN_1038f130(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
 void __stdcall FUN_1038f170(SCStr *param_1);
 extern void __stdcall FUN_1038f170(...);
 extern void __stdcall FUN_1038f170(...);
 void __stdcall FUN_1038f1a0(SCStr *param_1);
 extern void __stdcall FUN_1038f1a0(...);
 extern void __stdcall FUN_1038f1a0(...);
-void FUN_10391dd0(void);
-extern void FUN_10391dd0(...);
-extern void FUN_10391dd0(...);
-void FUN_10391f70(void);
-extern void FUN_10391f70(...);
-extern void FUN_10391f70(...);
+void __stdcall FUN_10391dd0(unsigned int recovered_unused_stack_0);
+void __stdcall FUN_10391dd0(unsigned int recovered_unused_stack_0);
+void __stdcall FUN_10391dd0(unsigned int recovered_unused_stack_0);
+void __stdcall FUN_10391f70(unsigned int recovered_unused_stack_0);
+void __stdcall FUN_10391f70(unsigned int recovered_unused_stack_0);
+void __stdcall FUN_10391f70(unsigned int recovered_unused_stack_0);
 void __fastcall FUN_10392ae0(int param_1);
 extern void __fastcall FUN_10392ae0(...);
 extern void __fastcall FUN_10392ae0(...);
-void __fastcall FUN_103936d0(undefined4 *param_1);
-extern void __fastcall FUN_103936d0(...);
-extern void __fastcall FUN_103936d0(...);
+void __fastcall FUN_103936d0(undefined4 *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2);
+void __fastcall FUN_103936d0(undefined4 *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2);
+void __fastcall FUN_103936d0(undefined4 *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2);
 void __fastcall FUN_10395b50(int param_1);
 extern void __fastcall FUN_10395b50(...);
 extern void __fastcall FUN_10395b50(...);
@@ -524,9 +524,9 @@ extern int __fastcall FUN_103965a0(...);
 void __fastcall FUN_103967f0(int param_1);
 extern void __fastcall FUN_103967f0(...);
 extern void __fastcall FUN_103967f0(...);
-void __fastcall FUN_103970a0(int param_1);
-extern void __fastcall FUN_103970a0(...);
-extern void __fastcall FUN_103970a0(...);
+void __fastcall FUN_103970a0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+void __fastcall FUN_103970a0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+void __fastcall FUN_103970a0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
 void __fastcall FUN_1039a9b0(int param_1);
 extern void __fastcall FUN_1039a9b0(...);
 extern void __fastcall FUN_1039a9b0(...);
@@ -590,9 +590,9 @@ extern undefined1 __fastcall FUN_103a2fb0(...);
 uint __fastcall FUN_103a30e0(int param_1);
 extern uint __fastcall FUN_103a30e0(...);
 extern uint __fastcall FUN_103a30e0(...);
-undefined4 * __fastcall FUN_103a6180(undefined4 *param_1);
-extern undefined4 * __fastcall FUN_103a6180(...);
-extern undefined4 * __fastcall FUN_103a6180(...);
+undefined4 * __fastcall FUN_103a6180(undefined4 *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+undefined4 * __fastcall FUN_103a6180(undefined4 *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+undefined4 * __fastcall FUN_103a6180(undefined4 *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
 undefined4 * __fastcall FUN_103a63b0(undefined4 *param_1);
 extern undefined4 * __fastcall FUN_103a63b0(...);
 extern undefined4 * __fastcall FUN_103a63b0(...);
@@ -656,12 +656,12 @@ extern undefined1 __fastcall FUN_103b8d90(...);
 undefined1 __fastcall FUN_103b8dd0(int param_1);
 extern undefined1 __fastcall FUN_103b8dd0(...);
 extern undefined1 __fastcall FUN_103b8dd0(...);
-uint __fastcall FUN_103b9400(int param_1);
-extern uint __fastcall FUN_103b9400(...);
-extern uint __fastcall FUN_103b9400(...);
-void __fastcall FUN_103ba040(int param_1);
-extern void __fastcall FUN_103ba040(...);
-extern void __fastcall FUN_103ba040(...);
+uint __fastcall FUN_103b9400(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+uint __fastcall FUN_103b9400(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+uint __fastcall FUN_103b9400(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+void __fastcall FUN_103ba040(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+void __fastcall FUN_103ba040(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+void __fastcall FUN_103ba040(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
 void __fastcall FUN_103ba080(int param_1);
 extern void __fastcall FUN_103ba080(...);
 extern void __fastcall FUN_103ba080(...);
@@ -675,9 +675,9 @@ extern int __fastcall FUN_103bc350(...);
 void __fastcall FUN_103bc380(int *param_1);
 extern void __fastcall FUN_103bc380(...);
 extern void __fastcall FUN_103bc380(...);
-undefined4 FUN_103bd6f0(short param_1);
-extern undefined4 FUN_103bd6f0(...);
-extern undefined4 FUN_103bd6f0(...);
+undefined4 __stdcall FUN_103bd6f0(short param_1, unsigned int recovered_unused_stack_0);
+undefined4 __stdcall FUN_103bd6f0(short param_1, unsigned int recovered_unused_stack_0);
+undefined4 __stdcall FUN_103bd6f0(short param_1, unsigned int recovered_unused_stack_0);
 int __fastcall FUN_103be170(int param_1);
 extern int __fastcall FUN_103be170(...);
 extern int __fastcall FUN_103be170(...);
@@ -699,9 +699,9 @@ extern void __fastcall FUN_103bebe0(...);
 uint __fastcall FUN_103bf220(int param_1);
 extern uint __fastcall FUN_103bf220(...);
 extern uint __fastcall FUN_103bf220(...);
-undefined4 * __fastcall FUN_103c0970(undefined4 *param_1);
-extern undefined4 * __fastcall FUN_103c0970(...);
-extern undefined4 * __fastcall FUN_103c0970(...);
+undefined4 * __fastcall FUN_103c0970(undefined4 *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+undefined4 * __fastcall FUN_103c0970(undefined4 *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+undefined4 * __fastcall FUN_103c0970(undefined4 *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
 void __fastcall FUN_103c1dd0(undefined4 *param_1);
 extern void __fastcall FUN_103c1dd0(...);
 extern void __fastcall FUN_103c1dd0(...);
@@ -741,18 +741,18 @@ extern SCStr * __stdcall FUN_103c82b0(...);
 SCStr * __stdcall FUN_103c82d0(SCStr *param_1);
 extern SCStr * __stdcall FUN_103c82d0(...);
 extern SCStr * __stdcall FUN_103c82d0(...);
-uint __fastcall FUN_103c96b0(int param_1);
-extern uint __fastcall FUN_103c96b0(...);
-extern uint __fastcall FUN_103c96b0(...);
+uint __fastcall FUN_103c96b0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+uint __fastcall FUN_103c96b0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+uint __fastcall FUN_103c96b0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
 undefined4 __stdcall FUN_103cbeb0(undefined4 param_1,undefined4 param_2,undefined4 param_3);
 extern undefined4 __stdcall FUN_103cbeb0(...);
 extern undefined4 __stdcall FUN_103cbeb0(...);
 void Catch_All_103cdade_103cdade(void);
 void Catch_All_103cdc55_103cdc55(void);
 void Catch_All_103cddb0_103cddb0(void);
-undefined4 * __fastcall FUN_103cef50(undefined4 *param_1);
-extern undefined4 * __fastcall FUN_103cef50(...);
-extern undefined4 * __fastcall FUN_103cef50(...);
+undefined4 * __fastcall FUN_103cef50(undefined4 *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+undefined4 * __fastcall FUN_103cef50(undefined4 *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+undefined4 * __fastcall FUN_103cef50(undefined4 *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
 void __fastcall FUN_103d0510(int param_1);
 extern void __fastcall FUN_103d0510(...);
 extern void __fastcall FUN_103d0510(...);
@@ -1513,7 +1513,7 @@ void __stdcall FUN_1036b650(undefined4 param_1,undefined4 param_2)
 // Reference entry 1036b680; body size 22 bytes.
 #line 1 "ENTRY_1036b680"
 
-void FUN_1036b680(void)
+void __stdcall FUN_1036b680(unsigned int recovered_unused_stack_0)
 
 {
   thunk_FUN_10cf4ae0(0);
@@ -1540,7 +1540,7 @@ void __stdcall FUN_1036b740(undefined4 param_1,undefined4 param_2)
 // Reference entry 1036b770; body size 23 bytes.
 #line 1 "ENTRY_1036b770"
 
-void __fastcall FUN_1036b770(int param_1)
+void __fastcall FUN_1036b770(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   thunk_FUN_10cf3780(*(undefined4 *)(param_1 + 4));
@@ -1562,7 +1562,7 @@ void __thiscall Recovered_Bulk::FUN_1036b7c0(undefined4 *param_2)
 // Reference entry 1036b7e0; body size 23 bytes.
 #line 1 "ENTRY_1036b7e0"
 
-void __fastcall FUN_1036b7e0(int param_1)
+void __fastcall FUN_1036b7e0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   thunk_FUN_10cf3780(*(undefined4 *)(param_1 + 4));
@@ -1573,7 +1573,7 @@ void __fastcall FUN_1036b7e0(int param_1)
 // Reference entry 1036b800; body size 23 bytes.
 #line 1 "ENTRY_1036b800"
 
-void __fastcall FUN_1036b800(int param_1)
+void __fastcall FUN_1036b800(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   thunk_FUN_10cf3780(*(undefined4 *)(param_1 + 4));
@@ -1584,7 +1584,7 @@ void __fastcall FUN_1036b800(int param_1)
 // Reference entry 1036b820; body size 23 bytes.
 #line 1 "ENTRY_1036b820"
 
-void FUN_1036b820(void)
+void __stdcall FUN_1036b820(unsigned int recovered_unused_stack_0)
 
 {
   thunk_FUN_1038c830();
@@ -2888,7 +2888,7 @@ undefined4 __fastcall FUN_1038de80(int param_1)
 // Reference entry 1038f0b0; body size 19 bytes.
 #line 1 "ENTRY_1038f0b0"
 
-uint __fastcall FUN_1038f0b0(int param_1)
+uint __fastcall FUN_1038f0b0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   uint in_EAX;
@@ -2907,7 +2907,7 @@ uint __fastcall FUN_1038f0b0(int param_1)
 // Reference entry 1038f0d0; body size 19 bytes.
 #line 1 "ENTRY_1038f0d0"
 
-uint __fastcall FUN_1038f0d0(int param_1)
+uint __fastcall FUN_1038f0d0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   uint in_EAX;
@@ -2926,7 +2926,7 @@ uint __fastcall FUN_1038f0d0(int param_1)
 // Reference entry 1038f0f0; body size 19 bytes.
 #line 1 "ENTRY_1038f0f0"
 
-uint __fastcall FUN_1038f0f0(int param_1)
+uint __fastcall FUN_1038f0f0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   uint in_EAX;
@@ -2945,7 +2945,7 @@ uint __fastcall FUN_1038f0f0(int param_1)
 // Reference entry 1038f110; body size 19 bytes.
 #line 1 "ENTRY_1038f110"
 
-uint __fastcall FUN_1038f110(int param_1)
+uint __fastcall FUN_1038f110(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   uint in_EAX;
@@ -2964,7 +2964,7 @@ uint __fastcall FUN_1038f110(int param_1)
 // Reference entry 1038f130; body size 19 bytes.
 #line 1 "ENTRY_1038f130"
 
-uint __fastcall FUN_1038f130(int param_1)
+uint __fastcall FUN_1038f130(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   uint in_EAX;
@@ -3060,7 +3060,7 @@ void __thiscall Recovered_Bulk::FUN_10390c70(int param_2)
 // Reference entry 10391dd0; body size 35 bytes.
 #line 1 "ENTRY_10391dd0"
 
-void FUN_10391dd0(void)
+void __stdcall FUN_10391dd0(unsigned int recovered_unused_stack_0)
 
 {
   thunk_FUN_112af4e0("SCHousehold",2,"Fire zone groups changed event.");
@@ -3072,7 +3072,7 @@ void FUN_10391dd0(void)
 // Reference entry 10391f70; body size 25 bytes.
 #line 1 "ENTRY_10391f70"
 
-void FUN_10391f70(void)
+void __stdcall FUN_10391f70(unsigned int recovered_unused_stack_0)
 
 {
   thunk_FUN_1039b470();
@@ -3100,7 +3100,7 @@ void __fastcall FUN_10392ae0(int param_1)
 // Reference entry 103936d0; body size 61 bytes.
 #line 1 "ENTRY_103936d0"
 
-void __fastcall FUN_103936d0(undefined4 *param_1)
+void __fastcall FUN_103936d0(undefined4 *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
 {
   undefined4 *puVar1;
@@ -3230,7 +3230,7 @@ void __fastcall FUN_103967f0(int param_1)
 // Reference entry 103970a0; body size 22 bytes.
 #line 1 "ENTRY_103970a0"
 
-void __fastcall FUN_103970a0(int param_1)
+void __fastcall FUN_103970a0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   if (*(int *)(param_1 + 0xf0) == 0) {
@@ -4088,7 +4088,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_103a5f20(int *param_2)
 // Reference entry 103a6180; body size 48 bytes.
 #line 1 "ENTRY_103a6180"
 
-undefined4 * __fastcall FUN_103a6180(undefined4 *param_1)
+undefined4 * __fastcall FUN_103a6180(undefined4 *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   void *pvVar1;
@@ -4584,7 +4584,7 @@ undefined1 __fastcall FUN_103b8dd0(int param_1)
 // Reference entry 103b9400; body size 19 bytes.
 #line 1 "ENTRY_103b9400"
 
-uint __fastcall FUN_103b9400(int param_1)
+uint __fastcall FUN_103b9400(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   uint in_EAX;
@@ -4603,7 +4603,7 @@ uint __fastcall FUN_103b9400(int param_1)
 // Reference entry 103ba040; body size 49 bytes.
 #line 1 "ENTRY_103ba040"
 
-void __fastcall FUN_103ba040(int param_1)
+void __fastcall FUN_103ba040(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   int iStack_14;
@@ -4696,7 +4696,7 @@ void __thiscall Recovered_Bulk::FUN_103bc490(undefined4 param_2)
 // Reference entry 103bd6f0; body size 16 bytes.
 #line 1 "ENTRY_103bd6f0"
 
-undefined4 FUN_103bd6f0(short param_1)
+undefined4 __stdcall FUN_103bd6f0(short param_1, unsigned int recovered_unused_stack_0)
 
 {
   return (undefined4)(((uint)(4) << 8 | (uint)(param_1 == 0x40c)));
@@ -4950,7 +4950,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_103c08b0(int *param_2)
 // Reference entry 103c0970; body size 48 bytes.
 #line 1 "ENTRY_103c0970"
 
-undefined4 * __fastcall FUN_103c0970(undefined4 *param_1)
+undefined4 * __fastcall FUN_103c0970(undefined4 *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   void *pvVar1;
@@ -5419,7 +5419,7 @@ LAB_103c9202:
 // Reference entry 103c96b0; body size 19 bytes.
 #line 1 "ENTRY_103c96b0"
 
-uint __fastcall FUN_103c96b0(int param_1)
+uint __fastcall FUN_103c96b0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   uint in_EAX;
@@ -5554,7 +5554,7 @@ int __thiscall Recovered_Bulk::FUN_103ce410(SCStr *param_2)
 // Reference entry 103cef50; body size 48 bytes.
 #line 1 "ENTRY_103cef50"
 
-undefined4 * __fastcall FUN_103cef50(undefined4 *param_1)
+undefined4 * __fastcall FUN_103cef50(undefined4 *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   void *pvVar1;
