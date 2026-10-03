@@ -73,7 +73,6 @@ using longlong = long long;
 using float10 = long double;
 using code = int(...);
 typedef unsigned int size_t;
-typedef int FILE;
 typedef unsigned long DWORD;
 typedef unsigned short WORD;
 typedef unsigned char BYTE;
@@ -104,8 +103,26 @@ typedef unsigned long long uint6;
 typedef long long int6;
 typedef unsigned long long uint7;
 typedef long long int7;
+typedef unsigned int uintptr_t;
+typedef int intptr_t;
+typedef struct { char _p[10]; } unkuint10;
+#define NAN 0.0f/0.0f
+#define INFINITY 1.0f/0.0f
 struct tm { int tm_sec; int tm_min; int tm_hour; int tm_mday; int tm_mon;
   int tm_year; int tm_wday; int tm_yday; int tm_isdst; };
+struct SYSTEMTIME { WORD wYear; WORD wMonth; WORD wDayOfWeek; WORD wDay;
+  WORD wHour; WORD wMinute; WORD wSecond; WORD wMilliseconds; };
+struct _jmp_buf { int _p[16]; };
+extern "C" void longjmp(void *, int);
+typedef struct { char _p[256]; } _wfinddata64i32_t;
+extern int vftable;
+typedef struct { char *_ptr; int _cnt; char *_base; int _flag;
+  int _file; int _charbuf; int _bufsiz; char *_tmpfname; char *ptr;
+  int cnt; void *base; int file; } _FILE_stub;
+typedef _FILE_stub FILE;
+typedef _FILE_stub _iobuf;
+struct facet { char _pad; };
+struct id { char _pad; };
 typedef long fpos_t;
 typedef struct { char _p; } _Mbstatet;
 struct GUID { char _pad; };
@@ -124,9 +141,22 @@ extern "C" void *calloc(size_t, size_t);
 extern "C" void *realloc(void *, size_t);
 extern "C" char *strcpy(char *, const char *);
 extern "C" wchar_t *wcscpy(wchar_t *, const wchar_t *);
-extern "C" char *strstr(char *, const char *);
+extern "C" char *strstr(void *, const void *);
 extern "C" int strcmp(const char *, const char *);
 extern "C" int wcscmp(const wchar_t *, const wchar_t *);
+extern "C" char *strchr(const void *, int);
+extern "C" char *strrchr(const void *, int);
+extern "C" char *strncpy(char *, const char *, size_t);
+extern "C" char *strcat(char *, const char *);
+extern "C" int strncmp(const char *, const char *, size_t);
+extern "C" int atoi(const char *);
+extern "C" int sprintf(char *, const char *, ...);
+extern "C" int snprintf(char *, size_t, const char *, ...);
+extern "C" int sscanf(const char *, const char *, ...);
+extern "C" long strtol(const char *, char **, int);
+extern "C" int fclose(void *);
+extern "C" int feof(void *);
+extern "C" int fflush(void *);
 extern "C" unsigned long __readfsdword(unsigned long);
 #pragma intrinsic(__readfsdword)
 '''
@@ -335,7 +365,7 @@ def _fieldrefs(source):
         var, start, end = match.group(1), int(match.group(2)), int(match.group(3))
         kind = INT_TYPE.get(end - start, 'uint')
         return f'*({kind} *)((char *)&{var} + {start})'
-    return re.sub(r'\b([A-Za-z_]\w*)\._(\d+)_(\d+)_', access, source)
+    return re.sub(r'\b([A-Za-z_]\w*(?:\s*\[[^\]]*\])?)\._(\d+)_(\d+)_', access, source)
 
 
 def _rename_definition(source, entry):
@@ -721,6 +751,37 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
             member_stubs.setdefault('__fields__', set()).update(flds)
             type_stubs.discard(('ptr', base))
             type_stubs.add(('struct', base))
+    # A scalar variable used with `.field`/`->field` is a struct pointer the
+    # decompiler mistyped (`uVar.wYear`, `local_11c->ptr`). Reinterpret the
+    # access through a field-bearing stub so the decl can stay scalar.
+    for var, vtype in _vtypes.items():
+        if vtype.rstrip().endswith('*'):
+            continue
+        flds = set(re.findall(r'\b' + re.escape(var) + r'\s*(?:->|\.)\s*'
+                              r'([A-Za-z_]\w*)', whole))
+        flds = {f for f in flds
+                if f not in {'_0_1_','_1_3_','_0_2_','_2_2_','_0_4_','_4_4_',
+                             '_0_8_','_8_8_','_0_12_','_12_4_','_0_16_'}
+                and not re.fullmatch(r'_\d+_\d+_', f)}
+        if not flds:
+            continue
+        member_stubs.setdefault('__scalarfields__', set()).update(flds)
+        member_stubs.setdefault('__sfields2__', set()).update(
+            re.findall(r'\b' + re.escape(var) + r'\s*(?:->|\.)\s*'
+                       r'([A-Za-z_]\w*)\s*\.', whole))
+        base = vtype.rstrip('*& ').rsplit(' ', 1)[-1]
+        if base in {'FILE', '_FILE_stub', 'SYSTEMTIME', 'tm', 'GUID'}:
+            result_body = re.sub(
+                r'\b' + re.escape(var) + r'\s*->\s*([A-Za-z_]\w*)',
+                r'(&' + var + r')->\1', result_body)
+            result_body = re.sub(
+                r'\b' + re.escape(var) + r'\s*\.\s*([A-Za-z_]\w*)',
+                var + r'.\1', result_body)
+        else:
+            result_body = re.sub(r'\b' + re.escape(var) + r'\s*\.\s*([A-Za-z_]\w*)',
+                          r'(*(struct __RFLD *)&' + var + r').\1', result_body)
+            result_body = re.sub(r'\b' + re.escape(var) + r'\s*->\s*([A-Za-z_]\w*)',
+                          r'((struct __RFLD *)(' + var + r'))->\1', result_body)
     # A capitalized name used only in `Name(` call position is a real
     # function (``GetSystemTimeAsFileTime(&x)``). The extern shadows the
     # struct stub in expression contexts, which also resolves the
@@ -1109,7 +1170,7 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
             continue
         _qname = (r'[A-Za-z_]\w*(?:\s*<[^()]*>)?'
                   r'(?:::[A-Za-z_]\w*(?:\s*<[^()]*>)?)*')
-        _cast_operand = (r'(?:&?\s*' + _qname + r'|0x[0-9a-fA-F]+|\d+'
+        _cast_operand = (r'(?:&?\s*' + _qname + r'|0x[0-9a-fA-F]+[uUlL]*|\d+[uUlLfF]*'
                          r'|(?:\((?:[^()]|\((?:[^()]|\([^()]*\))*\))*\)\s*)+'
                          r'(?:[^,;()<>|&]|&\s*[A-Za-z_]'
                          r'|\((?:[^()]|\((?:[^()]|\([^()]*\))*\))*\))*)')
@@ -1133,7 +1194,7 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
             return match.group(1) + f'({target})({operand.replace(chr(32), "") if chr(38) in operand else operand})'
         body = re.sub(r'(?<![*&])(\b' + re.escape(name) + r'\s*' + _CMP + r'\s*)(?<![*&])(' + _cast_operand + r')',
                       retarget_rhs, body)
-        body = re.sub(r'(?<![*&])(?<![-+*/%])(?<![-+*/%]\s)(&?\s*\b' + _qname + r')\s*(' + _CMP + r')\s*(?<![*&])(\b' + re.escape(name) + r'\b)',
+        body = re.sub(r'(?<![*&])(?<![-+*/%])(?<![-+*/%]\s)(&?\s*\b' + _qname + r'|0x[0-9a-fA-F]+[uUlL]*|\d+[uUlLfF]*)\s*(' + _CMP + r')\s*(?<![*&])(\b' + re.escape(name) + r'\b)',
                       lambda m: m.group(0)
                       if re.fullmatch(r'__QSTR\d+Q__', m.group(1).strip())
                       else f'({target})({m.group(1).replace(" ", "")}) {m.group(2)} {m.group(3)}', body)
@@ -1147,6 +1208,18 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         # pointer cast must drop to the element type, not the other side up.
         if target.rstrip().endswith('*'):
             _elem = target.rstrip()[:-1].rstrip() or 'void'
+            # `*name op other`: the pointee is a scalar, so the other side
+            # drops to the element type rather than gaining a level.
+            body = re.sub(
+                r'\*(\s*\b' + re.escape(name) + r'\b)\s*(' + _CMP +
+                r')\s*(&?\s*\b' + _qname + r'|0x[0-9a-fA-F]+|\d+)',
+                lambda m: f'*{m.group(1)} {m.group(2)} ({_elem})({m.group(3).replace(" ", "")})',
+                body)
+            body = re.sub(
+                r'(&?\s*\b' + _qname + r'|0x[0-9a-fA-F]+|\d+)\s*(' + _CMP +
+                r')\s*\*(\s*\b' + re.escape(name) + r'\b)',
+                lambda m: f'({_elem})({m.group(1).replace(" ", "")}) {m.group(2)} *{m.group(3)}',
+                body)
             _idx_operand = (r'(?:\(\s*[A-Za-z_]\w*\s*\)|[A-Za-z_]\w*'
                             r'|0x[0-9a-fA-F]+|\d+)')
             body = re.sub(
@@ -1221,7 +1294,7 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
     body = re.sub(
         r'(\**\s*\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)'
         r'(?:\((?:[^()]|\([^()]*\))*\)|[^,;()])*?)'
-        r'\s*(==|!=|<=|>=)\s*((?<![\w])\*?\s*' + _CAST_OPERAND + r')',
+        r'\s*(' + _CMP + r')\s*((?<![\w])\*?\s*' + _CAST_OPERAND + r')',
         cast_operand, body)
     def cast_operand_rhs(match):
         operand, op, expr, ctype = (match.group(1), match.group(3),
@@ -1270,10 +1343,32 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         r'(?<![-+*/%])(?<![-+*/%]\s)(?<![-+*/%]\s\s)'
         r'((?:\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)\s*)?'
         r'(?:\*|(?<![&])(?<=[)(,=!~;{}<>&|^?:+\-*/%])&)?\s*(?<![\w])'
-        + _CAST_OPERAND + r')\s*(==|!=|<=|>=)\s*'
+        + _CAST_OPERAND + r')\s*(' + _CMP + r')\s*'
         r'(\**\s*\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)'
         r'(?:\((?:[^()]|\([^()]*\))*\)|(?!\|\||&&)[^,;()])*)',
         cast_operand_rhs, body)
+    # `(int)x op (T *)y`` compares a value cast to a pointer cast; Ghidra
+    # often writes `(int)ptr < N` where ``N`` was cast to the pointer type
+    # instead. Retarget the scalar cast head to the pointer type.
+    _scalar_cast = (r'\(\s*(?:u?int|short|ushort|char|byte|bool|long|'
+                    r'longlong|float|double|undefined\d|sbyte|size_t|'
+                    r'uint3|uint5|uint6|uint7|DWORD)\s*\)')
+    _cmp_tail = (r'((?:\((?:[^()]|\([^()]*\))*\)\s*)*\s*\**\s*'
+                 r'(?:[A-Za-z_]\w*\s*(?:\[[^\]]*\])?|\((?:[^()]|\([^()]*\))*\))'
+                 r'(?:\s*[-+]\s*[^,;()<>!=|&]*)?)')
+    body = re.sub(
+        r'(?<![-+*/%])(?<![-+*/%]\s)(?<![-+*/%]\s\s)' +
+        _scalar_cast + _cmp_tail + r'\s*(' + _CMP +
+        r')\s*\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)',
+        lambda m: '(' + m.group(3) + ')' + m.group(1) + ' ' + m.group(2)
+        + ' (' + m.group(3) + ')',
+        body)
+    body = re.sub(
+        r'\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)\s*(' + _CMP +
+        r')\s*' + _scalar_cast + _cmp_tail,
+        lambda m: '(' + m.group(1) + ') ' + m.group(2) + ' ('
+        + m.group(1) + ')' + m.group(3),
+        body)
     # `x == (StubType)0` compares a scalar to a default-constructed stub; the
     # literal carries no type, so drop the value cast.
     body = re.sub(
@@ -1286,6 +1381,75 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
     # address, so load a pointer instead (`*(T **)x`).
     body = re.sub(r'\*(\s*\*\s*\(\s*(?:u?int|undefined\d|byte|char|short|long)\s*)\*(\s*\))',
                   r'*\1**\2', body)
+    # `switch(ptrvar)` and `case (T *)0xN:` carry pointer types into a
+    # context requiring an integer; reinterpret the discriminant as uint.
+    for name, target in varmap.items():
+        if target.rstrip().endswith('*'):
+            body = re.sub(r'\bswitch\s*\(\s*' + re.escape(name) + r'\s*\)',
+                          f'switch ((uint)({name}))', body)
+    body = re.sub(r'\bcase\s*\(\s*[A-Za-z_][\w:<>\s]*?\s*\*+\s*\)\s*'
+                  r'\(?\s*(0x[0-9a-fA-F]+|\d+)\s*\)?\s*:',
+                  r'case \1:', body)
+    # `floatvar`, `floatvar[i]` or `*floatvar` cast to a pointer type:
+    # evaluate the value then fold a zero — the C-style cast cannot
+    # convert a float value to a pointer directly.
+    for name, target in varmap.items():
+        if target.rstrip().rstrip('*').strip() in ('float', 'double', 'float10'):
+            body = re.sub(
+                r'\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)\s*\(\s*('
+                + re.escape(name) + r'(?:\s*\[[^\]]*\])?)\s*\)',
+                lambda m: f'({m.group(1)})({m.group(2)}, 0)', body)
+            body = re.sub(
+                r'\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)\s*'
+                + re.escape(name) + r'(\s*\[[^\]]*\])',
+                lambda m: f'({m.group(1)})({name}{m.group(2)}, 0)', body)
+            if target.count('*') == 1:
+                body = re.sub(
+                    r'\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)\s*'
+                    r'\(*\s*\*\s*' + re.escape(name) + r'\b\s*\)*',
+                    lambda m: f'({m.group(1)})(*{name}, 0)', body)
+    # `(float)ptrvar` — the value cast needs the address as an integer.
+    for name, target in varmap.items():
+        if target.rstrip().endswith('*'):
+            body = re.sub(
+                r'\(\s*(float|double|float10)\s*\)\s*'
+                r'\(?\s*' + re.escape(name) + r'\s*\)?',
+                lambda m: f'({m.group(1)})(uint)({name})', body)
+    # `*(T **)x` used as an integer operand (`iVar * *(T **)x`): the
+    # pointer load is only plausible at one less indirection.
+    body = re.sub(
+        r'(?<=[-+*/%])\s*\*\s*\(\s*([A-Za-z_][\w:<>\s]*?)\s*\*\*\s*\)',
+        r' *(\1 *)', body)
+    # `* *(T *)x` — the second-level load was spelled through a single
+    # pointer cast; restore the missing indirection.
+    body = re.sub(
+        r'(?<![\w\]\)])\*\s*\*\s*\(\s*([A-Za-z_][\w:<>\s]*?)\s*\*\s*\)',
+        r'**(\1 **)', body)
+    # `*scalarvar` — the variable holds an address; spell the load.
+    for var, vtype in _vtypes.items():
+        if vtype.rstrip().endswith('*'):
+            continue
+        def _star(m, var=var):
+            pre = body[:m.start()].rstrip()
+            if (pre and pre[-1] not in '=,([{;:!&|+-*/<>^~?:'
+                    and not re.search(r'\breturn\s*$', pre)):
+                return m.group(0)
+            return '*(int *)' + var
+        body = re.sub(r'\*\s*\b' + re.escape(var) + r'\b', _star, body)
+    # `(T *)(num)` compared with an integer — the address literal is a
+    # plain integer operand.
+    body = re.sub(
+        r'(==|!=|<=|>=)\s*\(\s*[A-Za-z_][\w:<>\s]*?\s*\*+\s*\)\s*'
+        r'\(?\s*(0x[0-9a-fA-F]+|\d+)\s*\)?',
+        r'\1 (uint)\2', body)
+    body = re.sub(
+        r'\(\s*[A-Za-z_][\w:<>\s]*?\s*\*+\s*\)\s*'
+        r'\(?\s*(0x[0-9a-fA-F]+|\d+)\s*\)?\s*(==|!=|<=|>=)',
+        r'(uint)\1 \2', body)
+    # `(void *)x +/- n` is invalid arithmetic; the address arithmetic is
+    # byte-granular so `char *` carries the same meaning.
+    body = re.sub(r'\(\s*void\s*\*\s*\)\s*(?=[A-Za-z_(][\w.\[\]()+ \s>*-]*[-+])',
+                  '(char *)', body)
     # `(&name) op ...` treats the address as an integer: shifts, masks and
     # even +/- are byte arithmetic in pcode, not pointer arithmetic.
     body = re.sub(r'\(\s*&\s*([A-Za-z_]\w*)\s*\)\s*'
@@ -1313,15 +1477,54 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
     # cannot decay where Ghidra treats them as values; use their address.
     for name in arrays:
         body = re.sub(r'(?<![*&\w])(?<![*&]\s)\b' + re.escape(name)
-                      + r'\b(?!\s*\[)', '(uint)&' + name, body)
+                      + r'\b(?!\s*\[)(?!\s*\)\s*\[)', '(uint)&' + name, body)
+    # `name[i]` on a scalar or data extern is a pointer the decompiler
+    # mistyped (`param_3[-4]`, `DAT_x[-1]`); subscript through the address.
+    _scalar_bases = re.compile(
+        r'^(?:u?int|short|ushort|char|byte|bool|long|longlong|ulong|'
+        r'ulonglong|float|double|undefined\d|sbyte|uint3|size_t|DWORD|'
+        r'LONG|HRESULT|UINT|int3|int5|int6|int7|uint5|uint6|uint7|'
+        r'fpos_t|intptr_t|uintptr_t|__time64_t|float10|s?code|DWORD|WORD|'
+        r'BYTE|BOOL|WCHAR|uchar|sbyte)\s*$')
+    for name, target in varmap.items():
+        if not target.rstrip().endswith('*') and name not in arrays:
+            base = target.rstrip()
+            elem = base if _scalar_bases.match(base) else 'int'
+            body = re.sub(r'\b' + re.escape(name) + r'(?=\s*\[)',
+                          f'(({elem} *)&{name})', body)
+    body = re.sub(r'\b(DAT_\w+|PTR_\w+)(?=\s*\[)', r'((int *)&\1)', body)
     # In libc call position a `void *` is expected, not the `uint` form used
     # for arithmetic.
     def _libc_args(match):
-        return re.sub(r'\(\s*uint\s*\)\s*&', '(void *)&', match.group(0))
+        text = re.sub(r'\(\s*uint\s*\)\s*&', '(void *)&', match.group(0))
+        fname, _, rest = text.partition('(')
+        depth = 0
+        commas, end = [], len(rest) - 1
+        for i, ch in enumerate(rest):
+            if ch == '(':
+                depth += 1
+            elif ch == ')':
+                if depth == 0:
+                    end = i
+                    break
+                depth -= 1
+            elif ch == ',' and depth == 0:
+                commas.append(i)
+        parts, prev = [], 0
+        for c in commas + [end]:
+            parts.append(rest[prev:c])
+            prev = c + 1
+        for i in range(min(2, len(parts))):
+            seg = parts[i].strip()
+            t = varmap.get(seg)
+            if (t is not None and not t.rstrip().endswith('*')
+                    and _scalar_bases.match(t.rstrip())):
+                parts[i] = ' (void *)(%s) ' % seg
+        return fname + '(' + ','.join(parts) + rest[end:]
     body = re.sub(
         r'\b(?:memset|memcpy|memcmp|memmove|strlen|wcslen|strcpy|wcscpy|'
         r'strcmp|wcscmp|strstr|fread|fwrite|free|realloc|calloc|malloc)'
-        r'\((?:[^()]|\([^()]*\))*\)', _libc_args, body)
+        r'\((?:[^()]|\((?:[^()]|\([^()]*\))*\))*\)', _libc_args, body)
     if ret_type and ret_type != 'void':
         body = re.sub(r'\breturn\s+((?:(?!\b(?:goto|return|break|continue|case|default|else|do|switch|if|while|for)\b)[^;{}])*);',
                       lambda m: f'return ({ret_type})({m.group(1).strip()});', body)
@@ -1453,14 +1656,16 @@ def cpp_source(records, defined, bad_decls=()):
             extern_decls.append(f'extern int {name};')
     tree = {}
     for qualifier, leaves in member_stubs.items():
-        if qualifier in ('__fields__', '__fcall__', ''):
+        if qualifier in ('__fields__', '__fcall__', '__scalarfields__',
+                         '__sfields2__', ''):
             continue
         node = tree
         for part in qualifier.split('::'):
             node = node.setdefault(part.split('<')[0].strip() or '_t', {})
         node.setdefault('__leaves__', set()).update(leaves)
     for qualifier, methods in member_methods.items():
-        if qualifier in ('__fields__', '__fcall__', ''):
+        if qualifier in ('__fields__', '__fcall__', '__scalarfields__',
+                         '__sfields2__', ''):
             continue
         node = tree
         for part in qualifier.split('::'):
@@ -1469,12 +1674,24 @@ def cpp_source(records, defined, bad_decls=()):
 
     fcalls = member_stubs.get('__fcall__', set())
     fields = member_stubs.get('__fields__', set()) - fcalls
+    scalar_fields = member_stubs.get('__scalarfields__', set())
+    scalar_fields2 = member_stubs.get('__sfields2__', set())
+    if scalar_fields:
+        decls.append('struct __RFLD2 { ' + ''.join(
+            f'int {f}; ' for f in sorted(scalar_fields)
+            if f.isidentifier()) + '};')
+        decls.append('struct __RFLD { ' + ''.join(
+            f'__RFLD2 {f}; ' if f in scalar_fields2 else f'int {f}; '
+            for f in sorted(scalar_fields)
+            if f.isidentifier()) + '};')
     def field_decls_for(owner):
         return (''.join(f' static int {f};' for f in sorted(fields)
-                        if f.isidentifier() and f != owner) +
+                        if f.isidentifier() and f != owner
+                        and f not in {'operator', 'new', 'delete'}) +
                 ''.join(f' template<class... A> static int {f}(A...);'
                         for f in sorted(fcalls)
-                        if f.isidentifier() and f != owner))
+                        if f.isidentifier() and f != owner
+                        and f not in {'operator', 'new', 'delete'}))
 
     ops = (' template<class T> int operator==(T);'
            ' template<class T> int operator!=(T);'
@@ -1513,11 +1730,19 @@ def cpp_source(records, defined, bad_decls=()):
         methods = node.get('__methods__', set())
         # Free static decls without a body are a hard error under MSVC
         # (C2129); a trivial body also stays valid inside struct members.
-        inner = ''.join(
-            f' static int {method}(...) {{ return 0; }}' if method.startswith('op_')
-            else f' template<class... A> static int {method}(A...) {{ return 0; }}'
-            for method in sorted(methods)
-            if method.isidentifier() and method != owner)
+        inner = ''
+        for method in sorted(methods):
+            if method.startswith('tdata:'):
+                leaf = method[6:]
+                if leaf.isidentifier() and leaf != owner:
+                    inner += f' template<class T> static int {leaf};'
+            elif not (method.isidentifier() and method != owner):
+                continue
+            elif method.startswith('op_'):
+                inner += f' static int {method}(...) {{ return 0; }}'
+            else:
+                inner += (f' template<class... A> static int '
+                          f'{method}(A...) {{ return 0; }}')
         inner += ''.join(
             (f' typedef int {leaf};' if leaf in arg_tokens
              else f' static int {leaf};')
@@ -1568,6 +1793,20 @@ def cpp_source(records, defined, bad_decls=()):
     for name in std_names:
         tree.pop(name, None)
         type_stubs = {kn for kn in type_stubs if kn[1].split('::')[-1] != name}
+    # Qualified stubs (`X::m<T>` template ids, `A::B` types) declare the
+    # leaf *inside* the owner — a global twin would not be found through
+    # the `X::` qualification.
+    for kind, name in sorted(type_stubs):
+        if '::' not in name or kind == 'nstemplate':
+            continue
+        owner, _, leaf = name.rpartition('::')
+        node = tree
+        for part in owner.split('::'):
+            node = node.setdefault(part.split('<')[0].strip() or '_t', {})
+        if kind == 'ptr':
+            node.setdefault('__leaves__', set()).add(leaf)
+        else:
+            node.setdefault('__methods__', set()).add('tdata:' + leaf)
     for name, child in sorted(tree.items()):
         decls.append(f'{"template<class...> " if ("template", name) in type_stubs else ""}'
                      f'struct {name} {{ char _pad; {name}(...);{ops}'
@@ -1578,6 +1817,9 @@ def cpp_source(records, defined, bad_decls=()):
             type_stubs,
             key=lambda kn: (kn[0] in ('ptr',), kn)):
         leaf_name = name.split('::')[-1]
+        # Qualified names were routed into their owner node above.
+        if '::' in name and kind != 'nstemplate':
+            continue
         # A name already declared inside namespace std must not get a global
         # twin: ``using namespace std`` would make every use ambiguous. A
         # typedef ('ptr') stub also yields to a template/struct stub for the
@@ -1606,6 +1848,11 @@ def cpp_source(records, defined, bad_decls=()):
             decls.append(f'namespace std {{ template<class...> struct {leaf_name} '
                          f'{{ char _pad; {leaf_name}(...);{ops}'
                          f'{extra}{field_decls_for(leaf_name)} }}; }}')
+        elif leaf_name.startswith('_func_'):
+            # Ghidra function-pointer typedef (`_func_void_void_ptr`): the
+            # value is called through `(*var)(args)`, so it must be a real
+            # function type, not `void *`.
+            decls.append(f'typedef void (*{leaf_name})(...);')
         else:
             decls.append(f'typedef void *{leaf_name};')
     for stub, methods in sorted(stubs.items()):
