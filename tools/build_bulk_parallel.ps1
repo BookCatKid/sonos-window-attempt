@@ -11,11 +11,15 @@ $jobs = @()
     for ($i = $_; $i -lt $files.Count; $i += $workers) {
         $my += $files[$i]
     }
-    # ArgumentList splats arrays, so wrap the slice to keep it one argument.
+    # ArgumentList splats arrays, so pass the slice as one joined string and
+    # split it back apart inside the job.
+    $joined = $my -join "`n"
     $jobs += Start-Job -ScriptBlock {
-        param([string[]]$files, [string]$root)
+        param([string]$fileList, [string]$root)
         Set-Location $root
-        foreach ($f in $files) {
+        foreach ($f in ($fileList -split "`n")) {
+            if (-not $f) { continue }
+            $f = $f.Trim()
             $name = [IO.Path]::GetFileNameWithoutExtension($f)
             & cl /nologo /O2 /bigobj /MD /GS /GR /EHsc /Zi /c `
                 "/Foout\$name.obj" $f *> "out\$name.log"
@@ -23,7 +27,7 @@ $jobs = @()
                 "$f" | Out-File -Append -Encoding ascii out\bulk-failures.log
             }
         }
-    } -ArgumentList (, $my), $root
+    } -ArgumentList $joined, $root
 }
 $jobs | Wait-Job | Out-Null
 $jobs | Receive-Job
