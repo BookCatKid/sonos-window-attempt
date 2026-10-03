@@ -514,6 +514,9 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
     # capitalized-name scan misses them.
     for name in re.findall(r'\b(_func_\w+)\b', whole):
         type_stubs.add(('ptr', name))
+    # _Capitalized enum/typedef names used in casts ((  _SCFixedSCUriID)&x).
+    for name in re.findall(r'\(\s*(_[A-Z]\w+)\s*\)', whole):
+        type_stubs.add(('ptr', name))
     whole = re.sub(r'\bthis\b', 'this_', whole)
     head_end = whole.find('{')
     sig = whole[:head_end]
@@ -871,7 +874,12 @@ def cpp_source(records, defined, bad_decls=()):
            ' template<class... A> int operator()(A...);'
            ' int operator++(); int operator++(int);'
            ' int operator--(); int operator--(int);'
-           ' int operator!();')
+           ' int operator!();'
+           # stub objects freely convert to any scalar/pointer so Ghidra's
+           # function-name stubs and class temps cast like the reference's
+           # pointers (conversion is compile-time only; value is `_pad`)
+           ' template<class T> operator T*();'
+           ' template<class T> operator T();')
 
     def emit_tree(node):
         methods = node.get('__methods__', set())
