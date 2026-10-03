@@ -993,9 +993,12 @@ def cpp_source(records, defined, bad_decls=()):
 
     fcalls = member_stubs.get('__fcall__', set())
     fields = member_stubs.get('__fields__', set()) - fcalls
-    field_decls = (''.join(f' static int {f};' for f in sorted(fields) if f.isidentifier()) +
-                   ''.join(f' template<class... A> static int {f}(A...);'
-                           for f in sorted(fcalls) if f.isidentifier()))
+    def field_decls_for(owner):
+        return (''.join(f' static int {f};' for f in sorted(fields)
+                        if f.isidentifier() and f != owner) +
+                ''.join(f' template<class... A> static int {f}(A...);'
+                        for f in sorted(fcalls)
+                        if f.isidentifier() and f != owner))
 
     ops = (' template<class T> int operator==(T);'
            ' template<class T> int operator!=(T);'
@@ -1019,18 +1022,19 @@ def cpp_source(records, defined, bad_decls=()):
            ' template<class T> operator T*();'
            ' template<class T> operator T();')
 
-    def emit_tree(node):
+    def emit_tree(node, owner=''):
         methods = node.get('__methods__', set())
         inner = ''.join(f' template<class... A> static int {method}(A...);'
-                        for method in sorted(methods) if method.isidentifier())
+                        for method in sorted(methods)
+                        if method.isidentifier() and method != owner)
         inner += ''.join(f' static int {leaf};'
                          for leaf in sorted(set(node.get('__leaves__', ())) - methods)
-                         if leaf.isidentifier())
+                         if leaf.isidentifier() and leaf != owner)
         for name, child in sorted(node.items()):
             if name in ('__leaves__', '__methods__'):
                 continue
             inner += (f' struct {name} {{ char _pad; {name}(...);{ops}'
-                      f'{field_decls}{emit_tree(child)} }};')
+                      f'{field_decls_for(name)}{emit_tree(child, name)} }};')
         return inner
 
     nstemplates = {name.split('::')[-1] for kind, name in type_stubs if kind == 'nstemplate'}
@@ -1042,7 +1046,7 @@ def cpp_source(records, defined, bad_decls=()):
         decls.append(f'namespace std {{{emit_tree(std_node)}}}')
     for name, child in sorted(tree.items()):
         decls.append(f'struct {name} {{ char _pad; {name}(...);{ops}'
-                     f'{field_decls}{emit_tree(child)} }};')
+                     f'{field_decls_for(name)}{emit_tree(child, name)} }};')
     emitted_types = set(tree.keys())
     for kind, name in sorted(type_stubs):
         leaf_name = name.split('::')[-1]
@@ -1054,18 +1058,21 @@ def cpp_source(records, defined, bad_decls=()):
         emitted_types.add(leaf_name)
         if kind == 'struct':
             decls.append(f'struct {leaf_name} {{ char _pad; {leaf_name}(...);{ops}'
-                         f'{field_decls} }};')
+                         f'{field_decls_for(leaf_name)} }};')
         elif kind == 'template':
             decls.append(f'template<class...> struct {leaf_name} '
-                         f'{{ char _pad; {leaf_name}(...);{ops}{field_decls} }};')
+                         f'{{ char _pad; {leaf_name}(...);{ops}'
+                         f'{field_decls_for(leaf_name)} }};')
         elif kind == 'nstemplate':
             decls.append(f'namespace std {{ template<class...> struct {leaf_name} '
-                         f'{{ char _pad; {leaf_name}(...);{ops}{field_decls} }}; }}')
+                         f'{{ char _pad; {leaf_name}(...);{ops}'
+                         f'{field_decls_for(leaf_name)} }}; }}')
         else:
             decls.append(f'typedef void *{leaf_name};')
     for stub, methods in sorted(stubs.items()):
         decls.append(f'struct {stub} {{ {stub}(...);{ops}' + ''.join(
-            f' int {method}(...);' for method in sorted(methods)) + ' };')
+            f' static int {method}(...);' for method in sorted(methods)
+            if method != stub) + ' };')
     decls.append('using namespace std;')
     decl_lines = [line for line in decls + forward if line not in bad_decls]
     return (HEADER + '\n'.join(decl_lines) + '\n' +
