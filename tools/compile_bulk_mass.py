@@ -998,12 +998,12 @@ _NOT_TYPES = {'return', 'if', 'while', 'for', 'do', 'else', 'case', 'switch',
               'operator', 'this', 'assert'}
 _DECL_RE = re.compile(
     r'^\s*((?:const\s+|unsigned\s+|signed\s+|struct\s+|long\s+|short\s+)*)'
-    r'([A-Za-z_][\w:]*(?:<(?:[^()<>]|<[^()<>]*>)*>)*)(\s*\*+\s*|\s+)'
+    r'([A-Za-z_][\w:]*(?:<(?:[^()<>]|<(?:[^()<>]|<[^()<>]*>)*>)*>)*)(\s*\*+\s*|\s+)'
     r'([A-Za-z_]\w*)\s*(?=[;=,\)\[])',
     re.M)
 _PARAM_RE = re.compile(
     r'((?:const\s+|unsigned\s+|signed\s+|struct\s+|long\s+|short\s+)*)'
-    r'([A-Za-z_][\w:]*(?:<(?:[^()<>]|<[^()<>]*>)*>)*)(\s*\*+\s*|\s+)'
+    r'([A-Za-z_][\w:]*(?:<(?:[^()<>]|<(?:[^()<>]|<[^()<>]*>)*>)*>)*)(\s*\*+\s*|\s+)'
     r'([A-Za-z_]\w*)\s*(?=[,\)]|$)')
 
 
@@ -1039,6 +1039,23 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
                   _blank_str, body)
     body = re.sub(r'/\*.*?\*/', '', body, flags=re.S)
     varmap = _varmap(body, decl_text)
+    # Pure declaration lines (`type name;`) hide template <> and commas
+    # that compare/cast passes would misread as operators. Blank them for
+    # the duration of the pass; varmap was already collected above.
+    _decls = []
+    def _blank_decl(match):
+        line = match.group(0)
+        if '(' in line or line.lstrip().startswith((
+                'return', 'if', 'while', 'for', 'do', 'else', 'switch',
+                'case', 'goto', 'typedef', 'using')):
+            return line
+        _decls.append(line)
+        return f'__DECL{len(_decls) - 1}__;'
+    body = re.sub(
+        r'(?m)^\s*(?:const\s+|unsigned\s+|signed\s+|struct\s+|long\s+|'
+        r'short\s+)*[A-Za-z_][\w:]*(?:<(?:[^()<>]|<(?:[^()<>]|<[^()<>]*>)*>)'
+        r'*>)?\s*(?:\*+\s*)*[A-Za-z_]\w*(?:\s*\[[^\]]*\])?\s*;[^\n]*$',
+        _blank_decl, body)
     for kind, name in externs:
         varmap.setdefault(name, {'data': 'int', 'ptr': 'int *', 'vptr': 'void *',
                                  'str': 'char *', 'lab': 'undefined1 *'}.get(kind, 'int'))
@@ -1090,7 +1107,7 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         probe = rhs
         for _ in range(8):
             stripped = re.sub(
-                r'^\s*\(\s*[A-Za-z_][\w:<>,\s]*?\*?\s*\)', '', probe)
+                r'^\s*\(\s*[A-Za-z_][\w:<>,\s]*?\*+\s*\)', '', probe)
             if stripped == probe:
                 break
             probe = stripped
@@ -1127,7 +1144,8 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
     # `T name[N]` declarations: the declared type in varmap is the element
     # type; array names cannot be assigned or used as scalar values.
     arrays = set(re.findall(r'\b(?!(?:return|goto|if|else|while|for|do|switch|case|sizeof)\b)'
-                            r'[\w:<>]+[\s*&]+([A-Za-z_]\w*)\s*\[[^\]]*\]\s*;', body))
+                            r'[\w:<>]+[\s*&]+([A-Za-z_]\w*)\s*\[[^\]]*\]\s*;',
+                            '\n'.join(_decls) + '\n' + body))
     def cast_rhs(match):
         name, rhs = match.group(1), match.group(2)
         target = varmap.get(name)
@@ -1819,6 +1837,10 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         r'\b(?:memset|memcpy|memcmp|memmove|strlen|wcslen|strcpy|wcscpy|'
         r'strcmp|wcscmp|strstr|fread|fwrite|free|realloc|calloc|malloc)'
         r'\((?:[^()]|\((?:[^()]|\([^()]*\))*\))*\)', _libc_args, body)
+    # `()(` — an emptied operand group glued to a cast: `(int *)()(((x)))`.
+    body = re.sub(r'\)\s*\(\s*\)\s*(?=\()', ')', body)
+    body = re.sub(r'__DECL(\d+)__;',
+                  lambda m: _decls[int(m.group(1))], body)
     if ret_type and ret_type != 'void':
         body = re.sub(r'\breturn\s+((?:(?!\b(?:goto|return|break|continue|case|default|else|do|switch|if|while|for)\b)[^;{}])*);',
                       lambda m: f'return ({ret_type})({m.group(1).strip()});', body)
