@@ -169,9 +169,12 @@ def _scan_qualified_name(text, start):
         close = _balanced(text, end, '<', '>')
         if close < 0:
             return None
-        if text[close + 1:close + 3] != '::':
+        after = close + 1
+        while after < len(text) and text[after].isspace():
+            after += 1
+        if text[after:after + 2] != '::':
             return None
-        qualifier, pos, templated = leaf, close + 1, True
+        qualifier, pos, templated = leaf, after, True
     elif text[end:end + 2] == '::':
         qualifier, pos = leaf, end
     else:
@@ -308,8 +311,8 @@ def _operators(body):
         if ops in _OP_TAGS:
             return match.group(1) + _OP_TAGS[ops] + '('
         return match.group(0)
-    body = re.sub(r'\b((?:\w+::)+)operator\s*([^\w\s]*)\s*\(', tag, body)
-    body = re.sub(r'([.>])\s*operator\s*([^\w\s]*)\s*\(',
+    body = re.sub(r'\b((?:\w+::)+)operator\s*([^\w\s(]*)\s*\(', tag, body)
+    body = re.sub(r'([.>])\s*operator\s*([^\w\s(]*)\s*\(',
                   lambda m: m.group(1) + _OP_TAGS.get(m.group(2), 'op_x') + '(',
                   body)
     return body
@@ -394,7 +397,12 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
             next_char = body[after:after + 1]
             type_position = next_char in '*&' or (
                 next_char.isalnum() or next_char == '_')
-            if templated:
+            if leaf == 'vftable':
+                flat = 'ghidra_vftable_' + _sanitize(qualifier)
+                externs.add(('data', flat))
+                out.append(flat if before.endswith('&') else f'(uint)&{flat}')
+                pos = tail
+            elif templated:
                 type_stubs.add(('nstemplate' if qualifier.startswith('std')
                                 else 'template', qualifier + '::' + leaf))
                 out.append(body[start:name_end])
@@ -590,6 +598,23 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         return f'*{name} = ({pointee})({rhs.strip()});'
 
     body = re.sub(r'\*\s*([A-Za-z_]\w*)\s*=(?![=])\s*([^;{}]*);', cast_deref, body)
+
+    # `name[idx] = rhs;` element assignments: cast rhs to the element type.
+    # Array declarations already store the element type in varmap; indexed
+    # pointers drop one star.
+    arrays = set(re.findall(r'\b([A-Za-z_]\w*)\s*\[[^\]]*\]\s*;', body))
+    def cast_index(match):
+        name, index, rhs = match.groups()
+        target = varmap.get(name)
+        if not target or rhs.strip().startswith('{'):
+            return match.group(0)
+        elem = target.rstrip()
+        if name not in arrays and elem.endswith('*'):
+            elem = elem[:-1].rstrip() or 'void'
+        return f'{name}[{index}] = ({elem})({rhs.strip()});'
+    body = re.sub(
+        r'(?<![=!<>+\-*/%&|^?:])([A-Za-z_]\w*)\s*\[([^\]\[]*)\]\s*=(?![=])\s*([^;{}]*);',
+        cast_index, body)
     # `T *name = rhs;` declaration-initializers (`*` blocks the name regex below)
     body = re.sub(
         r'^\s*([A-Za-z_][\w:<>]*(?:\s*\*+\s*)+)([A-Za-z_]\w*)\s*=\s*([^;{}]*);',

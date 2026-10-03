@@ -63,6 +63,7 @@ extern __declspec(dllimport) int rand(...);
 extern int thunk_FUN_1012a2a0(...);
 extern int thunk_FUN_101a2bf0(...);
 extern int thunk_FUN_101b5540(...);
+extern int thunk_FUN_101b5de0(...);
 extern int thunk_FUN_101b5e50(...);
 extern int thunk_FUN_101d7220(...);
 extern int thunk_FUN_102244a0(...);
@@ -77,6 +78,8 @@ extern int thunk_FUN_1034dcf0(...);
 extern int thunk_FUN_10365150(...);
 extern int thunk_FUN_1036e480(...);
 extern int thunk_FUN_105a0440(...);
+extern int thunk_FUN_105a1c80(...);
+extern int thunk_FUN_105a1d20(...);
 extern int thunk_FUN_105a24b0(...);
 extern int thunk_FUN_105a29f0(...);
 extern int thunk_FUN_105a2bf0(...);
@@ -88,9 +91,15 @@ extern int thunk_FUN_105ef430(...);
 extern int thunk_FUN_105f0080(...);
 extern int thunk_FUN_105f5920(...);
 extern int thunk_FUN_105f5a00(...);
+extern int thunk_FUN_105f5d20(...);
+extern int thunk_FUN_105f5df0(...);
 extern int thunk_FUN_105feb30(...);
+extern int thunk_FUN_105ff930(...);
+extern int thunk_FUN_106045d0(...);
+extern int thunk_FUN_10604700(...);
 extern int thunk_FUN_10605020(...);
 extern int thunk_FUN_106190a0(...);
+extern int thunk_FUN_10619290(...);
 extern int thunk_FUN_1064d7a0(...);
 extern int thunk_FUN_106da030(...);
 extern int thunk_FUN_106da680(...);
@@ -117,15 +126,11 @@ extern int thunk_FUN_10a4c9a0(...);
 extern int thunk_FUN_10a4ca40(...);
 extern int thunk_FUN_10a4d3b0(...);
 extern int thunk_FUN_10a4d450(...);
-extern int thunk_FUN_10a540f0(...);
-extern int thunk_FUN_10a54170(...);
 extern int thunk_FUN_10a54480(...);
 extern int thunk_FUN_10a54750(...);
 extern int thunk_FUN_10a547c0(...);
 extern int thunk_FUN_10a54830(...);
 extern int thunk_FUN_10a75d90(...);
-extern int thunk_FUN_10a76b10(...);
-extern int thunk_FUN_10a76ed0(...);
 extern int thunk_FUN_10af3f70(...);
 extern int thunk_FUN_10af47d0(...);
 extern int thunk_FUN_10af7ee0(...);
@@ -150,8 +155,18 @@ extern int thunk_FUN_10cf34e0(...);
 extern int thunk_FUN_10cf41d0(...);
 extern int thunk_FUN_10d9e2b0(...);
 extern int thunk_FUN_10d9e5c0(...);
+extern int thunk_FUN_10deee60(...);
 extern int thunk_FUN_10def0d0(...);
+extern int thunk_FUN_10def290(...);
+extern int thunk_FUN_10def350(...);
 extern int thunk_FUN_10def450(...);
+extern int thunk_FUN_10defac0(...);
+extern int thunk_FUN_10df1160(...);
+extern int thunk_FUN_10df6360(...);
+extern int thunk_FUN_10df99d0(...);
+extern int thunk_FUN_10df9b50(...);
+extern int thunk_FUN_10dfa150(...);
+extern int thunk_FUN_10dfab80(...);
 extern int thunk_FUN_10dfbb10(...);
 extern int thunk_FUN_10dfbbe0(...);
 extern int thunk_FUN_10dfbe50(...);
@@ -165,6 +180,7 @@ extern int thunk_FUN_10eae0a0(...);
 extern int thunk_FUN_10eae0f0(...);
 extern int thunk_FUN_10eae120(...);
 extern int thunk_FUN_10eae150(...);
+extern int thunk_FUN_10eb22a0(...);
 extern int thunk_FUN_10eb41b0(...);
 extern int thunk_FUN_10eb64f0(...);
 extern int thunk_FUN_10eb6cc0(...);
@@ -192,6 +208,8 @@ extern int DAT_12126b84;
 extern int DAT_121a4414;
 extern int DAT_121a44b8;
 extern int DAT_121a44c4;
+extern int DAT_121a47d0;
+extern int DAT_121a47d4;
 extern int DAT_121a48cc;
 extern int DAT_121a48d0;
 extern int DAT_121a4ae8;
@@ -200,7 +218,6 @@ extern int DAT_121a4af0;
 extern int DAT_121a4b0c;
 extern int DAT_121a4b14;
 extern int _DAT_118dad60;
-extern int g_lSCObjCount;
 extern int ghidra_vftable_SCAccessibilityTestButtonDefaultPage;
 extern int ghidra_vftable_SCAccessibilityTestButtonWithTermationVOTextPage;
 extern int ghidra_vftable_SCAccessibilityTestButtonWithVOTextOverridePage;
@@ -232,7 +249,6 @@ extern int ghidra_vftable_SCAnimationErrorPage;
 extern int ghidra_vftable_SCAnimationIntroPage;
 extern int ghidra_vftable_SCAnimationSuccessPage;
 extern int ghidra_vftable_SCAnimationWizard;
-extern int ghidra_vftable_SCArray;
 extern int ghidra_vftable_SCAutoApConnectTestConnectPage;
 extern int ghidra_vftable_SCAutoApConnectTestIntroPage;
 extern int ghidra_vftable_SCAutoApConnectTestProductSelectionPage;
@@ -244,6 +260,8 @@ extern int ghidra_vftable_SCChirpTestErrorPage;
 extern int ghidra_vftable_SCChirpTestWizard;
 extern int ghidra_vftable_SCConditionalElementTree;
 extern int ghidra_vftable_SCConditionalElementTreeNoAppendInterface;
+extern int ghidra_vftable_SCConditionalVectorBuilderTree;
+extern int ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface;
 extern int ghidra_vftable_SCCopyTestIntroPage;
 extern int ghidra_vftable_SCCopyTestRawStringPage;
 extern int ghidra_vftable_SCCopyTestResourceStringPage;
@@ -292,8 +310,6 @@ extern int ghidra_vftable_SCGhostBooPage;
 extern int ghidra_vftable_SCGhostSneakyPage;
 extern int ghidra_vftable_SCGhostWizard;
 extern int ghidra_vftable_SCHapticWizard;
-extern int ghidra_vftable_SCIObj;
-extern int ghidra_vftable_SCIObjImpl;
 extern int ghidra_vftable_SCIOpCBDelegate;
 extern int ghidra_vftable_SCMockActionableListPage;
 extern int ghidra_vftable_SCMockButtonFirstPage;
@@ -401,8 +417,10 @@ extern int in_stack_00000038;
 extern undefined1 LAB_10a46f6c[];
 extern undefined1 LAB_10a5be8e[];
 extern undefined1 LAB_10a6464d[];
+extern undefined1 LAB_10aa0029[];
 extern undefined1 LAB_10ab56dc[];
 extern undefined1 LAB_10b019c4[];
+extern undefined1 LAB_10b02267[];
 extern undefined1 LAB_10b078df[];
 extern undefined1 LAB_10b07a8f[];
 extern undefined1 LAB_1167ce50[];
@@ -446,10 +464,10 @@ extern undefined1 LAB_116839d7[];
 extern undefined1 LAB_11683a27[];
 extern undefined1 LAB_11683ab4[];
 extern undefined1 LAB_11683fc5[];
-extern undefined1 LAB_11684070[];
-extern undefined1 LAB_116840a0[];
-extern undefined1 LAB_11684230[];
-extern undefined1 LAB_11684260[];
+extern undefined1 LAB_1168413d[];
+extern undefined1 LAB_1168417d[];
+extern undefined1 LAB_116841bd[];
+extern undefined1 LAB_116841fd[];
 extern undefined1 LAB_116847a0[];
 extern undefined1 LAB_11684800[];
 extern undefined1 LAB_11684860[];
@@ -459,16 +477,8 @@ extern undefined1 LAB_11684940[];
 extern undefined1 LAB_11684a00[];
 extern undefined1 LAB_11684e80[];
 extern undefined1 LAB_11684f39[];
-extern undefined1 LAB_11685380[];
-extern undefined1 LAB_116853b0[];
-extern undefined1 LAB_116853e0[];
-extern undefined1 LAB_11685410[];
-extern undefined1 LAB_11685440[];
-extern undefined1 LAB_116854a0[];
-extern undefined1 LAB_116854d0[];
-extern undefined1 LAB_11685500[];
-extern undefined1 LAB_11685530[];
-extern undefined1 LAB_11685560[];
+extern undefined1 LAB_1168586d[];
+extern undefined1 LAB_116858ad[];
 extern undefined1 LAB_11685a52[];
 extern undefined1 LAB_11685ad2[];
 extern undefined1 LAB_11685b27[];
@@ -483,8 +493,6 @@ extern undefined1 LAB_11685da7[];
 extern undefined1 LAB_11685df7[];
 extern undefined1 LAB_11685e72[];
 extern undefined1 LAB_11685f04[];
-extern undefined1 LAB_11685f40[];
-extern undefined1 LAB_11685f70[];
 extern undefined1 LAB_11686a8d[];
 extern undefined1 LAB_116876dd[];
 extern undefined1 LAB_11687e6d[];
@@ -505,8 +513,6 @@ extern undefined1 LAB_1168a887[];
 extern undefined1 LAB_1168a8d7[];
 extern undefined1 LAB_1168a927[];
 extern undefined1 LAB_1168a990[];
-extern undefined1 LAB_1168b890[];
-extern undefined1 LAB_1168b8c0[];
 extern undefined1 LAB_1168c077[];
 extern undefined1 LAB_1168c0c7[];
 extern undefined1 LAB_1168c117[];
@@ -535,10 +541,6 @@ extern undefined1 LAB_1168fb47[];
 extern undefined1 LAB_1168fbb0[];
 extern undefined1 LAB_11690aed[];
 extern undefined1 LAB_1169102d[];
-extern undefined1 LAB_11691360[];
-extern undefined1 LAB_11691390[];
-extern undefined1 LAB_116913c0[];
-extern undefined1 LAB_116913f0[];
 extern undefined1 LAB_116916d7[];
 extern undefined1 LAB_11691727[];
 extern undefined1 LAB_11691777[];
@@ -551,8 +553,6 @@ extern undefined1 LAB_11692270[];
 extern undefined1 LAB_11692745[];
 extern undefined1 LAB_1169283d[];
 extern undefined1 LAB_116928dd[];
-extern undefined1 LAB_11692f80[];
-extern undefined1 LAB_11692fe0[];
 extern undefined1 LAB_116933d0[];
 extern undefined1 LAB_11693417[];
 extern undefined1 LAB_11693467[];
@@ -561,6 +561,7 @@ extern undefined1 LAB_11693507[];
 extern undefined1 LAB_11693557[];
 extern undefined1 LAB_116935a7[];
 extern undefined1 LAB_11693610[];
+extern undefined1 LAB_11693ce5[];
 extern undefined1 LAB_116942c5[];
 extern undefined1 LAB_11695677[];
 extern undefined1 LAB_116956c7[];
@@ -639,8 +640,11 @@ extern undefined1 LAB_116a1977[];
 extern undefined1 LAB_116a19c7[];
 extern undefined1 LAB_116a1a17[];
 extern undefined1 LAB_116a1a80[];
+extern undefined1 LAB_116a2c1d[];
 extern undefined1 LAB_116a2c5d[];
 extern undefined1 LAB_116a2ecd[];
+extern undefined1 LAB_116a318d[];
+extern undefined1 LAB_116a31cd[];
 extern undefined1 LAB_116a325d[];
 extern undefined1 LAB_116a329d[];
 extern undefined1 LAB_116a33fd[];
@@ -657,9 +661,12 @@ extern undefined1 LAB_116a50f7[];
 extern undefined1 LAB_116a51a7[];
 extern undefined1 LAB_116a5210[];
 extern undefined1 LAB_116a545d[];
+extern undefined1 LAB_116a559d[];
+extern undefined1 LAB_116a570d[];
 extern undefined1 LAB_116a57fd[];
 extern undefined1 LAB_116a5abd[];
 extern undefined1 LAB_116a5c40[];
+extern undefined1 LAB_116a5c7d[];
 extern undefined1 LAB_116a5dc0[];
 extern undefined1 LAB_116a5ebd[];
 extern undefined1 LAB_116a6030[];
@@ -670,6 +677,7 @@ extern undefined1 LAB_116a65c7[];
 extern undefined1 LAB_116a6638[];
 extern undefined1 LAB_116a6825[];
 extern undefined1 LAB_116a6865[];
+extern undefined1 LAB_116a6d4d[];
 extern undefined1 LAB_116a6d8d[];
 extern undefined1 LAB_116a6dcd[];
 extern undefined1 LAB_116a7370[];
@@ -679,8 +687,6 @@ extern undefined1 LAB_116a7475[];
 extern undefined1 LAB_116a74d0[];
 extern undefined1 LAB_116a76b0[];
 extern undefined1 LAB_116a7830[];
-extern undefined1 LAB_116a8030[];
-extern undefined1 LAB_116a8090[];
 extern undefined1 LAB_116a8492[];
 extern undefined1 LAB_116a84e7[];
 extern undefined1 LAB_116a8537[];
@@ -722,12 +728,13 @@ struct Studio { char _pad; Studio(...); template<class T> int operator==(T); tem
 struct Subroutine { char _pad; Subroutine(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Visual { char _pad; Visual(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct With { char _pad; With(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct Recovered_Bulk { char _pad; undefined4 * __thiscall FUN_10a22d10(byte param_2); undefined4 * __thiscall FUN_10a22db0(byte param_2); undefined4 * __thiscall FUN_10a22e50(byte param_2); undefined4 * __thiscall FUN_10a22ef0(byte param_2); undefined4 * __thiscall FUN_10a22f90(byte param_2); undefined4 * __thiscall FUN_10a23030(byte param_2); undefined4 * __thiscall FUN_10a230d0(byte param_2); undefined4 * __thiscall FUN_10a23290(byte param_2); undefined4 * __thiscall FUN_10a23330(byte param_2); undefined4 * __thiscall FUN_10a234e0(byte param_2); int __thiscall FUN_10a23590(byte param_2); void __thiscall FUN_10a23910(int *param_2); undefined4 * __thiscall FUN_10a24530(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a24610(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a246f0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a247e0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a248c0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a249a0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a24a80(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a24b60(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a24c40(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a24db0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a24e90(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a24f80(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a250d0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a251d0(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10a41370(undefined4 param_2); undefined4 * __thiscall FUN_10a41950(byte param_2); undefined4 * __thiscall FUN_10a41a10(byte param_2); undefined4 * __thiscall FUN_10a41ac0(byte param_2); int __thiscall FUN_10a41b60(byte param_2); void __thiscall FUN_10a41ce0(int param_2,int param_3,int param_4); undefined4 * __thiscall FUN_10a41ec0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a41fc0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a420a0(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10a44ae0(undefined4 param_2); undefined4 * __thiscall FUN_10a45120(byte param_2); undefined4 * __thiscall FUN_10a451e0(byte param_2); undefined4 * __thiscall FUN_10a45280(byte param_2); int __thiscall FUN_10a45320(byte param_2); undefined4 * __thiscall FUN_10a458f0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a459d0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a45ab0(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10a49250(undefined4 param_2); undefined4 * __thiscall FUN_10a49870(byte param_2); undefined4 * __thiscall FUN_10a49930(byte param_2); undefined4 * __thiscall FUN_10a499d0(byte param_2); int __thiscall FUN_10a49a70(byte param_2); undefined4 * __thiscall FUN_10a49f80(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a4a060(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a4a140(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10a4cc20(void *param_2,undefined4 *param_3); undefined4 * __thiscall FUN_10a4e980(undefined4 param_2); undefined4 * __thiscall FUN_10a4ea90(undefined4 param_2); undefined4 * __thiscall FUN_10a4eba0(undefined4 param_2); int * __thiscall FUN_10a4ee60(int *param_2); int * __thiscall FUN_10a4ef40(int *param_2); undefined4 * __thiscall FUN_10a4f020(undefined4 param_2); undefined4 * __thiscall FUN_10a4f230(undefined4 param_2); undefined4 * __thiscall FUN_10a50290(undefined4 param_2); undefined4 * __thiscall FUN_10a504a0(undefined4 param_2); int * __thiscall FUN_10a51f30(int *param_2); int * __thiscall FUN_10a52000(int *param_2); undefined4 * __thiscall FUN_10a52670(byte param_2); undefined4 * __thiscall FUN_10a52940(byte param_2); undefined4 * __thiscall FUN_10a529d0(byte param_2); undefined4 * __thiscall FUN_10a52a60(byte param_2); undefined4 * __thiscall FUN_10a52ac0(byte param_2); undefined4 * __thiscall FUN_10a52b20(byte param_2); undefined4 * __thiscall FUN_10a52b80(byte param_2); undefined4 * __thiscall FUN_10a52c20(byte param_2); undefined4 * __thiscall FUN_10a52cc0(byte param_2); undefined4 * __thiscall FUN_10a52d60(byte param_2); undefined4 * __thiscall FUN_10a52e90(byte param_2); undefined4 * __thiscall FUN_10a52fc0(byte param_2); undefined4 * __thiscall FUN_10a53060(byte param_2); undefined4 * __thiscall FUN_10a53100(byte param_2); undefined4 * __thiscall FUN_10a531a0(byte param_2); undefined4 * __thiscall FUN_10a53240(byte param_2); undefined4 * __thiscall FUN_10a532e0(byte param_2); undefined4 * __thiscall FUN_10a53480(byte param_2); undefined4 * __thiscall FUN_10a53590(byte param_2); void __thiscall FUN_10a53ab0(int param_2,int param_3,int param_4); void __thiscall FUN_10a53b20(int param_2,int param_3,int param_4); void __thiscall FUN_10a53bb0(int param_2,int param_3,int param_4); void __thiscall FUN_10a53f50(int *param_2); undefined4 * __thiscall FUN_10a55020(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a55180(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a552e0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a553c0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a55510(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a55650(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a55730(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a55810(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a558f0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a559d0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a55ab0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a55bd0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a55cd0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a55e30(undefined4 param_2,undefined4 param_3,undefined4 param_4); void __thiscall FUN_10a56100(undefined4 *param_2,int *param_3); void __thiscall FUN_10a56210(undefined4 *param_2,int *param_3); undefined4 __thiscall FUN_10a5bd50(undefined4 param_2); void __thiscall FUN_10a64520(void *param_2,int param_3,int param_4); undefined4 * __thiscall FUN_10a67810(byte param_2); undefined4 * __thiscall FUN_10a67ab0(byte param_2); undefined4 * __thiscall FUN_10a67b50(byte param_2); undefined4 * __thiscall FUN_10a67bf0(byte param_2); undefined4 * __thiscall FUN_10a67c90(byte param_2); undefined4 * __thiscall FUN_10a67d30(byte param_2); undefined4 * __thiscall FUN_10a67dd0(byte param_2); undefined4 * __thiscall FUN_10a67e70(byte param_2); undefined4 * __thiscall FUN_10a67f10(byte param_2); undefined4 * __thiscall FUN_10a67fb0(byte param_2); undefined4 * __thiscall FUN_10a68050(byte param_2); undefined4 * __thiscall FUN_10a680f0(byte param_2); undefined4 * __thiscall FUN_10a68190(byte param_2); undefined4 * __thiscall FUN_10a68390(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a68470(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a68550(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a68630(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a68710(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a687f0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a688d0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a689b0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a68a90(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a68b70(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a68c50(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a68d30(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a68e10(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10a71f20(byte param_2); undefined4 * __thiscall FUN_10a72010(byte param_2); undefined4 * __thiscall FUN_10a720b0(byte param_2); undefined4 * __thiscall FUN_10a72150(byte param_2); undefined4 * __thiscall FUN_10a72290(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a72370(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a72450(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a72530(undefined4 param_2,undefined4 param_3,undefined4 param_4); int * __thiscall FUN_10a76fd0(int *param_2); int * __thiscall FUN_10a77040(int *param_2); undefined4 * __thiscall FUN_10a772a0(byte param_2); undefined4 * __thiscall FUN_10a774d0(byte param_2); undefined4 * __thiscall FUN_10a77570(byte param_2); void __thiscall FUN_10a77840(int param_2,int param_3,int param_4); undefined4 * __thiscall FUN_10a78450(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a78560(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a78640(undefined4 param_2,undefined4 param_3); undefined4 __thiscall FUN_10a78720(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10a7dc50(byte param_2); undefined4 * __thiscall FUN_10a7dd40(byte param_2); undefined4 * __thiscall FUN_10a7dde0(byte param_2); undefined4 * __thiscall FUN_10a7de80(byte param_2); undefined4 * __thiscall FUN_10a7dfc0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a7e0a0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a7e180(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a7e260(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10a80ef0(byte param_2); undefined4 * __thiscall FUN_10a80fb0(byte param_2); undefined4 * __thiscall FUN_10a81220(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a81460(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 __thiscall FUN_10a837e0(undefined4 param_2,undefined4 param_3,undefined4 *param_4); undefined4 __thiscall FUN_10a83870(undefined4 param_2,undefined4 param_3,undefined4 *param_4,
+struct Recovered_Bulk { char _pad; undefined4 * __thiscall FUN_10a22d10(byte param_2); undefined4 * __thiscall FUN_10a22db0(byte param_2); undefined4 * __thiscall FUN_10a22e50(byte param_2); undefined4 * __thiscall FUN_10a22ef0(byte param_2); undefined4 * __thiscall FUN_10a22f90(byte param_2); undefined4 * __thiscall FUN_10a23030(byte param_2); undefined4 * __thiscall FUN_10a230d0(byte param_2); undefined4 * __thiscall FUN_10a23290(byte param_2); undefined4 * __thiscall FUN_10a23330(byte param_2); undefined4 * __thiscall FUN_10a234e0(byte param_2); int __thiscall FUN_10a23590(byte param_2); undefined4 * __thiscall FUN_10a24530(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a24610(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a246f0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a247e0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a248c0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a249a0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a24a80(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a24b60(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a24c40(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a24db0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a24e90(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a24f80(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a250d0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a251d0(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10a41370(undefined4 param_2); undefined4 * __thiscall FUN_10a41950(byte param_2); undefined4 * __thiscall FUN_10a41a10(byte param_2); undefined4 * __thiscall FUN_10a41ac0(byte param_2); int __thiscall FUN_10a41b60(byte param_2); void __thiscall FUN_10a41ce0(int param_2,int param_3,int param_4); undefined4 * __thiscall FUN_10a41ec0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a41fc0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a420a0(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10a44ae0(undefined4 param_2); undefined4 * __thiscall FUN_10a45120(byte param_2); undefined4 * __thiscall FUN_10a451e0(byte param_2); undefined4 * __thiscall FUN_10a45280(byte param_2); int __thiscall FUN_10a45320(byte param_2); undefined4 * __thiscall FUN_10a458f0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a459d0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a45ab0(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10a49250(undefined4 param_2); undefined4 * __thiscall FUN_10a49870(byte param_2); undefined4 * __thiscall FUN_10a49930(byte param_2); undefined4 * __thiscall FUN_10a499d0(byte param_2); int __thiscall FUN_10a49a70(byte param_2); undefined4 * __thiscall FUN_10a49f80(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a4a060(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a4a140(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10a4cc20(void *param_2,undefined4 *param_3); undefined4 * __thiscall FUN_10a4e980(undefined4 param_2); undefined4 * __thiscall FUN_10a4ea90(undefined4 param_2); undefined4 * __thiscall FUN_10a4eba0(undefined4 param_2); undefined4 * __thiscall FUN_10a4edc0(undefined4 *param_2); int * __thiscall FUN_10a4ee60(int *param_2); int * __thiscall FUN_10a4ef40(int *param_2); undefined4 * __thiscall FUN_10a4f020(undefined4 param_2); undefined4 * __thiscall FUN_10a4f230(undefined4 param_2); undefined4 * __thiscall FUN_10a50290(undefined4 param_2); undefined4 * __thiscall FUN_10a504a0(undefined4 param_2); undefined4 * __thiscall FUN_10a52670(byte param_2); undefined4 * __thiscall FUN_10a52a60(byte param_2); undefined4 * __thiscall FUN_10a52ac0(byte param_2); undefined4 * __thiscall FUN_10a52b20(byte param_2); undefined4 * __thiscall FUN_10a52b80(byte param_2); undefined4 * __thiscall FUN_10a52c20(byte param_2); undefined4 * __thiscall FUN_10a52cc0(byte param_2); undefined4 * __thiscall FUN_10a52fc0(byte param_2); undefined4 * __thiscall FUN_10a53060(byte param_2); undefined4 * __thiscall FUN_10a53100(byte param_2); undefined4 * __thiscall FUN_10a531a0(byte param_2); undefined4 * __thiscall FUN_10a53240(byte param_2); undefined4 * __thiscall FUN_10a53590(byte param_2); void __thiscall FUN_10a53ab0(int param_2,int param_3,int param_4); void __thiscall FUN_10a53b20(int param_2,int param_3,int param_4); void __thiscall FUN_10a53bb0(int param_2,int param_3,int param_4); undefined4 * __thiscall FUN_10a55020(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a55180(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a552e0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a553c0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a55510(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a55650(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a55730(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a55810(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a558f0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a559d0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a55ab0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a55bd0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a55cd0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a55e30(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 __thiscall FUN_10a5bd50(undefined4 param_2); void __thiscall FUN_10a64520(void *param_2,int param_3,int param_4); undefined4 * __thiscall FUN_10a67810(byte param_2); undefined4 * __thiscall FUN_10a67ab0(byte param_2); undefined4 * __thiscall FUN_10a67b50(byte param_2); undefined4 * __thiscall FUN_10a67bf0(byte param_2); undefined4 * __thiscall FUN_10a67c90(byte param_2); undefined4 * __thiscall FUN_10a67d30(byte param_2); undefined4 * __thiscall FUN_10a67dd0(byte param_2); undefined4 * __thiscall FUN_10a67e70(byte param_2); undefined4 * __thiscall FUN_10a67f10(byte param_2); undefined4 * __thiscall FUN_10a67fb0(byte param_2); undefined4 * __thiscall FUN_10a68050(byte param_2); undefined4 * __thiscall FUN_10a680f0(byte param_2); undefined4 * __thiscall FUN_10a68190(byte param_2); undefined4 * __thiscall FUN_10a68390(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a68470(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a68550(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a68630(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a68710(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a687f0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a688d0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a689b0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a68a90(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a68b70(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a68c50(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a68d30(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a68e10(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10a71f20(byte param_2); undefined4 * __thiscall FUN_10a72010(byte param_2); undefined4 * __thiscall FUN_10a720b0(byte param_2); undefined4 * __thiscall FUN_10a72150(byte param_2); undefined4 * __thiscall FUN_10a72290(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a72370(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a72450(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a72530(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10a772a0(byte param_2); undefined4 * __thiscall FUN_10a774d0(byte param_2); undefined4 * __thiscall FUN_10a77570(byte param_2); undefined4 * __thiscall FUN_10a78450(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a78560(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a78640(undefined4 param_2,undefined4 param_3); undefined4 __thiscall FUN_10a78720(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10a7dc50(byte param_2); undefined4 * __thiscall FUN_10a7dd40(byte param_2); undefined4 * __thiscall FUN_10a7dde0(byte param_2); undefined4 * __thiscall FUN_10a7de80(byte param_2); undefined4 * __thiscall FUN_10a7dfc0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a7e0a0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a7e180(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a7e260(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10a80ef0(byte param_2); undefined4 * __thiscall FUN_10a80fb0(byte param_2); undefined4 * __thiscall FUN_10a81220(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a81460(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 __thiscall FUN_10a837e0(undefined4 param_2,undefined4 param_3,undefined4 *param_4); undefined4 __thiscall FUN_10a83870(undefined4 param_2,undefined4 param_3,undefined4 *param_4,
             undefined4 param_5); undefined4 __thiscall FUN_10a83900(undefined4 param_2,undefined4 *param_3,undefined4 param_4,
             undefined4 param_5); undefined4 __thiscall FUN_10a83990(undefined4 param_2,undefined4 param_3,undefined4 *param_4,
             undefined4 param_5,undefined4 param_6); undefined4 __thiscall FUN_10a83a20(undefined4 param_2,undefined4 param_3,undefined4 param_4,
             undefined4 *param_5,undefined4 param_6,undefined4 param_7); undefined4 __thiscall FUN_10a83ac0(undefined4 param_2,undefined4 param_3,undefined4 param_4,
-            undefined4 param_5,undefined4 *param_6,undefined4 param_7,undefined4 param_8); undefined4 __thiscall FUN_10a84650(undefined4 param_2,undefined4 *param_3); undefined4 * __thiscall FUN_10a84950(byte param_2); undefined4 * __thiscall FUN_10a84a40(byte param_2); undefined4 * __thiscall FUN_10a84ae0(byte param_2); undefined4 * __thiscall FUN_10a84b80(byte param_2); undefined4 * __thiscall FUN_10a84cc0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a84da0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a84e80(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a84f60(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10a89fc0(byte param_2); undefined4 * __thiscall FUN_10a8a0e0(byte param_2); undefined4 * __thiscall FUN_10a8a180(byte param_2); undefined4 * __thiscall FUN_10a8a220(byte param_2); undefined4 * __thiscall FUN_10a8a2c0(byte param_2); undefined4 * __thiscall FUN_10a8a500(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a8a5e0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a8a6c0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a8a7a0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a8a880(undefined4 param_2,undefined4 param_3,undefined4 param_4); void __thiscall FUN_10a90d40(int param_2,int *param_3); undefined4 * __thiscall FUN_10a91d60(undefined4 param_2); undefined4 * __thiscall FUN_10a92dd0(byte param_2); undefined4 * __thiscall FUN_10a92f80(byte param_2); undefined4 * __thiscall FUN_10a93020(byte param_2); undefined4 * __thiscall FUN_10a930c0(byte param_2); undefined4 * __thiscall FUN_10a93160(byte param_2); undefined4 * __thiscall FUN_10a93270(byte param_2); undefined4 * __thiscall FUN_10a93320(byte param_2); undefined4 * __thiscall FUN_10a93430(byte param_2); int __thiscall FUN_10a934d0(byte param_2); undefined4 * __thiscall FUN_10a935f0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a936d0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a937b0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a93890(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a93980(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a93a80(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a93b70(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a93c50(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10a97940(undefined4 *param_2); undefined4 * __thiscall FUN_10a9bd30(byte param_2); undefined4 * __thiscall FUN_10a9beb0(byte param_2); undefined4 * __thiscall FUN_10a9bf50(byte param_2); undefined4 * __thiscall FUN_10a9bff0(byte param_2); undefined4 * __thiscall FUN_10a9c090(byte param_2); undefined4 * __thiscall FUN_10a9c1b0(byte param_2); undefined4 * __thiscall FUN_10a9c250(byte param_2); undefined4 * __thiscall FUN_10a9c970(undefined4 *param_2); undefined4 * __thiscall FUN_10a9ca80(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a9cb60(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a9cc40(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a9cd20(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a9ce70(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a9cf50(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a9d030(undefined4 param_2,undefined4 param_3,undefined4 param_4); void __thiscall FUN_10aa2750(int *param_2); undefined4 * __thiscall FUN_10aa6830(byte param_2); undefined4 * __thiscall FUN_10aa6b90(byte param_2); undefined4 * __thiscall FUN_10aa6c30(byte param_2); undefined4 * __thiscall FUN_10aa6cd0(byte param_2); undefined4 * __thiscall FUN_10aa6d70(byte param_2); undefined4 * __thiscall FUN_10aa6e10(byte param_2); undefined4 * __thiscall FUN_10aa6eb0(byte param_2); undefined4 * __thiscall FUN_10aa6f50(byte param_2); undefined4 * __thiscall FUN_10aa6ff0(byte param_2); undefined4 * __thiscall FUN_10aa7090(byte param_2); undefined4 * __thiscall FUN_10aa7130(byte param_2); undefined4 * __thiscall FUN_10aa71d0(byte param_2); undefined4 * __thiscall FUN_10aa7270(byte param_2); undefined4 * __thiscall FUN_10aa7310(byte param_2); undefined4 * __thiscall FUN_10aa73b0(byte param_2); undefined4 * __thiscall FUN_10aa7450(byte param_2); undefined4 * __thiscall FUN_10aa74f0(byte param_2); undefined4 * __thiscall FUN_10aa7740(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa7870(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa7950(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa7a30(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa7b10(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa7bf0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa7cd0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa7db0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa7e90(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa7f70(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa8050(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa8130(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa8210(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa82f0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa83d0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa84b0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa8590(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void __thiscall FUN_10aa8680(char param_2); undefined4 * __thiscall FUN_10ab34a0(byte param_2); undefined4 * __thiscall FUN_10ab3530(byte param_2); undefined4 * __thiscall FUN_10ab3650(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ab3730(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10ab4440(undefined4 param_2); undefined4 * __thiscall FUN_10ab4950(byte param_2); undefined4 * __thiscall FUN_10ab4a10(byte param_2); undefined4 * __thiscall FUN_10ab4ab0(byte param_2); undefined4 * __thiscall FUN_10ab4be0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ab4cc0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ab4da0(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 __thiscall FUN_10ab5570(undefined4 param_2); undefined4 * __thiscall FUN_10ab6230(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10abf1a0(byte param_2); undefined4 * __thiscall FUN_10abf8f0(byte param_2); undefined4 * __thiscall FUN_10abf990(byte param_2); undefined4 * __thiscall FUN_10abfa30(byte param_2); undefined4 * __thiscall FUN_10abfad0(byte param_2); undefined4 * __thiscall FUN_10abfb70(byte param_2); undefined4 * __thiscall FUN_10abfc10(byte param_2); undefined4 * __thiscall FUN_10abfcb0(byte param_2); undefined4 * __thiscall FUN_10abfd50(byte param_2); undefined4 * __thiscall FUN_10abfdf0(byte param_2); undefined4 * __thiscall FUN_10abfe90(byte param_2); undefined4 * __thiscall FUN_10abff30(byte param_2); undefined4 * __thiscall FUN_10abffd0(byte param_2); undefined4 * __thiscall FUN_10ac0070(byte param_2); undefined4 * __thiscall FUN_10ac0110(byte param_2); undefined4 * __thiscall FUN_10ac01b0(byte param_2); undefined4 * __thiscall FUN_10ac0250(byte param_2); undefined4 * __thiscall FUN_10ac02f0(byte param_2); undefined4 * __thiscall FUN_10ac0390(byte param_2); undefined4 * __thiscall FUN_10ac0430(byte param_2); undefined4 * __thiscall FUN_10ac04d0(byte param_2); undefined4 * __thiscall FUN_10ac0570(byte param_2); undefined4 * __thiscall FUN_10ac0610(byte param_2); undefined4 * __thiscall FUN_10ac06b0(byte param_2); undefined4 * __thiscall FUN_10ac0750(byte param_2); undefined4 * __thiscall FUN_10ac07f0(byte param_2); undefined4 * __thiscall FUN_10ac0890(byte param_2); undefined4 * __thiscall FUN_10ac0930(byte param_2); undefined4 * __thiscall FUN_10ac09d0(byte param_2); undefined4 * __thiscall FUN_10ac0a70(byte param_2); undefined4 * __thiscall FUN_10ac0b10(byte param_2); undefined4 * __thiscall FUN_10ac0bb0(byte param_2); undefined4 * __thiscall FUN_10ac0c50(byte param_2); undefined4 * __thiscall FUN_10ac0cf0(byte param_2); undefined4 * __thiscall FUN_10ac0d90(byte param_2); undefined4 * __thiscall FUN_10ac0e30(byte param_2); undefined4 * __thiscall FUN_10ac0ed0(byte param_2); undefined4 * __thiscall FUN_10ac0f70(byte param_2); undefined4 * __thiscall FUN_10ac1180(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1260(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1340(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1420(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1500(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac15e0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac16c0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac17a0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1880(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1960(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1a40(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1b20(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1c00(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1ce0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1dc0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1ea0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1f80(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2060(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2140(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2220(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2300(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac23e0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac24c0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac25a0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2680(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2760(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2840(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2920(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2a00(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2ae0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2bc0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2ca0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2d80(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2e60(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2f40(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac3020(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac3100(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ae6d30(byte param_2); undefined4 * __thiscall FUN_10ae6e20(byte param_2); undefined4 * __thiscall FUN_10ae6ec0(byte param_2); undefined4 * __thiscall FUN_10ae6f60(byte param_2); undefined4 * __thiscall FUN_10ae70a0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ae7180(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ae7260(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ae7340(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10aeafb0(byte param_2); undefined4 * __thiscall FUN_10aeb190(byte param_2); undefined4 * __thiscall FUN_10aeb230(byte param_2); undefined4 * __thiscall FUN_10aeb2d0(byte param_2); undefined4 * __thiscall FUN_10aeb370(byte param_2); undefined4 * __thiscall FUN_10aeb410(byte param_2); undefined4 * __thiscall FUN_10aeb4b0(byte param_2); undefined4 * __thiscall FUN_10aeb550(byte param_2); undefined4 * __thiscall FUN_10aeb5f0(byte param_2); undefined4 * __thiscall FUN_10aeb7a0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aeb880(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aeb960(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aeba40(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aebb20(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aebc00(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aebce0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aebdc0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aebea0(undefined4 param_2,undefined4 param_3,undefined4 param_4); int * __thiscall FUN_10af3870(int *param_2); int * __thiscall FUN_10af47d0(int *param_2,int *param_3); int * __thiscall FUN_10af4a00(int *param_2,int *param_3); int * __thiscall FUN_10af5a00(int *param_2); undefined4 * __thiscall FUN_10af5be0(undefined4 param_2); undefined4 * __thiscall FUN_10af6020(undefined4 param_2); int __thiscall FUN_10af6f20(int *param_2); undefined4 * __thiscall FUN_10af7420(byte param_2); undefined4 * __thiscall FUN_10af7670(byte param_2); undefined4 * __thiscall FUN_10af7710(byte param_2); undefined4 * __thiscall FUN_10af77b0(byte param_2); undefined4 * __thiscall FUN_10af7850(byte param_2); undefined4 * __thiscall FUN_10af78f0(byte param_2); undefined4 * __thiscall FUN_10af8610(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10af8700(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10af87e0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10af88c0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10af89b0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10af8a90(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10b00090(byte param_2); undefined4 * __thiscall FUN_10b00180(byte param_2); undefined4 * __thiscall FUN_10b00350(byte param_2); undefined4 * __thiscall FUN_10b00490(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b00680(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b00760(undefined4 param_2,undefined4 param_3,undefined4 param_4); int * __thiscall FUN_10b02ec0(int *param_2,int *param_3); void __thiscall FUN_10b034d0(undefined4 param_2); int * __thiscall FUN_10b03580(int *param_2,int *param_3); void __thiscall FUN_10b03bc0(int *param_2,int *param_3); undefined4 * __thiscall FUN_10b03ff0(undefined4 param_2); undefined4 * __thiscall FUN_10b04560(undefined4 param_2); undefined4 * __thiscall FUN_10b048c0(undefined4 param_2); undefined4 * __thiscall FUN_10b05270(byte param_2); undefined4 * __thiscall FUN_10b05360(byte param_2); undefined4 * __thiscall FUN_10b05470(byte param_2); undefined4 * __thiscall FUN_10b05510(byte param_2); undefined4 * __thiscall FUN_10b055b0(byte param_2); int __thiscall FUN_10b05650(byte param_2); void __thiscall FUN_10b05820(int param_2,int param_3,int param_4); void __thiscall FUN_10b05c80(int param_2); void __thiscall FUN_10b05d20(int *param_2); undefined4 * __thiscall FUN_10b06590(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b06670(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b067d0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b068b0(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 __thiscall FUN_10b09930(undefined4 param_2,undefined4 *param_3); void __thiscall FUN_10b09dd0(undefined4 *param_2,undefined4 *param_3); undefined4 * __thiscall FUN_10b0ac60(undefined4 param_2); undefined4 * __thiscall FUN_10b0ad70(undefined4 param_2); undefined4 * __thiscall FUN_10b0ae80(undefined4 param_2); undefined4 * __thiscall FUN_10b0afb0(undefined4 *param_2,undefined4 *param_3); undefined4 * __thiscall FUN_10b0b150(undefined4 param_2); undefined4 * __thiscall FUN_10b0b770(undefined4 param_2); undefined4 * __thiscall FUN_10b0bc20(undefined4 param_2); undefined4 * __thiscall FUN_10b0e280(byte param_2); undefined4 * __thiscall FUN_10b0e580(byte param_2); undefined4 * __thiscall FUN_10b0e5e0(byte param_2); undefined4 * __thiscall FUN_10b0e640(byte param_2); undefined4 * __thiscall FUN_10b0e6f0(byte param_2); undefined4 * __thiscall FUN_10b0e790(byte param_2); undefined4 * __thiscall FUN_10b0e830(byte param_2); undefined4 * __thiscall FUN_10b0e8d0(byte param_2); undefined4 * __thiscall FUN_10b0e970(byte param_2); undefined4 * __thiscall FUN_10b0ea10(byte param_2); undefined4 * __thiscall FUN_10b0eab0(byte param_2); undefined4 * __thiscall FUN_10b0eb50(byte param_2); undefined4 * __thiscall FUN_10b0ebf0(byte param_2); undefined4 * __thiscall FUN_10b0eca0(byte param_2); undefined4 * __thiscall FUN_10b0ed40(byte param_2); undefined4 * __thiscall FUN_10b0ede0(byte param_2); undefined4 * __thiscall FUN_10b0ee80(byte param_2); undefined4 * __thiscall FUN_10b0ef90(byte param_2); undefined4 * __thiscall FUN_10b0f740(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b0f8a0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b0f980(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b0fa80(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b0fb60(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b0fcc0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b0fda0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b0fe80(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b0ffe0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b100e0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b101d0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b102b0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b10390(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b10490(undefined4 param_2,undefined4 param_3); undefined4 __thiscall FUN_10b10570(undefined4 param_2,undefined4 param_3,undefined4 param_4); };
+            undefined4 param_5,undefined4 *param_6,undefined4 param_7,undefined4 param_8); undefined4 __thiscall FUN_10a84650(undefined4 param_2,undefined4 *param_3); undefined4 * __thiscall FUN_10a84950(byte param_2); undefined4 * __thiscall FUN_10a84a40(byte param_2); undefined4 * __thiscall FUN_10a84ae0(byte param_2); undefined4 * __thiscall FUN_10a84b80(byte param_2); undefined4 * __thiscall FUN_10a84cc0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a84da0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a84e80(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a84f60(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10a89fc0(byte param_2); undefined4 * __thiscall FUN_10a8a0e0(byte param_2); undefined4 * __thiscall FUN_10a8a180(byte param_2); undefined4 * __thiscall FUN_10a8a220(byte param_2); undefined4 * __thiscall FUN_10a8a2c0(byte param_2); undefined4 * __thiscall FUN_10a8a500(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a8a5e0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a8a6c0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a8a7a0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a8a880(undefined4 param_2,undefined4 param_3,undefined4 param_4); void __thiscall FUN_10a90d40(int param_2,int *param_3); undefined4 * __thiscall FUN_10a91d60(undefined4 param_2); undefined4 * __thiscall FUN_10a92dd0(byte param_2); undefined4 * __thiscall FUN_10a92f80(byte param_2); undefined4 * __thiscall FUN_10a93020(byte param_2); undefined4 * __thiscall FUN_10a930c0(byte param_2); undefined4 * __thiscall FUN_10a93270(byte param_2); undefined4 * __thiscall FUN_10a93430(byte param_2); int __thiscall FUN_10a934d0(byte param_2); undefined4 * __thiscall FUN_10a935f0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a936d0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a937b0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a93890(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a93980(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a93a80(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a93b70(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a93c50(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10a97940(undefined4 *param_2); undefined4 * __thiscall FUN_10a9bd30(byte param_2); undefined4 * __thiscall FUN_10a9beb0(byte param_2); undefined4 * __thiscall FUN_10a9bf50(byte param_2); undefined4 * __thiscall FUN_10a9bff0(byte param_2); undefined4 * __thiscall FUN_10a9c1b0(byte param_2); undefined4 * __thiscall FUN_10a9c250(byte param_2); undefined4 * __thiscall FUN_10a9c970(undefined4 *param_2); undefined4 * __thiscall FUN_10a9ca80(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a9cb60(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a9cc40(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a9cd20(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a9ce70(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a9cf50(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10a9d030(undefined4 param_2,undefined4 param_3,undefined4 param_4); void __thiscall FUN_10aa2750(int *param_2); undefined4 * __thiscall FUN_10aa6830(byte param_2); undefined4 * __thiscall FUN_10aa6b90(byte param_2); undefined4 * __thiscall FUN_10aa6c30(byte param_2); undefined4 * __thiscall FUN_10aa6cd0(byte param_2); undefined4 * __thiscall FUN_10aa6d70(byte param_2); undefined4 * __thiscall FUN_10aa6e10(byte param_2); undefined4 * __thiscall FUN_10aa6eb0(byte param_2); undefined4 * __thiscall FUN_10aa6f50(byte param_2); undefined4 * __thiscall FUN_10aa6ff0(byte param_2); undefined4 * __thiscall FUN_10aa7090(byte param_2); undefined4 * __thiscall FUN_10aa7130(byte param_2); undefined4 * __thiscall FUN_10aa71d0(byte param_2); undefined4 * __thiscall FUN_10aa7270(byte param_2); undefined4 * __thiscall FUN_10aa7310(byte param_2); undefined4 * __thiscall FUN_10aa73b0(byte param_2); undefined4 * __thiscall FUN_10aa7450(byte param_2); undefined4 * __thiscall FUN_10aa74f0(byte param_2); undefined4 * __thiscall FUN_10aa7740(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa7870(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa7950(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa7a30(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa7b10(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa7bf0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa7cd0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa7db0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa7e90(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa7f70(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa8050(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa8130(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa8210(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa82f0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa83d0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa84b0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aa8590(undefined4 param_2,undefined4 param_3,undefined4 param_4); /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void __thiscall FUN_10aa8680(char param_2); undefined4 * __thiscall FUN_10ab34a0(byte param_2); undefined4 * __thiscall FUN_10ab3530(byte param_2); undefined4 * __thiscall FUN_10ab3650(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ab3730(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10ab4440(undefined4 param_2); undefined4 * __thiscall FUN_10ab4950(byte param_2); undefined4 * __thiscall FUN_10ab4a10(byte param_2); undefined4 * __thiscall FUN_10ab4ab0(byte param_2); undefined4 * __thiscall FUN_10ab4be0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ab4cc0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ab4da0(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 __thiscall FUN_10ab5570(undefined4 param_2); undefined4 * __thiscall FUN_10ab6230(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10abf1a0(byte param_2); undefined4 * __thiscall FUN_10abf8f0(byte param_2); undefined4 * __thiscall FUN_10abf990(byte param_2); undefined4 * __thiscall FUN_10abfa30(byte param_2); undefined4 * __thiscall FUN_10abfad0(byte param_2); undefined4 * __thiscall FUN_10abfb70(byte param_2); undefined4 * __thiscall FUN_10abfc10(byte param_2); undefined4 * __thiscall FUN_10abfcb0(byte param_2); undefined4 * __thiscall FUN_10abfd50(byte param_2); undefined4 * __thiscall FUN_10abfdf0(byte param_2); undefined4 * __thiscall FUN_10abfe90(byte param_2); undefined4 * __thiscall FUN_10abff30(byte param_2); undefined4 * __thiscall FUN_10abffd0(byte param_2); undefined4 * __thiscall FUN_10ac0070(byte param_2); undefined4 * __thiscall FUN_10ac0110(byte param_2); undefined4 * __thiscall FUN_10ac01b0(byte param_2); undefined4 * __thiscall FUN_10ac0250(byte param_2); undefined4 * __thiscall FUN_10ac02f0(byte param_2); undefined4 * __thiscall FUN_10ac0390(byte param_2); undefined4 * __thiscall FUN_10ac0430(byte param_2); undefined4 * __thiscall FUN_10ac04d0(byte param_2); undefined4 * __thiscall FUN_10ac0570(byte param_2); undefined4 * __thiscall FUN_10ac0610(byte param_2); undefined4 * __thiscall FUN_10ac06b0(byte param_2); undefined4 * __thiscall FUN_10ac0750(byte param_2); undefined4 * __thiscall FUN_10ac07f0(byte param_2); undefined4 * __thiscall FUN_10ac0890(byte param_2); undefined4 * __thiscall FUN_10ac0930(byte param_2); undefined4 * __thiscall FUN_10ac09d0(byte param_2); undefined4 * __thiscall FUN_10ac0a70(byte param_2); undefined4 * __thiscall FUN_10ac0b10(byte param_2); undefined4 * __thiscall FUN_10ac0bb0(byte param_2); undefined4 * __thiscall FUN_10ac0c50(byte param_2); undefined4 * __thiscall FUN_10ac0cf0(byte param_2); undefined4 * __thiscall FUN_10ac0d90(byte param_2); undefined4 * __thiscall FUN_10ac0e30(byte param_2); undefined4 * __thiscall FUN_10ac0ed0(byte param_2); undefined4 * __thiscall FUN_10ac0f70(byte param_2); undefined4 * __thiscall FUN_10ac1180(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1260(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1340(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1420(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1500(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac15e0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac16c0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac17a0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1880(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1960(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1a40(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1b20(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1c00(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1ce0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1dc0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1ea0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac1f80(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2060(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2140(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2220(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2300(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac23e0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac24c0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac25a0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2680(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2760(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2840(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2920(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2a00(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2ae0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2bc0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2ca0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2d80(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2e60(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac2f40(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac3020(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ac3100(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ae6d30(byte param_2); undefined4 * __thiscall FUN_10ae6e20(byte param_2); undefined4 * __thiscall FUN_10ae6ec0(byte param_2); undefined4 * __thiscall FUN_10ae6f60(byte param_2); undefined4 * __thiscall FUN_10ae70a0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ae7180(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ae7260(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10ae7340(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10aeafb0(byte param_2); undefined4 * __thiscall FUN_10aeb190(byte param_2); undefined4 * __thiscall FUN_10aeb230(byte param_2); undefined4 * __thiscall FUN_10aeb2d0(byte param_2); undefined4 * __thiscall FUN_10aeb370(byte param_2); undefined4 * __thiscall FUN_10aeb410(byte param_2); undefined4 * __thiscall FUN_10aeb4b0(byte param_2); undefined4 * __thiscall FUN_10aeb550(byte param_2); undefined4 * __thiscall FUN_10aeb5f0(byte param_2); undefined4 * __thiscall FUN_10aeb7a0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aeb880(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aeb960(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aeba40(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aebb20(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aebc00(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aebce0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aebdc0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10aebea0(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10af3740(undefined4 param_2,undefined4 param_3,undefined4 param_4,
+            undefined4 *param_5); int * __thiscall FUN_10af3870(int *param_2); int * __thiscall FUN_10af47d0(int *param_2,int *param_3); int * __thiscall FUN_10af4a00(int *param_2,int *param_3); undefined4 * __thiscall FUN_10af56e0(undefined4 param_2); undefined4 * __thiscall FUN_10af5760(undefined4 param_2); int * __thiscall FUN_10af5a00(int *param_2); undefined4 * __thiscall FUN_10af5be0(undefined4 param_2); undefined4 * __thiscall FUN_10af6020(undefined4 param_2); int __thiscall FUN_10af6f20(int *param_2); undefined4 * __thiscall FUN_10af7420(byte param_2); undefined4 * __thiscall FUN_10af7670(byte param_2); undefined4 * __thiscall FUN_10af7710(byte param_2); undefined4 * __thiscall FUN_10af77b0(byte param_2); undefined4 * __thiscall FUN_10af7850(byte param_2); undefined4 * __thiscall FUN_10af78f0(byte param_2); undefined4 * __thiscall FUN_10af8610(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10af8700(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10af87e0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10af88c0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10af89b0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10af8a90(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10b00090(byte param_2); undefined4 * __thiscall FUN_10b00180(byte param_2); undefined4 * __thiscall FUN_10b00350(byte param_2); undefined4 * __thiscall FUN_10b00490(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b00680(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b00760(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10b02b50(undefined4 param_2,undefined4 param_3,undefined4 *param_4); int * __thiscall FUN_10b02ec0(int *param_2,int *param_3); void __thiscall FUN_10b034d0(undefined4 param_2); int * __thiscall FUN_10b03580(int *param_2,int *param_3); void __thiscall FUN_10b03bc0(int *param_2,int *param_3); undefined4 * __thiscall FUN_10b03ff0(undefined4 param_2); undefined4 * __thiscall FUN_10b04170(undefined4 param_2); undefined4 * __thiscall FUN_10b04560(undefined4 param_2); undefined4 * __thiscall FUN_10b048c0(undefined4 param_2); undefined4 * __thiscall FUN_10b05270(byte param_2); undefined4 * __thiscall FUN_10b05360(byte param_2); undefined4 * __thiscall FUN_10b05470(byte param_2); undefined4 * __thiscall FUN_10b05510(byte param_2); undefined4 * __thiscall FUN_10b055b0(byte param_2); int __thiscall FUN_10b05650(byte param_2); void __thiscall FUN_10b05820(int param_2,int param_3,int param_4); void __thiscall FUN_10b05c80(int param_2); undefined4 * __thiscall FUN_10b06590(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b06670(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b067d0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b068b0(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_10b09870(undefined4 param_2,undefined4 param_3,undefined4 *param_4); undefined4 __thiscall FUN_10b09930(undefined4 param_2,undefined4 *param_3); void __thiscall FUN_10b09dd0(undefined4 *param_2,undefined4 *param_3); undefined4 * __thiscall FUN_10b0ac60(undefined4 param_2); undefined4 * __thiscall FUN_10b0ad70(undefined4 param_2); undefined4 * __thiscall FUN_10b0ae80(undefined4 param_2); undefined4 * __thiscall FUN_10b0afb0(undefined4 *param_2,undefined4 *param_3); undefined4 * __thiscall FUN_10b0b150(undefined4 param_2); undefined4 * __thiscall FUN_10b0b770(undefined4 param_2); undefined4 * __thiscall FUN_10b0bc20(undefined4 param_2); undefined4 * __thiscall FUN_10b0e280(byte param_2); undefined4 * __thiscall FUN_10b0e580(byte param_2); undefined4 * __thiscall FUN_10b0e5e0(byte param_2); undefined4 * __thiscall FUN_10b0e640(byte param_2); undefined4 * __thiscall FUN_10b0e6f0(byte param_2); undefined4 * __thiscall FUN_10b0e790(byte param_2); undefined4 * __thiscall FUN_10b0e830(byte param_2); undefined4 * __thiscall FUN_10b0e8d0(byte param_2); undefined4 * __thiscall FUN_10b0e970(byte param_2); undefined4 * __thiscall FUN_10b0ea10(byte param_2); undefined4 * __thiscall FUN_10b0eab0(byte param_2); undefined4 * __thiscall FUN_10b0eb50(byte param_2); undefined4 * __thiscall FUN_10b0ebf0(byte param_2); undefined4 * __thiscall FUN_10b0eca0(byte param_2); undefined4 * __thiscall FUN_10b0ed40(byte param_2); undefined4 * __thiscall FUN_10b0ede0(byte param_2); undefined4 * __thiscall FUN_10b0ef90(byte param_2); undefined4 * __thiscall FUN_10b0f740(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b0f8a0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b0f980(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b0fa80(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b0fb60(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b0fcc0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b0fda0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b0fe80(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b0ffe0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b100e0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b101d0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b102b0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b10390(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_10b10490(undefined4 param_2,undefined4 param_3); undefined4 __thiscall FUN_10b10570(undefined4 param_2,undefined4 param_3,undefined4 param_4); };
 using namespace std;
 void FUN_10a3d070(void);
 void __fastcall FUN_10a3d0f0(int *param_1);
@@ -740,20 +747,16 @@ undefined4 __stdcall FUN_10a46e30(undefined4 param_1);
 void __stdcall FUN_10a48c60(int *param_1);
 void __fastcall FUN_10a496b0(int param_1);
 void __stdcall FUN_10a4c400(int *param_1);
-void FUN_10a4c9a0(undefined4 *param_1,undefined4 *param_2);
-void FUN_10a4ca40(undefined4 *param_1,undefined4 *param_2);
-void FUN_10a4d8d0(undefined4 param_1,undefined4 *param_2);
-void FUN_10a4d940(undefined4 param_1,undefined4 *param_2);
-void __fastcall FUN_10a512a0(undefined4 *param_1);
-void __fastcall FUN_10a51310(undefined4 *param_1);
+undefined4 * FUN_10a4d3b0(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3);
+undefined4 * FUN_10a4d450(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3);
+undefined4 * FUN_10a4d520(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3);
+undefined4 * FUN_10a4d5c0(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3);
 /* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_10a51480(int *param_1);
-void __fastcall FUN_10a51600(undefined4 *param_1);
-void __fastcall FUN_10a516f0(undefined4 *param_1);
-void __fastcall FUN_10a51970(undefined4 *param_1);
-void __fastcall FUN_10a51ad0(undefined4 *param_1);
 /* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_10a54080(int *param_1);
 void __fastcall FUN_10a540f0(int *param_1);
 void __fastcall FUN_10a54170(int *param_1);
+undefined4 * __stdcall FUN_10a54220(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3);
+undefined4 * __stdcall FUN_10a542c0(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3);
 void * FUN_10a54750(uint param_1);
 void * FUN_10a547c0(uint param_1);
 void * FUN_10a54830(uint param_1);
@@ -761,17 +764,10 @@ void __fastcall FUN_10a548c0(int param_1);
 void __fastcall FUN_10a54920(int param_1);
 int __fastcall FUN_10a61720(int param_1);
 void FUN_10a63b00(void);
-void __fastcall FUN_10a76940(undefined4 *param_1);
-void __fastcall FUN_10a76a00(undefined4 *param_1);
-void __fastcall FUN_10a76a70(undefined4 *param_1);
-void __fastcall FUN_10a76b10(int *param_1);
-void __fastcall FUN_10a77a10(int *param_1);
-void __fastcall FUN_10a92930(undefined4 *param_1);
-void __fastcall FUN_10a92a70(undefined4 *param_1);
 void FUN_10a99a50(void);
 void FUN_10a99e40(void);
 void FUN_10a9a180(void);
-void __fastcall FUN_10a9b8f0(undefined4 *param_1);
+undefined4 __stdcall FUN_10a9fdf0(undefined4 param_1);
 void __fastcall FUN_10aa2800(int param_1);
 void FUN_10ab2e30(void);
 void FUN_10ab5fe0(void);
@@ -781,12 +777,12 @@ int * __fastcall FUN_10af7240(int *param_1);
 void __fastcall FUN_10afec30(int param_1);
 void __fastcall FUN_10afef40(int param_1);
 undefined4 __stdcall FUN_10b01760(undefined4 param_1);
+undefined4 __stdcall FUN_10b020f0(undefined4 param_1);
 void __fastcall FUN_10b04ef0(int *param_1);
 void __fastcall FUN_10b05080(int param_1);
 void __fastcall FUN_10b05d90(int *param_1);
 undefined4 __stdcall FUN_10b077d0(undefined4 param_1);
 undefined4 __stdcall FUN_10b07980(undefined4 param_1);
-void __fastcall FUN_10b0db80(undefined4 *param_1);
 int * __fastcall FUN_10b0df40(int *param_1);
 // Reference entry 10a22d10; body size 68 bytes.
 #line 1 "ENTRY_10a22d10"
@@ -795,9 +791,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a22d10(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -813,9 +809,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a22db0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe8);
@@ -831,9 +827,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a22e50(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -849,9 +845,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a22ef0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -867,9 +863,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a22f90(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -885,9 +881,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a23030(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe4);
@@ -903,9 +899,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a230d0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe4);
@@ -921,9 +917,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a23290(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -939,9 +935,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a23330(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe8);
@@ -958,9 +954,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a234e0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_101a2bf0();
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xf0);
@@ -1008,43 +1004,6 @@ int __thiscall Recovered_Bulk::FUN_10a23590(byte param_2)
 }
 
 
-// Reference entry 10a23910; body size 123 bytes.
-#line 1 "ENTRY_10a23910"
-
-void __thiscall Recovered_Bulk::FUN_10a23910(int *param_2)
-{
-  int *param_1 = (int *)this;
-  int iVar1;
-  int iVar2;
-  uint uVar3;
-  
-  iVar1 = (int)(*param_1);
-  if (iVar1 != 0) {
-    uVar3 = (uint)(param_1[2] - iVar1 & 0xfffffffc);
-    iVar2 = (int)(iVar1);
-    if (0xfff < uVar3) {
-      iVar2 = (int)(*(int *)(iVar1 + -4));
-      uVar3 = (uint)(uVar3 + 0x23);
-      if (0x1f < (iVar1 - iVar2) - 4U) {
-                    
-        _invalid_parameter_noinfo_noreturn();
-      }
-    }
-    thunk_FUN_1148a50e(iVar2,uVar3);
-    *param_1 = (int)(0);
-    param_1[1] = 0;
-    param_1[2] = 0;
-  }
-  *param_1 = (int)(*param_2);
-  param_1[1] = param_2[1];
-  param_1[2] = param_2[2];
-  *param_2 = (int)(0);
-  param_2[1] = 0;
-  param_2[2] = 0;
-  return;
-}
-
-
 // Reference entry 10a24530; body size 168 bytes.
 #line 1 "ENTRY_10a24530"
 
@@ -1065,9 +1024,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a24530(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyBondingConcurrencyErrorPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyBondingConcurrencyErrorPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyBondingConcurrencyErrorPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyBondingConcurrencyErrorPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyBondingConcurrencyErrorPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyBondingConcurrencyErrorPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyBondingConcurrencyErrorPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -1098,9 +1057,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a24610(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyBondingConcurrencyFatalErrorPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyBondingConcurrencyFatalErrorPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyBondingConcurrencyFatalErrorPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyBondingConcurrencyFatalErrorPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyBondingConcurrencyFatalErrorPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyBondingConcurrencyFatalErrorPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyBondingConcurrencyFatalErrorPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -1131,11 +1090,11 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a246f0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyBondingConfirmationPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyBondingConfirmationPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyBondingConfirmationPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyBondingConfirmationPage;
-    puVar1[0x38] = 0;
-    puVar1[0x39] = 0;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyBondingConfirmationPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyBondingConfirmationPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyBondingConfirmationPage);
+    puVar1[0x38] = (undefined4)(0);
+    puVar1[0x39] = (undefined4)(0);
 
     return (undefined4 *)(puVar1);
   }
@@ -1166,9 +1125,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a247e0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyConfirmationPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyConfirmationPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyConfirmationPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyConfirmationPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyConfirmationPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyConfirmationPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyConfirmationPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -1199,9 +1158,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a248c0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyFatalMissingErrorPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyFatalMissingErrorPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyFatalMissingErrorPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyFatalMissingErrorPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyFatalMissingErrorPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyFatalMissingErrorPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyFatalMissingErrorPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -1232,9 +1191,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a249a0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyFatalRemoveErrorPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyFatalRemoveErrorPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyFatalRemoveErrorPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyFatalRemoveErrorPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyFatalRemoveErrorPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyFatalRemoveErrorPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyFatalRemoveErrorPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -1265,9 +1224,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a24a80(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyHTPrimaryGAPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyHTPrimaryGAPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyHTPrimaryGAPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyHTPrimaryGAPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyHTPrimaryGAPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyHTPrimaryGAPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyHTPrimaryGAPage);
     *(undefined1 *)(puVar1 + 0x38) = 0;
 
     return (undefined4 *)(puVar1);
@@ -1299,9 +1258,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a24b60(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyHTSurroundsGAPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyHTSurroundsGAPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyHTSurroundsGAPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyHTSurroundsGAPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyHTSurroundsGAPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyHTSurroundsGAPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyHTSurroundsGAPage);
     *(undefined1 *)(puVar1 + 0x38) = 0;
 
     return (undefined4 *)(puVar1);
@@ -1333,21 +1292,21 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a24c40(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyIssuePage);
-    puVar1[4] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyIssuePage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyIssuePage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyIssuePage;
-    puVar1[0x38] = 0;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyIssuePage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyIssuePage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyIssuePage);
+    puVar1[0x38] = (undefined4)(0);
     *(undefined1 *)(puVar1 + 0x39) = 0;
     *(undefined2 *)((int)puVar1 + 0xe6) = 0;
-    puVar1[0x3a] = 0;
-    puVar1[0x3b] = 0;
-    puVar1[0x3c] = 0;
+    puVar1[0x3a] = (undefined4)(0);
+    puVar1[0x3b] = (undefined4)(0);
+    puVar1[0x3c] = (undefined4)(0);
     *(unsigned char *)((char *)&local_8 + 0) = 2;
     thunk_FUN_10c5f8a0(&DAT_1186d2ee);
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(3)));
     thunk_FUN_10bd4a00(1,0);
-    puVar1[0x4f] = 0;
-    puVar1[0x50] = 0;
+    puVar1[0x4f] = (undefined4)(0);
+    puVar1[0x50] = (undefined4)(0);
 
     return (undefined4 *)(puVar1);
   }
@@ -1378,9 +1337,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a24db0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyMissingProductPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyMissingProductPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyMissingProductPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyMissingProductPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyMissingProductPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyMissingProductPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyMissingProductPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -1411,10 +1370,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a24e90(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyRemoveErrorPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyRemoveErrorPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyRemoveErrorPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyRemoveErrorPage;
-    puVar1[0x38] = 0;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyRemoveErrorPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyRemoveErrorPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyRemoveErrorPage);
+    puVar1[0x38] = (undefined4)(0);
     *(undefined1 *)(puVar1 + 0x39) = 0;
 
     return (undefined4 *)(puVar1);
@@ -1448,9 +1407,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a24f80(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyServiceSelectionPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyServiceSelectionPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyServiceSelectionPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyServiceSelectionPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyServiceSelectionPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyServiceSelectionPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyServiceSelectionPage);
     uVar3 = (uint)(rand());
     uVar3 = (uint)(uVar3 & 0x80000001);
     bVar4 = (bool)(uVar3 == 0);
@@ -1460,8 +1419,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a24f80(undefined4 param_2,undefine
     *(undefined4 *)((int)puVar1 + 0xe1) = 0;
     *(bool *)(puVar1 + 0x38) = bVar4;
     *(undefined1 *)((int)puVar1 + 0xe5) = 0;
-    puVar1[0x3a] = 0;
-    puVar1[0x3b] = 0;
+    puVar1[0x3a] = (undefined4)(0);
+    puVar1[0x3b] = (undefined4)(0);
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
     thunk_FUN_10bd4a00(1,0);
 
@@ -1494,13 +1453,13 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a250d0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyStereoGAPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyStereoGAPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyStereoGAPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyStereoGAPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyStereoGAPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyStereoGAPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyStereoGAPage);
     *(undefined1 *)(puVar1 + 0x38) = 0;
-    puVar1[0x39] = 0;
-    puVar1[0x3a] = 0;
-    puVar1[0x3b] = 0;
+    puVar1[0x39] = (undefined4)(0);
+    puVar1[0x3a] = (undefined4)(0);
+    puVar1[0x3b] = (undefined4)(0);
 
     return (undefined4 *)(puVar1);
   }
@@ -1539,9 +1498,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a251d0(undefined4 param_2,undefine
     thunk_FUN_10d9e2b0(puVar1);
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(4)));
     *puVar2 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyWizard);
-    puVar2[4] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyWizard;
+    puVar2[4] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyWizard);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyWizard);
-    puVar2[0x2a] = (uint)&ghidra_vftable_SCVoiceServiceConcurrencyWizard;
+    puVar2[0x2a] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceConcurrencyWizard);
     thunk_FUN_10bd4a00(1,0);
     *(undefined1 *)(puVar2 + 0x50) = 0;
 
@@ -1595,7 +1554,7 @@ void __fastcall FUN_10a3d0f0(int *param_1)
 
   local_14 = (int *)(param_1);
   iVar1 = (int)(thunk_FUN_10d9e5c0(DAT_12126b84 ));
-  param_1[0x43] = iVar1;
+  param_1[0x43] = (int)(iVar1);
   puVar2 = (undefined4 *)((undefined4 *)thunk_FUN_10cf34e0(&local_14));
 
   thunk_FUN_10bed390(*puVar2);
@@ -1675,9 +1634,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a41370(undefined4 param_2)
   }
   thunk_FUN_10d9e2b0(puVar1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceLocaleWizard);
-  param_1[4] = (uint)&ghidra_vftable_SCVoiceServiceLocaleWizard;
-  param_1[0x23] = (uint)&ghidra_vftable_SCVoiceServiceLocaleWizard;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCVoiceServiceLocaleWizard;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceLocaleWizard);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceLocaleWizard);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceLocaleWizard);
 
   return (undefined4 *)(param_1);
 
@@ -1729,9 +1688,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a41950(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -1748,9 +1707,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a41a10(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_10247e10();
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xec);
@@ -1766,9 +1725,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a41ac0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -1843,8 +1802,8 @@ void __thiscall Recovered_Bulk::FUN_10a41ce0(int param_2,int param_3,int param_4
     thunk_FUN_1148a50e(iVar2,uVar3);
   }
   *param_1 = (int)(param_2);
-  param_1[1] = param_2 + param_3 * 8;
-  param_1[2] = param_2 + param_4 * 8;
+  param_1[1] = (int)(param_2 + param_3 * 8);
+  param_1[2] = (int)(param_2 + param_4 * 8);
   return;
 }
 
@@ -1869,12 +1828,12 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a41ec0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceLocaleSelectionPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCVoiceServiceLocaleSelectionPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCVoiceServiceLocaleSelectionPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCVoiceServiceLocaleSelectionPage;
-    puVar1[0x38] = 0;
-    puVar1[0x39] = 0;
-    puVar1[0x3a] = 0;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceLocaleSelectionPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceLocaleSelectionPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceLocaleSelectionPage);
+    puVar1[0x38] = (undefined4)(0);
+    puVar1[0x39] = (undefined4)(0);
+    puVar1[0x3a] = (undefined4)(0);
 
     return (undefined4 *)(puVar1);
   }
@@ -1905,9 +1864,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a41fc0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceLocaleUnsupportedPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCVoiceServiceLocaleUnsupportedPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCVoiceServiceLocaleUnsupportedPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCVoiceServiceLocaleUnsupportedPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceLocaleUnsupportedPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceLocaleUnsupportedPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceLocaleUnsupportedPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -1945,9 +1904,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a420a0(undefined4 param_2,undefine
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(3)));
     thunk_FUN_10d9e2b0(puVar1);
     *puVar2 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceLocaleWizard);
-    puVar2[4] = (uint)&ghidra_vftable_SCVoiceServiceLocaleWizard;
+    puVar2[4] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceLocaleWizard);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceLocaleWizard);
-    puVar2[0x2a] = (uint)&ghidra_vftable_SCVoiceServiceLocaleWizard;
+    puVar2[0x2a] = (undefined4)((uint)&ghidra_vftable_SCVoiceServiceLocaleWizard);
 
     return (undefined4 *)(puVar2);
   }
@@ -1995,9 +1954,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a44ae0(undefined4 param_2)
   }
   thunk_FUN_10eaafe0(puVar1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCWacConnectWizard);
-  param_1[4] = (uint)&ghidra_vftable_SCWacConnectWizard;
-  param_1[0x23] = (uint)&ghidra_vftable_SCWacConnectWizard;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCWacConnectWizard;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCWacConnectWizard);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCWacConnectWizard);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCWacConnectWizard);
 
   return (undefined4 *)(param_1);
 
@@ -2056,9 +2015,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a45120(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -2074,9 +2033,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a451e0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -2092,9 +2051,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a45280(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -2380,9 +2339,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a458f0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCWacConnectIntroPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCWacConnectIntroPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCWacConnectIntroPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCWacConnectIntroPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCWacConnectIntroPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCWacConnectIntroPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCWacConnectIntroPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -2413,9 +2372,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a459d0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCWacConnectScanningPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCWacConnectScanningPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCWacConnectScanningPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCWacConnectScanningPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCWacConnectScanningPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCWacConnectScanningPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCWacConnectScanningPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -2455,9 +2414,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a45ab0(undefined4 param_2,undefine
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(4)));
     thunk_FUN_10eaafe0(puVar2 + 0x3a);
     *puVar2 = (undefined4)((uint)&ghidra_vftable_SCWacConnectWizard);
-    puVar2[4] = (uint)&ghidra_vftable_SCWacConnectWizard;
+    puVar2[4] = (undefined4)((uint)&ghidra_vftable_SCWacConnectWizard);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCWacConnectWizard);
-    puVar2[0x2a] = (uint)&ghidra_vftable_SCWacConnectWizard;
+    puVar2[0x2a] = (undefined4)((uint)&ghidra_vftable_SCWacConnectWizard);
 
     return (undefined4 *)(puVar2);
   }
@@ -2642,9 +2601,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a49250(undefined4 param_2)
   }
   thunk_FUN_10eaafe0(puVar1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCWiredConnectWizard);
-  param_1[4] = (uint)&ghidra_vftable_SCWiredConnectWizard;
-  param_1[0x23] = (uint)&ghidra_vftable_SCWiredConnectWizard;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCWiredConnectWizard;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCWiredConnectWizard);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCWiredConnectWizard);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCWiredConnectWizard);
 
   return (undefined4 *)(param_1);
 
@@ -2703,9 +2662,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a49870(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -2721,9 +2680,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a49930(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -2739,9 +2698,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a499d0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -2817,9 +2776,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a49f80(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCWiredConnectFindProductPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCWiredConnectFindProductPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCWiredConnectFindProductPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCWiredConnectFindProductPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCWiredConnectFindProductPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCWiredConnectFindProductPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCWiredConnectFindProductPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -2850,9 +2809,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a4a060(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCWiredConnectIntroPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCWiredConnectIntroPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCWiredConnectIntroPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCWiredConnectIntroPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCWiredConnectIntroPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCWiredConnectIntroPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCWiredConnectIntroPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -2892,9 +2851,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a4a140(undefined4 param_2,undefine
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(4)));
     thunk_FUN_10eaafe0(puVar2 + 0x3a);
     *puVar2 = (undefined4)((uint)&ghidra_vftable_SCWiredConnectWizard);
-    puVar2[4] = (uint)&ghidra_vftable_SCWiredConnectWizard;
+    puVar2[4] = (undefined4)((uint)&ghidra_vftable_SCWiredConnectWizard);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCWiredConnectWizard);
-    puVar2[0x2a] = (uint)&ghidra_vftable_SCWiredConnectWizard;
+    puVar2[0x2a] = (undefined4)((uint)&ghidra_vftable_SCWiredConnectWizard);
 
     return (undefined4 *)(puVar2);
   }
@@ -2935,74 +2894,6 @@ void __stdcall FUN_10a4c400(int *param_1)
     if (param_1 != (int *)0x0) {
       (**(code **)(*param_1 + 8))();
     }
-  }
-
-  return;
-
- } catch (...) { }
-}
-
-
-// Reference entry 10a4c9a0; body size 111 bytes.
-#line 1 "ENTRY_10a4c9a0"
-
-void FUN_10a4c9a0(undefined4 *param_1,undefined4 *param_2)
-
-{
- try {
-  int *piVar1;
-  void **ppvVar2;
-  uint uVar3;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-  uVar3 = (uint)(DAT_12126b84);
-  ppvVar2 = (void **)(&local_10);
-
-  for (; ExceptionList = (void *)(ppvVar2, param_1 != (undefined4 *)(param_2)); param_1 = param_1 + 2) {
-    piVar1 = (int *)((int *)param_1[1]);
-
-    if (piVar1 != (int *)0x0) {
-      *param_1 = (undefined4)(0);
-      param_1[1] = 0;
-      (**(code **)(*piVar1 + 8))(uVar3);
-    }
-
-  }
-
-  return;
-
- } catch (...) { }
-}
-
-
-// Reference entry 10a4ca40; body size 111 bytes.
-#line 1 "ENTRY_10a4ca40"
-
-void FUN_10a4ca40(undefined4 *param_1,undefined4 *param_2)
-
-{
- try {
-  int *piVar1;
-  void **ppvVar2;
-  uint uVar3;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-  uVar3 = (uint)(DAT_12126b84);
-  ppvVar2 = (void **)(&local_10);
-
-  for (; ExceptionList = (void *)(ppvVar2, param_1 != (undefined4 *)(param_2)); param_1 = param_1 + 2) {
-    piVar1 = (int *)((int *)param_1[1]);
-
-    if (piVar1 != (int *)0x0) {
-      *param_1 = (undefined4)(0);
-      param_1[1] = 0;
-      (**(code **)(*piVar1 + 8))(uVar3);
-    }
-
   }
 
   return;
@@ -3069,63 +2960,147 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a4cc20(void *param_2,undefined4 *p
     thunk_FUN_1148a50e(iVar4,uVar6);
   }
   *param_1 = (int)((int)_Dst);
-  param_1[1] = (int)((int)_Dst + uVar1 * 4);
-  param_1[2] = (int)((int)_Dst + uVar5 * 4);
+  param_1[1] = (int)((int)((int)_Dst + uVar1 * 4));
+  param_1[2] = (int)((int)((int)_Dst + uVar5 * 4));
   return (undefined4 *)(puVar2);
 }
 
 
-// Reference entry 10a4d8d0; body size 84 bytes.
-#line 1 "ENTRY_10a4d8d0"
+// Reference entry 10a4d3b0; body size 124 bytes.
+#line 1 "ENTRY_10a4d3b0"
 
-void FUN_10a4d8d0(undefined4 param_1,undefined4 *param_2)
+undefined4 * FUN_10a4d3b0(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3)
 
 {
  try {
   int *piVar1;
-  uint uVar2;
+  void **ppvVar2;
+  uint uVar3;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
 
-  uVar2 = (uint)(DAT_12126b84);
+  uVar3 = (uint)(DAT_12126b84);
 
-  piVar1 = (int *)((int *)param_2[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_2 = (undefined4)(0);
-    param_2[1] = 0;
-    (**(code **)(*piVar1 + 8))(uVar2);
+  ppvVar2 = (void **)(&local_10);
+
+  for (; ExceptionList = (void *)(ppvVar2, param_1 != (undefined4 *)(param_2)); param_1 = param_1 + 2) {
+    *param_3 = (undefined4)(*param_1);
+    piVar1 = (int *)((int *)param_1[1]);
+    param_3[1] = (undefined4)(piVar1);
+    if (piVar1 != (int *)0x0) {
+      (**(code **)(*piVar1 + 4))(uVar3);
+    }
+    param_3 = (undefined4 *)(param_3 + 2);
+
   }
 
-  return;
+  return (undefined4 *)(param_3);
 
  } catch (...) { }
 }
 
 
-// Reference entry 10a4d940; body size 84 bytes.
-#line 1 "ENTRY_10a4d940"
+// Reference entry 10a4d450; body size 124 bytes.
+#line 1 "ENTRY_10a4d450"
 
-void FUN_10a4d940(undefined4 param_1,undefined4 *param_2)
+undefined4 * FUN_10a4d450(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3)
 
 {
  try {
   int *piVar1;
-  uint uVar2;
+  void **ppvVar2;
+  uint uVar3;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
 
-  uVar2 = (uint)(DAT_12126b84);
+  uVar3 = (uint)(DAT_12126b84);
 
-  piVar1 = (int *)((int *)param_2[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_2 = (undefined4)(0);
-    param_2[1] = 0;
-    (**(code **)(*piVar1 + 8))(uVar2);
+  ppvVar2 = (void **)(&local_10);
+
+  for (; ExceptionList = (void *)(ppvVar2, param_1 != (undefined4 *)(param_2)); param_1 = param_1 + 2) {
+    *param_3 = (undefined4)(*param_1);
+    piVar1 = (int *)((int *)param_1[1]);
+    param_3[1] = (undefined4)(piVar1);
+    if (piVar1 != (int *)0x0) {
+      (**(code **)(*piVar1 + 4))(uVar3);
+    }
+    param_3 = (undefined4 *)(param_3 + 2);
+
   }
 
-  return;
+  return (undefined4 *)(param_3);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10a4d520; body size 124 bytes.
+#line 1 "ENTRY_10a4d520"
+
+undefined4 * FUN_10a4d520(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3)
+
+{
+ try {
+  int *piVar1;
+  void **ppvVar2;
+  uint uVar3;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  uVar3 = (uint)(DAT_12126b84);
+
+  ppvVar2 = (void **)(&local_10);
+
+  for (; ExceptionList = (void *)(ppvVar2, param_1 != (undefined4 *)(param_2)); param_1 = param_1 + 2) {
+    *param_3 = (undefined4)(*param_1);
+    piVar1 = (int *)((int *)param_1[1]);
+    param_3[1] = (undefined4)(piVar1);
+    if (piVar1 != (int *)0x0) {
+      (**(code **)(*piVar1 + 4))(uVar3);
+    }
+    param_3 = (undefined4 *)(param_3 + 2);
+
+  }
+
+  return (undefined4 *)(param_3);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10a4d5c0; body size 124 bytes.
+#line 1 "ENTRY_10a4d5c0"
+
+undefined4 * FUN_10a4d5c0(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3)
+
+{
+ try {
+  int *piVar1;
+  void **ppvVar2;
+  uint uVar3;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  uVar3 = (uint)(DAT_12126b84);
+
+  ppvVar2 = (void **)(&local_10);
+
+  for (; ExceptionList = (void *)(ppvVar2, param_1 != (undefined4 *)(param_2)); param_1 = param_1 + 2) {
+    *param_3 = (undefined4)(*param_1);
+    piVar1 = (int *)((int *)param_1[1]);
+    param_3[1] = (undefined4)(piVar1);
+    if (piVar1 != (int *)0x0) {
+      (**(code **)(*piVar1 + 4))(uVar3);
+    }
+    param_3 = (undefined4 *)(param_3 + 2);
+
+  }
+
+  return (undefined4 *)(param_3);
 
  } catch (...) { }
 }
@@ -3171,9 +3146,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a4e980(undefined4 param_2)
   }
   thunk_FUN_10ebc060(param_2,uVar3);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
-  param_1[4] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCSubwizStateFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
 
   return (undefined4 *)(param_1);
 
@@ -3221,9 +3196,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a4ea90(undefined4 param_2)
   }
   thunk_FUN_10ebc060(param_2,uVar3);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
-  param_1[4] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCSubwizStateFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
 
   return (undefined4 *)(param_1);
 
@@ -3271,13 +3246,42 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a4eba0(undefined4 param_2)
   }
   thunk_FUN_10ebc060(param_2,uVar3);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
-  param_1[4] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCSubwizStateFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
 
   return (undefined4 *)(param_1);
 
  } catch (...) { }
+}
+
+
+// Reference entry 10a4edc0; body size 100 bytes.
+#line 1 "ENTRY_10a4edc0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10a4edc0(undefined4 *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  void *_Src;
+  void *_Dst;
+  size_t _Size;
+  int iVar1;
+  
+  *param_1 = (undefined4)(0);
+  param_1[1] = (undefined4)(0);
+  param_1[2] = (undefined4)(0);
+  _Src = (void *)((void *)*param_2);
+  if (_Src != (void *)param_2[1]) {
+    _Size = (size_t)((int)param_2[1] - (int)_Src);
+    iVar1 = (int)((int)_Size >> 2);
+    _Dst = (void *)((void *)thunk_FUN_10a54750(iVar1));
+    *param_1 = (undefined4)(_Dst);
+    param_1[1] = (undefined4)(_Dst);
+    param_1[2] = (undefined4)((void *)((int)_Dst + iVar1 * 4));
+    memmove(_Dst,_Src,_Size);
+    param_1[1] = (undefined4)((void *)((int)_Dst + iVar1 * 4));
+  }
+  return (undefined4 *)(param_1);
 }
 
 
@@ -3301,19 +3305,19 @@ int * __thiscall Recovered_Bulk::FUN_10a4ee60(int *param_2)
   uVar2 = (uint)(DAT_12126b84);
 
   *param_1 = (int)(0);
-  param_1[1] = 0;
-  param_1[2] = 0;
+  param_1[1] = (int)(0);
+  param_1[2] = (int)(0);
   iVar4 = (int)(*param_2);
   iVar1 = (int)(param_2[1]);
   if (iVar4 != iVar1) {
     iVar5 = (int)(iVar1 - iVar4 >> 3);
     iVar3 = (int)(thunk_FUN_10a547c0(iVar5));
     *param_1 = (int)(iVar3);
-    param_1[1] = iVar3;
-    param_1[2] = iVar3 + iVar5 * 8;
+    param_1[1] = (int)(iVar3);
+    param_1[2] = (int)(iVar3 + iVar5 * 8);
 
     iVar4 = (int)(thunk_FUN_10a4d3b0(iVar4,iVar1,iVar3,param_1,uVar2));
-    param_1[1] = iVar4;
+    param_1[1] = (int)(iVar4);
   }
 
   return (int *)(param_1);
@@ -3342,19 +3346,19 @@ int * __thiscall Recovered_Bulk::FUN_10a4ef40(int *param_2)
   uVar2 = (uint)(DAT_12126b84);
 
   *param_1 = (int)(0);
-  param_1[1] = 0;
-  param_1[2] = 0;
+  param_1[1] = (int)(0);
+  param_1[2] = (int)(0);
   iVar4 = (int)(*param_2);
   iVar1 = (int)(param_2[1]);
   if (iVar4 != iVar1) {
     iVar5 = (int)(iVar1 - iVar4 >> 3);
     iVar3 = (int)(thunk_FUN_10a54830(iVar5));
     *param_1 = (int)(iVar3);
-    param_1[1] = iVar3;
-    param_1[2] = iVar3 + iVar5 * 8;
+    param_1[1] = (int)(iVar3);
+    param_1[2] = (int)(iVar3 + iVar5 * 8);
 
     iVar4 = (int)(thunk_FUN_10a4d450(iVar4,iVar1,iVar3,param_1,uVar2));
-    param_1[1] = iVar4;
+    param_1[1] = (int)(iVar4);
   }
 
   return (int *)(param_1);
@@ -3403,9 +3407,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a4f020(undefined4 param_2)
   }
   thunk_FUN_10ebc060(param_2,uVar3);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferAccountCreateSubwiz);
-  param_1[4] = (uint)&ghidra_vftable_SCAccountSecureTransferAccountCreateSubwiz;
-  param_1[0x23] = (uint)&ghidra_vftable_SCAccountSecureTransferAccountCreateSubwiz;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCAccountSecureTransferAccountCreateSubwiz;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferAccountCreateSubwiz);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferAccountCreateSubwiz);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferAccountCreateSubwiz);
 
   return (undefined4 *)(param_1);
 
@@ -3453,9 +3457,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a4f230(undefined4 param_2)
   }
   thunk_FUN_10ebc060(param_2,uVar3);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferAccountLoginSubwiz);
-  param_1[4] = (uint)&ghidra_vftable_SCAccountSecureTransferAccountLoginSubwiz;
-  param_1[0x23] = (uint)&ghidra_vftable_SCAccountSecureTransferAccountLoginSubwiz;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCAccountSecureTransferAccountLoginSubwiz;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferAccountLoginSubwiz);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferAccountLoginSubwiz);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferAccountLoginSubwiz);
 
   return (undefined4 *)(param_1);
 
@@ -3503,9 +3507,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a50290(undefined4 param_2)
   }
   thunk_FUN_10ebc060(param_2,uVar3);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferRegisterProductSubwiz);
-  param_1[4] = (uint)&ghidra_vftable_SCAccountSecureTransferRegisterProductSubwiz;
-  param_1[0x23] = (uint)&ghidra_vftable_SCAccountSecureTransferRegisterProductSubwiz;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCAccountSecureTransferRegisterProductSubwiz;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferRegisterProductSubwiz);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferRegisterProductSubwiz);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferRegisterProductSubwiz);
 
   return (undefined4 *)(param_1);
 
@@ -3536,80 +3540,22 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a504a0(undefined4 param_2)
   }
   thunk_FUN_10cf2f30(puVar1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferWizard);
-  param_1[4] = (uint)&ghidra_vftable_SCAccountSecureTransferWizard;
-  param_1[0x23] = (uint)&ghidra_vftable_SCAccountSecureTransferWizard;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCAccountSecureTransferWizard;
-  param_1[0x3d] = 0;
-  param_1[0x3e] = 0;
-  param_1[0x3f] = 0;
-  param_1[0x40] = 0;
-  param_1[0x41] = 0;
-  param_1[0x42] = 0;
-  param_1[0x43] = 0;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferWizard);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferWizard);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferWizard);
+  param_1[0x3d] = (undefined4)(0);
+  param_1[0x3e] = (undefined4)(0);
+  param_1[0x3f] = (undefined4)(0);
+  param_1[0x40] = (undefined4)(0);
+  param_1[0x41] = (undefined4)(0);
+  param_1[0x42] = (undefined4)(0);
+  param_1[0x43] = (undefined4)(0);
   *(undefined2 *)(param_1 + 0x44) = 1;
-  param_1[0x45] = 0;
-  param_1[0x46] = 0;
-  param_1[0x47] = 0;
+  param_1[0x45] = (undefined4)(0);
+  param_1[0x46] = (undefined4)(0);
+  param_1[0x47] = (undefined4)(0);
 
   return (undefined4 *)(param_1);
-
- } catch (...) { }
-}
-
-
-// Reference entry 10a512a0; body size 76 bytes.
-#line 1 "ENTRY_10a512a0"
-
-void __fastcall FUN_10a512a0(undefined4 *param_1)
-
-{
- try {
-  int *piVar1;
-  uint uVar2;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-
-  return;
-
- } catch (...) { }
-}
-
-
-// Reference entry 10a51310; body size 76 bytes.
-#line 1 "ENTRY_10a51310"
-
-void __fastcall FUN_10a51310(undefined4 *param_1)
-
-{
- try {
-  int *piVar1;
-  uint uVar2;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-
-  return;
 
  } catch (...) { }
 }
@@ -3654,222 +3600,10 @@ void __fastcall FID_conflict__Tidy_10a51480(int *param_1)
     }
     thunk_FUN_1148a50e(iVar2,uVar3);
     *param_1 = (int)(0);
-    param_1[1] = 0;
-    param_1[2] = 0;
+    param_1[1] = (int)(0);
+    param_1[2] = (int)(0);
   }
   return;
-}
-
-
-// Reference entry 10a51600; body size 156 bytes.
-#line 1 "ENTRY_10a51600"
-
-void __fastcall FUN_10a51600(undefined4 *param_1)
-
-{
- try {
-  int *piVar1;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-
-  thunk_FUN_10a540f0(DAT_12126b84 );
-  param_1[0x38] = (uint)&ghidra_vftable_SCIOpCBDelegate;
-  piVar1 = (int *)((int *)param_1[0x3a]);
-
-  if (piVar1 != (int *)0x0) {
-    param_1[0x39] = 0;
-    param_1[0x3a] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  thunk_FUN_10eb6cc0();
-
-  return;
-
- } catch (...) { }
-}
-
-
-// Reference entry 10a516f0; body size 156 bytes.
-#line 1 "ENTRY_10a516f0"
-
-void __fastcall FUN_10a516f0(undefined4 *param_1)
-
-{
- try {
-  int *piVar1;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-
-  thunk_FUN_10a54170(DAT_12126b84 );
-  param_1[0x38] = (uint)&ghidra_vftable_SCIOpCBDelegate;
-  piVar1 = (int *)((int *)param_1[0x3a]);
-
-  if (piVar1 != (int *)0x0) {
-    param_1[0x39] = 0;
-    param_1[0x3a] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  thunk_FUN_10eb6cc0();
-
-  return;
-
- } catch (...) { }
-}
-
-
-// Reference entry 10a51970; body size 241 bytes.
-#line 1 "ENTRY_10a51970"
-
-void __fastcall FUN_10a51970(undefined4 *param_1)
-
-{
- try {
-  int iVar1;
-  int *piVar2;
-  int iVar3;
-  uint uVar4;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-
-  iVar1 = (int)(param_1[0x3b]);
-  if (iVar1 != 0) {
-    uVar4 = (uint)((param_1[0x3d] - iVar1 >> 2) * 4);
-    iVar3 = (int)(iVar1);
-    if (0xfff < uVar4) {
-      iVar3 = (int)(*(int *)(iVar1 + -4));
-      uVar4 = (uint)(uVar4 + 0x23);
-      if (0x1f < (iVar1 - iVar3) - 4U) {
-                    
-        _invalid_parameter_noinfo_noreturn();
-      }
-    }
-    thunk_FUN_1148a50e(iVar3,uVar4,DAT_12126b84 );
-    param_1[0x3b] = 0;
-    param_1[0x3c] = 0;
-    param_1[0x3d] = 0;
-  }
-  piVar2 = (int *)((int *)param_1[0x39]);
-
-  if (piVar2 != (int *)0x0) {
-    param_1[0x38] = 0;
-    param_1[0x39] = 0;
-    (**(code **)(*piVar2 + 8))();
-  }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  thunk_FUN_10eb6cc0();
-
-  return;
-
- } catch (...) { }
-}
-
-
-// Reference entry 10a51ad0; body size 137 bytes.
-#line 1 "ENTRY_10a51ad0"
-
-void __fastcall FUN_10a51ad0(undefined4 *param_1)
-
-{
-  int iVar1;
-  int iVar2;
-  uint uVar3;
-  
-  iVar1 = (int)(param_1[0x38]);
-  if (iVar1 != 0) {
-    uVar3 = (uint)(param_1[0x3a] - iVar1 & 0xfffffffc);
-    iVar2 = (int)(iVar1);
-    if (0xfff < uVar3) {
-      iVar2 = (int)(*(int *)(iVar1 + -4));
-      uVar3 = (uint)(uVar3 + 0x23);
-      if (0x1f < (iVar1 - iVar2) - 4U) {
-                    
-        _invalid_parameter_noinfo_noreturn();
-      }
-    }
-    thunk_FUN_1148a50e(iVar2,uVar3);
-    param_1[0x38] = 0;
-    param_1[0x39] = 0;
-    param_1[0x3a] = 0;
-  }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  thunk_FUN_10eb6cc0();
-  return;
-}
-
-
-// Reference entry 10a51f30; body size 81 bytes.
-#line 1 "ENTRY_10a51f30"
-
-int * __thiscall Recovered_Bulk::FUN_10a51f30(int *param_2)
-{
-  int *param_1 = (int *)this;
-  int *piVar1;
-  
-  if (param_2 != (int *)*param_1) {
-    piVar1 = (int *)((int *)param_1[1]);
-    if (piVar1 != (int *)0x0) {
-      *param_1 = (int)(0);
-      param_1[1] = 0;
-      (**(code **)(*piVar1 + 8))();
-    }
-    *param_1 = (int)((int)param_2);
-    if (param_2 != (int *)0x0) {
-      piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
-      param_1[1] = (int)piVar1;
-      (**(code **)(*piVar1 + 4))();
-      return (int *)(param_1);
-    }
-    param_1[1] = 0;
-  }
-  return (int *)(param_1);
-}
-
-
-// Reference entry 10a52000; body size 81 bytes.
-#line 1 "ENTRY_10a52000"
-
-int * __thiscall Recovered_Bulk::FUN_10a52000(int *param_2)
-{
-  int *param_1 = (int *)this;
-  int *piVar1;
-  
-  if (param_2 != (int *)*param_1) {
-    piVar1 = (int *)((int *)param_1[1]);
-    if (piVar1 != (int *)0x0) {
-      *param_1 = (int)(0);
-      param_1[1] = 0;
-      (**(code **)(*piVar1 + 8))();
-    }
-    *param_1 = (int)((int)param_2);
-    if (param_2 != (int *)0x0) {
-      piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
-      param_1[1] = (int)piVar1;
-      (**(code **)(*piVar1 + 4))();
-      return (int *)(param_1);
-    }
-    param_1[1] = 0;
-  }
-  return (int *)(param_1);
 }
 
 
@@ -3880,78 +3614,14 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a52670(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
   }
   return (undefined4 *)(param_1);
-}
-
-
-// Reference entry 10a52940; body size 106 bytes.
-#line 1 "ENTRY_10a52940"
-
-undefined4 * __thiscall Recovered_Bulk::FUN_10a52940(byte param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
- try {
-  int *piVar1;
-  uint uVar2;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  piVar1 = (int *)((int *)param_1[1]);
-
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-  if ((param_2 & 1) != 0) {
-    thunk_FUN_1148a50e(param_1,8);
-  }
-
-  return (undefined4 *)(param_1);
-
- } catch (...) { }
-}
-
-
-// Reference entry 10a529d0; body size 106 bytes.
-#line 1 "ENTRY_10a529d0"
-
-undefined4 * __thiscall Recovered_Bulk::FUN_10a529d0(byte param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
- try {
-  int *piVar1;
-  uint uVar2;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  piVar1 = (int *)((int *)param_1[1]);
-
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-  if ((param_2 & 1) != 0) {
-    thunk_FUN_1148a50e(param_1,8);
-  }
-
-  return (undefined4 *)(param_1);
-
- } catch (...) { }
 }
 
 
@@ -3962,9 +3632,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a52a60(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
-  param_1[4] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCSubwizStateFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
   thunk_FUN_10ebc110();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc0);
@@ -3980,9 +3650,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a52ac0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
-  param_1[4] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCSubwizStateFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
   thunk_FUN_10ebc110();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc0);
@@ -3998,9 +3668,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a52b20(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
-  param_1[4] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCSubwizStateFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
   thunk_FUN_10ebc110();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc0);
@@ -4016,9 +3686,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a52b80(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
-  param_1[4] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCSubwizStateFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
   thunk_FUN_10ebc110();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc0);
@@ -4034,9 +3704,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a52c20(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
-  param_1[4] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCSubwizStateFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
   thunk_FUN_10ebc110();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc0);
@@ -4052,88 +3722,14 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a52cc0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
   }
   return (undefined4 *)(param_1);
-}
-
-
-// Reference entry 10a52d60; body size 180 bytes.
-#line 1 "ENTRY_10a52d60"
-
-undefined4 * __thiscall Recovered_Bulk::FUN_10a52d60(byte param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
- try {
-  int *piVar1;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-
-  thunk_FUN_10a540f0(DAT_12126b84 );
-  param_1[0x38] = (uint)&ghidra_vftable_SCIOpCBDelegate;
-  piVar1 = (int *)((int *)param_1[0x3a]);
-
-  if (piVar1 != (int *)0x0) {
-    param_1[0x39] = 0;
-    param_1[0x3a] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  thunk_FUN_10eb6cc0();
-  if ((param_2 & 1) != 0) {
-    thunk_FUN_1148a50e(param_1,0x104);
-  }
-
-  return (undefined4 *)(param_1);
-
- } catch (...) { }
-}
-
-
-// Reference entry 10a52e90; body size 180 bytes.
-#line 1 "ENTRY_10a52e90"
-
-undefined4 * __thiscall Recovered_Bulk::FUN_10a52e90(byte param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
- try {
-  int *piVar1;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-
-  thunk_FUN_10a54170(DAT_12126b84 );
-  param_1[0x38] = (uint)&ghidra_vftable_SCIOpCBDelegate;
-  piVar1 = (int *)((int *)param_1[0x3a]);
-
-  if (piVar1 != (int *)0x0) {
-    param_1[0x39] = 0;
-    param_1[0x3a] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  thunk_FUN_10eb6cc0();
-  if ((param_2 & 1) != 0) {
-    thunk_FUN_1148a50e(param_1,0xfc);
-  }
-
-  return (undefined4 *)(param_1);
-
- } catch (...) { }
 }
 
 
@@ -4144,9 +3740,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a52fc0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -4162,9 +3758,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a53060(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -4180,9 +3776,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a53100(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -4198,9 +3794,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a531a0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -4216,109 +3812,12 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a53240(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
-  }
-  return (undefined4 *)(param_1);
-}
-
-
-// Reference entry 10a532e0; body size 265 bytes.
-#line 1 "ENTRY_10a532e0"
-
-undefined4 * __thiscall Recovered_Bulk::FUN_10a532e0(byte param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
- try {
-  int iVar1;
-  int *piVar2;
-  uint uVar3;
-  int iVar4;
-  uint uVar5;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-
-  uVar3 = (uint)(DAT_12126b84);
-
-  iVar1 = (int)(param_1[0x3b]);
-  if (iVar1 != 0) {
-    uVar5 = (uint)((param_1[0x3d] - iVar1 >> 2) * 4);
-    iVar4 = (int)(iVar1);
-    if (0xfff < uVar5) {
-      iVar4 = (int)(*(int *)(iVar1 + -4));
-      uVar5 = (uint)(uVar5 + 0x23);
-      if (0x1f < (iVar1 - iVar4) - 4U) {
-                    
-        _invalid_parameter_noinfo_noreturn();
-      }
-    }
-    thunk_FUN_1148a50e(iVar4,uVar5,uVar3);
-    param_1[0x3b] = 0;
-    param_1[0x3c] = 0;
-    param_1[0x3d] = 0;
-  }
-  piVar2 = (int *)((int *)param_1[0x39]);
-
-  if (piVar2 != (int *)0x0) {
-    param_1[0x38] = 0;
-    param_1[0x39] = 0;
-    (**(code **)(*piVar2 + 8))();
-  }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  thunk_FUN_10eb6cc0();
-  if ((param_2 & 1) != 0) {
-    thunk_FUN_1148a50e(param_1,0xf8,uVar3);
-  }
-
-  return (undefined4 *)(param_1);
-
- } catch (...) { }
-}
-
-
-// Reference entry 10a53480; body size 163 bytes.
-#line 1 "ENTRY_10a53480"
-
-undefined4 * __thiscall Recovered_Bulk::FUN_10a53480(byte param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int iVar1;
-  int iVar2;
-  uint uVar3;
-  
-  iVar1 = (int)(param_1[0x38]);
-  if (iVar1 != 0) {
-    uVar3 = (uint)(param_1[0x3a] - iVar1 & 0xfffffffc);
-    iVar2 = (int)(iVar1);
-    if (0xfff < uVar3) {
-      iVar2 = (int)(*(int *)(iVar1 + -4));
-      uVar3 = (uint)(uVar3 + 0x23);
-      if (0x1f < (iVar1 - iVar2) - 4U) {
-                    
-        _invalid_parameter_noinfo_noreturn();
-      }
-    }
-    thunk_FUN_1148a50e(iVar2,uVar3);
-    param_1[0x38] = 0;
-    param_1[0x39] = 0;
-    param_1[0x3a] = 0;
-  }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  thunk_FUN_10eb6cc0();
-  if ((param_2 & 1) != 0) {
-    thunk_FUN_1148a50e(param_1,0xec);
   }
   return (undefined4 *)(param_1);
 }
@@ -4331,9 +3830,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a53590(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
-  param_1[4] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCSubwizStateFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
   thunk_FUN_10ebc110();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc0);
@@ -4367,8 +3866,8 @@ void __thiscall Recovered_Bulk::FUN_10a53ab0(int param_2,int param_3,int param_4
     thunk_FUN_1148a50e(iVar2,uVar3);
   }
   *param_1 = (int)(param_2);
-  param_1[1] = param_2 + param_3 * 4;
-  param_1[2] = param_2 + param_4 * 4;
+  param_1[1] = (int)(param_2 + param_3 * 4);
+  param_1[2] = (int)(param_2 + param_4 * 4);
   return;
 }
 
@@ -4399,8 +3898,8 @@ void __thiscall Recovered_Bulk::FUN_10a53b20(int param_2,int param_3,int param_4
     thunk_FUN_1148a50e(iVar2,uVar3);
   }
   *param_1 = (int)(param_2);
-  param_1[1] = param_2 + param_3 * 8;
-  param_1[2] = param_2 + param_4 * 8;
+  param_1[1] = (int)(param_2 + param_3 * 8);
+  param_1[2] = (int)(param_2 + param_4 * 8);
   return;
 }
 
@@ -4431,45 +3930,8 @@ void __thiscall Recovered_Bulk::FUN_10a53bb0(int param_2,int param_3,int param_4
     thunk_FUN_1148a50e(iVar2,uVar3);
   }
   *param_1 = (int)(param_2);
-  param_1[1] = param_2 + param_3 * 8;
-  param_1[2] = param_2 + param_4 * 8;
-  return;
-}
-
-
-// Reference entry 10a53f50; body size 123 bytes.
-#line 1 "ENTRY_10a53f50"
-
-void __thiscall Recovered_Bulk::FUN_10a53f50(int *param_2)
-{
-  int *param_1 = (int *)this;
-  int iVar1;
-  int iVar2;
-  uint uVar3;
-  
-  iVar1 = (int)(*param_1);
-  if (iVar1 != 0) {
-    uVar3 = (uint)(param_1[2] - iVar1 & 0xfffffffc);
-    iVar2 = (int)(iVar1);
-    if (0xfff < uVar3) {
-      iVar2 = (int)(*(int *)(iVar1 + -4));
-      uVar3 = (uint)(uVar3 + 0x23);
-      if (0x1f < (iVar1 - iVar2) - 4U) {
-                    
-        _invalid_parameter_noinfo_noreturn();
-      }
-    }
-    thunk_FUN_1148a50e(iVar2,uVar3);
-    *param_1 = (int)(0);
-    param_1[1] = 0;
-    param_1[2] = 0;
-  }
-  *param_1 = (int)(*param_2);
-  param_1[1] = param_2[1];
-  param_1[2] = param_2[2];
-  *param_2 = (int)(0);
-  param_2[1] = 0;
-  param_2[2] = 0;
+  param_1[1] = (int)(param_2 + param_3 * 8);
+  param_1[2] = (int)(param_2 + param_4 * 8);
   return;
 }
 
@@ -4513,8 +3975,8 @@ void __fastcall FID_conflict__Tidy_10a54080(int *param_1)
     }
     thunk_FUN_1148a50e(iVar2,uVar3);
     *param_1 = (int)(0);
-    param_1[1] = 0;
-    param_1[2] = 0;
+    param_1[1] = (int)(0);
+    param_1[2] = (int)(0);
   }
   return;
 }
@@ -4545,8 +4007,8 @@ void __fastcall FUN_10a540f0(int *param_1)
     }
     thunk_FUN_1148a50e(iVar2,uVar3);
     *param_1 = (int)(0);
-    param_1[1] = 0;
-    param_1[2] = 0;
+    param_1[1] = (int)(0);
+    param_1[2] = (int)(0);
   }
   return;
 }
@@ -4577,10 +4039,80 @@ void __fastcall FUN_10a54170(int *param_1)
     }
     thunk_FUN_1148a50e(iVar2,uVar3);
     *param_1 = (int)(0);
-    param_1[1] = 0;
-    param_1[2] = 0;
+    param_1[1] = (int)(0);
+    param_1[2] = (int)(0);
   }
   return;
+}
+
+
+// Reference entry 10a54220; body size 123 bytes.
+#line 1 "ENTRY_10a54220"
+
+undefined4 * __stdcall FUN_10a54220(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3)
+
+{
+ try {
+  int *piVar1;
+  void **ppvVar2;
+  uint uVar3;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  uVar3 = (uint)(DAT_12126b84);
+
+  ppvVar2 = (void **)(&local_10);
+
+  for (; ExceptionList = (void *)(ppvVar2, param_1 != (undefined4 *)(param_2)); param_1 = param_1 + 2) {
+    *param_3 = (undefined4)(*param_1);
+    piVar1 = (int *)((int *)param_1[1]);
+    param_3[1] = (undefined4)(piVar1);
+    if (piVar1 != (int *)0x0) {
+      (**(code **)(*piVar1 + 4))(uVar3);
+    }
+    param_3 = (undefined4 *)(param_3 + 2);
+
+  }
+
+  return (undefined4 *)(param_3);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10a542c0; body size 123 bytes.
+#line 1 "ENTRY_10a542c0"
+
+undefined4 * __stdcall FUN_10a542c0(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3)
+
+{
+ try {
+  int *piVar1;
+  void **ppvVar2;
+  uint uVar3;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  uVar3 = (uint)(DAT_12126b84);
+
+  ppvVar2 = (void **)(&local_10);
+
+  for (; ExceptionList = (void *)(ppvVar2, param_1 != (undefined4 *)(param_2)); param_1 = param_1 + 2) {
+    *param_3 = (undefined4)(*param_1);
+    piVar1 = (int *)((int *)param_1[1]);
+    param_3[1] = (undefined4)(piVar1);
+    if (piVar1 != (int *)0x0) {
+      (**(code **)(*piVar1 + 4))(uVar3);
+    }
+    param_3 = (undefined4 *)(param_3 + 2);
+
+  }
+
+  return (undefined4 *)(param_3);
+
+ } catch (...) { }
 }
 
 
@@ -4786,9 +4318,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a55020(undefined4 param_2,undefine
     }
     thunk_FUN_10ebc060(uVar3,uVar5);
     *puVar2 = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferAccountCreateSubwiz);
-    puVar2[4] = (uint)&ghidra_vftable_SCAccountSecureTransferAccountCreateSubwiz;
-    puVar2[0x23] = (uint)&ghidra_vftable_SCAccountSecureTransferAccountCreateSubwiz;
-    puVar2[0x2a] = (uint)&ghidra_vftable_SCAccountSecureTransferAccountCreateSubwiz;
+    puVar2[4] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferAccountCreateSubwiz);
+    puVar2[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferAccountCreateSubwiz);
+    puVar2[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferAccountCreateSubwiz);
 
     return (undefined4 *)(puVar2);
   }
@@ -4845,9 +4377,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a55180(undefined4 param_2,undefine
     }
     thunk_FUN_10ebc060(uVar3,uVar5);
     *puVar2 = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferAccountLoginSubwiz);
-    puVar2[4] = (uint)&ghidra_vftable_SCAccountSecureTransferAccountLoginSubwiz;
-    puVar2[0x23] = (uint)&ghidra_vftable_SCAccountSecureTransferAccountLoginSubwiz;
-    puVar2[0x2a] = (uint)&ghidra_vftable_SCAccountSecureTransferAccountLoginSubwiz;
+    puVar2[4] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferAccountLoginSubwiz);
+    puVar2[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferAccountLoginSubwiz);
+    puVar2[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferAccountLoginSubwiz);
 
     return (undefined4 *)(puVar2);
   }
@@ -4878,9 +4410,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a552e0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferBeginSystemTransferErrorPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccountSecureTransferBeginSystemTransferErrorPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccountSecureTransferBeginSystemTransferErrorPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccountSecureTransferBeginSystemTransferErrorPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferBeginSystemTransferErrorPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferBeginSystemTransferErrorPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferBeginSystemTransferErrorPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -4910,19 +4442,19 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a553c0(undefined4 param_2,undefine
   if (puVar1 != (undefined4 *)0x0) {
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
-    puVar1[0x38] = (uint)&ghidra_vftable_SCIOpCBDelegate;
-    puVar1[0x39] = 0;
-    puVar1[0x3a] = 0;
+    puVar1[0x38] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
+    puVar1[0x39] = (undefined4)(0);
+    puVar1[0x3a] = (undefined4)(0);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferBeginSystemTransferPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccountSecureTransferBeginSystemTransferPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccountSecureTransferBeginSystemTransferPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccountSecureTransferBeginSystemTransferPage;
-    puVar1[0x38] = (uint)&ghidra_vftable_SCAccountSecureTransferBeginSystemTransferPage;
-    puVar1[0x3b] = 0;
-    puVar1[0x3c] = 0;
-    puVar1[0x3d] = 0;
-    puVar1[0x3e] = 0;
-    puVar1[0x3f] = 0;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferBeginSystemTransferPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferBeginSystemTransferPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferBeginSystemTransferPage);
+    puVar1[0x38] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferBeginSystemTransferPage);
+    puVar1[0x3b] = (undefined4)(0);
+    puVar1[0x3c] = (undefined4)(0);
+    puVar1[0x3d] = (undefined4)(0);
+    puVar1[0x3e] = (undefined4)(0);
+    puVar1[0x3f] = (undefined4)(0);
     *(undefined1 *)(puVar1 + 0x40) = 0;
 
     return (undefined4 *)(puVar1);
@@ -4953,18 +4485,18 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a55510(undefined4 param_2,undefine
   if (puVar1 != (undefined4 *)0x0) {
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
-    puVar1[0x38] = (uint)&ghidra_vftable_SCIOpCBDelegate;
-    puVar1[0x39] = 0;
-    puVar1[0x3a] = 0;
+    puVar1[0x38] = (undefined4)((uint)&ghidra_vftable_SCIOpCBDelegate);
+    puVar1[0x39] = (undefined4)(0);
+    puVar1[0x3a] = (undefined4)(0);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferButtonPressAuthPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccountSecureTransferButtonPressAuthPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccountSecureTransferButtonPressAuthPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccountSecureTransferButtonPressAuthPage;
-    puVar1[0x38] = (uint)&ghidra_vftable_SCAccountSecureTransferButtonPressAuthPage;
-    puVar1[0x3b] = 0;
-    puVar1[0x3c] = 0;
-    puVar1[0x3d] = 0;
-    puVar1[0x3e] = 0;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferButtonPressAuthPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferButtonPressAuthPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferButtonPressAuthPage);
+    puVar1[0x38] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferButtonPressAuthPage);
+    puVar1[0x3b] = (undefined4)(0);
+    puVar1[0x3c] = (undefined4)(0);
+    puVar1[0x3d] = (undefined4)(0);
+    puVar1[0x3e] = (undefined4)(0);
 
     return (undefined4 *)(puVar1);
   }
@@ -4995,9 +4527,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a55650(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferCompletePage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccountSecureTransferCompletePage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccountSecureTransferCompletePage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccountSecureTransferCompletePage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferCompletePage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferCompletePage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferCompletePage);
 
     return (undefined4 *)(puVar1);
   }
@@ -5028,9 +4560,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a55730(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferIncompletePage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccountSecureTransferIncompletePage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccountSecureTransferIncompletePage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccountSecureTransferIncompletePage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferIncompletePage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferIncompletePage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferIncompletePage);
 
     return (undefined4 *)(puVar1);
   }
@@ -5061,9 +4593,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a55810(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferIntroPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccountSecureTransferIntroPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccountSecureTransferIntroPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccountSecureTransferIntroPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferIntroPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferIntroPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferIntroPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -5094,9 +4626,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a558f0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferNetworkErrorPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccountSecureTransferNetworkErrorPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccountSecureTransferNetworkErrorPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccountSecureTransferNetworkErrorPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferNetworkErrorPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferNetworkErrorPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferNetworkErrorPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -5127,9 +4659,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a559d0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferNewAccountReadyPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccountSecureTransferNewAccountReadyPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccountSecureTransferNewAccountReadyPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccountSecureTransferNewAccountReadyPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferNewAccountReadyPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferNewAccountReadyPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferNewAccountReadyPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -5160,15 +4692,15 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a55ab0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferPrepareSystemPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccountSecureTransferPrepareSystemPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccountSecureTransferPrepareSystemPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccountSecureTransferPrepareSystemPage;
-    puVar1[0x38] = 0;
-    puVar1[0x39] = 0;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferPrepareSystemPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferPrepareSystemPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferPrepareSystemPage);
+    puVar1[0x38] = (undefined4)(0);
+    puVar1[0x39] = (undefined4)(0);
     *(undefined1 *)(puVar1 + 0x3a) = 0;
-    puVar1[0x3b] = 0;
-    puVar1[0x3c] = 0;
-    puVar1[0x3d] = 0;
+    puVar1[0x3b] = (undefined4)(0);
+    puVar1[0x3c] = (undefined4)(0);
+    puVar1[0x3d] = (undefined4)(0);
 
     return (undefined4 *)(puVar1);
   }
@@ -5199,12 +4731,12 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a55bd0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferProductSelectionPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccountSecureTransferProductSelectionPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccountSecureTransferProductSelectionPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccountSecureTransferProductSelectionPage;
-    puVar1[0x38] = 0;
-    puVar1[0x39] = 0;
-    puVar1[0x3a] = 0;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferProductSelectionPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferProductSelectionPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferProductSelectionPage);
+    puVar1[0x38] = (undefined4)(0);
+    puVar1[0x39] = (undefined4)(0);
+    puVar1[0x3a] = (undefined4)(0);
 
     return (undefined4 *)(puVar1);
   }
@@ -5261,9 +4793,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a55cd0(undefined4 param_2,undefine
     }
     thunk_FUN_10ebc060(uVar3,uVar5);
     *puVar2 = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferRegisterProductSubwiz);
-    puVar2[4] = (uint)&ghidra_vftable_SCAccountSecureTransferRegisterProductSubwiz;
-    puVar2[0x23] = (uint)&ghidra_vftable_SCAccountSecureTransferRegisterProductSubwiz;
-    puVar2[0x2a] = (uint)&ghidra_vftable_SCAccountSecureTransferRegisterProductSubwiz;
+    puVar2[4] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferRegisterProductSubwiz);
+    puVar2[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferRegisterProductSubwiz);
+    puVar2[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferRegisterProductSubwiz);
 
     return (undefined4 *)(puVar2);
   }
@@ -5297,151 +4829,25 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a55e30(undefined4 param_2,undefine
 
     thunk_FUN_10cf2f30(puVar1 + 0x23);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferWizard);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccountSecureTransferWizard;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccountSecureTransferWizard;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccountSecureTransferWizard;
-    puVar1[0x3d] = 0;
-    puVar1[0x3e] = 0;
-    puVar1[0x3f] = 0;
-    puVar1[0x40] = 0;
-    puVar1[0x41] = 0;
-    puVar1[0x42] = 0;
-    puVar1[0x43] = 0;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferWizard);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferWizard);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccountSecureTransferWizard);
+    puVar1[0x3d] = (undefined4)(0);
+    puVar1[0x3e] = (undefined4)(0);
+    puVar1[0x3f] = (undefined4)(0);
+    puVar1[0x40] = (undefined4)(0);
+    puVar1[0x41] = (undefined4)(0);
+    puVar1[0x42] = (undefined4)(0);
+    puVar1[0x43] = (undefined4)(0);
     *(undefined2 *)(puVar1 + 0x44) = 1;
-    puVar1[0x45] = 0;
-    puVar1[0x46] = 0;
-    puVar1[0x47] = 0;
+    puVar1[0x45] = (undefined4)(0);
+    puVar1[0x46] = (undefined4)(0);
+    puVar1[0x47] = (undefined4)(0);
 
     return (undefined4 *)(puVar1);
   }
 
   return (undefined4 *)((undefined4 *)0x0);
-
- } catch (...) { }
-}
-
-
-// Reference entry 10a56100; body size 206 bytes.
-#line 1 "ENTRY_10a56100"
-
-void __thiscall Recovered_Bulk::FUN_10a56100(undefined4 *param_2,int *param_3)
-{
-  int param_1 = (int )this;
- try {
-  int *piVar1;
-  uint uVar2;
-  int iVar3;
-  int *piVar4;
-  int *piVar5;
-  int *piVar6;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  piVar4 = (int *)(*(int **)(param_1 + 4));
-  piVar6 = (int *)(param_3 + 2);
-  piVar5 = (int *)(param_3);
-  if ((int *)(piVar6) != piVar4) {
-    do {
-      iVar3 = (int)(*piVar6);
-      if (iVar3 != *piVar5) {
-        piVar1 = (int *)((int *)piVar5[1]);
-        if (piVar1 != (int *)0x0) {
-          *piVar5 = (int)(0);
-          piVar5[1] = 0;
-          (**(code **)(*piVar1 + 8))(uVar2);
-          iVar3 = (int)(*piVar6);
-        }
-        *piVar5 = (int)(iVar3);
-        piVar1 = (int *)((int *)piVar6[1]);
-        piVar5[1] = (int)piVar1;
-        if (piVar1 != (int *)0x0) {
-          (**(code **)(*piVar1 + 4))();
-        }
-      }
-      piVar6 = (int *)(piVar6 + 2);
-      piVar5 = (int *)(piVar5 + 2);
-    } while ((int *)(piVar6) != piVar4);
-    piVar4 = (int *)(*(int **)(param_1 + 4));
-  }
-  piVar6 = (int *)((int *)piVar4[-1]);
-
-  if (piVar6 != (int *)0x0) {
-    piVar4[-2] = 0;
-    piVar4[-1] = 0;
-    (**(code **)(*piVar6 + 8))();
-    piVar4 = (int *)(*(int **)(param_1 + 4));
-  }
-  *(int **)(param_1 + 4) = piVar4 + -2;
-  *param_2 = (undefined4)(param_3);
-
-  return;
-
- } catch (...) { }
-}
-
-
-// Reference entry 10a56210; body size 206 bytes.
-#line 1 "ENTRY_10a56210"
-
-void __thiscall Recovered_Bulk::FUN_10a56210(undefined4 *param_2,int *param_3)
-{
-  int param_1 = (int )this;
- try {
-  int *piVar1;
-  uint uVar2;
-  int iVar3;
-  int *piVar4;
-  int *piVar5;
-  int *piVar6;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  piVar4 = (int *)(*(int **)(param_1 + 4));
-  piVar6 = (int *)(param_3 + 2);
-  piVar5 = (int *)(param_3);
-  if ((int *)(piVar6) != piVar4) {
-    do {
-      iVar3 = (int)(*piVar6);
-      if (iVar3 != *piVar5) {
-        piVar1 = (int *)((int *)piVar5[1]);
-        if (piVar1 != (int *)0x0) {
-          *piVar5 = (int)(0);
-          piVar5[1] = 0;
-          (**(code **)(*piVar1 + 8))(uVar2);
-          iVar3 = (int)(*piVar6);
-        }
-        *piVar5 = (int)(iVar3);
-        piVar1 = (int *)((int *)piVar6[1]);
-        piVar5[1] = (int)piVar1;
-        if (piVar1 != (int *)0x0) {
-          (**(code **)(*piVar1 + 4))();
-        }
-      }
-      piVar6 = (int *)(piVar6 + 2);
-      piVar5 = (int *)(piVar5 + 2);
-    } while ((int *)(piVar6) != piVar4);
-    piVar4 = (int *)(*(int **)(param_1 + 4));
-  }
-  piVar6 = (int *)((int *)piVar4[-1]);
-
-  if (piVar6 != (int *)0x0) {
-    piVar4[-2] = 0;
-    piVar4[-1] = 0;
-    (**(code **)(*piVar6 + 8))();
-    piVar4 = (int *)(*(int **)(param_1 + 4));
-  }
-  *(int **)(param_1 + 4) = piVar4 + -2;
-  *param_2 = (undefined4)(param_3);
-
-  return;
 
  } catch (...) { }
 }
@@ -5733,9 +5139,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a67810(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -5751,9 +5157,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a67ab0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -5769,9 +5175,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a67b50(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -5787,9 +5193,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a67bf0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -5805,9 +5211,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a67c90(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -5823,9 +5229,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a67d30(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -5841,9 +5247,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a67dd0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -5859,9 +5265,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a67e70(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -5877,9 +5283,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a67f10(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -5895,9 +5301,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a67fb0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -5913,9 +5319,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a68050(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -5931,9 +5337,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a680f0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -5949,9 +5355,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a68190(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -5980,9 +5386,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a68390(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestButtonDefaultPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccessibilityTestButtonDefaultPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccessibilityTestButtonDefaultPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccessibilityTestButtonDefaultPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestButtonDefaultPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestButtonDefaultPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestButtonDefaultPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -6013,9 +5419,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a68470(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestButtonWithTermationVOTextPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccessibilityTestButtonWithTermationVOTextPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccessibilityTestButtonWithTermationVOTextPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccessibilityTestButtonWithTermationVOTextPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestButtonWithTermationVOTextPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestButtonWithTermationVOTextPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestButtonWithTermationVOTextPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -6046,9 +5452,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a68550(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestButtonWithVOTextOverridePage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccessibilityTestButtonWithVOTextOverridePage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccessibilityTestButtonWithVOTextOverridePage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccessibilityTestButtonWithVOTextOverridePage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestButtonWithVOTextOverridePage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestButtonWithVOTextOverridePage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestButtonWithVOTextOverridePage);
 
     return (undefined4 *)(puVar1);
   }
@@ -6079,9 +5485,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a68630(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestFlareDefaultPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccessibilityTestFlareDefaultPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccessibilityTestFlareDefaultPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccessibilityTestFlareDefaultPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestFlareDefaultPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestFlareDefaultPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestFlareDefaultPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -6112,9 +5518,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a68710(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestFlareWithVODisabledPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccessibilityTestFlareWithVODisabledPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccessibilityTestFlareWithVODisabledPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccessibilityTestFlareWithVODisabledPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestFlareWithVODisabledPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestFlareWithVODisabledPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestFlareWithVODisabledPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -6145,9 +5551,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a687f0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestFlareWithVOTextOverridePage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccessibilityTestFlareWithVOTextOverridePage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccessibilityTestFlareWithVOTextOverridePage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccessibilityTestFlareWithVOTextOverridePage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestFlareWithVOTextOverridePage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestFlareWithVOTextOverridePage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestFlareWithVOTextOverridePage);
 
     return (undefined4 *)(puVar1);
   }
@@ -6178,9 +5584,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a688d0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestImageDefaultPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccessibilityTestImageDefaultPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccessibilityTestImageDefaultPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccessibilityTestImageDefaultPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestImageDefaultPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestImageDefaultPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestImageDefaultPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -6211,9 +5617,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a689b0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestImageWithVOTextPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccessibilityTestImageWithVOTextPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccessibilityTestImageWithVOTextPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccessibilityTestImageWithVOTextPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestImageWithVOTextPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestImageWithVOTextPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestImageWithVOTextPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -6244,9 +5650,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a68a90(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestSelectionPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccessibilityTestSelectionPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccessibilityTestSelectionPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccessibilityTestSelectionPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestSelectionPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestSelectionPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestSelectionPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -6277,9 +5683,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a68b70(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestTextDefaultPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccessibilityTestTextDefaultPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccessibilityTestTextDefaultPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccessibilityTestTextDefaultPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestTextDefaultPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestTextDefaultPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestTextDefaultPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -6310,9 +5716,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a68c50(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestTextWithVODisabledPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccessibilityTestTextWithVODisabledPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccessibilityTestTextWithVODisabledPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccessibilityTestTextWithVODisabledPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestTextWithVODisabledPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestTextWithVODisabledPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestTextWithVODisabledPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -6343,9 +5749,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a68d30(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestTextWithVOTextOverridePage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccessibilityTestTextWithVOTextOverridePage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccessibilityTestTextWithVOTextOverridePage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccessibilityTestTextWithVOTextOverridePage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestTextWithVOTextOverridePage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestTextWithVOTextOverridePage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestTextWithVOTextOverridePage);
 
     return (undefined4 *)(puVar1);
   }
@@ -6377,9 +5783,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a68e10(undefined4 param_2,undefine
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     thunk_FUN_106da030(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestWizard);
-    puVar1[4] = (uint)&ghidra_vftable_SCAccessibilityTestWizard;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAccessibilityTestWizard;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAccessibilityTestWizard;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestWizard);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestWizard);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAccessibilityTestWizard);
 
     return (undefined4 *)(puVar1);
   }
@@ -6397,9 +5803,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a71f20(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -6415,9 +5821,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a72010(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -6433,9 +5839,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a720b0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -6451,9 +5857,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a72150(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -6482,9 +5888,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a72290(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAnimationErrorPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAnimationErrorPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAnimationErrorPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAnimationErrorPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAnimationErrorPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAnimationErrorPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAnimationErrorPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -6515,9 +5921,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a72370(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAnimationIntroPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAnimationIntroPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAnimationIntroPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAnimationIntroPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAnimationIntroPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAnimationIntroPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAnimationIntroPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -6548,9 +5954,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a72450(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAnimationSuccessPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAnimationSuccessPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAnimationSuccessPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAnimationSuccessPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAnimationSuccessPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAnimationSuccessPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAnimationSuccessPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -6582,9 +5988,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a72530(undefined4 param_2,undefine
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     thunk_FUN_106da030(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAnimationWizard);
-    puVar1[4] = (uint)&ghidra_vftable_SCAnimationWizard;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAnimationWizard;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAnimationWizard;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAnimationWizard);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAnimationWizard);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAnimationWizard);
 
     return (undefined4 *)(puVar1);
   }
@@ -6595,187 +6001,6 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a72530(undefined4 param_2,undefine
 }
 
 
-// Reference entry 10a76940; body size 76 bytes.
-#line 1 "ENTRY_10a76940"
-
-void __fastcall FUN_10a76940(undefined4 *param_1)
-
-{
-  int iVar1;
-  int iVar2;
-  
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray);
-  iVar1 = (int)(param_1[3]);
-  iVar2 = (int)(param_1[2]);
-  if (iVar2 != iVar1) {
-    do {
-      thunk_FUN_10a76ed0();
-      iVar2 = (int)(iVar2 + 0x18);
-    } while (iVar2 != iVar1);
-    iVar2 = (int)(param_1[2]);
-  }
-  param_1[3] = iVar2;
-  thunk_FUN_10a76b10();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  g_lSCObjCount = (int)(g_lSCObjCount + -1);
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  return;
-}
-
-
-// Reference entry 10a76a00; body size 76 bytes.
-#line 1 "ENTRY_10a76a00"
-
-void __fastcall FUN_10a76a00(undefined4 *param_1)
-
-{
- try {
-  int *piVar1;
-  uint uVar2;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-
-  return;
-
- } catch (...) { }
-}
-
-
-// Reference entry 10a76a70; body size 76 bytes.
-#line 1 "ENTRY_10a76a70"
-
-void __fastcall FUN_10a76a70(undefined4 *param_1)
-
-{
- try {
-  int *piVar1;
-  uint uVar2;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 uStack_8;
-
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-
-  return;
-
- } catch (...) { }
-}
-
-
-// Reference entry 10a76b10; body size 127 bytes.
-#line 1 "ENTRY_10a76b10"
-
-void __fastcall FUN_10a76b10(int *param_1)
-
-{
-  uint uVar1;
-  int iVar2;
-  int iVar3;
-  
-  iVar2 = (int)(*param_1);
-  if (iVar2 != 0) {
-    iVar3 = (int)(param_1[1]);
-    if (iVar2 != iVar3) {
-      do {
-        thunk_FUN_10a76ed0();
-        iVar2 = (int)(iVar2 + 0x18);
-      } while (iVar2 != iVar3);
-      iVar2 = (int)(*param_1);
-    }
-    uVar1 = (uint)(((param_1[2] - iVar2) / 0x18) * 0x18);
-    iVar3 = (int)(iVar2);
-    if (0xfff < uVar1) {
-      iVar3 = (int)(*(int *)(iVar2 + -4));
-      uVar1 = (uint)(uVar1 + 0x23);
-      if (0x1f < (iVar2 - iVar3) - 4U) {
-                    
-        _invalid_parameter_noinfo_noreturn();
-      }
-    }
-    thunk_FUN_1148a50e(iVar3,uVar1);
-    *param_1 = (int)(0);
-    param_1[1] = 0;
-    param_1[2] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10a76fd0; body size 81 bytes.
-#line 1 "ENTRY_10a76fd0"
-
-int * __thiscall Recovered_Bulk::FUN_10a76fd0(int *param_2)
-{
-  int *param_1 = (int *)this;
-  int *piVar1;
-  
-  if (param_2 != (int *)*param_1) {
-    piVar1 = (int *)((int *)param_1[1]);
-    if (piVar1 != (int *)0x0) {
-      *param_1 = (int)(0);
-      param_1[1] = 0;
-      (**(code **)(*piVar1 + 8))();
-    }
-    *param_1 = (int)((int)param_2);
-    if (param_2 != (int *)0x0) {
-      piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
-      param_1[1] = (int)piVar1;
-      (**(code **)(*piVar1 + 4))();
-      return (int *)(param_1);
-    }
-    param_1[1] = 0;
-  }
-  return (int *)(param_1);
-}
-
-
-// Reference entry 10a77040; body size 81 bytes.
-#line 1 "ENTRY_10a77040"
-
-int * __thiscall Recovered_Bulk::FUN_10a77040(int *param_2)
-{
-  int *param_1 = (int *)this;
-  int *piVar1;
-  
-  if (param_2 != (int *)*param_1) {
-    piVar1 = (int *)((int *)param_1[1]);
-    if (piVar1 != (int *)0x0) {
-      *param_1 = (int)(0);
-      param_1[1] = 0;
-      (**(code **)(*piVar1 + 8))();
-    }
-    *param_1 = (int)((int)param_2);
-    if (param_2 != (int *)0x0) {
-      piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
-      param_1[1] = (int)piVar1;
-      (**(code **)(*piVar1 + 4))();
-      return (int *)(param_1);
-    }
-    param_1[1] = 0;
-  }
-  return (int *)(param_1);
-}
-
-
 // Reference entry 10a772a0; body size 68 bytes.
 #line 1 "ENTRY_10a772a0"
 
@@ -6783,9 +6008,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a772a0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -6801,9 +6026,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a774d0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -6819,92 +6044,14 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a77570(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
   }
   return (undefined4 *)(param_1);
-}
-
-
-// Reference entry 10a77840; body size 141 bytes.
-#line 1 "ENTRY_10a77840"
-
-void __thiscall Recovered_Bulk::FUN_10a77840(int param_2,int param_3,int param_4)
-{
-  int *param_1 = (int *)this;
-  uint uVar1;
-  int iVar2;
-  int iVar3;
-  
-  iVar2 = (int)(*param_1);
-  if (iVar2 != 0) {
-    iVar3 = (int)(param_1[1]);
-    if (iVar2 != iVar3) {
-      do {
-        thunk_FUN_10a76ed0();
-        iVar2 = (int)(iVar2 + 0x18);
-      } while (iVar2 != iVar3);
-      iVar2 = (int)(*param_1);
-    }
-    uVar1 = (uint)(((param_1[2] - iVar2) / 0x18) * 0x18);
-    iVar3 = (int)(iVar2);
-    if (0xfff < uVar1) {
-      iVar3 = (int)(*(int *)(iVar2 + -4));
-      uVar1 = (uint)(uVar1 + 0x23);
-      if (0x1f < (iVar2 - iVar3) - 4U) {
-                    
-        _invalid_parameter_noinfo_noreturn();
-      }
-    }
-    thunk_FUN_1148a50e(iVar3,uVar1);
-  }
-  *param_1 = (int)(param_2);
-  param_1[1] = param_2 + param_3 * 0x18;
-  param_1[2] = param_2 + param_4 * 0x18;
-  return;
-}
-
-
-// Reference entry 10a77a10; body size 127 bytes.
-#line 1 "ENTRY_10a77a10"
-
-void __fastcall FUN_10a77a10(int *param_1)
-
-{
-  uint uVar1;
-  int iVar2;
-  int iVar3;
-  
-  iVar2 = (int)(*param_1);
-  if (iVar2 != 0) {
-    iVar3 = (int)(param_1[1]);
-    if (iVar2 != iVar3) {
-      do {
-        thunk_FUN_10a76ed0();
-        iVar2 = (int)(iVar2 + 0x18);
-      } while (iVar2 != iVar3);
-      iVar2 = (int)(*param_1);
-    }
-    uVar1 = (uint)(((param_1[2] - iVar2) / 0x18) * 0x18);
-    iVar3 = (int)(iVar2);
-    if (0xfff < uVar1) {
-      iVar3 = (int)(*(int *)(iVar2 + -4));
-      uVar1 = (uint)(uVar1 + 0x23);
-      if (0x1f < (iVar2 - iVar3) - 4U) {
-                    
-        _invalid_parameter_noinfo_noreturn();
-      }
-    }
-    thunk_FUN_1148a50e(iVar3,uVar1);
-    *param_1 = (int)(0);
-    param_1[1] = 0;
-    param_1[2] = 0;
-  }
-  return;
 }
 
 
@@ -6928,12 +6075,12 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a78450(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAutoApConnectTestConnectPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAutoApConnectTestConnectPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAutoApConnectTestConnectPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAutoApConnectTestConnectPage;
-    puVar1[0x38] = 0;
-    puVar1[0x39] = 0;
-    puVar1[0x3a] = 0;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAutoApConnectTestConnectPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAutoApConnectTestConnectPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAutoApConnectTestConnectPage);
+    puVar1[0x38] = (undefined4)(0);
+    puVar1[0x39] = (undefined4)(0);
+    puVar1[0x3a] = (undefined4)(0);
     *(undefined2 *)(puVar1 + 0x3b) = 0;
 
     return (undefined4 *)(puVar1);
@@ -6965,9 +6112,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a78560(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAutoApConnectTestIntroPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAutoApConnectTestIntroPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAutoApConnectTestIntroPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAutoApConnectTestIntroPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAutoApConnectTestIntroPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAutoApConnectTestIntroPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAutoApConnectTestIntroPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -6998,9 +6145,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a78640(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCAutoApConnectTestProductSelectionPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCAutoApConnectTestProductSelectionPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCAutoApConnectTestProductSelectionPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCAutoApConnectTestProductSelectionPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCAutoApConnectTestProductSelectionPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCAutoApConnectTestProductSelectionPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCAutoApConnectTestProductSelectionPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -7048,9 +6195,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a7dc50(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -7066,9 +6213,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a7dd40(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -7084,9 +6231,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a7dde0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -7102,9 +6249,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a7de80(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -7133,9 +6280,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a7dfc0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCBasicAPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCBasicAPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCBasicAPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCBasicAPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCBasicAPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCBasicAPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCBasicAPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -7166,9 +6313,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a7e0a0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCBasicBPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCBasicBPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCBasicBPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCBasicBPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCBasicBPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCBasicBPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCBasicBPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -7199,9 +6346,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a7e180(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCBasicCPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCBasicCPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCBasicCPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCBasicCPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCBasicCPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCBasicCPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCBasicCPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -7233,9 +6380,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a7e260(undefined4 param_2,undefine
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     thunk_FUN_106da030(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCBasicWizard);
-    puVar1[4] = (uint)&ghidra_vftable_SCBasicWizard;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCBasicWizard;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCBasicWizard;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCBasicWizard);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCBasicWizard);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCBasicWizard);
 
     return (undefined4 *)(puVar1);
   }
@@ -7253,9 +6400,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a80ef0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -7271,9 +6418,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a80fb0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -7302,9 +6449,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a81220(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCChirpTestErrorPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCChirpTestErrorPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCChirpTestErrorPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCChirpTestErrorPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCChirpTestErrorPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCChirpTestErrorPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCChirpTestErrorPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -7336,9 +6483,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a81460(undefined4 param_2,undefine
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     thunk_FUN_106da030(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCChirpTestWizard);
-    puVar1[4] = (uint)&ghidra_vftable_SCChirpTestWizard;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCChirpTestWizard;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCChirpTestWizard;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCChirpTestWizard);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCChirpTestWizard);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCChirpTestWizard);
 
     return (undefined4 *)(puVar1);
   }
@@ -7571,9 +6718,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a84950(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -7589,9 +6736,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a84a40(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -7607,9 +6754,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a84ae0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -7625,9 +6772,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a84b80(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -7656,9 +6803,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a84cc0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCCopyTestIntroPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCCopyTestIntroPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCCopyTestIntroPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCCopyTestIntroPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCCopyTestIntroPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCCopyTestIntroPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCCopyTestIntroPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -7689,9 +6836,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a84da0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCCopyTestRawStringPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCCopyTestRawStringPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCCopyTestRawStringPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCCopyTestRawStringPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCCopyTestRawStringPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCCopyTestRawStringPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCCopyTestRawStringPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -7722,9 +6869,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a84e80(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCCopyTestResourceStringPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCCopyTestResourceStringPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCCopyTestResourceStringPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCCopyTestResourceStringPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCCopyTestResourceStringPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCCopyTestResourceStringPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCCopyTestResourceStringPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -7756,9 +6903,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a84f60(undefined4 param_2,undefine
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     thunk_FUN_106da030(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCCopyTestWizard);
-    puVar1[4] = (uint)&ghidra_vftable_SCCopyTestWizard;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCCopyTestWizard;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCCopyTestWizard;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCCopyTestWizard);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCCopyTestWizard);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCCopyTestWizard);
 
     return (undefined4 *)(puVar1);
   }
@@ -7776,9 +6923,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a89fc0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -7794,9 +6941,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a8a0e0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -7812,9 +6959,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a8a180(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -7830,9 +6977,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a8a220(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -7848,9 +6995,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a8a2c0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -7879,9 +7026,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a8a500(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCDiscoveryHistoryCollectionPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCDiscoveryHistoryCollectionPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCDiscoveryHistoryCollectionPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCDiscoveryHistoryCollectionPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryHistoryCollectionPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryHistoryCollectionPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryHistoryCollectionPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -7912,9 +7059,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a8a5e0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCDiscoveryHistoryDeviceListPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCDiscoveryHistoryDeviceListPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCDiscoveryHistoryDeviceListPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCDiscoveryHistoryDeviceListPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryHistoryDeviceListPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryHistoryDeviceListPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryHistoryDeviceListPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -7945,9 +7092,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a8a6c0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCDiscoveryHistoryDeviceSummaryPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCDiscoveryHistoryDeviceSummaryPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCDiscoveryHistoryDeviceSummaryPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCDiscoveryHistoryDeviceSummaryPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryHistoryDeviceSummaryPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryHistoryDeviceSummaryPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryHistoryDeviceSummaryPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -7978,9 +7125,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a8a7a0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCDiscoveryHistoryHouseholdListPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCDiscoveryHistoryHouseholdListPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCDiscoveryHistoryHouseholdListPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCDiscoveryHistoryHouseholdListPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryHistoryHouseholdListPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryHistoryHouseholdListPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryHistoryHouseholdListPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -8012,13 +7159,13 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a8a880(undefined4 param_2,undefine
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     thunk_FUN_106da030(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCDiscoveryHistoryWizard);
-    puVar1[4] = (uint)&ghidra_vftable_SCDiscoveryHistoryWizard;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCDiscoveryHistoryWizard;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCDiscoveryHistoryWizard;
-    puVar1[0x3a] = 0;
-    puVar1[0x3b] = 0;
-    puVar1[0x3c] = 0;
-    puVar1[0x3d] = 0;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryHistoryWizard);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryHistoryWizard);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryHistoryWizard);
+    puVar1[0x3a] = (undefined4)(0);
+    puVar1[0x3b] = (undefined4)(0);
+    puVar1[0x3c] = (undefined4)(0);
+    puVar1[0x3d] = (undefined4)(0);
 
     return (undefined4 *)(puVar1);
   }
@@ -8082,81 +7229,13 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a91d60(undefined4 param_2)
 
   thunk_FUN_10eb64f0(param_2);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCDiscoverySinglePage);
-  param_1[4] = (uint)&ghidra_vftable_SCDiscoverySinglePage;
-  param_1[0x23] = (uint)&ghidra_vftable_SCDiscoverySinglePage;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCDiscoverySinglePage;
-  param_1[0x38] = 0;
-  param_1[0x39] = 0;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCDiscoverySinglePage);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCDiscoverySinglePage);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCDiscoverySinglePage);
+  param_1[0x38] = (undefined4)(0);
+  param_1[0x39] = (undefined4)(0);
 
   return (undefined4 *)(param_1);
-
- } catch (...) { }
-}
-
-
-// Reference entry 10a92930; body size 135 bytes.
-#line 1 "ENTRY_10a92930"
-
-void __fastcall FUN_10a92930(undefined4 *param_1)
-
-{
- try {
-  int *piVar1;
-  uint uVar2;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  piVar1 = (int *)((int *)param_1[0x39]);
-
-  if (piVar1 != (int *)0x0) {
-    param_1[0x38] = 0;
-    param_1[0x39] = 0;
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  thunk_FUN_10eb6cc0();
-
-  return;
-
- } catch (...) { }
-}
-
-
-// Reference entry 10a92a70; body size 135 bytes.
-#line 1 "ENTRY_10a92a70"
-
-void __fastcall FUN_10a92a70(undefined4 *param_1)
-
-{
- try {
-  int *piVar1;
-  uint uVar2;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  piVar1 = (int *)((int *)param_1[0x39]);
-
-  if (piVar1 != (int *)0x0) {
-    param_1[0x38] = 0;
-    param_1[0x39] = 0;
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  thunk_FUN_10eb6cc0();
-
-  return;
 
  } catch (...) { }
 }
@@ -8169,9 +7248,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a92dd0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -8187,9 +7266,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a92f80(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -8205,9 +7284,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a93020(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -8223,51 +7302,14 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a930c0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
   }
   return (undefined4 *)(param_1);
-}
-
-
-// Reference entry 10a93160; body size 159 bytes.
-#line 1 "ENTRY_10a93160"
-
-undefined4 * __thiscall Recovered_Bulk::FUN_10a93160(byte param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
- try {
-  int *piVar1;
-  uint uVar2;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  piVar1 = (int *)((int *)param_1[0x39]);
-
-  if (piVar1 != (int *)0x0) {
-    param_1[0x38] = 0;
-    param_1[0x39] = 0;
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  thunk_FUN_10eb6cc0();
-  if ((param_2 & 1) != 0) {
-    thunk_FUN_1148a50e(param_1,0xe8);
-  }
-
-  return (undefined4 *)(param_1);
-
- } catch (...) { }
 }
 
 
@@ -8279,51 +7321,14 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a93270(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_105bb550();
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xec);
   }
   return (undefined4 *)(param_1);
-}
-
-
-// Reference entry 10a93320; body size 159 bytes.
-#line 1 "ENTRY_10a93320"
-
-undefined4 * __thiscall Recovered_Bulk::FUN_10a93320(byte param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
- try {
-  int *piVar1;
-  uint uVar2;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  piVar1 = (int *)((int *)param_1[0x39]);
-
-  if (piVar1 != (int *)0x0) {
-    param_1[0x38] = 0;
-    param_1[0x39] = 0;
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  thunk_FUN_10eb6cc0();
-  if ((param_2 & 1) != 0) {
-    thunk_FUN_1148a50e(param_1,0xe8);
-  }
-
-  return (undefined4 *)(param_1);
-
- } catch (...) { }
 }
 
 
@@ -8334,9 +7339,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a93430(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -8386,9 +7391,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a935f0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCDiscoveryAllPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCDiscoveryAllPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCDiscoveryAllPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCDiscoveryAllPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryAllPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryAllPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryAllPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -8419,9 +7424,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a936d0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCDiscoveryApFailPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCDiscoveryApFailPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCDiscoveryApFailPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCDiscoveryApFailPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryApFailPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryApFailPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryApFailPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -8452,9 +7457,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a937b0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCDiscoveryApFoundPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCDiscoveryApFoundPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCDiscoveryApFoundPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCDiscoveryApFoundPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryApFoundPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryApFoundPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryApFoundPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -8485,11 +7490,11 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a93890(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCDiscoveryApScanPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCDiscoveryApScanPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCDiscoveryApScanPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCDiscoveryApScanPage;
-    puVar1[0x38] = 0;
-    puVar1[0x39] = 0;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryApScanPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryApScanPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryApScanPage);
+    puVar1[0x38] = (undefined4)(0);
+    puVar1[0x39] = (undefined4)(0);
 
     return (undefined4 *)(puVar1);
   }
@@ -8520,12 +7525,12 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a93980(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCDiscoveryBTOnlyPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCDiscoveryBTOnlyPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCDiscoveryBTOnlyPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCDiscoveryBTOnlyPage;
-    puVar1[0x38] = 0;
-    puVar1[0x39] = 0;
-    puVar1[0x3a] = 0;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryBTOnlyPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryBTOnlyPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryBTOnlyPage);
+    puVar1[0x38] = (undefined4)(0);
+    puVar1[0x39] = (undefined4)(0);
+    puVar1[0x3a] = (undefined4)(0);
 
     return (undefined4 *)(puVar1);
   }
@@ -8556,11 +7561,11 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a93a80(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCDiscoverySinglePage);
-    puVar1[4] = (uint)&ghidra_vftable_SCDiscoverySinglePage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCDiscoverySinglePage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCDiscoverySinglePage;
-    puVar1[0x38] = 0;
-    puVar1[0x39] = 0;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCDiscoverySinglePage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCDiscoverySinglePage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCDiscoverySinglePage);
+    puVar1[0x38] = (undefined4)(0);
+    puVar1[0x39] = (undefined4)(0);
 
     return (undefined4 *)(puVar1);
   }
@@ -8591,9 +7596,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a93b70(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCDiscoverySplashPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCDiscoverySplashPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCDiscoverySplashPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCDiscoverySplashPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCDiscoverySplashPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCDiscoverySplashPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCDiscoverySplashPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -8625,13 +7630,13 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a93c50(undefined4 param_2,undefine
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     thunk_FUN_106da030(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCDiscoveryWizard);
-    puVar1[4] = (uint)&ghidra_vftable_SCDiscoveryWizard;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCDiscoveryWizard;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCDiscoveryWizard;
-    puVar1[0x3a] = 0;
-    puVar1[0x3b] = 0;
-    puVar1[0x3c] = 0;
-    puVar1[0x47] = 0;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryWizard);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryWizard);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCDiscoveryWizard);
+    puVar1[0x3a] = (undefined4)(0);
+    puVar1[0x3b] = (undefined4)(0);
+    puVar1[0x3c] = (undefined4)(0);
+    puVar1[0x47] = (undefined4)(0);
 
     return (undefined4 *)(puVar1);
   }
@@ -8654,9 +7659,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a97940(undefined4 *param_2)
   undefined4 local_8;
 
   *param_2 = (undefined4)(0);
-  param_2[1] = 0;
-  param_2[2] = 0;
-  param_2[0xd] = 0;
+  param_2[1] = (undefined4)(0);
+  param_2[2] = (undefined4)(0);
+  param_2[0xd] = (undefined4)(0);
 
   thunk_FUN_105ef430(param_1 + 0xe8);
 
@@ -8782,41 +7787,6 @@ void FUN_10a9a180(void)
 }
 
 
-// Reference entry 10a9b8f0; body size 146 bytes.
-#line 1 "ENTRY_10a9b8f0"
-
-void __fastcall FUN_10a9b8f0(undefined4 *param_1)
-
-{
- try {
-  int *piVar1;
-  uint uVar2;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  piVar1 = (int *)((int *)param_1[0x40]);
-
-  if (piVar1 != (int *)0x0) {
-    param_1[0x3f] = 0;
-    param_1[0x40] = 0;
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-  thunk_FUN_105bb550();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  thunk_FUN_10eb6cc0();
-
-  return;
-
- } catch (...) { }
-}
-
-
 // Reference entry 10a9bd30; body size 68 bytes.
 #line 1 "ENTRY_10a9bd30"
 
@@ -8824,9 +7794,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a9bd30(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -8842,9 +7812,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a9beb0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -8860,9 +7830,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a9bf50(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -8878,52 +7848,14 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a9bff0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
   }
   return (undefined4 *)(param_1);
-}
-
-
-// Reference entry 10a9c090; body size 170 bytes.
-#line 1 "ENTRY_10a9c090"
-
-undefined4 * __thiscall Recovered_Bulk::FUN_10a9c090(byte param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
- try {
-  int *piVar1;
-  uint uVar2;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  piVar1 = (int *)((int *)param_1[0x40]);
-
-  if (piVar1 != (int *)0x0) {
-    param_1[0x3f] = 0;
-    param_1[0x40] = 0;
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-  thunk_FUN_105bb550();
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  thunk_FUN_10eb6cc0();
-  if ((param_2 & 1) != 0) {
-    thunk_FUN_1148a50e(param_1,0x108);
-  }
-
-  return (undefined4 *)(param_1);
-
- } catch (...) { }
 }
 
 
@@ -8934,9 +7866,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a9c1b0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -8952,9 +7884,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a9c250(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -9032,9 +7964,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a9ca80(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoConnectingPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCDtlsTestEchoConnectingPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCDtlsTestEchoConnectingPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCDtlsTestEchoConnectingPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoConnectingPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoConnectingPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoConnectingPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -9065,9 +7997,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a9cb60(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoFailurePage);
-    puVar1[4] = (uint)&ghidra_vftable_SCDtlsTestEchoFailurePage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCDtlsTestEchoFailurePage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCDtlsTestEchoFailurePage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoFailurePage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoFailurePage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoFailurePage);
 
     return (undefined4 *)(puVar1);
   }
@@ -9098,9 +8030,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a9cc40(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoIntroPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCDtlsTestEchoIntroPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCDtlsTestEchoIntroPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCDtlsTestEchoIntroPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoIntroPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoIntroPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoIntroPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -9131,18 +8063,18 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a9cd20(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoPlayerChooserPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCDtlsTestEchoPlayerChooserPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCDtlsTestEchoPlayerChooserPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCDtlsTestEchoPlayerChooserPage;
-    puVar1[0x38] = 0;
-    puVar1[0x39] = 0;
-    puVar1[0x3a] = 0x78;
-    puVar1[0x3b] = 0;
-    puVar1[0x3c] = 0;
-    puVar1[0x3d] = 0;
-    puVar1[0x3e] = 0;
-    puVar1[0x3f] = 0;
-    puVar1[0x40] = 0;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoPlayerChooserPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoPlayerChooserPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoPlayerChooserPage);
+    puVar1[0x38] = (undefined4)(0);
+    puVar1[0x39] = (undefined4)(0);
+    puVar1[0x3a] = (undefined4)(0x78);
+    puVar1[0x3b] = (undefined4)(0);
+    puVar1[0x3c] = (undefined4)(0);
+    puVar1[0x3d] = (undefined4)(0);
+    puVar1[0x3e] = (undefined4)(0);
+    puVar1[0x3f] = (undefined4)(0);
+    puVar1[0x40] = (undefined4)(0);
 
     return (undefined4 *)(puVar1);
   }
@@ -9173,9 +8105,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a9ce70(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoProtocolChooserPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCDtlsTestEchoProtocolChooserPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCDtlsTestEchoProtocolChooserPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCDtlsTestEchoProtocolChooserPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoProtocolChooserPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoProtocolChooserPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoProtocolChooserPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -9206,9 +8138,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a9cf50(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoSuccessPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCDtlsTestEchoSuccessPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCDtlsTestEchoSuccessPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCDtlsTestEchoSuccessPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoSuccessPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoSuccessPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCDtlsTestEchoSuccessPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -9240,19 +8172,236 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10a9d030(undefined4 param_2,undefine
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     thunk_FUN_106da030(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCDtlsTestWizard);
-    puVar1[4] = (uint)&ghidra_vftable_SCDtlsTestWizard;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCDtlsTestWizard;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCDtlsTestWizard;
-    puVar1[0x3a] = 1;
-    puVar1[0x3b] = 0;
-    puVar1[0x3c] = 0;
-    puVar1[0x3d] = 0;
-    puVar1[0x3e] = 0;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCDtlsTestWizard);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCDtlsTestWizard);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCDtlsTestWizard);
+    puVar1[0x3a] = (undefined4)(1);
+    puVar1[0x3b] = (undefined4)(0);
+    puVar1[0x3c] = (undefined4)(0);
+    puVar1[0x3d] = (undefined4)(0);
+    puVar1[0x3e] = (undefined4)(0);
 
     return (undefined4 *)(puVar1);
   }
 
   return (undefined4 *)((undefined4 *)0x0);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10a9fdf0; body size 1041 bytes.
+#line 1 "ENTRY_10a9fdf0"
+
+undefined4 __stdcall FUN_10a9fdf0(undefined4 param_1)
+
+{
+ try {
+  undefined **ppuVar1;
+  int iVar2;
+  undefined4 *puVar3;
+  undefined1 uVar4;
+  uint uVar5;
+  int iVar6;
+  undefined4 uVar7;
+  int *piVar8;
+  undefined4 *puVar9;
+  undefined ***pppuVar10;
+  undefined1 local_148 [28];
+  undefined1 local_12c [28];
+  undefined **local_110 [8];
+  undefined **local_f0 [8];
+  undefined1 local_d0 [36];
+  undefined4 local_ac;
+  int *local_a8;
+  undefined4 local_a4;
+  int *local_a0;
+  undefined1 local_9c [36];
+  undefined4 local_78;
+  int *local_74;
+  undefined4 local_70;
+  int *local_6c;
+  void *local_68;
+  undefined1 *puStack_64;
+  undefined4 local_60;
+  undefined1 local_5c [12];
+  undefined4 local_50;
+  int *local_4c;
+  undefined4 local_48;
+  int *local_44;
+  undefined4 local_34;
+  int *local_30;
+  undefined4 local_2c;
+  int *local_28;
+  undefined **local_24;
+  undefined4 local_20;
+  int iStack_1c;
+  int iStack_18;
+  int iStack_14;
+  undefined4 *local_10;
+  undefined4 *local_c;
+  int local_8;
+
+
+  uVar5 = (uint)(DAT_12126b84 ^ (uint)local_5c);
+
+  iVar6 = (int)(thunk_FUN_10eb22a0(DAT_121a47d0));
+
+  thunk_FUN_10df9b50(uVar5);
+  *(unsigned char *)((char *)&local_60 + 0) = 1;
+  uVar7 = (undefined4)(thunk_FUN_10def290(local_d0,iVar6 + 4));
+  *(unsigned char *)((char *)&local_60 + 0) = 2;
+  thunk_FUN_105f5d20(uVar7);
+  *(unsigned char *)((char *)&local_60 + 0) = 3;
+  iVar6 = (int)(thunk_FUN_10eb22a0(DAT_121a47d4));
+  *(unsigned char *)((char *)&local_60 + 0) = 4;
+  thunk_FUN_10df99d0();
+  *(unsigned char *)((char *)&local_60 + 0) = 5;
+  uVar7 = (undefined4)(thunk_FUN_10def350(local_9c,iVar6 + 4));
+  *(unsigned char *)((char *)&local_60 + 0) = 6;
+  thunk_FUN_105f5d20(uVar7);
+  *(unsigned char *)((char *)&local_60 + 0) = 7;
+  uVar7 = (undefined4)(thunk_FUN_10dfa150());
+  *(unsigned char *)((char *)&local_60 + 0) = 8;
+  thunk_FUN_10deee60(uVar7);
+  local_24 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+
+  iStack_1c = (int)(0);
+  iStack_18 = (int)(0);
+  iStack_14 = (int)(0);
+  local_10 = (undefined4 *)((undefined4 *)0x0);
+  local_c = (undefined4 *)((undefined4 *)0x0);
+
+  *(unsigned char *)((char *)&local_60 + 0) = 10;
+  thunk_FUN_10dfab80();
+  *(unsigned char *)((char *)&local_60 + 0) = 0xb;
+  uVar7 = (undefined4)(thunk_FUN_10defac0(local_148,local_12c));
+  ppuVar1 = (undefined **)(local_24);
+  pppuVar10 = (undefined ***)(local_f0);
+  *(unsigned char *)((char *)&local_60 + 0) = 0xc;
+  uVar4 = (undefined1)(thunk_FUN_10df1160(uVar7));
+  piVar8 = (int *)((int *)(*(code *)ppuVar1[3])(uVar4,pppuVar10));
+  uVar7 = (undefined4)((**(code **)(*piVar8 + 0x14))(local_110));
+  thunk_FUN_105f5df0(uVar7);
+  thunk_FUN_105a1d20();
+  thunk_FUN_105a1c80();
+  thunk_FUN_10def0d0();
+  puVar3 = (undefined4 *)(local_c);
+  local_60 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_60 + 1)) << 8 | (uint)(9)));
+  puVar9 = (undefined4 *)(local_10);
+  if (local_10 != (undefined4 *)0x0) {
+    for (; (undefined4 *)(puVar9) != puVar3; puVar9 = puVar9 + 8) {
+      (**(code **)*puVar9)(0);
+    }
+    uVar5 = (uint)(local_8 - (int)local_10 & 0xffffffe0);
+    puVar9 = (undefined4 *)(local_10);
+    if (0xfff < uVar5) {
+      puVar9 = (undefined4 *)((undefined4 *)local_10[-1]);
+      uVar5 = (uint)(uVar5 + 0x23);
+      if (0x1f < (uint)((int)local_10 + (-4 - (int)puVar9))) goto LAB_10aa0029;
+    }
+    thunk_FUN_1148a50e(puVar9,uVar5);
+    local_10 = (undefined4 *)((undefined4 *)0x0);
+    local_c = (undefined4 *)((undefined4 *)0x0);
+
+  }
+  iVar2 = (int)(iStack_18);
+  iVar6 = (int)(iStack_1c);
+  if (iStack_1c != 0) {
+    for (; iVar6 != iVar2; iVar6 = iVar6 + 0x34) {
+      thunk_FUN_105ff930();
+    }
+    uVar5 = (uint)(((iStack_14 - iStack_1c) / 0x34) * 0x34);
+    iVar6 = (int)(iStack_1c);
+    if (0xfff < uVar5) {
+      iVar6 = (int)(*(int *)(iStack_1c + -4));
+      uVar5 = (uint)(uVar5 + 0x23);
+      if (0x1f < (iStack_1c - iVar6) - 4U) {
+LAB_10aa0029:
+                    
+        _invalid_parameter_noinfo_noreturn();
+      }
+    }
+    thunk_FUN_1148a50e(iVar6,uVar5);
+    iStack_1c = (int)(0);
+    iStack_18 = (int)(0);
+    iStack_14 = (int)(0);
+  }
+  local_24 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
+  thunk_FUN_105a1d20();
+  thunk_FUN_105a1c80();
+  thunk_FUN_10def0d0();
+  thunk_FUN_10604700();
+  thunk_FUN_106045d0();
+  piVar8 = (int *)(local_6c);
+  local_f0[0] = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
+  *(unsigned char *)((char *)&local_60 + 0) = 0xd;
+  if (local_6c != (int *)0x0) {
+
+    local_6c = (int *)((int *)0x0);
+    (**(code **)(*piVar8 + 8))();
+  }
+  piVar8 = (int *)(local_74);
+  *(unsigned char *)((char *)&local_60 + 0) = 0xe;
+  if (local_74 != (int *)0x0) {
+
+    local_74 = (int *)((int *)0x0);
+    (**(code **)(*piVar8 + 8))();
+  }
+  thunk_FUN_105a1d20();
+  thunk_FUN_105a1c80();
+  thunk_FUN_105a1d20();
+  thunk_FUN_105a1c80();
+  piVar8 = (int *)(local_28);
+  *(unsigned char *)((char *)&local_60 + 0) = 0xf;
+  if (local_28 != (int *)0x0) {
+
+    local_28 = (int *)((int *)0x0);
+    (**(code **)(*piVar8 + 8))();
+  }
+  piVar8 = (int *)(local_30);
+  *(unsigned char *)((char *)&local_60 + 0) = 0x10;
+  if (local_30 != (int *)0x0) {
+
+    local_30 = (int *)((int *)0x0);
+    (**(code **)(*piVar8 + 8))();
+  }
+  thunk_FUN_10604700();
+  thunk_FUN_106045d0();
+  piVar8 = (int *)(local_a0);
+  local_110[0] = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
+  *(unsigned char *)((char *)&local_60 + 0) = 0x11;
+  if (local_a0 != (int *)0x0) {
+
+    local_a0 = (int *)((int *)0x0);
+    (**(code **)(*piVar8 + 8))();
+  }
+  piVar8 = (int *)(local_a8);
+  local_60 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_60 + 1)) << 8 | (uint)(0x12)));
+  if (local_a8 != (int *)0x0) {
+
+    local_a8 = (int *)((int *)0x0);
+    (**(code **)(*piVar8 + 8))();
+  }
+  thunk_FUN_105a1d20();
+  thunk_FUN_105a1c80();
+  thunk_FUN_10def0d0();
+  piVar8 = (int *)(local_44);
+
+  if (local_44 != (int *)0x0) {
+
+    local_44 = (int *)((int *)0x0);
+    (**(code **)(*piVar8 + 8))();
+  }
+  piVar8 = (int *)(local_4c);
+
+  if (local_4c != (int *)0x0) {
+
+    local_4c = (int *)((int *)0x0);
+    (**(code **)(*piVar8 + 8))();
+  }
+
+  return (undefined4)(param_1);
 
  } catch (...) { }
 }
@@ -9367,9 +8516,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa6830(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -9385,9 +8534,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa6b90(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x108);
@@ -9403,9 +8552,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa6c30(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -9421,9 +8570,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa6cd0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe4);
@@ -9439,9 +8588,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa6d70(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -9457,9 +8606,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa6e10(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -9475,9 +8624,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa6eb0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -9493,9 +8642,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa6f50(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -9511,9 +8660,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa6ff0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe4);
@@ -9529,9 +8678,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa7090(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -9547,9 +8696,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa7130(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe8);
@@ -9565,9 +8714,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa71d0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -9583,9 +8732,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa7270(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -9601,9 +8750,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa7310(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -9619,9 +8768,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa73b0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -9637,9 +8786,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa7450(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -9655,9 +8804,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa74f0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -9686,18 +8835,18 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa7740(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCFlareDemoAdvancedProgressPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCFlareDemoAdvancedProgressPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCFlareDemoAdvancedProgressPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCFlareDemoAdvancedProgressPage;
-    puVar1[0x38] = 0;
-    puVar1[0x39] = 0;
-    puVar1[0x3a] = 0;
-    puVar1[0x3b] = 0;
-    puVar1[0x3c] = DAT_12119c10;
-    puVar1[0x3e] = 0xffffffff;
-    puVar1[0x3f] = 0xffffffff;
-    puVar1[0x40] = 0xffffffff;
-    puVar1[0x41] = 0xffffffff;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoAdvancedProgressPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoAdvancedProgressPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoAdvancedProgressPage);
+    puVar1[0x38] = (undefined4)(0);
+    puVar1[0x39] = (undefined4)(0);
+    puVar1[0x3a] = (undefined4)(0);
+    puVar1[0x3b] = (undefined4)(0);
+    puVar1[0x3c] = (undefined4)(DAT_12119c10);
+    puVar1[0x3e] = (undefined4)(0xffffffff);
+    puVar1[0x3f] = (undefined4)(0xffffffff);
+    puVar1[0x40] = (undefined4)(0xffffffff);
+    puVar1[0x41] = (undefined4)(0xffffffff);
 
     return (undefined4 *)(puVar1);
   }
@@ -9728,9 +8877,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa7870(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCFlareDemoAdvancedProgressSetupPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCFlareDemoAdvancedProgressSetupPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCFlareDemoAdvancedProgressSetupPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCFlareDemoAdvancedProgressSetupPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoAdvancedProgressSetupPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoAdvancedProgressSetupPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoAdvancedProgressSetupPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -9761,9 +8910,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa7950(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCFlareDemoFirstPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCFlareDemoFirstPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCFlareDemoFirstPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCFlareDemoFirstPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoFirstPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoFirstPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoFirstPage);
     *(undefined1 *)(puVar1 + 0x38) = 1;
 
     return (undefined4 *)(puVar1);
@@ -9795,9 +8944,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa7a30(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCFlareDemoImageCheckmarkPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCFlareDemoImageCheckmarkPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCFlareDemoImageCheckmarkPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCFlareDemoImageCheckmarkPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoImageCheckmarkPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoImageCheckmarkPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoImageCheckmarkPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -9828,9 +8977,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa7b10(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCFlareDemoImageProgressPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCFlareDemoImageProgressPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCFlareDemoImageProgressPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCFlareDemoImageProgressPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoImageProgressPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoImageProgressPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoImageProgressPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -9861,9 +9010,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa7bf0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCFlareDemoImageThinkerPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCFlareDemoImageThinkerPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCFlareDemoImageThinkerPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCFlareDemoImageThinkerPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoImageThinkerPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoImageThinkerPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoImageThinkerPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -9894,9 +9043,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa7cd0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCFlareDemoImageWiFiPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCFlareDemoImageWiFiPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCFlareDemoImageWiFiPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCFlareDemoImageWiFiPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoImageWiFiPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoImageWiFiPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoImageWiFiPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -9927,9 +9076,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa7db0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCFlareDemoSecondPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCFlareDemoSecondPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCFlareDemoSecondPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCFlareDemoSecondPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoSecondPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoSecondPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoSecondPage);
     *(undefined1 *)(puVar1 + 0x38) = 1;
 
     return (undefined4 *)(puVar1);
@@ -9961,9 +9110,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa7e90(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCFlareDemoSelectionPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCFlareDemoSelectionPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCFlareDemoSelectionPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCFlareDemoSelectionPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoSelectionPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoSelectionPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoSelectionPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -9994,9 +9143,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa7f70(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCFlareDemoSimpleProgressPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCFlareDemoSimpleProgressPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCFlareDemoSimpleProgressPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCFlareDemoSimpleProgressPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoSimpleProgressPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoSimpleProgressPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoSimpleProgressPage);
     *(undefined8 *)(puVar1 + 0x38) = 0;
 
     return (undefined4 *)(puVar1);
@@ -10028,9 +9177,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa8050(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCFlareDemoSpinnerPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCFlareDemoSpinnerPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCFlareDemoSpinnerPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCFlareDemoSpinnerPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoSpinnerPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoSpinnerPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoSpinnerPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -10061,9 +9210,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa8130(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCFlareDemoThirdPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCFlareDemoThirdPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCFlareDemoThirdPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCFlareDemoThirdPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoThirdPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoThirdPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoThirdPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -10094,9 +9243,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa8210(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCFlareDemoVideoCheckmarkPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCFlareDemoVideoCheckmarkPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCFlareDemoVideoCheckmarkPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCFlareDemoVideoCheckmarkPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoVideoCheckmarkPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoVideoCheckmarkPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoVideoCheckmarkPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -10127,9 +9276,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa82f0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCFlareDemoVideoProgressPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCFlareDemoVideoProgressPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCFlareDemoVideoProgressPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCFlareDemoVideoProgressPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoVideoProgressPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoVideoProgressPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoVideoProgressPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -10160,9 +9309,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa83d0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCFlareDemoVideoThinkerPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCFlareDemoVideoThinkerPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCFlareDemoVideoThinkerPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCFlareDemoVideoThinkerPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoVideoThinkerPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoVideoThinkerPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoVideoThinkerPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -10193,9 +9342,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa84b0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCFlareDemoVideoWiFiPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCFlareDemoVideoWiFiPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCFlareDemoVideoWiFiPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCFlareDemoVideoWiFiPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoVideoWiFiPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoVideoWiFiPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoVideoWiFiPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -10227,9 +9376,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aa8590(undefined4 param_2,undefine
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     thunk_FUN_106da030(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCFlareDemoWizard);
-    puVar1[4] = (uint)&ghidra_vftable_SCFlareDemoWizard;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCFlareDemoWizard;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCFlareDemoWizard;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoWizard);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoWizard);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCFlareDemoWizard);
 
     return (undefined4 *)(puVar1);
   }
@@ -10331,9 +9480,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ab34a0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -10349,9 +9498,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ab3530(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -10380,9 +9529,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ab3650(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCFlutterTestErrorHandlingPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCFlutterTestErrorHandlingPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCFlutterTestErrorHandlingPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCFlutterTestErrorHandlingPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCFlutterTestErrorHandlingPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCFlutterTestErrorHandlingPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCFlutterTestErrorHandlingPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -10414,9 +9563,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ab3730(undefined4 param_2,undefine
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     thunk_FUN_106da030(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCFlutterTestWizard);
-    puVar1[4] = (uint)&ghidra_vftable_SCFlutterTestWizard;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCFlutterTestWizard;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCFlutterTestWizard;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCFlutterTestWizard);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCFlutterTestWizard);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCFlutterTestWizard);
 
     return (undefined4 *)(puVar1);
   }
@@ -10435,9 +9584,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ab4440(undefined4 param_2)
   undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_106da030(param_2);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCGhostWizard);
-  param_1[4] = (uint)&ghidra_vftable_SCGhostWizard;
-  param_1[0x23] = (uint)&ghidra_vftable_SCGhostWizard;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCGhostWizard;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCGhostWizard);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCGhostWizard);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCGhostWizard);
   *(undefined2 *)(param_1 + 0x3a) = 0;
   return (undefined4 *)(param_1);
 }
@@ -10450,9 +9599,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ab4950(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -10468,9 +9617,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ab4a10(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -10486,9 +9635,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ab4ab0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -10517,9 +9666,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ab4be0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCGhostBooPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCGhostBooPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCGhostBooPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCGhostBooPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCGhostBooPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCGhostBooPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCGhostBooPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -10550,9 +9699,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ab4cc0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCGhostSneakyPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCGhostSneakyPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCGhostSneakyPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCGhostSneakyPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCGhostSneakyPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCGhostSneakyPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCGhostSneakyPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -10584,9 +9733,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ab4da0(undefined4 param_2,undefine
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     thunk_FUN_106da030(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCGhostWizard);
-    puVar1[4] = (uint)&ghidra_vftable_SCGhostWizard;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCGhostWizard;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCGhostWizard;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCGhostWizard);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCGhostWizard);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCGhostWizard);
     *(undefined2 *)(puVar1 + 0x3a) = 0;
 
     return (undefined4 *)(puVar1);
@@ -10747,9 +9896,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ab6230(undefined4 param_2,undefine
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     thunk_FUN_106da030(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCHapticWizard);
-    puVar1[4] = (uint)&ghidra_vftable_SCHapticWizard;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCHapticWizard;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCHapticWizard;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCHapticWizard);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCHapticWizard);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCHapticWizard);
 
     return (undefined4 *)(puVar1);
   }
@@ -10767,9 +9916,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10abf1a0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -10785,9 +9934,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10abf8f0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -10803,9 +9952,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10abf990(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -10821,9 +9970,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10abfa30(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -10839,9 +9988,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10abfad0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -10857,9 +10006,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10abfb70(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -10875,9 +10024,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10abfc10(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -10893,9 +10042,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10abfcb0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -10911,9 +10060,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10abfd50(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -10929,9 +10078,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10abfdf0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -10947,9 +10096,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10abfe90(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -10965,9 +10114,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10abff30(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -10983,9 +10132,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10abffd0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11001,9 +10150,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac0070(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11019,9 +10168,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac0110(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11037,9 +10186,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac01b0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11055,9 +10204,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac0250(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11073,9 +10222,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac02f0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11091,9 +10240,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac0390(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11109,9 +10258,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac0430(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11127,9 +10276,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac04d0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11145,9 +10294,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac0570(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11163,9 +10312,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac0610(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11181,9 +10330,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac06b0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11199,9 +10348,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac0750(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11217,9 +10366,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac07f0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11235,9 +10384,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac0890(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11253,9 +10402,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac0930(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11271,9 +10420,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac09d0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11289,9 +10438,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac0a70(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11307,9 +10456,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac0b10(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11325,9 +10474,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac0bb0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11343,9 +10492,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac0c50(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11361,9 +10510,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac0cf0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11379,9 +10528,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac0d90(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11397,9 +10546,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac0e30(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11415,9 +10564,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac0ed0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -11433,9 +10582,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac0f70(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe4);
@@ -11464,9 +10613,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac1180(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockActionableListPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockActionableListPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockActionableListPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockActionableListPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockActionableListPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockActionableListPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockActionableListPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -11497,9 +10646,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac1260(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockButtonFirstPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockButtonFirstPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockButtonFirstPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockButtonFirstPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockButtonFirstPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockButtonFirstPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockButtonFirstPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -11530,9 +10679,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac1340(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockButtonFourthPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockButtonFourthPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockButtonFourthPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockButtonFourthPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockButtonFourthPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockButtonFourthPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockButtonFourthPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -11563,9 +10712,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac1420(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockButtonSecondPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockButtonSecondPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockButtonSecondPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockButtonSecondPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockButtonSecondPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockButtonSecondPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockButtonSecondPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -11596,9 +10745,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac1500(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockButtonSecondaryButtonFirstPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockButtonSecondaryButtonFirstPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockButtonSecondaryButtonFirstPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockButtonSecondaryButtonFirstPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockButtonSecondaryButtonFirstPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockButtonSecondaryButtonFirstPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockButtonSecondaryButtonFirstPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -11629,9 +10778,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac15e0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockButtonSecondaryButtonSecondPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockButtonSecondaryButtonSecondPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockButtonSecondaryButtonSecondPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockButtonSecondaryButtonSecondPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockButtonSecondaryButtonSecondPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockButtonSecondaryButtonSecondPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockButtonSecondaryButtonSecondPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -11662,9 +10811,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac16c0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockButtonThirdPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockButtonThirdPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockButtonThirdPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockButtonThirdPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockButtonThirdPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockButtonThirdPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockButtonThirdPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -11695,9 +10844,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac17a0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockCaptionImageCarouselBarDebugPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockCaptionImageCarouselBarDebugPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockCaptionImageCarouselBarDebugPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockCaptionImageCarouselBarDebugPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockCaptionImageCarouselBarDebugPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockCaptionImageCarouselBarDebugPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockCaptionImageCarouselBarDebugPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -11728,9 +10877,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac1880(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockCaptionImageCarouselDebugPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockCaptionImageCarouselDebugPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockCaptionImageCarouselDebugPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockCaptionImageCarouselDebugPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockCaptionImageCarouselDebugPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockCaptionImageCarouselDebugPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockCaptionImageCarouselDebugPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -11761,9 +10910,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac1960(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockCaptionImageDebugPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockCaptionImageDebugPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockCaptionImageDebugPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockCaptionImageDebugPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockCaptionImageDebugPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockCaptionImageDebugPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockCaptionImageDebugPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -11794,9 +10943,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac1a40(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockCheckboxLongItemPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockCheckboxLongItemPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockCheckboxLongItemPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockCheckboxLongItemPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockCheckboxLongItemPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockCheckboxLongItemPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockCheckboxLongItemPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -11827,9 +10976,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac1b20(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockCheckboxShortItemPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockCheckboxShortItemPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockCheckboxShortItemPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockCheckboxShortItemPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockCheckboxShortItemPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockCheckboxShortItemPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockCheckboxShortItemPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -11860,9 +11009,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac1c00(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockDrumPickerPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockDrumPickerPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockDrumPickerPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockDrumPickerPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockDrumPickerPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockDrumPickerPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockDrumPickerPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -11893,9 +11042,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac1ce0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockDrumPickerWithIconsAndSubtextPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockDrumPickerWithIconsAndSubtextPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockDrumPickerWithIconsAndSubtextPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockDrumPickerWithIconsAndSubtextPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockDrumPickerWithIconsAndSubtextPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockDrumPickerWithIconsAndSubtextPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockDrumPickerWithIconsAndSubtextPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -11926,9 +11075,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac1dc0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockDrumPickerWithIconsPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockDrumPickerWithIconsPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockDrumPickerWithIconsPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockDrumPickerWithIconsPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockDrumPickerWithIconsPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockDrumPickerWithIconsPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockDrumPickerWithIconsPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -11959,9 +11108,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac1ea0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockDrumPickerWithSubtextPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockDrumPickerWithSubtextPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockDrumPickerWithSubtextPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockDrumPickerWithSubtextPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockDrumPickerWithSubtextPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockDrumPickerWithSubtextPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockDrumPickerWithSubtextPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -11992,9 +11141,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac1f80(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockFieldAPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockFieldAPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockFieldAPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockFieldAPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockFieldAPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockFieldAPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockFieldAPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12025,9 +11174,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac2060(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockFieldBPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockFieldBPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockFieldBPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockFieldBPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockFieldBPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockFieldBPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockFieldBPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12058,9 +11207,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac2140(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockListPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockListPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockListPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockListPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockListPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockListPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockListPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12091,9 +11240,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac2220(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockListWithIconsOnLeftPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockListWithIconsOnLeftPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockListWithIconsOnLeftPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockListWithIconsOnLeftPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockListWithIconsOnLeftPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockListWithIconsOnLeftPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockListWithIconsOnLeftPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12124,9 +11273,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac2300(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockListWithIndicatorsPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockListWithIndicatorsPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockListWithIndicatorsPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockListWithIndicatorsPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockListWithIndicatorsPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockListWithIndicatorsPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockListWithIndicatorsPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12157,9 +11306,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac23e0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownFirstPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockMarkdownFirstPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockMarkdownFirstPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockMarkdownFirstPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownFirstPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownFirstPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownFirstPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12190,9 +11339,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac24c0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownInputPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockMarkdownInputPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockMarkdownInputPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockMarkdownInputPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownInputPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownInputPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownInputPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12223,9 +11372,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac25a0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownOutput2Page);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockMarkdownOutput2Page;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockMarkdownOutput2Page;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockMarkdownOutput2Page;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownOutput2Page);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownOutput2Page);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownOutput2Page);
 
     return (undefined4 *)(puVar1);
   }
@@ -12256,9 +11405,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac2680(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownOutputPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockMarkdownOutputPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockMarkdownOutputPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockMarkdownOutputPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownOutputPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownOutputPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownOutputPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12289,9 +11438,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac2760(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownSecondPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockMarkdownSecondPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockMarkdownSecondPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockMarkdownSecondPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownSecondPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownSecondPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownSecondPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12322,9 +11471,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac2840(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownThirdPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockMarkdownThirdPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockMarkdownThirdPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockMarkdownThirdPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownThirdPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownThirdPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockMarkdownThirdPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12355,9 +11504,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac2920(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockMultilinePickerPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockMultilinePickerPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockMultilinePickerPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockMultilinePickerPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockMultilinePickerPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockMultilinePickerPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockMultilinePickerPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12388,9 +11537,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac2a00(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockRichSelectorPickerPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockRichSelectorPickerPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockRichSelectorPickerPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockRichSelectorPickerPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockRichSelectorPickerPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockRichSelectorPickerPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockRichSelectorPickerPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12421,9 +11570,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac2ae0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockScrollableActionableListPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockScrollableActionableListPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockScrollableActionableListPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockScrollableActionableListPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockScrollableActionableListPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockScrollableActionableListPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockScrollableActionableListPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12454,9 +11603,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac2bc0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockScrollableListWithIconsOnLeftInCarouselPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockScrollableListWithIconsOnLeftInCarouselPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockScrollableListWithIconsOnLeftInCarouselPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockScrollableListWithIconsOnLeftInCarouselPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockScrollableListWithIconsOnLeftInCarouselPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockScrollableListWithIconsOnLeftInCarouselPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockScrollableListWithIconsOnLeftInCarouselPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12487,9 +11636,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac2ca0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockScrollableListWithIconsOnLeftPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockScrollableListWithIconsOnLeftPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockScrollableListWithIconsOnLeftPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockScrollableListWithIconsOnLeftPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockScrollableListWithIconsOnLeftPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockScrollableListWithIconsOnLeftPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockScrollableListWithIconsOnLeftPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12520,9 +11669,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac2d80(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockSelectProductDebugPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockSelectProductDebugPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockSelectProductDebugPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockSelectProductDebugPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockSelectProductDebugPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockSelectProductDebugPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockSelectProductDebugPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12553,9 +11702,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac2e60(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockSelectionPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockSelectionPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockSelectionPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockSelectionPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockSelectionPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockSelectionPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockSelectionPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12586,9 +11735,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac2f40(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockSelectorPickerPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockSelectorPickerPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockSelectorPickerPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockSelectorPickerPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockSelectorPickerPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockSelectorPickerPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockSelectorPickerPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12619,9 +11768,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac3020(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockSelectorPickerWithDefaultPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockSelectorPickerWithDefaultPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockSelectorPickerWithDefaultPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockSelectorPickerWithDefaultPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockSelectorPickerWithDefaultPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockSelectorPickerWithDefaultPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockSelectorPickerWithDefaultPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12652,10 +11801,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ac3100(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMockUpdateDebugPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMockUpdateDebugPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMockUpdateDebugPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMockUpdateDebugPage;
-    puVar1[0x38] = 0;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMockUpdateDebugPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMockUpdateDebugPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMockUpdateDebugPage);
+    puVar1[0x38] = (undefined4)(0);
 
     return (undefined4 *)(puVar1);
   }
@@ -12715,9 +11864,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ae6d30(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -12733,9 +11882,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ae6e20(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -12751,9 +11900,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ae6ec0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -12769,9 +11918,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ae6f60(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -12800,9 +11949,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ae70a0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMolassesFirstPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMolassesFirstPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMolassesFirstPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMolassesFirstPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMolassesFirstPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMolassesFirstPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMolassesFirstPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12833,9 +11982,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ae7180(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMolassesSecondPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMolassesSecondPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMolassesSecondPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMolassesSecondPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMolassesSecondPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMolassesSecondPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMolassesSecondPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12866,9 +12015,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ae7260(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMolassesThirdPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCMolassesThirdPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMolassesThirdPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMolassesThirdPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMolassesThirdPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMolassesThirdPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMolassesThirdPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -12900,9 +12049,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ae7340(undefined4 param_2,undefine
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     thunk_FUN_106da030(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCMolassesWizard);
-    puVar1[4] = (uint)&ghidra_vftable_SCMolassesWizard;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCMolassesWizard;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCMolassesWizard;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCMolassesWizard);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCMolassesWizard);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCMolassesWizard);
 
     return (undefined4 *)(puVar1);
   }
@@ -12920,9 +12069,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aeafb0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -12938,9 +12087,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aeb190(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -12956,9 +12105,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aeb230(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -12974,9 +12123,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aeb2d0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -12992,9 +12141,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aeb370(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -13010,9 +12159,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aeb410(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -13028,9 +12177,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aeb4b0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -13046,9 +12195,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aeb550(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -13064,9 +12213,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aeb5f0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -13095,9 +12244,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aeb7a0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCPopupDemoSelectionPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCPopupDemoSelectionPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCPopupDemoSelectionPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCPopupDemoSelectionPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoSelectionPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoSelectionPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoSelectionPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -13128,9 +12277,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aeb880(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest1APage);
-    puVar1[4] = (uint)&ghidra_vftable_SCPopupDemoTest1APage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCPopupDemoTest1APage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCPopupDemoTest1APage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest1APage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest1APage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest1APage);
 
     return (undefined4 *)(puVar1);
   }
@@ -13161,9 +12310,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aeb960(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest1BPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCPopupDemoTest1BPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCPopupDemoTest1BPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCPopupDemoTest1BPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest1BPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest1BPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest1BPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -13194,9 +12343,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aeba40(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest1CPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCPopupDemoTest1CPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCPopupDemoTest1CPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCPopupDemoTest1CPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest1CPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest1CPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest1CPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -13227,9 +12376,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aebb20(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest2APage);
-    puVar1[4] = (uint)&ghidra_vftable_SCPopupDemoTest2APage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCPopupDemoTest2APage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCPopupDemoTest2APage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest2APage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest2APage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest2APage);
 
     return (undefined4 *)(puVar1);
   }
@@ -13260,9 +12409,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aebc00(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest3Page);
-    puVar1[4] = (uint)&ghidra_vftable_SCPopupDemoTest3Page;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCPopupDemoTest3Page;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCPopupDemoTest3Page;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest3Page);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest3Page);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest3Page);
 
     return (undefined4 *)(puVar1);
   }
@@ -13293,9 +12442,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aebce0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest4APage);
-    puVar1[4] = (uint)&ghidra_vftable_SCPopupDemoTest4APage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCPopupDemoTest4APage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCPopupDemoTest4APage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest4APage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest4APage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest4APage);
 
     return (undefined4 *)(puVar1);
   }
@@ -13326,9 +12475,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aebdc0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest4BPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCPopupDemoTest4BPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCPopupDemoTest4BPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCPopupDemoTest4BPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest4BPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest4BPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoTest4BPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -13360,9 +12509,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10aebea0(undefined4 param_2,undefine
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     thunk_FUN_106da030(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCPopupDemoWizard);
-    puVar1[4] = (uint)&ghidra_vftable_SCPopupDemoWizard;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCPopupDemoWizard;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCPopupDemoWizard;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoWizard);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoWizard);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCPopupDemoWizard);
 
     return (undefined4 *)(puVar1);
   }
@@ -13402,6 +12551,38 @@ void FUN_10af3560(void)
 }
 
 
+// Reference entry 10af3740; body size 144 bytes.
+#line 1 "ENTRY_10af3740"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10af3740(undefined4 param_2,undefined4 param_3,undefined4 param_4,
+            undefined4 *param_5)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+ try {
+  void *pvVar1;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  *param_1 = (undefined4)(param_2);
+
+  param_1[1] = (undefined4)(0);
+  pvVar1 = (void *)(operator_new(0x18));
+  param_1[1] = (undefined4)(pvVar1);
+  *(undefined4 *)((int)pvVar1 + 0x10) = *(undefined4 *)*param_5;
+  *(undefined4 *)((int)pvVar1 + 0x14) = 0;
+  *(undefined4 *)param_1[1] = (undefined4)(param_3);
+  *(undefined4 *)(param_1[1] + 4) = param_3;
+  *(undefined4 *)(param_1[1] + 8) = param_3;
+  *(undefined1 *)(param_1[1] + 0xc) = 0;
+  *(undefined1 *)(param_1[1] + 0xd) = 0;
+
+  return (undefined4 *)(param_1);
+
+ } catch (...) { }
+}
+
+
 // Reference entry 10af3870; body size 220 bytes.
 #line 1 "ENTRY_10af3870"
 
@@ -13423,7 +12604,7 @@ int * __thiscall Recovered_Bulk::FUN_10af3870(int *param_2)
 
 
   *param_1 = (int)(0);
-  param_1[1] = 0;
+  param_1[1] = (int)(0);
   pvVar7 = (void *)(operator_new(0x18));
   *(void **)pvVar7 = (void *)(pvVar7);
   *(void **)((int)pvVar7 + 4) = pvVar7;
@@ -13434,7 +12615,7 @@ int * __thiscall Recovered_Bulk::FUN_10af3870(int *param_2)
   uVar8 = (undefined4)(thunk_FUN_10af3f70(*(undefined4 *)(*param_2 + 4),pvVar7,param_2));
   *(undefined4 *)(*param_1 + 4) = uVar8;
   piVar2 = (int *)((int *)*param_1);
-  param_1[1] = param_2[1];
+  param_1[1] = (int)(param_2[1]);
   piVar3 = (int *)((int *)piVar2[1]);
   if (*(char *)((int)piVar3 + 0xd) == '\0') {
     cVar1 = (char)(*(char *)(*piVar3 + 0xd));
@@ -13479,21 +12660,21 @@ int * __thiscall Recovered_Bulk::FUN_10af47d0(int *param_2,int *param_3)
   iVar1 = (int)(*param_1);
   puVar3 = (undefined4 *)(*(undefined4 **)(iVar1 + 4));
   *param_2 = (int)((int)puVar3);
-  param_2[1] = 0;
-  param_2[2] = iVar1;
+  param_2[1] = (int)(0);
+  param_2[2] = (int)(iVar1);
   if (*(char *)((int)puVar3 + 0xd) == '\0') {
     iVar1 = (int)(*param_3);
     do {
       *param_2 = (int)((int)puVar3);
       iVar2 = (int)(puVar3[4]);
       if (iVar1 <= iVar2) {
-        param_2[2] = (int)puVar3;
+        param_2[2] = (int)((int)puVar3);
         puVar3 = (undefined4 *)((undefined4 *)*puVar3);
       }
       else {
         puVar3 = (undefined4 *)((undefined4 *)puVar3[2]);
       }
-      param_2[1] = (uint)(iVar1 <= iVar2);
+      param_2[1] = (int)((uint)(iVar1 <= iVar2));
     } while (*(char *)((int)puVar3 + 0xd) == '\0');
   }
   return (int *)(param_2);
@@ -13536,11 +12717,11 @@ int * __thiscall Recovered_Bulk::FUN_10af4a00(int *param_2,int *param_3)
 
     local_18 = (undefined4 *)(param_1);
     puVar3 = (undefined4 *)(operator_new(0x18));
-    puVar3[4] = *param_3;
-    puVar3[5] = 0;
+    puVar3[4] = (undefined4)(*param_3);
+    puVar3[5] = (undefined4)(0);
     *puVar3 = (undefined4)(uVar1);
-    puVar3[1] = uVar1;
-    puVar3[2] = uVar1;
+    puVar3[1] = (undefined4)(uVar1);
+    puVar3[2] = (undefined4)(uVar1);
     *(undefined2 *)(puVar3 + 3) = 0;
     iVar4 = (int)(thunk_FUN_10af7ee0(local_24,local_20,puVar3));
     *param_2 = (int)(iVar4);
@@ -13550,6 +12731,54 @@ int * __thiscall Recovered_Bulk::FUN_10af4a00(int *param_2,int *param_3)
   }
                     
   thunk_FUN_101d7220(uVar2);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10af56e0; body size 93 bytes.
+#line 1 "ENTRY_10af56e0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10af56e0(undefined4 param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+ try {
+  void *pvVar1;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  *param_1 = (undefined4)(param_2);
+
+  param_1[1] = (undefined4)(0);
+  pvVar1 = (void *)(operator_new(0x18));
+  param_1[1] = (undefined4)(pvVar1);
+
+  return (undefined4 *)(param_1);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10af5760; body size 93 bytes.
+#line 1 "ENTRY_10af5760"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10af5760(undefined4 param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+ try {
+  void *pvVar1;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  *param_1 = (undefined4)(param_2);
+
+  param_1[1] = (undefined4)(0);
+  pvVar1 = (void *)(operator_new(0x18));
+  param_1[1] = (undefined4)(pvVar1);
+
+  return (undefined4 *)(param_1);
 
  } catch (...) { }
 }
@@ -13576,7 +12805,7 @@ int * __thiscall Recovered_Bulk::FUN_10af5a00(int *param_2)
 
 
   *param_1 = (int)(0);
-  param_1[1] = 0;
+  param_1[1] = (int)(0);
   pvVar7 = (void *)(operator_new(0x18));
   *(void **)pvVar7 = (void *)(pvVar7);
   *(void **)((int)pvVar7 + 4) = pvVar7;
@@ -13587,7 +12816,7 @@ int * __thiscall Recovered_Bulk::FUN_10af5a00(int *param_2)
   uVar8 = (undefined4)(thunk_FUN_10af3f70(*(undefined4 *)(*param_2 + 4),pvVar7,param_2));
   *(undefined4 *)(*param_1 + 4) = uVar8;
   piVar2 = (int *)((int *)*param_1);
-  param_1[1] = param_2[1];
+  param_1[1] = (int)(param_2[1]);
   piVar3 = (int *)((int *)piVar2[1]);
   if (*(char *)((int)piVar3 + 0xd) == '\0') {
     cVar1 = (char)(*(char *)(*piVar3 + 0xd));
@@ -13634,9 +12863,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10af5be0(undefined4 param_2)
   thunk_FUN_10eb64f0(param_2);
 
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCProductAssetsCarouselPage);
-  param_1[4] = (uint)&ghidra_vftable_SCProductAssetsCarouselPage;
-  param_1[0x23] = (uint)&ghidra_vftable_SCProductAssetsCarouselPage;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCProductAssetsCarouselPage;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsCarouselPage);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsCarouselPage);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsCarouselPage);
   thunk_FUN_10c5f430(0,0);
 
   return (undefined4 *)(param_1);
@@ -13660,9 +12889,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10af6020(undefined4 param_2)
   thunk_FUN_10eb64f0(param_2);
 
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCProductAssetsVideoDetailPage);
-  param_1[4] = (uint)&ghidra_vftable_SCProductAssetsVideoDetailPage;
-  param_1[0x23] = (uint)&ghidra_vftable_SCProductAssetsVideoDetailPage;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCProductAssetsVideoDetailPage;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsVideoDetailPage);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsVideoDetailPage);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsVideoDetailPage);
   thunk_FUN_10c5f430(0,0);
 
   return (undefined4 *)(param_1);
@@ -13704,11 +12933,11 @@ int __thiscall Recovered_Bulk::FUN_10af6f20(int *param_2)
 
     local_18 = (undefined4 *)(param_1);
     puVar3 = (undefined4 *)(operator_new(0x18));
-    puVar3[4] = *param_2;
-    puVar3[5] = 0;
+    puVar3[4] = (undefined4)(*param_2);
+    puVar3[5] = (undefined4)(0);
     *puVar3 = (undefined4)(uVar1);
-    puVar3[1] = uVar1;
-    puVar3[2] = uVar1;
+    puVar3[1] = (undefined4)(uVar1);
+    puVar3[2] = (undefined4)(uVar1);
     *(undefined2 *)(puVar3 + 3) = 0;
     local_1c = (int)(thunk_FUN_10af7ee0(local_24,local_20,puVar3));
   }
@@ -13772,9 +13001,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10af7420(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -13790,9 +13019,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10af7670(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe8);
@@ -13808,9 +13037,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10af7710(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -13826,9 +13055,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10af77b0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -13844,9 +13073,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10af7850(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe8);
@@ -13862,9 +13091,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10af78f0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -13894,9 +13123,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10af8610(undefined4 param_2,undefine
     thunk_FUN_10eb64f0(uVar2);
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCProductAssetsCarouselPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCProductAssetsCarouselPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCProductAssetsCarouselPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCProductAssetsCarouselPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsCarouselPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsCarouselPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsCarouselPage);
     thunk_FUN_10c5f430(0,0);
 
     return (undefined4 *)(puVar1);
@@ -13928,9 +13157,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10af8700(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCProductAssetsColorListPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCProductAssetsColorListPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCProductAssetsColorListPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCProductAssetsColorListPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsColorListPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsColorListPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsColorListPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -13961,9 +13190,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10af87e0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCProductAssetsIntroPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCProductAssetsIntroPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCProductAssetsIntroPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCProductAssetsIntroPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsIntroPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsIntroPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsIntroPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -13995,9 +13224,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10af88c0(undefined4 param_2,undefine
     thunk_FUN_10eb64f0(uVar2);
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCProductAssetsVideoDetailPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCProductAssetsVideoDetailPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCProductAssetsVideoDetailPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCProductAssetsVideoDetailPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsVideoDetailPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsVideoDetailPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsVideoDetailPage);
     thunk_FUN_10c5f430(0,0);
 
     return (undefined4 *)(puVar1);
@@ -14029,9 +13258,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10af89b0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCProductAssetsVideoListPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCProductAssetsVideoListPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCProductAssetsVideoListPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCProductAssetsVideoListPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsVideoListPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsVideoListPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsVideoListPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -14063,12 +13292,12 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10af8a90(undefined4 param_2,undefine
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     thunk_FUN_106da030(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCProductAssetsWizard);
-    puVar1[4] = (uint)&ghidra_vftable_SCProductAssetsWizard;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCProductAssetsWizard;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCProductAssetsWizard;
-    puVar1[0x3a] = 1;
-    puVar1[0x3b] = 1;
-    puVar1[0x3c] = 0;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsWizard);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsWizard);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCProductAssetsWizard);
+    puVar1[0x3a] = (undefined4)(1);
+    puVar1[0x3b] = (undefined4)(1);
+    puVar1[0x3c] = (undefined4)(0);
 
     return (undefined4 *)(puVar1);
   }
@@ -14178,9 +13407,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b00090(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -14196,9 +13425,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b00180(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -14214,9 +13443,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b00350(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -14245,9 +13474,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b00490(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCNfcTestAbilityNotAvailablePage);
-    puVar1[4] = (uint)&ghidra_vftable_SCNfcTestAbilityNotAvailablePage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCNfcTestAbilityNotAvailablePage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCNfcTestAbilityNotAvailablePage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCNfcTestAbilityNotAvailablePage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNfcTestAbilityNotAvailablePage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNfcTestAbilityNotAvailablePage);
 
     return (undefined4 *)(puVar1);
   }
@@ -14278,9 +13507,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b00680(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCNfcTestPermissionPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCNfcTestPermissionPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCNfcTestPermissionPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCNfcTestPermissionPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCNfcTestPermissionPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNfcTestPermissionPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNfcTestPermissionPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -14312,9 +13541,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b00760(undefined4 param_2,undefine
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     thunk_FUN_106da030(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCNfcTestWizard);
-    puVar1[4] = (uint)&ghidra_vftable_SCNfcTestWizard;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCNfcTestWizard;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCNfcTestWizard;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCNfcTestWizard);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNfcTestWizard);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNfcTestWizard);
 
     return (undefined4 *)(puVar1);
   }
@@ -14477,6 +13706,183 @@ LAB_10b019c4:
 }
 
 
+// Reference entry 10b020f0; body size 615 bytes.
+#line 1 "ENTRY_10b020f0"
+
+undefined4 __stdcall FUN_10b020f0(undefined4 param_1)
+
+{
+ try {
+  int iVar1;
+  undefined4 *puVar2;
+  undefined1 uVar3;
+  uint uVar4;
+  int iVar5;
+  undefined4 uVar6;
+  int *piVar7;
+  undefined4 *puVar8;
+  undefined ***pppuVar9;
+  undefined **local_a0 [8];
+  void *local_80;
+  undefined1 *puStack_7c;
+  undefined4 local_78;
+  undefined1 local_74 [36];
+  undefined4 local_50;
+  int *local_4c;
+  undefined4 local_48;
+  int *local_44;
+  undefined4 local_34;
+  int *local_30;
+  undefined4 local_2c;
+  int *local_28;
+  undefined **local_24;
+  undefined4 local_20;
+  int iStack_1c;
+  int iStack_18;
+  int iStack_14;
+  undefined4 *local_10;
+  undefined4 *local_c;
+  int local_8;
+
+
+  uVar4 = (uint)(DAT_12126b84 ^ (uint)local_74);
+
+  iVar5 = (int)(thunk_FUN_10eb22a0(DAT_121a4ae8));
+
+  thunk_FUN_10df6360(uVar4);
+  *(unsigned char *)((char *)&local_78 + 0) = 1;
+  uVar6 = (undefined4)(thunk_FUN_10def290(local_74,iVar5 + 4));
+  *(unsigned char *)((char *)&local_78 + 0) = 2;
+  thunk_FUN_105f5d20(uVar6);
+  local_24 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
+
+  iStack_1c = (int)(0);
+  iStack_18 = (int)(0);
+  iStack_14 = (int)(0);
+  local_10 = (undefined4 *)((undefined4 *)0x0);
+  local_c = (undefined4 *)((undefined4 *)0x0);
+
+  pppuVar9 = (undefined ***)(local_a0);
+  *(unsigned char *)((char *)&local_78 + 0) = 4;
+  uVar6 = (undefined4)(5);
+  thunk_FUN_101b5540(5,pppuVar9);
+  uVar3 = (undefined1)(thunk_FUN_101b5de0(uVar6));
+  piVar7 = (int *)((int *)thunk_FUN_10619290(uVar3,pppuVar9));
+  uVar6 = (undefined4)((**(code **)(*piVar7 + 4))());
+  thunk_FUN_105f5df0(uVar6);
+  puVar2 = (undefined4 *)(local_c);
+  local_78 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_78 + 1)) << 8 | (uint)(3)));
+  puVar8 = (undefined4 *)(local_10);
+  if (local_10 != (undefined4 *)0x0) {
+    for (; (undefined4 *)(puVar8) != puVar2; puVar8 = puVar8 + 8) {
+      (**(code **)*puVar8)(0);
+    }
+    uVar4 = (uint)(local_8 - (int)local_10 & 0xffffffe0);
+    puVar8 = (undefined4 *)(local_10);
+    if (0xfff < uVar4) {
+      puVar8 = (undefined4 *)((undefined4 *)local_10[-1]);
+      uVar4 = (uint)(uVar4 + 0x23);
+      if (0x1f < (uint)((int)local_10 + (-4 - (int)puVar8))) goto LAB_10b02267;
+    }
+    thunk_FUN_1148a50e(puVar8,uVar4);
+    local_10 = (undefined4 *)((undefined4 *)0x0);
+    local_c = (undefined4 *)((undefined4 *)0x0);
+
+  }
+  iVar1 = (int)(iStack_18);
+  iVar5 = (int)(iStack_1c);
+  if (iStack_1c != 0) {
+    for (; iVar5 != iVar1; iVar5 = iVar5 + 0x34) {
+      thunk_FUN_105ff930();
+    }
+    uVar4 = (uint)(((iStack_14 - iStack_1c) / 0x34) * 0x34);
+    iVar5 = (int)(iStack_1c);
+    if (0xfff < uVar4) {
+      iVar5 = (int)(*(int *)(iStack_1c + -4));
+      uVar4 = (uint)(uVar4 + 0x23);
+      if (0x1f < (iStack_1c - iVar5) - 4U) {
+LAB_10b02267:
+                    
+        _invalid_parameter_noinfo_noreturn();
+      }
+    }
+    thunk_FUN_1148a50e(iVar5,uVar4);
+    iStack_1c = (int)(0);
+    iStack_18 = (int)(0);
+    iStack_14 = (int)(0);
+  }
+  local_24 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
+  thunk_FUN_10604700();
+  thunk_FUN_106045d0();
+  piVar7 = (int *)(local_44);
+  local_a0[0] = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTreeIfChainInterface);
+  *(unsigned char *)((char *)&local_78 + 0) = 5;
+  if (local_44 != (int *)0x0) {
+
+    local_44 = (int *)((int *)0x0);
+    (**(code **)(*piVar7 + 8))();
+  }
+  piVar7 = (int *)(local_4c);
+  local_78 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_78 + 1)) << 8 | (uint)(6)));
+  if (local_4c != (int *)0x0) {
+
+    local_4c = (int *)((int *)0x0);
+    (**(code **)(*piVar7 + 8))();
+  }
+  thunk_FUN_105a1d20();
+  thunk_FUN_105a1c80();
+  thunk_FUN_10def0d0();
+  piVar7 = (int *)(local_28);
+
+  if (local_28 != (int *)0x0) {
+
+    local_28 = (int *)((int *)0x0);
+    (**(code **)(*piVar7 + 8))();
+  }
+  piVar7 = (int *)(local_30);
+
+  if (local_30 != (int *)0x0) {
+
+    local_30 = (int *)((int *)0x0);
+    (**(code **)(*piVar7 + 8))();
+  }
+
+  return (undefined4)(param_1);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10b02b50; body size 135 bytes.
+#line 1 "ENTRY_10b02b50"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10b02b50(undefined4 param_2,undefined4 param_3,undefined4 *param_4)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+ try {
+  void *pvVar1;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  *param_1 = (undefined4)(param_2);
+
+  param_1[1] = (undefined4)(0);
+  pvVar1 = (void *)(operator_new(0x14));
+  param_1[1] = (undefined4)(pvVar1);
+  *(undefined4 *)((int)pvVar1 + 0x10) = *param_4;
+  *(undefined4 *)param_1[1] = (undefined4)(param_3);
+  *(undefined4 *)(param_1[1] + 4) = param_3;
+  *(undefined4 *)(param_1[1] + 8) = param_3;
+  *(undefined1 *)(param_1[1] + 0xc) = 0;
+  *(undefined1 *)(param_1[1] + 0xd) = 0;
+
+  return (undefined4 *)(param_1);
+
+ } catch (...) { }
+}
+
+
 // Reference entry 10b02ec0; body size 216 bytes.
 #line 1 "ENTRY_10b02ec0"
 
@@ -14517,12 +13923,12 @@ int * __thiscall Recovered_Bulk::FUN_10b02ec0(int *param_2,int *param_3)
 
     local_18 = (undefined4 *)(param_1);
     puVar5 = (undefined4 *)(operator_new(0x14));
-    puVar5[4] = *param_3;
+    puVar5[4] = (undefined4)(*param_3);
     uStack_24 = (undefined4)((undefined4)((ulonglong)uVar1 >> 0x20));
     *puVar5 = (undefined4)(uVar2);
     local_28 = (undefined4)((undefined4)uVar1);
-    puVar5[1] = uVar2;
-    puVar5[2] = uVar2;
+    puVar5[1] = (undefined4)(uVar2);
+    puVar5[2] = (undefined4)(uVar2);
     *(undefined2 *)(puVar5 + 3) = 0;
     iVar6 = (int)(thunk_FUN_10b059e0(local_28,uStack_24,puVar5));
     *param_2 = (int)(iVar6);
@@ -14576,21 +13982,21 @@ int * __thiscall Recovered_Bulk::FUN_10b03580(int *param_2,int *param_3)
   iVar1 = (int)(*param_1);
   puVar3 = (undefined4 *)(*(undefined4 **)(iVar1 + 4));
   *param_2 = (int)((int)puVar3);
-  param_2[1] = 0;
-  param_2[2] = iVar1;
+  param_2[1] = (int)(0);
+  param_2[2] = (int)(iVar1);
   if (*(char *)((int)puVar3 + 0xd) == '\0') {
     iVar1 = (int)(*param_3);
     do {
       *param_2 = (int)((int)puVar3);
       iVar2 = (int)(puVar3[4]);
       if (iVar1 <= iVar2) {
-        param_2[2] = (int)puVar3;
+        param_2[2] = (int)((int)puVar3);
         puVar3 = (undefined4 *)((undefined4 *)*puVar3);
       }
       else {
         puVar3 = (undefined4 *)((undefined4 *)puVar3[2]);
       }
-      param_2[1] = (uint)(iVar1 <= iVar2);
+      param_2[1] = (int)((uint)(iVar1 <= iVar2));
     } while (*(char *)((int)puVar3 + 0xd) == '\0');
   }
   return (int *)(param_2);
@@ -14639,12 +14045,12 @@ void __thiscall Recovered_Bulk::FUN_10b03bc0(int *param_2,int *param_3)
 
     local_18 = (undefined4 *)(param_1);
     puVar5 = (undefined4 *)(operator_new(0x14));
-    puVar5[4] = *param_3;
+    puVar5[4] = (undefined4)(*param_3);
     uStack_24 = (undefined4)((undefined4)((ulonglong)uVar1 >> 0x20));
     *puVar5 = (undefined4)(uVar2);
     local_28 = (undefined4)((undefined4)uVar1);
-    puVar5[1] = uVar2;
-    puVar5[2] = uVar2;
+    puVar5[1] = (undefined4)(uVar2);
+    puVar5[2] = (undefined4)(uVar2);
     *(undefined2 *)(puVar5 + 3) = 0;
     iVar6 = (int)(thunk_FUN_10b059e0(local_28,uStack_24,puVar5));
     uVar7 = (undefined1)(1);
@@ -14698,9 +14104,33 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b03ff0(undefined4 param_2)
   }
   thunk_FUN_10ebc060(param_2,uVar3);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
-  param_1[4] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCSubwizStateFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+
+  return (undefined4 *)(param_1);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10b04170; body size 93 bytes.
+#line 1 "ENTRY_10b04170"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10b04170(undefined4 param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+ try {
+  void *pvVar1;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  *param_1 = (undefined4)(param_2);
+
+  param_1[1] = (undefined4)(0);
+  pvVar1 = (void *)(operator_new(0x14));
+  param_1[1] = (undefined4)(pvVar1);
 
   return (undefined4 *)(param_1);
 
@@ -14748,9 +14178,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b04560(undefined4 param_2)
   }
   thunk_FUN_10ebc060(param_2,uVar3);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestNfcAuthenticationSubwiz);
-  param_1[4] = (uint)&ghidra_vftable_SCNfcUserTestNfcAuthenticationSubwiz;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNfcUserTestNfcAuthenticationSubwiz;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNfcUserTestNfcAuthenticationSubwiz;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestNfcAuthenticationSubwiz);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestNfcAuthenticationSubwiz);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestNfcAuthenticationSubwiz);
 
   return (undefined4 *)(param_1);
 
@@ -14781,13 +14211,13 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b048c0(undefined4 param_2)
   }
   thunk_FUN_10cf2f30(puVar1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestWizard);
-  param_1[4] = (uint)&ghidra_vftable_SCNfcUserTestWizard;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNfcUserTestWizard;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNfcUserTestWizard;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestWizard);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestWizard);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestWizard);
   *(undefined1 *)(param_1 + 0x3d) = 0;
-  param_1[0x3e] = 0;
-  param_1[0x3f] = 0;
-  param_1[0x40] = 0;
+  param_1[0x3e] = (undefined4)(0);
+  param_1[0x3f] = (undefined4)(0);
+  param_1[0x40] = (undefined4)(0);
 
   return (undefined4 *)(param_1);
 
@@ -14820,8 +14250,8 @@ void __fastcall FUN_10b04ef0(int *param_1)
     }
     thunk_FUN_1148a50e(iVar3,uVar2);
     *param_1 = (int)(0);
-    param_1[1] = 0;
-    param_1[2] = 0;
+    param_1[1] = (int)(0);
+    param_1[2] = (int)(0);
   }
   return;
 }
@@ -14863,9 +14293,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b05270(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -14881,9 +14311,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b05360(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
-  param_1[4] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCSubwizStateFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
   thunk_FUN_10ebc110();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc0);
@@ -14899,9 +14329,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b05470(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -14917,9 +14347,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b05510(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
-  param_1[4] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCSubwizStateFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
   thunk_FUN_10ebc110();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc0);
@@ -14935,9 +14365,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b055b0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -15004,8 +14434,8 @@ void __thiscall Recovered_Bulk::FUN_10b05820(int param_2,int param_3,int param_4
     thunk_FUN_1148a50e(iVar3,uVar2);
   }
   *param_1 = (int)(param_2);
-  param_1[1] = param_2 + param_3 * 0xc;
-  param_1[2] = param_2 + param_4 * 0xc;
+  param_1[1] = (int)(param_2 + param_3 * 0xc);
+  param_1[2] = (int)(param_2 + param_4 * 0xc);
   return;
 }
 
@@ -15024,7 +14454,7 @@ void __thiscall Recovered_Bulk::FUN_10b05c80(int param_2)
   if (*(char *)(*piVar1 + 0xd) == '\0') {
     *(int *)(*piVar1 + 4) = param_2;
   }
-  piVar1[1] = *(int *)(param_2 + 4);
+  piVar1[1] = (int)(*(int *)(param_2 + 4));
   if (param_2 == *(int *)(*param_1 + 4)) {
     *(int **)(*param_1 + 4) = piVar1;
     *piVar1 = (int)(param_2);
@@ -15038,44 +14468,9 @@ void __thiscall Recovered_Bulk::FUN_10b05c80(int param_2)
     *(int **)(param_2 + 4) = piVar1;
     return;
   }
-  piVar2[2] = (int)piVar1;
+  piVar2[2] = (int)((int)piVar1);
   *piVar1 = (int)(param_2);
   *(int **)(param_2 + 4) = piVar1;
-  return;
-}
-
-
-// Reference entry 10b05d20; body size 83 bytes.
-#line 1 "ENTRY_10b05d20"
-
-void __thiscall Recovered_Bulk::FUN_10b05d20(int *param_2)
-{
-  int *param_1 = (int *)this;
-  int iVar1;
-  int *piVar2;
-  
-  iVar1 = (int)(*param_2);
-  *param_2 = (int)(*(int *)(iVar1 + 8));
-  if (*(char *)(*(int *)(iVar1 + 8) + 0xd) == '\0') {
-    *(int **)(*(int *)(iVar1 + 8) + 4) = param_2;
-  }
-  *(int *)(iVar1 + 4) = param_2[1];
-  if (param_2 == *(int **)(*param_1 + 4)) {
-    *(int *)(*param_1 + 4) = iVar1;
-    *(int **)(iVar1 + 8) = param_2;
-    param_2[1] = iVar1;
-    return;
-  }
-  piVar2 = (int *)((int *)param_2[1]);
-  if (param_2 == (int *)piVar2[2]) {
-    piVar2[2] = iVar1;
-    *(int **)(iVar1 + 8) = param_2;
-    param_2[1] = iVar1;
-    return;
-  }
-  *piVar2 = (int)(iVar1);
-  *(int **)(iVar1 + 8) = param_2;
-  param_2[1] = iVar1;
   return;
 }
 
@@ -15105,8 +14500,8 @@ void __fastcall FUN_10b05d90(int *param_1)
     }
     thunk_FUN_1148a50e(iVar3,uVar2);
     *param_1 = (int)(0);
-    param_1[1] = 0;
-    param_1[2] = 0;
+    param_1[1] = (int)(0);
+    param_1[2] = (int)(0);
   }
   return;
 }
@@ -15132,9 +14527,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b06590(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestIntroPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCNfcUserTestIntroPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCNfcUserTestIntroPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCNfcUserTestIntroPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestIntroPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestIntroPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestIntroPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -15191,9 +14586,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b06670(undefined4 param_2,undefine
     }
     thunk_FUN_10ebc060(uVar3,uVar5);
     *puVar2 = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestNfcAuthenticationSubwiz);
-    puVar2[4] = (uint)&ghidra_vftable_SCNfcUserTestNfcAuthenticationSubwiz;
-    puVar2[0x23] = (uint)&ghidra_vftable_SCNfcUserTestNfcAuthenticationSubwiz;
-    puVar2[0x2a] = (uint)&ghidra_vftable_SCNfcUserTestNfcAuthenticationSubwiz;
+    puVar2[4] = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestNfcAuthenticationSubwiz);
+    puVar2[0x23] = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestNfcAuthenticationSubwiz);
+    puVar2[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestNfcAuthenticationSubwiz);
 
     return (undefined4 *)(puVar2);
   }
@@ -15224,9 +14619,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b067d0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestOutroPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCNfcUserTestOutroPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCNfcUserTestOutroPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCNfcUserTestOutroPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestOutroPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestOutroPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestOutroPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -15260,13 +14655,13 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b068b0(undefined4 param_2,undefine
 
     thunk_FUN_10cf2f30(puVar1 + 0x23);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestWizard);
-    puVar1[4] = (uint)&ghidra_vftable_SCNfcUserTestWizard;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCNfcUserTestWizard;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCNfcUserTestWizard;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestWizard);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestWizard);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNfcUserTestWizard);
     *(undefined1 *)(puVar1 + 0x3d) = 0;
-    puVar1[0x3e] = 0;
-    puVar1[0x3f] = 0;
-    puVar1[0x40] = 0;
+    puVar1[0x3e] = (undefined4)(0);
+    puVar1[0x3f] = (undefined4)(0);
+    puVar1[0x40] = (undefined4)(0);
 
     return (undefined4 *)(puVar1);
   }
@@ -15453,6 +14848,36 @@ LAB_10b07a8f:
 }
 
 
+// Reference entry 10b09870; body size 135 bytes.
+#line 1 "ENTRY_10b09870"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10b09870(undefined4 param_2,undefined4 param_3,undefined4 *param_4)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+ try {
+  void *pvVar1;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  *param_1 = (undefined4)(param_2);
+
+  param_1[1] = (undefined4)(0);
+  pvVar1 = (void *)(operator_new(0x14));
+  param_1[1] = (undefined4)(pvVar1);
+  *(undefined4 *)((int)pvVar1 + 0x10) = *param_4;
+  *(undefined4 *)param_1[1] = (undefined4)(param_3);
+  *(undefined4 *)(param_1[1] + 4) = param_3;
+  *(undefined4 *)(param_1[1] + 8) = param_3;
+  *(undefined1 *)(param_1[1] + 0xc) = 0;
+  *(undefined1 *)(param_1[1] + 0xd) = 0;
+
+  return (undefined4 *)(param_1);
+
+ } catch (...) { }
+}
+
+
 // Reference entry 10b09930; body size 196 bytes.
 #line 1 "ENTRY_10b09930"
 
@@ -15490,11 +14915,11 @@ undefined4 __thiscall Recovered_Bulk::FUN_10b09930(undefined4 param_2,undefined4
 
     local_18 = (undefined4 *)(param_1);
     puVar4 = (undefined4 *)(operator_new(0x14));
-    puVar4[4] = *param_3;
+    puVar4[4] = (undefined4)(*param_3);
     uStack_24 = (undefined4)((undefined4)((ulonglong)uVar1 >> 0x20));
     *puVar4 = (undefined4)(uVar5);
-    puVar4[1] = uVar5;
-    puVar4[2] = uVar5;
+    puVar4[1] = (undefined4)(uVar5);
+    puVar4[2] = (undefined4)(uVar5);
     *(undefined2 *)(puVar4 + 3) = 0;
     uVar5 = (undefined4)(thunk_FUN_106e7280(local_28,uStack_24,puVar4));
 
@@ -15555,10 +14980,10 @@ void __thiscall Recovered_Bulk::FUN_10b09dd0(undefined4 *param_2,undefined4 *par
       puVar6 = (undefined4 *)(operator_new(0x14));
 
 
-      puVar6[4] = *param_2;
+      puVar6[4] = (undefined4)(*param_2);
       *puVar6 = (undefined4)(uVar2);
-      puVar6[1] = uVar2;
-      puVar6[2] = uVar2;
+      puVar6[1] = (undefined4)(uVar2);
+      puVar6[2] = (undefined4)(uVar2);
       *(undefined2 *)(puVar6 + 3) = 0;
       thunk_FUN_106e7280((undefined4)local_24,*(uint *)((char *)&local_24 + 4),puVar6);
     }
@@ -15610,9 +15035,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0ac60(undefined4 param_2)
   }
   thunk_FUN_10ebc060(param_2,uVar3);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
-  param_1[4] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCSubwizStateFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
 
   return (undefined4 *)(param_1);
 
@@ -15660,9 +15085,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0ad70(undefined4 param_2)
   }
   thunk_FUN_10ebc060(param_2,uVar3);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
-  param_1[4] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCSubwizStateFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
 
   return (undefined4 *)(param_1);
 
@@ -15710,9 +15135,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0ae80(undefined4 param_2)
   }
   thunk_FUN_10ebc060(param_2,uVar3);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
-  param_1[4] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCSubwizStateFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
 
   return (undefined4 *)(param_1);
 
@@ -15748,7 +15173,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0afb0(undefined4 *param_2,undefin
 
   local_14 = (undefined4 *)(param_3);
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   local_1c = (undefined4 *)(param_1);
   local_18 = (void *)(operator_new(0x14));
   *(void **)local_18 = (void *)(local_18);
@@ -15774,10 +15199,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0afb0(undefined4 *param_2,undefin
         puVar4 = (undefined4 *)(operator_new(0x14));
         local_8 = (int)((uint)*(unsigned short *)((char *)&local_8 + 1) << 8);
 
-        puVar4[4] = *param_2;
+        puVar4[4] = (undefined4)(*param_2);
         *puVar4 = (undefined4)(uVar1);
-        puVar4[1] = uVar1;
-        puVar4[2] = uVar1;
+        puVar4[1] = (undefined4)(uVar1);
+        puVar4[2] = (undefined4)(uVar1);
         *(undefined2 *)(puVar4 + 3) = 0;
         thunk_FUN_106e7280((undefined4)local_30,*(uint *)((char *)&local_30 + 4),puVar4);
         param_3 = (undefined4 *)(local_14);
@@ -15832,9 +15257,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0b150(undefined4 param_2)
   }
   thunk_FUN_10ebc060(param_2,uVar3);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestApConnectSubwiz);
-  param_1[4] = (uint)&ghidra_vftable_SCOffLanUpdateTestApConnectSubwiz;
-  param_1[0x23] = (uint)&ghidra_vftable_SCOffLanUpdateTestApConnectSubwiz;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCOffLanUpdateTestApConnectSubwiz;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestApConnectSubwiz);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestApConnectSubwiz);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestApConnectSubwiz);
 
   return (undefined4 *)(param_1);
 
@@ -15882,9 +15307,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0b770(undefined4 param_2)
   }
   thunk_FUN_10ebc060(param_2,uVar3);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareUpdateSubwiz);
-  param_1[4] = (uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareUpdateSubwiz;
-  param_1[0x23] = (uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareUpdateSubwiz;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareUpdateSubwiz;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareUpdateSubwiz);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareUpdateSubwiz);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareUpdateSubwiz);
 
   return (undefined4 *)(param_1);
 
@@ -15932,45 +15357,11 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0bc20(undefined4 param_2)
   }
   thunk_FUN_10ebc060(param_2,uVar3);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestPermissionsSubwiz);
-  param_1[4] = (uint)&ghidra_vftable_SCOffLanUpdateTestPermissionsSubwiz;
-  param_1[0x23] = (uint)&ghidra_vftable_SCOffLanUpdateTestPermissionsSubwiz;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCOffLanUpdateTestPermissionsSubwiz;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestPermissionsSubwiz);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestPermissionsSubwiz);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestPermissionsSubwiz);
 
   return (undefined4 *)(param_1);
-
- } catch (...) { }
-}
-
-
-// Reference entry 10b0db80; body size 135 bytes.
-#line 1 "ENTRY_10b0db80"
-
-void __fastcall FUN_10b0db80(undefined4 *param_1)
-
-{
- try {
-  int *piVar1;
-  uint uVar2;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  piVar1 = (int *)((int *)param_1[0x39]);
-
-  if (piVar1 != (int *)0x0) {
-    param_1[0x38] = 0;
-    param_1[0x39] = 0;
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  thunk_FUN_10eb6cc0();
-
-  return;
 
  } catch (...) { }
 }
@@ -16029,9 +15420,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0e280(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -16047,9 +15438,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0e580(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
-  param_1[4] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCSubwizStateFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
   thunk_FUN_10ebc110();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc0);
@@ -16065,9 +15456,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0e5e0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
-  param_1[4] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCSubwizStateFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
   thunk_FUN_10ebc110();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc0);
@@ -16083,9 +15474,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0e640(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
-  param_1[4] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCSubwizStateFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
   thunk_FUN_10ebc110();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc0);
@@ -16101,9 +15492,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0e6f0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
-  param_1[4] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCSubwizStateFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
   thunk_FUN_10ebc110();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc0);
@@ -16119,9 +15510,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0e790(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -16137,9 +15528,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0e830(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe8);
@@ -16155,9 +15546,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0e8d0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -16173,9 +15564,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0e970(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
-  param_1[4] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCSubwizStateFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
   thunk_FUN_10ebc110();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc0);
@@ -16191,9 +15582,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0ea10(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -16209,9 +15600,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0eab0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -16227,9 +15618,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0eb50(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
-  param_1[4] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCSubwizStateFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCSubwizStateFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCSubwizStateFor);
   thunk_FUN_10ebc110();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc0);
@@ -16246,9 +15637,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0ebf0(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_105bb550();
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xec);
@@ -16264,9 +15655,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0eca0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe4);
@@ -16282,9 +15673,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0ed40(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -16300,51 +15691,14 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0ede0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
   }
   return (undefined4 *)(param_1);
-}
-
-
-// Reference entry 10b0ee80; body size 159 bytes.
-#line 1 "ENTRY_10b0ee80"
-
-undefined4 * __thiscall Recovered_Bulk::FUN_10b0ee80(byte param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
- try {
-  int *piVar1;
-  uint uVar2;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-
-  uVar2 = (uint)(DAT_12126b84);
-
-  piVar1 = (int *)((int *)param_1[0x39]);
-
-  if (piVar1 != (int *)0x0) {
-    param_1[0x38] = 0;
-    param_1[0x39] = 0;
-    (**(code **)(*piVar1 + 8))(uVar2);
-  }
-  *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  thunk_FUN_10eb6cc0();
-  if ((param_2 & 1) != 0) {
-    thunk_FUN_1148a50e(param_1,0xec);
-  }
-
-  return (undefined4 *)(param_1);
-
- } catch (...) { }
 }
 
 
@@ -16355,9 +15709,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0ef90(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
-  param_1[4] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x23] = (uint)&ghidra_vftable_SCNewWizPageFor;
-  param_1[0x2a] = (uint)&ghidra_vftable_SCNewWizPageFor;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x23] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
+  param_1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCNewWizPageFor);
   thunk_FUN_10eb6cc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xe0);
@@ -16412,9 +15766,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0f740(undefined4 param_2,undefine
     }
     thunk_FUN_10ebc060(uVar3,uVar5);
     *puVar2 = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestApConnectSubwiz);
-    puVar2[4] = (uint)&ghidra_vftable_SCOffLanUpdateTestApConnectSubwiz;
-    puVar2[0x23] = (uint)&ghidra_vftable_SCOffLanUpdateTestApConnectSubwiz;
-    puVar2[0x2a] = (uint)&ghidra_vftable_SCOffLanUpdateTestApConnectSubwiz;
+    puVar2[4] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestApConnectSubwiz);
+    puVar2[0x23] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestApConnectSubwiz);
+    puVar2[0x2a] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestApConnectSubwiz);
 
     return (undefined4 *)(puVar2);
   }
@@ -16445,9 +15799,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0f8a0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadErrorPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadErrorPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadErrorPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadErrorPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadErrorPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadErrorPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadErrorPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -16477,12 +15831,12 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0f980(undefined4 param_2,undefine
   if (puVar1 != (undefined4 *)0x0) {
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
-    puVar1[0x38] = (uint)&ghidra_vftable_SCFirmwareDownloadCallback;
+    puVar1[0x38] = (undefined4)((uint)&ghidra_vftable_SCFirmwareDownloadCallback);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadPage;
-    puVar1[0x38] = (uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadPage);
+    puVar1[0x38] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadPage);
     *(undefined1 *)(puVar1 + 0x39) = 0;
 
     return (undefined4 *)(puVar1);
@@ -16514,9 +15868,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0fa80(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadSuccessPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadSuccessPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadSuccessPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadSuccessPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadSuccessPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadSuccessPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareDownloadSuccessPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -16573,9 +15927,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0fb60(undefined4 param_2,undefine
     }
     thunk_FUN_10ebc060(uVar3,uVar5);
     *puVar2 = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareUpdateSubwiz);
-    puVar2[4] = (uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareUpdateSubwiz;
-    puVar2[0x23] = (uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareUpdateSubwiz;
-    puVar2[0x2a] = (uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareUpdateSubwiz;
+    puVar2[4] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareUpdateSubwiz);
+    puVar2[0x23] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareUpdateSubwiz);
+    puVar2[0x2a] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestFirmwareUpdateSubwiz);
 
     return (undefined4 *)(puVar2);
   }
@@ -16606,9 +15960,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0fcc0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestIntroPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCOffLanUpdateTestIntroPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCOffLanUpdateTestIntroPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCOffLanUpdateTestIntroPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestIntroPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestIntroPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestIntroPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -16639,9 +15993,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0fda0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestOutroPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCOffLanUpdateTestOutroPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCOffLanUpdateTestOutroPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCOffLanUpdateTestOutroPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestOutroPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestOutroPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestOutroPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -16698,9 +16052,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0fe80(undefined4 param_2,undefine
     }
     thunk_FUN_10ebc060(uVar3,uVar5);
     *puVar2 = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestPermissionsSubwiz);
-    puVar2[4] = (uint)&ghidra_vftable_SCOffLanUpdateTestPermissionsSubwiz;
-    puVar2[0x23] = (uint)&ghidra_vftable_SCOffLanUpdateTestPermissionsSubwiz;
-    puVar2[0x2a] = (uint)&ghidra_vftable_SCOffLanUpdateTestPermissionsSubwiz;
+    puVar2[4] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestPermissionsSubwiz);
+    puVar2[0x23] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestPermissionsSubwiz);
+    puVar2[0x2a] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestPermissionsSubwiz);
 
     return (undefined4 *)(puVar2);
   }
@@ -16731,12 +16085,12 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b0ffe0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestProductSelectionPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCOffLanUpdateTestProductSelectionPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCOffLanUpdateTestProductSelectionPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCOffLanUpdateTestProductSelectionPage;
-    puVar1[0x38] = 0;
-    puVar1[0x39] = 0;
-    puVar1[0x3a] = 0;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestProductSelectionPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestProductSelectionPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestProductSelectionPage);
+    puVar1[0x38] = (undefined4)(0);
+    puVar1[0x39] = (undefined4)(0);
+    puVar1[0x3a] = (undefined4)(0);
 
     return (undefined4 *)(puVar1);
   }
@@ -16767,9 +16121,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b100e0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestSNSApConnectPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCOffLanUpdateTestSNSApConnectPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCOffLanUpdateTestSNSApConnectPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCOffLanUpdateTestSNSApConnectPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestSNSApConnectPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestSNSApConnectPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestSNSApConnectPage);
     *(undefined2 *)(puVar1 + 0x38) = 0;
     *(undefined1 *)((int)puVar1 + 0xe2) = 0;
 
@@ -16802,9 +16156,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b101d0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestSonosApButtonPressConfirmPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCOffLanUpdateTestSonosApButtonPressConfirmPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCOffLanUpdateTestSonosApButtonPressConfirmPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCOffLanUpdateTestSonosApButtonPressConfirmPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestSonosApButtonPressConfirmPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestSonosApButtonPressConfirmPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestSonosApButtonPressConfirmPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -16835,9 +16189,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b102b0(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestSonosApButtonPressPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCOffLanUpdateTestSonosApButtonPressPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCOffLanUpdateTestSonosApButtonPressPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCOffLanUpdateTestSonosApButtonPressPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestSonosApButtonPressPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestSonosApButtonPressPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestSonosApButtonPressPage);
 
     return (undefined4 *)(puVar1);
   }
@@ -16868,11 +16222,11 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b10390(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestSonosApConnectPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCOffLanUpdateTestSonosApConnectPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCOffLanUpdateTestSonosApConnectPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCOffLanUpdateTestSonosApConnectPage;
-    puVar1[0x38] = 0;
-    puVar1[0x39] = 0;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestSonosApConnectPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestSonosApConnectPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestSonosApConnectPage);
+    puVar1[0x38] = (undefined4)(0);
+    puVar1[0x39] = (undefined4)(0);
     *(undefined2 *)(puVar1 + 0x3a) = 0;
     *(undefined1 *)((int)puVar1 + 0xea) = 0;
 
@@ -16905,9 +16259,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10b10490(undefined4 param_2,undefine
     uVar2 = (undefined4)(thunk_FUN_10eae120(param_1,param_2,param_3));
     thunk_FUN_10eb64f0(uVar2);
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestSonosApWaitingPage);
-    puVar1[4] = (uint)&ghidra_vftable_SCOffLanUpdateTestSonosApWaitingPage;
-    puVar1[0x23] = (uint)&ghidra_vftable_SCOffLanUpdateTestSonosApWaitingPage;
-    puVar1[0x2a] = (uint)&ghidra_vftable_SCOffLanUpdateTestSonosApWaitingPage;
+    puVar1[4] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestSonosApWaitingPage);
+    puVar1[0x23] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestSonosApWaitingPage);
+    puVar1[0x2a] = (undefined4)((uint)&ghidra_vftable_SCOffLanUpdateTestSonosApWaitingPage);
 
     return (undefined4 *)(puVar1);
   }

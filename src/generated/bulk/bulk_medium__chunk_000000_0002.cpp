@@ -108,6 +108,8 @@ extern int thunk_FUN_10246290(...);
 extern int thunk_FUN_10260b70(...);
 extern int thunk_FUN_10263a50(...);
 extern int thunk_FUN_10263af0(...);
+extern int thunk_FUN_10263dd0(...);
+extern int thunk_FUN_10264090(...);
 extern int thunk_FUN_10264380(...);
 extern int thunk_FUN_10264780(...);
 extern int thunk_FUN_10267120(...);
@@ -118,11 +120,12 @@ extern int thunk_FUN_102686f0(...);
 extern int thunk_FUN_10268710(...);
 extern int thunk_FUN_1026adf0(...);
 extern int thunk_FUN_1026ae40(...);
+extern int thunk_FUN_1026e620(...);
 extern int thunk_FUN_1026ffc0(...);
 extern int thunk_FUN_10272ea0(...);
 extern int thunk_FUN_10272fd0(...);
+extern int thunk_FUN_10273190(...);
 extern int thunk_FUN_102776d0(...);
-extern int thunk_FUN_10277f40(...);
 extern int thunk_FUN_10278c00(...);
 extern int thunk_FUN_10279020(...);
 extern int thunk_FUN_1027e130(...);
@@ -134,6 +137,8 @@ extern int thunk_FUN_10282f10(...);
 extern int thunk_FUN_10283040(...);
 extern int thunk_FUN_102833f0(...);
 extern int thunk_FUN_102840e0(...);
+extern int thunk_FUN_10284380(...);
+extern int thunk_FUN_10284520(...);
 extern int thunk_FUN_10284760(...);
 extern int thunk_FUN_102847c0(...);
 extern int thunk_FUN_10284810(...);
@@ -156,6 +161,8 @@ extern int thunk_FUN_1029ecd0(...);
 extern int thunk_FUN_102a0500(...);
 extern int thunk_FUN_102a30a0(...);
 extern int thunk_FUN_102a3140(...);
+extern int thunk_FUN_102a3810(...);
+extern int thunk_FUN_102a3ad0(...);
 extern int thunk_FUN_102a3d90(...);
 extern int thunk_FUN_102a3de0(...);
 extern int thunk_FUN_102a3ea0(...);
@@ -217,6 +224,7 @@ extern int thunk_FUN_1030da10(...);
 extern int thunk_FUN_1030f6e0(...);
 extern int thunk_FUN_1030f760(...);
 extern int thunk_FUN_1030f810(...);
+extern int thunk_FUN_10314cc0(...);
 extern int thunk_FUN_10317920(...);
 extern int thunk_FUN_10317a70(...);
 extern int thunk_FUN_10317bc0(...);
@@ -239,6 +247,7 @@ extern int thunk_FUN_10339560(...);
 extern int thunk_FUN_1033a140(...);
 extern int thunk_FUN_1033c180(...);
 extern int thunk_FUN_1033c6d0(...);
+extern int thunk_FUN_10342c60(...);
 extern int thunk_FUN_103431e0(...);
 extern int thunk_FUN_103447b0(...);
 extern int thunk_FUN_10344810(...);
@@ -248,6 +257,8 @@ extern int thunk_FUN_10344a10(...);
 extern int thunk_FUN_10346d70(...);
 extern int thunk_FUN_10352a90(...);
 extern int thunk_FUN_10352b30(...);
+extern int thunk_FUN_103532a0(...);
+extern int thunk_FUN_103535f0(...);
 extern int thunk_FUN_103539c0(...);
 extern int thunk_FUN_10353a20(...);
 extern int thunk_FUN_10353b00(...);
@@ -264,7 +275,6 @@ extern int thunk_FUN_103659a0(...);
 extern int thunk_FUN_1036b5d0(...);
 extern int thunk_FUN_1036b600(...);
 extern int thunk_FUN_1036b620(...);
-extern int thunk_FUN_1036e480(...);
 extern int thunk_FUN_10372ca0(...);
 extern int thunk_FUN_10376940(...);
 extern int thunk_FUN_10376990(...);
@@ -507,6 +517,7 @@ typedef void *NYI;
 typedef void *RINCON_;
 typedef void *S;
 typedef void *UNLOCK;
+typedef void *US;
 typedef void *WARNING;
 typedef void *Y;
 struct AccountPicker { char _pad; AccountPicker(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
@@ -573,10 +584,11 @@ struct ThrowInfo { char _pad; ThrowInfo(...); template<class T> int operator==(T
 struct Too { char _pad; Too(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Treating { char _pad; Treating(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct WizardManager { char _pad; WizardManager(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct Recovered_Bulk { char _pad; undefined4 __thiscall FUN_102611e0(undefined4 param_2); undefined4 __thiscall FUN_10261210(undefined4 param_2); undefined4 __thiscall FUN_102618d0(undefined4 *param_2); bool __thiscall FUN_10261e70(SCStr *param_2); bool __thiscall FUN_102620d0(SCStr *param_2); void __thiscall FUN_10262790(undefined4 param_2); void __thiscall FUN_10264350(undefined4 param_2); int __thiscall FUN_10264440(SCStr *param_2); undefined4 * __thiscall FUN_10265a00(int *param_2); undefined4 * __thiscall FUN_10267ef0(byte param_2); undefined4 * __thiscall FUN_10267f30(byte param_2); undefined4 * __thiscall FUN_10267f70(byte param_2); undefined4 * __thiscall FUN_102681e0(byte param_2); undefined4 * __thiscall FUN_10268210(byte param_2); undefined4 * __thiscall FUN_10268240(byte param_2); undefined4 __thiscall FUN_10268270(byte param_2); undefined4 __thiscall FUN_102682a0(byte param_2); undefined4 __thiscall FUN_102682d0(byte param_2); undefined4 __thiscall FUN_10268300(byte param_2); void __thiscall FUN_10268540(undefined4 *param_2); void __thiscall FUN_10268600(undefined4 *param_2); void __thiscall FUN_10268620(char param_2); void __thiscall FUN_102686d0(char param_2); void __thiscall FUN_102686f0(undefined4 param_2,undefined4 param_3); void __thiscall FUN_10268710(undefined4 param_2,undefined4 param_3); void __thiscall FUN_10268cf0(undefined4 *param_2); void __thiscall FUN_10268d20(undefined4 *param_2); void __thiscall FUN_10269380(int *param_2); void __thiscall FUN_102693d0(int *param_2); void __thiscall FUN_10269420(int *param_2); void __thiscall FUN_10269470(int *param_2); int * __thiscall FUN_1026b010(int *param_2); int * __thiscall FUN_1026bd40(int *param_2,int param_3); int * __thiscall FUN_1026bdc0(int *param_2,int param_3); undefined4 * __thiscall FUN_1026dbb0(byte param_2); undefined4 * __thiscall FUN_1026dbf0(byte param_2); undefined4 * __thiscall FUN_102707d0(byte param_2); undefined4 * __thiscall FUN_102708a0(byte param_2); undefined4 * __thiscall FUN_102708e0(byte param_2); undefined4 __thiscall FUN_10270910(byte param_2); void __thiscall FUN_10270940(undefined4 *param_2); void __thiscall FUN_10270960(undefined4 *param_2); void __thiscall FUN_10270980(char param_2); void __thiscall FUN_102709a0(char param_2); void __thiscall FUN_10270b60(undefined4 *param_2); void __thiscall FUN_10270b80(undefined4 *param_2); void __thiscall FUN_10270df0(int *param_2); void __thiscall FUN_10270e40(int *param_2); void __thiscall FUN_10270e90(int *param_2); void __thiscall FUN_102712c0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_102712f0(undefined4 *param_2); int * __thiscall FUN_10271350(int *param_2,int param_3); void __thiscall FUN_102728c0(int *param_2); undefined4 __thiscall FUN_102750c0(undefined4 param_2); undefined4 * __thiscall FUN_102768e0(byte param_2); undefined4 * __thiscall FUN_10276b50(byte param_2); undefined4 * __thiscall FUN_10276b90(byte param_2); void __thiscall FUN_10277340(undefined4 *param_2); void __thiscall FUN_102774a0(char param_2); void __thiscall FUN_10277550(char param_2); void __thiscall FUN_10277570(char param_2); void __thiscall FUN_102776d0(undefined4 param_2,undefined4 param_3); void __thiscall FUN_10277c50(undefined4 *param_2); void __thiscall FUN_10277c80(undefined4 *param_2); void __thiscall FUN_10278c90(undefined4 param_2,undefined4 param_3); int * __thiscall FUN_10278e40(int *param_2); uint __thiscall FUN_10279ac0(uint param_2); void __thiscall FUN_1027e440(undefined4 param_2); void __thiscall FUN_1027e7c0(int param_2); void __thiscall FUN_1027e7f0(int param_2); void __thiscall FUN_1027e820(int param_2); undefined4 * __thiscall FUN_1027eac0(int param_2); undefined4 * __thiscall FUN_1027fff0(byte param_2); undefined4 * __thiscall FUN_10280030(byte param_2); undefined4 * __thiscall FUN_10280070(byte param_2); undefined4 * __thiscall FUN_102801f0(byte param_2); undefined4 * __thiscall FUN_10280220(byte param_2); undefined4 * __thiscall FUN_10280250(byte param_2); undefined4 * __thiscall FUN_10280480(byte param_2); void __thiscall FUN_10280e10(undefined4 param_2); void __thiscall FUN_10280ff0(int *param_2); void __thiscall FUN_10281040(int *param_2); void __thiscall FUN_10281090(int *param_2); void __thiscall FUN_102810e0(int *param_2); void __thiscall FUN_10281130(int param_2); void __thiscall FUN_10281160(int param_2); void __thiscall FUN_10281190(int param_2); undefined4 __thiscall FUN_10283430(uint param_2,int param_3); undefined4 * __thiscall FUN_102852d0(int *param_2); undefined4 * __thiscall FUN_102852f0(int *param_2); undefined4 * __thiscall FUN_102861c0(byte param_2); undefined4 * __thiscall FUN_10286290(byte param_2); void __thiscall FUN_10286570(undefined4 param_2,undefined4 param_3); int * __thiscall FUN_102878a0(int *param_2); void __thiscall FUN_1028bfd0(undefined4 param_2); void __thiscall FUN_1028c000(undefined4 param_2); int __thiscall FUN_1028c290(undefined4 param_2,undefined4 param_3); void __thiscall FUN_1028c9f0(int *param_2,SCStr *param_3); undefined4 * __thiscall FUN_1028ccd0(int *param_2); undefined4 * __thiscall FUN_1028ccf0(int *param_2); undefined4 * __thiscall FUN_1028e3d0(byte param_2); undefined4 * __thiscall FUN_1028e410(byte param_2); undefined4 * __thiscall FUN_1028e560(byte param_2); undefined4 * __thiscall FUN_1028e590(byte param_2); undefined4 __thiscall FUN_1028e5c0(byte param_2); undefined4 __thiscall FUN_1028e5f0(byte param_2); void __thiscall FUN_1028fa20(int *param_2); void __thiscall FUN_1028fa70(int *param_2); void __thiscall FUN_1028fac0(int *param_2); int * __thiscall FUN_102907a0(int *param_2); void __thiscall FUN_10294670(undefined4 param_2); undefined4 * __thiscall FUN_102951c0(int *param_2); undefined4 * __thiscall FUN_102972e0(byte param_2); undefined4 * __thiscall FUN_10297310(byte param_2); undefined4 * __thiscall FUN_10297340(byte param_2); undefined4 * __thiscall FUN_10297380(byte param_2); undefined4 * __thiscall FUN_102973c0(byte param_2); undefined4 __thiscall FUN_10297400(byte param_2); undefined4 __thiscall FUN_102974e0(byte param_2); undefined4 __thiscall FUN_10297510(byte param_2); undefined4 * __thiscall FUN_10297540(byte param_2); undefined4 __thiscall FUN_10297630(byte param_2); undefined4 * __thiscall FUN_10297660(byte param_2); undefined4 * __thiscall FUN_10297690(byte param_2); undefined4 * __thiscall FUN_102976c0(byte param_2); undefined4 * __thiscall FUN_102976f0(byte param_2); undefined4 * __thiscall FUN_10297720(byte param_2); undefined4 * __thiscall FUN_10297750(byte param_2); undefined4 * __thiscall FUN_10297780(byte param_2); undefined4 * __thiscall FUN_102977b0(byte param_2); undefined4 * __thiscall FUN_10297880(byte param_2); uint __thiscall FUN_1029ae60(undefined4 *param_2,int param_3); undefined4 * __thiscall FUN_1029cc40(int *param_2); undefined4 * __thiscall FUN_1029d1b0(byte param_2); undefined4 __thiscall FUN_1029d1f0(byte param_2); undefined4 __thiscall FUN_1029d220(byte param_2); undefined4 * __thiscall FUN_1029d250(byte param_2); undefined4 * __thiscall FUN_1029d280(byte param_2); void __thiscall FUN_1029dce0(uint param_2); void __thiscall FUN_1029dd20(int param_2); void __thiscall FUN_1029dd60(int param_2); undefined4 * __thiscall FUN_1029dea0(int *param_2); undefined4 * __thiscall FUN_1029e170(byte param_2); undefined4 * __thiscall FUN_1029e1b0(byte param_2); undefined4 * __thiscall FUN_1029e1e0(byte param_2); void __thiscall FUN_1029e540(uint param_2,char param_3); uint __thiscall FUN_1029e730(uint param_2); undefined4 * __thiscall FUN_1029f130(int *param_2); undefined4 * __thiscall FUN_1029f8c0(byte param_2); undefined4 * __thiscall FUN_1029f900(byte param_2); void __thiscall FUN_102a0060(undefined4 param_2,undefined4 param_3,undefined4 param_4); void __thiscall FUN_102a0cb0(undefined4 param_2,undefined4 param_3); void __thiscall FUN_102a0ce0(undefined4 param_2,undefined4 param_3); void __thiscall FUN_102a3d30(undefined4 param_2); void __thiscall FUN_102a3d60(undefined4 param_2); int __thiscall FUN_102a3f60(SCStr *param_2); void __thiscall FUN_102a55f0(int param_2); void __thiscall FUN_102a5620(int param_2); undefined4 * __thiscall FUN_102a62b0(int param_2); undefined4 * __thiscall FUN_102a66f0(int *param_2); undefined4 * __thiscall FUN_102abbe0(byte param_2); undefined4 * __thiscall FUN_102abc20(byte param_2); undefined4 * __thiscall FUN_102abc60(byte param_2); undefined4 * __thiscall FUN_102abe50(byte param_2); undefined4 __thiscall FUN_102abe90(byte param_2); undefined4 __thiscall FUN_102abec0(byte param_2); undefined4 __thiscall FUN_102abfb0(byte param_2); undefined4 __thiscall FUN_102ac0c0(byte param_2); undefined4 * __thiscall FUN_102ac0f0(byte param_2); undefined4 * __thiscall FUN_102ac120(byte param_2); undefined4 * __thiscall FUN_102ac150(byte param_2); undefined4 * __thiscall FUN_102ac180(byte param_2); undefined4 __thiscall FUN_102ac1b0(byte param_2); undefined4 __thiscall FUN_102ac1e0(byte param_2); undefined4 __thiscall FUN_102ac210(byte param_2); undefined4 * __thiscall FUN_102ac240(byte param_2); void __thiscall FUN_102aca50(undefined4 param_2,undefined4 param_3); void __thiscall FUN_102aca70(undefined4 param_2,undefined4 param_3); void __thiscall FUN_102addb0(int *param_2); void __thiscall FUN_102ade00(int *param_2); void __thiscall FUN_102ade50(int *param_2); void __thiscall FUN_102adea0(int *param_2); void __thiscall FUN_102adef0(int *param_2); void __thiscall FUN_102adf40(int *param_2); void __thiscall FUN_102adf90(int *param_2); void __thiscall FUN_102adfe0(int *param_2); void __thiscall FUN_102ae030(int param_2); void __thiscall FUN_102ae060(int param_2); int * __thiscall FUN_102af250(int *param_2); undefined4 __thiscall FUN_102afaa0(undefined4 param_2,undefined4 param_3); int * __thiscall FUN_102b09e0(int *param_2); int * __thiscall FUN_102b0a00(int *param_2); int * __thiscall FUN_102b0d90(int *param_2); int * __thiscall FUN_102b11f0(int *param_2); void __thiscall FUN_102b8780(int param_2); void __thiscall FUN_102bcb00(undefined4 param_2); undefined4 * __thiscall FUN_102bd160(int *param_2); undefined4 * __thiscall FUN_102bde40(byte param_2); undefined4 * __thiscall FUN_102bdf00(byte param_2); int * __thiscall FUN_102bfae0(int *param_2); int * __thiscall FUN_102bfb00(int *param_2); undefined4 * __thiscall FUN_102c02c0(int *param_2); undefined4 * __thiscall FUN_102c04e0(byte param_2); undefined4 * __thiscall FUN_102c0520(byte param_2); int * __thiscall FUN_102c0950(int *param_2); void __thiscall FUN_102c1170(int param_2); undefined4 * __thiscall FUN_102c18f0(byte param_2); undefined4 * __thiscall FUN_102c1930(byte param_2); undefined4 * __thiscall FUN_102c1a20(byte param_2); void __thiscall FUN_102c1b30(undefined4 *param_2); void __thiscall FUN_102c1b50(char param_2); void __thiscall FUN_102c1ba0(undefined4 *param_2); void __thiscall FUN_102c1c10(int param_2); void __thiscall FUN_102c3680(int param_2); void __thiscall FUN_102c36b0(int param_2); undefined4 * __thiscall FUN_102c3c10(int *param_2); undefined4 * __thiscall FUN_102c3c30(int *param_2); undefined4 * __thiscall FUN_102c3c50(int *param_2); undefined4 * __thiscall FUN_102c3c70(int *param_2); undefined4 * __thiscall FUN_102c55f0(byte param_2); undefined4 * __thiscall FUN_102c5630(byte param_2); undefined4 * __thiscall FUN_102c5670(byte param_2); undefined4 * __thiscall FUN_102c56b0(byte param_2); undefined4 __thiscall FUN_102c56f0(byte param_2); undefined4 __thiscall FUN_102c5720(byte param_2); undefined4 * __thiscall FUN_102c57f0(byte param_2); undefined4 * __thiscall FUN_102c5820(byte param_2); undefined4 * __thiscall FUN_102c5850(byte param_2); undefined4 * __thiscall FUN_102c58a0(byte param_2); undefined4 * __thiscall FUN_102c58d0(byte param_2); undefined4 * __thiscall FUN_102c5900(byte param_2); undefined4 __thiscall FUN_102c5940(byte param_2); undefined4 * __thiscall FUN_102c5c40(byte param_2); void __thiscall FUN_102c6970(int *param_2); void __thiscall FUN_102c69c0(int *param_2); void __thiscall FUN_102c6a10(int *param_2); void __thiscall FUN_102c6a60(int *param_2); void __thiscall FUN_102c6ab0(int *param_2); void __thiscall FUN_102c6b00(int param_2); void __thiscall FUN_102c6b30(int param_2); SCStr * __thiscall FUN_102c75d0(SCStr *param_2); int * __thiscall FUN_102c81f0(int *param_2); void __thiscall FUN_102ca7e0(int param_2); void __thiscall FUN_102ca820(int param_2); void __thiscall FUN_102cb180(undefined4 param_2); int __thiscall FUN_102cb280(uint *param_2); undefined4 * __thiscall FUN_102cbfc0(int *param_2); undefined4 * __thiscall FUN_102cbfe0(int *param_2); undefined4 * __thiscall FUN_102cd830(byte param_2); undefined4 * __thiscall FUN_102cd870(byte param_2); undefined4 __thiscall FUN_102cd8b0(byte param_2); undefined4 __thiscall FUN_102cd8e0(byte param_2); undefined4 * __thiscall FUN_102cd9a0(byte param_2); undefined4 * __thiscall FUN_102cda80(byte param_2); undefined4 * __thiscall FUN_102cdab0(byte param_2); undefined4 * __thiscall FUN_102cdae0(byte param_2); undefined4 __thiscall FUN_102cdb20(byte param_2); void __thiscall FUN_102cdca0(undefined4 param_2,undefined4 param_3); void __thiscall FUN_102cf0c0(int *param_2); void __thiscall FUN_102cf110(int *param_2); void __thiscall FUN_102cf160(int *param_2); void __thiscall FUN_102cf2a0(int param_2); undefined4 * __thiscall FUN_102d45b0(byte param_2); undefined4 __thiscall FUN_102d45f0(byte param_2); undefined4 * __thiscall FUN_102d4620(byte param_2); undefined4 * __thiscall FUN_102d4660(byte param_2); undefined4 __thiscall FUN_102d4690(byte param_2); void __thiscall FUN_102d48a0(undefined4 *param_2); void __thiscall FUN_102d48c0(char param_2); void __thiscall FUN_102d4ea0(undefined4 *param_2); void __thiscall FUN_102d5180(int *param_2); void __thiscall FUN_102d51d0(int *param_2); void __thiscall FUN_102d5220(int *param_2); void __thiscall FUN_102d5270(int *param_2); void __thiscall FUN_102d5640(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_102d6060(undefined4 *param_2); void __thiscall FUN_102d8760(int param_2); undefined4 * __thiscall FUN_102d8ef0(int param_2); undefined4 * __thiscall FUN_102d8f80(int *param_2); undefined4 * __thiscall FUN_102da090(byte param_2); undefined4 * __thiscall FUN_102da0d0(byte param_2); undefined4 * __thiscall FUN_102da300(byte param_2); void __thiscall FUN_102dc570(int param_2); undefined4 * __thiscall FUN_102dc7a0(int *param_2); undefined4 * __thiscall FUN_102dd260(byte param_2); undefined4 * __thiscall FUN_102dd2a0(byte param_2); undefined4 * __thiscall FUN_102dd2f0(byte param_2); undefined4 * __thiscall FUN_102dd340(byte param_2); undefined4 * __thiscall FUN_102dd370(byte param_2); undefined4 * __thiscall FUN_102dd3a0(byte param_2); undefined4 * __thiscall FUN_102dd3d0(byte param_2); void __thiscall FUN_102dd5c0(undefined4 *param_2); void __thiscall FUN_102dd620(char param_2); void __thiscall FUN_102dd680(undefined4 *param_2); void __thiscall FUN_102dd790(int *param_2); void __thiscall FUN_102dd7e0(int param_2); void __thiscall FUN_102de670(char *param_2,undefined4 param_3); void __thiscall FUN_102df160(undefined4 param_2); undefined4 * __thiscall FUN_102df580(int *param_2); undefined4 * __thiscall FUN_102df5a0(int *param_2); undefined4 * __thiscall FUN_102df810(byte param_2); undefined4 * __thiscall FUN_102df850(byte param_2); int * __thiscall FUN_102e4c00(int *param_2); void __thiscall FUN_102e6a80(undefined4 param_2); void __thiscall FUN_102e6ab0(undefined4 param_2); int __thiscall FUN_102e6c60(undefined4 param_2,undefined4 param_3); int __thiscall FUN_102e6ca0(SCStr *param_2); void __thiscall FUN_102e9310(int param_2); void __thiscall FUN_102e9340(int param_2); void __thiscall FUN_102e9370(int param_2); void __thiscall FUN_102e93a0(int param_2); void __thiscall FUN_102e97a0(int *param_2,undefined4 param_3); undefined4 * __thiscall FUN_102ea430(int *param_2); undefined4 * __thiscall FUN_102ea450(int *param_2); undefined4 * __thiscall FUN_102ea470(int *param_2); undefined4 * __thiscall FUN_102ea490(int *param_2); undefined4 * __thiscall FUN_102ee650(byte param_2); undefined4 * __thiscall FUN_102ee690(byte param_2); undefined4 * __thiscall FUN_102ee6d0(byte param_2); undefined4 * __thiscall FUN_102ee710(byte param_2); undefined4 __thiscall FUN_102ee9d0(byte param_2); undefined4 * __thiscall FUN_102eea00(byte param_2); undefined4 * __thiscall FUN_102eebf0(byte param_2); undefined4 * __thiscall FUN_102eed40(byte param_2); undefined4 * __thiscall FUN_102eed80(byte param_2); undefined4 * __thiscall FUN_102eedb0(byte param_2); undefined4 * __thiscall FUN_102eede0(byte param_2); undefined4 * __thiscall FUN_102eee10(byte param_2); undefined4 * __thiscall FUN_102eee40(byte param_2); undefined4 __thiscall FUN_102ef180(byte param_2); void __thiscall FUN_102f08e0(int *param_2); void __thiscall FUN_102f0930(int *param_2); void __thiscall FUN_102f0980(int *param_2); void __thiscall FUN_102f09d0(int *param_2); void __thiscall FUN_102f0a20(int *param_2); void __thiscall FUN_102f0a70(int *param_2); void __thiscall FUN_102f0ac0(int *param_2); void __thiscall FUN_102f0b10(int param_2); void __thiscall FUN_102f0b40(int param_2); void __thiscall FUN_102f0b70(int param_2); void __thiscall FUN_102f0ba0(int param_2); void __thiscall FUN_102f0dc0(undefined4 param_2,undefined4 param_3); int * __thiscall FUN_102f4e60(int *param_2); int * __thiscall FUN_102f5410(int *param_2); int * __thiscall FUN_102f55f0(int *param_2); void __thiscall FUN_102f57a0(void *param_2); int * __thiscall FUN_102f57c0(int *param_2); int * __thiscall FUN_102f5800(int *param_2); int * __thiscall FUN_102f5b60(int *param_2); SCStr * __thiscall FUN_102f7470(SCStr *param_2); int * __thiscall FUN_102f7900(int *param_2); int * __thiscall FUN_102f9200(int *param_2); int * __thiscall FUN_102f9240(int *param_2); int * __thiscall FUN_102f9270(int *param_2); int * __thiscall FUN_102f92a0(int *param_2); int * __thiscall FUN_102f92d0(int *param_2); int * __thiscall FUN_102fcca0(int *param_2); void __thiscall FUN_10302000(undefined4 *param_2); undefined4 * __thiscall FUN_103027b0(byte param_2); undefined4 * __thiscall FUN_103028b0(byte param_2); int __thiscall FUN_10303fb0(SCStr *param_2); undefined4 * __thiscall FUN_103069b0(byte param_2); undefined4 * __thiscall FUN_103069e0(byte param_2); undefined4 * __thiscall FUN_10306a10(byte param_2); undefined4 __thiscall FUN_10306a50(byte param_2); undefined4 __thiscall FUN_10306a80(byte param_2); undefined4 __thiscall FUN_10306ab0(byte param_2); undefined4 * __thiscall FUN_10306ae0(byte param_2); undefined4 * __thiscall FUN_10306d50(byte param_2); void __thiscall FUN_10307120(undefined4 *param_2); void __thiscall FUN_10307140(char param_2); void __thiscall FUN_10307d70(undefined4 *param_2); void __thiscall FUN_1030b770(undefined2 param_2); int __thiscall FUN_1030d3f0(undefined4 param_2,undefined4 param_3); int __thiscall FUN_1030d430(undefined4 param_2,undefined4 param_3); int __thiscall FUN_10310330(byte param_2); undefined4 * __thiscall FUN_103160e0(int *param_2); undefined4 * __thiscall FUN_10316100(int *param_2); undefined4 * __thiscall FUN_10316120(int *param_2); undefined4 * __thiscall FUN_10316140(int *param_2); undefined4 * __thiscall FUN_10316160(int *param_2); undefined4 * __thiscall FUN_10316180(int *param_2); undefined4 * __thiscall FUN_103161a0(int *param_2); undefined4 * __thiscall FUN_103161c0(int *param_2); undefined4 * __thiscall FUN_103161e0(int *param_2); undefined4 * __thiscall FUN_10316200(int *param_2); undefined4 * __thiscall FUN_10316220(int *param_2); undefined4 * __thiscall FUN_10319230(byte param_2); undefined4 * __thiscall FUN_10319260(byte param_2); undefined4 * __thiscall FUN_10319290(byte param_2); undefined4 * __thiscall FUN_103192c0(byte param_2); undefined4 * __thiscall FUN_103192f0(byte param_2); undefined4 * __thiscall FUN_10319320(byte param_2); undefined4 * __thiscall FUN_10319360(byte param_2); undefined4 * __thiscall FUN_103193a0(byte param_2); undefined4 * __thiscall FUN_103193e0(byte param_2); undefined4 * __thiscall FUN_10319420(byte param_2); undefined4 * __thiscall FUN_10319460(byte param_2); undefined4 * __thiscall FUN_103194a0(byte param_2); undefined4 __thiscall FUN_103194e0(byte param_2); undefined4 __thiscall FUN_10319510(byte param_2); undefined4 __thiscall FUN_10319540(byte param_2); undefined4 __thiscall FUN_10319570(byte param_2); undefined4 __thiscall FUN_103195a0(byte param_2); undefined4 * __thiscall FUN_103195d0(byte param_2); undefined4 * __thiscall FUN_10319620(byte param_2); undefined4 * __thiscall FUN_10319650(byte param_2); undefined4 * __thiscall FUN_103196a0(byte param_2); undefined4 * __thiscall FUN_103196f0(byte param_2); undefined4 * __thiscall FUN_10319740(byte param_2); undefined4 * __thiscall FUN_10319790(byte param_2); undefined4 * __thiscall FUN_103197e0(byte param_2); undefined4 * __thiscall FUN_10319830(byte param_2); undefined4 * __thiscall FUN_10319880(byte param_2); undefined4 * __thiscall FUN_103198d0(byte param_2); undefined4 __thiscall FUN_10319920(byte param_2); undefined4 * __thiscall FUN_10319950(byte param_2); undefined4 * __thiscall FUN_10319980(byte param_2); undefined4 * __thiscall FUN_103199b0(byte param_2); undefined4 * __thiscall FUN_103199e0(byte param_2); undefined4 * __thiscall FUN_10319a10(byte param_2); undefined4 * __thiscall FUN_10319a40(byte param_2); undefined4 * __thiscall FUN_10319a70(byte param_2); undefined4 * __thiscall FUN_10319aa0(byte param_2); undefined4 * __thiscall FUN_10319ad0(byte param_2); undefined4 * __thiscall FUN_10319b10(byte param_2); undefined4 * __thiscall FUN_10319b50(byte param_2); undefined4 * __thiscall FUN_10319b90(byte param_2); undefined4 * __thiscall FUN_10319bd0(byte param_2); void __thiscall FUN_1031ae80(int *param_2); void __thiscall FUN_1031aed0(int *param_2); void __thiscall FUN_1031af20(int *param_2); void __thiscall FUN_1031af70(int *param_2); void __thiscall FUN_1031afc0(int *param_2); SCStr * __thiscall FUN_10320820(SCStr *param_2); SCStr * __thiscall FUN_103208b0(SCStr *param_2); SCStr * __thiscall FUN_10320a30(SCStr *param_2); SCStr * __thiscall FUN_10320aa0(SCStr *param_2); SCStr * __thiscall FUN_10322fe0(SCStr *param_2); SCStr * __thiscall FUN_10323df0(SCStr *param_2); int * __thiscall FUN_10328ea0(int *param_2); int * __thiscall FUN_10328f00(int *param_2); undefined4 __thiscall FUN_1032abe0(undefined4 param_2); undefined4 __thiscall FUN_1032ac10(undefined4 param_2); undefined4 __thiscall FUN_1032ad70(undefined4 param_2); undefined4 __thiscall FUN_1032ada0(undefined4 param_2); undefined1 __thiscall FUN_1032b1c0(undefined4 param_2); void __thiscall FUN_1032f1c0(undefined4 param_2); void __thiscall FUN_1032f1f0(undefined4 param_2); void __thiscall FUN_1032f220(undefined4 param_2); int __thiscall FUN_1032f520(int *param_2); int * __thiscall FUN_10333790(int param_2); undefined4 * __thiscall FUN_10333900(int *param_2); undefined4 * __thiscall FUN_10333940(int *param_2); void __thiscall FUN_10337ac0(int *param_2); void __thiscall FUN_10337c90(int *param_2); int __thiscall FUN_10337dc0(byte param_2); int __thiscall FUN_10337e10(byte param_2); int __thiscall FUN_10337e60(byte param_2); int __thiscall FUN_10337eb0(byte param_2); int __thiscall FUN_10337f00(byte param_2); int __thiscall FUN_103382e0(byte param_2); undefined4 __thiscall FUN_10338330(byte param_2); undefined4 __thiscall FUN_10338360(byte param_2); undefined4 __thiscall FUN_10338390(byte param_2); undefined4 __thiscall FUN_103383c0(byte param_2); undefined4 __thiscall FUN_103383f0(byte param_2); undefined4 __thiscall FUN_10338420(byte param_2); undefined4 __thiscall FUN_103385f0(byte param_2); undefined4 __thiscall FUN_10338620(byte param_2); undefined4 __thiscall FUN_10338650(byte param_2); void __thiscall FUN_10338cd0(undefined4 *param_2); void __thiscall FUN_10338da0(undefined4 *param_2); void __thiscall FUN_10338dc0(undefined4 *param_2); void __thiscall FUN_10338df0(undefined4 *param_2); void __thiscall FUN_10338e20(undefined4 *param_2); void __thiscall FUN_10338e40(undefined4 *param_2); void __thiscall FUN_10338e60(undefined4 *param_2); void __thiscall FUN_10338e80(undefined4 *param_2); void __thiscall FUN_10338ea0(undefined4 *param_2); void __thiscall FUN_10338f60(undefined4 *param_2); void __thiscall FUN_10339010(undefined4 *param_2); void __thiscall FUN_10339030(undefined4 *param_2); void __thiscall FUN_10339050(char param_2); void __thiscall FUN_103390a0(char param_2); void __thiscall FUN_103390f0(char param_2); void __thiscall FUN_10339140(char param_2); void __thiscall FUN_10339190(char param_2); void __thiscall FUN_103391e0(char param_2); void __thiscall FUN_103392a0(char param_2); void __thiscall FUN_103392c0(char param_2); void __thiscall FUN_103392e0(char param_2); void __thiscall FUN_10339300(char param_2); void __thiscall FUN_10339320(char param_2); void __thiscall FUN_10339340(char param_2); void __thiscall FUN_10339360(char param_2); void __thiscall FUN_10339380(char param_2); void __thiscall FUN_103393a0(char param_2); void __thiscall FUN_103393c0(char param_2); void __thiscall FUN_10339480(char param_2); void __thiscall FUN_10339520(char param_2); void __thiscall FUN_10339540(char param_2); void __thiscall FUN_10339560(undefined4 param_2,undefined4 param_3); void __thiscall FUN_10339670(undefined4 *param_2); void __thiscall FUN_103396a0(undefined4 *param_2); void __thiscall FUN_103396d0(undefined4 *param_2); void __thiscall FUN_10339700(undefined4 *param_2); void __thiscall FUN_10339740(undefined4 *param_2); void __thiscall FUN_10339820(undefined4 *param_2); void __thiscall FUN_10339840(undefined4 *param_2); void __thiscall FUN_10339870(undefined4 *param_2); void __thiscall FUN_10339890(undefined4 *param_2); void __thiscall FUN_103398b0(undefined4 *param_2); void __thiscall FUN_103398e0(undefined4 *param_2); void __thiscall FUN_10339900(undefined4 *param_2); void __thiscall FUN_10339920(undefined4 *param_2); void __thiscall FUN_10339940(undefined4 *param_2); void __thiscall FUN_10339960(undefined4 *param_2); void __thiscall FUN_1033ace0(undefined4 *param_2); void __thiscall FUN_1033ad10(undefined4 *param_2); void __thiscall FUN_1033ad30(undefined4 *param_2); void __thiscall FUN_1033ad60(undefined4 *param_2); void __thiscall FUN_1033ad90(undefined4 *param_2); void __thiscall FUN_1033adb0(undefined4 *param_2); void __thiscall FUN_1033add0(undefined4 *param_2); void __thiscall FUN_1033adf0(undefined4 *param_2); void __thiscall FUN_1033ae10(undefined4 *param_2); void __thiscall FUN_1033ae40(undefined4 *param_2); void __thiscall FUN_1033ae70(undefined4 *param_2); void __thiscall FUN_1033ae90(undefined4 *param_2); int __thiscall FUN_10344860(undefined4 param_2,undefined4 param_3); int __thiscall FUN_103448a0(int *param_2); undefined4 __thiscall FUN_103475a0(byte param_2); void __thiscall FUN_10349ad0(undefined4 param_2); SCStr * __thiscall FUN_1034e100(SCStr *param_2); void __thiscall FUN_10353930(undefined4 param_2); void __thiscall FUN_10353960(undefined4 param_2); void __thiscall FUN_10353990(undefined4 param_2); int __thiscall FUN_10353be0(undefined4 param_2,undefined4 param_3); int __thiscall FUN_10353c20(SCStr *param_2); void __thiscall FUN_103581f0(int param_2); void __thiscall FUN_10358220(int param_2); void __thiscall FUN_10358250(int param_2); void __thiscall FUN_10358280(int param_2); void __thiscall FUN_103582b0(int param_2); undefined4 * __thiscall FUN_1035b840(int *param_2); undefined4 * __thiscall FUN_1035b860(int *param_2); undefined4 * __thiscall FUN_1035b8a0(int *param_2); undefined4 * __thiscall FUN_1035b8c0(int *param_2); undefined4 * __thiscall FUN_1035b8e0(int *param_2); undefined4 * __thiscall FUN_1035b900(int *param_2); undefined4 * __thiscall FUN_1035b920(int *param_2); undefined4 * __thiscall FUN_1035b940(int *param_2); undefined4 * __thiscall FUN_1035b960(int *param_2); undefined4 * __thiscall FUN_1035b9a0(int *param_2); undefined4 * __thiscall FUN_1035b9c0(int *param_2); undefined4 * __thiscall FUN_1035b9e0(int *param_2); undefined4 * __thiscall FUN_1035ba00(int *param_2); undefined4 * __thiscall FUN_1035ba20(int *param_2); undefined4 * __thiscall FUN_1035ba40(int *param_2); undefined4 * __thiscall FUN_1035cb80(undefined4 *param_2); undefined4 * __thiscall FUN_10366570(int *param_2); undefined4 * __thiscall FUN_10366610(undefined4 *param_2); undefined4 * __thiscall FUN_10367d60(byte param_2); undefined4 * __thiscall FUN_10367d90(byte param_2); undefined4 * __thiscall FUN_10367dc0(byte param_2); undefined4 * __thiscall FUN_10367df0(byte param_2); undefined4 * __thiscall FUN_10368450(byte param_2); undefined4 * __thiscall FUN_10368490(byte param_2); undefined4 __thiscall FUN_10368770(byte param_2); undefined4 __thiscall FUN_103687a0(byte param_2); int __thiscall FUN_10368e50(byte param_2); undefined4 __thiscall FUN_10368f30(byte param_2); undefined4 * __thiscall FUN_103690c0(byte param_2); undefined4 * __thiscall FUN_10369100(byte param_2); undefined4 * __thiscall FUN_10369140(byte param_2); undefined4 * __thiscall FUN_10369170(byte param_2); undefined4 * __thiscall FUN_103691c0(byte param_2); undefined4 * __thiscall FUN_10369210(byte param_2); undefined4 __thiscall FUN_10369240(byte param_2); undefined4 * __thiscall FUN_10369370(byte param_2); undefined4 * __thiscall FUN_103693a0(byte param_2); undefined4 * __thiscall FUN_103693d0(byte param_2); undefined4 * __thiscall FUN_10369420(byte param_2); undefined4 * __thiscall FUN_10369470(byte param_2); undefined4 * __thiscall FUN_103694a0(byte param_2); undefined4 * __thiscall FUN_103694d0(byte param_2); undefined4 * __thiscall FUN_10369500(byte param_2); undefined4 * __thiscall FUN_10369530(byte param_2); undefined4 * __thiscall FUN_10369560(byte param_2); undefined4 * __thiscall FUN_10369590(byte param_2); undefined4 * __thiscall FUN_103695c0(byte param_2); };
+struct Recovered_Bulk { char _pad; undefined4 __thiscall FUN_102611e0(undefined4 param_2); undefined4 __thiscall FUN_10261210(undefined4 param_2); undefined4 __thiscall FUN_102618d0(undefined4 *param_2); bool __thiscall FUN_10261e70(SCStr *param_2); bool __thiscall FUN_102620d0(SCStr *param_2); void __thiscall FUN_10262790(undefined4 param_2); void __thiscall FUN_10264350(undefined4 param_2); int __thiscall FUN_10264440(SCStr *param_2); void __thiscall FUN_102650c0(undefined4 *param_2); void __thiscall FUN_10265110(undefined4 *param_2); undefined4 * __thiscall FUN_10265840(int *param_2); undefined4 * __thiscall FUN_102658b0(int *param_2); undefined4 * __thiscall FUN_102658f0(int *param_2); undefined4 * __thiscall FUN_10265960(int *param_2); undefined4 * __thiscall FUN_102659a0(int *param_2); undefined4 * __thiscall FUN_10265a00(int *param_2); undefined4 * __thiscall FUN_10267ef0(byte param_2); undefined4 * __thiscall FUN_10267f30(byte param_2); undefined4 * __thiscall FUN_10267f70(byte param_2); undefined4 * __thiscall FUN_102681e0(byte param_2); undefined4 * __thiscall FUN_10268210(byte param_2); undefined4 * __thiscall FUN_10268240(byte param_2); undefined4 __thiscall FUN_10268270(byte param_2); undefined4 __thiscall FUN_102682a0(byte param_2); undefined4 __thiscall FUN_102682d0(byte param_2); undefined4 __thiscall FUN_10268300(byte param_2); void __thiscall FUN_10268540(undefined4 *param_2); void __thiscall FUN_10268600(undefined4 *param_2); void __thiscall FUN_10268620(char param_2); void __thiscall FUN_102686d0(char param_2); void __thiscall FUN_102686f0(undefined4 param_2,undefined4 param_3); void __thiscall FUN_10268710(undefined4 param_2,undefined4 param_3); void __thiscall FUN_10268cf0(undefined4 *param_2); void __thiscall FUN_10268d20(undefined4 *param_2); int * __thiscall FUN_1026b010(int *param_2); int * __thiscall FUN_1026bd40(int *param_2,int param_3); int * __thiscall FUN_1026bdc0(int *param_2,int param_3); void __thiscall FUN_1026cc60(undefined4 *param_2); void __thiscall FUN_1026ccb0(undefined4 *param_2); undefined4 * __thiscall FUN_1026d880(int *param_2); undefined4 * __thiscall FUN_1026dbb0(byte param_2); undefined4 * __thiscall FUN_1026dbf0(byte param_2); void __thiscall FUN_1026ecb0(undefined4 *param_2); undefined4 * __thiscall FUN_1026f0c0(int *param_2); undefined4 * __thiscall FUN_1026f170(int *param_2); undefined4 * __thiscall FUN_102707d0(byte param_2); undefined4 * __thiscall FUN_102708a0(byte param_2); undefined4 * __thiscall FUN_102708e0(byte param_2); undefined4 __thiscall FUN_10270910(byte param_2); void __thiscall FUN_10270940(undefined4 *param_2); void __thiscall FUN_10270960(undefined4 *param_2); void __thiscall FUN_10270980(char param_2); void __thiscall FUN_102709a0(char param_2); void __thiscall FUN_10270b60(undefined4 *param_2); void __thiscall FUN_10270b80(undefined4 *param_2); void __thiscall FUN_102712c0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_102712f0(undefined4 *param_2); int * __thiscall FUN_10271350(int *param_2,int param_3); void __thiscall FUN_102717b0(undefined4 *param_2); void __thiscall FUN_102728c0(int *param_2); void __thiscall FUN_10273f20(undefined4 *param_2); undefined4 * __thiscall FUN_10274a50(int *param_2); undefined4 * __thiscall FUN_10274ae0(int *param_2); undefined4 * __thiscall FUN_10274b50(int *param_2); undefined4 __thiscall FUN_102750c0(undefined4 param_2); undefined4 * __thiscall FUN_102768e0(byte param_2); undefined4 * __thiscall FUN_10276b50(byte param_2); undefined4 * __thiscall FUN_10276b90(byte param_2); void __thiscall FUN_10277340(undefined4 *param_2); void __thiscall FUN_102774a0(char param_2); void __thiscall FUN_10277550(char param_2); void __thiscall FUN_10277570(char param_2); void __thiscall FUN_102776d0(undefined4 param_2,undefined4 param_3); void __thiscall FUN_10277c50(undefined4 *param_2); void __thiscall FUN_10278c90(undefined4 param_2,undefined4 param_3); int * __thiscall FUN_10278e40(int *param_2); void __thiscall FUN_10279690(undefined4 *param_2); uint __thiscall FUN_10279ac0(uint param_2); void __thiscall FUN_1027e440(undefined4 param_2); void __thiscall FUN_1027e7c0(int param_2); void __thiscall FUN_1027e7f0(int param_2); void __thiscall FUN_1027e820(int param_2); undefined4 * __thiscall FUN_1027eac0(int param_2); undefined4 * __thiscall FUN_1027eb40(int *param_2); undefined4 * __thiscall FUN_1027eba0(int *param_2); undefined4 * __thiscall FUN_1027ec00(int *param_2); undefined4 * __thiscall FUN_1027fff0(byte param_2); undefined4 * __thiscall FUN_10280030(byte param_2); undefined4 * __thiscall FUN_10280070(byte param_2); undefined4 * __thiscall FUN_102801f0(byte param_2); undefined4 * __thiscall FUN_10280220(byte param_2); undefined4 * __thiscall FUN_10280250(byte param_2); undefined4 * __thiscall FUN_10280480(byte param_2); void __thiscall FUN_10280e10(undefined4 param_2); void __thiscall FUN_10281130(int param_2); void __thiscall FUN_10281160(int param_2); void __thiscall FUN_10281190(int param_2); undefined4 __thiscall FUN_10283430(uint param_2,int param_3); void __thiscall FUN_10284df0(undefined4 *param_2); void __thiscall FUN_10284e40(undefined4 *param_2); undefined4 * __thiscall FUN_10285230(int *param_2); undefined4 * __thiscall FUN_10285290(int *param_2); undefined4 * __thiscall FUN_102852d0(int *param_2); undefined4 * __thiscall FUN_102852f0(int *param_2); undefined4 * __thiscall FUN_102861c0(byte param_2); undefined4 * __thiscall FUN_10286290(byte param_2); void __thiscall FUN_10286570(undefined4 param_2,undefined4 param_3); int * __thiscall FUN_102878a0(int *param_2); void __thiscall FUN_1028a5e0(undefined4 *param_2); void __thiscall FUN_1028a630(undefined4 *param_2); void __thiscall FUN_1028bfd0(undefined4 param_2); void __thiscall FUN_1028c000(undefined4 param_2); int __thiscall FUN_1028c290(undefined4 param_2,undefined4 param_3); void __thiscall FUN_1028c9f0(int *param_2,SCStr *param_3); undefined4 * __thiscall FUN_1028cc30(int *param_2); undefined4 * __thiscall FUN_1028cc90(int *param_2); undefined4 * __thiscall FUN_1028ccd0(int *param_2); undefined4 * __thiscall FUN_1028ccf0(int *param_2); undefined4 * __thiscall FUN_1028e3d0(byte param_2); undefined4 * __thiscall FUN_1028e410(byte param_2); undefined4 * __thiscall FUN_1028e560(byte param_2); undefined4 * __thiscall FUN_1028e590(byte param_2); undefined4 __thiscall FUN_1028e5c0(byte param_2); undefined4 __thiscall FUN_1028e5f0(byte param_2); int * __thiscall FUN_102907a0(int *param_2); void __thiscall FUN_10294670(undefined4 param_2); undefined4 * __thiscall FUN_102950f0(int *param_2); undefined4 * __thiscall FUN_10295160(int *param_2); undefined4 * __thiscall FUN_102951c0(int *param_2); undefined4 * __thiscall FUN_102972e0(byte param_2); undefined4 * __thiscall FUN_10297310(byte param_2); undefined4 * __thiscall FUN_10297340(byte param_2); undefined4 * __thiscall FUN_10297380(byte param_2); undefined4 * __thiscall FUN_102973c0(byte param_2); undefined4 __thiscall FUN_10297400(byte param_2); undefined4 __thiscall FUN_102974e0(byte param_2); undefined4 __thiscall FUN_10297510(byte param_2); undefined4 * __thiscall FUN_10297540(byte param_2); undefined4 __thiscall FUN_10297630(byte param_2); undefined4 * __thiscall FUN_10297660(byte param_2); undefined4 * __thiscall FUN_10297690(byte param_2); undefined4 * __thiscall FUN_102976c0(byte param_2); undefined4 * __thiscall FUN_102976f0(byte param_2); undefined4 * __thiscall FUN_10297720(byte param_2); undefined4 * __thiscall FUN_10297750(byte param_2); undefined4 * __thiscall FUN_10297780(byte param_2); undefined4 * __thiscall FUN_102977b0(byte param_2); undefined4 * __thiscall FUN_10297880(byte param_2); uint __thiscall FUN_1029ae60(undefined4 *param_2,int param_3); undefined4 * __thiscall FUN_1029cc40(int *param_2); undefined4 * __thiscall FUN_1029d1b0(byte param_2); undefined4 __thiscall FUN_1029d1f0(byte param_2); undefined4 __thiscall FUN_1029d220(byte param_2); undefined4 * __thiscall FUN_1029d250(byte param_2); undefined4 * __thiscall FUN_1029d280(byte param_2); void __thiscall FUN_1029dce0(uint param_2); void __thiscall FUN_1029dd20(int param_2); void __thiscall FUN_1029dd60(int param_2); undefined4 * __thiscall FUN_1029dea0(int *param_2); undefined4 * __thiscall FUN_1029e170(byte param_2); undefined4 * __thiscall FUN_1029e1b0(byte param_2); undefined4 * __thiscall FUN_1029e1e0(byte param_2); void __thiscall FUN_1029e540(uint param_2,char param_3); uint __thiscall FUN_1029e730(uint param_2); undefined4 * __thiscall FUN_1029f0f0(int *param_2); undefined4 * __thiscall FUN_1029f130(int *param_2); undefined4 * __thiscall FUN_1029f8c0(byte param_2); undefined4 * __thiscall FUN_1029f900(byte param_2); void __thiscall FUN_102a0060(undefined4 param_2,undefined4 param_3,undefined4 param_4); void __thiscall FUN_102a0cb0(undefined4 param_2,undefined4 param_3); void __thiscall FUN_102a0ce0(undefined4 param_2,undefined4 param_3); void __thiscall FUN_102a3d30(undefined4 param_2); void __thiscall FUN_102a3d60(undefined4 param_2); int __thiscall FUN_102a3f60(SCStr *param_2); void __thiscall FUN_102a55f0(int param_2); void __thiscall FUN_102a5620(int param_2); void __thiscall FUN_102a5c90(undefined4 *param_2); void __thiscall FUN_102a5ce0(undefined4 *param_2); undefined4 * __thiscall FUN_102a62b0(int param_2); undefined4 * __thiscall FUN_102a6360(int *param_2); undefined4 * __thiscall FUN_102a63c0(int *param_2); undefined4 * __thiscall FUN_102a6470(int *param_2); undefined4 * __thiscall FUN_102a6570(int *param_2); undefined4 * __thiscall FUN_102a65d0(int *param_2); undefined4 * __thiscall FUN_102a6690(int *param_2); undefined4 * __thiscall FUN_102a66f0(int *param_2); undefined4 * __thiscall FUN_102abbe0(byte param_2); undefined4 * __thiscall FUN_102abc20(byte param_2); undefined4 * __thiscall FUN_102abc60(byte param_2); undefined4 * __thiscall FUN_102abe50(byte param_2); undefined4 __thiscall FUN_102abe90(byte param_2); undefined4 __thiscall FUN_102abec0(byte param_2); undefined4 __thiscall FUN_102abfb0(byte param_2); undefined4 __thiscall FUN_102ac0c0(byte param_2); undefined4 * __thiscall FUN_102ac0f0(byte param_2); undefined4 * __thiscall FUN_102ac120(byte param_2); undefined4 * __thiscall FUN_102ac150(byte param_2); undefined4 * __thiscall FUN_102ac180(byte param_2); undefined4 __thiscall FUN_102ac1b0(byte param_2); undefined4 __thiscall FUN_102ac1e0(byte param_2); undefined4 __thiscall FUN_102ac210(byte param_2); undefined4 * __thiscall FUN_102ac240(byte param_2); void __thiscall FUN_102aca50(undefined4 param_2,undefined4 param_3); void __thiscall FUN_102aca70(undefined4 param_2,undefined4 param_3); void __thiscall FUN_102ae030(int param_2); void __thiscall FUN_102ae060(int param_2); int * __thiscall FUN_102af250(int *param_2); undefined4 __thiscall FUN_102afaa0(undefined4 param_2,undefined4 param_3); int * __thiscall FUN_102b09e0(int *param_2); int * __thiscall FUN_102b0a00(int *param_2); int * __thiscall FUN_102b0d90(int *param_2); int * __thiscall FUN_102b11f0(int *param_2); void __thiscall FUN_102b8780(int param_2); void __thiscall FUN_102b88c0(undefined4 *param_2); void __thiscall FUN_102b8910(undefined4 *param_2); void __thiscall FUN_102bcb00(undefined4 param_2); undefined4 * __thiscall FUN_102bd160(int *param_2); undefined4 * __thiscall FUN_102bde40(byte param_2); undefined4 * __thiscall FUN_102bdf00(byte param_2); int * __thiscall FUN_102bfae0(int *param_2); int * __thiscall FUN_102bfb00(int *param_2); undefined4 * __thiscall FUN_102c02c0(int *param_2); undefined4 * __thiscall FUN_102c04e0(byte param_2); undefined4 * __thiscall FUN_102c0520(byte param_2); int * __thiscall FUN_102c0950(int *param_2); void __thiscall FUN_102c1170(int param_2); undefined4 * __thiscall FUN_102c1290(int *param_2); undefined4 * __thiscall FUN_102c18f0(byte param_2); undefined4 * __thiscall FUN_102c1930(byte param_2); undefined4 * __thiscall FUN_102c1a20(byte param_2); void __thiscall FUN_102c1b30(undefined4 *param_2); void __thiscall FUN_102c1b50(char param_2); void __thiscall FUN_102c1ba0(undefined4 *param_2); void __thiscall FUN_102c1c10(int param_2); void __thiscall FUN_102c3680(int param_2); void __thiscall FUN_102c36b0(int param_2); undefined4 * __thiscall FUN_102c3a90(int *param_2); undefined4 * __thiscall FUN_102c3ad0(int *param_2); undefined4 * __thiscall FUN_102c3b30(int *param_2); undefined4 * __thiscall FUN_102c3b70(int *param_2); undefined4 * __thiscall FUN_102c3bb0(int *param_2); undefined4 * __thiscall FUN_102c3c10(int *param_2); undefined4 * __thiscall FUN_102c3c30(int *param_2); undefined4 * __thiscall FUN_102c3c50(int *param_2); undefined4 * __thiscall FUN_102c3c70(int *param_2); undefined4 * __thiscall FUN_102c55f0(byte param_2); undefined4 * __thiscall FUN_102c5630(byte param_2); undefined4 * __thiscall FUN_102c5670(byte param_2); undefined4 * __thiscall FUN_102c56b0(byte param_2); undefined4 __thiscall FUN_102c56f0(byte param_2); undefined4 __thiscall FUN_102c5720(byte param_2); undefined4 * __thiscall FUN_102c57f0(byte param_2); undefined4 * __thiscall FUN_102c5820(byte param_2); undefined4 * __thiscall FUN_102c5850(byte param_2); undefined4 * __thiscall FUN_102c58a0(byte param_2); undefined4 * __thiscall FUN_102c58d0(byte param_2); undefined4 * __thiscall FUN_102c5900(byte param_2); undefined4 __thiscall FUN_102c5940(byte param_2); undefined4 * __thiscall FUN_102c5c40(byte param_2); void __thiscall FUN_102c6b00(int param_2); void __thiscall FUN_102c6b30(int param_2); SCStr * __thiscall FUN_102c75d0(SCStr *param_2); int * __thiscall FUN_102c81f0(int *param_2); void __thiscall FUN_102ca7e0(int param_2); void __thiscall FUN_102ca820(int param_2); void __thiscall FUN_102cb180(undefined4 param_2); int __thiscall FUN_102cb280(uint *param_2); undefined4 * __thiscall FUN_102cbeb0(int *param_2); undefined4 * __thiscall FUN_102cbef0(int *param_2); undefined4 * __thiscall FUN_102cbfc0(int *param_2); undefined4 * __thiscall FUN_102cbfe0(int *param_2); undefined4 * __thiscall FUN_102cd830(byte param_2); undefined4 * __thiscall FUN_102cd870(byte param_2); undefined4 __thiscall FUN_102cd8b0(byte param_2); undefined4 __thiscall FUN_102cd8e0(byte param_2); undefined4 * __thiscall FUN_102cd9a0(byte param_2); undefined4 * __thiscall FUN_102cda80(byte param_2); undefined4 * __thiscall FUN_102cdab0(byte param_2); undefined4 * __thiscall FUN_102cdae0(byte param_2); undefined4 __thiscall FUN_102cdb20(byte param_2); void __thiscall FUN_102cdca0(undefined4 param_2,undefined4 param_3); void __thiscall FUN_102cf2a0(int param_2); undefined4 * __thiscall FUN_102d2f50(int *param_2); undefined4 * __thiscall FUN_102d45b0(byte param_2); undefined4 __thiscall FUN_102d45f0(byte param_2); undefined4 * __thiscall FUN_102d4620(byte param_2); undefined4 * __thiscall FUN_102d4660(byte param_2); undefined4 __thiscall FUN_102d4690(byte param_2); void __thiscall FUN_102d48a0(undefined4 *param_2); void __thiscall FUN_102d48c0(char param_2); void __thiscall FUN_102d4ea0(undefined4 *param_2); void __thiscall FUN_102d5640(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_102d6060(undefined4 *param_2); void __thiscall FUN_102d8760(int param_2); undefined4 * __thiscall FUN_102d8ef0(int param_2); undefined4 * __thiscall FUN_102d8f40(int *param_2); undefined4 * __thiscall FUN_102d8f80(int *param_2); undefined4 * __thiscall FUN_102da090(byte param_2); undefined4 * __thiscall FUN_102da0d0(byte param_2); undefined4 * __thiscall FUN_102da300(byte param_2); void __thiscall FUN_102dc570(int param_2); undefined4 * __thiscall FUN_102dc720(int *param_2); undefined4 * __thiscall FUN_102dc760(int *param_2); undefined4 * __thiscall FUN_102dc7a0(int *param_2); undefined4 * __thiscall FUN_102dd260(byte param_2); undefined4 * __thiscall FUN_102dd2a0(byte param_2); undefined4 * __thiscall FUN_102dd2f0(byte param_2); undefined4 * __thiscall FUN_102dd340(byte param_2); undefined4 * __thiscall FUN_102dd370(byte param_2); undefined4 * __thiscall FUN_102dd3a0(byte param_2); undefined4 * __thiscall FUN_102dd3d0(byte param_2); void __thiscall FUN_102dd5c0(undefined4 *param_2); void __thiscall FUN_102dd620(char param_2); void __thiscall FUN_102dd680(undefined4 *param_2); void __thiscall FUN_102dd7e0(int param_2); void __thiscall FUN_102de670(char *param_2,undefined4 param_3); void __thiscall FUN_102df160(undefined4 param_2); undefined4 * __thiscall FUN_102df580(int *param_2); undefined4 * __thiscall FUN_102df5a0(int *param_2); undefined4 * __thiscall FUN_102df810(byte param_2); undefined4 * __thiscall FUN_102df850(byte param_2); int * __thiscall FUN_102e4c00(int *param_2); void __thiscall FUN_102e6a80(undefined4 param_2); void __thiscall FUN_102e6ab0(undefined4 param_2); int __thiscall FUN_102e6c60(undefined4 param_2,undefined4 param_3); int __thiscall FUN_102e6ca0(SCStr *param_2); void __thiscall FUN_102e9310(int param_2); void __thiscall FUN_102e9340(int param_2); void __thiscall FUN_102e9370(int param_2); void __thiscall FUN_102e93a0(int param_2); void __thiscall FUN_102e97a0(int *param_2,undefined4 param_3); undefined4 * __thiscall FUN_102e9ed0(int *param_2); undefined4 * __thiscall FUN_102e9f10(int *param_2); undefined4 * __thiscall FUN_102e9f70(int *param_2); undefined4 * __thiscall FUN_102e9fd0(int *param_2); undefined4 * __thiscall FUN_102ea130(int *param_2); undefined4 * __thiscall FUN_102ea190(int *param_2); undefined4 * __thiscall FUN_102ea230(int *param_2); undefined4 * __thiscall FUN_102ea2d0(int *param_2); undefined4 * __thiscall FUN_102ea350(int *param_2); undefined4 * __thiscall FUN_102ea430(int *param_2); undefined4 * __thiscall FUN_102ea450(int *param_2); undefined4 * __thiscall FUN_102ea470(int *param_2); undefined4 * __thiscall FUN_102ea490(int *param_2); undefined4 * __thiscall FUN_102ee650(byte param_2); undefined4 * __thiscall FUN_102ee690(byte param_2); undefined4 * __thiscall FUN_102ee6d0(byte param_2); undefined4 * __thiscall FUN_102ee710(byte param_2); undefined4 __thiscall FUN_102ee9d0(byte param_2); undefined4 * __thiscall FUN_102eea00(byte param_2); undefined4 * __thiscall FUN_102eebf0(byte param_2); undefined4 * __thiscall FUN_102eed40(byte param_2); undefined4 * __thiscall FUN_102eed80(byte param_2); undefined4 * __thiscall FUN_102eedb0(byte param_2); undefined4 * __thiscall FUN_102eede0(byte param_2); undefined4 * __thiscall FUN_102eee10(byte param_2); undefined4 * __thiscall FUN_102eee40(byte param_2); undefined4 __thiscall FUN_102ef180(byte param_2); void __thiscall FUN_102f0b10(int param_2); void __thiscall FUN_102f0b40(int param_2); void __thiscall FUN_102f0b70(int param_2); void __thiscall FUN_102f0ba0(int param_2); void __thiscall FUN_102f0dc0(undefined4 param_2,undefined4 param_3); int * __thiscall FUN_102f4e60(int *param_2); int * __thiscall FUN_102f5410(int *param_2); int * __thiscall FUN_102f55f0(int *param_2); void __thiscall FUN_102f57a0(void *param_2); int * __thiscall FUN_102f57c0(int *param_2); int * __thiscall FUN_102f5800(int *param_2); int * __thiscall FUN_102f5b60(int *param_2); SCStr * __thiscall FUN_102f7470(SCStr *param_2); int * __thiscall FUN_102f7900(int *param_2); int * __thiscall FUN_102f9200(int *param_2); int * __thiscall FUN_102f9240(int *param_2); int * __thiscall FUN_102f9270(int *param_2); int * __thiscall FUN_102f92a0(int *param_2); int * __thiscall FUN_102f92d0(int *param_2); int * __thiscall FUN_102fcca0(int *param_2); void __thiscall FUN_10302000(undefined4 *param_2); undefined4 * __thiscall FUN_103027b0(byte param_2); undefined4 * __thiscall FUN_103028b0(byte param_2); int __thiscall FUN_10303fb0(SCStr *param_2); undefined4 * __thiscall FUN_103069b0(byte param_2); undefined4 * __thiscall FUN_103069e0(byte param_2); undefined4 * __thiscall FUN_10306a10(byte param_2); undefined4 __thiscall FUN_10306a50(byte param_2); undefined4 __thiscall FUN_10306a80(byte param_2); undefined4 __thiscall FUN_10306ab0(byte param_2); undefined4 * __thiscall FUN_10306ae0(byte param_2); undefined4 * __thiscall FUN_10306d50(byte param_2); void __thiscall FUN_10307120(undefined4 *param_2); void __thiscall FUN_10307140(char param_2); void __thiscall FUN_10307d70(undefined4 *param_2); void __thiscall FUN_1030b770(undefined2 param_2); int __thiscall FUN_1030d3f0(undefined4 param_2,undefined4 param_3); int __thiscall FUN_1030d430(undefined4 param_2,undefined4 param_3); int __thiscall FUN_10310330(byte param_2); void __thiscall FUN_103151c0(undefined4 *param_2); undefined4 * __thiscall FUN_10315e60(int *param_2); undefined4 * __thiscall FUN_10315ea0(int *param_2); undefined4 * __thiscall FUN_10315ee0(int *param_2); undefined4 * __thiscall FUN_10315f20(int *param_2); undefined4 * __thiscall FUN_10315f60(int *param_2); undefined4 * __thiscall FUN_10315fa0(int *param_2); undefined4 * __thiscall FUN_10316060(int *param_2); undefined4 * __thiscall FUN_103160a0(int *param_2); undefined4 * __thiscall FUN_103160e0(int *param_2); undefined4 * __thiscall FUN_10316100(int *param_2); undefined4 * __thiscall FUN_10316120(int *param_2); undefined4 * __thiscall FUN_10316140(int *param_2); undefined4 * __thiscall FUN_10316160(int *param_2); undefined4 * __thiscall FUN_10316180(int *param_2); undefined4 * __thiscall FUN_103161a0(int *param_2); undefined4 * __thiscall FUN_103161c0(int *param_2); undefined4 * __thiscall FUN_103161e0(int *param_2); undefined4 * __thiscall FUN_10316200(int *param_2); undefined4 * __thiscall FUN_10316220(int *param_2); undefined4 * __thiscall FUN_10319230(byte param_2); undefined4 * __thiscall FUN_10319260(byte param_2); undefined4 * __thiscall FUN_10319290(byte param_2); undefined4 * __thiscall FUN_103192c0(byte param_2); undefined4 * __thiscall FUN_103192f0(byte param_2); undefined4 * __thiscall FUN_10319320(byte param_2); undefined4 * __thiscall FUN_10319360(byte param_2); undefined4 * __thiscall FUN_103193a0(byte param_2); undefined4 * __thiscall FUN_103193e0(byte param_2); undefined4 * __thiscall FUN_10319420(byte param_2); undefined4 * __thiscall FUN_10319460(byte param_2); undefined4 * __thiscall FUN_103194a0(byte param_2); undefined4 __thiscall FUN_103194e0(byte param_2); undefined4 __thiscall FUN_10319510(byte param_2); undefined4 __thiscall FUN_10319540(byte param_2); undefined4 __thiscall FUN_10319570(byte param_2); undefined4 __thiscall FUN_103195a0(byte param_2); undefined4 * __thiscall FUN_103195d0(byte param_2); undefined4 * __thiscall FUN_10319620(byte param_2); undefined4 * __thiscall FUN_10319650(byte param_2); undefined4 * __thiscall FUN_103196a0(byte param_2); undefined4 * __thiscall FUN_103196f0(byte param_2); undefined4 * __thiscall FUN_10319740(byte param_2); undefined4 * __thiscall FUN_10319790(byte param_2); undefined4 * __thiscall FUN_103197e0(byte param_2); undefined4 * __thiscall FUN_10319830(byte param_2); undefined4 * __thiscall FUN_10319880(byte param_2); undefined4 * __thiscall FUN_103198d0(byte param_2); undefined4 __thiscall FUN_10319920(byte param_2); undefined4 * __thiscall FUN_10319950(byte param_2); undefined4 * __thiscall FUN_10319980(byte param_2); undefined4 * __thiscall FUN_103199b0(byte param_2); undefined4 * __thiscall FUN_103199e0(byte param_2); undefined4 * __thiscall FUN_10319a10(byte param_2); undefined4 * __thiscall FUN_10319a40(byte param_2); undefined4 * __thiscall FUN_10319a70(byte param_2); undefined4 * __thiscall FUN_10319aa0(byte param_2); undefined4 * __thiscall FUN_10319ad0(byte param_2); undefined4 * __thiscall FUN_10319b10(byte param_2); undefined4 * __thiscall FUN_10319b50(byte param_2); undefined4 * __thiscall FUN_10319b90(byte param_2); undefined4 * __thiscall FUN_10319bd0(byte param_2); SCStr * __thiscall FUN_10320820(SCStr *param_2); SCStr * __thiscall FUN_103208b0(SCStr *param_2); SCStr * __thiscall FUN_10320a30(SCStr *param_2); SCStr * __thiscall FUN_10320aa0(SCStr *param_2); SCStr * __thiscall FUN_10322fe0(SCStr *param_2); SCStr * __thiscall FUN_10323df0(SCStr *param_2); int * __thiscall FUN_10328ea0(int *param_2); int * __thiscall FUN_10328f00(int *param_2); void __thiscall FUN_10329660(undefined4 *param_2); undefined4 __thiscall FUN_1032abe0(undefined4 param_2); undefined4 __thiscall FUN_1032ac10(undefined4 param_2); undefined4 __thiscall FUN_1032ad70(undefined4 param_2); undefined4 __thiscall FUN_1032ada0(undefined4 param_2); undefined1 __thiscall FUN_1032b1c0(undefined4 param_2); void __thiscall FUN_1032f1c0(undefined4 param_2); void __thiscall FUN_1032f1f0(undefined4 param_2); void __thiscall FUN_1032f220(undefined4 param_2); int __thiscall FUN_1032f520(int *param_2); int * __thiscall FUN_10333790(int param_2); undefined4 * __thiscall FUN_10333800(int *param_2); undefined4 * __thiscall FUN_10333860(int *param_2); undefined4 * __thiscall FUN_103338c0(int *param_2); undefined4 * __thiscall FUN_10333900(int *param_2); undefined4 * __thiscall FUN_10333940(int *param_2); void __thiscall FUN_10337ac0(int *param_2); void __thiscall FUN_10337c90(int *param_2); int __thiscall FUN_10337dc0(byte param_2); int __thiscall FUN_10337e10(byte param_2); int __thiscall FUN_10337e60(byte param_2); int __thiscall FUN_10337eb0(byte param_2); int __thiscall FUN_10337f00(byte param_2); int __thiscall FUN_103382e0(byte param_2); undefined4 __thiscall FUN_10338330(byte param_2); undefined4 __thiscall FUN_10338360(byte param_2); undefined4 __thiscall FUN_10338390(byte param_2); undefined4 __thiscall FUN_103383c0(byte param_2); undefined4 __thiscall FUN_103383f0(byte param_2); undefined4 __thiscall FUN_10338420(byte param_2); undefined4 __thiscall FUN_103385f0(byte param_2); undefined4 __thiscall FUN_10338620(byte param_2); undefined4 __thiscall FUN_10338650(byte param_2); void __thiscall FUN_10338cd0(undefined4 *param_2); void __thiscall FUN_10338da0(undefined4 *param_2); void __thiscall FUN_10338dc0(undefined4 *param_2); void __thiscall FUN_10338df0(undefined4 *param_2); void __thiscall FUN_10338e20(undefined4 *param_2); void __thiscall FUN_10338e40(undefined4 *param_2); void __thiscall FUN_10338e60(undefined4 *param_2); void __thiscall FUN_10338e80(undefined4 *param_2); void __thiscall FUN_10338ea0(undefined4 *param_2); void __thiscall FUN_10338f60(undefined4 *param_2); void __thiscall FUN_10339010(undefined4 *param_2); void __thiscall FUN_10339030(undefined4 *param_2); void __thiscall FUN_10339050(char param_2); void __thiscall FUN_103390a0(char param_2); void __thiscall FUN_103390f0(char param_2); void __thiscall FUN_10339140(char param_2); void __thiscall FUN_10339190(char param_2); void __thiscall FUN_103391e0(char param_2); void __thiscall FUN_103392a0(char param_2); void __thiscall FUN_103392c0(char param_2); void __thiscall FUN_103392e0(char param_2); void __thiscall FUN_10339300(char param_2); void __thiscall FUN_10339320(char param_2); void __thiscall FUN_10339340(char param_2); void __thiscall FUN_10339360(char param_2); void __thiscall FUN_10339380(char param_2); void __thiscall FUN_103393a0(char param_2); void __thiscall FUN_103393c0(char param_2); void __thiscall FUN_10339480(char param_2); void __thiscall FUN_10339520(char param_2); void __thiscall FUN_10339540(char param_2); void __thiscall FUN_10339560(undefined4 param_2,undefined4 param_3); void __thiscall FUN_10339670(undefined4 *param_2); void __thiscall FUN_103396a0(undefined4 *param_2); void __thiscall FUN_103396d0(undefined4 *param_2); void __thiscall FUN_10339700(undefined4 *param_2); void __thiscall FUN_10339740(undefined4 *param_2); void __thiscall FUN_10339820(undefined4 *param_2); void __thiscall FUN_10339840(undefined4 *param_2); void __thiscall FUN_10339870(undefined4 *param_2); void __thiscall FUN_10339890(undefined4 *param_2); void __thiscall FUN_103398b0(undefined4 *param_2); void __thiscall FUN_103398e0(undefined4 *param_2); void __thiscall FUN_10339900(undefined4 *param_2); void __thiscall FUN_10339920(undefined4 *param_2); void __thiscall FUN_10339940(undefined4 *param_2); void __thiscall FUN_10339960(undefined4 *param_2); void __thiscall FUN_1033ace0(undefined4 *param_2); void __thiscall FUN_1033ad10(undefined4 *param_2); void __thiscall FUN_1033ad30(undefined4 *param_2); void __thiscall FUN_1033ad60(undefined4 *param_2); void __thiscall FUN_1033ad90(undefined4 *param_2); void __thiscall FUN_1033adb0(undefined4 *param_2); void __thiscall FUN_1033add0(undefined4 *param_2); void __thiscall FUN_1033adf0(undefined4 *param_2); void __thiscall FUN_1033ae10(undefined4 *param_2); void __thiscall FUN_1033ae40(undefined4 *param_2); void __thiscall FUN_1033ae70(undefined4 *param_2); void __thiscall FUN_1033ae90(undefined4 *param_2); int __thiscall FUN_10344860(undefined4 param_2,undefined4 param_3); int __thiscall FUN_103448a0(int *param_2); undefined4 __thiscall FUN_103475a0(byte param_2); void __thiscall FUN_10349ad0(undefined4 param_2); SCStr * __thiscall FUN_1034e100(SCStr *param_2); void __thiscall FUN_10353930(undefined4 param_2); void __thiscall FUN_10353960(undefined4 param_2); void __thiscall FUN_10353990(undefined4 param_2); int __thiscall FUN_10353be0(undefined4 param_2,undefined4 param_3); int __thiscall FUN_10353c20(SCStr *param_2); void __thiscall FUN_103581f0(int param_2); void __thiscall FUN_10358220(int param_2); void __thiscall FUN_10358250(int param_2); void __thiscall FUN_10358280(int param_2); void __thiscall FUN_103582b0(int param_2); void __thiscall FUN_10358cd0(undefined4 *param_2); void __thiscall FUN_10358d50(undefined4 *param_2); undefined4 * __thiscall FUN_1035acb0(int *param_2); undefined4 * __thiscall FUN_1035acf0(int *param_2); undefined4 * __thiscall FUN_1035ad30(int *param_2); undefined4 * __thiscall FUN_1035ad70(int *param_2); undefined4 * __thiscall FUN_1035adb0(int *param_2); undefined4 * __thiscall FUN_1035adf0(int *param_2); undefined4 * __thiscall FUN_1035ae30(int *param_2); undefined4 * __thiscall FUN_1035ae70(int *param_2); undefined4 * __thiscall FUN_1035aeb0(int *param_2); undefined4 * __thiscall FUN_1035aef0(int *param_2); undefined4 * __thiscall FUN_1035af30(int *param_2); undefined4 * __thiscall FUN_1035af90(int *param_2); undefined4 * __thiscall FUN_1035aff0(int *param_2); undefined4 * __thiscall FUN_1035b160(int *param_2); undefined4 * __thiscall FUN_1035b1f0(int *param_2); undefined4 * __thiscall FUN_1035b230(int *param_2); undefined4 * __thiscall FUN_1035b270(int *param_2); undefined4 * __thiscall FUN_1035b2b0(int *param_2); undefined4 * __thiscall FUN_1035b2f0(int *param_2); undefined4 * __thiscall FUN_1035b330(int *param_2); undefined4 * __thiscall FUN_1035b370(int *param_2); undefined4 * __thiscall FUN_1035b3d0(int *param_2); undefined4 * __thiscall FUN_1035b470(int *param_2); undefined4 * __thiscall FUN_1035b4f0(int *param_2); undefined4 * __thiscall FUN_1035b580(int *param_2); undefined4 * __thiscall FUN_1035b600(int *param_2); undefined4 * __thiscall FUN_1035b680(int *param_2); undefined4 * __thiscall FUN_1035b710(int *param_2); undefined4 * __thiscall FUN_1035b750(int *param_2); undefined4 * __thiscall FUN_1035b7c0(int *param_2); undefined4 * __thiscall FUN_1035b840(int *param_2); undefined4 * __thiscall FUN_1035b860(int *param_2); undefined4 * __thiscall FUN_1035b8a0(int *param_2); undefined4 * __thiscall FUN_1035b8c0(int *param_2); undefined4 * __thiscall FUN_1035b8e0(int *param_2); undefined4 * __thiscall FUN_1035b900(int *param_2); undefined4 * __thiscall FUN_1035b920(int *param_2); undefined4 * __thiscall FUN_1035b940(int *param_2); undefined4 * __thiscall FUN_1035b960(int *param_2); undefined4 * __thiscall FUN_1035b9a0(int *param_2); undefined4 * __thiscall FUN_1035b9c0(int *param_2); undefined4 * __thiscall FUN_1035b9e0(int *param_2); undefined4 * __thiscall FUN_1035ba00(int *param_2); undefined4 * __thiscall FUN_1035ba20(int *param_2); undefined4 * __thiscall FUN_1035ba40(int *param_2); undefined4 * __thiscall FUN_10366570(int *param_2); undefined4 * __thiscall FUN_10367d60(byte param_2); undefined4 * __thiscall FUN_10367d90(byte param_2); undefined4 * __thiscall FUN_10367dc0(byte param_2); undefined4 * __thiscall FUN_10367df0(byte param_2); undefined4 * __thiscall FUN_10368450(byte param_2); undefined4 * __thiscall FUN_10368490(byte param_2); undefined4 __thiscall FUN_10368770(byte param_2); undefined4 __thiscall FUN_103687a0(byte param_2); int __thiscall FUN_10368e50(byte param_2); undefined4 __thiscall FUN_10368f30(byte param_2); undefined4 * __thiscall FUN_103690c0(byte param_2); undefined4 * __thiscall FUN_10369100(byte param_2); undefined4 * __thiscall FUN_10369140(byte param_2); undefined4 * __thiscall FUN_10369170(byte param_2); undefined4 * __thiscall FUN_103691c0(byte param_2); undefined4 * __thiscall FUN_10369210(byte param_2); undefined4 __thiscall FUN_10369240(byte param_2); undefined4 * __thiscall FUN_10369370(byte param_2); undefined4 * __thiscall FUN_103693a0(byte param_2); undefined4 * __thiscall FUN_103693d0(byte param_2); undefined4 * __thiscall FUN_10369420(byte param_2); undefined4 * __thiscall FUN_10369470(byte param_2); undefined4 * __thiscall FUN_103694a0(byte param_2); undefined4 * __thiscall FUN_103694d0(byte param_2); undefined4 * __thiscall FUN_10369500(byte param_2); undefined4 * __thiscall FUN_10369530(byte param_2); undefined4 * __thiscall FUN_10369560(byte param_2); undefined4 * __thiscall FUN_10369590(byte param_2); undefined4 * __thiscall FUN_103695c0(byte param_2); };
 using namespace std;
 SCStr * __stdcall FUN_10260fd0(SCStr *param_1);
 SCStr * __stdcall FUN_10260ff0(SCStr *param_1);
+char __fastcall FUN_10261170(int param_1);
 SCStr * __stdcall FUN_10261350(SCStr *param_1);
 bool __stdcall FUN_10261d60(SCStr *param_1);
 undefined4 FUN_10261e90(undefined4 param_1);
@@ -600,8 +612,6 @@ void __stdcall FUN_102687f0(undefined4 *param_1);
 void __stdcall FUN_10268830(undefined4 *param_1);
 void __stdcall FUN_1026adf0(int param_1,int param_2);
 void __stdcall FUN_1026ae40(int param_1,int param_2);
-void __fastcall FUN_1026aee0(undefined4 *param_1);
-void __fastcall FUN_1026af20(undefined4 *param_1);
 undefined4 __stdcall FUN_1026aff0(undefined4 param_1);
 undefined4 __stdcall FUN_1026b4f0(undefined4 param_1);
 void __stdcall FUN_1026d7a0(int param_1);
@@ -613,36 +623,18 @@ void __fastcall FUN_1026fb10(int *param_1);
 void __fastcall FUN_1026fb70(int *param_1);
 void __fastcall FUN_1026fbd0(int *param_1);
 void __fastcall FUN_1026fc30(int *param_1);
-void __fastcall FUN_1026fd00(int *param_1);
-void __fastcall FUN_1026fd30(int *param_1);
-void __fastcall FUN_1026fd60(int *param_1);
-void __fastcall FUN_1026fd90(int *param_1);
-void __fastcall FUN_1026fdc0(int *param_1);
-void __fastcall FUN_1026fdf0(int *param_1);
-void __fastcall FUN_10270c10(int *param_1);
-void __fastcall FUN_10270c40(int *param_1);
-void __fastcall FUN_10270c70(int *param_1);
 void __stdcall FUN_10271210(int param_1,int param_2);
 void __stdcall FUN_10271c60(undefined4 param_1);
 void Catch_All_102732f7_102732f7(void);
 void __fastcall FUN_10275450(undefined4 *param_1);
 void __fastcall FUN_102755c0(int *param_1);
-void __fastcall FUN_10275620(int *param_1);
-void __fastcall FUN_10275650(int *param_1);
-void __fastcall FUN_10275680(int *param_1);
 void __fastcall FUN_10275840(undefined4 *param_1);
 void __fastcall FUN_10275860(undefined4 *param_1);
-void __fastcall FUN_10275880(int *param_1);
-void __fastcall FUN_102758b0(int *param_1);
-void __fastcall FUN_102758e0(int *param_1);
 void __fastcall FUN_10275c80(int *param_1);
 void __fastcall FUN_10275ca0(int *param_1);
 void __fastcall FUN_10275cc0(int *param_1);
 void __fastcall FUN_10275ce0(int *param_1);
 void __fastcall FUN_10277cf0(int param_1);
-void __fastcall FUN_10277e10(int *param_1);
-void __fastcall FUN_10277e40(int *param_1);
-void __fastcall FUN_10277e70(int *param_1);
 void __stdcall FUN_10278bb0(int param_1,int param_2);
 void __stdcall FUN_10278c00(int param_1,int param_2);
 SCStr * __stdcall FUN_10278f20(SCStr *param_1);
@@ -792,7 +784,6 @@ void __fastcall FUN_102ac480(int param_1);
 void __fastcall FUN_102ac4a0(int param_1);
 void __stdcall FUN_102ac950(int param_1,int param_2);
 void __fastcall FUN_102ae3b0(int *param_1);
-void __fastcall FUN_102ae3e0(int *param_1);
 void __fastcall FUN_102ae420(undefined4 *param_1);
 void __stdcall FUN_102ae9b0(int param_1,int param_2);
 void __stdcall FUN_102aea00(int param_1,int param_2);
@@ -841,19 +832,10 @@ void __fastcall FUN_102c44b0(undefined4 *param_1);
 void __fastcall FUN_102c4af0(int *param_1);
 void __fastcall FUN_102c4b50(int *param_1);
 void __fastcall FUN_102c4bb0(int *param_1);
-void __fastcall FUN_102c4c90(int *param_1);
-void __fastcall FUN_102c4cc0(int *param_1);
-void __fastcall FUN_102c4cf0(int *param_1);
-void __fastcall FUN_102c4d20(int *param_1);
 void __fastcall FUN_102c4d70(undefined4 *param_1);
-int * __fastcall FUN_102c52f0(int *param_1);
-int * __fastcall FUN_102c5320(int *param_1);
-void __fastcall FUN_102c5d30(int *param_1);
-void __fastcall FUN_102c5d60(int *param_1);
 void __fastcall FUN_102c6de0(int param_1);
 void __fastcall FUN_102c6e30(int param_1);
 SCStr * __stdcall FUN_102c6f30(SCStr *param_1);
-void __fastcall FUN_102c6f50(undefined4 *param_1);
 void __fastcall FUN_102c6f90(int *param_1);
 void __fastcall FUN_102c6fc0(int *param_1);
 SCStr * __stdcall FUN_102c75b0(SCStr *param_1);
@@ -869,34 +851,22 @@ undefined4 * __fastcall FUN_102cc080(undefined4 *param_1);
 void __fastcall FUN_102ccba0(int *param_1);
 void __fastcall FUN_102ccc00(undefined4 *param_1);
 void __fastcall FUN_102ccc20(int param_1);
-void __fastcall FUN_102ccc40(int *param_1);
-void __fastcall FUN_102ccc70(int *param_1);
 void __fastcall FUN_102ccca0(int *param_1);
 void __fastcall FUN_102ccd90(undefined4 *param_1);
-void __fastcall FUN_102ccdb0(int *param_1);
-void __fastcall FUN_102ccde0(int *param_1);
 void __fastcall FUN_102cce10(int *param_1);
-int * __fastcall FUN_102cd310(int *param_1);
-int * __fastcall FUN_102cd340(int *param_1);
 void __fastcall FUN_102cdb80(int param_1);
 int * FUN_102ce0e0(int *param_1);
-void __fastcall FUN_102ce210(int *param_1);
-void __fastcall FUN_102ce240(int *param_1);
 void FUN_102ce2f0(undefined4 *param_1,int param_2);
 void __fastcall FUN_102cf330(int param_1);
 void __stdcall FUN_102cf490(int param_1,int param_2);
 SCStr * __stdcall FUN_102cf580(SCStr *param_1);
-void __fastcall FUN_102cf5a0(undefined4 *param_1);
 undefined4 * __fastcall FUN_102d3290(undefined4 *param_1);
 void __fastcall FUN_102d39e0(undefined4 *param_1);
 void __fastcall FUN_102d3b50(int *param_1);
 void __fastcall FUN_102d3bb0(int param_1);
-void __fastcall FUN_102d3bd0(int *param_1);
 void __fastcall FUN_102d3ce0(int param_1);
-void __fastcall FUN_102d3d20(int *param_1);
 int __stdcall FUN_102d4220(undefined4 param_1);
 void __fastcall FUN_102d46e0(int param_1);
-void __fastcall FUN_102d4fe0(int *param_1);
 void __fastcall FUN_102d6570(int *param_1);
 void FUN_102d7ff0(undefined8 param_1);
 void __stdcall FUN_102d8790(int param_1);
@@ -937,28 +907,21 @@ void __fastcall FUN_102ec260(int *param_1);
 void __fastcall FUN_102ec2c0(int *param_1);
 void __fastcall FUN_102ec320(int *param_1);
 void __fastcall FUN_102ec380(int param_1);
-void __fastcall FUN_102ec3a0(int *param_1);
 void __fastcall FUN_102ec4b0(int *param_1);
 void __fastcall FUN_102ec4e0(int *param_1);
 void __fastcall FUN_102ec5a0(int param_1);
-void __fastcall FUN_102ec5d0(int *param_1);
 void __fastcall FUN_102ec730(int *param_1);
 void __fastcall FUN_102ec760(int *param_1);
 void __fastcall FUN_102ecb40(undefined4 *param_1);
 void __fastcall FUN_102ef400(int param_1);
 void __fastcall FUN_102efd80(int param_1);
 void __fastcall FUN_102eff20(int param_1);
-void __fastcall FUN_102f0580(int *param_1);
 void __stdcall FUN_102f08c0(undefined4 param_1);
 void __fastcall FUN_102f0df0(int param_1);
 void __fastcall FUN_102f1240(int *param_1);
 void __stdcall FUN_102f1630(undefined4 param_1,undefined4 param_2);
 SCStr * __stdcall FUN_102f4570(SCStr *param_1);
 SCStr * __stdcall FUN_102f4590(SCStr *param_1);
-void __fastcall FUN_102f45b0(undefined4 *param_1);
-void __fastcall FUN_102f45f0(undefined4 *param_1);
-void __fastcall FUN_102f4630(undefined4 *param_1);
-void __fastcall FUN_102f4670(undefined4 *param_1);
 void __fastcall FUN_102f46b0(int *param_1);
 void __fastcall FUN_102f46e0(int *param_1);
 void __fastcall FUN_102f4710(int *param_1);
@@ -996,10 +959,8 @@ void Catch_All_10303ae0_10303ae0(void);
 undefined4 * __fastcall FUN_103051a0(undefined4 *param_1);
 void __fastcall FUN_10305ee0(int param_1);
 void __fastcall FUN_10305f00(int param_1);
-void __fastcall FUN_10305f40(int *param_1);
 void __fastcall FUN_10306110(undefined4 *param_1);
 void __fastcall FUN_10306210(int param_1);
-void __fastcall FUN_10306260(int *param_1);
 void __fastcall FUN_10306290(undefined4 *param_1);
 void __fastcall FUN_10306300(undefined4 *param_1);
 void __fastcall FUN_10306500(undefined4 *param_1);
@@ -1008,7 +969,6 @@ int __stdcall FUN_10306850(undefined4 param_1);
 void __fastcall FUN_10306f00(int param_1);
 void __fastcall FUN_10306f20(int param_1);
 int FUN_10307cb0(int param_1);
-void __fastcall FUN_10307f30(int *param_1);
 void __fastcall FUN_10307fd0(undefined4 *param_1);
 void __fastcall FUN_10308d60(int *param_1);
 void __fastcall FUN_10308d90(int *param_1);
@@ -1038,8 +998,6 @@ int __stdcall FUN_10310050(undefined4 param_1);
 void __fastcall FUN_103103e0(int param_1);
 void __fastcall FUN_10310400(int param_1);
 void __fastcall FUN_10310420(int param_1);
-void __fastcall FUN_10310800(int *param_1);
-void __fastcall FUN_10310830(int *param_1);
 void __fastcall FUN_10311d50(undefined4 *param_1);
 void __fastcall FUN_10312e60(int *param_1);
 void __fastcall FUN_10313e50(int param_1);
@@ -1069,10 +1027,6 @@ void __fastcall FUN_103188b0(undefined4 *param_1);
 void __fastcall FUN_103188d0(undefined4 *param_1);
 undefined4 __fastcall FUN_1031b160(int param_1);
 SCStr * __stdcall FUN_1031dc60(SCStr *param_1);
-void __fastcall FUN_1031dc80(undefined4 *param_1);
-void __fastcall FUN_1031dcc0(undefined4 *param_1);
-void __fastcall FUN_1031dd00(undefined4 *param_1);
-void __fastcall FUN_1031dd40(undefined4 *param_1);
 void __fastcall FUN_1031dd80(int *param_1);
 void __fastcall FUN_1031ddb0(int *param_1);
 undefined4 __fastcall FUN_1031f950(int param_1);
@@ -1151,8 +1105,6 @@ void __fastcall FUN_10335e90(int *param_1);
 void __fastcall FUN_10335ef0(int param_1);
 void __fastcall FUN_10335f10(int param_1);
 void __fastcall FUN_10335f30(int param_1);
-void __fastcall FUN_10335f50(int *param_1);
-void __fastcall FUN_10335f80(int *param_1);
 void __fastcall FUN_10336220(int *param_1);
 void __fastcall FUN_10336250(int *param_1);
 void __fastcall FUN_10336280(int *param_1);
@@ -1160,16 +1112,10 @@ void __fastcall FUN_103364a0(int param_1);
 void __fastcall FUN_103364c0(int param_1);
 void __fastcall FUN_103364e0(int param_1);
 void __fastcall FUN_10336520(undefined4 *param_1);
-void __fastcall FUN_10336540(int *param_1);
-void __fastcall FUN_10336570(int *param_1);
 void __fastcall FUN_103365a0(int *param_1);
 void __fastcall FUN_103365d0(int *param_1);
 void __fastcall FUN_10336600(int *param_1);
 void __fastcall FUN_103367a0(int param_1);
-void __fastcall FUN_10336890(int *param_1);
-void __fastcall FUN_103368f0(int *param_1);
-void __fastcall FUN_10336ab0(int *param_1);
-void __fastcall FUN_10336b10(int *param_1);
 void __fastcall FUN_10336b40(int *param_1);
 void __fastcall FUN_10336b80(int *param_1);
 void __fastcall FUN_10336bc0(int *param_1);
@@ -1185,16 +1131,13 @@ void __fastcall FUN_10338710(int param_1);
 void __fastcall FUN_10338730(int param_1);
 void __fastcall FUN_10338750(int param_1);
 int * FUN_1033ac60(int *param_1);
-void __fastcall FUN_1033b490(int *param_1);
-void __fastcall FUN_1033b4c0(int *param_1);
 void __fastcall FUN_1033c070(int *param_1);
 void __fastcall FUN_1033c0a0(int *param_1);
 void __fastcall FUN_1033c0d0(int *param_1);
 void __fastcall FUN_1033c160(undefined4 *param_1);
 void __stdcall FUN_1033c6d0(int param_1,int param_2);
-void __fastcall FUN_1033c780(undefined4 *param_1);
-void __fastcall FUN_1033c7c0(undefined4 *param_1);
 SCStr * __stdcall FUN_1033cd90(SCStr *param_1);
+void __stdcall FUN_10342c30(undefined4 param_1);
 void Catch_All_1034449e_1034449e(void);
 void __stdcall FUN_10344810(undefined4 param_1,int *param_2);
 undefined4 * __fastcall FUN_10345bd0(undefined4 *param_1);
@@ -1258,14 +1201,6 @@ void __fastcall FUN_10362360(int *param_1);
 void __fastcall FUN_10362640(int param_1);
 void __fastcall FUN_10362660(int param_1);
 void __fastcall FUN_10362680(int param_1);
-void __fastcall FUN_103626a0(int *param_1);
-void __fastcall FUN_103626d0(int *param_1);
-void __fastcall FUN_10362700(int *param_1);
-void __fastcall FUN_10362730(int *param_1);
-void __fastcall FUN_10362760(int *param_1);
-void __fastcall FUN_10362790(int *param_1);
-void __fastcall FUN_103627c0(int *param_1);
-void __fastcall FUN_103627f0(int *param_1);
 void __fastcall FUN_10362bb0(int *param_1);
 void __fastcall FUN_10362be0(int *param_1);
 void __fastcall FUN_10362c10(int *param_1);
@@ -1275,14 +1210,6 @@ void __fastcall FUN_10362d40(int param_1);
 void __fastcall FUN_10362d70(int *param_1);
 void __fastcall FUN_10362da0(undefined4 *param_1);
 void __fastcall FUN_10362dc0(undefined4 *param_1);
-void __fastcall FUN_10362de0(int *param_1);
-void __fastcall FUN_10362e10(int *param_1);
-void __fastcall FUN_10362e40(int *param_1);
-void __fastcall FUN_10362e70(int *param_1);
-void __fastcall FUN_10362ea0(int *param_1);
-void __fastcall FUN_10362ed0(int *param_1);
-void __fastcall FUN_10362f00(int *param_1);
-void __fastcall FUN_10362f30(int *param_1);
 void __fastcall FUN_10362f60(undefined4 *param_1);
 void __fastcall FUN_10362f80(int *param_1);
 void __fastcall FUN_10362fb0(int *param_1);
@@ -1297,7 +1224,6 @@ void __fastcall FUN_103658e0(int *param_1);
 void __fastcall FUN_10365900(int *param_1);
 void __fastcall FUN_10365920(int *param_1);
 void __fastcall FUN_10365940(int *param_1);
-int * __fastcall FUN_10366590(int *param_1);
 int __stdcall FUN_10366d00(undefined4 param_1);
 void FUN_10367860(void);
 // Reference entry 10260fd0; body size 21 bytes.
@@ -1319,6 +1245,19 @@ SCStr * __stdcall FUN_10260ff0(SCStr *param_1)
 {
   ((SCStr *)(param_1))->int_allocRep("SCIStringInput");
   return (SCStr *)(param_1);
+}
+
+
+// Reference entry 10261170; body size 24 bytes.
+#line 1 "ENTRY_10261170"
+
+char __fastcall FUN_10261170(int param_1)
+
+{
+  bool bVar1;
+  
+  bVar1 = (bool)(((SCStr *)((SCStr *)(param_1 + 0x18)))->op_eq("US"));
+  return (char)(bVar1 + '\x03');
 }
 
 
@@ -1550,6 +1489,151 @@ int __thiscall Recovered_Bulk::FUN_10264440(SCStr *param_2)
 }
 
 
+// Reference entry 102650c0; body size 59 bytes.
+#line 1 "ENTRY_102650c0"
+
+void __thiscall Recovered_Bulk::FUN_102650c0(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  int *piVar2;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    piVar2 = (int *)((int *)param_2[1]);
+    puVar1[1] = (undefined4)(piVar2);
+    if (piVar2 != (int *)0x0) {
+      (**(code **)(*piVar2 + 4))();
+    }
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 8;
+    return;
+  }
+  thunk_FUN_10263dd0(puVar1,param_2);
+  return;
+}
+
+
+// Reference entry 10265110; body size 59 bytes.
+#line 1 "ENTRY_10265110"
+
+void __thiscall Recovered_Bulk::FUN_10265110(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  int *piVar2;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    piVar2 = (int *)((int *)param_2[1]);
+    puVar1[1] = (undefined4)(piVar2);
+    if (piVar2 != (int *)0x0) {
+      (**(code **)(*piVar2 + 4))();
+    }
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 8;
+    return;
+  }
+  thunk_FUN_10264090(puVar1,param_2);
+  return;
+}
+
+
+// Reference entry 10265840; body size 41 bytes.
+#line 1 "ENTRY_10265840"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10265840(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102658b0; body size 41 bytes.
+#line 1 "ENTRY_102658b0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102658b0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102658f0; body size 41 bytes.
+#line 1 "ENTRY_102658f0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102658f0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 10265960; body size 41 bytes.
+#line 1 "ENTRY_10265960"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10265960(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102659a0; body size 41 bytes.
+#line 1 "ENTRY_102659a0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102659a0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
 // Reference entry 10265a00; body size 24 bytes.
 #line 1 "ENTRY_10265a00"
 
@@ -1573,7 +1657,7 @@ undefined4 * __fastcall FUN_10265a60(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x18));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -1889,7 +1973,7 @@ void __thiscall Recovered_Bulk::FUN_10268540(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -1901,7 +1985,7 @@ void __thiscall Recovered_Bulk::FUN_10268600(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -1991,7 +2075,7 @@ void __thiscall Recovered_Bulk::FUN_10268cf0(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -2003,111 +2087,7 @@ void __thiscall Recovered_Bulk::FUN_10268d20(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
-  return;
-}
-
-
-// Reference entry 10269380; body size 61 bytes.
-#line 1 "ENTRY_10269380"
-
-void __thiscall Recovered_Bulk::FUN_10269380(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102693d0; body size 61 bytes.
-#line 1 "ENTRY_102693d0"
-
-void __thiscall Recovered_Bulk::FUN_102693d0(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 10269420; body size 61 bytes.
-#line 1 "ENTRY_10269420"
-
-void __thiscall Recovered_Bulk::FUN_10269420(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 10269470; body size 61 bytes.
-#line 1 "ENTRY_10269470"
-
-void __thiscall Recovered_Bulk::FUN_10269470(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -2156,46 +2136,6 @@ void __stdcall FUN_1026ae40(int param_1,int param_2)
     }
   }
   thunk_FUN_1148a50e(iVar1,uVar2);
-  return;
-}
-
-
-// Reference entry 1026aee0; body size 43 bytes.
-#line 1 "ENTRY_1026aee0"
-
-void __fastcall FUN_1026aee0(undefined4 *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  *param_1 = (undefined4)(0);
-  param_1[1] = 0;
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 8))();
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 1026af20; body size 43 bytes.
-#line 1 "ENTRY_1026af20"
-
-void __fastcall FUN_1026af20(undefined4 *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  *param_1 = (undefined4)(0);
-  param_1[1] = 0;
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 8))();
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-  }
   return;
 }
 
@@ -2273,6 +2213,56 @@ int * __thiscall Recovered_Bulk::FUN_1026bdc0(int *param_2,int param_3)
 }
 
 
+// Reference entry 1026cc60; body size 59 bytes.
+#line 1 "ENTRY_1026cc60"
+
+void __thiscall Recovered_Bulk::FUN_1026cc60(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  int *piVar2;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    piVar2 = (int *)((int *)param_2[1]);
+    puVar1[1] = (undefined4)(piVar2);
+    if (piVar2 != (int *)0x0) {
+      (**(code **)(*piVar2 + 4))();
+    }
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 8;
+    return;
+  }
+  thunk_FUN_10263dd0(puVar1,param_2);
+  return;
+}
+
+
+// Reference entry 1026ccb0; body size 59 bytes.
+#line 1 "ENTRY_1026ccb0"
+
+void __thiscall Recovered_Bulk::FUN_1026ccb0(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  int *piVar2;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    piVar2 = (int *)((int *)param_2[1]);
+    puVar1[1] = (undefined4)(piVar2);
+    if (piVar2 != (int *)0x0) {
+      (**(code **)(*piVar2 + 4))();
+    }
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 8;
+    return;
+  }
+  thunk_FUN_10264090(puVar1,param_2);
+  return;
+}
+
+
 // Reference entry 1026d7a0; body size 22 bytes.
 #line 1 "ENTRY_1026d7a0"
 
@@ -2297,6 +2287,25 @@ void __stdcall FUN_1026d7c0(int param_1)
     return;
   }
   return;
+}
+
+
+// Reference entry 1026d880; body size 41 bytes.
+#line 1 "ENTRY_1026d880"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1026d880(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
 }
 
 
@@ -2364,6 +2373,69 @@ void Catch_All_1026e829_1026e829(void)
   thunk_FUN_101ca860(*(undefined4 *)(unaff_EBP + -0x34),*(undefined4 *)(unaff_EBP + -0x20));
                     
   _CxxThrowException((void *)0x0,(ThrowInfo *)0x0);
+}
+
+
+// Reference entry 1026ecb0; body size 59 bytes.
+#line 1 "ENTRY_1026ecb0"
+
+void __thiscall Recovered_Bulk::FUN_1026ecb0(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  int *piVar2;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    piVar2 = (int *)((int *)param_2[1]);
+    puVar1[1] = (undefined4)(piVar2);
+    if (piVar2 != (int *)0x0) {
+      (**(code **)(*piVar2 + 4))();
+    }
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 8;
+    return;
+  }
+  thunk_FUN_1026e620(puVar1,param_2);
+  return;
+}
+
+
+// Reference entry 1026f0c0; body size 41 bytes.
+#line 1 "ENTRY_1026f0c0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1026f0c0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1026f170; body size 41 bytes.
+#line 1 "ENTRY_1026f170"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1026f170(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
 }
 
 
@@ -2468,108 +2540,6 @@ void __fastcall FUN_1026fc30(int *param_1)
 }
 
 
-// Reference entry 1026fd00; body size 33 bytes.
-#line 1 "ENTRY_1026fd00"
-
-void __fastcall FUN_1026fd00(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 1026fd30; body size 33 bytes.
-#line 1 "ENTRY_1026fd30"
-
-void __fastcall FUN_1026fd30(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 1026fd60; body size 33 bytes.
-#line 1 "ENTRY_1026fd60"
-
-void __fastcall FUN_1026fd60(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 1026fd90; body size 33 bytes.
-#line 1 "ENTRY_1026fd90"
-
-void __fastcall FUN_1026fd90(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 1026fdc0; body size 33 bytes.
-#line 1 "ENTRY_1026fdc0"
-
-void __fastcall FUN_1026fdc0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 1026fdf0; body size 33 bytes.
-#line 1 "ENTRY_1026fdf0"
-
-void __fastcall FUN_1026fdf0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
 // Reference entry 102707d0; body size 45 bytes.
 #line 1 "ENTRY_102707d0"
 
@@ -2637,7 +2607,7 @@ void __thiscall Recovered_Bulk::FUN_10270940(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -2649,7 +2619,7 @@ void __thiscall Recovered_Bulk::FUN_10270960(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -2687,7 +2657,7 @@ void __thiscall Recovered_Bulk::FUN_10270b60(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -2699,136 +2669,7 @@ void __thiscall Recovered_Bulk::FUN_10270b80(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
-  return;
-}
-
-
-// Reference entry 10270c10; body size 33 bytes.
-#line 1 "ENTRY_10270c10"
-
-void __fastcall FUN_10270c10(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10270c40; body size 33 bytes.
-#line 1 "ENTRY_10270c40"
-
-void __fastcall FUN_10270c40(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10270c70; body size 33 bytes.
-#line 1 "ENTRY_10270c70"
-
-void __fastcall FUN_10270c70(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10270df0; body size 61 bytes.
-#line 1 "ENTRY_10270df0"
-
-void __thiscall Recovered_Bulk::FUN_10270df0(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 10270e40; body size 61 bytes.
-#line 1 "ENTRY_10270e40"
-
-void __thiscall Recovered_Bulk::FUN_10270e40(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 10270e90; body size 61 bytes.
-#line 1 "ENTRY_10270e90"
-
-void __thiscall Recovered_Bulk::FUN_10270e90(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -2905,6 +2746,31 @@ int * __thiscall Recovered_Bulk::FUN_10271350(int *param_2,int param_3)
 }
 
 
+// Reference entry 102717b0; body size 59 bytes.
+#line 1 "ENTRY_102717b0"
+
+void __thiscall Recovered_Bulk::FUN_102717b0(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  int *piVar2;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    piVar2 = (int *)((int *)param_2[1]);
+    puVar1[1] = (undefined4)(piVar2);
+    if (piVar2 != (int *)0x0) {
+      (**(code **)(*piVar2 + 4))();
+    }
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 8;
+    return;
+  }
+  thunk_FUN_1026e620(puVar1,param_2);
+  return;
+}
+
+
 // Reference entry 10271c60; body size 17 bytes.
 #line 1 "ENTRY_10271c60"
 
@@ -2938,7 +2804,7 @@ void __thiscall Recovered_Bulk::FUN_102728c0(int *param_2)
     *piVar4 = (int)(iVar3);
     *piVar5 = (int)(iVar2);
     *(int **)(iVar2 + 4) = piVar5;
-    param_2[1] = param_2[1] + iVar1;
+    param_2[1] = (int)(param_2[1] + iVar1);
     *(undefined4 *)(param_1 + 4) = 0;
   }
   return;
@@ -2957,6 +2823,88 @@ void Catch_All_102732f7_102732f7(void)
   thunk_FUN_10278c00(*(undefined4 *)(unaff_EBP + -0x2c),*(undefined4 *)(unaff_EBP + -0x20));
                     
   _CxxThrowException((void *)0x0,(ThrowInfo *)0x0);
+}
+
+
+// Reference entry 10273f20; body size 59 bytes.
+#line 1 "ENTRY_10273f20"
+
+void __thiscall Recovered_Bulk::FUN_10273f20(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  int *piVar2;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    piVar2 = (int *)((int *)param_2[1]);
+    puVar1[1] = (undefined4)(piVar2);
+    if (piVar2 != (int *)0x0) {
+      (**(code **)(*piVar2 + 4))();
+    }
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 8;
+    return;
+  }
+  thunk_FUN_10273190(puVar1,param_2);
+  return;
+}
+
+
+// Reference entry 10274a50; body size 41 bytes.
+#line 1 "ENTRY_10274a50"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10274a50(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 10274ae0; body size 41 bytes.
+#line 1 "ENTRY_10274ae0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10274ae0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 10274b50; body size 41 bytes.
+#line 1 "ENTRY_10274b50"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10274b50(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
 }
 
 
@@ -3010,57 +2958,6 @@ void __fastcall FUN_102755c0(int *param_1)
 }
 
 
-// Reference entry 10275620; body size 33 bytes.
-#line 1 "ENTRY_10275620"
-
-void __fastcall FUN_10275620(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10275650; body size 33 bytes.
-#line 1 "ENTRY_10275650"
-
-void __fastcall FUN_10275650(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10275680; body size 33 bytes.
-#line 1 "ENTRY_10275680"
-
-void __fastcall FUN_10275680(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
 // Reference entry 10275840; body size 17 bytes.
 #line 1 "ENTRY_10275840"
 
@@ -3079,57 +2976,6 @@ void __fastcall FUN_10275860(undefined4 *param_1)
 
 {
   thunk_FUN_10272fd0(*param_1,param_1[1],param_1[2]);
-  return;
-}
-
-
-// Reference entry 10275880; body size 33 bytes.
-#line 1 "ENTRY_10275880"
-
-void __fastcall FUN_10275880(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 102758b0; body size 33 bytes.
-#line 1 "ENTRY_102758b0"
-
-void __fastcall FUN_102758b0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 102758e0; body size 33 bytes.
-#line 1 "ENTRY_102758e0"
-
-void __fastcall FUN_102758e0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
   return;
 }
 
@@ -3239,7 +3085,7 @@ void __thiscall Recovered_Bulk::FUN_10277340(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -3301,24 +3147,7 @@ void __thiscall Recovered_Bulk::FUN_10277c50(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
-  return;
-}
-
-
-// Reference entry 10277c80; body size 52 bytes.
-#line 1 "ENTRY_10277c80"
-
-void __thiscall Recovered_Bulk::FUN_10277c80(undefined4 *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  thunk_FUN_10277f40();
-  *param_1 = (undefined4)(*param_2);
-  param_1[1] = param_2[1];
-  param_1[2] = param_2[2];
-  *param_2 = (undefined4)(0);
-  param_2[1] = 0;
-  param_2[2] = 0;
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -3333,57 +3162,6 @@ void __fastcall FUN_10277cf0(int param_1)
   
   uVar1 = (undefined4)(thunk_FUN_10129a20(*(undefined4 *)(param_1 + 8)));
   thunk_FUN_10129af0(uVar1);
-  return;
-}
-
-
-// Reference entry 10277e10; body size 33 bytes.
-#line 1 "ENTRY_10277e10"
-
-void __fastcall FUN_10277e10(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10277e40; body size 33 bytes.
-#line 1 "ENTRY_10277e40"
-
-void __fastcall FUN_10277e40(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10277e70; body size 33 bytes.
-#line 1 "ENTRY_10277e70"
-
-void __fastcall FUN_10277e70(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
   return;
 }
 
@@ -3494,6 +3272,31 @@ SCStr * __stdcall FUN_10278f80(SCStr *param_1)
   pcVar1 = (char *)((char *)thunk_FUN_1109aba0(0x2a3,&DAT_11882ff0));
   ((SCStr *)(param_1))->int_allocRep(pcVar1);
   return (SCStr *)(param_1);
+}
+
+
+// Reference entry 10279690; body size 59 bytes.
+#line 1 "ENTRY_10279690"
+
+void __thiscall Recovered_Bulk::FUN_10279690(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  int *piVar2;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    piVar2 = (int *)((int *)param_2[1]);
+    puVar1[1] = (undefined4)(piVar2);
+    if (piVar2 != (int *)0x0) {
+      (**(code **)(*piVar2 + 4))();
+    }
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 8;
+    return;
+  }
+  thunk_FUN_10273190(puVar1,param_2);
+  return;
 }
 
 
@@ -3626,7 +3429,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1027eac0(int param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = *(undefined4 *)(param_2 + 4);
+  param_1[1] = (undefined4)(*(undefined4 *)(param_2 + 4));
   return (undefined4 *)(param_1);
 }
 
@@ -3638,8 +3441,65 @@ undefined4 * __fastcall FUN_1027eae0(undefined4 *param_1)
 
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1027eb40; body size 41 bytes.
+#line 1 "ENTRY_1027eb40"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1027eb40(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1027eba0; body size 41 bytes.
+#line 1 "ENTRY_1027eba0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1027eba0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1027ec00; body size 41 bytes.
+#line 1 "ENTRY_1027ec00"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1027ec00(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
   return (undefined4 *)(param_1);
 }
 
@@ -3903,112 +3763,8 @@ void __thiscall Recovered_Bulk::FUN_10280e10(undefined4 param_2)
   *(int *)(iVar1 + 4) = iVar1;
   *(int *)iVar1 = (int)(iVar1);
   *(int *)(iVar1 + 8) = iVar1;
-  param_1[1] = 0;
+  param_1[1] = (int)(0);
   thunk_FUN_1027e130(param_2,param_2);
-  return;
-}
-
-
-// Reference entry 10280ff0; body size 61 bytes.
-#line 1 "ENTRY_10280ff0"
-
-void __thiscall Recovered_Bulk::FUN_10280ff0(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 10281040; body size 61 bytes.
-#line 1 "ENTRY_10281040"
-
-void __thiscall Recovered_Bulk::FUN_10281040(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 10281090; body size 61 bytes.
-#line 1 "ENTRY_10281090"
-
-void __thiscall Recovered_Bulk::FUN_10281090(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102810e0; body size 61 bytes.
-#line 1 "ENTRY_102810e0"
-
-void __thiscall Recovered_Bulk::FUN_102810e0(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
   return;
 }
 
@@ -4080,7 +3836,7 @@ void __fastcall FUN_10281230(int *param_1)
   *(int *)(iVar1 + 4) = iVar1;
   *(int *)iVar1 = (int)(iVar1);
   *(int *)(iVar1 + 8) = iVar1;
-  param_1[1] = 0;
+  param_1[1] = (int)(0);
   return;
 }
 
@@ -4338,12 +4094,12 @@ undefined4 __thiscall Recovered_Bulk::FUN_10283430(uint param_2,int param_3)
   if (uVar1 < param_2) {
     param_2 = (uint)(uVar1);
   }
-  param_1[4] = param_2;
+  param_1[4] = (int)(param_2);
   uVar2 = (uint)(param_3 + param_2);
   if (uVar1 < param_3 + param_2) {
     uVar2 = (uint)(uVar1);
   }
-  param_1[6] = uVar2;
+  param_1[6] = (int)(uVar2);
   return (undefined4)(1);
 }
 
@@ -4438,6 +4194,94 @@ void __stdcall FUN_10284810(undefined4 param_1,int *param_2)
 }
 
 
+// Reference entry 10284df0; body size 59 bytes.
+#line 1 "ENTRY_10284df0"
+
+void __thiscall Recovered_Bulk::FUN_10284df0(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  int *piVar2;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    piVar2 = (int *)((int *)param_2[1]);
+    puVar1[1] = (undefined4)(piVar2);
+    if (piVar2 != (int *)0x0) {
+      (**(code **)(*piVar2 + 4))();
+    }
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 8;
+    return;
+  }
+  thunk_FUN_10284380(puVar1,param_2);
+  return;
+}
+
+
+// Reference entry 10284e40; body size 59 bytes.
+#line 1 "ENTRY_10284e40"
+
+void __thiscall Recovered_Bulk::FUN_10284e40(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  int *piVar2;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    piVar2 = (int *)((int *)param_2[1]);
+    puVar1[1] = (undefined4)(piVar2);
+    if (piVar2 != (int *)0x0) {
+      (**(code **)(*piVar2 + 4))();
+    }
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 8;
+    return;
+  }
+  thunk_FUN_10284520(puVar1,param_2);
+  return;
+}
+
+
+// Reference entry 10285230; body size 41 bytes.
+#line 1 "ENTRY_10285230"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10285230(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 10285290; body size 41 bytes.
+#line 1 "ENTRY_10285290"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10285290(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
 // Reference entry 102852d0; body size 24 bytes.
 #line 1 "ENTRY_102852d0"
 
@@ -4475,7 +4319,7 @@ undefined4 * __fastcall FUN_10285330(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x14));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -4736,6 +4580,56 @@ undefined4 * FUN_10288010(undefined4 *param_1)
 }
 
 
+// Reference entry 1028a5e0; body size 59 bytes.
+#line 1 "ENTRY_1028a5e0"
+
+void __thiscall Recovered_Bulk::FUN_1028a5e0(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  int *piVar2;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    piVar2 = (int *)((int *)param_2[1]);
+    puVar1[1] = (undefined4)(piVar2);
+    if (piVar2 != (int *)0x0) {
+      (**(code **)(*piVar2 + 4))();
+    }
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 8;
+    return;
+  }
+  thunk_FUN_10284520(puVar1,param_2);
+  return;
+}
+
+
+// Reference entry 1028a630; body size 59 bytes.
+#line 1 "ENTRY_1028a630"
+
+void __thiscall Recovered_Bulk::FUN_1028a630(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  int *piVar2;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    piVar2 = (int *)((int *)param_2[1]);
+    puVar1[1] = (undefined4)(piVar2);
+    if (piVar2 != (int *)0x0) {
+      (**(code **)(*piVar2 + 4))();
+    }
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 8;
+    return;
+  }
+  thunk_FUN_10284380(puVar1,param_2);
+  return;
+}
+
+
 // Reference entry 1028b250; body size 16 bytes.
 #line 1 "ENTRY_1028b250"
 
@@ -4847,6 +4741,44 @@ void __stdcall FUN_1028cb20(undefined4 *param_1,undefined4 param_2)
 }
 
 
+// Reference entry 1028cc30; body size 41 bytes.
+#line 1 "ENTRY_1028cc30"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1028cc30(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1028cc90; body size 41 bytes.
+#line 1 "ENTRY_1028cc90"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1028cc90(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
 // Reference entry 1028ccd0; body size 24 bytes.
 #line 1 "ENTRY_1028ccd0"
 
@@ -4884,7 +4816,7 @@ undefined4 * __fastcall FUN_1028cd50(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x18));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -4904,7 +4836,7 @@ undefined4 * __fastcall FUN_1028cdf0(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x18));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -5295,84 +5227,6 @@ int * FUN_1028f290(int *param_1)
 }
 
 
-// Reference entry 1028fa20; body size 61 bytes.
-#line 1 "ENTRY_1028fa20"
-
-void __thiscall Recovered_Bulk::FUN_1028fa20(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 1028fa70; body size 61 bytes.
-#line 1 "ENTRY_1028fa70"
-
-void __thiscall Recovered_Bulk::FUN_1028fa70(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 1028fac0; body size 61 bytes.
-#line 1 "ENTRY_1028fac0"
-
-void __thiscall Recovered_Bulk::FUN_1028fac0(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
 // Reference entry 102901b0; body size 33 bytes.
 #line 1 "ENTRY_102901b0"
 
@@ -5386,7 +5240,7 @@ void __fastcall FUN_102901b0(int *param_1)
   *(int *)(iVar1 + 4) = iVar1;
   *(int *)iVar1 = (int)(iVar1);
   *(int *)(iVar1 + 8) = iVar1;
-  param_1[1] = 0;
+  param_1[1] = (int)(0);
   return;
 }
 
@@ -5404,7 +5258,7 @@ void __fastcall FUN_102901e0(int *param_1)
   *(int *)(iVar1 + 4) = iVar1;
   *(int *)iVar1 = (int)(iVar1);
   *(int *)(iVar1 + 8) = iVar1;
-  param_1[1] = 0;
+  param_1[1] = (int)(0);
   return;
 }
 
@@ -5520,6 +5374,44 @@ void __thiscall Recovered_Bulk::FUN_10294670(undefined4 param_2)
 }
 
 
+// Reference entry 102950f0; body size 41 bytes.
+#line 1 "ENTRY_102950f0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102950f0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 10295160; body size 41 bytes.
+#line 1 "ENTRY_10295160"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10295160(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
 // Reference entry 102951c0; body size 24 bytes.
 #line 1 "ENTRY_102951c0"
 
@@ -5543,7 +5435,7 @@ undefined4 * __fastcall FUN_10295200(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x1c));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -5563,7 +5455,7 @@ undefined4 * __fastcall FUN_10295320(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0xc));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -5786,7 +5678,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10297540(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_RHttpGetNoRedirectAIOOp);
-  param_1[0x18] = (uint)&ghidra_vftable_RHttpGetNoRedirectAIOOp;
+  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RHttpGetNoRedirectAIOOp);
   thunk_FUN_111c0a80();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,&DAT_00004494);
@@ -5928,7 +5820,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10297880(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpLookupV1CertInfoAIOOp);
-  param_1[2] = (uint)&ghidra_vftable_SCOpLookupV1CertInfoAIOOp;
+  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCOpLookupV1CertInfoAIOOp);
   thunk_FUN_10296370();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x48);
@@ -5986,7 +5878,7 @@ void __fastcall FUN_102995c0(int *param_1)
   *(int *)(iVar1 + 4) = iVar1;
   *(int *)iVar1 = (int)(iVar1);
   *(int *)(iVar1 + 8) = iVar1;
-  param_1[1] = 0;
+  param_1[1] = (int)(0);
   return;
 }
 
@@ -6055,16 +5947,16 @@ uint __thiscall Recovered_Bulk::FUN_1029ae60(undefined4 *param_2,int param_3)
     uVar3 = (undefined4)(*(undefined4 *)(iVar1 + 0x6150));
     uVar4 = (undefined4)(*(undefined4 *)(iVar1 + 0x6154));
     *param_2 = (undefined4)(*(undefined4 *)(iVar1 + 0x6148));
-    param_2[1] = uVar2;
-    param_2[2] = uVar3;
-    param_2[3] = uVar4;
+    param_2[1] = (undefined4)(uVar2);
+    param_2[2] = (undefined4)(uVar3);
+    param_2[3] = (undefined4)(uVar4);
     uVar2 = (undefined4)(*(undefined4 *)(iVar1 + 0x615c));
     uVar3 = (undefined4)(*(undefined4 *)(iVar1 + 0x6160));
     uVar4 = (undefined4)(*(undefined4 *)(iVar1 + 0x6164));
-    param_2[4] = *(undefined4 *)(iVar1 + 0x6158);
-    param_2[5] = uVar2;
-    param_2[6] = uVar3;
-    param_2[7] = uVar4;
+    param_2[4] = (undefined4)(*(undefined4 *)(iVar1 + 0x6158));
+    param_2[5] = (undefined4)(uVar2);
+    param_2[6] = (undefined4)(uVar3);
+    param_2[7] = (undefined4)(uVar4);
     return (uint)(((uint)((int3)((uint)iVar1 >> 8)) << 8 | (uint)(1)));
   }
   return (uint)(in_EAX & 0xffffff00);
@@ -6459,6 +6351,25 @@ uint __thiscall Recovered_Bulk::FUN_1029e730(uint param_2)
 }
 
 
+// Reference entry 1029f0f0; body size 41 bytes.
+#line 1 "ENTRY_1029f0f0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1029f0f0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
 // Reference entry 1029f130; body size 24 bytes.
 #line 1 "ENTRY_1029f130"
 
@@ -6570,7 +6481,7 @@ void __fastcall FUN_1029ff20(int *param_1)
   *(int *)(iVar1 + 4) = iVar1;
   *(int *)iVar1 = (int)(iVar1);
   *(int *)(iVar1 + 8) = iVar1;
-  param_1[1] = 0;
+  param_1[1] = (int)(0);
   return;
 }
 
@@ -6773,6 +6684,56 @@ void __thiscall Recovered_Bulk::FUN_102a5620(int param_2)
 }
 
 
+// Reference entry 102a5c90; body size 59 bytes.
+#line 1 "ENTRY_102a5c90"
+
+void __thiscall Recovered_Bulk::FUN_102a5c90(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  int *piVar2;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    piVar2 = (int *)((int *)param_2[1]);
+    puVar1[1] = (undefined4)(piVar2);
+    if (piVar2 != (int *)0x0) {
+      (**(code **)(*piVar2 + 4))();
+    }
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 8;
+    return;
+  }
+  thunk_FUN_102a3810(puVar1,param_2);
+  return;
+}
+
+
+// Reference entry 102a5ce0; body size 59 bytes.
+#line 1 "ENTRY_102a5ce0"
+
+void __thiscall Recovered_Bulk::FUN_102a5ce0(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  int *piVar2;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    piVar2 = (int *)((int *)param_2[1]);
+    puVar1[1] = (undefined4)(piVar2);
+    if (piVar2 != (int *)0x0) {
+      (**(code **)(*piVar2 + 4))();
+    }
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 8;
+    return;
+  }
+  thunk_FUN_102a3ad0(puVar1,param_2);
+  return;
+}
+
+
 // Reference entry 102a62b0; body size 21 bytes.
 #line 1 "ENTRY_102a62b0"
 
@@ -6780,7 +6741,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_102a62b0(int param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = *(undefined4 *)(param_2 + 4);
+  param_1[1] = (undefined4)(*(undefined4 *)(param_2 + 4));
   return (undefined4 *)(param_1);
 }
 
@@ -6792,8 +6753,122 @@ undefined4 * __fastcall FUN_102a62d0(undefined4 *param_1)
 
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102a6360; body size 41 bytes.
+#line 1 "ENTRY_102a6360"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102a6360(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102a63c0; body size 41 bytes.
+#line 1 "ENTRY_102a63c0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102a63c0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102a6470; body size 41 bytes.
+#line 1 "ENTRY_102a6470"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102a6470(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102a6570; body size 41 bytes.
+#line 1 "ENTRY_102a6570"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102a6570(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102a65d0; body size 41 bytes.
+#line 1 "ENTRY_102a65d0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102a65d0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102a6690; body size 41 bytes.
+#line 1 "ENTRY_102a6690"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102a6690(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
   return (undefined4 *)(param_1);
 }
 
@@ -6821,7 +6896,7 @@ undefined4 * __fastcall FUN_102a67b0(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x18));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -6841,7 +6916,7 @@ undefined4 * __fastcall FUN_102a6850(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x18));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -6861,7 +6936,7 @@ undefined4 * __fastcall FUN_102a6890(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x20));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -6881,7 +6956,7 @@ undefined4 * __fastcall FUN_102a68d0(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x14));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -6903,7 +6978,7 @@ void __fastcall FUN_102a8ed0(undefined4 *param_1)
   puVar1 = (undefined4 *)(param_1 + 2);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCArray);
   thunk_FUN_102a30a0(*puVar1,param_1[3],puVar1);
-  param_1[3] = *puVar1;
+  param_1[3] = (undefined4)(*puVar1);
   thunk_FUN_102a9b00();
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
@@ -7420,214 +7495,6 @@ void __thiscall Recovered_Bulk::FUN_102aca70(undefined4 param_2,undefined4 param
 }
 
 
-// Reference entry 102addb0; body size 61 bytes.
-#line 1 "ENTRY_102addb0"
-
-void __thiscall Recovered_Bulk::FUN_102addb0(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102ade00; body size 61 bytes.
-#line 1 "ENTRY_102ade00"
-
-void __thiscall Recovered_Bulk::FUN_102ade00(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102ade50; body size 61 bytes.
-#line 1 "ENTRY_102ade50"
-
-void __thiscall Recovered_Bulk::FUN_102ade50(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102adea0; body size 61 bytes.
-#line 1 "ENTRY_102adea0"
-
-void __thiscall Recovered_Bulk::FUN_102adea0(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102adef0; body size 61 bytes.
-#line 1 "ENTRY_102adef0"
-
-void __thiscall Recovered_Bulk::FUN_102adef0(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102adf40; body size 61 bytes.
-#line 1 "ENTRY_102adf40"
-
-void __thiscall Recovered_Bulk::FUN_102adf40(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102adf90; body size 61 bytes.
-#line 1 "ENTRY_102adf90"
-
-void __thiscall Recovered_Bulk::FUN_102adf90(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102adfe0; body size 61 bytes.
-#line 1 "ENTRY_102adfe0"
-
-void __thiscall Recovered_Bulk::FUN_102adfe0(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
 // Reference entry 102ae030; body size 30 bytes.
 #line 1 "ENTRY_102ae030"
 
@@ -7677,31 +7544,7 @@ void __fastcall FUN_102ae3b0(int *param_1)
   *(int *)(iVar1 + 4) = iVar1;
   *(int *)iVar1 = (int)(iVar1);
   *(int *)(iVar1 + 8) = iVar1;
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102ae3e0; body size 46 bytes.
-#line 1 "ENTRY_102ae3e0"
-
-void __fastcall FUN_102ae3e0(int *param_1)
-
-{
-  int iVar1;
-  int iVar2;
-  
-  iVar1 = (int)(param_1[1]);
-  iVar2 = (int)(*param_1);
-  if (iVar2 != iVar1) {
-    do {
-      thunk_FUN_102a9bb0();
-      iVar2 = (int)(iVar2 + 0xc);
-    } while (iVar2 != iVar1);
-    param_1[1] = *param_1;
-    return;
-  }
-  param_1[1] = iVar2;
+  param_1[1] = (int)(0);
   return;
 }
 
@@ -7713,7 +7556,7 @@ void __fastcall FUN_102ae420(undefined4 *param_1)
 
 {
   thunk_FUN_102a30a0(*param_1,param_1[1],param_1);
-  param_1[1] = *param_1;
+  param_1[1] = (undefined4)(*param_1);
   return;
 }
 
@@ -8146,6 +7989,56 @@ LAB_102b87a2:
 }
 
 
+// Reference entry 102b88c0; body size 59 bytes.
+#line 1 "ENTRY_102b88c0"
+
+void __thiscall Recovered_Bulk::FUN_102b88c0(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  int *piVar2;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    piVar2 = (int *)((int *)param_2[1]);
+    puVar1[1] = (undefined4)(piVar2);
+    if (piVar2 != (int *)0x0) {
+      (**(code **)(*piVar2 + 4))();
+    }
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 8;
+    return;
+  }
+  thunk_FUN_102a3810(puVar1,param_2);
+  return;
+}
+
+
+// Reference entry 102b8910; body size 59 bytes.
+#line 1 "ENTRY_102b8910"
+
+void __thiscall Recovered_Bulk::FUN_102b8910(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  int *piVar2;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    piVar2 = (int *)((int *)param_2[1]);
+    puVar1[1] = (undefined4)(piVar2);
+    if (piVar2 != (int *)0x0) {
+      (**(code **)(*piVar2 + 4))();
+    }
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 8;
+    return;
+  }
+  thunk_FUN_102a3ad0(puVar1,param_2);
+  return;
+}
+
+
 // Reference entry 102bc4e0; body size 50 bytes.
 #line 1 "ENTRY_102bc4e0"
 
@@ -8238,7 +8131,7 @@ undefined4 * __fastcall FUN_102bd1a0(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x28));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -8470,11 +8363,11 @@ undefined4 * __fastcall FUN_102c02f0(undefined4 *param_1)
 
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSearchQuery);
-  param_1[2] = 0;
-  param_1[3] = 0;
+  param_1[2] = (undefined4)(0);
+  param_1[3] = (undefined4)(0);
   return (undefined4 *)(param_1);
 }
 
@@ -8577,6 +8470,25 @@ void __thiscall Recovered_Bulk::FUN_102c1170(int param_2)
 }
 
 
+// Reference entry 102c1290; body size 41 bytes.
+#line 1 "ENTRY_102c1290"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102c1290(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
 // Reference entry 102c15b0; body size 19 bytes.
 #line 1 "ENTRY_102c15b0"
 
@@ -8671,8 +8583,8 @@ void __thiscall Recovered_Bulk::FUN_102c1b30(undefined4 *param_2)
   
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
   uVar1 = (undefined4)(*(undefined4 *)(param_1 + 8));
-  param_2[1] = *(undefined4 *)(param_1 + 4);
-  param_2[2] = uVar1;
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
+  param_2[2] = (undefined4)(uVar1);
   return;
 }
 
@@ -8712,8 +8624,8 @@ void __thiscall Recovered_Bulk::FUN_102c1ba0(undefined4 *param_2)
   
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
   uVar1 = (undefined4)(*(undefined4 *)(param_1 + 8));
-  param_2[1] = *(undefined4 *)(param_1 + 4);
-  param_2[2] = uVar1;
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
+  param_2[2] = (undefined4)(uVar1);
   return;
 }
 
@@ -8787,6 +8699,101 @@ void __thiscall Recovered_Bulk::FUN_102c36b0(int param_2)
   }
   *param_1 = (int)(param_2);
   return;
+}
+
+
+// Reference entry 102c3a90; body size 41 bytes.
+#line 1 "ENTRY_102c3a90"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102c3a90(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102c3ad0; body size 41 bytes.
+#line 1 "ENTRY_102c3ad0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102c3ad0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102c3b30; body size 41 bytes.
+#line 1 "ENTRY_102c3b30"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102c3b30(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102c3b70; body size 41 bytes.
+#line 1 "ENTRY_102c3b70"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102c3b70(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102c3bb0; body size 41 bytes.
+#line 1 "ENTRY_102c3bb0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102c3bb0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
 }
 
 
@@ -8964,74 +8971,6 @@ void __fastcall FUN_102c4bb0(int *param_1)
 }
 
 
-// Reference entry 102c4c90; body size 33 bytes.
-#line 1 "ENTRY_102c4c90"
-
-void __fastcall FUN_102c4c90(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 102c4cc0; body size 33 bytes.
-#line 1 "ENTRY_102c4cc0"
-
-void __fastcall FUN_102c4cc0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 102c4cf0; body size 33 bytes.
-#line 1 "ENTRY_102c4cf0"
-
-void __fastcall FUN_102c4cf0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 102c4d20; body size 33 bytes.
-#line 1 "ENTRY_102c4d20"
-
-void __fastcall FUN_102c4d20(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
 // Reference entry 102c4d70; body size 37 bytes.
 #line 1 "ENTRY_102c4d70"
 
@@ -9044,40 +8983,6 @@ void __fastcall FUN_102c4d70(undefined4 *param_1)
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
   return;
-}
-
-
-// Reference entry 102c52f0; body size 37 bytes.
-#line 1 "ENTRY_102c52f0"
-
-int * __fastcall FUN_102c52f0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return (int *)(param_1);
-}
-
-
-// Reference entry 102c5320; body size 37 bytes.
-#line 1 "ENTRY_102c5320"
-
-int * __fastcall FUN_102c5320(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return (int *)(param_1);
 }
 
 
@@ -9291,170 +9196,6 @@ undefined4 * __thiscall Recovered_Bulk::FUN_102c5c40(byte param_2)
 }
 
 
-// Reference entry 102c5d30; body size 33 bytes.
-#line 1 "ENTRY_102c5d30"
-
-void __fastcall FUN_102c5d30(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 102c5d60; body size 33 bytes.
-#line 1 "ENTRY_102c5d60"
-
-void __fastcall FUN_102c5d60(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 102c6970; body size 61 bytes.
-#line 1 "ENTRY_102c6970"
-
-void __thiscall Recovered_Bulk::FUN_102c6970(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102c69c0; body size 61 bytes.
-#line 1 "ENTRY_102c69c0"
-
-void __thiscall Recovered_Bulk::FUN_102c69c0(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102c6a10; body size 61 bytes.
-#line 1 "ENTRY_102c6a10"
-
-void __thiscall Recovered_Bulk::FUN_102c6a10(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102c6a60; body size 61 bytes.
-#line 1 "ENTRY_102c6a60"
-
-void __thiscall Recovered_Bulk::FUN_102c6a60(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102c6ab0; body size 61 bytes.
-#line 1 "ENTRY_102c6ab0"
-
-void __thiscall Recovered_Bulk::FUN_102c6ab0(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
 // Reference entry 102c6b00; body size 30 bytes.
 #line 1 "ENTRY_102c6b00"
 
@@ -9539,26 +9280,6 @@ SCStr * __stdcall FUN_102c6f30(SCStr *param_1)
 {
   ((SCStr *)(param_1))->int_allocRep("SCServiceAccountManager");
   return (SCStr *)(param_1);
-}
-
-
-// Reference entry 102c6f50; body size 43 bytes.
-#line 1 "ENTRY_102c6f50"
-
-void __fastcall FUN_102c6f50(undefined4 *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  *param_1 = (undefined4)(0);
-  param_1[1] = 0;
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 8))();
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-  }
-  return;
 }
 
 
@@ -9819,6 +9540,44 @@ void Catch_All_102cb677_102cb677(void)
 }
 
 
+// Reference entry 102cbeb0; body size 41 bytes.
+#line 1 "ENTRY_102cbeb0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102cbeb0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102cbef0; body size 41 bytes.
+#line 1 "ENTRY_102cbef0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102cbef0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
 // Reference entry 102cbfc0; body size 24 bytes.
 #line 1 "ENTRY_102cbfc0"
 
@@ -9856,7 +9615,7 @@ undefined4 * __fastcall FUN_102cc080(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x1c));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -9896,7 +9655,7 @@ void __fastcall FUN_102ccc00(undefined4 *param_1)
 
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[2] = 0;
+  param_1[2] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
   return;
@@ -9911,40 +9670,6 @@ void __fastcall FUN_102ccc20(int param_1)
 {
   if (*(int *)(param_1 + 4) != 0) {
     thunk_FUN_1148a50e(*(int *)(param_1 + 4),0x1c);
-  }
-  return;
-}
-
-
-// Reference entry 102ccc40; body size 33 bytes.
-#line 1 "ENTRY_102ccc40"
-
-void __fastcall FUN_102ccc40(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 102ccc70; body size 33 bytes.
-#line 1 "ENTRY_102ccc70"
-
-void __fastcall FUN_102ccc70(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
   }
   return;
 }
@@ -9973,40 +9698,6 @@ void __fastcall FUN_102ccd90(undefined4 *param_1)
 }
 
 
-// Reference entry 102ccdb0; body size 33 bytes.
-#line 1 "ENTRY_102ccdb0"
-
-void __fastcall FUN_102ccdb0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 102ccde0; body size 33 bytes.
-#line 1 "ENTRY_102ccde0"
-
-void __fastcall FUN_102ccde0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
 // Reference entry 102cce10; body size 28 bytes.
 #line 1 "ENTRY_102cce10"
 
@@ -10016,40 +9707,6 @@ void __fastcall FUN_102cce10(int *param_1)
   thunk_FUN_102cb1b0(param_1,*(undefined4 *)(*param_1 + 4));
   thunk_FUN_1148a50e(*param_1,0x1c);
   return;
-}
-
-
-// Reference entry 102cd310; body size 37 bytes.
-#line 1 "ENTRY_102cd310"
-
-int * __fastcall FUN_102cd310(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return (int *)(param_1);
-}
-
-
-// Reference entry 102cd340; body size 37 bytes.
-#line 1 "ENTRY_102cd340"
-
-int * __fastcall FUN_102cd340(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return (int *)(param_1);
 }
 
 
@@ -10120,7 +9777,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_102cd9a0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[2] = 0;
+  param_1[2] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
   if ((param_2 & 1) != 0) {
@@ -10235,40 +9892,6 @@ int * FUN_102ce0e0(int *param_1)
 }
 
 
-// Reference entry 102ce210; body size 33 bytes.
-#line 1 "ENTRY_102ce210"
-
-void __fastcall FUN_102ce210(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 102ce240; body size 33 bytes.
-#line 1 "ENTRY_102ce240"
-
-void __fastcall FUN_102ce240(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
 // Reference entry 102ce2f0; body size 40 bytes.
 #line 1 "ENTRY_102ce2f0"
 
@@ -10277,87 +9900,9 @@ void FUN_102ce2f0(undefined4 *param_1,int param_2)
 {
   for (; param_2 != 0; param_2 = param_2 + -1) {
     *param_1 = (undefined4)(0);
-    param_1[1] = 0;
+    param_1[1] = (undefined4)(0);
     param_1 = (undefined4 *)(param_1 + 2);
   }
-  return;
-}
-
-
-// Reference entry 102cf0c0; body size 61 bytes.
-#line 1 "ENTRY_102cf0c0"
-
-void __thiscall Recovered_Bulk::FUN_102cf0c0(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102cf110; body size 61 bytes.
-#line 1 "ENTRY_102cf110"
-
-void __thiscall Recovered_Bulk::FUN_102cf110(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102cf160; body size 61 bytes.
-#line 1 "ENTRY_102cf160"
-
-void __thiscall Recovered_Bulk::FUN_102cf160(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
   return;
 }
 
@@ -10442,23 +9987,22 @@ SCStr * __stdcall FUN_102cf580(SCStr *param_1)
 }
 
 
-// Reference entry 102cf5a0; body size 43 bytes.
-#line 1 "ENTRY_102cf5a0"
+// Reference entry 102d2f50; body size 41 bytes.
+#line 1 "ENTRY_102d2f50"
 
-void __fastcall FUN_102cf5a0(undefined4 *param_1)
-
+undefined4 * __thiscall Recovered_Bulk::FUN_102d2f50(int *param_2)
 {
+  undefined4 *param_1 = (undefined4 *)this;
   int *piVar1;
   
-  piVar1 = (int *)((int *)param_1[1]);
-  *param_1 = (undefined4)(0);
-  param_1[1] = 0;
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 8))();
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
   }
-  return;
+  return (undefined4 *)(param_1);
 }
 
 
@@ -10471,7 +10015,7 @@ undefined4 * __fastcall FUN_102d3290(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x14));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -10528,23 +10072,6 @@ void __fastcall FUN_102d3bb0(int param_1)
 }
 
 
-// Reference entry 102d3bd0; body size 33 bytes.
-#line 1 "ENTRY_102d3bd0"
-
-void __fastcall FUN_102d3bd0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
 // Reference entry 102d3ce0; body size 38 bytes.
 #line 1 "ENTRY_102d3ce0"
 
@@ -10560,23 +10087,6 @@ void __fastcall FUN_102d3ce0(int param_1)
   }
   if (iVar1 != 0) {
     thunk_FUN_1148a50e(iVar1,0x14);
-  }
-  return;
-}
-
-
-// Reference entry 102d3d20; body size 33 bytes.
-#line 1 "ENTRY_102d3d20"
-
-void __fastcall FUN_102d3d20(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
   }
   return;
 }
@@ -10692,7 +10202,7 @@ void __thiscall Recovered_Bulk::FUN_102d48a0(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -10717,128 +10227,7 @@ void __thiscall Recovered_Bulk::FUN_102d4ea0(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
-  return;
-}
-
-
-// Reference entry 102d4fe0; body size 33 bytes.
-#line 1 "ENTRY_102d4fe0"
-
-void __fastcall FUN_102d4fe0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 102d5180; body size 61 bytes.
-#line 1 "ENTRY_102d5180"
-
-void __thiscall Recovered_Bulk::FUN_102d5180(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102d51d0; body size 61 bytes.
-#line 1 "ENTRY_102d51d0"
-
-void __thiscall Recovered_Bulk::FUN_102d51d0(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102d5220; body size 61 bytes.
-#line 1 "ENTRY_102d5220"
-
-void __thiscall Recovered_Bulk::FUN_102d5220(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102d5270; body size 61 bytes.
-#line 1 "ENTRY_102d5270"
-
-void __thiscall Recovered_Bulk::FUN_102d5270(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -10941,7 +10330,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_102d8ef0(int param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = *(undefined4 *)(param_2 + 4);
+  param_1[1] = (undefined4)(*(undefined4 *)(param_2 + 4));
   return (undefined4 *)(param_1);
 }
 
@@ -10953,8 +10342,27 @@ undefined4 * __fastcall FUN_102d8f10(undefined4 *param_1)
 
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102d8f40; body size 41 bytes.
+#line 1 "ENTRY_102d8f40"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102d8f40(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
   return (undefined4 *)(param_1);
 }
 
@@ -10980,12 +10388,12 @@ undefined4 * __fastcall FUN_102d9090(undefined4 *param_1)
 
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCStringTemplate);
-  param_1[2] = 0;
-  param_1[3] = 0;
-  param_1[4] = 0;
+  param_1[2] = (undefined4)(0);
+  param_1[3] = (undefined4)(0);
+  param_1[4] = (undefined4)(0);
   return (undefined4 *)(param_1);
 }
 
@@ -11129,6 +10537,44 @@ void __thiscall Recovered_Bulk::FUN_102dc570(int param_2)
 }
 
 
+// Reference entry 102dc720; body size 41 bytes.
+#line 1 "ENTRY_102dc720"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102dc720(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102dc760; body size 41 bytes.
+#line 1 "ENTRY_102dc760"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102dc760(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
 // Reference entry 102dc7a0; body size 24 bytes.
 #line 1 "ENTRY_102dc7a0"
 
@@ -11150,7 +10596,7 @@ void __fastcall FUN_102dcbd0(undefined4 *param_1)
 
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[2] = 0;
+  param_1[2] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
   return;
@@ -11237,7 +10683,7 @@ void __fastcall FUN_102dcec0(int param_1)
   if (piVar2 != (int *)0x0) {
     LOCK();
     iVar3 = (int)(piVar2[1] + -1);
-    piVar2[1] = iVar3;
+    piVar2[1] = (int)(iVar3);
     UNLOCK();
     if (iVar3 == 0) {
       (**(code **)*piVar2)();
@@ -11281,7 +10727,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_102dd2a0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[2] = 0;
+  param_1[2] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
   if ((param_2 & 1) != 0) {
@@ -11298,7 +10744,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_102dd2f0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[2] = 0;
+  param_1[2] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
   if ((param_2 & 1) != 0) {
@@ -11371,7 +10817,7 @@ void __thiscall Recovered_Bulk::FUN_102dd5c0(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -11407,33 +10853,7 @@ void __thiscall Recovered_Bulk::FUN_102dd680(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
-  return;
-}
-
-
-// Reference entry 102dd790; body size 61 bytes.
-#line 1 "ENTRY_102dd790"
-
-void __thiscall Recovered_Bulk::FUN_102dd790(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -11835,6 +11255,177 @@ void __thiscall Recovered_Bulk::FUN_102e97a0(int *param_2,undefined4 param_3)
 }
 
 
+// Reference entry 102e9ed0; body size 41 bytes.
+#line 1 "ENTRY_102e9ed0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102e9ed0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102e9f10; body size 41 bytes.
+#line 1 "ENTRY_102e9f10"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102e9f10(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102e9f70; body size 41 bytes.
+#line 1 "ENTRY_102e9f70"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102e9f70(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102e9fd0; body size 41 bytes.
+#line 1 "ENTRY_102e9fd0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102e9fd0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102ea130; body size 41 bytes.
+#line 1 "ENTRY_102ea130"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102ea130(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102ea190; body size 41 bytes.
+#line 1 "ENTRY_102ea190"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102ea190(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102ea230; body size 41 bytes.
+#line 1 "ENTRY_102ea230"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102ea230(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102ea2d0; body size 41 bytes.
+#line 1 "ENTRY_102ea2d0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102ea2d0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 102ea350; body size 41 bytes.
+#line 1 "ENTRY_102ea350"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_102ea350(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
 // Reference entry 102ea430; body size 24 bytes.
 #line 1 "ENTRY_102ea430"
 
@@ -11900,7 +11491,7 @@ undefined4 * __fastcall FUN_102ea770(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x18));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -11920,7 +11511,7 @@ undefined4 * __fastcall FUN_102ea7b0(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x18));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -11940,7 +11531,7 @@ undefined4 * __fastcall FUN_102ea9e0(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x14));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -12221,23 +11812,6 @@ void __fastcall FUN_102ec380(int param_1)
 }
 
 
-// Reference entry 102ec3a0; body size 33 bytes.
-#line 1 "ENTRY_102ec3a0"
-
-void __fastcall FUN_102ec3a0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
 // Reference entry 102ec4b0; body size 28 bytes.
 #line 1 "ENTRY_102ec4b0"
 
@@ -12270,23 +11844,6 @@ void __fastcall FUN_102ec5a0(int param_1)
 {
   if (*(int *)(param_1 + 4) != 0) {
     thunk_FUN_1148a50e(*(int *)(param_1 + 4),0x18);
-  }
-  return;
-}
-
-
-// Reference entry 102ec5d0; body size 33 bytes.
-#line 1 "ENTRY_102ec5d0"
-
-void __fastcall FUN_102ec5d0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
   }
   return;
 }
@@ -12596,23 +12153,6 @@ void __fastcall FUN_102eff20(int param_1)
 }
 
 
-// Reference entry 102f0580; body size 33 bytes.
-#line 1 "ENTRY_102f0580"
-
-void __fastcall FUN_102f0580(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
 // Reference entry 102f08c0; body size 20 bytes.
 #line 1 "ENTRY_102f08c0"
 
@@ -12620,188 +12160,6 @@ void __stdcall FUN_102f08c0(undefined4 param_1)
 
 {
   thunk_FUN_103d61d0(param_1,0);
-  return;
-}
-
-
-// Reference entry 102f08e0; body size 61 bytes.
-#line 1 "ENTRY_102f08e0"
-
-void __thiscall Recovered_Bulk::FUN_102f08e0(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102f0930; body size 61 bytes.
-#line 1 "ENTRY_102f0930"
-
-void __thiscall Recovered_Bulk::FUN_102f0930(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102f0980; body size 61 bytes.
-#line 1 "ENTRY_102f0980"
-
-void __thiscall Recovered_Bulk::FUN_102f0980(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102f09d0; body size 61 bytes.
-#line 1 "ENTRY_102f09d0"
-
-void __thiscall Recovered_Bulk::FUN_102f09d0(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102f0a20; body size 61 bytes.
-#line 1 "ENTRY_102f0a20"
-
-void __thiscall Recovered_Bulk::FUN_102f0a20(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102f0a70; body size 61 bytes.
-#line 1 "ENTRY_102f0a70"
-
-void __thiscall Recovered_Bulk::FUN_102f0a70(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 102f0ac0; body size 61 bytes.
-#line 1 "ENTRY_102f0ac0"
-
-void __thiscall Recovered_Bulk::FUN_102f0ac0(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
   return;
 }
 
@@ -12923,7 +12281,7 @@ void __fastcall FUN_102f1240(int *param_1)
   *(int *)(iVar1 + 4) = iVar1;
   *(int *)iVar1 = (int)(iVar1);
   *(int *)(iVar1 + 8) = iVar1;
-  param_1[1] = 0;
+  param_1[1] = (int)(0);
   return;
 }
 
@@ -12959,86 +12317,6 @@ SCStr * __stdcall FUN_102f4590(SCStr *param_1)
 {
   ((SCStr *)(param_1))->int_allocRep("SCLibraryDefaultURLHandler");
   return (SCStr *)(param_1);
-}
-
-
-// Reference entry 102f45b0; body size 43 bytes.
-#line 1 "ENTRY_102f45b0"
-
-void __fastcall FUN_102f45b0(undefined4 *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  *param_1 = (undefined4)(0);
-  param_1[1] = 0;
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 8))();
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 102f45f0; body size 43 bytes.
-#line 1 "ENTRY_102f45f0"
-
-void __fastcall FUN_102f45f0(undefined4 *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  *param_1 = (undefined4)(0);
-  param_1[1] = 0;
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 8))();
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 102f4630; body size 43 bytes.
-#line 1 "ENTRY_102f4630"
-
-void __fastcall FUN_102f4630(undefined4 *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  *param_1 = (undefined4)(0);
-  param_1[1] = 0;
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 8))();
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 102f4670; body size 43 bytes.
-#line 1 "ENTRY_102f4670"
-
-void __fastcall FUN_102f4670(undefined4 *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  *param_1 = (undefined4)(0);
-  param_1[1] = 0;
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 8))();
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-  }
-  return;
 }
 
 
@@ -13917,7 +13195,7 @@ undefined4 * __fastcall FUN_103051a0(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x10));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -13957,23 +13235,6 @@ void __fastcall FUN_10305f00(int param_1)
       return;
     }
     thunk_FUN_1148a50e(*(int *)(iVar1 + -4),0x104f);
-  }
-  return;
-}
-
-
-// Reference entry 10305f40; body size 33 bytes.
-#line 1 "ENTRY_10305f40"
-
-void __fastcall FUN_10305f40(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
   }
   return;
 }
@@ -14025,23 +13286,6 @@ void __fastcall FUN_10306210(int param_1)
 }
 
 
-// Reference entry 10306260; body size 33 bytes.
-#line 1 "ENTRY_10306260"
-
-void __fastcall FUN_10306260(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
 // Reference entry 10306290; body size 25 bytes.
 #line 1 "ENTRY_10306290"
 
@@ -14061,8 +13305,8 @@ void __fastcall FUN_10306300(undefined4 *param_1)
 
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCConfigLoadAsyncIOOperation);
-  param_1[2] = (uint)&ghidra_vftable_SCConfigLoadAsyncIOOperation;
-  param_1[7] = (uint)&ghidra_vftable_SCConfigLoadAsyncIOOperation;
+  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCConfigLoadAsyncIOOperation);
+  param_1[7] = (undefined4)((uint)&ghidra_vftable_SCConfigLoadAsyncIOOperation);
   thunk_FUN_112765b0();
   thunk_FUN_111fc270();
   return;
@@ -14089,10 +13333,10 @@ void __fastcall FUN_10306590(undefined4 *param_1)
 
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCUsageRequest);
-  param_1[0x1883] = (uint)&ghidra_vftable_SCUsageRequest;
+  param_1[0x1883] = (undefined4)((uint)&ghidra_vftable_SCUsageRequest);
   if ((void *)param_1[0x1888] != (void *)0x0) {
     free((void *)param_1[0x1888]);
-    param_1[0x1888] = 0;
+    param_1[0x1888] = (undefined4)(0);
   }
   thunk_FUN_1124a3e0();
   return;
@@ -14150,7 +13394,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10306a10(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_RHttpPostNoRedirectAIOOp);
-  param_1[0x18] = (uint)&ghidra_vftable_RHttpPostNoRedirectAIOOp;
+  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RHttpPostNoRedirectAIOOp);
   thunk_FUN_111c0a80();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x4490);
@@ -14275,7 +13519,7 @@ void __thiscall Recovered_Bulk::FUN_10307120(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -14321,24 +13565,7 @@ void __thiscall Recovered_Bulk::FUN_10307d70(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
-  return;
-}
-
-
-// Reference entry 10307f30; body size 33 bytes.
-#line 1 "ENTRY_10307f30"
-
-void __fastcall FUN_10307f30(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -14368,7 +13595,7 @@ void __fastcall FUN_10308d60(int *param_1)
   *(int *)(iVar1 + 4) = iVar1;
   *(int *)iVar1 = (int)(iVar1);
   *(int *)(iVar1 + 8) = iVar1;
-  param_1[1] = 0;
+  param_1[1] = (int)(0);
   return;
 }
 
@@ -14382,7 +13609,7 @@ void __fastcall FUN_10308d90(int *param_1)
   thunk_FUN_10304120(param_1,*param_1);
   *(int *)*param_1 = (int)(*param_1);
   *(int *)(*param_1 + 4) = *param_1;
-  param_1[1] = 0;
+  param_1[1] = (int)(0);
   return;
 }
 
@@ -14596,7 +13823,7 @@ undefined4 * __fastcall FUN_1030f080(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0xc));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -14614,7 +13841,7 @@ undefined4 * __fastcall FUN_1030f0b0(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0xc));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -14632,7 +13859,7 @@ undefined4 * __fastcall FUN_1030f0e0(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x4c));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -14716,7 +13943,7 @@ void __fastcall FUN_1030fae0(int *param_1)
   undefined4 *puVar2;
   
   puVar1 = (undefined4 *)((undefined4 *)*param_1);
-  *(undefined4 *)puVar1[1] = 0;
+  *(undefined4 *)puVar1[1] = (undefined4)(0);
   puVar1 = (undefined4 *)((undefined4 *)*puVar1);
   while (puVar1 != (undefined4 *)0x0) {
     puVar2 = (undefined4 *)((undefined4 *)*puVar1);
@@ -14738,7 +13965,7 @@ void __fastcall FUN_1030fb30(int *param_1)
   undefined4 *puVar2;
   
   puVar1 = (undefined4 *)((undefined4 *)*param_1);
-  *(undefined4 *)puVar1[1] = 0;
+  *(undefined4 *)puVar1[1] = (undefined4)(0);
   puVar1 = (undefined4 *)((undefined4 *)*puVar1);
   while (puVar1 != (undefined4 *)0x0) {
     puVar2 = (undefined4 *)((undefined4 *)*puVar1);
@@ -14787,7 +14014,7 @@ void __fastcall FUN_1030fc50(int param_1)
   piVar1 = (int *)((int *)**(int **)(param_1 + 0x24));
   if (piVar1 != *(int **)(param_1 + 0x24)) {
     do {
-      *(undefined1 *)piVar1[2] = 0;
+      *(undefined1 *)piVar1[2] = (int)(0);
       piVar1 = (int *)((int *)*piVar1);
     } while (piVar1 != (int *)*(int *)(param_1 + 0x24));
   }
@@ -14873,38 +14100,6 @@ void __fastcall FUN_10310420(int param_1)
 }
 
 
-// Reference entry 10310800; body size 29 bytes.
-#line 1 "ENTRY_10310800"
-
-void __fastcall FUN_10310800(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[2]);
-  param_1[2] = *piVar1;
-  thunk_FUN_1148a50e(piVar1,0xc);
-  *(int *)(*param_1 + 4) = *(int *)(*param_1 + 4) + -1;
-  return;
-}
-
-
-// Reference entry 10310830; body size 29 bytes.
-#line 1 "ENTRY_10310830"
-
-void __fastcall FUN_10310830(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[2]);
-  param_1[2] = *piVar1;
-  thunk_FUN_1148a50e(piVar1,0xc);
-  *(int *)(*param_1 + 4) = *(int *)(*param_1 + 4) + -1;
-  return;
-}
-
-
 // Reference entry 10311d50; body size 25 bytes.
 #line 1 "ENTRY_10311d50"
 
@@ -14926,7 +14121,7 @@ void __fastcall FUN_10312e60(int *param_1)
   thunk_FUN_1030d760(param_1,*param_1);
   *(int *)*param_1 = (int)(*param_1);
   *(int *)(*param_1 + 4) = *param_1;
-  param_1[1] = 0;
+  param_1[1] = (int)(0);
   return;
 }
 
@@ -15013,6 +14208,183 @@ void Catch_All_10314ec9_10314ec9(void)
   thunk_FUN_101f55f0(*(undefined4 *)(unaff_EBP + -0x34),*(undefined4 *)(unaff_EBP + -0x20));
                     
   _CxxThrowException((void *)0x0,(ThrowInfo *)0x0);
+}
+
+
+// Reference entry 103151c0; body size 59 bytes.
+#line 1 "ENTRY_103151c0"
+
+void __thiscall Recovered_Bulk::FUN_103151c0(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  int *piVar2;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    piVar2 = (int *)((int *)param_2[1]);
+    puVar1[1] = (undefined4)(piVar2);
+    if (piVar2 != (int *)0x0) {
+      (**(code **)(*piVar2 + 4))();
+    }
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 8;
+    return;
+  }
+  thunk_FUN_10314cc0(puVar1,param_2);
+  return;
+}
+
+
+// Reference entry 10315e60; body size 41 bytes.
+#line 1 "ENTRY_10315e60"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10315e60(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 10315ea0; body size 41 bytes.
+#line 1 "ENTRY_10315ea0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10315ea0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 10315ee0; body size 41 bytes.
+#line 1 "ENTRY_10315ee0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10315ee0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 10315f20; body size 41 bytes.
+#line 1 "ENTRY_10315f20"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10315f20(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 10315f60; body size 41 bytes.
+#line 1 "ENTRY_10315f60"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10315f60(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 10315fa0; body size 41 bytes.
+#line 1 "ENTRY_10315fa0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10315fa0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 10316060; body size 41 bytes.
+#line 1 "ENTRY_10316060"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10316060(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 103160a0; body size 41 bytes.
+#line 1 "ENTRY_103160a0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_103160a0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
 }
 
 
@@ -15475,7 +14847,7 @@ void __fastcall FUN_103188b0(undefined4 *param_1)
 
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[2] = 0;
+  param_1[2] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
   return;
@@ -15757,7 +15129,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_103195d0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
-  param_1[2] = 0;
+  param_1[2] = (undefined4)(0);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
   if ((param_2 & 1) != 0) {
@@ -15789,8 +15161,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10319650(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAVTPauseAIOOp);
-  param_1[0x18] = (uint)&ghidra_vftable_RUpnpAVTPauseAIOOp;
-  param_1[0x11b] = (uint)&ghidra_vftable_RUpnpAVTPauseAIOOp;
+  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAVTPauseAIOOp);
+  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAVTPauseAIOOp);
   thunk_FUN_111c0af0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xd7d0);
@@ -15806,8 +15178,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_103196a0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAVTStopAIOOp);
-  param_1[0x18] = (uint)&ghidra_vftable_RUpnpAVTStopAIOOp;
-  param_1[0x11b] = (uint)&ghidra_vftable_RUpnpAVTStopAIOOp;
+  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpAVTStopAIOOp);
+  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpAVTStopAIOOp);
   thunk_FUN_111c0af0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xd7d0);
@@ -15823,8 +15195,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_103196f0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpCMGetProtocolInfoAIOOp);
-  param_1[0x18] = (uint)&ghidra_vftable_RUpnpCMGetProtocolInfoAIOOp;
-  param_1[0x11b] = (uint)&ghidra_vftable_RUpnpCMGetProtocolInfoAIOOp;
+  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpCMGetProtocolInfoAIOOp);
+  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpCMGetProtocolInfoAIOOp);
   thunk_FUN_111c0af0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xdfd0);
@@ -15840,8 +15212,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10319740(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetButtonLockStateAIOOp);
-  param_1[0x18] = (uint)&ghidra_vftable_RUpnpDPGetButtonLockStateAIOOp;
-  param_1[0x11b] = (uint)&ghidra_vftable_RUpnpDPGetButtonLockStateAIOOp;
+  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetButtonLockStateAIOOp);
+  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetButtonLockStateAIOOp);
   thunk_FUN_111c0af0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xd7d8);
@@ -15857,8 +15229,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10319790(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetLEDStateAIOOp);
-  param_1[0x18] = (uint)&ghidra_vftable_RUpnpDPGetLEDStateAIOOp;
-  param_1[0x11b] = (uint)&ghidra_vftable_RUpnpDPGetLEDStateAIOOp;
+  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetLEDStateAIOOp);
+  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetLEDStateAIOOp);
   thunk_FUN_111c0af0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xd7d8);
@@ -15874,8 +15246,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_103197e0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpDPRemoveBondedZonesAIOOp);
-  param_1[0x18] = (uint)&ghidra_vftable_RUpnpDPRemoveBondedZonesAIOOp;
-  param_1[0x11b] = (uint)&ghidra_vftable_RUpnpDPRemoveBondedZonesAIOOp;
+  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpDPRemoveBondedZonesAIOOp);
+  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpDPRemoveBondedZonesAIOOp);
   thunk_FUN_111c0af0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xd7d0);
@@ -15891,8 +15263,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10319830(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpDPSetButtonLockStateAIOOp);
-  param_1[0x18] = (uint)&ghidra_vftable_RUpnpDPSetButtonLockStateAIOOp;
-  param_1[0x11b] = (uint)&ghidra_vftable_RUpnpDPSetButtonLockStateAIOOp;
+  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpDPSetButtonLockStateAIOOp);
+  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpDPSetButtonLockStateAIOOp);
   thunk_FUN_111c0af0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xd7d0);
@@ -15908,8 +15280,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10319880(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpDPSetLEDStateAIOOp);
-  param_1[0x18] = (uint)&ghidra_vftable_RUpnpDPSetLEDStateAIOOp;
-  param_1[0x11b] = (uint)&ghidra_vftable_RUpnpDPSetLEDStateAIOOp;
+  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpDPSetLEDStateAIOOp);
+  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpDPSetLEDStateAIOOp);
   thunk_FUN_111c0af0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xd7d0);
@@ -15925,8 +15297,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_103198d0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpDPSetZoneAttributesAIOOp);
-  param_1[0x18] = (uint)&ghidra_vftable_RUpnpDPSetZoneAttributesAIOOp;
-  param_1[0x11b] = (uint)&ghidra_vftable_RUpnpDPSetZoneAttributesAIOOp;
+  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpDPSetZoneAttributesAIOOp);
+  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpDPSetZoneAttributesAIOOp);
   thunk_FUN_111c0af0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xd7d0);
@@ -16068,7 +15440,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10319ad0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpConnectionManagerGetProtocolInfo);
-  param_1[2] = (uint)&ghidra_vftable_SCOpConnectionManagerGetProtocolInfo;
+  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCOpConnectionManagerGetProtocolInfo);
   thunk_FUN_10317920();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x48);
@@ -16084,7 +15456,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10319b10(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpDevicePropertiesGetButtonLockState);
-  param_1[2] = (uint)&ghidra_vftable_SCOpDevicePropertiesGetButtonLockState;
+  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCOpDevicePropertiesGetButtonLockState);
   thunk_FUN_10317a70();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x48);
@@ -16100,7 +15472,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10319b50(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpDevicePropertiesGetLEDState);
-  param_1[2] = (uint)&ghidra_vftable_SCOpDevicePropertiesGetLEDState;
+  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCOpDevicePropertiesGetLEDState);
   thunk_FUN_10317bc0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x48);
@@ -16116,7 +15488,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10319b90(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpDevicePropertiesSetButtonLockState);
-  param_1[2] = (uint)&ghidra_vftable_SCOpDevicePropertiesSetButtonLockState;
+  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCOpDevicePropertiesSetButtonLockState);
   thunk_FUN_10317d10();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x48);
@@ -16132,142 +15504,12 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10319bd0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpDevicePropertiesSetLEDState);
-  param_1[2] = (uint)&ghidra_vftable_SCOpDevicePropertiesSetLEDState;
+  param_1[2] = (undefined4)((uint)&ghidra_vftable_SCOpDevicePropertiesSetLEDState);
   thunk_FUN_10317e60();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x48);
   }
   return (undefined4 *)(param_1);
-}
-
-
-// Reference entry 1031ae80; body size 61 bytes.
-#line 1 "ENTRY_1031ae80"
-
-void __thiscall Recovered_Bulk::FUN_1031ae80(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 1031aed0; body size 61 bytes.
-#line 1 "ENTRY_1031aed0"
-
-void __thiscall Recovered_Bulk::FUN_1031aed0(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 1031af20; body size 61 bytes.
-#line 1 "ENTRY_1031af20"
-
-void __thiscall Recovered_Bulk::FUN_1031af20(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 1031af70; body size 61 bytes.
-#line 1 "ENTRY_1031af70"
-
-void __thiscall Recovered_Bulk::FUN_1031af70(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
-}
-
-
-// Reference entry 1031afc0; body size 61 bytes.
-#line 1 "ENTRY_1031afc0"
-
-void __thiscall Recovered_Bulk::FUN_1031afc0(int *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  int *piVar1;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  if (piVar1 != (int *)0x0) {
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-    (**(code **)(*piVar1 + 8))();
-  }
-  *param_1 = (undefined4)(param_2);
-  if (param_2 != (int *)0x0) {
-    uVar2 = (undefined4)((**(code **)(*param_2 + 0xc))());
-    param_1[1] = uVar2;
-    return;
-  }
-  param_1[1] = 0;
-  return;
 }
 
 
@@ -16305,86 +15547,6 @@ SCStr * __stdcall FUN_1031dc60(SCStr *param_1)
   pcVar1 = (char *)((char *)thunk_FUN_101b8510());
   ((SCStr *)(param_1))->int_allocRep(pcVar1);
   return (SCStr *)(param_1);
-}
-
-
-// Reference entry 1031dc80; body size 43 bytes.
-#line 1 "ENTRY_1031dc80"
-
-void __fastcall FUN_1031dc80(undefined4 *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  *param_1 = (undefined4)(0);
-  param_1[1] = 0;
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 8))();
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 1031dcc0; body size 43 bytes.
-#line 1 "ENTRY_1031dcc0"
-
-void __fastcall FUN_1031dcc0(undefined4 *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  *param_1 = (undefined4)(0);
-  param_1[1] = 0;
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 8))();
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 1031dd00; body size 43 bytes.
-#line 1 "ENTRY_1031dd00"
-
-void __fastcall FUN_1031dd00(undefined4 *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  *param_1 = (undefined4)(0);
-  param_1[1] = 0;
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 8))();
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 1031dd40; body size 43 bytes.
-#line 1 "ENTRY_1031dd40"
-
-void __fastcall FUN_1031dd40(undefined4 *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  *param_1 = (undefined4)(0);
-  param_1[1] = 0;
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 8))();
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-  }
-  return;
 }
 
 
@@ -17500,6 +16662,31 @@ int * __thiscall Recovered_Bulk::FUN_10328f00(int *param_2)
 }
 
 
+// Reference entry 10329660; body size 59 bytes.
+#line 1 "ENTRY_10329660"
+
+void __thiscall Recovered_Bulk::FUN_10329660(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  int *piVar2;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    piVar2 = (int *)((int *)param_2[1]);
+    puVar1[1] = (undefined4)(piVar2);
+    if (piVar2 != (int *)0x0) {
+      (**(code **)(*piVar2 + 4))();
+    }
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 8;
+    return;
+  }
+  thunk_FUN_10314cc0(puVar1,param_2);
+  return;
+}
+
+
 // Reference entry 1032abe0; body size 38 bytes.
 #line 1 "ENTRY_1032abe0"
 
@@ -17860,13 +17047,70 @@ int * __thiscall Recovered_Bulk::FUN_10333790(int param_2)
   int *piVar1;
   
   *param_1 = (int)(param_2);
-  param_1[1] = 0;
+  param_1[1] = (int)(0);
   if (param_2 != 0) {
     piVar1 = (int *)((int *)(**(code **)(*(int *)(param_2 + 0x24) + 0xc))());
-    param_1[1] = (int)piVar1;
+    param_1[1] = (int)((int)piVar1);
     (**(code **)(*piVar1 + 4))();
   }
   return (int *)(param_1);
+}
+
+
+// Reference entry 10333800; body size 41 bytes.
+#line 1 "ENTRY_10333800"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10333800(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 10333860; body size 41 bytes.
+#line 1 "ENTRY_10333860"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_10333860(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 103338c0; body size 41 bytes.
+#line 1 "ENTRY_103338c0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_103338c0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
 }
 
 
@@ -17907,7 +17151,7 @@ undefined4 * __fastcall FUN_10333a00(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x1c));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -17927,7 +17171,7 @@ undefined4 * __fastcall FUN_10333a40(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x1c));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -17947,7 +17191,7 @@ undefined4 * __fastcall FUN_10333a80(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x1c));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -18014,40 +17258,6 @@ void __fastcall FUN_10335f30(int param_1)
 {
   if (*(int *)(param_1 + 4) != 0) {
     thunk_FUN_1148a50e(*(int *)(param_1 + 4),0x1c);
-  }
-  return;
-}
-
-
-// Reference entry 10335f50; body size 33 bytes.
-#line 1 "ENTRY_10335f50"
-
-void __fastcall FUN_10335f50(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10335f80; body size 33 bytes.
-#line 1 "ENTRY_10335f80"
-
-void __fastcall FUN_10335f80(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
   }
   return;
 }
@@ -18139,40 +17349,6 @@ void __fastcall FUN_10336520(undefined4 *param_1)
 }
 
 
-// Reference entry 10336540; body size 33 bytes.
-#line 1 "ENTRY_10336540"
-
-void __fastcall FUN_10336540(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10336570; body size 33 bytes.
-#line 1 "ENTRY_10336570"
-
-void __fastcall FUN_10336570(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
 // Reference entry 103365a0; body size 28 bytes.
 #line 1 "ENTRY_103365a0"
 
@@ -18221,74 +17397,6 @@ void __fastcall FUN_103367a0(int param_1)
   if (piVar1 != (int *)0x0) {
     (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1 + 8));
     *(undefined4 *)(param_1 + 0x2c) = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10336890; body size 33 bytes.
-#line 1 "ENTRY_10336890"
-
-void __fastcall FUN_10336890(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 103368f0; body size 33 bytes.
-#line 1 "ENTRY_103368f0"
-
-void __fastcall FUN_103368f0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10336ab0; body size 33 bytes.
-#line 1 "ENTRY_10336ab0"
-
-void __fastcall FUN_10336ab0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10336b10; body size 33 bytes.
-#line 1 "ENTRY_10336b10"
-
-void __fastcall FUN_10336b10(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
   }
   return;
 }
@@ -18764,10 +17872,10 @@ void __thiscall Recovered_Bulk::FUN_10338cd0(undefined4 *param_2)
   uVar1 = (undefined4)(*(undefined4 *)(param_1 + 0xc));
   uVar2 = (undefined4)(*(undefined4 *)(param_1 + 0x10));
   uVar3 = (undefined4)(*(undefined4 *)(param_1 + 0x14));
-  param_2[2] = *(undefined4 *)(param_1 + 8);
-  param_2[3] = uVar1;
-  param_2[4] = uVar2;
-  param_2[5] = uVar3;
+  param_2[2] = (undefined4)(*(undefined4 *)(param_1 + 8));
+  param_2[3] = (undefined4)(uVar1);
+  param_2[4] = (undefined4)(uVar2);
+  param_2[5] = (undefined4)(uVar3);
   return;
 }
 
@@ -18786,10 +17894,10 @@ void __thiscall Recovered_Bulk::FUN_10338da0(undefined4 *param_2)
   uVar1 = (undefined4)(*(undefined4 *)(param_1 + 0xc));
   uVar2 = (undefined4)(*(undefined4 *)(param_1 + 0x10));
   uVar3 = (undefined4)(*(undefined4 *)(param_1 + 0x14));
-  param_2[2] = *(undefined4 *)(param_1 + 8);
-  param_2[3] = uVar1;
-  param_2[4] = uVar2;
-  param_2[5] = uVar3;
+  param_2[2] = (undefined4)(*(undefined4 *)(param_1 + 8));
+  param_2[3] = (undefined4)(uVar1);
+  param_2[4] = (undefined4)(uVar2);
+  param_2[5] = (undefined4)(uVar3);
   return;
 }
 
@@ -18804,8 +17912,8 @@ void __thiscall Recovered_Bulk::FUN_10338dc0(undefined4 *param_2)
   
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
   uVar1 = (undefined4)(*(undefined4 *)(param_1 + 8));
-  param_2[1] = *(undefined4 *)(param_1 + 4);
-  param_2[2] = uVar1;
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
+  param_2[2] = (undefined4)(uVar1);
   return;
 }
 
@@ -18824,10 +17932,10 @@ void __thiscall Recovered_Bulk::FUN_10338df0(undefined4 *param_2)
   uVar1 = (undefined4)(*(undefined4 *)(param_1 + 0xc));
   uVar2 = (undefined4)(*(undefined4 *)(param_1 + 0x10));
   uVar3 = (undefined4)(*(undefined4 *)(param_1 + 0x14));
-  param_2[2] = *(undefined4 *)(param_1 + 8);
-  param_2[3] = uVar1;
-  param_2[4] = uVar2;
-  param_2[5] = uVar3;
+  param_2[2] = (undefined4)(*(undefined4 *)(param_1 + 8));
+  param_2[3] = (undefined4)(uVar1);
+  param_2[4] = (undefined4)(uVar2);
+  param_2[5] = (undefined4)(uVar3);
   return;
 }
 
@@ -18839,7 +17947,7 @@ void __thiscall Recovered_Bulk::FUN_10338e20(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -18858,10 +17966,10 @@ void __thiscall Recovered_Bulk::FUN_10338e40(undefined4 *param_2)
   uVar1 = (undefined4)(*(undefined4 *)(param_1 + 0xc));
   uVar2 = (undefined4)(*(undefined4 *)(param_1 + 0x10));
   uVar3 = (undefined4)(*(undefined4 *)(param_1 + 0x14));
-  param_2[2] = *(undefined4 *)(param_1 + 8);
-  param_2[3] = uVar1;
-  param_2[4] = uVar2;
-  param_2[5] = uVar3;
+  param_2[2] = (undefined4)(*(undefined4 *)(param_1 + 8));
+  param_2[3] = (undefined4)(uVar1);
+  param_2[4] = (undefined4)(uVar2);
+  param_2[5] = (undefined4)(uVar3);
   return;
 }
 
@@ -18873,7 +17981,7 @@ void __thiscall Recovered_Bulk::FUN_10338e60(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -18885,7 +17993,7 @@ void __thiscall Recovered_Bulk::FUN_10338e80(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -18904,10 +18012,10 @@ void __thiscall Recovered_Bulk::FUN_10338ea0(undefined4 *param_2)
   uVar1 = (undefined4)(*(undefined4 *)(param_1 + 0xc));
   uVar2 = (undefined4)(*(undefined4 *)(param_1 + 0x10));
   uVar3 = (undefined4)(*(undefined4 *)(param_1 + 0x14));
-  param_2[2] = *(undefined4 *)(param_1 + 8);
-  param_2[3] = uVar1;
-  param_2[4] = uVar2;
-  param_2[5] = uVar3;
+  param_2[2] = (undefined4)(*(undefined4 *)(param_1 + 8));
+  param_2[3] = (undefined4)(uVar1);
+  param_2[4] = (undefined4)(uVar2);
+  param_2[5] = (undefined4)(uVar3);
   return;
 }
 
@@ -18919,7 +18027,7 @@ void __thiscall Recovered_Bulk::FUN_10338f60(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -18934,8 +18042,8 @@ void __thiscall Recovered_Bulk::FUN_10339010(undefined4 *param_2)
   
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
   uVar1 = (undefined4)(*(undefined4 *)(param_1 + 8));
-  param_2[1] = *(undefined4 *)(param_1 + 4);
-  param_2[2] = uVar1;
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
+  param_2[2] = (undefined4)(uVar1);
   return;
 }
 
@@ -18947,7 +18055,7 @@ void __thiscall Recovered_Bulk::FUN_10339030(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -19455,10 +18563,10 @@ void __thiscall Recovered_Bulk::FUN_1033ace0(undefined4 *param_2)
   uVar1 = (undefined4)(*(undefined4 *)(param_1 + 0xc));
   uVar2 = (undefined4)(*(undefined4 *)(param_1 + 0x10));
   uVar3 = (undefined4)(*(undefined4 *)(param_1 + 0x14));
-  param_2[2] = *(undefined4 *)(param_1 + 8);
-  param_2[3] = uVar1;
-  param_2[4] = uVar2;
-  param_2[5] = uVar3;
+  param_2[2] = (undefined4)(*(undefined4 *)(param_1 + 8));
+  param_2[3] = (undefined4)(uVar1);
+  param_2[4] = (undefined4)(uVar2);
+  param_2[5] = (undefined4)(uVar3);
   return;
 }
 
@@ -19477,10 +18585,10 @@ void __thiscall Recovered_Bulk::FUN_1033ad10(undefined4 *param_2)
   uVar1 = (undefined4)(*(undefined4 *)(param_1 + 0xc));
   uVar2 = (undefined4)(*(undefined4 *)(param_1 + 0x10));
   uVar3 = (undefined4)(*(undefined4 *)(param_1 + 0x14));
-  param_2[2] = *(undefined4 *)(param_1 + 8);
-  param_2[3] = uVar1;
-  param_2[4] = uVar2;
-  param_2[5] = uVar3;
+  param_2[2] = (undefined4)(*(undefined4 *)(param_1 + 8));
+  param_2[3] = (undefined4)(uVar1);
+  param_2[4] = (undefined4)(uVar2);
+  param_2[5] = (undefined4)(uVar3);
   return;
 }
 
@@ -19495,8 +18603,8 @@ void __thiscall Recovered_Bulk::FUN_1033ad30(undefined4 *param_2)
   
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
   uVar1 = (undefined4)(*(undefined4 *)(param_1 + 8));
-  param_2[1] = *(undefined4 *)(param_1 + 4);
-  param_2[2] = uVar1;
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
+  param_2[2] = (undefined4)(uVar1);
   return;
 }
 
@@ -19515,10 +18623,10 @@ void __thiscall Recovered_Bulk::FUN_1033ad60(undefined4 *param_2)
   uVar1 = (undefined4)(*(undefined4 *)(param_1 + 0xc));
   uVar2 = (undefined4)(*(undefined4 *)(param_1 + 0x10));
   uVar3 = (undefined4)(*(undefined4 *)(param_1 + 0x14));
-  param_2[2] = *(undefined4 *)(param_1 + 8);
-  param_2[3] = uVar1;
-  param_2[4] = uVar2;
-  param_2[5] = uVar3;
+  param_2[2] = (undefined4)(*(undefined4 *)(param_1 + 8));
+  param_2[3] = (undefined4)(uVar1);
+  param_2[4] = (undefined4)(uVar2);
+  param_2[5] = (undefined4)(uVar3);
   return;
 }
 
@@ -19530,7 +18638,7 @@ void __thiscall Recovered_Bulk::FUN_1033ad90(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -19549,10 +18657,10 @@ void __thiscall Recovered_Bulk::FUN_1033adb0(undefined4 *param_2)
   uVar1 = (undefined4)(*(undefined4 *)(param_1 + 0xc));
   uVar2 = (undefined4)(*(undefined4 *)(param_1 + 0x10));
   uVar3 = (undefined4)(*(undefined4 *)(param_1 + 0x14));
-  param_2[2] = *(undefined4 *)(param_1 + 8);
-  param_2[3] = uVar1;
-  param_2[4] = uVar2;
-  param_2[5] = uVar3;
+  param_2[2] = (undefined4)(*(undefined4 *)(param_1 + 8));
+  param_2[3] = (undefined4)(uVar1);
+  param_2[4] = (undefined4)(uVar2);
+  param_2[5] = (undefined4)(uVar3);
   return;
 }
 
@@ -19564,7 +18672,7 @@ void __thiscall Recovered_Bulk::FUN_1033add0(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -19576,7 +18684,7 @@ void __thiscall Recovered_Bulk::FUN_1033adf0(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -19595,10 +18703,10 @@ void __thiscall Recovered_Bulk::FUN_1033ae10(undefined4 *param_2)
   uVar1 = (undefined4)(*(undefined4 *)(param_1 + 0xc));
   uVar2 = (undefined4)(*(undefined4 *)(param_1 + 0x10));
   uVar3 = (undefined4)(*(undefined4 *)(param_1 + 0x14));
-  param_2[2] = *(undefined4 *)(param_1 + 8);
-  param_2[3] = uVar1;
-  param_2[4] = uVar2;
-  param_2[5] = uVar3;
+  param_2[2] = (undefined4)(*(undefined4 *)(param_1 + 8));
+  param_2[3] = (undefined4)(uVar1);
+  param_2[4] = (undefined4)(uVar2);
+  param_2[5] = (undefined4)(uVar3);
   return;
 }
 
@@ -19610,7 +18718,7 @@ void __thiscall Recovered_Bulk::FUN_1033ae40(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -19625,8 +18733,8 @@ void __thiscall Recovered_Bulk::FUN_1033ae70(undefined4 *param_2)
   
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
   uVar1 = (undefined4)(*(undefined4 *)(param_1 + 8));
-  param_2[1] = *(undefined4 *)(param_1 + 4);
-  param_2[2] = uVar1;
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
+  param_2[2] = (undefined4)(uVar1);
   return;
 }
 
@@ -19638,41 +18746,7 @@ void __thiscall Recovered_Bulk::FUN_1033ae90(undefined4 *param_2)
 {
   int param_1 = (int )this;
   *param_2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  param_2[1] = *(undefined4 *)(param_1 + 4);
-  return;
-}
-
-
-// Reference entry 1033b490; body size 33 bytes.
-#line 1 "ENTRY_1033b490"
-
-void __fastcall FUN_1033b490(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 1033b4c0; body size 33 bytes.
-#line 1 "ENTRY_1033b4c0"
-
-void __fastcall FUN_1033b4c0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
+  param_2[1] = (undefined4)(*(undefined4 *)(param_1 + 4));
   return;
 }
 
@@ -19690,7 +18764,7 @@ void __fastcall FUN_1033c070(int *param_1)
   *(int *)(iVar1 + 4) = iVar1;
   *(int *)iVar1 = (int)(iVar1);
   *(int *)(iVar1 + 8) = iVar1;
-  param_1[1] = 0;
+  param_1[1] = (int)(0);
   return;
 }
 
@@ -19708,7 +18782,7 @@ void __fastcall FUN_1033c0a0(int *param_1)
   *(int *)(iVar1 + 4) = iVar1;
   *(int *)iVar1 = (int)(iVar1);
   *(int *)(iVar1 + 8) = iVar1;
-  param_1[1] = 0;
+  param_1[1] = (int)(0);
   return;
 }
 
@@ -19726,7 +18800,7 @@ void __fastcall FUN_1033c0d0(int *param_1)
   *(int *)(iVar1 + 4) = iVar1;
   *(int *)iVar1 = (int)(iVar1);
   *(int *)(iVar1 + 8) = iVar1;
-  param_1[1] = 0;
+  param_1[1] = (int)(0);
   return;
 }
 
@@ -19738,7 +18812,7 @@ void __fastcall FUN_1033c160(undefined4 *param_1)
 
 {
   thunk_FUN_1032e8b0(*param_1,param_1[1],param_1);
-  param_1[1] = *param_1;
+  param_1[1] = (undefined4)(*param_1);
   return;
 }
 
@@ -19767,46 +18841,6 @@ void __stdcall FUN_1033c6d0(int param_1,int param_2)
 }
 
 
-// Reference entry 1033c780; body size 43 bytes.
-#line 1 "ENTRY_1033c780"
-
-void __fastcall FUN_1033c780(undefined4 *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  *param_1 = (undefined4)(0);
-  param_1[1] = 0;
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 8))();
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 1033c7c0; body size 43 bytes.
-#line 1 "ENTRY_1033c7c0"
-
-void __fastcall FUN_1033c7c0(undefined4 *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[1]);
-  *param_1 = (undefined4)(0);
-  param_1[1] = 0;
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 8))();
-    *param_1 = (undefined4)(0);
-    param_1[1] = 0;
-  }
-  return;
-}
-
-
 // Reference entry 1033cd90; body size 21 bytes.
 #line 1 "ENTRY_1033cd90"
 
@@ -19815,6 +18849,22 @@ SCStr * __stdcall FUN_1033cd90(SCStr *param_1)
 {
   ((SCStr *)(param_1))->int_allocRep("found_product_manager");
   return (SCStr *)(param_1);
+}
+
+
+// Reference entry 10342c30; body size 28 bytes.
+#line 1 "ENTRY_10342c30"
+
+void __stdcall FUN_10342c30(undefined4 param_1)
+
+{
+  undefined **local_2c [9];
+  undefined1 *local_8;
+  
+  local_8 = (undefined1 *)((undefined1 *)local_2c);
+  local_2c[0] = (undefined **)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
+  thunk_FUN_10342c60(param_1);
+  return;
 }
 
 
@@ -19901,7 +18951,7 @@ undefined4 * __fastcall FUN_10345bd0(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x20));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -19921,7 +18971,7 @@ undefined4 * __fastcall FUN_10345de0(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x10));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -20046,7 +19096,7 @@ void __fastcall FUN_10349190(int *param_1)
   thunk_FUN_10344a10(param_1,*param_1);
   *(int *)*param_1 = (int)(*param_1);
   *(int *)(*param_1 + 4) = *param_1;
-  param_1[1] = 0;
+  param_1[1] = (int)(0);
   return;
 }
 
@@ -20739,6 +19789,626 @@ void __thiscall Recovered_Bulk::FUN_103582b0(int param_2)
 }
 
 
+// Reference entry 10358cd0; body size 59 bytes.
+#line 1 "ENTRY_10358cd0"
+
+void __thiscall Recovered_Bulk::FUN_10358cd0(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  int *piVar2;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    piVar2 = (int *)((int *)param_2[1]);
+    puVar1[1] = (undefined4)(piVar2);
+    if (piVar2 != (int *)0x0) {
+      (**(code **)(*piVar2 + 4))();
+    }
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 8;
+    return;
+  }
+  thunk_FUN_103532a0(puVar1,param_2);
+  return;
+}
+
+
+// Reference entry 10358d50; body size 59 bytes.
+#line 1 "ENTRY_10358d50"
+
+void __thiscall Recovered_Bulk::FUN_10358d50(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+  undefined4 *puVar1;
+  int *piVar2;
+  
+  puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 4));
+  if (puVar1 != *(undefined4 **)(param_1 + 8)) {
+    *puVar1 = (undefined4)(*param_2);
+    piVar2 = (int *)((int *)param_2[1]);
+    puVar1[1] = (undefined4)(piVar2);
+    if (piVar2 != (int *)0x0) {
+      (**(code **)(*piVar2 + 4))();
+    }
+    *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 8;
+    return;
+  }
+  thunk_FUN_103535f0(puVar1,param_2);
+  return;
+}
+
+
+// Reference entry 1035acb0; body size 41 bytes.
+#line 1 "ENTRY_1035acb0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035acb0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035acf0; body size 41 bytes.
+#line 1 "ENTRY_1035acf0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035acf0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035ad30; body size 41 bytes.
+#line 1 "ENTRY_1035ad30"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035ad30(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035ad70; body size 41 bytes.
+#line 1 "ENTRY_1035ad70"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035ad70(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035adb0; body size 41 bytes.
+#line 1 "ENTRY_1035adb0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035adb0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035adf0; body size 41 bytes.
+#line 1 "ENTRY_1035adf0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035adf0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035ae30; body size 41 bytes.
+#line 1 "ENTRY_1035ae30"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035ae30(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035ae70; body size 41 bytes.
+#line 1 "ENTRY_1035ae70"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035ae70(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035aeb0; body size 41 bytes.
+#line 1 "ENTRY_1035aeb0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035aeb0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035aef0; body size 41 bytes.
+#line 1 "ENTRY_1035aef0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035aef0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035af30; body size 41 bytes.
+#line 1 "ENTRY_1035af30"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035af30(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035af90; body size 41 bytes.
+#line 1 "ENTRY_1035af90"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035af90(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035aff0; body size 41 bytes.
+#line 1 "ENTRY_1035aff0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035aff0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035b160; body size 41 bytes.
+#line 1 "ENTRY_1035b160"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035b160(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035b1f0; body size 41 bytes.
+#line 1 "ENTRY_1035b1f0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035b1f0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035b230; body size 41 bytes.
+#line 1 "ENTRY_1035b230"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035b230(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035b270; body size 41 bytes.
+#line 1 "ENTRY_1035b270"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035b270(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035b2b0; body size 41 bytes.
+#line 1 "ENTRY_1035b2b0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035b2b0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035b2f0; body size 41 bytes.
+#line 1 "ENTRY_1035b2f0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035b2f0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035b330; body size 41 bytes.
+#line 1 "ENTRY_1035b330"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035b330(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035b370; body size 41 bytes.
+#line 1 "ENTRY_1035b370"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035b370(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035b3d0; body size 41 bytes.
+#line 1 "ENTRY_1035b3d0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035b3d0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035b470; body size 41 bytes.
+#line 1 "ENTRY_1035b470"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035b470(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035b4f0; body size 41 bytes.
+#line 1 "ENTRY_1035b4f0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035b4f0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035b580; body size 41 bytes.
+#line 1 "ENTRY_1035b580"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035b580(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035b600; body size 41 bytes.
+#line 1 "ENTRY_1035b600"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035b600(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035b680; body size 41 bytes.
+#line 1 "ENTRY_1035b680"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035b680(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035b710; body size 41 bytes.
+#line 1 "ENTRY_1035b710"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035b710(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035b750; body size 41 bytes.
+#line 1 "ENTRY_1035b750"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035b750(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 1035b7c0; body size 41 bytes.
+#line 1 "ENTRY_1035b7c0"
+
+undefined4 * __thiscall Recovered_Bulk::FUN_1035b7c0(int *param_2)
+{
+  undefined4 *param_1 = (undefined4 *)this;
+  int *piVar1;
+  
+  *param_1 = (undefined4)(param_2);
+  param_1[1] = (undefined4)(0);
+  if (param_2 != (int *)0x0) {
+    piVar1 = (int *)((int *)(**(code **)(*param_2 + 0xc))());
+    param_1[1] = (undefined4)(piVar1);
+    (**(code **)(*piVar1 + 4))();
+  }
+  return (undefined4 *)(param_1);
+}
+
+
 // Reference entry 1035b840; body size 24 bytes.
 #line 1 "ENTRY_1035b840"
 
@@ -20958,7 +20628,7 @@ undefined4 * __fastcall FUN_1035bde0(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x24));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -20978,7 +20648,7 @@ undefined4 * __fastcall FUN_1035be20(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x1c));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -20998,7 +20668,7 @@ undefined4 * __fastcall FUN_1035be60(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x1c));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
@@ -21018,34 +20688,11 @@ undefined4 * __fastcall FUN_1035c870(undefined4 *param_1)
   void *pvVar1;
   
   *param_1 = (undefined4)(0);
-  param_1[1] = 0;
+  param_1[1] = (undefined4)(0);
   pvVar1 = (void *)(operator_new(0x14));
   *(void **)pvVar1 = (void *)(pvVar1);
   *(void **)((int)pvVar1 + 4) = pvVar1;
   *param_1 = (undefined4)(pvVar1);
-  return (undefined4 *)(param_1);
-}
-
-
-// Reference entry 1035cb80; body size 49 bytes.
-#line 1 "ENTRY_1035cb80"
-
-undefined4 * __thiscall Recovered_Bulk::FUN_1035cb80(undefined4 *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  undefined4 uVar1;
-  undefined4 uVar2;
-  undefined4 uVar3;
-  
-  uVar1 = (undefined4)(param_2[2]);
-  uVar2 = (undefined4)(*param_2);
-  uVar3 = (undefined4)(param_2[1]);
-  param_2[2] = 0;
-  param_2[1] = 0;
-  *param_2 = (undefined4)(0);
-  param_1[2] = uVar1;
-  *param_1 = (undefined4)(uVar2);
-  param_1[1] = uVar3;
   return (undefined4 *)(param_1);
 }
 
@@ -21269,142 +20916,6 @@ void __fastcall FUN_10362680(int param_1)
 }
 
 
-// Reference entry 103626a0; body size 33 bytes.
-#line 1 "ENTRY_103626a0"
-
-void __fastcall FUN_103626a0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 103626d0; body size 33 bytes.
-#line 1 "ENTRY_103626d0"
-
-void __fastcall FUN_103626d0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10362700; body size 33 bytes.
-#line 1 "ENTRY_10362700"
-
-void __fastcall FUN_10362700(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10362730; body size 33 bytes.
-#line 1 "ENTRY_10362730"
-
-void __fastcall FUN_10362730(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10362760; body size 33 bytes.
-#line 1 "ENTRY_10362760"
-
-void __fastcall FUN_10362760(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10362790; body size 33 bytes.
-#line 1 "ENTRY_10362790"
-
-void __fastcall FUN_10362790(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 103627c0; body size 33 bytes.
-#line 1 "ENTRY_103627c0"
-
-void __fastcall FUN_103627c0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 103627f0; body size 33 bytes.
-#line 1 "ENTRY_103627f0"
-
-void __fastcall FUN_103627f0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
 // Reference entry 10362bb0; body size 28 bytes.
 #line 1 "ENTRY_10362bb0"
 
@@ -21526,142 +21037,6 @@ void __fastcall FUN_10362dc0(undefined4 *param_1)
 }
 
 
-// Reference entry 10362de0; body size 33 bytes.
-#line 1 "ENTRY_10362de0"
-
-void __fastcall FUN_10362de0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10362e10; body size 33 bytes.
-#line 1 "ENTRY_10362e10"
-
-void __fastcall FUN_10362e10(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10362e40; body size 33 bytes.
-#line 1 "ENTRY_10362e40"
-
-void __fastcall FUN_10362e40(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10362e70; body size 33 bytes.
-#line 1 "ENTRY_10362e70"
-
-void __fastcall FUN_10362e70(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10362ea0; body size 33 bytes.
-#line 1 "ENTRY_10362ea0"
-
-void __fastcall FUN_10362ea0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10362ed0; body size 33 bytes.
-#line 1 "ENTRY_10362ed0"
-
-void __fastcall FUN_10362ed0(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10362f00; body size 33 bytes.
-#line 1 "ENTRY_10362f00"
-
-void __fastcall FUN_10362f00(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
-// Reference entry 10362f30; body size 33 bytes.
-#line 1 "ENTRY_10362f30"
-
-void __fastcall FUN_10362f30(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return;
-}
-
-
 // Reference entry 10362f60; body size 25 bytes.
 #line 1 "ENTRY_10362f60"
 
@@ -21717,7 +21092,7 @@ void __fastcall FUN_10364d50(undefined4 *param_1)
 
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCMultipleDeferredEvtHelper);
-  param_1[4] = (uint)&ghidra_vftable_RControlAIOOpRef;
+  param_1[4] = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
   thunk_FUN_101ba0d0();
   thunk_FUN_103633e0();
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
@@ -21852,42 +21227,6 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10366570(int *param_2)
   *param_1 = (undefined4)(param_2);
   if (param_2 != (int *)0x0) {
     (**(code **)(*param_2 + 4))();
-  }
-  return (undefined4 *)(param_1);
-}
-
-
-// Reference entry 10366590; body size 37 bytes.
-#line 1 "ENTRY_10366590"
-
-int * __fastcall FUN_10366590(int *param_1)
-
-{
-  int *piVar1;
-  
-  piVar1 = (int *)((int *)param_1[9]);
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 0x10))(piVar1 != (int *)(param_1));
-    param_1[9] = 0;
-  }
-  return (int *)(param_1);
-}
-
-
-// Reference entry 10366610; body size 60 bytes.
-#line 1 "ENTRY_10366610"
-
-undefined4 * __thiscall Recovered_Bulk::FUN_10366610(undefined4 *param_2)
-{
-  undefined4 *param_1 = (undefined4 *)this;
-  if (param_1 != (undefined4 *)(param_2)) {
-    thunk_FUN_1036e480();
-    *param_1 = (undefined4)(*param_2);
-    param_1[1] = param_2[1];
-    param_1[2] = param_2[2];
-    *param_2 = (undefined4)(0);
-    param_2[1] = 0;
-    param_2[2] = 0;
   }
   return (undefined4 *)(param_1);
 }
@@ -22127,8 +21466,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10369170(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_RCustRegQueryCountryAIOOp);
-  param_1[0x18] = (uint)&ghidra_vftable_RCustRegQueryCountryAIOOp;
-  param_1[0x11b] = (uint)&ghidra_vftable_RCustRegQueryCountryAIOOp;
+  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RCustRegQueryCountryAIOOp);
+  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RCustRegQueryCountryAIOOp);
   thunk_FUN_111c0af0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xdbd8);
@@ -22144,8 +21483,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_103691c0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_RCustRegRegisterSoftwareAIOOp);
-  param_1[0x18] = (uint)&ghidra_vftable_RCustRegRegisterSoftwareAIOOp;
-  param_1[0x11b] = (uint)&ghidra_vftable_RCustRegRegisterSoftwareAIOOp;
+  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RCustRegRegisterSoftwareAIOOp);
+  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RCustRegRegisterSoftwareAIOOp);
   thunk_FUN_111c0af0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xdbe8);
@@ -22220,8 +21559,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_103693d0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpSPSetStringAIOOp);
-  param_1[0x18] = (uint)&ghidra_vftable_RUpnpSPSetStringAIOOp;
-  param_1[0x11b] = (uint)&ghidra_vftable_RUpnpSPSetStringAIOOp;
+  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpSPSetStringAIOOp);
+  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpSPSetStringAIOOp);
   thunk_FUN_111c0af0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xd7d0);
@@ -22237,8 +21576,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10369420(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpZGTGetZoneGroupStateAIOOp);
-  param_1[0x18] = (uint)&ghidra_vftable_RUpnpZGTGetZoneGroupStateAIOOp;
-  param_1[0x11b] = (uint)&ghidra_vftable_RUpnpZGTGetZoneGroupStateAIOOp;
+  param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpZGTGetZoneGroupStateAIOOp);
+  param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpZGTGetZoneGroupStateAIOOp);
   thunk_FUN_111c0af0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x14148);
