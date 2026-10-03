@@ -22295,25 +22295,6 @@ void FUN_1129ad30(undefined4 param_1,int param_2,undefined4 param_3,undefined4 p
 }
 
 
-// Reference entry 1129b350; body size 26 bytes.
-#line 1 "ENTRY_1129b350"
-
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-char * FUN_1129b350(undefined4 *param_1)
-
-{
-  switch(*param_1) {
-  case 0:
-    return (/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ char *)("");
-  case 1:
-    return (/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ char *)("optOutExempt");
-  case 2:
-    return (/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ char *)("config");
-  case 3:
-  }
-  return (/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ char *)("unknown");
-}
 
 
 // Reference entry 1129b3c0; body size 30 bytes.

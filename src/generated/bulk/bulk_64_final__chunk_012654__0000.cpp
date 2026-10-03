@@ -39281,54 +39281,6 @@ void __thiscall Recovered_Bulk::FUN_106a7b80(int *param_2,int param_3,
 }
 
 
-// Reference entry 106a7db0; body size 210 bytes.
-#line 1 "ENTRY_106a7db0"
-
-basic_streambuf<char,std::char_traits<char>> * __thiscall
-FUN_106a7db0(basic_streambuf<char,std::char_traits<char>> *param_1,char *param_2,size_t param_3,
-            int param_4)
-
-{
-  undefined4 uVar1;
-  int iVar2;
-  basic_streambuf<char,std::char_traits<char>> *local_4;
-  
-  if ((param_2 == (char *)0x0) && (param_3 == 0 && param_4 == 0)) {
-    iVar2 = (int)(4);
-  }
-  else {
-    iVar2 = (int)(0);
-  }
-  if (*(FILE **)(param_1 + 0x4c) != (FILE *)0x0) {
-    local_4 = param_1;
-    iVar2 = (int)(setvbuf(*(FILE **)(param_1 + 0x4c),param_2,iVar2,param_3));
-    if (iVar2 == 0) {
-      iVar2 = (int)(*(int *)(param_1 + 0x4c));
-      param_1[0x48] = (basic_streambuf<char,std::char_traits<char>>)0x1;
-      param_1[0x3d] = (basic_streambuf<char,std::char_traits<char>>)0x0;
-      ((Stub_std_basic_streambuf *)(param_1))->_Init();
-      if (iVar2 != 0) {
-        param_2 = (char *)((char *)0x0);
-        param_3 = (size_t)(0);
-        local_4 = (basic_streambuf<char,std::char_traits<char>> *)0x0;
-        get_stream_buffer_pointers(iVar2,&param_2,&param_3,&local_4);
-        *(char **)(param_1 + 0xc) = param_2;
-        *(char **)(param_1 + 0x10) = param_2;
-        *(size_t *)(param_1 + 0x1c) = param_3;
-        *(size_t *)(param_1 + 0x20) = param_3;
-        *(basic_streambuf<char,std::char_traits<char>> **)(param_1 + 0x2c) = local_4;
-        *(basic_streambuf<char,std::char_traits<char>> **)(param_1 + 0x30) = local_4;
-      }
-      *(int *)(param_1 + 0x4c) = iVar2;
-      uVar1 = (undefined4)(DAT_121a2608);
-      *(undefined4 *)(param_1 + 0x40) = DAT_121a2604;
-      *(undefined4 *)(param_1 + 0x44) = uVar1;
-      *(undefined4 *)(param_1 + 0x38) = 0;
-      return (basic_streambuf<char,std::char_traits<char>> *)(param_1);
-    }
-  }
-  return (basic_streambuf<char,std::char_traits<char>> *)((basic_streambuf<char,std::char_traits<char>> *)0x0);
-}
 
 
 // Reference entry 106a83d0; body size 272 bytes.

@@ -13417,31 +13417,6 @@ void FUN_113dec80(int param_1,undefined4 param_2,undefined4 param_3)
 }
 
 
-// Reference entry 113df5f0; body size 66 bytes.
-#line 1 "ENTRY_113df5f0"
-
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-undefined4
-FUN_113df5f0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
-            ,undefined4 param_6,undefined4 param_7,undefined4 param_8)
-
-{
-  code *pcVar1;
-  undefined4 uVar2;
-  
-  if (param_1 == 1) {
-    pcVar1 = (code *)((code *)LAB_113e2770);
-  }
-  else {
-    if (param_1 != 2) {
-      return (/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4)(0xffff8f80);
-    }
-    pcVar1 = (code *)((code *)LAB_113e2720);
-  }
-  uVar2 = (undefined4)((*pcVar1)(param_2,param_3,param_4,param_5,param_6,param_7,param_8));
-  return (/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4)(uVar2);
-}
 
 
 // Reference entry 113df650; body size 64 bytes.
