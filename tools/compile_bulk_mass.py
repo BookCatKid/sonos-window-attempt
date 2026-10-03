@@ -138,7 +138,8 @@ INT_TYPE = {1: 'unsigned char', 2: 'unsigned short', 4: 'uint', 8: 'unsigned lon
 SINT_TYPE = {1: 'char', 2: 'short', 4: 'int', 8: 'long long'}
 SYMBOL_RE = re.compile(
     r'\b((?:thunk_)?_?FUN_[0-9a-f]{8}|_?DAT_\w+|_?PTR_\w+|'
-    r's_[A-Za-z0-9_]+|unaff_\w+|in_\w+|ExceptionList|stack0x[0-9a-f]+|LAB_\w+|g_\w+)\b')
+    r's_[A-Za-z0-9_]+|unaff_\w+|in_\w+|ExceptionList|stack0x[0-9a-f]+|LAB_\w+|'
+    r'g_\w+|uRam\w+|_?UNK_\w+|uStack\w+|uRam\w+)\b')
 
 
 def _balanced(text, start, open_ch, close_ch):
@@ -293,10 +294,21 @@ def _fieldrefs(source):
 
 def _rename_definition(source, entry):
     header_end = source.find('{')
-    match = re.search(r'\b((?:thunk_)?FUN_[0-9a-f]{8})\s*\(', source[:header_end])
-    if not match:
+    head = source[:header_end]
+    sig = head.rfind('*/') + 2 if '*/' in head else 0
+    match = re.search(r'\b((?:thunk_)?FUN_[0-9a-f]{8})\s*\(', head[sig:])
+    if match:
+        match_start = sig + match.start(1)
+        return source[:match_start] + 'FUN_' + entry + source[sig + match.end(1):]
+    # Ghidra-named definitions such as `~pair<>` or `foo<bar>` are not valid
+    # free-function declarators; rename the token before the parameter list.
+    paren = head.find('(', sig)
+    if paren < 0:
         return source
-    return source[:match.start(1)] + 'FUN_' + entry + source[match.end(1):]
+    name = re.search(r'(~?\s*[A-Za-z_]\w*(?:\s*<[^()]*>)?)\s*$', head[:paren])
+    if not name:
+        return source
+    return source[:name.start(1)] + 'FUN_' + entry + source[paren:]
 
 
 _OP_TAGS = {'==': 'op_eq', '!=': 'op_ne', '<=': 'op_le', '>=': 'op_ge',
@@ -443,8 +455,10 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
                         # dtor/ctor function pointer (&eh_vector iterator arg).
                         member_methods.setdefault(qualifier, set()).add(
                             'op_dtor' if leaf == 'op_dtor' else 'op_ctor')
-                        out.append(f'&{stub_name}::' + (
-                            'op_dtor' if leaf == 'op_dtor' else 'op_ctor'))
+                        method = ('op_dtor' if leaf == 'op_dtor'
+                                  else 'op_ctor')
+                        out.append(
+                            f'((int ({stub_name}::*)())&{stub_name}::{method})')
                     else:
                         member_stubs.setdefault(qualifier, set()).add(leaf)
                         out.append(body[start:name_end])
