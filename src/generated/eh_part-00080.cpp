@@ -28,7 +28,7 @@ struct tm;
 struct ThrowInfo;
 
 extern undefined4 DAT_12126b84;
-extern uint __fastcall FUN_111144b0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+uint __fastcall FUN_111144b0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
 extern int thunk_FUN_1106a8d0(...);
 extern int thunk_FUN_111191d0(...);
 extern int thunk_FUN_11119580(...);

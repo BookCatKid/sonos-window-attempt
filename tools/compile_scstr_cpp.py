@@ -109,6 +109,77 @@ def reference_stdcall(source):
     return source, changed
 
 
+# ``movzx eax, al`` / ``movzx eax, ax`` immediately before the final ``ret``
+# is MSVC's return widening for a one- or two-byte result type; a Ghidra
+# ``undefined4`` result then emits wider code than the reference.
+NARROW_TAIL = re.compile(
+    rb'(?:\x0f\xb6\xc0|\x0f\xb7\xc0)(?:\xc3|\xc2[\x00-\xff]\x00)$')
+NARROWABLE = {
+    'undefined4', 'int', 'uint', 'unsigned int', 'long', 'unsigned long',
+    'dword', 'DWORD', 'undefined',
+}
+
+
+def reference_narrow_returns(source):
+    """Narrow four-byte results the reference epilogue proves are smaller.
+
+    Like ``reference_arity`` the proof comes from the installed body: when it
+    ends in ``movzx eax, al`` (or ``ax``) the genuine result is one (or two)
+    bytes, and keeping the wider ``int``-family type both miscompiles the
+    epilogue and shifts the register allocator's earlier choices.
+    """
+    try:
+        from classify_functions import function_bytes
+        data, base, sections = _reference()
+    except Exception:
+        return source, 0
+    markers = list(ENTRY_MARKER.finditer(source))
+    changed = 0
+    edits = []
+    for index, marker in enumerate(markers):
+        entry, size = int(marker.group(1), 16), int(marker.group(2))
+        code = function_bytes(data, entry, size, base, sections)
+        tail = NARROW_TAIL.search(code)
+        if not tail:
+            continue
+        result_type = 'bool' if code[tail.start() + 1] == 0xb6 else 'unsigned short'
+        stop = markers[index + 1].start() if index + 1 < len(markers) else len(source)
+        block = source[marker.end():stop]
+        name = 'FUN_' + marker.group(1)
+        member = re.search(
+            r'(?m)^(?P<result>[A-Za-z_][\w\s\*]*?)\s+Recovered_' + marker.group(1) +
+            r'::' + name + r'\s*\(', block)
+        free = FREE_DEFINITION.search(block)
+        current = None
+        if member:
+            current = member.group('result')
+        elif free and free.group('name') == name:
+            current = free.group('result')
+        if current is None:
+            continue
+        bare = ' '.join(current.replace('__cdecl', '').replace('__stdcall', '')
+                        .replace('__fastcall', '').replace('__thiscall', '')
+                        .split())
+        if '*' in bare or bare not in NARROWABLE:
+            continue
+        # The result text is identical in the definition, its forward
+        # declaration and (for members) the in-struct declaration, so one
+        # signature-anchored rewrite covers all three.
+        signature = re.compile(
+            r'(?m)(?P<result>' + re.escape(current) + r')'
+            r'(?P<mid>\s+(?:__cdecl|__stdcall|__fastcall|__thiscall\s+)?)'
+            r'(?P<qual>Recovered_' + marker.group(1) + r'::)?' +
+            re.escape(name) + r'\s*\(')
+        hits = list(signature.finditer(source))
+        for hit in hits:
+            edits.append((hit.start('result'), hit.end('result'),
+                          result_type + current[len(bare):]))
+        changed += bool(hits)
+    for start, end, replacement in sorted(edits, key=lambda e: -e[0]):
+        source = source[:start] + replacement + source[end:]
+    return source, changed
+
+
 def _call_arguments(source, opening):
     """Top-level argument count for the call whose ``(`` sits at ``opening``.
 

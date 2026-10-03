@@ -29,7 +29,7 @@ struct ThrowInfo;
 
 extern undefined1 DAT_1186d2ee;
 extern undefined4 DAT_12126b84;
-extern undefined4 * __stdcall FUN_110dd2f0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,char param_4);
+undefined4 * __stdcall FUN_110dd2f0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,char param_4);
 extern int FUN_110df0a0(...);
 extern char thunk_FUN_110e0a50(...);
 extern int thunk_FUN_11128910(...);

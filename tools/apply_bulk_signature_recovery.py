@@ -13,7 +13,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'tools'))
 
-from compile_scstr_cpp import reference_arity, reference_stdcall
+from compile_scstr_cpp import (reference_arity, reference_narrow_returns,
+                               reference_stdcall)
 
 DEFINITION = re.compile(
     r'(?m)^([A-Za-z_][\w\s\*]*?\s+(?:__cdecl|__stdcall|__fastcall|__thiscall'
@@ -158,23 +159,25 @@ def lower_free_thiscall(source):
 
 
 def main():
-    total_stdcall = total_arity = total_decls = total_thiscall = files = 0
-    for path in sorted((ROOT / 'src/generated/bulk').glob('*.cpp')):
+    total_stdcall = total_arity = total_decls = total_thiscall = total_narrow = files = 0
+    for path in sorted((ROOT / 'src/generated').rglob('*.cpp')):
         source = path.read_text()
         source, n_thiscall = lower_free_thiscall(source)
         source, n_stdcall = reference_stdcall(source)
         source, n_arity = reference_arity(source)
+        source, n_narrow = reference_narrow_returns(source)
         source, n_decls = sync_forward_decls(source)
-        if n_stdcall or n_arity or n_decls or n_thiscall:
+        if n_stdcall or n_arity or n_decls or n_thiscall or n_narrow:
             path.write_text(source)
             files += 1
             total_stdcall += n_stdcall
             total_arity += n_arity
             total_decls += n_decls
             total_thiscall += n_thiscall
+            total_narrow += n_narrow
     print(f'__stdcall: {total_stdcall}, arity: {total_arity}, '
           f'decls synced: {total_decls}, thiscall->fastcall: {total_thiscall}, '
-          f'files changed: {files}')
+          f'narrowed returns: {total_narrow}, files changed: {files}')
 
 
 if __name__ == '__main__':

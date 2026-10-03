@@ -28,7 +28,7 @@ struct tm;
 struct ThrowInfo;
 
 extern undefined4 DAT_12126b84;
-extern undefined4 __stdcall FUN_110e28f0(unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2);
+undefined4 __stdcall FUN_110e28f0(unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2);
 extern int free(...);
 extern int memcpy(...);
 extern undefined4 thunk_FUN_110828b0(...);

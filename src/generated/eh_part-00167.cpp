@@ -30,7 +30,7 @@ struct ThrowInfo;
 extern byte DAT_11880ab0;
 extern byte DAT_118872c0;
 extern undefined4 DAT_12126b84;
-extern void __stdcall FUN_111e4c70(byte *param_1,undefined4 param_2,undefined4 param_3);
+void __stdcall FUN_111e4c70(byte *param_1,undefined4 param_2,undefined4 param_3);
 extern char* strchr(...);
 extern ulong strtoul(...);
 extern int thunk_FUN_1106a8d0(...);
