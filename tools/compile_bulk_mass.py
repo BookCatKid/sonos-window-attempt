@@ -665,7 +665,7 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
     # `name[idx] = rhs;` element assignments: cast rhs to the element type.
     # Array declarations already store the element type in varmap; indexed
     # pointers drop one star.
-    arrays = set(re.findall(r'\b([A-Za-z_]\w*)\s*\[[^\]]*\]\s*;', body))
+    arrays = set(re.findall(r'\b[\w:<>]+[\s*&]+([A-Za-z_]\w*)\s*\[[^\]]*\]\s*;', body))
     def cast_index(match):
         name, index, rhs = match.groups()
         target = varmap.get(name)
@@ -810,6 +810,11 @@ def cpp_source(records, defined, bad_decls=()):
             seen.add(fname)
         if '(' in sig:
             forward.append(sig + ';')
+            # Wrong-arity callers (Ghidra signature guesses) get a variadic
+            # overload; the decorated `?FUN_x@@..ZZ` still maps to FUN_x.
+            if '__thiscall' not in sig and fname.startswith(('FUN_', 'thunk_FUN_')):
+                prefix = sig[:sig.index(fname)]
+                forward.append(f'extern {prefix}{fname}(...);')
         definitions.append(
             f'// Reference entry {record["entry"]}; body size {record["body_bytes"]} bytes.\n'
             f'#line 1 "ENTRY_{record["entry"]}"\n'

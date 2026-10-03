@@ -103,7 +103,8 @@ def lower_free_thiscall(source):
         first, rest = pieces[0], ','.join(pieces[1:]).strip()
         decl_params = rest if rest else 'void'
         methods.append(
-            f' {" ".join(result.split())} __thiscall {name}({decl_params});')
+            f' {" ".join(result.split())} __thiscall {name}({decl_params});'
+            f' template<class... A> int {name}(A...);')
         renamed.add(name)
         prologue = ''
         param = re.match(r'(.*?)([A-Za-z_]\w*)\s*$', first.strip())
