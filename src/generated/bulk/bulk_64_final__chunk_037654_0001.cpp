@@ -27475,31 +27475,6 @@ void * FUN_11488450(int param_1,uint param_2,int param_3)
 }
 
 
-// Reference entry 11488730; body size 119 bytes.
-#line 1 "ENTRY_11488730"
-
-void FUN_11488730(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,int param_5)
-
-{
-  code *pcVar1;
-  
-  if (param_5 - 1U < 4) {
-    if (*(int *)(param_1 + 0x2b4) == 0) {
-      pcVar1 = (code *)((code *)LAB_11488920);
-      *(undefined1 **)(param_1 + 0x2b4) = LAB_11488a50;
-      *(undefined1 **)(param_1 + 0x2b8) = LAB_11488a90;
-      *(undefined1 **)(param_1 + 700) = LAB_114887d0;
-      if ((*(byte *)(param_1 + 0x152) + 7 & 0xfffffff8) == 8) {
-        pcVar1 = (code *)(FUN_11488850);
-      }
-      *(code **)(param_1 + 0x2c0) = pcVar1;
-    }
-    (**(code **)(param_1 + 0x2b0 + param_5 * 4))(param_2,param_3,param_4);
-  }
-  return;
-}
-
-
 // Reference entry 11488850; body size 162 bytes.
 #line 1 "ENTRY_11488850"
 

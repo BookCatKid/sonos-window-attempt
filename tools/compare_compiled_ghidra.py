@@ -277,6 +277,11 @@ def load_symbol_vas(path):
                         return re.sub(r'_+', '_', form)
                     for form in (owner.replace('::', '__'), leaf):
                         result['ghidra_vftable_' + _flatten(form)].add(address)
+                        # The emitter keeps template arguments, flattened to
+                        # identifier characters (X<Y> -> X_Y_).
+                        kept = re.sub(r'_+', '_',
+                                      re.sub(r'[^0-9A-Za-z_]', '_', form))
+                        result['ghidra_vftable_' + kept].add(address)
             if name:
                 # PTR_<import>_<va> labels mark the IAT dword the loader fills;
                 # __declspec(dllimport) references carry an __imp_ relocation
@@ -291,6 +296,16 @@ def load_symbol_vas(path):
                     if owner.startswith('?$'):
                         owner = owner[2:]
                     result['ghidra_vftable_' + owner.split('@')[0]].add(address)
+                    if '@' in owner:
+                        # ??_7?$X@VArg@@ / ??_7X@Arg@@: template decorations whose
+                        # arg segments carry a type-encoding prefix (V=class,
+                        # U=struct). Generated externs flatten to X_Arg_.
+                        parts = [p for p in owner.split('@') if p]
+                        decoded = [parts[0]] + [
+                            p[1:] if p[:1] in ('V', 'U') and len(p) > 1 else p
+                            for p in parts[1:]]
+                        result['ghidra_vftable_' + '_'.join(decoded) + '_'] \
+                            .add(address)
     result = {name: sorted(addresses) for name, addresses in result.items()}
     # Internal runtime helpers carry no import slot: the reference reaches the
     # /GS cookie check through its incremental-link thunk like any other call.
@@ -352,6 +367,8 @@ def _eh_handler_shape(code):
     registration handler.  The shape identifies the reference-side funclet
     address our ``push __ehhandler$FUN`` relocates against.
     """
+    # Incremental-link padding can precede the funclet body.
+    code = code.lstrip(b'\x90')
     return (len(code) >= 14 and code[:4] == b'\x8b\x54\x24\x08' and
             code[4:6] == b'\x8d\x42' and code[7:9] == b'\x8b\x4a' and
             code[10:12] == b'\x33\xc8')
