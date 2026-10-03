@@ -295,6 +295,7 @@ extern int thunk_FUN_113dac90(...);
 extern int thunk_FUN_113dc880(...);
 extern int thunk_FUN_113e5e30(...);
 extern int thunk_FUN_113e5fd0(...);
+extern int thunk_FUN_113e6480(...);
 extern int thunk_FUN_113e9960(...);
 extern int thunk_FUN_113e99a0(...);
 extern int thunk_FUN_113ea0d0(...);
@@ -589,6 +590,8 @@ void FUN_112c2a10(undefined1 *param_1,undefined4 *param_2);
 extern void FUN_112c2a10(...);
 undefined4 FUN_112c34c0(int param_1);
 extern undefined4 FUN_112c34c0(...);
+undefined4 FUN_112c35a0(int param_1,undefined1 param_2);
+extern undefined4 FUN_112c35a0(...);
 undefined4 FUN_112c4a90(char *param_1,int param_2,undefined4 param_3);
 extern undefined4 FUN_112c4a90(...);
 undefined4 FUN_112c4c80(undefined1 *param_1,int param_2,undefined4 param_3);
@@ -839,6 +842,8 @@ undefined4 FUN_113262d0(int param_1,undefined4 param_2);
 extern undefined4 FUN_113262d0(...);
 void FUN_11327be0(int param_1);
 extern void FUN_11327be0(...);
+void FUN_1132a890(undefined4 *param_1);
+extern void FUN_1132a890(...);
 undefined4 FUN_1132ad30(int param_1);
 extern undefined4 FUN_1132ad30(...);
 void FUN_1132c340(int *param_1,undefined4 param_2,undefined4 param_3,uint *param_4);
@@ -1104,6 +1109,8 @@ undefined2 FUN_113c1ab0(char *param_1,undefined4 param_2,undefined4 param_3);
 extern undefined2 FUN_113c1ab0(...);
 undefined4 FUN_113c1b00(char *param_1,undefined4 param_2,undefined4 param_3);
 extern undefined4 FUN_113c1b00(...);
+undefined1 FUN_113c1b50(char *param_1,undefined4 param_2,undefined1 param_3);
+extern undefined1 FUN_113c1b50(...);
 void FUN_113c5be0(int param_1,undefined4 param_2);
 extern void FUN_113c5be0(...);
 undefined * FUN_113c5d40(int param_1);
@@ -1261,14 +1268,20 @@ void FUN_113e50f0(int param_1,undefined1 param_2,undefined4 param_3);
 extern void FUN_113e50f0(...);
 ushort FUN_113e5b80(undefined2 *param_1,int param_2);
 extern ushort FUN_113e5b80(...);
+void FUN_113e5f90(int param_1,undefined4 param_2);
+extern void FUN_113e5f90(...);
 void FUN_113e5fb0(int param_1,undefined4 param_2);
 extern void FUN_113e5fb0(...);
 void FUN_113e5fd0(int param_1,uint param_2);
 extern void FUN_113e5fd0(...);
+undefined4 FUN_113e6000(int param_1,undefined1 param_2,int *param_3,undefined4 *param_4);
+extern undefined4 FUN_113e6000(...);
 void FUN_113e61a0(int *param_1);
 extern void FUN_113e61a0(...);
 int FUN_113e6260(int *param_1,undefined4 param_2,undefined4 param_3);
 extern int FUN_113e6260(...);
+void FUN_113e62b0(int param_1);
+extern void FUN_113e62b0(...);
 void FUN_113e7aa0(int param_1);
 extern void FUN_113e7aa0(...);
 void FUN_113e9960(int *param_1);
@@ -2372,6 +2385,24 @@ undefined4 FUN_112c34c0(int param_1)
     return (undefined4)(*puVar1);
   }
   return (undefined4)(4);
+}
+
+
+// Reference entry 112c35a0; body size 57 bytes.
+#line 1 "ENTRY_112c35a0"
+
+undefined4 FUN_112c35a0(int param_1,undefined1 param_2)
+
+{
+  if (*(short *)(param_1 + 0x45c) != 0) {
+    return (undefined4)(6);
+  }
+  if ((undefined1 *)(((param_1 + 0x436U))) <= *(undefined1 **)(param_1 + 0x44c)) {
+    return (undefined4)(7);
+  }
+  **(undefined1**)(param_1 + 0x44c) = (undefined1)(param_2);
+  *(int*)(param_1 + 0x44c) = (int)(*(int *)(param_1 + 0x44c) + 1);
+  return (undefined4)(0);
 }
 
 
@@ -4863,6 +4894,27 @@ void FUN_11327be0(int param_1)
 }
 
 
+// Reference entry 1132a890; body size 48 bytes.
+#line 1 "ENTRY_1132a890"
+
+void FUN_1132a890(undefined4 *param_1)
+
+{
+  int iVar1;
+  
+  iVar1 = (int)(param_1[5]);
+  if (*(short *)(param_1 + 3) != 0) {
+    param_1[4] = (undefined4)(*(undefined4 *)(iVar1 + 0x3c));
+    *(undefined4**)(iVar1 + 0x3c) = (undefined4 *)(param_1);
+    **(int**)(iVar1 + 4) = (int)(**(int **)(iVar1 + 4) + -1);
+    return;
+  }
+  FUN_1132a740(*param_1);
+  **(int**)(iVar1 + 4) = (int)(**(int **)(iVar1 + 4) + -1);
+  return;
+}
+
+
 // Reference entry 1132ad30; body size 38 bytes.
 #line 1 "ENTRY_1132ad30"
 
@@ -7105,6 +7157,27 @@ undefined4 FUN_113c1b00(char *param_1,undefined4 param_2,undefined4 param_3)
 }
 
 
+// Reference entry 113c1b50; body size 52 bytes.
+#line 1 "ENTRY_113c1b50"
+
+undefined1 FUN_113c1b50(char *param_1,undefined4 param_2,undefined1 param_3)
+
+{
+  char cVar1;
+  
+  if (*param_1 != '\0') {
+    cVar1 = (char)(thunk_FUN_113c17d0(param_1,param_2,1));
+    if (cVar1 != '\0') {
+      **(undefined1**)(param_1 + 0xc) = (undefined1)(param_3);
+      *(int*)(param_1 + 0xc) = (int)(*(int *)(param_1 + 0xc) + 1);
+      *(int*)(param_1 + 0x10) = (int)(*(int *)(param_1 + 0x10) + -1);
+      return (undefined1)(1);
+    }
+  }
+  return (undefined1)(0);
+}
+
+
 // Reference entry 113c5be0; body size 42 bytes.
 #line 1 "ENTRY_113c5be0"
 
@@ -8212,6 +8285,18 @@ ushort FUN_113e5b80(undefined2 *param_1,int param_2)
 }
 
 
+// Reference entry 113e5f90; body size 22 bytes.
+#line 1 "ENTRY_113e5f90"
+
+void FUN_113e5f90(int param_1,undefined4 param_2)
+
+{
+  *(undefined4*)(param_1 + 0x40) = (undefined4)(param_2);
+  **(undefined8**)(param_1 + 100) = (undefined8)(0);
+  return;
+}
+
+
 // Reference entry 113e5fb0; body size 23 bytes.
 #line 1 "ENTRY_113e5fb0"
 
@@ -8234,6 +8319,20 @@ void FUN_113e5fd0(int param_1,uint param_2)
     (**(code **)(param_1 + 0x58))(*(undefined4 *)(param_1 + 0x54),param_2 >> 2,param_2);
   }
   return;
+}
+
+
+// Reference entry 113e6000; body size 54 bytes.
+#line 1 "ENTRY_113e6000"
+
+undefined4 FUN_113e6000(int param_1,undefined1 param_2,int *param_3,undefined4 *param_4)
+
+{
+  *param_3 = (int)(*(int *)(param_1 + 0xd8) + 4);
+  *param_4 = (undefined4)(0x3ffc);
+  *(undefined4*)(param_1 + 0xdc) = (undefined4)(0x16);
+  **(undefined1**)(param_1 + 0xd8) = (undefined1)(param_2);
+  return (undefined4)(0);
 }
 
 
@@ -8277,6 +8376,21 @@ int FUN_113e6260(int *param_1,undefined4 param_2,undefined4 param_3)
   }
   iVar1 = (int)(FUN_113e9120(param_1,param_2,param_3));
   return (int)(iVar1);
+}
+
+
+// Reference entry 113e62b0; body size 50 bytes.
+#line 1 "ENTRY_113e62b0"
+
+void FUN_113e62b0(int param_1)
+
+{
+  *(undefined4*)(param_1 + 0xdc) = (undefined4)(0x14);
+  *(undefined4*)(param_1 + 0xe0) = (undefined4)(1);
+  **(undefined1**)(param_1 + 0xd8) = (undefined1)(1);
+  *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 1);
+  thunk_FUN_113e6480(param_1,1,1);
+  return;
 }
 
 

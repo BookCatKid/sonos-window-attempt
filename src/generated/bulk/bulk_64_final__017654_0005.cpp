@@ -63,7 +63,7 @@ extern "C" int strcmp(const char *, const char *);
 extern "C" int wcscmp(const wchar_t *, const wchar_t *);
 extern "C" unsigned long __readfsdword(unsigned long);
 #pragma intrinsic(__readfsdword)
-namespace std { template<class... A> static int _Xbad_function_call(A...); template<class... A> static int _Xlength_error(A...); typedef int _Iterator_base0; }
+namespace std { template<class... A> static int _Xbad_alloc(A...); template<class... A> static int _Xbad_function_call(A...); template<class... A> static int _Xlength_error(A...); typedef int _Iterator_base0; }
 struct RAsyncAAGetIOOp { char _pad; RAsyncAAGetIOOp(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int RTTI_Type_Descriptor; };
 struct RCompoundAsyncIOOperation { char _pad; RCompoundAsyncIOOperation(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int RTTI_Type_Descriptor; };
 struct SCAlarm { char _pad; SCAlarm(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int RTTI_Type_Descriptor; };
@@ -80,8 +80,9 @@ namespace std { template<class...> struct _Tree_unchecked_const_iterator { char 
 namespace std { template<class...> struct _Tree_val { char _pad; _Tree_val(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); }; }
 namespace std { template<class...> struct _Tset_traits { char _pad; _Tset_traits(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); }; }
 namespace std { template<class...> struct allocator { char _pad; allocator(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); }; }
-namespace std { template<class...> struct basic_ios { char _pad; basic_ios(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int op_dtor(...); static int setstate(...); }; }
-namespace std { template<class...> struct basic_istream { char _pad; basic_istream(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int _Ipfx(...); static int op_dtor(...); }; }
+namespace std { template<class...> struct basic_ios { char _pad; basic_ios(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int op_ctor(...); static int op_dtor(...); static int setstate(...); }; }
+namespace std { template<class...> struct basic_istream { char _pad; basic_istream(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int _Ipfx(...); static int op_ctor(...); static int op_dtor(...); }; }
+namespace std { template<class...> struct basic_streambuf { char _pad; basic_streambuf(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int op_ctor(...); }; }
 namespace std { template<class...> struct char_traits { char _pad; char_traits(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); }; }
 namespace std { template<class...> struct greater { char _pad; greater(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); }; }
 namespace std { template<class...> struct less { char _pad; less(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); }; }
@@ -318,6 +319,7 @@ extern int FUN_116c6505(...);
 extern int FUN_116c6575(...);
 extern int FUN_118301a0(...);
 extern __declspec(dllimport) int _Ipfx(...);
+extern __declspec(dllimport) int _Xbad_alloc(...);
 extern __declspec(dllimport) int _Xbad_function_call(...);
 extern __declspec(dllimport) int _Xlength_error(...);
 extern __declspec(dllimport) int __RTDynamicCast(...);
@@ -835,6 +837,7 @@ extern int DAT_11887580;
 extern int DAT_118876d0;
 extern int DAT_1190ec30;
 extern int DAT_11910258;
+extern int DAT_119106a0;
 extern int DAT_11c03b94;
 extern int DAT_11c03b98;
 extern int DAT_12119d2c;
@@ -965,6 +968,7 @@ extern int ghidra_vftable_SwfWrappedHelper;
 extern int ghidra_vftable_std_Func_impl_no_alloc;
 extern int ghidra_vftable_std_Ref_count_obj2;
 extern int ghidra_vftable_std_basic_istringstream;
+extern int ghidra_vftable_std_basic_stringbuf;
 extern int in_stack_00000028;
 extern int in_stack_0000002c;
 extern int in_stack_00000030;
@@ -1375,6 +1379,8 @@ extern undefined1 LAB_116c2a7e[];
 extern undefined1 LAB_116c2b06[];
 extern undefined1 LAB_116c2b4d[];
 extern undefined1 LAB_116c2b8d[];
+extern undefined1 LAB_116c2bf7[];
+extern undefined1 LAB_116c2c3e[];
 extern undefined1 LAB_116c2c7d[];
 extern undefined1 LAB_116c2cbd[];
 extern undefined1 LAB_116c2d05[];
@@ -1997,6 +2003,8 @@ void FUN_10ba42c0(undefined4 param_1,int param_2);
 extern void FUN_10ba42c0(...);
 void FUN_10ba4768(void);
 extern void FUN_10ba4768(...);
+basic_istream<char,std::char_traits<char>> * __thiscall FUN_10ba5500(basic_istream<char,std::char_traits<char>> *param_1,undefined4 *param_2, undefined4 *param_3,int param_4);
+basic_streambuf<char,std::char_traits<char>> * __thiscall FUN_10ba56c0(basic_streambuf<char,std::char_traits<char>> *param_1,undefined4 *param_2,uint param_3 );
 void __fastcall FUN_10ba67a0(int *param_1);
 extern void __fastcall FUN_10ba67a0(...);
 int __fastcall FUN_10ba6820(undefined4 *param_1);
@@ -21363,6 +21371,169 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ba5390(undefined4 param_2)
   param_1[1] = (undefined4)(pvVar1);
 
   return (undefined4 *)(param_1);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10ba5500; body size 358 bytes.
+#line 1 "ENTRY_10ba5500"
+
+basic_istream<char,std::char_traits<char>> * __thiscall
+FUN_10ba5500(basic_istream<char,std::char_traits<char>> *param_1,undefined4 *param_2,
+            undefined4 *param_3,int param_4)
+
+{
+ try {
+  basic_streambuf<char,std::char_traits<char>> *this_;
+  void *pvVar1;
+  void *_Dst;
+  uint uVar2;
+  void *pvVar3;
+  uint uVar4;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  if (param_4 != 0) {
+    *(undefined**)param_1 = (undefined *)((basic_istream<char,std::char_traits<char>> *)(&DAT_119106a0));
+    ((std::basic_ios<> *)((basic_ios<char,std::char_traits<char>> *)(param_1 + 0x60)))->op_ctor();
+
+  }
+  this_ = (basic_streambuf<char,std::char_traits<char>> *)((basic_streambuf<char,std::char_traits<char>> *)(param_1 + 0x10));
+  ((std::basic_istream<> *)(param_1))->op_ctor(this_,false);
+
+  *(undefined***)(param_1 + *(int *)(*(int *)param_1 + 4)) = (undefined **)((uint)&ghidra_vftable_std_basic_istringstream);
+  *(int*)(param_1 + *(int *)(*(int *)param_1 + 4) + -4) = (int)(*(int *)(*(int *)param_1 + 4) + -0x60);
+  ((std::basic_streambuf<> *)(this_))->op_ctor();
+  *(undefined***)this_ = (undefined **)((basic_streambuf<char,std::char_traits<char>> *)((uint)&ghidra_vftable_std_basic_stringbuf));
+  local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
+  uVar4 = (uint)(~(uint)param_3 & 2 | 8);
+  if (((uint)param_3 & 8) == 0) {
+    uVar4 = (uint)(~(uint)param_3 & 2);
+  }
+  uVar2 = (uint)(uVar4 | 0x10);
+  if (((uint)param_3 & 4) == 0) {
+    uVar2 = (uint)(uVar4);
+  }
+  param_3 = (undefined4 *)(param_2);
+  if (0xf < (uint)param_2[5]) {
+    param_3 = (undefined4 *)((undefined4 *)*param_2);
+  }
+  uVar4 = (uint)(param_2[4]);
+  if (uVar4 < 0x80000000) {
+    if (uVar4 == 0) {
+      *(undefined4*)(param_1 + 0x48) = (undefined4)(0);
+    }
+    else {
+      _Dst = (void *)((void *)thunk_FUN_1012cab0(uVar4));
+      memcpy(_Dst,param_3,uVar4);
+      *(uint*)(param_1 + 0x48) = (uint)((int)_Dst + uVar4);
+      **(undefined4**)(param_1 + 0x1c) = (undefined4)(_Dst);
+      **(undefined4**)(param_1 + 0x2c) = (undefined4)(_Dst);
+      **(uint**)(param_1 + 0x3c) = (uint)(uVar4);
+      if ((uVar2 & 2) == 0) {
+        pvVar1 = (void *)(*(void **)(param_1 + 0x48));
+        pvVar3 = (void *)(_Dst);
+        if ((uVar2 & 0x18) != 0) {
+          pvVar3 = (void *)(pvVar1);
+        }
+        **(undefined4**)(param_1 + 0x20) = (undefined4)(_Dst);
+        **(undefined4**)(param_1 + 0x30) = (undefined4)(pvVar3);
+        **(int**)(param_1 + 0x40) = (int)((int)pvVar1 - (int)pvVar3);
+      }
+      uVar2 = (uint)(uVar2 | 1);
+    }
+    *(uint*)(param_1 + 0x4c) = (uint)(uVar2);
+
+    return (basic_istream<char,std::char_traits<char>> *)(param_1);
+  }
+                    
+  std::_Xbad_alloc();
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10ba56c0; body size 325 bytes.
+#line 1 "ENTRY_10ba56c0"
+
+basic_streambuf<char,std::char_traits<char>> * __thiscall
+FUN_10ba56c0(basic_streambuf<char,std::char_traits<char>> *param_1,undefined4 *param_2,uint param_3
+            )
+
+{
+ try {
+  void *pvVar1;
+  undefined4 *puVar2;
+  void *_Dst;
+  uint uVar3;
+  void *pvVar4;
+  uint uVar5;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+  
+  puVar2 = (undefined4 *)(param_2);
+
+
+  ((std::basic_streambuf<> *)(param_1))->op_ctor();
+  *(undefined***)param_1 = (undefined **)((basic_streambuf<char,std::char_traits<char>> *)((uint)&ghidra_vftable_std_basic_stringbuf));
+
+  uVar5 = (uint)((~param_3 & 1) << 2);
+  uVar3 = (uint)(uVar5 | 2);
+  if ((param_3 & 2) != 0) {
+    uVar3 = (uint)(uVar5);
+  }
+  uVar5 = (uint)(uVar3 | 8);
+  if ((param_3 & 8) == 0) {
+    uVar5 = (uint)(uVar3);
+  }
+  uVar3 = (uint)(uVar5 | 0x10);
+  if ((param_3 & 4) == 0) {
+    uVar3 = (uint)(uVar5);
+  }
+  if (0xf < (uint)param_2[5]) {
+    param_2 = (undefined4 *)((undefined4 *)*param_2);
+  }
+  uVar5 = (uint)(puVar2[4]);
+  if (uVar5 < 0x80000000) {
+    if ((uVar5 == 0) || (((byte)uVar3 & 6) == 6)) {
+      *(undefined4*)(param_1 + 0x38) = (undefined4)(0);
+    }
+    else {
+      _Dst = (void *)((void *)thunk_FUN_1012cab0(uVar5));
+      memcpy(_Dst,param_2,uVar5);
+      *(uint*)(param_1 + 0x38) = (uint)((int)_Dst + uVar5);
+      if ((uVar3 & 4) == 0) {
+        **(undefined4**)(param_1 + 0xc) = (undefined4)(_Dst);
+        **(undefined4**)(param_1 + 0x1c) = (undefined4)(_Dst);
+        **(uint**)(param_1 + 0x2c) = (uint)(uVar5);
+      }
+      if ((uVar3 & 2) == 0) {
+        pvVar1 = (void *)(*(void **)(param_1 + 0x38));
+        pvVar4 = (void *)(_Dst);
+        if ((uVar3 & 0x18) != 0) {
+          pvVar4 = (void *)(pvVar1);
+        }
+        **(undefined4**)(param_1 + 0x10) = (undefined4)(_Dst);
+        **(undefined4**)(param_1 + 0x20) = (undefined4)(pvVar4);
+        **(int**)(param_1 + 0x30) = (int)((int)pvVar1 - (int)pvVar4);
+        if ((uVar3 & 4) != 0) {
+          **(undefined4**)(param_1 + 0xc) = (undefined4)(_Dst);
+          **(undefined4**)(param_1 + 0x1c) = (undefined4)(0);
+          **(undefined4**)(param_1 + 0x2c) = (undefined4)(_Dst);
+        }
+      }
+      uVar3 = (uint)(uVar3 | 1);
+    }
+    *(uint*)(param_1 + 0x3c) = (uint)(uVar3);
+
+    return (basic_streambuf<char,std::char_traits<char>> *)(param_1);
+  }
+                    
+  std::_Xbad_alloc();
 
  } catch (...) { }
 }

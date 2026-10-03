@@ -324,7 +324,7 @@ struct Recovered_Bulk { char _pad; undefined4 * __thiscall FUN_1118f750(undefine
             undefined4 param_5); template<class... A> int FUN_111dde30(A...); undefined4 __thiscall FUN_111de140(undefined4 *param_2,undefined4 param_3,undefined4 param_4); template<class... A> int FUN_111de140(A...); undefined4 __thiscall FUN_111de2f0(undefined4 *param_2); template<class... A> int FUN_111de2f0(A...); undefined4 __thiscall FUN_111de740(undefined4 param_2,undefined4 param_3,undefined4 param_4,
             undefined4 *param_5); template<class... A> int FUN_111de740(A...); undefined4 __thiscall FUN_111de8a0(undefined4 param_2,undefined4 param_3,undefined4 *param_4); template<class... A> int FUN_111de8a0(A...); undefined4 __thiscall FUN_111de9f0(undefined4 param_2,undefined4 param_3,undefined4 param_4,
             undefined4 param_5,undefined4 *param_6); template<class... A> int FUN_111de9f0(A...); void __thiscall FUN_111df3d0(undefined4 *param_2); template<class... A> int FUN_111df3d0(A...); void __thiscall FUN_111df630(void *param_2,size_t param_3); template<class... A> int FUN_111df630(A...); void __thiscall FUN_111df990(char *param_2,uint param_3); template<class... A> int FUN_111df990(A...); void __thiscall FUN_111dfa30(undefined4 param_2,undefined4 ****param_3); template<class... A> int FUN_111dfa30(A...); void __thiscall FUN_111dfc70(void *param_2,uint param_3); template<class... A> int FUN_111dfc70(A...); void __thiscall FUN_111dfd90(undefined4 param_2); template<class... A> int FUN_111dfd90(A...); void __thiscall FUN_111dfe30(undefined4 param_2); template<class... A> int FUN_111dfe30(A...); void __thiscall FUN_111dff80(undefined4 param_2); template<class... A> int FUN_111dff80(A...); void __thiscall FUN_111dfff0(undefined4 param_2); template<class... A> int FUN_111dfff0(A...); void __thiscall FUN_111e0150(undefined4 param_2); template<class... A> int FUN_111e0150(A...); void __thiscall FUN_111e02d0(int *param_2); template<class... A> int FUN_111e02d0(A...); undefined1 __thiscall FUN_111e0360(undefined4 param_2,uint param_3); template<class... A> int FUN_111e0360(A...); void __thiscall FUN_111e0460(int *param_2); template<class... A> int FUN_111e0460(A...); undefined1 __thiscall FUN_111e04f0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_111e04f0(A...); void __thiscall FUN_111e05f0(ulong *param_2,undefined4 *param_3,undefined4 param_4); template<class... A> int FUN_111e05f0(A...); undefined4 __thiscall FUN_111e2a40(undefined4 param_2); template<class... A> int FUN_111e2a40(A...); int __thiscall FUN_111e2ab0(undefined4 param_2); template<class... A> int FUN_111e2ab0(A...); int __thiscall FUN_111e2b30(undefined4 param_2); template<class... A> int FUN_111e2b30(A...); int __thiscall FUN_111e2bb0(undefined4 param_2); template<class... A> int FUN_111e2bb0(A...); undefined4 __thiscall FUN_111e2c30(undefined4 param_2); template<class... A> int FUN_111e2c30(A...); int __thiscall FUN_111e2d00(undefined4 param_2); template<class... A> int FUN_111e2d00(A...); short __thiscall FUN_111e3150(undefined4 param_2,undefined1 *param_3,undefined4 param_4); template<class... A> int FUN_111e3150(A...); short __thiscall FUN_111e3270(undefined4 param_2,undefined1 *param_3,undefined4 param_4); template<class... A> int FUN_111e3270(A...); char * __thiscall FUN_111e33b0(int param_2,int param_3); template<class... A> int FUN_111e33b0(A...); undefined1 __thiscall FUN_111e3440(int param_2,byte *param_3,undefined4 param_4,undefined4 param_5); template<class... A> int FUN_111e3440(A...); void __thiscall FUN_111e3550(undefined4 param_2,char *param_3,undefined4 *param_4,undefined4 param_5,
-            undefined4 param_6,undefined4 param_7,undefined4 param_8); template<class... A> int FUN_111e3550(A...); short __thiscall FUN_111e3f80(undefined4 param_2); template<class... A> int FUN_111e3f80(A...); undefined4 __thiscall FUN_111e4490(undefined4 param_2); template<class... A> int FUN_111e4490(A...); undefined4 __thiscall FUN_111e4550(undefined4 param_2); template<class... A> int FUN_111e4550(A...); void __thiscall FUN_111e4fe0(undefined4 *param_2); template<class... A> int FUN_111e4fe0(A...); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_111e5150(int param_2); template<class... A> int FUN_111e5150(A...); void __thiscall FUN_111e5330(undefined4 param_2,char *param_3); template<class... A> int FUN_111e5330(A...); void __thiscall FUN_111e66a0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_111e66a0(A...); void __thiscall FUN_111e6760(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_111e6760(A...); void __thiscall FUN_111e6a60(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_111e6a60(A...); void __thiscall FUN_111e6b00(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_111e6b00(A...); void __thiscall FUN_111e6c10(undefined4 param_2,char *param_3); template<class... A> int FUN_111e6c10(A...); void __thiscall FUN_111e6ea0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_111e6ea0(A...); void __thiscall FUN_111e6f80(byte *param_2,undefined4 param_3); template<class... A> int FUN_111e6f80(A...); void __thiscall FUN_111e6ff0(byte *param_2,undefined4 param_3); template<class... A> int FUN_111e6ff0(A...); void __thiscall FUN_111e7060(byte *param_2,undefined4 param_3); template<class... A> int FUN_111e7060(A...); void __thiscall FUN_111e7340(byte *param_2,undefined4 param_3); template<class... A> int FUN_111e7340(A...); void __thiscall FUN_111e73b0(byte *param_2,undefined4 param_3); template<class... A> int FUN_111e73b0(A...); void __thiscall FUN_111e7420(byte *param_2,undefined4 param_3); template<class... A> int FUN_111e7420(A...); void __thiscall FUN_111e74d0(byte *param_2,int param_3); template<class... A> int FUN_111e74d0(A...); void __thiscall FUN_111e7700(char *param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5,
+            undefined4 param_6,undefined4 param_7,undefined4 param_8); template<class... A> int FUN_111e3550(A...); short __thiscall FUN_111e3f80(undefined4 param_2); template<class... A> int FUN_111e3f80(A...); undefined4 __thiscall FUN_111e4490(undefined4 param_2); template<class... A> int FUN_111e4490(A...); undefined4 __thiscall FUN_111e4550(undefined4 param_2); template<class... A> int FUN_111e4550(A...); void __thiscall FUN_111e4fe0(undefined4 *param_2); template<class... A> int FUN_111e4fe0(A...); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_111e5150(int param_2); template<class... A> int FUN_111e5150(A...); void __thiscall FUN_111e5330(undefined4 param_2,char *param_3); template<class... A> int FUN_111e5330(A...); void __thiscall FUN_111e66a0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_111e66a0(A...); void __thiscall FUN_111e6760(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_111e6760(A...); void __thiscall FUN_111e6a60(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_111e6a60(A...); void __thiscall FUN_111e6b00(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_111e6b00(A...); void __thiscall FUN_111e6c10(undefined4 param_2,char *param_3); template<class... A> int FUN_111e6c10(A...); void __thiscall FUN_111e6ea0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_111e6ea0(A...); void __thiscall FUN_111e6f80(byte *param_2,undefined4 param_3); template<class... A> int FUN_111e6f80(A...); void __thiscall FUN_111e6ff0(byte *param_2,undefined4 param_3); template<class... A> int FUN_111e6ff0(A...); void __thiscall FUN_111e7060(byte *param_2,undefined4 param_3); template<class... A> int FUN_111e7060(A...); void __thiscall FUN_111e70d0(byte *param_2,char *param_3); template<class... A> int FUN_111e70d0(A...); void __thiscall FUN_111e7340(byte *param_2,undefined4 param_3); template<class... A> int FUN_111e7340(A...); void __thiscall FUN_111e73b0(byte *param_2,undefined4 param_3); template<class... A> int FUN_111e73b0(A...); void __thiscall FUN_111e7420(byte *param_2,undefined4 param_3); template<class... A> int FUN_111e7420(A...); void __thiscall FUN_111e74d0(byte *param_2,int param_3); template<class... A> int FUN_111e74d0(A...); void __thiscall FUN_111e75e0(byte *param_2,char *param_3); template<class... A> int FUN_111e75e0(A...); void __thiscall FUN_111e7700(char *param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5,
             undefined4 param_6,undefined4 param_7); template<class... A> int FUN_111e7700(A...); byte __thiscall FUN_111e7910(int param_2); template<class... A> int FUN_111e7910(A...); void __thiscall FUN_111e7a30(undefined4 *param_2); template<class... A> int FUN_111e7a30(A...); uint __thiscall FUN_111e7b10(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_111e7b10(A...); };
 
 extern int FUN_10002a68(...);
@@ -1818,6 +1818,18 @@ extern undefined1 LAB_111e7020[];
 extern undefined1 LAB_111e7025[];
 extern undefined1 LAB_111e7090[];
 extern undefined1 LAB_111e7095[];
+extern undefined1 LAB_111e7107[];
+extern undefined1 LAB_111e710c[];
+extern undefined1 LAB_111e7154[];
+extern undefined1 LAB_111e7159[];
+extern undefined1 LAB_111e71a1[];
+extern undefined1 LAB_111e71a6[];
+extern undefined1 LAB_111e71f0[];
+extern undefined1 LAB_111e71f5[];
+extern undefined1 LAB_111e7240[];
+extern undefined1 LAB_111e7245[];
+extern undefined1 LAB_111e7290[];
+extern undefined1 LAB_111e7295[];
 extern undefined1 LAB_111e7370[];
 extern undefined1 LAB_111e7375[];
 extern undefined1 LAB_111e73e0[];
@@ -1832,6 +1844,10 @@ extern undefined1 LAB_111e7541[];
 extern undefined1 LAB_111e7546[];
 extern undefined1 LAB_111e7590[];
 extern undefined1 LAB_111e7595[];
+extern undefined1 LAB_111e7610[];
+extern undefined1 LAB_111e7615[];
+extern undefined1 LAB_111e7656[];
+extern undefined1 LAB_111e765b[];
 extern undefined1 LAB_117bf414[];
 extern undefined1 LAB_117bf454[];
 extern undefined1 LAB_117bf4a4[];
@@ -45205,6 +45221,177 @@ LAB_111e7095:
 }
 
 
+// Reference entry 111e70d0; body size 495 bytes.
+#line 1 "ENTRY_111e70d0"
+
+void __thiscall Recovered_Bulk::FUN_111e70d0(byte *param_2,char *param_3)
+{
+  int param_1 = (int )this;
+  byte bVar1;
+  char *pcVar2;
+  uint uVar3;
+  ulong uVar4;
+  ulong uVar5;
+  byte *pbVar6;
+  bool bVar7;
+  
+  if (*(int *)(param_1 + 4) != 0) {
+    pcVar2 = (char *)("http://purl.org/dc/elements/1.1/|title");
+    pbVar6 = (byte *)(param_2);
+    do {
+      bVar1 = (byte)(*pcVar2);
+      bVar7 = (bool)(bVar1 < *pbVar6);
+      if (bVar1 != *pbVar6) {
+LAB_111e7107:
+        uVar3 = (uint)(-(uint)bVar7 | 1);
+        goto LAB_111e710c;
+      }
+      if (bVar1 == 0) break;
+      bVar1 = (byte)(pcVar2[1]);
+      bVar7 = (bool)(bVar1 < pbVar6[1]);
+      if ((byte *)((bVar1)) != (byte *)(pbVar6[1])) goto LAB_111e7107;
+      pcVar2 = (char *)(pcVar2 + 2);
+      pbVar6 = (byte *)(pbVar6 + 2);
+    } while (bVar1 != 0);
+    uVar3 = (uint)(0);
+LAB_111e710c:
+    if (uVar3 == 0) {
+      thunk_FUN_1106a8d0(*(int *)(param_1 + 4),param_3,*(undefined4 *)(param_1 + 8));
+      return;
+    }
+  }
+  if (*(int *)(param_1 + 0xc) != 0) {
+    pcVar2 = (char *)("urn:schemas-upnp-org:metadata-1-0/upnp/|album");
+    pbVar6 = (byte *)(param_2);
+    do {
+      bVar1 = (byte)(*pcVar2);
+      bVar7 = (bool)(bVar1 < *pbVar6);
+      if (bVar1 != *pbVar6) {
+LAB_111e7154:
+        uVar3 = (uint)(-(uint)bVar7 | 1);
+        goto LAB_111e7159;
+      }
+      if (bVar1 == 0) break;
+      bVar1 = (byte)(pcVar2[1]);
+      bVar7 = (bool)(bVar1 < pbVar6[1]);
+      if ((byte *)((bVar1)) != (byte *)(pbVar6[1])) goto LAB_111e7154;
+      pcVar2 = (char *)(pcVar2 + 2);
+      pbVar6 = (byte *)(pbVar6 + 2);
+    } while (bVar1 != 0);
+    uVar3 = (uint)(0);
+LAB_111e7159:
+    if (uVar3 == 0) {
+      thunk_FUN_1106a8d0(*(int *)(param_1 + 0xc),param_3,*(undefined4 *)(param_1 + 0x10));
+      return;
+    }
+  }
+  if (*(int *)(param_1 + 0x14) != 0) {
+    pcVar2 = (char *)("urn:schemas-upnp-org:metadata-1-0/upnp/|albumId");
+    pbVar6 = (byte *)(param_2);
+    do {
+      bVar1 = (byte)(*pcVar2);
+      bVar7 = (bool)(bVar1 < *pbVar6);
+      if (bVar1 != *pbVar6) {
+LAB_111e71a1:
+        uVar3 = (uint)(-(uint)bVar7 | 1);
+        goto LAB_111e71a6;
+      }
+      if (bVar1 == 0) break;
+      bVar1 = (byte)(pcVar2[1]);
+      bVar7 = (bool)(bVar1 < pbVar6[1]);
+      if ((byte *)((bVar1)) != (byte *)(pbVar6[1])) goto LAB_111e71a1;
+      pcVar2 = (char *)(pcVar2 + 2);
+      pbVar6 = (byte *)(pbVar6 + 2);
+    } while (bVar1 != 0);
+    uVar3 = (uint)(0);
+LAB_111e71a6:
+    if (uVar3 == 0) {
+      thunk_FUN_1106a8d0(*(int *)(param_1 + 0x14),param_3,*(undefined4 *)(param_1 + 0x18));
+      return;
+    }
+  }
+  if (*(int *)(param_1 + 0x24) != 0) {
+    pcVar2 = (char *)("urn:schemas-upnp-org:metadata-1-0/upnp/|class");
+    pbVar6 = (byte *)(param_2);
+    do {
+      bVar1 = (byte)(*pcVar2);
+      bVar7 = (bool)(bVar1 < *pbVar6);
+      if (bVar1 != *pbVar6) {
+LAB_111e71f0:
+        uVar3 = (uint)(-(uint)bVar7 | 1);
+        goto LAB_111e71f5;
+      }
+      if (bVar1 == 0) break;
+      bVar1 = (byte)(pcVar2[1]);
+      bVar7 = (bool)(bVar1 < pbVar6[1]);
+      if ((byte *)((bVar1)) != (byte *)(pbVar6[1])) goto LAB_111e71f0;
+      pcVar2 = (char *)(pcVar2 + 2);
+      pbVar6 = (byte *)(pbVar6 + 2);
+    } while (bVar1 != 0);
+    uVar3 = (uint)(0);
+LAB_111e71f5:
+    if (uVar3 == 0) {
+      thunk_FUN_1106a8d0(*(int *)(param_1 + 0x24),param_3,*(undefined4 *)(param_1 + 0x28));
+      return;
+    }
+  }
+  if (*(int *)(param_1 + 0x2c) != 0) {
+    pcVar2 = (char *)("urn:schemas-upnp-org:metadata-1-0/upnp/|albumArtURI");
+    pbVar6 = (byte *)(param_2);
+    do {
+      bVar1 = (byte)(*pcVar2);
+      bVar7 = (bool)(bVar1 < *pbVar6);
+      if (bVar1 != *pbVar6) {
+LAB_111e7240:
+        uVar3 = (uint)(-(uint)bVar7 | 1);
+        goto LAB_111e7245;
+      }
+      if (bVar1 == 0) break;
+      bVar1 = (byte)(pcVar2[1]);
+      bVar7 = (bool)(bVar1 < pbVar6[1]);
+      if ((byte *)((bVar1)) != (byte *)(pbVar6[1])) goto LAB_111e7240;
+      pcVar2 = (char *)(pcVar2 + 2);
+      pbVar6 = (byte *)(pbVar6 + 2);
+    } while (bVar1 != 0);
+    uVar3 = (uint)(0);
+LAB_111e7245:
+    if (uVar3 == 0) {
+      thunk_FUN_1106a8d0(*(int *)(param_1 + 0x2c),param_3,*(undefined4 *)(param_1 + 0x30));
+      return;
+    }
+  }
+  if (*(int *)(param_1 + 0x34) != 0) {
+    pcVar2 = (char *)("urn:schemas-rinconnetworks-com:metadata-1-0/|showSecondsRemaining");
+    do {
+      bVar1 = (byte)(*pcVar2);
+      bVar7 = (bool)(bVar1 < *param_2);
+      if (bVar1 != *param_2) {
+LAB_111e7290:
+        uVar3 = (uint)(-(uint)bVar7 | 1);
+        goto LAB_111e7295;
+      }
+      if (bVar1 == 0) break;
+      bVar1 = (byte)(pcVar2[1]);
+      bVar7 = (bool)(bVar1 < param_2[1]);
+      if ((byte *)((bVar1)) != (byte *)(param_2[1])) goto LAB_111e7290;
+      pcVar2 = (char *)(pcVar2 + 2);
+      param_2 = (byte *)(param_2 + 2);
+    } while (bVar1 != 0);
+    uVar3 = (uint)(0);
+LAB_111e7295:
+    if (uVar3 == 0) {
+      uVar4 = (ulong)(strtoul(param_3,(char **)0x0,10));
+      uVar5 = (ulong)(0xffffffff);
+      if (uVar4 < 0x7fffffff) {
+        uVar5 = (ulong)(uVar4);
+      }
+      **(ulong**)(param_1 + 0x34) = (ulong)(uVar5);
+    }
+  }
+  return;
+}
+
+
 // Reference entry 111e7340; body size 80 bytes.
 #line 1 "ENTRY_111e7340"
 
@@ -45421,6 +45608,78 @@ LAB_111e7590:
 LAB_111e7595:
     if (uVar3 == 0) {
       thunk_FUN_111f47d0(param_3);
+    }
+  }
+  return;
+}
+
+
+// Reference entry 111e75e0; body size 222 bytes.
+#line 1 "ENTRY_111e75e0"
+
+void __thiscall Recovered_Bulk::FUN_111e75e0(byte *param_2,char *param_3)
+{
+  int param_1 = (int )this;
+  byte bVar1;
+  char *_Str;
+  char *pcVar2;
+  uint uVar3;
+  int iVar4;
+  int *piVar5;
+  ulong uVar6;
+  byte *pbVar7;
+  bool bVar8;
+  
+  _Str = (char *)(param_3);
+  pcVar2 = (char *)("urn:schemas-rinconnetworks-com:metadata-1-0/|resumeTrackId");
+  pbVar7 = (byte *)(param_2);
+  do {
+    bVar1 = (byte)(*pcVar2);
+    bVar8 = (bool)(bVar1 < *pbVar7);
+    if (bVar1 != *pbVar7) {
+LAB_111e7610:
+      uVar3 = (uint)(-(uint)bVar8 | 1);
+      goto LAB_111e7615;
+    }
+    if (bVar1 == 0) break;
+    bVar1 = (byte)(pcVar2[1]);
+    bVar8 = (bool)(bVar1 < pbVar7[1]);
+    if ((byte *)((bVar1)) != (byte *)(pbVar7[1])) goto LAB_111e7610;
+    pcVar2 = (char *)(pcVar2 + 2);
+    pbVar7 = (byte *)(pbVar7 + 2);
+  } while (bVar1 != 0);
+  uVar3 = (uint)(0);
+LAB_111e7615:
+  if (uVar3 == 0) {
+    thunk_FUN_1106a8d0(*(undefined4 *)(param_1 + 4),param_3,*(undefined4 *)(param_1 + 8));
+    return;
+  }
+  pcVar2 = (char *)("urn:schemas-rinconnetworks-com:metadata-1-0/|resumeOffsetMillis");
+  do {
+    bVar1 = (byte)(*pcVar2);
+    bVar8 = (bool)(bVar1 < *param_2);
+    if (bVar1 != *param_2) {
+LAB_111e7656:
+      uVar3 = (uint)(-(uint)bVar8 | 1);
+      goto LAB_111e765b;
+    }
+    if (bVar1 == 0) break;
+    bVar1 = (byte)(pcVar2[1]);
+    bVar8 = (bool)(bVar1 < param_2[1]);
+    if ((byte *)((bVar1)) != (byte *)(param_2[1])) goto LAB_111e7656;
+    pcVar2 = (char *)(pcVar2 + 2);
+    param_2 = (byte *)(param_2 + 2);
+  } while (bVar1 != 0);
+  uVar3 = (uint)(0);
+LAB_111e765b:
+  if (((uVar3 == 0) && (**(undefined4 **)(param_1 + 0xc) = 0,(char *)( param_3) != (char *)0x0)) &&
+     (iVar4 = isdigit((int)*param_3), iVar4 != 0)) {
+    piVar5 = (int *)(_errno());
+    *piVar5 = (int)(0);
+    uVar6 = (ulong)(strtoul(_Str,&param_3,10));
+    piVar5 = (int *)(_errno());
+    if ((*piVar5 == 0) && (*param_3 == '\0')) {
+      **(ulong**)(param_1 + 0xc) = (ulong)(uVar6);
     }
   }
   return;
