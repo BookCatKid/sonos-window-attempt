@@ -4336,19 +4336,19 @@ SCStr * __stdcall FUN_10d970f0(SCStr *param_1)
 void __fastcall FUN_10d97510(int *param_1)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
-  
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_1171dd80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   if ((int *)*param_1 != (int *)0x0) {
-    (**(code **)(*(int *)*param_1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (**(code **)(*(int *)*param_1 + 8))(DAT_12126b84 );
   }
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -4417,19 +4417,19 @@ void __fastcall FUN_10d9b8c0(undefined4 *param_1)
 void __fastcall FUN_10d9bb70(int *param_1)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
-  
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_1171eee0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   if ((int *)*param_1 != (int *)0x0) {
-    (**(code **)(*(int *)*param_1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (**(code **)(*(int *)*param_1 + 8))(DAT_12126b84 );
   }
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -7864,19 +7864,19 @@ void __thiscall Recovered_Bulk::FUN_10df4e50(int param_2)
 void __fastcall FUN_10dfe620(int *param_1)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
-  
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_11731340);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   if ((int *)*param_1 != (int *)0x0) {
-    (**(code **)(*(int *)*param_1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (**(code **)(*(int *)*param_1 + 8))(DAT_12126b84 );
   }
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -20250,6 +20250,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10ef3450(undefined4 param_2)
 int FUN_10ef4180(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
 {
+ try {
   uint *puVar1;
   int iVar2;
   
@@ -20259,6 +20260,8 @@ int FUN_10ef4180(undefined4 param_1,undefined4 param_2,undefined4 param_3)
     iVar2 = (int)(-1);
   }
   return (int)(iVar2);
+
+ } catch (...) { }
 }
 
 

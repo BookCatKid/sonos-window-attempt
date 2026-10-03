@@ -1455,6 +1455,7 @@ byte * FUN_1130a770(int param_1,int param_2)
 void FUN_1130a8f0(int param_1,undefined4 param_2)
 
 {
+ try {
   int iVar1;
   
   if (*(int *)(param_1 + 0x10) != 0) {
@@ -1474,6 +1475,8 @@ void FUN_1130a8f0(int param_1,undefined4 param_2)
     }
   }
   return;
+
+ } catch (...) { }
 }
 
 
@@ -4775,6 +4778,7 @@ void FUN_11396af0(int *param_1)
 int FUN_11397320(int param_1,int param_2,undefined4 param_3)
 
 {
+ try {
   undefined4 local_18;
   int local_14;
   int local_10;
@@ -4785,15 +4789,17 @@ int FUN_11397320(int param_1,int param_2,undefined4 param_3)
   if (0 < param_1) {
     local_10 = (int)(param_1);
     local_14 = (int)(param_2);
-    local_18 = (undefined4)(0);
-    local_c = (undefined4)(0);
-    local_8 = (int)(0);
-    local_4 = (undefined2)(0);
+
+
+
+
     thunk_FUN_11397ee0(&local_18,param_3,&stack0x00000010);
     *(undefined1 *)(local_8 + param_2) = 0;
     return (int)(param_2);
   }
   return (int)(param_2);
+
+ } catch (...) { }
 }
 
 
@@ -17769,6 +17775,7 @@ LAB_11401f86:
 void FUN_11402f60(undefined4 param_1,char *param_2)
 
 {
+ try {
   uint uVar1;
   uint uVar2;
   char *pcVar3;
@@ -17820,6 +17827,8 @@ LAB_11402ff6:
   }
   thunk_FUN_1148ac28();
   return;
+
+ } catch (...) { }
 }
 
 

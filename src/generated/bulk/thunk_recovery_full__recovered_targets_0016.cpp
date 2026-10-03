@@ -1575,20 +1575,21 @@ using namespace std;
 void __fastcall FUN_10abdac0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1600,20 +1601,21 @@ void __fastcall FUN_10abdac0(undefined4 *param_1)
 void __fastcall FUN_10abdad0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1625,20 +1627,21 @@ void __fastcall FUN_10abdad0(undefined4 *param_1)
 void __fastcall FUN_10abdae0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1650,20 +1653,21 @@ void __fastcall FUN_10abdae0(undefined4 *param_1)
 void __fastcall FUN_10abdaf0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1675,20 +1679,21 @@ void __fastcall FUN_10abdaf0(undefined4 *param_1)
 void __fastcall FUN_10abdb00(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1700,20 +1705,21 @@ void __fastcall FUN_10abdb00(undefined4 *param_1)
 void __fastcall FUN_10abdb10(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1725,20 +1731,21 @@ void __fastcall FUN_10abdb10(undefined4 *param_1)
 void __fastcall FUN_10abdb20(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1750,20 +1757,21 @@ void __fastcall FUN_10abdb20(undefined4 *param_1)
 void __fastcall FUN_10abdb30(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1775,20 +1783,21 @@ void __fastcall FUN_10abdb30(undefined4 *param_1)
 void __fastcall FUN_10abdb40(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1800,20 +1809,21 @@ void __fastcall FUN_10abdb40(undefined4 *param_1)
 void __fastcall FUN_10abdb50(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1825,20 +1835,21 @@ void __fastcall FUN_10abdb50(undefined4 *param_1)
 void __fastcall FUN_10abdb60(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1850,20 +1861,21 @@ void __fastcall FUN_10abdb60(undefined4 *param_1)
 void __fastcall FUN_10abdb70(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1875,20 +1887,21 @@ void __fastcall FUN_10abdb70(undefined4 *param_1)
 void __fastcall FUN_10abdb80(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1900,20 +1913,21 @@ void __fastcall FUN_10abdb80(undefined4 *param_1)
 void __fastcall FUN_10abdb90(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1925,20 +1939,21 @@ void __fastcall FUN_10abdb90(undefined4 *param_1)
 void __fastcall FUN_10abdba0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1950,20 +1965,21 @@ void __fastcall FUN_10abdba0(undefined4 *param_1)
 void __fastcall FUN_10abdbb0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1975,20 +1991,21 @@ void __fastcall FUN_10abdbb0(undefined4 *param_1)
 void __fastcall FUN_10abdbc0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2000,20 +2017,21 @@ void __fastcall FUN_10abdbc0(undefined4 *param_1)
 void __fastcall FUN_10abdbd0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2025,20 +2043,21 @@ void __fastcall FUN_10abdbd0(undefined4 *param_1)
 void __fastcall FUN_10abdbe0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2050,20 +2069,21 @@ void __fastcall FUN_10abdbe0(undefined4 *param_1)
 void __fastcall FUN_10abdbf0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2075,20 +2095,21 @@ void __fastcall FUN_10abdbf0(undefined4 *param_1)
 void __fastcall FUN_10abdc00(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2100,20 +2121,21 @@ void __fastcall FUN_10abdc00(undefined4 *param_1)
 void __fastcall FUN_10abdc10(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2125,20 +2147,21 @@ void __fastcall FUN_10abdc10(undefined4 *param_1)
 void __fastcall FUN_10abdc20(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2150,20 +2173,21 @@ void __fastcall FUN_10abdc20(undefined4 *param_1)
 void __fastcall FUN_10abdc30(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2175,20 +2199,21 @@ void __fastcall FUN_10abdc30(undefined4 *param_1)
 void __fastcall FUN_10abdc40(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2200,20 +2225,21 @@ void __fastcall FUN_10abdc40(undefined4 *param_1)
 void __fastcall FUN_10abdc50(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2225,20 +2251,21 @@ void __fastcall FUN_10abdc50(undefined4 *param_1)
 void __fastcall FUN_10abdc60(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2250,20 +2277,21 @@ void __fastcall FUN_10abdc60(undefined4 *param_1)
 void __fastcall FUN_10abdc70(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2275,20 +2303,21 @@ void __fastcall FUN_10abdc70(undefined4 *param_1)
 void __fastcall FUN_10abdc80(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2300,20 +2329,21 @@ void __fastcall FUN_10abdc80(undefined4 *param_1)
 void __fastcall FUN_10abdc90(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2325,20 +2355,21 @@ void __fastcall FUN_10abdc90(undefined4 *param_1)
 void __fastcall FUN_10abdca0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2350,20 +2381,21 @@ void __fastcall FUN_10abdca0(undefined4 *param_1)
 void __fastcall FUN_10abdcb0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2375,20 +2407,21 @@ void __fastcall FUN_10abdcb0(undefined4 *param_1)
 void __fastcall FUN_10abdcc0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2400,20 +2433,21 @@ void __fastcall FUN_10abdcc0(undefined4 *param_1)
 void __fastcall FUN_10abdcd0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2425,20 +2459,21 @@ void __fastcall FUN_10abdcd0(undefined4 *param_1)
 void __fastcall FUN_10abdce0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2450,20 +2485,21 @@ void __fastcall FUN_10abdce0(undefined4 *param_1)
 void __fastcall FUN_10abdcf0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2475,20 +2511,21 @@ void __fastcall FUN_10abdcf0(undefined4 *param_1)
 void __fastcall FUN_10abdd00(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2532,21 +2569,22 @@ void __fastcall FUN_10abdd10(undefined4 *param_1)
 void __fastcall FUN_10abdd40(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4938 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2590,21 +2628,22 @@ void __fastcall FUN_10abdd60(undefined4 *param_1)
 void __fastcall FUN_10abdd90(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4974 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2648,21 +2687,22 @@ void __fastcall FUN_10abddb0(undefined4 *param_1)
 void __fastcall FUN_10abdde0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4980 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2706,21 +2746,22 @@ void __fastcall FUN_10abde00(undefined4 *param_1)
 void __fastcall FUN_10abde30(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4978 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2764,21 +2805,22 @@ void __fastcall FUN_10abde50(undefined4 *param_1)
 void __fastcall FUN_10abde80(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4984 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2822,21 +2864,22 @@ void __fastcall FUN_10abdea0(undefined4 *param_1)
 void __fastcall FUN_10abded0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4988 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2880,21 +2923,22 @@ void __fastcall FUN_10abdef0(undefined4 *param_1)
 void __fastcall FUN_10abdf20(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a497c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2938,21 +2982,22 @@ void __fastcall FUN_10abdf40(undefined4 *param_1)
 void __fastcall FUN_10abdf70(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a499c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2996,21 +3041,22 @@ void __fastcall FUN_10abdf90(undefined4 *param_1)
 void __fastcall FUN_10abdfc0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4998 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -3054,21 +3100,22 @@ void __fastcall FUN_10abdfe0(undefined4 *param_1)
 void __fastcall FUN_10abe010(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4994 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -3112,21 +3159,22 @@ void __fastcall FUN_10abe030(undefined4 *param_1)
 void __fastcall FUN_10abe060(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4990 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -3170,21 +3218,22 @@ void __fastcall FUN_10abe080(undefined4 *param_1)
 void __fastcall FUN_10abe0b0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a498c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -3228,21 +3277,22 @@ void __fastcall FUN_10abe0d0(undefined4 *param_1)
 void __fastcall FUN_10abe100(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4918 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -3286,21 +3336,22 @@ void __fastcall FUN_10abe120(undefined4 *param_1)
 void __fastcall FUN_10abe150(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4924 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -3344,21 +3395,22 @@ void __fastcall FUN_10abe170(undefined4 *param_1)
 void __fastcall FUN_10abe1a0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4920 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -3402,21 +3454,22 @@ void __fastcall FUN_10abe1c0(undefined4 *param_1)
 void __fastcall FUN_10abe1f0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a491c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -3460,21 +3513,22 @@ void __fastcall FUN_10abe210(undefined4 *param_1)
 void __fastcall FUN_10abe240(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4910 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -3518,21 +3572,22 @@ void __fastcall FUN_10abe260(undefined4 *param_1)
 void __fastcall FUN_10abe290(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4914 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -3576,21 +3631,22 @@ void __fastcall FUN_10abe2b0(undefined4 *param_1)
 void __fastcall FUN_10abe2e0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4940 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -3634,21 +3690,22 @@ void __fastcall FUN_10abe300(undefined4 *param_1)
 void __fastcall FUN_10abe330(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4944 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -3692,21 +3749,22 @@ void __fastcall FUN_10abe350(undefined4 *param_1)
 void __fastcall FUN_10abe380(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4948 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -3750,21 +3808,22 @@ void __fastcall FUN_10abe3a0(undefined4 *param_1)
 void __fastcall FUN_10abe3d0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4968 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -3808,21 +3867,22 @@ void __fastcall FUN_10abe3f0(undefined4 *param_1)
 void __fastcall FUN_10abe420(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a495c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -3866,21 +3926,22 @@ void __fastcall FUN_10abe440(undefined4 *param_1)
 void __fastcall FUN_10abe470(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4964 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -3924,21 +3985,22 @@ void __fastcall FUN_10abe490(undefined4 *param_1)
 void __fastcall FUN_10abe4c0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4960 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -3982,21 +4044,22 @@ void __fastcall FUN_10abe4e0(undefined4 *param_1)
 void __fastcall FUN_10abe510(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a496c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -4040,21 +4103,22 @@ void __fastcall FUN_10abe530(undefined4 *param_1)
 void __fastcall FUN_10abe560(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4970 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -4098,21 +4162,22 @@ void __fastcall FUN_10abe580(undefined4 *param_1)
 void __fastcall FUN_10abe5b0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4934 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -4156,21 +4221,22 @@ void __fastcall FUN_10abe5d0(undefined4 *param_1)
 void __fastcall FUN_10abe600(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4930 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -4214,21 +4280,22 @@ void __fastcall FUN_10abe620(undefined4 *param_1)
 void __fastcall FUN_10abe650(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a493c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -4272,21 +4339,22 @@ void __fastcall FUN_10abe670(undefined4 *param_1)
 void __fastcall FUN_10abe6a0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4950 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -4330,21 +4398,22 @@ void __fastcall FUN_10abe6c0(undefined4 *param_1)
 void __fastcall FUN_10abe6f0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a494c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -4388,21 +4457,22 @@ void __fastcall FUN_10abe710(undefined4 *param_1)
 void __fastcall FUN_10abe740(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4958 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -4446,21 +4516,22 @@ void __fastcall FUN_10abe760(undefined4 *param_1)
 void __fastcall FUN_10abe790(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a490c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -4504,21 +4575,22 @@ void __fastcall FUN_10abe7b0(undefined4 *param_1)
 void __fastcall FUN_10abe7e0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4928 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -4562,21 +4634,22 @@ void __fastcall FUN_10abe800(undefined4 *param_1)
 void __fastcall FUN_10abe830(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a492c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -4620,21 +4693,22 @@ void __fastcall FUN_10abe850(undefined4 *param_1)
 void __fastcall FUN_10abe880(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4954 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -5269,20 +5343,21 @@ void __fastcall FUN_10ae6ac0(undefined4 *param_1)
 void __fastcall FUN_10ae6af0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -5294,20 +5369,21 @@ void __fastcall FUN_10ae6af0(undefined4 *param_1)
 void __fastcall FUN_10ae6b00(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -5319,20 +5395,21 @@ void __fastcall FUN_10ae6b00(undefined4 *param_1)
 void __fastcall FUN_10ae6b10(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -5376,21 +5453,22 @@ void __fastcall FUN_10ae6b20(undefined4 *param_1)
 void __fastcall FUN_10ae6b50(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4a0c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -5434,21 +5512,22 @@ void __fastcall FUN_10ae6b70(undefined4 *param_1)
 void __fastcall FUN_10ae6ba0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4a10 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -5492,21 +5571,22 @@ void __fastcall FUN_10ae6bc0(undefined4 *param_1)
 void __fastcall FUN_10ae6bf0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4a14 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -5844,20 +5924,21 @@ void __fastcall FUN_10aeaa50(undefined4 *param_1)
 void __fastcall FUN_10aeaa80(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -5869,20 +5950,21 @@ void __fastcall FUN_10aeaa80(undefined4 *param_1)
 void __fastcall FUN_10aeaa90(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -5894,20 +5976,21 @@ void __fastcall FUN_10aeaa90(undefined4 *param_1)
 void __fastcall FUN_10aeaaa0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -5919,20 +6002,21 @@ void __fastcall FUN_10aeaaa0(undefined4 *param_1)
 void __fastcall FUN_10aeaab0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -5944,20 +6028,21 @@ void __fastcall FUN_10aeaab0(undefined4 *param_1)
 void __fastcall FUN_10aeaac0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -5969,20 +6054,21 @@ void __fastcall FUN_10aeaac0(undefined4 *param_1)
 void __fastcall FUN_10aeaad0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -5994,20 +6080,21 @@ void __fastcall FUN_10aeaad0(undefined4 *param_1)
 void __fastcall FUN_10aeaae0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -6019,20 +6106,21 @@ void __fastcall FUN_10aeaae0(undefined4 *param_1)
 void __fastcall FUN_10aeaaf0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -6076,21 +6164,22 @@ void __fastcall FUN_10aeab00(undefined4 *param_1)
 void __fastcall FUN_10aeab30(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4a38 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -6134,21 +6223,22 @@ void __fastcall FUN_10aeab50(undefined4 *param_1)
 void __fastcall FUN_10aeab80(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4a3c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -6192,21 +6282,22 @@ void __fastcall FUN_10aeaba0(undefined4 *param_1)
 void __fastcall FUN_10aeabd0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4a40 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -6250,21 +6341,22 @@ void __fastcall FUN_10aeabf0(undefined4 *param_1)
 void __fastcall FUN_10aeac20(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4a44 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -6308,21 +6400,22 @@ void __fastcall FUN_10aeac40(undefined4 *param_1)
 void __fastcall FUN_10aeac70(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4a48 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -6366,21 +6459,22 @@ void __fastcall FUN_10aeac90(undefined4 *param_1)
 void __fastcall FUN_10aeacc0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4a4c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -6424,21 +6518,22 @@ void __fastcall FUN_10aeace0(undefined4 *param_1)
 void __fastcall FUN_10aead10(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4a50 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -6482,21 +6577,22 @@ void __fastcall FUN_10aead30(undefined4 *param_1)
 void __fastcall FUN_10aead60(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4a54 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -8132,20 +8228,21 @@ undefined4 * __fastcall FUN_10af5b20(undefined4 *param_1)
 void __fastcall FUN_10af68c0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -8157,20 +8254,21 @@ void __fastcall FUN_10af68c0(undefined4 *param_1)
 void __fastcall FUN_10af68d0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -8182,20 +8280,21 @@ void __fastcall FUN_10af68d0(undefined4 *param_1)
 void __fastcall FUN_10af68e0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -8207,20 +8306,21 @@ void __fastcall FUN_10af68e0(undefined4 *param_1)
 void __fastcall FUN_10af68f0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -8232,20 +8332,21 @@ void __fastcall FUN_10af68f0(undefined4 *param_1)
 void __fastcall FUN_10af6900(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -8304,21 +8405,22 @@ void __fastcall FUN_10af6c80(undefined4 *param_1)
 void __fastcall FUN_10af6cb0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4a7c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -8362,21 +8464,22 @@ void __fastcall FUN_10af6cd0(undefined4 *param_1)
 void __fastcall FUN_10af6d00(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4a78 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -8420,21 +8523,22 @@ void __fastcall FUN_10af6d20(undefined4 *param_1)
 void __fastcall FUN_10af6d50(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4a74 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -8478,21 +8582,22 @@ void __fastcall FUN_10af6d70(undefined4 *param_1)
 void __fastcall FUN_10af6da0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4a84 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -8536,21 +8641,22 @@ void __fastcall FUN_10af6dc0(undefined4 *param_1)
 void __fastcall FUN_10af6df0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4a80 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -9887,20 +9993,21 @@ undefined4 FUN_10aff230(void)
 void __fastcall FUN_10affdb0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -9912,20 +10019,21 @@ void __fastcall FUN_10affdb0(undefined4 *param_1)
 void __fastcall FUN_10affdc0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -9937,20 +10045,21 @@ void __fastcall FUN_10affdc0(undefined4 *param_1)
 void __fastcall FUN_10affdd0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -9994,21 +10103,22 @@ void __fastcall FUN_10affde0(undefined4 *param_1)
 void __fastcall FUN_10affe10(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4af0 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -10020,21 +10130,22 @@ void __fastcall FUN_10affe10(undefined4 *param_1)
 void __fastcall FUN_10afff00(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4ae8 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -10078,21 +10189,22 @@ void __fastcall FUN_10afff20(undefined4 *param_1)
 void __fastcall FUN_10afff50(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4aec = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -10819,20 +10931,21 @@ void __fastcall FUN_10b04cf0(undefined4 *param_1)
 void __fastcall FUN_10b04d20(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -10844,20 +10957,21 @@ void __fastcall FUN_10b04d20(undefined4 *param_1)
 void __fastcall FUN_10b04d30(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -10869,20 +10983,21 @@ void __fastcall FUN_10b04d30(undefined4 *param_1)
 void __fastcall FUN_10b04d40(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -10977,21 +11092,22 @@ void __fastcall FUN_10b04f90(undefined4 *param_1)
 void __fastcall FUN_10b04fc0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4b0c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -11024,21 +11140,22 @@ void __fastcall FUN_10b04fe0(undefined4 *param_1)
 void __fastcall FUN_10b05010(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4b10 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -11082,21 +11199,22 @@ void __fastcall FUN_10b05030(undefined4 *param_1)
 void __fastcall FUN_10b05060(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4b14 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12205,20 +12323,21 @@ void __fastcall FUN_10b0d5d0(undefined4 *param_1)
 void __fastcall FUN_10b0d600(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12230,20 +12349,21 @@ void __fastcall FUN_10b0d600(undefined4 *param_1)
 void __fastcall FUN_10b0d620(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12255,20 +12375,21 @@ void __fastcall FUN_10b0d620(undefined4 *param_1)
 void __fastcall FUN_10b0d640(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12280,20 +12401,21 @@ void __fastcall FUN_10b0d640(undefined4 *param_1)
 void __fastcall FUN_10b0d650(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12305,20 +12427,21 @@ void __fastcall FUN_10b0d650(undefined4 *param_1)
 void __fastcall FUN_10b0d660(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12330,20 +12453,21 @@ void __fastcall FUN_10b0d660(undefined4 *param_1)
 void __fastcall FUN_10b0d670(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12355,20 +12479,21 @@ void __fastcall FUN_10b0d670(undefined4 *param_1)
 void __fastcall FUN_10b0d680(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12380,20 +12505,21 @@ void __fastcall FUN_10b0d680(undefined4 *param_1)
 void __fastcall FUN_10b0d690(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12405,20 +12531,21 @@ void __fastcall FUN_10b0d690(undefined4 *param_1)
 void __fastcall FUN_10b0d6c0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12430,20 +12557,21 @@ void __fastcall FUN_10b0d6c0(undefined4 *param_1)
 void __fastcall FUN_10b0d6d0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12539,21 +12667,22 @@ void __fastcall FUN_10b0d7a0(undefined4 *param_1)
 void __fastcall FUN_10b0d7d0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4b90 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12629,21 +12758,22 @@ void __fastcall FUN_10b0d840(undefined4 *param_1)
 void __fastcall FUN_10b0d870(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4b80 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12708,21 +12838,22 @@ void __fastcall FUN_10b0d8e0(undefined4 *param_1)
 void __fastcall FUN_10b0d910(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4b94 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12766,21 +12897,22 @@ void __fastcall FUN_10b0d930(undefined4 *param_1)
 void __fastcall FUN_10b0d960(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4b64 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12824,21 +12956,22 @@ void __fastcall FUN_10b0d980(undefined4 *param_1)
 void __fastcall FUN_10b0d9b0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4b8c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12871,21 +13004,22 @@ void __fastcall FUN_10b0d9d0(undefined4 *param_1)
 void __fastcall FUN_10b0da00(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4b98 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12897,21 +13031,22 @@ void __fastcall FUN_10b0da00(undefined4 *param_1)
 void __fastcall FUN_10b0da70(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4b68 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12955,21 +13090,22 @@ void __fastcall FUN_10b0da90(undefined4 *param_1)
 void __fastcall FUN_10b0dac0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4b6c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -13045,21 +13181,22 @@ void __fastcall FUN_10b0db30(undefined4 *param_1)
 void __fastcall FUN_10b0dc30(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4b7c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -13103,21 +13240,22 @@ void __fastcall FUN_10b0dc50(undefined4 *param_1)
 void __fastcall FUN_10b0dc80(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4b78 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -13729,20 +13867,21 @@ void __fastcall FUN_10b1bc00(undefined4 *param_1)
 void __fastcall FUN_10b1bc30(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -13754,20 +13893,21 @@ void __fastcall FUN_10b1bc30(undefined4 *param_1)
 void __fastcall FUN_10b1bc40(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -13779,20 +13919,21 @@ void __fastcall FUN_10b1bc40(undefined4 *param_1)
 void __fastcall FUN_10b1bc50(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -13804,20 +13945,21 @@ void __fastcall FUN_10b1bc50(undefined4 *param_1)
 void __fastcall FUN_10b1bc60(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -13829,20 +13971,21 @@ void __fastcall FUN_10b1bc60(undefined4 *param_1)
 void __fastcall FUN_10b1bc70(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -13854,6 +13997,7 @@ void __fastcall FUN_10b1bc70(undefined4 *param_1)
 void __fastcall FUN_10b1bcf0(undefined4 *param_1)
 
 {
+ try {
   int *piVar1;
   uint uVar2;
   void *pvStack_10;
@@ -13862,11 +14006,10 @@ void __fastcall FUN_10b1bcf0(undefined4 *param_1)
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCWrappedCBOp);
   param_1[2] = (uint)&ghidra_vftable_SCWrappedCBOp;
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114f5b00);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
   param_1[2] = (uint)&ghidra_vftable_SCOpImpl;
   if (param_1[3] != 0) {
@@ -13882,16 +14025,16 @@ void __fastcall FUN_10b1bcf0(undefined4 *param_1)
   param_1[0xc] = (uint)&ghidra_vftable_SCIObjImpl;
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   param_1[0xc] = (uint)&ghidra_vftable_SCIObj;
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 0xb)))->int_release();
   param_1[0xb] = 0;
-  uStack_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)(param_1 + 10)))->int_release();
   param_1[10] = 0;
   param_1[5] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   piVar1 = (int *)((int *)param_1[4]);
-  uStack_8 = (undefined4)(2);
+
   if (piVar1 != (int *)0x0) {
     param_1[3] = 0;
     param_1[4] = 0;
@@ -13902,8 +14045,10 @@ void __fastcall FUN_10b1bcf0(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -13915,21 +14060,22 @@ void __fastcall FUN_10b1bcf0(undefined4 *param_1)
 void __fastcall FUN_10b1bea0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4c10 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -13973,21 +14119,22 @@ void __fastcall FUN_10b1bec0(undefined4 *param_1)
 void __fastcall FUN_10b1bef0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4c18 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -14031,21 +14178,22 @@ void __fastcall FUN_10b1bf10(undefined4 *param_1)
 void __fastcall FUN_10b1bf40(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4c1c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -14089,21 +14237,22 @@ void __fastcall FUN_10b1bf60(undefined4 *param_1)
 void __fastcall FUN_10b1bf90(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4c0c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -14147,21 +14296,22 @@ void __fastcall FUN_10b1bfb0(undefined4 *param_1)
 void __fastcall FUN_10b1bfe0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4c14 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -14693,20 +14843,21 @@ void __fastcall FUN_10b24940(undefined4 *param_1)
 void __fastcall FUN_10b24970(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -14718,20 +14869,21 @@ void __fastcall FUN_10b24970(undefined4 *param_1)
 void __fastcall FUN_10b24980(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -14743,20 +14895,21 @@ void __fastcall FUN_10b24980(undefined4 *param_1)
 void __fastcall FUN_10b24990(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -14768,20 +14921,21 @@ void __fastcall FUN_10b24990(undefined4 *param_1)
 void __fastcall FUN_10b249a0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -14793,20 +14947,21 @@ void __fastcall FUN_10b249a0(undefined4 *param_1)
 void __fastcall FUN_10b249b0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -14818,20 +14973,21 @@ void __fastcall FUN_10b249b0(undefined4 *param_1)
 void __fastcall FUN_10b249c0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -14843,20 +14999,21 @@ void __fastcall FUN_10b249c0(undefined4 *param_1)
 void __fastcall FUN_10b249d0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -14868,20 +15025,21 @@ void __fastcall FUN_10b249d0(undefined4 *param_1)
 void __fastcall FUN_10b249e0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -14893,20 +15051,21 @@ void __fastcall FUN_10b249e0(undefined4 *param_1)
 void __fastcall FUN_10b249f0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -14918,20 +15077,21 @@ void __fastcall FUN_10b249f0(undefined4 *param_1)
 void __fastcall FUN_10b24a00(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -14943,20 +15103,21 @@ void __fastcall FUN_10b24a00(undefined4 *param_1)
 void __fastcall FUN_10b24a10(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -15000,21 +15161,22 @@ void __fastcall FUN_10b24a20(undefined4 *param_1)
 void __fastcall FUN_10b24a50(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4c54 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -15058,21 +15220,22 @@ void __fastcall FUN_10b24a70(undefined4 *param_1)
 void __fastcall FUN_10b24aa0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4c58 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -15116,21 +15279,22 @@ void __fastcall FUN_10b24ac0(undefined4 *param_1)
 void __fastcall FUN_10b24af0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4c40 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -15174,21 +15338,22 @@ void __fastcall FUN_10b24b10(undefined4 *param_1)
 void __fastcall FUN_10b24b40(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4c44 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -15232,21 +15397,22 @@ void __fastcall FUN_10b24b60(undefined4 *param_1)
 void __fastcall FUN_10b24b90(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4c64 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -15290,21 +15456,22 @@ void __fastcall FUN_10b24bb0(undefined4 *param_1)
 void __fastcall FUN_10b24be0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4c3c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -15348,21 +15515,22 @@ void __fastcall FUN_10b24c00(undefined4 *param_1)
 void __fastcall FUN_10b24c30(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4c4c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -15406,21 +15574,22 @@ void __fastcall FUN_10b24c50(undefined4 *param_1)
 void __fastcall FUN_10b24c80(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4c50 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -15464,21 +15633,22 @@ void __fastcall FUN_10b24ca0(undefined4 *param_1)
 void __fastcall FUN_10b24cd0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4c5c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -15522,21 +15692,22 @@ void __fastcall FUN_10b24cf0(undefined4 *param_1)
 void __fastcall FUN_10b24d20(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4c60 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -15580,21 +15751,22 @@ void __fastcall FUN_10b24d40(undefined4 *param_1)
 void __fastcall FUN_10b24d70(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4c48 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -15968,20 +16140,21 @@ void __fastcall FUN_10b2efd0(undefined4 *param_1)
 void __fastcall FUN_10b2f000(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -15993,20 +16166,21 @@ void __fastcall FUN_10b2f000(undefined4 *param_1)
 void __fastcall FUN_10b2f010(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -16018,20 +16192,21 @@ void __fastcall FUN_10b2f010(undefined4 *param_1)
 void __fastcall FUN_10b2f020(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -16075,21 +16250,22 @@ void __fastcall FUN_10b2f030(undefined4 *param_1)
 void __fastcall FUN_10b2f060(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4c8c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -16133,21 +16309,22 @@ void __fastcall FUN_10b2f080(undefined4 *param_1)
 void __fastcall FUN_10b2f0b0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4c84 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -16159,21 +16336,22 @@ void __fastcall FUN_10b2f0b0(undefined4 *param_1)
 void __fastcall FUN_10b2f170(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4c88 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -16736,20 +16914,21 @@ void __fastcall FUN_10b34ad0(undefined4 *param_1)
 void __fastcall FUN_10b34b00(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -16761,20 +16940,21 @@ void __fastcall FUN_10b34b00(undefined4 *param_1)
 void __fastcall FUN_10b34b10(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -16786,20 +16966,21 @@ void __fastcall FUN_10b34b10(undefined4 *param_1)
 void __fastcall FUN_10b34ba0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -16811,20 +16992,21 @@ void __fastcall FUN_10b34ba0(undefined4 *param_1)
 void __fastcall FUN_10b34bb0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -16915,6 +17097,7 @@ void __fastcall FUN_10b34c90(undefined4 *param_1)
 void __fastcall FUN_10b34cc0(undefined4 *param_1)
 
 {
+ try {
   int *piVar1;
   uint uVar2;
   void *pvStack_10;
@@ -16922,17 +17105,16 @@ void __fastcall FUN_10b34cc0(undefined4 *param_1)
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCDetectionSonarDescriptor);
-  puStack_c = (undefined1 *)(LAB_115793e0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSonarWizardActionDescriptor);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 5)))->int_release();
   param_1[5] = 0;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCDisplayWizardActionDescriptorBase);
   piVar1 = (int *)((int *)param_1[3]);
-  uStack_8 = (undefined4)(1);
+
   if (piVar1 != (int *)0x0) {
     param_1[2] = 0;
     param_1[3] = 0;
@@ -16941,8 +17123,10 @@ void __fastcall FUN_10b34cc0(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -16975,21 +17159,22 @@ void __fastcall FUN_10b34d40(undefined4 *param_1)
 void __fastcall FUN_10b34d70(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4cd0 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -17001,21 +17186,22 @@ void __fastcall FUN_10b34d70(undefined4 *param_1)
 void __fastcall FUN_10b35060(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4ca8 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -17315,21 +17501,22 @@ void __fastcall FUN_10b35300(undefined4 *param_1)
 void __fastcall FUN_10b35330(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4ccc = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -17373,21 +17560,22 @@ void __fastcall FUN_10b35350(undefined4 *param_1)
 void __fastcall FUN_10b35380(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4ca4 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18032,20 +18220,21 @@ void __fastcall FUN_10b4a350(undefined4 *param_1)
 void __fastcall FUN_10b4a380(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18057,20 +18246,21 @@ void __fastcall FUN_10b4a380(undefined4 *param_1)
 void __fastcall FUN_10b4a390(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18082,20 +18272,21 @@ void __fastcall FUN_10b4a390(undefined4 *param_1)
 void __fastcall FUN_10b4a3a0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18107,20 +18298,21 @@ void __fastcall FUN_10b4a3a0(undefined4 *param_1)
 void __fastcall FUN_10b4a3b0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18132,20 +18324,21 @@ void __fastcall FUN_10b4a3b0(undefined4 *param_1)
 void __fastcall FUN_10b4a3c0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18157,20 +18350,21 @@ void __fastcall FUN_10b4a3c0(undefined4 *param_1)
 void __fastcall FUN_10b4a3d0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18182,20 +18376,21 @@ void __fastcall FUN_10b4a3d0(undefined4 *param_1)
 void __fastcall FUN_10b4a3e0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18207,20 +18402,21 @@ void __fastcall FUN_10b4a3e0(undefined4 *param_1)
 void __fastcall FUN_10b4a3f0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18264,21 +18460,22 @@ void __fastcall FUN_10b4a400(undefined4 *param_1)
 void __fastcall FUN_10b4a430(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4d2c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18322,21 +18519,22 @@ void __fastcall FUN_10b4a450(undefined4 *param_1)
 void __fastcall FUN_10b4a480(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4d30 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18380,21 +18578,22 @@ void __fastcall FUN_10b4a4a0(undefined4 *param_1)
 void __fastcall FUN_10b4a4d0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4d34 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18438,21 +18637,22 @@ void __fastcall FUN_10b4a4f0(undefined4 *param_1)
 void __fastcall FUN_10b4a520(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4d28 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18496,21 +18696,22 @@ void __fastcall FUN_10b4a540(undefined4 *param_1)
 void __fastcall FUN_10b4a570(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4d38 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18554,21 +18755,22 @@ void __fastcall FUN_10b4a590(undefined4 *param_1)
 void __fastcall FUN_10b4a5c0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4d44 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18612,21 +18814,22 @@ void __fastcall FUN_10b4a5e0(undefined4 *param_1)
 void __fastcall FUN_10b4a610(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4d3c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18670,21 +18873,22 @@ void __fastcall FUN_10b4a630(undefined4 *param_1)
 void __fastcall FUN_10b4a660(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4d40 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18998,20 +19202,21 @@ void __fastcall FUN_10b515f0(undefined4 *param_1)
 void __fastcall FUN_10b51620(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -19023,20 +19228,21 @@ void __fastcall FUN_10b51620(undefined4 *param_1)
 void __fastcall FUN_10b51630(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -19048,20 +19254,21 @@ void __fastcall FUN_10b51630(undefined4 *param_1)
 void __fastcall FUN_10b51640(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -19073,20 +19280,21 @@ void __fastcall FUN_10b51640(undefined4 *param_1)
 void __fastcall FUN_10b51650(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -19098,20 +19306,21 @@ void __fastcall FUN_10b51650(undefined4 *param_1)
 void __fastcall FUN_10b51660(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -19123,20 +19332,21 @@ void __fastcall FUN_10b51660(undefined4 *param_1)
 void __fastcall FUN_10b51670(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -19232,21 +19442,22 @@ void __fastcall FUN_10b51710(undefined4 *param_1)
 void __fastcall FUN_10b51740(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4d6c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -19279,21 +19490,22 @@ void __fastcall FUN_10b51760(undefined4 *param_1)
 void __fastcall FUN_10b51790(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4d68 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -19326,21 +19538,22 @@ void __fastcall FUN_10b517b0(undefined4 *param_1)
 void __fastcall FUN_10b517e0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4d70 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -19384,21 +19597,22 @@ void __fastcall FUN_10b51800(undefined4 *param_1)
 void __fastcall FUN_10b51830(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4d64 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -19442,21 +19656,22 @@ void __fastcall FUN_10b51850(undefined4 *param_1)
 void __fastcall FUN_10b51880(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4d78 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -19489,21 +19704,22 @@ void __fastcall FUN_10b518a0(undefined4 *param_1)
 void __fastcall FUN_10b518d0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4d74 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -19742,20 +19958,21 @@ void __fastcall FUN_10b55790(undefined4 *param_1)
 void __fastcall FUN_10b557c0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -19767,20 +19984,21 @@ void __fastcall FUN_10b557c0(undefined4 *param_1)
 void __fastcall FUN_10b557d0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -19792,20 +20010,21 @@ void __fastcall FUN_10b557d0(undefined4 *param_1)
 void __fastcall FUN_10b557e0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -19849,21 +20068,22 @@ void __fastcall FUN_10b557f0(undefined4 *param_1)
 void __fastcall FUN_10b55820(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4d94 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -19907,21 +20127,22 @@ void __fastcall FUN_10b55840(undefined4 *param_1)
 void __fastcall FUN_10b55870(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4d98 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -19965,21 +20186,22 @@ void __fastcall FUN_10b55890(undefined4 *param_1)
 void __fastcall FUN_10b558c0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4d9c = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -20063,20 +20285,21 @@ undefined4 FUN_10b585c0(void)
 void __fastcall FUN_10b58bc0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -20130,21 +20353,22 @@ void __fastcall FUN_10b58c00(undefined4 *param_1)
 void __fastcall FUN_10b58c30(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4dbc = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21374,20 +21598,21 @@ void __fastcall FUN_10b5d910(undefined4 *param_1)
 void __fastcall FUN_10b5d940(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21399,20 +21624,21 @@ void __fastcall FUN_10b5d940(undefined4 *param_1)
 void __fastcall FUN_10b5d950(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21424,20 +21650,21 @@ void __fastcall FUN_10b5d950(undefined4 *param_1)
 void __fastcall FUN_10b5d960(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21449,20 +21676,21 @@ void __fastcall FUN_10b5d960(undefined4 *param_1)
 void __fastcall FUN_10b5d970(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21474,20 +21702,21 @@ void __fastcall FUN_10b5d970(undefined4 *param_1)
 void __fastcall FUN_10b5d980(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21499,20 +21728,21 @@ void __fastcall FUN_10b5d980(undefined4 *param_1)
 void __fastcall FUN_10b5d990(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21524,20 +21754,21 @@ void __fastcall FUN_10b5d990(undefined4 *param_1)
 void __fastcall FUN_10b5d9a0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21549,20 +21780,21 @@ void __fastcall FUN_10b5d9a0(undefined4 *param_1)
 void __fastcall FUN_10b5d9b0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21574,20 +21806,21 @@ void __fastcall FUN_10b5d9b0(undefined4 *param_1)
 void __fastcall FUN_10b5d9c0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21599,20 +21832,21 @@ void __fastcall FUN_10b5d9c0(undefined4 *param_1)
 void __fastcall FUN_10b5d9d0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21624,20 +21858,21 @@ void __fastcall FUN_10b5d9d0(undefined4 *param_1)
 void __fastcall FUN_10b5d9e0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21649,20 +21884,21 @@ void __fastcall FUN_10b5d9e0(undefined4 *param_1)
 void __fastcall FUN_10b5d9f0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21674,20 +21910,21 @@ void __fastcall FUN_10b5d9f0(undefined4 *param_1)
 void __fastcall FUN_10b5da00(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21699,20 +21936,21 @@ void __fastcall FUN_10b5da00(undefined4 *param_1)
 void __fastcall FUN_10b5da10(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21724,20 +21962,21 @@ void __fastcall FUN_10b5da10(undefined4 *param_1)
 void __fastcall FUN_10b5da20(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21781,21 +22020,22 @@ void __fastcall FUN_10b5dbc0(undefined4 *param_1)
 void __fastcall FUN_10b5dbf0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4dcc = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21839,21 +22079,22 @@ void __fastcall FUN_10b5dc10(undefined4 *param_1)
 void __fastcall FUN_10b5dc40(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4dd8 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21897,21 +22138,22 @@ void __fastcall FUN_10b5dc60(undefined4 *param_1)
 void __fastcall FUN_10b5dc90(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4ddc = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21955,21 +22197,22 @@ void __fastcall FUN_10b5dcb0(undefined4 *param_1)
 void __fastcall FUN_10b5dce0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4de0 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -22013,21 +22256,22 @@ void __fastcall FUN_10b5dd00(undefined4 *param_1)
 void __fastcall FUN_10b5dd30(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4de4 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -22071,21 +22315,22 @@ void __fastcall FUN_10b5dd50(undefined4 *param_1)
 void __fastcall FUN_10b5dd80(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4de8 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -22129,21 +22374,22 @@ void __fastcall FUN_10b5dda0(undefined4 *param_1)
 void __fastcall FUN_10b5ddd0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4dec = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -22187,21 +22433,22 @@ void __fastcall FUN_10b5ddf0(undefined4 *param_1)
 void __fastcall FUN_10b5de20(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4df0 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -22245,21 +22492,22 @@ void __fastcall FUN_10b5de40(undefined4 *param_1)
 void __fastcall FUN_10b5de70(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4df4 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -22303,21 +22551,22 @@ void __fastcall FUN_10b5de90(undefined4 *param_1)
 void __fastcall FUN_10b5dec0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4df8 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -22361,21 +22610,22 @@ void __fastcall FUN_10b5dee0(undefined4 *param_1)
 void __fastcall FUN_10b5df10(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4dfc = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -22419,21 +22669,22 @@ void __fastcall FUN_10b5df30(undefined4 *param_1)
 void __fastcall FUN_10b5df60(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4e00 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -22477,21 +22728,22 @@ void __fastcall FUN_10b5df80(undefined4 *param_1)
 void __fastcall FUN_10b5dfb0(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4e04 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -22535,21 +22787,22 @@ void __fastcall FUN_10b5dfd0(undefined4 *param_1)
 void __fastcall FUN_10b5e000(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4dd0 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -22593,21 +22846,22 @@ void __fastcall FUN_10b5e020(undefined4 *param_1)
 void __fastcall FUN_10b5e050(undefined4 *param_1)
 
 {
+ try {
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
   
   DAT_121a4dd4 = (int)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateTypeFor);
-  puStack_c = (undefined1 *)(LAB_115e0ff0);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewWizStateType);
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -23690,6 +23944,7 @@ undefined4 * __fastcall FUN_10b6d090(undefined4 *param_1)
 void __fastcall FUN_10b6d370(undefined4 *param_1)
 
 {
+ try {
   undefined4 *puVar1;
   uint uVar2;
   int iVar3;
@@ -23698,11 +23953,10 @@ void __fastcall FUN_10b6d370(undefined4 *param_1)
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114f5ce0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   if ((int *)param_1[1] != (int *)0x0) {
     if (param_1[2] != 0) {
@@ -23715,8 +23969,10 @@ void __fastcall FUN_10b6d370(undefined4 *param_1)
     param_1[1] = 0;
     param_1[2] = 0;
   }
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -26196,6 +26452,7 @@ undefined4 * __fastcall FUN_10b7c690(undefined4 *param_1)
 void __fastcall FUN_10b7cb20(undefined4 *param_1)
 
 {
+ try {
   undefined4 *puVar1;
   uint uVar2;
   int iVar3;
@@ -26204,11 +26461,10 @@ void __fastcall FUN_10b7cb20(undefined4 *param_1)
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114f5ce0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   if ((int *)param_1[1] != (int *)0x0) {
     if (param_1[2] != 0) {
@@ -26221,8 +26477,10 @@ void __fastcall FUN_10b7cb20(undefined4 *param_1)
     param_1[1] = 0;
     param_1[2] = 0;
   }
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -26558,6 +26816,7 @@ void __fastcall FUN_10b7d4d0(undefined4 *param_1)
 void __fastcall FUN_10b7d4e0(undefined4 *param_1)
 
 {
+ try {
   int *piVar1;
   uint uVar2;
   void *pvStack_10;
@@ -26566,11 +26825,10 @@ void __fastcall FUN_10b7d4e0(undefined4 *param_1)
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpReplaceAccountX);
   param_1[2] = (uint)&ghidra_vftable_SCOpReplaceAccountX;
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_116bc400);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
   param_1[2] = (uint)&ghidra_vftable_SCOpImpl;
   if (param_1[3] != 0) {
@@ -26586,16 +26844,16 @@ void __fastcall FUN_10b7d4e0(undefined4 *param_1)
   param_1[0xc] = (uint)&ghidra_vftable_SCIObjImpl;
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   param_1[0xc] = (uint)&ghidra_vftable_SCIObj;
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 0xb)))->int_release();
   param_1[0xb] = 0;
-  uStack_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)(param_1 + 10)))->int_release();
   param_1[10] = 0;
   param_1[5] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   piVar1 = (int *)((int *)param_1[4]);
-  uStack_8 = (undefined4)(2);
+
   if (piVar1 != (int *)0x0) {
     param_1[3] = 0;
     param_1[4] = 0;
@@ -26606,8 +26864,10 @@ void __fastcall FUN_10b7d4e0(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 

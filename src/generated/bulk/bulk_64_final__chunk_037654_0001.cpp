@@ -5919,6 +5919,7 @@ int FUN_11410360(uint *param_1,void *param_2,uint param_3)
 void FUN_11410440(int param_1,int param_2)
 
 {
+ try {
   int *piVar1;
   uint uVar2;
   uint uVar3;
@@ -6190,7 +6191,7 @@ void FUN_11410440(int param_1,int param_2)
     local_13c[0x4a] = local_13c[0x4a] + local_13c[4];
     local_13c[0x46] = local_13c[5] + local_13c[4];
   } while (uVar4 < 0x100);
-  uStack_150 = (uint)(0x128);
+
   *(uint *)(param_1 + 0x48) = local_13c[2] + local_13c[5] + local_13c[4];
   *(int *)(param_1 + 0x50) = *(int *)(param_1 + 0x50) + local_13c[0x48];
   *(int *)(param_1 + 0x54) = *(int *)(param_1 + 0x54) + local_13c[0x49];
@@ -6204,6 +6205,8 @@ void FUN_11410440(int param_1,int param_2)
   thunk_FUN_11423ed0();
   thunk_FUN_1148ac28();
   return;
+
+ } catch (...) { }
 }
 
 
@@ -11058,6 +11061,7 @@ void FUN_1142f5f0(undefined4 *param_1,byte param_2,undefined4 param_3,int param_
 int FUN_1142f813(void)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -11135,6 +11139,8 @@ int FUN_1142f813(void)
     return (int)(iVar6);
   }
   return (int)(iVar6);
+
+ } catch (...) { }
 }
 
 
@@ -18393,6 +18399,7 @@ undefined4 __fastcall FUN_11458780(int *param_1)
 undefined4 * __thiscall Recovered_Bulk::FUN_11458eb0(char *param_2,undefined4 param_3)
 {
   undefined4 *param_1 = (undefined4 *)this;
+ try {
   undefined4 *puVar1;
   char cVar2;
   void *pvVar3;
@@ -18402,15 +18409,13 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11458eb0(char *param_2,undefined4 pa
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_117d150b);
-  local_10 = (void *)(ExceptionList);
-  uVar4 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar4 = (uint)(DAT_12126b84);
+
   puVar1 = (undefined4 *)(param_1 + 1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_sonos_SettingsFile);
   *puVar1 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   _Mtx_init_in_situ(param_1 + 2,2,uVar4);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
   param_1[0xe] = param_3;
@@ -18429,8 +18434,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11458eb0(char *param_2,undefined4 pa
     free(_Memory);
   }
   thunk_FUN_1145c250(*puVar1,param_2,pcVar5 + (1 - (int)(param_2 + 1)));
-  ExceptionList = (void *)(local_10);
+
   return (undefined4 *)(param_1);
+
+ } catch (...) { }
 }
 
 
@@ -18487,6 +18494,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11459330(byte param_2)
 void __thiscall Recovered_Bulk::FUN_114595f0(undefined4 param_2,long *param_3)
 {
   int param_1 = (int )this;
+ try {
   long lVar1;
   undefined1 local_24 [32];
   uint local_4;
@@ -18503,6 +18511,8 @@ void __thiscall Recovered_Bulk::FUN_114595f0(undefined4 param_2,long *param_3)
   }
   thunk_FUN_1148ac28();
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18905,6 +18915,7 @@ undefined4 FUN_1145c4c0(undefined4 param_1,undefined4 *param_2,undefined4 param_
 int FUN_1145c720(undefined4 param_1,int param_2,undefined4 param_3)
 
 {
+ try {
   undefined4 *puVar1;
   int iVar2;
   uint *puVar3;
@@ -18925,6 +18936,8 @@ int FUN_1145c720(undefined4 param_1,int param_2,undefined4 param_3)
     iVar2 = (int)(-1);
   }
   return (int)(iVar2);
+
+ } catch (...) { }
 }
 
 
@@ -19492,6 +19505,7 @@ undefined4 FUN_114601a0(int param_1,uint param_2,undefined1 *param_3,uint param_
 uint FUN_11460230(int param_1,uint param_2,uint param_3,undefined4 param_4)
 
 {
+ try {
   int iVar1;
   
   if (param_3 <= param_2) {
@@ -19504,6 +19518,8 @@ uint FUN_11460230(int param_1,uint param_2,uint param_3,undefined4 param_4)
     return (uint)(param_3);
   }
   return (uint)(iVar1 + param_2);
+
+ } catch (...) { }
 }
 
 
@@ -22531,13 +22547,14 @@ LAB_1146c608:
 void FUN_1146c830(int *param_1,code *param_2,undefined4 param_3)
 
 {
+ try {
   int iVar1;
   undefined4 uVar2;
   uint local_4c;
   undefined1 local_48 [64];
   uint local_8;
   
-  local_8 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+  local_8 = (uint)(DAT_12126b84);
   uVar2 = (undefined4)(*(undefined4 *)(*param_1 + 8));
   iVar1 = (int)(setjmp3(local_48,0,param_1,uVar2,param_2,param_3));
   local_4c = (uint)((uint)(iVar1 == 0));
@@ -22551,6 +22568,8 @@ void FUN_1146c830(int *param_1,code *param_2,undefined4 param_3)
   }
   thunk_FUN_1148ac28();
   return;
+
+ } catch (...) { }
 }
 
 
@@ -29633,6 +29652,7 @@ void FUN_114898e0(int *param_1,undefined1 *param_2)
 undefined4 FUN_1148b1aa(undefined4 param_1,undefined4 param_2)
 
 {
+ try {
   code *pcVar1;
   bool bVar2;
   char cVar3;
@@ -29671,12 +29691,14 @@ undefined4 FUN_1148b1aa(undefined4 param_1,undefined4 param_2)
         (*pcVar1)();
       }
       DAT_122fac34 = (int)(DAT_122fac34 + 1);
-      ExceptionList = (void *)(local_14);
+
       return (/* WARNING: Function: replaced with injection: SEH_prolog4 */ undefined4)(1);
     }
   }
-  ExceptionList = (void *)(local_14);
+
   return (/* WARNING: Function: replaced with injection: SEH_prolog4 */ undefined4)(0);
+
+ } catch (...) { }
 }
 
 
@@ -29688,6 +29710,7 @@ undefined4 FUN_1148b1aa(undefined4 param_1,undefined4 param_2)
 byte FUN_1148b2f2(undefined4 param_1)
 
 {
+ try {
   char cVar1;
   byte bVar2;
   void *local_14;
@@ -29711,8 +29734,10 @@ byte FUN_1148b2f2(undefined4 param_1)
     bVar2 = (byte)(-(cVar1 != '\0') & 1);
     FUN_1148b394();
   }
-  ExceptionList = (void *)(local_14);
+
   return (/* WARNING: Function: replaced with injection: SEH_prolog4 */ byte)(bVar2);
+
+ } catch (...) { }
 }
 
 
@@ -29750,18 +29775,17 @@ undefined4 __stdcall FUN_1148cb93(int *param_1)
 void FUN_117e8650(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114dda60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a06b0))->int_release();
   _DAT_121a06b0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -29773,18 +29797,17 @@ void FUN_117e8650(void)
 void FUN_117e86c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114dda90);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a06a0))->int_release();
   _DAT_121a06a0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -29796,18 +29819,17 @@ void FUN_117e86c0(void)
 void FUN_117e8730(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114ddac0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a06b4))->int_release();
   _DAT_121a06b4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -29819,18 +29841,17 @@ void FUN_117e8730(void)
 void FUN_117e87a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114ddaf0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a06a4))->int_release();
   _DAT_121a06a4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -29842,18 +29863,17 @@ void FUN_117e87a0(void)
 void FUN_117e8810(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114ddb20);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a06bc))->int_release();
   _DAT_121a06bc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -29865,18 +29885,17 @@ void FUN_117e8810(void)
 void FUN_117e8880(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114ddb50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a06a8))->int_release();
   _DAT_121a06a8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -29888,18 +29907,17 @@ void FUN_117e8880(void)
 void FUN_117e88f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114ddb80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a06c4))->int_release();
   _DAT_121a06c4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -29911,18 +29929,17 @@ void FUN_117e88f0(void)
 void FUN_117e8960(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114ddbb0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a06b8))->int_release();
   _DAT_121a06b8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -29934,18 +29951,17 @@ void FUN_117e8960(void)
 void FUN_117e89d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114ddbe0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a06c0))->int_release();
   _DAT_121a06c0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -29957,18 +29973,17 @@ void FUN_117e89d0(void)
 void FUN_117e8a40(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114ddc10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a06ac))->int_release();
   _DAT_121a06ac = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -29980,18 +29995,17 @@ void FUN_117e8a40(void)
 void FUN_117e8b50(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f4a70);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0714))->int_release();
   _DAT_121a0714 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30003,18 +30017,17 @@ void FUN_117e8b50(void)
 void FUN_117e8bc0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f5e00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a073c))->int_release();
   _DAT_121a073c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30026,18 +30039,17 @@ void FUN_117e8bc0(void)
 void FUN_117e8c30(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f5e30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a075c))->int_release();
   _DAT_121a075c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30049,18 +30061,17 @@ void FUN_117e8c30(void)
 void FUN_117e8ca0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f5e60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0750))->int_release();
   _DAT_121a0750 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30072,18 +30083,17 @@ void FUN_117e8ca0(void)
 void FUN_117e8d10(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f5e90);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0740))->int_release();
   _DAT_121a0740 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30095,18 +30105,17 @@ void FUN_117e8d10(void)
 void FUN_117e8d80(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f5ec0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a074c))->int_release();
   _DAT_121a074c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30118,18 +30127,17 @@ void FUN_117e8d80(void)
 void FUN_117e8df0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f5ef0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0758))->int_release();
   _DAT_121a0758 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30141,18 +30149,17 @@ void FUN_117e8df0(void)
 void FUN_117e8e60(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f5f20);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0754))->int_release();
   _DAT_121a0754 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30164,18 +30171,17 @@ void FUN_117e8e60(void)
 void FUN_117e8ed0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f5f50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0760))->int_release();
   _DAT_121a0760 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30187,18 +30193,17 @@ void FUN_117e8ed0(void)
 void FUN_117e8f40(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f5f80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0748))->int_release();
   _DAT_121a0748 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30210,18 +30215,17 @@ void FUN_117e8f40(void)
 void FUN_117e8fb0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f5fb0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0744))->int_release();
   _DAT_121a0744 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30233,18 +30237,17 @@ void FUN_117e8fb0(void)
 void FUN_117e9020(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f5fe0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0738))->int_release();
   _DAT_121a0738 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30256,18 +30259,17 @@ void FUN_117e9020(void)
 void FUN_117e9090(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f6010);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0734))->int_release();
   _DAT_121a0734 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30279,18 +30281,17 @@ void FUN_117e9090(void)
 void FUN_117e9100(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f6c20);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0778))->int_release();
   _DAT_121a0778 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30302,18 +30303,17 @@ void FUN_117e9100(void)
 void FUN_117e9170(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f6c50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0798))->int_release();
   _DAT_121a0798 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30325,18 +30325,17 @@ void FUN_117e9170(void)
 void FUN_117e91e0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f6c80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a078c))->int_release();
   _DAT_121a078c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30348,18 +30347,17 @@ void FUN_117e91e0(void)
 void FUN_117e9250(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f6cb0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a077c))->int_release();
   _DAT_121a077c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30371,18 +30369,17 @@ void FUN_117e9250(void)
 void FUN_117e92c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f6ce0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0788))->int_release();
   _DAT_121a0788 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30394,18 +30391,17 @@ void FUN_117e92c0(void)
 void FUN_117e9330(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f6d10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0794))->int_release();
   _DAT_121a0794 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30417,18 +30413,17 @@ void FUN_117e9330(void)
 void FUN_117e93a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f6d40);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0790))->int_release();
   _DAT_121a0790 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30440,18 +30435,17 @@ void FUN_117e93a0(void)
 void FUN_117e9410(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f6d70);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a079c))->int_release();
   _DAT_121a079c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30463,18 +30457,17 @@ void FUN_117e9410(void)
 void FUN_117e9480(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f6da0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0784))->int_release();
   _DAT_121a0784 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30486,18 +30479,17 @@ void FUN_117e9480(void)
 void FUN_117e94f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f6dd0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0780))->int_release();
   _DAT_121a0780 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30509,18 +30501,17 @@ void FUN_117e94f0(void)
 void FUN_117e9560(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f6e00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0774))->int_release();
   _DAT_121a0774 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30532,18 +30523,17 @@ void FUN_117e9560(void)
 void FUN_117e95d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f6e30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0770))->int_release();
   _DAT_121a0770 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30553,18 +30543,17 @@ void FUN_117e95d0(void)
 void FUN_117e9640(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f85c0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a07b0))->int_release();
   DAT_121a07b0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30576,18 +30565,17 @@ void FUN_117e9640(void)
 void FUN_117e96d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f85f0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a07ac))->int_release();
   _DAT_121a07ac = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30599,18 +30587,17 @@ void FUN_117e96d0(void)
 void FUN_117e9760(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114faac0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a083c))->int_release();
   _DAT_121a083c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30622,18 +30609,17 @@ void FUN_117e9760(void)
 void FUN_117e97d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114faaf0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0840))->int_release();
   _DAT_121a0840 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30645,18 +30631,17 @@ void FUN_117e97d0(void)
 void FUN_117e9840(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114fab20);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0860))->int_release();
   _DAT_121a0860 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30668,18 +30653,17 @@ void FUN_117e9840(void)
 void FUN_117e98b0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114fab50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0854))->int_release();
   _DAT_121a0854 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30691,18 +30675,17 @@ void FUN_117e98b0(void)
 void FUN_117e9920(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114fab80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0844))->int_release();
   _DAT_121a0844 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30714,18 +30697,17 @@ void FUN_117e9920(void)
 void FUN_117e9990(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114fabb0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0850))->int_release();
   _DAT_121a0850 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30737,18 +30719,17 @@ void FUN_117e9990(void)
 void FUN_117e9a00(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114fabe0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a085c))->int_release();
   _DAT_121a085c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30760,18 +30741,17 @@ void FUN_117e9a00(void)
 void FUN_117e9a70(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114fac10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0828))->int_release();
   _DAT_121a0828 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30783,18 +30763,17 @@ void FUN_117e9a70(void)
 void FUN_117e9ae0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114fac40);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0858))->int_release();
   _DAT_121a0858 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30806,18 +30785,17 @@ void FUN_117e9ae0(void)
 void FUN_117e9b50(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114fac70);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0864))->int_release();
   _DAT_121a0864 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30829,18 +30807,17 @@ void FUN_117e9b50(void)
 void FUN_117e9bc0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114faca0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a084c))->int_release();
   _DAT_121a084c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30852,18 +30829,17 @@ void FUN_117e9bc0(void)
 void FUN_117e9c30(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114facd0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0848))->int_release();
   _DAT_121a0848 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30875,18 +30851,17 @@ void FUN_117e9c30(void)
 void FUN_117e9ca0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114fad00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0838))->int_release();
   _DAT_121a0838 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30898,18 +30873,17 @@ void FUN_117e9ca0(void)
 void FUN_117e9d90(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114fad60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a082c))->int_release();
   _DAT_121a082c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30921,18 +30895,17 @@ void FUN_117e9d90(void)
 void FUN_117e9e00(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114fe8a0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a087c))->int_release();
   _DAT_121a087c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30944,18 +30917,17 @@ void FUN_117e9e00(void)
 void FUN_117e9e70(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114fe8d0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a089c))->int_release();
   _DAT_121a089c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30967,18 +30939,17 @@ void FUN_117e9e70(void)
 void FUN_117e9ee0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114fe900);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0890))->int_release();
   _DAT_121a0890 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -30990,18 +30961,17 @@ void FUN_117e9ee0(void)
 void FUN_117e9f50(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114fe930);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0880))->int_release();
   _DAT_121a0880 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31013,18 +30983,17 @@ void FUN_117e9f50(void)
 void FUN_117e9fc0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114fe960);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a088c))->int_release();
   _DAT_121a088c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31036,18 +31005,17 @@ void FUN_117e9fc0(void)
 void FUN_117ea030(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114fe990);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0898))->int_release();
   _DAT_121a0898 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31059,18 +31027,17 @@ void FUN_117ea030(void)
 void FUN_117ea0a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114fe9c0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0894))->int_release();
   _DAT_121a0894 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31082,18 +31049,17 @@ void FUN_117ea0a0(void)
 void FUN_117ea110(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114fe9f0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a08a0))->int_release();
   _DAT_121a08a0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31105,18 +31071,17 @@ void FUN_117ea110(void)
 void FUN_117ea180(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114fea20);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0888))->int_release();
   _DAT_121a0888 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31128,18 +31093,17 @@ void FUN_117ea180(void)
 void FUN_117ea1f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114fea50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0884))->int_release();
   _DAT_121a0884 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31151,18 +31115,17 @@ void FUN_117ea1f0(void)
 void FUN_117ea260(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114fea80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0878))->int_release();
   _DAT_121a0878 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31174,18 +31137,17 @@ void FUN_117ea260(void)
 void FUN_117ea2d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114feab0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0874))->int_release();
   _DAT_121a0874 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31197,18 +31159,17 @@ void FUN_117ea2d0(void)
 void FUN_117ea3c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11500650);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a08b8))->int_release();
   _DAT_121a08b8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31220,18 +31181,17 @@ void FUN_117ea3c0(void)
 void FUN_117ea430(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11500680);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a08e0))->int_release();
   _DAT_121a08e0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31243,18 +31203,17 @@ void FUN_117ea430(void)
 void FUN_117ea4a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115006b0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a08cc))->int_release();
   _DAT_121a08cc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31266,18 +31225,17 @@ void FUN_117ea4a0(void)
 void FUN_117ea510(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115006e0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a08bc))->int_release();
   _DAT_121a08bc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31289,18 +31247,17 @@ void FUN_117ea510(void)
 void FUN_117ea580(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11500710);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a08c8))->int_release();
   _DAT_121a08c8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31312,18 +31269,17 @@ void FUN_117ea580(void)
 void FUN_117ea5f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11500740);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a08dc))->int_release();
   _DAT_121a08dc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31335,18 +31291,17 @@ void FUN_117ea5f0(void)
 void FUN_117ea660(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11500770);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a08d0))->int_release();
   _DAT_121a08d0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31358,18 +31313,17 @@ void FUN_117ea660(void)
 void FUN_117ea6d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115007a0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a08e4))->int_release();
   _DAT_121a08e4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31381,18 +31335,17 @@ void FUN_117ea6d0(void)
 void FUN_117ea740(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115007d0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a08c4))->int_release();
   _DAT_121a08c4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31404,18 +31357,17 @@ void FUN_117ea740(void)
 void FUN_117ea7b0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11500800);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a08c0))->int_release();
   _DAT_121a08c0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31427,18 +31379,17 @@ void FUN_117ea7b0(void)
 void FUN_117ea820(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11500830);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a08b4))->int_release();
   _DAT_121a08b4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31450,18 +31401,17 @@ void FUN_117ea820(void)
 void FUN_117ea890(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11500860);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a08b0))->int_release();
   _DAT_121a08b0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31473,18 +31423,17 @@ void FUN_117ea890(void)
 void FUN_117ea980(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11501930);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0904))->int_release();
   _DAT_121a0904 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31496,18 +31445,17 @@ void FUN_117ea980(void)
 void FUN_117ea9f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11503c00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0910))->int_release();
   _DAT_121a0910 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31519,18 +31467,17 @@ void FUN_117ea9f0(void)
 void FUN_117eaa60(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11503c30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0930))->int_release();
   _DAT_121a0930 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31542,18 +31489,17 @@ void FUN_117eaa60(void)
 void FUN_117eaad0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11503c60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0924))->int_release();
   _DAT_121a0924 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31565,18 +31511,17 @@ void FUN_117eaad0(void)
 void FUN_117eab40(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11503c90);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0914))->int_release();
   _DAT_121a0914 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31588,18 +31533,17 @@ void FUN_117eab40(void)
 void FUN_117eabb0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11503cc0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0920))->int_release();
   _DAT_121a0920 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31611,18 +31555,17 @@ void FUN_117eabb0(void)
 void FUN_117eac20(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11503cf0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a092c))->int_release();
   _DAT_121a092c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31634,18 +31577,17 @@ void FUN_117eac20(void)
 void FUN_117eac90(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11503d20);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0928))->int_release();
   _DAT_121a0928 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31657,18 +31599,17 @@ void FUN_117eac90(void)
 void FUN_117ead00(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11503d50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0934))->int_release();
   _DAT_121a0934 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31680,18 +31621,17 @@ void FUN_117ead00(void)
 void FUN_117ead70(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11503d80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a091c))->int_release();
   _DAT_121a091c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31703,18 +31643,17 @@ void FUN_117ead70(void)
 void FUN_117eade0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11503db0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0918))->int_release();
   _DAT_121a0918 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31726,18 +31665,17 @@ void FUN_117eade0(void)
 void FUN_117eae50(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11503de0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a090c))->int_release();
   _DAT_121a090c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31749,18 +31687,17 @@ void FUN_117eae50(void)
 void FUN_117eaf00(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11503e10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0908))->int_release();
   _DAT_121a0908 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31772,18 +31709,17 @@ void FUN_117eaf00(void)
 void FUN_117eaf70(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11508590);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a094c))->int_release();
   _DAT_121a094c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31795,18 +31731,17 @@ void FUN_117eaf70(void)
 void FUN_117eafe0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ab10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0984))->int_release();
   _DAT_121a0984 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31818,18 +31753,17 @@ void FUN_117eafe0(void)
 void FUN_117eb050(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ab40);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a09a4))->int_release();
   _DAT_121a09a4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31841,18 +31775,17 @@ void FUN_117eb050(void)
 void FUN_117eb0c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ab70);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0998))->int_release();
   _DAT_121a0998 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31864,18 +31797,17 @@ void FUN_117eb0c0(void)
 void FUN_117eb130(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150aba0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0988))->int_release();
   _DAT_121a0988 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31887,18 +31819,17 @@ void FUN_117eb130(void)
 void FUN_117eb1a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150abd0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0994))->int_release();
   _DAT_121a0994 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31910,18 +31841,17 @@ void FUN_117eb1a0(void)
 void FUN_117eb210(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ac00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a09a0))->int_release();
   _DAT_121a09a0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31933,18 +31863,17 @@ void FUN_117eb210(void)
 void FUN_117eb280(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ac30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a099c))->int_release();
   _DAT_121a099c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31956,18 +31885,17 @@ void FUN_117eb280(void)
 void FUN_117eb2f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ac60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a09ac))->int_release();
   _DAT_121a09ac = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -31979,18 +31907,17 @@ void FUN_117eb2f0(void)
 void FUN_117eb360(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ac90);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0990))->int_release();
   _DAT_121a0990 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32002,18 +31929,17 @@ void FUN_117eb360(void)
 void FUN_117eb3d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150acc0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a098c))->int_release();
   _DAT_121a098c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32025,18 +31951,17 @@ void FUN_117eb3d0(void)
 void FUN_117eb440(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150acf0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0980))->int_release();
   _DAT_121a0980 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32048,18 +31973,17 @@ void FUN_117eb440(void)
 void FUN_117eb5b0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ad80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0950))->int_release();
   _DAT_121a0950 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32071,18 +31995,17 @@ void FUN_117eb5b0(void)
 void FUN_117eb620(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150adb0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a09a8))->int_release();
   _DAT_121a09a8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32094,18 +32017,17 @@ void FUN_117eb620(void)
 void FUN_117eb6a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ade0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0974))->int_release();
   _DAT_121a0974 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32117,18 +32039,17 @@ void FUN_117eb6a0(void)
 void FUN_117eb710(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150eb60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a09e0))->int_release();
   _DAT_121a09e0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32140,18 +32061,17 @@ void FUN_117eb710(void)
 void FUN_117eb780(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150eb90);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a00))->int_release();
   _DAT_121a0a00 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32163,18 +32083,17 @@ void FUN_117eb780(void)
 void FUN_117eb7f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ebc0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a09f4))->int_release();
   _DAT_121a09f4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32186,18 +32105,17 @@ void FUN_117eb7f0(void)
 void FUN_117eb860(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ebf0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a09e4))->int_release();
   _DAT_121a09e4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32209,18 +32127,17 @@ void FUN_117eb860(void)
 void FUN_117eb8d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ec20);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a09f0))->int_release();
   _DAT_121a09f0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32232,18 +32149,17 @@ void FUN_117eb8d0(void)
 void FUN_117eb940(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ec50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a09fc))->int_release();
   _DAT_121a09fc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32255,18 +32171,17 @@ void FUN_117eb940(void)
 void FUN_117eb9b0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ec80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a09f8))->int_release();
   _DAT_121a09f8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32278,18 +32193,17 @@ void FUN_117eb9b0(void)
 void FUN_117eba20(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ecb0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a04))->int_release();
   _DAT_121a0a04 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32301,18 +32215,17 @@ void FUN_117eba20(void)
 void FUN_117eba90(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ece0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a09ec))->int_release();
   _DAT_121a09ec = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32324,18 +32237,17 @@ void FUN_117eba90(void)
 void FUN_117ebb00(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ed10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a09e8))->int_release();
   _DAT_121a09e8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32347,18 +32259,17 @@ void FUN_117ebb00(void)
 void FUN_117ebb70(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ed40);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a09dc))->int_release();
   _DAT_121a09dc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32370,18 +32281,17 @@ void FUN_117ebb70(void)
 void FUN_117ebbe0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ed70);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a09d8))->int_release();
   _DAT_121a09d8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32393,18 +32303,17 @@ void FUN_117ebbe0(void)
 void FUN_117ebcd0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150f5a0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a14))->int_release();
   _DAT_121a0a14 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32416,18 +32325,17 @@ void FUN_117ebcd0(void)
 void FUN_117ebd40(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150fc10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a28))->int_release();
   _DAT_121a0a28 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32439,18 +32347,17 @@ void FUN_117ebd40(void)
 void FUN_117ebdb0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150fc40);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a64))->int_release();
   _DAT_121a0a64 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32462,18 +32369,17 @@ void FUN_117ebdb0(void)
 void FUN_117ebe20(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150fc70);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a38))->int_release();
   _DAT_121a0a38 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32485,18 +32391,17 @@ void FUN_117ebe20(void)
 void FUN_117ebe90(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150fca0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a6c))->int_release();
   _DAT_121a0a6c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32508,18 +32413,17 @@ void FUN_117ebe90(void)
 void FUN_117ebf00(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150fcd0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a34))->int_release();
   _DAT_121a0a34 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32531,18 +32435,17 @@ void FUN_117ebf00(void)
 void FUN_117ebf70(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150fd00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a68))->int_release();
   _DAT_121a0a68 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32554,18 +32457,17 @@ void FUN_117ebf70(void)
 void FUN_117ebfe0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150fd30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a24))->int_release();
   _DAT_121a0a24 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32577,18 +32479,17 @@ void FUN_117ebfe0(void)
 void FUN_117ec050(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150fd60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a3c))->int_release();
   _DAT_121a0a3c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32600,18 +32501,17 @@ void FUN_117ec050(void)
 void FUN_117ec0c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150fd90);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a5c))->int_release();
   _DAT_121a0a5c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32623,18 +32523,17 @@ void FUN_117ec0c0(void)
 void FUN_117ec130(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150fdc0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a50))->int_release();
   _DAT_121a0a50 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32646,18 +32545,17 @@ void FUN_117ec130(void)
 void FUN_117ec1a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150fdf0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a40))->int_release();
   _DAT_121a0a40 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32669,18 +32567,17 @@ void FUN_117ec1a0(void)
 void FUN_117ec210(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150fe20);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a4c))->int_release();
   _DAT_121a0a4c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32692,18 +32589,17 @@ void FUN_117ec210(void)
 void FUN_117ec280(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150fe50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a58))->int_release();
   _DAT_121a0a58 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32715,18 +32611,17 @@ void FUN_117ec280(void)
 void FUN_117ec2f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150fe80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a54))->int_release();
   _DAT_121a0a54 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32738,18 +32633,17 @@ void FUN_117ec2f0(void)
 void FUN_117ec360(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150feb0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a60))->int_release();
   _DAT_121a0a60 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32761,18 +32655,17 @@ void FUN_117ec360(void)
 void FUN_117ec3d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150fee0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a48))->int_release();
   _DAT_121a0a48 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32784,18 +32677,17 @@ void FUN_117ec3d0(void)
 void FUN_117ec440(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ff10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a44))->int_release();
   _DAT_121a0a44 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32807,18 +32699,17 @@ void FUN_117ec440(void)
 void FUN_117ec4b0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ff40);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a30))->int_release();
   _DAT_121a0a30 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32830,18 +32721,17 @@ void FUN_117ec4b0(void)
 void FUN_117ec5a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1150ffa0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a2c))->int_release();
   _DAT_121a0a2c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32853,18 +32743,17 @@ void FUN_117ec5a0(void)
 void FUN_117ec610(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11510710);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0aa0))->int_release();
   _DAT_121a0aa0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32876,18 +32765,17 @@ void FUN_117ec610(void)
 void FUN_117ec680(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11510740);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0ac0))->int_release();
   _DAT_121a0ac0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32899,18 +32787,17 @@ void FUN_117ec680(void)
 void FUN_117ec6f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11510770);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0ab4))->int_release();
   _DAT_121a0ab4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32922,18 +32809,17 @@ void FUN_117ec6f0(void)
 void FUN_117ec760(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115107a0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0aa4))->int_release();
   _DAT_121a0aa4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32945,18 +32831,17 @@ void FUN_117ec760(void)
 void FUN_117ec7d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115107d0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0ab0))->int_release();
   _DAT_121a0ab0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -32968,18 +32853,17 @@ void FUN_117ec7d0(void)
 void FUN_117ec840(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11510800);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0abc))->int_release();
   _DAT_121a0abc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33025,18 +32909,17 @@ void FUN_117ec8b0(void)
 void FUN_117ec920(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11510830);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0ab8))->int_release();
   _DAT_121a0ab8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33048,18 +32931,17 @@ void FUN_117ec920(void)
 void FUN_117ec990(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11510860);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0ac4))->int_release();
   _DAT_121a0ac4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33071,18 +32953,17 @@ void FUN_117ec990(void)
 void FUN_117eca00(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11510890);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0aac))->int_release();
   _DAT_121a0aac = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33094,18 +32975,17 @@ void FUN_117eca00(void)
 void FUN_117eca70(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115108c0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0aa8))->int_release();
   _DAT_121a0aa8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33117,18 +32997,17 @@ void FUN_117eca70(void)
 void FUN_117ecae0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115108f0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a9c))->int_release();
   _DAT_121a0a9c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33140,18 +33019,17 @@ void FUN_117ecae0(void)
 void FUN_117ecbd0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11510950);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0a90))->int_release();
   _DAT_121a0a90 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33163,18 +33041,17 @@ void FUN_117ecbd0(void)
 void FUN_117ece40(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11513a00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b10))->int_release();
   _DAT_121a0b10 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33220,18 +33097,17 @@ void FUN_117eceb0(void)
 void FUN_117ecf60(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11514ec0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b14))->int_release();
   _DAT_121a0b14 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33243,18 +33119,17 @@ void FUN_117ecf60(void)
 void FUN_117ed050(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115165d0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b34))->int_release();
   _DAT_121a0b34 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33266,18 +33141,17 @@ void FUN_117ed050(void)
 void FUN_117ed0c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518b20);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b7c))->int_release();
   _DAT_121a0b7c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33289,18 +33163,17 @@ void FUN_117ed0c0(void)
 void FUN_117ed130(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518b50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b3c))->int_release();
   _DAT_121a0b3c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33312,18 +33185,17 @@ void FUN_117ed130(void)
 void FUN_117ed1a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518b80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b80))->int_release();
   _DAT_121a0b80 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33335,18 +33207,17 @@ void FUN_117ed1a0(void)
 void FUN_117ed210(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518bb0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b6c))->int_release();
   _DAT_121a0b6c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33358,18 +33229,17 @@ void FUN_117ed210(void)
 void FUN_117ed280(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518be0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b88))->int_release();
   _DAT_121a0b88 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33381,18 +33251,17 @@ void FUN_117ed280(void)
 void FUN_117ed2f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518c10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b74))->int_release();
   _DAT_121a0b74 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33404,18 +33273,17 @@ void FUN_117ed2f0(void)
 void FUN_117ed360(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518c40);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b90))->int_release();
   _DAT_121a0b90 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33427,18 +33295,17 @@ void FUN_117ed360(void)
 void FUN_117ed3d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518c70);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b84))->int_release();
   _DAT_121a0b84 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33450,18 +33317,17 @@ void FUN_117ed3d0(void)
 void FUN_117ed440(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518ca0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b8c))->int_release();
   _DAT_121a0b8c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33473,18 +33339,17 @@ void FUN_117ed440(void)
 void FUN_117ed4b0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518cd0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b78))->int_release();
   _DAT_121a0b78 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33496,18 +33361,17 @@ void FUN_117ed4b0(void)
 void FUN_117ed520(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518d00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b48))->int_release();
   _DAT_121a0b48 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33519,18 +33383,17 @@ void FUN_117ed520(void)
 void FUN_117ed590(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518d30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b68))->int_release();
   _DAT_121a0b68 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33542,18 +33405,17 @@ void FUN_117ed590(void)
 void FUN_117ed600(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518d60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b5c))->int_release();
   _DAT_121a0b5c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33565,18 +33427,17 @@ void FUN_117ed600(void)
 void FUN_117ed670(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518d90);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b4c))->int_release();
   _DAT_121a0b4c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33588,18 +33449,17 @@ void FUN_117ed670(void)
 void FUN_117ed6e0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518dc0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b58))->int_release();
   _DAT_121a0b58 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33611,18 +33471,17 @@ void FUN_117ed6e0(void)
 void FUN_117ed750(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518df0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b64))->int_release();
   _DAT_121a0b64 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33634,18 +33493,17 @@ void FUN_117ed750(void)
 void FUN_117ed7c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518e20);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b60))->int_release();
   _DAT_121a0b60 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33657,18 +33515,17 @@ void FUN_117ed7c0(void)
 void FUN_117ed830(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518e50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b70))->int_release();
   _DAT_121a0b70 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33680,18 +33537,17 @@ void FUN_117ed830(void)
 void FUN_117ed8a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518e80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b54))->int_release();
   _DAT_121a0b54 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33703,18 +33559,17 @@ void FUN_117ed8a0(void)
 void FUN_117ed910(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518eb0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b50))->int_release();
   _DAT_121a0b50 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33726,18 +33581,17 @@ void FUN_117ed910(void)
 void FUN_117ed980(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518ee0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b44))->int_release();
   _DAT_121a0b44 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33749,18 +33603,17 @@ void FUN_117ed980(void)
 void FUN_117ed9f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11518f10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0b40))->int_release();
   _DAT_121a0b40 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33772,18 +33625,17 @@ void FUN_117ed9f0(void)
 void FUN_117edae0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151a240);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0bc0))->int_release();
   _DAT_121a0bc0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33795,18 +33647,17 @@ void FUN_117edae0(void)
 void FUN_117edb50(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151a270);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0bc4))->int_release();
   _DAT_121a0bc4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33818,18 +33669,17 @@ void FUN_117edb50(void)
 void FUN_117edbc0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151a2a0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0bbc))->int_release();
   _DAT_121a0bbc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33841,18 +33691,17 @@ void FUN_117edbc0(void)
 void FUN_117edc40(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151b910);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0be0))->int_release();
   _DAT_121a0be0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33864,18 +33713,17 @@ void FUN_117edc40(void)
 void FUN_117edcb0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151b940);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0be8))->int_release();
   _DAT_121a0be8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33887,18 +33735,17 @@ void FUN_117edcb0(void)
 void FUN_117edd20(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151b970);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0c08))->int_release();
   _DAT_121a0c08 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33908,18 +33755,17 @@ void FUN_117edd20(void)
 void FUN_117edd90(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151b9a0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0bd0))->int_release();
   DAT_121a0bd0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33929,18 +33775,17 @@ void FUN_117edd90(void)
 void FUN_117ede00(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151b9d0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0c18))->int_release();
   DAT_121a0c18 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33950,18 +33795,17 @@ void FUN_117ede00(void)
 void FUN_117ede70(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151ba00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0c14))->int_release();
   DAT_121a0c14 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33971,18 +33815,17 @@ void FUN_117ede70(void)
 void FUN_117edee0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151ba30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0bcc))->int_release();
   DAT_121a0bcc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -33992,18 +33835,17 @@ void FUN_117edee0(void)
 void FUN_117edf50(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151ba60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0c0c))->int_release();
   DAT_121a0c0c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34013,18 +33855,17 @@ void FUN_117edf50(void)
 void FUN_117edfc0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151ba90);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0be4))->int_release();
   DAT_121a0be4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34034,18 +33875,17 @@ void FUN_117edfc0(void)
 void FUN_117ee030(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151bac0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0bd8))->int_release();
   DAT_121a0bd8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34057,18 +33897,17 @@ void FUN_117ee030(void)
 void FUN_117ee0a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151baf0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0bfc))->int_release();
   _DAT_121a0bfc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34080,18 +33919,17 @@ void FUN_117ee0a0(void)
 void FUN_117ee110(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151bb20);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0bec))->int_release();
   _DAT_121a0bec = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34103,18 +33941,17 @@ void FUN_117ee110(void)
 void FUN_117ee180(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151bb50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0bf8))->int_release();
   _DAT_121a0bf8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34126,18 +33963,17 @@ void FUN_117ee180(void)
 void FUN_117ee1f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151bb80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0c04))->int_release();
   _DAT_121a0c04 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34149,18 +33985,17 @@ void FUN_117ee1f0(void)
 void FUN_117ee260(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151bbb0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0c00))->int_release();
   _DAT_121a0c00 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34172,18 +34007,17 @@ void FUN_117ee260(void)
 void FUN_117ee2d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151bbe0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0c10))->int_release();
   _DAT_121a0c10 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34195,18 +34029,17 @@ void FUN_117ee2d0(void)
 void FUN_117ee340(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151bc10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0bf4))->int_release();
   _DAT_121a0bf4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34218,18 +34051,17 @@ void FUN_117ee340(void)
 void FUN_117ee3b0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151bc40);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0bf0))->int_release();
   _DAT_121a0bf0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34241,18 +34073,17 @@ void FUN_117ee3b0(void)
 void FUN_117ee420(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151bc70);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0c3c))->int_release();
   _DAT_121a0c3c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34264,18 +34095,17 @@ void FUN_117ee420(void)
 void FUN_117ee490(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151bca0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0bdc))->int_release();
   _DAT_121a0bdc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34287,18 +34117,17 @@ void FUN_117ee490(void)
 void FUN_117ee500(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151bcd0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0bd4))->int_release();
   _DAT_121a0bd4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34310,18 +34139,17 @@ void FUN_117ee500(void)
 void FUN_117ee5f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151d690);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0c70))->int_release();
   _DAT_121a0c70 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34333,18 +34161,17 @@ void FUN_117ee5f0(void)
 void FUN_117ee660(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151d6c0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0c90))->int_release();
   _DAT_121a0c90 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34356,18 +34183,17 @@ void FUN_117ee660(void)
 void FUN_117ee6d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151d6f0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0c84))->int_release();
   _DAT_121a0c84 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34379,18 +34205,17 @@ void FUN_117ee6d0(void)
 void FUN_117ee740(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151d720);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0c74))->int_release();
   _DAT_121a0c74 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34402,18 +34227,17 @@ void FUN_117ee740(void)
 void FUN_117ee7b0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151d750);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0c80))->int_release();
   _DAT_121a0c80 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34425,18 +34249,17 @@ void FUN_117ee7b0(void)
 void FUN_117ee820(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151d780);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0c8c))->int_release();
   _DAT_121a0c8c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34448,18 +34271,17 @@ void FUN_117ee820(void)
 void FUN_117ee890(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151d7b0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0c88))->int_release();
   _DAT_121a0c88 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34471,18 +34293,17 @@ void FUN_117ee890(void)
 void FUN_117ee900(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151d7e0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0c94))->int_release();
   _DAT_121a0c94 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34494,18 +34315,17 @@ void FUN_117ee900(void)
 void FUN_117ee970(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151d810);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0c7c))->int_release();
   _DAT_121a0c7c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34517,18 +34337,17 @@ void FUN_117ee970(void)
 void FUN_117ee9e0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151d840);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0c78))->int_release();
   _DAT_121a0c78 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34540,18 +34359,17 @@ void FUN_117ee9e0(void)
 void FUN_117eea50(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151d870);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0c6c))->int_release();
   _DAT_121a0c6c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34563,18 +34381,17 @@ void FUN_117eea50(void)
 void FUN_117eeac0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151d8a0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0c68))->int_release();
   _DAT_121a0c68 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34586,18 +34403,17 @@ void FUN_117eeac0(void)
 void FUN_117eeb30(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1151e690);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0ca4))->int_release();
   _DAT_121a0ca4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34609,18 +34425,17 @@ void FUN_117eeb30(void)
 void FUN_117eec20(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115208e0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0cc8))->int_release();
   _DAT_121a0cc8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34632,18 +34447,17 @@ void FUN_117eec20(void)
 void FUN_117eec90(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11520910);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0ce8))->int_release();
   _DAT_121a0ce8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34655,18 +34469,17 @@ void FUN_117eec90(void)
 void FUN_117eed00(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11520940);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0cdc))->int_release();
   _DAT_121a0cdc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34678,18 +34491,17 @@ void FUN_117eed00(void)
 void FUN_117eed70(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11520970);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0ccc))->int_release();
   _DAT_121a0ccc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34701,18 +34513,17 @@ void FUN_117eed70(void)
 void FUN_117eede0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115209a0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0cd8))->int_release();
   _DAT_121a0cd8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34724,18 +34535,17 @@ void FUN_117eede0(void)
 void FUN_117eee50(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115209d0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0ce4))->int_release();
   _DAT_121a0ce4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34747,18 +34557,17 @@ void FUN_117eee50(void)
 void FUN_117eeec0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11520a00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0ce0))->int_release();
   _DAT_121a0ce0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34770,18 +34579,17 @@ void FUN_117eeec0(void)
 void FUN_117eef30(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11520a30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0cec))->int_release();
   _DAT_121a0cec = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34793,18 +34601,17 @@ void FUN_117eef30(void)
 void FUN_117eefa0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11520a60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0cd4))->int_release();
   _DAT_121a0cd4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34816,18 +34623,17 @@ void FUN_117eefa0(void)
 void FUN_117ef010(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11520a90);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0cd0))->int_release();
   _DAT_121a0cd0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34839,18 +34645,17 @@ void FUN_117ef010(void)
 void FUN_117ef080(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11520ac0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0cbc))->int_release();
   _DAT_121a0cbc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34862,18 +34667,17 @@ void FUN_117ef080(void)
 void FUN_117ef0f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11520af0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0cb8))->int_release();
   _DAT_121a0cb8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34885,18 +34689,17 @@ void FUN_117ef0f0(void)
 void FUN_117ef1b0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115235f0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d04))->int_release();
   _DAT_121a0d04 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34908,18 +34711,17 @@ void FUN_117ef1b0(void)
 void FUN_117ef220(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11523ad0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d10))->int_release();
   _DAT_121a0d10 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34931,18 +34733,17 @@ void FUN_117ef220(void)
 void FUN_117ef290(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11523b00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d30))->int_release();
   _DAT_121a0d30 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34954,18 +34755,17 @@ void FUN_117ef290(void)
 void FUN_117ef300(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11523b30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d24))->int_release();
   _DAT_121a0d24 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -34977,18 +34777,17 @@ void FUN_117ef300(void)
 void FUN_117ef370(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11523b60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d14))->int_release();
   _DAT_121a0d14 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35000,18 +34799,17 @@ void FUN_117ef370(void)
 void FUN_117ef3e0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11523b90);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d20))->int_release();
   _DAT_121a0d20 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35023,18 +34821,17 @@ void FUN_117ef3e0(void)
 void FUN_117ef450(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11523bc0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d2c))->int_release();
   _DAT_121a0d2c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35046,18 +34843,17 @@ void FUN_117ef450(void)
 void FUN_117ef4c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11523bf0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d28))->int_release();
   _DAT_121a0d28 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35069,18 +34865,17 @@ void FUN_117ef4c0(void)
 void FUN_117ef530(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11523c20);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d34))->int_release();
   _DAT_121a0d34 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35092,18 +34887,17 @@ void FUN_117ef530(void)
 void FUN_117ef5a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11523c50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d1c))->int_release();
   _DAT_121a0d1c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35115,18 +34909,17 @@ void FUN_117ef5a0(void)
 void FUN_117ef610(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11523c80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d18))->int_release();
   _DAT_121a0d18 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35138,18 +34931,17 @@ void FUN_117ef610(void)
 void FUN_117ef680(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11523cb0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d0c))->int_release();
   _DAT_121a0d0c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35161,18 +34953,17 @@ void FUN_117ef680(void)
 void FUN_117ef6f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11523ce0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d08))->int_release();
   _DAT_121a0d08 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35184,18 +34975,17 @@ void FUN_117ef6f0(void)
 void FUN_117ef760(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11524e30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d4c))->int_release();
   _DAT_121a0d4c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35207,18 +34997,17 @@ void FUN_117ef760(void)
 void FUN_117ef7d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11524e60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d6c))->int_release();
   _DAT_121a0d6c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35230,18 +35019,17 @@ void FUN_117ef7d0(void)
 void FUN_117ef840(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11524e90);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d60))->int_release();
   _DAT_121a0d60 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35253,18 +35041,17 @@ void FUN_117ef840(void)
 void FUN_117ef8b0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11524ec0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d50))->int_release();
   _DAT_121a0d50 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35276,18 +35063,17 @@ void FUN_117ef8b0(void)
 void FUN_117ef920(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11524ef0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d5c))->int_release();
   _DAT_121a0d5c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35299,18 +35085,17 @@ void FUN_117ef920(void)
 void FUN_117ef990(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11524f20);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d68))->int_release();
   _DAT_121a0d68 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35322,18 +35107,17 @@ void FUN_117ef990(void)
 void FUN_117efa00(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11524f50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d64))->int_release();
   _DAT_121a0d64 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35345,18 +35129,17 @@ void FUN_117efa00(void)
 void FUN_117efa70(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11524f80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d70))->int_release();
   _DAT_121a0d70 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35368,18 +35151,17 @@ void FUN_117efa70(void)
 void FUN_117efae0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11524fb0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d58))->int_release();
   _DAT_121a0d58 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35391,18 +35173,17 @@ void FUN_117efae0(void)
 void FUN_117efb50(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11524fe0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d54))->int_release();
   _DAT_121a0d54 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35414,18 +35195,17 @@ void FUN_117efb50(void)
 void FUN_117efbc0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11525010);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d48))->int_release();
   _DAT_121a0d48 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35437,18 +35217,17 @@ void FUN_117efbc0(void)
 void FUN_117efc30(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11525040);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d44))->int_release();
   _DAT_121a0d44 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35460,18 +35239,17 @@ void FUN_117efc30(void)
 void FUN_117efca0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11526640);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d88))->int_release();
   _DAT_121a0d88 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35483,18 +35261,17 @@ void FUN_117efca0(void)
 void FUN_117efd10(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11526670);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0da8))->int_release();
   _DAT_121a0da8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35506,18 +35283,17 @@ void FUN_117efd10(void)
 void FUN_117efd80(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115266a0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d9c))->int_release();
   _DAT_121a0d9c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35529,18 +35305,17 @@ void FUN_117efd80(void)
 void FUN_117efdf0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115266d0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d8c))->int_release();
   _DAT_121a0d8c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35552,18 +35327,17 @@ void FUN_117efdf0(void)
 void FUN_117efe60(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11526700);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d98))->int_release();
   _DAT_121a0d98 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35575,18 +35349,17 @@ void FUN_117efe60(void)
 void FUN_117efed0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11526730);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0da4))->int_release();
   _DAT_121a0da4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35598,18 +35371,17 @@ void FUN_117efed0(void)
 void FUN_117eff40(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11526760);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0da0))->int_release();
   _DAT_121a0da0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35621,18 +35393,17 @@ void FUN_117eff40(void)
 void FUN_117effb0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11526790);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0dac))->int_release();
   _DAT_121a0dac = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35644,18 +35415,17 @@ void FUN_117effb0(void)
 void FUN_117f0020(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115267c0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d94))->int_release();
   _DAT_121a0d94 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35667,18 +35437,17 @@ void FUN_117f0020(void)
 void FUN_117f0090(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115267f0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d90))->int_release();
   _DAT_121a0d90 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35690,18 +35459,17 @@ void FUN_117f0090(void)
 void FUN_117f0100(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11526820);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d84))->int_release();
   _DAT_121a0d84 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35713,18 +35481,17 @@ void FUN_117f0100(void)
 void FUN_117f0170(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11526850);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0d80))->int_release();
   _DAT_121a0d80 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35736,18 +35503,17 @@ void FUN_117f0170(void)
 void FUN_117f01e0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115277a0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0dcc))->int_release();
   _DAT_121a0dcc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35759,18 +35525,17 @@ void FUN_117f01e0(void)
 void FUN_117f0250(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115277d0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0dec))->int_release();
   _DAT_121a0dec = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35782,18 +35547,17 @@ void FUN_117f0250(void)
 void FUN_117f02c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11527800);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0de0))->int_release();
   _DAT_121a0de0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35805,18 +35569,17 @@ void FUN_117f02c0(void)
 void FUN_117f0330(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11527830);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0dd0))->int_release();
   _DAT_121a0dd0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35828,18 +35591,17 @@ void FUN_117f0330(void)
 void FUN_117f03a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11527860);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0ddc))->int_release();
   _DAT_121a0ddc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35851,18 +35613,17 @@ void FUN_117f03a0(void)
 void FUN_117f0410(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11527890);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0de8))->int_release();
   _DAT_121a0de8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35874,18 +35635,17 @@ void FUN_117f0410(void)
 void FUN_117f0480(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115278c0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0de4))->int_release();
   _DAT_121a0de4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35897,18 +35657,17 @@ void FUN_117f0480(void)
 void FUN_117f04f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115278f0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0df0))->int_release();
   _DAT_121a0df0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35920,18 +35679,17 @@ void FUN_117f04f0(void)
 void FUN_117f0560(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11527920);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0dd8))->int_release();
   _DAT_121a0dd8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35943,18 +35701,17 @@ void FUN_117f0560(void)
 void FUN_117f05d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11527950);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0dd4))->int_release();
   _DAT_121a0dd4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35966,18 +35723,17 @@ void FUN_117f05d0(void)
 void FUN_117f0640(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11527980);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0dc8))->int_release();
   _DAT_121a0dc8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -35989,18 +35745,17 @@ void FUN_117f0640(void)
 void FUN_117f06c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115279b0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0dbc))->int_release();
   _DAT_121a0dbc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36012,18 +35767,17 @@ void FUN_117f06c0(void)
 void FUN_117f07b0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11529180);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0e30))->int_release();
   _DAT_121a0e30 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36035,18 +35789,17 @@ void FUN_117f07b0(void)
 void FUN_117f0820(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115291b0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0e50))->int_release();
   _DAT_121a0e50 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36058,18 +35811,17 @@ void FUN_117f0820(void)
 void FUN_117f0890(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115291e0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0e44))->int_release();
   _DAT_121a0e44 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36081,18 +35833,17 @@ void FUN_117f0890(void)
 void FUN_117f0900(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11529210);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0e34))->int_release();
   _DAT_121a0e34 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36104,18 +35855,17 @@ void FUN_117f0900(void)
 void FUN_117f0970(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11529240);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0e40))->int_release();
   _DAT_121a0e40 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36127,18 +35877,17 @@ void FUN_117f0970(void)
 void FUN_117f09e0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11529270);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0e4c))->int_release();
   _DAT_121a0e4c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36150,18 +35899,17 @@ void FUN_117f09e0(void)
 void FUN_117f0a50(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115292a0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0e48))->int_release();
   _DAT_121a0e48 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36173,18 +35921,17 @@ void FUN_117f0a50(void)
 void FUN_117f0ac0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115292d0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0e54))->int_release();
   _DAT_121a0e54 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36196,18 +35943,17 @@ void FUN_117f0ac0(void)
 void FUN_117f0b30(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11529300);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0e3c))->int_release();
   _DAT_121a0e3c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36219,18 +35965,17 @@ void FUN_117f0b30(void)
 void FUN_117f0ba0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11529330);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0e38))->int_release();
   _DAT_121a0e38 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36242,18 +35987,17 @@ void FUN_117f0ba0(void)
 void FUN_117f0c10(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11529360);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0e2c))->int_release();
   _DAT_121a0e2c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36265,18 +36009,17 @@ void FUN_117f0c10(void)
 void FUN_117f0c80(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11529390);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0e28))->int_release();
   _DAT_121a0e28 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36288,18 +36031,17 @@ void FUN_117f0c80(void)
 void FUN_117f0d70(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152cb40);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0f80))->int_release();
   _DAT_121a0f80 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36311,18 +36053,17 @@ void FUN_117f0d70(void)
 void FUN_117f0de0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152cb70);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0e78))->int_release();
   _DAT_121a0e78 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36334,18 +36075,17 @@ void FUN_117f0de0(void)
 void FUN_117f0e50(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152cba0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0f84))->int_release();
   _DAT_121a0f84 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36357,18 +36097,17 @@ void FUN_117f0e50(void)
 void FUN_117f0ec0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152cbd0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0f64))->int_release();
   _DAT_121a0f64 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36380,18 +36119,17 @@ void FUN_117f0ec0(void)
 void FUN_117f0f30(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152cc00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0f8c))->int_release();
   _DAT_121a0f8c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36403,18 +36141,17 @@ void FUN_117f0f30(void)
 void FUN_117f0fa0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152cc30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0f78))->int_release();
   _DAT_121a0f78 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36426,18 +36163,17 @@ void FUN_117f0fa0(void)
 void FUN_117f1010(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152cc60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0f94))->int_release();
   _DAT_121a0f94 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36449,18 +36185,17 @@ void FUN_117f1010(void)
 void FUN_117f1080(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152cc90);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0f88))->int_release();
   _DAT_121a0f88 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36472,18 +36207,17 @@ void FUN_117f1080(void)
 void FUN_117f10f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152ccc0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0f90))->int_release();
   _DAT_121a0f90 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36495,18 +36229,17 @@ void FUN_117f10f0(void)
 void FUN_117f1160(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152ccf0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0f7c))->int_release();
   _DAT_121a0f7c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36518,18 +36251,17 @@ void FUN_117f1160(void)
 void FUN_117f11d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152cd20);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0f40))->int_release();
   _DAT_121a0f40 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36541,18 +36273,17 @@ void FUN_117f11d0(void)
 void FUN_117f1240(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152cd50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0f60))->int_release();
   _DAT_121a0f60 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36564,18 +36295,17 @@ void FUN_117f1240(void)
 void FUN_117f12b0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152cd80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0f54))->int_release();
   _DAT_121a0f54 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36587,18 +36317,17 @@ void FUN_117f12b0(void)
 void FUN_117f1320(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152cdb0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0f44))->int_release();
   _DAT_121a0f44 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36610,18 +36339,17 @@ void FUN_117f1320(void)
 void FUN_117f1390(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152cde0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0f50))->int_release();
   _DAT_121a0f50 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36633,18 +36361,17 @@ void FUN_117f1390(void)
 void FUN_117f1400(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152ce10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0f5c))->int_release();
   _DAT_121a0f5c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36690,18 +36417,17 @@ void FUN_117f1470(void)
 void FUN_117f14e0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152ce40);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0f58))->int_release();
   _DAT_121a0f58 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36713,18 +36439,17 @@ void FUN_117f14e0(void)
 void FUN_117f1550(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152ce70);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0f6c))->int_release();
   _DAT_121a0f6c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36736,18 +36461,17 @@ void FUN_117f1550(void)
 void FUN_117f15c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152cea0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0f4c))->int_release();
   _DAT_121a0f4c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36759,18 +36483,17 @@ void FUN_117f15c0(void)
 void FUN_117f1630(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152ced0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0f48))->int_release();
   _DAT_121a0f48 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36782,18 +36505,17 @@ void FUN_117f1630(void)
 void FUN_117f16a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152cf00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0f2c))->int_release();
   _DAT_121a0f2c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36805,18 +36527,17 @@ void FUN_117f16a0(void)
 void FUN_117f1710(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152cf30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0e74))->int_release();
   _DAT_121a0e74 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36828,18 +36549,17 @@ void FUN_117f1710(void)
 void FUN_117f1780(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152cf60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0f68))->int_release();
   _DAT_121a0f68 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36851,18 +36571,17 @@ void FUN_117f1780(void)
 void FUN_117f17f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1152cf90);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0e7c))->int_release();
   _DAT_121a0e7c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36874,18 +36593,17 @@ void FUN_117f17f0(void)
 void FUN_117f1920(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11530650);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0fe8))->int_release();
   _DAT_121a0fe8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36897,18 +36615,17 @@ void FUN_117f1920(void)
 void FUN_117f1990(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11530680);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1008))->int_release();
   _DAT_121a1008 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36920,18 +36637,17 @@ void FUN_117f1990(void)
 void FUN_117f1a00(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115306b0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0ffc))->int_release();
   _DAT_121a0ffc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36943,18 +36659,17 @@ void FUN_117f1a00(void)
 void FUN_117f1a70(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115306e0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0fec))->int_release();
   _DAT_121a0fec = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36966,18 +36681,17 @@ void FUN_117f1a70(void)
 void FUN_117f1ae0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11530710);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0ff8))->int_release();
   _DAT_121a0ff8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -36989,18 +36703,17 @@ void FUN_117f1ae0(void)
 void FUN_117f1b50(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11530740);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1004))->int_release();
   _DAT_121a1004 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37046,18 +36759,17 @@ void FUN_117f1bc0(void)
 void FUN_117f1c30(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11530770);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1000))->int_release();
   _DAT_121a1000 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37069,18 +36781,17 @@ void FUN_117f1c30(void)
 void FUN_117f1ca0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115307a0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1014))->int_release();
   _DAT_121a1014 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37092,18 +36803,17 @@ void FUN_117f1ca0(void)
 void FUN_117f1d10(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115307d0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0ff4))->int_release();
   _DAT_121a0ff4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37115,18 +36825,17 @@ void FUN_117f1d10(void)
 void FUN_117f1d80(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11530800);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0ff0))->int_release();
   _DAT_121a0ff0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37138,18 +36847,17 @@ void FUN_117f1d80(void)
 void FUN_117f1df0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11530830);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0fe0))->int_release();
   _DAT_121a0fe0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37161,18 +36869,17 @@ void FUN_117f1df0(void)
 void FUN_117f1e60(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11530860);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a0fdc))->int_release();
   _DAT_121a0fdc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37184,18 +36891,17 @@ void FUN_117f1e60(void)
 void FUN_117f1ed0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532a20);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a106c))->int_release();
   _DAT_121a106c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37207,18 +36913,17 @@ void FUN_117f1ed0(void)
 void FUN_117f1f40(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532a50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a102c))->int_release();
   _DAT_121a102c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37230,18 +36935,17 @@ void FUN_117f1f40(void)
 void FUN_117f1fb0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532a80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1070))->int_release();
   _DAT_121a1070 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37253,18 +36957,17 @@ void FUN_117f1fb0(void)
 void FUN_117f2020(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532ab0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a105c))->int_release();
   _DAT_121a105c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37276,18 +36979,17 @@ void FUN_117f2020(void)
 void FUN_117f2090(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532ae0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1078))->int_release();
   _DAT_121a1078 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37299,18 +37001,17 @@ void FUN_117f2090(void)
 void FUN_117f2100(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532b10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1064))->int_release();
   _DAT_121a1064 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37322,18 +37023,17 @@ void FUN_117f2100(void)
 void FUN_117f2170(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532b40);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1080))->int_release();
   _DAT_121a1080 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37345,18 +37045,17 @@ void FUN_117f2170(void)
 void FUN_117f21e0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532b70);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1074))->int_release();
   _DAT_121a1074 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37368,18 +37067,17 @@ void FUN_117f21e0(void)
 void FUN_117f2250(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532ba0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a107c))->int_release();
   _DAT_121a107c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37391,18 +37089,17 @@ void FUN_117f2250(void)
 void FUN_117f22c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532bd0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1068))->int_release();
   _DAT_121a1068 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37414,18 +37111,17 @@ void FUN_117f22c0(void)
 void FUN_117f2330(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532c00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1038))->int_release();
   _DAT_121a1038 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37437,18 +37133,17 @@ void FUN_117f2330(void)
 void FUN_117f23a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532c30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1058))->int_release();
   _DAT_121a1058 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37460,18 +37155,17 @@ void FUN_117f23a0(void)
 void FUN_117f2410(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532c60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a104c))->int_release();
   _DAT_121a104c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37483,18 +37177,17 @@ void FUN_117f2410(void)
 void FUN_117f2480(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532c90);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a103c))->int_release();
   _DAT_121a103c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37506,18 +37199,17 @@ void FUN_117f2480(void)
 void FUN_117f24f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532cc0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1048))->int_release();
   _DAT_121a1048 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37529,18 +37221,17 @@ void FUN_117f24f0(void)
 void FUN_117f2560(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532cf0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1054))->int_release();
   _DAT_121a1054 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37552,18 +37243,17 @@ void FUN_117f2560(void)
 void FUN_117f25d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532d20);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1050))->int_release();
   _DAT_121a1050 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37575,18 +37265,17 @@ void FUN_117f25d0(void)
 void FUN_117f2640(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532d50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1060))->int_release();
   _DAT_121a1060 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37598,18 +37287,17 @@ void FUN_117f2640(void)
 void FUN_117f26b0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532d80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1044))->int_release();
   _DAT_121a1044 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37621,18 +37309,17 @@ void FUN_117f26b0(void)
 void FUN_117f2720(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532db0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1040))->int_release();
   _DAT_121a1040 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37644,18 +37331,17 @@ void FUN_117f2720(void)
 void FUN_117f2790(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532de0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1034))->int_release();
   _DAT_121a1034 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37667,18 +37353,17 @@ void FUN_117f2790(void)
 void FUN_117f2800(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11532e10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1030))->int_release();
   _DAT_121a1030 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37690,18 +37375,17 @@ void FUN_117f2800(void)
 void FUN_117f2870(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11538800);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a10a4))->int_release();
   _DAT_121a10a4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37713,18 +37397,17 @@ void FUN_117f2870(void)
 void FUN_117f28e0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11538830);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a10c4))->int_release();
   _DAT_121a10c4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37736,18 +37419,17 @@ void FUN_117f28e0(void)
 void FUN_117f2950(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11538860);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a10b8))->int_release();
   _DAT_121a10b8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37759,18 +37441,17 @@ void FUN_117f2950(void)
 void FUN_117f29c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11538890);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a10a8))->int_release();
   _DAT_121a10a8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37782,18 +37463,17 @@ void FUN_117f29c0(void)
 void FUN_117f2a30(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115388c0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a10a0))->int_release();
   _DAT_121a10a0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37805,18 +37485,17 @@ void FUN_117f2a30(void)
 void FUN_117f2aa0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115388f0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a10b4))->int_release();
   _DAT_121a10b4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37828,18 +37507,17 @@ void FUN_117f2aa0(void)
 void FUN_117f2b10(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11538920);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a10c0))->int_release();
   _DAT_121a10c0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37851,18 +37529,17 @@ void FUN_117f2b10(void)
 void FUN_117f2b80(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11538950);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a10bc))->int_release();
   _DAT_121a10bc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37874,18 +37551,17 @@ void FUN_117f2b80(void)
 void FUN_117f2bf0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11538980);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a10cc))->int_release();
   _DAT_121a10cc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37897,18 +37573,17 @@ void FUN_117f2bf0(void)
 void FUN_117f2c60(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115389b0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a10b0))->int_release();
   _DAT_121a10b0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37920,18 +37595,17 @@ void FUN_117f2c60(void)
 void FUN_117f2cd0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115389e0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a10ac))->int_release();
   _DAT_121a10ac = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37943,18 +37617,17 @@ void FUN_117f2cd0(void)
 void FUN_117f2d40(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11538a10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a109c))->int_release();
   _DAT_121a109c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37966,18 +37639,17 @@ void FUN_117f2d40(void)
 void FUN_117f2db0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11538a40);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1098))->int_release();
   _DAT_121a1098 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -37989,18 +37661,17 @@ void FUN_117f2db0(void)
 void FUN_117f2e20(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1153ac10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a10dc))->int_release();
   _DAT_121a10dc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38012,18 +37683,17 @@ void FUN_117f2e20(void)
 void FUN_117f2e90(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1153ac40);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1108))->int_release();
   _DAT_121a1108 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38035,18 +37705,17 @@ void FUN_117f2e90(void)
 void FUN_117f2f00(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1153ac70);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1128))->int_release();
   _DAT_121a1128 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38058,18 +37727,17 @@ void FUN_117f2f00(void)
 void FUN_117f2f70(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1153aca0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a111c))->int_release();
   _DAT_121a111c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38081,18 +37749,17 @@ void FUN_117f2f70(void)
 void FUN_117f2fe0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1153acd0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a110c))->int_release();
   _DAT_121a110c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38104,18 +37771,17 @@ void FUN_117f2fe0(void)
 void FUN_117f3050(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1153ad00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1118))->int_release();
   _DAT_121a1118 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38127,18 +37793,17 @@ void FUN_117f3050(void)
 void FUN_117f30c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1153ad30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1124))->int_release();
   _DAT_121a1124 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38150,18 +37815,17 @@ void FUN_117f30c0(void)
 void FUN_117f3130(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1153ad60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1120))->int_release();
   _DAT_121a1120 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38173,18 +37837,17 @@ void FUN_117f3130(void)
 void FUN_117f31a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1153ad90);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a112c))->int_release();
   _DAT_121a112c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38196,18 +37859,17 @@ void FUN_117f31a0(void)
 void FUN_117f3210(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1153adc0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1114))->int_release();
   _DAT_121a1114 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38219,18 +37881,17 @@ void FUN_117f3210(void)
 void FUN_117f3280(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1153adf0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1110))->int_release();
   _DAT_121a1110 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38242,18 +37903,17 @@ void FUN_117f3280(void)
 void FUN_117f32f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1153ae20);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1104))->int_release();
   _DAT_121a1104 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38265,18 +37925,17 @@ void FUN_117f32f0(void)
 void FUN_117f3360(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1153ae50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a10e0))->int_release();
   _DAT_121a10e0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38288,18 +37947,17 @@ void FUN_117f3360(void)
 void FUN_117f33e0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11540320);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1190))->int_release();
   _DAT_121a1190 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38311,18 +37969,17 @@ void FUN_117f33e0(void)
 void FUN_117f3450(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11540350);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a11b0))->int_release();
   _DAT_121a11b0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38334,18 +37991,17 @@ void FUN_117f3450(void)
 void FUN_117f34c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11540380);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1148))->int_release();
   _DAT_121a1148 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38357,18 +38013,17 @@ void FUN_117f34c0(void)
 void FUN_117f3530(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115403b0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a11b4))->int_release();
   _DAT_121a11b4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38380,18 +38035,17 @@ void FUN_117f3530(void)
 void FUN_117f35a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115403e0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1188))->int_release();
   _DAT_121a1188 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38403,18 +38057,17 @@ void FUN_117f35a0(void)
 void FUN_117f3610(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11540410);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a11c0))->int_release();
   _DAT_121a11c0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38426,18 +38079,17 @@ void FUN_117f3610(void)
 void FUN_117f3680(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11540440);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a119c))->int_release();
   _DAT_121a119c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38449,18 +38101,17 @@ void FUN_117f3680(void)
 void FUN_117f36f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11540470);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a11c8))->int_release();
   _DAT_121a11c8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38472,18 +38123,17 @@ void FUN_117f36f0(void)
 void FUN_117f3760(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115404a0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a11bc))->int_release();
   _DAT_121a11bc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38495,18 +38145,17 @@ void FUN_117f3760(void)
 void FUN_117f37d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115404d0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a11c4))->int_release();
   _DAT_121a11c4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38518,18 +38167,17 @@ void FUN_117f37d0(void)
 void FUN_117f3840(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11540500);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a11a4))->int_release();
   _DAT_121a11a4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38541,18 +38189,17 @@ void FUN_117f3840(void)
 void FUN_117f38b0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11540530);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1198))->int_release();
   _DAT_121a1198 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38564,18 +38211,17 @@ void FUN_117f38b0(void)
 void FUN_117f3920(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11540560);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a11b8))->int_release();
   _DAT_121a11b8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38587,18 +38233,17 @@ void FUN_117f3920(void)
 void FUN_117f3990(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11540590);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1164))->int_release();
   _DAT_121a1164 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38610,18 +38255,17 @@ void FUN_117f3990(void)
 void FUN_117f3a00(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115405c0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1184))->int_release();
   _DAT_121a1184 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38633,18 +38277,17 @@ void FUN_117f3a00(void)
 void FUN_117f3a70(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115405f0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1178))->int_release();
   _DAT_121a1178 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38656,18 +38299,17 @@ void FUN_117f3a70(void)
 void FUN_117f3ae0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11540620);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1168))->int_release();
   _DAT_121a1168 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38679,18 +38321,17 @@ void FUN_117f3ae0(void)
 void FUN_117f3b50(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11540650);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1174))->int_release();
   _DAT_121a1174 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38702,18 +38343,17 @@ void FUN_117f3b50(void)
 void FUN_117f3bc0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11540680);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1180))->int_release();
   _DAT_121a1180 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38725,18 +38365,17 @@ void FUN_117f3bc0(void)
 void FUN_117f3c30(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115406b0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a11a0))->int_release();
   _DAT_121a11a0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38748,18 +38387,17 @@ void FUN_117f3c30(void)
 void FUN_117f3ca0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115406e0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1150))->int_release();
   _DAT_121a1150 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38805,18 +38443,17 @@ void FUN_117f3d10(void)
 void FUN_117f3d80(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11540710);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a117c))->int_release();
   _DAT_121a117c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38828,18 +38465,17 @@ void FUN_117f3d80(void)
 void FUN_117f3df0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11540740);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1194))->int_release();
   _DAT_121a1194 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38851,18 +38487,17 @@ void FUN_117f3df0(void)
 void FUN_117f3e60(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11540770);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1170))->int_release();
   _DAT_121a1170 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38874,18 +38509,17 @@ void FUN_117f3e60(void)
 void FUN_117f3ed0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115407a0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a116c))->int_release();
   _DAT_121a116c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38897,18 +38531,17 @@ void FUN_117f3ed0(void)
 void FUN_117f3f40(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115407d0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1160))->int_release();
   _DAT_121a1160 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38920,18 +38553,17 @@ void FUN_117f3f40(void)
 void FUN_117f3fb0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11540800);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1144))->int_release();
   _DAT_121a1144 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38943,18 +38575,17 @@ void FUN_117f3fb0(void)
 void FUN_117f4020(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11540830);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a11f4))->int_release();
   _DAT_121a11f4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38966,18 +38597,17 @@ void FUN_117f4020(void)
 void FUN_117f4090(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11540860);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1140))->int_release();
   _DAT_121a1140 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -38989,18 +38619,17 @@ void FUN_117f4090(void)
 void FUN_117f4100(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11540890);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a118c))->int_release();
   _DAT_121a118c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39012,18 +38641,17 @@ void FUN_117f4100(void)
 void FUN_117f4170(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115408c0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a114c))->int_release();
   _DAT_121a114c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39067,18 +38695,17 @@ void FUN_117f4260(void)
 void FUN_117f42e0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11549500);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a11fc))->int_release();
   _DAT_121a11fc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39090,18 +38717,17 @@ void FUN_117f42e0(void)
 void FUN_117f4350(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154a9d0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1208))->int_release();
   _DAT_121a1208 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39113,18 +38739,17 @@ void FUN_117f4350(void)
 void FUN_117f43c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154aa00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1228))->int_release();
   _DAT_121a1228 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39136,18 +38761,17 @@ void FUN_117f43c0(void)
 void FUN_117f4430(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154aa30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a121c))->int_release();
   _DAT_121a121c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39159,18 +38783,17 @@ void FUN_117f4430(void)
 void FUN_117f44a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154aa60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a120c))->int_release();
   _DAT_121a120c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39182,18 +38805,17 @@ void FUN_117f44a0(void)
 void FUN_117f4510(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154aa90);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1218))->int_release();
   _DAT_121a1218 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39205,18 +38827,17 @@ void FUN_117f4510(void)
 void FUN_117f4580(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154aac0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1224))->int_release();
   _DAT_121a1224 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39228,18 +38849,17 @@ void FUN_117f4580(void)
 void FUN_117f45f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154aaf0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1220))->int_release();
   _DAT_121a1220 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39251,18 +38871,17 @@ void FUN_117f45f0(void)
 void FUN_117f4660(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154ab20);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a122c))->int_release();
   _DAT_121a122c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39274,18 +38893,17 @@ void FUN_117f4660(void)
 void FUN_117f46d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154ab50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1214))->int_release();
   _DAT_121a1214 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39297,18 +38915,17 @@ void FUN_117f46d0(void)
 void FUN_117f4740(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154ab80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1210))->int_release();
   _DAT_121a1210 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39320,18 +38937,17 @@ void FUN_117f4740(void)
 void FUN_117f47b0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154abb0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1204))->int_release();
   _DAT_121a1204 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39343,18 +38959,17 @@ void FUN_117f47b0(void)
 void FUN_117f4820(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154abe0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1200))->int_release();
   _DAT_121a1200 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39366,18 +38981,17 @@ void FUN_117f4820(void)
 void FUN_117f4890(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154c9b0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a123c))->int_release();
   _DAT_121a123c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39387,18 +39001,17 @@ void FUN_117f4890(void)
 void FUN_117f4900(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154d9d0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1240))->int_release();
   DAT_121a1240 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39408,18 +39021,17 @@ void FUN_117f4900(void)
 void FUN_117f4970(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154da00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1268))->int_release();
   DAT_121a1268 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39429,18 +39041,17 @@ void FUN_117f4970(void)
 void FUN_117f49e0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154da30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a127c))->int_release();
   DAT_121a127c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39450,18 +39061,17 @@ void FUN_117f49e0(void)
 void FUN_117f4a50(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154da60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1258))->int_release();
   DAT_121a1258 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39471,18 +39081,17 @@ void FUN_117f4a50(void)
 void FUN_117f4ac0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154da90);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1248))->int_release();
   DAT_121a1248 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39492,18 +39101,17 @@ void FUN_117f4ac0(void)
 void FUN_117f4b30(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154dac0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1284))->int_release();
   DAT_121a1284 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39513,18 +39121,17 @@ void FUN_117f4b30(void)
 void FUN_117f4ba0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154daf0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a125c))->int_release();
   DAT_121a125c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39534,18 +39141,17 @@ void FUN_117f4ba0(void)
 void FUN_117f4c10(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154db20);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1280))->int_release();
   DAT_121a1280 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39555,18 +39161,17 @@ void FUN_117f4c10(void)
 void FUN_117f4c80(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154db50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1264))->int_release();
   DAT_121a1264 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39576,18 +39181,17 @@ void FUN_117f4c80(void)
 void FUN_117f4cf0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154db80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1254))->int_release();
   DAT_121a1254 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39597,18 +39201,17 @@ void FUN_117f4cf0(void)
 void FUN_117f4d60(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154dbb0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a124c))->int_release();
   DAT_121a124c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39618,18 +39221,17 @@ void FUN_117f4d60(void)
 void FUN_117f4dd0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154dbe0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a126c))->int_release();
   DAT_121a126c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39639,18 +39241,17 @@ void FUN_117f4dd0(void)
 void FUN_117f4e40(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154dc10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1244))->int_release();
   DAT_121a1244 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39660,18 +39261,17 @@ void FUN_117f4e40(void)
 void FUN_117f4eb0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154dc40);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1274))->int_release();
   DAT_121a1274 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39681,18 +39281,17 @@ void FUN_117f4eb0(void)
 void FUN_117f4f20(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154dc70);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1270))->int_release();
   DAT_121a1270 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39702,18 +39301,17 @@ void FUN_117f4f20(void)
 void FUN_117f4f90(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154dca0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1278))->int_release();
   DAT_121a1278 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39723,18 +39321,17 @@ void FUN_117f4f90(void)
 void FUN_117f5000(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154dcd0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1260))->int_release();
   DAT_121a1260 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39746,18 +39343,17 @@ void FUN_117f5000(void)
 void FUN_117f5070(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154dd00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1250))->int_release();
   _DAT_121a1250 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39769,18 +39365,17 @@ void FUN_117f5070(void)
 void FUN_117f50e0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154fd80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a12b8))->int_release();
   _DAT_121a12b8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39792,18 +39387,17 @@ void FUN_117f50e0(void)
 void FUN_117f5150(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154fdb0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a12c0))->int_release();
   _DAT_121a12c0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39815,18 +39409,17 @@ void FUN_117f5150(void)
 void FUN_117f51c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154fde0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a12bc))->int_release();
   _DAT_121a12bc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39838,18 +39431,17 @@ void FUN_117f51c0(void)
 void FUN_117f5230(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154fe10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a12b4))->int_release();
   _DAT_121a12b4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39861,18 +39453,17 @@ void FUN_117f5230(void)
 void FUN_117f52a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154fe40);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a12a0))->int_release();
   _DAT_121a12a0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39884,18 +39475,17 @@ void FUN_117f52a0(void)
 void FUN_117f5310(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154fe70);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a12b0))->int_release();
   _DAT_121a12b0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39907,18 +39497,17 @@ void FUN_117f5310(void)
 void FUN_117f5380(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154fea0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a12a8))->int_release();
   _DAT_121a12a8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39930,18 +39519,17 @@ void FUN_117f5380(void)
 void FUN_117f53f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154fed0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a12a4))->int_release();
   _DAT_121a12a4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39953,18 +39541,17 @@ void FUN_117f53f0(void)
 void FUN_117f5460(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154ff00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1298))->int_release();
   _DAT_121a1298 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39976,18 +39563,17 @@ void FUN_117f5460(void)
 void FUN_117f54d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154ff30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a12ac))->int_release();
   _DAT_121a12ac = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -39999,18 +39585,17 @@ void FUN_117f54d0(void)
 void FUN_117f5540(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1154ff60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a129c))->int_release();
   _DAT_121a129c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40022,18 +39607,17 @@ void FUN_117f5540(void)
 void FUN_117f55b0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115542e0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a12d8))->int_release();
   _DAT_121a12d8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40045,18 +39629,17 @@ void FUN_117f55b0(void)
 void FUN_117f5620(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11554310);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a12f8))->int_release();
   _DAT_121a12f8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40068,18 +39651,17 @@ void FUN_117f5620(void)
 void FUN_117f5690(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11554340);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a12ec))->int_release();
   _DAT_121a12ec = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40091,18 +39673,17 @@ void FUN_117f5690(void)
 void FUN_117f5700(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11554370);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a12dc))->int_release();
   _DAT_121a12dc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40114,18 +39695,17 @@ void FUN_117f5700(void)
 void FUN_117f5770(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115543a0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a12e8))->int_release();
   _DAT_121a12e8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40137,18 +39717,17 @@ void FUN_117f5770(void)
 void FUN_117f57e0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115543d0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a12f4))->int_release();
   _DAT_121a12f4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40160,18 +39739,17 @@ void FUN_117f57e0(void)
 void FUN_117f5850(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11554400);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a12f0))->int_release();
   _DAT_121a12f0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40183,18 +39761,17 @@ void FUN_117f5850(void)
 void FUN_117f58c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11554430);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a12fc))->int_release();
   _DAT_121a12fc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40206,18 +39783,17 @@ void FUN_117f58c0(void)
 void FUN_117f5930(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11554460);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a12e4))->int_release();
   _DAT_121a12e4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40229,18 +39805,17 @@ void FUN_117f5930(void)
 void FUN_117f59a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11554490);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a12e0))->int_release();
   _DAT_121a12e0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40252,18 +39827,17 @@ void FUN_117f59a0(void)
 void FUN_117f5a10(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115544c0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a12d4))->int_release();
   _DAT_121a12d4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40275,18 +39849,17 @@ void FUN_117f5a10(void)
 void FUN_117f5a80(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115544f0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a12d0))->int_release();
   _DAT_121a12d0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40298,18 +39871,17 @@ void FUN_117f5a80(void)
 void FUN_117f5af0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11557d10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a131c))->int_release();
   _DAT_121a131c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40321,18 +39893,17 @@ void FUN_117f5af0(void)
 void FUN_117f5b60(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11557d40);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1314))->int_release();
   _DAT_121a1314 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40344,18 +39915,17 @@ void FUN_117f5b60(void)
 void FUN_117f5bd0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11557d70);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1320))->int_release();
   _DAT_121a1320 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40367,18 +39937,17 @@ void FUN_117f5bd0(void)
 void FUN_117f5c40(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11557da0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1340))->int_release();
   _DAT_121a1340 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40390,18 +39959,17 @@ void FUN_117f5c40(void)
 void FUN_117f5cb0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11557dd0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1334))->int_release();
   _DAT_121a1334 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40413,18 +39981,17 @@ void FUN_117f5cb0(void)
 void FUN_117f5d20(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11557e00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1324))->int_release();
   _DAT_121a1324 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40436,18 +40003,17 @@ void FUN_117f5d20(void)
 void FUN_117f5d90(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11557e30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1330))->int_release();
   _DAT_121a1330 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40459,18 +40025,17 @@ void FUN_117f5d90(void)
 void FUN_117f5e00(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11557e60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a133c))->int_release();
   _DAT_121a133c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40482,18 +40047,17 @@ void FUN_117f5e00(void)
 void FUN_117f5e70(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11557e90);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1338))->int_release();
   _DAT_121a1338 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40505,18 +40069,17 @@ void FUN_117f5e70(void)
 void FUN_117f5ee0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11557ec0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1344))->int_release();
   _DAT_121a1344 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40528,18 +40091,17 @@ void FUN_117f5ee0(void)
 void FUN_117f5f50(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11557ef0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a132c))->int_release();
   _DAT_121a132c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40551,18 +40113,17 @@ void FUN_117f5f50(void)
 void FUN_117f5fc0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11557f20);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1328))->int_release();
   _DAT_121a1328 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40574,18 +40135,17 @@ void FUN_117f5fc0(void)
 void FUN_117f6030(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11557f50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1318))->int_release();
   _DAT_121a1318 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40597,18 +40157,17 @@ void FUN_117f6030(void)
 void FUN_117f60a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11557f80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a130c))->int_release();
   _DAT_121a130c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40620,18 +40179,17 @@ void FUN_117f60a0(void)
 void FUN_117f6110(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11557fb0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1310))->int_release();
   _DAT_121a1310 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40643,18 +40201,17 @@ void FUN_117f6110(void)
 void FUN_117f6240(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155b290);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1378))->int_release();
   _DAT_121a1378 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40666,18 +40223,17 @@ void FUN_117f6240(void)
 void FUN_117f62b0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155b2c0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1398))->int_release();
   _DAT_121a1398 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40689,18 +40245,17 @@ void FUN_117f62b0(void)
 void FUN_117f6320(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155b2f0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a138c))->int_release();
   _DAT_121a138c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40712,18 +40267,17 @@ void FUN_117f6320(void)
 void FUN_117f6390(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155b320);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a137c))->int_release();
   _DAT_121a137c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40735,18 +40289,17 @@ void FUN_117f6390(void)
 void FUN_117f6400(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155b350);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1388))->int_release();
   _DAT_121a1388 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40758,18 +40311,17 @@ void FUN_117f6400(void)
 void FUN_117f6470(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155b380);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1394))->int_release();
   _DAT_121a1394 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40815,18 +40367,17 @@ void FUN_117f64e0(void)
 void FUN_117f6550(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155b3b0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1390))->int_release();
   _DAT_121a1390 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40838,18 +40389,17 @@ void FUN_117f6550(void)
 void FUN_117f65c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155b3e0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a139c))->int_release();
   _DAT_121a139c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40861,18 +40411,17 @@ void FUN_117f65c0(void)
 void FUN_117f6630(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155b410);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1384))->int_release();
   _DAT_121a1384 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40884,18 +40433,17 @@ void FUN_117f6630(void)
 void FUN_117f66a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155b440);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1380))->int_release();
   _DAT_121a1380 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40907,18 +40455,17 @@ void FUN_117f66a0(void)
 void FUN_117f6710(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155b470);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1374))->int_release();
   _DAT_121a1374 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40930,18 +40477,17 @@ void FUN_117f6710(void)
 void FUN_117f6780(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155b4a0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1370))->int_release();
   _DAT_121a1370 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40953,18 +40499,17 @@ void FUN_117f6780(void)
 void FUN_117f67f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155c090);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a13b4))->int_release();
   _DAT_121a13b4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40976,18 +40521,17 @@ void FUN_117f67f0(void)
 void FUN_117f6860(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155c0c0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a13d4))->int_release();
   _DAT_121a13d4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -40999,18 +40543,17 @@ void FUN_117f6860(void)
 void FUN_117f68d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155c0f0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a13c8))->int_release();
   _DAT_121a13c8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41022,18 +40565,17 @@ void FUN_117f68d0(void)
 void FUN_117f6940(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155c120);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a13b8))->int_release();
   _DAT_121a13b8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41045,18 +40587,17 @@ void FUN_117f6940(void)
 void FUN_117f69b0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155c150);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a13c4))->int_release();
   _DAT_121a13c4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41068,18 +40609,17 @@ void FUN_117f69b0(void)
 void FUN_117f6a20(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155c180);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a13d0))->int_release();
   _DAT_121a13d0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41091,18 +40631,17 @@ void FUN_117f6a20(void)
 void FUN_117f6a90(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155c1b0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a13cc))->int_release();
   _DAT_121a13cc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41114,18 +40653,17 @@ void FUN_117f6a90(void)
 void FUN_117f6b00(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155c1e0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a13d8))->int_release();
   _DAT_121a13d8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41137,18 +40675,17 @@ void FUN_117f6b00(void)
 void FUN_117f6b70(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155c210);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a13c0))->int_release();
   _DAT_121a13c0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41160,18 +40697,17 @@ void FUN_117f6b70(void)
 void FUN_117f6be0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155c240);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a13bc))->int_release();
   _DAT_121a13bc = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41183,18 +40719,17 @@ void FUN_117f6be0(void)
 void FUN_117f6c50(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155c270);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a13b0))->int_release();
   _DAT_121a13b0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41206,18 +40741,17 @@ void FUN_117f6c50(void)
 void FUN_117f6e40(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155c330);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a13ac))->int_release();
   _DAT_121a13ac = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41229,18 +40763,17 @@ void FUN_117f6e40(void)
 void FUN_117f6f20(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155e630);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1418))->int_release();
   _DAT_121a1418 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41252,18 +40785,17 @@ void FUN_117f6f20(void)
 void FUN_117f6f90(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155ebb0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1424))->int_release();
   _DAT_121a1424 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41275,18 +40807,17 @@ void FUN_117f6f90(void)
 void FUN_117f7000(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155ebe0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1444))->int_release();
   _DAT_121a1444 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41298,18 +40829,17 @@ void FUN_117f7000(void)
 void FUN_117f7070(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155ec10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1438))->int_release();
   _DAT_121a1438 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41321,18 +40851,17 @@ void FUN_117f7070(void)
 void FUN_117f70e0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155ec40);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1428))->int_release();
   _DAT_121a1428 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41344,18 +40873,17 @@ void FUN_117f70e0(void)
 void FUN_117f7150(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155ec70);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1434))->int_release();
   _DAT_121a1434 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41367,18 +40895,17 @@ void FUN_117f7150(void)
 void FUN_117f71c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155eca0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1440))->int_release();
   _DAT_121a1440 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41390,18 +40917,17 @@ void FUN_117f71c0(void)
 void FUN_117f7230(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155ecd0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a143c))->int_release();
   _DAT_121a143c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41413,18 +40939,17 @@ void FUN_117f7230(void)
 void FUN_117f72a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155ed00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1448))->int_release();
   _DAT_121a1448 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41436,18 +40961,17 @@ void FUN_117f72a0(void)
 void FUN_117f7310(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155ed30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1430))->int_release();
   _DAT_121a1430 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41459,18 +40983,17 @@ void FUN_117f7310(void)
 void FUN_117f7380(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155ed60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a142c))->int_release();
   _DAT_121a142c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41482,18 +41005,17 @@ void FUN_117f7380(void)
 void FUN_117f73f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155ed90);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1420))->int_release();
   _DAT_121a1420 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41505,18 +41027,17 @@ void FUN_117f73f0(void)
 void FUN_117f7460(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_1155edc0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a141c))->int_release();
   _DAT_121a141c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41528,18 +41049,17 @@ void FUN_117f7460(void)
 void FUN_117f74d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115602c0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a147c))->int_release();
   _DAT_121a147c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41551,18 +41071,17 @@ void FUN_117f74d0(void)
 void FUN_117f7540(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115602f0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1460))->int_release();
   _DAT_121a1460 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41574,18 +41093,17 @@ void FUN_117f7540(void)
 void FUN_117f75b0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11560320);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1484))->int_release();
   _DAT_121a1484 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41597,18 +41115,17 @@ void FUN_117f75b0(void)
 void FUN_117f7620(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11560350);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1474))->int_release();
   _DAT_121a1474 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41620,18 +41137,17 @@ void FUN_117f7620(void)
 void FUN_117f7690(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11560380);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1464))->int_release();
   _DAT_121a1464 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41643,18 +41159,17 @@ void FUN_117f7690(void)
 void FUN_117f7700(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115603b0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1470))->int_release();
   _DAT_121a1470 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41666,18 +41181,17 @@ void FUN_117f7700(void)
 void FUN_117f7770(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115603e0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1480))->int_release();
   _DAT_121a1480 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41689,18 +41203,17 @@ void FUN_117f7770(void)
 void FUN_117f77e0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11560410);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1478))->int_release();
   _DAT_121a1478 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41712,18 +41225,17 @@ void FUN_117f77e0(void)
 void FUN_117f7850(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11560440);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1488))->int_release();
   _DAT_121a1488 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41735,18 +41247,17 @@ void FUN_117f7850(void)
 void FUN_117f78c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11560470);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a146c))->int_release();
   _DAT_121a146c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41758,18 +41269,17 @@ void FUN_117f78c0(void)
 void FUN_117f7930(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115604a0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1468))->int_release();
   _DAT_121a1468 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41781,18 +41291,17 @@ void FUN_117f7930(void)
 void FUN_117f79a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115604d0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a145c))->int_release();
   _DAT_121a145c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41804,18 +41313,17 @@ void FUN_117f79a0(void)
 void FUN_117f7b90(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11560590);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1458))->int_release();
   _DAT_121a1458 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41827,18 +41335,17 @@ void FUN_117f7b90(void)
 void FUN_117f7c20(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11561f80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a155c))->int_release();
   _DAT_121a155c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41850,18 +41357,17 @@ void FUN_117f7c20(void)
 void FUN_117f7c90(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11561fb0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a158c))->int_release();
   _DAT_121a158c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41873,18 +41379,17 @@ void FUN_117f7c90(void)
 void FUN_117f7d00(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11561fe0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1554))->int_release();
   _DAT_121a1554 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41896,18 +41401,17 @@ void FUN_117f7d00(void)
 void FUN_117f7d70(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11562010);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1564))->int_release();
   _DAT_121a1564 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41919,18 +41423,17 @@ void FUN_117f7d70(void)
 void FUN_117f7de0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11562040);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1584))->int_release();
   _DAT_121a1584 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41942,18 +41445,17 @@ void FUN_117f7de0(void)
 void FUN_117f7e50(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11562070);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1578))->int_release();
   _DAT_121a1578 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41965,18 +41467,17 @@ void FUN_117f7e50(void)
 void FUN_117f7ec0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115620a0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1568))->int_release();
   _DAT_121a1568 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -41988,18 +41489,17 @@ void FUN_117f7ec0(void)
 void FUN_117f7f30(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115620d0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1574))->int_release();
   _DAT_121a1574 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -42011,18 +41511,17 @@ void FUN_117f7f30(void)
 void FUN_117f7fa0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11562100);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1580))->int_release();
   _DAT_121a1580 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -42034,18 +41533,17 @@ void FUN_117f7fa0(void)
 void FUN_117f8010(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11562130);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a157c))->int_release();
   _DAT_121a157c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -42057,18 +41555,17 @@ void FUN_117f8010(void)
 void FUN_117f8080(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11562160);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1588))->int_release();
   _DAT_121a1588 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -42080,18 +41577,17 @@ void FUN_117f8080(void)
 void FUN_117f80f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11562190);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1570))->int_release();
   _DAT_121a1570 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -42103,18 +41599,17 @@ void FUN_117f80f0(void)
 void FUN_117f8160(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115621c0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a156c))->int_release();
   _DAT_121a156c = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -42126,18 +41621,17 @@ void FUN_117f8160(void)
 void FUN_117f81d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115621f0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1560))->int_release();
   _DAT_121a1560 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -42149,18 +41643,17 @@ void FUN_117f81d0(void)
 void FUN_117f82c0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11562250);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a1558))->int_release();
   _DAT_121a1558 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -42172,18 +41665,17 @@ void FUN_117f82c0(void)
 void FUN_117f8330(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11563440);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a15ac))->int_release();
   _DAT_121a15ac = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -42195,18 +41687,17 @@ void FUN_117f8330(void)
 void FUN_117f83a0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11563470);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a15b4))->int_release();
   _DAT_121a15b4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -42218,18 +41709,17 @@ void FUN_117f83a0(void)
 void FUN_117f8410(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_115634a0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a15b0))->int_release();
   _DAT_121a15b0 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -42241,18 +41731,17 @@ void FUN_117f8410(void)
 void FUN_117f8480(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11563b00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a15c4))->int_release();
   _DAT_121a15c4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -42264,18 +41753,17 @@ void FUN_117f8480(void)
 void FUN_117f84f0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11563b30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a15e4))->int_release();
   _DAT_121a15e4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -42287,18 +41775,17 @@ void FUN_117f84f0(void)
 void FUN_117f8560(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11563b60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a15d8))->int_release();
   _DAT_121a15d8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -42310,18 +41797,17 @@ void FUN_117f8560(void)
 void FUN_117f85d0(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11563b90);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a15c8))->int_release();
   _DAT_121a15c8 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -42333,17 +41819,16 @@ void FUN_117f85d0(void)
 void FUN_117f8640(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_11563bc0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&DAT_121a15d4))->int_release();
   _DAT_121a15d4 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 

@@ -2407,19 +2407,19 @@ void __fastcall FUN_10bfbcd0(int param_1)
 void __fastcall FUN_10bfe9e0(int *param_1)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
-  
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_116cfe30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   if ((int *)*param_1 != (int *)0x0) {
-    (**(code **)(*(int *)*param_1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (**(code **)(*(int *)*param_1 + 8))(DAT_12126b84 );
   }
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -13859,17 +13859,16 @@ void __fastcall FUN_10cdf240(int param_1)
 void FUN_10cdfa20(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_116f7e10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
-  thunk_FUN_111a36f0(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(local_10);
+
+  thunk_FUN_111a36f0(DAT_12126b84 );
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -15301,10 +15300,13 @@ void __stdcall FUN_10cf4ac0(undefined4 *param_1)
 void FUN_10cf4ae0(void)
 
 {
+ try {
   undefined1 local_8 [8];
   
   thunk_FUN_10cf3d20(local_8,&stack0x00000004);
   return;
+
+ } catch (...) { }
 }
 
 
@@ -15314,10 +15316,13 @@ void FUN_10cf4ae0(void)
 void FUN_10cf5110(void)
 
 {
+ try {
   undefined1 local_8 [8];
   
   thunk_FUN_10cf3d20(local_8,&stack0x00000004);
   return;
+
+ } catch (...) { }
 }
 
 
@@ -15356,8 +15361,11 @@ void __thiscall Recovered_Bulk::FUN_10cf5250(int *param_2)
 void FUN_10cf53c0(void)
 
 {
+ try {
   thunk_FUN_10cf4bb0(&stack0x00000004);
   return;
+
+ } catch (...) { }
 }
 
 
@@ -17388,19 +17396,19 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10d19cf0(int *param_2)
 void __fastcall FUN_10d1a530(int *param_1)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
-  
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_11704550);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   if ((int *)*param_1 != (int *)0x0) {
-    (**(code **)(*(int *)*param_1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (**(code **)(*(int *)*param_1 + 8))(DAT_12126b84 );
   }
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -20286,19 +20294,19 @@ uint __fastcall FUN_10d49ed0(int param_1)
 void __fastcall FUN_10d4b930(int *param_1)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
-  
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_1170f170);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   if ((int *)*param_1 != (int *)0x0) {
-    (**(code **)(*(int *)*param_1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    (**(code **)(*(int *)*param_1 + 8))(DAT_12126b84 );
   }
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 

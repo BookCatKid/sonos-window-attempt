@@ -10345,6 +10345,7 @@ void FUN_102d2920(undefined4 param_1,int *param_2,undefined4 param_3,undefined4 
 void FUN_102d2970(undefined4 param_1,int *param_2)
 
 {
+ try {
   int *piVar1;
   int iVar2;
   uint uVar3;
@@ -10352,20 +10353,18 @@ void FUN_102d2970(undefined4 param_1,int *param_2)
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
-  
-  puStack_c = (undefined1 *)(LAB_115276c0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar3 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+  uVar3 = (uint)(DAT_12126b84);
+
   piVar1 = (int *)((int *)param_2[2]);
-  uStack_8 = (undefined4)(0);
+
   if (piVar1 != (int *)0x0) {
     param_2[1] = 0;
     param_2[2] = 0;
     (**(code **)(*piVar1 + 8))(uVar3);
   }
   iVar2 = (int)(*param_2);
-  uStack_8 = (undefined4)(1);
+
   if ((iVar2 != 0) && (*(int *)(iVar2 + -0x10) < 0xffff)) {
     iVar4 = (int)(thunk_FUN_1123fcd0((void *)(iVar2 + -0x10)));
     if (iVar4 == 0) {
@@ -10375,8 +10374,10 @@ void FUN_102d2970(undefined4 param_1,int *param_2)
       free((void *)(iVar2 + -0x10));
     }
   }
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18324,6 +18325,7 @@ void * FUN_102f0d50(uint param_1)
 void __fastcall FUN_102f0fe0(int param_1)
 
 {
+ try {
   int iVar1;
   void *pvVar2;
   int iVar3;
@@ -18332,24 +18334,21 @@ void __fastcall FUN_102f0fe0(int param_1)
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
-  
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117a83c4);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
-  iVar1 = (int)(thunk_FUN_110828b0(DAT_12126b84 ^ (uint)&stack0xfffffffc));
+
+
+  iVar1 = (int)(thunk_FUN_110828b0(DAT_12126b84 ));
   if (iVar1 != 0) {
     iVar1 = (int)((*(code *)**(undefined4 **)(iVar1 + 0x1c))());
     if (iVar1 != 0) {
       pvVar2 = (void *)(operator_new(0x54));
-      uStack_8 = (undefined4)(0);
+
       if (pvVar2 == (void *)0x0) {
         iVar1 = (int)(0);
       }
       else {
         iVar1 = (int)(thunk_FUN_11135bc0(iVar1));
       }
-      uStack_8 = (undefined4)(0xffffffff);
+
       if (iVar1 != 0) {
         piVar5 = (int *)(*(int **)(param_1 + 0x554));
         if (piVar5 != (int *)0x0) {
@@ -18375,8 +18374,10 @@ void __fastcall FUN_102f0fe0(int param_1)
       }
     }
   }
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 

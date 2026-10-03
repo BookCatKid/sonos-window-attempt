@@ -1558,8 +1558,11 @@ void __thiscall Recovered_Bulk::FUN_110a3e60(char param_2)
 void FUN_110a4fa0(undefined4 param_1,undefined4 param_2)
 
 {
+ try {
   thunk_FUN_111a7be0("ActionScriptTrace",10,param_2,&stack0x0000000c);
   return;
+
+ } catch (...) { }
 }
 
 

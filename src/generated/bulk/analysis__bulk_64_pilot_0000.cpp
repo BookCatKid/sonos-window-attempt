@@ -819,15 +819,12 @@ void __stdcall FUN_101559c0(int *param_1,ushort *param_2);
 void FUN_100ab330(void)
 
 {
+ try {
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114f8587);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->int_allocRep("none");
   *(unsigned char *)((char *)&local_8 + 0) = 1;
   ((SCStr *)((SCStr *)&DAT_121a07b0))->int_release();
@@ -837,8 +834,10 @@ void FUN_100ab330(void)
   ((SCStr *)((SCStr *)&local_14))->int_release();
   DAT_121a07b4 = (int)(0);
   _atexit(FUN_117e9640);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -848,18 +847,17 @@ void FUN_100ab330(void)
 void FUN_100ad880(void)
 
 {
+ try {
   uint uVar1;
   int *piVar2;
   void *pvVar3;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_1151a1dd);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   piVar2 = (int *)(operator_new(0x2c));
   if (piVar2 == (int *)0x0) {
     piVar2 = (int *)((int *)0x0);
@@ -876,7 +874,7 @@ void FUN_100ad880(void)
     piVar2[5] = 0;
     piVar2[6] = 0;
     piVar2[7] = 0;
-    local_8 = (undefined4)(4);
+
     piVar2[8] = 0;
     piVar2[9] = 0;
     pvVar3 = (void *)(operator_new(0x14));
@@ -887,7 +885,7 @@ void FUN_100ad880(void)
     piVar2[8] = (int)pvVar3;
     piVar2[10] = 0;
   }
-  local_8 = (undefined4)(0xffffffff);
+
   DAT_121a0bb8 = (int)((int *)0x0);
   DAT_121a0bb4 = (int)(piVar2);
   if (piVar2 != (int *)0x0) {
@@ -898,8 +896,10 @@ void FUN_100ad880(void)
     (**(code **)(*piVar2 + 4))();
   }
   _atexit(FUN_117eda60);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -911,20 +911,19 @@ void FUN_100ad880(void)
 void FUN_100af860(void)
 
 {
+ try {
   uint uVar1;
   void *pvVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_11530617);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   if ((DAT_121a0fd4 == 0) && (DAT_121a0fd8 == '\0')) {
     pvVar2 = (void *)(operator_new(0xfc));
-    local_8 = (undefined4)(0);
+
     if (pvVar2 == (void *)0x0) {
       DAT_121a0fd4 = (int)(0);
     }
@@ -933,8 +932,10 @@ void FUN_100af860(void)
     }
   }
   _DAT_121a0fe4 = (int)(DAT_121a0fd4);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -944,20 +945,19 @@ void FUN_100af860(void)
 void FUN_100af920(void)
 
 {
+ try {
   uint uVar1;
   void *pvVar2;
   void *pvVar3;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_11531a5a);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   pvVar2 = (void *)(operator_new(0x50));
-  local_8 = (undefined4)(0);
+
   if (pvVar2 != (void *)0x0) {
     *(undefined4 *)((int)pvVar2 + 0x30) = 0;
     *(undefined4 *)((int)pvVar2 + 0x34) = 0;
@@ -977,12 +977,14 @@ void FUN_100af920(void)
     thunk_FUN_112a7ea0(pvVar2,"SCWeakRefMgr",uVar1);
     thunk_FUN_112a7b70((int)pvVar2 + 8,"SCWeakRefMgr");
     DAT_121a1028 = (int)(pvVar2);
-    ExceptionList = (void *)(local_10);
+
     return;
   }
   DAT_121a1028 = (int)((void *)0x0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -992,18 +994,16 @@ void FUN_100af920(void)
 void FUN_100bb6f0(void)
 
 {
+ try {
   undefined4 *puVar1;
   SCStr local_14 [4];
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_115e026c);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar1 = (undefined4 *)(operator_new(0x70));
-  local_8 = (undefined4)(0);
+
   if (puVar1 != (undefined4 *)0x0) {
     ((SCStr *)(local_14))->int_allocRep("root");
     *(unsigned char *)((char *)&local_8 + 0) = 1;
@@ -1012,12 +1012,14 @@ void FUN_100bb6f0(void)
     ((SCStr *)(local_14))->int_release();
     *puVar1 = (undefined4)((uint)&ghidra_vftable_SCTestPointManager);
     DAT_121a2764 = (int)(puVar1);
-    ExceptionList = (void *)(local_10);
+
     return;
   }
   DAT_121a2764 = (int)((undefined4 *)0x0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1027,27 +1029,28 @@ void FUN_100bb6f0(void)
 void FUN_100cef50(void)
 
 {
+ try {
   uint uVar1;
   void *pvVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_116dcdd7);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   pvVar2 = (void *)(operator_new(0x80));
-  local_8 = (undefined4)(0);
+
   if (pvVar2 != (void *)0x0) {
     DAT_121a5544 = (int)(thunk_FUN_10c40d70(uVar1,pvVar2));
-    ExceptionList = (void *)(local_10);
+
     return;
   }
   DAT_121a5544 = (int)(0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1059,22 +1062,22 @@ void FUN_100cef50(void)
 void FUN_100d4c80(void)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117065cf);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   ((SCStr *)((SCStr *)&DAT_121a6008))->int_allocRep("x-sonos-scuri://musiclibrary");
-  local_8 = (undefined4)(0);
+
   _DAT_121a600c = (int)(0x2a1);
   _DAT_121a6010 = (int)(1);
   ((SCStr *)((SCStr *)&DAT_121a6014))->int_allocRep("");
   _atexit(FUN_1183f2c0);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1086,15 +1089,13 @@ void FUN_100d4c80(void)
 void FUN_100e5ed0(void)
 
 {
+ try {
   void *pvVar1;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117c41a9);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   pvVar1 = (void *)(operator_new(0x18ab));
   if (pvVar1 != (void *)0x0) {
     DAT_122f33e0 = (int)((int)pvVar1 + 0x23U & 0xffffffe0);
@@ -1104,17 +1105,19 @@ void FUN_100e5ed0(void)
     DAT_122f33e8 = (int)(0);
     _DAT_122f33ec = (int)(0);
     _DAT_122f33f0 = (int)(0);
-    local_8 = (undefined4)(1);
+
     DAT_122f33f4 = (int)(7);
     _DAT_122f33f8 = (int)(8);
     _DAT_122f33dc = (int)(0x3f800000);
     thunk_FUN_111d7e60(0x10,DAT_122f33e0);
     _atexit(FUN_11862560);
-    ExceptionList = (void *)(local_10);
+
     return;
   }
                     
   _invalid_parameter_noinfo_noreturn();
+
+ } catch (...) { }
 }
 
 
@@ -1124,6 +1127,7 @@ void FUN_100e5ed0(void)
 int * __thiscall Recovered_Bulk::FUN_101167f0(undefined4 *param_2)
 {
   int *param_1 = (int *)this;
+ try {
   int iVar1;
   undefined4 *puVar2;
   uint uVar3;
@@ -1134,16 +1138,15 @@ int * __thiscall Recovered_Bulk::FUN_101167f0(undefined4 *param_2)
   undefined4 local_8;
   
   puVar2 = (undefined4 *)(param_2);
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114d9ec5);
-  local_10 = (void *)(ExceptionList);
-  uVar3 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar3 = (uint)(DAT_12126b84);
+
   *param_1 = (int)(0);
   if (param_2 != (undefined4 *)0x0) {
     local_14 = (int *)(param_1);
     ((SCStr *)((SCStr *)&param_2))->int_allocRep("SCIZoneGroupMgr");
-    local_8 = (undefined4)(0);
+
     piVar4 = (int *)((int *)(**(code **)*puVar2)(&local_14,&param_2,uVar3));
     iVar1 = (int)(*piVar4);
     *piVar4 = (int)(0);
@@ -1158,11 +1161,13 @@ int * __thiscall Recovered_Bulk::FUN_101167f0(undefined4 *param_2)
     if (local_14 != (int *)0x0) {
       (**(code **)(*local_14 + 8))();
     }
-    local_8 = (undefined4)(3);
+
     ((SCStr *)((SCStr *)&param_2))->int_release();
   }
-  ExceptionList = (void *)(local_10);
+
   return (int *)(param_1);
+
+ } catch (...) { }
 }
 
 
@@ -1172,6 +1177,7 @@ int * __thiscall Recovered_Bulk::FUN_101167f0(undefined4 *param_2)
 int * __thiscall Recovered_Bulk::FUN_101168d0(undefined4 *param_2)
 {
   int *param_1 = (int *)this;
+ try {
   int iVar1;
   undefined4 *puVar2;
   uint uVar3;
@@ -1182,16 +1188,15 @@ int * __thiscall Recovered_Bulk::FUN_101168d0(undefined4 *param_2)
   undefined4 local_8;
   
   puVar2 = (undefined4 *)(param_2);
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114d9f05);
-  local_10 = (void *)(ExceptionList);
-  uVar3 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar3 = (uint)(DAT_12126b84);
+
   *param_1 = (int)(0);
   if (param_2 != (undefined4 *)0x0) {
     local_14 = (int *)(param_1);
     ((SCStr *)((SCStr *)&param_2))->int_allocRep("SCISystem");
-    local_8 = (undefined4)(0);
+
     piVar4 = (int *)((int *)(**(code **)*puVar2)(&local_14,&param_2,uVar3));
     iVar1 = (int)(*piVar4);
     *piVar4 = (int)(0);
@@ -1206,11 +1211,13 @@ int * __thiscall Recovered_Bulk::FUN_101168d0(undefined4 *param_2)
     if (local_14 != (int *)0x0) {
       (**(code **)(*local_14 + 8))();
     }
-    local_8 = (undefined4)(3);
+
     ((SCStr *)((SCStr *)&param_2))->int_release();
   }
-  ExceptionList = (void *)(local_10);
+
   return (int *)(param_1);
+
+ } catch (...) { }
 }
 
 
@@ -1220,6 +1227,7 @@ int * __thiscall Recovered_Bulk::FUN_101168d0(undefined4 *param_2)
 int * __thiscall Recovered_Bulk::FUN_101169f0(undefined4 *param_2)
 {
   int *param_1 = (int *)this;
+ try {
   int iVar1;
   undefined4 *puVar2;
   uint uVar3;
@@ -1230,16 +1238,15 @@ int * __thiscall Recovered_Bulk::FUN_101169f0(undefined4 *param_2)
   undefined4 local_8;
   
   puVar2 = (undefined4 *)(param_2);
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114d9f45);
-  local_10 = (void *)(ExceptionList);
-  uVar3 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar3 = (uint)(DAT_12126b84);
+
   *param_1 = (int)(0);
   if (param_2 != (undefined4 *)0x0) {
     local_14 = (int *)(param_1);
     ((SCStr *)((SCStr *)&param_2))->int_allocRep("SCINowPlaying");
-    local_8 = (undefined4)(0);
+
     piVar4 = (int *)((int *)(**(code **)*puVar2)(&local_14,&param_2,uVar3));
     iVar1 = (int)(*piVar4);
     *piVar4 = (int)(0);
@@ -1254,11 +1261,13 @@ int * __thiscall Recovered_Bulk::FUN_101169f0(undefined4 *param_2)
     if (local_14 != (int *)0x0) {
       (**(code **)(*local_14 + 8))();
     }
-    local_8 = (undefined4)(3);
+
     ((SCStr *)((SCStr *)&param_2))->int_release();
   }
-  ExceptionList = (void *)(local_10);
+
   return (int *)(param_1);
+
+ } catch (...) { }
 }
 
 
@@ -1305,30 +1314,32 @@ void __thiscall Recovered_Bulk::FUN_10117000(int *param_2,SCStr *param_3,uint pa
 void FUN_101170a0(undefined4 param_1,undefined4 *param_2)
 
 {
+ try {
   undefined4 *puVar1;
   undefined4 *puVar2;
   uint uVar3;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_10 = (void *)(ExceptionList);
-  puStack_c = (undefined1 *)(LAB_114d9f70);
-  uVar3 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar3 = (uint)(DAT_12126b84);
+
   *(undefined4 *)param_2[1] = 0;
   puVar2 = (undefined4 *)((undefined4 *)*param_2);
   while (puVar2 != (undefined4 *)0x0) {
     puVar1 = (undefined4 *)((undefined4 *)*puVar2);
-    local_8 = (undefined4)(0);
+
     ((SCStr *)((SCStr *)(puVar2 + 2)))->int_release();
     puVar2[2] = 0;
-    local_8 = (undefined4)(0xffffffff);
+
     thunk_FUN_1148a50e(puVar2,0xc,uVar3);
     puVar2 = (undefined4 *)(puVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1338,21 +1349,21 @@ void FUN_101170a0(undefined4 param_1,undefined4 *param_2)
 void FUN_10117170(undefined4 param_1,int param_2)
 
 {
+ try {
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114d9fa0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)(param_2 + 8)))->int_release();
   *(undefined4 *)(param_2 + 8) = 0;
   thunk_FUN_1148a50e(param_2,0xc,uVar1);
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1438,6 +1449,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_10118c40(undefined4 *param_2)
 void __thiscall Recovered_Bulk::FUN_10118fc0(undefined4 param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
+ try {
   undefined4 uVar1;
   undefined4 uVar2;
   uint uVar3;
@@ -1454,19 +1466,17 @@ void __thiscall Recovered_Bulk::FUN_10118fc0(undefined4 param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114da185);
-  local_10 = (void *)(ExceptionList);
-  uVar3 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar3 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar3);
   local_2c[0] = (char *)thunk_FUN_1012cab0(0x30);
   uVar2 = (undefined4)(*(uint *)((char *)&s_Attempt_to_invoke_pure_virtual_m_1186d2c0 + 12));
   uVar1 = (undefined4)(*(uint *)((char *)&s_Attempt_to_invoke_pure_virtual_m_1186d2c0 + 8));
   uVar4 = (undefined4)(*(uint *)((char *)&s_Attempt_to_invoke_pure_virtual_m_1186d2c0 + 4));
-  local_1c = (undefined4)(0x26);
-  local_18 = (uint)(0x2f);
+
+
   *(undefined4 *)local_2c[0] = *(uint *)((char *)&s_Attempt_to_invoke_pure_virtual_m_1186d2c0 + 0);
   *(undefined4 *)(local_2c[0] + 4) = uVar4;
   *(undefined4 *)(local_2c[0] + 8) = uVar1;
@@ -1481,7 +1491,7 @@ void __thiscall Recovered_Bulk::FUN_10118fc0(undefined4 param_2)
   *(undefined4 *)(local_2c[0] + 0x20) = *(uint *)((char *)&s_Attempt_to_invoke_pure_virtual_m_1186d2c0 + 32);
   *(undefined2 *)(local_2c[0] + 0x24) = *(uint *)((char *)&s_Attempt_to_invoke_pure_virtual_m_1186d2c0 + 36);
   local_2c[0][0x26] = '\0';
-  local_8 = (undefined4)(0);
+
   uVar4 = (undefined4)(thunk_FUN_10116b10(local_44,local_2c,param_2,uVar3));
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
   *param_1 = (undefined4)((uint)&ghidra_vftable_Swig_DirectorException);
@@ -1496,8 +1506,8 @@ void __thiscall Recovered_Bulk::FUN_10118fc0(undefined4 param_2)
     }
     thunk_FUN_1148a50e(uVar3,uVar6);
   }
-  local_34 = (undefined4)(0);
-  local_30 = (uint)(0xf);
+
+
   local_44[0] = local_44[0] & 0xffffff00;
   if (0xf < local_18) {
     uVar3 = (uint)(local_18 + 1);
@@ -1514,9 +1524,11 @@ LAB_101190d0:
     thunk_FUN_1148a50e(pcVar5,uVar3);
   }
   *param_1 = (undefined4)((uint)&ghidra_vftable_Swig_DirectorPureVirtualException);
-  ExceptionList = (void *)(local_10);
+
   thunk_FUN_1148ac28();
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1526,25 +1538,26 @@ LAB_101190d0:
 void __fastcall FUN_1011be40(undefined4 *param_1)
 
 {
+ try {
   int *piVar1;
   uint uVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
-  
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114da400);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   piVar1 = (int *)((int *)param_1[1]);
   if (piVar1 != (int *)0x0) {
     *param_1 = (undefined4)(0);
     param_1[1] = 0;
     (**(code **)(*piVar1 + 8))(uVar2);
   }
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1554,25 +1567,26 @@ void __fastcall FUN_1011be40(undefined4 *param_1)
 void __fastcall FUN_1011beb0(undefined4 *param_1)
 
 {
+ try {
   int *piVar1;
   uint uVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
-  
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114da430);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   piVar1 = (int *)((int *)param_1[1]);
   if (piVar1 != (int *)0x0) {
     *param_1 = (undefined4)(0);
     param_1[1] = 0;
     (**(code **)(*piVar1 + 8))(uVar2);
   }
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1582,25 +1596,26 @@ void __fastcall FUN_1011beb0(undefined4 *param_1)
 void __fastcall FUN_1011bf20(undefined4 *param_1)
 
 {
+ try {
   int *piVar1;
   uint uVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
-  
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114da460);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   piVar1 = (int *)((int *)param_1[1]);
   if (piVar1 != (int *)0x0) {
     *param_1 = (undefined4)(0);
     param_1[1] = 0;
     (**(code **)(*piVar1 + 8))(uVar2);
   }
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1610,24 +1625,25 @@ void __fastcall FUN_1011bf20(undefined4 *param_1)
 void __fastcall FUN_1011bf90(int *param_1)
 
 {
+ try {
   int *piVar1;
   uint uVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
-  
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114da490);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   piVar1 = (int *)((int *)*param_1);
   if (piVar1 != (int *)0x0) {
     *param_1 = (int)(0);
     (**(code **)(*piVar1 + 8))(uVar2);
   }
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1637,24 +1653,25 @@ void __fastcall FUN_1011bf90(int *param_1)
 void __fastcall FUN_1011bff0(int *param_1)
 
 {
+ try {
   int *piVar1;
   uint uVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
-  
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114da4c0);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   piVar1 = (int *)((int *)*param_1);
   if (piVar1 != (int *)0x0) {
     *param_1 = (int)(0);
     (**(code **)(*piVar1 + 8))(uVar2);
   }
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1664,24 +1681,25 @@ void __fastcall FUN_1011bff0(int *param_1)
 void __fastcall FUN_1011c050(int *param_1)
 
 {
+ try {
   int *piVar1;
   uint uVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
-  
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114da4f0);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   piVar1 = (int *)((int *)*param_1);
   if (piVar1 != (int *)0x0) {
     *param_1 = (int)(0);
     (**(code **)(*piVar1 + 8))(uVar2);
   }
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1787,21 +1805,20 @@ void __fastcall FUN_1011f870(undefined4 *param_1)
 void __fastcall FUN_1011ff40(int param_1)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114dbff0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 8)))->int_release();
   *(undefined4 *)(param_1 + 8) = 0;
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)(param_1 + 4)))->int_release();
   *(undefined4 *)(param_1 + 4) = 0;
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1811,44 +1828,45 @@ void __fastcall FUN_1011ff40(int param_1)
 void __fastcall FUN_10120220(undefined4 *param_1)
 
 {
+ try {
   int *piVar1;
   uint uVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114dc0b0);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCUrl);
   piVar1 = (int *)((int *)param_1[8]);
-  local_8 = (undefined4)(0);
+
   if (piVar1 != (int *)0x0) {
     param_1[7] = 0;
     param_1[8] = 0;
     (**(code **)(*piVar1 + 8))(uVar2);
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)(param_1 + 6)))->int_release();
   param_1[6] = 0;
-  local_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)(param_1 + 5)))->int_release();
   param_1[5] = 0;
-  local_8 = (undefined4)(3);
+
   ((SCStr *)((SCStr *)(param_1 + 4)))->int_release();
   param_1[4] = 0;
-  local_8 = (undefined4)(4);
+
   ((SCStr *)((SCStr *)(param_1 + 3)))->int_release();
   param_1[3] = 0;
-  local_8 = (undefined4)(5);
+
   ((SCStr *)((SCStr *)(param_1 + 2)))->int_release();
   param_1[2] = 0;
-  local_8 = (undefined4)(6);
+
   ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1858,32 +1876,33 @@ void __fastcall FUN_10120220(undefined4 *param_1)
 void __fastcall FUN_10120340(int param_1)
 
 {
+ try {
   int *piVar1;
   uint uVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114dc0e0);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar2 = (uint)(DAT_12126b84);
+
   piVar1 = (int *)(*(int **)(param_1 + 0x38));
-  local_8 = (undefined4)(0);
+
   if (piVar1 != (int *)0x0) {
     *(undefined4 *)(param_1 + 0x34) = 0;
     *(undefined4 *)(param_1 + 0x38) = 0;
     (**(code **)(*piVar1 + 8))(uVar2);
   }
   piVar1 = (int *)(*(int **)(param_1 + 0x30));
-  local_8 = (undefined4)(1);
+
   if (piVar1 != (int *)0x0) {
     *(undefined4 *)(param_1 + 0x2c) = 0;
     *(undefined4 *)(param_1 + 0x30) = 0;
     (**(code **)(*piVar1 + 8))();
   }
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1974,26 +1993,26 @@ undefined1 * __thiscall Recovered_Bulk::FUN_10124ee0(undefined1 *param_2)
 int __thiscall Recovered_Bulk::FUN_101263e0(byte param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114dcd40);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)(param_1 + 8)))->int_release();
   *(undefined4 *)(param_1 + 8) = 0;
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)(param_1 + 4)))->int_release();
   *(undefined4 *)(param_1 + 4) = 0;
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc,uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (int)(param_1);
+
+ } catch (...) { }
 }
 
 
@@ -2003,25 +2022,24 @@ int __thiscall Recovered_Bulk::FUN_101263e0(byte param_2)
 int __thiscall Recovered_Bulk::FUN_101269f0(byte param_2)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   uint uVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114dce00);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar2 = (uint)(DAT_12126b84);
+
   piVar1 = (int *)(*(int **)(param_1 + 0x38));
-  local_8 = (undefined4)(0);
+
   if (piVar1 != (int *)0x0) {
     *(undefined4 *)(param_1 + 0x34) = 0;
     *(undefined4 *)(param_1 + 0x38) = 0;
     (**(code **)(*piVar1 + 8))(uVar2);
   }
   piVar1 = (int *)(*(int **)(param_1 + 0x30));
-  local_8 = (undefined4)(1);
+
   if (piVar1 != (int *)0x0) {
     *(undefined4 *)(param_1 + 0x2c) = 0;
     *(undefined4 *)(param_1 + 0x30) = 0;
@@ -2030,8 +2048,10 @@ int __thiscall Recovered_Bulk::FUN_101269f0(byte param_2)
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x48);
   }
-  ExceptionList = (void *)(local_10);
+
   return (int)(param_1);
+
+ } catch (...) { }
 }
 
 
@@ -2041,6 +2061,7 @@ int __thiscall Recovered_Bulk::FUN_101269f0(byte param_2)
 void __thiscall Recovered_Bulk::FUN_10129550(undefined4 *param_2,undefined4 param_3,undefined4 *param_4)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -2050,12 +2071,10 @@ void __thiscall Recovered_Bulk::FUN_10129550(undefined4 *param_2,undefined4 para
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114ddcbb);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 8) != 0) {
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
@@ -2063,7 +2082,7 @@ void __thiscall Recovered_Bulk::FUN_10129550(undefined4 *param_2,undefined4 para
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar4);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)0x0) {
@@ -2075,13 +2094,15 @@ void __thiscall Recovered_Bulk::FUN_10129550(undefined4 *param_2,undefined4 para
     (**(code **)(param_1 + 8))(uVar2,param_3,uVar3);
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCLibLogCallback::LogDebugMessage");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -2279,6 +2300,7 @@ void __thiscall Recovered_Bulk::FUN_1012a650(int *param_2)
 void __thiscall Recovered_Bulk::FUN_1012b750(undefined4 *param_2,undefined4 *param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -2288,12 +2310,10 @@ void __thiscall Recovered_Bulk::FUN_1012b750(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114ddd5b);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x18) != 0) {
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
@@ -2301,7 +2321,7 @@ void __thiscall Recovered_Bulk::FUN_1012b750(undefined4 *param_2,undefined4 *par
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar4);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)0x0) {
@@ -2313,13 +2333,15 @@ void __thiscall Recovered_Bulk::FUN_1012b750(undefined4 *param_2,undefined4 *par
     (**(code **)(param_1 + 0x18))(uVar2,uVar3);
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIInAppMessagingProviderSwigBase::addTagToGroup");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -2437,6 +2459,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1012cdb0(void *param_2,uint param_3)
 void __thiscall Recovered_Bulk::FUN_1012cfb0(undefined4 *param_2,undefined4 param_3,undefined4 *param_4)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -2446,12 +2469,10 @@ void __thiscall Recovered_Bulk::FUN_1012cfb0(undefined4 *param_2,undefined4 para
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114dddbb);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 8) != 0) {
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
@@ -2459,7 +2480,7 @@ void __thiscall Recovered_Bulk::FUN_1012cfb0(undefined4 *param_2,undefined4 para
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar4);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)0x0) {
@@ -2471,13 +2492,15 @@ void __thiscall Recovered_Bulk::FUN_1012cfb0(undefined4 *param_2,undefined4 para
     (**(code **)(param_1 + 8))(uVar2,param_3,uVar3);
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCLibAssertionFailureCallback::assertionFailed");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -3098,6 +3121,7 @@ void __fastcall FUN_1012dcd0(int param_1)
 void __thiscall Recovered_Bulk::FUN_1012ddd0(undefined4 *param_2,int *param_3,undefined4 *param_4)
 {
   int param_1 = (int )this;
+ try {
   undefined4 uVar1;
   int *piVar2;
   undefined1 *puVar3;
@@ -3106,13 +3130,11 @@ void __thiscall Recovered_Bulk::FUN_1012ddd0(undefined4 *param_2,int *param_3,un
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114dde32);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (*(int *)(param_1 + 0x2c) != 0) {
     if (param_3 != (int *)0x0) {
       (**(code **)(*param_3 + 4))(local_14);
@@ -3122,7 +3144,7 @@ void __thiscall Recovered_Bulk::FUN_1012ddd0(undefined4 *param_2,int *param_3,un
       puVar3 = (undefined1 *)((undefined1 *)*param_4);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(1);
+
     uVar1 = (undefined4)(thunk_FUN_101a2160());
     piVar2 = (int *)((int *)(**(code **)(param_1 + 0x2c))(param_3,uVar1));
     *param_2 = (undefined4)(piVar2);
@@ -3130,13 +3152,15 @@ void __thiscall Recovered_Bulk::FUN_1012ddd0(undefined4 *param_2,int *param_3,un
       (**(code **)(*piVar2 + 4))();
     }
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createBrowsePickerAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -3146,6 +3170,7 @@ void __thiscall Recovered_Bulk::FUN_1012ddd0(undefined4 *param_2,int *param_3,un
 void __thiscall Recovered_Bulk::FUN_1012df20(undefined4 *param_2,undefined4 *param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   int *piVar3;
@@ -3155,13 +3180,11 @@ void __thiscall Recovered_Bulk::FUN_1012df20(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114ddeb2);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0xc) != 0) {
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
@@ -3169,7 +3192,7 @@ void __thiscall Recovered_Bulk::FUN_1012df20(undefined4 *param_2,undefined4 *par
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
     thunk_FUN_101a1ea0(puVar4);
-    local_8 = (undefined4)(1);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     piVar3 = (int *)((int *)(**(code **)(param_1 + 0xc))(uVar2));
     *param_2 = (undefined4)(piVar3);
@@ -3177,13 +3200,15 @@ void __thiscall Recovered_Bulk::FUN_1012df20(undefined4 *param_2,undefined4 *par
       (**(code **)(*piVar3 + 4))();
     }
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCLibCustomSubWizardCallback::createCustomSubWizard");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -3193,6 +3218,7 @@ void __thiscall Recovered_Bulk::FUN_1012df20(undefined4 *param_2,undefined4 *par
 void __thiscall Recovered_Bulk::FUN_1012e040(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -3203,13 +3229,11 @@ void __thiscall Recovered_Bulk::FUN_1012e040(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114ddf3d);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x5c) != 0) {
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
@@ -3217,7 +3241,7 @@ void __thiscall Recovered_Bulk::FUN_1012e040(undefined4 *param_2,undefined4 *par
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
     thunk_FUN_101a1ea0(puVar5);
-    local_8 = (undefined4)(1);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)0x0) {
@@ -3233,13 +3257,15 @@ void __thiscall Recovered_Bulk::FUN_1012e040(undefined4 *param_2,undefined4 *par
     }
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createCustomUIAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -3249,6 +3275,7 @@ void __thiscall Recovered_Bulk::FUN_1012e040(undefined4 *param_2,undefined4 *par
 void __thiscall Recovered_Bulk::FUN_1012e1d0(undefined4 *param_2,int *param_3)
 {
   int param_1 = (int )this;
+ try {
   code *pcVar1;
   int *piVar2;
   undefined1 local_30 [28];
@@ -3256,14 +3283,12 @@ void __thiscall Recovered_Bulk::FUN_1012e1d0(undefined4 *param_2,int *param_3)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114ddf9e);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
   pcVar1 = (code *)(*(code **)(param_1 + 0x28));
-  local_8 = (undefined4)(0);
+
   if (pcVar1 != (code *)0x0) {
     if (param_3 != (int *)0x0) {
       (**(code **)(*param_3 + 4))(local_14);
@@ -3274,13 +3299,15 @@ void __thiscall Recovered_Bulk::FUN_1012e1d0(undefined4 *param_2,int *param_3)
     if (piVar2 != (int *)0x0) {
       (**(code **)(*piVar2 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayBrowseStackAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -3290,32 +3317,33 @@ void __thiscall Recovered_Bulk::FUN_1012e1d0(undefined4 *param_2,int *param_3)
 void __thiscall Recovered_Bulk::FUN_1012e2b0(undefined4 *param_2,undefined4 param_3)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined1 local_30 [28];
   uint local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114ddffe);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (*(code **)(param_1 + 0x50) != (code *)0x0) {
     piVar1 = (int *)((int *)(**(code **)(param_1 + 0x50))(param_3,local_14));
     *param_2 = (undefined4)(piVar1);
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayCustomControlAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -3325,6 +3353,7 @@ void __thiscall Recovered_Bulk::FUN_1012e2b0(undefined4 *param_2,undefined4 para
 void __thiscall Recovered_Bulk::FUN_1012e380(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4,int *param_5)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -3336,13 +3365,11 @@ void __thiscall Recovered_Bulk::FUN_1012e380(undefined4 *param_2,undefined4 *par
   undefined1 local_834 [2064];
   undefined1 local_24 [28];
   uint local_8;
-  
-  puStack_83c = (undefined1 *)(LAB_114de071);
-  local_840 = (void *)(ExceptionList);
+
   uVar1 = (uint)(DAT_12126b84 ^ (uint)local_834);
-  ExceptionList = (void *)(&local_840);
+
   *param_2 = (undefined4)(0);
-  local_838 = (undefined4)(0);
+
   local_8 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x54) != 0) {
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
@@ -3350,7 +3377,7 @@ void __thiscall Recovered_Bulk::FUN_1012e380(undefined4 *param_2,undefined4 *par
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
     thunk_FUN_101a1ea0(puVar5);
-    local_838 = (undefined4)(1);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)0x0) {
@@ -3369,13 +3396,15 @@ void __thiscall Recovered_Bulk::FUN_1012e380(undefined4 *param_2,undefined4 *par
     }
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_840);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayDatePickerAction");
                     
   _CxxThrowException(local_24,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -3387,6 +3416,7 @@ void __thiscall Recovered_Bulk::FUN_1012e380(undefined4 *param_2,undefined4 *par
             undefined4 *param_9,int *param_10)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -3402,13 +3432,11 @@ void __thiscall Recovered_Bulk::FUN_1012e380(undefined4 *param_2,undefined4 *par
   undefined1 local_1854 [6192];
   undefined1 local_24 [28];
   uint local_8;
-  
-  puStack_185c = (undefined1 *)(LAB_114de11d);
-  local_1860 = (void *)(ExceptionList);
+
   uVar1 = (uint)(DAT_12126b84 ^ (uint)local_1854);
-  ExceptionList = (void *)(&local_1860);
+
   *param_2 = (undefined4)(0);
-  local_1858 = (undefined4)(0);
+
   local_8 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x44) != 0) {
     puVar9 = (undefined1 *)(&DAT_1186d2ee);
@@ -3416,7 +3444,7 @@ void __thiscall Recovered_Bulk::FUN_1012e380(undefined4 *param_2,undefined4 *par
       puVar9 = (undefined1 *)((undefined1 *)*param_3);
     }
     thunk_FUN_101a1ea0(puVar9);
-    local_1858 = (undefined4)(1);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar9 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)0x0) {
@@ -3471,13 +3499,15 @@ void __thiscall Recovered_Bulk::FUN_1012e380(undefined4 *param_2,undefined4 *par
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_1860);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayDualTextInputAction");
                     
   _CxxThrowException(local_24,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -3487,6 +3517,7 @@ void __thiscall Recovered_Bulk::FUN_1012e380(undefined4 *param_2,undefined4 *par
 void __thiscall Recovered_Bulk::FUN_1012e850(undefined4 *param_2,undefined4 *param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   int *piVar3;
@@ -3496,13 +3527,11 @@ void __thiscall Recovered_Bulk::FUN_1012e850(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114de1a2);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x74) != 0) {
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
@@ -3510,7 +3539,7 @@ void __thiscall Recovered_Bulk::FUN_1012e850(undefined4 *param_2,undefined4 *par
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
     thunk_FUN_101a1ea0(puVar4);
-    local_8 = (undefined4)(1);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     piVar3 = (int *)((int *)(**(code **)(param_1 + 0x74))(uVar2));
     *param_2 = (undefined4)(piVar3);
@@ -3518,13 +3547,15 @@ void __thiscall Recovered_Bulk::FUN_1012e850(undefined4 *param_2,undefined4 *par
       (**(code **)(*piVar3 + 4))();
     }
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayHelpSheetAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -3534,6 +3565,7 @@ void __thiscall Recovered_Bulk::FUN_1012e850(undefined4 *param_2,undefined4 *par
 void __thiscall Recovered_Bulk::FUN_1012e970(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -3544,13 +3576,11 @@ void __thiscall Recovered_Bulk::FUN_1012e970(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114de22d);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x24) != 0) {
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
@@ -3558,7 +3588,7 @@ void __thiscall Recovered_Bulk::FUN_1012e970(undefined4 *param_2,undefined4 *par
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
     thunk_FUN_101a1ea0(puVar5);
-    local_8 = (undefined4)(1);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)0x0) {
@@ -3574,13 +3604,15 @@ void __thiscall Recovered_Bulk::FUN_1012e970(undefined4 *param_2,undefined4 *par
     }
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayInfoViewAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -3591,6 +3623,7 @@ void __thiscall Recovered_Bulk::FUN_1012eb00(undefined4 *param_2,undefined4 *par
             undefined4 *param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -3602,13 +3635,11 @@ void __thiscall Recovered_Bulk::FUN_1012eb00(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114de2b8);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x48) != 0) {
     puVar6 = (undefined1 *)(&DAT_1186d2ee);
@@ -3616,7 +3647,7 @@ void __thiscall Recovered_Bulk::FUN_1012eb00(undefined4 *param_2,undefined4 *par
       puVar6 = (undefined1 *)((undefined1 *)*param_3);
     }
     thunk_FUN_101a1ea0(puVar6);
-    local_8 = (undefined4)(1);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar6 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)0x0) {
@@ -3640,13 +3671,15 @@ void __thiscall Recovered_Bulk::FUN_1012eb00(undefined4 *param_2,undefined4 *par
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayIntegerInputAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -3657,6 +3690,7 @@ void __thiscall Recovered_Bulk::FUN_1012eb00(undefined4 *param_2,undefined4 *par
             undefined4 *param_5,undefined4 *param_6,int *param_7,int *param_8,undefined4 param_9)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -3670,13 +3704,11 @@ void __thiscall Recovered_Bulk::FUN_1012eb00(undefined4 *param_2,undefined4 *par
   undefined1 local_1044 [4128];
   undefined1 local_24 [28];
   uint local_8;
-  
-  puStack_104c = (undefined1 *)(LAB_114de347);
-  local_1050 = (void *)(ExceptionList);
+
   uVar1 = (uint)(DAT_12126b84 ^ (uint)local_1044);
-  ExceptionList = (void *)(&local_1050);
+
   *param_2 = (undefined4)(0);
-  local_1048 = (undefined4)(0);
+
   local_8 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x38) != 0) {
     puVar7 = (undefined1 *)(&DAT_1186d2ee);
@@ -3684,7 +3716,7 @@ void __thiscall Recovered_Bulk::FUN_1012eb00(undefined4 *param_2,undefined4 *par
       puVar7 = (undefined1 *)((undefined1 *)*param_3);
     }
     thunk_FUN_101a1ea0(puVar7);
-    local_1048 = (undefined4)(1);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar7 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)0x0) {
@@ -3722,13 +3754,15 @@ void __thiscall Recovered_Bulk::FUN_1012eb00(undefined4 *param_2,undefined4 *par
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_1050);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayMenuAction");
                     
   _CxxThrowException(local_24,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -3740,6 +3774,7 @@ void __thiscall Recovered_Bulk::FUN_1012eb00(undefined4 *param_2,undefined4 *par
             undefined4 param_10,undefined4 *param_11)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -3753,13 +3788,11 @@ void __thiscall Recovered_Bulk::FUN_1012eb00(undefined4 *param_2,undefined4 *par
   undefined1 local_1044 [4128];
   undefined1 local_24 [28];
   uint local_8;
-  
-  puStack_104c = (undefined1 *)(LAB_114de3d7);
-  local_1050 = (void *)(ExceptionList);
+
   uVar1 = (uint)(DAT_12126b84 ^ (uint)local_1044);
-  ExceptionList = (void *)(&local_1050);
+
   *param_2 = (undefined4)(0);
-  local_1048 = (undefined4)(0);
+
   local_8 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x3c) != 0) {
     puVar7 = (undefined1 *)(&DAT_1186d2ee);
@@ -3767,7 +3800,7 @@ void __thiscall Recovered_Bulk::FUN_1012eb00(undefined4 *param_2,undefined4 *par
       puVar7 = (undefined1 *)((undefined1 *)*param_3);
     }
     thunk_FUN_101a1ea0(puVar7);
-    local_1048 = (undefined4)(1);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar7 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)0x0) {
@@ -3806,13 +3839,15 @@ void __thiscall Recovered_Bulk::FUN_1012eb00(undefined4 *param_2,undefined4 *par
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_1050);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayMenuAndTextInputAction");
                     
   _CxxThrowException(local_24,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -3824,6 +3859,7 @@ void __thiscall Recovered_Bulk::FUN_1012f1f0(undefined4 *param_2,undefined4 *par
             undefined1 param_10)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -3834,13 +3870,11 @@ void __thiscall Recovered_Bulk::FUN_1012f1f0(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114de45d);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x18) != 0) {
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
@@ -3848,7 +3882,7 @@ void __thiscall Recovered_Bulk::FUN_1012f1f0(undefined4 *param_2,undefined4 *par
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
     thunk_FUN_101a1ea0(puVar5);
-    local_8 = (undefined4)(1);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     if (param_4 != (int *)0x0) {
       (**(code **)(*param_4 + 4))();
@@ -3868,13 +3902,15 @@ void __thiscall Recovered_Bulk::FUN_1012f1f0(undefined4 *param_2,undefined4 *par
     }
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayMenuPopupAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -3884,6 +3920,7 @@ void __thiscall Recovered_Bulk::FUN_1012f1f0(undefined4 *param_2,undefined4 *par
 void __thiscall Recovered_Bulk::FUN_1012f3b0(undefined4 *param_2,undefined4 *param_3,undefined4 param_4)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   int *piVar3;
@@ -3893,13 +3930,11 @@ void __thiscall Recovered_Bulk::FUN_1012f3b0(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114de4d2);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x1c) != 0) {
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
@@ -3907,7 +3942,7 @@ void __thiscall Recovered_Bulk::FUN_1012f3b0(undefined4 *param_2,undefined4 *par
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
     thunk_FUN_101a1ea0(puVar4);
-    local_8 = (undefined4)(1);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     piVar3 = (int *)((int *)(**(code **)(param_1 + 0x1c))(uVar2,param_4));
     *param_2 = (undefined4)(piVar3);
@@ -3915,13 +3950,15 @@ void __thiscall Recovered_Bulk::FUN_1012f3b0(undefined4 *param_2,undefined4 *par
       (**(code **)(*piVar3 + 4))();
     }
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayMessagePopupAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -3932,6 +3969,7 @@ void __thiscall Recovered_Bulk::FUN_1012f4e0(undefined4 *param_2,undefined4 *par
             undefined4 *param_5,int *param_6)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -3944,13 +3982,11 @@ void __thiscall Recovered_Bulk::FUN_1012f4e0(undefined4 *param_2,undefined4 *par
   undefined1 local_c3c [3096];
   undefined1 local_24 [28];
   uint local_8;
-  
-  puStack_c44 = (undefined1 *)(LAB_114de55c);
-  local_c48 = (void *)(ExceptionList);
+
   uVar1 = (uint)(DAT_12126b84 ^ (uint)local_c3c);
-  ExceptionList = (void *)(&local_c48);
+
   *param_2 = (undefined4)(0);
-  local_c40 = (undefined4)(0);
+
   local_8 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x40) != 0) {
     puVar6 = (undefined1 *)(&DAT_1186d2ee);
@@ -3958,7 +3994,7 @@ void __thiscall Recovered_Bulk::FUN_1012f4e0(undefined4 *param_2,undefined4 *par
       puVar6 = (undefined1 *)((undefined1 *)*param_3);
     }
     thunk_FUN_101a1ea0(puVar6);
-    local_c40 = (undefined4)(1);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar6 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)0x0) {
@@ -3985,13 +4021,15 @@ void __thiscall Recovered_Bulk::FUN_1012f4e0(undefined4 *param_2,undefined4 *par
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_c48);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayTextInputAction");
                     
   _CxxThrowException(local_24,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -4001,6 +4039,7 @@ void __thiscall Recovered_Bulk::FUN_1012f4e0(undefined4 *param_2,undefined4 *par
 void __thiscall Recovered_Bulk::FUN_1012f6e0(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4,int *param_5)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -4012,13 +4051,11 @@ void __thiscall Recovered_Bulk::FUN_1012f6e0(undefined4 *param_2,undefined4 *par
   undefined1 local_834 [2064];
   undefined1 local_24 [28];
   uint local_8;
-  
-  puStack_83c = (undefined1 *)(LAB_114de5d1);
-  local_840 = (void *)(ExceptionList);
+
   uVar1 = (uint)(DAT_12126b84 ^ (uint)local_834);
-  ExceptionList = (void *)(&local_840);
+
   *param_2 = (undefined4)(0);
-  local_838 = (undefined4)(0);
+
   local_8 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x4c) != 0) {
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
@@ -4026,7 +4063,7 @@ void __thiscall Recovered_Bulk::FUN_1012f6e0(undefined4 *param_2,undefined4 *par
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
     thunk_FUN_101a1ea0(puVar5);
-    local_838 = (undefined4)(1);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)0x0) {
@@ -4045,13 +4082,15 @@ void __thiscall Recovered_Bulk::FUN_1012f6e0(undefined4 *param_2,undefined4 *par
     }
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_840);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayTextPaneAction");
                     
   _CxxThrowException(local_24,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -4061,6 +4100,7 @@ void __thiscall Recovered_Bulk::FUN_1012f6e0(undefined4 *param_2,undefined4 *par
 void __thiscall Recovered_Bulk::FUN_1012f890(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4,int *param_5)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -4072,13 +4112,11 @@ void __thiscall Recovered_Bulk::FUN_1012f890(undefined4 *param_2,undefined4 *par
   undefined1 local_834 [2064];
   undefined1 local_24 [28];
   uint local_8;
-  
-  puStack_83c = (undefined1 *)(LAB_114de651);
-  local_840 = (void *)(ExceptionList);
+
   uVar1 = (uint)(DAT_12126b84 ^ (uint)local_834);
-  ExceptionList = (void *)(&local_840);
+
   *param_2 = (undefined4)(0);
-  local_838 = (undefined4)(0);
+
   local_8 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x58) != 0) {
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
@@ -4086,7 +4124,7 @@ void __thiscall Recovered_Bulk::FUN_1012f890(undefined4 *param_2,undefined4 *par
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
     thunk_FUN_101a1ea0(puVar5);
-    local_838 = (undefined4)(1);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)0x0) {
@@ -4105,13 +4143,15 @@ void __thiscall Recovered_Bulk::FUN_1012f890(undefined4 *param_2,undefined4 *par
     }
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_840);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayTimePickerAction");
                     
   _CxxThrowException(local_24,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -4121,6 +4161,7 @@ void __thiscall Recovered_Bulk::FUN_1012f890(undefined4 *param_2,undefined4 *par
 void __thiscall Recovered_Bulk::FUN_1012fa40(undefined4 *param_2,int *param_3)
 {
   int param_1 = (int )this;
+ try {
   code *pcVar1;
   int *piVar2;
   undefined1 local_30 [28];
@@ -4128,14 +4169,12 @@ void __thiscall Recovered_Bulk::FUN_1012fa40(undefined4 *param_2,int *param_3)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114de6be);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
   pcVar1 = (code *)(*(code **)(param_1 + 0x34));
-  local_8 = (undefined4)(0);
+
   if (pcVar1 != (code *)0x0) {
     if (param_3 != (int *)0x0) {
       (**(code **)(*param_3 + 4))(local_14);
@@ -4146,13 +4185,15 @@ void __thiscall Recovered_Bulk::FUN_1012fa40(undefined4 *param_2,int *param_3)
     if (piVar2 != (int *)0x0) {
       (**(code **)(*piVar2 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayWizardAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -4162,6 +4203,7 @@ void __thiscall Recovered_Bulk::FUN_1012fa40(undefined4 *param_2,int *param_3)
 void __thiscall Recovered_Bulk::FUN_1012fb20(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -4172,13 +4214,11 @@ void __thiscall Recovered_Bulk::FUN_1012fb20(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114de73d);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x70) != 0) {
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
@@ -4186,7 +4226,7 @@ void __thiscall Recovered_Bulk::FUN_1012fb20(undefined4 *param_2,undefined4 *par
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
     thunk_FUN_101a1ea0(puVar5);
-    local_8 = (undefined4)(1);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)0x0) {
@@ -4202,13 +4242,15 @@ void __thiscall Recovered_Bulk::FUN_1012fb20(undefined4 *param_2,undefined4 *par
     }
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createInlineControllerUpdateAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -4218,6 +4260,7 @@ void __thiscall Recovered_Bulk::FUN_1012fb20(undefined4 *param_2,undefined4 *par
 void __thiscall Recovered_Bulk::FUN_1012fcb0(undefined4 *param_2,undefined4 *param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   int *piVar3;
@@ -4227,13 +4270,11 @@ void __thiscall Recovered_Bulk::FUN_1012fcb0(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114de7b2);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x78) != 0) {
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
@@ -4241,7 +4282,7 @@ void __thiscall Recovered_Bulk::FUN_1012fcb0(undefined4 *param_2,undefined4 *par
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
     thunk_FUN_101a1ea0(puVar4);
-    local_8 = (undefined4)(1);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     piVar3 = (int *)((int *)(**(code **)(param_1 + 0x78))(uVar2));
     *param_2 = (undefined4)(piVar3);
@@ -4249,13 +4290,15 @@ void __thiscall Recovered_Bulk::FUN_1012fcb0(undefined4 *param_2,undefined4 *par
       (**(code **)(*piVar3 + 4))();
     }
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createModalSettingsMenuAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -4265,6 +4308,7 @@ void __thiscall Recovered_Bulk::FUN_1012fcb0(undefined4 *param_2,undefined4 *par
 void __thiscall Recovered_Bulk::FUN_1012fdd0(undefined4 *param_2,undefined4 param_3,int *param_4)
 {
   int param_1 = (int )this;
+ try {
   code *pcVar1;
   int *piVar2;
   undefined1 local_30 [28];
@@ -4272,14 +4316,12 @@ void __thiscall Recovered_Bulk::FUN_1012fdd0(undefined4 *param_2,undefined4 para
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114de81e);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
   pcVar1 = (code *)(*(code **)(param_1 + 0xc));
-  local_8 = (undefined4)(0);
+
   if (pcVar1 != (code *)0x0) {
     if (param_4 != (int *)0x0) {
       (**(code **)(*param_4 + 4))(local_14);
@@ -4290,13 +4332,15 @@ void __thiscall Recovered_Bulk::FUN_1012fdd0(undefined4 *param_2,undefined4 para
     if (piVar2 != (int *)0x0) {
       (**(code **)(*piVar2 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createNavigationAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -4306,6 +4350,7 @@ void __thiscall Recovered_Bulk::FUN_1012fdd0(undefined4 *param_2,undefined4 para
 void __thiscall Recovered_Bulk::FUN_1012fec0(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -4316,13 +4361,11 @@ void __thiscall Recovered_Bulk::FUN_1012fec0(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114de89d);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x6c) != 0) {
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
@@ -4330,7 +4373,7 @@ void __thiscall Recovered_Bulk::FUN_1012fec0(undefined4 *param_2,undefined4 *par
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
     thunk_FUN_101a1ea0(puVar5);
-    local_8 = (undefined4)(1);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)0x0) {
@@ -4346,13 +4389,15 @@ void __thiscall Recovered_Bulk::FUN_1012fec0(undefined4 *param_2,undefined4 *par
     }
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createOpenURIAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -4362,32 +4407,33 @@ void __thiscall Recovered_Bulk::FUN_1012fec0(undefined4 *param_2,undefined4 *par
 void __thiscall Recovered_Bulk::FUN_10130050(undefined4 *param_2,undefined4 param_3)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined1 local_30 [28];
   uint local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114de8fe);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (*(code **)(param_1 + 0x68) != (code *)0x0) {
     piVar1 = (int *)((int *)(**(code **)(param_1 + 0x68))(param_3,local_14));
     *param_2 = (undefined4)(piVar1);
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createPopBrowseAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -4397,32 +4443,33 @@ void __thiscall Recovered_Bulk::FUN_10130050(undefined4 *param_2,undefined4 para
 void __thiscall Recovered_Bulk::FUN_10130120(undefined4 *param_2,undefined4 param_3,undefined4 param_4)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined1 local_30 [28];
   uint local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114de95e);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (*(code **)(param_1 + 100) != (code *)0x0) {
     piVar1 = (int *)((int *)(**(code **)(param_1 + 100))(param_3,param_4,local_14));
     *param_2 = (undefined4)(piVar1);
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createPresentAlarmInterfaceAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -4433,6 +4480,7 @@ void __thiscall Recovered_Bulk::FUN_101301f0(undefined4 *param_2,undefined4 *par
             undefined1 param_5)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -4443,13 +4491,11 @@ void __thiscall Recovered_Bulk::FUN_101301f0(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114de9dd);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x20) != 0) {
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
@@ -4457,7 +4503,7 @@ void __thiscall Recovered_Bulk::FUN_101301f0(undefined4 *param_2,undefined4 *par
       puVar5 = (undefined1 *)((undefined1 *)*param_3);
     }
     thunk_FUN_101a1ea0(puVar5);
-    local_8 = (undefined4)(1);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_4 != (undefined1 *)0x0) {
@@ -4473,13 +4519,15 @@ void __thiscall Recovered_Bulk::FUN_101301f0(undefined4 *param_2,undefined4 *par
     }
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createPushSCUriAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -4489,6 +4537,7 @@ void __thiscall Recovered_Bulk::FUN_101301f0(undefined4 *param_2,undefined4 *par
 void __thiscall Recovered_Bulk::FUN_10130380(undefined4 *param_2,int *param_3)
 {
   int param_1 = (int )this;
+ try {
   code *pcVar1;
   int *piVar2;
   undefined1 local_30 [28];
@@ -4496,14 +4545,12 @@ void __thiscall Recovered_Bulk::FUN_10130380(undefined4 *param_2,int *param_3)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114dea3e);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
   pcVar1 = (code *)(*(code **)(param_1 + 0x10));
-  local_8 = (undefined4)(0);
+
   if (pcVar1 != (code *)0x0) {
     if (param_3 != (int *)0x0) {
       (**(code **)(*param_3 + 4))(local_14);
@@ -4514,13 +4561,15 @@ void __thiscall Recovered_Bulk::FUN_10130380(undefined4 *param_2,int *param_3)
     if (piVar2 != (int *)0x0) {
       (**(code **)(*piVar2 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createRunAsyncIOOperationAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -4530,6 +4579,7 @@ void __thiscall Recovered_Bulk::FUN_10130380(undefined4 *param_2,int *param_3)
 void __thiscall Recovered_Bulk::FUN_10130460(undefined4 *param_2,int *param_3,undefined1 *param_4)
 {
   int param_1 = (int )this;
+ try {
   undefined4 uVar1;
   int *piVar2;
   undefined1 *puVar3;
@@ -4538,12 +4588,9 @@ void __thiscall Recovered_Bulk::FUN_10130460(undefined4 *param_2,int *param_3,un
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114deaba);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(1);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
   if (*(int *)(param_1 + 0x14) != 0) {
     if (param_3 != (int *)0x0) {
@@ -4562,15 +4609,17 @@ void __thiscall Recovered_Bulk::FUN_10130460(undefined4 *param_2,int *param_3,un
       (**(code **)(*piVar2 + 4))();
     }
     thunk_FUN_101a2000();
-    local_8 = (undefined4)(3);
+
     ((SCStr *)((SCStr *)&param_4))->int_release();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createRunAsyncIOOperationActionWithMessage");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -4581,6 +4630,7 @@ void __thiscall Recovered_Bulk::FUN_101305b0(undefined4 *param_2,undefined1 para
             undefined4 param_5,undefined4 param_6)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   int *piVar3;
@@ -4590,13 +4640,11 @@ void __thiscall Recovered_Bulk::FUN_101305b0(undefined4 *param_2,undefined1 para
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114deb32);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x60) != 0) {
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
@@ -4604,7 +4652,7 @@ void __thiscall Recovered_Bulk::FUN_101305b0(undefined4 *param_2,undefined1 para
       puVar4 = (undefined1 *)((undefined1 *)*param_4);
     }
     thunk_FUN_101a1ea0(puVar4);
-    local_8 = (undefined4)(1);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     piVar3 = (int *)((int *)(**(code **)(param_1 + 0x60))(param_3,uVar2,param_5,param_6));
     *param_2 = (undefined4)(piVar3);
@@ -4612,13 +4660,15 @@ void __thiscall Recovered_Bulk::FUN_101305b0(undefined4 *param_2,undefined1 para
       (**(code **)(*piVar3 + 4))();
     }
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createScheduleAlarmMonitorAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -4628,6 +4678,7 @@ void __thiscall Recovered_Bulk::FUN_101305b0(undefined4 *param_2,undefined1 para
 void __thiscall Recovered_Bulk::FUN_101306e0(undefined4 *param_2,int *param_3)
 {
   int param_1 = (int )this;
+ try {
   code *pcVar1;
   int *piVar2;
   undefined1 local_30 [28];
@@ -4635,14 +4686,12 @@ void __thiscall Recovered_Bulk::FUN_101306e0(undefined4 *param_2,int *param_3)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114deb9e);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
   pcVar1 = (code *)(*(code **)(param_1 + 0x30));
-  local_8 = (undefined4)(0);
+
   if (pcVar1 != (code *)0x0) {
     if (param_3 != (int *)0x0) {
       (**(code **)(*param_3 + 4))(local_14);
@@ -4653,13 +4702,15 @@ void __thiscall Recovered_Bulk::FUN_101306e0(undefined4 *param_2,int *param_3)
     if (piVar2 != (int *)0x0) {
       (**(code **)(*piVar2 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIActionFactorySwigBase::createSummonNewWizAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -4753,6 +4804,7 @@ void __fastcall FUN_101312f0(int param_1)
 void __thiscall Recovered_Bulk::FUN_10131350(int *param_2,undefined4 *param_3)
 {
   int param_1 = (int )this;
+ try {
   undefined4 uVar1;
   undefined1 *puVar2;
   undefined1 local_30 [28];
@@ -4760,12 +4812,10 @@ void __thiscall Recovered_Bulk::FUN_10131350(int *param_2,undefined4 *param_3)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114debf0);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  local_14 = (uint)(DAT_12126b84);
+
   if (*(int *)(param_1 + 0xc) != 0) {
     if (param_2 != (int *)0x0) {
       (**(code **)(*param_2 + 4))(local_14);
@@ -4775,17 +4825,19 @@ void __thiscall Recovered_Bulk::FUN_10131350(int *param_2,undefined4 *param_3)
       puVar2 = (undefined1 *)((undefined1 *)*param_3);
     }
     thunk_FUN_101a1ea0(puVar2);
-    local_8 = (undefined4)(0);
+
     uVar1 = (undefined4)(thunk_FUN_101a2160());
     (**(code **)(param_1 + 0xc))(param_2,uVar1);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIEventSinkSwigBase::dispatchEvent");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -4960,6 +5012,7 @@ void __thiscall Recovered_Bulk::FUN_10131710(int *param_2,int *param_3)
 void __thiscall Recovered_Bulk::FUN_101317a0(int *param_2,undefined1 *param_3)
 {
   int param_1 = (int )this;
+ try {
   undefined4 uVar1;
   undefined1 *puVar2;
   undefined1 local_30 [28];
@@ -4967,12 +5020,9 @@ void __thiscall Recovered_Bulk::FUN_101317a0(int *param_2,undefined1 *param_3)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114dec48);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
+  local_14 = (uint)(DAT_12126b84);
+
   if (*(int *)(param_1 + 0x10) != 0) {
     if (param_2 != (int *)0x0) {
       (**(code **)(*param_2 + 4))(local_14);
@@ -4986,15 +5036,17 @@ void __thiscall Recovered_Bulk::FUN_101317a0(int *param_2,undefined1 *param_3)
     uVar1 = (undefined4)(thunk_FUN_101a2160());
     (**(code **)(param_1 + 0x10))(param_2,uVar1);
     thunk_FUN_101a2000();
-    local_8 = (undefined4)(2);
+
     ((SCStr *)((SCStr *)&param_3))->int_release();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIMusicServerDelegateSwigBase::fillImageBytes");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -5004,6 +5056,7 @@ void __thiscall Recovered_Bulk::FUN_101317a0(int *param_2,undefined1 *param_3)
 void __thiscall Recovered_Bulk::FUN_10131970(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
@@ -5012,13 +5065,11 @@ void __thiscall Recovered_Bulk::FUN_10131970(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114ded0e);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   uVar3 = (undefined4)(1);
   if (*(code **)(param_1 + 0x28) != (code *)0x0) {
     puVar2 = (undefined4 *)(param_2);
@@ -5027,13 +5078,15 @@ void __thiscall Recovered_Bulk::FUN_10131970(undefined4 *param_2)
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
   thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getActions");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -5106,6 +5159,7 @@ void __fastcall FUN_101323d0(int param_1)
 void __thiscall Recovered_Bulk::FUN_10132430(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -5114,12 +5168,10 @@ void __thiscall Recovered_Bulk::FUN_10132430(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114df060);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0xc) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -5127,17 +5179,19 @@ void __thiscall Recovered_Bulk::FUN_10132430(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0xc))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIServiceAppInteropSwigBase::getAppInstallState");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -5189,6 +5243,7 @@ void __fastcall FUN_10132640(int param_1)
 void __thiscall Recovered_Bulk::FUN_101329e0(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
@@ -5197,13 +5252,11 @@ void __thiscall Recovered_Bulk::FUN_101329e0(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114df29e);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   uVar3 = (undefined4)(1);
   if (*(code **)(param_1 + 0x90) != (code *)0x0) {
     puVar2 = (undefined4 *)(param_2);
@@ -5212,13 +5265,15 @@ void __thiscall Recovered_Bulk::FUN_101329e0(undefined4 *param_2)
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
   thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getAttributes");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -5270,6 +5325,7 @@ void __fastcall FUN_10132b10(int param_1)
 void __thiscall Recovered_Bulk::FUN_10132ca0(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -5278,12 +5334,10 @@ void __thiscall Recovered_Bulk::FUN_10132ca0(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114df370);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0xc) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -5291,17 +5345,19 @@ void __thiscall Recovered_Bulk::FUN_10132ca0(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0xc))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::getBoolValue");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -5332,6 +5388,7 @@ void __thiscall Recovered_Bulk::FUN_10132e60(undefined4 param_2)
 void __thiscall Recovered_Bulk::FUN_10132ec0(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
@@ -5340,13 +5397,11 @@ void __thiscall Recovered_Bulk::FUN_10132ec0(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114df42e);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   uVar3 = (undefined4)(1);
   if (*(code **)(param_1 + 0x10) != (code *)0x0) {
     puVar2 = (undefined4 *)(param_2);
@@ -5355,13 +5410,15 @@ void __thiscall Recovered_Bulk::FUN_10132ec0(undefined4 *param_2)
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
   thunk_FUN_10118fc0("SCIUrlConnectionSwigBase::getCallback");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -5371,6 +5428,7 @@ void __thiscall Recovered_Bulk::FUN_10132ec0(undefined4 *param_2)
 void __thiscall Recovered_Bulk::FUN_10132f80(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
@@ -5379,13 +5437,11 @@ void __thiscall Recovered_Bulk::FUN_10132f80(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114df48e);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   uVar3 = (undefined4)(1);
   if (*(code **)(param_1 + 0xc) != (code *)0x0) {
     puVar2 = (undefined4 *)(param_2);
@@ -5394,13 +5450,15 @@ void __thiscall Recovered_Bulk::FUN_10132f80(undefined4 *param_2)
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
   thunk_FUN_10118fc0("SCILocalMusicSearchableDelegateSwigBase::getCategoryIDs");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -5431,6 +5489,7 @@ void __fastcall FUN_10133110(int param_1)
 void __thiscall Recovered_Bulk::FUN_10133170(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
@@ -5439,13 +5498,11 @@ void __thiscall Recovered_Bulk::FUN_10133170(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114df54e);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   uVar3 = (undefined4)(1);
   if (*(code **)(param_1 + 0xa8) != (code *)0x0) {
     puVar2 = (undefined4 *)(param_2);
@@ -5454,13 +5511,15 @@ void __thiscall Recovered_Bulk::FUN_10133170(undefined4 *param_2)
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
   thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getChildDataSource");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -5470,6 +5529,7 @@ void __thiscall Recovered_Bulk::FUN_10133170(undefined4 *param_2)
 void __thiscall Recovered_Bulk::FUN_10133310(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
@@ -5478,13 +5538,11 @@ void __thiscall Recovered_Bulk::FUN_10133310(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114df60e);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   uVar3 = (undefined4)(1);
   if (*(code **)(param_1 + 0xc) != (code *)0x0) {
     puVar2 = (undefined4 *)(param_2);
@@ -5493,13 +5551,15 @@ void __thiscall Recovered_Bulk::FUN_10133310(undefined4 *param_2)
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
   thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::getConnectedDevices");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -5551,6 +5611,7 @@ void __fastcall FUN_10133440(int param_1)
 void __thiscall Recovered_Bulk::FUN_10133cc0(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -5559,12 +5620,10 @@ void __thiscall Recovered_Bulk::FUN_10133cc0(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114dfa20);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x24) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -5572,17 +5631,19 @@ void __thiscall Recovered_Bulk::FUN_10133cc0(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x24))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::getDoubleValue");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -5676,6 +5737,7 @@ void __fastcall FUN_10133ee0(int param_1)
 void __thiscall Recovered_Bulk::FUN_10133f40(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
@@ -5684,13 +5746,11 @@ void __thiscall Recovered_Bulk::FUN_10133f40(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114dfa7e);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   uVar3 = (undefined4)(1);
   if (*(code **)(param_1 + 0x2c) != (code *)0x0) {
     puVar2 = (undefined4 *)(param_2);
@@ -5699,13 +5759,15 @@ void __thiscall Recovered_Bulk::FUN_10133f40(undefined4 *param_2)
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
   thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::getExperiments");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -5715,6 +5777,7 @@ void __thiscall Recovered_Bulk::FUN_10133f40(undefined4 *param_2)
 void __thiscall Recovered_Bulk::FUN_10134000(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
@@ -5723,13 +5786,11 @@ void __thiscall Recovered_Bulk::FUN_10134000(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114dfade);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   uVar3 = (undefined4)(1);
   if (*(code **)(param_1 + 0xbc) != (code *)0x0) {
     puVar2 = (undefined4 *)(param_2);
@@ -5738,13 +5799,15 @@ void __thiscall Recovered_Bulk::FUN_10134000(undefined4 *param_2)
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
   thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getExtension");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -5754,6 +5817,7 @@ void __thiscall Recovered_Bulk::FUN_10134000(undefined4 *param_2)
 void __thiscall Recovered_Bulk::FUN_101340d0(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4,int *param_5)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -5765,12 +5829,10 @@ void __thiscall Recovered_Bulk::FUN_101340d0(undefined4 *param_2,undefined4 *par
   undefined1 local_c3c [3096];
   undefined1 local_24 [28];
   uint local_8;
-  
-  local_c40 = (undefined4)(0xffffffff);
-  puStack_c44 = (undefined1 *)(LAB_114dfb43);
-  local_c48 = (void *)(ExceptionList);
+
+
   uVar1 = (uint)(DAT_12126b84 ^ (uint)local_c3c);
-  ExceptionList = (void *)(&local_c48);
+
   local_8 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x20) != 0) {
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
@@ -5778,7 +5840,7 @@ void __thiscall Recovered_Bulk::FUN_101340d0(undefined4 *param_2,undefined4 *par
       puVar5 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar5);
-    local_c40 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)0x0) {
@@ -5801,13 +5863,15 @@ void __thiscall Recovered_Bulk::FUN_101340d0(undefined4 *param_2,undefined4 *par
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_c48);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::getFeatureVariableDouble");
                     
   _CxxThrowException(local_24,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -5817,6 +5881,7 @@ void __thiscall Recovered_Bulk::FUN_101340d0(undefined4 *param_2,undefined4 *par
 void __thiscall Recovered_Bulk::FUN_10134290(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4,int *param_5)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -5827,12 +5892,10 @@ void __thiscall Recovered_Bulk::FUN_10134290(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114dfba6);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x1c) != 0) {
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
@@ -5840,7 +5903,7 @@ void __thiscall Recovered_Bulk::FUN_10134290(undefined4 *param_2,undefined4 *par
       puVar5 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar5);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)0x0) {
@@ -5863,13 +5926,15 @@ void __thiscall Recovered_Bulk::FUN_10134290(undefined4 *param_2,undefined4 *par
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::getFeatureVariableInteger");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -5879,6 +5944,7 @@ void __thiscall Recovered_Bulk::FUN_10134290(undefined4 *param_2,undefined4 *par
 void __thiscall Recovered_Bulk::FUN_10134660(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
@@ -5887,13 +5953,11 @@ void __thiscall Recovered_Bulk::FUN_10134660(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114dfc8e);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   uVar3 = (undefined4)(1);
   if (*(code **)(param_1 + 0x28) != (code *)0x0) {
     puVar2 = (undefined4 *)(param_2);
@@ -5902,13 +5966,15 @@ void __thiscall Recovered_Bulk::FUN_10134660(undefined4 *param_2)
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
   thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::getFeatures");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -5918,6 +5984,7 @@ void __thiscall Recovered_Bulk::FUN_10134660(undefined4 *param_2)
 void __thiscall Recovered_Bulk::FUN_10134720(undefined4 *param_2,int *param_3)
 {
   int param_1 = (int )this;
+ try {
   code *pcVar1;
   int *piVar2;
   undefined1 local_30 [28];
@@ -5925,14 +5992,12 @@ void __thiscall Recovered_Bulk::FUN_10134720(undefined4 *param_2,int *param_3)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114dfcee);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
   pcVar1 = (code *)(*(code **)(param_1 + 0x2c));
-  local_8 = (undefined4)(0);
+
   if (pcVar1 != (code *)0x0) {
     if (param_3 != (int *)0x0) {
       (**(code **)(*param_3 + 4))(local_14);
@@ -5943,13 +6008,15 @@ void __thiscall Recovered_Bulk::FUN_10134720(undefined4 *param_2,int *param_3)
     if (piVar2 != (int *)0x0) {
       (**(code **)(*piVar2 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getFilteredActions");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -6022,6 +6089,7 @@ void __fastcall FUN_10134b60(int param_1)
 void __thiscall Recovered_Bulk::FUN_10134d60(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -6030,12 +6098,10 @@ void __thiscall Recovered_Bulk::FUN_10134d60(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114dff20);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x18) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -6043,17 +6109,19 @@ void __thiscall Recovered_Bulk::FUN_10134d60(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x18))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::getIntegerValue");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -6063,6 +6131,7 @@ void __thiscall Recovered_Bulk::FUN_10134d60(undefined4 *param_2)
 undefined4 * FUN_10134e40(undefined4 *param_1,undefined4 *param_2)
 
 {
+ try {
   uint uVar1;
   undefined4 *puVar2;
   int *piVar3;
@@ -6073,16 +6142,15 @@ undefined4 * FUN_10134e40(undefined4 *param_1,undefined4 *param_2)
   undefined4 local_8;
   
   puVar2 = (undefined4 *)(param_2);
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114dff7d);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   piVar3 = (int *)((int *)0x0);
   local_14 = (int *)((int *)0x0);
   if (param_2 != (undefined4 *)0x0) {
     ((SCStr *)((SCStr *)&param_2))->int_allocRep("SCINowPlaying");
-    local_8 = (undefined4)(0);
+
     puVar2 = (undefined4 *)((undefined4 *)(**(code **)*puVar2)(&local_18,&param_2));
     piVar3 = (int *)((int *)*puVar2);
     *puVar2 = (undefined4)(0);
@@ -6091,21 +6159,23 @@ undefined4 * FUN_10134e40(undefined4 *param_1,undefined4 *param_2)
     if (local_18 != (int *)0x0) {
       (**(code **)(*local_18 + 8))();
     }
-    local_8 = (undefined4)(3);
+
     ((SCStr *)((SCStr *)&param_2))->int_release();
     param_2 = (undefined4 *)((undefined4 *)0x0);
   }
-  local_8 = (undefined4)(4);
+
   *param_1 = (undefined4)(piVar3);
   if (piVar3 != (int *)0x0) {
     (**(code **)(*piVar3 + 4))(uVar1);
   }
-  local_8 = (undefined4)(5);
+
   if (piVar3 != (int *)0x0) {
     (**(code **)(*piVar3 + 8))();
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4 *)(param_1);
+
+ } catch (...) { }
 }
 
 
@@ -6115,6 +6185,7 @@ undefined4 * FUN_10134e40(undefined4 *param_1,undefined4 *param_2)
 undefined4 * FUN_10134f40(undefined4 *param_1,undefined4 *param_2)
 
 {
+ try {
   uint uVar1;
   undefined4 *puVar2;
   int *piVar3;
@@ -6125,16 +6196,15 @@ undefined4 * FUN_10134f40(undefined4 *param_1,undefined4 *param_2)
   undefined4 local_8;
   
   puVar2 = (undefined4 *)(param_2);
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114dffcd);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   piVar3 = (int *)((int *)0x0);
   local_14 = (int *)((int *)0x0);
   if (param_2 != (undefined4 *)0x0) {
     ((SCStr *)((SCStr *)&param_2))->int_allocRep("SCISystem");
-    local_8 = (undefined4)(0);
+
     puVar2 = (undefined4 *)((undefined4 *)(**(code **)*puVar2)(&local_18,&param_2));
     piVar3 = (int *)((int *)*puVar2);
     *puVar2 = (undefined4)(0);
@@ -6143,21 +6213,23 @@ undefined4 * FUN_10134f40(undefined4 *param_1,undefined4 *param_2)
     if (local_18 != (int *)0x0) {
       (**(code **)(*local_18 + 8))();
     }
-    local_8 = (undefined4)(3);
+
     ((SCStr *)((SCStr *)&param_2))->int_release();
     param_2 = (undefined4 *)((undefined4 *)0x0);
   }
-  local_8 = (undefined4)(4);
+
   *param_1 = (undefined4)(piVar3);
   if (piVar3 != (int *)0x0) {
     (**(code **)(*piVar3 + 4))(uVar1);
   }
-  local_8 = (undefined4)(5);
+
   if (piVar3 != (int *)0x0) {
     (**(code **)(*piVar3 + 8))();
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4 *)(param_1);
+
+ } catch (...) { }
 }
 
 
@@ -6167,6 +6239,7 @@ undefined4 * FUN_10134f40(undefined4 *param_1,undefined4 *param_2)
 undefined4 * FUN_10135040(undefined4 *param_1,undefined4 *param_2)
 
 {
+ try {
   uint uVar1;
   undefined4 *puVar2;
   int *piVar3;
@@ -6177,16 +6250,15 @@ undefined4 * FUN_10135040(undefined4 *param_1,undefined4 *param_2)
   undefined4 local_8;
   
   puVar2 = (undefined4 *)(param_2);
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e001d);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   piVar3 = (int *)((int *)0x0);
   local_14 = (int *)((int *)0x0);
   if (param_2 != (undefined4 *)0x0) {
     ((SCStr *)((SCStr *)&param_2))->int_allocRep("SCIZoneGroupMgr");
-    local_8 = (undefined4)(0);
+
     puVar2 = (undefined4 *)((undefined4 *)(**(code **)*puVar2)(&local_18,&param_2));
     piVar3 = (int *)((int *)*puVar2);
     *puVar2 = (undefined4)(0);
@@ -6195,21 +6267,23 @@ undefined4 * FUN_10135040(undefined4 *param_1,undefined4 *param_2)
     if (local_18 != (int *)0x0) {
       (**(code **)(*local_18 + 8))();
     }
-    local_8 = (undefined4)(3);
+
     ((SCStr *)((SCStr *)&param_2))->int_release();
     param_2 = (undefined4 *)((undefined4 *)0x0);
   }
-  local_8 = (undefined4)(4);
+
   *param_1 = (undefined4)(piVar3);
   if (piVar3 != (int *)0x0) {
     (**(code **)(*piVar3 + 4))(uVar1);
   }
-  local_8 = (undefined4)(5);
+
   if (piVar3 != (int *)0x0) {
     (**(code **)(*piVar3 + 8))();
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4 *)(param_1);
+
+ } catch (...) { }
 }
 
 
@@ -6219,32 +6293,33 @@ undefined4 * FUN_10135040(undefined4 *param_1,undefined4 *param_2)
 void __thiscall Recovered_Bulk::FUN_10135210(undefined4 *param_2,undefined4 param_3)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined1 local_30 [28];
   uint local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e00ce);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (*(code **)(param_1 + 0x10) != (code *)0x0) {
     piVar1 = (int *)((int *)(**(code **)(param_1 + 0x10))(param_3,local_14));
     *param_2 = (undefined4)(piVar1);
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCILocalMediaCollectionSwigBase::getItemAt");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -6296,6 +6371,7 @@ void __fastcall FUN_10135340(int param_1)
 void __thiscall Recovered_Bulk::FUN_101353a0(undefined4 *param_2,undefined1 *param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   int *piVar3;
@@ -6305,12 +6381,9 @@ void __thiscall Recovered_Bulk::FUN_101353a0(undefined4 *param_2,undefined1 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e014a);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(1);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x14) != 0) {
@@ -6327,15 +6400,17 @@ void __thiscall Recovered_Bulk::FUN_101353a0(undefined4 *param_2,undefined1 *par
       (**(code **)(*piVar3 + 4))();
     }
     thunk_FUN_101a2000();
-    local_8 = (undefined4)(3);
+
     ((SCStr *)((SCStr *)&param_3))->int_release();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIMusicServerBrowseDelegateSwigBase::getLocalMediaCollectionForId");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -6345,6 +6420,7 @@ void __thiscall Recovered_Bulk::FUN_101353a0(undefined4 *param_2,undefined1 *par
 void __thiscall Recovered_Bulk::FUN_101354d0(undefined4 *param_2,undefined1 *param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   int *piVar3;
@@ -6354,12 +6430,9 @@ void __thiscall Recovered_Bulk::FUN_101354d0(undefined4 *param_2,undefined1 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e01ca);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(1);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x10) != 0) {
@@ -6376,15 +6449,17 @@ void __thiscall Recovered_Bulk::FUN_101354d0(undefined4 *param_2,undefined1 *par
       (**(code **)(*piVar3 + 4))();
     }
     thunk_FUN_101a2000();
-    local_8 = (undefined4)(3);
+
     ((SCStr *)((SCStr *)&param_3))->int_release();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIMusicServerBrowseDelegateSwigBase::getLocalMusicItemInfoForId");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -6394,6 +6469,7 @@ void __thiscall Recovered_Bulk::FUN_101354d0(undefined4 *param_2,undefined1 *par
 void __thiscall Recovered_Bulk::FUN_10135600(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
@@ -6402,13 +6478,11 @@ void __thiscall Recovered_Bulk::FUN_10135600(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e022e);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   uVar3 = (undefined4)(1);
   if (*(code **)(param_1 + 0x20) != (code *)0x0) {
     puVar2 = (undefined4 *)(param_2);
@@ -6417,13 +6491,15 @@ void __thiscall Recovered_Bulk::FUN_10135600(undefined4 *param_2)
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
   thunk_FUN_10118fc0("SCIMusicServerBrowseDelegateSwigBase::getLocalMusicSearchableDelegate");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -6454,6 +6530,7 @@ void __fastcall FUN_10135790(int param_1)
 void __thiscall Recovered_Bulk::FUN_10135b30(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
@@ -6462,13 +6539,11 @@ void __thiscall Recovered_Bulk::FUN_10135b30(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e046e);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   uVar3 = (undefined4)(1);
   if (*(code **)(param_1 + 0x20) != (code *)0x0) {
     puVar2 = (undefined4 *)(param_2);
@@ -6477,13 +6552,15 @@ void __thiscall Recovered_Bulk::FUN_10135b30(undefined4 *param_2)
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
   thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getMoreMenuDataSource");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -6493,6 +6570,7 @@ void __thiscall Recovered_Bulk::FUN_10135b30(undefined4 *param_2)
 void __thiscall Recovered_Bulk::FUN_10135bf0(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
@@ -6501,13 +6579,11 @@ void __thiscall Recovered_Bulk::FUN_10135bf0(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e04ce);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   uVar3 = (undefined4)(1);
   if (*(code **)(param_1 + 0x1c) != (code *)0x0) {
     puVar2 = (undefined4 *)(param_2);
@@ -6516,13 +6592,15 @@ void __thiscall Recovered_Bulk::FUN_10135bf0(undefined4 *param_2)
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
   thunk_FUN_10118fc0("SCIMusicServerDelegateSwigBase::getMusicServerBrowseDelegate");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -6616,6 +6694,7 @@ void __fastcall FUN_101360b0(int param_1)
 void __thiscall Recovered_Bulk::FUN_101367b0(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
@@ -6624,13 +6703,11 @@ void __thiscall Recovered_Bulk::FUN_101367b0(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e092e);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   uVar3 = (undefined4)(1);
   if (*(code **)(param_1 + 0xc) != (code *)0x0) {
     puVar2 = (undefined4 *)(param_2);
@@ -6639,13 +6716,15 @@ void __thiscall Recovered_Bulk::FUN_101367b0(undefined4 *param_2)
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
   thunk_FUN_10118fc0("SCIPlatformDateTimeProvider::getPlatformDateTime");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -6676,6 +6755,7 @@ void __fastcall FUN_10136a70(int param_1)
 void __thiscall Recovered_Bulk::FUN_10136c70(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
@@ -6684,13 +6764,11 @@ void __thiscall Recovered_Bulk::FUN_10136c70(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e0b2e);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   uVar3 = (undefined4)(1);
   if (*(code **)(param_1 + 0x30) != (code *)0x0) {
     puVar2 = (undefined4 *)(param_2);
@@ -6699,13 +6777,15 @@ void __thiscall Recovered_Bulk::FUN_10136c70(undefined4 *param_2)
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
   thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::getPropertyBag");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -6736,6 +6816,7 @@ void __fastcall FUN_10136d30(int param_1)
 void __thiscall Recovered_Bulk::FUN_10136d90(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
@@ -6744,13 +6825,11 @@ void __thiscall Recovered_Bulk::FUN_10136d90(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e0b8e);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   uVar3 = (undefined4)(1);
   if (*(code **)(param_1 + 0xc) != (code *)0x0) {
     puVar2 = (undefined4 *)(param_2);
@@ -6759,13 +6838,15 @@ void __thiscall Recovered_Bulk::FUN_10136d90(undefined4 *param_2)
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
   thunk_FUN_10118fc0("SCIUrlConnectionSwigBase::getRequest");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -6817,6 +6898,7 @@ void __fastcall FUN_10137050(int param_1)
 void __thiscall Recovered_Bulk::FUN_101370b0(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
@@ -6825,13 +6907,11 @@ void __thiscall Recovered_Bulk::FUN_101370b0(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e0cae);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   uVar3 = (undefined4)(1);
   if (*(code **)(param_1 + 0x18) != (code *)0x0) {
     puVar2 = (undefined4 *)(param_2);
@@ -6840,13 +6920,15 @@ void __thiscall Recovered_Bulk::FUN_101370b0(undefined4 *param_2)
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
   thunk_FUN_10118fc0("SCIMusicServerBrowseDelegateSwigBase::getRootItem");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -6881,32 +6963,33 @@ void __fastcall FUN_101377b0(int param_1)
 void __thiscall Recovered_Bulk::FUN_10137860(undefined4 *param_2,undefined4 param_3)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined1 local_30 [28];
   uint local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e0d0e);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (*(code **)(param_1 + 0xc) != (code *)0x0) {
     piVar1 = (int *)((int *)(**(code **)(param_1 + 0xc))(param_3,local_14));
     *param_2 = (undefined4)(piVar1);
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCLibDelegateFactory::getSCLibDelegate");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -6958,6 +7041,7 @@ void __fastcall FUN_10137da0(int param_1)
 void __thiscall Recovered_Bulk::FUN_10137e00(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -6966,12 +7050,10 @@ void __thiscall Recovered_Bulk::FUN_10137e00(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e0ee0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0xc) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -6979,17 +7061,19 @@ void __thiscall Recovered_Bulk::FUN_10137e00(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0xc))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIGetSonosPlaylistsCBSwigBase::getSonosPlaylistsSucceeded");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -6999,32 +7083,33 @@ void __thiscall Recovered_Bulk::FUN_10137e00(undefined4 *param_2)
 void __thiscall Recovered_Bulk::FUN_10138160(undefined4 *param_2,undefined4 param_3)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined1 local_30 [28];
   uint local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e105e);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (*(code **)(param_1 + 0x3c) != (code *)0x0) {
     piVar1 = (int *)((int *)(**(code **)(param_1 + 0x3c))(param_3,local_14));
     *param_2 = (undefined4)(piVar1);
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::getStringInput");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -7076,6 +7161,7 @@ void __fastcall FUN_101388a0(int param_1)
 void __thiscall Recovered_Bulk::FUN_10138ab0(undefined4 *param_2,undefined4 *param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   int *piVar3;
@@ -7085,13 +7171,11 @@ void __thiscall Recovered_Bulk::FUN_10138ab0(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e1412);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x30) != 0) {
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
@@ -7099,7 +7183,7 @@ void __thiscall Recovered_Bulk::FUN_10138ab0(undefined4 *param_2,undefined4 *par
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
     thunk_FUN_101a1ea0(puVar4);
-    local_8 = (undefined4)(1);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     piVar3 = (int *)((int *)(**(code **)(param_1 + 0x30))(uVar2));
     *param_2 = (undefined4)(piVar3);
@@ -7107,13 +7191,15 @@ void __thiscall Recovered_Bulk::FUN_10138ab0(undefined4 *param_2,undefined4 *par
       (**(code **)(*piVar3 + 4))();
     }
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::getVariations");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -7123,6 +7209,7 @@ void __thiscall Recovered_Bulk::FUN_10138ab0(undefined4 *param_2,undefined4 *par
 void __thiscall Recovered_Bulk::FUN_10138bd0(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
@@ -7131,13 +7218,11 @@ void __thiscall Recovered_Bulk::FUN_10138bd0(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e147e);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   uVar3 = (undefined4)(1);
   if (*(code **)(param_1 + 0x34) != (code *)0x0) {
     puVar2 = (undefined4 *)(param_2);
@@ -7146,13 +7231,15 @@ void __thiscall Recovered_Bulk::FUN_10138bd0(undefined4 *param_2)
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
   thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::getWizardComponents");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -7162,6 +7249,7 @@ void __thiscall Recovered_Bulk::FUN_10138bd0(undefined4 *param_2)
 void __thiscall Recovered_Bulk::FUN_10138c90(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   int *piVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
@@ -7170,13 +7258,11 @@ void __thiscall Recovered_Bulk::FUN_10138c90(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e14de);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   uVar3 = (undefined4)(1);
   if (*(code **)(param_1 + 0x1c) != (code *)0x0) {
     puVar2 = (undefined4 *)(param_2);
@@ -7185,13 +7271,15 @@ void __thiscall Recovered_Bulk::FUN_10138c90(undefined4 *param_2)
     if (piVar1 != (int *)0x0) {
       (**(code **)(*piVar1 + 4))();
     }
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
   thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::getWizardPageProperties");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -7201,6 +7289,7 @@ void __thiscall Recovered_Bulk::FUN_10138c90(undefined4 *param_2)
 void __thiscall Recovered_Bulk::FUN_10138d50(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -7209,12 +7298,10 @@ void __thiscall Recovered_Bulk::FUN_10138d50(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e1530);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 8) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -7222,17 +7309,19 @@ void __thiscall Recovered_Bulk::FUN_10138d50(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 8))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCLibCustomSubWizardCallback::hasCustomSubWizard");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -7437,6 +7526,7 @@ void __thiscall Recovered_Bulk::FUN_10139150(int *param_2)
 void __thiscall Recovered_Bulk::FUN_101391d0(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -7445,12 +7535,10 @@ void __thiscall Recovered_Bulk::FUN_101391d0(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e1580);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0xc) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -7458,17 +7546,19 @@ void __thiscall Recovered_Bulk::FUN_101391d0(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0xc))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::initialize");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -7688,6 +7778,7 @@ void __fastcall FUN_10139680(int param_1)
 void __thiscall Recovered_Bulk::FUN_101396e0(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -7696,12 +7787,10 @@ void __thiscall Recovered_Bulk::FUN_101396e0(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e15d0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x10) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -7709,17 +7798,19 @@ void __thiscall Recovered_Bulk::FUN_101396e0(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x10))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::isDeviceBonded");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -7729,6 +7820,7 @@ void __thiscall Recovered_Bulk::FUN_101396e0(undefined4 *param_2)
 void __thiscall Recovered_Bulk::FUN_10139830(undefined4 *param_2,undefined4 *param_3,int *param_4)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -7738,12 +7830,10 @@ void __thiscall Recovered_Bulk::FUN_10139830(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e162b);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x14) != 0) {
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
@@ -7751,7 +7841,7 @@ void __thiscall Recovered_Bulk::FUN_10139830(undefined4 *param_2,undefined4 *par
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar4);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)0x0) {
@@ -7766,13 +7856,15 @@ void __thiscall Recovered_Bulk::FUN_10139830(undefined4 *param_2,undefined4 *par
     (**(code **)(param_1 + 0x14))(uVar2,uVar3,param_4);
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::isFeatureEnabled");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -8076,6 +8168,7 @@ void __fastcall FUN_10139ec0(int param_1)
 void __thiscall Recovered_Bulk::FUN_10139f20(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -8084,12 +8177,10 @@ void __thiscall Recovered_Bulk::FUN_10139f20(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e1680);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x28) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -8097,17 +8188,19 @@ void __thiscall Recovered_Bulk::FUN_10139f20(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x28))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIStringInputSwigBase::isValid");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -8138,6 +8231,7 @@ void __fastcall FUN_1013a000(int param_1)
 void __thiscall Recovered_Bulk::FUN_1013a060(undefined4 *param_2,undefined4 *param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -8147,12 +8241,10 @@ void __thiscall Recovered_Bulk::FUN_1013a060(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e16db);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x38) != 0) {
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
@@ -8160,7 +8252,7 @@ void __thiscall Recovered_Bulk::FUN_1013a060(undefined4 *param_2,undefined4 *par
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar4);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)0x0) {
@@ -8172,13 +8264,15 @@ void __thiscall Recovered_Bulk::FUN_1013a060(undefined4 *param_2,undefined4 *par
     (**(code **)(param_1 + 0x38))(uVar2,uVar3);
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::isVariationForced");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -8209,6 +8303,7 @@ void __fastcall FUN_1013a1a0(int param_1)
 void __thiscall Recovered_Bulk::FUN_1013a200(undefined4 *param_2,undefined4 *param_3,undefined4 param_4)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -8218,12 +8313,10 @@ void __thiscall Recovered_Bulk::FUN_1013a200(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e173b);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x10) != 0) {
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
@@ -8231,7 +8324,7 @@ void __thiscall Recovered_Bulk::FUN_1013a200(undefined4 *param_2,undefined4 *par
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar4);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)0x0) {
@@ -8243,13 +8336,15 @@ void __thiscall Recovered_Bulk::FUN_1013a200(undefined4 *param_2,undefined4 *par
     (**(code **)(param_1 + 0x10))(uVar2,uVar3,param_4);
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::joinSSID");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -8259,6 +8354,7 @@ void __thiscall Recovered_Bulk::FUN_1013a200(undefined4 *param_2,undefined4 *par
 void __thiscall Recovered_Bulk::FUN_1013a340(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -8267,12 +8363,10 @@ void __thiscall Recovered_Bulk::FUN_1013a340(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e1790);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x48) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -8280,17 +8374,19 @@ void __thiscall Recovered_Bulk::FUN_1013a340(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x48))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::launchAccessoryConfiguration");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -8300,6 +8396,7 @@ void __thiscall Recovered_Bulk::FUN_1013a340(undefined4 *param_2)
 void __thiscall Recovered_Bulk::FUN_1013a420(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -8308,12 +8405,10 @@ void __thiscall Recovered_Bulk::FUN_1013a420(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e17e0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x18) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -8321,17 +8416,19 @@ void __thiscall Recovered_Bulk::FUN_1013a420(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x18))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::leaveSSID");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -8341,32 +8438,33 @@ void __thiscall Recovered_Bulk::FUN_1013a420(undefined4 *param_2)
 void __thiscall Recovered_Bulk::FUN_1013a530(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e1830);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   if (*(int *)(param_1 + 0x10) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_2 != (undefined1 *)0x0) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x10))(uVar2);
     thunk_FUN_101a2000();
   }
-  ExceptionList = (void *)(local_10);
+
   thunk_FUN_1148ac28();
   return;
+
+ } catch (...) { }
 }
 
 
@@ -8529,6 +8627,7 @@ void __fastcall FUN_1013ac50(int param_1)
 void __thiscall Recovered_Bulk::FUN_1013acb0(undefined1 *param_2,undefined4 param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -8537,12 +8636,9 @@ void __thiscall Recovered_Bulk::FUN_1013acb0(undefined1 *param_2,undefined4 para
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e19e8);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x18) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -8554,15 +8650,17 @@ void __thiscall Recovered_Bulk::FUN_1013acb0(undefined1 *param_2,undefined4 para
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x18))(uVar2,param_3);
     thunk_FUN_101a2000();
-    local_8 = (undefined4)(2);
+
     ((SCStr *)((SCStr *)&param_2))->int_release();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCINetstartListenerSwigBase::onNetParamsAcquired");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -8674,6 +8772,7 @@ void __thiscall Recovered_Bulk::FUN_1013af00(int *param_2)
 void __thiscall Recovered_Bulk::FUN_1013af80(undefined4 *param_2,int *param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -8682,12 +8781,10 @@ void __thiscall Recovered_Bulk::FUN_1013af80(undefined4 *param_2,int *param_3)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e1a40);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x10) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -8695,20 +8792,22 @@ void __thiscall Recovered_Bulk::FUN_1013af80(undefined4 *param_2,int *param_3)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     if (param_3 != (int *)0x0) {
       (**(code **)(*param_3 + 4))();
     }
     (**(code **)(param_1 + 0x10))(uVar2,param_3);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIServiceAppInteropSwigBase::openApp");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -8718,6 +8817,7 @@ void __thiscall Recovered_Bulk::FUN_1013af80(undefined4 *param_2,int *param_3)
 void __thiscall Recovered_Bulk::FUN_1013b080(undefined1 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -8726,12 +8826,9 @@ void __thiscall Recovered_Bulk::FUN_1013b080(undefined1 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e1a98);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0xc) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -8743,15 +8840,17 @@ void __thiscall Recovered_Bulk::FUN_1013b080(undefined1 *param_2)
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0xc))(uVar2);
     thunk_FUN_101a2000();
-    local_8 = (undefined4)(2);
+
     ((SCStr *)((SCStr *)&param_2))->int_release();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIMusicServerDelegateSwigBase::openFileDescriptor");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -8830,6 +8929,7 @@ void __thiscall Recovered_Bulk::FUN_1013b230(int *param_2)
 void __thiscall Recovered_Bulk::FUN_1013b2b0(undefined4 *param_2,int *param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -8838,12 +8938,10 @@ void __thiscall Recovered_Bulk::FUN_1013b2b0(undefined4 *param_2,int *param_3)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e1af0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0xc) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -8851,20 +8949,22 @@ void __thiscall Recovered_Bulk::FUN_1013b2b0(undefined4 *param_2,int *param_3)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     if (param_3 != (int *)0x0) {
       (**(code **)(*param_3 + 4))();
     }
     (**(code **)(param_1 + 0xc))(uVar2,param_3);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCINewWizDelegateSwigBase::performUpdate");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -8874,6 +8974,7 @@ void __thiscall Recovered_Bulk::FUN_1013b2b0(undefined4 *param_2,int *param_3)
 void __thiscall Recovered_Bulk::FUN_1013b3a0(undefined1 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -8882,12 +8983,9 @@ void __thiscall Recovered_Bulk::FUN_1013b3a0(undefined1 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e1b48);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x14) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -8899,15 +8997,17 @@ void __thiscall Recovered_Bulk::FUN_1013b3a0(undefined1 *param_2)
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x14))(uVar2);
     thunk_FUN_101a2000();
-    local_8 = (undefined4)(2);
+
     ((SCStr *)((SCStr *)&param_2))->int_release();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIUrbanAirshipDelegateSwigBase::postCustomEvent");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -8944,6 +9044,7 @@ void __thiscall Recovered_Bulk::FUN_1013b490(int *param_2)
 void __thiscall Recovered_Bulk::FUN_1013b5a0(undefined4 *param_2,int *param_3,int *param_4)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -8952,12 +9053,10 @@ void __thiscall Recovered_Bulk::FUN_1013b5a0(undefined4 *param_2,int *param_3,in
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e1ba0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x18) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -8965,7 +9064,7 @@ void __thiscall Recovered_Bulk::FUN_1013b5a0(undefined4 *param_2,int *param_3,in
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     if (param_3 != (int *)0x0) {
       (**(code **)(*param_3 + 4))();
@@ -8975,13 +9074,15 @@ void __thiscall Recovered_Bulk::FUN_1013b5a0(undefined4 *param_2,int *param_3,in
     }
     (**(code **)(param_1 + 0x18))(uVar2,param_3,param_4);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIInAppPurchaseManagerProviderSwigBase::purchaseProduct");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -11755,6 +11856,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013e540(undefined4 *param_2,SCStr *
 void __thiscall Recovered_Bulk::FUN_1013e5b0(undefined4 *param_2,undefined4 *param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   int *piVar3;
@@ -11764,13 +11866,11 @@ void __thiscall Recovered_Bulk::FUN_1013e5b0(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e1c12);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 8) != 0) {
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
@@ -11778,7 +11878,7 @@ void __thiscall Recovered_Bulk::FUN_1013e5b0(undefined4 *param_2,undefined4 *par
       puVar4 = (undefined1 *)((undefined1 *)*param_3);
     }
     thunk_FUN_101a1ea0(puVar4);
-    local_8 = (undefined4)(1);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     piVar3 = (int *)((int *)(**(code **)(param_1 + 8))(uVar2));
     *param_2 = (undefined4)(piVar3);
@@ -11786,13 +11886,15 @@ void __thiscall Recovered_Bulk::FUN_1013e5b0(undefined4 *param_2,undefined4 *par
       (**(code **)(*piVar3 + 4))();
     }
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIVpnDelegate::queryInterface");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -11898,6 +12000,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013e820(undefined4 *param_2,SCStr *
 void __fastcall FUN_1013e890(int param_1)
 
 {
+ try {
   undefined1 local_20 [28];
   uint local_4;
   
@@ -11910,6 +12013,8 @@ void __fastcall FUN_1013e890(int param_1)
   thunk_FUN_10118fc0("SCIBleDelegateSwigBase::queuePacketForSend");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -11919,6 +12024,7 @@ void __fastcall FUN_1013e890(int param_1)
 void __thiscall Recovered_Bulk::FUN_1013e8f0(undefined1 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -11927,12 +12033,9 @@ void __thiscall Recovered_Bulk::FUN_1013e8f0(undefined1 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e1c78);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x38) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -11944,15 +12047,17 @@ void __thiscall Recovered_Bulk::FUN_1013e8f0(undefined1 *param_2)
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x38))(uVar2);
     thunk_FUN_101a2000();
-    local_8 = (undefined4)(2);
+
     ((SCStr *)((SCStr *)&param_2))->int_release();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::raiseEvent");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -11991,6 +12096,7 @@ void __thiscall Recovered_Bulk::FUN_1013e9e0(undefined4 param_2,undefined4 param
 void __thiscall Recovered_Bulk::FUN_1013ea70(undefined4 *param_2,int *param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -11999,12 +12105,10 @@ void __thiscall Recovered_Bulk::FUN_1013ea70(undefined4 *param_2,int *param_3)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e1cd0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0xc) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -12012,20 +12116,22 @@ void __thiscall Recovered_Bulk::FUN_1013ea70(undefined4 *param_2,int *param_3)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     if (param_3 != (int *)0x0) {
       (**(code **)(*param_3 + 4))();
     }
     (**(code **)(param_1 + 0xc))(uVar2,param_3);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIWebsocketCallbackSwigBase::receivedString");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -12056,6 +12162,7 @@ void __thiscall Recovered_Bulk::FUN_1013eb60(undefined1 param_2)
 void __thiscall Recovered_Bulk::FUN_1013ebc0(undefined4 *param_2,undefined1 param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -12064,12 +12171,10 @@ void __thiscall Recovered_Bulk::FUN_1013ebc0(undefined4 *param_2,undefined1 para
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e1d20);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x14) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -12077,17 +12182,19 @@ void __thiscall Recovered_Bulk::FUN_1013ebc0(undefined4 *param_2,undefined1 para
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x14))(uVar2,param_3);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::registerDefaultBoolValue");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -12097,6 +12204,7 @@ void __thiscall Recovered_Bulk::FUN_1013ebc0(undefined4 *param_2,undefined1 para
 void __thiscall Recovered_Bulk::FUN_1013eca0(undefined4 param_2,undefined8 param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 local_30 [28];
@@ -12104,26 +12212,26 @@ void __thiscall Recovered_Bulk::FUN_1013eca0(undefined4 param_2,undefined8 param
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e1d70);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x2c) != 0) {
     thunk_FUN_101a1ea0();
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x2c))(uVar2,param_3);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0();
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -12133,6 +12241,7 @@ void __thiscall Recovered_Bulk::FUN_1013eca0(undefined4 param_2,undefined8 param
 void __thiscall Recovered_Bulk::FUN_1013ed90(undefined4 *param_2,undefined4 param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -12141,12 +12250,10 @@ void __thiscall Recovered_Bulk::FUN_1013ed90(undefined4 *param_2,undefined4 para
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e1dc0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x20) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -12154,17 +12261,19 @@ void __thiscall Recovered_Bulk::FUN_1013ed90(undefined4 *param_2,undefined4 para
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x20))(uVar2,param_3);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::registerDefaultIntegerValue");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -12174,6 +12283,7 @@ void __thiscall Recovered_Bulk::FUN_1013ed90(undefined4 *param_2,undefined4 para
 void __thiscall Recovered_Bulk::FUN_1013ee70(undefined4 *param_2,undefined4 *param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -12183,12 +12293,10 @@ void __thiscall Recovered_Bulk::FUN_1013ee70(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e1e1b);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x38) != 0) {
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
@@ -12196,7 +12304,7 @@ void __thiscall Recovered_Bulk::FUN_1013ee70(undefined4 *param_2,undefined4 *par
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar4);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)0x0) {
@@ -12208,13 +12316,15 @@ void __thiscall Recovered_Bulk::FUN_1013ee70(undefined4 *param_2,undefined4 *par
     (**(code **)(param_1 + 0x38))(uVar2,uVar3);
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::registerDefaultStringValue");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -12521,6 +12631,7 @@ void __thiscall Recovered_Bulk::FUN_1013f4c0(int *param_2)
 void __thiscall Recovered_Bulk::FUN_10143df0(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -12529,12 +12640,10 @@ void __thiscall Recovered_Bulk::FUN_10143df0(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e3870);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x3c) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -12542,17 +12651,19 @@ void __thiscall Recovered_Bulk::FUN_10143df0(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x3c))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::remove");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -12562,6 +12673,7 @@ void __thiscall Recovered_Bulk::FUN_10143df0(undefined4 *param_2)
 void __thiscall Recovered_Bulk::FUN_10143ed0(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -12570,12 +12682,10 @@ void __thiscall Recovered_Bulk::FUN_10143ed0(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e38c0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x14) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -12583,17 +12693,19 @@ void __thiscall Recovered_Bulk::FUN_10143ed0(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x14))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCISecureStoreSwigBase::removeBlob");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -12603,6 +12715,7 @@ void __thiscall Recovered_Bulk::FUN_10143ed0(undefined4 *param_2)
 void __thiscall Recovered_Bulk::FUN_10143fb0(undefined4 *param_2,undefined4 *param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -12612,12 +12725,10 @@ void __thiscall Recovered_Bulk::FUN_10143fb0(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e391b);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x1c) != 0) {
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
@@ -12625,7 +12736,7 @@ void __thiscall Recovered_Bulk::FUN_10143fb0(undefined4 *param_2,undefined4 *par
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar4);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)0x0) {
@@ -12637,13 +12748,15 @@ void __thiscall Recovered_Bulk::FUN_10143fb0(undefined4 *param_2,undefined4 *par
     (**(code **)(param_1 + 0x1c))(uVar2,uVar3);
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIInAppMessagingProviderSwigBase::removeTagFromGroup");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -12701,6 +12814,7 @@ void __fastcall FUN_10144160(int param_1)
 void __thiscall Recovered_Bulk::FUN_101441c0(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -12709,12 +12823,10 @@ void __thiscall Recovered_Bulk::FUN_101441c0(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e3970);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x1c) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -12722,17 +12834,19 @@ void __thiscall Recovered_Bulk::FUN_101441c0(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x1c))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::requestPairing");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -12868,6 +12982,7 @@ void __fastcall FUN_10144490(int param_1)
 void __thiscall Recovered_Bulk::FUN_101444f0(undefined1 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -12876,12 +12991,9 @@ void __thiscall Recovered_Bulk::FUN_101444f0(undefined1 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e39c8);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x4c) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -12893,15 +13005,17 @@ void __thiscall Recovered_Bulk::FUN_101444f0(undefined1 *param_2)
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x4c))(uVar2);
     thunk_FUN_101a2000();
-    local_8 = (undefined4)(2);
+
     ((SCStr *)((SCStr *)&param_2))->int_release();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::saveFeaturesJson");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -12911,6 +13025,7 @@ void __thiscall Recovered_Bulk::FUN_101444f0(undefined1 *param_2)
 void __thiscall Recovered_Bulk::FUN_101445e0(undefined1 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -12919,12 +13034,9 @@ void __thiscall Recovered_Bulk::FUN_101445e0(undefined1 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e3a28);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x44) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -12936,15 +13048,17 @@ void __thiscall Recovered_Bulk::FUN_101445e0(undefined1 *param_2)
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x44))(uVar2);
     thunk_FUN_101a2000();
-    local_8 = (undefined4)(2);
+
     ((SCStr *)((SCStr *)&param_2))->int_release();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::saveVariationsJson");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -13044,6 +13158,7 @@ void __thiscall Recovered_Bulk::FUN_10144860(undefined4 param_2)
 void __thiscall Recovered_Bulk::FUN_101448c0(undefined4 *param_2,undefined4 *param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -13053,12 +13168,10 @@ void __thiscall Recovered_Bulk::FUN_101448c0(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e3a8b);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0xc) != 0) {
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
@@ -13066,7 +13179,7 @@ void __thiscall Recovered_Bulk::FUN_101448c0(undefined4 *param_2,undefined4 *par
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar4);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)0x0) {
@@ -13078,13 +13191,15 @@ void __thiscall Recovered_Bulk::FUN_101448c0(undefined4 *param_2,undefined4 *par
     (**(code **)(param_1 + 0xc))(uVar2,uVar3);
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCISecureStoreSwigBase::setBlob");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -13094,6 +13209,7 @@ void __thiscall Recovered_Bulk::FUN_101448c0(undefined4 *param_2,undefined4 *par
 void __thiscall Recovered_Bulk::FUN_10144a00(undefined4 *param_2,undefined1 param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -13102,12 +13218,10 @@ void __thiscall Recovered_Bulk::FUN_10144a00(undefined4 *param_2,undefined1 para
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e3ae0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x10) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -13115,17 +13229,19 @@ void __thiscall Recovered_Bulk::FUN_10144a00(undefined4 *param_2,undefined1 para
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x10))(uVar2,param_3);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::setBoolValue");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -13189,6 +13305,7 @@ void __thiscall Recovered_Bulk::FUN_10144b60(int *param_2)
 void __thiscall Recovered_Bulk::FUN_10144be0(undefined1 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -13197,12 +13314,9 @@ void __thiscall Recovered_Bulk::FUN_10144be0(undefined1 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e3b38);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x28) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -13214,15 +13328,17 @@ void __thiscall Recovered_Bulk::FUN_10144be0(undefined1 *param_2)
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x28))(uVar2);
     thunk_FUN_101a2000();
-    local_8 = (undefined4)(2);
+
     ((SCStr *)((SCStr *)&param_2))->int_release();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCISecurityContextSwigBase::setCertificateEnvironment");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -13232,6 +13348,7 @@ void __thiscall Recovered_Bulk::FUN_10144be0(undefined1 *param_2)
 void __thiscall Recovered_Bulk::FUN_10144cd0(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -13240,12 +13357,10 @@ void __thiscall Recovered_Bulk::FUN_10144cd0(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e3b90);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0xc) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -13253,17 +13368,19 @@ void __thiscall Recovered_Bulk::FUN_10144cd0(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0xc))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIClipboardDelegateSwigBase::setClipboardData");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -13273,6 +13390,7 @@ void __thiscall Recovered_Bulk::FUN_10144cd0(undefined4 *param_2)
 void __thiscall Recovered_Bulk::FUN_10144db0(undefined1 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -13281,12 +13399,9 @@ void __thiscall Recovered_Bulk::FUN_10144db0(undefined1 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e3be8);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x18) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -13298,15 +13413,17 @@ void __thiscall Recovered_Bulk::FUN_10144db0(undefined1 *param_2)
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x18))(uVar2);
     thunk_FUN_101a2000();
-    local_8 = (undefined4)(2);
+
     ((SCStr *)((SCStr *)&param_2))->int_release();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCISecurityContextSwigBase::setCustomerID");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -13316,6 +13433,7 @@ void __thiscall Recovered_Bulk::FUN_10144db0(undefined1 *param_2)
 void __thiscall Recovered_Bulk::FUN_10144ea0(undefined4 param_2,undefined8 param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 local_30 [28];
@@ -13323,26 +13441,26 @@ void __thiscall Recovered_Bulk::FUN_10144ea0(undefined4 param_2,undefined8 param
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e3c40);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x28) != 0) {
     thunk_FUN_101a1ea0();
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x28))(uVar2,param_3);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0();
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -13373,6 +13491,7 @@ void __thiscall Recovered_Bulk::FUN_10144f90(undefined4 param_2)
 void __thiscall Recovered_Bulk::FUN_10144ff0(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -13383,12 +13502,10 @@ void __thiscall Recovered_Bulk::FUN_10144ff0(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e3ca6);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x34) != 0) {
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
@@ -13396,7 +13513,7 @@ void __thiscall Recovered_Bulk::FUN_10144ff0(undefined4 *param_2,undefined4 *par
       puVar5 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar5);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar5 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)0x0) {
@@ -13416,13 +13533,15 @@ void __thiscall Recovered_Bulk::FUN_10144ff0(undefined4 *param_2,undefined4 *par
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::setForcedVariation");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -13432,6 +13551,7 @@ void __thiscall Recovered_Bulk::FUN_10144ff0(undefined4 *param_2,undefined4 *par
 void __thiscall Recovered_Bulk::FUN_101451a0(undefined1 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -13440,12 +13560,9 @@ void __thiscall Recovered_Bulk::FUN_101451a0(undefined1 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e3d08);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x10) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -13457,15 +13574,17 @@ void __thiscall Recovered_Bulk::FUN_101451a0(undefined1 *param_2)
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x10))(uVar2);
     thunk_FUN_101a2000();
-    local_8 = (undefined4)(2);
+
     ((SCStr *)((SCStr *)&param_2))->int_release();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCISecurityContextSwigBase::setHHID");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -13475,6 +13594,7 @@ void __thiscall Recovered_Bulk::FUN_101451a0(undefined1 *param_2)
 void __thiscall Recovered_Bulk::FUN_10145290(undefined4 *param_2,undefined4 param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -13483,12 +13603,10 @@ void __thiscall Recovered_Bulk::FUN_10145290(undefined4 *param_2,undefined4 para
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e3d60);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x1c) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -13496,17 +13614,19 @@ void __thiscall Recovered_Bulk::FUN_10145290(undefined4 *param_2,undefined4 para
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x1c))(uVar2,param_3);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::setIntegerValue");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -13585,6 +13705,7 @@ void __thiscall Recovered_Bulk::FUN_10145450(undefined4 param_2)
 void __thiscall Recovered_Bulk::FUN_101454b0(undefined1 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -13593,12 +13714,9 @@ void __thiscall Recovered_Bulk::FUN_101454b0(undefined1 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e3db8);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x20) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -13610,15 +13728,17 @@ void __thiscall Recovered_Bulk::FUN_101454b0(undefined1 *param_2)
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x20))(uVar2);
     thunk_FUN_101a2000();
-    local_8 = (undefined4)(2);
+
     ((SCStr *)((SCStr *)&param_2))->int_release();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCISecurityContextSwigBase::setSerialNumber");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -13628,6 +13748,7 @@ void __thiscall Recovered_Bulk::FUN_101454b0(undefined1 *param_2)
 void __thiscall Recovered_Bulk::FUN_101455a0(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -13636,12 +13757,10 @@ void __thiscall Recovered_Bulk::FUN_101455a0(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e3e10);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x14) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -13649,17 +13768,19 @@ void __thiscall Recovered_Bulk::FUN_101455a0(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x14))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIStringInputSwigBase::setString");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -13669,6 +13790,7 @@ void __thiscall Recovered_Bulk::FUN_101455a0(undefined4 *param_2)
 void __thiscall Recovered_Bulk::FUN_10145680(undefined4 *param_2,undefined4 *param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -13678,12 +13800,10 @@ void __thiscall Recovered_Bulk::FUN_10145680(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e3e6b);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x34) != 0) {
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
@@ -13691,7 +13811,7 @@ void __thiscall Recovered_Bulk::FUN_10145680(undefined4 *param_2,undefined4 *par
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar4);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)0x0) {
@@ -13703,13 +13823,15 @@ void __thiscall Recovered_Bulk::FUN_10145680(undefined4 *param_2,undefined4 *par
     (**(code **)(param_1 + 0x34))(uVar2,uVar3);
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::setStringValue");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -13719,6 +13841,7 @@ void __thiscall Recovered_Bulk::FUN_10145680(undefined4 *param_2,undefined4 *par
 void __thiscall Recovered_Bulk::FUN_101457b0(undefined4 *param_2,undefined4 *param_3)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 uVar3;
@@ -13728,12 +13851,10 @@ void __thiscall Recovered_Bulk::FUN_101457b0(undefined4 *param_2,undefined4 *par
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e3ecb);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x14) != 0) {
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
@@ -13741,7 +13862,7 @@ void __thiscall Recovered_Bulk::FUN_101457b0(undefined4 *param_2,undefined4 *par
       puVar4 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar4);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     puVar4 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*param_3 != (undefined1 *)0x0) {
@@ -13753,13 +13874,15 @@ void __thiscall Recovered_Bulk::FUN_101457b0(undefined4 *param_2,undefined4 *par
     (**(code **)(param_1 + 0x14))(uVar2,uVar3);
     thunk_FUN_101a2000();
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCICrashReportProviderSwigBase::setTag");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -13769,6 +13892,7 @@ void __thiscall Recovered_Bulk::FUN_101457b0(undefined4 *param_2,undefined4 *par
 void __fastcall FUN_101458e0(int param_1)
 
 {
+ try {
   undefined1 local_20 [28];
   uint local_4;
   
@@ -13781,6 +13905,8 @@ void __fastcall FUN_101458e0(int param_1)
   thunk_FUN_10118fc0("SCIBleDelegateSwigBase::setTransferTestPacket");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -14042,6 +14168,7 @@ void __fastcall FUN_10145d70(int param_1)
 void __thiscall Recovered_Bulk::FUN_10145dd0(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -14050,12 +14177,10 @@ void __thiscall Recovered_Bulk::FUN_10145dd0(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e3f20);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0xc) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -14063,17 +14188,19 @@ void __thiscall Recovered_Bulk::FUN_10145dd0(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0xc))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIStackTraceCaptureDelegateSwigBase::stackTraceCaptured");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -14249,6 +14376,7 @@ void __thiscall Recovered_Bulk::FUN_101461b0(undefined4 param_2,int *param_3,und
             undefined4 param_6,undefined4 param_7,undefined1 *param_8)
 {
   int param_1 = (int )this;
+ try {
   undefined4 uVar1;
   undefined1 *puVar2;
   undefined1 local_30 [28];
@@ -14256,12 +14384,9 @@ void __thiscall Recovered_Bulk::FUN_101461b0(undefined4 param_2,int *param_3,und
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_114e3f78);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
+  local_14 = (uint)(DAT_12126b84);
+
   if (*(int *)(param_1 + 0x14) != 0) {
     if (param_3 != (int *)0x0) {
       (**(code **)(*param_3 + 4))(local_14);
@@ -14275,15 +14400,17 @@ void __thiscall Recovered_Bulk::FUN_101461b0(undefined4 param_2,int *param_3,und
     uVar1 = (undefined4)(thunk_FUN_101a2160());
     (**(code **)(param_1 + 0x14))(param_2,param_3,param_4,param_5,param_6,param_7,uVar1);
     thunk_FUN_101a2000();
-    local_8 = (undefined4)(2);
+
     ((SCStr *)((SCStr *)&param_8))->int_release();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCLibSonarCallback::startRecording");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -14578,6 +14705,7 @@ void __thiscall Recovered_Bulk::FUN_101467f0(undefined4 param_2)
 void __thiscall Recovered_Bulk::FUN_10148a00(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -14586,12 +14714,10 @@ void __thiscall Recovered_Bulk::FUN_10148a00(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e3fd0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x14) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -14599,17 +14725,19 @@ void __thiscall Recovered_Bulk::FUN_10148a00(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x14))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIBleDelegateSwigBase::tryConnect");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -14661,6 +14789,7 @@ void __thiscall Recovered_Bulk::FUN_10148b40(undefined4 param_2)
 void __thiscall Recovered_Bulk::FUN_10148ba0(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -14669,12 +14798,10 @@ void __thiscall Recovered_Bulk::FUN_10148ba0(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4020);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x10) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -14682,17 +14809,19 @@ void __thiscall Recovered_Bulk::FUN_10148ba0(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x10))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIBlePeripheralDelegateSwigBase::tryStartAdvertising");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -15008,6 +15137,7 @@ void __thiscall Recovered_Bulk::FUN_101491a0(int *param_2)
 void __thiscall Recovered_Bulk::FUN_10149220(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -15016,12 +15146,10 @@ void __thiscall Recovered_Bulk::FUN_10149220(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4070);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0xc) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -15029,17 +15157,19 @@ void __thiscall Recovered_Bulk::FUN_10149220(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0xc))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIGetAboutSonosStringCBSwigBase::updateGetAboutSonosString");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -15049,6 +15179,7 @@ void __thiscall Recovered_Bulk::FUN_10149220(undefined4 *param_2)
 void __thiscall Recovered_Bulk::FUN_10149300(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -15057,12 +15188,10 @@ void __thiscall Recovered_Bulk::FUN_10149300(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e40c0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x14) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -15070,17 +15199,19 @@ void __thiscall Recovered_Bulk::FUN_10149300(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x14))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCINfcDelegateSwigBase::updateNfcCardMessage");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -15213,6 +15344,7 @@ void __thiscall Recovered_Bulk::FUN_101496b0(undefined4 param_2)
 void __fastcall FUN_10149740(int param_1)
 
 {
+ try {
   undefined1 local_20 [28];
   uint local_4;
   
@@ -15225,6 +15357,8 @@ void __fastcall FUN_10149740(int param_1)
   thunk_FUN_10118fc0("SCIWebsocketDelegateSwigBase::writeData");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -15234,6 +15368,7 @@ void __fastcall FUN_10149740(int param_1)
 void __thiscall Recovered_Bulk::FUN_101497b0(undefined4 *param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined1 *puVar3;
@@ -15242,12 +15377,10 @@ void __thiscall Recovered_Bulk::FUN_101497b0(undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4170);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x18) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
@@ -15255,17 +15388,19 @@ void __thiscall Recovered_Bulk::FUN_101497b0(undefined4 *param_2)
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
-    local_8 = (undefined4)(0);
+
     uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
     (**(code **)(param_1 + 0x18))(uVar2);
     thunk_FUN_101a2000();
-    ExceptionList = (void *)(local_10);
+
     thunk_FUN_1148ac28();
     return;
   }
   thunk_FUN_10118fc0("SCIWebsocketDelegateSwigBase::writeString");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
 }
 
 
@@ -15305,6 +15440,7 @@ __stdcall FUN_1014cf50(int *param_1,ushort *param_2,ushort *param_3,ushort *para
             ushort *param_6,undefined4 param_7,undefined4 param_8)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   undefined4 local_20;
@@ -15314,18 +15450,14 @@ __stdcall FUN_1014cf50(int *param_1,ushort *param_2,ushort *param_3,ushort *para
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4390);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_20 = (undefined4)(0);
+
+
   ((SCStr *)((SCStr *)&local_20))->setFromUTF16(param_2);
-  local_1c = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_1c))->setFromUTF16(param_3);
-  local_18 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_18))->setFromUTF16(param_4);
-  local_14 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_5);
   param_2 = (ushort *)((ushort *)0x0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_6);
@@ -15334,26 +15466,28 @@ __stdcall FUN_1014cf50(int *param_1,ushort *param_2,ushort *param_3,ushort *para
                      (&param_3,&local_20,&local_1c,&local_18,&local_14,&param_2,param_7,param_8));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_3 != (ushort *)0x0) {
     (**(code **)(*(int *)param_3 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  local_14 = (undefined4)(0);
-  local_8 = (undefined4)(3);
+
+
   ((SCStr *)((SCStr *)&local_18))->int_release();
-  local_18 = (undefined4)(0);
-  local_8 = (undefined4)(4);
+
+
   ((SCStr *)((SCStr *)&local_1c))->int_release();
-  local_1c = (undefined4)(0);
-  local_8 = (undefined4)(5);
+
+
   ((SCStr *)((SCStr *)&local_20))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -15363,28 +15497,28 @@ __stdcall FUN_1014cf50(int *param_1,ushort *param_2,ushort *param_3,ushort *para
 undefined4 FUN_1014d210(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e43f0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x14))(&param_1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x14))(&param_1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -15394,28 +15528,28 @@ undefined4 FUN_1014d210(int *param_1)
 undefined4 FUN_1014d2b0(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4420);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x18))(&param_1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x18))(&param_1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -15425,28 +15559,28 @@ undefined4 FUN_1014d2b0(int *param_1)
 undefined4 FUN_1014d350(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4450);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x28))(&param_1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x28))(&param_1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -15456,28 +15590,28 @@ undefined4 FUN_1014d350(int *param_1)
 undefined4 FUN_1014d4e0(void)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   int *local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e44b0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  puVar2 = (undefined4 *)((undefined4 *)thunk_FUN_101da5c0(&local_14,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+
+
+  puVar2 = (undefined4 *)((undefined4 *)thunk_FUN_101da5c0(&local_14,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (local_14 != (int *)0x0) {
     (**(code **)(*local_14 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -15487,24 +15621,24 @@ undefined4 FUN_1014d4e0(void)
 void __stdcall FUN_1014d5a0(int *param_1,ushort *param_2)
 
 {
+ try {
   uint uVar1;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e44e0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0x24))(&local_14,uVar1);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -15514,28 +15648,28 @@ void __stdcall FUN_1014d5a0(int *param_1,ushort *param_2)
 undefined4 FUN_1014d690(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4510);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x20))(&param_1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x20))(&param_1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -15592,6 +15726,7 @@ void __stdcall FUN_1014de40(int param_1,undefined4 param_2,undefined4 param_3,un
 undefined4 __stdcall FUN_1014df80(int *param_1,undefined4 param_2,ushort *param_3)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -15599,25 +15734,24 @@ undefined4 __stdcall FUN_1014df80(int *param_1,undefined4 param_2,ushort *param_
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4660);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_3);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x34))(&param_3,param_2,&local_14,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_3 != (ushort *)0x0) {
     (**(code **)(*(int *)param_3 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -15627,6 +15761,7 @@ undefined4 __stdcall FUN_1014df80(int *param_1,undefined4 param_2,ushort *param_
 undefined4 __stdcall FUN_1014e030(int *param_1,ushort *param_2,ushort *param_3)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -15634,30 +15769,29 @@ undefined4 __stdcall FUN_1014e030(int *param_1,ushort *param_2,ushort *param_3)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4690);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 100))(&param_3,&local_14,&param_2,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_3 != (ushort *)0x0) {
     (**(code **)(*(int *)param_3 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -15667,28 +15801,28 @@ undefined4 __stdcall FUN_1014e030(int *param_1,ushort *param_2,ushort *param_3)
 undefined4 FUN_1014e120(int *param_1,undefined4 param_2)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e46c0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x30))(&param_1,param_2,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x30))(&param_1,param_2,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -15698,28 +15832,28 @@ undefined4 FUN_1014e120(int *param_1,undefined4 param_2)
 undefined4 FUN_1014e1c0(int *param_1,undefined4 param_2)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e46f0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x58))(&param_1,param_2,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x58))(&param_1,param_2,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -15729,6 +15863,7 @@ undefined4 FUN_1014e1c0(int *param_1,undefined4 param_2)
 undefined4 __stdcall FUN_1014e260(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -15736,30 +15871,29 @@ undefined4 __stdcall FUN_1014e260(int *param_1,ushort *param_2,ushort *param_3,u
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4720);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x5c))(&param_3,&local_14,&param_2,param_4,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_3 != (ushort *)0x0) {
     (**(code **)(*(int *)param_3 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -15771,6 +15905,7 @@ __stdcall FUN_1014e350(int *param_1,ushort *param_2,ushort *param_3,ushort *para
             undefined4 param_6,ushort *param_7,ushort *param_8,undefined4 param_9)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   undefined4 local_24;
@@ -15781,20 +15916,16 @@ __stdcall FUN_1014e350(int *param_1,ushort *param_2,ushort *param_3,ushort *para
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4750);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_24 = (undefined4)(0);
+
+
   ((SCStr *)((SCStr *)&local_24))->setFromUTF16(param_2);
-  local_20 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_20))->setFromUTF16(param_3);
-  local_1c = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_1c))->setFromUTF16(param_4);
-  local_18 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_18))->setFromUTF16(param_5);
-  local_14 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_7);
   param_2 = (ushort *)((ushort *)0x0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_8);
@@ -15804,29 +15935,31 @@ __stdcall FUN_1014e350(int *param_1,ushort *param_2,ushort *param_3,ushort *para
                       param_9));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_3 != (ushort *)0x0) {
     (**(code **)(*(int *)param_3 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  local_14 = (undefined4)(0);
-  local_8 = (undefined4)(3);
+
+
   ((SCStr *)((SCStr *)&local_18))->int_release();
-  local_18 = (undefined4)(0);
-  local_8 = (undefined4)(4);
+
+
   ((SCStr *)((SCStr *)&local_1c))->int_release();
-  local_1c = (undefined4)(0);
-  local_8 = (undefined4)(5);
+
+
   ((SCStr *)((SCStr *)&local_20))->int_release();
-  local_20 = (undefined4)(0);
-  local_8 = (undefined4)(6);
+
+
   ((SCStr *)((SCStr *)&local_24))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -15836,6 +15969,7 @@ __stdcall FUN_1014e350(int *param_1,ushort *param_2,ushort *param_3,ushort *para
 undefined4 __stdcall FUN_1014e520(int *param_1,ushort *param_2)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -15843,25 +15977,24 @@ undefined4 __stdcall FUN_1014e520(int *param_1,ushort *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4780);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x7c))(&param_2,&local_14,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_2 != (ushort *)0x0) {
     (**(code **)(*(int *)param_2 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -15871,6 +16004,7 @@ undefined4 __stdcall FUN_1014e520(int *param_1,ushort *param_2)
 undefined4 __stdcall FUN_1014e5d0(int *param_1,ushort *param_2,ushort *param_3)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -15878,30 +16012,29 @@ undefined4 __stdcall FUN_1014e5d0(int *param_1,ushort *param_2,ushort *param_3)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e47b0);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x2c))(&param_3,&local_14,&param_2,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_3 != (ushort *)0x0) {
     (**(code **)(*(int *)param_3 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -15913,6 +16046,7 @@ __stdcall FUN_1014e6c0(int *param_1,ushort *param_2,ushort *param_3,ushort *para
             undefined4 param_6,undefined4 param_7)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -15921,15 +16055,12 @@ __stdcall FUN_1014e6c0(int *param_1,ushort *param_2,ushort *param_3,ushort *para
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e47e0);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_18 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_18))->setFromUTF16(param_2);
-  local_14 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_3);
   param_2 = (ushort *)((ushort *)0x0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_4);
@@ -15938,20 +16069,22 @@ __stdcall FUN_1014e6c0(int *param_1,ushort *param_2,ushort *param_3,ushort *para
                      (&param_3,&local_18,&local_14,&param_2,param_5,param_6,param_7,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_3 != (ushort *)0x0) {
     (**(code **)(*(int *)param_3 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  local_14 = (undefined4)(0);
-  local_8 = (undefined4)(3);
+
+
   ((SCStr *)((SCStr *)&local_18))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -15963,6 +16096,7 @@ __stdcall FUN_1014e7f0(int *param_1,ushort *param_2,ushort *param_3,ushort *para
             undefined4 param_6,undefined4 param_7,undefined4 param_8)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -15972,17 +16106,14 @@ __stdcall FUN_1014e7f0(int *param_1,ushort *param_2,ushort *param_3,ushort *para
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4810);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_1c = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_1c))->setFromUTF16(param_2);
-  local_18 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_18))->setFromUTF16(param_3);
-  local_14 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_4);
   param_2 = (ushort *)((ushort *)0x0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_5);
@@ -15991,23 +16122,25 @@ __stdcall FUN_1014e7f0(int *param_1,ushort *param_2,ushort *param_3,ushort *para
                      (&param_3,&local_1c,&local_18,&local_14,&param_2,param_6,param_7,param_8,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_3 != (ushort *)0x0) {
     (**(code **)(*(int *)param_3 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  local_14 = (undefined4)(0);
-  local_8 = (undefined4)(3);
+
+
   ((SCStr *)((SCStr *)&local_18))->int_release();
-  local_18 = (undefined4)(0);
-  local_8 = (undefined4)(4);
+
+
   ((SCStr *)((SCStr *)&local_1c))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16020,6 +16153,7 @@ __stdcall FUN_1014e950(int *param_1,ushort *param_2,ushort *param_3,ushort *para
             ushort *param_10)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -16029,17 +16163,14 @@ __stdcall FUN_1014e950(int *param_1,ushort *param_2,ushort *param_3,ushort *para
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4840);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_1c = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_1c))->setFromUTF16(param_2);
-  local_18 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_18))->setFromUTF16(param_3);
-  local_14 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_4);
   param_3 = (ushort *)((ushort *)((uint)(*(unsigned short *)((char *)&param_3 + 1)) << 8 | (uint)(param_5 != 0)));
   param_2 = (ushort *)((ushort *)0x0);
@@ -16050,23 +16181,25 @@ __stdcall FUN_1014e950(int *param_1,ushort *param_2,ushort *param_3,ushort *para
                       ,&param_2,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_4 != (ushort *)0x0) {
     (**(code **)(*(int *)param_4 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  local_14 = (undefined4)(0);
-  local_8 = (undefined4)(3);
+
+
   ((SCStr *)((SCStr *)&local_18))->int_release();
-  local_18 = (undefined4)(0);
-  local_8 = (undefined4)(4);
+
+
   ((SCStr *)((SCStr *)&local_1c))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16078,6 +16211,7 @@ __stdcall FUN_1014eac0(int *param_1,ushort *param_2,undefined4 param_3,undefined
             undefined4 param_6,ushort *param_7,int param_8,int param_9)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -16085,13 +16219,10 @@ __stdcall FUN_1014eac0(int *param_1,ushort *param_2,undefined4 param_3,undefined
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4870);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_7);
@@ -16103,17 +16234,19 @@ __stdcall FUN_1014eac0(int *param_1,ushort *param_2,undefined4 param_3,undefined
                       uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_7 != (ushort *)0x0) {
     (**(code **)(*(int *)param_7 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16123,6 +16256,7 @@ __stdcall FUN_1014eac0(int *param_1,ushort *param_2,undefined4 param_3,undefined
 undefined4 __stdcall FUN_1014ebd0(int *param_1,ushort *param_2,undefined4 param_3)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -16130,25 +16264,24 @@ undefined4 __stdcall FUN_1014ebd0(int *param_1,ushort *param_2,undefined4 param_
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e48a0);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x24))(&param_2,&local_14,param_3,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_2 != (ushort *)0x0) {
     (**(code **)(*(int *)param_2 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16159,6 +16292,7 @@ undefined4
 __stdcall FUN_1014ec80(int *param_1,ushort *param_2,ushort *param_3,ushort *param_4,undefined4 param_5)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -16167,15 +16301,12 @@ __stdcall FUN_1014ec80(int *param_1,ushort *param_2,ushort *param_3,ushort *para
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e48d0);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_18 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_18))->setFromUTF16(param_2);
-  local_14 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_3);
   param_2 = (ushort *)((ushort *)0x0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_4);
@@ -16183,20 +16314,22 @@ __stdcall FUN_1014ec80(int *param_1,ushort *param_2,ushort *param_3,ushort *para
            (**(code **)(*param_1 + 0x48))(&param_3,&local_18,&local_14,&param_2,param_5,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_3 != (ushort *)0x0) {
     (**(code **)(*(int *)param_3 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  local_14 = (undefined4)(0);
-  local_8 = (undefined4)(3);
+
+
   ((SCStr *)((SCStr *)&local_18))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16206,6 +16339,7 @@ __stdcall FUN_1014ec80(int *param_1,ushort *param_2,ushort *param_3,ushort *para
 undefined4 __stdcall FUN_1014eda0(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -16213,30 +16347,29 @@ undefined4 __stdcall FUN_1014eda0(int *param_1,ushort *param_2,ushort *param_3,u
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4900);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x54))(&param_3,&local_14,&param_2,param_4,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_3 != (ushort *)0x0) {
     (**(code **)(*(int *)param_3 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16246,6 +16379,7 @@ undefined4 __stdcall FUN_1014eda0(int *param_1,ushort *param_2,ushort *param_3,u
 undefined4 __stdcall FUN_1014ee90(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -16253,30 +16387,29 @@ undefined4 __stdcall FUN_1014ee90(int *param_1,ushort *param_2,ushort *param_3,u
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4930);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x60))(&param_3,&local_14,&param_2,param_4,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_3 != (ushort *)0x0) {
     (**(code **)(*(int *)param_3 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16286,28 +16419,28 @@ undefined4 __stdcall FUN_1014ee90(int *param_1,ushort *param_2,ushort *param_3,u
 undefined4 FUN_1014ef80(int *param_1,undefined4 param_2)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4960);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x3c))(&param_1,param_2,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x3c))(&param_1,param_2,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16317,6 +16450,7 @@ undefined4 FUN_1014ef80(int *param_1,undefined4 param_2)
 undefined4 __stdcall FUN_1014f020(int *param_1,ushort *param_2,ushort *param_3)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -16324,30 +16458,29 @@ undefined4 __stdcall FUN_1014f020(int *param_1,ushort *param_2,ushort *param_3)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4990);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x78))(&param_3,&local_14,&param_2,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_3 != (ushort *)0x0) {
     (**(code **)(*(int *)param_3 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16357,6 +16490,7 @@ undefined4 __stdcall FUN_1014f020(int *param_1,ushort *param_2,ushort *param_3)
 undefined4 __stdcall FUN_1014f110(int *param_1,ushort *param_2)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -16364,25 +16498,24 @@ undefined4 __stdcall FUN_1014f110(int *param_1,ushort *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e49c0);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x80))(&param_2,&local_14,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_2 != (ushort *)0x0) {
     (**(code **)(*(int *)param_2 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16392,29 +16525,29 @@ undefined4 __stdcall FUN_1014f110(int *param_1,ushort *param_2)
 undefined4 FUN_1014f1c0(int *param_1,undefined4 param_2,undefined4 param_3)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e49f0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
            (**(code **)(*param_1 + 0x14))
-                     (&param_1,param_2,param_3,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+                     (&param_1,param_2,param_3,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16424,6 +16557,7 @@ undefined4 FUN_1014f1c0(int *param_1,undefined4 param_2,undefined4 param_3)
 undefined4 __stdcall FUN_1014f260(int *param_1,ushort *param_2,ushort *param_3)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -16431,30 +16565,29 @@ undefined4 __stdcall FUN_1014f260(int *param_1,ushort *param_2,ushort *param_3)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4a20);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x74))(&param_3,&local_14,&param_2,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_3 != (ushort *)0x0) {
     (**(code **)(*(int *)param_3 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16464,28 +16597,28 @@ undefined4 __stdcall FUN_1014f260(int *param_1,ushort *param_2,ushort *param_3)
 undefined4 FUN_1014f350(int *param_1,undefined4 param_2)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4a50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x70))(&param_1,param_2,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x70))(&param_1,param_2,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16495,29 +16628,29 @@ undefined4 FUN_1014f350(int *param_1,undefined4 param_2)
 undefined4 FUN_1014f3f0(int *param_1,undefined4 param_2,undefined4 param_3)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4a80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
            (**(code **)(*param_1 + 0x6c))
-                     (&param_1,param_2,param_3,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+                     (&param_1,param_2,param_3,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16527,6 +16660,7 @@ undefined4 FUN_1014f3f0(int *param_1,undefined4 param_2,undefined4 param_3)
 undefined4 __stdcall FUN_1014f490(int *param_1,ushort *param_2,ushort *param_3,int param_4)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -16534,13 +16668,10 @@ undefined4 __stdcall FUN_1014f490(int *param_1,ushort *param_2,ushort *param_3,i
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4ab0);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
@@ -16548,17 +16679,19 @@ undefined4 __stdcall FUN_1014f490(int *param_1,ushort *param_2,ushort *param_3,i
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x28))(&param_3,&local_14,&param_2,param_3,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_3 != (ushort *)0x0) {
     (**(code **)(*(int *)param_3 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16568,28 +16701,28 @@ undefined4 __stdcall FUN_1014f490(int *param_1,ushort *param_2,ushort *param_3,i
 undefined4 FUN_1014f580(int *param_1,undefined4 param_2)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4ae0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x18))(&param_1,param_2,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x18))(&param_1,param_2,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16600,6 +16733,7 @@ undefined4
 __stdcall FUN_1014f6e0(int *param_1,int param_2,ushort *param_3,undefined4 param_4,undefined4 param_5)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -16607,12 +16741,10 @@ __stdcall FUN_1014f6e0(int *param_1,int param_2,ushort *param_3,undefined4 param
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4b40);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   bVar4 = (bool)(param_2 != 0);
   param_2 = (int)(0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
@@ -16620,14 +16752,16 @@ __stdcall FUN_1014f6e0(int *param_1,int param_2,ushort *param_3,undefined4 param
            (**(code **)(*param_1 + 0x68))(&param_3,bVar4,&param_2,param_4,param_5,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_3 != (ushort *)0x0) {
     (**(code **)(*(int *)param_3 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16637,28 +16771,28 @@ __stdcall FUN_1014f6e0(int *param_1,int param_2,ushort *param_3,undefined4 param
 undefined4 FUN_1014f7a0(int *param_1,undefined4 param_2)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4b70);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x38))(&param_1,param_2,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x38))(&param_1,param_2,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16668,29 +16802,29 @@ undefined4 FUN_1014f7a0(int *param_1,undefined4 param_2)
 undefined4 FUN_1014f8d0(int *param_1,undefined4 param_2,undefined4 param_3)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4ba0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
            (**(code **)(*param_1 + 0x14))
-                     (&param_1,param_2,param_3,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+                     (&param_1,param_2,param_3,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16700,28 +16834,28 @@ undefined4 FUN_1014f8d0(int *param_1,undefined4 param_2,undefined4 param_3)
 undefined4 FUN_1014f980(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4bd0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x34))(&param_1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x34))(&param_1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16731,28 +16865,28 @@ undefined4 FUN_1014f980(int *param_1)
 undefined4 FUN_1014fa30(int *param_1,undefined4 param_2)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4c00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x34))(&param_1,param_2,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x34))(&param_1,param_2,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16762,6 +16896,7 @@ undefined4 FUN_1014fa30(int *param_1,undefined4 param_2)
 undefined4 __stdcall FUN_1014fae0(int *param_1,ushort *param_2)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -16769,25 +16904,24 @@ undefined4 __stdcall FUN_1014fae0(int *param_1,ushort *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4c30);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x34))(&param_2,&local_14,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_2 != (ushort *)0x0) {
     (**(code **)(*(int *)param_2 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16797,29 +16931,29 @@ undefined4 __stdcall FUN_1014fae0(int *param_1,ushort *param_2)
 undefined4 FUN_1014fc20(int *param_1,int *param_2)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4c60);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   param_2 = (int *)((int *)((uint)(*(unsigned short *)((char *)&param_2 + 1)) << 8 | (uint)(param_2 != (int *)0x0)));
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x34))(&param_2,param_2,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x34))(&param_2,param_2,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_2 != (int *)0x0) {
     (**(code **)(*param_2 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16829,28 +16963,28 @@ undefined4 FUN_1014fc20(int *param_1,int *param_2)
 undefined4 FUN_1014fce0(int *param_1,undefined4 param_2)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4c90);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x34))(&param_1,param_2,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x34))(&param_1,param_2,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16860,6 +16994,7 @@ undefined4 FUN_1014fce0(int *param_1,undefined4 param_2)
 undefined4 __stdcall FUN_1014fd90(int *param_1,ushort *param_2)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -16867,25 +17002,24 @@ undefined4 __stdcall FUN_1014fd90(int *param_1,ushort *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4cc0);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x34))(&param_2,&local_14,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_2 != (ushort *)0x0) {
     (**(code **)(*(int *)param_2 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16895,6 +17029,7 @@ undefined4 __stdcall FUN_1014fd90(int *param_1,ushort *param_2)
 undefined4 __stdcall FUN_1014fe80(int *param_1,ushort *param_2,undefined4 param_3)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -16902,25 +17037,24 @@ undefined4 __stdcall FUN_1014fe80(int *param_1,ushort *param_2,undefined4 param_
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4cf0);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x34))(&param_2,&local_14,param_3,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_2 != (ushort *)0x0) {
     (**(code **)(*(int *)param_2 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16930,28 +17064,28 @@ undefined4 __stdcall FUN_1014fe80(int *param_1,ushort *param_2,undefined4 param_
 undefined4 FUN_1014ffb0(int *param_1,undefined4 param_2)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4d20);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x3c))(&param_1,param_2,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x3c))(&param_1,param_2,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16961,28 +17095,28 @@ undefined4 FUN_1014ffb0(int *param_1,undefined4 param_2)
 undefined4 FUN_10150050(int *param_1,undefined4 param_2)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4d50);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x38))(&param_1,param_2,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x38))(&param_1,param_2,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -16992,28 +17126,28 @@ undefined4 FUN_10150050(int *param_1,undefined4 param_2)
 undefined4 FUN_101500f0(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4d80);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x34))(&param_1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x34))(&param_1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -17023,28 +17157,28 @@ undefined4 FUN_101500f0(int *param_1)
 undefined4 FUN_101501a0(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4db0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x1c))(&param_1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x1c))(&param_1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -17054,28 +17188,28 @@ undefined4 FUN_101501a0(int *param_1)
 undefined4 FUN_10150330(int *param_1,undefined4 param_2)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4e10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x44))(&param_1,param_2,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x44))(&param_1,param_2,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -17085,28 +17219,28 @@ undefined4 FUN_10150330(int *param_1,undefined4 param_2)
 undefined4 FUN_101503d0(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4e40);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x40))(&param_1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x40))(&param_1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -17116,28 +17250,28 @@ undefined4 FUN_101503d0(int *param_1)
 undefined4 FUN_10150470(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4e70);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x60))(&param_1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x60))(&param_1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -17147,28 +17281,28 @@ undefined4 FUN_10150470(int *param_1)
 undefined4 FUN_10150510(int *param_1,undefined4 param_2)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4ea0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x50))(&param_1,param_2,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x50))(&param_1,param_2,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -17178,29 +17312,29 @@ undefined4 FUN_10150510(int *param_1,undefined4 param_2)
 undefined4 FUN_101505b0(int *param_1,undefined4 param_2,undefined4 param_3)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4ed0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
            (**(code **)(*param_1 + 0x54))
-                     (&param_1,param_2,param_3,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+                     (&param_1,param_2,param_3,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -17210,28 +17344,28 @@ undefined4 FUN_101505b0(int *param_1,undefined4 param_2,undefined4 param_3)
 undefined4 FUN_10150690(int *param_1,undefined4 param_2)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4f00);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x30))(&param_1,param_2,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x30))(&param_1,param_2,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -17241,28 +17375,28 @@ undefined4 FUN_10150690(int *param_1,undefined4 param_2)
 undefined4 FUN_101507c0(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4f30);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x18))(&param_1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x18))(&param_1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -17272,28 +17406,28 @@ undefined4 FUN_101507c0(int *param_1)
 undefined4 FUN_10150b50(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4ff0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x94))(&param_1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x94))(&param_1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -17303,28 +17437,28 @@ undefined4 FUN_10150b50(int *param_1)
 undefined4 FUN_10150bf0(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5020);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x24))(&param_1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x24))(&param_1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -17334,28 +17468,28 @@ undefined4 FUN_10150bf0(int *param_1)
 undefined4 FUN_10150c90(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5050);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x20))(&param_1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x20))(&param_1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -17365,28 +17499,28 @@ undefined4 FUN_10150c90(int *param_1)
 undefined4 FUN_10150d30(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5080);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x58))(&param_1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x58))(&param_1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -17396,28 +17530,28 @@ undefined4 FUN_10150d30(int *param_1)
 undefined4 FUN_10150ec0(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e50e0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x38))(&param_1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x38))(&param_1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -17427,28 +17561,28 @@ undefined4 FUN_10150ec0(int *param_1)
 undefined4 FUN_10151280(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e51a0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x40))(&param_1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x40))(&param_1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -17458,28 +17592,28 @@ undefined4 FUN_10151280(int *param_1)
 undefined4 FUN_10151670(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5260);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x30))(&param_1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x30))(&param_1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -17489,24 +17623,24 @@ undefined4 FUN_10151670(int *param_1)
 void __stdcall FUN_10151790(int *param_1,ushort *param_2)
 
 {
+ try {
   uint uVar1;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5290);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0x4c))(&local_14,uVar1);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -17516,29 +17650,29 @@ void __stdcall FUN_10151790(int *param_1,ushort *param_2)
 void __stdcall FUN_101519e0(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4)
 
 {
+ try {
   uint uVar1;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e52c0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   (**(code **)(*param_1 + 0x14))(&local_14,&param_2,param_4,uVar1);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -17548,24 +17682,24 @@ void __stdcall FUN_101519e0(int *param_1,ushort *param_2,ushort *param_3,undefin
 void __stdcall FUN_10151ac0(int *param_1,ushort *param_2)
 
 {
+ try {
   uint uVar1;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e52f0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0x80))(&local_14,uVar1);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -17575,23 +17709,24 @@ void __stdcall FUN_10151ac0(int *param_1,ushort *param_2)
 void __stdcall FUN_10151b50(int *param_1)
 
 {
+ try {
   uint uVar1;
   SCStr local_14 [4];
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5320);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   ((SCStr *)(local_14))->int_allocRep("");
   (**(code **)(*param_1 + 0x80))(local_14,uVar1);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)(local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -17601,25 +17736,26 @@ void __stdcall FUN_10151b50(int *param_1)
 void __stdcall FUN_10151bd0(int *param_1,int param_2,ushort *param_3)
 
 {
+ try {
   uint uVar1;
   bool bVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5350);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   bVar2 = (bool)(param_2 != 0);
   param_2 = (int)(0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   (**(code **)(*param_1 + 0x7c))(bVar2,&param_2,uVar1);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -17629,24 +17765,25 @@ void __stdcall FUN_10151bd0(int *param_1,int param_2,ushort *param_3)
 void __stdcall FUN_10151c60(int *param_1,int param_2)
 
 {
+ try {
   uint uVar1;
   bool bVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5380);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   bVar2 = (bool)(param_2 != 0);
   ((SCStr *)((SCStr *)&param_2))->int_allocRep("");
   (**(code **)(*param_1 + 0x7c))(bVar2,&param_2,uVar1);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -17656,30 +17793,30 @@ void __stdcall FUN_10151c60(int *param_1,int param_2)
 undefined4 __stdcall FUN_10151d10(int *param_1,undefined4 param_2,ushort *param_3,ushort *param_4)
 
 {
+ try {
   uint uVar1;
   undefined4 uVar2;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e53b0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_3);
   param_3 = (ushort *)((ushort *)0x0);
   ((SCStr *)((SCStr *)&param_3))->setFromUTF16(param_4);
   uVar2 = (undefined4)((**(code **)(*param_1 + 0x28))(param_2,&local_14,&param_3,uVar1));
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&param_3))->int_release();
   param_3 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar2);
+
+ } catch (...) { }
 }
 
 
@@ -17689,29 +17826,29 @@ undefined4 __stdcall FUN_10151d10(int *param_1,undefined4 param_2,ushort *param_
 void __stdcall FUN_10152180(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4)
 
 {
+ try {
   uint uVar1;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5470);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   (**(code **)(*param_1 + 0x18))(&local_14,&param_2,param_4,uVar1);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -17721,24 +17858,24 @@ void __stdcall FUN_10152180(int *param_1,ushort *param_2,ushort *param_3,undefin
 void __stdcall FUN_10152240(int *param_1,ushort *param_2)
 
 {
+ try {
   uint uVar1;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e54a0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0x50))(&local_14,uVar1);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -17748,24 +17885,24 @@ void __stdcall FUN_10152240(int *param_1,ushort *param_2)
 void __stdcall FUN_101522c0(int *param_1,ushort *param_2)
 
 {
+ try {
   uint uVar1;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e54d0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0x68))(&local_14,uVar1);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -17775,24 +17912,24 @@ void __stdcall FUN_101522c0(int *param_1,ushort *param_2)
 void __stdcall FUN_10152340(int *param_1,ushort *param_2)
 
 {
+ try {
   uint uVar1;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5500);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0x70))(&local_14,uVar1);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -17802,24 +17939,24 @@ void __stdcall FUN_10152340(int *param_1,ushort *param_2)
 void __stdcall FUN_101524a0(int *param_1,undefined4 param_2,ushort *param_3)
 
 {
+ try {
   uint uVar1;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5530);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_3);
   (**(code **)(*param_1 + 0x34))(param_2,&local_14,uVar1);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -17829,24 +17966,24 @@ void __stdcall FUN_101524a0(int *param_1,undefined4 param_2,ushort *param_3)
 void __stdcall FUN_10152530(int *param_1,undefined4 param_2,ushort *param_3,undefined4 param_4)
 
 {
+ try {
   uint uVar1;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5560);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_3);
   (**(code **)(*param_1 + 0x30))(param_2,&local_14,param_4,uVar1);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -17856,25 +17993,25 @@ void __stdcall FUN_10152530(int *param_1,undefined4 param_2,ushort *param_3,unde
 undefined1 __stdcall FUN_101527d0(int *param_1,ushort *param_2,undefined4 param_3,int param_4)
 
 {
+ try {
   undefined1 uVar1;
   uint uVar2;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e55c0);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   uVar1 = (undefined1)((**(code **)(*param_1 + 0x20))(&local_14,param_3,param_4 != 0,uVar2));
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined1)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -17884,25 +18021,25 @@ undefined1 __stdcall FUN_101527d0(int *param_1,ushort *param_2,undefined4 param_
 undefined1 __stdcall FUN_10152870(int *param_1,ushort *param_2,undefined4 param_3)
 
 {
+ try {
   undefined1 uVar1;
   uint uVar2;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e55f0);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   uVar1 = (undefined1)((**(code **)(*param_1 + 0x20))(&local_14,param_3,0,uVar2));
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined1)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -17912,29 +18049,29 @@ undefined1 __stdcall FUN_10152870(int *param_1,ushort *param_2,undefined4 param_
 undefined4 FUN_10152bc0(int *param_1,int *param_2)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5650);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   param_2 = (int *)((int *)((uint)(*(unsigned short *)((char *)&param_2 + 1)) << 8 | (uint)(param_2 != (int *)0x0)));
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x14))(&param_2,param_2,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x14))(&param_2,param_2,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_2 != (int *)0x0) {
     (**(code **)(*param_2 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -17944,28 +18081,28 @@ undefined4 FUN_10152bc0(int *param_1,int *param_2)
 undefined4 FUN_10152c70(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5680);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x14))(&param_1,1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x14))(&param_1,1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -17975,28 +18112,28 @@ undefined4 FUN_10152c70(int *param_1)
 undefined4 FUN_10152d10(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e56b0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x2c))(&param_1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x2c))(&param_1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -18006,6 +18143,7 @@ undefined4 FUN_10152d10(int *param_1)
 undefined4 __stdcall FUN_10152db0(int *param_1,ushort *param_2)
 
 {
+ try {
   undefined4 uVar1;
   uint uVar2;
   undefined4 *puVar3;
@@ -18013,25 +18151,24 @@ undefined4 __stdcall FUN_10152db0(int *param_1,ushort *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e56e0);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x18))(&param_2,&local_14,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_2 != (ushort *)0x0) {
     (**(code **)(*(int *)param_2 + 8))();
   }
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -18041,30 +18178,30 @@ undefined4 __stdcall FUN_10152db0(int *param_1,ushort *param_2)
 undefined1 __stdcall FUN_10152e60(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4)
 
 {
+ try {
   undefined1 uVar1;
   uint uVar2;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5710);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   uVar1 = (undefined1)((**(code **)(*param_1 + 0x28))(&local_14,&param_2,param_4,uVar2));
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined1)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -18074,25 +18211,25 @@ undefined1 __stdcall FUN_10152e60(int *param_1,ushort *param_2,ushort *param_3,u
 undefined1 __stdcall FUN_10152f30(int *param_1,ushort *param_2,int param_3)
 
 {
+ try {
   undefined1 uVar1;
   uint uVar2;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5740);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   uVar1 = (undefined1)((**(code **)(*param_1 + 0x24))(&local_14,param_3 != 0,uVar2));
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined1)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -18102,25 +18239,25 @@ undefined1 __stdcall FUN_10152f30(int *param_1,ushort *param_2,int param_3)
 undefined1 __stdcall FUN_10152fd0(int *param_1,ushort *param_2)
 
 {
+ try {
   undefined1 uVar1;
   uint uVar2;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5770);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   uVar1 = (undefined1)((**(code **)(*param_1 + 0x24))(&local_14,0,uVar2));
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined1)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -18130,28 +18267,28 @@ undefined1 __stdcall FUN_10152fd0(int *param_1,ushort *param_2)
 undefined4 FUN_10153070(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e57a0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x28))(&param_1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x28))(&param_1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -18161,28 +18298,28 @@ undefined4 FUN_10153070(int *param_1)
 undefined4 FUN_101533d0(int *param_1,undefined4 param_2)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5860);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x18))(&param_1,param_2,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x18))(&param_1,param_2,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -18192,28 +18329,28 @@ undefined4 FUN_101533d0(int *param_1,undefined4 param_2)
 undefined4 FUN_101534a0(int *param_1,undefined4 param_2)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5890);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x20))(&param_1,param_2,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x20))(&param_1,param_2,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -18223,28 +18360,28 @@ undefined4 FUN_101534a0(int *param_1,undefined4 param_2)
 undefined4 FUN_10153540(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e58c0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x28))(&param_1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x28))(&param_1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -18254,28 +18391,28 @@ undefined4 FUN_10153540(int *param_1)
 undefined4 FUN_101535e0(int *param_1,undefined4 param_2)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e58f0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x24))(&param_1,param_2,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x24))(&param_1,param_2,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -18285,29 +18422,29 @@ undefined4 FUN_101535e0(int *param_1,undefined4 param_2)
 undefined4 FUN_10153680(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5920);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
            (**(code **)(*param_1 + 0x14))
-                     (&param_1,param_2,param_3,param_4,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+                     (&param_1,param_2,param_3,param_4,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -18317,29 +18454,29 @@ undefined4 FUN_10153680(int *param_1,undefined4 param_2,undefined4 param_3,undef
 undefined4 FUN_10153720(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5950);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
            (**(code **)(*param_1 + 0x18))
-                     (&param_1,param_2,param_3,param_4,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+                     (&param_1,param_2,param_3,param_4,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -18372,28 +18509,28 @@ void __stdcall FUN_101541e0(int param_1,undefined4 param_2,undefined4 param_3,un
 undefined4 FUN_10154270(int *param_1)
 
 {
+ try {
   undefined4 uVar1;
   undefined4 *puVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5aa0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   puVar2 = (undefined4 *)((undefined4 *)
-           (**(code **)(*param_1 + 0x14))(&param_1,DAT_12126b84 ^ (uint)&stack0xfffffffc));
+           (**(code **)(*param_1 + 0x14))(&param_1,DAT_12126b84 ));
   uVar1 = (undefined4)(*puVar2);
   *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   if (param_1 != (int *)0x0) {
     (**(code **)(*param_1 + 8))();
-    ExceptionList = (void *)(local_10);
+
     return (undefined4)(uVar1);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -18403,25 +18540,25 @@ undefined4 FUN_10154270(int *param_1)
 undefined1 __stdcall FUN_10154310(int *param_1,ushort *param_2)
 
 {
+ try {
   undefined1 uVar1;
   uint uVar2;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5ad0);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   uVar1 = (undefined1)((**(code **)(*param_1 + 0x18))(&local_14,uVar2));
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined1)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -18431,24 +18568,24 @@ undefined1 __stdcall FUN_10154310(int *param_1,ushort *param_2)
 void __stdcall FUN_101543d0(int *param_1,ushort *param_2)
 
 {
+ try {
   uint uVar1;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5b00);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0x24))(&local_14,uVar1);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18458,24 +18595,24 @@ void __stdcall FUN_101543d0(int *param_1,ushort *param_2)
 void __stdcall FUN_101544d0(int *param_1,ushort *param_2,undefined4 param_3)
 
 {
+ try {
   uint uVar1;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5b30);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0x14))(&local_14,param_3,uVar1);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18485,30 +18622,30 @@ void __stdcall FUN_101544d0(int *param_1,ushort *param_2,undefined4 param_3)
 void __stdcall FUN_10154560(int *param_1,ushort *param_2,ushort *param_3,int param_4)
 
 {
+ try {
   uint uVar1;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5b60);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   param_3 = (ushort *)((ushort *)((uint)(*(unsigned short *)((char *)&param_3 + 1)) << 8 | (uint)(param_4 != 0)));
   (**(code **)(*param_1 + 0x1c))(&local_14,&param_2,param_3,uVar1);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18518,29 +18655,29 @@ void __stdcall FUN_10154560(int *param_1,ushort *param_2,ushort *param_3,int par
 void __stdcall FUN_10154630(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4)
 
 {
+ try {
   uint uVar1;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5b90);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   (**(code **)(*param_1 + 0x20))(&local_14,&param_2,param_4,uVar1);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18550,30 +18687,30 @@ void __stdcall FUN_10154630(int *param_1,ushort *param_2,ushort *param_3,undefin
 undefined1 __stdcall FUN_10154a20(int *param_1,ushort *param_2,ushort *param_3)
 
 {
+ try {
   undefined1 uVar1;
   uint uVar2;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5c20);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   uVar1 = (undefined1)((**(code **)(*param_1 + 0x20))(&local_14,&param_2,uVar2));
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined1)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -18583,28 +18720,28 @@ undefined1 __stdcall FUN_10154a20(int *param_1,ushort *param_2,ushort *param_3)
 undefined1 __stdcall FUN_10154af0(int *param_1,ushort *param_2)
 
 {
+ try {
   undefined1 uVar1;
   uint uVar2;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5c50);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   ((SCStr *)((SCStr *)&param_2))->int_allocRep((char *)0x0);
   uVar1 = (undefined1)((**(code **)(*param_1 + 0x20))(&local_14,&param_2,uVar2));
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&param_2))->int_release();
-  local_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return (undefined1)(uVar1);
+
+ } catch (...) { }
 }
 
 
@@ -18642,24 +18779,24 @@ void __stdcall FUN_10155360(int param_1,undefined4 param_2,undefined4 param_3,un
 void __stdcall FUN_101554f0(int *param_1,ushort *param_2)
 
 {
+ try {
   uint uVar1;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5da0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0x1c))(&local_14,uVar1);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18691,24 +18828,24 @@ void __stdcall FUN_101557a0(int param_1,undefined4 param_2,undefined4 param_3,un
 void __stdcall FUN_101558b0(int *param_1,ushort *param_2)
 
 {
+ try {
   uint uVar1;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5e00);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0x18))(&local_14,uVar1);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18718,23 +18855,23 @@ void __stdcall FUN_101558b0(int *param_1,ushort *param_2)
 void __stdcall FUN_101559c0(int *param_1,ushort *param_2)
 
 {
+ try {
   uint uVar1;
   undefined4 local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5e30);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0xc4))(&local_14,uVar1);
-  local_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 

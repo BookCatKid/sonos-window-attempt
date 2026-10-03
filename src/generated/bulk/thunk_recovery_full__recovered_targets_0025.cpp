@@ -2056,8 +2056,11 @@ int FUN_10ffac90(int param_1,int param_2)
 void FUN_10ffaca0(int param_1,int param_2)
 
 {
+ try {
   thunk_FUN_10ffa820(param_1,param_2,param_2 - param_1 >> 5,&stack0x0000000c);
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2695,6 +2698,7 @@ undefined4 * __fastcall FUN_110032a0(undefined4 *param_1)
 void __fastcall FUN_11003fb0(undefined4 *param_1)
 
 {
+ try {
   uint uVar1;
   void *pvStack_10;
   undefined1 *puStack_c;
@@ -2702,25 +2706,26 @@ void __fastcall FUN_11003fb0(undefined4 *param_1)
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCDeleteAsyncIOOperation);
   param_1[0x18] = (uint)&ghidra_vftable_SCDeleteAsyncIOOperation;
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_11792ea0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCBaseHttpAsyncIOOperation);
   param_1[0x18] = (uint)&ghidra_vftable_SCBaseHttpAsyncIOOperation;
   if ((undefined4 *)param_1[0x1125] != (undefined4 *)0x0) {
     (*(code *)**(undefined4 **)param_1[0x1125])(1,uVar1);
   }
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 0x1126)))->int_release();
   param_1[0x1126] = 0;
-  uStack_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)(param_1 + 0x1124)))->int_release();
   param_1[0x1124] = 0;
   thunk_FUN_111c0a80();
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2732,6 +2737,7 @@ void __fastcall FUN_11003fb0(undefined4 *param_1)
 void __fastcall FUN_110040b0(undefined4 *param_1)
 
 {
+ try {
   uint uVar1;
   void *pvStack_10;
   undefined1 *puStack_c;
@@ -2739,25 +2745,26 @@ void __fastcall FUN_110040b0(undefined4 *param_1)
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCPostAsyncIOOperation);
   param_1[0x18] = (uint)&ghidra_vftable_SCPostAsyncIOOperation;
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_11792ea0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCBaseHttpAsyncIOOperation);
   param_1[0x18] = (uint)&ghidra_vftable_SCBaseHttpAsyncIOOperation;
   if ((undefined4 *)param_1[0x1125] != (undefined4 *)0x0) {
     (*(code *)**(undefined4 **)param_1[0x1125])(1,uVar1);
   }
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 0x1126)))->int_release();
   param_1[0x1126] = 0;
-  uStack_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)(param_1 + 0x1124)))->int_release();
   param_1[0x1124] = 0;
   thunk_FUN_111c0a80();
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2769,6 +2776,7 @@ void __fastcall FUN_110040b0(undefined4 *param_1)
 void __fastcall FUN_110040d0(undefined4 *param_1)
 
 {
+ try {
   uint uVar1;
   void *pvStack_10;
   undefined1 *puStack_c;
@@ -2776,25 +2784,26 @@ void __fastcall FUN_110040d0(undefined4 *param_1)
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCPutAsyncIOOperation);
   param_1[0x18] = (uint)&ghidra_vftable_SCPutAsyncIOOperation;
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_11792ea0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCBaseHttpAsyncIOOperation);
   param_1[0x18] = (uint)&ghidra_vftable_SCBaseHttpAsyncIOOperation;
   if ((undefined4 *)param_1[0x1125] != (undefined4 *)0x0) {
     (*(code *)**(undefined4 **)param_1[0x1125])(1,uVar1);
   }
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 0x1126)))->int_release();
   param_1[0x1126] = 0;
-  uStack_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)(param_1 + 0x1124)))->int_release();
   param_1[0x1124] = 0;
   thunk_FUN_111c0a80();
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -3973,6 +3982,7 @@ undefined4 * __fastcall FUN_11017b00(undefined4 *param_1)
 void __fastcall FUN_11017c70(undefined4 *param_1)
 
 {
+ try {
   undefined4 *puVar1;
   uint uVar2;
   int iVar3;
@@ -3981,11 +3991,10 @@ void __fastcall FUN_11017c70(undefined4 *param_1)
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114f5ce0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   if ((int *)param_1[1] != (int *)0x0) {
     if (param_1[2] != 0) {
@@ -3998,8 +4007,10 @@ void __fastcall FUN_11017c70(undefined4 *param_1)
     param_1[1] = 0;
     param_1[2] = 0;
   }
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -4024,6 +4035,7 @@ void __fastcall FUN_11017e60(undefined4 *param_1)
 void __fastcall FUN_11017e70(undefined4 *param_1)
 
 {
+ try {
   int *piVar1;
   uint uVar2;
   void *pvStack_10;
@@ -4032,11 +4044,10 @@ void __fastcall FUN_11017e70(undefined4 *param_1)
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpCheckForControllerUpdates);
   param_1[2] = (uint)&ghidra_vftable_SCOpCheckForControllerUpdates;
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_11796e40);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
   param_1[2] = (uint)&ghidra_vftable_SCOpImpl;
   if (param_1[3] != 0) {
@@ -4052,16 +4063,16 @@ void __fastcall FUN_11017e70(undefined4 *param_1)
   param_1[0xc] = (uint)&ghidra_vftable_SCIObjImpl;
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   param_1[0xc] = (uint)&ghidra_vftable_SCIObj;
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 0xb)))->int_release();
   param_1[0xb] = 0;
-  uStack_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)(param_1 + 10)))->int_release();
   param_1[10] = 0;
   param_1[5] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   piVar1 = (int *)((int *)param_1[4]);
-  uStack_8 = (undefined4)(2);
+
   if (piVar1 != (int *)0x0) {
     param_1[3] = 0;
     param_1[4] = 0;
@@ -4072,8 +4083,10 @@ void __fastcall FUN_11017e70(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -4697,6 +4710,7 @@ void FUN_11019790(undefined4 param_1,undefined4 param_2)
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall Recovered_Bulk::FUN_1101adc0(int param_2)
 {
   int param_1 = (int )this;
+ try {
   undefined4 *puVar1;
   undefined4 *puVar2;
   uint uVar3;
@@ -4704,24 +4718,22 @@ void FUN_11019790(undefined4 param_1,undefined4 param_2)
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
-  
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117c174c);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar3 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+
+
+  uVar3 = (uint)(DAT_12126b84);
   puVar4 = (undefined4 *)(*(undefined4 **)(param_1 + 0x18));
   puVar2 = (undefined4 *)((undefined4 *)0x0);
   while( true ) {
     puVar1 = (undefined4 *)(puVar4);
     if (puVar1 == (undefined4 *)0x0) {
-      ExceptionList = (void *)(&pvStack_10);
+
       puVar4 = (undefined4 *)(operator_new(8));
       if (puVar4 == (undefined4 *)0x0) {
         puVar4 = (undefined4 *)((undefined4 *)0x0);
       }
       else {
         *puVar4 = (undefined4)(0);
-        uStack_8 = (undefined4)(1);
+
         puVar4[1] = param_2;
         if (param_2 != 0) {
           thunk_FUN_1123fce0(param_2 + 4,uVar3);
@@ -4733,7 +4745,7 @@ void FUN_11019790(undefined4 param_1,undefined4 param_2)
       else {
         *puVar2 = (undefined4)(puVar4);
       }
-      ExceptionList = (void *)(pvStack_10);
+
       return (/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4)(1);
     }
     if (puVar1[1] == param_2) break;
@@ -4741,6 +4753,8 @@ void FUN_11019790(undefined4 param_1,undefined4 param_2)
     puVar2 = (undefined4 *)(puVar1);
   }
   return (/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4)(0);
+
+ } catch (...) { }
 }
 
 
@@ -4750,6 +4764,7 @@ void FUN_11019790(undefined4 param_1,undefined4 param_2)
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall Recovered_Bulk::FUN_1101ae70(int param_2)
 {
   int param_1 = (int )this;
+ try {
   undefined4 *puVar1;
   undefined4 *puVar2;
   undefined4 *puVar3;
@@ -4760,9 +4775,8 @@ void FUN_11019790(undefined4 param_1,undefined4 param_2)
   undefined4 uStack_8;
   
   *(undefined1 *)(param_1 + 0x6b8) = 0;
-  puStack_c = (undefined1 *)(LAB_117c17f0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar4 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+
+  uVar4 = (uint)(DAT_12126b84);
   puVar1 = (undefined4 *)(*(undefined4 **)(param_1 + 0x18));
   puVar3 = (undefined4 *)((undefined4 *)0x0);
   do {
@@ -4773,7 +4787,7 @@ void FUN_11019790(undefined4 param_1,undefined4 param_2)
     }
     puVar1 = (undefined4 *)((undefined4 *)*puVar3);
   } while (puVar3[1] != param_2);
-  ExceptionList = (void *)(&pvStack_10);
+
   if (puVar2 == (undefined4 *)0x0) {
     *(undefined4 **)(param_1 + 0x18) = puVar1;
   }
@@ -4784,13 +4798,15 @@ void FUN_11019790(undefined4 param_1,undefined4 param_2)
     *(undefined4 *)(param_1 + 0x1c) = **(undefined4 **)(param_1 + 0x1c);
   }
   puVar1 = (undefined4 *)((undefined4 *)puVar3[1]);
-  uStack_8 = (undefined4)(0);
+
   if ((puVar1 != (undefined4 *)0x0) && (iVar5 = thunk_FUN_1123fcd0(puVar1 + 1,uVar4), iVar5 == 0)) {
     (**(code **)*puVar1)(1);
   }
   thunk_FUN_1148a50e(puVar3,8);
-  ExceptionList = (void *)(pvStack_10);
+
   return (/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4)(1);
+
+ } catch (...) { }
 }
 
 
@@ -5244,6 +5260,7 @@ void __fastcall FUN_1101cd70(undefined4 *param_1)
 void __fastcall FUN_1101ce50(undefined4 *param_1)
 
 {
+ try {
   int iVar1;
   int *piVar2;
   uint uVar3;
@@ -5255,11 +5272,10 @@ void __fastcall FUN_1101ce50(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNowPlayingSourceHls);
   param_1[3] = (uint)&ghidra_vftable_SCNowPlayingSourceHls;
   param_1[4] = (uint)&ghidra_vftable_SCNowPlayingSourceHls;
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_1179d5c0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar3 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar3 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNowPlayingSource);
   param_1[3] = (uint)&ghidra_vftable_SCNowPlayingSource;
   param_1[4] = (uint)&ghidra_vftable_SCNowPlayingSource;
@@ -5268,7 +5284,7 @@ void __fastcall FUN_1101ce50(undefined4 *param_1)
     (*(code *)**(undefined4 **)param_1[10])(1);
   }
   iVar1 = (int)(param_1[0x10]);
-  uStack_8 = (undefined4)(0);
+
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
     iVar4 = (int)(thunk_FUN_1123fcd0((void *)(iVar1 + -0x10)));
     if (iVar4 == 0) {
@@ -5279,20 +5295,20 @@ void __fastcall FUN_1101ce50(undefined4 *param_1)
     }
   }
   piVar2 = (int *)((int *)param_1[0xf]);
-  uStack_8 = (undefined4)(1);
+
   if (piVar2 != (int *)0x0) {
     param_1[0xe] = 0;
     param_1[0xf] = 0;
     (**(code **)(*piVar2 + 8))();
   }
-  uStack_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)(param_1 + 9)))->int_release();
   param_1[9] = 0;
-  uStack_8 = (undefined4)(3);
+
   ((SCStr *)((SCStr *)(param_1 + 8)))->int_release();
   param_1[8] = 0;
   piVar2 = (int *)((int *)param_1[7]);
-  uStack_8 = (undefined4)(4);
+
   if (piVar2 != (int *)0x0) {
     param_1[6] = 0;
     param_1[7] = 0;
@@ -5304,8 +5320,10 @@ void __fastcall FUN_1101ce50(undefined4 *param_1)
   param_1[2] = 0;
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -5317,6 +5335,7 @@ void __fastcall FUN_1101ce50(undefined4 *param_1)
 void __fastcall FUN_1101ce70(undefined4 *param_1)
 
 {
+ try {
   int iVar1;
   int *piVar2;
   uint uVar3;
@@ -5328,11 +5347,10 @@ void __fastcall FUN_1101ce70(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNowPlayingSourceHlsStatic);
   param_1[3] = (uint)&ghidra_vftable_SCNowPlayingSourceHlsStatic;
   param_1[4] = (uint)&ghidra_vftable_SCNowPlayingSourceHlsStatic;
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_1179d5c0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar3 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar3 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNowPlayingSource);
   param_1[3] = (uint)&ghidra_vftable_SCNowPlayingSource;
   param_1[4] = (uint)&ghidra_vftable_SCNowPlayingSource;
@@ -5341,7 +5359,7 @@ void __fastcall FUN_1101ce70(undefined4 *param_1)
     (*(code *)**(undefined4 **)param_1[10])(1);
   }
   iVar1 = (int)(param_1[0x10]);
-  uStack_8 = (undefined4)(0);
+
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
     iVar4 = (int)(thunk_FUN_1123fcd0((void *)(iVar1 + -0x10)));
     if (iVar4 == 0) {
@@ -5352,20 +5370,20 @@ void __fastcall FUN_1101ce70(undefined4 *param_1)
     }
   }
   piVar2 = (int *)((int *)param_1[0xf]);
-  uStack_8 = (undefined4)(1);
+
   if (piVar2 != (int *)0x0) {
     param_1[0xe] = 0;
     param_1[0xf] = 0;
     (**(code **)(*piVar2 + 8))();
   }
-  uStack_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)(param_1 + 9)))->int_release();
   param_1[9] = 0;
-  uStack_8 = (undefined4)(3);
+
   ((SCStr *)((SCStr *)(param_1 + 8)))->int_release();
   param_1[8] = 0;
   piVar2 = (int *)((int *)param_1[7]);
-  uStack_8 = (undefined4)(4);
+
   if (piVar2 != (int *)0x0) {
     param_1[6] = 0;
     param_1[7] = 0;
@@ -5377,8 +5395,10 @@ void __fastcall FUN_1101ce70(undefined4 *param_1)
   param_1[2] = 0;
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -5390,6 +5410,7 @@ void __fastcall FUN_1101ce70(undefined4 *param_1)
 void __fastcall FUN_1101ce90(undefined4 *param_1)
 
 {
+ try {
   int iVar1;
   int *piVar2;
   uint uVar3;
@@ -5401,11 +5422,10 @@ void __fastcall FUN_1101ce90(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNowPlayingSourceInternetRadio);
   param_1[3] = (uint)&ghidra_vftable_SCNowPlayingSourceInternetRadio;
   param_1[4] = (uint)&ghidra_vftable_SCNowPlayingSourceInternetRadio;
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_1179d5c0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar3 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar3 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNowPlayingSource);
   param_1[3] = (uint)&ghidra_vftable_SCNowPlayingSource;
   param_1[4] = (uint)&ghidra_vftable_SCNowPlayingSource;
@@ -5414,7 +5434,7 @@ void __fastcall FUN_1101ce90(undefined4 *param_1)
     (*(code *)**(undefined4 **)param_1[10])(1);
   }
   iVar1 = (int)(param_1[0x10]);
-  uStack_8 = (undefined4)(0);
+
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
     iVar4 = (int)(thunk_FUN_1123fcd0((void *)(iVar1 + -0x10)));
     if (iVar4 == 0) {
@@ -5425,20 +5445,20 @@ void __fastcall FUN_1101ce90(undefined4 *param_1)
     }
   }
   piVar2 = (int *)((int *)param_1[0xf]);
-  uStack_8 = (undefined4)(1);
+
   if (piVar2 != (int *)0x0) {
     param_1[0xe] = 0;
     param_1[0xf] = 0;
     (**(code **)(*piVar2 + 8))();
   }
-  uStack_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)(param_1 + 9)))->int_release();
   param_1[9] = 0;
-  uStack_8 = (undefined4)(3);
+
   ((SCStr *)((SCStr *)(param_1 + 8)))->int_release();
   param_1[8] = 0;
   piVar2 = (int *)((int *)param_1[7]);
-  uStack_8 = (undefined4)(4);
+
   if (piVar2 != (int *)0x0) {
     param_1[6] = 0;
     param_1[7] = 0;
@@ -5450,8 +5470,10 @@ void __fastcall FUN_1101ce90(undefined4 *param_1)
   param_1[2] = 0;
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -5463,6 +5485,7 @@ void __fastcall FUN_1101ce90(undefined4 *param_1)
 void __fastcall FUN_1101ceb0(undefined4 *param_1)
 
 {
+ try {
   int iVar1;
   int *piVar2;
   uint uVar3;
@@ -5474,11 +5497,10 @@ void __fastcall FUN_1101ceb0(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNowPlayingSourceLineIn);
   param_1[3] = (uint)&ghidra_vftable_SCNowPlayingSourceLineIn;
   param_1[4] = (uint)&ghidra_vftable_SCNowPlayingSourceLineIn;
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_1179d5c0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar3 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar3 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNowPlayingSource);
   param_1[3] = (uint)&ghidra_vftable_SCNowPlayingSource;
   param_1[4] = (uint)&ghidra_vftable_SCNowPlayingSource;
@@ -5487,7 +5509,7 @@ void __fastcall FUN_1101ceb0(undefined4 *param_1)
     (*(code *)**(undefined4 **)param_1[10])(1);
   }
   iVar1 = (int)(param_1[0x10]);
-  uStack_8 = (undefined4)(0);
+
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
     iVar4 = (int)(thunk_FUN_1123fcd0((void *)(iVar1 + -0x10)));
     if (iVar4 == 0) {
@@ -5498,20 +5520,20 @@ void __fastcall FUN_1101ceb0(undefined4 *param_1)
     }
   }
   piVar2 = (int *)((int *)param_1[0xf]);
-  uStack_8 = (undefined4)(1);
+
   if (piVar2 != (int *)0x0) {
     param_1[0xe] = 0;
     param_1[0xf] = 0;
     (**(code **)(*piVar2 + 8))();
   }
-  uStack_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)(param_1 + 9)))->int_release();
   param_1[9] = 0;
-  uStack_8 = (undefined4)(3);
+
   ((SCStr *)((SCStr *)(param_1 + 8)))->int_release();
   param_1[8] = 0;
   piVar2 = (int *)((int *)param_1[7]);
-  uStack_8 = (undefined4)(4);
+
   if (piVar2 != (int *)0x0) {
     param_1[6] = 0;
     param_1[7] = 0;
@@ -5523,8 +5545,10 @@ void __fastcall FUN_1101ceb0(undefined4 *param_1)
   param_1[2] = 0;
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -5536,6 +5560,7 @@ void __fastcall FUN_1101ceb0(undefined4 *param_1)
 void __fastcall FUN_1101cff0(undefined4 *param_1)
 
 {
+ try {
   int iVar1;
   int *piVar2;
   uint uVar3;
@@ -5547,11 +5572,10 @@ void __fastcall FUN_1101cff0(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNowPlayingSourceSonosAlarm);
   param_1[3] = (uint)&ghidra_vftable_SCNowPlayingSourceSonosAlarm;
   param_1[4] = (uint)&ghidra_vftable_SCNowPlayingSourceSonosAlarm;
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_1179d5c0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar3 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar3 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNowPlayingSource);
   param_1[3] = (uint)&ghidra_vftable_SCNowPlayingSource;
   param_1[4] = (uint)&ghidra_vftable_SCNowPlayingSource;
@@ -5560,7 +5584,7 @@ void __fastcall FUN_1101cff0(undefined4 *param_1)
     (*(code *)**(undefined4 **)param_1[10])(1);
   }
   iVar1 = (int)(param_1[0x10]);
-  uStack_8 = (undefined4)(0);
+
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
     iVar4 = (int)(thunk_FUN_1123fcd0((void *)(iVar1 + -0x10)));
     if (iVar4 == 0) {
@@ -5571,20 +5595,20 @@ void __fastcall FUN_1101cff0(undefined4 *param_1)
     }
   }
   piVar2 = (int *)((int *)param_1[0xf]);
-  uStack_8 = (undefined4)(1);
+
   if (piVar2 != (int *)0x0) {
     param_1[0xe] = 0;
     param_1[0xf] = 0;
     (**(code **)(*piVar2 + 8))();
   }
-  uStack_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)(param_1 + 9)))->int_release();
   param_1[9] = 0;
-  uStack_8 = (undefined4)(3);
+
   ((SCStr *)((SCStr *)(param_1 + 8)))->int_release();
   param_1[8] = 0;
   piVar2 = (int *)((int *)param_1[7]);
-  uStack_8 = (undefined4)(4);
+
   if (piVar2 != (int *)0x0) {
     param_1[6] = 0;
     param_1[7] = 0;
@@ -5596,8 +5620,10 @@ void __fastcall FUN_1101cff0(undefined4 *param_1)
   param_1[2] = 0;
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -5609,6 +5635,7 @@ void __fastcall FUN_1101cff0(undefined4 *param_1)
 void __fastcall FUN_1101d010(undefined4 *param_1)
 
 {
+ try {
   int iVar1;
   int *piVar2;
   uint uVar3;
@@ -5620,11 +5647,10 @@ void __fastcall FUN_1101d010(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNowPlayingSourceVirtualLineIn);
   param_1[3] = (uint)&ghidra_vftable_SCNowPlayingSourceVirtualLineIn;
   param_1[4] = (uint)&ghidra_vftable_SCNowPlayingSourceVirtualLineIn;
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_1179d5c0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar3 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar3 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNowPlayingSource);
   param_1[3] = (uint)&ghidra_vftable_SCNowPlayingSource;
   param_1[4] = (uint)&ghidra_vftable_SCNowPlayingSource;
@@ -5633,7 +5659,7 @@ void __fastcall FUN_1101d010(undefined4 *param_1)
     (*(code *)**(undefined4 **)param_1[10])(1);
   }
   iVar1 = (int)(param_1[0x10]);
-  uStack_8 = (undefined4)(0);
+
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
     iVar4 = (int)(thunk_FUN_1123fcd0((void *)(iVar1 + -0x10)));
     if (iVar4 == 0) {
@@ -5644,20 +5670,20 @@ void __fastcall FUN_1101d010(undefined4 *param_1)
     }
   }
   piVar2 = (int *)((int *)param_1[0xf]);
-  uStack_8 = (undefined4)(1);
+
   if (piVar2 != (int *)0x0) {
     param_1[0xe] = 0;
     param_1[0xf] = 0;
     (**(code **)(*piVar2 + 8))();
   }
-  uStack_8 = (undefined4)(2);
+
   ((SCStr *)((SCStr *)(param_1 + 9)))->int_release();
   param_1[9] = 0;
-  uStack_8 = (undefined4)(3);
+
   ((SCStr *)((SCStr *)(param_1 + 8)))->int_release();
   param_1[8] = 0;
   piVar2 = (int *)((int *)param_1[7]);
-  uStack_8 = (undefined4)(4);
+
   if (piVar2 != (int *)0x0) {
     param_1[6] = 0;
     param_1[7] = 0;
@@ -5669,8 +5695,10 @@ void __fastcall FUN_1101d010(undefined4 *param_1)
   param_1[2] = 0;
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -7171,6 +7199,7 @@ undefined4 * __fastcall FUN_110267d0(undefined4 *param_1)
 void __fastcall FUN_11026c20(undefined4 *param_1)
 
 {
+ try {
   undefined4 *puVar1;
   uint uVar2;
   int iVar3;
@@ -7179,11 +7208,10 @@ void __fastcall FUN_11026c20(undefined4 *param_1)
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114f5ce0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   if ((int *)param_1[1] != (int *)0x0) {
     if (param_1[2] != 0) {
@@ -7196,8 +7224,10 @@ void __fastcall FUN_11026c20(undefined4 *param_1)
     param_1[1] = 0;
     param_1[2] = 0;
   }
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -7309,6 +7339,7 @@ void __fastcall FUN_11027460(undefined4 *param_1)
 void __fastcall FUN_11027470(undefined4 *param_1)
 
 {
+ try {
   int *piVar1;
   uint uVar2;
   void *pvStack_10;
@@ -7317,11 +7348,10 @@ void __fastcall FUN_11027470(undefined4 *param_1)
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpQueueReplaceAllTracks);
   param_1[2] = (uint)&ghidra_vftable_SCOpQueueReplaceAllTracks;
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_11798f70);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
   param_1[2] = (uint)&ghidra_vftable_SCOpImpl;
   if (param_1[3] != 0) {
@@ -7337,16 +7367,16 @@ void __fastcall FUN_11027470(undefined4 *param_1)
   param_1[0xc] = (uint)&ghidra_vftable_SCIObjImpl;
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   param_1[0xc] = (uint)&ghidra_vftable_SCIObj;
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 0xb)))->int_release();
   param_1[0xb] = 0;
-  uStack_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)(param_1 + 10)))->int_release();
   param_1[10] = 0;
   param_1[5] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   piVar1 = (int *)((int *)param_1[4]);
-  uStack_8 = (undefined4)(2);
+
   if (piVar1 != (int *)0x0) {
     param_1[3] = 0;
     param_1[4] = 0;
@@ -7357,8 +7387,10 @@ void __fastcall FUN_11027470(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -9729,6 +9761,7 @@ bool __fastcall FUN_1103a150(int param_1)
 void __fastcall FUN_1103a940(undefined4 *param_1)
 
 {
+ try {
   int *piVar1;
   uint uVar2;
   void *pvStack_10;
@@ -9738,11 +9771,10 @@ void __fastcall FUN_1103a940(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCBTNowPlayingSource);
   param_1[3] = (uint)&ghidra_vftable_SCBTNowPlayingSource;
   param_1[6] = (uint)&ghidra_vftable_SCBTNowPlayingSource;
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_11797a00);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNowPlayingSourceProxy);
   param_1[3] = (uint)&ghidra_vftable_SCNowPlayingSourceProxy;
   param_1[6] = (uint)&ghidra_vftable_SCNowPlayingSourceProxy;
@@ -9751,7 +9783,7 @@ void __fastcall FUN_1103a940(undefined4 *param_1)
   param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   piVar1 = (int *)((int *)param_1[8]);
-  uStack_8 = (undefined4)(0);
+
   if (piVar1 != (int *)0x0) {
     param_1[7] = 0;
     param_1[8] = 0;
@@ -9761,7 +9793,7 @@ void __fastcall FUN_1103a940(undefined4 *param_1)
   thunk_FUN_11240850();
   param_1[3] = (uint)&ghidra_vftable_SCNowPlayingEventSink;
   piVar1 = (int *)((int *)param_1[5]);
-  uStack_8 = (undefined4)(1);
+
   if (piVar1 != (int *)0x0) {
     param_1[4] = 0;
     param_1[5] = 0;
@@ -9771,8 +9803,10 @@ void __fastcall FUN_1103a940(undefined4 *param_1)
   param_1[2] = 0;
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12304,6 +12338,7 @@ undefined4 * __fastcall FUN_1105f410(undefined4 *param_1)
 void __fastcall FUN_1105f5d0(undefined4 *param_1)
 
 {
+ try {
   undefined4 *puVar1;
   uint uVar2;
   int iVar3;
@@ -12312,11 +12347,10 @@ void __fastcall FUN_1105f5d0(undefined4 *param_1)
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114f5ce0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   if ((int *)param_1[1] != (int *)0x0) {
     if (param_1[2] != 0) {
@@ -12329,8 +12363,10 @@ void __fastcall FUN_1105f5d0(undefined4 *param_1)
     param_1[1] = 0;
     param_1[2] = 0;
   }
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12495,6 +12531,7 @@ void __fastcall FUN_11061ae0(undefined4 *param_1)
 void __fastcall FUN_11061af0(undefined4 *param_1)
 
 {
+ try {
   int *piVar1;
   uint uVar2;
   void *pvStack_10;
@@ -12503,11 +12540,10 @@ void __fastcall FUN_11061af0(undefined4 *param_1)
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpAddTracksToQueue);
   param_1[2] = (uint)&ghidra_vftable_SCOpAddTracksToQueue;
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117a2520);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
   param_1[2] = (uint)&ghidra_vftable_SCOpImpl;
   if (param_1[3] != 0) {
@@ -12523,16 +12559,16 @@ void __fastcall FUN_11061af0(undefined4 *param_1)
   param_1[0xc] = (uint)&ghidra_vftable_SCIObjImpl;
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   param_1[0xc] = (uint)&ghidra_vftable_SCIObj;
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 0xb)))->int_release();
   param_1[0xb] = 0;
-  uStack_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)(param_1 + 10)))->int_release();
   param_1[10] = 0;
   param_1[5] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   piVar1 = (int *)((int *)param_1[4]);
-  uStack_8 = (undefined4)(2);
+
   if (piVar1 != (int *)0x0) {
     param_1[3] = 0;
     param_1[4] = 0;
@@ -12543,8 +12579,10 @@ void __fastcall FUN_11061af0(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12656,6 +12694,7 @@ void __fastcall FUN_11062710(undefined4 *param_1)
 void __fastcall FUN_11062720(undefined4 *param_1)
 
 {
+ try {
   int *piVar1;
   uint uVar2;
   void *pvStack_10;
@@ -12664,11 +12703,10 @@ void __fastcall FUN_11062720(undefined4 *param_1)
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpGenericUpdateQueue);
   param_1[2] = (uint)&ghidra_vftable_SCOpGenericUpdateQueue;
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117a26d0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
   param_1[2] = (uint)&ghidra_vftable_SCOpImpl;
   if (param_1[3] != 0) {
@@ -12684,16 +12722,16 @@ void __fastcall FUN_11062720(undefined4 *param_1)
   param_1[0xc] = (uint)&ghidra_vftable_SCIObjImpl;
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   param_1[0xc] = (uint)&ghidra_vftable_SCIObj;
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 0xb)))->int_release();
   param_1[0xb] = 0;
-  uStack_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)(param_1 + 10)))->int_release();
   param_1[10] = 0;
   param_1[5] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   piVar1 = (int *)((int *)param_1[4]);
-  uStack_8 = (undefined4)(2);
+
   if (piVar1 != (int *)0x0) {
     param_1[3] = 0;
     param_1[4] = 0;
@@ -12704,8 +12742,10 @@ void __fastcall FUN_11062720(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12858,6 +12898,7 @@ undefined4 * __fastcall FUN_11064960(undefined4 *param_1)
 void __fastcall FUN_11064c70(undefined4 *param_1)
 
 {
+ try {
   undefined4 *puVar1;
   uint uVar2;
   int iVar3;
@@ -12866,11 +12907,10 @@ void __fastcall FUN_11064c70(undefined4 *param_1)
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114f5ce0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   if ((int *)param_1[1] != (int *)0x0) {
     if (param_1[2] != 0) {
@@ -12883,8 +12923,10 @@ void __fastcall FUN_11064c70(undefined4 *param_1)
     param_1[1] = 0;
     param_1[2] = 0;
   }
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -12896,6 +12938,7 @@ void __fastcall FUN_11064c70(undefined4 *param_1)
 void __fastcall FUN_11064f60(undefined4 *param_1)
 
 {
+ try {
   int *piVar1;
   uint uVar2;
   void *pvStack_10;
@@ -12904,11 +12947,10 @@ void __fastcall FUN_11064f60(undefined4 *param_1)
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpRateItem);
   param_1[2] = (uint)&ghidra_vftable_SCOpRateItem;
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117a2a70);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
   param_1[2] = (uint)&ghidra_vftable_SCOpImpl;
   if (param_1[3] != 0) {
@@ -12924,16 +12966,16 @@ void __fastcall FUN_11064f60(undefined4 *param_1)
   param_1[0xc] = (uint)&ghidra_vftable_SCIObjImpl;
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   param_1[0xc] = (uint)&ghidra_vftable_SCIObj;
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 0xb)))->int_release();
   param_1[0xb] = 0;
-  uStack_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)(param_1 + 10)))->int_release();
   param_1[10] = 0;
   param_1[5] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   piVar1 = (int *)((int *)param_1[4]);
-  uStack_8 = (undefined4)(2);
+
   if (piVar1 != (int *)0x0) {
     param_1[3] = 0;
     param_1[4] = 0;
@@ -12944,8 +12986,10 @@ void __fastcall FUN_11064f60(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -13187,6 +13231,7 @@ void __fastcall FUN_11067a30(undefined4 *param_1)
 void __fastcall FUN_11067a40(undefined4 *param_1)
 
 {
+ try {
   int *piVar1;
   uint uVar2;
   void *pvStack_10;
@@ -13195,11 +13240,10 @@ void __fastcall FUN_11067a40(undefined4 *param_1)
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpGetTrackPositionInfo);
   param_1[2] = (uint)&ghidra_vftable_SCOpGetTrackPositionInfo;
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117a32d0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpImpl);
   param_1[2] = (uint)&ghidra_vftable_SCOpImpl;
   if (param_1[3] != 0) {
@@ -13215,16 +13259,16 @@ void __fastcall FUN_11067a40(undefined4 *param_1)
   param_1[0xc] = (uint)&ghidra_vftable_SCIObjImpl;
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   param_1[0xc] = (uint)&ghidra_vftable_SCIObj;
-  uStack_8 = (undefined4)(0);
+
   ((SCStr *)((SCStr *)(param_1 + 0xb)))->int_release();
   param_1[0xb] = 0;
-  uStack_8 = (undefined4)(1);
+
   ((SCStr *)((SCStr *)(param_1 + 10)))->int_release();
   param_1[10] = 0;
   param_1[5] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   piVar1 = (int *)((int *)param_1[4]);
-  uStack_8 = (undefined4)(2);
+
   if (piVar1 != (int *)0x0) {
     param_1[3] = 0;
     param_1[4] = 0;
@@ -13235,8 +13279,10 @@ void __fastcall FUN_11067a40(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
   g_lSCObjCount = (int)(g_lSCObjCount + -1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObj);
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -17976,6 +18022,7 @@ byte * __fastcall FUN_110786b0(byte *param_1)
 void __fastcall FUN_110786f0(undefined4 *param_1)
 
 {
+ try {
   undefined4 *puVar1;
   uint uVar2;
   int iVar3;
@@ -17984,11 +18031,10 @@ void __fastcall FUN_110786f0(undefined4 *param_1)
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114f5ce0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   if ((int *)param_1[1] != (int *)0x0) {
     if (param_1[2] != 0) {
@@ -18001,8 +18047,10 @@ void __fastcall FUN_110786f0(undefined4 *param_1)
     param_1[1] = 0;
     param_1[2] = 0;
   }
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -18129,6 +18177,7 @@ void __fastcall FUN_110798a0(undefined4 *param_1)
 void __fastcall FUN_1107a0d0(undefined4 *param_1)
 
 {
+ try {
   int iVar1;
   uint uVar2;
   int iVar3;
@@ -18136,12 +18185,10 @@ void __fastcall FUN_1107a0d0(undefined4 *param_1)
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
-  
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117c1080);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObj);
   puVar4 = (undefined1 *)(&DAT_1186d2ee);
   if ((undefined1 *)param_1[2] != (undefined1 *)0x0) {
@@ -18151,7 +18198,7 @@ void __fastcall FUN_1107a0d0(undefined4 *param_1)
                     );
   thunk_FUN_111a2140();
   iVar1 = (int)(param_1[2]);
-  uStack_8 = (undefined4)(0);
+
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
     iVar3 = (int)(thunk_FUN_1123fcd0((void *)(iVar1 + -0x10)));
     if (iVar3 == 0) {
@@ -18162,8 +18209,10 @@ void __fastcall FUN_1107a0d0(undefined4 *param_1)
     }
   }
   *param_1 = (undefined4)((uint)&ghidra_vftable_RefCountBase);
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -19013,6 +19062,7 @@ bool __stdcall FUN_1107ab40(uint *param_1,uint *param_2)
 undefined4 FUN_1107b880(void)
 
 {
+ try {
   undefined4 *puVar1;
   char cVar2;
   int iVar3;
@@ -19028,20 +19078,17 @@ undefined4 FUN_1107b880(void)
   
   iVar3 = (int)((**(code **)(*(int *)(DAT_121a7ba0 + 0x1c) + 0xc))());
   if (iVar3 != 0) {
-    uStack_c = (undefined4)(0x1107b8a3);
+
     iVar3 = (int)(thunk_FUN_11138b60());
     if (iVar3 != 0) {
-      uStack_c = (undefined4)(0xffffffff);
-      puStack_10 = (undefined1 *)(LAB_117ac5cd);
-      pvStack_14 = (void *)(ExceptionList);
-      ExceptionList = (void *)(&pvStack_14);
-      uStack_18 = (uint)(0);
+
+
       cVar2 = (char)((**(code **)(*(int *)(*(int *)(iVar3 + 0x1c) + 0x4208 +
                                    *(int *)(*(int *)(*(int *)(iVar3 + 0x1c) + 0x4208) + 4)) + 0x30))
-                        (DAT_12126b84 ^ (uint)&stack0xfffffff8));
+                        (DAT_12126b84 ));
       if ((cVar2 != '\0') && (*(int *)(iVar3 + 0x2c) == 0)) {
         pvVar4 = (void *)(operator_new(0x30));
-        uStack_c = (undefined4)(0);
+
         if (pvVar4 == (void *)0x0) {
           uVar6 = (undefined4)(0);
         }
@@ -19053,13 +19100,13 @@ undefined4 FUN_1107b880(void)
             puVar5 = (undefined1 *)((undefined1 *)(*(int *)(iVar3 + 0x1c) + 0x62f));
           }
           thunk_FUN_101b9a40(puVar5);
-          uStack_18 = (uint)(1);
+
           uStack_c = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_c + 1)) << 8 | (uint)(1)));
           uVar6 = (undefined4)(thunk_FUN_110b6990(*(undefined4 *)(iVar3 + 0xc),*(int *)(iVar3 + 0x1c) + 0x4204,
                                      iVar3 + 0x5c,auStack_1c));
         }
         puVar1 = (undefined4 *)(*(undefined4 **)(iVar3 + 0x2c));
-        uStack_c = (undefined4)(2);
+
         if (puVar1 != (undefined4 *)0x0) {
           iVar7 = (int)(thunk_FUN_1123fcd0(puVar1 + 1));
           if (iVar7 == 0) {
@@ -19068,16 +19115,18 @@ undefined4 FUN_1107b880(void)
         }
         *(undefined4 *)(iVar3 + 0x2c) = uVar6;
         if ((uStack_18 & 1) == 0) {
-          ExceptionList = (void *)(pvStack_14);
+
           return (/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4)(uVar6);
         }
         thunk_FUN_101ba300();
       }
-      ExceptionList = (void *)(pvStack_14);
+
       return (/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4)(*(undefined4 *)(iVar3 + 0x2c));
     }
   }
   return (/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4)(0);
+
+ } catch (...) { }
 }
 
 
@@ -21712,6 +21761,7 @@ undefined2 __fastcall FUN_11081da0(int param_1)
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::FUN_11082a00(undefined4 param_2,undefined4 param_3,int param_4,uint param_5)
 {
   int param_1 = (int )this;
+ try {
   undefined4 *puVar1;
   char cVar2;
   undefined4 uVar3;
@@ -21727,19 +21777,17 @@ undefined2 __fastcall FUN_11081da0(int param_1)
   uint uStack_330;
   char acStack_88 [128];
   uint uStack_8;
-  
-  uStack_338 = (undefined4)(0xffffffff);
-  puStack_33c = (undefined1 *)(LAB_117a5b90);
-  pvStack_340 = (void *)(ExceptionList);
+
+
   uStack_8 = (uint)(DAT_12126b84 ^ (uint)auStack_334);
-  ExceptionList = (void *)(&pvStack_340);
+
   thunk_FUN_11255220(uStack_8);
-  uStack_338 = (undefined4)(0);
+
   if ((param_5 == 1) || (param_5 == 2)) {
-    uStack_330 = (uint)(0xca07);
+
   }
   else if ((param_5 == 0xd) || (uStack_330 = param_5, param_5 == 0xe)) {
-    uStack_330 = (uint)(0xcb07);
+
   }
   if (((uStack_330 & 0x7f) - 1 & 0xfffffffe) == 6) {
     thunk_FUN_110c2c60();
@@ -21789,9 +21837,11 @@ undefined2 __fastcall FUN_11081da0(int param_1)
     }
   }
   thunk_FUN_11255560();
-  ExceptionList = (void *)(pvStack_340);
+
   thunk_FUN_1148ac28();
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21900,6 +21950,7 @@ undefined4 __stdcall FUN_110836a0(undefined4 param_1,undefined4 param_2,undefine
 void __fastcall FUN_11086d40(int param_1)
 
 {
+ try {
   char cVar1;
   uint uStack_898;
   void *pvStack_894;
@@ -21911,17 +21962,15 @@ void __fastcall FUN_11086d40(int param_1)
   undefined1 auStack_48 [36];
   undefined1 auStack_24 [28];
   uint uStack_8;
-  
-  uStack_88c = (undefined4)(0xffffffff);
-  puStack_890 = (undefined1 *)(LAB_117a61dd);
-  pvStack_894 = (void *)(ExceptionList);
+
+
   uStack_8 = (uint)(DAT_12126b84 ^ (uint)auStack_888);
-  ExceptionList = (void *)(&pvStack_894);
+
   if (*(char *)(param_1 + 0x2d448) == '\0') {
     *(undefined1 *)(param_1 + 0x2d448) = 1;
     thunk_FUN_1145c720(auStack_448,0x400,"%s/connectionsettings.txt",PTR_DAT_12126b6c,uStack_8);
     thunk_FUN_11458eb0(auStack_448,thunk_FUN_112afbd0);
-    uStack_88c = (undefined4)(0);
+
     thunk_FUN_11458fa0(auStack_888);
     cVar1 = (char)(thunk_FUN_114595b0("museHHID",auStack_48,0x21));
     if (cVar1 != '\0') {
@@ -21939,9 +21988,11 @@ void __fastcall FUN_11086d40(int param_1)
     }
     thunk_FUN_114591a0();
   }
-  ExceptionList = (void *)(pvStack_894);
+
   thunk_FUN_1148ac28();
   return;
+
+ } catch (...) { }
 }
 
 

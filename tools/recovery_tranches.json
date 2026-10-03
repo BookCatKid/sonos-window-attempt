@@ -628,14 +628,6 @@
   "directory": "analysis/compiled-cpp-bulk/bulk_small__chunk_000000_0000"
  },
  {
-  "object": "thunk_recovery__recovered_targets_0000",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery__recovered_targets_0000"
- },
- {
-  "object": "thunk_recovery__recovered_targets_000010_000011_0000",
-  "directory": "analysis/compiled-cpp-bulk/thunk_recovery__recovered_targets_000010_000011_0000"
- },
- {
   "object": "thunk_recovery_full__recovered_targets_0000",
   "directory": "analysis/compiled-cpp-bulk/thunk_recovery_full__recovered_targets_0000"
  },

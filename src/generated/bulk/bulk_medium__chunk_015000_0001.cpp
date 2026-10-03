@@ -1985,8 +1985,11 @@ void FUN_112af170(int param_1,int param_2,undefined4 param_3)
 void FUN_112af4e0(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
 {
+ try {
   FUN_112afbd0(param_1,param_2,param_3,&stack0x00000010);
   return;
+
+ } catch (...) { }
 }
 
 
@@ -1996,6 +1999,7 @@ void FUN_112af4e0(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 void FUN_112b0270(undefined4 param_1,int param_2,undefined4 param_3)
 
 {
+ try {
   int iVar1;
   
   iVar1 = (int)(param_2 + -3);
@@ -2004,6 +2008,8 @@ void FUN_112b0270(undefined4 param_1,int param_2,undefined4 param_3)
   }
   thunk_FUN_112afbd0(param_1,iVar1,param_3,&stack0x00000010);
   return;
+
+ } catch (...) { }
 }
 
 
@@ -3893,10 +3899,13 @@ void __stdcall FUN_112effc0(undefined4 param_1,undefined4 param_2)
 void FUN_112f1710(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
+ try {
   if (*(code **)(param_1 + 0x124) != (code *)0x0) {
     (**(code **)(param_1 + 0x124))(param_2,param_3,param_4,&stack0x00000014);
   }
   return;
+
+ } catch (...) { }
 }
 
 
@@ -3906,10 +3915,13 @@ void FUN_112f1710(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 void FUN_112f1740(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
+ try {
   if (*(code **)(param_1 + 0x670) != (code *)0x0) {
     (**(code **)(param_1 + 0x670))(param_2,param_3,param_4,&stack0x00000014);
   }
   return;
+
+ } catch (...) { }
 }
 
 
@@ -3919,10 +3931,13 @@ void FUN_112f1740(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 void FUN_112f1770(code *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
+ try {
   if (param_1 != (code *)0x0) {
     (*param_1)(param_2,param_3,param_4,&stack0x00000014);
   }
   return;
+
+ } catch (...) { }
 }
 
 
@@ -4061,10 +4076,13 @@ void __fastcall FUN_112f4290(int param_1)
 void FUN_112f4f20(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
+ try {
   if (*(code **)(param_1 + 0x38) != (code *)0x0) {
     (**(code **)(param_1 + 0x38))(param_2,param_3,param_4,&stack0x00000014);
   }
   return;
+
+ } catch (...) { }
 }
 
 
@@ -5392,8 +5410,11 @@ undefined4 FUN_11354b80(int param_1)
 void FUN_11358b70(undefined4 param_1,undefined4 param_2)
 
 {
+ try {
   FUN_11371c00(param_1,param_2,&stack0x0000000c);
   return;
+
+ } catch (...) { }
 }
 
 
@@ -5920,6 +5941,7 @@ undefined4 FUN_11372d90(int *param_1)
 void FUN_11373210(undefined4 *param_1,undefined4 param_2)
 
 {
+ try {
   undefined4 uVar1;
   
   if (param_1[0x1f] != 0) {
@@ -5928,6 +5950,8 @@ void FUN_11373210(undefined4 *param_1,undefined4 param_2)
   uVar1 = (undefined4)(FUN_11371c00(*param_1,param_2,&stack0x0000000c));
   param_1[0x1f] = uVar1;
   return;
+
+ } catch (...) { }
 }
 
 
@@ -6207,8 +6231,11 @@ void FUN_11396b90(int *param_1,undefined4 param_2,undefined4 param_3)
 void FUN_11397d20(undefined4 param_1,undefined4 param_2)
 
 {
+ try {
   thunk_FUN_11397ee0(param_1,param_2,&stack0x0000000c);
   return;
+
+ } catch (...) { }
 }
 
 
@@ -11394,10 +11421,13 @@ undefined1 __thiscall Recovered_Bulk::FUN_114595b0(undefined4 param_2,undefined4
 void FUN_1145a270(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
+ try {
   if (*(code **)(param_1 + 0x38) != (code *)0x0) {
     (**(code **)(param_1 + 0x38))(param_2,param_3,param_4,&stack0x00000014);
   }
   return;
+
+ } catch (...) { }
 }
 
 
@@ -13103,17 +13133,16 @@ void __except_handler4(undefined4 *param_1,undefined4 param_2,undefined4 param_3
 void FUN_1148c290(uint param_1)
 
 {
+ try {
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_117d1628);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
   operator_new(param_1);
   FUN_1148c2d0();
   return;
+
+ } catch (...) { }
 }
 
 
@@ -13123,10 +13152,12 @@ void FUN_1148c290(uint param_1)
 void FUN_1148c2d0(void)
 
 {
+ try {
   int unaff_EBP;
-  
-  ExceptionList = (void *)(*(void **)(unaff_EBP + -0xc));
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -15780,10 +15811,13 @@ void Unwind_11504650_11504650(void)
 void FUN_11504692(void)
 
 {
+ try {
   thunk_FUN_1148ac28(&stack0x00000000);
   thunk_FUN_1148ac28();
                     
   __CxxFrameHandler3();
+
+ } catch (...) { }
 }
 
 

@@ -2386,8 +2386,11 @@ void FUN_112af3e0(char *param_1,int param_2,int param_3)
 void FUN_112af4c0(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
 {
+ try {
   FUN_112afbd0(param_1,param_2,param_3,&stack0x00000010);
   return;
+
+ } catch (...) { }
 }
 
 
@@ -2469,8 +2472,11 @@ int FUN_112b0060(undefined4 param_1,int param_2,int param_3)
 void FUN_112b0120(undefined4 param_1)
 
 {
+ try {
   FUN_112afbd0("flash_diag",0,param_1,&stack0x00000008);
   return;
+
+ } catch (...) { }
 }
 
 
@@ -15743,6 +15749,7 @@ int FUN_11433cd0(ushort *param_1,undefined4 param_2,undefined4 param_3,uint para
                 undefined4 param_5,int param_6,int param_7,int param_8)
 
 {
+ try {
   ushort *puVar1;
   uint uVar2;
   int iVar3;
@@ -15850,6 +15857,8 @@ LAB_1145079a:
     }
   }
   return (/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int)(-0x87);
+
+ } catch (...) { }
 }
 
 

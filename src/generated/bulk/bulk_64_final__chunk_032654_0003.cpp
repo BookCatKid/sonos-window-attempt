@@ -3325,6 +3325,7 @@ void __thiscall Recovered_Bulk::FUN_112c38f0(undefined4 *param_2)
 char FUN_112c42d0(undefined4 *param_1,undefined4 *param_2)
 
 {
+ try {
   int iVar1;
   char cVar2;
   uint uVar3;
@@ -3335,16 +3336,15 @@ char FUN_112c42d0(undefined4 *param_1,undefined4 *param_2)
   undefined4 local_8;
   
   puVar4 = (undefined4 *)(param_2);
-  puStack_c = (undefined1 *)(LAB_117d0600);
-  local_10 = (void *)(ExceptionList);
-  uVar3 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar3 = (uint)(DAT_12126b84);
+
   puVar5 = (undefined4 *)(param_1);
   if (0xf < (uint)param_1[5]) {
     puVar5 = (undefined4 *)((undefined4 *)*param_1);
   }
   iVar1 = (int)(param_1[4]);
-  local_8 = (undefined4)(0);
+
   param_1 = (undefined4 *)((undefined4 *)(((iVar1 + 2U) / 3) * 4 + 1));
   thunk_FUN_10c7fcd0(param_1,0);
   if (0xf < (uint)puVar4[5]) {
@@ -3354,8 +3354,10 @@ char FUN_112c42d0(undefined4 *param_1,undefined4 *param_2)
   if (cVar2 != '\0') {
     thunk_FUN_10c7fcd0(param_1,0);
   }
-  ExceptionList = (void *)(local_10);
+
   return (char)(cVar2);
+
+ } catch (...) { }
 }
 
 
@@ -3365,6 +3367,7 @@ char FUN_112c42d0(undefined4 *param_1,undefined4 *param_2)
 char FUN_112c43a0(undefined4 param_1,int param_2,undefined4 *param_3)
 
 {
+ try {
   int iVar1;
   char cVar2;
   uint uVar3;
@@ -3375,11 +3378,10 @@ char FUN_112c43a0(undefined4 param_1,int param_2,undefined4 *param_3)
   
   puVar4 = (undefined4 *)(param_3);
   iVar1 = (int)(param_2);
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117d0630);
-  local_10 = (void *)(ExceptionList);
-  uVar3 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar3 = (uint)(DAT_12126b84);
+
   param_2 = (int)(((param_2 + 2U) / 3) * 4 + 1);
   thunk_FUN_10c7fcd0(param_2,0);
   if (0xf < (uint)puVar4[5]) {
@@ -3389,8 +3391,10 @@ char FUN_112c43a0(undefined4 param_1,int param_2,undefined4 *param_3)
   if (cVar2 != '\0') {
     thunk_FUN_10c7fcd0(param_2,0);
   }
-  ExceptionList = (void *)(local_10);
+
   return (char)(cVar2);
+
+ } catch (...) { }
 }
 
 
@@ -3400,6 +3404,7 @@ char FUN_112c43a0(undefined4 param_1,int param_2,undefined4 *param_3)
 undefined1 * FUN_112c46d0(undefined1 *param_1,undefined4 *param_2)
 
 {
+ try {
   int *piVar1;
   int iVar2;
   char cVar3;
@@ -3411,15 +3416,12 @@ undefined1 * FUN_112c46d0(undefined1 *param_1,undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
-  
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117d06b0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   iVar2 = (int)(param_2[4] * 4);
   _Size = (uint)(iVar2 + 1);
   if (0x7fffffff < _Size) {
-    thunk_FUN_10c7dc10(DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    thunk_FUN_10c7dc10(DAT_12126b84 );
 LAB_112c4802:
                     
     thunk_FUN_1012a2a0();
@@ -3467,8 +3469,10 @@ LAB_112c47f7:
     }
     thunk_FUN_1148a50e(pcVar6,_Size);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined1 *)(param_1);
+
+ } catch (...) { }
 }
 
 
@@ -6116,25 +6120,26 @@ void FUN_112eaa60(byte *param_1,undefined4 param_2,undefined4 param_3,undefined4
 undefined4 * __thiscall Recovered_Bulk::FUN_112eac60(int param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_117d06ed);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
   param_1[0xb] = 0;
-  local_8 = (undefined4)(0);
+
   if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)0x0) {
     uVar2 = (undefined4)((**(code **)**(undefined4 **)(param_2 + 0x24))(param_1 + 2,uVar1));
     param_1[0xb] = uVar2;
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4 *)(param_1);
+
+ } catch (...) { }
 }
 
 
@@ -6144,25 +6149,26 @@ undefined4 * __thiscall Recovered_Bulk::FUN_112eac60(int param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_112eacf0(int param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_117d072d);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
   param_1[0xb] = 0;
-  local_8 = (undefined4)(0);
+
   if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)0x0) {
     uVar2 = (undefined4)((**(code **)**(undefined4 **)(param_2 + 0x24))(param_1 + 2,uVar1));
     param_1[0xb] = uVar2;
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4 *)(param_1);
+
+ } catch (...) { }
 }
 
 
@@ -6257,28 +6263,29 @@ undefined4 * FUN_112eb580(undefined4 *param_1,undefined4 *param_2,short *param_3
 undefined4 * FUN_112eb820(int param_1)
 
 {
+ try {
   uint uVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117d0895);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   puVar2 = (undefined4 *)(operator_new(0x30));
   *puVar2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
   puVar2[0xb] = 0;
-  local_8 = (undefined4)(1);
+
   if (*(undefined4 **)(param_1 + 0x24) != (undefined4 *)0x0) {
     uVar3 = (undefined4)((**(code **)**(undefined4 **)(param_1 + 0x24))(puVar2 + 2,uVar1));
     puVar2[0xb] = uVar3;
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4 *)(puVar2);
+
+ } catch (...) { }
 }
 
 
@@ -6288,28 +6295,29 @@ undefined4 * FUN_112eb820(int param_1)
 undefined4 * FUN_112eb940(int param_1)
 
 {
+ try {
   uint uVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117d08d5);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   puVar2 = (undefined4 *)(operator_new(0x30));
   *puVar2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
   puVar2[0xb] = 0;
-  local_8 = (undefined4)(1);
+
   if (*(undefined4 **)(param_1 + 0x24) != (undefined4 *)0x0) {
     uVar3 = (undefined4)((**(code **)**(undefined4 **)(param_1 + 0x24))(puVar2 + 2,uVar1));
     puVar2[0xb] = uVar3;
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4 *)(puVar2);
+
+ } catch (...) { }
 }
 
 
@@ -6350,24 +6358,25 @@ int __thiscall Recovered_Bulk::FUN_112ec280(int *param_2)
 int __thiscall Recovered_Bulk::FUN_112ec370(int param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_117d090d);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *(undefined4 *)(param_1 + 0x24) = 0;
-  local_8 = (undefined4)(0);
+
   if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)0x0) {
     uVar2 = (undefined4)((**(code **)**(undefined4 **)(param_2 + 0x24))(param_1,uVar1));
     *(undefined4 *)(param_1 + 0x24) = uVar2;
   }
-  ExceptionList = (void *)(local_10);
+
   return (int)(param_1);
+
+ } catch (...) { }
 }
 
 
@@ -6408,24 +6417,25 @@ int __thiscall Recovered_Bulk::FUN_112ec3f0(int *param_2)
 int __thiscall Recovered_Bulk::FUN_112ec4e0(int param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_117d094d);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *(undefined4 *)(param_1 + 0x24) = 0;
-  local_8 = (undefined4)(0);
+
   if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)0x0) {
     uVar2 = (undefined4)((**(code **)**(undefined4 **)(param_2 + 0x24))(param_1,uVar1));
     *(undefined4 *)(param_1 + 0x24) = uVar2;
   }
-  ExceptionList = (void *)(local_10);
+
   return (int)(param_1);
+
+ } catch (...) { }
 }
 
 
@@ -6435,24 +6445,25 @@ int __thiscall Recovered_Bulk::FUN_112ec4e0(int param_2)
 int __thiscall Recovered_Bulk::FUN_112ec970(int param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_117d098d);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *(undefined4 *)(param_1 + 0x24) = 0;
-  local_8 = (undefined4)(0);
+
   if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)0x0) {
     uVar2 = (undefined4)((**(code **)**(undefined4 **)(param_2 + 0x24))(param_1,uVar1));
     *(undefined4 *)(param_1 + 0x24) = uVar2;
   }
-  ExceptionList = (void *)(local_10);
+
   return (int)(param_1);
+
+ } catch (...) { }
 }
 
 
@@ -6493,24 +6504,25 @@ int __thiscall Recovered_Bulk::FUN_112ec9f0(int *param_2)
 int __thiscall Recovered_Bulk::FUN_112eca60(int param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_117d09cd);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *(undefined4 *)(param_1 + 0x24) = 0;
-  local_8 = (undefined4)(0);
+
   if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)0x0) {
     uVar2 = (undefined4)((**(code **)**(undefined4 **)(param_2 + 0x24))(param_1,uVar1));
     *(undefined4 *)(param_1 + 0x24) = uVar2;
   }
-  ExceptionList = (void *)(local_10);
+
   return (int)(param_1);
+
+ } catch (...) { }
 }
 
 
@@ -6551,24 +6563,25 @@ int __thiscall Recovered_Bulk::FUN_112ecae0(int *param_2)
 int __thiscall Recovered_Bulk::FUN_112ecb60(int param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_117d0a0d);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *(undefined4 *)(param_1 + 0x24) = 0;
-  local_8 = (undefined4)(0);
+
   if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)0x0) {
     uVar2 = (undefined4)((**(code **)**(undefined4 **)(param_2 + 0x24))(param_1,uVar1));
     *(undefined4 *)(param_1 + 0x24) = uVar2;
   }
-  ExceptionList = (void *)(local_10);
+
   return (int)(param_1);
+
+ } catch (...) { }
 }
 
 
@@ -6609,24 +6622,25 @@ int __thiscall Recovered_Bulk::FUN_112ecbe0(int *param_2)
 int __thiscall Recovered_Bulk::FUN_112ecc50(int param_2)
 {
   int param_1 = (int )this;
+ try {
   uint uVar1;
   undefined4 uVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_117d0a4d);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *(undefined4 *)(param_1 + 0x24) = 0;
-  local_8 = (undefined4)(0);
+
   if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)0x0) {
     uVar2 = (undefined4)((**(code **)**(undefined4 **)(param_2 + 0x24))(param_1,uVar1));
     *(undefined4 *)(param_1 + 0x24) = uVar2;
   }
-  ExceptionList = (void *)(local_10);
+
   return (int)(param_1);
+
+ } catch (...) { }
 }
 
 
@@ -6636,22 +6650,20 @@ int __thiscall Recovered_Bulk::FUN_112ecc50(int param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_112ecd20(undefined4 param_2,undefined4 param_3,char *param_4)
 {
   undefined4 *param_1 = (undefined4 *)this;
+ try {
   char cVar1;
   char *pcVar2;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117d0a9b);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
+
+
   thunk_FUN_112ed030(param_2,param_3);
   *param_1 = (undefined4)((uint)&ghidra_vftable_sonos_certval_DynamicMemoryRootCACertBundle);
   param_1[0x4a] = 0;
   param_1[0x4b] = 0;
   param_1[0x4c] = 0;
-  local_8 = (undefined4)(1);
+
   param_1[0x51] = 0;
   param_1[0x52] = 0xf;
   *(undefined1 *)(param_1 + 0x4d) = 0;
@@ -6661,8 +6673,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_112ecd20(undefined4 param_2,undefine
     pcVar2 = (char *)(pcVar2 + 1);
   } while (cVar1 != '\0');
   thunk_FUN_1012d130(param_4,(int)pcVar2 - (int)(param_4 + 1));
-  ExceptionList = (void *)(local_10);
+
   return (undefined4 *)(param_1);
+
+ } catch (...) { }
 }
 
 
@@ -6812,19 +6826,18 @@ LAB_112ed620:
 void __thiscall Recovered_Bulk::FUN_112ed860(int param_2)
 {
   undefined4 param_1 = (undefined4 )this;
+ try {
   int local_3c [9];
   int *local_18;
   uint local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_117d0b6d);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   local_18 = (int *)((int *)0x0);
-  local_8 = (undefined4)(0);
+
   if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)0x0) {
     local_18 = (int *)((int *)(**(code **)**(undefined4 **)(param_2 + 0x24))(local_3c,local_14));
   }
@@ -6832,9 +6845,11 @@ void __thiscall Recovered_Bulk::FUN_112ed860(int param_2)
   if (local_18 != (int *)0x0) {
     (**(code **)(*local_18 + 0x10))(local_18 != (int *)(local_3c));
   }
-  ExceptionList = (void *)(local_10);
+
   thunk_FUN_1148ac28();
   return;
+
+ } catch (...) { }
 }
 
 
@@ -6844,19 +6859,18 @@ void __thiscall Recovered_Bulk::FUN_112ed860(int param_2)
 void __thiscall Recovered_Bulk::FUN_112ed950(int param_2)
 {
   undefined4 param_1 = (undefined4 )this;
+ try {
   int local_3c [9];
   int *local_18;
   uint local_14;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_117d0bbd);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  local_14 = (uint)(DAT_12126b84);
+
   local_18 = (int *)((int *)0x0);
-  local_8 = (undefined4)(0);
+
   if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)0x0) {
     local_18 = (int *)((int *)(**(code **)**(undefined4 **)(param_2 + 0x24))(local_3c,local_14));
   }
@@ -6864,9 +6878,11 @@ void __thiscall Recovered_Bulk::FUN_112ed950(int param_2)
   if (local_18 != (int *)0x0) {
     (**(code **)(*local_18 + 0x10))(local_18 != (int *)(local_3c));
   }
-  ExceptionList = (void *)(local_10);
+
   thunk_FUN_1148ac28();
   return;
+
+ } catch (...) { }
 }
 
 
@@ -6987,28 +7003,29 @@ void __thiscall Recovered_Bulk::FUN_112ee100(int param_2,int param_3,int param_4
 undefined4 * __fastcall FUN_112ee1c0(int param_1)
 
 {
+ try {
   uint uVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117d0ca5);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   puVar2 = (undefined4 *)(operator_new(0x30));
   *puVar2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
   puVar2[0xb] = 0;
-  local_8 = (undefined4)(1);
+
   if (*(undefined4 **)(param_1 + 0x2c) != (undefined4 *)0x0) {
     uVar3 = (undefined4)((**(code **)**(undefined4 **)(param_1 + 0x2c))(puVar2 + 2,uVar1));
     puVar2[0xb] = uVar3;
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4 *)(puVar2);
+
+ } catch (...) { }
 }
 
 
@@ -7018,28 +7035,29 @@ undefined4 * __fastcall FUN_112ee1c0(int param_1)
 undefined4 * __fastcall FUN_112ee260(int param_1)
 
 {
+ try {
   uint uVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117d0ce5);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   puVar2 = (undefined4 *)(operator_new(0x30));
   *puVar2 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
   puVar2[0xb] = 0;
-  local_8 = (undefined4)(1);
+
   if (*(undefined4 **)(param_1 + 0x2c) != (undefined4 *)0x0) {
     uVar3 = (undefined4)((**(code **)**(undefined4 **)(param_1 + 0x2c))(puVar2 + 2,uVar1));
     puVar2[0xb] = uVar3;
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4 *)(puVar2);
+
+ } catch (...) { }
 }
 
 
@@ -7223,6 +7241,7 @@ undefined4 __thiscall Recovered_Bulk::FUN_112ef380(int param_2)
 int FUN_112f0000(undefined4 param_1,undefined4 *param_2)
 
 {
+ try {
   void *_Memory;
   int iVar1;
   int *in_stack_00000030;
@@ -7241,11 +7260,7 @@ int FUN_112f0000(undefined4 param_1,undefined4 *param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_117d0ea5);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(1);
+
   *param_2 = (undefined4)(0);
   _Memory = (void *)(malloc(0x198));
   if (_Memory == (void *)0x0) {
@@ -7254,17 +7269,17 @@ int FUN_112f0000(undefined4 param_1,undefined4 *param_2)
   else {
     thunk_FUN_11401f20();
     local_58 = (undefined **)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-    local_54 = (undefined1 *)(LAB_1000107d);
+
     uStack_5c = (undefined4)(in_stack_00000060);
     puStack_88 = (undefined1 *)(auStack_84);
-    local_60 = (undefined4)(0);
+
     *(unsigned char *)((char *)&local_8 + 0) = 3;
     if (in_stack_0000005c != (int *)0x0) {
-      local_8c = (undefined4)(0x112f009a);
+
       local_60 = (undefined4)((**(code **)*in_stack_0000005c)());
     }
     puStack_88 = (undefined1 *)((undefined1 *)in_stack_00000034);
-    local_8c = (undefined4)(0);
+
     *(unsigned char *)((char *)&local_8 + 0) = 5;
     if (in_stack_00000030 != (int *)0x0) {
       local_8c = (undefined4)((**(code **)*in_stack_00000030)(auStack_b0));
@@ -7277,7 +7292,7 @@ int FUN_112f0000(undefined4 param_1,undefined4 *param_2)
     }
     else {
       thunk_FUN_11401680();
-      uStack_3c = (undefined4)(0x112f00e9);
+
       free(_Memory);
     }
   }
@@ -7287,8 +7302,10 @@ int FUN_112f0000(undefined4 param_1,undefined4 *param_2)
   if (in_stack_0000005c != (int *)0x0) {
     (**(code **)(*in_stack_0000005c + 0x10))();
   }
-  ExceptionList = (void *)(local_10);
+
   return (int)(iVar1);
+
+ } catch (...) { }
 }
 
 
@@ -7347,6 +7364,7 @@ int * FUN_112f1600(undefined4 param_1,undefined4 param_2)
 void FUN_112f36a0(undefined4 param_1,undefined4 param_2)
 
 {
+ try {
   wchar_t ****_Filename;
   wchar_t ****ppppwVar1;
   uint uVar2;
@@ -7359,14 +7377,12 @@ void FUN_112f36a0(undefined4 param_1,undefined4 param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117d12ad);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  local_14 = (uint)(DAT_12126b84);
+
   thunk_FUN_112f3500(local_44,param_1,local_14);
-  local_8 = (undefined4)(0);
+
   thunk_FUN_112f3500(local_2c,param_2);
   ppppwVar1 = (wchar_t ****)(local_2c);
   if (7 < local_18) {
@@ -7387,8 +7403,8 @@ void FUN_112f36a0(undefined4 param_1,undefined4 param_2)
     }
     thunk_FUN_1148a50e(ppppwVar1,uVar2);
   }
-  local_1c = (undefined4)(0);
-  local_18 = (uint)(7);
+
+
   local_2c[0] = (wchar_t ***)((uint)local_2c[0] & 0xffff0000);
   if (7 < local_30) {
     uVar2 = (uint)(local_30 * 2 + 2);
@@ -7404,9 +7420,11 @@ LAB_112f3783:
     }
     thunk_FUN_1148a50e(ppppwVar1,uVar2);
   }
-  ExceptionList = (void *)(local_10);
+
   thunk_FUN_1148ac28();
   return;
+
+ } catch (...) { }
 }
 
 
@@ -7490,6 +7508,7 @@ void FUN_112f38b0(undefined4 param_1)
 void FUN_112f3960(undefined4 param_1,undefined4 param_2)
 
 {
+ try {
   LPCWSTR ***lpExistingFileName;
   LPCWSTR ***ppppWVar1;
   uint uVar2;
@@ -7502,14 +7521,12 @@ void FUN_112f3960(undefined4 param_1,undefined4 param_2)
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117d12fd);
-  local_10 = (void *)(ExceptionList);
-  local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  local_14 = (uint)(DAT_12126b84);
+
   thunk_FUN_112f3500(local_44,param_1,local_14);
-  local_8 = (undefined4)(0);
+
   thunk_FUN_112f3500(local_2c,param_2);
   ppppWVar1 = (LPCWSTR ***)(local_2c);
   if (7 < local_18) {
@@ -7530,8 +7547,8 @@ void FUN_112f3960(undefined4 param_1,undefined4 param_2)
     }
     thunk_FUN_1148a50e(ppppWVar1,uVar2);
   }
-  local_1c = (undefined4)(0);
-  local_18 = (uint)(7);
+
+
   local_2c[0] = (LPCWSTR **)((uint)local_2c[0] & 0xffff0000);
   if (7 < local_30) {
     uVar2 = (uint)(local_30 * 2 + 2);
@@ -7547,9 +7564,11 @@ LAB_112f3a49:
     }
     thunk_FUN_1148a50e(ppppWVar1,uVar2);
   }
-  ExceptionList = (void *)(local_10);
+
   thunk_FUN_1148ac28();
   return;
+
+ } catch (...) { }
 }
 
 
@@ -7592,6 +7611,7 @@ uint FUN_112f3b40(int param_1,uint param_2,undefined1 *param_3,uint param_4)
 undefined4 * __thiscall Recovered_Bulk::FUN_112f3ce0(char *param_2,undefined4 param_3)
 {
   undefined4 *param_1 = (undefined4 *)this;
+ try {
   undefined4 *puVar1;
   char cVar2;
   void *pvVar3;
@@ -7601,15 +7621,13 @@ undefined4 * __thiscall Recovered_Bulk::FUN_112f3ce0(char *param_2,undefined4 pa
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_117d135b);
-  local_10 = (void *)(ExceptionList);
-  uVar4 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+  uVar4 = (uint)(DAT_12126b84);
+
   puVar1 = (undefined4 *)(param_1 + 1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_sonos_certval_SettingsFile);
   *puVar1 = (undefined4)(0);
-  local_8 = (undefined4)(0);
+
   _Mtx_init_in_situ(param_1 + 2,2,uVar4);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
   param_1[0xe] = param_3;
@@ -7628,8 +7646,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_112f3ce0(char *param_2,undefined4 pa
     free(_Memory);
   }
   thunk_FUN_111c0480(*puVar1,pcVar5 + (1 - (int)(param_2 + 1)),&DAT_1188bc94,param_2);
-  ExceptionList = (void *)(local_10);
+
   return (undefined4 *)(param_1);
+
+ } catch (...) { }
 }
 
 
@@ -7639,16 +7659,15 @@ undefined4 * __thiscall Recovered_Bulk::FUN_112f3ce0(char *param_2,undefined4 pa
 void __fastcall FUN_112f3f80(undefined4 *param_1)
 
 {
+ try {
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
-  
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117d13e0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_sonos_certval_SettingsFileUpdater);
   if ((FILE *)param_1[6] != (FILE *)0x0) {
     fclose((FILE *)param_1[6]);
@@ -7661,8 +7680,10 @@ void __fastcall FUN_112f3f80(undefined4 *param_1)
   if ((void *)param_1[1] != (void *)0x0) {
     free((void *)param_1[1]);
   }
-  ExceptionList = (void *)(local_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -7672,16 +7693,14 @@ void __fastcall FUN_112f3f80(undefined4 *param_1)
 undefined4 * __thiscall Recovered_Bulk::FUN_112f4110(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
+ try {
   uint uVar1;
   void *local_10;
   undefined1 *puStack_c;
   undefined4 local_8;
-  
-  puStack_c = (undefined1 *)(LAB_117d1410);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_8 = (undefined4)(0);
+
+  uVar1 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_sonos_certval_SettingsFileUpdater);
   if ((FILE *)param_1[6] != (FILE *)0x0) {
     fclose((FILE *)param_1[6]);
@@ -7697,8 +7716,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_112f4110(byte param_2)
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x20);
   }
-  ExceptionList = (void *)(local_10);
+
   return (undefined4 *)(param_1);
+
+ } catch (...) { }
 }
 
 
@@ -7708,6 +7729,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_112f4110(byte param_2)
 void __thiscall Recovered_Bulk::FUN_112f4440(undefined4 param_2,long *param_3)
 {
   int param_1 = (int )this;
+ try {
   long lVar1;
   undefined1 local_24 [32];
   uint local_4;
@@ -7724,6 +7746,8 @@ void __thiscall Recovered_Bulk::FUN_112f4440(undefined4 param_2,long *param_3)
   }
   thunk_FUN_1148ac28();
   return;
+
+ } catch (...) { }
 }
 
 

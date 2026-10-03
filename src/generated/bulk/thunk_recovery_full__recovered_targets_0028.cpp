@@ -6063,6 +6063,7 @@ undefined4 * __fastcall FUN_1118da60(undefined4 *param_1)
 void __fastcall FUN_1118dcb0(undefined4 *param_1)
 
 {
+ try {
   undefined4 *puVar1;
   uint uVar2;
   int iVar3;
@@ -6071,11 +6072,10 @@ void __fastcall FUN_1118dcb0(undefined4 *param_1)
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114f5ce0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   if ((int *)param_1[1] != (int *)0x0) {
     if (param_1[2] != 0) {
@@ -6088,8 +6088,10 @@ void __fastcall FUN_1118dcb0(undefined4 *param_1)
     param_1[1] = 0;
     param_1[2] = 0;
   }
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -6678,6 +6680,7 @@ undefined4 FUN_1118f740(void)
 void __fastcall FUN_1118f7b0(undefined4 *param_1)
 
 {
+ try {
   int iVar1;
   uint uVar2;
   int iVar3;
@@ -6686,15 +6689,14 @@ void __fastcall FUN_1118f7b0(undefined4 *param_1)
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjDP);
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117b7210);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjUpnpService);
   thunk_FUN_111401c0(1);
   iVar1 = (int)(param_1[10]);
-  uStack_8 = (undefined4)(0);
+
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
     iVar3 = (int)(thunk_FUN_1123fcd0((void *)(iVar1 + -0x10),uVar2));
     if (iVar3 == 0) {
@@ -6705,7 +6707,7 @@ void __fastcall FUN_1118f7b0(undefined4 *param_1)
     }
   }
   iVar1 = (int)(param_1[9]);
-  uStack_8 = (undefined4)(1);
+
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
     iVar3 = (int)(thunk_FUN_1123fcd0((void *)(iVar1 + -0x10),uVar2));
     if (iVar3 == 0) {
@@ -6716,7 +6718,7 @@ void __fastcall FUN_1118f7b0(undefined4 *param_1)
     }
   }
   iVar1 = (int)(param_1[8]);
-  uStack_8 = (undefined4)(2);
+
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
     iVar3 = (int)(thunk_FUN_1123fcd0((void *)(iVar1 + -0x10),uVar2));
     if (iVar3 == 0) {
@@ -6729,8 +6731,10 @@ void __fastcall FUN_1118f7b0(undefined4 *param_1)
   thunk_FUN_111a6f10();
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfUpnpEventHandler);
   thunk_FUN_111a4f00();
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -6763,11 +6767,14 @@ int FUN_1118f870(int param_1)
 bool __fastcall FUN_1118f8c0(int param_1)
 
 {
+ try {
   undefined1 *puVar1;
   
   puVar1 = (undefined1 *)(&stack0xffffffff);
   (**(code **)(**(int **)(param_1 + 0x2c) + 0x28))(puVar1,&DAT_118bb268,param_1);
   return (/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool)((char)((uint)puVar1 >> 0x18) == '\0');
+
+ } catch (...) { }
 }
 
 
@@ -6779,11 +6786,14 @@ bool __fastcall FUN_1118f8c0(int param_1)
 bool __fastcall FUN_1118f8f0(int param_1)
 
 {
+ try {
   undefined1 *puVar1;
   
   puVar1 = (undefined1 *)(&stack0xffffffff);
   (**(code **)(**(int **)(param_1 + 0x2c) + 0x40))(puVar1,&DAT_118bb268,param_1);
   return (/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool)((char)((uint)puVar1 >> 0x18) == '\0');
+
+ } catch (...) { }
 }
 
 
@@ -6897,6 +6907,7 @@ undefined4 FUN_11190230(void)
 void __fastcall FUN_111903b0(undefined4 *param_1)
 
 {
+ try {
   int iVar1;
   uint uVar2;
   int iVar3;
@@ -6905,15 +6916,14 @@ void __fastcall FUN_111903b0(undefined4 *param_1)
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjRC);
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117b7210);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjUpnpService);
   thunk_FUN_111401c0(1);
   iVar1 = (int)(param_1[10]);
-  uStack_8 = (undefined4)(0);
+
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
     iVar3 = (int)(thunk_FUN_1123fcd0((void *)(iVar1 + -0x10),uVar2));
     if (iVar3 == 0) {
@@ -6924,7 +6934,7 @@ void __fastcall FUN_111903b0(undefined4 *param_1)
     }
   }
   iVar1 = (int)(param_1[9]);
-  uStack_8 = (undefined4)(1);
+
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
     iVar3 = (int)(thunk_FUN_1123fcd0((void *)(iVar1 + -0x10),uVar2));
     if (iVar3 == 0) {
@@ -6935,7 +6945,7 @@ void __fastcall FUN_111903b0(undefined4 *param_1)
     }
   }
   iVar1 = (int)(param_1[8]);
-  uStack_8 = (undefined4)(2);
+
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
     iVar3 = (int)(thunk_FUN_1123fcd0((void *)(iVar1 + -0x10),uVar2));
     if (iVar3 == 0) {
@@ -6948,8 +6958,10 @@ void __fastcall FUN_111903b0(undefined4 *param_1)
   thunk_FUN_111a6f10();
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfUpnpEventHandler);
   thunk_FUN_111a4f00();
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -6982,11 +6994,14 @@ int FUN_111904a0(int param_1)
 bool __fastcall FUN_11190570(int param_1)
 
 {
+ try {
   char cVar1;
   
   cVar1 = (char)('\0');
   (**(code **)(**(int **)(param_1 + 0x2c) + 0x44))(0,"Master",&stack0xffffffff,param_1);
   return (/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool)(cVar1 == '\0');
+
+ } catch (...) { }
 }
 
 
@@ -7144,6 +7159,7 @@ int __fastcall FUN_11192eb0(int param_1)
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::FUN_11192ed0(undefined4 param_2)
 {
   int param_1 = (int )this;
+ try {
   int iVar1;
   char cVar2;
   undefined4 *puVar3;
@@ -7164,17 +7180,15 @@ int __fastcall FUN_11192eb0(int param_1)
   if (iVar1 == 0) {
     return;
   }
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117b7775);
-  pvStack_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&pvStack_10);
+
+
   if (*(int *)(iVar1 + 0x14) != 0) {
     uVar9 = (undefined4)(1);
-    thunk_FUN_1109f7f0(1,DAT_12126b84 ^ (uint)&stack0xfffffffc);
+    thunk_FUN_1109f7f0(1,DAT_12126b84 );
     cVar2 = (char)(thunk_FUN_110a1280(uVar9));
     if (cVar2 != '\0') {
       puVar3 = (undefined4 *)((undefined4 *)(**(code **)**(undefined4 **)(iVar1 + 0x14))(&iStack_18));
-      uStack_8 = (undefined4)(0);
+
       puVar4 = (undefined4 *)((undefined4 *)(**(code **)(**(int **)(iVar1 + 0x14) + 4))(&iStack_14));
       puVar8 = (undefined1 *)(&DAT_1186d2ee);
       if ((undefined1 *)*puVar3 != (undefined1 *)0x0) {
@@ -7196,7 +7210,7 @@ int __fastcall FUN_11192eb0(int param_1)
           free((void *)(iStack_14 + -0x10));
         }
       }
-      uStack_8 = (undefined4)(2);
+
       if ((iStack_18 != 0) && (*(int *)(iStack_18 + -0x10) < 0xffff)) {
         iVar5 = (int)(thunk_FUN_1123fcd0((void *)(iStack_18 + -0x10)));
         if (iVar5 == 0) {
@@ -7206,17 +7220,17 @@ int __fastcall FUN_11192eb0(int param_1)
           free((void *)(iStack_18 + -0x10));
         }
       }
-      uStack_8 = (undefined4)(0xffffffff);
+
     }
     piVar6 = (int *)((int *)thunk_FUN_1114a810());
     puVar3 = (undefined4 *)((undefined4 *)(**(code **)**(undefined4 **)(iVar1 + 0x14))(&iStack_1c));
-    uStack_8 = (undefined4)(3);
+
     puVar8 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)*puVar3 != (undefined1 *)0x0) {
       puVar8 = (undefined1 *)((undefined1 *)*puVar3);
     }
     (**(code **)(*piVar6 + 0x18))(puVar8,param_2);
-    uStack_8 = (undefined4)(4);
+
     if ((iStack_1c != 0) && (*(int *)(iStack_1c + -0x10) < 0xffff)) {
       iVar5 = (int)(thunk_FUN_1123fcd0((void *)(iStack_1c + -0x10)));
       if (iVar5 == 0) {
@@ -7226,12 +7240,14 @@ int __fastcall FUN_11192eb0(int param_1)
         free((void *)(iStack_1c + -0x10));
       }
     }
-    uStack_8 = (undefined4)(0xffffffff);
+
     *(undefined4 *)(iVar1 + 0x14) = 0;
     thunk_FUN_111a5a20("CachedState");
   }
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -7729,6 +7745,7 @@ undefined4 * __fastcall FUN_11194e30(undefined4 *param_1)
 void __fastcall FUN_11195410(undefined4 *param_1)
 
 {
+ try {
   undefined4 *puVar1;
   uint uVar2;
   int iVar3;
@@ -7737,11 +7754,10 @@ void __fastcall FUN_11195410(undefined4 *param_1)
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114f5ce0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   if ((int *)param_1[1] != (int *)0x0) {
     if (param_1[2] != 0) {
@@ -7754,8 +7770,10 @@ void __fastcall FUN_11195410(undefined4 *param_1)
     param_1[1] = 0;
     param_1[2] = 0;
   }
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -7770,6 +7788,7 @@ void __fastcall FUN_11195410(undefined4 *param_1)
 void __fastcall FUN_11195460(undefined4 *param_1)
 
 {
+ try {
   undefined4 *puVar1;
   uint uVar2;
   int iVar3;
@@ -7778,11 +7797,10 @@ void __fastcall FUN_11195460(undefined4 *param_1)
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114f5ce0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   if ((int *)param_1[1] != (int *)0x0) {
     if (param_1[2] != 0) {
@@ -7795,8 +7813,10 @@ void __fastcall FUN_11195460(undefined4 *param_1)
     param_1[1] = 0;
     param_1[2] = 0;
   }
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -8443,6 +8463,7 @@ undefined4 * __fastcall FUN_11199930(undefined4 *param_1)
 void __fastcall FUN_11199b00(undefined4 *param_1)
 
 {
+ try {
   undefined4 *puVar1;
   uint uVar2;
   int iVar3;
@@ -8451,11 +8472,10 @@ void __fastcall FUN_11199b00(undefined4 *param_1)
   undefined4 uStack_8;
   
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
-  uStack_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114f5ce0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   if ((int *)param_1[1] != (int *)0x0) {
     if (param_1[2] != 0) {
@@ -8468,8 +8488,10 @@ void __fastcall FUN_11199b00(undefined4 *param_1)
     param_1[1] = 0;
     param_1[2] = 0;
   }
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -10312,20 +10334,19 @@ void FUN_111a8360(void)
 void __fastcall FUN_111a8490(undefined4 *param_1)
 
 {
+ try {
   undefined4 *puVar1;
   uint uVar2;
   int iVar3;
   void *pvStack_10;
   undefined1 *puStack_c;
   undefined4 uStack_8;
-  
-  puStack_c = (undefined1 *)(LAB_117c10b0);
-  pvStack_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&pvStack_10);
+
+  uVar2 = (uint)(DAT_12126b84);
+
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjObjectIter);
   puVar1 = (undefined4 *)((undefined4 *)param_1[1]);
-  uStack_8 = (undefined4)(0);
+
   if (puVar1 != (undefined4 *)0x0) {
     iVar3 = (int)(thunk_FUN_1123fcd0(puVar1 + 1,uVar2));
     if (iVar3 == 0) {
@@ -10333,8 +10354,10 @@ void __fastcall FUN_111a8490(undefined4 *param_1)
     }
   }
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjIter);
-  ExceptionList = (void *)(pvStack_10);
+
   return;
+
+ } catch (...) { }
 }
 
 
@@ -20956,6 +20979,7 @@ undefined4 __stdcall FUN_111e85c0(undefined4 param_1,undefined4 param_2)
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::FUN_111edfc0(int *param_2,int param_3,undefined4 param_4,undefined4 param_5,int param_6)
 {
   int *param_1 = (int *)this;
+ try {
   short sVar1;
   undefined4 uVar2;
   int *piVar3;
@@ -21021,12 +21045,10 @@ undefined4 __stdcall FUN_111e85c0(undefined4 param_1,undefined4 param_2)
   undefined1 auStack_108 [128];
   undefined1 auStack_88 [128];
   uint uStack_8;
-  
-  uStack_15dd4 = (undefined4)(0xffffffff);
-  puStack_15dd8 = (undefined1 *)(LAB_117c59e5);
-  pvStack_15ddc = (void *)(ExceptionList);
+
+
   uStack_8 = (uint)(DAT_12126b84 ^ (uint)auStack_15dd0);
-  ExceptionList = (void *)(&pvStack_15ddc);
+
   uVar6 = (undefined4)(0);
   piStack_15df8 = (int *)(param_2);
   iStack_15df0 = (int)(param_3);
@@ -21039,7 +21061,7 @@ undefined4 __stdcall FUN_111e85c0(undefined4 param_1,undefined4 param_2)
   thunk_FUN_11283280(auStack_108,0x80);
   uStack_15dec = (undefined4)((**(code **)(*param_1 + 8))());
   thunk_FUN_1124e950(uStack_15dec,"credentials");
-  uStack_15dd4 = (undefined4)(0);
+
   thunk_FUN_1124e950("http://www.sonos.com/Services/1.1","context");
   *(unsigned char *)((char *)&uStack_15dd4 + 0) = 1;
   thunk_FUN_1124e200();
@@ -21047,21 +21069,21 @@ undefined4 __stdcall FUN_111e85c0(undefined4 param_1,undefined4 param_2)
   *(unsigned char *)((char *)&uStack_15dd4 + 0) = 2;
   thunk_FUN_1124e200();
   *(unsigned char *)((char *)&uStack_15dd4 + 0) = 3;
-  uStack_15de8 = (undefined4)(0);
+
   auStack_88[0] = 0;
   iStack_15de4 = (int)(0);
   sVar1 = (short)(thunk_FUN_111e7df0(auStack_4104,auStack_5cdc,auStack_2ed4,auStack_20c,&iStack_15de4,
                              auStack_1210,0x1001));
   if (sVar1 != 0) goto LAB_111ee4ba;
   ppuStack_254c = (undefined **)((uint)&ghidra_vftable_RSonosCPFaultHandler);
-  uStack_2548 = (undefined4)(0);
-  uStack_2544 = (undefined1)(0);
-  uStack_2524 = (undefined1)(0);
-  uStack_1d23 = (undefined1)(0);
-  uStack_1520 = (undefined1)(0);
-  uStack_1507 = (undefined1)(0);
-  uStack_14c4 = (undefined4)(0);
-  uStack_14c0 = (undefined1)(0);
+
+
+
+
+
+
+
+
   *(unsigned char *)((char *)&uStack_15dd4 + 0) = 4;
   uVar2 = (undefined4)(uVar6);
   if (bStack_15ddd != false) {
@@ -21104,7 +21126,7 @@ undefined4 __stdcall FUN_111e85c0(undefined4 param_1,undefined4 param_2)
   thunk_FUN_1124dd60();
   *(unsigned char *)((char *)&uStack_15dd4 + 0) = 7;
   ppuStack_9698 = (undefined **)((uint)&ghidra_vftable_RSonosParamRX);
-  uStack_964e = (undefined2)(0);
+
   thunk_FUN_1124dee0();
   thunk_FUN_1106a8d0(acStack_9614,uVar6,0x401);
   pcVar5 = (char *)(acStack_9614);
@@ -21118,11 +21140,11 @@ undefined4 __stdcall FUN_111e85c0(undefined4 param_1,undefined4 param_2)
   piVar3 = (int *)(piStack_15df8);
   ppuStack_9698 = (undefined **)((uint)&ghidra_vftable_RSonosSegmentMetadataParam);
   piStack_8208 = (int *)(piStack_15df8);
-  uStack_5cf4 = (undefined4)(0);
-  uStack_5cf0 = (undefined4)(0);
-  uStack_5cec = (undefined4)(0);
-  uStack_5ce8 = (undefined4)(0);
-  uStack_5ce4 = (undefined1)(0);
+
+
+
+
+
   ppuStack_5cf8 = (undefined **)((uint)&ghidra_vftable_RDateTime);
   pppuVar9 = (undefined ***)(&ppuStack_9698);
   *(unsigned char *)((char *)&uStack_15dd4 + 0) = 8;
@@ -21146,11 +21168,11 @@ LAB_111ee419:
     }
     if (sVar1 != 0) goto LAB_111ee419;
     ppuStack_15e10 = (undefined **)((uint)&ghidra_vftable_RDateTime);
-    uStack_15e0c = (undefined4)(0);
-    uStack_15e08 = (undefined4)(0);
-    uStack_15e04 = (undefined4)(0);
-    uStack_15e00 = (undefined4)(0);
-    uStack_15dfc = (undefined1)(0);
+
+
+
+
+
     thunk_FUN_11262fc0(auStack_88);
     (**(code **)(*piVar3 + 8))(&ppuStack_15e10,uStack_15de8);
   }
@@ -21168,9 +21190,11 @@ LAB_111ee4ba:
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
-  ExceptionList = (void *)(pvStack_15ddc);
+
   thunk_FUN_1148ac28();
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21214,6 +21238,7 @@ LAB_111ee4ba:
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::FUN_111eed20(undefined4 param_2)
 {
   int *param_1 = (int *)this;
+ try {
   int iVar1;
   short sVar2;
   undefined4 uVar3;
@@ -21246,17 +21271,15 @@ LAB_111ee4ba:
   undefined1 auStack_18c [260];
   undefined1 auStack_88 [128];
   uint uStack_8;
-  
-  uStack_120ec = (undefined4)(0xffffffff);
-  puStack_120f0 = (undefined1 *)(LAB_117c5b34);
-  pvStack_120f4 = (void *)(ExceptionList);
+
+
   uStack_8 = (uint)(DAT_12126b84 ^ (uint)auStack_120e8);
-  ExceptionList = (void *)(&pvStack_120f4);
+
   thunk_FUN_112b0270("sonoscp",5,"reportAccountAction: %s; sd.name: %s; sd.sid: %d",param_2,
                      param_1[2] + 0x1528,*(undefined4 *)(param_1[2] + 0x165c),uStack_8);
   uVar3 = (undefined4)((**(code **)(*param_1 + 8))());
   thunk_FUN_1124e950(uVar3,"credentials");
-  uStack_120ec = (undefined4)(0);
+
   thunk_FUN_1124e950("http://www.sonos.com/Services/1.1","context");
   *(unsigned char *)((char *)&uStack_120ec + 0) = 1;
   thunk_FUN_1124e200();
@@ -21270,14 +21293,14 @@ LAB_111ee4ba:
                              auStack_1190,0x1001));
   if (sVar2 != 0) goto LAB_111ef02f;
   ppuStack_2220 = (undefined **)((uint)&ghidra_vftable_RSonosCPFaultHandler);
-  uStack_221c = (undefined4)(0);
-  uStack_2218 = (undefined1)(0);
-  uStack_21f8 = (undefined1)(0);
-  uStack_19f7 = (undefined1)(0);
-  uStack_11f4 = (undefined1)(0);
-  uStack_11db = (undefined1)(0);
-  uStack_1198 = (undefined4)(0);
-  uStack_1194 = (undefined1)(0);
+
+
+
+
+
+
+
+
   *(unsigned char *)((char *)&uStack_120ec + 0) = 4;
   thunk_FUN_111c32e0(auStack_88,uVar3,"reportAccountAction",0,20000,10000,1,&ppuStack_2220);
   *(unsigned char *)((char *)&uStack_120ec + 0) = 5;
@@ -21319,9 +21342,11 @@ LAB_111ef02f:
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
-  ExceptionList = (void *)(pvStack_120f4);
+
   thunk_FUN_1148ac28();
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21332,6 +21357,7 @@ LAB_111ef02f:
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::FUN_111ef160(undefined4 param_2,char *param_3,undefined4 *param_4,undefined4 *param_5)
 {
   int *param_1 = (int *)this;
+ try {
   int iVar1;
   short sVar2;
   undefined4 uVar3;
@@ -21366,12 +21392,10 @@ LAB_111ef02f:
   undefined1 auStack_18c [260];
   undefined1 auStack_88 [128];
   uint uStack_8;
-  
-  uStack_12398 = (undefined4)(0xffffffff);
-  puStack_1239c = (undefined1 *)(LAB_117c5bcf);
-  pvStack_123a0 = (void *)(ExceptionList);
+
+
   uStack_8 = (uint)(DAT_12126b84 ^ (uint)auStack_12394);
-  ExceptionList = (void *)(&pvStack_123a0);
+
   thunk_FUN_112b0270("sonoscp",5,
                      "reportPlaySeconds: context: %s; uri: %s; cid: %s; id: %s; seconds: %lld; offset: %lld"
                      ,param_4[1],*param_4,param_3,param_2,param_4[2],param_4[3],param_4[4],
@@ -21379,7 +21403,7 @@ LAB_111ef02f:
   *param_5 = (undefined4)(0x3c);
   uVar3 = (undefined4)((**(code **)(*param_1 + 8))());
   thunk_FUN_1124e950(uVar3,"credentials");
-  uStack_12398 = (undefined4)(0);
+
   thunk_FUN_1124e950("http://www.sonos.com/Services/1.1","context");
   *(unsigned char *)((char *)&uStack_12398 + 0) = 1;
   thunk_FUN_1124e200();
@@ -21393,14 +21417,14 @@ LAB_111ef02f:
                              auStack_1190,0x1001));
   if (sVar2 != 0) goto LAB_111ef589;
   ppuStack_24cc = (undefined **)((uint)&ghidra_vftable_RSonosCPFaultHandler);
-  uStack_24c8 = (undefined4)(0);
-  uStack_24c4 = (undefined1)(0);
-  uStack_24a4 = (undefined1)(0);
-  uStack_1ca3 = (undefined1)(0);
-  uStack_14a0 = (undefined1)(0);
-  uStack_1487 = (undefined1)(0);
-  uStack_1444 = (undefined4)(0);
-  uStack_1440 = (undefined1)(0);
+
+
+
+
+
+
+
+
   *(unsigned char *)((char *)&uStack_12398 + 0) = 4;
   thunk_FUN_111c32e0(auStack_88,uVar3,"reportPlaySeconds",0,20000,10000,1,&ppuStack_24cc);
   uStack_12398 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_12398 + 1)) << 8 | (uint)(5)));
@@ -21465,9 +21489,11 @@ LAB_111ef589:
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
-  ExceptionList = (void *)(pvStack_123a0);
+
   thunk_FUN_1148ac28();
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21478,6 +21504,7 @@ LAB_111ef589:
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::FUN_111ef700(undefined4 param_2,char *param_3,undefined4 *param_4)
 {
   int *param_1 = (int *)this;
+ try {
   int iVar1;
   short sVar2;
   undefined4 uVar3;
@@ -21510,19 +21537,17 @@ LAB_111ef589:
   undefined1 auStack_18c [260];
   undefined1 auStack_88 [128];
   uint uStack_8;
-  
-  uStack_120ec = (undefined4)(0xffffffff);
-  puStack_120f0 = (undefined1 *)(LAB_117c5c64);
-  pvStack_120f4 = (void *)(ExceptionList);
+
+
   uStack_8 = (uint)(DAT_12126b84 ^ (uint)auStack_120e8);
-  ExceptionList = (void *)(&pvStack_120f4);
+
   thunk_FUN_112b0270("sonoscp",5,
                      "reportPlayStatus: %s; context: %s; uri: %s; cid: %s; id: %s; seconds: %lld; offset: %lld"
                      ,param_4[8],param_4[1],*param_4,param_3,param_2,param_4[2],param_4[3],
                      param_4[4],param_4[5],uStack_8);
   uVar3 = (undefined4)((**(code **)(*param_1 + 8))());
   thunk_FUN_1124e950(uVar3,"credentials");
-  uStack_120ec = (undefined4)(0);
+
   thunk_FUN_1124e950("http://www.sonos.com/Services/1.1","context");
   *(unsigned char *)((char *)&uStack_120ec + 0) = 1;
   thunk_FUN_1124e200();
@@ -21536,14 +21561,14 @@ LAB_111ef589:
                              auStack_1190,0x1001));
   if (sVar2 != 0) goto LAB_111efaa0;
   ppuStack_2220 = (undefined **)((uint)&ghidra_vftable_RSonosCPFaultHandler);
-  uStack_221c = (undefined4)(0);
-  uStack_2218 = (undefined1)(0);
-  uStack_21f8 = (undefined1)(0);
-  uStack_19f7 = (undefined1)(0);
-  uStack_11f4 = (undefined1)(0);
-  uStack_11db = (undefined1)(0);
-  uStack_1198 = (undefined4)(0);
-  uStack_1194 = (undefined1)(0);
+
+
+
+
+
+
+
+
   *(unsigned char *)((char *)&uStack_120ec + 0) = 4;
   thunk_FUN_111c32e0(auStack_88,uVar3,"reportPlayStatus",0,20000,10000,1,&ppuStack_2220);
   *(unsigned char *)((char *)&uStack_120ec + 0) = 5;
@@ -21596,9 +21621,11 @@ LAB_111efaa0:
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
-  ExceptionList = (void *)(pvStack_120f4);
+
   thunk_FUN_1148ac28();
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21609,6 +21636,7 @@ LAB_111efaa0:
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::FUN_111efc00(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
   int *param_1 = (int *)this;
+ try {
   int iVar1;
   short sVar2;
   undefined4 uVar3;
@@ -21639,15 +21667,13 @@ LAB_111efaa0:
   undefined1 auStack_18c [260];
   undefined1 auStack_88 [128];
   uint uStack_8;
-  
-  uStack_120ec = (undefined4)(0xffffffff);
-  puStack_120f0 = (undefined1 *)(LAB_117c5cf4);
-  pvStack_120f4 = (void *)(ExceptionList);
+
+
   uStack_8 = (uint)(DAT_12126b84 ^ (uint)auStack_120e8);
-  ExceptionList = (void *)(&pvStack_120f4);
+
   uVar3 = (undefined4)((**(code **)(*param_1 + 8))(uStack_8));
   thunk_FUN_1124e950(uVar3,"credentials");
-  uStack_120ec = (undefined4)(0);
+
   thunk_FUN_1124e950("http://www.sonos.com/Services/1.1","context");
   *(unsigned char *)((char *)&uStack_120ec + 0) = 1;
   thunk_FUN_1124e200();
@@ -21661,14 +21687,14 @@ LAB_111efaa0:
                              auStack_1190,0x1001));
   if (sVar2 != 0) goto LAB_111eff18;
   ppuStack_2220 = (undefined **)((uint)&ghidra_vftable_RSonosCPFaultHandler);
-  uStack_221c = (undefined4)(0);
-  uStack_2218 = (undefined1)(0);
-  uStack_21f8 = (undefined1)(0);
-  uStack_19f7 = (undefined1)(0);
-  uStack_11f4 = (undefined1)(0);
-  uStack_11db = (undefined1)(0);
-  uStack_1198 = (undefined4)(0);
-  uStack_1194 = (undefined1)(0);
+
+
+
+
+
+
+
+
   *(unsigned char *)((char *)&uStack_120ec + 0) = 4;
   thunk_FUN_111c32e0(auStack_88,uVar3,"reportStatus",0,20000,10000,1,&ppuStack_2220);
   *(unsigned char *)((char *)&uStack_120ec + 0) = 5;
@@ -21714,9 +21740,11 @@ LAB_111eff18:
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
-  ExceptionList = (void *)(pvStack_120f4);
+
   thunk_FUN_1148ac28();
   return;
+
+ } catch (...) { }
 }
 
 
@@ -21727,6 +21755,7 @@ LAB_111eff18:
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::FUN_111f0ab0(undefined4 param_2,char *param_3,undefined4 *param_4)
 {
   int *param_1 = (int *)this;
+ try {
   int iVar1;
   short sVar2;
   undefined4 uVar3;
@@ -21757,19 +21786,17 @@ LAB_111eff18:
   undefined1 auStack_18c [260];
   undefined1 auStack_88 [128];
   uint uStack_8;
-  
-  uStack_120ec = (undefined4)(0xffffffff);
-  puStack_120f0 = (undefined1 *)(LAB_117c5e54);
-  pvStack_120f4 = (void *)(ExceptionList);
+
+
   uStack_8 = (uint)(DAT_12126b84 ^ (uint)auStack_120e8);
-  ExceptionList = (void *)(&pvStack_120f4);
+
   thunk_FUN_112b0270("sonoscp",5,
                      "setPlayedSeconds: context: %s; uri: %s; cid: %s; id: %s; seconds: %lld; offset: %lld"
                      ,param_4[1],*param_4,param_3,param_2,param_4[2],param_4[3],param_4[4],
                      param_4[5],uStack_8);
   uVar3 = (undefined4)((**(code **)(*param_1 + 8))());
   thunk_FUN_1124e950(uVar3,"credentials");
-  uStack_120ec = (undefined4)(0);
+
   thunk_FUN_1124e950("http://www.sonos.com/Services/1.1","context");
   *(unsigned char *)((char *)&uStack_120ec + 0) = 1;
   thunk_FUN_1124e200();
@@ -21783,14 +21810,14 @@ LAB_111eff18:
                              auStack_1190,0x1001));
   if (sVar2 != 0) goto LAB_111f0e61;
   ppuStack_2220 = (undefined **)((uint)&ghidra_vftable_RSonosCPFaultHandler);
-  uStack_221c = (undefined4)(0);
-  uStack_2218 = (undefined1)(0);
-  uStack_21f8 = (undefined1)(0);
-  uStack_19f7 = (undefined1)(0);
-  uStack_11f4 = (undefined1)(0);
-  uStack_11db = (undefined1)(0);
-  uStack_1198 = (undefined4)(0);
-  uStack_1194 = (undefined1)(0);
+
+
+
+
+
+
+
+
   *(unsigned char *)((char *)&uStack_120ec + 0) = 4;
   thunk_FUN_111c32e0(auStack_88,uVar3,"setPlayedSeconds",0,20000,10000,1,&ppuStack_2220);
   *(unsigned char *)((char *)&uStack_120ec + 0) = 5;
@@ -21847,9 +21874,11 @@ LAB_111f0e61:
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
-  ExceptionList = (void *)(pvStack_120f4);
+
   thunk_FUN_1148ac28();
   return;
+
+ } catch (...) { }
 }
 
 
@@ -22256,6 +22285,7 @@ undefined4 FUN_111f32f0(undefined4 param_1)
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::FUN_111f3300(uint *param_2)
 {
   int param_1 = (int )this;
+ try {
   char cVar1;
   char cVar2;
   uint uVar3;
@@ -22265,18 +22295,16 @@ undefined4 FUN_111f32f0(undefined4 param_1)
   undefined4 uStack_8c;
   undefined1 auStack_88 [128];
   uint uStack_8;
-  
-  uStack_8c = (undefined4)(0xffffffff);
-  puStack_90 = (undefined1 *)(LAB_117c5efd);
-  pvStack_94 = (void *)(ExceptionList);
+
+
   uStack_8 = (uint)(DAT_12126b84 ^ (uint)auStack_88);
-  ExceptionList = (void *)(&pvStack_94);
+
   iVar4 = (int)(param_1);
   cVar1 = (char)(thunk_FUN_112a7f50(param_1,uStack_8));
   uVar3 = (uint)(0);
   *(undefined4 *)(param_1 + 0x8508) = 0;
   *(undefined4 *)(param_1 + 0x850c) = 0;
-  uStack_8c = (undefined4)(0);
+
   if (*param_2 != 0) {
     do {
       thunk_FUN_11283280(auStack_88,0x80);
@@ -22288,9 +22316,11 @@ undefined4 FUN_111f32f0(undefined4 param_1)
   if (cVar1 != '\0') {
     thunk_FUN_112a8010(param_1);
   }
-  ExceptionList = (void *)(pvStack_94);
+
   thunk_FUN_1148ac28(iVar4);
   return;
+
+ } catch (...) { }
 }
 
 
