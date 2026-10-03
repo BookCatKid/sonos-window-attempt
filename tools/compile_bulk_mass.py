@@ -370,6 +370,12 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
             elif qualifier in KEYWORDS:
                 out.append(body[start:tail])
                 pos = tail
+            elif qualifier == 'std':
+                # std is a namespace: std::f(args) is a free call, not
+                # a member call on a this object.
+                member_methods.setdefault(qualifier, set()).add(leaf)
+                out.append(body[start:tail])
+                pos = tail
             else:
                 stub_name = qualifier
                 while '<' in stub_name:
