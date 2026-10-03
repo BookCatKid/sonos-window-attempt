@@ -105,6 +105,11 @@ extern int FUN_1146c240(...);
 extern __declspec(dllimport) int _CxxThrowException(...);
 extern __declspec(dllimport) int _Mtx_destroy_in_situ(...);
 extern __declspec(dllimport) int _Mtx_init_in_situ(...);
+extern __declspec(dllimport) int _Mtx_lock(...);
+extern __declspec(dllimport) int _Mtx_unlock(...);
+extern __declspec(dllimport) int _Throw_C_error(...);
+extern __declspec(dllimport) int _Xbad_function_call(...);
+extern int __ArrayUnwind(...);
 extern __declspec(dllimport) int __CxxFrameHandler3(...);
 extern int ___scrt_is_ucrt_dll_in_use(...);
 extern int ___security_init_cookie(...);
@@ -644,6 +649,8 @@ extern int DAT_122f6978;
 extern int DAT_122f697c;
 extern int DAT_122f6bd8;
 extern int DAT_122f6bdc;
+extern int DAT_122f6c18;
+extern int DAT_122f6c20;
 extern int DAT_122f6ca0;
 extern int DAT_122f6d28;
 extern int DAT_122f6d50;
@@ -757,6 +764,7 @@ extern int ghidra_vftable_std_bad_alloc;
 extern int ghidra_vftable_std_exception;
 extern int ghidra_vftable_std_logic_error;
 extern int ghidra_vftable_type_info;
+extern int in_AL;
 extern int in_EAX;
 extern int in_EDX;
 extern int in_stack_00000014;
@@ -764,7 +772,9 @@ extern int in_stack_0000001c;
 extern int in_stack_00000020;
 extern int in_stack_00000024;
 extern int unaff_EBP;
+extern int unaff_EBX;
 extern int unaff_EDI;
+extern int unaff_ESI;
 extern undefined1 LAB_100841f3[];
 extern undefined1 LAB_10088519[];
 extern undefined1 LAB_1116d5a2[];
@@ -797,6 +807,7 @@ extern int *stack0x00000014;
 extern int *stack0xfffffff4;
 extern int *stack0xfffffffc;
 extern void *ExceptionList;
+namespace std { template<class... A> int _Throw_C_error(A...); template<class... A> int _Xbad_function_call(A...);}
 struct SCImageResource { char _pad; SCImageResource(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class... A> int op_dtor(A...); };
 struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class... A> int op_dtor(A...); };
 typedef void *CLIENT_KEY_INT;
@@ -826,6 +837,7 @@ typedef void *UNLOCK;
 typedef void *UNRECOVERED_JUMPTABLE;
 typedef void *WARNING;
 typedef void *X_;
+typedef void *_func_void_void_ptr;
 struct Array { char _pad; Array(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Call { char _pad; Call(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Catch_All_11108a45 { char _pad; Catch_All_11108a45(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
@@ -1675,9 +1687,12 @@ undefined4 FUN_112d2860(int param_1);
 undefined4 * __fastcall FUN_112ece50(undefined4 *param_1);
 undefined4 __fastcall FUN_112ed180(undefined4 param_1);
 void __fastcall FUN_112ed6d0(int param_1);
+void __fastcall FUN_112ee460(int param_1);
+void __fastcall FUN_112ee480(int param_1);
 void FUN_112eeea0(int param_1);
 void FUN_112efba0(int *param_1);
 void __stdcall FUN_112effc0(undefined4 param_1,undefined4 param_2);
+bool FUN_112f0920(void);
 void FUN_112f1710(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
 void FUN_112f1740(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
 void FUN_112f1770(code *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
@@ -1926,6 +1941,7 @@ void FUN_11480f60(int param_1,int param_2);
 void FUN_11483100(undefined4 param_1,uint param_2);
 void FUN_11489290(int param_1);
 void FUN_11489320(int param_1);
+void FUN_1148a3b3(void);
 undefined4 FUN_1148a3e4(undefined4 *param_1);
 /* Library Function - Single Match ___scrt_dllmain_after_initialize_c Libraries: Visual Studio 2015 Release, Visual Studio 2017 Release, Visual Studio 2019 Release */ undefined4 ___scrt_dllmain_after_initialize_c(void);
 /* Library Function - Single Match ___scrt_dllmain_crt_thread_attach Libraries: Visual Studio 2015 Release, Visual Studio 2017 Release, Visual Studio 2019 Release */ undefined1 ___scrt_dllmain_crt_thread_attach(void);
@@ -1938,8 +1954,10 @@ void FUN_1148a93d(undefined4 param_1);
 void __fastcall FUN_1148ac28(int param_1);
 /* Library Function - Single Match _dtol3_getbits Libraries: Visual Studio 2019 Debug, Visual Studio 2019 Release */ undefined8 __cdecl dtol3_getbits(void);
 /* Library Function - Single Match __DllMainCRTStartup@12 Library: Visual Studio 2019 Release */ void __DllMainCRTStartup_12(HINSTANCE__ *param_1,ulong param_2,void *param_3);
+void FUN_1148b60c(void);
 /* Library Function - Single Match __allmul Library: Visual Studio */ longlong __allmul(uint param_1,int param_2,uint param_3,int param_4);
 /* Library Function - Single Match __except_handler4 Library: Visual Studio 2019 Release */ void __except_handler4(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
+void FUN_1148c019(void);
 void FUN_1148c290(uint param_1);
 void FUN_1148c2d0(void);
 /* Library Function - Single Match __allshr Library: Visual Studio */ undefined8 __fastcall __allshr(byte param_1,int param_2);
@@ -14482,6 +14500,36 @@ void __thiscall Recovered_Bulk::FUN_112ee390(char param_2)
 }
 
 
+// Reference entry 112ee460; body size 22 bytes.
+#line 1 "ENTRY_112ee460"
+
+void __fastcall FUN_112ee460(int param_1)
+
+{
+  if (*(int **)(param_1 + 0x2c) != (int *)0x0) {
+    (**(code **)(**(int **)(param_1 + 0x2c) + 8))();
+    return;
+  }
+                    
+  std::_Xbad_function_call();
+}
+
+
+// Reference entry 112ee480; body size 20 bytes.
+#line 1 "ENTRY_112ee480"
+
+void __fastcall FUN_112ee480(int param_1)
+
+{
+  if (*(int **)(param_1 + 0x2c) != (int *)0x0) {
+    (**(code **)(**(int **)(param_1 + 0x2c) + 8))();
+    return;
+  }
+                    
+  std::_Xbad_function_call();
+}
+
+
 // Reference entry 112ee620; body size 19 bytes.
 #line 1 "ENTRY_112ee620"
 
@@ -14542,6 +14590,26 @@ void __stdcall FUN_112effc0(undefined4 param_1,undefined4 param_2)
 {
   thunk_FUN_112f0000(param_1,param_2);
   return;
+}
+
+
+// Reference entry 112f0920; body size 50 bytes.
+#line 1 "ENTRY_112f0920"
+
+bool FUN_112f0920(void)
+
+{
+  int iVar1;
+  bool bVar2;
+  
+  iVar1 = (int)(_Mtx_lock(&DAT_122f6c20));
+  if (iVar1 == 0) {
+    bVar2 = (bool)(DAT_122f6c18 != 0);
+    _Mtx_unlock(&DAT_122f6c20);
+    return (bool)(bVar2);
+  }
+                    
+  std::_Throw_C_error(iVar1);
 }
 
 
@@ -19207,6 +19275,25 @@ void FUN_11489320(int param_1)
 }
 
 
+// Reference entry 1148a3b3; body size 16 bytes.
+#line 1 "ENTRY_1148a3b3"
+
+void FUN_1148a3b3(void)
+
+{
+  char in_AL;
+  uint unaff_EBX;
+  int unaff_EBP;
+  void *unaff_ESI;
+  uint unaff_EDI;
+  
+  if (in_AL == '\0') {
+    __ArrayUnwind(unaff_ESI,unaff_EBX,unaff_EDI,*(_func_void_void_ptr **)(unaff_EBP + 0x14));
+  }
+  return;
+}
+
+
 // Reference entry 1148a3e4; body size 46 bytes.
 #line 1 "ENTRY_1148a3e4"
 
@@ -19498,6 +19585,24 @@ void __DllMainCRTStartup_12(HINSTANCE__ *param_1,ulong param_2,void *param_3)
 }
 
 
+// Reference entry 1148b60c; body size 20 bytes.
+#line 1 "ENTRY_1148b60c"
+
+void FUN_1148b60c(void)
+
+{
+  char in_AL;
+  uint unaff_EBX;
+  int unaff_EBP;
+  
+  if (in_AL == '\0') {
+    __ArrayUnwind(*(void **)(unaff_EBP + 8),*(uint *)(unaff_EBP + 0xc),unaff_EBX,
+                  *(_func_void_void_ptr **)(unaff_EBP + 0x18));
+  }
+  return;
+}
+
+
 // Reference entry 1148ba80; body size 52 bytes.
 #line 1 "ENTRY_1148ba80"
 
@@ -19533,6 +19638,24 @@ void __except_handler4(undefined4 *param_1,undefined4 param_2,undefined4 param_3
   uVar1 = (undefined4)(__filter_x86_sse2_floating_point_exception_default(*param_1));
   *param_1 = (undefined4)(uVar1);
   except_handler4_common(&DAT_12126b84,thunk_FUN_1148ac28,param_1,param_2,param_3,param_4);
+  return;
+}
+
+
+// Reference entry 1148c019; body size 20 bytes.
+#line 1 "ENTRY_1148c019"
+
+void FUN_1148c019(void)
+
+{
+  char in_AL;
+  uint unaff_EBX;
+  int unaff_EBP;
+  
+  if (in_AL == '\0') {
+    __ArrayUnwind(*(void **)(unaff_EBP + 8),*(uint *)(unaff_EBP + 0x10),unaff_EBX,
+                  *(_func_void_void_ptr **)(unaff_EBP + 0x1c));
+  }
   return;
 }
 

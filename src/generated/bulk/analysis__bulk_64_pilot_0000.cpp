@@ -63,6 +63,7 @@ extern int FUN_1183f2c0(...);
 extern int FUN_11862560(...);
 extern __declspec(dllimport) int _CxxThrowException(...);
 extern int _atexit(...);
+extern int _eh_vector_destructor_iterator_(...);
 extern __declspec(dllimport) int _invalid_parameter_noinfo_noreturn(...);
 extern __declspec(dllimport) int ceil(...);
 extern int int_addref(...);
@@ -87,6 +88,8 @@ extern int thunk_FUN_101a1ea0(...);
 extern int thunk_FUN_101a2000(...);
 extern int thunk_FUN_101a2160(...);
 extern int thunk_FUN_101da5c0(...);
+extern int thunk_FUN_10265c30(...);
+extern int thunk_FUN_10266f90(...);
 extern int thunk_FUN_10288030(...);
 extern int thunk_FUN_103056e0(...);
 extern int thunk_FUN_10310680(...);
@@ -96,15 +99,27 @@ extern int thunk_FUN_106b2750(...);
 extern int thunk_FUN_10c40d70(...);
 extern int thunk_FUN_1114a7f0(...);
 extern int thunk_FUN_111d7e60(...);
+extern int thunk_FUN_11240650(...);
 extern int thunk_FUN_112a7b70(...);
 extern int thunk_FUN_112a7ea0(...);
 extern int thunk_FUN_112a9cf0(...);
 extern int thunk_FUN_1148a50e(...);
 extern int thunk_FUN_1148ac28(...);
 extern int thunk_FUN_1148ac80(...);
+extern int thunk_FUN_1148b586(...);
 extern int DAT_1186d2ee;
 extern int DAT_11880fb0;
+extern int DAT_11882ff0;
 extern int DAT_11d33164;
+extern int DAT_1211c1d8;
+extern int DAT_1211c1f8;
+extern int DAT_1211c9f9;
+extern int DAT_1211d1fc;
+extern int DAT_1211d215;
+extern int DAT_1211d25c;
+extern int DAT_1211dc08;
+extern int DAT_1211dc0c;
+extern int DAT_1211dc10;
 extern int DAT_12126b84;
 extern int DAT_121a07b0;
 extern int DAT_121a07b4;
@@ -114,17 +129,231 @@ extern int DAT_121a0fd4;
 extern int DAT_121a0fd8;
 extern int DAT_121a1028;
 extern int DAT_121a10c8;
+extern int DAT_121a1494;
+extern int DAT_121a1498;
+extern int DAT_121a149c;
+extern int DAT_121a14a0;
+extern int DAT_121a14a4;
+extern int DAT_121a14b4;
+extern int DAT_121a14c4;
+extern int DAT_121a14d4;
+extern int DAT_121a14e4;
+extern int DAT_121a14f4;
 extern int DAT_121a2650;
 extern int DAT_121a2654;
 extern int DAT_121a26cc;
 extern int DAT_121a2764;
+extern int DAT_121a49a0;
+extern int DAT_121a49a4;
+extern int DAT_121a49a8;
 extern int DAT_121a5544;
+extern int DAT_121a5f78;
+extern int DAT_121a5f84;
+extern int DAT_121a5f88;
+extern int DAT_121a5f94;
+extern int DAT_121a5f98;
+extern int DAT_121a5fa4;
+extern int DAT_121a5fa8;
+extern int DAT_121a5fb4;
+extern int DAT_121a5fb8;
+extern int DAT_121a5fc4;
+extern int DAT_121a5fc8;
+extern int DAT_121a5fd4;
+extern int DAT_121a5fd8;
+extern int DAT_121a5fe4;
+extern int DAT_121a5fe8;
+extern int DAT_121a5ff4;
+extern int DAT_121a5ff8;
+extern int DAT_121a6004;
 extern int DAT_121a6008;
 extern int DAT_121a6014;
+extern int DAT_121a6ab8;
+extern int DAT_121a6abc;
+extern int DAT_121a6ac0;
+extern int DAT_121a6ac4;
+extern int DAT_121a6ac8;
+extern int DAT_121a6acc;
+extern int DAT_121a6ad0;
+extern int DAT_121a6ad4;
+extern int DAT_121a6ad8;
+extern int DAT_121a6adc;
+extern int DAT_121a6ae0;
+extern int DAT_121a6ae4;
+extern int DAT_121a6ae8;
+extern int DAT_121a6aec;
 extern int DAT_122f33e0;
 extern int DAT_122f33e8;
 extern int DAT_122f33f4;
+extern int _DAT_1211c1cc;
+extern int _DAT_1211c1d0;
+extern int _DAT_1211c1d4;
+extern int _DAT_1211d258;
+extern int _DAT_1211dc04;
+extern int _DAT_1211dc14;
+extern int _DAT_1211dc18;
+extern int _DAT_1211dc1c;
+extern int _DAT_1211dc20;
+extern int _DAT_1211dc24;
+extern int _DAT_1211dc28;
+extern int _DAT_1211dc2c;
+extern int _DAT_1211dc30;
+extern int _DAT_1211dc34;
+extern int _DAT_1211dc38;
+extern int _DAT_1211dc3c;
+extern int _DAT_1211dc40;
+extern int _DAT_1211dc44;
+extern int _DAT_1211dc48;
+extern int _DAT_1211dc4c;
+extern int _DAT_1211dc50;
+extern int _DAT_1211dc54;
+extern int _DAT_1211dc58;
+extern int _DAT_1211dc5c;
+extern int _DAT_1211dc60;
+extern int _DAT_1211dc64;
+extern int _DAT_1211dc68;
+extern int _DAT_1211dc6c;
+extern int _DAT_1211dc70;
+extern int _DAT_1211dc74;
+extern int _DAT_1211dc78;
+extern int _DAT_1211dc7c;
+extern int _DAT_1211dc80;
+extern int _DAT_1211dc84;
+extern int _DAT_1211dc88;
+extern int _DAT_1211dc8c;
+extern int _DAT_1211dc90;
+extern int _DAT_1211dc94;
+extern int _DAT_1211dc98;
+extern int _DAT_1211dc9c;
+extern int _DAT_1211dca0;
+extern int _DAT_1211dca4;
+extern int _DAT_1211dca8;
+extern int _DAT_1211dcac;
+extern int _DAT_1211dcb0;
+extern int _DAT_1211dcb4;
+extern int _DAT_1211dcb8;
+extern int _DAT_1211dcbc;
+extern int _DAT_1211dcc0;
+extern int _DAT_1211dcc4;
+extern int _DAT_1211dcc8;
+extern int _DAT_1211dccc;
+extern int _DAT_1211dcd0;
+extern int _DAT_1211dcd4;
+extern int _DAT_1211dcd8;
+extern int _DAT_1211dcdc;
+extern int _DAT_1211dce0;
+extern int _DAT_1211dce4;
+extern int _DAT_1211dce8;
+extern int _DAT_1211dcec;
+extern int _DAT_1211dcf0;
+extern int _DAT_1211dcf4;
+extern int _DAT_1211dcf8;
+extern int _DAT_1211dcfc;
+extern int _DAT_1211dd00;
+extern int _DAT_1211dd04;
+extern int _DAT_1211dd08;
+extern int _DAT_1211dd0c;
+extern int _DAT_1211dd10;
+extern int _DAT_1211dd14;
+extern int _DAT_1211dd18;
+extern int _DAT_1211dd1c;
+extern int _DAT_1211dd20;
+extern int _DAT_1211dd24;
+extern int _DAT_1211dd28;
+extern int _DAT_1211dd2c;
+extern int _DAT_1211dd30;
+extern int _DAT_1211dd34;
+extern int _DAT_1211dd38;
+extern int _DAT_1211dd3c;
+extern int _DAT_1211dd40;
+extern int _DAT_1211dd44;
+extern int _DAT_1211dd48;
+extern int _DAT_1211dd4c;
+extern int _DAT_1211dd50;
+extern int _DAT_1211dd54;
+extern int _DAT_1211dd58;
+extern int _DAT_1211dd5c;
+extern int _DAT_1211dd60;
+extern int _DAT_1211dd64;
+extern int _DAT_1211dd68;
+extern int _DAT_1211dd6c;
+extern int _DAT_1211dd70;
+extern int _DAT_1211dd74;
+extern int _DAT_1211dd78;
+extern int _DAT_1211dd7c;
+extern int _DAT_1211dd80;
+extern int _DAT_1211dd84;
+extern int _DAT_1211dd88;
+extern int _DAT_1211dd8c;
+extern int _DAT_1211dd90;
+extern int _DAT_1211dd94;
+extern int _DAT_1211dd98;
+extern int _DAT_1211dd9c;
+extern int _DAT_1211dda0;
+extern int _DAT_1211dda4;
+extern int _DAT_1211dda8;
+extern int _DAT_1211ddac;
+extern int _DAT_1211ddb0;
+extern int _DAT_1211ddb4;
+extern int _DAT_1211ddb8;
+extern int _DAT_1211ddbc;
+extern int _DAT_1211ddc0;
+extern int _DAT_1211ddc4;
+extern int _DAT_1211ddc8;
+extern int _DAT_1211ddcc;
+extern int _DAT_1211ddd0;
+extern int _DAT_1211ddd4;
+extern int _DAT_1211ddd8;
+extern int _DAT_1211dddc;
+extern int _DAT_1211dde0;
+extern int _DAT_1211dde4;
+extern int _DAT_1211dde8;
+extern int _DAT_1211ddec;
+extern int _DAT_1211ddf0;
+extern int _DAT_1211ddf4;
+extern int _DAT_1211ddf8;
+extern int _DAT_1211ddfc;
+extern int _DAT_1211de00;
+extern int _DAT_1211de04;
+extern int _DAT_1211de08;
+extern int _DAT_1211de0c;
+extern int _DAT_1211de10;
+extern int _DAT_1211de14;
 extern int _DAT_121a0fe4;
+extern int _DAT_121a14a8;
+extern int _DAT_121a14ac;
+extern int _DAT_121a14b0;
+extern int _DAT_121a14b8;
+extern int _DAT_121a14bc;
+extern int _DAT_121a14c0;
+extern int _DAT_121a14c8;
+extern int _DAT_121a14cc;
+extern int _DAT_121a14d0;
+extern int _DAT_121a14d8;
+extern int _DAT_121a14dc;
+extern int _DAT_121a14e0;
+extern int _DAT_121a14e8;
+extern int _DAT_121a14ec;
+extern int _DAT_121a14f0;
+extern int _DAT_121a14f8;
+extern int _DAT_121a14fc;
+extern int _DAT_121a5f7c;
+extern int _DAT_121a5f80;
+extern int _DAT_121a5f8c;
+extern int _DAT_121a5f90;
+extern int _DAT_121a5f9c;
+extern int _DAT_121a5fa0;
+extern int _DAT_121a5fac;
+extern int _DAT_121a5fb0;
+extern int _DAT_121a5fbc;
+extern int _DAT_121a5fc0;
+extern int _DAT_121a5fcc;
+extern int _DAT_121a5fd0;
+extern int _DAT_121a5fdc;
+extern int _DAT_121a5fe0;
+extern int _DAT_121a5fec;
+extern int _DAT_121a5ff0;
+extern int _DAT_121a5ffc;
+extern int _DAT_121a6000;
 extern int _DAT_121a600c;
 extern int _DAT_121a6010;
 extern int _DAT_122f33dc;
@@ -133,6 +362,7 @@ extern int _DAT_122f33f0;
 extern int _DAT_122f33f8;
 extern int g_lSCObjCount;
 extern int ghidra_vftable_RITQHandler;
+extern int ghidra_vftable_RSonosCPFaultHandler;
 extern int ghidra_vftable_SCFoundProductManager;
 extern int ghidra_vftable_SCIObjImpl;
 extern int ghidra_vftable_SCLoggingHelper;
@@ -140,6 +370,7 @@ extern int ghidra_vftable_SCNewWizManager;
 extern int ghidra_vftable_SCTestPointManager;
 extern int ghidra_vftable_SCTimerUser;
 extern int ghidra_vftable_SCUpnpSubscriptionManager;
+extern int ghidra_vftable_SwfObjHouseholdOAuthCB;
 extern int ghidra_vftable_Swig_DirectorException;
 extern int ghidra_vftable_Swig_DirectorPureVirtualException;
 extern undefined1 LAB_101190d0[];
@@ -384,17 +615,68 @@ extern undefined1 LAB_1151a1dd[];
 extern undefined1 LAB_11530617[];
 extern undefined1 LAB_11531a5a[];
 extern undefined1 LAB_115387b4[];
+extern undefined1 LAB_11560281[];
 extern undefined1 LAB_115daf07[];
 extern undefined1 LAB_115df715[];
 extern undefined1 LAB_115e026c[];
+extern undefined1 LAB_1169a559[];
 extern undefined1 LAB_116dcdd7[];
 extern undefined1 LAB_117065cf[];
+extern undefined1 LAB_117066af[];
+extern undefined1 LAB_1172a260[];
+extern undefined1 LAB_1172a300[];
+extern undefined1 LAB_117561a7[];
+extern undefined1 LAB_117a541f[];
+extern undefined1 LAB_117ae58f[];
 extern undefined1 LAB_117c41a9[];
+extern undefined1 LAB_117f7c00[];
+extern undefined1 LAB_1182aca0[];
+extern undefined1 LAB_1183f350[];
+extern undefined1 LAB_11846210[];
+extern undefined1 LAB_11846250[];
+extern undefined1 LAB_1184e030[];
+extern undefined1 LAB_11861ea0[];
+extern undefined1 LAB_118620a0[];
+extern int *PTR_vftable_1211c1c8;
 extern int *stack0x00000004;
 extern int *stack0xffffffe0;
 extern int *stack0xffffffe4;
 extern int *stack0xfffffffc;
 extern char s_Attempt_to_invoke_pure_virtual_m_1186d2c0[];
+extern char s_RHHSTR_LIBRARY_ADDFAIL_ALBUM_119c5738[];
+extern char s_RHHSTR_LIBRARY_ADDFAIL_ARTIST_119c575c[];
+extern char s_RHHSTR_LIBRARY_ADDFAIL_PLAYLIST_119c5780[];
+extern char s_RHHSTR_LIBRARY_ADDFAIL_TRACK_119c5714[];
+extern char s_RHHSTR_LIBRARY_AUTOMIXFAIL_TRACK_119c57a8[];
+extern char s_RHHSTR_LIBRARY_POSTED_TRACK_119c57f4[];
+extern char s_RHHSTR_LIBRARY_POSTFAIL_TRACK_119c5818[];
+extern char s_RHHSTR_LIBRARY_POSTING_TRACK_119c57d0[];
+extern char s_RHHSTR_LIBRARY_REMOVEFAIL_ALBUM_119c5698[];
+extern char s_RHHSTR_LIBRARY_REMOVEFAIL_ARTIST_119c56c0[];
+extern char s_RHHSTR_LIBRARY_REMOVEFAIL_PLAYLI_119c56e8[];
+extern char s_RHHSTR_LIBRARY_REMOVEFAIL_TRACK_119c5670[];
+extern char s_RHHSTR_LIBRARY_SONOS_ADDED_ALBUM_119c536c[];
+extern char s_RHHSTR_LIBRARY_SONOS_ADDED_ARTIS_119c5394[];
+extern char s_RHHSTR_LIBRARY_SONOS_ADDED_PLAYL_119c53bc[];
+extern char s_RHHSTR_LIBRARY_SONOS_ADDED_TRACK_119c5344[];
+extern char s_RHHSTR_LIBRARY_SONOS_ADDING_ALBU_119c52c4[];
+extern char s_RHHSTR_LIBRARY_SONOS_ADDING_ARTI_119c52ec[];
+extern char s_RHHSTR_LIBRARY_SONOS_ADDING_PLAY_119c5318[];
+extern char s_RHHSTR_LIBRARY_SONOS_ADDING_TRAC_119c529c[];
+extern char s_RHHSTR_LIBRARY_SONOS_AUTOMIXED_T_119c5418[];
+extern char s_RHHSTR_LIBRARY_SONOS_AUTOMIXING__119c53e8[];
+extern char s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5444[];
+extern char s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5474[];
+extern char s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c54a4[];
+extern char s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c54d4[];
+extern char s_RHHSTR_LIBRARY_SONOS_REMOVED_ALB_119c55e8[];
+extern char s_RHHSTR_LIBRARY_SONOS_REMOVED_ART_119c5614[];
+extern char s_RHHSTR_LIBRARY_SONOS_REMOVED_PLA_119c5640[];
+extern char s_RHHSTR_LIBRARY_SONOS_REMOVED_TRA_119c55bc[];
+extern char s_RHHSTR_LIBRARY_SONOS_REMOVING_AL_119c5534[];
+extern char s_RHHSTR_LIBRARY_SONOS_REMOVING_AR_119c5560[];
+extern char s_RHHSTR_LIBRARY_SONOS_REMOVING_PL_119c558c[];
+extern char s_RHHSTR_LIBRARY_SONOS_REMOVING_TR_119c5508[];
 extern void *ExceptionList;
 struct SCIAbilityDelegateSwigBase { char _pad; SCIAbilityDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int canEnablePrereq; static int canRequestPrereq; static int canSuggestPrereq; static int enablePrereq; static int getIOSControlPanelSwipeDirection; static int initialize; static int isAlwaysAvailable; static int isAlwaysDisallowed; static int isPrereq; static int requestPrereq; static int requireFineLocationPermission; static int shutdown; static int suggestPrereq; };
 struct SCIActionDelegateSwigBase { char _pad; SCIActionDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int asyncActionHasCompleted; };
@@ -459,10 +741,22 @@ struct SCLibLogCallback { char _pad; SCLibLogCallback(...); template<class T> in
 struct SCLibSonarCallback { char _pad; SCLibSonarCallback(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int canHardwareGainBeSet; static int cleanupRecording; static int getBitsPerSample; static int getChannels; static int getHoldStyle; static int getSampleRate; static int hasLimitedVerticalSpace; static int prepareForRecording; static int requireInputToChangeHoldStyle; static int sonarBegin; static int sonarEnd; static int startMotionData; static int startRawMotionData; static int startRecording; static int stopMotionData; static int stopRawMotionData; static int stopRecording; };
 struct SCLibTruncatedStringsCallback { char _pad; SCLibTruncatedStringsCallback(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int clearTruncatedStrings; };
 struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class... A> int int_addref(A...); template<class... A> int int_allocRep(A...); template<class... A> int int_release(A...); template<class... A> int op_ctor(A...); template<class... A> int op_eq(A...); template<class... A> int setFromUTF16(A...); };
+typedef void *A;
+typedef void *ALBUM;
+typedef void *ALBUMARTIST;
+typedef void *ARTIST;
+typedef void *COMPOSER;
+typedef void *GENRE;
+typedef void *PLAYLISTS;
+typedef void *S;
+typedef void *TRACKS;
 typedef void *WARNING;
+typedef void *_func_4879;
+struct ChirpReAuthentication { char _pad; ChirpReAuthentication(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Function { char _pad; Function(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Globals { char _pad; Globals(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct LogDebugMessage { char _pad; LogDebugMessage(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct RINCON_AssociatedZPUDN { char _pad; RINCON_AssociatedZPUDN(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SCIAbilityDelegate { char _pad; SCIAbilityDelegate(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SCIAction { char _pad; SCIAction(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SCIActionDelegate { char _pad; SCIActionDelegate(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
@@ -518,8 +812,23 @@ struct SCIWebsocketCallback { char _pad; SCIWebsocketCallback(...); template<cla
 struct SCIWebsocketDelegate { char _pad; SCIWebsocketDelegate(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SCIWifiDelegate { char _pad; SCIWifiDelegate(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SCIZoneGroupMgr { char _pad; SCIZoneGroupMgr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct SCLIB_STR_SonosRadioTileExtension_Free_Subtitle { char _pad; SCLIB_STR_SonosRadioTileExtension_Free_Subtitle(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct SCLIB_STR_SonosRadioTileExtension_Free_Title { char _pad; SCLIB_STR_SonosRadioTileExtension_Free_Title(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct SCLIB_STR_SonosRadioTileExtension_MySonos_Free_Subtitle { char _pad; SCLIB_STR_SonosRadioTileExtension_MySonos_Free_Subtitle(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct SCLIB_STR_SonosRadioTileExtension_MySonos_Free_Title { char _pad; SCLIB_STR_SonosRadioTileExtension_MySonos_Free_Title(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct SCLIB_STR_SonosRadioTileExtension_MySonos_Holidays_Subtitle { char _pad; SCLIB_STR_SonosRadioTileExtension_MySonos_Holidays_Subtitle(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct SCLIB_STR_SonosRadioTileExtension_MySonos_Holidays_Subtitle_2 { char _pad; SCLIB_STR_SonosRadioTileExtension_MySonos_Holidays_Subtitle_2(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct SCLIB_STR_SonosRadioTileExtension_MySonos_Holidays_Title { char _pad; SCLIB_STR_SonosRadioTileExtension_MySonos_Holidays_Title(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct SCLIB_STR_SonosRadioTileExtension_MySonos_Holidays_Title_2 { char _pad; SCLIB_STR_SonosRadioTileExtension_MySonos_Holidays_Title_2(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct SCLIB_STR_SonosRadioTileExtension_MySonos_Premium1_Subtitle { char _pad; SCLIB_STR_SonosRadioTileExtension_MySonos_Premium1_Subtitle(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct SCLIB_STR_SonosRadioTileExtension_MySonos_Premium1_Title { char _pad; SCLIB_STR_SonosRadioTileExtension_MySonos_Premium1_Title(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct SCLIB_STR_SonosRadioTileExtension_MySonos_Premium2_Subtitle { char _pad; SCLIB_STR_SonosRadioTileExtension_MySonos_Premium2_Subtitle(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct SCLIB_STR_SonosRadioTileExtension_MySonos_Premium2_Title { char _pad; SCLIB_STR_SonosRadioTileExtension_MySonos_Premium2_Title(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct SCLIB_STR_SonosRadioTileExtension_Premium_Subtitle { char _pad; SCLIB_STR_SonosRadioTileExtension_Premium_Subtitle(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct SCLIB_STR_SonosRadioTileExtension_Premium_Title { char _pad; SCLIB_STR_SonosRadioTileExtension_Premium_Title(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SCWeakRefMgr { char _pad; SCWeakRefMgr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Subroutine { char _pad; Subroutine(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct This { char _pad; This(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct ThrowInfo { char _pad; ThrowInfo(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Recovered_Bulk { char _pad; undefined4 * __thiscall FUN_10116600(undefined4 param_2,SCStr *param_3); undefined4 * __thiscall FUN_10116710(undefined4 *param_2); int * __thiscall FUN_101167f0(undefined4 *param_2); int * __thiscall FUN_101168d0(undefined4 *param_2); int * __thiscall FUN_101169f0(undefined4 *param_2); void __thiscall FUN_10117000(int *param_2,SCStr *param_3,uint param_4); undefined4 * __thiscall FUN_10118a20(undefined4 *param_2); undefined4 * __thiscall FUN_10118c40(undefined4 *param_2); undefined4 * __thiscall FUN_10118d60(undefined4 *param_2); void __thiscall FUN_10118fc0(undefined4 param_2); SCStr * __thiscall FUN_10119e10(SCStr *param_2); undefined4 * __thiscall FUN_1011a340(undefined4 *param_2); undefined1 * __thiscall FUN_10124ee0(undefined1 *param_2); void __thiscall FUN_10129550(undefined4 *param_2,undefined4 param_3,undefined4 *param_4); void __thiscall FUN_10129760(uint param_2,undefined4 param_3); float __thiscall FUN_10129a20(int param_2); void __thiscall FUN_10129ef0(int param_2); void __thiscall FUN_1012a4d0(undefined4 param_2,undefined4 param_3); void __thiscall FUN_1012a540(int *param_2); void __thiscall FUN_1012a5c0(int *param_2,int *param_3); void __thiscall FUN_1012a650(int *param_2); void __thiscall FUN_1012b750(undefined4 *param_2,undefined4 *param_3); void __thiscall FUN_1012cfb0(undefined4 *param_2,undefined4 param_3,undefined4 *param_4); void __thiscall FUN_1012d250(int *param_2,int *param_3); void __thiscall FUN_1012d550(undefined4 param_2); void __thiscall FUN_1012d5c0(undefined4 param_2); void __thiscall FUN_1012d870(undefined4 param_2); void __thiscall FUN_1012d940(undefined4 param_2); void __thiscall FUN_1012d9b0(int *param_2); void __thiscall FUN_1012dc40(int *param_2,int *param_3); void __thiscall FUN_1012ddd0(undefined4 *param_2,int *param_3,undefined4 *param_4); void __thiscall FUN_1012df20(undefined4 *param_2,undefined4 *param_3); void __thiscall FUN_1012e040(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4); void __thiscall FUN_1012e1d0(undefined4 *param_2,int *param_3); void __thiscall FUN_1012e2b0(undefined4 *param_2,undefined4 param_3); void __thiscall FUN_1012e380(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4,int *param_5); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1012e530(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4,
             undefined4 *param_5,undefined4 *param_6,int *param_7,undefined4 *param_8,
@@ -540,11 +849,19 @@ void FUN_100ad880(void);
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_100af860(void);
 void FUN_100af920(void);
 void FUN_100afe80(void);
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_100b2910(void);
 void FUN_100bacf0(void);
 void FUN_100bb530(void);
 void FUN_100bb6f0(void);
+void FUN_100c8c90(void);
 void FUN_100cef50(void);
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_100d4c80(void);
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_100d4d20(void);
+void FUN_100d8400(void);
+void FUN_100d8520(void);
+void FUN_100dbcc0(void);
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void __fastcall FUN_100e4610(undefined4 param_1);
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_100e47d0(void);
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_100e5ed0(void);
 void FUN_10117950(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3);
 undefined4 * __fastcall FUN_10118e40(undefined4 *param_1);
@@ -1064,6 +1381,61 @@ void FUN_100afe80(void)
 }
 
 
+// Reference entry 100b2910; body size 394 bytes.
+#line 1 "ENTRY_100b2910"
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_100b2910(void)
+
+{
+ try {
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  ((SCStr *)((SCStr *)&DAT_121a1494))->int_allocRep("sun");
+  DAT_121a1498 = (int)(0x115);
+  DAT_121a149c = (int)(&DAT_11882ff0);
+
+  DAT_121a14a0 = (int)(1);
+  ((SCStr *)((SCStr *)&DAT_121a14a4))->int_allocRep("mon");
+  _DAT_121a14a8 = (int)(0x116);
+  _DAT_121a14ac = (int)(&DAT_11882ff0);
+  *(unsigned char *)((char *)&local_8 + 0) = 1;
+  _DAT_121a14b0 = (int)(2);
+  ((SCStr *)((SCStr *)&DAT_121a14b4))->int_allocRep("tue");
+  _DAT_121a14b8 = (int)(0x117);
+  _DAT_121a14bc = (int)(&DAT_11882ff0);
+  *(unsigned char *)((char *)&local_8 + 0) = 2;
+  _DAT_121a14c0 = (int)(3);
+  ((SCStr *)((SCStr *)&DAT_121a14c4))->int_allocRep("wed");
+  _DAT_121a14c8 = (int)(0x118);
+  _DAT_121a14cc = (int)(&DAT_11882ff0);
+  *(unsigned char *)((char *)&local_8 + 0) = 3;
+  _DAT_121a14d0 = (int)(4);
+  ((SCStr *)((SCStr *)&DAT_121a14d4))->int_allocRep("thu");
+  _DAT_121a14d8 = (int)(0x119);
+  _DAT_121a14dc = (int)(&DAT_11882ff0);
+  *(unsigned char *)((char *)&local_8 + 0) = 4;
+  _DAT_121a14e0 = (int)(5);
+  ((SCStr *)((SCStr *)&DAT_121a14e4))->int_allocRep("fri");
+  _DAT_121a14e8 = (int)(0x11a);
+  _DAT_121a14ec = (int)(&DAT_11882ff0);
+  local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(5)));
+  _DAT_121a14f0 = (int)(6);
+  ((SCStr *)((SCStr *)&DAT_121a14f4))->int_allocRep("sat");
+  _DAT_121a14f8 = (int)(0x11b);
+  _DAT_121a14fc = (int)(&DAT_11882ff0);
+  _atexit((_func_4879 *)LAB_117f7c00);
+
+  return;
+
+ } catch (...) { }
+}
+
+
 // Reference entry 100bacf0; body size 150 bytes.
 #line 1 "ENTRY_100bacf0"
 
@@ -1194,6 +1566,31 @@ void FUN_100bb6f0(void)
 }
 
 
+// Reference entry 100c8c90; body size 118 bytes.
+#line 1 "ENTRY_100c8c90"
+
+void FUN_100c8c90(void)
+
+{
+ try {
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  ((SCStr *)((SCStr *)&DAT_121a49a0))->int_allocRep("This is a first note");
+
+  ((SCStr *)((SCStr *)&DAT_121a49a4))->int_allocRep("This is a second note");
+  local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
+  ((SCStr *)((SCStr *)&DAT_121a49a8))->int_allocRep("This is a third note");
+  _atexit((_func_4879 *)LAB_1182aca0);
+
+  return;
+
+ } catch (...) { }
+}
+
+
 // Reference entry 100cef50; body size 114 bytes.
 #line 1 "ENTRY_100cef50"
 
@@ -1245,6 +1642,1152 @@ void FUN_100d4c80(void)
   _DAT_121a6010 = (int)(1);
   ((SCStr *)((SCStr *)&DAT_121a6014))->int_allocRep("");
   _atexit(FUN_1183f2c0);
+
+  return;
+
+ } catch (...) { }
+}
+
+
+// Reference entry 100d4d20; body size 577 bytes.
+#line 1 "ENTRY_100d4d20"
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_100d4d20(void)
+
+{
+ try {
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  ((SCStr *)((SCStr *)&DAT_121a5f78))->int_allocRep("x-sonos-scuri://searchtypes?oid=na&cpudn=RINCON_AssociatedZPUDN");
+
+  _DAT_121a5f7c = (int)(0xe6);
+  _DAT_121a5f80 = (int)(1);
+  ((SCStr *)((SCStr *)&DAT_121a5f84))->int_allocRep("");
+
+  ((SCStr *)((SCStr *)&DAT_121a5f88))->int_allocRep("x-sonos-scuri://asyncbrowse?oid=A:ALBUMARTIST&cpudn=RINCON_AssociatedZPUDN&class=object.container");
+  *(unsigned char *)((char *)&local_8 + 0) = 2;
+  _DAT_121a5f8c = (int)(0xdf);
+  _DAT_121a5f90 = (int)(1);
+  ((SCStr *)((SCStr *)&DAT_121a5f94))->int_allocRep("artist");
+  *(unsigned char *)((char *)&local_8 + 0) = 3;
+  ((SCStr *)((SCStr *)&DAT_121a5f98))->int_allocRep("x-sonos-scuri://asyncbrowse?oid=A:ARTIST&cpudn=RINCON_AssociatedZPUDN&class=object.container");
+  *(unsigned char *)((char *)&local_8 + 0) = 4;
+  _DAT_121a5f9c = (int)(0xe0);
+  _DAT_121a5fa0 = (int)(1);
+  ((SCStr *)((SCStr *)&DAT_121a5fa4))->int_allocRep("artist");
+  *(unsigned char *)((char *)&local_8 + 0) = 5;
+  ((SCStr *)((SCStr *)&DAT_121a5fa8))->int_allocRep("x-sonos-scuri://asyncbrowse?oid=A:ALBUM&cpudn=RINCON_AssociatedZPUDN&class=object.container.albumlist");
+  *(unsigned char *)((char *)&local_8 + 0) = 6;
+  _DAT_121a5fac = (int)(0xe1);
+  _DAT_121a5fb0 = (int)(1);
+  ((SCStr *)((SCStr *)&DAT_121a5fb4))->int_allocRep("albums");
+  *(unsigned char *)((char *)&local_8 + 0) = 7;
+  ((SCStr *)((SCStr *)&DAT_121a5fb8))->int_allocRep("x-sonos-scuri://asyncbrowse?oid=A:COMPOSER&cpudn=RINCON_AssociatedZPUDN&class=object.container");
+  *(unsigned char *)((char *)&local_8 + 0) = 8;
+  _DAT_121a5fbc = (int)(0xe2);
+  _DAT_121a5fc0 = (int)(1);
+  ((SCStr *)((SCStr *)&DAT_121a5fc4))->int_allocRep("composers");
+  *(unsigned char *)((char *)&local_8 + 0) = 9;
+  ((SCStr *)((SCStr *)&DAT_121a5fc8))->int_allocRep("x-sonos-scuri://asyncbrowse?oid=A:GENRE&cpudn=RINCON_AssociatedZPUDN&class=object.container");
+  *(unsigned char *)((char *)&local_8 + 0) = 10;
+  _DAT_121a5fcc = (int)(0xe3);
+  _DAT_121a5fd0 = (int)(1);
+  ((SCStr *)((SCStr *)&DAT_121a5fd4))->int_allocRep("genre");
+  *(unsigned char *)((char *)&local_8 + 0) = 0xb;
+  ((SCStr *)((SCStr *)&DAT_121a5fd8))->int_allocRep("x-sonos-scuri://asyncbrowse?oid=A:TRACKS&cpudn=RINCON_AssociatedZPUDN&class=object.container.playlistContainer&parentOID=A:");
+  *(unsigned char *)((char *)&local_8 + 0) = 0xc;
+  _DAT_121a5fdc = (int)(0xe4);
+  _DAT_121a5fe0 = (int)(1);
+  ((SCStr *)((SCStr *)&DAT_121a5fe4))->int_allocRep("tracks");
+  *(unsigned char *)((char *)&local_8 + 0) = 0xd;
+  ((SCStr *)((SCStr *)&DAT_121a5fe8))->int_allocRep("x-sonos-scuri://asyncbrowse?oid=A:PLAYLISTS&cpudn=RINCON_AssociatedZPUDN&class=object.container");
+  *(unsigned char *)((char *)&local_8 + 0) = 0xe;
+  _DAT_121a5fec = (int)(0x2b1);
+  _DAT_121a5ff0 = (int)(1);
+  ((SCStr *)((SCStr *)&DAT_121a5ff4))->int_allocRep("playlists");
+  *(unsigned char *)((char *)&local_8 + 0) = 0xf;
+  ((SCStr *)((SCStr *)&DAT_121a5ff8))->int_allocRep("x-sonos-scuri://asyncbrowse?oid=S:&cpudn=RINCON_AssociatedZPUDN&class=object.container");
+  local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x10)));
+  _DAT_121a5ffc = (int)(0x29f);
+  _DAT_121a6000 = (int)(1);
+  ((SCStr *)((SCStr *)&DAT_121a6004))->int_allocRep("folder");
+  _atexit((_func_4879 *)LAB_1183f350);
+
+  return;
+
+ } catch (...) { }
+}
+
+
+// Reference entry 100d8400; body size 223 bytes.
+#line 1 "ENTRY_100d8400"
+
+void FUN_100d8400(void)
+
+{
+ try {
+  SCStr local_34 [4];
+  undefined4 local_30;
+  SCStr local_2c [4];
+  undefined4 local_28;
+  SCStr local_24 [4];
+  undefined4 local_20;
+  SCStr local_1c [4];
+  undefined4 local_18;
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  local_14 = (uint)(DAT_12126b84);
+
+  ((SCStr *)(local_34))->int_allocRep("SCLIB_STR_SonosRadioTileExtension_Free_Title");
+
+
+  ((SCStr *)(local_2c))->int_allocRep("SCLIB_STR_SonosRadioTileExtension_Free_Subtitle");
+
+  *(unsigned char *)((char *)&local_8 + 0) = 1;
+  ((SCStr *)(local_24))->int_allocRep("SCLIB_STR_SonosRadioTileExtension_Premium_Title");
+
+  local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
+  ((SCStr *)(local_1c))->int_allocRep("SCLIB_STR_SonosRadioTileExtension_Premium_Subtitle");
+
+
+  thunk_FUN_10265c30(local_34,&local_14);
+
+  _eh_vector_destructor_iterator_(local_34,8,4,thunk_FUN_10266f90);
+  _atexit((_func_4879 *)LAB_11846210);
+
+  thunk_FUN_1148ac28();
+  return;
+
+ } catch (...) { }
+}
+
+
+// Reference entry 100d8520; body size 367 bytes.
+#line 1 "ENTRY_100d8520"
+
+void FUN_100d8520(void)
+
+{
+ try {
+  SCStr local_64 [4];
+  undefined4 local_60;
+  SCStr local_5c [4];
+  undefined4 local_58;
+  SCStr local_54 [4];
+  undefined4 local_50;
+  SCStr local_4c [4];
+  undefined4 local_48;
+  SCStr local_44 [4];
+  undefined4 local_40;
+  SCStr local_3c [4];
+  undefined4 local_38;
+  SCStr local_34 [4];
+  undefined4 local_30;
+  SCStr local_2c [4];
+  undefined4 local_28;
+  SCStr local_24 [4];
+  undefined4 local_20;
+  SCStr local_1c [4];
+  undefined4 local_18;
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  local_14 = (uint)(DAT_12126b84);
+
+  ((SCStr *)(local_64))->int_allocRep("SCLIB_STR_SonosRadioTileExtension_MySonos_Free_Title");
+
+
+  ((SCStr *)(local_5c))->int_allocRep("SCLIB_STR_SonosRadioTileExtension_MySonos_Free_Subtitle");
+
+  *(unsigned char *)((char *)&local_8 + 0) = 1;
+  ((SCStr *)(local_54))->int_allocRep("SCLIB_STR_SonosRadioTileExtension_MySonos_Premium1_Title");
+
+  *(unsigned char *)((char *)&local_8 + 0) = 2;
+  ((SCStr *)(local_4c))->int_allocRep("SCLIB_STR_SonosRadioTileExtension_MySonos_Premium1_Subtitle");
+
+  *(unsigned char *)((char *)&local_8 + 0) = 3;
+  ((SCStr *)(local_44))->int_allocRep("SCLIB_STR_SonosRadioTileExtension_MySonos_Premium2_Title");
+
+  *(unsigned char *)((char *)&local_8 + 0) = 4;
+  ((SCStr *)(local_3c))->int_allocRep("SCLIB_STR_SonosRadioTileExtension_MySonos_Premium2_Subtitle");
+
+  *(unsigned char *)((char *)&local_8 + 0) = 5;
+  ((SCStr *)(local_34))->int_allocRep("SCLIB_STR_SonosRadioTileExtension_MySonos_Holidays_Title");
+
+  *(unsigned char *)((char *)&local_8 + 0) = 6;
+  ((SCStr *)(local_2c))->int_allocRep("SCLIB_STR_SonosRadioTileExtension_MySonos_Holidays_Subtitle");
+
+  *(unsigned char *)((char *)&local_8 + 0) = 7;
+  ((SCStr *)(local_24))->int_allocRep("SCLIB_STR_SonosRadioTileExtension_MySonos_Holidays_Title_2");
+
+  local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(8)));
+  ((SCStr *)(local_1c))->int_allocRep("SCLIB_STR_SonosRadioTileExtension_MySonos_Holidays_Subtitle_2");
+
+
+  thunk_FUN_10265c30(local_64,&local_14);
+
+  _eh_vector_destructor_iterator_(local_64,8,10,thunk_FUN_10266f90);
+  _atexit((_func_4879 *)LAB_11846250);
+
+  thunk_FUN_1148ac28();
+  return;
+
+ } catch (...) { }
+}
+
+
+// Reference entry 100dbcc0; body size 324 bytes.
+#line 1 "ENTRY_100dbcc0"
+
+void FUN_100dbcc0(void)
+
+{
+ try {
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  ((SCStr *)((SCStr *)&DAT_121a6ab8))->int_allocRep("devicePermissions-bluetoothAccess");
+
+  ((SCStr *)((SCStr *)&DAT_121a6abc))->int_allocRep("devicePermissions-bluetooth-ios");
+  *(unsigned char *)((char *)&local_8 + 0) = 1;
+  ((SCStr *)((SCStr *)&DAT_121a6ac0))->int_allocRep("devicePermissions-locationServices-ios");
+  *(unsigned char *)((char *)&local_8 + 0) = 2;
+  ((SCStr *)((SCStr *)&DAT_121a6ac4))->int_allocRep("devicePermissions-locationAccess-ios");
+  *(unsigned char *)((char *)&local_8 + 0) = 3;
+  ((SCStr *)((SCStr *)&DAT_121a6ac8))->int_allocRep("devicePermissions-microphone-ios");
+  *(unsigned char *)((char *)&local_8 + 0) = 4;
+  ((SCStr *)((SCStr *)&DAT_121a6acc))->int_allocRep("customerCare");
+  *(unsigned char *)((char *)&local_8 + 0) = 5;
+  ((SCStr *)((SCStr *)&DAT_121a6ad0))->int_allocRep("joinProduct-routerError");
+  *(unsigned char *)((char *)&local_8 + 0) = 6;
+  ((SCStr *)((SCStr *)&DAT_121a6ad4))->int_allocRep("authPlusAndSecureAuthentication-buttonPress");
+  *(unsigned char *)((char *)&local_8 + 0) = 7;
+  ((SCStr *)((SCStr *)&DAT_121a6ad8))->int_allocRep("legacyAuthentication-buttonPress");
+  *(unsigned char *)((char *)&local_8 + 0) = 8;
+  ((SCStr *)((SCStr *)&DAT_121a6adc))->int_allocRep("networkCredentials-networkNotFound");
+  *(unsigned char *)((char *)&local_8 + 0) = 9;
+  ((SCStr *)((SCStr *)&DAT_121a6ae0))->int_allocRep("productDeactivated");
+  *(unsigned char *)((char *)&local_8 + 0) = 10;
+  ((SCStr *)((SCStr *)&DAT_121a6ae4))->int_allocRep("nfc-learnmore");
+  *(unsigned char *)((char *)&local_8 + 0) = 0xb;
+  ((SCStr *)((SCStr *)&DAT_121a6ae8))->int_allocRep("ChirpReAuthentication-buttonPress");
+  local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0xc)));
+  ((SCStr *)((SCStr *)&DAT_121a6aec))->int_allocRep((char *)0x0);
+  _atexit((_func_4879 *)LAB_1184e030);
+
+  return;
+
+ } catch (...) { }
+}
+
+
+// Reference entry 100e4610; body size 172 bytes.
+#line 1 "ENTRY_100e4610"
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void __fastcall FUN_100e4610(undefined4 param_1)
+
+{
+ try {
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  thunk_FUN_11240650(DAT_12126b84 ,param_1);
+  PTR_vftable_1211c1c8 = (int *)((undefined *)(uint)&ghidra_vftable_SwfObjHouseholdOAuthCB);
+  _DAT_1211c1cc = (int)((uint)&ghidra_vftable_SwfObjHouseholdOAuthCB);
+  _DAT_1211c1d0 = (int)((uint)&ghidra_vftable_RSonosCPFaultHandler);
+  _DAT_1211c1d4 = (int)(0);
+  DAT_1211c1d8 = (int)(0);
+  DAT_1211c1f8 = (int)(0);
+  DAT_1211c9f9 = (int)(0);
+  DAT_1211d1fc = (int)(0);
+  DAT_1211d215 = (int)(0);
+  _DAT_1211d258 = (int)(0);
+  DAT_1211d25c = (int)(0);
+  _atexit((_func_4879 *)LAB_11861ea0);
+
+  return;
+
+ } catch (...) { }
+}
+
+
+// Reference entry 100e47d0; body size 3991 bytes.
+#line 1 "ENTRY_100e47d0"
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_100e47d0(void)
+
+{
+ try {
+  undefined4 uVar1;
+  undefined4 uVar2;
+  undefined4 uVar3;
+  undefined4 *puVar4;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x32,DAT_12126b84 ));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211dc04 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x21);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_TRAC_119c529c + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_TRAC_119c529c + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_TRAC_119c529c + 4));
+  *(undefined4*)_DAT_1211dc04 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_TRAC_119c529c + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_TRAC_119c529c + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_TRAC_119c529c + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_TRAC_119c529c + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_TRAC_119c529c + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  *(char *)(puVar4 + 0xc) = s_RHHSTR_LIBRARY_SONOS_ADDING_TRAC_119c529c[0x20];
+  *(undefined1 *)((int)puVar4 + 0x31) = 0;
+
+  DAT_1211dc08 = (int)(0);
+  DAT_1211dc0c = (int)(4);
+  DAT_1211dc10 = (int)(0x142);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x32));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211dc14 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x21);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_ALBU_119c52c4 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_ALBU_119c52c4 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_ALBU_119c52c4 + 4));
+  *(undefined4*)_DAT_1211dc14 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_ALBU_119c52c4 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_ALBU_119c52c4 + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_ALBU_119c52c4 + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_ALBU_119c52c4 + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_ALBU_119c52c4 + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  *(char *)(puVar4 + 0xc) = s_RHHSTR_LIBRARY_SONOS_ADDING_ALBU_119c52c4[0x20];
+  *(undefined1 *)((int)puVar4 + 0x31) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 1;
+  _DAT_1211dc18 = (int)(0);
+  _DAT_1211dc1c = (int)(5);
+  _DAT_1211dc20 = (int)(0x143);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x33));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211dc24 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x22);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_ARTI_119c52ec + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_ARTI_119c52ec + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_ARTI_119c52ec + 4));
+  *(undefined4*)_DAT_1211dc24 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_ARTI_119c52ec + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_ARTI_119c52ec + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_ARTI_119c52ec + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_ARTI_119c52ec + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_ARTI_119c52ec + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  *(undefined2 *)(puVar4 + 0xc) = *(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_ARTI_119c52ec + 32);
+  *(undefined1 *)((int)puVar4 + 0x32) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 2;
+  _DAT_1211dc28 = (int)(0);
+  _DAT_1211dc2c = (int)(6);
+  _DAT_1211dc30 = (int)(0x144);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x35));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211dc34 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x24);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_PLAY_119c5318 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_PLAY_119c5318 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_PLAY_119c5318 + 4));
+  *(undefined4*)_DAT_1211dc34 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_PLAY_119c5318 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_PLAY_119c5318 + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_PLAY_119c5318 + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_PLAY_119c5318 + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_PLAY_119c5318 + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  puVar4[0xc] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDING_PLAY_119c5318 + 32));
+  *(undefined1 *)(puVar4 + 0xd) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 3;
+  _DAT_1211dc38 = (int)(1);
+  _DAT_1211dc3c = (int)(3);
+  _DAT_1211dc40 = (int)(0x146);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x31));
+  *puVar4 = (undefined4)(1);
+  puVar4[3] = (undefined4)(0x20);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_TRACK_119c5344 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_TRACK_119c5344 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_TRACK_119c5344 + 4));
+  _DAT_1211dc44 = (int)((char *)(puVar4 + 4));
+  *(undefined4*)_DAT_1211dc44 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_TRACK_119c5344 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_TRACK_119c5344 + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_TRACK_119c5344 + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_TRACK_119c5344 + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_TRACK_119c5344 + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  *(undefined1 *)(puVar4 + 0xc) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 4;
+  _DAT_1211dc48 = (int)(1);
+  _DAT_1211dc4c = (int)(4);
+  _DAT_1211dc50 = (int)(0x14a);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x31));
+  *puVar4 = (undefined4)(1);
+  puVar4[3] = (undefined4)(0x20);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_ALBUM_119c536c + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_ALBUM_119c536c + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_ALBUM_119c536c + 4));
+  _DAT_1211dc54 = (int)((char *)(puVar4 + 4));
+  *(undefined4*)_DAT_1211dc54 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_ALBUM_119c536c + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_ALBUM_119c536c + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_ALBUM_119c536c + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_ALBUM_119c536c + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_ALBUM_119c536c + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  *(undefined1 *)(puVar4 + 0xc) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 5;
+  _DAT_1211dc58 = (int)(1);
+  _DAT_1211dc5c = (int)(5);
+  _DAT_1211dc60 = (int)(0x14b);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x32));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211dc64 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x21);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_ARTIS_119c5394 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_ARTIS_119c5394 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_ARTIS_119c5394 + 4));
+  *(undefined4*)_DAT_1211dc64 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_ARTIS_119c5394 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_ARTIS_119c5394 + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_ARTIS_119c5394 + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_ARTIS_119c5394 + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_ARTIS_119c5394 + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  *(char *)(puVar4 + 0xc) = s_RHHSTR_LIBRARY_SONOS_ADDED_ARTIS_119c5394[0x20];
+  *(undefined1 *)((int)puVar4 + 0x31) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 6;
+  _DAT_1211dc68 = (int)(1);
+  _DAT_1211dc6c = (int)(6);
+  _DAT_1211dc70 = (int)(0x14c);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x34));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211dc74 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x23);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_PLAYL_119c53bc + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_PLAYL_119c53bc + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_PLAYL_119c53bc + 4));
+  *(undefined4*)_DAT_1211dc74 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_PLAYL_119c53bc + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_PLAYL_119c53bc + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_PLAYL_119c53bc + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_PLAYL_119c53bc + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_PLAYL_119c53bc + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  *(undefined2 *)(puVar4 + 0xc) = *(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_ADDED_PLAYL_119c53bc + 32);
+  *(char *)((int)puVar4 + 0x32) = s_RHHSTR_LIBRARY_SONOS_ADDED_PLAYL_119c53bc[0x22];
+  *(undefined1 *)((int)puVar4 + 0x33) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 7;
+  _DAT_1211dc78 = (int)(7);
+  _DAT_1211dc7c = (int)(3);
+  _DAT_1211dc80 = (int)(0x147);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x36));
+  *puVar4 = (undefined4)(1);
+  puVar4[3] = (undefined4)(0x25);
+  puVar4[2] = (undefined4)(0);
+  _DAT_1211dc84 = (int)((char *)(puVar4 + 4));
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_AUTOMIXING__119c53e8 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_AUTOMIXING__119c53e8 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_AUTOMIXING__119c53e8 + 4));
+  *(undefined4*)_DAT_1211dc84 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_AUTOMIXING__119c53e8 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_AUTOMIXING__119c53e8 + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_AUTOMIXING__119c53e8 + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_AUTOMIXING__119c53e8 + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_AUTOMIXING__119c53e8 + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  puVar4[0xc] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_AUTOMIXING__119c53e8 + 32));
+  *(char *)(puVar4 + 0xd) = s_RHHSTR_LIBRARY_SONOS_AUTOMIXING__119c53e8[0x24];
+  *(undefined1 *)((int)puVar4 + 0x35) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 8;
+  _DAT_1211dc88 = (int)(8);
+  _DAT_1211dc8c = (int)(3);
+  _DAT_1211dc90 = (int)(0x148);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x35));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211dc94 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x24);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_AUTOMIXED_T_119c5418 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_AUTOMIXED_T_119c5418 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_AUTOMIXED_T_119c5418 + 4));
+  *(undefined4*)_DAT_1211dc94 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_AUTOMIXED_T_119c5418 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_AUTOMIXED_T_119c5418 + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_AUTOMIXED_T_119c5418 + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_AUTOMIXED_T_119c5418 + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_AUTOMIXED_T_119c5418 + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  puVar4[0xc] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_AUTOMIXED_T_119c5418 + 32));
+  *(undefined1 *)(puVar4 + 0xd) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 9;
+  _DAT_1211dc98 = (int)(2);
+  _DAT_1211dc9c = (int)(3);
+  _DAT_1211dca0 = (int)(0x14e);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x36));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211dca4 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x25);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5444 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5444 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5444 + 4));
+  *(undefined4*)_DAT_1211dca4 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5444 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5444 + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5444 + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5444 + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5444 + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  puVar4[0xc] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5444 + 32));
+  *(char *)(puVar4 + 0xd) = s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5444[0x24];
+  *(undefined1 *)((int)puVar4 + 0x35) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 10;
+  _DAT_1211dca8 = (int)(2);
+  _DAT_1211dcac = (int)(4);
+  _DAT_1211dcb0 = (int)(0x150);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x36));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211dcb4 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x25);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5474 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5474 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5474 + 4));
+  *(undefined4*)_DAT_1211dcb4 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5474 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5474 + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5474 + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5474 + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5474 + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  puVar4[0xc] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5474 + 32));
+  *(char *)(puVar4 + 0xd) = s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c5474[0x24];
+  *(undefined1 *)((int)puVar4 + 0x35) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 0xb;
+  _DAT_1211dcb8 = (int)(2);
+  _DAT_1211dcbc = (int)(5);
+  _DAT_1211dcc0 = (int)(0x151);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x37));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211dcc4 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x26);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c54a4 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c54a4 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c54a4 + 4));
+  *(undefined4*)_DAT_1211dcc4 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c54a4 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c54a4 + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c54a4 + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c54a4 + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c54a4 + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  puVar4[0xc] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c54a4 + 32));
+  *(undefined2 *)(puVar4 + 0xd) = *(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c54a4 + 36);
+  *(undefined1 *)((int)puVar4 + 0x36) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 0xc;
+  _DAT_1211dcc8 = (int)(2);
+  _DAT_1211dccc = (int)(6);
+  _DAT_1211dcd0 = (int)(0x152);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x39));
+  *puVar4 = (undefined4)(1);
+  puVar4[3] = (undefined4)(0x28);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c54d4 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c54d4 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c54d4 + 4));
+  _DAT_1211dcd4 = (int)((char *)(puVar4 + 4));
+  *(undefined4*)_DAT_1211dcd4 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c54d4 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c54d4 + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c54d4 + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c54d4 + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c54d4 + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  *(undefined8 *)(puVar4 + 0xc) = *(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_CONFREMOVE__119c54d4 + 32);
+  *(undefined1 *)(puVar4 + 0xe) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 0xd;
+  _DAT_1211dcd8 = (int)(3);
+  _DAT_1211dcdc = (int)(3);
+  _DAT_1211dce0 = (int)(0x154);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x34));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211dce4 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x23);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_TR_119c5508 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_TR_119c5508 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_TR_119c5508 + 4));
+  *(undefined4*)_DAT_1211dce4 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_TR_119c5508 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_TR_119c5508 + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_TR_119c5508 + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_TR_119c5508 + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_TR_119c5508 + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  *(undefined2 *)(puVar4 + 0xc) = *(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_TR_119c5508 + 32);
+  *(char *)((int)puVar4 + 0x32) = s_RHHSTR_LIBRARY_SONOS_REMOVING_TR_119c5508[0x22];
+  *(undefined1 *)((int)puVar4 + 0x33) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 0xe;
+  _DAT_1211dce8 = (int)(3);
+  _DAT_1211dcec = (int)(4);
+  _DAT_1211dcf0 = (int)(0x156);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x34));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211dcf4 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x23);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_AL_119c5534 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_AL_119c5534 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_AL_119c5534 + 4));
+  *(undefined4*)_DAT_1211dcf4 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_AL_119c5534 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_AL_119c5534 + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_AL_119c5534 + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_AL_119c5534 + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_AL_119c5534 + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  *(undefined2 *)(puVar4 + 0xc) = *(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_AL_119c5534 + 32);
+  *(char *)((int)puVar4 + 0x32) = s_RHHSTR_LIBRARY_SONOS_REMOVING_AL_119c5534[0x22];
+  *(undefined1 *)((int)puVar4 + 0x33) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 0xf;
+  _DAT_1211dcf8 = (int)(3);
+  _DAT_1211dcfc = (int)(5);
+  _DAT_1211dd00 = (int)(0x157);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x35));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211dd04 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x24);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_AR_119c5560 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_AR_119c5560 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_AR_119c5560 + 4));
+  *(undefined4*)_DAT_1211dd04 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_AR_119c5560 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_AR_119c5560 + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_AR_119c5560 + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_AR_119c5560 + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_AR_119c5560 + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  puVar4[0xc] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_AR_119c5560 + 32));
+  *(undefined1 *)(puVar4 + 0xd) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 0x10;
+  _DAT_1211dd08 = (int)(3);
+  _DAT_1211dd0c = (int)(6);
+  _DAT_1211dd10 = (int)(0x158);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x37));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211dd14 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x26);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_PL_119c558c + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_PL_119c558c + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_PL_119c558c + 4));
+  *(undefined4*)_DAT_1211dd14 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_PL_119c558c + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_PL_119c558c + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_PL_119c558c + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_PL_119c558c + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_PL_119c558c + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  puVar4[0xc] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_PL_119c558c + 32));
+  *(undefined2 *)(puVar4 + 0xd) = *(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVING_PL_119c558c + 36);
+  *(undefined1 *)((int)puVar4 + 0x36) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 0x11;
+  _DAT_1211dd18 = (int)(4);
+  _DAT_1211dd1c = (int)(3);
+  _DAT_1211dd20 = (int)(0x15a);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x33));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211dd24 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x22);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_TRA_119c55bc + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_TRA_119c55bc + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_TRA_119c55bc + 4));
+  *(undefined4*)_DAT_1211dd24 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_TRA_119c55bc + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_TRA_119c55bc + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_TRA_119c55bc + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_TRA_119c55bc + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_TRA_119c55bc + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  *(undefined2 *)(puVar4 + 0xc) = *(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_TRA_119c55bc + 32);
+  *(undefined1 *)((int)puVar4 + 0x32) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 0x12;
+  _DAT_1211dd28 = (int)(4);
+  _DAT_1211dd2c = (int)(4);
+  _DAT_1211dd30 = (int)(0x15c);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x33));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211dd34 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x22);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_ALB_119c55e8 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_ALB_119c55e8 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_ALB_119c55e8 + 4));
+  *(undefined4*)_DAT_1211dd34 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_ALB_119c55e8 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_ALB_119c55e8 + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_ALB_119c55e8 + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_ALB_119c55e8 + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_ALB_119c55e8 + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  *(undefined2 *)(puVar4 + 0xc) = *(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_ALB_119c55e8 + 32);
+  *(undefined1 *)((int)puVar4 + 0x32) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 0x13;
+  _DAT_1211dd38 = (int)(4);
+  _DAT_1211dd3c = (int)(5);
+  _DAT_1211dd40 = (int)(0x15d);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x34));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211dd44 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x23);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_ART_119c5614 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_ART_119c5614 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_ART_119c5614 + 4));
+  *(undefined4*)_DAT_1211dd44 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_ART_119c5614 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_ART_119c5614 + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_ART_119c5614 + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_ART_119c5614 + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_ART_119c5614 + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  *(undefined2 *)(puVar4 + 0xc) = *(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_ART_119c5614 + 32);
+  *(char *)((int)puVar4 + 0x32) = s_RHHSTR_LIBRARY_SONOS_REMOVED_ART_119c5614[0x22];
+  *(undefined1 *)((int)puVar4 + 0x33) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 0x14;
+  _DAT_1211dd48 = (int)(4);
+  _DAT_1211dd4c = (int)(6);
+  _DAT_1211dd50 = (int)(0x15e);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x36));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211dd54 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x25);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_PLA_119c5640 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_PLA_119c5640 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_PLA_119c5640 + 4));
+  *(undefined4*)_DAT_1211dd54 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_PLA_119c5640 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_PLA_119c5640 + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_PLA_119c5640 + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_PLA_119c5640 + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_PLA_119c5640 + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  puVar4[0xc] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_SONOS_REMOVED_PLA_119c5640 + 32));
+  *(char *)(puVar4 + 0xd) = s_RHHSTR_LIBRARY_SONOS_REMOVED_PLA_119c5640[0x24];
+  *(undefined1 *)((int)puVar4 + 0x35) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 0x15;
+  _DAT_1211dd58 = (int)(5);
+  _DAT_1211dd5c = (int)(3);
+  _DAT_1211dd60 = (int)(0x130);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x30));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211dd64 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x1f);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_TRACK_119c5670 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_TRACK_119c5670 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_TRACK_119c5670 + 4));
+  *(undefined4*)_DAT_1211dd64 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_TRACK_119c5670 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  *(undefined8 *)(puVar4 + 8) = *(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_TRACK_119c5670 + 16);
+  puVar4[10] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_TRACK_119c5670 + 24));
+  *(undefined2 *)(puVar4 + 0xb) = *(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_TRACK_119c5670 + 28);
+  *(char *)((int)puVar4 + 0x2e) = s_RHHSTR_LIBRARY_REMOVEFAIL_TRACK_119c5670[0x1e];
+  *(undefined1 *)((int)puVar4 + 0x2f) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 0x16;
+  _DAT_1211dd68 = (int)(5);
+  _DAT_1211dd6c = (int)(4);
+  _DAT_1211dd70 = (int)(0x132);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x30));
+  *puVar4 = (undefined4)(1);
+  puVar4[3] = (undefined4)(0x1f);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_ALBUM_119c5698 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_ALBUM_119c5698 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_ALBUM_119c5698 + 4));
+  _DAT_1211dd74 = (int)((char *)(puVar4 + 4));
+  *(undefined4*)_DAT_1211dd74 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_ALBUM_119c5698 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  *(undefined8 *)(puVar4 + 8) = *(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_ALBUM_119c5698 + 16);
+  puVar4[10] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_ALBUM_119c5698 + 24));
+  *(undefined2 *)(puVar4 + 0xb) = *(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_ALBUM_119c5698 + 28);
+  *(char *)((int)puVar4 + 0x2e) = s_RHHSTR_LIBRARY_REMOVEFAIL_ALBUM_119c5698[0x1e];
+  *(undefined1 *)((int)puVar4 + 0x2f) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 0x17;
+  _DAT_1211dd78 = (int)(5);
+  _DAT_1211dd7c = (int)(5);
+  _DAT_1211dd80 = (int)(0x133);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x31));
+  *puVar4 = (undefined4)(1);
+  puVar4[3] = (undefined4)(0x20);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_ARTIST_119c56c0 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_ARTIST_119c56c0 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_ARTIST_119c56c0 + 4));
+  _DAT_1211dd84 = (int)((char *)(puVar4 + 4));
+  *(undefined4*)_DAT_1211dd84 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_ARTIST_119c56c0 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_ARTIST_119c56c0 + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_ARTIST_119c56c0 + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_ARTIST_119c56c0 + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_ARTIST_119c56c0 + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  *(undefined1 *)(puVar4 + 0xc) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 0x18;
+  _DAT_1211dd88 = (int)(5);
+  _DAT_1211dd8c = (int)(6);
+  _DAT_1211dd90 = (int)(0x134);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x33));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211dd94 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x22);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_PLAYLI_119c56e8 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_PLAYLI_119c56e8 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_PLAYLI_119c56e8 + 4));
+  *(undefined4*)_DAT_1211dd94 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_PLAYLI_119c56e8 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_PLAYLI_119c56e8 + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_PLAYLI_119c56e8 + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_PLAYLI_119c56e8 + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_PLAYLI_119c56e8 + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  *(undefined2 *)(puVar4 + 0xc) = *(uint *)((char *)&s_RHHSTR_LIBRARY_REMOVEFAIL_PLAYLI_119c56e8 + 32);
+  *(undefined1 *)((int)puVar4 + 0x32) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 0x19;
+  _DAT_1211dd98 = (int)(6);
+  _DAT_1211dd9c = (int)(3);
+  _DAT_1211dda0 = (int)(0x136);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x2d));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211dda4 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x1c);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_TRACK_119c5714 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_TRACK_119c5714 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_TRACK_119c5714 + 4));
+  *(undefined4*)_DAT_1211dda4 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_TRACK_119c5714 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  *(undefined8 *)(puVar4 + 8) = *(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_TRACK_119c5714 + 16);
+  puVar4[10] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_TRACK_119c5714 + 24));
+  *(undefined1 *)(puVar4 + 0xb) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 0x1a;
+  _DAT_1211dda8 = (int)(6);
+  _DAT_1211ddac = (int)(4);
+  _DAT_1211ddb0 = (int)(0x13c);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x2d));
+  *puVar4 = (undefined4)(1);
+  puVar4[3] = (undefined4)(0x1c);
+  puVar4[2] = (undefined4)(0);
+  _DAT_1211ddb4 = (int)((char *)(puVar4 + 4));
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_ALBUM_119c5738 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_ALBUM_119c5738 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_ALBUM_119c5738 + 4));
+  *(undefined4*)_DAT_1211ddb4 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_ALBUM_119c5738 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  *(undefined8 *)(puVar4 + 8) = *(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_ALBUM_119c5738 + 16);
+  puVar4[10] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_ALBUM_119c5738 + 24));
+  *(undefined1 *)(puVar4 + 0xb) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 0x1b;
+  _DAT_1211ddb8 = (int)(6);
+  _DAT_1211ddbc = (int)(5);
+  _DAT_1211ddc0 = (int)(0x13d);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x2e));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211ddc4 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x1d);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_ARTIST_119c575c + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_ARTIST_119c575c + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_ARTIST_119c575c + 4));
+  *(undefined4*)_DAT_1211ddc4 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_ARTIST_119c575c + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  *(undefined8 *)(puVar4 + 8) = *(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_ARTIST_119c575c + 16);
+  puVar4[10] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_ARTIST_119c575c + 24));
+  *(char *)(puVar4 + 0xb) = s_RHHSTR_LIBRARY_ADDFAIL_ARTIST_119c575c[0x1c];
+  *(undefined1 *)((int)puVar4 + 0x2d) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 0x1c;
+  _DAT_1211ddc8 = (int)(6);
+  _DAT_1211ddcc = (int)(6);
+  _DAT_1211ddd0 = (int)(0x13e);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x30));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211ddd4 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x1f);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_PLAYLIST_119c5780 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_PLAYLIST_119c5780 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_PLAYLIST_119c5780 + 4));
+  *(undefined4*)_DAT_1211ddd4 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_PLAYLIST_119c5780 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  *(undefined8 *)(puVar4 + 8) = *(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_PLAYLIST_119c5780 + 16);
+  puVar4[10] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_PLAYLIST_119c5780 + 24));
+  *(undefined2 *)(puVar4 + 0xb) = *(uint *)((char *)&s_RHHSTR_LIBRARY_ADDFAIL_PLAYLIST_119c5780 + 28);
+  *(char *)((int)puVar4 + 0x2e) = s_RHHSTR_LIBRARY_ADDFAIL_PLAYLIST_119c5780[0x1e];
+  *(undefined1 *)((int)puVar4 + 0x2f) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 0x1d;
+  _DAT_1211ddd8 = (int)(9);
+  _DAT_1211dddc = (int)(3);
+  _DAT_1211dde0 = (int)(0x13a);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x31));
+  *puVar4 = (undefined4)(1);
+  puVar4[3] = (undefined4)(0x20);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_AUTOMIXFAIL_TRACK_119c57a8 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_AUTOMIXFAIL_TRACK_119c57a8 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_AUTOMIXFAIL_TRACK_119c57a8 + 4));
+  _DAT_1211dde4 = (int)((char *)(puVar4 + 4));
+  *(undefined4*)_DAT_1211dde4 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_AUTOMIXFAIL_TRACK_119c57a8 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_AUTOMIXFAIL_TRACK_119c57a8 + 28));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_AUTOMIXFAIL_TRACK_119c57a8 + 24));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_AUTOMIXFAIL_TRACK_119c57a8 + 20));
+  puVar4[8] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_AUTOMIXFAIL_TRACK_119c57a8 + 16));
+  puVar4[9] = (undefined4)(uVar1);
+  puVar4[10] = (undefined4)(uVar2);
+  puVar4[0xb] = (undefined4)(uVar3);
+  *(undefined1 *)(puVar4 + 0xc) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 0x1e;
+  _DAT_1211dde8 = (int)(10);
+  _DAT_1211ddec = (int)(3);
+  _DAT_1211ddf0 = (int)(0x138);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x2d));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211ddf4 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x1c);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_POSTING_TRACK_119c57d0 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_POSTING_TRACK_119c57d0 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_POSTING_TRACK_119c57d0 + 4));
+  *(undefined4*)_DAT_1211ddf4 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_POSTING_TRACK_119c57d0 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  *(undefined8 *)(puVar4 + 8) = *(uint *)((char *)&s_RHHSTR_LIBRARY_POSTING_TRACK_119c57d0 + 16);
+  puVar4[10] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_POSTING_TRACK_119c57d0 + 24));
+  *(undefined1 *)(puVar4 + 0xb) = 0;
+  *(unsigned char *)((char *)&local_8 + 0) = 0x1f;
+  _DAT_1211ddf8 = (int)(0xb);
+  _DAT_1211ddfc = (int)(3);
+  _DAT_1211de00 = (int)(0x137);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x2c));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211de04 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x1b);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_POSTED_TRACK_119c57f4 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_POSTED_TRACK_119c57f4 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_POSTED_TRACK_119c57f4 + 4));
+  *(undefined4*)_DAT_1211de04 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_POSTED_TRACK_119c57f4 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  *(undefined8 *)(puVar4 + 8) = *(uint *)((char *)&s_RHHSTR_LIBRARY_POSTED_TRACK_119c57f4 + 16);
+  *(undefined2 *)(puVar4 + 10) = *(uint *)((char *)&s_RHHSTR_LIBRARY_POSTED_TRACK_119c57f4 + 24);
+  *(char *)((int)puVar4 + 0x2a) = s_RHHSTR_LIBRARY_POSTED_TRACK_119c57f4[0x1a];
+  *(undefined1 *)((int)puVar4 + 0x2b) = 0;
+  local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x20)));
+  _DAT_1211de08 = (int)(0xc);
+  _DAT_1211de0c = (int)(3);
+  _DAT_1211de10 = (int)(0x139);
+  puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_1148b586(0x2e));
+  *puVar4 = (undefined4)(1);
+  _DAT_1211de14 = (int)((char *)(puVar4 + 4));
+  puVar4[3] = (undefined4)(0x1d);
+  puVar4[2] = (undefined4)(0);
+  puVar4[1] = (undefined4)(0);
+  uVar3 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_POSTFAIL_TRACK_119c5818 + 12));
+  uVar2 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_POSTFAIL_TRACK_119c5818 + 8));
+  uVar1 = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_POSTFAIL_TRACK_119c5818 + 4));
+  *(undefined4*)_DAT_1211de14 = (int)((undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_POSTFAIL_TRACK_119c5818 + 0)));
+  puVar4[5] = (undefined4)(uVar1);
+  puVar4[6] = (undefined4)(uVar2);
+  puVar4[7] = (undefined4)(uVar3);
+  *(undefined8 *)(puVar4 + 8) = *(uint *)((char *)&s_RHHSTR_LIBRARY_POSTFAIL_TRACK_119c5818 + 16);
+  puVar4[10] = (undefined4)(*(uint *)((char *)&s_RHHSTR_LIBRARY_POSTFAIL_TRACK_119c5818 + 24));
+  *(char *)(puVar4 + 0xb) = s_RHHSTR_LIBRARY_POSTFAIL_TRACK_119c5818[0x1c];
+  *(undefined1 *)((int)puVar4 + 0x2d) = 0;
+  _atexit((_func_4879 *)LAB_118620a0);
 
   return;
 
