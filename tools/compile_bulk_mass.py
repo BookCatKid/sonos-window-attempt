@@ -409,7 +409,18 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
         out.append(body[pos:start])
         parsed = _scan_qualified_name(body, start)
         if parsed is None:
-            _, end = _read_ident(body, start)
+            ident, end = _read_ident(body, start)
+            if (body[end:end + 1] == '<' and
+                    (ident[0].isupper() or ident[0] == '_')):
+                # Bare ``X<args>`` uses (no ``::`` suffix) still require a
+                # template declaration; a ``typedef void *`` twin would make
+                # the template-id ill-formed.
+                close = _balanced(body, end, '<', '>')
+                if close >= 0:
+                    type_stubs.add(('template', ident))
+                    out.append(body[start:close + 1])
+                    pos = close + 1
+                    continue
             out.append(body[start:end])
             pos = end
             continue
@@ -520,7 +531,7 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
                         method = ('op_dtor' if leaf == 'op_dtor'
                                   else 'op_ctor')
                         out.append(
-                            f'((int ({stub_name}::*)())&{stub_name}::{method})')
+                            f'((int (*)())&{stub_name}::{method})')
                     else:
                         member_stubs.setdefault(qualifier, set()).add(leaf)
                         out.append(body[start:name_end])
