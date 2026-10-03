@@ -283,7 +283,18 @@ def _pcode(source):
         else:
             out.append(source[match.start():close + 1])
         pos = close + 1
-    return ''.join(out)
+    # Carry/borrow pcode ops: CARRY4(a,b) is the unsigned carry-out of a+b,
+    # BORROW4(a,b) the unsigned borrow of a-b. Both appear inside Ghidra's
+    # 64-bit add/sub decompositions.
+    def carry(match):
+        op, a, b = match.group(1), match.group(2).strip(), match.group(3).strip()
+        wide = 'unsigned long long' if op.endswith('8') else 'uint'
+        if op.startswith('CARRY') or op.startswith('SCARRY'):
+            return f'(({wide})({a}) + ({wide})({b}) < ({wide})({a}))'
+        return f'(({wide})({a}) < ({wide})({b}))'
+    return re.sub(
+        r'\b((?:S?CARRY|BORROW)[48])\s*\(([^,()]*(?:\([^()]*\)[^,()]*)*),'
+        r'([^,()]*(?:\([^()]*\)[^,()]*)*)\)', carry, ''.join(out))
 
 
 def _fieldrefs(source):
@@ -531,7 +542,7 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
                 and not SYMBOL_RE.fullmatch(call):
             externs.add(('call', call))
     for name in re.findall(r'\b([A-Z][A-Za-z0-9_]*)\b', whole):
-        if name in KEYWORDS or re.match(r'^(FUN_|DAT_|PTR_|LAB_|Stub_|Ext_|ExceptionList|CONCAT|ZEXT|SEXT|SUB|unaff_|in_|stack0x|s_)', name):
+        if name in KEYWORDS or re.match(r'^(FUN_|DAT_|PTR_|LAB_|Stub_|Ext_|ExceptionList|CONCAT|ZEXT|SEXT|SUB|CARRY|SCARRY|BORROW|unaff_|in_|stack0x|s_)', name):
             continue
         type_stubs.add(('struct' if re.search(r'[a-z]', name) else 'ptr', name))
     # Ghidra function-pointer typedefs (_func_4879) start with '_' so the
