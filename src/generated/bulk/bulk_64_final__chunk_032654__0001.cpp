@@ -60,7 +60,6 @@ extern int FUN_10002a68(...);
 extern int FUN_10065348(...);
 extern int FUN_10070892(...);
 extern int FUN_1007ed7a(...);
-extern int _Xlength_error(...);
 extern int __RTDynamicCast(...);
 extern int __stdio_common_vsprintf_p(...);
 extern int _eh_vector_destructor_iterator_(...);
@@ -76,7 +75,6 @@ extern int d(...);
 extern int failed(...);
 extern int fclose(...);
 extern int handleRes(...);
-extern int in(...);
 extern int iscntrl(...);
 extern int isdigit(...);
 extern int isspace(...);
@@ -102,7 +100,6 @@ extern int thunk_FUN_101ba530(...);
 extern int thunk_FUN_101badc0(...);
 extern int thunk_FUN_101bc3e0(...);
 extern int thunk_FUN_101bc430(...);
-extern int thunk_FUN_101c3fc0(...);
 extern int thunk_FUN_101c62f0(...);
 extern int thunk_FUN_101c82e0(...);
 extern int thunk_FUN_101d7220(...);
@@ -301,15 +298,12 @@ extern int thunk_FUN_1116aeb0(...);
 extern int thunk_FUN_1116bd10(...);
 extern int thunk_FUN_1116cc00(...);
 extern int thunk_FUN_1116cf20(...);
-extern int thunk_FUN_111704f0(...);
 extern int thunk_FUN_111705c0(...);
 extern int thunk_FUN_11170d50(...);
 extern int thunk_FUN_11171150(...);
 extern int thunk_FUN_11172590(...);
 extern int thunk_FUN_11172850(...);
 extern int thunk_FUN_111733d0(...);
-extern int thunk_FUN_11173720(...);
-extern int thunk_FUN_11173870(...);
 extern int thunk_FUN_11174250(...);
 extern int thunk_FUN_111748f0(...);
 extern int thunk_FUN_11174dd0(...);
@@ -896,171 +890,168 @@ extern int DAT_122f1250;
 extern int DAT_122f33e0;
 extern int DAT_122f33e8;
 extern int DAT_122f33f4;
-extern int Ext_Netstart2DtlsClient_vftable;
-extern int Ext_RAddQueueTracksHelper_vftable;
-extern int Ext_RAlbumArtHelper_vftable;
-extern int Ext_RAsyncBrowseCacheCB_vftable;
-extern int Ext_RAsyncIOSession_RTTI_Type_Descriptor;
-extern int Ext_RAsyncNullIOSessionCB_vftable;
-extern int Ext_RAsyncSocketIOSession_RTTI_Type_Descriptor;
-extern int Ext_RBrowseChildIterator_vftable;
-extern int Ext_RBrowseNodeObj_vftable;
-extern int Ext_RCDAlbumArtCallback_vftable;
-extern int Ext_RCDAlbumIdCallback_vftable;
-extern int Ext_RCDDynamicPropertyCB_vftable;
-extern int Ext_RCDMimeTypeCallback_vftable;
-extern int Ext_RCDStationInfoCallback_vftable;
-extern int Ext_RCDTitleCallback_vftable;
-extern int Ext_RCPBrowseOperation_vftable;
-extern int Ext_RCPSonosBrowseOperation_vftable;
-extern int Ext_RCPSonosGenericOperation_vftable;
-extern int Ext_RCPSonosGetAllPrefixLocationsOperation_vftable;
-extern int Ext_RCPValidateOperation_vftable;
-extern int Ext_RClient_HeaderAccumulator_vftable;
-extern int Ext_RContentKeysParam_vftable;
-extern int Ext_RControlAIOOpCB_vftable;
-extern int Ext_RControlAIOOpImpl_vftable;
-extern int Ext_RControlAIOOpRefBase_vftable;
-extern int Ext_RControlAIOOpRef_vftable;
-extern int Ext_RControlDiag_vftable;
-extern int Ext_RControlHTTPRequest_vftable;
-extern int Ext_RControlSocketTxn_vftable;
-extern int Ext_RDateTime_vftable;
-extern int Ext_REqualizer_vftable;
-extern int Ext_RGetAllPrefixLocationsAIOOpBase_vftable;
-extern int Ext_RGetAllPrefixLocationsCB_vftable;
-extern int Ext_RGetExtendedMetadataAsSwfObjOp_vftable;
-extern int Ext_RHouseholdListenerBase_vftable;
-extern int Ext_RHouseholdListenerCB_vftable;
-extern int Ext_RHttpBaseNoRedirectAIOOp_vftable;
-extern int Ext_RITQHandler_vftable;
-extern int Ext_RMSQuickSkip_vftable;
-extern int Ext_RMultiZPUpdateOp_vftable;
-extern int Ext_RNullAsyncIOOperation_vftable;
-extern int Ext_RPopup_vftable;
-extern int Ext_RPresentationMapDownloadOp_vftable;
-extern int Ext_RPresentationMapRequest_vftable;
-extern int Ext_RQualityBadge_vftable;
-extern int Ext_RReportUnresponsiveZPorMSAIOOp_vftable;
-extern int Ext_RRestoreAVTStateAIOOp_vftable;
-extern int Ext_RRestoreOneAVTStateAIOOp_vftable;
-extern int Ext_RSOAPFaultHandler_vftable;
-extern int Ext_RSaveAVTStateAIOOp_vftable;
-extern int Ext_RShareMgrAsync_vftable;
-extern int Ext_RSocketTxn_vftable;
-extern int Ext_RSonosCPFaultHandler_vftable;
-extern int Ext_RSonosContentProviderImpl_vftable;
-extern int Ext_RSonosContentProviderV11_vftable;
-extern int Ext_RSonosContentProvider_vftable;
-extern int Ext_RSonosGetDeviceAuthTokenOp_vftable;
-extern int Ext_RSonosGetExtendedMetadataTextOp_vftable;
-extern int Ext_RSonosGetExtendedMetadataTextParam_vftable;
-extern int Ext_RSonosGetLinkCodeOp_vftable;
-extern int Ext_RSonosGetMediaMetadataOp_vftable;
-extern int Ext_RSonosGetMetadataOp_vftable;
-extern int Ext_RSonosGetObjIDsForAlbumAIOOp_vftable;
-extern int Ext_RSonosGetObjIDsForTrackAIOOp_vftable;
-extern int Ext_RSonosGetUserIdOpV11_vftable;
-extern int Ext_RSonosMediaMetadataParam_vftable;
-extern int Ext_RSonosParamRX_vftable;
-extern int Ext_RSonosPositionInformationParam_vftable;
-extern int Ext_RSonosRateItemAndForcePollOp_vftable;
-extern int Ext_RSonosRateItemInnerOp_vftable;
-extern int Ext_RSonosRateItemOp_vftable;
-extern int Ext_RSonosRefreshAuthTokenInnerOp_vftable;
-extern int Ext_RSonosRefreshAuthTokenOp_vftable;
-extern int Ext_RSonosRefreshSessionOp_vftable;
-extern int Ext_RSonosRelatedActionsParam_vftable;
-extern int Ext_RSonosRelatedInfoParam_vftable;
-extern int Ext_RSonosSOAPAIOOpBase_vftable;
-extern int Ext_RSonosSearchOp_vftable;
-extern int Ext_RSonosTestGetGetUserIdOpV11_vftable;
-extern int Ext_RSonosTestStatelessAccountOpV11_vftable;
-extern int Ext_RSonosV11ValidateOp_vftable;
-extern int Ext_RSvcManifestDownloadCompletionCB_vftable;
-extern int Ext_RTrackMetaDataCacheCB_vftable;
-extern int Ext_RTrackRatingsEventHandler_vftable;
-extern int Ext_RTrackRatingsModelImpl_vftable;
-extern int Ext_RUpdManifestRequestOp_vftable;
-extern int Ext_RUpgradeClientCB_vftable;
-extern int Ext_RUpnpAVTGetCrossfadeModeAIOOp_vftable;
-extern int Ext_RUpnpAVTGetPositionInfoAIOOp_vftable;
-extern int Ext_RUpnpAVTGetTransportInfoAIOOp_vftable;
-extern int Ext_RUpnpAVTGetTransportSettingsAIOOp_vftable;
-extern int Ext_RUpnpAVTPlayAIOOp_vftable;
-extern int Ext_RUpnpAVTSeekAIOOp_vftable;
-extern int Ext_RUpnpAVTSetAVTransportURIAIOOp_vftable;
-extern int Ext_RUpnpAVTSetCrossfadeModeAIOOp_vftable;
-extern int Ext_RUpnpAVTSetPlayModeAIOOp_vftable;
-extern int Ext_RUpnpAddQueueTracksOp_vftable;
-extern int Ext_RUpnpAsyncIOOperationConnectCB_vftable;
-extern int Ext_RUpnpAsyncIOOperation_vftable;
-extern int Ext_RUpnpCDRequestResortAIOOp_vftable;
-extern int Ext_RUpnpPlaySourceOp_vftable;
-extern int Ext_RUpnpQAddMultipleURIsAIOOp_vftable;
-extern int Ext_RUpnpQAddURIAIOOp_vftable;
-extern int Ext_RUpnpQAttachQueueAIOOp_vftable;
-extern int Ext_RUpnpQBackupAIOOp_vftable;
-extern int Ext_RUpnpQBrowseAIOOp_vftable;
-extern int Ext_RUpnpQCreateQueueAIOOp_vftable;
-extern int Ext_RUpnpQRemoveAllTracksAIOOp_vftable;
-extern int Ext_RUpnpQRemoveTrackRangeAIOOp_vftable;
-extern int Ext_RUpnpQReorderTracksAIOOp_vftable;
-extern int Ext_RUpnpQReplaceAllTracksAIOOp_vftable;
-extern int Ext_RUpnpRCRampToVolumeAIOOp_vftable;
-extern int Ext_RUpnpRCResetBasicEQAIOOp_vftable;
-extern int Ext_RUpnpRCResetExtEQAIOOp_vftable;
-extern int Ext_RUpnpRCSetBassAIOOp_vftable;
-extern int Ext_RUpnpRCSetEQAIOOp_vftable;
-extern int Ext_RUpnpRCSetLoudnessAIOOp_vftable;
-extern int Ext_RUpnpRCSetMuteAIOOp_vftable;
-extern int Ext_RUpnpRCSetRelativeVolumeAIOOp_vftable;
-extern int Ext_RUpnpRCSetTrebleAIOOp_vftable;
-extern int Ext_RUpnpRCSetVolumeAIOOp_vftable;
-extern int Ext_RUpnpReplaceQueueOp_vftable;
-extern int Ext_RUpnpSPEditAccountMdAIOOp_vftable;
-extern int Ext_RXMLRPCAsyncIOOperation_vftable;
-extern int Ext_RZPConnectionTracker_vftable;
-extern int Ext_RZPUpdateOp_complete;
-extern int Ext_RZPUpdateOp_vftable;
-extern int Ext_RZoneVolume_vftable;
-extern int Ext_RefCountBase_vftable;
-extern int Ext_SwfObjArrayIter_vftable;
-extern int Ext_SwfObjArray_vftable;
-extern int Ext_SwfObjCDCP_vftable;
-extern int Ext_SwfObjCM_vftable;
-extern int Ext_SwfObjCPPerformActionOp_vftable;
-extern int Ext_SwfObjCP_vftable;
-extern int Ext_SwfObjDP_vftable;
-extern int Ext_SwfObjGetChildTrackInfo_vftable;
-extern int Ext_SwfObjGetTrackInfo_vftable;
-extern int Ext_SwfObjGroupVolume_vftable;
-extern int Ext_SwfObjHTC_vftable;
-extern int Ext_SwfObjHouseholdListenerProxy_vftable;
-extern int Ext_SwfObjIndexListener_vftable;
-extern int Ext_SwfObjIter_vftable;
-extern int Ext_SwfObjLastFMCP_vftable;
-extern int Ext_SwfObjMSDevice_vftable;
-extern int Ext_SwfObjObjectIter_vftable;
-extern int Ext_SwfObjObject_vftable;
-extern int Ext_SwfObjPresentationMapDownloadMgr_vftable;
-extern int Ext_SwfObjProtocolInfoList_vftable;
-extern int Ext_SwfObjQ_vftable;
-extern int Ext_SwfObjRC_vftable;
-extern int Ext_SwfObjSP_vftable;
-extern int Ext_SwfObjString_vftable;
-extern int Ext_SwfObjTrackRatingsModel_vftable;
-extern int Ext_SwfObjWMCCP_vftable;
-extern int Ext_SwfObjWebSvcCP_vftable;
-extern int Ext_SwfObjWebSvc_vftable;
-extern int Ext_SwfObj_vftable;
-extern int Ext_SwfThreadOp_vftable;
-extern int Ext_SwfWorkerThread_vftable;
-extern int Ext_ZPConnRec_vftable;
 extern int _DAT_119d00c0;
 extern int _DAT_119d00d0;
 extern int _DAT_122e8a98;
 extern int _DAT_122f33e4;
+extern int ghidra_vftable_Netstart2DtlsClient;
+extern int ghidra_vftable_RAddQueueTracksHelper;
+extern int ghidra_vftable_RAlbumArtHelper;
+extern int ghidra_vftable_RAsyncBrowseCacheCB;
+extern int ghidra_vftable_RAsyncNullIOSessionCB;
+extern int ghidra_vftable_RBrowseChildIterator;
+extern int ghidra_vftable_RBrowseNodeObj;
+extern int ghidra_vftable_RCDAlbumArtCallback;
+extern int ghidra_vftable_RCDAlbumIdCallback;
+extern int ghidra_vftable_RCDDynamicPropertyCB;
+extern int ghidra_vftable_RCDMimeTypeCallback;
+extern int ghidra_vftable_RCDStationInfoCallback;
+extern int ghidra_vftable_RCDTitleCallback;
+extern int ghidra_vftable_RCPBrowseOperation;
+extern int ghidra_vftable_RCPSonosBrowseOperation;
+extern int ghidra_vftable_RCPSonosGenericOperation;
+extern int ghidra_vftable_RCPSonosGetAllPrefixLocationsOperation;
+extern int ghidra_vftable_RCPValidateOperation;
+extern int ghidra_vftable_RClient_HeaderAccumulator;
+extern int ghidra_vftable_RContentKeysParam;
+extern int ghidra_vftable_RControlAIOOpCB;
+extern int ghidra_vftable_RControlAIOOpImpl;
+extern int ghidra_vftable_RControlAIOOpRef;
+extern int ghidra_vftable_RControlAIOOpRefBase;
+extern int ghidra_vftable_RControlDiag;
+extern int ghidra_vftable_RControlHTTPRequest;
+extern int ghidra_vftable_RControlSocketTxn;
+extern int ghidra_vftable_RDateTime;
+extern int ghidra_vftable_REqualizer;
+extern int ghidra_vftable_RGetAllPrefixLocationsAIOOpBase;
+extern int ghidra_vftable_RGetAllPrefixLocationsCB;
+extern int ghidra_vftable_RGetExtendedMetadataAsSwfObjOp;
+extern int ghidra_vftable_RHouseholdListenerBase;
+extern int ghidra_vftable_RHouseholdListenerCB;
+extern int ghidra_vftable_RHttpBaseNoRedirectAIOOp;
+extern int ghidra_vftable_RITQHandler;
+extern int ghidra_vftable_RMSQuickSkip;
+extern int ghidra_vftable_RMultiZPUpdateOp;
+extern int ghidra_vftable_RNullAsyncIOOperation;
+extern int ghidra_vftable_RPopup;
+extern int ghidra_vftable_RPresentationMapDownloadOp;
+extern int ghidra_vftable_RPresentationMapRequest;
+extern int ghidra_vftable_RQualityBadge;
+extern int ghidra_vftable_RReportUnresponsiveZPorMSAIOOp;
+extern int ghidra_vftable_RRestoreAVTStateAIOOp;
+extern int ghidra_vftable_RRestoreOneAVTStateAIOOp;
+extern int ghidra_vftable_RSOAPFaultHandler;
+extern int ghidra_vftable_RSaveAVTStateAIOOp;
+extern int ghidra_vftable_RShareMgrAsync;
+extern int ghidra_vftable_RSocketTxn;
+extern int ghidra_vftable_RSonosCPFaultHandler;
+extern int ghidra_vftable_RSonosContentProvider;
+extern int ghidra_vftable_RSonosContentProviderImpl;
+extern int ghidra_vftable_RSonosContentProviderV11;
+extern int ghidra_vftable_RSonosGetDeviceAuthTokenOp;
+extern int ghidra_vftable_RSonosGetExtendedMetadataTextOp;
+extern int ghidra_vftable_RSonosGetExtendedMetadataTextParam;
+extern int ghidra_vftable_RSonosGetLinkCodeOp;
+extern int ghidra_vftable_RSonosGetMediaMetadataOp;
+extern int ghidra_vftable_RSonosGetMetadataOp;
+extern int ghidra_vftable_RSonosGetObjIDsForAlbumAIOOp;
+extern int ghidra_vftable_RSonosGetObjIDsForTrackAIOOp;
+extern int ghidra_vftable_RSonosGetUserIdOpV11;
+extern int ghidra_vftable_RSonosMediaMetadataParam;
+extern int ghidra_vftable_RSonosParamRX;
+extern int ghidra_vftable_RSonosPositionInformationParam;
+extern int ghidra_vftable_RSonosRateItemAndForcePollOp;
+extern int ghidra_vftable_RSonosRateItemInnerOp;
+extern int ghidra_vftable_RSonosRateItemOp;
+extern int ghidra_vftable_RSonosRefreshAuthTokenInnerOp;
+extern int ghidra_vftable_RSonosRefreshAuthTokenOp;
+extern int ghidra_vftable_RSonosRefreshSessionOp;
+extern int ghidra_vftable_RSonosRelatedActionsParam;
+extern int ghidra_vftable_RSonosRelatedInfoParam;
+extern int ghidra_vftable_RSonosSOAPAIOOpBase;
+extern int ghidra_vftable_RSonosSearchOp;
+extern int ghidra_vftable_RSonosTestGetGetUserIdOpV11;
+extern int ghidra_vftable_RSonosTestStatelessAccountOpV11;
+extern int ghidra_vftable_RSonosV11ValidateOp;
+extern int ghidra_vftable_RSvcManifestDownloadCompletionCB;
+extern int ghidra_vftable_RTrackMetaDataCacheCB;
+extern int ghidra_vftable_RTrackRatingsEventHandler;
+extern int ghidra_vftable_RTrackRatingsModelImpl;
+extern int ghidra_vftable_RUpdManifestRequestOp;
+extern int ghidra_vftable_RUpgradeClientCB;
+extern int ghidra_vftable_RUpnpAVTGetCrossfadeModeAIOOp;
+extern int ghidra_vftable_RUpnpAVTGetPositionInfoAIOOp;
+extern int ghidra_vftable_RUpnpAVTGetTransportInfoAIOOp;
+extern int ghidra_vftable_RUpnpAVTGetTransportSettingsAIOOp;
+extern int ghidra_vftable_RUpnpAVTPlayAIOOp;
+extern int ghidra_vftable_RUpnpAVTSeekAIOOp;
+extern int ghidra_vftable_RUpnpAVTSetAVTransportURIAIOOp;
+extern int ghidra_vftable_RUpnpAVTSetCrossfadeModeAIOOp;
+extern int ghidra_vftable_RUpnpAVTSetPlayModeAIOOp;
+extern int ghidra_vftable_RUpnpAddQueueTracksOp;
+extern int ghidra_vftable_RUpnpAsyncIOOperation;
+extern int ghidra_vftable_RUpnpAsyncIOOperationConnectCB;
+extern int ghidra_vftable_RUpnpCDRequestResortAIOOp;
+extern int ghidra_vftable_RUpnpPlaySourceOp;
+extern int ghidra_vftable_RUpnpQAddMultipleURIsAIOOp;
+extern int ghidra_vftable_RUpnpQAddURIAIOOp;
+extern int ghidra_vftable_RUpnpQAttachQueueAIOOp;
+extern int ghidra_vftable_RUpnpQBackupAIOOp;
+extern int ghidra_vftable_RUpnpQBrowseAIOOp;
+extern int ghidra_vftable_RUpnpQCreateQueueAIOOp;
+extern int ghidra_vftable_RUpnpQRemoveAllTracksAIOOp;
+extern int ghidra_vftable_RUpnpQRemoveTrackRangeAIOOp;
+extern int ghidra_vftable_RUpnpQReorderTracksAIOOp;
+extern int ghidra_vftable_RUpnpQReplaceAllTracksAIOOp;
+extern int ghidra_vftable_RUpnpRCRampToVolumeAIOOp;
+extern int ghidra_vftable_RUpnpRCResetBasicEQAIOOp;
+extern int ghidra_vftable_RUpnpRCResetExtEQAIOOp;
+extern int ghidra_vftable_RUpnpRCSetBassAIOOp;
+extern int ghidra_vftable_RUpnpRCSetEQAIOOp;
+extern int ghidra_vftable_RUpnpRCSetLoudnessAIOOp;
+extern int ghidra_vftable_RUpnpRCSetMuteAIOOp;
+extern int ghidra_vftable_RUpnpRCSetRelativeVolumeAIOOp;
+extern int ghidra_vftable_RUpnpRCSetTrebleAIOOp;
+extern int ghidra_vftable_RUpnpRCSetVolumeAIOOp;
+extern int ghidra_vftable_RUpnpReplaceQueueOp;
+extern int ghidra_vftable_RUpnpSPEditAccountMdAIOOp;
+extern int ghidra_vftable_RXMLRPCAsyncIOOperation;
+extern int ghidra_vftable_RZPConnectionTracker;
+extern int ghidra_vftable_RZPUpdateOp;
+extern int ghidra_vftable_RZoneVolume;
+extern int ghidra_vftable_RefCountBase;
+extern int ghidra_vftable_SwfObj;
+extern int ghidra_vftable_SwfObjArray;
+extern int ghidra_vftable_SwfObjArrayIter;
+extern int ghidra_vftable_SwfObjCDCP;
+extern int ghidra_vftable_SwfObjCM;
+extern int ghidra_vftable_SwfObjCP;
+extern int ghidra_vftable_SwfObjCPPerformActionOp;
+extern int ghidra_vftable_SwfObjDP;
+extern int ghidra_vftable_SwfObjGetChildTrackInfo;
+extern int ghidra_vftable_SwfObjGetTrackInfo;
+extern int ghidra_vftable_SwfObjGroupVolume;
+extern int ghidra_vftable_SwfObjHTC;
+extern int ghidra_vftable_SwfObjHouseholdListenerProxy;
+extern int ghidra_vftable_SwfObjIndexListener;
+extern int ghidra_vftable_SwfObjIter;
+extern int ghidra_vftable_SwfObjLastFMCP;
+extern int ghidra_vftable_SwfObjMSDevice;
+extern int ghidra_vftable_SwfObjObject;
+extern int ghidra_vftable_SwfObjObjectIter;
+extern int ghidra_vftable_SwfObjPresentationMapDownloadMgr;
+extern int ghidra_vftable_SwfObjProtocolInfoList;
+extern int ghidra_vftable_SwfObjQ;
+extern int ghidra_vftable_SwfObjRC;
+extern int ghidra_vftable_SwfObjSP;
+extern int ghidra_vftable_SwfObjString;
+extern int ghidra_vftable_SwfObjTrackRatingsModel;
+extern int ghidra_vftable_SwfObjWMCCP;
+extern int ghidra_vftable_SwfObjWebSvc;
+extern int ghidra_vftable_SwfObjWebSvcCP;
+extern int ghidra_vftable_SwfThreadOp;
+extern int ghidra_vftable_SwfWorkerThread;
+extern int ghidra_vftable_ZPConnRec;
 extern int in_EAX;
 extern int in_stack_00000014;
 extern int unaff_EBX;
@@ -1281,17 +1272,13 @@ extern undefined1 LAB_117bbc8f[];
 extern undefined1 LAB_117bbcdf[];
 extern undefined1 LAB_117bbf90[];
 extern undefined1 LAB_117bbfc0[];
-extern undefined1 LAB_117bc005[];
 extern undefined1 LAB_117bc08d[];
 extern undefined1 LAB_117bc160[];
-extern undefined1 LAB_117bc1a5[];
-extern undefined1 LAB_117bc1e5[];
 extern undefined1 LAB_117bc5a3[];
 extern undefined1 LAB_117bc5d0[];
 extern undefined1 LAB_117bc600[];
 extern undefined1 LAB_117bc630[];
 extern undefined1 LAB_117bc660[];
-extern undefined1 LAB_117bc6a5[];
 extern undefined1 LAB_117bc6d0[];
 extern undefined1 LAB_117bc700[];
 extern undefined1 LAB_117bc77d[];
@@ -1602,6 +1589,10 @@ extern int *stack0xfffffff7;
 extern int *stack0xfffffffc;
 extern void *ExceptionList;
 namespace std {}
+struct RAsyncIOSession { char _pad; RAsyncIOSession(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int RTTI_Type_Descriptor; };
+struct RAsyncSocketIOSession { char _pad; RAsyncSocketIOSession(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int RTTI_Type_Descriptor; };
+struct RTrackMetaDataCacheCB { char _pad; RTrackMetaDataCacheCB(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int handleRes(...); };
+struct RZPUpdateOp { char _pad; RZPUpdateOp(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int complete; };
 namespace std { template<class...> struct _Parallelism_allocator { char _pad; _Parallelism_allocator(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); }; }
 namespace std { template<class...> struct allocator { char _pad; allocator(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); }; }
 namespace std { template<class...> struct greater { char _pad; greater(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); }; }
@@ -1764,6 +1755,7 @@ struct QueueOwnerID { char _pad; QueueOwnerID(...); template<class T> int operat
 struct QueuePolicy { char _pad; QueuePolicy(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct RBrowseAllocator { char _pad; RBrowseAllocator(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct RINCON_AssociatedZPUDN { char _pad; RINCON_AssociatedZPUDN(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct RTTI_Type_Descriptor { char _pad; RTTI_Type_Descriptor(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct RZUpdateOp { char _pad; RZUpdateOp(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct RampTime { char _pad; RampTime(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct RampToVolume { char _pad; RampToVolume(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
@@ -1848,8 +1840,6 @@ struct Visual { char _pad; Visual(...); template<class T> int operator==(T); tem
 struct Volume { char _pad; Volume(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct VolumeDB { char _pad; VolumeDB(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct With { char _pad; With(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct Stub_RTrackMetaDataCacheCB { Stub_RTrackMetaDataCacheCB(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int handleRes(...); };
-struct Stub_std { Stub_std(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int _Xlength_error(...); };
 struct Recovered_Bulk { char _pad; undefined4 __thiscall FUN_1113f040(undefined4 param_2,undefined4 param_3); undefined4 __thiscall FUN_1113fb00(int param_2,undefined4 param_3); undefined4 __thiscall FUN_1113fd40(undefined4 param_2); void __thiscall FUN_1113fe70(int *param_2,undefined4 param_3,int *param_4); void __thiscall FUN_111401c0(undefined4 param_2); void __thiscall FUN_11140420(int *param_2); undefined4 __thiscall FUN_11140790(undefined4 param_2,undefined4 *param_3); undefined4 __thiscall FUN_11140800(uint param_2,undefined4 param_3,undefined4 param_4); undefined4 __thiscall FUN_11140950(uint param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_11142c80(byte param_2); undefined4 * __thiscall FUN_11142e30(byte param_2); undefined4 * __thiscall FUN_11143020(byte param_2); void __thiscall FUN_111437b0(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4); undefined4 __thiscall FUN_11143f00(int param_2,short *param_3); undefined1 __thiscall FUN_11143f90(int param_2,short *param_3); undefined4 __thiscall FUN_11144fb0(int param_2); int __thiscall FUN_11145080(int param_2); int __thiscall FUN_11145100(int param_2); int __thiscall FUN_11145180(int param_2); int __thiscall FUN_11145200(int param_2); int __thiscall FUN_11145280(int param_2); int __thiscall FUN_11145300(int param_2); int __thiscall FUN_11145380(int param_2); int __thiscall FUN_11145400(int param_2); int __thiscall FUN_11145480(int param_2); int __thiscall FUN_11145500(int param_2); undefined4 __thiscall FUN_11147440(undefined4 param_2,undefined4 param_3,undefined4 param_4,
             undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
             undefined4 param_9); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_111474b0(undefined4 param_2,undefined4 param_3,undefined4 param_4); int __thiscall FUN_11147600(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5
@@ -1879,8 +1869,8 @@ struct Recovered_Bulk { char _pad; undefined4 __thiscall FUN_1113f040(undefined4
             undefined4 param_6,undefined4 param_7,undefined4 param_8); undefined4 * __thiscall FUN_11165a50(undefined4 *param_2); undefined4 * __thiscall FUN_11165fc0(byte param_2); int __thiscall FUN_11166430(int param_2); undefined4 * __thiscall FUN_111669d0(byte param_2); void __thiscall FUN_11166c30(int param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5,
             undefined4 param_6); void __thiscall FUN_11166e50(int param_2,undefined4 param_3); int __thiscall FUN_11166f00(int param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_11166fa0(undefined4 param_2,undefined4 param_3); undefined4 * __thiscall FUN_11167250(byte param_2); undefined4 * __thiscall FUN_11167350(byte param_2); void __thiscall FUN_111675c0(undefined4 param_2,char param_3); void __thiscall FUN_111677b0(undefined4 param_2,byte param_3); void __thiscall FUN_111679c0(undefined4 param_2); undefined4 __thiscall FUN_11167dc0(undefined4 param_2,undefined4 *param_3); undefined1 __thiscall FUN_11168150(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4,
             undefined4 *param_5,undefined4 *param_6,undefined4 *param_7,undefined4 *param_8,
-            undefined4 param_9,undefined4 param_10,undefined4 param_11); void __thiscall FUN_11169070(char param_2); void __thiscall FUN_111697f0(undefined4 *param_2); void __thiscall FUN_1116a310(int *param_2,int *param_3); void __thiscall FUN_1116a4f0(int *param_2,undefined4 *param_3); int * __thiscall FUN_1116b700(byte param_2); undefined4 * __thiscall FUN_1116b7c0(byte param_2); undefined4 * __thiscall FUN_1116b9d0(byte param_2); float __thiscall FUN_1116bc10(int param_2); void __thiscall FUN_1116c0e0(int param_2); int __thiscall FUN_1116c320(int *param_2); int __thiscall FUN_1116c450(int *param_2); undefined4 __thiscall FUN_1116e2d0(undefined4 param_2); void __thiscall FUN_1116e480(undefined4 param_2,undefined4 param_3,short param_4); void __thiscall FUN_1116e960(int param_2,short param_3); int __thiscall FUN_1116e9d0(int param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_1116eac0(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_1116ebb0(int param_2); undefined4 * __thiscall FUN_1116ed60(byte param_2); void __thiscall FUN_1116edf0(undefined4 param_2); undefined4 __thiscall FUN_1116ee60(undefined1 *param_2,int param_3); void __thiscall FUN_1116f8f0(undefined4 param_2,undefined4 param_3,undefined4 param_4); void __thiscall FUN_1116f960(undefined4 param_2); void __thiscall FUN_1116f9c0(undefined4 param_2,undefined4 param_3,undefined4 param_4); int * __thiscall FUN_111707f0(int *param_2,int *param_3); int * __thiscall FUN_11170f30(int *param_2,int *param_3); void __thiscall FUN_111712e0(int *param_2,int *param_3); undefined4 * __thiscall FUN_111722c0(undefined4 param_2,int param_3,undefined4 param_4,
-            undefined4 param_5); undefined4 * __thiscall FUN_11172330(char *param_2,char *param_3); int __thiscall FUN_11172b40(int *param_2); int * __thiscall FUN_11172d70(byte param_2); undefined4 * __thiscall FUN_11172e60(byte param_2); undefined4 * __thiscall FUN_11172f40(byte param_2); void __thiscall FUN_111731a0(int param_2,int param_3,int param_4); float __thiscall FUN_111732e0(int param_2); void __thiscall FUN_111737e0(int param_2); int __thiscall FUN_11173b00(int param_2,int param_3,int param_4); undefined4 __thiscall FUN_111745a0(undefined4 param_2,undefined4 param_3); undefined4 __thiscall FUN_11174640(undefined4 *param_2,undefined4 param_3); void __thiscall FUN_111751e0(char *param_2); undefined4 __thiscall FUN_111755c0(undefined4 param_2,undefined4 param_3); int * __thiscall FUN_11175a50(int param_2); undefined4 * __thiscall FUN_11175b90(undefined4 param_2,undefined4 param_3,undefined4 param_4,
+            undefined4 param_9,undefined4 param_10,undefined4 param_11); void __thiscall FUN_11169070(char param_2); void __thiscall FUN_111697f0(undefined4 *param_2); void __thiscall FUN_1116a310(int *param_2,int *param_3); void __thiscall FUN_1116a4f0(int *param_2,undefined4 *param_3); int * __thiscall FUN_1116b700(byte param_2); undefined4 * __thiscall FUN_1116b7c0(byte param_2); undefined4 * __thiscall FUN_1116b9d0(byte param_2); float __thiscall FUN_1116bc10(int param_2); void __thiscall FUN_1116c0e0(int param_2); int __thiscall FUN_1116c320(int *param_2); int __thiscall FUN_1116c450(int *param_2); undefined4 __thiscall FUN_1116e2d0(undefined4 param_2); void __thiscall FUN_1116e480(undefined4 param_2,undefined4 param_3,short param_4); void __thiscall FUN_1116e960(int param_2,short param_3); int __thiscall FUN_1116e9d0(int param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_1116eac0(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_1116ebb0(int param_2); undefined4 * __thiscall FUN_1116ed60(byte param_2); void __thiscall FUN_1116edf0(undefined4 param_2); undefined4 __thiscall FUN_1116ee60(undefined1 *param_2,int param_3); void __thiscall FUN_1116f8f0(undefined4 param_2,undefined4 param_3,undefined4 param_4); void __thiscall FUN_1116f960(undefined4 param_2); void __thiscall FUN_1116f9c0(undefined4 param_2,undefined4 param_3,undefined4 param_4); undefined4 * __thiscall FUN_111722c0(undefined4 param_2,int param_3,undefined4 param_4,
+            undefined4 param_5); undefined4 * __thiscall FUN_11172330(char *param_2,char *param_3); int * __thiscall FUN_11172d70(byte param_2); undefined4 * __thiscall FUN_11172e60(byte param_2); undefined4 * __thiscall FUN_11172f40(byte param_2); void __thiscall FUN_111731a0(int param_2,int param_3,int param_4); float __thiscall FUN_111732e0(int param_2); void __thiscall FUN_111737e0(int param_2); int __thiscall FUN_11173b00(int param_2,int param_3,int param_4); undefined4 __thiscall FUN_111745a0(undefined4 param_2,undefined4 param_3); undefined4 __thiscall FUN_11174640(undefined4 *param_2,undefined4 param_3); void __thiscall FUN_111751e0(char *param_2); undefined4 __thiscall FUN_111755c0(undefined4 param_2,undefined4 param_3); int * __thiscall FUN_11175a50(int param_2); undefined4 * __thiscall FUN_11175b90(undefined4 param_2,undefined4 param_3,undefined4 param_4,
             undefined4 param_5,undefined4 param_6); undefined4 * __thiscall FUN_11175d20(byte param_2); undefined4 * __thiscall FUN_11175de0(byte param_2); int __thiscall FUN_11175e40(char *param_2); void __thiscall FUN_11175f50(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); void __thiscall FUN_11175fe0(undefined4 param_2,undefined4 param_3,int param_4,undefined4 param_5); void __thiscall FUN_111761d0(undefined4 param_2,undefined4 param_3,undefined4 param_4); void __thiscall FUN_111762a0(undefined4 param_2,undefined4 param_3); undefined4 __thiscall FUN_111766c0(uint param_2); void __thiscall FUN_11176c80(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); undefined4 __thiscall FUN_11176d60(undefined4 param_2); undefined4 __thiscall FUN_11176f00(undefined4 param_2,undefined4 param_3,undefined4 param_4); int __thiscall FUN_11177150(undefined4 param_2,undefined4 param_3); int __thiscall FUN_111773f0(char *param_2,uint param_3); void __thiscall FUN_11177530(undefined4 param_2); void __thiscall FUN_111775c0(undefined4 param_2); void __thiscall FUN_111780a0(int param_2,int param_3); void __thiscall FUN_11178700(undefined4 *param_2); void __thiscall FUN_111787a0(undefined4 *param_2); void __thiscall FUN_11178870(undefined4 *param_2); void __thiscall FUN_111789c0(undefined4 *param_2); undefined4 * __thiscall FUN_11178a60(void *param_2,undefined4 *param_3); undefined4 * __thiscall FUN_11178c10(void *param_2,undefined4 *param_3); int * __thiscall FUN_11179010(int *param_2,int *param_3); void __thiscall FUN_111796c0(undefined4 param_2); undefined4 __thiscall FUN_11179750(undefined4 param_2,int *param_3); undefined4 __thiscall FUN_11179840(undefined4 param_2,int *param_3); undefined4 __thiscall FUN_11179930(undefined4 param_2,int *param_3); int * __thiscall FUN_11179c30(int *param_2,undefined4 param_3); int * __thiscall FUN_11179ca0(int *param_2,undefined4 param_3); int * __thiscall FUN_11179d10(int *param_2,undefined4 param_3); int * __thiscall FUN_11179d80(int *param_2,int *param_3); int * __thiscall FUN_11179de0(int *param_2,int *param_3); int * __thiscall FUN_1117c0e0(int *param_2,int *param_3); int * __thiscall FUN_1117c230(int *param_2,int *param_3); int * __thiscall FUN_1117c380(int *param_2,int *param_3); int * __thiscall FUN_1117c4d0(int *param_2,int *param_3); int * __thiscall FUN_1117c5e0(int *param_2,int *param_3); void __thiscall FUN_1117d730(int *param_2); int * __thiscall FUN_1117eaf0(int param_2); int * __thiscall FUN_1117ece0(int param_2,undefined1 param_3); undefined4 * __thiscall FUN_1117ee60(int *param_2); int * __thiscall FUN_1117ef30(int param_2,int param_3); undefined4 * __thiscall FUN_1117f0f0(undefined4 param_2,int *param_3,int *param_4); undefined4 * __thiscall FUN_1117f6f0(int *param_2,int *param_3); undefined4 * __thiscall FUN_1117f820(undefined4 *param_2); int __thiscall FUN_11181370(int *param_2); int __thiscall FUN_11181460(int *param_2); int * __thiscall FUN_11181b30(byte param_2); int * __thiscall FUN_11181bf0(byte param_2); int * __thiscall FUN_11181cb0(byte param_2); int * __thiscall FUN_11181da0(byte param_2); int * __thiscall FUN_11181e30(byte param_2); int * __thiscall FUN_11181f10(byte param_2); int * __thiscall FUN_11181fe0(byte param_2); int __thiscall FUN_111820a0(byte param_2); undefined4 * __thiscall FUN_11182190(byte param_2); undefined4 * __thiscall FUN_111822e0(byte param_2); void __thiscall FUN_11182700(int param_2,int param_3,int param_4); void __thiscall FUN_11182770(int param_2,int param_3,int param_4); void __thiscall FUN_111827e0(int param_2,int param_3,int param_4); void __thiscall FUN_11182890(int param_2,int param_3,int param_4); void __thiscall FUN_11182920(int param_2,int param_3,int param_4); undefined4 * __thiscall FUN_111844d0(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4); int * __thiscall FUN_111845d0(int *param_2,int *param_3,int *param_4); void __thiscall FUN_11184810(int *param_2,int *param_3,int *param_4); void __thiscall FUN_11184a50(int *param_2,int *param_3,int *param_4); void __thiscall FUN_11185220(char *param_2); void __thiscall FUN_111853a0(char *param_2,undefined4 param_3,undefined1 *param_4,
             undefined4 param_5); void __thiscall FUN_111854d0(undefined4 param_2,char *param_3); void __thiscall FUN_111858e0(undefined4 param_2,char *param_3,char *param_4,char *param_5,char *param_6,
             char *param_7); void __thiscall FUN_11185ea0(char *param_2); void __thiscall FUN_11186020(char *param_2,undefined4 param_3,undefined1 *param_4,
@@ -1949,8 +1939,9 @@ void __fastcall FUN_111482f0(undefined4 *param_1);
 void FUN_11148dd0(char *param_1,undefined4 param_2,undefined4 param_3);
 void __fastcall FUN_111490f0(int *param_1);
 void FUN_11149560(int param_1,undefined1 *param_2);
-/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy(int *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_1114af10(int *param_1);
 void __fastcall FUN_1114b050(undefined4 *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_1114b4a0(int *param_1);
 void __fastcall FUN_1114b7d0(int param_1);
 undefined4 __fastcall FUN_1114c1e0(int param_1);
 void __fastcall FUN_1114c360(int *param_1);
@@ -1982,6 +1973,8 @@ void __fastcall FUN_11155ba0(int param_1);
 void __fastcall FUN_11155d80(int param_1);
 void __fastcall FUN_11158500(undefined4 *param_1);
 void FUN_111586e0(int param_1,undefined1 *param_2);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_111593a0(int *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_11159bb0(int *param_1);
 void * FUN_11159cf0(uint param_1);
 void FUN_11159d70(int param_1,undefined1 *param_2);
 undefined4 * __fastcall FUN_1115a560(int param_1);
@@ -2106,6 +2099,8 @@ void __fastcall FUN_1117fd70(int param_1);
 void __fastcall FUN_11180050(int *param_1);
 void __fastcall FUN_111800f0(int *param_1);
 void __fastcall FUN_11180190(int *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_11180240(int *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_111802b0(int *param_1);
 void __fastcall FUN_11180320(int *param_1);
 void __fastcall FUN_111803a0(int *param_1);
 void __fastcall FUN_11180420(int *param_1);
@@ -2114,6 +2109,8 @@ void __fastcall FUN_11180680(int param_1);
 void __fastcall FUN_11180720(undefined4 *param_1);
 void __fastcall FUN_11180920(undefined4 *param_1);
 void __fastcall FUN_11180c30(undefined4 *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_11184290(int *param_1);
+/* Library Function - Multiple Matches With Different Base Names public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >(void_) public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_) public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::~vector<unsigned int,class std::allocator<unsigned int> >(void_) public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct CHN *,class std::allocator<struct CHN *> >(void_) 7 names - too many to list Library: Visual Studio 2019 Release */ void __fastcall FID_conflict__Tidy_11184300(int *param_1);
 void __fastcall FUN_11184370(int *param_1);
 void __fastcall FUN_111843f0(int *param_1);
 void __stdcall FUN_11184c90(char *param_1);
@@ -2482,7 +2479,7 @@ void __fastcall FUN_1113f160(int param_1)
     }
     else {
       thunk_FUN_111a4bc0(*(undefined4 *)(param_1 + 0xc),"Object");
-      *puVar3 = (undefined4)((uint)&Ext_SwfObjObject_vftable);
+      *puVar3 = (undefined4)((uint)&ghidra_vftable_SwfObjObject);
     }
     local_8 = (int)((uint)*(unsigned short *)((char *)&local_8 + 1) << 8);
     thunk_FUN_111a44c0(puVar3);
@@ -2555,7 +2552,7 @@ void __fastcall FUN_1113f360(int *param_1)
     }
     else {
       thunk_FUN_111a4bc0(param_1[3],"Object");
-      *puVar3 = (undefined4)((uint)&Ext_SwfObjObject_vftable);
+      *puVar3 = (undefined4)((uint)&ghidra_vftable_SwfObjObject);
     }
     local_8 = (int)((uint)*(unsigned short *)((char *)&local_8 + 1) << 8);
     thunk_FUN_111a44c0(puVar3);
@@ -2886,7 +2883,7 @@ void __thiscall Recovered_Bulk::FUN_1113fe70(int *param_2,undefined4 param_3,int
     }
     else {
       thunk_FUN_111a4bc0(local_14[3],"Object");
-      *puVar4 = (undefined4)((uint)&Ext_SwfObjObject_vftable);
+      *puVar4 = (undefined4)((uint)&ghidra_vftable_SwfObjObject);
     }
     *(unsigned char *)((char *)&local_8 + 0) = 0;
     thunk_FUN_111a44c0(puVar4);
@@ -3379,7 +3376,7 @@ void __fastcall FUN_11142290(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RAddQueueTracksHelper_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RAddQueueTracksHelper);
   iVar1 = (int)(param_1[0x16]);
   local_8 = (undefined4)(0);
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
@@ -3435,17 +3432,17 @@ void __fastcall FUN_11142290(undefined4 *param_1)
       free((void *)(iVar1 + -0x10));
     }
   }
-  param_1[0xd] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xd] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[7] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[7] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[4] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[4] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[1] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[1] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  *param_1 = (undefined4)((uint)&Ext_RUpnpAsyncIOOperationConnectCB_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperationConnectCB);
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -3469,8 +3466,8 @@ void __fastcall FUN_111424d0(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RUpnpAddQueueTracksOp_vftable);
-  param_1[2] = (uint)&Ext_RUpnpAddQueueTracksOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAddQueueTracksOp);
+  param_1[2] = (uint)&ghidra_vftable_RUpnpAddQueueTracksOp;
   thunk_FUN_11143170(uVar2);
   iVar1 = (int)(param_1[0x35]);
   local_8 = (undefined4)(0);
@@ -3494,11 +3491,11 @@ void __fastcall FUN_111424d0(undefined4 *param_1)
       free((void *)(iVar1 + -0x10));
     }
   }
-  param_1[0x2a] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x2a] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x27] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x27] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x24] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x24] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   thunk_FUN_11142290();
   thunk_FUN_11261f10();
@@ -3525,8 +3522,8 @@ void __fastcall FUN_11142640(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RUpnpPlaySourceOp_vftable);
-  param_1[2] = (uint)&Ext_RUpnpPlaySourceOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpPlaySourceOp);
+  param_1[2] = (uint)&ghidra_vftable_RUpnpPlaySourceOp;
   thunk_FUN_111432c0(uVar2);
   iVar1 = (int)(param_1[0xe]);
   local_8 = (undefined4)(0);
@@ -3539,9 +3536,9 @@ void __fastcall FUN_11142640(undefined4 *param_1)
       free((void *)(iVar1 + -0x10));
     }
   }
-  param_1[10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[7] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[7] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
   ExceptionList = (void *)(local_10);
@@ -3565,18 +3562,18 @@ void __fastcall FUN_111427b0(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RUpnpReplaceQueueOp_vftable);
-  param_1[2] = (uint)&Ext_RUpnpReplaceQueueOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpReplaceQueueOp);
+  param_1[2] = (uint)&ghidra_vftable_RUpnpReplaceQueueOp;
   thunk_FUN_11143380(uVar1);
-  param_1[0x13] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x13] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0xd] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xd] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[7] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[7] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
   ExceptionList = (void *)(local_10);
@@ -3602,8 +3599,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11142c80(byte param_2)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RUpnpAddQueueTracksOp_vftable);
-  param_1[2] = (uint)&Ext_RUpnpAddQueueTracksOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAddQueueTracksOp);
+  param_1[2] = (uint)&ghidra_vftable_RUpnpAddQueueTracksOp;
   thunk_FUN_11143170(uVar2);
   iVar1 = (int)(param_1[0x35]);
   *(unsigned char *)((char *)&local_8 + 0) = 1;
@@ -3627,11 +3624,11 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11142c80(byte param_2)
       free((void *)(iVar1 + -0x10));
     }
   }
-  param_1[0x2a] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x2a] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x27] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x27] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x24] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x24] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   thunk_FUN_11142290();
   thunk_FUN_11261f10();
@@ -3661,8 +3658,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11142e30(byte param_2)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RUpnpPlaySourceOp_vftable);
-  param_1[2] = (uint)&Ext_RUpnpPlaySourceOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpPlaySourceOp);
+  param_1[2] = (uint)&ghidra_vftable_RUpnpPlaySourceOp;
   thunk_FUN_111432c0(uVar2);
   iVar1 = (int)(param_1[0xe]);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
@@ -3675,9 +3672,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11142e30(byte param_2)
       free((void *)(iVar1 + -0x10));
     }
   }
-  param_1[10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[7] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[7] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
   if ((param_2 & 1) != 0) {
@@ -3704,18 +3701,18 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11143020(byte param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RUpnpReplaceQueueOp_vftable);
-  param_1[2] = (uint)&Ext_RUpnpReplaceQueueOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpReplaceQueueOp);
+  param_1[2] = (uint)&ghidra_vftable_RUpnpReplaceQueueOp;
   thunk_FUN_11143380(uVar1);
-  param_1[0x13] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x13] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0xd] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xd] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[7] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[7] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
   if ((param_2 & 1) != 0) {
@@ -5092,11 +5089,11 @@ undefined4 * __fastcall FUN_11148130(undefined4 *param_1)
   puStack_c = (undefined1 *)(LAB_117b7f9d);
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RAsyncBrowseCacheCB_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RAsyncBrowseCacheCB);
   local_8 = (undefined4)(0);
   thunk_FUN_111a4bc0(0,&DAT_1186d2ee);
-  *param_1 = (undefined4)((uint)&Ext_RShareMgrAsync_vftable);
-  param_1[1] = (uint)&Ext_RShareMgrAsync_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RShareMgrAsync);
+  param_1[1] = (uint)&ghidra_vftable_RShareMgrAsync;
   param_1[6] = 0;
   param_1[0x108] = 0xffffffff;
   param_1[0x109] = 0;
@@ -5159,8 +5156,8 @@ void __fastcall FUN_111482f0(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RShareMgrAsync_vftable);
-  param_1[1] = (uint)&Ext_RShareMgrAsync_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RShareMgrAsync);
+  param_1[1] = (uint)&ghidra_vftable_RShareMgrAsync;
   thunk_FUN_110b0460(1,uVar2);
   thunk_FUN_110adac0(param_1);
   if (param_1[6] != 0) {
@@ -5208,8 +5205,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111484d0(byte param_2)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RShareMgrAsync_vftable);
-  param_1[1] = (uint)&Ext_RShareMgrAsync_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RShareMgrAsync);
+  param_1[1] = (uint)&ghidra_vftable_RShareMgrAsync;
   thunk_FUN_110b0460(1,uVar2);
   thunk_FUN_110adac0(param_1);
   if (param_1[6] != 0) {
@@ -5585,7 +5582,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1114ab60(int param_2,int param_3,int
   param_1[1] = 0;
   param_1[2] = 0;
   param_1[3] = param_3;
-  *param_1 = (undefined4)((uint)&Ext_RMultiZPUpdateOp_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RMultiZPUpdateOp);
   param_1[4] = param_4;
   *(undefined2 *)(param_1 + 7) = 0;
   param_1[8] = 0;
@@ -5650,7 +5647,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1114ab60(int param_2,int param_3,int
    
    Library: Visual Studio 2019 Release */
 
-void __fastcall FID_conflict__Tidy(int *param_1)
+void __fastcall FID_conflict__Tidy_1114af10(int *param_1)
 
 {
   int iVar1;
@@ -5684,13 +5681,13 @@ void __fastcall FID_conflict__Tidy(int *param_1)
 void __fastcall FUN_1114b050(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RZPUpdateOp_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RZPUpdateOp);
   if (*(char *)(param_1 + 0x108) != '\0') {
     thunk_FUN_112a8930(param_1 + 0x102);
   }
   thunk_FUN_112a7f20(param_1 + 0x216);
   thunk_FUN_112af4e0("updatemgr",2,"RZUpdateOp destroyed");
-  *param_1 = (undefined4)((uint)&Ext_RUpgradeClientCB_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpgradeClientCB);
   return;
 }
 
@@ -5701,13 +5698,13 @@ void __fastcall FUN_1114b050(undefined4 *param_1)
 undefined4 * __thiscall Recovered_Bulk::FUN_1114b1a0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RZPUpdateOp_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RZPUpdateOp);
   if (*(char *)(param_1 + 0x108) != '\0') {
     thunk_FUN_112a8930(param_1 + 0x102);
   }
   thunk_FUN_112a7f20(param_1 + 0x216);
   thunk_FUN_112af4e0("updatemgr",2,"RZUpdateOp destroyed");
-  *param_1 = (undefined4)((uint)&Ext_RUpgradeClientCB_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpgradeClientCB);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x86c);
   }
@@ -5746,6 +5743,52 @@ void __thiscall Recovered_Bulk::FUN_1114b3d0(int param_2,int param_3,int param_4
 }
 
 
+// Reference entry 1114b4a0; body size 81 bytes.
+#line 1 "ENTRY_1114b4a0"
+
+/* Library Function - Multiple Matches With Different Base Names
+    public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct
+   std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned
+   int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct
+   std::greater<void> >(void_)
+    public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int>
+   >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_)
+    public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int>
+   >::~vector<unsigned int,class std::allocator<unsigned int> >(void_)
+    public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct
+   CHN *,class std::allocator<struct CHN *> >(void_)
+     7 names - too many to list
+   
+   Library: Visual Studio 2019 Release */
+
+void __fastcall FID_conflict__Tidy_1114b4a0(int *param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  uint uVar3;
+  
+  iVar1 = (int)(*param_1);
+  if (iVar1 != 0) {
+    uVar3 = (uint)(param_1[2] - iVar1 & 0xfffffffc);
+    iVar2 = (int)(iVar1);
+    if (0xfff < uVar3) {
+      iVar2 = (int)(*(int *)(iVar1 + -4));
+      uVar3 = (uint)(uVar3 + 0x23);
+      if (0x1f < (iVar1 - iVar2) - 4U) {
+                    
+        _invalid_parameter_noinfo_noreturn();
+      }
+    }
+    thunk_FUN_1148a50e(iVar2,uVar3);
+    *param_1 = (int)(0);
+    param_1[1] = 0;
+    param_1[2] = 0;
+  }
+  return;
+}
+
+
 // Reference entry 1114b670; body size 208 bytes.
 #line 1 "ENTRY_1114b670"
 
@@ -5780,7 +5823,7 @@ void __thiscall Recovered_Bulk::FUN_1114b670(int param_2)
   }
   else {
     thunk_FUN_112af4e0("updatemgr",1,
-                       "unpexptected state in (uint)&Ext_RZPUpdateOp_complete; expected %s, got %s",
+                       "unpexptected state in RZPUpdateOp::complete; expected %s, got %s",
                        (&PTR_s_HELLO_1211eeec)[param_1[0x20d]],(&PTR_s_HELLO_1211eeec)[param_2]);
   }
   return;
@@ -6400,7 +6443,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1114d8c0(undefined4 param_2,undefine
   ExceptionList = (void *)(&local_10);
   thunk_FUN_11167050(param_2,param_3);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjLastFMCP_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjLastFMCP);
   thunk_FUN_11230c90(param_4,param_5,param_6,0);
   ExceptionList = (void *)(local_10);
   return (undefined4 *)(param_1);
@@ -6461,9 +6504,9 @@ void FUN_1114da50(int param_1,undefined4 param_2,undefined4 *param_3)
                         (2000,2000,0,0));
       thunk_FUN_111c0760(uVar4,"urn:schemas-upnp-org:service:SystemProperties:1","EditAccountMd",
                          uVar5,uVar7,uVar8,uVar9,uVar10);
-      *puVar3 = (undefined4)((uint)&Ext_RUpnpSPEditAccountMdAIOOp_vftable);
-      puVar3[0x18] = (uint)&Ext_RUpnpSPEditAccountMdAIOOp_vftable;
-      puVar3[0x11b] = (uint)&Ext_RUpnpSPEditAccountMdAIOOp_vftable;
+      *puVar3 = (undefined4)((uint)&ghidra_vftable_RUpnpSPEditAccountMdAIOOp);
+      puVar3[0x18] = (uint)&ghidra_vftable_RUpnpSPEditAccountMdAIOOp;
+      puVar3[0x11b] = (uint)&ghidra_vftable_RUpnpSPEditAccountMdAIOOp;
     }
     uVar4 = (undefined4)(*(undefined4 *)(param_1 + 4));
     local_90 = (int)((uint)*(unsigned short *)((char *)&local_90 + 1) << 8);
@@ -6504,7 +6547,7 @@ undefined4 * __fastcall FUN_1114dc90(int param_1)
     uVar1 = (undefined1)(*(undefined1 *)(param_1 + 0x142));
     thunk_FUN_11167050(*(undefined4 *)(param_1 + 0xc),param_1 + 0x18);
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
-    *puVar2 = (undefined4)((uint)&Ext_SwfObjLastFMCP_vftable);
+    *puVar2 = (undefined4)((uint)&ghidra_vftable_SwfObjLastFMCP);
     thunk_FUN_11230c90(param_1 + 0x40,uVar1,param_1 + 0xc1,0);
     ExceptionList = (void *)(local_10);
     return (undefined4 *)(puVar2);
@@ -6550,7 +6593,7 @@ void __fastcall FUN_1114e000(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RAlbumArtHelper_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RAlbumArtHelper);
   param_1[1] = 0;
   iVar1 = (int)(param_1[2]);
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
@@ -6601,7 +6644,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1114e130(byte param_2)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RAlbumArtHelper_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RAlbumArtHelper);
   param_1[1] = 0;
   iVar1 = (int)(param_1[2]);
   local_8 = (undefined4)(0);
@@ -6995,7 +7038,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1114ee60(undefined4 param_2,int *par
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   thunk_FUN_111a4bc0(param_2,"UPNPContentProvider");
-  *param_1 = (undefined4)((uint)&Ext_SwfObjCP_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjCP);
   param_1[5] = 0;
   local_8 = (undefined4)(1);
   iVar1 = (int)(*param_3);
@@ -7004,7 +7047,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1114ee60(undefined4 param_2,int *par
     thunk_FUN_1123fce0((int *)(iVar1 + -0x10),uVar2);
   }
   param_1[7] = 0;
-  *param_1 = (undefined4)((uint)&Ext_SwfObjCDCP_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjCDCP);
   param_1[8] = 0;
   *(undefined1 *)(param_1 + 9) = 0;
   param_1[10] = 0;
@@ -7036,7 +7079,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1114ef60(undefined4 param_2,int *par
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   thunk_FUN_111a4bc0(param_2,"UPNPContentProvider");
-  *param_1 = (undefined4)((uint)&Ext_SwfObjCP_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjCP);
   param_1[5] = 0;
   local_8 = (undefined4)(1);
   iVar1 = (int)(*param_3);
@@ -7068,11 +7111,11 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1114f010(int *param_2,undefined4 par
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   thunk_FUN_111a4bc0(param_2[3],"CPPerformActionOp");
-  param_1[5] = (uint)&Ext_SwfThreadOp_vftable;
+  param_1[5] = (uint)&ghidra_vftable_SwfThreadOp;
   *(unsigned char *)((char *)&local_8 + 0) = 1;
   *(unsigned short *)((char *)&local_8 + 1) = 0;
-  *param_1 = (undefined4)((uint)&Ext_SwfObjCPPerformActionOp_vftable);
-  param_1[5] = (uint)&Ext_SwfObjCPPerformActionOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjCPPerformActionOp);
+  param_1[5] = (uint)&ghidra_vftable_SwfObjCPPerformActionOp;
   thunk_FUN_111a6e70(uVar1);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
   uVar2 = (undefined4)((**(code **)(*param_2 + 0x98))());
@@ -7102,7 +7145,7 @@ void __fastcall FUN_1114f320(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjCDCP_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjCDCP);
   if (param_1[10] != 0) {
     if (param_1[5] != 0) {
       thunk_FUN_1109f7f0(param_1,uVar2);
@@ -7144,7 +7187,7 @@ void __fastcall FUN_1114f3e0(undefined4 *param_1)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   puVar1 = (undefined4 *)((undefined4 *)param_1[5]);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjCP_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjCP);
   if (puVar1 != (undefined4 *)0x0) {
     iVar3 = (int)(thunk_FUN_1123fcd0(puVar1 + 1,uVar2));
     if (iVar3 == 0) {
@@ -7195,8 +7238,8 @@ void __fastcall FUN_1114f540(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjGetChildTrackInfo_vftable);
-  param_1[5] = (uint)&Ext_SwfObjGetChildTrackInfo_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjGetChildTrackInfo);
+  param_1[5] = (uint)&ghidra_vftable_SwfObjGetChildTrackInfo;
   if ((void *)param_1[0xe] != (void *)0x0) {
     free((void *)param_1[0xe]);
   }
@@ -7214,7 +7257,7 @@ void __fastcall FUN_1114f540(undefined4 *param_1)
   }
   thunk_FUN_11175c10();
   thunk_FUN_111a6f10();
-  param_1[5] = (uint)&Ext_RITQHandler_vftable;
+  param_1[5] = (uint)&ghidra_vftable_RITQHandler;
   thunk_FUN_111a4f00();
   ExceptionList = (void *)(local_10);
   return;
@@ -7239,8 +7282,8 @@ void __fastcall FUN_1114f620(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjGetTrackInfo_vftable);
-  param_1[5] = (uint)&Ext_SwfObjGetTrackInfo_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjGetTrackInfo);
+  param_1[5] = (uint)&ghidra_vftable_SwfObjGetTrackInfo;
   if ((void *)param_1[10] != (void *)0x0) {
     free((void *)param_1[10]);
   }
@@ -7257,7 +7300,7 @@ void __fastcall FUN_1114f620(undefined4 *param_1)
     param_1[0xb] = 0;
   }
   thunk_FUN_111a6f10();
-  param_1[5] = (uint)&Ext_RITQHandler_vftable;
+  param_1[5] = (uint)&ghidra_vftable_RITQHandler;
   thunk_FUN_111a4f00();
   ExceptionList = (void *)(local_10);
   return;
@@ -7282,7 +7325,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1114f760(byte param_2)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjCDCP_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjCDCP);
   if (param_1[10] != 0) {
     if (param_1[5] != 0) {
       thunk_FUN_1109f7f0(param_1,uVar2);
@@ -7313,13 +7356,13 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1114f760(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_1114f870(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_SwfObjCPPerformActionOp_vftable);
-  param_1[5] = (uint)&Ext_SwfObjCPPerformActionOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjCPPerformActionOp);
+  param_1[5] = (uint)&ghidra_vftable_SwfObjCPPerformActionOp;
   if ((undefined4 *)param_1[8] != (undefined4 *)0x0) {
     (*(code *)**(undefined4 **)param_1[8])(1);
   }
   thunk_FUN_111a6f10();
-  param_1[5] = (uint)&Ext_RITQHandler_vftable;
+  param_1[5] = (uint)&ghidra_vftable_RITQHandler;
   thunk_FUN_111a4f00();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x42c);
@@ -7346,8 +7389,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1114f8e0(byte param_2)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjGetChildTrackInfo_vftable);
-  param_1[5] = (uint)&Ext_SwfObjGetChildTrackInfo_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjGetChildTrackInfo);
+  param_1[5] = (uint)&ghidra_vftable_SwfObjGetChildTrackInfo;
   if ((void *)param_1[0xe] != (void *)0x0) {
     free((void *)param_1[0xe]);
   }
@@ -7365,7 +7408,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1114f8e0(byte param_2)
   }
   thunk_FUN_11175c10();
   thunk_FUN_111a6f10();
-  param_1[5] = (uint)&Ext_RITQHandler_vftable;
+  param_1[5] = (uint)&ghidra_vftable_RITQHandler;
   thunk_FUN_111a4f00();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x40);
@@ -7393,8 +7436,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1114f9f0(byte param_2)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjGetTrackInfo_vftable);
-  param_1[5] = (uint)&Ext_SwfObjGetTrackInfo_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjGetTrackInfo);
+  param_1[5] = (uint)&ghidra_vftable_SwfObjGetTrackInfo;
   if ((void *)param_1[10] != (void *)0x0) {
     free((void *)param_1[10]);
   }
@@ -7411,7 +7454,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1114f9f0(byte param_2)
     param_1[0xb] = 0;
   }
   thunk_FUN_111a6f10();
-  param_1[5] = (uint)&Ext_RITQHandler_vftable;
+  param_1[5] = (uint)&ghidra_vftable_RITQHandler;
   thunk_FUN_111a4f00();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x30);
@@ -7571,7 +7614,7 @@ void __fastcall FUN_11150170(int param_1)
   local_17c = (void *)(ExceptionList);
   local_8 = (uint)(DAT_12126b84 ^ (uint)local_170);
   ExceptionList = (void *)(&local_17c);
-  local_190 = (undefined **)((uint)&Ext_RBrowseNodeObj_vftable);
+  local_190 = (undefined **)((uint)&ghidra_vftable_RBrowseNodeObj);
   local_18c = (int *)((int *)0x0);
   uVar1 = (undefined4)(*(undefined4 *)(param_1 + 0x24));
   local_174 = (uint)(0);
@@ -7844,10 +7887,10 @@ undefined4 __fastcall FUN_11150ef0(int *param_1)
     uVar3 = (undefined4)(thunk_FUN_111a32a0(uVar1));
     uVar4 = (undefined4)(thunk_FUN_111a2df0());
     thunk_FUN_111a4bc0(param_1[3],"CPPerformActionOp");
-    puVar2[5] = (uint)&Ext_SwfThreadOp_vftable;
+    puVar2[5] = (uint)&ghidra_vftable_SwfThreadOp;
     *(unsigned char *)((char *)&local_8 + 0) = 2;
-    *puVar2 = (undefined4)((uint)&Ext_SwfObjCPPerformActionOp_vftable);
-    puVar2[5] = (uint)&Ext_SwfObjCPPerformActionOp_vftable;
+    *puVar2 = (undefined4)((uint)&ghidra_vftable_SwfObjCPPerformActionOp);
+    puVar2[5] = (uint)&ghidra_vftable_SwfObjCPPerformActionOp;
     thunk_FUN_111a6e70();
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(3)));
     uVar5 = (undefined4)((**(code **)(*param_1 + 0x98))());
@@ -8145,9 +8188,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11152460(int *param_2)
   thunk_FUN_111a4bc0(0,"Equalizer");
   local_8 = (undefined4)(0);
   thunk_FUN_11240650(uVar1);
-  param_1[5] = (uint)&Ext_RControlAIOOpCB_vftable;
-  *param_1 = (undefined4)((uint)&Ext_REqualizer_vftable);
-  param_1[5] = (uint)&Ext_REqualizer_vftable;
+  param_1[5] = (uint)&ghidra_vftable_RControlAIOOpCB;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_REqualizer);
+  param_1[5] = (uint)&ghidra_vftable_REqualizer;
   *(unsigned char *)((char *)&local_8 + 0) = 1;
   iVar2 = (int)(*param_2);
   param_1[7] = iVar2;
@@ -8156,79 +8199,79 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11152460(int *param_2)
   }
   param_1[0xb] = 0;
   param_1[0xc] = 0;
-  param_1[10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0xe] = 0;
   param_1[0xf] = 0;
-  param_1[0xd] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xd] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x14] = 0;
   param_1[0x15] = 0;
-  param_1[0x13] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x13] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x18] = 0;
   param_1[0x19] = 0;
-  param_1[0x17] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x17] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x1e] = 0;
   param_1[0x1f] = 0;
-  param_1[0x1d] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x1d] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x21] = 0;
   param_1[0x22] = 0;
-  param_1[0x20] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x20] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x26] = 0;
   param_1[0x27] = 0;
-  param_1[0x25] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x25] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x2b] = 0;
   param_1[0x2c] = 0;
-  param_1[0x2a] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x2a] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x30] = 0;
   param_1[0x31] = 0;
-  param_1[0x2f] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x2f] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x35] = 0;
   param_1[0x36] = 0;
-  param_1[0x34] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x34] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x3a] = 0;
   param_1[0x3b] = 0;
-  param_1[0x39] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x39] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x3f] = 0;
   param_1[0x40] = 0;
-  param_1[0x3e] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x3e] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x44] = 0;
   param_1[0x45] = 0;
-  param_1[0x43] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x43] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x49] = 0;
   param_1[0x4a] = 0;
-  param_1[0x48] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x48] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x4e] = 0;
   param_1[0x4f] = 0;
-  param_1[0x4d] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x4d] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x53] = 0;
   param_1[0x54] = 0;
-  param_1[0x52] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x52] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x58] = 0;
   param_1[0x59] = 0;
-  param_1[0x57] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x57] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x5d] = 0;
   param_1[0x5e] = 0;
-  param_1[0x5c] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x5c] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x62] = 0;
   param_1[99] = 0;
-  param_1[0x61] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x61] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x67] = 0;
   param_1[0x68] = 0;
-  param_1[0x66] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x66] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x6a] = 0;
   param_1[0x6b] = 0;
-  param_1[0x69] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x69] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x6d] = 0;
   param_1[0x6e] = 0;
-  param_1[0x6c] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x6c] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x70] = 0;
   param_1[0x71] = 0;
-  param_1[0x6f] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x6f] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x73] = 0;
   param_1[0x74] = 0;
-  param_1[0x72] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x72] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x76] = 0;
   param_1[0x77] = 0;
-  param_1[0x75] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x75] = (uint)&ghidra_vftable_RControlAIOOpRef;
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x1b)));
   param_1[6] = 0;
   param_1[8] = 0xff38ff38;
@@ -8297,9 +8340,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11152db0(int param_2,undefined4 para
                     (param_3,param_4,param_5,param_6));
   thunk_FUN_111c0760(uVar2,"urn:schemas-upnp-org:service:RenderingControl:1","SetVolume",uVar3,
                      param_3,param_4,param_5,param_6);
-  *param_1 = (undefined4)((uint)&Ext_RUpnpRCSetVolumeAIOOp_vftable);
-  param_1[0x18] = (uint)&Ext_RUpnpRCSetVolumeAIOOp_vftable;
-  param_1[0x11b] = (uint)&Ext_RUpnpRCSetVolumeAIOOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpRCSetVolumeAIOOp);
+  param_1[0x18] = (uint)&ghidra_vftable_RUpnpRCSetVolumeAIOOp;
+  param_1[0x11b] = (uint)&ghidra_vftable_RUpnpRCSetVolumeAIOOp;
   return (undefined4 *)(param_1);
 }
 
@@ -8323,8 +8366,8 @@ void __fastcall FUN_11152e70(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_REqualizer_vftable);
-  param_1[5] = (uint)&Ext_REqualizer_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_REqualizer);
+  param_1[5] = (uint)&ghidra_vftable_REqualizer;
   iVar2 = (int)(thunk_FUN_110828b0(uVar1));
   puVar4 = (undefined1 *)(&DAT_1186d2ee);
   if ((undefined1 *)param_1[7] != (undefined1 *)0x0) {
@@ -8335,55 +8378,55 @@ void __fastcall FUN_11152e70(undefined4 *param_1)
     thunk_FUN_110cdcd0();
     thunk_FUN_11140c20(param_1,1);
   }
-  param_1[0x75] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x75] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x72] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x72] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x6f] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x6f] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x6c] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x6c] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x69] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x69] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x66] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x66] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x61] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x61] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x5c] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x5c] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x57] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x57] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x52] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x52] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x4d] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x4d] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x48] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x48] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x43] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x43] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x3e] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x3e] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x39] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x39] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x34] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x34] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x2f] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x2f] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x2a] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x2a] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x25] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x25] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x20] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x20] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x1d] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x1d] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x17] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x17] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x13] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x13] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0xd] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xd] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   iVar2 = (int)(param_1[7]);
   local_8 = (undefined4)(0);
@@ -8396,7 +8439,7 @@ void __fastcall FUN_11152e70(undefined4 *param_1)
       free((void *)(iVar2 + -0x10));
     }
   }
-  param_1[5] = (uint)&Ext_RControlAIOOpCB_vftable;
+  param_1[5] = (uint)&ghidra_vftable_RControlAIOOpCB;
   thunk_FUN_11240850();
   thunk_FUN_111a4f00();
   ExceptionList = (void *)(local_10);
@@ -9173,9 +9216,9 @@ void __fastcall FUN_11155590(int param_1)
                         (2000,2000,0,0));
       thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","ResetBasicEQ",
                          uVar4,uVar6,uVar7,uVar8,uVar9);
-      *puVar2 = (undefined4)((uint)&Ext_RUpnpRCResetBasicEQAIOOp_vftable);
-      puVar2[0x18] = (uint)&Ext_RUpnpRCResetBasicEQAIOOp_vftable;
-      puVar2[0x11b] = (uint)&Ext_RUpnpRCResetBasicEQAIOOp_vftable;
+      *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCResetBasicEQAIOOp);
+      puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCResetBasicEQAIOOp;
+      puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCResetBasicEQAIOOp;
       puVar2[0x35f4] = 0;
       *(undefined1 *)(puVar2 + 0x35f5) = 0;
       *(undefined4 *)((int)puVar2 + 0xd7d6) = 0;
@@ -9258,9 +9301,9 @@ void __fastcall FUN_11155810(int param_1)
                         (2000,2000,0,0));
       thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","ResetExtEQ",uVar4,
                          uVar7,uVar8,uVar9,uVar10);
-      *puVar2 = (undefined4)((uint)&Ext_RUpnpRCResetExtEQAIOOp_vftable);
-      puVar2[0x18] = (uint)&Ext_RUpnpRCResetExtEQAIOOp_vftable;
-      puVar2[0x11b] = (uint)&Ext_RUpnpRCResetExtEQAIOOp_vftable;
+      *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCResetExtEQAIOOp);
+      puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCResetExtEQAIOOp;
+      puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCResetExtEQAIOOp;
     }
     local_8 = (undefined4)(0xffffffff);
     thunk_FUN_1124ffa0("InstanceID",0);
@@ -9323,9 +9366,9 @@ void __fastcall FUN_111559c0(int param_1)
                         (2000,2000,0,0));
       thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","ResetExtEQ",uVar4,
                          uVar7,uVar8,uVar9,uVar10);
-      *puVar2 = (undefined4)((uint)&Ext_RUpnpRCResetExtEQAIOOp_vftable);
-      puVar2[0x18] = (uint)&Ext_RUpnpRCResetExtEQAIOOp_vftable;
-      puVar2[0x11b] = (uint)&Ext_RUpnpRCResetExtEQAIOOp_vftable;
+      *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCResetExtEQAIOOp);
+      puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCResetExtEQAIOOp;
+      puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCResetExtEQAIOOp;
     }
     local_8 = (undefined4)(0xffffffff);
     thunk_FUN_1124ffa0("InstanceID",0);
@@ -9391,9 +9434,9 @@ void __fastcall FUN_11155ba0(int param_1)
                         (2000,2000,0,0));
       thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","ResetExtEQ",uVar4,
                          uVar7,uVar8,uVar9,uVar10);
-      *puVar2 = (undefined4)((uint)&Ext_RUpnpRCResetExtEQAIOOp_vftable);
-      puVar2[0x18] = (uint)&Ext_RUpnpRCResetExtEQAIOOp_vftable;
-      puVar2[0x11b] = (uint)&Ext_RUpnpRCResetExtEQAIOOp_vftable;
+      *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCResetExtEQAIOOp);
+      puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCResetExtEQAIOOp;
+      puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCResetExtEQAIOOp;
     }
     local_8 = (undefined4)(0xffffffff);
     thunk_FUN_1124ffa0("InstanceID",0);
@@ -9459,9 +9502,9 @@ void __fastcall FUN_11155d80(int param_1)
                         (2000,2000,0,0));
       thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","ResetExtEQ",uVar4,
                          uVar7,uVar8,uVar9,uVar10);
-      *puVar2 = (undefined4)((uint)&Ext_RUpnpRCResetExtEQAIOOp_vftable);
-      puVar2[0x18] = (uint)&Ext_RUpnpRCResetExtEQAIOOp_vftable;
-      puVar2[0x11b] = (uint)&Ext_RUpnpRCResetExtEQAIOOp_vftable;
+      *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCResetExtEQAIOOp);
+      puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCResetExtEQAIOOp;
+      puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCResetExtEQAIOOp;
     }
     local_8 = (undefined4)(0xffffffff);
     thunk_FUN_1124ffa0("InstanceID",0);
@@ -9601,9 +9644,9 @@ void __thiscall Recovered_Bulk::FUN_11156160(undefined2 param_2)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","SetBass",uVar4,
                            uVar6,uVar7,uVar8,uVar9);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpRCSetBassAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpRCSetBassAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpRCSetBassAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCSetBassAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCSetBassAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCSetBassAIOOp;
       }
       local_8 = (undefined4)(0xffffffff);
       thunk_FUN_1124ffa0("InstanceID",0);
@@ -9667,9 +9710,9 @@ void __thiscall Recovered_Bulk::FUN_11156310(undefined2 param_2)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","SetEQ",uVar4,
                            uVar6,uVar7,uVar8,uVar9);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpRCSetEQAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCSetEQAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
       }
       local_8 = (undefined4)(0xffffffff);
       thunk_FUN_11157e70(0,"SubGain",param_2);
@@ -9730,9 +9773,9 @@ void __thiscall Recovered_Bulk::FUN_111564a0(undefined2 param_2)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","SetEQ",uVar4,
                            uVar6,uVar7,uVar8,uVar9);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpRCSetEQAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCSetEQAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
       }
       local_8 = (undefined4)(0xffffffff);
       thunk_FUN_11157e70(0,"HeightChannelLevel",param_2);
@@ -9793,9 +9836,9 @@ void __thiscall Recovered_Bulk::FUN_11156630(undefined2 param_2)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","SetEQ",uVar4,
                            uVar6,uVar7,uVar8,uVar9);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpRCSetEQAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCSetEQAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
       }
       local_8 = (undefined4)(0xffffffff);
       thunk_FUN_11157e70(0,"AudioDelayLeftRear",param_2);
@@ -9857,9 +9900,9 @@ void __thiscall Recovered_Bulk::FUN_111567c0(undefined4 param_2)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","SetLoudness",
                            uVar4,uVar7,uVar8,uVar9,uVar10);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpRCSetLoudnessAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpRCSetLoudnessAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpRCSetLoudnessAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCSetLoudnessAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCSetLoudnessAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCSetLoudnessAIOOp;
       }
       local_8 = (undefined4)(0xffffffff);
       thunk_FUN_1124ffa0("InstanceID",0);
@@ -9925,9 +9968,9 @@ void __thiscall Recovered_Bulk::FUN_111569a0(undefined2 param_2)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","SetEQ",uVar4,
                            uVar6,uVar7,uVar8,uVar9);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpRCSetEQAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCSetEQAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
       }
       local_8 = (undefined4)(0xffffffff);
       thunk_FUN_11157e70(0,"MusicSurroundLevel",param_2);
@@ -9988,9 +10031,9 @@ void __thiscall Recovered_Bulk::FUN_11156b30(undefined2 param_2)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","SetEQ",uVar4,
                            uVar6,uVar7,uVar8,uVar9);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpRCSetEQAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCSetEQAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
       }
       local_8 = (undefined4)(0xffffffff);
       thunk_FUN_11157e70(0,"NightMode",param_2);
@@ -10051,9 +10094,9 @@ void __thiscall Recovered_Bulk::FUN_11156cc0(undefined2 param_2)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","SetEQ",uVar4,
                            uVar6,uVar7,uVar8,uVar9);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpRCSetEQAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCSetEQAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
       }
       local_8 = (undefined4)(0xffffffff);
       thunk_FUN_11157e70(0,"SubPolarity",param_2);
@@ -10114,9 +10157,9 @@ void __thiscall Recovered_Bulk::FUN_11156e50(undefined2 param_2)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","SetEQ",uVar4,
                            uVar6,uVar7,uVar8,uVar9);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpRCSetEQAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCSetEQAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
       }
       local_8 = (undefined4)(0xffffffff);
       thunk_FUN_11157e70(0,"AudioDelayRightRear",param_2);
@@ -10177,9 +10220,9 @@ void __thiscall Recovered_Bulk::FUN_11156fe0(undefined2 param_2)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","SetEQ",uVar4,
                            uVar6,uVar7,uVar8,uVar9);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpRCSetEQAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCSetEQAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
       }
       local_8 = (undefined4)(0xffffffff);
       thunk_FUN_11157e70(0,"SubEnable",param_2);
@@ -10240,9 +10283,9 @@ void __thiscall Recovered_Bulk::FUN_11157170(undefined2 param_2)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","SetEQ",uVar4,
                            uVar6,uVar7,uVar8,uVar9);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpRCSetEQAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCSetEQAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
       }
       local_8 = (undefined4)(0xffffffff);
       thunk_FUN_11157e70(0,"SurroundEnable",param_2);
@@ -10303,9 +10346,9 @@ void __thiscall Recovered_Bulk::FUN_11157300(undefined2 param_2)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","SetEQ",uVar4,
                            uVar6,uVar7,uVar8,uVar9);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpRCSetEQAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCSetEQAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
       }
       local_8 = (undefined4)(0xffffffff);
       thunk_FUN_11157e70(0,"SurroundLevel",param_2);
@@ -10366,9 +10409,9 @@ void __thiscall Recovered_Bulk::FUN_11157490(undefined2 param_2)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","SetEQ",uVar4,
                            uVar6,uVar7,uVar8,uVar9);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpRCSetEQAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCSetEQAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
       }
       local_8 = (undefined4)(0xffffffff);
       thunk_FUN_11157e70(0,"SurroundMode",param_2);
@@ -10429,9 +10472,9 @@ void __thiscall Recovered_Bulk::FUN_11157620(undefined2 param_2)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","SetEQ",uVar4,
                            uVar6,uVar7,uVar8,uVar9);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpRCSetEQAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCSetEQAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
       }
       local_8 = (undefined4)(0xffffffff);
       thunk_FUN_11157e70(0,"AudioDelay",param_2);
@@ -10492,9 +10535,9 @@ void __thiscall Recovered_Bulk::FUN_111577b0(undefined2 param_2)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","SetEQ",uVar4,
                            uVar6,uVar7,uVar8,uVar9);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpRCSetEQAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCSetEQAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
       }
       local_8 = (undefined4)(0xffffffff);
       thunk_FUN_11157e70(0,"DialogLevel",param_2);
@@ -10555,9 +10598,9 @@ void __thiscall Recovered_Bulk::FUN_11157940(undefined2 param_2)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","SetTreble",uVar4
                            ,uVar6,uVar7,uVar8,uVar9);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpRCSetTrebleAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpRCSetTrebleAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpRCSetTrebleAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCSetTrebleAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCSetTrebleAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCSetTrebleAIOOp;
       }
       local_8 = (undefined4)(0xffffffff);
       thunk_FUN_1124ffa0("InstanceID",0);
@@ -10621,9 +10664,9 @@ void __thiscall Recovered_Bulk::FUN_11157af0(undefined2 param_2)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:RenderingControl:1","SetEQ",uVar4,
                            uVar6,uVar7,uVar8,uVar9);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpRCSetEQAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpRCSetEQAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpRCSetEQAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpRCSetEQAIOOp;
       }
       local_8 = (undefined4)(0xffffffff);
       thunk_FUN_11157e70(0,"SubCrossover",param_2);
@@ -10789,7 +10832,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11158450(undefined4 param_2,int para
   }
   thunk_FUN_1113e560(param_2,"UPNPIRControl",iVar2,param_4,param_5);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjHTC_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjHTC);
   param_1[0xb] = param_3;
   thunk_FUN_111a6e70(uVar1);
   *(undefined1 *)(param_1 + 0xe) = 0;
@@ -10814,7 +10857,7 @@ void __fastcall FUN_11158500(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjHTC_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjHTC);
   if (*(char *)(param_1 + 0xe) != '\0') {
     thunk_FUN_11140c20(param_1,1);
     *(undefined1 *)(param_1 + 0xe) = 0;
@@ -10842,7 +10885,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11158580(byte param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjHTC_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjHTC);
   if (*(char *)(param_1 + 0xe) != '\0') {
     thunk_FUN_11140c20(param_1,1);
     *(undefined1 *)(param_1 + 0xe) = 0;
@@ -11032,7 +11075,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111592d0(undefined4 param_2,int para
     iVar2 = (int)(*(int *)(*(int *)(param_3 + 4) + 4) + 4 + param_3);
   }
   thunk_FUN_1113e560(param_2,"UPNPQueue",iVar2,param_4,param_5);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjQ_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjQ);
   param_1[0xb] = param_3;
   *(undefined1 *)(param_1 + 0xc) = 0;
   param_1[0xd] = 0;
@@ -11042,6 +11085,52 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111592d0(undefined4 param_2,int para
   thunk_FUN_111a6e70(uVar1);
   ExceptionList = (void *)(local_10);
   return (undefined4 *)(param_1);
+}
+
+
+// Reference entry 111593a0; body size 81 bytes.
+#line 1 "ENTRY_111593a0"
+
+/* Library Function - Multiple Matches With Different Base Names
+    public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct
+   std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned
+   int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct
+   std::greater<void> >(void_)
+    public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int>
+   >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_)
+    public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int>
+   >::~vector<unsigned int,class std::allocator<unsigned int> >(void_)
+    public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct
+   CHN *,class std::allocator<struct CHN *> >(void_)
+     7 names - too many to list
+   
+   Library: Visual Studio 2019 Release */
+
+void __fastcall FID_conflict__Tidy_111593a0(int *param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  uint uVar3;
+  
+  iVar1 = (int)(*param_1);
+  if (iVar1 != 0) {
+    uVar3 = (uint)(param_1[2] - iVar1 & 0xfffffffc);
+    iVar2 = (int)(iVar1);
+    if (0xfff < uVar3) {
+      iVar2 = (int)(*(int *)(iVar1 + -4));
+      uVar3 = (uint)(uVar3 + 0x23);
+      if (0x1f < (iVar1 - iVar2) - 4U) {
+                    
+        _invalid_parameter_noinfo_noreturn();
+      }
+    }
+    thunk_FUN_1148a50e(iVar2,uVar3);
+    *param_1 = (int)(0);
+    param_1[1] = 0;
+    param_1[2] = 0;
+  }
+  return;
 }
 
 
@@ -11072,6 +11161,52 @@ void __thiscall Recovered_Bulk::FUN_11159ad0(int param_2,int param_3,int param_4
   *param_1 = (int)(param_2);
   param_1[1] = param_2 + param_3 * 4;
   param_1[2] = param_2 + param_4 * 4;
+  return;
+}
+
+
+// Reference entry 11159bb0; body size 81 bytes.
+#line 1 "ENTRY_11159bb0"
+
+/* Library Function - Multiple Matches With Different Base Names
+    public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct
+   std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned
+   int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct
+   std::greater<void> >(void_)
+    public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int>
+   >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_)
+    public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int>
+   >::~vector<unsigned int,class std::allocator<unsigned int> >(void_)
+    public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct
+   CHN *,class std::allocator<struct CHN *> >(void_)
+     7 names - too many to list
+   
+   Library: Visual Studio 2019 Release */
+
+void __fastcall FID_conflict__Tidy_11159bb0(int *param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  uint uVar3;
+  
+  iVar1 = (int)(*param_1);
+  if (iVar1 != 0) {
+    uVar3 = (uint)(param_1[2] - iVar1 & 0xfffffffc);
+    iVar2 = (int)(iVar1);
+    if (0xfff < uVar3) {
+      iVar2 = (int)(*(int *)(iVar1 + -4));
+      uVar3 = (uint)(uVar3 + 0x23);
+      if (0x1f < (iVar1 - iVar2) - 4U) {
+                    
+        _invalid_parameter_noinfo_noreturn();
+      }
+    }
+    thunk_FUN_1148a50e(iVar2,uVar3);
+    *param_1 = (int)(0);
+    param_1[1] = 0;
+    param_1[2] = 0;
+  }
   return;
 }
 
@@ -11179,9 +11314,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11159e40(undefined4 param_2,undefine
                       (20000,3000,0,0));
     thunk_FUN_111c0760(uVar4,"urn:schemas-sonos-com:service:Queue:1","AddMultipleURIs",uVar5,uVar7,
                        uVar9,uVar10,uVar11);
-    *puVar3 = (undefined4)((uint)&Ext_RUpnpQAddMultipleURIsAIOOp_vftable);
-    puVar3[0x18] = (uint)&Ext_RUpnpQAddMultipleURIsAIOOp_vftable;
-    puVar3[0x11b] = (uint)&Ext_RUpnpQAddMultipleURIsAIOOp_vftable;
+    *puVar3 = (undefined4)((uint)&ghidra_vftable_RUpnpQAddMultipleURIsAIOOp);
+    puVar3[0x18] = (uint)&ghidra_vftable_RUpnpQAddMultipleURIsAIOOp;
+    puVar3[0x11b] = (uint)&ghidra_vftable_RUpnpQAddMultipleURIsAIOOp;
     puVar3[0x35f4] = 0;
     puVar3[0x35f5] = 0;
     puVar3[0x35f6] = 0;
@@ -11267,9 +11402,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1115a120(undefined4 param_2,undefine
                       (20000,3000,0,0));
     thunk_FUN_111c0760(uVar4,"urn:schemas-sonos-com:service:Queue:1","AddURI",uVar5,uVar7,uVar8,
                        uVar10,uVar11);
-    *puVar3 = (undefined4)((uint)&Ext_RUpnpQAddURIAIOOp_vftable);
-    puVar3[0x18] = (uint)&Ext_RUpnpQAddURIAIOOp_vftable;
-    puVar3[0x11b] = (uint)&Ext_RUpnpQAddURIAIOOp_vftable;
+    *puVar3 = (undefined4)((uint)&ghidra_vftable_RUpnpQAddURIAIOOp);
+    puVar3[0x18] = (uint)&ghidra_vftable_RUpnpQAddURIAIOOp;
+    puVar3[0x11b] = (uint)&ghidra_vftable_RUpnpQAddURIAIOOp;
     puVar3[0x35f4] = 0;
     puVar3[0x35f5] = 0;
     puVar3[0x35f6] = 0;
@@ -11350,9 +11485,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1115a3c0(undefined4 param_2)
                       (5000,3000,0,0));
     thunk_FUN_111c0760(uVar4,"urn:schemas-sonos-com:service:Queue:1","AttachQueue",uVar5,uVar7,uVar8
                        ,uVar10,uVar11);
-    *puVar3 = (undefined4)((uint)&Ext_RUpnpQAttachQueueAIOOp_vftable);
-    puVar3[0x18] = (uint)&Ext_RUpnpQAttachQueueAIOOp_vftable;
-    puVar3[0x11b] = (uint)&Ext_RUpnpQAttachQueueAIOOp_vftable;
+    *puVar3 = (undefined4)((uint)&ghidra_vftable_RUpnpQAttachQueueAIOOp);
+    puVar3[0x18] = (uint)&ghidra_vftable_RUpnpQAttachQueueAIOOp;
+    puVar3[0x11b] = (uint)&ghidra_vftable_RUpnpQAttachQueueAIOOp;
     puVar3[0x35f4] = 0;
     *(undefined1 *)(puVar3 + 0x35f5) = 0;
   }
@@ -11411,9 +11546,9 @@ undefined4 * __fastcall FUN_1115a560(int param_1)
                       (2000,2000,0,0));
     thunk_FUN_111c0760(uVar4,"urn:schemas-sonos-com:service:Queue:1","Backup",uVar5,uVar6,uVar7,
                        uVar8,uVar9);
-    *puVar3 = (undefined4)((uint)&Ext_RUpnpQBackupAIOOp_vftable);
-    puVar3[0x18] = (uint)&Ext_RUpnpQBackupAIOOp_vftable;
-    puVar3[0x11b] = (uint)&Ext_RUpnpQBackupAIOOp_vftable;
+    *puVar3 = (undefined4)((uint)&ghidra_vftable_RUpnpQBackupAIOOp);
+    puVar3[0x18] = (uint)&ghidra_vftable_RUpnpQBackupAIOOp;
+    puVar3[0x11b] = (uint)&ghidra_vftable_RUpnpQBackupAIOOp;
     ExceptionList = (void *)(local_10);
     return (undefined4 *)(puVar3);
   }
@@ -11466,9 +11601,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1115a680(undefined4 param_2,undefine
                       (2000,2000,0,0));
     thunk_FUN_111c0760(uVar4,"urn:schemas-sonos-com:service:Queue:1","Browse",uVar5,uVar6,uVar7,
                        uVar8,uVar9);
-    *puVar3 = (undefined4)((uint)&Ext_RUpnpQBrowseAIOOp_vftable);
-    puVar3[0x18] = (uint)&Ext_RUpnpQBrowseAIOOp_vftable;
-    puVar3[0x11b] = (uint)&Ext_RUpnpQBrowseAIOOp_vftable;
+    *puVar3 = (undefined4)((uint)&ghidra_vftable_RUpnpQBrowseAIOOp);
+    puVar3[0x18] = (uint)&ghidra_vftable_RUpnpQBrowseAIOOp;
+    puVar3[0x11b] = (uint)&ghidra_vftable_RUpnpQBrowseAIOOp;
     puVar3[0x35f4] = 0;
     puVar3[0x35f5] = 0;
     puVar3[0x35f6] = 0;
@@ -11541,9 +11676,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1115a8c0(undefined4 param_2,undefine
                       (5000,3000,0,0));
     thunk_FUN_111c0760(uVar4,"urn:schemas-sonos-com:service:Queue:1","CreateQueue",uVar5,uVar7,uVar9
                        ,uVar10,uVar11);
-    *puVar3 = (undefined4)((uint)&Ext_RUpnpQCreateQueueAIOOp_vftable);
-    puVar3[0x18] = (uint)&Ext_RUpnpQCreateQueueAIOOp_vftable;
-    puVar3[0x11b] = (uint)&Ext_RUpnpQCreateQueueAIOOp_vftable;
+    *puVar3 = (undefined4)((uint)&ghidra_vftable_RUpnpQCreateQueueAIOOp);
+    puVar3[0x18] = (uint)&ghidra_vftable_RUpnpQCreateQueueAIOOp;
+    puVar3[0x11b] = (uint)&ghidra_vftable_RUpnpQCreateQueueAIOOp;
     puVar3[0x35f4] = 0;
   }
   local_8 = (undefined4)(0xffffffff);
@@ -11605,9 +11740,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1115aa80(undefined4 param_2,undefine
                       (2000,2000,0,0));
     thunk_FUN_111c0760(uVar4,"urn:schemas-sonos-com:service:Queue:1","RemoveAllTracks",uVar5,uVar6,
                        uVar7,uVar8,uVar9);
-    *puVar3 = (undefined4)((uint)&Ext_RUpnpQRemoveAllTracksAIOOp_vftable);
-    puVar3[0x18] = (uint)&Ext_RUpnpQRemoveAllTracksAIOOp_vftable;
-    puVar3[0x11b] = (uint)&Ext_RUpnpQRemoveAllTracksAIOOp_vftable;
+    *puVar3 = (undefined4)((uint)&ghidra_vftable_RUpnpQRemoveAllTracksAIOOp);
+    puVar3[0x18] = (uint)&ghidra_vftable_RUpnpQRemoveAllTracksAIOOp;
+    puVar3[0x11b] = (uint)&ghidra_vftable_RUpnpQRemoveAllTracksAIOOp;
     puVar3[0x35f4] = 0;
   }
   local_8 = (undefined4)(0xffffffff);
@@ -11667,9 +11802,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1115ac10(undefined4 param_2,undefine
                       (5000,3000,0,0));
     thunk_FUN_111c0760(uVar4,"urn:schemas-sonos-com:service:Queue:1","RemoveTrackRange",uVar5,uVar6,
                        uVar7,uVar8,uVar9);
-    *puVar3 = (undefined4)((uint)&Ext_RUpnpQRemoveTrackRangeAIOOp_vftable);
-    puVar3[0x18] = (uint)&Ext_RUpnpQRemoveTrackRangeAIOOp_vftable;
-    puVar3[0x11b] = (uint)&Ext_RUpnpQRemoveTrackRangeAIOOp_vftable;
+    *puVar3 = (undefined4)((uint)&ghidra_vftable_RUpnpQRemoveTrackRangeAIOOp);
+    puVar3[0x18] = (uint)&ghidra_vftable_RUpnpQRemoveTrackRangeAIOOp;
+    puVar3[0x11b] = (uint)&ghidra_vftable_RUpnpQRemoveTrackRangeAIOOp;
     puVar3[0x35f4] = 0;
   }
   local_8 = (undefined4)(0xffffffff);
@@ -11734,9 +11869,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1115adf0(undefined4 param_2,undefine
                       (5000,3000,0,0));
     thunk_FUN_111c0760(uVar4,"urn:schemas-sonos-com:service:Queue:1","ReorderTracks",uVar5,uVar6,
                        uVar7,uVar8,uVar9);
-    *puVar3 = (undefined4)((uint)&Ext_RUpnpQReorderTracksAIOOp_vftable);
-    puVar3[0x18] = (uint)&Ext_RUpnpQReorderTracksAIOOp_vftable;
-    puVar3[0x11b] = (uint)&Ext_RUpnpQReorderTracksAIOOp_vftable;
+    *puVar3 = (undefined4)((uint)&ghidra_vftable_RUpnpQReorderTracksAIOOp);
+    puVar3[0x18] = (uint)&ghidra_vftable_RUpnpQReorderTracksAIOOp;
+    puVar3[0x11b] = (uint)&ghidra_vftable_RUpnpQReorderTracksAIOOp;
     puVar3[0x35f4] = 0;
   }
   local_8 = (undefined4)(0xffffffff);
@@ -11804,9 +11939,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1115aff0(undefined4 param_2,undefine
                       (20000,3000,0,0));
     thunk_FUN_111c0760(uVar4,"urn:schemas-sonos-com:service:Queue:1","ReplaceAllTracks",uVar5,uVar8,
                        uVar9,uVar10,uVar11);
-    *puVar3 = (undefined4)((uint)&Ext_RUpnpQReplaceAllTracksAIOOp_vftable);
-    puVar3[0x18] = (uint)&Ext_RUpnpQReplaceAllTracksAIOOp_vftable;
-    puVar3[0x11b] = (uint)&Ext_RUpnpQReplaceAllTracksAIOOp_vftable;
+    *puVar3 = (undefined4)((uint)&ghidra_vftable_RUpnpQReplaceAllTracksAIOOp);
+    puVar3[0x18] = (uint)&ghidra_vftable_RUpnpQReplaceAllTracksAIOOp;
+    puVar3[0x11b] = (uint)&ghidra_vftable_RUpnpQReplaceAllTracksAIOOp;
     puVar3[0x35f4] = 0;
     puVar3[0x35f5] = 0;
   }
@@ -12147,7 +12282,7 @@ void __fastcall FUN_1115c860(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_SwfWorkerThread_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfWorkerThread);
   if (*(char *)((int)param_1 + 0x29) != '\0') {
     *(undefined1 *)(param_1 + 10) = 1;
     thunk_FUN_112a7f50(param_1 + 0x15,uVar1);
@@ -12184,7 +12319,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1115c930(byte param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_SwfWorkerThread_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfWorkerThread);
   if (*(char *)((int)param_1 + 0x29) != '\0') {
     *(undefined1 *)(param_1 + 10) = 1;
     thunk_FUN_112a7f50(param_1 + 0x15,uVar1);
@@ -12591,7 +12726,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1115df70(undefined4 param_2,undefine
   ExceptionList = (void *)(&local_10);
   thunk_FUN_111a4bc0(param_2,"GroupVolume");
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjGroupVolume_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjGroupVolume);
   param_1[0xf] = param_4;
   thunk_FUN_111a6e70(uVar1);
   param_1[0x12] = 0;
@@ -12673,8 +12808,8 @@ void __fastcall FUN_1115e0e0(int *param_1)
 void __fastcall FUN_1115e1f0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RZoneVolume_vftable);
-  param_1[5] = (uint)&Ext_RZoneVolume_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RZoneVolume);
+  param_1[5] = (uint)&ghidra_vftable_RZoneVolume;
   if ((undefined4 *)param_1[0x16] != (undefined4 *)0x0) {
     (*(code *)**(undefined4 **)param_1[0x16])(1);
   }
@@ -12687,7 +12822,7 @@ void __fastcall FUN_1115e1f0(undefined4 *param_1)
   if ((undefined4 *)param_1[0x1e] != (undefined4 *)0x0) {
     (*(code *)**(undefined4 **)param_1[0x1e])(1);
   }
-  param_1[5] = (uint)&Ext_RControlAIOOpCB_vftable;
+  param_1[5] = (uint)&ghidra_vftable_RControlAIOOpCB;
   thunk_FUN_11240850();
   thunk_FUN_111a4f00();
   return;
@@ -12710,7 +12845,7 @@ void __fastcall FUN_1115e270(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjGroupVolume_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjGroupVolume);
   thunk_FUN_1115ed60(uVar1);
   thunk_FUN_11095e00(param_1);
   thunk_FUN_1115e1f0();
@@ -12769,7 +12904,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1115e5f0(byte param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjGroupVolume_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjGroupVolume);
   thunk_FUN_1115ed60(uVar1);
   thunk_FUN_11095e00(param_1);
   thunk_FUN_1115e1f0();
@@ -13789,9 +13924,9 @@ void __thiscall Recovered_Bulk::FUN_11160980(undefined4 param_2)
                         (2000,2000,0,0));
       thunk_FUN_111c0760(uVar4,"urn:schemas-upnp-org:service:RenderingControl:1","SetVolume",uVar5,
                          uVar7,uVar8,uVar9,uVar10);
-      *puVar3 = (undefined4)((uint)&Ext_RUpnpRCSetVolumeAIOOp_vftable);
-      puVar3[0x18] = (uint)&Ext_RUpnpRCSetVolumeAIOOp_vftable;
-      puVar3[0x11b] = (uint)&Ext_RUpnpRCSetVolumeAIOOp_vftable;
+      *puVar3 = (undefined4)((uint)&ghidra_vftable_RUpnpRCSetVolumeAIOOp);
+      puVar3[0x18] = (uint)&ghidra_vftable_RUpnpRCSetVolumeAIOOp;
+      puVar3[0x11b] = (uint)&ghidra_vftable_RUpnpRCSetVolumeAIOOp;
     }
     local_8 = (undefined4)(0xffffffff);
     thunk_FUN_1124ffa0("InstanceID",0);
@@ -13867,9 +14002,9 @@ void __thiscall Recovered_Bulk::FUN_11160b70(int param_2)
                         (2000,2000,0,0));
       thunk_FUN_111c0760(uVar4,"urn:schemas-upnp-org:service:RenderingControl:1","SetMute",uVar5,
                          uVar7,uVar8,uVar9,uVar10);
-      *puVar3 = (undefined4)((uint)&Ext_RUpnpRCSetMuteAIOOp_vftable);
-      puVar3[0x18] = (uint)&Ext_RUpnpRCSetMuteAIOOp_vftable;
-      puVar3[0x11b] = (uint)&Ext_RUpnpRCSetMuteAIOOp_vftable;
+      *puVar3 = (undefined4)((uint)&ghidra_vftable_RUpnpRCSetMuteAIOOp);
+      puVar3[0x18] = (uint)&ghidra_vftable_RUpnpRCSetMuteAIOOp;
+      puVar3[0x11b] = (uint)&ghidra_vftable_RUpnpRCSetMuteAIOOp;
     }
     local_8 = (undefined4)(0xffffffff);
     thunk_FUN_1124ffa0("InstanceID",0);
@@ -13946,9 +14081,9 @@ void __thiscall Recovered_Bulk::FUN_11160d60(undefined4 param_2)
                         (2000,2000,0,0));
       thunk_FUN_111c0760(uVar4,"urn:schemas-upnp-org:service:RenderingControl:1","RampToVolume",
                          uVar5,uVar7,uVar9,uVar10,uVar11);
-      *puVar3 = (undefined4)((uint)&Ext_RUpnpRCRampToVolumeAIOOp_vftable);
-      puVar3[0x18] = (uint)&Ext_RUpnpRCRampToVolumeAIOOp_vftable;
-      puVar3[0x11b] = (uint)&Ext_RUpnpRCRampToVolumeAIOOp_vftable;
+      *puVar3 = (undefined4)((uint)&ghidra_vftable_RUpnpRCRampToVolumeAIOOp);
+      puVar3[0x18] = (uint)&ghidra_vftable_RUpnpRCRampToVolumeAIOOp;
+      puVar3[0x11b] = (uint)&ghidra_vftable_RUpnpRCRampToVolumeAIOOp;
       puVar3[0x35f4] = 0;
     }
     local_8 = (undefined4)(0xffffffff);
@@ -14035,9 +14170,9 @@ void __thiscall Recovered_Bulk::FUN_11160fd0(int param_2)
                         (2000,2000,0,0));
       thunk_FUN_111c0760(uVar4,"urn:schemas-upnp-org:service:RenderingControl:1","SetRelativeVolume"
                          ,uVar5,uVar7,uVar8,uVar9,uVar11);
-      *puVar3 = (undefined4)((uint)&Ext_RUpnpRCSetRelativeVolumeAIOOp_vftable);
-      puVar3[0x18] = (uint)&Ext_RUpnpRCSetRelativeVolumeAIOOp_vftable;
-      puVar3[0x11b] = (uint)&Ext_RUpnpRCSetRelativeVolumeAIOOp_vftable;
+      *puVar3 = (undefined4)((uint)&ghidra_vftable_RUpnpRCSetRelativeVolumeAIOOp);
+      puVar3[0x18] = (uint)&ghidra_vftable_RUpnpRCSetRelativeVolumeAIOOp;
+      puVar3[0x11b] = (uint)&ghidra_vftable_RUpnpRCSetRelativeVolumeAIOOp;
       *(undefined2 *)(puVar3 + 0x35f4) = 0;
     }
     local_8 = (undefined4)(0xffffffff);
@@ -14470,7 +14605,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11162050(undefined4 param_2,int para
   }
   thunk_FUN_1113e560(param_2,"UPNPSystemProperties",iVar2,param_4,param_5);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjSP_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjSP);
   param_1[0xb] = param_3;
   thunk_FUN_111a6e70(uVar1);
   param_1[0xe] = 0;
@@ -14496,7 +14631,7 @@ void __fastcall FUN_11162100(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjSP_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjSP);
   iVar1 = (int)(param_1[0xe]);
   local_8 = (undefined4)(0);
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
@@ -14532,7 +14667,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111621c0(byte param_2)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjSP_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjSP);
   iVar1 = (int)(param_1[0xe]);
   local_8 = (undefined4)(0);
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
@@ -14800,7 +14935,7 @@ void __fastcall FUN_11164740(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjIndexListener_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjIndexListener);
   thunk_FUN_11128910(uVar1);
   FUN_10065348(param_1);
   thunk_FUN_111a4f00();
@@ -14825,7 +14960,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111647b0(byte param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjIndexListener_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjIndexListener);
   thunk_FUN_11128910(uVar1);
   FUN_10065348(param_1);
   thunk_FUN_111a4f00();
@@ -15122,8 +15257,8 @@ void __fastcall FUN_11165e70(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RSonosRateItemAndForcePollOp_vftable);
-  param_1[2] = (uint)&Ext_RSonosRateItemAndForcePollOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosRateItemAndForcePollOp);
+  param_1[2] = (uint)&ghidra_vftable_RSonosRateItemAndForcePollOp;
   iVar1 = (int)(param_1[10]);
   local_8 = (undefined4)(0);
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
@@ -15135,7 +15270,7 @@ void __fastcall FUN_11165e70(undefined4 *param_1)
       free((void *)(iVar1 + -0x10));
     }
   }
-  param_1[7] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[7] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
   ExceptionList = (void *)(local_10);
@@ -15160,8 +15295,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11165fc0(byte param_2)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RSonosRateItemAndForcePollOp_vftable);
-  param_1[2] = (uint)&Ext_RSonosRateItemAndForcePollOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosRateItemAndForcePollOp);
+  param_1[2] = (uint)&ghidra_vftable_RSonosRateItemAndForcePollOp;
   iVar1 = (int)(param_1[10]);
   local_8 = (undefined4)(0);
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
@@ -15173,7 +15308,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11165fc0(byte param_2)
       free((void *)(iVar1 + -0x10));
     }
   }
-  param_1[7] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[7] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
   if ((param_2 & 1) != 0) {
@@ -15350,7 +15485,7 @@ void __fastcall FUN_11166810(undefined4 *param_1)
       free((void *)(iVar4 + -0x10));
     }
   }
-  param_1[10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   puVar1 = (undefined4 *)((undefined4 *)param_1[2]);
   local_8 = (undefined4)(3);
@@ -15360,7 +15495,7 @@ void __fastcall FUN_11166810(undefined4 *param_1)
       (**(code **)*puVar1)(1);
     }
   }
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpCB_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
   thunk_FUN_11240850();
   ExceptionList = (void *)(local_10);
   return;
@@ -15418,7 +15553,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111669d0(byte param_2)
       free((void *)(iVar4 + -0x10));
     }
   }
-  param_1[10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   puVar1 = (undefined4 *)((undefined4 *)param_1[2]);
   local_8 = (undefined4)(3);
@@ -15428,7 +15563,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111669d0(byte param_2)
       (**(code **)*puVar1)(1);
     }
   }
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpCB_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
   thunk_FUN_11240850();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x50);
@@ -15675,7 +15810,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11166fa0(undefined4 param_2,undefine
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   thunk_FUN_110d9bc0(param_2,param_3);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjWebSvc_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjWebSvc);
   param_1[0x107] = 0;
   local_8 = (undefined4)(1);
   thunk_FUN_11255220(uVar1);
@@ -15707,7 +15842,7 @@ void __fastcall FUN_111670a0(undefined4 *param_1)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   puVar1 = (undefined4 *)((undefined4 *)param_1[0x107]);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjWebSvc_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjWebSvc);
   if (puVar1 != (undefined4 *)0x0) {
     iVar3 = (int)(thunk_FUN_1123fcd0(puVar1 + 1,uVar2));
     if (iVar3 == 0) {
@@ -15749,7 +15884,7 @@ void __fastcall FUN_11167180(undefined4 *param_1)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   iVar3 = (int)(param_1[8]);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjWebSvcCP_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjWebSvcCP);
   if (iVar3 != 0) {
     if (0 < (int)param_1[9]) {
       param_1[9] = 0;
@@ -15792,7 +15927,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11167250(byte param_2)
   ExceptionList = (void *)(&local_10);
   puVar1 = (undefined4 *)((undefined4 *)param_1[0x107]);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjWebSvc_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjWebSvc);
   if (puVar1 != (undefined4 *)0x0) {
     iVar3 = (int)(thunk_FUN_1123fcd0(puVar1 + 1,uVar2));
     if (iVar3 == 0) {
@@ -15837,7 +15972,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11167350(byte param_2)
   ExceptionList = (void *)(&local_10);
   iVar3 = (int)(param_1[8]);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjWebSvcCP_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjWebSvcCP);
   if (iVar3 != 0) {
     if (0 < (int)param_1[9]) {
       param_1[9] = 0;
@@ -16884,11 +17019,11 @@ void __fastcall FUN_1116b140(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RReportUnresponsiveZPorMSAIOOp_vftable);
-  param_1[2] = (uint)&Ext_RReportUnresponsiveZPorMSAIOOp_vftable;
-  param_1[0x10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RReportUnresponsiveZPorMSAIOOp);
+  param_1[2] = (uint)&ghidra_vftable_RReportUnresponsiveZPorMSAIOOp;
+  param_1[0x10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0(uVar2);
-  param_1[0xd] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xd] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   iVar1 = (int)(param_1[0xc]);
   local_8 = (undefined4)(0);
@@ -16951,8 +17086,8 @@ void __fastcall FUN_1116b2f0(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar3 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RZPConnectionTracker_vftable);
-  param_1[1] = (uint)&Ext_RZPConnectionTracker_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RZPConnectionTracker);
+  param_1[1] = (uint)&ghidra_vftable_RZPConnectionTracker;
   puVar7 = (undefined4 *)(param_1);
   thunk_FUN_1109f7f0(param_1,uVar3);
   thunk_FUN_110a5070(puVar7);
@@ -17004,8 +17139,8 @@ void __fastcall FUN_1116b2f0(undefined4 *param_1)
   }
   thunk_FUN_112a7f20(param_1 + 3);
   thunk_FUN_1116aeb0();
-  param_1[1] = (uint)&Ext_RITQHandler_vftable;
-  *param_1 = (undefined4)((uint)&Ext_RControlDiag_vftable);
+  param_1[1] = (uint)&ghidra_vftable_RITQHandler;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlDiag);
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -17088,11 +17223,11 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1116b7c0(byte param_2)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RReportUnresponsiveZPorMSAIOOp_vftable);
-  param_1[2] = (uint)&Ext_RReportUnresponsiveZPorMSAIOOp_vftable;
-  param_1[0x10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RReportUnresponsiveZPorMSAIOOp);
+  param_1[2] = (uint)&ghidra_vftable_RReportUnresponsiveZPorMSAIOOp;
+  param_1[0x10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0(uVar2);
-  param_1[0xd] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xd] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   iVar1 = (int)(param_1[0xc]);
   local_8 = (undefined4)(0);
@@ -17142,11 +17277,11 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1116b7c0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_1116b9d0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_ZPConnRec_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_ZPConnRec);
   free((void *)param_1[1]);
-  param_1[6] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[6] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpCB_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
   thunk_FUN_11240850();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x28);
@@ -17654,9 +17789,9 @@ void __fastcall FUN_1116e720(int param_1)
             pcVar8 = (char *)("RequestResort");
             uVar6 = (undefined4)((**(code **)(*(int *)(iVar3 + iVar1 + 4) + 0x68))("RequestResort",uVar5));
             thunk_FUN_111c0760(uVar13,uVar6,pcVar8,uVar5,uVar9,uVar10,uVar12,uVar14);
-            *puVar4 = (undefined4)((uint)&Ext_RUpnpCDRequestResortAIOOp_vftable);
-            puVar4[0x18] = (uint)&Ext_RUpnpCDRequestResortAIOOp_vftable;
-            puVar4[0x11b] = (uint)&Ext_RUpnpCDRequestResortAIOOp_vftable;
+            *puVar4 = (undefined4)((uint)&ghidra_vftable_RUpnpCDRequestResortAIOOp);
+            puVar4[0x18] = (uint)&ghidra_vftable_RUpnpCDRequestResortAIOOp;
+            puVar4[0x11b] = (uint)&ghidra_vftable_RUpnpCDRequestResortAIOOp;
           }
           local_8 = (undefined4)(0xffffffff);
           piVar7 = (int *)((int *)thunk_FUN_1124ffa0("SortOrder",0));
@@ -17784,10 +17919,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1116eac0(undefined4 param_2,undefine
   }
   local_8 = (int)((uint)*(unsigned short *)((char *)&local_8 + 1) << 8);
   thunk_FUN_1127e450(uVar2);
-  *param_1 = (undefined4)((uint)&Ext_RUpdManifestRequestOp_vftable);
-  param_1[2] = (uint)&Ext_RUpdManifestRequestOp_vftable;
-  param_1[7] = (uint)&Ext_RUpdManifestRequestOp_vftable;
-  param_1[0x3021] = (uint)&Ext_RUpdManifestRequestOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpdManifestRequestOp);
+  param_1[2] = (uint)&ghidra_vftable_RUpdManifestRequestOp;
+  param_1[7] = (uint)&ghidra_vftable_RUpdManifestRequestOp;
+  param_1[0x3021] = (uint)&ghidra_vftable_RUpdManifestRequestOp;
   ExceptionList = (void *)(local_10);
   return (undefined4 *)(param_1);
 }
@@ -17821,10 +17956,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1116ebb0(int param_2)
   }
   local_8 = (int)((uint)*(unsigned short *)((char *)&local_8 + 1) << 8);
   thunk_FUN_1127e450(uVar2);
-  *param_1 = (undefined4)((uint)&Ext_RUpdManifestRequestOp_vftable);
-  param_1[2] = (uint)&Ext_RUpdManifestRequestOp_vftable;
-  param_1[7] = (uint)&Ext_RUpdManifestRequestOp_vftable;
-  param_1[0x3021] = (uint)&Ext_RUpdManifestRequestOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpdManifestRequestOp);
+  param_1[2] = (uint)&ghidra_vftable_RUpdManifestRequestOp;
+  param_1[7] = (uint)&ghidra_vftable_RUpdManifestRequestOp;
+  param_1[0x3021] = (uint)&ghidra_vftable_RUpdManifestRequestOp;
   ExceptionList = (void *)(local_10);
   return (undefined4 *)(param_1);
 }
@@ -17839,10 +17974,10 @@ void __fastcall FUN_1116eca0(undefined4 *param_1)
   int iVar1;
   
   iVar1 = (int)(param_1[0x3023]);
-  *param_1 = (undefined4)((uint)&Ext_RUpdManifestRequestOp_vftable);
-  param_1[2] = (uint)&Ext_RUpdManifestRequestOp_vftable;
-  param_1[7] = (uint)&Ext_RUpdManifestRequestOp_vftable;
-  param_1[0x3021] = (uint)&Ext_RUpdManifestRequestOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpdManifestRequestOp);
+  param_1[2] = (uint)&ghidra_vftable_RUpdManifestRequestOp;
+  param_1[7] = (uint)&ghidra_vftable_RUpdManifestRequestOp;
+  param_1[0x3021] = (uint)&ghidra_vftable_RUpdManifestRequestOp;
   if (iVar1 != 0) {
     thunk_FUN_1127e5b0();
     thunk_FUN_1148a50e(iVar1,0x2cd34);
@@ -17862,10 +17997,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1116ed60(byte param_2)
   int iVar1;
   
   iVar1 = (int)(param_1[0x3023]);
-  *param_1 = (undefined4)((uint)&Ext_RUpdManifestRequestOp_vftable);
-  param_1[2] = (uint)&Ext_RUpdManifestRequestOp_vftable;
-  param_1[7] = (uint)&Ext_RUpdManifestRequestOp_vftable;
-  param_1[0x3021] = (uint)&Ext_RUpdManifestRequestOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpdManifestRequestOp);
+  param_1[2] = (uint)&ghidra_vftable_RUpdManifestRequestOp;
+  param_1[7] = (uint)&ghidra_vftable_RUpdManifestRequestOp;
+  param_1[0x3021] = (uint)&ghidra_vftable_RUpdManifestRequestOp;
   if (iVar1 != 0) {
     thunk_FUN_1127e5b0();
     thunk_FUN_1148a50e(iVar1,0x2cd34);
@@ -18066,71 +18201,6 @@ void FUN_111706c0(undefined4 param_1,int param_2)
 }
 
 
-// Reference entry 111707f0; body size 353 bytes.
-#line 1 "ENTRY_111707f0"
-
-int * __thiscall Recovered_Bulk::FUN_111707f0(int *param_2,int *param_3)
-{
-  float *param_1 = (float *)this;
-  uint uVar1;
-  undefined4 uVar2;
-  void *pvVar3;
-  undefined4 *puVar4;
-  int iVar5;
-  float fVar6;
-  float *local_20;
-  void *local_1c;
-  undefined4 local_18;
-  int local_14;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117bc005);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  uVar2 = (undefined4)(thunk_FUN_101c3fc0(param_3));
-  thunk_FUN_111704f0(&local_18,param_3,uVar2);
-  if (local_14 != 0) {
-    *param_2 = (int)(local_14);
-    *(undefined1 *)(param_2 + 1) = 0;
-    ExceptionList = (void *)(local_10);
-    return (int *)(param_2);
-  }
-  if (param_1[2] == 2.5243547e-29) {
-                    
-    ((Stub_std *)("unordered_map/set too long"))->_Xlength_error();
-  }
-  local_20 = (float *)(param_1 + 1);
-  local_8 = (undefined4)(0);
-  local_1c = (void *)((void *)0x0);
-  pvVar3 = (void *)(operator_new(0x10));
-  iVar5 = (int)(*param_3);
-  *(int *)((int)pvVar3 + 8) = iVar5;
-  local_1c = (void *)(pvVar3);
-  if ((iVar5 != 0) && (*(int *)(iVar5 + -0x10) < 0xffff)) {
-    thunk_FUN_1123fce0((int *)(iVar5 + -0x10),uVar1);
-  }
-  *(undefined1 *)((int)pvVar3 + 0xc) = 0;
-  local_8 = (undefined4)(1);
-  fVar6 = (float)((float)((double)((int)param_1[2] + 1) +
-                 (double)(&DAT_11880fb0)[-((int)param_1[2] + 1 >> 0x1f)]) /
-          (float)((double)(int)param_1[7] + (double)(&DAT_11880fb0)[-((int)param_1[7] >> 0x1f)]));
-  if (*param_1 <= fVar6 && fVar6 != *param_1) {
-    thunk_FUN_11173870();
-    puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_111704f0(&local_20,(int)pvVar3 + 8,uVar2));
-    local_18 = (undefined4)(*puVar4);
-  }
-  iVar5 = (int)(thunk_FUN_11173720(uVar2,local_18,pvVar3));
-  *param_2 = (int)(iVar5);
-  *(undefined1 *)(param_2 + 1) = 1;
-  ExceptionList = (void *)(local_10);
-  return (int *)(param_2);
-}
-
-
 // Reference entry 11170af0; body size 115 bytes.
 #line 1 "ENTRY_11170af0"
 
@@ -18189,71 +18259,6 @@ void FUN_11170e80(undefined4 param_1,int *param_2)
 }
 
 
-// Reference entry 11170f30; body size 349 bytes.
-#line 1 "ENTRY_11170f30"
-
-int * __thiscall Recovered_Bulk::FUN_11170f30(int *param_2,int *param_3)
-{
-  float *param_1 = (float *)this;
-  uint uVar1;
-  undefined4 uVar2;
-  void *pvVar3;
-  undefined4 *puVar4;
-  int iVar5;
-  float fVar6;
-  float *local_20;
-  void *local_1c;
-  undefined4 local_18;
-  int local_14;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117bc1a5);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  uVar2 = (undefined4)(thunk_FUN_101c3fc0(param_3));
-  thunk_FUN_111704f0(&local_18,param_3,uVar2);
-  if (local_14 != 0) {
-    *param_2 = (int)(local_14);
-    *(undefined1 *)(param_2 + 1) = 0;
-    ExceptionList = (void *)(local_10);
-    return (int *)(param_2);
-  }
-  if (param_1[2] == 2.5243547e-29) {
-                    
-    ((Stub_std *)("unordered_map/set too long"))->_Xlength_error();
-  }
-  local_20 = (float *)(param_1 + 1);
-  local_8 = (undefined4)(0);
-  local_1c = (void *)((void *)0x0);
-  pvVar3 = (void *)(operator_new(0x10));
-  iVar5 = (int)(*param_3);
-  *(int *)((int)pvVar3 + 8) = iVar5;
-  local_1c = (void *)(pvVar3);
-  if ((iVar5 != 0) && (*(int *)(iVar5 + -0x10) < 0xffff)) {
-    thunk_FUN_1123fce0((int *)(iVar5 + -0x10),uVar1);
-  }
-  *(char *)((int)pvVar3 + 0xc) = (char)param_3[1];
-  local_8 = (undefined4)(1);
-  fVar6 = (float)((float)((double)((int)param_1[2] + 1) +
-                 (double)(&DAT_11880fb0)[-((int)param_1[2] + 1 >> 0x1f)]) /
-          (float)((double)(int)param_1[7] + (double)(&DAT_11880fb0)[-((int)param_1[7] >> 0x1f)]));
-  if (*param_1 <= fVar6 && fVar6 != *param_1) {
-    thunk_FUN_11173870();
-    puVar4 = (undefined4 *)((undefined4 *)thunk_FUN_111704f0(&local_20,(int)pvVar3 + 8,uVar2));
-    local_18 = (undefined4)(*puVar4);
-  }
-  iVar5 = (int)(thunk_FUN_11173720(uVar2,local_18,pvVar3));
-  *param_2 = (int)(iVar5);
-  *(undefined1 *)(param_2 + 1) = 1;
-  ExceptionList = (void *)(local_10);
-  return (int *)(param_2);
-}
-
-
 // Reference entry 11171150; body size 95 bytes.
 #line 1 "ENTRY_11171150"
 
@@ -18286,110 +18291,6 @@ void FUN_11171150(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3)
 }
 
 
-// Reference entry 111712e0; body size 484 bytes.
-#line 1 "ENTRY_111712e0"
-
-void __thiscall Recovered_Bulk::FUN_111712e0(int *param_2,int *param_3)
-{
-  float *param_1 = (float *)this;
-  int iVar1;
-  float *pfVar2;
-  uint uVar3;
-  int *piVar4;
-  int *piVar5;
-  uint uVar6;
-  float fVar7;
-  float fVar8;
-  undefined1 local_3c [8];
-  float *local_34;
-  int *local_30;
-  int local_2c;
-  int local_28;
-  int *local_24;
-  undefined4 *local_20;
-  int local_1c;
-  uint local_18;
-  float *local_14;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117bc1e5);
-  local_10 = (void *)(ExceptionList);
-  uVar3 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_24 = (int *)(param_3);
-  local_14 = (float *)(param_1);
-  if (param_2 != (int *)(param_3)) {
-    do {
-      local_18 = (uint)(thunk_FUN_101c3fc0(param_2 + 2));
-      pfVar2 = (float *)(local_14);
-      thunk_FUN_111704f0(&local_2c,param_2 + 2,local_18);
-      if (local_28 == 0) {
-        if (pfVar2[2] == 2.5243547e-29) {
-                    
-          ((Stub_std *)("unordered_map/set too long"))->_Xlength_error();
-        }
-        local_34 = (float *)(pfVar2 + 1);
-        local_8 = (undefined4)(0);
-        local_30 = (int *)((int *)0x0);
-        piVar4 = (int *)(operator_new(0x10));
-        iVar1 = (int)(param_2[2]);
-        piVar4[2] = iVar1;
-        local_30 = (int *)(piVar4);
-        if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
-          thunk_FUN_1123fce0((int *)(iVar1 + -0x10),uVar3);
-        }
-        *(char *)(piVar4 + 3) = (char)param_2[3];
-        local_8 = (undefined4)(1);
-        fVar7 = (float)(local_14[2]);
-        fVar8 = (float)((float)((double)((int)fVar7 + 1) +
-                       (double)(&DAT_11880fb0)[-((int)fVar7 + 1 >> 0x1f)]) /
-                (float)((double)(int)local_14[7] +
-                       (double)(&DAT_11880fb0)[-((int)local_14[7] >> 0x1f)]));
-        if (*local_14 <= fVar8 && fVar8 != *local_14) {
-          thunk_FUN_11173870();
-          piVar5 = (int *)((int *)thunk_FUN_111704f0(local_3c,piVar4 + 2,local_18));
-          local_2c = (int)(*piVar5);
-          local_28 = (int)(piVar5[1]);
-          fVar7 = (float)(local_14[2]);
-        }
-        local_20 = (undefined4 *)(*(undefined4 **)(local_2c + 4));
-        local_14[2] = (float)((int)fVar7 + 1);
-        piVar4[1] = (int)local_20;
-        *piVar4 = (int)(local_2c);
-        *local_20 = (undefined4)(piVar4);
-        *(int **)(local_2c + 4) = piVar4;
-        fVar7 = (float)(local_14[3]);
-        uVar6 = (uint)((uint)local_14[6] & local_18);
-        local_30 = (int *)((int *)0x0);
-        param_3 = (int *)(local_24);
-        local_1c = (int)(local_2c);
-        if (*(float *)((int)fVar7 + uVar6 * 8) == *local_34) {
-          *(int **)((int)fVar7 + uVar6 * 8) = piVar4;
-          *(int **)((int)fVar7 + 4 + uVar6 * 8) = piVar4;
-          local_8 = (undefined4)(0xffffffff);
-        }
-        else if (*(int *)((int)fVar7 + uVar6 * 8) == local_2c) {
-          *(int **)((int)fVar7 + uVar6 * 8) = piVar4;
-          local_8 = (undefined4)(0xffffffff);
-        }
-        else {
-          if (*(undefined4 **)((int)fVar7 + 4 + uVar6 * 8) == local_20) {
-            *(int **)((int)fVar7 + 4 + uVar6 * 8) = piVar4;
-          }
-          local_8 = (undefined4)(0xffffffff);
-        }
-      }
-      param_2 = (int *)((int *)*param_2);
-    } while (param_2 != (int *)(param_3));
-  }
-  ExceptionList = (void *)(local_10);
-  return;
-}
-
-
 // Reference entry 111722c0; body size 90 bytes.
 #line 1 "ENTRY_111722c0"
 
@@ -18407,7 +18308,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111722c0(undefined4 param_2,int para
   }
   thunk_FUN_1113e560(param_2,"UPNPConnectionManager",iVar1,param_4,param_5);
   param_1[0xb] = param_3;
-  *param_1 = (undefined4)((uint)&Ext_SwfObjCM_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjCM);
   *(undefined1 *)(param_1 + 0xc) = 0;
   param_1[0xd] = 0;
   param_1[0xe] = 0;
@@ -18441,7 +18342,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11172330(char *param_2,char *param_3
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4 *)(param_1);
   thunk_FUN_111a4bc0(param_2,"UPNPProtocolInfoList");
-  *param_1 = (undefined4)((uint)&Ext_SwfObjProtocolInfoList_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjProtocolInfoList);
   param_1[6] = 0;
   param_1[7] = 0;
   param_1[8] = 0;
@@ -18707,7 +18608,7 @@ void __fastcall FUN_11172910(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjCM_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjCM);
   puVar1 = (undefined4 *)((undefined4 *)param_1[0xe]);
   local_8 = (undefined4)(0);
   if (puVar1 != (undefined4 *)0x0) {
@@ -18740,7 +18641,7 @@ void __fastcall FUN_111729d0(undefined4 *param_1)
   int iVar2;
   uint uVar3;
   
-  *param_1 = (undefined4)((uint)&Ext_SwfObjProtocolInfoList_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjProtocolInfoList);
   free((void *)param_1[5]);
   iVar1 = (int)(param_1[9]);
   if (iVar1 != 0) {
@@ -18787,65 +18688,6 @@ void __fastcall FUN_11172a60(int *param_1)
     thunk_FUN_11171150(*(undefined4 *)(iVar2 + 0xc),*(undefined4 *)(iVar2 + 0x10),&local_4);
   }
   return;
-}
-
-
-// Reference entry 11172b40; body size 320 bytes.
-#line 1 "ENTRY_11172b40"
-
-int __thiscall Recovered_Bulk::FUN_11172b40(int *param_2)
-{
-  float *param_1 = (float *)this;
-  int iVar1;
-  uint uVar2;
-  undefined4 uVar3;
-  void *pvVar4;
-  undefined4 *puVar5;
-  float fVar6;
-  float *local_20;
-  void *local_1c;
-  undefined4 local_18;
-  int local_14;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_117bc6a5);
-  local_10 = (void *)(ExceptionList);
-  uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  uVar3 = (undefined4)(thunk_FUN_101c3fc0(param_2));
-  thunk_FUN_111704f0(&local_18,param_2,uVar3);
-  if (local_14 == 0) {
-    if (param_1[2] == 2.5243547e-29) {
-                    
-      ((Stub_std *)("unordered_map/set too long"))->_Xlength_error();
-    }
-    local_20 = (float *)(param_1 + 1);
-    local_8 = (undefined4)(0);
-    local_1c = (void *)((void *)0x0);
-    pvVar4 = (void *)(operator_new(0x10));
-    iVar1 = (int)(*param_2);
-    *(int *)((int)pvVar4 + 8) = iVar1;
-    local_1c = (void *)(pvVar4);
-    if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
-      thunk_FUN_1123fce0((int *)(iVar1 + -0x10),uVar2);
-    }
-    *(undefined1 *)((int)pvVar4 + 0xc) = 0;
-    local_8 = (undefined4)(1);
-    fVar6 = (float)((float)((double)((int)param_1[2] + 1) +
-                   (double)(&DAT_11880fb0)[-((int)param_1[2] + 1 >> 0x1f)]) /
-            (float)((double)(int)param_1[7] + (double)(&DAT_11880fb0)[-((int)param_1[7] >> 0x1f)]));
-    if (*param_1 <= fVar6 && fVar6 != *param_1) {
-      thunk_FUN_11173870();
-      puVar5 = (undefined4 *)((undefined4 *)thunk_FUN_111704f0(&local_20,(int)pvVar4 + 8,uVar3));
-      local_18 = (undefined4)(*puVar5);
-    }
-    local_14 = (int)(thunk_FUN_11173720(uVar3,local_18,pvVar4));
-  }
-  ExceptionList = (void *)(local_10);
-  return (int)(local_14 + 0xc);
 }
 
 
@@ -18900,7 +18742,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11172e60(byte param_2)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjCM_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjCM);
   puVar1 = (undefined4 *)((undefined4 *)param_1[0xe]);
   local_8 = (undefined4)(0);
   if (puVar1 != (undefined4 *)0x0) {
@@ -18936,7 +18778,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11172f40(byte param_2)
   int iVar2;
   uint uVar3;
   
-  *param_1 = (undefined4)((uint)&Ext_SwfObjProtocolInfoList_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjProtocolInfoList);
   free((void *)param_1[5]);
   iVar1 = (int)(param_1[9]);
   if (iVar1 != 0) {
@@ -19234,7 +19076,7 @@ undefined4 * FUN_11174250(char *param_1,char *param_2)
   }
   local_14 = (undefined4 *)(puVar5);
   thunk_FUN_111a4bc0(param_1,"UPNPProtocolInfoList");
-  *puVar5 = (undefined4)((uint)&Ext_SwfObjProtocolInfoList_vftable);
+  *puVar5 = (undefined4)((uint)&ghidra_vftable_SwfObjProtocolInfoList);
   puVar5[6] = 0;
   puVar5[7] = 0;
   puVar5[8] = 0;
@@ -19701,7 +19543,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11175b90(undefined4 param_2,undefine
   param_1[3] = param_4;
   param_1[4] = param_5;
   param_1[0x32] = param_6;
-  *param_1 = (undefined4)((uint)&Ext_RTrackMetaDataCacheCB_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RTrackMetaDataCacheCB);
   param_1[5] = 0;
   param_1[6] = 0;
   param_1[7] = 0;
@@ -19730,7 +19572,7 @@ void __fastcall FUN_11175c30(undefined4 *param_1)
   uVar3 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   iVar1 = (int)(param_1[6]);
-  *param_1 = (undefined4)((uint)&Ext_RBrowseChildIterator_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RBrowseChildIterator);
   if (iVar1 != 0) {
     iVar2 = (int)(*(int *)param_1[1]);
     thunk_FUN_112a7f50(iVar2 + 0x1c,uVar3);
@@ -19761,7 +19603,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11175d20(byte param_2)
   ExceptionList = (void *)(&local_10);
   iVar1 = (int)(param_1[6]);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RBrowseChildIterator_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RBrowseChildIterator);
   if (iVar1 != 0) {
     iVar2 = (int)(*(int *)param_1[1]);
     thunk_FUN_112a7f50(iVar2 + 0x1c,uVar3);
@@ -19782,7 +19624,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11175d20(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_11175de0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RTrackMetaDataCacheCB_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RTrackMetaDataCacheCB);
   if (param_1[6] != 0) {
     *(int *)(param_1[2] + 8) = (param_1[0x32] * 4 - *(int *)(param_1[2] + 0xc)) + param_1[6];
   }
@@ -20106,7 +19948,7 @@ void __thiscall Recovered_Bulk::FUN_11176c80(undefined4 param_2,undefined4 param
   if (*(char *)(param_1 + 0xc4) == '\0') {
     if (9 < *(uint *)(param_1 + 0xc0)) {
       thunk_FUN_112af4e0("FlashTraceBrowse",1,
-                         "((Stub_RTrackMetaDataCacheCB *)(0))->handleRes(): too many \'res\'\n");
+                         "((RTrackMetaDataCacheCB *)(0))->handleRes(): too many \'res\'\n");
       return;
     }
     piVar2 = (int *)((int *)((*(uint *)(param_1 + 0xc0) + 2) * 0x10 + param_1));
@@ -21178,7 +21020,7 @@ void __stdcall FUN_11179a70(undefined4 param_1,int *param_2)
   while (cVar1 == '\0') {
     thunk_FUN_11179a70(param_1,param_2[2]);
     piVar2 = (int *)((int *)*param_2);
-    param_2[5] = (int)(uint)&Ext_RMSQuickSkip_vftable;
+    param_2[5] = (int)(uint)&ghidra_vftable_RMSQuickSkip;
     thunk_FUN_1148a50e(param_2,0x24);
     param_2 = (int *)(piVar2);
     cVar1 = (char)(*(char *)((int)piVar2 + 0xd));
@@ -22506,7 +22348,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1117ee60(int *param_2)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RPopup_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RPopup);
   iVar1 = (int)(*param_2);
   param_1[1] = iVar1;
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
@@ -22601,8 +22443,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1117f0f0(undefined4 param_2,int *par
   ExceptionList = (void *)(&local_10);
   thunk_FUN_11261e50(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   param_1[7] = param_2;
-  *param_1 = (undefined4)((uint)&Ext_RPresentationMapDownloadOp_vftable);
-  param_1[2] = (uint)&Ext_RPresentationMapDownloadOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RPresentationMapDownloadOp);
+  param_1[2] = (uint)&ghidra_vftable_RPresentationMapDownloadOp;
   local_8 = (undefined4)(0);
   iVar1 = (int)(*param_3);
   param_1[8] = iVar1;
@@ -22637,7 +22479,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1117f6f0(int *param_2,int *param_3)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RQualityBadge_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RQualityBadge);
   iVar1 = (int)(*param_2);
   param_1[1] = iVar1;
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
@@ -22914,6 +22756,98 @@ void __fastcall FUN_11180190(int *param_1)
 }
 
 
+// Reference entry 11180240; body size 81 bytes.
+#line 1 "ENTRY_11180240"
+
+/* Library Function - Multiple Matches With Different Base Names
+    public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct
+   std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned
+   int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct
+   std::greater<void> >(void_)
+    public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int>
+   >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_)
+    public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int>
+   >::~vector<unsigned int,class std::allocator<unsigned int> >(void_)
+    public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct
+   CHN *,class std::allocator<struct CHN *> >(void_)
+     7 names - too many to list
+   
+   Library: Visual Studio 2019 Release */
+
+void __fastcall FID_conflict__Tidy_11180240(int *param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  uint uVar3;
+  
+  iVar1 = (int)(*param_1);
+  if (iVar1 != 0) {
+    uVar3 = (uint)(param_1[2] - iVar1 & 0xfffffffc);
+    iVar2 = (int)(iVar1);
+    if (0xfff < uVar3) {
+      iVar2 = (int)(*(int *)(iVar1 + -4));
+      uVar3 = (uint)(uVar3 + 0x23);
+      if (0x1f < (iVar1 - iVar2) - 4U) {
+                    
+        _invalid_parameter_noinfo_noreturn();
+      }
+    }
+    thunk_FUN_1148a50e(iVar2,uVar3);
+    *param_1 = (int)(0);
+    param_1[1] = 0;
+    param_1[2] = 0;
+  }
+  return;
+}
+
+
+// Reference entry 111802b0; body size 81 bytes.
+#line 1 "ENTRY_111802b0"
+
+/* Library Function - Multiple Matches With Different Base Names
+    public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct
+   std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned
+   int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct
+   std::greater<void> >(void_)
+    public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int>
+   >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_)
+    public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int>
+   >::~vector<unsigned int,class std::allocator<unsigned int> >(void_)
+    public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct
+   CHN *,class std::allocator<struct CHN *> >(void_)
+     7 names - too many to list
+   
+   Library: Visual Studio 2019 Release */
+
+void __fastcall FID_conflict__Tidy_111802b0(int *param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  uint uVar3;
+  
+  iVar1 = (int)(*param_1);
+  if (iVar1 != 0) {
+    uVar3 = (uint)(param_1[2] - iVar1 & 0xfffffffc);
+    iVar2 = (int)(iVar1);
+    if (0xfff < uVar3) {
+      iVar2 = (int)(*(int *)(iVar1 + -4));
+      uVar3 = (uint)(uVar3 + 0x23);
+      if (0x1f < (iVar1 - iVar2) - 4U) {
+                    
+        _invalid_parameter_noinfo_noreturn();
+      }
+    }
+    thunk_FUN_1148a50e(iVar2,uVar3);
+    *param_1 = (int)(0);
+    param_1[1] = 0;
+    param_1[2] = 0;
+  }
+  return;
+}
+
+
 // Reference entry 11180320; body size 96 bytes.
 #line 1 "ENTRY_11180320"
 
@@ -23129,7 +23063,7 @@ void __fastcall FUN_11180720(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RPopup_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RPopup);
   iVar1 = (int)(param_1[9]);
   local_8 = (undefined4)(0);
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
@@ -23209,8 +23143,8 @@ void __fastcall FUN_11180920(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RPresentationMapDownloadOp_vftable);
-  param_1[2] = (uint)&Ext_RPresentationMapDownloadOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RPresentationMapDownloadOp);
+  param_1[2] = (uint)&ghidra_vftable_RPresentationMapDownloadOp;
   iVar1 = (int)(param_1[9]);
   local_8 = (undefined4)(0);
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
@@ -23256,7 +23190,7 @@ void __fastcall FUN_11180c30(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RQualityBadge_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RQualityBadge);
   iVar1 = (int)(param_1[2]);
   local_8 = (undefined4)(0);
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
@@ -23673,8 +23607,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11182190(byte param_2)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RPresentationMapDownloadOp_vftable);
-  param_1[2] = (uint)&Ext_RPresentationMapDownloadOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RPresentationMapDownloadOp);
+  param_1[2] = (uint)&ghidra_vftable_RPresentationMapDownloadOp;
   iVar1 = (int)(param_1[9]);
   local_8 = (undefined4)(0);
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
@@ -23723,7 +23657,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111822e0(byte param_2)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RQualityBadge_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RQualityBadge);
   iVar1 = (int)(param_1[2]);
   local_8 = (undefined4)(0);
   if ((iVar1 != 0) && (*(int *)(iVar1 + -0x10) < 0xffff)) {
@@ -23908,6 +23842,98 @@ void __thiscall Recovered_Bulk::FUN_11182920(int param_2,int param_3,int param_4
   *param_1 = (int)(param_2);
   param_1[1] = param_2 + param_3 * 8;
   param_1[2] = param_2 + param_4 * 8;
+  return;
+}
+
+
+// Reference entry 11184290; body size 81 bytes.
+#line 1 "ENTRY_11184290"
+
+/* Library Function - Multiple Matches With Different Base Names
+    public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct
+   std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned
+   int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct
+   std::greater<void> >(void_)
+    public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int>
+   >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_)
+    public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int>
+   >::~vector<unsigned int,class std::allocator<unsigned int> >(void_)
+    public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct
+   CHN *,class std::allocator<struct CHN *> >(void_)
+     7 names - too many to list
+   
+   Library: Visual Studio 2019 Release */
+
+void __fastcall FID_conflict__Tidy_11184290(int *param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  uint uVar3;
+  
+  iVar1 = (int)(*param_1);
+  if (iVar1 != 0) {
+    uVar3 = (uint)(param_1[2] - iVar1 & 0xfffffffc);
+    iVar2 = (int)(iVar1);
+    if (0xfff < uVar3) {
+      iVar2 = (int)(*(int *)(iVar1 + -4));
+      uVar3 = (uint)(uVar3 + 0x23);
+      if (0x1f < (iVar1 - iVar2) - 4U) {
+                    
+        _invalid_parameter_noinfo_noreturn();
+      }
+    }
+    thunk_FUN_1148a50e(iVar2,uVar3);
+    *param_1 = (int)(0);
+    param_1[1] = 0;
+    param_1[2] = 0;
+  }
+  return;
+}
+
+
+// Reference entry 11184300; body size 81 bytes.
+#line 1 "ENTRY_11184300"
+
+/* Library Function - Multiple Matches With Different Base Names
+    public: __thiscall std::priority_queue<unsigned int,class std::vector<unsigned int,struct
+   std::_Parallelism_allocator<unsigned int> >,struct std::greater<void> >::~priority_queue<unsigned
+   int,class std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >,struct
+   std::greater<void> >(void_)
+    public: __thiscall std::vector<unsigned int,struct std::_Parallelism_allocator<unsigned int>
+   >::~vector<unsigned int,struct std::_Parallelism_allocator<unsigned int> >(void_)
+    public: __thiscall std::vector<unsigned int,class std::allocator<unsigned int>
+   >::~vector<unsigned int,class std::allocator<unsigned int> >(void_)
+    public: __thiscall std::vector<struct CHN *,class std::allocator<struct CHN *> >::~vector<struct
+   CHN *,class std::allocator<struct CHN *> >(void_)
+     7 names - too many to list
+   
+   Library: Visual Studio 2019 Release */
+
+void __fastcall FID_conflict__Tidy_11184300(int *param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  uint uVar3;
+  
+  iVar1 = (int)(*param_1);
+  if (iVar1 != 0) {
+    uVar3 = (uint)(param_1[2] - iVar1 & 0xfffffffc);
+    iVar2 = (int)(iVar1);
+    if (0xfff < uVar3) {
+      iVar2 = (int)(*(int *)(iVar1 + -4));
+      uVar3 = (uint)(uVar3 + 0x23);
+      if (0x1f < (iVar1 - iVar2) - 4U) {
+                    
+        _invalid_parameter_noinfo_noreturn();
+      }
+    }
+    thunk_FUN_1148a50e(iVar2,uVar3);
+    *param_1 = (int)(0);
+    param_1[1] = 0;
+    param_1[2] = 0;
+  }
   return;
 }
 
@@ -26978,9 +27004,9 @@ void __fastcall FUN_1118de10(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RPresentationMapRequest_vftable);
-  param_1[2] = (uint)&Ext_RPresentationMapRequest_vftable;
-  param_1[7] = (uint)&Ext_RPresentationMapRequest_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RPresentationMapRequest);
+  param_1[2] = (uint)&ghidra_vftable_RPresentationMapRequest;
+  param_1[7] = (uint)&ghidra_vftable_RPresentationMapRequest;
   if ((FILE *)param_1[0x3025] != (FILE *)0x0) {
     fclose((FILE *)param_1[0x3025]);
     param_1[0x3025] = 0;
@@ -27055,7 +27081,7 @@ void __fastcall FUN_1118dfd0(undefined4 *param_1)
   uVar7 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   piVar1 = (int *)(param_1 + 2);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjPresentationMapDownloadMgr_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjPresentationMapDownloadMgr);
   puVar3 = (undefined4 *)((undefined4 *)*piVar1);
   puVar4 = (undefined4 *)((undefined4 *)*puVar3);
   while ((undefined4 *)(puVar4) != puVar3) {
@@ -27106,7 +27132,7 @@ void __fastcall FUN_1118dfd0(undefined4 *param_1)
   param_1[3] = 0;
   thunk_FUN_1118d4f0(piVar1,*(undefined4 *)(*piVar1 + 4));
   thunk_FUN_1148a50e(*piVar1,0x24);
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpCB_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
   thunk_FUN_11240850();
   ExceptionList = (void *)(local_10);
   return;
@@ -27193,9 +27219,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1118e4e0(byte param_2)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RPresentationMapRequest_vftable);
-  param_1[2] = (uint)&Ext_RPresentationMapRequest_vftable;
-  param_1[7] = (uint)&Ext_RPresentationMapRequest_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RPresentationMapRequest);
+  param_1[2] = (uint)&ghidra_vftable_RPresentationMapRequest;
+  param_1[7] = (uint)&ghidra_vftable_RPresentationMapRequest;
   if ((FILE *)param_1[0x3025] != (FILE *)0x0) {
     fclose((FILE *)param_1[0x3025]);
     param_1[0x3025] = 0;
@@ -27368,7 +27394,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1118f750(undefined4 param_2,int para
   }
   thunk_FUN_1113e560(param_2,"UPNPDeviceProperties",iVar1,param_4,param_5);
   param_1[0xb] = param_3;
-  *param_1 = (undefined4)((uint)&Ext_SwfObjDP_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjDP);
   return (undefined4 *)(param_1);
 }
 
@@ -27423,7 +27449,7 @@ undefined4 __fastcall FUN_1118fab0(int param_1)
     }
     else {
       thunk_FUN_111a4bc0(*(undefined4 *)(param_1 + 0xc),"Object");
-      *puVar3 = (undefined4)((uint)&Ext_SwfObjObject_vftable);
+      *puVar3 = (undefined4)((uint)&ghidra_vftable_SwfObjObject);
     }
     local_8 = (undefined4)(0xffffffff);
     sVar1 = (short)((**(code **)(**(int **)(param_1 + 0x2c) + 0x38))(local_14,&DAT_118bb268,uVar2));
@@ -27467,7 +27493,7 @@ void __fastcall FUN_1118fba0(int param_1)
     }
     else {
       thunk_FUN_111a4bc0(*(undefined4 *)(param_1 + 0xc),"Object");
-      *puVar3 = (undefined4)((uint)&Ext_SwfObjObject_vftable);
+      *puVar3 = (undefined4)((uint)&ghidra_vftable_SwfObjObject);
     }
     local_8 = (undefined4)(0xffffffff);
     sVar1 = (short)((**(code **)(**(int **)(param_1 + 0x2c) + 0x30))(local_30,0x19,&DAT_118bb268,uVar2));
@@ -27510,7 +27536,7 @@ undefined4 __fastcall FUN_1118fd30(int param_1)
     }
     else {
       thunk_FUN_111a4bc0(*(undefined4 *)(param_1 + 0xc),"Object");
-      *puVar3 = (undefined4)((uint)&Ext_SwfObjObject_vftable);
+      *puVar3 = (undefined4)((uint)&ghidra_vftable_SwfObjObject);
     }
     local_8 = (undefined4)(0xffffffff);
     sVar1 = (short)((**(code **)(**(int **)(param_1 + 0x2c) + 0x40))(&local_14,&DAT_118bb268,uVar2));
@@ -27676,7 +27702,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11190320(undefined4 param_2,int para
   thunk_FUN_1113e560(param_2,"UPNPRenderingControl",iVar1,param_4,param_5);
   param_1[0xb] = param_3;
   *(undefined2 *)(param_1 + 0xd) = 0xff;
-  *param_1 = (undefined4)((uint)&Ext_SwfObjRC_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjRC);
   param_1[0xc] = 0xffffffff;
   return (undefined4 *)(param_1);
 }
@@ -27947,7 +27973,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11191930(undefined4 param_2,undefine
   ExceptionList = (void *)(&local_10);
   thunk_FUN_110d9bc0(param_2,param_3);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjMSDevice_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjMSDevice);
   thunk_FUN_11234450(uVar1);
   param_1[0x70e] = 0;
   param_1[0x70f] = 0;
@@ -27974,7 +28000,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11191a90(undefined4 param_2,undefine
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   thunk_FUN_1114ee60(param_2,param_3,param_4);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjWMCCP_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjWMCCP);
   local_8 = (undefined4)(0);
   puVar1 = (undefined1 *)(&DAT_1186d2ee);
   if ((undefined1 *)param_1[6] != (undefined1 *)0x0) {
@@ -28005,7 +28031,7 @@ void __fastcall FUN_11191b90(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjMSDevice_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjMSDevice);
   if (param_1[0x70e] != 0) {
     thunk_FUN_1113c260(uVar2);
     puVar1 = (undefined4 *)((undefined4 *)param_1[0x70e]);
@@ -28106,7 +28132,7 @@ undefined4 * __fastcall FUN_11192080(int param_1)
   if (puVar2 != (undefined4 *)0x0) {
     iVar1 = (int)(*(int *)(param_1 + 0x28));
     thunk_FUN_1114ee60(*(undefined4 *)(param_1 + 0xc),param_1 + 0x18,iVar1);
-    *puVar2 = (undefined4)((uint)&Ext_SwfObjWMCCP_vftable);
+    *puVar2 = (undefined4)((uint)&ghidra_vftable_SwfObjWMCCP);
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
     if ((undefined1 *)puVar2[6] != (undefined1 *)0x0) {
@@ -28358,9 +28384,9 @@ void __fastcall FUN_111931a0(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjTrackRatingsModel_vftable);
-  param_1[5] = (uint)&Ext_SwfObjTrackRatingsModel_vftable;
-  param_1[6] = (uint)&Ext_SwfObjTrackRatingsModel_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjTrackRatingsModel);
+  param_1[5] = (uint)&ghidra_vftable_SwfObjTrackRatingsModel;
+  param_1[6] = (uint)&ghidra_vftable_SwfObjTrackRatingsModel;
   (**(code **)(*(int *)param_1[10] + 0x20))(uVar2);
   puVar1 = (undefined4 *)((undefined4 *)param_1[10]);
   if (puVar1 != (undefined4 *)0x0) {
@@ -28370,7 +28396,7 @@ void __fastcall FUN_111931a0(undefined4 *param_1)
     }
   }
   param_1[10] = 0;
-  param_1[0xb] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xb] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   puVar1 = (undefined4 *)((undefined4 *)param_1[10]);
   local_8 = (undefined4)(0);
@@ -28389,8 +28415,8 @@ void __fastcall FUN_111931a0(undefined4 *param_1)
       (**(code **)*puVar1)(1);
     }
   }
-  param_1[6] = (uint)&Ext_RTrackRatingsEventHandler_vftable;
-  param_1[5] = (uint)&Ext_RControlAIOOpCB_vftable;
+  param_1[6] = (uint)&ghidra_vftable_RTrackRatingsEventHandler;
+  param_1[5] = (uint)&ghidra_vftable_RControlAIOOpCB;
   thunk_FUN_11240850();
   thunk_FUN_111a4f00();
   ExceptionList = (void *)(local_10);
@@ -28415,9 +28441,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11193330(byte param_2)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjTrackRatingsModel_vftable);
-  param_1[5] = (uint)&Ext_SwfObjTrackRatingsModel_vftable;
-  param_1[6] = (uint)&Ext_SwfObjTrackRatingsModel_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjTrackRatingsModel);
+  param_1[5] = (uint)&ghidra_vftable_SwfObjTrackRatingsModel;
+  param_1[6] = (uint)&ghidra_vftable_SwfObjTrackRatingsModel;
   local_8 = (undefined4)(0);
   (**(code **)(*(int *)param_1[10] + 0x20))(uVar2);
   puVar1 = (undefined4 *)((undefined4 *)param_1[10]);
@@ -28428,7 +28454,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11193330(byte param_2)
     }
   }
   param_1[10] = 0;
-  param_1[0xb] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xb] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   puVar1 = (undefined4 *)((undefined4 *)param_1[10]);
   *(unsigned char *)((char *)&local_8 + 0) = 1;
@@ -28447,8 +28473,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11193330(byte param_2)
       (**(code **)*puVar1)(1);
     }
   }
-  param_1[6] = (uint)&Ext_RTrackRatingsEventHandler_vftable;
-  param_1[5] = (uint)&Ext_RControlAIOOpCB_vftable;
+  param_1[6] = (uint)&ghidra_vftable_RTrackRatingsEventHandler;
+  param_1[5] = (uint)&ghidra_vftable_RControlAIOOpCB;
   thunk_FUN_11240850();
   thunk_FUN_111a4f00();
   if ((param_2 & 1) != 0) {
@@ -28629,7 +28655,7 @@ undefined4 __fastcall FUN_11193840(int param_1)
   else {
     local_1c = (undefined4 *)(puVar2);
     thunk_FUN_111a4bc0(*(undefined4 *)(param_1 + 0xc),"Array");
-    *puVar2 = (undefined4)((uint)&Ext_SwfObjArray_vftable);
+    *puVar2 = (undefined4)((uint)&ghidra_vftable_SwfObjArray);
     puVar2[5] = 0;
     puVar2[6] = 0;
     puVar2[7] = 0;
@@ -28651,7 +28677,7 @@ undefined4 __fastcall FUN_11193840(int param_1)
         }
         else {
           thunk_FUN_111a4bc0(*(undefined4 *)(param_1 + 0xc),"Object");
-          *puVar2 = (undefined4)((uint)&Ext_SwfObjObject_vftable);
+          *puVar2 = (undefined4)((uint)&ghidra_vftable_SwfObjObject);
         }
         *(unsigned char *)((char *)&local_8 + 0) = 0;
         local_18 = (int)(*(int *)(local_18 + 0xc));
@@ -28946,7 +28972,7 @@ void __thiscall Recovered_Bulk::FUN_11194aa0(undefined4 param_2,undefined4 param
     }
     else {
       thunk_FUN_111a4bc0(*(undefined4 *)(param_1 + 4),"Array");
-      *puVar3 = (undefined4)((uint)&Ext_SwfObjArray_vftable);
+      *puVar3 = (undefined4)((uint)&ghidra_vftable_SwfObjArray);
       puVar3[5] = 0;
       puVar3[6] = 0;
       puVar3[7] = 0;
@@ -28996,14 +29022,14 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11194e60(undefined4 param_2,undefine
   param_1[7] = param_2;
   param_1[8] = param_3;
   param_1[9] = param_4;
-  *param_1 = (undefined4)((uint)&Ext_RRestoreAVTStateAIOOp_vftable);
-  param_1[2] = (uint)&Ext_RRestoreAVTStateAIOOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RRestoreAVTStateAIOOp);
+  param_1[2] = (uint)&ghidra_vftable_RRestoreAVTStateAIOOp;
   param_1[0xb] = 0;
   param_1[0xc] = 0;
-  param_1[10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0xe] = 0;
   param_1[0xf] = 0;
-  param_1[0xd] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xd] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x12] = param_5;
   param_1[0x10] = 0;
   param_1[0x11] = 0;
@@ -29017,21 +29043,21 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11194e60(undefined4 param_2,undefine
 void __fastcall FUN_111954c0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RRestoreOneAVTStateAIOOp_vftable);
-  param_1[2] = (uint)&Ext_RRestoreOneAVTStateAIOOp_vftable;
-  param_1[0x1b] = (uint)&Ext_RControlAIOOpRef_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RRestoreOneAVTStateAIOOp);
+  param_1[2] = (uint)&ghidra_vftable_RRestoreOneAVTStateAIOOp;
+  param_1[0x1b] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x18] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x18] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x15] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x15] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x12] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x12] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0xf] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xf] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0xc] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xc] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[9] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[9] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
   return;
@@ -29056,24 +29082,24 @@ void __fastcall FUN_11195560(undefined4 *param_1)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   pvVar1 = (void *)((void *)param_1[9]);
-  *param_1 = (undefined4)((uint)&Ext_RSaveAVTStateAIOOp_vftable);
-  param_1[2] = (uint)&Ext_RSaveAVTStateAIOOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSaveAVTStateAIOOp);
+  param_1[2] = (uint)&ghidra_vftable_RSaveAVTStateAIOOp;
   if (pvVar1 != (void *)0x0) {
     local_8 = (undefined4)(0);
     _eh_vector_destructor_iterator_(pvVar1,0x143c,*(uint *)((int)pvVar1 + -4),thunk_FUN_110f9750);
     thunk_FUN_1148b596((int *)((int)pvVar1 + -4),*(int *)((int)pvVar1 + -4) * 0x143c + 4);
   }
-  param_1[0x19] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x19] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0(uVar2);
-  param_1[0x16] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x16] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x13] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x13] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0xd] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xd] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
   ExceptionList = (void *)(local_10);
@@ -29120,11 +29146,11 @@ int * __thiscall Recovered_Bulk::FUN_111957b0(uint param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111959b0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RRestoreAVTStateAIOOp_vftable);
-  param_1[2] = (uint)&Ext_RRestoreAVTStateAIOOp_vftable;
-  param_1[0xd] = (uint)&Ext_RControlAIOOpRef_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RRestoreAVTStateAIOOp);
+  param_1[2] = (uint)&ghidra_vftable_RRestoreAVTStateAIOOp;
+  param_1[0xd] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
   if ((param_2 & 1) != 0) {
@@ -29140,21 +29166,21 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111959b0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_11195a10(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RRestoreOneAVTStateAIOOp_vftable);
-  param_1[2] = (uint)&Ext_RRestoreOneAVTStateAIOOp_vftable;
-  param_1[0x1b] = (uint)&Ext_RControlAIOOpRef_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RRestoreOneAVTStateAIOOp);
+  param_1[2] = (uint)&ghidra_vftable_RRestoreOneAVTStateAIOOp;
+  param_1[0x1b] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x18] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x18] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x15] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x15] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x12] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x12] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0xf] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xf] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0xc] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xc] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[9] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[9] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
   if ((param_2 & 1) != 0) {
@@ -29182,24 +29208,24 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11195ad0(byte param_2)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   pvVar1 = (void *)((void *)param_1[9]);
-  *param_1 = (undefined4)((uint)&Ext_RSaveAVTStateAIOOp_vftable);
-  param_1[2] = (uint)&Ext_RSaveAVTStateAIOOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSaveAVTStateAIOOp);
+  param_1[2] = (uint)&ghidra_vftable_RSaveAVTStateAIOOp;
   if (pvVar1 != (void *)0x0) {
     local_8 = (undefined4)(0);
     _eh_vector_destructor_iterator_(pvVar1,0x143c,*(uint *)((int)pvVar1 + -4),thunk_FUN_110f9750);
     thunk_FUN_1148b596((int *)((int)pvVar1 + -4),*(int *)((int)pvVar1 + -4) * 0x143c + 4);
   }
-  param_1[0x19] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x19] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0(uVar2);
-  param_1[0x16] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x16] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x13] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x13] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0x10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0xd] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xd] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
   if ((param_2 & 1) != 0) {
@@ -29451,9 +29477,9 @@ undefined4 __fastcall FUN_11197350(int param_1)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:AVTransport:1","GetTransportSettings"
                            ,uVar4,uVar5,uVar6,uVar7,uVar9);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpAVTGetTransportSettingsAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpAVTGetTransportSettingsAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpAVTGetTransportSettingsAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpAVTGetTransportSettingsAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpAVTGetTransportSettingsAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpAVTGetTransportSettingsAIOOp;
         *(undefined1 *)(puVar2 + 0x35f4) = 0;
         *(undefined1 *)(puVar2 + 0x36f4) = 0;
       }
@@ -29523,9 +29549,9 @@ undefined4 __fastcall FUN_11197550(int param_1)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:AVTransport:1","GetTransportInfo",
                            uVar4,uVar5,uVar6,uVar7,uVar9);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpAVTGetTransportInfoAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpAVTGetTransportInfoAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpAVTGetTransportInfoAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpAVTGetTransportInfoAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpAVTGetTransportInfoAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpAVTGetTransportInfoAIOOp;
         *(undefined1 *)(puVar2 + 0x35f4) = 0;
         *(undefined1 *)(puVar2 + 0x36f4) = 0;
         *(undefined1 *)(puVar2 + 0x37f4) = 0;
@@ -29600,9 +29626,9 @@ undefined4 __fastcall FUN_11197780(int param_1)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:AVTransport:1","GetPositionInfo",
                            uVar4,uVar5,uVar6,uVar7,uVar9);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpAVTGetPositionInfoAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpAVTGetPositionInfoAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpAVTGetPositionInfoAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpAVTGetPositionInfoAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpAVTGetPositionInfoAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpAVTGetPositionInfoAIOOp;
         puVar2[0x35f4] = 0;
         puVar2[0x3df5] = 0;
         puVar2[0x3df6] = 0;
@@ -29699,9 +29725,9 @@ undefined4 __fastcall FUN_11197aa0(int param_1)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:AVTransport:1","GetCrossfadeMode",
                            uVar4,uVar5,uVar6,uVar7,uVar8);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpAVTGetCrossfadeModeAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpAVTGetCrossfadeModeAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpAVTGetCrossfadeModeAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpAVTGetCrossfadeModeAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpAVTGetCrossfadeModeAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpAVTGetCrossfadeModeAIOOp;
         *(undefined1 *)(puVar2 + 0x35f4) = 0;
       }
       local_8 = (undefined4)(0xffffffff);
@@ -29763,9 +29789,9 @@ undefined4 __fastcall FUN_11197ff0(int param_1)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:AVTransport:1","SetPlayMode",uVar4,
                            uVar6,uVar7,uVar8,uVar9);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpAVTSetPlayModeAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpAVTSetPlayModeAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpAVTSetPlayModeAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpAVTSetPlayModeAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpAVTSetPlayModeAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpAVTSetPlayModeAIOOp;
       }
       local_8 = (undefined4)(0xffffffff);
       iVar1 = (int)(*(int *)(param_1 + 0x20));
@@ -29827,9 +29853,9 @@ undefined4 __fastcall FUN_111981c0(int param_1)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:AVTransport:1",&DAT_11884fb0,uVar4,
                            uVar6,uVar7,uVar8,uVar9);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpAVTPlayAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpAVTPlayAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpAVTPlayAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpAVTPlayAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpAVTPlayAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpAVTPlayAIOOp;
       }
       local_8 = (undefined4)(0xffffffff);
       thunk_FUN_1124ffa0("InstanceID",0);
@@ -29893,9 +29919,9 @@ undefined4 __fastcall FUN_11198390(int param_1)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:AVTransport:1",&DAT_11884fc0,uVar4,
                            uVar7,uVar8,uVar9,uVar10);
-        *puVar2 = (undefined4)((uint)&Ext_RUpnpAVTSeekAIOOp_vftable);
-        puVar2[0x18] = (uint)&Ext_RUpnpAVTSeekAIOOp_vftable;
-        puVar2[0x11b] = (uint)&Ext_RUpnpAVTSeekAIOOp_vftable;
+        *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpAVTSeekAIOOp);
+        puVar2[0x18] = (uint)&ghidra_vftable_RUpnpAVTSeekAIOOp;
+        puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpAVTSeekAIOOp;
       }
       local_14 = (undefined1 *)((undefined1 *)0x0);
       local_8 = (undefined4)(1);
@@ -29977,9 +30003,9 @@ undefined4 __fastcall FUN_11198610(int param_1)
                           (2000,2000,0,0));
         thunk_FUN_111c0760(uVar2,"urn:schemas-upnp-org:service:AVTransport:1","SetAVTransportURI",
                            uVar3,uVar5,uVar6,uVar7,uVar8);
-        *local_18 = (undefined4)((uint)&Ext_RUpnpAVTSetAVTransportURIAIOOp_vftable);
-        local_18[0x18] = (uint)&Ext_RUpnpAVTSetAVTransportURIAIOOp_vftable;
-        local_18[0x11b] = (uint)&Ext_RUpnpAVTSetAVTransportURIAIOOp_vftable;
+        *local_18 = (undefined4)((uint)&ghidra_vftable_RUpnpAVTSetAVTransportURIAIOOp);
+        local_18[0x18] = (uint)&ghidra_vftable_RUpnpAVTSetAVTransportURIAIOOp;
+        local_18[0x11b] = (uint)&ghidra_vftable_RUpnpAVTSetAVTransportURIAIOOp;
       }
       local_8 = (undefined4)(0xffffffff);
       iVar1 = (int)(*(int *)(param_1 + 0x20));
@@ -30046,9 +30072,9 @@ undefined4 __fastcall FUN_11198810(int param_1)
                             (2000,2000,0,0));
           thunk_FUN_111c0760(uVar3,"urn:schemas-upnp-org:service:AVTransport:1","SetCrossfadeMode",
                              uVar4,uVar5,uVar6,uVar7,uVar8);
-          *puVar2 = (undefined4)((uint)&Ext_RUpnpAVTSetCrossfadeModeAIOOp_vftable);
-          puVar2[0x18] = (uint)&Ext_RUpnpAVTSetCrossfadeModeAIOOp_vftable;
-          puVar2[0x11b] = (uint)&Ext_RUpnpAVTSetCrossfadeModeAIOOp_vftable;
+          *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpAVTSetCrossfadeModeAIOOp);
+          puVar2[0x18] = (uint)&ghidra_vftable_RUpnpAVTSetCrossfadeModeAIOOp;
+          puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpAVTSetCrossfadeModeAIOOp;
         }
         local_8 = (undefined4)(0xffffffff);
         local_14 = (undefined4)(((uint)((int3)((uint)iVar1 >> 8)) << 8 | (uint)(*(undefined1 *)(*(int *)(param_1 + 0x20) + 0x1430))));
@@ -30301,7 +30327,7 @@ uint FUN_11198ff0(undefined4 param_1,int param_2,undefined4 param_3,uint param_4
     else {
       local_20 = (undefined4 *)(puVar3);
       thunk_FUN_111a4bc0(param_3,"Array");
-      *puVar3 = (undefined4)((uint)&Ext_SwfObjArray_vftable);
+      *puVar3 = (undefined4)((uint)&ghidra_vftable_SwfObjArray);
       puVar3[5] = 0;
       puVar3[6] = 0;
       puVar3[7] = 0;
@@ -30428,15 +30454,15 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11199730(undefined4 param_2,undefine
   local_8 = (undefined4)(0);
   thunk_FUN_11202480();
   puVar1 = (undefined4 *)(param_1 + 8);
-  *puVar1 = (undefined4)((uint)&Ext_RCDDynamicPropertyCB_vftable);
-  *param_1 = (undefined4)((uint)&Ext_RGetExtendedMetadataAsSwfObjOp_vftable);
-  param_1[2] = (uint)&Ext_RGetExtendedMetadataAsSwfObjOp_vftable;
-  param_1[7] = (uint)&Ext_RGetExtendedMetadataAsSwfObjOp_vftable;
-  *puVar1 = (undefined4)((uint)&Ext_RGetExtendedMetadataAsSwfObjOp_vftable);
+  *puVar1 = (undefined4)((uint)&ghidra_vftable_RCDDynamicPropertyCB);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RGetExtendedMetadataAsSwfObjOp);
+  param_1[2] = (uint)&ghidra_vftable_RGetExtendedMetadataAsSwfObjOp;
+  param_1[7] = (uint)&ghidra_vftable_RGetExtendedMetadataAsSwfObjOp;
+  *puVar1 = (undefined4)((uint)&ghidra_vftable_RGetExtendedMetadataAsSwfObjOp);
   param_1[9] = 0;
   param_1[0xb] = 0;
   param_1[0xc] = 0;
-  param_1[10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   *(undefined1 *)(param_1 + 0xd) = 0;
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(4)));
   sVar2 = (short)(thunk_FUN_111ddcd0(&local_14,param_3,param_1 + 7,puVar1));
@@ -30533,10 +30559,10 @@ void __fastcall FUN_11199b90(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RGetExtendedMetadataAsSwfObjOp_vftable);
-  param_1[2] = (uint)&Ext_RGetExtendedMetadataAsSwfObjOp_vftable;
-  param_1[7] = (uint)&Ext_RGetExtendedMetadataAsSwfObjOp_vftable;
-  param_1[8] = (uint)&Ext_RGetExtendedMetadataAsSwfObjOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RGetExtendedMetadataAsSwfObjOp);
+  param_1[2] = (uint)&ghidra_vftable_RGetExtendedMetadataAsSwfObjOp;
+  param_1[7] = (uint)&ghidra_vftable_RGetExtendedMetadataAsSwfObjOp;
+  param_1[8] = (uint)&ghidra_vftable_RGetExtendedMetadataAsSwfObjOp;
   piVar4 = (int *)((int *)param_1[0xb]);
   if (piVar4 != (int *)0x0) {
     if (param_1[0xc] != 0) {
@@ -30551,7 +30577,7 @@ void __fastcall FUN_11199b90(undefined4 *param_1)
     param_1[0xc] = 0;
   }
   local_8 = (undefined4)(0);
-  param_1[10] = (uint)&Ext_RControlAIOOpRefBase_vftable;
+  param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRefBase;
   if ((int *)param_1[0xb] != (int *)0x0) {
     if (param_1[0xc] != 0) {
       (**(code **)(*(int *)param_1[0xb] + 0x10))();
@@ -30568,7 +30594,7 @@ void __fastcall FUN_11199b90(undefined4 *param_1)
   if ((puVar1 != (undefined4 *)0x0) && (iVar3 = thunk_FUN_1123fcd0(puVar1 + 1), iVar3 == 0)) {
     (**(code **)*puVar1)(1);
   }
-  param_1[8] = (uint)&Ext_RCDDynamicPropertyCB_vftable;
+  param_1[8] = (uint)&ghidra_vftable_RCDDynamicPropertyCB;
   thunk_FUN_11202570();
   thunk_FUN_11261f10();
   ExceptionList = (void *)(local_10);
@@ -30594,7 +30620,7 @@ void __fastcall FUN_11199d40(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RHouseholdListenerBase_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHouseholdListenerBase);
   thunk_FUN_111a03a0(uVar2);
   puVar1 = (undefined4 *)((undefined4 *)param_1[1]);
   local_8 = (undefined4)(0);
@@ -30604,7 +30630,7 @@ void __fastcall FUN_11199d40(undefined4 *param_1)
       (**(code **)*puVar1)(1);
     }
   }
-  *param_1 = (undefined4)((uint)&Ext_RHouseholdListenerCB_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHouseholdListenerCB);
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -30630,10 +30656,10 @@ void __fastcall FUN_11199df0(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RTrackRatingsModelImpl_vftable);
-  param_1[2] = (uint)&Ext_RTrackRatingsModelImpl_vftable;
-  param_1[3] = (uint)&Ext_RTrackRatingsModelImpl_vftable;
-  param_1[4] = (uint)&Ext_RTrackRatingsModelImpl_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RTrackRatingsModelImpl);
+  param_1[2] = (uint)&ghidra_vftable_RTrackRatingsModelImpl;
+  param_1[3] = (uint)&ghidra_vftable_RTrackRatingsModelImpl;
+  param_1[4] = (uint)&ghidra_vftable_RTrackRatingsModelImpl;
   thunk_FUN_1106b1c0(param_1 + 2,uVar2);
   uVar2 = (uint)(0);
   if (param_1[0xd] != 0) {
@@ -30659,7 +30685,7 @@ void __fastcall FUN_11199df0(undefined4 *param_1)
       free((void *)(iVar5 + -0x10));
     }
   }
-  param_1[0x11] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x11] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   iVar5 = (int)(param_1[0xb]);
   local_8 = (undefined4)(1);
@@ -30695,7 +30721,7 @@ void __fastcall FUN_11199df0(undefined4 *param_1)
     }
   }
   local_8 = (undefined4)(4);
-  param_1[4] = (uint)&Ext_RHouseholdListenerBase_vftable;
+  param_1[4] = (uint)&ghidra_vftable_RHouseholdListenerBase;
   thunk_FUN_111a03a0();
   puVar1 = (undefined4 *)((undefined4 *)param_1[5]);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(5)));
@@ -30705,11 +30731,11 @@ void __fastcall FUN_11199df0(undefined4 *param_1)
       (**(code **)*puVar1)(1);
     }
   }
-  param_1[4] = (uint)&Ext_RHouseholdListenerCB_vftable;
-  param_1[3] = (uint)&Ext_RControlAIOOpCB_vftable;
+  param_1[4] = (uint)&ghidra_vftable_RHouseholdListenerCB;
+  param_1[3] = (uint)&ghidra_vftable_RControlAIOOpCB;
   thunk_FUN_11240850();
-  param_1[2] = (uint)&Ext_RITQHandler_vftable;
-  *param_1 = (undefined4)((uint)&Ext_RefCountBase_vftable);
+  param_1[2] = (uint)&ghidra_vftable_RITQHandler;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RefCountBase);
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -30733,7 +30759,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1119a120(byte param_2)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RHouseholdListenerBase_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHouseholdListenerBase);
   thunk_FUN_111a03a0(uVar2);
   puVar1 = (undefined4 *)((undefined4 *)param_1[1]);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
@@ -30743,7 +30769,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1119a120(byte param_2)
       (**(code **)*puVar1)(1);
     }
   }
-  *param_1 = (undefined4)((uint)&Ext_RHouseholdListenerCB_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHouseholdListenerCB);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,8);
   }
@@ -31166,7 +31192,7 @@ void __fastcall FUN_1119ff90(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjHouseholdListenerProxy_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjHouseholdListenerProxy);
   if (*(char *)(param_1 + 7) != '\0') {
     thunk_FUN_11095e00(param_1,uVar1);
     thunk_FUN_11096350(param_1);
@@ -31195,7 +31221,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111a0040(byte param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjHouseholdListenerProxy_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjHouseholdListenerProxy);
   if (*(char *)(param_1 + 7) != '\0') {
     thunk_FUN_11095e00(param_1,uVar1);
     thunk_FUN_11096350(param_1);
@@ -31254,7 +31280,7 @@ undefined4 * FUN_111a01a0(undefined4 param_1,undefined4 param_2)
   if (puVar1 != (undefined4 *)0x0) {
     thunk_FUN_111a4bc0(0,"SwfObjHouseholdListenerProxy");
     puVar1[5] = param_1;
-    *puVar1 = (undefined4)((uint)&Ext_SwfObjHouseholdListenerProxy_vftable);
+    *puVar1 = (undefined4)((uint)&ghidra_vftable_SwfObjHouseholdListenerProxy);
     puVar1[6] = param_2;
     *(undefined1 *)(puVar1 + 7) = 0;
     ExceptionList = (void *)(local_10);
@@ -31293,7 +31319,7 @@ void __fastcall FUN_111a0250(int param_1)
     }
     else {
       thunk_FUN_111a4bc0(0,"SwfObjHouseholdListenerProxy");
-      *puVar3 = (undefined4)((uint)&Ext_SwfObjHouseholdListenerProxy_vftable);
+      *puVar3 = (undefined4)((uint)&ghidra_vftable_SwfObjHouseholdListenerProxy);
       puVar3[5] = param_1;
       puVar3[6] = uVar2;
       *(undefined1 *)(puVar3 + 7) = 0;
@@ -32521,7 +32547,7 @@ void __thiscall Recovered_Bulk::FUN_111a2ed0(undefined4 param_2,int *param_3)
     }
     else {
       thunk_FUN_111a4bc0(param_2,"String");
-      *puVar3 = (undefined4)((uint)&Ext_SwfObjString_vftable);
+      *puVar3 = (undefined4)((uint)&ghidra_vftable_SwfObjString);
       puVar3[5] = 0;
     }
     local_8 = (undefined4)(0xffffffff);
@@ -33150,7 +33176,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111a4d30(int param_2)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjObjectIter_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjObjectIter);
   param_1[1] = 0;
   local_8 = (undefined4)(1);
   param_1[2] = *(undefined4 *)(-(uint)(param_2 != 0) & param_2 + 0x10U);
@@ -33213,7 +33239,7 @@ void __fastcall FUN_111a4f00(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_SwfObj_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObj);
   puVar4 = (undefined1 *)(&DAT_1186d2ee);
   if ((undefined1 *)param_1[2] != (undefined1 *)0x0) {
     puVar4 = (undefined1 *)((undefined1 *)param_1[2]);
@@ -33232,7 +33258,7 @@ void __fastcall FUN_111a4f00(undefined4 *param_1)
       free((void *)(iVar1 + -0x10));
     }
   }
-  *param_1 = (undefined4)((uint)&Ext_RefCountBase_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RefCountBase);
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -33255,7 +33281,7 @@ void __fastcall FUN_111a5000(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjObjectIter_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjObjectIter);
   puVar1 = (undefined4 *)((undefined4 *)param_1[1]);
   local_8 = (undefined4)(0);
   if (puVar1 != (undefined4 *)0x0) {
@@ -33264,7 +33290,7 @@ void __fastcall FUN_111a5000(undefined4 *param_1)
       (**(code **)*puVar1)(1);
     }
   }
-  *param_1 = (undefined4)((uint)&Ext_SwfObjIter_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjIter);
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -33321,7 +33347,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111a51c0(byte param_2)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjObjectIter_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjObjectIter);
   puVar1 = (undefined4 *)((undefined4 *)param_1[1]);
   local_8 = (undefined4)(0);
   if (puVar1 != (undefined4 *)0x0) {
@@ -33330,7 +33356,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111a51c0(byte param_2)
       (**(code **)*puVar1)(1);
     }
   }
-  *param_1 = (undefined4)((uint)&Ext_SwfObjIter_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjIter);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }
@@ -33764,7 +33790,7 @@ undefined4 * __fastcall FUN_111a6170(int param_1)
   ExceptionList = (void *)(&local_10);
   puVar2 = (undefined4 *)(operator_new(0xc));
   if (puVar2 != (undefined4 *)0x0) {
-    *puVar2 = (undefined4)((uint)&Ext_SwfObjObjectIter_vftable);
+    *puVar2 = (undefined4)((uint)&ghidra_vftable_SwfObjObjectIter);
     puVar2[1] = 0;
     local_8 = (undefined4)(2);
     puVar2[2] = *(undefined4 *)(-(uint)(param_1 != 0) & param_1 + 0x10U);
@@ -34411,7 +34437,7 @@ undefined4 * FUN_111a75d0(undefined4 param_1)
   puVar1 = (undefined4 *)(operator_new(0x20));
   if (puVar1 != (undefined4 *)0x0) {
     thunk_FUN_111a4bc0(param_1,"Array");
-    *puVar1 = (undefined4)((uint)&Ext_SwfObjArray_vftable);
+    *puVar1 = (undefined4)((uint)&ghidra_vftable_SwfObjArray);
     puVar1[5] = 0;
     puVar1[6] = 0;
     puVar1[7] = 0;
@@ -34814,7 +34840,7 @@ void __fastcall FUN_111a8370(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_SwfObjArray_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjArray);
   uVar5 = (uint)(0);
   uVar3 = (uint)((int)(param_1[6] - param_1[5]) >> 2);
   if (uVar3 != 0) {
@@ -35076,7 +35102,7 @@ undefined4 * FUN_111a8b80(undefined4 param_1,int param_2,undefined4 param_3)
   }
   else {
     thunk_FUN_111a4bc0(param_1,"Array");
-    *puVar2 = (undefined4)((uint)&Ext_SwfObjArray_vftable);
+    *puVar2 = (undefined4)((uint)&ghidra_vftable_SwfObjArray);
     puVar2[5] = 0;
     puVar2[6] = 0;
     puVar2[7] = 0;
@@ -35130,7 +35156,7 @@ undefined4 * FUN_111a8c90(undefined4 param_1,int param_2)
   }
   else {
     thunk_FUN_111a4bc0(param_1,"String");
-    *puVar3 = (undefined4)((uint)&Ext_SwfObjString_vftable);
+    *puVar3 = (undefined4)((uint)&ghidra_vftable_SwfObjString);
     puVar3[5] = 0;
   }
   local_8 = (undefined4)(0xffffffff);
@@ -35293,7 +35319,7 @@ undefined4 * __fastcall FUN_111a9240(undefined4 param_1)
   local_8 = (undefined4)(0);
   if (puVar1 != (undefined4 *)0x0) {
     thunk_FUN_111a4d30(param_1);
-    *puVar1 = (undefined4)((uint)&Ext_SwfObjArrayIter_vftable);
+    *puVar1 = (undefined4)((uint)&ghidra_vftable_SwfObjArrayIter);
     puVar1[3] = 0;
     ExceptionList = (void *)(local_10);
     return (undefined4 *)(puVar1);
@@ -35793,7 +35819,7 @@ undefined4 __thiscall Recovered_Bulk::FUN_111aa740(undefined4 param_2,undefined4
   else {
     local_14 = (undefined4 *)(puVar3);
     thunk_FUN_111a4bc0(*(undefined4 *)(param_1 + 0xc),"Array");
-    *puVar3 = (undefined4)((uint)&Ext_SwfObjArray_vftable);
+    *puVar3 = (undefined4)((uint)&ghidra_vftable_SwfObjArray);
     puVar3[5] = 0;
     puVar3[6] = 0;
     puVar3[7] = 0;
@@ -39660,7 +39686,7 @@ void FUN_111bc530(int param_1,int param_2,int param_3,int *param_4,int param_5)
 undefined4 * __fastcall FUN_111bcc10(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_Netstart2DtlsClient_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_Netstart2DtlsClient);
   param_1[2] = 0;
   param_1[3] = 0;
   param_1[4] = 0;
@@ -39690,7 +39716,7 @@ void __fastcall FUN_111bcc90(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_Netstart2DtlsClient_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_Netstart2DtlsClient);
   thunk_FUN_111bd390(0);
   if (param_1[3] != 0) {
     thunk_FUN_113bf660(param_1[3],uVar1);
@@ -39722,7 +39748,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111bcd40(byte param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_Netstart2DtlsClient_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_Netstart2DtlsClient);
   thunk_FUN_111bd390(0);
   if (param_1[3] != 0) {
     thunk_FUN_113bf660(param_1[3],uVar1);
@@ -40637,7 +40663,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111c05a0(undefined4 param_2,undefine
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   thunk_FUN_11240560(param_5,param_6);
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpImpl_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpImpl);
   param_1[0x15] = 0;
   param_1[0x16] = 0xffffffff;
   *(undefined2 *)(param_1 + 0x17) = 1000;
@@ -40646,8 +40672,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111c05a0(undefined4 param_2,undefine
   *(undefined1 *)((int)param_1 + 0x4482) = param_7;
   param_1[0x1121] = param_2;
   param_1[0x1122] = param_3;
-  *param_1 = (undefined4)((uint)&Ext_RHttpBaseNoRedirectAIOOp_vftable);
-  param_1[0x18] = (uint)&Ext_RHttpBaseNoRedirectAIOOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHttpBaseNoRedirectAIOOp);
+  param_1[0x18] = (uint)&ghidra_vftable_RHttpBaseNoRedirectAIOOp;
   param_1[0x91e] = 0;
   param_1[0x91f] = 0;
   *(undefined1 *)((int)param_1 + 0x4481) = 0;
@@ -40673,9 +40699,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111c06e0(undefined4 param_2)
   param_1[0x15] = 0;
   param_1[0x16] = 0xffffffff;
   *(undefined2 *)(param_1 + 0x17) = 1000;
-  param_1[0x18] = (uint)&Ext_RAsyncNullIOSessionCB_vftable;
-  *param_1 = (undefined4)((uint)&Ext_RNullAsyncIOOperation_vftable);
-  param_1[0x18] = (uint)&Ext_RNullAsyncIOOperation_vftable;
+  param_1[0x18] = (uint)&ghidra_vftable_RAsyncNullIOSessionCB;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RNullAsyncIOOperation);
+  param_1[0x18] = (uint)&ghidra_vftable_RNullAsyncIOOperation;
   thunk_FUN_1145c930(param_1 + 0x13,0);
   thunk_FUN_1145ad70(param_1 + 0x13,param_2);
   return (undefined4 *)(param_1);
@@ -40700,14 +40726,14 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111c0900(undefined4 param_2,undefine
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   thunk_FUN_11240560(param_5,param_6);
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpImpl_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpImpl);
   param_1[0x15] = 0;
   param_1[0x16] = 0xffffffff;
   *(undefined2 *)(param_1 + 0x17) = 1000;
   local_8 = (undefined4)(0);
   thunk_FUN_11235970(param_2,param_3,param_4,param_7);
-  *param_1 = (undefined4)((uint)&Ext_RXMLRPCAsyncIOOperation_vftable);
-  param_1[0x18] = (uint)&Ext_RXMLRPCAsyncIOOperation_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RXMLRPCAsyncIOOperation);
+  param_1[0x18] = (uint)&ghidra_vftable_RXMLRPCAsyncIOOperation;
   param_1[0x28ee] = 0;
   param_1[0x28f0] = 0;
   param_1[0x28ef] = 0;
@@ -40724,9 +40750,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111c0900(undefined4 param_2,undefine
 void __fastcall FUN_111c0af0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RUpnpAsyncIOOperation_vftable);
-  param_1[0x18] = (uint)&Ext_RUpnpAsyncIOOperation_vftable;
-  param_1[0x11b] = (uint)&Ext_RUpnpAsyncIOOperation_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
+  param_1[0x18] = (uint)&ghidra_vftable_RUpnpAsyncIOOperation;
+  param_1[0x11b] = (uint)&ghidra_vftable_RUpnpAsyncIOOperation;
   if ((undefined4 *)param_1[0x2a5e] != (undefined4 *)0x0) {
     (*(code *)**(undefined4 **)param_1[0x2a5e])(1);
   }
@@ -40736,7 +40762,7 @@ void __fastcall FUN_111c0af0(undefined4 *param_1)
   thunk_FUN_1124f060();
   thunk_FUN_1125acd0();
   thunk_FUN_1124a3f0();
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpImpl_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpImpl);
   thunk_FUN_112407b0();
   return;
 }
@@ -40748,13 +40774,13 @@ void __fastcall FUN_111c0af0(undefined4 *param_1)
 undefined4 * __thiscall Recovered_Bulk::FUN_111c0d00(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RHttpBaseNoRedirectAIOOp_vftable);
-  param_1[0x18] = (uint)&Ext_RHttpBaseNoRedirectAIOOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHttpBaseNoRedirectAIOOp);
+  param_1[0x18] = (uint)&ghidra_vftable_RHttpBaseNoRedirectAIOOp;
   if ((undefined4 *)param_1[0x91f] != (undefined4 *)0x0) {
     (*(code *)**(undefined4 **)param_1[0x91f])(1);
   }
   thunk_FUN_1124a3f0();
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpImpl_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpImpl);
   thunk_FUN_112407b0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x4490);
@@ -40769,9 +40795,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111c0d00(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111c0db0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RUpnpAsyncIOOperation_vftable);
-  param_1[0x18] = (uint)&Ext_RUpnpAsyncIOOperation_vftable;
-  param_1[0x11b] = (uint)&Ext_RUpnpAsyncIOOperation_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpAsyncIOOperation);
+  param_1[0x18] = (uint)&ghidra_vftable_RUpnpAsyncIOOperation;
+  param_1[0x11b] = (uint)&ghidra_vftable_RUpnpAsyncIOOperation;
   if ((undefined4 *)param_1[0x2a5e] != (undefined4 *)0x0) {
     (*(code *)**(undefined4 **)param_1[0x2a5e])(1);
   }
@@ -40781,7 +40807,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111c0db0(byte param_2)
   thunk_FUN_1124f060();
   thunk_FUN_1125acd0();
   thunk_FUN_1124a3f0();
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpImpl_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpImpl);
   thunk_FUN_112407b0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xd7d0);
@@ -40796,13 +40822,13 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111c0db0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111c0e70(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RXMLRPCAsyncIOOperation_vftable);
-  param_1[0x18] = (uint)&Ext_RXMLRPCAsyncIOOperation_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RXMLRPCAsyncIOOperation);
+  param_1[0x18] = (uint)&ghidra_vftable_RXMLRPCAsyncIOOperation;
   if ((undefined4 *)param_1[0x28ee] != (undefined4 *)0x0) {
     (*(code *)**(undefined4 **)param_1[0x28ee])(1);
   }
   thunk_FUN_11235fb0();
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpImpl_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpImpl);
   thunk_FUN_112407b0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xa3c4);
@@ -40992,8 +41018,8 @@ void __thiscall Recovered_Bulk::FUN_111c13f0(undefined4 *param_2)
   char cVar2;
   
   if (*(int *)(param_1 + 8) != 0) {
-    __RTDynamicCast(*(int *)(param_1 + 8),0,&Ext_RAsyncIOSession_RTTI_Type_Descriptor,
-                    &Ext_RAsyncSocketIOSession_RTTI_Type_Descriptor,0);
+    __RTDynamicCast(*(int *)(param_1 + 8),0,&RAsyncIOSession::RTTI_Type_Descriptor,
+                    &RAsyncSocketIOSession::RTTI_Type_Descriptor,0);
     cVar2 = (char)(thunk_FUN_1124ae40());
     if (cVar2 != '\0') {
       uVar1 = (undefined4)(*(undefined4 *)(param_1 + 0x30));
@@ -41515,9 +41541,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111c3530(undefined4 param_2,undefine
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   thunk_FUN_1124a2d0(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  param_1[0x103] = (uint)&Ext_RClient_HeaderAccumulator_vftable;
-  *param_1 = (undefined4)((uint)&Ext_RControlHTTPRequest_vftable);
-  param_1[0x103] = (uint)&Ext_RControlHTTPRequest_vftable;
+  param_1[0x103] = (uint)&ghidra_vftable_RClient_HeaderAccumulator;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlHTTPRequest);
+  param_1[0x103] = (uint)&ghidra_vftable_RControlHTTPRequest;
   *(undefined4 *)((int)param_1 + 0xa2a) = 0;
   *(undefined4 *)((int)param_1 + 0xa2e) = 0;
   *(undefined4 *)((int)param_1 + 0xa32) = 0;
@@ -41571,13 +41597,13 @@ void __thiscall Recovered_Bulk::FUN_111c36a0(undefined4 param_2,undefined4 param
   local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_38 = (undefined4 *)((undefined4 *)0x0);
-  *param_1 = (undefined4)((uint)&Ext_RSocketTxn_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSocketTxn);
   param_1[2] = 0;
   local_40 = (undefined4 *)(param_1);
   local_3c = (undefined4 *)(param_1);
   thunk_FUN_11286490(local_14);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RControlSocketTxn_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlSocketTxn);
   thunk_FUN_1124e7a0(param_2,param_3,0);
   *(unsigned char *)((char *)&local_8 + 0) = 1;
   thunk_FUN_1124e4f0(param_2,param_3,1,0,0);
@@ -41671,7 +41697,7 @@ void __fastcall FUN_111c3b30(undefined4 *param_1)
 {
   int iVar1;
   
-  *param_1 = (undefined4)((uint)&Ext_RControlSocketTxn_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlSocketTxn);
   iVar1 = (int)(param_1[0x9eb]);
   if (iVar1 != 0) {
     thunk_FUN_1124d790();
@@ -41793,7 +41819,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111c3f90(byte param_2)
   undefined4 *param_1 = (undefined4 *)this;
   int iVar1;
   
-  *param_1 = (undefined4)((uint)&Ext_RControlSocketTxn_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlSocketTxn);
   iVar1 = (int)(param_1[0x9eb]);
   if (iVar1 != 0) {
     thunk_FUN_1124d790();
@@ -42649,14 +42675,14 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111c9920(int param_2)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpRefBase_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   local_8 = (undefined4)(0);
   param_1[1] = param_2;
   if (param_2 != 0) {
     thunk_FUN_1123fce0(param_2 + 4,uVar1);
   }
   param_1[2] = 0;
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpRef_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
   ExceptionList = (void *)(local_10);
   return (undefined4 *)(param_1);
 }
@@ -42677,14 +42703,14 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111c99b0(int param_2)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpRefBase_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   local_8 = (undefined4)(0);
   param_1[1] = param_2;
   if (param_2 != 0) {
     thunk_FUN_1123fce0(param_2 + 4,uVar1);
   }
   param_1[2] = 0;
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpRef_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
   ExceptionList = (void *)(local_10);
   return (undefined4 *)(param_1);
 }
@@ -42705,14 +42731,14 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111c9a40(int param_2)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpRefBase_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   local_8 = (undefined4)(0);
   param_1[1] = param_2;
   if (param_2 != 0) {
     thunk_FUN_1123fce0(param_2 + 4,uVar1);
   }
   param_1[2] = 0;
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpRef_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
   ExceptionList = (void *)(local_10);
   return (undefined4 *)(param_1);
 }
@@ -42733,14 +42759,14 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111c9ad0(int param_2)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpRefBase_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRefBase);
   local_8 = (undefined4)(0);
   param_1[1] = param_2;
   if (param_2 != 0) {
     thunk_FUN_1123fce0(param_2 + 4,uVar1);
   }
   param_1[2] = 0;
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpRef_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpRef);
   ExceptionList = (void *)(local_10);
   return (undefined4 *)(param_1);
 }
@@ -42848,18 +42874,18 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111ca810(undefined4 param_2,undefine
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   thunk_FUN_11240650(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  param_1[1] = (uint)&Ext_RCPBrowseOperation_vftable;
+  param_1[1] = (uint)&ghidra_vftable_RCPBrowseOperation;
   param_1[2] = 0;
   param_1[3] = 0;
-  param_1[4] = (uint)&Ext_RSvcManifestDownloadCompletionCB_vftable;
+  param_1[4] = (uint)&ghidra_vftable_RSvcManifestDownloadCompletionCB;
   param_1[5] = param_2;
   param_1[6] = param_5;
   param_1[7] = param_3;
   *(unsigned char *)((char *)&local_8 + 0) = 1;
   *(unsigned short *)((char *)&local_8 + 1) = 0;
-  *param_1 = (undefined4)((uint)&Ext_RCPSonosBrowseOperation_vftable);
-  param_1[1] = (uint)&Ext_RCPSonosBrowseOperation_vftable;
-  param_1[4] = (uint)&Ext_RCPSonosBrowseOperation_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCPSonosBrowseOperation);
+  param_1[1] = (uint)&ghidra_vftable_RCPSonosBrowseOperation;
+  param_1[4] = (uint)&ghidra_vftable_RCPSonosBrowseOperation;
   param_1[8] = param_4;
   *(undefined1 *)(param_1 + 10) = 0;
   thunk_FUN_1124e200();
@@ -42916,13 +42942,13 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111ca9f0(int param_2,int param_3,int
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   thunk_FUN_11261e50(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  param_1[7] = (uint)&Ext_RSvcManifestDownloadCompletionCB_vftable;
+  param_1[7] = (uint)&ghidra_vftable_RSvcManifestDownloadCompletionCB;
   param_1[9] = param_6;
-  *param_1 = (undefined4)((uint)&Ext_RCPSonosGenericOperation_vftable);
-  param_1[2] = (uint)&Ext_RCPSonosGenericOperation_vftable;
-  param_1[7] = (uint)&Ext_RCPSonosGenericOperation_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCPSonosGenericOperation);
+  param_1[2] = (uint)&ghidra_vftable_RCPSonosGenericOperation;
+  param_1[7] = (uint)&ghidra_vftable_RCPSonosGenericOperation;
   param_1[8] = 0;
-  param_1[10] = (uint)&Ext_RControlAIOOpRefBase_vftable;
+  param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRefBase;
   *(unsigned char *)((char *)&local_8 + 0) = 1;
   *(unsigned short *)((char *)&local_8 + 1) = 0;
   param_1[0xb] = param_2;
@@ -42930,31 +42956,31 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111ca9f0(int param_2,int param_3,int
     thunk_FUN_1123fce0(param_2 + 4);
   }
   param_1[0xc] = 0;
-  param_1[10] = (uint)&Ext_RControlAIOOpRef_vftable;
-  param_1[0xd] = (uint)&Ext_RControlAIOOpRefBase_vftable;
+  param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRef;
+  param_1[0xd] = (uint)&ghidra_vftable_RControlAIOOpRefBase;
   *(unsigned char *)((char *)&local_8 + 0) = 3;
   param_1[0xe] = param_3;
   if (param_3 != 0) {
     thunk_FUN_1123fce0(param_3 + 4);
   }
   param_1[0xf] = 0;
-  param_1[0xd] = (uint)&Ext_RControlAIOOpRef_vftable;
-  param_1[0x10] = (uint)&Ext_RControlAIOOpRefBase_vftable;
+  param_1[0xd] = (uint)&ghidra_vftable_RControlAIOOpRef;
+  param_1[0x10] = (uint)&ghidra_vftable_RControlAIOOpRefBase;
   *(unsigned char *)((char *)&local_8 + 0) = 5;
   param_1[0x11] = param_4;
   if (param_4 != 0) {
     thunk_FUN_1123fce0(param_4 + 4);
   }
   param_1[0x12] = 0;
-  param_1[0x10] = (uint)&Ext_RControlAIOOpRef_vftable;
-  param_1[0x13] = (uint)&Ext_RControlAIOOpRefBase_vftable;
+  param_1[0x10] = (uint)&ghidra_vftable_RControlAIOOpRef;
+  param_1[0x13] = (uint)&ghidra_vftable_RControlAIOOpRefBase;
   *(unsigned char *)((char *)&local_8 + 0) = 7;
   param_1[0x14] = param_5;
   if (param_5 != 0) {
     thunk_FUN_1123fce0(param_5 + 4);
   }
   param_1[0x15] = 0;
-  param_1[0x13] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x13] = (uint)&ghidra_vftable_RControlAIOOpRef;
   *(unsigned char *)((char *)&local_8 + 0) = 8;
   *(undefined1 *)(param_1 + 0x16) = 0;
   param_1[0x18] = 0;
@@ -42988,14 +43014,14 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111cabe0(int param_2,undefined4 para
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RGetAllPrefixLocationsCB_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RGetAllPrefixLocationsCB);
   local_8 = (undefined4)(0);
   thunk_FUN_111ca9f0(param_2,param_3,param_4,param_5,param_6);
-  param_1[1] = (uint)&Ext_RCPSonosGetAllPrefixLocationsOperation_vftable;
+  param_1[1] = (uint)&ghidra_vftable_RCPSonosGetAllPrefixLocationsOperation;
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
-  *param_1 = (undefined4)((uint)&Ext_RCPSonosGetAllPrefixLocationsOperation_vftable);
-  param_1[3] = (uint)&Ext_RCPSonosGetAllPrefixLocationsOperation_vftable;
-  param_1[8] = (uint)&Ext_RCPSonosGetAllPrefixLocationsOperation_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCPSonosGetAllPrefixLocationsOperation);
+  param_1[3] = (uint)&ghidra_vftable_RCPSonosGetAllPrefixLocationsOperation;
+  param_1[8] = (uint)&ghidra_vftable_RCPSonosGetAllPrefixLocationsOperation;
   param_1[0x1a] = param_2;
   param_1[0x1b] = param_3;
   thunk_FUN_1123fce0(param_2 + 4,uVar1);
@@ -43020,14 +43046,14 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111cadf0(int param_2,undefined4 para
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RGetAllPrefixLocationsCB_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RGetAllPrefixLocationsCB);
   local_8 = (undefined4)(0);
   thunk_FUN_11261e50(uVar1);
   param_1[9] = param_3;
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
-  *param_1 = (undefined4)((uint)&Ext_RGetAllPrefixLocationsAIOOpBase_vftable);
-  param_1[1] = (uint)&Ext_RGetAllPrefixLocationsAIOOpBase_vftable;
-  param_1[3] = (uint)&Ext_RGetAllPrefixLocationsAIOOpBase_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RGetAllPrefixLocationsAIOOpBase);
+  param_1[1] = (uint)&ghidra_vftable_RGetAllPrefixLocationsAIOOpBase;
+  param_1[3] = (uint)&ghidra_vftable_RGetAllPrefixLocationsAIOOpBase;
   param_1[8] = param_2;
   thunk_FUN_1123fce0(param_2 + 4);
   ExceptionList = (void *)(local_10);
@@ -43118,7 +43144,7 @@ void __thiscall Recovered_Bulk::FUN_111cc370(undefined4 param_2,undefined4 param
   param_1[1] = param_4;
   param_1[2] = param_3;
   param_1[3] = param_2;
-  *param_1 = (undefined4)((uint)&Ext_RSonosContentProviderImpl_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosContentProviderImpl);
   local_38 = (undefined4 *)(param_1);
   local_30 = (undefined4 *)(param_1);
   thunk_FUN_1124d7e0(param_1 + 4,local_14);
@@ -43195,7 +43221,7 @@ void __thiscall Recovered_Bulk::FUN_111cc600(undefined4 param_2,undefined4 param
   param_1[1] = param_4;
   param_1[2] = param_3;
   param_1[3] = param_2;
-  *param_1 = (undefined4)((uint)&Ext_RSonosContentProviderImpl_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosContentProviderImpl);
   local_38 = (undefined4 *)(param_1);
   local_30 = (undefined4 *)(param_1);
   thunk_FUN_1124d7e0(param_1 + 4,local_14);
@@ -43236,7 +43262,7 @@ void __thiscall Recovered_Bulk::FUN_111cc600(undefined4 param_2,undefined4 param
   if (cVar3 != '\0') {
     thunk_FUN_112a8010(&DAT_122e8d1c);
   }
-  *param_1 = (undefined4)((uint)&Ext_RSonosContentProviderV11_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosContentProviderV11);
   ExceptionList = (void *)(local_10);
   thunk_FUN_1148ac28();
   return;
@@ -43269,9 +43295,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111cdc10(undefined4 param_2,undefine
   uVar3 = (undefined4)(thunk_FUN_11283280(param_1 + 0x35f4,0x80));
   thunk_FUN_111c0760(uVar3,"http://www.sonos.com/Services/1.1","getDeviceAuthToken",0,10000,5000,1,
                      param_1 + 0x475e);
-  *param_1 = (undefined4)((uint)&Ext_RSonosGetDeviceAuthTokenOp_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosGetDeviceAuthTokenOp_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosGetDeviceAuthTokenOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosGetDeviceAuthTokenOp);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosGetDeviceAuthTokenOp;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosGetDeviceAuthTokenOp;
   local_8 = (undefined4)(0);
   *(undefined1 *)(param_1 + 0x3a6e) = 0;
   *(undefined1 *)((int)param_1 + 0xe9d1) = 0;
@@ -43286,7 +43312,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111cdc10(undefined4 param_2,undefine
   *(unsigned char *)((char *)&local_8 + 0) = 4;
   thunk_FUN_1124e200();
   *(undefined1 *)(param_1 + 0x4068) = 0;
-  param_1[0x475e] = (uint)&Ext_RSonosCPFaultHandler_vftable;
+  param_1[0x475e] = (uint)&ghidra_vftable_RSonosCPFaultHandler;
   param_1[0x475f] = 0;
   *(undefined1 *)(param_1 + 0x4760) = 0;
   *(undefined1 *)(param_1 + 0x4768) = 0;
@@ -43374,9 +43400,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111ce5a0(undefined4 param_2,undefine
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   thunk_FUN_111d1d90(param_2,"getExtendedMetadataText",param_3,20000,10000,1,param_1 + 0x421d);
-  *param_1 = (undefined4)((uint)&Ext_RSonosGetExtendedMetadataTextOp_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosGetExtendedMetadataTextOp_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosGetExtendedMetadataTextOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosGetExtendedMetadataTextOp);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosGetExtendedMetadataTextOp;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosGetExtendedMetadataTextOp;
   local_8 = (undefined4)(0);
   param_1[0x4642] = 0;
   *(undefined1 *)(param_1 + 0x4644) = 0;
@@ -43385,7 +43411,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111ce5a0(undefined4 param_2,undefine
   puVar4 = (undefined4 *)(param_1 + 0x46f1);
   thunk_FUN_111d0010(param_2);
   *(unsigned char *)((char *)&local_8 + 0) = 1;
-  *puVar4 = (undefined4)((uint)&Ext_RSonosGetExtendedMetadataTextParam_vftable);
+  *puVar4 = (undefined4)((uint)&ghidra_vftable_RSonosGetExtendedMetadataTextParam);
   param_1[0x4c15] = param_6;
   thunk_FUN_11234190(uVar1);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
@@ -43423,7 +43449,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111ce780(undefined4 param_2,undefine
   ExceptionList = (void *)(&local_10);
   thunk_FUN_111d0010(param_2);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RSonosGetExtendedMetadataTextParam_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosGetExtendedMetadataTextParam);
   param_1[0x524] = param_3;
   thunk_FUN_11234190(uVar1);
   ExceptionList = (void *)(local_10);
@@ -43458,9 +43484,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111ce800(undefined4 param_2,undefine
   thunk_FUN_111c0760(uVar3,"http://www.sonos.com/Services/1.1","getDeviceLinkCode",0,10000,5000,1,
                      param_1 + 0x4554);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RSonosGetLinkCodeOp_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosGetLinkCodeOp_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosGetLinkCodeOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosGetLinkCodeOp);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosGetLinkCodeOp;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosGetLinkCodeOp;
   thunk_FUN_1124eaa0(uVar2);
   *(unsigned char *)((char *)&local_8 + 0) = 1;
   thunk_FUN_1124e950("http://www.sonos.com/Services/1.1","credentials");
@@ -43469,7 +43495,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111ce800(undefined4 param_2,undefine
   *(unsigned char *)((char *)&local_8 + 0) = 3;
   thunk_FUN_1124e200();
   *(undefined1 *)(param_1 + 0x3e5e) = 0;
-  param_1[0x4554] = (uint)&Ext_RSonosCPFaultHandler_vftable;
+  param_1[0x4554] = (uint)&ghidra_vftable_RSonosCPFaultHandler;
   param_1[0x4555] = 0;
   *(undefined1 *)(param_1 + 0x4556) = 0;
   *(undefined1 *)(param_1 + 0x455e) = 0;
@@ -43541,16 +43567,16 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111ceb70(undefined4 param_2,int para
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   thunk_FUN_111d1d90(param_2,"getMediaMetadata",param_3,20000,10000,1,param_1 + 0x421d);
-  *param_1 = (undefined4)((uint)&Ext_RSonosGetMediaMetadataOp_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosGetMediaMetadataOp_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosGetMediaMetadataOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosGetMediaMetadataOp);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosGetMediaMetadataOp;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosGetMediaMetadataOp;
   local_8 = (undefined4)(0);
   param_1[0x4642] = 0;
   *(undefined1 *)(param_1 + 0x4644) = 0;
   param_1[0x46e7] = 0;
   thunk_FUN_111e7a30(param_5);
   thunk_FUN_111d0010(param_2);
-  param_1[0x46e8] = (uint)&Ext_RSonosPositionInformationParam_vftable;
+  param_1[0x46e8] = (uint)&ghidra_vftable_RSonosPositionInformationParam;
   param_1[0x4c0c] = param_4;
   *(undefined1 *)(param_1 + 0x4c0d) = 0;
   *(undefined1 *)((int)param_1 + 0x13135) = 0;
@@ -43603,9 +43629,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111ced50(undefined4 param_2,int para
     iVar1 = (int)(param_12);
   }
   thunk_FUN_111d1d90(param_2,"getMetadata",param_3,iVar1,iVar3,1,param_1 + 0x421d);
-  *param_1 = (undefined4)((uint)&Ext_RSonosGetMetadataOp_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosGetMetadataOp_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosGetMetadataOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosGetMetadataOp);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosGetMetadataOp;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosGetMetadataOp;
   local_8 = (undefined4)(0);
   param_1[0x4642] = 0;
   *(undefined1 *)(param_1 + 0x4644) = 0;
@@ -43613,7 +43639,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111ced50(undefined4 param_2,int para
   thunk_FUN_111e7a30(param_5);
   puVar5 = (undefined4 *)(param_1 + 0x46e8);
   thunk_FUN_111d0010(param_2);
-  *puVar5 = (undefined4)((uint)&Ext_RSonosPositionInformationParam_vftable);
+  *puVar5 = (undefined4)((uint)&ghidra_vftable_RSonosPositionInformationParam);
   param_1[0x4c0c] = param_4;
   *(undefined1 *)(param_1 + 0x4c0d) = 0;
   *(undefined1 *)((int)param_1 + 0x13135) = 0;
@@ -43697,13 +43723,13 @@ void __thiscall Recovered_Bulk::FUN_111cf5c0(undefined4 param_2,undefined4 param
   thunk_FUN_11261e50(local_8);
   local_2a4 = (undefined4)(0);
   thunk_FUN_11202480();
-  *param_1 = (undefined4)((uint)&Ext_RSonosGetObjIDsForTrackAIOOp_vftable);
-  param_1[2] = (uint)&Ext_RSonosGetObjIDsForTrackAIOOp_vftable;
-  param_1[7] = (uint)&Ext_RSonosGetObjIDsForTrackAIOOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosGetObjIDsForTrackAIOOp);
+  param_1[2] = (uint)&ghidra_vftable_RSonosGetObjIDsForTrackAIOOp;
+  param_1[7] = (uint)&ghidra_vftable_RSonosGetObjIDsForTrackAIOOp;
   *(undefined1 *)((int)param_1 + 0x323) = 0;
   param_1[0xca] = 0;
   param_1[0xcb] = 0;
-  param_1[0xc9] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xc9] = (uint)&ghidra_vftable_RControlAIOOpRef;
   *(unsigned char *)((char *)&local_2a4 + 0) = 2;
   *(undefined1 *)((int)param_1 + 0x121) = 0;
   *(undefined1 *)(param_1 + 8) = 0;
@@ -43799,7 +43825,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111cfa80(int param_2)
   thunk_FUN_111c0760(&DAT_122e8b78,"urn:schemas-upnp-org:service:MusicServices:1","GetSessionId",
                      &DAT_122e8cf8,40000,20000,1,param_1 + 0x3655);
   *(undefined1 *)((int)param_1 + 0xd951) = 0;
-  param_1[0x3655] = (uint)&Ext_RSonosCPFaultHandler_vftable;
+  param_1[0x3655] = (uint)&ghidra_vftable_RSonosCPFaultHandler;
   param_1[0x3656] = 0;
   *(undefined1 *)(param_1 + 0x3657) = 0;
   *(undefined1 *)(param_1 + 0x365f) = 0;
@@ -43809,9 +43835,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111cfa80(int param_2)
   param_1[0x3a77] = 0;
   *(undefined1 *)(param_1 + 0x3a78) = 0;
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RSonosGetUserIdOpV11_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosGetUserIdOpV11_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosGetUserIdOpV11_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosGetUserIdOpV11);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosGetUserIdOpV11;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosGetUserIdOpV11;
   thunk_FUN_1124ffa0("ServiceId",0);
   thunk_FUN_1124f350(*(undefined4 *)(param_2 + 0x165c));
   piVar2 = (int *)((int *)thunk_FUN_1124ffa0("Username",1));
@@ -43856,7 +43882,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111cff00(undefined4 param_2,undefine
   undefined1 uVar2;
   
   thunk_FUN_111d0010(param_2);
-  *param_1 = (undefined4)((uint)&Ext_RSonosMediaMetadataParam_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosMediaMetadataParam);
   *(undefined4 *)((int)param_1 + 0x533d) = 0x1010001;
   *(undefined2 *)((int)param_1 + 0x5341) = 0;
   *(undefined1 *)((int)param_1 + 0x5343) = 1;
@@ -43901,7 +43927,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d0010(undefined4 param_2)
   ExceptionList = (void *)(&local_10);
   thunk_FUN_1124dd60(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RSonosParamRX_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosParamRX);
   *(undefined2 *)((int)param_1 + 0x4a) = 0;
   thunk_FUN_1124dee0();
   pcVar2 = (char *)((char *)(param_1 + 0x21));
@@ -43935,9 +43961,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d04a0(undefined4 param_2,undefine
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   thunk_FUN_111ca9f0(param_2,param_3,param_4,param_5,param_6);
-  *param_1 = (undefined4)((uint)&Ext_RSonosRateItemOp_vftable);
-  param_1[2] = (uint)&Ext_RSonosRateItemOp_vftable;
-  param_1[7] = (uint)&Ext_RSonosRateItemOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosRateItemOp);
+  param_1[2] = (uint)&ghidra_vftable_RSonosRateItemOp;
+  param_1[7] = (uint)&ghidra_vftable_RSonosRateItemOp;
   local_8 = (undefined4)(0);
   thunk_FUN_111f4d20(param_1 + 0x19,(int)param_1 + 0x65,0x101);
   thunk_FUN_111f4d20(param_1 + 0x19,(int)param_1 + 0x65,0x101);
@@ -43964,10 +43990,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d09c0(int param_2,int param_3,und
   ExceptionList = (void *)(&local_10);
   thunk_FUN_11261e50(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   param_1[8] = param_4;
-  *param_1 = (undefined4)((uint)&Ext_RSonosRefreshAuthTokenOp_vftable);
-  param_1[2] = (uint)&Ext_RSonosRefreshAuthTokenOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosRefreshAuthTokenOp);
+  param_1[2] = (uint)&ghidra_vftable_RSonosRefreshAuthTokenOp;
   param_1[7] = 0;
-  param_1[9] = (uint)&Ext_RControlAIOOpRefBase_vftable;
+  param_1[9] = (uint)&ghidra_vftable_RControlAIOOpRefBase;
   *(unsigned char *)((char *)&local_8 + 0) = 1;
   *(unsigned short *)((char *)&local_8 + 1) = 0;
   param_1[10] = param_2;
@@ -43975,15 +44001,15 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d09c0(int param_2,int param_3,und
     thunk_FUN_1123fce0(param_2 + 4);
   }
   param_1[0xb] = 0;
-  param_1[9] = (uint)&Ext_RControlAIOOpRef_vftable;
-  param_1[0xc] = (uint)&Ext_RControlAIOOpRefBase_vftable;
+  param_1[9] = (uint)&ghidra_vftable_RControlAIOOpRef;
+  param_1[0xc] = (uint)&ghidra_vftable_RControlAIOOpRefBase;
   *(unsigned char *)((char *)&local_8 + 0) = 3;
   param_1[0xd] = param_3;
   if (param_3 != 0) {
     thunk_FUN_1123fce0(param_3 + 4);
   }
   param_1[0xe] = 0;
-  param_1[0xc] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xc] = (uint)&ghidra_vftable_RControlAIOOpRef;
   *(unsigned char *)((char *)&local_8 + 0) = 4;
   *(undefined1 *)(param_1 + 0xf) = 0;
   pvVar1 = (void *)(operator_new(0x988));
@@ -44017,17 +44043,17 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d0e10(int param_2,undefined4 para
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   thunk_FUN_11261e50(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  *param_1 = (undefined4)((uint)&Ext_RSonosRefreshSessionOp_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosRefreshSessionOp);
   param_1[7] = param_2 << 8 | 7;
   param_1[8] = param_3;
-  param_1[2] = (uint)&Ext_RSonosRefreshSessionOp_vftable;
+  param_1[2] = (uint)&ghidra_vftable_RSonosRefreshSessionOp;
   param_1[9] = param_4;
   param_1[0xb] = 0;
   param_1[0xc] = 0;
-  param_1[10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0xe] = 0;
   param_1[0xf] = 0;
-  param_1[0xd] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xd] = (uint)&ghidra_vftable_RControlAIOOpRef;
   *(undefined2 *)(param_1 + 0x10) = 0x100;
   local_8 = (undefined4)(2);
   if ((int *)param_1[0xb] != (int *)0x0) {
@@ -44083,7 +44109,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d0f90(undefined4 param_2,undefine
   ExceptionList = (void *)(&local_10);
   thunk_FUN_111d0010(param_2);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RSonosRelatedActionsParam_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosRelatedActionsParam);
   param_1[0x524] = param_3;
   param_1[0x525] = 0;
   thunk_FUN_1125ac90((undefined1 *)((int)param_1 + 0x496a),0x1c41);
@@ -44131,9 +44157,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d1d90(undefined4 param_2,undefine
   thunk_FUN_111c0760(uVar3,param_2,param_3,0,param_5,param_6,param_7,param_8);
   local_8 = (undefined4)(0);
   param_1[0x3636] = param_8;
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
   param_1[0x3637] = param_4;
   thunk_FUN_1124e950(param_2,"credentials");
   *(unsigned char *)((char *)&local_8 + 0) = 1;
@@ -44143,7 +44169,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d1d90(undefined4 param_2,undefine
   *(undefined1 *)(param_1 + 0x3ac4) = 0;
   param_1[0x41fb] = *(undefined4 *)(param_4 + 0x165c);
   param_1[0x41fc] = *(undefined4 *)(param_4 + 0x1518);
-  param_1[0x421d] = (uint)&Ext_RSonosCPFaultHandler_vftable;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSonosCPFaultHandler;
   param_1[0x421e] = 0;
   *(undefined1 *)(param_1 + 0x421f) = 0;
   *(undefined1 *)(param_1 + 0x4227) = 0;
@@ -44185,9 +44211,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d1fb0(undefined4 param_2,int para
   ExceptionList = (void *)(&local_10);
   thunk_FUN_111d1d90(param_2,"search",param_3,10000,10000,1,param_1 + 0x421d);
   param_1[0x4642] = param_6;
-  *param_1 = (undefined4)((uint)&Ext_RSonosSearchOp_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSearchOp_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSearchOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSearchOp);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSearchOp;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSearchOp;
   local_8 = (undefined4)(0);
   param_1[0x4643] = 0;
   *(undefined1 *)(param_1 + 0x4645) = 0;
@@ -44195,7 +44221,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d1fb0(undefined4 param_2,int para
   thunk_FUN_111e7a30(param_5);
   puVar3 = (undefined4 *)(param_1 + 0x46e9);
   thunk_FUN_111d0010(param_2);
-  *puVar3 = (undefined4)((uint)&Ext_RSonosPositionInformationParam_vftable);
+  *puVar3 = (undefined4)((uint)&ghidra_vftable_RSonosPositionInformationParam);
   param_1[0x4c0d] = param_4;
   *(undefined1 *)(param_1 + 0x4c0e) = 0;
   *(undefined1 *)((int)param_1 + 0x13139) = 0;
@@ -44269,7 +44295,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d2390(undefined4 param_2,undefine
   thunk_FUN_111c0760(uVar3,"http://www.sonos.com/Services/1.1","getSessionId",0,40000,20000,1,
                      param_1 + 0x3655);
   *(undefined1 *)((int)param_1 + 0xd951) = 0;
-  param_1[0x3655] = (uint)&Ext_RSonosCPFaultHandler_vftable;
+  param_1[0x3655] = (uint)&ghidra_vftable_RSonosCPFaultHandler;
   param_1[0x3656] = 0;
   *(undefined1 *)(param_1 + 0x3657) = 0;
   *(undefined1 *)(param_1 + 0x365f) = 0;
@@ -44279,9 +44305,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d2390(undefined4 param_2,undefine
   param_1[0x3a77] = 0;
   *(undefined1 *)(param_1 + 0x3a78) = 0;
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RSonosTestGetGetUserIdOpV11_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosTestGetGetUserIdOpV11_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosTestGetGetUserIdOpV11_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosTestGetGetUserIdOpV11);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosTestGetGetUserIdOpV11;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosTestGetGetUserIdOpV11;
   thunk_FUN_1124e950("http://www.sonos.com/Services/1.1","credentials");
   *(unsigned char *)((char *)&local_8 + 0) = 1;
   thunk_FUN_1124e950("http://www.sonos.com/Services/1.1","context");
@@ -44356,17 +44382,17 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d2a50(int param_2,undefined4 para
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   thunk_FUN_11261e50(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  *param_1 = (undefined4)((uint)&Ext_RSonosV11ValidateOp_vftable);
-  param_1[2] = (uint)&Ext_RSonosV11ValidateOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosV11ValidateOp);
+  param_1[2] = (uint)&ghidra_vftable_RSonosV11ValidateOp;
   param_1[8] = 0;
   param_1[9] = 0;
-  param_1[7] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[7] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0xb] = 0;
   param_1[0xc] = 0;
-  param_1[10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0xe] = 0;
   param_1[0xf] = 0;
-  param_1[0xd] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xd] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x10] = param_2;
   *(unsigned char *)((char *)&local_8 + 0) = 3;
   *(unsigned short *)((char *)&local_8 + 1) = 0;
@@ -44698,10 +44724,10 @@ void __fastcall FUN_111d39e0(undefined4 *param_1)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   puVar1 = (undefined4 *)((undefined4 *)param_1[0x1a]);
-  *param_1 = (undefined4)((uint)&Ext_RCPSonosGetAllPrefixLocationsOperation_vftable);
-  param_1[1] = (uint)&Ext_RCPSonosGetAllPrefixLocationsOperation_vftable;
-  param_1[3] = (uint)&Ext_RCPSonosGetAllPrefixLocationsOperation_vftable;
-  param_1[8] = (uint)&Ext_RCPSonosGetAllPrefixLocationsOperation_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCPSonosGetAllPrefixLocationsOperation);
+  param_1[1] = (uint)&ghidra_vftable_RCPSonosGetAllPrefixLocationsOperation;
+  param_1[3] = (uint)&ghidra_vftable_RCPSonosGetAllPrefixLocationsOperation;
+  param_1[8] = (uint)&ghidra_vftable_RCPSonosGetAllPrefixLocationsOperation;
   iVar3 = (int)(thunk_FUN_1123fcd0(puVar1 + 1,uVar2));
   if ((iVar3 == 0) && (puVar1 != (undefined4 *)0x0)) {
     (**(code **)*puVar1)(1);
@@ -44712,7 +44738,7 @@ void __fastcall FUN_111d39e0(undefined4 *param_1)
     (**(code **)*puVar1)(1);
   }
   thunk_FUN_111d38f0();
-  *param_1 = (undefined4)((uint)&Ext_RGetAllPrefixLocationsCB_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RGetAllPrefixLocationsCB);
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -44729,7 +44755,7 @@ void __fastcall FUN_111d3ae0(undefined4 *param_1)
   int iVar3;
   uint uVar4;
   
-  *param_1 = (undefined4)((uint)&Ext_RContentKeysParam_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RContentKeysParam);
   uVar1 = (uint)(param_1[0x10a]);
   if (0xf < uVar1) {
     iVar2 = (int)(param_1[0x105]);
@@ -44771,9 +44797,9 @@ void __fastcall FUN_111d3b70(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RGetAllPrefixLocationsAIOOpBase_vftable);
-  param_1[1] = (uint)&Ext_RGetAllPrefixLocationsAIOOpBase_vftable;
-  param_1[3] = (uint)&Ext_RGetAllPrefixLocationsAIOOpBase_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RGetAllPrefixLocationsAIOOpBase);
+  param_1[1] = (uint)&ghidra_vftable_RGetAllPrefixLocationsAIOOpBase;
+  param_1[3] = (uint)&ghidra_vftable_RGetAllPrefixLocationsAIOOpBase;
   if ((int *)param_1[8] != (int *)0x0) {
     (**(code **)(*(int *)param_1[8] + 0x10))(uVar2);
     puVar1 = (undefined4 *)((undefined4 *)param_1[8]);
@@ -44785,7 +44811,7 @@ void __fastcall FUN_111d3b70(undefined4 *param_1)
   }
   param_1[9] = 0;
   thunk_FUN_11261f10();
-  *param_1 = (undefined4)((uint)&Ext_RGetAllPrefixLocationsCB_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RGetAllPrefixLocationsCB);
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -44798,10 +44824,10 @@ void __fastcall FUN_111d3c80(undefined4 *param_1)
 
 {
   thunk_FUN_1124f230();
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -44820,7 +44846,7 @@ void __fastcall FUN_111d3d00(undefined4 *param_1)
   undefined4 *puVar2;
   char cVar3;
   
-  *param_1 = (undefined4)((uint)&Ext_RSonosContentProvider_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosContentProvider);
   cVar3 = (char)(thunk_FUN_112a7f50(&DAT_122e8d38));
   puVar2 = (undefined4 *)(DAT_122e8d34);
   if (param_1 == (undefined4 *)(DAT_122e8d34)) {
@@ -44841,7 +44867,7 @@ LAB_111d3d4f:
   thunk_FUN_112a7f20(param_1 + 0x5b2);
   thunk_FUN_112a7f20(param_1 + 0x5b4);
   thunk_FUN_112a7f20(param_1 + 0x5b6);
-  param_1[0x5a3] = (uint)&Ext_RSonosContentProviderImpl_vftable;
+  param_1[0x5a3] = (uint)&ghidra_vftable_RSonosContentProviderImpl;
   thunk_FUN_1124d790();
   thunk_FUN_112818d0();
   thunk_FUN_111feb50();
@@ -44855,10 +44881,10 @@ LAB_111d3d4f:
 void __fastcall FUN_111d3e90(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -44874,10 +44900,10 @@ void __fastcall FUN_111d3ef0(undefined4 *param_1)
 
 {
   thunk_FUN_1124f230();
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -44892,10 +44918,10 @@ void __fastcall FUN_111d3ef0(undefined4 *param_1)
 void __fastcall FUN_111d3f60(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -44910,10 +44936,10 @@ void __fastcall FUN_111d3f60(undefined4 *param_1)
 void __fastcall FUN_111d3fc0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -44928,10 +44954,10 @@ void __fastcall FUN_111d3fc0(undefined4 *param_1)
 void __fastcall FUN_111d4020(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -44946,10 +44972,10 @@ void __fastcall FUN_111d4020(undefined4 *param_1)
 void __fastcall FUN_111d4080(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RSonosGetDeviceAuthTokenOp_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosGetDeviceAuthTokenOp_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosGetDeviceAuthTokenOp_vftable;
-  param_1[0x475e] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosGetDeviceAuthTokenOp);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosGetDeviceAuthTokenOp;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosGetDeviceAuthTokenOp;
+  param_1[0x475e] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -44966,38 +44992,38 @@ void __fastcall FUN_111d4080(undefined4 *param_1)
 void __fastcall FUN_111d4100(undefined4 *param_1)
 
 {
-  param_1[0x8669] = (uint)&Ext_RSonosRelatedActionsParam_vftable;
+  param_1[0x8669] = (uint)&ghidra_vftable_RSonosRelatedActionsParam;
   thunk_FUN_1125acd0();
-  param_1[0x8669] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x8669] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  param_1[0x803a] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x803a] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  param_1[0x7acb] = (uint)&Ext_RSonosRelatedInfoParam_vftable;
+  param_1[0x7acb] = (uint)&ghidra_vftable_RSonosRelatedInfoParam;
   free((void *)param_1[0x7fef]);
-  param_1[0x7acb] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x7acb] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  param_1[0x755c] = (uint)&Ext_RSonosRelatedInfoParam_vftable;
+  param_1[0x755c] = (uint)&ghidra_vftable_RSonosRelatedInfoParam;
   free((void *)param_1[0x7a80]);
-  param_1[0x755c] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x755c] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  param_1[0x61d9] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x61d9] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  param_1[0x4cfd] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x4cfd] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
   thunk_FUN_1124f230();
-  param_1[0x46e8] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x46e8] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45012,15 +45038,15 @@ void __fastcall FUN_111d4100(undefined4 *param_1)
 void __fastcall FUN_111d42f0(undefined4 *param_1)
 
 {
-  param_1[0x46f1] = (uint)&Ext_RSonosGetExtendedMetadataTextParam_vftable;
+  param_1[0x46f1] = (uint)&ghidra_vftable_RSonosGetExtendedMetadataTextParam;
   thunk_FUN_112341b0();
-  param_1[0x46f1] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x46f1] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45035,10 +45061,10 @@ void __fastcall FUN_111d42f0(undefined4 *param_1)
 void __fastcall FUN_111d43e0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RSonosGetLinkCodeOp_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosGetLinkCodeOp_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosGetLinkCodeOp_vftable;
-  param_1[0x4554] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosGetLinkCodeOp);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosGetLinkCodeOp;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosGetLinkCodeOp;
+  param_1[0x4554] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45054,16 +45080,16 @@ void __fastcall FUN_111d43e0(undefined4 *param_1)
 void __fastcall FUN_111d4450(undefined4 *param_1)
 
 {
-  param_1[0x4c52] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x4c52] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  param_1[0x46e8] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x46e8] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45079,19 +45105,19 @@ void __fastcall FUN_111d4510(undefined4 *param_1)
 
 {
   thunk_FUN_1124f230();
-  param_1[0x5fd5] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x5fd5] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  param_1[0x4c52] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x4c52] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  param_1[0x46e8] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x46e8] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45106,14 +45132,14 @@ void __fastcall FUN_111d4510(undefined4 *param_1)
 void __fastcall FUN_111d4760(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RSonosRateItemInnerOp_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosRateItemInnerOp_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosRateItemInnerOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosRateItemInnerOp);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosRateItemInnerOp;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosRateItemInnerOp;
   thunk_FUN_1124f230();
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45128,10 +45154,10 @@ void __fastcall FUN_111d4760(undefined4 *param_1)
 void __fastcall FUN_111d4810(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RSonosRefreshAuthTokenInnerOp_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosRefreshAuthTokenInnerOp_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosRefreshAuthTokenInnerOp_vftable;
-  param_1[0x49c0] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosRefreshAuthTokenInnerOp);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosRefreshAuthTokenInnerOp;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosRefreshAuthTokenInnerOp;
+  param_1[0x49c0] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124f230();
   thunk_FUN_1124f230();
   thunk_FUN_1124eda0();
@@ -45149,15 +45175,15 @@ void __fastcall FUN_111d4810(undefined4 *param_1)
 void __fastcall FUN_111d48a0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RSonosRefreshAuthTokenOp_vftable);
-  param_1[2] = (uint)&Ext_RSonosRefreshAuthTokenOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosRefreshAuthTokenOp);
+  param_1[2] = (uint)&ghidra_vftable_RSonosRefreshAuthTokenOp;
   if ((undefined4 *)param_1[7] != (undefined4 *)0x0) {
     (*(code *)**(undefined4 **)param_1[7])(1);
     param_1[7] = 0;
   }
-  param_1[0xc] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xc] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[9] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[9] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
   return;
@@ -45171,10 +45197,10 @@ void __fastcall FUN_111d49d0(undefined4 *param_1)
 
 {
   thunk_FUN_1124f230();
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45189,10 +45215,10 @@ void __fastcall FUN_111d49d0(undefined4 *param_1)
 void __fastcall FUN_111d4a40(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45208,10 +45234,10 @@ void __fastcall FUN_111d4aa0(undefined4 *param_1)
 
 {
   thunk_FUN_1124f230();
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45226,10 +45252,10 @@ void __fastcall FUN_111d4aa0(undefined4 *param_1)
 void __fastcall FUN_111d4b10(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45245,19 +45271,19 @@ void __fastcall FUN_111d4b70(undefined4 *param_1)
 
 {
   thunk_FUN_1124f230();
-  param_1[0x5fd6] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x5fd6] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  param_1[0x4c53] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x4c53] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  param_1[0x46e9] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x46e9] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45272,12 +45298,12 @@ void __fastcall FUN_111d4b70(undefined4 *param_1)
 void __fastcall FUN_111d4ce0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RSonosTestStatelessAccountOpV11_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosTestStatelessAccountOpV11_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosTestStatelessAccountOpV11_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosTestStatelessAccountOpV11);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosTestStatelessAccountOpV11;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosTestStatelessAccountOpV11;
   thunk_FUN_1148a50e(param_1[0x443a],1);
   thunk_FUN_1148a50e(param_1[0x4439],1);
-  param_1[0x44e6] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  param_1[0x44e6] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124f230();
   thunk_FUN_1124eda0();
   thunk_FUN_1124eda0();
@@ -45294,16 +45320,16 @@ void __fastcall FUN_111d4ce0(undefined4 *param_1)
 void __fastcall FUN_111d4da0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RSonosV11ValidateOp_vftable);
-  param_1[2] = (uint)&Ext_RSonosV11ValidateOp_vftable;
-  param_1[0xd] = (uint)&Ext_RControlAIOOpRef_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosV11ValidateOp);
+  param_1[2] = (uint)&ghidra_vftable_RSonosV11ValidateOp;
+  param_1[0xd] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[7] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[7] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  *param_1 = (undefined4)((uint)&Ext_RCPValidateOperation_vftable);
-  param_1[2] = (uint)&Ext_RCPValidateOperation_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCPValidateOperation);
+  param_1[2] = (uint)&ghidra_vftable_RCPValidateOperation;
   thunk_FUN_11261f10();
   return;
 }
@@ -45328,10 +45354,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d5d30(byte param_2)
   ExceptionList = (void *)(&local_10);
   puVar1 = (undefined4 *)((undefined4 *)param_1[0x1a]);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RCPSonosGetAllPrefixLocationsOperation_vftable);
-  param_1[1] = (uint)&Ext_RCPSonosGetAllPrefixLocationsOperation_vftable;
-  param_1[3] = (uint)&Ext_RCPSonosGetAllPrefixLocationsOperation_vftable;
-  param_1[8] = (uint)&Ext_RCPSonosGetAllPrefixLocationsOperation_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCPSonosGetAllPrefixLocationsOperation);
+  param_1[1] = (uint)&ghidra_vftable_RCPSonosGetAllPrefixLocationsOperation;
+  param_1[3] = (uint)&ghidra_vftable_RCPSonosGetAllPrefixLocationsOperation;
+  param_1[8] = (uint)&ghidra_vftable_RCPSonosGetAllPrefixLocationsOperation;
   iVar3 = (int)(thunk_FUN_1123fcd0(puVar1 + 1,uVar2));
   if ((iVar3 == 0) && (puVar1 != (undefined4 *)0x0)) {
     (**(code **)*puVar1)(1);
@@ -45342,7 +45368,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d5d30(byte param_2)
     (**(code **)*puVar1)(1);
   }
   thunk_FUN_111d38f0();
-  *param_1 = (undefined4)((uint)&Ext_RGetAllPrefixLocationsCB_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RGetAllPrefixLocationsCB);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x70);
   }
@@ -45368,9 +45394,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d5ed0(byte param_2)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RGetAllPrefixLocationsAIOOpBase_vftable);
-  param_1[1] = (uint)&Ext_RGetAllPrefixLocationsAIOOpBase_vftable;
-  param_1[3] = (uint)&Ext_RGetAllPrefixLocationsAIOOpBase_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RGetAllPrefixLocationsAIOOpBase);
+  param_1[1] = (uint)&ghidra_vftable_RGetAllPrefixLocationsAIOOpBase;
+  param_1[3] = (uint)&ghidra_vftable_RGetAllPrefixLocationsAIOOpBase;
   local_8 = (undefined4)(0);
   if ((int *)param_1[8] != (int *)0x0) {
     (**(code **)(*(int *)param_1[8] + 0x10))(uVar2);
@@ -45383,7 +45409,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d5ed0(byte param_2)
   }
   param_1[9] = 0;
   thunk_FUN_11261f10();
-  *param_1 = (undefined4)((uint)&Ext_RGetAllPrefixLocationsCB_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RGetAllPrefixLocationsCB);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x28);
   }
@@ -45399,10 +45425,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d6030(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_1124f230();
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45420,10 +45446,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d6030(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111d61c0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45442,10 +45468,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d6240(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_1124f230();
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45463,10 +45489,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d6240(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111d62d0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45484,10 +45510,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d62d0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111d6350(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45505,10 +45531,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d6350(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111d63d0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45526,10 +45552,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d63d0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111d6450(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RSonosGetDeviceAuthTokenOp_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosGetDeviceAuthTokenOp_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosGetDeviceAuthTokenOp_vftable;
-  param_1[0x475e] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosGetDeviceAuthTokenOp);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosGetDeviceAuthTokenOp;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosGetDeviceAuthTokenOp;
+  param_1[0x475e] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45549,38 +45575,38 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d6450(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111d64f0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  param_1[0x8669] = (uint)&Ext_RSonosRelatedActionsParam_vftable;
+  param_1[0x8669] = (uint)&ghidra_vftable_RSonosRelatedActionsParam;
   thunk_FUN_1125acd0();
-  param_1[0x8669] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x8669] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  param_1[0x803a] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x803a] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  param_1[0x7acb] = (uint)&Ext_RSonosRelatedInfoParam_vftable;
+  param_1[0x7acb] = (uint)&ghidra_vftable_RSonosRelatedInfoParam;
   free((void *)param_1[0x7fef]);
-  param_1[0x7acb] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x7acb] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  param_1[0x755c] = (uint)&Ext_RSonosRelatedInfoParam_vftable;
+  param_1[0x755c] = (uint)&ghidra_vftable_RSonosRelatedInfoParam;
   free((void *)param_1[0x7a80]);
-  param_1[0x755c] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x755c] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  param_1[0x61d9] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x61d9] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  param_1[0x4cfd] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x4cfd] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
   thunk_FUN_1124f230();
-  param_1[0x46e8] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x46e8] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45598,15 +45624,15 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d64f0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111d6700(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  param_1[0x46f1] = (uint)&Ext_RSonosGetExtendedMetadataTextParam_vftable;
+  param_1[0x46f1] = (uint)&ghidra_vftable_RSonosGetExtendedMetadataTextParam;
   thunk_FUN_112341b0();
-  param_1[0x46f1] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x46f1] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45624,9 +45650,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d6700(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111d67d0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RSonosGetExtendedMetadataTextParam_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosGetExtendedMetadataTextParam);
   thunk_FUN_112341b0();
-  *param_1 = (undefined4)((uint)&Ext_RSonosParamRX_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosParamRX);
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
   if ((param_2 & 1) != 0) {
@@ -45642,10 +45668,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d67d0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111d6830(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RSonosGetLinkCodeOp_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosGetLinkCodeOp_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosGetLinkCodeOp_vftable;
-  param_1[0x4554] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosGetLinkCodeOp);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosGetLinkCodeOp;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosGetLinkCodeOp;
+  param_1[0x4554] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45664,16 +45690,16 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d6830(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111d68c0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  param_1[0x4c52] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x4c52] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  param_1[0x46e8] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x46e8] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45692,19 +45718,19 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d69a0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_1124f230();
-  param_1[0x5fd5] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x5fd5] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  param_1[0x4c52] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x4c52] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  param_1[0x46e8] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x46e8] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45722,10 +45748,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d69a0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111d6ab0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RSonosGetObjIDsForAlbumAIOOp_vftable);
-  param_1[2] = (uint)&Ext_RSonosGetObjIDsForAlbumAIOOp_vftable;
-  param_1[7] = (uint)&Ext_RSonosGetObjIDsForAlbumAIOOp_vftable;
-  param_1[0x89] = (uint)&Ext_RControlAIOOpRef_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosGetObjIDsForAlbumAIOOp);
+  param_1[2] = (uint)&ghidra_vftable_RSonosGetObjIDsForAlbumAIOOp;
+  param_1[7] = (uint)&ghidra_vftable_RSonosGetObjIDsForAlbumAIOOp;
+  param_1[0x89] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   thunk_FUN_11202570();
   thunk_FUN_11261f10();
@@ -45742,10 +45768,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d6ab0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111d6b20(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RSonosGetObjIDsForTrackAIOOp_vftable);
-  param_1[2] = (uint)&Ext_RSonosGetObjIDsForTrackAIOOp_vftable;
-  param_1[7] = (uint)&Ext_RSonosGetObjIDsForTrackAIOOp_vftable;
-  param_1[0xc9] = (uint)&Ext_RControlAIOOpRef_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosGetObjIDsForTrackAIOOp);
+  param_1[2] = (uint)&ghidra_vftable_RSonosGetObjIDsForTrackAIOOp;
+  param_1[7] = (uint)&ghidra_vftable_RSonosGetObjIDsForTrackAIOOp;
+  param_1[0xc9] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   thunk_FUN_11202570();
   thunk_FUN_11261f10();
@@ -45762,14 +45788,14 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d6b20(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111d6d10(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RSonosRateItemInnerOp_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosRateItemInnerOp_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosRateItemInnerOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosRateItemInnerOp);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosRateItemInnerOp;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosRateItemInnerOp;
   thunk_FUN_1124f230();
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45787,10 +45813,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d6d10(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111d6e10(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RSonosRefreshAuthTokenInnerOp_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosRefreshAuthTokenInnerOp_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosRefreshAuthTokenInnerOp_vftable;
-  param_1[0x49c0] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosRefreshAuthTokenInnerOp);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosRefreshAuthTokenInnerOp;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosRefreshAuthTokenInnerOp;
+  param_1[0x49c0] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124f230();
   thunk_FUN_1124f230();
   thunk_FUN_1124eda0();
@@ -45811,15 +45837,15 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d6e10(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111d6ec0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RSonosRefreshAuthTokenOp_vftable);
-  param_1[2] = (uint)&Ext_RSonosRefreshAuthTokenOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosRefreshAuthTokenOp);
+  param_1[2] = (uint)&ghidra_vftable_RSonosRefreshAuthTokenOp;
   if ((undefined4 *)param_1[7] != (undefined4 *)0x0) {
     (*(code *)**(undefined4 **)param_1[7])(1);
     param_1[7] = 0;
   }
-  param_1[0xc] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xc] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[9] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[9] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
   if ((param_2 & 1) != 0) {
@@ -45835,9 +45861,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d6ec0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111d6f90(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RSonosRelatedActionsParam_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosRelatedActionsParam);
   thunk_FUN_1125acd0();
-  *param_1 = (undefined4)((uint)&Ext_RSonosParamRX_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosParamRX);
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
   if ((param_2 & 1) != 0) {
@@ -45853,9 +45879,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d6f90(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111d6ff0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RSonosRelatedInfoParam_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosRelatedInfoParam);
   free((void *)param_1[0x524]);
-  *param_1 = (undefined4)((uint)&Ext_RSonosParamRX_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosParamRX);
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
   if ((param_2 & 1) != 0) {
@@ -45872,10 +45898,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d7090(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_1124f230();
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45893,10 +45919,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d7090(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111d7120(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45915,10 +45941,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d71a0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_1124f230();
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45936,10 +45962,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d71a0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111d7230(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45958,19 +45984,19 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d72b0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_1124f230();
-  param_1[0x5fd6] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x5fd6] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  param_1[0x4c53] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x4c53] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  param_1[0x46e9] = (uint)&Ext_RSonosParamRX_vftable;
+  param_1[0x46e9] = (uint)&ghidra_vftable_RSonosParamRX;
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
-  *param_1 = (undefined4)((uint)&Ext_RSonosSOAPAIOOpBase_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosSOAPAIOOpBase_vftable;
-  param_1[0x421d] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosSOAPAIOOpBase);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosSOAPAIOOpBase;
+  param_1[0x421d] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -45988,12 +46014,12 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d72b0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111d7470(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RSonosTestStatelessAccountOpV11_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosTestStatelessAccountOpV11_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosTestStatelessAccountOpV11_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosTestStatelessAccountOpV11);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosTestStatelessAccountOpV11;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosTestStatelessAccountOpV11;
   thunk_FUN_1148a50e(param_1[0x443a],1);
   thunk_FUN_1148a50e(param_1[0x4439],1);
-  param_1[0x44e6] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  param_1[0x44e6] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124f230();
   thunk_FUN_1124eda0();
   thunk_FUN_1124eda0();
@@ -46013,16 +46039,16 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111d7470(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111d7570(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RSonosV11ValidateOp_vftable);
-  param_1[2] = (uint)&Ext_RSonosV11ValidateOp_vftable;
-  param_1[0xd] = (uint)&Ext_RControlAIOOpRef_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosV11ValidateOp);
+  param_1[2] = (uint)&ghidra_vftable_RSonosV11ValidateOp;
+  param_1[0xd] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[10] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[10] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[7] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[7] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  *param_1 = (undefined4)((uint)&Ext_RCPValidateOperation_vftable);
-  param_1[2] = (uint)&Ext_RCPValidateOperation_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCPValidateOperation);
+  param_1[2] = (uint)&ghidra_vftable_RCPValidateOperation;
   thunk_FUN_11261f10();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x48);
@@ -47286,9 +47312,9 @@ undefined4 __thiscall Recovered_Bulk::FUN_111de140(undefined4 *param_2,undefined
   else {
     thunk_FUN_111ca9f0(param_4,uVar5,uVar4,uVar3,&DAT_122f1250);
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(3)));
-    *puVar6 = (undefined4)((uint)&Ext_RSonosRateItemOp_vftable);
-    puVar6[2] = (uint)&Ext_RSonosRateItemOp_vftable;
-    puVar6[7] = (uint)&Ext_RSonosRateItemOp_vftable;
+    *puVar6 = (undefined4)((uint)&ghidra_vftable_RSonosRateItemOp);
+    puVar6[2] = (uint)&ghidra_vftable_RSonosRateItemOp;
+    puVar6[7] = (uint)&ghidra_vftable_RSonosRateItemOp;
     thunk_FUN_111f4d20(puVar6 + 0x19,(int)puVar6 + 0x65,0x101);
     thunk_FUN_111f4d20(puVar6 + 0x19,(int)puVar6 + 0x65,0x101);
   }
@@ -47342,17 +47368,17 @@ undefined4 * __fastcall FUN_111de4f0(int param_1)
       uVar3 = (undefined4)(*(undefined4 *)(iVar7 + 0x1530));
       iVar7 = (int)(*(int *)(iVar7 + 0x1674));
       thunk_FUN_11261e50(uVar5);
-      *puVar6 = (undefined4)((uint)&Ext_RSonosRefreshSessionOp_vftable);
-      puVar6[2] = (uint)&Ext_RSonosRefreshSessionOp_vftable;
+      *puVar6 = (undefined4)((uint)&ghidra_vftable_RSonosRefreshSessionOp);
+      puVar6[2] = (uint)&ghidra_vftable_RSonosRefreshSessionOp;
       puVar6[7] = iVar7 << 8 | 7;
       puVar6[8] = uVar3;
       puVar6[9] = uVar2;
       puVar6[0xb] = 0;
       puVar6[0xc] = 0;
-      puVar6[10] = (uint)&Ext_RControlAIOOpRef_vftable;
+      puVar6[10] = (uint)&ghidra_vftable_RControlAIOOpRef;
       puVar6[0xe] = 0;
       puVar6[0xf] = 0;
-      puVar6[0xd] = (uint)&Ext_RControlAIOOpRef_vftable;
+      puVar6[0xd] = (uint)&ghidra_vftable_RControlAIOOpRef;
       piVar1 = (int *)(puVar6 + 0xb);
       *(undefined2 *)(puVar6 + 0x10) = 0x100;
       local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(3)));
@@ -48667,7 +48693,7 @@ short __thiscall Recovered_Bulk::FUN_111e3150(undefined4 param_2,undefined1 *par
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   thunk_FUN_11202480(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  local_1c = (undefined **)((uint)&Ext_RCDAlbumArtCallback_vftable);
+  local_1c = (undefined **)((uint)&ghidra_vftable_RCDAlbumArtCallback);
   local_18 = (undefined1 *)(param_3);
   local_14 = (undefined4)(param_4);
   *param_3 = (undefined1)(0);
@@ -48706,7 +48732,7 @@ short __thiscall Recovered_Bulk::FUN_111e3270(undefined4 param_2,undefined1 *par
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   thunk_FUN_11202480(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  local_1c = (undefined **)((uint)&Ext_RCDAlbumIdCallback_vftable);
+  local_1c = (undefined **)((uint)&ghidra_vftable_RCDAlbumIdCallback);
   local_18 = (undefined1 *)(param_3);
   local_14 = (undefined4)(param_4);
   *param_3 = (undefined1)(0);
@@ -48975,7 +49001,7 @@ short __stdcall FUN_111e42e0(undefined4 param_1,undefined1 *param_2,undefined4 p
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   thunk_FUN_11202480(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  local_1c = (undefined **)((uint)&Ext_RCDMimeTypeCallback_vftable);
+  local_1c = (undefined **)((uint)&ghidra_vftable_RCDMimeTypeCallback);
   local_18 = (undefined1 *)(param_2);
   local_14 = (undefined4)(param_3);
   *param_2 = (undefined1)(0);
@@ -49201,7 +49227,7 @@ short __stdcall FUN_111e48f0(undefined4 param_1,undefined1 *param_2,undefined4 p
   local_20 = (undefined4)(param_11);
   local_1c = (undefined1 *)(param_12);
   local_18 = (undefined4)(param_13);
-  local_48 = (undefined **)((uint)&Ext_RCDStationInfoCallback_vftable);
+  local_48 = (undefined **)((uint)&ghidra_vftable_RCDStationInfoCallback);
   local_44 = (undefined1 *)(param_2);
   local_3c = (undefined1 *)(param_4);
   local_34 = (undefined1 *)(param_6);
@@ -49257,7 +49283,7 @@ short __stdcall FUN_111e4af0(undefined4 param_1,undefined1 *param_2,undefined4 p
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   thunk_FUN_11202480(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  local_1c = (undefined **)((uint)&Ext_RCDTitleCallback_vftable);
+  local_1c = (undefined **)((uint)&ghidra_vftable_RCDTitleCallback);
   local_18 = (undefined1 *)(param_2);
   local_14 = (undefined4)(param_3);
   *param_2 = (undefined1)(0);
@@ -49490,7 +49516,7 @@ void __thiscall Recovered_Bulk::FUN_111e5330(undefined4 param_2,char *param_3)
                       if (cVar1 == '\0') {
                         cVar1 = (char)(thunk_FUN_111f2ed0("releaseDate",param_2));
                         if (cVar1 != '\0') {
-                          local_9c = (undefined **)((uint)&Ext_RDateTime_vftable);
+                          local_9c = (undefined **)((uint)&ghidra_vftable_RDateTime);
                           local_98 = (undefined4)(0);
                           local_94 = (undefined4)(0);
                           local_90 = (undefined4)(0);

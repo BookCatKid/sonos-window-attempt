@@ -290,7 +290,10 @@ def _operators(body):
     return body
 
 
-def transform(source, entry, stubs, externs, member_stubs, type_stubs, defined=frozenset()):
+def transform(source, entry, stubs, externs, member_stubs, type_stubs,
+              defined=frozenset(), member_methods=None):
+    if member_methods is None:
+        member_methods = {}
     """Return a C++-compilable form of one Ghidra definition."""
     source = re.sub(r'>\s*_+', '>', source)
     body_start = source.find('{')
@@ -333,8 +336,10 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs, defined=f
                 out.append(body[start:tail])
                 pos = tail
             else:
-                stub_name = 'Stub_' + _sanitize(qualifier)
-                stubs.setdefault(stub_name, set()).add(leaf)
+                stub_name = qualifier
+                while '<' in stub_name:
+                    stub_name = re.sub(r'<[^<>]*>', '', stub_name)
+                member_methods.setdefault(qualifier, set()).add(leaf)
                 open_paren = tail
                 close_paren = _balanced(body, open_paren, '(', ')')
                 if close_paren < 0:
@@ -374,9 +379,13 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs, defined=f
                 out.append(body[start:name_end])
                 pos = name_end
             else:
-                flat = 'Ext_' + _sanitize(qualifier + '_' + leaf)
-                externs.add(('data', flat))
-                out.append(flat if before.endswith('&') else f'(uint)&{flat}')
+                if leaf == 'vftable':
+                    flat = 'ghidra_vftable_' + _sanitize(qualifier)
+                    externs.add(('data', flat))
+                    out.append(flat if before.endswith('&') else f'(uint)&{flat}')
+                else:
+                    member_stubs.setdefault(qualifier, set()).add(leaf)
+                    out.append(body[start:name_end])
                 pos = tail
     result_body = re.sub(r'&\s*(LAB_\w+)', r'\1', ''.join(out))
     head = _pcode(head)
@@ -563,21 +572,23 @@ def _rename_kw_angle(params, kw):
 def transform_cached(record, defined):
     if 'xformed' not in record:
         stubs, member_stubs, externs, type_stubs = {}, {}, set(), set()
+        member_methods = {}
         try:
             definition = transform(record['decompiled_c'], record['entry'],
                                    stubs, externs, member_stubs, type_stubs,
-                                   defined)
+                                   defined, member_methods)
         except Exception:
             record['xformed'] = None
         else:
             record['xformed'] = (definition, stubs, member_stubs, externs,
-                                 type_stubs)
+                                 type_stubs, member_methods)
     return record['xformed']
 
 
 def cpp_source(records, defined, bad_decls=()):
     stubs = {}
     member_stubs = {}
+    member_methods = {}
     externs = set()
     type_stubs = set()
     definitions = []
@@ -587,20 +598,24 @@ def cpp_source(records, defined, bad_decls=()):
         xformed = transform_cached(record, defined)
         if xformed is None:
             continue
-        _, r_stubs, r_member, _, r_types = xformed
+        _, r_stubs, r_member, _, r_types, r_methods = xformed
         seen.update(r_stubs)
         seen.update(name.split('::')[-1] for _, name in r_types)
         seen.update(q.split('::')[0] for q in r_member
                     if not q.startswith('__'))
+        seen.update(q.split('::')[0] for q in r_methods)
     for record in records:
         xformed = transform_cached(record, defined)
         if xformed is None:
             continue
-        definition, r_stubs, r_member, r_externs, r_types = xformed
+        (definition, r_stubs, r_member, r_externs, r_types,
+         r_methods) = xformed
         for name, methods in r_stubs.items():
             stubs.setdefault(name, set()).update(methods)
         for qualifier, leaves in r_member.items():
             member_stubs.setdefault(qualifier, set()).update(leaves)
+        for qualifier, methods in r_methods.items():
+            member_methods.setdefault(qualifier, set()).update(methods)
         externs |= r_externs
         type_stubs |= r_types
         head = definition[:definition.find('{')]
@@ -642,8 +657,15 @@ def cpp_source(records, defined, bad_decls=()):
             continue
         node = tree
         for part in qualifier.split('::'):
-            node = node.setdefault(part, {})
+            node = node.setdefault(part.split('<')[0].strip() or '_t', {})
         node.setdefault('__leaves__', set()).update(leaves)
+    for qualifier, methods in member_methods.items():
+        if qualifier in ('__fields__', '__fcall__', ''):
+            continue
+        node = tree
+        for part in qualifier.split('::'):
+            node = node.setdefault(part.split('<')[0].strip() or '_t', {})
+        node.setdefault('__methods__', set()).update(methods)
 
     fcalls = member_stubs.get('__fcall__', set())
     fields = member_stubs.get('__fields__', set()) - fcalls
@@ -668,9 +690,14 @@ def cpp_source(records, defined, bad_decls=()):
            ' int operator!();')
 
     def emit_tree(node):
-        inner = ''.join(f' static int {leaf};' for leaf in sorted(node.get('__leaves__', ())))
+        methods = node.get('__methods__', set())
+        inner = ''.join(f' int {method}(...);' for method in sorted(methods)
+                        if method.isidentifier())
+        inner += ''.join(f' static int {leaf};'
+                         for leaf in sorted(set(node.get('__leaves__', ())) - methods)
+                         if leaf.isidentifier())
         for name, child in sorted(node.items()):
-            if name == '__leaves__':
+            if name in ('__leaves__', '__methods__'):
                 continue
             inner += (f' struct {name} {{ char _pad; {name}(...);{ops}'
                       f'{field_decls}{emit_tree(child)} }};')

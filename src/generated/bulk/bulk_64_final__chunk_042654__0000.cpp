@@ -4459,14 +4459,13 @@ extern undefined1 LAB_1176fd60[];
 extern undefined1 LAB_1176fd90[];
 extern undefined1 LAB_1176fdc0[];
 extern void *ExceptionList;
+struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int int_release(...); };
 typedef void *WARNING;
 struct Could { char _pad; Could(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Globals { char _pad; Globals(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Subroutine { char _pad; Subroutine(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Too { char _pad; Too(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Treating { char _pad; Treating(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct Stub_SCStr { Stub_SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int int_release(...); };
 using namespace std;
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_1182e880(void);
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_1182e8f0(void);
@@ -5971,7 +5970,7 @@ void FUN_1182e880(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4f04))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4f04))->int_release();
   _DAT_121a4f04 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -5994,7 +5993,7 @@ void FUN_1182e8f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4f00))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4f00))->int_release();
   _DAT_121a4f00 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6017,7 +6016,7 @@ void FUN_1182e960(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4f40))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4f40))->int_release();
   _DAT_121a4f40 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6040,7 +6039,7 @@ void FUN_1182e9d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4f60))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4f60))->int_release();
   _DAT_121a4f60 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6063,7 +6062,7 @@ void FUN_1182ea40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4f54))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4f54))->int_release();
   _DAT_121a4f54 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6086,7 +6085,7 @@ void FUN_1182eab0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4f44))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4f44))->int_release();
   _DAT_121a4f44 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6109,7 +6108,7 @@ void FUN_1182eb20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4f50))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4f50))->int_release();
   _DAT_121a4f50 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6132,7 +6131,7 @@ void FUN_1182eb90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4f5c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4f5c))->int_release();
   _DAT_121a4f5c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6155,7 +6154,7 @@ void FUN_1182ec00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4f58))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4f58))->int_release();
   _DAT_121a4f58 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6178,7 +6177,7 @@ void FUN_1182ec70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4f64))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4f64))->int_release();
   _DAT_121a4f64 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6201,7 +6200,7 @@ void FUN_1182ece0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4f4c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4f4c))->int_release();
   _DAT_121a4f4c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6224,7 +6223,7 @@ void FUN_1182ed50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4f48))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4f48))->int_release();
   _DAT_121a4f48 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6247,7 +6246,7 @@ void FUN_1182edd0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4f3c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4f3c))->int_release();
   _DAT_121a4f3c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6270,7 +6269,7 @@ void FUN_1182ee50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4fac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4fac))->int_release();
   _DAT_121a4fac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6293,7 +6292,7 @@ void FUN_1182eec0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4fd4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4fd4))->int_release();
   _DAT_121a4fd4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6316,7 +6315,7 @@ void FUN_1182ef30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4fb8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4fb8))->int_release();
   _DAT_121a4fb8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6339,7 +6338,7 @@ void FUN_1182efa0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4fdc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4fdc))->int_release();
   _DAT_121a4fdc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6362,7 +6361,7 @@ void FUN_1182f010(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4fcc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4fcc))->int_release();
   _DAT_121a4fcc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6385,7 +6384,7 @@ void FUN_1182f080(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4fbc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4fbc))->int_release();
   _DAT_121a4fbc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6408,7 +6407,7 @@ void FUN_1182f0f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4fc8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4fc8))->int_release();
   _DAT_121a4fc8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6431,7 +6430,7 @@ void FUN_1182f160(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4fd8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4fd8))->int_release();
   _DAT_121a4fd8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6454,7 +6453,7 @@ void FUN_1182f1d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4fd0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4fd0))->int_release();
   _DAT_121a4fd0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6477,7 +6476,7 @@ void FUN_1182f240(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4fe0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4fe0))->int_release();
   _DAT_121a4fe0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6500,7 +6499,7 @@ void FUN_1182f2b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4fc4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4fc4))->int_release();
   _DAT_121a4fc4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6523,7 +6522,7 @@ void FUN_1182f320(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4fc0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4fc0))->int_release();
   _DAT_121a4fc0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6546,7 +6545,7 @@ void FUN_1182f390(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4fb4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4fb4))->int_release();
   _DAT_121a4fb4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6569,7 +6568,7 @@ void FUN_1182f400(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4fb0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4fb0))->int_release();
   _DAT_121a4fb0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6592,7 +6591,7 @@ void FUN_1182f470(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4ff8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4ff8))->int_release();
   _DAT_121a4ff8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6615,7 +6614,7 @@ void FUN_1182f4e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5018))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5018))->int_release();
   _DAT_121a5018 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6638,7 +6637,7 @@ void FUN_1182f550(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a500c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a500c))->int_release();
   _DAT_121a500c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6661,7 +6660,7 @@ void FUN_1182f5c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4ffc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4ffc))->int_release();
   _DAT_121a4ffc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6684,7 +6683,7 @@ void FUN_1182f630(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5008))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5008))->int_release();
   _DAT_121a5008 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6707,7 +6706,7 @@ void FUN_1182f6a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5014))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5014))->int_release();
   _DAT_121a5014 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6730,7 +6729,7 @@ void FUN_1182f710(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5010))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5010))->int_release();
   _DAT_121a5010 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6753,7 +6752,7 @@ void FUN_1182f780(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a501c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a501c))->int_release();
   _DAT_121a501c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6776,7 +6775,7 @@ void FUN_1182f7f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5004))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5004))->int_release();
   _DAT_121a5004 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6799,7 +6798,7 @@ void FUN_1182f860(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5000))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5000))->int_release();
   _DAT_121a5000 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6822,7 +6821,7 @@ void FUN_1182f8d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4ff4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4ff4))->int_release();
   _DAT_121a4ff4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6845,7 +6844,7 @@ void FUN_1182f940(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a4ff0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a4ff0))->int_release();
   _DAT_121a4ff0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6868,7 +6867,7 @@ void FUN_1182f9b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a502c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a502c))->int_release();
   _DAT_121a502c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6891,7 +6890,7 @@ void FUN_1182faa0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a503c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a503c))->int_release();
   _DAT_121a503c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6914,7 +6913,7 @@ void FUN_1182fb10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a507c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a507c))->int_release();
   _DAT_121a507c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6937,7 +6936,7 @@ void FUN_1182fb80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a506c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a506c))->int_release();
   _DAT_121a506c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6960,7 +6959,7 @@ void FUN_1182fbf0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a504c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a504c))->int_release();
   _DAT_121a504c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -6983,7 +6982,7 @@ void FUN_1182fc60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5070))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5070))->int_release();
   _DAT_121a5070 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7006,7 +7005,7 @@ void FUN_1182fcd0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5060))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5060))->int_release();
   _DAT_121a5060 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7029,7 +7028,7 @@ void FUN_1182fd40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5050))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5050))->int_release();
   _DAT_121a5050 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7052,7 +7051,7 @@ void FUN_1182fdb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a505c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a505c))->int_release();
   _DAT_121a505c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7075,7 +7074,7 @@ void FUN_1182fe20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5068))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5068))->int_release();
   _DAT_121a5068 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7098,7 +7097,7 @@ void FUN_1182fe90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5078))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5078))->int_release();
   _DAT_121a5078 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7155,7 +7154,7 @@ void FUN_1182ff70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5064))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5064))->int_release();
   _DAT_121a5064 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7178,7 +7177,7 @@ void FUN_1182ffe0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5074))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5074))->int_release();
   _DAT_121a5074 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7201,7 +7200,7 @@ void FUN_11830050(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5058))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5058))->int_release();
   _DAT_121a5058 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7224,7 +7223,7 @@ void FUN_118300c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5054))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5054))->int_release();
   _DAT_121a5054 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7247,7 +7246,7 @@ void FUN_11830130(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5048))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5048))->int_release();
   _DAT_121a5048 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7270,7 +7269,7 @@ void FUN_11830220(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5044))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5044))->int_release();
   _DAT_121a5044 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7293,7 +7292,7 @@ void FUN_11830290(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a50a4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a50a4))->int_release();
   _DAT_121a50a4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7316,7 +7315,7 @@ void FUN_11830300(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a50c4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a50c4))->int_release();
   _DAT_121a50c4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7339,7 +7338,7 @@ void FUN_11830370(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a50c8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a50c8))->int_release();
   _DAT_121a50c8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7362,7 +7361,7 @@ void FUN_118303e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a50d0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a50d0))->int_release();
   _DAT_121a50d0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7385,7 +7384,7 @@ void FUN_11830450(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a50b8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a50b8))->int_release();
   _DAT_121a50b8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7408,7 +7407,7 @@ void FUN_118304c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a50a8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a50a8))->int_release();
   _DAT_121a50a8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7431,7 +7430,7 @@ void FUN_11830530(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a50b4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a50b4))->int_release();
   _DAT_121a50b4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7454,7 +7453,7 @@ void FUN_118305a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a50c0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a50c0))->int_release();
   _DAT_121a50c0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7477,7 +7476,7 @@ void FUN_11830610(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a50bc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a50bc))->int_release();
   _DAT_121a50bc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7500,7 +7499,7 @@ void FUN_11830680(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a50cc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a50cc))->int_release();
   _DAT_121a50cc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7523,7 +7522,7 @@ void FUN_118306f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a50b0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a50b0))->int_release();
   _DAT_121a50b0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7546,7 +7545,7 @@ void FUN_11830760(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a50ac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a50ac))->int_release();
   _DAT_121a50ac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7569,7 +7568,7 @@ void FUN_118307d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a50a0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a50a0))->int_release();
   _DAT_121a50a0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7592,7 +7591,7 @@ void FUN_11830840(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a509c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a509c))->int_release();
   _DAT_121a509c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7615,7 +7614,7 @@ void FUN_11830930(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a50e0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a50e0))->int_release();
   _DAT_121a50e0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7638,7 +7637,7 @@ void FUN_11830a20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a50f8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a50f8))->int_release();
   _DAT_121a50f8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7661,7 +7660,7 @@ void FUN_11830a90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5114))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5114))->int_release();
   _DAT_121a5114 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7684,7 +7683,7 @@ void FUN_11830b00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5100))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5100))->int_release();
   _DAT_121a5100 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7707,7 +7706,7 @@ void FUN_11830b70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5118))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5118))->int_release();
   _DAT_121a5118 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7730,7 +7729,7 @@ void FUN_11830be0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5108))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5108))->int_release();
   _DAT_121a5108 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7753,7 +7752,7 @@ void FUN_11830c50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5120))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5120))->int_release();
   _DAT_121a5120 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7776,7 +7775,7 @@ void FUN_11830cc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a510c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a510c))->int_release();
   _DAT_121a510c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7799,7 +7798,7 @@ void FUN_11830d30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5128))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5128))->int_release();
   _DAT_121a5128 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7822,7 +7821,7 @@ void FUN_11830da0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a511c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a511c))->int_release();
   _DAT_121a511c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7845,7 +7844,7 @@ void FUN_11830e10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5124))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5124))->int_release();
   _DAT_121a5124 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7868,7 +7867,7 @@ void FUN_11830e80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5110))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5110))->int_release();
   _DAT_121a5110 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7891,7 +7890,7 @@ void FUN_11830f00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5104))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5104))->int_release();
   _DAT_121a5104 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7914,7 +7913,7 @@ void FUN_11830fb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5148))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5148))->int_release();
   _DAT_121a5148 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7937,7 +7936,7 @@ void FUN_11831020(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5168))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5168))->int_release();
   _DAT_121a5168 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7960,7 +7959,7 @@ void FUN_11831090(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a515c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a515c))->int_release();
   _DAT_121a515c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -7983,7 +7982,7 @@ void FUN_11831100(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a514c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a514c))->int_release();
   _DAT_121a514c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8006,7 +8005,7 @@ void FUN_11831170(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5158))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5158))->int_release();
   _DAT_121a5158 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8029,7 +8028,7 @@ void FUN_118311e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5164))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5164))->int_release();
   _DAT_121a5164 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8052,7 +8051,7 @@ void FUN_11831250(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5160))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5160))->int_release();
   _DAT_121a5160 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8075,7 +8074,7 @@ void FUN_118312c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a516c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a516c))->int_release();
   _DAT_121a516c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8098,7 +8097,7 @@ void FUN_11831330(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5154))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5154))->int_release();
   _DAT_121a5154 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8121,7 +8120,7 @@ void FUN_118313a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5150))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5150))->int_release();
   _DAT_121a5150 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8144,7 +8143,7 @@ void FUN_11831410(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5144))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5144))->int_release();
   _DAT_121a5144 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8167,7 +8166,7 @@ void FUN_11831480(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5140))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5140))->int_release();
   _DAT_121a5140 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8190,7 +8189,7 @@ void FUN_11831580(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5258))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5258))->int_release();
   _DAT_121a5258 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8213,7 +8212,7 @@ void FUN_118315f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5260))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5260))->int_release();
   _DAT_121a5260 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8236,7 +8235,7 @@ void FUN_11831670(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5264))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5264))->int_release();
   _DAT_121a5264 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8259,7 +8258,7 @@ void FUN_11831760(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5290))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5290))->int_release();
   _DAT_121a5290 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8282,7 +8281,7 @@ void FUN_118317d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a52a4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a52a4))->int_release();
   _DAT_121a52a4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8305,7 +8304,7 @@ void FUN_11831840(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a52b8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a52b8))->int_release();
   _DAT_121a52b8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8328,7 +8327,7 @@ void FUN_118318b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a52d8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a52d8))->int_release();
   _DAT_121a52d8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8351,7 +8350,7 @@ void FUN_11831920(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a52cc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a52cc))->int_release();
   _DAT_121a52cc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8374,7 +8373,7 @@ void FUN_11831990(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a52bc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a52bc))->int_release();
   _DAT_121a52bc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8397,7 +8396,7 @@ void FUN_11831a00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a52c8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a52c8))->int_release();
   _DAT_121a52c8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8420,7 +8419,7 @@ void FUN_11831a70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a52d4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a52d4))->int_release();
   _DAT_121a52d4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8443,7 +8442,7 @@ void FUN_11831ae0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a52d0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a52d0))->int_release();
   _DAT_121a52d0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8466,7 +8465,7 @@ void FUN_11831b50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a52e4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a52e4))->int_release();
   _DAT_121a52e4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8489,7 +8488,7 @@ void FUN_11831bc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a52c4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a52c4))->int_release();
   _DAT_121a52c4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8512,7 +8511,7 @@ void FUN_11831c30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a52c0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a52c0))->int_release();
   _DAT_121a52c0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8535,7 +8534,7 @@ void FUN_11831ca0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a52b0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a52b0))->int_release();
   _DAT_121a52b0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8558,7 +8557,7 @@ void FUN_11831d10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a52dc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a52dc))->int_release();
   _DAT_121a52dc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8581,7 +8580,7 @@ void FUN_11831d80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a52b4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a52b4))->int_release();
   _DAT_121a52b4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8604,7 +8603,7 @@ void FUN_11831df0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a52a8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a52a8))->int_release();
   _DAT_121a52a8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8627,7 +8626,7 @@ void FUN_11831e60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a52e0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a52e0))->int_release();
   _DAT_121a52e0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8650,7 +8649,7 @@ void FUN_11831ed0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a52ac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a52ac))->int_release();
   _DAT_121a52ac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8673,7 +8672,7 @@ void FUN_11831f40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a52f4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a52f4))->int_release();
   _DAT_121a52f4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8696,7 +8695,7 @@ void FUN_11831fb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5300))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5300))->int_release();
   _DAT_121a5300 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8719,7 +8718,7 @@ void FUN_11832020(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5320))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5320))->int_release();
   _DAT_121a5320 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8742,7 +8741,7 @@ void FUN_11832090(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5314))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5314))->int_release();
   _DAT_121a5314 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8765,7 +8764,7 @@ void FUN_11832100(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5304))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5304))->int_release();
   _DAT_121a5304 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8788,7 +8787,7 @@ void FUN_11832170(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5310))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5310))->int_release();
   _DAT_121a5310 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8811,7 +8810,7 @@ void FUN_118321e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a531c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a531c))->int_release();
   _DAT_121a531c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8834,7 +8833,7 @@ void FUN_11832250(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5318))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5318))->int_release();
   _DAT_121a5318 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8857,7 +8856,7 @@ void FUN_118322c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5324))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5324))->int_release();
   _DAT_121a5324 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8880,7 +8879,7 @@ void FUN_11832330(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a530c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a530c))->int_release();
   _DAT_121a530c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8903,7 +8902,7 @@ void FUN_118323a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5308))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5308))->int_release();
   _DAT_121a5308 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8926,7 +8925,7 @@ void FUN_11832410(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a52fc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a52fc))->int_release();
   _DAT_121a52fc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8949,7 +8948,7 @@ void FUN_11832480(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a52f8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a52f8))->int_release();
   _DAT_121a52f8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8972,7 +8971,7 @@ void FUN_118324f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5360))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5360))->int_release();
   _DAT_121a5360 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -8995,7 +8994,7 @@ void FUN_11832560(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5334))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5334))->int_release();
   _DAT_121a5334 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9018,7 +9017,7 @@ void FUN_118325d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5364))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5364))->int_release();
   _DAT_121a5364 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9041,7 +9040,7 @@ void FUN_11832640(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5344))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5344))->int_release();
   _DAT_121a5344 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9064,7 +9063,7 @@ void FUN_118326b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5374))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5374))->int_release();
   _DAT_121a5374 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9087,7 +9086,7 @@ void FUN_11832720(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5350))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5350))->int_release();
   _DAT_121a5350 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9110,7 +9109,7 @@ void FUN_11832790(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5380))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5380))->int_release();
   _DAT_121a5380 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9133,7 +9132,7 @@ void FUN_11832800(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5370))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5370))->int_release();
   _DAT_121a5370 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9156,7 +9155,7 @@ void FUN_11832870(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a537c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a537c))->int_release();
   _DAT_121a537c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9179,7 +9178,7 @@ void FUN_118328e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a535c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a535c))->int_release();
   _DAT_121a535c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9202,7 +9201,7 @@ void FUN_11832950(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5358))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5358))->int_release();
   _DAT_121a5358 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9225,7 +9224,7 @@ void FUN_118329c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5348))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5348))->int_release();
   _DAT_121a5348 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9248,7 +9247,7 @@ void FUN_11832a30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a536c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a536c))->int_release();
   _DAT_121a536c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9271,7 +9270,7 @@ void FUN_11832aa0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a534c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a534c))->int_release();
   _DAT_121a534c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9294,7 +9293,7 @@ void FUN_11832b10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5378))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5378))->int_release();
   _DAT_121a5378 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9317,7 +9316,7 @@ void FUN_11832b80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5338))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5338))->int_release();
   _DAT_121a5338 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9340,7 +9339,7 @@ void FUN_11832bf0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5354))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5354))->int_release();
   _DAT_121a5354 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9363,7 +9362,7 @@ void FUN_11832c60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5368))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5368))->int_release();
   _DAT_121a5368 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9386,7 +9385,7 @@ void FUN_11832cd0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a533c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a533c))->int_release();
   _DAT_121a533c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9409,7 +9408,7 @@ void FUN_11832d40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5340))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5340))->int_release();
   _DAT_121a5340 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9432,7 +9431,7 @@ void FUN_11832db0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5398))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5398))->int_release();
   _DAT_121a5398 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9455,7 +9454,7 @@ void FUN_11832e20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a53b8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a53b8))->int_release();
   _DAT_121a53b8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9478,7 +9477,7 @@ void FUN_11832e90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a53ac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a53ac))->int_release();
   _DAT_121a53ac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9501,7 +9500,7 @@ void FUN_11832f00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a539c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a539c))->int_release();
   _DAT_121a539c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9524,7 +9523,7 @@ void FUN_11832f70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a53a8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a53a8))->int_release();
   _DAT_121a53a8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9547,7 +9546,7 @@ void FUN_11832fe0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a53b4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a53b4))->int_release();
   _DAT_121a53b4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9570,7 +9569,7 @@ void FUN_11833050(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a53b0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a53b0))->int_release();
   _DAT_121a53b0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9593,7 +9592,7 @@ void FUN_118330c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a53bc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a53bc))->int_release();
   _DAT_121a53bc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9616,7 +9615,7 @@ void FUN_11833130(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a53a4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a53a4))->int_release();
   _DAT_121a53a4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9639,7 +9638,7 @@ void FUN_118331a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a53a0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a53a0))->int_release();
   _DAT_121a53a0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9662,7 +9661,7 @@ void FUN_11833210(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5394))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5394))->int_release();
   _DAT_121a5394 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9685,7 +9684,7 @@ void FUN_11833280(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a53d8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a53d8))->int_release();
   _DAT_121a53d8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9708,7 +9707,7 @@ void FUN_118332f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5410))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5410))->int_release();
   _DAT_121a5410 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9731,7 +9730,7 @@ void FUN_11833360(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5404))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5404))->int_release();
   _DAT_121a5404 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9754,7 +9753,7 @@ void FUN_118333d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a53c8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a53c8))->int_release();
   _DAT_121a53c8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9777,7 +9776,7 @@ void FUN_11833440(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5408))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5408))->int_release();
   _DAT_121a5408 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9800,7 +9799,7 @@ void FUN_118334b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a53e0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a53e0))->int_release();
   _DAT_121a53e0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9823,7 +9822,7 @@ void FUN_11833520(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5400))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5400))->int_release();
   _DAT_121a5400 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9846,7 +9845,7 @@ void FUN_11833590(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a53f4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a53f4))->int_release();
   _DAT_121a53f4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9869,7 +9868,7 @@ void FUN_11833600(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a53e4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a53e4))->int_release();
   _DAT_121a53e4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9892,7 +9891,7 @@ void FUN_11833670(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a53f0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a53f0))->int_release();
   _DAT_121a53f0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9915,7 +9914,7 @@ void FUN_118336e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a53fc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a53fc))->int_release();
   _DAT_121a53fc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9938,7 +9937,7 @@ void FUN_11833750(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a53f8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a53f8))->int_release();
   _DAT_121a53f8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9961,7 +9960,7 @@ void FUN_118337c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a540c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a540c))->int_release();
   _DAT_121a540c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -9984,7 +9983,7 @@ void FUN_11833830(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a53ec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a53ec))->int_release();
   _DAT_121a53ec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10007,7 +10006,7 @@ void FUN_118338a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a53e8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a53e8))->int_release();
   _DAT_121a53e8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10030,7 +10029,7 @@ void FUN_11833910(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a53dc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a53dc))->int_release();
   _DAT_121a53dc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10053,7 +10052,7 @@ void FUN_11833a00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a53d4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a53d4))->int_release();
   _DAT_121a53d4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10076,7 +10075,7 @@ void FUN_11833a70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a542c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a542c))->int_release();
   _DAT_121a542c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10099,7 +10098,7 @@ void FUN_11833ae0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a544c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a544c))->int_release();
   _DAT_121a544c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10122,7 +10121,7 @@ void FUN_11833b50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5440))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5440))->int_release();
   _DAT_121a5440 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10145,7 +10144,7 @@ void FUN_11833bc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5430))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5430))->int_release();
   _DAT_121a5430 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10168,7 +10167,7 @@ void FUN_11833c30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a543c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a543c))->int_release();
   _DAT_121a543c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10191,7 +10190,7 @@ void FUN_11833ca0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5448))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5448))->int_release();
   _DAT_121a5448 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10214,7 +10213,7 @@ void FUN_11833d10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5444))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5444))->int_release();
   _DAT_121a5444 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10237,7 +10236,7 @@ void FUN_11833d80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5450))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5450))->int_release();
   _DAT_121a5450 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10260,7 +10259,7 @@ void FUN_11833df0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5438))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5438))->int_release();
   _DAT_121a5438 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10283,7 +10282,7 @@ void FUN_11833e60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5434))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5434))->int_release();
   _DAT_121a5434 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10306,7 +10305,7 @@ void FUN_11833ed0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5428))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5428))->int_release();
   _DAT_121a5428 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10329,7 +10328,7 @@ void FUN_11833f40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5424))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5424))->int_release();
   _DAT_121a5424 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10352,7 +10351,7 @@ void FUN_11833fc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5498))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5498))->int_release();
   _DAT_121a5498 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10375,7 +10374,7 @@ void FUN_11834030(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a54b8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a54b8))->int_release();
   _DAT_121a54b8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10398,7 +10397,7 @@ void FUN_118340a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a54ac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a54ac))->int_release();
   _DAT_121a54ac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10421,7 +10420,7 @@ void FUN_11834110(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a549c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a549c))->int_release();
   _DAT_121a549c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10444,7 +10443,7 @@ void FUN_11834180(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a54a8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a54a8))->int_release();
   _DAT_121a54a8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10467,7 +10466,7 @@ void FUN_118341f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a54b4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a54b4))->int_release();
   _DAT_121a54b4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10490,7 +10489,7 @@ void FUN_11834260(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a54b0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a54b0))->int_release();
   _DAT_121a54b0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10513,7 +10512,7 @@ void FUN_118342d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a54bc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a54bc))->int_release();
   _DAT_121a54bc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10536,7 +10535,7 @@ void FUN_11834340(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a54a4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a54a4))->int_release();
   _DAT_121a54a4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10559,7 +10558,7 @@ void FUN_118343b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a54a0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a54a0))->int_release();
   _DAT_121a54a0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10582,7 +10581,7 @@ void FUN_11834420(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5494))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5494))->int_release();
   _DAT_121a5494 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10605,7 +10604,7 @@ void FUN_11834490(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5490))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5490))->int_release();
   _DAT_121a5490 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10628,7 +10627,7 @@ void FUN_11834680(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a551c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a551c))->int_release();
   _DAT_121a551c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10651,7 +10650,7 @@ void FUN_118346f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a553c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a553c))->int_release();
   _DAT_121a553c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10674,7 +10673,7 @@ void FUN_11834760(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5530))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5530))->int_release();
   _DAT_121a5530 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10697,7 +10696,7 @@ void FUN_118347d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5520))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5520))->int_release();
   _DAT_121a5520 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10720,7 +10719,7 @@ void FUN_11834840(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a552c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a552c))->int_release();
   _DAT_121a552c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10743,7 +10742,7 @@ void FUN_118348b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5538))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5538))->int_release();
   _DAT_121a5538 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10766,7 +10765,7 @@ void FUN_11834920(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5534))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5534))->int_release();
   _DAT_121a5534 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10789,7 +10788,7 @@ void FUN_11834990(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5540))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5540))->int_release();
   _DAT_121a5540 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10812,7 +10811,7 @@ void FUN_11834a00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5528))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5528))->int_release();
   _DAT_121a5528 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10835,7 +10834,7 @@ void FUN_11834a70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5524))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5524))->int_release();
   _DAT_121a5524 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10858,7 +10857,7 @@ void FUN_11834ae0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a54f8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a54f8))->int_release();
   _DAT_121a54f8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10881,7 +10880,7 @@ void FUN_11834b50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a54f4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a54f4))->int_release();
   _DAT_121a54f4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10904,7 +10903,7 @@ void FUN_11834c70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a55a8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a55a8))->int_release();
   _DAT_121a55a8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10927,7 +10926,7 @@ void FUN_11834ce0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a55b8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a55b8))->int_release();
   _DAT_121a55b8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10950,7 +10949,7 @@ void FUN_11834de0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5688))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5688))->int_release();
   _DAT_121a5688 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10973,7 +10972,7 @@ void FUN_11834e50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5698))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5698))->int_release();
   _DAT_121a5698 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -10996,7 +10995,7 @@ void FUN_11834ec0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a569c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a569c))->int_release();
   _DAT_121a569c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11019,7 +11018,7 @@ void FUN_11834f30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a56a0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a56a0))->int_release();
   _DAT_121a56a0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11042,7 +11041,7 @@ void FUN_11834fa0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a56a4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a56a4))->int_release();
   _DAT_121a56a4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11065,7 +11064,7 @@ void FUN_11835010(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a56b4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a56b4))->int_release();
   _DAT_121a56b4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11088,7 +11087,7 @@ void FUN_11835080(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a56dc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a56dc))->int_release();
   _DAT_121a56dc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11111,7 +11110,7 @@ void FUN_118350f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a56c8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a56c8))->int_release();
   _DAT_121a56c8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11134,7 +11133,7 @@ void FUN_11835160(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a56b8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a56b8))->int_release();
   _DAT_121a56b8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11157,7 +11156,7 @@ void FUN_118351d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a56c4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a56c4))->int_release();
   _DAT_121a56c4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11180,7 +11179,7 @@ void FUN_11835240(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a56d8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a56d8))->int_release();
   _DAT_121a56d8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11203,7 +11202,7 @@ void FUN_118352b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a56cc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a56cc))->int_release();
   _DAT_121a56cc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11226,7 +11225,7 @@ void FUN_11835320(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a56e0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a56e0))->int_release();
   _DAT_121a56e0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11249,7 +11248,7 @@ void FUN_11835390(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a56c0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a56c0))->int_release();
   _DAT_121a56c0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11272,7 +11271,7 @@ void FUN_11835400(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a56bc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a56bc))->int_release();
   _DAT_121a56bc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11295,7 +11294,7 @@ void FUN_118354b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a56b0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a56b0))->int_release();
   _DAT_121a56b0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11318,7 +11317,7 @@ void FUN_118355e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5714))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5714))->int_release();
   _DAT_121a5714 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11341,7 +11340,7 @@ void FUN_11835650(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a570c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a570c))->int_release();
   _DAT_121a570c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11364,7 +11363,7 @@ void FUN_118356c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5724))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5724))->int_release();
   _DAT_121a5724 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11387,7 +11386,7 @@ void FUN_11835730(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a571c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a571c))->int_release();
   _DAT_121a571c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11410,7 +11409,7 @@ void FUN_118357a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5734))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5734))->int_release();
   _DAT_121a5734 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11433,7 +11432,7 @@ void FUN_11835810(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a572c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a572c))->int_release();
   _DAT_121a572c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11456,7 +11455,7 @@ void FUN_11835880(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5744))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5744))->int_release();
   _DAT_121a5744 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11479,7 +11478,7 @@ void FUN_118358f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a573c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a573c))->int_release();
   _DAT_121a573c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11502,7 +11501,7 @@ void FUN_11835960(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5754))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5754))->int_release();
   _DAT_121a5754 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11525,7 +11524,7 @@ void FUN_118359d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a574c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a574c))->int_release();
   _DAT_121a574c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11548,7 +11547,7 @@ void FUN_11835a40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5764))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5764))->int_release();
   _DAT_121a5764 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11571,7 +11570,7 @@ void FUN_11835ab0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a575c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a575c))->int_release();
   _DAT_121a575c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11594,7 +11593,7 @@ void FUN_11835b20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a576c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a576c))->int_release();
   _DAT_121a576c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11617,7 +11616,7 @@ void FUN_11835b90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5770))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5770))->int_release();
   _DAT_121a5770 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11640,7 +11639,7 @@ void FUN_11835c00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5780))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5780))->int_release();
   _DAT_121a5780 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11663,7 +11662,7 @@ void FUN_11835c70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a57a0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a57a0))->int_release();
   _DAT_121a57a0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11686,7 +11685,7 @@ void FUN_11835ce0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5794))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5794))->int_release();
   _DAT_121a5794 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11709,7 +11708,7 @@ void FUN_11835d50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5784))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5784))->int_release();
   _DAT_121a5784 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11732,7 +11731,7 @@ void FUN_11835dc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5790))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5790))->int_release();
   _DAT_121a5790 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11755,7 +11754,7 @@ void FUN_11835e30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a579c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a579c))->int_release();
   _DAT_121a579c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11778,7 +11777,7 @@ void FUN_11835ea0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5798))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5798))->int_release();
   _DAT_121a5798 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11801,7 +11800,7 @@ void FUN_11835f10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a57a4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a57a4))->int_release();
   _DAT_121a57a4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11824,7 +11823,7 @@ void FUN_11835f80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a578c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a578c))->int_release();
   _DAT_121a578c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11847,7 +11846,7 @@ void FUN_11835ff0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5788))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5788))->int_release();
   _DAT_121a5788 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11870,7 +11869,7 @@ void FUN_11836060(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a577c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a577c))->int_release();
   _DAT_121a577c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11893,7 +11892,7 @@ void FUN_118360d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5778))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5778))->int_release();
   _DAT_121a5778 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11916,7 +11915,7 @@ void FUN_11836140(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5774))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5774))->int_release();
   _DAT_121a5774 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11939,7 +11938,7 @@ void FUN_118361b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a57b4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a57b4))->int_release();
   _DAT_121a57b4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11962,7 +11961,7 @@ void FUN_11836220(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a57b8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a57b8))->int_release();
   _DAT_121a57b8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -11985,7 +11984,7 @@ void FUN_11836290(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a57c0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a57c0))->int_release();
   _DAT_121a57c0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12008,7 +12007,7 @@ void FUN_11836300(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a57e0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a57e0))->int_release();
   _DAT_121a57e0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12031,7 +12030,7 @@ void FUN_11836370(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a57d4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a57d4))->int_release();
   _DAT_121a57d4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12054,7 +12053,7 @@ void FUN_118363e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a57c4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a57c4))->int_release();
   _DAT_121a57c4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12077,7 +12076,7 @@ void FUN_11836450(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a57d0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a57d0))->int_release();
   _DAT_121a57d0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12100,7 +12099,7 @@ void FUN_118364c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a57dc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a57dc))->int_release();
   _DAT_121a57dc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12123,7 +12122,7 @@ void FUN_11836530(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a57d8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a57d8))->int_release();
   _DAT_121a57d8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12146,7 +12145,7 @@ void FUN_118365a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a57e4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a57e4))->int_release();
   _DAT_121a57e4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12169,7 +12168,7 @@ void FUN_11836610(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a57cc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a57cc))->int_release();
   _DAT_121a57cc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12192,7 +12191,7 @@ void FUN_11836680(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a57c8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a57c8))->int_release();
   _DAT_121a57c8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12215,7 +12214,7 @@ void FUN_118366f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a57bc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a57bc))->int_release();
   _DAT_121a57bc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12238,7 +12237,7 @@ void FUN_11836760(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a57f0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a57f0))->int_release();
   _DAT_121a57f0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12261,7 +12260,7 @@ void FUN_118367d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5804))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5804))->int_release();
   _DAT_121a5804 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12284,7 +12283,7 @@ void FUN_11836840(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5824))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5824))->int_release();
   _DAT_121a5824 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12307,7 +12306,7 @@ void FUN_118368b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5818))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5818))->int_release();
   _DAT_121a5818 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12330,7 +12329,7 @@ void FUN_11836920(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5808))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5808))->int_release();
   _DAT_121a5808 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12353,7 +12352,7 @@ void FUN_11836990(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5814))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5814))->int_release();
   _DAT_121a5814 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12376,7 +12375,7 @@ void FUN_11836a00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5820))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5820))->int_release();
   _DAT_121a5820 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12399,7 +12398,7 @@ void FUN_11836a70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a581c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a581c))->int_release();
   _DAT_121a581c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12422,7 +12421,7 @@ void FUN_11836ae0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5828))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5828))->int_release();
   _DAT_121a5828 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12445,7 +12444,7 @@ void FUN_11836b50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5810))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5810))->int_release();
   _DAT_121a5810 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12468,7 +12467,7 @@ void FUN_11836bc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a580c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a580c))->int_release();
   _DAT_121a580c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12491,7 +12490,7 @@ void FUN_11836c30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5800))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5800))->int_release();
   _DAT_121a5800 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12514,7 +12513,7 @@ void FUN_11836ca0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a57fc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a57fc))->int_release();
   _DAT_121a57fc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12537,7 +12536,7 @@ void FUN_11836d10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5878))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5878))->int_release();
   _DAT_121a5878 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12560,7 +12559,7 @@ void FUN_11836d80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5838))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5838))->int_release();
   _DAT_121a5838 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12583,7 +12582,7 @@ void FUN_11836df0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a587c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a587c))->int_release();
   _DAT_121a587c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12606,7 +12605,7 @@ void FUN_11836e60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5868))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5868))->int_release();
   _DAT_121a5868 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12629,7 +12628,7 @@ void FUN_11836ed0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5884))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5884))->int_release();
   _DAT_121a5884 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12652,7 +12651,7 @@ void FUN_11836f40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5870))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5870))->int_release();
   _DAT_121a5870 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12675,7 +12674,7 @@ void FUN_11836fb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a588c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a588c))->int_release();
   _DAT_121a588c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12698,7 +12697,7 @@ void FUN_11837020(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5880))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5880))->int_release();
   _DAT_121a5880 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12721,7 +12720,7 @@ void FUN_11837090(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5888))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5888))->int_release();
   _DAT_121a5888 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12744,7 +12743,7 @@ void FUN_11837100(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5874))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5874))->int_release();
   _DAT_121a5874 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12767,7 +12766,7 @@ void FUN_11837170(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5844))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5844))->int_release();
   _DAT_121a5844 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12790,7 +12789,7 @@ void FUN_118371e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5864))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5864))->int_release();
   _DAT_121a5864 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12813,7 +12812,7 @@ void FUN_11837250(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5858))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5858))->int_release();
   _DAT_121a5858 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12836,7 +12835,7 @@ void FUN_118372c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5848))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5848))->int_release();
   _DAT_121a5848 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12859,7 +12858,7 @@ void FUN_11837330(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5854))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5854))->int_release();
   _DAT_121a5854 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12882,7 +12881,7 @@ void FUN_118373a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5860))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5860))->int_release();
   _DAT_121a5860 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12905,7 +12904,7 @@ void FUN_11837410(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a585c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a585c))->int_release();
   _DAT_121a585c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12928,7 +12927,7 @@ void FUN_11837480(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a586c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a586c))->int_release();
   _DAT_121a586c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12951,7 +12950,7 @@ void FUN_118374f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5850))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5850))->int_release();
   _DAT_121a5850 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12974,7 +12973,7 @@ void FUN_11837560(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a584c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a584c))->int_release();
   _DAT_121a584c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -12997,7 +12996,7 @@ void FUN_118375d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5840))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5840))->int_release();
   _DAT_121a5840 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13020,7 +13019,7 @@ void FUN_11837640(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a583c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a583c))->int_release();
   _DAT_121a583c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13043,7 +13042,7 @@ void FUN_118376b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a58ac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a58ac))->int_release();
   _DAT_121a58ac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13066,7 +13065,7 @@ void FUN_11837720(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a58cc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a58cc))->int_release();
   _DAT_121a58cc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13089,7 +13088,7 @@ void FUN_11837790(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a58c0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a58c0))->int_release();
   _DAT_121a58c0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13112,7 +13111,7 @@ void FUN_11837800(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a58b0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a58b0))->int_release();
   _DAT_121a58b0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13135,7 +13134,7 @@ void FUN_11837870(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a58bc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a58bc))->int_release();
   _DAT_121a58bc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13158,7 +13157,7 @@ void FUN_118378e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a58c8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a58c8))->int_release();
   _DAT_121a58c8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13181,7 +13180,7 @@ void FUN_11837950(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a58c4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a58c4))->int_release();
   _DAT_121a58c4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13204,7 +13203,7 @@ void FUN_118379c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a58d0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a58d0))->int_release();
   _DAT_121a58d0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13227,7 +13226,7 @@ void FUN_11837a30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a58b8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a58b8))->int_release();
   _DAT_121a58b8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13250,7 +13249,7 @@ void FUN_11837aa0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a58b4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a58b4))->int_release();
   _DAT_121a58b4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13273,7 +13272,7 @@ void FUN_11837b10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a58a8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a58a8))->int_release();
   _DAT_121a58a8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13296,7 +13295,7 @@ void FUN_11837b80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a58a4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a58a4))->int_release();
   _DAT_121a58a4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13319,7 +13318,7 @@ void FUN_11837bf0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a58e8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a58e8))->int_release();
   _DAT_121a58e8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13342,7 +13341,7 @@ void FUN_11837c60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5908))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5908))->int_release();
   _DAT_121a5908 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13365,7 +13364,7 @@ void FUN_11837cd0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a58fc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a58fc))->int_release();
   _DAT_121a58fc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13388,7 +13387,7 @@ void FUN_11837d40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a58ec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a58ec))->int_release();
   _DAT_121a58ec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13411,7 +13410,7 @@ void FUN_11837db0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a58f8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a58f8))->int_release();
   _DAT_121a58f8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13434,7 +13433,7 @@ void FUN_11837e20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5904))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5904))->int_release();
   _DAT_121a5904 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13457,7 +13456,7 @@ void FUN_11837e90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5900))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5900))->int_release();
   _DAT_121a5900 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13480,7 +13479,7 @@ void FUN_11837f00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a590c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a590c))->int_release();
   _DAT_121a590c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13503,7 +13502,7 @@ void FUN_11837f70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a58f4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a58f4))->int_release();
   _DAT_121a58f4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13526,7 +13525,7 @@ void FUN_11837fe0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a58f0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a58f0))->int_release();
   _DAT_121a58f0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13549,7 +13548,7 @@ void FUN_11838050(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a58e4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a58e4))->int_release();
   _DAT_121a58e4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13572,7 +13571,7 @@ void FUN_118380c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a58e0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a58e0))->int_release();
   _DAT_121a58e0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13595,7 +13594,7 @@ void FUN_11838130(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5924))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5924))->int_release();
   _DAT_121a5924 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13618,7 +13617,7 @@ void FUN_118381a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5944))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5944))->int_release();
   _DAT_121a5944 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13641,7 +13640,7 @@ void FUN_11838210(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5938))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5938))->int_release();
   _DAT_121a5938 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13664,7 +13663,7 @@ void FUN_11838280(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5928))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5928))->int_release();
   _DAT_121a5928 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13687,7 +13686,7 @@ void FUN_118382f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5934))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5934))->int_release();
   _DAT_121a5934 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13710,7 +13709,7 @@ void FUN_11838360(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5940))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5940))->int_release();
   _DAT_121a5940 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13733,7 +13732,7 @@ void FUN_118383d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a593c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a593c))->int_release();
   _DAT_121a593c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13756,7 +13755,7 @@ void FUN_11838440(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5948))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5948))->int_release();
   _DAT_121a5948 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13779,7 +13778,7 @@ void FUN_118384b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5930))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5930))->int_release();
   _DAT_121a5930 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13802,7 +13801,7 @@ void FUN_11838520(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a592c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a592c))->int_release();
   _DAT_121a592c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13825,7 +13824,7 @@ void FUN_11838590(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5920))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5920))->int_release();
   _DAT_121a5920 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13848,7 +13847,7 @@ void FUN_11838600(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a591c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a591c))->int_release();
   _DAT_121a591c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13871,7 +13870,7 @@ void FUN_11838670(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5958))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5958))->int_release();
   _DAT_121a5958 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13894,7 +13893,7 @@ void FUN_118386e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5970))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5970))->int_release();
   _DAT_121a5970 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13917,7 +13916,7 @@ void FUN_11838750(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a595c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a595c))->int_release();
   _DAT_121a595c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13940,7 +13939,7 @@ void FUN_118387c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5974))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5974))->int_release();
   _DAT_121a5974 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13963,7 +13962,7 @@ void FUN_11838830(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5964))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5964))->int_release();
   _DAT_121a5964 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -13986,7 +13985,7 @@ void FUN_118388a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a597c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a597c))->int_release();
   _DAT_121a597c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14009,7 +14008,7 @@ void FUN_11838910(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5968))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5968))->int_release();
   _DAT_121a5968 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14032,7 +14031,7 @@ void FUN_11838980(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5984))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5984))->int_release();
   _DAT_121a5984 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14055,7 +14054,7 @@ void FUN_118389f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5978))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5978))->int_release();
   _DAT_121a5978 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14078,7 +14077,7 @@ void FUN_11838a60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5980))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5980))->int_release();
   _DAT_121a5980 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14101,7 +14100,7 @@ void FUN_11838ad0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a596c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a596c))->int_release();
   _DAT_121a596c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14124,7 +14123,7 @@ void FUN_11838b40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5960))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5960))->int_release();
   _DAT_121a5960 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14145,7 +14144,7 @@ void FUN_11838bb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5990))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5990))->int_release();
   DAT_121a5990 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14168,7 +14167,7 @@ void FUN_11838c20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a59d4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a59d4))->int_release();
   _DAT_121a59d4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14191,7 +14190,7 @@ void FUN_11838c90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5994))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5994))->int_release();
   _DAT_121a5994 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14214,7 +14213,7 @@ void FUN_11838d00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a59d8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a59d8))->int_release();
   _DAT_121a59d8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14237,7 +14236,7 @@ void FUN_11838d70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a59c4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a59c4))->int_release();
   _DAT_121a59c4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14260,7 +14259,7 @@ void FUN_11838de0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a59e0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a59e0))->int_release();
   _DAT_121a59e0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14283,7 +14282,7 @@ void FUN_11838e50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a59cc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a59cc))->int_release();
   _DAT_121a59cc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14306,7 +14305,7 @@ void FUN_11838ec0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a59e8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a59e8))->int_release();
   _DAT_121a59e8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14329,7 +14328,7 @@ void FUN_11838f30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a59dc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a59dc))->int_release();
   _DAT_121a59dc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14352,7 +14351,7 @@ void FUN_11838fa0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a59e4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a59e4))->int_release();
   _DAT_121a59e4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14375,7 +14374,7 @@ void FUN_11839010(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a59d0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a59d0))->int_release();
   _DAT_121a59d0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14398,7 +14397,7 @@ void FUN_11839080(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a59a0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a59a0))->int_release();
   _DAT_121a59a0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14421,7 +14420,7 @@ void FUN_118390f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a59c0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a59c0))->int_release();
   _DAT_121a59c0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14444,7 +14443,7 @@ void FUN_11839160(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a59b4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a59b4))->int_release();
   _DAT_121a59b4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14467,7 +14466,7 @@ void FUN_118391d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a59a4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a59a4))->int_release();
   _DAT_121a59a4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14490,7 +14489,7 @@ void FUN_11839240(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a59b0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a59b0))->int_release();
   _DAT_121a59b0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14513,7 +14512,7 @@ void FUN_118392b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a59bc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a59bc))->int_release();
   _DAT_121a59bc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14536,7 +14535,7 @@ void FUN_11839320(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a59b8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a59b8))->int_release();
   _DAT_121a59b8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14559,7 +14558,7 @@ void FUN_11839390(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a59c8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a59c8))->int_release();
   _DAT_121a59c8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14582,7 +14581,7 @@ void FUN_11839400(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a59ac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a59ac))->int_release();
   _DAT_121a59ac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14605,7 +14604,7 @@ void FUN_11839470(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a59a8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a59a8))->int_release();
   _DAT_121a59a8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14628,7 +14627,7 @@ void FUN_118394e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a599c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a599c))->int_release();
   _DAT_121a599c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14651,7 +14650,7 @@ void FUN_11839550(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5998))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5998))->int_release();
   _DAT_121a5998 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14674,7 +14673,7 @@ void FUN_118395c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a04))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a04))->int_release();
   _DAT_121a5a04 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14697,7 +14696,7 @@ void FUN_11839630(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a24))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a24))->int_release();
   _DAT_121a5a24 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14720,7 +14719,7 @@ void FUN_118396a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a18))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a18))->int_release();
   _DAT_121a5a18 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14743,7 +14742,7 @@ void FUN_11839710(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a08))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a08))->int_release();
   _DAT_121a5a08 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14766,7 +14765,7 @@ void FUN_11839780(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a14))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a14))->int_release();
   _DAT_121a5a14 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14789,7 +14788,7 @@ void FUN_118397f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a20))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a20))->int_release();
   _DAT_121a5a20 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14812,7 +14811,7 @@ void FUN_11839860(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a1c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a1c))->int_release();
   _DAT_121a5a1c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14835,7 +14834,7 @@ void FUN_118398d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a28))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a28))->int_release();
   _DAT_121a5a28 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14858,7 +14857,7 @@ void FUN_11839940(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a10))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a10))->int_release();
   _DAT_121a5a10 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14881,7 +14880,7 @@ void FUN_118399b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a0c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a0c))->int_release();
   _DAT_121a5a0c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14904,7 +14903,7 @@ void FUN_11839a20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a00))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a00))->int_release();
   _DAT_121a5a00 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14927,7 +14926,7 @@ void FUN_11839a90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a34))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a34))->int_release();
   _DAT_121a5a34 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14950,7 +14949,7 @@ void FUN_11839b00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a40))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a40))->int_release();
   _DAT_121a5a40 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14973,7 +14972,7 @@ void FUN_11839b70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a60))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a60))->int_release();
   _DAT_121a5a60 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -14996,7 +14995,7 @@ void FUN_11839be0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a54))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a54))->int_release();
   _DAT_121a5a54 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15019,7 +15018,7 @@ void FUN_11839c50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a44))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a44))->int_release();
   _DAT_121a5a44 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15042,7 +15041,7 @@ void FUN_11839cc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a50))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a50))->int_release();
   _DAT_121a5a50 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15065,7 +15064,7 @@ void FUN_11839d30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a5c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a5c))->int_release();
   _DAT_121a5a5c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15088,7 +15087,7 @@ void FUN_11839da0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a58))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a58))->int_release();
   _DAT_121a5a58 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15111,7 +15110,7 @@ void FUN_11839e10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a64))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a64))->int_release();
   _DAT_121a5a64 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15134,7 +15133,7 @@ void FUN_11839e80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a4c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a4c))->int_release();
   _DAT_121a5a4c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15157,7 +15156,7 @@ void FUN_11839ef0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a48))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a48))->int_release();
   _DAT_121a5a48 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15180,7 +15179,7 @@ void FUN_11839f60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a3c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a3c))->int_release();
   _DAT_121a5a3c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15203,7 +15202,7 @@ void FUN_11839fd0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a38))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a38))->int_release();
   _DAT_121a5a38 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15226,7 +15225,7 @@ void FUN_1183a040(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a74))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a74))->int_release();
   _DAT_121a5a74 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15249,7 +15248,7 @@ void FUN_1183a0b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a78))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a78))->int_release();
   _DAT_121a5a78 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15272,7 +15271,7 @@ void FUN_1183a120(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a88))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a88))->int_release();
   _DAT_121a5a88 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15295,7 +15294,7 @@ void FUN_1183a190(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5aa8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5aa8))->int_release();
   _DAT_121a5aa8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15318,7 +15317,7 @@ void FUN_1183a200(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a9c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a9c))->int_release();
   _DAT_121a5a9c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15341,7 +15340,7 @@ void FUN_1183a270(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a8c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a8c))->int_release();
   _DAT_121a5a8c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15364,7 +15363,7 @@ void FUN_1183a2e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a98))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a98))->int_release();
   _DAT_121a5a98 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15387,7 +15386,7 @@ void FUN_1183a350(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5aa4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5aa4))->int_release();
   _DAT_121a5aa4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15410,7 +15409,7 @@ void FUN_1183a3c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5aa0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5aa0))->int_release();
   _DAT_121a5aa0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15433,7 +15432,7 @@ void FUN_1183a430(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ab0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ab0))->int_release();
   _DAT_121a5ab0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15456,7 +15455,7 @@ void FUN_1183a4a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a94))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a94))->int_release();
   _DAT_121a5a94 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15479,7 +15478,7 @@ void FUN_1183a510(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a90))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a90))->int_release();
   _DAT_121a5a90 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15502,7 +15501,7 @@ void FUN_1183a580(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a84))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a84))->int_release();
   _DAT_121a5a84 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15525,7 +15524,7 @@ void FUN_1183a5f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a7c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a7c))->int_release();
   _DAT_121a5a7c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15548,7 +15547,7 @@ void FUN_1183a660(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5aac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5aac))->int_release();
   _DAT_121a5aac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15571,7 +15570,7 @@ void FUN_1183a6d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5a80))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5a80))->int_release();
   _DAT_121a5a80 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15594,7 +15593,7 @@ void FUN_1183a760(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ac8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ac8))->int_release();
   _DAT_121a5ac8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15617,7 +15616,7 @@ void FUN_1183a7d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ae8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ae8))->int_release();
   _DAT_121a5ae8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15640,7 +15639,7 @@ void FUN_1183a840(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5adc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5adc))->int_release();
   _DAT_121a5adc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15663,7 +15662,7 @@ void FUN_1183a8b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5acc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5acc))->int_release();
   _DAT_121a5acc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15686,7 +15685,7 @@ void FUN_1183a920(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ad8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ad8))->int_release();
   _DAT_121a5ad8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15709,7 +15708,7 @@ void FUN_1183a990(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ae4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ae4))->int_release();
   _DAT_121a5ae4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15732,7 +15731,7 @@ void FUN_1183aa00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ae0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ae0))->int_release();
   _DAT_121a5ae0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15755,7 +15754,7 @@ void FUN_1183aa70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5aec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5aec))->int_release();
   _DAT_121a5aec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15778,7 +15777,7 @@ void FUN_1183aae0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ad4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ad4))->int_release();
   _DAT_121a5ad4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15801,7 +15800,7 @@ void FUN_1183ab50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ad0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ad0))->int_release();
   _DAT_121a5ad0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15824,7 +15823,7 @@ void FUN_1183abc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ac4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ac4))->int_release();
   _DAT_121a5ac4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15847,7 +15846,7 @@ void FUN_1183ac30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ac0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ac0))->int_release();
   _DAT_121a5ac0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15870,7 +15869,7 @@ void FUN_1183aca0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5b00))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5b00))->int_release();
   _DAT_121a5b00 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15893,7 +15892,7 @@ void FUN_1183ad10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5b20))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5b20))->int_release();
   _DAT_121a5b20 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15916,7 +15915,7 @@ void FUN_1183ad80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5b14))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5b14))->int_release();
   _DAT_121a5b14 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15939,7 +15938,7 @@ void FUN_1183adf0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5b04))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5b04))->int_release();
   _DAT_121a5b04 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15962,7 +15961,7 @@ void FUN_1183ae60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5b10))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5b10))->int_release();
   _DAT_121a5b10 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -15985,7 +15984,7 @@ void FUN_1183aed0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5b1c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5b1c))->int_release();
   _DAT_121a5b1c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16008,7 +16007,7 @@ void FUN_1183af40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5b18))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5b18))->int_release();
   _DAT_121a5b18 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16031,7 +16030,7 @@ void FUN_1183afb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5b24))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5b24))->int_release();
   _DAT_121a5b24 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16054,7 +16053,7 @@ void FUN_1183b020(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5b0c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5b0c))->int_release();
   _DAT_121a5b0c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16077,7 +16076,7 @@ void FUN_1183b090(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5b08))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5b08))->int_release();
   _DAT_121a5b08 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16100,7 +16099,7 @@ void FUN_1183b110(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5afc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5afc))->int_release();
   _DAT_121a5afc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16123,7 +16122,7 @@ void FUN_1183b180(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ca0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ca0))->int_release();
   _DAT_121a5ca0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16146,7 +16145,7 @@ void FUN_1183b1f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5cc0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5cc0))->int_release();
   _DAT_121a5cc0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16169,7 +16168,7 @@ void FUN_1183b260(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5cb4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5cb4))->int_release();
   _DAT_121a5cb4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16192,7 +16191,7 @@ void FUN_1183b2d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ca4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ca4))->int_release();
   _DAT_121a5ca4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16215,7 +16214,7 @@ void FUN_1183b340(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5cb0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5cb0))->int_release();
   _DAT_121a5cb0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16238,7 +16237,7 @@ void FUN_1183b3b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5cbc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5cbc))->int_release();
   _DAT_121a5cbc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16261,7 +16260,7 @@ void FUN_1183b420(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5cb8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5cb8))->int_release();
   _DAT_121a5cb8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16284,7 +16283,7 @@ void FUN_1183b490(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5cc4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5cc4))->int_release();
   _DAT_121a5cc4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16307,7 +16306,7 @@ void FUN_1183b500(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5cac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5cac))->int_release();
   _DAT_121a5cac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16330,7 +16329,7 @@ void FUN_1183b570(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ca8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ca8))->int_release();
   _DAT_121a5ca8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16353,7 +16352,7 @@ void FUN_1183b5e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5c9c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5c9c))->int_release();
   _DAT_121a5c9c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16376,7 +16375,7 @@ void FUN_1183b650(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5c98))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5c98))->int_release();
   _DAT_121a5c98 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16399,7 +16398,7 @@ void FUN_1183b6c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5cd8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5cd8))->int_release();
   _DAT_121a5cd8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16422,7 +16421,7 @@ void FUN_1183b730(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5cf8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5cf8))->int_release();
   _DAT_121a5cf8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16445,7 +16444,7 @@ void FUN_1183b7a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5cec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5cec))->int_release();
   _DAT_121a5cec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16468,7 +16467,7 @@ void FUN_1183b810(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5cdc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5cdc))->int_release();
   _DAT_121a5cdc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16491,7 +16490,7 @@ void FUN_1183b880(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ce8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ce8))->int_release();
   _DAT_121a5ce8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16514,7 +16513,7 @@ void FUN_1183b8f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5cf4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5cf4))->int_release();
   _DAT_121a5cf4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16537,7 +16536,7 @@ void FUN_1183b960(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5cf0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5cf0))->int_release();
   _DAT_121a5cf0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16560,7 +16559,7 @@ void FUN_1183b9d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5cfc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5cfc))->int_release();
   _DAT_121a5cfc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16583,7 +16582,7 @@ void FUN_1183ba40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ce4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ce4))->int_release();
   _DAT_121a5ce4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16606,7 +16605,7 @@ void FUN_1183bab0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ce0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ce0))->int_release();
   _DAT_121a5ce0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16629,7 +16628,7 @@ void FUN_1183bb20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5cd4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5cd4))->int_release();
   _DAT_121a5cd4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16652,7 +16651,7 @@ void FUN_1183bb90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d08))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d08))->int_release();
   _DAT_121a5d08 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16675,7 +16674,7 @@ void FUN_1183bc00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d0c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d0c))->int_release();
   _DAT_121a5d0c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16698,7 +16697,7 @@ void FUN_1183bc70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d14))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d14))->int_release();
   _DAT_121a5d14 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16721,7 +16720,7 @@ void FUN_1183bce0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d20))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d20))->int_release();
   _DAT_121a5d20 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16744,7 +16743,7 @@ void FUN_1183bd50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d40))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d40))->int_release();
   _DAT_121a5d40 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16767,7 +16766,7 @@ void FUN_1183bdc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d34))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d34))->int_release();
   _DAT_121a5d34 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16790,7 +16789,7 @@ void FUN_1183be30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d24))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d24))->int_release();
   _DAT_121a5d24 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16813,7 +16812,7 @@ void FUN_1183bea0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d30))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d30))->int_release();
   _DAT_121a5d30 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16836,7 +16835,7 @@ void FUN_1183bf10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d3c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d3c))->int_release();
   _DAT_121a5d3c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16859,7 +16858,7 @@ void FUN_1183bf80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d38))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d38))->int_release();
   _DAT_121a5d38 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16882,7 +16881,7 @@ void FUN_1183bff0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d44))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d44))->int_release();
   _DAT_121a5d44 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16905,7 +16904,7 @@ void FUN_1183c060(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d2c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d2c))->int_release();
   _DAT_121a5d2c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16928,7 +16927,7 @@ void FUN_1183c0d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d28))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d28))->int_release();
   _DAT_121a5d28 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16951,7 +16950,7 @@ void FUN_1183c140(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d1c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d1c))->int_release();
   _DAT_121a5d1c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16974,7 +16973,7 @@ void FUN_1183c1b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d18))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d18))->int_release();
   _DAT_121a5d18 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -16997,7 +16996,7 @@ void FUN_1183c220(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d5c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d5c))->int_release();
   _DAT_121a5d5c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17020,7 +17019,7 @@ void FUN_1183c290(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d7c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d7c))->int_release();
   _DAT_121a5d7c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17043,7 +17042,7 @@ void FUN_1183c300(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d70))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d70))->int_release();
   _DAT_121a5d70 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17066,7 +17065,7 @@ void FUN_1183c370(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d60))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d60))->int_release();
   _DAT_121a5d60 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17089,7 +17088,7 @@ void FUN_1183c3e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d6c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d6c))->int_release();
   _DAT_121a5d6c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17112,7 +17111,7 @@ void FUN_1183c450(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d78))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d78))->int_release();
   _DAT_121a5d78 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17135,7 +17134,7 @@ void FUN_1183c4c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d74))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d74))->int_release();
   _DAT_121a5d74 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17158,7 +17157,7 @@ void FUN_1183c530(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d80))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d80))->int_release();
   _DAT_121a5d80 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17181,7 +17180,7 @@ void FUN_1183c5a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d68))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d68))->int_release();
   _DAT_121a5d68 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17204,7 +17203,7 @@ void FUN_1183c610(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d64))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d64))->int_release();
   _DAT_121a5d64 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17227,7 +17226,7 @@ void FUN_1183c680(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d58))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d58))->int_release();
   _DAT_121a5d58 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17250,7 +17249,7 @@ void FUN_1183c6f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d54))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d54))->int_release();
   _DAT_121a5d54 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17273,7 +17272,7 @@ void FUN_1183c760(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d98))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d98))->int_release();
   _DAT_121a5d98 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17296,7 +17295,7 @@ void FUN_1183c7d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5db8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5db8))->int_release();
   _DAT_121a5db8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17319,7 +17318,7 @@ void FUN_1183c840(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5dac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5dac))->int_release();
   _DAT_121a5dac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17342,7 +17341,7 @@ void FUN_1183c8b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d9c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d9c))->int_release();
   _DAT_121a5d9c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17365,7 +17364,7 @@ void FUN_1183c920(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5da8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5da8))->int_release();
   _DAT_121a5da8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17388,7 +17387,7 @@ void FUN_1183c990(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5db4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5db4))->int_release();
   _DAT_121a5db4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17411,7 +17410,7 @@ void FUN_1183ca00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5db0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5db0))->int_release();
   _DAT_121a5db0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17434,7 +17433,7 @@ void FUN_1183ca70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5dbc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5dbc))->int_release();
   _DAT_121a5dbc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17457,7 +17456,7 @@ void FUN_1183cae0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5da4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5da4))->int_release();
   _DAT_121a5da4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17480,7 +17479,7 @@ void FUN_1183cb50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5da0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5da0))->int_release();
   _DAT_121a5da0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17503,7 +17502,7 @@ void FUN_1183cbc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d94))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d94))->int_release();
   _DAT_121a5d94 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17526,7 +17525,7 @@ void FUN_1183cc30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5d90))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5d90))->int_release();
   _DAT_121a5d90 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17549,7 +17548,7 @@ void FUN_1183cca0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5dcc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5dcc))->int_release();
   _DAT_121a5dcc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17572,7 +17571,7 @@ void FUN_1183cd10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5dd8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5dd8))->int_release();
   _DAT_121a5dd8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17595,7 +17594,7 @@ void FUN_1183cd80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e00))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e00))->int_release();
   _DAT_121a5e00 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17618,7 +17617,7 @@ void FUN_1183cdf0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5dec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5dec))->int_release();
   _DAT_121a5dec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17641,7 +17640,7 @@ void FUN_1183ce60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ddc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ddc))->int_release();
   _DAT_121a5ddc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17664,7 +17663,7 @@ void FUN_1183ced0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5de8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5de8))->int_release();
   _DAT_121a5de8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17687,7 +17686,7 @@ void FUN_1183cf40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5dfc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5dfc))->int_release();
   _DAT_121a5dfc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17744,7 +17743,7 @@ void FUN_1183d020(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5df0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5df0))->int_release();
   _DAT_121a5df0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17767,7 +17766,7 @@ void FUN_1183d090(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e04))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e04))->int_release();
   _DAT_121a5e04 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17790,7 +17789,7 @@ void FUN_1183d100(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5de4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5de4))->int_release();
   _DAT_121a5de4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17813,7 +17812,7 @@ void FUN_1183d170(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5de0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5de0))->int_release();
   _DAT_121a5de0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17836,7 +17835,7 @@ void FUN_1183d1e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5dd4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5dd4))->int_release();
   _DAT_121a5dd4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17859,7 +17858,7 @@ void FUN_1183d250(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5dd0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5dd0))->int_release();
   _DAT_121a5dd0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17882,7 +17881,7 @@ void FUN_1183d2d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e1c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e1c))->int_release();
   _DAT_121a5e1c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17905,7 +17904,7 @@ void FUN_1183d340(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e3c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e3c))->int_release();
   _DAT_121a5e3c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17928,7 +17927,7 @@ void FUN_1183d3b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e30))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e30))->int_release();
   _DAT_121a5e30 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17951,7 +17950,7 @@ void FUN_1183d420(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e20))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e20))->int_release();
   _DAT_121a5e20 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17974,7 +17973,7 @@ void FUN_1183d490(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e2c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e2c))->int_release();
   _DAT_121a5e2c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -17997,7 +17996,7 @@ void FUN_1183d500(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e38))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e38))->int_release();
   _DAT_121a5e38 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18020,7 +18019,7 @@ void FUN_1183d570(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e34))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e34))->int_release();
   _DAT_121a5e34 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18043,7 +18042,7 @@ void FUN_1183d5e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e40))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e40))->int_release();
   _DAT_121a5e40 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18066,7 +18065,7 @@ void FUN_1183d650(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e28))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e28))->int_release();
   _DAT_121a5e28 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18089,7 +18088,7 @@ void FUN_1183d6c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e24))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e24))->int_release();
   _DAT_121a5e24 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18112,7 +18111,7 @@ void FUN_1183d730(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e18))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e18))->int_release();
   _DAT_121a5e18 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18135,7 +18134,7 @@ void FUN_1183d7a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e14))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e14))->int_release();
   _DAT_121a5e14 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18158,7 +18157,7 @@ void FUN_1183d810(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e58))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e58))->int_release();
   _DAT_121a5e58 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18181,7 +18180,7 @@ void FUN_1183d880(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e78))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e78))->int_release();
   _DAT_121a5e78 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18204,7 +18203,7 @@ void FUN_1183d8f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e6c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e6c))->int_release();
   _DAT_121a5e6c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18227,7 +18226,7 @@ void FUN_1183d960(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e5c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e5c))->int_release();
   _DAT_121a5e5c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18250,7 +18249,7 @@ void FUN_1183d9d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e68))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e68))->int_release();
   _DAT_121a5e68 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18273,7 +18272,7 @@ void FUN_1183da40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e74))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e74))->int_release();
   _DAT_121a5e74 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18296,7 +18295,7 @@ void FUN_1183dab0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e70))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e70))->int_release();
   _DAT_121a5e70 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18319,7 +18318,7 @@ void FUN_1183db20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e7c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e7c))->int_release();
   _DAT_121a5e7c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18342,7 +18341,7 @@ void FUN_1183db90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e64))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e64))->int_release();
   _DAT_121a5e64 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18365,7 +18364,7 @@ void FUN_1183dc00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e60))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e60))->int_release();
   _DAT_121a5e60 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18388,7 +18387,7 @@ void FUN_1183dc70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e54))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e54))->int_release();
   _DAT_121a5e54 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18411,7 +18410,7 @@ void FUN_1183dce0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e50))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e50))->int_release();
   _DAT_121a5e50 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18434,7 +18433,7 @@ void FUN_1183dd50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e80))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e80))->int_release();
   _DAT_121a5e80 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18457,7 +18456,7 @@ void FUN_1183ddc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e98))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e98))->int_release();
   _DAT_121a5e98 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18480,7 +18479,7 @@ void FUN_1183de30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5eb8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5eb8))->int_release();
   _DAT_121a5eb8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18503,7 +18502,7 @@ void FUN_1183dea0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5eac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5eac))->int_release();
   _DAT_121a5eac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18526,7 +18525,7 @@ void FUN_1183df10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e9c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e9c))->int_release();
   _DAT_121a5e9c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18549,7 +18548,7 @@ void FUN_1183df80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ea8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ea8))->int_release();
   _DAT_121a5ea8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18572,7 +18571,7 @@ void FUN_1183dff0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5eb4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5eb4))->int_release();
   _DAT_121a5eb4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18595,7 +18594,7 @@ void FUN_1183e060(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5eb0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5eb0))->int_release();
   _DAT_121a5eb0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18618,7 +18617,7 @@ void FUN_1183e0d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ebc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ebc))->int_release();
   _DAT_121a5ebc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18641,7 +18640,7 @@ void FUN_1183e140(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ea4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ea4))->int_release();
   _DAT_121a5ea4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18664,7 +18663,7 @@ void FUN_1183e1b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ea0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ea0))->int_release();
   _DAT_121a5ea0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18687,7 +18686,7 @@ void FUN_1183e220(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e94))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e94))->int_release();
   _DAT_121a5e94 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18710,7 +18709,7 @@ void FUN_1183e290(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5e90))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5e90))->int_release();
   _DAT_121a5e90 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18733,7 +18732,7 @@ void FUN_1183e300(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ed4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ed4))->int_release();
   _DAT_121a5ed4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18756,7 +18755,7 @@ void FUN_1183e370(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ef4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ef4))->int_release();
   _DAT_121a5ef4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18779,7 +18778,7 @@ void FUN_1183e3e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ee8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ee8))->int_release();
   _DAT_121a5ee8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18802,7 +18801,7 @@ void FUN_1183e450(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ed8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ed8))->int_release();
   _DAT_121a5ed8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18825,7 +18824,7 @@ void FUN_1183e4c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ee4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ee4))->int_release();
   _DAT_121a5ee4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18848,7 +18847,7 @@ void FUN_1183e530(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ef0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ef0))->int_release();
   _DAT_121a5ef0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18871,7 +18870,7 @@ void FUN_1183e5a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5eec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5eec))->int_release();
   _DAT_121a5eec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18894,7 +18893,7 @@ void FUN_1183e610(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ef8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ef8))->int_release();
   _DAT_121a5ef8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18917,7 +18916,7 @@ void FUN_1183e680(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ee0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ee0))->int_release();
   _DAT_121a5ee0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18940,7 +18939,7 @@ void FUN_1183e6f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5edc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5edc))->int_release();
   _DAT_121a5edc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18963,7 +18962,7 @@ void FUN_1183e760(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ed0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ed0))->int_release();
   _DAT_121a5ed0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -18986,7 +18985,7 @@ void FUN_1183e7d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5ecc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5ecc))->int_release();
   _DAT_121a5ecc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19009,7 +19008,7 @@ void FUN_1183e840(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f10))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f10))->int_release();
   _DAT_121a5f10 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19032,7 +19031,7 @@ void FUN_1183e8b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f30))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f30))->int_release();
   _DAT_121a5f30 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19055,7 +19054,7 @@ void FUN_1183e920(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f24))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f24))->int_release();
   _DAT_121a5f24 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19078,7 +19077,7 @@ void FUN_1183e990(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f14))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f14))->int_release();
   _DAT_121a5f14 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19101,7 +19100,7 @@ void FUN_1183ea00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f20))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f20))->int_release();
   _DAT_121a5f20 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19124,7 +19123,7 @@ void FUN_1183ea70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f2c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f2c))->int_release();
   _DAT_121a5f2c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19147,7 +19146,7 @@ void FUN_1183eae0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f28))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f28))->int_release();
   _DAT_121a5f28 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19170,7 +19169,7 @@ void FUN_1183eb50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f34))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f34))->int_release();
   _DAT_121a5f34 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19193,7 +19192,7 @@ void FUN_1183ebc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f1c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f1c))->int_release();
   _DAT_121a5f1c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19216,7 +19215,7 @@ void FUN_1183ec30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f18))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f18))->int_release();
   _DAT_121a5f18 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19239,7 +19238,7 @@ void FUN_1183eca0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f0c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f0c))->int_release();
   _DAT_121a5f0c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19262,7 +19261,7 @@ void FUN_1183ed10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f08))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f08))->int_release();
   _DAT_121a5f08 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19285,7 +19284,7 @@ void FUN_1183ed80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f50))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f50))->int_release();
   _DAT_121a5f50 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19308,7 +19307,7 @@ void FUN_1183edf0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f70))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f70))->int_release();
   _DAT_121a5f70 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19331,7 +19330,7 @@ void FUN_1183ee60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f64))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f64))->int_release();
   _DAT_121a5f64 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19354,7 +19353,7 @@ void FUN_1183eed0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f54))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f54))->int_release();
   _DAT_121a5f54 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19377,7 +19376,7 @@ void FUN_1183ef40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f60))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f60))->int_release();
   _DAT_121a5f60 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19400,7 +19399,7 @@ void FUN_1183efb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f6c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f6c))->int_release();
   _DAT_121a5f6c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19423,7 +19422,7 @@ void FUN_1183f020(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f68))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f68))->int_release();
   _DAT_121a5f68 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19446,7 +19445,7 @@ void FUN_1183f090(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f74))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f74))->int_release();
   _DAT_121a5f74 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19469,7 +19468,7 @@ void FUN_1183f100(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f5c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f5c))->int_release();
   _DAT_121a5f5c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19492,7 +19491,7 @@ void FUN_1183f170(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f58))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f58))->int_release();
   _DAT_121a5f58 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19515,7 +19514,7 @@ void FUN_1183f1e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f4c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f4c))->int_release();
   _DAT_121a5f4c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19538,7 +19537,7 @@ void FUN_1183f250(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a5f48))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a5f48))->int_release();
   _DAT_121a5f48 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19561,10 +19560,10 @@ void FUN_1183f2c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6014))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6014))->int_release();
   _DAT_121a6014 = (int)(0);
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6008))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6008))->int_release();
   _DAT_121a6008 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19587,7 +19586,7 @@ void FUN_1183f370(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a604c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a604c))->int_release();
   _DAT_121a604c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19610,7 +19609,7 @@ void FUN_1183f3e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a606c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a606c))->int_release();
   _DAT_121a606c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19633,7 +19632,7 @@ void FUN_1183f450(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6060))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6060))->int_release();
   _DAT_121a6060 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19656,7 +19655,7 @@ void FUN_1183f4c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6050))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6050))->int_release();
   _DAT_121a6050 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19679,7 +19678,7 @@ void FUN_1183f530(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a605c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a605c))->int_release();
   _DAT_121a605c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19702,7 +19701,7 @@ void FUN_1183f5a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6068))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6068))->int_release();
   _DAT_121a6068 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19725,7 +19724,7 @@ void FUN_1183f610(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6064))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6064))->int_release();
   _DAT_121a6064 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19748,7 +19747,7 @@ void FUN_1183f680(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6070))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6070))->int_release();
   _DAT_121a6070 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19771,7 +19770,7 @@ void FUN_1183f6f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6058))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6058))->int_release();
   _DAT_121a6058 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19794,7 +19793,7 @@ void FUN_1183f760(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6054))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6054))->int_release();
   _DAT_121a6054 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19817,7 +19816,7 @@ void FUN_1183f7d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6048))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6048))->int_release();
   _DAT_121a6048 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19840,7 +19839,7 @@ void FUN_1183f840(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6044))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6044))->int_release();
   _DAT_121a6044 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19863,7 +19862,7 @@ void FUN_1183f8b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6088))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6088))->int_release();
   _DAT_121a6088 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19886,7 +19885,7 @@ void FUN_1183f920(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a60a8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a60a8))->int_release();
   _DAT_121a60a8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19909,7 +19908,7 @@ void FUN_1183f990(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a609c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a609c))->int_release();
   _DAT_121a609c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19932,7 +19931,7 @@ void FUN_1183fa00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a608c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a608c))->int_release();
   _DAT_121a608c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19955,7 +19954,7 @@ void FUN_1183fa70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6098))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6098))->int_release();
   _DAT_121a6098 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -19978,7 +19977,7 @@ void FUN_1183fae0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a60a4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a60a4))->int_release();
   _DAT_121a60a4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20001,7 +20000,7 @@ void FUN_1183fb50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a60a0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a60a0))->int_release();
   _DAT_121a60a0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20024,7 +20023,7 @@ void FUN_1183fbc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a60ac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a60ac))->int_release();
   _DAT_121a60ac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20047,7 +20046,7 @@ void FUN_1183fc30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6094))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6094))->int_release();
   _DAT_121a6094 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20070,7 +20069,7 @@ void FUN_1183fca0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6090))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6090))->int_release();
   _DAT_121a6090 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20093,7 +20092,7 @@ void FUN_1183fd10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6084))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6084))->int_release();
   _DAT_121a6084 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20116,7 +20115,7 @@ void FUN_1183fd80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6080))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6080))->int_release();
   _DAT_121a6080 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20139,7 +20138,7 @@ void FUN_1183fdf0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a60b0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a60b0))->int_release();
   _DAT_121a60b0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20162,7 +20161,7 @@ void FUN_1183fe60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a60c0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a60c0))->int_release();
   _DAT_121a60c0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20185,7 +20184,7 @@ void FUN_1183fed0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a60c4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a60c4))->int_release();
   _DAT_121a60c4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20208,7 +20207,7 @@ void FUN_1183ff40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a60d0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a60d0))->int_release();
   _DAT_121a60d0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20231,7 +20230,7 @@ void FUN_1183ffb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a60f0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a60f0))->int_release();
   _DAT_121a60f0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20254,7 +20253,7 @@ void FUN_11840020(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a60e4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a60e4))->int_release();
   _DAT_121a60e4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20277,7 +20276,7 @@ void FUN_11840090(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a60d4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a60d4))->int_release();
   _DAT_121a60d4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20300,7 +20299,7 @@ void FUN_11840100(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a60e0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a60e0))->int_release();
   _DAT_121a60e0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20323,7 +20322,7 @@ void FUN_11840170(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a60ec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a60ec))->int_release();
   _DAT_121a60ec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20346,7 +20345,7 @@ void FUN_118401e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a60e8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a60e8))->int_release();
   _DAT_121a60e8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20369,7 +20368,7 @@ void FUN_11840250(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a60f4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a60f4))->int_release();
   _DAT_121a60f4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20392,7 +20391,7 @@ void FUN_118402c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a60dc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a60dc))->int_release();
   _DAT_121a60dc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20415,7 +20414,7 @@ void FUN_11840330(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a60d8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a60d8))->int_release();
   _DAT_121a60d8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20438,7 +20437,7 @@ void FUN_118403a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a60cc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a60cc))->int_release();
   _DAT_121a60cc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20461,7 +20460,7 @@ void FUN_11840410(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a60c8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a60c8))->int_release();
   _DAT_121a60c8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20484,7 +20483,7 @@ void FUN_11840480(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6104))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6104))->int_release();
   _DAT_121a6104 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20507,7 +20506,7 @@ void FUN_118404f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6110))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6110))->int_release();
   _DAT_121a6110 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20530,7 +20529,7 @@ void FUN_11840560(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6130))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6130))->int_release();
   _DAT_121a6130 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20553,7 +20552,7 @@ void FUN_118405d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6124))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6124))->int_release();
   _DAT_121a6124 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20576,7 +20575,7 @@ void FUN_11840640(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6114))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6114))->int_release();
   _DAT_121a6114 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20599,7 +20598,7 @@ void FUN_118406b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6120))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6120))->int_release();
   _DAT_121a6120 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20622,7 +20621,7 @@ void FUN_11840720(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a612c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a612c))->int_release();
   _DAT_121a612c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20645,7 +20644,7 @@ void FUN_11840790(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6128))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6128))->int_release();
   _DAT_121a6128 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20668,7 +20667,7 @@ void FUN_11840800(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6134))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6134))->int_release();
   _DAT_121a6134 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20691,7 +20690,7 @@ void FUN_11840870(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a611c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a611c))->int_release();
   _DAT_121a611c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20714,7 +20713,7 @@ void FUN_118408e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6118))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6118))->int_release();
   _DAT_121a6118 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20737,7 +20736,7 @@ void FUN_11840950(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a610c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a610c))->int_release();
   _DAT_121a610c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20760,7 +20759,7 @@ void FUN_118409c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6108))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6108))->int_release();
   _DAT_121a6108 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20783,7 +20782,7 @@ void FUN_11840a30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a614c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a614c))->int_release();
   _DAT_121a614c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20806,7 +20805,7 @@ void FUN_11840aa0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a616c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a616c))->int_release();
   _DAT_121a616c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20829,7 +20828,7 @@ void FUN_11840b10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6160))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6160))->int_release();
   _DAT_121a6160 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20852,7 +20851,7 @@ void FUN_11840b80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6150))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6150))->int_release();
   _DAT_121a6150 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20875,7 +20874,7 @@ void FUN_11840bf0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a615c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a615c))->int_release();
   _DAT_121a615c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20898,7 +20897,7 @@ void FUN_11840c60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6168))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6168))->int_release();
   _DAT_121a6168 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20921,7 +20920,7 @@ void FUN_11840cd0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6164))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6164))->int_release();
   _DAT_121a6164 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20944,7 +20943,7 @@ void FUN_11840d40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6170))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6170))->int_release();
   _DAT_121a6170 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20967,7 +20966,7 @@ void FUN_11840db0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6158))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6158))->int_release();
   _DAT_121a6158 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -20990,7 +20989,7 @@ void FUN_11840e20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6154))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6154))->int_release();
   _DAT_121a6154 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21013,7 +21012,7 @@ void FUN_11840e90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6148))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6148))->int_release();
   _DAT_121a6148 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21036,7 +21035,7 @@ void FUN_11840f00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6144))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6144))->int_release();
   _DAT_121a6144 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21059,7 +21058,7 @@ void FUN_11840fe0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6180))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6180))->int_release();
   _DAT_121a6180 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21082,7 +21081,7 @@ void FUN_11841050(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6184))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6184))->int_release();
   _DAT_121a6184 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21105,7 +21104,7 @@ void FUN_118410c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6188))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6188))->int_release();
   _DAT_121a6188 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21128,7 +21127,7 @@ void FUN_11841130(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a618c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a618c))->int_release();
   _DAT_121a618c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21151,7 +21150,7 @@ void FUN_118411a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6190))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6190))->int_release();
   _DAT_121a6190 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21174,7 +21173,7 @@ void FUN_11841210(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a61a0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a61a0))->int_release();
   _DAT_121a61a0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21197,7 +21196,7 @@ void FUN_11841280(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a61c0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a61c0))->int_release();
   _DAT_121a61c0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21220,7 +21219,7 @@ void FUN_118412f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a61b4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a61b4))->int_release();
   _DAT_121a61b4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21243,7 +21242,7 @@ void FUN_11841360(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a61a4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a61a4))->int_release();
   _DAT_121a61a4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21266,7 +21265,7 @@ void FUN_118413d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a61b0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a61b0))->int_release();
   _DAT_121a61b0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21289,7 +21288,7 @@ void FUN_11841440(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a61bc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a61bc))->int_release();
   _DAT_121a61bc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21312,7 +21311,7 @@ void FUN_118414b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a61b8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a61b8))->int_release();
   _DAT_121a61b8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21335,7 +21334,7 @@ void FUN_11841520(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a61c4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a61c4))->int_release();
   _DAT_121a61c4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21358,7 +21357,7 @@ void FUN_11841590(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a61ac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a61ac))->int_release();
   _DAT_121a61ac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21381,7 +21380,7 @@ void FUN_11841600(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a61a8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a61a8))->int_release();
   _DAT_121a61a8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21404,7 +21403,7 @@ void FUN_11841670(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a619c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a619c))->int_release();
   _DAT_121a619c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21427,7 +21426,7 @@ void FUN_118416e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6198))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6198))->int_release();
   _DAT_121a6198 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21450,7 +21449,7 @@ void FUN_11841750(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a61d4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a61d4))->int_release();
   _DAT_121a61d4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21473,7 +21472,7 @@ void FUN_118417c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a61e0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a61e0))->int_release();
   _DAT_121a61e0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21496,7 +21495,7 @@ void FUN_11841830(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a61d8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a61d8))->int_release();
   _DAT_121a61d8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21519,7 +21518,7 @@ void FUN_118418a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a61ec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a61ec))->int_release();
   _DAT_121a61ec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21542,7 +21541,7 @@ void FUN_11841910(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6210))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6210))->int_release();
   _DAT_121a6210 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21563,7 +21562,7 @@ void FUN_11841980(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6220))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6220))->int_release();
   DAT_121a6220 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21586,7 +21585,7 @@ void FUN_118419f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6200))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6200))->int_release();
   _DAT_121a6200 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21609,7 +21608,7 @@ void FUN_11841a60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a61f0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a61f0))->int_release();
   _DAT_121a61f0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21630,7 +21629,7 @@ void FUN_11841ad0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a61e4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a61e4))->int_release();
   DAT_121a61e4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21653,7 +21652,7 @@ void FUN_11841b40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a621c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a621c))->int_release();
   _DAT_121a621c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21676,7 +21675,7 @@ void FUN_11841bb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a61fc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a61fc))->int_release();
   _DAT_121a61fc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21699,7 +21698,7 @@ void FUN_11841c20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a620c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a620c))->int_release();
   _DAT_121a620c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21722,7 +21721,7 @@ void FUN_11841c90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6204))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6204))->int_release();
   _DAT_121a6204 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21745,7 +21744,7 @@ void FUN_11841d00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6214))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6214))->int_release();
   _DAT_121a6214 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21768,7 +21767,7 @@ void FUN_11841d70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a61f8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a61f8))->int_release();
   _DAT_121a61f8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21791,7 +21790,7 @@ void FUN_11841de0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a61f4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a61f4))->int_release();
   _DAT_121a61f4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21814,7 +21813,7 @@ void FUN_11841e50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a61e8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a61e8))->int_release();
   _DAT_121a61e8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21837,7 +21836,7 @@ void FUN_11841ec0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6218))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6218))->int_release();
   _DAT_121a6218 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21860,7 +21859,7 @@ void FUN_11841f30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6208))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6208))->int_release();
   _DAT_121a6208 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21881,7 +21880,7 @@ void FUN_11841fa0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6234))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6234))->int_release();
   DAT_121a6234 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21904,7 +21903,7 @@ void FUN_11842010(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a61dc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a61dc))->int_release();
   _DAT_121a61dc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21927,7 +21926,7 @@ void FUN_11842080(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a623c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a623c))->int_release();
   _DAT_121a623c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21950,7 +21949,7 @@ void FUN_118420f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6240))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6240))->int_release();
   _DAT_121a6240 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21973,7 +21972,7 @@ void FUN_11842160(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6244))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6244))->int_release();
   _DAT_121a6244 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -21996,7 +21995,7 @@ void FUN_118421d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6250))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6250))->int_release();
   _DAT_121a6250 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22019,7 +22018,7 @@ void FUN_11842240(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6270))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6270))->int_release();
   _DAT_121a6270 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22042,7 +22041,7 @@ void FUN_118422b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6264))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6264))->int_release();
   _DAT_121a6264 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22065,7 +22064,7 @@ void FUN_11842320(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6254))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6254))->int_release();
   _DAT_121a6254 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22088,7 +22087,7 @@ void FUN_11842390(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6260))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6260))->int_release();
   _DAT_121a6260 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22111,7 +22110,7 @@ void FUN_11842400(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a626c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a626c))->int_release();
   _DAT_121a626c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22134,7 +22133,7 @@ void FUN_11842470(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6268))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6268))->int_release();
   _DAT_121a6268 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22157,7 +22156,7 @@ void FUN_118424e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6274))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6274))->int_release();
   _DAT_121a6274 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22180,7 +22179,7 @@ void FUN_11842550(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a625c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a625c))->int_release();
   _DAT_121a625c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22203,7 +22202,7 @@ void FUN_118425c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6258))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6258))->int_release();
   _DAT_121a6258 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22226,7 +22225,7 @@ void FUN_11842630(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a624c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a624c))->int_release();
   _DAT_121a624c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22249,7 +22248,7 @@ void FUN_118426a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6248))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6248))->int_release();
   _DAT_121a6248 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22272,7 +22271,7 @@ void FUN_11842790(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6284))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6284))->int_release();
   _DAT_121a6284 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22295,7 +22294,7 @@ void FUN_11842800(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a62a0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a62a0))->int_release();
   _DAT_121a62a0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22318,7 +22317,7 @@ void FUN_11842870(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a62c0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a62c0))->int_release();
   _DAT_121a62c0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22341,7 +22340,7 @@ void FUN_118428e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a62b4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a62b4))->int_release();
   _DAT_121a62b4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22364,7 +22363,7 @@ void FUN_11842950(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a62a4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a62a4))->int_release();
   _DAT_121a62a4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22387,7 +22386,7 @@ void FUN_118429c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a62b0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a62b0))->int_release();
   _DAT_121a62b0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22410,7 +22409,7 @@ void FUN_11842a30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a62bc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a62bc))->int_release();
   _DAT_121a62bc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22433,7 +22432,7 @@ void FUN_11842aa0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a62b8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a62b8))->int_release();
   _DAT_121a62b8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22456,7 +22455,7 @@ void FUN_11842b10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a62c4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a62c4))->int_release();
   _DAT_121a62c4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22479,7 +22478,7 @@ void FUN_11842b80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a62ac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a62ac))->int_release();
   _DAT_121a62ac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22502,7 +22501,7 @@ void FUN_11842bf0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a62a8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a62a8))->int_release();
   _DAT_121a62a8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22525,7 +22524,7 @@ void FUN_11842c60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a629c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a629c))->int_release();
   _DAT_121a629c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22548,7 +22547,7 @@ void FUN_11842cd0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6298))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6298))->int_release();
   _DAT_121a6298 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22571,7 +22570,7 @@ void FUN_11842d40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a62dc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a62dc))->int_release();
   _DAT_121a62dc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22594,7 +22593,7 @@ void FUN_11842db0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a62fc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a62fc))->int_release();
   _DAT_121a62fc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22617,7 +22616,7 @@ void FUN_11842e20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a62f0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a62f0))->int_release();
   _DAT_121a62f0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22640,7 +22639,7 @@ void FUN_11842e90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a62e0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a62e0))->int_release();
   _DAT_121a62e0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22663,7 +22662,7 @@ void FUN_11842f00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a62ec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a62ec))->int_release();
   _DAT_121a62ec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22686,7 +22685,7 @@ void FUN_11842f70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a62f8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a62f8))->int_release();
   _DAT_121a62f8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22709,7 +22708,7 @@ void FUN_11842fe0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a62f4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a62f4))->int_release();
   _DAT_121a62f4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22732,7 +22731,7 @@ void FUN_11843050(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6300))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6300))->int_release();
   _DAT_121a6300 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22755,7 +22754,7 @@ void FUN_118430c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a62e8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a62e8))->int_release();
   _DAT_121a62e8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22778,7 +22777,7 @@ void FUN_11843130(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a62e4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a62e4))->int_release();
   _DAT_121a62e4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22801,7 +22800,7 @@ void FUN_118431a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a62d8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a62d8))->int_release();
   _DAT_121a62d8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22824,7 +22823,7 @@ void FUN_11843210(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a62d4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a62d4))->int_release();
   _DAT_121a62d4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22847,7 +22846,7 @@ void FUN_11843280(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6304))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6304))->int_release();
   _DAT_121a6304 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22870,7 +22869,7 @@ void FUN_118432f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a631c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a631c))->int_release();
   _DAT_121a631c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22893,7 +22892,7 @@ void FUN_11843360(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a633c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a633c))->int_release();
   _DAT_121a633c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22916,7 +22915,7 @@ void FUN_118433d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6330))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6330))->int_release();
   _DAT_121a6330 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22939,7 +22938,7 @@ void FUN_11843440(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6320))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6320))->int_release();
   _DAT_121a6320 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22962,7 +22961,7 @@ void FUN_118434b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a632c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a632c))->int_release();
   _DAT_121a632c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -22985,7 +22984,7 @@ void FUN_11843520(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6338))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6338))->int_release();
   _DAT_121a6338 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23008,7 +23007,7 @@ void FUN_11843590(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6334))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6334))->int_release();
   _DAT_121a6334 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23031,7 +23030,7 @@ void FUN_11843600(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6340))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6340))->int_release();
   _DAT_121a6340 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23054,7 +23053,7 @@ void FUN_11843670(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6328))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6328))->int_release();
   _DAT_121a6328 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23077,7 +23076,7 @@ void FUN_118436e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6324))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6324))->int_release();
   _DAT_121a6324 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23100,7 +23099,7 @@ void FUN_11843750(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6318))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6318))->int_release();
   _DAT_121a6318 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23123,7 +23122,7 @@ void FUN_118437c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6314))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6314))->int_release();
   _DAT_121a6314 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23146,7 +23145,7 @@ void FUN_11843830(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6358))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6358))->int_release();
   _DAT_121a6358 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23169,7 +23168,7 @@ void FUN_118438a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6378))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6378))->int_release();
   _DAT_121a6378 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23192,7 +23191,7 @@ void FUN_11843910(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a636c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a636c))->int_release();
   _DAT_121a636c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23215,7 +23214,7 @@ void FUN_11843980(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a635c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a635c))->int_release();
   _DAT_121a635c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23238,7 +23237,7 @@ void FUN_118439f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6368))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6368))->int_release();
   _DAT_121a6368 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23261,7 +23260,7 @@ void FUN_11843a60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6374))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6374))->int_release();
   _DAT_121a6374 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23284,7 +23283,7 @@ void FUN_11843ad0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6370))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6370))->int_release();
   _DAT_121a6370 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23307,7 +23306,7 @@ void FUN_11843b40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a637c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a637c))->int_release();
   _DAT_121a637c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23330,7 +23329,7 @@ void FUN_11843bb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6364))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6364))->int_release();
   _DAT_121a6364 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23353,7 +23352,7 @@ void FUN_11843c20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6360))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6360))->int_release();
   _DAT_121a6360 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23376,7 +23375,7 @@ void FUN_11843c90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6354))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6354))->int_release();
   _DAT_121a6354 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23399,7 +23398,7 @@ void FUN_11843d00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6350))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6350))->int_release();
   _DAT_121a6350 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23422,7 +23421,7 @@ void FUN_11843d70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6394))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6394))->int_release();
   _DAT_121a6394 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23445,7 +23444,7 @@ void FUN_11843de0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a63b4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a63b4))->int_release();
   _DAT_121a63b4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23468,7 +23467,7 @@ void FUN_11843e50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a63a8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a63a8))->int_release();
   _DAT_121a63a8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23491,7 +23490,7 @@ void FUN_11843ec0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6398))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6398))->int_release();
   _DAT_121a6398 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23514,7 +23513,7 @@ void FUN_11843f30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a63a4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a63a4))->int_release();
   _DAT_121a63a4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23537,7 +23536,7 @@ void FUN_11843fa0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a63b0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a63b0))->int_release();
   _DAT_121a63b0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23560,7 +23559,7 @@ void FUN_11844010(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a63ac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a63ac))->int_release();
   _DAT_121a63ac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23583,7 +23582,7 @@ void FUN_11844080(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a63b8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a63b8))->int_release();
   _DAT_121a63b8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23606,7 +23605,7 @@ void FUN_118440f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a63a0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a63a0))->int_release();
   _DAT_121a63a0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23629,7 +23628,7 @@ void FUN_11844160(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a639c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a639c))->int_release();
   _DAT_121a639c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23652,7 +23651,7 @@ void FUN_118441d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6390))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6390))->int_release();
   _DAT_121a6390 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23675,7 +23674,7 @@ void FUN_11844240(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a638c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a638c))->int_release();
   _DAT_121a638c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23698,7 +23697,7 @@ void FUN_118442f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a63dc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a63dc))->int_release();
   _DAT_121a63dc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23721,7 +23720,7 @@ void FUN_11844360(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a63fc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a63fc))->int_release();
   _DAT_121a63fc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23744,7 +23743,7 @@ void FUN_118443d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a63f0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a63f0))->int_release();
   _DAT_121a63f0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23767,7 +23766,7 @@ void FUN_11844440(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a63e0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a63e0))->int_release();
   _DAT_121a63e0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23790,7 +23789,7 @@ void FUN_118444b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a63ec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a63ec))->int_release();
   _DAT_121a63ec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23813,7 +23812,7 @@ void FUN_11844520(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a63f8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a63f8))->int_release();
   _DAT_121a63f8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23836,7 +23835,7 @@ void FUN_11844590(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a63f4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a63f4))->int_release();
   _DAT_121a63f4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23859,7 +23858,7 @@ void FUN_11844600(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6400))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6400))->int_release();
   _DAT_121a6400 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23882,7 +23881,7 @@ void FUN_11844670(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a63e8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a63e8))->int_release();
   _DAT_121a63e8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23905,7 +23904,7 @@ void FUN_118446e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a63e4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a63e4))->int_release();
   _DAT_121a63e4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23928,7 +23927,7 @@ void FUN_11844750(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a63d8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a63d8))->int_release();
   _DAT_121a63d8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23951,7 +23950,7 @@ void FUN_118447c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a63d0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a63d0))->int_release();
   _DAT_121a63d0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23974,7 +23973,7 @@ void FUN_11844830(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6404))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6404))->int_release();
   _DAT_121a6404 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -23997,7 +23996,7 @@ void FUN_118448a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a63d4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a63d4))->int_release();
   _DAT_121a63d4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24020,7 +24019,7 @@ void FUN_11844990(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6424))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6424))->int_release();
   _DAT_121a6424 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24043,7 +24042,7 @@ void FUN_11844a00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6430))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6430))->int_release();
   _DAT_121a6430 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24066,7 +24065,7 @@ void FUN_11844a70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6450))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6450))->int_release();
   _DAT_121a6450 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24089,7 +24088,7 @@ void FUN_11844ae0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6444))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6444))->int_release();
   _DAT_121a6444 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24112,7 +24111,7 @@ void FUN_11844b50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6434))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6434))->int_release();
   _DAT_121a6434 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24135,7 +24134,7 @@ void FUN_11844bc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6440))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6440))->int_release();
   _DAT_121a6440 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24158,7 +24157,7 @@ void FUN_11844c30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a644c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a644c))->int_release();
   _DAT_121a644c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24181,7 +24180,7 @@ void FUN_11844ca0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6448))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6448))->int_release();
   _DAT_121a6448 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24204,7 +24203,7 @@ void FUN_11844d10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6454))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6454))->int_release();
   _DAT_121a6454 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24227,7 +24226,7 @@ void FUN_11844d80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a643c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a643c))->int_release();
   _DAT_121a643c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24250,7 +24249,7 @@ void FUN_11844df0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6438))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6438))->int_release();
   _DAT_121a6438 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24273,7 +24272,7 @@ void FUN_11844e60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a642c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a642c))->int_release();
   _DAT_121a642c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24296,7 +24295,7 @@ void FUN_11844ed0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6428))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6428))->int_release();
   _DAT_121a6428 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24319,7 +24318,7 @@ void FUN_11844f40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a646c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a646c))->int_release();
   _DAT_121a646c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24342,7 +24341,7 @@ void FUN_11844fb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a648c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a648c))->int_release();
   _DAT_121a648c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24365,7 +24364,7 @@ void FUN_11845020(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6480))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6480))->int_release();
   _DAT_121a6480 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24388,7 +24387,7 @@ void FUN_11845090(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6470))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6470))->int_release();
   _DAT_121a6470 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24411,7 +24410,7 @@ void FUN_11845100(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a647c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a647c))->int_release();
   _DAT_121a647c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24434,7 +24433,7 @@ void FUN_11845170(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6488))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6488))->int_release();
   _DAT_121a6488 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24457,7 +24456,7 @@ void FUN_118451e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6484))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6484))->int_release();
   _DAT_121a6484 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24480,7 +24479,7 @@ void FUN_11845250(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6490))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6490))->int_release();
   _DAT_121a6490 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24503,7 +24502,7 @@ void FUN_118452c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6478))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6478))->int_release();
   _DAT_121a6478 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24526,7 +24525,7 @@ void FUN_11845330(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6474))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6474))->int_release();
   _DAT_121a6474 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24549,7 +24548,7 @@ void FUN_118453a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6468))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6468))->int_release();
   _DAT_121a6468 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24572,7 +24571,7 @@ void FUN_11845410(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6464))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6464))->int_release();
   _DAT_121a6464 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24595,7 +24594,7 @@ void FUN_11845480(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a64a0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a64a0))->int_release();
   _DAT_121a64a0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24618,7 +24617,7 @@ void FUN_118454f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a64a4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a64a4))->int_release();
   _DAT_121a64a4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24641,7 +24640,7 @@ void FUN_11845560(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a64a8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a64a8))->int_release();
   _DAT_121a64a8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24664,7 +24663,7 @@ void FUN_118455d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a64ac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a64ac))->int_release();
   _DAT_121a64ac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24687,7 +24686,7 @@ void FUN_11845640(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a64b0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a64b0))->int_release();
   _DAT_121a64b0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24710,7 +24709,7 @@ void FUN_118456b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a64b4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a64b4))->int_release();
   _DAT_121a64b4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24733,7 +24732,7 @@ void FUN_11845720(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a64b8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a64b8))->int_release();
   _DAT_121a64b8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24756,7 +24755,7 @@ void FUN_11845790(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a64bc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a64bc))->int_release();
   _DAT_121a64bc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24779,7 +24778,7 @@ void FUN_11845800(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a64c8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a64c8))->int_release();
   _DAT_121a64c8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24802,7 +24801,7 @@ void FUN_11845870(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a64e8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a64e8))->int_release();
   _DAT_121a64e8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24825,7 +24824,7 @@ void FUN_118458e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a64dc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a64dc))->int_release();
   _DAT_121a64dc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24848,7 +24847,7 @@ void FUN_11845950(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a64cc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a64cc))->int_release();
   _DAT_121a64cc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24871,7 +24870,7 @@ void FUN_118459c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a64d8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a64d8))->int_release();
   _DAT_121a64d8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24894,7 +24893,7 @@ void FUN_11845a30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a64e4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a64e4))->int_release();
   _DAT_121a64e4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24917,7 +24916,7 @@ void FUN_11845aa0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a64e0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a64e0))->int_release();
   _DAT_121a64e0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24940,7 +24939,7 @@ void FUN_11845b10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a64ec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a64ec))->int_release();
   _DAT_121a64ec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24963,7 +24962,7 @@ void FUN_11845b80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a64d4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a64d4))->int_release();
   _DAT_121a64d4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -24986,7 +24985,7 @@ void FUN_11845bf0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a64d0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a64d0))->int_release();
   _DAT_121a64d0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25009,7 +25008,7 @@ void FUN_11845c60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a64c4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a64c4))->int_release();
   _DAT_121a64c4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25032,7 +25031,7 @@ void FUN_11845cd0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a64c0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a64c0))->int_release();
   _DAT_121a64c0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25055,7 +25054,7 @@ void FUN_11845d40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6504))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6504))->int_release();
   _DAT_121a6504 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25078,7 +25077,7 @@ void FUN_11845db0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6534))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6534))->int_release();
   _DAT_121a6534 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25101,7 +25100,7 @@ void FUN_11845e20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6518))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6518))->int_release();
   _DAT_121a6518 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25124,7 +25123,7 @@ void FUN_11845e90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6508))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6508))->int_release();
   _DAT_121a6508 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25147,7 +25146,7 @@ void FUN_11845f00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6514))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6514))->int_release();
   _DAT_121a6514 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25170,7 +25169,7 @@ void FUN_11845f70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6520))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6520))->int_release();
   _DAT_121a6520 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25193,7 +25192,7 @@ void FUN_11845fe0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a651c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a651c))->int_release();
   _DAT_121a651c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25216,7 +25215,7 @@ void FUN_11846050(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6538))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6538))->int_release();
   _DAT_121a6538 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25239,7 +25238,7 @@ void FUN_118460c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6510))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6510))->int_release();
   _DAT_121a6510 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25262,7 +25261,7 @@ void FUN_11846130(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a650c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a650c))->int_release();
   _DAT_121a650c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25285,7 +25284,7 @@ void FUN_118461a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6500))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6500))->int_release();
   _DAT_121a6500 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25308,7 +25307,7 @@ void FUN_11846290(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a64fc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a64fc))->int_release();
   _DAT_121a64fc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25331,7 +25330,7 @@ void FUN_11846300(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6548))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6548))->int_release();
   _DAT_121a6548 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25354,7 +25353,7 @@ void FUN_11846370(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a654c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a654c))->int_release();
   _DAT_121a654c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25377,7 +25376,7 @@ void FUN_118463e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6554))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6554))->int_release();
   _DAT_121a6554 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25400,7 +25399,7 @@ void FUN_11846450(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6558))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6558))->int_release();
   _DAT_121a6558 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25423,7 +25422,7 @@ void FUN_118464c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6550))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6550))->int_release();
   _DAT_121a6550 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25446,7 +25445,7 @@ void FUN_11846530(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6564))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6564))->int_release();
   _DAT_121a6564 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25469,7 +25468,7 @@ void FUN_118465a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6568))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6568))->int_release();
   _DAT_121a6568 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25492,7 +25491,7 @@ void FUN_11846610(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6560))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6560))->int_release();
   _DAT_121a6560 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25515,7 +25514,7 @@ void FUN_11846680(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6578))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6578))->int_release();
   _DAT_121a6578 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25538,7 +25537,7 @@ void FUN_118466f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6598))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6598))->int_release();
   _DAT_121a6598 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25561,7 +25560,7 @@ void FUN_11846760(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a659c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a659c))->int_release();
   _DAT_121a659c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25584,7 +25583,7 @@ void FUN_118467d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a65a4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a65a4))->int_release();
   _DAT_121a65a4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25607,7 +25606,7 @@ void FUN_11846840(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a658c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a658c))->int_release();
   _DAT_121a658c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25630,7 +25629,7 @@ void FUN_118468b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a657c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a657c))->int_release();
   _DAT_121a657c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25653,7 +25652,7 @@ void FUN_11846920(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6588))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6588))->int_release();
   _DAT_121a6588 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25676,7 +25675,7 @@ void FUN_11846990(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6594))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6594))->int_release();
   _DAT_121a6594 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25699,7 +25698,7 @@ void FUN_11846a00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6590))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6590))->int_release();
   _DAT_121a6590 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25722,7 +25721,7 @@ void FUN_11846a70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a65a0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a65a0))->int_release();
   _DAT_121a65a0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25745,7 +25744,7 @@ void FUN_11846ae0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6584))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6584))->int_release();
   _DAT_121a6584 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25768,7 +25767,7 @@ void FUN_11846b50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6580))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6580))->int_release();
   _DAT_121a6580 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25791,7 +25790,7 @@ void FUN_11846bc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6574))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6574))->int_release();
   _DAT_121a6574 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25814,7 +25813,7 @@ void FUN_11846c30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6570))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6570))->int_release();
   _DAT_121a6570 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25837,7 +25836,7 @@ void FUN_11846ca0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a65b4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a65b4))->int_release();
   _DAT_121a65b4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25858,7 +25857,7 @@ void FUN_11846d10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66e0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66e0))->int_release();
   DAT_121a66e0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25879,7 +25878,7 @@ void FUN_11846d80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66b0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66b0))->int_release();
   DAT_121a66b0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25900,7 +25899,7 @@ void FUN_11846df0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a666c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a666c))->int_release();
   DAT_121a666c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25921,7 +25920,7 @@ void FUN_11846e60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a671c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a671c))->int_release();
   DAT_121a671c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25942,7 +25941,7 @@ void FUN_11846ed0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66f0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66f0))->int_release();
   DAT_121a66f0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25963,7 +25962,7 @@ void FUN_11846f40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a670c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a670c))->int_release();
   DAT_121a670c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -25984,7 +25983,7 @@ void FUN_11846fb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6670))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6670))->int_release();
   DAT_121a6670 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26005,7 +26004,7 @@ void FUN_11847020(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a65f0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a65f0))->int_release();
   DAT_121a65f0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26026,7 +26025,7 @@ void FUN_11847090(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a663c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a663c))->int_release();
   DAT_121a663c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26047,7 +26046,7 @@ void FUN_11847100(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a65f8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a65f8))->int_release();
   DAT_121a65f8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26068,7 +26067,7 @@ void FUN_11847170(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a662c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a662c))->int_release();
   DAT_121a662c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26089,7 +26088,7 @@ void FUN_118471e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6764))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6764))->int_release();
   DAT_121a6764 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26110,7 +26109,7 @@ void FUN_11847250(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6780))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6780))->int_release();
   DAT_121a6780 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26131,7 +26130,7 @@ void FUN_118472c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a669c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a669c))->int_release();
   DAT_121a669c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26152,7 +26151,7 @@ void FUN_11847330(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66ec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66ec))->int_release();
   DAT_121a66ec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26173,7 +26172,7 @@ void FUN_118473a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6650))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6650))->int_release();
   DAT_121a6650 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26194,7 +26193,7 @@ void FUN_11847410(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6728))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6728))->int_release();
   DAT_121a6728 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26215,7 +26214,7 @@ void FUN_11847480(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6640))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6640))->int_release();
   DAT_121a6640 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26236,7 +26235,7 @@ void FUN_118474f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6788))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6788))->int_release();
   DAT_121a6788 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26257,7 +26256,7 @@ void FUN_11847560(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6600))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6600))->int_release();
   DAT_121a6600 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26278,7 +26277,7 @@ void FUN_118475d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6794))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6794))->int_release();
   DAT_121a6794 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26299,7 +26298,7 @@ void FUN_11847640(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a677c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a677c))->int_release();
   DAT_121a677c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26320,7 +26319,7 @@ void FUN_118476b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66e8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66e8))->int_release();
   DAT_121a66e8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26341,7 +26340,7 @@ void FUN_11847720(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6770))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6770))->int_release();
   DAT_121a6770 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26362,7 +26361,7 @@ void FUN_11847790(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a660c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a660c))->int_release();
   DAT_121a660c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26383,7 +26382,7 @@ void FUN_11847800(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66cc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66cc))->int_release();
   DAT_121a66cc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26404,7 +26403,7 @@ void FUN_11847870(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66d0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66d0))->int_release();
   DAT_121a66d0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26425,7 +26424,7 @@ void FUN_118478e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a67a4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a67a4))->int_release();
   DAT_121a67a4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26446,7 +26445,7 @@ void FUN_11847950(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6620))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6620))->int_release();
   DAT_121a6620 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26467,7 +26466,7 @@ void FUN_118479c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6710))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6710))->int_release();
   DAT_121a6710 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26488,7 +26487,7 @@ void FUN_11847a30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a661c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a661c))->int_release();
   DAT_121a661c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26509,7 +26508,7 @@ void FUN_11847aa0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6624))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6624))->int_release();
   DAT_121a6624 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26530,7 +26529,7 @@ void FUN_11847b10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a678c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a678c))->int_release();
   DAT_121a678c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26551,7 +26550,7 @@ void FUN_11847b80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6744))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6744))->int_release();
   DAT_121a6744 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26572,7 +26571,7 @@ void FUN_11847bf0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a672c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a672c))->int_release();
   DAT_121a672c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26593,7 +26592,7 @@ void FUN_11847c60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a676c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a676c))->int_release();
   DAT_121a676c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26614,7 +26613,7 @@ void FUN_11847cd0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6718))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6718))->int_release();
   DAT_121a6718 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26635,7 +26634,7 @@ void FUN_11847d40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6790))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6790))->int_release();
   DAT_121a6790 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26656,7 +26655,7 @@ void FUN_11847db0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a674c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a674c))->int_release();
   DAT_121a674c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26677,7 +26676,7 @@ void FUN_11847e20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6664))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6664))->int_release();
   DAT_121a6664 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26700,7 +26699,7 @@ void FUN_11847e90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a67b4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a67b4))->int_release();
   _DAT_121a67b4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26723,7 +26722,7 @@ void FUN_11847f00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a664c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a664c))->int_release();
   _DAT_121a664c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26746,7 +26745,7 @@ void FUN_11847f70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6660))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6660))->int_release();
   _DAT_121a6660 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26769,7 +26768,7 @@ void FUN_11847fe0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6740))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6740))->int_release();
   _DAT_121a6740 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26792,7 +26791,7 @@ void FUN_11848050(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6734))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6734))->int_release();
   _DAT_121a6734 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26815,7 +26814,7 @@ void FUN_118480c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66b4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66b4))->int_release();
   _DAT_121a66b4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26838,7 +26837,7 @@ void FUN_11848130(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6784))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6784))->int_release();
   _DAT_121a6784 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26861,7 +26860,7 @@ void FUN_118481a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a65e8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a65e8))->int_release();
   _DAT_121a65e8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26884,7 +26883,7 @@ void FUN_11848210(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6778))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6778))->int_release();
   _DAT_121a6778 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26907,7 +26906,7 @@ void FUN_11848280(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a679c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a679c))->int_release();
   _DAT_121a679c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26930,7 +26929,7 @@ void FUN_118482f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6714))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6714))->int_release();
   _DAT_121a6714 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26953,7 +26952,7 @@ void FUN_11848360(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6654))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6654))->int_release();
   _DAT_121a6654 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26976,7 +26975,7 @@ void FUN_118483d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6774))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6774))->int_release();
   _DAT_121a6774 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -26999,7 +26998,7 @@ void FUN_11848440(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6720))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6720))->int_release();
   _DAT_121a6720 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27022,7 +27021,7 @@ void FUN_118484b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6644))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6644))->int_release();
   _DAT_121a6644 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27045,7 +27044,7 @@ void FUN_11848520(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6768))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6768))->int_release();
   _DAT_121a6768 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27068,7 +27067,7 @@ void FUN_11848590(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6614))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6614))->int_release();
   _DAT_121a6614 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27091,7 +27090,7 @@ void FUN_11848600(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6798))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6798))->int_release();
   _DAT_121a6798 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27114,7 +27113,7 @@ void FUN_11848670(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6708))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6708))->int_release();
   _DAT_121a6708 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27137,7 +27136,7 @@ void FUN_118486e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a673c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a673c))->int_release();
   _DAT_121a673c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27160,7 +27159,7 @@ void FUN_11848750(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66e4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66e4))->int_release();
   _DAT_121a66e4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27183,7 +27182,7 @@ void FUN_118487c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66a8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66a8))->int_release();
   _DAT_121a66a8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27206,7 +27205,7 @@ void FUN_11848830(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66bc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66bc))->int_release();
   _DAT_121a66bc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27229,7 +27228,7 @@ void FUN_118488a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66b8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66b8))->int_release();
   _DAT_121a66b8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27252,7 +27251,7 @@ void FUN_11848910(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6618))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6618))->int_release();
   _DAT_121a6618 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27275,7 +27274,7 @@ void FUN_11848980(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6628))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6628))->int_release();
   _DAT_121a6628 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27298,7 +27297,7 @@ void FUN_118489f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a65f4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a65f4))->int_release();
   _DAT_121a65f4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27321,7 +27320,7 @@ void FUN_11848a60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6704))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6704))->int_release();
   _DAT_121a6704 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27344,7 +27343,7 @@ void FUN_11848ad0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a65fc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a65fc))->int_release();
   _DAT_121a65fc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27367,7 +27366,7 @@ void FUN_11848b40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6610))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6610))->int_release();
   _DAT_121a6610 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27390,7 +27389,7 @@ void FUN_11848bb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6604))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6604))->int_release();
   _DAT_121a6604 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27413,7 +27412,7 @@ void FUN_11848c20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6758))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6758))->int_release();
   _DAT_121a6758 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27436,7 +27435,7 @@ void FUN_11848c90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6608))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6608))->int_release();
   _DAT_121a6608 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27459,7 +27458,7 @@ void FUN_11848d00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6738))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6738))->int_release();
   _DAT_121a6738 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27482,7 +27481,7 @@ void FUN_11848d70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6760))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6760))->int_release();
   _DAT_121a6760 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27505,7 +27504,7 @@ void FUN_11848de0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a675c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a675c))->int_release();
   _DAT_121a675c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27528,7 +27527,7 @@ void FUN_11848e50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a665c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a665c))->int_release();
   _DAT_121a665c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27551,7 +27550,7 @@ void FUN_11848ec0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a67ac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a67ac))->int_release();
   _DAT_121a67ac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27574,7 +27573,7 @@ void FUN_11848f30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6674))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6674))->int_release();
   _DAT_121a6674 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27597,7 +27596,7 @@ void FUN_11848fa0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6678))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6678))->int_release();
   _DAT_121a6678 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27620,7 +27619,7 @@ void FUN_11849010(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66d4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66d4))->int_release();
   _DAT_121a66d4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27643,7 +27642,7 @@ void FUN_11849080(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66a0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66a0))->int_release();
   _DAT_121a66a0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27666,7 +27665,7 @@ void FUN_118490f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6748))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6748))->int_release();
   _DAT_121a6748 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27689,7 +27688,7 @@ void FUN_11849160(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6634))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6634))->int_release();
   _DAT_121a6634 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27712,7 +27711,7 @@ void FUN_118491d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66c0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66c0))->int_release();
   _DAT_121a66c0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27735,7 +27734,7 @@ void FUN_11849240(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66d8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66d8))->int_release();
   _DAT_121a66d8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27758,7 +27757,7 @@ void FUN_118492b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66f4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66f4))->int_release();
   _DAT_121a66f4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27781,7 +27780,7 @@ void FUN_11849320(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6750))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6750))->int_release();
   _DAT_121a6750 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27804,7 +27803,7 @@ void FUN_11849390(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6668))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6668))->int_release();
   _DAT_121a6668 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27827,7 +27826,7 @@ void FUN_11849400(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66dc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66dc))->int_release();
   _DAT_121a66dc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27850,7 +27849,7 @@ void FUN_11849470(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a65ec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a65ec))->int_release();
   _DAT_121a65ec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27873,7 +27872,7 @@ void FUN_118494e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66ac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66ac))->int_release();
   _DAT_121a66ac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27896,7 +27895,7 @@ void FUN_11849550(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a668c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a668c))->int_release();
   _DAT_121a668c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27919,7 +27918,7 @@ void FUN_118495c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a667c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a667c))->int_release();
   _DAT_121a667c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27942,7 +27941,7 @@ void FUN_11849630(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6688))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6688))->int_release();
   _DAT_121a6688 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27965,7 +27964,7 @@ void FUN_118496a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66c8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66c8))->int_release();
   _DAT_121a66c8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -27988,7 +27987,7 @@ void FUN_11849710(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6690))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6690))->int_release();
   _DAT_121a6690 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28011,7 +28010,7 @@ void FUN_11849780(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a67a0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a67a0))->int_release();
   _DAT_121a67a0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28034,7 +28033,7 @@ void FUN_118497f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6700))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6700))->int_release();
   _DAT_121a6700 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28057,7 +28056,7 @@ void FUN_11849860(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66f8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66f8))->int_release();
   _DAT_121a66f8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28080,7 +28079,7 @@ void FUN_118498d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6724))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6724))->int_release();
   _DAT_121a6724 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28103,7 +28102,7 @@ void FUN_11849940(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66c4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66c4))->int_release();
   _DAT_121a66c4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28126,7 +28125,7 @@ void FUN_118499b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6698))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6698))->int_release();
   _DAT_121a6698 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28149,7 +28148,7 @@ void FUN_11849a20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a67a8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a67a8))->int_release();
   _DAT_121a67a8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28172,7 +28171,7 @@ void FUN_11849a90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6684))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6684))->int_release();
   _DAT_121a6684 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28195,7 +28194,7 @@ void FUN_11849b00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6680))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6680))->int_release();
   _DAT_121a6680 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28218,7 +28217,7 @@ void FUN_11849b70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6648))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6648))->int_release();
   _DAT_121a6648 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28241,7 +28240,7 @@ void FUN_11849be0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a67b0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a67b0))->int_release();
   _DAT_121a67b0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28264,7 +28263,7 @@ void FUN_11849c50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6638))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6638))->int_release();
   _DAT_121a6638 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28287,7 +28286,7 @@ void FUN_11849cc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66fc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66fc))->int_release();
   _DAT_121a66fc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28310,7 +28309,7 @@ void FUN_11849d30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6658))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6658))->int_release();
   _DAT_121a6658 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28333,7 +28332,7 @@ void FUN_11849da0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a66a4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a66a4))->int_release();
   _DAT_121a66a4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28356,7 +28355,7 @@ void FUN_11849e10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6754))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6754))->int_release();
   _DAT_121a6754 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28379,7 +28378,7 @@ void FUN_11849e80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6694))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6694))->int_release();
   _DAT_121a6694 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28402,7 +28401,7 @@ void FUN_11849ef0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6730))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6730))->int_release();
   _DAT_121a6730 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28425,7 +28424,7 @@ void FUN_11849f70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6630))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6630))->int_release();
   _DAT_121a6630 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28448,7 +28447,7 @@ void FUN_11849fe0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6820))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6820))->int_release();
   _DAT_121a6820 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28471,7 +28470,7 @@ void FUN_1184a050(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6840))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6840))->int_release();
   _DAT_121a6840 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28494,7 +28493,7 @@ void FUN_1184a0c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6834))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6834))->int_release();
   _DAT_121a6834 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28517,7 +28516,7 @@ void FUN_1184a130(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6824))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6824))->int_release();
   _DAT_121a6824 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28540,7 +28539,7 @@ void FUN_1184a1a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6830))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6830))->int_release();
   _DAT_121a6830 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28563,7 +28562,7 @@ void FUN_1184a210(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a683c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a683c))->int_release();
   _DAT_121a683c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28586,7 +28585,7 @@ void FUN_1184a280(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6838))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6838))->int_release();
   _DAT_121a6838 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28609,7 +28608,7 @@ void FUN_1184a2f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6848))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6848))->int_release();
   _DAT_121a6848 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28632,7 +28631,7 @@ void FUN_1184a360(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a682c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a682c))->int_release();
   _DAT_121a682c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28655,7 +28654,7 @@ void FUN_1184a3d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6828))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6828))->int_release();
   _DAT_121a6828 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28678,7 +28677,7 @@ void FUN_1184a440(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a681c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a681c))->int_release();
   _DAT_121a681c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28701,7 +28700,7 @@ void FUN_1184a4b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6814))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6814))->int_release();
   _DAT_121a6814 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28724,7 +28723,7 @@ void FUN_1184a520(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6844))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6844))->int_release();
   _DAT_121a6844 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28747,7 +28746,7 @@ void FUN_1184a590(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6818))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6818))->int_release();
   _DAT_121a6818 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28770,7 +28769,7 @@ void FUN_1184a600(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a685c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a685c))->int_release();
   _DAT_121a685c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28793,7 +28792,7 @@ void FUN_1184a670(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6858))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6858))->int_release();
   _DAT_121a6858 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28816,7 +28815,7 @@ void FUN_1184a6e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a686c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a686c))->int_release();
   _DAT_121a686c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28839,7 +28838,7 @@ void FUN_1184a750(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a688c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a688c))->int_release();
   _DAT_121a688c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28862,7 +28861,7 @@ void FUN_1184a7c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6880))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6880))->int_release();
   _DAT_121a6880 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28885,7 +28884,7 @@ void FUN_1184a830(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6870))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6870))->int_release();
   _DAT_121a6870 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28908,7 +28907,7 @@ void FUN_1184a8a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a687c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a687c))->int_release();
   _DAT_121a687c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28931,7 +28930,7 @@ void FUN_1184a910(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6888))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6888))->int_release();
   _DAT_121a6888 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28954,7 +28953,7 @@ void FUN_1184a980(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6884))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6884))->int_release();
   _DAT_121a6884 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -28977,7 +28976,7 @@ void FUN_1184a9f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6890))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6890))->int_release();
   _DAT_121a6890 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29000,7 +28999,7 @@ void FUN_1184aa60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6878))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6878))->int_release();
   _DAT_121a6878 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29023,7 +29022,7 @@ void FUN_1184aad0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6874))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6874))->int_release();
   _DAT_121a6874 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29046,7 +29045,7 @@ void FUN_1184ab40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6868))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6868))->int_release();
   _DAT_121a6868 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29069,7 +29068,7 @@ void FUN_1184abb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6864))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6864))->int_release();
   _DAT_121a6864 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29092,7 +29091,7 @@ void FUN_1184ac20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a68a8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a68a8))->int_release();
   _DAT_121a68a8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29115,7 +29114,7 @@ void FUN_1184ac90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a68c8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a68c8))->int_release();
   _DAT_121a68c8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29138,7 +29137,7 @@ void FUN_1184ad00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a68bc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a68bc))->int_release();
   _DAT_121a68bc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29161,7 +29160,7 @@ void FUN_1184ad70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a68ac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a68ac))->int_release();
   _DAT_121a68ac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29184,7 +29183,7 @@ void FUN_1184ade0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a68b8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a68b8))->int_release();
   _DAT_121a68b8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29207,7 +29206,7 @@ void FUN_1184ae50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a68c4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a68c4))->int_release();
   _DAT_121a68c4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29230,7 +29229,7 @@ void FUN_1184aec0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a68c0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a68c0))->int_release();
   _DAT_121a68c0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29253,7 +29252,7 @@ void FUN_1184af30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a68cc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a68cc))->int_release();
   _DAT_121a68cc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29276,7 +29275,7 @@ void FUN_1184afa0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a68b4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a68b4))->int_release();
   _DAT_121a68b4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29299,7 +29298,7 @@ void FUN_1184b010(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a68b0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a68b0))->int_release();
   _DAT_121a68b0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29322,7 +29321,7 @@ void FUN_1184b080(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a68a4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a68a4))->int_release();
   _DAT_121a68a4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29345,7 +29344,7 @@ void FUN_1184b0f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a68a0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a68a0))->int_release();
   _DAT_121a68a0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29368,7 +29367,7 @@ void FUN_1184b160(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a68e4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a68e4))->int_release();
   _DAT_121a68e4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29391,7 +29390,7 @@ void FUN_1184b1d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6904))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6904))->int_release();
   _DAT_121a6904 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29414,7 +29413,7 @@ void FUN_1184b240(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a68f8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a68f8))->int_release();
   _DAT_121a68f8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29437,7 +29436,7 @@ void FUN_1184b2b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a68e8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a68e8))->int_release();
   _DAT_121a68e8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29460,7 +29459,7 @@ void FUN_1184b320(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a68f4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a68f4))->int_release();
   _DAT_121a68f4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29483,7 +29482,7 @@ void FUN_1184b390(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6900))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6900))->int_release();
   _DAT_121a6900 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29506,7 +29505,7 @@ void FUN_1184b400(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a68fc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a68fc))->int_release();
   _DAT_121a68fc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29529,7 +29528,7 @@ void FUN_1184b470(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6908))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6908))->int_release();
   _DAT_121a6908 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29552,7 +29551,7 @@ void FUN_1184b4e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a68f0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a68f0))->int_release();
   _DAT_121a68f0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29575,7 +29574,7 @@ void FUN_1184b550(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a68ec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a68ec))->int_release();
   _DAT_121a68ec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29598,7 +29597,7 @@ void FUN_1184b5c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a68e0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a68e0))->int_release();
   _DAT_121a68e0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29621,7 +29620,7 @@ void FUN_1184b630(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a68dc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a68dc))->int_release();
   _DAT_121a68dc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29644,7 +29643,7 @@ void FUN_1184b6a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6920))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6920))->int_release();
   _DAT_121a6920 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29667,7 +29666,7 @@ void FUN_1184b710(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6940))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6940))->int_release();
   _DAT_121a6940 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29690,7 +29689,7 @@ void FUN_1184b780(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6934))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6934))->int_release();
   _DAT_121a6934 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29713,7 +29712,7 @@ void FUN_1184b7f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6924))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6924))->int_release();
   _DAT_121a6924 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29736,7 +29735,7 @@ void FUN_1184b860(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6930))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6930))->int_release();
   _DAT_121a6930 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29759,7 +29758,7 @@ void FUN_1184b8d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a693c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a693c))->int_release();
   _DAT_121a693c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29782,7 +29781,7 @@ void FUN_1184b940(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6938))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6938))->int_release();
   _DAT_121a6938 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29805,7 +29804,7 @@ void FUN_1184b9b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6944))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6944))->int_release();
   _DAT_121a6944 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29828,7 +29827,7 @@ void FUN_1184ba20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a692c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a692c))->int_release();
   _DAT_121a692c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29851,7 +29850,7 @@ void FUN_1184ba90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6928))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6928))->int_release();
   _DAT_121a6928 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29874,7 +29873,7 @@ void FUN_1184bb00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a691c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a691c))->int_release();
   _DAT_121a691c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29897,7 +29896,7 @@ void FUN_1184bb70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6918))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6918))->int_release();
   _DAT_121a6918 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29920,7 +29919,7 @@ void FUN_1184bbe0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a695c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a695c))->int_release();
   _DAT_121a695c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29943,7 +29942,7 @@ void FUN_1184bc50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a697c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a697c))->int_release();
   _DAT_121a697c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29966,7 +29965,7 @@ void FUN_1184bcc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6970))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6970))->int_release();
   _DAT_121a6970 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -29989,7 +29988,7 @@ void FUN_1184bd30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6960))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6960))->int_release();
   _DAT_121a6960 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30012,7 +30011,7 @@ void FUN_1184bda0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a696c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a696c))->int_release();
   _DAT_121a696c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30035,7 +30034,7 @@ void FUN_1184be10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6978))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6978))->int_release();
   _DAT_121a6978 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30058,7 +30057,7 @@ void FUN_1184be80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6974))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6974))->int_release();
   _DAT_121a6974 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30081,7 +30080,7 @@ void FUN_1184bef0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6980))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6980))->int_release();
   _DAT_121a6980 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30104,7 +30103,7 @@ void FUN_1184bf60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6968))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6968))->int_release();
   _DAT_121a6968 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30127,7 +30126,7 @@ void FUN_1184bfd0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6964))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6964))->int_release();
   _DAT_121a6964 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30150,7 +30149,7 @@ void FUN_1184c040(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6958))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6958))->int_release();
   _DAT_121a6958 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30173,7 +30172,7 @@ void FUN_1184c0b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6954))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6954))->int_release();
   _DAT_121a6954 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30196,7 +30195,7 @@ void FUN_1184c120(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6990))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6990))->int_release();
   _DAT_121a6990 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30219,7 +30218,7 @@ void FUN_1184c190(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a699c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a699c))->int_release();
   _DAT_121a699c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30242,7 +30241,7 @@ void FUN_1184c200(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a69bc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a69bc))->int_release();
   _DAT_121a69bc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30265,7 +30264,7 @@ void FUN_1184c270(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a69b0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a69b0))->int_release();
   _DAT_121a69b0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30288,7 +30287,7 @@ void FUN_1184c2e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a69a0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a69a0))->int_release();
   _DAT_121a69a0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30311,7 +30310,7 @@ void FUN_1184c350(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a69ac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a69ac))->int_release();
   _DAT_121a69ac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30334,7 +30333,7 @@ void FUN_1184c3c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a69b8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a69b8))->int_release();
   _DAT_121a69b8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30357,7 +30356,7 @@ void FUN_1184c430(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a69b4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a69b4))->int_release();
   _DAT_121a69b4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30380,7 +30379,7 @@ void FUN_1184c4a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a69c0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a69c0))->int_release();
   _DAT_121a69c0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30403,7 +30402,7 @@ void FUN_1184c510(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a69a8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a69a8))->int_release();
   _DAT_121a69a8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30426,7 +30425,7 @@ void FUN_1184c580(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a69a4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a69a4))->int_release();
   _DAT_121a69a4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30449,7 +30448,7 @@ void FUN_1184c5f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6998))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6998))->int_release();
   _DAT_121a6998 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30472,7 +30471,7 @@ void FUN_1184c660(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6994))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6994))->int_release();
   _DAT_121a6994 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30495,7 +30494,7 @@ void FUN_1184c6d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a00))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a00))->int_release();
   _DAT_121a6a00 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30518,7 +30517,7 @@ void FUN_1184c740(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a69d8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a69d8))->int_release();
   _DAT_121a69d8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30541,7 +30540,7 @@ void FUN_1184c7b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a69f8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a69f8))->int_release();
   _DAT_121a69f8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30564,7 +30563,7 @@ void FUN_1184c820(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a69ec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a69ec))->int_release();
   _DAT_121a69ec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30587,7 +30586,7 @@ void FUN_1184c890(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a69dc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a69dc))->int_release();
   _DAT_121a69dc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30610,7 +30609,7 @@ void FUN_1184c900(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a69e8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a69e8))->int_release();
   _DAT_121a69e8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30633,7 +30632,7 @@ void FUN_1184c970(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a69f4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a69f4))->int_release();
   _DAT_121a69f4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30656,7 +30655,7 @@ void FUN_1184c9e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a69f0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a69f0))->int_release();
   _DAT_121a69f0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30679,7 +30678,7 @@ void FUN_1184ca50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a69fc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a69fc))->int_release();
   _DAT_121a69fc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30702,7 +30701,7 @@ void FUN_1184cac0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a69e4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a69e4))->int_release();
   _DAT_121a69e4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30725,7 +30724,7 @@ void FUN_1184cb30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a69e0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a69e0))->int_release();
   _DAT_121a69e0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30748,7 +30747,7 @@ void FUN_1184cba0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a69d4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a69d4))->int_release();
   _DAT_121a69d4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30771,7 +30770,7 @@ void FUN_1184cc10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a69d0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a69d0))->int_release();
   _DAT_121a69d0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30794,7 +30793,7 @@ void FUN_1184cc80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a10))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a10))->int_release();
   _DAT_121a6a10 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30817,7 +30816,7 @@ void FUN_1184ccf0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a1c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a1c))->int_release();
   _DAT_121a6a1c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30840,7 +30839,7 @@ void FUN_1184cd60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a3c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a3c))->int_release();
   _DAT_121a6a3c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30863,7 +30862,7 @@ void FUN_1184cdd0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a30))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a30))->int_release();
   _DAT_121a6a30 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30886,7 +30885,7 @@ void FUN_1184ce40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a20))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a20))->int_release();
   _DAT_121a6a20 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30909,7 +30908,7 @@ void FUN_1184ceb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a2c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a2c))->int_release();
   _DAT_121a6a2c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30932,7 +30931,7 @@ void FUN_1184cf20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a38))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a38))->int_release();
   _DAT_121a6a38 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30955,7 +30954,7 @@ void FUN_1184cf90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a34))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a34))->int_release();
   _DAT_121a6a34 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -30978,7 +30977,7 @@ void FUN_1184d000(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a40))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a40))->int_release();
   _DAT_121a6a40 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31001,7 +31000,7 @@ void FUN_1184d070(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a28))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a28))->int_release();
   _DAT_121a6a28 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31024,7 +31023,7 @@ void FUN_1184d0e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a24))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a24))->int_release();
   _DAT_121a6a24 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31047,7 +31046,7 @@ void FUN_1184d150(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a18))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a18))->int_release();
   _DAT_121a6a18 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31070,7 +31069,7 @@ void FUN_1184d1c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a14))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a14))->int_release();
   _DAT_121a6a14 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31093,7 +31092,7 @@ void FUN_1184d230(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a58))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a58))->int_release();
   _DAT_121a6a58 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31116,7 +31115,7 @@ void FUN_1184d2a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a78))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a78))->int_release();
   _DAT_121a6a78 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31139,7 +31138,7 @@ void FUN_1184d310(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a7c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a7c))->int_release();
   _DAT_121a6a7c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31162,7 +31161,7 @@ void FUN_1184d380(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a84))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a84))->int_release();
   _DAT_121a6a84 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31185,7 +31184,7 @@ void FUN_1184d3f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a6c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a6c))->int_release();
   _DAT_121a6a6c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31208,7 +31207,7 @@ void FUN_1184d460(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a5c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a5c))->int_release();
   _DAT_121a6a5c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31231,7 +31230,7 @@ void FUN_1184d4d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a68))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a68))->int_release();
   _DAT_121a6a68 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31254,7 +31253,7 @@ void FUN_1184d540(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a74))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a74))->int_release();
   _DAT_121a6a74 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31277,7 +31276,7 @@ void FUN_1184d5b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a70))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a70))->int_release();
   _DAT_121a6a70 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31300,7 +31299,7 @@ void FUN_1184d620(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a80))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a80))->int_release();
   _DAT_121a6a80 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31323,7 +31322,7 @@ void FUN_1184d690(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a64))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a64))->int_release();
   _DAT_121a6a64 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31346,7 +31345,7 @@ void FUN_1184d700(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a60))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a60))->int_release();
   _DAT_121a6a60 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31369,7 +31368,7 @@ void FUN_1184d770(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a54))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a54))->int_release();
   _DAT_121a6a54 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31392,7 +31391,7 @@ void FUN_1184d7e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a50))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a50))->int_release();
   _DAT_121a6a50 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31415,7 +31414,7 @@ void FUN_1184d850(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a98))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a98))->int_release();
   _DAT_121a6a98 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31438,7 +31437,7 @@ void FUN_1184d8c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a9c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a9c))->int_release();
   _DAT_121a6a9c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31461,7 +31460,7 @@ void FUN_1184d930(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6a94))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6a94))->int_release();
   _DAT_121a6a94 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31484,7 +31483,7 @@ void FUN_1184d9a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6aa4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6aa4))->int_release();
   _DAT_121a6aa4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31507,7 +31506,7 @@ void FUN_1184da10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6aa8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6aa8))->int_release();
   _DAT_121a6aa8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31530,7 +31529,7 @@ void FUN_1184da80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ab0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ab0))->int_release();
   _DAT_121a6ab0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31553,7 +31552,7 @@ void FUN_1184daf0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6af0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6af0))->int_release();
   _DAT_121a6af0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31576,7 +31575,7 @@ void FUN_1184db60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b10))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b10))->int_release();
   _DAT_121a6b10 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31599,7 +31598,7 @@ void FUN_1184dbd0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b14))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b14))->int_release();
   _DAT_121a6b14 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31622,7 +31621,7 @@ void FUN_1184dc40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b20))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b20))->int_release();
   _DAT_121a6b20 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31645,7 +31644,7 @@ void FUN_1184dcb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b04))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b04))->int_release();
   _DAT_121a6b04 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31668,7 +31667,7 @@ void FUN_1184dd20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6af4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6af4))->int_release();
   _DAT_121a6af4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31691,7 +31690,7 @@ void FUN_1184dd90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b00))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b00))->int_release();
   _DAT_121a6b00 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31714,7 +31713,7 @@ void FUN_1184de00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b0c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b0c))->int_release();
   _DAT_121a6b0c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31737,7 +31736,7 @@ void FUN_1184de70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b08))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b08))->int_release();
   _DAT_121a6b08 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31760,7 +31759,7 @@ void FUN_1184dee0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b18))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b18))->int_release();
   _DAT_121a6b18 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31783,7 +31782,7 @@ void FUN_1184df50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6afc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6afc))->int_release();
   _DAT_121a6afc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31806,7 +31805,7 @@ void FUN_1184dfc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6af8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6af8))->int_release();
   _DAT_121a6af8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31829,7 +31828,7 @@ void FUN_1184e050(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ab4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ab4))->int_release();
   _DAT_121a6ab4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31852,7 +31851,7 @@ void FUN_1184e0e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b3c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b3c))->int_release();
   _DAT_121a6b3c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31875,7 +31874,7 @@ void FUN_1184e150(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b44))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b44))->int_release();
   _DAT_121a6b44 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31898,7 +31897,7 @@ void FUN_1184e1c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b64))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b64))->int_release();
   _DAT_121a6b64 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31921,7 +31920,7 @@ void FUN_1184e230(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b68))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b68))->int_release();
   _DAT_121a6b68 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31944,7 +31943,7 @@ void FUN_1184e2a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b70))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b70))->int_release();
   _DAT_121a6b70 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31967,7 +31966,7 @@ void FUN_1184e310(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b58))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b58))->int_release();
   _DAT_121a6b58 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -31990,7 +31989,7 @@ void FUN_1184e380(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b48))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b48))->int_release();
   _DAT_121a6b48 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32013,7 +32012,7 @@ void FUN_1184e3f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b54))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b54))->int_release();
   _DAT_121a6b54 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32036,7 +32035,7 @@ void FUN_1184e460(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b60))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b60))->int_release();
   _DAT_121a6b60 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32059,7 +32058,7 @@ void FUN_1184e4d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b5c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b5c))->int_release();
   _DAT_121a6b5c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32082,7 +32081,7 @@ void FUN_1184e540(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b6c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b6c))->int_release();
   _DAT_121a6b6c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32105,7 +32104,7 @@ void FUN_1184e5b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b50))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b50))->int_release();
   _DAT_121a6b50 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32128,7 +32127,7 @@ void FUN_1184e620(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b4c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b4c))->int_release();
   _DAT_121a6b4c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32151,7 +32150,7 @@ void FUN_1184e690(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b40))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b40))->int_release();
   _DAT_121a6b40 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32174,7 +32173,7 @@ void FUN_1184e700(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b84))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b84))->int_release();
   _DAT_121a6b84 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32197,7 +32196,7 @@ void FUN_1184e770(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ba4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ba4))->int_release();
   _DAT_121a6ba4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32220,7 +32219,7 @@ void FUN_1184e7e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b98))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b98))->int_release();
   _DAT_121a6b98 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32243,7 +32242,7 @@ void FUN_1184e850(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b88))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b88))->int_release();
   _DAT_121a6b88 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32266,7 +32265,7 @@ void FUN_1184e8c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b94))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b94))->int_release();
   _DAT_121a6b94 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32289,7 +32288,7 @@ void FUN_1184e930(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ba0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ba0))->int_release();
   _DAT_121a6ba0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32312,7 +32311,7 @@ void FUN_1184e9a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b9c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b9c))->int_release();
   _DAT_121a6b9c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32335,7 +32334,7 @@ void FUN_1184ea10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ba8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ba8))->int_release();
   _DAT_121a6ba8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32358,7 +32357,7 @@ void FUN_1184ea80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b90))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b90))->int_release();
   _DAT_121a6b90 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32381,7 +32380,7 @@ void FUN_1184eaf0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b8c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b8c))->int_release();
   _DAT_121a6b8c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32404,7 +32403,7 @@ void FUN_1184eb60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6b80))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6b80))->int_release();
   _DAT_121a6b80 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32427,7 +32426,7 @@ void FUN_1184ec10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6bc8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6bc8))->int_release();
   _DAT_121a6bc8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32450,7 +32449,7 @@ void FUN_1184ec80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6be8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6be8))->int_release();
   _DAT_121a6be8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32473,7 +32472,7 @@ void FUN_1184ecf0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6bdc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6bdc))->int_release();
   _DAT_121a6bdc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32496,7 +32495,7 @@ void FUN_1184ed60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6bcc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6bcc))->int_release();
   _DAT_121a6bcc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32519,7 +32518,7 @@ void FUN_1184edd0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6bd8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6bd8))->int_release();
   _DAT_121a6bd8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32542,7 +32541,7 @@ void FUN_1184ee40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6be4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6be4))->int_release();
   _DAT_121a6be4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32565,7 +32564,7 @@ void FUN_1184eeb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6be0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6be0))->int_release();
   _DAT_121a6be0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32588,7 +32587,7 @@ void FUN_1184ef20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6bec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6bec))->int_release();
   _DAT_121a6bec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32611,7 +32610,7 @@ void FUN_1184ef90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6bd4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6bd4))->int_release();
   _DAT_121a6bd4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32634,7 +32633,7 @@ void FUN_1184f000(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6bd0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6bd0))->int_release();
   _DAT_121a6bd0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32657,7 +32656,7 @@ void FUN_1184f070(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6bc4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6bc4))->int_release();
   _DAT_121a6bc4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32680,7 +32679,7 @@ void FUN_1184f0e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6bc0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6bc0))->int_release();
   _DAT_121a6bc0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32703,7 +32702,7 @@ void FUN_1184f150(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6bfc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6bfc))->int_release();
   _DAT_121a6bfc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32726,7 +32725,7 @@ void FUN_1184f1c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c08))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c08))->int_release();
   _DAT_121a6c08 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32749,7 +32748,7 @@ void FUN_1184f230(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c28))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c28))->int_release();
   _DAT_121a6c28 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32772,7 +32771,7 @@ void FUN_1184f2a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c1c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c1c))->int_release();
   _DAT_121a6c1c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32795,7 +32794,7 @@ void FUN_1184f310(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c0c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c0c))->int_release();
   _DAT_121a6c0c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32818,7 +32817,7 @@ void FUN_1184f380(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c18))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c18))->int_release();
   _DAT_121a6c18 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32841,7 +32840,7 @@ void FUN_1184f3f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c24))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c24))->int_release();
   _DAT_121a6c24 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32864,7 +32863,7 @@ void FUN_1184f460(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c20))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c20))->int_release();
   _DAT_121a6c20 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32887,7 +32886,7 @@ void FUN_1184f4d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c2c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c2c))->int_release();
   _DAT_121a6c2c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32910,7 +32909,7 @@ void FUN_1184f540(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c14))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c14))->int_release();
   _DAT_121a6c14 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32933,7 +32932,7 @@ void FUN_1184f5b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c10))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c10))->int_release();
   _DAT_121a6c10 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32956,7 +32955,7 @@ void FUN_1184f620(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c04))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c04))->int_release();
   _DAT_121a6c04 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -32979,7 +32978,7 @@ void FUN_1184f690(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c00))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c00))->int_release();
   _DAT_121a6c00 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33002,7 +33001,7 @@ void FUN_1184f700(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c4c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c4c))->int_release();
   _DAT_121a6c4c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33025,7 +33024,7 @@ void FUN_1184f770(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c6c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c6c))->int_release();
   _DAT_121a6c6c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33048,7 +33047,7 @@ void FUN_1184f7e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c60))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c60))->int_release();
   _DAT_121a6c60 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33071,7 +33070,7 @@ void FUN_1184f850(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c50))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c50))->int_release();
   _DAT_121a6c50 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33094,7 +33093,7 @@ void FUN_1184f8c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c5c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c5c))->int_release();
   _DAT_121a6c5c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33117,7 +33116,7 @@ void FUN_1184f930(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c68))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c68))->int_release();
   _DAT_121a6c68 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33140,7 +33139,7 @@ void FUN_1184f9a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c64))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c64))->int_release();
   _DAT_121a6c64 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33163,7 +33162,7 @@ void FUN_1184fa10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c70))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c70))->int_release();
   _DAT_121a6c70 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33186,7 +33185,7 @@ void FUN_1184fa80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c58))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c58))->int_release();
   _DAT_121a6c58 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33209,7 +33208,7 @@ void FUN_1184faf0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c54))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c54))->int_release();
   _DAT_121a6c54 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33232,7 +33231,7 @@ void FUN_1184fb60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c48))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c48))->int_release();
   _DAT_121a6c48 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33255,7 +33254,7 @@ void FUN_1184fbd0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c44))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c44))->int_release();
   _DAT_121a6c44 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33278,7 +33277,7 @@ void FUN_1184fc40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c80))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c80))->int_release();
   _DAT_121a6c80 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33301,7 +33300,7 @@ void FUN_1184fcb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d14))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d14))->int_release();
   _DAT_121a6d14 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33324,7 +33323,7 @@ void FUN_1184fd20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d38))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d38))->int_release();
   _DAT_121a6d38 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33347,7 +33346,7 @@ void FUN_1184fd90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c90))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c90))->int_release();
   _DAT_121a6c90 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33370,7 +33369,7 @@ void FUN_1184fe00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6cd8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6cd8))->int_release();
   _DAT_121a6cd8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33393,7 +33392,7 @@ void FUN_1184fe70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d04))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d04))->int_release();
   _DAT_121a6d04 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33416,7 +33415,7 @@ void FUN_1184fee0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d0c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d0c))->int_release();
   _DAT_121a6d0c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33439,7 +33438,7 @@ void FUN_1184ff50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6cac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6cac))->int_release();
   _DAT_121a6cac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33462,7 +33461,7 @@ void FUN_1184ffc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6cfc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6cfc))->int_release();
   _DAT_121a6cfc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33485,7 +33484,7 @@ void FUN_11850030(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6cb0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6cb0))->int_release();
   _DAT_121a6cb0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33508,7 +33507,7 @@ void FUN_118500a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c98))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c98))->int_release();
   _DAT_121a6c98 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33531,7 +33530,7 @@ void FUN_11850110(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6cec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6cec))->int_release();
   _DAT_121a6cec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33554,7 +33553,7 @@ void FUN_11850180(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6cb8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6cb8))->int_release();
   _DAT_121a6cb8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33577,7 +33576,7 @@ void FUN_118501f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d3c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d3c))->int_release();
   _DAT_121a6d3c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33600,7 +33599,7 @@ void FUN_11850260(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d08))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d08))->int_release();
   _DAT_121a6d08 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33623,7 +33622,7 @@ void FUN_118502d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d10))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d10))->int_release();
   _DAT_121a6d10 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33646,7 +33645,7 @@ void FUN_11850340(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c84))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c84))->int_release();
   _DAT_121a6c84 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33669,7 +33668,7 @@ void FUN_118503b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c94))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c94))->int_release();
   _DAT_121a6c94 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33692,7 +33691,7 @@ void FUN_11850420(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d2c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d2c))->int_release();
   _DAT_121a6d2c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33715,7 +33714,7 @@ void FUN_11850490(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d34))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d34))->int_release();
   _DAT_121a6d34 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33738,7 +33737,7 @@ void FUN_11850500(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6cb4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6cb4))->int_release();
   _DAT_121a6cb4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33761,7 +33760,7 @@ void FUN_11850570(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d00))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d00))->int_release();
   _DAT_121a6d00 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33784,7 +33783,7 @@ void FUN_118505e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ce4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ce4))->int_release();
   _DAT_121a6ce4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33807,7 +33806,7 @@ void FUN_11850650(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d24))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d24))->int_release();
   _DAT_121a6d24 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33830,7 +33829,7 @@ void FUN_118506c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c88))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c88))->int_release();
   _DAT_121a6c88 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33853,7 +33852,7 @@ void FUN_11850730(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6cf4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6cf4))->int_release();
   _DAT_121a6cf4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33876,7 +33875,7 @@ void FUN_118507a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6cbc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6cbc))->int_release();
   _DAT_121a6cbc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33899,7 +33898,7 @@ void FUN_11850810(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ce0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ce0))->int_release();
   _DAT_121a6ce0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33922,7 +33921,7 @@ void FUN_11850880(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ca8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ca8))->int_release();
   _DAT_121a6ca8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33945,7 +33944,7 @@ void FUN_118508f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d28))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d28))->int_release();
   _DAT_121a6d28 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33968,7 +33967,7 @@ void FUN_11850960(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d20))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d20))->int_release();
   _DAT_121a6d20 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -33991,7 +33990,7 @@ void FUN_118509d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6cf0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6cf0))->int_release();
   _DAT_121a6cf0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34014,7 +34013,7 @@ void FUN_11850a40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d30))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d30))->int_release();
   _DAT_121a6d30 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34037,7 +34036,7 @@ void FUN_11850ab0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d18))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d18))->int_release();
   _DAT_121a6d18 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34060,7 +34059,7 @@ void FUN_11850b20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d1c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d1c))->int_release();
   _DAT_121a6d1c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34083,7 +34082,7 @@ void FUN_11850b90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6cd0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6cd0))->int_release();
   _DAT_121a6cd0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34106,7 +34105,7 @@ void FUN_11850c00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6cc0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6cc0))->int_release();
   _DAT_121a6cc0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34129,7 +34128,7 @@ void FUN_11850c70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ccc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ccc))->int_release();
   _DAT_121a6ccc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34152,7 +34151,7 @@ void FUN_11850ce0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6cdc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6cdc))->int_release();
   _DAT_121a6cdc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34175,7 +34174,7 @@ void FUN_11850d50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6cd4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6cd4))->int_release();
   _DAT_121a6cd4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34198,7 +34197,7 @@ void FUN_11850dc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6cf8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6cf8))->int_release();
   _DAT_121a6cf8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34221,7 +34220,7 @@ void FUN_11850e30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c9c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c9c))->int_release();
   _DAT_121a6c9c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34244,7 +34243,7 @@ void FUN_11850ea0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ce8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ce8))->int_release();
   _DAT_121a6ce8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34267,7 +34266,7 @@ void FUN_11850f10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ca4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ca4))->int_release();
   _DAT_121a6ca4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34290,7 +34289,7 @@ void FUN_11850f80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6c8c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6c8c))->int_release();
   _DAT_121a6c8c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34313,7 +34312,7 @@ void FUN_11850ff0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6cc8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6cc8))->int_release();
   _DAT_121a6cc8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34336,7 +34335,7 @@ void FUN_11851060(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6cc4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6cc4))->int_release();
   _DAT_121a6cc4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34359,7 +34358,7 @@ void FUN_118510d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ca0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ca0))->int_release();
   _DAT_121a6ca0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34382,7 +34381,7 @@ void FUN_11851140(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d68))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d68))->int_release();
   _DAT_121a6d68 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34405,7 +34404,7 @@ void FUN_118511b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d70))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d70))->int_release();
   _DAT_121a6d70 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34428,7 +34427,7 @@ void FUN_11851220(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d90))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d90))->int_release();
   _DAT_121a6d90 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34451,7 +34450,7 @@ void FUN_11851290(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d84))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d84))->int_release();
   _DAT_121a6d84 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34474,7 +34473,7 @@ void FUN_11851300(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d74))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d74))->int_release();
   _DAT_121a6d74 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34497,7 +34496,7 @@ void FUN_11851370(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d80))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d80))->int_release();
   _DAT_121a6d80 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34520,7 +34519,7 @@ void FUN_118513e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d8c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d8c))->int_release();
   _DAT_121a6d8c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34543,7 +34542,7 @@ void FUN_11851450(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d88))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d88))->int_release();
   _DAT_121a6d88 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34566,7 +34565,7 @@ void FUN_118514c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d94))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d94))->int_release();
   _DAT_121a6d94 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34589,7 +34588,7 @@ void FUN_11851530(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d7c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d7c))->int_release();
   _DAT_121a6d7c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34612,7 +34611,7 @@ void FUN_118515a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d78))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d78))->int_release();
   _DAT_121a6d78 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34635,7 +34634,7 @@ void FUN_11851610(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6d6c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6d6c))->int_release();
   _DAT_121a6d6c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34658,7 +34657,7 @@ void FUN_11851680(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6da8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6da8))->int_release();
   _DAT_121a6da8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34681,7 +34680,7 @@ void FUN_118516f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6dc8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6dc8))->int_release();
   _DAT_121a6dc8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34704,7 +34703,7 @@ void FUN_11851760(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6dbc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6dbc))->int_release();
   _DAT_121a6dbc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34727,7 +34726,7 @@ void FUN_118517d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6dac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6dac))->int_release();
   _DAT_121a6dac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34750,7 +34749,7 @@ void FUN_11851840(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6db8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6db8))->int_release();
   _DAT_121a6db8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34773,7 +34772,7 @@ void FUN_118518b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6dc4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6dc4))->int_release();
   _DAT_121a6dc4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34796,7 +34795,7 @@ void FUN_11851920(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6dc0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6dc0))->int_release();
   _DAT_121a6dc0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34819,7 +34818,7 @@ void FUN_11851990(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6dcc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6dcc))->int_release();
   _DAT_121a6dcc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34842,7 +34841,7 @@ void FUN_11851a00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6db4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6db4))->int_release();
   _DAT_121a6db4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34865,7 +34864,7 @@ void FUN_11851a70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6db0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6db0))->int_release();
   _DAT_121a6db0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34888,7 +34887,7 @@ void FUN_11851ae0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6da4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6da4))->int_release();
   _DAT_121a6da4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34911,7 +34910,7 @@ void FUN_11851b50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6da0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6da0))->int_release();
   _DAT_121a6da0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34934,7 +34933,7 @@ void FUN_11851bc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6de4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6de4))->int_release();
   _DAT_121a6de4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34957,7 +34956,7 @@ void FUN_11851c30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e04))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e04))->int_release();
   _DAT_121a6e04 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -34980,7 +34979,7 @@ void FUN_11851ca0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6df8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6df8))->int_release();
   _DAT_121a6df8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35003,7 +35002,7 @@ void FUN_11851d10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6de8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6de8))->int_release();
   _DAT_121a6de8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35026,7 +35025,7 @@ void FUN_11851d80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6df4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6df4))->int_release();
   _DAT_121a6df4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35049,7 +35048,7 @@ void FUN_11851df0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e00))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e00))->int_release();
   _DAT_121a6e00 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35072,7 +35071,7 @@ void FUN_11851e60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6dfc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6dfc))->int_release();
   _DAT_121a6dfc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35095,7 +35094,7 @@ void FUN_11851ed0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e08))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e08))->int_release();
   _DAT_121a6e08 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35118,7 +35117,7 @@ void FUN_11851f40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6df0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6df0))->int_release();
   _DAT_121a6df0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35141,7 +35140,7 @@ void FUN_11851fb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6dec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6dec))->int_release();
   _DAT_121a6dec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35164,7 +35163,7 @@ void FUN_11852020(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6de0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6de0))->int_release();
   _DAT_121a6de0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35187,7 +35186,7 @@ void FUN_11852090(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ddc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ddc))->int_release();
   _DAT_121a6ddc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35210,7 +35209,7 @@ void FUN_11852100(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e6c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e6c))->int_release();
   _DAT_121a6e6c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35231,7 +35230,7 @@ void FUN_11852170(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e28))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e28))->int_release();
   DAT_121a6e28 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35252,7 +35251,7 @@ void FUN_118521e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e88))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e88))->int_release();
   DAT_121a6e88 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35273,7 +35272,7 @@ void FUN_11852250(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e7c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e7c))->int_release();
   DAT_121a6e7c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35294,7 +35293,7 @@ void FUN_118522c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e70))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e70))->int_release();
   DAT_121a6e70 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35317,7 +35316,7 @@ void FUN_11852330(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e3c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e3c))->int_release();
   _DAT_121a6e3c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35340,7 +35339,7 @@ void FUN_118523a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e5c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e5c))->int_release();
   _DAT_121a6e5c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35363,7 +35362,7 @@ void FUN_11852410(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e50))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e50))->int_release();
   _DAT_121a6e50 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35386,7 +35385,7 @@ void FUN_11852480(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e40))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e40))->int_release();
   _DAT_121a6e40 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35409,7 +35408,7 @@ void FUN_118524f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e4c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e4c))->int_release();
   _DAT_121a6e4c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35432,7 +35431,7 @@ void FUN_11852560(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e58))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e58))->int_release();
   _DAT_121a6e58 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35455,7 +35454,7 @@ void FUN_118525d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e54))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e54))->int_release();
   _DAT_121a6e54 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35478,7 +35477,7 @@ void FUN_11852640(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e68))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e68))->int_release();
   _DAT_121a6e68 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35499,7 +35498,7 @@ void FUN_118526b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e20))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e20))->int_release();
   DAT_121a6e20 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35522,7 +35521,7 @@ void FUN_11852720(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e48))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e48))->int_release();
   _DAT_121a6e48 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35545,7 +35544,7 @@ void FUN_11852790(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e44))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e44))->int_release();
   _DAT_121a6e44 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35568,7 +35567,7 @@ void FUN_11852800(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e30))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e30))->int_release();
   _DAT_121a6e30 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35589,7 +35588,7 @@ void FUN_11852870(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e64))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e64))->int_release();
   DAT_121a6e64 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35610,7 +35609,7 @@ void FUN_118528e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e18))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e18))->int_release();
   DAT_121a6e18 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35631,7 +35630,7 @@ void FUN_11852950(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e24))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e24))->int_release();
   DAT_121a6e24 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35652,7 +35651,7 @@ void FUN_118529c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e1c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e1c))->int_release();
   DAT_121a6e1c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35673,7 +35672,7 @@ void FUN_11852a30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e34))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e34))->int_release();
   DAT_121a6e34 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35694,7 +35693,7 @@ void FUN_11852aa0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e84))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e84))->int_release();
   DAT_121a6e84 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35715,7 +35714,7 @@ void FUN_11852b10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e60))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e60))->int_release();
   DAT_121a6e60 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35736,7 +35735,7 @@ void FUN_11852b80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e78))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e78))->int_release();
   DAT_121a6e78 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35757,7 +35756,7 @@ void FUN_11852bf0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e74))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e74))->int_release();
   DAT_121a6e74 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35778,7 +35777,7 @@ void FUN_11852c60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e80))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e80))->int_release();
   DAT_121a6e80 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35801,7 +35800,7 @@ void FUN_11852cd0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e38))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e38))->int_release();
   _DAT_121a6e38 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35824,7 +35823,7 @@ void FUN_11852d40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6e2c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6e2c))->int_release();
   _DAT_121a6e2c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35847,7 +35846,7 @@ void FUN_11852db0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6eec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6eec))->int_release();
   _DAT_121a6eec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35870,7 +35869,7 @@ void FUN_11852e20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6eb8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6eb8))->int_release();
   _DAT_121a6eb8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35893,7 +35892,7 @@ void FUN_11852e90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ed8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ed8))->int_release();
   _DAT_121a6ed8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35914,7 +35913,7 @@ void FUN_11852f00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ea4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ea4))->int_release();
   DAT_121a6ea4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35937,7 +35936,7 @@ void FUN_11852f70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ecc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ecc))->int_release();
   _DAT_121a6ecc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35960,7 +35959,7 @@ void FUN_11852fe0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ebc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ebc))->int_release();
   _DAT_121a6ebc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -35983,7 +35982,7 @@ void FUN_11853050(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ec8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ec8))->int_release();
   _DAT_121a6ec8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36006,7 +36005,7 @@ void FUN_118530c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ed4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ed4))->int_release();
   _DAT_121a6ed4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36029,7 +36028,7 @@ void FUN_11853130(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ed0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ed0))->int_release();
   _DAT_121a6ed0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36052,7 +36051,7 @@ void FUN_118531a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ee0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ee0))->int_release();
   _DAT_121a6ee0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36073,7 +36072,7 @@ void FUN_11853210(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6eb4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6eb4))->int_release();
   DAT_121a6eb4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36094,7 +36093,7 @@ void FUN_11853280(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ee8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ee8))->int_release();
   DAT_121a6ee8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36117,7 +36116,7 @@ void FUN_118532f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ec4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ec4))->int_release();
   _DAT_121a6ec4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36140,7 +36139,7 @@ void FUN_11853360(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ec0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ec0))->int_release();
   _DAT_121a6ec0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36163,7 +36162,7 @@ void FUN_118533d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6eb0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6eb0))->int_release();
   _DAT_121a6eb0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36184,7 +36183,7 @@ void FUN_11853440(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6edc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6edc))->int_release();
   DAT_121a6edc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36205,7 +36204,7 @@ void FUN_118534b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ea8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ea8))->int_release();
   DAT_121a6ea8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36228,7 +36227,7 @@ void FUN_11853520(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ee4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ee4))->int_release();
   _DAT_121a6ee4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36251,7 +36250,7 @@ void FUN_11853590(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6eac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6eac))->int_release();
   _DAT_121a6eac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36274,7 +36273,7 @@ void FUN_11853600(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f08))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f08))->int_release();
   _DAT_121a6f08 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36297,7 +36296,7 @@ void FUN_11853670(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f28))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f28))->int_release();
   _DAT_121a6f28 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36320,7 +36319,7 @@ void FUN_118536e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f1c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f1c))->int_release();
   _DAT_121a6f1c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36343,7 +36342,7 @@ void FUN_11853750(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f0c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f0c))->int_release();
   _DAT_121a6f0c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36366,7 +36365,7 @@ void FUN_118537c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f18))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f18))->int_release();
   _DAT_121a6f18 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36389,7 +36388,7 @@ void FUN_11853830(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f24))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f24))->int_release();
   _DAT_121a6f24 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36412,7 +36411,7 @@ void FUN_118538a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f20))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f20))->int_release();
   _DAT_121a6f20 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36435,7 +36434,7 @@ void FUN_11853910(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f2c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f2c))->int_release();
   _DAT_121a6f2c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36458,7 +36457,7 @@ void FUN_11853980(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f14))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f14))->int_release();
   _DAT_121a6f14 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36481,7 +36480,7 @@ void FUN_118539f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f10))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f10))->int_release();
   _DAT_121a6f10 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36504,7 +36503,7 @@ void FUN_11853a60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f04))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f04))->int_release();
   _DAT_121a6f04 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36527,7 +36526,7 @@ void FUN_11853ad0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f00))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f00))->int_release();
   _DAT_121a6f00 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36550,7 +36549,7 @@ void FUN_11853b40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6fe8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6fe8))->int_release();
   _DAT_121a6fe8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36573,7 +36572,7 @@ void FUN_11853bb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6fac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6fac))->int_release();
   _DAT_121a6fac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36596,7 +36595,7 @@ void FUN_11853c20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6fc4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6fc4))->int_release();
   _DAT_121a6fc4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36619,7 +36618,7 @@ void FUN_11853c90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f98))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f98))->int_release();
   _DAT_121a6f98 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36642,7 +36641,7 @@ void FUN_11853d00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6fe0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6fe0))->int_release();
   _DAT_121a6fe0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36665,7 +36664,7 @@ void FUN_11853d70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6fb0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6fb0))->int_release();
   _DAT_121a6fb0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36688,7 +36687,7 @@ void FUN_11853de0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f88))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f88))->int_release();
   _DAT_121a6f88 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36711,7 +36710,7 @@ void FUN_11853e50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6fbc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6fbc))->int_release();
   _DAT_121a6fbc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36734,7 +36733,7 @@ void FUN_11853ec0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6fd8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6fd8))->int_release();
   _DAT_121a6fd8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36757,7 +36756,7 @@ void FUN_11853f30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f4c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f4c))->int_release();
   _DAT_121a6f4c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36780,7 +36779,7 @@ void FUN_11853fa0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f9c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f9c))->int_release();
   _DAT_121a6f9c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36803,7 +36802,7 @@ void FUN_11854010(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6fc0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6fc0))->int_release();
   _DAT_121a6fc0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36826,7 +36825,7 @@ void FUN_11854080(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f50))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f50))->int_release();
   _DAT_121a6f50 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36849,7 +36848,7 @@ void FUN_118540f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f94))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f94))->int_release();
   _DAT_121a6f94 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36872,7 +36871,7 @@ void FUN_11854160(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f58))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f58))->int_release();
   _DAT_121a6f58 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36895,7 +36894,7 @@ void FUN_118541d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6fd4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6fd4))->int_release();
   _DAT_121a6fd4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36918,7 +36917,7 @@ void FUN_11854240(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6fd0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6fd0))->int_release();
   _DAT_121a6fd0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36941,7 +36940,7 @@ void FUN_118542b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f6c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f6c))->int_release();
   _DAT_121a6f6c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36964,7 +36963,7 @@ void FUN_11854320(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f90))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f90))->int_release();
   _DAT_121a6f90 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -36987,7 +36986,7 @@ void FUN_11854390(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f40))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f40))->int_release();
   _DAT_121a6f40 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37010,7 +37009,7 @@ void FUN_11854400(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f68))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f68))->int_release();
   _DAT_121a6f68 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37033,7 +37032,7 @@ void FUN_11854470(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f80))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f80))->int_release();
   _DAT_121a6f80 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37056,7 +37055,7 @@ void FUN_118544e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f70))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f70))->int_release();
   _DAT_121a6f70 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37079,7 +37078,7 @@ void FUN_11854550(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f7c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f7c))->int_release();
   _DAT_121a6f7c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37102,7 +37101,7 @@ void FUN_118545c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f8c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f8c))->int_release();
   _DAT_121a6f8c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37125,7 +37124,7 @@ void FUN_11854630(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f84))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f84))->int_release();
   _DAT_121a6f84 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37148,7 +37147,7 @@ void FUN_118546a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6fa4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6fa4))->int_release();
   _DAT_121a6fa4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37171,7 +37170,7 @@ void FUN_11854710(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f78))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f78))->int_release();
   _DAT_121a6f78 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37194,7 +37193,7 @@ void FUN_11854780(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f74))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f74))->int_release();
   _DAT_121a6f74 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37217,7 +37216,7 @@ void FUN_118547f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6fcc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6fcc))->int_release();
   _DAT_121a6fcc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37240,7 +37239,7 @@ void FUN_11854860(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6fe4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6fe4))->int_release();
   _DAT_121a6fe4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37263,7 +37262,7 @@ void FUN_118548d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6fec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6fec))->int_release();
   _DAT_121a6fec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37286,7 +37285,7 @@ void FUN_11854940(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ff0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ff0))->int_release();
   _DAT_121a6ff0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37309,7 +37308,7 @@ void FUN_118549b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f64))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f64))->int_release();
   _DAT_121a6f64 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37332,7 +37331,7 @@ void FUN_11854a20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6fc8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6fc8))->int_release();
   _DAT_121a6fc8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37355,7 +37354,7 @@ void FUN_11854a90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f44))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f44))->int_release();
   _DAT_121a6f44 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37378,7 +37377,7 @@ void FUN_11854b00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6fdc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6fdc))->int_release();
   _DAT_121a6fdc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37401,7 +37400,7 @@ void FUN_11854b70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f60))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f60))->int_release();
   _DAT_121a6f60 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37424,7 +37423,7 @@ void FUN_11854be0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6fa0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6fa0))->int_release();
   _DAT_121a6fa0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37447,7 +37446,7 @@ void FUN_11854c50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f5c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f5c))->int_release();
   _DAT_121a6f5c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37470,7 +37469,7 @@ void FUN_11854cc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6fb4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6fb4))->int_release();
   _DAT_121a6fb4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37493,7 +37492,7 @@ void FUN_11854d30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6fa8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6fa8))->int_release();
   _DAT_121a6fa8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37516,7 +37515,7 @@ void FUN_11854da0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f3c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f3c))->int_release();
   _DAT_121a6f3c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37539,7 +37538,7 @@ void FUN_11854e10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f48))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f48))->int_release();
   _DAT_121a6f48 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37562,7 +37561,7 @@ void FUN_11854e80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6fb8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6fb8))->int_release();
   _DAT_121a6fb8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37585,7 +37584,7 @@ void FUN_11854ef0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6ff4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6ff4))->int_release();
   _DAT_121a6ff4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37608,7 +37607,7 @@ void FUN_11854f60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6f54))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a6f54))->int_release();
   _DAT_121a6f54 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37631,7 +37630,7 @@ void FUN_11854fd0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7028))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7028))->int_release();
   _DAT_121a7028 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37654,7 +37653,7 @@ void FUN_11855040(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7048))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7048))->int_release();
   _DAT_121a7048 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37677,7 +37676,7 @@ void FUN_118550b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a703c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a703c))->int_release();
   _DAT_121a703c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37700,7 +37699,7 @@ void FUN_11855120(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a702c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a702c))->int_release();
   _DAT_121a702c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37723,7 +37722,7 @@ void FUN_11855190(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7038))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7038))->int_release();
   _DAT_121a7038 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37746,7 +37745,7 @@ void FUN_11855200(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7044))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7044))->int_release();
   _DAT_121a7044 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37769,7 +37768,7 @@ void FUN_11855270(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7040))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7040))->int_release();
   _DAT_121a7040 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37792,7 +37791,7 @@ void FUN_118552e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a704c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a704c))->int_release();
   _DAT_121a704c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37815,7 +37814,7 @@ void FUN_11855350(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7034))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7034))->int_release();
   _DAT_121a7034 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37838,7 +37837,7 @@ void FUN_118553c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7030))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7030))->int_release();
   _DAT_121a7030 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37861,7 +37860,7 @@ void FUN_11855430(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7024))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7024))->int_release();
   _DAT_121a7024 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37884,7 +37883,7 @@ void FUN_118554a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7020))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7020))->int_release();
   _DAT_121a7020 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37907,7 +37906,7 @@ void FUN_11855510(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7064))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7064))->int_release();
   _DAT_121a7064 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37930,7 +37929,7 @@ void FUN_11855580(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7084))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7084))->int_release();
   _DAT_121a7084 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37953,7 +37952,7 @@ void FUN_118555f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7078))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7078))->int_release();
   _DAT_121a7078 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37976,7 +37975,7 @@ void FUN_11855660(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7068))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7068))->int_release();
   _DAT_121a7068 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -37999,7 +37998,7 @@ void FUN_118556d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7074))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7074))->int_release();
   _DAT_121a7074 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38022,7 +38021,7 @@ void FUN_11855740(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7080))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7080))->int_release();
   _DAT_121a7080 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38045,7 +38044,7 @@ void FUN_118557b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a707c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a707c))->int_release();
   _DAT_121a707c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38068,7 +38067,7 @@ void FUN_11855820(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7088))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7088))->int_release();
   _DAT_121a7088 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38091,7 +38090,7 @@ void FUN_11855890(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7070))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7070))->int_release();
   _DAT_121a7070 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38114,7 +38113,7 @@ void FUN_11855900(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a706c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a706c))->int_release();
   _DAT_121a706c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38137,7 +38136,7 @@ void FUN_11855970(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7060))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7060))->int_release();
   _DAT_121a7060 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38160,7 +38159,7 @@ void FUN_118559e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a705c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a705c))->int_release();
   _DAT_121a705c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38183,7 +38182,7 @@ void FUN_11855a50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a709c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a709c))->int_release();
   _DAT_121a709c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38206,7 +38205,7 @@ void FUN_11855ac0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a70bc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a70bc))->int_release();
   _DAT_121a70bc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38229,7 +38228,7 @@ void FUN_11855b30(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a70b0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a70b0))->int_release();
   _DAT_121a70b0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38252,7 +38251,7 @@ void FUN_11855ba0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a70a0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a70a0))->int_release();
   _DAT_121a70a0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38275,7 +38274,7 @@ void FUN_11855c10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a70ac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a70ac))->int_release();
   _DAT_121a70ac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38298,7 +38297,7 @@ void FUN_11855c80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a70b8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a70b8))->int_release();
   _DAT_121a70b8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38321,7 +38320,7 @@ void FUN_11855cf0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a70b4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a70b4))->int_release();
   _DAT_121a70b4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38344,7 +38343,7 @@ void FUN_11855d60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a70c0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a70c0))->int_release();
   _DAT_121a70c0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38367,7 +38366,7 @@ void FUN_11855dd0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a70a8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a70a8))->int_release();
   _DAT_121a70a8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38390,7 +38389,7 @@ void FUN_11855e40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a70a4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a70a4))->int_release();
   _DAT_121a70a4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38413,7 +38412,7 @@ void FUN_11855eb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7098))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7098))->int_release();
   _DAT_121a7098 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38436,7 +38435,7 @@ void FUN_11855f20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a70d0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a70d0))->int_release();
   _DAT_121a70d0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38459,7 +38458,7 @@ void FUN_11855f90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a70f0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a70f0))->int_release();
   _DAT_121a70f0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38482,7 +38481,7 @@ void FUN_11856000(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a70e4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a70e4))->int_release();
   _DAT_121a70e4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38505,7 +38504,7 @@ void FUN_11856070(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a70d4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a70d4))->int_release();
   _DAT_121a70d4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38528,7 +38527,7 @@ void FUN_118560e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a70e0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a70e0))->int_release();
   _DAT_121a70e0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38551,7 +38550,7 @@ void FUN_11856150(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a70ec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a70ec))->int_release();
   _DAT_121a70ec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38574,7 +38573,7 @@ void FUN_118561c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a70e8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a70e8))->int_release();
   _DAT_121a70e8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38597,7 +38596,7 @@ void FUN_11856230(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a70f4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a70f4))->int_release();
   _DAT_121a70f4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38620,7 +38619,7 @@ void FUN_118562a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a70dc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a70dc))->int_release();
   _DAT_121a70dc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38643,7 +38642,7 @@ void FUN_11856310(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a70d8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a70d8))->int_release();
   _DAT_121a70d8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38666,7 +38665,7 @@ void FUN_11856380(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a70cc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a70cc))->int_release();
   _DAT_121a70cc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38689,7 +38688,7 @@ void FUN_118563f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a715c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a715c))->int_release();
   _DAT_121a715c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38712,7 +38711,7 @@ void FUN_11856460(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7170))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7170))->int_release();
   _DAT_121a7170 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38735,7 +38734,7 @@ void FUN_118564d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7104))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7104))->int_release();
   _DAT_121a7104 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38758,7 +38757,7 @@ void FUN_11856540(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7174))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7174))->int_release();
   _DAT_121a7174 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38781,7 +38780,7 @@ void FUN_118565b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7158))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7158))->int_release();
   _DAT_121a7158 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38804,7 +38803,7 @@ void FUN_11856620(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7164))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7164))->int_release();
   _DAT_121a7164 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38827,7 +38826,7 @@ void FUN_11856690(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a711c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a711c))->int_release();
   _DAT_121a711c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38850,7 +38849,7 @@ void FUN_11856700(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a713c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a713c))->int_release();
   _DAT_121a713c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38873,7 +38872,7 @@ void FUN_11856770(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7144))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7144))->int_release();
   _DAT_121a7144 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38896,7 +38895,7 @@ void FUN_118567e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7100))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7100))->int_release();
   _DAT_121a7100 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38919,7 +38918,7 @@ void FUN_11856850(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7108))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7108))->int_release();
   _DAT_121a7108 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38942,7 +38941,7 @@ void FUN_118568c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7118))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7118))->int_release();
   _DAT_121a7118 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38965,7 +38964,7 @@ void FUN_11856930(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7114))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7114))->int_release();
   _DAT_121a7114 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -38988,7 +38987,7 @@ void FUN_118569a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7154))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7154))->int_release();
   _DAT_121a7154 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39011,7 +39010,7 @@ void FUN_11856a10(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a714c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a714c))->int_release();
   _DAT_121a714c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39034,7 +39033,7 @@ void FUN_11856a80(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7130))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7130))->int_release();
   _DAT_121a7130 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39057,7 +39056,7 @@ void FUN_11856af0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7120))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7120))->int_release();
   _DAT_121a7120 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39080,7 +39079,7 @@ void FUN_11856b60(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a712c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a712c))->int_release();
   _DAT_121a712c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39103,7 +39102,7 @@ void FUN_11856bd0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7138))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7138))->int_release();
   _DAT_121a7138 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39126,7 +39125,7 @@ void FUN_11856c40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7134))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7134))->int_release();
   _DAT_121a7134 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39149,7 +39148,7 @@ void FUN_11856cb0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7150))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7150))->int_release();
   _DAT_121a7150 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39172,7 +39171,7 @@ void FUN_11856d20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7148))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7148))->int_release();
   _DAT_121a7148 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39195,7 +39194,7 @@ void FUN_11856d90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7140))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7140))->int_release();
   _DAT_121a7140 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39218,7 +39217,7 @@ void FUN_11856e00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7128))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7128))->int_release();
   _DAT_121a7128 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39241,7 +39240,7 @@ void FUN_11856e70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7124))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7124))->int_release();
   _DAT_121a7124 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39264,7 +39263,7 @@ void FUN_11856ee0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7160))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7160))->int_release();
   _DAT_121a7160 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39287,7 +39286,7 @@ void FUN_11856f50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7168))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7168))->int_release();
   _DAT_121a7168 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39310,7 +39309,7 @@ void FUN_11856fc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7110))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7110))->int_release();
   _DAT_121a7110 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39333,7 +39332,7 @@ void FUN_11857030(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a716c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a716c))->int_release();
   _DAT_121a716c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39356,7 +39355,7 @@ void FUN_118570a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a710c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a710c))->int_release();
   _DAT_121a710c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39379,7 +39378,7 @@ void FUN_11857110(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7198))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7198))->int_release();
   _DAT_121a7198 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39402,7 +39401,7 @@ void FUN_11857180(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a71b8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a71b8))->int_release();
   _DAT_121a71b8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39425,7 +39424,7 @@ void FUN_118571f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a71ac))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a71ac))->int_release();
   _DAT_121a71ac = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39448,7 +39447,7 @@ void FUN_11857260(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a719c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a719c))->int_release();
   _DAT_121a719c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39471,7 +39470,7 @@ void FUN_118572d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a71a8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a71a8))->int_release();
   _DAT_121a71a8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39494,7 +39493,7 @@ void FUN_11857340(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a71b4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a71b4))->int_release();
   _DAT_121a71b4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39517,7 +39516,7 @@ void FUN_118573b0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a71b0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a71b0))->int_release();
   _DAT_121a71b0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39540,7 +39539,7 @@ void FUN_11857420(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a71bc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a71bc))->int_release();
   _DAT_121a71bc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39563,7 +39562,7 @@ void FUN_11857490(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a71a4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a71a4))->int_release();
   _DAT_121a71a4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39586,7 +39585,7 @@ void FUN_11857500(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a71a0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a71a0))->int_release();
   _DAT_121a71a0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39609,7 +39608,7 @@ void FUN_11857570(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7194))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7194))->int_release();
   _DAT_121a7194 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39632,7 +39631,7 @@ void FUN_118575e0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7190))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7190))->int_release();
   _DAT_121a7190 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39655,7 +39654,7 @@ void FUN_11857650(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a71d4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a71d4))->int_release();
   _DAT_121a71d4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39678,7 +39677,7 @@ void FUN_118576c0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a71f4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a71f4))->int_release();
   _DAT_121a71f4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39701,7 +39700,7 @@ void FUN_11857730(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a71e8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a71e8))->int_release();
   _DAT_121a71e8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39724,7 +39723,7 @@ void FUN_118577a0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a71d8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a71d8))->int_release();
   _DAT_121a71d8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39747,7 +39746,7 @@ void FUN_11857810(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a71e4))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a71e4))->int_release();
   _DAT_121a71e4 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39770,7 +39769,7 @@ void FUN_11857880(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a71f0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a71f0))->int_release();
   _DAT_121a71f0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39793,7 +39792,7 @@ void FUN_118578f0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a71ec))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a71ec))->int_release();
   _DAT_121a71ec = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39816,7 +39815,7 @@ void FUN_11857960(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a71f8))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a71f8))->int_release();
   _DAT_121a71f8 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39839,7 +39838,7 @@ void FUN_118579d0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a71e0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a71e0))->int_release();
   _DAT_121a71e0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39862,7 +39861,7 @@ void FUN_11857a40(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a71dc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a71dc))->int_release();
   _DAT_121a71dc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39885,7 +39884,7 @@ void FUN_11857ab0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a71d0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a71d0))->int_release();
   _DAT_121a71d0 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39908,7 +39907,7 @@ void FUN_11857b20(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a71cc))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a71cc))->int_release();
   _DAT_121a71cc = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39931,7 +39930,7 @@ void FUN_11857b90(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a720c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a720c))->int_release();
   _DAT_121a720c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39954,7 +39953,7 @@ void FUN_11857c00(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a722c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a722c))->int_release();
   _DAT_121a722c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -39977,7 +39976,7 @@ void FUN_11857c70(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7220))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7220))->int_release();
   _DAT_121a7220 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -40000,7 +39999,7 @@ void FUN_11857ce0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7210))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7210))->int_release();
   _DAT_121a7210 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -40023,7 +40022,7 @@ void FUN_11857d50(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a721c))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a721c))->int_release();
   _DAT_121a721c = (int)(0);
   ExceptionList = (void *)(local_10);
   return;
@@ -40046,7 +40045,7 @@ void FUN_11857dc0(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a7228))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a7228))->int_release();
   _DAT_121a7228 = (int)(0);
   ExceptionList = (void *)(local_10);
   return;

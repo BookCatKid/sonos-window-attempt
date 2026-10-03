@@ -953,107 +953,106 @@ extern int DAT_122f6b70;
 extern int DAT_122fb060;
 extern int DAT_122fb090;
 extern int DAT_122fb0a0;
-extern int Ext_CertvalStats_vftable;
-extern int Ext_ChunkLengthParser_vftable;
-extern int Ext_KeyValueCB_vftable;
-extern int Ext_KeyValueTagBodyCB_vftable;
-extern int Ext_RACListProcessor_vftable;
-extern int Ext_RAccountsVectorClock_vftable;
-extern int Ext_RAesDecoder_vftable;
-extern int Ext_RAesEncoder_vftable;
-extern int Ext_RAsyncGETIOOperation_vftable;
-extern int Ext_RAsyncIOOperation_vftable;
-extern int Ext_RAsyncSocketIOSession_vftable;
-extern int Ext_RBrowseContentProviderWithCD_vftable;
-extern int Ext_RCDBrowseProcessor_vftable;
-extern int Ext_RCPBrowseOperation_vftable;
-extern int Ext_RCPUpnpBrowseOp_RCPUpnpBrowseOp;
-extern int Ext_RCPUpnpBrowseOp_vftable;
-extern int Ext_RCPValidateOperation_vftable;
-extern int Ext_RCRCustomParamRX_vftable;
-extern int Ext_RCRInParamDeepCopy_vftable;
-extern int Ext_RCRInParam_vftable;
-extern int Ext_RCROutParamDeepCopy_vftable;
-extern int Ext_RCROutParam_vftable;
-extern int Ext_RCRResultParser_vftable;
-extern int Ext_RChunkedSocketWriter_vftable;
-extern int Ext_RCompoundAsyncIOOperation_vftable;
-extern int Ext_RContentProvider_vftable;
-extern int Ext_RControlAIOOpCB_vftable;
-extern int Ext_RControlAIOOpImpl_vftable;
-extern int Ext_RControlAIOOpRef_vftable;
-extern int Ext_RControlAIOOp_vftable;
-extern int Ext_RDIDLResponse_vftable;
-extern int Ext_RDateTime_vftable;
-extern int Ext_RDeviceXMLParser_vftable;
-extern int Ext_REncryptedDataDecoder_vftable;
-extern int Ext_REncryptedDataEncoder_vftable;
-extern int Ext_REncryptedStringDecoder_vftable;
-extern int Ext_REncryptedStringEmitter_vftable;
-extern int Ext_REncryptedStringEncoder_vftable;
-extern int Ext_RHTTPAsyncSocketIOSessionCB_vftable;
-extern int Ext_RHTTPClient_vftable;
-extern int Ext_RHTTPDataIO_vftable;
-extern int Ext_RHTTPDataProviderWithResult_vftable;
-extern int Ext_RHTTPGetReqHeadersBuilder_vftable;
-extern int Ext_RHTTPRequestHeadersBuilder_vftable;
-extern int Ext_RHttpGetNoRedirectAIOOp_vftable;
-extern int Ext_RJsonDataBinding_vftable;
-extern int Ext_RLastChangeProcessor_vftable;
-extern int Ext_RLastFMContentProvider_vftable;
-extern int Ext_RLastFMOperation_vftable;
-extern int Ext_RLastFMRequest_vftable;
-extern int Ext_RLastFMResultCB_vftable;
-extern int Ext_RLastFMResultParser_vftable;
-extern int Ext_RLastFMValidateOp_vftable;
-extern int Ext_RLegacyAsyncAAGetIOOp_vftable;
-extern int Ext_RMCastMSearchNotifyHandler_vftable;
-extern int Ext_RMSDevice_vftable;
-extern int Ext_RMSearchNotifyHandler_vftable;
-extern int Ext_RMusicServiceListParser_vftable;
-extern int Ext_RNotifyBodyParser_vftable;
-extern int Ext_RReportCategoryInfo_vftable;
-extern int Ext_RReportFileLoader_vftable;
-extern int Ext_RReportFileParserCB_vftable;
-extern int Ext_RReportFileParser_vftable;
-extern int Ext_RReportUploaderInfo_vftable;
-extern int Ext_RReportUploader_vftable;
-extern int Ext_RSCPBrowseAIOOpBase_vftable;
-extern int Ext_RSCPBrowseOperation_vftable;
-extern int Ext_RSCPBrowseSOAPAIOOp_vftable;
-extern int Ext_RSCPItemCallback_vftable;
-extern int Ext_RSCPPropNameTranslator_vftable;
-extern int Ext_RSOAPComplexInParam_vftable;
-extern int Ext_RSOAPEnvelopeReaderDeepCopy_vftable;
-extern int Ext_RSOAPEnvelopeReaderShallowCopy_vftable;
-extern int Ext_RSOAPEnvelopeReader_vftable;
-extern int Ext_RSOAPEnvelopeWriter_vftable;
-extern int Ext_RSOAPFaultHandler_vftable;
-extern int Ext_RSOAPFaultWriter_vftable;
-extern int Ext_RSOAPParametersWriter_vftable;
-extern int Ext_RSOAPWriter_vftable;
-extern int Ext_RSearchContentProvider_vftable;
-extern int Ext_RSocketWriter_vftable;
-extern int Ext_RSonosAppLinkOp_vftable;
-extern int Ext_RSonosCPFaultHandler_vftable;
-extern int Ext_RSonosCustomParamRX_vftable;
-extern int Ext_RSonosParamRX_vftable;
-extern int Ext_RSonosUserInfoParam_vftable;
-extern int Ext_RSubscribeRequest_vftable;
-extern int Ext_RSubscriptionRenewal_vftable;
-extern int Ext_RSystemTime_vftable;
-extern int Ext_RUpdManifestParser_vftable;
-extern int Ext_RUpnpCDBrowseAIOOp_vftable;
-extern int Ext_RWLock_vftable;
-extern int Ext_RXMLParserBase_vftable;
-extern int Ext_RZLibForwardOnlyDataStream_vftable;
-extern int Ext_RefCountBase_vftable;
-extern int Ext_ZlibDataStream_vftable;
-extern int Ext_ZonePlayerDevice_vftable;
-extern int Ext_nonstd_expected_lite_bad_expected_access_vftable;
-extern int Ext_nonstd_optional_lite_bad_optional_access_vftable;
-extern int Ext_std_exception_vftable;
-extern int Ext_std_logic_error_vftable;
+extern int ghidra_vftable_CertvalStats;
+extern int ghidra_vftable_ChunkLengthParser;
+extern int ghidra_vftable_KeyValueCB;
+extern int ghidra_vftable_KeyValueTagBodyCB;
+extern int ghidra_vftable_RACListProcessor;
+extern int ghidra_vftable_RAccountsVectorClock;
+extern int ghidra_vftable_RAesDecoder;
+extern int ghidra_vftable_RAesEncoder;
+extern int ghidra_vftable_RAsyncGETIOOperation;
+extern int ghidra_vftable_RAsyncIOOperation;
+extern int ghidra_vftable_RAsyncSocketIOSession;
+extern int ghidra_vftable_RBrowseContentProviderWithCD;
+extern int ghidra_vftable_RCDBrowseProcessor;
+extern int ghidra_vftable_RCPBrowseOperation;
+extern int ghidra_vftable_RCPUpnpBrowseOp;
+extern int ghidra_vftable_RCPValidateOperation;
+extern int ghidra_vftable_RCRCustomParamRX;
+extern int ghidra_vftable_RCRInParam;
+extern int ghidra_vftable_RCRInParamDeepCopy;
+extern int ghidra_vftable_RCROutParam;
+extern int ghidra_vftable_RCROutParamDeepCopy;
+extern int ghidra_vftable_RCRResultParser;
+extern int ghidra_vftable_RChunkedSocketWriter;
+extern int ghidra_vftable_RCompoundAsyncIOOperation;
+extern int ghidra_vftable_RContentProvider;
+extern int ghidra_vftable_RControlAIOOp;
+extern int ghidra_vftable_RControlAIOOpCB;
+extern int ghidra_vftable_RControlAIOOpImpl;
+extern int ghidra_vftable_RControlAIOOpRef;
+extern int ghidra_vftable_RDIDLResponse;
+extern int ghidra_vftable_RDateTime;
+extern int ghidra_vftable_RDeviceXMLParser;
+extern int ghidra_vftable_REncryptedDataDecoder;
+extern int ghidra_vftable_REncryptedDataEncoder;
+extern int ghidra_vftable_REncryptedStringDecoder;
+extern int ghidra_vftable_REncryptedStringEmitter;
+extern int ghidra_vftable_REncryptedStringEncoder;
+extern int ghidra_vftable_RHTTPAsyncSocketIOSessionCB;
+extern int ghidra_vftable_RHTTPClient;
+extern int ghidra_vftable_RHTTPDataIO;
+extern int ghidra_vftable_RHTTPDataProviderWithResult;
+extern int ghidra_vftable_RHTTPGetReqHeadersBuilder;
+extern int ghidra_vftable_RHTTPRequestHeadersBuilder;
+extern int ghidra_vftable_RHttpGetNoRedirectAIOOp;
+extern int ghidra_vftable_RJsonDataBinding;
+extern int ghidra_vftable_RLastChangeProcessor;
+extern int ghidra_vftable_RLastFMContentProvider;
+extern int ghidra_vftable_RLastFMOperation;
+extern int ghidra_vftable_RLastFMRequest;
+extern int ghidra_vftable_RLastFMResultCB;
+extern int ghidra_vftable_RLastFMResultParser;
+extern int ghidra_vftable_RLastFMValidateOp;
+extern int ghidra_vftable_RLegacyAsyncAAGetIOOp;
+extern int ghidra_vftable_RMCastMSearchNotifyHandler;
+extern int ghidra_vftable_RMSDevice;
+extern int ghidra_vftable_RMSearchNotifyHandler;
+extern int ghidra_vftable_RMusicServiceListParser;
+extern int ghidra_vftable_RNotifyBodyParser;
+extern int ghidra_vftable_RReportCategoryInfo;
+extern int ghidra_vftable_RReportFileLoader;
+extern int ghidra_vftable_RReportFileParser;
+extern int ghidra_vftable_RReportFileParserCB;
+extern int ghidra_vftable_RReportUploader;
+extern int ghidra_vftable_RReportUploaderInfo;
+extern int ghidra_vftable_RSCPBrowseAIOOpBase;
+extern int ghidra_vftable_RSCPBrowseOperation;
+extern int ghidra_vftable_RSCPBrowseSOAPAIOOp;
+extern int ghidra_vftable_RSCPItemCallback;
+extern int ghidra_vftable_RSCPPropNameTranslator;
+extern int ghidra_vftable_RSOAPComplexInParam;
+extern int ghidra_vftable_RSOAPEnvelopeReader;
+extern int ghidra_vftable_RSOAPEnvelopeReaderDeepCopy;
+extern int ghidra_vftable_RSOAPEnvelopeReaderShallowCopy;
+extern int ghidra_vftable_RSOAPEnvelopeWriter;
+extern int ghidra_vftable_RSOAPFaultHandler;
+extern int ghidra_vftable_RSOAPFaultWriter;
+extern int ghidra_vftable_RSOAPParametersWriter;
+extern int ghidra_vftable_RSOAPWriter;
+extern int ghidra_vftable_RSearchContentProvider;
+extern int ghidra_vftable_RSocketWriter;
+extern int ghidra_vftable_RSonosAppLinkOp;
+extern int ghidra_vftable_RSonosCPFaultHandler;
+extern int ghidra_vftable_RSonosCustomParamRX;
+extern int ghidra_vftable_RSonosParamRX;
+extern int ghidra_vftable_RSonosUserInfoParam;
+extern int ghidra_vftable_RSubscribeRequest;
+extern int ghidra_vftable_RSubscriptionRenewal;
+extern int ghidra_vftable_RSystemTime;
+extern int ghidra_vftable_RUpdManifestParser;
+extern int ghidra_vftable_RUpnpCDBrowseAIOOp;
+extern int ghidra_vftable_RWLock;
+extern int ghidra_vftable_RXMLParserBase;
+extern int ghidra_vftable_RZLibForwardOnlyDataStream;
+extern int ghidra_vftable_RefCountBase;
+extern int ghidra_vftable_ZlibDataStream;
+extern int ghidra_vftable_ZonePlayerDevice;
+extern int ghidra_vftable_nonstd_expected_lite_bad_expected_access;
+extern int ghidra_vftable_nonstd_optional_lite_bad_optional_access;
+extern int ghidra_vftable_std_exception;
+extern int ghidra_vftable_std_logic_error;
 extern int in_EAX;
 extern int in_stack_00000018;
 extern int in_stack_00000028;
@@ -2524,7 +2523,7 @@ undefined4 __fastcall FUN_11257a80(int param_1);
 undefined4 FUN_11258ae0(char *param_1,int param_2,undefined4 param_3);
 void __fastcall FUN_11259410(int param_1);
 undefined4 * FUN_11259910(undefined4 param_1,undefined4 param_2,int param_3);
-/* WARNING: Removing unreachable block (ram,0x1125a11c) */ void __fastcall FUN_1125a0e0(undefined4 *param_1);
+/* WARNING: Removing unreachable block_1125a0e0 (ram,0x1125a11c) */ void __fastcall FUN_1125a0e0(undefined4 *param_1);
 void __fastcall FUN_1125a2c0(int param_1);
 void FUN_1125a5d0(int param_1,char *param_2,int param_3);
 void FUN_1125a690(int param_1,undefined4 param_2,undefined4 param_3);
@@ -2585,7 +2584,7 @@ void __fastcall FUN_1126f610(int *param_1);
 undefined4 * __fastcall FUN_11270990(undefined4 *param_1);
 undefined4 * __fastcall FUN_11270a60(undefined4 *param_1);
 char * FUN_11270c60(int param_1,int param_2);
-/* WARNING: Removing unreachable block (ram,0x11270e06) */ void __fastcall FUN_11270dc0(int *param_1);
+/* WARNING: Removing unreachable block_11270dc0 (ram,0x11270e06) */ void __fastcall FUN_11270dc0(int *param_1);
 /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void FUN_11271a00(undefined4 param_1,int param_2);
 undefined1 FUN_112727c0(int *param_1,int *param_2,int param_3,int *param_4);
 /* WARNING: Restarted to delay deadcode elimination for space: ram */ void FUN_11273680(undefined4 param_1,undefined4 param_2);
@@ -2593,7 +2592,7 @@ void __fastcall FUN_11273b70(int param_1);
 void __fastcall FUN_11274690(int *param_1);
 void __fastcall FUN_11274880(int *param_1);
 void __fastcall FUN_11274ef0(undefined4 *param_1);
-/* WARNING: Removing unreachable block (ram,0x112753a1) */ void FUN_11275370(char *param_1,undefined4 param_2);
+/* WARNING: Removing unreachable block_11275370 (ram,0x112753a1) */ void FUN_11275370(char *param_1,undefined4 param_2);
 void __fastcall FUN_11275e20(int param_1);
 void __stdcall FUN_11278490(int param_1,int param_2,int param_3);
 void __fastcall FUN_11279420(int *param_1);
@@ -2624,7 +2623,7 @@ bool FUN_112833b0(undefined4 param_1);
 undefined4 FUN_11285940(char *param_1);
 undefined1 * __fastcall FUN_11286490(undefined1 *param_1);
 void __fastcall FUN_11286ff0(int param_1);
-/* WARNING: Removing unreachable block (ram,0x112875b3) */ void __fastcall FUN_11287560(int param_1);
+/* WARNING: Removing unreachable block_11287560 (ram,0x112875b3) */ void __fastcall FUN_11287560(int param_1);
 undefined4 FUN_11287b20(undefined4 *param_1,uint param_2);
 undefined4 FUN_11287bc0(undefined4 *param_1,uint param_2,undefined4 *param_3,uint param_4);
 void __stdcall FUN_11287f40(undefined4 param_1,undefined1 param_2);
@@ -2963,7 +2962,7 @@ void __fastcall FUN_111e9ad0(ushort *param_1)
   sVar2 = (short)(thunk_FUN_111e7df0(local_40b0,local_5c88,local_2e80,local_1b8,&iStack_123c4,local_11bc,
                              0x1001));
   if (sVar2 != 0) goto LAB_111e9e9e;
-  local_24f8 = (undefined **)((uint)&Ext_RSonosCPFaultHandler_vftable);
+  local_24f8 = (undefined **)((uint)&ghidra_vftable_RSonosCPFaultHandler);
   local_24f4 = (undefined4)(0);
   local_24f0 = (undefined1)(0);
   local_24d0 = (undefined1)(0);
@@ -3083,7 +3082,7 @@ LAB_111e9e9e:
   local_14 = (uint)(uVar3);
   thunk_FUN_11283280(local_94,0x80);
   if ((DAT_122e8b78 == '\0') || (param_3 != '\0')) {
-    local_27b4 = (undefined **)((uint)&Ext_RSonosCPFaultHandler_vftable);
+    local_27b4 = (undefined **)((uint)&ghidra_vftable_RSonosCPFaultHandler);
     local_27b0 = (undefined4)(0);
     local_27ac = (undefined1)(0);
     local_278c = (undefined1)(0);
@@ -3237,7 +3236,7 @@ LAB_111e9e9e:
     sVar1 = (short)(thunk_FUN_111e7df0(local_509c,local_6c74,local_2e54,local_18c,&iStack_133c8,local_1190,
                                0x1001));
     if (sVar1 == 0) {
-      local_24cc = (undefined **)((uint)&Ext_RSonosCPFaultHandler_vftable);
+      local_24cc = (undefined **)((uint)&ghidra_vftable_RSonosCPFaultHandler);
       local_24c8 = (undefined4)(0);
       local_24c4 = (undefined1)(0);
       local_24a4 = (undefined1)(0);
@@ -3391,7 +3390,7 @@ LAB_111e9e9e:
   sVar2 = (short)(thunk_FUN_111e7df0(local_53dc,local_6fb4,local_41ac,local_198,&iStack_136f0,local_119c,
                              0x1001));
   if (sVar2 != 0) goto LAB_111eea8a;
-  local_3824 = (undefined **)((uint)&Ext_RSonosCPFaultHandler_vftable);
+  local_3824 = (undefined **)((uint)&ghidra_vftable_RSonosCPFaultHandler);
   local_3820 = (undefined4)(0);
   local_381c = (undefined1)(0);
   local_37fc = (undefined1)(0);
@@ -3416,7 +3415,7 @@ LAB_111e9e9e:
   }
   thunk_FUN_1124dd60();
   *(unsigned char *)((char *)&local_8 + 0) = 6;
-  local_2794 = (undefined **)((uint)&Ext_RSonosParamRX_vftable);
+  local_2794 = (undefined **)((uint)&ghidra_vftable_RSonosParamRX);
   local_274a = (undefined2)(0);
   thunk_FUN_1124dee0();
   thunk_FUN_1106a8d0(local_2710,"http://www.sonos.com/Services/1.1",0x401);
@@ -3428,7 +3427,7 @@ LAB_111e9e9e:
   local_230c = (int)((int)pcVar4 - (int)(local_2710 + 1));
   local_1307 = (char)(local_2790);
   thunk_FUN_1145c250(local_2750,&DAT_1188a1d4,6);
-  local_2794 = (undefined **)((uint)&Ext_RSonosUserInfoParam_vftable);
+  local_2794 = (undefined **)((uint)&ghidra_vftable_RSonosUserInfoParam);
   local_11a0 = (undefined4)(param_2);
   local_1304 = (undefined1)(0);
   local_1203 = (undefined1)(0);
@@ -3452,7 +3451,7 @@ LAB_111ee9f6:
     }
     if (sVar2 != 0) goto LAB_111ee9f6;
   }
-  local_2794 = (undefined **)((uint)&Ext_RSonosParamRX_vftable);
+  local_2794 = (undefined **)((uint)&ghidra_vftable_RSonosParamRX);
   thunk_FUN_1124ecb0();
   thunk_FUN_1124eb30();
   thunk_FUN_1124ef40();
@@ -4178,7 +4177,7 @@ void __thiscall Recovered_Bulk::FUN_111f3430(undefined4 param_2,undefined4 param
         piVar4 = (int *)((int *)thunk_FUN_1124fec0("token"));
         (**(code **)(*piVar4 + 0xc))(param_1[2] + 0x124);
       }
-      local_444c = (undefined **)((uint)&Ext_RSonosCPFaultHandler_vftable);
+      local_444c = (undefined **)((uint)&ghidra_vftable_RSonosCPFaultHandler);
       local_4448 = (undefined4)(0);
       local_4444 = (undefined1)(0);
       local_4424 = (undefined1)(0);
@@ -4206,7 +4205,7 @@ void __thiscall Recovered_Bulk::FUN_111f3430(undefined4 param_2,undefined4 param
       thunk_FUN_112503c0(uVar3,param_5);
       thunk_FUN_1124dd60();
       *(unsigned char *)((char *)&uStack_149a8 + 0) = 8;
-      local_2a34 = (undefined **)((uint)&Ext_RSonosParamRX_vftable);
+      local_2a34 = (undefined **)((uint)&ghidra_vftable_RSonosParamRX);
       local_29ea = (undefined2)(0);
       thunk_FUN_1124dee0();
       thunk_FUN_1106a8d0(local_29b0,"http://www.sonos.com/Services/1.1",0x401);
@@ -4218,7 +4217,7 @@ void __thiscall Recovered_Bulk::FUN_111f3430(undefined4 param_2,undefined4 param
       local_25ac = (int)((int)pcVar5 - (int)(local_29b0 + 1));
       local_15a7 = (char)(local_2a30);
       thunk_FUN_1145c250(local_29f0,&DAT_1188a1d4,6);
-      local_2a34 = (undefined **)((uint)&Ext_RSonosUserInfoParam_vftable);
+      local_2a34 = (undefined **)((uint)&ghidra_vftable_RSonosUserInfoParam);
       local_1440 = (int)(param_6);
       local_15a4 = (undefined1)(0);
       local_14a3 = (undefined1)(0);
@@ -4247,7 +4246,7 @@ void __thiscall Recovered_Bulk::FUN_111f3430(undefined4 param_2,undefined4 param
                              *(undefined4 *)(iVar2 + 0x1674));
         }
       }
-      local_2a34 = (undefined **)((uint)&Ext_RSonosParamRX_vftable);
+      local_2a34 = (undefined **)((uint)&ghidra_vftable_RSonosParamRX);
       thunk_FUN_1124ecb0();
       thunk_FUN_1124eb30();
       thunk_FUN_1124f230();
@@ -5225,7 +5224,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111f7600(undefined4 param_2)
   undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_1125b720(param_1,0x7c,0,LAB_1003446e,LAB_10029d39,LAB_10006622,LAB_10059d40,0);
   param_1[2] = param_2;
-  *param_1 = (undefined4)((uint)&Ext_RLastChangeProcessor_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RLastChangeProcessor);
   *(undefined2 *)(param_1 + 3) = 0;
   *(undefined1 *)((int)param_1 + 0xe) = 0;
   param_1[4] = 0;
@@ -5241,7 +5240,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111f7600(undefined4 param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111f7960(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RNotifyBodyParser_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RNotifyBodyParser);
   if ((void *)param_1[0x304] != (void *)((int)param_1 + 0x40f)) {
     free((void *)param_1[0x304]);
   }
@@ -5295,22 +5294,22 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111fbeb0(undefined4 param_2,undefine
 {
   undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_11261e50();
-  param_1[7] = (uint)&Ext_RHTTPDataIO_vftable;
-  *param_1 = (undefined4)((uint)&Ext_RAsyncGETIOOperation_vftable);
-  param_1[2] = (uint)&Ext_RAsyncGETIOOperation_vftable;
-  param_1[7] = (uint)&Ext_RAsyncGETIOOperation_vftable;
+  param_1[7] = (uint)&ghidra_vftable_RHTTPDataIO;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RAsyncGETIOOperation);
+  param_1[2] = (uint)&ghidra_vftable_RAsyncGETIOOperation;
+  param_1[7] = (uint)&ghidra_vftable_RAsyncGETIOOperation;
   param_1[9] = 0;
   param_1[10] = 0;
-  param_1[8] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[8] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0xc] = 0;
   param_1[0xd] = 0;
-  param_1[0xb] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xb] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0xf] = 0;
   param_1[0x10] = 0;
-  param_1[0xe] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xe] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x12] = 0;
   param_1[0x13] = 0;
-  param_1[0x11] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x11] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x3017] = param_3;
   param_1[0x3018] = param_4;
   *(undefined1 *)(param_1 + 0x3019) = param_5;
@@ -5345,22 +5344,22 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111fbeb0(undefined4 param_2,undefine
   local_4 = (uint)(DAT_12126b84 ^ (uint)&local_8010);
   local_8010 = (undefined4 *)(param_1);
   thunk_FUN_11261e50();
-  param_1[7] = (uint)&Ext_RHTTPDataIO_vftable;
-  *param_1 = (undefined4)((uint)&Ext_RAsyncGETIOOperation_vftable);
-  param_1[2] = (uint)&Ext_RAsyncGETIOOperation_vftable;
-  param_1[7] = (uint)&Ext_RAsyncGETIOOperation_vftable;
+  param_1[7] = (uint)&ghidra_vftable_RHTTPDataIO;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RAsyncGETIOOperation);
+  param_1[2] = (uint)&ghidra_vftable_RAsyncGETIOOperation;
+  param_1[7] = (uint)&ghidra_vftable_RAsyncGETIOOperation;
   param_1[9] = 0;
   param_1[10] = 0;
-  param_1[8] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[8] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0xc] = 0;
   param_1[0xd] = 0;
-  param_1[0xb] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xb] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0xf] = 0;
   param_1[0x10] = 0;
-  param_1[0xe] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xe] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x12] = 0;
   param_1[0x13] = 0;
-  param_1[0x11] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x11] = (uint)&ghidra_vftable_RControlAIOOpRef;
   param_1[0x3017] = param_3;
   param_1[0x3018] = param_4;
   *(undefined1 *)(param_1 + 0x3019) = param_5;
@@ -5375,9 +5374,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111fbeb0(undefined4 param_2,undefine
   thunk_FUN_1106a8d0((int)param_1 + 0x4056,param_2,0x4002);
   thunk_FUN_1106a8d0(param_1 + 0x15,param_2,0x4002);
   *(undefined1 *)(param_1 + 0x2016) = 0;
-  *param_1 = (undefined4)((uint)&Ext_RLegacyAsyncAAGetIOOp_vftable);
-  param_1[2] = (uint)&Ext_RLegacyAsyncAAGetIOOp_vftable;
-  param_1[7] = (uint)&Ext_RLegacyAsyncAAGetIOOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RLegacyAsyncAAGetIOOp);
+  param_1[2] = (uint)&ghidra_vftable_RLegacyAsyncAAGetIOOp;
+  param_1[7] = (uint)&ghidra_vftable_RLegacyAsyncAAGetIOOp;
   cVar1 = (char)(thunk_FUN_111fd320(param_2,local_800c,0x4002,local_4008,0x4002));
   if (cVar1 != '\0') {
     thunk_FUN_1106a8d0((int)param_1 + 0x4056,local_800c,0x4002);
@@ -5405,9 +5404,9 @@ void __fastcall FUN_111fc270(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RAsyncGETIOOperation_vftable);
-  param_1[2] = (uint)&Ext_RAsyncGETIOOperation_vftable;
-  param_1[7] = (uint)&Ext_RAsyncGETIOOperation_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RAsyncGETIOOperation);
+  param_1[2] = (uint)&ghidra_vftable_RAsyncGETIOOperation;
+  param_1[7] = (uint)&ghidra_vftable_RAsyncGETIOOperation;
   if ((int *)param_1[0x14] != (int *)0x0) {
     (**(code **)(*(int *)param_1[0x14] + 0x14))(uVar1);
     param_1[0x14] = 0;
@@ -5416,13 +5415,13 @@ void __fastcall FUN_111fc270(undefined4 *param_1)
     (*(code *)**(undefined4 **)param_1[0x301f])(1);
   }
   param_1[0x301f] = 0;
-  param_1[0x11] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0x11] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0xe] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xe] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[0xb] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[0xb] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
-  param_1[8] = (uint)&Ext_RControlAIOOpRef_vftable;
+  param_1[8] = (uint)&ghidra_vftable_RControlAIOOpRef;
   thunk_FUN_101ba0d0();
   thunk_FUN_11261f10();
   ExceptionList = (void *)(local_10);
@@ -5720,8 +5719,8 @@ undefined4 * __fastcall FUN_111fcf40(int param_1)
     thunk_FUN_111c05a0(param_1 + 0x1c,*(undefined4 *)(param_1 + 0xc07c),param_1 + 0x54,
                        *(undefined4 *)(param_1 + 0xc05c),*(undefined4 *)(param_1 + 0xc060),
                        *(undefined1 *)(param_1 + 0xc064),0);
-    *puVar3 = (undefined4)((uint)&Ext_RHttpGetNoRedirectAIOOp_vftable);
-    puVar3[0x18] = (uint)&Ext_RHttpGetNoRedirectAIOOp_vftable;
+    *puVar3 = (undefined4)((uint)&ghidra_vftable_RHttpGetNoRedirectAIOOp);
+    puVar3[0x18] = (uint)&ghidra_vftable_RHttpGetNoRedirectAIOOp;
     *(undefined1 *)(puVar3 + 0x1124) = 0;
     ExceptionList = (void *)(local_10);
     return (undefined4 *)(puVar3);
@@ -6000,7 +5999,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111fe560(int param_2,undefined4 para
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RSCPBrowseAIOOpBase_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSCPBrowseAIOOpBase);
   local_8 = (undefined4)(0);
   uVar3 = (undefined4)((**(code **)(*(int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4)) + 0x48))(uVar2));
   iVar1 = (int)(*(int *)(*(int *)(param_2 + 4) + 4));
@@ -6009,22 +6008,22 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111fe560(int param_2,undefined4 para
   pcVar7 = (char *)("Browse");
   uVar5 = (undefined4)((**(code **)(*(int *)(param_2 + iVar1 + 4) + 0x68))("Browse",uVar4));
   thunk_FUN_111c0760(uVar3,uVar5,pcVar7,uVar4,param_13,param_14,param_15,param_16);
-  param_1[2] = (uint)&Ext_RUpnpCDBrowseAIOOp_vftable;
-  param_1[0x1a] = (uint)&Ext_RUpnpCDBrowseAIOOp_vftable;
-  param_1[0x11d] = (uint)&Ext_RUpnpCDBrowseAIOOp_vftable;
+  param_1[2] = (uint)&ghidra_vftable_RUpnpCDBrowseAIOOp;
+  param_1[0x1a] = (uint)&ghidra_vftable_RUpnpCDBrowseAIOOp;
+  param_1[0x11d] = (uint)&ghidra_vftable_RUpnpCDBrowseAIOOp;
   param_1[0x35f6] = 0;
   param_1[0x35f7] = 0;
   param_1[0x35f8] = 0;
-  param_1[2] = (uint)&Ext_RSCPBrowseSOAPAIOOp_vftable;
-  *param_1 = (undefined4)((uint)&Ext_RSCPBrowseSOAPAIOOp_vftable);
+  param_1[2] = (uint)&ghidra_vftable_RSCPBrowseSOAPAIOOp;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSCPBrowseSOAPAIOOp);
   *(unsigned char *)((char *)&local_8 + 0) = 1;
-  param_1[0x1a] = (uint)&Ext_RSCPBrowseSOAPAIOOp_vftable;
-  param_1[0x11d] = (uint)&Ext_RSCPBrowseSOAPAIOOp_vftable;
+  param_1[0x1a] = (uint)&ghidra_vftable_RSCPBrowseSOAPAIOOp;
+  param_1[0x11d] = (uint)&ghidra_vftable_RSCPBrowseSOAPAIOOp;
   *(undefined1 *)(param_1 + 0x35fa) = param_4;
   thunk_FUN_111fe860(param_5,param_6,param_3);
   *(unsigned char *)((char *)&local_8 + 0) = 2;
   thunk_FUN_11202500();
-  param_1[0x3b01] = (uint)&Ext_RSCPPropNameTranslator_vftable;
+  param_1[0x3b01] = (uint)&ghidra_vftable_RSCPPropNameTranslator;
   puVar8 = (undefined4 *)(param_1 + 0x3b03);
   *(unsigned char *)((char *)&local_8 + 0) = 3;
   thunk_FUN_11202490(param_1 + 0x35fb,param_1 + 0x3b01);
@@ -6065,7 +6064,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111fe860(undefined4 param_2,undefine
   undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_11202480();
   param_1[0x202] = param_4;
-  *param_1 = (undefined4)((uint)&Ext_RSCPItemCallback_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSCPItemCallback);
   param_1[0x203] = 0;
   param_1[0x505] = 0;
   thunk_FUN_1106a8d0(param_1 + 1,param_2,0x401);
@@ -6082,13 +6081,13 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111fe860(undefined4 param_2,undefine
 undefined4 * __thiscall Recovered_Bulk::FUN_111fe970(undefined4 param_2,undefined4 param_3)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RContentProvider_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RContentProvider);
   param_1[1] = 0;
   thunk_FUN_1145c930(param_1 + 2,0);
   param_1[5] = param_2;
   param_1[6] = param_3;
   *(undefined1 *)(param_1 + 4) = 0;
-  *param_1 = (undefined4)((uint)&Ext_RSearchContentProvider_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSearchContentProvider);
   param_1[7] = 0;
   return (undefined4 *)(param_1);
 }
@@ -6112,8 +6111,8 @@ void __fastcall FUN_111feb80(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RSCPBrowseOperation_vftable);
-  param_1[1] = (uint)&Ext_RSCPBrowseOperation_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSCPBrowseOperation);
+  param_1[1] = (uint)&ghidra_vftable_RSCPBrowseOperation;
   if (DAT_122f5654 != 0) {
     thunk_FUN_11240e60(param_1);
   }
@@ -6122,8 +6121,8 @@ void __fastcall FUN_111feb80(undefined4 *param_1)
   if ((iVar3 == 0) && (puVar2 != (undefined4 *)0x0)) {
     (**(code **)*puVar2)(1);
   }
-  param_1[1] = (uint)&Ext_RCPBrowseOperation_vftable;
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpCB_vftable);
+  param_1[1] = (uint)&ghidra_vftable_RCPBrowseOperation;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
   thunk_FUN_11240850();
   ExceptionList = (void *)(local_10);
   return;
@@ -6136,19 +6135,19 @@ void __fastcall FUN_111feb80(undefined4 *param_1)
 void __fastcall FUN_111fec40(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RSCPBrowseSOAPAIOOp_vftable);
-  param_1[2] = (uint)&Ext_RSCPBrowseSOAPAIOOp_vftable;
-  param_1[0x1a] = (uint)&Ext_RSCPBrowseSOAPAIOOp_vftable;
-  param_1[0x11d] = (uint)&Ext_RSCPBrowseSOAPAIOOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSCPBrowseSOAPAIOOp);
+  param_1[2] = (uint)&ghidra_vftable_RSCPBrowseSOAPAIOOp;
+  param_1[0x1a] = (uint)&ghidra_vftable_RSCPBrowseSOAPAIOOp;
+  param_1[0x11d] = (uint)&ghidra_vftable_RSCPBrowseSOAPAIOOp;
   thunk_FUN_11202580();
-  param_1[0x3b01] = (uint)&Ext_RSCPPropNameTranslator_vftable;
+  param_1[0x3b01] = (uint)&ghidra_vftable_RSCPPropNameTranslator;
   thunk_FUN_11202590();
   thunk_FUN_11202570();
-  param_1[2] = (uint)&Ext_RUpnpCDBrowseAIOOp_vftable;
-  param_1[0x1a] = (uint)&Ext_RUpnpCDBrowseAIOOp_vftable;
-  param_1[0x11d] = (uint)&Ext_RUpnpCDBrowseAIOOp_vftable;
+  param_1[2] = (uint)&ghidra_vftable_RUpnpCDBrowseAIOOp;
+  param_1[0x1a] = (uint)&ghidra_vftable_RUpnpCDBrowseAIOOp;
+  param_1[0x11d] = (uint)&ghidra_vftable_RUpnpCDBrowseAIOOp;
   thunk_FUN_111c0af0();
-  *param_1 = (undefined4)((uint)&Ext_RSCPBrowseAIOOpBase_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSCPBrowseAIOOpBase);
   return;
 }
 
@@ -6170,8 +6169,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111feea0(byte param_2)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RSCPBrowseOperation_vftable);
-  param_1[1] = (uint)&Ext_RSCPBrowseOperation_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSCPBrowseOperation);
+  param_1[1] = (uint)&ghidra_vftable_RSCPBrowseOperation;
   local_8 = (undefined4)(0);
   if (DAT_122f5654 != 0) {
     thunk_FUN_11240e60(param_1);
@@ -6181,8 +6180,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111feea0(byte param_2)
   if ((iVar3 == 0) && (puVar2 != (undefined4 *)0x0)) {
     (**(code **)*puVar2)(1);
   }
-  param_1[1] = (uint)&Ext_RCPBrowseOperation_vftable;
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpCB_vftable);
+  param_1[1] = (uint)&ghidra_vftable_RCPBrowseOperation;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
   thunk_FUN_11240850();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x14);
@@ -6198,19 +6197,19 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111feea0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_111fef80(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RSCPBrowseSOAPAIOOp_vftable);
-  param_1[2] = (uint)&Ext_RSCPBrowseSOAPAIOOp_vftable;
-  param_1[0x1a] = (uint)&Ext_RSCPBrowseSOAPAIOOp_vftable;
-  param_1[0x11d] = (uint)&Ext_RSCPBrowseSOAPAIOOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSCPBrowseSOAPAIOOp);
+  param_1[2] = (uint)&ghidra_vftable_RSCPBrowseSOAPAIOOp;
+  param_1[0x1a] = (uint)&ghidra_vftable_RSCPBrowseSOAPAIOOp;
+  param_1[0x11d] = (uint)&ghidra_vftable_RSCPBrowseSOAPAIOOp;
   thunk_FUN_11202580();
-  param_1[0x3b01] = (uint)&Ext_RSCPPropNameTranslator_vftable;
+  param_1[0x3b01] = (uint)&ghidra_vftable_RSCPPropNameTranslator;
   thunk_FUN_11202590();
   thunk_FUN_11202570();
-  param_1[2] = (uint)&Ext_RUpnpCDBrowseAIOOp_vftable;
-  param_1[0x1a] = (uint)&Ext_RUpnpCDBrowseAIOOp_vftable;
-  param_1[0x11d] = (uint)&Ext_RUpnpCDBrowseAIOOp_vftable;
+  param_1[2] = (uint)&ghidra_vftable_RUpnpCDBrowseAIOOp;
+  param_1[0x1a] = (uint)&ghidra_vftable_RUpnpCDBrowseAIOOp;
+  param_1[0x11d] = (uint)&ghidra_vftable_RUpnpCDBrowseAIOOp;
   thunk_FUN_111c0af0();
-  *param_1 = (undefined4)((uint)&Ext_RSCPBrowseAIOOpBase_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSCPBrowseAIOOpBase);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xf590);
   }
@@ -6365,12 +6364,12 @@ undefined4 * __fastcall FUN_11200110(int param_1)
     puVar4 = (undefined4 *)((undefined4 *)(**(code **)(**(int **)(param_1 + 0x14) + 0x40))(&local_14,uVar2));
     uVar1 = (undefined4)(*puVar4);
     *puVar4 = (undefined4)(0);
-    *puVar3 = (undefined4)((uint)&Ext_RContentProvider_vftable);
+    *puVar3 = (undefined4)((uint)&ghidra_vftable_RContentProvider);
     puVar3[1] = 0;
     thunk_FUN_1145c930(puVar3 + 2,0);
     *(undefined1 *)(puVar3 + 4) = 0;
     puVar3[5] = uVar1;
-    *puVar3 = (undefined4)((uint)&Ext_RBrowseContentProviderWithCD_vftable);
+    *puVar3 = (undefined4)((uint)&ghidra_vftable_RBrowseContentProviderWithCD);
     puVar3[6] = uVar1;
     if (local_14 != (undefined4 *)0x0) {
       (**(code **)*local_14)(1);
@@ -6624,7 +6623,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11202490(undefined4 param_2,undefine
   thunk_FUN_1125b6a0(param_1,0x7c,LAB_1006e362,LAB_100844a5,LAB_1008d3cf);
   param_1[2] = param_2;
   param_1[3] = param_3;
-  *param_1 = (undefined4)((uint)&Ext_RCDBrowseProcessor_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCDBrowseProcessor);
   param_1[4] = 0;
   *(undefined1 *)(param_1 + 5) = 0;
   *(undefined1 *)((int)param_1 + 0x4d6) = 0;
@@ -6642,7 +6641,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11203990(undefined4 *param_2)
   undefined4 uVar1;
   
   thunk_FUN_11265ef0();
-  *param_1 = (undefined4)((uint)&Ext_RSubscribeRequest_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSubscribeRequest);
   uVar1 = (undefined4)(*param_2);
   param_1[0x215b] = param_2[1];
   *(undefined2 *)((int)param_1 + 0x857e) = 0;
@@ -7684,7 +7683,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_112073e0(undefined4 param_2,undefine
   thunk_FUN_1125b810(param_1,LAB_10081b56,LAB_1000b4a6,LAB_1002c192);
   param_1[2] = param_2;
   param_1[3] = param_3;
-  *param_1 = (undefined4)((uint)&Ext_RDeviceXMLParser_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RDeviceXMLParser);
   param_1[0x125] = 0;
   param_1[0x126] = 0;
   param_1[0x127] = 0;
@@ -24305,8 +24304,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1122b300(undefined2 param_2,undefine
   thunk_FUN_112074d0(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   local_8 = (undefined4)(0);
   thunk_FUN_11455d80();
-  *param_1 = (undefined4)((uint)&Ext_ZonePlayerDevice_vftable);
-  param_1[0xde] = (uint)&Ext_ZonePlayerDevice_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_ZonePlayerDevice);
+  param_1[0xde] = (uint)&ghidra_vftable_ZonePlayerDevice;
   *(undefined1 *)(param_1 + 0x122) = 0;
   memset((void *)((int)param_1 + 0x489),0,0x94);
   *(undefined2 *)((int)param_1 + 0x51e) = param_2;
@@ -24343,8 +24342,8 @@ undefined4 * __fastcall FUN_1122b460(undefined4 *param_1)
   thunk_FUN_112074d0(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   local_8 = (undefined4)(0);
   thunk_FUN_11455d80();
-  *param_1 = (undefined4)((uint)&Ext_ZonePlayerDevice_vftable);
-  param_1[0xde] = (uint)&Ext_ZonePlayerDevice_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_ZonePlayerDevice);
+  param_1[0xde] = (uint)&ghidra_vftable_ZonePlayerDevice;
   *(undefined1 *)(param_1 + 0x122) = 0;
   memset((void *)((int)param_1 + 0x489),0,0x94);
   *(undefined2 *)((int)param_1 + 0x51e) = DAT_11c03ce8;
@@ -24373,11 +24372,11 @@ undefined4 * __fastcall FUN_1122b5e0(undefined4 *param_1)
   undefined1 local_4;
   
   local_8 = (char *)("bad optional access");
-  *param_1 = (undefined4)((uint)&Ext_std_exception_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_std_exception);
   *(undefined8 *)(param_1 + 1) = 0;
   local_4 = (undefined1)(1);
   __std_exception_copy(&local_8,param_1 + 1);
-  *param_1 = (undefined4)((uint)&Ext_nonstd_optional_lite_bad_optional_access_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_nonstd_optional_lite_bad_optional_access);
   return (undefined4 *)(param_1);
 }
 
@@ -24392,11 +24391,11 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1122b6d0(undefined4 param_2)
   undefined1 local_4;
   
   local_8 = (undefined4)(param_2);
-  *param_1 = (undefined4)((uint)&Ext_std_exception_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_std_exception);
   *(undefined8 *)(param_1 + 1) = 0;
   local_4 = (undefined1)(1);
   __std_exception_copy(&local_8,param_1 + 1);
-  *param_1 = (undefined4)((uint)&Ext_std_logic_error_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_std_logic_error);
   return (undefined4 *)(param_1);
 }
 
@@ -24462,8 +24461,8 @@ void __fastcall FUN_1122b800(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_ZonePlayerDevice_vftable);
-  param_1[0xde] = (uint)&Ext_ZonePlayerDevice_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_ZonePlayerDevice);
+  param_1[0xde] = (uint)&ghidra_vftable_ZonePlayerDevice;
   thunk_FUN_11208410(1);
   thunk_FUN_11458440(uVar1);
   *(undefined2 *)(param_1 + 0x122) = 0;
@@ -24557,8 +24556,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1122baa0(byte param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_ZonePlayerDevice_vftable);
-  param_1[0xde] = (uint)&Ext_ZonePlayerDevice_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_ZonePlayerDevice);
+  param_1[0xde] = (uint)&ghidra_vftable_ZonePlayerDevice;
   thunk_FUN_11208410(1);
   thunk_FUN_11458440(uVar1);
   *(undefined2 *)(param_1 + 0x122) = 0;
@@ -25307,7 +25306,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_112302f0(undefined4 param_2,undefine
   thunk_FUN_1125b6a0(param_1,0x7c,LAB_1002c46c,LAB_10058d7d,LAB_10054061);
   param_1[2] = param_2;
   param_1[3] = param_3;
-  *param_1 = (undefined4)((uint)&Ext_RACListProcessor_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RACListProcessor);
   *(undefined2 *)(param_1 + 4) = 0;
   return (undefined4 *)(param_1);
 }
@@ -25322,7 +25321,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11230c90(undefined4 param_2,undefine
   undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_111fe400();
   *(undefined1 *)((int)param_1 + 0x116) = param_3;
-  *param_1 = (undefined4)((uint)&Ext_RLastFMContentProvider_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RLastFMContentProvider);
   thunk_FUN_1106a8d0(param_1 + 5,param_2,0x81);
   thunk_FUN_1106a8d0((int)param_1 + 0x95,param_4,0x41);
   if (param_5 != 0) {
@@ -25378,12 +25377,12 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11230dd0(undefined4 param_2,undefine
   thunk_FUN_11230ea0(param_2,param_3,param_4,param_5,param_6,param_9);
   local_8 = (undefined4)(0);
   thunk_FUN_11240560(param_7,param_8);
-  param_1[0x1c67] = (uint)&Ext_RControlAIOOpImpl_vftable;
+  param_1[0x1c67] = (uint)&ghidra_vftable_RControlAIOOpImpl;
   *(undefined2 *)(param_1 + 0x1c7e) = 1000;
   param_1[0x1c7c] = 0;
   param_1[0x1c7d] = 0xffffffff;
-  *param_1 = (undefined4)((uint)&Ext_RLastFMOperation_vftable);
-  param_1[0x1c67] = (uint)&Ext_RLastFMOperation_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RLastFMOperation);
+  param_1[0x1c67] = (uint)&ghidra_vftable_RLastFMOperation;
   param_1[0x1c7f] = 0;
   ExceptionList = (void *)(local_10);
   return (undefined4 *)(param_1);
@@ -25407,12 +25406,12 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11230ea0(undefined4 param_2,undefine
   ExceptionList = (void *)(&local_10);
   thunk_FUN_1124a2d0(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RLastFMRequest_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RLastFMRequest);
   thunk_FUN_11285a10();
   *(unsigned char *)((char *)&local_8 + 0) = 1;
   thunk_FUN_1125b6a0(param_1 + 0x1b4d,0x7c,LAB_100597c8,LAB_1001e7fe,LAB_100180bb);
   *(unsigned char *)((char *)&local_8 + 0) = 2;
-  param_1[0x1b4d] = (uint)&Ext_RLastFMResultParser_vftable;
+  param_1[0x1b4d] = (uint)&ghidra_vftable_RLastFMResultParser;
   param_1[0x1b4f] = param_2;
   thunk_FUN_11234190();
   param_1[0x1c63] = 0;
@@ -25450,7 +25449,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11231030(undefined4 param_2)
   ExceptionList = (void *)(&local_10);
   thunk_FUN_1125b6a0(param_1,0x7c,LAB_100597c8,LAB_1001e7fe,LAB_100180bb);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RLastFMResultParser_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RLastFMResultParser);
   param_1[2] = param_2;
   thunk_FUN_11234190(uVar1);
   param_1[0x116] = 0;
@@ -25468,15 +25467,15 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11231030(undefined4 param_2)
 void __fastcall FUN_11231460(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RLastFMOperation_vftable);
-  param_1[0x1c67] = (uint)&Ext_RLastFMOperation_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RLastFMOperation);
+  param_1[0x1c67] = (uint)&ghidra_vftable_RLastFMOperation;
   if ((undefined4 *)param_1[0x1c7f] != (undefined4 *)0x0) {
     (*(code *)**(undefined4 **)param_1[0x1c7f])(1);
   }
-  param_1[0x1c67] = (uint)&Ext_RControlAIOOpImpl_vftable;
+  param_1[0x1c67] = (uint)&ghidra_vftable_RControlAIOOpImpl;
   thunk_FUN_112407b0();
-  *param_1 = (undefined4)((uint)&Ext_RLastFMRequest_vftable);
-  param_1[0x1b4d] = (uint)&Ext_RLastFMResultParser_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RLastFMRequest);
+  param_1[0x1b4d] = (uint)&ghidra_vftable_RLastFMResultParser;
   thunk_FUN_112341b0();
   FUN_1003d5d7();
   thunk_FUN_11285ab0();
@@ -25503,8 +25502,8 @@ void __fastcall FUN_11231570(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RLastFMValidateOp_vftable);
-  param_1[2] = (uint)&Ext_RLastFMValidateOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RLastFMValidateOp);
+  param_1[2] = (uint)&ghidra_vftable_RLastFMValidateOp;
   if ((int *)param_1[0x37] != (int *)0x0) {
     (**(code **)(*(int *)param_1[0x37] + 0x10))(uVar2);
     puVar1 = (undefined4 *)((undefined4 *)param_1[0x37]);
@@ -25514,9 +25513,9 @@ void __fastcall FUN_11231570(undefined4 *param_1)
     }
     param_1[0x37] = 0;
   }
-  param_1[0x38] = (uint)&Ext_RLastFMResultCB_vftable;
-  *param_1 = (undefined4)((uint)&Ext_RCPValidateOperation_vftable);
-  param_1[2] = (uint)&Ext_RCPValidateOperation_vftable;
+  param_1[0x38] = (uint)&ghidra_vftable_RLastFMResultCB;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCPValidateOperation);
+  param_1[2] = (uint)&ghidra_vftable_RCPValidateOperation;
   thunk_FUN_11261f10();
   ExceptionList = (void *)(local_10);
   return;
@@ -25529,8 +25528,8 @@ void __fastcall FUN_11231570(undefined4 *param_1)
 undefined4 * __thiscall Recovered_Bulk::FUN_11231690(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RLastFMRequest_vftable);
-  param_1[0x1b4d] = (uint)&Ext_RLastFMResultParser_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RLastFMRequest);
+  param_1[0x1b4d] = (uint)&ghidra_vftable_RLastFMResultParser;
   thunk_FUN_112341b0();
   FUN_1003d5d7();
   thunk_FUN_11285ab0();
@@ -25548,15 +25547,15 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11231690(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_11231740(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RLastFMOperation_vftable);
-  param_1[0x1c67] = (uint)&Ext_RLastFMOperation_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RLastFMOperation);
+  param_1[0x1c67] = (uint)&ghidra_vftable_RLastFMOperation;
   if ((undefined4 *)param_1[0x1c7f] != (undefined4 *)0x0) {
     (*(code *)**(undefined4 **)param_1[0x1c7f])(1);
   }
-  param_1[0x1c67] = (uint)&Ext_RControlAIOOpImpl_vftable;
+  param_1[0x1c67] = (uint)&ghidra_vftable_RControlAIOOpImpl;
   thunk_FUN_112407b0();
-  *param_1 = (undefined4)((uint)&Ext_RLastFMRequest_vftable);
-  param_1[0x1b4d] = (uint)&Ext_RLastFMResultParser_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RLastFMRequest);
+  param_1[0x1b4d] = (uint)&ghidra_vftable_RLastFMResultParser;
   thunk_FUN_112341b0();
   FUN_1003d5d7();
   thunk_FUN_11285ab0();
@@ -25574,8 +25573,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11231740(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_112317f0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RLastFMRequest_vftable);
-  param_1[0x1b4d] = (uint)&Ext_RLastFMResultParser_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RLastFMRequest);
+  param_1[0x1b4d] = (uint)&ghidra_vftable_RLastFMResultParser;
   thunk_FUN_112341b0();
   FUN_1003d5d7();
   thunk_FUN_11285ab0();
@@ -25605,8 +25604,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_112318d0(byte param_2)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RLastFMValidateOp_vftable);
-  param_1[2] = (uint)&Ext_RLastFMValidateOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RLastFMValidateOp);
+  param_1[2] = (uint)&ghidra_vftable_RLastFMValidateOp;
   if ((int *)param_1[0x37] != (int *)0x0) {
     (**(code **)(*(int *)param_1[0x37] + 0x10))(uVar2);
     puVar1 = (undefined4 *)((undefined4 *)param_1[0x37]);
@@ -25616,9 +25615,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_112318d0(byte param_2)
     }
     param_1[0x37] = 0;
   }
-  param_1[0x38] = (uint)&Ext_RLastFMResultCB_vftable;
-  *param_1 = (undefined4)((uint)&Ext_RCPValidateOperation_vftable);
-  param_1[2] = (uint)&Ext_RCPValidateOperation_vftable;
+  param_1[0x38] = (uint)&ghidra_vftable_RLastFMResultCB;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCPValidateOperation);
+  param_1[2] = (uint)&ghidra_vftable_RCPValidateOperation;
   thunk_FUN_11261f10();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xfc);
@@ -25676,7 +25675,7 @@ undefined4 * __fastcall FUN_11232440(int param_1)
   }
   uVar1 = (undefined1)(*(undefined1 *)(param_1 + 0x116));
   thunk_FUN_111fe400(uVar2);
-  *puVar3 = (undefined4)((uint)&Ext_RLastFMContentProvider_vftable);
+  *puVar3 = (undefined4)((uint)&ghidra_vftable_RLastFMContentProvider);
   *(undefined1 *)((int)puVar3 + 0x116) = uVar1;
   thunk_FUN_1106a8d0(puVar3 + 5,param_1 + 0x14,0x81);
   thunk_FUN_1106a8d0((int)puVar3 + 0x95,param_1 + 0x95,0x41);
@@ -26045,7 +26044,7 @@ void FUN_11234040(undefined4 param_1,undefined4 param_2)
   local_56 = (undefined1)(0);
   local_8 = (undefined4)(0);
   thunk_FUN_11232e50(0,0,0,0);
-  ppuVar1 = (undefined **)((uint)&Ext_RLastFMContentProvider_vftable);
+  ppuVar1 = (undefined **)((uint)&ghidra_vftable_RLastFMContentProvider);
   thunk_FUN_111feb50();
   ExceptionList = (void *)(local_10);
   thunk_FUN_1148ac28(ppuVar1);
@@ -26106,7 +26105,7 @@ undefined4 * __fastcall FUN_11234450(undefined4 *param_1)
   ExceptionList = (void *)(&local_10);
   thunk_FUN_112074d0(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RMSDevice_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RMSDevice);
   thunk_FUN_11214360(1);
   *(unsigned char *)((char *)&local_8 + 0) = 1;
   thunk_FUN_112173e0(1);
@@ -26135,7 +26134,7 @@ void __fastcall FUN_11234530(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RMSDevice_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RMSDevice);
   thunk_FUN_11208410(1);
   *(undefined2 *)((int)param_1 + 0x1819) = 0;
   *(undefined1 *)(param_1 + 0x5f6) = 0;
@@ -26169,7 +26168,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11234640(byte param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RMSDevice_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RMSDevice);
   thunk_FUN_11208410(1);
   *(undefined2 *)((int)param_1 + 0x1819) = 0;
   *(undefined1 *)(param_1 + 0x5f6) = 0;
@@ -26705,9 +26704,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11238ba0(undefined4 param_2,undefine
   thunk_FUN_111c0760(uVar3,"http://www.sonos.com/Services/1.1","getAppLink",0,10000,5000,1,
                      param_1 + 0x8732);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RSonosAppLinkOp_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosAppLinkOp_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosAppLinkOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosAppLinkOp);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosAppLinkOp;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosAppLinkOp;
   *(undefined1 *)((int)param_1 + 0xf812) = 0;
   thunk_FUN_1124eaa0(uVar2);
   *(unsigned char *)((char *)&local_8 + 0) = 1;
@@ -26724,7 +26723,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11238ba0(undefined4 param_2,undefine
   thunk_FUN_1124e950("http://www.sonos.com/Services/1.1","credentials");
   *(unsigned char *)((char *)&local_8 + 0) = 7;
   thunk_FUN_111cafa0();
-  param_1[0x8732] = (uint)&Ext_RSonosCPFaultHandler_vftable;
+  param_1[0x8732] = (uint)&ghidra_vftable_RSonosCPFaultHandler;
   param_1[0x8733] = 0;
   *(undefined1 *)(param_1 + 0x8734) = 0;
   *(undefined1 *)(param_1 + 0x873c) = 0;
@@ -26882,10 +26881,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11238ba0(undefined4 param_2,undefine
 void __fastcall FUN_112393a0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RSonosAppLinkOp_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosAppLinkOp_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosAppLinkOp_vftable;
-  param_1[0x8732] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosAppLinkOp);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosAppLinkOp;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosAppLinkOp;
+  param_1[0x8732] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -26906,10 +26905,10 @@ void __fastcall FUN_112393a0(undefined4 *param_1)
 undefined4 * __thiscall Recovered_Bulk::FUN_11239470(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RSonosAppLinkOp_vftable);
-  param_1[0x18] = (uint)&Ext_RSonosAppLinkOp_vftable;
-  param_1[0x11b] = (uint)&Ext_RSonosAppLinkOp_vftable;
-  param_1[0x8732] = (uint)&Ext_RSOAPFaultHandler_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosAppLinkOp);
+  param_1[0x18] = (uint)&ghidra_vftable_RSonosAppLinkOp;
+  param_1[0x11b] = (uint)&ghidra_vftable_RSonosAppLinkOp;
+  param_1[0x8732] = (uint)&ghidra_vftable_RSOAPFaultHandler;
   thunk_FUN_1124eda0();
   thunk_FUN_1124f190();
   thunk_FUN_1124f190();
@@ -26985,13 +26984,13 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11239640(int param_2,undefined4 para
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4 *)(param_1);
   thunk_FUN_11240650(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  param_1[1] = (uint)&Ext_RCPBrowseOperation_vftable;
+  param_1[1] = (uint)&ghidra_vftable_RCPBrowseOperation;
   param_1[2] = 0;
   param_1[3] = 0;
   *(unsigned char *)((char *)&local_8 + 0) = 1;
   *(unsigned short *)((char *)&local_8 + 1) = 0;
-  *param_1 = (undefined4)((uint)&Ext_RCPUpnpBrowseOp_vftable);
-  param_1[1] = (uint)&Ext_RCPUpnpBrowseOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCPUpnpBrowseOp);
+  param_1[1] = (uint)&ghidra_vftable_RCPUpnpBrowseOp;
   thunk_FUN_11202490(param_9,0);
   ppuVar8 = (undefined4 **)((undefined4 **)(param_1 + 0x265));
   *ppuVar8 = (undefined4 *)((undefined4 *)0x0);
@@ -27016,9 +27015,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11239640(int param_2,undefined4 para
     pcVar9 = (char *)("Browse");
     uVar5 = (undefined4)((**(code **)(*(int *)(param_2 + iVar6 + 4) + 0x68))("Browse",uVar4));
     thunk_FUN_111c0760(uVar3,uVar5,pcVar9,uVar4,param_3,uVar11,uVar12,uVar13);
-    *puVar2 = (undefined4)((uint)&Ext_RUpnpCDBrowseAIOOp_vftable);
-    puVar2[0x18] = (uint)&Ext_RUpnpCDBrowseAIOOp_vftable;
-    puVar2[0x11b] = (uint)&Ext_RUpnpCDBrowseAIOOp_vftable;
+    *puVar2 = (undefined4)((uint)&ghidra_vftable_RUpnpCDBrowseAIOOp);
+    puVar2[0x18] = (uint)&ghidra_vftable_RUpnpCDBrowseAIOOp;
+    puVar2[0x11b] = (uint)&ghidra_vftable_RUpnpCDBrowseAIOOp;
     puVar2[0x35f4] = 0;
     puVar2[0x35f5] = 0;
     puVar2[0x35f6] = 0;
@@ -27055,7 +27054,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11239640(int param_2,undefined4 para
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(4)));
   if (puVar2 == (undefined4 *)0x0) {
     thunk_FUN_112b0270("upnpbrowseop",4,
-                       "(uint)&Ext_RCPUpnpBrowseOp_RCPUpnpBrowseOp: instantiating RUpnpCDBrowseAIOOp failed\n\tpszBrowseFlag=%s\n\tpszObjectId=%s\n\tpszFilter=%s\n\tlStartingIndex=%u\n\tlRequestedCount=%u"
+                       "RCPUpnpBrowseOp::RCPUpnpBrowseOp: instantiating RUpnpCDBrowseAIOOp failed\n\tpszBrowseFlag=%s\n\tpszObjectId=%s\n\tpszFilter=%s\n\tlStartingIndex=%u\n\tlRequestedCount=%u"
                        ,pcVar1,param_5,param_6,param_7,param_8);
   }
   else {
@@ -27135,8 +27134,8 @@ void __fastcall FUN_11239aa0(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RCPUpnpBrowseOp_vftable);
-  param_1[1] = (uint)&Ext_RCPUpnpBrowseOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCPUpnpBrowseOp);
+  param_1[1] = (uint)&ghidra_vftable_RCPUpnpBrowseOp;
   if (DAT_122f5654 != 0) {
     thunk_FUN_11240e60(param_1);
   }
@@ -27149,8 +27148,8 @@ void __fastcall FUN_11239aa0(undefined4 *param_1)
     }
   }
   thunk_FUN_11202580();
-  param_1[1] = (uint)&Ext_RCPBrowseOperation_vftable;
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpCB_vftable);
+  param_1[1] = (uint)&ghidra_vftable_RCPBrowseOperation;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
   thunk_FUN_11240850();
   ExceptionList = (void *)(local_10);
   return;
@@ -27174,8 +27173,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11239bf0(byte param_2)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RCPUpnpBrowseOp_vftable);
-  param_1[1] = (uint)&Ext_RCPUpnpBrowseOp_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCPUpnpBrowseOp);
+  param_1[1] = (uint)&ghidra_vftable_RCPUpnpBrowseOp;
   local_8 = (undefined4)(0);
   if (DAT_122f5654 != 0) {
     thunk_FUN_11240e60(param_1);
@@ -27189,8 +27188,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11239bf0(byte param_2)
     }
   }
   thunk_FUN_11202580();
-  param_1[1] = (uint)&Ext_RCPBrowseOperation_vftable;
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOpCB_vftable);
+  param_1[1] = (uint)&ghidra_vftable_RCPBrowseOperation;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOpCB);
   thunk_FUN_11240850();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x998);
@@ -27245,7 +27244,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11239f30(undefined4 *param_2,undefin
 undefined4 * __fastcall FUN_1123a040(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RSubscriptionRenewal_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSubscriptionRenewal);
   param_1[1] = 0;
   *(undefined1 *)(param_1 + 0x10) = 0;
   *(undefined1 *)(param_1 + 0x1b) = 0;
@@ -27359,7 +27358,7 @@ void __fastcall FUN_1123a320(undefined4 *param_1)
   int iVar5;
   uint uVar6;
   
-  *param_1 = (undefined4)((uint)&Ext_RSubscriptionRenewal_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSubscriptionRenewal);
   thunk_FUN_112a7f20(param_1 + 2);
   thunk_FUN_112a7f20(param_1 + 4);
   thunk_FUN_112a7c30(param_1 + 6);
@@ -28579,7 +28578,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11240560(undefined4 param_2,undefine
 {
   undefined4 *param_1 = (undefined4 *)this;
   param_1[1] = 0;
-  *param_1 = (undefined4)((uint)&Ext_RAsyncIOOperation_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RAsyncIOOperation);
   param_1[2] = 0;
   param_1[3] = 0;
   param_1[4] = 0;
@@ -28649,7 +28648,7 @@ void __fastcall FUN_112407b0(undefined4 *param_1)
   undefined4 *puVar1;
   undefined4 *_Memory;
   
-  *param_1 = (undefined4)((uint)&Ext_RAsyncIOOperation_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RAsyncIOOperation);
   if ((undefined4 *)param_1[2] != (undefined4 *)0x0) {
     (*(code *)**(undefined4 **)param_1[2])(1);
   }
@@ -28666,7 +28665,7 @@ void __fastcall FUN_112407b0(undefined4 *param_1)
     _Memory = (undefined4 *)(puVar1);
   }
   thunk_FUN_112a7f20(param_1 + 7);
-  *param_1 = (undefined4)((uint)&Ext_RefCountBase_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RefCountBase);
   return;
 }
 
@@ -28703,7 +28702,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_112409e0(byte param_2)
   undefined4 *puVar1;
   undefined4 *_Memory;
   
-  *param_1 = (undefined4)((uint)&Ext_RAsyncIOOperation_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RAsyncIOOperation);
   if ((undefined4 *)param_1[2] != (undefined4 *)0x0) {
     (*(code *)**(undefined4 **)param_1[2])(1);
   }
@@ -28720,7 +28719,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_112409e0(byte param_2)
     _Memory = (undefined4 *)(puVar1);
   }
   thunk_FUN_112a7f20(param_1 + 7);
-  *param_1 = (undefined4)((uint)&Ext_RefCountBase_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RefCountBase);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x4c);
   }
@@ -29168,7 +29167,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_112429a0(undefined4 param_2,undefine
   undefined4 *param_1 = (undefined4 *)this;
   param_1[1] = param_4;
   param_1[3] = param_3;
-  *param_1 = (undefined4)((uint)&Ext_RWLock_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RWLock);
   param_1[2] = param_2;
   param_1[4] = 0;
   param_1[5] = 0;
@@ -29320,11 +29319,11 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11243180(int param_2)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_std_exception_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_std_exception);
   *(undefined8 *)(param_1 + 1) = 0;
   __std_exception_copy(param_2 + 4,param_1 + 1,uVar1);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_nonstd_expected_lite_bad_expected_access_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_nonstd_expected_lite_bad_expected_access);
   thunk_FUN_10118c40(param_2 + 0xc);
   ExceptionList = (void *)(local_10);
   return (undefined4 *)(param_1);
@@ -29351,7 +29350,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11243220(int param_2)
   ExceptionList = (void *)(&local_10);
   *(undefined8 *)(param_1 + 1) = 0;
   local_8 = (undefined4)(1);
-  *param_1 = (undefined4)((uint)&Ext_nonstd_expected_lite_bad_expected_access_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_nonstd_expected_lite_bad_expected_access);
   thunk_FUN_10118c40(&param_2);
   if (0xf < in_stack_00000018) {
     uVar3 = (uint)(in_stack_00000018 + 1);
@@ -29400,7 +29399,7 @@ void __fastcall FUN_11243400(undefined4 *param_1)
   param_1[7] = 0;
   param_1[8] = 0xf;
   *(undefined1 *)(param_1 + 3) = 0;
-  *param_1 = (undefined4)((uint)&Ext_std_exception_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_std_exception);
   __std_exception_destroy(param_1 + 1);
   return;
 }
@@ -29435,7 +29434,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11243560(byte param_2)
   param_1[7] = 0;
   param_1[8] = 0xf;
   *(undefined1 *)(param_1 + 3) = 0;
-  *param_1 = (undefined4)((uint)&Ext_std_exception_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_std_exception);
   __std_exception_destroy(param_1 + 1);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x24);
@@ -31091,7 +31090,7 @@ void __thiscall Recovered_Bulk::FUN_11249e60(undefined4 param_2,char *param_3)
   local_14 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   if ((param_3 == (char *)0x0) || (*param_3 == '\0')) {
-    local_48 = (undefined **)((uint)&Ext_KeyValueTagBodyCB_vftable);
+    local_48 = (undefined **)((uint)&ghidra_vftable_KeyValueTagBodyCB);
     local_44 = (undefined4)(param_2);
     local_8 = (undefined4)(1);
     thunk_FUN_11273fc0(&local_48);
@@ -31110,7 +31109,7 @@ void __thiscall Recovered_Bulk::FUN_11249e60(undefined4 param_2,char *param_3)
     local_54 = (char *)(param_3);
     local_50 = (undefined *)(&DAT_118a3fe0);
     thunk_FUN_112747a0("event",&local_58,2);
-    local_40 = (undefined **)((uint)&Ext_KeyValueCB_vftable);
+    local_40 = (undefined **)((uint)&ghidra_vftable_KeyValueCB);
     local_3c = (undefined4)(param_2);
     local_8 = (undefined4)(0);
     thunk_FUN_11273fc0(&local_40);
@@ -31129,7 +31128,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11249fe0(undefined4 param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   param_1[1] = param_2;
-  *param_1 = (undefined4)((uint)&Ext_RAsyncSocketIOSession_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RAsyncSocketIOSession);
   param_1[2] = 0xffffffff;
   param_1[0x110b] = 0;
   *(undefined2 *)(param_1 + 0x106) = 0;
@@ -31153,8 +31152,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11249fe0(undefined4 param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_1124a090(undefined4 param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  param_1[1] = (uint)&Ext_RHTTPAsyncSocketIOSessionCB_vftable;
-  *param_1 = (undefined4)((uint)&Ext_RHTTPAsyncSocketIOSessionCB_vftable);
+  param_1[1] = (uint)&ghidra_vftable_RHTTPAsyncSocketIOSessionCB;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHTTPAsyncSocketIOSessionCB);
   param_1[2] = param_2;
   *(undefined1 *)(param_1 + 0x218) = 0;
   param_1[3] = 0;
@@ -31185,7 +31184,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1124a160(char *param_2)
   char cVar2;
   char *pcVar3;
   
-  *param_1 = (undefined4)((uint)&Ext_RHTTPRequestHeadersBuilder_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHTTPRequestHeadersBuilder);
   param_1[0x1841] = 0;
   param_1[0x1842] = 0;
   *(undefined1 *)(param_1 + 1) = 0;
@@ -31204,7 +31203,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1124a160(char *param_2)
     }
   }
   thunk_FUN_1145c250(param_1 + 0x1801,param_2,0x100);
-  *param_1 = (undefined4)((uint)&Ext_RHTTPGetReqHeadersBuilder_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHTTPGetReqHeadersBuilder);
   *(undefined1 *)(param_1 + 1) = 0;
   return (undefined4 *)(param_1);
 }
@@ -31216,8 +31215,8 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1124a160(char *param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_1124a490(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RHTTPAsyncSocketIOSessionCB_vftable);
-  param_1[1] = (uint)&Ext_RHTTPAsyncSocketIOSessionCB_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHTTPAsyncSocketIOSessionCB);
+  param_1[1] = (uint)&ghidra_vftable_RHTTPAsyncSocketIOSessionCB;
   if (*(char *)(param_1 + 0x218) != '\0') {
     thunk_FUN_113c7de0(param_1 + 0x219);
   }
@@ -32385,14 +32384,14 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1124df10(undefined4 param_2,undefine
   *(undefined1 *)(param_1 + 3) = param_3;
   *(undefined1 *)((int)param_1 + 0xd) = param_4;
   param_1[4] = param_5;
-  *param_1 = (undefined4)((uint)&Ext_RCRResultParser_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCRResultParser);
   param_1[5] = 0;
   param_1[6] = 0;
   param_1[7] = 0xffffffff;
   local_8 = (undefined4)(0);
   param_1[9] = 0;
   param_1[10] = 0;
-  param_1[8] = (uint)&Ext_RAesDecoder_vftable;
+  param_1[8] = (uint)&ghidra_vftable_RAesDecoder;
   *(undefined1 *)(param_1 + 0xb) = 1;
   param_1[0x10] = 0;
   param_1[0x15] = 0;
@@ -32423,11 +32422,11 @@ undefined4 * __fastcall FUN_1124e050(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   thunk_FUN_11285a10(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  *param_1 = (undefined4)((uint)&Ext_REncryptedStringEmitter_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_REncryptedStringEmitter);
   local_8 = (undefined4)(0);
   param_1[8] = 0;
   param_1[9] = 0;
-  param_1[7] = (uint)&Ext_RAesEncoder_vftable;
+  param_1[7] = (uint)&ghidra_vftable_RAesEncoder;
   *(undefined2 *)(param_1 + 10) = 0x101;
   thunk_FUN_113d3ba0(param_1 + 0xb);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
@@ -32455,7 +32454,7 @@ undefined4 * __fastcall FUN_1124e150(undefined4 *param_1)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   param_1[1] = 0;
-  *param_1 = (undefined4)((uint)&Ext_RSOAPParametersWriter_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSOAPParametersWriter);
   param_1[2] = 0;
   param_1[3] = 0;
   param_1[4] = 0;
@@ -32464,8 +32463,8 @@ undefined4 * __fastcall FUN_1124e150(undefined4 *param_1)
   param_1[7] = 0;
   local_8 = (undefined4)(0);
   thunk_FUN_112859b0(uVar1);
-  *param_1 = (undefined4)((uint)&Ext_RSOAPComplexInParam_vftable);
-  param_1[8] = (uint)&Ext_RSOAPComplexInParam_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSOAPComplexInParam);
+  param_1[8] = (uint)&ghidra_vftable_RSOAPComplexInParam;
   ExceptionList = (void *)(local_10);
   return (undefined4 *)(param_1);
 }
@@ -32488,7 +32487,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1124e4f0(undefined4 param_2,undefine
   ExceptionList = (void *)(&local_10);
   thunk_FUN_1124e2e0(param_2,param_3,param_4,param_5,param_6);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RSOAPEnvelopeReaderShallowCopy_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSOAPEnvelopeReaderShallowCopy);
   _eh_vector_constructor_iterator_(param_1 + 0xba,0x38,0x10,thunk_FUN_1124dee0,thunk_FUN_1124ecb0);
   ExceptionList = (void *)(local_10);
   return (undefined4 *)(param_1);
@@ -32520,7 +32519,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1124e590(undefined4 param_2,undefine
   param_1[8] = param_2;
   param_1[9] = param_3;
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RSOAPEnvelopeWriter_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSOAPEnvelopeWriter);
   *(undefined1 *)(param_1 + 10) = param_4;
   param_1[0xd] = 0;
   param_1[0xe] = 0;
@@ -32528,10 +32527,10 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1124e590(undefined4 param_2,undefine
   thunk_FUN_11285a10(uVar1);
   *(unsigned char *)((char *)&local_8 + 0) = 1;
   thunk_FUN_11285a10();
-  param_1[0x317] = (uint)&Ext_REncryptedStringEmitter_vftable;
+  param_1[0x317] = (uint)&ghidra_vftable_REncryptedStringEmitter;
   param_1[799] = 0;
   param_1[800] = 0;
-  param_1[0x31e] = (uint)&Ext_RAesEncoder_vftable;
+  param_1[0x31e] = (uint)&ghidra_vftable_RAesEncoder;
   *(undefined2 *)(param_1 + 0x321) = 0x101;
   thunk_FUN_113d3ba0(param_1 + 0x322);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(3)));
@@ -32563,7 +32562,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1124e830(undefined2 param_2)
   ExceptionList = (void *)(&local_10);
   param_1[1] = 0;
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RSOAPFaultWriter_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSOAPFaultWriter);
   param_1[2] = 0;
   thunk_FUN_11285a10(uVar1);
   thunk_FUN_1145c720(param_1 + 10,0x10,&DAT_1190ee10,param_2);
@@ -32586,7 +32585,7 @@ undefined4 * __fastcall FUN_1124eaa0(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RSonosCustomParamRX_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosCustomParamRX);
   _eh_vector_constructor_iterator_(param_1 + 1,0x38,0xc,thunk_FUN_1124dee0,thunk_FUN_1124ecb0);
   param_1[0xa9] = 0;
   param_1[0xaa] = 0xffffffff;
@@ -32601,31 +32600,31 @@ undefined4 * __fastcall FUN_1124eaa0(undefined4 *param_1)
 void __fastcall FUN_1124ebd0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RCROutParamDeepCopy_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCROutParamDeepCopy);
   free((void *)param_1[0xd]);
   switch(param_1[1]) {
   case 1:
     thunk_FUN_1148a50e(param_1[2],1);
-    *param_1 = (undefined4)((uint)&Ext_RCROutParam_vftable);
+    *param_1 = (undefined4)((uint)&ghidra_vftable_RCROutParam);
     return;
   case 2:
   case 3:
     thunk_FUN_1148a50e(param_1[2],2);
-    *param_1 = (undefined4)((uint)&Ext_RCROutParam_vftable);
+    *param_1 = (undefined4)((uint)&ghidra_vftable_RCROutParam);
     return;
   case 4:
   case 5:
     thunk_FUN_1148a50e(param_1[2],4);
-    *param_1 = (undefined4)((uint)&Ext_RCROutParam_vftable);
+    *param_1 = (undefined4)((uint)&ghidra_vftable_RCROutParam);
     return;
   case 6:
     thunk_FUN_1148a50e(param_1[2],8);
-    *param_1 = (undefined4)((uint)&Ext_RCROutParam_vftable);
+    *param_1 = (undefined4)((uint)&ghidra_vftable_RCROutParam);
     return;
   case 7:
     free((void *)param_1[2]);
   }
-  *param_1 = (undefined4)((uint)&Ext_RCROutParam_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCROutParam);
   return;
 }
 
@@ -32636,15 +32635,15 @@ void __fastcall FUN_1124ebd0(undefined4 *param_1)
 void __fastcall FUN_1124ee40(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RSOAPEnvelopeReader_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSOAPEnvelopeReader);
   if ((uint)param_1[1] < (uint)param_1[2]) {
     thunk_FUN_112b0270(&DAT_119e05c4,3,"soapERAssert %s,%d,%d",param_1[4],param_1[1],param_1[2]);
   }
-  param_1[5] = (uint)&Ext_RCRResultParser_vftable;
-  param_1[0x4f] = (uint)&Ext_REncryptedStringDecoder_vftable;
-  param_1[0xd] = (uint)&Ext_RAesDecoder_vftable;
+  param_1[5] = (uint)&ghidra_vftable_RCRResultParser;
+  param_1[0x4f] = (uint)&ghidra_vftable_REncryptedStringDecoder;
+  param_1[0xd] = (uint)&ghidra_vftable_RAesDecoder;
   thunk_FUN_113d3650(param_1 + 0x1b);
-  param_1[0xd] = (uint)&Ext_REncryptedDataDecoder_vftable;
+  param_1[0xd] = (uint)&ghidra_vftable_REncryptedDataDecoder;
   FUN_1003d5d7();
   return;
 }
@@ -32666,7 +32665,7 @@ void __fastcall FUN_1124eec0(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RSOAPEnvelopeReaderDeepCopy_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSOAPEnvelopeReaderDeepCopy);
   _eh_vector_destructor_iterator_(param_1 + 0xba,0x38,0x10,thunk_FUN_1124ebd0);
   thunk_FUN_1124ee40(uVar1);
   ExceptionList = (void *)(local_10);
@@ -32690,7 +32689,7 @@ void __fastcall FUN_1124ef40(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RSOAPEnvelopeReaderShallowCopy_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSOAPEnvelopeReaderShallowCopy);
   _eh_vector_destructor_iterator_(param_1 + 0xba,0x38,0x10,thunk_FUN_1124ecb0);
   thunk_FUN_1124ee40(uVar1);
   ExceptionList = (void *)(local_10);
@@ -32704,19 +32703,19 @@ void __fastcall FUN_1124ef40(undefined4 *param_1)
 void __fastcall FUN_1124efc0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RSOAPEnvelopeWriter_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSOAPEnvelopeWriter);
   if ((uint)param_1[2] < (uint)param_1[0x45e]) {
     thunk_FUN_112b0270(&DAT_119e05c4,3,"soapEWAssert %s,%d,%d",param_1[9],param_1[2],param_1[0x45e])
     ;
   }
-  param_1[0x317] = (uint)&Ext_REncryptedStringEmitter_vftable;
-  param_1[0x356] = (uint)&Ext_REncryptedStringEncoder_vftable;
-  param_1[0x31e] = (uint)&Ext_RAesEncoder_vftable;
+  param_1[0x317] = (uint)&ghidra_vftable_REncryptedStringEmitter;
+  param_1[0x356] = (uint)&ghidra_vftable_REncryptedStringEncoder;
+  param_1[0x31e] = (uint)&ghidra_vftable_RAesEncoder;
   thunk_FUN_113d3650(param_1 + 0x322);
-  param_1[0x31e] = (uint)&Ext_REncryptedDataEncoder_vftable;
+  param_1[0x31e] = (uint)&ghidra_vftable_REncryptedDataEncoder;
   thunk_FUN_11285ab0();
   thunk_FUN_11285ab0();
-  *param_1 = (undefined4)((uint)&Ext_RSOAPWriter_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSOAPWriter);
   return;
 }
 
@@ -32735,9 +32734,9 @@ void __fastcall FUN_1124f230(undefined4 *param_1)
   puStack_c = (undefined1 *)(LAB_117cd980);
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RSonosCustomParamRX_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosCustomParamRX);
   _eh_vector_destructor_iterator_(param_1 + 1,0x38,0xc,thunk_FUN_1124ecb0);
-  *param_1 = (undefined4)((uint)&Ext_RCRCustomParamRX_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCRCustomParamRX);
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -32783,10 +32782,10 @@ void __thiscall Recovered_Bulk::FUN_1124f400(char *param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_1124f580(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RCRInParamDeepCopy_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCRInParamDeepCopy);
   free((void *)param_1[0x16]);
   free((void *)param_1[0x17]);
-  *param_1 = (undefined4)((uint)&Ext_RCRInParam_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCRInParam);
   thunk_FUN_11285ab0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x60);
@@ -32801,11 +32800,11 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1124f580(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_1124f6b0(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RCRResultParser_vftable);
-  param_1[0x4a] = (uint)&Ext_REncryptedStringDecoder_vftable;
-  param_1[8] = (uint)&Ext_RAesDecoder_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCRResultParser);
+  param_1[0x4a] = (uint)&ghidra_vftable_REncryptedStringDecoder;
+  param_1[8] = (uint)&ghidra_vftable_RAesDecoder;
   thunk_FUN_113d3650(param_1 + 0x16);
-  param_1[8] = (uint)&Ext_REncryptedDataDecoder_vftable;
+  param_1[8] = (uint)&ghidra_vftable_REncryptedDataDecoder;
   FUN_1003d5d7();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x2d4);
@@ -32820,11 +32819,11 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1124f6b0(byte param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_1124f720(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_REncryptedStringEmitter_vftable);
-  param_1[0x3f] = (uint)&Ext_REncryptedStringEncoder_vftable;
-  param_1[7] = (uint)&Ext_RAesEncoder_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_REncryptedStringEmitter);
+  param_1[0x3f] = (uint)&ghidra_vftable_REncryptedStringEncoder;
+  param_1[7] = (uint)&ghidra_vftable_RAesEncoder;
   thunk_FUN_113d3650(param_1 + 0xb);
-  param_1[7] = (uint)&Ext_REncryptedDataEncoder_vftable;
+  param_1[7] = (uint)&ghidra_vftable_REncryptedDataEncoder;
   thunk_FUN_11285ab0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x51c);
@@ -32849,7 +32848,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1124f900(byte param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RSOAPEnvelopeReaderDeepCopy_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSOAPEnvelopeReaderDeepCopy);
   _eh_vector_destructor_iterator_(param_1 + 0xba,0x38,0x10,thunk_FUN_1124ebd0);
   thunk_FUN_1124ee40(uVar1);
   if ((param_2 & 1) != 0) {
@@ -32876,7 +32875,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1124f9a0(byte param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RSOAPEnvelopeReaderShallowCopy_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSOAPEnvelopeReaderShallowCopy);
   _eh_vector_destructor_iterator_(param_1 + 0xba,0x38,0x10,thunk_FUN_1124ecb0);
   thunk_FUN_1124ee40(uVar1);
   if ((param_2 & 1) != 0) {
@@ -32903,9 +32902,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1124fd20(byte param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RSonosCustomParamRX_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSonosCustomParamRX);
   _eh_vector_destructor_iterator_(param_1 + 1,0x38,0xc,thunk_FUN_1124ecb0);
-  *param_1 = (undefined4)((uint)&Ext_RCRCustomParamRX_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCRCustomParamRX);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x2ac,uVar1);
   }
@@ -33838,7 +33837,7 @@ undefined4 __thiscall Recovered_Bulk::FUN_112532e0(undefined4 param_2,int param_
 undefined4 * __thiscall Recovered_Bulk::FUN_11254cb0(undefined4 param_2,int param_3)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RAccountsVectorClock_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RAccountsVectorClock);
   param_1[1] = 0;
   param_1[2] = 0;
   param_1[3] = 0;
@@ -34506,7 +34505,7 @@ undefined4 * FUN_11259910(undefined4 param_1,undefined4 param_2,int param_3)
 // Reference entry 1125a0e0; body size 166 bytes.
 #line 1 "ENTRY_1125a0e0"
 
-/* WARNING: Removing unreachable block (ram,0x1125a11c) */
+/* WARNING: Removing unreachable block_1125a0e0 (ram,0x1125a11c) */
 
 void __fastcall FUN_1125a0e0(undefined4 *param_1)
 
@@ -34783,7 +34782,7 @@ void FUN_1125ace0(undefined4 param_1,undefined8 *param_2)
   uStack_c = (undefined4)(0);
   iVar1 = (int)(thunk_FUN_112a00b0(param_1,&local_28));
   if (iVar1 != 0) {
-    local_48 = (undefined **)((uint)&Ext_RSystemTime_vftable);
+    local_48 = (undefined **)((uint)&ghidra_vftable_RSystemTime);
     local_44 = (undefined4)(0);
     local_40 = (undefined4)(0);
     local_3c = (undefined4)(0);
@@ -35110,7 +35109,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1125b6a0(undefined4 param_2,undefine
   int iVar1;
   
   thunk_FUN_112859a0();
-  *param_1 = (undefined4)((uint)&Ext_RXMLParserBase_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RXMLParserBase);
   iVar1 = (int)(thunk_FUN_112c8a40(param_2,param_3,param_4,param_5,param_6,0,0,0));
   if (iVar1 == 0) {
     thunk_FUN_112b0270("xmlprs",3,"parser ctx allocation failed; parameters are not correct");
@@ -35131,7 +35130,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1125b720(undefined4 param_2,undefine
   int iVar1;
   
   thunk_FUN_112859a0();
-  *param_1 = (undefined4)((uint)&Ext_RXMLParserBase_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RXMLParserBase);
   iVar1 = (int)(thunk_FUN_112c8a40(param_2,param_3,param_4,param_5,param_6,param_7,param_8,param_9));
   if (iVar1 == 0) {
     thunk_FUN_112b0270("xmlprs",3,"parser ctx allocation failed; parameters are not correct");
@@ -35151,7 +35150,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1125b7a0(undefined4 param_2,undefine
   int iVar1;
   
   thunk_FUN_112859a0();
-  *param_1 = (undefined4)((uint)&Ext_RXMLParserBase_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RXMLParserBase);
   iVar1 = (int)(thunk_FUN_112c8a40(param_2,param_3,0,param_4,param_5,0,0,0));
   if (iVar1 == 0) {
     thunk_FUN_112b0270("xmlprs",3,"parser ctx allocation failed; parameters are not correct");
@@ -35171,7 +35170,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1125b810(undefined4 param_2,undefine
   int iVar1;
   
   thunk_FUN_112859a0();
-  *param_1 = (undefined4)((uint)&Ext_RXMLParserBase_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RXMLParserBase);
   iVar1 = (int)(thunk_FUN_112c8a40(param_2,0,param_3,param_4,param_5,0,0,0));
   if (iVar1 == 0) {
     thunk_FUN_112b0270("xmlprs",3,"parser ctx allocation failed; parameters are not correct");
@@ -35190,7 +35189,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1125b880(undefined4 param_2,undefine
   int iVar1;
   
   thunk_FUN_112859a0();
-  *param_1 = (undefined4)((uint)&Ext_RXMLParserBase_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RXMLParserBase);
   iVar1 = (int)(thunk_FUN_112c8a40(param_2,0,0,param_3,param_4,0,0,0));
   if (iVar1 == 0) {
     thunk_FUN_112b0270("xmlprs",3,"parser ctx allocation failed; parameters are not correct");
@@ -35887,12 +35886,12 @@ undefined4 * __fastcall FUN_11261e50(undefined4 *param_1)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   param_1[1] = 0;
-  *param_1 = (undefined4)((uint)&Ext_RControlAIOOp_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RControlAIOOp);
   local_8 = (undefined4)(0);
   thunk_FUN_11240650(uVar1);
-  param_1[2] = (uint)&Ext_RControlAIOOpCB_vftable;
-  *param_1 = (undefined4)((uint)&Ext_RCompoundAsyncIOOperation_vftable);
-  param_1[2] = (uint)&Ext_RCompoundAsyncIOOperation_vftable;
+  param_1[2] = (uint)&ghidra_vftable_RControlAIOOpCB;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RCompoundAsyncIOOperation);
+  param_1[2] = (uint)&ghidra_vftable_RCompoundAsyncIOOperation;
   param_1[3] = 0;
   param_1[4] = 0;
   param_1[5] = 0;
@@ -35988,7 +35987,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11262400(int *param_2)
   param_1[3] = 0;
   param_1[4] = 0;
   *(undefined1 *)(param_1 + 5) = 0;
-  *param_1 = (undefined4)((uint)&Ext_RSystemTime_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSystemTime);
   thunk_FUN_112637d0(*param_2,*param_2 >> 0x1f);
   iVar1 = (int)(param_2[1]);
   *(short *)((int)param_1 + 0x12) =
@@ -36275,8 +36274,8 @@ void __thiscall Recovered_Bulk::FUN_112644e0(undefined4 param_2,undefined4 param
     local_c = (undefined4)(0);
     local_8 = (undefined4)(0);
     local_4 = (undefined1)(0);
-    local_30 = (undefined **)((uint)&Ext_RSystemTime_vftable);
-    local_18 = (undefined **)((uint)&Ext_RSystemTime_vftable);
+    local_30 = (undefined **)((uint)&ghidra_vftable_RSystemTime);
+    local_18 = (undefined **)((uint)&ghidra_vftable_RSystemTime);
     thunk_FUN_11263bc0(param_1,1,&local_30);
     thunk_FUN_11263bc0(param_1,0,&local_18);
     if ((((short)local_2c != (short)local_14) ||
@@ -36550,7 +36549,7 @@ undefined4 * __fastcall FUN_11265ef0(undefined4 *param_1)
   ExceptionList = (void *)(&local_10);
   thunk_FUN_11287860(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RHTTPClient_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHTTPClient);
   thunk_FUN_11286490();
   *(unsigned char *)((char *)&local_8 + 0) = 1;
   param_1[0x122] = 0;
@@ -36565,10 +36564,10 @@ undefined4 * __fastcall FUN_11265ef0(undefined4 *param_1)
   thunk_FUN_1129b080();
   *(unsigned char *)((char *)&local_8 + 0) = 2;
   thunk_FUN_11287890();
-  param_1[0x114d] = (uint)&Ext_RSocketWriter_vftable;
+  param_1[0x114d] = (uint)&ghidra_vftable_RSocketWriter;
   *(unsigned char *)((char *)&local_8 + 0) = 3;
   thunk_FUN_11287890();
-  param_1[0x2155] = (uint)&Ext_RChunkedSocketWriter_vftable;
+  param_1[0x2155] = (uint)&ghidra_vftable_RChunkedSocketWriter;
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(4)));
   thunk_FUN_1126b1d0();
   ExceptionList = (void *)(local_10);
@@ -36592,13 +36591,13 @@ void __fastcall FUN_11266500(undefined4 *param_1)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RHTTPClient_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHTTPClient);
   thunk_FUN_1126b1d0(uVar1);
-  param_1[0x2155] = (uint)&Ext_RChunkedSocketWriter_vftable;
+  param_1[0x2155] = (uint)&ghidra_vftable_RChunkedSocketWriter;
   thunk_FUN_112878e0();
-  param_1[0x114d] = (uint)&Ext_RSocketWriter_vftable;
+  param_1[0x114d] = (uint)&ghidra_vftable_RSocketWriter;
   thunk_FUN_112878e0();
-  param_1[0x1130] = (uint)&Ext_ChunkLengthParser_vftable;
+  param_1[0x1130] = (uint)&ghidra_vftable_ChunkLengthParser;
   thunk_FUN_11286500();
   thunk_FUN_112878c0();
   ExceptionList = (void *)(local_10);
@@ -36622,13 +36621,13 @@ void __fastcall FUN_112665b0(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RHTTPClient_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHTTPClient);
   thunk_FUN_1126b1d0(uVar1);
-  param_1[0x2155] = (uint)&Ext_RChunkedSocketWriter_vftable;
+  param_1[0x2155] = (uint)&ghidra_vftable_RChunkedSocketWriter;
   thunk_FUN_112878e0();
-  param_1[0x114d] = (uint)&Ext_RSocketWriter_vftable;
+  param_1[0x114d] = (uint)&ghidra_vftable_RSocketWriter;
   thunk_FUN_112878e0();
-  param_1[0x1130] = (uint)&Ext_ChunkLengthParser_vftable;
+  param_1[0x1130] = (uint)&ghidra_vftable_ChunkLengthParser;
   thunk_FUN_11286500();
   thunk_FUN_112878c0();
   ExceptionList = (void *)(local_10);
@@ -36652,13 +36651,13 @@ void __fastcall FUN_11266650(undefined4 *param_1)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RHTTPClient_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHTTPClient);
   thunk_FUN_1126b1d0(uVar1);
-  param_1[0x2155] = (uint)&Ext_RChunkedSocketWriter_vftable;
+  param_1[0x2155] = (uint)&ghidra_vftable_RChunkedSocketWriter;
   thunk_FUN_112878e0();
-  param_1[0x114d] = (uint)&Ext_RSocketWriter_vftable;
+  param_1[0x114d] = (uint)&ghidra_vftable_RSocketWriter;
   thunk_FUN_112878e0();
-  param_1[0x1130] = (uint)&Ext_ChunkLengthParser_vftable;
+  param_1[0x1130] = (uint)&ghidra_vftable_ChunkLengthParser;
   thunk_FUN_11286500();
   thunk_FUN_112878c0();
   ExceptionList = (void *)(local_10);
@@ -36682,16 +36681,16 @@ void __fastcall FUN_11266700(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RHTTPDataProviderWithResult_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHTTPDataProviderWithResult);
   thunk_FUN_1125acd0(uVar1);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RHTTPClient_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHTTPClient);
   thunk_FUN_1126b1d0();
-  param_1[0x2155] = (uint)&Ext_RChunkedSocketWriter_vftable;
+  param_1[0x2155] = (uint)&ghidra_vftable_RChunkedSocketWriter;
   thunk_FUN_112878e0();
-  param_1[0x114d] = (uint)&Ext_RSocketWriter_vftable;
+  param_1[0x114d] = (uint)&ghidra_vftable_RSocketWriter;
   thunk_FUN_112878e0();
-  param_1[0x1130] = (uint)&Ext_ChunkLengthParser_vftable;
+  param_1[0x1130] = (uint)&ghidra_vftable_ChunkLengthParser;
   thunk_FUN_11286500();
   thunk_FUN_112878c0();
   ExceptionList = (void *)(local_10);
@@ -36715,13 +36714,13 @@ void __fastcall FUN_112667c0(undefined4 *param_1)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RHTTPClient_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHTTPClient);
   thunk_FUN_1126b1d0(uVar1);
-  param_1[0x2155] = (uint)&Ext_RChunkedSocketWriter_vftable;
+  param_1[0x2155] = (uint)&ghidra_vftable_RChunkedSocketWriter;
   thunk_FUN_112878e0();
-  param_1[0x114d] = (uint)&Ext_RSocketWriter_vftable;
+  param_1[0x114d] = (uint)&ghidra_vftable_RSocketWriter;
   thunk_FUN_112878e0();
-  param_1[0x1130] = (uint)&Ext_ChunkLengthParser_vftable;
+  param_1[0x1130] = (uint)&ghidra_vftable_ChunkLengthParser;
   thunk_FUN_11286500();
   thunk_FUN_112878c0();
   ExceptionList = (void *)(local_10);
@@ -36745,13 +36744,13 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11266960(byte param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RHTTPClient_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHTTPClient);
   thunk_FUN_1126b1d0(uVar1);
-  param_1[0x2155] = (uint)&Ext_RChunkedSocketWriter_vftable;
+  param_1[0x2155] = (uint)&ghidra_vftable_RChunkedSocketWriter;
   thunk_FUN_112878e0();
-  param_1[0x114d] = (uint)&Ext_RSocketWriter_vftable;
+  param_1[0x114d] = (uint)&ghidra_vftable_RSocketWriter;
   thunk_FUN_112878e0();
-  param_1[0x1130] = (uint)&Ext_ChunkLengthParser_vftable;
+  param_1[0x1130] = (uint)&ghidra_vftable_ChunkLengthParser;
   thunk_FUN_11286500();
   thunk_FUN_112878c0();
   if ((param_2 & 1) != 0) {
@@ -36778,13 +36777,13 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11266a30(byte param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RHTTPClient_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHTTPClient);
   thunk_FUN_1126b1d0(uVar1);
-  param_1[0x2155] = (uint)&Ext_RChunkedSocketWriter_vftable;
+  param_1[0x2155] = (uint)&ghidra_vftable_RChunkedSocketWriter;
   thunk_FUN_112878e0();
-  param_1[0x114d] = (uint)&Ext_RSocketWriter_vftable;
+  param_1[0x114d] = (uint)&ghidra_vftable_RSocketWriter;
   thunk_FUN_112878e0();
-  param_1[0x1130] = (uint)&Ext_ChunkLengthParser_vftable;
+  param_1[0x1130] = (uint)&ghidra_vftable_ChunkLengthParser;
   thunk_FUN_11286500();
   thunk_FUN_112878c0();
   if ((param_2 & 1) != 0) {
@@ -36811,13 +36810,13 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11266b00(byte param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RHTTPClient_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHTTPClient);
   thunk_FUN_1126b1d0(uVar1);
-  param_1[0x2155] = (uint)&Ext_RChunkedSocketWriter_vftable;
+  param_1[0x2155] = (uint)&ghidra_vftable_RChunkedSocketWriter;
   thunk_FUN_112878e0();
-  param_1[0x114d] = (uint)&Ext_RSocketWriter_vftable;
+  param_1[0x114d] = (uint)&ghidra_vftable_RSocketWriter;
   thunk_FUN_112878e0();
-  param_1[0x1130] = (uint)&Ext_ChunkLengthParser_vftable;
+  param_1[0x1130] = (uint)&ghidra_vftable_ChunkLengthParser;
   thunk_FUN_11286500();
   thunk_FUN_112878c0();
   if ((param_2 & 1) != 0) {
@@ -36844,13 +36843,13 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11266c00(byte param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RHTTPClient_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RHTTPClient);
   thunk_FUN_1126b1d0(uVar1);
-  param_1[0x2155] = (uint)&Ext_RChunkedSocketWriter_vftable;
+  param_1[0x2155] = (uint)&ghidra_vftable_RChunkedSocketWriter;
   thunk_FUN_112878e0();
-  param_1[0x114d] = (uint)&Ext_RSocketWriter_vftable;
+  param_1[0x114d] = (uint)&ghidra_vftable_RSocketWriter;
   thunk_FUN_112878e0();
-  param_1[0x1130] = (uint)&Ext_ChunkLengthParser_vftable;
+  param_1[0x1130] = (uint)&ghidra_vftable_ChunkLengthParser;
   thunk_FUN_11286500();
   thunk_FUN_112878c0();
   if ((param_2 & 1) != 0) {
@@ -38842,7 +38841,7 @@ undefined4 * __fastcall FUN_11270990(undefined4 *param_1)
   param_1[7] = 0;
   param_1[8] = 0;
   param_1[9] = 0;
-  *param_1 = (undefined4)((uint)&Ext_RMCastMSearchNotifyHandler_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RMCastMSearchNotifyHandler);
   *(undefined1 *)(param_1 + 0xc) = 0;
   thunk_FUN_1145c930(param_1 + 10,0);
   thunk_FUN_1145ad70(param_1 + 10,2000);
@@ -38858,7 +38857,7 @@ undefined4 * __fastcall FUN_11270a60(undefined4 *param_1)
 {
   *(undefined1 *)(param_1 + 1) = 0;
   param_1[2] = 0;
-  *param_1 = (undefined4)((uint)&Ext_RMSearchNotifyHandler_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RMSearchNotifyHandler);
   param_1[3] = 0xffffffff;
   param_1[4] = 0;
   param_1[5] = 0;
@@ -38906,7 +38905,7 @@ char * FUN_11270c60(int param_1,int param_2)
 // Reference entry 11270dc0; body size 146 bytes.
 #line 1 "ENTRY_11270dc0"
 
-/* WARNING: Removing unreachable block (ram,0x11270e06) */
+/* WARNING: Removing unreachable block_11270dc0 (ram,0x11270e06) */
 
 void __fastcall FUN_11270dc0(int *param_1)
 
@@ -39658,7 +39657,7 @@ undefined4 __thiscall Recovered_Bulk::FUN_11274e50(int param_2)
 void __fastcall FUN_11274ef0(undefined4 *param_1)
 
 {
-  *param_1 = (undefined4)((uint)&Ext_RReportUploader_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RReportUploader);
   if ((void *)param_1[3] != (void *)0x0) {
     free((void *)param_1[3]);
     param_1[3] = 0;
@@ -39676,7 +39675,7 @@ void __fastcall FUN_11274ef0(undefined4 *param_1)
 undefined4 * __thiscall Recovered_Bulk::FUN_11274f50(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RReportUploader_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RReportUploader);
   if ((void *)param_1[3] != (void *)0x0) {
     free((void *)param_1[3]);
     param_1[3] = 0;
@@ -39805,7 +39804,7 @@ undefined1 __thiscall Recovered_Bulk::FUN_11274fe0(char *param_2,undefined4 *par
 // Reference entry 11275370; body size 159 bytes.
 #line 1 "ENTRY_11275370"
 
-/* WARNING: Removing unreachable block (ram,0x112753a1) */
+/* WARNING: Removing unreachable block_11275370 (ram,0x112753a1) */
 
 void FUN_11275370(char *param_1,undefined4 param_2)
 
@@ -40320,12 +40319,12 @@ int __thiscall Recovered_Bulk::FUN_11276320(undefined4 param_2)
 undefined4 * __thiscall Recovered_Bulk::FUN_11276650(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  *param_1 = (undefined4)((uint)&Ext_RReportFileLoader_vftable);
-  param_1[0x14a] = (uint)&Ext_RReportCategoryInfo_vftable;
-  param_1[7] = (uint)&Ext_RReportUploaderInfo_vftable;
-  param_1[2] = (uint)&Ext_RReportFileParser_vftable;
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RReportFileLoader);
+  param_1[0x14a] = (uint)&ghidra_vftable_RReportCategoryInfo;
+  param_1[7] = (uint)&ghidra_vftable_RReportUploaderInfo;
+  param_1[2] = (uint)&ghidra_vftable_RReportFileParser;
   FUN_1003d5d7();
-  *param_1 = (undefined4)((uint)&Ext_RReportFileParserCB_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RReportFileParserCB);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x6b0);
   }
@@ -41808,7 +41807,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1127e450(undefined4 param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_1125b810(param_1,LAB_1007cb1f,LAB_10021cba,LAB_10092f14);
-  *param_1 = (undefined4)((uint)&Ext_RUpdManifestParser_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RUpdManifestParser);
   param_1[2] = param_2;
   thunk_FUN_112c8cb0(param_1[1],param_1,LAB_1007cb1f,LAB_10021cba,LAB_10092f14,0,0,0);
   param_1[0x264] = 0;
@@ -42215,7 +42214,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_11281780(undefined4 param_2)
   undefined4 *param_1 = (undefined4 *)this;
   thunk_FUN_1125b880(param_1,LAB_10077ca0,LAB_1007ba08);
   param_1[2] = param_2;
-  *param_1 = (undefined4)((uint)&Ext_RMusicServiceListParser_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RMusicServiceListParser);
   param_1[3] = 0;
   *(undefined2 *)(param_1 + 4) = 0;
   *(undefined4 *)((int)param_1 + 0x12) = 0;
@@ -42953,7 +42952,7 @@ void __fastcall FUN_11286ff0(int param_1)
 // Reference entry 11287560; body size 370 bytes.
 #line 1 "ENTRY_11287560"
 
-/* WARNING: Removing unreachable block (ram,0x112875b3) */
+/* WARNING: Removing unreachable block_11287560 (ram,0x112875b3) */
 /* WARNING: Removing unreachable block (ram,0x112875bd) */
 /* WARNING: Removing unreachable block (ram,0x112875f7) */
 /* WARNING: Removing unreachable block (ram,0x1128760e) */
@@ -43671,7 +43670,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1128a9b0(undefined4 param_2,undefine
   *(undefined1 *)((int)param_1 + 0x1b) = param_5;
   param_1[7] = param_2;
   *(undefined1 *)(param_1 + 8) = param_6;
-  *param_1 = (undefined4)((uint)&Ext_RJsonDataBinding_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RJsonDataBinding);
   *(undefined1 *)((int)param_1 + 0x21) = 0;
   return (undefined4 *)(param_1);
 }
@@ -44540,9 +44539,9 @@ void __fastcall FUN_1128e5c0(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RZLibForwardOnlyDataStream_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RZLibForwardOnlyDataStream);
   local_8 = (undefined4)(0);
-  param_1[2] = (uint)&Ext_ZlibDataStream_vftable;
+  param_1[2] = (uint)&ghidra_vftable_ZlibDataStream;
   (*(code *)param_1[5])(param_1 + 8,uVar1);
   thunk_FUN_112878c0();
   ExceptionList = (void *)(local_10);
@@ -44565,9 +44564,9 @@ void __fastcall FUN_1128e640(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RZLibForwardOnlyDataStream_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RZLibForwardOnlyDataStream);
   local_8 = (undefined4)(0);
-  param_1[2] = (uint)&Ext_ZlibDataStream_vftable;
+  param_1[2] = (uint)&ghidra_vftable_ZlibDataStream;
   (*(code *)param_1[5])(param_1 + 8,uVar1);
   thunk_FUN_112878c0();
   ExceptionList = (void *)(local_10);
@@ -44590,9 +44589,9 @@ void __fastcall FUN_1128e6c0(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RZLibForwardOnlyDataStream_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RZLibForwardOnlyDataStream);
   local_8 = (undefined4)(0);
-  param_1[2] = (uint)&Ext_ZlibDataStream_vftable;
+  param_1[2] = (uint)&ghidra_vftable_ZlibDataStream;
   (*(code *)param_1[5])(param_1 + 8,uVar1);
   thunk_FUN_112878c0();
   ExceptionList = (void *)(local_10);
@@ -44616,7 +44615,7 @@ void __fastcall FUN_1128e740(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_ZlibDataStream_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_ZlibDataStream);
   (*(code *)param_1[3])(param_1 + 6,uVar1);
   ExceptionList = (void *)(local_10);
   return;
@@ -44638,9 +44637,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1128e7a0(byte param_2)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RZLibForwardOnlyDataStream_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RZLibForwardOnlyDataStream);
   local_8 = (undefined4)(0);
-  param_1[2] = (uint)&Ext_ZlibDataStream_vftable;
+  param_1[2] = (uint)&ghidra_vftable_ZlibDataStream;
   (*(code *)param_1[5])(param_1 + 8,uVar1);
   thunk_FUN_112878c0();
   if ((param_2 & 1) != 0) {
@@ -44666,9 +44665,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1128e840(byte param_2)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RZLibForwardOnlyDataStream_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RZLibForwardOnlyDataStream);
   local_8 = (undefined4)(0);
-  param_1[2] = (uint)&Ext_ZlibDataStream_vftable;
+  param_1[2] = (uint)&ghidra_vftable_ZlibDataStream;
   (*(code *)param_1[5])(param_1 + 8,uVar1);
   thunk_FUN_112878c0();
   if ((param_2 & 1) != 0) {
@@ -44694,9 +44693,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1128e8e0(byte param_2)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_RZLibForwardOnlyDataStream_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RZLibForwardOnlyDataStream);
   local_8 = (undefined4)(0);
-  param_1[2] = (uint)&Ext_ZlibDataStream_vftable;
+  param_1[2] = (uint)&ghidra_vftable_ZlibDataStream;
   (*(code *)param_1[5])(param_1 + 8,uVar1);
   thunk_FUN_112878c0();
   if ((param_2 & 1) != 0) {
@@ -44723,7 +44722,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1128e980(byte param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_ZlibDataStream_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_ZlibDataStream);
   (*(code *)param_1[3])(param_1 + 6,uVar1);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x54);
@@ -44860,7 +44859,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1128f9f0(int param_2)
   ExceptionList = (void *)(&local_10);
   thunk_FUN_11274120(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   local_8 = (undefined4)(0);
-  *param_1 = (undefined4)((uint)&Ext_RDIDLResponse_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RDIDLResponse);
   param_1[2] = 0;
   param_1[3] = 0;
   param_1[5] = 0;
@@ -45105,11 +45104,11 @@ void FUN_11291ee0(undefined4 param_1)
   ExceptionList = (void *)(&local_10);
   local_108 = (undefined4)(0);
   local_104 = (undefined4)(0);
-  local_10c = (undefined **)((uint)&Ext_RAesEncoder_vftable);
+  local_10c = (undefined **)((uint)&ghidra_vftable_RAesEncoder);
   local_100 = (undefined2)(0x101);
   thunk_FUN_113d3ba0(local_fc,local_14);
   local_8 = (undefined4)(0);
-  local_2c = (undefined **)((uint)&Ext_REncryptedStringEncoder_vftable);
+  local_2c = (undefined **)((uint)&ghidra_vftable_REncryptedStringEncoder);
   local_28 = (undefined2)(0x101);
   thunk_FUN_1145ed60(local_24);
   local_18 = (undefined ***)(&local_10c);
@@ -45123,8 +45122,8 @@ void FUN_11291ee0(undefined4 param_1)
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
   uVar1 = (undefined4)((*(code *)(*local_18)[6])(param_1,1));
   thunk_FUN_1145f2e0(local_24,uVar1,local_110);
-  local_2c = (undefined **)((uint)&Ext_REncryptedStringEncoder_vftable);
-  local_10c = (undefined **)((uint)&Ext_RAesEncoder_vftable);
+  local_2c = (undefined **)((uint)&ghidra_vftable_REncryptedStringEncoder);
+  local_10c = (undefined **)((uint)&ghidra_vftable_RAesEncoder);
   thunk_FUN_113d3650(local_fc);
   ExceptionList = (void *)(local_10);
   thunk_FUN_1148ac28();
@@ -46707,7 +46706,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1129c1a0(int param_2)
     (**(code **)*param_1)(0);
   }
   *(undefined1 *)(param_1 + 6) = 0xff;
-  *param_1 = (undefined4)((uint)&Ext_RSystemTime_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RSystemTime);
   *(undefined2 *)(param_1 + 1) = *(undefined2 *)(param_2 + 4);
   *(undefined2 *)((int)param_1 + 6) = *(undefined2 *)(param_2 + 6);
   *(undefined2 *)(param_1 + 2) = *(undefined2 *)(param_2 + 8);
@@ -46717,7 +46716,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1129c1a0(int param_2)
   *(undefined2 *)(param_1 + 4) = *(undefined2 *)(param_2 + 0x10);
   *(undefined2 *)((int)param_1 + 0x12) = *(undefined2 *)(param_2 + 0x12);
   *(undefined1 *)(param_1 + 5) = *(undefined1 *)(param_2 + 0x14);
-  *param_1 = (undefined4)((uint)&Ext_RDateTime_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RDateTime);
   *(undefined1 *)(param_1 + 6) = 0;
   return (undefined4 *)(param_1);
 }
@@ -46873,7 +46872,7 @@ undefined4 * __fastcall FUN_1129dab0(undefined4 *param_1)
 {
   undefined4 uVar1;
   
-  *param_1 = (undefined4)((uint)&Ext_CertvalStats_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_CertvalStats);
   param_1[2] = 0;
   param_1[3] = 0;
   param_1[4] = 0;

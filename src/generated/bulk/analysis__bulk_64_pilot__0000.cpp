@@ -114,332 +114,6 @@ extern int DAT_121a6014;
 extern int DAT_122f33e0;
 extern int DAT_122f33e8;
 extern int DAT_122f33f4;
-extern int Ext_SCIAbilityDelegateSwigBase_canEnablePrereq;
-extern int Ext_SCIAbilityDelegateSwigBase_canRequestPrereq;
-extern int Ext_SCIAbilityDelegateSwigBase_canSuggestPrereq;
-extern int Ext_SCIAbilityDelegateSwigBase_enablePrereq;
-extern int Ext_SCIAbilityDelegateSwigBase_getIOSControlPanelSwipeDirection;
-extern int Ext_SCIAbilityDelegateSwigBase_initialize;
-extern int Ext_SCIAbilityDelegateSwigBase_isAlwaysAvailable;
-extern int Ext_SCIAbilityDelegateSwigBase_isAlwaysDisallowed;
-extern int Ext_SCIAbilityDelegateSwigBase_isPrereq;
-extern int Ext_SCIAbilityDelegateSwigBase_requestPrereq;
-extern int Ext_SCIAbilityDelegateSwigBase_requireFineLocationPermission;
-extern int Ext_SCIAbilityDelegateSwigBase_shutdown;
-extern int Ext_SCIAbilityDelegateSwigBase_suggestPrereq;
-extern int Ext_SCIActionDelegateSwigBase_asyncActionHasCompleted;
-extern int Ext_SCIActionFactorySwigBase_createBrowsePickerAction;
-extern int Ext_SCIActionFactorySwigBase_createCustomUIAction;
-extern int Ext_SCIActionFactorySwigBase_createDisplayBrowseStackAction;
-extern int Ext_SCIActionFactorySwigBase_createDisplayCustomControlAction;
-extern int Ext_SCIActionFactorySwigBase_createDisplayDatePickerAction;
-extern int Ext_SCIActionFactorySwigBase_createDisplayDualTextInputAction;
-extern int Ext_SCIActionFactorySwigBase_createDisplayHelpSheetAction;
-extern int Ext_SCIActionFactorySwigBase_createDisplayInfoViewAction;
-extern int Ext_SCIActionFactorySwigBase_createDisplayIntegerInputAction;
-extern int Ext_SCIActionFactorySwigBase_createDisplayMenuAction;
-extern int Ext_SCIActionFactorySwigBase_createDisplayMenuAndTextInputAction;
-extern int Ext_SCIActionFactorySwigBase_createDisplayMenuPopupAction;
-extern int Ext_SCIActionFactorySwigBase_createDisplayMessagePopupAction;
-extern int Ext_SCIActionFactorySwigBase_createDisplayTextInputAction;
-extern int Ext_SCIActionFactorySwigBase_createDisplayTextPaneAction;
-extern int Ext_SCIActionFactorySwigBase_createDisplayTimePickerAction;
-extern int Ext_SCIActionFactorySwigBase_createDisplayWizardAction;
-extern int Ext_SCIActionFactorySwigBase_createInlineControllerUpdateAction;
-extern int Ext_SCIActionFactorySwigBase_createModalSettingsMenuAction;
-extern int Ext_SCIActionFactorySwigBase_createNavigationAction;
-extern int Ext_SCIActionFactorySwigBase_createOpenURIAction;
-extern int Ext_SCIActionFactorySwigBase_createPopBrowseAction;
-extern int Ext_SCIActionFactorySwigBase_createPresentAlarmInterfaceAction;
-extern int Ext_SCIActionFactorySwigBase_createPushSCUriAction;
-extern int Ext_SCIActionFactorySwigBase_createRunAsyncIOOperationAction;
-extern int Ext_SCIActionFactorySwigBase_createRunAsyncIOOperationActionWithMessage;
-extern int Ext_SCIActionFactorySwigBase_createScheduleAlarmMonitorAction;
-extern int Ext_SCIActionFactorySwigBase_createSummonNewWizAction;
-extern int Ext_SCIActionFilterSwigBase_acceptsAction;
-extern int Ext_SCIActionSwigBase_perform;
-extern int Ext_SCIAutomationDelegateSwigBase_hhidUpdated;
-extern int Ext_SCIAutomationDelegateSwigBase_initializeFlutterAutomation;
-extern int Ext_SCIBTAccessoryDelegateSwigBase_getConnectedDevices;
-extern int Ext_SCIBTAccessoryDelegateSwigBase_isDeviceBonded;
-extern int Ext_SCIBTAccessoryDelegateSwigBase_registerListener;
-extern int Ext_SCIBTAccessoryDelegateSwigBase_requestOSPairing;
-extern int Ext_SCIBTAccessoryDelegateSwigBase_requestPairing;
-extern int Ext_SCIBTAccessoryDelegateSwigBase_shutdown;
-extern int Ext_SCIBTAccessoryDelegateSwigBase_startDiscoveryScan;
-extern int Ext_SCIBTAccessoryDelegateSwigBase_stopDiscoveryScan;
-extern int Ext_SCIBTAccessoryDelegateSwigBase_unregisterListener;
-extern int Ext_SCIBTClassicConnectionCallbackSwigBase_connectedToDevice;
-extern int Ext_SCIBTClassicConnectionCallbackSwigBase_deviceInfoChanged;
-extern int Ext_SCIBTClassicConnectionCallbackSwigBase_disconnectedFromDevice;
-extern int Ext_SCIBTClassicConnectionCallbackSwigBase_isMobConnected;
-extern int Ext_SCIBTClassicConnectionProviderSwigBase_isConnectedToSonosDevice;
-extern int Ext_SCIBTClassicConnectionProviderSwigBase_isPlaying;
-extern int Ext_SCIBTClassicConnectionProviderSwigBase_setCallback;
-extern int Ext_SCIBleDelegateSwigBase_clearPacketQueue;
-extern int Ext_SCIBleDelegateSwigBase_getPacketQueueLength;
-extern int Ext_SCIBleDelegateSwigBase_queuePacketForSend;
-extern int Ext_SCIBleDelegateSwigBase_registerListener;
-extern int Ext_SCIBleDelegateSwigBase_sendQueuedPackets;
-extern int Ext_SCIBleDelegateSwigBase_setTransferTestPacket;
-extern int Ext_SCIBleDelegateSwigBase_shutdown;
-extern int Ext_SCIBleDelegateSwigBase_tryConnect;
-extern int Ext_SCIBleDelegateSwigBase_tryDisconnect;
-extern int Ext_SCIBleDelegateSwigBase_tryFlushTransferTestBurst;
-extern int Ext_SCIBleDelegateSwigBase_tryStartScan;
-extern int Ext_SCIBleDelegateSwigBase_tryStopScan;
-extern int Ext_SCIBleDelegateSwigBase_unregisterListener;
-extern int Ext_SCIBlePeripheralDelegateSwigBase_getRequireSecurePairing;
-extern int Ext_SCIBlePeripheralDelegateSwigBase_initPeripheral;
-extern int Ext_SCIBlePeripheralDelegateSwigBase_registerListener;
-extern int Ext_SCIBlePeripheralDelegateSwigBase_setRequireSecurePairing;
-extern int Ext_SCIBlePeripheralDelegateSwigBase_shutdown;
-extern int Ext_SCIBlePeripheralDelegateSwigBase_tryStartAdvertising;
-extern int Ext_SCIBlePeripheralDelegateSwigBase_tryStopAdvertising;
-extern int Ext_SCIBlePeripheralDelegateSwigBase_unregisterListener;
-extern int Ext_SCIBrowseItemSwigBase_canActOn;
-extern int Ext_SCIBrowseItemSwigBase_canPush;
-extern int Ext_SCIBrowseItemSwigBase_getActions;
-extern int Ext_SCIBrowseItemSwigBase_getAlbumArtType;
-extern int Ext_SCIBrowseItemSwigBase_getAttributes;
-extern int Ext_SCIBrowseItemSwigBase_getChildDataSource;
-extern int Ext_SCIBrowseItemSwigBase_getDurationMillis;
-extern int Ext_SCIBrowseItemSwigBase_getExtension;
-extern int Ext_SCIBrowseItemSwigBase_getFilteredActions;
-extern int Ext_SCIBrowseItemSwigBase_getMoreMenuDataSource;
-extern int Ext_SCIBrowseItemSwigBase_getNumberOfAlbumArtURLs;
-extern int Ext_SCIBrowseItemSwigBase_getResumeOffsetMillis;
-extern int Ext_SCIBrowseItemSwigBase_hasMoreMenu;
-extern int Ext_SCIBrowseItemSwigBase_hasOrdinal;
-extern int Ext_SCIBrowseItemSwigBase_isBrowseItemTextAvailable;
-extern int Ext_SCIBrowseItemSwigBase_isCompletelyPlayed;
-extern int Ext_SCIBrowseItemSwigBase_isDataAvailable;
-extern int Ext_SCIBrowseItemSwigBase_isLoading;
-extern int Ext_SCIBrowseItemSwigBase_isParentOfSearch;
-extern int Ext_SCIBrowseItemSwigBase_isPlaying;
-extern int Ext_SCIBrowseItemSwigBase_isSecondaryTitleValid;
-extern int Ext_SCIBrowseItemSwigBase_isSonosRadio;
-extern int Ext_SCIBrowseItemSwigBase_isUnavailable;
-extern int Ext_SCIBrowseItemSwigBase_resolveArtworkUrls;
-extern int Ext_SCIBrowseItemSwigBase_showExplicitBadge;
-extern int Ext_SCIBrowseItemSwigBase_showProgressInfo;
-extern int Ext_SCIBrowseItemSwigBase_subscribe;
-extern int Ext_SCIBrowseItemSwigBase_unsubscribe;
-extern int Ext_SCIChirpDelegateSwigBase_registerListener;
-extern int Ext_SCIChirpDelegateSwigBase_shutdown;
-extern int Ext_SCIChirpDelegateSwigBase_startChirpReceiving;
-extern int Ext_SCIChirpDelegateSwigBase_stopChirpReceiving;
-extern int Ext_SCIChirpDelegateSwigBase_unregisterListener;
-extern int Ext_SCIClipboardDelegateSwigBase_setClipboardData;
-extern int Ext_SCICrashReportProviderSwigBase_enableLogging;
-extern int Ext_SCICrashReportProviderSwigBase_setTag;
-extern int Ext_SCICrashReportProviderSwigBase_startCrashReporter;
-extern int Ext_SCICrashReportProviderSwigBase_updateUser;
-extern int Ext_SCICustomSubWizardSwigBase_canClientCancelWizard;
-extern int Ext_SCICustomSubWizardSwigBase_canClientTransitionToNextState;
-extern int Ext_SCICustomSubWizardSwigBase_canClientTransitionToPreviousState;
-extern int Ext_SCICustomSubWizardSwigBase_enter;
-extern int Ext_SCICustomSubWizardSwigBase_exit;
-extern int Ext_SCICustomSubWizardSwigBase_getNextStateID;
-extern int Ext_SCICustomSubWizardSwigBase_getPropertyBag;
-extern int Ext_SCICustomSubWizardSwigBase_getStringInput;
-extern int Ext_SCICustomSubWizardSwigBase_getWizardComponents;
-extern int Ext_SCICustomSubWizardSwigBase_getWizardPageProperties;
-extern int Ext_SCICustomSubWizardSwigBase_isStateDone;
-extern int Ext_SCICustomSubWizardSwigBase_onSubWizardStateTransition;
-extern int Ext_SCICustomSubWizardSwigBase_raiseEvent;
-extern int Ext_SCICustomSubWizardSwigBase_skipStateOnBacktracking;
-extern int Ext_SCIEventSinkSwigBase_dispatchEvent;
-extern int Ext_SCIExperimentManagerProviderSwigBase_getExperiments;
-extern int Ext_SCIExperimentManagerProviderSwigBase_getFeatureVariableDouble;
-extern int Ext_SCIExperimentManagerProviderSwigBase_getFeatureVariableInteger;
-extern int Ext_SCIExperimentManagerProviderSwigBase_getFeatures;
-extern int Ext_SCIExperimentManagerProviderSwigBase_getVariations;
-extern int Ext_SCIExperimentManagerProviderSwigBase_initialize;
-extern int Ext_SCIExperimentManagerProviderSwigBase_isFeatureEnabled;
-extern int Ext_SCIExperimentManagerProviderSwigBase_isInitialized;
-extern int Ext_SCIExperimentManagerProviderSwigBase_isVariationForced;
-extern int Ext_SCIExperimentManagerProviderSwigBase_saveFeaturesJson;
-extern int Ext_SCIExperimentManagerProviderSwigBase_saveVariationsJson;
-extern int Ext_SCIExperimentManagerProviderSwigBase_setForcedVariation;
-extern int Ext_SCIGetAboutSonosStringCBSwigBase_updateGetAboutSonosString;
-extern int Ext_SCIGetSonosPlaylistsCBSwigBase_getSonosPlaylistsFailed;
-extern int Ext_SCIGetSonosPlaylistsCBSwigBase_getSonosPlaylistsSucceeded;
-extern int Ext_SCIHapticDelegateSwigBase_vibrate;
-extern int Ext_SCIInAppMessagingProviderSwigBase_addTagToGroup;
-extern int Ext_SCIInAppMessagingProviderSwigBase_hasDeviceToken;
-extern int Ext_SCIInAppMessagingProviderSwigBase_removeTagFromGroup;
-extern int Ext_SCIInAppMessagingProviderSwigBase_updateRegistration;
-extern int Ext_SCIInAppPurchaseManagerProviderSwigBase_canMakePurchases;
-extern int Ext_SCIInAppPurchaseManagerProviderSwigBase_fetchProducts;
-extern int Ext_SCIInAppPurchaseManagerProviderSwigBase_initialize;
-extern int Ext_SCIInAppPurchaseManagerProviderSwigBase_purchaseProduct;
-extern int Ext_SCIInAppPurchaseManagerProviderSwigBase_shutdown;
-extern int Ext_SCILifecycleAppProviderSwigBase_isAppWithSWGenInstalled;
-extern int Ext_SCILocalMediaCollectionSwigBase_getAllNodeType;
-extern int Ext_SCILocalMediaCollectionSwigBase_getCount;
-extern int Ext_SCILocalMediaCollectionSwigBase_getItemAt;
-extern int Ext_SCILocalMediaCollectionSwigBase_getItemThumbnailsPresentationType;
-extern int Ext_SCILocalMediaCollectionSwigBase_getPresentationType;
-extern int Ext_SCILocalMediaCollectionSwigBase_registerMediaCollectionListener;
-extern int Ext_SCILocalMusicBrowseItemInfoSwigBase_getArtType;
-extern int Ext_SCILocalMusicBrowseItemInfoSwigBase_getByteOffsetForTime;
-extern int Ext_SCILocalMusicBrowseItemInfoSwigBase_getDuration;
-extern int Ext_SCILocalMusicBrowseItemInfoSwigBase_getItemType;
-extern int Ext_SCILocalMusicBrowseItemInfoSwigBase_getTrackNumber;
-extern int Ext_SCILocalMusicBrowseItemInfoSwigBase_isContainer;
-extern int Ext_SCILocalMusicBrowseItemInfoSwigBase_isPlayable;
-extern int Ext_SCILocalMusicSearchableDelegateSwigBase_getCategoryIDs;
-extern int Ext_SCILoggingProviderSwigBase_getAppLevel;
-extern int Ext_SCILoggingProviderSwigBase_getFlutterLevel;
-extern int Ext_SCILoggingProviderSwigBase_setAppLevel;
-extern int Ext_SCILoggingProviderSwigBase_setFlutterLevel;
-extern int Ext_SCIMdnsDelegateSwigBase_registerListener;
-extern int Ext_SCIMdnsDelegateSwigBase_startPlayerDiscovery;
-extern int Ext_SCIMdnsDelegateSwigBase_stopPlayerDiscovery;
-extern int Ext_SCIMdnsDelegateSwigBase_unregisterListener;
-extern int Ext_SCIMusicServerBrowseDelegateSwigBase_getAuthorization;
-extern int Ext_SCIMusicServerBrowseDelegateSwigBase_getLocalMediaCollectionForId;
-extern int Ext_SCIMusicServerBrowseDelegateSwigBase_getLocalMusicItemInfoForId;
-extern int Ext_SCIMusicServerBrowseDelegateSwigBase_getLocalMusicSearchableDelegate;
-extern int Ext_SCIMusicServerBrowseDelegateSwigBase_getRootItem;
-extern int Ext_SCIMusicServerDelegateSwigBase_fillImageBytes;
-extern int Ext_SCIMusicServerDelegateSwigBase_getMusicServerBrowseDelegate;
-extern int Ext_SCIMusicServerDelegateSwigBase_onBeginStreaming;
-extern int Ext_SCIMusicServerDelegateSwigBase_onEndStreaming;
-extern int Ext_SCIMusicServerDelegateSwigBase_openFileDescriptor;
-extern int Ext_SCINetstartListenerSwigBase_onDeviceDiscoveryWaiting;
-extern int Ext_SCINetstartListenerSwigBase_onJoinComplete;
-extern int Ext_SCINetstartListenerSwigBase_onJoinFail;
-extern int Ext_SCINetstartListenerSwigBase_onNetParamsAcquired;
-extern int Ext_SCINetworkManagementDelegateSwigBase_getNetworkType;
-extern int Ext_SCINetworkManagementDelegateSwigBase_refreshSSID;
-extern int Ext_SCINewWizDelegateSwigBase_performUpdate;
-extern int Ext_SCINfcDelegateSwigBase_registerListener;
-extern int Ext_SCINfcDelegateSwigBase_shutdown;
-extern int Ext_SCINfcDelegateSwigBase_startScan;
-extern int Ext_SCINfcDelegateSwigBase_stopScan;
-extern int Ext_SCINfcDelegateSwigBase_unregisterListener;
-extern int Ext_SCINfcDelegateSwigBase_updateNfcCardMessage;
-extern int Ext_SCIObjImpl_vftable;
-extern int Ext_SCIOpCBSwigBase_operationComplete;
-extern int Ext_SCIPlatformDateTimeProvider_doesPlatformTimeZoneMatch;
-extern int Ext_SCIPlatformDateTimeProvider_getPlatformDateTime;
-extern int Ext_SCISavedDataProviderSwigBase_getBoolValue;
-extern int Ext_SCISavedDataProviderSwigBase_getDoubleValue;
-extern int Ext_SCISavedDataProviderSwigBase_getIntegerValue;
-extern int Ext_SCISavedDataProviderSwigBase_registerDefaultBoolValue;
-extern int Ext_SCISavedDataProviderSwigBase_registerDefaultIntegerValue;
-extern int Ext_SCISavedDataProviderSwigBase_registerDefaultStringValue;
-extern int Ext_SCISavedDataProviderSwigBase_remove;
-extern int Ext_SCISavedDataProviderSwigBase_setBoolValue;
-extern int Ext_SCISavedDataProviderSwigBase_setIntegerValue;
-extern int Ext_SCISavedDataProviderSwigBase_setStringValue;
-extern int Ext_SCISecureStoreSwigBase_isSecure;
-extern int Ext_SCISecureStoreSwigBase_removeBlob;
-extern int Ext_SCISecureStoreSwigBase_setBlob;
-extern int Ext_SCISecurityContextSwigBase_getEnvironment;
-extern int Ext_SCISecurityContextSwigBase_logCertificateData;
-extern int Ext_SCISecurityContextSwigBase_setCertificateEnvironment;
-extern int Ext_SCISecurityContextSwigBase_setCustomerID;
-extern int Ext_SCISecurityContextSwigBase_setHHID;
-extern int Ext_SCISecurityContextSwigBase_setSerialNumber;
-extern int Ext_SCISecurityContextSwigBase_validateCertificateChain;
-extern int Ext_SCISecurityContextSwigBase_validateCertificateData;
-extern int Ext_SCIServiceAppInteropSwigBase_getAppInstallState;
-extern int Ext_SCIServiceAppInteropSwigBase_openApp;
-extern int Ext_SCIStackTraceCaptureDelegateSwigBase_stackTraceCaptured;
-extern int Ext_SCIStringInputSwigBase_getMaxNumChars;
-extern int Ext_SCIStringInputSwigBase_getRecommendedInputMethodType;
-extern int Ext_SCIStringInputSwigBase_getValidationStatus;
-extern int Ext_SCIStringInputSwigBase_isLocked;
-extern int Ext_SCIStringInputSwigBase_isValid;
-extern int Ext_SCIStringInputSwigBase_setString;
-extern int Ext_SCITrackInfoSwigBase_getDuration;
-extern int Ext_SCIUINotificationsDelegate_notificationsEnabled;
-extern int Ext_SCIUINotificationsDelegate_registerLocalNotification;
-extern int Ext_SCIUINotificationsDelegate_requestNotificationsPermissions;
-extern int Ext_SCIUrbanAirshipDelegateSwigBase_addAndRemoveClientTags;
-extern int Ext_SCIUrbanAirshipDelegateSwigBase_addClientTags;
-extern int Ext_SCIUrbanAirshipDelegateSwigBase_hasUnreadMessages;
-extern int Ext_SCIUrbanAirshipDelegateSwigBase_postCustomEvent;
-extern int Ext_SCIUrbanAirshipDelegateSwigBase_registerListener;
-extern int Ext_SCIUrbanAirshipDelegateSwigBase_unregisterListener;
-extern int Ext_SCIUrlConnectionSwigBase_getCallback;
-extern int Ext_SCIUrlConnectionSwigBase_getRequest;
-extern int Ext_SCIUrlConnectionSwigBase_serialNum;
-extern int Ext_SCIUrlConnectionSwigBase_setResponse;
-extern int Ext_SCIUrlConnectionSwigBase_setResult;
-extern int Ext_SCIUrlSessionCallbackSwigBase_sessionComplete;
-extern int Ext_SCIUrlSessionProviderSwigBase_cancelURLConnection;
-extern int Ext_SCIUrlSessionProviderSwigBase_clearCache;
-extern int Ext_SCIUrlSessionProviderSwigBase_endURLSession;
-extern int Ext_SCIUrlSessionProviderSwigBase_startURLSession;
-extern int Ext_SCIVoiceServiceDelegateSwigBase_canDeviceSetupVoice;
-extern int Ext_SCIVoiceServiceDelegateSwigBase_registerListener;
-extern int Ext_SCIVoiceServiceDelegateSwigBase_startAuthentication;
-extern int Ext_SCIVpnDelegateSwigBase_canOpenVPNSettings;
-extern int Ext_SCIVpnDelegateSwigBase_openVPNSettings;
-extern int Ext_SCIVpnDelegateSwigBase_requestVPN;
-extern int Ext_SCIVpnDelegate_canOpenVPNSettings;
-extern int Ext_SCIVpnDelegate_getRootObject;
-extern int Ext_SCIVpnDelegate_openVPNSettings;
-extern int Ext_SCIVpnDelegate_queryInterface;
-extern int Ext_SCIVpnDelegate_requestVPN;
-extern int Ext_SCIWebsocketCallbackSwigBase_onWebsocketConnected;
-extern int Ext_SCIWebsocketCallbackSwigBase_onWebsocketDisconnected;
-extern int Ext_SCIWebsocketCallbackSwigBase_onWebsocketError;
-extern int Ext_SCIWebsocketCallbackSwigBase_receivedData;
-extern int Ext_SCIWebsocketCallbackSwigBase_receivedString;
-extern int Ext_SCIWebsocketDelegateSwigBase_connect;
-extern int Ext_SCIWebsocketDelegateSwigBase_destroy;
-extern int Ext_SCIWebsocketDelegateSwigBase_disconnect;
-extern int Ext_SCIWebsocketDelegateSwigBase_setCallback;
-extern int Ext_SCIWebsocketDelegateSwigBase_writeData;
-extern int Ext_SCIWebsocketDelegateSwigBase_writeString;
-extern int Ext_SCIWifiDelegateSwigBase_canConfigureAccessories;
-extern int Ext_SCIWifiDelegateSwigBase_canJoinSSIDs;
-extern int Ext_SCIWifiDelegateSwigBase_canStartScan;
-extern int Ext_SCIWifiDelegateSwigBase_getConnectionOpen;
-extern int Ext_SCIWifiDelegateSwigBase_isWifiConnected;
-extern int Ext_SCIWifiDelegateSwigBase_joinSSID;
-extern int Ext_SCIWifiDelegateSwigBase_launchAccessoryConfiguration;
-extern int Ext_SCIWifiDelegateSwigBase_leaveSSID;
-extern int Ext_SCIWifiDelegateSwigBase_registerListener;
-extern int Ext_SCIWifiDelegateSwigBase_startScan;
-extern int Ext_SCIWifiDelegateSwigBase_stopScan;
-extern int Ext_SCIWifiDelegateSwigBase_unregisterListener;
-extern int Ext_SCLibAssertionFailureCallback_assertionFailed;
-extern int Ext_SCLibCallUIThreadCallback_callSCLibOnUIThread;
-extern int Ext_SCLibCustomSubWizardCallback_createCustomSubWizard;
-extern int Ext_SCLibCustomSubWizardCallback_hasCustomSubWizard;
-extern int Ext_SCLibDelegateFactory_getSCLibDelegate;
-extern int Ext_SCLibDelegateFactory_hasSCLibDelegate;
-extern int Ext_SCLibLogCallback_LogDebugMessage;
-extern int Ext_SCLibSonarCallback_canHardwareGainBeSet;
-extern int Ext_SCLibSonarCallback_cleanupRecording;
-extern int Ext_SCLibSonarCallback_getBitsPerSample;
-extern int Ext_SCLibSonarCallback_getChannels;
-extern int Ext_SCLibSonarCallback_getHoldStyle;
-extern int Ext_SCLibSonarCallback_getSampleRate;
-extern int Ext_SCLibSonarCallback_hasLimitedVerticalSpace;
-extern int Ext_SCLibSonarCallback_prepareForRecording;
-extern int Ext_SCLibSonarCallback_requireInputToChangeHoldStyle;
-extern int Ext_SCLibSonarCallback_sonarBegin;
-extern int Ext_SCLibSonarCallback_sonarEnd;
-extern int Ext_SCLibSonarCallback_startMotionData;
-extern int Ext_SCLibSonarCallback_startRawMotionData;
-extern int Ext_SCLibSonarCallback_startRecording;
-extern int Ext_SCLibSonarCallback_stopMotionData;
-extern int Ext_SCLibSonarCallback_stopRawMotionData;
-extern int Ext_SCLibSonarCallback_stopRecording;
-extern int Ext_SCLibTruncatedStringsCallback_clearTruncatedStrings;
-extern int Ext_SCLoggingHelper_vftable;
-extern int Ext_SCNewWizManager_vftable;
-extern int Ext_SCTestPointManager_vftable;
-extern int Ext_SCUrl_vftable;
-extern int Ext_Swig_DirectorException_vftable;
-extern int Ext_Swig_DirectorPureVirtualException_vftable;
 extern int _DAT_121a0fe4;
 extern int _DAT_121a600c;
 extern int _DAT_121a6010;
@@ -448,6 +122,13 @@ extern int _DAT_122f33ec;
 extern int _DAT_122f33f0;
 extern int _DAT_122f33f8;
 extern int g_lSCObjCount;
+extern int ghidra_vftable_SCIObjImpl;
+extern int ghidra_vftable_SCLoggingHelper;
+extern int ghidra_vftable_SCNewWizManager;
+extern int ghidra_vftable_SCTestPointManager;
+extern int ghidra_vftable_SCUrl;
+extern int ghidra_vftable_Swig_DirectorException;
+extern int ghidra_vftable_Swig_DirectorPureVirtualException;
 extern undefined1 LAB_101190d0[];
 extern undefined1 LAB_114d9ec5[];
 extern undefined1 LAB_114d9f05[];
@@ -455,7 +136,6 @@ extern undefined1 LAB_114d9f45[];
 extern undefined1 LAB_114d9f70[];
 extern undefined1 LAB_114d9fa0[];
 extern undefined1 LAB_114da185[];
-extern undefined1 LAB_114da34b[];
 extern undefined1 LAB_114da400[];
 extern undefined1 LAB_114da430[];
 extern undefined1 LAB_114da460[];
@@ -592,7 +272,6 @@ extern undefined1 LAB_114e4450[];
 extern undefined1 LAB_114e44b0[];
 extern undefined1 LAB_114e44e0[];
 extern undefined1 LAB_114e4510[];
-extern undefined1 LAB_114e45d0[];
 extern undefined1 LAB_114e4660[];
 extern undefined1 LAB_114e4690[];
 extern undefined1 LAB_114e46c0[];
@@ -618,7 +297,6 @@ extern undefined1 LAB_114e4a50[];
 extern undefined1 LAB_114e4a80[];
 extern undefined1 LAB_114e4ab0[];
 extern undefined1 LAB_114e4ae0[];
-extern undefined1 LAB_114e4b10[];
 extern undefined1 LAB_114e4b40[];
 extern undefined1 LAB_114e4b70[];
 extern undefined1 LAB_114e4ba0[];
@@ -670,15 +348,12 @@ extern undefined1 LAB_114e5710[];
 extern undefined1 LAB_114e5740[];
 extern undefined1 LAB_114e5770[];
 extern undefined1 LAB_114e57a0[];
-extern undefined1 LAB_114e5830[];
 extern undefined1 LAB_114e5860[];
 extern undefined1 LAB_114e5890[];
 extern undefined1 LAB_114e58c0[];
 extern undefined1 LAB_114e58f0[];
 extern undefined1 LAB_114e5920[];
 extern undefined1 LAB_114e5950[];
-extern undefined1 LAB_114e59b0[];
-extern undefined1 LAB_114e59e0[];
 extern undefined1 LAB_114e5aa0[];
 extern undefined1 LAB_114e5ad0[];
 extern undefined1 LAB_114e5b00[];
@@ -687,7 +362,6 @@ extern undefined1 LAB_114e5b60[];
 extern undefined1 LAB_114e5b90[];
 extern undefined1 LAB_114e5c20[];
 extern undefined1 LAB_114e5c50[];
-extern undefined1 LAB_114e5d40[];
 extern undefined1 LAB_114e5da0[];
 extern undefined1 LAB_114e5e00[];
 extern undefined1 LAB_114e5e30[];
@@ -700,14 +374,76 @@ extern undefined1 LAB_116dcdd7[];
 extern undefined1 LAB_117065cf[];
 extern undefined1 LAB_117c41a9[];
 extern int *stack0x00000004;
-extern int *stack0xffffffe0;
-extern int *stack0xffffffe4;
 extern int *stack0xfffffffc;
 extern char s_Attempt_to_invoke_pure_virtual_m_1186d2c0[];
 extern void *ExceptionList;
+struct SCIAbilityDelegateSwigBase { char _pad; SCIAbilityDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int canEnablePrereq; static int canRequestPrereq; static int canSuggestPrereq; static int enablePrereq; static int getIOSControlPanelSwipeDirection; static int initialize; static int isAlwaysAvailable; static int isAlwaysDisallowed; static int isPrereq; static int requestPrereq; static int requireFineLocationPermission; static int shutdown; static int suggestPrereq; };
+struct SCIActionDelegateSwigBase { char _pad; SCIActionDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int asyncActionHasCompleted; };
+struct SCIActionFactorySwigBase { char _pad; SCIActionFactorySwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int createBrowsePickerAction; static int createCustomUIAction; static int createDisplayBrowseStackAction; static int createDisplayCustomControlAction; static int createDisplayDatePickerAction; static int createDisplayDualTextInputAction; static int createDisplayHelpSheetAction; static int createDisplayInfoViewAction; static int createDisplayIntegerInputAction; static int createDisplayMenuAction; static int createDisplayMenuAndTextInputAction; static int createDisplayMenuPopupAction; static int createDisplayMessagePopupAction; static int createDisplayTextInputAction; static int createDisplayTextPaneAction; static int createDisplayTimePickerAction; static int createDisplayWizardAction; static int createInlineControllerUpdateAction; static int createModalSettingsMenuAction; static int createNavigationAction; static int createOpenURIAction; static int createPopBrowseAction; static int createPresentAlarmInterfaceAction; static int createPushSCUriAction; static int createRunAsyncIOOperationAction; static int createRunAsyncIOOperationActionWithMessage; static int createScheduleAlarmMonitorAction; static int createSummonNewWizAction; };
+struct SCIActionFilterSwigBase { char _pad; SCIActionFilterSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int acceptsAction; };
+struct SCIActionSwigBase { char _pad; SCIActionSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int perform; };
+struct SCIAutomationDelegateSwigBase { char _pad; SCIAutomationDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int hhidUpdated; static int initializeFlutterAutomation; };
+struct SCIBTAccessoryDelegateSwigBase { char _pad; SCIBTAccessoryDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int getConnectedDevices; static int isDeviceBonded; static int registerListener; static int requestOSPairing; static int requestPairing; static int shutdown; static int startDiscoveryScan; static int stopDiscoveryScan; static int unregisterListener; };
+struct SCIBTClassicConnectionCallbackSwigBase { char _pad; SCIBTClassicConnectionCallbackSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int connectedToDevice; static int deviceInfoChanged; static int disconnectedFromDevice; static int isMobConnected; };
+struct SCIBTClassicConnectionProviderSwigBase { char _pad; SCIBTClassicConnectionProviderSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int isConnectedToSonosDevice; static int isPlaying; static int setCallback; };
+struct SCIBleDelegateSwigBase { char _pad; SCIBleDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int clearPacketQueue; static int getPacketQueueLength; static int queuePacketForSend; static int registerListener; static int sendQueuedPackets; static int setTransferTestPacket; static int shutdown; static int tryConnect; static int tryDisconnect; static int tryFlushTransferTestBurst; static int tryStartScan; static int tryStopScan; static int unregisterListener; };
+struct SCIBlePeripheralDelegateSwigBase { char _pad; SCIBlePeripheralDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int getRequireSecurePairing; static int initPeripheral; static int registerListener; static int setRequireSecurePairing; static int shutdown; static int tryStartAdvertising; static int tryStopAdvertising; static int unregisterListener; };
+struct SCIBrowseItemSwigBase { char _pad; SCIBrowseItemSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int canActOn; static int canPush; static int getActions; static int getAlbumArtType; static int getAttributes; static int getChildDataSource; static int getDurationMillis; static int getExtension; static int getFilteredActions; static int getMoreMenuDataSource; static int getNumberOfAlbumArtURLs; static int getResumeOffsetMillis; static int hasMoreMenu; static int hasOrdinal; static int isBrowseItemTextAvailable; static int isCompletelyPlayed; static int isDataAvailable; static int isLoading; static int isParentOfSearch; static int isPlaying; static int isSecondaryTitleValid; static int isSonosRadio; static int isUnavailable; static int resolveArtworkUrls; static int showExplicitBadge; static int showProgressInfo; static int subscribe; static int unsubscribe; };
+struct SCIChirpDelegateSwigBase { char _pad; SCIChirpDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int registerListener; static int shutdown; static int startChirpReceiving; static int stopChirpReceiving; static int unregisterListener; };
+struct SCIClipboardDelegateSwigBase { char _pad; SCIClipboardDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int setClipboardData; };
+struct SCICrashReportProviderSwigBase { char _pad; SCICrashReportProviderSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int enableLogging; static int setTag; static int startCrashReporter; static int updateUser; };
+struct SCICustomSubWizardSwigBase { char _pad; SCICustomSubWizardSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int canClientCancelWizard; static int canClientTransitionToNextState; static int canClientTransitionToPreviousState; static int enter; static int exit; static int getNextStateID; static int getPropertyBag; static int getStringInput; static int getWizardComponents; static int getWizardPageProperties; static int isStateDone; static int onSubWizardStateTransition; static int raiseEvent; static int skipStateOnBacktracking; };
+struct SCIEventSinkSwigBase { char _pad; SCIEventSinkSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int dispatchEvent; };
+struct SCIExperimentManagerProviderSwigBase { char _pad; SCIExperimentManagerProviderSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int getExperiments; static int getFeatureVariableDouble; static int getFeatureVariableInteger; static int getFeatures; static int getVariations; static int initialize; static int isFeatureEnabled; static int isInitialized; static int isVariationForced; static int saveFeaturesJson; static int saveVariationsJson; static int setForcedVariation; };
+struct SCIGetAboutSonosStringCBSwigBase { char _pad; SCIGetAboutSonosStringCBSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int updateGetAboutSonosString; };
+struct SCIGetSonosPlaylistsCBSwigBase { char _pad; SCIGetSonosPlaylistsCBSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int getSonosPlaylistsFailed; static int getSonosPlaylistsSucceeded; };
+struct SCIHapticDelegateSwigBase { char _pad; SCIHapticDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int vibrate; };
+struct SCIInAppMessagingProviderSwigBase { char _pad; SCIInAppMessagingProviderSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int addTagToGroup; static int hasDeviceToken; static int removeTagFromGroup; static int updateRegistration; };
+struct SCIInAppPurchaseManagerProviderSwigBase { char _pad; SCIInAppPurchaseManagerProviderSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int canMakePurchases; static int fetchProducts; static int initialize; static int purchaseProduct; static int shutdown; };
+struct SCILifecycleAppProviderSwigBase { char _pad; SCILifecycleAppProviderSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int isAppWithSWGenInstalled; };
+struct SCILocalMediaCollectionSwigBase { char _pad; SCILocalMediaCollectionSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int getAllNodeType; static int getCount; static int getItemAt; static int getItemThumbnailsPresentationType; static int getPresentationType; static int registerMediaCollectionListener; };
+struct SCILocalMusicBrowseItemInfoSwigBase { char _pad; SCILocalMusicBrowseItemInfoSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int getArtType; static int getByteOffsetForTime; static int getDuration; static int getItemType; static int getTrackNumber; static int isContainer; static int isPlayable; };
+struct SCILocalMusicSearchableDelegateSwigBase { char _pad; SCILocalMusicSearchableDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int getCategoryIDs; };
+struct SCILoggingProviderSwigBase { char _pad; SCILoggingProviderSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int getAppLevel; static int getFlutterLevel; static int setAppLevel; static int setFlutterLevel; };
+struct SCIMdnsDelegateSwigBase { char _pad; SCIMdnsDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int registerListener; static int startPlayerDiscovery; static int stopPlayerDiscovery; static int unregisterListener; };
+struct SCIMusicServerBrowseDelegateSwigBase { char _pad; SCIMusicServerBrowseDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int getAuthorization; static int getLocalMediaCollectionForId; static int getLocalMusicItemInfoForId; static int getLocalMusicSearchableDelegate; static int getRootItem; };
+struct SCIMusicServerDelegateSwigBase { char _pad; SCIMusicServerDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int fillImageBytes; static int getMusicServerBrowseDelegate; static int onBeginStreaming; static int onEndStreaming; static int openFileDescriptor; };
+struct SCINetstartListenerSwigBase { char _pad; SCINetstartListenerSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int onDeviceDiscoveryWaiting; static int onJoinComplete; static int onJoinFail; static int onNetParamsAcquired; };
+struct SCINetworkManagementDelegateSwigBase { char _pad; SCINetworkManagementDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int getNetworkType; static int refreshSSID; };
+struct SCINewWizDelegateSwigBase { char _pad; SCINewWizDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int performUpdate; };
+struct SCINfcDelegateSwigBase { char _pad; SCINfcDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int registerListener; static int shutdown; static int startScan; static int stopScan; static int unregisterListener; static int updateNfcCardMessage; };
+struct SCIOpCBSwigBase { char _pad; SCIOpCBSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int _operationComplete; };
+struct SCIPlatformDateTimeProvider { char _pad; SCIPlatformDateTimeProvider(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int doesPlatformTimeZoneMatch; static int getPlatformDateTime; };
+struct SCISavedDataProviderSwigBase { char _pad; SCISavedDataProviderSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int getBoolValue; static int getDoubleValue; static int getIntegerValue; static int registerDefaultBoolValue; static int registerDefaultIntegerValue; static int registerDefaultStringValue; static int remove; static int setBoolValue; static int setIntegerValue; static int setStringValue; };
+struct SCISecureStoreSwigBase { char _pad; SCISecureStoreSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int isSecure; static int removeBlob; static int setBlob; };
+struct SCISecurityContextSwigBase { char _pad; SCISecurityContextSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int getEnvironment; static int logCertificateData; static int setCertificateEnvironment; static int setCustomerID; static int setHHID; static int setSerialNumber; static int validateCertificateChain; static int validateCertificateData; };
+struct SCIServiceAppInteropSwigBase { char _pad; SCIServiceAppInteropSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int getAppInstallState; static int openApp; };
+struct SCIStackTraceCaptureDelegateSwigBase { char _pad; SCIStackTraceCaptureDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int stackTraceCaptured; };
+struct SCIStringInputSwigBase { char _pad; SCIStringInputSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int getMaxNumChars; static int getRecommendedInputMethodType; static int getValidationStatus; static int isLocked; static int isValid; static int setString; };
+struct SCITrackInfoSwigBase { char _pad; SCITrackInfoSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int getDuration; };
+struct SCIUINotificationsDelegate { char _pad; SCIUINotificationsDelegate(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int notificationsEnabled; static int registerLocalNotification; static int requestNotificationsPermissions; };
+struct SCIUrbanAirshipDelegateSwigBase { char _pad; SCIUrbanAirshipDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int addAndRemoveClientTags; static int addClientTags; static int hasUnreadMessages; static int postCustomEvent; static int registerListener; static int unregisterListener; };
+struct SCIUrlConnectionSwigBase { char _pad; SCIUrlConnectionSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int getCallback; static int getRequest; static int serialNum; static int setResponse; static int setResult; };
+struct SCIUrlSessionCallbackSwigBase { char _pad; SCIUrlSessionCallbackSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int sessionComplete; };
+struct SCIUrlSessionProviderSwigBase { char _pad; SCIUrlSessionProviderSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int cancelURLConnection; static int clearCache; static int endURLSession; static int startURLSession; };
+struct SCIVoiceServiceDelegateSwigBase { char _pad; SCIVoiceServiceDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int canDeviceSetupVoice; static int registerListener; static int startAuthentication; };
+struct SCIVpnDelegate { char _pad; SCIVpnDelegate(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int canOpenVPNSettings; static int getRootObject; static int openVPNSettings; static int queryInterface; static int requestVPN; };
+struct SCIVpnDelegateSwigBase { char _pad; SCIVpnDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int canOpenVPNSettings; static int openVPNSettings; static int requestVPN; };
+struct SCIWebsocketCallbackSwigBase { char _pad; SCIWebsocketCallbackSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int onWebsocketConnected; static int onWebsocketDisconnected; static int onWebsocketError; static int receivedData; static int receivedString; };
+struct SCIWebsocketDelegateSwigBase { char _pad; SCIWebsocketDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int connect; static int destroy; static int disconnect; static int setCallback; static int writeData; static int writeString; };
+struct SCIWifiDelegateSwigBase { char _pad; SCIWifiDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int canConfigureAccessories; static int canJoinSSIDs; static int canStartScan; static int getConnectionOpen; static int isWifiConnected; static int joinSSID; static int launchAccessoryConfiguration; static int leaveSSID; static int registerListener; static int startScan; static int stopScan; static int unregisterListener; };
+struct SCLibAssertionFailureCallback { char _pad; SCLibAssertionFailureCallback(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int assertionFailed; };
+struct SCLibCallUIThreadCallback { char _pad; SCLibCallUIThreadCallback(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int callSCLibOnUIThread; };
+struct SCLibCustomSubWizardCallback { char _pad; SCLibCustomSubWizardCallback(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int createCustomSubWizard; static int hasCustomSubWizard; };
+struct SCLibDelegateFactory { char _pad; SCLibDelegateFactory(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int getSCLibDelegate; static int hasSCLibDelegate; };
+struct SCLibLogCallback { char _pad; SCLibLogCallback(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int LogDebugMessage; };
+struct SCLibSonarCallback { char _pad; SCLibSonarCallback(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int canHardwareGainBeSet; static int cleanupRecording; static int getBitsPerSample; static int getChannels; static int getHoldStyle; static int getSampleRate; static int hasLimitedVerticalSpace; static int prepareForRecording; static int requireInputToChangeHoldStyle; static int sonarBegin; static int sonarEnd; static int startMotionData; static int startRawMotionData; static int startRecording; static int stopMotionData; static int stopRawMotionData; static int stopRecording; };
+struct SCLibTruncatedStringsCallback { char _pad; SCLibTruncatedStringsCallback(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); static int clearTruncatedStrings; };
+struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int int_addref(...); int int_allocRep(...); int int_release(...); int op_eq(...); int setFromUTF16(...); };
 typedef void *WARNING;
 struct Function { char _pad; Function(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Globals { char _pad; Globals(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
+struct LogDebugMessage { char _pad; LogDebugMessage(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SCIAbilityDelegate { char _pad; SCIAbilityDelegate(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SCIAction { char _pad; SCIAction(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SCIActionDelegate { char _pad; SCIActionDelegate(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
@@ -759,17 +495,14 @@ struct SCIUrlConnection { char _pad; SCIUrlConnection(...); template<class T> in
 struct SCIUrlSessionCallback { char _pad; SCIUrlSessionCallback(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SCIUrlSessionProvider { char _pad; SCIUrlSessionProvider(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SCIVoiceServiceDelegate { char _pad; SCIVoiceServiceDelegate(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct SCIVpnDelegate { char _pad; SCIVpnDelegate(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SCIWebsocketCallback { char _pad; SCIWebsocketCallback(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SCIWebsocketDelegate { char _pad; SCIWebsocketDelegate(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SCIWifiDelegate { char _pad; SCIWifiDelegate(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SCIZoneGroupMgr { char _pad; SCIZoneGroupMgr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct SCWeakRefMgr { char _pad; SCWeakRefMgr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct Subroutine { char _pad; Subroutine(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
 struct ThrowInfo { char _pad; ThrowInfo(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); };
-struct Stub_SCStr { Stub_SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int SCStr(...); int int_addref(...); int int_allocRep(...); int int_release(...); int op_eq(...); int setFromUTF16(...); };
-struct Recovered_Bulk { char _pad; int * __thiscall FUN_101167f0(undefined4 *param_2); int * __thiscall FUN_101168d0(undefined4 *param_2); int * __thiscall FUN_101169f0(undefined4 *param_2); void __thiscall FUN_10117000(int *param_2,SCStr *param_3,uint param_4); undefined4 * __thiscall FUN_10118c40(undefined4 *param_2); void __thiscall FUN_10118fc0(undefined4 param_2); SCStr * __thiscall FUN_10119e10(SCStr *param_2); int * __thiscall FUN_10122560(int *param_2); undefined1 * __thiscall FUN_10124ee0(undefined1 *param_2); int __thiscall FUN_101263e0(byte param_2); int __thiscall FUN_101269f0(byte param_2); void __thiscall FUN_10129550(undefined4 *param_2,undefined4 param_3,undefined4 *param_4); float __thiscall FUN_10129a20(int param_2); void __thiscall FUN_10129ef0(int param_2); void __thiscall FUN_1012a4d0(undefined4 param_2,undefined4 param_3); void __thiscall FUN_1012a540(int *param_2); void __thiscall FUN_1012a5c0(int *param_2,int *param_3); void __thiscall FUN_1012a650(int *param_2); void __thiscall FUN_1012b750(undefined4 *param_2,undefined4 *param_3); undefined4 * __thiscall FUN_1012cdb0(void *param_2,uint param_3); void __thiscall FUN_1012cfb0(undefined4 *param_2,undefined4 param_3,undefined4 *param_4); int * __thiscall FUN_1012d130(void *param_2,uint param_3); void __thiscall FUN_1012d250(int *param_2,int *param_3); void __thiscall FUN_1012d550(undefined4 param_2); void __thiscall FUN_1012d5c0(undefined4 param_2); void __thiscall FUN_1012d870(undefined4 param_2); void __thiscall FUN_1012d940(undefined4 param_2); void __thiscall FUN_1012d9b0(int *param_2); void __thiscall FUN_1012dc40(int *param_2,int *param_3); void __thiscall FUN_1012ddd0(undefined4 *param_2,int *param_3,undefined4 *param_4); void __thiscall FUN_1012df20(undefined4 *param_2,undefined4 *param_3); void __thiscall FUN_1012e040(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4); void __thiscall FUN_1012e1d0(undefined4 *param_2,int *param_3); void __thiscall FUN_1012e2b0(undefined4 *param_2,undefined4 param_3); void __thiscall FUN_1012e380(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4,int *param_5); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1012e530(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4,
+struct Recovered_Bulk { char _pad; int * __thiscall FUN_101167f0(undefined4 *param_2); int * __thiscall FUN_101168d0(undefined4 *param_2); int * __thiscall FUN_101169f0(undefined4 *param_2); void __thiscall FUN_10117000(int *param_2,SCStr *param_3,uint param_4); undefined4 * __thiscall FUN_10118c40(undefined4 *param_2); void __thiscall FUN_10118fc0(undefined4 param_2); int * __thiscall FUN_10122560(int *param_2); undefined1 * __thiscall FUN_10124ee0(undefined1 *param_2); int __thiscall FUN_101263e0(byte param_2); int __thiscall FUN_101269f0(byte param_2); void __thiscall FUN_10129550(undefined4 *param_2,undefined4 param_3,undefined4 *param_4); float __thiscall FUN_10129a20(int param_2); void __thiscall FUN_10129ef0(int param_2); void __thiscall FUN_1012a4d0(undefined4 param_2,undefined4 param_3); void __thiscall FUN_1012a540(int *param_2); void __thiscall FUN_1012a5c0(int *param_2,int *param_3); void __thiscall FUN_1012a650(int *param_2); void __thiscall FUN_1012b750(undefined4 *param_2,undefined4 *param_3); undefined4 * __thiscall FUN_1012cdb0(void *param_2,uint param_3); void __thiscall FUN_1012cfb0(undefined4 *param_2,undefined4 param_3,undefined4 *param_4); int * __thiscall FUN_1012d130(void *param_2,uint param_3); void __thiscall FUN_1012d250(int *param_2,int *param_3); void __thiscall FUN_1012d550(undefined4 param_2); void __thiscall FUN_1012d5c0(undefined4 param_2); void __thiscall FUN_1012d870(undefined4 param_2); void __thiscall FUN_1012d940(undefined4 param_2); void __thiscall FUN_1012d9b0(int *param_2); void __thiscall FUN_1012dc40(int *param_2,int *param_3); void __thiscall FUN_1012ddd0(undefined4 *param_2,int *param_3,undefined4 *param_4); void __thiscall FUN_1012df20(undefined4 *param_2,undefined4 *param_3); void __thiscall FUN_1012e040(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4); void __thiscall FUN_1012e1d0(undefined4 *param_2,int *param_3); void __thiscall FUN_1012e2b0(undefined4 *param_2,undefined4 param_3); void __thiscall FUN_1012e380(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4,int *param_5); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1012e530(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4,
             undefined4 *param_5,undefined4 *param_6,int *param_7,undefined4 *param_8,
             undefined4 *param_9,int *param_10); void __thiscall FUN_1012e850(undefined4 *param_2,undefined4 *param_3); void __thiscall FUN_1012e970(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4); void __thiscall FUN_1012eb00(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4,
             undefined4 *param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8); /* WARNING: Function: __alloca_probe replaced with injection: alloca_probe */ void __thiscall FUN_1012ece0(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4,
@@ -956,7 +689,6 @@ undefined4 FUN_1014d350(int *param_1);
 undefined4 FUN_1014d4e0(void);
 void __stdcall FUN_1014d5a0(int *param_1,ushort *param_2);
 undefined4 FUN_1014d690(int *param_1);
-SCStr * __stdcall FUN_1014dac0(int *param_1);
 void __stdcall FUN_1014de40(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
@@ -1002,7 +734,6 @@ undefined4 FUN_1014f350(int *param_1,undefined4 param_2);
 undefined4 FUN_1014f3f0(int *param_1,undefined4 param_2,undefined4 param_3);
 undefined4 __stdcall FUN_1014f490(int *param_1,ushort *param_2,ushort *param_3,int param_4);
 undefined4 FUN_1014f580(int *param_1,undefined4 param_2);
-undefined4 __stdcall FUN_1014f620(int *param_1,undefined4 param_2,ushort *param_3);
 undefined4
 __stdcall FUN_1014f6e0(int *param_1,int param_2,ushort *param_3,undefined4 param_4,undefined4 param_5);
 undefined4 FUN_1014f7a0(int *param_1,undefined4 param_2);
@@ -1055,15 +786,12 @@ undefined1 __stdcall FUN_10152e60(int *param_1,ushort *param_2,ushort *param_3,u
 undefined1 __stdcall FUN_10152f30(int *param_1,ushort *param_2,int param_3);
 undefined1 __stdcall FUN_10152fd0(int *param_1,ushort *param_2);
 undefined4 FUN_10153070(int *param_1);
-void __stdcall FUN_10153330(int *param_1,ushort *param_2);
 undefined4 FUN_101533d0(int *param_1,undefined4 param_2);
 undefined4 FUN_101534a0(int *param_1,undefined4 param_2);
 undefined4 FUN_10153540(int *param_1);
 undefined4 FUN_101535e0(int *param_1,undefined4 param_2);
 undefined4 FUN_10153680(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
 undefined4 FUN_10153720(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
-undefined4 __stdcall FUN_101538c0(int *param_1,ushort *param_2,undefined4 param_3);
-SCStr * __stdcall FUN_101539f0(int *param_1);
 void __stdcall FUN_101541e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10);
@@ -1075,7 +803,6 @@ void __stdcall FUN_10154560(int *param_1,ushort *param_2,ushort *param_3,int par
 void __stdcall FUN_10154630(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4);
 undefined1 __stdcall FUN_10154a20(int *param_1,ushort *param_2,ushort *param_3);
 undefined1 __stdcall FUN_10154af0(int *param_1,ushort *param_2);
-SCStr * __stdcall FUN_101550e0(int *param_1);
 void __stdcall FUN_10155360(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
                  undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
@@ -1101,13 +828,13 @@ void FUN_100ab330(void)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_allocRep("none");
+  ((SCStr *)((SCStr *)&local_14))->int_allocRep("none");
   *(unsigned char *)((char *)&local_8 + 0) = 1;
-  ((Stub_SCStr *)((SCStr *)&DAT_121a07b0))->int_release();
+  ((SCStr *)((SCStr *)&DAT_121a07b0))->int_release();
   DAT_121a07b0 = (int)(local_14);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a07b0))->int_addref();
+  ((SCStr *)((SCStr *)&DAT_121a07b0))->int_addref();
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   DAT_121a07b4 = (int)(0);
   _atexit(FUN_117e9640);
   ExceptionList = (void *)(local_10);
@@ -1138,12 +865,12 @@ void FUN_100ad880(void)
     piVar2 = (int *)((int *)0x0);
   }
   else {
-    *piVar2 = (int)((int)(uint)&Ext_SCIObjImpl_vftable);
+    *piVar2 = (int)((int)(uint)&ghidra_vftable_SCIObjImpl);
     piVar2[1] = 0;
     g_lSCObjCount = (int)(g_lSCObjCount + 1);
-    piVar2[2] = (int)(uint)&Ext_SCLoggingHelper_vftable;
-    *piVar2 = (int)((int)(uint)&Ext_SCNewWizManager_vftable);
-    piVar2[2] = (int)(uint)&Ext_SCNewWizManager_vftable;
+    piVar2[2] = (int)(uint)&ghidra_vftable_SCLoggingHelper;
+    *piVar2 = (int)((int)(uint)&ghidra_vftable_SCNewWizManager);
+    piVar2[2] = (int)(uint)&ghidra_vftable_SCNewWizManager;
     piVar2[3] = 0;
     piVar2[4] = 0;
     piVar2[5] = 0;
@@ -1278,12 +1005,12 @@ void FUN_100bb6f0(void)
   puVar1 = (undefined4 *)(operator_new(0x70));
   local_8 = (undefined4)(0);
   if (puVar1 != (undefined4 *)0x0) {
-    ((Stub_SCStr *)(local_14))->int_allocRep("root");
+    ((SCStr *)(local_14))->int_allocRep("root");
     *(unsigned char *)((char *)&local_8 + 0) = 1;
     thunk_FUN_103d0280(local_14);
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
-    ((Stub_SCStr *)(local_14))->int_release();
-    *puVar1 = (undefined4)((uint)&Ext_SCTestPointManager_vftable);
+    ((SCStr *)(local_14))->int_release();
+    *puVar1 = (undefined4)((uint)&ghidra_vftable_SCTestPointManager);
     DAT_121a2764 = (int)(puVar1);
     ExceptionList = (void *)(local_10);
     return;
@@ -1340,11 +1067,11 @@ void FUN_100d4c80(void)
   puStack_c = (undefined1 *)(LAB_117065cf);
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6008))->int_allocRep("x-sonos-scuri://musiclibrary");
+  ((SCStr *)((SCStr *)&DAT_121a6008))->int_allocRep("x-sonos-scuri://musiclibrary");
   local_8 = (undefined4)(0);
   _DAT_121a600c = (int)(0x2a1);
   _DAT_121a6010 = (int)(1);
-  ((Stub_SCStr *)((SCStr *)&DAT_121a6014))->int_allocRep("");
+  ((SCStr *)((SCStr *)&DAT_121a6014))->int_allocRep("");
   _atexit(FUN_1183f2c0);
   ExceptionList = (void *)(local_10);
   return;
@@ -1415,7 +1142,7 @@ int * __thiscall Recovered_Bulk::FUN_101167f0(undefined4 *param_2)
   *param_1 = (int)(0);
   if (param_2 != (undefined4 *)0x0) {
     local_14 = (int *)(param_1);
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_allocRep("SCIZoneGroupMgr");
+    ((SCStr *)((SCStr *)&param_2))->int_allocRep("SCIZoneGroupMgr");
     local_8 = (undefined4)(0);
     piVar4 = (int *)((int *)(**(code **)*puVar2)(&local_14,&param_2,uVar3));
     iVar1 = (int)(*piVar4);
@@ -1432,7 +1159,7 @@ int * __thiscall Recovered_Bulk::FUN_101167f0(undefined4 *param_2)
       (**(code **)(*local_14 + 8))();
     }
     local_8 = (undefined4)(3);
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+    ((SCStr *)((SCStr *)&param_2))->int_release();
   }
   ExceptionList = (void *)(local_10);
   return (int *)(param_1);
@@ -1463,7 +1190,7 @@ int * __thiscall Recovered_Bulk::FUN_101168d0(undefined4 *param_2)
   *param_1 = (int)(0);
   if (param_2 != (undefined4 *)0x0) {
     local_14 = (int *)(param_1);
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_allocRep("SCISystem");
+    ((SCStr *)((SCStr *)&param_2))->int_allocRep("SCISystem");
     local_8 = (undefined4)(0);
     piVar4 = (int *)((int *)(**(code **)*puVar2)(&local_14,&param_2,uVar3));
     iVar1 = (int)(*piVar4);
@@ -1480,7 +1207,7 @@ int * __thiscall Recovered_Bulk::FUN_101168d0(undefined4 *param_2)
       (**(code **)(*local_14 + 8))();
     }
     local_8 = (undefined4)(3);
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+    ((SCStr *)((SCStr *)&param_2))->int_release();
   }
   ExceptionList = (void *)(local_10);
   return (int *)(param_1);
@@ -1511,7 +1238,7 @@ int * __thiscall Recovered_Bulk::FUN_101169f0(undefined4 *param_2)
   *param_1 = (int)(0);
   if (param_2 != (undefined4 *)0x0) {
     local_14 = (int *)(param_1);
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_allocRep("SCINowPlaying");
+    ((SCStr *)((SCStr *)&param_2))->int_allocRep("SCINowPlaying");
     local_8 = (undefined4)(0);
     piVar4 = (int *)((int *)(**(code **)*puVar2)(&local_14,&param_2,uVar3));
     iVar1 = (int)(*piVar4);
@@ -1528,7 +1255,7 @@ int * __thiscall Recovered_Bulk::FUN_101169f0(undefined4 *param_2)
       (**(code **)(*local_14 + 8))();
     }
     local_8 = (undefined4)(3);
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+    ((SCStr *)((SCStr *)&param_2))->int_release();
   }
   ExceptionList = (void *)(local_10);
   return (int *)(param_1);
@@ -1554,7 +1281,7 @@ void __thiscall Recovered_Bulk::FUN_10117000(int *param_2,SCStr *param_3,uint pa
     return;
   }
   piVar2 = (int *)(*(int **)(*(int *)(param_1 + 0xc) + param_4 * 8));
-  bVar4 = (bool)(((Stub_SCStr *)(param_3))->op_eq((SCStr *)(piVar1 + 2)));
+  bVar4 = (bool)(((SCStr *)(param_3))->op_eq((SCStr *)(piVar1 + 2)));
   while( true ) {
     if (bVar4) {
       iVar3 = (int)(*piVar1);
@@ -1564,7 +1291,7 @@ void __thiscall Recovered_Bulk::FUN_10117000(int *param_2,SCStr *param_3,uint pa
     }
     if (piVar1 == (int *)(piVar2)) break;
     piVar1 = (int *)((int *)piVar1[1]);
-    bVar4 = (bool)(((Stub_SCStr *)(param_3))->op_eq((SCStr *)(piVar1 + 2)));
+    bVar4 = (bool)(((SCStr *)(param_3))->op_eq((SCStr *)(piVar1 + 2)));
   }
   *param_2 = (int)((int)piVar1);
   param_2[1] = 0;
@@ -1594,7 +1321,7 @@ void FUN_101170a0(undefined4 param_1,undefined4 *param_2)
   while (puVar2 != (undefined4 *)0x0) {
     puVar1 = (undefined4 *)((undefined4 *)*puVar2);
     local_8 = (undefined4)(0);
-    ((Stub_SCStr *)((SCStr *)(puVar2 + 2)))->int_release();
+    ((SCStr *)((SCStr *)(puVar2 + 2)))->int_release();
     puVar2[2] = 0;
     local_8 = (undefined4)(0xffffffff);
     thunk_FUN_1148a50e(puVar2,0xc,uVar3);
@@ -1621,7 +1348,7 @@ void FUN_10117170(undefined4 param_1,int param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)(param_2 + 8)))->int_release();
+  ((SCStr *)((SCStr *)(param_2 + 8)))->int_release();
   *(undefined4 *)(param_2 + 8) = 0;
   thunk_FUN_1148a50e(param_2,0xc,uVar1);
   ExceptionList = (void *)(local_10);
@@ -1757,7 +1484,7 @@ void __thiscall Recovered_Bulk::FUN_10118fc0(undefined4 param_2)
   local_8 = (undefined4)(0);
   uVar4 = (undefined4)(thunk_FUN_10116b10(local_44,local_2c,param_2,uVar3));
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
-  *param_1 = (undefined4)((uint)&Ext_Swig_DirectorException_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_Swig_DirectorException);
   thunk_FUN_10118c40(uVar4);
   if (0xf < local_30) {
     uVar6 = (uint)(local_30 + 1);
@@ -1786,148 +1513,10 @@ LAB_101190d0:
     }
     thunk_FUN_1148a50e(pcVar5,uVar3);
   }
-  *param_1 = (undefined4)((uint)&Ext_Swig_DirectorPureVirtualException_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_Swig_DirectorPureVirtualException);
   ExceptionList = (void *)(local_10);
   thunk_FUN_1148ac28();
   return;
-}
-
-
-// Reference entry 10119e10; body size 934 bytes.
-#line 1 "ENTRY_10119e10"
-
-SCStr * __thiscall Recovered_Bulk::FUN_10119e10(SCStr *param_2)
-{
-  SCStr *param_1 = (SCStr *)this;
-  int *piVar1;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114da34b);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  ((Stub_SCStr *)(param_1))->SCStr(param_2);
-  local_8 = (undefined4)(0);
-  ((Stub_SCStr *)(param_1 + 4))->SCStr(param_2 + 4);
-  param_1[8] = param_2[8];
-  *(unsigned char *)((char *)&local_8 + 0) = 1;
-  ((Stub_SCStr *)(param_1 + 0xc))->SCStr(param_2 + 0xc);
-  *(unsigned char *)((char *)&local_8 + 0) = 2;
-  ((Stub_SCStr *)(param_1 + 0x10))->SCStr(param_2 + 0x10);
-  *(unsigned char *)((char *)&local_8 + 0) = 3;
-  ((Stub_SCStr *)(param_1 + 0x14))->SCStr(param_2 + 0x14);
-  *(unsigned char *)((char *)&local_8 + 0) = 4;
-  ((Stub_SCStr *)(param_1 + 0x18))->SCStr(param_2 + 0x18);
-  *(unsigned char *)((char *)&local_8 + 0) = 5;
-  ((Stub_SCStr *)(param_1 + 0x1c))->SCStr(param_2 + 0x1c);
-  *(unsigned char *)((char *)&local_8 + 0) = 6;
-  ((Stub_SCStr *)(param_1 + 0x20))->SCStr(param_2 + 0x20);
-  *(unsigned char *)((char *)&local_8 + 0) = 7;
-  ((Stub_SCStr *)(param_1 + 0x24))->SCStr(param_2 + 0x24);
-  *(undefined4 *)(param_1 + 0x28) = *(undefined4 *)(param_2 + 0x28);
-  piVar1 = (int *)(*(int **)(param_2 + 0x2c));
-  *(unsigned char *)((char *)&local_8 + 0) = 8;
-  *(int **)(param_1 + 0x2c) = piVar1;
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 4))();
-  }
-  *(unsigned char *)((char *)&local_8 + 0) = 9;
-  ((Stub_SCStr *)(param_1 + 0x30))->SCStr(param_2 + 0x30);
-  *(unsigned char *)((char *)&local_8 + 0) = 10;
-  ((Stub_SCStr *)(param_1 + 0x34))->SCStr(param_2 + 0x34);
-  *(unsigned char *)((char *)&local_8 + 0) = 0xb;
-  ((Stub_SCStr *)(param_1 + 0x38))->SCStr(param_2 + 0x38);
-  *(unsigned char *)((char *)&local_8 + 0) = 0xc;
-  ((Stub_SCStr *)(param_1 + 0x3c))->SCStr(param_2 + 0x3c);
-  *(unsigned char *)((char *)&local_8 + 0) = 0xd;
-  ((Stub_SCStr *)(param_1 + 0x40))->SCStr(param_2 + 0x40);
-  *(unsigned char *)((char *)&local_8 + 0) = 0xe;
-  ((Stub_SCStr *)(param_1 + 0x44))->SCStr(param_2 + 0x44);
-  *(undefined4 *)(param_1 + 0x48) = *(undefined4 *)(param_2 + 0x48);
-  *(unsigned char *)((char *)&local_8 + 0) = 0xf;
-  ((Stub_SCStr *)(param_1 + 0x4c))->SCStr(param_2 + 0x4c);
-  param_1[0x50] = param_2[0x50];
-  param_1[0x51] = param_2[0x51];
-  param_1[0x52] = param_2[0x52];
-  param_1[0x53] = param_2[0x53];
-  *(undefined4 *)(param_1 + 0x54) = *(undefined4 *)(param_2 + 0x54);
-  *(undefined4 *)(param_1 + 0x58) = *(undefined4 *)(param_2 + 0x58);
-  *(undefined4 *)(param_1 + 0x5c) = *(undefined4 *)(param_2 + 0x5c);
-  *(undefined4 *)(param_1 + 0x60) = *(undefined4 *)(param_2 + 0x60);
-  *(undefined4 *)(param_1 + 100) = *(undefined4 *)(param_2 + 100);
-  *(undefined4 *)(param_1 + 0x68) = *(undefined4 *)(param_2 + 0x68);
-  *(undefined4 *)(param_1 + 0x6c) = *(undefined4 *)(param_2 + 0x6c);
-  *(undefined4 *)(param_1 + 0x70) = *(undefined4 *)(param_2 + 0x70);
-  *(undefined4 *)(param_1 + 0x74) = *(undefined4 *)(param_2 + 0x74);
-  *(undefined4 *)(param_1 + 0x78) = *(undefined4 *)(param_2 + 0x78);
-  *(undefined4 *)(param_1 + 0x7c) = *(undefined4 *)(param_2 + 0x7c);
-  *(undefined4 *)(param_1 + 0x80) = *(undefined4 *)(param_2 + 0x80);
-  *(unsigned char *)((char *)&local_8 + 0) = 0x10;
-  *(undefined4 *)(param_1 + 0x84) = *(undefined4 *)(param_2 + 0x84);
-  *(undefined4 *)(param_1 + 0x88) = *(undefined4 *)(param_2 + 0x88);
-  *(undefined4 *)(param_1 + 0x8c) = *(undefined4 *)(param_2 + 0x8c);
-  *(undefined4 *)(param_1 + 0x90) = *(undefined4 *)(param_2 + 0x90);
-  *(undefined4 *)(param_1 + 0x94) = *(undefined4 *)(param_2 + 0x94);
-  *(undefined4 *)(param_1 + 0x98) = *(undefined4 *)(param_2 + 0x98);
-  piVar1 = (int *)(*(int **)(param_2 + 0x9c));
-  *(int **)(param_1 + 0x9c) = piVar1;
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 4))();
-  }
-  *(undefined4 *)(param_1 + 0xa0) = *(undefined4 *)(param_2 + 0xa0);
-  piVar1 = (int *)(*(int **)(param_2 + 0xa4));
-  *(unsigned char *)((char *)&local_8 + 0) = 0x11;
-  *(int **)(param_1 + 0xa4) = piVar1;
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 4))();
-  }
-  *(undefined4 *)(param_1 + 0xa8) = *(undefined4 *)(param_2 + 0xa8);
-  *(undefined4 *)(param_1 + 0xac) = *(undefined4 *)(param_2 + 0xac);
-  *(undefined4 *)(param_1 + 0xb0) = *(undefined4 *)(param_2 + 0xb0);
-  *(undefined4 *)(param_1 + 0xb4) = *(undefined4 *)(param_2 + 0xb4);
-  *(undefined4 *)(param_1 + 0xb8) = *(undefined4 *)(param_2 + 0xb8);
-  *(undefined4 *)(param_1 + 0xbc) = *(undefined4 *)(param_2 + 0xbc);
-  *(undefined4 *)(param_1 + 0xc0) = *(undefined4 *)(param_2 + 0xc0);
-  *(undefined4 *)(param_1 + 0xc4) = *(undefined4 *)(param_2 + 0xc4);
-  *(undefined4 *)(param_1 + 200) = *(undefined4 *)(param_2 + 200);
-  *(undefined4 *)(param_1 + 0xcc) = *(undefined4 *)(param_2 + 0xcc);
-  *(undefined4 *)(param_1 + 0xd0) = *(undefined4 *)(param_2 + 0xd0);
-  *(undefined4 *)(param_1 + 0xd4) = *(undefined4 *)(param_2 + 0xd4);
-  *(unsigned char *)((char *)&local_8 + 0) = 0x12;
-  ((Stub_SCStr *)(param_1 + 0xd8))->SCStr(param_2 + 0xd8);
-  *(unsigned char *)((char *)&local_8 + 0) = 0x13;
-  ((Stub_SCStr *)(param_1 + 0xdc))->SCStr(param_2 + 0xdc);
-  *(undefined4 *)(param_1 + 0xe0) = *(undefined4 *)(param_2 + 0xe0);
-  *(undefined4 *)(param_1 + 0xe4) = *(undefined4 *)(param_2 + 0xe4);
-  *(undefined4 *)(param_1 + 0xe8) = *(undefined4 *)(param_2 + 0xe8);
-  param_1[0xec] = param_2[0xec];
-  param_1[0xed] = param_2[0xed];
-  param_1[0xee] = param_2[0xee];
-  *(undefined4 *)(param_1 + 0xf0) = *(undefined4 *)(param_2 + 0xf0);
-  piVar1 = (int *)(*(int **)(param_2 + 0xf4));
-  *(unsigned char *)((char *)&local_8 + 0) = 0x14;
-  *(int **)(param_1 + 0xf4) = piVar1;
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 4))();
-  }
-  *(undefined4 *)(param_1 + 0xf8) = *(undefined4 *)(param_2 + 0xf8);
-  piVar1 = (int *)(*(int **)(param_2 + 0xfc));
-  *(unsigned char *)((char *)&local_8 + 0) = 0x15;
-  *(int **)(param_1 + 0xfc) = piVar1;
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 4))();
-  }
-  *(undefined4 *)(param_1 + 0x100) = *(undefined4 *)(param_2 + 0x100);
-  piVar1 = (int *)(*(int **)(param_2 + 0x104));
-  local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x16)));
-  *(int **)(param_1 + 0x104) = piVar1;
-  if (piVar1 != (int *)0x0) {
-    (**(code **)(*piVar1 + 4))();
-  }
-  ExceptionList = (void *)(local_10);
-  return (SCStr *)(param_1);
 }
 
 
@@ -2169,7 +1758,7 @@ void __fastcall FUN_1011f870(undefined4 *param_1)
   int iVar3;
   uint uVar4;
   
-  *param_1 = (undefined4)((uint)&Ext_Swig_DirectorException_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_Swig_DirectorException);
   uVar1 = (uint)(param_1[6]);
   if (0xf < uVar1) {
     iVar2 = (int)(param_1[1]);
@@ -2206,10 +1795,10 @@ void __fastcall FUN_1011ff40(int param_1)
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)(param_1 + 8)))->int_release();
+  ((SCStr *)((SCStr *)(param_1 + 8)))->int_release();
   *(undefined4 *)(param_1 + 8) = 0;
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)(param_1 + 4)))->int_release();
+  ((SCStr *)((SCStr *)(param_1 + 4)))->int_release();
   *(undefined4 *)(param_1 + 4) = 0;
   ExceptionList = (void *)(local_10);
   return;
@@ -2232,7 +1821,7 @@ void __fastcall FUN_10120220(undefined4 *param_1)
   local_10 = (void *)(ExceptionList);
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  *param_1 = (undefined4)((uint)&Ext_SCUrl_vftable);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCUrl);
   piVar1 = (int *)((int *)param_1[8]);
   local_8 = (undefined4)(0);
   if (piVar1 != (int *)0x0) {
@@ -2241,22 +1830,22 @@ void __fastcall FUN_10120220(undefined4 *param_1)
     (**(code **)(*piVar1 + 8))(uVar2);
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)(param_1 + 6)))->int_release();
+  ((SCStr *)((SCStr *)(param_1 + 6)))->int_release();
   param_1[6] = 0;
   local_8 = (undefined4)(2);
-  ((Stub_SCStr *)((SCStr *)(param_1 + 5)))->int_release();
+  ((SCStr *)((SCStr *)(param_1 + 5)))->int_release();
   param_1[5] = 0;
   local_8 = (undefined4)(3);
-  ((Stub_SCStr *)((SCStr *)(param_1 + 4)))->int_release();
+  ((SCStr *)((SCStr *)(param_1 + 4)))->int_release();
   param_1[4] = 0;
   local_8 = (undefined4)(4);
-  ((Stub_SCStr *)((SCStr *)(param_1 + 3)))->int_release();
+  ((SCStr *)((SCStr *)(param_1 + 3)))->int_release();
   param_1[3] = 0;
   local_8 = (undefined4)(5);
-  ((Stub_SCStr *)((SCStr *)(param_1 + 2)))->int_release();
+  ((SCStr *)((SCStr *)(param_1 + 2)))->int_release();
   param_1[2] = 0;
   local_8 = (undefined4)(6);
-  ((Stub_SCStr *)((SCStr *)(param_1 + 1)))->int_release();
+  ((SCStr *)((SCStr *)(param_1 + 1)))->int_release();
   param_1[1] = 0;
   ExceptionList = (void *)(local_10);
   return;
@@ -2395,10 +1984,10 @@ int __thiscall Recovered_Bulk::FUN_101263e0(byte param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)(param_1 + 8)))->int_release();
+  ((SCStr *)((SCStr *)(param_1 + 8)))->int_release();
   *(undefined4 *)(param_1 + 8) = 0;
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)(param_1 + 4)))->int_release();
+  ((SCStr *)((SCStr *)(param_1 + 4)))->int_release();
   *(undefined4 *)(param_1 + 4) = 0;
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc,uVar1);
@@ -2490,7 +2079,7 @@ void __thiscall Recovered_Bulk::FUN_10129550(undefined4 *param_2,undefined4 para
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibLogCallback_LogDebugMessage");
+  thunk_FUN_10118fc0("SCLibLogCallback::LogDebugMessage");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -2597,7 +2186,7 @@ void __thiscall Recovered_Bulk::FUN_1012a4d0(undefined4 param_2,undefined4 param
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIOpCBSwigBase_operationComplete");
+  thunk_FUN_10118fc0("SCIOpCBSwigBase::_operationComplete");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -2624,7 +2213,7 @@ void __thiscall Recovered_Bulk::FUN_1012a540(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFilterSwigBase_acceptsAction");
+  thunk_FUN_10118fc0("SCIActionFilterSwigBase::acceptsAction");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -2651,7 +2240,7 @@ void __thiscall Recovered_Bulk::FUN_1012a5c0(int *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIUrbanAirshipDelegateSwigBase_addAndRemoveClientTags");
+  thunk_FUN_10118fc0("SCIUrbanAirshipDelegateSwigBase::addAndRemoveClientTags");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -2678,7 +2267,7 @@ void __thiscall Recovered_Bulk::FUN_1012a650(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIUrbanAirshipDelegateSwigBase_addClientTags");
+  thunk_FUN_10118fc0("SCIUrbanAirshipDelegateSwigBase::addClientTags");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -2728,7 +2317,7 @@ void __thiscall Recovered_Bulk::FUN_1012b750(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIInAppMessagingProviderSwigBase_addTagToGroup");
+  thunk_FUN_10118fc0("SCIInAppMessagingProviderSwigBase::addTagToGroup");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -2886,7 +2475,7 @@ void __thiscall Recovered_Bulk::FUN_1012cfb0(undefined4 *param_2,undefined4 para
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibAssertionFailureCallback_assertionFailed");
+  thunk_FUN_10118fc0("SCLibAssertionFailureCallback::assertionFailed");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -2981,7 +2570,7 @@ void __thiscall Recovered_Bulk::FUN_1012d250(int *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionDelegateSwigBase_asyncActionHasCompleted");
+  thunk_FUN_10118fc0("SCIActionDelegateSwigBase::asyncActionHasCompleted");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3002,7 +2591,7 @@ void __fastcall FUN_1012d310(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibCallUIThreadCallback_callSCLibOnUIThread");
+  thunk_FUN_10118fc0("SCLibCallUIThreadCallback::callSCLibOnUIThread");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3023,7 +2612,7 @@ void __fastcall FUN_1012d370(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_canActOn");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::canActOn");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3044,7 +2633,7 @@ void __fastcall FUN_1012d3d0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCICustomSubWizardSwigBase_canClientCancelWizard");
+  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::canClientCancelWizard");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3065,7 +2654,7 @@ void __fastcall FUN_1012d430(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCICustomSubWizardSwigBase_canClientTransitionToNextState");
+  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::canClientTransitionToNextState");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3086,7 +2675,7 @@ void __fastcall FUN_1012d490(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCICustomSubWizardSwigBase_canClientTransitionToPreviousState");
+  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::canClientTransitionToPreviousState");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3107,7 +2696,7 @@ void __fastcall FUN_1012d4f0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWifiDelegateSwigBase_canConfigureAccessories");
+  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::canConfigureAccessories");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3128,7 +2717,7 @@ void __thiscall Recovered_Bulk::FUN_1012d550(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIVoiceServiceDelegateSwigBase_canDeviceSetupVoice");
+  thunk_FUN_10118fc0("SCIVoiceServiceDelegateSwigBase::canDeviceSetupVoice");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3149,7 +2738,7 @@ void __thiscall Recovered_Bulk::FUN_1012d5c0(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIAbilityDelegateSwigBase_canEnablePrereq");
+  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::canEnablePrereq");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3170,7 +2759,7 @@ void __fastcall FUN_1012d630(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibSonarCallback_canHardwareGainBeSet");
+  thunk_FUN_10118fc0("SCLibSonarCallback::canHardwareGainBeSet");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3191,7 +2780,7 @@ void __fastcall FUN_1012d690(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWifiDelegateSwigBase_canJoinSSIDs");
+  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::canJoinSSIDs");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3212,7 +2801,7 @@ void __fastcall FUN_1012d6f0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIInAppPurchaseManagerProviderSwigBase_canMakePurchases");
+  thunk_FUN_10118fc0("SCIInAppPurchaseManagerProviderSwigBase::canMakePurchases");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3233,7 +2822,7 @@ void __fastcall FUN_1012d750(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIVpnDelegate_canOpenVPNSettings");
+  thunk_FUN_10118fc0("SCIVpnDelegate::canOpenVPNSettings");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3254,7 +2843,7 @@ void __fastcall FUN_1012d7b0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIVpnDelegateSwigBase_canOpenVPNSettings");
+  thunk_FUN_10118fc0("SCIVpnDelegateSwigBase::canOpenVPNSettings");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3275,7 +2864,7 @@ void __fastcall FUN_1012d810(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_canPush");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::canPush");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3296,7 +2885,7 @@ void __thiscall Recovered_Bulk::FUN_1012d870(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIAbilityDelegateSwigBase_canRequestPrereq");
+  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::canRequestPrereq");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3317,7 +2906,7 @@ void __fastcall FUN_1012d8e0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWifiDelegateSwigBase_canStartScan");
+  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::canStartScan");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3338,7 +2927,7 @@ void __thiscall Recovered_Bulk::FUN_1012d940(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIAbilityDelegateSwigBase_canSuggestPrereq");
+  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::canSuggestPrereq");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3365,7 +2954,7 @@ void __thiscall Recovered_Bulk::FUN_1012d9b0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIUrlSessionProviderSwigBase_cancelURLConnection");
+  thunk_FUN_10118fc0("SCIUrlSessionProviderSwigBase::cancelURLConnection");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3386,7 +2975,7 @@ void __fastcall FUN_1012da30(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibSonarCallback_cleanupRecording");
+  thunk_FUN_10118fc0("SCLibSonarCallback::cleanupRecording");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3407,7 +2996,7 @@ void __fastcall FUN_1012db20(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIUrlSessionProviderSwigBase_clearCache");
+  thunk_FUN_10118fc0("SCIUrlSessionProviderSwigBase::clearCache");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3428,7 +3017,7 @@ void __fastcall FUN_1012db80(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBleDelegateSwigBase_clearPacketQueue");
+  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::clearPacketQueue");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3449,7 +3038,7 @@ void __fastcall FUN_1012dbe0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibTruncatedStringsCallback_clearTruncatedStrings");
+  thunk_FUN_10118fc0("SCLibTruncatedStringsCallback::clearTruncatedStrings");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3476,7 +3065,7 @@ void __thiscall Recovered_Bulk::FUN_1012dc40(int *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWebsocketDelegateSwigBase_connect");
+  thunk_FUN_10118fc0("SCIWebsocketDelegateSwigBase::connect");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3497,7 +3086,7 @@ void __fastcall FUN_1012dcd0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBTClassicConnectionCallbackSwigBase_connectedToDevice");
+  thunk_FUN_10118fc0("SCIBTClassicConnectionCallbackSwigBase::connectedToDevice");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3545,7 +3134,7 @@ void __thiscall Recovered_Bulk::FUN_1012ddd0(undefined4 *param_2,int *param_3,un
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createBrowsePickerAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createBrowsePickerAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3592,7 +3181,7 @@ void __thiscall Recovered_Bulk::FUN_1012df20(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibCustomSubWizardCallback_createCustomSubWizard");
+  thunk_FUN_10118fc0("SCLibCustomSubWizardCallback::createCustomSubWizard");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3648,7 +3237,7 @@ void __thiscall Recovered_Bulk::FUN_1012e040(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createCustomUIAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createCustomUIAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3689,7 +3278,7 @@ void __thiscall Recovered_Bulk::FUN_1012e1d0(undefined4 *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createDisplayBrowseStackAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayBrowseStackAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3724,7 +3313,7 @@ void __thiscall Recovered_Bulk::FUN_1012e2b0(undefined4 *param_2,undefined4 para
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createDisplayCustomControlAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayCustomControlAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3784,7 +3373,7 @@ void __thiscall Recovered_Bulk::FUN_1012e380(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createDisplayDatePickerAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayDatePickerAction");
                     
   _CxxThrowException(local_24,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3886,7 +3475,7 @@ void __thiscall Recovered_Bulk::FUN_1012e380(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createDisplayDualTextInputAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayDualTextInputAction");
                     
   _CxxThrowException(local_24,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3933,7 +3522,7 @@ void __thiscall Recovered_Bulk::FUN_1012e850(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createDisplayHelpSheetAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayHelpSheetAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -3989,7 +3578,7 @@ void __thiscall Recovered_Bulk::FUN_1012e970(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createDisplayInfoViewAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayInfoViewAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -4055,7 +3644,7 @@ void __thiscall Recovered_Bulk::FUN_1012eb00(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createDisplayIntegerInputAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayIntegerInputAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -4137,7 +3726,7 @@ void __thiscall Recovered_Bulk::FUN_1012eb00(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createDisplayMenuAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayMenuAction");
                     
   _CxxThrowException(local_24,(ThrowInfo *)&DAT_11d33164);
 }
@@ -4221,7 +3810,7 @@ void __thiscall Recovered_Bulk::FUN_1012eb00(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createDisplayMenuAndTextInputAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayMenuAndTextInputAction");
                     
   _CxxThrowException(local_24,(ThrowInfo *)&DAT_11d33164);
 }
@@ -4283,7 +3872,7 @@ void __thiscall Recovered_Bulk::FUN_1012f1f0(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createDisplayMenuPopupAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayMenuPopupAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -4330,7 +3919,7 @@ void __thiscall Recovered_Bulk::FUN_1012f3b0(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createDisplayMessagePopupAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayMessagePopupAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -4400,7 +3989,7 @@ void __thiscall Recovered_Bulk::FUN_1012f4e0(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createDisplayTextInputAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayTextInputAction");
                     
   _CxxThrowException(local_24,(ThrowInfo *)&DAT_11d33164);
 }
@@ -4460,7 +4049,7 @@ void __thiscall Recovered_Bulk::FUN_1012f6e0(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createDisplayTextPaneAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayTextPaneAction");
                     
   _CxxThrowException(local_24,(ThrowInfo *)&DAT_11d33164);
 }
@@ -4520,7 +4109,7 @@ void __thiscall Recovered_Bulk::FUN_1012f890(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createDisplayTimePickerAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayTimePickerAction");
                     
   _CxxThrowException(local_24,(ThrowInfo *)&DAT_11d33164);
 }
@@ -4561,7 +4150,7 @@ void __thiscall Recovered_Bulk::FUN_1012fa40(undefined4 *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createDisplayWizardAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createDisplayWizardAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -4617,7 +4206,7 @@ void __thiscall Recovered_Bulk::FUN_1012fb20(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createInlineControllerUpdateAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createInlineControllerUpdateAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -4664,7 +4253,7 @@ void __thiscall Recovered_Bulk::FUN_1012fcb0(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createModalSettingsMenuAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createModalSettingsMenuAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -4705,7 +4294,7 @@ void __thiscall Recovered_Bulk::FUN_1012fdd0(undefined4 *param_2,undefined4 para
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createNavigationAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createNavigationAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -4761,7 +4350,7 @@ void __thiscall Recovered_Bulk::FUN_1012fec0(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createOpenURIAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createOpenURIAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -4796,7 +4385,7 @@ void __thiscall Recovered_Bulk::FUN_10130050(undefined4 *param_2,undefined4 para
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createPopBrowseAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createPopBrowseAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -4831,7 +4420,7 @@ void __thiscall Recovered_Bulk::FUN_10130120(undefined4 *param_2,undefined4 para
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createPresentAlarmInterfaceAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createPresentAlarmInterfaceAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -4888,7 +4477,7 @@ void __thiscall Recovered_Bulk::FUN_101301f0(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createPushSCUriAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createPushSCUriAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -4929,7 +4518,7 @@ void __thiscall Recovered_Bulk::FUN_10130380(undefined4 *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createRunAsyncIOOperationAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createRunAsyncIOOperationAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -4974,12 +4563,12 @@ void __thiscall Recovered_Bulk::FUN_10130460(undefined4 *param_2,int *param_3,un
     }
     thunk_FUN_101a2000();
     local_8 = (undefined4)(3);
-    ((Stub_SCStr *)((SCStr *)&param_4))->int_release();
+    ((SCStr *)((SCStr *)&param_4))->int_release();
     ExceptionList = (void *)(local_10);
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createRunAsyncIOOperationActionWithMessage");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createRunAsyncIOOperationActionWithMessage");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5027,7 +4616,7 @@ void __thiscall Recovered_Bulk::FUN_101305b0(undefined4 *param_2,undefined1 para
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createScheduleAlarmMonitorAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createScheduleAlarmMonitorAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5068,7 +4657,7 @@ void __thiscall Recovered_Bulk::FUN_101306e0(undefined4 *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionFactorySwigBase_createSummonNewWizAction");
+  thunk_FUN_10118fc0("SCIActionFactorySwigBase::createSummonNewWizAction");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5089,7 +4678,7 @@ void __fastcall FUN_10130900(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWebsocketDelegateSwigBase_destroy");
+  thunk_FUN_10118fc0("SCIWebsocketDelegateSwigBase::destroy");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5110,7 +4699,7 @@ void __fastcall FUN_10131230(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBTClassicConnectionCallbackSwigBase_deviceInfoChanged");
+  thunk_FUN_10118fc0("SCIBTClassicConnectionCallbackSwigBase::deviceInfoChanged");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5131,7 +4720,7 @@ void __fastcall FUN_10131290(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWebsocketDelegateSwigBase_disconnect");
+  thunk_FUN_10118fc0("SCIWebsocketDelegateSwigBase::disconnect");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5152,7 +4741,7 @@ void __fastcall FUN_101312f0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBTClassicConnectionCallbackSwigBase_disconnectedFromDevice");
+  thunk_FUN_10118fc0("SCIBTClassicConnectionCallbackSwigBase::disconnectedFromDevice");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5194,7 +4783,7 @@ void __thiscall Recovered_Bulk::FUN_10131350(int *param_2,undefined4 *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIEventSinkSwigBase_dispatchEvent");
+  thunk_FUN_10118fc0("SCIEventSinkSwigBase::dispatchEvent");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5221,7 +4810,7 @@ void __thiscall Recovered_Bulk::FUN_10131440(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIPlatformDateTimeProvider_doesPlatformTimeZoneMatch");
+  thunk_FUN_10118fc0("SCIPlatformDateTimeProvider::doesPlatformTimeZoneMatch");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5242,7 +4831,7 @@ void __thiscall Recovered_Bulk::FUN_10131500(undefined1 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCICrashReportProviderSwigBase_enableLogging");
+  thunk_FUN_10118fc0("SCICrashReportProviderSwigBase::enableLogging");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5263,7 +4852,7 @@ void __thiscall Recovered_Bulk::FUN_10131560(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIAbilityDelegateSwigBase_enablePrereq");
+  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::enablePrereq");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5284,7 +4873,7 @@ void __fastcall FUN_101315d0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIUrlSessionProviderSwigBase_endURLSession");
+  thunk_FUN_10118fc0("SCIUrlSessionProviderSwigBase::endURLSession");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5311,7 +4900,7 @@ void __thiscall Recovered_Bulk::FUN_10131630(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCICustomSubWizardSwigBase_enter");
+  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::enter");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5332,7 +4921,7 @@ void __fastcall FUN_101316b0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCICustomSubWizardSwigBase_exit");
+  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::exit");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5359,7 +4948,7 @@ void __thiscall Recovered_Bulk::FUN_10131710(int *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIInAppPurchaseManagerProviderSwigBase_fetchProducts");
+  thunk_FUN_10118fc0("SCIInAppPurchaseManagerProviderSwigBase::fetchProducts");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5398,12 +4987,12 @@ void __thiscall Recovered_Bulk::FUN_101317a0(int *param_2,undefined1 *param_3)
     (**(code **)(param_1 + 0x10))(param_2,uVar1);
     thunk_FUN_101a2000();
     local_8 = (undefined4)(2);
-    ((Stub_SCStr *)((SCStr *)&param_3))->int_release();
+    ((SCStr *)((SCStr *)&param_3))->int_release();
     ExceptionList = (void *)(local_10);
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIMusicServerDelegateSwigBase_fillImageBytes");
+  thunk_FUN_10118fc0("SCIMusicServerDelegateSwigBase::fillImageBytes");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5442,7 +5031,7 @@ void __thiscall Recovered_Bulk::FUN_10131970(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_getActions");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getActions");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5463,7 +5052,7 @@ void __thiscall Recovered_Bulk::FUN_10132090(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_getAlbumArtType");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getAlbumArtType");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5484,7 +5073,7 @@ void __fastcall FUN_101320f0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_getAlbumArtType");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getAlbumArtType");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5505,7 +5094,7 @@ void __fastcall FUN_101323d0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCILocalMediaCollectionSwigBase_getAllNodeType");
+  thunk_FUN_10118fc0("SCILocalMediaCollectionSwigBase::getAllNodeType");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5546,7 +5135,7 @@ void __thiscall Recovered_Bulk::FUN_10132430(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIServiceAppInteropSwigBase_getAppInstallState");
+  thunk_FUN_10118fc0("SCIServiceAppInteropSwigBase::getAppInstallState");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5567,7 +5156,7 @@ void __fastcall FUN_10132510(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCILoggingProviderSwigBase_getAppLevel");
+  thunk_FUN_10118fc0("SCILoggingProviderSwigBase::getAppLevel");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5588,7 +5177,7 @@ void __fastcall FUN_10132640(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCILocalMusicBrowseItemInfoSwigBase_getArtType");
+  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::getArtType");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5627,7 +5216,7 @@ void __thiscall Recovered_Bulk::FUN_101329e0(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_getAttributes");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getAttributes");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5648,7 +5237,7 @@ void __fastcall FUN_10132ab0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIMusicServerBrowseDelegateSwigBase_getAuthorization");
+  thunk_FUN_10118fc0("SCIMusicServerBrowseDelegateSwigBase::getAuthorization");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5669,7 +5258,7 @@ void __fastcall FUN_10132b10(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibSonarCallback_getBitsPerSample");
+  thunk_FUN_10118fc0("SCLibSonarCallback::getBitsPerSample");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5710,7 +5299,7 @@ void __thiscall Recovered_Bulk::FUN_10132ca0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCISavedDataProviderSwigBase_getBoolValue");
+  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::getBoolValue");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5731,7 +5320,7 @@ void __thiscall Recovered_Bulk::FUN_10132e60(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCILocalMusicBrowseItemInfoSwigBase_getByteOffsetForTime");
+  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::getByteOffsetForTime");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5770,7 +5359,7 @@ void __thiscall Recovered_Bulk::FUN_10132ec0(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIUrlConnectionSwigBase_getCallback");
+  thunk_FUN_10118fc0("SCIUrlConnectionSwigBase::getCallback");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5809,7 +5398,7 @@ void __thiscall Recovered_Bulk::FUN_10132f80(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCILocalMusicSearchableDelegateSwigBase_getCategoryIDs");
+  thunk_FUN_10118fc0("SCILocalMusicSearchableDelegateSwigBase::getCategoryIDs");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5830,7 +5419,7 @@ void __fastcall FUN_10133110(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibSonarCallback_getChannels");
+  thunk_FUN_10118fc0("SCLibSonarCallback::getChannels");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5869,7 +5458,7 @@ void __thiscall Recovered_Bulk::FUN_10133170(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_getChildDataSource");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getChildDataSource");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5908,7 +5497,7 @@ void __thiscall Recovered_Bulk::FUN_10133310(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBTAccessoryDelegateSwigBase_getConnectedDevices");
+  thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::getConnectedDevices");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5929,7 +5518,7 @@ void __fastcall FUN_101333d0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWifiDelegateSwigBase_getConnectionOpen");
+  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::getConnectionOpen");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5950,7 +5539,7 @@ void __fastcall FUN_10133440(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCILocalMediaCollectionSwigBase_getCount");
+  thunk_FUN_10118fc0("SCILocalMediaCollectionSwigBase::getCount");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -5991,7 +5580,7 @@ void __thiscall Recovered_Bulk::FUN_10133cc0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCISavedDataProviderSwigBase_getDoubleValue");
+  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::getDoubleValue");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6012,7 +5601,7 @@ void __fastcall FUN_10133db0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCILocalMusicBrowseItemInfoSwigBase_getDuration");
+  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::getDuration");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6033,7 +5622,7 @@ void __fastcall FUN_10133e10(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCITrackInfoSwigBase_getDuration");
+  thunk_FUN_10118fc0("SCITrackInfoSwigBase::getDuration");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6054,7 +5643,7 @@ void __fastcall FUN_10133e70(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_getDurationMillis");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getDurationMillis");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6075,7 +5664,7 @@ void __fastcall FUN_10133ee0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCISecurityContextSwigBase_getEnvironment");
+  thunk_FUN_10118fc0("SCISecurityContextSwigBase::getEnvironment");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6114,7 +5703,7 @@ void __thiscall Recovered_Bulk::FUN_10133f40(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIExperimentManagerProviderSwigBase_getExperiments");
+  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::getExperiments");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6153,7 +5742,7 @@ void __thiscall Recovered_Bulk::FUN_10134000(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_getExtension");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getExtension");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6216,7 +5805,7 @@ void __thiscall Recovered_Bulk::FUN_101340d0(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIExperimentManagerProviderSwigBase_getFeatureVariableDouble");
+  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::getFeatureVariableDouble");
                     
   _CxxThrowException(local_24,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6278,7 +5867,7 @@ void __thiscall Recovered_Bulk::FUN_10134290(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIExperimentManagerProviderSwigBase_getFeatureVariableInteger");
+  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::getFeatureVariableInteger");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6317,7 +5906,7 @@ void __thiscall Recovered_Bulk::FUN_10134660(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIExperimentManagerProviderSwigBase_getFeatures");
+  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::getFeatures");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6358,7 +5947,7 @@ void __thiscall Recovered_Bulk::FUN_10134720(undefined4 *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_getFilteredActions");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getFilteredActions");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6379,7 +5968,7 @@ void __fastcall FUN_10134800(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCILoggingProviderSwigBase_getFlutterLevel");
+  thunk_FUN_10118fc0("SCILoggingProviderSwigBase::getFlutterLevel");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6400,7 +5989,7 @@ void __fastcall FUN_10134b00(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibSonarCallback_getHoldStyle");
+  thunk_FUN_10118fc0("SCLibSonarCallback::getHoldStyle");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6421,7 +6010,7 @@ void __fastcall FUN_10134b60(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIAbilityDelegateSwigBase_getIOSControlPanelSwipeDirection");
+  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::getIOSControlPanelSwipeDirection");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6462,7 +6051,7 @@ void __thiscall Recovered_Bulk::FUN_10134d60(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCISavedDataProviderSwigBase_getIntegerValue");
+  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::getIntegerValue");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6492,7 +6081,7 @@ undefined4 * FUN_10134e40(undefined4 *param_1,undefined4 *param_2)
   piVar3 = (int *)((int *)0x0);
   local_14 = (int *)((int *)0x0);
   if (param_2 != (undefined4 *)0x0) {
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_allocRep("SCINowPlaying");
+    ((SCStr *)((SCStr *)&param_2))->int_allocRep("SCINowPlaying");
     local_8 = (undefined4)(0);
     puVar2 = (undefined4 *)((undefined4 *)(**(code **)*puVar2)(&local_18,&param_2));
     piVar3 = (int *)((int *)*puVar2);
@@ -6503,7 +6092,7 @@ undefined4 * FUN_10134e40(undefined4 *param_1,undefined4 *param_2)
       (**(code **)(*local_18 + 8))();
     }
     local_8 = (undefined4)(3);
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+    ((SCStr *)((SCStr *)&param_2))->int_release();
     param_2 = (undefined4 *)((undefined4 *)0x0);
   }
   local_8 = (undefined4)(4);
@@ -6544,7 +6133,7 @@ undefined4 * FUN_10134f40(undefined4 *param_1,undefined4 *param_2)
   piVar3 = (int *)((int *)0x0);
   local_14 = (int *)((int *)0x0);
   if (param_2 != (undefined4 *)0x0) {
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_allocRep("SCISystem");
+    ((SCStr *)((SCStr *)&param_2))->int_allocRep("SCISystem");
     local_8 = (undefined4)(0);
     puVar2 = (undefined4 *)((undefined4 *)(**(code **)*puVar2)(&local_18,&param_2));
     piVar3 = (int *)((int *)*puVar2);
@@ -6555,7 +6144,7 @@ undefined4 * FUN_10134f40(undefined4 *param_1,undefined4 *param_2)
       (**(code **)(*local_18 + 8))();
     }
     local_8 = (undefined4)(3);
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+    ((SCStr *)((SCStr *)&param_2))->int_release();
     param_2 = (undefined4 *)((undefined4 *)0x0);
   }
   local_8 = (undefined4)(4);
@@ -6596,7 +6185,7 @@ undefined4 * FUN_10135040(undefined4 *param_1,undefined4 *param_2)
   piVar3 = (int *)((int *)0x0);
   local_14 = (int *)((int *)0x0);
   if (param_2 != (undefined4 *)0x0) {
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_allocRep("SCIZoneGroupMgr");
+    ((SCStr *)((SCStr *)&param_2))->int_allocRep("SCIZoneGroupMgr");
     local_8 = (undefined4)(0);
     puVar2 = (undefined4 *)((undefined4 *)(**(code **)*puVar2)(&local_18,&param_2));
     piVar3 = (int *)((int *)*puVar2);
@@ -6607,7 +6196,7 @@ undefined4 * FUN_10135040(undefined4 *param_1,undefined4 *param_2)
       (**(code **)(*local_18 + 8))();
     }
     local_8 = (undefined4)(3);
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+    ((SCStr *)((SCStr *)&param_2))->int_release();
     param_2 = (undefined4 *)((undefined4 *)0x0);
   }
   local_8 = (undefined4)(4);
@@ -6653,7 +6242,7 @@ void __thiscall Recovered_Bulk::FUN_10135210(undefined4 *param_2,undefined4 para
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCILocalMediaCollectionSwigBase_getItemAt");
+  thunk_FUN_10118fc0("SCILocalMediaCollectionSwigBase::getItemAt");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6674,7 +6263,7 @@ void __fastcall FUN_101352e0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCILocalMediaCollectionSwigBase_getItemThumbnailsPresentationType");
+  thunk_FUN_10118fc0("SCILocalMediaCollectionSwigBase::getItemThumbnailsPresentationType");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6695,7 +6284,7 @@ void __fastcall FUN_10135340(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCILocalMusicBrowseItemInfoSwigBase_getItemType");
+  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::getItemType");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6739,12 +6328,12 @@ void __thiscall Recovered_Bulk::FUN_101353a0(undefined4 *param_2,undefined1 *par
     }
     thunk_FUN_101a2000();
     local_8 = (undefined4)(3);
-    ((Stub_SCStr *)((SCStr *)&param_3))->int_release();
+    ((SCStr *)((SCStr *)&param_3))->int_release();
     ExceptionList = (void *)(local_10);
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIMusicServerBrowseDelegateSwigBase_getLocalMediaCollectionForId");
+  thunk_FUN_10118fc0("SCIMusicServerBrowseDelegateSwigBase::getLocalMediaCollectionForId");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6788,12 +6377,12 @@ void __thiscall Recovered_Bulk::FUN_101354d0(undefined4 *param_2,undefined1 *par
     }
     thunk_FUN_101a2000();
     local_8 = (undefined4)(3);
-    ((Stub_SCStr *)((SCStr *)&param_3))->int_release();
+    ((SCStr *)((SCStr *)&param_3))->int_release();
     ExceptionList = (void *)(local_10);
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIMusicServerBrowseDelegateSwigBase_getLocalMusicItemInfoForId");
+  thunk_FUN_10118fc0("SCIMusicServerBrowseDelegateSwigBase::getLocalMusicItemInfoForId");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6832,7 +6421,7 @@ void __thiscall Recovered_Bulk::FUN_10135600(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIMusicServerBrowseDelegateSwigBase_getLocalMusicSearchableDelegate");
+  thunk_FUN_10118fc0("SCIMusicServerBrowseDelegateSwigBase::getLocalMusicSearchableDelegate");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6853,7 +6442,7 @@ void __fastcall FUN_10135790(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIStringInputSwigBase_getMaxNumChars");
+  thunk_FUN_10118fc0("SCIStringInputSwigBase::getMaxNumChars");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6892,7 +6481,7 @@ void __thiscall Recovered_Bulk::FUN_10135b30(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_getMoreMenuDataSource");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getMoreMenuDataSource");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6931,7 +6520,7 @@ void __thiscall Recovered_Bulk::FUN_10135bf0(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIMusicServerDelegateSwigBase_getMusicServerBrowseDelegate");
+  thunk_FUN_10118fc0("SCIMusicServerDelegateSwigBase::getMusicServerBrowseDelegate");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6952,7 +6541,7 @@ void __fastcall FUN_10135d80(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCINetworkManagementDelegateSwigBase_getNetworkType");
+  thunk_FUN_10118fc0("SCINetworkManagementDelegateSwigBase::getNetworkType");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6973,7 +6562,7 @@ void __fastcall FUN_10135de0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCICustomSubWizardSwigBase_getNextStateID");
+  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::getNextStateID");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -6994,7 +6583,7 @@ void __fastcall FUN_10135e40(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_getNumberOfAlbumArtURLs");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getNumberOfAlbumArtURLs");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7015,7 +6604,7 @@ void __fastcall FUN_101360b0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBleDelegateSwigBase_getPacketQueueLength");
+  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::getPacketQueueLength");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7054,7 +6643,7 @@ void __thiscall Recovered_Bulk::FUN_101367b0(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIPlatformDateTimeProvider_getPlatformDateTime");
+  thunk_FUN_10118fc0("SCIPlatformDateTimeProvider::getPlatformDateTime");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7075,7 +6664,7 @@ void __fastcall FUN_10136a70(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCILocalMediaCollectionSwigBase_getPresentationType");
+  thunk_FUN_10118fc0("SCILocalMediaCollectionSwigBase::getPresentationType");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7114,7 +6703,7 @@ void __thiscall Recovered_Bulk::FUN_10136c70(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCICustomSubWizardSwigBase_getPropertyBag");
+  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::getPropertyBag");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7135,7 +6724,7 @@ void __fastcall FUN_10136d30(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIStringInputSwigBase_getRecommendedInputMethodType");
+  thunk_FUN_10118fc0("SCIStringInputSwigBase::getRecommendedInputMethodType");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7174,7 +6763,7 @@ void __thiscall Recovered_Bulk::FUN_10136d90(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIUrlConnectionSwigBase_getRequest");
+  thunk_FUN_10118fc0("SCIUrlConnectionSwigBase::getRequest");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7195,7 +6784,7 @@ void __fastcall FUN_10136e50(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBlePeripheralDelegateSwigBase_getRequireSecurePairing");
+  thunk_FUN_10118fc0("SCIBlePeripheralDelegateSwigBase::getRequireSecurePairing");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7216,7 +6805,7 @@ void __fastcall FUN_10137050(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_getResumeOffsetMillis");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::getResumeOffsetMillis");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7255,7 +6844,7 @@ void __thiscall Recovered_Bulk::FUN_101370b0(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIMusicServerBrowseDelegateSwigBase_getRootItem");
+  thunk_FUN_10118fc0("SCIMusicServerBrowseDelegateSwigBase::getRootItem");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7280,7 +6869,7 @@ void __fastcall FUN_101377b0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIVpnDelegate_getRootObject");
+  thunk_FUN_10118fc0("SCIVpnDelegate::getRootObject");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7315,7 +6904,7 @@ void __thiscall Recovered_Bulk::FUN_10137860(undefined4 *param_2,undefined4 para
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibDelegateFactory_getSCLibDelegate");
+  thunk_FUN_10118fc0("SCLibDelegateFactory::getSCLibDelegate");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7336,7 +6925,7 @@ void __fastcall FUN_10137a00(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibSonarCallback_getSampleRate");
+  thunk_FUN_10118fc0("SCLibSonarCallback::getSampleRate");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7357,7 +6946,7 @@ void __fastcall FUN_10137da0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIGetSonosPlaylistsCBSwigBase_getSonosPlaylistsFailed");
+  thunk_FUN_10118fc0("SCIGetSonosPlaylistsCBSwigBase::getSonosPlaylistsFailed");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7398,7 +6987,7 @@ void __thiscall Recovered_Bulk::FUN_10137e00(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIGetSonosPlaylistsCBSwigBase_getSonosPlaylistsSucceeded");
+  thunk_FUN_10118fc0("SCIGetSonosPlaylistsCBSwigBase::getSonosPlaylistsSucceeded");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7433,7 +7022,7 @@ void __thiscall Recovered_Bulk::FUN_10138160(undefined4 *param_2,undefined4 para
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCICustomSubWizardSwigBase_getStringInput");
+  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::getStringInput");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7454,7 +7043,7 @@ void __fastcall FUN_101385d0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCILocalMusicBrowseItemInfoSwigBase_getTrackNumber");
+  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::getTrackNumber");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7475,7 +7064,7 @@ void __fastcall FUN_101388a0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIStringInputSwigBase_getValidationStatus");
+  thunk_FUN_10118fc0("SCIStringInputSwigBase::getValidationStatus");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7522,7 +7111,7 @@ void __thiscall Recovered_Bulk::FUN_10138ab0(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIExperimentManagerProviderSwigBase_getVariations");
+  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::getVariations");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7561,7 +7150,7 @@ void __thiscall Recovered_Bulk::FUN_10138bd0(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCICustomSubWizardSwigBase_getWizardComponents");
+  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::getWizardComponents");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7600,7 +7189,7 @@ void __thiscall Recovered_Bulk::FUN_10138c90(undefined4 *param_2)
     thunk_FUN_1148ac28(puVar2,uVar3);
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCICustomSubWizardSwigBase_getWizardPageProperties");
+  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::getWizardPageProperties");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7641,7 +7230,7 @@ void __thiscall Recovered_Bulk::FUN_10138d50(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibCustomSubWizardCallback_hasCustomSubWizard");
+  thunk_FUN_10118fc0("SCLibCustomSubWizardCallback::hasCustomSubWizard");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7662,7 +7251,7 @@ void __fastcall FUN_10138e30(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIInAppMessagingProviderSwigBase_hasDeviceToken");
+  thunk_FUN_10118fc0("SCIInAppMessagingProviderSwigBase::hasDeviceToken");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7683,7 +7272,7 @@ void __fastcall FUN_10138e90(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibSonarCallback_hasLimitedVerticalSpace");
+  thunk_FUN_10118fc0("SCLibSonarCallback::hasLimitedVerticalSpace");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7704,7 +7293,7 @@ void __fastcall FUN_10138ef0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_hasMoreMenu");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::hasMoreMenu");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7725,7 +7314,7 @@ void __fastcall FUN_10138f50(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_hasOrdinal");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::hasOrdinal");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7746,7 +7335,7 @@ void __thiscall Recovered_Bulk::FUN_10138fb0(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibDelegateFactory_hasSCLibDelegate");
+  thunk_FUN_10118fc0("SCLibDelegateFactory::hasSCLibDelegate");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7767,7 +7356,7 @@ void __fastcall FUN_10139020(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIUrbanAirshipDelegateSwigBase_hasUnreadMessages");
+  thunk_FUN_10118fc0("SCIUrbanAirshipDelegateSwigBase::hasUnreadMessages");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7788,7 +7377,7 @@ void __fastcall FUN_10139090(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIAutomationDelegateSwigBase_hhidUpdated");
+  thunk_FUN_10118fc0("SCIAutomationDelegateSwigBase::hhidUpdated");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7809,7 +7398,7 @@ void __fastcall FUN_101390f0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBlePeripheralDelegateSwigBase_initPeripheral");
+  thunk_FUN_10118fc0("SCIBlePeripheralDelegateSwigBase::initPeripheral");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7836,7 +7425,7 @@ void __thiscall Recovered_Bulk::FUN_10139150(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIAbilityDelegateSwigBase_initialize");
+  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::initialize");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7877,7 +7466,7 @@ void __thiscall Recovered_Bulk::FUN_101391d0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIExperimentManagerProviderSwigBase_initialize");
+  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::initialize");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7898,7 +7487,7 @@ void __fastcall FUN_101392b0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIInAppPurchaseManagerProviderSwigBase_initialize");
+  thunk_FUN_10118fc0("SCIInAppPurchaseManagerProviderSwigBase::initialize");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7919,7 +7508,7 @@ void __fastcall FUN_10139310(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIAutomationDelegateSwigBase_initializeFlutterAutomation");
+  thunk_FUN_10118fc0("SCIAutomationDelegateSwigBase::initializeFlutterAutomation");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7940,7 +7529,7 @@ void __thiscall Recovered_Bulk::FUN_101393a0(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIAbilityDelegateSwigBase_isAlwaysAvailable");
+  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::isAlwaysAvailable");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7961,7 +7550,7 @@ void __thiscall Recovered_Bulk::FUN_10139410(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIAbilityDelegateSwigBase_isAlwaysDisallowed");
+  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::isAlwaysDisallowed");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -7982,7 +7571,7 @@ void __thiscall Recovered_Bulk::FUN_10139480(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCILifecycleAppProviderSwigBase_isAppWithSWGenInstalled");
+  thunk_FUN_10118fc0("SCILifecycleAppProviderSwigBase::isAppWithSWGenInstalled");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8003,7 +7592,7 @@ void __thiscall Recovered_Bulk::FUN_101394f0(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_isBrowseItemTextAvailable");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::isBrowseItemTextAvailable");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8024,7 +7613,7 @@ void __fastcall FUN_10139560(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_isCompletelyPlayed");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::isCompletelyPlayed");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8045,7 +7634,7 @@ void __fastcall FUN_101395c0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBTClassicConnectionProviderSwigBase_isConnectedToSonosDevice");
+  thunk_FUN_10118fc0("SCIBTClassicConnectionProviderSwigBase::isConnectedToSonosDevice");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8066,7 +7655,7 @@ void __fastcall FUN_10139620(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCILocalMusicBrowseItemInfoSwigBase_isContainer");
+  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::isContainer");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8087,7 +7676,7 @@ void __fastcall FUN_10139680(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_isDataAvailable");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::isDataAvailable");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8128,7 +7717,7 @@ void __thiscall Recovered_Bulk::FUN_101396e0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBTAccessoryDelegateSwigBase_isDeviceBonded");
+  thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::isDeviceBonded");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8181,7 +7770,7 @@ void __thiscall Recovered_Bulk::FUN_10139830(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIExperimentManagerProviderSwigBase_isFeatureEnabled");
+  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::isFeatureEnabled");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8202,7 +7791,7 @@ void __fastcall FUN_101399a0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIExperimentManagerProviderSwigBase_isInitialized");
+  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::isInitialized");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8223,7 +7812,7 @@ void __fastcall FUN_10139a00(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_isLoading");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::isLoading");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8244,7 +7833,7 @@ void __fastcall FUN_10139a60(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIStringInputSwigBase_isLocked");
+  thunk_FUN_10118fc0("SCIStringInputSwigBase::isLocked");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8265,7 +7854,7 @@ void __fastcall FUN_10139ac0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBTClassicConnectionCallbackSwigBase_isMobConnected");
+  thunk_FUN_10118fc0("SCIBTClassicConnectionCallbackSwigBase::isMobConnected");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8286,7 +7875,7 @@ void __fastcall FUN_10139b50(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_isParentOfSearch");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::isParentOfSearch");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8307,7 +7896,7 @@ void __fastcall FUN_10139bb0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCILocalMusicBrowseItemInfoSwigBase_isPlayable");
+  thunk_FUN_10118fc0("SCILocalMusicBrowseItemInfoSwigBase::isPlayable");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8328,7 +7917,7 @@ void __fastcall FUN_10139c10(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBTClassicConnectionProviderSwigBase_isPlaying");
+  thunk_FUN_10118fc0("SCIBTClassicConnectionProviderSwigBase::isPlaying");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8349,7 +7938,7 @@ void __fastcall FUN_10139c70(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_isPlaying");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::isPlaying");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8370,7 +7959,7 @@ void __thiscall Recovered_Bulk::FUN_10139cd0(undefined4 param_2,undefined4 param
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIAbilityDelegateSwigBase_isPrereq");
+  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::isPrereq");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8391,7 +7980,7 @@ void __fastcall FUN_10139d40(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_isSecondaryTitleValid");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::isSecondaryTitleValid");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8412,7 +8001,7 @@ void __fastcall FUN_10139da0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCISecureStoreSwigBase_isSecure");
+  thunk_FUN_10118fc0("SCISecureStoreSwigBase::isSecure");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8433,7 +8022,7 @@ void __fastcall FUN_10139e00(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_isSonosRadio");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::isSonosRadio");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8454,7 +8043,7 @@ void __fastcall FUN_10139e60(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCICustomSubWizardSwigBase_isStateDone");
+  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::isStateDone");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8475,7 +8064,7 @@ void __fastcall FUN_10139ec0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_isUnavailable");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::isUnavailable");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8516,7 +8105,7 @@ void __thiscall Recovered_Bulk::FUN_10139f20(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIStringInputSwigBase_isValid");
+  thunk_FUN_10118fc0("SCIStringInputSwigBase::isValid");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8537,7 +8126,7 @@ void __fastcall FUN_1013a000(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIStringInputSwigBase_isValid");
+  thunk_FUN_10118fc0("SCIStringInputSwigBase::isValid");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8587,7 +8176,7 @@ void __thiscall Recovered_Bulk::FUN_1013a060(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIExperimentManagerProviderSwigBase_isVariationForced");
+  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::isVariationForced");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8608,7 +8197,7 @@ void __fastcall FUN_1013a1a0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWifiDelegateSwigBase_isWifiConnected");
+  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::isWifiConnected");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8658,7 +8247,7 @@ void __thiscall Recovered_Bulk::FUN_1013a200(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWifiDelegateSwigBase_joinSSID");
+  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::joinSSID");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8699,7 +8288,7 @@ void __thiscall Recovered_Bulk::FUN_1013a340(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWifiDelegateSwigBase_launchAccessoryConfiguration");
+  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::launchAccessoryConfiguration");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8740,7 +8329,7 @@ void __thiscall Recovered_Bulk::FUN_1013a420(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWifiDelegateSwigBase_leaveSSID");
+  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::leaveSSID");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8802,7 +8391,7 @@ void __thiscall Recovered_Bulk::FUN_1013a790(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCISecurityContextSwigBase_logCertificateData");
+  thunk_FUN_10118fc0("SCISecurityContextSwigBase::logCertificateData");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8823,7 +8412,7 @@ void __fastcall FUN_1013a8b0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIUINotificationsDelegate_notificationsEnabled");
+  thunk_FUN_10118fc0("SCIUINotificationsDelegate::notificationsEnabled");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8844,7 +8433,7 @@ void __fastcall FUN_1013aad0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIMusicServerDelegateSwigBase_onBeginStreaming");
+  thunk_FUN_10118fc0("SCIMusicServerDelegateSwigBase::onBeginStreaming");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8865,7 +8454,7 @@ void __fastcall FUN_1013ab30(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCINetstartListenerSwigBase_onDeviceDiscoveryWaiting");
+  thunk_FUN_10118fc0("SCINetstartListenerSwigBase::onDeviceDiscoveryWaiting");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8886,7 +8475,7 @@ void __fastcall FUN_1013ab90(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIMusicServerDelegateSwigBase_onEndStreaming");
+  thunk_FUN_10118fc0("SCIMusicServerDelegateSwigBase::onEndStreaming");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8907,7 +8496,7 @@ void __fastcall FUN_1013abf0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCINetstartListenerSwigBase_onJoinComplete");
+  thunk_FUN_10118fc0("SCINetstartListenerSwigBase::onJoinComplete");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8928,7 +8517,7 @@ void __fastcall FUN_1013ac50(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCINetstartListenerSwigBase_onJoinFail");
+  thunk_FUN_10118fc0("SCINetstartListenerSwigBase::onJoinFail");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8966,12 +8555,12 @@ void __thiscall Recovered_Bulk::FUN_1013acb0(undefined1 *param_2,undefined4 para
     (**(code **)(param_1 + 0x18))(uVar2,param_3);
     thunk_FUN_101a2000();
     local_8 = (undefined4)(2);
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+    ((SCStr *)((SCStr *)&param_2))->int_release();
     ExceptionList = (void *)(local_10);
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCINetstartListenerSwigBase_onNetParamsAcquired");
+  thunk_FUN_10118fc0("SCINetstartListenerSwigBase::onNetParamsAcquired");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -8992,7 +8581,7 @@ void __thiscall Recovered_Bulk::FUN_1013ada0(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCICustomSubWizardSwigBase_onSubWizardStateTransition");
+  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::onSubWizardStateTransition");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -9019,7 +8608,7 @@ void __thiscall Recovered_Bulk::FUN_1013ae00(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWebsocketCallbackSwigBase_onWebsocketConnected");
+  thunk_FUN_10118fc0("SCIWebsocketCallbackSwigBase::onWebsocketConnected");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -9046,7 +8635,7 @@ void __thiscall Recovered_Bulk::FUN_1013ae80(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWebsocketCallbackSwigBase_onWebsocketDisconnected");
+  thunk_FUN_10118fc0("SCIWebsocketCallbackSwigBase::onWebsocketDisconnected");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -9073,7 +8662,7 @@ void __thiscall Recovered_Bulk::FUN_1013af00(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWebsocketCallbackSwigBase_onWebsocketError");
+  thunk_FUN_10118fc0("SCIWebsocketCallbackSwigBase::onWebsocketError");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -9117,7 +8706,7 @@ void __thiscall Recovered_Bulk::FUN_1013af80(undefined4 *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIServiceAppInteropSwigBase_openApp");
+  thunk_FUN_10118fc0("SCIServiceAppInteropSwigBase::openApp");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -9155,12 +8744,12 @@ void __thiscall Recovered_Bulk::FUN_1013b080(undefined1 *param_2)
     (**(code **)(param_1 + 0xc))(uVar2);
     thunk_FUN_101a2000();
     local_8 = (undefined4)(2);
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+    ((SCStr *)((SCStr *)&param_2))->int_release();
     ExceptionList = (void *)(local_10);
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIMusicServerDelegateSwigBase_openFileDescriptor");
+  thunk_FUN_10118fc0("SCIMusicServerDelegateSwigBase::openFileDescriptor");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -9181,7 +8770,7 @@ void __fastcall FUN_1013b170(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIVpnDelegate_openVPNSettings");
+  thunk_FUN_10118fc0("SCIVpnDelegate::openVPNSettings");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -9202,7 +8791,7 @@ void __fastcall FUN_1013b1d0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIVpnDelegateSwigBase_openVPNSettings");
+  thunk_FUN_10118fc0("SCIVpnDelegateSwigBase::openVPNSettings");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -9229,7 +8818,7 @@ void __thiscall Recovered_Bulk::FUN_1013b230(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIActionSwigBase_perform");
+  thunk_FUN_10118fc0("SCIActionSwigBase::perform");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -9273,7 +8862,7 @@ void __thiscall Recovered_Bulk::FUN_1013b2b0(undefined4 *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCINewWizDelegateSwigBase_performUpdate");
+  thunk_FUN_10118fc0("SCINewWizDelegateSwigBase::performUpdate");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -9311,12 +8900,12 @@ void __thiscall Recovered_Bulk::FUN_1013b3a0(undefined1 *param_2)
     (**(code **)(param_1 + 0x14))(uVar2);
     thunk_FUN_101a2000();
     local_8 = (undefined4)(2);
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+    ((SCStr *)((SCStr *)&param_2))->int_release();
     ExceptionList = (void *)(local_10);
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIUrbanAirshipDelegateSwigBase_postCustomEvent");
+  thunk_FUN_10118fc0("SCIUrbanAirshipDelegateSwigBase::postCustomEvent");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -9343,7 +8932,7 @@ void __thiscall Recovered_Bulk::FUN_1013b490(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibSonarCallback_prepareForRecording");
+  thunk_FUN_10118fc0("SCLibSonarCallback::prepareForRecording");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -9390,7 +8979,7 @@ void __thiscall Recovered_Bulk::FUN_1013b5a0(undefined4 *param_2,int *param_3,in
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIInAppPurchaseManagerProviderSwigBase_purchaseProduct");
+  thunk_FUN_10118fc0("SCIInAppPurchaseManagerProviderSwigBase::purchaseProduct");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -9404,7 +8993,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013b6b0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIAbilityDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIAbilityDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -9413,7 +9002,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013b6b0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -9435,7 +9024,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013b730(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIActionDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIActionDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -9444,7 +9033,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013b730(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -9466,7 +9055,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013b7b0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIActionFactory"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIActionFactory"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -9475,7 +9064,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013b7b0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -9497,7 +9086,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013b830(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIActionFilter"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIActionFilter"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -9506,7 +9095,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013b830(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -9528,7 +9117,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013b8b0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIAction"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIAction"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -9537,7 +9126,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013b8b0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -9559,7 +9148,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013b930(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIAutomationDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIAutomationDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -9568,7 +9157,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013b930(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -9590,7 +9179,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013b9b0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIBTAccessoryDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIBTAccessoryDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -9599,7 +9188,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013b9b0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -9621,7 +9210,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013ba30(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIBTClassicConnectionCallback"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIBTClassicConnectionCallback"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -9630,7 +9219,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013ba30(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -9652,7 +9241,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013bab0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIBTClassicConnectionProvider"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIBTClassicConnectionProvider"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -9661,7 +9250,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013bab0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -9683,7 +9272,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013bb30(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIBleDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIBleDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -9692,7 +9281,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013bb30(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -9714,7 +9303,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013bbb0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIBlePeripheralDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIBlePeripheralDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -9723,7 +9312,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013bbb0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -9745,7 +9334,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013bc30(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIBrowseItem"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIBrowseItem"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -9754,7 +9343,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013bc30(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -9776,7 +9365,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013bcb0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIChirpDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIChirpDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -9785,7 +9374,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013bcb0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -9807,7 +9396,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013bd30(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIClipboardDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIClipboardDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -9816,7 +9405,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013bd30(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -9838,7 +9427,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013bdb0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCICrashReportProvider"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCICrashReportProvider"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -9847,7 +9436,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013bdb0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -9869,7 +9458,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013be30(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCICustomSubWizard"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCICustomSubWizard"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -9878,7 +9467,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013be30(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -9900,7 +9489,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013beb0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIEventSink"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIEventSink"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -9909,7 +9498,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013beb0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -9931,7 +9520,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013bf30(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIExperimentManagerProvider"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIExperimentManagerProvider"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -9940,7 +9529,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013bf30(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -9962,7 +9551,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013bfb0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIGetAboutSonosStringCB"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIGetAboutSonosStringCB"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -9971,7 +9560,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013bfb0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -9993,7 +9582,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c030(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIGetSonosPlaylistsCB"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIGetSonosPlaylistsCB"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10002,7 +9591,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c030(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10024,7 +9613,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c0b0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIHapticDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIHapticDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10033,7 +9622,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c0b0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10055,7 +9644,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c130(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIInAppMessagingProvider"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIInAppMessagingProvider"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10064,7 +9653,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c130(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10086,7 +9675,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c1b0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIInAppPurchaseManagerProvider"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIInAppPurchaseManagerProvider"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10095,7 +9684,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c1b0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10117,7 +9706,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c230(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCILifecycleAppProvider"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCILifecycleAppProvider"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10126,7 +9715,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c230(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10148,7 +9737,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c2b0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCILocalMediaCollection"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCILocalMediaCollection"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10157,7 +9746,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c2b0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10179,7 +9768,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c330(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCILocalMusicBrowseItemInfo"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCILocalMusicBrowseItemInfo"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10188,7 +9777,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c330(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10210,7 +9799,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c3b0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCILocalMusicSearchableDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCILocalMusicSearchableDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10219,7 +9808,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c3b0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10241,7 +9830,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c430(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCILoggingProvider"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCILoggingProvider"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10250,7 +9839,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c430(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10272,7 +9861,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c4b0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIMdnsDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIMdnsDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10281,7 +9870,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c4b0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10303,7 +9892,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c530(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIMusicServerBrowseDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIMusicServerBrowseDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10312,7 +9901,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c530(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10334,7 +9923,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c5b0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIMusicServerDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIMusicServerDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10343,7 +9932,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c5b0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10365,7 +9954,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c630(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCINetstartListener"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCINetstartListener"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10374,7 +9963,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c630(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10396,7 +9985,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c6b0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCINetworkManagementDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCINetworkManagementDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10405,7 +9994,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c6b0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10427,7 +10016,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c730(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCINewWizDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCINewWizDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10436,7 +10025,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c730(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10458,7 +10047,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c7b0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCINfcDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCINfcDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10467,7 +10056,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c7b0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10489,7 +10078,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c830(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIOpCB"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIOpCB"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10498,7 +10087,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c830(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10520,7 +10109,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c8b0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCISavedDataProvider"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCISavedDataProvider"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10529,7 +10118,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c8b0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10551,7 +10140,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c930(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCISecureStore"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCISecureStore"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10560,7 +10149,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c930(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10582,7 +10171,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c9b0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCISecurityContext"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCISecurityContext"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10591,7 +10180,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013c9b0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10613,7 +10202,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013ca30(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIServiceAppInterop"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIServiceAppInterop"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10622,7 +10211,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013ca30(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10644,7 +10233,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013cab0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIStackTraceCaptureDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIStackTraceCaptureDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10653,7 +10242,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013cab0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10675,7 +10264,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013cb30(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIStringInput"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIStringInput"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10684,7 +10273,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013cb30(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10706,7 +10295,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013cbb0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCITrackInfo"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCITrackInfo"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10715,7 +10304,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013cbb0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10737,7 +10326,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013cc30(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIUrbanAirshipDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIUrbanAirshipDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10746,7 +10335,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013cc30(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10768,7 +10357,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013ccb0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIUrlConnection"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIUrlConnection"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10777,7 +10366,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013ccb0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10799,7 +10388,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013cd30(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIUrlSessionCallback"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIUrlSessionCallback"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10808,7 +10397,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013cd30(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10830,7 +10419,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013cdb0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIUrlSessionProvider"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIUrlSessionProvider"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10839,7 +10428,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013cdb0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10861,7 +10450,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013ce30(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIVoiceServiceDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIVoiceServiceDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10870,7 +10459,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013ce30(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10892,7 +10481,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013ceb0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIVpnDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIVpnDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10901,7 +10490,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013ceb0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10923,7 +10512,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013cf30(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIWebsocketCallback"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIWebsocketCallback"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10932,7 +10521,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013cf30(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10954,7 +10543,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013cfb0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIWebsocketDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIWebsocketDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10963,7 +10552,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013cfb0(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -10985,7 +10574,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d030(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIWifiDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIWifiDelegate"));
   if (bVar1) {
     *param_2 = (undefined4)(param_1);
     if (param_1 != (int *)0x0) {
@@ -10994,7 +10583,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d030(undefined4 *param_2,SCStr *
     }
   }
   else {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11016,9 +10605,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d0b0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIAbilityDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIAbilityDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11040,9 +10629,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d120(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIActionDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIActionDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11064,9 +10653,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d190(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIActionFactory"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIActionFactory"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11088,9 +10677,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d200(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIActionFilter"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIActionFilter"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11112,9 +10701,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d270(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIAction"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIAction"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11136,9 +10725,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d2e0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIAutomationDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIAutomationDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11160,9 +10749,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d350(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIBTAccessoryDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIBTAccessoryDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11184,9 +10773,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d3c0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIBTClassicConnectionCallback"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIBTClassicConnectionCallback"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11208,9 +10797,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d430(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIBTClassicConnectionProvider"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIBTClassicConnectionProvider"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11232,9 +10821,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d4a0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIBleDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIBleDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11256,9 +10845,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d510(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIBlePeripheralDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIBlePeripheralDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11280,9 +10869,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d580(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIBrowseItem"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIBrowseItem"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11304,9 +10893,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d5f0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIChirpDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIChirpDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11328,9 +10917,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d660(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIClipboardDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIClipboardDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11352,9 +10941,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d6d0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCICrashReportProvider"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCICrashReportProvider"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11376,9 +10965,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d740(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCICustomSubWizard"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCICustomSubWizard"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11400,9 +10989,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d7b0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIEventSink"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIEventSink"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11424,9 +11013,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d820(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIExperimentManagerProvider"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIExperimentManagerProvider"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11448,9 +11037,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d890(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIGetAboutSonosStringCB"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIGetAboutSonosStringCB"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11472,9 +11061,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d900(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIGetSonosPlaylistsCB"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIGetSonosPlaylistsCB"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11496,9 +11085,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d970(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIHapticDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIHapticDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11520,9 +11109,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013d9e0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIInAppMessagingProvider"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIInAppMessagingProvider"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11544,9 +11133,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013da50(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIInAppPurchaseManagerProvider"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIInAppPurchaseManagerProvider"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11568,9 +11157,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013dac0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCILifecycleAppProvider"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCILifecycleAppProvider"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11592,9 +11181,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013db30(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCILocalMediaCollection"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCILocalMediaCollection"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11616,9 +11205,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013dba0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCILocalMusicBrowseItemInfo"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCILocalMusicBrowseItemInfo"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11640,9 +11229,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013dc10(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCILocalMusicSearchableDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCILocalMusicSearchableDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11664,9 +11253,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013dc80(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCILoggingProvider"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCILoggingProvider"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11688,9 +11277,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013dcf0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIMdnsDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIMdnsDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11712,9 +11301,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013dd60(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIMusicServerBrowseDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIMusicServerBrowseDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11736,9 +11325,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013ddd0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIMusicServerDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIMusicServerDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11760,9 +11349,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013de40(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCINetstartListener"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCINetstartListener"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11784,9 +11373,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013deb0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCINetworkManagementDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCINetworkManagementDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11808,9 +11397,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013df20(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCINewWizDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCINewWizDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11832,9 +11421,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013df90(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCINfcDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCINfcDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11856,9 +11445,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013e000(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIOpCB"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIOpCB"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11880,9 +11469,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013e070(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCISavedDataProvider"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCISavedDataProvider"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11904,9 +11493,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013e0e0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCISecureStore"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCISecureStore"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11928,9 +11517,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013e150(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCISecurityContext"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCISecurityContext"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11952,9 +11541,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013e1c0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIServiceAppInterop"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIServiceAppInterop"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -11976,9 +11565,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013e230(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIStackTraceCaptureDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIStackTraceCaptureDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -12000,9 +11589,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013e2a0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIStringInput"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIStringInput"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -12024,9 +11613,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013e310(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCITrackInfo"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCITrackInfo"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -12048,9 +11637,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013e380(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIUrbanAirshipDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIUrbanAirshipDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -12072,9 +11661,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013e3f0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIUrlConnection"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIUrlConnection"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -12096,9 +11685,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013e460(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIUrlSessionCallback"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIUrlSessionCallback"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -12120,9 +11709,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013e4d0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIUrlSessionProvider"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIUrlSessionProvider"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -12144,9 +11733,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013e540(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIVoiceServiceDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIVoiceServiceDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -12201,7 +11790,7 @@ void __thiscall Recovered_Bulk::FUN_1013e5b0(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIVpnDelegate_queryInterface");
+  thunk_FUN_10118fc0("SCIVpnDelegate::queryInterface");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12215,9 +11804,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013e6d0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIVpnDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIVpnDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -12239,9 +11828,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013e740(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIWebsocketCallback"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIWebsocketCallback"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -12263,9 +11852,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013e7b0(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIWebsocketDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIWebsocketDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -12287,9 +11876,9 @@ undefined4 * __thiscall Recovered_Bulk::FUN_1013e820(undefined4 *param_2,SCStr *
   int *param_1 = (int *)this;
   bool bVar1;
   
-  bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIWifiDelegate"));
+  bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIWifiDelegate"));
   if (!bVar1) {
-    bVar1 = (bool)(((Stub_SCStr *)(param_3))->op_eq("SCIObj"));
+    bVar1 = (bool)(((SCStr *)(param_3))->op_eq("SCIObj"));
     if (!bVar1) {
       *param_2 = (undefined4)(0);
       return (undefined4 *)(param_2);
@@ -12318,7 +11907,7 @@ void __fastcall FUN_1013e890(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBleDelegateSwigBase_queuePacketForSend");
+  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::queuePacketForSend");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12356,12 +11945,12 @@ void __thiscall Recovered_Bulk::FUN_1013e8f0(undefined1 *param_2)
     (**(code **)(param_1 + 0x38))(uVar2);
     thunk_FUN_101a2000();
     local_8 = (undefined4)(2);
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+    ((SCStr *)((SCStr *)&param_2))->int_release();
     ExceptionList = (void *)(local_10);
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCICustomSubWizardSwigBase_raiseEvent");
+  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::raiseEvent");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12390,7 +11979,7 @@ void __thiscall Recovered_Bulk::FUN_1013e9e0(undefined4 param_2,undefined4 param
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWebsocketCallbackSwigBase_receivedData");
+  thunk_FUN_10118fc0("SCIWebsocketCallbackSwigBase::receivedData");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12434,7 +12023,7 @@ void __thiscall Recovered_Bulk::FUN_1013ea70(undefined4 *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWebsocketCallbackSwigBase_receivedString");
+  thunk_FUN_10118fc0("SCIWebsocketCallbackSwigBase::receivedString");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12455,7 +12044,7 @@ void __thiscall Recovered_Bulk::FUN_1013eb60(undefined1 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCINetworkManagementDelegateSwigBase_refreshSSID");
+  thunk_FUN_10118fc0("SCINetworkManagementDelegateSwigBase::refreshSSID");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12496,7 +12085,7 @@ void __thiscall Recovered_Bulk::FUN_1013ebc0(undefined4 *param_2,undefined1 para
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCISavedDataProviderSwigBase_registerDefaultBoolValue");
+  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::registerDefaultBoolValue");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12573,7 +12162,7 @@ void __thiscall Recovered_Bulk::FUN_1013ed90(undefined4 *param_2,undefined4 para
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCISavedDataProviderSwigBase_registerDefaultIntegerValue");
+  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::registerDefaultIntegerValue");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12623,7 +12212,7 @@ void __thiscall Recovered_Bulk::FUN_1013ee70(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCISavedDataProviderSwigBase_registerDefaultStringValue");
+  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::registerDefaultStringValue");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12650,7 +12239,7 @@ void __thiscall Recovered_Bulk::FUN_1013efa0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBTAccessoryDelegateSwigBase_registerListener");
+  thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::registerListener");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12677,7 +12266,7 @@ void __thiscall Recovered_Bulk::FUN_1013f020(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBleDelegateSwigBase_registerListener");
+  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::registerListener");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12704,7 +12293,7 @@ void __thiscall Recovered_Bulk::FUN_1013f0a0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBlePeripheralDelegateSwigBase_registerListener");
+  thunk_FUN_10118fc0("SCIBlePeripheralDelegateSwigBase::registerListener");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12731,7 +12320,7 @@ void __thiscall Recovered_Bulk::FUN_1013f120(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIChirpDelegateSwigBase_registerListener");
+  thunk_FUN_10118fc0("SCIChirpDelegateSwigBase::registerListener");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12758,7 +12347,7 @@ void __thiscall Recovered_Bulk::FUN_1013f1a0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIMdnsDelegateSwigBase_registerListener");
+  thunk_FUN_10118fc0("SCIMdnsDelegateSwigBase::registerListener");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12785,7 +12374,7 @@ void __thiscall Recovered_Bulk::FUN_1013f220(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCINfcDelegateSwigBase_registerListener");
+  thunk_FUN_10118fc0("SCINfcDelegateSwigBase::registerListener");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12812,7 +12401,7 @@ void __thiscall Recovered_Bulk::FUN_1013f2a0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIUrbanAirshipDelegateSwigBase_registerListener");
+  thunk_FUN_10118fc0("SCIUrbanAirshipDelegateSwigBase::registerListener");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12839,7 +12428,7 @@ void __thiscall Recovered_Bulk::FUN_1013f320(undefined4 param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIVoiceServiceDelegateSwigBase_registerListener");
+  thunk_FUN_10118fc0("SCIVoiceServiceDelegateSwigBase::registerListener");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12866,7 +12455,7 @@ void __thiscall Recovered_Bulk::FUN_1013f3a0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWifiDelegateSwigBase_registerListener");
+  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::registerListener");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12893,7 +12482,7 @@ void __thiscall Recovered_Bulk::FUN_1013f420(int *param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIUINotificationsDelegate_registerLocalNotification");
+  thunk_FUN_10118fc0("SCIUINotificationsDelegate::registerLocalNotification");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12920,7 +12509,7 @@ void __thiscall Recovered_Bulk::FUN_1013f4c0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCILocalMediaCollectionSwigBase_registerMediaCollectionListener");
+  thunk_FUN_10118fc0("SCILocalMediaCollectionSwigBase::registerMediaCollectionListener");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -12961,7 +12550,7 @@ void __thiscall Recovered_Bulk::FUN_10143df0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCISavedDataProviderSwigBase_remove");
+  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::remove");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13002,7 +12591,7 @@ void __thiscall Recovered_Bulk::FUN_10143ed0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCISecureStoreSwigBase_removeBlob");
+  thunk_FUN_10118fc0("SCISecureStoreSwigBase::removeBlob");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13052,7 +12641,7 @@ void __thiscall Recovered_Bulk::FUN_10143fb0(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIInAppMessagingProviderSwigBase_removeTagFromGroup");
+  thunk_FUN_10118fc0("SCIInAppMessagingProviderSwigBase::removeTagFromGroup");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13079,7 +12668,7 @@ void __thiscall Recovered_Bulk::FUN_101440e0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIUINotificationsDelegate_requestNotificationsPermissions");
+  thunk_FUN_10118fc0("SCIUINotificationsDelegate::requestNotificationsPermissions");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13100,7 +12689,7 @@ void __fastcall FUN_10144160(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBTAccessoryDelegateSwigBase_requestOSPairing");
+  thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::requestOSPairing");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13141,7 +12730,7 @@ void __thiscall Recovered_Bulk::FUN_101441c0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBTAccessoryDelegateSwigBase_requestPairing");
+  thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::requestPairing");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13162,7 +12751,7 @@ void __thiscall Recovered_Bulk::FUN_101442a0(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIAbilityDelegateSwigBase_requestPrereq");
+  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::requestPrereq");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13183,7 +12772,7 @@ void __fastcall FUN_10144310(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIVpnDelegate_requestVPN");
+  thunk_FUN_10118fc0("SCIVpnDelegate::requestVPN");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13204,7 +12793,7 @@ void __fastcall FUN_10144370(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIVpnDelegateSwigBase_requestVPN");
+  thunk_FUN_10118fc0("SCIVpnDelegateSwigBase::requestVPN");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13225,7 +12814,7 @@ void __fastcall FUN_101443d0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIAbilityDelegateSwigBase_requireFineLocationPermission");
+  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::requireFineLocationPermission");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13246,7 +12835,7 @@ void __fastcall FUN_10144430(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibSonarCallback_requireInputToChangeHoldStyle");
+  thunk_FUN_10118fc0("SCLibSonarCallback::requireInputToChangeHoldStyle");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13267,7 +12856,7 @@ void __fastcall FUN_10144490(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_resolveArtworkUrls");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::resolveArtworkUrls");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13305,12 +12894,12 @@ void __thiscall Recovered_Bulk::FUN_101444f0(undefined1 *param_2)
     (**(code **)(param_1 + 0x4c))(uVar2);
     thunk_FUN_101a2000();
     local_8 = (undefined4)(2);
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+    ((SCStr *)((SCStr *)&param_2))->int_release();
     ExceptionList = (void *)(local_10);
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIExperimentManagerProviderSwigBase_saveFeaturesJson");
+  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::saveFeaturesJson");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13348,12 +12937,12 @@ void __thiscall Recovered_Bulk::FUN_101445e0(undefined1 *param_2)
     (**(code **)(param_1 + 0x44))(uVar2);
     thunk_FUN_101a2000();
     local_8 = (undefined4)(2);
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+    ((SCStr *)((SCStr *)&param_2))->int_release();
     ExceptionList = (void *)(local_10);
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIExperimentManagerProviderSwigBase_saveVariationsJson");
+  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::saveVariationsJson");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13374,7 +12963,7 @@ void __fastcall FUN_101446f0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBleDelegateSwigBase_sendQueuedPackets");
+  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::sendQueuedPackets");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13395,7 +12984,7 @@ void __fastcall FUN_10144750(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIUrlConnectionSwigBase_serialNum");
+  thunk_FUN_10118fc0("SCIUrlConnectionSwigBase::serialNum");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13422,7 +13011,7 @@ void __thiscall Recovered_Bulk::FUN_101447b0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIUrlSessionCallbackSwigBase_sessionComplete");
+  thunk_FUN_10118fc0("SCIUrlSessionCallbackSwigBase::sessionComplete");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13443,7 +13032,7 @@ void __thiscall Recovered_Bulk::FUN_10144860(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCILoggingProviderSwigBase_setAppLevel");
+  thunk_FUN_10118fc0("SCILoggingProviderSwigBase::setAppLevel");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13493,7 +13082,7 @@ void __thiscall Recovered_Bulk::FUN_101448c0(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCISecureStoreSwigBase_setBlob");
+  thunk_FUN_10118fc0("SCISecureStoreSwigBase::setBlob");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13534,7 +13123,7 @@ void __thiscall Recovered_Bulk::FUN_10144a00(undefined4 *param_2,undefined1 para
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCISavedDataProviderSwigBase_setBoolValue");
+  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::setBoolValue");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13561,7 +13150,7 @@ void __thiscall Recovered_Bulk::FUN_10144ae0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBTClassicConnectionProviderSwigBase_setCallback");
+  thunk_FUN_10118fc0("SCIBTClassicConnectionProviderSwigBase::setCallback");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13588,7 +13177,7 @@ void __thiscall Recovered_Bulk::FUN_10144b60(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWebsocketDelegateSwigBase_setCallback");
+  thunk_FUN_10118fc0("SCIWebsocketDelegateSwigBase::setCallback");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13626,12 +13215,12 @@ void __thiscall Recovered_Bulk::FUN_10144be0(undefined1 *param_2)
     (**(code **)(param_1 + 0x28))(uVar2);
     thunk_FUN_101a2000();
     local_8 = (undefined4)(2);
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+    ((SCStr *)((SCStr *)&param_2))->int_release();
     ExceptionList = (void *)(local_10);
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCISecurityContextSwigBase_setCertificateEnvironment");
+  thunk_FUN_10118fc0("SCISecurityContextSwigBase::setCertificateEnvironment");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13672,7 +13261,7 @@ void __thiscall Recovered_Bulk::FUN_10144cd0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIClipboardDelegateSwigBase_setClipboardData");
+  thunk_FUN_10118fc0("SCIClipboardDelegateSwigBase::setClipboardData");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13710,12 +13299,12 @@ void __thiscall Recovered_Bulk::FUN_10144db0(undefined1 *param_2)
     (**(code **)(param_1 + 0x18))(uVar2);
     thunk_FUN_101a2000();
     local_8 = (undefined4)(2);
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+    ((SCStr *)((SCStr *)&param_2))->int_release();
     ExceptionList = (void *)(local_10);
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCISecurityContextSwigBase_setCustomerID");
+  thunk_FUN_10118fc0("SCISecurityContextSwigBase::setCustomerID");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13772,7 +13361,7 @@ void __thiscall Recovered_Bulk::FUN_10144f90(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCILoggingProviderSwigBase_setFlutterLevel");
+  thunk_FUN_10118fc0("SCILoggingProviderSwigBase::setFlutterLevel");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13831,7 +13420,7 @@ void __thiscall Recovered_Bulk::FUN_10144ff0(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIExperimentManagerProviderSwigBase_setForcedVariation");
+  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::setForcedVariation");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13869,12 +13458,12 @@ void __thiscall Recovered_Bulk::FUN_101451a0(undefined1 *param_2)
     (**(code **)(param_1 + 0x10))(uVar2);
     thunk_FUN_101a2000();
     local_8 = (undefined4)(2);
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+    ((SCStr *)((SCStr *)&param_2))->int_release();
     ExceptionList = (void *)(local_10);
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCISecurityContextSwigBase_setHHID");
+  thunk_FUN_10118fc0("SCISecurityContextSwigBase::setHHID");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13915,7 +13504,7 @@ void __thiscall Recovered_Bulk::FUN_10145290(undefined4 *param_2,undefined4 para
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCISavedDataProviderSwigBase_setIntegerValue");
+  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::setIntegerValue");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13936,7 +13525,7 @@ void __thiscall Recovered_Bulk::FUN_10145370(undefined1 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBlePeripheralDelegateSwigBase_setRequireSecurePairing");
+  thunk_FUN_10118fc0("SCIBlePeripheralDelegateSwigBase::setRequireSecurePairing");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13963,7 +13552,7 @@ void __thiscall Recovered_Bulk::FUN_101453d0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIUrlConnectionSwigBase_setResponse");
+  thunk_FUN_10118fc0("SCIUrlConnectionSwigBase::setResponse");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -13984,7 +13573,7 @@ void __thiscall Recovered_Bulk::FUN_10145450(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIUrlConnectionSwigBase_setResult");
+  thunk_FUN_10118fc0("SCIUrlConnectionSwigBase::setResult");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14022,12 +13611,12 @@ void __thiscall Recovered_Bulk::FUN_101454b0(undefined1 *param_2)
     (**(code **)(param_1 + 0x20))(uVar2);
     thunk_FUN_101a2000();
     local_8 = (undefined4)(2);
-    ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+    ((SCStr *)((SCStr *)&param_2))->int_release();
     ExceptionList = (void *)(local_10);
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCISecurityContextSwigBase_setSerialNumber");
+  thunk_FUN_10118fc0("SCISecurityContextSwigBase::setSerialNumber");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14068,7 +13657,7 @@ void __thiscall Recovered_Bulk::FUN_101455a0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIStringInputSwigBase_setString");
+  thunk_FUN_10118fc0("SCIStringInputSwigBase::setString");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14118,7 +13707,7 @@ void __thiscall Recovered_Bulk::FUN_10145680(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCISavedDataProviderSwigBase_setStringValue");
+  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::setStringValue");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14168,7 +13757,7 @@ void __thiscall Recovered_Bulk::FUN_101457b0(undefined4 *param_2,undefined4 *par
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCICrashReportProviderSwigBase_setTag");
+  thunk_FUN_10118fc0("SCICrashReportProviderSwigBase::setTag");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14189,7 +13778,7 @@ void __fastcall FUN_101458e0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBleDelegateSwigBase_setTransferTestPacket");
+  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::setTransferTestPacket");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14210,7 +13799,7 @@ void __fastcall FUN_10145940(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_showExplicitBadge");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::showExplicitBadge");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14231,7 +13820,7 @@ void __fastcall FUN_101459a0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_showProgressInfo");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::showProgressInfo");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14252,7 +13841,7 @@ void __fastcall FUN_10145a00(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIAbilityDelegateSwigBase_shutdown");
+  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::shutdown");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14273,7 +13862,7 @@ void __fastcall FUN_10145a60(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBTAccessoryDelegateSwigBase_shutdown");
+  thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::shutdown");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14294,7 +13883,7 @@ void __fastcall FUN_10145ac0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBleDelegateSwigBase_shutdown");
+  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::shutdown");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14315,7 +13904,7 @@ void __fastcall FUN_10145b20(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBlePeripheralDelegateSwigBase_shutdown");
+  thunk_FUN_10118fc0("SCIBlePeripheralDelegateSwigBase::shutdown");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14336,7 +13925,7 @@ void __fastcall FUN_10145b80(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIChirpDelegateSwigBase_shutdown");
+  thunk_FUN_10118fc0("SCIChirpDelegateSwigBase::shutdown");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14357,7 +13946,7 @@ void __fastcall FUN_10145be0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIInAppPurchaseManagerProviderSwigBase_shutdown");
+  thunk_FUN_10118fc0("SCIInAppPurchaseManagerProviderSwigBase::shutdown");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14378,7 +13967,7 @@ void __fastcall FUN_10145c40(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCINfcDelegateSwigBase_shutdown");
+  thunk_FUN_10118fc0("SCINfcDelegateSwigBase::shutdown");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14399,7 +13988,7 @@ void __fastcall FUN_10145cb0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCICustomSubWizardSwigBase_skipStateOnBacktracking");
+  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::skipStateOnBacktracking");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14420,7 +14009,7 @@ void __fastcall FUN_10145d10(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibSonarCallback_sonarBegin");
+  thunk_FUN_10118fc0("SCLibSonarCallback::sonarBegin");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14441,7 +14030,7 @@ void __fastcall FUN_10145d70(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibSonarCallback_sonarEnd");
+  thunk_FUN_10118fc0("SCLibSonarCallback::sonarEnd");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14482,7 +14071,7 @@ void __thiscall Recovered_Bulk::FUN_10145dd0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIStackTraceCaptureDelegateSwigBase_stackTraceCaptured");
+  thunk_FUN_10118fc0("SCIStackTraceCaptureDelegateSwigBase::stackTraceCaptured");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14509,7 +14098,7 @@ void __thiscall Recovered_Bulk::FUN_10145eb0(undefined4 param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIVoiceServiceDelegateSwigBase_startAuthentication");
+  thunk_FUN_10118fc0("SCIVoiceServiceDelegateSwigBase::startAuthentication");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14530,7 +14119,7 @@ void __thiscall Recovered_Bulk::FUN_10145f30(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIChirpDelegateSwigBase_startChirpReceiving");
+  thunk_FUN_10118fc0("SCIChirpDelegateSwigBase::startChirpReceiving");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14551,7 +14140,7 @@ void __thiscall Recovered_Bulk::FUN_10145f90(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCICrashReportProviderSwigBase_startCrashReporter");
+  thunk_FUN_10118fc0("SCICrashReportProviderSwigBase::startCrashReporter");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14572,7 +14161,7 @@ void __fastcall FUN_10145ff0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBTAccessoryDelegateSwigBase_startDiscoveryScan");
+  thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::startDiscoveryScan");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14599,7 +14188,7 @@ void __thiscall Recovered_Bulk::FUN_10146050(undefined4 param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibSonarCallback_startMotionData");
+  thunk_FUN_10118fc0("SCLibSonarCallback::startMotionData");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14620,7 +14209,7 @@ void __fastcall FUN_101460d0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIMdnsDelegateSwigBase_startPlayerDiscovery");
+  thunk_FUN_10118fc0("SCIMdnsDelegateSwigBase::startPlayerDiscovery");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14647,7 +14236,7 @@ void __thiscall Recovered_Bulk::FUN_10146130(undefined4 param_2,int *param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibSonarCallback_startRawMotionData");
+  thunk_FUN_10118fc0("SCLibSonarCallback::startRawMotionData");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14687,12 +14276,12 @@ void __thiscall Recovered_Bulk::FUN_101461b0(undefined4 param_2,int *param_3,und
     (**(code **)(param_1 + 0x14))(param_2,param_3,param_4,param_5,param_6,param_7,uVar1);
     thunk_FUN_101a2000();
     local_8 = (undefined4)(2);
-    ((Stub_SCStr *)((SCStr *)&param_8))->int_release();
+    ((SCStr *)((SCStr *)&param_8))->int_release();
     ExceptionList = (void *)(local_10);
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibSonarCallback_startRecording");
+  thunk_FUN_10118fc0("SCLibSonarCallback::startRecording");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14713,7 +14302,7 @@ void __fastcall FUN_101462e0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCINfcDelegateSwigBase_startScan");
+  thunk_FUN_10118fc0("SCINfcDelegateSwigBase::startScan");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14734,7 +14323,7 @@ void __thiscall Recovered_Bulk::FUN_10146340(undefined1 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWifiDelegateSwigBase_startScan");
+  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::startScan");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14761,7 +14350,7 @@ void __thiscall Recovered_Bulk::FUN_101463b0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIUrlSessionProviderSwigBase_startURLSession");
+  thunk_FUN_10118fc0("SCIUrlSessionProviderSwigBase::startURLSession");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14782,7 +14371,7 @@ void __fastcall FUN_10146430(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIChirpDelegateSwigBase_stopChirpReceiving");
+  thunk_FUN_10118fc0("SCIChirpDelegateSwigBase::stopChirpReceiving");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14803,7 +14392,7 @@ void __fastcall FUN_10146490(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBTAccessoryDelegateSwigBase_stopDiscoveryScan");
+  thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::stopDiscoveryScan");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14824,7 +14413,7 @@ void __fastcall FUN_101464f0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibSonarCallback_stopMotionData");
+  thunk_FUN_10118fc0("SCLibSonarCallback::stopMotionData");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14845,7 +14434,7 @@ void __fastcall FUN_10146550(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIMdnsDelegateSwigBase_stopPlayerDiscovery");
+  thunk_FUN_10118fc0("SCIMdnsDelegateSwigBase::stopPlayerDiscovery");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14866,7 +14455,7 @@ void __fastcall FUN_101465b0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibSonarCallback_stopRawMotionData");
+  thunk_FUN_10118fc0("SCLibSonarCallback::stopRawMotionData");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14887,7 +14476,7 @@ void __fastcall FUN_10146610(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCLibSonarCallback_stopRecording");
+  thunk_FUN_10118fc0("SCLibSonarCallback::stopRecording");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14908,7 +14497,7 @@ void __fastcall FUN_10146670(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCINfcDelegateSwigBase_stopScan");
+  thunk_FUN_10118fc0("SCINfcDelegateSwigBase::stopScan");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14929,7 +14518,7 @@ void __fastcall FUN_101466d0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWifiDelegateSwigBase_stopScan");
+  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::stopScan");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14956,7 +14545,7 @@ void __thiscall Recovered_Bulk::FUN_10146770(int *param_2,undefined1 param_3)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_subscribe");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::subscribe");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -14977,7 +14566,7 @@ void __thiscall Recovered_Bulk::FUN_101467f0(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIAbilityDelegateSwigBase_suggestPrereq");
+  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::suggestPrereq");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15018,7 +14607,7 @@ void __thiscall Recovered_Bulk::FUN_10148a00(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBleDelegateSwigBase_tryConnect");
+  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::tryConnect");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15039,7 +14628,7 @@ void __fastcall FUN_10148ae0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBleDelegateSwigBase_tryDisconnect");
+  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::tryDisconnect");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15060,7 +14649,7 @@ void __thiscall Recovered_Bulk::FUN_10148b40(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBleDelegateSwigBase_tryFlushTransferTestBurst");
+  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::tryFlushTransferTestBurst");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15101,7 +14690,7 @@ void __thiscall Recovered_Bulk::FUN_10148ba0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBlePeripheralDelegateSwigBase_tryStartAdvertising");
+  thunk_FUN_10118fc0("SCIBlePeripheralDelegateSwigBase::tryStartAdvertising");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15122,7 +14711,7 @@ void __thiscall Recovered_Bulk::FUN_10148c80(undefined1 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBleDelegateSwigBase_tryStartScan");
+  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::tryStartScan");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15143,7 +14732,7 @@ void __fastcall FUN_10148ce0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBlePeripheralDelegateSwigBase_tryStopAdvertising");
+  thunk_FUN_10118fc0("SCIBlePeripheralDelegateSwigBase::tryStopAdvertising");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15164,7 +14753,7 @@ void __fastcall FUN_10148d40(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBleDelegateSwigBase_tryStopScan");
+  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::tryStopScan");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15191,7 +14780,7 @@ void __thiscall Recovered_Bulk::FUN_10148da0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBTAccessoryDelegateSwigBase_unregisterListener");
+  thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::unregisterListener");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15218,7 +14807,7 @@ void __thiscall Recovered_Bulk::FUN_10148e20(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBleDelegateSwigBase_unregisterListener");
+  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::unregisterListener");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15245,7 +14834,7 @@ void __thiscall Recovered_Bulk::FUN_10148ea0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBlePeripheralDelegateSwigBase_unregisterListener");
+  thunk_FUN_10118fc0("SCIBlePeripheralDelegateSwigBase::unregisterListener");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15272,7 +14861,7 @@ void __thiscall Recovered_Bulk::FUN_10148f20(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIChirpDelegateSwigBase_unregisterListener");
+  thunk_FUN_10118fc0("SCIChirpDelegateSwigBase::unregisterListener");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15299,7 +14888,7 @@ void __thiscall Recovered_Bulk::FUN_10148fa0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIMdnsDelegateSwigBase_unregisterListener");
+  thunk_FUN_10118fc0("SCIMdnsDelegateSwigBase::unregisterListener");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15326,7 +14915,7 @@ void __thiscall Recovered_Bulk::FUN_10149020(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCINfcDelegateSwigBase_unregisterListener");
+  thunk_FUN_10118fc0("SCINfcDelegateSwigBase::unregisterListener");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15353,7 +14942,7 @@ void __thiscall Recovered_Bulk::FUN_101490a0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIUrbanAirshipDelegateSwigBase_unregisterListener");
+  thunk_FUN_10118fc0("SCIUrbanAirshipDelegateSwigBase::unregisterListener");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15380,7 +14969,7 @@ void __thiscall Recovered_Bulk::FUN_10149120(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWifiDelegateSwigBase_unregisterListener");
+  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::unregisterListener");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15407,7 +14996,7 @@ void __thiscall Recovered_Bulk::FUN_101491a0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIBrowseItemSwigBase_unsubscribe");
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::unsubscribe");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15448,7 +15037,7 @@ void __thiscall Recovered_Bulk::FUN_10149220(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIGetAboutSonosStringCBSwigBase_updateGetAboutSonosString");
+  thunk_FUN_10118fc0("SCIGetAboutSonosStringCBSwigBase::updateGetAboutSonosString");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15489,7 +15078,7 @@ void __thiscall Recovered_Bulk::FUN_10149300(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCINfcDelegateSwigBase_updateNfcCardMessage");
+  thunk_FUN_10118fc0("SCINfcDelegateSwigBase::updateNfcCardMessage");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15510,7 +15099,7 @@ void __fastcall FUN_101493e0(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIInAppMessagingProviderSwigBase_updateRegistration");
+  thunk_FUN_10118fc0("SCIInAppMessagingProviderSwigBase::updateRegistration");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15537,7 +15126,7 @@ void __thiscall Recovered_Bulk::FUN_10149440(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCICrashReportProviderSwigBase_updateUser");
+  thunk_FUN_10118fc0("SCICrashReportProviderSwigBase::updateUser");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15564,7 +15153,7 @@ void __thiscall Recovered_Bulk::FUN_101495b0(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCISecurityContextSwigBase_validateCertificateChain");
+  thunk_FUN_10118fc0("SCISecurityContextSwigBase::validateCertificateChain");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15591,7 +15180,7 @@ void __thiscall Recovered_Bulk::FUN_10149630(int *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCISecurityContextSwigBase_validateCertificateData");
+  thunk_FUN_10118fc0("SCISecurityContextSwigBase::validateCertificateData");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15612,7 +15201,7 @@ void __thiscall Recovered_Bulk::FUN_101496b0(undefined4 param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIHapticDelegateSwigBase_vibrate");
+  thunk_FUN_10118fc0("SCIHapticDelegateSwigBase::vibrate");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15633,7 +15222,7 @@ void __fastcall FUN_10149740(int param_1)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWebsocketDelegateSwigBase_writeData");
+  thunk_FUN_10118fc0("SCIWebsocketDelegateSwigBase::writeData");
                     
   _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15674,7 +15263,7 @@ void __thiscall Recovered_Bulk::FUN_101497b0(undefined4 *param_2)
     thunk_FUN_1148ac28();
     return;
   }
-  thunk_FUN_10118fc0("(uint)&Ext_SCIWebsocketDelegateSwigBase_writeString");
+  thunk_FUN_10118fc0("SCIWebsocketDelegateSwigBase::writeString");
                     
   _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
 }
@@ -15731,15 +15320,15 @@ __stdcall FUN_1014cf50(int *param_1,ushort *param_2,ushort *param_3,ushort *para
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_20 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_20))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_20))->setFromUTF16(param_2);
   local_1c = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_1c))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&local_1c))->setFromUTF16(param_3);
   local_18 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_18))->setFromUTF16(param_4);
+  ((SCStr *)((SCStr *)&local_18))->setFromUTF16(param_4);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_5);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_5);
   param_2 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_6);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_6);
   puVar2 = (undefined4 *)((undefined4 *)
            (**(code **)(*param_1 + 0x20))
                      (&param_3,&local_20,&local_1c,&local_18,&local_14,&param_2,param_7,param_8));
@@ -15750,19 +15339,19 @@ __stdcall FUN_1014cf50(int *param_1,ushort *param_2,ushort *param_3,ushort *para
     (**(code **)(*(int *)param_3 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(2);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   local_14 = (undefined4)(0);
   local_8 = (undefined4)(3);
-  ((Stub_SCStr *)((SCStr *)&local_18))->int_release();
+  ((SCStr *)((SCStr *)&local_18))->int_release();
   local_18 = (undefined4)(0);
   local_8 = (undefined4)(4);
-  ((Stub_SCStr *)((SCStr *)&local_1c))->int_release();
+  ((SCStr *)((SCStr *)&local_1c))->int_release();
   local_1c = (undefined4)(0);
   local_8 = (undefined4)(5);
-  ((Stub_SCStr *)((SCStr *)&local_20))->int_release();
+  ((SCStr *)((SCStr *)&local_20))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -15910,10 +15499,10 @@ void __stdcall FUN_1014d5a0(int *param_1,ushort *param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0x24))(&local_14,uVar1);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -15947,62 +15536,6 @@ undefined4 FUN_1014d690(int *param_1)
   }
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
-}
-
-
-// Reference entry 1014dac0; body size 257 bytes.
-#line 1 "ENTRY_1014dac0"
-
-SCStr * __stdcall FUN_1014dac0(int *param_1)
-
-{
-  uint uVar1;
-  SCStr *pSVar2;
-  undefined4 local_24 [2];
-  undefined4 local_1c;
-  undefined4 local_18;
-  undefined4 local_14;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e45d0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_1c = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_allocRep("none");
-  ((Stub_SCStr *)((SCStr *)&local_1c))->int_release();
-  local_1c = (undefined4)(local_14);
-  ((Stub_SCStr *)((SCStr *)&local_1c))->int_addref();
-  local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
-  local_8 = (undefined4)(0xffffffff);
-  local_18 = (undefined4)(0);
-  pSVar2 = (SCStr *)((SCStr *)(**(code **)(*param_1 + 0x24))(local_24,uVar1));
-  if (pSVar2 != (SCStr *)&local_1c) {
-    ((Stub_SCStr *)((SCStr *)&local_1c))->int_release();
-    local_1c = (undefined4)(*(undefined4 *)pSVar2);
-    ((Stub_SCStr *)((SCStr *)&local_1c))->int_addref();
-  }
-  local_18 = (undefined4)(*(undefined4 *)(pSVar2 + 4));
-  local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)local_24))->int_release();
-  local_24[0] = 0;
-  local_8 = (undefined4)(0xffffffff);
-  pSVar2 = (SCStr *)(operator_new(8));
-  if (pSVar2 == (SCStr *)0x0) {
-    pSVar2 = (SCStr *)((SCStr *)0x0);
-  }
-  else {
-    ((Stub_SCStr *)(pSVar2))->SCStr((SCStr *)&local_1c);
-    *(undefined4 *)(pSVar2 + 4) = local_18;
-  }
-  local_8 = (undefined4)(2);
-  ((Stub_SCStr *)((SCStr *)&local_1c))->int_release();
-  ExceptionList = (void *)(local_10);
-  return (SCStr *)(pSVar2);
 }
 
 
@@ -16073,7 +15606,7 @@ undefined4 __stdcall FUN_1014df80(int *param_1,undefined4 param_2,ushort *param_
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_3);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x34))(&param_3,param_2,&local_14,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
@@ -16082,7 +15615,7 @@ undefined4 __stdcall FUN_1014df80(int *param_1,undefined4 param_2,ushort *param_
     (**(code **)(*(int *)param_3 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -16108,9 +15641,9 @@ undefined4 __stdcall FUN_1014e030(int *param_1,ushort *param_2,ushort *param_3)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 100))(&param_3,&local_14,&param_2,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
@@ -16119,10 +15652,10 @@ undefined4 __stdcall FUN_1014e030(int *param_1,ushort *param_2,ushort *param_3)
     (**(code **)(*(int *)param_3 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(2);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -16210,9 +15743,9 @@ undefined4 __stdcall FUN_1014e260(int *param_1,ushort *param_2,ushort *param_3,u
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x5c))(&param_3,&local_14,&param_2,param_4,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
@@ -16221,10 +15754,10 @@ undefined4 __stdcall FUN_1014e260(int *param_1,ushort *param_2,ushort *param_3,u
     (**(code **)(*(int *)param_3 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(2);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -16254,17 +15787,17 @@ __stdcall FUN_1014e350(int *param_1,ushort *param_2,ushort *param_3,ushort *para
   local_10 = (void *)(ExceptionList);
   ExceptionList = (void *)(&local_10);
   local_24 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_24))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_24))->setFromUTF16(param_2);
   local_20 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_20))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&local_20))->setFromUTF16(param_3);
   local_1c = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_1c))->setFromUTF16(param_4);
+  ((SCStr *)((SCStr *)&local_1c))->setFromUTF16(param_4);
   local_18 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_18))->setFromUTF16(param_5);
+  ((SCStr *)((SCStr *)&local_18))->setFromUTF16(param_5);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_7);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_7);
   param_2 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_8);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_8);
   puVar2 = (undefined4 *)((undefined4 *)
            (**(code **)(*param_1 + 0x4c))
                      (&param_3,&local_24,&local_20,&local_1c,&local_18,param_6,&local_14,&param_2,
@@ -16276,22 +15809,22 @@ __stdcall FUN_1014e350(int *param_1,ushort *param_2,ushort *param_3,ushort *para
     (**(code **)(*(int *)param_3 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(2);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   local_14 = (undefined4)(0);
   local_8 = (undefined4)(3);
-  ((Stub_SCStr *)((SCStr *)&local_18))->int_release();
+  ((SCStr *)((SCStr *)&local_18))->int_release();
   local_18 = (undefined4)(0);
   local_8 = (undefined4)(4);
-  ((Stub_SCStr *)((SCStr *)&local_1c))->int_release();
+  ((SCStr *)((SCStr *)&local_1c))->int_release();
   local_1c = (undefined4)(0);
   local_8 = (undefined4)(5);
-  ((Stub_SCStr *)((SCStr *)&local_20))->int_release();
+  ((SCStr *)((SCStr *)&local_20))->int_release();
   local_20 = (undefined4)(0);
   local_8 = (undefined4)(6);
-  ((Stub_SCStr *)((SCStr *)&local_24))->int_release();
+  ((SCStr *)((SCStr *)&local_24))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -16317,7 +15850,7 @@ undefined4 __stdcall FUN_1014e520(int *param_1,ushort *param_2)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x7c))(&param_2,&local_14,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
@@ -16326,7 +15859,7 @@ undefined4 __stdcall FUN_1014e520(int *param_1,ushort *param_2)
     (**(code **)(*(int *)param_2 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -16352,9 +15885,9 @@ undefined4 __stdcall FUN_1014e5d0(int *param_1,ushort *param_2,ushort *param_3)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x2c))(&param_3,&local_14,&param_2,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
@@ -16363,10 +15896,10 @@ undefined4 __stdcall FUN_1014e5d0(int *param_1,ushort *param_2,ushort *param_3)
     (**(code **)(*(int *)param_3 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(2);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -16395,11 +15928,11 @@ __stdcall FUN_1014e6c0(int *param_1,ushort *param_2,ushort *param_3,ushort *para
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_18 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_18))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_18))->setFromUTF16(param_2);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_3);
   param_2 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_4);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_4);
   puVar3 = (undefined4 *)((undefined4 *)
            (**(code **)(*param_1 + 0x50))
                      (&param_3,&local_18,&local_14,&param_2,param_5,param_6,param_7,uVar2));
@@ -16410,13 +15943,13 @@ __stdcall FUN_1014e6c0(int *param_1,ushort *param_2,ushort *param_3,ushort *para
     (**(code **)(*(int *)param_3 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(2);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   local_14 = (undefined4)(0);
   local_8 = (undefined4)(3);
-  ((Stub_SCStr *)((SCStr *)&local_18))->int_release();
+  ((SCStr *)((SCStr *)&local_18))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -16446,13 +15979,13 @@ __stdcall FUN_1014e7f0(int *param_1,ushort *param_2,ushort *param_3,ushort *para
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_1c = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_1c))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_1c))->setFromUTF16(param_2);
   local_18 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_18))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&local_18))->setFromUTF16(param_3);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_4);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_4);
   param_2 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_5);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_5);
   puVar3 = (undefined4 *)((undefined4 *)
            (**(code **)(*param_1 + 0x40))
                      (&param_3,&local_1c,&local_18,&local_14,&param_2,param_6,param_7,param_8,uVar2));
@@ -16463,16 +15996,16 @@ __stdcall FUN_1014e7f0(int *param_1,ushort *param_2,ushort *param_3,ushort *para
     (**(code **)(*(int *)param_3 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(2);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   local_14 = (undefined4)(0);
   local_8 = (undefined4)(3);
-  ((Stub_SCStr *)((SCStr *)&local_18))->int_release();
+  ((SCStr *)((SCStr *)&local_18))->int_release();
   local_18 = (undefined4)(0);
   local_8 = (undefined4)(4);
-  ((Stub_SCStr *)((SCStr *)&local_1c))->int_release();
+  ((SCStr *)((SCStr *)&local_1c))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -16503,14 +16036,14 @@ __stdcall FUN_1014e950(int *param_1,ushort *param_2,ushort *param_3,ushort *para
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_1c = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_1c))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_1c))->setFromUTF16(param_2);
   local_18 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_18))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&local_18))->setFromUTF16(param_3);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_4);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_4);
   param_3 = (ushort *)((ushort *)((uint)(*(unsigned short *)((char *)&param_3 + 1)) << 8 | (uint)(param_5 != 0)));
   param_2 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_10);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_10);
   puVar3 = (undefined4 *)((undefined4 *)
            (**(code **)(*param_1 + 0x44))
                      (&param_4,&local_1c,&local_18,&local_14,param_3,param_6,param_7,param_8,param_9
@@ -16522,16 +16055,16 @@ __stdcall FUN_1014e950(int *param_1,ushort *param_2,ushort *param_3,ushort *para
     (**(code **)(*(int *)param_4 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(2);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   local_14 = (undefined4)(0);
   local_8 = (undefined4)(3);
-  ((Stub_SCStr *)((SCStr *)&local_18))->int_release();
+  ((SCStr *)((SCStr *)&local_18))->int_release();
   local_18 = (undefined4)(0);
   local_8 = (undefined4)(4);
-  ((Stub_SCStr *)((SCStr *)&local_1c))->int_release();
+  ((SCStr *)((SCStr *)&local_1c))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -16559,9 +16092,9 @@ __stdcall FUN_1014eac0(int *param_1,ushort *param_2,undefined4 param_3,undefined
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_7);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_7);
   param_8 = (int)(((uint)(*(unsigned short *)((char *)&param_8 + 1)) << 8 | (uint)(param_8 != 0)));
   param_7 = (ushort *)((ushort *)((uint)(*(unsigned short *)((char *)&param_7 + 1)) << 8 | (uint)(param_9 != 0)));
   puVar3 = (undefined4 *)((undefined4 *)
@@ -16575,10 +16108,10 @@ __stdcall FUN_1014eac0(int *param_1,ushort *param_2,undefined4 param_3,undefined
     (**(code **)(*(int *)param_7 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(2);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -16604,7 +16137,7 @@ undefined4 __stdcall FUN_1014ebd0(int *param_1,ushort *param_2,undefined4 param_
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x24))(&param_2,&local_14,param_3,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
@@ -16613,7 +16146,7 @@ undefined4 __stdcall FUN_1014ebd0(int *param_1,ushort *param_2,undefined4 param_
     (**(code **)(*(int *)param_2 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -16641,11 +16174,11 @@ __stdcall FUN_1014ec80(int *param_1,ushort *param_2,ushort *param_3,ushort *para
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_18 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_18))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_18))->setFromUTF16(param_2);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_3);
   param_2 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_4);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_4);
   puVar3 = (undefined4 *)((undefined4 *)
            (**(code **)(*param_1 + 0x48))(&param_3,&local_18,&local_14,&param_2,param_5,uVar2));
   uVar1 = (undefined4)(*puVar3);
@@ -16655,13 +16188,13 @@ __stdcall FUN_1014ec80(int *param_1,ushort *param_2,ushort *param_3,ushort *para
     (**(code **)(*(int *)param_3 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(2);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   local_14 = (undefined4)(0);
   local_8 = (undefined4)(3);
-  ((Stub_SCStr *)((SCStr *)&local_18))->int_release();
+  ((SCStr *)((SCStr *)&local_18))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -16687,9 +16220,9 @@ undefined4 __stdcall FUN_1014eda0(int *param_1,ushort *param_2,ushort *param_3,u
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x54))(&param_3,&local_14,&param_2,param_4,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
@@ -16698,10 +16231,10 @@ undefined4 __stdcall FUN_1014eda0(int *param_1,ushort *param_2,ushort *param_3,u
     (**(code **)(*(int *)param_3 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(2);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -16727,9 +16260,9 @@ undefined4 __stdcall FUN_1014ee90(int *param_1,ushort *param_2,ushort *param_3,u
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x60))(&param_3,&local_14,&param_2,param_4,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
@@ -16738,10 +16271,10 @@ undefined4 __stdcall FUN_1014ee90(int *param_1,ushort *param_2,ushort *param_3,u
     (**(code **)(*(int *)param_3 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(2);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -16798,9 +16331,9 @@ undefined4 __stdcall FUN_1014f020(int *param_1,ushort *param_2,ushort *param_3)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x78))(&param_3,&local_14,&param_2,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
@@ -16809,10 +16342,10 @@ undefined4 __stdcall FUN_1014f020(int *param_1,ushort *param_2,ushort *param_3)
     (**(code **)(*(int *)param_3 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(2);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -16838,7 +16371,7 @@ undefined4 __stdcall FUN_1014f110(int *param_1,ushort *param_2)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x80))(&param_2,&local_14,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
@@ -16847,7 +16380,7 @@ undefined4 __stdcall FUN_1014f110(int *param_1,ushort *param_2)
     (**(code **)(*(int *)param_2 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -16905,9 +16438,9 @@ undefined4 __stdcall FUN_1014f260(int *param_1,ushort *param_2,ushort *param_3)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x74))(&param_3,&local_14,&param_2,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
@@ -16916,10 +16449,10 @@ undefined4 __stdcall FUN_1014f260(int *param_1,ushort *param_2,ushort *param_3)
     (**(code **)(*(int *)param_3 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(2);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -17008,9 +16541,9 @@ undefined4 __stdcall FUN_1014f490(int *param_1,ushort *param_2,ushort *param_3,i
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   param_3 = (ushort *)((ushort *)((uint)(*(unsigned short *)((char *)&param_3 + 1)) << 8 | (uint)(param_4 != 0)));
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x28))(&param_3,&local_14,&param_2,param_3,uVar2));
   uVar1 = (undefined4)(*puVar3);
@@ -17020,10 +16553,10 @@ undefined4 __stdcall FUN_1014f490(int *param_1,ushort *param_2,ushort *param_3,i
     (**(code **)(*(int *)param_3 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(2);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -17060,40 +16593,6 @@ undefined4 FUN_1014f580(int *param_1,undefined4 param_2)
 }
 
 
-// Reference entry 1014f620; body size 143 bytes.
-#line 1 "ENTRY_1014f620"
-
-undefined4 __stdcall FUN_1014f620(int *param_1,undefined4 param_2,ushort *param_3)
-
-{
-  undefined4 uVar1;
-  undefined4 *puVar2;
-  undefined4 local_14;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e4b10);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_3);
-  ((Stub_SCStr *)((SCStr *)&stack0xffffffe0))->SCStr((SCStr *)&local_14);
-  puVar2 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x1c))(&param_3,param_2));
-  uVar1 = (undefined4)(*puVar2);
-  *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
-  if (param_3 != (ushort *)0x0) {
-    (**(code **)(*(int *)param_3 + 8))();
-  }
-  local_8 = (undefined4)(2);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
-  return (undefined4)(uVar1);
-}
-
-
 // Reference entry 1014f6e0; body size 149 bytes.
 #line 1 "ENTRY_1014f6e0"
 
@@ -17116,7 +16615,7 @@ __stdcall FUN_1014f6e0(int *param_1,int param_2,ushort *param_3,undefined4 param
   ExceptionList = (void *)(&local_10);
   bVar4 = (bool)(param_2 != 0);
   param_2 = (int)(0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   puVar3 = (undefined4 *)((undefined4 *)
            (**(code **)(*param_1 + 0x68))(&param_3,bVar4,&param_2,param_4,param_5,uVar2));
   uVar1 = (undefined4)(*puVar3);
@@ -17126,7 +16625,7 @@ __stdcall FUN_1014f6e0(int *param_1,int param_2,ushort *param_3,undefined4 param
     (**(code **)(*(int *)param_3 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -17277,7 +16776,7 @@ undefined4 __stdcall FUN_1014fae0(int *param_1,ushort *param_2)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x34))(&param_2,&local_14,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
@@ -17286,7 +16785,7 @@ undefined4 __stdcall FUN_1014fae0(int *param_1,ushort *param_2)
     (**(code **)(*(int *)param_2 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -17375,7 +16874,7 @@ undefined4 __stdcall FUN_1014fd90(int *param_1,ushort *param_2)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x34))(&param_2,&local_14,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
@@ -17384,7 +16883,7 @@ undefined4 __stdcall FUN_1014fd90(int *param_1,ushort *param_2)
     (**(code **)(*(int *)param_2 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -17410,7 +16909,7 @@ undefined4 __stdcall FUN_1014fe80(int *param_1,ushort *param_2,undefined4 param_
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x34))(&param_2,&local_14,param_3,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
@@ -17419,7 +16918,7 @@ undefined4 __stdcall FUN_1014fe80(int *param_1,ushort *param_2,undefined4 param_
     (**(code **)(*(int *)param_2 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -18002,10 +17501,10 @@ void __stdcall FUN_10151790(int *param_1,ushort *param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0x4c))(&local_14,uVar1);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -18029,15 +17528,15 @@ void __stdcall FUN_101519e0(int *param_1,ushort *param_2,ushort *param_3,undefin
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   (**(code **)(*param_1 + 0x14))(&local_14,&param_2,param_4,uVar1);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -18061,10 +17560,10 @@ void __stdcall FUN_10151ac0(int *param_1,ushort *param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0x80))(&local_14,uVar1);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -18087,10 +17586,10 @@ void __stdcall FUN_10151b50(int *param_1)
   local_10 = (void *)(ExceptionList);
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
-  ((Stub_SCStr *)(local_14))->int_allocRep("");
+  ((SCStr *)(local_14))->int_allocRep("");
   (**(code **)(*param_1 + 0x80))(local_14,uVar1);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)(local_14))->int_release();
+  ((SCStr *)(local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -18115,10 +17614,10 @@ void __stdcall FUN_10151bd0(int *param_1,int param_2,ushort *param_3)
   ExceptionList = (void *)(&local_10);
   bVar2 = (bool)(param_2 != 0);
   param_2 = (int)(0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   (**(code **)(*param_1 + 0x7c))(bVar2,&param_2,uVar1);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -18142,10 +17641,10 @@ void __stdcall FUN_10151c60(int *param_1,int param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   bVar2 = (bool)(param_2 != 0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_allocRep("");
+  ((SCStr *)((SCStr *)&param_2))->int_allocRep("");
   (**(code **)(*param_1 + 0x7c))(bVar2,&param_2,uVar1);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -18170,15 +17669,15 @@ undefined4 __stdcall FUN_10151d10(int *param_1,undefined4 param_2,ushort *param_
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_3);
   param_3 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_3))->setFromUTF16(param_4);
+  ((SCStr *)((SCStr *)&param_3))->setFromUTF16(param_4);
   uVar2 = (undefined4)((**(code **)(*param_1 + 0x28))(param_2,&local_14,&param_3,uVar1));
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&param_3))->int_release();
+  ((SCStr *)((SCStr *)&param_3))->int_release();
   param_3 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar2);
 }
@@ -18202,15 +17701,15 @@ void __stdcall FUN_10152180(int *param_1,ushort *param_2,ushort *param_3,undefin
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   (**(code **)(*param_1 + 0x18))(&local_14,&param_2,param_4,uVar1);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -18234,10 +17733,10 @@ void __stdcall FUN_10152240(int *param_1,ushort *param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0x50))(&local_14,uVar1);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -18261,10 +17760,10 @@ void __stdcall FUN_101522c0(int *param_1,ushort *param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0x68))(&local_14,uVar1);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -18288,10 +17787,10 @@ void __stdcall FUN_10152340(int *param_1,ushort *param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0x70))(&local_14,uVar1);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -18315,10 +17814,10 @@ void __stdcall FUN_101524a0(int *param_1,undefined4 param_2,ushort *param_3)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_3);
   (**(code **)(*param_1 + 0x34))(param_2,&local_14,uVar1);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -18342,10 +17841,10 @@ void __stdcall FUN_10152530(int *param_1,undefined4 param_2,ushort *param_3,unde
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_3);
   (**(code **)(*param_1 + 0x30))(param_2,&local_14,param_4,uVar1);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -18370,10 +17869,10 @@ undefined1 __stdcall FUN_101527d0(int *param_1,ushort *param_2,undefined4 param_
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   uVar1 = (undefined1)((**(code **)(*param_1 + 0x20))(&local_14,param_3,param_4 != 0,uVar2));
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined1)(uVar1);
 }
@@ -18398,10 +17897,10 @@ undefined1 __stdcall FUN_10152870(int *param_1,ushort *param_2,undefined4 param_
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   uVar1 = (undefined1)((**(code **)(*param_1 + 0x20))(&local_14,param_3,0,uVar2));
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined1)(uVar1);
 }
@@ -18521,7 +18020,7 @@ undefined4 __stdcall FUN_10152db0(int *param_1,ushort *param_2)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   puVar3 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x18))(&param_2,&local_14,uVar2));
   uVar1 = (undefined4)(*puVar3);
   *puVar3 = (undefined4)(0);
@@ -18530,7 +18029,7 @@ undefined4 __stdcall FUN_10152db0(int *param_1,ushort *param_2)
     (**(code **)(*(int *)param_2 + 8))();
   }
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
 }
@@ -18555,15 +18054,15 @@ undefined1 __stdcall FUN_10152e60(int *param_1,ushort *param_2,ushort *param_3,u
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   uVar1 = (undefined1)((**(code **)(*param_1 + 0x28))(&local_14,&param_2,param_4,uVar2));
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined1)(uVar1);
 }
@@ -18588,10 +18087,10 @@ undefined1 __stdcall FUN_10152f30(int *param_1,ushort *param_2,int param_3)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   uVar1 = (undefined1)((**(code **)(*param_1 + 0x24))(&local_14,param_3 != 0,uVar2));
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined1)(uVar1);
 }
@@ -18616,10 +18115,10 @@ undefined1 __stdcall FUN_10152fd0(int *param_1,ushort *param_2)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   uVar1 = (undefined1)((**(code **)(*param_1 + 0x24))(&local_14,0,uVar2));
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined1)(uVar1);
 }
@@ -18653,32 +18152,6 @@ undefined4 FUN_10153070(int *param_1)
   }
   ExceptionList = (void *)(local_10);
   return (undefined4)(uVar1);
-}
-
-
-// Reference entry 10153330; body size 105 bytes.
-#line 1 "ENTRY_10153330"
-
-void __stdcall FUN_10153330(int *param_1,ushort *param_2)
-
-{
-  undefined4 local_14;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5830);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
-  ((Stub_SCStr *)((SCStr *)&stack0xffffffe4))->SCStr((SCStr *)&local_14);
-  (**(code **)(*param_1 + 0x18))();
-  local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
-  return;
 }
 
 
@@ -18870,98 +18343,6 @@ undefined4 FUN_10153720(int *param_1,undefined4 param_2,undefined4 param_3,undef
 }
 
 
-// Reference entry 101538c0; body size 143 bytes.
-#line 1 "ENTRY_101538c0"
-
-undefined4 __stdcall FUN_101538c0(int *param_1,ushort *param_2,undefined4 param_3)
-
-{
-  undefined4 uVar1;
-  undefined4 *puVar2;
-  undefined4 uStack_24;
-  undefined4 local_14;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e59b0);
-  local_10 = (void *)(ExceptionList);
-  ExceptionList = (void *)(&local_10);
-  local_14 = (undefined4)(0);
-  uStack_24 = (undefined4)(0x101538f6);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
-  ((Stub_SCStr *)((SCStr *)&uStack_24))->SCStr((SCStr *)&local_14);
-  puVar2 = (undefined4 *)((undefined4 *)(**(code **)(*param_1 + 0x14))(&param_2));
-  uVar1 = (undefined4)(*puVar2);
-  *puVar2 = (undefined4)(0);
-  local_8 = (undefined4)(0);
-  if (param_2 != (ushort *)0x0) {
-    (**(code **)(*(int *)param_2 + 8))();
-  }
-  local_8 = (undefined4)(2);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
-  ExceptionList = (void *)(local_10);
-  return (undefined4)(uVar1);
-}
-
-
-// Reference entry 101539f0; body size 257 bytes.
-#line 1 "ENTRY_101539f0"
-
-SCStr * __stdcall FUN_101539f0(int *param_1)
-
-{
-  uint uVar1;
-  SCStr *pSVar2;
-  undefined4 local_24 [2];
-  undefined4 local_1c;
-  undefined4 local_18;
-  undefined4 local_14;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e59e0);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_1c = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_allocRep("none");
-  ((Stub_SCStr *)((SCStr *)&local_1c))->int_release();
-  local_1c = (undefined4)(local_14);
-  ((Stub_SCStr *)((SCStr *)&local_1c))->int_addref();
-  local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
-  local_8 = (undefined4)(0xffffffff);
-  local_18 = (undefined4)(0);
-  pSVar2 = (SCStr *)((SCStr *)(**(code **)(*param_1 + 0x40))(local_24,uVar1));
-  if (pSVar2 != (SCStr *)&local_1c) {
-    ((Stub_SCStr *)((SCStr *)&local_1c))->int_release();
-    local_1c = (undefined4)(*(undefined4 *)pSVar2);
-    ((Stub_SCStr *)((SCStr *)&local_1c))->int_addref();
-  }
-  local_18 = (undefined4)(*(undefined4 *)(pSVar2 + 4));
-  local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)local_24))->int_release();
-  local_24[0] = 0;
-  local_8 = (undefined4)(0xffffffff);
-  pSVar2 = (SCStr *)(operator_new(8));
-  if (pSVar2 == (SCStr *)0x0) {
-    pSVar2 = (SCStr *)((SCStr *)0x0);
-  }
-  else {
-    ((Stub_SCStr *)(pSVar2))->SCStr((SCStr *)&local_1c);
-    *(undefined4 *)(pSVar2 + 4) = local_18;
-  }
-  local_8 = (undefined4)(2);
-  ((Stub_SCStr *)((SCStr *)&local_1c))->int_release();
-  ExceptionList = (void *)(local_10);
-  return (SCStr *)(pSVar2);
-}
-
-
 // Reference entry 101541e0; body size 74 bytes.
 #line 1 "ENTRY_101541e0"
 
@@ -19035,10 +18416,10 @@ undefined1 __stdcall FUN_10154310(int *param_1,ushort *param_2)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   uVar1 = (undefined1)((**(code **)(*param_1 + 0x18))(&local_14,uVar2));
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined1)(uVar1);
 }
@@ -19062,10 +18443,10 @@ void __stdcall FUN_101543d0(int *param_1,ushort *param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0x24))(&local_14,uVar1);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -19089,10 +18470,10 @@ void __stdcall FUN_101544d0(int *param_1,ushort *param_2,undefined4 param_3)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0x14))(&local_14,param_3,uVar1);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -19116,16 +18497,16 @@ void __stdcall FUN_10154560(int *param_1,ushort *param_2,ushort *param_3,int par
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   param_3 = (ushort *)((ushort *)((uint)(*(unsigned short *)((char *)&param_3 + 1)) << 8 | (uint)(param_4 != 0)));
   (**(code **)(*param_1 + 0x1c))(&local_14,&param_2,param_3,uVar1);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -19149,15 +18530,15 @@ void __stdcall FUN_10154630(int *param_1,ushort *param_2,ushort *param_3,undefin
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   (**(code **)(*param_1 + 0x20))(&local_14,&param_2,param_4,uVar1);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -19182,15 +18563,15 @@ undefined1 __stdcall FUN_10154a20(int *param_1,ushort *param_2,ushort *param_3)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   param_2 = (ushort *)((ushort *)0x0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   uVar1 = (undefined1)((**(code **)(*param_1 + 0x20))(&local_14,&param_2,uVar2));
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined1)(uVar1);
 }
@@ -19215,71 +18596,15 @@ undefined1 __stdcall FUN_10154af0(int *param_1,ushort *param_2)
   uVar2 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_allocRep((char *)0x0);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&param_2))->int_allocRep((char *)0x0);
   uVar1 = (undefined1)((**(code **)(*param_1 + 0x20))(&local_14,&param_2,uVar2));
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&param_2))->int_release();
+  ((SCStr *)((SCStr *)&param_2))->int_release();
   local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return (undefined1)(uVar1);
-}
-
-
-// Reference entry 101550e0; body size 257 bytes.
-#line 1 "ENTRY_101550e0"
-
-SCStr * __stdcall FUN_101550e0(int *param_1)
-
-{
-  uint uVar1;
-  SCStr *pSVar2;
-  undefined4 local_24 [2];
-  undefined4 local_1c;
-  undefined4 local_18;
-  undefined4 local_14;
-  void *local_10;
-  undefined1 *puStack_c;
-  undefined4 local_8;
-  
-  local_8 = (undefined4)(0xffffffff);
-  puStack_c = (undefined1 *)(LAB_114e5d40);
-  local_10 = (void *)(ExceptionList);
-  uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
-  ExceptionList = (void *)(&local_10);
-  local_1c = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_allocRep("none");
-  ((Stub_SCStr *)((SCStr *)&local_1c))->int_release();
-  local_1c = (undefined4)(local_14);
-  ((Stub_SCStr *)((SCStr *)&local_1c))->int_addref();
-  local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
-  local_8 = (undefined4)(0xffffffff);
-  local_18 = (undefined4)(0);
-  pSVar2 = (SCStr *)((SCStr *)(**(code **)(*param_1 + 0x18))(local_24,uVar1));
-  if (pSVar2 != (SCStr *)&local_1c) {
-    ((Stub_SCStr *)((SCStr *)&local_1c))->int_release();
-    local_1c = (undefined4)(*(undefined4 *)pSVar2);
-    ((Stub_SCStr *)((SCStr *)&local_1c))->int_addref();
-  }
-  local_18 = (undefined4)(*(undefined4 *)(pSVar2 + 4));
-  local_8 = (undefined4)(1);
-  ((Stub_SCStr *)((SCStr *)local_24))->int_release();
-  local_24[0] = 0;
-  local_8 = (undefined4)(0xffffffff);
-  pSVar2 = (SCStr *)(operator_new(8));
-  if (pSVar2 == (SCStr *)0x0) {
-    pSVar2 = (SCStr *)((SCStr *)0x0);
-  }
-  else {
-    ((Stub_SCStr *)(pSVar2))->SCStr((SCStr *)&local_1c);
-    *(undefined4 *)(pSVar2 + 4) = local_18;
-  }
-  local_8 = (undefined4)(2);
-  ((Stub_SCStr *)((SCStr *)&local_1c))->int_release();
-  ExceptionList = (void *)(local_10);
-  return (SCStr *)(pSVar2);
 }
 
 
@@ -19329,10 +18654,10 @@ void __stdcall FUN_101554f0(int *param_1,ushort *param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0x1c))(&local_14,uVar1);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -19378,10 +18703,10 @@ void __stdcall FUN_101558b0(int *param_1,ushort *param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0x18))(&local_14,uVar1);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return;
 }
@@ -19405,10 +18730,10 @@ void __stdcall FUN_101559c0(int *param_1,ushort *param_2)
   uVar1 = (uint)(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   ExceptionList = (void *)(&local_10);
   local_14 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
   (**(code **)(*param_1 + 0xc4))(&local_14,uVar1);
   local_8 = (undefined4)(0);
-  ((Stub_SCStr *)((SCStr *)&local_14))->int_release();
+  ((SCStr *)((SCStr *)&local_14))->int_release();
   ExceptionList = (void *)(local_10);
   return;
 }
