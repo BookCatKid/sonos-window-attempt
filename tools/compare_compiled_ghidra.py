@@ -141,6 +141,31 @@ def function_symbols(sections, symbols, symbols_by_index):
     return result
 
 
+# MSVC ??<code> operator manglings (??8X@@ == X::operator==).
+_OP_MANGLES = {'4': '=', '5': '>>', '6': '<<', '7': '!', '8': '==', '9': '!=',
+               'A': '[]', 'B': '->', 'C': '*', 'D': '&', 'E': '->*', 'F': '++',
+               'G': '--', 'H': '-', 'I': '+', 'J': '|', 'K': '/', 'L': '^',
+               'M': '<', 'N': '<=', 'O': '>', 'P': '>=', 'Q': ',', 'R': '()',
+               'S': '~', 'T': '%', 'U': '+=', 'V': '-=', 'W': '*=', 'X': '/=',
+               'Y': '%=', 'Z': '>>='}
+# ``??_N`` codes are deliberately absent: they collide with special manglings
+# (??_7 vftable, ??_G scalar dtor, ??_R RTTI) that must not be name-matched.
+# The emitter rewrites X::operator== to the identifier-legal X::op_eq; resolve
+# those member symbols back to the qualified operator name Ghidra records.
+_OP_LEAVES = {'op_eq': 'operator==', 'op_ne': 'operator!=', 'op_le': 'operator<=',
+              'op_ge': 'operator>=', 'op_lt': 'operator<', 'op_gt': 'operator>',
+              'op_shl': 'operator<<', 'op_shr': 'operator>>', 'op_inc': 'operator++',
+              'op_dec': 'operator--', 'op_addeq': 'operator+=', 'op_subeq': 'operator-=',
+              'op_add': 'operator+', 'op_sub': 'operator-', 'op_mul': 'operator*',
+              'op_div': 'operator/', 'op_mod': 'operator%', 'op_band': 'operator&',
+              'op_bor': 'operator|', 'op_bxor': 'operator^', 'op_idx': 'operator[]',
+              'op_call': 'operator()', 'op_assign': 'operator=', 'op_arrow': 'operator->',
+              'op_arrowstar': 'operator->*', 'op_new': 'operator new',
+              'op_delete': 'operator delete', 'op_newarr': 'operator new[]',
+              'op_delarr': 'operator delete[]', 'op_comma': 'operator,',
+              'op_bnot': 'operator~', 'op_not': 'operator!'}
+
+
 def generated_symbol_name(name):
     """Extract the Ghidra-generated logical name from an MSVC symbol."""
     # Internal EH names include the parent function name but denote a different
@@ -164,16 +189,34 @@ def generated_symbol_name(name):
     # reference's own member symbols: ?method@Class@@sig and ?field@Class@@3T.
     # Their logical name is the qualified Class::leaf form, which the symbol
     # table indexes with every overload's concrete address.
+    # ??_7Class@@6B@ is the decorated vftable emitted when generated source
+    # declares a class with real virtuals; mirror the ghidra_vftable_ alias.
+    if name.startswith('??_7') and '@@6B' in name:
+        owner = name[4:name.index('@@6B')]
+        if owner.startswith('?$'):
+            owner = owner[2:]
+        return 'ghidra_vftable_' + owner.split('@')[0]
+    # ??0Class@@ = ctor (Class::Class), ??1 = dtor (Class::~Class).
+    match = re.match(r'\?\?([01])([A-Za-z_]\w*)@@', name)
+    if match:
+        cls = match.group(2)
+        return f'{cls}::{cls}' if match.group(1) == '0' else f'{cls}::~{cls}'
+    # ??<code>Class@@ = operator member (??8 == operator==, ??M == operator<).
+    match = re.match(r'\?\?([A-Z0-9])([A-Za-z_]\w*)@@', name)
+    if match and match.group(1) in _OP_MANGLES:
+        return match.group(2) + '::operator' + _OP_MANGLES[match.group(1)]
     match = re.match(r'\?+\$([A-Za-z_]\w*)@', name)
     if match:
         # ??$name@targs@class@@sig: the class qualifier closes the name section.
         cls = re.findall(r'@([A-Za-z_]\w*)@@', name)
         if cls:
-            return cls[-1] + '::' + match.group(1)
+            leaf = _OP_LEAVES.get(match.group(1), match.group(1))
+            return cls[-1] + '::' + leaf
     match = re.match(r'\?([A-Za-z_]\w*)@((?:[A-Za-z_]\w*@?)+?)@@', name)
     if match:
         classes = [part for part in match.group(2).split('@') if part]
-        return '::'.join(reversed(classes)) + '::' + match.group(1)
+        leaf = _OP_LEAVES.get(match.group(1), match.group(1))
+        return '::'.join(reversed(classes)) + '::' + leaf
     # A global the recovered source declares itself is emitted by the compiler
     # in mangled form, ``?g_lSCObjCount@@3IA``, while the reference image records
     # the same global by its plain name.
@@ -202,6 +245,11 @@ def load_symbol_vas(path):
                 # name the reference image carries. Index the ABI-equivalent form
                 # so those references still reach the import thunk.
                 result[scstr_abi_key(name)].add(address)
+                # Backticked helper names (`eh_vector_destructor_iterator')
+                # become identifier-safe externs in generated source.
+                sanitized = re.sub(r'[^0-9A-Za-z_]', '_', name)
+                if sanitized != name:
+                    result[sanitized].add(address)
             if qualified_name:
                 result[qualified_name].add(address)
                 result[scstr_abi_key(qualified_name)].add(address)
@@ -209,11 +257,18 @@ def load_symbol_vas(path):
                     owner = qualified_name[:-len('::vftable')]
                     leaf = owner.split('::')[-1]
                     # Emitters name the extern for the leaf class alone and
-                    # drop template arguments, so index both alias shapes.
-                    for form in (owner.replace('::', '__'), leaf,
-                                 re.sub(r'<[^<>]*>', '', leaf)):
-                        alias = 'ghidra_vftable_' + re.sub(r'[^0-9A-Za-z_]', '_', form)
-                        result[alias].add(address)
+                    # drop template arguments (including nested ``X<<a>,b>``),
+                    # so index both alias shapes in flattened form.
+                    def _flatten(form):
+                        while '<' in form:
+                            flattened = re.sub(r'<[^<>]*>', '', form)
+                            if flattened == form:
+                                break
+                            form = flattened
+                        form = re.sub(r'[^0-9A-Za-z_]', '_', form)
+                        return re.sub(r'_+', '_', form)
+                    for form in (owner.replace('::', '__'), leaf):
+                        result['ghidra_vftable_' + _flatten(form)].add(address)
             if name:
                 # PTR_<import>_<va> labels mark the IAT dword the loader fills;
                 # __declspec(dllimport) references carry an __imp_ relocation
@@ -231,7 +286,8 @@ def load_symbol_vas(path):
     result = {name: sorted(addresses) for name, addresses in result.items()}
     # Internal runtime helpers carry no import slot: the reference reaches the
     # /GS cookie check through its incremental-link thunk like any other call.
-    for alias, source in (('__security_check_cookie', 'thunk_FUN_1148ac28'),):
+    for alias, source in (('__security_check_cookie', 'thunk_FUN_1148ac28'),
+                          ('__chkstk', '__alloca_probe')):
         if result.get(source):
             merged = sorted(set(result.get(alias, ())) | set(result[source]))
             result[alias] = merged
@@ -322,6 +378,18 @@ def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base,
             value = (reloc['target_offset'] - reloc['func_start']) - (offset + 4)
             if value & 0xffffffff == expected_field:
                 struct.pack_into('<I', patched, offset, value & 0xffffffff)
+                resolved += 1
+            else:
+                unresolved += 1
+            continue
+        # Same-section DIR32 pushes (catch continuations, local labels): the
+        # reference value is the function VA plus the intra-function offset of
+        # our label, so equality proves the same internal layout.
+        if (reloc['type'] == 0x6 and reloc.get('target_section') ==
+                reloc.get('func_section') and reloc['target_section']):
+            value = entry_va + (reloc['target_offset'] - reloc['func_start'])
+            if value & 0xffffffff == expected_field:
+                struct.pack_into('<I', patched, offset, expected_field)
                 resolved += 1
             else:
                 unresolved += 1
@@ -458,13 +526,25 @@ def compare_directory(directory, reference, image_base, pe_sections, symbol_vas,
     # can be used for this literal. This is a placement constraint for linking.
     literals = {}
     for symbol in symbols:
-        if not symbol['name'].startswith('??_C@_0') or not 0 < symbol['section'] <= len(sections):
+        name = symbol['name']
+        if not 0 < symbol['section'] <= len(sections):
             continue
         section = sections[symbol['section'] - 1]
         start = symbol['offset']
-        end = section['code'].find(b'\0', start)
-        if end >= start and not any(start <= r['offset'] <= end for r in section['relocations']):
-            literals[symbol['name']] = section['code'][start:end + 1]
+        if name.startswith('??_C@_0'):
+            end = section['code'].find(b'\0', start)
+            if end < start:
+                continue
+            size = end + 1 - start
+        elif name.startswith(('__real@', '__xmm@')):
+            # ``__real@3ff0000000000000`` embeds the constant's hex bytes.
+            size = len(name.rsplit('@', 1)[-1]) // 2
+        else:
+            continue
+        if not size:
+            continue
+        if not any(start <= r['offset'] < start + size for r in section['relocations']):
+            literals[name] = section['code'][start:start + size]
     rows = []
     with (directory / 'compiled-index.tsv').open(newline='') as file:
         for row in csv.DictReader(file, delimiter='\t'):
