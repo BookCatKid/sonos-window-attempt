@@ -97,6 +97,15 @@ typedef struct undefined7 { char _p[7]; undefined7(...);
   template<class T> operator T*(); template<class T> operator T(); } undefined7;
 using ulonglong = unsigned long long;
 using __time64_t = long long;
+typedef signed char sbyte;
+typedef unsigned long long uint5;
+typedef long long int5;
+typedef unsigned long long uint6;
+typedef long long int6;
+typedef unsigned long long uint7;
+typedef long long int7;
+struct tm { int tm_sec; int tm_min; int tm_hour; int tm_mday; int tm_mon;
+  int tm_year; int tm_wday; int tm_yday; int tm_isdst; };
 typedef long fpos_t;
 typedef struct { char _p; } _Mbstatet;
 struct GUID { char _pad; };
@@ -419,7 +428,7 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
     # ``~X<>()``/``~X()`` is Ghidra's pseudo-destructor call; route it to the
     # stub dtor like the ``X::~X`` member-call path does.
     body = re.sub(
-        r'~\s*([A-Z_]\w*(?:::\w+)?)\s*(<[^;()]*>)?\s*\(\s*\)',
+        r'~\s*([A-Za-z_]\w*(?:::\w+)?)\s*(<[^;()]*>)?\s*\(\s*\)',
         lambda m: m.group(1) + (m.group(2) or '') + '::op_dtor()', body)
     out = []
     pos = 0
@@ -695,13 +704,43 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
     # typedef stubs wherever they appear, not only in cast position; skip
     # names the body declares as variables so the typedef never shadows a
     # real declaration.
-    _declared = set(_varmap(whole))
+    _vtypes = _varmap(whole)
+    _declared = set(_vtypes)
     for name in re.findall(r'\b(_[A-Z]\w+)\b', whole):
         if name not in _declared and name not in extern_names:
             type_stubs.add(('ptr', name))
+    # A `_Cap` typedef whose variables are field-accessed (`local.dwX`) is a
+    # real struct (`_FILETIME`), not a `void *` typedef.
+    for var, vtype in _vtypes.items():
+        base = vtype.rstrip('*& ').rsplit(' ', 1)[-1]
+        if not re.match(r'_[A-Z]', base):
+            continue
+        flds = set(re.findall(r'\b' + re.escape(var) + r'\s*(?:->|\.)\s*'
+                              r'([A-Za-z_]\w*)', whole))
+        if flds:
+            member_stubs.setdefault('__fields__', set()).update(flds)
+            type_stubs.discard(('ptr', base))
+            type_stubs.add(('struct', base))
+    # A capitalized name used only in `Name(` call position is a real
+    # function (``GetSystemTimeAsFileTime(&x)``). The extern shadows the
+    # struct stub in expression contexts, which also resolves the
+    # most-vexing-parse of statement-level ``T(&x)`` calls; but if the name
+    # appears in any non-call position (`T var`, `(T *)x`, `T::m`) it is a
+    # type and a function twin would hide it.
+    _text_all = head + result_body
+    for call in re.findall(r'\b([A-Z]\w*)\s*\(', result_body):
+        if (call not in extern_names and call not in _declared
+                and call not in KEYWORDS
+                and not re.search(r'\b' + re.escape(call) + r'\b(?!\s*\()',
+                                  _text_all)):
+            externs.add(('call', call))
     # `_sm_*` is Ghidra's static-class-member naming; treat as data externs.
     for name in re.findall(r'\b(_sm_\w+)\b', whole):
         externs.add(('data', name))
+    # `*_exref` is Ghidra's naming for an external data reference.
+    for name in re.findall(r'\b(\w+_exref)\b', whole):
+        if name not in _declared:
+            externs.add(('data', name))
     whole = re.sub(r'\bthis\b', 'this_', whole)
     head_end = whole.find('{')
     sig = whole[:head_end]
@@ -912,16 +951,52 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
             i += 1
         return -1
 
+    _CALL_RE = re.compile(
+        r'\b([A-Za-z_]\w*)\s*\(')
+    _CALL_TYPES = frozenset(
+        'int char short long void float double byte uint ushort ulong '
+        'undefined undefined1 undefined2 undefined4 undefined8 bool '
+        'unsigned signed const volatile struct class union enum size_t '
+        'if while for switch return sizeof static_cast reinterpret_cast '
+        'const_cast dynamic_cast'.split())
+
+    def has_call(rhs):
+        # `expr)(` is a call through a pointer/expression; `name(` is direct.
+        if re.search(r'\)\s*\(', rhs):
+            return True
+        return any(m.group(1) not in _CALL_TYPES
+                   for m in _CALL_RE.finditer(rhs))
+
+    def cast_wrap(target, rhs):
+        """`(T)(rhs)`, void-tolerant: when rhs calls a function the typed
+        decl may return ``void``, which MSVC/clang reject inside a value
+        cast. ``(T)(rhs, 0)`` still evaluates the call through the comma
+        operator but always yields a convertible 0."""
+        if has_call(rhs):
+            return f'({target})({rhs}, 0)'
+        return f'({target})({rhs})'
+
+    # `T name[N]` declarations: the declared type in varmap is the element
+    # type; array names cannot be assigned or used as scalar values.
+    arrays = set(re.findall(r'\b(?!(?:return|goto|if|else|while|for|do|switch|case|sizeof)\b)'
+                            r'[\w:<>]+[\s*&]+([A-Za-z_]\w*)\s*\[[^\]]*\]\s*;', body))
     def cast_rhs(match):
         name, rhs = match.group(1), match.group(2)
         target = varmap.get(name)
         if not target or rhs.strip().startswith('{'):
             return match.group(0)
         rhs = rhs.strip()
+        if name in arrays:
+            # `arr = v` cannot assign an array; store through element 0.
+            elem = target.rstrip('* ').rstrip() or target
+            cut = top_comma(rhs)
+            if cut >= 0:
+                return f'{name}[0] = {cast_wrap(elem, rhs[:cut])}{rhs[cut:]};'
+            return f'{name}[0] = {cast_wrap(elem, rhs)};'
         cut = top_comma(rhs)
         if cut >= 0:
-            return f'{name} = ({target})({rhs[:cut]}){rhs[cut:]};'
-        return f'{name} = ({target})({rhs});'
+            return f'{name} = {cast_wrap(target, rhs[:cut])}{rhs[cut:]};'
+        return f'{name} = {cast_wrap(target, rhs)};'
 
     # `*name = rhs;` dereference assignments: cast rhs to the pointee type
     def cast_deref(match):
@@ -933,16 +1008,14 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         rhs = rhs.strip()
         cut = top_comma(rhs)
         if cut >= 0:
-            return f'*{name} = ({pointee})({rhs[:cut]}){rhs[cut:]};'
-        return f'*{name} = ({pointee})({rhs});'
+            return f'*{name} = {cast_wrap(pointee, rhs[:cut])}{rhs[cut:]};'
+        return f'*{name} = {cast_wrap(pointee, rhs)};'
 
     body = re.sub(r'\*\s*([A-Za-z_]\w*)\s*=(?![=])\s*((?:(?!\b(?:goto|return|break|continue|case|default|else|do|switch|if|while|for)\b)[^;{}])*);', cast_deref, body)
 
     # `name[idx] = rhs;` element assignments: cast rhs to the element type.
     # Array declarations already store the element type in varmap; indexed
     # pointers drop one star.
-    arrays = set(re.findall(r'\b(?!(?:return|goto|if|else|while|for|do|switch|case|sizeof)\b)'
-                            r'[\w:<>]+[\s*&]+([A-Za-z_]\w*)\s*\[[^\]]*\]\s*;', body))
     def cast_index(match):
         name, index, rhs = match.groups()
         target = varmap.get(name)
@@ -954,8 +1027,8 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         rhs = rhs.strip()
         cut = top_comma(rhs)
         if cut >= 0:
-            return f'{name}[{index}] = ({elem})({rhs[:cut]}){rhs[cut:]};'
-        return f'{name}[{index}] = ({elem})({rhs});'
+            return f'{name}[{index}] = {cast_wrap(elem, rhs[:cut])}{rhs[cut:]};'
+        return f'{name}[{index}] = {cast_wrap(elem, rhs)};'
     body = re.sub(
         r'(?<![=!<>+\-*/%&|^?:])([A-Za-z_]\w*)\s*\[([^\]\[]*)\]\s*=(?![=])\s*((?:(?!\b(?:goto|return|break|continue|case|default|else|do|switch|if|while|for)\b)[^;{}])*);',
         cast_index, body)
@@ -963,9 +1036,10 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
     body = re.sub(
         r'((?:\([\w\s:\*&<>\[\]+()]*\)|[A-Za-z_]\w*)\s*(?:->|\.)'
         r'[A-Za-z_]\w*)\s*=(?![=])\s*((?:(?!\b(?:goto|return|break|continue|case|default|else|do|switch|if|while|for)\b)[^;{}])*);',
-        lambda m: m.group(1) + ' = (int)({}){};'.format(
-            m.group(2).strip()[:top_comma(m.group(2).strip())]
-            if top_comma(m.group(2).strip()) >= 0 else m.group(2).strip(),
+        lambda m: m.group(1) + ' = {}{};'.format(
+            cast_wrap('int', m.group(2).strip()[:top_comma(m.group(2).strip())]
+                      if top_comma(m.group(2).strip()) >= 0
+                      else m.group(2).strip()),
             m.group(2).strip()[top_comma(m.group(2).strip()):]
             if top_comma(m.group(2).strip()) >= 0 else ''), body)
     # `&(T *)name` takes the address of a cast rvalue; reinterpret the
@@ -1003,22 +1077,67 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
                   r'((?:(?!\b(?:goto|return|break|continue|case|default|else|'
                   r'do|switch|if|while|for)\b)[^;{}])*);',
                   cast_rhs, body)
-    # comparisons ptrvar ==/!= sym and sym ==/!= ptrvar
+    # `(..., name = rhs, ...)` comma-expression assignments inside conditions:
+    # no semicolon terminates them, so the statement form above cannot wrap.
+    def cast_comma(match):
+        name, rhs = match.group(1), match.group(2)
+        target = varmap.get(name)
+        if not target:
+            return match.group(0)
+        return f'{name} = {cast_wrap(target, rhs.strip())},'
+    body = re.sub(
+        r'(?<![=!<>+\-*/%&|^?:\w])\b([A-Za-z_]\w*)\s*=(?![=>])\s*'
+        r'((?:[^,;{}()=]|\((?:[^()]|\([^()]*\))*\))+?)\s*,',
+        cast_comma, body)
+    # comparisons ptrvar op sym and sym op ptrvar. All-caps typedef names
+    # (``LSTATUS``) are emitted as ``typedef void *`` so treat them as
+    # pointers too; a value cast of the comparison operand is harmless
+    # either way.
+    _CMP = (r'(?:==|!=|<=|>=|(?<![<>=!-])<(?![=<])|(?<![<>=!-])>(?![=>]))')
     for name, target in varmap.items():
-        if not target.rstrip().endswith('*'):
+        if not (target.rstrip().endswith('*')
+                or re.fullmatch(r'[A-Z_][A-Z0-9_]*', target)):
             continue
         _qname = (r'[A-Za-z_]\w*(?:\s*<[^()]*>)?'
                   r'(?:::[A-Za-z_]\w*(?:\s*<[^()]*>)?)*')
-        body = re.sub(r'(?<![*&])(\b' + re.escape(name) + r'\s*[!=]=\s*)(?<![*&])(&?\s*' + _qname + r')',
-                      lambda m: m.group(1) + f'({target})({m.group(2).replace(" ", "")})', body)
-        body = re.sub(r'(?<![*&])(&?\s*\b' + _qname + r')\s*([!=]=)\s*(?<![*&])(\b' + re.escape(name) + r'\b)',
+        _cast_operand = (r'(?:&?\s*' + _qname + r'|0x[0-9a-fA-F]+|\d+'
+                         r'|(?:\((?:[^()]|\([^()]*\))*\)\s*)+'
+                         r'(?:[^,;()<>|&]|\((?:[^()]|\([^()]*\))*\))*)')
+        def retarget_rhs(match):
+            operand = match.group(2)
+            # ``(U)(x)``: retype the head cast instead of double-wrapping
+            # (which would parse ``(T *)(U)`` as a call of the cast group).
+            if re.match(r'\s*\(\s*[A-Za-z_][\w:<>\s]*\**\s*\)', operand):
+                return match.group(1) + re.sub(
+                    r'^\s*\(\s*[A-Za-z_][\w:<>\s]*\**\s*\)',
+                    '(' + target + ')', operand, count=1)
+            return match.group(1) + f'({target})({operand.replace(chr(32), "") if chr(38) in operand else operand})'
+        body = re.sub(r'(?<![*&])(\b' + re.escape(name) + r'\s*' + _CMP + r'\s*)(?<![*&])(' + _cast_operand + r')',
+                      retarget_rhs, body)
+        body = re.sub(r'(?<![*&])(&?\s*\b' + _qname + r')\s*(' + _CMP + r')\s*(?<![*&])(\b' + re.escape(name) + r'\b)',
                       lambda m: f'({target})({m.group(1).replace(" ", "")}) {m.group(2)} {m.group(3)}', body)
         # `name + off == &other`: the pointer side carries arithmetic, so the
         # bare-name patterns above cannot reach it; retarget the other side.
-        body = re.sub(r'(?<![*&])(\b' + re.escape(name) + r'\s*[-+]\s*[^,;()<>!=&|]*?)\s*([!=]=)\s*(&\s*' + _qname + r')',
+        body = re.sub(r'(?<![*&])(\b' + re.escape(name) + r'\s*[-+]\s*[^,;()<>!=&|]*?)\s*(' + _CMP + r')\s*(&?\s*' + _qname + r')',
                       lambda m: f'{m.group(1)} {m.group(2)} ({target})({m.group(3).replace(" ", "")})', body)
-        body = re.sub(r'(?<![*&])(&\s*' + _qname + r')\s*([!=]=)\s*(?<![*&])(\b' + re.escape(name) + r'\s*[-+]\s*[^,;()<>!=&|]*)',
+        body = re.sub(r'(?<![*&])(&?\s*\b' + _qname + r')\s*(' + _CMP + r')\s*(?<![*&])(\b' + re.escape(name) + r'\s*[-+]\s*[^,;()<>!=&|]*)',
                       lambda m: f'({target})({m.group(1).replace(" ", "")}) {m.group(2)} {m.group(3)}', body)
+        # ``(T *)x op name[i]``: the indexed element is a scalar, so the
+        # pointer cast must drop to the element type, not the other side up.
+        if target.rstrip().endswith('*'):
+            _elem = target.rstrip()[:-1].rstrip() or 'void'
+            body = re.sub(
+                r'\(\s*[A-Za-z_][\w:<>\s]*?\s*\*+\s*\)\s*'
+                r'(\(\s*[A-Za-z_]\w*\s*\)|[A-Za-z_]\w*)\s*(' + _CMP +
+                r')\s*(\b' + re.escape(name) + r'\s*\[[^\]]*\])',
+                lambda m: f'({_elem})({m.group(1)}) {m.group(2)} {m.group(3)}',
+                body)
+            body = re.sub(
+                r'(\b' + re.escape(name) + r'\s*\[[^\]]*\])\s*(' + _CMP +
+                r')\s*\(\s*[A-Za-z_][\w:<>\s]*?\s*\*+\s*\)\s*'
+                r'(\(\s*[A-Za-z_]\w*\s*\)|[A-Za-z_]\w*)',
+                lambda m: f'{m.group(1)} {m.group(2)} ({_elem})({m.group(3)})',
+                body)
     # `(T *)expr op operand` and `operand op (T *)expr`: the pointer side is
     # explicit; cast the other operand to the same type. When that operand is
     # itself a ``(U *)x`` cast it is retargeted rather than double-wrapped.
@@ -1093,7 +1212,12 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         if retarget:
             operand = retarget.group(2)
         return f'({ctype})({operand}) {op} {expr}'
+    # ``a + b == (T *)x``: the operand before the operator may be an addend
+    # of a preceding arithmetic term — retargeting it to ``T *`` would
+    # produce ``char * + char *``. The double lookbehind covers one or two
+    # spaces between operator and operand.
     body = re.sub(
+        r'(?<![-+*/%]\s)(?<![-+*/%]\s\s)'
         r'((?:\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)\s*)?'
         r'(?:\*|(?<![&])(?<=[)(,=!~;{}<>&|^?:+\-*/%])&)?\s*(?<![\w])'
         + _CAST_OPERAND + r')\s*(==|!=|<=|>=)\s*'
@@ -1124,15 +1248,22 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         r'(\*+)\s*\(\s*([A-Za-z_][\w:\s<>]*?)\s*(\*+)\s*\)\s*'
         r'([A-Za-z_(][\w.\[\]()+ \s>*-]*?)\s*=(?![=])\s*'
         r'((?:(?!\b(?:goto|return|break|continue|case|default|else|do|switch|if|while|for)\b)[^;{}])*);',
-        lambda m: '{}({}{}){} = ({})({}){};'.format(
+        lambda m: '{}({}{}){} = {}{};'.format(
             m.group(1), m.group(2), m.group(3), m.group(4),
-            (m.group(2) + ' ' +
-             m.group(3)[:max(0, len(m.group(3)) - len(m.group(1)))]).strip()
-            or 'void',
-            m.group(5).strip()[:top_comma(m.group(5).strip())]
-            if top_comma(m.group(5).strip()) >= 0 else m.group(5).strip(),
+            cast_wrap(
+                (m.group(2) + ' ' +
+                 m.group(3)[:max(0, len(m.group(3)) - len(m.group(1)))])
+                .strip() or 'void',
+                m.group(5).strip()[:top_comma(m.group(5).strip())]
+                if top_comma(m.group(5).strip()) >= 0
+                else m.group(5).strip()),
             m.group(5).strip()[top_comma(m.group(5).strip()):]
             if top_comma(m.group(5).strip()) >= 0 else ''), body)
+    # Bare array names in scalar context (`auVar30 & mask`, `f(auVar)`)
+    # cannot decay where Ghidra treats them as values; use their address.
+    for name in arrays:
+        body = re.sub(r'(?<![*&\w])(?<![*&]\s)(?<!\w\s*&)\b' + re.escape(name)
+                      + r'\b(?!\s*\[)', '(uint)&' + name, body)
     if ret_type and ret_type != 'void':
         body = re.sub(r'\breturn\s+((?:(?!\b(?:goto|return|break|continue|case|default|else|do|switch|if|while|for)\b)[^;{}])*);',
                       lambda m: f'return ({ret_type})({m.group(1).strip()});', body)
