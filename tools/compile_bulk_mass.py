@@ -681,15 +681,6 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
     body = re.sub(
         r'(?<![=!<>+\-*/%&|^?:])([A-Za-z_]\w*)\s*\[([^\]\[]*)\]\s*=(?![=])\s*([^;{}]*);',
         cast_index, body)
-    # `*(T *)expr = rhs;` dereference-through-cast assignments: the pointee is
-    # spelled in the cast, so cast rhs to it.
-    body = re.sub(
-        r'\*\s*\(\s*([A-Za-z_][\w:\s<>]*?)\s*(\*+)\s*\)\s*'
-        r'([A-Za-z_][\w.\[\]()+\s>*-]*?)\s*=(?![=])\s*([^;{}]*);',
-        lambda m: '*({}{}){} = ({})({});'.format(
-            m.group(1), m.group(2), m.group(3),
-            (m.group(1) + ' ' + m.group(2)[:-1]).strip() or 'void',
-            m.group(4).strip()), body)
     # `x->field = rhs;` / `x.field = rhs;`: stub fields are int, so cast rhs.
     body = re.sub(
         r'((?:\([\w\s:\*&<>\[\]+()]*\)|[A-Za-z_]\w*)\s*(?:->|\.)'
@@ -697,7 +688,8 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
         lambda m: m.group(1) + ' = (int)({});'.format(m.group(2).strip()), body)
     # `&(T *)name` takes the address of a cast rvalue; reinterpret the
     # variable's own address instead (same value, legal lvalue).
-    body = re.sub(r'&\s*\(\s*([A-Za-z_][\w:<>\s]*\*)\s*\)\s*([A-Za-z_]\w*)',
+    body = re.sub(r'&\s*\(\s*([A-Za-z_][\w:<>\s]*\*)\s*\)\s*'
+                  r'(\(\s*[A-Za-z_]\w*\s*\)|[A-Za-z_]\w*)',
                   r'((\1*)&(\2))', body)
     # `*name` where name is integral: Ghidra means dereference the address held
     # in the variable. Unary contexts only (never `a * b`).
@@ -724,22 +716,42 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
     for name, target in varmap.items():
         if not target.rstrip().endswith('*'):
             continue
-        body = re.sub(r'(\b' + re.escape(name) + r'\s*[!=]=\s*)([A-Za-z_]\w*)',
-                      lambda m: m.group(1) + f'({target})({m.group(2)})', body)
-        body = re.sub(r'\b([A-Za-z_]\w*)\s*([!=]=)\s*(\b' + re.escape(name) + r'\b)',
-                      lambda m: f'({target})({m.group(1)}) {m.group(2)} {m.group(3)}', body)
+        body = re.sub(r'(\b' + re.escape(name) + r'\s*[!=]=\s*)(&?\s*[A-Za-z_]\w*)',
+                      lambda m: m.group(1) + f'({target})({m.group(2).replace(" ", "")})', body)
+        body = re.sub(r'(&?\s*\b[A-Za-z_]\w*)\s*([!=]=)\s*(\b' + re.escape(name) + r'\b)',
+                      lambda m: f'({target})({m.group(1).replace(" ", "")}) {m.group(2)} {m.group(3)}', body)
     # `(T *)expr op name` and `name op (T *)expr`: the pointer side is
     # explicit; cast the bare operand to the same pointer type.
+    def cast_operand(match):
+        expr, ctype, op, operand = (match.group(1), match.group(2),
+                                    match.group(3), match.group(4))
+        if expr.lstrip().startswith('*') and ctype.rstrip().endswith('*'):
+            ctype = ctype.rstrip()[:-1].rstrip() or 'void *'
+        return f'{expr} {op} ({ctype})({operand})'
     body = re.sub(
-        r'(\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)(?:\([^()]*\)|[^,;()])*?)'
+        r'(\*?\s*\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)(?:\([^()]*\)|[^,;()])*?)'
         r'\s*(==|!=|<=|>=)\s*([A-Za-z_]\w*(?:\s*\[[^\]]*\])?)\b',
-        lambda m: f'{m.group(1)} {m.group(3)} ({m.group(2)})({m.group(4)})',
-        body)
+        cast_operand, body)
+    def cast_operand_rhs(match):
+        operand, op, expr, ctype = (match.group(1), match.group(2),
+                                    match.group(3), match.group(4))
+        if expr.lstrip().startswith('*') and ctype.rstrip().endswith('*'):
+            ctype = ctype.rstrip()[:-1].rstrip() or 'void *'
+        return f'({ctype})({operand}) {op} {expr}'
     body = re.sub(
         r'([A-Za-z_]\w*(?:\s*\[[^\]]*\])?)\s*(==|!=|<=|>=)\s*'
-        r'(\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)(?:\([^()]*\)|[^,;()])*?)',
-        lambda m: f'({m.group(4)})({m.group(1)}) {m.group(2)} {m.group(3)}',
-        body)
+        r'(\*?\s*\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)(?:\([^()]*\)|[^,;()])*?)',
+        cast_operand_rhs, body)
+    # `*(T *)expr = rhs;` dereference-through-cast assignments: the pointee is
+    # spelled in the cast, so cast rhs to it. Runs last so earlier RHS wraps
+    # cannot retype the assignment.
+    body = re.sub(
+        r'\*\s*\(\s*([A-Za-z_][\w:\s<>]*?)\s*(\*+)\s*\)\s*'
+        r'([A-Za-z_][\w.\[\]()+\s>*-]*?)\s*=(?![=])\s*([^;{}]*);',
+        lambda m: '*({}{}){} = ({})({});'.format(
+            m.group(1), m.group(2), m.group(3),
+            (m.group(1) + ' ' + m.group(2)[:-1]).strip() or 'void',
+            m.group(4).strip()), body)
     if ret_type and ret_type != 'void':
         body = re.sub(r'\breturn\s+([^;]+);',
                       lambda m: f'return ({ret_type})({m.group(1).strip()});', body)
