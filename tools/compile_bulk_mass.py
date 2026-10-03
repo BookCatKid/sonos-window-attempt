@@ -728,6 +728,18 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
                       lambda m: m.group(1) + f'({target})({m.group(2)})', body)
         body = re.sub(r'\b([A-Za-z_]\w*)\s*([!=]=)\s*(\b' + re.escape(name) + r'\b)',
                       lambda m: f'({target})({m.group(1)}) {m.group(2)} {m.group(3)}', body)
+    # `(T *)expr op name` and `name op (T *)expr`: the pointer side is
+    # explicit; cast the bare operand to the same pointer type.
+    body = re.sub(
+        r'(\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)(?:\([^()]*\)|[^,;()])*?)'
+        r'\s*(==|!=|<=|>=)\s*([A-Za-z_]\w*(?:\s*\[[^\]]*\])?)\b',
+        lambda m: f'{m.group(1)} {m.group(3)} ({m.group(2)})({m.group(4)})',
+        body)
+    body = re.sub(
+        r'([A-Za-z_]\w*(?:\s*\[[^\]]*\])?)\s*(==|!=|<=|>=)\s*'
+        r'(\(\s*([A-Za-z_][\w:<>\s]*?\s*\*+)\s*\)(?:\([^()]*\)|[^,;()])*?)',
+        lambda m: f'({m.group(4)})({m.group(1)}) {m.group(2)} {m.group(3)}',
+        body)
     if ret_type and ret_type != 'void':
         body = re.sub(r'\breturn\s+([^;]+);',
                       lambda m: f'return ({ret_type})({m.group(1).strip()});', body)
