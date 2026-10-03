@@ -455,8 +455,12 @@ extern int DAT_119c9c20;
 extern int DAT_119cd1a8;
 extern int DAT_119cd1ac;
 extern int DAT_119cd1b0;
+extern int DAT_119d7b20;
+extern int DAT_119df2d0;
 extern int DAT_119e0b2c;
 extern int DAT_119e7b58;
+extern int DAT_11c03cec;
+extern int DAT_11c03cf0;
 extern int DAT_1205bd78;
 extern int DAT_1205ce40;
 extern int DAT_12121d88;
@@ -484,10 +488,6 @@ extern int DAT_122f6978;
 extern int DAT_122f697c;
 extern int DAT_122f6bd8;
 extern int DAT_122f6bdc;
-extern int _DAT_119d7b20;
-extern int _DAT_119df2d0;
-extern int _DAT_11c03cec;
-extern int _DAT_11c03cf0;
 extern int _UNK_119d7b28;
 extern int _UNK_119df2d4;
 extern int _UNK_119df2d8;
@@ -9584,7 +9584,7 @@ undefined4 * __fastcall FUN_11243350(undefined4 *param_1)
   uVar4 = (undefined4)(_UNK_119df2dc);
   uVar3 = (undefined4)(_UNK_119df2d8);
   uVar2 = (undefined4)(_UNK_119df2d4);
-  uVar1 = (undefined4)(_DAT_119df2d0);
+  uVar1 = (undefined4)(DAT_119df2d0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RJsonWriterBase);
   param_1[9] = (undefined4)(0);
   param_1[1] = (undefined4)(uVar1);
@@ -9809,7 +9809,7 @@ short FUN_11246be0(undefined4 param_1)
   short sVar1;
   
   sVar1 = (short)(thunk_FUN_112470f0(param_1));
-  return (short)(sVar1 + _DAT_11c03cf0);
+  return (short)(sVar1 + DAT_11c03cf0);
 }
 
 
@@ -9824,7 +9824,7 @@ short FUN_112471a0(undefined4 param_1)
   short sVar1;
   
   sVar1 = (short)(thunk_FUN_112470f0(param_1));
-  return (short)(sVar1 + _DAT_11c03cec);
+  return (short)(sVar1 + DAT_11c03cec);
 }
 
 
@@ -11874,7 +11874,7 @@ undefined4 * __fastcall FUN_11279fe0(undefined4 *param_1)
   undefined8 uVar2;
   
   uVar2 = (undefined8)(_UNK_119d7b28);
-  uVar1 = (undefined8)(_DAT_119d7b20);
+  uVar1 = (undefined8)(DAT_119d7b20);
   *param_1 = (undefined4)(0);
   param_1[1] = (undefined4)(1);
   *(undefined8*)(param_1 + 2) = (undefined8)(uVar1);

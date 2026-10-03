@@ -283,13 +283,13 @@ extern int DAT_11882ff0;
 extern int DAT_12126b84;
 extern int DAT_121a7b5d;
 extern int DAT_121a7b60;
+extern int DAT_121a7b64;
 extern int DAT_121a7ba0;
 extern int DAT_121a7ba4;
 extern int DAT_121b54e0;
 extern int DAT_121b60d8;
 extern int DAT_122af408;
 extern int DAT_122e8730;
-extern int _DAT_121a7b64;
 extern int g_lSCObjCount;
 extern int ghidra_vftable_RAsyncURITranslator;
 extern int ghidra_vftable_RCPBrowseOperation;
@@ -345,7 +345,7 @@ extern int *PTR_s_other_1211d614;
 extern int *stack0x0000000c;
 extern int *stack0xfffffffc;
 extern void *ExceptionList;
-struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> int append(A...); template<class... A> int format(A...); template<class... A> int int_allocRep(A...); template<class... A> int op_ctor(A...); template<class... A> int op_eq(A...); };
+struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> static int append(A...); template<class... A> static int format(A...); template<class... A> static int int_allocRep(A...); int op_ctor(...); int op_eq(...); };
 typedef void *F;
 typedef void *H;
 typedef void *HWND;
@@ -3451,7 +3451,7 @@ void FUN_1106b1c0(undefined4 param_1)
 void FUN_1106b260(uint param_1)
 
 {
-  _DAT_121a7b64 = (int)(_DAT_121a7b64 | param_1);
+  DAT_121a7b64 = (int)(DAT_121a7b64 | param_1);
   DAT_121a7b5d = (int)(1);
   return;
 }

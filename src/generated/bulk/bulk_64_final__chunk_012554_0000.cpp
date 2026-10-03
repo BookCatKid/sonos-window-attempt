@@ -265,6 +265,7 @@ extern int DAT_1188465c;
 extern int DAT_1189f4a8;
 extern int DAT_118bd268;
 extern int DAT_118bd270;
+extern int DAT_118be660;
 extern int DAT_12126b84;
 extern int DAT_121a2128;
 extern int DAT_121a212c;
@@ -297,7 +298,6 @@ extern int DAT_121a223c;
 extern int DAT_121a2240;
 extern int DAT_121a2244;
 extern int DAT_121a2248;
-extern int _DAT_118be660;
 extern int _UNK_118be664;
 extern int _UNK_118be668;
 extern int _UNK_118be66c;
@@ -464,8 +464,8 @@ extern int *stack0x00000004;
 extern int *stack0xffffffb4;
 extern int *stack0xfffffffc;
 extern void *ExceptionList;
-struct SCLibrary { char _pad; SCLibrary(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> int getSCHousehold(A...); template<class... A> int getSingleton(A...); };
-struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> int endsWith(A...); template<class... A> int format(A...); template<class... A> int int_addref(A...); template<class... A> int int_allocRep(A...); template<class... A> int int_release(A...); template<class... A> int op_ctor(A...); template<class... A> int op_eq(A...); template<class... A> int stringWithFormat(A...); };
+struct SCLibrary { char _pad; SCLibrary(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> static int getSCHousehold(A...); template<class... A> static int getSingleton(A...); };
+struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> static int endsWith(A...); template<class... A> static int format(A...); template<class... A> static int int_addref(A...); template<class... A> static int int_allocRep(A...); template<class... A> static int int_release(A...); int op_ctor(...); int op_eq(...); template<class... A> static int stringWithFormat(A...); };
 typedef void *HTTP;
 typedef void *URL;
 typedef void *WARNING;
@@ -8574,7 +8574,7 @@ SCStr * __thiscall Recovered_Bulk::FUN_10618a10(SCStr *param_2)
 
   local_38 = (undefined **)((uint)&ghidra_vftable_SCConditionalElementTree);
   local_24 = (undefined4 *)((undefined4 *)0x0);
-  local_34 = (undefined4)(_DAT_118be660);
+  local_34 = (undefined4)(DAT_118be660);
   iStack_30 = (int)(_UNK_118be664);
   uStack_2c = (undefined4)(_UNK_118be668);
   iStack_28 = (int)(_UNK_118be66c);
@@ -8686,7 +8686,7 @@ LAB_106191b7:
   uVar5 = (uint)(DAT_12126b84);
 
   local_34 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
-  local_30 = (undefined4)(_DAT_118be660);
+  local_30 = (undefined4)(DAT_118be660);
   iStack_2c = (int)(_UNK_118be664);
   iStack_28 = (int)(_UNK_118be668);
   iStack_24 = (int)(_UNK_118be66c);
@@ -8796,7 +8796,7 @@ LAB_106193b2:
   uVar7 = (uint)(DAT_12126b84);
 
   local_34 = (undefined **)((uint)&ghidra_vftable_SCConditionalVectorBuilderTree);
-  local_30 = (undefined4)(_DAT_118be660);
+  local_30 = (undefined4)(DAT_118be660);
   piStack_2c = (int *)(_UNK_118be664);
   piStack_28 = (int *)(_UNK_118be668);
   iStack_24 = (int)(_UNK_118be66c);

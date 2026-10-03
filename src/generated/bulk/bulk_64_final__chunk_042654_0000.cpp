@@ -69,8 +69,10 @@ extern int thunk_FUN_1123fcd0(...);
 extern int thunk_FUN_113cfb70(...);
 extern int thunk_FUN_1148a50e(...);
 extern int DAT_12119d00;
+extern int DAT_12119d10;
 extern int DAT_12119d14;
 extern int DAT_1211a0b0;
+extern int DAT_1211a0c0;
 extern int DAT_1211a0c4;
 extern int DAT_1212057c;
 extern int DAT_1212058c;
@@ -135,8 +137,6 @@ extern int DAT_122e8a3c;
 extern int DAT_122e8a44;
 extern int DAT_122e8a48;
 extern int DAT_122f6ca0;
-extern int _DAT_12119d10;
-extern int _DAT_1211a0c0;
 extern undefined1 LAB_10077a70[];
 extern undefined1 LAB_116c6830[];
 extern undefined1 LAB_116c6c60[];
@@ -313,7 +313,7 @@ void FUN_1182ff00(void)
     }
     thunk_FUN_1148a50e(uVar1,uVar2);
   }
-  _DAT_12119d10 = (int)(0);
+  DAT_12119d10 = (int)(0);
   DAT_12119d14 = (int)(0xf);
   DAT_12119d00 = (int)(DAT_12119d00 & 0xffffff00);
   return;
@@ -607,7 +607,7 @@ void FUN_1183cfb0(void)
     }
     thunk_FUN_1148a50e(uVar1,uVar2);
   }
-  _DAT_1211a0c0 = (int)(0);
+  DAT_1211a0c0 = (int)(0);
   DAT_1211a0c4 = (int)(0xf);
   DAT_1211a0b0 = (int)(DAT_1211a0b0 & 0xffffff00);
   return;

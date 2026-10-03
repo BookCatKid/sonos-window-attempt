@@ -212,6 +212,7 @@ extern int thunk_FUN_1145c460(...);
 extern int thunk_FUN_1148a50e(...);
 extern int thunk_FUN_1148ac28(...);
 extern __declspec(dllimport) int tolower(...);
+extern int DAT_0000000c;
 extern int DAT_1186d2ee;
 extern int DAT_11880fb0;
 extern int DAT_11882ff0;
@@ -225,7 +226,6 @@ extern int DAT_121a5368;
 extern int DAT_121a536c;
 extern int DAT_121a5378;
 extern int UNK_11918fb0;
-extern int _DAT_0000000c;
 extern int g_lSCObjCount;
 extern int ghidra_vftable_DownloadCertBundleOp;
 extern int ghidra_vftable_RControlAIOOpCB;
@@ -377,8 +377,8 @@ extern undefined1 LAB_117c17f0[];
 extern int *stack0x00000004;
 extern int *stack0xfffffffc;
 extern void *ExceptionList;
-namespace std { template<class... A> int _Xbad_alloc(A...); template<class... A> int _Xbad_function_call(A...); template<class... A> int _Xlength_error(A...); struct ctype { char _pad; ctype(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> int tolower(A...); };}
-struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> int hash(A...); template<class... A> int int_addref(A...); template<class... A> int int_allocRep(A...); template<class... A> int int_release(A...); template<class... A> int op_ctor(A...); template<class... A> int op_dtor(A...); template<class... A> int op_eq(A...); template<class... A> int op_lt(A...); template<class... A> int stringWithFormat(A...); };
+namespace std { template<class... A> static int _Xbad_alloc(A...); template<class... A> static int _Xbad_function_call(A...); template<class... A> static int _Xlength_error(A...); struct ctype { char _pad; ctype(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> static int tolower(A...); };}
+struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> static int hash(A...); template<class... A> static int int_addref(A...); template<class... A> static int int_allocRep(A...); template<class... A> static int int_release(A...); int op_ctor(...); int op_dtor(...); int op_eq(...); int op_lt(...); template<class... A> static int stringWithFormat(A...); };
 typedef void *E9;
 typedef void *WARNING;
 typedef void *_Size;
@@ -15081,7 +15081,7 @@ LAB_10c7a97b:
   puVar4 = (undefined4 *)(operator_new(0x1c));
   if ((undefined4 *)(puVar4) == (undefined4 *)0x0) {
     *(undefined4*)(iVar1 + 0x18) = (undefined4)(0);
-    _DAT_0000000c = (int)(iVar2);
+    DAT_0000000c = (int)(iVar2);
     *(undefined4*)(iVar2 + 0x10) = (undefined4)(*(undefined4 *)(iVar1 + 0x18));
     return;
   }

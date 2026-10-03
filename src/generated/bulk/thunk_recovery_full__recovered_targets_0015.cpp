@@ -401,9 +401,11 @@ extern int DAT_1188bc94;
 extern int DAT_118947c0;
 extern int DAT_11895278;
 extern int DAT_1189f4a8;
+extern int DAT_118a1550;
 extern int DAT_118bb268;
 extern int DAT_118c8074;
 extern int DAT_118c9974;
+extern int DAT_119caf48;
 extern int DAT_119cea34;
 extern int DAT_119d00b0;
 extern int DAT_119d25d0;
@@ -436,8 +438,6 @@ extern int UNK_119d0548;
 extern int UNK_119d0648;
 extern int UNK_119d458c;
 extern int UNK_1205cea8;
-extern int _DAT_118a1550;
-extern int _DAT_119caf48;
 extern int _UNK_118a1554;
 extern int ghidra_vftable_AVTransportClient;
 extern int ghidra_vftable_AlarmClockClient;
@@ -797,8 +797,8 @@ extern int *PTR_s_AddTrackToFavorites_1211fcfc;
 extern int *stack0xfffffffc;
 extern int *stack0xffffffff;
 extern void *ExceptionList;
-namespace std { template<class... A> int _Xlength_error(A...);}
-struct RBrowseCacheMgr { char _pad; RBrowseCacheMgr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> int browse(A...); };
+namespace std { template<class... A> static int _Xlength_error(A...);}
+struct RBrowseCacheMgr { char _pad; RBrowseCacheMgr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> static int browse(A...); };
 typedef void *AVT;
 typedef void *DNS;
 typedef void *DTLS;
@@ -7695,7 +7695,7 @@ LAB_111905d5:
   
   if (*(int *)(param_1 + 0x2c) != 0) {
     thunk_FUN_111a36f0();
-    uVar1 = (undefined8)(_DAT_119caf48);
+    uVar1 = (undefined8)(DAT_119caf48);
     *param_4 = (undefined4)(4);
     *(undefined8*)(param_4 + 2) = (undefined8)(uVar1);
   }
@@ -9420,7 +9420,7 @@ void __stdcall FUN_111a1610(undefined4 *param_1,int *param_2,int param_3)
 bool FUN_111a2750(undefined8 param_1)
 
 {
-  return (bool)((double)((unsigned long long)((uint)((ulonglong)param_1 >> 0x20) & _UNK_118a1554) << 32 | (unsigned long long)((uint)param_1 & _DAT_118a1550)) < DAT_119d00b0);
+  return (bool)((double)((unsigned long long)((uint)((ulonglong)param_1 >> 0x20) & _UNK_118a1554) << 32 | (unsigned long long)((uint)param_1 & DAT_118a1550)) < DAT_119d00b0);
 }
 
 

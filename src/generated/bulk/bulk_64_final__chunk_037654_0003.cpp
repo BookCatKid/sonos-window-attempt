@@ -67,6 +67,8 @@ extern int FUN_1148b28d(...);
 extern int FUN_1148b387(...);
 extern int FUN_1148b394(...);
 extern int _DllMain_12(...);
+extern int __Init_thread_notify(...);
+extern int __Init_thread_wait(...);
 extern int ___get_entropy(...);
 extern int ___scrt_acquire_startup_lock(...);
 extern int ___scrt_dllmain_after_initialize_c(...);
@@ -156,21 +158,30 @@ extern int DAT_11c08374;
 extern int DAT_11c0837c;
 extern int DAT_11c08384;
 extern int DAT_121190b0;
+extern int DAT_121190c0;
 extern int DAT_121190c4;
 extern int DAT_121190cc;
+extern int DAT_121190dc;
 extern int DAT_121190e0;
 extern int DAT_1211952c;
+extern int DAT_1211953c;
 extern int DAT_12119540;
 extern int DAT_12119550;
+extern int DAT_12119560;
 extern int DAT_12119564;
 extern int DAT_12119584;
+extern int DAT_12119594;
 extern int DAT_12119598;
 extern int DAT_1211961c;
+extern int DAT_1211962c;
 extern int DAT_12119630;
 extern int DAT_12119658;
+extern int DAT_12119668;
 extern int DAT_1211966c;
 extern int DAT_12119b20;
+extern int DAT_12119b30;
 extern int DAT_12119b34;
+extern int DAT_12126b74;
 extern int DAT_12126b80;
 extern int DAT_12126b84;
 extern int DAT_12126b90;
@@ -178,6 +189,7 @@ extern int DAT_121a0718;
 extern int DAT_121a071c;
 extern int DAT_121a0830;
 extern int DAT_121a0834;
+extern int DAT_121a08d4;
 extern int DAT_121a08d8;
 extern int DAT_121a08f4;
 extern int DAT_121a08f8;
@@ -268,13 +280,19 @@ extern int DAT_121a2650;
 extern int DAT_121a2654;
 extern int DAT_121a2684;
 extern int DAT_121a2688;
+extern int DAT_121a2a58;
 extern int DAT_121a2a5c;
 extern int DAT_121a2a64;
+extern int DAT_121a4a28;
 extern int DAT_121a4a2c;
 extern int DAT_122fabd4;
 extern int DAT_122fabdd;
 extern int DAT_122fabe0;
+extern int DAT_122fabe4;
+extern int DAT_122fabe8;
 extern int DAT_122fabec;
+extern int DAT_122fabf0;
+extern int DAT_122fabf4;
 extern int DAT_122fac00;
 extern int DAT_122fac04;
 extern int DAT_122fac08;
@@ -283,21 +301,7 @@ extern int DAT_122fac34;
 extern int DAT_122faff4;
 extern int DAT_122faff8;
 extern int DAT_122fb000;
-extern int _DAT_121190c0;
-extern int _DAT_121190dc;
-extern int _DAT_1211953c;
-extern int _DAT_12119560;
-extern int _DAT_12119594;
-extern int _DAT_1211962c;
-extern int _DAT_12119668;
-extern int _DAT_12119b30;
-extern int _DAT_121a08d4;
-extern int _DAT_121a2a58;
-extern int _DAT_121a4a28;
-extern int _DAT_122fabe4;
-extern int _DAT_122fabe8;
-extern int _DAT_122fabf0;
-extern int _DAT_122fabf4;
+extern int _tls_index;
 extern int ghidra_vftable_SCLoggingHelper;
 extern int in_XCR0;
 extern int uStack_10;
@@ -335,6 +339,7 @@ extern undefined1 LAB_114882d9[];
 extern undefined1 LAB_11488378[];
 extern undefined1 LAB_114883a9[];
 extern undefined1 LAB_1148a7c1[];
+extern undefined1 LAB_1148ab47[];
 extern undefined1 LAB_1148bf7d[];
 extern undefined1 LAB_114f4a40[];
 extern undefined1 LAB_114fad30[];
@@ -415,6 +420,7 @@ struct Saving { char _pad; Saving(...); template<class T> int operator==(T); tem
 struct Single { char _pad; Single(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Studio { char _pad; Studio(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Subroutine { char _pad; Subroutine(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct ThreadLocalStoragePointer { char _pad; ThreadLocalStoragePointer(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Too { char _pad; Too(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Treating { char _pad; Treating(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Visual { char _pad; Visual(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
@@ -478,6 +484,10 @@ void FUN_11489a50(int param_1,int *param_2);
 extern void FUN_11489a50(...);
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ undefined4 FUN_1148a74e(int param_1);
 extern /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ undefined4 FUN_1148a74e(...);
+void FUN_1148aaa4(int *param_1);
+extern void FUN_1148aaa4(...);
+void FUN_1148ab00(int *param_1);
+extern void FUN_1148ab00(...);
 /* Library Function - Single Match __Init_thread_wait Library: Visual Studio 2019 Release */ void FUN_1148abc7(DWORD param_1);
 extern /* Library Function - Single Match __Init_thread_wait Library: Visual Studio 2019 Release */ void FUN_1148abc7(...);
 /* Library Function - Single Match int __stdcall dllmain_crt_dispatch(struct HINSTANCE__ * const_,unsigned long_,void * const_) Library: Visual Studio 2019 Release */ int __stdcall FUN_1148b143(HINSTANCE__ *param_1,ulong param_2,void *param_3);
@@ -2752,11 +2762,11 @@ undefined4 FUN_1148a74e(int param_1)
   iVar1 = (int)(___scrt_is_ucrt_dll_in_use());
   if ((iVar1 == 0) || (param_1 != 0)) {
     DAT_122fabe0 = (int)(0xffffffff);
-    _DAT_122fabe4 = (int)(0xffffffff);
-    _DAT_122fabe8 = (int)(0xffffffff);
+    DAT_122fabe4 = (int)(0xffffffff);
+    DAT_122fabe8 = (int)(0xffffffff);
     DAT_122fabec = (int)(0xffffffff);
-    _DAT_122fabf0 = (int)(0xffffffff);
-    _DAT_122fabf4 = (int)(0xffffffff);
+    DAT_122fabf0 = (int)(0xffffffff);
+    DAT_122fabf4 = (int)(0xffffffff);
 LAB_1148a7c1:
     DAT_122fabdd = (int)('\x01');
     uVar2 = (undefined4)(1);
@@ -2770,6 +2780,45 @@ LAB_1148a7c1:
     uVar2 = (undefined4)(0);
   }
   return (undefined4)(uVar2);
+}
+
+
+// Reference entry 1148aaa4; body size 74 bytes.
+#line 1 "ENTRY_1148aaa4"
+
+void FUN_1148aaa4(int *param_1)
+
+{
+  EnterCriticalSection((LPCRITICAL_SECTION)&DAT_122fac08);
+  DAT_12126b74 = (int)(DAT_12126b74 + 1);
+  *param_1 = (int)(DAT_12126b74);
+  *(int*)(*(int *)((int)((void *)__readfsdword(0x18)) + _tls_index * 4) + 0x104) = (int)(DAT_12126b74);
+  LeaveCriticalSection((LPCRITICAL_SECTION)&DAT_122fac08);
+  __Init_thread_notify();
+  return;
+}
+
+
+// Reference entry 1148ab00; body size 82 bytes.
+#line 1 "ENTRY_1148ab00"
+
+void FUN_1148ab00(int *param_1)
+
+{
+  EnterCriticalSection((LPCRITICAL_SECTION)&DAT_122fac08);
+  do {
+    if (*param_1 == 0) {
+      *param_1 = (int)(-1);
+LAB_1148ab47:
+      LeaveCriticalSection((LPCRITICAL_SECTION)&DAT_122fac08);
+      return;
+    }
+    if (*param_1 != -1) {
+      *(undefined4*)(*(int *)((int)((void *)__readfsdword(0x18)) + _tls_index * 4) + 0x104) = (undefined4)(DAT_12126b74);
+      goto LAB_1148ab47;
+    }
+    __Init_thread_wait(100);
+  } while( true );
 }
 
 
@@ -3590,7 +3639,7 @@ void FUN_117ea340(void)
   piVar1 = (int *)(DAT_121a08d8);
 
   if ((int *)(DAT_121a08d8) != (int *)0x0) {
-    _DAT_121a08d4 = (int)(0);
+    DAT_121a08d4 = (int)(0);
     DAT_121a08d8 = (int)((int *)0x0);
     (**(code **)(*piVar1 + 8))(DAT_12126b84 );
   }
@@ -3758,7 +3807,7 @@ void FUN_117ec8b0(void)
     }
     thunk_FUN_1148a50e(uVar1,uVar2);
   }
-  _DAT_121190c0 = (int)(0);
+  DAT_121190c0 = (int)(0);
   DAT_121190c4 = (int)(0xf);
   DAT_121190b0 = (int)(DAT_121190b0 & 0xffffff00);
   return;
@@ -3922,7 +3971,7 @@ void FUN_117eceb0(void)
     }
     thunk_FUN_1148a50e(uVar1,uVar2);
   }
-  _DAT_121190dc = (int)(0);
+  DAT_121190dc = (int)(0);
   DAT_121190e0 = (int)(0xf);
   DAT_121190cc = (int)(DAT_121190cc & 0xffffff00);
   return;
@@ -4086,7 +4135,7 @@ void FUN_117f1470(void)
     }
     thunk_FUN_1148a50e(uVar1,uVar2);
   }
-  _DAT_1211953c = (int)(0);
+  DAT_1211953c = (int)(0);
   DAT_12119540 = (int)(0xf);
   DAT_1211952c = (int)(DAT_1211952c & 0xffffff00);
   return;
@@ -4120,7 +4169,7 @@ void FUN_117f1bc0(void)
     }
     thunk_FUN_1148a50e(uVar1,uVar2);
   }
-  _DAT_12119560 = (int)(0);
+  DAT_12119560 = (int)(0);
   DAT_12119564 = (int)(0xf);
   DAT_12119550 = (int)(DAT_12119550 & 0xffffff00);
   return;
@@ -4154,7 +4203,7 @@ void FUN_117f3d10(void)
     }
     thunk_FUN_1148a50e(uVar1,uVar2);
   }
-  _DAT_12119594 = (int)(0);
+  DAT_12119594 = (int)(0);
   DAT_12119598 = (int)(0xf);
   DAT_12119584 = (int)(DAT_12119584 & 0xffffff00);
   return;
@@ -4272,7 +4321,7 @@ void FUN_117f64e0(void)
     }
     thunk_FUN_1148a50e(uVar1,uVar2);
   }
-  _DAT_1211962c = (int)(0);
+  DAT_1211962c = (int)(0);
   DAT_12119630 = (int)(0xf);
   DAT_1211961c = (int)(DAT_1211961c & 0xffffff00);
   return;
@@ -4826,7 +4875,7 @@ void FUN_118027a0(void)
     }
     thunk_FUN_1148a50e(uVar1,uVar2);
   }
-  _DAT_12119668 = (int)(0);
+  DAT_12119668 = (int)(0);
   DAT_1211966c = (int)(0xf);
   DAT_12119658 = (int)(DAT_12119658 & 0xffffff00);
   return;
@@ -4979,7 +5028,7 @@ void FUN_1180aff0(void)
     }
     thunk_FUN_1148a50e(uVar1,uVar2);
   }
-  _DAT_12119b30 = (int)(0);
+  DAT_12119b30 = (int)(0);
   DAT_12119b34 = (int)(0xf);
   DAT_12119b20 = (int)(DAT_12119b20 & 0xffffff00);
   return;
@@ -5024,7 +5073,7 @@ void FUN_1180e380(void)
   thunk_FUN_1148a50e(DAT_121a2a64,0x18);
   thunk_FUN_10723b00(&DAT_121a2a5c,*(undefined4 *)(DAT_121a2a5c + 4));
   thunk_FUN_1148a50e(DAT_121a2a5c,0x18);
-  _DAT_121a2a58 = (int)((uint)&ghidra_vftable_SCLoggingHelper);
+  DAT_121a2a58 = (int)((uint)&ghidra_vftable_SCLoggingHelper);
   thunk_FUN_105ba370();
   return;
 }
@@ -5047,7 +5096,7 @@ void FUN_1182acc0(void)
   piVar1 = (int *)(DAT_121a4a2c);
 
   if ((int *)(DAT_121a4a2c) != (int *)0x0) {
-    _DAT_121a4a28 = (int)(0);
+    DAT_121a4a28 = (int)(0);
     DAT_121a4a2c = (int)((int *)0x0);
     (**(code **)(*piVar1 + 8))(DAT_12126b84 );
   }

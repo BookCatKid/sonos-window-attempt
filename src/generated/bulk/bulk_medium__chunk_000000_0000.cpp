@@ -92,10 +92,10 @@ extern int DAT_121a06c8;
 extern int DAT_121a06cc;
 extern int DAT_121a06d4;
 extern int DAT_121a06d8;
+extern int DAT_122e8a98;
+extern int DAT_122e8ab8;
+extern int DAT_122e8af0;
 extern int DAT_122f6c20;
-extern int _DAT_122e8a98;
-extern int _DAT_122e8ab8;
-extern int _DAT_122e8af0;
 extern int ghidra_vftable_std_bad_alloc;
 extern int ghidra_vftable_std_bad_array_new_length;
 extern int ghidra_vftable_std_exception;
@@ -249,7 +249,7 @@ extern int *stack0xfffffffc;
 extern void *ExceptionList;
 namespace std {}
 struct SCIVpnDelegate { char _pad; SCIVpnDelegate(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int addRef; static int release; };
-struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> int append(A...); template<class... A> int int_allocRep(A...); template<class... A> int int_allocStdRep(A...); template<class... A> int length(A...); template<class... A> int op_ctor(A...); template<class... A> int op_eq(A...); template<class... A> int prepend(A...); };
+struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> static int append(A...); template<class... A> static int int_allocRep(A...); template<class... A> static int int_allocStdRep(A...); template<class... A> static int length(A...); int op_ctor(...); int op_eq(...); template<class... A> static int prepend(A...); };
 namespace std { template<class...> struct allocator { char _pad; allocator(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); }; }
 namespace std { template<class...> struct char_traits { char _pad; char_traits(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); }; }
 typedef void *CONNECTIVITY_STATE_LIMITED_ACCESS;
@@ -1466,12 +1466,12 @@ void FUN_100e5c50(void)
   double dVar1;
   
   if (0.0 <= DAT_11884810) {
-    _DAT_122e8a98 = (int)(SQRT(DAT_11884810));
+    DAT_122e8a98 = (int)(SQRT(DAT_11884810));
     return;
   }
   dVar1 = (double)(DAT_11884810);
   libm_sse2_sqrt_precise();
-  _DAT_122e8a98 = (int)(dVar1);
+  DAT_122e8a98 = (int)(dVar1);
   return;
 }
 
@@ -1487,12 +1487,12 @@ void FUN_100e5ce0(void)
   double dVar1;
   
   if (0.0 <= DAT_11884810) {
-    _DAT_122e8ab8 = (int)(SQRT(DAT_11884810));
+    DAT_122e8ab8 = (int)(SQRT(DAT_11884810));
     return;
   }
   dVar1 = (double)(DAT_11884810);
   libm_sse2_sqrt_precise();
-  _DAT_122e8ab8 = (int)(dVar1);
+  DAT_122e8ab8 = (int)(dVar1);
   return;
 }
 
@@ -1508,12 +1508,12 @@ void FUN_100e5d30(void)
   double dVar1;
   
   if (0.0 <= DAT_11884810) {
-    _DAT_122e8af0 = (int)(SQRT(DAT_11884810));
+    DAT_122e8af0 = (int)(SQRT(DAT_11884810));
     return;
   }
   dVar1 = (double)(DAT_11884810);
   libm_sse2_sqrt_precise();
-  _DAT_122e8af0 = (int)(dVar1);
+  DAT_122e8af0 = (int)(dVar1);
   return;
 }
 

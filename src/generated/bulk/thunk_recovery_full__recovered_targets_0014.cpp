@@ -459,6 +459,8 @@ extern int DAT_119c85ec;
 extern int DAT_119c9c20;
 extern int DAT_119ca238;
 extern int DAT_119ca624;
+extern int DAT_119caf38;
+extern int DAT_119caf48;
 extern int DAT_119caf88;
 extern int DAT_119cb9d0;
 extern int DAT_119cc548;
@@ -474,8 +476,6 @@ extern int UNK_119c74c4;
 extern int UNK_119ca61c;
 extern int UNK_119cace0;
 extern int UNK_119cad14;
-extern int _DAT_119caf38;
-extern int _DAT_119caf48;
 extern int ghidra_vftable_RAddQueueTracksHelper;
 extern int ghidra_vftable_RAesDecoder;
 extern int ghidra_vftable_RAesEncoder;
@@ -777,8 +777,8 @@ extern int *stack0xfffffffc;
 extern char s_STATION_119318b8[];
 extern char s_UNKNOWN_1189488c[];
 extern void *ExceptionList;
-namespace std { template<class... A> int _Xlength_error(A...);}
-struct RAsyncBrowseCacheMgr { char _pad; RAsyncBrowseCacheMgr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> int browse(A...); };
+namespace std { template<class... A> static int _Xlength_error(A...);}
+struct RAsyncBrowseCacheMgr { char _pad; RAsyncBrowseCacheMgr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> static int browse(A...); };
 typedef void *A;
 typedef void *ALBUM;
 typedef void *ALBUMARTIST;
@@ -16958,7 +16958,7 @@ LAB_1113cc30:
 LAB_1113cc35:
   if (uVar4 == 0) {
     thunk_FUN_111a36f0();
-    uVar2 = (undefined8)(_DAT_119caf38);
+    uVar2 = (undefined8)(DAT_119caf38);
     *param_3 = (undefined4)(4);
     *(undefined8*)(param_3 + 2) = (undefined8)(uVar2);
   }
@@ -16994,7 +16994,7 @@ LAB_1113cc35:
   
   if (*(int *)(param_1 + 0x2c) != 0) {
     thunk_FUN_111a36f0();
-    uVar1 = (undefined8)(_DAT_119caf48);
+    uVar1 = (undefined8)(DAT_119caf48);
     *param_4 = (undefined4)(4);
     *(undefined8*)(param_4 + 2) = (undefined8)(uVar1);
   }
@@ -17013,7 +17013,7 @@ LAB_1113cc35:
   
   if (*(int *)(param_1 + 0x2c) != 0) {
     thunk_FUN_111a36f0();
-    uVar1 = (undefined8)(_DAT_119caf48);
+    uVar1 = (undefined8)(DAT_119caf48);
     *param_4 = (undefined4)(4);
     *(undefined8*)(param_4 + 2) = (undefined8)(uVar1);
   }
@@ -17032,7 +17032,7 @@ LAB_1113cc35:
   
   if (*(int *)(param_1 + 0x2c) != 0) {
     thunk_FUN_111a36f0();
-    uVar1 = (undefined8)(_DAT_119caf48);
+    uVar1 = (undefined8)(DAT_119caf48);
     *param_4 = (undefined4)(4);
     *(undefined8*)(param_4 + 2) = (undefined8)(uVar1);
   }
@@ -17051,7 +17051,7 @@ LAB_1113cc35:
   
   if (*(int *)(param_1 + 0x2c) != 0) {
     thunk_FUN_111a36f0();
-    uVar1 = (undefined8)(_DAT_119caf48);
+    uVar1 = (undefined8)(DAT_119caf48);
     *param_4 = (undefined4)(4);
     *(undefined8*)(param_4 + 2) = (undefined8)(uVar1);
   }
@@ -17105,7 +17105,7 @@ LAB_1113cc35:
   
   if (*(int *)(param_1 + 0x2c) != 0) {
     thunk_FUN_111a36f0();
-    uVar1 = (undefined8)(_DAT_119caf48);
+    uVar1 = (undefined8)(DAT_119caf48);
     *param_4 = (undefined4)(4);
     *(undefined8*)(param_4 + 2) = (undefined8)(uVar1);
   }

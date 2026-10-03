@@ -313,12 +313,19 @@ extern int DAT_11882ff0;
 extern int DAT_1195e878;
 extern int DAT_1196536c;
 extern int DAT_11966c00;
+extern int DAT_1211e608;
+extern int DAT_1211e60c;
 extern int DAT_12126b84;
 extern int DAT_121a7b5d;
+extern int DAT_121a7b64;
 extern int DAT_121a7ba0;
 extern int DAT_121a7bb0;
+extern int DAT_121a7bb4;
 extern int DAT_121a7bb8;
+extern int DAT_121a7bbc;
 extern int DAT_121a7bc0;
+extern int DAT_121a7bc4;
+extern int DAT_121b60dc;
 extern int DAT_122f1250;
 extern int UNK_1001d651;
 extern int UNK_1006082a;
@@ -328,13 +335,6 @@ extern int UNK_119bea28;
 extern int UNK_119bea38;
 extern int UNK_119bf73c;
 extern int UNK_119c1a8c;
-extern int _DAT_1211e608;
-extern int _DAT_1211e60c;
-extern int _DAT_121a7b64;
-extern int _DAT_121a7bb4;
-extern int _DAT_121a7bbc;
-extern int _DAT_121a7bc4;
-extern int _DAT_121b60dc;
 extern int g_lSCObjCount;
 extern int ghidra_vftable_RAllocationChunk;
 extern int ghidra_vftable_RAsyncBrowseChildSegment;
@@ -568,10 +568,10 @@ extern int *stack0xfffffb2c;
 extern int *stack0xfffffff8;
 extern int *stack0xfffffffc;
 extern void *ExceptionList;
-namespace std { template<class... A> int _Xlength_error(A...);}
-struct RAsyncBrowseCacheMgr { char _pad; RAsyncBrowseCacheMgr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> int browse(A...); };
-struct SCLibrary { char _pad; SCLibrary(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> int createSCRunAsyncIOOperationAction(A...); template<class... A> int getSingleton(A...); };
-struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> int int_addref(A...); template<class... A> int int_allocRep(A...); template<class... A> int int_release(A...); template<class... A> int op_ctor(A...); template<class... A> int op_dtor(A...); template<class... A> int op_eq(A...); };
+namespace std { template<class... A> static int _Xlength_error(A...);}
+struct RAsyncBrowseCacheMgr { char _pad; RAsyncBrowseCacheMgr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> static int browse(A...); };
+struct SCLibrary { char _pad; SCLibrary(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> static int createSCRunAsyncIOOperationAction(A...); template<class... A> static int getSingleton(A...); };
+struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> static int int_addref(A...); template<class... A> static int int_allocRep(A...); template<class... A> static int int_release(A...); int op_ctor(...); int op_dtor(...); int op_eq(...); };
 typedef void *ALEXA_GET_AUTH_CODE_FAILED;
 typedef void *ALEXA_GET_CHALLENGE_CODE_FAILED;
 typedef void *ALEXA_LOW_MEMORY;
@@ -14246,7 +14246,7 @@ int FUN_11069c00(int param_1,byte *param_2,uint param_3)
 void FUN_1106b220(void)
 
 {
-  _DAT_121a7b64 = (int)(0);
+  DAT_121a7b64 = (int)(0);
   DAT_121a7b5d = (int)(0);
   return;
 }
@@ -18126,18 +18126,18 @@ void FUN_11099930(undefined4 param_1,undefined4 param_2)
   *(int*)iVar1 = (int)((int)(iVar1));
   *(int*)(iVar1 + 8) = (int)(iVar1);
   iVar1 = (int)(DAT_121a7bb8);
-  _DAT_121a7bc4 = (int)(0);
+  DAT_121a7bc4 = (int)(0);
   thunk_FUN_11098770(&DAT_121a7bb8,*(undefined4 *)(DAT_121a7bb8 + 4));
   *(int*)(iVar1 + 4) = (int)(iVar1);
   *(int*)iVar1 = (int)((int)(iVar1));
   *(int*)(iVar1 + 8) = (int)(iVar1);
   iVar1 = (int)(DAT_121a7bb0);
-  _DAT_121a7bbc = (int)(0);
+  DAT_121a7bbc = (int)(0);
   thunk_FUN_11098770(&DAT_121a7bb0,*(undefined4 *)(DAT_121a7bb0 + 4));
   *(int*)(iVar1 + 4) = (int)(iVar1);
   *(int*)iVar1 = (int)((int)(iVar1));
   *(int*)(iVar1 + 8) = (int)(iVar1);
-  _DAT_121a7bb4 = (int)(0);
+  DAT_121a7bb4 = (int)(0);
   func_0x11099700(param_1,param_2);
   return;
 }
@@ -18171,8 +18171,8 @@ FUN_1109ab70(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4
 {
   undefined1 *puVar1;
   
-  if ((code *)(_DAT_121b60dc) != (code *)0x0) {
-    puVar1 = (undefined1 *)((undefined1 *)(*(code *)(uint)(_DAT_121b60dc))(param_1,param_3,param_4,param_5));
+  if ((code *)(DAT_121b60dc) != (code *)0x0) {
+    puVar1 = (undefined1 *)((undefined1 *)(*(code *)(uint)(DAT_121b60dc))(param_1,param_3,param_4,param_5));
     return (undefined1 *)(puVar1);
   }
   return (undefined1 *)(&DAT_1186d2ee);
@@ -19321,8 +19321,8 @@ void FUN_110a3270(undefined4 param_1)
 void FUN_110a3290(int param_1)
 
 {
-  _DAT_1211e608 = (int)(param_1);
-  _DAT_1211e60c = (int)(param_1 >> 0x1f);
+  DAT_1211e608 = (int)(param_1);
+  DAT_1211e60c = (int)(param_1 >> 0x1f);
   return;
 }
 

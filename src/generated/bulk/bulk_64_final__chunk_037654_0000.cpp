@@ -162,6 +162,7 @@ extern int thunk_FUN_1148b0c0(...);
 extern int DAT_11358ea0;
 extern int DAT_1186d2ee;
 extern int DAT_1187d830;
+extern int DAT_11880f98;
 extern int DAT_11881ac8;
 extern int DAT_118850bc;
 extern int DAT_11889d24;
@@ -171,6 +172,7 @@ extern int DAT_118961fc;
 extern int DAT_1189dc98;
 extern int DAT_118a1c50;
 extern int DAT_1195ec18;
+extern int DAT_119e4cd0;
 extern int DAT_119f7d28;
 extern int DAT_119f7d30;
 extern int DAT_119f7d40;
@@ -195,6 +197,8 @@ extern int DAT_11a00a6c;
 extern int DAT_11a02de0;
 extern int DAT_11a02e60;
 extern int DAT_11a02ef0;
+extern int DAT_11a02f1c;
+extern int DAT_11a02f20;
 extern int DAT_11a02f30;
 extern int DAT_11a02f70;
 extern int DAT_12121e80;
@@ -204,10 +208,14 @@ extern int DAT_12121ea4;
 extern int DAT_12121ea8;
 extern int DAT_12121eac;
 extern int DAT_12121eb0;
+extern int DAT_12121ec0;
+extern int DAT_12121ec4;
 extern int DAT_12121ec8;
 extern int DAT_12121ecc;
 extern int DAT_12121ed0;
+extern int DAT_12121ed4;
 extern int DAT_12121ed8;
+extern int DAT_12121edc;
 extern int DAT_12121ee0;
 extern int DAT_12121ef4;
 extern int DAT_12121ef8;
@@ -246,14 +254,6 @@ extern int UNK_119fba58;
 extern int UNK_119fbc20;
 extern int UNK_119fc018;
 extern int UNK_11a013dc;
-extern int _DAT_11880f98;
-extern int _DAT_119e4cd0;
-extern int _DAT_11a02f1c;
-extern int _DAT_11a02f20;
-extern int _DAT_12121ec0;
-extern int _DAT_12121ec4;
-extern int _DAT_12121ed4;
-extern int _DAT_12121edc;
 extern int _UNK_119e4cd4;
 extern int _UNK_119e4cd8;
 extern int _UNK_119e4cdc;
@@ -1081,7 +1081,7 @@ void FUN_112f7c40(undefined4 param_1,undefined4 param_2,int param_3)
   iVar11 = (int)(_UNK_119e4cdc);
   iVar10 = (int)(_UNK_119e4cd8);
   iVar9 = (int)(_UNK_119e4cd4);
-  iVar8 = (int)(_DAT_119e4cd0);
+  iVar8 = (int)(DAT_119e4cd0);
   iVar15 = (int)(0);
   if (*piVar12 == 0) {
     if (0 < piVar12[2]) {
@@ -8443,19 +8443,19 @@ LAB_11337e6e:
       fVar11 = (float10)((float10)FUN_1135edf0(iVar5 + -0x134));
       thunk_FUN_1148b0c0();
       if ((int)uVar6 < -1) {
-        dVar12 = (double)((dVar12 / (double)fVar11) / _DAT_11a02f20);
+        dVar12 = (double)((dVar12 / (double)fVar11) / DAT_11a02f20);
       }
       else {
-        dVar12 = (double)(dVar12 * (double)fVar11 * _DAT_11a02f20);
+        dVar12 = (double)(dVar12 * (double)fVar11 * DAT_11a02f20);
       }
     }
     else if ((int)uVar6 < -1) {
       thunk_FUN_1148b0c0();
-      dVar12 = (double)(dVar12 * _DAT_11880f98);
+      dVar12 = (double)(dVar12 * DAT_11880f98);
     }
     else {
       thunk_FUN_1148b0c0();
-      dVar12 = (double)((double)((float)dVar12 * _DAT_11a02f1c));
+      dVar12 = (double)((double)((float)dVar12 * DAT_11a02f1c));
     }
   }
   *param_2 = (double)(dVar12);
@@ -11198,19 +11198,19 @@ void FUN_11359780(void)
     if (DAT_12121e84 == '\0') {
       ppuVar1 = (undefined **)(&PTR_LAB_119fbec4);
     }
-    _DAT_12121ec0 = (int)((code *)*ppuVar1);
-    _DAT_12121ec4 = (int)(ppuVar1[1]);
+    DAT_12121ec0 = (int)((code *)*ppuVar1);
+    DAT_12121ec4 = (int)(ppuVar1[1]);
     DAT_12121ecc = (int)(ppuVar1[3]);
     DAT_12121ed0 = (int)(ppuVar1[4]);
-    _DAT_12121ed4 = (int)(ppuVar1[5]);
+    DAT_12121ed4 = (int)(ppuVar1[5]);
     DAT_12121ed8 = (int)(ppuVar1[6]);
-    _DAT_12121edc = (int)(ppuVar1[7]);
+    DAT_12121edc = (int)(ppuVar1[7]);
     DAT_12121ee0 = (int)(ppuVar1[8]);
     DAT_12121ec8 = (int)(ppuVar1[2]);
   }
                     
                     
-  (*(code *)(uint)(_DAT_12121ec0))();
+  (*(code *)(uint)(DAT_12121ec0))();
   return;
 }
 
@@ -12068,7 +12068,7 @@ undefined4 FUN_11363db0(int param_1,int param_2,undefined8 param_3)
   
   iVar1 = (int)(*(uint *)((char *)&param_3 + 4));
   thunk_FUN_1148b0c0();
-  if (((double)((unsigned long long)(param_2) << 32 | (unsigned long long)(param_1)) != _DAT_11880f98) &&
+  if (((double)((unsigned long long)(param_2) << 32 | (unsigned long long)(param_1)) != DAT_11880f98) &&
      ((((*(uint *)((char *)&param_3 + 0) = (int)in_XMM0_Qa, param_1 != (int)param_3 ||
         (*(uint *)((char *)&param_3 + 4) = (int)((ulonglong)in_XMM0_Qa >> 0x20),(uint)( param_2) != *(uint *)((char *)&param_3 + 4))) ||
        (iVar1 < -0x80000)) || (0x7ffff < iVar1)))) {

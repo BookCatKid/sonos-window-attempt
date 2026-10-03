@@ -669,6 +669,8 @@ extern int DAT_11884800;
 extern int DAT_118872c0;
 extern int DAT_11887580;
 extern int DAT_1188bc94;
+extern int DAT_11891018;
+extern int DAT_1189101c;
 extern int DAT_11891fc4;
 extern int DAT_11893058;
 extern int DAT_11893060;
@@ -705,8 +707,6 @@ extern int DAT_122f5654;
 extern int DAT_122f5658;
 extern int DAT_122f565c;
 extern int UNK_102fcb8c;
-extern int _DAT_11891018;
-extern int _DAT_1189101c;
 extern int g_lSCObjCount;
 extern int ghidra_vftable_ApplicationControllerAIOHelper;
 extern int ghidra_vftable_RControlAIOOpCB;
@@ -797,6 +797,7 @@ extern int uStack_4c;
 extern int uStack_50;
 extern int uStack_517;
 extern int uStack_54;
+extern int uStack_7;
 extern int uStack_8;
 extern int uStack_88;
 extern int uStack_8c;
@@ -1024,6 +1025,7 @@ extern undefined1 LAB_115297bd[];
 extern undefined1 LAB_115297fd[];
 extern undefined1 LAB_11529845[];
 extern undefined1 LAB_11529929[];
+extern undefined1 LAB_1152998f[];
 extern undefined1 LAB_115299f0[];
 extern undefined1 LAB_11529a20[];
 extern undefined1 LAB_11529a9e[];
@@ -1480,12 +1482,12 @@ extern int *stack0xfffffffc;
 extern char s_Rhapsody_UPnP_11893144[];
 extern char s_Windows_Media_Server_11893128[];
 extern void *ExceptionList;
-namespace std { template<class... A> int _Xbad_function_call(A...); template<class... A> int _Xlength_error(A...);}
-struct SCLibParameters { char _pad; SCLibParameters(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> int addDeveloperOption(A...); template<class... A> int removeDeveloperOption(A...); };
-struct SCLibrary { char _pad; SCLibrary(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> int RebindNetworkSockets(A...); template<class... A> int RefreshNetworking(A...); template<class... A> int ResumeNetworking(A...); template<class... A> int SuspendNetworking(A...); template<class... A> int createActionContextForAction(A...); template<class... A> int getSCHousehold(A...); template<class... A> int getSingleton(A...); template<class... A> int int_loadCachedHH(A...); template<class... A> int int_resumeNetworking(A...); template<class... A> int int_suspendNetworking(A...); template<class... A> int setServiceAppInteropManager(A...); static int sm_bShutdown; };
-struct SCPropertyBag { char _pad; SCPropertyBag(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> int createSCObject(A...); };
-struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> int append(A...); template<class... A> int beginsWith(A...); template<class... A> int endsWith(A...); template<class... A> int format(A...); template<class... A> int hash(A...); template<class... A> int int_addref(A...); template<class... A> int int_allocRep(A...); template<class... A> int int_release(A...); template<class... A> int length(A...); template<class... A> int op_assign(A...); template<class... A> int op_ctor(A...); template<class... A> int op_dtor(A...); template<class... A> int op_eq(A...); template<class... A> int op_lt(A...); template<class... A> int prepend(A...); template<class... A> int replace(A...); template<class... A> int replaceChar(A...); template<class... A> int stringWithFormat(A...); template<class... A> int stringWithFormatList(A...); template<class... A> int substr(A...); template<class... A> int toLower(A...); template<class... A> int trimFront(A...); };
-struct SCStringTemplate { char _pad; SCStringTemplate(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> int createStringTemplate(A...); template<class... A> int isTemplateStringValid(A...); template<class... A> int op_dtor(A...); };
+namespace std { template<class... A> static int _Xbad_function_call(A...); template<class... A> static int _Xlength_error(A...);}
+struct SCLibParameters { char _pad; SCLibParameters(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> static int addDeveloperOption(A...); template<class... A> static int removeDeveloperOption(A...); };
+struct SCLibrary { char _pad; SCLibrary(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> static int RebindNetworkSockets(A...); template<class... A> static int RefreshNetworking(A...); template<class... A> static int ResumeNetworking(A...); template<class... A> static int SuspendNetworking(A...); template<class... A> static int createActionContextForAction(A...); template<class... A> static int getSCHousehold(A...); template<class... A> static int getSingleton(A...); template<class... A> static int int_loadCachedHH(A...); template<class... A> static int int_resumeNetworking(A...); template<class... A> static int int_suspendNetworking(A...); template<class... A> static int setServiceAppInteropManager(A...); static int sm_bShutdown; };
+struct SCPropertyBag { char _pad; SCPropertyBag(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> static int createSCObject(A...); };
+struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> static int append(A...); template<class... A> static int beginsWith(A...); template<class... A> static int endsWith(A...); template<class... A> static int format(A...); template<class... A> static int hash(A...); template<class... A> static int int_addref(A...); template<class... A> static int int_allocRep(A...); template<class... A> static int int_release(A...); template<class... A> static int length(A...); int op_assign(...); int op_ctor(...); int op_dtor(...); int op_eq(...); int op_lt(...); template<class... A> static int prepend(A...); template<class... A> static int replace(A...); template<class... A> static int replaceChar(A...); template<class... A> static int stringWithFormat(A...); template<class... A> static int stringWithFormatList(A...); template<class... A> static int substr(A...); template<class... A> static int toLower(A...); template<class... A> static int trimFront(A...); };
+struct SCStringTemplate { char _pad; SCStringTemplate(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> static int createStringTemplate(A...); template<class... A> static int isTemplateStringValid(A...); int op_dtor(...); };
 namespace std { template<class...> struct _Parallelism_allocator { char _pad; _Parallelism_allocator(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); }; }
 namespace std { template<class...> struct allocator { char _pad; allocator(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); }; }
 namespace std { template<class...> struct greater { char _pad; greater(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); }; }
@@ -1853,6 +1855,8 @@ undefined1 __stdcall FUN_102decb0(undefined1 *param_1);
 undefined1 __stdcall FUN_102decb0(undefined1 *param_1);
 undefined1 __stdcall FUN_102deda0(undefined1 *param_1,undefined1 *param_2);
 undefined1 __stdcall FUN_102deda0(undefined1 *param_1,undefined1 *param_2);
+undefined4 * __fastcall FUN_102df5d0(undefined4 *param_1);
+extern undefined4 * __fastcall FUN_102df5d0(...);
 void __fastcall FUN_102df780(undefined4 *param_1);
 extern void __fastcall FUN_102df780(...);
 int * __stdcall FUN_102df930(int *param_1,undefined4 param_2,int *param_3);
@@ -10189,6 +10193,67 @@ void __thiscall Recovered_Bulk::FUN_102df240(int *param_2)
 }
 
 
+// Reference entry 102df5d0; body size 220 bytes.
+#line 1 "ENTRY_102df5d0"
+
+undefined4 * __fastcall FUN_102df5d0(undefined4 *param_1)
+
+{
+ try {
+  int *piVar1;
+  uint uVar2;
+  void *pvVar3;
+  int *piVar4;
+  undefined4 uVar5;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined1 local_8;
+  undefined3 uStack_7;
+
+  uVar2 = (uint)(DAT_12126b84);
+
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCIObjImpl);
+  param_1[1] = (undefined4)(0);
+  g_lSCObjCount = (int)(g_lSCObjCount + 1);
+  *param_1 = (undefined4)((uint)&ghidra_vftable_SCWizardComponentBuilder);
+  param_1[2] = (undefined4)(0);
+  param_1[3] = (undefined4)(0);
+
+
+  pvVar3 = (void *)(operator_new(0x14));
+
+  if ((void *)(pvVar3) == (void *)0x0) {
+    piVar4 = (int *)((int *)0x0);
+  }
+  else {
+    piVar4 = (int *)((int *)thunk_FUN_103be5e0(uVar2));
+  }
+
+  if ((int *)(piVar4) != (int *)0x0) {
+    (**(code **)(*piVar4 + 4))();
+  }
+  piVar1 = (int *)((int *)param_1[3]);
+  local_8 = (undefined1)(((uint)(uStack_7) << 8 | (uint)(3)));
+  if ((int *)(piVar1) != (int *)0x0) {
+    param_1[2] = (undefined4)(0);
+    param_1[3] = (undefined4)(0);
+    (**(code **)(*piVar1 + 8))();
+  }
+  param_1[2] = (undefined4)(piVar4);
+  if ((int *)(piVar4) == (int *)0x0) {
+    uVar5 = (undefined4)(0);
+  }
+  else {
+    uVar5 = (undefined4)((**(code **)(*piVar4 + 0xc))());
+  }
+  param_1[3] = (undefined4)(uVar5);
+
+  return (undefined4 *)(param_1);
+
+ } catch (...) { }
+}
+
+
 // Reference entry 102df780; body size 110 bytes.
 #line 1 "ENTRY_102df780"
 
@@ -13747,7 +13812,7 @@ void FUN_102e4df0(int *param_1,float param_2)
 
   ((SCStr *)(local_14))->int_allocRep("WizardComponentKeyDuration");
 
-  (**(code **)(*param_1 + 0x28))(local_14,(int)(param_2 * _DAT_1189101c),uVar1);
+  (**(code **)(*param_1 + 0x28))(local_14,(int)(param_2 * DAT_1189101c),uVar1);
 
   ((SCStr *)(local_14))->int_release();
 
@@ -13777,7 +13842,7 @@ void FUN_102e4eb0(int *param_1,float param_2)
 
   ((SCStr *)(local_14))->int_allocRep("WizardComponentKeyOpacity");
 
-  (**(code **)(*param_1 + 0x28))(local_14,(int)(param_2 * _DAT_11891018),uVar1);
+  (**(code **)(*param_1 + 0x28))(local_14,(int)(param_2 * DAT_11891018),uVar1);
 
   ((SCStr *)(local_14))->int_release();
 
@@ -13807,7 +13872,7 @@ void FUN_102e4f40(int *param_1,float param_2)
 
   ((SCStr *)(local_14))->int_allocRep("WizardComponentKeyRotationAngle");
 
-  (**(code **)(*param_1 + 0x28))(local_14,(int)(param_2 * _DAT_1189101c),uVar1);
+  (**(code **)(*param_1 + 0x28))(local_14,(int)(param_2 * DAT_1189101c),uVar1);
 
   ((SCStr *)(local_14))->int_release();
 
