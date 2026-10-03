@@ -308,7 +308,7 @@ def _rename_definition(source, entry):
     name = re.search(r'(~?\s*[A-Za-z_]\w*(?:\s*<[^()]*>)?)\s*$', head[:paren])
     if not name:
         return source
-    return source[:name.start(1)] + 'FUN_' + entry + source[paren:]
+    return source[:name.start(1)] + ' FUN_' + entry + source[paren:]
 
 
 _OP_TAGS = {'==': 'op_eq', '!=': 'op_ne', '<=': 'op_le', '>=': 'op_ge',
@@ -990,7 +990,12 @@ def load_records(paths, skip):
 
 
 def eligible_bulk(source):
-    return not re.search(r'\bswitchD_|\bSUB_|\bbadstackalloc|\bin_FS_SEGMENT|\bunaff_retaddr', source)
+    # MSVC EH funclets (Catch_All_*, FIN/dtor funclets) reference the parent
+    # frame through unaff_EBP and register0x saves; they cannot codegen as
+    # free functions.
+    return not re.search(r'\bswitchD_|\bSUB_|\bbadstackalloc|\bin_FS_SEGMENT|'
+                         r'\bunaff_retaddr|\bregister0x|\bCatch_All_|'
+                         r'\bCatch_\w+\s*\(', source)
 
 
 def main():
