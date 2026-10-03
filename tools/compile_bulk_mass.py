@@ -145,7 +145,7 @@ SINT_TYPE = {1: 'char', 2: 'short', 4: 'int', 8: 'long long'}
 SYMBOL_RE = re.compile(
     r'\b((?:thunk_)?_?FUN_[0-9a-f]{8}|_?DAT_\w+|_?PTR_\w+|'
     r's_[A-Za-z0-9_]+|unaff_\w+|in_\w+|ExceptionList|stack0x[0-9a-f]+|LAB_\w+|'
-    r'g_\w+|uRam\w+|_?UNK_\w+|uStack\w+|uRam\w+)\b')
+    r'g_\w+|uRam\w+|_?UNK_\w+|uStack\w+|uRam\w+|_tls_\w+)\b')
 
 
 def _balanced(text, start, open_ch, close_ch):
@@ -364,6 +364,10 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
     head, body = source[:body_start], source[body_start:]
     body = _pcode(body)
     body = _fieldrefs(body)
+    # Ghidra aliases stack locals/params with a leading underscore in some
+    # records; the declaration keeps the plain name so drop the prefix.
+    body = re.sub(r'\b_(local_\w+|param_\w+|uStack_\w+|in_\w+|unaff_\w+|'
+                  r's_\w+|DAT_\w+|PTR_\w+|LAB_\w+|FUN_\w+)\b', r'\1', body)
     body = re.sub(r'\(\s*code\s*\)', '(code *)', body)
     body = re.sub(r'\bcode\s*\(', 'code * (', body)
     body = _operators(body)
@@ -505,7 +509,7 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
     # global template would be ambiguous under ``using namespace std``, so
     # flatten the use to a global ``std_name`` template instead.
     flat_templates = set()
-    for match in re.finditer(r'\b([a-z]\w*)\s*<[^(){};=]*>(?=\s*[*&])',
+    for match in re.finditer(r'\b([a-z_]\w*)\s*<[^(){};=]*>(?=\s*[*&])',
                              head + result_body):
         name = match.group(1)
         if re.search(r'\bstd::\s*' + re.escape(name) + r'\b(?!\s*<)',
@@ -529,7 +533,7 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
             head = bare.sub('std_' + name, head)
             result_body = bare.sub('std_' + name, result_body)
             type_stubs.add(('struct', 'std_' + name))
-    for match in re.finditer(r'\b([a-z]\w*)\s*<[^(){};=]*>(?=\s*[*&])',
+    for match in re.finditer(r'\b([a-z_]\w*)\s*<[^(){};=]*>(?=\s*[*&])',
                              head + result_body):
         type_stubs.add(('template', match.group(1)))
     whole = head + result_body
@@ -1024,9 +1028,11 @@ def cpp_source(records, defined, bad_decls=()):
 
     def emit_tree(node, owner=''):
         methods = node.get('__methods__', set())
-        inner = ''.join(f' template<class... A> static int {method}(A...);'
-                        for method in sorted(methods)
-                        if method.isidentifier() and method != owner)
+        inner = ''.join(
+            f' int {method}(...);' if method.startswith('op_')
+            else f' template<class... A> static int {method}(A...);'
+            for method in sorted(methods)
+            if method.isidentifier() and method != owner)
         inner += ''.join(f' static int {leaf};'
                          for leaf in sorted(set(node.get('__leaves__', ())) - methods)
                          if leaf.isidentifier() and leaf != owner)
@@ -1071,7 +1077,9 @@ def cpp_source(records, defined, bad_decls=()):
             decls.append(f'typedef void *{leaf_name};')
     for stub, methods in sorted(stubs.items()):
         decls.append(f'struct {stub} {{ {stub}(...);{ops}' + ''.join(
-            f' static int {method}(...);' for method in sorted(methods)
+            (f' int {method}(...);' if method.startswith('op_')
+             else f' static int {method}(...);')
+            for method in sorted(methods)
             if method != stub) + ' };')
     decls.append('using namespace std;')
     decl_lines = [line for line in decls + forward if line not in bad_decls]
@@ -1080,7 +1088,10 @@ def cpp_source(records, defined, bad_decls=()):
 
 
 def syntax_ok(source, scratch):
-    scratch.write_text(source)
+    # ``__thiscall`` is invalid on free functions but the post-pass lowers
+    # every free thiscall def to a Recovered_Bulk member afterwards; strip it
+    # for the probe so those records aren't rejected before the fix lands.
+    scratch.write_text(source.replace('__thiscall ', ''))
     result = subprocess.run([str(COMPILER), '/nologo', '/Zs', '/EHsc',
                              '/clang:--target=i686-pc-windows-msvc',
                              '/clang:-ferror-limit=0', os.path.relpath(scratch, ROOT)],
