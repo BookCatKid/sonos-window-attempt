@@ -941,7 +941,8 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
     # `name[idx] = rhs;` element assignments: cast rhs to the element type.
     # Array declarations already store the element type in varmap; indexed
     # pointers drop one star.
-    arrays = set(re.findall(r'\b[\w:<>]+[\s*&]+([A-Za-z_]\w*)\s*\[[^\]]*\]\s*;', body))
+    arrays = set(re.findall(r'\b(?!(?:return|goto|if|else|while|for|do|switch|case|sizeof)\b)'
+                            r'[\w:<>]+[\s*&]+([A-Za-z_]\w*)\s*\[[^\]]*\]\s*;', body))
     def cast_index(match):
         name, index, rhs = match.groups()
         target = varmap.get(name)
@@ -1120,16 +1121,18 @@ def _fix_types(body, ret_type, decl_text='', externs=frozenset()):
     # spelled in the cast, so cast rhs to it. Runs last so earlier RHS wraps
     # cannot retype the assignment.
     body = re.sub(
-        r'\*\s*\(\s*([A-Za-z_][\w:\s<>]*?)\s*(\*+)\s*\)\s*'
+        r'(\*+)\s*\(\s*([A-Za-z_][\w:\s<>]*?)\s*(\*+)\s*\)\s*'
         r'([A-Za-z_(][\w.\[\]()+ \s>*-]*?)\s*=(?![=])\s*'
         r'((?:(?!\b(?:goto|return|break|continue|case|default|else|do|switch|if|while|for)\b)[^;{}])*);',
-        lambda m: '*({}{}){} = ({})({}){};'.format(
-            m.group(1), m.group(2), m.group(3),
-            (m.group(1) + ' ' + m.group(2)[:-1]).strip() or 'void',
-            m.group(4).strip()[:top_comma(m.group(4).strip())]
-            if top_comma(m.group(4).strip()) >= 0 else m.group(4).strip(),
-            m.group(4).strip()[top_comma(m.group(4).strip()):]
-            if top_comma(m.group(4).strip()) >= 0 else ''), body)
+        lambda m: '{}({}{}){} = ({})({}){};'.format(
+            m.group(1), m.group(2), m.group(3), m.group(4),
+            (m.group(2) + ' ' +
+             m.group(3)[:max(0, len(m.group(3)) - len(m.group(1)))]).strip()
+            or 'void',
+            m.group(5).strip()[:top_comma(m.group(5).strip())]
+            if top_comma(m.group(5).strip()) >= 0 else m.group(5).strip(),
+            m.group(5).strip()[top_comma(m.group(5).strip()):]
+            if top_comma(m.group(5).strip()) >= 0 else ''), body)
     if ret_type and ret_type != 'void':
         body = re.sub(r'\breturn\s+((?:(?!\b(?:goto|return|break|continue|case|default|else|do|switch|if|while|for)\b)[^;{}])*);',
                       lambda m: f'return ({ret_type})({m.group(1).strip()});', body)
