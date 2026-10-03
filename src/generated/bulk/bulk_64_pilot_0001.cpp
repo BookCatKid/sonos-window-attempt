@@ -63,21 +63,39 @@ extern "C" int strcmp(const char *, const char *);
 extern "C" int wcscmp(const wchar_t *, const wchar_t *);
 extern "C" unsigned long __readfsdword(unsigned long);
 #pragma intrinsic(__readfsdword)
-struct SCIBTAccessoryDelegateSwigBase { char _pad; SCIBTAccessoryDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int unregisterListener; };
-struct SCIBleDelegateSwigBase { char _pad; SCIBleDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int tryDisconnect; static int tryFlushTransferTestBurst; static int tryStartScan; static int tryStopScan; static int unregisterListener; };
-struct SCIBlePeripheralDelegateSwigBase { char _pad; SCIBlePeripheralDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int tryStartAdvertising; static int tryStopAdvertising; static int unregisterListener; };
-struct SCIBrowseItemSwigBase { char _pad; SCIBrowseItemSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int unsubscribe; static int upnpClass; };
-struct SCIChirpDelegateSwigBase { char _pad; SCIChirpDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int unregisterListener; };
-struct SCICrashReportProviderSwigBase { char _pad; SCICrashReportProviderSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int updateUser; };
+struct SCIAbilityDelegateSwigBase { char _pad; SCIAbilityDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int requestPrereq; static int requireFineLocationPermission; static int shutdown; static int suggestPrereq; };
+struct SCIBTAccessoryDelegateSwigBase { char _pad; SCIBTAccessoryDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int shutdown; static int startDiscoveryScan; static int stopDiscoveryScan; static int unregisterListener; };
+struct SCIBTClassicConnectionProviderSwigBase { char _pad; SCIBTClassicConnectionProviderSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int setCallback; };
+struct SCIBleDelegateSwigBase { char _pad; SCIBleDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int sendQueuedPackets; static int setTransferTestPacket; static int shutdown; static int tryConnect; static int tryDisconnect; static int tryFlushTransferTestBurst; static int tryStartScan; static int tryStopScan; static int unregisterListener; };
+struct SCIBlePeripheralDelegateSwigBase { char _pad; SCIBlePeripheralDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int setRequireSecurePairing; static int shutdown; static int tryStartAdvertising; static int tryStopAdvertising; static int unregisterListener; };
+struct SCIBrowseItemSwigBase { char _pad; SCIBrowseItemSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int resolveArtworkUrls; static int showExplicitBadge; static int showProgressInfo; static int subscribe; static int unsubscribe; static int upnpClass; };
+struct SCIChirpDelegateSwigBase { char _pad; SCIChirpDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int shutdown; static int startChirpReceiving; static int stopChirpReceiving; static int unregisterListener; };
+struct SCIClipboardDelegateSwigBase { char _pad; SCIClipboardDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int setClipboardData; };
+struct SCICrashReportProviderSwigBase { char _pad; SCICrashReportProviderSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int setTag; static int startCrashReporter; static int updateUser; };
+struct SCICustomSubWizardSwigBase { char _pad; SCICustomSubWizardSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int skipStateOnBacktracking; };
+struct SCIExperimentManagerProviderSwigBase { char _pad; SCIExperimentManagerProviderSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int saveFeaturesJson; static int saveVariationsJson; static int setForcedVariation; };
 struct SCIGetAboutSonosStringCBSwigBase { char _pad; SCIGetAboutSonosStringCBSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int updateGetAboutSonosString; };
 struct SCIHapticDelegateSwigBase { char _pad; SCIHapticDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int vibrate; };
 struct SCIInAppMessagingProviderSwigBase { char _pad; SCIInAppMessagingProviderSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int updateRegistration; };
-struct SCIMdnsDelegateSwigBase { char _pad; SCIMdnsDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int unregisterListener; };
-struct SCINfcDelegateSwigBase { char _pad; SCINfcDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int unregisterListener; static int updateNfcCardMessage; };
-struct SCISecurityContextSwigBase { char _pad; SCISecurityContextSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int validateCertificateChain; static int validateCertificateData; };
+struct SCIInAppPurchaseManagerProviderSwigBase { char _pad; SCIInAppPurchaseManagerProviderSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int shutdown; };
+struct SCILoggingProviderSwigBase { char _pad; SCILoggingProviderSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int setAppLevel; static int setFlutterLevel; };
+struct SCIMdnsDelegateSwigBase { char _pad; SCIMdnsDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int startPlayerDiscovery; static int stopPlayerDiscovery; static int unregisterListener; };
+struct SCINfcDelegateSwigBase { char _pad; SCINfcDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int shutdown; static int startScan; static int stopScan; static int unregisterListener; static int updateNfcCardMessage; };
+struct SCISavedDataProviderSwigBase { char _pad; SCISavedDataProviderSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int setBoolValue; static int setIntegerValue; static int setStringValue; };
+struct SCISecureStoreSwigBase { char _pad; SCISecureStoreSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int setBlob; };
+struct SCISecurityContextSwigBase { char _pad; SCISecurityContextSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int setCertificateEnvironment; static int setCustomerID; static int setHHID; static int setSerialNumber; static int validateCertificateChain; static int validateCertificateData; };
+struct SCIStackTraceCaptureDelegateSwigBase { char _pad; SCIStackTraceCaptureDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int stackTraceCaptured; };
+struct SCIStringInputSwigBase { char _pad; SCIStringInputSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int setString; };
 struct SCIUrbanAirshipDelegateSwigBase { char _pad; SCIUrbanAirshipDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int unregisterListener; };
-struct SCIWebsocketDelegateSwigBase { char _pad; SCIWebsocketDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int writeData; static int writeString; };
-struct SCIWifiDelegateSwigBase { char _pad; SCIWifiDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int unregisterListener; };
+struct SCIUrlConnectionSwigBase { char _pad; SCIUrlConnectionSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int serialNum; static int setResponse; static int setResult; };
+struct SCIUrlSessionCallbackSwigBase { char _pad; SCIUrlSessionCallbackSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int sessionComplete; };
+struct SCIUrlSessionProviderSwigBase { char _pad; SCIUrlSessionProviderSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int startURLSession; };
+struct SCIVoiceServiceDelegateSwigBase { char _pad; SCIVoiceServiceDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int startAuthentication; };
+struct SCIVpnDelegate { char _pad; SCIVpnDelegate(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int requestVPN; };
+struct SCIVpnDelegateSwigBase { char _pad; SCIVpnDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int requestVPN; };
+struct SCIWebsocketDelegateSwigBase { char _pad; SCIWebsocketDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int setCallback; static int writeData; static int writeString; };
+struct SCIWifiDelegateSwigBase { char _pad; SCIWifiDelegateSwigBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int startScan; static int stopScan; static int unregisterListener; };
+struct SCLibSonarCallback { char _pad; SCLibSonarCallback(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int requireInputToChangeHoldStyle; static int sonarBegin; static int sonarEnd; static int startMotionData; static int startRawMotionData; static int startRecording; static int stopMotionData; static int stopRawMotionData; static int stopRecording; };
 struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> static int int_addref(A...); template<class... A> static int int_allocRep(A...); template<class... A> static int int_release(A...); template<class... A> static int length(A...); static int op_ctor(...); template<class... A> static int setFromUTF16(A...); };
 struct Attempt { char _pad; Attempt(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct CoTaskMemFree { char _pad; CoTaskMemFree(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
@@ -87,7 +105,8 @@ struct Subroutine { char _pad; Subroutine(...); template<class T> int operator==
 struct ThrowInfo { char _pad; ThrowInfo(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 typedef void *WARNING;
 using namespace std;
-struct Recovered_Bulk { char _pad; void __thiscall FUN_10148b40(undefined4 param_2); template<class... A> int FUN_10148b40(A...); void __thiscall FUN_10148ba0(undefined4 *param_2); template<class... A> int FUN_10148ba0(A...); void __thiscall FUN_10148c80(undefined1 param_2); template<class... A> int FUN_10148c80(A...); void __thiscall FUN_10148da0(int *param_2); template<class... A> int FUN_10148da0(A...); void __thiscall FUN_10148e20(int *param_2); template<class... A> int FUN_10148e20(A...); void __thiscall FUN_10148ea0(int *param_2); template<class... A> int FUN_10148ea0(A...); void __thiscall FUN_10148f20(int *param_2); template<class... A> int FUN_10148f20(A...); void __thiscall FUN_10148fa0(int *param_2); template<class... A> int FUN_10148fa0(A...); void __thiscall FUN_10149020(int *param_2); template<class... A> int FUN_10149020(A...); void __thiscall FUN_101490a0(int *param_2); template<class... A> int FUN_101490a0(A...); void __thiscall FUN_10149120(int *param_2); template<class... A> int FUN_10149120(A...); void __thiscall FUN_101491a0(int *param_2); template<class... A> int FUN_101491a0(A...); void __thiscall FUN_10149220(undefined4 *param_2); template<class... A> int FUN_10149220(A...); void __thiscall FUN_10149300(undefined4 *param_2); template<class... A> int FUN_10149300(A...); void __thiscall FUN_10149440(int *param_2); template<class... A> int FUN_10149440(A...); void __thiscall FUN_101494c0(SCStr *param_2); template<class... A> int FUN_101494c0(A...); void __thiscall FUN_101495b0(int *param_2); template<class... A> int FUN_101495b0(A...); void __thiscall FUN_10149630(int *param_2); template<class... A> int FUN_10149630(A...); void __thiscall FUN_101496b0(undefined4 param_2); template<class... A> int FUN_101496b0(A...); void __thiscall FUN_101497b0(undefined4 *param_2); template<class... A> int FUN_101497b0(A...); };
+struct Recovered_Bulk { char _pad; void __thiscall FUN_101442a0(undefined4 param_2); template<class... A> int FUN_101442a0(A...); void __thiscall FUN_101444f0(undefined1 *param_2); template<class... A> int FUN_101444f0(A...); void __thiscall FUN_101445e0(undefined1 *param_2); template<class... A> int FUN_101445e0(A...); void __thiscall FUN_101447b0(int *param_2); template<class... A> int FUN_101447b0(A...); void __thiscall FUN_10144860(undefined4 param_2); template<class... A> int FUN_10144860(A...); void __thiscall FUN_101448c0(undefined4 *param_2,undefined4 *param_3); template<class... A> int FUN_101448c0(A...); void __thiscall FUN_10144a00(undefined4 *param_2,undefined1 param_3); template<class... A> int FUN_10144a00(A...); void __thiscall FUN_10144ae0(int *param_2); template<class... A> int FUN_10144ae0(A...); void __thiscall FUN_10144b60(int *param_2); template<class... A> int FUN_10144b60(A...); void __thiscall FUN_10144be0(undefined1 *param_2); template<class... A> int FUN_10144be0(A...); void __thiscall FUN_10144cd0(undefined4 *param_2); template<class... A> int FUN_10144cd0(A...); void __thiscall FUN_10144db0(undefined1 *param_2); template<class... A> int FUN_10144db0(A...); void __thiscall FUN_10144ea0(undefined4 param_2,undefined8 param_3); template<class... A> int FUN_10144ea0(A...); void __thiscall FUN_10144f90(undefined4 param_2); template<class... A> int FUN_10144f90(A...); void __thiscall FUN_10144ff0(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4); template<class... A> int FUN_10144ff0(A...); void __thiscall FUN_101451a0(undefined1 *param_2); template<class... A> int FUN_101451a0(A...); void __thiscall FUN_10145290(undefined4 *param_2,undefined4 param_3); template<class... A> int FUN_10145290(A...); void __thiscall FUN_10145370(undefined1 param_2); template<class... A> int FUN_10145370(A...); void __thiscall FUN_101453d0(int *param_2); template<class... A> int FUN_101453d0(A...); void __thiscall FUN_10145450(undefined4 param_2); template<class... A> int FUN_10145450(A...); void __thiscall FUN_101454b0(undefined1 *param_2); template<class... A> int FUN_101454b0(A...); void __thiscall FUN_101455a0(undefined4 *param_2); template<class... A> int FUN_101455a0(A...); void __thiscall FUN_10145680(undefined4 *param_2,undefined4 *param_3); template<class... A> int FUN_10145680(A...); void __thiscall FUN_101457b0(undefined4 *param_2,undefined4 *param_3); template<class... A> int FUN_101457b0(A...); void __thiscall FUN_10145dd0(undefined4 *param_2); template<class... A> int FUN_10145dd0(A...); void __thiscall FUN_10145eb0(undefined4 param_2,int *param_3); template<class... A> int FUN_10145eb0(A...); void __thiscall FUN_10145f30(undefined4 param_2); template<class... A> int FUN_10145f30(A...); void __thiscall FUN_10145f90(undefined4 param_2); template<class... A> int FUN_10145f90(A...); void __thiscall FUN_10146050(undefined4 param_2,int *param_3); template<class... A> int FUN_10146050(A...); void __thiscall FUN_10146130(undefined4 param_2,int *param_3); template<class... A> int FUN_10146130(A...); void __thiscall FUN_101461b0(undefined4 param_2,int *param_3,undefined4 param_4,undefined4 param_5,
+            undefined4 param_6,undefined4 param_7,undefined1 *param_8); template<class... A> int FUN_101461b0(A...); void __thiscall FUN_10146340(undefined1 param_2); template<class... A> int FUN_10146340(A...); void __thiscall FUN_101463b0(int *param_2); template<class... A> int FUN_101463b0(A...); void __thiscall FUN_10146770(int *param_2,undefined1 param_3); template<class... A> int FUN_10146770(A...); void __thiscall FUN_101467f0(undefined4 param_2); template<class... A> int FUN_101467f0(A...); void __thiscall FUN_10148a00(undefined4 *param_2); template<class... A> int FUN_10148a00(A...); void __thiscall FUN_10148b40(undefined4 param_2); template<class... A> int FUN_10148b40(A...); void __thiscall FUN_10148ba0(undefined4 *param_2); template<class... A> int FUN_10148ba0(A...); void __thiscall FUN_10148c80(undefined1 param_2); template<class... A> int FUN_10148c80(A...); void __thiscall FUN_10148da0(int *param_2); template<class... A> int FUN_10148da0(A...); void __thiscall FUN_10148e20(int *param_2); template<class... A> int FUN_10148e20(A...); void __thiscall FUN_10148ea0(int *param_2); template<class... A> int FUN_10148ea0(A...); void __thiscall FUN_10148f20(int *param_2); template<class... A> int FUN_10148f20(A...); void __thiscall FUN_10148fa0(int *param_2); template<class... A> int FUN_10148fa0(A...); void __thiscall FUN_10149020(int *param_2); template<class... A> int FUN_10149020(A...); void __thiscall FUN_101490a0(int *param_2); template<class... A> int FUN_101490a0(A...); void __thiscall FUN_10149120(int *param_2); template<class... A> int FUN_10149120(A...); void __thiscall FUN_101491a0(int *param_2); template<class... A> int FUN_101491a0(A...); void __thiscall FUN_10149220(undefined4 *param_2); template<class... A> int FUN_10149220(A...); void __thiscall FUN_10149300(undefined4 *param_2); template<class... A> int FUN_10149300(A...); void __thiscall FUN_10149440(int *param_2); template<class... A> int FUN_10149440(A...); void __thiscall FUN_101494c0(SCStr *param_2); template<class... A> int FUN_101494c0(A...); void __thiscall FUN_101495b0(int *param_2); template<class... A> int FUN_101495b0(A...); void __thiscall FUN_10149630(int *param_2); template<class... A> int FUN_10149630(A...); void __thiscall FUN_101496b0(undefined4 param_2); template<class... A> int FUN_101496b0(A...); void __thiscall FUN_101497b0(undefined4 *param_2); template<class... A> int FUN_101497b0(A...); };
 
 extern __declspec(dllimport) int _CxxThrowException(...);
 extern int int_addref(...);
@@ -123,6 +142,24 @@ extern int DAT_121a06c0;
 extern int DAT_121a06c4;
 extern int DAT_121a06d8;
 extern int uStack_24;
+extern undefined1 LAB_114e39c8[];
+extern undefined1 LAB_114e3a28[];
+extern undefined1 LAB_114e3a8b[];
+extern undefined1 LAB_114e3ae0[];
+extern undefined1 LAB_114e3b38[];
+extern undefined1 LAB_114e3b90[];
+extern undefined1 LAB_114e3be8[];
+extern undefined1 LAB_114e3c40[];
+extern undefined1 LAB_114e3ca6[];
+extern undefined1 LAB_114e3d08[];
+extern undefined1 LAB_114e3d60[];
+extern undefined1 LAB_114e3db8[];
+extern undefined1 LAB_114e3e10[];
+extern undefined1 LAB_114e3e6b[];
+extern undefined1 LAB_114e3ecb[];
+extern undefined1 LAB_114e3f20[];
+extern undefined1 LAB_114e3f78[];
+extern undefined1 LAB_114e3fd0[];
 extern undefined1 LAB_114e4020[];
 extern undefined1 LAB_114e4070[];
 extern undefined1 LAB_114e40c0[];
@@ -219,13 +256,16 @@ extern undefined1 LAB_114e5200[];
 extern undefined1 LAB_114e5230[];
 extern undefined1 LAB_114e5260[];
 extern undefined1 LAB_114e5290[];
+extern undefined1 LAB_114e52c0[];
 extern undefined1 LAB_114e52f0[];
 extern undefined1 LAB_114e5320[];
 extern undefined1 LAB_114e5350[];
 extern undefined1 LAB_114e5380[];
+extern undefined1 LAB_114e53b0[];
 extern undefined1 LAB_114e53e0[];
 extern undefined1 LAB_114e5410[];
 extern undefined1 LAB_114e5440[];
+extern undefined1 LAB_114e5470[];
 extern undefined1 LAB_114e54a0[];
 extern undefined1 LAB_114e54d0[];
 extern undefined1 LAB_114e5500[];
@@ -263,6 +303,7 @@ extern undefined1 LAB_114e5ad0[];
 extern undefined1 LAB_114e5b00[];
 extern undefined1 LAB_114e5b30[];
 extern undefined1 LAB_114e5b60[];
+extern undefined1 LAB_114e5b90[];
 extern undefined1 LAB_114e5bc0[];
 extern undefined1 LAB_114e5bf0[];
 extern undefined1 LAB_114e5c20[];
@@ -282,6 +323,68 @@ extern int *stack0xffffffe0;
 extern int *stack0xffffffe4;
 extern int *stack0xfffffffc;
 extern void *ExceptionList;
+void __fastcall FUN_10144310(int param_1);
+extern void __fastcall FUN_10144310(...);
+void __fastcall FUN_10144370(int param_1);
+extern void __fastcall FUN_10144370(...);
+void __fastcall FUN_101443d0(int param_1);
+extern void __fastcall FUN_101443d0(...);
+void __fastcall FUN_10144430(int param_1);
+extern void __fastcall FUN_10144430(...);
+void __fastcall FUN_10144490(int param_1);
+extern void __fastcall FUN_10144490(...);
+void __fastcall FUN_101446f0(int param_1);
+extern void __fastcall FUN_101446f0(...);
+void __fastcall FUN_10144750(int param_1);
+extern void __fastcall FUN_10144750(...);
+void __fastcall FUN_101458e0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2);
+void __fastcall FUN_101458e0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2);
+void __fastcall FUN_10145940(int param_1);
+extern void __fastcall FUN_10145940(...);
+void __fastcall FUN_101459a0(int param_1);
+extern void __fastcall FUN_101459a0(...);
+void __fastcall FUN_10145a00(int param_1);
+extern void __fastcall FUN_10145a00(...);
+void __fastcall FUN_10145a60(int param_1);
+extern void __fastcall FUN_10145a60(...);
+void __fastcall FUN_10145ac0(int param_1);
+extern void __fastcall FUN_10145ac0(...);
+void __fastcall FUN_10145b20(int param_1);
+extern void __fastcall FUN_10145b20(...);
+void __fastcall FUN_10145b80(int param_1);
+extern void __fastcall FUN_10145b80(...);
+void __fastcall FUN_10145be0(int param_1);
+extern void __fastcall FUN_10145be0(...);
+void __fastcall FUN_10145c40(int param_1);
+extern void __fastcall FUN_10145c40(...);
+void __fastcall FUN_10145cb0(int param_1);
+extern void __fastcall FUN_10145cb0(...);
+void __fastcall FUN_10145d10(int param_1);
+extern void __fastcall FUN_10145d10(...);
+void __fastcall FUN_10145d70(int param_1);
+extern void __fastcall FUN_10145d70(...);
+void __fastcall FUN_10145ff0(int param_1);
+extern void __fastcall FUN_10145ff0(...);
+void __fastcall FUN_101460d0(int param_1);
+extern void __fastcall FUN_101460d0(...);
+void __fastcall FUN_101462e0(int param_1);
+extern void __fastcall FUN_101462e0(...);
+void __fastcall FUN_10146430(int param_1);
+extern void __fastcall FUN_10146430(...);
+void __fastcall FUN_10146490(int param_1);
+extern void __fastcall FUN_10146490(...);
+void __fastcall FUN_101464f0(int param_1);
+extern void __fastcall FUN_101464f0(...);
+void __fastcall FUN_10146550(int param_1);
+extern void __fastcall FUN_10146550(...);
+void __fastcall FUN_101465b0(int param_1);
+extern void __fastcall FUN_101465b0(...);
+void __fastcall FUN_10146610(int param_1);
+extern void __fastcall FUN_10146610(...);
+void __fastcall FUN_10146670(int param_1);
+extern void __fastcall FUN_10146670(...);
+void __fastcall FUN_101466d0(int param_1);
+extern void __fastcall FUN_101466d0(...);
 void __fastcall FUN_10148ae0(int param_1);
 extern void __fastcall FUN_10148ae0(...);
 void __fastcall FUN_10148ce0(int param_1);
@@ -312,6 +415,14 @@ undefined4 FUN_1014a0d0(void);
 extern undefined4 FUN_1014a0d0(...);
 undefined4 FUN_1014a1c0(void);
 extern undefined4 FUN_1014a1c0(...);
+void __stdcall FUN_1014cce0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+                 undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
+                 undefined4 param_13,undefined4 param_14);
+void __stdcall FUN_1014cce0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+                 undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
+                 undefined4 param_13,undefined4 param_14);
 undefined4
 __stdcall FUN_1014cf50(int *param_1,ushort *param_2,ushort *param_3,ushort *param_4,ushort *param_5,
             ushort *param_6,undefined4 param_7,undefined4 param_8);
@@ -346,6 +457,22 @@ undefined4 __stdcall FUN_1014dc10(int *param_1);
 undefined4 __stdcall FUN_1014dc10(int *param_1);
 undefined4 __stdcall FUN_1014dd00(int *param_1);
 undefined4 __stdcall FUN_1014dd00(int *param_1);
+void __stdcall FUN_1014de40(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+                 undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
+                 undefined4 param_13,undefined4 param_14,undefined4 param_15,undefined4 param_16,
+                 undefined4 param_17,undefined4 param_18,undefined4 param_19,undefined4 param_20,
+                 undefined4 param_21,undefined4 param_22,undefined4 param_23,undefined4 param_24,
+                 undefined4 param_25,undefined4 param_26,undefined4 param_27,undefined4 param_28,
+                 undefined4 param_29);
+void __stdcall FUN_1014de40(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+                 undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
+                 undefined4 param_13,undefined4 param_14,undefined4 param_15,undefined4 param_16,
+                 undefined4 param_17,undefined4 param_18,undefined4 param_19,undefined4 param_20,
+                 undefined4 param_21,undefined4 param_22,undefined4 param_23,undefined4 param_24,
+                 undefined4 param_25,undefined4 param_26,undefined4 param_27,undefined4 param_28,
+                 undefined4 param_29);
 undefined4 __stdcall FUN_1014df80(int *param_1,undefined4 param_2,ushort *param_3);
 undefined4 __stdcall FUN_1014df80(int *param_1,undefined4 param_2,ushort *param_3);
 undefined4 __stdcall FUN_1014e030(int *param_1,ushort *param_2,ushort *param_3);
@@ -504,6 +631,8 @@ undefined4 FUN_10151670(int *param_1);
 extern undefined4 FUN_10151670(...);
 void __stdcall FUN_10151790(int *param_1,ushort *param_2);
 void __stdcall FUN_10151790(int *param_1,ushort *param_2);
+void __stdcall FUN_101519e0(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4);
+void __stdcall FUN_101519e0(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4);
 void __stdcall FUN_10151ac0(int *param_1,ushort *param_2);
 void __stdcall FUN_10151ac0(int *param_1,ushort *param_2);
 void __stdcall FUN_10151b50(int *param_1);
@@ -512,12 +641,16 @@ void __stdcall FUN_10151bd0(int *param_1,int param_2,ushort *param_3);
 void __stdcall FUN_10151bd0(int *param_1,int param_2,ushort *param_3);
 void __stdcall FUN_10151c60(int *param_1,int param_2);
 void __stdcall FUN_10151c60(int *param_1,int param_2);
+undefined4 __stdcall FUN_10151d10(int *param_1,undefined4 param_2,ushort *param_3,ushort *param_4);
+undefined4 __stdcall FUN_10151d10(int *param_1,undefined4 param_2,ushort *param_3,ushort *param_4);
 undefined4 __stdcall FUN_10151e10(int *param_1);
 undefined4 __stdcall FUN_10151e10(int *param_1);
 undefined4 __stdcall FUN_10151f00(int *param_1);
 undefined4 __stdcall FUN_10151f00(int *param_1);
 undefined4 __stdcall FUN_10152050(int *param_1,undefined4 param_2);
 undefined4 __stdcall FUN_10152050(int *param_1,undefined4 param_2);
+void __stdcall FUN_10152180(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4);
+void __stdcall FUN_10152180(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4);
 void __stdcall FUN_10152240(int *param_1,ushort *param_2);
 void __stdcall FUN_10152240(int *param_1,ushort *param_2);
 void __stdcall FUN_101522c0(int *param_1,ushort *param_2);
@@ -582,6 +715,12 @@ undefined4 __stdcall FUN_10153da0(int *param_1);
 undefined4 __stdcall FUN_10153da0(int *param_1);
 undefined4 __stdcall FUN_10153e90(int *param_1);
 undefined4 __stdcall FUN_10153e90(int *param_1);
+void __stdcall FUN_101541e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+                 undefined4 param_9,undefined4 param_10);
+void __stdcall FUN_101541e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+                 undefined4 param_9,undefined4 param_10);
 undefined4 FUN_10154270(int *param_1);
 extern undefined4 FUN_10154270(...);
 undefined1 __stdcall FUN_10154310(int *param_1,ushort *param_2);
@@ -592,6 +731,8 @@ void __stdcall FUN_101544d0(int *param_1,ushort *param_2,undefined4 param_3);
 void __stdcall FUN_101544d0(int *param_1,ushort *param_2,undefined4 param_3);
 void __stdcall FUN_10154560(int *param_1,ushort *param_2,ushort *param_3,int param_4);
 void __stdcall FUN_10154560(int *param_1,ushort *param_2,ushort *param_3,int param_4);
+void __stdcall FUN_10154630(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4);
+void __stdcall FUN_10154630(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4);
 undefined4 __stdcall FUN_10154820(int *param_1);
 undefined4 __stdcall FUN_10154820(int *param_1);
 undefined4 __stdcall FUN_10154910(int *param_1);
@@ -612,16 +753,1921 @@ SCStr * __stdcall FUN_101550e0(int *param_1);
 SCStr * __stdcall FUN_101550e0(int *param_1);
 undefined4 __stdcall FUN_10155230(int *param_1);
 undefined4 __stdcall FUN_10155230(int *param_1);
+void __stdcall FUN_10155360(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+                 undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
+                 undefined4 param_13,undefined4 param_14);
+void __stdcall FUN_10155360(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+                 undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
+                 undefined4 param_13,undefined4 param_14);
 void __stdcall FUN_101554f0(int *param_1,ushort *param_2);
 void __stdcall FUN_101554f0(int *param_1,ushort *param_2);
 void __stdcall FUN_10155600(int *param_1,ushort *param_2,ushort *param_3,undefined4 *param_4,int param_5,
                  undefined4 param_6);
 void __stdcall FUN_10155600(int *param_1,ushort *param_2,ushort *param_3,undefined4 *param_4,int param_5,
                  undefined4 param_6);
+void __stdcall FUN_101557a0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+                 undefined4 param_9);
+void __stdcall FUN_101557a0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+                 undefined4 param_9);
 void __stdcall FUN_101558b0(int *param_1,ushort *param_2);
 void __stdcall FUN_101558b0(int *param_1,ushort *param_2);
 void __stdcall FUN_101559c0(int *param_1,ushort *param_2);
 void __stdcall FUN_101559c0(int *param_1,ushort *param_2);
+// Reference entry 101442a0; body size 78 bytes.
+#line 1 "ENTRY_101442a0"
+
+void __thiscall Recovered_Bulk::FUN_101442a0(undefined4 param_2)
+{
+  int param_1 = (int )this;
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x28) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x28))(param_2);
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::requestPrereq");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10144310; body size 72 bytes.
+#line 1 "ENTRY_10144310"
+
+void __fastcall FUN_10144310(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x10) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x10))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIVpnDelegate::requestVPN");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10144370; body size 72 bytes.
+#line 1 "ENTRY_10144370"
+
+void __fastcall FUN_10144370(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0xc) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0xc))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIVpnDelegateSwigBase::requestVPN");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 101443d0; body size 72 bytes.
+#line 1 "ENTRY_101443d0"
+
+void __fastcall FUN_101443d0(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x34) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x34))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::requireFineLocationPermission");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10144430; body size 72 bytes.
+#line 1 "ENTRY_10144430"
+
+void __fastcall FUN_10144430(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x4c) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x4c))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCLibSonarCallback::requireInputToChangeHoldStyle");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10144490; body size 72 bytes.
+#line 1 "ENTRY_10144490"
+
+void __fastcall FUN_10144490(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x68) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x68))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::resolveArtworkUrls");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 101444f0; body size 186 bytes.
+#line 1 "ENTRY_101444f0"
+
+void __thiscall Recovered_Bulk::FUN_101444f0(undefined1 *param_2)
+{
+  int param_1 = (int )this;
+ try {
+  uint uVar1;
+  undefined4 uVar2;
+  undefined1 *puVar3;
+  undefined1 local_30 [28];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  local_14 = (uint)(uVar1);
+  if (*(int *)(param_1 + 0x4c) != 0) {
+    puVar3 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)(param_2) != (undefined1 *)0x0) {
+      puVar3 = (undefined1 *)(param_2);
+    }
+    thunk_FUN_101a1ea0(puVar3);
+    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
+    uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
+    (**(code **)(param_1 + 0x4c))(uVar2);
+    thunk_FUN_101a2000();
+
+    ((SCStr *)((SCStr *)&param_2))->int_release();
+
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::saveFeaturesJson");
+                    
+  _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 101445e0; body size 186 bytes.
+#line 1 "ENTRY_101445e0"
+
+void __thiscall Recovered_Bulk::FUN_101445e0(undefined1 *param_2)
+{
+  int param_1 = (int )this;
+ try {
+  uint uVar1;
+  undefined4 uVar2;
+  undefined1 *puVar3;
+  undefined1 local_30 [28];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  local_14 = (uint)(uVar1);
+  if (*(int *)(param_1 + 0x44) != 0) {
+    puVar3 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)(param_2) != (undefined1 *)0x0) {
+      puVar3 = (undefined1 *)(param_2);
+    }
+    thunk_FUN_101a1ea0(puVar3);
+    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
+    uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
+    (**(code **)(param_1 + 0x44))(uVar2);
+    thunk_FUN_101a2000();
+
+    ((SCStr *)((SCStr *)&param_2))->int_release();
+
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::saveVariationsJson");
+                    
+  _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 101446f0; body size 67 bytes.
+#line 1 "ENTRY_101446f0"
+
+void __fastcall FUN_101446f0(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x24) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x24))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::sendQueuedPackets");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10144750; body size 67 bytes.
+#line 1 "ENTRY_10144750"
+
+void __fastcall FUN_10144750(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x14) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x14))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIUrlConnectionSwigBase::serialNum");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 101447b0; body size 94 bytes.
+#line 1 "ENTRY_101447b0"
+
+void __thiscall Recovered_Bulk::FUN_101447b0(int *param_2)
+{
+  int param_1 = (int )this;
+  code *pcVar1;
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  pcVar1 = (code *)(*(code **)(param_1 + 0xc));
+  if ((code *)(pcVar1) != (code *)0x0) {
+    if ((int *)(param_2) != (int *)0x0) {
+      (**(code **)(*param_2 + 4))();
+      pcVar1 = (code *)(*(code **)(param_1 + 0xc));
+    }
+    (*pcVar1)(param_2);
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIUrlSessionCallbackSwigBase::sessionComplete");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10144860; body size 73 bytes.
+#line 1 "ENTRY_10144860"
+
+void __thiscall Recovered_Bulk::FUN_10144860(undefined4 param_2)
+{
+  int param_1 = (int )this;
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x10) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x10))(param_2);
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCILoggingProviderSwigBase::setAppLevel");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 101448c0; body size 249 bytes.
+#line 1 "ENTRY_101448c0"
+
+void __thiscall Recovered_Bulk::FUN_101448c0(undefined4 *param_2,undefined4 *param_3)
+{
+  int param_1 = (int )this;
+ try {
+  uint uVar1;
+  undefined4 uVar2;
+  undefined4 uVar3;
+  undefined1 *puVar4;
+  undefined1 local_30 [28];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  local_14 = (uint)(uVar1);
+  if (*(int *)(param_1 + 0xc) != 0) {
+    puVar4 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
+      puVar4 = (undefined1 *)((undefined1 *)*param_2);
+    }
+    thunk_FUN_101a1ea0(puVar4);
+
+    uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
+    puVar4 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
+      puVar4 = (undefined1 *)((undefined1 *)*param_3);
+    }
+    thunk_FUN_101a1ea0(puVar4);
+    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
+    uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1));
+    (**(code **)(param_1 + 0xc))(uVar2,uVar3);
+    thunk_FUN_101a2000();
+    thunk_FUN_101a2000();
+
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCISecureStoreSwigBase::setBlob");
+                    
+  _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10144a00; body size 174 bytes.
+#line 1 "ENTRY_10144a00"
+
+void __thiscall Recovered_Bulk::FUN_10144a00(undefined4 *param_2,undefined1 param_3)
+{
+  int param_1 = (int )this;
+ try {
+  uint uVar1;
+  undefined4 uVar2;
+  undefined1 *puVar3;
+  undefined1 local_30 [28];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  local_14 = (uint)(uVar1);
+  if (*(int *)(param_1 + 0x10) != 0) {
+    puVar3 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
+      puVar3 = (undefined1 *)((undefined1 *)*param_2);
+    }
+    thunk_FUN_101a1ea0(puVar3);
+
+    uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
+    (**(code **)(param_1 + 0x10))(uVar2,param_3);
+    thunk_FUN_101a2000();
+
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::setBoolValue");
+                    
+  _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10144ae0; body size 94 bytes.
+#line 1 "ENTRY_10144ae0"
+
+void __thiscall Recovered_Bulk::FUN_10144ae0(int *param_2)
+{
+  int param_1 = (int )this;
+  code *pcVar1;
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  pcVar1 = (code *)(*(code **)(param_1 + 0x20));
+  if ((code *)(pcVar1) != (code *)0x0) {
+    if ((int *)(param_2) != (int *)0x0) {
+      (**(code **)(*param_2 + 4))();
+      pcVar1 = (code *)(*(code **)(param_1 + 0x20));
+    }
+    (*pcVar1)(param_2);
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIBTClassicConnectionProviderSwigBase::setCallback");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10144b60; body size 94 bytes.
+#line 1 "ENTRY_10144b60"
+
+void __thiscall Recovered_Bulk::FUN_10144b60(int *param_2)
+{
+  int param_1 = (int )this;
+  code *pcVar1;
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  pcVar1 = (code *)(*(code **)(param_1 + 0x20));
+  if ((code *)(pcVar1) != (code *)0x0) {
+    if ((int *)(param_2) != (int *)0x0) {
+      (**(code **)(*param_2 + 4))();
+      pcVar1 = (code *)(*(code **)(param_1 + 0x20));
+    }
+    (*pcVar1)(param_2);
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIWebsocketDelegateSwigBase::setCallback");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10144be0; body size 186 bytes.
+#line 1 "ENTRY_10144be0"
+
+void __thiscall Recovered_Bulk::FUN_10144be0(undefined1 *param_2)
+{
+  int param_1 = (int )this;
+ try {
+  uint uVar1;
+  undefined4 uVar2;
+  undefined1 *puVar3;
+  undefined1 local_30 [28];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  local_14 = (uint)(uVar1);
+  if (*(int *)(param_1 + 0x28) != 0) {
+    puVar3 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)(param_2) != (undefined1 *)0x0) {
+      puVar3 = (undefined1 *)(param_2);
+    }
+    thunk_FUN_101a1ea0(puVar3);
+    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
+    uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
+    (**(code **)(param_1 + 0x28))(uVar2);
+    thunk_FUN_101a2000();
+
+    ((SCStr *)((SCStr *)&param_2))->int_release();
+
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCISecurityContextSwigBase::setCertificateEnvironment");
+                    
+  _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10144cd0; body size 169 bytes.
+#line 1 "ENTRY_10144cd0"
+
+void __thiscall Recovered_Bulk::FUN_10144cd0(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+ try {
+  uint uVar1;
+  undefined4 uVar2;
+  undefined1 *puVar3;
+  undefined1 local_30 [28];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  local_14 = (uint)(uVar1);
+  if (*(int *)(param_1 + 0xc) != 0) {
+    puVar3 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
+      puVar3 = (undefined1 *)((undefined1 *)*param_2);
+    }
+    thunk_FUN_101a1ea0(puVar3);
+
+    uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
+    (**(code **)(param_1 + 0xc))(uVar2);
+    thunk_FUN_101a2000();
+
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIClipboardDelegateSwigBase::setClipboardData");
+                    
+  _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10144db0; body size 186 bytes.
+#line 1 "ENTRY_10144db0"
+
+void __thiscall Recovered_Bulk::FUN_10144db0(undefined1 *param_2)
+{
+  int param_1 = (int )this;
+ try {
+  uint uVar1;
+  undefined4 uVar2;
+  undefined1 *puVar3;
+  undefined1 local_30 [28];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  local_14 = (uint)(uVar1);
+  if (*(int *)(param_1 + 0x18) != 0) {
+    puVar3 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)(param_2) != (undefined1 *)0x0) {
+      puVar3 = (undefined1 *)(param_2);
+    }
+    thunk_FUN_101a1ea0(puVar3);
+    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
+    uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
+    (**(code **)(param_1 + 0x18))(uVar2);
+    thunk_FUN_101a2000();
+
+    ((SCStr *)((SCStr *)&param_2))->int_release();
+
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCISecurityContextSwigBase::setCustomerID");
+                    
+  _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10144ea0; body size 182 bytes.
+#line 1 "ENTRY_10144ea0"
+
+void __thiscall Recovered_Bulk::FUN_10144ea0(undefined4 param_2,undefined8 param_3)
+{
+  int param_1 = (int )this;
+ try {
+  uint uVar1;
+  undefined4 uVar2;
+  undefined1 local_30 [28];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  local_14 = (uint)(uVar1);
+  if (*(int *)(param_1 + 0x28) != 0) {
+    thunk_FUN_101a1ea0();
+
+    uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
+    (**(code **)(param_1 + 0x28))(uVar2,param_3);
+    thunk_FUN_101a2000();
+
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0();
+                    
+  _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10144f90; body size 73 bytes.
+#line 1 "ENTRY_10144f90"
+
+void __thiscall Recovered_Bulk::FUN_10144f90(undefined4 param_2)
+{
+  int param_1 = (int )this;
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x18) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x18))(param_2);
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCILoggingProviderSwigBase::setFlutterLevel");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10144ff0; body size 307 bytes.
+#line 1 "ENTRY_10144ff0"
+
+void __thiscall Recovered_Bulk::FUN_10144ff0(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4)
+{
+  int param_1 = (int )this;
+ try {
+  uint uVar1;
+  undefined4 uVar2;
+  undefined4 uVar3;
+  undefined4 uVar4;
+  undefined1 *puVar5;
+  undefined1 local_30 [28];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  local_14 = (uint)(uVar1);
+  if (*(int *)(param_1 + 0x34) != 0) {
+    puVar5 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
+      puVar5 = (undefined1 *)((undefined1 *)*param_2);
+    }
+    thunk_FUN_101a1ea0(puVar5);
+
+    uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
+    puVar5 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
+      puVar5 = (undefined1 *)((undefined1 *)*param_3);
+    }
+    thunk_FUN_101a1ea0(puVar5);
+    *(unsigned char *)((char *)&local_8 + 0) = 1;
+    uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1));
+    puVar5 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)*param_4 != (undefined1 *)((0x0))) {
+      puVar5 = (undefined1 *)((undefined1 *)*param_4);
+    }
+    thunk_FUN_101a1ea0(puVar5);
+    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
+    uVar4 = (undefined4)(thunk_FUN_101a2160());
+    (**(code **)(param_1 + 0x34))(uVar2,uVar3,uVar4);
+    thunk_FUN_101a2000();
+    thunk_FUN_101a2000();
+    thunk_FUN_101a2000();
+
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIExperimentManagerProviderSwigBase::setForcedVariation");
+                    
+  _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 101451a0; body size 186 bytes.
+#line 1 "ENTRY_101451a0"
+
+void __thiscall Recovered_Bulk::FUN_101451a0(undefined1 *param_2)
+{
+  int param_1 = (int )this;
+ try {
+  uint uVar1;
+  undefined4 uVar2;
+  undefined1 *puVar3;
+  undefined1 local_30 [28];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  local_14 = (uint)(uVar1);
+  if (*(int *)(param_1 + 0x10) != 0) {
+    puVar3 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)(param_2) != (undefined1 *)0x0) {
+      puVar3 = (undefined1 *)(param_2);
+    }
+    thunk_FUN_101a1ea0(puVar3);
+    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
+    uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
+    (**(code **)(param_1 + 0x10))(uVar2);
+    thunk_FUN_101a2000();
+
+    ((SCStr *)((SCStr *)&param_2))->int_release();
+
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCISecurityContextSwigBase::setHHID");
+                    
+  _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10145290; body size 172 bytes.
+#line 1 "ENTRY_10145290"
+
+void __thiscall Recovered_Bulk::FUN_10145290(undefined4 *param_2,undefined4 param_3)
+{
+  int param_1 = (int )this;
+ try {
+  uint uVar1;
+  undefined4 uVar2;
+  undefined1 *puVar3;
+  undefined1 local_30 [28];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  local_14 = (uint)(uVar1);
+  if (*(int *)(param_1 + 0x1c) != 0) {
+    puVar3 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
+      puVar3 = (undefined1 *)((undefined1 *)*param_2);
+    }
+    thunk_FUN_101a1ea0(puVar3);
+
+    uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
+    (**(code **)(param_1 + 0x1c))(uVar2,param_3);
+    thunk_FUN_101a2000();
+
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::setIntegerValue");
+                    
+  _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10145370; body size 75 bytes.
+#line 1 "ENTRY_10145370"
+
+void __thiscall Recovered_Bulk::FUN_10145370(undefined1 param_2)
+{
+  int param_1 = (int )this;
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x18) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x18))(param_2);
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIBlePeripheralDelegateSwigBase::setRequireSecurePairing");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 101453d0; body size 94 bytes.
+#line 1 "ENTRY_101453d0"
+
+void __thiscall Recovered_Bulk::FUN_101453d0(int *param_2)
+{
+  int param_1 = (int )this;
+  code *pcVar1;
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  pcVar1 = (code *)(*(code **)(param_1 + 0x1c));
+  if ((code *)(pcVar1) != (code *)0x0) {
+    if ((int *)(param_2) != (int *)0x0) {
+      (**(code **)(*param_2 + 4))();
+      pcVar1 = (code *)(*(code **)(param_1 + 0x1c));
+    }
+    (*pcVar1)(param_2);
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIUrlConnectionSwigBase::setResponse");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10145450; body size 73 bytes.
+#line 1 "ENTRY_10145450"
+
+void __thiscall Recovered_Bulk::FUN_10145450(undefined4 param_2)
+{
+  int param_1 = (int )this;
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x18) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x18))(param_2);
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIUrlConnectionSwigBase::setResult");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 101454b0; body size 186 bytes.
+#line 1 "ENTRY_101454b0"
+
+void __thiscall Recovered_Bulk::FUN_101454b0(undefined1 *param_2)
+{
+  int param_1 = (int )this;
+ try {
+  uint uVar1;
+  undefined4 uVar2;
+  undefined1 *puVar3;
+  undefined1 local_30 [28];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  local_14 = (uint)(uVar1);
+  if (*(int *)(param_1 + 0x20) != 0) {
+    puVar3 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)(param_2) != (undefined1 *)0x0) {
+      puVar3 = (undefined1 *)(param_2);
+    }
+    thunk_FUN_101a1ea0(puVar3);
+    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
+    uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
+    (**(code **)(param_1 + 0x20))(uVar2);
+    thunk_FUN_101a2000();
+
+    ((SCStr *)((SCStr *)&param_2))->int_release();
+
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCISecurityContextSwigBase::setSerialNumber");
+                    
+  _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 101455a0; body size 169 bytes.
+#line 1 "ENTRY_101455a0"
+
+void __thiscall Recovered_Bulk::FUN_101455a0(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+ try {
+  uint uVar1;
+  undefined4 uVar2;
+  undefined1 *puVar3;
+  undefined1 local_30 [28];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  local_14 = (uint)(uVar1);
+  if (*(int *)(param_1 + 0x14) != 0) {
+    puVar3 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
+      puVar3 = (undefined1 *)((undefined1 *)*param_2);
+    }
+    thunk_FUN_101a1ea0(puVar3);
+
+    uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
+    (**(code **)(param_1 + 0x14))(uVar2);
+    thunk_FUN_101a2000();
+
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIStringInputSwigBase::setString");
+                    
+  _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10145680; body size 242 bytes.
+#line 1 "ENTRY_10145680"
+
+void __thiscall Recovered_Bulk::FUN_10145680(undefined4 *param_2,undefined4 *param_3)
+{
+  int param_1 = (int )this;
+ try {
+  uint uVar1;
+  undefined4 uVar2;
+  undefined4 uVar3;
+  undefined1 *puVar4;
+  undefined1 local_30 [28];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  local_14 = (uint)(uVar1);
+  if (*(int *)(param_1 + 0x34) != 0) {
+    puVar4 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
+      puVar4 = (undefined1 *)((undefined1 *)*param_2);
+    }
+    thunk_FUN_101a1ea0(puVar4);
+
+    uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
+    puVar4 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
+      puVar4 = (undefined1 *)((undefined1 *)*param_3);
+    }
+    thunk_FUN_101a1ea0(puVar4);
+    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
+    uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1));
+    (**(code **)(param_1 + 0x34))(uVar2,uVar3);
+    thunk_FUN_101a2000();
+    thunk_FUN_101a2000();
+
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCISavedDataProviderSwigBase::setStringValue");
+                    
+  _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 101457b0; body size 242 bytes.
+#line 1 "ENTRY_101457b0"
+
+void __thiscall Recovered_Bulk::FUN_101457b0(undefined4 *param_2,undefined4 *param_3)
+{
+  int param_1 = (int )this;
+ try {
+  uint uVar1;
+  undefined4 uVar2;
+  undefined4 uVar3;
+  undefined1 *puVar4;
+  undefined1 local_30 [28];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  local_14 = (uint)(uVar1);
+  if (*(int *)(param_1 + 0x14) != 0) {
+    puVar4 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
+      puVar4 = (undefined1 *)((undefined1 *)*param_2);
+    }
+    thunk_FUN_101a1ea0(puVar4);
+
+    uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
+    puVar4 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)*param_3 != (undefined1 *)((0x0))) {
+      puVar4 = (undefined1 *)((undefined1 *)*param_3);
+    }
+    thunk_FUN_101a1ea0(puVar4);
+    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
+    uVar3 = (undefined4)(thunk_FUN_101a2160(uVar1));
+    (**(code **)(param_1 + 0x14))(uVar2,uVar3);
+    thunk_FUN_101a2000();
+    thunk_FUN_101a2000();
+
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCICrashReportProviderSwigBase::setTag");
+                    
+  _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 101458e0; body size 74 bytes.
+#line 1 "ENTRY_101458e0"
+
+void __fastcall FUN_101458e0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
+
+{
+ try {
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x28) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x28))(&stack0x00000004);
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::setTransferTestPacket");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10145940; body size 75 bytes.
+#line 1 "ENTRY_10145940"
+
+void __fastcall FUN_10145940(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0xa0) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0xa0))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::showExplicitBadge");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 101459a0; body size 72 bytes.
+#line 1 "ENTRY_101459a0"
+
+void __fastcall FUN_101459a0(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x74) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x74))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::showProgressInfo");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10145a00; body size 67 bytes.
+#line 1 "ENTRY_10145a00"
+
+void __fastcall FUN_10145a00(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x3c) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x3c))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::shutdown");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10145a60; body size 67 bytes.
+#line 1 "ENTRY_10145a60"
+
+void __fastcall FUN_10145a60(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x2c) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x2c))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::shutdown");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10145ac0; body size 67 bytes.
+#line 1 "ENTRY_10145ac0"
+
+void __fastcall FUN_10145ac0(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x3c) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x3c))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::shutdown");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10145b20; body size 67 bytes.
+#line 1 "ENTRY_10145b20"
+
+void __fastcall FUN_10145b20(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x28) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x28))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIBlePeripheralDelegateSwigBase::shutdown");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10145b80; body size 67 bytes.
+#line 1 "ENTRY_10145b80"
+
+void __fastcall FUN_10145b80(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x1c) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x1c))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIChirpDelegateSwigBase::shutdown");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10145be0; body size 67 bytes.
+#line 1 "ENTRY_10145be0"
+
+void __fastcall FUN_10145be0(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x10) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x10))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIInAppPurchaseManagerProviderSwigBase::shutdown");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10145c40; body size 67 bytes.
+#line 1 "ENTRY_10145c40"
+
+void __fastcall FUN_10145c40(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x20) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x20))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCINfcDelegateSwigBase::shutdown");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10145cb0; body size 72 bytes.
+#line 1 "ENTRY_10145cb0"
+
+void __fastcall FUN_10145cb0(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x40) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x40))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCICustomSubWizardSwigBase::skipStateOnBacktracking");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10145d10; body size 67 bytes.
+#line 1 "ENTRY_10145d10"
+
+void __fastcall FUN_10145d10(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 8) != (code *)((0x0))) {
+    (**(code **)(param_1 + 8))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCLibSonarCallback::sonarBegin");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10145d70; body size 67 bytes.
+#line 1 "ENTRY_10145d70"
+
+void __fastcall FUN_10145d70(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0xc) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0xc))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCLibSonarCallback::sonarEnd");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10145dd0; body size 169 bytes.
+#line 1 "ENTRY_10145dd0"
+
+void __thiscall Recovered_Bulk::FUN_10145dd0(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+ try {
+  uint uVar1;
+  undefined4 uVar2;
+  undefined1 *puVar3;
+  undefined1 local_30 [28];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  local_14 = (uint)(uVar1);
+  if (*(int *)(param_1 + 0xc) != 0) {
+    puVar3 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
+      puVar3 = (undefined1 *)((undefined1 *)*param_2);
+    }
+    thunk_FUN_101a1ea0(puVar3);
+
+    uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
+    (**(code **)(param_1 + 0xc))(uVar2);
+    thunk_FUN_101a2000();
+
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIStackTraceCaptureDelegateSwigBase::stackTraceCaptured");
+                    
+  _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10145eb0; body size 98 bytes.
+#line 1 "ENTRY_10145eb0"
+
+void __thiscall Recovered_Bulk::FUN_10145eb0(undefined4 param_2,int *param_3)
+{
+  int param_1 = (int )this;
+  code *pcVar1;
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  pcVar1 = (code *)(*(code **)(param_1 + 0xc));
+  if ((code *)(pcVar1) != (code *)0x0) {
+    if ((int *)(param_3) != (int *)0x0) {
+      (**(code **)(*param_3 + 4))();
+      pcVar1 = (code *)(*(code **)(param_1 + 0xc));
+    }
+    (*pcVar1)(param_2,param_3);
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIVoiceServiceDelegateSwigBase::startAuthentication");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10145f30; body size 73 bytes.
+#line 1 "ENTRY_10145f30"
+
+void __thiscall Recovered_Bulk::FUN_10145f30(undefined4 param_2)
+{
+  int param_1 = (int )this;
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0xc) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0xc))(param_2);
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIChirpDelegateSwigBase::startChirpReceiving");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10145f90; body size 73 bytes.
+#line 1 "ENTRY_10145f90"
+
+void __thiscall Recovered_Bulk::FUN_10145f90(undefined4 param_2)
+{
+  int param_1 = (int )this;
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0xc) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0xc))(param_2);
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCICrashReportProviderSwigBase::startCrashReporter");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10145ff0; body size 72 bytes.
+#line 1 "ENTRY_10145ff0"
+
+void __fastcall FUN_10145ff0(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x14) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x14))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::startDiscoveryScan");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10146050; body size 98 bytes.
+#line 1 "ENTRY_10146050"
+
+void __thiscall Recovered_Bulk::FUN_10146050(undefined4 param_2,int *param_3)
+{
+  int param_1 = (int )this;
+  code *pcVar1;
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  pcVar1 = (code *)(*(code **)(param_1 + 0x20));
+  if ((code *)(pcVar1) != (code *)0x0) {
+    if ((int *)(param_3) != (int *)0x0) {
+      (**(code **)(*param_3 + 4))();
+      pcVar1 = (code *)(*(code **)(param_1 + 0x20));
+    }
+    (*pcVar1)(param_2,param_3);
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCLibSonarCallback::startMotionData");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 101460d0; body size 67 bytes.
+#line 1 "ENTRY_101460d0"
+
+void __fastcall FUN_101460d0(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0xc) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0xc))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIMdnsDelegateSwigBase::startPlayerDiscovery");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10146130; body size 98 bytes.
+#line 1 "ENTRY_10146130"
+
+void __thiscall Recovered_Bulk::FUN_10146130(undefined4 param_2,int *param_3)
+{
+  int param_1 = (int )this;
+  code *pcVar1;
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  pcVar1 = (code *)(*(code **)(param_1 + 0x28));
+  if ((code *)(pcVar1) != (code *)0x0) {
+    if ((int *)(param_3) != (int *)0x0) {
+      (**(code **)(*param_3 + 4))();
+      pcVar1 = (code *)(*(code **)(param_1 + 0x28));
+    }
+    (*pcVar1)(param_2,param_3);
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCLibSonarCallback::startRawMotionData");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 101461b0; body size 234 bytes.
+#line 1 "ENTRY_101461b0"
+
+void __thiscall Recovered_Bulk::FUN_101461b0(undefined4 param_2,int *param_3,undefined4 param_4,undefined4 param_5,
+            undefined4 param_6,undefined4 param_7,undefined1 *param_8)
+{
+  int param_1 = (int )this;
+ try {
+  undefined4 uVar1;
+  undefined1 *puVar2;
+  undefined1 local_30 [28];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+  local_14 = (uint)(DAT_12126b84);
+
+  if (*(int *)(param_1 + 0x14) != 0) {
+    if ((int *)(param_3) != (int *)0x0) {
+      (**(code **)(*param_3 + 4))(local_14);
+    }
+    puVar2 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)(param_8) != (undefined1 *)0x0) {
+      puVar2 = (undefined1 *)(param_8);
+    }
+    thunk_FUN_101a1ea0(puVar2);
+    local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
+    uVar1 = (undefined4)(thunk_FUN_101a2160());
+    (**(code **)(param_1 + 0x14))(param_2,param_3,param_4,param_5,param_6,param_7,uVar1);
+    thunk_FUN_101a2000();
+
+    ((SCStr *)((SCStr *)&param_8))->int_release();
+
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCLibSonarCallback::startRecording");
+                    
+  _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 101462e0; body size 67 bytes.
+#line 1 "ENTRY_101462e0"
+
+void __fastcall FUN_101462e0(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0xc) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0xc))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCINfcDelegateSwigBase::startScan");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10146340; body size 80 bytes.
+#line 1 "ENTRY_10146340"
+
+void __thiscall Recovered_Bulk::FUN_10146340(undefined1 param_2)
+{
+  int param_1 = (int )this;
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x28) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x28))(param_2);
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::startScan");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 101463b0; body size 94 bytes.
+#line 1 "ENTRY_101463b0"
+
+void __thiscall Recovered_Bulk::FUN_101463b0(int *param_2)
+{
+  int param_1 = (int )this;
+  code *pcVar1;
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  pcVar1 = (code *)(*(code **)(param_1 + 0xc));
+  if ((code *)(pcVar1) != (code *)0x0) {
+    if ((int *)(param_2) != (int *)0x0) {
+      (**(code **)(*param_2 + 4))();
+      pcVar1 = (code *)(*(code **)(param_1 + 0xc));
+    }
+    (*pcVar1)(param_2);
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIUrlSessionProviderSwigBase::startURLSession");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10146430; body size 67 bytes.
+#line 1 "ENTRY_10146430"
+
+void __fastcall FUN_10146430(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x10) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x10))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIChirpDelegateSwigBase::stopChirpReceiving");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10146490; body size 72 bytes.
+#line 1 "ENTRY_10146490"
+
+void __fastcall FUN_10146490(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x18) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x18))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIBTAccessoryDelegateSwigBase::stopDiscoveryScan");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 101464f0; body size 67 bytes.
+#line 1 "ENTRY_101464f0"
+
+void __fastcall FUN_101464f0(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x24) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x24))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCLibSonarCallback::stopMotionData");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10146550; body size 67 bytes.
+#line 1 "ENTRY_10146550"
+
+void __fastcall FUN_10146550(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x10) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x10))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIMdnsDelegateSwigBase::stopPlayerDiscovery");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 101465b0; body size 67 bytes.
+#line 1 "ENTRY_101465b0"
+
+void __fastcall FUN_101465b0(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x2c) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x2c))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCLibSonarCallback::stopRawMotionData");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10146610; body size 67 bytes.
+#line 1 "ENTRY_10146610"
+
+void __fastcall FUN_10146610(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x18) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x18))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCLibSonarCallback::stopRecording");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10146670; body size 67 bytes.
+#line 1 "ENTRY_10146670"
+
+void __fastcall FUN_10146670(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x10) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x10))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCINfcDelegateSwigBase::stopScan");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 101466d0; body size 67 bytes.
+#line 1 "ENTRY_101466d0"
+
+void __fastcall FUN_101466d0(int param_1)
+
+{
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x30) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x30))();
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIWifiDelegateSwigBase::stopScan");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10146770; body size 100 bytes.
+#line 1 "ENTRY_10146770"
+
+void __thiscall Recovered_Bulk::FUN_10146770(int *param_2,undefined1 param_3)
+{
+  int param_1 = (int )this;
+  code *pcVar1;
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  pcVar1 = (code *)(*(code **)(param_1 + 0xc));
+  if ((code *)(pcVar1) != (code *)0x0) {
+    if ((int *)(param_2) != (int *)0x0) {
+      (**(code **)(*param_2 + 4))();
+      pcVar1 = (code *)(*(code **)(param_1 + 0xc));
+    }
+    (*pcVar1)(param_2,param_3);
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIBrowseItemSwigBase::subscribe");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 101467f0; body size 78 bytes.
+#line 1 "ENTRY_101467f0"
+
+void __thiscall Recovered_Bulk::FUN_101467f0(undefined4 param_2)
+{
+  int param_1 = (int )this;
+  undefined1 local_20 [28];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)local_20);
+  if (*(code **)(param_1 + 0x24) != (code *)((0x0))) {
+    (**(code **)(param_1 + 0x24))(param_2);
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIAbilityDelegateSwigBase::suggestPrereq");
+                    
+  _CxxThrowException(local_20,(ThrowInfo *)&DAT_11d33164);
+}
+
+
+// Reference entry 10148a00; body size 169 bytes.
+#line 1 "ENTRY_10148a00"
+
+void __thiscall Recovered_Bulk::FUN_10148a00(undefined4 *param_2)
+{
+  int param_1 = (int )this;
+ try {
+  uint uVar1;
+  undefined4 uVar2;
+  undefined1 *puVar3;
+  undefined1 local_30 [28];
+  uint local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  local_14 = (uint)(uVar1);
+  if (*(int *)(param_1 + 0x14) != 0) {
+    puVar3 = (undefined1 *)(&DAT_1186d2ee);
+    if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
+      puVar3 = (undefined1 *)((undefined1 *)*param_2);
+    }
+    thunk_FUN_101a1ea0(puVar3);
+
+    uVar2 = (undefined4)(thunk_FUN_101a2160(uVar1));
+    (**(code **)(param_1 + 0x14))(uVar2);
+    thunk_FUN_101a2000();
+
+    thunk_FUN_1148ac28();
+    return;
+  }
+  thunk_FUN_10118fc0("SCIBleDelegateSwigBase::tryConnect");
+                    
+  _CxxThrowException(local_30,(ThrowInfo *)&DAT_11d33164);
+
+ } catch (...) { }
+}
+
+
 // Reference entry 10148ae0; body size 67 bytes.
 #line 1 "ENTRY_10148ae0"
 
@@ -686,7 +2732,7 @@ void __thiscall Recovered_Bulk::FUN_10148ba0(undefined4 *param_2)
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x10) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
-    if ((undefined1 *)(undefined1 *)(*param_2) != (undefined1 *)(0x0)) {
+    if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
@@ -1034,7 +3080,7 @@ void __thiscall Recovered_Bulk::FUN_10149220(undefined4 *param_2)
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0xc) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
-    if ((undefined1 *)(undefined1 *)(*param_2) != (undefined1 *)(0x0)) {
+    if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
@@ -1076,7 +3122,7 @@ void __thiscall Recovered_Bulk::FUN_10149300(undefined4 *param_2)
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x14) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
-    if ((undefined1 *)(undefined1 *)(*param_2) != (undefined1 *)(0x0)) {
+    if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
@@ -1305,7 +3351,7 @@ void __thiscall Recovered_Bulk::FUN_101497b0(undefined4 *param_2)
   local_14 = (uint)(uVar1);
   if (*(int *)(param_1 + 0x18) != 0) {
     puVar3 = (undefined1 *)(&DAT_1186d2ee);
-    if ((undefined1 *)(undefined1 *)(*param_2) != (undefined1 *)(0x0)) {
+    if ((undefined1 *)*param_2 != (undefined1 *)((0x0))) {
       puVar3 = (undefined1 *)((undefined1 *)*param_2);
     }
     thunk_FUN_101a1ea0(puVar3);
@@ -1792,6 +3838,34 @@ undefined4 FUN_1014a1c0(void)
   return (undefined4)(uVar4);
 
  } catch (...) { }
+}
+
+
+// Reference entry 1014cce0; body size 102 bytes.
+#line 1 "ENTRY_1014cce0"
+
+void __stdcall FUN_1014cce0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+                 undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
+                 undefined4 param_13,undefined4 param_14)
+
+{
+  if (param_1 != 0) {
+    *(undefined4*)(param_1 + 0xc) = (undefined4)(param_2);
+    *(undefined4*)(param_1 + 0x10) = (undefined4)(param_3);
+    *(undefined4*)(param_1 + 0x14) = (undefined4)(param_4);
+    *(undefined4*)(param_1 + 0x18) = (undefined4)(param_5);
+    *(undefined4*)(param_1 + 0x1c) = (undefined4)(param_6);
+    *(undefined4*)(param_1 + 0x20) = (undefined4)(param_7);
+    *(undefined4*)(param_1 + 0x24) = (undefined4)(param_8);
+    *(undefined4*)(param_1 + 0x28) = (undefined4)(param_9);
+    *(undefined4*)(param_1 + 0x2c) = (undefined4)(param_10);
+    *(undefined4*)(param_1 + 0x30) = (undefined4)(param_11);
+    *(undefined4*)(param_1 + 0x34) = (undefined4)(param_12);
+    *(undefined4*)(param_1 + 0x38) = (undefined4)(param_13);
+    *(undefined4*)(param_1 + 0x3c) = (undefined4)(param_14);
+  }
+  return;
 }
 
 
@@ -2399,6 +4473,53 @@ undefined4 __stdcall FUN_1014dd00(int *param_1)
   return (undefined4)(uVar3);
 
  } catch (...) { }
+}
+
+
+// Reference entry 1014de40; body size 211 bytes.
+#line 1 "ENTRY_1014de40"
+
+void __stdcall FUN_1014de40(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+                 undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
+                 undefined4 param_13,undefined4 param_14,undefined4 param_15,undefined4 param_16,
+                 undefined4 param_17,undefined4 param_18,undefined4 param_19,undefined4 param_20,
+                 undefined4 param_21,undefined4 param_22,undefined4 param_23,undefined4 param_24,
+                 undefined4 param_25,undefined4 param_26,undefined4 param_27,undefined4 param_28,
+                 undefined4 param_29)
+
+{
+  if (param_1 != 0) {
+    *(undefined4*)(param_1 + 0xc) = (undefined4)(param_2);
+    *(undefined4*)(param_1 + 0x10) = (undefined4)(param_3);
+    *(undefined4*)(param_1 + 0x14) = (undefined4)(param_4);
+    *(undefined4*)(param_1 + 0x18) = (undefined4)(param_5);
+    *(undefined4*)(param_1 + 0x1c) = (undefined4)(param_6);
+    *(undefined4*)(param_1 + 0x20) = (undefined4)(param_7);
+    *(undefined4*)(param_1 + 0x24) = (undefined4)(param_8);
+    *(undefined4*)(param_1 + 0x28) = (undefined4)(param_9);
+    *(undefined4*)(param_1 + 0x2c) = (undefined4)(param_10);
+    *(undefined4*)(param_1 + 0x30) = (undefined4)(param_11);
+    *(undefined4*)(param_1 + 0x34) = (undefined4)(param_12);
+    *(undefined4*)(param_1 + 0x38) = (undefined4)(param_13);
+    *(undefined4*)(param_1 + 0x3c) = (undefined4)(param_14);
+    *(undefined4*)(param_1 + 0x40) = (undefined4)(param_15);
+    *(undefined4*)(param_1 + 0x44) = (undefined4)(param_16);
+    *(undefined4*)(param_1 + 0x48) = (undefined4)(param_17);
+    *(undefined4*)(param_1 + 0x4c) = (undefined4)(param_18);
+    *(undefined4*)(param_1 + 0x50) = (undefined4)(param_19);
+    *(undefined4*)(param_1 + 0x54) = (undefined4)(param_20);
+    *(undefined4*)(param_1 + 0x58) = (undefined4)(param_21);
+    *(undefined4*)(param_1 + 0x5c) = (undefined4)(param_22);
+    *(undefined4*)(param_1 + 0x60) = (undefined4)(param_23);
+    *(undefined4*)(param_1 + 100) = (undefined4)(param_24);
+    *(undefined4*)(param_1 + 0x68) = (undefined4)(param_25);
+    *(undefined4*)(param_1 + 0x6c) = (undefined4)(param_26);
+    *(undefined4*)(param_1 + 0x70) = (undefined4)(param_27);
+    *(undefined4*)(param_1 + 0x74) = (undefined4)(param_28);
+    *(undefined4*)(param_1 + 0x78) = (undefined4)(param_29);
+  }
+  return;
 }
 
 
@@ -4833,6 +6954,38 @@ void __stdcall FUN_10151790(int *param_1,ushort *param_2)
 }
 
 
+// Reference entry 101519e0; body size 144 bytes.
+#line 1 "ENTRY_101519e0"
+
+void __stdcall FUN_101519e0(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4)
+
+{
+ try {
+  uint uVar1;
+  undefined4 local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  param_2 = (ushort *)((ushort *)0x0);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
+  (**(code **)(*param_1 + 0x14))(&local_14,&param_2,param_4,uVar1);
+
+  ((SCStr *)((SCStr *)&param_2))->int_release();
+  param_2 = (ushort *)((ushort *)0x0);
+
+  ((SCStr *)((SCStr *)&local_14))->int_release();
+
+  return;
+
+ } catch (...) { }
+}
+
+
 // Reference entry 10151ac0; body size 100 bytes.
 #line 1 "ENTRY_10151ac0"
 
@@ -4939,6 +7092,39 @@ void __stdcall FUN_10151c60(int *param_1,int param_2)
   ((SCStr *)((SCStr *)&param_2))->int_release();
 
   return;
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10151d10; body size 150 bytes.
+#line 1 "ENTRY_10151d10"
+
+undefined4 __stdcall FUN_10151d10(int *param_1,undefined4 param_2,ushort *param_3,ushort *param_4)
+
+{
+ try {
+  uint uVar1;
+  undefined4 uVar2;
+  undefined4 local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_3);
+  param_3 = (ushort *)((ushort *)0x0);
+  ((SCStr *)((SCStr *)&param_3))->setFromUTF16(param_4);
+  uVar2 = (undefined4)((**(code **)(*param_1 + 0x28))(param_2,&local_14,&param_3,uVar1));
+
+  ((SCStr *)((SCStr *)&param_3))->int_release();
+  param_3 = (ushort *)((ushort *)0x0);
+
+  ((SCStr *)((SCStr *)&local_14))->int_release();
+
+  return (undefined4)(uVar2);
 
  } catch (...) { }
 }
@@ -5069,6 +7255,38 @@ undefined4 __stdcall FUN_10152050(int *param_1,undefined4 param_2)
   ((SCStr *)((SCStr *)&local_14))->int_release();
 
   return (undefined4)(uVar3);
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10152180; body size 144 bytes.
+#line 1 "ENTRY_10152180"
+
+void __stdcall FUN_10152180(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4)
+
+{
+ try {
+  uint uVar1;
+  undefined4 local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  param_2 = (ushort *)((ushort *)0x0);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
+  (**(code **)(*param_1 + 0x18))(&local_14,&param_2,param_4,uVar1);
+
+  ((SCStr *)((SCStr *)&param_2))->int_release();
+  param_2 = (ushort *)((ushort *)0x0);
+
+  ((SCStr *)((SCStr *)&local_14))->int_release();
+
+  return;
 
  } catch (...) { }
 }
@@ -6237,6 +8455,29 @@ undefined4 __stdcall FUN_10153e90(int *param_1)
 }
 
 
+// Reference entry 101541e0; body size 74 bytes.
+#line 1 "ENTRY_101541e0"
+
+void __stdcall FUN_101541e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+                 undefined4 param_9,undefined4 param_10)
+
+{
+  if (param_1 != 0) {
+    *(undefined4*)(param_1 + 0xc) = (undefined4)(param_2);
+    *(undefined4*)(param_1 + 0x10) = (undefined4)(param_3);
+    *(undefined4*)(param_1 + 0x14) = (undefined4)(param_4);
+    *(undefined4*)(param_1 + 0x18) = (undefined4)(param_5);
+    *(undefined4*)(param_1 + 0x1c) = (undefined4)(param_6);
+    *(undefined4*)(param_1 + 0x20) = (undefined4)(param_7);
+    *(undefined4*)(param_1 + 0x24) = (undefined4)(param_8);
+    *(undefined4*)(param_1 + 0x28) = (undefined4)(param_9);
+    *(undefined4*)(param_1 + 0x2c) = (undefined4)(param_10);
+  }
+  return;
+}
+
+
 // Reference entry 10154270; body size 114 bytes.
 #line 1 "ENTRY_10154270"
 
@@ -6371,6 +8612,38 @@ void __stdcall FUN_10154560(int *param_1,ushort *param_2,ushort *param_3,int par
   ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
   param_3 = (ushort *)((ushort *)((uint)(*(unsigned short *)((char *)&param_3 + 1)) << 8 | (uint)(param_4 != 0)));
   (**(code **)(*param_1 + 0x1c))(&local_14,&param_2,param_3,uVar1);
+
+  ((SCStr *)((SCStr *)&param_2))->int_release();
+  param_2 = (ushort *)((ushort *)0x0);
+
+  ((SCStr *)((SCStr *)&local_14))->int_release();
+
+  return;
+
+ } catch (...) { }
+}
+
+
+// Reference entry 10154630; body size 144 bytes.
+#line 1 "ENTRY_10154630"
+
+void __stdcall FUN_10154630(int *param_1,ushort *param_2,ushort *param_3,undefined4 param_4)
+
+{
+ try {
+  uint uVar1;
+  undefined4 local_14;
+  void *local_10;
+  undefined1 *puStack_c;
+  undefined4 local_8;
+
+
+  uVar1 = (uint)(DAT_12126b84);
+
+  ((SCStr *)((SCStr *)&local_14))->setFromUTF16(param_2);
+  param_2 = (ushort *)((ushort *)0x0);
+  ((SCStr *)((SCStr *)&param_2))->setFromUTF16(param_3);
+  (**(code **)(*param_1 + 0x20))(&local_14,&param_2,param_4,uVar1);
 
   ((SCStr *)((SCStr *)&param_2))->int_release();
   param_2 = (ushort *)((ushort *)0x0);
@@ -6804,6 +9077,34 @@ undefined4 __stdcall FUN_10155230(int *param_1)
 }
 
 
+// Reference entry 10155360; body size 102 bytes.
+#line 1 "ENTRY_10155360"
+
+void __stdcall FUN_10155360(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+                 undefined4 param_9,undefined4 param_10,undefined4 param_11,undefined4 param_12,
+                 undefined4 param_13,undefined4 param_14)
+
+{
+  if (param_1 != 0) {
+    *(undefined4*)(param_1 + 0xc) = (undefined4)(param_2);
+    *(undefined4*)(param_1 + 0x10) = (undefined4)(param_3);
+    *(undefined4*)(param_1 + 0x14) = (undefined4)(param_4);
+    *(undefined4*)(param_1 + 0x18) = (undefined4)(param_5);
+    *(undefined4*)(param_1 + 0x1c) = (undefined4)(param_6);
+    *(undefined4*)(param_1 + 0x20) = (undefined4)(param_7);
+    *(undefined4*)(param_1 + 0x24) = (undefined4)(param_8);
+    *(undefined4*)(param_1 + 0x28) = (undefined4)(param_9);
+    *(undefined4*)(param_1 + 0x2c) = (undefined4)(param_10);
+    *(undefined4*)(param_1 + 0x30) = (undefined4)(param_11);
+    *(undefined4*)(param_1 + 0x34) = (undefined4)(param_12);
+    *(undefined4*)(param_1 + 0x38) = (undefined4)(param_13);
+    *(undefined4*)(param_1 + 0x3c) = (undefined4)(param_14);
+  }
+  return;
+}
+
+
 // Reference entry 101554f0; body size 97 bytes.
 #line 1 "ENTRY_101554f0"
 
@@ -6867,6 +9168,28 @@ void __stdcall FUN_10155600(int *param_1,ushort *param_2,ushort *param_3,undefin
   return;
 
  } catch (...) { }
+}
+
+
+// Reference entry 101557a0; body size 67 bytes.
+#line 1 "ENTRY_101557a0"
+
+void __stdcall FUN_101557a0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined4 param_5,undefined4 param_6,undefined4 param_7,undefined4 param_8,
+                 undefined4 param_9)
+
+{
+  if (param_1 != 0) {
+    *(undefined4*)(param_1 + 0xc) = (undefined4)(param_2);
+    *(undefined4*)(param_1 + 0x10) = (undefined4)(param_3);
+    *(undefined4*)(param_1 + 0x14) = (undefined4)(param_4);
+    *(undefined4*)(param_1 + 0x18) = (undefined4)(param_5);
+    *(undefined4*)(param_1 + 0x1c) = (undefined4)(param_6);
+    *(undefined4*)(param_1 + 0x20) = (undefined4)(param_7);
+    *(undefined4*)(param_1 + 0x24) = (undefined4)(param_8);
+    *(undefined4*)(param_1 + 0x28) = (undefined4)(param_9);
+  }
+  return;
 }
 
 
