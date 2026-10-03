@@ -111,7 +111,10 @@ def lower_free_thiscall(source):
             f' template<class... A> int {name}(A...);')
         renamed.add(name)
         prologue = ''
-        param = re.match(r'(.*?)([A-Za-z_]\w*)\s*$', first.strip())
+        # ``first`` may span lines when the this parameter is a template
+        # type; collapse whitespace so the tail-identifier split works.
+        param = re.match(r'(.+?)([A-Za-z_]\w*)\s*$',
+                         ' '.join(first.strip().split()))
         if param and param.group(2) != 'void':
             ptype = param.group(1)
             prologue = (f'\n  {ptype}{param.group(2)} = '
@@ -130,6 +133,17 @@ def lower_free_thiscall(source):
     for match in CALL.finditer(rewritten):
         name = match.group(1)
         if name not in renamed:
+            continue
+        line_start = rewritten.rfind('\n', 0, match.start()) + 1
+        prefix = rewritten[line_start:match.start()]
+        word = re.search(r'([A-Za-z_]\w*)\s*$', prefix)
+        # ``T name(...)`` or ``extern T name(...)`` on the line is a
+        # declaration, not a call site; rewriting it leaves
+        # ``extern int ((Recovered_Bulk*)...)->f()``.
+        if ((word or re.search(r'[*&>]\s*$', prefix)) and
+                (not word or word.group(1) not in (
+                    'return', 'case', 'throw', 'sizeof', 'delete', 'new',
+                    'while', 'for', 'if', 'switch', 'goto', 'else', 'do'))):
             continue
         depth = 1
         scan = match.end()

@@ -20,6 +20,7 @@ typedef int FILE;
 typedef unsigned long DWORD;
 typedef unsigned short WORD;
 typedef unsigned char BYTE;
+typedef unsigned char uchar;
 typedef int BOOL;
 typedef void *HANDLE;
 typedef void *LPVOID;
@@ -345,16 +346,7 @@ extern int *PTR_s_other_1211d614;
 extern int *stack0x0000000c;
 extern int *stack0xfffffffc;
 extern void *ExceptionList;
-struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> static int append(A...); template<class... A> static int format(A...); template<class... A> static int int_allocRep(A...); int op_ctor(...); int op_eq(...); };
-typedef void *F;
-typedef void *H;
-typedef void *HWND;
-typedef void *LOCK;
-typedef void *R;
-typedef void *SID;
-typedef void *UID;
-typedef void *UNLOCK;
-typedef void *WARNING;
+struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); template<class... A> static int append(A...); template<class... A> static int format(A...); template<class... A> static int int_allocRep(A...); static int op_ctor(...); static int op_eq(...); };
 struct ActionScriptTrace { char _pad; ActionScriptTrace(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Could { char _pad; Could(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct CurrentCrossfadeMode { char _pad; CurrentCrossfadeMode(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
@@ -389,6 +381,15 @@ struct Too { char _pad; Too(...); template<class T> int operator==(T); template<
 struct TransportErrorHttpCode { char _pad; TransportErrorHttpCode(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Treating { char _pad; Treating(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct UpdateID { char _pad; UpdateID(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+typedef void *F;
+typedef void *H;
+typedef void *HWND;
+typedef void *LOCK;
+typedef void *R;
+typedef void *SID;
+typedef void *UID;
+typedef void *UNLOCK;
+typedef void *WARNING;
 struct Recovered_Bulk { char _pad; undefined4 __thiscall FUN_11019440(undefined4 param_2,undefined4 param_3,undefined4 param_4); template<class... A> int FUN_11019440(A...); undefined4 * __thiscall FUN_1101ac40(undefined4 param_2); template<class... A> int FUN_1101ac40(A...); undefined4 __thiscall FUN_1101b940(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1101b940(A...); undefined4 __thiscall FUN_1101b9a0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1101b9a0(A...); undefined4 __thiscall FUN_1101b9e0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1101b9e0(A...); undefined4 __thiscall FUN_1101ba20(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1101ba20(A...); undefined4 __thiscall FUN_1101d760(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1101d760(A...); undefined4 __thiscall FUN_1101d780(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1101d780(A...); undefined4 __thiscall FUN_1101d8d0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1101d8d0(A...); undefined4 __thiscall FUN_1101d8f0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1101d8f0(A...); undefined4 __thiscall FUN_1101d9a0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1101d9a0(A...); undefined4 __thiscall FUN_1101da00(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1101da00(A...); undefined4 __thiscall FUN_1101dbb0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1101dbb0(A...); undefined4 __thiscall FUN_1101dc20(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1101dc20(A...); undefined4 __thiscall FUN_1101de90(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1101de90(A...); void __thiscall FUN_1101e240(int param_2); template<class... A> int FUN_1101e240(A...); undefined4 __thiscall FUN_11020510(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_11020510(A...); undefined4 __thiscall FUN_11020590(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_11020590(A...); undefined4 __thiscall FUN_110205d0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_110205d0(A...); undefined4 __thiscall FUN_110205f0(undefined4 param_2,undefined4 param_3,undefined4 param_4); template<class... A> int FUN_110205f0(A...); undefined4 __thiscall FUN_11020620(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_11020620(A...); undefined4 __thiscall FUN_11020640(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_11020640(A...); undefined4 __thiscall FUN_11020660(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_11020660(A...); undefined4 __thiscall FUN_11020680(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_11020680(A...); undefined4 __thiscall FUN_110206a0(undefined4 param_2,undefined4 param_3,undefined4 param_4); template<class... A> int FUN_110206a0(A...); undefined4 __thiscall FUN_110206d0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_110206d0(A...); undefined4 __thiscall FUN_11020730(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_11020730(A...); undefined4 __thiscall FUN_11022230(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_11022230(A...); undefined4 __thiscall FUN_11022270(undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5); template<class... A> int FUN_11022270(A...); undefined4 __thiscall FUN_11022350(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_11022350(A...); undefined4 __thiscall FUN_110223c0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_110223c0(A...); int __thiscall FUN_11023790(int *param_2); template<class... A> int FUN_11023790(A...); void __thiscall FUN_11025940(undefined4 *param_2); template<class... A> int FUN_11025940(A...); SCStr * __thiscall FUN_1102b260(SCStr *param_2); template<class... A> int FUN_1102b260(A...); void __thiscall FUN_1102db30(undefined4 *param_2); template<class... A> int FUN_1102db30(A...); SCStr * __thiscall FUN_11030e00(SCStr *param_2); template<class... A> int FUN_11030e00(A...); undefined4 * __thiscall FUN_110389b0(undefined4 param_2); template<class... A> int FUN_110389b0(A...); undefined4 * __thiscall FUN_1103c270(undefined4 param_2); template<class... A> int FUN_1103c270(A...); void __thiscall FUN_1103ea20(int param_2); template<class... A> int FUN_1103ea20(A...); void __thiscall FUN_1103ea70(int param_2); template<class... A> int FUN_1103ea70(A...); undefined4 __thiscall FUN_11057300(undefined4 param_2); template<class... A> int FUN_11057300(A...); void __thiscall FUN_11057340(int param_2); template<class... A> int FUN_11057340(A...); undefined4 __thiscall FUN_11057690(undefined4 param_2); template<class... A> int FUN_11057690(A...); undefined4 __thiscall FUN_110576b0(undefined4 param_2); template<class... A> int FUN_110576b0(A...); void __thiscall FUN_1105dd20(undefined4 param_2); template<class... A> int FUN_1105dd20(A...); undefined4 __thiscall FUN_1105e3c0(uint param_2); template<class... A> int FUN_1105e3c0(A...); undefined4 __thiscall FUN_1105eb10(int param_2); template<class... A> int FUN_1105eb10(A...); undefined4 * __thiscall FUN_1105f420(undefined4 param_2); template<class... A> int FUN_1105f420(A...); undefined4 * __thiscall FUN_11062370(undefined4 param_2); template<class... A> int FUN_11062370(A...); undefined4 * __thiscall FUN_110623b0(undefined4 param_2); template<class... A> int FUN_110623b0(A...); undefined4 * __thiscall FUN_110623f0(undefined4 param_2); template<class... A> int FUN_110623f0(A...); undefined4 * __thiscall FUN_11062430(undefined4 param_2); template<class... A> int FUN_11062430(A...); undefined4 * __thiscall FUN_11062470(undefined4 param_2); template<class... A> int FUN_11062470(A...); undefined4 * __thiscall FUN_110624b0(undefined4 param_2); template<class... A> int FUN_110624b0(A...); undefined4 * __thiscall FUN_110624f0(undefined4 param_2); template<class... A> int FUN_110624f0(A...); undefined4 __thiscall FUN_11065fc0(char *param_2,uint param_3); template<class... A> int FUN_11065fc0(A...); undefined4 * __thiscall FUN_11065fe0(undefined4 param_2); template<class... A> int FUN_11065fe0(A...); SCStr * __thiscall FUN_11066fe0(SCStr *param_2); template<class... A> int FUN_11066fe0(A...); int __thiscall FUN_110722a0(uint *param_2); template<class... A> int FUN_110722a0(A...); int __thiscall FUN_110722e0(uint *param_2); template<class... A> int FUN_110722e0(A...); int __thiscall FUN_11072320(undefined4 param_2); template<class... A> int FUN_11072320(A...); int __thiscall FUN_11072370(undefined4 param_2); template<class... A> int FUN_11072370(A...); undefined4 * __thiscall FUN_1107b550(byte param_2); template<class... A> int FUN_1107b550(A...); undefined4 * __thiscall FUN_1107b5d0(byte param_2); template<class... A> int FUN_1107b5d0(A...); void __thiscall FUN_1107ee00(int param_2); template<class... A> int FUN_1107ee00(A...); void __thiscall FUN_1107ee50(int param_2); template<class... A> int FUN_1107ee50(A...); void __thiscall FUN_1107eea0(int param_2); template<class... A> int FUN_1107eea0(A...); void __thiscall FUN_1107eef0(int param_2); template<class... A> int FUN_1107eef0(A...); void __thiscall FUN_1107ef40(int param_2); template<class... A> int FUN_1107ef40(A...); void __thiscall FUN_1107ef90(int param_2); template<class... A> int FUN_1107ef90(A...); void __thiscall FUN_1107efe0(int param_2); template<class... A> int FUN_1107efe0(A...); void __thiscall FUN_1107f030(int param_2); template<class... A> int FUN_1107f030(A...); void __thiscall FUN_1107f080(int param_2); template<class... A> int FUN_1107f080(A...); void __thiscall FUN_1107f0c0(int param_2); template<class... A> int FUN_1107f0c0(A...); void __thiscall FUN_1107f100(int param_2); template<class... A> int FUN_1107f100(A...); void __thiscall FUN_1107f140(int param_2); template<class... A> int FUN_1107f140(A...); undefined4 __thiscall FUN_110937d0(undefined4 param_2); template<class... A> int FUN_110937d0(A...); undefined4 __thiscall FUN_11093800(undefined4 param_2); template<class... A> int FUN_11093800(A...); undefined4 __thiscall FUN_11093d10(undefined4 param_2); template<class... A> int FUN_11093d10(A...); undefined4 __thiscall FUN_11093d50(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_11093d50(A...); void __thiscall FUN_11097130(undefined4 param_2); template<class... A> int FUN_11097130(A...); undefined4 __thiscall FUN_110974e0(undefined4 param_2); template<class... A> int FUN_110974e0(A...); void __thiscall FUN_110977e0(undefined4 param_2); template<class... A> int FUN_110977e0(A...); int __thiscall FUN_11098860(undefined4 param_2); template<class... A> int FUN_11098860(A...); void __thiscall FUN_1109dee0(int param_2); template<class... A> int FUN_1109dee0(A...); void __thiscall FUN_1109ef90(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1109ef90(A...); void __thiscall FUN_1109f0a0(undefined4 param_2,undefined4 param_3,undefined4 param_4); template<class... A> int FUN_1109f0a0(A...); void __thiscall FUN_1109f100(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1109f100(A...); void __thiscall FUN_1109f280(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1109f280(A...); void __thiscall FUN_1109f320(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1109f320(A...); undefined4 __thiscall FUN_110a3080(undefined4 param_2); template<class... A> int FUN_110a3080(A...); uint __thiscall FUN_110a5340(uint param_2); template<class... A> int FUN_110a5340(A...); int __thiscall FUN_110a6770(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_110a6770(A...); int __thiscall FUN_110a67b0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_110a67b0(A...); void __thiscall FUN_110ac250(undefined4 param_2); template<class... A> int FUN_110ac250(A...); void __thiscall FUN_110b4850(int param_2); template<class... A> int FUN_110b4850(A...); undefined4 * __thiscall FUN_110b5610(undefined4 param_2,int *param_3); template<class... A> int FUN_110b5610(A...); undefined4 * __thiscall FUN_110b5900(byte param_2); template<class... A> int FUN_110b5900(A...); void __thiscall FUN_110b60e0(void); template<class... A> int FUN_110b60e0(A...); void __thiscall FUN_110bf210(undefined4 param_2,undefined4 param_3,undefined4 param_4); template<class... A> int FUN_110bf210(A...); undefined4 __thiscall FUN_110bf3e0(undefined4 param_2); template<class... A> int FUN_110bf3e0(A...); undefined4 __thiscall FUN_110bf600(undefined4 param_2); template<class... A> int FUN_110bf600(A...); undefined4 __thiscall FUN_110bf630(undefined4 param_2); template<class... A> int FUN_110bf630(A...); undefined4 __thiscall FUN_110bf660(undefined4 param_2); template<class... A> int FUN_110bf660(A...); undefined4 * __thiscall FUN_110c0eb0(byte param_2); template<class... A> int FUN_110c0eb0(A...); void __thiscall FUN_110c1190(undefined4 param_2); template<class... A> int FUN_110c1190(A...); void __thiscall FUN_110c1920(int param_2); template<class... A> int FUN_110c1920(A...); void __thiscall FUN_110c1970(int param_2); template<class... A> int FUN_110c1970(A...); void __thiscall FUN_110c19c0(int param_2); template<class... A> int FUN_110c19c0(A...); void __thiscall FUN_110c1a10(int param_2); template<class... A> int FUN_110c1a10(A...); void __thiscall FUN_110c4940(undefined4 param_2); template<class... A> int FUN_110c4940(A...); int __thiscall FUN_110c5770(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_110c5770(A...); int __thiscall FUN_110c57b0(undefined4 param_2); template<class... A> int FUN_110c57b0(A...); undefined4 __thiscall FUN_110c9050(byte param_2); template<class... A> int FUN_110c9050(A...); void __thiscall FUN_110c9cb0(int param_2); template<class... A> int FUN_110c9cb0(A...); void __thiscall FUN_110c9cf0(int param_2); template<class... A> int FUN_110c9cf0(A...); void __thiscall FUN_110c9d30(int param_2); template<class... A> int FUN_110c9d30(A...); void __thiscall FUN_110c9d70(int param_2); template<class... A> int FUN_110c9d70(A...); void __thiscall FUN_110c9db0(int param_2); template<class... A> int FUN_110c9db0(A...); void __thiscall FUN_110c9df0(int param_2); template<class... A> int FUN_110c9df0(A...); void __thiscall FUN_110c9e30(int param_2); template<class... A> int FUN_110c9e30(A...); void __thiscall FUN_110c9e70(int param_2); template<class... A> int FUN_110c9e70(A...); void __thiscall FUN_110c9eb0(int param_2); template<class... A> int FUN_110c9eb0(A...); void __thiscall FUN_110c9ef0(int param_2); template<class... A> int FUN_110c9ef0(A...); void __thiscall FUN_110c9f30(int param_2); template<class... A> int FUN_110c9f30(A...); void __thiscall FUN_110c9f70(int param_2); template<class... A> int FUN_110c9f70(A...); void __thiscall FUN_110c9fb0(int param_2); template<class... A> int FUN_110c9fb0(A...); void __thiscall FUN_110c9ff0(int param_2); template<class... A> int FUN_110c9ff0(A...); void __thiscall FUN_110cad70(undefined4 param_2); template<class... A> int FUN_110cad70(A...); void __thiscall FUN_110d2ec0(undefined4 param_2); template<class... A> int FUN_110d2ec0(A...); void __thiscall FUN_110d3030(undefined4 param_2); template<class... A> int FUN_110d3030(A...); void __thiscall FUN_110d3070(undefined4 param_2); template<class... A> int FUN_110d3070(A...); void __thiscall FUN_110d7950(undefined4 param_2); template<class... A> int FUN_110d7950(A...); undefined4 * __thiscall FUN_110d9bc0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_110d9bc0(A...); undefined4 * __thiscall FUN_110dcd90(byte param_2); template<class... A> int FUN_110dcd90(A...); undefined4 * __thiscall FUN_110dcdd0(byte param_2); template<class... A> int FUN_110dcdd0(A...); undefined4 __thiscall FUN_110e09c0(undefined4 param_2,short *param_3); template<class... A> int FUN_110e09c0(A...); void __thiscall FUN_110e20d0(undefined4 *param_2); template<class... A> int FUN_110e20d0(A...); void __thiscall FUN_110ed2d0(undefined1 *param_2); template<class... A> int FUN_110ed2d0(A...); void __thiscall FUN_110edc00(undefined4 param_2); template<class... A> int FUN_110edc00(A...); void __thiscall FUN_110ee040(undefined4 param_2); template<class... A> int FUN_110ee040(A...); int __thiscall FUN_110ee0d0(undefined4 param_2); template<class... A> int FUN_110ee0d0(A...); void __thiscall FUN_110f1790(int param_2); template<class... A> int FUN_110f1790(A...); void __thiscall FUN_110f2af0(char *param_2); template<class... A> int FUN_110f2af0(A...); void __thiscall FUN_110f2b40(char *param_2); template<class... A> int FUN_110f2b40(A...); undefined4 * __thiscall FUN_110f66a0(undefined4 param_2); template<class... A> int FUN_110f66a0(A...); int __thiscall FUN_110f6ac0(int param_2); template<class... A> int FUN_110f6ac0(A...); undefined4 * __thiscall FUN_110f6c10(byte param_2); template<class... A> int FUN_110f6c10(A...); undefined4 * __thiscall FUN_110f6c60(byte param_2); template<class... A> int FUN_110f6c60(A...); undefined4 * __thiscall FUN_110f6cb0(byte param_2); template<class... A> int FUN_110f6cb0(A...); undefined4 * __thiscall FUN_110f6d00(byte param_2); template<class... A> int FUN_110f6d00(A...); };
 using namespace std;
 void __fastcall FUN_11011870(int param_1);
@@ -978,7 +979,7 @@ void __fastcall FUN_11011870(int param_1)
   char cVar1;
   undefined4 *puVar2;
   
-  if (*(int **)(param_1 + 0x28) != (int *)(0x0)) {
+  if (*(int **)(param_1 + 0x28) != (int *)((0x0))) {
     cVar1 = (char)((**(code **)(**(int **)(param_1 + 0x28) + 0x1c))());
     if (cVar1 != '\0') {
       (**(code **)(*(int *)(param_1 + 0x24) + 4))();
@@ -1037,7 +1038,7 @@ undefined4 __thiscall Recovered_Bulk::FUN_11019440(undefined4 param_2,undefined4
   int param_1 = (int )this;
   undefined4 uVar1;
   
-  if (*(int **)(param_1 + 8) != (int *)(0x0)) {
+  if (*(int **)(param_1 + 8) != (int *)((0x0))) {
     uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 8) + 4))(param_2,param_3,param_4));
     return (undefined4)(uVar1);
   }
@@ -1386,7 +1387,7 @@ void __thiscall Recovered_Bulk::FUN_1101e240(int param_2)
   char cVar1;
   int iVar2;
   
-  if (*(int **)(param_1 + 0x14) != (int *)(0x0)) {
+  if (*(int **)(param_1 + 0x14) != (int *)((0x0))) {
     cVar1 = (char)((**(code **)(**(int **)(param_1 + 0x14) + 0xc))());
     if (cVar1 != '\0') {
       iVar2 = (int)((**(code **)(**(int **)(param_1 + 0x14) + 8))());
@@ -1987,8 +1988,8 @@ void __fastcall FUN_1102f590(int *param_1)
   undefined4 uStack_8;
 
 
-  if ((int *)(int *)(*param_1) != (int *)0x0) {
-    (**(code **)(*(int *)*param_1 + 8))(DAT_12126b84 );
+  if ((int *)(int *)(*param_1) != (int *)(0x0)) {
+    (**(code **)(*(int *)*param_1 + 8))(DAT_12126b84 ^ (uint)&stack0xfffffffc);
   }
 
   return;
@@ -2175,7 +2176,7 @@ bool __fastcall FUN_11038200(int param_1)
 void __fastcall FUN_110382c0(int param_1)
 
 {
-  if (*(void **)(param_1 + 0x10) != (void *)(0x0)) {
+  if (*(void **)(param_1 + 0x10) != (void *)((0x0))) {
     free(*(void **)(param_1 + 0x10));
     *(undefined4*)(param_1 + 0x10) = (undefined4)(0);
   }
@@ -2189,7 +2190,7 @@ void __fastcall FUN_110382c0(int param_1)
 void __fastcall FUN_110382f0(int param_1)
 
 {
-  if (*(void **)(param_1 + 0xc) != (void *)(0x0)) {
+  if (*(void **)(param_1 + 0xc) != (void *)((0x0))) {
     free(*(void **)(param_1 + 0xc));
     *(undefined4*)(param_1 + 0xc) = (undefined4)(0);
   }
@@ -2216,11 +2217,11 @@ undefined1 FUN_11038930(short *param_1,uint param_2)
 void __fastcall FUN_11038960(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
-  if (*(void **)(param_1 + 0xc) != (void *)(0x0)) {
+  if (*(void **)(param_1 + 0xc) != (void *)((0x0))) {
     free(*(void **)(param_1 + 0xc));
     *(undefined4*)(param_1 + 0xc) = (undefined4)(0);
   }
-  if (*(void **)(param_1 + 0x10) != (void *)(0x0)) {
+  if (*(void **)(param_1 + 0x10) != (void *)((0x0))) {
     free(*(void **)(param_1 + 0x10));
     *(undefined4*)(param_1 + 0x10) = (undefined4)(0);
   }
@@ -2318,7 +2319,7 @@ void FUN_11039d80(int param_1)
   int iVar1;
   
   iVar1 = (int)(*(int *)(param_1 + 8));
-  if (*(void **)(iVar1 + 0x98) != (void *)(0x0)) {
+  if (*(void **)(iVar1 + 0x98) != (void *)((0x0))) {
     free(*(void **)(iVar1 + 0x98));
     *(undefined4*)(*(int *)(param_1 + 8) + 0x98) = (undefined4)(0);
     iVar1 = (int)(*(int *)(param_1 + 8));
@@ -2337,7 +2338,7 @@ void __fastcall FUN_11039fa0(int param_1, unsigned int recovered_unused_stack_0,
   int iVar1;
   
   iVar1 = (int)(*(int *)(param_1 + 8));
-  if (*(void **)(iVar1 + 0x98) != (void *)(0x0)) {
+  if (*(void **)(iVar1 + 0x98) != (void *)((0x0))) {
     free(*(void **)(iVar1 + 0x98));
     *(undefined4*)(*(int *)(param_1 + 8) + 0x98) = (undefined4)(0);
     iVar1 = (int)(*(int *)(param_1 + 8));
@@ -2888,7 +2889,7 @@ uint __fastcall FUN_110525b0(int param_1)
   uint in_EAX;
   uint uVar1;
   
-  if (*(int **)(param_1 + 0x54) != (int *)(0x0)) {
+  if (*(int **)(param_1 + 0x54) != (int *)((0x0))) {
                     
                     
     uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x54) + 0xd4))());
@@ -2920,7 +2921,7 @@ uint __fastcall FUN_110533e0(int param_1)
   uint in_EAX;
   uint uVar1;
   
-  if (*(int **)(param_1 + 0x54) != (int *)(0x0)) {
+  if (*(int **)(param_1 + 0x54) != (int *)((0x0))) {
                     
                     
     uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x54) + 0x94))());
@@ -2978,7 +2979,7 @@ undefined4 __thiscall Recovered_Bulk::FUN_11057300(undefined4 param_2)
   undefined4 uVar1;
   
   uVar1 = (undefined4)((**(code **)(*param_1 + 0x30))(param_2,0));
-  if (((char)param_1[0x15] != '\0') && ((int *)(int *)(param_1[0x13]) != (int *)0x0)) {
+  if (((char)param_1[0x15] != '\0') && ((int *)(int *)(param_1[0x13]) != (int *)(0x0))) {
     (**(code **)(*(int *)param_1[0x13] + 0xdc))();
   }
   return (undefined4)(uVar1);
@@ -2991,7 +2992,7 @@ undefined4 __thiscall Recovered_Bulk::FUN_11057300(undefined4 param_2)
 void __thiscall Recovered_Bulk::FUN_11057340(int param_2)
 {
   int *param_1 = (int *)this;
-  if ((int *)(int *)(*param_1) != (int *)0x0) {
+  if ((int *)(int *)(*param_1) != (int *)(0x0)) {
     (**(code **)(*(int *)*param_1 + 8))();
   }
   *param_1 = (int)(param_2);
@@ -3767,7 +3768,7 @@ undefined4 FUN_1107e300(undefined4 *param_1)
 {
   char cVar1;
   
-  if (((char *)(char *)(*param_1) != (char *)0x0) && (*(char *)*param_1 != '\0')) {
+  if (((char *)(char *)(*param_1) != (char *)(0x0)) && (*(char *)*param_1 != '\0')) {
     cVar1 = (char)(thunk_FUN_11092d30(param_1));
     if (cVar1 == '\0') {
       thunk_FUN_1106f380(param_1);
@@ -5293,7 +5294,7 @@ void __fastcall FUN_110b5890(undefined4 *param_1)
 
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RPresentationMap);
-  if ((undefined4 *)(undefined4 *)(param_1[1]) != (undefined4 *)0x0) {
+  if ((undefined4 *)(undefined4 *)(param_1[1]) != (undefined4 *)(0x0)) {
     (*(code *)**(undefined4 **)param_1[1])(1);
   }
   *param_1 = (undefined4)((uint)&ghidra_vftable_RPresentationMapCB);
@@ -5308,7 +5309,7 @@ undefined4 * __thiscall Recovered_Bulk::FUN_110b5900(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_RPresentationMap);
-  if ((undefined4 *)(undefined4 *)(param_1[1]) != (undefined4 *)0x0) {
+  if ((undefined4 *)(undefined4 *)(param_1[1]) != (undefined4 *)(0x0)) {
     (*(code *)**(undefined4 **)param_1[1])(1);
   }
   *param_1 = (undefined4)((uint)&ghidra_vftable_RPresentationMapCB);
@@ -5655,7 +5656,7 @@ undefined4 FUN_110b9940(undefined4 *param_1)
 {
   int iVar1;
   
-  if (((char *)(char *)(*param_1) != (char *)0x0) && (6 < (uint)param_1[1])) {
+  if (((char *)(char *)(*param_1) != (char *)(0x0)) && (6 < (uint)param_1[1])) {
     iVar1 = (int)(strncmp((char *)*param_1,"x-sonos",7));
     if (iVar1 == 0) {
       return (undefined4)(1);
@@ -5686,7 +5687,7 @@ void __thiscall Recovered_Bulk::FUN_110bf210(undefined4 param_2,undefined4 param
   undefined1 *puVar1;
   
   puVar1 = (undefined1 *)(&DAT_1186d2ee);
-  if (*(undefined1 **)(param_1 + 0x20) != (undefined1 *)(0x0)) {
+  if (*(undefined1 **)(param_1 + 0x20) != (undefined1 *)((0x0))) {
     puVar1 = (undefined1 *)(*(undefined1 **)(param_1 + 0x20));
   }
   thunk_FUN_1145c720(param_3,param_4,"x-rincon-queue:%s#%d",puVar1,param_2);
@@ -5985,7 +5986,7 @@ void __thiscall Recovered_Bulk::FUN_110c4940(undefined4 param_2)
   int param_1 = (int )this;
   undefined4 uVar1;
   
-  if (*(int **)(param_1 + 0x2c) != (int *)(0x0)) {
+  if (*(int **)(param_1 + 0x2c) != (int *)((0x0))) {
     uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x2c) + 4))(param_1 + 8,param_2));
     *(undefined4*)(param_1 + 0x30) = (undefined4)(uVar1);
     return;
@@ -6496,7 +6497,7 @@ undefined4 FUN_110ca780(undefined4 *param_1)
 {
   int iVar1;
   
-  if (((char *)(char *)(*param_1) != (char *)0x0) && (param_1[1] == 0xb)) {
+  if (((char *)(char *)(*param_1) != (char *)(0x0)) && (param_1[1] == 0xb)) {
     iVar1 = (int)(strncmp((char *)*param_1,"x-file-cifs",0xb));
     if (iVar1 == 0) {
       return (undefined4)(1);
@@ -7101,7 +7102,7 @@ void __thiscall Recovered_Bulk::FUN_110d7950(undefined4 param_2)
   undefined1 *puVar1;
   
   puVar1 = (undefined1 *)(&DAT_1186d2ee);
-  if (*(undefined1 **)(param_1 + 0x5c) != (undefined1 *)(0x0)) {
+  if (*(undefined1 **)(param_1 + 0x5c) != (undefined1 *)((0x0))) {
     puVar1 = (undefined1 *)(*(undefined1 **)(param_1 + 0x5c));
   }
   thunk_FUN_1127cc80(param_2,puVar1,0);
@@ -7552,7 +7553,7 @@ int __fastcall FUN_110da760(int param_1)
   uint uVar1;
   uint uVar2;
   
-  if (*(int **)(param_1 + 0x20) != (int *)(0x0)) {
+  if (*(int **)(param_1 + 0x20) != (int *)((0x0))) {
     uVar1 = (uint)((**(code **)(**(int **)(param_1 + 0x20) + 0x58))());
     uVar2 = (uint)((**(code **)(**(int **)(param_1 + 0x20) + 0x58))());
     return (int)((uVar2 & 1) + ((uVar1 & 0xffffff7f) - 1));
@@ -7825,11 +7826,11 @@ void __fastcall FUN_110e70a0(int param_1)
   undefined1 *puVar2;
   
   puVar1 = (undefined1 *)(&DAT_1186d2ee);
-  if (*(undefined1 **)(param_1 + 0x5c) != (undefined1 *)(0x0)) {
+  if (*(undefined1 **)(param_1 + 0x5c) != (undefined1 *)((0x0))) {
     puVar1 = (undefined1 *)(*(undefined1 **)(param_1 + 0x5c));
   }
   puVar2 = (undefined1 *)(&DAT_1186d2ee);
-  if (*(undefined1 **)(param_1 + 0x60) != (undefined1 *)(0x0)) {
+  if (*(undefined1 **)(param_1 + 0x60) != (undefined1 *)((0x0))) {
     puVar2 = (undefined1 *)(*(undefined1 **)(param_1 + 0x60));
   }
   thunk_FUN_110b3620(-(uint)(param_1 != 0) & param_1 + 0x1cU,puVar2,puVar1,0,0);
@@ -7864,7 +7865,7 @@ void __fastcall FUN_110e9120(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RWrapperBrowseOp);
   param_1[3] = (undefined4)((uint)&ghidra_vftable_RWrapperBrowseOp);
-  if ((undefined4 *)(undefined4 *)(param_1[4]) != (undefined4 *)0x0) {
+  if ((undefined4 *)(undefined4 *)(param_1[4]) != (undefined4 *)(0x0)) {
     (*(code *)**(undefined4 **)param_1[4])(1);
   }
   *param_1 = (undefined4)((uint)&ghidra_vftable_RCPBrowseOperation);
@@ -7882,7 +7883,7 @@ void __fastcall FUN_110e9160(undefined4 *param_1)
   thunk_FUN_11202570();
   *param_1 = (undefined4)((uint)&ghidra_vftable_RWrapperBrowseOp);
   param_1[3] = (undefined4)((uint)&ghidra_vftable_RWrapperBrowseOp);
-  if ((undefined4 *)(undefined4 *)(param_1[4]) != (undefined4 *)0x0) {
+  if ((undefined4 *)(undefined4 *)(param_1[4]) != (undefined4 *)(0x0)) {
     (*(code *)**(undefined4 **)param_1[4])(1);
   }
   *param_1 = (undefined4)((uint)&ghidra_vftable_RCPBrowseOperation);
@@ -7900,7 +7901,7 @@ void __fastcall FUN_110e9320(undefined4 *param_1)
   thunk_FUN_111d3d00();
   *param_1 = (undefined4)((uint)&ghidra_vftable_RWrapperBrowseOp);
   param_1[3] = (undefined4)((uint)&ghidra_vftable_RWrapperBrowseOp);
-  if ((undefined4 *)(undefined4 *)(param_1[4]) != (undefined4 *)0x0) {
+  if ((undefined4 *)(undefined4 *)(param_1[4]) != (undefined4 *)(0x0)) {
     (*(code *)**(undefined4 **)param_1[4])(1);
   }
   *param_1 = (undefined4)((uint)&ghidra_vftable_RCPBrowseOperation);
@@ -7916,7 +7917,7 @@ void __fastcall FUN_110e9370(undefined4 *param_1)
 
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjRadioTimeCP);
-  if ((undefined4 *)(undefined4 *)(param_1[0x31]) != (undefined4 *)0x0) {
+  if ((undefined4 *)(undefined4 *)(param_1[0x31]) != (undefined4 *)(0x0)) {
     (*(code *)**(undefined4 **)param_1[0x31])(1);
     param_1[0x31] = (undefined4)(0);
   }
@@ -7981,7 +7982,7 @@ undefined4 __fastcall FUN_110ec780(int param_1)
 {
   undefined4 uVar1;
   
-  if (*(int **)(param_1 + 0x10) != (int *)(0x0)) {
+  if (*(int **)(param_1 + 0x10) != (int *)((0x0))) {
                     
                     
     uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x10) + 4))());
@@ -8032,7 +8033,7 @@ undefined4 __fastcall FUN_110ecda0(int param_1)
 {
   undefined4 uVar1;
   
-  if (*(int **)(param_1 + 0x10) != (int *)(0x0)) {
+  if (*(int **)(param_1 + 0x10) != (int *)((0x0))) {
                     
                     
     uVar1 = (undefined4)((**(code **)(**(int **)(param_1 + 0x10) + 8))());
@@ -8106,7 +8107,7 @@ void __fastcall FUN_110ed320(int param_1, unsigned int recovered_unused_stack_0,
 {
   int iStack00000004;
   
-  if (*(int **)(param_1 + 4) != (int *)(0x0)) {
+  if (*(int **)(param_1 + 4) != (int *)((0x0))) {
                     
                     
     iStack00000004 = (int)(param_1);
@@ -8357,7 +8358,7 @@ undefined4 FUN_110f53b0(undefined4 param_1)
 void __fastcall FUN_110f6650(int param_1)
 
 {
-  if (*(code **)(param_1 + 0x24) != (code *)(0x0)) {
+  if (*(code **)(param_1 + 0x24) != (code *)((0x0))) {
                     
                     
     (**(code **)(param_1 + 0x24))();

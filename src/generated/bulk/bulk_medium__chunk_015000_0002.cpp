@@ -20,6 +20,7 @@ typedef int FILE;
 typedef unsigned long DWORD;
 typedef unsigned short WORD;
 typedef unsigned char BYTE;
+typedef unsigned char uchar;
 typedef int BOOL;
 typedef void *HANDLE;
 typedef void *LPVOID;
@@ -62,75 +63,7 @@ extern "C" int strcmp(const char *, const char *);
 extern "C" int wcscmp(const wchar_t *, const wchar_t *);
 extern "C" unsigned long __readfsdword(unsigned long);
 #pragma intrinsic(__readfsdword)
-extern __declspec(dllimport) int __CxxFrameHandler3(...);
-extern int _eh_vector_destructor_iterator_(...);
-extern int op_dtor(...);
-extern int thunk_FUN_1011c170(...);
-extern int thunk_FUN_1011c1d0(...);
-extern int thunk_FUN_1011c5f0(...);
-extern int thunk_FUN_1011ce30(...);
-extern int thunk_FUN_1011d010(...);
-extern int thunk_FUN_1011d0d0(...);
-extern int thunk_FUN_1011d9d0(...);
-extern int thunk_FUN_1011da30(...);
-extern int thunk_FUN_1011da90(...);
-extern int thunk_FUN_1011e5d0(...);
-extern int thunk_FUN_1011e630(...);
-extern int thunk_FUN_1011e8d0(...);
-extern int thunk_FUN_1011e990(...);
-extern int thunk_FUN_1011ec30(...);
-extern int thunk_FUN_1011eed0(...);
-extern int thunk_FUN_1011f050(...);
-extern int thunk_FUN_1011f5e0(...);
-extern int thunk_FUN_101a2bf0(...);
-extern int thunk_FUN_101b9f90(...);
-extern int thunk_FUN_101b9ff0(...);
-extern int thunk_FUN_101ba050(...);
-extern int thunk_FUN_101ba300(...);
-extern int thunk_FUN_101c6ae0(...);
-extern int thunk_FUN_101d27b0(...);
-extern int thunk_FUN_101eae90(...);
-extern int thunk_FUN_101f4a30(...);
-extern int thunk_FUN_102026e0(...);
-extern int thunk_FUN_10202e00(...);
-extern int thunk_FUN_1022db30(...);
-extern int thunk_FUN_1022dbc0(...);
-extern int thunk_FUN_1022dbf0(...);
-extern int thunk_FUN_1022dc20(...);
-extern int thunk_FUN_1022dd80(...);
-extern int thunk_FUN_1022ed40(...);
-extern int thunk_FUN_10247180(...);
-extern int thunk_FUN_10247340(...);
-extern int thunk_FUN_102473e0(...);
-extern int thunk_FUN_10266f90(...);
-extern int thunk_FUN_10275c10(...);
-extern int thunk_FUN_10285c50(...);
-extern int thunk_FUN_1028dc90(...);
-extern int thunk_FUN_102962f0(...);
-extern int thunk_FUN_102a9580(...);
-extern int thunk_FUN_102a9890(...);
-extern int thunk_FUN_102a98a0(...);
-extern int thunk_FUN_10346c80(...);
-extern int thunk_FUN_10362de0(...);
-extern int thunk_FUN_10362e10(...);
-extern int thunk_FUN_10362e40(...);
-extern int thunk_FUN_10362e70(...);
-extern int thunk_FUN_10362ea0(...);
-extern int thunk_FUN_10362f00(...);
-extern int thunk_FUN_10363490(...);
-extern int thunk_FUN_1036e480(...);
-extern int thunk_FUN_103c2a20(...);
-extern int thunk_FUN_1124d790(...);
-extern int thunk_FUN_11255560(...);
-extern int thunk_FUN_1148a50e(...);
-extern int thunk_FUN_1148ac28(...);
-extern int DAT_00004494;
-extern int unaff_EBP;
-extern undefined1 LAB_10002f68[];
-extern undefined1 LAB_10019704[];
-struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); int op_dtor(...); };
-typedef void *WARNING;
-typedef void *_func_void_void_ptr;
+struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int op_dtor(...); };
 struct Subroutine { char _pad; Subroutine(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Unwind_11505c63 { char _pad; Unwind_11505c63(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Unwind_11505c90 { char _pad; Unwind_11505c90(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
@@ -255,7 +188,6 @@ struct Unwind_11517918 { char _pad; Unwind_11517918(...); template<class T> int 
 struct Unwind_11517c58 { char _pad; Unwind_11517c58(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Unwind_11517cf8 { char _pad; Unwind_11517cf8(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Unwind_11517d11 { char _pad; Unwind_11517d11(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Unwind_11517e33 { char _pad; Unwind_11517e33(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Unwind_11517e69 { char _pad; Unwind_11517e69(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Unwind_11519030 { char _pad; Unwind_11519030(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Unwind_11519049 { char _pad; Unwind_11519049(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
@@ -272,7 +204,6 @@ struct Unwind_11519540 { char _pad; Unwind_11519540(...); template<class T> int 
 struct Unwind_11519740 { char _pad; Unwind_11519740(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Unwind_1151a340 { char _pad; Unwind_1151a340(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Unwind_1151a3e0 { char _pad; Unwind_1151a3e0(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Unwind_1151b8c0 { char _pad; Unwind_1151b8c0(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Unwind_1151bef0 { char _pad; Unwind_1151bef0(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Unwind_1151bf09 { char _pad; Unwind_1151bf09(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Unwind_1151c077 { char _pad; Unwind_1151c077(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
@@ -701,7 +632,6 @@ struct Unwind_115460d1 { char _pad; Unwind_115460d1(...); template<class T> int 
 struct Unwind_1154614f { char _pad; Unwind_1154614f(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Unwind_11546168 { char _pad; Unwind_11546168(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Unwind_11546181 { char _pad; Unwind_11546181(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Unwind_11546560 { char _pad; Unwind_11546560(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Unwind_115468a0 { char _pad; Unwind_115468a0(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Unwind_11546abf { char _pad; Unwind_11546abf(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Unwind_11546ea8 { char _pad; Unwind_11546ea8(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
@@ -881,7 +811,75 @@ struct Unwind_11552d40 { char _pad; Unwind_11552d40(...); template<class T> int 
 struct Unwind_11552ea0 { char _pad; Unwind_11552ea0(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Unwind_11552f50 { char _pad; Unwind_11552f50(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
 struct Unwind_11552fc0 { char _pad; Unwind_11552fc0(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+typedef void *WARNING;
+typedef void *_func_void_void_ptr;
 using namespace std;
+extern __declspec(dllimport) int __CxxFrameHandler3(...);
+extern int _eh_vector_destructor_iterator_(...);
+extern int op_dtor(...);
+extern int thunk_FUN_1011c170(...);
+extern int thunk_FUN_1011c1d0(...);
+extern int thunk_FUN_1011c5f0(...);
+extern int thunk_FUN_1011ce30(...);
+extern int thunk_FUN_1011d010(...);
+extern int thunk_FUN_1011d0d0(...);
+extern int thunk_FUN_1011d9d0(...);
+extern int thunk_FUN_1011da30(...);
+extern int thunk_FUN_1011da90(...);
+extern int thunk_FUN_1011e5d0(...);
+extern int thunk_FUN_1011e630(...);
+extern int thunk_FUN_1011e8d0(...);
+extern int thunk_FUN_1011e990(...);
+extern int thunk_FUN_1011ec30(...);
+extern int thunk_FUN_1011eed0(...);
+extern int thunk_FUN_1011f050(...);
+extern int thunk_FUN_1011f5e0(...);
+extern int thunk_FUN_101a2bf0(...);
+extern int thunk_FUN_101b9f90(...);
+extern int thunk_FUN_101b9ff0(...);
+extern int thunk_FUN_101ba050(...);
+extern int thunk_FUN_101ba300(...);
+extern int thunk_FUN_101c6ae0(...);
+extern int thunk_FUN_101d27b0(...);
+extern int thunk_FUN_101eae90(...);
+extern int thunk_FUN_101f4a30(...);
+extern int thunk_FUN_102026e0(...);
+extern int thunk_FUN_10202e00(...);
+extern int thunk_FUN_1022db30(...);
+extern int thunk_FUN_1022dbc0(...);
+extern int thunk_FUN_1022dbf0(...);
+extern int thunk_FUN_1022dc20(...);
+extern int thunk_FUN_1022dd80(...);
+extern int thunk_FUN_1022ed40(...);
+extern int thunk_FUN_10247180(...);
+extern int thunk_FUN_10247340(...);
+extern int thunk_FUN_102473e0(...);
+extern int thunk_FUN_10266f90(...);
+extern int thunk_FUN_10275c10(...);
+extern int thunk_FUN_10285c50(...);
+extern int thunk_FUN_1028dc90(...);
+extern int thunk_FUN_102962f0(...);
+extern int thunk_FUN_102a9580(...);
+extern int thunk_FUN_102a9890(...);
+extern int thunk_FUN_102a98a0(...);
+extern int thunk_FUN_10346c80(...);
+extern int thunk_FUN_10362de0(...);
+extern int thunk_FUN_10362e10(...);
+extern int thunk_FUN_10362e40(...);
+extern int thunk_FUN_10362e70(...);
+extern int thunk_FUN_10362ea0(...);
+extern int thunk_FUN_10362f00(...);
+extern int thunk_FUN_10363490(...);
+extern int thunk_FUN_1036e480(...);
+extern int thunk_FUN_103c2a20(...);
+extern int thunk_FUN_1124d790(...);
+extern int thunk_FUN_11255560(...);
+extern int thunk_FUN_1148a50e(...);
+extern int thunk_FUN_1148ac28(...);
+extern int DAT_00004494;
+extern int unaff_EBP;
+extern undefined1 LAB_10002f68[];
+extern undefined1 LAB_10019704[];
 void FUN_11505c63(void);
 extern void FUN_11505c63(...);
 void FUN_11505c90(void);
@@ -1128,8 +1126,6 @@ void FUN_11517cf8(void);
 extern void FUN_11517cf8(...);
 void FUN_11517d11(void);
 extern void FUN_11517d11(...);
-void FUN_11517e33(void);
-extern void FUN_11517e33(...);
 void FUN_11517e69(void);
 extern void FUN_11517e69(...);
 void FUN_11519030(void);
@@ -1162,8 +1158,6 @@ void FUN_1151a340(void);
 extern void FUN_1151a340(...);
 void FUN_1151a3e0(void);
 extern void FUN_1151a3e0(...);
-void FUN_1151b8c0(void);
-extern void FUN_1151b8c0(...);
 void FUN_1151bef0(void);
 extern void FUN_1151bef0(...);
 void FUN_1151bf09(void);
@@ -2022,8 +2016,6 @@ void FUN_11546168(void);
 extern void FUN_11546168(...);
 void FUN_11546181(void);
 extern void FUN_11546181(...);
-void FUN_11546560(void);
-extern void FUN_11546560(...);
 void FUN_115468a0(void);
 extern void FUN_115468a0(...);
 void FUN_11546abf(void);
@@ -4385,19 +4377,6 @@ void FUN_11517d11(void)
 }
 
 
-// Reference entry 11517e33; body size 19 bytes.
-#line 1 "ENTRY_11517e33"
-
-void FUN_11517e33(void)
-
-{
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((void *)(unaff_EBP + -0x14),4,1,((int (SCStr::*)())&SCStr::op_dtor));
-  return;
-}
-
-
 // Reference entry 11517e69; body size 22 bytes.
 #line 1 "ENTRY_11517e69"
 
@@ -4658,19 +4637,6 @@ void FUN_1151a3e0(void)
     thunk_FUN_101c6ae0();
     return;
   }
-  return;
-}
-
-
-// Reference entry 1151b8c0; body size 19 bytes.
-#line 1 "ENTRY_1151b8c0"
-
-void FUN_1151b8c0(void)
-
-{
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((void *)(unaff_EBP + -0x10),4,1,((int (SCStr::*)())&SCStr::op_dtor));
   return;
 }
 
@@ -11590,19 +11556,6 @@ void FUN_11546181(void)
     ((SCStr *)((SCStr *)(unaff_EBP + 8)))->op_dtor();
     return;
   }
-  return;
-}
-
-
-// Reference entry 11546560; body size 19 bytes.
-#line 1 "ENTRY_11546560"
-
-void FUN_11546560(void)
-
-{
-  int unaff_EBP;
-  
-  _eh_vector_destructor_iterator_((void *)(unaff_EBP + 0x60),4,3,((int (SCStr::*)())&SCStr::op_dtor));
   return;
 }
 

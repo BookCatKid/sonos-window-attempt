@@ -1110,20 +1110,24 @@ def cpp_source(records, defined, bad_decls=()):
     for name in sorted(used - defined_here - extern_names):
         externs.add(('call', name))
     decls = []
+    # Extern declarations go last among the decl lines: the signature
+    # post-pass rewrites some of them into typed declarations that reference
+    # struct/typedef stubs, so every type must already be declared.
+    extern_decls = []
     for kind, name in sorted(externs):
         if kind == 'call':
             dllimport = ' __declspec(dllimport)' if name in IMPORT_SLOTS else ''
-            decls.append(f'extern{dllimport} int {name}(...);')
+            extern_decls.append(f'extern{dllimport} int {name}(...);')
         elif kind == 'lab':
-            decls.append(f'extern undefined1 {name}[];')
+            extern_decls.append(f'extern undefined1 {name}[];')
         elif kind == 'vptr':
-            decls.append(f'extern void *{name};')
+            extern_decls.append(f'extern void *{name};')
         elif kind == 'ptr':
-            decls.append(f'extern int *{name};')
+            extern_decls.append(f'extern int *{name};')
         elif kind == 'str':
-            decls.append(f'extern char {name}[];')
+            extern_decls.append(f'extern char {name}[];')
         else:
-            decls.append(f'extern int {name};')
+            extern_decls.append(f'extern int {name};')
     tree = {}
     for qualifier, leaves in member_stubs.items():
         if qualifier in ('__fields__', '__fcall__', ''):
@@ -1272,7 +1276,8 @@ def cpp_source(records, defined, bad_decls=()):
             for method in sorted(methods)
             if method != stub) + ' };')
     decls.append('using namespace std;')
-    decl_lines = [line for line in decls + forward if line not in bad_decls]
+    decl_lines = [line for line in decls + extern_decls + forward
+                  if line not in bad_decls]
     return (HEADER + '\n'.join(decl_lines) + '\n' +
             '\n'.join(definitions), set(decl_lines))
 

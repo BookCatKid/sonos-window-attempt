@@ -20,6 +20,7 @@ typedef int FILE;
 typedef unsigned long DWORD;
 typedef unsigned short WORD;
 typedef unsigned char BYTE;
+typedef unsigned char uchar;
 typedef int BOOL;
 typedef void *HANDLE;
 typedef void *LPVOID;
@@ -62,7 +63,196 @@ extern "C" int strcmp(const char *, const char *);
 extern "C" int wcscmp(const wchar_t *, const wchar_t *);
 extern "C" unsigned long __readfsdword(unsigned long);
 #pragma intrinsic(__readfsdword)
+namespace std { template<class... A> static int _Throw_C_error(A...); template<class... A> static int _Xbad_function_call(A...); template<class... A> static int _Xlength_error(A...); typedef int _Iterator_base0;}
+struct s { char _pad; s(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int urn; };
+namespace std { template<class...> struct _Tree_simple_types { char _pad; _Tree_simple_types(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); }; }
+namespace std { template<class...> struct _Tree_unchecked_const_iterator { char _pad; _Tree_unchecked_const_iterator(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int op_inc(...); }; }
+namespace std { template<class...> struct _Tree_val { char _pad; _Tree_val(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); }; }
+struct Adding { char _pad; Adding(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Anacapa { char _pad; Anacapa(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Anonymous { char _pad; Anonymous(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct AppLink { char _pad; AppLink(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Cache { char _pad; Cache(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Category { char _pad; Category(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Changed { char _pad; Changed(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Content { char _pad; Content(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Control { char _pad; Control(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Corr { char _pad; Corr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Could { char _pad; Could(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct CurrentURIMetaData { char _pad; CurrentURIMetaData(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct DVar1 { char _pad; DVar1(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct DeviceLink { char _pad; DeviceLink(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Diag { char _pad; Diag(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct DiagLevel { char _pad; DiagLevel(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct DiagMsg { char _pad; DiagMsg(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Diagnostics { char _pad; Diagnostics(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct EnqueuedURIMetaData { char _pad; EnqueuedURIMetaData(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct EnqueuedURIsMetaData { char _pad; EnqueuedURIsMetaData(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Enter { char _pad; Enter(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Error { char _pad; Error(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct ErrorType { char _pad; ErrorType(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Expat { char _pad; Expat(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct File { char _pad; File(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Function { char _pad; Function(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct GetCurrentThreadId { char _pad; GetCurrentThreadId(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Ghidra { char _pad; Ghidra(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Globals { char _pad; Globals(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Id { char _pad; Id(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Ignoring { char _pad; Ignoring(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Initializer { char _pad; Initializer(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Level { char _pad; Level(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct List { char _pad; List(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct MService { char _pad; MService(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Message { char _pad; Message(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct MetricsConfig { char _pad; MetricsConfig(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Module { char _pad; Module(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct NetInit { char _pad; NetInit(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct New { char _pad; New(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct OADevID { char _pad; OADevID(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Options { char _pad; Options(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Ordinal_111 { char _pad; Ordinal_111(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Ordinal_15 { char _pad; Ordinal_15(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Ordinal_16 { char _pad; Ordinal_16(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Ordinal_17 { char _pad; Ordinal_17(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Ordinal_18 { char _pad; Ordinal_18(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Ordinal_20 { char _pad; Ordinal_20(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Ordinal_3 { char _pad; Ordinal_3(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Ordinal_55 { char _pad; Ordinal_55(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Ordinal_7 { char _pad; Ordinal_7(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Ordinal_8 { char _pad; Ordinal_8(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Ordinal_9 { char _pad; Ordinal_9(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Params { char _pad; Params(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Please { char _pad; Please(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Preinstall { char _pad; Preinstall(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Preload { char _pad; Preload(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct RadioList { char _pad; RadioList(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Received { char _pad; Received(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Recovered { char _pad; Recovered(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Removing { char _pad; Removing(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct RequestRead { char _pad; RequestRead(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Scheduling { char _pad; Scheduling(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct ServerNetInit { char _pad; ServerNetInit(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Set { char _pad; Set(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct SetEvent { char _pad; SetEvent(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Sleep { char _pad; Sleep(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Software { char _pad; Software(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Sonos { char _pad; Sonos(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct SoundLab { char _pad; SoundLab(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Starting { char _pad; Starting(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Stateless { char _pad; Stateless(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Submit { char _pad; Submit(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Subroutine { char _pad; Subroutine(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Success { char _pad; Success(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Switch { char _pad; Switch(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct TServer { char _pad; TServer(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct TerminateThread { char _pad; TerminateThread(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Terminating { char _pad; Terminating(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct ThrowInfo { char _pad; ThrowInfo(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Too { char _pad; Too(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Transitional { char _pad; Transitional(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Treating { char _pad; Treating(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Type { char _pad; Type(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UNK_10040b3d { char _pad; UNK_10040b3d(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UNK_112bc9d0 { char _pad; UNK_112bc9d0(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UNK_1133d4f0 { char _pad; UNK_1133d4f0(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UNK_1133d5e0 { char _pad; UNK_1133d5e0(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UNK_113599e0 { char _pad; UNK_113599e0(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UNK_119df348 { char _pad; UNK_119df348(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UNK_119e086c { char _pad; UNK_119e086c(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UNK_119e08b8 { char _pad; UNK_119e08b8(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UNK_119e0a3c { char _pad; UNK_119e0a3c(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UNK_119e13fc { char _pad; UNK_119e13fc(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UNK_119e6594 { char _pad; UNK_119e6594(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UNK_119e67d0 { char _pad; UNK_119e67d0(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UNK_119e69a4 { char _pad; UNK_119e69a4(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UNK_119e69a8 { char _pad; UNK_119e69a8(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UNK_119e69b4 { char _pad; UNK_119e69b4(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UNK_119e9938 { char _pad; UNK_119e9938(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UNK_119e9e50 { char _pad; UNK_119e9e50(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UNK_119fb294 { char _pad; UNK_119fb294(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UNK_119fba58 { char _pad; UNK_119fba58(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UNK_119fc064 { char _pad; UNK_119fc064(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UpdateItem { char _pad; UpdateItem(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct Uploader { char _pad; Uploader(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct UserId { char _pad; UserId(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct WSAIoctl { char _pad; WSAIoctl(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct WSASocketA { char _pad; WSASocketA(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct XML_GetBuffer { char _pad; XML_GetBuffer(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+struct ZonePlayer { char _pad; ZonePlayer(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
+typedef void *BLAHBLAHBLAH;
+typedef void *CDATA;
+typedef void *CERT_INVALID;
+typedef void *CONTENT;
+typedef void *DELETE;
+typedef void *DOCTYPE;
+typedef void *DTD;
+typedef void *E9;
+typedef void *EN;
+typedef void *ERROR;
+typedef void *FACEDOWN;
+typedef void *GET;
+typedef void *HEAD;
+typedef void *HORIZONTAL;
+typedef void *HORIZONTAL_LEFT;
+typedef void *HORIZONTAL_RIGHT;
+typedef void *HORIZONTAL_WALL_MOUNTED;
+typedef void *HTML;
+typedef void *HTTP;
+typedef void *ID;
+typedef void *INVALID;
+typedef void *INVERTED;
+typedef void *LOCK;
+typedef void *MISSING;
+typedef void *NEVER;
+typedef void *NOTIFY;
+typedef void *OPTIONS;
+typedef void *PATCH;
+typedef void *POST;
+typedef void *PUBLIC;
+typedef void *PUT;
+typedef void *REINDEXEDESCAPEACHECKEYBEFOREIGNOREGEXPLAINSTEADDATABASELECTABLEFTHENDEFERRABLELSEXCLUDELETEMPORARYISNULLSAVEPOINTERSECTIESNOTNULLIKEXCEPTRANSACTIONATURALTERAISEXCLUSIVEXISTSCONSTRAINTOFFSETRIGGERANGENERATEDETACHAVINGLOBEGINNEREFERENCESUNIQUERYWITHOUTERELEASEATTACHBETWEENOTHINGROUPSCASCADEFAULTCASECOLLATECREATECURRENT_DATEIMMEDIATEJOINSERTMATCHPLANALYZEPRAGMABORTUPDATEVALUESVIRTUALWAYSWHENWHERECURSIVEAFTERENAMEANDEFERREDISTINCTAUTOINCREMENTCASTCOLUMNCOMMITCONFLICTCROSSCURRENT_TIMESTAMPARTITIONDROPRECEDINGFAILASTFILTEREPLACEFIRSTFOLLOWINGFROMFULLIMITIFORDERESTRICTOTHERSOVERIGHTROLLBACKROWSUNBOUNDEDUNIONUSINGVACUUMVIEWINDOWBYINITIALLYPRIMARY;
+typedef void *RTF;
+typedef void *SEARCH;
+typedef void *SN;
+typedef void *SONOSMULTIPARTBOUNDARY;
+typedef void *SQLITE_;
+typedef void *SSL;
+typedef void *TRACE;
+typedef void *TYPE;
+typedef void *UNDEFINED;
+typedef void *UNKNOWN;
+typedef void *UNLOCK;
+typedef void *UNSUBSCRIBE;
+typedef void *UNSUPPORTED;
+typedef void *VERTICAL_ABOVE;
+typedef void *VERTICAL_BELOW;
+typedef void *VERTICAL_TAG_LEFT;
+typedef void *VERTICAL_TAG_RIGHT;
+typedef void *VERTICAL_WALL_LEFT;
+typedef void *VERTICAL_WALL_MOUNTED;
+typedef void *VERTICAL_WALL_RIGHT;
+typedef void *W3C;
+typedef void *WARNING;
+typedef void *WD100;
+typedef void *X;
+typedef void *XML;
+typedef void *XML_DTD;
+typedef void *X_;
+typedef void *_PtFuncCompare;
+typedef void *_func_void_void_ptr;
+struct Recovered_Bulk { char _pad; /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11244c00(char *param_2); template<class... A> int FUN_11244c00(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 * __thiscall FUN_11244cf0(undefined4 param_2,int param_3); template<class... A> int FUN_11244cf0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11244d40(undefined4 param_2); template<class... A> int FUN_11244d40(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11244da0(undefined4 param_2,undefined4 param_3,undefined4 param_4); template<class... A> int FUN_11244da0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_11246520(char *param_2); template<class... A> int FUN_11246520(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall FUN_112466c0(uint param_2,uint param_3,byte *param_4); template<class... A> int FUN_112466c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112478e0(undefined4 param_2,int param_3); template<class... A> int FUN_112478e0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112487f0(undefined1 *param_2,int param_3); template<class... A> int FUN_112487f0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112488d0(int *param_2,void *param_3,void *param_4,uint *param_5); template<class... A> int FUN_112488d0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11248fc0(undefined4 param_2); template<class... A> int FUN_11248fc0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11248fe0(undefined4 param_2); template<class... A> int FUN_11248fe0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112490b0(undefined4 param_2); template<class... A> int FUN_112490b0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1124a300(char *param_2); template<class... A> int FUN_1124a300(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1124b740(int param_2,int param_3); template<class... A> int FUN_1124b740(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_1124c530(char *param_2,int param_3); template<class... A> int FUN_1124c530(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_1124c6b0(char *param_2,int param_3); template<class... A> int FUN_1124c6b0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_1124d650(int param_2,int param_3); template<class... A> int FUN_1124d650(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ size_t __thiscall FUN_1124d6c0(void *param_2,uint param_3); template<class... A> int FUN_1124d6c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1124e8d0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1124e8d0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1124f380(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1124f380(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_1124ff00(undefined4 param_2); template<class... A> int FUN_1124ff00(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_11250100(undefined4 param_2); template<class... A> int FUN_11250100(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112502c0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_112502c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11252f30(undefined4 param_2); template<class... A> int FUN_11252f30(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11254c20(undefined4 param_2,int param_3); template<class... A> int FUN_11254c20(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11255a10(int *param_2); template<class... A> int FUN_11255a10(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11255ab0(uint *param_2); template<class... A> int FUN_11255ab0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11255cd0(uint *param_2); template<class... A> int FUN_11255cd0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11256980(int param_2); template<class... A> int FUN_11256980(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11256c00(uint *param_2); template<class... A> int FUN_11256c00(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint * __thiscall FUN_11257390(uint param_2,byte *param_3,byte *param_4); template<class... A> int FUN_11257390(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_112575a0(int param_2); template<class... A> int FUN_112575a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11257940(uint param_2); template<class... A> int FUN_11257940(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_112579b0(uint param_2); template<class... A> int FUN_112579b0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11257bd0(int param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5,
+            undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
+            undefined4 param_10); template<class... A> int FUN_11257bd0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11257cb0(int param_2); template<class... A> int FUN_11257cb0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11257e40(int param_2); template<class... A> int FUN_11257e40(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11257fd0(uint param_2,char *param_3,char *param_4,char *param_5); template<class... A> int FUN_11257fd0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11258540(uint *param_2,undefined4 param_3); template<class... A> int FUN_11258540(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11258ac0(undefined4 param_2); template<class... A> int FUN_11258ac0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1125bef0(char *param_2); template<class... A> int FUN_1125bef0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1125c810(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1125c810(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall FUN_1125cc00(uint *param_2); template<class... A> int FUN_1125cc00(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_1125cc30(uint *param_2); template<class... A> int FUN_1125cc30(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_1125cd40(undefined4 param_2,uint param_3); template<class... A> int FUN_1125cd40(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1125d8c0(undefined1 param_2); template<class... A> int FUN_1125d8c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11260f90(undefined4 *param_2); template<class... A> int FUN_11260f90(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 * __thiscall FUN_11262350(ushort param_2); template<class... A> int FUN_11262350(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11262900(int param_2); template<class... A> int FUN_11262900(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ ushort __thiscall FUN_112629e0(int param_2); template<class... A> int FUN_112629e0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ short __thiscall FUN_11262b20(int param_2); template<class... A> int FUN_11262b20(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ ushort __thiscall FUN_11264210(int param_2); template<class... A> int FUN_11264210(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11264640(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4); template<class... A> int FUN_11264640(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 __thiscall FUN_11264860(char *param_2,char *param_3,uint param_4,undefined1 param_5); template<class... A> int FUN_11264860(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11264da0(undefined4 param_2); template<class... A> int FUN_11264da0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11265e80(undefined4 param_2); template<class... A> int FUN_11265e80(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112661b0(undefined4 *param_2); template<class... A> int FUN_112661b0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112663b0(undefined4 param_2,undefined4 param_3,undefined4 *param_4,
+            undefined4 param_5,undefined2 param_6,undefined2 param_7); template<class... A> int FUN_112663b0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112673f0(int param_2); template<class... A> int FUN_112673f0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool __thiscall FUN_112674a0(uint param_2); template<class... A> int FUN_112674a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11267500(undefined4 param_2,undefined4 param_3,undefined4 param_4,
+            undefined4 param_5,undefined4 param_6); template<class... A> int FUN_11267500(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11267610(int param_2); template<class... A> int FUN_11267610(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11268070(undefined4 param_2); template<class... A> int FUN_11268070(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112691a0(undefined4 *param_2); template<class... A> int FUN_112691a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112691c0(undefined4 *param_2); template<class... A> int FUN_112691c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_112696e0(int param_2,int *param_3,int *param_4,int param_5,int param_6,char param_7); template<class... A> int FUN_112696e0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1126bae0(undefined4 *param_2); template<class... A> int FUN_1126bae0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1126bf00(undefined4 param_2); template<class... A> int FUN_1126bf00(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1126bf10(undefined4 param_2); template<class... A> int FUN_1126bf10(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1126ce20(undefined4 *param_2); template<class... A> int FUN_1126ce20(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1126cf60(undefined4 param_2,undefined4 *param_3); template<class... A> int FUN_1126cf60(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1126d120(int *param_2); template<class... A> int FUN_1126d120(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11272170(int *param_2); template<class... A> int FUN_11272170(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11272420(undefined4 *param_2,undefined1 *param_3); template<class... A> int FUN_11272420(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall FUN_112725d0(uint param_2,undefined4 param_3,char param_4); template<class... A> int FUN_112725d0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11272ca0(undefined4 *param_2); template<class... A> int FUN_11272ca0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11273c30(undefined4 *param_2); template<class... A> int FUN_11273c30(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_11273d90(short *param_2,short param_3); template<class... A> int FUN_11273d90(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_11273dd0(longlong *param_2,undefined4 param_3,undefined4 param_4); template<class... A> int FUN_11273dd0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11273f50(undefined4 *param_2); template<class... A> int FUN_11273f50(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11274090(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_11274090(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11274360(int param_2); template<class... A> int FUN_11274360(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112747c0(char param_2); template<class... A> int FUN_112747c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112747f0(undefined8 param_2); template<class... A> int FUN_112747f0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112752f0(undefined4 param_2); template<class... A> int FUN_112752f0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11276250(int param_2,int param_3); template<class... A> int FUN_11276250(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11276510(undefined4 param_2); template<class... A> int FUN_11276510(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11276740(int param_2,int param_3,byte *param_4); template<class... A> int FUN_11276740(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11276840(byte *param_2,char *param_3); template<class... A> int FUN_11276840(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11276ea0(char *param_2,undefined4 param_3); template<class... A> int FUN_11276ea0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112771b0(char *param_2); template<class... A> int FUN_112771b0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 __thiscall FUN_11278550(int param_2,int param_3); template<class... A> int FUN_11278550(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11278610(undefined4 param_2); template<class... A> int FUN_11278610(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11279160(undefined4 *param_2); template<class... A> int FUN_11279160(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall FUN_11279680(uint param_2); template<class... A> int FUN_11279680(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11279e40(undefined4 *param_2); template<class... A> int FUN_11279e40(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_11279f50(undefined4 *param_2,int param_3); template<class... A> int FUN_11279f50(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_1127a350(undefined1 *param_2,undefined4 param_3); template<class... A> int FUN_1127a350(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_1127a420(undefined4 param_2); template<class... A> int FUN_1127a420(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_1127a6a0(byte *param_2); template<class... A> int FUN_1127a6a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_1127a710(int param_2); template<class... A> int FUN_1127a710(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_1127ae00(void *param_2,int param_3); template<class... A> int FUN_1127ae00(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool __thiscall FUN_1127ae80(int param_2); template<class... A> int FUN_1127ae80(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_1127aff0(undefined4 *param_2,int param_3); template<class... A> int FUN_1127aff0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1127b5f0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1127b5f0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1127b750(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1127b750(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1127b880(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1127b880(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool __thiscall FUN_1127b9b0(int *param_2); template<class... A> int FUN_1127b9b0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ char * __thiscall FUN_1127bf40(uint param_2); template<class... A> int FUN_1127bf40(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_1127cc50(uint param_2,undefined4 param_3); template<class... A> int FUN_1127cc50(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1127d010(undefined4 param_2); template<class... A> int FUN_1127d010(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1127d090(undefined4 param_2); template<class... A> int FUN_1127d090(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1127d0e0(int param_2); template<class... A> int FUN_1127d0e0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1127d1f0(undefined4 *param_2); template<class... A> int FUN_1127d1f0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1127e6a0(int *param_2); template<class... A> int FUN_1127e6a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112802c0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_112802c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11281990(undefined4 *param_2); template<class... A> int FUN_11281990(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_112819c0(int param_2); template<class... A> int FUN_112819c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11281b40(uint *param_2); template<class... A> int FUN_11281b40(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11282310(uint param_2); template<class... A> int FUN_11282310(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_112831e0(ushort param_2); template<class... A> int FUN_112831e0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11283300(undefined4 param_2,undefined4 param_3,undefined4 *param_4,
+            undefined1 *param_5); template<class... A> int FUN_11283300(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11283770(byte *param_2); template<class... A> int FUN_11283770(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11283920(byte *param_2); template<class... A> int FUN_11283920(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11283cd0(short param_2); template<class... A> int FUN_11283cd0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11283d30(ushort param_2,int param_3,byte *param_4,int param_5,int param_6,
+            int param_7,int param_8,int param_9); template<class... A> int FUN_11283d30(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11283fb0(char *param_2); template<class... A> int FUN_11283fb0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined ** __thiscall FUN_11284430(undefined1 *param_2); template<class... A> int FUN_11284430(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11285a50(int param_2,int param_3); template<class... A> int FUN_11285a50(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11286f20(int param_2); template<class... A> int FUN_11286f20(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11286fa0(undefined4 param_2,undefined4 param_3,undefined4 param_4); template<class... A> int FUN_11286fa0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11287730(undefined4 param_2); template<class... A> int FUN_11287730(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11288800(int param_2); template<class... A> int FUN_11288800(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11289130(int param_2,int param_3); template<class... A> int FUN_11289130(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11289160(int param_2,int param_3); template<class... A> int FUN_11289160(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11289470(int param_2); template<class... A> int FUN_11289470(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_11289740(int param_2); template<class... A> int FUN_11289740(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11289930(int param_2); template<class... A> int FUN_11289930(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_11289f80(char *param_2); template<class... A> int FUN_11289f80(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_1128a2a0(int param_2); template<class... A> int FUN_1128a2a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 * __thiscall FUN_1128a460(undefined8 *param_2); template<class... A> int FUN_1128a460(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined8 * __thiscall FUN_1128a480(undefined4 param_2,undefined8 *param_3); template<class... A> int FUN_1128a480(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ char * __thiscall FUN_1128a5c0(undefined4 *param_2); template<class... A> int FUN_1128a5c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1128a630(undefined8 *param_2); template<class... A> int FUN_1128a630(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1128a700(undefined8 *param_2); template<class... A> int FUN_1128a700(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1128a720(undefined4 *param_2); template<class... A> int FUN_1128a720(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ char * __thiscall FUN_1128ad00(char *param_2); template<class... A> int FUN_1128ad00(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1128b560(undefined8 *param_2); template<class... A> int FUN_1128b560(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1128b580(undefined4 *param_2); template<class... A> int FUN_1128b580(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_1128b5e0(int param_2,int param_3); template<class... A> int FUN_1128b5e0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1128bd90(int param_2,int param_3); template<class... A> int FUN_1128bd90(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1128bfd0(undefined4 *param_2,int param_3); template<class... A> int FUN_1128bfd0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall FUN_1128cc50(int param_2,uint *param_3); template<class... A> int FUN_1128cc50(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1128cd30(char param_2); template<class... A> int FUN_1128cd30(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1128d570(undefined4 *param_2,int param_3); template<class... A> int FUN_1128d570(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1128e0f0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1128e0f0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1128e4d0(int param_2,undefined4 param_3); template<class... A> int FUN_1128e4d0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_1128ea80(undefined4 param_2,int param_3,int param_4,int param_5,int *param_6,
+            uint param_7,char param_8); template<class... A> int FUN_1128ea80(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_1128f500(undefined4 param_2,int param_3); template<class... A> int FUN_1128f500(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 __thiscall FUN_1128f6f0(byte *param_2); template<class... A> int FUN_1128f6f0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1128fdc0(char param_2); template<class... A> int FUN_1128fdc0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11291e30(uint param_2); template<class... A> int FUN_11291e30(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_11291e80(undefined4 param_2); template<class... A> int FUN_11291e80(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11296670(int param_2); template<class... A> int FUN_11296670(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112966c0(int param_2); template<class... A> int FUN_112966c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall FUN_11297c40(byte param_2); template<class... A> int FUN_11297c40(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_11297ce0(byte param_2); template<class... A> int FUN_11297ce0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11297e80(int param_2); template<class... A> int FUN_11297e80(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11297fc0(int param_2); template<class... A> int FUN_11297fc0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11298560(int *param_2); template<class... A> int FUN_11298560(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall FUN_11298650(undefined4 param_2,undefined4 param_3,undefined4 param_4); template<class... A> int FUN_11298650(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11298b50(int param_2); template<class... A> int FUN_11298b50(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11298bc0(undefined4 param_2,uint param_3); template<class... A> int FUN_11298bc0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall FUN_11298d10(int param_2); template<class... A> int FUN_11298d10(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11299590(int param_2); template<class... A> int FUN_11299590(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1129a750(int *param_2); template<class... A> int FUN_1129a750(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_1129b750(uint param_2,uint param_3); template<class... A> int FUN_1129b750(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1129bd90(undefined4 *param_2); template<class... A> int FUN_1129bd90(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1129c3f0(undefined4 *param_2); template<class... A> int FUN_1129c3f0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1129ce50(undefined4 *param_2); template<class... A> int FUN_1129ce50(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1129cea0(undefined4 *param_2); template<class... A> int FUN_1129cea0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall FUN_112c3800(int *param_2); template<class... A> int FUN_112c3800(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112c3980(undefined4 *param_2); template<class... A> int FUN_112c3980(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112c3ad0(uint param_2,byte *param_3); template<class... A> int FUN_112c3ad0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112c3dd0(uint param_2,byte *param_3); template<class... A> int FUN_112c3dd0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112c4190(undefined4 *param_2); template<class... A> int FUN_112c4190(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112c41e0(undefined4 *param_2); template<class... A> int FUN_112c41e0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112c4230(undefined4 *param_2); template<class... A> int FUN_112c4230(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112c4280(undefined4 *param_2); template<class... A> int FUN_112c4280(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112e90a0(int param_2); template<class... A> int FUN_112e90a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112e90f0(int param_2); template<class... A> int FUN_112e90f0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112e9140(int param_2); template<class... A> int FUN_112e9140(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112e9190(int param_2); template<class... A> int FUN_112e9190(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112eada0(int param_2); template<class... A> int FUN_112eada0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall FUN_112eba60(uint param_2,undefined4 param_3,void *param_4); template<class... A> int FUN_112eba60(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ebcd0(uint param_2,undefined4 param_3); template<class... A> int FUN_112ebcd0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined2 * __thiscall FUN_112ec640(short *param_2); template<class... A> int FUN_112ec640(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112ec8a0(undefined4 param_2,undefined4 param_3,void *param_4,int param_5,
+            void *param_6,int param_7); template<class... A> int FUN_112ec8a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112eccd0(undefined4 param_2); template<class... A> int FUN_112eccd0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112ece00(undefined4 param_2,undefined4 param_3,undefined4 *param_4); template<class... A> int FUN_112ece00(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112ecea0(int param_2); template<class... A> int FUN_112ecea0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void * __thiscall FUN_112ed0e0(undefined4 param_2); template<class... A> int FUN_112ed0e0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_112ed160(uint param_2); template<class... A> int FUN_112ed160(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall FUN_112ee030(uint param_2); template<class... A> int FUN_112ee030(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall FUN_112ee0c0(uint param_2); template<class... A> int FUN_112ee0c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ee600(undefined4 *param_2); template<class... A> int FUN_112ee600(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ee6c0(int param_2); template<class... A> int FUN_112ee6c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ee6e0(int param_2); template<class... A> int FUN_112ee6e0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ee700(int param_2); template<class... A> int FUN_112ee700(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ee720(int param_2); template<class... A> int FUN_112ee720(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ee740(int *param_2); template<class... A> int FUN_112ee740(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ee7a0(int *param_2); template<class... A> int FUN_112ee7a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ee800(int *param_2); template<class... A> int FUN_112ee800(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ee860(int *param_2); template<class... A> int FUN_112ee860(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ee8c0(int *param_2); template<class... A> int FUN_112ee8c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112eec20(undefined4 *param_2); template<class... A> int FUN_112eec20(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_112ef5a0(int param_2); template<class... A> int FUN_112ef5a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_112f12a0(int param_2,int param_3); template<class... A> int FUN_112f12a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112f1cf0(uint param_2); template<class... A> int FUN_112f1cf0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall FUN_112f2a80(uint param_2,undefined4 param_3,undefined2 param_4); template<class... A> int FUN_112f2a80(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112f2d50(undefined4 *param_2); template<class... A> int FUN_112f2d50(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_112f2ec0(int param_2); template<class... A> int FUN_112f2ec0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112f2fb0(int param_2); template<class... A> int FUN_112f2fb0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall FUN_112f3220(uint param_2,undefined2 param_3); template<class... A> int FUN_112f3220(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112f3ac0(undefined4 *param_2,undefined2 param_3); template<class... A> int FUN_112f3ac0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 __thiscall FUN_112f4400(undefined4 param_2,undefined4 param_3,undefined4 param_4); template<class... A> int FUN_112f4400(A...); };
+using namespace std;
 extern int FUN_1005ed27(...);
+extern int FUN_1126c470(...);
+extern int FUN_11272720(...);
 extern int FUN_1127a470(...);
 extern int FUN_1129fee0(...);
 extern int FUN_112a4ce0(...);
@@ -205,8 +395,10 @@ extern __declspec(dllimport) int isspace(...);
 extern __declspec(dllimport) int memchr(...);
 extern __declspec(dllimport) int memmove(...);
 extern int modifyRecord(...);
+extern int op_inc(...);
 extern int operator_new(...);
 extern int prefix(...);
+extern __declspec(dllimport) int qsort(...);
 extern int request(...);
 extern int s(...);
 extern __declspec(dllimport) int signal(...);
@@ -274,6 +466,7 @@ extern int thunk_FUN_11268590(...);
 extern int thunk_FUN_11269bc0(...);
 extern int thunk_FUN_1126a130(...);
 extern int thunk_FUN_1126b550(...);
+extern int thunk_FUN_1126e8d0(...);
 extern int thunk_FUN_11270300(...);
 extern int thunk_FUN_112727c0(...);
 extern int thunk_FUN_11272ad0(...);
@@ -445,6 +638,7 @@ extern int thunk_FUN_113b9ec0(...);
 extern int thunk_FUN_113b9f60(...);
 extern int thunk_FUN_113c3010(...);
 extern int thunk_FUN_113c4010(...);
+extern int thunk_FUN_113c46e0(...);
 extern int thunk_FUN_113c5de0(...);
 extern int thunk_FUN_113c7de0(...);
 extern int thunk_FUN_113c7f60(...);
@@ -503,6 +697,7 @@ extern int thunk_FUN_11460420(...);
 extern int thunk_FUN_11460550(...);
 extern int thunk_FUN_1148a50e(...);
 extern int thunk_FUN_1148ac28(...);
+extern int thunk_FUN_1148ae00(...);
 extern int thunk_FUN_1148b586(...);
 extern int thunk_FUN_1148b596(...);
 extern int thunk_FUN_1148bc65(...);
@@ -510,6 +705,7 @@ extern int DAT_1186d2ee;
 extern int DAT_11877b54;
 extern int DAT_1187bb1c;
 extern int DAT_1187d7f4;
+extern int DAT_11880fb0;
 extern int DAT_11881ac8;
 extern int DAT_11882ff0;
 extern int DAT_11883704;
@@ -522,6 +718,7 @@ extern int DAT_1188db18;
 extern int DAT_1188e99c;
 extern int DAT_1189dabc;
 extern int DAT_1189ea64;
+extern int DAT_118a1550;
 extern int DAT_118bd5c0;
 extern int DAT_11921cf0;
 extern int DAT_11993584;
@@ -544,6 +741,7 @@ extern int DAT_119e4c18;
 extern int DAT_119e4cd0;
 extern int DAT_119e5540;
 extern int DAT_119e5550;
+extern int DAT_119e5ad8;
 extern int DAT_119e65d0;
 extern int DAT_119e8d20;
 extern int DAT_119e987c;
@@ -631,6 +829,7 @@ extern int DAT_122f706c;
 extern int DAT_122fb090;
 extern int DAT_122fb0a0;
 extern int UNK_10040b3d;
+extern int UNK_10064885;
 extern int UNK_112bc9d0;
 extern int UNK_1133d4f0;
 extern int UNK_1133d5e0;
@@ -650,6 +849,7 @@ extern int UNK_119e9e50;
 extern int UNK_119fb294;
 extern int UNK_119fba58;
 extern int UNK_119fc064;
+extern int _UNK_118a1554;
 extern int _UNK_119d7b24;
 extern int _UNK_119d7b28;
 extern int _UNK_119d7b2c;
@@ -811,6 +1011,7 @@ extern undefined1 LAB_112585bd[];
 extern undefined1 LAB_11258624[];
 extern undefined1 LAB_112586bb[];
 extern undefined1 LAB_112587bd[];
+extern undefined1 LAB_1125aea2[];
 extern undefined1 LAB_1125b32c[];
 extern undefined1 LAB_1125bb6a[];
 extern undefined1 LAB_1125bb78[];
@@ -878,8 +1079,12 @@ extern undefined1 LAB_1128a12a[];
 extern undefined1 LAB_1128a15f[];
 extern undefined1 LAB_1128a186[];
 extern undefined1 LAB_1128a38a[];
+extern undefined1 LAB_1128a841[];
+extern undefined1 LAB_1128a930[];
 extern undefined1 LAB_1128ccc3[];
 extern undefined1 LAB_1128ccc8[];
+extern undefined1 LAB_1128ead0[];
+extern undefined1 LAB_1128ebe4[];
 extern undefined1 LAB_1128f756[];
 extern undefined1 LAB_1128f75b[];
 extern undefined1 LAB_1128ffb3[];
@@ -904,6 +1109,7 @@ extern undefined1 LAB_112995cd[];
 extern undefined1 LAB_1129bbc9[];
 extern undefined1 LAB_1129ec74[];
 extern undefined1 LAB_1129ec79[];
+extern undefined1 LAB_112a06c5[];
 extern undefined1 LAB_112a092d[];
 extern undefined1 LAB_112a0dcd[];
 extern undefined1 LAB_112a0df6[];
@@ -952,6 +1158,7 @@ extern undefined1 LAB_112c1134[];
 extern undefined1 LAB_112c3b4b[];
 extern undefined1 LAB_112c3e61[];
 extern undefined1 LAB_112d1970[];
+extern undefined1 LAB_112df00b[];
 extern undefined1 LAB_1138ebb2[];
 extern undefined1 LAB_1139041d[];
 extern undefined1 LAB_11390547[];
@@ -1014,192 +1221,6 @@ extern int *stack0xfffff7e4;
 extern int *stack0xffffff78;
 extern int *stack0xfffffff4;
 extern void *ExceptionList;
-namespace std { template<class... A> static int _Throw_C_error(A...); template<class... A> static int _Xbad_function_call(A...); template<class... A> static int _Xlength_error(A...);}
-struct s { char _pad; s(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); static int urn; };
-typedef void *BLAHBLAHBLAH;
-typedef void *CDATA;
-typedef void *CERT_INVALID;
-typedef void *CONTENT;
-typedef void *DELETE;
-typedef void *DOCTYPE;
-typedef void *DTD;
-typedef void *E9;
-typedef void *EN;
-typedef void *ERROR;
-typedef void *FACEDOWN;
-typedef void *GET;
-typedef void *HEAD;
-typedef void *HORIZONTAL;
-typedef void *HORIZONTAL_LEFT;
-typedef void *HORIZONTAL_RIGHT;
-typedef void *HORIZONTAL_WALL_MOUNTED;
-typedef void *HTML;
-typedef void *HTTP;
-typedef void *ID;
-typedef void *INVALID;
-typedef void *INVERTED;
-typedef void *LOCK;
-typedef void *MISSING;
-typedef void *NEVER;
-typedef void *NOTIFY;
-typedef void *OPTIONS;
-typedef void *PATCH;
-typedef void *POST;
-typedef void *PUBLIC;
-typedef void *PUT;
-typedef void *REINDEXEDESCAPEACHECKEYBEFOREIGNOREGEXPLAINSTEADDATABASELECTABLEFTHENDEFERRABLELSEXCLUDELETEMPORARYISNULLSAVEPOINTERSECTIESNOTNULLIKEXCEPTRANSACTIONATURALTERAISEXCLUSIVEXISTSCONSTRAINTOFFSETRIGGERANGENERATEDETACHAVINGLOBEGINNEREFERENCESUNIQUERYWITHOUTERELEASEATTACHBETWEENOTHINGROUPSCASCADEFAULTCASECOLLATECREATECURRENT_DATEIMMEDIATEJOINSERTMATCHPLANALYZEPRAGMABORTUPDATEVALUESVIRTUALWAYSWHENWHERECURSIVEAFTERENAMEANDEFERREDISTINCTAUTOINCREMENTCASTCOLUMNCOMMITCONFLICTCROSSCURRENT_TIMESTAMPARTITIONDROPRECEDINGFAILASTFILTEREPLACEFIRSTFOLLOWINGFROMFULLIMITIFORDERESTRICTOTHERSOVERIGHTROLLBACKROWSUNBOUNDEDUNIONUSINGVACUUMVIEWINDOWBYINITIALLYPRIMARY;
-typedef void *RTF;
-typedef void *SEARCH;
-typedef void *SN;
-typedef void *SONOSMULTIPARTBOUNDARY;
-typedef void *SQLITE_;
-typedef void *SSL;
-typedef void *TRACE;
-typedef void *TYPE;
-typedef void *UNDEFINED;
-typedef void *UNKNOWN;
-typedef void *UNLOCK;
-typedef void *UNSUBSCRIBE;
-typedef void *UNSUPPORTED;
-typedef void *VERTICAL_ABOVE;
-typedef void *VERTICAL_BELOW;
-typedef void *VERTICAL_TAG_LEFT;
-typedef void *VERTICAL_TAG_RIGHT;
-typedef void *VERTICAL_WALL_LEFT;
-typedef void *VERTICAL_WALL_MOUNTED;
-typedef void *VERTICAL_WALL_RIGHT;
-typedef void *W3C;
-typedef void *WARNING;
-typedef void *WD100;
-typedef void *X;
-typedef void *XML;
-typedef void *XML_DTD;
-typedef void *X_;
-typedef void *_Dst;
-typedef void *_File;
-typedef void *_FileHandle;
-typedef void *_Memory;
-typedef void *_func_void_void_ptr;
-struct Adding { char _pad; Adding(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Anacapa { char _pad; Anacapa(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Anonymous { char _pad; Anonymous(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct AppLink { char _pad; AppLink(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Cache { char _pad; Cache(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Category { char _pad; Category(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Changed { char _pad; Changed(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Content { char _pad; Content(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Control { char _pad; Control(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Corr { char _pad; Corr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Could { char _pad; Could(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct CurrentURIMetaData { char _pad; CurrentURIMetaData(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct DVar1 { char _pad; DVar1(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct DeviceLink { char _pad; DeviceLink(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Diag { char _pad; Diag(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct DiagLevel { char _pad; DiagLevel(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct DiagMsg { char _pad; DiagMsg(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Diagnostics { char _pad; Diagnostics(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct EnqueuedURIMetaData { char _pad; EnqueuedURIMetaData(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct EnqueuedURIsMetaData { char _pad; EnqueuedURIsMetaData(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Enter { char _pad; Enter(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Error { char _pad; Error(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct ErrorType { char _pad; ErrorType(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Expat { char _pad; Expat(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct File { char _pad; File(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Function { char _pad; Function(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct GetCurrentThreadId { char _pad; GetCurrentThreadId(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Ghidra { char _pad; Ghidra(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Globals { char _pad; Globals(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Id { char _pad; Id(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Ignoring { char _pad; Ignoring(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Initializer { char _pad; Initializer(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Level { char _pad; Level(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct List { char _pad; List(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct MService { char _pad; MService(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Message { char _pad; Message(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct MetricsConfig { char _pad; MetricsConfig(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Module { char _pad; Module(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct NetInit { char _pad; NetInit(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct New { char _pad; New(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct OADevID { char _pad; OADevID(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Options { char _pad; Options(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Ordinal_111 { char _pad; Ordinal_111(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Ordinal_15 { char _pad; Ordinal_15(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Ordinal_16 { char _pad; Ordinal_16(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Ordinal_17 { char _pad; Ordinal_17(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Ordinal_18 { char _pad; Ordinal_18(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Ordinal_20 { char _pad; Ordinal_20(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Ordinal_3 { char _pad; Ordinal_3(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Ordinal_55 { char _pad; Ordinal_55(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Ordinal_7 { char _pad; Ordinal_7(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Ordinal_8 { char _pad; Ordinal_8(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Ordinal_9 { char _pad; Ordinal_9(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Params { char _pad; Params(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Please { char _pad; Please(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Preinstall { char _pad; Preinstall(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Preload { char _pad; Preload(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct RadioList { char _pad; RadioList(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Received { char _pad; Received(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Recovered { char _pad; Recovered(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Removing { char _pad; Removing(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct RequestRead { char _pad; RequestRead(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Scheduling { char _pad; Scheduling(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct ServerNetInit { char _pad; ServerNetInit(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Set { char _pad; Set(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct SetEvent { char _pad; SetEvent(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Sleep { char _pad; Sleep(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Software { char _pad; Software(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Sonos { char _pad; Sonos(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct SoundLab { char _pad; SoundLab(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Starting { char _pad; Starting(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Stateless { char _pad; Stateless(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Submit { char _pad; Submit(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Subroutine { char _pad; Subroutine(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Success { char _pad; Success(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Switch { char _pad; Switch(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct TServer { char _pad; TServer(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct TerminateThread { char _pad; TerminateThread(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Terminating { char _pad; Terminating(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct ThrowInfo { char _pad; ThrowInfo(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Too { char _pad; Too(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Transitional { char _pad; Transitional(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Treating { char _pad; Treating(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Type { char _pad; Type(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UNK_10040b3d { char _pad; UNK_10040b3d(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UNK_112bc9d0 { char _pad; UNK_112bc9d0(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UNK_1133d4f0 { char _pad; UNK_1133d4f0(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UNK_1133d5e0 { char _pad; UNK_1133d5e0(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UNK_113599e0 { char _pad; UNK_113599e0(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UNK_119df348 { char _pad; UNK_119df348(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UNK_119e086c { char _pad; UNK_119e086c(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UNK_119e08b8 { char _pad; UNK_119e08b8(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UNK_119e0a3c { char _pad; UNK_119e0a3c(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UNK_119e13fc { char _pad; UNK_119e13fc(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UNK_119e6594 { char _pad; UNK_119e6594(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UNK_119e67d0 { char _pad; UNK_119e67d0(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UNK_119e69a4 { char _pad; UNK_119e69a4(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UNK_119e69a8 { char _pad; UNK_119e69a8(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UNK_119e69b4 { char _pad; UNK_119e69b4(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UNK_119e9938 { char _pad; UNK_119e9938(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UNK_119e9e50 { char _pad; UNK_119e9e50(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UNK_119fb294 { char _pad; UNK_119fb294(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UNK_119fba58 { char _pad; UNK_119fba58(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UNK_119fc064 { char _pad; UNK_119fc064(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UpdateItem { char _pad; UpdateItem(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Uploader { char _pad; Uploader(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct UserId { char _pad; UserId(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct WSAIoctl { char _pad; WSAIoctl(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct WSASocketA { char _pad; WSASocketA(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct XML_GetBuffer { char _pad; XML_GetBuffer(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct ZonePlayer { char _pad; ZonePlayer(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); template<class T> operator T*(); template<class T> operator T(); };
-struct Recovered_Bulk { char _pad; /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11244c00(char *param_2); template<class... A> int FUN_11244c00(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 * __thiscall FUN_11244cf0(undefined4 param_2,int param_3); template<class... A> int FUN_11244cf0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11244d40(undefined4 param_2); template<class... A> int FUN_11244d40(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11244da0(undefined4 param_2,undefined4 param_3,undefined4 param_4); template<class... A> int FUN_11244da0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_11246520(char *param_2); template<class... A> int FUN_11246520(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall FUN_112466c0(uint param_2,uint param_3,byte *param_4); template<class... A> int FUN_112466c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112478e0(undefined4 param_2,int param_3); template<class... A> int FUN_112478e0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112487f0(undefined1 *param_2,int param_3); template<class... A> int FUN_112487f0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112488d0(int *param_2,void *param_3,void *param_4,uint *param_5); template<class... A> int FUN_112488d0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11248fc0(undefined4 param_2); template<class... A> int FUN_11248fc0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11248fe0(undefined4 param_2); template<class... A> int FUN_11248fe0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112490b0(undefined4 param_2); template<class... A> int FUN_112490b0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1124a300(char *param_2); template<class... A> int FUN_1124a300(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1124b740(int param_2,int param_3); template<class... A> int FUN_1124b740(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_1124c530(char *param_2,int param_3); template<class... A> int FUN_1124c530(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_1124c6b0(char *param_2,int param_3); template<class... A> int FUN_1124c6b0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_1124d650(int param_2,int param_3); template<class... A> int FUN_1124d650(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ size_t __thiscall FUN_1124d6c0(void *param_2,uint param_3); template<class... A> int FUN_1124d6c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1124e8d0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1124e8d0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1124f380(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1124f380(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_1124ff00(undefined4 param_2); template<class... A> int FUN_1124ff00(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_11250100(undefined4 param_2); template<class... A> int FUN_11250100(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112502c0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_112502c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11252f30(undefined4 param_2); template<class... A> int FUN_11252f30(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11254c20(undefined4 param_2,int param_3); template<class... A> int FUN_11254c20(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11255a10(int *param_2); template<class... A> int FUN_11255a10(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11255ab0(uint *param_2); template<class... A> int FUN_11255ab0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11255cd0(uint *param_2); template<class... A> int FUN_11255cd0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11256980(int param_2); template<class... A> int FUN_11256980(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11256c00(uint *param_2); template<class... A> int FUN_11256c00(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint * __thiscall FUN_11257390(uint param_2,byte *param_3,byte *param_4); template<class... A> int FUN_11257390(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_112575a0(int param_2); template<class... A> int FUN_112575a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11257940(uint param_2); template<class... A> int FUN_11257940(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_112579b0(uint param_2); template<class... A> int FUN_112579b0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11257bd0(int param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5,
-            undefined4 param_6,undefined4 param_7,undefined4 param_8,undefined4 param_9,
-            undefined4 param_10); template<class... A> int FUN_11257bd0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11257cb0(int param_2); template<class... A> int FUN_11257cb0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11257e40(int param_2); template<class... A> int FUN_11257e40(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11257fd0(uint param_2,char *param_3,char *param_4,char *param_5); template<class... A> int FUN_11257fd0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11258540(uint *param_2,undefined4 param_3); template<class... A> int FUN_11258540(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11258ac0(undefined4 param_2); template<class... A> int FUN_11258ac0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1125bef0(char *param_2); template<class... A> int FUN_1125bef0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1125c810(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1125c810(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall FUN_1125cc00(uint *param_2); template<class... A> int FUN_1125cc00(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_1125cc30(uint *param_2); template<class... A> int FUN_1125cc30(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_1125cd40(undefined4 param_2,uint param_3); template<class... A> int FUN_1125cd40(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1125d8c0(undefined1 param_2); template<class... A> int FUN_1125d8c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11260f90(undefined4 *param_2); template<class... A> int FUN_11260f90(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 * __thiscall FUN_11262350(ushort param_2); template<class... A> int FUN_11262350(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11262900(int param_2); template<class... A> int FUN_11262900(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ ushort __thiscall FUN_112629e0(int param_2); template<class... A> int FUN_112629e0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ short __thiscall FUN_11262b20(int param_2); template<class... A> int FUN_11262b20(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ ushort __thiscall FUN_11264210(int param_2); template<class... A> int FUN_11264210(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11264640(undefined4 *param_2,undefined4 *param_3,undefined4 *param_4); template<class... A> int FUN_11264640(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 __thiscall FUN_11264860(char *param_2,char *param_3,uint param_4,undefined1 param_5); template<class... A> int FUN_11264860(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11264da0(undefined4 param_2); template<class... A> int FUN_11264da0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11265e80(undefined4 param_2); template<class... A> int FUN_11265e80(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112661b0(undefined4 *param_2); template<class... A> int FUN_112661b0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112663b0(undefined4 param_2,undefined4 param_3,undefined4 *param_4,
-            undefined4 param_5,undefined2 param_6,undefined2 param_7); template<class... A> int FUN_112663b0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112673f0(int param_2); template<class... A> int FUN_112673f0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool __thiscall FUN_112674a0(uint param_2); template<class... A> int FUN_112674a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11267500(undefined4 param_2,undefined4 param_3,undefined4 param_4,
-            undefined4 param_5,undefined4 param_6); template<class... A> int FUN_11267500(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11267610(int param_2); template<class... A> int FUN_11267610(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11268070(undefined4 param_2); template<class... A> int FUN_11268070(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112691a0(undefined4 *param_2); template<class... A> int FUN_112691a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112691c0(undefined4 *param_2); template<class... A> int FUN_112691c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_112696e0(int param_2,int *param_3,int *param_4,int param_5,int param_6,char param_7); template<class... A> int FUN_112696e0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1126bae0(undefined4 *param_2); template<class... A> int FUN_1126bae0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1126bf00(undefined4 param_2); template<class... A> int FUN_1126bf00(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1126bf10(undefined4 param_2); template<class... A> int FUN_1126bf10(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1126ce20(undefined4 *param_2); template<class... A> int FUN_1126ce20(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1126cf60(undefined4 param_2,undefined4 *param_3); template<class... A> int FUN_1126cf60(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1126d120(int *param_2); template<class... A> int FUN_1126d120(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11272170(int *param_2); template<class... A> int FUN_11272170(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11272420(undefined4 *param_2,undefined1 *param_3); template<class... A> int FUN_11272420(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall FUN_112725d0(uint param_2,undefined4 param_3,char param_4); template<class... A> int FUN_112725d0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11272ca0(undefined4 *param_2); template<class... A> int FUN_11272ca0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11273c30(undefined4 *param_2); template<class... A> int FUN_11273c30(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_11273d90(short *param_2,short param_3); template<class... A> int FUN_11273d90(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_11273dd0(longlong *param_2,undefined4 param_3,undefined4 param_4); template<class... A> int FUN_11273dd0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11273f50(undefined4 *param_2); template<class... A> int FUN_11273f50(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11274090(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_11274090(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11274360(int param_2); template<class... A> int FUN_11274360(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112747c0(char param_2); template<class... A> int FUN_112747c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112747f0(undefined8 param_2); template<class... A> int FUN_112747f0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112752f0(undefined4 param_2); template<class... A> int FUN_112752f0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11276250(int param_2,int param_3); template<class... A> int FUN_11276250(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11276510(undefined4 param_2); template<class... A> int FUN_11276510(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11276740(int param_2,int param_3,byte *param_4); template<class... A> int FUN_11276740(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11276840(byte *param_2,char *param_3); template<class... A> int FUN_11276840(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11276ea0(char *param_2,undefined4 param_3); template<class... A> int FUN_11276ea0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112771b0(char *param_2); template<class... A> int FUN_112771b0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 __thiscall FUN_11278550(int param_2,int param_3); template<class... A> int FUN_11278550(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11278610(undefined4 param_2); template<class... A> int FUN_11278610(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11279160(undefined4 *param_2); template<class... A> int FUN_11279160(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall FUN_11279680(uint param_2); template<class... A> int FUN_11279680(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11279e40(undefined4 *param_2); template<class... A> int FUN_11279e40(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_11279f50(undefined4 *param_2,int param_3); template<class... A> int FUN_11279f50(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_1127a350(undefined1 *param_2,undefined4 param_3); template<class... A> int FUN_1127a350(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_1127a420(undefined4 param_2); template<class... A> int FUN_1127a420(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_1127a6a0(byte *param_2); template<class... A> int FUN_1127a6a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_1127a710(int param_2); template<class... A> int FUN_1127a710(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_1127ae00(void *param_2,int param_3); template<class... A> int FUN_1127ae00(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool __thiscall FUN_1127ae80(int param_2); template<class... A> int FUN_1127ae80(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_1127aff0(undefined4 *param_2,int param_3); template<class... A> int FUN_1127aff0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1127b5f0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1127b5f0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1127b750(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1127b750(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1127b880(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1127b880(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool __thiscall FUN_1127b9b0(int *param_2); template<class... A> int FUN_1127b9b0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ char * __thiscall FUN_1127bf40(uint param_2); template<class... A> int FUN_1127bf40(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_1127cc50(uint param_2,undefined4 param_3); template<class... A> int FUN_1127cc50(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1127d010(undefined4 param_2); template<class... A> int FUN_1127d010(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1127d090(undefined4 param_2); template<class... A> int FUN_1127d090(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1127d0e0(int param_2); template<class... A> int FUN_1127d0e0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1127d1f0(undefined4 *param_2); template<class... A> int FUN_1127d1f0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1127e6a0(int *param_2); template<class... A> int FUN_1127e6a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112802c0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_112802c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11281990(undefined4 *param_2); template<class... A> int FUN_11281990(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_112819c0(int param_2); template<class... A> int FUN_112819c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11281b40(uint *param_2); template<class... A> int FUN_11281b40(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11282310(uint param_2); template<class... A> int FUN_11282310(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_112831e0(ushort param_2); template<class... A> int FUN_112831e0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11283300(undefined4 param_2,undefined4 param_3,undefined4 *param_4,
-            undefined1 *param_5); template<class... A> int FUN_11283300(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11283770(byte *param_2); template<class... A> int FUN_11283770(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11283920(byte *param_2); template<class... A> int FUN_11283920(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11283cd0(short param_2); template<class... A> int FUN_11283cd0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11283d30(ushort param_2,int param_3,byte *param_4,int param_5,int param_6,
-            int param_7,int param_8,int param_9); template<class... A> int FUN_11283d30(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11283fb0(char *param_2); template<class... A> int FUN_11283fb0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined ** __thiscall FUN_11284430(undefined1 *param_2); template<class... A> int FUN_11284430(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_11285a50(int param_2,int param_3); template<class... A> int FUN_11285a50(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11286f20(int param_2); template<class... A> int FUN_11286f20(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11286fa0(undefined4 param_2,undefined4 param_3,undefined4 param_4); template<class... A> int FUN_11286fa0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11287730(undefined4 param_2); template<class... A> int FUN_11287730(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11288800(int param_2); template<class... A> int FUN_11288800(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11289130(int param_2,int param_3); template<class... A> int FUN_11289130(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11289160(int param_2,int param_3); template<class... A> int FUN_11289160(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11289470(int param_2); template<class... A> int FUN_11289470(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_11289740(int param_2); template<class... A> int FUN_11289740(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11289930(int param_2); template<class... A> int FUN_11289930(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_11289f80(char *param_2); template<class... A> int FUN_11289f80(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_1128a2a0(int param_2); template<class... A> int FUN_1128a2a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 * __thiscall FUN_1128a460(undefined8 *param_2); template<class... A> int FUN_1128a460(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined8 * __thiscall FUN_1128a480(undefined4 param_2,undefined8 *param_3); template<class... A> int FUN_1128a480(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ char * __thiscall FUN_1128a5c0(undefined4 *param_2); template<class... A> int FUN_1128a5c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1128a630(undefined8 *param_2); template<class... A> int FUN_1128a630(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1128a700(undefined8 *param_2); template<class... A> int FUN_1128a700(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1128a720(undefined4 *param_2); template<class... A> int FUN_1128a720(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ char * __thiscall FUN_1128ad00(char *param_2); template<class... A> int FUN_1128ad00(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1128b560(undefined8 *param_2); template<class... A> int FUN_1128b560(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1128b580(undefined4 *param_2); template<class... A> int FUN_1128b580(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_1128b5e0(int param_2,int param_3); template<class... A> int FUN_1128b5e0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1128bd90(int param_2,int param_3); template<class... A> int FUN_1128bd90(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1128bfd0(undefined4 *param_2,int param_3); template<class... A> int FUN_1128bfd0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall FUN_1128cc50(int param_2,uint *param_3); template<class... A> int FUN_1128cc50(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1128cd30(char param_2); template<class... A> int FUN_1128cd30(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1128d570(undefined4 *param_2,int param_3); template<class... A> int FUN_1128d570(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1128e0f0(undefined4 param_2,undefined4 param_3); template<class... A> int FUN_1128e0f0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1128e4d0(int param_2,undefined4 param_3); template<class... A> int FUN_1128e4d0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall FUN_1128f480(int param_2); template<class... A> int FUN_1128f480(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_1128f500(undefined4 param_2,int param_3); template<class... A> int FUN_1128f500(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 __thiscall FUN_1128f6f0(byte *param_2); template<class... A> int FUN_1128f6f0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1128fdc0(char param_2); template<class... A> int FUN_1128fdc0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11291e30(uint param_2); template<class... A> int FUN_11291e30(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_11291e80(undefined4 param_2); template<class... A> int FUN_11291e80(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11296670(int param_2); template<class... A> int FUN_11296670(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112966c0(int param_2); template<class... A> int FUN_112966c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall FUN_11297c40(byte param_2); template<class... A> int FUN_11297c40(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_11297ce0(byte param_2); template<class... A> int FUN_11297ce0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_11297e80(int param_2); template<class... A> int FUN_11297e80(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11297fc0(int param_2); template<class... A> int FUN_11297fc0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11298560(int *param_2); template<class... A> int FUN_11298560(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall FUN_11298650(undefined4 param_2,undefined4 param_3,undefined4 param_4); template<class... A> int FUN_11298650(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11298b50(int param_2); template<class... A> int FUN_11298b50(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11298bc0(undefined4 param_2,uint param_3); template<class... A> int FUN_11298bc0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall FUN_11298d10(int param_2); template<class... A> int FUN_11298d10(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_11299590(int param_2); template<class... A> int FUN_11299590(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1129a750(int *param_2); template<class... A> int FUN_1129a750(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_1129b750(uint param_2,uint param_3); template<class... A> int FUN_1129b750(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1129bd90(undefined4 *param_2); template<class... A> int FUN_1129bd90(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_1129c3f0(undefined4 *param_2); template<class... A> int FUN_1129c3f0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1129ce50(undefined4 *param_2); template<class... A> int FUN_1129ce50(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_1129cea0(undefined4 *param_2); template<class... A> int FUN_1129cea0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall FUN_112c3800(int *param_2); template<class... A> int FUN_112c3800(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112c3980(undefined4 *param_2); template<class... A> int FUN_112c3980(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112c3ad0(uint param_2,byte *param_3); template<class... A> int FUN_112c3ad0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112c3dd0(uint param_2,byte *param_3); template<class... A> int FUN_112c3dd0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112c4190(undefined4 *param_2); template<class... A> int FUN_112c4190(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112c41e0(undefined4 *param_2); template<class... A> int FUN_112c41e0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112c4230(undefined4 *param_2); template<class... A> int FUN_112c4230(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112c4280(undefined4 *param_2); template<class... A> int FUN_112c4280(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112e90a0(int param_2); template<class... A> int FUN_112e90a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112e90f0(int param_2); template<class... A> int FUN_112e90f0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112e9140(int param_2); template<class... A> int FUN_112e9140(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112e9190(int param_2); template<class... A> int FUN_112e9190(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112eada0(int param_2); template<class... A> int FUN_112eada0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall FUN_112eba60(uint param_2,undefined4 param_3,void *param_4); template<class... A> int FUN_112eba60(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ebcd0(uint param_2,undefined4 param_3); template<class... A> int FUN_112ebcd0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined2 * __thiscall FUN_112ec640(short *param_2); template<class... A> int FUN_112ec640(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112ec8a0(undefined4 param_2,undefined4 param_3,void *param_4,int param_5,
-            void *param_6,int param_7); template<class... A> int FUN_112ec8a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112eccd0(undefined4 param_2); template<class... A> int FUN_112eccd0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112ece00(undefined4 param_2,undefined4 param_3,undefined4 *param_4); template<class... A> int FUN_112ece00(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112ecea0(int param_2); template<class... A> int FUN_112ecea0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void * __thiscall FUN_112ed0e0(undefined4 param_2); template<class... A> int FUN_112ed0e0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_112ed160(uint param_2); template<class... A> int FUN_112ed160(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall FUN_112ee030(uint param_2); template<class... A> int FUN_112ee030(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall FUN_112ee0c0(uint param_2); template<class... A> int FUN_112ee0c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ee600(undefined4 *param_2); template<class... A> int FUN_112ee600(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ee6c0(int param_2); template<class... A> int FUN_112ee6c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ee6e0(int param_2); template<class... A> int FUN_112ee6e0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ee700(int param_2); template<class... A> int FUN_112ee700(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ee720(int param_2); template<class... A> int FUN_112ee720(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ee740(int *param_2); template<class... A> int FUN_112ee740(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ee7a0(int *param_2); template<class... A> int FUN_112ee7a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ee800(int *param_2); template<class... A> int FUN_112ee800(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ee860(int *param_2); template<class... A> int FUN_112ee860(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112ee8c0(int *param_2); template<class... A> int FUN_112ee8c0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112eec20(undefined4 *param_2); template<class... A> int FUN_112eec20(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_112ef5a0(int param_2); template<class... A> int FUN_112ef5a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall FUN_112f12a0(int param_2,int param_3); template<class... A> int FUN_112f12a0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112f1cf0(uint param_2); template<class... A> int FUN_112f1cf0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall FUN_112f2a80(uint param_2,undefined4 param_3,undefined2 param_4); template<class... A> int FUN_112f2a80(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112f2d50(undefined4 *param_2); template<class... A> int FUN_112f2d50(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall FUN_112f2ec0(int param_2); template<class... A> int FUN_112f2ec0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall FUN_112f2fb0(int param_2); template<class... A> int FUN_112f2fb0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall FUN_112f3220(uint param_2,undefined2 param_3); template<class... A> int FUN_112f3220(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall FUN_112f3ac0(undefined4 *param_2,undefined2 param_3); template<class... A> int FUN_112f3ac0(A...); /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 __thiscall FUN_112f4400(undefined4 param_2,undefined4 param_3,undefined4 param_4); template<class... A> int FUN_112f4400(A...); };
-using namespace std;
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __stdcall FUN_11244aa0(undefined4 param_1,undefined4 param_2);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_11244aa0(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint FUN_11244c40(uint param_1,uint param_2);
@@ -1306,6 +1327,8 @@ extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pa
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_112599d0(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __fastcall FUN_11259f60(int param_1);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __fastcall FUN_11259f60(...);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int FUN_1125ae30(char *param_1,char *param_2,int param_3);
+extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int FUN_1125ae30(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_1125b270(char *param_1);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_1125b270(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ char * FUN_1125b2c0(char *param_1,char *param_2);
@@ -1393,12 +1416,16 @@ extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pa
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_1126d9c0(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_1126d9f0(undefined4 param_1,undefined4 *param_2,undefined4 param_3,int *param_4);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_1126d9f0(...);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __stdcall FUN_1126da60(undefined4 *param_1,undefined4 param_2);
+extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_1126da60(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __fastcall FUN_1126dec0(undefined4 *param_1);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __fastcall FUN_1126dec0(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __fastcall FUN_1126e810(undefined4 *param_1);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __fastcall FUN_1126e810(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __fastcall FUN_1126e860(int param_1);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __fastcall FUN_1126e860(...);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __stdcall FUN_1126e880(undefined4 param_1);
+extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_1126e880(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void * FUN_1126f570(uint param_1);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void * FUN_1126f570(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_1126f6a0(undefined4 param_1,int param_2,int param_3);
@@ -1548,6 +1575,8 @@ extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pa
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool FUN_112833a0(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_112856a0(undefined4 param_1,undefined4 param_2,undefined4 param_3);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_112856a0(...);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int FUN_11286030(int param_1);
+extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int FUN_11286030(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __fastcall FUN_11286570(int param_1);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __fastcall FUN_11286570(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_112869f0(undefined4 param_1,undefined1 *param_2,undefined4 param_3,undefined2 param_4,
@@ -1581,6 +1610,14 @@ extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pa
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 __fastcall FUN_1128a6a0(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 __fastcall FUN_1128a6b0(undefined4 param_1);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 __fastcall FUN_1128a6b0(...);
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ bool FUN_1128a7b0(int *param_1,double param_2,char param_3);
+extern /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool FUN_1128a7b0(...);
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ bool FUN_1128a810(char *param_1,double param_2,char param_3);
+extern /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool FUN_1128a810(...);
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ bool FUN_1128a880(int *param_1,double param_2);
+extern /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool FUN_1128a880(...);
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ bool FUN_1128a900(char *param_1,double param_2);
+extern /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool FUN_1128a900(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __fastcall FUN_1128aa20(undefined4 *param_1);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __fastcall FUN_1128aa20(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __fastcall FUN_1128ab80(undefined4 *param_1);
@@ -1639,6 +1676,8 @@ extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pa
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __fastcall FUN_112979e0(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __fastcall FUN_11297a70(int param_1);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __fastcall FUN_11297a70(...);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __fastcall FUN_11298400(int *param_1);
+extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __fastcall FUN_11298400(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool FUN_11299810(uint param_1);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool FUN_11299810(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int FUN_11299cc0(int param_1);
@@ -1709,6 +1748,8 @@ extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pa
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ char FUN_1129ffe0(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ __time64_t FUN_112a0020(void);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ __time64_t FUN_112a0020(...);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 * FUN_112a0690(int *param_1);
+extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined1 * FUN_112a0690(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ char * FUN_112a08a0(int *param_1,int *param_2,undefined4 *param_3);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ char * FUN_112a08a0(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ char * FUN_112a0a00(undefined4 param_1);
@@ -1725,6 +1766,8 @@ extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pa
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_112a2af0(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint FUN_112a2e80(byte *param_1,int param_2,byte *param_3);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint FUN_112a2e80(...);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int FUN_112a3020(void *param_1,uint param_2);
+extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int FUN_112a3020(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint FUN_112a3310(void);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint FUN_112a3310(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_112a3330(void);
@@ -1809,8 +1852,6 @@ extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pa
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_112abf10(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ char * FUN_112abfe0(int param_1,int param_2,char param_3);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ char * FUN_112abfe0(...);
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * FUN_112ac380(int param_1,int param_2);
-extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * FUN_112ac380(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * FUN_112ac490(int param_1,int param_2);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * FUN_112ac490(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_112ac6b0(int param_1,int param_2,int param_3);
@@ -1952,6 +1993,8 @@ extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pa
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_112caf80(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_112dee40(int param_1,short *param_2);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_112dee40(...);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_112def90(uint param_1,uint *param_2);
+extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_112def90(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_112e91c0(undefined4 *param_1,undefined4 *param_2);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_112e91c0(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_112e91f0(undefined4 *param_1,undefined4 *param_2);
@@ -2416,7 +2459,7 @@ LAB_11246586:
   }
   pbVar4 = (byte *)((byte *)((int)param_1 + param_2));
   while (uVar2 = uVar3 - 4, 3 < uVar3) {
-    if ((int)(pbVar4) != *(int *)param_4) goto LAB_11246726;
+    if (*(int *)(pbVar4) != *(int *)(param_4)) goto LAB_11246726;
     pbVar4 = (byte *)(pbVar4 + 4);
     param_4 = (byte *)(param_4 + 4);
     uVar3 = (uint)(uVar2);
@@ -2735,10 +2778,10 @@ LAB_11248976:
       param_4 = (void *)(pvStack_108);
       if (((char)*piVar2 != (char)*piVar5) ||
          ((uVar1 != 0xfffffffd &&
-          ((*(char *)((int)piVar2 + 1) != *(char *)((int)piVar5 + 1) ||
+          ((*(char *)(((int)piVar2 + 1)) != *(char *)((int)piVar5 + 1) ||
            ((uVar1 != 0xfffffffe &&
-            ((*(char *)((int)piVar2 + 2) != *(char *)((int)piVar5 + 2) ||
-             ((uVar1 != 0xffffffff && (*(char *)((int)piVar2 + 3) != *(char *)((int)piVar5 + 3))))))
+            ((*(char *)(((int)piVar2 + 2)) != *(char *)((int)piVar5 + 2) ||
+             ((uVar1 != 0xffffffff && (*(char *)(((int)piVar2 + 3)) != *(char *)((int)piVar5 + 3))))))
             ))))))) goto LAB_112489ba;
     }
     *param_5 = (uint)(0);
@@ -3014,7 +3057,7 @@ undefined1 __fastcall FUN_1124c1f0(int param_1)
       if ((uVar3 == 0) || ((uVar3 == 1 && (*(char *)(param_1 + 0x830) == '\r')))) {
         *(undefined4*)(param_1 + 0x82c) = (undefined4)(5);
         cVar1 = (char)((**(code **)(**(int **)(param_1 + 8) + 0xc))(0,0));
-        if ((cVar1 == '\0') || ((uint)((param_1 + 0x858)) <= *(uint *)(param_1 + 0x85c))) {
+        if ((cVar1 == '\0') || (*(uint *)((param_1 + 0x858)) <= *(uint *)((param_1 + 0x85c)))) {
           *(undefined4*)(param_1 + 0xc) = (undefined4)(5);
         }
       }
@@ -3649,7 +3692,7 @@ char * __fastcall FUN_11252df0(int param_1)
   }
   else {
     pcVar1 = (char *)("");
-    if ((char *)(char *)(param_1[3]) != (char *)0x0) {
+    if ((char *)(char *)(param_1[3]) != (char *)(0x0)) {
       pcVar1 = (char *)((char *)param_1[3]);
     }
   }
@@ -4545,7 +4588,7 @@ uint __fastcall FUN_11257890(uint *param_1)
   uVar1 = (uint)(0);
   if (*param_1 != 0) {
     puVar4 = (uint *)(param_1 + 2);
-    while ((uint *)(*puVar4) != (uint *)(param_2)) {
+    while (*puVar4 != param_2) {
       uVar1 = (uint)(uVar1 + 1);
       puVar4 = (uint *)(puVar4 + 0x94);
       if (*param_1 <= uVar1) {
@@ -4645,7 +4688,7 @@ undefined4 __fastcall FUN_11257a60(int param_1)
       pcVar3 = (char *)(pcVar3 + 1);
     } while (cVar1 != '\0');
     if ((int)pcVar3 - (int)(pcVar5 + 1) != 0) {
-      if (*(void **)(param_1 + 0x1e4) != (void *)(0x0)) {
+      if (*(void **)(param_1 + 0x1e4) != (void *)((0x0))) {
         free(*(void **)(param_1 + 0x1e4));
       }
       sVar4 = (size_t)(((int)pcVar3 - (int)(pcVar5 + 1)) + 1);
@@ -4661,7 +4704,7 @@ undefined4 __fastcall FUN_11257a60(int param_1)
       pcVar5 = (char *)(pcVar5 + 1);
     } while (cVar1 != '\0');
     if ((int)pcVar5 - (int)(_Src + 1) != 0) {
-      if (*(void **)(param_1 + 0x1e8) != (void *)(0x0)) {
+      if (*(void **)(param_1 + 0x1e8) != (void *)((0x0))) {
         free(*(void **)(param_1 + 0x1e8));
       }
       sVar4 = (size_t)(((int)pcVar5 - (int)(_Src + 1)) + 1);
@@ -4696,7 +4739,7 @@ undefined4 __fastcall FUN_11257a60(int param_1)
       pcVar3 = (char *)(pcVar3 + 1);
     } while (cVar1 != '\0');
     if ((int)pcVar3 - (int)(pcVar5 + 1) != 0) {
-      if (*(void **)(param_1 + 0x1ec) != (void *)(0x0)) {
+      if (*(void **)(param_1 + 0x1ec) != (void *)((0x0))) {
         free(*(void **)(param_1 + 0x1ec));
       }
       sVar4 = (size_t)(((int)pcVar3 - (int)(pcVar5 + 1)) + 1);
@@ -4712,7 +4755,7 @@ undefined4 __fastcall FUN_11257a60(int param_1)
       pcVar5 = (char *)(pcVar5 + 1);
     } while (cVar1 != '\0');
     if ((int)pcVar5 - (int)(_Src + 1) != 0) {
-      if (*(void **)(param_1 + 0x1f0) != (void *)(0x0)) {
+      if (*(void **)(param_1 + 0x1f0) != (void *)((0x0))) {
         free(*(void **)(param_1 + 0x1f0));
       }
       sVar4 = (size_t)(((int)pcVar5 - (int)(_Src + 1)) + 1);
@@ -4748,7 +4791,7 @@ undefined4 __fastcall FUN_11257a60(int param_1)
           pcVar4 = (char *)(pcVar4 + 1);
         } while (cVar1 != '\0');
         if ((int)pcVar4 - (int)(param_4 + 1) != 0) {
-          if ((void *)(void *)(param_1[0x79]) != (void *)0x0) {
+          if ((void *)(void *)(param_1[0x79]) != (void *)(0x0)) {
             free((void *)param_1[0x79]);
           }
           sVar5 = (size_t)(((int)pcVar4 - (int)(param_4 + 1)) + 1);
@@ -4764,7 +4807,7 @@ undefined4 __fastcall FUN_11257a60(int param_1)
           pcVar4 = (char *)(pcVar4 + 1);
         } while (cVar1 != '\0');
         if ((int)pcVar4 - (int)(param_5 + 1) != 0) {
-          if ((void *)(void *)(param_1[0x7a]) != (void *)0x0) {
+          if ((void *)(void *)(param_1[0x7a]) != (void *)(0x0)) {
             free((void *)param_1[0x7a]);
           }
           sVar5 = (size_t)(((int)pcVar4 - (int)(param_5 + 1)) + 1);
@@ -4986,6 +5029,64 @@ int __fastcall FUN_11259f60(int param_1)
     return (int)(((uint)(uVar2) << 8 | (uint)(1)));
   }
   return (int)((uint)uVar2 << 8);
+}
+
+
+// Reference entry 1125ae30; body size 123 bytes.
+#line 1 "ENTRY_1125ae30"
+
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+
+int FUN_1125ae30(char *param_1,char *param_2,int param_3)
+
+{
+  bool bVar1;
+  char *pcVar2;
+  char cVar3;
+  int iVar4;
+  int iVar5;
+  char *pcVar6;
+  char *pcVar7;
+  
+  iVar5 = (int)(0);
+  pcVar6 = (char *)(param_2 + param_3 + -1);
+  pcVar2 = (char *)(param_2);
+  for (; param_2 < pcVar6; param_2 = param_2 + 1) {
+    pcVar7 = (char *)(pcVar2 + 1);
+    cVar3 = (char)(*param_1);
+    if (cVar3 == '\0') goto LAB_1125aea2;
+    if ((cVar3 == '\"') || (cVar3 == '\\')) {
+      if ((char *)((pcVar7)) == (char *)(pcVar6)) break;
+      *param_2 = (char)('\\');
+      pcVar7 = (char *)(pcVar2 + 2);
+      cVar3 = (char)(*param_1);
+      param_2 = (char *)(param_2 + 1);
+      iVar5 = (int)(iVar5 + 1);
+    }
+    *param_2 = (char)(cVar3);
+    iVar5 = (int)(iVar5 + 1);
+    param_1 = (char *)(param_1 + 1);
+    pcVar2 = (char *)(pcVar7);
+  }
+  cVar3 = (char)(*param_1);
+  while (cVar3 != '\0') {
+    if ((cVar3 == '\"') || (cVar3 == '\\')) {
+      bVar1 = (bool)(true);
+    }
+    else {
+      bVar1 = (bool)(false);
+    }
+    iVar4 = (int)(iVar5 + 1);
+    if (!bVar1) {
+      iVar4 = (int)(iVar5);
+    }
+    param_1 = (char *)(param_1 + 1);
+    iVar5 = (int)(iVar4 + 1);
+    cVar3 = (char)(*param_1);
+  }
+LAB_1125aea2:
+  *param_2 = (char)('\0');
+  return (int)(iVar5);
 }
 
 
@@ -5462,12 +5563,12 @@ void FUN_11261320(undefined1 param_1)
        (uVar1 = *(ushort *)(param_1 + 6),(ushort)( uVar1) == *(ushort *)(param_2 + 6))) &&
       (uVar1 = *(ushort *)(param_1 + 10),(ushort)( uVar1) == *(ushort *)(param_2 + 10))) &&
      (((uVar1 = *(ushort *)(param_1 + 0xc),(ushort)( uVar1) == *(ushort *)(param_2 + 0xc) &&
-       (uVar1 = *(ushort *)(param_1 + 0xe),(ushort)( uVar1) == *(ushort *)(param_2 + 0xe))) &&
+       (uVar1 = *(ushort *)(param_1 + 0xe), uVar1 == *(ushort *)(param_2 + 0xe))) &&
       ((uVar1 = *(ushort *)(param_1 + 0x10),(ushort)( uVar1) == *(ushort *)(param_2 + 0x10) &&
-       (uVar1 = *(ushort *)(param_1 + 0x12),(ushort)( uVar1) == *(ushort *)(param_2 + 0x12))))))) {
+       (uVar1 = *(ushort *)(param_1 + 0x12), uVar1 == *(ushort *)(param_2 + 0x12))))))) {
     uVar2 = (undefined1)((undefined1)(uVar1 >> 8));
     uVar1 = (ushort)(((uint)(uVar2) << 8 | (uint)(*(char *)(param_1 + 0x14))));
-    if ((char)((param_1 + 0x14)) == *(char *)(param_2 + 0x14)) {
+    if (*(char *)((param_1 + 0x14)) == *(char *)((param_2 + 0x14))) {
       return (ushort)(((uint)(uVar2) << 8 | (uint)(1)));
     }
   }
@@ -5489,12 +5590,12 @@ void FUN_11261320(undefined1 param_1)
        (sVar1 = *(short *)(param_1 + 6),(short)( sVar1) == *(short *)(param_2 + 6))) &&
       (sVar1 = *(short *)(param_1 + 10),(short)( sVar1) == *(short *)(param_2 + 10))) &&
      (((sVar1 = *(short *)(param_1 + 0xc),(short)( sVar1) == *(short *)(param_2 + 0xc) &&
-       (sVar1 = *(short *)(param_1 + 0xe),(short)( sVar1) == *(short *)(param_2 + 0xe))) &&
+       (sVar1 = *(short *)(param_1 + 0xe), sVar1 == *(short *)(param_2 + 0xe))) &&
       ((sVar1 = *(short *)(param_1 + 0x10),(short)( sVar1) == *(short *)(param_2 + 0x10) &&
-       (sVar1 = *(short *)(param_1 + 0x12),(short)( sVar1) == *(short *)(param_2 + 0x12))))))) {
+       (sVar1 = *(short *)(param_1 + 0x12), sVar1 == *(short *)(param_2 + 0x12))))))) {
     bVar2 = (byte)((byte)((ushort)sVar1 >> 8));
     sVar1 = (short)(((uint)(bVar2) << 8 | (uint)(*(char *)(param_1 + 0x14))));
-    if ((char)((param_1 + 0x14)) == *(char *)(param_2 + 0x14)) {
+    if (*(char *)((param_1 + 0x14)) == *(char *)((param_2 + 0x14))) {
       return (short)((ushort)bVar2 << 8);
     }
   }
@@ -5569,7 +5670,7 @@ uint FUN_11263600(int param_1)
        (uVar1 = *(ushort *)(param_1 + 6),(ushort)( uVar1) == *(ushort *)(param_2 + 6))) &&
       (uVar1 = *(ushort *)(param_1 + 10),(ushort)( uVar1) == *(ushort *)(param_2 + 10))) &&
      (((uVar1 = *(ushort *)(param_1 + 0xc),(ushort)( uVar1) == *(ushort *)(param_2 + 0xc) &&
-       (uVar1 = *(ushort *)(param_1 + 0xe),(ushort)( uVar1) == *(ushort *)(param_2 + 0xe))) &&
+       (uVar1 = *(ushort *)(param_1 + 0xe), uVar1 == *(ushort *)(param_2 + 0xe))) &&
       (uVar1 = *(ushort *)(param_1 + 0x10),(ushort)( uVar1) == *(ushort *)(param_2 + 0x10))))) {
     return (ushort)(((uint)((char)(uVar1 >> 8)) << 8 | (uint)(1)));
   }
@@ -5845,7 +5946,7 @@ LAB_11264df1:
 void __fastcall FUN_11264e30(int param_1)
 
 {
-  if (*(void **)(param_1 + 8) != (void *)(0x0)) {
+  if (*(void **)(param_1 + 8) != (void *)((0x0))) {
     free(*(void **)(param_1 + 8));
   }
   return;
@@ -6032,7 +6133,7 @@ void __fastcall FUN_112664f0(undefined4 *param_1)
   int param_1 = (int )this;
   undefined4 uVar1;
   
-  if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)(0x0)) {
+  if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)((0x0))) {
     uVar1 = (undefined4)((**(code **)**(undefined4 **)(param_2 + 0x24))(param_1));
     *(undefined4*)(param_1 + 0x24) = (undefined4)(uVar1);
   }
@@ -6327,7 +6428,7 @@ bool __fastcall FUN_112691f0(int param_1)
 
 {
   if (*(char *)(param_1 + 0x44b4) != '\0') {
-    return (bool)((uint)((param_1 + 0x44b8)) <= *(uint *)(param_1 + 0x44b0));
+    return (bool)(*(uint *)((param_1 + 0x44b8)) <= *(uint *)((param_1 + 0x44b0)));
   }
   if (*(char *)(param_1 + 0x4aa) != '\0') {
     return (bool)((bool)*(undefined1 *)(param_1 + 0x44e4));
@@ -6922,6 +7023,27 @@ void FUN_1126d9f0(undefined4 param_1,undefined4 *param_2,undefined4 param_3,int 
 }
 
 
+// Reference entry 1126da60; body size 57 bytes.
+#line 1 "ENTRY_1126da60"
+
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+
+void __stdcall FUN_1126da60(undefined4 *param_1,undefined4 param_2)
+
+{
+  undefined4 uVar1;
+  undefined4 uStack_4;
+  
+  uStack_4 = (undefined4)(param_2);
+  ((std::_Tree_unchecked_const_iterator<> *)((_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0>
+                *)&uStack_4))->op_inc();
+  uVar1 = (undefined4)(thunk_FUN_1126e8d0(param_2));
+  thunk_FUN_1148a50e(uVar1,0x38);
+  *param_1 = (undefined4)(uStack_4);
+  return;
+}
+
+
 // Reference entry 1126dec0; body size 52 bytes.
 #line 1 "ENTRY_1126dec0"
 
@@ -6977,6 +7099,26 @@ void __fastcall FUN_1126e860(int param_1)
   }
                     
   std::_Xlength_error("map/set too long");
+}
+
+
+// Reference entry 1126e880; body size 51 bytes.
+#line 1 "ENTRY_1126e880"
+
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+
+undefined4 __stdcall FUN_1126e880(undefined4 param_1)
+
+{
+  undefined4 uVar1;
+  undefined4 uStack_4;
+  
+  uStack_4 = (undefined4)(param_1);
+  ((std::_Tree_unchecked_const_iterator<> *)((_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<unsigned int>>,std::_Iterator_base0>
+                *)&uStack_4))->op_inc();
+  uVar1 = (undefined4)(thunk_FUN_1126e8d0(param_1));
+  thunk_FUN_1148a50e(uVar1,0x38);
+  return (undefined4)(uStack_4);
 }
 
 
@@ -7186,7 +7328,7 @@ void FUN_11270c40(void)
 void __fastcall FUN_112723f0(int param_1)
 
 {
-  if (*(int **)(param_1 + 8) != (int *)(0x0)) {
+  if (*(int **)(param_1 + 8) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 8) + 8))(param_1);
   }
   return;
@@ -7453,7 +7595,7 @@ undefined4 FUN_11273a40(char *param_1,undefined2 *param_2)
       pcVar4 = (char *)(pcVar4 + 1);
       iVar3 = (int)(isdigit((int)*pcVar1));
     }
-    for (; (cVar2 = (char)(*pcVar4, cVar2 == ' ' || (cVar2 == '\t'))); pcVar4 = pcVar4 + 1) {
+    for (; (cVar2 = (char)(*pcVar4), cVar2 == ' ' || (cVar2 == '\t')); pcVar4 = pcVar4 + 1) {
     }
     if (cVar2 == ':') {
       do {
@@ -7586,7 +7728,7 @@ void FUN_11273bf0(void)
   lVar3 = (longlong)(*param_2);
   LOCK();
   lVar1 = (longlong)(*param_1);
-  if ((longlong *)(*param_2) == (longlong *)(lVar1)) {
+  if (*param_2 == lVar1) {
     *param_1 = (longlong)(((unsigned long long)(param_4) << 32 | (unsigned long long)(param_3)));
     iVar4 = (int)((int)lVar3);
     iVar6 = (int)(iVar2);
@@ -7737,7 +7879,7 @@ void __stdcall FUN_11274780(undefined4 param_1,undefined4 param_2,undefined4 par
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::FUN_112752f0(undefined4 param_2)
 {
   int param_1 = (int )this;
-  if (*(code **)(param_1 + 0x15c) != (code *)(0x0)) {
+  if (*(code **)(param_1 + 0x15c) != (code *)((0x0))) {
     (**(code **)(param_1 + 0x15c))();
     return;
   }
@@ -10347,7 +10489,7 @@ undefined4 * __fastcall FUN_112817e0(undefined4 *param_1)
         return (undefined4)(0);
       }
       puVar5 = (uint *)(param_2 + 0x4e);
-      while ((uint *)(*puVar5) != (uint *)(param_1)[0x4d]) {
+      while (*puVar5 != param_1[0x4d]) {
         uVar4 = (uint)(uVar4 + 1);
         puVar5 = (uint *)(puVar5 + 0x51);
         if (uVar2 <= uVar4) {
@@ -11033,6 +11175,26 @@ void FUN_112856a0(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 }
 
 
+// Reference entry 11286030; body size 68 bytes.
+#line 1 "ENTRY_11286030"
+
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+
+int FUN_11286030(int param_1)
+
+{
+  int iVar1;
+  uint uVar2;
+  
+  uVar2 = (uint)(((uint)(((uint)(((uint)(*(undefined1 *)(param_1 + 2)) << 8 | (uint)(*(undefined1 *)(param_1 + 3)))) << 8 | (uint)(*(undefined1 *)(param_1 + 4)))) << 8 | (uint)(*(undefined1 *)(param_1 + 5))) % 0x11);
+  iVar1 = (int)(uVar2 + 0x37);
+  if (uVar2 < 10) {
+    iVar1 = (int)(uVar2 + 0x30);
+  }
+  return (int)(iVar1);
+}
+
+
 // Reference entry 11286570; body size 22 bytes.
 #line 1 "ENTRY_11286570"
 
@@ -11183,7 +11345,7 @@ uint FUN_11287ca0(byte *param_1,byte *param_2)
   iVar2 = (int)(2);
   pbVar3 = (byte *)(param_1 + 6);
   pbVar4 = (byte *)(param_2);
-  if ((int)((param_1 + 6)) == *(int *)param_2) {
+  if (*(int *)((param_1 + 6)) == *(int *)(param_2)) {
     pbVar3 = (byte *)(param_1 + 10);
     iVar2 = (int)(-2);
     pbVar4 = (byte *)(param_2 + 4);
@@ -11198,7 +11360,7 @@ uint FUN_11287ca0(byte *param_1,byte *param_2)
   }
   pbVar3 = (byte *)(param_2 + 6);
   iVar2 = (int)(2);
-  if ((int)(param_1) == *(int *)pbVar3) {
+  if (*(int *)(param_1) == *(int *)(pbVar3)) {
     param_1 = (byte *)(param_1 + 4);
     iVar2 = (int)(-2);
     pbVar3 = (byte *)(param_2 + 10);
@@ -11969,6 +12131,115 @@ undefined1 __fastcall FUN_1128a6b0(undefined4 param_1)
 }
 
 
+// Reference entry 1128a7b0; body size 70 bytes.
+#line 1 "ENTRY_1128a7b0"
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+
+bool FUN_1128a7b0(int *param_1,double param_2,char param_3)
+
+{
+  int iVar1;
+  
+  iVar1 = (int)((int)param_2);
+  if ((param_3 != '\0') && (iVar1 < 0)) {
+    iVar1 = (int)(0);
+  }
+  *param_1 = (int)(iVar1);
+  return (bool)(DAT_119e5ad8 <
+         (double)((unsigned long long)((uint)((ulonglong)(param_2 - (double)iVar1) >> 0x20) & _UNK_118a1554) << 32 | (unsigned long long)((uint)(((unsigned long long)(param_2 - (double)iVar1)) >> ((0) * 8)) & DAT_118a1550)));
+}
+
+
+// Reference entry 1128a810; body size 89 bytes.
+#line 1 "ENTRY_1128a810"
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+
+bool FUN_1128a810(char *param_1,double param_2,char param_3)
+
+{
+  int iVar1;
+  
+  iVar1 = (int)((int)param_2);
+  if ((param_3 != '\0') && (iVar1 < 0)) {
+    iVar1 = (int)(0);
+  }
+  if (*param_1 != '\x01') {
+    if (*param_1 != '\0') goto LAB_1128a841;
+    *param_1 = (char)('\x01');
+  }
+  *(int*)(param_1 + 4) = (int)(iVar1);
+LAB_1128a841:
+  return (bool)(DAT_119e5ad8 <
+         (double)((unsigned long long)((uint)((ulonglong)(param_2 - (double)iVar1) >> 0x20) & _UNK_118a1554) << 32 | (unsigned long long)((uint)(((unsigned long long)(param_2 - (double)iVar1)) >> ((0) * 8)) & DAT_118a1550)));
+}
+
+
+// Reference entry 1128a880; body size 102 bytes.
+#line 1 "ENTRY_1128a880"
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+
+bool FUN_1128a880(int *param_1,double param_2)
+
+{
+  int iVar1;
+  
+  iVar1 = (int)(thunk_FUN_1148ae00());
+  *param_1 = (int)(iVar1);
+  if (param_2 < 0.0) {
+    *param_1 = (int)(0);
+    return (bool)(true);
+  }
+  param_2 = (double)(param_2 - ((double)iVar1 + (double)(&DAT_11880fb0)[-(iVar1 >> 0x1f)]));
+  return (bool)(DAT_119e5ad8 <
+         (double)((unsigned long long)((uint)((ulonglong)param_2 >> 0x20) & _UNK_118a1554) << 32 | (unsigned long long)((uint)((*(unsigned long long *)&(param_2)) >> ((0) * 8)) & DAT_118a1550)));
+}
+
+
+// Reference entry 1128a900; body size 137 bytes.
+#line 1 "ENTRY_1128a900"
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+
+bool FUN_1128a900(char *param_1,double param_2)
+
+{
+  int iVar1;
+  char cVar2;
+  
+  iVar1 = (int)(thunk_FUN_1148ae00());
+  cVar2 = (char)(*param_1);
+  if (cVar2 != '\x01') {
+    if (cVar2 == '\0') {
+      *param_1 = (char)('\x01');
+    }
+    else if (cVar2 != '\x01') goto LAB_1128a930;
+  }
+  cVar2 = (char)('\x01');
+  *(int*)(param_1 + 4) = (int)(iVar1);
+LAB_1128a930:
+  if (param_2 < 0.0) {
+    if (cVar2 == '\0') {
+      *param_1 = (char)('\x01');
+    }
+    param_1[4] = (char)('\0');
+    param_1[5] = (char)('\0');
+    param_1[6] = (char)('\0');
+    param_1[7] = (char)('\0');
+    return (bool)(true);
+  }
+  param_2 = (double)(param_2 - ((double)iVar1 + (double)(&DAT_11880fb0)[-(iVar1 >> 0x1f)]));
+  return (bool)(DAT_119e5ad8 <
+         (double)((unsigned long long)((uint)((ulonglong)param_2 >> 0x20) & _UNK_118a1554) << 32 | (unsigned long long)((uint)((*(unsigned long long *)&(param_2)) >> ((0) * 8)) & DAT_118a1550)));
+}
+
+
 // Reference entry 1128aa20; body size 56 bytes.
 #line 1 "ENTRY_1128aa20"
 
@@ -12298,7 +12569,7 @@ uint __stdcall FUN_1128c1c0(int *param_1)
   uint uVar2;
   uint uVar3;
   
-  if ((param_1[1] != 0) && ((undefined4 *)(undefined4 *)(*param_1) != (undefined4 *)0x0)) {
+  if ((param_1[1] != 0) && ((undefined4 *)(undefined4 *)(*param_1) != (undefined4 *)(0x0))) {
     puVar1 = (uint *)((uint *)(*(code *)**(undefined4 **)*param_1)());
     uVar3 = (uint)(0);
     if (*puVar1 != 0) {
@@ -12590,29 +12861,92 @@ undefined4 __fastcall FUN_1128e090(int param_1)
 }
 
 
-// Reference entry 1128f480; body size 54 bytes.
-#line 1 "ENTRY_1128f480"
+// Reference entry 1128ea80; body size 378 bytes.
+#line 1 "ENTRY_1128ea80"
 
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ uint __thiscall Recovered_Bulk::FUN_1128f480(int param_2)
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __thiscall Recovered_Bulk::FUN_1128ea80(undefined4 param_2,int param_3,int param_4,int param_5,int *param_6,
+            uint param_7,char param_8)
 {
   int param_1 = (int )this;
-  uint uVar1;
-  undefined3 uVar2;
+  bool bVar1;
+  bool bVar2;
+  int iVar3;
+  undefined4 uVar4;
   
-  uVar1 = (uint)(*(uint *)(param_1 + 4));
-  if (((uint)(uVar1) == *(uint *)(param_2 + 4)) &&
-     (uVar1 = *(uint *)(param_1 + 8),(uint)( uVar1) == *(uint *)(param_2 + 8))) {
-    uVar2 = (undefined3)((undefined3)(uVar1 >> 8));
-    uVar1 = (uint)(((uint)(uVar2) << 8 | (uint)(*(char *)(param_1 + 0xc))));
-    if (((char)((param_1 + 0xc)) == *(char *)(param_2 + 0xc)) &&
-       ((uVar1 = ((uint)(uVar2) << 8 | (uint)(*(char *)(param_1 + 0xd))),
-        (char)((param_1 + 0xd)) == *(char *)(param_2 + 0xd) &&
-        (uVar1 = ((uint)(uVar2) << 8 | (uint)(*(char *)(param_1 + 0xe))),
-        (char)((param_1 + 0xe)) == *(char *)(param_2 + 0xe))))) {
-      return (uint)(((uint)(uVar2) << 8 | (uint)(1)));
-    }
+  *param_6 = (int)(0);
+  if (*(char *)(param_1 + 0x50) == '\0') {
+    return (undefined4)(0x80000002);
   }
-  return (uint)(uVar1 & 0xffffff00);
+  uVar4 = (undefined4)(0);
+  bVar2 = (bool)(false);
+  bVar1 = (bool)(true);
+  if (param_8 == '\0') {
+    param_8 = (char)((param_7 & 0xff) * 2);
+  }
+  else {
+    param_8 = (char)(4);
+  }
+  *(int*)(param_1 + 0x28) = (int)(param_5);
+  *(int*)(param_1 + 0x24) = (int)(param_4);
+LAB_1128ead0:
+  do {
+    if (!bVar1) {
+LAB_1128ebe4:
+      *param_6 = (int)(param_5 - *(int *)(param_1 + 0x28));
+      return (undefined4)(uVar4);
+    }
+    if (((*(char *)(param_1 + 0x51) != '\0') && (!bVar2)) && (param_3 != 0)) {
+      *(int*)(param_1 + 0x1c) = (int)(param_3);
+      bVar2 = (bool)(true);
+      *(undefined4*)(param_1 + 0x18) = (undefined4)(param_2);
+    }
+    iVar3 = (int)((**(code **)(param_1 + 8))(param_1 + 0x18,param_8));
+    if (iVar3 != -5) {
+      if (iVar3 != 0) {
+        *(undefined1*)(param_1 + 0x51) = (undefined1)(1);
+        uVar4 = (undefined4)(0x12);
+        if (iVar3 != 1) {
+          uVar4 = (undefined4)(0x80000002);
+        }
+        *param_6 = (int)(param_5 - *(int *)(param_1 + 0x28));
+        return (undefined4)(uVar4);
+      }
+      if (*(int *)(param_1 + 0x10) == 0) {
+        if (*(int *)(param_1 + 0x28) == 0) {
+          param_7 = (uint)(0);
+          param_4 = (int)(0);
+          thunk_FUN_113c46e0(param_1 + 0x18,&param_7,&param_4);
+          if ((param_7 != 0) || (param_4 != 0)) {
+            *param_6 = (int)(param_5 - *(int *)(param_1 + 0x28));
+            return (undefined4)(0x13);
+          }
+        }
+        else {
+          bVar1 = (bool)(false);
+          *(undefined1*)(param_1 + 0x51) = (undefined1)(1);
+        }
+      }
+      else if (*(int *)(param_1 + 0x10) == 1) {
+        if ((*(int *)(param_1 + 0x1c) == 0) &&
+           (*(undefined1 *)(param_1 + 0x51) = 1, *(int *)(param_1 + 0x28) == 0)) {
+          bVar1 = (bool)(false);
+        }
+        else {
+          bVar1 = (bool)(true);
+        }
+      }
+      goto LAB_1128ead0;
+    }
+    bVar1 = (bool)(false);
+    if (*(int *)(param_1 + 0x28) == 0) {
+      uVar4 = (undefined4)(0x13);
+      if (*(int *)(param_1 + 0x1c) != 0) {
+        *(undefined1*)(param_1 + 0x51) = (undefined1)(0);
+      }
+      goto LAB_1128ebe4;
+    }
+    *(undefined1*)(param_1 + 0x51) = (undefined1)(1);
+  } while( true );
 }
 
 
@@ -13740,6 +14074,53 @@ void __fastcall FUN_11297a70(int param_1)
 }
 
 
+// Reference entry 11298400; body size 7 bytes.
+#line 1 "ENTRY_11298400"
+
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+
+void __fastcall FUN_11298400(int *param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  int iVar3;
+  
+  iVar2 = (int)(*param_1);
+  iVar3 = (int)(*(int *)(iVar2 + 8));
+  while (iVar3 != 0) {
+    iVar1 = (int)(*(int *)(iVar3 + 4));
+    if (*(undefined4 **)(iVar3 + 0xc) == (undefined4 *)(((iVar2 + 8)))) {
+      if (iVar1 == 0) {
+        *(undefined4*)(iVar2 + 0xc) = (undefined4)(*(undefined4 *)(iVar3 + 8));
+      }
+      else {
+        *(undefined4*)(iVar1 + 8) = (undefined4)(*(undefined4 *)(iVar3 + 8));
+      }
+      if (*(int *)(iVar3 + 8) == 0) {
+        *(undefined4*)(iVar2 + 8) = (undefined4)(*(undefined4 *)(iVar3 + 4));
+      }
+      else {
+        *(undefined4*)(*(int *)(iVar3 + 8) + 4) = (undefined4)(*(undefined4 *)(iVar3 + 4));
+      }
+      *(int*)(iVar2 + 0x10) = (int)(*(int *)(iVar2 + 0x10) + -1);
+      *(undefined4*)(iVar3 + 8) = (undefined4)(0);
+      *(undefined4*)(iVar3 + 4) = (undefined4)(0);
+      *(undefined4*)(iVar3 + 0xc) = (undefined4)(0);
+    }
+    *(undefined2*)(iVar3 + 0x10) = (undefined2)(0);
+    *(undefined4*)(iVar3 + 0x118) = (undefined4)(0);
+    *(undefined4*)(iVar3 + 0x11c) = (undefined4)(0);
+    *(undefined4*)(iVar3 + 0x120) = (undefined4)(0);
+    *(undefined4*)(iVar3 + 0x124) = (undefined4)(0);
+    *(undefined1*)(iVar3 + 0x12) = (undefined1)(0);
+    thunk_FUN_113dde70(iVar3 + 0x128);
+    iVar3 = (int)(iVar1);
+  }
+  return;
+}
+
+
 // Reference entry 11298560; body size 170 bytes.
 #line 1 "ENTRY_11298560"
 
@@ -13929,13 +14310,13 @@ LAB_11298d4b:
       if (((char)*puVar5 != (char)*puVar6) ||
          ((uVar2 != 0xfffffffd &&
           ((uVar3 = ((uint)(uVar4) << 8 | (uint)(*(char *)((int)puVar5 + 1))),
-           *(char *)((int)puVar5 + 1) != *(char *)((int)puVar6 + 1) ||
+           *(char *)(((int)puVar5 + 1)) != *(char *)((int)puVar6 + 1) ||
            ((uVar2 != 0xfffffffe &&
             ((uVar3 = ((uint)(uVar4) << 8 | (uint)(*(char *)((int)puVar5 + 2))),
-             *(char *)((int)puVar5 + 2) != *(char *)((int)puVar6 + 2) ||
+             *(char *)(((int)puVar5 + 2)) != *(char *)((int)puVar6 + 2) ||
              ((uVar2 != 0xffffffff &&
               (uVar3 = ((uint)(uVar4) << 8 | (uint)(*(char *)((int)puVar5 + 3))),
-              *(char *)((int)puVar5 + 3) != *(char *)((int)puVar6 + 3)))))))))))))
+              *(char *)(((int)puVar5 + 3)) != *(char *)((int)puVar6 + 3)))))))))))))
       goto LAB_11298d7e;
     }
     return (uint)(((uint)((int3)(uVar3 >> 8)) << 8 | (uint)(1)));
@@ -13974,14 +14355,14 @@ LAB_112995cd:
       return (undefined4)(0);
     }
     if (uVar2 != 0xfffffffd) {
-      if (*(char *)((int)piVar3 + 1) != *(char *)((int)piVar4 + 1)) {
+      if (*(char *)(((int)piVar3 + 1)) != *(char *)((int)piVar4 + 1)) {
         return (undefined4)(0);
       }
       if (uVar2 != 0xfffffffe) {
-        if (*(char *)((int)piVar3 + 2) != *(char *)((int)piVar4 + 2)) {
+        if (*(char *)(((int)piVar3 + 2)) != *(char *)((int)piVar4 + 2)) {
           return (undefined4)(0);
         }
-        if ((uVar2 != 0xffffffff) && (*(char *)((int)piVar3 + 3) != *(char *)((int)piVar4 + 3))) {
+        if ((uVar2 != 0xffffffff) && (*(char *)(((int)piVar3 + 3)) != *(char *)((int)piVar4 + 3))) {
           return (undefined4)(0);
         }
       }
@@ -14636,7 +15017,7 @@ int * FUN_1129de20(int *param_1,int param_2)
       if ((void *)(_Dst) == (void *)0x0) {
         return (int *)(piVar4);
       }
-      if ((void *)(void *)(piVar4[3]) != (void *)0x0) {
+      if ((void *)(void *)(piVar4[3]) != (void *)(0x0)) {
         memcpy(_Dst,(void *)piVar4[3],piVar4[2] * iVar1);
         free((void *)piVar4[3]);
       }
@@ -14645,7 +15026,7 @@ int * FUN_1129de20(int *param_1,int param_2)
       piVar4[1] = (int)(iVar3);
       iVar6 = (int)(*(int *)(param_2 + 8));
     }
-    if (*(void **)(param_2 + 0xc) != (void *)(0x0)) {
+    if (*(void **)(param_2 + 0xc) != (void *)((0x0))) {
       memcpy((void *)(iVar5 * iVar1 + (int)_Dst),*(void **)(param_2 + 0xc),iVar6 * iVar1);
       iVar5 = (int)(piVar4[2]);
       iVar6 = (int)(*(int *)(param_2 + 8));
@@ -14687,7 +15068,7 @@ void FUN_1129df50(int *param_1,int param_2)
       if ((void *)(_Dst) == (void *)0x0) {
         return;
       }
-      if ((void *)(void *)(param_1[3]) != (void *)0x0) {
+      if ((void *)(void *)(param_1[3]) != (void *)(0x0)) {
         memcpy(_Dst,(void *)param_1[3],param_1[2] * iVar2);
         free((void *)param_1[3]);
       }
@@ -14696,7 +15077,7 @@ void FUN_1129df50(int *param_1,int param_2)
       param_1[3] = (int)((int)_Dst);
       iVar5 = (int)(*(int *)(param_2 + 8));
     }
-    if (*(void **)(param_2 + 0xc) != (void *)(0x0)) {
+    if (*(void **)(param_2 + 0xc) != (void *)((0x0))) {
       memcpy((void *)(iVar4 * iVar2 + param_1[3]),*(void **)(param_2 + 0xc),iVar5 * iVar2);
       iVar4 = (int)(param_1[2]);
       iVar5 = (int)(*(int *)(param_2 + 8));
@@ -15017,6 +15398,43 @@ __time64_t FUN_112a0020(void)
   
   _Var1 = (__time64_t)(_time64((__time64_t *)0x0));
   return _Var1;
+}
+
+
+// Reference entry 112a0690; body size 48 bytes.
+#line 1 "ENTRY_112a0690"
+
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+
+undefined1 * FUN_112a0690(int *param_1)
+
+{
+  undefined1 *puVar1;
+  undefined1 *puVar2;
+  
+  if (((int *)(param_1) != (int *)0x0) &&
+     (puVar1 = (undefined1 *)*param_1, puVar2 = puVar1,(undefined1 *)( puVar1) != (undefined1 *)0x0)) {
+    do {
+      switch(*puVar2) {
+      case 0:
+      case 9:
+      case 10:
+      case 0xd:
+      case 0x20:
+        goto LAB_112a06c5;
+      default:
+        *param_1 = (int)((int)(puVar2 + 1));
+        puVar2 = (undefined1 *)(puVar2 + 1);
+        break;
+      case 0x3a:
+        *puVar2 = (undefined1)(0);
+        *param_1 = (int)(*param_1 + 1);
+        return (undefined1 *)(puVar1);
+      }
+    } while( true );
+  }
+LAB_112a06c5:
+  return (undefined1 *)((undefined1 *)0x0);
 }
 
 
@@ -15355,7 +15773,7 @@ undefined4 FUN_112a2af0(int param_1,byte *param_2)
   if (param_1 == 0) {
     return (undefined4)(0);
   }
-  if (((int *)((param_1 + 0x8c)) != (int *)0x0) && ((byte *)(param_2) != (byte *)0x0)) {
+  if (((int *)((param_1 + 0x8c)) != (int *)(0x0)) && ((byte *)(param_2) != (byte *)0x0)) {
     sVar3 = (short)(thunk_FUN_112b0610(param_2));
     iVar2 = (int)(*(int *)(param_1 + 0x8c));
     if ((iVar2 != 0) && (*(ushort *)(param_1 + 0x90) != 0)) {
@@ -15511,6 +15929,54 @@ LAB_112a2f85:
 }
 
 
+// Reference entry 112a3020; body size 159 bytes.
+#line 1 "ENTRY_112a3020"
+
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+
+int FUN_112a3020(void *param_1,uint param_2)
+
+{
+  undefined2 uVar1;
+  int iVar2;
+  uint uVar3;
+  undefined2 *puVar4;
+  int iVar5;
+  int iVar6;
+  
+  uVar3 = (uint)(0);
+  iVar6 = (int)(1);
+  if (param_2 != 0) {
+    puVar4 = (undefined2 *)((undefined2 *)0x122f6968);
+    do {
+      uVar1 = (undefined2)(*puVar4);
+      puVar4 = (undefined2 *)(puVar4 + 3);
+      *(undefined2*)((int)param_1 + uVar3 * 2) = (undefined2)(uVar1);
+      uVar3 = (uint)(uVar3 + 1);
+    } while (uVar3 < param_2);
+  }
+  iVar5 = (int)(0);
+  while (iVar5 < (int)(uint)DAT_122f697c) {
+    iVar2 = (int)(thunk_FUN_1129e4e0(&DAT_122f6978,iVar5));
+    iVar5 = (int)(iVar5 + 1);
+    if (iVar2 == 0) break;
+    uVar3 = (uint)(0);
+    if (param_2 != 0) {
+      do {
+        if ((*(char *)(iVar2 + 0x120) != '\0') &&
+           (*(short *)((iVar2 + 0xb8)) == *(short *)(((int)param_1 + uVar3 * 2)))) {
+          *(undefined2*)((int)param_1 + uVar3 * 2) = (undefined2)(0xffff);
+          iVar6 = (int)(iVar6 + -1);
+        }
+        uVar3 = (uint)(uVar3 + 1);
+      } while (uVar3 < param_2);
+    }
+  }
+  qsort(param_1,param_2,2,(_PtFuncCompare *)&UNK_10064885);
+  return (int)(iVar6);
+}
+
+
 // Reference entry 112a3310; body size 10 bytes.
 #line 1 "ENTRY_112a3310"
 
@@ -15626,7 +16092,7 @@ int FUN_112a43b0(int param_1)
 
 {
   if (param_1 != 0) {
-    if ((uint)((param_1 + 0xd0)) <= *(uint *)(param_1 + 0xcc)) {
+    if (*(uint *)((param_1 + 0xd0)) <= *(uint *)((param_1 + 0xcc))) {
       return (int)(*(uint *)(param_1 + 0xcc) - *(uint *)(param_1 + 0xd0));
     }
   }
@@ -15714,7 +16180,7 @@ uint FUN_112a46d0(int param_1)
           iVar8 = (int)(*(int *)(param_1 + 0x20));
           uVar7 = (uint)(0);
           for (puVar1 = (undefined4 *)(*(undefined4 **)(iVar8 + 0xd8));
-              ((undefined4 *)(puVar1) != (undefined4 *)(iVar8 + 0xd8) && ((undefined4 *)(puVar1) != (undefined4 *)0x0));
+              ((undefined4 *)(puVar1) != (undefined4 *)(iVar8 + 0xd8) && (puVar1 != (undefined4 *)0x0));
               puVar1 = (undefined4 *)*puVar1) {
             uVar7 = (uint)(uVar7 + 1);
           }
@@ -15799,7 +16265,7 @@ undefined1 FUN_112a4c60(int param_1)
 void FUN_112a4e60(int param_1)
 
 {
-  if ((undefined4 *)((param_1 + 0x128)) != (undefined4 *)0x0) {
+  if ((undefined4 *)((param_1 + 0x128)) != (undefined4 *)(0x0)) {
     SetEvent(*(HANDLE *)(param_1 + 0x128));
   }
   return;
@@ -15849,7 +16315,7 @@ int FUN_112a6230(undefined4 *param_1,int *param_2)
   int iVar4;
   
   if (((((undefined4 *)(param_1) != (undefined4 *)0x0) && (pbVar1 = (byte *)*param_1,(byte *)( pbVar1) != (byte *)0x0)) &&
-      ((int *)(param_2) != (int *)0x0)) && ((uint *)(uint *)(*param_2) != (uint *)0x0)) {
+      ((int *)(param_2) != (int *)0x0)) && ((uint *)(uint *)(*param_2) != (uint *)(0x0))) {
     uVar2 = (uint)(*(uint *)*param_2 & 0x10);
     if ((*pbVar1 & 0x10) == 0) {
       if (uVar2 != 0) {
@@ -16422,7 +16888,7 @@ undefined4 FUN_112aa2b0(int param_1,char *param_2,char *param_3)
       pcVar9 = (char *)(pcVar9 + 1);
     } while (cVar3 != '\0');
     iVar1 = (int)(((int)pcVar9 - (int)(param_3 + 1)) + 1);
-    if ((ushort)((param_1 + 0x7e)) <= *(ushort *)(param_1 + 0x7c)) {
+    if (*(ushort *)((param_1 + 0x7e)) <= *(ushort *)((param_1 + 0x7c))) {
       uVar4 = (ushort)(*(ushort *)(param_1 + 0x7e) + 0x10);
       *(ushort*)(param_1 + 0x7e) = (ushort)(uVar4);
       pvVar6 = (void *)(realloc((void *)*piVar2,(uint)uVar4 << 4));
@@ -17042,59 +17508,6 @@ char * FUN_112abfe0(int param_1,int param_2,char param_3)
   puVar5[2] = (undefined4)(pcVar4 + 8);
   *pcVar4 = (char)('\0');
   return (char *)(pcVar4);
-}
-
-
-// Reference entry 112ac380; body size 214 bytes.
-#line 1 "ENTRY_112ac380"
-
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
-
-int * FUN_112ac380(int param_1,int param_2)
-
-{
-  int iVar1;
-  uint *puVar2;
-  undefined4 uVar3;
-  int iVar4;
-  void *_Dst;
-  int iVar5;
-  int *piVar6;
-  size_t _Size;
-  
-  iVar1 = (int)(*(int *)(param_2 + 4));
-  iVar5 = (int)(*(int *)(param_2 + 0xc));
-  puVar2 = (uint *)(*(uint **)(param_1 + 4));
-  piVar6 = (int *)((int *)puVar2[2]);
-  if ((int *)*puVar2 < piVar6 + 6) {
-    thunk_FUN_112af4a0();
-    thunk_FUN_112a7f50(DAT_122f6b7c);
-    iVar4 = (int)(FUN_112acc60(0x18));
-    uVar3 = (undefined4)(DAT_122f6b7c);
-    *(int*)(*(int *)(param_1 + 4) + 4) = (int)(iVar4);
-    *(int*)(param_1 + 4) = (int)(iVar4);
-    thunk_FUN_112a8010(uVar3);
-    FUN_1005ed27();
-    piVar6 = (int *)(*(int **)(iVar4 + 8));
-    *(int**)(iVar4 + 8) = (int *)(piVar6 + 6);
-  }
-  else {
-    puVar2[2] = (uint)((uint)(piVar6 + 6));
-  }
-  if (iVar5 < 1) {
-    iVar5 = (int)(1);
-  }
-  _Size = (size_t)(iVar5 * iVar1);
-  _Dst = (void *)((void *)thunk_FUN_112ac820(param_1,_Size));
-  memset(_Dst,0,_Size);
-  *piVar6 = (int)(param_1);
-  piVar6[1] = (int)(iVar1);
-  piVar6[4] = (int)((int)_Dst);
-  piVar6[2] = (int)(0);
-  piVar6[3] = (int)(iVar5);
-  memcpy(_Dst,*(void **)(param_2 + 0x10),*(int *)(param_2 + 8) * *(int *)(param_2 + 4));
-  piVar6[2] = (int)(*(int *)(param_2 + 8));
-  return (int *)(piVar6);
 }
 
 
@@ -19922,6 +20335,59 @@ undefined4 FUN_112dee40(int param_1,short *param_2)
 }
 
 
+// Reference entry 112def90; body size 128 bytes.
+#line 1 "ENTRY_112def90"
+
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+
+void FUN_112def90(uint param_1,uint *param_2)
+
+{
+  byte bVar1;
+  int iVar2;
+  uint uVar3;
+  
+  iVar2 = (int)(0);
+  uVar3 = (uint)(*param_2);
+  if (uVar3 <= param_1) {
+LAB_112df00b:
+    *param_2 = (uint)(uVar3);
+    return;
+  }
+  do {
+    bVar1 = (byte)(*(byte *)(uVar3 - 1));
+    if ((bVar1 & 0xf8) == 0xf0) {
+      if (3 < iVar2 + 1U) {
+        *param_2 = (uint)(uVar3 + 3);
+        return;
+      }
+      iVar2 = (int)(0);
+    }
+    else if ((bVar1 & 0xf0) == 0xe0) {
+      if (2 < iVar2 + 1U) {
+        *param_2 = (uint)(uVar3 + 2);
+        return;
+      }
+      iVar2 = (int)(0);
+    }
+    else if ((bVar1 & 0xe0) == 0xc0) {
+      if (1 < iVar2 + 1U) {
+        uVar3 = (uint)(uVar3 + 1);
+        goto LAB_112df00b;
+      }
+      iVar2 = (int)(0);
+    }
+    else if (-1 < (char)bVar1) goto LAB_112df00b;
+    uVar3 = (uint)(uVar3 - 1);
+    iVar2 = (int)(iVar2 + 1);
+    if (uVar3 <= param_1) {
+      *param_2 = (uint)(uVar3);
+      return;
+    }
+  } while( true );
+}
+
+
 // Reference entry 112e90a0; body size 37 bytes.
 #line 1 "ENTRY_112e90a0"
 
@@ -20525,7 +20991,7 @@ void __fastcall FUN_112ed810(undefined4 param_1)
 void __fastcall FUN_112edb80(int param_1)
 
 {
-  if (*(int **)(param_1 + 0x24) != (int *)(0x0)) {
+  if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
                     
                     
     (**(code **)(**(int **)(param_1 + 0x24) + 8))();
@@ -20548,7 +21014,7 @@ void __fastcall FUN_112edba0(int param_1, unsigned int recovered_unused_stack_0,
 
 {
  try {
-  if (*(int **)(param_1 + 0x24) != (int *)(0x0)) {
+  if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 0x24) + 8))(&stack0x00000004);
     return;
   }
@@ -20568,7 +21034,7 @@ void __fastcall FUN_112edbc0(int param_1, unsigned int recovered_unused_stack_0,
 
 {
  try {
-  if (*(int **)(param_1 + 0x24) != (int *)(0x0)) {
+  if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 0x24) + 8))
               (&stack0x00000004,&stack0x00000008,&stack0x0000000c,&stack0x00000010,&stack0x00000014,
                &stack0x00000018,&stack0x0000001c);
@@ -20590,7 +21056,7 @@ void __fastcall FUN_112edc10(int param_1, unsigned int recovered_unused_stack_0,
 
 {
  try {
-  if (*(int **)(param_1 + 0x24) != (int *)(0x0)) {
+  if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 0x24) + 8))(&stack0x00000004);
     return;
   }
@@ -20609,7 +21075,7 @@ void __fastcall FUN_112edc10(int param_1, unsigned int recovered_unused_stack_0,
 void __fastcall FUN_112edc30(int param_1)
 
 {
-  if (*(int **)(param_1 + 0x24) != (int *)(0x0)) {
+  if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
                     
                     
     (**(code **)(**(int **)(param_1 + 0x24) + 8))();
@@ -20632,7 +21098,7 @@ void __fastcall FUN_112edc50(int param_1, unsigned int recovered_unused_stack_0,
 
 {
  try {
-  if (*(int **)(param_1 + 0x24) != (int *)(0x0)) {
+  if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 0x24) + 8))(&stack0x00000004);
     return;
   }
@@ -20799,7 +21265,7 @@ undefined4 * __fastcall FUN_112ee690(undefined4 *param_1)
   int param_1 = (int )this;
   undefined4 uVar1;
   
-  if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)(0x0)) {
+  if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)((0x0))) {
     uVar1 = (undefined4)((**(code **)**(undefined4 **)(param_2 + 0x24))(param_1));
     *(undefined4*)(param_1 + 0x24) = (undefined4)(uVar1);
   }
@@ -20815,7 +21281,7 @@ undefined4 * __fastcall FUN_112ee690(undefined4 *param_1)
   int param_1 = (int )this;
   undefined4 uVar1;
   
-  if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)(0x0)) {
+  if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)((0x0))) {
     uVar1 = (undefined4)((**(code **)**(undefined4 **)(param_2 + 0x24))(param_1));
     *(undefined4*)(param_1 + 0x24) = (undefined4)(uVar1);
   }
@@ -20831,7 +21297,7 @@ undefined4 * __fastcall FUN_112ee690(undefined4 *param_1)
   int param_1 = (int )this;
   undefined4 uVar1;
   
-  if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)(0x0)) {
+  if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)((0x0))) {
     uVar1 = (undefined4)((**(code **)**(undefined4 **)(param_2 + 0x24))(param_1));
     *(undefined4*)(param_1 + 0x24) = (undefined4)(uVar1);
   }
@@ -20847,7 +21313,7 @@ undefined4 * __fastcall FUN_112ee690(undefined4 *param_1)
   int param_1 = (int )this;
   undefined4 uVar1;
   
-  if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)(0x0)) {
+  if (*(undefined4 **)(param_2 + 0x24) != (undefined4 *)((0x0))) {
     uVar1 = (undefined4)((**(code **)**(undefined4 **)(param_2 + 0x24))(param_1));
     *(undefined4*)(param_1 + 0x24) = (undefined4)(uVar1);
   }
@@ -21944,7 +22410,7 @@ uint __fastcall FUN_112f42d0(int param_1)
       *(undefined1*)(param_1 + 0x1c) = (undefined1)(1);
     }
   }
-  if (*(FILE **)(param_1 + 0x18) != (FILE *)(0x0)) {
+  if (*(FILE **)(param_1 + 0x18) != (FILE *)((0x0))) {
     fclose(*(FILE **)(param_1 + 0x18));
     *(undefined4*)(param_1 + 0x18) = (undefined4)(0);
   }
@@ -24424,7 +24890,7 @@ LAB_1139384c:
   piVar1 = (int *)((int *)(iVar10 + 8));
   *piVar1 = (int)(*piVar1 + -1);
   if (*piVar1 == 0) {
-    if (*(code **)(iVar10 + 0x10) != (code *)(0x0)) {
+    if (*(code **)(iVar10 + 0x10) != (code *)((0x0))) {
       (**(code **)(iVar10 + 0x10))(*(undefined4 *)(iVar10 + 0xc));
     }
     FUN_113433c0(param_1,iVar10);
