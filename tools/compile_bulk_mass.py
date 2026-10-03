@@ -585,7 +585,7 @@ def _varmap(text, params=''):
         for match in regex.finditer(text_part):
             lead, base, stars, name = (match.group(1), match.group(2),
                                        match.group(3), match.group(4))
-            if name in KEYWORDS or base in _NOT_TYPES:
+            if name in KEYWORDS or base in _NOT_TYPES or base.endswith(':'):
                 continue
             type_text = ' '.join(filter(None, [(lead or '').strip() or None, base]))
             if '*' in stars:
