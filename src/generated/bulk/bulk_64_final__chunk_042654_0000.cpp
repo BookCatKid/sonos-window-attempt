@@ -29,10 +29,14 @@ typedef long HRESULT;
 typedef wchar_t WCHAR;
 typedef int int3;
 typedef unsigned int uint3;
-typedef struct { char _p[3]; } undefined3;
-typedef struct { char _p[5]; } undefined5;
-typedef struct { char _p[6]; } undefined6;
-typedef struct { char _p[7]; } undefined7;
+typedef struct undefined3 { char _p[3]; undefined3(...);
+  template<class T> operator T*(); template<class T> operator T(); } undefined3;
+typedef struct undefined5 { char _p[5]; undefined5(...);
+  template<class T> operator T*(); template<class T> operator T(); } undefined5;
+typedef struct undefined6 { char _p[6]; undefined6(...);
+  template<class T> operator T*(); template<class T> operator T(); } undefined6;
+typedef struct undefined7 { char _p[7]; undefined7(...);
+  template<class T> operator T*(); template<class T> operator T(); } undefined7;
 using ulonglong = unsigned long long;
 using __time64_t = long long;
 typedef long fpos_t;
@@ -1136,8 +1140,8 @@ void FUN_11862250(void)
      (_Memory = (void *)(DAT_122e8a38 + -0x10), *(int *)(DAT_122e8a38 + -0x10) < 0xffff)) {
     iVar2 = (int)(thunk_FUN_1123fcd0(_Memory,DAT_12126b84 ));
     if (iVar2 == 0) {
-      *(undefined4 *)(iVar1 + -8) = 0;
-      *(undefined4 *)(iVar1 + -0xc) = 0;
+      *(undefined4*)(iVar1 + -8) = (undefined4)(0);
+      *(undefined4*)(iVar1 + -0xc) = (undefined4)(0);
       thunk_FUN_113cfb70(iVar1,*(undefined4 *)(iVar1 + -4));
       free(_Memory);
     }
@@ -1169,8 +1173,8 @@ void FUN_118622f0(void)
      (_Memory = (void *)(DAT_122e8a3c + -0x10), *(int *)(DAT_122e8a3c + -0x10) < 0xffff)) {
     iVar2 = (int)(thunk_FUN_1123fcd0(_Memory,DAT_12126b84 ));
     if (iVar2 == 0) {
-      *(undefined4 *)(iVar1 + -8) = 0;
-      *(undefined4 *)(iVar1 + -0xc) = 0;
+      *(undefined4*)(iVar1 + -8) = (undefined4)(0);
+      *(undefined4*)(iVar1 + -0xc) = (undefined4)(0);
       thunk_FUN_113cfb70(iVar1,*(undefined4 *)(iVar1 + -4));
       free(_Memory);
     }
