@@ -279,8 +279,7 @@ def load_symbol_vas(path):
                         result['ghidra_vftable_' + _flatten(form)].add(address)
                         # The emitter keeps template arguments, flattened to
                         # identifier characters (X<Y> -> X_Y_).
-                        kept = re.sub(r'_+', '_',
-                                      re.sub(r'[^0-9A-Za-z_]', '_', form))
+                        kept = re.sub(r'[^0-9A-Za-z_]', '_', form)
                         result['ghidra_vftable_' + kept].add(address)
             if name:
                 # PTR_<import>_<va> labels mark the IAT dword the loader fills;
@@ -293,19 +292,25 @@ def load_symbol_vas(path):
                 # lowered ghidra_vftable_<Class> externs.
                 if name.startswith('??_7') and '@@6B' in name:
                     owner = name[4:name.index('@@6B')]
-                    if owner.startswith('?$'):
+                    template = owner.startswith('?$')
+                    if template:
                         owner = owner[2:]
                     result['ghidra_vftable_' + owner.split('@')[0]].add(address)
                     if '@' in owner:
-                        # ??_7?$X@VArg@@ / ??_7X@Arg@@: template decorations whose
-                        # arg segments carry a type-encoding prefix (V=class,
-                        # U=struct). Generated externs flatten to X_Arg_.
                         parts = [p for p in owner.split('@') if p]
-                        decoded = [parts[0]] + [
-                            p[1:] if p[:1] in ('V', 'U') and len(p) > 1 else p
-                            for p in parts[1:]]
-                        result['ghidra_vftable_' + '_'.join(decoded) + '_'] \
-                            .add(address)
+                        if template:
+                            # ??_7?$X@VArg@@: arg segments carry a type-encoding
+                            # prefix (V=class, U=struct). Flatten to X_Arg_.
+                            decoded = [parts[0]] + [
+                                p[1:] if p[:1] in ('V', 'U') and len(p) > 1
+                                else p for p in parts[1:]]
+                            result['ghidra_vftable_' + '_'.join(decoded) + '_'] \
+                                .add(address)
+                        else:
+                            # ??_7Inner@Outer@@: nested class, generated
+                            # externs flatten to Outer__Inner.
+                            result['ghidra_vftable_' +
+                                   '__'.join(reversed(parts))].add(address)
     result = {name: sorted(addresses) for name, addresses in result.items()}
     # Internal runtime helpers carry no import slot: the reference reaches the
     # /GS cookie check through its incremental-link thunk like any other call.
@@ -509,10 +514,20 @@ def add_thunk_site_targets(symbol_vas, reference, image_base, pe_sections, inven
                 continue
             target = va + 5 + struct.unpack_from('<i', code, 1)[0]
             thunk_sites[target].append(va)
+    cookie_thunk = function_bytes(reference, 0x1148ac28, 5, image_base,
+                                  pe_sections)
+    cookie_body = (thunk_sites.get(
+        struct.unpack_from('<i', cookie_thunk, 1)[0] + 0x1148ac28 + 5)
+        if len(cookie_thunk) == 5 and cookie_thunk[0] == 0xE9 else None)
     for target, sites in thunk_sites.items():
         # REL32 relocations may legally land on any forwarder for the body, so
         # both the bare FUN_ name and the thunk_ alias must offer every site.
-        for key in (f'thunk_FUN_{target:08x}', f'FUN_{target:08x}'):
+        keys = [f'thunk_FUN_{target:08x}', f'FUN_{target:08x}']
+        if sites is cookie_body:
+            # @__security_check_cookie@4 relocates against whichever
+            # incremental-link forwarder the reference used for the body.
+            keys.append('__security_check_cookie')
+        for key in keys:
             merged = sorted(set(symbol_vas.get(key, ())) | set(sites))
             symbol_vas[key] = merged
 
