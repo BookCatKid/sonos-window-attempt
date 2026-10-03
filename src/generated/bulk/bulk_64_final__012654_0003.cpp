@@ -7624,7 +7624,7 @@ void FUN_108df820(void)
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
 
 
-  local_2c[0] = (char *******)((char *******)((uint)local_2c[0] & 0xffffff00), 0);
+  local_2c[0] = (char *******)((char *******)((uint)local_2c[0] & 0xffffff00));
   pcVar5 = (char *)(pcVar6);
   do {
     cVar1 = (char)(*pcVar5);
@@ -7635,7 +7635,7 @@ void FUN_108df820(void)
   if (0xf < local_18) {
     pppppppcVar3 = (char *******)(local_2c[0]);
   }
-  pppppppcVar3 = (char *******)((char *******)((int)pppppppcVar3 + local_1c), 0);
+  pppppppcVar3 = (char *******)((char *******)((int)pppppppcVar3 + local_1c));
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
   pppppppcVar9 = (char *******)((char *******)(uint)&local_2c);
   if (0xf < local_18) {
@@ -7672,7 +7672,7 @@ void FUN_108df820(void)
       if (0xf < local_18) {
         pppppppcVar3 = (char *******)(local_2c[0]);
       }
-      pppppppcVar3 = (char *******)((char *******)((int)pppppppcVar3 + local_1c), 0);
+      pppppppcVar3 = (char *******)((char *******)((int)pppppppcVar3 + local_1c));
       pppppppcVar9 = (char *******)((char *******)(uint)&local_2c);
       if (0xf < local_18) {
         pppppppcVar9 = (char *******)(local_2c[0]);
@@ -7693,21 +7693,21 @@ void FUN_108df820(void)
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(6);
   pSVar8 = (SCStr *)((SCStr *)&local_4c);
   goto LAB_108df942;
-  while (pppppppcVar9 = (char *******)((char *******)((int)pppppppcVar9 + 1), 0),(char *******)((pppppppcVar9)) != (char *******)(pppppppcVar3)) {
+  while (pppppppcVar9 = (char *******)((char *******)((int)pppppppcVar9 + 1)),(char *******)((pppppppcVar9)) != (char *******)(pppppppcVar3)) {
 LAB_108dfa00:
     iVar4 = (int)(isdigit((int)*(char *)pppppppcVar9), 0);
     if (iVar4 == 0) break;
   }
   local_3c = (int)(local_1c);
   if (((char *******)((pppppppcVar9)) != (char *******)(pppppppcVar3)) &&
-     (pppppppcVar3 = (char *******)((char *******)((int)pppppppcVar9 + 1), 0),(char *******)( pppppppcVar3) != (char *******)(local_38))) {
+     (pppppppcVar3 = (char *******)((char *******)((int)pppppppcVar9 + 1)),(char *******)( pppppppcVar3) != (char *******)(local_38))) {
     do {
       iVar4 = (int)(isdigit((int)*(char *)pppppppcVar3), 0);
       if (iVar4 != 0) {
-        *(char*)pppppppcVar9 = (char)((char *******)(*(char *)pppppppcVar3), 0);
-        pppppppcVar9 = (char *******)((char *******)((int)pppppppcVar9 + 1), 0);
+        *(char*)pppppppcVar9 = (char)((char *******)(*(char *)pppppppcVar3));
+        pppppppcVar9 = (char *******)((char *******)((int)pppppppcVar9 + 1));
       }
-      pppppppcVar3 = (char *******)((char *******)((int)pppppppcVar3 + 1), 0);
+      pppppppcVar3 = (char *******)((char *******)((int)pppppppcVar3 + 1));
     } while ((char *******)(pppppppcVar3) != (char *******)(local_38));
   }
 LAB_108dfa44:
@@ -7756,7 +7756,7 @@ LAB_108df942:
   }
 
 
-  local_2c[0] = (char *******)((char *******)((uint)local_2c[0] & 0xffffff00), 0);
+  local_2c[0] = (char *******)((char *******)((uint)local_2c[0] & 0xffffff00));
 
   ((SCStr *)((SCStr *)&local_34))->int_release();
 
@@ -39553,7 +39553,7 @@ LAB_10915d48:
         if ((int *)(piVar3) != (int *)(0x0)) {
           (**(code **)(*piVar3 + 4))();
         }
-        local_54 = (int **)((int **)((uint)local_54 | 8), 0);
+        local_54 = (int **)((int **)((uint)local_54 | 8));
         *(unsigned char*)((char *)&local_70 + 0) = (unsigned char)(0x38);
         local_6c = (int *)(piVar3);
         if ((int *)(piVar3) == (int *)(0x0)) {
@@ -39683,7 +39683,7 @@ LAB_1091601e:
     else {
       ppiStack_d4 = (int **)((int **)0x10916062);
       thunk_FUN_10cf34e0();
-      local_4c = (int **)((int **)((uint)local_54 | 4), 0);
+      local_4c = (int **)((int **)((uint)local_54 | 4));
 
       cVar1 = (char)(thunk_FUN_10c9b060(), 0);
       if (cVar1 == '\0') {
@@ -39746,7 +39746,7 @@ LAB_10915689:
     ppiStack_d4 = (int **)((int **)0x118e57bc);
     thunk_FUN_10302280();
     if (((uint)ppiVar8 & 2) != 0) {
-      ppiVar8 = (int **)((int **)((uint)ppiVar8 & 0xfffffffd), 0);
+      ppiVar8 = (int **)((int **)((uint)ppiVar8 & 0xfffffffd));
 
       local_4c = (int **)(ppiVar8);
       ((SCStr *)((SCStr *)&local_44))->int_release();
@@ -39783,7 +39783,7 @@ LAB_10915689:
     thunk_FUN_10ee48c0();
     cVar1 = (char)(thunk_FUN_10ee7f70(), 0);
     if (cVar1 == '\0') {
-      ppiStack_d4 = (int **)((int **)(param_1 + 0x2a), 0);
+      ppiStack_d4 = (int **)((int **)(param_1 + 0x2a));
       thunk_FUN_10302280();
       thunk_FUN_10ee48c0();
       thunk_FUN_10eeabd0();

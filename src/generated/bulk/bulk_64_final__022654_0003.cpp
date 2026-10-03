@@ -3959,7 +3959,7 @@ void __fastcall FUN_10e0aa10(int param_1)
     } while (local_48 != local_44);
   }
   if ((int *)(local_18) != (int *)(0x0)) {
-    ppuStack_68 = (undefined1 **)((undefined1 **)(uint)((int *)(local_18) != (int *)((uint)&local_3c)), 0);
+    ppuStack_68 = (undefined1 **)((undefined1 **)(uint)((int *)(local_18) != (int *)((uint)&local_3c)));
 
     (**(code **)(*local_18 + 0x10))();
   }

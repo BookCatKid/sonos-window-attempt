@@ -1461,6 +1461,8 @@ void FUN_112ba6e0(undefined4 *param_1,undefined4 param_2);
 extern void FUN_112ba6e0(...);
 void FUN_112ba700(int *param_1,int *param_2);
 extern void FUN_112ba700(...);
+undefined4 FUN_112ba720(int *param_1);
+extern undefined4 FUN_112ba720(...);
 void FUN_112ba740(int *param_1);
 extern void FUN_112ba740(...);
 void FUN_112bab00(int param_1,uint param_2);
@@ -4519,6 +4521,19 @@ void FUN_112ba700(int *param_1,int *param_2)
   *(int**)(*param_2 + 4) = (int *)(param_1);
   *param_2 = (int)((int)param_1);
   return;
+}
+
+
+// Reference entry 112ba720; body size 22 bytes.
+#line 1 "ENTRY_112ba720"
+
+undefined4 FUN_112ba720(int *param_1)
+
+{
+  if (((int *)param_1[1] == (int *)((param_1))) && ((int *)*param_1 == (int *)(((param_1))))) {
+    return (undefined4)(1);
+  }
+  return (undefined4)(0);
 }
 
 
@@ -14148,7 +14163,7 @@ uint FUN_11457460(undefined *param_1)
   do {
     if ((undefined *)(((param_1))) == (undefined *)(ppuVar2[3])) {
       ppuVar1 = (undefined **)(ppuVar2 + 5);
-      ppuVar2 = (undefined **)((undefined **)((uint)*ppuVar1 >> 0x15 & 0xffffff01), 0);
+      ppuVar2 = (undefined **)((undefined **)((uint)*ppuVar1 >> 0x15 & 0xffffff01));
       if ((((uint)*ppuVar1 >> 0x15 & 1) != 0) && (0xf < (int)param_1)) {
         return (uint)(((uint)((int3)((uint)ppuVar2 >> 8)) << 8 | (uint)(1)));
       }

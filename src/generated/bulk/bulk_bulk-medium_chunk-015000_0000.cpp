@@ -932,6 +932,7 @@ extern int ghidra_vftable_RMusicServiceListCB;
 extern int ghidra_vftable_RMusicServiceListParser;
 extern int ghidra_vftable_RMusicServicesDirectory;
 extern int ghidra_vftable_RNSQueryNetParamsOp;
+extern int ghidra_vftable_RNotifyBodyParser;
 extern int ghidra_vftable_RNotifyBodyParserCallback;
 extern int ghidra_vftable_RNullAsyncIOOperation;
 extern int ghidra_vftable_RPresentationMapParserCB;
@@ -1881,6 +1882,8 @@ void FUN_111f5210(undefined4 param_1);
 extern void FUN_111f5210(...);
 void FUN_111f75b0(undefined4 param_1);
 extern void FUN_111f75b0(...);
+void __fastcall FUN_111f7820(undefined4 *param_1);
+extern void __fastcall FUN_111f7820(...);
 char * FUN_111fd510(undefined4 param_1);
 extern char * FUN_111fd510(...);
 void FUN_111fd570(void *param_1);
@@ -2560,8 +2563,6 @@ void FUN_112adb20(int param_1,char *param_2);
 extern void FUN_112adb20(...);
 void FUN_112ae930(int param_1);
 extern void FUN_112ae930(...);
-void FUN_112af170(int param_1,int param_2,undefined4 param_3);
-extern void FUN_112af170(...);
 void FUN_112af4e0(undefined4 param_1,undefined4 param_2,undefined4 param_3);
 extern void FUN_112af4e0(...);
 void FUN_112b0270(undefined4 param_1,int param_2,undefined4 param_3);
@@ -14645,6 +14646,21 @@ undefined4 * __thiscall Recovered_Bulk::FUN_111f7790(undefined4 param_2)
 }
 
 
+// Reference entry 111f7820; body size 42 bytes.
+#line 1 "ENTRY_111f7820"
+
+void __fastcall FUN_111f7820(undefined4 *param_1)
+
+{
+  *param_1 = (undefined4)((uint)&ghidra_vftable_RNotifyBodyParser);
+  if ((void *)param_1[0x304] != (char *)(((int)param_1 + 0x40f))) {
+    free((void *)param_1[0x304]);
+  }
+  FUN_1003d5d7();
+  return;
+}
+
+
 // Reference entry 111f7880; body size 33 bytes.
 #line 1 "ENTRY_111f7880"
 
@@ -25861,17 +25877,6 @@ void FUN_112ae930(int param_1)
   
   uVar1 = (undefined4)(thunk_FUN_1129e0d0(0x40,0xc), 0);
   *(undefined4*)(param_1 + 0x130) = (undefined4)(uVar1);
-  return;
-}
-
-
-// Reference entry 112af170; body size 32 bytes.
-#line 1 "ENTRY_112af170"
-
-void FUN_112af170(int param_1,int param_2,undefined4 param_3)
-
-{
-  *(undefined4*)(*(int *)(*(int *)(param_1 + 0x130) + 0xc) + 8 + *(int *)(param_2 + 8) * 0xc) = (undefined4)(param_3);
   return;
 }
 

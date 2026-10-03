@@ -668,6 +668,7 @@ extern int thunk_FUN_113c1b00(...);
 extern int thunk_FUN_113c1ba0(...);
 extern int thunk_FUN_113c1c50(...);
 extern int thunk_FUN_113c3010(...);
+extern int thunk_FUN_113c4010(...);
 extern int thunk_FUN_113c41f0(...);
 extern int thunk_FUN_113c7f60(...);
 extern int thunk_FUN_113c8c50(...);
@@ -2693,6 +2694,8 @@ extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pa
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_113c1750(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int FUN_113c3c40(int param_1,uint param_2);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int FUN_113c3c40(...);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_113c3dc0(undefined4 *param_1,undefined4 *param_2);
+extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_113c3dc0(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_113c4130(int param_1,void *param_2,size_t *param_3);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_113c4130(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_113c44b0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
@@ -3678,6 +3681,8 @@ extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pa
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int FUN_1145b150(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_1145c5e0(undefined4 param_1,undefined4 param_2);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_1145c5e0(...);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_1145c900(undefined4 *param_1,void *param_2);
+extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_1145c900(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_1145ccc0(LPCSTR param_1,LPCSTR param_2,FILE *param_3);
 extern /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_1145ccc0(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_1145d030(char *param_1);
@@ -20258,6 +20263,82 @@ int FUN_113c3c40(int param_1,uint param_2)
 }
 
 
+// Reference entry 113c3dc0; body size 462 bytes.
+#line 1 "ENTRY_113c3dc0"
+
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+
+undefined4 FUN_113c3dc0(undefined4 *param_1,undefined4 *param_2)
+
+{
+  int *_Src;
+  undefined4 uVar1;
+  undefined4 uVar2;
+  undefined4 *_Dst;
+  undefined4 uVar3;
+  int iVar4;
+  
+  if (((((((undefined4 *)(param_2) != (undefined4 *)(0x0)) && (param_2[8] != 0)) && (param_2[9] != 0)) &&
+       ((_Src = (int *)((int *)param_2[7]),(int *)( _Src) != (int *)(0x0) && ((undefined4 *)*_Src == (undefined4 *)(((param_2))))))) &&
+      ((((iVar4 = (int)(_Src[1]), iVar4 == 0x2a || ((iVar4 == 0x39 || (iVar4 == 0x45)))) || (iVar4 == 0x49)
+        ) || ((((iVar4 == 0x5b || (iVar4 == 0x67)) || (iVar4 == 0x71)) || (iVar4 == 0x29a)))))) &&
+     ((undefined4 *)(param_1) != (undefined4 *)(0x0))) {
+    uVar3 = (undefined4)(param_2[1]);
+    uVar1 = (undefined4)(param_2[2]);
+    uVar2 = (undefined4)(param_2[3]);
+    *param_1 = (undefined4)(*param_2);
+    param_1[1] = (undefined4)(uVar3);
+    param_1[2] = (undefined4)(uVar1);
+    param_1[3] = (undefined4)(uVar2);
+    uVar3 = (undefined4)(param_2[5]);
+    uVar1 = (undefined4)(param_2[6]);
+    uVar2 = (undefined4)(param_2[7]);
+    param_1[4] = (undefined4)(param_2[4]);
+    param_1[5] = (undefined4)(uVar3);
+    param_1[6] = (undefined4)(uVar1);
+    param_1[7] = (undefined4)(uVar2);
+    uVar3 = (undefined4)(param_2[9]);
+    uVar1 = (undefined4)(param_2[10]);
+    uVar2 = (undefined4)(param_2[0xb]);
+    param_1[8] = (undefined4)(param_2[8]);
+    param_1[9] = (undefined4)(uVar3);
+    param_1[10] = (undefined4)(uVar1);
+    param_1[0xb] = (undefined4)(uVar2);
+    *(undefined8*)(param_1 + 0xc) = (undefined8)(*(undefined8 *)(param_2 + 0xc));
+    _Dst = (undefined4 *)((undefined4 *)(*(code *)param_1[8])(param_1[10],1,0x16c4), 0);
+    if ((undefined4 *)(_Dst) != (undefined4 *)(0x0)) {
+      param_1[7] = (undefined4)(_Dst);
+      memcpy(_Dst,_Src,0x16c4);
+      *_Dst = (undefined4)(param_1);
+      uVar3 = (undefined4)((*(code *)param_1[8])(param_1[10],_Dst[0xb],2), 0);
+      _Dst[0xe] = (undefined4)(uVar3);
+      uVar3 = (undefined4)((*(code *)param_1[8])(param_1[10],_Dst[0xb],2), 0);
+      _Dst[0x10] = (undefined4)(uVar3);
+      uVar3 = (undefined4)((*(code *)param_1[8])(param_1[10],_Dst[0x13],2), 0);
+      _Dst[0x11] = (undefined4)(uVar3);
+      iVar4 = (int)((*(code *)param_1[8])(param_1[10],_Dst[0x5a7],4), 0);
+      _Dst[2] = (undefined4)(iVar4);
+      if ((((void *)_Dst[0xe] != (void *)(((0x0)))) && (_Dst[0x10] != 0)) &&
+         ((_Dst[0x11] != 0 && (iVar4 != 0)))) {
+        memcpy((void *)_Dst[0xe],(void *)_Src[0xe],_Dst[0xb] * 2);
+        memcpy((void *)_Dst[0x10],(void *)_Src[0x10],_Dst[0xb] * 2);
+        memcpy((void *)_Dst[0x11],(void *)_Src[0x11],_Dst[0x13] * 2);
+        memcpy((void *)_Dst[2],(void *)_Src[2],_Dst[3]);
+        _Dst[4] = (undefined4)((_Src[4] - _Src[2]) + _Dst[2]);
+        _Dst[0x5a6] = (undefined4)(_Dst[0x5a7] + _Dst[2]);
+        _Dst[0x2c6] = (undefined4)(_Dst + 0x25);
+        _Dst[0x2c9] = (undefined4)(_Dst + 0x262);
+        _Dst[0x2cc] = (undefined4)(_Dst + 0x29f);
+        return (undefined4)(0);
+      }
+      thunk_FUN_113c4010(param_1);
+    }
+    return (undefined4)(0xfffffffc);
+  }
+  return (undefined4)(0xfffffffe);
+}
+
+
 // Reference entry 113c4130; body size 147 bytes.
 #line 1 "ENTRY_113c4130"
 
@@ -32015,6 +32096,22 @@ void FUN_1145c5e0(undefined4 param_1,undefined4 param_2)
 
 {
   thunk_FUN_1145c600(param_1,param_2,10);
+  return;
+}
+
+
+// Reference entry 1145c900; body size 31 bytes.
+#line 1 "ENTRY_1145c900"
+
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
+
+void FUN_1145c900(undefined4 *param_1,void *param_2)
+
+{
+  if ((void *)*param_1 != (void *)(((param_2)))) {
+    free((void *)*param_1);
+  }
+  *param_1 = (undefined4)(0);
   return;
 }
 

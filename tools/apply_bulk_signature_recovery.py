@@ -59,10 +59,10 @@ def sync_forward_decls(source):
 
 
 THISCALL_DEF = re.compile(
-    r'(?m)^((?:/\*[^\n]*?\*/\s*)?[A-Za-z_](?:[\w\s\*<>,&]|::)*?\s+)__thiscall\s+'
-    r'(FUN_\w+)\s*\(([^;{}]*)\)\s*\n\{')
+    r'(?m)^((?:[^\n]*?\*/\s*)?[A-Za-z_](?:[\w\s\*<>,&]|::)*?\s+)__thiscall\s+'
+    r'(FUN_\w+)\s*\(([^;{}]*)\)\s*\{')
 THISCALL_DECL = re.compile(
-    r'(?m)^(?:/\*[^\n]*?\*/\s*)?[A-Za-z_](?:[\w\s\*<>,&]|::)*?\s+__thiscall\s+'
+    r'(?m)^(?:[^\n]*?\*/\s*)?[A-Za-z_](?:[\w\s\*<>,&]|::)*?\s+__thiscall\s+'
     r'FUN_\w+\s*\([^;{}]*\)\s*;\n?')
 CALL = re.compile(r'(?<![\w:.>~])(FUN_\w+)\s*\(')
 
@@ -102,6 +102,8 @@ def lower_free_thiscall(source):
 
     def definition(match):
         result, name, params = match.groups()
+        comment_tail = '*/' if '*/' in result else ''
+        result = result.split('*/')[-1]
         params = params.strip()
         pieces = _split_args(params)
         first, rest = pieces[0], ','.join(pieces[1:]).strip()
@@ -119,7 +121,7 @@ def lower_free_thiscall(source):
             ptype = param.group(1)
             prologue = (f'\n  {ptype}{param.group(2)} = '
                         f'({ptype})this;')
-        head = (f'{" ".join(result.split())} __thiscall '
+        head = (f'{comment_tail}{" ".join(result.split())} __thiscall '
                 f'Recovered_Bulk::{name}({decl_params})\n{{{prologue}')
         return head
 

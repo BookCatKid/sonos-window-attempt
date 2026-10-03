@@ -695,7 +695,6 @@ extern __declspec(dllimport) int _Mtx_init_in_situ(...);
 extern __declspec(dllimport) int _Mtx_lock(...);
 extern __declspec(dllimport) int _Mtx_unlock(...);
 extern int __Init_thread_notify(...);
-extern int __Init_thread_wait(...);
 extern int ___get_entropy(...);
 extern int ___scrt_acquire_startup_lock(...);
 extern int ___scrt_dllmain_after_initialize_c(...);
@@ -821,6 +820,7 @@ extern int thunk_FUN_1140d620(...);
 extern int thunk_FUN_1140d850(...);
 extern int thunk_FUN_1140dbf0(...);
 extern int thunk_FUN_1140e540(...);
+extern int thunk_FUN_1140e740(...);
 extern int thunk_FUN_1140e790(...);
 extern int thunk_FUN_1140e870(...);
 extern int thunk_FUN_1140e890(...);
@@ -828,6 +828,7 @@ extern int thunk_FUN_1140e8b0(...);
 extern int thunk_FUN_1140e8f0(...);
 extern int thunk_FUN_1140e9e0(...);
 extern int thunk_FUN_1140ffb0(...);
+extern int thunk_FUN_114101c0(...);
 extern int thunk_FUN_114101e0(...);
 extern int thunk_FUN_114102d0(...);
 extern int thunk_FUN_114102f0(...);
@@ -835,6 +836,7 @@ extern int thunk_FUN_11410310(...);
 extern int thunk_FUN_11410360(...);
 extern int thunk_FUN_11410440(...);
 extern int thunk_FUN_11411380(...);
+extern int thunk_FUN_114116a0(...);
 extern int thunk_FUN_114116c0(...);
 extern int thunk_FUN_114117e0(...);
 extern int thunk_FUN_11411800(...);
@@ -1027,6 +1029,7 @@ extern int thunk_FUN_114404b0(...);
 extern int thunk_FUN_114404f0(...);
 extern int thunk_FUN_11440940(...);
 extern int thunk_FUN_11441ea0(...);
+extern int thunk_FUN_11442340(...);
 extern int thunk_FUN_11442360(...);
 extern int thunk_FUN_11442510(...);
 extern int thunk_FUN_11442530(...);
@@ -1431,14 +1434,6 @@ extern int DAT_119d7b20;
 extern int DAT_11a02ea0;
 extern int DAT_11a02eb0;
 extern int DAT_11bfe400;
-extern int DAT_11bfe6f0;
-extern int DAT_11bfe6f4;
-extern int DAT_11bfe6f8;
-extern int DAT_11bfe6fc;
-extern int DAT_11bfe700;
-extern int DAT_11bfe704;
-extern int DAT_11bfe708;
-extern int DAT_11bfe70c;
 extern int DAT_11bfe830;
 extern int DAT_11c002d4;
 extern int DAT_11c00368;
@@ -2257,7 +2252,6 @@ extern int uStack_12;
 extern int uStack_13;
 extern int uStack_14;
 extern int uStack_15;
-extern int uStack_150;
 extern int uStack_16;
 extern int uStack_18;
 extern int uStack_19;
@@ -2890,7 +2884,6 @@ extern undefined1 LAB_114882d9[];
 extern undefined1 LAB_11488378[];
 extern undefined1 LAB_114883a9[];
 extern undefined1 LAB_1148a7c1[];
-extern undefined1 LAB_1148ab47[];
 extern undefined1 LAB_1148acba[];
 extern undefined1 LAB_1148bf7d[];
 extern undefined1 LAB_114dda60[];
@@ -3507,10 +3500,6 @@ extern int *stack0x00000008;
 extern int *stack0x0000000c;
 extern int *stack0x00000010;
 extern int *stack0x00000014;
-extern int *stack0xfffffeb4;
-extern int *stack0xfffffeb8;
-extern int *stack0xfffffebc;
-extern int *stack0xfffffec0;
 extern int *stack0xffffffd8;
 extern int *stack0xffffffef;
 extern int *stack0xfffffffc;
@@ -3542,6 +3531,10 @@ FUN_1140bc20(int *param_1,int param_2,int param_3,uint param_4,undefined4 param_
 extern undefined4 FUN_1140bc20(...);
 int FUN_1140beb0(int *param_1,int param_2,uint param_3,uint *param_4);
 extern int FUN_1140beb0(...);
+int FUN_1140c090(uint *param_1,int param_2,uint *param_3,uint *param_4);
+extern int FUN_1140c090(...);
+int FUN_1140c1d0(uint *param_1,int param_2,uint *param_3);
+extern int FUN_1140c1d0(...);
 int FUN_1140c340(int *param_1,int param_2,int *param_3);
 extern int FUN_1140c340(...);
 int FUN_1140c3e0(int *param_1,int param_2,int *param_3);
@@ -3557,6 +3550,8 @@ extern int FUN_1140c630(...);
 undefined4
 FUN_1140c8e0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4);
 extern undefined4 FUN_1140c8e0(...);
+undefined4 FUN_1140c9f0(int *param_1,int *param_2);
+extern undefined4 FUN_1140c9f0(...);
 undefined4 FUN_1140ccc0(int *param_1,undefined4 param_2);
 extern undefined4 FUN_1140ccc0(...);
 void FUN_1140cd70(int *param_1);
@@ -3589,8 +3584,6 @@ int FUN_114101e0(uint *param_1,uint *param_2);
 extern int FUN_114101e0(...);
 int FUN_11410360(uint *param_1,void *param_2,uint param_3);
 extern int FUN_11410360(...);
-void FUN_11410440(int param_1,int param_2);
-extern void FUN_11410440(...);
 int FUN_11411310(undefined4 param_1,int param_2,uint param_3);
 extern int FUN_11411310(...);
 void FUN_11411380(void *param_1,uint param_2,uint *param_3,int param_4);
@@ -5205,8 +5198,6 @@ extern void FUN_11489a50(...);
 extern /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ undefined4 FUN_1148a74e(...);
 void FUN_1148aaa4(int *param_1);
 extern void FUN_1148aaa4(...);
-void FUN_1148ab00(int *param_1);
-extern void FUN_1148ab00(...);
 /* Library Function - Single Match __Init_thread_wait Library: Visual Studio 2019 Release */void FUN_1148abc7(DWORD param_1);
 extern /* Library Function - Single Match __Init_thread_wait Library: Visual Studio 2019 Release */void FUN_1148abc7(...);
 uint FUN_1148ac80(void);
@@ -7027,6 +7018,152 @@ int FUN_1140beb0(int *param_1,int param_2,uint param_3,uint *param_4)
 }
 
 
+// Reference entry 1140c090; body size 248 bytes.
+#line 1 "ENTRY_1140c090"
+
+int FUN_1140c090(uint *param_1,int param_2,uint *param_3,uint *param_4)
+
+{
+  uint *puVar1;
+  uint *puVar2;
+  char *pcVar3;
+  uint *puVar4;
+  int iVar5;
+  uint *puVar6;
+  int iVar7;
+  byte *pbVar8;
+  
+  iVar5 = (int)(param_2);
+  puVar4 = (uint *)(param_1);
+  pcVar3 = (char *)((char *)*param_1);
+  if (param_2 - (int)pcVar3 < 1) {
+    return (int)(-0x60);
+  }
+  if (*pcVar3 != (char)(('0'))) {
+    return (int)(-0x62);
+  }
+  *param_1 = (uint)((uint)(pcVar3 + 1));
+  iVar7 = (int)(thunk_FUN_1140c520(param_1,param_2,&param_1), 0);
+  puVar2 = (uint *)(param_3);
+  if (iVar7 == 0) {
+    if (iVar5 - (int)*puVar4 < (uint)((1))) {
+      return (int)(-0x60);
+    }
+    *param_3 = (uint)((uint)*(byte *)*puVar4);
+    pcVar3 = (char *)((char *)*puVar4);
+    pbVar8 = (byte *)((byte *)((int)param_1 + (int)pcVar3));
+    if ((int)pbVar8 - (int)pcVar3 < 1) {
+      return (int)(-0x60);
+    }
+    if (*pcVar3 != (char)(('\x06'))) {
+      return (int)(-0x62);
+    }
+    puVar1 = (uint *)(param_3 + 1);
+    *puVar4 = (uint)((uint)(pcVar3 + 1));
+    iVar7 = (int)(thunk_FUN_1140c520(puVar4,pbVar8,puVar1), 0);
+    puVar6 = (uint *)(param_4);
+    if (iVar7 == 0) {
+      puVar2[2] = (uint)(*puVar4);
+      *puVar4 = (uint)(*puVar4 + *puVar1);
+      if ((byte *)*puVar4 == (byte *)(((pbVar8)))) {
+        thunk_FUN_11423ed0(param_4,0xc);
+        return (int)(0);
+      }
+      puVar2 = (uint *)(param_4 + 1);
+      *param_4 = (uint)((uint)*(byte *)*puVar4);
+      *puVar4 = (uint)(*puVar4 + 1);
+      iVar7 = (int)(thunk_FUN_1140c520(puVar4,pbVar8,puVar2), 0);
+      if (iVar7 == 0) {
+        puVar6[2] = (uint)(*puVar4);
+        *puVar4 = (uint)(*puVar4 + *puVar2);
+        iVar7 = (int)(0);
+        if ((byte *)*puVar4 != (byte *)(((pbVar8)))) {
+          iVar7 = (int)(-0x66);
+        }
+      }
+    }
+  }
+  return (int)(iVar7);
+}
+
+
+// Reference entry 1140c1d0; body size 294 bytes.
+#line 1 "ENTRY_1140c1d0"
+
+int FUN_1140c1d0(uint *param_1,int param_2,uint *param_3)
+
+{
+  uint *puVar1;
+  char *pcVar2;
+  byte *pbVar3;
+  uint *puVar4;
+  uint *puVar5;
+  int iVar6;
+  int iVar7;
+  byte *pbVar8;
+  uint local_c;
+  int aiStack_8 [2];
+  
+  iVar7 = (int)(param_2);
+  puVar4 = (uint *)(param_1);
+  local_c = (uint)(0);
+  aiStack_8[0] = (int)(0);
+  pcVar2 = (char *)((char *)*param_1);
+  aiStack_8[1] = (int)(0);
+  if (param_2 - (int)pcVar2 < 1) {
+    return (int)(-0x60);
+  }
+  if (*pcVar2 != (char)(('0'))) {
+    return (int)(-0x62);
+  }
+  *param_1 = (uint)((uint)(pcVar2 + 1));
+  iVar6 = (int)(thunk_FUN_1140c520(param_1,param_2,&param_1), 0);
+  puVar5 = (uint *)(param_3);
+  if (iVar6 != 0) {
+    return (int)(iVar6);
+  }
+  if (0 < iVar7 - (int)*puVar4) {
+    *param_3 = (uint)((uint)*(byte *)*puVar4);
+    pcVar2 = (char *)((char *)*puVar4);
+    pbVar8 = (byte *)((byte *)((int)param_1 + (int)pcVar2));
+    if (0 < (int)pbVar8 - (int)pcVar2) {
+      if (*pcVar2 != (char)(('\x06'))) {
+        return (int)(-0x62);
+      }
+      puVar1 = (uint *)(param_3 + 1);
+      *puVar4 = (uint)((uint)(pcVar2 + 1));
+      iVar7 = (int)(thunk_FUN_1140c520(puVar4,pbVar8,puVar1), 0);
+      if (iVar7 == 0) {
+        puVar5[2] = (uint)(*puVar4);
+        *puVar4 = (uint)(*puVar4 + *puVar1);
+        pbVar3 = (byte *)((byte *)*puVar4);
+        if ((byte *)(pbVar3) == (byte *)(pbVar8)) {
+          thunk_FUN_11423ed0(&local_c,0xc);
+        }
+        else {
+          local_c = (uint)((uint)*pbVar3);
+          *puVar4 = (uint)((uint)(pbVar3 + 1));
+          iVar7 = (int)(thunk_FUN_1140c520(puVar4,pbVar8,(uint)&aiStack_8), 0);
+          if (iVar7 != 0) {
+            return (int)(iVar7);
+          }
+          *puVar4 = (uint)(*puVar4 + aiStack_8[0]);
+          if ((byte *)*puVar4 != (byte *)(((pbVar8)))) {
+            return (int)(-0x66);
+          }
+        }
+        if (((local_c != 5) && (local_c != 0)) || (aiStack_8[0] != 0)) {
+          return (int)(-0x68);
+        }
+        iVar7 = (int)(0);
+      }
+      return (int)(iVar7);
+    }
+  }
+  return (int)(-0x60);
+}
+
+
 // Reference entry 1140c340; body size 126 bytes.
 #line 1 "ENTRY_1140c340"
 
@@ -7306,6 +7443,38 @@ FUN_1140c8e0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined
     case 0xb:
       uVar1 = (undefined4)(thunk_FUN_11441ea0(param_2,param_3,param_4,0), 0);
       return (undefined4)(uVar1);
+    }
+  }
+  return (undefined4)(0xffffaf00);
+}
+
+
+// Reference entry 1140c9f0; body size 122 bytes.
+#line 1 "ENTRY_1140c9f0"
+
+undefined4 FUN_1140c9f0(int *param_1,int *param_2)
+
+{
+  undefined4 *puVar1;
+  
+  if (((((int *)(param_1) != (int *)(0x0)) && (*param_1 != (int)((0)))) && ((int *)(param_2) != (int *)(0x0))) &&
+     ((puVar1 = (undefined4 *)((undefined4 *)*param_2),(undefined4 *)( puVar1) != (undefined4 *)(0x0) &&
+      ((undefined4 *)*param_1 == (undefined4 *)(((puVar1))))))) {
+    switch(*puVar1) {
+    case 3:
+      thunk_FUN_1140e740(param_1[1],param_2[1]);
+      return (undefined4)(0);
+    case 5:
+      thunk_FUN_114101c0(param_1[1],param_2[1]);
+      return (undefined4)(0);
+    case 8:
+    case 9:
+      thunk_FUN_114116a0(param_1[1],param_2[1]);
+      return (undefined4)(0);
+    case 10:
+    case 0xb:
+      thunk_FUN_11442340(param_1[1],param_2[1]);
+      return (undefined4)(0);
     }
   }
   return (undefined4)(0xffffaf00);
@@ -8781,291 +8950,6 @@ int FUN_11410360(uint *param_1,void *param_2,uint param_3)
     }
   }
   return (int)(0);
-}
-
-
-// Reference entry 11410440; body size 3022 bytes.
-#line 1 "ENTRY_11410440"
-
-void FUN_11410440(int param_1,int param_2)
-
-{
- try {
-  int *piVar1;
-  uint uVar2;
-  uint uVar3;
-  uint uVar4;
-  int iVar5;
-  int aiStack_164 [4];
-  uint *puStack_154;
-  uint uStack_150;
-  uint local_13c [77];
-  uint local_8;
-  uint local_4;
-  
-  local_4 = (uint)(DAT_12126b84 ^ (uint)(uint)&local_13c);
-  local_13c[3] = (uint)(param_1);
-  local_13c[2] = (uint)(*(uint *)(param_1 + 0x48));
-  local_13c[0x46] = (uint)(local_13c[2]);
-  local_13c[1] = (uint)(*(uint *)(param_1 + 0x4c));
-  local_13c[0x47] = (uint)(local_13c[1]);
-  local_13c[0x48] = (uint)(*(uint *)(param_1 + 0x50));
-  local_13c[0x49] = (uint)(*(uint *)(param_1 + 0x54));
-  local_13c[0x4a] = (uint)(*(uint *)(param_1 + 0x58));
-  local_13c[0x4b] = (uint)(*(uint *)(param_1 + 0x5c));
-  local_13c[0x4c] = (uint)(*(uint *)(param_1 + 0x60));
-  local_8 = (uint)(*(uint *)(param_1 + 100));
-  uVar4 = (uint)(0);
-  do {
-    uVar2 = (uint)(*(uint *)(param_2 + uVar4 * 4));
-    local_13c[uVar4 + 6] = (uint)(uVar2 >> 0x18 | (uVar2 & 0xff0000) >> 8 | (uVar2 & 0xff00) << 8 | uVar2 << 0x18);
-    uVar4 = (uint)(uVar4 + 1);
-  } while (uVar4 < 0x10);
-  uVar4 = (uint)(0);
-  local_13c[0] = (uint)(local_13c[0x46]);
-  do {
-    iVar5 = (int)(local_8 + ((local_13c[0x4a] >> 0xb | local_13c[0x4a] << 0x15) ^
-                       (local_13c[0x4a] << 7 | local_13c[0x4a] >> 0x19) ^
-                      (local_13c[0x4a] >> 6 | local_13c[0x4a] << 0x1a)) +
-                      ((local_13c[0x4b] ^ local_13c[0x4c]) & local_13c[0x4a] ^ local_13c[0x4c]) +
-                      *(int *)((int)&DAT_11bfe6f0 + uVar4) + *(int *)((int)(uint)&local_13c + uVar4 + 0x18));
-    local_13c[0x49] = (uint)(iVar5 + local_13c[0x49]);
-    local_8 = (uint)(iVar5 + (local_13c[1] & local_13c[0] | (local_13c[1] | local_13c[0]) & local_13c[0x48]
-                      ) + ((local_13c[0] >> 0xd | local_13c[0] << 0x13) ^
-                           (local_13c[0] << 10 | local_13c[0] >> 0x16) ^
-                          (local_13c[0] >> 2 | local_13c[0] << 0x1e)));
-    iVar5 = (int)(((local_13c[0x49] >> 0xb | local_13c[0x49] * 0x200000) ^
-             (local_13c[0x49] * 0x80 | local_13c[0x49] >> 0x19) ^
-            (local_13c[0x49] >> 6 | local_13c[0x49] * 0x4000000)) +
-            ((local_13c[0x4b] ^ local_13c[0x4a]) & local_13c[0x49] ^ local_13c[0x4b]) +
-            *(int *)((int)&DAT_11bfe6f4 + uVar4) + *(int *)((int)(uint)&local_13c + uVar4 + 0x1c) +
-            local_13c[0x4c]);
-    local_13c[0x48] = (uint)(local_13c[0x48] + iVar5);
-    local_13c[0x4c] = (uint)(iVar5 + (local_8 & local_13c[0] | (local_8 | local_13c[0]) & local_13c[1]) +
-                 ((local_8 >> 0xd | local_8 * 0x80000) ^ (local_8 * 0x400 | local_8 >> 0x16) ^
-                 (local_8 >> 2 | local_8 * 0x40000000)));
-    iVar5 = (int)((local_13c[0x4a] ^ (local_13c[0x49] ^ local_13c[0x4a]) & local_13c[0x48]) +
-            ((local_13c[0x48] >> 0xb | local_13c[0x48] * 0x200000) ^
-             (local_13c[0x48] * 0x80 | local_13c[0x48] >> 0x19) ^
-            (local_13c[0x48] >> 6 | local_13c[0x48] * 0x4000000)) +
-            *(int *)((int)&DAT_11bfe6f8 + uVar4) + *(int *)((int)(uint)&local_13c + uVar4 + 0x20) +
-            local_13c[0x4b]);
-    local_13c[0x47] = (uint)(local_13c[1] + iVar5);
-    local_13c[0x4b] = (uint)((local_8 & local_13c[0x4c] | (local_8 | local_13c[0x4c]) & local_13c[0]) +
-         ((local_13c[0x4c] >> 0xd | local_13c[0x4c] * 0x80000) ^
-          (local_13c[0x4c] * 0x400 | local_13c[0x4c] >> 0x16) ^
-         (local_13c[0x4c] >> 2 | local_13c[0x4c] * 0x40000000)) + iVar5);
-    iVar5 = (int)(((local_13c[0x47] >> 0xb | local_13c[0x47] * 0x200000) ^
-             (local_13c[0x47] * 0x80 | local_13c[0x47] >> 0x19) ^
-            (local_13c[0x47] >> 6 | local_13c[0x47] * 0x4000000)) +
-            ((local_13c[0x48] ^ local_13c[0x49]) & local_13c[0x47] ^ local_13c[0x49]) +
-            *(int *)((int)&DAT_11bfe6fc + uVar4) + *(int *)((int)(uint)&local_13c + uVar4 + 0x24) +
-            local_13c[0x4a]);
-    local_13c[0x46] = (uint)(local_13c[0] + iVar5);
-    local_13c[0x4a] = (uint)((local_13c[0x4c] & local_13c[0x4b] | (local_13c[0x4c] | local_13c[0x4b]) & local_8) +
-         ((local_13c[0x4b] >> 0xd | local_13c[0x4b] * 0x80000) ^
-          (local_13c[0x4b] * 0x400 | local_13c[0x4b] >> 0x16) ^
-         (local_13c[0x4b] >> 2 | local_13c[0x4b] * 0x40000000)) + iVar5);
-    iVar5 = (int)(((local_13c[0x46] >> 0xb | local_13c[0x46] * 0x200000) ^
-             (local_13c[0x46] * 0x80 | local_13c[0x46] >> 0x19) ^
-            (local_13c[0x46] >> 6 | local_13c[0x46] * 0x4000000)) +
-            ((local_13c[0x47] ^ local_13c[0x48]) & local_13c[0x46] ^ local_13c[0x48]) +
-            *(int *)((int)&DAT_11bfe700 + uVar4) + *(int *)((int)(uint)&local_13c + uVar4 + 0x28) +
-            local_13c[0x49]);
-    local_8 = (uint)(local_8 + iVar5);
-    local_13c[0x49] = (uint)((local_13c[0x4b] & local_13c[0x4a] | (local_13c[0x4b] | local_13c[0x4a]) & local_13c[0x4c])
-         + ((local_13c[0x4a] >> 0xd | local_13c[0x4a] * 0x80000) ^
-            (local_13c[0x4a] * 0x400 | local_13c[0x4a] >> 0x16) ^
-           (local_13c[0x4a] >> 2 | local_13c[0x4a] * 0x40000000)) + iVar5);
-    iVar5 = (int)(((local_8 >> 0xb | local_8 * 0x200000) ^ (local_8 * 0x80 | local_8 >> 0x19) ^
-            (local_8 >> 6 | local_8 * 0x4000000)) +
-            ((local_13c[0x46] ^ local_13c[0x47]) & local_8 ^ local_13c[0x47]) +
-            *(int *)((int)&DAT_11bfe704 + uVar4) + *(int *)((int)(uint)&local_13c + uVar4 + 0x2c) +
-            local_13c[0x48]);
-    local_13c[0x4c] = (uint)(local_13c[0x4c] + iVar5);
-    local_13c[0x48] = (uint)((local_13c[0x4a] & local_13c[0x49] | (local_13c[0x4a] | local_13c[0x49]) & local_13c[0x4b])
-         + ((local_13c[0x49] >> 0xd | local_13c[0x49] * 0x80000) ^
-            (local_13c[0x49] * 0x400 | local_13c[0x49] >> 0x16) ^
-           (local_13c[0x49] >> 2 | local_13c[0x49] * 0x40000000)) + iVar5);
-    iVar5 = (int)(((local_8 ^ local_13c[0x46]) & local_13c[0x4c] ^ local_13c[0x46]) +
-            ((local_13c[0x4c] >> 0xb | local_13c[0x4c] * 0x200000) ^
-             (local_13c[0x4c] * 0x80 | local_13c[0x4c] >> 0x19) ^
-            (local_13c[0x4c] >> 6 | local_13c[0x4c] * 0x4000000)) +
-            *(int *)((int)(uint)&local_13c + uVar4 + 0x30) + *(int *)((int)&DAT_11bfe708 + uVar4) +
-            local_13c[0x47]);
-    local_13c[0x4b] = (uint)(local_13c[0x4b] + iVar5);
-    local_13c[1] = (uint)((local_13c[0x49] & local_13c[0x48] |
-                   (local_13c[0x49] | local_13c[0x48]) & local_13c[0x4a]) +
-                   ((local_13c[0x48] >> 0xd | local_13c[0x48] * 0x80000) ^
-                    (local_13c[0x48] * 0x400 | local_13c[0x48] >> 0x16) ^
-                   (local_13c[0x48] >> 2 | local_13c[0x48] * 0x40000000)) + iVar5);
-    local_13c[0x47] = (uint)(local_13c[1]);
-    iVar5 = (int)(uVar4 + 0x34);
-    piVar1 = (int *)((int *)((int)&DAT_11bfe70c + uVar4));
-    uVar4 = (uint)(uVar4 + 0x20);
-    iVar5 = (int)(((local_13c[0x4b] >> 0xb | local_13c[0x4b] * 0x200000) ^
-             (local_13c[0x4b] * 0x80 | local_13c[0x4b] >> 0x19) ^
-            (local_13c[0x4b] >> 6 | local_13c[0x4b] * 0x4000000)) +
-            ((local_13c[0x4c] ^ local_8) & local_13c[0x4b] ^ local_8) +
-            *(int *)((int)(uint)&local_13c + iVar5) + *piVar1 + local_13c[0x46]);
-    local_13c[0x4a] = (uint)(local_13c[0x4a] + iVar5);
-    local_13c[0] = (uint)(iVar5 + (local_13c[1] & local_13c[0x48] |
-                           (local_13c[1] | local_13c[0x48]) & local_13c[0x49]) +
-                           ((local_13c[1] >> 0xd | local_13c[1] * 0x80000) ^
-                            (local_13c[1] * 0x400 | local_13c[1] >> 0x16) ^
-                           (local_13c[1] >> 2 | local_13c[1] * 0x40000000)));
-    local_13c[0x46] = (uint)(local_13c[0]);
-  } while (uVar4 < 0x40);
-  uVar4 = (uint)(0x40);
-  do {
-    uVar2 = (uint)(*(uint *)((int)(uint)&local_13c + uVar4 + 0x10));
-    uVar3 = (uint)(*(uint *)((int)(uint)&aiStack_164 + uVar4 + 4));
-    iVar5 = (int)(((uVar2 << 0xf | uVar2 >> 0x11) ^ (uVar2 << 0xd | uVar2 >> 0x13) ^ uVar2 >> 10) +
-            ((uVar3 << 0xe | uVar3 >> 0x12) ^ (uVar3 >> 7 | uVar3 << 0x19) ^ uVar3 >> 3) +
-            *(int *)((int)(uint)&aiStack_164 + uVar4) + *(int *)(&stack0xfffffec0 + uVar4));
-    *(int*)((int)(uint)&local_13c + uVar4 + 0x18) = (int)(iVar5);
-    iVar5 = (int)(iVar5 + ((local_13c[0x4a] >> 0xb | local_13c[0x4a] << 0x15) ^
-                     (local_13c[0x4a] << 7 | local_13c[0x4a] >> 0x19) ^
-                    (local_13c[0x4a] >> 6 | local_13c[0x4a] << 0x1a)) +
-                    ((local_13c[0x4b] ^ local_13c[0x4c]) & local_13c[0x4a] ^ local_13c[0x4c]) +
-                    *(int *)((int)&DAT_11bfe6f0 + uVar4) + local_8);
-    local_13c[0x49] = (uint)(local_13c[0x49] + iVar5);
-    local_8 = (uint)((local_13c[0x47] & local_13c[0x46] |
-              (local_13c[0x47] | local_13c[0x46]) & local_13c[0x48]) +
-              ((local_13c[0x46] >> 0xd | local_13c[0x46] << 0x13) ^
-               (local_13c[0x46] << 10 | local_13c[0x46] >> 0x16) ^
-              (local_13c[0x46] >> 2 | local_13c[0x46] << 0x1e)) + iVar5);
-    uVar2 = (uint)(*(uint *)((int)(uint)&local_13c + uVar4 + 0x14));
-    uVar3 = (uint)(*(uint *)((int)(uint)&aiStack_164 + uVar4 + 8));
-    iVar5 = (int)(((uVar2 << 0xf | uVar2 >> 0x11) ^ (uVar2 << 0xd | uVar2 >> 0x13) ^ uVar2 >> 10) +
-            ((uVar3 << 0xe | uVar3 >> 0x12) ^ (uVar3 >> 7 | uVar3 << 0x19) ^ uVar3 >> 3) +
-            *(int *)((int)(uint)&local_13c + uVar4) + *(int *)((int)(uint)&aiStack_164 + uVar4 + 4));
-    *(int*)((int)(uint)&local_13c + uVar4 + 0x1c) = (int)(iVar5);
-    iVar5 = (int)(iVar5 + ((local_13c[0x49] >> 0xb | local_13c[0x49] * 0x200000) ^
-                     (local_13c[0x49] * 0x80 | local_13c[0x49] >> 0x19) ^
-                    (local_13c[0x49] >> 6 | local_13c[0x49] * 0x4000000)) +
-                    ((local_13c[0x4b] ^ local_13c[0x4a]) & local_13c[0x49] ^ local_13c[0x4b]) +
-                    *(int *)((int)&DAT_11bfe6f4 + uVar4) + local_13c[0x4c]);
-    local_13c[0x48] = (uint)(local_13c[0x48] + iVar5);
-    local_13c[0x4c] = (uint)((local_13c[0x46] & local_8 | (local_13c[0x46] | local_8) & local_13c[0x47]) +
-         ((local_8 >> 0xd | local_8 * 0x80000) ^ (local_8 * 0x400 | local_8 >> 0x16) ^
-         (local_8 >> 2 | local_8 * 0x40000000)) + iVar5);
-    uVar2 = (uint)(*(uint *)((int)(uint)&aiStack_164 + uVar4 + 0xc));
-    uVar3 = (uint)(*(uint *)((int)(uint)&local_13c + uVar4 + 0x18));
-    iVar5 = (int)(((uVar2 << 0xe | uVar2 >> 0x12) ^ (uVar2 >> 7 | uVar2 << 0x19) ^ uVar2 >> 3) +
-            ((uVar3 << 0xf | uVar3 >> 0x11) ^ (uVar3 << 0xd | uVar3 >> 0x13) ^ uVar3 >> 10) +
-            *(int *)((int)(uint)&local_13c + uVar4 + 4) + *(int *)((int)(uint)&aiStack_164 + uVar4 + 8));
-    *(int*)((int)(uint)&local_13c + uVar4 + 0x20) = (int)(iVar5);
-    iVar5 = (int)(iVar5 + ((local_13c[0x48] >> 0xb | local_13c[0x48] * 0x200000) ^
-                     (local_13c[0x48] * 0x80 | local_13c[0x48] >> 0x19) ^
-                    (local_13c[0x48] >> 6 | local_13c[0x48] * 0x4000000)) +
-                    ((local_13c[0x49] ^ local_13c[0x4a]) & local_13c[0x48] ^ local_13c[0x4a]) +
-                    *(int *)((int)&DAT_11bfe6f8 + uVar4) + local_13c[0x4b]);
-    local_13c[0x47] = (uint)(local_13c[0x47] + iVar5);
-    local_13c[0x4b] = (uint)((local_8 & local_13c[0x4c] | (local_8 | local_13c[0x4c]) & local_13c[0x46]) +
-         ((local_13c[0x4c] >> 0xd | local_13c[0x4c] * 0x80000) ^
-          (local_13c[0x4c] * 0x400 | local_13c[0x4c] >> 0x16) ^
-         (local_13c[0x4c] >> 2 | local_13c[0x4c] * 0x40000000)) + iVar5);
-    uVar2 = (uint)(*(uint *)((int)&puStack_154 + uVar4));
-    uVar3 = (uint)(*(uint *)((int)(uint)&local_13c + uVar4 + 0x1c));
-    iVar5 = (int)(((uVar2 << 0xe | uVar2 >> 0x12) ^ (uVar2 >> 7 | uVar2 << 0x19) ^ uVar2 >> 3) +
-            ((uVar3 << 0xf | uVar3 >> 0x11) ^ (uVar3 << 0xd | uVar3 >> 0x13) ^ uVar3 >> 10) +
-            *(int *)((int)(uint)&local_13c + uVar4 + 8) + *(int *)((int)(uint)&aiStack_164 + uVar4 + 0xc));
-    *(int*)((int)(uint)&local_13c + uVar4 + 0x24) = (int)(iVar5);
-    iVar5 = (int)(iVar5 + ((local_13c[0x47] >> 0xb | local_13c[0x47] << 0x15) ^
-                     (local_13c[0x47] << 7 | local_13c[0x47] >> 0x19) ^
-                    (local_13c[0x47] >> 6 | local_13c[0x47] << 0x1a)) +
-                    ((local_13c[0x49] ^ local_13c[0x48]) & local_13c[0x47] ^ local_13c[0x49]) +
-                    *(int *)((int)&DAT_11bfe6fc + uVar4) + local_13c[0x4a]);
-    local_13c[0x46] = (uint)(local_13c[0x46] + iVar5);
-    local_13c[0x4a] = (uint)((local_13c[0x4c] & local_13c[0x4b] | (local_13c[0x4b] | local_13c[0x4c]) & local_8) +
-         ((local_13c[0x4b] >> 0xd | local_13c[0x4b] * 0x80000) ^
-          (local_13c[0x4b] * 0x400 | local_13c[0x4b] >> 0x16) ^
-         (local_13c[0x4b] >> 2 | local_13c[0x4b] * 0x40000000)) + iVar5);
-    uVar2 = (uint)(*(uint *)((int)(uint)&local_13c + uVar4 + 0x20));
-    uVar3 = (uint)(*(uint *)((int)&uStack_150 + uVar4));
-    iVar5 = (int)(((uVar2 << 0xf | uVar2 >> 0x11) ^ (uVar2 << 0xd | uVar2 >> 0x13) ^ uVar2 >> 10) +
-            ((uVar3 << 0xe | uVar3 >> 0x12) ^ (uVar3 >> 7 | uVar3 << 0x19) ^ uVar3 >> 3) +
-            *(int *)((int)(uint)&local_13c + uVar4 + 0xc) + *(int *)((int)&puStack_154 + uVar4));
-    *(int*)((int)(uint)&local_13c + uVar4 + 0x28) = (int)(iVar5);
-    iVar5 = (int)(iVar5 + ((local_13c[0x46] >> 0xb | local_13c[0x46] << 0x15) ^
-                     (local_13c[0x46] << 7 | local_13c[0x46] >> 0x19) ^
-                    (local_13c[0x46] >> 6 | local_13c[0x46] << 0x1a)) +
-                    ((local_13c[0x48] ^ local_13c[0x47]) & local_13c[0x46] ^ local_13c[0x48]) +
-                    *(int *)((int)&DAT_11bfe700 + uVar4) + local_13c[0x49]);
-    local_8 = (uint)(local_8 + iVar5);
-    local_13c[0x49] = (uint)((local_13c[0x4b] & local_13c[0x4a] | (local_13c[0x4b] | local_13c[0x4a]) & local_13c[0x4c])
-         + ((local_13c[0x4a] >> 0xd | local_13c[0x4a] * 0x80000) ^
-            (local_13c[0x4a] * 0x400 | local_13c[0x4a] >> 0x16) ^
-           (local_13c[0x4a] >> 2 | local_13c[0x4a] * 0x40000000)) + iVar5);
-    uVar2 = (uint)(*(uint *)(&stack0xfffffeb4 + uVar4));
-    uVar3 = (uint)(*(uint *)((int)(uint)&local_13c + uVar4 + 0x24));
-    iVar5 = (int)(((uVar2 << 0xe | uVar2 >> 0x12) ^ (uVar2 >> 7 | uVar2 << 0x19) ^ uVar2 >> 3) +
-            ((uVar3 << 0xf | uVar3 >> 0x11) ^ (uVar3 << 0xd | uVar3 >> 0x13) ^ uVar3 >> 10) +
-            *(int *)((int)(uint)&local_13c + uVar4 + 0x10) + *(int *)((int)&uStack_150 + uVar4));
-    *(int*)((int)(uint)&local_13c + uVar4 + 0x2c) = (int)(iVar5);
-    iVar5 = (int)(iVar5 + ((local_8 >> 0xb | local_8 * 0x200000) ^ (local_8 * 0x80 | local_8 >> 0x19) ^
-                    (local_8 >> 6 | local_8 * 0x4000000)) +
-                    ((local_13c[0x47] ^ local_13c[0x46]) & local_8 ^ local_13c[0x47]) +
-                    *(int *)((int)&DAT_11bfe704 + uVar4) + local_13c[0x48]);
-    local_13c[0x4c] = (uint)(local_13c[0x4c] + iVar5);
-    local_13c[0x48] = (uint)((local_13c[0x4a] & local_13c[0x49] | (local_13c[0x49] | local_13c[0x4a]) & local_13c[0x4b])
-         + ((local_13c[0x49] >> 0xd | local_13c[0x49] << 0x13) ^
-            (local_13c[0x49] << 10 | local_13c[0x49] >> 0x16) ^
-           (local_13c[0x49] >> 2 | local_13c[0x49] << 0x1e)) + iVar5);
-    uVar2 = (uint)(*(uint *)((int)(uint)&local_13c + uVar4 + 0x28));
-    uVar3 = (uint)(*(uint *)(&stack0xfffffeb8 + uVar4));
-    iVar5 = (int)(((uVar2 << 0xf | uVar2 >> 0x11) ^ (uVar2 << 0xd | uVar2 >> 0x13) ^ uVar2 >> 10) +
-            ((uVar3 << 0xe | uVar3 >> 0x12) ^ (uVar3 >> 7 | uVar3 << 0x19) ^ uVar3 >> 3) +
-            *(int *)((int)(uint)&local_13c + uVar4 + 0x14) + *(int *)(&stack0xfffffeb4 + uVar4));
-    *(int*)((int)(uint)&local_13c + uVar4 + 0x30) = (int)(iVar5);
-    iVar5 = (int)(iVar5 + ((local_13c[0x4c] >> 0xb | local_13c[0x4c] * 0x200000) ^
-                     (local_13c[0x4c] * 0x80 | local_13c[0x4c] >> 0x19) ^
-                    (local_13c[0x4c] >> 6 | local_13c[0x4c] * 0x4000000)) +
-                    ((local_13c[0x46] ^ local_8) & local_13c[0x4c] ^ local_13c[0x46]) +
-                    *(int *)((int)&DAT_11bfe708 + uVar4) + local_13c[0x47]);
-    local_13c[0x4b] = (uint)(local_13c[0x4b] + iVar5);
-    local_13c[0x47] = (uint)((local_13c[0x49] & local_13c[0x48] | (local_13c[0x49] | local_13c[0x48]) & local_13c[0x4a])
-         + ((local_13c[0x48] >> 0xd | local_13c[0x48] << 0x13) ^
-            (local_13c[0x48] << 10 | local_13c[0x48] >> 0x16) ^
-           (local_13c[0x48] >> 2 | local_13c[0x48] << 0x1e)) + iVar5);
-    uVar2 = (uint)(*(uint *)((int)(uint)&local_13c + uVar4 + 0x2c));
-    uVar3 = (uint)(*(uint *)(&stack0xfffffebc + uVar4));
-    iVar5 = (int)((uVar3 >> 3 ^ (uVar3 << 0xe | uVar3 >> 0x12) ^ (uVar3 >> 7 | uVar3 << 0x19)) +
-            ((uVar2 << 0xf | uVar2 >> 0x11) ^ (uVar2 << 0xd | uVar2 >> 0x13) ^ uVar2 >> 10) +
-            *(int *)(&stack0xfffffeb8 + uVar4) + *(int *)((int)(uint)&local_13c + uVar4 + 0x18));
-    *(int*)((int)(uint)&local_13c + uVar4 + 0x34) = (int)(iVar5);
-    piVar1 = (int *)((int *)((int)&DAT_11bfe70c + uVar4));
-    uVar4 = (uint)(uVar4 + 0x20);
-    local_13c[4] = (uint)((local_8 ^ (local_8 ^ local_13c[0x4c]) & local_13c[0x4b]) +
-                   ((local_13c[0x4b] >> 0xb | local_13c[0x4b] << 0x15) ^
-                    (local_13c[0x4b] << 7 | local_13c[0x4b] >> 0x19) ^
-                   (local_13c[0x4b] >> 6 | local_13c[0x4b] << 0x1a)) + *piVar1 + iVar5 +
-                   local_13c[0x46]);
-    local_13c[5] = (uint)(((local_13c[0x48] | local_13c[0x47]) & local_13c[0x49] |
-                   local_13c[0x48] & local_13c[0x47]) +
-                   ((local_13c[0x47] >> 0xd | local_13c[0x47] << 0x13) ^
-                    (local_13c[0x47] << 10 | local_13c[0x47] >> 0x16) ^
-                   (local_13c[0x47] >> 2 | local_13c[0x47] << 0x1e)));
-    local_13c[0x4a] = (uint)(local_13c[0x4a] + local_13c[4]);
-    local_13c[0x46] = (uint)(local_13c[5] + local_13c[4]);
-  } while (uVar4 < 0x100);
-
-  *(uint*)(param_1 + 0x48) = (uint)(local_13c[2] + local_13c[5] + local_13c[4]);
-  *(int*)(param_1 + 0x50) = (int)(*(int *)(param_1 + 0x50) + local_13c[0x48]);
-  *(int*)(param_1 + 0x54) = (int)(*(int *)(param_1 + 0x54) + local_13c[0x49]);
-  *(int*)(param_1 + 0x60) = (int)(*(int *)(param_1 + 0x60) + local_13c[0x4c]);
-  *(int*)(param_1 + 100) = (int)(*(int *)(param_1 + 100) + local_8);
-  puStack_154 = (uint *)((uint)&local_13c + 4);
-  *(int*)(param_1 + 0x4c) = (int)(*(int *)(param_1 + 0x4c) + local_13c[0x47]);
-  *(int*)(param_1 + 0x58) = (int)(*(int *)(param_1 + 0x58) + local_13c[0x4a]);
-  *(int*)(param_1 + 0x5c) = (int)(*(int *)(param_1 + 0x5c) + local_13c[0x4b]);
-  aiStack_164[3] = (int)(0x11410ff0);
-  thunk_FUN_11423ed0();
-  thunk_FUN_1148ac28();
-  return;
-
- } catch (...) { }
 }
 
 
@@ -10695,7 +10579,7 @@ LAB_114140b4:
               uVar8 = (uint)(thunk_FUN_11447120(local_80,local_7c >> 0x10), 0);
               puVar9 = (undefined4 *)(puVar5);
               if ((uVar8 & 0x1f) < 0x1f) {
-                local_38 = (undefined4 **)((undefined4 **)(0x1f - (uVar8 & 0x1f)), 0);
+                local_38 = (undefined4 **)((undefined4 **)(0x1f - (uVar8 & 0x1f)));
                 iVar4 = (int)(thunk_FUN_11417740(&local_78,local_38), 0);
                 if (iVar4 != 0) goto LAB_114145a7;
                 iVar4 = (int)(thunk_FUN_11417740(&local_80,local_38), 0);
@@ -11115,11 +10999,11 @@ int FUN_11414db0(undefined4 param_1,undefined4 param_2,undefined4 param_3)
             }
           }
         }
-        ppuVar6 = (uint **)((uint **)(uint)uVar7, 0);
+        ppuVar6 = (uint **)((uint **)(uint)uVar7);
         iVar1 = (int)(thunk_FUN_11447120(_Src,ppuVar6), 0);
         uVar3 = (uint)(iVar1 + uVar2);
         if ((uint)((int)ppuVar6 << 5) < uVar3) {
-          local_18 = (uint **)((uint **)((uint)((uVar3 & 0x1f) != 0) + (uVar3 >> 5)), 0);
+          local_18 = (uint **)((uint **)((uint)((uVar3 & 0x1f) != 0) + (uVar3 >> 5)));
           if ((uint **)(0x2710) < (uint **)((local_18))) {
             iVar1 = (int)(-0x10);
             goto LAB_1141503f;
@@ -11305,7 +11189,7 @@ LAB_1141545a:
         }
         do {
           iVar3 = (int)(FUN_11418580(param_1), 0);
-          if (((((iVar3 == 0) && (iVar3 = (int)(FUN_11418580(&local_28), 0), uVar2 = (undefined4)(param_5), iVar3 == 0)) &&
+          if (((((iVar3 == 0) && (iVar3 = (int)((int)(FUN_11418580(&local_28), 0), 0), uVar2 = (undefined4)(param_5), iVar3 == 0)) &&
                (iVar3 = (int)(FUN_114186d0(param_1,cVar7,param_4,param_5), 0), iVar3 == 0)) &&
               (iVar3 = (int)(FUN_114186d0(&local_28,cVar7,param_4,uVar2), 0), iVar3 == 0)) || (iVar3 != -0xe))
           break;
@@ -13419,7 +13303,7 @@ LAB_1141a31f:
           iVar3 = (int)(thunk_FUN_11417b50(iVar2,iVar2,1), 0);
           if (iVar3 != 0) break;
           iVar3 = (int)(thunk_FUN_11416670((uint)&local_18,iVar1,iVar2), 0);
-          if ((iVar3 != 0) || (iVar3 = (int)(thunk_FUN_11414db0((uint)&local_10,iVar7,(uint)&local_18), 0), iVar3 != 0))
+          if ((iVar3 != 0) || (iVar3 = (int)((int)(thunk_FUN_11414db0((uint)&local_10,iVar7,(uint)&local_18), 0), 0), iVar3 != 0))
           break;
           iVar3 = (int)(thunk_FUN_11413b90((uint)&local_10,1), 0);
           if (iVar3 == 0) {
@@ -34432,7 +34316,7 @@ void FUN_11448940(undefined4 *param_1,undefined4 param_2,uint param_3,int *param
       local_4c = (uint)((uint)(((byte)*(undefined4 *)*param_1 & 7) == 1));
       do {
         iVar3 = (int)(thunk_FUN_114161b0((uint)&local_64,*(undefined1 *)((int)&local_44 + (local_4c & 0xffff))), 0);
-        if ((iVar3 != 0) || (iVar3 = (int)(thunk_FUN_11414db0(param_4,(uint)&local_64,param_1), 0), iVar3 != 0))
+        if ((iVar3 != 0) || (iVar3 = (int)((int)(thunk_FUN_11414db0(param_4,(uint)&local_64,param_1), 0), 0), iVar3 != 0))
         break;
         iVar3 = (int)(thunk_FUN_11413b90(param_4,1), 0);
         if (iVar3 == 0) {
@@ -64526,29 +64410,6 @@ void FUN_1148aaa4(int *param_1)
   LeaveCriticalSection((LPCRITICAL_SECTION)&DAT_122fac08);
   __Init_thread_notify();
   return;
-}
-
-
-// Reference entry 1148ab00; body size 82 bytes.
-#line 1 "ENTRY_1148ab00"
-
-void FUN_1148ab00(int *param_1)
-
-{
-  EnterCriticalSection((LPCRITICAL_SECTION)&DAT_122fac08);
-  do {
-    if (*param_1 == (int)((0))) {
-      *param_1 = (int)(-1);
-LAB_1148ab47:
-      LeaveCriticalSection((LPCRITICAL_SECTION)&DAT_122fac08);
-      return;
-    }
-    if (*param_1 != -1) {
-      *(undefined4*)(*(int *)((int)((void *)__readfsdword(0x18)) + _tls_index * 4) + 0x104) = (undefined4)(DAT_12126b74);
-      goto LAB_1148ab47;
-    }
-    __Init_thread_wait(100);
-  } while( true );
 }
 
 
