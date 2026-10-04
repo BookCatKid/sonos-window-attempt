@@ -3101,6 +3101,9 @@ extern char s_Rhapsody_UPnP_11893144[];
 extern char s_UMTracking_1189857c[];
 extern char s_Windows_Media_Server_11893128[];
 extern void *ExceptionList;
+extern int FUN_112a9d50(...);
+extern int FUN_112a9d70(...);
+extern int FUN_112aa350(...);
 void FUN_102e6d60(undefined4 param_1,undefined4 *param_2);
 template<class... A> int FUN_102e6d60(A...);
 void FUN_102e6ed0(undefined4 param_1,int param_2);
@@ -24561,13 +24564,13 @@ void __thiscall Recovered_Bulk::m_FUN_10309ae0(undefined4 param_2,undefined2 par
 {
   int param_1 = (int )this;
   *(undefined4*)(param_1 + 0x14) = (undefined4)(0);
-  thunk_FUN_112a7f50(param_1 + 0x18);
+  FUN_112a9d50(param_1 + 0x18);
   if (*(char *)(param_1 + 8) == '\0') {
     *(undefined1*)(param_1 + 8) = (undefined1)(1);
     *(undefined2*)(param_1 + 10) = (undefined2)(param_3);
   }
-  thunk_FUN_112a7c70(param_1 + 0x20);
-  thunk_FUN_112a8010(param_1 + 0x18);
+  FUN_112aa350(param_1 + 0x20);
+  FUN_112a9d70(param_1 + 0x18);
   return;
 }
 

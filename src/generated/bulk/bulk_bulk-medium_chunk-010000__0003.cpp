@@ -345,6 +345,8 @@ extern undefined1 LAB_1003ddb6[];
 extern int *PTR_s_A_ALBUMARTIST_1211dae0;
 extern int *PTR_s_ServiceListVersion_119c37dc;
 extern int *PTR_s_TransportState_119c29e8;
+extern int FUN_112a9d40(...);
+extern int FUN_112aa340(...);
 undefined4 __fastcall FUN_110a1230(int param_1);
 template<class... A> int FUN_110a1230(A...);
 undefined4 __fastcall FUN_110a12a0(int param_1);
@@ -1152,8 +1154,8 @@ void __fastcall FUN_110a9d60(undefined4 *param_1)
 
 {
   free((void *)*param_1);
-  thunk_FUN_112a7c30(param_1 + 9);
-  thunk_FUN_112a7f20(param_1 + 7);
+  FUN_112aa340(param_1 + 9);
+  FUN_112a9d40(param_1 + 7);
   return;
 }
 

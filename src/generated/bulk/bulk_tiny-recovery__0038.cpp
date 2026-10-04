@@ -917,6 +917,20 @@ extern int FUN_11484480(...);
 extern int FUN_1148b0c0(...);
 extern int DAT_121a06cc;
 extern int DAT_121a06d0;
+extern int FUN_1011f5e0(...);
+extern int FUN_101a3840(...);
+extern int FUN_101a38b0(...);
+extern int FUN_101ae960(...);
+extern int FUN_101c6810(...);
+extern int FUN_101d2ba0(...);
+extern int FUN_101ec4a0(...);
+extern int FUN_10207220(...);
+extern int FUN_10217af0(...);
+extern int FUN_10282470(...);
+extern int FUN_102d6620(...);
+extern int FUN_10309690(...);
+extern int FUN_1123fcd0(...);
+extern int FUN_1123fce0(...);
 void FUN_10098c52(void);
 template<class... A> int FUN_10098c52(A...);
 void FUN_10098c5c(void);
@@ -10886,7 +10900,7 @@ void FUN_1009aafc(void)
 void FUN_1011f800(void)
 
 {
-  FUN_1001fc8a();
+  FUN_1011f5e0();
 }
 
 
@@ -10906,7 +10920,7 @@ void FUN_10120110(void)
 void FUN_10125040(void)
 
 {
-  FUN_1003564d();
+  FUN_101a3840();
 }
 
 
@@ -10916,7 +10930,7 @@ void FUN_10125040(void)
 void FUN_10125050(void)
 
 {
-  FUN_10015c12();
+  FUN_101a38b0();
 }
 
 
@@ -14918,7 +14932,7 @@ void __stdcall FUN_10183f60(int param_1)
 void FUN_10184000(void)
 
 {
-  FUN_10081110();
+  FUN_102d6620();
 }
 
 
@@ -16238,7 +16252,7 @@ undefined4 FUN_1019b000(void)
 void FUN_1019f3a0(void)
 
 {
-  FUN_100882fd();
+  FUN_10282470();
 }
 
 
@@ -16248,7 +16262,7 @@ void FUN_1019f3a0(void)
 void FUN_101a2180(void)
 
 {
-  FUN_1001718e();
+  FUN_1123fcd0();
 }
 
 
@@ -16258,7 +16272,7 @@ void FUN_101a2180(void)
 void FUN_101a21a0(void)
 
 {
-  FUN_10066e8c();
+  FUN_1123fce0();
 }
 
 
@@ -16298,7 +16312,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_101aa0b0(void)
 void FUN_101ad9f0(void)
 
 {
-  FUN_10045827();
+  FUN_101ae960();
 }
 
 
@@ -16928,7 +16942,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_101beac0(void)
 void FUN_101c6340(void)
 
 {
-  FUN_10027714();
+  FUN_101c6810();
 }
 
 
@@ -16978,7 +16992,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_101caf60(void)
 void FUN_101d2dd0(void)
 
 {
-  FUN_1008e5bd();
+  FUN_101d2ba0();
 }
 
 
@@ -17288,7 +17302,7 @@ void __thiscall Recovered_Bulk::m_FUN_101de5e5(void)
 void FUN_101eb1a0(void)
 
 {
-  FUN_10030f8f();
+  FUN_101ec4a0();
 }
 
 
@@ -17498,7 +17512,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_101f6ba0(void)
 void FUN_101f8330(void)
 
 {
-  FUN_100351b1();
+  FUN_10309690();
 }
 
 
@@ -17528,7 +17542,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_101fb580(void)
 void FUN_10202c70(void)
 
 {
-  FUN_1000a24f();
+  FUN_10207220();
 }
 
 
@@ -18028,7 +18042,7 @@ void __stdcall FUN_10207ff0(unsigned int recovered_unused_stack_0, unsigned int 
 void FUN_102088f0(void)
 
 {
-  FUN_100911b9();
+  FUN_10217af0();
 }
 
 

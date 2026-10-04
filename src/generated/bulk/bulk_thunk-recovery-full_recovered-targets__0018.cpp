@@ -274,6 +274,8 @@ extern undefined1 LAB_116cfec0[];
 extern undefined1 LAB_116d4e00[];
 extern undefined1 LAB_116d7be0[];
 extern void *ExceptionList;
+extern int FUN_112a9d50(...);
+extern int FUN_112a9d70(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_10bd1ae0(undefined4 param_1);
 template<class... A> int FUN_10bd1ae0(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_10bd1af0(undefined4 param_1);
@@ -13231,13 +13233,13 @@ int FUN_10bf1150(void)
 {
   int iVar1;
   
-  thunk_FUN_112a7f50(&DAT_121a524c);
+  FUN_112a9d50(&DAT_121a524c);
   DAT_121a5254 = (int)(DAT_121a5254 + 1);
   if (DAT_121a5254 == -1) {
     DAT_121a5254 = (int)(1);
   }
   iVar1 = (int)(DAT_121a5254);
-  thunk_FUN_112a8010(&DAT_121a524c);
+  FUN_112a9d70(&DAT_121a524c);
   return (int)(iVar1);
 }
 

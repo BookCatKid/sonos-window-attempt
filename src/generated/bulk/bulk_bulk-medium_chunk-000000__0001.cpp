@@ -510,6 +510,7 @@ extern undefined1 LAB_11512550[];
 extern undefined1 LAB_11512580[];
 extern undefined1 LAB_11513240[];
 extern void *ExceptionList;
+extern int FUN_112a9d70(...);
 void __stdcall FUN_1019c9f0(int *param_1);
 template<class... A> int FUN_1019c9f0(A...);
 void __stdcall FUN_1019ca10(int *param_1);
@@ -12780,7 +12781,7 @@ void __fastcall FUN_101dfd50(undefined4 *param_1)
 
 {
   if (*(char *)(param_1 + 1) != '\0') {
-    thunk_FUN_112a8010(*param_1);
+    FUN_112a9d70(*param_1);
     *(undefined1*)(param_1 + 1) = (undefined1)(0);
   }
   return;

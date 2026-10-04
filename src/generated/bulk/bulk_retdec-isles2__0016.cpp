@@ -14696,15 +14696,6 @@ int FUN_116f14f5(int a1) {
     return (int)(a1 + 12);
 }
 
-// Reference entry 116f1501; body size 30 bytes.
-#line 1 "ENTRY_116f1501"
-int FUN_116f1501(void) {
-
-    thunk_FUN_1148ac28();
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
-}
-
 // Reference entry 116f158f; body size 29 bytes.
 #line 1 "ENTRY_116f158f"
 int FUN_116f158f(int a1) {
@@ -15007,15 +14998,6 @@ int FUN_116f20a7(int a1) {
     return (int)(a1 + 12);
 }
 
-// Reference entry 116f20b3; body size 30 bytes.
-#line 1 "ENTRY_116f20b3"
-int FUN_116f20b3(void) {
-
-    thunk_FUN_1148ac28();
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
-}
-
 // Reference entry 116f213d; body size 39 bytes.
 #line 1 "ENTRY_116f213d"
 int FUN_116f213d(int a1) {
@@ -15070,15 +15052,6 @@ int FUN_116f2345(int a1) {
 int FUN_116f239d(int a1) {
 
     return (int)(a1 + 12);
-}
-
-// Reference entry 116f23a9; body size 30 bytes.
-#line 1 "ENTRY_116f23a9"
-int FUN_116f23a9(void) {
-
-    thunk_FUN_1148ac28();
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
 }
 
 // Reference entry 116f23ed; body size 29 bytes.

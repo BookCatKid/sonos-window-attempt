@@ -669,6 +669,7 @@ extern int *PTR_DAT_11993d30;
 extern int *PTR_DAT_11993d3c;
 extern int *PTR_DAT_12126b6c;
 extern void *ExceptionList;
+extern int FUN_111ac6a0(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_10ff7000(void);
 template<class... A> int FUN_10ff7000(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __fastcall FUN_10ff83a0(undefined4 *param_1);
@@ -12394,7 +12395,7 @@ void FUN_11039aa0(int param_1,int param_2)
   if (param_2 != '\0') {
     *(undefined4*)(param_1 + 8) = (undefined4)(6);
   }
-  thunk_FUN_111af700(param_1 + 0x28);
+  FUN_111ac6a0(param_1 + 0x28);
   return;
 }
 

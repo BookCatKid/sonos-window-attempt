@@ -325,6 +325,9 @@ extern undefined1 LAB_11549410[];
 extern undefined1 LAB_1154a630[];
 extern undefined1 LAB_1154a660[];
 extern void *ExceptionList;
+extern int FUN_112a9d50(...);
+extern int FUN_112a9d70(...);
+extern int FUN_112aa350(...);
 void __stdcall FUN_1036b5d0(int param_1,int param_2);
 template<class... A> int FUN_1036b5d0(A...);
 void __stdcall FUN_1036b650(undefined4 param_1,undefined4 param_2);
@@ -6275,9 +6278,9 @@ void __fastcall FUN_103d5450(int param_1)
 
 {
   *(undefined1*)(param_1 + 0x5c) = (undefined1)(0);
-  thunk_FUN_112a7f50(param_1 + 0x2c);
-  thunk_FUN_112a7c70(param_1 + 0x34);
-  thunk_FUN_112a8010(param_1 + 0x2c);
+  FUN_112a9d50(param_1 + 0x2c);
+  FUN_112aa350(param_1 + 0x34);
+  FUN_112a9d70(param_1 + 0x2c);
   return;
 }
 

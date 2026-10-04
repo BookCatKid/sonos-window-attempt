@@ -601,6 +601,9 @@ extern undefined1 LAB_1153f440[];
 extern int *PTR_DAT_12119128;
 extern int *PTR_DAT_12126b6c;
 extern void *ExceptionList;
+extern int FUN_112a9d50(...);
+extern int FUN_112a9d70(...);
+extern int FUN_112aa350(...);
 SCStr * __stdcall FUN_10261350(SCStr *param_1);
 template<class... A> int FUN_10261350(A...);
 bool __stdcall FUN_10261d60(SCStr *param_1);
@@ -5099,9 +5102,9 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10280480(byte param_2)
 void __fastcall FUN_10280510(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
-  thunk_FUN_112a7f50(param_1 + 0x1c);
+  FUN_112a9d50(param_1 + 0x1c);
   *(undefined1*)(param_1 + 0x4c) = (undefined1)(0);
-  thunk_FUN_112a8010(param_1 + 0x1c);
+  FUN_112a9d70(param_1 + 0x1c);
   PTR_DAT_12119128 = (int *)((undefined *)0x0);
   thunk_FUN_110fc270();
   return;
@@ -16979,21 +16982,22 @@ void __fastcall FUN_1030b1c0(int param_1, unsigned int recovered_unused_stack_0,
 // Reference entry 1030b770; body size 58 bytes.
 #line 1 "ENTRY_1030b770"
 
+void __this
 void __thiscall Recovered_Bulk::m_FUN_1030b770(undefined2 param_2)
 {
   int param_1 = (int )this;
-  thunk_FUN_112a7f50(param_1 + 0x18);
+  FUN_112a9d50(param_1 + 0x18);
   if (*(char *)(param_1 + 8) == '\0') {
     *(undefined1*)(param_1 + 8) = (undefined1)(1);
     *(undefined2*)(param_1 + 10) = (undefined2)(param_2);
   }
-  thunk_FUN_112a7c70(param_1 + 0x20);
-  thunk_FUN_112a8010(param_1 + 0x18);
+  FUN_112aa350(param_1 + 0x20);
+  FUN_112a9d70(param_1 + 0x18);
   return;
 }
 
 
-// Reference entry 1030bbd0; body size 62 bytes.
+ entry 1030bbd0; body size 62 bytes.
 #line 1 "ENTRY_1030bbd0"
 
 void __fastcall FUN_1030bbd0(int param_1)

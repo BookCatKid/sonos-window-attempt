@@ -695,6 +695,7 @@ extern undefined1 LAB_11704550[];
 extern undefined1 LAB_1170f170[];
 extern int *PTR_FUN_12119fa0;
 extern void *ExceptionList;
+extern int FUN_112a9d40(...);
 void __fastcall FUN_10befff0(undefined4 *param_1);
 template<class... A> int FUN_10befff0(A...);
 void __fastcall FUN_10bf00f0(undefined4 *param_1);
@@ -2393,7 +2394,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10bf0800(byte param_2)
 void FUN_10bf0a50(void)
 
 {
-  thunk_FUN_112a7f20(&DAT_121a524c);
+  FUN_112a9d40(&DAT_121a524c);
   DAT_121a5254 = (int)(0);
   return;
 }

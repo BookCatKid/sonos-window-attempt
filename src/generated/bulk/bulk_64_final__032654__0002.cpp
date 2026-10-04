@@ -5581,6 +5581,8 @@ extern int *PTR_vftable_12120e90;
 extern int *PTR_vftable_12121d44;
 extern char s_skd___itunes_apple_com_P00000000_119d5698[];
 extern void *ExceptionList;
+extern int FUN_112a9d10(...);
+extern int FUN_112aa330(...);
 void __fastcall FUN_111e93e0(uint *param_1);
 template<class... A> int FUN_111e93e0(A...);
 void __fastcall FUN_111e9ad0(ushort *param_1);
@@ -54391,8 +54393,8 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_112429a0(undefined4 param_2,undefi
   param_1[5] = (undefined4)(0);
   param_1[6] = (undefined4)(0);
   *(undefined1*)(param_1 + 7) = (undefined1)(0);
-  thunk_FUN_112a7ea0(param_1 + 8,param_2);
-  thunk_FUN_112a7b70(param_1 + 10,param_2);
+  FUN_112a9d10(param_1 + 8,param_2);
+  FUN_112aa330(param_1 + 10,param_2);
   return (undefined4 *)(param_1);
 }
 

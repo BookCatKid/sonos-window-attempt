@@ -625,6 +625,13 @@ extern int FUN_10099c60(...);
 extern int FUN_1009a19c(...);
 extern int FUN_1009a65b(...);
 extern int FUN_1009a6fb(...);
+extern int FUN_10a540f0(...);
+extern int FUN_10a54170(...);
+extern int FUN_10b04da0(...);
+extern int FUN_10b98980(...);
+extern int FUN_10def0d0(...);
+extern int FUN_1124a3e0(...);
+extern int FUN_1125b8f0(...);
 undefined1 FUN_10988000(void);
 template<class... A> int FUN_10988000(A...);
 undefined1 FUN_10988040(void);
@@ -3771,7 +3778,7 @@ undefined1 FUN_109ec540(void)
 void FUN_109ef0d0(void)
 
 {
-  FUN_10074c85();
+  FUN_10def0d0();
 }
 
 
@@ -5871,7 +5878,7 @@ undefined1 FUN_10a43ed0(void)
 void FUN_10a44ea0(void)
 
 {
-  FUN_10074c85();
+  FUN_10def0d0();
 }
 
 
@@ -5881,7 +5888,7 @@ void FUN_10a44ea0(void)
 void FUN_10a44eb0(void)
 
 {
-  FUN_10074c85();
+  FUN_10def0d0();
 }
 
 
@@ -6151,7 +6158,7 @@ undefined1 FUN_10a4c3d0(void)
 void FUN_10a514f0(void)
 
 {
-  FUN_1005fab0();
+  FUN_10a540f0();
 }
 
 
@@ -6161,7 +6168,7 @@ void FUN_10a514f0(void)
 void FUN_10a51500(void)
 
 {
-  FUN_100900c5();
+  FUN_10a54170();
 }
 
 
@@ -7341,7 +7348,7 @@ void __thiscall Recovered_Bulk::m_FUN_10a71f08(void)
 void FUN_10a76f90(void)
 
 {
-  FUN_10074c85();
+  FUN_10def0d0();
 }
 
 
@@ -7351,7 +7358,7 @@ void FUN_10a76f90(void)
 void FUN_10a76fa0(void)
 
 {
-  FUN_10074c85();
+  FUN_10def0d0();
 }
 
 
@@ -7361,7 +7368,7 @@ void FUN_10a76fa0(void)
 void FUN_10a76fb0(void)
 
 {
-  FUN_10074c85();
+  FUN_10def0d0();
 }
 
 
@@ -7371,7 +7378,7 @@ void FUN_10a76fb0(void)
 void FUN_10a76fc0(void)
 
 {
-  FUN_10074c85();
+  FUN_10def0d0();
 }
 
 
@@ -8421,7 +8428,7 @@ undefined4 FUN_10a999a0(void)
 void FUN_10a9bbd0(void)
 
 {
-  FUN_10074c85();
+  FUN_10def0d0();
 }
 
 
@@ -8431,7 +8438,7 @@ void FUN_10a9bbd0(void)
 void FUN_10a9bbe0(void)
 
 {
-  FUN_10074c85();
+  FUN_10def0d0();
 }
 
 
@@ -11451,7 +11458,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b00078(void)
 void FUN_10b04ee0(void)
 
 {
-  FUN_1008c23b();
+  FUN_10b04da0();
 }
 
 
@@ -15231,7 +15238,7 @@ void FUN_10b82cf0(void)
 void FUN_10b88720(void)
 
 {
-  FUN_100751d5();
+  FUN_1124a3e0();
 }
 
 
@@ -15771,7 +15778,7 @@ void __thiscall Recovered_Bulk::m_FUN_10b952c9(void)
 void FUN_10b983b0(void)
 
 {
-  FUN_10044c88();
+  FUN_10b98980();
 }
 
 
@@ -15781,6 +15788,6 @@ void FUN_10b983b0(void)
 void FUN_10b993d0(void)
 
 {
-  FUN_1003d5d7();
+  FUN_1125b8f0();
 }
 

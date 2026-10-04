@@ -4464,6 +4464,13 @@ extern char s_x_rincon_stream_______119c60bc[];
 extern char s_x_sonosapi_radio___audio_x_sonos_119c6088[];
 extern char s_x_sonosapi_show__119c66d0[];
 extern void *ExceptionList;
+extern int FUN_112a9d40(...);
+extern int FUN_112a9d50(...);
+extern int FUN_112a9d70(...);
+extern int FUN_112a9e10(...);
+extern int FUN_112aa340(...);
+extern int FUN_112aa350(...);
+extern int FUN_112aa380(...);
 void FUN_11081150(byte *param_1,undefined1 *param_2,int param_3);
 template<class... A> int FUN_11081150(A...);
 int __fastcall FUN_110818e0(int param_1);
@@ -24264,7 +24271,7 @@ void __thiscall Recovered_Bulk::m_FUN_110a2750(undefined4 param_2)
   int iVar1;
   
   iVar1 = (int)(param_1 + 0x530);
-  thunk_FUN_112a7f50(iVar1);
+  FUN_112a9d50(iVar1);
   if (*(uint *)(param_1 + 0x540) < 2) {
     *(undefined4*)(param_1 + 0x538 + *(uint *)(param_1 + 0x540) * 4) = (undefined4)(param_2);
     *(int*)(param_1 + 0x540) = (int)(*(int *)(param_1 + 0x540) + 1);
@@ -34387,6 +34394,7 @@ int __thiscall Recovered_Bulk::m_FUN_110b46a0(char *param_2)
 // Reference entry 110b48e0; body size 73 bytes.
 #line 1 "ENTRY_110b48e0"
 
+void 
 void __thiscall Recovered_Bulk::m_FUN_110b48e0(int *param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
@@ -34397,7 +34405,7 @@ void __thiscall Recovered_Bulk::m_FUN_110b48e0(int *param_2)
     iVar1 = (int)(param_1[4]);
     iVar2 = (int)(*(int *)(iVar1 + 8));
     while (iVar2 != 0) {
-      thunk_FUN_112a7da0(*param_2 + 0x24,*param_2 + 0x1c);
+      FUN_112aa380(*param_2 + 0x24,*param_2 + 0x1c);
       iVar2 = (int)(*(int *)(iVar1 + 8));
     }
     param_1[3] = (undefined4)(0);
@@ -34409,7 +34417,7 @@ void __thiscall Recovered_Bulk::m_FUN_110b48e0(int *param_2)
 }
 
 
-// Reference entry 110b4aa0; body size 122 bytes.
+erence entry 110b4aa0; body size 122 bytes.
 #line 1 "ENTRY_110b4aa0"
 
 undefined4 __thiscall Recovered_Bulk::m_FUN_110b4aa0(int *param_2)
@@ -75427,6 +75435,7 @@ void __fastcall FUN_11102d90(undefined4 *param_1)
 // Reference entry 11102e70; body size 84 bytes.
 #line 1 "ENTRY_11102e70"
 
+void __fast
 void __fastcall FUN_11102e70(undefined4 *param_1)
 
 {
@@ -75436,20 +75445,20 @@ void __fastcall FUN_11102e70(undefined4 *param_1)
   *param_1 = (undefined4)((uint)&ghidra_vftable_RNetstartWorkerThread);
   if (*(char *)((int)param_1 + 0x51) != '\0') {
     *(undefined1*)(param_1 + 0x14) = (undefined1)(1);
-    thunk_FUN_112a7f50(puVar1);
+    FUN_112a9d50(puVar1);
     *(undefined1*)((int)param_1 + 0x52) = (undefined1)(1);
-    thunk_FUN_112a7c70(param_1 + 9);
-    thunk_FUN_112a8010(puVar1);
-    thunk_FUN_112a82d0(param_1 + 1);
+    FUN_112aa350(param_1 + 9);
+    FUN_112a9d70(puVar1);
+    FUN_112a9e10(param_1 + 1);
     *(undefined1*)((int)param_1 + 0x51) = (undefined1)(0);
   }
-  thunk_FUN_112a7f20(puVar1);
-  thunk_FUN_112a7c30(param_1 + 9);
+  FUN_112a9d40(puVar1);
+  FUN_112aa340(param_1 + 9);
   return;
 }
 
 
-// Reference entry 11102ee0; body size 349 bytes.
+ entry 11102ee0; body size 349 bytes.
 #line 1 "ENTRY_11102ee0"
 
 void __fastcall FUN_11102ee0(undefined4 *param_1)
@@ -75608,6 +75617,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11103260(byte param_2)
 // Reference entry 11103390; body size 106 bytes.
 #line 1 "ENTRY_11103390"
 
+undefined4 * __thiscall Recovered_Bulk::m_FUN_1
 undefined4 * __thiscall Recovered_Bulk::m_FUN_11103390(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
@@ -75617,15 +75627,15 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11103390(byte param_2)
   *param_1 = (undefined4)((uint)&ghidra_vftable_RNetstartWorkerThread);
   if (*(char *)((int)param_1 + 0x51) != '\0') {
     *(undefined1*)(param_1 + 0x14) = (undefined1)(1);
-    thunk_FUN_112a7f50(puVar1);
+    FUN_112a9d50(puVar1);
     *(undefined1*)((int)param_1 + 0x52) = (undefined1)(1);
-    thunk_FUN_112a7c70(param_1 + 9);
-    thunk_FUN_112a8010(puVar1);
-    thunk_FUN_112a82d0(param_1 + 1);
+    FUN_112aa350(param_1 + 9);
+    FUN_112a9d70(puVar1);
+    FUN_112a9e10(param_1 + 1);
     *(undefined1*)((int)param_1 + 0x51) = (undefined1)(0);
   }
-  thunk_FUN_112a7f20(puVar1);
-  thunk_FUN_112a7c30(param_1 + 9);
+  FUN_112a9d40(puVar1);
+  FUN_112aa340(param_1 + 9);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x54);
   }
@@ -75633,7 +75643,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11103390(byte param_2)
 }
 
 
-// Reference entry 11103450; body size 342 bytes.
+.
 #line 1 "ENTRY_11103450"
 
 undefined4 __thiscall Recovered_Bulk::m_FUN_11103450(undefined4 *param_2,undefined1 param_3)
@@ -75949,6 +75959,9 @@ uint __thiscall Recovered_Bulk::m_FUN_11103cf0(undefined4 param_2,undefined4 par
 
 void __thiscall Recovered_Bulk::m_FUN_11103db0(undefined4 param_2)
 {
+  int param_1 
+void __thiscall Recovered_Bulk::m_FUN_11103db0(undefined4 param_2)
+{
   int param_1 = (int )this;
   int iVar1;
   int iVar2;
@@ -75969,16 +75982,13 @@ void __thiscall Recovered_Bulk::m_FUN_11103db0(undefined4 param_2)
   }
   thunk_FUN_112a7f50(iVar1);
   *(undefined1*)(param_1 + 0x52) = (undefined1)(1);
-  thunk_FUN_112a7c70(param_1 + 0x24);
+  FUN_112aa350(param_1 + 0x24);
   thunk_FUN_112a8010(iVar1);
   return;
 }
 
 
-// Reference entry 11103eb0; body size 80 bytes.
-#line 1 "ENTRY_11103eb0"
-
-undefined4 FUN_11103eb0(int param_1,undefined1 *param_2)
+4 FUN_11103eb0(int param_1,undefined1 *param_2)
 
 {
   uint uVar1;
@@ -77464,6 +77474,7 @@ void __fastcall FUN_11106ea0(int param_1)
 // Reference entry 11107600; body size 161 bytes.
 #line 1 "ENTRY_11107600"
 
+void __thiscall Recovered_Bulk::m_FUN_11107600(int param_2,undefined4 param_3,undefined4 
 void __thiscall Recovered_Bulk::m_FUN_11107600(int param_2,undefined4 param_3,undefined4 param_4)
 {
   int param_1 = (int )this;
@@ -77488,16 +77499,13 @@ void __thiscall Recovered_Bulk::m_FUN_11107600(int param_2,undefined4 param_3,un
   }
   thunk_FUN_112a7f50(iVar1);
   *(undefined1*)(param_2 + 0x52) = (undefined1)(1);
-  thunk_FUN_112a7c70(param_2 + 0x24);
+  FUN_112aa350(param_2 + 0x24);
   thunk_FUN_112a8010(iVar1);
   return;
 }
 
 
-// Reference entry 111076e0; body size 624 bytes.
-#line 1 "ENTRY_111076e0"
-
-undefined1 * __thiscall Recovered_Bulk::m_FUN_111076e0(undefined4 param_2,undefined4 param_3,undefined4 *param_4,
+_thiscall Recovered_Bulk::m_FUN_111076e0(undefined4 param_2,undefined4 param_3,undefined4 *param_4,
             undefined1 param_5,undefined1 param_6)
 {
   int param_1 = (int )this;

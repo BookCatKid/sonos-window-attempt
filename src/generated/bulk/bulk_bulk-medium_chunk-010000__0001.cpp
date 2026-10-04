@@ -707,6 +707,10 @@ extern undefined1 LAB_1171dd80[];
 extern undefined1 LAB_1171eee0[];
 extern undefined1 LAB_11731340[];
 extern void *ExceptionList;
+extern int FUN_112a9d50(...);
+extern int FUN_112a9d70(...);
+extern int FUN_112aa350(...);
+extern int FUN_112afbc0(...);
 void __stdcall FUN_10d5e990(int param_1,int param_2);
 template<class... A> int FUN_10d5e990(A...);
 void __stdcall FUN_10d5ed90(int param_1);
@@ -22364,7 +22368,7 @@ void __fastcall FUN_10ee2fd0(int param_1)
 void __stdcall FUN_10ee34e0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  thunk_FUN_112afbd0(param_1,param_2,param_3,param_4);
+  FUN_112afbc0(param_1,param_2,param_3,param_4);
   return;
 }
 
@@ -22577,18 +22581,19 @@ undefined1 __fastcall FUN_10eea820(int param_1)
 // Reference entry 10eeb490; body size 41 bytes.
 #line 1 "ENTRY_10eeb490"
 
+void 
 void __fastcall FUN_10eeb490(int param_1)
 
 {
-  thunk_FUN_112a7f50(param_1 + 0x2c);
+  FUN_112a9d50(param_1 + 0x2c);
   *(undefined1*)(param_1 + 0x8d) = (undefined1)(0);
-  thunk_FUN_112a7c70(param_1 + 0x34);
-  thunk_FUN_112a8010(param_1 + 0x2c);
+  FUN_112aa350(param_1 + 0x34);
+  FUN_112a9d70(param_1 + 0x2c);
   return;
 }
 
 
-// Reference entry 10eeb730; body size 41 bytes.
+erence entry 10eeb730; body size 41 bytes.
 #line 1 "ENTRY_10eeb730"
 
 undefined4 * __thiscall Recovered_Bulk::m_FUN_10eeb730(int *param_2)

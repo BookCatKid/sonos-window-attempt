@@ -1446,6 +1446,7 @@ extern int *PTR_guard_check_icall_12302000;
 extern int *PTR_s_NS2_MSG_KEEP_ALIVE_11a03004;
 extern int *PTR_s_server_11bfec28;
 extern void *ExceptionList;
+extern int FUN_114125b0(...);
 void FUN_112b08c0(undefined4 *param_1);
 template<class... A> int FUN_112b08c0(A...);
 undefined4 FUN_112b0c20(void);
@@ -13494,7 +13495,7 @@ void FUN_11444d80(int param_1)
 
 {
   if (param_1 != 0) {
-    FUN_1008d97e(param_1);
+    FUN_114125b0(param_1);
     thunk_FUN_11423ed0(param_1,400);
   }
   return;
@@ -13545,7 +13546,7 @@ void FUN_11445f20(int param_1)
 
 {
   if (param_1 != 0) {
-    FUN_1008d97e(param_1 + 0x38);
+    FUN_114125b0(param_1 + 0x38);
     thunk_FUN_11423ed0(param_1,0x80);
   }
   return;
@@ -13731,7 +13732,7 @@ undefined4 FUN_1144c420(uint *param_1)
   if ((*param_1 & 0x7f000000) != 0x4000000) {
     return (undefined4)(0xffffff77);
   }
-  FUN_1008d97e(param_1 + 2);
+  FUN_114125b0(param_1 + 2);
   return (undefined4)(0);
 }
 

@@ -1240,6 +1240,11 @@ extern int *PTR_s_https___www__119e5428;
 extern int *PTR_s_invalid_119e5a00;
 extern int *PTR_vftable_12120e90;
 extern void *ExceptionList;
+extern int FUN_112a9d40(...);
+extern int FUN_112a9d50(...);
+extern int FUN_112a9d70(...);
+extern int FUN_112aa300(...);
+extern int FUN_1145eb40(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __fastcall FUN_11227aa0(undefined4 param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
 template<class... A> int FUN_11227aa0(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_11227ad0(undefined4 *param_1,undefined4 *param_2);
@@ -4321,7 +4326,7 @@ undefined4 * __fastcall FUN_1122e0f0(undefined4 *param_1)
 void __fastcall FUN_1122e130(int param_1)
 
 {
-  thunk_FUN_112a7f20(param_1 + 0x150);
+  FUN_112a9d40(param_1 + 0x150);
   return;
 }
 
@@ -7185,17 +7190,18 @@ void FUN_112406c0(void)
 // Reference entry 11240830; body size 8 bytes.
 #line 1 "ENTRY_11240830"
 
+/* Re
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_11240830(undefined4 param_1)
 
 {
-  thunk_FUN_112a7f20(param_1);
+  FUN_112a9d40(param_1);
   return;
 }
 
 
-// Reference entry 11240860; body size 3 bytes.
+erence entry 11240860; body size 3 bytes.
 #line 1 "ENTRY_11240860"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
@@ -7582,17 +7588,18 @@ bool FUN_11241c90(uint param_1)
 // Reference entry 11241cf0; body size 11 bytes.
 #line 1 "ENTRY_11241cf0"
 
+/* Recovere
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_11241cf0(int param_1)
 
 {
-  thunk_FUN_112a7f50(param_1 + 0x1c);
+  FUN_112a9d50(param_1 + 0x1c);
   return;
 }
 
 
-// Reference entry 11241d00; body size 14 bytes.
+ entry 11241d00; body size 14 bytes.
 #line 1 "ENTRY_11241d00"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
@@ -7679,19 +7686,21 @@ undefined4 FUN_11241fa0(void)
 // Reference entry 11242930; body size 11 bytes.
 #line 1 "ENTRY_11242930"
 
+/* Recovered from
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_11242930(int param_1)
 
 {
-  thunk_FUN_112a8010(param_1 + 0x1c);
+  FUN_112a9d70(param_1 + 0x1c);
   return;
 }
 
 
-// Reference entry 11242ce0; body size 17 bytes.
+ 11242ce0; body size 17 bytes.
 #line 1 "ENTRY_11242ce0"
 
+/* Recovered from a mis
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_11242ce0(int param_1)
@@ -7702,13 +7711,13 @@ void __fastcall FUN_11242ce0(int param_1)
   piVar1 = (int *)((int *)(param_1 + 0x18));
   *piVar1 = (int)(*piVar1 + -1);
   if (*piVar1 == (int)((0))) {
-    thunk_FUN_112a7b20(param_1 + 0x28);
+    FUN_112aa300(param_1 + 0x28);
   }
   return;
 }
 
 
-// Reference entry 11242d00; body size 5 bytes.
+d00; body size 5 bytes.
 #line 1 "ENTRY_11242d00"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
@@ -7750,18 +7759,19 @@ undefined4 FUN_11242d00(int *param_1)
 // Reference entry 11242f60; body size 15 bytes.
 #line 1 "ENTRY_11242f60"
 
+/* Recovered from a missing 5
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_11242f60(int param_1)
 
 {
   *(undefined1*)(param_1 + 0x1c) = (undefined1)(0);
-  thunk_FUN_112a7b20(param_1 + 0x28);
+  FUN_112aa300(param_1 + 0x28);
   return;
 }
 
 
-// Reference entry 11242f80; body size 3 bytes.
+ody size 3 bytes.
 #line 1 "ENTRY_11242f80"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
@@ -22283,17 +22293,18 @@ void FUN_11282d40(undefined4 param_1,undefined4 param_2)
 // Reference entry 11282f70; body size 14 bytes.
 #line 1 "ENTRY_11282f70"
 
+/* Recovered from a missing 5-byte 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __stdcall FUN_11282f70(unsigned int recovered_unused_stack_0)
 
 {
-  thunk_FUN_112a8010(&DAT_122f5e94);
+  FUN_112a9d70(&DAT_122f5e94);
   return;
 }
 
 
-// Reference entry 11283180; body size 8 bytes.
+ze 8 bytes.
 #line 1 "ENTRY_11283180"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
@@ -22933,15 +22944,16 @@ void FUN_112856a0(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 // Reference entry 11285920; body size 20 bytes.
 #line 1 "ENTRY_11285920"
 
+/* Recovered from a missing 5-byte E9 cal
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_11285920(undefined4 param_2,undefined4 param_3)
 {
   undefined4 param_1 = (undefined4 )this;
-  thunk_FUN_1145eb70(param_1,param_2,param_3);
+  FUN_1145eb40(param_1,param_2,param_3);
   return;
 }
 
 
-// Reference entry 112859c0; body size 53 bytes.
+bytes.
 #line 1 "ENTRY_112859c0"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_112859c0(undefined4 param_2,undefined4 param_3,undefined1 param_4)
@@ -26687,18 +26699,19 @@ LAB_11291d41:
 // Reference entry 11292b30; body size 17 bytes.
 #line 1 "ENTRY_11292b30"
 
+/* Recovered from a missing 5-byte E9 call dest
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_11292b30(undefined4 *param_1)
 
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUsageDataSharing);
-  thunk_FUN_112a7f20(param_1 + 0xc);
+  FUN_112a9d40(param_1 + 0xc);
   return;
 }
 
 
-// Reference entry 11292d30; body size 30 bytes.
+
 #line 1 "ENTRY_11292d30"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
@@ -26756,19 +26769,19 @@ undefined4 * __fastcall FUN_11292fb0(undefined4 *param_1)
 // Reference entry 11292fc0; body size 20 bytes.
 #line 1 "ENTRY_11292fc0"
 
+/* Recovered from a missing 5-byte E9 call destinatio
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_11292fc0(undefined4 *param_1)
 
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_RSelectThread);
-  thunk_FUN_112a7f20(param_1 + 0x4f);
+  FUN_112a9d40(param_1 + 0x4f);
   return;
 }
 
 
-// Reference entry 11292fe0; body size 3 bytes.
-#line 1 "ENTRY_11292fe0"
+1 "ENTRY_11292fe0"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 

@@ -1049,15 +1049,6 @@ int FUN_117ce13d(int a1) {
     return (int)(a1 + 12);
 }
 
-// Reference entry 117ce149; body size 30 bytes.
-#line 1 "ENTRY_117ce149"
-int FUN_117ce149(void) {
-
-    thunk_FUN_1148ac28();
-    thunk_FUN_1148ac28();
-    return (int)(__CxxFrameHandler3());
-}
-
 // Reference entry 117ce18d; body size 42 bytes.
 #line 1 "ENTRY_117ce18d"
 int FUN_117ce18d(int a1) {
@@ -2709,45 +2700,6 @@ int FUN_117f33d0(void) {
     return (int)(thunk_FUN_10346a50());
 }
 
-// Reference entry 117f6180; body size 40 bytes.
-#line 1 "ENTRY_117f6180"
-int FUN_117f6180(void) {
-
-    thunk_FUN_103f6950((int)&DAT_121a1348, *(int *)(*(int *)&DAT_121a1348 + 4));
-    return (int)(thunk_FUN_1148a50e(*(int *)&DAT_121a1348, 24));
-}
-
-// Reference entry 117f6eb0; body size 88 bytes.
-#line 1 "ENTRY_117f6eb0"
-int FUN_117f6eb0(void) {
-
-    uint v1 = (uint)(*(int *)&DAT_1211964c); // (int)((int(*)(void))&FUN_117f6eb0)
-    if (v1 < 16) {
-        *(int *)&DAT_12119648 = 0;
-        *(int *)&DAT_1211964c = 15;
-        *(char *)&DAT_12119638 = 0;
-        int result; // (int)((int(*)(void))&FUN_117f6eb0)
-        return (int)(result);
-    }
-    int v2 = (int)(*(int *)&DAT_12119638); // (int)&FUN_117f6ebb
-    int v3 = (int)(v1 + 1); // (int)&FUN_117f6ec1
-    int v4 = (int)(v2); // (int)&FUN_117f6eca
-    int v5 = (int)(v3); // (int)&FUN_117f6eca
-    if (v3 >= 0x1000) {
-        v4 = (int)(*(int *)(v2 - 4));
-        uint result2 = (uint)(v2 - v4 - 4); // (int)&FUN_117f6ed4
-        v5 = (int)(v1 + 36);
-        if (result2 >= 32) {
-            return (int)(result2);
-        }
-    }
-    int result3 = (int)(thunk_FUN_1148a50e(v4, v5), 0);
-    *(int *)&DAT_12119648 = 0;
-    *(int *)&DAT_1211964c = 15;
-    *(char *)&DAT_12119638 = 0;
-    return (int)(result3);
-}
-
 // Reference entry 117f7c00; body size 20 bytes.
 #line 1 "ENTRY_117f7c00"
 int FUN_117f7c00(void) {
@@ -2774,14 +2726,6 @@ int FUN_1180bb90(void) {
 int FUN_1182aca0(void) {
 
     return (int)(FUN_100699e8((int)&DAT_121a49a0, 4, 3, (int)&FUN_1008c50b));
-}
-
-// Reference entry 1182b5d0; body size 40 bytes.
-#line 1 "ENTRY_1182b5d0"
-int FUN_1182b5d0(void) {
-
-    thunk_FUN_10af43b0((int)&DAT_121a4ad8, *(int *)(*(int *)&DAT_121a4ad8 + 4));
-    return (int)(thunk_FUN_1148a50e(*(int *)&DAT_121a4ad8, 24));
 }
 
 // Reference entry 1182ded0; body size 10 bytes.
@@ -2819,33 +2763,6 @@ int FUN_118314f0(void) {
     return (int)(thunk_FUN_10bd7200());
 }
 
-// Reference entry 11831500; body size 94 bytes.
-#line 1 "ENTRY_11831500"
-int FUN_11831500(void) {
-
-    int v1 = (int)(*(int *)&DAT_121a5238); // (int)((int(*)(void))&FUN_11831500)
-    if (v1 == 0) {
-        int result; // (int)((int(*)(void))&FUN_11831500)
-        return (int)(result);
-    }
-    int v2 = (int)(*(int *)&DAT_121a5240 - v1 & -4); // (int)&FUN_11831514
-    int v3 = (int)(v2); // (int)&FUN_1183151d
-    int v4 = (int)(v1); // (int)&FUN_1183151d
-    if (v2 >= 0x1000) {
-        v4 = (int)(*(int *)(v1 - 4));
-        int result2 = (int)(v1 - v4 - 4); // (int)&FUN_11831527
-        v3 = (int)(v2 + 35);
-        if (result2 >= 32) {
-            return (int)(result2);
-        }
-    }
-    int result3 = (int)(thunk_FUN_1148a50e(v4, v3), 0); // (int)&FUN_11831537
-    *(int *)&DAT_121a5238 = 0;
-    *(int *)&DAT_121a523c = 0;
-    *(int *)&DAT_121a5240 = 0;
-    return (int)(result3);
-}
-
 // Reference entry 11831660; body size 10 bytes.
 #line 1 "ENTRY_11831660"
 int FUN_11831660(void) {
@@ -2881,30 +2798,6 @@ int FUN_11834d50(void) {
     return (int)(thunk_FUN_10c47ef0());
 }
 
-// Reference entry 11835470; body size 40 bytes.
-#line 1 "ENTRY_11835470"
-int FUN_11835470(void) {
-
-    thunk_FUN_108288d0((int)&DAT_121a56fc, *(int *)(*(int *)&DAT_121a56fc + 4));
-    return (int)(thunk_FUN_1148a50e(*(int *)&DAT_121a56fc, 28));
-}
-
-// Reference entry 11835560; body size 40 bytes.
-#line 1 "ENTRY_11835560"
-int FUN_11835560(void) {
-
-    thunk_FUN_10c5e210((int)&DAT_121a56a8, *(int *)(*(int *)&DAT_121a56a8 + 4));
-    return (int)(thunk_FUN_1148a50e(*(int *)&DAT_121a56a8, 24));
-}
-
-// Reference entry 118355a0; body size 40 bytes.
-#line 1 "ENTRY_118355a0"
-int FUN_118355a0(void) {
-
-    thunk_FUN_10c5e210(*(int *)(*(int *)&DAT_121a56d0 + 4), (int)&DAT_121a56d0);
-    return (int)(thunk_FUN_1148a50e(24, *(int *)&DAT_121a56d0));
-}
-
 // Reference entry 1183a740; body size 20 bytes.
 #line 1 "ENTRY_1183a740"
 int FUN_1183a740(void) {
@@ -2932,45 +2825,6 @@ int FUN_11840f70(void) {
 
     int result; // (int)((int(*)(void))&FUN_11840f70)
     return (int)(result);
-}
-
-// Reference entry 11840f7e; body size 66 bytes.
-#line 1 "ENTRY_11840f7e"
-int FUN_11840f7e(void) {
-
-    int v1; // (int)((int(*)(void))&FUN_11840f7e)
-    int v2; // (int)((int(*)(void))&FUN_11840f7e)
-    bool v3; // (int)((int(*)(void))&FUN_11840f7e)
-    if (!v3) {
-        int v4; // (int)((int(*)(void))&FUN_11840f7e)
-        int v5 = (int)(*(int *)(v4 - 4)); // (int)&FUN_11840f8c
-        uint result = (uint)((v4 & -256 | (int)*(char *)-0x74bdedef) - v5 - 4); // (int)&FUN_11840f94
-        v1 = (int)(v5);
-        v2 = (int)(v4 + 35);
-        if (result >= 32) {
-            return (int)(result);
-        }
-    }
-    int result2 = (int)(thunk_FUN_1148a50e(v1, v2), 0); // (int)&FUN_11840fa4
-    *(int *)&DAT_1211a0dc = 0;
-    *(int *)&DAT_1211a0e0 = 15;
-    return (int)(result2);
-}
-
-// Reference entry 11846210; body size 40 bytes.
-#line 1 "ENTRY_11846210"
-int FUN_11846210(void) {
-
-    thunk_FUN_10264380((int)&DAT_121a652c, *(int *)(*(int *)&DAT_121a652c + 4));
-    return (int)(thunk_FUN_1148a50e(*(int *)&DAT_121a652c, 24));
-}
-
-// Reference entry 11846250; body size 40 bytes.
-#line 1 "ENTRY_11846250"
-int FUN_11846250(void) {
-
-    thunk_FUN_10264380((int)&DAT_121a6524, *(int *)(*(int *)&DAT_121a6524 + 4));
-    return (int)(thunk_FUN_1148a50e(*(int *)&DAT_121a6524, 24));
 }
 
 // Reference entry 1184e030; body size 20 bytes.
@@ -3034,30 +2888,6 @@ int FUN_11861ea2(void) {
     return (int)(result);
 }
 
-// Reference entry 11861ee0; body size 40 bytes.
-#line 1 "ENTRY_11861ee0"
-int FUN_11861ee0(void) {
-
-    thunk_FUN_11098770((int)&DAT_121a7bb8, *(int *)(*(int *)&DAT_121a7bb8 + 4));
-    return (int)(thunk_FUN_1148a50e(*(int *)&DAT_121a7bb8, 24));
-}
-
-// Reference entry 11861f20; body size 40 bytes.
-#line 1 "ENTRY_11861f20"
-int FUN_11861f20(void) {
-
-    thunk_FUN_11098770(*(int *)(*(int *)&DAT_121a7bb0 + 4), (int)&DAT_121a7bb0);
-    return (int)(thunk_FUN_1148a50e(24, *(int *)&DAT_121a7bb0));
-}
-
-// Reference entry 11861f60; body size 40 bytes.
-#line 1 "ENTRY_11861f60"
-int FUN_11861f60(void) {
-
-    thunk_FUN_11098770(*(int *)(*(int *)&DAT_121a7bc0 + 4), (int)&DAT_121a7bc0);
-    return (int)(thunk_FUN_1148a50e(24, *(int *)&DAT_121a7bc0));
-}
-
 // Reference entry 118620a0; body size 20 bytes.
 #line 1 "ENTRY_118620a0"
 int FUN_118620a0(void) {
@@ -3086,9 +2916,3 @@ int FUN_11862600(void) {
     return (int)(FUN_100699e8((int)&DAT_121205b0, 20, 68, (int)&FUN_100606e5));
 }
 
-// Reference entry 11862710; body size 12 bytes.
-#line 1 "ENTRY_11862710"
-int FUN_11862710(void) {
-
-    return (int)(_Mtx_destroy_in_situ((int)&DAT_122f6c20));
-}

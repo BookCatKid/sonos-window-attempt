@@ -660,6 +660,54 @@ extern int FUN_102703b0(...);
 extern int FUN_10420050(...);
 extern int FUN_10420770(...);
 extern int FUN_10420900(...);
+extern int FUN_1011f5e0(...);
+extern int FUN_1022d7c0(...);
+extern int FUN_102341a0(...);
+extern int FUN_102423a0(...);
+extern int FUN_10247e10(...);
+extern int FUN_10277f40(...);
+extern int FUN_10286f30(...);
+extern int FUN_102988f0(...);
+extern int FUN_102a9640(...);
+extern int FUN_102ad4d0(...);
+extern int FUN_102ad740(...);
+extern int FUN_1030f810(...);
+extern int FUN_10362a10(...);
+extern int FUN_1036e480(...);
+extern int FUN_10371ff0(...);
+extern int FUN_1038cb70(...);
+extern int FUN_103a7c30(...);
+extern int FUN_103a7d90(...);
+extern int FUN_103d6860(...);
+extern int FUN_103e6620(...);
+extern int FUN_103e6690(...);
+extern int FUN_103e6760(...);
+extern int FUN_103e67d0(...);
+extern int FUN_103e6940(...);
+extern int FUN_103e6a10(...);
+extern int FUN_103e6a80(...);
+extern int FUN_103e6af0(...);
+extern int FUN_103e6b60(...);
+extern int FUN_103e6cd0(...);
+extern int FUN_103e6d40(...);
+extern int FUN_103e6e90(...);
+extern int FUN_103e6f00(...);
+extern int FUN_103e6f80(...);
+extern int FUN_103e6ff0(...);
+extern int FUN_103e70e0(...);
+extern int FUN_1047a750(...);
+extern int FUN_104c4a40(...);
+extern int FUN_104e37a0(...);
+extern int FUN_104e3820(...);
+extern int FUN_104e3890(...);
+extern int FUN_104fac60(...);
+extern int FUN_105032a0(...);
+extern int FUN_111004e0(...);
+extern int FUN_111c1bd0(...);
+extern int FUN_1124a3e0(...);
+extern int FUN_11261fc0(...);
+extern int FUN_11272de0(...);
+extern int FUN_1127a080(...);
 void FUN_1021cc30(void);
 template<class... A> int FUN_1021cc30(A...);
 void FUN_1021dba0(void);
@@ -1738,7 +1786,7 @@ undefined1 FUN_10221380(void)
 void FUN_102213c0(void)
 
 {
-  FUN_10077edf();
+  FUN_111c1bd0();
 }
 
 
@@ -1818,7 +1866,7 @@ undefined4 __stdcall FUN_102226a0(unsigned int recovered_unused_stack_0, unsigne
 void FUN_1022de10(void)
 
 {
-  FUN_10045fca();
+  FUN_1022d7c0();
 }
 
 
@@ -1828,7 +1876,7 @@ void FUN_1022de10(void)
 void FUN_1022de20(void)
 
 {
-  FUN_10013f1b();
+  FUN_102341a0();
 }
 
 
@@ -2288,7 +2336,7 @@ undefined1 __thiscall Recovered_Bulk::m_FUN_10242b00(void)
 void FUN_10242b40(void)
 
 {
-  FUN_1004edaa();
+  FUN_102423a0();
 }
 
 
@@ -2528,7 +2576,7 @@ undefined1 FUN_10244e70(void)
 void FUN_102473c0(void)
 
 {
-  FUN_10016ba3();
+  FUN_10247e10();
 }
 
 
@@ -3049,7 +3097,7 @@ undefined1 __thiscall Recovered_Bulk::m_FUN_10271410(void)
 void FUN_10275a60(void)
 
 {
-  FUN_10005a79();
+  FUN_10277f40();
 }
 
 
@@ -3059,7 +3107,7 @@ void FUN_10275a60(void)
 void FUN_10275c00(void)
 
 {
-  FUN_1001fc8a();
+  FUN_1011f5e0();
 }
 
 
@@ -3150,7 +3198,7 @@ void __thiscall Recovered_Bulk::m_FUN_102833f0(int param_2)
 void FUN_10285c50(void)
 
 {
-  FUN_1006586b();
+  FUN_10286f30();
 }
 
 
@@ -3350,7 +3398,7 @@ void __thiscall Recovered_Bulk::m_FUN_102972d4(void)
 void FUN_102995b0(void)
 
 {
-  FUN_1002752a();
+  FUN_102988f0();
 }
 
 
@@ -3601,7 +3649,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_102a0d00(void)
 void FUN_102a9890(void)
 
 {
-  FUN_1004f3a4();
+  FUN_102a9640();
 }
 
 
@@ -3611,7 +3659,7 @@ void FUN_102a9890(void)
 void FUN_102a99a0(void)
 
 {
-  FUN_10082763();
+  FUN_102ad4d0();
 }
 
 
@@ -3621,7 +3669,7 @@ void FUN_102a99a0(void)
 void FUN_102a9b80(void)
 
 {
-  FUN_10082d35();
+  FUN_102ad740();
 }
 
 
@@ -4423,7 +4471,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_102de320(void)
 void FUN_102de660(void)
 
 {
-  FUN_1008a373();
+  FUN_111004e0();
 }
 
 
@@ -4743,7 +4791,7 @@ void __stdcall FUN_1030b2e0(unsigned int recovered_unused_stack_0)
 void FUN_1030fc00(void)
 
 {
-  FUN_10070748();
+  FUN_1030f810();
 }
 
 
@@ -4753,7 +4801,7 @@ void FUN_1030fc00(void)
 void FUN_103188f0(void)
 
 {
-  FUN_1002586a();
+  FUN_1127a080();
 }
 
 
@@ -5566,7 +5614,7 @@ void __thiscall Recovered_Bulk::m_FUN_10347516(void)
 void FUN_10363260(void)
 
 {
-  FUN_10050c68();
+  FUN_10362a10();
 }
 
 
@@ -5576,7 +5624,7 @@ void FUN_10363260(void)
 void FUN_10363480(void)
 
 {
-  FUN_10060640();
+  FUN_1036e480();
 }
 
 
@@ -6336,7 +6384,7 @@ undefined4 __stdcall FUN_1036d7f0(unsigned int recovered_unused_stack_0)
 void FUN_103720f0(void)
 
 {
-  FUN_10015c8a();
+  FUN_10371ff0();
 }
 
 
@@ -6346,7 +6394,7 @@ void FUN_103720f0(void)
 void FUN_10376e30(void)
 
 {
-  FUN_100742a8();
+  FUN_11261fc0();
 }
 
 
@@ -6686,7 +6734,7 @@ void __stdcall FUN_10392fe0(unsigned int recovered_unused_stack_0)
 void FUN_1039e970(void)
 
 {
-  FUN_10099233();
+  FUN_1038cb70();
 }
 
 
@@ -6847,7 +6895,7 @@ void __thiscall Recovered_Bulk::m_FUN_103a41b0(int param_2)
 void FUN_103a7a70(void)
 
 {
-  FUN_10037466();
+  FUN_103a7c30();
 }
 
 
@@ -6857,7 +6905,7 @@ void FUN_103a7a70(void)
 void FUN_103a7a80(void)
 
 {
-  FUN_1001b716();
+  FUN_103a7d90();
 }
 
 
@@ -8437,7 +8485,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_103d5d50(void)
 void FUN_103d6370(void)
 
 {
-  FUN_1005c919();
+  FUN_103d6860();
 }
 
 
@@ -8447,7 +8495,7 @@ void FUN_103d6370(void)
 void FUN_103e1050(void)
 
 {
-  FUN_100751d5();
+  FUN_1124a3e0();
 }
 
 
@@ -9257,7 +9305,7 @@ void __thiscall Recovered_Bulk::m_FUN_103e3a30(void)
 void FUN_103e8040(void)
 
 {
-  FUN_1000321a();
+  FUN_103e6620();
 }
 
 
@@ -9267,7 +9315,7 @@ void FUN_103e8040(void)
 void FUN_103e8050(void)
 
 {
-  FUN_100273d1();
+  FUN_103e6690();
 }
 
 
@@ -9277,7 +9325,7 @@ void FUN_103e8050(void)
 void FUN_103e8060(void)
 
 {
-  FUN_1009886a();
+  FUN_103e67d0();
 }
 
 
@@ -9287,7 +9335,7 @@ void FUN_103e8060(void)
 void FUN_103e8090(void)
 
 {
-  FUN_1002f478();
+  FUN_103e6a80();
 }
 
 
@@ -9297,7 +9345,7 @@ void FUN_103e8090(void)
 void FUN_103e80a0(void)
 
 {
-  FUN_1004e7ce();
+  FUN_103e6af0();
 }
 
 
@@ -9307,7 +9355,7 @@ void FUN_103e80a0(void)
 void FUN_103e80b0(void)
 
 {
-  FUN_10022c3c();
+  FUN_103e6b60();
 }
 
 
@@ -9317,7 +9365,7 @@ void FUN_103e80b0(void)
 void FUN_103e80c0(void)
 
 {
-  FUN_1006e9f7();
+  FUN_103e6cd0();
 }
 
 
@@ -9327,7 +9375,7 @@ void FUN_103e80c0(void)
 void FUN_103e80d0(void)
 
 {
-  FUN_1004c073();
+  FUN_103e6d40();
 }
 
 
@@ -9337,7 +9385,7 @@ void FUN_103e80d0(void)
 void FUN_103e80e0(void)
 
 {
-  FUN_10008fbc();
+  FUN_103e6f00();
 }
 
 
@@ -9347,7 +9395,7 @@ void FUN_103e80e0(void)
 void FUN_103e80f0(void)
 
 {
-  FUN_100978f2();
+  FUN_103e6760();
 }
 
 
@@ -9357,7 +9405,7 @@ void FUN_103e80f0(void)
 void FUN_103e8100(void)
 
 {
-  FUN_1007c601();
+  FUN_103e6940();
 }
 
 
@@ -9367,7 +9415,7 @@ void FUN_103e8100(void)
 void FUN_103e8110(void)
 
 {
-  FUN_1008c61e();
+  FUN_103e6a10();
 }
 
 
@@ -9377,7 +9425,7 @@ void FUN_103e8110(void)
 void FUN_103e8120(void)
 
 {
-  FUN_10012fee();
+  FUN_103e6e90();
 }
 
 
@@ -9397,7 +9445,7 @@ void FUN_103e8130(void)
 void FUN_103e8140(void)
 
 {
-  FUN_100741c2();
+  FUN_103e6f80();
 }
 
 
@@ -9407,7 +9455,7 @@ void FUN_103e8140(void)
 void FUN_103e8150(void)
 
 {
-  FUN_1003c3e4();
+  FUN_103e6ff0();
 }
 
 
@@ -9417,7 +9465,7 @@ void FUN_103e8150(void)
 void FUN_103e8160(void)
 
 {
-  FUN_1006f6b8();
+  FUN_103e70e0();
 }
 
 
@@ -10740,7 +10788,7 @@ undefined1 FUN_104363f0(void)
 void FUN_10436620(void)
 
 {
-  FUN_1006f7ee();
+  FUN_11272de0();
 }
 
 
@@ -12920,7 +12968,7 @@ void __thiscall Recovered_Bulk::m_FUN_10478b59(void)
 void FUN_10479c90(void)
 
 {
-  FUN_1000864d();
+  FUN_1047a750();
 }
 
 
@@ -15100,7 +15148,7 @@ void __thiscall Recovered_Bulk::m_FUN_104c0c99(void)
 void FUN_104c3b70(void)
 
 {
-  FUN_1004c98d();
+  FUN_104c4a40();
 }
 
 
@@ -15640,7 +15688,7 @@ void __stdcall FUN_104dd5f0(unsigned int recovered_unused_stack_0)
 void FUN_104e36a0(void)
 
 {
-  FUN_1006394e();
+  FUN_104e37a0();
 }
 
 
@@ -15650,7 +15698,7 @@ void FUN_104e36a0(void)
 void FUN_104e36b0(void)
 
 {
-  FUN_100774bc();
+  FUN_104e3820();
 }
 
 
@@ -15660,7 +15708,7 @@ void FUN_104e36b0(void)
 void FUN_104e36c0(void)
 
 {
-  FUN_1007dc4f();
+  FUN_104e3890();
 }
 
 
@@ -15840,7 +15888,7 @@ void __stdcall FUN_104ed5b0(unsigned int recovered_unused_stack_0)
 void FUN_104fb050(void)
 
 {
-  FUN_1000e697();
+  FUN_104fac60();
 }
 
 
@@ -16010,7 +16058,7 @@ undefined1 __stdcall FUN_104ffbc0(unsigned int recovered_unused_stack_0)
 void FUN_10503320(void)
 
 {
-  FUN_10004ead();
+  FUN_105032a0();
 }
 
 

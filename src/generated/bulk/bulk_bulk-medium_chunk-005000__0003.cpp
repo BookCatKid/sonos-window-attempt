@@ -292,6 +292,7 @@ extern undefined1 LAB_116c0120[];
 extern undefined1 LAB_116c1790[];
 extern undefined1 LAB_116c30f0[];
 extern void *ExceptionList;
+extern int FUN_1125b8f0(...);
 undefined4 __stdcall FUN_10b8b790(undefined4 param_1);
 template<class... A> int FUN_10b8b790(A...);
 undefined4 __stdcall FUN_10b8b7d0(undefined4 param_1);
@@ -2167,7 +2168,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10b9a370(byte param_2)
 undefined4 __thiscall Recovered_Bulk::m_FUN_10b9a3a0(byte param_2)
 {
   undefined4 param_1 = (undefined4 )this;
-  FUN_1003d5d7();
+  FUN_1125b8f0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0xc);
   }

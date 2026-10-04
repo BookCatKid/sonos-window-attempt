@@ -746,6 +746,8 @@ extern int *PTR_DAT_1211d610;
 extern int *PTR_DAT_1211d618;
 extern int *PTR_s_other_1211d614;
 extern void *ExceptionList;
+extern int FUN_1125b8f0(...);
+extern int FUN_112a9d40(...);
 SCStr * __stdcall FUN_10f34070(SCStr *param_1);
 template<class... A> int FUN_10f34070(A...);
 SCStr * __stdcall FUN_10f34090(SCStr *param_1);
@@ -23131,7 +23133,7 @@ void __fastcall FUN_1107a0e0(undefined4 *param_1)
 
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjSMAPIContext);
-  thunk_FUN_112a7f20(param_1 + 1);
+  FUN_112a9d40(param_1 + 1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RSMAPIContextCB);
   return;
 }
@@ -23334,11 +23336,12 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1107b620(byte param_2)
 // Reference entry 1107b650; body size 51 bytes.
 #line 1 "ENTRY_1107b650"
 
+undef
 undefined4 * __thiscall Recovered_Bulk::m_FUN_1107b650(byte param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_SwfObjSMAPIContext);
-  thunk_FUN_112a7f20(param_1 + 1);
+  FUN_112a9d40(param_1 + 1);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RSMAPIContextCB);
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x18);
@@ -23347,7 +23350,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1107b650(byte param_2)
 }
 
 
-// Reference entry 1107b690; body size 35 bytes.
+erence entry 1107b690; body size 35 bytes.
 #line 1 "ENTRY_1107b690"
 
 undefined4 __thiscall Recovered_Bulk::m_FUN_1107b690(byte param_2)
@@ -24811,10 +24814,11 @@ void __fastcall FUN_11099350(int *param_1)
 // Reference entry 110996a0; body size 35 bytes.
 #line 1 "ENTRY_110996a0"
 
+undefined4 
 undefined4 __thiscall Recovered_Bulk::m_FUN_110996a0(byte param_2)
 {
   undefined4 param_1 = (undefined4 )this;
-  FUN_1003d5d7();
+  FUN_1125b8f0();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(param_1,0x151c);
   }
@@ -24822,7 +24826,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_110996a0(byte param_2)
 }
 
 
-// Reference entry 110996d0; body size 33 bytes.
+ entry 110996d0; body size 33 bytes.
 #line 1 "ENTRY_110996d0"
 
 undefined4 * __thiscall Recovered_Bulk::m_FUN_110996d0(byte param_2)

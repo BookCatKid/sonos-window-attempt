@@ -843,6 +843,8 @@ extern int *PTR_s_https___www__119e5428;
 extern char s_STATION_119318b8[];
 extern char s_UNKNOWN_1189488c[];
 extern void *ExceptionList;
+extern int FUN_112a9d50(...);
+extern int FUN_112aa380(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_1109cf00(void);
 template<class... A> int FUN_1109cf00(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_1109cf20(void);
@@ -6644,7 +6646,7 @@ undefined4 * __fastcall FUN_110a8a30(undefined4 *param_1)
 {
   int *param_1 = (int *)this;
   *param_1 = (int)(param_2);
-  thunk_FUN_112a7f50(param_2 + 0x1c);
+  FUN_112a9d50(param_2 + 0x1c);
   return (int *)(param_1);
 }
 
@@ -11162,6 +11164,7 @@ undefined4 __fastcall FUN_110b4ea0(int param_1)
 // Reference entry 110b5460; body size 45 bytes.
 #line 1 "ENTRY_110b5460"
 
+/* Re
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_110b5460(int param_2)
 {
   int *param_1 = (int *)this;
@@ -11169,14 +11172,14 @@ undefined4 __fastcall FUN_110b4ea0(int param_1)
   
   iVar1 = (int)(*(int *)(param_2 + 8));
   while (iVar1 != 0) {
-    thunk_FUN_112a7da0(*param_1 + 0x24,*param_1 + 0x1c);
+    FUN_112aa380(*param_1 + 0x24,*param_1 + 0x1c);
     iVar1 = (int)(*(int *)(param_2 + 8));
   }
   return;
 }
 
 
-// Reference entry 110b54a0; body size 6 bytes.
+erence entry 110b54a0; body size 6 bytes.
 #line 1 "ENTRY_110b54a0"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */

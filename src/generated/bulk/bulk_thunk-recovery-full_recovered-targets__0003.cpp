@@ -384,6 +384,10 @@ extern int *PTR_s_OnlineUpdateBaseURL_121190f8;
 extern int *PTR_s__________sclib_sclib_core_sclib__12119354;
 extern char s__________sclib_sclib_core_sclib__1188c380[];
 extern void *ExceptionList;
+extern int FUN_1125bd20(...);
+extern int FUN_112a9d50(...);
+extern int FUN_112a9d70(...);
+extern int FUN_112aa350(...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_102638d0(void);
 template<class... A> int FUN_102638d0(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_102638e0(void);
@@ -10034,10 +10038,10 @@ void FUN_1027d4d0(void)
   
   iVar1 = (int)(DAT_121a0b38);
   thunk_FUN_112af4e0("AnacapaLauncher",4,"AnacapaRun hit");
-  thunk_FUN_112a7f50(iVar1 + 0x1c);
+  FUN_112a9d50(iVar1 + 0x1c);
   *(undefined1*)(iVar1 + 0x4c) = (undefined1)(1);
-  thunk_FUN_112a7c70(iVar1 + 0x24);
-  thunk_FUN_112a8010(iVar1 + 0x1c);
+  FUN_112aa350(iVar1 + 0x24);
+  FUN_112a9d70(iVar1 + 0x1c);
   return;
 }
 
@@ -10045,6 +10049,7 @@ void FUN_1027d4d0(void)
 // Reference entry 1027d520; body size 47 bytes.
 #line 1 "ENTRY_1027d520"
 
+/* Recovered from
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void FUN_1027d520(void)
@@ -10055,16 +10060,16 @@ void FUN_1027d520(void)
   
   iVar2 = (int)(DAT_121a0b38);
   iVar1 = (int)(DAT_121a0b38 + 0x1c);
-  thunk_FUN_112a7f50(iVar1);
+  FUN_112a9d50(iVar1);
   *(undefined1*)(iVar2 + 0x4c) = (undefined1)(0);
-  thunk_FUN_112a8010(iVar1);
+  FUN_112a9d70(iVar1);
   PTR_DAT_12119128 = (int *)((undefined *)0x0);
   thunk_FUN_110fc270();
   return;
 }
 
 
-// Reference entry 1027d560; body size 18 bytes.
+ 1027d560; body size 18 bytes.
 #line 1 "ENTRY_1027d560"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
@@ -10949,6 +10954,7 @@ void __fastcall FUN_1027f960(undefined4 *param_1)
 // Reference entry 1027fb00; body size 11 bytes.
 #line 1 "ENTRY_1027fb00"
 
+/* Recovered from a missing 5
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_1027fb00(undefined4 *param_1)
@@ -10956,12 +10962,12 @@ void __fastcall FUN_1027fb00(undefined4 *param_1)
 {
   *param_1 = (undefined4)((uint)&ghidra_vftable_TestPointHandlerSCLIB);
   *param_1 = (undefined4)((uint)&ghidra_vftable_TestPointHandler);
-  thunk_FUN_11244ee0();
+  FUN_1125bd20();
   return;
 }
 
 
-// Reference entry 1027fba0; body size 58 bytes.
+ody size 58 bytes.
 #line 1 "ENTRY_1027fba0"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int * __thiscall Recovered_Bulk::m_FUN_1027fba0(int *param_2)
@@ -11259,21 +11265,22 @@ undefined4 __fastcall FUN_1027fe20(undefined4 *param_1)
 // Reference entry 102804c0; body size 55 bytes.
 #line 1 "ENTRY_102804c0"
 
+/* Recovered from a missing 5-byte 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
 void __fastcall FUN_102804c0(int param_1)
 
 {
   thunk_FUN_112af4e0("AnacapaLauncher",4,"AnacapaRun hit");
-  thunk_FUN_112a7f50(param_1 + 0x1c);
+  FUN_112a9d50(param_1 + 0x1c);
   *(undefined1*)(param_1 + 0x4c) = (undefined1)(1);
-  thunk_FUN_112a7c70(param_1 + 0x24);
-  thunk_FUN_112a8010(param_1 + 0x1c);
+  FUN_112aa350(param_1 + 0x24);
+  FUN_112a9d70(param_1 + 0x1c);
   return;
 }
 
 
-// Reference entry 10280d30; body size 169 bytes.
+ze 169 bytes.
 #line 1 "ENTRY_10280d30"
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10280d30(uint param_2)
