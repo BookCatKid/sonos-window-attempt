@@ -1,0 +1,18 @@
+4999 records, 4955 candidates (1155501 bytes), 0 skipped
+bulk_64_final__037654__0000: 1477/1500 fns (609594 bytes)
+bulk_64_final__037654__0001: 1486/1500 fns (352982 bytes)
+Traceback (most recent call last):
+  File "/Users/simon/MyDocuments/WindowAttempt/tools/compile_bulk_mass.py", line 2521, in <module>
+    main()
+    ~~~~^^
+  File "/Users/simon/MyDocuments/WindowAttempt/tools/compile_bulk_mass.py", line 2501, in main
+    source_path.write_text(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        full_source if full_ok
+        ^^^^^^^^^^^^^^^^^^^^^^
+        else cpp_source(good, defined_good, bad_decls)[0])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 810, in write_text
+    return f.write(data)
+           ~~~~~~~^^^^^^
+OSError: [Errno 28] No space left on device

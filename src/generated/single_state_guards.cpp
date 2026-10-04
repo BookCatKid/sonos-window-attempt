@@ -8849,8 +8849,8 @@ struct Recovered_10d97760 { undefined4 * FUN_10d97760(byte param_2) noexcept; };
 struct Recovered_10d9e4b0 { undefined4 * FUN_10d9e4b0(byte param_2) noexcept; };
 struct Recovered_10d9ff50 { int FUN_10d9ff50(byte param_2) noexcept; };
 struct Recovered_10defb60 { SCStr * FUN_10defb60(byte param_2) noexcept; };
-struct Recovered_10e14ec0 { void FUN_10e14ec0(int param_2); };
-struct Recovered_10e52130 { void FUN_10e52130(int param_2); };
+struct Recovered_10e14ec0 { void FUN_10e14ec0(int param_2, unsigned int recovered_unused_stack_0); };
+struct Recovered_10e52130 { void FUN_10e52130(int param_2, unsigned int recovered_unused_stack_0); };
 struct Recovered_10e972f0 { undefined4 * FUN_10e972f0(byte param_2) noexcept; };
 struct Recovered_10e97b80 { undefined4 * FUN_10e97b80(byte param_2) noexcept; };
 struct Recovered_10e98150 { undefined4 * FUN_10e98150(byte param_2) noexcept; };
@@ -17850,7 +17850,7 @@ void __fastcall FUN_10e0c560(int param_1) noexcept
 // Reference entry 10e14ec0; body size 316 bytes.
 #line 1 "ENTRY_10e14ec0"
 
-void Recovered_10e14ec0::FUN_10e14ec0(int param_2)
+void Recovered_10e14ec0::FUN_10e14ec0(int param_2, unsigned int recovered_unused_stack_0)
 
 {
   int param_1 = (int)this;
@@ -17942,7 +17942,7 @@ void Recovered_10e14ec0::FUN_10e14ec0(int param_2)
 // Reference entry 10e52130; body size 316 bytes.
 #line 1 "ENTRY_10e52130"
 
-void Recovered_10e52130::FUN_10e52130(int param_2)
+void Recovered_10e52130::FUN_10e52130(int param_2, unsigned int recovered_unused_stack_0)
 
 {
   int param_1 = (int)this;

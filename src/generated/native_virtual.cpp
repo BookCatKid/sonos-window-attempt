@@ -2627,7 +2627,7 @@ struct Recovered_10cb7b30 { undefined4 * FUN_10cb7b30(int *param_2); };
 struct Recovered_10cb7d50 { int * FUN_10cb7d50(int *param_2); };
 struct Recovered_10cb8f00 { undefined4 * FUN_10cb8f00(undefined4 *param_2); };
 struct Recovered_10cb94d0 { int * FUN_10cb94d0(int *param_2); };
-struct Recovered_10cbd9d0 { int * FUN_10cbd9d0(int *param_2,int param_3); };
+struct Recovered_10cbd9d0 { int * FUN_10cbd9d0(int *param_2,int param_3, unsigned int recovered_unused_stack_0); };
 struct Recovered_10cbe750 { int * FUN_10cbe750(int *param_2); };
 struct Recovered_10cc0cd0 { undefined4 * FUN_10cc0cd0(int *param_2); };
 struct Recovered_10cc1890 { int * FUN_10cc1890(int *param_2); };
@@ -89423,7 +89423,7 @@ int * Recovered_10cb94d0::FUN_10cb94d0(int *param_2)
 // Reference entry 10cbd9d0; body size 45 bytes.
 #line 1 "ENTRY_10cbd9d0"
 
-int * Recovered_10cbd9d0::FUN_10cbd9d0(int *param_2,int param_3)
+int * Recovered_10cbd9d0::FUN_10cbd9d0(int *param_2,int param_3, unsigned int recovered_unused_stack_0)
 
 {
   int param_1 = (int)this;

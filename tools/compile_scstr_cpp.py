@@ -261,6 +261,11 @@ def reference_arity(source):
             r'(?m)^(?P<result>[A-Za-z_][\w\s\*]*?)\s+Recovered_' + marker.group(1) +
             r'::(?P<name>FUN_' + marker.group(1) + r')\s*\((?P<params>[^()]*)\)'
             r'\s*(?:noexcept\s*)?\{', block)
+        if not member:
+            member = re.search(
+                r'(?m)^(?:[^\n]*?\*/\s*)?(?P<result>[A-Za-z_][\w\s\*]*?)\s+'
+                r'(?:__thiscall\s+)?Recovered_\w+::(?P<name>(?:m_)?FUN_' +
+                marker.group(1) + r')\s*\((?P<params>[^()]*)\)\s*\{', block)
         if member:
             # A __thiscall member keeps `this` in ecx and cleans every explicit
             # argument on the stack; growing the parameter list fixes a

@@ -1,0 +1,6 @@
+5000 records, 5000 candidates (118881 bytes), 0 skipped
+bulk_bulk-medium_chunk-020000__0000: 1500/1500 fns (35644 bytes)
+bulk_bulk-medium_chunk-020000__0001: 1500/1500 fns (35710 bytes)
+bulk_bulk-medium_chunk-020000__0002: 1500/1500 fns (35480 bytes)
+bulk_bulk-medium_chunk-020000__0003: 499/500 fns (12028 bytes)
+accepted 4999 fns / 118862 bytes

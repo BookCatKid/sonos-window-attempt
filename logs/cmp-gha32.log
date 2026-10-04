@@ -1,0 +1,17 @@
+{
+  "object_compiled_functions": 160150,
+  "exact_function_bodies_without_relocations": 23401,
+  "exact_reference_body_bytes": 213691,
+  "exact_function_bodies_after_known_relocations": 78611,
+  "exact_reference_body_bytes_after_known_relocations": 690206,
+  "known_relocations_resolved": 319109,
+  "known_relocations_unresolved": 155621,
+  "same_length_fixed_byte_matches_pending_relocation": 79781,
+  "same_length_fixed_match_reference_body_bytes": 704292,
+  "same_length_function_bodies": 83082,
+  "functions_without_mapped_object_symbol": 496,
+  "functions_with_relocations": 118013,
+  "fixed_bytes_matching_in_common_prefix": 1494630,
+  "fixed_bytes_compared_in_common_prefix": 7312750,
+  "scope": "x86 COFF objects versus contiguous Ghidra function bodies; not a full-DLL comparison"
+}

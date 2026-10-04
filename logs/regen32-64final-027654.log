@@ -1,0 +1,21 @@
+5000 records, 4983 candidates (1509996 bytes), 0 skipped
+bulk_64_final__027654__0000: 1498/1500 fns (470530 bytes)
+Traceback (most recent call last):
+  File "/Users/simon/MyDocuments/WindowAttempt/tools/compile_bulk_mass.py", line 2521, in <module>
+    main()
+    ~~~~^^
+  File "/Users/simon/MyDocuments/WindowAttempt/tools/compile_bulk_mass.py", line 2489, in main
+    good = split_valid(part, scratch, failures, bad_decls)
+  File "/Users/simon/MyDocuments/WindowAttempt/tools/compile_bulk_mass.py", line 2399, in split_valid
+    good, error = syntax_ok(source, scratch)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/simon/MyDocuments/WindowAttempt/tools/compile_bulk_mass.py", line 2376, in syntax_ok
+    scratch.write_text(re.sub(r'\b__thiscall\b', '', source))
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 809, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 28] No space left on device: 'analysis/compiled-cpp-bulk/.syntax-probe-bulk_64_final__027654_-68960.cpp'
