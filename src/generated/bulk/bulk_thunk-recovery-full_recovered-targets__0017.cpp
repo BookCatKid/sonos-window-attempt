@@ -383,7 +383,6 @@ extern undefined1 LAB_116c1820[];
 extern undefined1 LAB_116c29f5[];
 extern undefined1 LAB_116c31b0[];
 extern undefined1 LAB_116c40fd[];
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __fastcall FUN_10b80320(undefined4 *param_1);
 template<class... A> int FUN_10b80320(A...);

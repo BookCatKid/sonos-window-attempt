@@ -139,11 +139,16 @@ def main(indir, outpath):
                             'free': f'{fn}((void *)0)'}.get(fn, m.group(0))
                 parts = [a.strip() for a in args.split(',')]
                 # RetDec appends dead register args to memcpy/memset
-                # (rep-movsd noise); keep only the canonical three.
-                if fn in ('memcpy', 'memmove') and len(parts) >= 3:
+                # (rep-movsd noise) or drops args it cannot see; keep or
+                # pad to the canonical three.
+                if fn in ('memcpy', 'memmove'):
+                    while len(parts) < 3:
+                        parts.append('(void *)0' if len(parts) < 2 else '0')
                     return (f'{fn}((void *)({parts[0]}), (void *)'
                             f'({parts[1]}), {parts[2]})')
-                if fn == 'memset' and len(parts) >= 3:
+                if fn == 'memset':
+                    while len(parts) < 3:
+                        parts.append('0')
                     return (f'{fn}((void *)({parts[0]}), {parts[1]}, '
                             f'{parts[2]})')
                 if fn == 'free' and len(parts) >= 1:
@@ -179,6 +184,32 @@ def main(indir, outpath):
                                src[m.end():])
                     src = (src.rstrip()[:-1].rstrip() +
                            f'\n{lab}: ;\n}}')
+            # case labels must be constants; (int)&DAT_<va> isn't, but the
+            # reference case value IS the literal VA.
+            src = re.sub(
+                r'\bcase\s+\(int\)&(?:DAT_|FUN_)([0-9a-f]{8})\s*:',
+                lambda m: f'case 0x{m.group(1)}:', src)
+            # deduplicate repeated lab_0x definitions
+            seen = set()
+            def dedup(m):
+                lab = m.group(1)
+                if lab in seen:
+                    return lab + '_dup:'
+                seen.add(lab)
+                return m.group(0)
+            src = re.sub(r'\b(lab_0x[0-9a-f]+)\s*:', dedup, src)
+            # goto to a label RetDec never defined (jump outside the slice):
+            # retarget to the trailing label.
+            defined = set(re.findall(r'\b(lab_0x[0-9a-f]+)\s*:', src))
+            stray_gotos = set(re.findall(r'\bgoto\s+(lab_0x[0-9a-f]+)\s*;',
+                                       src)) - defined
+            if stray_gotos:
+                lab = f'lab_brk_{entry}'
+                for g in stray_gotos:
+                    src = src.replace(f'goto {g};', f'goto {lab};')
+                if f'{lab}:' not in src:
+                    src = (src.rstrip()[:-1].rstrip() +
+                           f'\n{lab}: ;\n}}')
             # RetDec register variables (g1, g2, ...) are referenced but
             # never declared; give them int locals.
             for g in sorted(set(re.findall(r'\bg(\d+)\b', src))):
@@ -188,10 +219,17 @@ def main(indir, outpath):
             src = '\n'.join(
                 line for line in src.splitlines()
                 if not line.strip().startswith('//'))
+            rng = re.search(
+                r'Address range: 0x([0-9a-fA-F]+) - 0x([0-9a-fA-F]+)', text)
+            body_bytes = (int(rng.group(2), 16) - int(rng.group(1), 16)
+                          if rng else 0)
+            if not body_bytes:
+                binf = Path(indir) / f'fn_{entry}.bin'
+                if binf.exists():
+                    body_bytes = len(binf.read_bytes())
             out.write(json.dumps({
                 'target': entry, 'entry': entry, 'name': 'FUN_' + entry,
-                'body_bytes': len(
-                    (Path(indir) / f'fn_{entry}.bin').read_bytes()),
+                'body_bytes': body_bytes,
                 'decompiled_c': src + '\n', 'decompiled': True,
                 'status': 'retdec_gap'}) + '\n')
             emitted += 1

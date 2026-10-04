@@ -1090,13 +1090,6 @@ extern int *PTR_s_LineLevel_119cb040;
 extern int *PTR_s_RadioFavoritesUpdateID_119cad20;
 extern int *PTR_s_TOSLinkConnected_119ccb90;
 extern int *PTR_s_Volume_Master_119ce998;
-extern int *stack0x00000004;
-extern int *stack0x00000008;
-extern int *stack0x0000000c;
-extern int *stack0x00000010;
-extern int *stack0x00000014;
-extern int *stack0xfffffff4;
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 void __fastcall FUN_110f6fd0(int param_1);
 template<class... A> int FUN_110f6fd0(A...);
@@ -4572,7 +4565,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_11125cd0(undefined4 param_2,int para
 
 void FUN_11125d90(undefined4 param_1,undefined4 param_2)
 
-{
+{ int stack0x0000000c;
  try {
   uint *puVar1;
   
@@ -11206,7 +11199,7 @@ undefined4 * __fastcall FUN_111a6e70(undefined4 *param_1)
 
 void FUN_111a6f10(void)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -11261,7 +11254,7 @@ undefined4 FUN_111a72e0(int *param_1)
 
 void FUN_111a74d0(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
-{
+{ int stack0x00000010;
  try {
   if ((code *)(DAT_122e8adc) != (code *)(0x0)) {
     (*(code *)(uint)(DAT_122e8adc))(param_1,param_2,param_3,&stack0x00000010);
@@ -11412,7 +11405,7 @@ void FUN_111abf70(int *param_1)
 
 void FUN_111ac070(undefined4 param_1,undefined4 param_2)
 
-{
+{ int stack0x0000000c;
  try {
   undefined4 *puVar1;
   
@@ -11429,7 +11422,7 @@ void FUN_111ac070(undefined4 param_1,undefined4 param_2)
 
 int FUN_111ac1c0(undefined4 param_1,undefined4 param_2)
 
-{
+{ int stack0x0000000c;
  try {
   uint *puVar1;
   int iVar2;
@@ -11699,7 +11692,7 @@ void __thiscall Recovered_Bulk::m_FUN_111bd000(int param_2)
 
 void FUN_111bdc10(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
-{
+{ int stack0x00000014;
  try {
   if (*(int **)(param_1 + 0x10) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 0x10) + 4))(param_2,param_3,param_4,&stack0x00000014);
@@ -11876,7 +11869,7 @@ void FUN_111c03c0(int param_1,undefined4 param_2,undefined4 param_3)
 
 int FUN_111c0480(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
-{
+{ int stack0x00000010;
  try {
   uint *puVar1;
   int iVar2;
@@ -14601,7 +14594,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_111f6e80(int param_2)
 
 void FUN_111f75b0(undefined4 param_1)
 
-{
+{ int stack0x00000008;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -16464,7 +16457,7 @@ void __thiscall Recovered_Bulk::m_FUN_1122f1a0(int param_2,int param_3)
 
 undefined4 * __thiscall Recovered_Bulk::m_FUN_11230240(int *param_2)
 {
-  undefined4 *param_1 = (undefined4 *)this;
+  undefined4 *param_1 = (undefined4 *)this; int stack0xfffffff4;
  try {
   *param_1 = (undefined4)(param_2);
   (**(code **)(*param_2 + 100))(param_1 + 1);
@@ -22116,7 +22109,7 @@ void __fastcall FUN_11278180(int param_1)
 
 void __thiscall Recovered_Bulk::m_FUN_11278b20(char *param_2)
 {
-  int param_1 = (int )this;
+  int param_1 = (int )this; int stack0xfffffffc;
  try {
   int iVar1;
   char cVar2;
@@ -22465,7 +22458,7 @@ undefined1 * FUN_1127c6d0(undefined4 param_1)
 
 void __stdcall FUN_1127cc30(unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
-{
+{ int stack0x00000004; int stack0x00000008;
  try {
   thunk_FUN_1127bbb0(&stack0x00000004,&stack0x00000008);
   return;
@@ -25510,7 +25503,7 @@ void FUN_112a9380(undefined4 param_1,undefined4 param_2)
 
 void FUN_112a94d0(int param_1)
 
-{
+{ int stack0x00000008;
  try {
   if (param_1 != 0) {
     FUN_112a9570(param_1,&stack0x00000008);
@@ -25869,7 +25862,7 @@ void FUN_112af170(int param_1,int param_2,undefined4 param_3)
 
 void FUN_112af4e0(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
-{
+{ int stack0x00000010;
  try {
   FUN_112afbd0(param_1,param_2,param_3,&stack0x00000010);
   return;
@@ -25883,7 +25876,7 @@ void FUN_112af4e0(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
 void FUN_112b0270(undefined4 param_1,int param_2,undefined4 param_3)
 
-{
+{ int stack0x00000010;
  try {
   int iVar1;
   

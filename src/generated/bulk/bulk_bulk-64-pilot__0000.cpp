@@ -1694,10 +1694,6 @@ extern undefined1 LAB_11861ea0[];
 extern undefined1 LAB_118620a0[];
 extern undefined1 LAB_11862550[];
 extern int *PTR_vftable_1211c1c8;
-extern int *stack0x00000004;
-extern int *stack0xffffffe0;
-extern int *stack0xffffffe4;
-extern int *stack0xfffffffc;
 extern char s_AppRating_CheckForNag_11913de8[];
 extern char s_AppRating_CurrentVersion_11913d44[];
 extern char s_AppRating_DaysSinceSNF_11913d84[];
@@ -5085,7 +5081,7 @@ void FUN_100e18a0(void)
 
 void __fastcall FUN_100e4610(undefined4 param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -5118,7 +5114,7 @@ void __fastcall FUN_100e4610(undefined4 param_1)
 
 void FUN_100e47d0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 uVar2;
@@ -7468,7 +7464,7 @@ void __fastcall FUN_1011f780(int *param_1)
 
 void __fastcall FUN_1011f810(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -12093,7 +12089,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_101292b0(byte param_2)
 
 SCStr * FUN_10129410(SCStr *param_1,int param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -25445,7 +25441,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1013e820(undefined4 *param_2,SCStr
 
 void __fastcall FUN_1013e890(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
-{
+{ int stack0x00000004;
  try {
   undefined1 local_20 [28];
   uint local_4;
@@ -31081,7 +31077,7 @@ void __thiscall Recovered_Bulk::m_FUN_101457b0(undefined4 *param_2,undefined4 *p
 
 void __fastcall FUN_101458e0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
-{
+{ int stack0x00000004;
  try {
   undefined1 local_20 [28];
   uint local_4;
@@ -32573,7 +32569,7 @@ void __thiscall Recovered_Bulk::m_FUN_101496b0(undefined4 param_2)
 
 void __fastcall FUN_10149740(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2)
 
-{
+{ int stack0x00000004;
  try {
   undefined1 local_20 [28];
   uint local_4;
@@ -33245,7 +33241,7 @@ undefined4 __stdcall FUN_1014d0f0(int *param_1,ushort *param_2)
 
 undefined4 FUN_1014d210(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -33275,7 +33271,7 @@ undefined4 FUN_1014d210(int *param_1)
 
 undefined4 FUN_1014d2b0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -33305,7 +33301,7 @@ undefined4 FUN_1014d2b0(int *param_1)
 
 undefined4 FUN_1014d350(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -33335,7 +33331,7 @@ undefined4 FUN_1014d350(int *param_1)
 
 undefined4 __stdcall FUN_1014d3f0(int *param_1,undefined4 param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -33378,7 +33374,7 @@ undefined4 __stdcall FUN_1014d3f0(int *param_1,undefined4 param_2)
 
 undefined4 FUN_1014d4e0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -33436,7 +33432,7 @@ void __stdcall FUN_1014d5a0(int *param_1,ushort *param_2)
 
 undefined4 FUN_1014d690(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -33466,7 +33462,7 @@ undefined4 FUN_1014d690(int *param_1)
 
 undefined4 __stdcall FUN_1014d7f0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -33509,7 +33505,7 @@ undefined4 __stdcall FUN_1014d7f0(int *param_1)
 
 undefined4 __stdcall FUN_1014d8e0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -33552,7 +33548,7 @@ undefined4 __stdcall FUN_1014d8e0(int *param_1)
 
 undefined4 __stdcall FUN_1014d9d0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -33651,7 +33647,7 @@ SCStr * __stdcall FUN_1014dac0(int *param_1)
 
 undefined4 __stdcall FUN_1014dc10(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -33694,7 +33690,7 @@ undefined4 __stdcall FUN_1014dc10(int *param_1)
 
 undefined4 __stdcall FUN_1014dd00(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -33859,7 +33855,7 @@ undefined4 __stdcall FUN_1014e030(int *param_1,ushort *param_2,ushort *param_3)
 
 undefined4 FUN_1014e120(int *param_1,undefined4 param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -33889,7 +33885,7 @@ undefined4 FUN_1014e120(int *param_1,undefined4 param_2)
 
 undefined4 FUN_1014e1c0(int *param_1,undefined4 param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -34462,7 +34458,7 @@ undefined4 __stdcall FUN_1014ee90(int *param_1,ushort *param_2,ushort *param_3,u
 
 undefined4 FUN_1014ef80(int *param_1,undefined4 param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -34567,7 +34563,7 @@ undefined4 __stdcall FUN_1014f110(int *param_1,ushort *param_2)
 
 undefined4 FUN_1014f1c0(int *param_1,undefined4 param_2,undefined4 param_3)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -34637,7 +34633,7 @@ undefined4 __stdcall FUN_1014f260(int *param_1,ushort *param_2,ushort *param_3)
 
 undefined4 FUN_1014f350(int *param_1,undefined4 param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -34667,7 +34663,7 @@ undefined4 FUN_1014f350(int *param_1,undefined4 param_2)
 
 undefined4 FUN_1014f3f0(int *param_1,undefined4 param_2,undefined4 param_3)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -34738,7 +34734,7 @@ undefined4 __stdcall FUN_1014f490(int *param_1,ushort *param_2,ushort *param_3,i
 
 undefined4 FUN_1014f580(int *param_1,undefined4 param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -34768,7 +34764,7 @@ undefined4 FUN_1014f580(int *param_1,undefined4 param_2)
 
 undefined4 __stdcall FUN_1014f620(int *param_1,undefined4 param_2,ushort *param_3)
 
-{
+{ int stack0xffffffe0;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -34839,7 +34835,7 @@ __stdcall FUN_1014f6e0(int *param_1,int param_2,ushort *param_3,undefined4 param
 
 undefined4 FUN_1014f7a0(int *param_1,undefined4 param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -34869,7 +34865,7 @@ undefined4 FUN_1014f7a0(int *param_1,undefined4 param_2)
 
 undefined4 FUN_1014f8d0(int *param_1,undefined4 param_2,undefined4 param_3)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -34899,7 +34895,7 @@ undefined4 FUN_1014f8d0(int *param_1,undefined4 param_2,undefined4 param_3)
 
 undefined4 FUN_1014f980(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -34929,7 +34925,7 @@ undefined4 FUN_1014f980(int *param_1)
 
 undefined4 FUN_1014fa30(int *param_1,undefined4 param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -34994,7 +34990,7 @@ undefined4 __stdcall FUN_1014fae0(int *param_1,ushort *param_2)
 
 undefined4 FUN_1014fc20(int *param_1,int *param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35025,7 +35021,7 @@ undefined4 FUN_1014fc20(int *param_1,int *param_2)
 
 undefined4 FUN_1014fce0(int *param_1,undefined4 param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35125,7 +35121,7 @@ undefined4 __stdcall FUN_1014fe80(int *param_1,ushort *param_2,undefined4 param_
 
 undefined4 FUN_1014ffb0(int *param_1,undefined4 param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35155,7 +35151,7 @@ undefined4 FUN_1014ffb0(int *param_1,undefined4 param_2)
 
 undefined4 FUN_10150050(int *param_1,undefined4 param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35185,7 +35181,7 @@ undefined4 FUN_10150050(int *param_1,undefined4 param_2)
 
 undefined4 FUN_101500f0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35215,7 +35211,7 @@ undefined4 FUN_101500f0(int *param_1)
 
 undefined4 FUN_101501a0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35245,7 +35241,7 @@ undefined4 FUN_101501a0(int *param_1)
 
 undefined4 __stdcall FUN_10150240(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -35288,7 +35284,7 @@ undefined4 __stdcall FUN_10150240(int *param_1)
 
 undefined4 FUN_10150330(int *param_1,undefined4 param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35318,7 +35314,7 @@ undefined4 FUN_10150330(int *param_1,undefined4 param_2)
 
 undefined4 FUN_101503d0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35348,7 +35344,7 @@ undefined4 FUN_101503d0(int *param_1)
 
 undefined4 FUN_10150470(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35378,7 +35374,7 @@ undefined4 FUN_10150470(int *param_1)
 
 undefined4 FUN_10150510(int *param_1,undefined4 param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35408,7 +35404,7 @@ undefined4 FUN_10150510(int *param_1,undefined4 param_2)
 
 undefined4 FUN_101505b0(int *param_1,undefined4 param_2,undefined4 param_3)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35438,7 +35434,7 @@ undefined4 FUN_101505b0(int *param_1,undefined4 param_2,undefined4 param_3)
 
 undefined4 FUN_10150690(int *param_1,undefined4 param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35468,7 +35464,7 @@ undefined4 FUN_10150690(int *param_1,undefined4 param_2)
 
 undefined4 FUN_101507c0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35498,7 +35494,7 @@ undefined4 FUN_101507c0(int *param_1)
 
 undefined4 __stdcall FUN_10150860(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -35541,7 +35537,7 @@ undefined4 __stdcall FUN_10150860(int *param_1)
 
 undefined4 __stdcall FUN_10150960(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -35584,7 +35580,7 @@ undefined4 __stdcall FUN_10150960(int *param_1)
 
 undefined4 __stdcall FUN_10150a50(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -35627,7 +35623,7 @@ undefined4 __stdcall FUN_10150a50(int *param_1)
 
 undefined4 FUN_10150b50(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35657,7 +35653,7 @@ undefined4 FUN_10150b50(int *param_1)
 
 undefined4 FUN_10150bf0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35687,7 +35683,7 @@ undefined4 FUN_10150bf0(int *param_1)
 
 undefined4 FUN_10150c90(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35717,7 +35713,7 @@ undefined4 FUN_10150c90(int *param_1)
 
 undefined4 FUN_10150d30(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35747,7 +35743,7 @@ undefined4 FUN_10150d30(int *param_1)
 
 undefined4 __stdcall FUN_10150dd0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -35790,7 +35786,7 @@ undefined4 __stdcall FUN_10150dd0(int *param_1)
 
 undefined4 FUN_10150ec0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35820,7 +35816,7 @@ undefined4 FUN_10150ec0(int *param_1)
 
 undefined4 __stdcall FUN_10150f80(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -35863,7 +35859,7 @@ undefined4 __stdcall FUN_10150f80(int *param_1)
 
 undefined4 __stdcall FUN_10151070(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -35906,7 +35902,7 @@ undefined4 __stdcall FUN_10151070(int *param_1)
 
 undefined4 __stdcall FUN_10151190(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -35949,7 +35945,7 @@ undefined4 __stdcall FUN_10151190(int *param_1)
 
 undefined4 FUN_10151280(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -35979,7 +35975,7 @@ undefined4 FUN_10151280(int *param_1)
 
 undefined4 __stdcall FUN_10151320(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -36022,7 +36018,7 @@ undefined4 __stdcall FUN_10151320(int *param_1)
 
 undefined4 __stdcall FUN_10151410(int *param_1,undefined4 param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -36065,7 +36061,7 @@ undefined4 __stdcall FUN_10151410(int *param_1,undefined4 param_2)
 
 undefined4 __stdcall FUN_10151500(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -36108,7 +36104,7 @@ undefined4 __stdcall FUN_10151500(int *param_1)
 
 undefined4 FUN_10151670(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -36341,7 +36337,7 @@ undefined4 __stdcall FUN_10151d10(int *param_1,undefined4 param_2,ushort *param_
 
 undefined4 __stdcall FUN_10151e10(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -36384,7 +36380,7 @@ undefined4 __stdcall FUN_10151e10(int *param_1)
 
 undefined4 __stdcall FUN_10151f00(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -36427,7 +36423,7 @@ undefined4 __stdcall FUN_10151f00(int *param_1)
 
 undefined4 __stdcall FUN_10152050(int *param_1,undefined4 param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -36637,7 +36633,7 @@ void __stdcall FUN_10152530(int *param_1,undefined4 param_2,ushort *param_3,unde
 
 undefined4 __stdcall FUN_10152650(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -36863,7 +36859,7 @@ undefined4 * __stdcall FUN_10152910(int *param_1,ushort *param_2)
 
 undefined4 FUN_10152bc0(int *param_1,int *param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -36894,7 +36890,7 @@ undefined4 FUN_10152bc0(int *param_1,int *param_2)
 
 undefined4 FUN_10152c70(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -36924,7 +36920,7 @@ undefined4 FUN_10152c70(int *param_1)
 
 undefined4 FUN_10152d10(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -37078,7 +37074,7 @@ undefined1 __stdcall FUN_10152fd0(int *param_1,ushort *param_2)
 
 undefined4 FUN_10153070(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -37108,7 +37104,7 @@ undefined4 FUN_10153070(int *param_1)
 
 undefined4 __stdcall FUN_10153110(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -37151,7 +37147,7 @@ undefined4 __stdcall FUN_10153110(int *param_1)
 
 undefined4 __stdcall FUN_10153200(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -37194,7 +37190,7 @@ undefined4 __stdcall FUN_10153200(int *param_1)
 
 void __stdcall FUN_10153330(int *param_1,ushort *param_2)
 
-{
+{ int stack0xffffffe4;
  try {
   undefined4 local_14;
   void *local_10;
@@ -37219,7 +37215,7 @@ void __stdcall FUN_10153330(int *param_1,ushort *param_2)
 
 undefined4 FUN_101533d0(int *param_1,undefined4 param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -37249,7 +37245,7 @@ undefined4 FUN_101533d0(int *param_1,undefined4 param_2)
 
 undefined4 FUN_101534a0(int *param_1,undefined4 param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -37279,7 +37275,7 @@ undefined4 FUN_101534a0(int *param_1,undefined4 param_2)
 
 undefined4 FUN_10153540(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -37309,7 +37305,7 @@ undefined4 FUN_10153540(int *param_1)
 
 undefined4 FUN_101535e0(int *param_1,undefined4 param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -37339,7 +37335,7 @@ undefined4 FUN_101535e0(int *param_1,undefined4 param_2)
 
 undefined4 FUN_10153680(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -37369,7 +37365,7 @@ undefined4 FUN_10153680(int *param_1,undefined4 param_2,undefined4 param_3,undef
 
 undefined4 FUN_10153720(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -37399,7 +37395,7 @@ undefined4 FUN_10153720(int *param_1,undefined4 param_2,undefined4 param_3,undef
 
 undefined4 FUN_10153810(int *param_1,int *param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -37523,7 +37519,7 @@ SCStr * __stdcall FUN_101539f0(int *param_1)
 
 undefined4 __stdcall FUN_10153b70(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -37566,7 +37562,7 @@ undefined4 __stdcall FUN_10153b70(int *param_1)
 
 undefined4 __stdcall FUN_10153da0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -37609,7 +37605,7 @@ undefined4 __stdcall FUN_10153da0(int *param_1)
 
 undefined4 __stdcall FUN_10153e90(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -37675,7 +37671,7 @@ void __stdcall FUN_101541e0(int param_1,undefined4 param_2,undefined4 param_3,un
 
 undefined4 FUN_10154270(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -37852,7 +37848,7 @@ void __stdcall FUN_10154630(int *param_1,ushort *param_2,ushort *param_3,undefin
 
 undefined4 __stdcall FUN_10154820(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -37895,7 +37891,7 @@ undefined4 __stdcall FUN_10154820(int *param_1)
 
 undefined4 __stdcall FUN_10154910(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -38002,7 +37998,7 @@ undefined1 __stdcall FUN_10154af0(int *param_1,ushort *param_2)
 
 undefined4 __stdcall FUN_10154c80(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -38045,7 +38041,7 @@ undefined4 __stdcall FUN_10154c80(int *param_1)
 
 undefined4 __stdcall FUN_10154d70(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -38088,7 +38084,7 @@ undefined4 __stdcall FUN_10154d70(int *param_1)
 
 undefined4 __stdcall FUN_10154e60(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -38131,7 +38127,7 @@ undefined4 __stdcall FUN_10154e60(int *param_1)
 
 undefined4 __stdcall FUN_10154ff0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -38230,7 +38226,7 @@ SCStr * __stdcall FUN_101550e0(int *param_1)
 
 undefined4 __stdcall FUN_10155230(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;

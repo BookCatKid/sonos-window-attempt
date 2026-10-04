@@ -1032,7 +1032,6 @@ extern undefined1 LAB_116bebf0[];
 extern undefined1 LAB_116bec20[];
 extern undefined1 LAB_116bec50[];
 extern undefined1 LAB_116bec80[];
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_11822030(void);
 template<class... A> int FUN_11822030(A...);
@@ -9013,7 +9012,7 @@ void FUN_1182ac30(void)
 
 void FUN_1182acc0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;

@@ -750,7 +750,10 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
         elif symbol == 'ExceptionList':
             externs.add(('vptr', symbol))
         elif symbol.startswith('stack0x'):
-            externs.add(('ptr', symbol))
+            # Ghidra stack-slot names are frame locals; declaring them extern
+            # makes `&stack0x..` a data reference instead of `lea ebp+-k`.
+            # They are injected as int locals by the definitions pass below.
+            externs.add(('stacklocal', symbol))
         else:
             externs.add(('data', symbol))
     extern_names = {name for _, name in externs}
@@ -2110,6 +2113,18 @@ def cpp_source(records, defined, bad_decls=()):
             return ''.join(out)
 
         definitions = [_voidcall(d) for d in definitions]
+
+    def _inject_stacklocals(text):
+        slots = sorted(set(re.findall(r'\bstack0x[0-9a-fA-F]+\b', text)))
+        if not slots:
+            return text
+        brace = text.find('{')
+        if brace < 0:
+            return text
+        decls = ''.join(f' int {s};' for s in slots)
+        return text[:brace + 1] + decls + text[brace + 1:]
+
+    definitions = [_inject_stacklocals(d) for d in definitions]
     # Gate bisection can drop a callee after callers were transformed under
     # the assumption it would be defined here; give those dangling FUN_
     # references a variadic extern so the part still compiles.
@@ -2143,6 +2158,8 @@ def cpp_source(records, defined, bad_decls=()):
             extern_decls.append(f'extern void *{name};')
         elif kind == 'ptr':
             extern_decls.append(f'extern int *{name};')
+        elif kind == 'stacklocal':
+            pass  # injected as a local in each referencing body
         elif kind == 'str':
             extern_decls.append(f'extern char {name}[];')
         else:

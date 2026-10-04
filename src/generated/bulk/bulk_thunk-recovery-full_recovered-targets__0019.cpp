@@ -426,7 +426,6 @@ extern undefined1 LAB_116e60a0[];
 extern undefined1 LAB_116e60d0[];
 extern undefined1 LAB_117c174c[];
 extern undefined1 LAB_117c17f0[];
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_10c35fe0(void);
 template<class... A> int FUN_10c35fe0(A...);
@@ -2385,7 +2384,7 @@ template<class... A> int FUN_10c7d0c0(A...);
 template<class... A> int FUN_10c7d3a0(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __stdcall FUN_10c7d3f0(int param_1);
 template<class... A> int FUN_10c7d3f0(A...);
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void * FUN_10c7d8b0(void *param_1,int param_2);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void * __stdcall FUN_10c7d8b0(void *param_1, int param_2, unsigned int recovered_unused_stack_0);
 template<class... A> int FUN_10c7d8b0(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __stdcall FUN_10c7d930(undefined4 *param_1, undefined4 *param_2, int param_3, unsigned int recovered_unused_stack_0);
 template<class... A> int FUN_10c7d930(A...);
@@ -24079,7 +24078,7 @@ void __stdcall FUN_10c7d3f0(int param_1)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-void * FUN_10c7d8b0(void *param_1,int param_2)
+void * __stdcall FUN_10c7d8b0(void *param_1, int param_2, unsigned int recovered_unused_stack_0)
 
 {
   if (param_2 != 0) {

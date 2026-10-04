@@ -1433,19 +1433,6 @@ extern int *PTR_s_COMPILER_msvc_1928_119fc028;
 extern int *PTR_s_CONTROL_11c02820;
 extern int *PTR_s_NS2_MSG_KEEP_ALIVE_11a03004;
 extern int *PTR_s_not_an_error_119fbd80;
-extern int *stack0x00000004;
-extern int *stack0x00000008;
-extern int *stack0x0000000c;
-extern int *stack0x00000010;
-extern int *stack0x00000014;
-extern int *stack0x00000018;
-extern int *stack0x0000001c;
-extern int *stack0xfffffed8;
-extern int *stack0xfffffedc;
-extern int *stack0xffffffec;
-extern int *stack0xfffffff0;
-extern int *stack0xfffffff8;
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_112ad270(undefined4 param_1,int *param_2,char param_3);
 template<class... A> int FUN_112ad270(A...);
@@ -5136,7 +5123,7 @@ void FUN_112af3e0(char *param_1,int param_2,int param_3)
 
 void FUN_112af4c0(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
-{
+{ int stack0x00000010;
  try {
   FUN_112afbd0(param_1,param_2,param_3,&stack0x00000010);
   return;
@@ -5263,7 +5250,7 @@ int FUN_112b0060(undefined4 param_1,int param_2,int param_3)
 
 void FUN_112b0120(undefined4 param_1)
 
-{
+{ int stack0x00000008;
  try {
   FUN_112afbd0("flash_diag",0,param_1,&stack0x00000008);
   return;
@@ -9523,7 +9510,7 @@ char * FUN_112e9b50(int param_1,undefined4 param_2,char *param_3,undefined4 para
 
 void FUN_112ea470(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   int *piVar2;
@@ -11183,7 +11170,7 @@ void __fastcall FUN_112edb80(int param_1)
 
 void __fastcall FUN_112edba0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
-{
+{ int stack0x00000004;
  try {
   if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 0x24) + 8))(&stack0x00000004);
@@ -11203,7 +11190,7 @@ void __fastcall FUN_112edba0(int param_1, unsigned int recovered_unused_stack_0,
 
 void __fastcall FUN_112edbc0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3, unsigned int recovered_unused_stack_4, unsigned int recovered_unused_stack_5, unsigned int recovered_unused_stack_6, unsigned int recovered_unused_stack_7)
 
-{
+{ int stack0x00000004; int stack0x00000008; int stack0x0000000c; int stack0x00000010; int stack0x00000014; int stack0x00000018; int stack0x0000001c;
  try {
   if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 0x24) + 8)) (&stack0x00000004,&stack0x00000008,&stack0x0000000c,&stack0x00000010,&stack0x00000014, &stack0x00000018,&stack0x0000001c);
@@ -11223,7 +11210,7 @@ void __fastcall FUN_112edbc0(int param_1, unsigned int recovered_unused_stack_0,
 
 void __fastcall FUN_112edc10(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
-{
+{ int stack0x00000004;
  try {
   if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 0x24) + 8))(&stack0x00000004);
@@ -11265,7 +11252,7 @@ void __fastcall FUN_112edc30(int param_1)
 
 void __fastcall FUN_112edc50(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
-{
+{ int stack0x00000004;
  try {
   if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 0x24) + 8))(&stack0x00000004);
@@ -21467,7 +21454,7 @@ undefined4 FUN_113cfee0(int param_1,undefined4 param_2,undefined4 param_3)
 
 undefined4 FUN_113cff60(int *param_1)
 
-{
+{ int stack0x00000008;
  try {
   tm *ptVar1;
   
@@ -23797,7 +23784,7 @@ int FUN_113e62f0(int *param_1,undefined4 param_2,uint param_3)
 void FUN_113e91f0(int *param_1,undefined4 param_2,undefined4 *param_3,undefined4 param_4,
                  undefined4 *param_5)
 
-{
+{ int stack0xfffffed8; int stack0xfffffedc;
  try {
   int iVar1;
   undefined4 unaff_EBP;
@@ -27385,7 +27372,7 @@ undefined4 FUN_11432430(int *param_1)
 int FUN_114324b0(ushort *param_1,undefined4 param_2,undefined4 param_3,uint param_4,
                 undefined4 param_5,undefined4 param_6,int param_7,uint param_8,uint *param_9)
 
-{
+{ int stack0xffffffec; int stack0xfffffff0; int stack0xfffffff8;
  try {
   undefined4 uVar1;
   int iVar2;
@@ -27595,7 +27582,7 @@ undefined4 FUN_11433c50(int *param_1)
 int FUN_11433cd0(ushort *param_1,undefined4 param_2,undefined4 param_3,uint param_4,
                 undefined4 param_5,int param_6,int param_7,int param_8)
 
-{
+{ int stack0xffffffec; int stack0xfffffff0; int stack0xfffffff8;
  try {
   ushort *puVar1;
   uint uVar2;
@@ -35976,7 +35963,7 @@ void FUN_11477aa0(short *param_1,undefined1 *param_2)
 
 void FUN_11477af0(short *param_1)
 
-{
+{ int stack0x00000008;
  try {
   tm *ptVar1;
   

@@ -530,8 +530,6 @@ extern undefined1 LAB_115e0ff0[];
 extern undefined1 LAB_11728460[];
 extern undefined1 LAB_11807000[];
 extern int *PTR_vftable_12119af0;
-extern int *stack0x00000000;
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_105b1030(undefined4 param_1);
 template<class... A> int FUN_105b1030(A...);
@@ -11582,7 +11580,7 @@ uint FUN_105ea0f0(int param_1,undefined4 *param_2)
 
 undefined1 FUN_105ea160(int param_1,undefined4 *param_2)
 
-{
+{ int stack0x00000000;
  try {
   char cVar1;
   
@@ -11615,7 +11613,7 @@ undefined1 FUN_105ea160(int param_1,undefined4 *param_2)
 
 undefined4 FUN_105ea7b0(int param_1,undefined4 *param_2)
 
-{
+{ int stack0x00000000;
  try {
   char cVar1;
   
@@ -11961,7 +11959,7 @@ uint FUN_105ec110(int param_1,undefined4 *param_2)
 
 undefined1 FUN_105ec180(int param_1,undefined4 *param_2)
 
-{
+{ int stack0x00000000;
  try {
   char cVar1;
   
@@ -11994,7 +11992,7 @@ undefined1 FUN_105ec180(int param_1,undefined4 *param_2)
 
 undefined4 FUN_105ec7d0(int param_1,undefined4 *param_2)
 
-{
+{ int stack0x00000000;
  try {
   char cVar1;
   

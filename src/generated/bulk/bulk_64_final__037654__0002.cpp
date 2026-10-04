@@ -3153,7 +3153,6 @@ extern undefined1 LAB_1166b3d0[];
 extern undefined1 LAB_1166b400[];
 extern undefined1 LAB_1166b430[];
 extern undefined1 LAB_1166b460[];
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_117f8bf0(void);
 template<class... A> int FUN_117f8bf0(A...);
@@ -6358,7 +6357,7 @@ void FUN_117f8f70(void)
 
 void FUN_117f8fe0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -6912,7 +6911,7 @@ void FUN_117f9a70(void)
 
 void FUN_117f9ae0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -6938,7 +6937,7 @@ void FUN_117f9ae0(void)
 
 void FUN_117f9b60(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -6964,7 +6963,7 @@ void FUN_117f9b60(void)
 
 void FUN_117f9be0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -6990,7 +6989,7 @@ void FUN_117f9be0(void)
 
 void FUN_117f9c60(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -7016,7 +7015,7 @@ void FUN_117f9c60(void)
 
 void FUN_117f9ce0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -7042,7 +7041,7 @@ void FUN_117f9ce0(void)
 
 void FUN_117f9d60(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -7068,7 +7067,7 @@ void FUN_117f9d60(void)
 
 void FUN_117f9de0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -7094,7 +7093,7 @@ void FUN_117f9de0(void)
 
 void FUN_117f9e60(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -7120,7 +7119,7 @@ void FUN_117f9e60(void)
 
 void FUN_117f9ee0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -8682,7 +8681,7 @@ void FUN_117fbd90(void)
 
 void FUN_117fbe00(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -8730,7 +8729,7 @@ void FUN_117fbe80(void)
 
 void FUN_117fbef0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -10890,7 +10889,7 @@ void FUN_117fe970(void)
 
 void FUN_117fe9e0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -14426,7 +14425,7 @@ void FUN_11802f80(void)
 
 void FUN_11802ff0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -16310,7 +16309,7 @@ void FUN_11805530(void)
 
 void FUN_118055a0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -20463,7 +20462,7 @@ void FUN_1180a940(void)
 
 void FUN_1180a9b0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -20577,7 +20576,7 @@ void FUN_1180ab80(void)
 
 void FUN_1180abf0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -21317,7 +21316,7 @@ void FUN_1180ba30(void)
 
 void FUN_1180baa0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;

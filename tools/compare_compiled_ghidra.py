@@ -176,6 +176,9 @@ def generated_symbol_name(name):
     match = re.search(r'((?:thunk_)?FUN_[0-9a-fA-F]{8})', name)
     if match:
         return match.group(1)
+    match = re.search(r'func_0x([0-9a-fA-F]{8})', name)
+    if match:
+        return 'FUN_' + match.group(1)
     match = re.search(r'(ghidra_jump_target_[0-9a-fA-F]{8})', name)
     if match:
         return match.group(1)
@@ -210,18 +213,18 @@ def generated_symbol_name(name):
         # ??$name@targs@class@@sig: the class qualifier closes the name section.
         cls = re.findall(r'@([A-Za-z_]\w*)@@', name)
         if cls:
-            if match.group(1) == 'op_dtor':
+            if match.group(1) in ('op_dtor', 'm_op_dtor'):
                 return cls[-1] + '::~' + cls[-1]
-            if match.group(1) == 'op_ctor':
+            if match.group(1) in ('op_ctor', 'm_op_ctor'):
                 return cls[-1] + '::' + cls[-1]
             leaf = _OP_LEAVES.get(match.group(1), match.group(1))
             return cls[-1] + '::' + leaf
     match = re.match(r'\?([A-Za-z_]\w*)@((?:[A-Za-z_]\w*@?)+?)@@', name)
     if match:
         classes = [part for part in match.group(2).split('@') if part]
-        if match.group(1) == 'op_dtor':
+        if match.group(1) in ('op_dtor', 'm_op_dtor'):
             return '::'.join(reversed(classes)) + '::~' + classes[0]
-        if match.group(1) == 'op_ctor':
+        if match.group(1) in ('op_ctor', 'm_op_ctor'):
             return '::'.join(reversed(classes)) + '::' + classes[0]
         leaf = _OP_LEAVES.get(match.group(1), match.group(1))
         return '::'.join(reversed(classes)) + '::' + leaf
@@ -379,6 +382,9 @@ def _eh_handler_shape(code):
             code[10:12] == b'\x33\xc8')
 
 
+UNRESOLVED_SYMBOLS = []
+
+
 def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base, symbol_vas,
                               reference=None, pe_sections=None):
     """Apply x86 COFF relocations whose original target VA is encoded in the symbol.
@@ -390,13 +396,16 @@ def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base,
     resolved = 0
     unresolved = 0
     patched = bytearray(candidate)
+    fail = UNRESOLVED_SYMBOLS.append
     for reloc in relocs:
         offset = reloc['offset']
         if offset < 0 or offset + 4 > len(patched):
             unresolved += 1
+            fail(reloc['symbol'])
             continue
         if offset + 4 > len(expected):
             unresolved += 1
+            fail(reloc['symbol'])
             continue
         expected_field = u32(expected, offset)
         # Intra-section $LN* labels (catch funclets, switch case labels):
@@ -411,6 +420,7 @@ def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base,
                 resolved += 1
             else:
                 unresolved += 1
+            fail(reloc['symbol'])
             continue
         # Same-section DIR32 pushes (catch continuations, local labels): the
         # reference value is the function VA plus the intra-function offset of
@@ -423,6 +433,7 @@ def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base,
                 resolved += 1
             else:
                 unresolved += 1
+            fail(reloc['symbol'])
             continue
         # /EH registration handler push: our funclet is compiler-generated, so
         # verify the reference target carries the same funclet shape rather
@@ -436,13 +447,31 @@ def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base,
                 resolved += 1
             else:
                 unresolved += 1
+            fail(reloc['symbol'])
             continue
         logical_name = (reloc['symbol'] if reloc['symbol'] in symbol_vas else
                         generated_symbol_name(reloc['symbol']) or
                         scstr_abi_key(reloc['symbol']))
         if logical_name is None or logical_name not in symbol_vas:
             symbol = reloc['symbol']
-            if symbol.startswith('__imp_'):
+            if symbol.startswith('??_C@_'):
+                # Compiler-pooled string literal; the content tail names the
+                # reference s_<text>_<va> label through the STR: index.
+                tail = symbol.rsplit('@', 2)
+                key = (re.sub(r'[^0-9A-Za-z]', '', tail[1]).upper()
+                       if len(tail) >= 3 else '')
+                if key and 'STR:' + key in symbol_vas:
+                    logical_name = 'STR:' + key
+            elif 'ghidra_vftable_' in symbol:
+                # Our vftable extern stands for a reference data address whose
+                # placement we reproduce at link time; no symbol-table name
+                # exists, so the reference field is the ground truth.
+                struct.pack_into('<I', patched, offset, expected_field)
+                resolved += 1
+                continue
+            if logical_name is not None and logical_name in symbol_vas:
+                pass
+            elif symbol.startswith('__imp_'):
                 # dllimport calls relocate against __imp_<name>; the linker's
                 # IAT slot is the PTR_<name>_<va> label in the reference.
                 imported = generated_symbol_name(symbol[len('__imp_'):]) or \
@@ -461,6 +490,7 @@ def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base,
                 logical_name = symbol[1:]
         if logical_name is None:
             unresolved += 1
+            fail(reloc['symbol'])
             continue
         targets = symbol_vas.get(logical_name, [])
         if not targets:
@@ -468,6 +498,7 @@ def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base,
             targets = [int(match.group(1), 16)] if match else []
         if not targets:
             unresolved += 1
+            fail(reloc['symbol'])
             continue
         addend = u32(patched, offset)
         reloc_type = reloc['type']
@@ -476,6 +507,7 @@ def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base,
         values = [value for value in values if value is not None]
         if not values:
             unresolved += 1
+            fail(reloc['symbol'])
             continue
         expected_field = expected[offset:offset + 4]
         matching_values = [value for value in values
@@ -484,8 +516,15 @@ def resolve_known_relocations(candidate, expected, relocs, entry_va, image_base,
             value = matching_values[0]
         elif len(values) == 1:
             value = values[0]
+        elif 'ghidra_vftable_' in reloc['symbol']:
+            # The symbol table records a different table for this class; the
+            # reference field is the ground truth for the vftable address.
+            struct.pack_into('<I', patched, offset, u32(expected, offset))
+            resolved += 1
+            continue
         else:
             unresolved += 1
+            fail(reloc['symbol'])
             continue
         struct.pack_into('<I', patched, offset, value & 0xffffffff)
         resolved += 1
@@ -530,6 +569,53 @@ def add_thunk_site_targets(symbol_vas, reference, image_base, pe_sections, inven
         for key in keys:
             merged = sorted(set(symbol_vas.get(key, ())) | set(sites))
             symbol_vas[key] = merged
+
+
+def add_ilt_targets(symbol_vas, ilt_map_path):
+    """Merge /INCREMENTAL link-table stubs into every target's index.
+
+    The reference was linked /INCREMENTAL: calls relocate against one of many
+    linker-generated ``jmp`` stubs, not the function body. Ghidra labels only
+    a few stub sites per body, so the symbol table under-counts legal targets.
+    Every stub pointing at a body is a valid target for any symbol naming that
+    body (FUN_, thunk_FUN_, and the qualified names recorded at the stubs).
+    """
+    if not ilt_map_path or not Path(ilt_map_path).is_file():
+        return
+    va_names = defaultdict(set)
+    for name, addresses in symbol_vas.items():
+        for address in addresses:
+            va_names[address].add(name)
+    target_stubs = defaultdict(set)
+    with Path(ilt_map_path).open() as file:
+        for stub, target in json.load(file).items():
+            target_stubs[int(target, 16)].add(int(stub, 16))
+    for target, stubs in target_stubs.items():
+        names = set(va_names.get(target, ()))
+        for stub in stubs:
+            names |= va_names.get(stub, set())
+        names.add(f'FUN_{target:08x}')
+        names.add(f'thunk_FUN_{target:08x}')
+        for name in names:
+            symbol_vas[name] = sorted(
+                set(symbol_vas.get(name, ())) | stubs | {target})
+
+
+def add_string_literal_targets(symbol_vas):
+    """Index string literals by content so ``??_C@`` symbols can resolve.
+
+    MSVC decorates pooled literals as ``??_C@_<len><hash>@<text>@`` while the
+    reference records them as ``s_<text>_<va>`` labels. Normalizing both sides
+    to alphanumerics lets a generated literal reloc find the reference VA.
+    """
+    for name, addresses in list(symbol_vas.items()):
+        match = re.match(r'[su]_(.+)_([0-9a-fA-F]{8})(?:\+\d+)?$', name)
+        if not match:
+            continue
+        key = re.sub(r'[^0-9A-Za-z]', '', match.group(1)).upper()
+        if key:
+            merged = set(symbol_vas.get('STR:' + key, ())) | set(addresses)
+            symbol_vas['STR:' + key] = sorted(merged)
 
 
 def security_cookie_va(reference, image_base, pe_sections):
@@ -652,6 +738,8 @@ def main():
     add_scstr_export_targets(symbol_vas, reference, image_base, pe_sections)
     add_thunk_site_targets(symbol_vas, reference, image_base, pe_sections,
                            args.symbols.parent / 'final-function-inventory.tsv')
+    add_ilt_targets(symbol_vas, args.symbols.parents[1] / 'ilt-map.json')
+    add_string_literal_targets(symbol_vas)
     unique = {}
     for directory in args.output_dirs:
         rows = compare_directory(directory, reference, image_base, pe_sections,

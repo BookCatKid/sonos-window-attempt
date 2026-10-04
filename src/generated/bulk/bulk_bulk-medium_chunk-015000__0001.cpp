@@ -1445,10 +1445,6 @@ extern int *PTR_free_12121e64;
 extern int *PTR_guard_check_icall_12302000;
 extern int *PTR_s_NS2_MSG_KEEP_ALIVE_11a03004;
 extern int *PTR_s_server_11bfec28;
-extern int *stack0x00000000;
-extern int *stack0x0000000c;
-extern int *stack0x00000010;
-extern int *stack0x00000014;
 extern void *ExceptionList;
 void FUN_112b08c0(undefined4 *param_1);
 template<class... A> int FUN_112b08c0(A...);
@@ -5738,7 +5734,7 @@ void __fastcall FUN_112e9a40(int *param_1)
 
 void FUN_112e9c10(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
-{
+{ int stack0x00000010;
  try {
   if ((code *)(DAT_122f6c0c) != (code *)(0x0)) {
     (*(code *)(uint)(DAT_122f6c0c))(param_1,param_2,param_3,&stack0x00000010);
@@ -6379,7 +6375,7 @@ bool FUN_112f0920(void)
 
 void FUN_112f1710(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
-{
+{ int stack0x00000014;
  try {
   if (*(code **)(param_1 + 0x124) != (code *)((0x0))) {
     (**(code **)(param_1 + 0x124))(param_2,param_3,param_4,&stack0x00000014);
@@ -6395,7 +6391,7 @@ void FUN_112f1710(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 
 void FUN_112f1740(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
-{
+{ int stack0x00000014;
  try {
   if (*(code **)(param_1 + 0x670) != (code *)((0x0))) {
     (**(code **)(param_1 + 0x670))(param_2,param_3,param_4,&stack0x00000014);
@@ -6411,7 +6407,7 @@ void FUN_112f1740(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 
 void FUN_112f1770(code *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
-{
+{ int stack0x00000014;
  try {
   if ((code *)(param_1) != (code *)(0x0)) {
     (*param_1)(param_2,param_3,param_4,&stack0x00000014);
@@ -6556,7 +6552,7 @@ void __fastcall FUN_112f4290(int param_1)
 
 void FUN_112f4f20(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
-{
+{ int stack0x00000014;
  try {
   if (*(code **)(param_1 + 0x38) != (code *)((0x0))) {
     (**(code **)(param_1 + 0x38))(param_2,param_3,param_4,&stack0x00000014);
@@ -7953,7 +7949,7 @@ undefined4 FUN_11354b80(int param_1)
 
 void FUN_11358b70(undefined4 param_1,undefined4 param_2)
 
-{
+{ int stack0x0000000c;
  try {
   FUN_11371c00(param_1,param_2,&stack0x0000000c);
   return;
@@ -8573,7 +8569,7 @@ undefined4 FUN_11372d90(int *param_1)
 
 void FUN_11373210(undefined4 *param_1,undefined4 param_2)
 
-{
+{ int stack0x0000000c;
  try {
   undefined4 uVar1;
   
@@ -8930,7 +8926,7 @@ void FUN_11397c20(int param_1,void *param_2,size_t param_3)
 
 void FUN_11397d20(undefined4 param_1,undefined4 param_2)
 
-{
+{ int stack0x0000000c;
  try {
   thunk_FUN_11397ee0(param_1,param_2,&stack0x0000000c);
   return;
@@ -14967,7 +14963,7 @@ undefined1 __thiscall Recovered_Bulk::m_FUN_114595b0(undefined4 param_2,undefine
 
 void FUN_1145a270(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
-{
+{ int stack0x00000014;
  try {
   if (*(code **)(param_1 + 0x38) != (code *)((0x0))) {
     (**(code **)(param_1 + 0x38))(param_2,param_3,param_4,&stack0x00000014);
@@ -21087,7 +21083,7 @@ void FUN_11504669(void){
 
 void FUN_11504692(void)
 
-{
+{ int stack0x00000000;
  try {
   thunk_FUN_1148ac28(&stack0x00000000);
   thunk_FUN_1148ac28();

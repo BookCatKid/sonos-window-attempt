@@ -3594,18 +3594,6 @@ extern int *PTR_PTR_11c008b4;
 extern int *PTR_guard_check_icall_12302000;
 extern int *PTR_s_client_11bfec24;
 extern int *PTR_s_server_11bfec28;
-extern int *stack0x00000004;
-extern int *stack0x00000008;
-extern int *stack0x0000000c;
-extern int *stack0x00000010;
-extern int *stack0x00000014;
-extern int *stack0xfffffeb4;
-extern int *stack0xfffffeb8;
-extern int *stack0xfffffebc;
-extern int *stack0xfffffec0;
-extern int *stack0xffffffd8;
-extern int *stack0xffffffef;
-extern int *stack0xfffffffc;
 extern char s_6666666666666666_11c02760[];
 extern char s_client_11c02780[];
 extern char s_server_11c02778[];
@@ -9083,7 +9071,7 @@ int FUN_11410360(uint *param_1,void *param_2,uint param_3)
 
 void FUN_11410440(int param_1,int param_2)
 
-{
+{ int stack0xfffffeb4; int stack0xfffffeb8; int stack0xfffffebc; int stack0xfffffec0;
  try {
   int *piVar1;
   uint uVar2;
@@ -16897,7 +16885,7 @@ void FUN_11423200(int param_1,int param_2,uint *param_3,uint param_4)
 
 void __thiscall Recovered_Bulk::m_FUN_1142341e(int param_2,undefined4 param_3)
 {
-  int param_1 = (int )this;
+  int param_1 = (int )this; int stack0x0000000c;
  try {
   undefined4 *puVar1;
   undefined4 in_EAX;
@@ -22724,7 +22712,7 @@ void FUN_1142f5f0(undefined4 *param_1,byte param_2,undefined4 param_3,int param_
 
 int FUN_1142f813(void)
 
-{
+{ int stack0x00000004; int stack0x00000008;
  try {
   undefined4 uVar1;
   undefined4 uVar2;
@@ -41575,7 +41563,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11459330(byte param_2)
 
 void __thiscall Recovered_Bulk::m_FUN_114595f0(undefined4 param_2,long *param_3)
 {
-  int param_1 = (int )this;
+  int param_1 = (int )this; int stack0xffffffd8;
  try {
   long lVar1;
   undefined1 local_24 [32];
@@ -41859,7 +41847,7 @@ LAB_11459a62:
 
 undefined1 __thiscall Recovered_Bulk::m_FUN_11459ad0(int param_2,uint param_3,char param_4)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   char *pcVar1;
   int iVar2;
@@ -42755,7 +42743,7 @@ undefined4 FUN_1145c600(char *param_1,undefined8 *param_2,undefined4 param_3)
 
 int FUN_1145c720(undefined4 param_1,int param_2,undefined4 param_3)
 
-{
+{ int stack0x00000010;
  try {
   undefined4 *puVar1;
   int iVar2;
@@ -44922,7 +44910,7 @@ undefined4 FUN_114601a0(int param_1,uint param_2,undefined1 *param_3,uint param_
 
 uint FUN_11460230(int param_1,uint param_2,uint param_3,undefined4 param_4)
 
-{
+{ int stack0x00000014;
  try {
   int iVar1;
   
@@ -45213,7 +45201,7 @@ undefined4 FUN_11460ba0(int *param_1)
 
 void FUN_11460df0(undefined4 param_1,undefined1 *param_2,uint param_3,uint param_4)
 
-{
+{ int stack0xffffffef;
  try {
   undefined1 *puVar1;
   uint uVar2;
@@ -67654,7 +67642,7 @@ void FUN_117e8a40(void)
 
 void FUN_117e8ad0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -68558,7 +68546,7 @@ void FUN_117e9ca0(void)
 
 void FUN_117e9d10(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -68872,7 +68860,7 @@ void FUN_117ea2d0(void)
 
 void FUN_117ea340(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -69162,7 +69150,7 @@ void FUN_117ea890(void)
 
 void FUN_117ea900(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -69738,7 +69726,7 @@ void FUN_117eb440(void)
 
 void FUN_117eb4b0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -69764,7 +69752,7 @@ void FUN_117eb4b0(void)
 
 void FUN_117eb530(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -70120,7 +70108,7 @@ void FUN_117ebbe0(void)
 
 void FUN_117ebc50(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -70564,7 +70552,7 @@ void FUN_117ec4b0(void)
 
 void FUN_117ec520(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -70888,7 +70876,7 @@ void FUN_117ecae0(void)
 
 void FUN_117ecb50(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -70936,7 +70924,7 @@ void FUN_117ecbd0(void)
 
 void FUN_117ecc40(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -70962,7 +70950,7 @@ void FUN_117ecc40(void)
 
 void FUN_117eccc0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -70988,7 +70976,7 @@ void FUN_117eccc0(void)
 
 void FUN_117ecd40(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -71014,7 +71002,7 @@ void FUN_117ecd40(void)
 
 void FUN_117ecdc0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -71118,7 +71106,7 @@ void FUN_117ecf60(void)
 
 void FUN_117ecfd0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -71650,7 +71638,7 @@ void FUN_117ed9f0(void)
 
 void FUN_117eda60(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -72190,7 +72178,7 @@ void FUN_117ee500(void)
 
 void FUN_117ee570(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -72502,7 +72490,7 @@ void FUN_117eeb30(void)
 
 void FUN_117eeba0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -73870,7 +73858,7 @@ void FUN_117f06c0(void)
 
 void FUN_117f0730(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -74162,7 +74150,7 @@ void FUN_117f0c80(void)
 
 void FUN_117f0cf0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -76820,7 +76808,7 @@ void FUN_117f4170(void)
 
 void FUN_117f41e0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -78384,7 +78372,7 @@ void FUN_117f6110(void)
 
 void FUN_117f61c0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -78950,7 +78938,7 @@ void FUN_117f6c50(void)
 
 void FUN_117f6cc0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -78976,7 +78964,7 @@ void FUN_117f6cc0(void)
 
 void FUN_117f6d40(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -79002,7 +78990,7 @@ void FUN_117f6d40(void)
 
 void FUN_117f6dc0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -79600,7 +79588,7 @@ void FUN_117f79a0(void)
 
 void FUN_117f7a10(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -79626,7 +79614,7 @@ void FUN_117f7a10(void)
 
 void FUN_117f7a90(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -79652,7 +79640,7 @@ void FUN_117f7a90(void)
 
 void FUN_117f7b10(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -80008,7 +79996,7 @@ void FUN_117f81d0(void)
 
 void FUN_117f8240(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;

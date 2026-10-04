@@ -866,7 +866,6 @@ extern undefined1 LAB_116b9770[];
 extern undefined1 LAB_116bc5e0[];
 extern undefined1 LAB_116bc610[];
 extern undefined1 LAB_116bc640[];
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 void __fastcall FUN_1085dd80(undefined4 *param_1);
 template<class... A> int FUN_1085dd80(A...);
@@ -2133,7 +2132,7 @@ void __fastcall FUN_10861900(undefined4 *param_1)
 
 void __fastcall FUN_10861a40(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -2155,7 +2154,7 @@ void __fastcall FUN_10861a40(int *param_1)
 
 void __fastcall FUN_10861aa0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -2177,7 +2176,7 @@ void __fastcall FUN_10861aa0(int *param_1)
 
 void __fastcall FUN_10861b00(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -2952,7 +2951,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1087fc90(int *param_2)
 
 void __fastcall FUN_10881dd0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -3777,7 +3776,7 @@ void __fastcall FUN_108a1770(undefined4 *param_1)
 
 void __fastcall FUN_108a1960(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -8002,7 +8001,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1095b800(int *param_2)
 
 void __fastcall FUN_1095c3d0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -9079,7 +9078,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10989000(int *param_2)
 
 void __fastcall FUN_10989760(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -10823,7 +10822,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_109d8e90(int *param_2)
 
 void __fastcall FUN_109d9e60(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -11099,7 +11098,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_109e1e00(int *param_2)
 
 void __fastcall FUN_109e3750(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -22345,7 +22344,7 @@ void __fastcall FUN_10b6d3a0(undefined4 *param_1)
 
 void __fastcall FUN_10b6d6c0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -22367,7 +22366,7 @@ void __fastcall FUN_10b6d6c0(int *param_1)
 
 void __fastcall FUN_10b6d720(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -23285,7 +23284,7 @@ void __fastcall FUN_10b7cb50(undefined4 *param_1)
 
 void __fastcall FUN_10b7d1c0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -23307,7 +23306,7 @@ void __fastcall FUN_10b7d1c0(int *param_1)
 
 void __fastcall FUN_10b7d220(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -23329,7 +23328,7 @@ void __fastcall FUN_10b7d220(int *param_1)
 
 void __fastcall FUN_10b7d280(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;

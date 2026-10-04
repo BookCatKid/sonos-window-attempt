@@ -372,8 +372,6 @@ extern undefined1 LAB_11700b00[];
 extern undefined1 LAB_117b5f20[];
 extern int *PTR_s_IsLocalRadioPrepulated_1211957c;
 extern int *PTR_s_IsRadioFavoritesPrepulated_12119580;
-extern int *stack0x00000004;
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_103566b0(void);
 template<class... A> int FUN_103566b0(A...);
@@ -10109,7 +10107,7 @@ int __stdcall FUN_10367890(byte *param_1)
 
 void __fastcall FUN_103678e0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
-{
+{ int stack0x00000004;
  try {
   if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 0x24) + 8))(&stack0x00000004);
@@ -10129,7 +10127,7 @@ void __fastcall FUN_103678e0(int param_1, unsigned int recovered_unused_stack_0,
 
 void __fastcall FUN_10367900(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
-{
+{ int stack0x00000004;
  try {
   if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 0x24) + 8))(&stack0x00000004);
@@ -10149,7 +10147,7 @@ void __fastcall FUN_10367900(int param_1, unsigned int recovered_unused_stack_0,
 
 void __fastcall FUN_10367920(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
-{
+{ int stack0x00000004;
  try {
   if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 0x24) + 8))(&stack0x00000004);
@@ -10169,7 +10167,7 @@ void __fastcall FUN_10367920(int param_1, unsigned int recovered_unused_stack_0,
 
 void __fastcall FUN_10367940(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
-{
+{ int stack0x00000004;
  try {
   if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 0x24) + 8))(&stack0x00000004);
@@ -10189,7 +10187,7 @@ void __fastcall FUN_10367940(int param_1, unsigned int recovered_unused_stack_0,
 
 void __fastcall FUN_10367960(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
-{
+{ int stack0x00000004;
  try {
   if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 0x24) + 8))(&stack0x00000004);
@@ -10224,7 +10222,7 @@ void __fastcall FUN_10367960(int param_1, unsigned int recovered_unused_stack_0,
 
 void __fastcall FUN_103679b0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
-{
+{ int stack0x00000004;
  try {
   if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 0x24) + 8))(&stack0x00000004);

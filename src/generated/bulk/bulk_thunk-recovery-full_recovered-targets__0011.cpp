@@ -350,9 +350,6 @@ extern undefined1 LAB_1154fc30[];
 extern undefined1 LAB_115a83b0[];
 extern undefined1 LAB_115d2530[];
 extern undefined1 LAB_115e0ff0[];
-extern int *stack0x00000004;
-extern int *stack0x00000008;
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __fastcall FUN_10654700(undefined4 *param_1);
 template<class... A> int FUN_10654700(A...);
@@ -5642,7 +5639,7 @@ undefined4 __fastcall FUN_10656b90(undefined4 *param_1)
 
 void __fastcall FUN_10656ba0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
-{
+{ int stack0x00000004;
  try {
   if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 0x24) + 8))(&stack0x00000004);
@@ -9749,7 +9746,7 @@ int * __fastcall FUN_10684ba0(int *param_1)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10684c50(undefined4 param_2)
 {
-  int param_1 = (int )this;
+  int param_1 = (int )this; int stack0x00000008;
  try {
   if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 0x24) + 8))(param_2,&stack0x00000008);
@@ -24699,7 +24696,7 @@ int * __fastcall FUN_106b6510(int *param_1)
 
 void __fastcall FUN_106b6760(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
-{
+{ int stack0x00000004;
  try {
   if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 0x24) + 8))(&stack0x00000004);

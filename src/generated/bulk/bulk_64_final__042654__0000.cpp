@@ -3143,7 +3143,6 @@ extern undefined1 LAB_1176fd30[];
 extern undefined1 LAB_1176fd60[];
 extern undefined1 LAB_1176fd90[];
 extern undefined1 LAB_1176fdc0[];
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */ void FUN_1182e880(void);
 template<class... A> int FUN_1182e880(A...);
@@ -7030,7 +7029,7 @@ void FUN_1182f9b0(void)
 
 void FUN_1182fa20(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -7420,7 +7419,7 @@ void FUN_11830130(void)
 
 void FUN_118301a0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -7776,7 +7775,7 @@ void FUN_11830840(void)
 
 void FUN_118308b0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -7824,7 +7823,7 @@ void FUN_11830930(void)
 
 void FUN_118309a0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -8444,7 +8443,7 @@ void FUN_11831670(void)
 
 void FUN_118316e0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -10186,7 +10185,7 @@ void FUN_11833910(void)
 
 void FUN_11833980(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -10762,7 +10761,7 @@ void FUN_11834490(void)
 
 void FUN_11834500(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -10788,7 +10787,7 @@ void FUN_11834500(void)
 
 void FUN_11834580(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -10814,7 +10813,7 @@ void FUN_11834580(void)
 
 void FUN_11834600(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -11104,7 +11103,7 @@ void FUN_11834b50(void)
 
 void FUN_11834bf0(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -11174,7 +11173,7 @@ void FUN_11834ce0(void)
 
 void FUN_11834d60(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -22031,7 +22030,7 @@ void FUN_118426a0(void)
 
 void FUN_11842710(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;
@@ -23729,7 +23728,7 @@ void FUN_118448a0(void)
 
 void FUN_11844910(void)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   void *local_10;

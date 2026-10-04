@@ -745,7 +745,6 @@ extern int *PTR_DAT_1211d60c;
 extern int *PTR_DAT_1211d610;
 extern int *PTR_DAT_1211d618;
 extern int *PTR_s_other_1211d614;
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 SCStr * __stdcall FUN_10f34070(SCStr *param_1);
 template<class... A> int FUN_10f34070(A...);
@@ -1665,7 +1664,7 @@ SCStr * __stdcall FUN_10fe6cb0(SCStr *param_1);
 template<class... A> int FUN_10fe6cb0(A...);
 SCStr * __stdcall FUN_10fe6cd0(SCStr *param_1);
 template<class... A> int FUN_10fe6cd0(A...);
-undefined4 __fastcall FUN_10fe6d40(int param_1);
+undefined4 __fastcall FUN_10fe6d40(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
 template<class... A> int FUN_10fe6d40(A...);
 SCStr * __stdcall FUN_10fe8190(SCStr *param_1);
 template<class... A> int FUN_10fe8190(A...);
@@ -2033,7 +2032,7 @@ undefined4 __fastcall FUN_11037760(int param_1, unsigned int recovered_unused_st
 template<class... A> int FUN_11037760(A...);
 undefined4 __fastcall FUN_11037790(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
 template<class... A> int FUN_11037790(A...);
-undefined4 __fastcall FUN_110377b0(int param_1);
+undefined4 __fastcall FUN_110377b0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
 template<class... A> int FUN_110377b0(A...);
 undefined4 __fastcall FUN_110377f0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
 template<class... A> int FUN_110377f0(A...);
@@ -3118,7 +3117,7 @@ void __fastcall FUN_10f412b0(undefined4 *param_1)
 
 void __fastcall FUN_10f41490(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -3140,7 +3139,7 @@ void __fastcall FUN_10f41490(int *param_1)
 
 void __fastcall FUN_10f414f0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -3162,7 +3161,7 @@ void __fastcall FUN_10f414f0(int *param_1)
 
 void __fastcall FUN_10f41550(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -3184,7 +3183,7 @@ void __fastcall FUN_10f41550(int *param_1)
 
 void __fastcall FUN_10f415b0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -3700,7 +3699,7 @@ void __fastcall FUN_10f44680(undefined4 *param_1)
 
 void __fastcall FUN_10f44930(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -4667,7 +4666,7 @@ undefined4 * __fastcall FUN_10f4e130(undefined4 *param_1, unsigned int recovered
 
 void __fastcall FUN_10f4e590(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -14252,7 +14251,7 @@ SCStr * __stdcall FUN_10fe6cd0(SCStr *param_1)
 // Reference entry 10fe6d40; body size 58 bytes.
 #line 1 "ENTRY_10fe6d40"
 
-undefined4 __fastcall FUN_10fe6d40(int param_1)
+undefined4 __fastcall FUN_10fe6d40(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   int iVar1;
@@ -15949,7 +15948,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10ffd540(int *param_2)
 
 void __fastcall FUN_10ffd5c0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -16740,7 +16739,7 @@ void __stdcall FUN_1100bf20(int param_1)
 
 void __fastcall FUN_11010200(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -19447,7 +19446,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1102eda0(int *param_2)
 
 void __fastcall FUN_1102f590(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -20050,7 +20049,7 @@ undefined4 __fastcall FUN_11037790(int param_1, unsigned int recovered_unused_st
 // Reference entry 110377b0; body size 50 bytes.
 #line 1 "ENTRY_110377b0"
 
-undefined4 __fastcall FUN_110377b0(int param_1)
+undefined4 __fastcall FUN_110377b0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   int iVar1;

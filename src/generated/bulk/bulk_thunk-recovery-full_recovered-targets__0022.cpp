@@ -471,8 +471,6 @@ extern int *PTR_DAT_11993d24;
 extern int *PTR_DAT_11993d30;
 extern int *PTR_DAT_11993d3c;
 extern int *PTR_DAT_1211a5d8;
-extern int *stack0x00000004;
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __fastcall FUN_10e28de0(int param_1);
 template<class... A> int FUN_10e28de0(A...);
@@ -16277,7 +16275,7 @@ void __fastcall FUN_10eb0000(undefined4 *param_1)
 
 void __fastcall FUN_10eb01b0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
-{
+{ int stack0x00000004;
  try {
   if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 0x24) + 8))(&stack0x00000004);

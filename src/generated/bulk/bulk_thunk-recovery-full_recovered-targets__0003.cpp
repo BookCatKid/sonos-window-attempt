@@ -382,8 +382,6 @@ extern int *PTR_LAB_121193ac;
 extern int *PTR_PTR_12119378;
 extern int *PTR_s_OnlineUpdateBaseURL_121190f8;
 extern int *PTR_s__________sclib_sclib_core_sclib__12119354;
-extern int *stack0xffffe3a0;
-extern int *stack0xfffffffc;
 extern char s__________sclib_sclib_core_sclib__1188c380[];
 extern void *ExceptionList;
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_102638d0(void);
@@ -9871,7 +9869,7 @@ int __fastcall FUN_10279b40(int *param_1)
 
 void FUN_10279d20(int *param_1)
 
-{
+{ int stack0xffffe3a0;
  try {
   byte bVar1;
   byte *pbVar2;

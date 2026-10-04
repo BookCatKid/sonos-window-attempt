@@ -621,7 +621,6 @@ extern undefined1 LAB_1158d5a0[];
 extern undefined1 LAB_1158f7e0[];
 extern undefined1 LAB_115982d0[];
 extern undefined1 LAB_11599d40[];
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 undefined4 __fastcall FUN_103eb060(int param_1);
 template<class... A> int FUN_103eb060(A...);
@@ -3977,7 +3976,7 @@ undefined4 * __fastcall FUN_104076b0(undefined4 *param_1)
 
 void __fastcall FUN_10407eb0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -6308,7 +6307,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10426330(int *param_2)
 
 void __fastcall FUN_1042a730(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -6973,7 +6972,7 @@ undefined4 * __fastcall FUN_10433550(undefined4 *param_1, unsigned int recovered
 
 void __fastcall FUN_10433ba0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -8505,7 +8504,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10461550(int *param_2)
 
 void __fastcall FUN_10462090(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -9280,7 +9279,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10471f40(int *param_2)
 
 void __fastcall FUN_10472990(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -10128,7 +10127,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10482cb0(int *param_2)
 
 void __fastcall FUN_10484cc0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -11566,7 +11565,7 @@ void __fastcall FUN_104a2140(int param_1)
 
 void __fastcall FUN_104a87a0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -13004,7 +13003,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_104cb9a0(int *param_2)
 
 void __fastcall FUN_104cc500(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -13026,7 +13025,7 @@ void __fastcall FUN_104cc500(int *param_1)
 
 void __fastcall FUN_104cc560(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -15786,7 +15785,7 @@ void __fastcall FUN_104fa830(undefined4 *param_1)
 
 void __fastcall FUN_104fab60(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -15808,7 +15807,7 @@ void __fastcall FUN_104fab60(int *param_1)
 
 void __fastcall FUN_104fabc0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -16455,7 +16454,7 @@ void __fastcall FUN_105030d0(undefined4 *param_1)
 
 void __fastcall FUN_10503240(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -17732,7 +17731,7 @@ void __fastcall FUN_1050fd60(undefined4 *param_1)
 
 void __fastcall FUN_1050ff30(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -17754,7 +17753,7 @@ void __fastcall FUN_1050ff30(int *param_1)
 
 void __fastcall FUN_1050ff90(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -18405,7 +18404,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1051b880(int *param_2)
 
 void FUN_1051d480(void)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -21190,7 +21189,7 @@ undefined4 * __fastcall FUN_1054eed0(undefined4 *param_1, unsigned int recovered
 
 void __fastcall FUN_1054fae0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -21653,7 +21652,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_105588f0(int *param_2)
 
 void __fastcall FUN_105597d0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;

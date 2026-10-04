@@ -706,8 +706,6 @@ extern undefined1 LAB_115a8bef[];
 extern undefined1 LAB_1171dd80[];
 extern undefined1 LAB_1171eee0[];
 extern undefined1 LAB_11731340[];
-extern int *stack0x00000010;
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 void __stdcall FUN_10d5e990(int param_1,int param_2);
 template<class... A> int FUN_10d5e990(A...);
@@ -725,7 +723,7 @@ int __fastcall FUN_10d5f4d0(int param_1);
 template<class... A> int FUN_10d5f4d0(A...);
 undefined4 __stdcall FUN_10d5f500(int param_1);
 template<class... A> int FUN_10d5f500(A...);
-SCStr * FUN_10d5f520(SCStr *param_1,int param_2);
+SCStr * __stdcall FUN_10d5f520(SCStr *param_1, int param_2, unsigned int recovered_unused_stack_0);
 template<class... A> int FUN_10d5f520(A...);
 undefined4 FUN_10d5fc00(int param_1);
 template<class... A> int FUN_10d5fc00(A...);
@@ -2632,7 +2630,7 @@ undefined4 __stdcall FUN_10d5f500(int param_1)
 // Reference entry 10d5f520; body size 48 bytes.
 #line 1 "ENTRY_10d5f520"
 
-SCStr * FUN_10d5f520(SCStr *param_1,int param_2)
+SCStr * __stdcall FUN_10d5f520(SCStr *param_1, int param_2, unsigned int recovered_unused_stack_0)
 
 {
   if (param_2 == 2) {
@@ -5625,7 +5623,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d973c0(int *param_2)
 
 void __fastcall FUN_10d97510(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -5725,7 +5723,7 @@ void __fastcall FUN_10d9b8c0(undefined4 *param_1)
 
 void __fastcall FUN_10d9bb70(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -9975,7 +9973,7 @@ void __thiscall Recovered_Bulk::m_FUN_10df4e50(int param_2)
 
 void __fastcall FUN_10dfe620(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -23231,7 +23229,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10ef3450(undefined4 param_2)
 
 int FUN_10ef4180(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
-{
+{ int stack0x00000010;
  try {
   uint *puVar1;
   int iVar2;

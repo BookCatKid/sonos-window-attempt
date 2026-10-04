@@ -324,7 +324,6 @@ extern undefined1 LAB_103c9202[];
 extern undefined1 LAB_11549410[];
 extern undefined1 LAB_1154a630[];
 extern undefined1 LAB_1154a660[];
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 void __stdcall FUN_1036b5d0(int param_1,int param_2);
 template<class... A> int FUN_1036b5d0(A...);
@@ -3514,7 +3513,7 @@ void __fastcall FUN_1039f890(undefined4 *param_1)
 
 void __fastcall FUN_1039fca0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -4276,7 +4275,7 @@ void __fastcall FUN_103a7690(undefined4 *param_1)
 
 void __fastcall FUN_103a79b0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -4298,7 +4297,7 @@ void __fastcall FUN_103a79b0(int *param_1)
 
 void __fastcall FUN_103a7a10(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;

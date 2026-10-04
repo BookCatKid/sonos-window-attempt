@@ -1340,17 +1340,6 @@ extern int *PTR_DAT_1211a5d0;
 extern int *PTR_DAT_1211a5d8;
 extern int *PTR_DAT_12126b6c;
 extern int *PTR_vftable_1211c1c8;
-extern int *stack0x00000004;
-extern int *stack0x00000008;
-extern int *stack0x00000010;
-extern int *stack0xfffffd54;
-extern int *stack0xfffffd74;
-extern int *stack0xffffffa4;
-extern int *stack0xffffffac;
-extern int *stack0xffffffc0;
-extern int *stack0xffffffcc;
-extern int *stack0xffffffd0;
-extern int *stack0xfffffffc;
 extern char s_Local_Music_118b4880[];
 extern char s_Music_Library_119331b4[];
 extern char s_RINCON_AssociatedZPUDN_118835c0[];
@@ -1437,9 +1426,9 @@ void __fastcall FUN_110545f0(int param_1);
 template<class... A> int FUN_110545f0(A...);
 undefined4 __fastcall FUN_11054650(int *param_1);
 template<class... A> int FUN_11054650(A...);
-void __fastcall FUN_11054800(int param_1);
+void __fastcall FUN_11054800(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
 template<class... A> int FUN_11054800(A...);
-void __fastcall FUN_110548b0(int param_1);
+void __fastcall FUN_110548b0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
 template<class... A> int FUN_110548b0(A...);
 undefined4 __stdcall FUN_11055a50(SCStr *param_1,SCStr *param_2,SCStr *param_3);
 template<class... A> int FUN_11055a50(A...);
@@ -1640,11 +1629,11 @@ undefined4 FUN_1106df60(int param_1);
 template<class... A> int FUN_1106df60(A...);
 void __fastcall FUN_1106e590(int param_1);
 template<class... A> int FUN_1106e590(A...);
-undefined4 __fastcall FUN_1106e770(int param_1);
+undefined4 __fastcall FUN_1106e770(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
 template<class... A> int FUN_1106e770(A...);
 int ** FUN_1106e910(int **param_1,undefined1 *param_2,int *param_3);
 template<class... A> int FUN_1106e910(A...);
-undefined4 __fastcall FUN_1106eda0(int param_1);
+undefined4 __fastcall FUN_1106eda0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
 template<class... A> int FUN_1106eda0(A...);
 void __stdcall FUN_1106ee90(undefined4 **param_1);
 template<class... A> int FUN_1106ee90(A...);
@@ -1878,7 +1867,7 @@ void __thiscall Recovered_Bulk::m_FUN_11043490(undefined4 param_2,SCStr *param_3
 
 SCStr * __thiscall Recovered_Bulk::m_FUN_11043650(SCStr *param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   bool bVar1;
   int iVar2;
@@ -1960,7 +1949,7 @@ LAB_110437b8:
 
 SCStr * __thiscall Recovered_Bulk::m_FUN_11043840(SCStr *param_2,undefined4 param_3)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   uint uVar1;
   undefined4 uVar2;
@@ -2450,7 +2439,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11044470(undefined4 *param_2)
 
 SCStr * __thiscall Recovered_Bulk::m_FUN_11044580(SCStr *param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   void *_Memory;
   byte bVar1;
@@ -2836,7 +2825,7 @@ bool __fastcall FUN_11044e00(int *param_1)
 
 SCStr * __thiscall Recovered_Bulk::m_FUN_11044e60(SCStr *param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 *puVar2;
@@ -3125,7 +3114,7 @@ void __thiscall Recovered_Bulk::m_FUN_110452d0(int *param_2)
 
 SCStr * __thiscall Recovered_Bulk::m_FUN_11045490(SCStr *param_2,undefined4 param_3)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   uint uVar1;
   SCStr *pSVar2;
@@ -3190,7 +3179,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_11045490(SCStr *param_2,undefined4 para
 
 bool __thiscall Recovered_Bulk::m_FUN_11045640(SCStr *param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   char *_Memory;
   int iVar1;
@@ -3280,7 +3269,7 @@ bool __thiscall Recovered_Bulk::m_FUN_11045640(SCStr *param_2)
 
 undefined4 * __thiscall Recovered_Bulk::m_FUN_11045830(undefined4 *param_2,SCStr *param_3)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   uint uVar1;
   SCStr *this_;
@@ -4088,7 +4077,7 @@ LAB_11046bec:
 
 SCStr * __thiscall Recovered_Bulk::m_FUN_11046cb0(SCStr *param_2,undefined1 *param_3)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined1 *puVar2;
@@ -4315,7 +4304,7 @@ int __thiscall Recovered_Bulk::m_FUN_110471e0(uint param_2)
 
 undefined4 * __thiscall Recovered_Bulk::m_FUN_11047370(undefined4 *param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   int iVar1;
   undefined4 uVar2;
@@ -4489,7 +4478,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11047370(undefined4 *param_2)
 
 SCStr * __thiscall Recovered_Bulk::m_FUN_11047850(SCStr *param_2,int param_3)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xffffffac;
  try {
   undefined1 uVar1;
   char cVar2;
@@ -4678,7 +4667,7 @@ LAB_11047ada:
 
 undefined4 __thiscall Recovered_Bulk::m_FUN_11047d20(undefined4 param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   undefined4 uVar1;
   undefined4 uVar2;
@@ -4851,7 +4840,7 @@ LAB_110480de:
 
 SCStr * __thiscall Recovered_Bulk::m_FUN_110481b0(SCStr *param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   undefined4 *puVar1;
   char cVar2;
@@ -5005,7 +4994,7 @@ int * FUN_110483f0(int *param_1)
 
 int * __thiscall Recovered_Bulk::m_FUN_11048570(int *param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   int *piVar1;
   bool bVar2;
@@ -5080,7 +5069,7 @@ int * __thiscall Recovered_Bulk::m_FUN_11048570(int *param_2)
 
 int * __thiscall Recovered_Bulk::m_FUN_11048710(int *param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   int *piVar1;
   bool bVar2;
@@ -5218,7 +5207,7 @@ int * __thiscall Recovered_Bulk::m_FUN_11048710(int *param_2)
 
 undefined4 __thiscall Recovered_Bulk::m_FUN_11048a60(char *param_2,undefined4 param_3,SCStr *param_4)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   SCStr *this_;
   char cVar1;
@@ -5418,7 +5407,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_11048dc0(SCStr *param_2,char *param_3)
 
 bool __thiscall Recovered_Bulk::m_FUN_11048f80(SCStr *param_2,SCStr *param_3)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   undefined4 *puVar1;
   undefined3 uVar2;
@@ -5648,7 +5637,7 @@ LAB_11049176:
 
 SCStr * __thiscall Recovered_Bulk::m_FUN_11049460(SCStr *param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   void *pvVar1;
   byte bVar2;
@@ -5833,7 +5822,7 @@ SCStr * FUN_11049710(SCStr *param_1,undefined4 param_2)
 
 undefined4 * __thiscall Recovered_Bulk::m_FUN_11049940(undefined4 *param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0x00000008; int stack0xfffffffc;
  try {
   byte bVar1;
   char cVar2;
@@ -6569,7 +6558,7 @@ undefined4 FUN_1104aad0(undefined4 param_1,undefined4 param_2,int *param_3,int *
 
 undefined1 __thiscall Recovered_Bulk::m_FUN_1104ac40(SCStr *param_2,SCStr *param_3,SCStr *param_4)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   char *pcVar1;
   undefined1 uVar2;
@@ -6714,7 +6703,7 @@ undefined1 __thiscall Recovered_Bulk::m_FUN_1104ac40(SCStr *param_2,SCStr *param
 
 void __thiscall Recovered_Bulk::m_FUN_1104af00(SCStr *param_2,SCStr *param_3,SCStr *param_4)
 {
-  SCStr *param_1 = (SCStr *)this;
+  SCStr *param_1 = (SCStr *)this; int stack0xfffffd74;
  try {
   byte bVar1;
   bool bVar2;
@@ -8034,7 +8023,7 @@ LAB_1104cc02:
 
 void __fastcall FUN_1104d4c0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   undefined1 uVar2;
@@ -8240,7 +8229,7 @@ LAB_1104d835:
 
 void __thiscall Recovered_Bulk::m_FUN_1104da60(SCStr *param_2,int *param_3)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   char *pcVar1;
   int *piVar2;
@@ -8585,7 +8574,7 @@ void __stdcall FUN_1104e200(undefined4 param_1,SCStr *param_2)
 
 undefined4 __fastcall FUN_1104e2c0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   char cVar1;
   int iVar2;
@@ -8864,7 +8853,7 @@ LAB_1104e831:
 
 undefined1 __fastcall FUN_1104e940(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   bool bVar1;
   int iVar2;
@@ -8899,7 +8888,7 @@ LAB_1104e998:
 
 bool FUN_1104ea20(void)
 
-{
+{ int stack0x00000004;
  try {
   bool bVar1;
   void *local_10;
@@ -8921,7 +8910,7 @@ bool FUN_1104ea20(void)
 
 undefined1 __fastcall FUN_1104eae0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   char cVar1;
   undefined4 *puVar2;
@@ -8979,7 +8968,7 @@ LAB_1104eb90:
 
 undefined1 __fastcall FUN_1104ebf0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   char cVar1;
   undefined4 *puVar2;
@@ -9071,7 +9060,7 @@ undefined4 __fastcall FUN_1104ed00(int *param_1)
 
 undefined1 __fastcall FUN_1104ed80(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   bool bVar1;
   int iVar2;
@@ -9382,7 +9371,7 @@ void __thiscall Recovered_Bulk::m_FUN_1104f490(undefined4 param_2)
 
 void __fastcall FUN_1104f590(int *param_1)
 
-{
+{ int stack0xfffffd54;
  try {
   SCStr *this_;
   int *piVar1;
@@ -9646,7 +9635,7 @@ void __fastcall FUN_1104fa20(int param_1)
 
 undefined4 __fastcall FUN_1104fb70(int *param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
-{
+{ int stack0xfffffffc;
  try {
   bool bVar1;
   char cVar2;
@@ -9712,7 +9701,7 @@ undefined4 __fastcall FUN_1104fb70(int *param_1, unsigned int recovered_unused_s
 
 undefined1 __stdcall FUN_1104fd20(undefined4 param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   int iVar1;
   undefined1 uVar2;
@@ -9743,7 +9732,7 @@ undefined1 __stdcall FUN_1104fd20(undefined4 param_1)
 
 void __fastcall FUN_1104fdf0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined1 *puVar1;
   bool bVar2;
@@ -9928,7 +9917,7 @@ LAB_110500fc:
 
 undefined4 __thiscall Recovered_Bulk::m_FUN_11050230(char *param_2,SCStr *param_3)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   char *pcVar1;
   SCStr *this_;
@@ -10361,7 +10350,7 @@ void __thiscall Recovered_Bulk::m_FUN_11050dc0(undefined4 *param_2)
 
 undefined4 __thiscall Recovered_Bulk::m_FUN_11050ea0(SCStr *param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   int iVar1;
   undefined4 *puVar2;
@@ -10419,7 +10408,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_11050ea0(SCStr *param_2)
 
 undefined4 __thiscall Recovered_Bulk::m_FUN_11051010(undefined4 param_2,SCStr *param_3)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   char cVar1;
   int iVar2;
@@ -11220,7 +11209,7 @@ void __thiscall Recovered_Bulk::m_FUN_11052090(undefined4 param_2,undefined4 par
 
 SCStr * __thiscall Recovered_Bulk::m_FUN_11052480(SCStr *param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   int iVar1;
   int *piVar2;
@@ -11267,7 +11256,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_11052480(SCStr *param_2)
 
 undefined4 FUN_110525d0(SCStr *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   char cVar1;
   char *pcVar2;
@@ -11309,7 +11298,7 @@ undefined4 FUN_110525d0(SCStr *param_1)
 
 undefined4 __fastcall FUN_110526c0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   char cVar1;
   bool bVar2;
@@ -11380,7 +11369,7 @@ undefined4 __fastcall FUN_110526c0(int *param_1)
 
 undefined4 __thiscall Recovered_Bulk::m_FUN_11052860(undefined4 param_2,SCStr *param_3)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   int iVar1;
   int *piVar2;
@@ -11491,7 +11480,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_11052860(undefined4 param_2,SCStr *p
 
 undefined4 __thiscall Recovered_Bulk::m_FUN_11052b80(undefined4 param_2,SCStr *param_3)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   int iVar2;
@@ -11628,7 +11617,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_11052b80(undefined4 param_2,SCStr *p
 
 undefined4 __stdcall FUN_11052f50(undefined4 param_1,SCStr *param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   char cVar1;
   char *pcVar2;
@@ -11840,7 +11829,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11053400(undefined4 *param_2)
 
 undefined4 __thiscall Recovered_Bulk::m_FUN_11053a00(SCStr *param_2,SCStr *param_3,SCStr *param_4)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   int iVar2;
@@ -11949,7 +11938,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_11053a00(SCStr *param_2,SCStr *param
 
 undefined4 __thiscall Recovered_Bulk::m_FUN_11053cb0(SCStr *param_2,SCStr *param_3,SCStr *param_4)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   SCStr *_Memory;
   int iVar1;
@@ -12086,7 +12075,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_11053cb0(SCStr *param_2,SCStr *param
 
 undefined4 FUN_11054020(SCStr *param_1,SCStr *param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   char cVar1;
   char *pcVar2;
@@ -12381,7 +12370,7 @@ void __fastcall FUN_110545f0(int param_1)
 
 undefined4 __fastcall FUN_11054650(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   bool bVar1;
   int iVar2;
@@ -12438,7 +12427,7 @@ undefined4 __fastcall FUN_11054650(int *param_1)
 // Reference entry 11054800; body size 130 bytes.
 #line 1 "ENTRY_11054800"
 
-void __fastcall FUN_11054800(int param_1)
+void __fastcall FUN_11054800(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   char cVar1;
@@ -12476,7 +12465,7 @@ void __fastcall FUN_11054800(int param_1)
 // Reference entry 110548b0; body size 130 bytes.
 #line 1 "ENTRY_110548b0"
 
-void __fastcall FUN_110548b0(int param_1)
+void __fastcall FUN_110548b0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   char cVar1;
@@ -12702,7 +12691,7 @@ void __thiscall Recovered_Bulk::m_FUN_11054bb0(undefined4 param_2)
 
 undefined4 __thiscall Recovered_Bulk::m_FUN_11054e50(char *param_2,SCStr *param_3)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   int iVar1;
   char *pcVar2;
@@ -12980,7 +12969,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_11054e50(char *param_2,SCStr *param_
 
 undefined4 __thiscall Recovered_Bulk::m_FUN_110557a0(char *param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   undefined4 uVar1;
   int iVar2;
@@ -13768,7 +13757,7 @@ undefined4 FUN_11057030(void)
 
 void __thiscall Recovered_Bulk::m_FUN_11057140(int param_2,uint param_3)
 {
-  int param_1 = (int )this;
+  int param_1 = (int )this; int stack0xfffffffc;
  try {
   int iVar1;
   undefined4 uVar2;
@@ -13951,7 +13940,7 @@ void __fastcall FUN_11057510(int param_1)
 
 undefined4 * __thiscall Recovered_Bulk::m_FUN_11057590(undefined4 *param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   int iVar1;
   void *pvVar2;
@@ -14915,7 +14904,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11058930(undefined4 *param_2)
 
 undefined4 * __thiscall Recovered_Bulk::m_FUN_11058ca0(undefined4 *param_2,void *param_3)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   char cVar1;
   int *piVar2;
@@ -15247,7 +15236,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_110593b0(undefined4 param_2,undefine
 
 undefined4 * __thiscall Recovered_Bulk::m_FUN_110594c0(undefined4 *param_2,undefined4 param_3)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   int iVar1;
   int *piVar2;
@@ -15410,7 +15399,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_110594c0(undefined4 *param_2,undef
 
 undefined4 * __thiscall Recovered_Bulk::m_FUN_11059910(undefined4 *param_2,undefined4 param_3)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   undefined1 uVar1;
   int iVar2;
@@ -15587,7 +15576,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11059910(undefined4 *param_2,undef
 
 undefined4 * __thiscall Recovered_Bulk::m_FUN_11059dc0(undefined4 *param_2,undefined4 param_3)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   int iVar1;
   undefined4 *puVar2;
@@ -15828,7 +15817,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1105a230(undefined4 *param_2,undef
 
 undefined4 * __thiscall Recovered_Bulk::m_FUN_1105a3b0(undefined4 *param_2,undefined4 param_3)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   int iVar1;
   undefined4 *puVar2;
@@ -16067,7 +16056,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1105a640(undefined4 *param_2)
 
 SCStr * __thiscall Recovered_Bulk::m_FUN_1105a9f0(SCStr *param_2,SCStr *param_3)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xffffffa4;
  try {
   char *pcVar1;
   char *pcVar2;
@@ -16451,7 +16440,7 @@ LAB_1105afdb:
 
 undefined4 __thiscall Recovered_Bulk::m_FUN_1105b3e0(SCStr *param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   undefined4 uVar1;
   int iVar2;
@@ -16982,7 +16971,7 @@ int __fastcall FUN_1105bf20(int *param_1)
 
 undefined4 __fastcall FUN_1105bf70(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   int iVar1;
   undefined4 uVar2;
@@ -17041,7 +17030,7 @@ undefined4 __fastcall FUN_1105bf70(int *param_1)
 
 undefined4 __thiscall Recovered_Bulk::m_FUN_1105c130(SCStr *param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   undefined4 uVar1;
   int iVar2;
@@ -17152,7 +17141,7 @@ uint __fastcall FUN_1105c350(int *param_1)
 
 undefined4 * __thiscall Recovered_Bulk::m_FUN_1105c400(undefined4 *param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xffffffc0;
  try {
   int iVar1;
   int *piVar2;
@@ -17921,7 +17910,7 @@ void __thiscall Recovered_Bulk::m_FUN_1105d360(int param_2)
 
 void __thiscall Recovered_Bulk::m_FUN_1105d540(undefined4 param_2,int *param_3)
 {
-  int param_1 = (int )this;
+  int param_1 = (int )this; int stack0xfffffffc;
  try {
   int *piVar1;
   SCLibrary *this_;
@@ -18171,7 +18160,7 @@ void __thiscall Recovered_Bulk::m_FUN_1105d990(uint param_2)
 
 void FUN_1105dae0(undefined4 param_1,int *param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -18386,7 +18375,7 @@ void __thiscall Recovered_Bulk::m_FUN_1105de40(undefined4 param_2,int param_3,un
 
 void __fastcall FUN_1105e040(int param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   char *pcVar2;
@@ -18881,7 +18870,7 @@ undefined4 __fastcall FUN_1105eb40(int *param_1)
 
 void __thiscall Recovered_Bulk::m_FUN_1105ebd0(undefined4 param_2,int param_3,undefined4 param_4)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   int iVar2;
@@ -19413,7 +19402,7 @@ void __thiscall Recovered_Bulk::m_FUN_1105f9f0(int *param_2,undefined4 param_3)
 
 undefined4 * __thiscall Recovered_Bulk::m_FUN_1105fae0(undefined4 *param_2,SCStr *param_3)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   undefined1 uVar1;
   char cVar2;
@@ -19578,7 +19567,7 @@ LAB_1105fb40:
 
 undefined4 * __thiscall Recovered_Bulk::m_FUN_1105feb0(undefined4 *param_2,char *param_3)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   undefined1 uVar1;
   char cVar2;
@@ -19750,7 +19739,7 @@ LAB_1105ff10:
 
 undefined4 * __thiscall Recovered_Bulk::m_FUN_110602b0(undefined4 *param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   int *piVar1;
   char cVar2;
@@ -19983,7 +19972,7 @@ char * __thiscall Recovered_Bulk::m_FUN_11060890(char *param_2,undefined4 param_
 
 void __fastcall FUN_110609b0(int param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   int *local_18;
@@ -20015,7 +20004,7 @@ void __fastcall FUN_110609b0(int param_1)
 
 void __thiscall Recovered_Bulk::m_FUN_11060a50(undefined4 param_2,undefined4 param_3)
 {
-  int param_1 = (int )this;
+  int param_1 = (int )this; int stack0xfffffffc;
  try {
   int *piVar1;
   int *piVar2;
@@ -20245,7 +20234,7 @@ void __thiscall Recovered_Bulk::m_FUN_11060e80(SCStr *param_2,SCStr *param_3)
 SCStr * FUN_11060ef0(SCStr *param_1,int param_2,int param_3,int param_4,undefined4 param_5,
                     undefined4 param_6)
 
-{
+{ int stack0xfffffffc;
  try {
   SCStr *pSVar1;
   uint uVar2;
@@ -20731,7 +20720,7 @@ void __thiscall Recovered_Bulk::m_FUN_11061c60(int *param_2,undefined4 param_3)
 
 void __fastcall FUN_11061df0(int param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   int *local_18;
@@ -20763,7 +20752,7 @@ void __fastcall FUN_11061df0(int param_1)
 
 void __thiscall Recovered_Bulk::m_FUN_11061e90(undefined4 param_2,undefined4 param_3)
 {
-  int param_1 = (int )this;
+  int param_1 = (int )this; int stack0xfffffffc;
  try {
   int *piVar1;
   int *piVar2;
@@ -21243,7 +21232,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_11062970(undefined4 param_2)
 
 void __fastcall FUN_11062d80(int param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   int *local_18;
@@ -21275,7 +21264,7 @@ void __fastcall FUN_11062d80(int param_1)
 
 void __thiscall Recovered_Bulk::m_FUN_11062e20(undefined4 param_2,undefined4 param_3)
 {
-  int param_1 = (int )this;
+  int param_1 = (int )this; int stack0xfffffffc;
  try {
   int *piVar1;
   int *piVar2;
@@ -21826,7 +21815,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_110646c0(int param_2)
 
 undefined4 * __thiscall Recovered_Bulk::m_FUN_11064820(undefined4 param_2,undefined4 param_3,undefined4 param_4)
 {
-  undefined4 *param_1 = (undefined4 *)this;
+  undefined4 *param_1 = (undefined4 *)this; int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -22474,7 +22463,7 @@ void __fastcall FUN_11065a60(int param_1)
 
 void __fastcall FUN_11065ae0(int param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   int *local_18;
@@ -22506,7 +22495,7 @@ void __fastcall FUN_11065ae0(int param_1)
 
 void __thiscall Recovered_Bulk::m_FUN_11065b80(undefined4 param_2,undefined4 param_3)
 {
-  int param_1 = (int )this;
+  int param_1 = (int )this; int stack0xfffffffc;
  try {
   int *piVar1;
   int *piVar2;
@@ -22715,7 +22704,7 @@ void __fastcall FUN_11065e30(int param_1, unsigned int recovered_unused_stack_0,
 
 undefined4 * __thiscall Recovered_Bulk::m_FUN_11066110(undefined4 *param_2,char *param_3)
 {
-  int param_1 = (int )this;
+  int param_1 = (int )this; int stack0xffffffcc;
  try {
   char cVar1;
   int *piVar2;
@@ -22849,7 +22838,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11066110(undefined4 *param_2,char 
 
 undefined4 * __stdcall FUN_11066480(undefined4 *param_1,void *param_2)
 
-{
+{ int stack0xffffffd0;
  try {
   char cVar1;
   int *piVar2;
@@ -23280,7 +23269,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_11066e90(byte param_2)
 
 undefined4 * FUN_110670b0(undefined4 *param_1,undefined4 param_2)
 
-{
+{ int stack0x00000010;
  try {
   uint uVar1;
   void *pvVar2;
@@ -23330,7 +23319,7 @@ undefined4 * FUN_110670b0(undefined4 *param_1,undefined4 param_2)
 
 undefined4 * FUN_110671e0(undefined4 *param_1)
 
-{
+{ int stack0x00000008;
  try {
   uint uVar1;
   void *pvVar2;
@@ -23760,7 +23749,7 @@ void __thiscall Recovered_Bulk::m_FUN_11067bf0(int *param_2,undefined4 param_3)
 
 void __fastcall FUN_11067e50(int param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   int *piVar1;
   int *local_18;
@@ -23792,7 +23781,7 @@ void __fastcall FUN_11067e50(int param_1)
 
 void __thiscall Recovered_Bulk::m_FUN_11067ef0(undefined4 param_2,undefined4 param_3)
 {
-  int param_1 = (int )this;
+  int param_1 = (int )this; int stack0xfffffffc;
  try {
   int *piVar1;
   int *piVar2;
@@ -27021,7 +27010,7 @@ void __thiscall Recovered_Bulk::m_FUN_1106e690(uint *param_2,undefined4 *param_3
 // Reference entry 1106e770; body size 175 bytes.
 #line 1 "ENTRY_1106e770"
 
-undefined4 __fastcall FUN_1106e770(int param_1)
+undefined4 __fastcall FUN_1106e770(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   undefined1 uVar1;
@@ -27279,7 +27268,7 @@ LAB_1106ec19:
 // Reference entry 1106eda0; body size 183 bytes.
 #line 1 "ENTRY_1106eda0"
 
-undefined4 __fastcall FUN_1106eda0(int param_1)
+undefined4 __fastcall FUN_1106eda0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   undefined1 uVar1;
@@ -29268,7 +29257,7 @@ int * __thiscall Recovered_Bulk::m_FUN_110724f0(int *param_2,undefined4 param_3)
 
 void FUN_11072620(undefined4 param_1,int param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   int iVar1;
   int iVar2;
@@ -29300,7 +29289,7 @@ void FUN_11072620(undefined4 param_1,int param_2)
 
 void FUN_110726d0(undefined4 param_1,int param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   int iVar1;
   int iVar2;
@@ -29600,7 +29589,7 @@ int * FUN_11072fb0(int *param_1,int *param_2,int *param_3)
 
 void FUN_11073270(undefined4 *param_1,undefined4 **param_2,undefined4 **param_3,code *param_4)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 **ppuVar1;
   undefined4 *puVar2;
@@ -30646,7 +30635,7 @@ int * FUN_11074bb0(int *param_1,int *param_2,int *param_3,undefined4 param_4)
 
 void FUN_11075100(undefined4 param_1,int *param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   int iVar1;
   int iVar2;
@@ -30676,7 +30665,7 @@ void FUN_11075100(undefined4 param_1,int *param_2)
 
 void FUN_110751a0(undefined4 param_1,int *param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 *puVar1;
   int iVar2;
@@ -30703,7 +30692,7 @@ void FUN_110751a0(undefined4 param_1,int *param_2)
 
 void FUN_11075220(undefined4 param_1,int *param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 *puVar1;
   int iVar2;
@@ -30730,7 +30719,7 @@ void FUN_11075220(undefined4 param_1,int *param_2)
 
 void FUN_110752a0(undefined4 param_1,int *param_2)
 
-{
+{ int stack0xfffffffc;
  try {
   int iVar1;
   int iVar2;
@@ -32326,7 +32315,7 @@ void __fastcall FUN_110787a0(undefined4 *param_1)
 
 void __fastcall FUN_11078840(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 *puVar1;
   int iVar2;
@@ -32354,7 +32343,7 @@ void __fastcall FUN_11078840(int *param_1)
 
 void __fastcall FUN_110788c0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 *puVar1;
   int iVar2;
@@ -32382,7 +32371,7 @@ void __fastcall FUN_110788c0(int *param_1)
 
 void __fastcall FUN_11078940(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 *puVar1;
   int iVar2;
@@ -32410,7 +32399,7 @@ void __fastcall FUN_11078940(int *param_1)
 
 void __fastcall FUN_110789c0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 *puVar1;
   int iVar2;
@@ -32438,7 +32427,7 @@ void __fastcall FUN_110789c0(int *param_1)
 
 void __fastcall FUN_11078a40(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 *puVar1;
   int iVar2;
@@ -32466,7 +32455,7 @@ void __fastcall FUN_11078a40(int *param_1)
 
 void __fastcall FUN_11078ac0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 *puVar1;
   int iVar2;
@@ -32524,7 +32513,7 @@ void __fastcall FUN_11078b40(undefined4 *param_1)
 
 void __fastcall FUN_11078c40(int param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 *puVar1;
   int iVar2;
@@ -32552,7 +32541,7 @@ void __fastcall FUN_11078c40(int param_1)
 
 void __fastcall FUN_11078cc0(int param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 *puVar1;
   int iVar2;
@@ -32580,7 +32569,7 @@ void __fastcall FUN_11078cc0(int param_1)
 
 void __fastcall FUN_11078d40(int param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 *puVar1;
   int iVar2;
@@ -32678,7 +32667,7 @@ void __fastcall FUN_11078d40(int param_1)
 
 void __fastcall FUN_11078f00(int param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   int iVar1;
   int iVar2;
@@ -32715,7 +32704,7 @@ void __fastcall FUN_11078f00(int param_1)
 
 void __fastcall FUN_11078fc0(int param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   int iVar1;
   int iVar2;
@@ -32752,7 +32741,7 @@ void __fastcall FUN_11078fc0(int param_1)
 
 void __fastcall FUN_11079170(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   int iVar1;
   int iVar2;
@@ -32963,7 +32952,7 @@ void __fastcall FUN_11079440(int *param_1)
 
 void __fastcall FUN_110794c0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   int iVar1;
   int iVar2;
@@ -33653,7 +33642,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1107add0(byte param_2)
 
 int * __thiscall Recovered_Bulk::m_FUN_1107ae90(byte param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   undefined4 *puVar1;
   int iVar2;
@@ -33684,7 +33673,7 @@ int * __thiscall Recovered_Bulk::m_FUN_1107ae90(byte param_2)
 
 int * __thiscall Recovered_Bulk::m_FUN_1107af30(byte param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   undefined4 *puVar1;
   int iVar2;
@@ -33747,7 +33736,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1107afd0(byte param_2)
 
 int * __thiscall Recovered_Bulk::m_FUN_1107b070(byte param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   int iVar1;
   int iVar2;
@@ -35604,7 +35593,7 @@ void __thiscall Recovered_Bulk::m_FUN_1107ddf0(int *param_2,int *param_3,int *pa
 
 void __thiscall Recovered_Bulk::m_FUN_1107dfd0(int param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffffffc;
  try {
   undefined4 *puVar1;
   char cVar2;
@@ -35730,7 +35719,7 @@ undefined4 __thiscall Recovered_Bulk::m_FUN_1107e280(int *param_2)
 
 undefined4 FUN_1107e350(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   char *_Src;
   char cVar1;
@@ -36351,7 +36340,7 @@ void FUN_1107f920(void)
 void __stdcall FUN_1107fa80(undefined4 param_1,undefined4 param_2,uint param_3,undefined4 param_4,
                  undefined4 param_5,undefined4 param_6)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined1 *_Memory;
   int iVar1;
@@ -36508,7 +36497,7 @@ undefined4 * __fastcall FUN_1107fd10(undefined4 param_1)
 
 undefined4 * __fastcall FUN_1107fdd0(int param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   int iVar1;
   undefined4 *puVar2;

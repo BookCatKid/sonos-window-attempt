@@ -345,7 +345,6 @@ extern undefined1 LAB_1003ddb6[];
 extern int *PTR_s_A_ALBUMARTIST_1211dae0;
 extern int *PTR_s_ServiceListVersion_119c37dc;
 extern int *PTR_s_TransportState_119c29e8;
-extern int *stack0x0000000c;
 undefined4 __fastcall FUN_110a1230(int param_1);
 template<class... A> int FUN_110a1230(A...);
 undefined4 __fastcall FUN_110a12a0(int param_1);
@@ -866,7 +865,7 @@ void __thiscall Recovered_Bulk::m_FUN_110a3e60(char param_2)
 
 void FUN_110a4fa0(undefined4 param_1,undefined4 param_2)
 
-{
+{ int stack0x0000000c;
  try {
   thunk_FUN_111a7be0("ActionScriptTrace",10,param_2,&stack0x0000000c);
   return;

@@ -445,6 +445,12 @@ extern int FUN_11402980(...);
 extern int FUN_11402989(...);
 extern int FUN_11402999(...);
 extern int FUN_114029a5(...);
+extern int FUN_11402bf4(...);
+extern int FUN_11402bfc(...);
+extern int FUN_11402c01(...);
+extern int FUN_11402c1c(...);
+extern int FUN_11402c53(...);
+extern int FUN_11402c5b(...);
 extern int FUN_11402cb1(...);
 extern int FUN_114037f7(...);
 extern int FUN_114037fa(...);
@@ -705,6 +711,94 @@ extern int FUN_114357a1(...);
 extern int FUN_114357ba(...);
 extern int FUN_114357c6(...);
 extern int FUN_1143582b(...);
+extern int FUN_11437163(...);
+extern int FUN_1143716c(...);
+extern int FUN_11437179(...);
+extern int FUN_1143717f(...);
+extern int FUN_1143718d(...);
+extern int FUN_114371c4(...);
+extern int FUN_114371c9(...);
+extern int FUN_114371cc(...);
+extern int FUN_11437213(...);
+extern int FUN_1143721c(...);
+extern int FUN_11437229(...);
+extern int FUN_1143722f(...);
+extern int FUN_1143723d(...);
+extern int FUN_11437274(...);
+extern int FUN_11437279(...);
+extern int FUN_1143727c(...);
+extern int FUN_114372c3(...);
+extern int FUN_114372cc(...);
+extern int FUN_114372d9(...);
+extern int FUN_114372df(...);
+extern int FUN_114372ed(...);
+extern int FUN_11437324(...);
+extern int FUN_11437329(...);
+extern int FUN_1143732c(...);
+extern int FUN_11437373(...);
+extern int FUN_1143737c(...);
+extern int FUN_11437389(...);
+extern int FUN_1143738f(...);
+extern int FUN_1143739d(...);
+extern int FUN_114373d4(...);
+extern int FUN_114373d9(...);
+extern int FUN_114373dc(...);
+extern int FUN_11437423(...);
+extern int FUN_1143742c(...);
+extern int FUN_11437439(...);
+extern int FUN_1143743f(...);
+extern int FUN_1143744d(...);
+extern int FUN_11437484(...);
+extern int FUN_11437489(...);
+extern int FUN_1143748c(...);
+extern int FUN_114374d3(...);
+extern int FUN_114374dc(...);
+extern int FUN_114374e9(...);
+extern int FUN_114374ef(...);
+extern int FUN_114374fd(...);
+extern int FUN_11437534(...);
+extern int FUN_11437539(...);
+extern int FUN_1143753c(...);
+extern int FUN_11437583(...);
+extern int FUN_1143758c(...);
+extern int FUN_11437599(...);
+extern int FUN_1143759f(...);
+extern int FUN_114375ad(...);
+extern int FUN_114375e4(...);
+extern int FUN_114375e9(...);
+extern int FUN_114375ec(...);
+extern int FUN_114376b3(...);
+extern int FUN_114376bc(...);
+extern int FUN_114376c9(...);
+extern int FUN_114376cf(...);
+extern int FUN_114376dd(...);
+extern int FUN_11437714(...);
+extern int FUN_11437719(...);
+extern int FUN_1143771c(...);
+extern int FUN_11437763(...);
+extern int FUN_1143776c(...);
+extern int FUN_11437779(...);
+extern int FUN_1143777f(...);
+extern int FUN_1143778d(...);
+extern int FUN_114377c4(...);
+extern int FUN_114377c9(...);
+extern int FUN_114377cc(...);
+extern int FUN_11437963(...);
+extern int FUN_1143796c(...);
+extern int FUN_11437979(...);
+extern int FUN_1143797f(...);
+extern int FUN_1143798d(...);
+extern int FUN_114379c4(...);
+extern int FUN_114379c9(...);
+extern int FUN_114379cc(...);
+extern int FUN_11437a13(...);
+extern int FUN_11437a1c(...);
+extern int FUN_11437a29(...);
+extern int FUN_11437a2f(...);
+extern int FUN_11437a3d(...);
+extern int FUN_11437a74(...);
+extern int FUN_11437a79(...);
+extern int FUN_11437a7c(...);
 extern int FUN_11438735(...);
 extern int FUN_11438744(...);
 extern int FUN_1143874a(...);
@@ -1319,6 +1413,17 @@ extern int DAT_122fa1d0;
 extern int DAT_122fa560;
 extern int DAT_122faa80;
 extern undefined1 LAB_11469332[];
+extern int *PTR_DAT_11bfecc0;
+extern int *PTR_DAT_11bfee68;
+extern int *PTR_DAT_11bfef20;
+extern int *PTR_DAT_11bfefa0;
+extern int *PTR_DAT_11bff110;
+extern int *PTR_DAT_11bff160;
+extern int *PTR_DAT_11bff19c;
+extern int *PTR_DAT_11bff1c8;
+extern int *PTR_DAT_11bff240;
+extern int *PTR_DAT_11bff2d0;
+extern int *PTR_DAT_11bff348;
 extern char s_invalid_after_png_start_read_ima_11c06018[];
 extern char s_invalid_before_the_PNG_header_ha_11c06060[];
 extern char s_too_short_11c04d50[];
@@ -1522,6 +1627,8 @@ int FUN_11401470(int a1);
 template<class... A> int FUN_11401470(A...);
 int FUN_11402940(int a1, int a2);
 template<class... A> int FUN_11402940(A...);
+int FUN_11402bd0(int a1, int a2);
+template<class... A> int FUN_11402bd0(A...);
 int FUN_11402ca0(int a1, int a2, int a3);
 template<class... A> int FUN_11402ca0(A...);
 int FUN_114037f0(int a1, int a2, int a3);
@@ -1732,6 +1839,28 @@ int FUN_11435790(int a1, int a2);
 template<class... A> int FUN_11435790(A...);
 int FUN_11435810(int a1, int a2);
 template<class... A> int FUN_11435810(A...);
+int FUN_11437150(int a1);
+template<class... A> int FUN_11437150(A...);
+int FUN_11437200(int a1);
+template<class... A> int FUN_11437200(A...);
+int FUN_114372b0(int a1);
+template<class... A> int FUN_114372b0(A...);
+int FUN_11437360(int a1);
+template<class... A> int FUN_11437360(A...);
+int FUN_11437410(int a1);
+template<class... A> int FUN_11437410(A...);
+int FUN_114374c0(int a1);
+template<class... A> int FUN_114374c0(A...);
+int FUN_11437570(int a1);
+template<class... A> int FUN_11437570(A...);
+int FUN_114376a0(int a1);
+template<class... A> int FUN_114376a0(A...);
+int FUN_11437750(int a1);
+template<class... A> int FUN_11437750(A...);
+int FUN_11437950(int a1);
+template<class... A> int FUN_11437950(A...);
+int FUN_11437a00(int a1);
+template<class... A> int FUN_11437a00(A...);
 int FUN_11438720(int a1, uint a2, int a3);
 template<class... A> int FUN_11438720(A...);
 int FUN_11438780(int a1, int a2, int a3);
@@ -2051,7 +2180,7 @@ int *v2 = (int *)((int)((int *)a1)); // (int)&FUN_113ed3c0
     return (int)(result);
 }
 
-// Reference entry 113ed463; body size 55 bytes.
+// Reference entry 113ed463; body size 46 bytes.
 #line 1 "ENTRY_113ed463"
 int FUN_113ed463(int a1, int a2, int a3) {
 
@@ -2271,7 +2400,7 @@ short *v3 = (short *)((short)((short *)v2)); // (int)&FUN_113f0596
     return (int)(result3);
 }
 
-// Reference entry 113f06dc; body size 144 bytes.
+// Reference entry 113f06dc; body size 117 bytes.
 #line 1 "ENTRY_113f06dc"
 int FUN_113f06dc(int a1, int a2, int a3, int a4, int a5, int a6, int a7, int a8) {
 
@@ -3607,7 +3736,7 @@ int FUN_113f80d0(int a1, int a2, int a3) {
     return (int)(0);
 }
 
-// Reference entry 113f8936; body size 140 bytes.
+// Reference entry 113f8936; body size 114 bytes.
 #line 1 "ENTRY_113f8936"
 int FUN_113f8936(int a1, int a2, int a3, int a4) {
 
@@ -4588,6 +4717,165 @@ int FUN_11402940(int a1, int a2) {
     }
     int v10 = (int)(FUN_11405c60(v5, v7, v9), 0); // (int)&FUN_114029a5
     return (int)(v10 != 0 ? -1 : v10);
+}
+
+// Reference entry 11402bd0; body size 156 bytes.
+#line 1 "ENTRY_11402bd0"
+int FUN_11402bd0(int a1, int a2) {
+
+    int v1; // (int)((int(*)(int a1, int a2))&FUN_11402bd0)
+    if (a2 == 0 | FUN_11405cc0(a1 + 80, a1 + 112, v1, v1, v1, v1) != 0) {
+        return (int)(-1);
+    }
+    uint v2 = (uint)(*(int *)(a1 + 8)); // (int)&FUN_11402bf4
+    int v3 = (int)(v2 - 4);
+    int v4; // (int)((int(*)(int a1, int a2))&FUN_11402bd0)
+    int v5; // (int)((int(*)(int a1, int a2))&FUN_11402bd0)
+    int v6; // (int)((int(*)(int a1, int a2))&FUN_11402bd0)
+    int v7; // (int)((int(*)(int a1, int a2))&FUN_11402bd0)
+    int v8; // (int)((int(*)(int a1, int a2))&FUN_11402bd0)
+    int v9; // (int)((int(*)(int a1, int a2))&FUN_11402bd0)
+    int v10; // (int)((int(*)(int a1, int a2))&FUN_11402bd0)
+    int v11; // (int)((int(*)(int a1, int a2))&FUN_11402bd0)
+    int v12; // (int)((int(*)(int a1, int a2))&FUN_11402bd0)
+    int v13; // (int)((int(*)(int a1, int a2))&FUN_11402bd0)
+    int v14; // (int)((int(*)(int a1, int a2))&FUN_11402bd0)
+    int v15; // (int)((int(*)(int a1, int a2))&FUN_11402bd0)
+    int v16; // (int)((int(*)(int a1, int a2))&FUN_11402bd0)
+    int v17; // (int)((int(*)(int a1, int a2))&FUN_11402bd0)
+    int v18; // (int)&FUN_11402bfc
+    int v19; // (int)&FUN_11402c01
+    int v20; // (int)&FUN_11402c1c
+    if ((int)(v2) == *(int *)(a2 + 8)) {
+        v18 = (int)(*(int *)(a1 + 12));
+        v19 = (int)(*(int *)(a2 + 12));
+        v8 = (int)(v18);
+        v13 = (int)(v19);
+        v5 = (int)(v3);
+        v10 = (int)(v18);
+        v15 = (int)(v19);
+        if (v2 < 4) {
+            v6 = (int)(v5);
+            v11 = (int)(v10);
+            v16 = (int)(v15);
+            if (v5 == -4) {
+                goto lab_brk_11402bd0;
+            }
+        } else {
+            v14 = (int)(v13);
+            v9 = (int)(v8);
+            v4 = (int)(v3);
+            v6 = (int)(v4);
+            v11 = (int)(v9);
+            v16 = (int)(v14);
+            while (*(int *)(v9) == *(int *)(v14)) {
+                v20 = (int)(v4 - 4);
+                v5 = (int)(v20);
+                if (v4 < 4) {
+                    goto lab_brk_11402bd0;
+                }
+                v14 += 4;
+                v9 += 4;
+                v4 = (int)(v20);
+                v6 = (int)(v4);
+                v11 = (int)(v9);
+                v16 = (int)(v14);
+            }
+        }
+        v17 = (int)(v16);
+        v12 = (int)(v11);
+        if (*(char *)(v12) == *(char *)(v17)) {
+            v7 = (int)(v6);
+            if (v7 == -3) {
+                goto lab_brk_11402bd0;
+            }
+            if (*(char *)((v12 + 1)) == *(char *)((v17 + 1))) {
+                if (v7 == -2) {
+                    goto lab_brk_11402bd0;
+                }
+                if (*(char *)((v12 + 2)) == *(char *)((v17 + 2))) {
+                    if (v7 == -1) {
+                        goto lab_brk_11402bd0;
+                    }
+                    if (*(char *)((v12 + 3)) == *(char *)((v17 + 3))) {
+                        goto lab_brk_11402bd0;
+                    }
+                }
+            }
+        }
+    }
+    int v21 = (int)(*(int *)(a2 + 404)); // (int)&FUN_11402c53
+    int result = (int)(-1); // (int)&FUN_11402c5b
+    while (v21 != 0) {
+        int v22 = (int)(v21);
+        if ((int)(v2) == *(int *)(v22 + 8)) {
+            v18 = (int)(*(int *)(a1 + 12));
+            v19 = (int)(*(int *)(v22 + 12));
+            v8 = (int)(v18);
+            v13 = (int)(v19);
+            v5 = (int)(v3);
+            v10 = (int)(v18);
+            v15 = (int)(v19);
+            if (v2 < 4) {
+                v6 = (int)(v5);
+                v11 = (int)(v10);
+                v16 = (int)(v15);
+                result = (int)(0);
+                if (v5 == -4) {
+                    break;
+                }
+            } else {
+                v14 = (int)(v13);
+                v9 = (int)(v8);
+                v4 = (int)(v3);
+                v6 = (int)(v4);
+                v11 = (int)(v9);
+                v16 = (int)(v14);
+                while (*(int *)(v9) == *(int *)(v14)) {
+                    v20 = (int)(v4 - 4);
+                    v5 = (int)(v20);
+                    if (v4 < 4) {
+                        goto lab_brk_11402bd0;
+                    }
+                    v14 += 4;
+                    v9 += 4;
+                    v4 = (int)(v20);
+                    v6 = (int)(v4);
+                    v11 = (int)(v9);
+                    v16 = (int)(v14);
+                }
+            }
+            v17 = (int)(v16);
+            v12 = (int)(v11);
+            if (*(char *)(v12) == *(char *)(v17)) {
+                v7 = (int)(v6);
+                result = (int)(0);
+                if (v7 == -3) {
+                    break;
+                }
+                if (*(char *)((v12 + 1)) == *(char *)((v17 + 1))) {
+                    result = (int)(0);
+                    if (v7 == -2) {
+                        break;
+                    }
+                    if (*(char *)((v12 + 2)) == *(char *)((v17 + 2))) {
+                        result = (int)(0);
+                        if (v7 == -1) {
+                            break;
+                        }
+                        result = (int)(0);
+                        if (*(char *)((v12 + 3)) == *(char *)((v17 + 3))) {
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        v21 = (int)(*(int *)(v22 + 404));
+        result = (int)(-1);
+    }
+    return (int)(result);
+lab_brk_11402bd0: ;
 }
 
 // Reference entry 11402ca0; body size 74 bytes.
@@ -6732,6 +7020,1766 @@ int FUN_11435810(int a1, int a2) {
 
     uint v1 = (uint)(a2 ^ a1 ^ *(int *)&DAT_122fa560); // (int)&FUN_1143582b
     return (int)((-((v1 / 2)) | -v1) / 0x80000000);
+}
+
+// Reference entry 11437150; body size 140 bytes.
+#line 1 "ENTRY_11437150"
+int FUN_11437150(int a1) {
+
+    if (a1 == 0) {
+        return (int)(0);
+    }
+    int v1 = (int)(*(int * *)(&PTR_DAT_11bfefa0)); // (int)&FUN_11437163
+    if (v1 == 0) {
+        return (int)(0);
+    }
+    uint v2 = (uint)(*(int *)(a1 + 4)); // (int)&FUN_1143716c
+    int v3 = (int)(v2 - 4);
+    int v4 = (int)((int)&PTR_DAT_11bfefa0);
+    int v5; // (int)((int(*)(int a1))&FUN_11437150)
+    int v6; // (int)((int(*)(int a1))&FUN_11437150)
+    int v7; // (int)((int(*)(int a1))&FUN_11437150)
+    int v8; // (int)((int(*)(int a1))&FUN_11437150)
+    int v9; // (int)((int(*)(int a1))&FUN_11437150)
+    int v10; // (int)((int(*)(int a1))&FUN_11437150)
+    int v11; // (int)((int(*)(int a1))&FUN_11437150)
+    int v12; // (int)((int(*)(int a1))&FUN_11437150)
+    int v13; // (int)((int(*)(int a1))&FUN_11437150)
+    int v14; // (int)((int(*)(int a1))&FUN_11437150)
+    int v15; // (int)((int(*)(int a1))&FUN_11437150)
+    int v16; // (int)((int(*)(int a1))&FUN_11437150)
+    int v17; // (int)&FUN_1143718d
+    int v18; // (int)&FUN_11437179
+    if (*(int *)(v4 || 4) == (int)(v2)) {
+        v18 = (int)(*(int *)(a1 + 8));
+        v5 = (int)(v18);
+        v7 = (int)(v18);
+        v14 = (int)(v3);
+        if (v2 < 4) {
+            v8 = (int)(v7);
+            v11 = (int)(v1);
+            v15 = (int)(v14);
+            if (v14 == -4) {
+                goto lab_brk_11437150;
+            }
+        } else {
+            v13 = (int)(v3);
+            v10 = (int)(v1);
+            v6 = (int)(v5);
+            v8 = (int)(v6);
+            v11 = (int)(v10);
+            v15 = (int)(v13);
+            while (*(int *)(v10) == *(int *)(v6)) {
+                v17 = (int)(v13 - 4);
+                v14 = (int)(v17);
+                if (v13 < 4) {
+                    goto lab_brk_11437150;
+                }
+                v13 = (int)(v17);
+                v10 += 4;
+                v6 += 4;
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+            }
+        }
+        v12 = (int)(v11);
+        v9 = (int)(v8);
+        if (*(char *)(v12) == *(char *)(v9)) {
+            v16 = (int)(v15);
+            if (v16 == -3) {
+                goto lab_brk_11437150;
+            }
+            if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                if (v16 == -2) {
+                    goto lab_brk_11437150;
+                }
+                if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                    if (v16 == -1) {
+                        goto lab_brk_11437150;
+                    }
+                    if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                        goto lab_brk_11437150;
+                    }
+                }
+            }
+        }
+    }
+    int v19 = (int)(v4 + 16); // (int)&FUN_114371c4
+    int v20 = (int)(*(int *)v19); // (int)&FUN_114371c9
+    int v21 = (int)(v20); // (int)&FUN_114371cc
+    int result = (int)(0); // (int)&FUN_114371cc
+    while (v20 != 0) {
+        v4 = (int)(v19);
+        if (*(int *)(v4 || 4) == (int)(v2)) {
+            v18 = (int)(*(int *)(a1 + 8));
+            v5 = (int)(v18);
+            int v22 = (int)(v21); // (int)&FUN_1143717f
+            v7 = (int)(v18);
+            int v23 = (int)(v21); // (int)&FUN_1143717f
+            v14 = (int)(v3);
+            if (v2 < 4) {
+                v8 = (int)(v7);
+                v11 = (int)(v23);
+                v15 = (int)(v14);
+                result = (int)(v4);
+                if (v14 == -4) {
+                    break;
+                }
+            } else {
+                v13 = (int)(v3);
+                v10 = (int)(v22);
+                v6 = (int)(v5);
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+                while (*(int *)(v10) == *(int *)(v6)) {
+                    v17 = (int)(v13 - 4);
+                    v14 = (int)(v17);
+                    if (v13 < 4) {
+                        goto lab_brk_11437150;
+                    }
+                    v13 = (int)(v17);
+                    v10 += 4;
+                    v6 += 4;
+                    v8 = (int)(v6);
+                    v11 = (int)(v10);
+                    v15 = (int)(v13);
+                }
+            }
+            v12 = (int)(v11);
+            v9 = (int)(v8);
+            if (*(char *)(v12) == *(char *)(v9)) {
+                v16 = (int)(v15);
+                result = (int)(v4);
+                if (v16 == -3) {
+                    break;
+                }
+                if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                    result = (int)(v4);
+                    if (v16 == -2) {
+                        break;
+                    }
+                    if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                        result = (int)(v4);
+                        if (v16 == -1) {
+                            break;
+                        }
+                        result = (int)(v4);
+                        if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        v19 = (int)(v4 + 16);
+        v20 = (int)(*(int *)v19);
+        v21 = (int)(v20);
+        result = (int)(0);
+    }
+    return (int)(result);
+lab_brk_11437150: ;
+}
+
+// Reference entry 11437200; body size 140 bytes.
+#line 1 "ENTRY_11437200"
+int FUN_11437200(int a1) {
+
+    if (a1 == 0) {
+        return (int)(0);
+    }
+    int v1 = (int)(*(int * *)(&PTR_DAT_11bff1c8)); // (int)&FUN_11437213
+    if (v1 == 0) {
+        return (int)(0);
+    }
+    uint v2 = (uint)(*(int *)(a1 + 4)); // (int)&FUN_1143721c
+    int v3 = (int)(v2 - 4);
+    int v4 = (int)((int)&PTR_DAT_11bff1c8);
+    int v5; // (int)((int(*)(int a1))&FUN_11437200)
+    int v6; // (int)((int(*)(int a1))&FUN_11437200)
+    int v7; // (int)((int(*)(int a1))&FUN_11437200)
+    int v8; // (int)((int(*)(int a1))&FUN_11437200)
+    int v9; // (int)((int(*)(int a1))&FUN_11437200)
+    int v10; // (int)((int(*)(int a1))&FUN_11437200)
+    int v11; // (int)((int(*)(int a1))&FUN_11437200)
+    int v12; // (int)((int(*)(int a1))&FUN_11437200)
+    int v13; // (int)((int(*)(int a1))&FUN_11437200)
+    int v14; // (int)((int(*)(int a1))&FUN_11437200)
+    int v15; // (int)((int(*)(int a1))&FUN_11437200)
+    int v16; // (int)((int(*)(int a1))&FUN_11437200)
+    int v17; // (int)&FUN_1143723d
+    int v18; // (int)&FUN_11437229
+    if (*(int *)(v4 + 4) == (int)(v2)) {
+        v18 = (int)(*(int *)(a1 + 8));
+        v5 = (int)(v18);
+        v7 = (int)(v18);
+        v14 = (int)(v3);
+        if (v2 < 4) {
+            v8 = (int)(v7);
+            v11 = (int)(v1);
+            v15 = (int)(v14);
+            if (v14 == -4) {
+                goto lab_brk_11437200;
+            }
+        } else {
+            v13 = (int)(v3);
+            v10 = (int)(v1);
+            v6 = (int)(v5);
+            v8 = (int)(v6);
+            v11 = (int)(v10);
+            v15 = (int)(v13);
+            while (*(int *)(v10) == *(int *)(v6)) {
+                v17 = (int)(v13 - 4);
+                v14 = (int)(v17);
+                if (v13 < 4) {
+                    goto lab_brk_11437200;
+                }
+                v13 = (int)(v17);
+                v10 += 4;
+                v6 += 4;
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+            }
+        }
+        v12 = (int)(v11);
+        v9 = (int)(v8);
+        if (*(char *)(v12) == *(char *)(v9)) {
+            v16 = (int)(v15);
+            if (v16 == -3) {
+                goto lab_brk_11437200;
+            }
+            if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                if (v16 == -2) {
+                    goto lab_brk_11437200;
+                }
+                if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                    if (v16 == -1) {
+                        goto lab_brk_11437200;
+                    }
+                    if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                        goto lab_brk_11437200;
+                    }
+                }
+            }
+        }
+    }
+    int v19 = (int)(v4 + 20); // (int)&FUN_11437274
+    int v20 = (int)(*(int *)v19); // (int)&FUN_11437279
+    int v21 = (int)(v20); // (int)&FUN_1143727c
+    int result = (int)(0); // (int)&FUN_1143727c
+    while (v20 != 0) {
+        v4 = (int)(v19);
+        if (*(int *)(v4 + 4) == (int)(v2)) {
+            v18 = (int)(*(int *)(a1 + 8));
+            v5 = (int)(v18);
+            int v22 = (int)(v21); // (int)&FUN_1143722f
+            v7 = (int)(v18);
+            int v23 = (int)(v21); // (int)&FUN_1143722f
+            v14 = (int)(v3);
+            if (v2 < 4) {
+                v8 = (int)(v7);
+                v11 = (int)(v23);
+                v15 = (int)(v14);
+                result = (int)(v4);
+                if (v14 == -4) {
+                    break;
+                }
+            } else {
+                v13 = (int)(v3);
+                v10 = (int)(v22);
+                v6 = (int)(v5);
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+                while (*(int *)(v10) == *(int *)(v6)) {
+                    v17 = (int)(v13 - 4);
+                    v14 = (int)(v17);
+                    if (v13 < 4) {
+                        goto lab_brk_11437200;
+                    }
+                    v13 = (int)(v17);
+                    v10 += 4;
+                    v6 += 4;
+                    v8 = (int)(v6);
+                    v11 = (int)(v10);
+                    v15 = (int)(v13);
+                }
+            }
+            v12 = (int)(v11);
+            v9 = (int)(v8);
+            if (*(char *)(v12) == *(char *)(v9)) {
+                v16 = (int)(v15);
+                result = (int)(v4);
+                if (v16 == -3) {
+                    break;
+                }
+                if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                    result = (int)(v4);
+                    if (v16 == -2) {
+                        break;
+                    }
+                    if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                        result = (int)(v4);
+                        if (v16 == -1) {
+                            break;
+                        }
+                        result = (int)(v4);
+                        if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        v19 = (int)(v4 + 20);
+        v20 = (int)(*(int *)v19);
+        v21 = (int)(v20);
+        result = (int)(0);
+    }
+    return (int)(result);
+lab_brk_11437200: ;
+}
+
+// Reference entry 114372b0; body size 140 bytes.
+#line 1 "ENTRY_114372b0"
+int FUN_114372b0(int a1) {
+
+    if (a1 == 0) {
+        return (int)(0);
+    }
+    int v1 = (int)(*(int * *)(&PTR_DAT_11bfef20)); // (int)&FUN_114372c3
+    if (v1 == 0) {
+        return (int)(0);
+    }
+    uint v2 = (uint)(*(int *)(a1 + 4)); // (int)&FUN_114372cc
+    int v3 = (int)(v2 - 4);
+    int v4 = (int)((int)&PTR_DAT_11bfef20);
+    int v5; // (int)((int(*)(int a1))&FUN_114372b0)
+    int v6; // (int)((int(*)(int a1))&FUN_114372b0)
+    int v7; // (int)((int(*)(int a1))&FUN_114372b0)
+    int v8; // (int)((int(*)(int a1))&FUN_114372b0)
+    int v9; // (int)((int(*)(int a1))&FUN_114372b0)
+    int v10; // (int)((int(*)(int a1))&FUN_114372b0)
+    int v11; // (int)((int(*)(int a1))&FUN_114372b0)
+    int v12; // (int)((int(*)(int a1))&FUN_114372b0)
+    int v13; // (int)((int(*)(int a1))&FUN_114372b0)
+    int v14; // (int)((int(*)(int a1))&FUN_114372b0)
+    int v15; // (int)((int(*)(int a1))&FUN_114372b0)
+    int v16; // (int)((int(*)(int a1))&FUN_114372b0)
+    int v17; // (int)&FUN_114372ed
+    int v18; // (int)&FUN_114372d9
+    if (*(int *)(v4 || 4) == (int)(v2)) {
+        v18 = (int)(*(int *)(a1 + 8));
+        v5 = (int)(v18);
+        v7 = (int)(v18);
+        v14 = (int)(v3);
+        if (v2 < 4) {
+            v8 = (int)(v7);
+            v11 = (int)(v1);
+            v15 = (int)(v14);
+            if (v14 == -4) {
+                goto lab_brk_114372b0;
+            }
+        } else {
+            v13 = (int)(v3);
+            v10 = (int)(v1);
+            v6 = (int)(v5);
+            v8 = (int)(v6);
+            v11 = (int)(v10);
+            v15 = (int)(v13);
+            while (*(int *)(v10) == *(int *)(v6)) {
+                v17 = (int)(v13 - 4);
+                v14 = (int)(v17);
+                if (v13 < 4) {
+                    goto lab_brk_114372b0;
+                }
+                v13 = (int)(v17);
+                v10 += 4;
+                v6 += 4;
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+            }
+        }
+        v12 = (int)(v11);
+        v9 = (int)(v8);
+        if (*(char *)(v12) == *(char *)(v9)) {
+            v16 = (int)(v15);
+            if (v16 == -3) {
+                goto lab_brk_114372b0;
+            }
+            if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                if (v16 == -2) {
+                    goto lab_brk_114372b0;
+                }
+                if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                    if (v16 == -1) {
+                        goto lab_brk_114372b0;
+                    }
+                    if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                        goto lab_brk_114372b0;
+                    }
+                }
+            }
+        }
+    }
+    int v19 = (int)(v4 + 16); // (int)&FUN_11437324
+    int v20 = (int)(*(int *)v19); // (int)&FUN_11437329
+    int v21 = (int)(v20); // (int)&FUN_1143732c
+    int result = (int)(0); // (int)&FUN_1143732c
+    while (v20 != 0) {
+        v4 = (int)(v19);
+        if (*(int *)(v4 || 4) == (int)(v2)) {
+            v18 = (int)(*(int *)(a1 + 8));
+            v5 = (int)(v18);
+            int v22 = (int)(v21); // (int)&FUN_114372df
+            v7 = (int)(v18);
+            int v23 = (int)(v21); // (int)&FUN_114372df
+            v14 = (int)(v3);
+            if (v2 < 4) {
+                v8 = (int)(v7);
+                v11 = (int)(v23);
+                v15 = (int)(v14);
+                result = (int)(v4);
+                if (v14 == -4) {
+                    break;
+                }
+            } else {
+                v13 = (int)(v3);
+                v10 = (int)(v22);
+                v6 = (int)(v5);
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+                while (*(int *)(v10) == *(int *)(v6)) {
+                    v17 = (int)(v13 - 4);
+                    v14 = (int)(v17);
+                    if (v13 < 4) {
+                        goto lab_brk_114372b0;
+                    }
+                    v13 = (int)(v17);
+                    v10 += 4;
+                    v6 += 4;
+                    v8 = (int)(v6);
+                    v11 = (int)(v10);
+                    v15 = (int)(v13);
+                }
+            }
+            v12 = (int)(v11);
+            v9 = (int)(v8);
+            if (*(char *)(v12) == *(char *)(v9)) {
+                v16 = (int)(v15);
+                result = (int)(v4);
+                if (v16 == -3) {
+                    break;
+                }
+                if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                    result = (int)(v4);
+                    if (v16 == -2) {
+                        break;
+                    }
+                    if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                        result = (int)(v4);
+                        if (v16 == -1) {
+                            break;
+                        }
+                        result = (int)(v4);
+                        if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        v19 = (int)(v4 + 16);
+        v20 = (int)(*(int *)v19);
+        v21 = (int)(v20);
+        result = (int)(0);
+    }
+    return (int)(result);
+lab_brk_114372b0: ;
+}
+
+// Reference entry 11437360; body size 140 bytes.
+#line 1 "ENTRY_11437360"
+int FUN_11437360(int a1) {
+
+    if (a1 == 0) {
+        return (int)(0);
+    }
+    int v1 = (int)(*(int * *)(&PTR_DAT_11bff19c)); // (int)&FUN_11437373
+    if (v1 == 0) {
+        return (int)(0);
+    }
+    uint v2 = (uint)(*(int *)(a1 + 4)); // (int)&FUN_1143737c
+    int v3 = (int)(v2 - 4);
+    int v4 = (int)((int)&PTR_DAT_11bff19c);
+    int v5; // (int)((int(*)(int a1))&FUN_11437360)
+    int v6; // (int)((int(*)(int a1))&FUN_11437360)
+    int v7; // (int)((int(*)(int a1))&FUN_11437360)
+    int v8; // (int)((int(*)(int a1))&FUN_11437360)
+    int v9; // (int)((int(*)(int a1))&FUN_11437360)
+    int v10; // (int)((int(*)(int a1))&FUN_11437360)
+    int v11; // (int)((int(*)(int a1))&FUN_11437360)
+    int v12; // (int)((int(*)(int a1))&FUN_11437360)
+    int v13; // (int)((int(*)(int a1))&FUN_11437360)
+    int v14; // (int)((int(*)(int a1))&FUN_11437360)
+    int v15; // (int)((int(*)(int a1))&FUN_11437360)
+    int v16; // (int)((int(*)(int a1))&FUN_11437360)
+    int v17; // (int)&FUN_1143739d
+    int v18; // (int)&FUN_11437389
+    if (*(int *)(v4 + 4) == (int)(v2)) {
+        v18 = (int)(*(int *)(a1 + 8));
+        v5 = (int)(v18);
+        v7 = (int)(v18);
+        v14 = (int)(v3);
+        if (v2 < 4) {
+            v8 = (int)(v7);
+            v11 = (int)(v1);
+            v15 = (int)(v14);
+            if (v14 == -4) {
+                goto lab_brk_11437360;
+            }
+        } else {
+            v13 = (int)(v3);
+            v10 = (int)(v1);
+            v6 = (int)(v5);
+            v8 = (int)(v6);
+            v11 = (int)(v10);
+            v15 = (int)(v13);
+            while (*(int *)(v10) == *(int *)(v6)) {
+                v17 = (int)(v13 - 4);
+                v14 = (int)(v17);
+                if (v13 < 4) {
+                    goto lab_brk_11437360;
+                }
+                v13 = (int)(v17);
+                v10 += 4;
+                v6 += 4;
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+            }
+        }
+        v12 = (int)(v11);
+        v9 = (int)(v8);
+        if (*(char *)(v12) == *(char *)(v9)) {
+            v16 = (int)(v15);
+            if (v16 == -3) {
+                goto lab_brk_11437360;
+            }
+            if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                if (v16 == -2) {
+                    goto lab_brk_11437360;
+                }
+                if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                    if (v16 == -1) {
+                        goto lab_brk_11437360;
+                    }
+                    if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                        goto lab_brk_11437360;
+                    }
+                }
+            }
+        }
+    }
+    int v19 = (int)(v4 + 20); // (int)&FUN_114373d4
+    int v20 = (int)(*(int *)v19); // (int)&FUN_114373d9
+    int v21 = (int)(v20); // (int)&FUN_114373dc
+    int result = (int)(0); // (int)&FUN_114373dc
+    while (v20 != 0) {
+        v4 = (int)(v19);
+        if (*(int *)(v4 + 4) == (int)(v2)) {
+            v18 = (int)(*(int *)(a1 + 8));
+            v5 = (int)(v18);
+            int v22 = (int)(v21); // (int)&FUN_1143738f
+            v7 = (int)(v18);
+            int v23 = (int)(v21); // (int)&FUN_1143738f
+            v14 = (int)(v3);
+            if (v2 < 4) {
+                v8 = (int)(v7);
+                v11 = (int)(v23);
+                v15 = (int)(v14);
+                result = (int)(v4);
+                if (v14 == -4) {
+                    break;
+                }
+            } else {
+                v13 = (int)(v3);
+                v10 = (int)(v22);
+                v6 = (int)(v5);
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+                while (*(int *)(v10) == *(int *)(v6)) {
+                    v17 = (int)(v13 - 4);
+                    v14 = (int)(v17);
+                    if (v13 < 4) {
+                        goto lab_brk_11437360;
+                    }
+                    v13 = (int)(v17);
+                    v10 += 4;
+                    v6 += 4;
+                    v8 = (int)(v6);
+                    v11 = (int)(v10);
+                    v15 = (int)(v13);
+                }
+            }
+            v12 = (int)(v11);
+            v9 = (int)(v8);
+            if (*(char *)(v12) == *(char *)(v9)) {
+                v16 = (int)(v15);
+                result = (int)(v4);
+                if (v16 == -3) {
+                    break;
+                }
+                if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                    result = (int)(v4);
+                    if (v16 == -2) {
+                        break;
+                    }
+                    if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                        result = (int)(v4);
+                        if (v16 == -1) {
+                            break;
+                        }
+                        result = (int)(v4);
+                        if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        v19 = (int)(v4 + 20);
+        v20 = (int)(*(int *)v19);
+        v21 = (int)(v20);
+        result = (int)(0);
+    }
+    return (int)(result);
+lab_brk_11437360: ;
+}
+
+// Reference entry 11437410; body size 140 bytes.
+#line 1 "ENTRY_11437410"
+int FUN_11437410(int a1) {
+
+    if (a1 == 0) {
+        return (int)(0);
+    }
+    int v1 = (int)(*(int * *)(&PTR_DAT_11bff160)); // (int)&FUN_11437423
+    if (v1 == 0) {
+        return (int)(0);
+    }
+    uint v2 = (uint)(*(int *)(a1 + 4)); // (int)&FUN_1143742c
+    int v3 = (int)(v2 - 4);
+    int v4 = (int)((int)&PTR_DAT_11bff160);
+    int v5; // (int)((int(*)(int a1))&FUN_11437410)
+    int v6; // (int)((int(*)(int a1))&FUN_11437410)
+    int v7; // (int)((int(*)(int a1))&FUN_11437410)
+    int v8; // (int)((int(*)(int a1))&FUN_11437410)
+    int v9; // (int)((int(*)(int a1))&FUN_11437410)
+    int v10; // (int)((int(*)(int a1))&FUN_11437410)
+    int v11; // (int)((int(*)(int a1))&FUN_11437410)
+    int v12; // (int)((int(*)(int a1))&FUN_11437410)
+    int v13; // (int)((int(*)(int a1))&FUN_11437410)
+    int v14; // (int)((int(*)(int a1))&FUN_11437410)
+    int v15; // (int)((int(*)(int a1))&FUN_11437410)
+    int v16; // (int)((int(*)(int a1))&FUN_11437410)
+    int v17; // (int)&FUN_1143744d
+    int v18; // (int)&FUN_11437439
+    if (*(int *)(v4 + 4) == (int)(v2)) {
+        v18 = (int)(*(int *)(a1 + 8));
+        v5 = (int)(v18);
+        v7 = (int)(v18);
+        v14 = (int)(v3);
+        if (v2 < 4) {
+            v8 = (int)(v7);
+            v11 = (int)(v1);
+            v15 = (int)(v14);
+            if (v14 == -4) {
+                goto lab_brk_11437410;
+            }
+        } else {
+            v13 = (int)(v3);
+            v10 = (int)(v1);
+            v6 = (int)(v5);
+            v8 = (int)(v6);
+            v11 = (int)(v10);
+            v15 = (int)(v13);
+            while (*(int *)(v10) == *(int *)(v6)) {
+                v17 = (int)(v13 - 4);
+                v14 = (int)(v17);
+                if (v13 < 4) {
+                    goto lab_brk_11437410;
+                }
+                v13 = (int)(v17);
+                v10 += 4;
+                v6 += 4;
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+            }
+        }
+        v12 = (int)(v11);
+        v9 = (int)(v8);
+        if (*(char *)(v12) == *(char *)(v9)) {
+            v16 = (int)(v15);
+            if (v16 == -3) {
+                goto lab_brk_11437410;
+            }
+            if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                if (v16 == -2) {
+                    goto lab_brk_11437410;
+                }
+                if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                    if (v16 == -1) {
+                        goto lab_brk_11437410;
+                    }
+                    if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                        goto lab_brk_11437410;
+                    }
+                }
+            }
+        }
+    }
+    int v19 = (int)(v4 + 20); // (int)&FUN_11437484
+    int v20 = (int)(*(int *)v19); // (int)&FUN_11437489
+    int v21 = (int)(v20); // (int)&FUN_1143748c
+    int result = (int)(0); // (int)&FUN_1143748c
+    while (v20 != 0) {
+        v4 = (int)(v19);
+        if (*(int *)(v4 + 4) == (int)(v2)) {
+            v18 = (int)(*(int *)(a1 + 8));
+            v5 = (int)(v18);
+            int v22 = (int)(v21); // (int)&FUN_1143743f
+            v7 = (int)(v18);
+            int v23 = (int)(v21); // (int)&FUN_1143743f
+            v14 = (int)(v3);
+            if (v2 < 4) {
+                v8 = (int)(v7);
+                v11 = (int)(v23);
+                v15 = (int)(v14);
+                result = (int)(v4);
+                if (v14 == -4) {
+                    break;
+                }
+            } else {
+                v13 = (int)(v3);
+                v10 = (int)(v22);
+                v6 = (int)(v5);
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+                while (*(int *)(v10) == *(int *)(v6)) {
+                    v17 = (int)(v13 - 4);
+                    v14 = (int)(v17);
+                    if (v13 < 4) {
+                        goto lab_brk_11437410;
+                    }
+                    v13 = (int)(v17);
+                    v10 += 4;
+                    v6 += 4;
+                    v8 = (int)(v6);
+                    v11 = (int)(v10);
+                    v15 = (int)(v13);
+                }
+            }
+            v12 = (int)(v11);
+            v9 = (int)(v8);
+            if (*(char *)(v12) == *(char *)(v9)) {
+                v16 = (int)(v15);
+                result = (int)(v4);
+                if (v16 == -3) {
+                    break;
+                }
+                if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                    result = (int)(v4);
+                    if (v16 == -2) {
+                        break;
+                    }
+                    if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                        result = (int)(v4);
+                        if (v16 == -1) {
+                            break;
+                        }
+                        result = (int)(v4);
+                        if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        v19 = (int)(v4 + 20);
+        v20 = (int)(*(int *)v19);
+        v21 = (int)(v20);
+        result = (int)(0);
+    }
+    return (int)(result);
+lab_brk_11437410: ;
+}
+
+// Reference entry 114374c0; body size 140 bytes.
+#line 1 "ENTRY_114374c0"
+int FUN_114374c0(int a1) {
+
+    if (a1 == 0) {
+        return (int)(0);
+    }
+    int v1 = (int)(*(int * *)(&PTR_DAT_11bff240)); // (int)&FUN_114374d3
+    if (v1 == 0) {
+        return (int)(0);
+    }
+    uint v2 = (uint)(*(int *)(a1 + 4)); // (int)&FUN_114374dc
+    int v3 = (int)(v2 - 4);
+    int v4 = (int)((int)&PTR_DAT_11bff240);
+    int v5; // (int)((int(*)(int a1))&FUN_114374c0)
+    int v6; // (int)((int(*)(int a1))&FUN_114374c0)
+    int v7; // (int)((int(*)(int a1))&FUN_114374c0)
+    int v8; // (int)((int(*)(int a1))&FUN_114374c0)
+    int v9; // (int)((int(*)(int a1))&FUN_114374c0)
+    int v10; // (int)((int(*)(int a1))&FUN_114374c0)
+    int v11; // (int)((int(*)(int a1))&FUN_114374c0)
+    int v12; // (int)((int(*)(int a1))&FUN_114374c0)
+    int v13; // (int)((int(*)(int a1))&FUN_114374c0)
+    int v14; // (int)((int(*)(int a1))&FUN_114374c0)
+    int v15; // (int)((int(*)(int a1))&FUN_114374c0)
+    int v16; // (int)((int(*)(int a1))&FUN_114374c0)
+    int v17; // (int)&FUN_114374fd
+    int v18; // (int)&FUN_114374e9
+    if (*(int *)(v4 + 4) == (int)(v2)) {
+        v18 = (int)(*(int *)(a1 + 8));
+        v5 = (int)(v18);
+        v7 = (int)(v18);
+        v14 = (int)(v3);
+        if (v2 < 4) {
+            v8 = (int)(v7);
+            v11 = (int)(v1);
+            v15 = (int)(v14);
+            if (v14 == -4) {
+                goto lab_brk_114374c0;
+            }
+        } else {
+            v13 = (int)(v3);
+            v10 = (int)(v1);
+            v6 = (int)(v5);
+            v8 = (int)(v6);
+            v11 = (int)(v10);
+            v15 = (int)(v13);
+            while (*(int *)(v10) == *(int *)(v6)) {
+                v17 = (int)(v13 - 4);
+                v14 = (int)(v17);
+                if (v13 < 4) {
+                    goto lab_brk_114374c0;
+                }
+                v13 = (int)(v17);
+                v10 += 4;
+                v6 += 4;
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+            }
+        }
+        v12 = (int)(v11);
+        v9 = (int)(v8);
+        if (*(char *)(v12) == *(char *)(v9)) {
+            v16 = (int)(v15);
+            if (v16 == -3) {
+                goto lab_brk_114374c0;
+            }
+            if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                if (v16 == -2) {
+                    goto lab_brk_114374c0;
+                }
+                if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                    if (v16 == -1) {
+                        goto lab_brk_114374c0;
+                    }
+                    if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                        goto lab_brk_114374c0;
+                    }
+                }
+            }
+        }
+    }
+    int v19 = (int)(v4 + 20); // (int)&FUN_11437534
+    int v20 = (int)(*(int *)v19); // (int)&FUN_11437539
+    int v21 = (int)(v20); // (int)&FUN_1143753c
+    int result = (int)(0); // (int)&FUN_1143753c
+    while (v20 != 0) {
+        v4 = (int)(v19);
+        if (*(int *)(v4 + 4) == (int)(v2)) {
+            v18 = (int)(*(int *)(a1 + 8));
+            v5 = (int)(v18);
+            int v22 = (int)(v21); // (int)&FUN_114374ef
+            v7 = (int)(v18);
+            int v23 = (int)(v21); // (int)&FUN_114374ef
+            v14 = (int)(v3);
+            if (v2 < 4) {
+                v8 = (int)(v7);
+                v11 = (int)(v23);
+                v15 = (int)(v14);
+                result = (int)(v4);
+                if (v14 == -4) {
+                    break;
+                }
+            } else {
+                v13 = (int)(v3);
+                v10 = (int)(v22);
+                v6 = (int)(v5);
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+                while (*(int *)(v10) == *(int *)(v6)) {
+                    v17 = (int)(v13 - 4);
+                    v14 = (int)(v17);
+                    if (v13 < 4) {
+                        goto lab_brk_114374c0;
+                    }
+                    v13 = (int)(v17);
+                    v10 += 4;
+                    v6 += 4;
+                    v8 = (int)(v6);
+                    v11 = (int)(v10);
+                    v15 = (int)(v13);
+                }
+            }
+            v12 = (int)(v11);
+            v9 = (int)(v8);
+            if (*(char *)(v12) == *(char *)(v9)) {
+                v16 = (int)(v15);
+                result = (int)(v4);
+                if (v16 == -3) {
+                    break;
+                }
+                if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                    result = (int)(v4);
+                    if (v16 == -2) {
+                        break;
+                    }
+                    if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                        result = (int)(v4);
+                        if (v16 == -1) {
+                            break;
+                        }
+                        result = (int)(v4);
+                        if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        v19 = (int)(v4 + 20);
+        v20 = (int)(*(int *)v19);
+        v21 = (int)(v20);
+        result = (int)(0);
+    }
+    return (int)(result);
+lab_brk_114374c0: ;
+}
+
+// Reference entry 11437570; body size 140 bytes.
+#line 1 "ENTRY_11437570"
+int FUN_11437570(int a1) {
+
+    if (a1 == 0) {
+        return (int)(0);
+    }
+    int v1 = (int)(*(int * *)(&PTR_DAT_11bff2d0)); // (int)&FUN_11437583
+    if (v1 == 0) {
+        return (int)(0);
+    }
+    uint v2 = (uint)(*(int *)(a1 + 4)); // (int)&FUN_1143758c
+    int v3 = (int)(v2 - 4);
+    int v4 = (int)((int)&PTR_DAT_11bff2d0);
+    int v5; // (int)((int(*)(int a1))&FUN_11437570)
+    int v6; // (int)((int(*)(int a1))&FUN_11437570)
+    int v7; // (int)((int(*)(int a1))&FUN_11437570)
+    int v8; // (int)((int(*)(int a1))&FUN_11437570)
+    int v9; // (int)((int(*)(int a1))&FUN_11437570)
+    int v10; // (int)((int(*)(int a1))&FUN_11437570)
+    int v11; // (int)((int(*)(int a1))&FUN_11437570)
+    int v12; // (int)((int(*)(int a1))&FUN_11437570)
+    int v13; // (int)((int(*)(int a1))&FUN_11437570)
+    int v14; // (int)((int(*)(int a1))&FUN_11437570)
+    int v15; // (int)((int(*)(int a1))&FUN_11437570)
+    int v16; // (int)((int(*)(int a1))&FUN_11437570)
+    int v17; // (int)&FUN_114375ad
+    int v18; // (int)&FUN_11437599
+    if (*(int *)(v4 + 4) == (int)(v2)) {
+        v18 = (int)(*(int *)(a1 + 8));
+        v5 = (int)(v18);
+        v7 = (int)(v18);
+        v14 = (int)(v3);
+        if (v2 < 4) {
+            v8 = (int)(v7);
+            v11 = (int)(v1);
+            v15 = (int)(v14);
+            if (v14 == -4) {
+                goto lab_brk_11437570;
+            }
+        } else {
+            v13 = (int)(v3);
+            v10 = (int)(v1);
+            v6 = (int)(v5);
+            v8 = (int)(v6);
+            v11 = (int)(v10);
+            v15 = (int)(v13);
+            while (*(int *)(v10) == *(int *)(v6)) {
+                v17 = (int)(v13 - 4);
+                v14 = (int)(v17);
+                if (v13 < 4) {
+                    goto lab_brk_11437570;
+                }
+                v13 = (int)(v17);
+                v10 += 4;
+                v6 += 4;
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+            }
+        }
+        v12 = (int)(v11);
+        v9 = (int)(v8);
+        if (*(char *)(v12) == *(char *)(v9)) {
+            v16 = (int)(v15);
+            if (v16 == -3) {
+                goto lab_brk_11437570;
+            }
+            if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                if (v16 == -2) {
+                    goto lab_brk_11437570;
+                }
+                if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                    if (v16 == -1) {
+                        goto lab_brk_11437570;
+                    }
+                    if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                        goto lab_brk_11437570;
+                    }
+                }
+            }
+        }
+    }
+    int v19 = (int)(v4 + 20); // (int)&FUN_114375e4
+    int v20 = (int)(*(int *)v19); // (int)&FUN_114375e9
+    int v21 = (int)(v20); // (int)&FUN_114375ec
+    int result = (int)(0); // (int)&FUN_114375ec
+    while (v20 != 0) {
+        v4 = (int)(v19);
+        if (*(int *)(v4 + 4) == (int)(v2)) {
+            v18 = (int)(*(int *)(a1 + 8));
+            v5 = (int)(v18);
+            int v22 = (int)(v21); // (int)&FUN_1143759f
+            v7 = (int)(v18);
+            int v23 = (int)(v21); // (int)&FUN_1143759f
+            v14 = (int)(v3);
+            if (v2 < 4) {
+                v8 = (int)(v7);
+                v11 = (int)(v23);
+                v15 = (int)(v14);
+                result = (int)(v4);
+                if (v14 == -4) {
+                    break;
+                }
+            } else {
+                v13 = (int)(v3);
+                v10 = (int)(v22);
+                v6 = (int)(v5);
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+                while (*(int *)(v10) == *(int *)(v6)) {
+                    v17 = (int)(v13 - 4);
+                    v14 = (int)(v17);
+                    if (v13 < 4) {
+                        goto lab_brk_11437570;
+                    }
+                    v13 = (int)(v17);
+                    v10 += 4;
+                    v6 += 4;
+                    v8 = (int)(v6);
+                    v11 = (int)(v10);
+                    v15 = (int)(v13);
+                }
+            }
+            v12 = (int)(v11);
+            v9 = (int)(v8);
+            if (*(char *)(v12) == *(char *)(v9)) {
+                v16 = (int)(v15);
+                result = (int)(v4);
+                if (v16 == -3) {
+                    break;
+                }
+                if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                    result = (int)(v4);
+                    if (v16 == -2) {
+                        break;
+                    }
+                    if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                        result = (int)(v4);
+                        if (v16 == -1) {
+                            break;
+                        }
+                        result = (int)(v4);
+                        if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        v19 = (int)(v4 + 20);
+        v20 = (int)(*(int *)v19);
+        v21 = (int)(v20);
+        result = (int)(0);
+    }
+    return (int)(result);
+lab_brk_11437570: ;
+}
+
+// Reference entry 114376a0; body size 140 bytes.
+#line 1 "ENTRY_114376a0"
+int FUN_114376a0(int a1) {
+
+    if (a1 == 0) {
+        return (int)(0);
+    }
+    int v1 = (int)(*(int * *)(&PTR_DAT_11bff110)); // (int)&FUN_114376b3
+    if (v1 == 0) {
+        return (int)(0);
+    }
+    uint v2 = (uint)(*(int *)(a1 + 4)); // (int)&FUN_114376bc
+    int v3 = (int)(v2 - 4);
+    int v4 = (int)((int)&PTR_DAT_11bff110);
+    int v5; // (int)((int(*)(int a1))&FUN_114376a0)
+    int v6; // (int)((int(*)(int a1))&FUN_114376a0)
+    int v7; // (int)((int(*)(int a1))&FUN_114376a0)
+    int v8; // (int)((int(*)(int a1))&FUN_114376a0)
+    int v9; // (int)((int(*)(int a1))&FUN_114376a0)
+    int v10; // (int)((int(*)(int a1))&FUN_114376a0)
+    int v11; // (int)((int(*)(int a1))&FUN_114376a0)
+    int v12; // (int)((int(*)(int a1))&FUN_114376a0)
+    int v13; // (int)((int(*)(int a1))&FUN_114376a0)
+    int v14; // (int)((int(*)(int a1))&FUN_114376a0)
+    int v15; // (int)((int(*)(int a1))&FUN_114376a0)
+    int v16; // (int)((int(*)(int a1))&FUN_114376a0)
+    int v17; // (int)&FUN_114376dd
+    int v18; // (int)&FUN_114376c9
+    if (*(int *)(v4 + 4) == (int)(v2)) {
+        v18 = (int)(*(int *)(a1 + 8));
+        v5 = (int)(v18);
+        v7 = (int)(v18);
+        v14 = (int)(v3);
+        if (v2 < 4) {
+            v8 = (int)(v7);
+            v11 = (int)(v1);
+            v15 = (int)(v14);
+            if (v14 == -4) {
+                goto lab_brk_114376a0;
+            }
+        } else {
+            v13 = (int)(v3);
+            v10 = (int)(v1);
+            v6 = (int)(v5);
+            v8 = (int)(v6);
+            v11 = (int)(v10);
+            v15 = (int)(v13);
+            while (*(int *)(v10) == *(int *)(v6)) {
+                v17 = (int)(v13 - 4);
+                v14 = (int)(v17);
+                if (v13 < 4) {
+                    goto lab_brk_114376a0;
+                }
+                v13 = (int)(v17);
+                v10 += 4;
+                v6 += 4;
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+            }
+        }
+        v12 = (int)(v11);
+        v9 = (int)(v8);
+        if (*(char *)(v12) == *(char *)(v9)) {
+            v16 = (int)(v15);
+            if (v16 == -3) {
+                goto lab_brk_114376a0;
+            }
+            if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                if (v16 == -2) {
+                    goto lab_brk_114376a0;
+                }
+                if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                    if (v16 == -1) {
+                        goto lab_brk_114376a0;
+                    }
+                    if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                        goto lab_brk_114376a0;
+                    }
+                }
+            }
+        }
+    }
+    int v19 = (int)(v4 + 20); // (int)&FUN_11437714
+    int v20 = (int)(*(int *)v19); // (int)&FUN_11437719
+    int v21 = (int)(v20); // (int)&FUN_1143771c
+    int result = (int)(0); // (int)&FUN_1143771c
+    while (v20 != 0) {
+        v4 = (int)(v19);
+        if (*(int *)(v4 + 4) == (int)(v2)) {
+            v18 = (int)(*(int *)(a1 + 8));
+            v5 = (int)(v18);
+            int v22 = (int)(v21); // (int)&FUN_114376cf
+            v7 = (int)(v18);
+            int v23 = (int)(v21); // (int)&FUN_114376cf
+            v14 = (int)(v3);
+            if (v2 < 4) {
+                v8 = (int)(v7);
+                v11 = (int)(v23);
+                v15 = (int)(v14);
+                result = (int)(v4);
+                if (v14 == -4) {
+                    break;
+                }
+            } else {
+                v13 = (int)(v3);
+                v10 = (int)(v22);
+                v6 = (int)(v5);
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+                while (*(int *)(v10) == *(int *)(v6)) {
+                    v17 = (int)(v13 - 4);
+                    v14 = (int)(v17);
+                    if (v13 < 4) {
+                        goto lab_brk_114376a0;
+                    }
+                    v13 = (int)(v17);
+                    v10 += 4;
+                    v6 += 4;
+                    v8 = (int)(v6);
+                    v11 = (int)(v10);
+                    v15 = (int)(v13);
+                }
+            }
+            v12 = (int)(v11);
+            v9 = (int)(v8);
+            if (*(char *)(v12) == *(char *)(v9)) {
+                v16 = (int)(v15);
+                result = (int)(v4);
+                if (v16 == -3) {
+                    break;
+                }
+                if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                    result = (int)(v4);
+                    if (v16 == -2) {
+                        break;
+                    }
+                    if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                        result = (int)(v4);
+                        if (v16 == -1) {
+                            break;
+                        }
+                        result = (int)(v4);
+                        if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        v19 = (int)(v4 + 20);
+        v20 = (int)(*(int *)v19);
+        v21 = (int)(v20);
+        result = (int)(0);
+    }
+    return (int)(result);
+lab_brk_114376a0: ;
+}
+
+// Reference entry 11437750; body size 140 bytes.
+#line 1 "ENTRY_11437750"
+int FUN_11437750(int a1) {
+
+    if (a1 == 0) {
+        return (int)(0);
+    }
+    int v1 = (int)(*(int * *)(&PTR_DAT_11bff348)); // (int)&FUN_11437763
+    if (v1 == 0) {
+        return (int)(0);
+    }
+    uint v2 = (uint)(*(int *)(a1 + 4)); // (int)&FUN_1143776c
+    int v3 = (int)(v2 - 4);
+    int v4 = (int)((int)&PTR_DAT_11bff348);
+    int v5; // (int)((int(*)(int a1))&FUN_11437750)
+    int v6; // (int)((int(*)(int a1))&FUN_11437750)
+    int v7; // (int)((int(*)(int a1))&FUN_11437750)
+    int v8; // (int)((int(*)(int a1))&FUN_11437750)
+    int v9; // (int)((int(*)(int a1))&FUN_11437750)
+    int v10; // (int)((int(*)(int a1))&FUN_11437750)
+    int v11; // (int)((int(*)(int a1))&FUN_11437750)
+    int v12; // (int)((int(*)(int a1))&FUN_11437750)
+    int v13; // (int)((int(*)(int a1))&FUN_11437750)
+    int v14; // (int)((int(*)(int a1))&FUN_11437750)
+    int v15; // (int)((int(*)(int a1))&FUN_11437750)
+    int v16; // (int)((int(*)(int a1))&FUN_11437750)
+    int v17; // (int)&FUN_1143778d
+    int v18; // (int)&FUN_11437779
+    if (*(int *)(v4 || 4) == (int)(v2)) {
+        v18 = (int)(*(int *)(a1 + 8));
+        v5 = (int)(v18);
+        v7 = (int)(v18);
+        v14 = (int)(v3);
+        if (v2 < 4) {
+            v8 = (int)(v7);
+            v11 = (int)(v1);
+            v15 = (int)(v14);
+            if (v14 == -4) {
+                goto lab_brk_11437750;
+            }
+        } else {
+            v13 = (int)(v3);
+            v10 = (int)(v1);
+            v6 = (int)(v5);
+            v8 = (int)(v6);
+            v11 = (int)(v10);
+            v15 = (int)(v13);
+            while (*(int *)(v10) == *(int *)(v6)) {
+                v17 = (int)(v13 - 4);
+                v14 = (int)(v17);
+                if (v13 < 4) {
+                    goto lab_brk_11437750;
+                }
+                v13 = (int)(v17);
+                v10 += 4;
+                v6 += 4;
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+            }
+        }
+        v12 = (int)(v11);
+        v9 = (int)(v8);
+        if (*(char *)(v12) == *(char *)(v9)) {
+            v16 = (int)(v15);
+            if (v16 == -3) {
+                goto lab_brk_11437750;
+            }
+            if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                if (v16 == -2) {
+                    goto lab_brk_11437750;
+                }
+                if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                    if (v16 == -1) {
+                        goto lab_brk_11437750;
+                    }
+                    if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                        goto lab_brk_11437750;
+                    }
+                }
+            }
+        }
+    }
+    int v19 = (int)(v4 + 24); // (int)&FUN_114377c4
+    int v20 = (int)(*(int *)v19); // (int)&FUN_114377c9
+    int v21 = (int)(v20); // (int)&FUN_114377cc
+    int result = (int)(0); // (int)&FUN_114377cc
+    while (v20 != 0) {
+        v4 = (int)(v19);
+        if (*(int *)(v4 || 4) == (int)(v2)) {
+            v18 = (int)(*(int *)(a1 + 8));
+            v5 = (int)(v18);
+            int v22 = (int)(v21); // (int)&FUN_1143777f
+            v7 = (int)(v18);
+            int v23 = (int)(v21); // (int)&FUN_1143777f
+            v14 = (int)(v3);
+            if (v2 < 4) {
+                v8 = (int)(v7);
+                v11 = (int)(v23);
+                v15 = (int)(v14);
+                result = (int)(v4);
+                if (v14 == -4) {
+                    break;
+                }
+            } else {
+                v13 = (int)(v3);
+                v10 = (int)(v22);
+                v6 = (int)(v5);
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+                while (*(int *)(v10) == *(int *)(v6)) {
+                    v17 = (int)(v13 - 4);
+                    v14 = (int)(v17);
+                    if (v13 < 4) {
+                        goto lab_brk_11437750;
+                    }
+                    v13 = (int)(v17);
+                    v10 += 4;
+                    v6 += 4;
+                    v8 = (int)(v6);
+                    v11 = (int)(v10);
+                    v15 = (int)(v13);
+                }
+            }
+            v12 = (int)(v11);
+            v9 = (int)(v8);
+            if (*(char *)(v12) == *(char *)(v9)) {
+                v16 = (int)(v15);
+                result = (int)(v4);
+                if (v16 == -3) {
+                    break;
+                }
+                if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                    result = (int)(v4);
+                    if (v16 == -2) {
+                        break;
+                    }
+                    if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                        result = (int)(v4);
+                        if (v16 == -1) {
+                            break;
+                        }
+                        result = (int)(v4);
+                        if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        v19 = (int)(v4 + 24);
+        v20 = (int)(*(int *)v19);
+        v21 = (int)(v20);
+        result = (int)(0);
+    }
+    return (int)(result);
+lab_brk_11437750: ;
+}
+
+// Reference entry 11437950; body size 140 bytes.
+#line 1 "ENTRY_11437950"
+int FUN_11437950(int a1) {
+
+    if (a1 == 0) {
+        return (int)(0);
+    }
+    int v1 = (int)(*(int * *)(&PTR_DAT_11bfee68)); // (int)&FUN_11437963
+    if (v1 == 0) {
+        return (int)(0);
+    }
+    uint v2 = (uint)(*(int *)(a1 + 4)); // (int)&FUN_1143796c
+    int v3 = (int)(v2 - 4);
+    int v4 = (int)((int)&PTR_DAT_11bfee68);
+    int v5; // (int)((int(*)(int a1))&FUN_11437950)
+    int v6; // (int)((int(*)(int a1))&FUN_11437950)
+    int v7; // (int)((int(*)(int a1))&FUN_11437950)
+    int v8; // (int)((int(*)(int a1))&FUN_11437950)
+    int v9; // (int)((int(*)(int a1))&FUN_11437950)
+    int v10; // (int)((int(*)(int a1))&FUN_11437950)
+    int v11; // (int)((int(*)(int a1))&FUN_11437950)
+    int v12; // (int)((int(*)(int a1))&FUN_11437950)
+    int v13; // (int)((int(*)(int a1))&FUN_11437950)
+    int v14; // (int)((int(*)(int a1))&FUN_11437950)
+    int v15; // (int)((int(*)(int a1))&FUN_11437950)
+    int v16; // (int)((int(*)(int a1))&FUN_11437950)
+    int v17; // (int)&FUN_1143798d
+    int v18; // (int)&FUN_11437979
+    if (*(int *)(v4 + 4) == (int)(v2)) {
+        v18 = (int)(*(int *)(a1 + 8));
+        v5 = (int)(v18);
+        v7 = (int)(v18);
+        v14 = (int)(v3);
+        if (v2 < 4) {
+            v8 = (int)(v7);
+            v11 = (int)(v1);
+            v15 = (int)(v14);
+            if (v14 == -4) {
+                goto lab_brk_11437950;
+            }
+        } else {
+            v13 = (int)(v3);
+            v10 = (int)(v1);
+            v6 = (int)(v5);
+            v8 = (int)(v6);
+            v11 = (int)(v10);
+            v15 = (int)(v13);
+            while (*(int *)(v10) == *(int *)(v6)) {
+                v17 = (int)(v13 - 4);
+                v14 = (int)(v17);
+                if (v13 < 4) {
+                    goto lab_brk_11437950;
+                }
+                v13 = (int)(v17);
+                v10 += 4;
+                v6 += 4;
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+            }
+        }
+        v12 = (int)(v11);
+        v9 = (int)(v8);
+        if (*(char *)(v12) == *(char *)(v9)) {
+            v16 = (int)(v15);
+            if (v16 == -3) {
+                goto lab_brk_11437950;
+            }
+            if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                if (v16 == -2) {
+                    goto lab_brk_11437950;
+                }
+                if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                    if (v16 == -1) {
+                        goto lab_brk_11437950;
+                    }
+                    if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                        goto lab_brk_11437950;
+                    }
+                }
+            }
+        }
+    }
+    int v19 = (int)(v4 + 20); // (int)&FUN_114379c4
+    int v20 = (int)(*(int *)v19); // (int)&FUN_114379c9
+    int v21 = (int)(v20); // (int)&FUN_114379cc
+    int result = (int)(0); // (int)&FUN_114379cc
+    while (v20 != 0) {
+        v4 = (int)(v19);
+        if (*(int *)(v4 + 4) == (int)(v2)) {
+            v18 = (int)(*(int *)(a1 + 8));
+            v5 = (int)(v18);
+            int v22 = (int)(v21); // (int)&FUN_1143797f
+            v7 = (int)(v18);
+            int v23 = (int)(v21); // (int)&FUN_1143797f
+            v14 = (int)(v3);
+            if (v2 < 4) {
+                v8 = (int)(v7);
+                v11 = (int)(v23);
+                v15 = (int)(v14);
+                result = (int)(v4);
+                if (v14 == -4) {
+                    break;
+                }
+            } else {
+                v13 = (int)(v3);
+                v10 = (int)(v22);
+                v6 = (int)(v5);
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+                while (*(int *)(v10) == *(int *)(v6)) {
+                    v17 = (int)(v13 - 4);
+                    v14 = (int)(v17);
+                    if (v13 < 4) {
+                        goto lab_brk_11437950;
+                    }
+                    v13 = (int)(v17);
+                    v10 += 4;
+                    v6 += 4;
+                    v8 = (int)(v6);
+                    v11 = (int)(v10);
+                    v15 = (int)(v13);
+                }
+            }
+            v12 = (int)(v11);
+            v9 = (int)(v8);
+            if (*(char *)(v12) == *(char *)(v9)) {
+                v16 = (int)(v15);
+                result = (int)(v4);
+                if (v16 == -3) {
+                    break;
+                }
+                if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                    result = (int)(v4);
+                    if (v16 == -2) {
+                        break;
+                    }
+                    if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                        result = (int)(v4);
+                        if (v16 == -1) {
+                            break;
+                        }
+                        result = (int)(v4);
+                        if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        v19 = (int)(v4 + 20);
+        v20 = (int)(*(int *)v19);
+        v21 = (int)(v20);
+        result = (int)(0);
+    }
+    return (int)(result);
+lab_brk_11437950: ;
+}
+
+// Reference entry 11437a00; body size 140 bytes.
+#line 1 "ENTRY_11437a00"
+int FUN_11437a00(int a1) {
+
+    if (a1 == 0) {
+        return (int)(0);
+    }
+    int v1 = (int)(*(int * *)(&PTR_DAT_11bfecc0)); // (int)&FUN_11437a13
+    if (v1 == 0) {
+        return (int)(0);
+    }
+    uint v2 = (uint)(*(int *)(a1 + 4)); // (int)&FUN_11437a1c
+    int v3 = (int)(v2 - 4);
+    int v4 = (int)((int)&PTR_DAT_11bfecc0);
+    int v5; // (int)((int(*)(int a1))&FUN_11437a00)
+    int v6; // (int)((int(*)(int a1))&FUN_11437a00)
+    int v7; // (int)((int(*)(int a1))&FUN_11437a00)
+    int v8; // (int)((int(*)(int a1))&FUN_11437a00)
+    int v9; // (int)((int(*)(int a1))&FUN_11437a00)
+    int v10; // (int)((int(*)(int a1))&FUN_11437a00)
+    int v11; // (int)((int(*)(int a1))&FUN_11437a00)
+    int v12; // (int)((int(*)(int a1))&FUN_11437a00)
+    int v13; // (int)((int(*)(int a1))&FUN_11437a00)
+    int v14; // (int)((int(*)(int a1))&FUN_11437a00)
+    int v15; // (int)((int(*)(int a1))&FUN_11437a00)
+    int v16; // (int)((int(*)(int a1))&FUN_11437a00)
+    int v17; // (int)&FUN_11437a3d
+    int v18; // (int)&FUN_11437a29
+    if (*(int *)(v4 + 4) == (int)(v2)) {
+        v18 = (int)(*(int *)(a1 + 8));
+        v5 = (int)(v18);
+        v7 = (int)(v18);
+        v14 = (int)(v3);
+        if (v2 < 4) {
+            v8 = (int)(v7);
+            v11 = (int)(v1);
+            v15 = (int)(v14);
+            if (v14 == -4) {
+                goto lab_brk_11437a00;
+            }
+        } else {
+            v13 = (int)(v3);
+            v10 = (int)(v1);
+            v6 = (int)(v5);
+            v8 = (int)(v6);
+            v11 = (int)(v10);
+            v15 = (int)(v13);
+            while (*(int *)(v10) == *(int *)(v6)) {
+                v17 = (int)(v13 - 4);
+                v14 = (int)(v17);
+                if (v13 < 4) {
+                    goto lab_brk_11437a00;
+                }
+                v13 = (int)(v17);
+                v10 += 4;
+                v6 += 4;
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+            }
+        }
+        v12 = (int)(v11);
+        v9 = (int)(v8);
+        if (*(char *)(v12) == *(char *)(v9)) {
+            v16 = (int)(v15);
+            if (v16 == -3) {
+                goto lab_brk_11437a00;
+            }
+            if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                if (v16 == -2) {
+                    goto lab_brk_11437a00;
+                }
+                if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                    if (v16 == -1) {
+                        goto lab_brk_11437a00;
+                    }
+                    if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                        goto lab_brk_11437a00;
+                    }
+                }
+            }
+        }
+    }
+    int v19 = (int)(v4 + 20); // (int)&FUN_11437a74
+    int v20 = (int)(*(int *)v19); // (int)&FUN_11437a79
+    int v21 = (int)(v20); // (int)&FUN_11437a7c
+    int result = (int)(0); // (int)&FUN_11437a7c
+    while (v20 != 0) {
+        v4 = (int)(v19);
+        if (*(int *)(v4 + 4) == (int)(v2)) {
+            v18 = (int)(*(int *)(a1 + 8));
+            v5 = (int)(v18);
+            int v22 = (int)(v21); // (int)&FUN_11437a2f
+            v7 = (int)(v18);
+            int v23 = (int)(v21); // (int)&FUN_11437a2f
+            v14 = (int)(v3);
+            if (v2 < 4) {
+                v8 = (int)(v7);
+                v11 = (int)(v23);
+                v15 = (int)(v14);
+                result = (int)(v4);
+                if (v14 == -4) {
+                    break;
+                }
+            } else {
+                v13 = (int)(v3);
+                v10 = (int)(v22);
+                v6 = (int)(v5);
+                v8 = (int)(v6);
+                v11 = (int)(v10);
+                v15 = (int)(v13);
+                while (*(int *)(v10) == *(int *)(v6)) {
+                    v17 = (int)(v13 - 4);
+                    v14 = (int)(v17);
+                    if (v13 < 4) {
+                        goto lab_brk_11437a00;
+                    }
+                    v13 = (int)(v17);
+                    v10 += 4;
+                    v6 += 4;
+                    v8 = (int)(v6);
+                    v11 = (int)(v10);
+                    v15 = (int)(v13);
+                }
+            }
+            v12 = (int)(v11);
+            v9 = (int)(v8);
+            if (*(char *)(v12) == *(char *)(v9)) {
+                v16 = (int)(v15);
+                result = (int)(v4);
+                if (v16 == -3) {
+                    break;
+                }
+                if (*(char *)((v12 + 1)) == *(char *)((v9 + 1))) {
+                    result = (int)(v4);
+                    if (v16 == -2) {
+                        break;
+                    }
+                    if (*(char *)((v12 + 2)) == *(char *)((v9 + 2))) {
+                        result = (int)(v4);
+                        if (v16 == -1) {
+                            break;
+                        }
+                        result = (int)(v4);
+                        if (*(char *)((v12 + 3)) == *(char *)((v9 + 3))) {
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        v19 = (int)(v4 + 20);
+        v20 = (int)(*(int *)v19);
+        v21 = (int)(v20);
+        result = (int)(0);
+    }
+    return (int)(result);
+lab_brk_11437a00: ;
 }
 
 // Reference entry 11438720; body size 74 bytes.
@@ -9610,7 +11658,7 @@ char *v17 = (char *)((char)((char *)(v14 + 3))); // (int)&FUN_114898ad
     return (int)(result);
 }
 
-// Reference entry 1148a46a; body size 39 bytes.
+// Reference entry 1148a46a; body size 11 bytes.
 #line 1 "ENTRY_1148a46a"
 int FUN_1148a46a(void) {
 

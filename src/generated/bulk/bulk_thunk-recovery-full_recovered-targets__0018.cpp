@@ -273,8 +273,6 @@ extern undefined1 LAB_116cf720[];
 extern undefined1 LAB_116cfec0[];
 extern undefined1 LAB_116d4e00[];
 extern undefined1 LAB_116d7be0[];
-extern int *stack0x00000004;
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_10bd1ae0(undefined4 param_1);
 template<class... A> int FUN_10bd1ae0(A...);
@@ -13194,7 +13192,7 @@ undefined4 __fastcall FUN_10bf05c0(undefined4 *param_1)
 
 void __fastcall FUN_10bf05d0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
-{
+{ int stack0x00000004;
  try {
   if (*(int **)(param_1 + 0x24) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 0x24) + 8))(&stack0x00000004);

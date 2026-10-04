@@ -398,7 +398,6 @@ extern undefined1 LAB_1154fc60[];
 extern undefined1 LAB_115e0920[];
 extern undefined1 LAB_115e0ff0[];
 extern undefined1 LAB_1172d640[];
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void * FUN_106bcd90(uint param_1);
 template<class... A> int FUN_106bcd90(A...);

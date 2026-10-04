@@ -272,7 +272,9 @@ def reference_arity(source):
             code = function_bytes(data, entry, size, base, sections)
             pops = [int(i.operands[0].imm) if i.operands else 0
                     for i in disassembler.disasm(code, 0) if i.mnemonic == 'ret']
-            if len(pops) != 1 or pops[0] <= 0 or pops[0] % 4:
+            # Every epilogue copy must clean the same stack amount; mixed
+            # ret N/ret means the arity cannot be inferred.
+            if len(set(pops)) != 1 or pops[0] <= 0 or pops[0] % 4:
                 continue
             need = pops[0] // 4
             present = len(params)
@@ -315,7 +317,7 @@ def reference_arity(source):
         code = function_bytes(data, entry, size, base, sections)
         pops = [int(i.operands[0].imm) if i.operands else 0
                 for i in disassembler.disasm(code, 0) if i.mnemonic == 'ret']
-        if len(pops) != 1 or pops[0] <= 0 or pops[0] % 4:
+        if len(set(pops)) != 1 or pops[0] <= 0 or pops[0] % 4:
             continue
         need = pops[0] // 4
         present = len(params)

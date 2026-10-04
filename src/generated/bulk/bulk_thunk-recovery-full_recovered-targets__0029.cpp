@@ -1239,12 +1239,6 @@ extern int *PTR_s_array_12120538;
 extern int *PTR_s_https___www__119e5428;
 extern int *PTR_s_invalid_119e5a00;
 extern int *PTR_vftable_12120e90;
-extern int *stack0x00000000;
-extern int *stack0x00000008;
-extern int *stack0xfffff7e4;
-extern int *stack0xffffff78;
-extern int *stack0xfffffff4;
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 __fastcall FUN_11227aa0(undefined4 param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
 template<class... A> int FUN_11227aa0(A...);
@@ -12286,7 +12280,7 @@ undefined4 __fastcall FUN_11257bc0(int param_1)
 
 void FUN_11258350(undefined4 param_1,char *param_2,undefined4 param_3)
 
-{
+{ int stack0x00000000; int stack0xffffff78;
  try {
   char cVar1;
   char *pcVar2;
@@ -13230,7 +13224,7 @@ void FUN_11260f80(void)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_11260f90(undefined4 *param_2)
 {
-  int *param_1 = (int *)this;
+  int *param_1 = (int *)this; int stack0xfffff7e4;
  try {
   int iVar1;
   int *piVar2;
@@ -26669,7 +26663,7 @@ LAB_11291d41:
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ int __thiscall Recovered_Bulk::m_FUN_11291e80(undefined4 param_2)
 {
-  int param_1 = (int )this;
+  int param_1 = (int )this; int stack0xfffffff4;
  try {
   undefined4 uVar1;
   int iVar2;
@@ -26844,7 +26838,7 @@ void FUN_11293ae0(int param_1)
 
 void FUN_11293b10(undefined4 param_1)
 
-{
+{ int stack0x00000008;
  try {
   undefined4 *puVar1;
   int iVar2;
@@ -31139,7 +31133,7 @@ int * FUN_1129e5b0(int param_1,uint param_2)
 
 void FUN_1129e720(undefined4 *param_1)
 
-{
+{ int stack0x00000008;
  try {
   CHAR aCStack_804 [2024];
   undefined4 uStack_1c;
@@ -31541,7 +31535,7 @@ void FUN_112a0030(undefined4 param_1)
 
 undefined4 FUN_112a02e0(int *param_1)
 
-{
+{ int stack0x00000008;
  try {
   int iVar1;
   int iVar2;

@@ -822,8 +822,6 @@ extern undefined1 LAB_117c5e54[];
 extern undefined1 LAB_117c5efd[];
 extern int *PTR_DAT_12126b6c;
 extern int *PTR_s_AddTrackToFavorites_1211fcfc;
-extern int *stack0xfffffffc;
-extern int *stack0xffffffff;
 extern char s__u___DTLS_STATE_DISCONNECTED_119d2487[];
 extern void *ExceptionList;
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __fastcall FUN_1117e9a0(undefined4 *param_1);
@@ -8722,7 +8720,7 @@ int FUN_1118f870(int param_1)
 
 bool __fastcall FUN_1118f8c0(int param_1)
 
-{
+{ int stack0xffffffff;
  try {
   undefined1 *puVar1;
   
@@ -8741,7 +8739,7 @@ bool __fastcall FUN_1118f8c0(int param_1)
 
 bool __fastcall FUN_1118f8f0(int param_1)
 
-{
+{ int stack0xffffffff;
  try {
   undefined1 *puVar1;
   
@@ -9093,7 +9091,7 @@ int FUN_111904a0(int param_1)
 
 bool __fastcall FUN_11190570(int param_1)
 
-{
+{ int stack0xffffffff;
  try {
   char cVar1;
   
@@ -9308,7 +9306,7 @@ int __fastcall FUN_11192eb0(int param_1)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_11192ed0(undefined4 param_2)
 {
-  int param_1 = (int )this;
+  int param_1 = (int )this; int stack0xfffffffc;
  try {
   int iVar1;
   char cVar2;

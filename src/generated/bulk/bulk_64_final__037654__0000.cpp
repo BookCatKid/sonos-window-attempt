@@ -3912,6 +3912,7 @@ extern int *PTR_FlushFileBuffers_12122300;
 extern int *PTR_FlushViewOfFile_12122618;
 extern int *PTR_FormatMessageA_1212230c;
 extern int *PTR_FormatMessageW_12122318;
+extern int *PTR_GetCurrentProcessId_12122330;
 extern int *PTR_GetFileAttributesA_12122354;
 extern int *PTR_GetFileAttributesExW_1212236c;
 extern int *PTR_GetFileAttributesW_12122360;
@@ -3920,8 +3921,10 @@ extern int *PTR_GetFullPathNameW_12122390;
 extern int *PTR_GetLastError_1212239c;
 extern int *PTR_GetSystemInfo_121223b4;
 extern int *PTR_GetSystemTimeAsFileTime_121223cc;
+extern int *PTR_GetSystemTime_121223c0;
 extern int *PTR_GetTempPathA_121223d8;
 extern int *PTR_GetTempPathW_121223e4;
+extern int *PTR_GetTickCount_121223f0;
 extern int *PTR_GetVersionExA_121223fc;
 extern int *PTR_LAB_119f7614;
 extern int *PTR_LAB_119fbec4;
@@ -3934,6 +3937,7 @@ extern int *PTR_LockFile_12122498;
 extern int *PTR_MapViewOfFile_121224b0;
 extern int *PTR_MultiByteToWideChar_121224bc;
 extern int *PTR_OutputDebugStringA_121225c4;
+extern int *PTR_QueryPerformanceCounter_121224c8;
 extern int *PTR_ReadFile_121224d4;
 extern int *PTR_SetEndOfFile_121224e0;
 extern int *PTR_SetFilePointer_121224ec;
@@ -3957,11 +3961,6 @@ extern int *PTR_s_shared_12123448;
 extern int *PTR_s_sqlite_stat1_119f7e10;
 extern int *PTR_s_stream_error_11a03950;
 extern int *PTR_s_tbl_idx_stat_119f7e14;
-extern int *stack0x00000000;
-extern int *stack0x00000008;
-extern int *stack0x0000000c;
-extern int *stack0x00000010;
-extern int *stack0xffffffe0;
 extern char s_FOREIGN_KEY_constraint_failed_119fef50[];
 extern char s_Invalid_key_value_11a00624[];
 extern char s_SQLite_format_3_119f8008[];
@@ -4058,6 +4057,8 @@ void FUN_112fea20(int *param_1);
 template<class... A> int FUN_112fea20(A...);
 undefined4 FUN_112feb70(int param_1,byte *param_2,int param_3,undefined4 param_4);
 template<class... A> int FUN_112feb70(A...);
+void FUN_112fef90(undefined4 param_1,size_t param_2,void *param_3);
+template<class... A> int FUN_112fef90(A...);
 undefined4 FUN_112ff210(longlong *param_1);
 template<class... A> int FUN_112ff210(A...);
 undefined4 FUN_112ff270(double *param_1);
@@ -10276,6 +10277,136 @@ LAB_112fede7:
 }
 
 
+// Reference entry 112fef90; body size 453 bytes.
+#line 1 "ENTRY_112fef90"
+
+void FUN_112fef90(undefined4 param_1,size_t param_2,void *param_3)
+
+{ int stack0xffffffe8; int stack0xffffffe9; int stack0xffffffea; int stack0xffffffeb;
+ try {
+  undefined4 uVar1;
+  int iVar2;
+  int iVar3;
+  undefined4 unaff_EBX;
+  undefined4 unaff_EBP;
+  int iVar4;
+  undefined1 local_14 [16];
+  uint local_4;
+  
+  local_4 = (uint)(DAT_12126b84 ^ (uint)(uint)&local_14);
+  memset(param_3,0,param_2);
+  (*(code *)PTR_GetSystemTime_121223c0)((uint)&local_14);
+  iVar3 = (int)(0);
+  iVar4 = (int)(0);
+  do {
+    *(byte*)(iVar4 + (int)param_3) = (byte)(*(byte *)(iVar4 + (int)param_3) ^ (&stack0xffffffe8)[iVar3]);
+    iVar2 = (int)(0);
+    if (iVar4 + 1 < (int)param_2) {
+      iVar2 = (int)(iVar4 + 1);
+    }
+    *(byte*)(iVar2 + (int)param_3) = (byte)(*(byte *)(iVar2 + (int)param_3) ^ (&stack0xffffffe9)[iVar3]);
+    iVar4 = (int)(0);
+    if (iVar2 + 1 < (int)param_2) {
+      iVar4 = (int)(iVar2 + 1);
+    }
+    *(byte*)(iVar4 + (int)param_3) = (byte)(*(byte *)(iVar4 + (int)param_3) ^ (&stack0xffffffea)[iVar3]);
+    iVar2 = (int)(0);
+    if (iVar4 + 1 < (int)param_2) {
+      iVar2 = (int)(iVar4 + 1);
+    }
+    *(byte*)(iVar2 + (int)param_3) = (byte)(*(byte *)(iVar2 + (int)param_3) ^ (&stack0xffffffeb)[iVar3]);
+    iVar4 = (int)(0);
+    if (iVar2 + 1 < (int)param_2) {
+      iVar4 = (int)(iVar2 + 1);
+    }
+    iVar3 = (int)(iVar3 + 4);
+  } while (iVar3 < 0x10);
+  uVar1 = (undefined4)((*(code *)PTR_GetCurrentProcessId_12122330)(), 0);
+  *(byte*)(iVar4 + (int)param_3) = (byte)(*(byte *)(iVar4 + (int)param_3) ^ (byte)uVar1);
+  iVar3 = (int)(0);
+  if (iVar4 + 1 < (int)param_2) {
+    iVar3 = (int)(iVar4 + 1);
+  }
+  *(byte*)(iVar3 + (int)param_3) = (byte)(*(byte *)(iVar3 + (int)param_3) ^ (byte)((uint)uVar1 >> 8));
+  iVar4 = (int)(0);
+  if (iVar3 + 1 < (int)param_2) {
+    iVar4 = (int)(iVar3 + 1);
+  }
+  *(byte*)(iVar4 + (int)param_3) = (byte)(*(byte *)(iVar4 + (int)param_3) ^ (byte)((uint)uVar1 >> 0x10));
+  iVar3 = (int)(0);
+  if (iVar4 + 1 < (int)param_2) {
+    iVar3 = (int)(iVar4 + 1);
+  }
+  *(byte*)(iVar3 + (int)param_3) = (byte)(*(byte *)(iVar3 + (int)param_3) ^ (byte)((uint)uVar1 >> 0x18));
+  iVar4 = (int)(0);
+  if (iVar3 + 1 < (int)param_2) {
+    iVar4 = (int)(iVar3 + 1);
+  }
+  uVar1 = (undefined4)((*(code *)PTR_GetTickCount_121223f0)(), 0);
+  *(byte*)(iVar4 + (int)param_3) = (byte)(*(byte *)(iVar4 + (int)param_3) ^ (byte)uVar1);
+  iVar3 = (int)(0);
+  if (iVar4 + 1 < (int)param_2) {
+    iVar3 = (int)(iVar4 + 1);
+  }
+  *(byte*)(iVar3 + (int)param_3) = (byte)(*(byte *)(iVar3 + (int)param_3) ^ (byte)((uint)uVar1 >> 8));
+  iVar4 = (int)(0);
+  if (iVar3 + 1 < (int)param_2) {
+    iVar4 = (int)(iVar3 + 1);
+  }
+  *(byte*)(iVar4 + (int)param_3) = (byte)(*(byte *)(iVar4 + (int)param_3) ^ (byte)((uint)uVar1 >> 0x10));
+  iVar3 = (int)(0);
+  if (iVar4 + 1 < (int)param_2) {
+    iVar3 = (int)(iVar4 + 1);
+  }
+  *(byte*)(iVar3 + (int)param_3) = (byte)(*(byte *)(iVar3 + (int)param_3) ^ (byte)((uint)uVar1 >> 0x18));
+  iVar4 = (int)(0);
+  if (iVar3 + 1 < (int)param_2) {
+    iVar4 = (int)(iVar3 + 1);
+  }
+  (*(code *)PTR_QueryPerformanceCounter_121224c8)(&stack0xffffffe8);
+  *(byte*)(iVar4 + (int)param_3) = (byte)(*(byte *)(iVar4 + (int)param_3) ^ (byte)unaff_EBP);
+  iVar3 = (int)(0);
+  if (iVar4 + 1 < (int)param_2) {
+    iVar3 = (int)(iVar4 + 1);
+  }
+  *(byte*)(iVar3 + (int)param_3) = (byte)(*(byte *)(iVar3 + (int)param_3) ^ (byte)((uint)unaff_EBP >> 8));
+  iVar4 = (int)(0);
+  if (iVar3 + 1 < (int)param_2) {
+    iVar4 = (int)(iVar3 + 1);
+  }
+  *(byte*)(iVar4 + (int)param_3) = (byte)(*(byte *)(iVar4 + (int)param_3) ^ (byte)((uint)unaff_EBP >> 0x10));
+  iVar3 = (int)(0);
+  if (iVar4 + 1 < (int)param_2) {
+    iVar3 = (int)(iVar4 + 1);
+  }
+  *(byte*)(iVar3 + (int)param_3) = (byte)(*(byte *)(iVar3 + (int)param_3) ^ (byte)((uint)unaff_EBP >> 0x18));
+  iVar4 = (int)(0);
+  if (iVar3 + 1 < (int)param_2) {
+    iVar4 = (int)(iVar3 + 1);
+  }
+  *(byte*)(iVar4 + (int)param_3) = (byte)(*(byte *)(iVar4 + (int)param_3) ^ (byte)unaff_EBX);
+  iVar3 = (int)(0);
+  if (iVar4 + 1 < (int)param_2) {
+    iVar3 = (int)(iVar4 + 1);
+  }
+  *(byte*)(iVar3 + (int)param_3) = (byte)(*(byte *)(iVar3 + (int)param_3) ^ (byte)((uint)unaff_EBX >> 8));
+  iVar4 = (int)(0);
+  if (iVar3 + 1 < (int)param_2) {
+    iVar4 = (int)(iVar3 + 1);
+  }
+  *(byte*)(iVar4 + (int)param_3) = (byte)(*(byte *)(iVar4 + (int)param_3) ^ (byte)((uint)unaff_EBX >> 0x10));
+  iVar3 = (int)(0);
+  if (iVar4 + 1 < (int)param_2) {
+    iVar3 = (int)(iVar4 + 1);
+  }
+  *(byte*)(iVar3 + (int)param_3) = (byte)(*(byte *)(iVar3 + (int)param_3) ^ (byte)((uint)unaff_EBX >> 0x18));
+  thunk_FUN_1148ac28();
+  return;
+
+ } catch (...) { }
+}
+
+
 // Reference entry 112ff210; body size 65 bytes.
 #line 1 "ENTRY_112ff210"
 
@@ -15339,7 +15470,7 @@ byte * FUN_1130a770(int param_1,int param_2)
 
 void FUN_1130a8f0(int param_1,undefined4 param_2)
 
-{
+{ int stack0x0000000c;
  try {
   int iVar1;
   
@@ -20605,7 +20736,7 @@ LAB_113138cd:
 
 undefined4 FUN_11313aa0(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
-{
+{ int stack0x00000010;
  try {
   int iVar1;
   undefined4 uVar2;
@@ -48788,7 +48919,7 @@ void FUN_11345e50(int *param_1,uint param_2)
 
 void FUN_11345ed0(int *param_1,undefined4 param_2)
 
-{
+{ int stack0x0000000c;
  try {
   int iVar1;
   int iVar2;
@@ -48819,7 +48950,7 @@ void FUN_11345ed0(int *param_1,undefined4 param_2)
 
 void FUN_11345f80(int *param_1,uint param_2,int param_3)
 
-{
+{ int stack0x00000010;
  try {
   code *pcVar1;
   int iVar2;
@@ -60027,7 +60158,7 @@ void * FUN_11359810(undefined4 param_1,undefined4 *param_2)
 
 void FUN_11359890(int *param_1,undefined4 param_2)
 
-{
+{ int stack0x0000000c;
  try {
   int iVar1;
   int iVar2;
@@ -84216,7 +84347,7 @@ LAB_113955e9:
 
 void FUN_11395910(undefined4 param_1,undefined4 param_2)
 
-{
+{ int stack0x0000000c;
  try {
   undefined1 *puVar1;
   undefined4 local_f0;
@@ -84256,7 +84387,7 @@ void FUN_11395910(undefined4 param_1,undefined4 param_2)
 
 void FUN_11395b10(undefined4 param_1)
 
-{
+{ int stack0x00000008;
  try {
   int iVar1;
   undefined4 local_64;
@@ -84725,7 +84856,7 @@ void FUN_11396af0(int *param_1)
 
 int FUN_11397320(int param_1,int param_2,undefined4 param_3)
 
-{
+{ int stack0x00000010;
  try {
   undefined4 local_18;
   int local_14;
@@ -109479,7 +109610,7 @@ LAB_113ce357:
 
 void FUN_113ce6d0(undefined4 param_1,undefined4 *param_2,int param_3,int param_4,int param_5)
 
-{
+{ int stack0x00000000;
  try {
   byte bVar1;
   int iVar2;
@@ -130413,7 +130544,7 @@ LAB_11402e86:
 
 void FUN_11402f60(undefined4 param_1,char *param_2)
 
-{
+{ int stack0xffffffe0;
  try {
   uint uVar1;
   uint uVar2;
@@ -130440,7 +130571,7 @@ void FUN_11402f60(undefined4 param_1,char *param_2)
     for (;(byte *)( pbStack_8) != (byte *)(0x0); pbStack_8 = *(byte **)(pbStack_8 + 0xc)) {
       if (((*pbStack_8 & 0x1f) == 7) && (*(uint *)(pbStack_8 + 4) == (uint)(uVar6))) {
         piVar5 = (int *)(*(int **)(pbStack_8 + 8), 0);
-        piVar7 = (int *)((int * *)(&stack0xffffffe0));
+        piVar7 = (int *)((int *)&stack0xffffffe0);
         uVar2 = (uint)(uVar6);
         while (uVar1 = (uint)(uVar2 - 4), 3 < uVar2) {
           if (*piVar5 != (int)(*(piVar7))) goto LAB_11402ff6;

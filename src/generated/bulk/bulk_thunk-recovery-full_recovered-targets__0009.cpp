@@ -398,8 +398,6 @@ extern undefined1 LAB_117c46c8[];
 extern undefined1 LAB_117c4c58[];
 extern int *PTR_DAT_12126b6c;
 extern int *PTR_s_https___www__119e5428;
-extern int *stack0x00000010;
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool __fastcall FUN_10516e90(int *param_1);
 template<class... A> int FUN_10516e90(A...);
@@ -16863,7 +16861,7 @@ void FUN_1059b0b0(undefined4 param_1)
 
 int FUN_1059b380(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
-{
+{ int stack0x00000010;
  try {
   undefined4 *puVar1;
   int iVar2;

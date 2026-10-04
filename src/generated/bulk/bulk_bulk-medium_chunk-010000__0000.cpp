@@ -694,8 +694,6 @@ extern undefined1 LAB_116f910e[];
 extern undefined1 LAB_11704550[];
 extern undefined1 LAB_1170f170[];
 extern int *PTR_FUN_12119fa0;
-extern int *stack0x00000004;
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 void __fastcall FUN_10befff0(undefined4 *param_1);
 template<class... A> int FUN_10befff0(A...);
@@ -3410,7 +3408,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10bfe5f0(int *param_2)
 
 void __fastcall FUN_10bfe9e0(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -16142,7 +16140,7 @@ void __fastcall FUN_10cdf240(int param_1, unsigned int recovered_unused_stack_0,
 
 void FUN_10cdfa20(void)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -16838,7 +16836,7 @@ SCStr * __stdcall FUN_10ce42a0(SCStr *param_1)
 
 void __fastcall FUN_10ce4550(int param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   undefined4 *puVar1;
   int *piVar2;
@@ -18163,7 +18161,7 @@ void __stdcall FUN_10cf4ac0(undefined4 *param_1)
 
 void __stdcall FUN_10cf4ae0(unsigned int recovered_unused_stack_0)
 
-{
+{ int stack0x00000004;
  try {
   undefined1 local_8 [8];
   
@@ -18179,7 +18177,7 @@ void __stdcall FUN_10cf4ae0(unsigned int recovered_unused_stack_0)
 
 void __stdcall FUN_10cf5110(unsigned int recovered_unused_stack_0)
 
-{
+{ int stack0x00000004;
  try {
   undefined1 local_8 [8];
   
@@ -18224,7 +18222,7 @@ void __thiscall Recovered_Bulk::m_FUN_10cf5250(int *param_2)
 
 void __stdcall FUN_10cf53c0(unsigned int recovered_unused_stack_0)
 
-{
+{ int stack0x00000004;
  try {
   thunk_FUN_10cf4bb0(&stack0x00000004);
   return;
@@ -20894,7 +20892,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d19cf0(int *param_2)
 
 void __fastcall FUN_10d1a530(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;
@@ -24231,7 +24229,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10d4a5b0(undefined4 *param_2)
 
 void __fastcall FUN_10d4b930(int *param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   void *local_10;
   undefined1 *puStack_c;

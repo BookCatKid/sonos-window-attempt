@@ -309,7 +309,6 @@ extern undefined1 LAB_102f0004[];
 extern undefined1 LAB_102f002b[];
 extern undefined1 LAB_115276c0[];
 extern undefined1 LAB_117a83c4[];
-extern int *stack0xfffffffc;
 extern void *ExceptionList;
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ bool __fastcall FUN_102ab250(int *param_1);
 template<class... A> int FUN_102ab250(A...);
@@ -20338,7 +20337,7 @@ void * FUN_102f0d50(uint param_1)
 
 void __fastcall FUN_102f0fe0(int param_1)
 
-{
+{ int stack0xfffffffc;
  try {
   int iVar1;
   void *pvVar2;
