@@ -118,6 +118,20 @@ extern "C" void __security_check_cookie(size_t);
 extern "C" int __security_cookie;
 struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); template<class... A> int int_allocRep(A...) { return 0; } static int op_ctor(...) { return 0; } };
 using namespace std;
+extern int FUN_10b77d30(...);
+extern int FUN_10d0b170(...);
+extern int FUN_11814440(...);
+extern int FUN_118144b0(...);
+extern int FUN_11814520(...);
+extern int FUN_11814590(...);
+extern int FUN_11814600(...);
+extern int FUN_11814670(...);
+extern int FUN_118146e0(...);
+extern int FUN_11814750(...);
+extern int FUN_118147c0(...);
+extern int FUN_11814830(...);
+extern int FUN_118148a0(...);
+extern int FUN_11814910(...);
 extern int FUN_11814980(...);
 extern int FUN_118149f0(...);
 extern int FUN_11814a60(...);
@@ -1014,6 +1028,7 @@ extern int FUN_1182dd10(...);
 extern int FUN_1182dd80(...);
 extern int FUN_1182ddf0(...);
 extern int FUN_1182de60(...);
+extern int FUN_1182ded0(...);
 extern int FUN_1182df50(...);
 extern int FUN_1182dfc0(...);
 extern int FUN_1182e030(...);
@@ -1104,6 +1119,7 @@ extern int FUN_11830760(...);
 extern int FUN_118307d0(...);
 extern int FUN_11830840(...);
 extern int FUN_11830930(...);
+extern int FUN_118309a0(...);
 extern int FUN_11830a20(...);
 extern int FUN_11830a90(...);
 extern int FUN_11830b00(...);
@@ -1116,6 +1132,7 @@ extern int FUN_11830da0(...);
 extern int FUN_11830e10(...);
 extern int FUN_11830e80(...);
 extern int FUN_11830f00(...);
+extern int FUN_11830f70(...);
 extern int FUN_11830fb0(...);
 extern int FUN_11831020(...);
 extern int FUN_11831090(...);
@@ -1233,6 +1250,7 @@ extern int FUN_11834340(...);
 extern int FUN_118343b0(...);
 extern int FUN_11834420(...);
 extern int FUN_11834490(...);
+extern int FUN_11834500(...);
 extern int FUN_11834680(...);
 extern int FUN_118346f0(...);
 extern int FUN_11834760(...);
@@ -1247,6 +1265,7 @@ extern int FUN_11834ae0(...);
 extern int FUN_11834b50(...);
 extern int FUN_11834c70(...);
 extern int FUN_11834ce0(...);
+extern int FUN_11834d60(...);
 extern int FUN_11834de0(...);
 extern int FUN_11834e50(...);
 extern int FUN_11834ec0(...);
@@ -1523,6 +1542,7 @@ extern int FUN_1183d100(...);
 extern int FUN_1183d170(...);
 extern int FUN_1183d1e0(...);
 extern int FUN_1183d250(...);
+extern int FUN_1183d2c0(...);
 extern int FUN_1183d2d0(...);
 extern int FUN_1183d340(...);
 extern int FUN_1183d3b0(...);
@@ -1600,25 +1620,8 @@ extern int FUN_1183f3e0(...);
 extern int FUN_1183f450(...);
 extern int FUN_1183f4c0(...);
 extern int FUN_1183f530(...);
-extern int FUN_1183f5a0(...);
-extern int FUN_1183f610(...);
-extern int FUN_1183f680(...);
-extern int FUN_1183f6f0(...);
-extern int FUN_1183f760(...);
-extern int FUN_1183f7d0(...);
-extern int FUN_1183f840(...);
-extern int FUN_1183f8b0(...);
-extern int FUN_1183f920(...);
-extern int FUN_1183f990(...);
-extern int FUN_1183fa00(...);
-extern int FUN_1183fa70(...);
-extern int FUN_1183fae0(...);
-extern int FUN_1183fb50(...);
-extern int FUN_1183fbc0(...);
-extern int FUN_1183fc30(...);
-extern int FUN_1183fca0(...);
-extern int FUN_1183fd10(...);
 extern int _atexit(...);
+extern int thunk_FUN_10be7520(...);
 extern int DAT_11881128;
 extern int DAT_11881e04;
 extern int DAT_11881e0c;
@@ -1629,8 +1632,20 @@ extern int DAT_11912030;
 extern int DAT_1191205c;
 extern int DAT_119146ec;
 extern int DAT_1191471c;
+extern int DAT_121a3088;
 extern int DAT_121a30e8;
+extern int DAT_121a30ec;
+extern int DAT_121a30f0;
 extern int DAT_121a30f4;
+extern int DAT_121a30f8;
+extern int DAT_121a30fc;
+extern int DAT_121a3100;
+extern int DAT_121a3104;
+extern int DAT_121a3108;
+extern int DAT_121a310c;
+extern int DAT_121a3110;
+extern int DAT_121a3114;
+extern int DAT_121a3118;
 extern int DAT_121a315c;
 extern int DAT_121a3160;
 extern int DAT_121a3164;
@@ -2525,6 +2540,7 @@ extern int DAT_121a4e98;
 extern int DAT_121a4ea8;
 extern int DAT_121a4eac;
 extern int DAT_121a4eb4;
+extern int DAT_121a4eb8;
 extern int DAT_121a4ec4;
 extern int DAT_121a4ec8;
 extern int DAT_121a4ed0;
@@ -2627,6 +2643,7 @@ extern int DAT_121a511c;
 extern int DAT_121a5120;
 extern int DAT_121a5124;
 extern int DAT_121a5128;
+extern int DAT_121a5138;
 extern int DAT_121a5140;
 extern int DAT_121a5144;
 extern int DAT_121a5148;
@@ -3031,6 +3048,7 @@ extern int DAT_121a5de4;
 extern int DAT_121a5de8;
 extern int DAT_121a5dec;
 extern int DAT_121a5df0;
+extern int DAT_121a5df4;
 extern int DAT_121a5dfc;
 extern int DAT_121a5e00;
 extern int DAT_121a5e04;
@@ -3106,29 +3124,11 @@ extern int DAT_121a5f68;
 extern int DAT_121a5f6c;
 extern int DAT_121a5f70;
 extern int DAT_121a5f74;
-extern int DAT_121a6044;
-extern int DAT_121a6048;
 extern int DAT_121a604c;
 extern int DAT_121a6050;
-extern int DAT_121a6054;
-extern int DAT_121a6058;
 extern int DAT_121a605c;
 extern int DAT_121a6060;
-extern int DAT_121a6064;
-extern int DAT_121a6068;
 extern int DAT_121a606c;
-extern int DAT_121a6070;
-extern int DAT_121a6084;
-extern int DAT_121a6088;
-extern int DAT_121a608c;
-extern int DAT_121a6090;
-extern int DAT_121a6094;
-extern int DAT_121a6098;
-extern int DAT_121a609c;
-extern int DAT_121a60a0;
-extern int DAT_121a60a4;
-extern int DAT_121a60a8;
-extern int DAT_121a60ac;
 extern char s_AllowlistFor_119196c4[];
 extern char s_CONTROL_DATA_11916040[];
 extern char s_CONTROL_PSK_DATA_11916074[];
@@ -3160,6 +3160,30 @@ extern char s_product_11881df0[];
 extern char s_serial_11881dfc[];
 extern char s_sneaky_118fcb4c[];
 extern char s_spooky_118fcb44[];
+void FUN_100bf230(void);
+template<class... A> int FUN_100bf230(A...);
+void FUN_100bf260(void);
+template<class... A> int FUN_100bf260(A...);
+void FUN_100bf290(void);
+template<class... A> int FUN_100bf290(A...);
+void FUN_100bf2c0(void);
+template<class... A> int FUN_100bf2c0(A...);
+void FUN_100bf2f0(void);
+template<class... A> int FUN_100bf2f0(A...);
+void FUN_100bf320(void);
+template<class... A> int FUN_100bf320(A...);
+void FUN_100bf350(void);
+template<class... A> int FUN_100bf350(A...);
+void FUN_100bf380(void);
+template<class... A> int FUN_100bf380(A...);
+void FUN_100bf3b0(void);
+template<class... A> int FUN_100bf3b0(A...);
+void FUN_100bf3e0(void);
+template<class... A> int FUN_100bf3e0(A...);
+void FUN_100bf410(void);
+template<class... A> int FUN_100bf410(A...);
+void FUN_100bf440(void);
+template<class... A> int FUN_100bf440(A...);
 void FUN_100bf470(void);
 template<class... A> int FUN_100bf470(A...);
 void FUN_100bf4a0(void);
@@ -4952,6 +4976,8 @@ void FUN_100cbaa0(void);
 template<class... A> int FUN_100cbaa0(A...);
 void FUN_100cbad0(void);
 template<class... A> int FUN_100cbad0(A...);
+void FUN_100cbb00(void);
+template<class... A> int FUN_100cbb00(A...);
 void FUN_100cbb50(void);
 template<class... A> int FUN_100cbb50(A...);
 void FUN_100cbb80(void);
@@ -5132,6 +5158,8 @@ void FUN_100cce50(void);
 template<class... A> int FUN_100cce50(A...);
 void FUN_100ccf90(void);
 template<class... A> int FUN_100ccf90(A...);
+void FUN_100ccfc0(void);
+template<class... A> int FUN_100ccfc0(A...);
 void FUN_100ccfd0(void);
 template<class... A> int FUN_100ccfd0(A...);
 void FUN_100cd000(void);
@@ -5156,6 +5184,8 @@ void FUN_100cd1b0(void);
 template<class... A> int FUN_100cd1b0(A...);
 void FUN_100cd1e0(void);
 template<class... A> int FUN_100cd1e0(A...);
+void FUN_100cd210(void);
+template<class... A> int FUN_100cd210(A...);
 void FUN_100cd230(void);
 template<class... A> int FUN_100cd230(A...);
 void FUN_100cd260(void);
@@ -5390,6 +5420,8 @@ void FUN_100ceee0(void);
 template<class... A> int FUN_100ceee0(A...);
 void FUN_100cef10(void);
 template<class... A> int FUN_100cef10(A...);
+void FUN_100cef40(void);
+template<class... A> int FUN_100cef40(A...);
 void FUN_100cefe0(void);
 template<class... A> int FUN_100cefe0(A...);
 void FUN_100cf010(void);
@@ -5418,6 +5450,8 @@ void FUN_100cfdd0(void);
 template<class... A> int FUN_100cfdd0(A...);
 void FUN_100cfe00(void);
 template<class... A> int FUN_100cfe00(A...);
+void FUN_100cfe30(void);
+template<class... A> int FUN_100cfe30(A...);
 void FUN_100cfe40(void);
 template<class... A> int FUN_100cfe40(A...);
 void FUN_100cfe70(void);
@@ -5970,6 +6004,8 @@ void FUN_100d3e50(void);
 template<class... A> int FUN_100d3e50(A...);
 void FUN_100d3e80(void);
 template<class... A> int FUN_100d3e80(A...);
+void FUN_100d3eb0(void);
+template<class... A> int FUN_100d3eb0(A...);
 void FUN_100d3ed0(void);
 template<class... A> int FUN_100d3ed0(A...);
 void FUN_100d3f00(void);
@@ -6124,42 +6160,102 @@ void FUN_100d5090(void);
 template<class... A> int FUN_100d5090(A...);
 void FUN_100d50c0(void);
 template<class... A> int FUN_100d50c0(A...);
-void FUN_100d50f0(void);
-template<class... A> int FUN_100d50f0(A...);
-void FUN_100d5120(void);
-template<class... A> int FUN_100d5120(A...);
-void FUN_100d5150(void);
-template<class... A> int FUN_100d5150(A...);
-void FUN_100d5180(void);
-template<class... A> int FUN_100d5180(A...);
-void FUN_100d51b0(void);
-template<class... A> int FUN_100d51b0(A...);
-void FUN_100d51e0(void);
-template<class... A> int FUN_100d51e0(A...);
-void FUN_100d5210(void);
-template<class... A> int FUN_100d5210(A...);
-void FUN_100d5240(void);
-template<class... A> int FUN_100d5240(A...);
-void FUN_100d5270(void);
-template<class... A> int FUN_100d5270(A...);
-void FUN_100d52a0(void);
-template<class... A> int FUN_100d52a0(A...);
-void FUN_100d52d0(void);
-template<class... A> int FUN_100d52d0(A...);
-void FUN_100d5300(void);
-template<class... A> int FUN_100d5300(A...);
-void FUN_100d5330(void);
-template<class... A> int FUN_100d5330(A...);
-void FUN_100d5360(void);
-template<class... A> int FUN_100d5360(A...);
-void FUN_100d5390(void);
-template<class... A> int FUN_100d5390(A...);
-void FUN_100d53c0(void);
-template<class... A> int FUN_100d53c0(A...);
-void FUN_100d53f0(void);
-template<class... A> int FUN_100d53f0(A...);
-void FUN_100d5420(void);
-template<class... A> int FUN_100d5420(A...);
+// Reference entry 100bf230; body size 27 bytes.
+#line 1 "ENTRY_100bf230"
+void FUN_100bf230(void)
+{
+  ((SCStr *)((SCStr *)&DAT_121a3088))->int_allocRep((char *)&DAT_11881128);
+  _atexit((void *)&FUN_11814440);
+}
+
+// Reference entry 100bf260; body size 27 bytes.
+#line 1 "ENTRY_100bf260"
+void FUN_100bf260(void)
+{
+  ((SCStr *)((SCStr *)&DAT_121a30ec))->int_allocRep((char *)&DAT_11881ff0);
+  _atexit((void *)&FUN_118144b0);
+}
+
+// Reference entry 100bf290; body size 27 bytes.
+#line 1 "ENTRY_100bf290"
+void FUN_100bf290(void)
+{
+  ((SCStr *)((SCStr *)&DAT_121a310c))->int_allocRep((char * *)(&s_locale_11881e34));
+  _atexit((void *)&FUN_11814520);
+}
+
+// Reference entry 100bf2c0; body size 27 bytes.
+#line 1 "ENTRY_100bf2c0"
+void FUN_100bf2c0(void)
+{
+  ((SCStr *)((SCStr *)&DAT_121a3110))->int_allocRep((char * *)(&s_nfcErrorMessage_1188d480));
+  _atexit((void *)&FUN_11814590);
+}
+
+// Reference entry 100bf2f0; body size 27 bytes.
+#line 1 "ENTRY_100bf2f0"
+void FUN_100bf2f0(void)
+{
+  ((SCStr *)((SCStr *)&DAT_121a3118))->int_allocRep((char * *)(&s_nfcScanData_1188d494));
+  _atexit((void *)&FUN_11814600);
+}
+
+// Reference entry 100bf320; body size 27 bytes.
+#line 1 "ENTRY_100bf320"
+void FUN_100bf320(void)
+{
+  ((SCStr *)((SCStr *)&DAT_121a3100))->int_allocRep((char * *)(&s_The_serial_number_of_the_product_11881e40));
+  _atexit((void *)&FUN_11814670);
+}
+
+// Reference entry 100bf350; body size 27 bytes.
+#line 1 "ENTRY_100bf350"
+void FUN_100bf350(void)
+{
+  ((SCStr *)((SCStr *)&DAT_121a30f0))->int_allocRep((char * *)(&s_product_11881df0));
+  _atexit((void *)&FUN_118146e0);
+}
+
+// Reference entry 100bf380; body size 27 bytes.
+#line 1 "ENTRY_100bf380"
+void FUN_100bf380(void)
+{
+  ((SCStr *)((SCStr *)&DAT_121a30fc))->int_allocRep((char * *)(&s_The_selected_room_name_11881f48));
+  _atexit((void *)&FUN_11814750);
+}
+
+// Reference entry 100bf3b0; body size 27 bytes.
+#line 1 "ENTRY_100bf3b0"
+void FUN_100bf3b0(void)
+{
+  ((SCStr *)((SCStr *)&DAT_121a3108))->int_allocRep((char *)&DAT_11881e04);
+  _atexit((void *)&FUN_118147c0);
+}
+
+// Reference entry 100bf3e0; body size 27 bytes.
+#line 1 "ENTRY_100bf3e0"
+void FUN_100bf3e0(void)
+{
+  ((SCStr *)((SCStr *)&DAT_121a3104))->int_allocRep((char * *)(&s_The_SSID_the_user_selected_this_p_11881fb0));
+  _atexit((void *)&FUN_11814830);
+}
+
+// Reference entry 100bf410; body size 27 bytes.
+#line 1 "ENTRY_100bf410"
+void FUN_100bf410(void)
+{
+  ((SCStr *)((SCStr *)&DAT_121a3114))->int_allocRep((char * *)(&s_serial_11881dfc));
+  _atexit((void *)&FUN_118148a0);
+}
+
+// Reference entry 100bf440; body size 27 bytes.
+#line 1 "ENTRY_100bf440"
+void FUN_100bf440(void)
+{
+  ((SCStr *)((SCStr *)&DAT_121a30f8))->int_allocRep((char *)&DAT_11881e0c);
+  _atexit((void *)&FUN_11814910);
+}
+
 // Reference entry 100bf470; body size 27 bytes.
 #line 1 "ENTRY_100bf470"
 void FUN_100bf470(void)
@@ -13328,6 +13424,14 @@ void FUN_100cbad0(void)
   _atexit((void *)&FUN_1182de60);
 }
 
+// Reference entry 100cbb00; body size 24 bytes.
+#line 1 "ENTRY_100cbb00"
+void FUN_100cbb00(void)
+{
+  FUN_10b77d30(&DAT_121a4eb8);
+  _atexit((void *)&FUN_1182ded0);
+}
+
 // Reference entry 100cbb50; body size 27 bytes.
 #line 1 "ENTRY_100cbb50"
 void FUN_100cbb50(void)
@@ -14048,6 +14152,13 @@ void FUN_100ccf90(void)
   _atexit((void *)&FUN_11830930);
 }
 
+// Reference entry 100ccfc0; body size 12 bytes.
+#line 1 "ENTRY_100ccfc0"
+void FUN_100ccfc0(void)
+{
+  _atexit((void *)&FUN_118309a0);
+}
+
 // Reference entry 100ccfd0; body size 27 bytes.
 #line 1 "ENTRY_100ccfd0"
 void FUN_100ccfd0(void)
@@ -14142,6 +14253,14 @@ void FUN_100cd1e0(void)
 {
   ((SCStr *)((SCStr *)&DAT_121a5104))->int_allocRep((char *)&DAT_11881128);
   _atexit((void *)&FUN_11830f00);
+}
+
+// Reference entry 100cd210; body size 24 bytes.
+#line 1 "ENTRY_100cd210"
+void FUN_100cd210(void)
+{
+  thunk_FUN_10be7520(&DAT_121a5138);
+  _atexit((void *)&FUN_11830f70);
 }
 
 // Reference entry 100cd230; body size 27 bytes.
@@ -15080,6 +15199,13 @@ void FUN_100cef10(void)
   _atexit((void *)&FUN_11834490);
 }
 
+// Reference entry 100cef40; body size 12 bytes.
+#line 1 "ENTRY_100cef40"
+void FUN_100cef40(void)
+{
+  _atexit((void *)&FUN_11834500);
+}
+
 // Reference entry 100cefe0; body size 27 bytes.
 #line 1 "ENTRY_100cefe0"
 void FUN_100cefe0(void)
@@ -15190,6 +15316,13 @@ void FUN_100cfe00(void)
 {
   ((SCStr *)((SCStr *)&DAT_121a55b8))->int_allocRep((char *)&DAT_11881128);
   _atexit((void *)&FUN_11834ce0);
+}
+
+// Reference entry 100cfe30; body size 12 bytes.
+#line 1 "ENTRY_100cfe30"
+void FUN_100cfe30(void)
+{
+  _atexit((void *)&FUN_11834d60);
 }
 
 // Reference entry 100cfe40; body size 27 bytes.
@@ -17400,6 +17533,14 @@ void FUN_100d3e80(void)
   _atexit((void *)&FUN_1183d250);
 }
 
+// Reference entry 100d3eb0; body size 24 bytes.
+#line 1 "ENTRY_100d3eb0"
+void FUN_100d3eb0(void)
+{
+  FUN_10d0b170(&DAT_121a5df4);
+  _atexit((void *)&FUN_1183d2c0);
+}
+
 // Reference entry 100d3ed0; body size 27 bytes.
 #line 1 "ENTRY_100d3ed0"
 void FUN_100d3ed0(void)
@@ -18014,148 +18155,4 @@ void FUN_100d50c0(void)
 {
   ((SCStr *)((SCStr *)&DAT_121a605c))->int_allocRep((char * *)(&s_The_selected_room_name_11881f48));
   _atexit((void *)&FUN_1183f530);
-}
-
-// Reference entry 100d50f0; body size 27 bytes.
-#line 1 "ENTRY_100d50f0"
-void FUN_100d50f0(void)
-{
-  ((SCStr *)((SCStr *)&DAT_121a6068))->int_allocRep((char *)&DAT_11881e04);
-  _atexit((void *)&FUN_1183f5a0);
-}
-
-// Reference entry 100d5120; body size 27 bytes.
-#line 1 "ENTRY_100d5120"
-void FUN_100d5120(void)
-{
-  ((SCStr *)((SCStr *)&DAT_121a6064))->int_allocRep((char * *)(&s_The_SSID_the_user_selected_this_p_11881fb0));
-  _atexit((void *)&FUN_1183f610);
-}
-
-// Reference entry 100d5150; body size 27 bytes.
-#line 1 "ENTRY_100d5150"
-void FUN_100d5150(void)
-{
-  ((SCStr *)((SCStr *)&DAT_121a6070))->int_allocRep((char * *)(&s_serial_11881dfc));
-  _atexit((void *)&FUN_1183f680);
-}
-
-// Reference entry 100d5180; body size 27 bytes.
-#line 1 "ENTRY_100d5180"
-void FUN_100d5180(void)
-{
-  ((SCStr *)((SCStr *)&DAT_121a6058))->int_allocRep((char *)&DAT_11881e0c);
-  _atexit((void *)&FUN_1183f6f0);
-}
-
-// Reference entry 100d51b0; body size 27 bytes.
-#line 1 "ENTRY_100d51b0"
-void FUN_100d51b0(void)
-{
-  ((SCStr *)((SCStr *)&DAT_121a6054))->int_allocRep((char * *)(&s_The_SSID_the_user_was_connected_t_11881f64));
-  _atexit((void *)&FUN_1183f760);
-}
-
-// Reference entry 100d51e0; body size 27 bytes.
-#line 1 "ENTRY_100d51e0"
-void FUN_100d51e0(void)
-{
-  ((SCStr *)((SCStr *)&DAT_121a6048))->int_allocRep((char * *)(&s_TagLifecycleSettingsStatus_11881e14));
-  _atexit((void *)&FUN_1183f7d0);
-}
-
-// Reference entry 100d5210; body size 27 bytes.
-#line 1 "ENTRY_100d5210"
-void FUN_100d5210(void)
-{
-  ((SCStr *)((SCStr *)&DAT_121a6044))->int_allocRep((char *)&DAT_11881128);
-  _atexit((void *)&FUN_1183f840);
-}
-
-// Reference entry 100d5240; body size 27 bytes.
-#line 1 "ENTRY_100d5240"
-void FUN_100d5240(void)
-{
-  ((SCStr *)((SCStr *)&DAT_121a6088))->int_allocRep((char *)&DAT_11881ff0);
-  _atexit((void *)&FUN_1183f8b0);
-}
-
-// Reference entry 100d5270; body size 27 bytes.
-#line 1 "ENTRY_100d5270"
-void FUN_100d5270(void)
-{
-  ((SCStr *)((SCStr *)&DAT_121a60a8))->int_allocRep((char * *)(&s_locale_11881e34));
-  _atexit((void *)&FUN_1183f920);
-}
-
-// Reference entry 100d52a0; body size 27 bytes.
-#line 1 "ENTRY_100d52a0"
-void FUN_100d52a0(void)
-{
-  ((SCStr *)((SCStr *)&DAT_121a609c))->int_allocRep((char * *)(&s_The_serial_number_of_the_product_11881e40));
-  _atexit((void *)&FUN_1183f990);
-}
-
-// Reference entry 100d52d0; body size 27 bytes.
-#line 1 "ENTRY_100d52d0"
-void FUN_100d52d0(void)
-{
-  ((SCStr *)((SCStr *)&DAT_121a608c))->int_allocRep((char * *)(&s_product_11881df0));
-  _atexit((void *)&FUN_1183fa00);
-}
-
-// Reference entry 100d5300; body size 27 bytes.
-#line 1 "ENTRY_100d5300"
-void FUN_100d5300(void)
-{
-  ((SCStr *)((SCStr *)&DAT_121a6098))->int_allocRep((char * *)(&s_The_selected_room_name_11881f48));
-  _atexit((void *)&FUN_1183fa70);
-}
-
-// Reference entry 100d5330; body size 27 bytes.
-#line 1 "ENTRY_100d5330"
-void FUN_100d5330(void)
-{
-  ((SCStr *)((SCStr *)&DAT_121a60a4))->int_allocRep((char *)&DAT_11881e04);
-  _atexit((void *)&FUN_1183fae0);
-}
-
-// Reference entry 100d5360; body size 27 bytes.
-#line 1 "ENTRY_100d5360"
-void FUN_100d5360(void)
-{
-  ((SCStr *)((SCStr *)&DAT_121a60a0))->int_allocRep((char * *)(&s_The_SSID_the_user_selected_this_p_11881fb0));
-  _atexit((void *)&FUN_1183fb50);
-}
-
-// Reference entry 100d5390; body size 27 bytes.
-#line 1 "ENTRY_100d5390"
-void FUN_100d5390(void)
-{
-  ((SCStr *)((SCStr *)&DAT_121a60ac))->int_allocRep((char * *)(&s_serial_11881dfc));
-  _atexit((void *)&FUN_1183fbc0);
-}
-
-// Reference entry 100d53c0; body size 27 bytes.
-#line 1 "ENTRY_100d53c0"
-void FUN_100d53c0(void)
-{
-  ((SCStr *)((SCStr *)&DAT_121a6094))->int_allocRep((char *)&DAT_11881e0c);
-  _atexit((void *)&FUN_1183fc30);
-}
-
-// Reference entry 100d53f0; body size 27 bytes.
-#line 1 "ENTRY_100d53f0"
-void FUN_100d53f0(void)
-{
-  ((SCStr *)((SCStr *)&DAT_121a6090))->int_allocRep((char * *)(&s_The_SSID_the_user_was_connected_t_11881f64));
-  _atexit((void *)&FUN_1183fca0);
-}
-
-// Reference entry 100d5420; body size 27 bytes.
-#line 1 "ENTRY_100d5420"
-void FUN_100d5420(void)
-{
-  ((SCStr *)((SCStr *)&DAT_121a6084))->int_allocRep((char * *)(&s_TagLifecycleSettingsStatus_11881e14));
-  _atexit((void *)&FUN_1183fd10);
 }
