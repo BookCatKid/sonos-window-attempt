@@ -119,6 +119,7 @@ extern "C" int __security_cookie;
 using namespace std;
 extern int FUN_1001645f(...);
 extern int FUN_1004068d(...);
+extern int FUN_10044021(...);
 extern int FUN_1004f60b(...);
 extern int FUN_10069308(...);
 extern int FUN_10080bf7(...);
@@ -299,6 +300,16 @@ extern int FUN_113f6d87(...);
 extern int FUN_113f6d9a(...);
 extern int FUN_113f6e0e(...);
 extern int FUN_113f6e81(...);
+extern int FUN_113f74d6(...);
+extern int FUN_113f7515(...);
+extern int FUN_113f7522(...);
+extern int FUN_113f7558(...);
+extern int FUN_113f755d(...);
+extern int FUN_113f7565(...);
+extern int FUN_113f7575(...);
+extern int FUN_113f7577(...);
+extern int FUN_113f758b(...);
+extern int FUN_113f7591(...);
 extern int FUN_113f80ef(...);
 extern int FUN_113f80f2(...);
 extern int FUN_113f8127(...);
@@ -435,6 +446,11 @@ extern int FUN_11402989(...);
 extern int FUN_11402999(...);
 extern int FUN_114029a5(...);
 extern int FUN_11402cb1(...);
+extern int FUN_114037f7(...);
+extern int FUN_114037fa(...);
+extern int FUN_11403810(...);
+extern int FUN_11403813(...);
+extern int FUN_1140383f(...);
 extern int FUN_11404c94(...);
 extern int FUN_11404c9c(...);
 extern int FUN_11404cb1(...);
@@ -588,6 +604,7 @@ extern int FUN_11426146(...);
 extern int FUN_1142618b(...);
 extern int FUN_11426d69(...);
 extern int FUN_114272c4(...);
+extern int FUN_1142a003(...);
 extern int FUN_1142a103(...);
 extern int FUN_1142a109(...);
 extern int FUN_1142a11e(...);
@@ -613,9 +630,29 @@ extern int FUN_1142c19e(...);
 extern int FUN_1142d8f0(...);
 extern int FUN_1142e094(...);
 extern int FUN_1142e4d4(...);
+extern int FUN_1142f960(...);
+extern int FUN_1142fc75(...);
+extern int FUN_1142fc78(...);
+extern int FUN_1142fc82(...);
+extern int FUN_1142fd1a(...);
+extern int FUN_1142fd3c(...);
+extern int FUN_1142fd45(...);
+extern int FUN_1142fd4d(...);
+extern int FUN_1142fd6c(...);
+extern int FUN_1142fd8d(...);
+extern int FUN_1142fd99(...);
+extern int FUN_1142fda3(...);
+extern int FUN_1142fe10(...);
 extern int FUN_1143040f(...);
 extern int FUN_1143042b(...);
 extern int FUN_114304a1(...);
+extern int FUN_114321fa(...);
+extern int FUN_114321fd(...);
+extern int FUN_11432204(...);
+extern int FUN_11432209(...);
+extern int FUN_11432210(...);
+extern int FUN_11432217(...);
+extern int FUN_1143224b(...);
 extern int FUN_114322ce(...);
 extern int FUN_11432484(...);
 extern int FUN_1143351b(...);
@@ -629,7 +666,10 @@ extern int FUN_114335a3(...);
 extern int FUN_114335b2(...);
 extern int FUN_114335d0(...);
 extern int FUN_114335e0(...);
+extern int FUN_11433645(...);
 extern int FUN_114336c0(...);
+extern int FUN_11433735(...);
+extern int FUN_114337a5(...);
 extern int FUN_1143381b(...);
 extern int FUN_1143381e(...);
 extern int FUN_11433822(...);
@@ -669,6 +709,12 @@ extern int FUN_11438735(...);
 extern int FUN_11438744(...);
 extern int FUN_1143874a(...);
 extern int FUN_11438756(...);
+extern int FUN_11438795(...);
+extern int FUN_114387a3(...);
+extern int FUN_114387b0(...);
+extern int FUN_114387fb(...);
+extern int FUN_114387fc(...);
+extern int FUN_11438803(...);
 extern int FUN_11439d23(...);
 extern int FUN_11439d28(...);
 extern int FUN_11439d44(...);
@@ -752,6 +798,19 @@ extern int FUN_11444149(...);
 extern int FUN_11444156(...);
 extern int FUN_11444167(...);
 extern int FUN_11446900(...);
+extern int FUN_11446cff(...);
+extern int FUN_11446d08(...);
+extern int FUN_11446d12(...);
+extern int FUN_11446d17(...);
+extern int FUN_11446d24(...);
+extern int FUN_11446d36(...);
+extern int FUN_11446d39(...);
+extern int FUN_11446d3d(...);
+extern int FUN_11446d3f(...);
+extern int FUN_11446d4d(...);
+extern int FUN_11446d62(...);
+extern int FUN_11446d69(...);
+extern int FUN_11446d78(...);
 extern int FUN_11446e9b(...);
 extern int FUN_11446ed1(...);
 extern int FUN_11446eea(...);
@@ -807,6 +866,17 @@ extern int FUN_1144e610(...);
 extern int FUN_1144e614(...);
 extern int FUN_1144e61e(...);
 extern int FUN_1144f270(...);
+extern int FUN_1144f532(...);
+extern int FUN_1144f559(...);
+extern int FUN_1144f578(...);
+extern int FUN_1144f59e(...);
+extern int FUN_1144f809(...);
+extern int FUN_1144f840(...);
+extern int FUN_1144f863(...);
+extern int FUN_1144f86c(...);
+extern int FUN_1144f873(...);
+extern int FUN_1144f878(...);
+extern int FUN_1144f884(...);
 extern int FUN_1144fd96(...);
 extern int FUN_1144fda2(...);
 extern int FUN_1144fda5(...);
@@ -1067,6 +1137,7 @@ extern int thunk_FUN_113db910(...);
 extern int thunk_FUN_113dbe10(...);
 extern int thunk_FUN_113dc3c0(...);
 extern int thunk_FUN_113dc610(...);
+extern int thunk_FUN_113dde70(...);
 extern int thunk_FUN_113de340(...);
 extern int thunk_FUN_113dea50(...);
 extern int thunk_FUN_113df6a0(...);
@@ -1141,13 +1212,17 @@ extern int thunk_FUN_1141ace0(...);
 extern int thunk_FUN_1141af70(...);
 extern int thunk_FUN_1141b160(...);
 extern int thunk_FUN_11420a70(...);
+extern int thunk_FUN_11423e60(...);
 extern int thunk_FUN_11423ed0(...);
 extern int thunk_FUN_11423f00(...);
 extern int thunk_FUN_11424fd0(...);
 extern int thunk_FUN_11425390(...);
 extern int thunk_FUN_11425430(...);
+extern int thunk_FUN_11425480(...);
 extern int thunk_FUN_11425630(...);
 extern int thunk_FUN_11425660(...);
+extern int thunk_FUN_11425770(...);
+extern int thunk_FUN_11425860(...);
 extern int thunk_FUN_114262c0(...);
 extern int thunk_FUN_1142c330(...);
 extern int thunk_FUN_1142ddf0(...);
@@ -1373,6 +1448,8 @@ int FUN_113f6e70(int a1);
 template<class... A> int FUN_113f6e70(A...);
 int FUN_113f6ea0(int a1);
 template<class... A> int FUN_113f6ea0(A...);
+int FUN_113f74d0(int a1, int a2, int a3, int a4, int a5);
+template<class... A> int FUN_113f74d0(A...);
 int FUN_113f80a0(int a1, int a2, int a3);
 template<class... A> int FUN_113f80a0(A...);
 int FUN_113f80d0(int a1, int a2, int a3);
@@ -1447,6 +1524,8 @@ int FUN_11402940(int a1, int a2);
 template<class... A> int FUN_11402940(A...);
 int FUN_11402ca0(int a1, int a2, int a3);
 template<class... A> int FUN_11402ca0(A...);
+int FUN_114037f0(int a1, int a2, int a3);
+template<class... A> int FUN_114037f0(A...);
 int FUN_11404320(int result);
 template<class... A> int FUN_11404320(A...);
 int FUN_11404c80(int a1, uint a2, int a3);
@@ -1565,6 +1644,8 @@ int FUN_11429460(int a1, uint a2, int a3, uint a4);
 template<class... A> int FUN_11429460(A...);
 int FUN_114294a0(int a1, uint a2, int a3, uint a4);
 template<class... A> int FUN_114294a0(A...);
+int FUN_11429ff0(int a1, int a2, uint a3, int a4, uint a5, int a6);
+template<class... A> int FUN_11429ff0(A...);
 int FUN_1142a0d0(int a1, int a2, int a3, int a4, int a5, int a6, int a7);
 template<class... A> int FUN_1142a0d0(A...);
 int FUN_1142a260(int a1, int a2, int a3, int a4, int a5, int a6);
@@ -1583,6 +1664,8 @@ int FUN_1142a890(int a1, int a2);
 template<class... A> int FUN_1142a890(A...);
 int FUN_1142ab60(int a1, int a2);
 template<class... A> int FUN_1142ab60(A...);
+int FUN_1142af40(int a1, uint a2, int a3, uint a4, int a5);
+template<class... A> int FUN_1142af40(A...);
 int FUN_1142b280(int a1);
 template<class... A> int FUN_1142b280(A...);
 int FUN_1142b390(int a1, int a2, int a3);
@@ -1597,8 +1680,12 @@ int FUN_1142e090(int a1);
 template<class... A> int FUN_1142e090(A...);
 int FUN_1142e4d0(int a1);
 template<class... A> int FUN_1142e4d0(A...);
+int FUN_1142fc70(int a1, uint a2, int a3, int a4);
+template<class... A> int FUN_1142fc70(A...);
 int FUN_11430400(int a1, int a2, uint a3);
 template<class... A> int FUN_11430400(A...);
+int FUN_114321f0(int a1, int a2, int a3);
+template<class... A> int FUN_114321f0(A...);
 int FUN_11432280(int a1, uint a2);
 template<class... A> int FUN_11432280(A...);
 int FUN_114322c0(int result, uint a2);
@@ -1607,6 +1694,12 @@ int FUN_11432480(int a1);
 template<class... A> int FUN_11432480(A...);
 int FUN_11433510(int a1, int a2, uint a3);
 template<class... A> int FUN_11433510(A...);
+int FUN_11433640(int a1, int a2, int a3);
+template<class... A> int FUN_11433640(A...);
+int FUN_11433730(int a1, int a2, int a3);
+template<class... A> int FUN_11433730(A...);
+int FUN_114337a0(int a1, int a2, int a3);
+template<class... A> int FUN_114337a0(A...);
 int FUN_11433810(int a1, int a2);
 template<class... A> int FUN_11433810(A...);
 int FUN_114338c0(int a1, int a2);
@@ -1641,6 +1734,8 @@ int FUN_11435810(int a1, int a2);
 template<class... A> int FUN_11435810(A...);
 int FUN_11438720(int a1, uint a2, int a3);
 template<class... A> int FUN_11438720(A...);
+int FUN_11438780(int a1, int a2, int a3);
+template<class... A> int FUN_11438780(A...);
 int FUN_11439d10(int a1, uint a2, unsigned char a3);
 template<class... A> int FUN_11439d10(A...);
 int FUN_1143aa80(int a1, int a2);
@@ -1699,6 +1794,8 @@ int FUN_11446920(void);
 template<class... A> int FUN_11446920(A...);
 int FUN_114469a0(void);
 template<class... A> int FUN_114469a0(A...);
+int FUN_11446c90(int a1, int a2, int a3, int a4, int a5, int a6);
+template<class... A> int FUN_11446c90(A...);
 int FUN_11446e80(int a1, int a2);
 template<class... A> int FUN_11446e80(A...);
 int FUN_11446ec0(int a1, int a2);
@@ -1727,6 +1824,10 @@ int FUN_1144e660(int a1, int a2);
 template<class... A> int FUN_1144e660(A...);
 int FUN_1144eb00(int a1);
 template<class... A> int FUN_1144eb00(A...);
+int FUN_1144f510(int a1, int a2, int a3, int a4);
+template<class... A> int FUN_1144f510(A...);
+int FUN_1144f7d0(int a1, int a2, int a3, uint a4, int a5);
+template<class... A> int FUN_1144f7d0(A...);
 int FUN_1144fd90(int a1);
 template<class... A> int FUN_1144fd90(A...);
 int FUN_11450980(int a1, uint a2, int a3);
@@ -3384,6 +3485,61 @@ int FUN_113f6ea0(int a1) {
     return (int)(0);
 }
 
+// Reference entry 113f74d0; body size 273 bytes.
+#line 1 "ENTRY_113f74d0"
+int FUN_113f74d0(int a1, int a2, int a3, int a4, int a5) {
+int *v1 = (int *)((int)((int *)a1)); // (int)&FUN_113f74d6
+    int v2 = (int)(*v1); // (int)&FUN_113f74d6
+    if (a3 == 0 | *(int *)(v2 + 104) == 0) {
+        return (int)(2);
+    }
+    if (v2 == 0) {
+        return (int)(-0x7f00);
+    }
+    int v3; // (int)((int(*)(int a1, int a2, int a3, int a4, int a5))&FUN_113f74d0)
+    memcpy((void *)(v2), (void *)(a2), a3);
+    int v4 = (int)(*v1); // (int)&FUN_113f7515
+    int v5 = (int)(*(int *)(v4 + 104)); // (int)&FUN_113f7522
+    switch (v5) {
+        case -0x7180: {
+            thunk_FUN_113dde70(a5);
+            return (int)(2);
+        }
+        case -0x6d80: {
+            thunk_FUN_113dde70(a5);
+            return (int)(1);
+        }
+    }
+    if (v5 != 0) {
+        thunk_FUN_113dde70(a5);
+        return (int)(2);
+    }
+    if (*(int *)(a5 + 4) != 772) {
+        thunk_FUN_113dde70(a5);
+        return (int)(1);
+    }
+    uint v6 = (uint)(thunk_FUN_11423e60(*(int *)(v4 + 108), a5, v2, a3, a1), 0); // (int)&FUN_113f7558
+    int v7 = (int)(*(int *)(a5 + 132)); // (int)&FUN_113f755d
+    uint v8 = (uint)(*(int *)(a5 + 128)); // (int)&FUN_113f7565
+    if (v3 < v7 || v3 <= v7 == v6 < v8) {
+        thunk_FUN_113dde70(a5);
+        return (int)(1);
+    }
+    uint v9 = (uint)(v6 - v8); // (int)&FUN_113f7575
+    int v10 = (int)(v3 - v7 + (int)(v6 < v8)); // (int)&FUN_113f7577
+    if ((v9 < 0x240c8401 || v10 < 0) != v10 >= 0 != v10 != 0) {
+        thunk_FUN_113dde70(a5);
+        return (int)(1);
+    }
+    uint v11 = (uint)(a4 - *(int *)(a5 + 136)); // (int)&FUN_113f758b
+    uint v12 = (uint)(v9 - v11); // (int)&FUN_113f7591
+    if (v12 < 0x1771 == v10 - (int)(v9 < v11) == (int)(v12 > 0xffffe88f)) {
+        return (int)(0);
+    }
+    thunk_FUN_113dde70(a5);
+    return (int)(1);
+}
+
 // Reference entry 113f80a0; body size 38 bytes.
 #line 1 "ENTRY_113f80a0"
 int FUN_113f80a0(int a1, int a2, int a3) {
@@ -4457,6 +4613,72 @@ int FUN_11402ca0(int a1, int a2, int a3) {
     return (int)(-1);
 }
 
+// Reference entry 114037f0; body size 88 bytes.
+#line 1 "ENTRY_114037f0"
+int FUN_114037f0(int a1, int a2, int a3) {
+
+    int v1 = (int)(*(int *)(a2 + 80)); // (int)&FUN_114037f7
+    if (v1 == 0) {
+        return (int)(0);
+    }
+    int v2; // bp-16, (int)((int(*)(int a1, int a2, int a3))&FUN_114037f0)
+    int v3 = (int)(&v2); // (int)&FUN_114037fa
+    int v4 = (int)(v3 + 24); // (int)&FUN_11403813
+int *v5 = (int *)((int)((int *)v4)); // (int)&FUN_11403813
+int *v6 = (int *)((int)((int *)a1));
+    int v7 = (int)(a2 - 8 + 8 * v1);
+    int v8 = (int)(*(int *)(v7 + 4)); // (int)&FUN_11403810
+    *v5 = (int)(v8);
+    int v9; // (int)((int(*)(int a1, int a2, int a3))&FUN_114037f0)
+    int v10; // (int)((int(*)(int a1, int a2, int a3))&FUN_114037f0)
+    int v11; // (int)((int(*)(int a1, int a2, int a3))&FUN_114037f0)
+    if (a3 == 0) {
+        v9 = (int)(v1 - 1);
+        v10 = (int)(v8);
+    } else {
+        *(int*)(v3 - 4) = (int)(v4);
+        v11 = (int)(v1 - 1);
+        *(int*)(v3 - 8) = (int)(v11);
+        *(int*)(v3 - 12) = (int)(*(int *)v7);
+        *(int*)(v3 - 16) = (int)(*(int *)(v3 + 32));
+        if (v11 != 0) {
+            goto lab_brk_114037f0;
+        }
+        v9 = (int)(v11);
+        v10 = (int)(*v5);
+    }
+    *v6 = (int)(*v6 | v10);
+    int v12 = (int)(v7 - 8); // (int)&FUN_1140383f
+    int result = (int)(0); // (int)&FUN_1140383f
+    while (v9 != 0) {
+        v7 = (int)(v12);
+        int v13 = (int)(v9);
+        v8 = (int)(*(int *)(v7 + 4));
+        *v5 = (int)(v8);
+        if (a3 == 0) {
+            v9 = (int)(v13 - 1);
+            v10 = (int)(v8);
+        } else {
+            *(int*)(v3 - 4) = (int)(v4);
+            v11 = (int)(v13 - 1);
+            *(int*)(v3 - 8) = (int)(v11);
+            *(int*)(v3 - 12) = (int)(*(int *)v7);
+            *(int*)(v3 - 16) = (int)(*(int *)(v3 + 32));
+            result = (int)(v11);
+            if (v11 != 0) {
+                break;
+            }
+            v9 = (int)(v11);
+            v10 = (int)(*v5);
+        }
+        *v6 = (int)(*v6 | v10);
+        v12 = (int)(v7 - 8);
+        result = (int)(0);
+    }
+    return (int)(result);
+lab_brk_114037f0: ;
+}
+
 // Reference entry 11404320; body size 151 bytes.
 #line 1 "ENTRY_11404320"
 int FUN_11404320(int result) {
@@ -5528,6 +5750,54 @@ int FUN_114294a0(int a1, uint a2, int a3, uint a4) {
     return (int)(0);
 }
 
+// Reference entry 11429ff0; body size 158 bytes.
+#line 1 "ENTRY_11429ff0"
+int FUN_11429ff0(int a1, int a2, uint a3, int a4, uint a5, int a6) {
+
+    if (*(int *)(a1 + 4) >= 256) {
+        return (int)(-135);
+    }
+    ushort v1 = (ushort)(*(short *)a1); // (int)&FUN_1142a003
+    int v2 = (int)(v1); // (int)&FUN_1142a003
+    int result; // (int)((int(*)(int a1, int a2, uint a3, int a4, uint a5, int a6))&FUN_11429ff0)
+    switch (v2 & 0x7000) {
+        case 0x1000: {
+            goto lab_0x1142a04b;
+        }
+        case 0x2000: {
+            goto lab_0x1142a04b;
+        }
+        default: {
+            if ((v2 & 0xcfff) == 0x4001) {
+                goto lab_0x1142a04b;
+            } else {
+                result = (int)(-134);
+                switch (v1 & -0x3100) {
+                    case 0x4200: {
+                        goto lab_0x1142a04b;
+                    }
+                    case 0x4100: {
+                        goto lab_0x1142a04b;
+                    }
+                    default: {
+                        return (int)(result);
+                    }
+                }
+            }
+        }
+    }
+  lab_0x1142a04b:
+    result = (int)(-138);
+    if (a5 < a3) {
+        return (int)(result);
+    }
+    int v3; // (int)((int(*)(int a1, int a2, uint a3, int a4, uint a5, int a6))&FUN_11429ff0)
+    memcpy((void *)(a4), (void *)(a2), a3);
+    memset((char *)(a4 + a3), 0, a5 - a3);
+    *(int*)a6 = (int)((int)(a3));
+    return (int)(0);
+}
+
 // Reference entry 1142a0d0; body size 194 bytes.
 #line 1 "ENTRY_1142a0d0"
 int FUN_1142a0d0(int a1, int a2, int a3, int a4, int a5, int a6, int a7) {
@@ -5659,6 +5929,20 @@ int FUN_1142ab60(int a1, int a2) {
     return (int)(-134);
 }
 
+// Reference entry 1142af40; body size 67 bytes.
+#line 1 "ENTRY_1142af40"
+int FUN_1142af40(int a1, uint a2, int a3, uint a4, int a5) {
+
+    if (a4 < a2) {
+        return (int)(-138);
+    }
+    int v1; // (int)((int(*)(int a1, uint a2, int a3, uint a4, int a5))&FUN_1142af40)
+    memcpy((void *)(a3), (void *)(a1), a2);
+    memset((char *)(a3 + a2), 0, a4 - a2);
+    *(int*)a5 = (int)((int)(a2));
+    return (int)(0);
+}
+
 // Reference entry 1142b280; body size 35 bytes.
 #line 1 "ENTRY_1142b280"
 int FUN_1142b280(int a1) {
@@ -5754,7 +6038,7 @@ int FUN_1142c900(void) {
 
     int v1; // bp-224, (int)((int(*)(void))&FUN_1142c900)
     int v2; // (int)((int(*)(void))&FUN_1142c900)
-    memset(&v1, 0, 220, v2, 0, 0);
+    memset((void *)(&v1), 0, 220);
     return (int)(0);
 }
 
@@ -5774,6 +6058,136 @@ int FUN_1142e4d0(int a1) {
     int v2; // (int)((int(*)(int a1))&FUN_1142e4d0)
     thunk_FUN_1142ddf0(a1, v2);
     return (int)(2 * (int)(v1 == 0 != (v1 & 0x7f000000) != 0x9000000) - 137);
+}
+
+// Reference entry 1142fc70; body size 317 bytes.
+#line 1 "ENTRY_1142fc70"
+int FUN_1142fc70(int a1, uint a2, int a3, int a4) {
+
+    uint v1 = (uint)(a2 % 256); // (int)&FUN_1142fc75
+    int v2 = (int)(v1 | 0x2000000); // (int)&FUN_1142fc78
+    int v3 = (int)(16); // (int)&FUN_1142fc82
+    if (v2 != 0x2000003) {
+        v3 = (int)(20);
+        if ((v1 || 0x2000001) != 0x2000005) {
+            v3 = (int)(28);
+            if (v2 != 0x2000008) {
+                v3 = (int)(32);
+                if (v2 != 0x2000009) {
+                    v3 = (int)(48);
+                    if (v2 != 0x200000a) {
+                        v3 = (int)(64);
+                        if (v2 != 0x200000b) {
+                            v3 = (int)(28);
+                            if (v2 != 0x200000c) {
+                                v3 = (int)(32);
+                                if (v2 != 0x200000d) {
+                                    v3 = (int)(28);
+                                    if (v2 != 0x2000010) {
+                                        v3 = (int)(32);
+                                        if (v2 != 0x2000011) {
+                                            v3 = (int)(48);
+                                            if (v2 != 0x2000012) {
+                                                v3 = (int)(v2 != 0x2000013 ? 0 : 64);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+int *v4 = (int *)((int)((int *)(a1 + 4))); // (int)&FUN_1142fd1a
+    int v5; // (int)&FUN_1142fd3c
+    int * v6; // (int)((int(*)(int a1, uint a2, int a3, int a4))&FUN_1142fc70)
+    char * v7; // (int)&FUN_1142fd45
+    int * v8; // (int)((int(*)(int a1, uint a2, int a3, int a4))&FUN_1142fc70)
+    int * v9; // (int)((int(*)(int a1, uint a2, int a3, int a4))&FUN_1142fc70)
+    switch (*v4) {
+        case 4: {
+            *v4 = (int)(5);
+        }
+        case 5: {
+            if (a4 == 0) {
+                return (int)(0);
+            }
+            int v10; // bp-20, (int)((int(*)(int a1, uint a2, int a3, int a4))&FUN_1142fc70)
+            v5 = (int)(&v10);
+            v6 = (int *)((int *)(v5 - 4));
+            v7 = (char *)((char *)a1);
+            v8 = (int *)((int *)(v5 - 8));
+            v9 = (int *)((int *)(v5 + 36));
+            break;
+        }
+        default: {
+            return (int)(-137);
+        }
+    }
+    unsigned char v11 = (unsigned char)(*v7); // (int)&FUN_1142fd45
+    uint v12; // (int)((int(*)(int a1, uint a2, int a3, int a4))&FUN_1142fc70)
+    int v13; // (int)((int(*)(int a1, uint a2, int a3, int a4))&FUN_1142fc70)
+    int v14; // (int)((int(*)(int a1, uint a2, int a3, int a4))&FUN_1142fc70)
+    uint v15; // (int)&FUN_1142fd45
+    uint v16; // (int)&FUN_1142fd6c
+    int v17; // (int)&FUN_1142fd8d
+    if (v11 != 0) {
+        v15 = (uint)((int)v11);
+        v12 = (uint)(*v9 < (int)((v15)) ? a4 : v15);
+        v16 = (uint)(v12 % 256);
+        *v6 = (int)(v16);
+        *v8 = (int)(a1 + 104 + (v3 - v15) % 256);
+        *(int*)(v5 - 12) = (int)(a3);
+        memcpy((void *)0, (void *)0, 0);
+        v17 = (int)(*v9 - v16);
+        *v7 = (char)(*v7 - (char)v12);
+        *v9 = (int)(v17);
+        v14 = (int)(v16 + a3);
+        v13 = (int)(v17);
+    } else {
+        *v6 = (int)(a2);
+        *v8 = (int)(a1);
+        if (FUN_1142f960() != 0) {
+            goto lab_brk_1142fc70;
+        }
+        v14 = (int)(a3);
+        v13 = (int)(*v9);
+    }
+    int result = (int)(0); // (int)&FUN_1142fd99
+    while (v13 != 0) {
+        int v18 = (int)(v13); // (int)&FUN_1142fda3
+        int v19 = (int)(v14);
+        v11 = (unsigned char)(*v7);
+        if (v11 != 0) {
+            v15 = (uint)((int)v11);
+            v12 = (uint)(*v9 < (int)((v15)) ? v18 : v15);
+            v16 = (uint)(v12 % 256);
+            *v6 = (int)(v16);
+            *v8 = (int)(a1 + 104 + ((int)*(char *)(v5 + 19) - v15) % 256);
+            *(int*)(v5 - 12) = (int)(v19);
+            memcpy((void *)0, (void *)0, 0);
+            v17 = (int)(*v9 - v16);
+            *v7 = (char)(*v7 - (char)v12);
+            *v9 = (int)(v17);
+            v14 = (int)(v16 + v19);
+            v13 = (int)(v17);
+        } else {
+            *v6 = (int)(*(int *)(v5 + 28));
+            *v8 = (int)(a1);
+            int v20 = (int)(FUN_1142f960(), 0); // (int)&FUN_1142fd4d
+            result = (int)(v20);
+            if (v20 != 0) {
+                break;
+            }
+            v14 = (int)(v19);
+            v13 = (int)(*v9);
+        }
+        result = (int)(0);
+    }
+    return (int)(result);
+lab_brk_1142fc70: ;
 }
 
 // Reference entry 11430400; body size 280 bytes.
@@ -5859,6 +6273,38 @@ int FUN_11430400(int a1, int a2, uint a3) {
     return (int)(0);
 }
 
+// Reference entry 114321f0; body size 104 bytes.
+#line 1 "ENTRY_114321f0"
+int FUN_114321f0(int a1, int a2, int a3) {
+    int g1;
+int *v1 = (int *)((int)((int *)(a3 + 4))); // (int)&FUN_114321fa
+int *v2 = (int *)((int)((int *)(a2 + 4))); // (int)&FUN_114321fd
+    int v3; // (int)((int(*)(int a1, int a2, int a3))&FUN_114321f0)
+    int v4 = (int)(FUN_1142fe10(a1, *v2, *v1, v3), 0); // (int)&FUN_11432204
+int *v5 = (int *)((int)((int *)(a3 + 8))); // (int)&FUN_11432209
+int *v6 = (int *)((int)((int *)(a2 + 8))); // (int)&FUN_11432210
+    int v7 = (int)(FUN_1142fe10(a1, *v6, *v5, (int)&g1), 0); // (int)&FUN_11432217
+    if (v4 == 0) {
+        if (*v2 != (int)((v4))) {
+            if (*v1 != (int)((v4))) {
+                return (int)(-135);
+            }
+        }
+    }
+    if (v7 == 0) {
+        if (*v6 != (int)((v7))) {
+            if (*v5 != (int)((v7))) {
+                return (int)(-135);
+            }
+        }
+    }
+int *v8 = (int *)((int)((int *)a2)); // (int)&FUN_1143224b
+    *v8 = (int)(*v8 & *(int *)a3);
+    *v2 = (int)(v4);
+    *v6 = (int)(v7);
+    return (int)(0);
+}
+
 // Reference entry 11432280; body size 33 bytes.
 #line 1 "ENTRY_11432280"
 int FUN_11432280(int a1, uint a2) {
@@ -5918,7 +6364,7 @@ int FUN_11433510(int a1, int a2, uint a3) {
         *(char*)v4 = (char)((int)((char)a3));
         int v7 = (int)(v2 + 6); // (int)&FUN_114335b2
         int v8; // (int)((int(*)(int a1, int a2, uint a3))&FUN_11433510)
-        memset( (void *)(v7) , 0, a3, v8, v8, v8, v8, v3, v6);
+        memset((void *)(v7), 0, a3);
         v5 = (int)(v7 + a3);
     } else {
         *(char*)v3 = (char)((int)(*(char *)(a1 + 37)));
@@ -5942,6 +6388,70 @@ int *v13 = (int *)((int)((int *)(a1 + 32))); // (int)&FUN_11433580
     int result = (int)(FUN_114336c0(a1, v3, a3 - 4 - v2 + v14), 0); // (int)&FUN_114335e0
     thunk_FUN_11423f00(v3, v3);
     return (int)(result);
+}
+
+// Reference entry 11433640; body size 100 bytes.
+#line 1 "ENTRY_11433640"
+int FUN_11433640(int a1, int a2, int a3) {
+int *v1 = (int *)((int)((int *)(a1 + 4))); // (int)&FUN_11433645
+    if (*v1 != (int)((1))) {
+        return (int)(-137);
+    }
+    if (a3 == 0) {
+        *(int*)(a1 + 36) = (int)(0);
+        *v1 = (int)(2);
+        return (int)(0);
+    }
+    int v2; // (int)((int(*)(int a1, int a2, int a3))&FUN_11433640)
+    if (v2 == 0) {
+        return (int)(-141);
+    }
+    memcpy((void *)(v2), (void *)(a2), a3);
+    *(int*)(a1 + 36) = (int)(a3);
+    *v1 = (int)(2);
+    return (int)(0);
+}
+
+// Reference entry 11433730; body size 83 bytes.
+#line 1 "ENTRY_11433730"
+int FUN_11433730(int a1, int a2, int a3) {
+int *v1 = (int *)((int)((int *)(a1 + 4))); // (int)&FUN_11433735
+    if (*v1 != (int)((3))) {
+        return (int)(-137);
+    }
+    if (a3 == 0) {
+        *v1 = (int)(4);
+        return (int)(0);
+    }
+    int v2; // (int)((int(*)(int a1, int a2, int a3))&FUN_11433730)
+    if (v2 == 0) {
+        return (int)(-141);
+    }
+    memcpy((void *)(v2), (void *)(a2), a3);
+    *(int*)(a1 + 28) = (int)(a3);
+    *v1 = (int)(4);
+    return (int)(0);
+}
+
+// Reference entry 114337a0; body size 83 bytes.
+#line 1 "ENTRY_114337a0"
+int FUN_114337a0(int a1, int a2, int a3) {
+int *v1 = (int *)((int)((int *)(a1 + 4))); // (int)&FUN_114337a5
+    if (*v1 != (int)((0))) {
+        return (int)(-137);
+    }
+    if (a3 == 0) {
+        *v1 = (int)(1);
+        return (int)(0);
+    }
+    int v2; // (int)((int(*)(int a1, int a2, int a3))&FUN_114337a0)
+    if (v2 == 0) {
+        return (int)(-141);
+    }
+    memcpy((void *)(v2), (void *)(a2), a3);
+    *(int*)(a1 + 20) = (int)(a3);
+    *v1 = (int)(1);
+    return (int)(0);
 }
 
 // Reference entry 11433810; body size 106 bytes.
@@ -6254,12 +6764,73 @@ int FUN_11438720(int a1, uint a2, int a3) {
     return (int)(result);
 }
 
+// Reference entry 11438780; body size 150 bytes.
+#line 1 "ENTRY_11438780"
+int FUN_11438780(int a1, int a2, int a3) {
+
+    int v1; // (int)((int(*)(int a1, int a2, int a3))&FUN_11438780)
+    memset((void *)(a2), 0, a3);
+    uint v2 = (uint)(2 * a3); // (int)&FUN_11438795
+    int v3 = (int)(a1); // (int)&FUN_114387a3
+    if (v2 == 0) {
+        return (int)(0);
+    }
+    uint v4 = (uint)(0);
+    unsigned char v5 = (unsigned char)(*(char *)v3); // (int)&FUN_114387b0
+    int v6 = (int)(v5); // (int)&FUN_114387b0
+    int v7; // (int)((int(*)(int a1, int a2, int a3))&FUN_11438780)
+    if (v5 < 58) {
+        v7 = (int)(v6 - 48);
+    } else {
+        if (v5 < 71) {
+            v7 = (int)(v6 - 55);
+        } else {
+            if (v5 >= 103) {
+                goto lab_brk_11438780;
+            }
+            v7 = (int)(v6 - 87);
+        }
+    }
+    int v8 = (int)(v7);
+    int v9 = (int)(v4 + 1); // (int)&FUN_114387fb
+char *v10 = (char *)((char)((char *)(v4 / 2 + a2))); // (int)&FUN_114387fc
+    *v10 = (char)(*v10 | (char)(v4 % 2 == 0 ? 16 * v8 : v8));
+    v3++;
+    int result = (int)(0); // (int)&FUN_11438803
+    while (v9 < v2) {
+        v4 = (uint)(v9);
+        v5 = (unsigned char)(*(char *)v3);
+        v6 = (int)(v5);
+        if (v5 < 58) {
+            v7 = (int)(v6 - 48);
+        } else {
+            if (v5 < 71) {
+                v7 = (int)(v6 - 55);
+            } else {
+                result = (int)(-0x1200);
+                if (v5 >= 103) {
+                    break;
+                }
+                v7 = (int)(v6 - 87);
+            }
+        }
+        v8 = (int)(v7);
+        v9 = (int)(v4 + 1);
+        v10 = (char *)((char *)(v4 / 2 + a2));
+        *v10 = (char)(*v10 | (char)(v4 % 2 == 0 ? 16 * v8 : v8));
+        v3++;
+        result = (int)(0);
+    }
+    return (int)(result);
+lab_brk_11438780: ;
+}
+
 // Reference entry 11439d10; body size 190 bytes.
 #line 1 "ENTRY_11439d10"
 int FUN_11439d10(int a1, uint a2, unsigned char a3) {
 
     int v1; // (int)((int(*)(int a1, uint a2, unsigned char a3))&FUN_11439d10)
-    int v2 = (int)(memset( (void *)(a1) , 0, a2 + 1, v1, v1, v1, v1), 0); // (int)&FUN_11439d23
+    int v2 = (int)(memset((void *)(a1), 0, a2 + 1), 0); // (int)&FUN_11439d23
     int v3; // bp-16, (int)((int(*)(int a1, uint a2, unsigned char a3))&FUN_11439d10)
     int v4 = (int)(&v3); // (int)&FUN_11439d28
     if (a2 == 0) {
@@ -6884,6 +7455,100 @@ int FUN_114469a0(void) {
     return (int)(result);
 }
 
+// Reference entry 11446c90; body size 244 bytes.
+#line 1 "ENTRY_11446c90"
+int FUN_11446c90(int a1, int a2, int a3, int a4, int a5, int a6) {
+
+    if (a6 == 0x2a2a2a2a) {
+        int v1 = (int)(4 * a3);
+        int v2; // (int)((int(*)(int a1, int a2, int a3, int a4, int a5, int a6))&FUN_11446c90)
+        return (int)(memcpy((void *)(a1), (char *)(v1 * a5 + a2), v1));
+    }
+    if (a4 == 0) {
+        int result; // (int)((int(*)(int a1, int a2, int a3, int a4, int a5, int a6))&FUN_11446c90)
+        return (int)(result);
+    }
+    int result2 = (int)(4 * a3); // (int)&FUN_11446d62
+int *v3 = (int *)((int)((int *)a1));
+    int v4 = (int)(a3 - 1);
+    int v5 = (int)(0);
+    int v6; // (int)((int(*)(int a1, int a2, int a3, int a4, int a5, int a6))&FUN_11446c90)
+    int v7; // (int)((int(*)(int a1, int a2, int a3, int a4, int a5, int a6))&FUN_11446c90)
+    uint v8; // (int)&FUN_11446d08
+    int v9; // (int)&FUN_11446d12
+    int v10; // (int)&FUN_11446d17
+    int v11; // (int)&FUN_11446d24
+    int v12; // (int)&FUN_11446d3d
+    int v13; // (int)&FUN_11446d36
+    int v14; // (int)&FUN_11446d39
+    int * v15; // (int)&FUN_11446d3f
+    int v16; // (int)&FUN_11446d4d
+    int v17; // (int)&FUN_11446cff
+    if (a3 != 0 && a2 != a1) {
+        v17 = (int)(*(int *)&DAT_122fa560);
+        v8 = (uint)(v5 ^ a5 ^ v17);
+        v9 = (int)(-((v8 / 2)) | -v8);
+        v10 = (int)(v9 > -1);
+        v11 = (int)(a2 - a1);
+        v12 = (int)(v9 >> 31);
+        *v3 = (int)(*v3 & (v17 ^ v12) | *(int *)a2 & v10);
+        if (v4 != 0) {
+            v13 = (int)(a1 + 4);
+            v14 = (int)(*(int *)(v11 + v13));
+            v15 = (int *)((int *)v13);
+            *v15 = (int)(*v15 & (*(int *)&DAT_122fa560 ^ v12) | v14 & v10);
+            v16 = (int)(v4 - 1);
+            v6 = (int)(v16);
+            v7 = (int)(v13);
+            while (v16 != 0) {
+                v13 = (int)(v7 + 4);
+                v14 = (int)(*(int *)(v11 + v13));
+                v15 = (int *)((int *)v13);
+                *v15 = (int)(*v15 & (*(int *)&DAT_122fa560 ^ v12) | v14 & v10);
+                v16 = (int)(v6 - 1);
+                v6 = (int)(v16);
+                v7 = (int)(v13);
+            }
+        }
+    }
+    int v18 = (int)(v5 + 1); // (int)&FUN_11446d69
+    int v19 = (int)(a2 + result2); // (int)&FUN_11446d78
+    while (v18 != a4) {
+        int v20 = (int)(v19);
+        v5 = (int)(v18);
+        if (a3 != 0 && v20 != a1) {
+            v17 = (int)(*(int *)&DAT_122fa560);
+            v8 = (uint)(v5 ^ a5 ^ v17);
+            v9 = (int)(-((v8 / 2)) | -v8);
+            v10 = (int)(v9 > -1);
+            v11 = (int)(v20 - a1);
+            v12 = (int)(v9 >> 31);
+            *v3 = (int)(*v3 & (v17 ^ v12) | *(int *)v20 & v10);
+            if (v4 != 0) {
+                v13 = (int)(a1 + 4);
+                v14 = (int)(*(int *)(v11 + v13));
+                v15 = (int *)((int *)v13);
+                *v15 = (int)(*v15 & (*(int *)&DAT_122fa560 ^ v12) | v14 & v10);
+                v16 = (int)(v4 - 1);
+                v6 = (int)(v16);
+                v7 = (int)(v13);
+                while (v16 != 0) {
+                    v13 = (int)(v7 + 4);
+                    v14 = (int)(*(int *)(v11 + v13));
+                    v15 = (int *)((int *)v13);
+                    *v15 = (int)(*v15 & (*(int *)&DAT_122fa560 ^ v12) | v14 & v10);
+                    v16 = (int)(v6 - 1);
+                    v6 = (int)(v16);
+                    v7 = (int)(v13);
+                }
+            }
+        }
+        v18 = (int)(v5 + 1);
+        v19 = (int)(v20 + result2);
+    }
+    return (int)(result2);
+}
+
 // Reference entry 11446e80; body size 44 bytes.
 #line 1 "ENTRY_11446e80"
 int FUN_11446e80(int a1, int a2) {
@@ -7306,6 +7971,125 @@ int FUN_1144eb00(int a1) {
     int v1; // (int)((int(*)(int a1))&FUN_1144eb00)
     thunk_FUN_11423ed0(a1 + 240, 128, v1);
     return (int)(thunk_FUN_1142c330(a1 + 8));
+}
+
+// Reference entry 1144f510; body size 252 bytes.
+#line 1 "ENTRY_1144f510"
+int FUN_1144f510(int a1, int a2, int a3, int a4) {
+
+    if (*(int *)a1 != 0xa000100) {
+        return (int)(-134);
+    }
+    if (a2 == 10) {
+        if (*(int *)(a1 + 12) == 0) {
+int *v1 = (int *)((int)((int *)(a1 + 352))); // (int)&FUN_1144f532
+            int v2 = (int)(*v1); // (int)&FUN_1144f532
+            if (v2 >= 334) {
+                return (int)(-138);
+            }
+            *(short*)(a1 + 16 + v2) = (short)(3);
+            *(char*)(v2 + a1 + 18) = (char)(23);
+            *v1 = (int)(*v1 + 3);
+        }
+    }
+int *v3 = (int *)((int)((int *)(a1 + 352))); // (int)&FUN_1144f559
+    int v4 = (int)(*v3); // (int)&FUN_1144f559
+    if (a4 + 1 + v4 >= 337) {
+        return (int)(-138);
+    }
+    int v5 = (int)(a1 + 16);
+    *(char*)(v4 + v5) = (char)((char)a4);
+    int v6 = (int)(*v3); // (int)&FUN_1144f578
+    *v3 = (int)(v6 + 1);
+    int v7; // (int)((int(*)(int a1, int a2, int a3, int a4))&FUN_1144f510)
+    memcpy((char *)(a1 + 17 + v6), (void *)(a3), a4);
+    int v8 = (int)(*v3 + a4); // (int)&FUN_1144f59e
+    *v3 = (int)(v8);
+    int v9; // (int)((int(*)(int a1, int a2, int a3, int a4))&FUN_1144f510)
+    if (a2 != 6) {
+        if (a2 != 12) {
+            return (int)(0);
+        }
+        v9 = (int)(thunk_FUN_11425480(a1 + 360, v5, v8), 0);
+    } else {
+        v9 = (int)(thunk_FUN_11425430(a1 + 360, v5, v8), 0);
+    }
+    thunk_FUN_11423ed0(v5, 336);
+    *v3 = (int)(0);
+    if (v9 == 0) {
+        return (int)(0);
+    }
+    return (int)(FUN_1144f270(v9));
+}
+
+// Reference entry 1144f7d0; body size 303 bytes.
+#line 1 "ENTRY_1144f7d0"
+int FUN_1144f7d0(int a1, int a2, int a3, uint a4, int a5) {
+
+    if (*(int *)a1 != 0xa000100) {
+        return (int)(-134);
+    }
+    int * v1; // (int)((int(*)(int a1, int a2, int a3, uint a4, int a5))&FUN_1144f7d0)
+    int v2; // (int)((int(*)(int a1, int a2, int a3, uint a4, int a5))&FUN_1144f7d0)
+    int v3; // (int)((int(*)(int a1, int a2, int a3, uint a4, int a5))&FUN_1144f7d0)
+    int v4; // (int)((int(*)(int a1, int a2, int a3, uint a4, int a5))&FUN_1144f7d0)
+    int v5; // (int)((int(*)(int a1, int a2, int a3, uint a4, int a5))&FUN_1144f7d0)
+    if (a2 != 1) {
+        if (a2 != 7) {
+int *v6 = (int *)((int)((int *)(a1 + 356))); // (int)&FUN_1144f86c
+            v4 = (int)(*v6);
+            v3 = (int)(a1 + 352);
+            v2 = (int)(a1 + 16);
+            v1 = (int *)(v6);
+        } else {
+            int v7 = (int)(a1 + 352);
+            int v8 = (int)(a1 + 16);
+            int v9 = (int)(thunk_FUN_11425860(a1 + 360, v8, 336, v7, (int)&FUN_10044021, 0, v5, v5), 0); // (int)&FUN_1144f840
+            if (v9 != 0) {
+                return (int)(FUN_1144f270(v9));
+            }
+            int v10 = (int)(*(int *)(a1 + 12) == 1 ? 3 : 0); // (int)&FUN_1144f863
+int *v11 = (int *)((int)((int *)(a1 + 356)));
+            *v11 = (int)(v10);
+            v4 = (int)(v10);
+            v3 = (int)(v7);
+            v2 = (int)(v8);
+            v1 = (int *)(v11);
+        }
+    } else {
+        int v12 = (int)(a1 + 352);
+        int v13 = (int)(a1 + 16);
+        int v14 = (int)(thunk_FUN_11425770(a1 + 360, v13, 336, v12, (int)&FUN_10044021, 0, v5, v5), 0); // (int)&FUN_1144f809
+        if (v14 != 0) {
+            return (int)(FUN_1144f270(v14));
+        }
+int *v15 = (int *)((int)((int *)(a1 + 356)));
+        *v15 = (int)(v14);
+        v4 = (int)(v14);
+        v3 = (int)(v12);
+        v2 = (int)(v13);
+        v1 = (int *)(v15);
+    }
+int *v16 = (int *)((int)(v1));
+    uint v17 = (uint)((int)*(char *)(v4 + v2)); // (int)&FUN_1144f873
+    int v18 = (int)(v4 + 1); // (int)&FUN_1144f878
+    *v16 = (int)(v18);
+int *v19 = (int *)((int)((int *)v3)); // (int)&FUN_1144f884
+    if (v18 +(int)(v17) > *v19) {
+        return (int)(-152);
+    }
+    if (v17 > a4) {
+        return (int)(-138);
+    }
+    memcpy((void *)(a3), (char *)(v18 + v2), v17);
+    *(int*)a5 = (int)((int)(v17));
+    *v16 = (int)(*v16 + v17);
+    if (a2 != 6 != a2 != 9) {
+        thunk_FUN_11423ed0(v2, 336);
+        *v19 = (int)(0);
+        *v16 = (int)(0);
+    }
+    return (int)(0);
 }
 
 // Reference entry 1144fd90; body size 74 bytes.

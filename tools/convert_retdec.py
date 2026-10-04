@@ -138,18 +138,52 @@ def main(indir, outpath):
                             'memset': f'{fn}((void *)0, 0, 0)',
                             'free': f'{fn}((void *)0)'}.get(fn, m.group(0))
                 parts = [a.strip() for a in args.split(',')]
-                if fn in ('memcpy', 'memmove') and len(parts) == 3:
+                # RetDec appends dead register args to memcpy/memset
+                # (rep-movsd noise); keep only the canonical three.
+                if fn in ('memcpy', 'memmove') and len(parts) >= 3:
                     return (f'{fn}((void *)({parts[0]}), (void *)'
                             f'({parts[1]}), {parts[2]})')
-                if fn == 'memset' and len(parts) == 3:
+                if fn == 'memset' and len(parts) >= 3:
                     return (f'{fn}((void *)({parts[0]}), {parts[1]}, '
                             f'{parts[2]})')
-                if fn == 'free' and len(parts) == 1:
+                if fn == 'free' and len(parts) >= 1:
                     return f'{fn}((void *)({parts[0]}))'
                 return m.group(0)
             src = re.sub(
                 r'\b(memcpy|memmove|memset|free)\s*'
                 r'\(((?:[^()]|\([^()]*\))*)\)', libc, src)
+            # A stray 'break' outside any loop/switch is RetDec-flattened
+            # control flow; send it to a trailing label so it compiles.
+            if 'break;' in src:
+                spans = []
+                for m in re.finditer(
+                        r'\b(?:while|for|switch)\s*'
+                        r'\([^()]*(?:\([^()]*\)[^()]*)*\)\s*\{'
+                        r'|\bdo\s*\{', src):
+                    depth, i = 1, m.end()
+                    while i < len(src) and depth:
+                        if src[i] == '{':
+                            depth += 1
+                        elif src[i] == '}':
+                            depth -= 1
+                        i += 1
+                    spans.append((m.start(), i))
+                def in_span(pos):
+                    return any(s <= pos < e for s, e in spans)
+                stray = [m for m in re.finditer(r'\bbreak\s*;', src)
+                         if not in_span(m.start())]
+                if stray:
+                    lab = f'lab_brk_{entry}'
+                    for m in reversed(stray):
+                        src = (src[:m.start()] + f'goto {lab};' +
+                               src[m.end():])
+                    src = (src.rstrip()[:-1].rstrip() +
+                           f'\n{lab}: ;\n}}')
+            # RetDec register variables (g1, g2, ...) are referenced but
+            # never declared; give them int locals.
+            for g in sorted(set(re.findall(r'\bg(\d+)\b', src))):
+                if not re.search(rf'\bint\b[^;]*\bg{g}\b\s*[;=]', src):
+                    src = src.replace('{\n', f'{{\n    int g{g};\n', 1)
             # RetDec comments and prototypes
             src = '\n'.join(
                 line for line in src.splitlines()
