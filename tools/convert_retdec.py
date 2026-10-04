@@ -130,6 +130,26 @@ def main(indir, outpath):
                     return f'(int)&{name_for(va)}'
                 return m.group(0)
             src = re.sub(r'\b0x[0-9a-fA-F]{8}\b', va_sub, src)
+            # libc calls get void* casts so the typed extern decls bind
+            def libc(m):
+                fn, args = m.group(1), m.group(2).strip()
+                if not args:
+                    return {'memcpy': f'{fn}((void *)0, (void *)0, 0)',
+                            'memset': f'{fn}((void *)0, 0, 0)',
+                            'free': f'{fn}((void *)0)'}.get(fn, m.group(0))
+                parts = [a.strip() for a in args.split(',')]
+                if fn in ('memcpy', 'memmove') and len(parts) == 3:
+                    return (f'{fn}((void *)({parts[0]}), (void *)'
+                            f'({parts[1]}), {parts[2]})')
+                if fn == 'memset' and len(parts) == 3:
+                    return (f'{fn}((void *)({parts[0]}), {parts[1]}, '
+                            f'{parts[2]})')
+                if fn == 'free' and len(parts) == 1:
+                    return f'{fn}((void *)({parts[0]}))'
+                return m.group(0)
+            src = re.sub(
+                r'\b(memcpy|memmove|memset|free)\s*'
+                r'\(((?:[^()]|\([^()]*\))*)\)', libc, src)
             # RetDec comments and prototypes
             src = '\n'.join(
                 line for line in src.splitlines()
