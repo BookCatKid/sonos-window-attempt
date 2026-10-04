@@ -3129,7 +3129,7 @@ template<class... A> int FUN_1002abee(A...);
 #line 1 "ENTRY_1001ccd7"
 int FUN_1001ccd7(int a1) {
 
-    int result; // (int)((int(*)(int a1))&FUN_1001ccd7)
+    int result; // (int)((int(*)(int a1))&FUN_1001ccd7<>)
     return (int)(result);
 }
 
@@ -3144,7 +3144,7 @@ int FUN_1001d77c(int a1, int a2, int a3, int a4, int a5, int a6, int result) {
 #line 1 "ENTRY_1001dd9e"
 int FUN_1001dd9e(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_1001dd9e)
+    int v1; // (int)((int(*)(void))&FUN_1001dd9e<>)
 char *v2 = (char *)((char)((char *)((v1 & -0xff01 | 0xc300) + 0x5de90097))); // (int)&FUN_1001ddaa
     *v2 = (char)(*v2 ^ 37);
     return (int)(v1 & -256 | (uint)v1 % 256);
@@ -3154,7 +3154,7 @@ char *v2 = (char *)((char)((char *)((v1 & -0xff01 | 0xc300) + 0x5de90097))); // 
 #line 1 "ENTRY_1001ff61"
 int FUN_1001ff61(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1001ff61)
+    int result; // (int)((int(*)(void))&FUN_1001ff61<>)
     return (int)(result);
 }
 
@@ -3162,7 +3162,7 @@ int FUN_1001ff61(void) {
 #line 1 "ENTRY_10020bf2"
 int FUN_10020bf2(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_10020bf2)
+    int v1; // (int)((int(*)(void))&FUN_10020bf2<>)
     uint result = (uint)(v1);
     *(int*)result = (int)((uint)(result / 0x800000 | 512 * result));
     return (int)(result);
@@ -3172,7 +3172,7 @@ int FUN_10020bf2(void) {
 #line 1 "ENTRY_10022b21"
 int FUN_10022b21(void) {
 
-    int result; // (int)((int(*)(void))&FUN_10022b21)
+    int result; // (int)((int(*)(void))&FUN_10022b21<>)
     int v1 = (int)(result);
     *(int*)v1 = (int)((int)(result ^ v1));
     return (int)(result);
@@ -3182,7 +3182,7 @@ int FUN_10022b21(void) {
 #line 1 "ENTRY_10022da1"
 int FUN_10022da1(void) {
 
-    int result; // (int)((int(*)(void))&FUN_10022da1)
+    int result; // (int)((int(*)(void))&FUN_10022da1<>)
     int v1 = (int)(result);
     *(char*)v1 = (char)((int)((char)(v1 & result)));
     return (int)(result);
@@ -3192,7 +3192,7 @@ int FUN_10022da1(void) {
 #line 1 "ENTRY_10023481"
 int FUN_10023481(void) {
 
-    int result; // (int)((int(*)(void))&FUN_10023481)
+    int result; // (int)((int(*)(void))&FUN_10023481<>)
     return (int)(result);
 }
 
@@ -3207,13 +3207,13 @@ int FUN_10025281(int result) {
 #line 1 "ENTRY_100256ca"
 int FUN_100256ca(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_100256ca)
+    int v1; // (int)((int(*)(void))&FUN_100256ca<>)
     int v2 = (int)(v1 + 1); // (int)&FUN_100256cc
     int v3 = (int)(v2); // (int)&FUN_100256cd
     if ((v2 & (v1 ^ -0x80000000)) < 0) {
         v3 = (int)(FUN_10025699(), 0);
     }
-    uint v4 = (uint)(v1 / 256); // (int)((int(*)(void))&FUN_100256ca)
+    uint v4 = (uint)(v1 / 256); // (int)((int(*)(void))&FUN_100256ca<>)
     *(int*)v1 = (int)((int)(v3));
     int v5 = (int)(-1 - (char)(2 * v4 + v1) < (char)v4 ? 255 : 0); // (int)&FUN_100256d6
     return (int)(v3 & -256 | v5);
@@ -3223,7 +3223,7 @@ int FUN_100256ca(void) {
 #line 1 "ENTRY_10027fd2"
 int FUN_10027fd2(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_10027fd2)
+    int v1; // (int)((int(*)(void))&FUN_10027fd2<>)
     uint v2 = (uint)(v1);
     int v3 = (int)(v1);
     bool v4 = (bool)((v3 & 14) > 9 | (char)(v2 / 256) % 16 + (char)v2 % 16 > 15); // (int)&FUN_10027fd5
@@ -3235,7 +3235,7 @@ int FUN_10027fd2(void) {
 int FUN_1002802d(int a1) {
 
     int result = (int)(a1); // (int)&FUN_10028035
-    int v1; // (int)((int(*)(int a1))&FUN_1002802d)
+    int v1; // (int)((int(*)(int a1))&FUN_1002802d<>)
     if (v1 >= -0x16ff345a) {
         result = (int)(FUN_10027fea(), 0);
     }
@@ -3246,7 +3246,7 @@ int FUN_1002802d(int a1) {
 #line 1 "ENTRY_10028acd"
 int FUN_10028acd(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_10028acd)
+    int v1; // (int)((int(*)(void))&FUN_10028acd<>)
     return (int)((v1 | -0x16ff42ad) - 1);
 }
 
@@ -3254,7 +3254,7 @@ int FUN_10028acd(void) {
 #line 1 "ENTRY_100299af"
 int FUN_100299af(void) {
 
-    int result; // (int)((int(*)(void))&FUN_100299af)
+    int result; // (int)((int(*)(void))&FUN_100299af<>)
     return (int)(result);
 }
 

@@ -1858,7 +1858,7 @@ int FUN_117b05f5(int a1) {
 #line 1 "ENTRY_117b0614"
 int FUN_117b0614(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_117b0614)
+    int v1; // (int)((int(*)(void))&FUN_117b0614<>)
     return (int)(-0x32383417 * *(int *)(2 * v1));
 }
 
@@ -4069,7 +4069,7 @@ int FUN_117b5a49(int a1) {
 #line 1 "ENTRY_117b5a55"
 int FUN_117b5a55(void) {
 
-    int result; // (int)((int(*)(void))&FUN_117b5a55)
+    int result; // (int)((int(*)(void))&FUN_117b5a55<>)
     return (int)(result);
 }
 
@@ -4143,7 +4143,7 @@ int FUN_117b5d14(int a1) {
 #line 1 "ENTRY_117b5d24"
 int FUN_117b5d24(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_117b5d24)
+    int v1; // (int)((int(*)(void))&FUN_117b5d24<>)
     *(int*)v1 = (int)((int)(v1 & -0x6b470178));
     return (int)(__CxxFrameHandler3());
 }
@@ -7238,7 +7238,7 @@ int FUN_117bf414(int a1) {
 #line 1 "ENTRY_117bf424"
 int FUN_117bf424(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_117bf424)
+    int v1; // (int)((int(*)(void))&FUN_117bf424<>)
     return (int)(v1 - 0x264916ee);
 }
 
@@ -7306,7 +7306,7 @@ int FUN_117c1a14(int a1) {
 #line 1 "ENTRY_117c1a24"
 int FUN_117c1a24(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_117c1a24)
+    int v1; // (int)((int(*)(void))&FUN_117c1a24<>)
     return (int)(v1 - 0x4c4916ee);
 }
 
@@ -7389,7 +7389,7 @@ int FUN_117c4d14(int a1) {
 #line 1 "ENTRY_117c4d24"
 int FUN_117c4d24(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_117c4d24)
+    int v1; // (int)((int(*)(void))&FUN_117c4d24<>)
     return (int)(v1 ^ -0x77470179);
 }
 
@@ -7411,9 +7411,9 @@ int FUN_117c6014(int a1) {
 #line 1 "ENTRY_117c6024"
 int FUN_117c6024(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_117c6024)
+    int v1; // (int)((int(*)(void))&FUN_117c6024<>)
     int v2 = (int)(v1);
-    char v3 = (char)(*(char *)(v1 + 0x6104b8fe)); // (int)((int(*)(void))&FUN_117c6024)
+    char v3 = (char)(*(char *)(v1 + 0x6104b8fe)); // (int)((int(*)(void))&FUN_117c6024<>)
     return (int)((v2 & -256 | (int)(v3 & (char)v2)) + 0x6db6e912);
 }
 
@@ -7506,7 +7506,7 @@ int FUN_117cb608(int a1) {
 #line 1 "ENTRY_117cb61c"
 int FUN_117cb61c(void) {
 
-    int result; // (int)((int(*)(void))&FUN_117cb61c)
+    int result; // (int)((int(*)(void))&FUN_117cb61c<>)
     return (int)(result);
 }
 

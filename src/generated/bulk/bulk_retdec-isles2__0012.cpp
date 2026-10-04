@@ -4911,9 +4911,9 @@ int FUN_100d3bd0(void) {
 #line 1 "ENTRY_100d3be2"
 int FUN_100d3be2(void) {
 
-    int result; // (int)((int(*)(void))&FUN_100d3be2)
+    int result; // (int)((int(*)(void))&FUN_100d3be2<>)
     int v1 = (int)(result);
-    bool v2; // (int)((int(*)(void))&FUN_100d3be2)
+    bool v2; // (int)((int(*)(void))&FUN_100d3be2<>)
     *(int*)v1 = (int)((int)(v1 - 24 + (int)v2));
     return (int)(result);
 }
@@ -4929,9 +4929,9 @@ int FUN_100d3c07(int a1) {
 #line 1 "ENTRY_100d3c12"
 int FUN_100d3c12(int a1) {
 
-    int v1; // (int)((int(*)(int a1))&FUN_100d3c12)
+    int v1; // (int)((int(*)(int a1))&FUN_100d3c12<>)
     int v2 = (int)(v1);
-    bool v3; // (int)((int(*)(int a1))&FUN_100d3c12)
+    bool v3; // (int)((int(*)(int a1))&FUN_100d3c12<>)
     *(int*)v2 = (int)((int)(v2 - 24 + (int)v3));
     return (int)((0x100000000 * (longlong)v1 | (longlong)v1) / (longlong)(uint)v1);
 }
@@ -4948,8 +4948,8 @@ int FUN_100d47d7(int a1) {
 #line 1 "ENTRY_100d56f7"
 int FUN_100d56f7(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_100d56f7)
-    int v2; // (int)((int(*)(void))&FUN_100d56f7)
+    int v1; // (int)((int(*)(void))&FUN_100d56f7<>)
+    int v2; // (int)((int(*)(void))&FUN_100d56f7<>)
     FUN_1005273e(v2, v2, v2, &v1, v2, v2, v2, v2);
     return (int)(_atexit((int)&FUN_118403a0));
 }
@@ -4958,7 +4958,7 @@ int FUN_100d56f7(void) {
 #line 1 "ENTRY_100d5a50"
 int FUN_100d5a50(void) {
 
-    int result; // (int)((int(*)(void))&FUN_100d5a50)
+    int result; // (int)((int(*)(void))&FUN_100d5a50<>)
     return (int)(result);
 }
 
@@ -4973,7 +4973,7 @@ int FUN_100d5a5d(void) {
 #line 1 "ENTRY_100d5a80"
 int FUN_100d5a80(void) {
 
-    int result; // (int)((int(*)(void))&FUN_100d5a80)
+    int result; // (int)((int(*)(void))&FUN_100d5a80<>)
     return (int)(result);
 }
 
@@ -4988,7 +4988,7 @@ int FUN_100d5a8d(void) {
 #line 1 "ENTRY_100d5ab0"
 int FUN_100d5ab0(void) {
 
-    int result; // (int)((int(*)(void))&FUN_100d5ab0)
+    int result; // (int)((int(*)(void))&FUN_100d5ab0<>)
     return (int)(result);
 }
 
@@ -5003,7 +5003,7 @@ int FUN_100d5abd(void) {
 #line 1 "ENTRY_100d5ae0"
 int FUN_100d5ae0(void) {
 
-    int result; // (int)((int(*)(void))&FUN_100d5ae0)
+    int result; // (int)((int(*)(void))&FUN_100d5ae0<>)
     return (int)(result);
 }
 
@@ -5018,7 +5018,7 @@ int FUN_100d5aed(void) {
 #line 1 "ENTRY_100d5b10"
 int FUN_100d5b10(void) {
 
-    int result; // (int)((int(*)(void))&FUN_100d5b10)
+    int result; // (int)((int(*)(void))&FUN_100d5b10<>)
     return (int)(result);
 }
 
@@ -5033,9 +5033,9 @@ int FUN_100d5b1d(void) {
 #line 1 "ENTRY_100d5c18"
 int FUN_100d5c18(int a1) {
 
-    int v1; // (int)((int(*)(int a1))&FUN_100d5c18)
+    int v1; // (int)((int(*)(int a1))&FUN_100d5c18<>)
     int v2 = (int)(v1);
-    bool v3; // (int)((int(*)(int a1))&FUN_100d5c18)
+    bool v3; // (int)((int(*)(int a1))&FUN_100d5c18<>)
     *(int*)v2 = (int)((int)(2 * v2 | (int)v3));
     return (int)(_atexit());
 }
@@ -5044,11 +5044,11 @@ int FUN_100d5c18(int a1) {
 #line 1 "ENTRY_100d71ef"
 int FUN_100d71ef(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_100d71ef)
-    unsigned char v2 = (unsigned char)((char)v1); // (int)((int(*)(void))&FUN_100d71ef)
-    bool v3; // (int)((int(*)(void))&FUN_100d71ef)
-    unsigned char v4 = (unsigned char)(v3 ? -108 : -109); // (int)((int(*)(void))&FUN_100d71ef)
-    unsigned char v5 = (unsigned char)(v2 - v4); // (int)((int(*)(void))&FUN_100d71ef)
+    int v1; // (int)((int(*)(void))&FUN_100d71ef<>)
+    unsigned char v2 = (unsigned char)((char)v1); // (int)((int(*)(void))&FUN_100d71ef<>)
+    bool v3; // (int)((int(*)(void))&FUN_100d71ef<>)
+    unsigned char v4 = (unsigned char)(v3 ? -108 : -109); // (int)((int(*)(void))&FUN_100d71ef<>)
+    unsigned char v5 = (unsigned char)(v2 - v4); // (int)((int(*)(void))&FUN_100d71ef<>)
 int *v6 = (int *)((int)((int *)(v1 + 0x45c70c4d))); // (int)&FUN_100d71f1
     *v6 = (int)(v1 + (int)(v3 | v4 > v2) + *v6);
 char *v7 = (char *)((char)((char *)(v1 & -256 | (int)v5))); // (int)&FUN_100d71f8
@@ -5131,11 +5131,11 @@ char *v8 = (char *)((char)((char *)(v1 - 4))); // (int)&FUN_100d7210
 #line 1 "ENTRY_100d8c62"
 int FUN_100d8c62(void) {
 
-    bool v1; // (int)((int(*)(void))&FUN_100d8c62)
+    bool v1; // (int)((int(*)(void))&FUN_100d8c62<>)
     if (!v1) {
         FUN_100d8bf7();
     }
-    int v2; // (int)((int(*)(void))&FUN_100d8c62)
+    int v2; // (int)((int(*)(void))&FUN_100d8c62<>)
 int *v3 = (int *)((int)((int *)(v2 + (int)&DAT_121a670c))); // (int)&FUN_100d8c64
     *v3 = (int)(v2 + (int)v1 + *v3);
     FUN_1005273e();
@@ -5154,8 +5154,8 @@ int FUN_100d9027(void) {
 #line 1 "ENTRY_100da7c7"
 int FUN_100da7c7(void) {
 
-    int result; // (int)((int(*)(void))&FUN_100da7c7)
-    bool v1; // (int)((int(*)(void))&FUN_100da7c7)
+    int result; // (int)((int(*)(void))&FUN_100da7c7<>)
+    bool v1; // (int)((int(*)(void))&FUN_100da7c7<>)
     if (true == !v1) {
         result = (int)(FUN_100da7c5(), 0);
     }
@@ -5224,7 +5224,7 @@ int FUN_100dc437(void) {
 #line 1 "ENTRY_100df6d7"
 int FUN_100df6d7(int a1) {
 
-    int result; // (int)((int(*)(int a1))&FUN_100df6d7)
+    int result; // (int)((int(*)(int a1))&FUN_100df6d7<>)
     return (int)(result);
 }
 
@@ -5232,9 +5232,9 @@ int FUN_100df6d7(int a1) {
 #line 1 "ENTRY_100e00f7"
 int FUN_100e00f7(void) {
 
-    bool v1; // (int)((int(*)(void))&FUN_100e00f7)
+    bool v1; // (int)((int(*)(void))&FUN_100e00f7<>)
     if (!v1) {
-        int result; // (int)((int(*)(void))&FUN_100e00f7)
+        int result; // (int)((int(*)(void))&FUN_100e00f7<>)
         return (int)(result);
     }
     return (int)(_atexit((int)&FUN_11857b20));
@@ -5244,8 +5244,8 @@ int FUN_100e00f7(void) {
 #line 1 "ENTRY_100e0997"
 int FUN_100e0997(int a1, int a2) {
 
-    int result; // (int)((int(*)(int a1, int a2))&FUN_100e0997)
-    bool v1; // (int)((int(*)(int a1, int a2))&FUN_100e0997)
+    int result; // (int)((int(*)(int a1, int a2))&FUN_100e0997<>)
+    bool v1; // (int)((int(*)(int a1, int a2))&FUN_100e0997<>)
     if (v1) {
         return (int)(result);
     }
@@ -5293,7 +5293,7 @@ int FUN_100e22d2(int a1) {
 #line 1 "ENTRY_100e24d7"
 int FUN_100e24d7(int a1) {
 
-    int result; // (int)((int(*)(int a1))&FUN_100e24d7)
+    int result; // (int)((int(*)(int a1))&FUN_100e24d7<>)
     return (int)(result);
 }
 
@@ -5309,8 +5309,8 @@ int FUN_100e2533(void) {
 #line 1 "ENTRY_100e2cb7"
 int FUN_100e2cb7(void) {
 
-    int result; // (int)((int(*)(void))&FUN_100e2cb7)
-    bool v1; // (int)((int(*)(void))&FUN_100e2cb7)
+    int result; // (int)((int(*)(void))&FUN_100e2cb7<>)
+    bool v1; // (int)((int(*)(void))&FUN_100e2cb7<>)
     if (!v1 && !v1) {
         return (int)(result);
     }
@@ -5394,7 +5394,7 @@ int FUN_100e5d80(void) {
 #line 1 "ENTRY_100e6040"
 int FUN_100e6040(void) {
 
-    int result; // (int)((int(*)(void))&FUN_100e6040)
+    int result; // (int)((int(*)(void))&FUN_100e6040<>)
     return (int)(result);
 }
 
@@ -5402,9 +5402,9 @@ int FUN_100e6040(void) {
 #line 1 "ENTRY_100e6049"
 int FUN_100e6049(int a1) {
 
-    int v1; // (int)((int(*)(int a1))&FUN_100e6049)
-    int v2 = (int)(v1 & 0x30b9119e); // (int)((int(*)(int a1))&FUN_100e6049)
-    int result; // (int)((int(*)(int a1))&FUN_100e6049)
+    int v1; // (int)((int(*)(int a1))&FUN_100e6049<>)
+    int v2 = (int)(v1 & 0x30b9119e); // (int)((int(*)(int a1))&FUN_100e6049<>)
+    int result; // (int)((int(*)(int a1))&FUN_100e6049<>)
     if ((v1 & 14) > 9) {
         result = (int)(((char)v2 > 153 ? 154 : 250) + v2 & 254 | v1 & 0x30b91100);
     } else {
@@ -5448,12 +5448,12 @@ int FUN_100e6160(void) {
 #line 1 "ENTRY_1015bc2b"
 int FUN_1015bc2b(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1015bc2b)
+    int result; // (int)((int(*)(void))&FUN_1015bc2b<>)
 char *v1 = (char *)((char)((char *)(result + 0x15bc0710 + result))); // (int)&FUN_1015bc2c
     unsigned char v2 = (unsigned char)(*v1); // (int)&FUN_1015bc2c
     unsigned char v3 = (unsigned char)(v2 + (char)(result / 256)); // (int)&FUN_1015bc2c
     *v1 = (char)(v3);
-    int v4; // (int)((int(*)(void))&FUN_1015bc2b)
+    int v4; // (int)((int(*)(void))&FUN_1015bc2b<>)
     char v5 = (char)(*(char *)&v4); // (int)&FUN_1015bc33
     *(char*)v4 = (char)((int)(v5 + (char)result + (char)(v3 < v2)));
     return (int)(result);
@@ -5463,9 +5463,9 @@ char *v1 = (char *)((char)((char *)(result + 0x15bc0710 + result))); // (int)&FU
 #line 1 "ENTRY_101b4e45"
 int FUN_101b4e45(void) {
 
-    int result; // (int)((int(*)(void))&FUN_101b4e45)
+    int result; // (int)((int(*)(void))&FUN_101b4e45<>)
     int v1 = (int)(result - 1); // (int)&FUN_101b4e48
-    bool v2; // (int)((int(*)(void))&FUN_101b4e45)
+    bool v2; // (int)((int(*)(void))&FUN_101b4e45<>)
     if (v1 != 0 == v2) {
         return (int)(result);
     }
@@ -5478,7 +5478,7 @@ int *v3 = (int *)((int)((int *)(result + 27))); // (int)&FUN_101b4e50
 #line 1 "ENTRY_101b4f71"
 int FUN_101b4f71(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_101b4f71)
+    int v1; // (int)((int(*)(void))&FUN_101b4f71<>)
     return (int)((v1 | 0x21101b4f) ^ 0x49101b4f);
 }
 
@@ -5486,9 +5486,9 @@ int FUN_101b4f71(void) {
 #line 1 "ENTRY_101b67bf"
 int FUN_101b67bf(void) {
 
-    int result; // (int)((int(*)(void))&FUN_101b67bf)
+    int result; // (int)((int(*)(void))&FUN_101b67bf<>)
     int v1 = (int)(result);
-    bool v2; // (int)((int(*)(void))&FUN_101b67bf)
+    bool v2; // (int)((int(*)(void))&FUN_101b67bf<>)
     if (!v2) {
         return (int)(result);
     }
@@ -5501,11 +5501,11 @@ int FUN_101b67bf(void) {
 #line 1 "ENTRY_101c1a15"
 int FUN_101c1a15(int a1) {
 
-    int v1; // (int)((int(*)(int a1))&FUN_101c1a15)
+    int v1; // (int)((int(*)(int a1))&FUN_101c1a15<>)
     uint v2 = (uint)(v1);
-    bool v3; // (int)((int(*)(int a1))&FUN_101c1a15)
-    uint v4 = (uint)(v2 + 0x15ee101c + (int)v3); // (int)((int(*)(int a1))&FUN_101c1a15)
-    bool v5 = (bool)(v3 ? v4 <= v2 : v2 > 0xea11efe3); // (int)((int(*)(int a1))&FUN_101c1a15)
+    bool v3; // (int)((int(*)(int a1))&FUN_101c1a15<>)
+    uint v4 = (uint)(v2 + 0x15ee101c + (int)v3); // (int)((int(*)(int a1))&FUN_101c1a15<>)
+    bool v5 = (bool)(v3 ? v4 <= v2 : v2 > 0xea11efe3); // (int)((int(*)(int a1))&FUN_101c1a15<>)
     unsigned char v6 = (unsigned char)((char)v4); // (int)&FUN_101c1a1a
     unsigned char v7 = (unsigned char)(v5 ? 17 : 16); // (int)&FUN_101c1a1a
     bool v8 = (bool)(v5 | v7 > v6); // (int)&FUN_101c1a1a
@@ -5523,7 +5523,7 @@ int FUN_101c1a15(int a1) {
     unsigned char v19 = (unsigned char)(v16 - v18);
     bool v20 = (bool)(v17 | v16 < v18);
     if (v17 || v16 == 0) {
-        int v21; // (int)((int(*)(int a1))&FUN_101c1a15)
+        int v21; // (int)((int(*)(int a1))&FUN_101c1a15<>)
         *(char*)v1 = (char)((int)(*(char *)&v21 ^ v10));
         return (int)(v4 & -256 | (int)(v19 - 16 + (v20 ? -17 : -16)));
     }
@@ -5537,7 +5537,7 @@ int FUN_101c1a15(int a1) {
 #line 1 "ENTRY_101cc640"
 int __stdcall FUN_101cc640(int a1) {
 
-    int result; // (int)((int(__stdcall*)(int a1))&FUN_101cc640)
+    int result; // (int)((int(__stdcall*)(int a1))&FUN_101cc640<>)
     *(int*)(result + 4) = (int)(a1);
     *(int*)result = (int)((int)((int)&vftable));
     return (int)(result);
@@ -5547,7 +5547,7 @@ int __stdcall FUN_101cc640(int a1) {
 #line 1 "ENTRY_101cc680"
 int __stdcall FUN_101cc680(int a1) {
 
-    int result; // (int)((int(__stdcall*)(int a1))&FUN_101cc680)
+    int result; // (int)((int(__stdcall*)(int a1))&FUN_101cc680<>)
     *(int*)(result + 4) = (int)(a1);
     *(int*)result = (int)((int)((int)&vftable));
     return (int)(result);
@@ -5557,7 +5557,7 @@ int __stdcall FUN_101cc680(int a1) {
 #line 1 "ENTRY_101cf4d0"
 int __stdcall FUN_101cf4d0(int a1) {
 
-    int result; // (int)((int(__stdcall*)(int a1))&FUN_101cf4d0)
+    int result; // (int)((int(__stdcall*)(int a1))&FUN_101cf4d0<>)
     FUN_10036c23(result, result, a1);
     return (int)(result);
 }
@@ -5566,7 +5566,7 @@ int __stdcall FUN_101cf4d0(int a1) {
 #line 1 "ENTRY_101cf4f0"
 int __stdcall FUN_101cf4f0(int a1) {
 
-    int result; // (int)((int(__stdcall*)(int a1))&FUN_101cf4f0)
+    int result; // (int)((int(__stdcall*)(int a1))&FUN_101cf4f0<>)
     FUN_10036c23(result, result, a1);
     return (int)(result);
 }
@@ -5575,18 +5575,18 @@ int __stdcall FUN_101cf4f0(int a1) {
 #line 1 "ENTRY_101e292a"
 int FUN_101e292a(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_101e292a)
+    int v1; // (int)((int(*)(void))&FUN_101e292a<>)
     int result = (int)(v1);
     if (v1 == 0) {
         return (int)(result);
     }
     unsigned char v2 = (unsigned char)((char)result);
     unsigned char v3 = (unsigned char)(2 * v2); // (int)&FUN_101e292f
-    bool v4; // (int)((int(*)(void))&FUN_101e292a)
+    bool v4; // (int)((int(*)(void))&FUN_101e292a<>)
     unsigned char v5 = (unsigned char)(v3 | (char)v4); // (int)&FUN_101e292f
     *(char*)result = (char)((int)(v5));
     bool v6 = (bool)(v2 > 153 | (v4 ? v5 <= v2 : v3 < v2));
-    int v7; // (int)((int(*)(void))&FUN_101e292a)
+    int v7; // (int)((int(*)(void))&FUN_101e292a<>)
     if ((v2 & 14) > 9 || (v2 & 8) != 0) {
         v7 = (int)(((v6 ? 102 : 6) + result) % 256 | result & -256);
     } else {
@@ -5602,7 +5602,7 @@ char *v9 = (char *)((char)((char *)v8)); // (int)&FUN_101e2933
     *v9 = (char)(v14);
     unsigned char v15 = (unsigned char)((char)v8); // (int)&FUN_101e2935
     bool v16 = (bool)(v15 > 153 | (v6 ? v14 <= v10 : v13 < v10));
-    int v17; // (int)((int(*)(void))&FUN_101e292a)
+    int v17; // (int)((int(*)(void))&FUN_101e292a<>)
     if ((v15 & 14) > 9 || v11 % 16 + v12 + v10 % 16 > 15) {
         v17 = (int)(((v16 ? 102 : 6) + v8) % 256 | v8 & -256);
     } else {
@@ -5610,7 +5610,7 @@ char *v9 = (char *)((char)((char *)v8)); // (int)&FUN_101e2933
         v17 = (int)(v18 % 256 | v8 & -256);
     }
     int v19 = (int)(v17);
-    int v20; // (int)((int(*)(void))&FUN_101e292a)
+    int v20; // (int)((int(*)(void))&FUN_101e292a<>)
     unsigned char v21 = (unsigned char)(*(char *)&v20); // (int)&FUN_101e2937
     unsigned char v22 = (unsigned char)((char)(v1 / 256)); // (int)&FUN_101e2937
     char v23 = (char)(v16); // (int)&FUN_101e2937
@@ -5619,7 +5619,7 @@ char *v9 = (char *)((char)((char *)v8)); // (int)&FUN_101e2933
     *(char*)v20 = (char)((int)(v25));
     unsigned char v26 = (unsigned char)((char)v19); // (int)&FUN_101e2939
     bool v27 = (bool)(v26 > 153 | (v16 ? v25 <= v21 : v24 < v21));
-    int result2; // (int)((int(*)(void))&FUN_101e292a)
+    int result2; // (int)((int(*)(void))&FUN_101e292a<>)
     if ((v26 & 14) > 9 || v22 % 16 + v23 + v21 % 16 > 15) {
         result2 = (int)(((v27 ? 102 : 6) + v19) % 256 | v19 & -256);
     } else {
@@ -5640,7 +5640,7 @@ char *v34 = (char *)((char)((char *)(result2 + v1))); // (int)&FUN_101e293f
     *v34 = (char)(v37);
 char *v39 = (char *)((char)((char *)(v1 - 0x24efe1d8))); // (int)&FUN_101e2943
     *v39 = (char)(*v39 + (char)(v1 / 256) + (char)v38);
-    int v40; // (int)((int(*)(void))&FUN_101e292a)
+    int v40; // (int)((int(*)(void))&FUN_101e292a<>)
     *(char*)v40 = (char)((int)(*(char *)&v40 - v11));
     return (int)(result2);
 }
@@ -5649,7 +5649,7 @@ char *v39 = (char *)((char)((char *)(v1 - 0x24efe1d8))); // (int)&FUN_101e2943
 #line 1 "ENTRY_101f697a"
 int FUN_101f697a(void) {
 
-    int result; // (int)((int(*)(void))&FUN_101f697a)
+    int result; // (int)((int(*)(void))&FUN_101f697a<>)
     return (int)(result);
 }
 
@@ -5657,7 +5657,7 @@ int FUN_101f697a(void) {
 #line 1 "ENTRY_101facbd"
 int FUN_101facbd(short a1, int a2, int a3) {
 
-    int v1; // (int)((int(*)(short a1, int a2, int a3))&FUN_101facbd)
+    int v1; // (int)((int(*)(short a1, int a2, int a3))&FUN_101facbd<>)
 int *v2 = (int *)((int)((int *)(v1 + 0x1fac4510 + v1))); // (int)&FUN_101facc0
     *v2 = (int)(*v2 ^ v1);
 char *v3 = (char *)((char)((char *)(v1 - 84))); // (int)&FUN_101facc7
@@ -5672,7 +5672,7 @@ char *v6 = (char *)((char)((char *)(v1 - 84))); // (int)&FUN_101faccb
     *v6 = (char)(v9);
 char *v11 = (char *)((char)((char *)(v1 - 0x6aefe054))); // (int)&FUN_101faccf
     *v11 = (char)(*v11 + (char)v1 + (char)v10);
-    int v12; // (int)((int(*)(short a1, int a2, int a3))&FUN_101facbd)
+    int v12; // (int)((int(*)(short a1, int a2, int a3))&FUN_101facbd<>)
     return (int)(v1 & -256 | (int)*(char *)&v12);
 }
 
@@ -5680,7 +5680,7 @@ char *v11 = (char *)((char)((char *)(v1 - 0x6aefe054))); // (int)&FUN_101faccf
 #line 1 "ENTRY_101fadc5"
 int FUN_101fadc5(short a1, int a2, int a3, int a4, int a5) {
 
-    int v1; // (int)((int(*)(short a1, int a2, int a3, int a4, int a5))&FUN_101fadc5)
+    int v1; // (int)((int(*)(short a1, int a2, int a3, int a4, int a5))&FUN_101fadc5<>)
     uint v2 = (uint)(v1);
 char *v3 = (char *)((char)((char *)(v1 - 83))); // (int)&FUN_101fadcf
     char v4 = (char)(*v3); // (int)&FUN_101fadcf
@@ -5698,7 +5698,7 @@ char *v6 = (char *)((char)((char *)(v1 - 83))); // (int)&FUN_101fadd3
     *v3 = (char)(v13);
 char *v14 = (char *)((char)((char *)(v1 - 0x62efe053))); // (int)&FUN_101faddb
     *v14 = (char)(*v14 + v5 + (char)(v10 ? v13 <= v11 : v12 < v11));
-    bool v15; // (int)((int(*)(short a1, int a2, int a3, int a4, int a5))&FUN_101fadc5)
+    bool v15; // (int)((int(*)(short a1, int a2, int a3, int a4, int a5))&FUN_101fadc5<>)
     return (int)(*(int *)((v15 ? -4 : 4) + v2));
 }
 
@@ -5706,7 +5706,7 @@ char *v14 = (char *)((char)((char *)(v1 - 0x62efe053))); // (int)&FUN_101faddb
 #line 1 "ENTRY_10207bc7"
 int FUN_10207bc7(void) {
 
-    int result; // (int)((int(*)(void))&FUN_10207bc7)
+    int result; // (int)((int(*)(void))&FUN_10207bc7<>)
     return (int)(result);
 }
 
@@ -5714,13 +5714,13 @@ int FUN_10207bc7(void) {
 #line 1 "ENTRY_10207c40"
 int FUN_10207c40(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_10207c40)
+    int v1; // (int)((int(*)(void))&FUN_10207c40<>)
     int v2 = (int)(v1);
     int v3 = (int)(v1);
-    bool v4; // (int)((int(*)(void))&FUN_10207c40)
-    bool v5 = (bool)((v3 & 14) > 9 | v4); // (int)((int(*)(void))&FUN_10207c40)
+    bool v4; // (int)((int(*)(void))&FUN_10207c40<>)
+    bool v5 = (bool)((v3 & 14) > 9 | v4); // (int)((int(*)(void))&FUN_10207c40<>)
     uint v6 = (uint)(256 * (int)v5 + v3);
-    int result = (int)((v5 ? v3 + 10 : v3) & 15 | v3 & -0x10000 | v6 & 0xff00); // (int)((int(*)(void))&FUN_10207c40)
+    int result = (int)((v5 ? v3 + 10 : v3) & 15 | v3 & -0x10000 | v6 & 0xff00); // (int)((int(*)(void))&FUN_10207c40<>)
     unsigned char v7 = (unsigned char)(*(char *)0x2810207c); // (int)&FUN_10207c43
     char v8 = (char)(v6 / 256); // (int)&FUN_10207c43
     char v9 = (char)(v5); // (int)&FUN_10207c43
@@ -5754,13 +5754,13 @@ char *v22 = (char *)((char)((char *)result)); // (int)&FUN_10207c52
 #line 1 "ENTRY_1020be23"
 int FUN_1020be23(int a1) {
 
-    int v1; // (int)((int(*)(int a1))&FUN_1020be23)
+    int v1; // (int)((int(*)(int a1))&FUN_1020be23<>)
     int v2 = (int)(v1);
     int v3 = (int)(a1);
     *(char*)v2 = (char)((int)((char)(v2 & v1)));
 int *v4 = (int *)((int)((int *)(v1 - 0x41feefe1))); // (int)&FUN_1020be2c
     *v4 = (int)(*v4 + v1);
-    int v5; // (int)((int(*)(int a1))&FUN_1020be23)
+    int v5; // (int)((int(*)(int a1))&FUN_1020be23<>)
     *(char*)v5 = (char)((int)(*(char *)&v5 & (char)v1));
     int v6 = (int)(&v3); // (int)&FUN_1020be34
     v5 = (int)(v6);
@@ -5778,8 +5778,8 @@ int *v4 = (int *)((int)((int *)(v1 - 0x41feefe1))); // (int)&FUN_1020be2c
 #line 1 "ENTRY_10210765"
 int FUN_10210765(void) {
 
-    int result; // (int)((int(*)(void))&FUN_10210765)
-    bool v1; // (int)((int(*)(void))&FUN_10210765)
+    int result; // (int)((int(*)(void))&FUN_10210765<>)
+    bool v1; // (int)((int(*)(void))&FUN_10210765<>)
     if (v1 || false) {
         result = (int)(FUN_10210757(), 0);
     }
@@ -5790,13 +5790,13 @@ int FUN_10210765(void) {
 #line 1 "ENTRY_10210e9d"
 int FUN_10210e9d(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_10210e9d)
+    int v1; // (int)((int(*)(void))&FUN_10210e9d<>)
     int result = (int)(v1);
-    bool v2; // (int)((int(*)(void))&FUN_10210e9d)
+    bool v2; // (int)((int(*)(void))&FUN_10210e9d<>)
     if (v2) {
         *(int*)result = (int)((int)(result & v1));
         *(char*)v1 = (char)((int)((char)result));
-char *v3 = (char *)((char)((char *)(v1 - 0x55efdef5))); // (int)&FUN_10210ea7
+char *v3 = (char *)((char)((char *)(v1 - 0x55efdef5))); // (int)&FUN_10210ea7<>
         *v3 = (char)(*v3 + (char)(v1 / 256));
     }
     return (int)(result);
@@ -5806,8 +5806,8 @@ char *v3 = (char *)((char)((char *)(v1 - 0x55efdef5))); // (int)&FUN_10210ea7
 #line 1 "ENTRY_102179f8"
 int FUN_102179f8(void) {
 
-    int result; // (int)((int(*)(void))&FUN_102179f8)
-    bool v1; // (int)((int(*)(void))&FUN_102179f8)
+    int result; // (int)((int(*)(void))&FUN_102179f8<>)
+    bool v1; // (int)((int(*)(void))&FUN_102179f8<>)
     if (!v1) {
         return (int)(result);
     }
@@ -5820,7 +5820,7 @@ int FUN_102179f8(void) {
         return (int)(result);
     }
     bool v6 = (bool)(v1 ? v5 <= v2 : v4 < v2); // (int)&FUN_102179fb
-    int v7; // (int)((int(*)(void))&FUN_102179f8)
+    int v7; // (int)((int(*)(void))&FUN_102179f8<>)
     unsigned char v8 = (unsigned char)(*(char *)&v7); // (int)&FUN_102179ff
     unsigned char v9 = (unsigned char)(v8 + v3); // (int)&FUN_102179ff
     char v10 = (char)(v9 + (char)v6); // (int)&FUN_102179ff
@@ -5829,7 +5829,7 @@ int FUN_102179f8(void) {
         return (int)(result);
     }
     bool v11 = (bool)(v6 ? v10 <= v8 : v9 < v8); // (int)&FUN_102179ff
-    int v12; // (int)((int(*)(void))&FUN_102179f8)
+    int v12; // (int)((int(*)(void))&FUN_102179f8<>)
     unsigned char v13 = (unsigned char)(*(char *)&v12); // (int)&FUN_10217a03
     char v14 = (char)((uint)result / 256); // (int)&FUN_10217a03
     unsigned char v15 = (unsigned char)(v13 + v14); // (int)&FUN_10217a03
@@ -5856,7 +5856,7 @@ char *v22 = (char *)((char)((char *)(result + 33 + 2 * v7))); // (int)&FUN_10217
 #line 1 "ENTRY_10217aa3"
 int FUN_10217aa3(void) {
 
-    int result; // (int)((int(*)(void))&FUN_10217aa3)
+    int result; // (int)((int(*)(void))&FUN_10217aa3<>)
 char *v1 = (char *)((char)((char *)(result - 0x6eefde86))); // (int)&FUN_10217aa7
     char v2 = (char)(*v1); // (int)&FUN_10217aa7
     unsigned char v3 = (unsigned char)((char)result); // (int)&FUN_10217aa7
@@ -5885,7 +5885,7 @@ char *v12 = (char *)((char)((char *)(result - 0x62efde86))); // (int)&FUN_10217a
 #line 1 "ENTRY_1021aa2c"
 int FUN_1021aa2c(int a1, int a2, int a3, int a4) {
 
-    int v1; // (int)((int(*)(int a1, int a2, int a3, int a4))&FUN_1021aa2c)
+    int v1; // (int)((int(*)(int a1, int a2, int a3, int a4))&FUN_1021aa2c<>)
     int v2 = (int)(v1);
     *(char*)v2 = (char)((int)(2 * (char)v2));
     return (int)(v2 & -256);
@@ -5895,7 +5895,7 @@ int FUN_1021aa2c(int a1, int a2, int a3, int a4) {
 #line 1 "ENTRY_10224770"
 int __stdcall FUN_10224770(int a1) {
 
-    int result; // (int)((int(__stdcall*)(int a1))&FUN_10224770)
+    int result; // (int)((int(__stdcall*)(int a1))&FUN_10224770<>)
     *(int*)(result + 4) = (int)(a1);
     *(int*)result = (int)((int)((int)&vftable));
     return (int)(result);
@@ -5905,7 +5905,7 @@ int __stdcall FUN_10224770(int a1) {
 #line 1 "ENTRY_102247b0"
 int __stdcall FUN_102247b0(int a1) {
 
-    int result; // (int)((int(__stdcall*)(int a1))&FUN_102247b0)
+    int result; // (int)((int(__stdcall*)(int a1))&FUN_102247b0<>)
     *(int*)(result + 4) = (int)(a1);
     *(int*)result = (int)((int)((int)&vftable));
     return (int)(result);
@@ -5915,7 +5915,7 @@ int __stdcall FUN_102247b0(int a1) {
 #line 1 "ENTRY_102247e0"
 int __stdcall FUN_102247e0(unsigned int recovered_unused_stack_0) {
 
-    int result; // (int)((int(__stdcall*)(void))&FUN_102247e0)
+    int result; // (int)((int(__stdcall*)(void))&FUN_102247e0<>)
     *(int*)result = (int)((int)((int)&vftable));
     return (int)(result);
 }
@@ -5924,7 +5924,7 @@ int __stdcall FUN_102247e0(unsigned int recovered_unused_stack_0) {
 #line 1 "ENTRY_102249c0"
 int __stdcall FUN_102249c0(int a1) {
 
-    int result; // (int)((int(__stdcall*)(int a1))&FUN_102249c0)
+    int result; // (int)((int(__stdcall*)(int a1))&FUN_102249c0<>)
     *(int*)(result + 4) = (int)(a1);
     *(int*)result = (int)((int)((int)&vftable));
     return (int)(result);
@@ -5934,7 +5934,7 @@ int __stdcall FUN_102249c0(int a1) {
 #line 1 "ENTRY_10224a00"
 int __stdcall FUN_10224a00(int a1) {
 
-    int result; // (int)((int(__stdcall*)(int a1))&FUN_10224a00)
+    int result; // (int)((int(__stdcall*)(int a1))&FUN_10224a00<>)
     *(int*)(result + 4) = (int)(a1);
     *(int*)result = (int)((int)((int)&vftable));
     return (int)(result);
@@ -5944,7 +5944,7 @@ int __stdcall FUN_10224a00(int a1) {
 #line 1 "ENTRY_10224a30"
 int __stdcall FUN_10224a30(unsigned int recovered_unused_stack_0) {
 
-    int result; // (int)((int(__stdcall*)(void))&FUN_10224a30)
+    int result; // (int)((int(__stdcall*)(void))&FUN_10224a30<>)
     *(int*)result = (int)((int)((int)&vftable));
     return (int)(result);
 }
@@ -5953,7 +5953,7 @@ int __stdcall FUN_10224a30(unsigned int recovered_unused_stack_0) {
 #line 1 "ENTRY_10224a60"
 int __stdcall FUN_10224a60(unsigned int recovered_unused_stack_0) {
 
-    int result; // (int)((int(__stdcall*)(void))&FUN_10224a60)
+    int result; // (int)((int(__stdcall*)(void))&FUN_10224a60<>)
     *(int*)result = (int)((int)((int)&vftable));
     return (int)(result);
 }
@@ -5962,7 +5962,7 @@ int __stdcall FUN_10224a60(unsigned int recovered_unused_stack_0) {
 #line 1 "ENTRY_10224aa0"
 int __stdcall FUN_10224aa0(int a1) {
 
-    int result; // (int)((int(__stdcall*)(int a1))&FUN_10224aa0)
+    int result; // (int)((int(__stdcall*)(int a1))&FUN_10224aa0<>)
     *(int*)(result + 4) = (int)(a1);
     *(int*)result = (int)((int)((int)&vftable));
     return (int)(result);
@@ -5972,7 +5972,7 @@ int __stdcall FUN_10224aa0(int a1) {
 #line 1 "ENTRY_10225b10"
 int FUN_10225b10(int a1) {
 
-    int result; // (int)((int(*)(int a1))&FUN_10225b10)
+    int result; // (int)((int(*)(int a1))&FUN_10225b10<>)
     return (int)(result);
 }
 
@@ -5989,7 +5989,7 @@ int FUN_10225b80(int a1, int a2) {
 
     int v1 = (int)(*(int *)(a1 + 44)); // (int)&FUN_10225b92
     if (v1 == 0) {
-        int v2; // (int)((int(*)(int a1, int a2))&FUN_10225b80)
+        int v2; // (int)((int(*)(int a1, int a2))&FUN_10225b80<>)
         return (int)(_Xbad_function_call(v2, *(int *)a1, *(int *)*(int *)a2));
     }
     return (int)(*(int *)v1);
@@ -5999,7 +5999,7 @@ int FUN_10225b80(int a1, int a2) {
 #line 1 "ENTRY_102282c0"
 int FUN_102282c0(int a1) {
 
-    int result; // (int)((int(*)(int a1))&FUN_102282c0)
+    int result; // (int)((int(*)(int a1))&FUN_102282c0<>)
     return (int)(result);
 }
 
@@ -6017,7 +6017,7 @@ int FUN_10228330(int a1, int a2) {
 
     int v1 = (int)(*(int *)(a1 + 44)); // (int)&FUN_10228342
     if (v1 == 0) {
-        int v2; // (int)((int(*)(int a1, int a2))&FUN_10228330)
+        int v2; // (int)((int(*)(int a1, int a2))&FUN_10228330<>)
         return (int)(_Xbad_function_call(v2, *(int *)a1, *(int *)*(int *)a2));
     }
     return (int)(*(int *)v1);
@@ -6027,7 +6027,7 @@ int FUN_10228330(int a1, int a2) {
 #line 1 "ENTRY_1022fb40"
 int FUN_1022fb40(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1022fb40)
+    int result; // (int)((int(*)(void))&FUN_1022fb40<>)
     return (int)(result);
 }
 
@@ -6051,8 +6051,8 @@ int FUN_10235a48(void) {
 #line 1 "ENTRY_1023a851"
 int FUN_1023a851(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1023a851)
-    int v1; // (int)((int(*)(void))&FUN_1023a851)
+    int result; // (int)((int(*)(void))&FUN_1023a851<>)
+    int v1; // (int)((int(*)(void))&FUN_1023a851<>)
     if (v1 == 0) {
         result = (int)(FUN_1023a7fd(), 0);
     }
@@ -6063,8 +6063,8 @@ int FUN_1023a851(void) {
 #line 1 "ENTRY_1023e5a8"
 int __stdcall FUN_1023e5a8(int a1, int a2) {
 
-    int v1; // (int)((int(__stdcall*)(int a1, int a2))&FUN_1023e5a8)
-char *v2 = (char *)((char)((char *)(v1 + 95))); // (int)((int(__stdcall*)(int a1, int a2))&FUN_1023e5a8)
+    int v1; // (int)((int(__stdcall*)(int a1, int a2))&FUN_1023e5a8<>)
+char *v2 = (char *)((char)((char *)(v1 + 95))); // (int)((int(__stdcall*)(int a1, int a2))&FUN_1023e5a8<>)
     *v2 = (char)(*v2 + (char)v1);
     return (int)(thunk_FUN_1148ac28());
 }
@@ -6073,8 +6073,8 @@ char *v2 = (char *)((char)((char *)(v1 + 95))); // (int)((int(__stdcall*)(int a1
 #line 1 "ENTRY_102488f5"
 int FUN_102488f5(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_102488f5)
-    int result = (int)(v1 & -240); // (int)&FUN_10248902
+    int v1; // (int)((int(*)(void))&FUN_102488f5<>)
+    int result = (int)(v1 & -240); // (int)&FUN_10248902<>
     *(char*)(result + v1) = (char)((char)(v1 / 256));
     return (int)(result);
 }
@@ -6084,9 +6084,9 @@ int FUN_102488f5(void) {
 int FUN_10249082(void) {
     int g1;
 
-    int v1; // (int)((int(*)(void))&FUN_10249082)
-char *v2 = (char *)((char)((char *)(v1 + 0x13eb1188))); // (int)((int(*)(void))&FUN_10249082)
-    bool v3; // (int)((int(*)(void))&FUN_10249082)
+    int v1; // (int)((int(*)(void))&FUN_10249082<>)
+char *v2 = (char *)((char)((char *)(v1 + 0x13eb1188))); // (int)((int(*)(void))&FUN_10249082<>)
+    bool v3; // (int)((int(*)(void))&FUN_10249082<>)
     *v2 = (char)(128 * (char)v3 | *v2 / 2);
     int result = (int)(function_1024909b((int)&g1, (int)&g1, (int)&g1), 0); // (int)&FUN_1024908d
     return (int)(result);
@@ -6103,7 +6103,7 @@ int FUN_10249c36(void) {
 #line 1 "ENTRY_1024cdb6"
 int FUN_1024cdb6(int a1) {
 
-    int v1; // (int)((int(*)(int a1))&FUN_1024cdb6)
+    int v1; // (int)((int(*)(int a1))&FUN_1024cdb6<>)
     return (int)(v1 & -240);
 }
 
@@ -6118,7 +6118,7 @@ int FUN_10258680(void) {
 #line 1 "ENTRY_102634a0"
 int __stdcall FUN_102634a0(int a1) {
 
-    int result; // (int)((int(__stdcall*)(int a1))&FUN_102634a0)
+    int result; // (int)((int(__stdcall*)(int a1))&FUN_102634a0<>)
     *(int*)(result + 4) = (int)(a1);
     *(int*)result = (int)((int)((int)&vftable));
     return (int)(result);
@@ -6128,7 +6128,7 @@ int __stdcall FUN_102634a0(int a1) {
 #line 1 "ENTRY_10263610"
 int __stdcall FUN_10263610(int a1) {
 
-    int result; // (int)((int(__stdcall*)(int a1))&FUN_10263610)
+    int result; // (int)((int(__stdcall*)(int a1))&FUN_10263610<>)
     *(int*)(result + 4) = (int)(a1);
     *(int*)result = (int)((int)((int)&vftable));
     return (int)(result);
@@ -6154,7 +6154,7 @@ int *v4 = (int *)((int)((int *)(v1 + 108)));
         return (int)(result);
     }
     int v5 = (int)(*(int *)a2); // (int)&FUN_10263944
-    int v6; // (int)((int(*)(int a1, int a2, int a3))&FUN_10263900)
+    int v6; // (int)((int(*)(int a1, int a2, int a3))&FUN_10263900<>)
     return (int)(thunk_FUN_112af4e0((int)&s_SCLandingPagePremiumSonosRadio_1188bcf0, 4, (int)&s_Successfully_purchased_product_w_1188bcbc, v5 != 0 ? v5 : (int)&DAT_1186d2ee, v6, v6, v6));
 }
 
@@ -6178,7 +6178,7 @@ int *v4 = (int *)((int)((int *)(v1 + 108)));
         return (int)(result);
     }
     int v5 = (int)(*(int *)a2); // (int)&FUN_10265554
-    int v6; // (int)((int(*)(int a1, int a2, int a3))&FUN_10265510)
+    int v6; // (int)((int(*)(int a1, int a2, int a3))&FUN_10265510<>)
     return (int)(thunk_FUN_112af4e0((int)&s_SCLandingPagePremiumSonosRadio_1188bcf0, 4, (int)&s_Successfully_purchased_product_w_1188bcbc, v5 != 0 ? v5 : (int)&DAT_1186d2ee, v6, v6, v6));
 }
 
@@ -6186,7 +6186,7 @@ int *v4 = (int *)((int)((int *)(v1 + 108)));
 #line 1 "ENTRY_1026e320"
 int __stdcall FUN_1026e320(int a1) {
 
-    int result; // (int)((int(__stdcall*)(int a1))&FUN_1026e320)
+    int result; // (int)((int(__stdcall*)(int a1))&FUN_1026e320<>)
     *(int*)(result + 4) = (int)(a1);
     *(int*)result = (int)((int)((int)&vftable));
     return (int)(result);
@@ -6196,7 +6196,7 @@ int __stdcall FUN_1026e320(int a1) {
 #line 1 "ENTRY_1026e360"
 int __stdcall FUN_1026e360(int a1) {
 
-    int result; // (int)((int(__stdcall*)(int a1))&FUN_1026e360)
+    int result; // (int)((int(__stdcall*)(int a1))&FUN_1026e360<>)
     *(int*)(result + 4) = (int)(a1);
     *(int*)result = (int)((int)((int)&vftable));
     return (int)(result);
@@ -6206,7 +6206,7 @@ int __stdcall FUN_1026e360(int a1) {
 #line 1 "ENTRY_10271f80"
 int __stdcall FUN_10271f80(unsigned int recovered_unused_stack_0) {
 
-    int result; // (int)((int(__stdcall*)(void))&FUN_10271f80)
+    int result; // (int)((int(__stdcall*)(void))&FUN_10271f80<>)
     *(int*)result = (int)((int)((int)&vftable));
     return (int)(result);
 }
@@ -6215,7 +6215,7 @@ int __stdcall FUN_10271f80(unsigned int recovered_unused_stack_0) {
 #line 1 "ENTRY_10271fc0"
 int __stdcall FUN_10271fc0(int a1) {
 
-    int result; // (int)((int(__stdcall*)(int a1))&FUN_10271fc0)
+    int result; // (int)((int(__stdcall*)(int a1))&FUN_10271fc0<>)
     *(int*)(result + 4) = (int)(a1);
     *(int*)result = (int)((int)((int)&vftable));
     return (int)(result);
@@ -6225,7 +6225,7 @@ int __stdcall FUN_10271fc0(int a1) {
 #line 1 "ENTRY_10274720"
 int __stdcall FUN_10274720(int a1) {
 
-    int result; // (int)((int(__stdcall*)(int a1))&FUN_10274720)
+    int result; // (int)((int(__stdcall*)(int a1))&FUN_10274720<>)
     FUN_10036c23(result, result, a1);
     return (int)(result);
 }

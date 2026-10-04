@@ -4572,8 +4572,8 @@ int FUN_115dbfdc(int a1) {
 #line 1 "ENTRY_115dc124"
 int FUN_115dc124(void) {
 
-    int result; // (int)((int(*)(void))&FUN_115dc124)
-int *v1 = (int *)((int)((int *)(result + 0x1418b8fe))); // (int)((int(*)(void))&FUN_115dc124)
+    int result; // (int)((int(*)(void))&FUN_115dc124<>)
+int *v1 = (int *)((int)((int *)(result + 0x1418b8fe))); // (int)((int(*)(void))&FUN_115dc124<>)
     *v1 = (int)(8 * *v1);
     return (int)(result);
 }

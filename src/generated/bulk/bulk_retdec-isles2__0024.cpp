@@ -1143,7 +1143,7 @@ int FUN_117ce48d(int a1) {
 #line 1 "ENTRY_117ce4a2"
 int FUN_117ce4a2(int a1) {
 
-    int result; // (int)((int(*)(int a1))&FUN_117ce4a2)
+    int result; // (int)((int(*)(int a1))&FUN_117ce4a2<>)
     return (int)(result);
 }
 
@@ -2280,7 +2280,7 @@ int FUN_117d090d(int a1) {
 #line 1 "ENTRY_117d0922"
 int FUN_117d0922(int a1) {
 
-    int v1; // (int)((int(*)(int a1))&FUN_117d0922)
+    int v1; // (int)((int(*)(int a1))&FUN_117d0922<>)
     return (int)(v1 - 0x3b4216ee);
 }
 
@@ -2555,7 +2555,7 @@ int FUN_117d12ad(int a1) {
 #line 1 "ENTRY_117d12cc"
 int FUN_117d12cc(void) {
 
-    int result; // (int)((int(*)(void))&FUN_117d12cc)
+    int result; // (int)((int(*)(void))&FUN_117d12cc<>)
     int v1 = (int)(result);
     *(char*)v1 = (char)((int)((char)result + (char)v1));
     return (int)(result);
@@ -2823,7 +2823,7 @@ int FUN_1183f350(void) {
 #line 1 "ENTRY_11840f70"
 int FUN_11840f70(void) {
 
-    int result; // (int)((int(*)(void))&FUN_11840f70)
+    int result; // (int)((int(*)(void))&FUN_11840f70<>)
     return (int)(result);
 }
 
@@ -2880,9 +2880,9 @@ int FUN_11861320(void) {
 #line 1 "ENTRY_11861ea2"
 int FUN_11861ea2(void) {
 
-    int result; // (int)((int(*)(void))&FUN_11861ea2)
+    int result; // (int)((int(*)(void))&FUN_11861ea2<>)
     uint v1 = (uint)(result);
-    bool v2; // (int)((int(*)(void))&FUN_11861ea2)
+    bool v2; // (int)((int(*)(void))&FUN_11861ea2<>)
     *(int*)v1 = (int)((uint)(v1 / 0x8000 | 0x40000 * v1 | 0x20000 * (int)v2));
     *(int *)&DAT_1211c1d0 = (int)&vftable;
     return (int)(result);

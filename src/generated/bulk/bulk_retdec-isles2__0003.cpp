@@ -3126,7 +3126,7 @@ template<class... A> int FUN_10038b5e(A...);
 #line 1 "ENTRY_1002b681"
 int FUN_1002b681(short a1, int result, int a3) {
 
-    int v1; // (int)((int(*)(short a1, int result, int a3))&FUN_1002b681)
+    int v1; // (int)((int(*)(short a1, int result, int a3))&FUN_1002b681<>)
     *(char *)0x32e9000f = (char)v1;
     *(short*)(v1 + 33) = (short)((short)v1);
     return (int)(result);
@@ -3136,9 +3136,9 @@ int FUN_1002b681(short a1, int result, int a3) {
 #line 1 "ENTRY_1002c8f1"
 int FUN_1002c8f1(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_1002c8f1)
+    int v1; // (int)((int(*)(void))&FUN_1002c8f1<>)
     int v2 = (int)(v1);
-    unsigned char v3 = (unsigned char)((char)v1 % 32); // (int)((int(*)(void))&FUN_1002c8f1)
+    unsigned char v3 = (unsigned char)((char)v1 % 32); // (int)((int(*)(void))&FUN_1002c8f1<>)
     if (v3 != 0) {
         *(char*)v2 = (char)((int)((char)v2 >> v3));
     }
@@ -3149,9 +3149,9 @@ int FUN_1002c8f1(void) {
 #line 1 "ENTRY_1002d672"
 int FUN_1002d672(int a1) {
 
-    int v1; // (int)((int(*)(int a1))&FUN_1002d672)
+    int v1; // (int)((int(*)(int a1))&FUN_1002d672<>)
     uint v2 = (uint)(v1);
-    int result; // (int)((int(*)(int a1))&FUN_1002d672)
+    int result; // (int)((int(*)(int a1))&FUN_1002d672<>)
     if ((char)(v2 / 256) + (char)v2 < 0) {
         result = (int)(FUN_1002d601(a1), 0);
     }
@@ -3162,7 +3162,7 @@ int FUN_1002d672(int a1) {
 #line 1 "ENTRY_1002eee1"
 int FUN_1002eee1(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_1002eee1)
+    int v1; // (int)((int(*)(void))&FUN_1002eee1<>)
     *(int*)v1 = (int)((int)(-0x49fe4b17));
     return (int)(FUN_1002ee91());
 }
@@ -3171,9 +3171,9 @@ int FUN_1002eee1(void) {
 #line 1 "ENTRY_1002f001"
 int FUN_1002f001(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1002f001)
+    int result; // (int)((int(*)(void))&FUN_1002f001<>)
     int v1 = (int)(result);
-    bool v2; // (int)((int(*)(void))&FUN_1002f001)
+    bool v2; // (int)((int(*)(void))&FUN_1002f001<>)
     *(char*)v1 = (char)((int)(2 * (char)v1 | (char)v2));
     return (int)(result);
 }
@@ -3182,7 +3182,7 @@ int FUN_1002f001(void) {
 #line 1 "ENTRY_1002fc81"
 int FUN_1002fc81(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1002fc81)
+    int result; // (int)((int(*)(void))&FUN_1002fc81<>)
     return (int)(result);
 }
 
@@ -3190,7 +3190,7 @@ int FUN_1002fc81(void) {
 #line 1 "ENTRY_1002ff51"
 int FUN_1002ff51(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1002ff51)
+    int result; // (int)((int(*)(void))&FUN_1002ff51<>)
     return (int)(result);
 }
 
@@ -3198,9 +3198,9 @@ int FUN_1002ff51(void) {
 #line 1 "ENTRY_10031b71"
 int FUN_10031b71(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_10031b71)
+    int v1; // (int)((int(*)(void))&FUN_10031b71<>)
     *(char*)v1 = (char)((int)((char)v1));
-    bool v2; // (int)((int(*)(void))&FUN_10031b71)
+    bool v2; // (int)((int(*)(void))&FUN_10031b71<>)
     return (int)(2 * v1 + (int)v2);
 }
 
@@ -3208,7 +3208,7 @@ int FUN_10031b71(void) {
 #line 1 "ENTRY_10033471"
 int FUN_10033471(void) {
 
-    int result; // (int)((int(*)(void))&FUN_10033471)
+    int result; // (int)((int(*)(void))&FUN_10033471<>)
     return (int)(result);
 }
 
@@ -3216,7 +3216,7 @@ int FUN_10033471(void) {
 #line 1 "ENTRY_10034691"
 int FUN_10034691(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_10034691)
+    int v1; // (int)((int(*)(void))&FUN_10034691<>)
     uint v2 = (uint)(v1 / 256); // (int)&FUN_10034693
     unsigned char v3 = (unsigned char)((char)(v2 + v1)); // (int)&FUN_10034698
     unsigned char v4 = (unsigned char)(v3 + (char)v2); // (int)&FUN_10034698
@@ -3226,7 +3226,7 @@ char *v6 = (char *)((char)((char *)((0x10000 * v1 >> 16) - 105))); // (int)&FUN_
         unsigned char v7 = (unsigned char)(*v6); // (int)&FUN_1003469a
         *v6 = (char)((char)(v4 < v3) << v5 - 1 | v7 << v5 | (char)((short)v7 >> (short)(9 - v5)));
     }
-    bool v8; // (int)((int(*)(void))&FUN_10034691)
+    bool v8; // (int)((int(*)(void))&FUN_10034691<>)
     return (int)((v8 ? -4 : 4) + v1);
 }
 
@@ -3234,7 +3234,7 @@ char *v6 = (char *)((char)((char *)((0x10000 * v1 >> 16) - 105))); // (int)&FUN_
 #line 1 "ENTRY_10034a07"
 int FUN_10034a07(int a1) {
 
-    int result; // (int)((int(*)(int a1))&FUN_10034a07)
+    int result; // (int)((int(*)(int a1))&FUN_10034a07<>)
     return (int)(result);
 }
 
@@ -3242,7 +3242,7 @@ int FUN_10034a07(int a1) {
 #line 1 "ENTRY_10036ce4"
 int FUN_10036ce4(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_10036ce4)
+    int v1; // (int)((int(*)(void))&FUN_10036ce4<>)
     uint v2 = (uint)(v1);
     int v3 = (int)(v1);
     return (int)((v3 + 228 + (int)(-1 - (char)v2 < (char)(v2 / 256))) % 256 | v3 & -256);

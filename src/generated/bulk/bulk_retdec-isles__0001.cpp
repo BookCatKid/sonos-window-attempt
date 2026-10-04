@@ -3696,7 +3696,7 @@ int FUN_11454e70(int result, int a2) {
 #line 1 "ENTRY_11456f60"
 int FUN_11456f60(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_11456f60)
+    int v1; // (int)((int(*)(void))&FUN_11456f60<>)
     return (int)(*(int *)(v1 + 220) / 2048 & 0x1fff01);
 }
 
@@ -3704,7 +3704,7 @@ int FUN_11456f60(void) {
 #line 1 "ENTRY_11458a70"
 int FUN_11458a70(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_11458a70)
+    int v1; // (int)((int(*)(void))&FUN_11458a70<>)
     return (int)(*(int *)(v1 + 212) / 8 & 0x1fffff01);
 }
 
@@ -3743,7 +3743,7 @@ int FUN_1147cfc0(int a1, int a2, int result) {
 #line 1 "ENTRY_11489c82"
 int FUN_11489c82(void) {
 
-    int result; // (int)((int(*)(void))&FUN_11489c82)
+    int result; // (int)((int(*)(void))&FUN_11489c82<>)
     return (int)(result);
 }
 
@@ -3751,7 +3751,7 @@ int FUN_11489c82(void) {
 #line 1 "ENTRY_11489ca0"
 int FUN_11489ca0(void) {
 
-    int result; // (int)((int(*)(void))&FUN_11489ca0)
+    int result; // (int)((int(*)(void))&FUN_11489ca0<>)
     return (int)(result);
 }
 
@@ -3759,7 +3759,7 @@ int FUN_11489ca0(void) {
 #line 1 "ENTRY_11489cc7"
 int FUN_11489cc7(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_11489cc7)
+    int v1; // (int)((int(*)(void))&FUN_11489cc7<>)
     return (int)(v1 & (int)&PTR_Ordinal_21_122fc5d0);
 }
 
@@ -3767,7 +3767,7 @@ int FUN_11489cc7(void) {
 #line 1 "ENTRY_11489dfc"
 int FUN_11489dfc(void) {
 
-    int result; // (int)((int(*)(void))&FUN_11489dfc)
+    int result; // (int)((int(*)(void))&FUN_11489dfc<>)
     return (int)(result);
 }
 
@@ -3775,7 +3775,7 @@ int FUN_11489dfc(void) {
 #line 1 "ENTRY_11489e50"
 int FUN_11489e50(void) {
 
-    int result; // (int)((int(*)(void))&FUN_11489e50)
+    int result; // (int)((int(*)(void))&FUN_11489e50<>)
     return (int)(result);
 }
 
@@ -3783,7 +3783,7 @@ int FUN_11489e50(void) {
 #line 1 "ENTRY_11489e6b"
 int FUN_11489e6b(void) {
 
-    int result; // (int)((int(*)(void))&FUN_11489e6b)
+    int result; // (int)((int(*)(void))&FUN_11489e6b<>)
     uint v1 = (uint)(result);
     *(int*)v1 = (int)((uint)(v1 / 0x40000));
     return (int)(result);
@@ -3793,7 +3793,7 @@ int FUN_11489e6b(void) {
 #line 1 "ENTRY_11489ea4"
 int FUN_11489ea4(void) {
 
-    int result; // (int)((int(*)(void))&FUN_11489ea4)
+    int result; // (int)((int(*)(void))&FUN_11489ea4<>)
     return (int)(result);
 }
 
@@ -3801,7 +3801,7 @@ int FUN_11489ea4(void) {
 #line 1 "ENTRY_11489ee6"
 int FUN_11489ee6(void) {
 
-    int result; // (int)((int(*)(void))&FUN_11489ee6)
+    int result; // (int)((int(*)(void))&FUN_11489ee6<>)
     return (int)(result);
 }
 
@@ -3809,7 +3809,7 @@ int FUN_11489ee6(void) {
 #line 1 "ENTRY_11489f82"
 int FUN_11489f82(void) {
 
-    int result; // (int)((int(*)(void))&FUN_11489f82)
+    int result; // (int)((int(*)(void))&FUN_11489f82<>)
     return (int)(result);
 }
 
@@ -3817,7 +3817,7 @@ int FUN_11489f82(void) {
 #line 1 "ENTRY_1148a042"
 int FUN_1148a042(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1148a042)
+    int result; // (int)((int(*)(void))&FUN_1148a042<>)
     return (int)(result);
 }
 
@@ -3825,7 +3825,7 @@ int FUN_1148a042(void) {
 #line 1 "ENTRY_1148a078"
 int FUN_1148a078(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1148a078)
+    int result; // (int)((int(*)(void))&FUN_1148a078<>)
     return (int)(result);
 }
 
@@ -3833,7 +3833,7 @@ int FUN_1148a078(void) {
 #line 1 "ENTRY_1148a09f"
 int FUN_1148a09f(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1148a09f)
+    int result; // (int)((int(*)(void))&FUN_1148a09f<>)
     return (int)(result);
 }
 
@@ -3841,7 +3841,7 @@ int FUN_1148a09f(void) {
 #line 1 "ENTRY_1148a213"
 int FUN_1148a213(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1148a213)
+    int result; // (int)((int(*)(void))&FUN_1148a213<>)
     return (int)(result);
 }
 
@@ -3849,7 +3849,7 @@ int FUN_1148a213(void) {
 #line 1 "ENTRY_1148a255"
 int FUN_1148a255(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1148a255)
+    int result; // (int)((int(*)(void))&FUN_1148a255<>)
     return (int)(result);
 }
 
@@ -3857,7 +3857,7 @@ int FUN_1148a255(void) {
 #line 1 "ENTRY_1148a285"
 int FUN_1148a285(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1148a285)
+    int result; // (int)((int(*)(void))&FUN_1148a285<>)
     return (int)(result);
 }
 
@@ -3865,7 +3865,7 @@ int FUN_1148a285(void) {
 #line 1 "ENTRY_1148a2af"
 int FUN_1148a2af(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1148a2af)
+    int result; // (int)((int(*)(void))&FUN_1148a2af<>)
     return (int)(result);
 }
 
@@ -3873,7 +3873,7 @@ int FUN_1148a2af(void) {
 #line 1 "ENTRY_1148a2d3"
 int FUN_1148a2d3(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1148a2d3)
+    int result; // (int)((int(*)(void))&FUN_1148a2d3<>)
     return (int)(result);
 }
 
@@ -3888,7 +3888,7 @@ int FUN_1148aa54(void) {
 #line 1 "ENTRY_1148cda5"
 int FUN_1148cda5(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1148cda5)
+    int result; // (int)((int(*)(void))&FUN_1148cda5<>)
     return (int)(result);
 }
 
@@ -3896,7 +3896,7 @@ int FUN_1148cda5(void) {
 #line 1 "ENTRY_1148ce53"
 int FUN_1148ce53(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1148ce53)
+    int result; // (int)((int(*)(void))&FUN_1148ce53<>)
     return (int)(result);
 }
 
@@ -3904,7 +3904,7 @@ int FUN_1148ce53(void) {
 #line 1 "ENTRY_1148ce89"
 int FUN_1148ce89(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1148ce89)
+    int result; // (int)((int(*)(void))&FUN_1148ce89<>)
     return (int)(result);
 }
 
@@ -3912,7 +3912,7 @@ int FUN_1148ce89(void) {
 #line 1 "ENTRY_1148cf31"
 int FUN_1148cf31(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1148cf31)
+    int result; // (int)((int(*)(void))&FUN_1148cf31<>)
     return (int)(result);
 }
 
@@ -3920,7 +3920,7 @@ int FUN_1148cf31(void) {
 #line 1 "ENTRY_1148cfb5"
 int FUN_1148cfb5(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1148cfb5)
+    int result; // (int)((int(*)(void))&FUN_1148cfb5<>)
     return (int)(result);
 }
 
@@ -3928,7 +3928,7 @@ int FUN_1148cfb5(void) {
 #line 1 "ENTRY_1148cff7"
 int FUN_1148cff7(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1148cff7)
+    int result; // (int)((int(*)(void))&FUN_1148cff7<>)
     return (int)(result);
 }
 
@@ -3936,7 +3936,7 @@ int FUN_1148cff7(void) {
 #line 1 "ENTRY_1148d039"
 int FUN_1148d039(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1148d039)
+    int result; // (int)((int(*)(void))&FUN_1148d039<>)
     return (int)(result);
 }
 
@@ -3944,7 +3944,7 @@ int FUN_1148d039(void) {
 #line 1 "ENTRY_1148d0d5"
 int FUN_1148d0d5(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1148d0d5)
+    int result; // (int)((int(*)(void))&FUN_1148d0d5<>)
     return (int)(result);
 }
 
@@ -3952,7 +3952,7 @@ int FUN_1148d0d5(void) {
 #line 1 "ENTRY_1148d171"
 int FUN_1148d171(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1148d171)
+    int result; // (int)((int(*)(void))&FUN_1148d171<>)
     return (int)(result);
 }
 

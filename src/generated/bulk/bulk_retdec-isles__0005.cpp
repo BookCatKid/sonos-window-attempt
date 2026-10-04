@@ -10490,8 +10490,8 @@ int FUN_1155a134(int a1) {
 #line 1 "ENTRY_1155a224"
 int FUN_1155a224(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_1155a224)
-    bool v2; // (int)((int(*)(void))&FUN_1155a224)
+    int v1; // (int)((int(*)(void))&FUN_1155a224<>)
+    bool v2; // (int)((int(*)(void))&FUN_1155a224<>)
     if (v1 != 1 && !v2) {
         FUN_1155a1d3();
     }

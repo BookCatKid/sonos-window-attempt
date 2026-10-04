@@ -14368,9 +14368,9 @@ int FUN_11506c83(int a1) {
 #line 1 "ENTRY_11506d24"
 int FUN_11506d24(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_11506d24)
-    bool v2; // (int)((int(*)(void))&FUN_11506d24)
-    int v3 = (int)(v1 - 0x7574014d + (int)v2); // (int)((int(*)(void))&FUN_11506d24)
+    int v1; // (int)((int(*)(void))&FUN_11506d24<>)
+    bool v2; // (int)((int(*)(void))&FUN_11506d24<>)
+    int v3 = (int)(v1 - 0x7574014d + (int)v2); // (int)((int(*)(void))&FUN_11506d24<>)
     int v4 = (int)(v3 & 251 | 4); // (int)&FUN_11506d29
 char *v5 = (char *)((char)((char *)(v4 | v3 & -256))); // (int)&FUN_11506d2b
     *v5 = (char)(*v5 + (char)v4);
