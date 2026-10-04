@@ -19681,7 +19681,7 @@ undefined4 __fastcall FUN_11037790(int param_1, unsigned int recovered_unused_st
 // Reference entry 110377b0; body size 50 bytes.
 #line 1 "ENTRY_110377b0"
 
-undefined4 __fastcall FUN_110377b0(int param_1)
+undefined4 __fastcall FUN_110377b0(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   int iVar1;

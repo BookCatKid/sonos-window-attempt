@@ -101,6 +101,10 @@ def main(indir, outpath):
             # callee renames
             src = re.sub(r'\bunknown_([0-9a-fA-F]{8})\b',
                          lambda m: name_for(int(m.group(1), 16)), src)
+            # x87/float typedefs -> plain C types
+            src = re.sub(r'\bfloat(32|64|80)_t\b',
+                         lambda m: {'32': 'float', '64': 'double',
+                                    '80': 'double'}[m.group(1)], src)
             # typed loads/stores -> plain C
             src = re.sub(r'\b(u?int(8|16|32|64)_t)\b',
                          lambda m: {'int8_t': 'char', 'uint8_t': 'uchar',
@@ -210,10 +214,19 @@ def main(indir, outpath):
                 if f'{lab}:' not in src:
                     src = (src.rstrip()[:-1].rstrip() +
                            f'\n{lab}: ;\n}}')
+            # calls through scalar locals (vN(args) where vN is int)
+            scalars = set(re.findall(
+                r'\b(?:int|uint|char|short|longlong|ulonglong|'
+                r'void \*|[a-zA-Z_]\w* \*)\s*(v\d+)\s*[;=]', src))
+            def ptr_call(m):
+                return (f'(*(int(*)(...)){m.group(1)})('
+                        if m.group(1) in scalars else m.group(0))
+            src = re.sub(r'\b(v\d+)\s*\(', ptr_call, src)
             # RetDec register variables (g1, g2, ...) are referenced but
             # never declared; give them int locals.
             for g in sorted(set(re.findall(r'\bg(\d+)\b', src))):
-                if not re.search(rf'\bint\b[^;]*\bg{g}\b\s*[;=]', src):
+                if not re.search(
+                        rf'\bint\s*\**\s*\bg{g}\b\s*[;=]', src):
                     src = src.replace('{\n', f'{{\n    int g{g};\n', 1)
             # RetDec comments and prototypes
             src = '\n'.join(

@@ -20202,7 +20202,7 @@ undefined1 Recovered_10fe6260::FUN_10fe6260(undefined4 param_2)
 // Reference entry 10fe6d40; body size 58 bytes.
 #line 1 "ENTRY_10fe6d40"
 
-undefined4 __fastcall FUN_10fe6d40(int param_1)
+undefined4 __fastcall FUN_10fe6d40(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   int iVar1;

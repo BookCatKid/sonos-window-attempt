@@ -212,6 +212,7 @@ SINT_TYPE = {1: 'char', 2: 'short', 4: 'int', 8: 'long long'}
 SYMBOL_RE = re.compile(
     r'\b((?:thunk_)?_?FUN_[0-9a-f]{8}|_?DAT_\w+|_?PTR_\w+|'
     r's_[A-Za-z0-9_]+|unaff_\w+|in_\w+|ExceptionList|stack0x[0-9a-f]+|LAB_\w+|'
+    r'FuncInfo_\w+|UnwindMap_\w+|TryMap_\w+|Ehstate_\w+|'
     r'g_\w+|uRam\w+|_?UNK_\w+|uStack\w+|uRam\w+|_tls_\w+)\b')
 
 

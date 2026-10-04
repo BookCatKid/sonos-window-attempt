@@ -18087,11 +18087,11 @@ void Recovered_112043d0::FUN_112043d0(int param_2)
 // Reference entry 11205350; body size 243 bytes.
 namespace recovered_11205350 {
 struct Recovered_11205350 { int FUN_11205350(undefined4 param_2,undefined4 param_3,undefined4 param_4,char param_5,
-            undefined1 param_6); };
+            undefined1 param_6, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3, unsigned int recovered_unused_stack_4); };
 #line 1 "ENTRY_11205350"
 
 int Recovered_11205350::FUN_11205350(undefined4 param_2,undefined4 param_3,undefined4 param_4,char param_5,
-            undefined1 param_6)
+            undefined1 param_6, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3, unsigned int recovered_unused_stack_4)
 
 {
   int param_1 = (int)this;

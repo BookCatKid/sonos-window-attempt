@@ -2657,10 +2657,10 @@ int * Recovered_101d3fe0::FUN_101d3fe0(int *param_2)
 
 
 // Reference entry 101d4810; body size 88 bytes.
-struct Recovered_101d4810 { int * FUN_101d4810(int *param_2); };
+struct Recovered_101d4810 { int * FUN_101d4810(int *param_2, unsigned int recovered_unused_stack_0); };
 #line 1 "ENTRY_101d4810"
 
-int * Recovered_101d4810::FUN_101d4810(int *param_2)
+int * Recovered_101d4810::FUN_101d4810(int *param_2, unsigned int recovered_unused_stack_0)
 
 {
   int * param_1 = (int *)this;
@@ -11241,10 +11241,10 @@ int * Recovered_10366500::FUN_10366500(int *param_2)
 
 
 // Reference entry 10367510; body size 88 bytes.
-struct Recovered_10367510 { int * FUN_10367510(int *param_2); };
+struct Recovered_10367510 { int * FUN_10367510(int *param_2, unsigned int recovered_unused_stack_0); };
 #line 1 "ENTRY_10367510"
 
-int * Recovered_10367510::FUN_10367510(int *param_2)
+int * Recovered_10367510::FUN_10367510(int *param_2, unsigned int recovered_unused_stack_0)
 
 {
   int * param_1 = (int *)this;
@@ -14203,10 +14203,10 @@ int * Recovered_10434080::FUN_10434080(int *param_2)
 
 
 // Reference entry 104343b0; body size 88 bytes.
-struct Recovered_104343b0 { int * FUN_104343b0(int *param_2); };
+struct Recovered_104343b0 { int * FUN_104343b0(int *param_2, unsigned int recovered_unused_stack_0); };
 #line 1 "ENTRY_104343b0"
 
-int * Recovered_104343b0::FUN_104343b0(int *param_2)
+int * Recovered_104343b0::FUN_104343b0(int *param_2, unsigned int recovered_unused_stack_0)
 
 {
   int * param_1 = (int *)this;
@@ -17075,10 +17075,10 @@ int * Recovered_1059f1a0::FUN_1059f1a0(int *param_2,int *param_3)
 
 
 // Reference entry 105a0b80; body size 88 bytes.
-struct Recovered_105a0b80 { int * FUN_105a0b80(int *param_2); };
+struct Recovered_105a0b80 { int * FUN_105a0b80(int *param_2, unsigned int recovered_unused_stack_0); };
 #line 1 "ENTRY_105a0b80"
 
-int * Recovered_105a0b80::FUN_105a0b80(int *param_2)
+int * Recovered_105a0b80::FUN_105a0b80(int *param_2, unsigned int recovered_unused_stack_0)
 
 {
   int * param_1 = (int *)this;
@@ -17225,10 +17225,10 @@ int * Recovered_105a8b60::FUN_105a8b60(int *param_2)
 
 
 // Reference entry 105a96c0; body size 88 bytes.
-struct Recovered_105a96c0 { int * FUN_105a96c0(int *param_2); };
+struct Recovered_105a96c0 { int * FUN_105a96c0(int *param_2, unsigned int recovered_unused_stack_0); };
 #line 1 "ENTRY_105a96c0"
 
-int * Recovered_105a96c0::FUN_105a96c0(int *param_2)
+int * Recovered_105a96c0::FUN_105a96c0(int *param_2, unsigned int recovered_unused_stack_0)
 
 {
   int * param_1 = (int *)this;
@@ -18387,10 +18387,10 @@ int * Recovered_1069c7e0::FUN_1069c7e0(int *param_2)
 
 
 // Reference entry 106a4610; body size 88 bytes.
-struct Recovered_106a4610 { int * FUN_106a4610(int *param_2); };
+struct Recovered_106a4610 { int * FUN_106a4610(int *param_2, unsigned int recovered_unused_stack_0); };
 #line 1 "ENTRY_106a4610"
 
-int * Recovered_106a4610::FUN_106a4610(int *param_2)
+int * Recovered_106a4610::FUN_106a4610(int *param_2, unsigned int recovered_unused_stack_0)
 
 {
   int * param_1 = (int *)this;
@@ -20149,10 +20149,10 @@ int * Recovered_108622f0::FUN_108622f0(int *param_2)
 
 
 // Reference entry 10875b40; body size 88 bytes.
-struct Recovered_10875b40 { int * FUN_10875b40(int *param_2); };
+struct Recovered_10875b40 { int * FUN_10875b40(int *param_2, unsigned int recovered_unused_stack_0); };
 #line 1 "ENTRY_10875b40"
 
-int * Recovered_10875b40::FUN_10875b40(int *param_2)
+int * Recovered_10875b40::FUN_10875b40(int *param_2, unsigned int recovered_unused_stack_0)
 
 {
   int * param_1 = (int *)this;

@@ -9456,10 +9456,10 @@ void Recovered_1126ca70::FUN_1126ca70(int param_2,uint param_3)
 
 // Reference entry 112743a0; body size 220 bytes.
 namespace recovered_112743a0 {
-struct Recovered_112743a0 { void FUN_112743a0(char param_2); };
+struct Recovered_112743a0 { void FUN_112743a0(char param_2, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3); };
 #line 1 "ENTRY_112743a0"
 
-void Recovered_112743a0::FUN_112743a0(char param_2)
+void Recovered_112743a0::FUN_112743a0(char param_2, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2, unsigned int recovered_unused_stack_3)
 
 {
   int * param_1 = (int *)this;
