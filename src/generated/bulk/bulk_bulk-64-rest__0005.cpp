@@ -116,242 +116,242 @@ extern "C" int __except_handler4(void);
 extern "C" int __except_handler3(void);
 extern "C" void __security_check_cookie(size_t);
 extern "C" int __security_cookie;
-namespace std { struct _Locinfo { char _pad; _Locinfo(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> static int _Getcvt(A...) { return 0; } template<class... A> static int _W_Getdays(A...) { return 0; } template<class... A> static int _W_Getmonths(A...) { return 0; } }; }
-namespace std { template<class... A> static int _Xbad_alloc(A...) { return 0; } template<class... A> static int _Xbad_function_call(A...) { return 0; } template<class... A> static int _Xlength_error(A...) { return 0; } template<class... A> static int uncaught_exception(A...) { return 0; } typedef int _Iterator_base0; }
-struct SCHouseholdEventSink { char _pad; SCHouseholdEventSink(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; static int op_ctor(...) { return 0; } };
-struct SCImageResource { char _pad; SCImageResource(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; static int op_ctor(...) { return 0; } };
-struct SCIndexRange { char _pad; SCIndexRange(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> static int mergeWithRange(A...) { return 0; } static int op_assign(...) { return 0; } static int op_lt(...) { return 0; } template<class... A> static int overlapsWith(A...) { return 0; } template<class... A> static int overlapsWithOrTouches(A...) { return 0; } template<class... A> static int subtractRange(A...) { return 0; } };
-struct SCLibParameters { char _pad; SCLibParameters(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> static int hasDeveloperOption(A...) { return 0; } };
-struct SCLibrary { char _pad; SCLibrary(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> static int createActionContextForAction(A...) { return 0; } template<class... A> static int createDisplayCustomControlAction(A...) { return 0; } template<class... A> static int createDisplayHelpSheetAction(A...) { return 0; } template<class... A> static int createDisplayIntegerInputAction(A...) { return 0; } template<class... A> static int createDisplayMenuAction(A...) { return 0; } template<class... A> static int createInlineControllerUpdateAction(A...) { return 0; } template<class... A> static int createModalSettingsMenuAction(A...) { return 0; } template<class... A> static int createNavigationAction(A...) { return 0; } template<class... A> static int createSCDisplayMenuPopupAction(A...) { return 0; } template<class... A> static int createSCDisplayMessagePopupAction(A...) { return 0; } template<class... A> static int createSCRunAsyncIOOperationAction(A...) { return 0; } template<class... A> static int createSCRunAsyncIOOperationActionWithMessage(A...) { return 0; } template<class... A> static int getSCHousehold(A...) { return 0; } template<class... A> static int getSingleton(A...) { return 0; } };
-struct SCOpRefBase { char _pad; SCOpRefBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> static int int_start(A...) { return 0; } };
-struct SCPropertyBag { char _pad; SCPropertyBag(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> static int createSCObject(A...) { return 0; } static int op_ctor(...) { return 0; } };
-struct SCRequireTokenActionDescriptor { char _pad; SCRequireTokenActionDescriptor(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; static int getAction; };
-struct SCRequireTokenActionFactory { char _pad; SCRequireTokenActionFactory(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; static int createNextContext; };
-struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> static int append(A...) { return 0; } template<class... A> static int beginsWith(A...) { return 0; } template<class... A> static int contains(A...) { return 0; } template<class... A> static int endsWith(A...) { return 0; } template<class... A> static int equalsIgnoringCase(A...) { return 0; } template<class... A> static int format(A...) { return 0; } template<class... A> static int int_addref(A...) { return 0; } template<class... A> static int int_allocRep(A...) { return 0; } template<class... A> static int int_release(A...) { return 0; } template<class... A> static int length(A...) { return 0; } static int op_assign(...) { return 0; } static int op_ctor(...) { return 0; } static int op_dtor(...) { return 0; } static int op_eq(...) { return 0; } static int op_lt(...) { return 0; } template<class... A> static int replace(A...) { return 0; } template<class... A> static int stringWithFormat(A...) { return 0; } template<class... A> static int stripHTML(A...) { return 0; } template<class... A> static int substr(A...) { return 0; } template<class... A> static int toLower(A...) { return 0; } template<class... A> static int trimFront(A...) { return 0; } };
-namespace std { template<class...> struct _Tree_simple_types { char _pad; _Tree_simple_types(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; }; }
-namespace std { template<class...> struct _Tree_unchecked_const_iterator { char _pad; _Tree_unchecked_const_iterator(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; }; }
-namespace std { template<class...> struct _Tree_val { char _pad; _Tree_val(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; }; }
-namespace std { template<class...> struct basic_ios { char _pad; basic_ios(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int op_ctor(...); static int op_dtor(...); static int setstate(...); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; }; }
-namespace std { template<class...> struct basic_ostream { char _pad; basic_ostream(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int _Osfx(...); static int flush(...); static int op_ctor(...); static int op_dtor(...); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; }; }
-namespace std { template<class...> struct basic_streambuf { char _pad; basic_streambuf(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int op_ctor(...); static int op_dtor(...); static int sputc(...); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; }; }
-namespace std { template<class...> struct char_traits { char _pad; char_traits(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; }; }
-struct AboutSonos { char _pad; AboutSonos(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct AccountPicker { char _pad; AccountPicker(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Add { char _pad; Add(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct AddShare { char _pad; AddShare(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Adjust { char _pad; Adjust(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct AlarmFrequency { char _pad; AlarmFrequency(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Alarms { char _pad; Alarms(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct App { char _pad; App(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct AppRatingNag { char _pad; AppRatingNag(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct AttributionBrandmark { char _pad; AttributionBrandmark(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct AttributionFullLogo { char _pad; AttributionFullLogo(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct AttributionWordmark { char _pad; AttributionWordmark(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Automatic { char _pad; Automatic(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Banner { char _pad; Banner(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct BannerDismissed { char _pad; BannerDismissed(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct BasicUI { char _pad; BasicUI(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Beta { char _pad; Beta(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct BetaService { char _pad; BetaService(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Browse { char _pad; Browse(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct BusinessEntitlement { char _pad; BusinessEntitlement(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Canceled { char _pad; Canceled(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Cancelling { char _pad; Cancelling(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct ChangeNickname { char _pad; ChangeNickname(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct ChangePassword { char _pad; ChangePassword(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Controller { char _pad; Controller(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Could { char _pad; Could(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Crash { char _pad; Crash(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct DefaultCategory { char _pad; DefaultCategory(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Demand { char _pad; Demand(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct DidSave { char _pad; DidSave(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Disabled { char _pad; Disabled(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct DisplayCustomControl { char _pad; DisplayCustomControl(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Email { char _pad; Email(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Enabled { char _pad; Enabled(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Event { char _pad; Event(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Experimental { char _pad; Experimental(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Experiments { char _pad; Experiments(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct ExperimentsMenu { char _pad; ExperimentsMenu(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Failed { char _pad; Failed(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Feature { char _pad; Feature(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Features { char _pad; Features(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct FilterDescription { char _pad; FilterDescription(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Filtered { char _pad; Filtered(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct FixWiFiSetting { char _pad; FixWiFiSetting(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct FromRoomSettings { char _pad; FromRoomSettings(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Function { char _pad; Function(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct GetHelp { char _pad; GetHelp(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Globals { char _pad; Globals(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct IconIDInput { char _pad; IconIDInput(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Inbox { char _pad; Inbox(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct InputSources_Count { char _pad; InputSources_Count(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct IntegerInput { char _pad; IntegerInput(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Invalid { char _pad; Invalid(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Isclocale { char _pad; Isclocale(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Isleadbyte { char _pad; Isleadbyte(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Mbcurmax; static int Page; };
-struct Latest { char _pad; Latest(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Library { char _pad; Library(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Lifecycle { char _pad; Lifecycle(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Local_Count { char _pad; Local_Count(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct ManageWifiSettings { char _pad; ManageWifiSettings(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Match { char _pad; Match(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Mbcurmax { char _pad; Mbcurmax(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Page; };
-struct Menu { char _pad; Menu(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct MenuCancel { char _pad; MenuCancel(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct MenuSelect { char _pad; MenuSelect(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct MenuSelectedIndex { char _pad; MenuSelectedIndex(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct MessageCenter { char _pad; MessageCenter(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct MoreInfo { char _pad; MoreInfo(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Music { char _pad; Music(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct MusicEQ { char _pad; MusicEQ(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct MusicMenu { char _pad; MusicMenu(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct MySonos { char _pad; MySonos(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct NavigateToAccountSettings { char _pad; NavigateToAccountSettings(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct NavigateToAlarms { char _pad; NavigateToAlarms(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct NavigateToMusicMenu { char _pad; NavigateToMusicMenu(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct NavigateToMusicServices { char _pad; NavigateToMusicServices(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct NavigateToNetworkSettings { char _pad; NavigateToNetworkSettings(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct NavigateToNowPlaying { char _pad; NavigateToNowPlaying(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct NavigateToRoomsMenu { char _pad; NavigateToRoomsMenu(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct NavigateToSearch { char _pad; NavigateToSearch(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct NavigateToSettings { char _pad; NavigateToSettings(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct NavigateToSonosURL { char _pad; NavigateToSonosURL(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct NavigateToUpdateSettings { char _pad; NavigateToUpdateSettings(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct NewSessionPicker { char _pad; NewSessionPicker(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct No { char _pad; No(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Not { char _pad; Not(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Now { char _pad; Now(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct On { char _pad; On(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct OnDemandEULA { char _pad; OnDemandEULA(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct OpResultCode { char _pad; OpResultCode(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Open { char _pad; Open(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct OpenApp { char _pad; OpenApp(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct OpenAppStore { char _pad; OpenAppStore(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct OpenURI { char _pad; OpenURI(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Overriding { char _pad; Overriding(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Page { char _pad; Page(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; };
-struct PersonalizationServicesContent { char _pad; PersonalizationServicesContent(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct PersonalizationServicesHeader { char _pad; PersonalizationServicesHeader(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Playing { char _pad; Playing(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Playlist { char _pad; Playlist(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct PromoBanners { char _pad; PromoBanners(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Provider { char _pad; Provider(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct RINCON_AssociatedZPUDN { char _pad; RINCON_AssociatedZPUDN(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct R_AudioInEncodeType { char _pad; R_AudioInEncodeType(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct R_AutoUpdateWindowStart { char _pad; R_AutoUpdateWindowStart(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct R_ShowNSSServers { char _pad; R_ShowNSSServers(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct R_ShowRhapUPnP { char _pad; R_ShowRhapUPnP(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Re { char _pad; Re(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct ReauthorizeAccount { char _pad; ReauthorizeAccount(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Release { char _pad; Release(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct RemoveService { char _pad; RemoveService(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct RemoveTrial { char _pad; RemoveTrial(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Removing { char _pad; Removing(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct ReplaceAccount { char _pad; ReplaceAccount(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct ResetController { char _pad; ResetController(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Result { char _pad; Result(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct RunWizard { char _pad; RunWizard(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCBrowseDataSource { char _pad; SCBrowseDataSource(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCConnectedPartnersCache { char _pad; SCConnectedPartnersCache(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIAccessbility_UI_Hint_Text { char _pad; SCIAccessbility_UI_Hint_Text(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIAction { char _pad; SCIAction(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIActionCategoryDefault { char _pad; SCIActionCategoryDefault(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIActionDescriptor { char _pad; SCIActionDescriptor(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIActionNoArgDescriptor { char _pad; SCIActionNoArgDescriptor(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIAlarm { char _pad; SCIAlarm(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIAlarmManager { char _pad; SCIAlarmManager(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIArea { char _pad; SCIArea(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIAudioInputResource { char _pad; SCIAudioInputResource(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIBooleanSettingsProperty { char _pad; SCIBooleanSettingsProperty(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIBrowseDataSource { char _pad; SCIBrowseDataSource(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIBrowseGroupsInfo { char _pad; SCIBrowseGroupsInfo(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIConnectedPartnersManager { char _pad; SCIConnectedPartnersManager(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIController { char _pad; SCIController(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIDeviceMusicEqualization { char _pad; SCIDeviceMusicEqualization(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIEventSink { char _pad; SCIEventSink(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIHousehold { char _pad; SCIHousehold(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCILifecycleAppProvider { char _pad; SCILifecycleAppProvider(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIObj { char _pad; SCIObj(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIOp { char _pad; SCIOp(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIOpCB { char _pad; SCIOpCB(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIPortableDevice { char _pad; SCIPortableDevice(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIPropertyBag { char _pad; SCIPropertyBag(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIRoomResource { char _pad; SCIRoomResource(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCISelectionManager { char _pad; SCISelectionManager(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIServiceAccount { char _pad; SCIServiceAccount(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIServiceAccountManager { char _pad; SCIServiceAccountManager(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIServiceDescriptorManager { char _pad; SCIServiceDescriptorManager(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCISetting { char _pad; SCISetting(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCISettingsMenu { char _pad; SCISettingsMenu(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCISettingsMenuItem { char _pad; SCISettingsMenuItem(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIStringArray { char _pad; SCIStringArray(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCISystem { char _pad; SCISystem(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCISystemStatus { char _pad; SCISystemStatus(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCISystemStatusManager { char _pad; SCISystemStatusManager(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIUrbanAirshipDelegate { char _pad; SCIUrbanAirshipDelegate(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIVoiceService { char _pad; SCIVoiceService(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCIZoneGroupMgr { char _pad; SCIZoneGroupMgr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCLIB_STR_GenericAction_Failed { char _pad; SCLIB_STR_GenericAction_Failed(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCLibDelegateFactory { char _pad; SCLibDelegateFactory(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCLifecycleManager { char _pad; SCLifecycleManager(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCRequireTokenAction { char _pad; SCRequireTokenAction(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCSettingsMenuNetworkStatus { char _pad; SCSettingsMenuNetworkStatus(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCSettingsMenuServices { char _pad; SCSettingsMenuServices(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCSettingsMenuSet { char _pad; SCSettingsMenuSet(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCSettingsMenuSupport { char _pad; SCSettingsMenuSupport(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCSettingsMenuVoiceService { char _pad; SCSettingsMenuVoiceService(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCSettingsMenuVoiceServiceSettings { char _pad; SCSettingsMenuVoiceServiceSettings(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCSwfObjHHListener { char _pad; SCSwfObjHHListener(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCSystemStatusVoice { char _pad; SCSystemStatusVoice(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SCThreadSafeDec { char _pad; SCThreadSafeDec(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SVar1 { char _pad; SVar1(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SVar11 { char _pad; SVar11(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SVar12 { char _pad; SVar12(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SVar2 { char _pad; SVar2(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SVar4 { char _pad; SVar4(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Saw { char _pad; Saw(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Search { char _pad; Search(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SelectionManager { char _pad; SelectionManager(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Services { char _pad; Services(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SettingsActions { char _pad; SettingsActions(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SettingsUserInput { char _pad; SettingsUserInput(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SettingsUserInputExtra { char _pad; SettingsUserInputExtra(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SettingsUserInputIsID { char _pad; SettingsUserInputIsID(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct ShowOverTopModalWindow { char _pad; ShowOverTopModalWindow(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Single { char _pad; Single(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Sink { char _pad; Sink(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SkipIntro { char _pad; SkipIntro(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Skipping { char _pad; Skipping(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Sonos { char _pad; Sonos(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Status { char _pad; Status(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct String { char _pad; String(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Studio { char _pad; Studio(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Subroutine { char _pad; Subroutine(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Subscribe { char _pad; Subscribe(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Subscription { char _pad; Subscription(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Surround { char _pad; Surround(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SwfObjHH { char _pad; SwfObjHH(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct SwfStr { char _pad; SwfStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct System { char _pad; System(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct TVDialog { char _pad; TVDialog(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct TextInput { char _pad; TextInput(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct ThreadLocalStoragePointer { char _pad; ThreadLocalStoragePointer(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Timestamp { char _pad; Timestamp(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct ToggleScrobble { char _pad; ToggleScrobble(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Too { char _pad; Too(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Treating { char _pad; Treating(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Trying { char _pad; Trying(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Type { char _pad; Type(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct UIActions { char _pad; UIActions(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct UnknownID_Count { char _pad; UnknownID_Count(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Unsubscribe { char _pad; Unsubscribe(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct VOString { char _pad; VOString(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct Visual { char _pad; Visual(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct VoiceActive { char _pad; VoiceActive(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct VoiceServices { char _pad; VoiceServices(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct WizardUri { char _pad; WizardUri(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
-struct _Cvtvec { char _pad; _Cvtvec(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; };
+namespace std { struct _Locinfo { char _pad; _Locinfo(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); template<class... A> int _Getcvt(A...) { return 0; } template<class... A> int _W_Getdays(A...) { return 0; } template<class... A> int _W_Getmonths(A...) { return 0; } }; }
+namespace std { template<class... A> int _Xbad_alloc(A...) { return 0; } template<class... A> int _Xbad_function_call(A...) { return 0; } template<class... A> int _Xlength_error(A...) { return 0; } template<class... A> int uncaught_exception(A...) { return 0; } typedef int _Iterator_base0; }
+struct SCHouseholdEventSink { char _pad; SCHouseholdEventSink(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); static int op_ctor(...) { return 0; } };
+struct SCImageResource { char _pad; SCImageResource(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); static int op_ctor(...) { return 0; } };
+struct SCIndexRange { char _pad; SCIndexRange(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); template<class... A> int mergeWithRange(A...) { return 0; } static int op_assign(...) { return 0; } static int op_lt(...) { return 0; } template<class... A> int overlapsWith(A...) { return 0; } template<class... A> int overlapsWithOrTouches(A...) { return 0; } template<class... A> int subtractRange(A...) { return 0; } };
+struct SCLibParameters { char _pad; SCLibParameters(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); template<class... A> int hasDeveloperOption(A...) { return 0; } };
+struct SCLibrary { char _pad; SCLibrary(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); template<class... A> int createActionContextForAction(A...) { return 0; } template<class... A> int createDisplayCustomControlAction(A...) { return 0; } template<class... A> int createDisplayHelpSheetAction(A...) { return 0; } template<class... A> int createDisplayIntegerInputAction(A...) { return 0; } template<class... A> int createDisplayMenuAction(A...) { return 0; } template<class... A> int createInlineControllerUpdateAction(A...) { return 0; } template<class... A> int createModalSettingsMenuAction(A...) { return 0; } template<class... A> int createNavigationAction(A...) { return 0; } template<class... A> int createSCDisplayMenuPopupAction(A...) { return 0; } template<class... A> int createSCDisplayMessagePopupAction(A...) { return 0; } template<class... A> int createSCRunAsyncIOOperationAction(A...) { return 0; } template<class... A> int createSCRunAsyncIOOperationActionWithMessage(A...) { return 0; } template<class... A> int getSCHousehold(A...) { return 0; } template<class... A> int getSingleton(A...) { return 0; } };
+struct SCOpRefBase { char _pad; SCOpRefBase(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); template<class... A> int int_start(A...) { return 0; } };
+struct SCPropertyBag { char _pad; SCPropertyBag(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); template<class... A> int createSCObject(A...) { return 0; } static int op_ctor(...) { return 0; } };
+struct SCRequireTokenActionDescriptor { char _pad; SCRequireTokenActionDescriptor(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); static int getAction; };
+struct SCRequireTokenActionFactory { char _pad; SCRequireTokenActionFactory(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); static int createNextContext; };
+struct SCStr { char _pad; SCStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); template<class... A> int append(A...) { return 0; } template<class... A> int beginsWith(A...) { return 0; } template<class... A> int contains(A...) { return 0; } template<class... A> int endsWith(A...) { return 0; } template<class... A> int equalsIgnoringCase(A...) { return 0; } template<class... A> int format(A...) { return 0; } template<class... A> int int_addref(A...) { return 0; } template<class... A> int int_allocRep(A...) { return 0; } template<class... A> int int_release(A...) { return 0; } template<class... A> int length(A...) { return 0; } static int op_assign(...) { return 0; } static int op_ctor(...) { return 0; } static int op_dtor(...) { return 0; } static int op_eq(...) { return 0; } static int op_lt(...) { return 0; } template<class... A> int replace(A...) { return 0; } template<class... A> int stringWithFormat(A...) { return 0; } template<class... A> int stripHTML(A...) { return 0; } template<class... A> int substr(A...) { return 0; } template<class... A> int toLower(A...) { return 0; } template<class... A> int trimFront(A...) { return 0; } };
+namespace std { template<class...> struct _Tree_simple_types { char _pad; _Tree_simple_types(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); }; }
+namespace std { template<class...> struct _Tree_unchecked_const_iterator { char _pad; _Tree_unchecked_const_iterator(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); }; }
+namespace std { template<class...> struct _Tree_val { char _pad; _Tree_val(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); }; }
+namespace std { template<class...> struct basic_ios { char _pad; basic_ios(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int op_ctor(...); static int op_dtor(...); template<class... A> int setstate(A...); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); }; }
+namespace std { template<class...> struct basic_ostream { char _pad; basic_ostream(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); template<class... A> int _Osfx(A...); template<class... A> int flush(A...); static int op_ctor(...); static int op_dtor(...); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); }; }
+namespace std { template<class...> struct basic_streambuf { char _pad; basic_streambuf(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int op_ctor(...); static int op_dtor(...); template<class... A> int sputc(A...); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); }; }
+namespace std { template<class...> struct char_traits { char _pad; char_traits(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); }; }
+struct AboutSonos { char _pad; AboutSonos(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct AccountPicker { char _pad; AccountPicker(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Add { char _pad; Add(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct AddShare { char _pad; AddShare(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Adjust { char _pad; Adjust(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct AlarmFrequency { char _pad; AlarmFrequency(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Alarms { char _pad; Alarms(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct App { char _pad; App(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct AppRatingNag { char _pad; AppRatingNag(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct AttributionBrandmark { char _pad; AttributionBrandmark(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct AttributionFullLogo { char _pad; AttributionFullLogo(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct AttributionWordmark { char _pad; AttributionWordmark(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Automatic { char _pad; Automatic(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Banner { char _pad; Banner(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct BannerDismissed { char _pad; BannerDismissed(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct BasicUI { char _pad; BasicUI(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Beta { char _pad; Beta(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct BetaService { char _pad; BetaService(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Browse { char _pad; Browse(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct BusinessEntitlement { char _pad; BusinessEntitlement(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Canceled { char _pad; Canceled(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Cancelling { char _pad; Cancelling(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct ChangeNickname { char _pad; ChangeNickname(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct ChangePassword { char _pad; ChangePassword(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Controller { char _pad; Controller(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Could { char _pad; Could(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Crash { char _pad; Crash(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct DefaultCategory { char _pad; DefaultCategory(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Demand { char _pad; Demand(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct DidSave { char _pad; DidSave(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Disabled { char _pad; Disabled(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct DisplayCustomControl { char _pad; DisplayCustomControl(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Email { char _pad; Email(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Enabled { char _pad; Enabled(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Event { char _pad; Event(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Experimental { char _pad; Experimental(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Experiments { char _pad; Experiments(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct ExperimentsMenu { char _pad; ExperimentsMenu(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Failed { char _pad; Failed(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Feature { char _pad; Feature(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Features { char _pad; Features(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct FilterDescription { char _pad; FilterDescription(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Filtered { char _pad; Filtered(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct FixWiFiSetting { char _pad; FixWiFiSetting(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct FromRoomSettings { char _pad; FromRoomSettings(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Function { char _pad; Function(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct GetHelp { char _pad; GetHelp(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Globals { char _pad; Globals(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct IconIDInput { char _pad; IconIDInput(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Inbox { char _pad; Inbox(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct InputSources_Count { char _pad; InputSources_Count(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct IntegerInput { char _pad; IntegerInput(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Invalid { char _pad; Invalid(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Isclocale { char _pad; Isclocale(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Isleadbyte { char _pad; Isleadbyte(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Latest { char _pad; Latest(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Library { char _pad; Library(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Lifecycle { char _pad; Lifecycle(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Local_Count { char _pad; Local_Count(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct ManageWifiSettings { char _pad; ManageWifiSettings(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Match { char _pad; Match(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Mbcurmax { char _pad; Mbcurmax(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Menu { char _pad; Menu(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct MenuCancel { char _pad; MenuCancel(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct MenuSelect { char _pad; MenuSelect(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct MenuSelectedIndex { char _pad; MenuSelectedIndex(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct MessageCenter { char _pad; MessageCenter(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct MoreInfo { char _pad; MoreInfo(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Music { char _pad; Music(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct MusicEQ { char _pad; MusicEQ(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct MusicMenu { char _pad; MusicMenu(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct MySonos { char _pad; MySonos(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct NavigateToAccountSettings { char _pad; NavigateToAccountSettings(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct NavigateToAlarms { char _pad; NavigateToAlarms(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct NavigateToMusicMenu { char _pad; NavigateToMusicMenu(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct NavigateToMusicServices { char _pad; NavigateToMusicServices(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct NavigateToNetworkSettings { char _pad; NavigateToNetworkSettings(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct NavigateToNowPlaying { char _pad; NavigateToNowPlaying(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct NavigateToRoomsMenu { char _pad; NavigateToRoomsMenu(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct NavigateToSearch { char _pad; NavigateToSearch(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct NavigateToSettings { char _pad; NavigateToSettings(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct NavigateToSonosURL { char _pad; NavigateToSonosURL(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct NavigateToUpdateSettings { char _pad; NavigateToUpdateSettings(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct NewSessionPicker { char _pad; NewSessionPicker(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct No { char _pad; No(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Not { char _pad; Not(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Now { char _pad; Now(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct On { char _pad; On(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct OnDemandEULA { char _pad; OnDemandEULA(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct OpResultCode { char _pad; OpResultCode(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Open { char _pad; Open(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct OpenApp { char _pad; OpenApp(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct OpenAppStore { char _pad; OpenAppStore(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct OpenURI { char _pad; OpenURI(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Overriding { char _pad; Overriding(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Page { char _pad; Page(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct PersonalizationServicesContent { char _pad; PersonalizationServicesContent(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct PersonalizationServicesHeader { char _pad; PersonalizationServicesHeader(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Playing { char _pad; Playing(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Playlist { char _pad; Playlist(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct PromoBanners { char _pad; PromoBanners(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Provider { char _pad; Provider(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct RINCON_AssociatedZPUDN { char _pad; RINCON_AssociatedZPUDN(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct R_AudioInEncodeType { char _pad; R_AudioInEncodeType(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct R_AutoUpdateWindowStart { char _pad; R_AutoUpdateWindowStart(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct R_ShowNSSServers { char _pad; R_ShowNSSServers(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct R_ShowRhapUPnP { char _pad; R_ShowRhapUPnP(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Re { char _pad; Re(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct ReauthorizeAccount { char _pad; ReauthorizeAccount(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Release { char _pad; Release(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct RemoveService { char _pad; RemoveService(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct RemoveTrial { char _pad; RemoveTrial(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Removing { char _pad; Removing(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct ReplaceAccount { char _pad; ReplaceAccount(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct ResetController { char _pad; ResetController(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Result { char _pad; Result(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct RunWizard { char _pad; RunWizard(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCBrowseDataSource { char _pad; SCBrowseDataSource(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCConnectedPartnersCache { char _pad; SCConnectedPartnersCache(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIAccessbility_UI_Hint_Text { char _pad; SCIAccessbility_UI_Hint_Text(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIAction { char _pad; SCIAction(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIActionCategoryDefault { char _pad; SCIActionCategoryDefault(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIActionDescriptor { char _pad; SCIActionDescriptor(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIActionNoArgDescriptor { char _pad; SCIActionNoArgDescriptor(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIAlarm { char _pad; SCIAlarm(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIAlarmManager { char _pad; SCIAlarmManager(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIArea { char _pad; SCIArea(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIAudioInputResource { char _pad; SCIAudioInputResource(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIBooleanSettingsProperty { char _pad; SCIBooleanSettingsProperty(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIBrowseDataSource { char _pad; SCIBrowseDataSource(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIBrowseGroupsInfo { char _pad; SCIBrowseGroupsInfo(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIConnectedPartnersManager { char _pad; SCIConnectedPartnersManager(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIController { char _pad; SCIController(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIDeviceMusicEqualization { char _pad; SCIDeviceMusicEqualization(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIEventSink { char _pad; SCIEventSink(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIHousehold { char _pad; SCIHousehold(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCILifecycleAppProvider { char _pad; SCILifecycleAppProvider(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIObj { char _pad; SCIObj(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIOp { char _pad; SCIOp(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIOpCB { char _pad; SCIOpCB(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIPortableDevice { char _pad; SCIPortableDevice(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIPropertyBag { char _pad; SCIPropertyBag(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIRoomResource { char _pad; SCIRoomResource(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCISelectionManager { char _pad; SCISelectionManager(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIServiceAccount { char _pad; SCIServiceAccount(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIServiceAccountManager { char _pad; SCIServiceAccountManager(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIServiceDescriptorManager { char _pad; SCIServiceDescriptorManager(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCISetting { char _pad; SCISetting(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCISettingsMenu { char _pad; SCISettingsMenu(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCISettingsMenuItem { char _pad; SCISettingsMenuItem(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIStringArray { char _pad; SCIStringArray(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCISystem { char _pad; SCISystem(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCISystemStatus { char _pad; SCISystemStatus(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCISystemStatusManager { char _pad; SCISystemStatusManager(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIUrbanAirshipDelegate { char _pad; SCIUrbanAirshipDelegate(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIVoiceService { char _pad; SCIVoiceService(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCIZoneGroupMgr { char _pad; SCIZoneGroupMgr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCLIB_STR_GenericAction_Failed { char _pad; SCLIB_STR_GenericAction_Failed(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCLibDelegateFactory { char _pad; SCLibDelegateFactory(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCLifecycleManager { char _pad; SCLifecycleManager(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCRequireTokenAction { char _pad; SCRequireTokenAction(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCSettingsMenuNetworkStatus { char _pad; SCSettingsMenuNetworkStatus(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCSettingsMenuServices { char _pad; SCSettingsMenuServices(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCSettingsMenuSet { char _pad; SCSettingsMenuSet(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCSettingsMenuSupport { char _pad; SCSettingsMenuSupport(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCSettingsMenuVoiceService { char _pad; SCSettingsMenuVoiceService(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCSettingsMenuVoiceServiceSettings { char _pad; SCSettingsMenuVoiceServiceSettings(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCSwfObjHHListener { char _pad; SCSwfObjHHListener(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCSystemStatusVoice { char _pad; SCSystemStatusVoice(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SCThreadSafeDec { char _pad; SCThreadSafeDec(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SVar1 { char _pad; SVar1(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SVar11 { char _pad; SVar11(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SVar12 { char _pad; SVar12(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SVar2 { char _pad; SVar2(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SVar4 { char _pad; SVar4(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Saw { char _pad; Saw(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Search { char _pad; Search(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SelectionManager { char _pad; SelectionManager(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Services { char _pad; Services(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SettingsActions { char _pad; SettingsActions(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SettingsUserInput { char _pad; SettingsUserInput(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SettingsUserInputExtra { char _pad; SettingsUserInputExtra(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SettingsUserInputIsID { char _pad; SettingsUserInputIsID(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct ShowOverTopModalWindow { char _pad; ShowOverTopModalWindow(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Single { char _pad; Single(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Sink { char _pad; Sink(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SkipIntro { char _pad; SkipIntro(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Skipping { char _pad; Skipping(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Sonos { char _pad; Sonos(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Status { char _pad; Status(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct String { char _pad; String(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Studio { char _pad; Studio(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Subroutine { char _pad; Subroutine(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Subscribe { char _pad; Subscribe(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Subscription { char _pad; Subscription(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Surround { char _pad; Surround(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SwfObjHH { char _pad; SwfObjHH(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct SwfStr { char _pad; SwfStr(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct System { char _pad; System(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct TVDialog { char _pad; TVDialog(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct TextInput { char _pad; TextInput(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct ThreadLocalStoragePointer { char _pad; ThreadLocalStoragePointer(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Timestamp { char _pad; Timestamp(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct ToggleScrobble { char _pad; ToggleScrobble(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Too { char _pad; Too(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Treating { char _pad; Treating(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Trying { char _pad; Trying(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Type { char _pad; Type(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct UIActions { char _pad; UIActions(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct UnknownID_Count { char _pad; UnknownID_Count(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Unsubscribe { char _pad; Unsubscribe(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct VOString { char _pad; VOString(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct Visual { char _pad; Visual(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct VoiceActive { char _pad; VoiceActive(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct VoiceServices { char _pad; VoiceServices(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct WizardUri { char _pad; WizardUri(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
+struct _Cvtvec { char _pad; _Cvtvec(...); template<class T> int operator==(T); template<class T> int operator!=(T); template<class T> int operator<(T); template<class T> int operator<=(T); template<class T> int operator>(T); template<class T> int operator>=(T); template<class T> int operator+(T); template<class T> int operator-(T); template<class T> int operator*(T); template<class T> int operator/(T); template<class T> int operator[](T); template<class T> int operator=(T); template<class... A> int operator()(A...); int operator++(); int operator++(int); int operator--(); int operator--(int); int operator!(); int operator~(); template<class T> int operator&(T); template<class T> int operator|(T); template<class T> int operator^(T); template<class T> int operator<<(T); template<class T> int operator>>(T); auto operator->() { return this; } template<class T> operator T*(); template<class T> operator T(); static int Isclocale; static int Isleadbyte; static int Mbcurmax; static int Page; template<class... A> int m_op_ctor(A...); template<class... A> int m_op_dtor(A...); };
 typedef void *AI;
 typedef void *APP_SHORTCUTS_ENABLED;
 typedef void *AUTO;
@@ -7618,7 +7618,7 @@ LAB_1043000c:
             uVar12 = (uint)(uVar12 | 1);
           }
           local_1c = (uint)(uVar12);
-          ((SCStr *)((SCStr *)&local_30))->op_ctor(pSVar8);
+          ((SCStr *)((SCStr *)&local_30))->m_op_ctor(pSVar8);
 
           if ((uVar12 & 2) != 0) {
             uVar12 = (uint)(uVar12 & 0xfffffffd);
@@ -11258,7 +11258,7 @@ void FUN_104352f0(void)
       ((SCStr *)((SCStr *)&local_20))->int_allocRep("SCIActionCategoryDefault");
       local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(10)));
 
-      ((SCStr *)((SCStr *)&local_38))->op_ctor((SCStr *)&DAT_121a07b0);
+      ((SCStr *)((SCStr *)&local_38))->m_op_ctor((SCStr *)&DAT_121a07b0);
       local_34 = (int *)(DAT_121a07b4);
 
       pSVar5 = (SCStr *)((SCStr *)(**(code **)(*(int *)pSVar9 + 0x18))(&local_24), 0);
@@ -11278,17 +11278,17 @@ void FUN_104352f0(void)
       local_1c[5] = (int)((int)piVar6);
       (**(code **)(*piVar6 + 4))();
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x11);
-      ((SCStr *)((SCStr *)(piVar2 + 6)))->op_ctor((uint)&local_28);
+      ((SCStr *)((SCStr *)(piVar2 + 6)))->m_op_ctor((uint)&local_28);
       piVar2[7] = (int)(0);
       local_2c = (SCStr *)((SCStr *)(piVar2 + 8));
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x13);
-      ((SCStr *)(local_2c))->op_ctor((SCStr *)&local_38);
+      ((SCStr *)(local_2c))->m_op_ctor((SCStr *)&local_38);
       piVar6 = (int *)(local_1c);
       piVar2[9] = (int)((int)local_34);
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x14);
-      ((SCStr *)((SCStr *)(local_1c + 10)))->op_ctor(pSVar5);
+      ((SCStr *)((SCStr *)(local_1c + 10)))->m_op_ctor(pSVar5);
       local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x15)));
-      ((SCStr *)((SCStr *)(piVar6 + 0xb)))->op_ctor((SCStr *)&local_20);
+      ((SCStr *)((SCStr *)(piVar6 + 0xb)))->m_op_ctor((SCStr *)&local_20);
 
       ((SCStr *)((SCStr *)&local_38))->int_release();
       local_38 = (int *)((int *)0x0);
@@ -11536,7 +11536,7 @@ void __fastcall FUN_10435bf0(int param_1, unsigned int recovered_unused_stack_0,
   uStack_1c = (uint)(DAT_12126b84);
 
   iStack_20 = (int)(param_1);
-  ((SCStr *)((SCStr *)&iStack_20))->op_ctor((SCStr *)&stack0x00000004);
+  ((SCStr *)((SCStr *)&iStack_20))->m_op_ctor((SCStr *)&stack0x00000004);
   thunk_FUN_10435d20(*(undefined2 *)(param_1 + 0x867ea));
 
   iStack_20 = (int)(0x10435c47);
@@ -11565,7 +11565,7 @@ void __fastcall FUN_10435c80(int param_1, unsigned int recovered_unused_stack_0,
   uStack_1c = (uint)(DAT_12126b84);
 
   iStack_20 = (int)(param_1);
-  ((SCStr *)((SCStr *)&iStack_20))->op_ctor((SCStr *)&stack0x00000004);
+  ((SCStr *)((SCStr *)&iStack_20))->m_op_ctor((SCStr *)&stack0x00000004);
   sVar1 = (short)(*(short *)(param_1 + 0x867ea) + -1);
   if (sVar1 == 0) {
     sVar1 = (short)(1);
@@ -11637,7 +11637,7 @@ void __thiscall Recovered_Bulk::m_FUN_10435d20(uint param_2,char *param_3)
       piVar5 = (int *)((int *)0x0);
     }
     else {
-      ((SCStr *)((SCStr *)&stack0xffffffb8))->op_ctor((SCStr *)&param_3);
+      ((SCStr *)((SCStr *)&stack0xffffffb8))->m_op_ctor((SCStr *)&param_3);
       piVar5 = (int *)((int *)thunk_FUN_10d92b90(param_2), 0);
     }
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
@@ -12905,7 +12905,7 @@ void __thiscall Recovered_Bulk::m_FUN_104380e0(int param_2,void *param_3)
         ((SCStr *)((SCStr *)&param_3))->int_allocRep((char *)0x0);
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
         pcStack_38 = (char *)((char *)0x104382a4);
-        ((SCStr *)((SCStr *)&stack0xffffffd0))->op_ctor((SCStr *)&param_3);
+        ((SCStr *)((SCStr *)&stack0xffffffd0))->m_op_ctor((SCStr *)&param_3);
         pcStack_38 = (char *)((char *)0x104382b4);
         thunk_FUN_10435d20();
         local_8 = (int)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
@@ -12973,7 +12973,7 @@ void __fastcall FUN_104384c0(int param_1)
   if (*(char *)(param_1 + 0x867e8) == '\0') {
     ((SCStr *)((uint)&local_14))->int_allocRep((char *)0x0);
 
-    ((SCStr *)((SCStr *)&stack0xffffffdc))->op_ctor((uint)&local_14);
+    ((SCStr *)((SCStr *)&stack0xffffffdc))->m_op_ctor((uint)&local_14);
     thunk_FUN_10435d20(*(undefined2 *)(param_1 + 0x867ea));
 
     ((SCStr *)((uint)&local_14))->int_release();
@@ -16508,7 +16508,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1043e4c0(undefined4 param_2)
   ((SCStr *)((SCStr *)&local_14))->int_release();
 
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(6);
-  ((SCHouseholdEventSink *)((SCHouseholdEventSink *)(param_1 + 0x24)))->op_ctor();
+  ((SCHouseholdEventSink *)((SCHouseholdEventSink *)(param_1 + 0x24)))->m_op_ctor();
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSettingsMenuAutoplayRoom);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCSettingsMenuAutoplayRoom);
   param_1[10] = (undefined4)((uint)&ghidra_vftable_SCSettingsMenuAutoplayRoom);
@@ -17007,7 +17007,7 @@ void __fastcall FUN_1043f090(int param_1)
     uVar10 = (uint)(1);
   }
   local_20 = (uint)(uVar10);
-  ((SCStr *)((SCStr *)&local_1c))->op_ctor(pSVar5);
+  ((SCStr *)((SCStr *)&local_1c))->m_op_ctor(pSVar5);
 
   if ((uVar10 & 2) != 0) {
     uVar10 = (uint)(uVar10 & 0xfffffffd);
@@ -17646,10 +17646,10 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1043f8d0(int *param_2)
 
     *piVar7 = (int)((int)(uint)&ghidra_vftable_SCOpenUrlActionDescriptor);
     piStack_64 = (int *)((int *)0x1043ff56);
-    ((SCStr *)((SCStr *)(piVar7 + 2)))->op_ctor((SCStr *)&param_2);
+    ((SCStr *)((SCStr *)(piVar7 + 2)))->m_op_ctor((SCStr *)&param_2);
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x34)));
     piStack_64 = (int *)((int *)0x1043ff66);
-    ((SCStr *)((SCStr *)(piVar7 + 3)))->op_ctor((SCStr *)&local_28);
+    ((SCStr *)((SCStr *)(piVar7 + 3)))->m_op_ctor((SCStr *)&local_28);
   }
 
   if ((int *)(piVar7) != (int *)(local_44)) {
@@ -19551,11 +19551,11 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_104432c0(SCStr *param_2,undefined4
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewDisableWifiAction);
-  ((SCStr *)((SCStr *)(param_1 + 4)))->op_ctor(param_2);
+  ((SCStr *)((SCStr *)(param_1 + 4)))->m_op_ctor(param_2);
   *(undefined1*)((int)param_1 + 0x15) = (undefined1)(param_4);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
   *(undefined1*)(param_1 + 5) = (undefined1)(0);
-  ((SCStr *)((SCStr *)(param_1 + 6)))->op_ctor((SCStr *)&param_3);
+  ((SCStr *)((SCStr *)(param_1 + 6)))->m_op_ctor((SCStr *)&param_3);
   pcVar1 = (char *)((char *)(param_1 + 7));
   pcVar1[0] = (char)('\0');
   pcVar1[1] = (char)('\0');
@@ -19597,9 +19597,9 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_104433f0(undefined4 param_2,undefi
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCNewDisableWifiActionDescriptor);
-  ((SCStr *)((SCStr *)(param_1 + 2)))->op_ctor((SCStr *)&param_2);
+  ((SCStr *)((SCStr *)(param_1 + 2)))->m_op_ctor((SCStr *)&param_2);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
-  ((SCStr *)((SCStr *)(param_1 + 3)))->op_ctor((SCStr *)&param_3);
+  ((SCStr *)((SCStr *)(param_1 + 3)))->m_op_ctor((SCStr *)&param_3);
   *(undefined1*)(param_1 + 4) = (undefined1)(param_4);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(4)));
   ((SCStr *)((SCStr *)&param_2))->int_release();
@@ -20585,9 +20585,9 @@ SCIOp * __thiscall Recovered_Bulk::m_FUN_10444830(SCIOp *param_2)
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x21);
     if ((int *)(local_40) != (int *)(0x0)) {
       piStack_44 = (int *)((int * *)(&stack0xffffff84));
-      ((SCStr *)((SCStr *)&stack0xffffff84))->op_ctor((SCStr *)(param_1 + 0x1c));
+      ((SCStr *)((SCStr *)&stack0xffffff84))->m_op_ctor((SCStr *)(param_1 + 0x1c));
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x22);
-      ((SCStr *)((SCStr *)&stack0xffffff80))->op_ctor((SCStr *)(param_1 + 0x18));
+      ((SCStr *)((SCStr *)&stack0xffffff80))->m_op_ctor((SCStr *)(param_1 + 0x18));
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x21);
       thunk_FUN_10b87410();
     }
@@ -20736,9 +20736,9 @@ LAB_10445103:
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x43);
       if ((int *)(local_40) != (int *)(0x0)) {
         piStack_44 = (int *)((int * *)(&stack0xffffff84));
-        ((SCStr *)((SCStr *)&stack0xffffff84))->op_ctor((SCStr *)(param_1 + 0x1c));
+        ((SCStr *)((SCStr *)&stack0xffffff84))->m_op_ctor((SCStr *)(param_1 + 0x1c));
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x44);
-        ((SCStr *)((SCStr *)&stack0xffffff80))->op_ctor((SCStr *)(param_1 + 0x18));
+        ((SCStr *)((SCStr *)&stack0xffffff80))->m_op_ctor((SCStr *)(param_1 + 0x18));
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x43);
         thunk_FUN_10b87410();
       }
@@ -20939,7 +20939,7 @@ void __stdcall FUN_10445370(int **param_1)
     else {
       local_20 = (int *)((int *)&ppiStack_80);
       ppiStack_80 = (int **)(extraout_ECX);
-      ((SCStr *)((SCStr *)&ppiStack_80))->op_ctor((SCStr *)(local_14 + 0x25));
+      ((SCStr *)((SCStr *)&ppiStack_80))->m_op_ctor((SCStr *)(local_14 + 0x25));
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xb);
       (**(code **)(*local_14 + 0x14))();
       local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0xc)));
@@ -21000,7 +21000,7 @@ LAB_104455a4:
       }
       else {
         ppiStack_80 = (int **)(extraout_ECX_00);
-        ((SCStr *)((SCStr *)&ppiStack_80))->op_ctor((SCStr *)(local_14 + 0x25));
+        ((SCStr *)((SCStr *)&ppiStack_80))->m_op_ctor((SCStr *)(local_14 + 0x25));
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x10);
         (**(code **)(*local_14 + 0x14))();
         local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x11)));
@@ -21290,7 +21290,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10445cb0(undefined4 *param_2)
     }
     else {
       uVar1 = (undefined1)(*(undefined1 *)(param_1 + 0x10));
-      ((SCStr *)((SCStr *)&local_14))->op_ctor((SCStr *)(local_18 + 0xc));
+      ((SCStr *)((SCStr *)&local_14))->m_op_ctor((SCStr *)(local_18 + 0xc));
       *piVar4 = (int)((int)(uint)&ghidra_vftable_SCIObjImpl);
       piVar4[1] = (int)(0);
       g_lSCObjCount = (int)(g_lSCObjCount + 1);
@@ -21298,11 +21298,11 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10445cb0(undefined4 *param_2)
       piVar4[3] = (int)(0);
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
       *piVar4 = (int)((int)(uint)&ghidra_vftable_SCNewDisableWifiAction);
-      ((SCStr *)((SCStr *)(piVar4 + 4)))->op_ctor((SCStr *)(local_18 + 8));
+      ((SCStr *)((SCStr *)(piVar4 + 4)))->m_op_ctor((SCStr *)(local_18 + 8));
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
       *(undefined1*)(piVar4 + 5) = (undefined1)(0);
       *(undefined1*)((int)piVar4 + 0x15) = (undefined1)(uVar1);
-      ((SCStr *)((SCStr *)(piVar4 + 6)))->op_ctor((SCStr *)&local_14);
+      ((SCStr *)((SCStr *)(piVar4 + 6)))->m_op_ctor((SCStr *)&local_14);
       piVar4[7] = (int)(0);
       piVar4[8] = (int)(0);
       piVar4[9] = (int)(0);
@@ -23484,9 +23484,9 @@ void __thiscall Recovered_Bulk::m_FUN_10448d70(int *param_2)
 
 
       *piVar7 = (int)((int)(uint)&ghidra_vftable_SCOpenUrlActionDescriptor);
-      ((SCStr *)((SCStr *)(piVar7 + 2)))->op_ctor((SCStr *)&local_24);
+      ((SCStr *)((SCStr *)(piVar7 + 2)))->m_op_ctor((SCStr *)&local_24);
       local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x3e)));
-      ((SCStr *)((SCStr *)(piVar7 + 3)))->op_ctor((SCStr *)&local_28);
+      ((SCStr *)((SCStr *)(piVar7 + 3)))->m_op_ctor((SCStr *)&local_28);
       uVar9 = (uint)(3);
     }
 
@@ -23613,9 +23613,9 @@ void __thiscall Recovered_Bulk::m_FUN_10448d70(int *param_2)
 
 
       *piVar7 = (int)((int)(uint)&ghidra_vftable_SCOpenUrlActionDescriptor);
-      ((SCStr *)((SCStr *)(piVar7 + 2)))->op_ctor((SCStr *)&param_2);
+      ((SCStr *)((SCStr *)(piVar7 + 2)))->m_op_ctor((SCStr *)&param_2);
       local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x5c)));
-      ((SCStr *)((SCStr *)(piVar7 + 3)))->op_ctor((SCStr *)&local_28);
+      ((SCStr *)((SCStr *)(piVar7 + 3)))->m_op_ctor((SCStr *)&local_28);
     }
 
     if ((int *)(piVar7) == (int *)(0x0)) {
@@ -23715,9 +23715,9 @@ void __thiscall Recovered_Bulk::m_FUN_10448d70(int *param_2)
       g_lSCObjCount = (int)(g_lSCObjCount + 1);
 
       *piVar4 = (int)((int)(uint)&ghidra_vftable_SCOpenUrlActionDescriptor);
-      ((SCStr *)((SCStr *)(piVar4 + 2)))->op_ctor((SCStr *)&param_2);
+      ((SCStr *)((SCStr *)(piVar4 + 2)))->m_op_ctor((SCStr *)&param_2);
       local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x72)));
-      ((SCStr *)((SCStr *)(piVar4 + 3)))->op_ctor((SCStr *)&local_28);
+      ((SCStr *)((SCStr *)(piVar4 + 3)))->m_op_ctor((SCStr *)&local_28);
     }
 
     if ((int *)(piVar4) != (int *)(local_54)) {
@@ -26923,7 +26923,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1044ede0(int *param_2)
     else {
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x24);
       thunk_FUN_101ed0d0();
-      ((SCStr *)((SCStr *)&stack0xffffffa4))->op_ctor((SCStr *)&DAT_121a1768);
+      ((SCStr *)((SCStr *)&stack0xffffffa4))->m_op_ctor((SCStr *)&DAT_121a1768);
       piVar8 = (int *)((int *)thunk_FUN_101ecf20(&param_2), 0);
       piVar7 = (int *)((int *)*piVar8);
       *piVar8 = (int)(0);
@@ -28567,7 +28567,7 @@ void __fastcall FUN_104517a0(int param_1)
     if (*(char *)(param_1 + 0x94) == '\0') {
       cVar2 = (char)((**(code **)(*piVar1 + 0x40))(iVar5), 0);
       if (cVar2 == '\0') {
-        pSVar8 = (SCStr *)((SCStr *)((SCStr *)((SCStr *)&local_1c))->op_ctor((SCStr *)&DAT_121a176c), 0);
+        pSVar8 = (SCStr *)((SCStr *)((SCStr *)((SCStr *)&local_1c))->m_op_ctor((SCStr *)&DAT_121a176c), 0);
 
         uVar7 = (uint)(2);
       }
@@ -29394,10 +29394,10 @@ LAB_10452b51:
 
       *local_c = (int)((int)(uint)&ghidra_vftable_SCOpenUrlActionDescriptor);
       local_20 = (uint)(uVar11);
-      ((SCStr *)((SCStr *)(local_c + 2)))->op_ctor((SCStr *)&local_8);
+      ((SCStr *)((SCStr *)(local_c + 2)))->m_op_ctor((SCStr *)&local_8);
       piVar3 = (int *)(local_c);
       local_7c = (undefined4)(((uint)(*(unsigned short *)((char *)&local_7c + 1)) << 8 | (uint)(0x32)));
-      ((SCStr *)((SCStr *)(local_c + 3)))->op_ctor(pSVar9);
+      ((SCStr *)((SCStr *)(local_c + 3)))->m_op_ctor(pSVar9);
     }
 
     if ((int *)(piVar3) != (int *)(local_28)) {
@@ -29511,10 +29511,10 @@ LAB_10452b51:
 
     *local_c = (int)((int)(uint)&ghidra_vftable_SCOpenUrlActionDescriptor);
     local_20 = (uint)(uVar11);
-    ((SCStr *)((SCStr *)(local_c + 2)))->op_ctor((SCStr *)&local_8);
+    ((SCStr *)((SCStr *)(local_c + 2)))->m_op_ctor((SCStr *)&local_8);
     piVar3 = (int *)(local_c);
     local_7c = (undefined4)(((uint)(*(unsigned short *)((char *)&local_7c + 1)) << 8 | (uint)(0x48)));
-    ((SCStr *)((SCStr *)(local_c + 3)))->op_ctor(pSVar9);
+    ((SCStr *)((SCStr *)(local_c + 3)))->m_op_ctor(pSVar9);
   }
 
   if ((int *)(piVar3) != (int *)(local_28)) {
@@ -29629,9 +29629,9 @@ LAB_10452b51:
 
     *local_30 = (int)((int)(uint)&ghidra_vftable_SCOpenUrlActionDescriptor);
     local_20 = (uint)(uVar11);
-    ((SCStr *)((SCStr *)(local_30 + 2)))->op_ctor((SCStr *)&local_1c);
+    ((SCStr *)((SCStr *)(local_30 + 2)))->m_op_ctor((SCStr *)&local_1c);
     local_7c = (undefined4)(((uint)(*(unsigned short *)((char *)&local_7c + 1)) << 8 | (uint)(0x5e)));
-    ((SCStr *)((SCStr *)(local_30 + 3)))->op_ctor(pSVar9);
+    ((SCStr *)((SCStr *)(local_30 + 3)))->m_op_ctor(pSVar9);
     piVar3 = (int *)(local_28);
   }
 
@@ -30379,7 +30379,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10454360(void *param_2)
   ((SCStr *)((SCStr *)&local_14))->int_release();
 
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(6);
-  ((SCHouseholdEventSink *)((SCHouseholdEventSink *)(param_1 + 0x24)))->op_ctor();
+  ((SCHouseholdEventSink *)((SCHouseholdEventSink *)(param_1 + 0x24)))->m_op_ctor();
   puStack_94 = (undefined4 *)((undefined4 *)0x0);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(8);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSettingsMenuGroups);
@@ -31188,9 +31188,9 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10455990(undefined1 param_2,SCStr 
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCAreaAction);
   *(undefined1*)(param_1 + 2) = (undefined1)(param_2);
-  ((SCStr *)((SCStr *)(param_1 + 3)))->op_ctor(param_3);
+  ((SCStr *)((SCStr *)(param_1 + 3)))->m_op_ctor(param_3);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
-  ((SCStr *)((SCStr *)(param_1 + 4)))->op_ctor(param_4);
+  ((SCStr *)((SCStr *)(param_1 + 4)))->m_op_ctor(param_4);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(3)));
   param_1[5] = (undefined4)(param_5);
   param_1[6] = (undefined4)(param_6);
@@ -31230,9 +31230,9 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10455a80(undefined1 param_2,SCStr 
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCAreaActionDescriptor);
   *(undefined1*)(param_1 + 2) = (undefined1)(param_2);
-  ((SCStr *)((SCStr *)(param_1 + 3)))->op_ctor(param_3);
+  ((SCStr *)((SCStr *)(param_1 + 3)))->m_op_ctor(param_3);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
-  ((SCStr *)((SCStr *)(param_1 + 4)))->op_ctor(param_4);
+  ((SCStr *)((SCStr *)(param_1 + 4)))->m_op_ctor(param_4);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(3)));
   param_1[5] = (undefined4)(param_5);
   param_1[6] = (undefined4)(param_6);
@@ -31344,7 +31344,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10455bb0(int *param_2)
   ((SCStr *)((SCStr *)&local_18))->int_release();
 
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(6);
-  ((SCHouseholdEventSink *)((SCHouseholdEventSink *)(param_1 + 0x24)))->op_ctor();
+  ((SCHouseholdEventSink *)((SCHouseholdEventSink *)(param_1 + 0x24)))->m_op_ctor();
   param_1[0x27] = (undefined4)((uint)&ghidra_vftable_SCIActionDelegateCB);
   param_1[0x28] = (undefined4)(0);
   param_1[0x29] = (undefined4)(0);
@@ -31934,15 +31934,15 @@ LAB_10456396:
     if ((int *)(local_30) != (int *)(0x0)) {
       (**(code **)(*local_30 + 0x14))();
       local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x79)));
-      ((SCStr *)((SCStr *)&stack0xffffff5c))->op_ctor((SCStr *)&local_18);
+      ((SCStr *)((SCStr *)&stack0xffffff5c))->m_op_ctor((SCStr *)&local_18);
       cVar2 = (char)((**(code **)(*local_28 + 0x2c))(), 0);
       local_40 = (int *)((int *)param_1[0x32]);
       if (cVar2 == '\0') {
-        ((SCStr *)((SCStr *)&stack0xffffff58))->op_ctor((SCStr *)&local_18);
+        ((SCStr *)((SCStr *)&stack0xffffff58))->m_op_ctor((SCStr *)&local_18);
         cVar2 = (char)((**(code **)(*local_40 + 0x2c))(), 0);
         if (cVar2 == '\0') {
           piVar5 = (int *)((int *)param_1[0x34]);
-          ((SCStr *)((SCStr *)&stack0xffffff60))->op_ctor((SCStr *)&local_18);
+          ((SCStr *)((SCStr *)&stack0xffffff60))->m_op_ctor((SCStr *)&local_18);
           cVar2 = (char)((**(code **)(*piVar5 + 0x2c))(), 0);
           piVar5 = (int *)(local_34);
           if ((cVar2 == '\0') &&
@@ -33010,11 +33010,11 @@ void __thiscall Recovered_Bulk::m_FUN_104586c0(undefined4 param_2)
   }
   else {
     piVar1 = (int *)(*(int **)(param_1 + 200), 0);
-    ((SCStr *)((SCStr *)&stack0xffffffb8))->op_ctor((SCStr *)&local_14);
+    ((SCStr *)((SCStr *)&stack0xffffffb8))->m_op_ctor((SCStr *)&local_14);
     cVar3 = (char)((**(code **)(*piVar1 + 0x2c))(), 0);
     if (cVar3 == '\0') {
       piVar1 = (int *)(*(int **)(param_1 + 0xd8), 0);
-      ((SCStr *)((SCStr *)&stack0xffffffb8))->op_ctor((SCStr *)&local_14);
+      ((SCStr *)((SCStr *)&stack0xffffffb8))->m_op_ctor((SCStr *)&local_14);
       cVar3 = (char)((**(code **)(*piVar1 + 0x2c))(), 0);
       if (cVar3 != '\0') {
         thunk_FUN_10459980();
@@ -33248,9 +33248,9 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10458c30(undefined4 *param_2)
     *(undefined1*)(puVar5 + 2) = (undefined1)(uVar1);
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
     *puVar5 = (undefined4)((uint)&ghidra_vftable_SCAreaAction);
-    ((SCStr *)((SCStr *)(puVar5 + 3)))->op_ctor((SCStr *)(param_1 + 0xc));
+    ((SCStr *)((SCStr *)(puVar5 + 3)))->m_op_ctor((SCStr *)(param_1 + 0xc));
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
-    ((SCStr *)((SCStr *)(puVar5 + 4)))->op_ctor((SCStr *)(param_1 + 0x10));
+    ((SCStr *)((SCStr *)(puVar5 + 4)))->m_op_ctor((SCStr *)(param_1 + 0x10));
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
     puVar5[5] = (undefined4)(local_14);
     puVar5[6] = (undefined4)(piVar2);
@@ -33890,7 +33890,7 @@ void __thiscall Recovered_Bulk::m_FUN_10459980(int *param_2)
 
   thunk_FUN_101ed0d0();
   piVar4 = (int *)(*(int **)(param_1 + 0xd8), 0);
-  ((SCStr *)((SCStr *)&uStack_70))->op_ctor((SCStr *)&local_1c);
+  ((SCStr *)((SCStr *)&uStack_70))->m_op_ctor((SCStr *)&local_1c);
   (**(code **)(*piVar4 + 0x28))();
   (**(code **)(*piVar4 + 0x40))();
   thunk_FUN_101f2950(&param_2);
@@ -34178,7 +34178,7 @@ void __thiscall Recovered_Bulk::m_FUN_1045a000(int *param_2)
 
   thunk_FUN_101ed0d0();
   piVar4 = (int *)(*(int **)(param_1 + 200), 0);
-  ((SCStr *)((SCStr *)&uStack_7c))->op_ctor((SCStr *)&local_1c);
+  ((SCStr *)((SCStr *)&uStack_7c))->m_op_ctor((SCStr *)&local_1c);
   (**(code **)(*piVar4 + 0x28))();
   (**(code **)(*piVar4 + 0x40))();
   thunk_FUN_101f2950(&param_2);
@@ -34497,15 +34497,15 @@ void __thiscall Recovered_Bulk::m_FUN_1045a740(int param_2)
       piVar5 = (int *)(*(int **)(param_1 + 0x40), 0);
       local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(10)));
       ppiStack_64 = (int **)((int **)0x1045a88c);
-      ((SCStr *)((SCStr *)&stack0xffffffa4))->op_ctor((SCStr *)&local_18);
+      ((SCStr *)((SCStr *)&stack0xffffffa4))->m_op_ctor((SCStr *)&local_18);
       cVar2 = (char)((**(code **)(*piVar5 + 0x2c))(), 0);
       if (cVar2 == '\0') {
         piVar5 = (int *)(*(int **)(param_1 + 0x38), 0);
-        ((SCStr *)((SCStr *)&ppiStack_58))->op_ctor((SCStr *)&local_18);
+        ((SCStr *)((SCStr *)&ppiStack_58))->m_op_ctor((SCStr *)&local_18);
         cVar2 = (char)((**(code **)(*piVar5 + 0x2c))(), 0);
         if (cVar2 == '\0') {
           piVar5 = (int *)(*(int **)(param_1 + 0x48), 0);
-          ((SCStr *)((SCStr *)&ppiStack_58))->op_ctor((SCStr *)&local_18);
+          ((SCStr *)((SCStr *)&ppiStack_58))->m_op_ctor((SCStr *)&local_18);
           cVar2 = (char)((**(code **)(*piVar5 + 0x2c))(), 0);
           piVar5 = (int *)(local_1c);
           if (cVar2 == '\0') {
@@ -34569,7 +34569,7 @@ LAB_1045a901:
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x10);
         if ((int *)(piVar1) == (int *)(0x0)) {
           piVar1 = (int *)(*(int **)(param_1 + 0x38), 0);
-          ((SCStr *)((SCStr *)&uStack_68))->op_ctor((SCStr *)&local_18);
+          ((SCStr *)((SCStr *)&uStack_68))->m_op_ctor((SCStr *)&local_18);
           uVar6 = (undefined4)((**(code **)(*piVar1 + 0x28))(), 0);
           (**(code **)(*piVar1 + 0x40))(uVar6);
           (**(code **)(**(int **)(param_1 + 0x40) + 0x24))(&local_18);
@@ -34623,7 +34623,7 @@ LAB_1045a901:
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x17);
         if ((int *)(piVar1) != (int *)(0x0)) {
           piVar1 = (int *)(*(int **)(param_1 + 0x40), 0);
-          ((SCStr *)((SCStr *)&uStack_68))->op_ctor((SCStr *)&local_18);
+          ((SCStr *)((SCStr *)&uStack_68))->m_op_ctor((SCStr *)&local_18);
           uVar6 = (undefined4)((**(code **)(*piVar1 + 0x28))(), 0);
           (**(code **)(*piVar1 + 0x40))(uVar6);
           (**(code **)(**(int **)(param_1 + 0x38) + 0x24))(&local_18);
@@ -34677,7 +34677,7 @@ LAB_1045a901:
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1e);
         if ((int *)(piVar1) == (int *)(0x0)) {
           piVar1 = (int *)(*(int **)(param_1 + 0x48), 0);
-          ((SCStr *)((SCStr *)&uStack_68))->op_ctor((SCStr *)&local_18);
+          ((SCStr *)((SCStr *)&uStack_68))->m_op_ctor((SCStr *)&local_18);
           uVar6 = (undefined4)((**(code **)(*piVar1 + 0x28))(), 0);
           (**(code **)(*piVar1 + 0x40))(uVar6);
           param_2 = (int)(((uint)(1) << 24 | (uint)((undefined3)param_2)));
@@ -34741,7 +34741,7 @@ LAB_1045a901:
                 if (cVar2 != '\0') goto LAB_1045acd5;
               }
               piVar1 = (int *)(*(int **)(param_1 + 0x48), 0);
-              ((SCStr *)((SCStr *)&uStack_68))->op_ctor((SCStr *)&local_18);
+              ((SCStr *)((SCStr *)&uStack_68))->m_op_ctor((SCStr *)&local_18);
               uVar6 = (undefined4)((**(code **)(*piVar1 + 0x28))(), 0);
               (**(code **)(*piVar1 + 0x40))(uVar6);
               param_2 = (int)(((uint)(1) << 24 | (uint)((undefined3)param_2)));
@@ -36588,10 +36588,10 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1045d5a0(SCLibrary *param_2)
 
     *(undefined***)param_2 = (undefined **)((SCLibrary *)((uint)&ghidra_vftable_SCOpenUrlActionDescriptor));
     pSStack_74 = (SCLibrary *)((SCLibrary *)0x1045d778);
-    ((SCStr *)((SCStr *)(param_2 + 8)))->op_ctor((SCStr *)&local_1c);
+    ((SCStr *)((SCStr *)(param_2 + 8)))->m_op_ctor((SCStr *)&local_1c);
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0xe)));
     pSStack_74 = (SCLibrary *)((SCLibrary *)0x1045d788);
-    ((SCStr *)((SCStr *)(param_2 + 0xc)))->op_ctor(pSVar3);
+    ((SCStr *)((SCStr *)(param_2 + 0xc)))->m_op_ctor(pSVar3);
     pSVar2 = (SCLibrary *)(param_2);
   }
 
@@ -36696,10 +36696,10 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1045d5a0(SCLibrary *param_2)
     *(undefined***)param_2 = (undefined **)((SCLibrary *)((uint)&ghidra_vftable_SCOpenUrlActionDescriptor));
     pSStack_74 = (SCLibrary *)((SCLibrary *)0x1045d9b9);
     local_14 = (uint)(uVar6);
-    ((SCStr *)((SCStr *)(param_2 + 8)))->op_ctor((SCStr *)&local_20);
+    ((SCStr *)((SCStr *)(param_2 + 8)))->m_op_ctor((SCStr *)&local_20);
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x24)));
     pSStack_74 = (SCLibrary *)((SCLibrary *)0x1045d9c9);
-    ((SCStr *)((SCStr *)(param_2 + 0xc)))->op_ctor(pSVar3);
+    ((SCStr *)((SCStr *)(param_2 + 0xc)))->m_op_ctor(pSVar3);
   }
 
   if ((SCLibrary *)((param_2)) != (SCLibrary *)(local_54)) {
@@ -36815,10 +36815,10 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1045d5a0(SCLibrary *param_2)
     *(undefined***)param_2 = (undefined **)((SCLibrary *)((uint)&ghidra_vftable_SCOpenUrlActionDescriptor));
     pSStack_74 = (SCLibrary *)((SCLibrary *)0x1045dc4c);
     local_14 = (uint)(uVar6);
-    ((SCStr *)((SCStr *)(param_2 + 8)))->op_ctor((SCStr *)&local_28);
+    ((SCStr *)((SCStr *)(param_2 + 8)))->m_op_ctor((SCStr *)&local_28);
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x3a)));
     pSStack_74 = (SCLibrary *)((SCLibrary *)0x1045dc5c);
-    ((SCStr *)((SCStr *)(param_2 + 0xc)))->op_ctor(pSVar3);
+    ((SCStr *)((SCStr *)(param_2 + 0xc)))->m_op_ctor(pSVar3);
   }
 
   if ((SCLibrary *)((param_2)) != (SCLibrary *)(local_54)) {
@@ -36934,10 +36934,10 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1045d5a0(SCLibrary *param_2)
     *(undefined***)param_2 = (undefined **)((SCLibrary *)((uint)&ghidra_vftable_SCOpenUrlActionDescriptor));
     pSStack_74 = (SCLibrary *)((SCLibrary *)0x1045dee2);
     local_14 = (uint)(uVar6);
-    ((SCStr *)((SCStr *)(param_2 + 8)))->op_ctor((SCStr *)&local_2c);
+    ((SCStr *)((SCStr *)(param_2 + 8)))->m_op_ctor((SCStr *)&local_2c);
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x50)));
     pSStack_74 = (SCLibrary *)((SCLibrary *)0x1045def2);
-    ((SCStr *)((SCStr *)(param_2 + 0xc)))->op_ctor(pSVar3);
+    ((SCStr *)((SCStr *)(param_2 + 0xc)))->m_op_ctor(pSVar3);
   }
 
   if ((SCLibrary *)((param_2)) != (SCLibrary *)(local_54)) {
@@ -37053,10 +37053,10 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1045d5a0(SCLibrary *param_2)
     *(undefined***)param_2 = (undefined **)((SCLibrary *)((uint)&ghidra_vftable_SCOpenUrlActionDescriptor));
     pSStack_74 = (SCLibrary *)((SCLibrary *)0x1045e181);
     local_14 = (uint)(uVar6);
-    ((SCStr *)((SCStr *)(param_2 + 8)))->op_ctor((SCStr *)&local_2c);
+    ((SCStr *)((SCStr *)(param_2 + 8)))->m_op_ctor((SCStr *)&local_2c);
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x66)));
     pSStack_74 = (SCLibrary *)((SCLibrary *)0x1045e191);
-    ((SCStr *)((SCStr *)(param_2 + 0xc)))->op_ctor(pSVar3);
+    ((SCStr *)((SCStr *)(param_2 + 0xc)))->m_op_ctor(pSVar3);
   }
 
   if ((SCLibrary *)((param_2)) != (SCLibrary *)(local_54)) {
@@ -37172,10 +37172,10 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1045d5a0(SCLibrary *param_2)
     *(undefined***)param_2 = (undefined **)((SCLibrary *)((uint)&ghidra_vftable_SCOpenUrlActionDescriptor));
     pSStack_74 = (SCLibrary *)((SCLibrary *)0x1045e42a);
     local_14 = (uint)(uVar6);
-    ((SCStr *)((SCStr *)(param_2 + 8)))->op_ctor((SCStr *)&local_2c);
+    ((SCStr *)((SCStr *)(param_2 + 8)))->m_op_ctor((SCStr *)&local_2c);
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x7c)));
     pSStack_74 = (SCLibrary *)((SCLibrary *)0x1045e43a);
-    ((SCStr *)((SCStr *)(param_2 + 0xc)))->op_ctor(pSVar3);
+    ((SCStr *)((SCStr *)(param_2 + 0xc)))->m_op_ctor(pSVar3);
   }
 
   if ((SCLibrary *)((param_2)) != (SCLibrary *)(local_54)) {
@@ -38855,7 +38855,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10461730(SCStr *param_2,undefined4
   param_1[6] = (undefined4)((uint)&ghidra_vftable_SCRemoveSSIDAction);
   param_1[0xe] = (undefined4)((uint)&ghidra_vftable_SCRemoveSSIDAction);
   *(undefined1*)(param_1 + 0x11) = (undefined1)(0);
-  ((SCStr *)((SCStr *)(param_1 + 0x12)))->op_ctor(param_2);
+  ((SCStr *)((SCStr *)(param_1 + 0x12)))->m_op_ctor(param_2);
   param_1[0x15] = (undefined4)(0);
   param_1[0x16] = (undefined4)(0);
   param_1[0x18] = (undefined4)(0);
@@ -38902,7 +38902,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_104618d0(undefined4 param_2,int *p
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCRemoveSSIDDescriptor);
-  ((SCStr *)((SCStr *)(param_1 + 2)))->op_ctor(param_4);
+  ((SCStr *)((SCStr *)(param_1 + 2)))->m_op_ctor(param_4);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
   param_1[3] = (undefined4)(param_2);
   param_1[4] = (undefined4)(param_3);
@@ -39852,7 +39852,7 @@ void __thiscall Recovered_Bulk::m_FUN_10462f80(int *param_2,short param_3)
           bVar3 = (bool)(((SCStr *)((SCStr *)(iVar7 + 4 + iVar8)))->op_eq((char *)0x0), 0);
           if (!bVar3) {
             piVar5 = (int *)(*(int **)(param_1 + 0x14), 0);
-            ((SCStr *)((SCStr *)&stack0xffffffc0))->op_ctor((SCStr *)(*(int *)(iVar1 + 8) + 4 + iVar8));
+            ((SCStr *)((SCStr *)&stack0xffffffc0))->m_op_ctor((SCStr *)(*(int *)(iVar1 + 8) + 4 + iVar8));
             cVar2 = (char)((**(code **)(*piVar5 + 0x2c))(), 0);
             if (cVar2 == '\0') {
               (**(code **)(**(int **)(param_1 + 0x14) + 0x24))();
@@ -40485,7 +40485,7 @@ void __fastcall FUN_10463b40(int param_1)
           g_lSCObjCount = (int)(g_lSCObjCount + 1);
           *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0x2e);
           *puVar6 = (undefined4)((uint)&ghidra_vftable_SCRemoveSSIDDescriptor);
-          ((SCStr *)((SCStr *)(puVar6 + 2)))->op_ctor((SCStr *)&local_44);
+          ((SCStr *)((SCStr *)(puVar6 + 2)))->m_op_ctor((SCStr *)&local_44);
           *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0x2f);
           puVar6[3] = (undefined4)(local_78);
           puVar6[4] = (undefined4)(local_90);
@@ -40644,7 +40644,7 @@ int * __thiscall Recovered_Bulk::m_FUN_10464580(int *param_2)
     puVar3[6] = (undefined4)((uint)&ghidra_vftable_SCRemoveSSIDAction);
     puVar3[0xe] = (undefined4)((uint)&ghidra_vftable_SCRemoveSSIDAction);
     *(undefined1*)(puVar3 + 0x11) = (undefined1)(0);
-    ((SCStr *)((SCStr *)(puVar3 + 0x12)))->op_ctor((SCStr *)(local_14 + 8));
+    ((SCStr *)((SCStr *)(puVar3 + 0x12)))->m_op_ctor((SCStr *)(local_14 + 8));
     puVar3[0x15] = (undefined4)(0);
     puVar3[0x16] = (undefined4)(0);
     puVar3[0x18] = (undefined4)(0);
@@ -40754,7 +40754,7 @@ SCStr * FUN_104648e0(SCStr *param_1,SCStr *param_2)
     uVar6 = (uint)(1);
   }
   local_14 = (uint)(uVar6);
-  ((SCStr *)((SCStr *)&local_20))->op_ctor(pSVar4);
+  ((SCStr *)((SCStr *)&local_20))->m_op_ctor(pSVar4);
 
   if ((uVar6 & 2) != 0) {
     uVar6 = (uint)(uVar6 & 0xfffffffd);
@@ -45733,7 +45733,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_1046cbc0(SCStr *param_2)
       }
       uVar3 = (uint)(((SCStr *)((SCStr *)&local_14))->length(), 0);
       ((SCStr *)((SCStr *)&local_18))->append(pcVar8,uVar3);
-      ((SCStr *)(param_2))->op_ctor((SCStr *)&local_18);
+      ((SCStr *)(param_2))->m_op_ctor((SCStr *)&local_18);
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x12);
       ((SCStr *)((SCStr *)&local_1c))->int_release();
       local_1c = (undefined1 *)((undefined1 *)0x0);
@@ -46085,9 +46085,9 @@ void FUN_1046d3a0(void)
 
 
         *piVar4 = (int)((int)(uint)&ghidra_vftable_SCOpenUrlActionDescriptor);
-        ((SCStr *)((SCStr *)(piVar4 + 2)))->op_ctor((SCStr *)&local_24);
+        ((SCStr *)((SCStr *)(piVar4 + 2)))->m_op_ctor((SCStr *)&local_24);
         local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x22)));
-        ((SCStr *)((SCStr *)(piVar4 + 3)))->op_ctor((SCStr *)&local_28);
+        ((SCStr *)((SCStr *)(piVar4 + 3)))->m_op_ctor((SCStr *)&local_28);
       }
       piVar2 = (int *)((int *)0x0);
 
@@ -46362,7 +46362,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1046db20(int *param_2)
   ((SCStr *)((SCStr *)&local_20))->int_release();
   param_1[0x24] = (undefined4)((uint)&ghidra_vftable_SCSwfObjHHListener);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(10);
-  ((SCHouseholdEventSink *)((SCHouseholdEventSink *)(param_1 + 0x25)))->op_ctor();
+  ((SCHouseholdEventSink *)((SCHouseholdEventSink *)(param_1 + 0x25)))->m_op_ctor();
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSettingsMenuParentalControls);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCSettingsMenuParentalControls);
   param_1[10] = (undefined4)((uint)&ghidra_vftable_SCSettingsMenuParentalControls);
@@ -46657,10 +46657,10 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1046db20(int *param_2)
 
       *piVar6 = (int)((int)(uint)&ghidra_vftable_SCOpenUrlActionDescriptor);
       puStack_74 = (uint *)((uint *)0x1046e27b);
-      ((SCStr *)((SCStr *)(piVar6 + 2)))->op_ctor((SCStr *)&param_2);
+      ((SCStr *)((SCStr *)(piVar6 + 2)))->m_op_ctor((SCStr *)&param_2);
       local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x37)));
       puStack_74 = (uint *)((uint *)0x1046e28b);
-      ((SCStr *)((SCStr *)(piVar6 + 3)))->op_ctor((SCStr *)&local_1c);
+      ((SCStr *)((SCStr *)(piVar6 + 3)))->m_op_ctor((SCStr *)&local_1c);
     }
 
     local_50 = (int *)((int *)0x0);
@@ -47115,7 +47115,7 @@ SCStr * __stdcall FUN_1046eea0(SCStr *param_1)
   uVar2 = (uint)(0xc);
 LAB_1046ef83:
   local_14 = (uint)(uVar2);
-  ((SCStr *)(param_1))->op_ctor(pSVar4);
+  ((SCStr *)(param_1))->m_op_ctor(pSVar4);
   uVar3 = (uint)(uVar2 | 0x10);
   *(undefined4*)(param_1 + 4) = (undefined4)(*(undefined4 *)(pSVar4 + 4));
   if ((uVar2 & 8) != 0) {
@@ -48705,7 +48705,7 @@ SCStr * __stdcall FUN_104712b0(SCStr *param_1, unsigned int recovered_unused_sta
     ((SCStr *)((SCStr *)&local_14))->int_release();
     local_8 = (int)((uint)*(unsigned short *)((char *)&local_8 + 1) << 8);
   }
-  ((SCStr *)(param_1))->op_ctor((SCStr *)&DAT_121a07b0);
+  ((SCStr *)(param_1))->m_op_ctor((SCStr *)&DAT_121a07b0);
   *(undefined4*)(param_1 + 4) = (undefined4)(DAT_121a07b4);
 
 LAB_10471392:
@@ -49339,7 +49339,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10472080(int *param_2)
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x23);
     piStack_70 = (int *)((int *)0x104724d3);
     thunk_FUN_101ecbb0();
-    ((SCStr *)((SCStr *)&piStack_70))->op_ctor((SCStr *)&DAT_121a19c4);
+    ((SCStr *)((SCStr *)&piStack_70))->m_op_ctor((SCStr *)&DAT_121a19c4);
     thunk_FUN_101ecf20(&param_2);
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x2f);
     if ((int *)(param_2) != (int *)(0x0)) {
@@ -49918,7 +49918,7 @@ void __fastcall FUN_10473440(int param_1)
   if (((SCLibrary *)(pSVar4) != (SCLibrary *)(0x0)) && (*(int **)(param_1 + 0x98) != (int *)((0x0)))) {
     (**(code **)(**(int **)(param_1 + 0x98) + 0x44))();
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
-    ((SCStr *)((SCStr *)&stack0xffffff74))->op_ctor((SCStr *)(param_1 + 0x94));
+    ((SCStr *)((SCStr *)&stack0xffffff74))->m_op_ctor((SCStr *)(param_1 + 0x94));
     piVar5 = (int *)((int *)(**(code **)(*(int *)pSVar4 + 0x58))(&local_2c), 0);
     piVar1 = (int *)((int *)*piVar5);
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
@@ -49936,7 +49936,7 @@ void __fastcall FUN_10473440(int param_1)
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(5);
     if ((int *)(piVar1) != (int *)(0x0)) {
       (**(code **)(*piVar1 + 0x18))();
-      ((SCStr *)((SCStr *)&stack0xffffff78))->op_ctor((SCStr *)&DAT_121a19c4);
+      ((SCStr *)((SCStr *)&stack0xffffff78))->m_op_ctor((SCStr *)&DAT_121a19c4);
       thunk_FUN_101f11d0();
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(7);
       thunk_FUN_101e8090();
@@ -50142,7 +50142,7 @@ void __thiscall Recovered_Bulk::m_FUN_104739c0(undefined4 param_2,int *param_3)
       piStack_44 = (int *)((int *)0x10473a21);
       (**(code **)(**(int **)(param_1 + 8) + 0x44))();
 
-      ((SCStr *)((SCStr *)&piStack_44))->op_ctor((SCStr *)&DAT_121a19c4);
+      ((SCStr *)((SCStr *)&piStack_44))->m_op_ctor((SCStr *)&DAT_121a19c4);
       piStack_44 = (int *)((int *)thunk_FUN_101f11d0(&param_3), 0);
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
       thunk_FUN_101e8090();
@@ -50867,7 +50867,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10474d60(SCStr *param_2,undefined4
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCMissingPlayerAction);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCMissingPlayerAction);
-  ((SCStr *)((SCStr *)(param_1 + 6)))->op_ctor(param_2);
+  ((SCStr *)((SCStr *)(param_1 + 6)))->m_op_ctor(param_2);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
   param_1[7] = (undefined4)(param_3);
   param_1[8] = (undefined4)(param_4);
@@ -50905,7 +50905,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10474e60(SCStr *param_2,undefined4
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCMissingPlayerActionDescriptor);
-  ((SCStr *)((SCStr *)(param_1 + 2)))->op_ctor(param_2);
+  ((SCStr *)((SCStr *)(param_1 + 2)))->m_op_ctor(param_2);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
   param_1[3] = (undefined4)(param_3);
   param_1[4] = (undefined4)(param_4);
@@ -51155,9 +51155,9 @@ undefined1 * __thiscall Recovered_Bulk::m_FUN_10475400(undefined1 *param_2)
   param_1[6] = (undefined1)(param_2[6]);
   param_1[7] = (undefined1)(param_2[7]);
   param_1[8] = (undefined1)(param_2[8]);
-  ((SCStr *)((SCStr *)(param_1 + 0xc)))->op_ctor((SCStr *)(param_2 + 0xc));
+  ((SCStr *)((SCStr *)(param_1 + 0xc)))->m_op_ctor((SCStr *)(param_2 + 0xc));
 
-  ((SCStr *)((SCStr *)(param_1 + 0x10)))->op_ctor((SCStr *)(param_2 + 0x10));
+  ((SCStr *)((SCStr *)(param_1 + 0x10)))->m_op_ctor((SCStr *)(param_2 + 0x10));
   *(undefined4*)(param_1 + 0x14) = (undefined4)(*(undefined4 *)(param_2 + 0x14));
   piVar1 = (int *)(*(int **)(param_2 + 0x18), 0);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
@@ -52259,7 +52259,7 @@ LAB_10476a1b:
           if (param_3 == '\0') {
             ((SCStr *)((SCStr *)&local_70))->int_allocRep("settings_add");
             *(unsigned char*)((char *)&local_60 + 0) = (unsigned char)(0x53);
-            uVar9 = (undefined4)(((SCImageResource *)((SCImageResource *)&local_84))->op_ctor((SCStr *)&local_70,5), 0);
+            uVar9 = (undefined4)(((SCImageResource *)((SCImageResource *)&local_84))->m_op_ctor((SCStr *)&local_70,5), 0);
             uVar5 = (undefined4)(local_58);
             *(unsigned char*)((char *)&local_60 + 0) = (unsigned char)(0x54);
             thunk_FUN_1041d340(1,uVar9);
@@ -52302,7 +52302,7 @@ LAB_10476a1b:
                   g_lSCObjCount = (int)(g_lSCObjCount + 1);
                   *(unsigned char*)((char *)&local_60 + 0) = (unsigned char)(0x5d);
                   *piVar10 = (int)((int)(uint)&ghidra_vftable_SCMissingPlayerActionDescriptor);
-                  ((SCStr *)((SCStr *)(piVar10 + 2)))->op_ctor((SCStr *)(local_5c + 0x25));
+                  ((SCStr *)((SCStr *)(piVar10 + 2)))->m_op_ctor((SCStr *)(local_5c + 0x25));
                   *(unsigned char*)((char *)&local_60 + 0) = (unsigned char)(0x5e);
                   piVar10[3] = (int)((int)piVar7);
                   piVar10[4] = (int)((int)piVar12);
@@ -52385,7 +52385,7 @@ LAB_10476a1b:
             }
             ((SCStr *)((SCStr *)&local_78))->int_allocRep(pcVar6);
             *(unsigned char*)((char *)&local_60 + 0) = (unsigned char)(0x68);
-            uVar5 = (undefined4)(((SCImageResource *)((SCImageResource *)&local_74))->op_ctor((SCStr *)&local_78,5), 0);
+            uVar5 = (undefined4)(((SCImageResource *)((SCImageResource *)&local_74))->m_op_ctor((SCStr *)&local_78,5), 0);
             *(unsigned char*)((char *)&local_60 + 0) = (unsigned char)(0x69);
             thunk_FUN_1041d340(1,uVar5);
             *(unsigned char*)((char *)&local_60 + 0) = (unsigned char)(0x6a);
@@ -52460,9 +52460,9 @@ LAB_104770f6:
         *(unsigned char*)((char *)&local_60 + 0) = (unsigned char)(0x35);
         ((SCStr *)((SCStr *)&local_14))->int_allocRep("VoiceActive");
         *(unsigned char*)((char *)&local_60 + 0) = (unsigned char)(0x37);
-        ((SCStr *)((SCStr *)&local_10))->op_ctor((SCStr *)&local_4c);
+        ((SCStr *)((SCStr *)&local_10))->m_op_ctor((SCStr *)&local_4c);
         *(unsigned char*)((char *)&local_60 + 0) = (unsigned char)(0x38);
-        ((SCStr *)((SCStr *)&local_c))->op_ctor((SCStr *)&param_4);
+        ((SCStr *)((SCStr *)&local_c))->m_op_ctor((SCStr *)&param_4);
         *(unsigned char*)((char *)&local_60 + 0) = (unsigned char)(0x39);
         thunk_FUN_106a2610(&local_14,&local_8);
         *(unsigned char*)((char *)&local_60 + 0) = (unsigned char)(0x3b);
@@ -52680,10 +52680,10 @@ void __fastcall FUN_104775f0(int param_1)
       local_19 = (undefined1)(puVar6[6]);
       local_18 = (undefined1)(puVar6[7]);
       ppiStack_d0 = (int **)((int **)0x10477841);
-      ((SCStr *)((uint)&local_14))->op_ctor((SCStr *)(puVar6 + 0xb));
+      ((SCStr *)((uint)&local_14))->m_op_ctor((SCStr *)(puVar6 + 0xb));
       *(unsigned char*)((char *)&local_6c + 0) = (unsigned char)(0x17);
       ppiStack_d0 = (int **)((int **)0x10477851);
-      ((SCStr *)((SCStr *)&local_10))->op_ctor((SCStr *)(puVar6 + 0xf));
+      ((SCStr *)((SCStr *)&local_10))->m_op_ctor((SCStr *)(puVar6 + 0xf));
       local_8 = (int *)(*(int **)(puVar6 + 0x17), 0);
       local_c = (undefined4)(*(undefined4 *)(puVar6 + 0x13));
       *(unsigned char*)((char *)&local_6c + 0) = (unsigned char)(0x18);
@@ -52704,9 +52704,9 @@ void __fastcall FUN_104775f0(int param_1)
         uStack_e2 = (undefined1)(local_1a);
         uStack_e1 = (undefined1)(local_19);
         uStack_e0 = (undefined1)(local_18);
-        ((SCStr *)((uint)&aSStack_dc))->op_ctor((uint)&local_14);
+        ((SCStr *)((uint)&aSStack_dc))->m_op_ctor((uint)&local_14);
         *(unsigned char*)((char *)&local_6c + 0) = (unsigned char)(0x1a);
-        ((SCStr *)((SCStr *)&uStack_d8))->op_ctor((SCStr *)&local_10);
+        ((SCStr *)((SCStr *)&uStack_d8))->m_op_ctor((SCStr *)&local_10);
         ppiStack_d4 = (int **)((int **)local_c);
         ppiStack_d0 = (int **)((int **)local_8);
         *(unsigned char*)((char *)&local_6c + 0) = (unsigned char)(0x1b);
@@ -52749,10 +52749,10 @@ void __fastcall FUN_104775f0(int param_1)
       local_19 = (undefined1)(puVar6[6]);
       local_18 = (undefined1)(puVar6[7]);
       ppiStack_d0 = (int **)((int **)0x104779b1);
-      ((SCStr *)((uint)&local_14))->op_ctor((SCStr *)(puVar6 + 0xb));
+      ((SCStr *)((uint)&local_14))->m_op_ctor((SCStr *)(puVar6 + 0xb));
       *(unsigned char*)((char *)&local_6c + 0) = (unsigned char)(0x1f);
       ppiStack_d0 = (int **)((int **)0x104779c1);
-      ((SCStr *)((SCStr *)&local_10))->op_ctor((SCStr *)(puVar6 + 0xf));
+      ((SCStr *)((SCStr *)&local_10))->m_op_ctor((SCStr *)(puVar6 + 0xf));
       local_8 = (int *)(*(int **)(puVar6 + 0x17), 0);
       local_c = (undefined4)(*(undefined4 *)(puVar6 + 0x13));
       *(unsigned char*)((char *)&local_6c + 0) = (unsigned char)(0x20);
@@ -52773,9 +52773,9 @@ void __fastcall FUN_104775f0(int param_1)
         uStack_e2 = (undefined1)(local_1a);
         uStack_e1 = (undefined1)(local_19);
         uStack_e0 = (undefined1)(local_18);
-        ((SCStr *)((uint)&aSStack_dc))->op_ctor((uint)&local_14);
+        ((SCStr *)((uint)&aSStack_dc))->m_op_ctor((uint)&local_14);
         *(unsigned char*)((char *)&local_6c + 0) = (unsigned char)(0x22);
-        ((SCStr *)((SCStr *)&uStack_d8))->op_ctor((SCStr *)&local_10);
+        ((SCStr *)((SCStr *)&uStack_d8))->m_op_ctor((SCStr *)&local_10);
         ppiStack_d4 = (int **)((int **)local_c);
         ppiStack_d0 = (int **)((int **)local_8);
         *(unsigned char*)((char *)&local_6c + 0) = (unsigned char)(0x23);
@@ -52820,10 +52820,10 @@ void __fastcall FUN_104775f0(int param_1)
       local_19 = (undefined1)(puVar6[6]);
       local_18 = (undefined1)(puVar6[7]);
       ppiStack_d0 = (int **)((int **)0x10477b21);
-      ((SCStr *)((uint)&local_14))->op_ctor((SCStr *)(puVar6 + 0xb));
+      ((SCStr *)((uint)&local_14))->m_op_ctor((SCStr *)(puVar6 + 0xb));
       *(unsigned char*)((char *)&local_6c + 0) = (unsigned char)(0x27);
       ppiStack_d0 = (int **)((int **)0x10477b31);
-      ((SCStr *)((SCStr *)&local_10))->op_ctor((SCStr *)(puVar6 + 0xf));
+      ((SCStr *)((SCStr *)&local_10))->m_op_ctor((SCStr *)(puVar6 + 0xf));
       local_8 = (int *)(*(int **)(puVar6 + 0x17), 0);
       local_c = (undefined4)(*(undefined4 *)(puVar6 + 0x13));
       *(unsigned char*)((char *)&local_6c + 0) = (unsigned char)(0x28);
@@ -52844,9 +52844,9 @@ void __fastcall FUN_104775f0(int param_1)
         uStack_e2 = (undefined1)(local_1a);
         uStack_e1 = (undefined1)(local_19);
         uStack_e0 = (undefined1)(local_18);
-        ((SCStr *)((uint)&aSStack_dc))->op_ctor((uint)&local_14);
+        ((SCStr *)((uint)&aSStack_dc))->m_op_ctor((uint)&local_14);
         *(unsigned char*)((char *)&local_6c + 0) = (unsigned char)(0x2a);
-        ((SCStr *)((SCStr *)&uStack_d8))->op_ctor((SCStr *)&local_10);
+        ((SCStr *)((SCStr *)&uStack_d8))->m_op_ctor((SCStr *)&local_10);
         ppiStack_d4 = (int **)((int **)local_c);
         ppiStack_d0 = (int **)((int **)local_8);
         *(unsigned char*)((char *)&local_6c + 0) = (unsigned char)(0x2b);
@@ -52993,7 +52993,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10477f90(undefined4 *param_2)
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
     *puVar4 = (undefined4)((uint)&ghidra_vftable_SCMissingPlayerAction);
     puVar4[2] = (undefined4)((uint)&ghidra_vftable_SCMissingPlayerAction);
-    ((SCStr *)((SCStr *)(puVar4 + 6)))->op_ctor((SCStr *)(param_1 + 8));
+    ((SCStr *)((SCStr *)(puVar4 + 6)))->m_op_ctor((SCStr *)(param_1 + 8));
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
     puVar4[7] = (undefined4)(local_14);
     puVar4[8] = (undefined4)(piVar1);
@@ -55134,7 +55134,7 @@ int * __thiscall Recovered_Bulk::m_FUN_1047bed0(int *param_2)
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x11);
   ((SCStr *)((SCStr *)&local_2c))->int_release();
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0);
-  ((SCStr *)((SCStr *)&local_14))->op_ctor((SCStr *)&DAT_121a0be0);
+  ((SCStr *)((SCStr *)&local_14))->m_op_ctor((SCStr *)&DAT_121a0be0);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x12);
   thunk_FUN_106a2610(&local_14,&local_10);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x14)));
@@ -56756,7 +56756,7 @@ int __fastcall FUN_1047e990(int param_1, unsigned int recovered_unused_stack_0, 
   puVar1 = (undefined4 *)(operator_new(8), 0);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
   *puVar1 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  ((SCStr *)((SCStr *)(puVar1 + 1)))->op_ctor((SCStr *)&stack0x00000004);
+  ((SCStr *)((SCStr *)(puVar1 + 1)))->m_op_ctor((SCStr *)&stack0x00000004);
   *(undefined4**)(param_1 + 0x24) = (undefined4 *)(puVar1);
 
   ((SCStr *)((SCStr *)&stack0x00000004))->int_release();
@@ -57921,7 +57921,7 @@ undefined4 * FUN_104806b0(SCStr *param_1)
   puVar1 = (undefined4 *)(operator_new(8), 0);
 
   *puVar1 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  ((SCStr *)((SCStr *)(puVar1 + 1)))->op_ctor(param_1);
+  ((SCStr *)((SCStr *)(puVar1 + 1)))->m_op_ctor(param_1);
 
   return (undefined4 *)(puVar1);
 
@@ -57945,7 +57945,7 @@ undefined4 * FUN_10480730(SCStr *param_1)
   puVar1 = (undefined4 *)(operator_new(8), 0);
 
   *puVar1 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  ((SCStr *)((SCStr *)(puVar1 + 1)))->op_ctor(param_1);
+  ((SCStr *)((SCStr *)(puVar1 + 1)))->m_op_ctor(param_1);
 
   return (undefined4 *)(puVar1);
 
@@ -58470,7 +58470,7 @@ void __thiscall Recovered_Bulk::m_FUN_104810a0(SCStr *param_2)
   puVar1 = (undefined4 *)(operator_new(8), 0);
 
   *puVar1 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  ((SCStr *)((SCStr *)(puVar1 + 1)))->op_ctor(param_2);
+  ((SCStr *)((SCStr *)(puVar1 + 1)))->m_op_ctor(param_2);
   *(undefined4**)(param_1 + 0x24) = (undefined4 *)(puVar1);
 
   return;
@@ -59215,7 +59215,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10483090(undefined4 param_2)
   ((SCStr *)((SCStr *)&local_14))->int_release();
   local_14 = (int *)((int *)0x0);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(6);
-  ((SCHouseholdEventSink *)((SCHouseholdEventSink *)(param_1 + 0x24)))->op_ctor();
+  ((SCHouseholdEventSink *)((SCHouseholdEventSink *)(param_1 + 0x24)))->m_op_ctor();
   piVar4 = (int *)(param_1 + 0x27);
   *piVar4 = (int)((int)(uint)&ghidra_vftable_SCAccountManagerEventSink);
   param_1[0x28] = (undefined4)(0);
@@ -59377,7 +59377,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10483090(undefined4 param_2)
     ((SCStr *)((SCStr *)&local_18))->int_release();
   }
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x2a);
-  ((SCStr *)((SCStr *)&param_2))->op_ctor(pSVar10);
+  ((SCStr *)((SCStr *)&param_2))->m_op_ctor(pSVar10);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x30);
   ((SCStr *)((SCStr *)&param_2))->int_release();
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x2a);
@@ -59624,7 +59624,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10483090(undefined4 param_2)
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x54);
   ((SCStr *)((SCStr *)&param_2))->int_release();
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x2a);
-  ((SCStr *)((SCStr *)&stack0xffffffac))->op_ctor(pSVar10);
+  ((SCStr *)((SCStr *)&stack0xffffffac))->m_op_ctor(pSVar10);
   FUN_104946b0(&local_20);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x55);
   thunk_FUN_101b9270();
@@ -61787,7 +61787,7 @@ undefined4 * __fastcall FUN_104870a0(int param_1, unsigned int recovered_unused_
   puVar1 = (undefined4 *)(operator_new(8), 0);
 
   *puVar1 = (undefined4)((uint)&ghidra_vftable_std_Func_impl_no_alloc);
-  ((SCStr *)((SCStr *)(puVar1 + 1)))->op_ctor((SCStr *)(param_1 + 4));
+  ((SCStr *)((SCStr *)(puVar1 + 1)))->m_op_ctor((SCStr *)(param_1 + 4));
 
   return (undefined4 *)(puVar1);
 
@@ -62636,7 +62636,7 @@ void __fastcall FUN_104888f0(int param_1)
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
   local_18 = (int)(param_1);
-  ((SCStr *)((SCStr *)&stack0xffffffa8))->op_ctor((SCStr *)(param_1 + 0xb8));
+  ((SCStr *)((SCStr *)&stack0xffffffa8))->m_op_ctor((SCStr *)(param_1 + 0xb8));
   piVar2 = (int *)((int *)FUN_104946b0(&local_28), 0);
   piVar1 = (int *)((int *)*piVar2);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
@@ -62740,7 +62740,7 @@ void __fastcall FUN_104888f0(int param_1)
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x19);
         ((SCStr *)((uint)&local_24))->int_release();
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
-        ((SCStr *)((SCStr *)&local_2c))->op_ctor((SCStr *)(local_18 + 0xb8));
+        ((SCStr *)((SCStr *)&local_2c))->m_op_ctor((SCStr *)(local_18 + 0xb8));
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1a);
         ((SCStr *)((SCStr *)&local_2c))->int_release();
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
@@ -62803,7 +62803,7 @@ void __fastcall FUN_104888f0(int param_1)
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x26);
         ((SCStr *)((uint)&local_24))->int_release();
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
-        ((SCStr *)((SCStr *)&local_2c))->op_ctor((SCStr *)(local_18 + 0xb8));
+        ((SCStr *)((SCStr *)&local_2c))->m_op_ctor((SCStr *)(local_18 + 0xb8));
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x27);
         ((SCStr *)((SCStr *)&local_2c))->int_release();
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
@@ -62884,7 +62884,7 @@ void __fastcall FUN_10488f40(int param_1)
   local_74 = (SCStr *)((SCStr *)(param_1 + 0xb8));
 
   local_78 = (int)(param_1);
-  ((SCStr *)((SCStr *)&stack0xffffff44))->op_ctor(local_74);
+  ((SCStr *)((SCStr *)&stack0xffffff44))->m_op_ctor(local_74);
   piVar2 = (int *)((int *)FUN_104946b0((uint)&local_34), 0);
   piVar9 = (int *)((int *)*piVar2);
 
@@ -63115,7 +63115,7 @@ LAB_10489039:
         local_38 = (SCStr *)(local_c);
       }
       else {
-        ((SCStr *)((SCStr * *)(&local_4c)))->op_ctor((SCStr *)&local_5c);
+        ((SCStr *)((SCStr * *)(&local_4c)))->m_op_ctor((SCStr *)&local_5c);
         local_c = (SCStr *)((SCStr *)0x0);
         *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0x39);
         local_38 = (SCStr *)(operator_new(8), 0);
@@ -63123,7 +63123,7 @@ LAB_10489039:
         *(undefined***)local_38 = (undefined **)((SCStr *)((uint)&ghidra_vftable_std_Func_impl_no_alloc));
         *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0x3a);
         local_34[0] = (SCStr *)(local_38);
-        ((SCStr *)(local_44))->op_ctor((SCStr * *)(&local_4c));
+        ((SCStr *)(local_44))->m_op_ctor((SCStr * *)(&local_4c));
         local_c = (SCStr *)(local_38);
         *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0x3b);
         ((SCStr *)((SCStr * *)(&local_4c)))->int_release();
@@ -63287,7 +63287,7 @@ void __fastcall FUN_10489a00(int param_1)
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
   local_14 = (int)(param_1);
-  ((SCStr *)((SCStr *)&stack0xffffff90))->op_ctor((SCStr *)(param_1 + 0xb8));
+  ((SCStr *)((SCStr *)&stack0xffffff90))->m_op_ctor((SCStr *)(param_1 + 0xb8));
   piVar2 = (int *)((int *)FUN_104946b0(&local_38), 0);
   piVar5 = (int *)((int *)*piVar2);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
@@ -63513,9 +63513,9 @@ LAB_10489ac9:
       g_lSCObjCount = (int)(g_lSCObjCount + 1);
 
       *piVar5 = (int)((int)(uint)&ghidra_vftable_SCOpenUrlActionDescriptor);
-      ((SCStr *)((SCStr *)(piVar5 + 2)))->op_ctor((SCStr *)&local_28);
+      ((SCStr *)((SCStr *)(piVar5 + 2)))->m_op_ctor((SCStr *)&local_28);
       local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x2e)));
-      ((SCStr *)((SCStr *)(piVar5 + 3)))->op_ctor((SCStr *)&local_18);
+      ((SCStr *)((SCStr *)(piVar5 + 3)))->m_op_ctor((SCStr *)&local_18);
     }
 
     if ((int *)(piVar5) == (int *)(0x0)) {
@@ -63679,7 +63679,7 @@ void __fastcall FUN_1048a410(int *param_1)
   *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(2);
   *(unsigned short*)((char *)&local_80 + 1) = (unsigned short)(0);
   local_94 = (int *)(param_1);
-  ((SCStr *)((SCStr *)&stack0xffffff24))->op_ctor((SCStr *)(param_1 + 0x2e));
+  ((SCStr *)((SCStr *)&stack0xffffff24))->m_op_ctor((SCStr *)(param_1 + 0x2e));
   piVar2 = (int *)((int *)FUN_104946b0(&local_78), 0);
   local_a4 = (int *)((int *)*piVar2);
   *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(3);
@@ -64694,7 +64694,7 @@ void __stdcall FUN_1048bfa0(undefined4 param_1,undefined4 param_2,int *param_3)
   undefined1 *puStack_c;
   undefined4 local_8;
 
-  ((SCStr *)((SCStr *)&stack0xffffff54))->op_ctor((SCStr *)&param_1);
+  ((SCStr *)((SCStr *)&stack0xffffff54))->m_op_ctor((SCStr *)&param_1);
   piVar5 = (int *)((int *)FUN_104946b0(&local_20), 0);
   piVar9 = (int *)((int *)*piVar5);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
@@ -64914,7 +64914,7 @@ void __fastcall FUN_1048c4e0(int param_1)
   local_14 = (uint)(DAT_12126b84);
 
   local_50 = (int *)((int *)0x0);
-  ((SCStr *)((SCStr *)&stack0xffffff6c))->op_ctor((SCStr *)(param_1 + 0xb8));
+  ((SCStr *)((SCStr *)&stack0xffffff6c))->m_op_ctor((SCStr *)(param_1 + 0xb8));
   piVar3 = (int *)((int *)FUN_104946b0(&local_48), 0);
   piVar1 = (int *)((int *)*piVar3);
 
@@ -65156,7 +65156,7 @@ void __fastcall FUN_1048cac0(int param_1)
 
   local_40 = (int *)((int *)0x0);
   local_6c = (int)(param_1);
-  ((SCStr *)((SCStr *)&stack0xffffff68))->op_ctor((SCStr *)(param_1 + 0xb8));
+  ((SCStr *)((SCStr *)&stack0xffffff68))->m_op_ctor((SCStr *)(param_1 + 0xb8));
   piVar3 = (int *)((int *)FUN_104946b0(&local_44), 0);
   piVar1 = (int *)((int *)*piVar3);
 
@@ -65457,7 +65457,7 @@ void __fastcall FUN_1048d1f0(int param_1)
   bVar8 = (bool)(false);
   local_58 = (int *)((int *)0x0);
   local_7c = (int)(param_1);
-  ((SCStr *)((SCStr *)&stack0xffffff54))->op_ctor((SCStr *)(param_1 + 0xb8));
+  ((SCStr *)((SCStr *)&stack0xffffff54))->m_op_ctor((SCStr *)(param_1 + 0xb8));
   piVar4 = (int *)((int *)FUN_104946b0(&local_34), 0);
   piVar1 = (int *)((int *)*piVar4);
 
@@ -65843,7 +65843,7 @@ void __fastcall FUN_1048db20(int param_1)
     (**(code **)(*local_4c + 8))();
   }
   *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(2);
-  ((SCStr *)((SCStr *)&stack0xffffff40))->op_ctor((SCStr *)(param_1 + 0xb8));
+  ((SCStr *)((SCStr *)&stack0xffffff40))->m_op_ctor((SCStr *)(param_1 + 0xb8));
   piVar3 = (int *)((int *)FUN_104946b0(&local_38), 0);
   piVar2 = (int *)((int *)*piVar3);
   *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(4);
@@ -66015,7 +66015,7 @@ LAB_1048dca3:
           thunk_FUN_1041d630();
           ((SCStr *)((SCStr *)&local_3c))->int_allocRep("settings_repair");
           *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x28);
-          ((SCImageResource *)((SCImageResource *)&local_48))->op_ctor((SCStr *)&local_3c,5);
+          ((SCImageResource *)((SCImageResource *)&local_48))->m_op_ctor((SCStr *)&local_3c,5);
           *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x29);
           thunk_FUN_1041d340(1);
           *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x2a);
@@ -66049,7 +66049,7 @@ LAB_1048df3a:
       thunk_FUN_1041d630();
       ((SCStr *)((SCStr *)&local_3c))->int_allocRep("settings_delete");
       *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x2c);
-      ((SCImageResource *)((SCImageResource *)&local_48))->op_ctor((SCStr *)&local_3c,5);
+      ((SCImageResource *)((SCImageResource *)&local_48))->m_op_ctor((SCStr *)&local_3c,5);
       *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x2d);
       thunk_FUN_1041d340(1);
       *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(0x2e);
@@ -66246,7 +66246,7 @@ LAB_1048e5f6:
     }
     thunk_FUN_112af4e0("SCSettingsMenuSet");
   }
-  ((SCStr *)((SCStr *)&stack0xffffff08))->op_ctor((SCStr *)&stack0x0000000c);
+  ((SCStr *)((SCStr *)&stack0xffffff08))->m_op_ctor((SCStr *)&stack0x0000000c);
   piVar4 = (int *)((int *)FUN_104946b0(), 0);
   piVar1 = (int *)((int *)*piVar4);
   *(unsigned char*)((char *)&local_74 + 0) = (unsigned char)(0x17);
@@ -66347,7 +66347,7 @@ LAB_1048e77e:
   ((SCStr *)((SCStr *)&local_18))->int_release();
   local_18 = (int *)((int * *)(&stack0xffffff04));
   *(unsigned char*)((char *)&local_74 + 0) = (unsigned char)(0x1b);
-  ((SCStr *)((SCStr *)&stack0xffffff04))->op_ctor((SCStr *)&stack0x0000000c);
+  ((SCStr *)((SCStr *)&stack0xffffff04))->m_op_ctor((SCStr *)&stack0x0000000c);
   *(unsigned char*)((char *)&local_74 + 0) = (unsigned char)(0x2e);
   ((SCStr *)((SCStr *)&stack0xffffff00))->int_allocRep("SCSystemStatusVoice:deviceError");
   *(unsigned char*)((char *)&local_74 + 0) = (unsigned char)(0x1b);
@@ -66450,7 +66450,7 @@ void __fastcall FUN_1048eb20(int *param_1)
 
   *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(2);
   *(unsigned short*)((char *)&local_7c + 1) = (unsigned short)(0);
-  ((SCStr *)((SCStr *)&stack0xfffffef4))->op_ctor((SCStr *)(param_1 + 0x2e));
+  ((SCStr *)((SCStr *)&stack0xfffffef4))->m_op_ctor((SCStr *)(param_1 + 0x2e));
   piVar3 = (int *)((int *)FUN_104946b0(), 0);
   piVar5 = (int *)((int *)*piVar3);
   *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(3);
@@ -66839,9 +66839,9 @@ LAB_1048ebfb:
     ((SCStr *)((SCStr *)&local_8))->int_release();
     *(unsigned char*)((char *)&local_7c + 0) = (unsigned char)(5);
     thunk_FUN_10488750();
-    ((SCStr *)((SCStr *)&stack0xfffffeec))->op_ctor((SCStr *)(param_1 + 0x2e));
+    ((SCStr *)((SCStr *)&stack0xfffffeec))->m_op_ctor((SCStr *)(param_1 + 0x2e));
     thunk_FUN_1048bfa0();
-    ((SCStr *)((SCStr *)&stack0xfffffeec))->op_ctor((SCStr *)(param_1 + 0x2f));
+    ((SCStr *)((SCStr *)&stack0xfffffeec))->m_op_ctor((SCStr *)(param_1 + 0x2f));
     thunk_FUN_1048bfa0();
   }
 LAB_1048f550:
@@ -66891,7 +66891,7 @@ void __fastcall FUN_1048f820(int *param_1)
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
   local_1c = (int *)(param_1);
-  ((SCStr *)((SCStr *)&stack0xffffff5c))->op_ctor((SCStr *)(param_1 + 0x2e));
+  ((SCStr *)((SCStr *)&stack0xffffff5c))->m_op_ctor((SCStr *)(param_1 + 0x2e));
   piVar2 = (int *)((int *)FUN_104946b0(&local_28), 0);
   piVar4 = (int *)((int *)*piVar2);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
@@ -67039,7 +67039,7 @@ void __fastcall FUN_1048fbf0(int *param_1)
 
 
   local_30 = (int *)(param_1);
-  ((SCStr *)((SCStr *)&stack0xffffff5c))->op_ctor((SCStr *)(param_1 + 0x2e));
+  ((SCStr *)((SCStr *)&stack0xffffff5c))->m_op_ctor((SCStr *)(param_1 + 0x2e));
   piVar3 = (int *)((int *)FUN_104946b0(&local_34), 0);
   piVar1 = (int *)((int *)*piVar3);
 
@@ -67178,7 +67178,7 @@ void __fastcall FUN_1048ff70(int param_1)
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
   local_14 = (int)(param_1);
-  ((SCStr *)((SCStr *)&stack0xffffff9c))->op_ctor((SCStr *)(param_1 + 0xb8));
+  ((SCStr *)((SCStr *)&stack0xffffff9c))->m_op_ctor((SCStr *)(param_1 + 0xb8));
   piVar3 = (int *)((int *)FUN_104946b0(&local_2c), 0);
   piVar1 = (int *)((int *)*piVar3);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
@@ -67314,7 +67314,7 @@ void __fastcall FUN_1048ff70(int param_1)
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x21);
       ((SCStr *)((SCStr *)&local_28))->int_release();
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
-      ((SCStr *)((SCStr *)&local_38))->op_ctor((SCStr *)(local_14 + 0xb8));
+      ((SCStr *)((SCStr *)&local_38))->m_op_ctor((SCStr *)(local_14 + 0xb8));
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x22);
       ((SCStr *)((SCStr *)&local_38))->int_release();
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
@@ -67387,7 +67387,7 @@ void __fastcall FUN_1048ff70(int param_1)
       thunk_FUN_1041d3a0(0,0);
       iVar6 = (int)(local_14);
       thunk_FUN_10488750();
-      ((SCStr *)((SCStr *)&local_38))->op_ctor((SCStr *)(iVar6 + 0xb8));
+      ((SCStr *)((SCStr *)&local_38))->m_op_ctor((SCStr *)(iVar6 + 0xb8));
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x2f);
       ((SCStr *)((SCStr *)&local_38))->int_release();
     }
@@ -67484,7 +67484,7 @@ void __fastcall FUN_104906e0(int param_1)
   ppiStack_5cc = (int **)((int **)param_1);
   local_548 = (int)(param_1);
   local_8 = (uint)(uStack_5c8);
-  ((SCStr *)((SCStr *)&ppiStack_5cc))->op_ctor((SCStr *)(param_1 + 0xb8));
+  ((SCStr *)((SCStr *)&ppiStack_5cc))->m_op_ctor((SCStr *)(param_1 + 0xb8));
   piVar3 = (int *)((int *)FUN_104946b0(), 0);
   piVar10 = (int *)((int *)*piVar3);
   *(unsigned char*)((char *)&local_518 + 0) = (unsigned char)(2);
@@ -67676,7 +67676,7 @@ LAB_10490a17:
         (**(code **)(*local_534 + 8))();
       }
       local_518 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_518 + 1)) << 8 | (uint)(0x34)));
-      ((SCStr *)((SCStr *)&stack0xfffffa2c))->op_ctor(pSVar11);
+      ((SCStr *)((SCStr *)&stack0xfffffa2c))->m_op_ctor(pSVar11);
       cVar2 = (char)((**(code **)(*piVar10 + 0x2c))(), 0);
       if (cVar2 == '\0') {
         (**(code **)(*piVar10 + 0x20))(0,pSVar11);
@@ -67980,7 +67980,7 @@ void __fastcall FUN_104911c0(int *param_1)
   }
   local_28 = (SCStr *)((SCStr *)(param_1 + 0x2e));
   *(unsigned char*)((char *)&local_64 + 0) = (unsigned char)(3);
-  ((SCStr *)((SCStr *)&stack0xffffff34))->op_ctor(local_28);
+  ((SCStr *)((SCStr *)&stack0xffffff34))->m_op_ctor(local_28);
   piVar6 = (int *)((int *)FUN_104946b0(), 0);
   piVar5 = (int *)((int *)*piVar6);
   *(unsigned char*)((char *)&local_64 + 0) = (unsigned char)(5);
@@ -68022,7 +68022,7 @@ void __fastcall FUN_104911c0(int *param_1)
   *(unsigned char*)((char *)&local_64 + 0) = (unsigned char)(0xe);
   if (((int *)(local_10) == (int *)(0x0)) || ((int *)(piVar5) == (int *)(0x0))) goto LAB_10492219;
   if ((int *)(piVar6) == (int *)(0x0)) {
-    ((SCStr *)((SCStr *)&local_1c))->op_ctor(local_28);
+    ((SCStr *)((SCStr *)&local_1c))->m_op_ctor(local_28);
     *(unsigned char*)((char *)&local_64 + 0) = (unsigned char)(0xf);
     ((SCStr *)((SCStr *)&local_1c))->int_release();
     goto LAB_10492219;
@@ -68125,7 +68125,7 @@ void __fastcall FUN_104911c0(int *param_1)
   pSVar4 = (SCLibrary *)(((SCLibrary *)(0))->getSingleton(), 0);
   iVar9 = (int)((**(code **)(*(int *)pSVar4 + 0xf4))(), 0);
   if (iVar9 != 1) {
-    ((SCStr *)((SCStr *)&stack0xffffff30))->op_ctor(local_28);
+    ((SCStr *)((SCStr *)&stack0xffffff30))->m_op_ctor(local_28);
     FUN_104946b0(&local_14);
     *(unsigned char*)((char *)&local_64 + 0) = (unsigned char)(0x2b);
     thunk_FUN_101b9270();
@@ -68471,7 +68471,7 @@ LAB_104919e5:
   piVar5 = (int *)(local_30);
   *(unsigned char*)((char *)&local_64 + 0) = (unsigned char)(0xe);
   thunk_FUN_10488750();
-  ((SCStr *)((SCStr *)&stack0xffffff34))->op_ctor((SCStr *)(piVar5 + 0x2e));
+  ((SCStr *)((SCStr *)&stack0xffffff34))->m_op_ctor((SCStr *)(piVar5 + 0x2e));
   piVar12 = (int *)((int *)FUN_104946b0(), 0);
   local_2c = (int *)((int *)*piVar12);
   *(unsigned char*)((char *)&local_64 + 0) = (unsigned char)(0x78);
@@ -68562,7 +68562,7 @@ LAB_104919e5:
     }
   }
   *(unsigned char*)((char *)&local_64 + 0) = (unsigned char)(uVar1);
-  ((SCStr *)((SCStr *)&stack0xffffff34))->op_ctor((SCStr *)(piVar5 + 0x2e));
+  ((SCStr *)((SCStr *)&stack0xffffff34))->m_op_ctor((SCStr *)(piVar5 + 0x2e));
   piVar12 = (int *)((int *)FUN_104946b0(), 0);
   local_2c = (int *)((int *)*piVar12);
   *(unsigned char*)((char *)&local_64 + 0) = (unsigned char)(0x8a);
@@ -68929,7 +68929,7 @@ LAB_104927c3:
         *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0x21);
         ((SCStr *)((SCStr *)&local_44))->int_allocRep("settings_account");
         *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0x2a);
-        ((SCImageResource *)((SCImageResource *)&local_5c))->op_ctor((SCStr *)&local_44,5);
+        ((SCImageResource *)((SCImageResource *)&local_5c))->m_op_ctor((SCStr *)&local_44,5);
         *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0x2b);
         thunk_FUN_1041d340(1);
         *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0x2c);
@@ -68980,7 +68980,7 @@ LAB_104927c3:
             }
           }
           else {
-            ((SCStr *)((SCStr *)&stack0xfffffedc))->op_ctor(local_8c);
+            ((SCStr *)((SCStr *)&stack0xfffffedc))->m_op_ctor(local_8c);
             piVar8 = (int *)((int *)thunk_FUN_1048e330(&local_48,pSVar14), 0);
             local_80 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_80 + 1)) << 8 | (uint)(0x2f)));
             if ((int *)(local_50) == (int *)(local_4c)) {
@@ -69778,7 +69778,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10494110(undefined4 *param_2)
 
   if ((*(char **)(param_1 + 0xb8) != (char *)((0x0))) && (**(char **)(param_1 + 0xb8) != '\0')) {
     ppiStack_44 = (int **)((int **)param_1);
-    ((SCStr *)((SCStr *)&ppiStack_44))->op_ctor((SCStr *)(param_1 + 0xb8));
+    ((SCStr *)((SCStr *)&ppiStack_44))->m_op_ctor((SCStr *)(param_1 + 0xb8));
     ppiStack_44 = (int **)((int **)FUN_104946b0(&local_18), 0);
 
     thunk_FUN_101b9270();
@@ -69893,7 +69893,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10494330(undefined4 *param_2)
 
   if ((*(char **)(param_1 + 0xb8) != (char *)((0x0))) && (**(char **)(param_1 + 0xb8) != '\0')) {
     ppiStack_48 = (int **)((int **)param_1);
-    ((SCStr *)((SCStr *)&ppiStack_48))->op_ctor((SCStr *)(param_1 + 0xb8));
+    ((SCStr *)((SCStr *)&ppiStack_48))->m_op_ctor((SCStr *)(param_1 + 0xb8));
     ppiStack_48 = (int **)((int **)FUN_104946b0(&local_14), 0);
 
     thunk_FUN_101b9270();
@@ -70981,7 +70981,7 @@ void __fastcall FUN_104958a0(int param_1)
   if (*(int *)(param_1 + 0xf4) != 0) {
     thunk_FUN_104ddf60();
   }
-  ((SCStr *)((SCStr *)&stack0xffffffa4))->op_ctor((SCStr *)(param_1 + 0xb8));
+  ((SCStr *)((SCStr *)&stack0xffffffa4))->m_op_ctor((SCStr *)(param_1 + 0xb8));
   piVar3 = (int *)((int *)FUN_104946b0(), 0);
   piVar1 = (int *)((int *)*piVar3);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x11);
@@ -71349,7 +71349,7 @@ void __fastcall FUN_104963d0(int param_1)
 
   pSStack_50 = (SCStr *)((SCStr *)0x10496434);
   thunk_FUN_104971d0();
-  ((SCStr *)((SCStr * *)(&pSStack_50)))->op_ctor((SCStr *)(param_1 + 0xb8));
+  ((SCStr *)((SCStr * *)(&pSStack_50)))->m_op_ctor((SCStr *)(param_1 + 0xb8));
   piVar2 = (int *)((int *)FUN_104946b0(&local_14), 0);
   piVar1 = (int *)((int *)*piVar2);
 
@@ -71626,7 +71626,7 @@ undefined1 __fastcall FUN_10496b90(int param_1)
     ppcStack_40 = (char **)((char **)extraout_ECX);
   }
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
-  ((SCStr *)((SCStr *)&ppcStack_40))->op_ctor((SCStr *)(param_1 + 0xb8));
+  ((SCStr *)((SCStr *)&ppcStack_40))->m_op_ctor((SCStr *)(param_1 + 0xb8));
   piVar5 = (int *)((int *)FUN_104946b0(&local_20), 0);
   piVar4 = (int *)((int *)*piVar5);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
@@ -71719,7 +71719,7 @@ undefined1 __fastcall FUN_10496d80(int param_1)
   uStack_2c = (uint)(DAT_12126b84);
 
   iStack_30 = (int)(param_1);
-  ((SCStr *)((SCStr *)&iStack_30))->op_ctor((SCStr *)(param_1 + 0xb8));
+  ((SCStr *)((SCStr *)&iStack_30))->m_op_ctor((SCStr *)(param_1 + 0xb8));
   piVar4 = (int *)((int *)FUN_104946b0(&local_14), 0);
   piVar1 = (int *)((int *)*piVar4);
 
@@ -71792,7 +71792,7 @@ undefined1 __fastcall FUN_10496e90(int param_1)
   uStack_2c = (uint)(DAT_12126b84);
 
   iStack_30 = (int)(param_1);
-  ((SCStr *)((SCStr *)&iStack_30))->op_ctor((SCStr *)(param_1 + 0xb8));
+  ((SCStr *)((SCStr *)&iStack_30))->m_op_ctor((SCStr *)(param_1 + 0xb8));
   piVar3 = (int *)((int *)FUN_104946b0(&local_14), 0);
   piVar1 = (int *)((int *)*piVar3);
 
@@ -71850,7 +71850,7 @@ undefined1 __fastcall FUN_10496f80(int param_1)
   uStack_2c = (uint)(DAT_12126b84);
 
   iStack_30 = (int)(param_1);
-  ((SCStr *)((SCStr *)&iStack_30))->op_ctor((SCStr *)(param_1 + 0xb8));
+  ((SCStr *)((SCStr *)&iStack_30))->m_op_ctor((SCStr *)(param_1 + 0xb8));
   piVar3 = (int *)((int *)FUN_104946b0(&local_14), 0);
   piVar1 = (int *)((int *)*piVar3);
 
@@ -71920,7 +71920,7 @@ undefined1 __fastcall FUN_10497070(int param_1)
 
     return (undefined1)(0);
   }
-  ((SCStr *)((SCStr *)&iStack_34))->op_ctor((SCStr *)(param_1 + 0xb8));
+  ((SCStr *)((SCStr *)&iStack_34))->m_op_ctor((SCStr *)(param_1 + 0xb8));
   iStack_34 = (int)(FUN_104946b0(&local_14), 0);
 
   thunk_FUN_101b9270();
@@ -72084,7 +72084,7 @@ void __fastcall FUN_104971d0(int *param_1)
               (**(code **)(*local_2c + 8))();
             }
             local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x12)));
-            ((SCStr *)((SCStr *)&stack0xffffff68))->op_ctor(local_18);
+            ((SCStr *)((SCStr *)&stack0xffffff68))->m_op_ctor(local_18);
             cVar2 = (char)((**(code **)(*local_24 + 0x2c))(), 0);
             if (cVar2 != '\0') {
               if ((SCStr *)(&local_14) != (SCStr *)((local_18))) {
@@ -72159,9 +72159,9 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_104976a0(SCStr *param_2,SCStr *par
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
 
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCRemoveConnectedPartnerDescriptor);
-  ((SCStr *)((SCStr *)(param_1 + 2)))->op_ctor(param_2);
+  ((SCStr *)((SCStr *)(param_1 + 2)))->m_op_ctor(param_2);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
-  ((SCStr *)((SCStr *)(param_1 + 3)))->op_ctor(param_3);
+  ((SCStr *)((SCStr *)(param_1 + 3)))->m_op_ctor(param_3);
   param_1[4] = (undefined4)(param_4);
 
   return (undefined4 *)(param_1);
@@ -72317,9 +72317,9 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10497740(int *param_2)
     g_lSCObjCount = (int)(g_lSCObjCount + 1);
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1a);
     *piVar3 = (int)((int)(uint)&ghidra_vftable_SCRemoveConnectedPartnerDescriptor);
-    ((SCStr *)((SCStr *)(piVar3 + 2)))->op_ctor((SCStr *)(param_1 + 0x27));
+    ((SCStr *)((SCStr *)(piVar3 + 2)))->m_op_ctor((SCStr *)(param_1 + 0x27));
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1b);
-    ((SCStr *)((SCStr *)(piVar3 + 3)))->op_ctor((SCStr *)(param_1 + 0x26));
+    ((SCStr *)((SCStr *)(piVar3 + 3)))->m_op_ctor((SCStr *)(param_1 + 0x26));
     piVar3[4] = (int)((int)(param_1 + 0x24));
   }
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x14);
@@ -72509,7 +72509,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_10497d70(int *param_2)
     ppiStack_50 = (int **)((int **)extraout_ECX);
   }
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x11);
-  ((SCStr *)((SCStr *)&ppiStack_50))->op_ctor((SCStr *)(param_1 + 0x27));
+  ((SCStr *)((SCStr *)&ppiStack_50))->m_op_ctor((SCStr *)(param_1 + 0x27));
   piVar4 = (int *)((int *)FUN_1049c000(&local_18), 0);
   local_14 = (int *)((int *)*piVar4);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x13);
@@ -73478,7 +73478,7 @@ LAB_10498e7a:
               uVar3 = (uint)(uVar3 | 4);
             }
             else {
-              puVar9 = (undefined4 *)((undefined4 *)((SCStr *)((SCStr *)&local_c))->op_ctor((SCStr *)&local_94), 0);
+              puVar9 = (undefined4 *)((undefined4 *)((SCStr *)((SCStr *)&local_c))->m_op_ctor((SCStr *)&local_94), 0);
               local_80 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_80 + 1)) << 8 | (uint)(0x53)));
               uVar3 = (uint)(uVar3 | 2);
             }
@@ -73612,9 +73612,9 @@ LAB_1049912f:
 
       *piVar4 = (int)((int)(uint)&ghidra_vftable_SCOpenUrlActionDescriptor);
       local_2c = (uint)(uVar3);
-      ((SCStr *)((SCStr *)(piVar4 + 2)))->op_ctor((SCStr *)&local_8);
+      ((SCStr *)((SCStr *)(piVar4 + 2)))->m_op_ctor((SCStr *)&local_8);
       local_80 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_80 + 1)) << 8 | (uint)(100)));
-      ((SCStr *)((SCStr *)(piVar4 + 3)))->op_ctor((SCStr *)&local_c);
+      ((SCStr *)((SCStr *)(piVar4 + 3)))->m_op_ctor((SCStr *)&local_c);
     }
 
     if ((int *)(piVar4) != (int *)(0x0)) {
@@ -74827,7 +74827,7 @@ SCImageResource * FUN_1049b880(SCImageResource *param_1,int *param_2,int *param_
 
   if ((int *)(param_2) == (int *)(0x0)) {
 LAB_1049b9cc:
-    ((SCStr *)((SCStr *)param_1))->op_ctor((SCStr *)&DAT_121a07b0);
+    ((SCStr *)((SCStr *)param_1))->m_op_ctor((SCStr *)&DAT_121a07b0);
     *(undefined4*)(param_1 + 4) = (undefined4)(DAT_121a07b4);
 
     if ((int *)(param_3) == (int *)(0x0)) {
@@ -74885,7 +74885,7 @@ LAB_1049b9cc:
          (bVar1 = (bool)(((SCStr *)((SCStr *)&local_14))->op_eq("RunWizard.ChangePassword"), 0), bVar1)) {
         ((SCStr *)((SCStr *)&local_20))->int_allocRep("settings_secure");
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xc);
-        ((SCImageResource *)(param_1))->op_ctor((SCStr *)&local_20,5);
+        ((SCImageResource *)(param_1))->m_op_ctor((SCStr *)&local_20,5);
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xd);
         ((SCStr *)((SCStr *)&local_20))->int_release();
 
@@ -74903,7 +74903,7 @@ LAB_1049b9cc:
         }
         ((SCStr *)((SCStr *)&local_20))->int_allocRep("settings_app");
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x10);
-        ((SCImageResource *)(param_1))->op_ctor((SCStr *)&local_20,5);
+        ((SCImageResource *)(param_1))->m_op_ctor((SCStr *)&local_20,5);
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x11);
         ((SCStr *)((SCStr *)&local_20))->int_release();
 
@@ -74962,7 +74962,7 @@ SCStr * __stdcall FUN_1049bc30(SCStr *param_1, unsigned int recovered_unused_sta
     ((SCStr *)((SCStr *)&local_14))->int_release();
     local_8 = (int)((uint)*(unsigned short *)((char *)&local_8 + 1) << 8);
   }
-  ((SCStr *)(param_1))->op_ctor((SCStr *)&DAT_121a07b0);
+  ((SCStr *)(param_1))->m_op_ctor((SCStr *)&DAT_121a07b0);
   *(undefined4*)(param_1 + 4) = (undefined4)(DAT_121a07b4);
 
 LAB_1049bd12:
@@ -75227,7 +75227,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_1049c210(SCStr *param_2)
     }
     thunk_FUN_1109aba0(0x2547,&DAT_1188465c,puVar2);
     ((SCStr *)(this_))->format((char *)&local_14);
-    ((SCStr *)(param_2))->op_ctor((SCStr *)&local_14);
+    ((SCStr *)(param_2))->m_op_ctor((SCStr *)&local_14);
 
   }
   ((SCStr *)((SCStr *)&local_14))->int_release();
@@ -75461,7 +75461,7 @@ void __fastcall FUN_1049c670(int param_1)
 
 
   local_20 = (int)(param_1);
-  ((SCStr *)((SCStr *)&stack0xffffff70))->op_ctor((SCStr *)(param_1 + 0x9c));
+  ((SCStr *)((SCStr *)&stack0xffffff70))->m_op_ctor((SCStr *)(param_1 + 0x9c));
   piVar4 = (int *)((int *)FUN_1049c000(&local_2c), 0);
   piVar10 = (int *)((int *)*piVar4);
 
@@ -76219,7 +76219,7 @@ int __thiscall Recovered_Bulk::m_FUN_1049d820(int param_2)
     ((SCStr *)((SCStr *)&local_14))->int_release();
   }
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xc);
-  ((SCStr *)((SCStr *)&param_2))->op_ctor(this_);
+  ((SCStr *)((SCStr *)&param_2))->m_op_ctor(this_);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x12);
   ((SCStr *)((SCStr *)&param_2))->int_release();
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xc);
@@ -76331,7 +76331,7 @@ int __thiscall Recovered_Bulk::m_FUN_1049d820(int param_2)
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x22);
   ((SCStr *)((SCStr *)&param_2))->int_release();
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xc);
-  ((SCStr *)((SCStr *)&stack0xffffffc4))->op_ctor(this_);
+  ((SCStr *)((SCStr *)&stack0xffffffc4))->m_op_ctor(this_);
   piVar3 = (int *)((int *)FUN_104a1990(&param_2), 0);
   piVar1 = (int *)((int *)*piVar3);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x23);
@@ -76786,7 +76786,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1049e8f0(undefined4 param_2)
   ((SCStr *)((SCStr *)&local_14))->int_release();
   local_14 = (int *)((int *)0x0);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
-  ((SCHouseholdEventSink *)((SCHouseholdEventSink *)(param_1 + 0x24)))->op_ctor();
+  ((SCHouseholdEventSink *)((SCHouseholdEventSink *)(param_1 + 0x24)))->m_op_ctor();
   param_1[0x27] = (undefined4)((uint)&ghidra_vftable_SCIEventSink);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSettingsMenuTrueplay);
   param_1[2] = (undefined4)((uint)&ghidra_vftable_SCSettingsMenuTrueplay);
@@ -76965,7 +76965,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_1049ecb0(undefined4 param_2)
     ((SCStr *)((uint)&local_14))->int_release();
   }
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(8);
-  ((SCStr *)((SCStr *)&param_2))->op_ctor((SCStr *)(param_1 + 0x27));
+  ((SCStr *)((SCStr *)&param_2))->m_op_ctor((SCStr *)(param_1 + 0x27));
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xe);
   ((SCStr *)((SCStr *)&param_2))->int_release();
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(8);
@@ -77028,7 +77028,7 @@ undefined4 * __fastcall FUN_1049ef90(undefined4 *param_1, unsigned int recovered
   *(undefined2*)(param_1 + 4) = (undefined2)(0);
 
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSonarWizardActionDescriptor);
-  ((SCStr *)((SCStr *)(param_1 + 5)))->op_ctor((SCStr *)&stack0x00000004);
+  ((SCStr *)((SCStr *)(param_1 + 5)))->m_op_ctor((SCStr *)&stack0x00000004);
 
   ((SCStr *)((SCStr *)&stack0x00000004))->int_release();
 
@@ -78017,7 +78017,7 @@ void __thiscall Recovered_Bulk::m_FUN_104a0b80(int *param_2)
 
 
   if ((int *)(param_2) == *(int **)(param_1 + 0x94)) {
-    ((SCStr *)((SCStr *)&stack0xffffffd4))->op_ctor((SCStr *)(param_1 + 0x98));
+    ((SCStr *)((SCStr *)&stack0xffffffd4))->m_op_ctor((SCStr *)(param_1 + 0x98));
     FUN_104a1990(&param_2);
 
     thunk_FUN_101b9270();
@@ -78030,7 +78030,7 @@ void __thiscall Recovered_Bulk::m_FUN_104a0b80(int *param_2)
       thunk_FUN_1047f110();
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
       if ((int *)(local_14) == (int *)(0x0)) {
-        ((SCStr *)((SCStr *)&param_2))->op_ctor((SCStr *)(param_1 + 0x98));
+        ((SCStr *)((SCStr *)&param_2))->m_op_ctor((SCStr *)(param_1 + 0x98));
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(5);
         ((SCStr *)((SCStr *)&param_2))->int_release();
       }
@@ -78075,7 +78075,7 @@ void __thiscall Recovered_Bulk::m_FUN_104a0ca0(int *param_2)
 
   if ((int *)(param_2) == *(int **)(param_1 + 0x94)) {
     piStack_28 = (int *)((int *)param_1);
-    ((SCStr *)((SCStr *)&piStack_28))->op_ctor((SCStr *)(param_1 + 0x98));
+    ((SCStr *)((SCStr *)&piStack_28))->m_op_ctor((SCStr *)(param_1 + 0x98));
     piStack_28 = (int *)((int *)FUN_104a1990(&param_2), 0);
 
     thunk_FUN_101b9270();
@@ -78133,7 +78133,7 @@ void __thiscall Recovered_Bulk::m_FUN_104a0db0(int *param_2)
 
   if ((int *)(param_2) == *(int **)(param_1 + 0x9c)) {
     piStack_28 = (int *)((int *)param_1);
-    ((SCStr *)((SCStr *)&piStack_28))->op_ctor((SCStr *)(param_1 + 0xa0));
+    ((SCStr *)((SCStr *)&piStack_28))->m_op_ctor((SCStr *)(param_1 + 0xa0));
     piStack_28 = (int *)((int *)FUN_104a1990(&param_2), 0);
 
     thunk_FUN_101b9270();
@@ -78191,7 +78191,7 @@ void __thiscall Recovered_Bulk::m_FUN_104a0ec0(int *param_2)
 
   if ((int *)(param_2) == *(int **)(param_1 + 0xac)) {
     piStack_28 = (int *)((int *)param_1);
-    ((SCStr *)((SCStr *)&piStack_28))->op_ctor((SCStr *)(param_1 + 0xb0));
+    ((SCStr *)((SCStr *)&piStack_28))->m_op_ctor((SCStr *)(param_1 + 0xb0));
     piStack_28 = (int *)((int *)FUN_104a1990(&param_2), 0);
 
     thunk_FUN_101b9270();
@@ -78285,7 +78285,7 @@ void __thiscall Recovered_Bulk::m_FUN_104a1110(int *param_2,undefined4 param_3)
     return;
   }
   local_2c = (SCStr *)((SCStr *)(param_1 + 1));
-  ((SCStr *)((SCStr *)&stack0xffffffa0))->op_ctor(local_2c);
+  ((SCStr *)((SCStr *)&stack0xffffffa0))->m_op_ctor(local_2c);
   FUN_104a1990(&local_28);
 
   thunk_FUN_101b9270();
@@ -79157,7 +79157,7 @@ void __fastcall FUN_104a2320(int param_1)
   ((SCStr *)((SCStr *)&local_34))->int_release();
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
   thunk_FUN_101eca20();
-  ((SCStr *)((SCStr *)&stack0xffffff88))->op_ctor((SCStr *)(param_1 + 0x98));
+  ((SCStr *)((SCStr *)&stack0xffffff88))->m_op_ctor((SCStr *)(param_1 + 0x98));
   piVar5 = (int *)((int *)FUN_104a1990(&local_44), 0);
   local_5c = (int *)((int *)*piVar5);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x26);
@@ -79461,7 +79461,7 @@ void __fastcall FUN_104a2ff0(int param_1)
   local_3c = (int *)((int *)0x0);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
-  ((SCStr *)((SCStr *)&stack0xffffff84))->op_ctor((SCStr *)(param_1 + 0x98));
+  ((SCStr *)((SCStr *)&stack0xffffff84))->m_op_ctor((SCStr *)(param_1 + 0x98));
   piVar1 = (int *)((int *)FUN_104a1990(&local_28), 0);
   piVar2 = (int *)((int *)*piVar1);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
@@ -79743,7 +79743,7 @@ void __fastcall FUN_104a36d0(int *param_1)
   *(unsigned char*)((char *)&local_70 + 0) = (unsigned char)(2);
   *(unsigned short*)((char *)&local_70 + 1) = (unsigned short)(0);
   local_44 = (int *)(param_1);
-  ((SCStr *)((SCStr *)&stack0xffffff2c))->op_ctor(local_34);
+  ((SCStr *)((SCStr *)&stack0xffffff2c))->m_op_ctor(local_34);
   piVar4 = (int *)((int *)FUN_104a1990(&local_5c), 0);
   local_64 = (int *)((int *)*piVar4);
   *(unsigned char*)((char *)&local_70 + 0) = (unsigned char)(3);
@@ -79935,7 +79935,7 @@ LAB_104a37b1:
       ((SCStr *)((SCStr *)&local_54))->int_release();
       *(unsigned char*)((char *)&local_70 + 0) = (unsigned char)(5);
       thunk_FUN_101eca20();
-      ((SCStr *)((SCStr *)&stack0xffffff2c))->op_ctor((SCStr *)(param_1 + 0x28));
+      ((SCStr *)((SCStr *)&stack0xffffff2c))->m_op_ctor((SCStr *)(param_1 + 0x28));
       puVar6 = (undefined4 *)((undefined4 *)FUN_104a1990(&local_14), 0);
       local_40 = (int *)((int *)*puVar6);
       *(unsigned char*)((char *)&local_70 + 0) = (unsigned char)(0x31);
@@ -80135,7 +80135,7 @@ LAB_104a3e89:
       *(unsigned char*)((char *)&local_70 + 0) = (unsigned char)(0x57);
       ((SCStr *)((SCStr *)&local_38))->int_release();
       *(unsigned char*)((char *)&local_70 + 0) = (unsigned char)(5);
-      ((SCStr *)((SCStr *)&stack0xffffff2c))->op_ctor(local_34);
+      ((SCStr *)((SCStr *)&stack0xffffff2c))->m_op_ctor(local_34);
       piVar4 = (int *)((int *)FUN_104a1990(&local_20), 0);
       local_40 = (int *)((int *)*piVar4);
       *(unsigned char*)((char *)&local_70 + 0) = (unsigned char)(0x58);
@@ -80391,7 +80391,7 @@ void __fastcall FUN_104a47b0(int *param_1)
 
   *(unsigned char*)((char *)&local_74 + 0) = (unsigned char)(2);
   *(unsigned short*)((char *)&local_74 + 1) = (unsigned short)(0);
-  ((SCStr *)((SCStr *)&stack0xffffff28))->op_ctor((SCStr *)(param_1 + 0x2c));
+  ((SCStr *)((SCStr *)&stack0xffffff28))->m_op_ctor((SCStr *)(param_1 + 0x2c));
   piVar4 = (int *)((int *)FUN_104a1990(&local_60), 0);
   piVar6 = (int *)((int *)*piVar4);
   *(unsigned char*)((char *)&local_74 + 0) = (unsigned char)(3);
@@ -81169,7 +81169,7 @@ void FUN_104a5d20(void)
   pSVar5 = (SCStr *)((SCStr *)(local_54 + 0xa0));
   *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(5);
   local_38 = (int *)((int *)(**(code **)(local_7c[3] + 4))(), 0);
-  ((SCStr *)((SCStr *)&stack0xffffff34))->op_ctor(pSVar5);
+  ((SCStr *)((SCStr *)&stack0xffffff34))->m_op_ctor(pSVar5);
   piVar4 = (int *)((int *)FUN_104a1990(&local_74), 0);
   local_70 = (int *)((int *)*piVar4);
   *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(7);
@@ -81193,7 +81193,7 @@ void FUN_104a5d20(void)
     iVar6 = (int)((**(code **)(*(int *)pSVar3 + 0xf4))(), 0);
     uVar1 = (undefined1)((undefined1)local_80);
     if (iVar6 != 1) {
-      ((SCStr *)((SCStr *)&stack0xffffff34))->op_ctor(pSVar5);
+      ((SCStr *)((SCStr *)&stack0xffffff34))->m_op_ctor(pSVar5);
       FUN_104a1990((uint)&local_34);
       *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0xb);
       thunk_FUN_101b9270();
@@ -81479,7 +81479,7 @@ LAB_104a5f01:
                 piVar10 = (int *)((int *)0x0);
               }
               else {
-                ((SCStr *)((SCStr *)&local_40))->op_ctor(pSVar5);
+                ((SCStr *)((SCStr *)&local_40))->m_op_ctor(pSVar5);
                 *piVar10 = (int)((int)(uint)&ghidra_vftable_SCIObjImpl);
                 piVar10[1] = (int)(0);
                 g_lSCObjCount = (int)(g_lSCObjCount + 1);
@@ -81488,7 +81488,7 @@ LAB_104a5f01:
                 *(undefined2*)(piVar10 + 4) = (undefined2)(0);
                 *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0x59);
                 *piVar10 = (int)((int)(uint)&ghidra_vftable_SCSonarWizardActionDescriptor);
-                ((SCStr *)((SCStr *)(piVar10 + 5)))->op_ctor((SCStr *)&local_40);
+                ((SCStr *)((SCStr *)(piVar10 + 5)))->m_op_ctor((SCStr *)&local_40);
                 *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0x5a);
                 ((SCStr *)((SCStr *)&local_40))->int_release();
                 local_40 = (int *)((int *)0x0);
@@ -81607,7 +81607,7 @@ LAB_104a66fb:
               *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0x5b);
               ((SCStr *)((SCStr *)&local_5c))->int_allocRep("settings_root");
               *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0x62);
-              ((SCImageResource *)((SCImageResource *)&local_78))->op_ctor((SCStr *)&local_5c,5);
+              ((SCImageResource *)((SCImageResource *)&local_78))->m_op_ctor((SCStr *)&local_5c,5);
               *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(99);
               thunk_FUN_1041d340(1);
               *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(100);
@@ -82275,7 +82275,7 @@ bool __fastcall FUN_104a78f0(int param_1)
   uStack_2c = (uint)(DAT_12126b84);
 
   iStack_30 = (int)(param_1);
-  ((SCStr *)((SCStr *)&iStack_30))->op_ctor((SCStr *)(param_1 + 0xa0));
+  ((SCStr *)((SCStr *)&iStack_30))->m_op_ctor((SCStr *)(param_1 + 0xa0));
   piVar3 = (int *)((int *)FUN_104a1990(&local_14), 0);
   piVar1 = (int *)((int *)*piVar3);
 
@@ -82332,7 +82332,7 @@ undefined1 __fastcall FUN_104a79e0(int param_1)
   undefined4 local_8;
 
 
-  ((SCStr *)((SCStr *)&stack0xffffffc8))->op_ctor((SCStr *)(param_1 + 0x98));
+  ((SCStr *)((SCStr *)&stack0xffffffc8))->m_op_ctor((SCStr *)(param_1 + 0x98));
   piVar3 = (int *)((int *)FUN_104a1990(&local_18), 0);
   piVar1 = (int *)((int *)*piVar3);
 
@@ -82402,7 +82402,7 @@ undefined1 __fastcall FUN_104a7b40(int param_1)
   undefined4 local_8;
 
 
-  ((SCStr *)((SCStr *)&stack0xffffffc8))->op_ctor((SCStr *)(param_1 + 0xa0));
+  ((SCStr *)((SCStr *)&stack0xffffffc8))->m_op_ctor((SCStr *)(param_1 + 0xa0));
   piVar3 = (int *)((int *)FUN_104a1990(&local_18), 0);
   piVar1 = (int *)((int *)*piVar3);
 
@@ -82502,7 +82502,7 @@ undefined1 __fastcall FUN_104a7ca0(int param_1)
     uStack_40 = (undefined4)(extraout_ECX);
   }
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
-  ((SCStr *)((SCStr *)&uStack_40))->op_ctor((SCStr *)(param_1 + 0xa0));
+  ((SCStr *)((SCStr *)&uStack_40))->m_op_ctor((SCStr *)(param_1 + 0xa0));
   piVar4 = (int *)((int *)FUN_104a1990(&local_18), 0);
   local_14 = (int *)((int *)*piVar4);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
@@ -82588,7 +82588,7 @@ undefined1 __fastcall FUN_104a7e30(int param_1)
 
     return (undefined1)(0);
   }
-  ((SCStr *)((SCStr *)&iStack_34))->op_ctor((SCStr *)(param_1 + 0xa0));
+  ((SCStr *)((SCStr *)&iStack_34))->m_op_ctor((SCStr *)(param_1 + 0xa0));
   iStack_34 = (int)(FUN_104a1990(&local_14), 0);
 
   thunk_FUN_101b9270();
@@ -83140,7 +83140,7 @@ void __fastcall FUN_104a8bb0(int *param_1, unsigned int recovered_unused_stack_0
   if ((int *)(piVar1) != (int *)(0x0)) {
     (**(code **)(*piVar1 + 0x18))();
     ppiStack_80 = (int **)(extraout_ECX);
-    ((SCStr *)((SCStr *)&ppiStack_80))->op_ctor((SCStr *)&DAT_121a1b40);
+    ((SCStr *)((SCStr *)&ppiStack_80))->m_op_ctor((SCStr *)&DAT_121a1b40);
     uVar6 = (undefined4)((**(code **)(*param_1 + 0x60))(&local_24), 0);
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(5);
     thunk_FUN_101e8090(uVar6);
@@ -83385,7 +83385,7 @@ void __fastcall FUN_104a9270(int param_1)
 
   (**(code **)(**(int **)(param_1 + 0x98) + 0x44))();
 
-  ((SCStr *)((SCStr *)&uStack_58))->op_ctor((SCStr *)&DAT_121a1b40);
+  ((SCStr *)((SCStr *)&uStack_58))->m_op_ctor((SCStr *)&DAT_121a1b40);
   piVar3 = (int *)((int *)thunk_FUN_101f11d0(&local_24), 0);
   piVar5 = (int *)((int *)*piVar3);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
@@ -86607,9 +86607,9 @@ void __fastcall FUN_104aef40(int param_1)
       g_lSCObjCount = (int)(g_lSCObjCount + 1);
 
       *local_38 = (int)((int)(uint)&ghidra_vftable_SCOpenUrlActionDescriptor);
-      ((SCStr *)((SCStr *)(local_38 + 2)))->op_ctor((SCStr *)&local_3c);
+      ((SCStr *)((SCStr *)(local_38 + 2)))->m_op_ctor((SCStr *)&local_3c);
       local_80 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_80 + 1)) << 8 | (uint)(0xc)));
-      ((SCStr *)((SCStr *)(local_38 + 3)))->op_ctor((SCStr *)&local_34);
+      ((SCStr *)((SCStr *)(local_38 + 3)))->m_op_ctor((SCStr *)&local_34);
       piVar2 = (int *)(local_38);
     }
 
@@ -88256,7 +88256,7 @@ LAB_104b1638:
     *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0x33);
     ((SCStr *)((SCStr *)&stack0xffffff38))->int_allocRep("");
     *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0x34);
-    ((SCStr *)((SCStr *)&stack0xffffff34))->op_ctor((SCStr *)&DAT_121a1b94);
+    ((SCStr *)((SCStr *)&stack0xffffff34))->m_op_ctor((SCStr *)&DAT_121a1b94);
     *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0x2f);
     local_8 = (int ****)((int ****)thunk_FUN_1022be70(), 0);
   }
@@ -88396,7 +88396,7 @@ LAB_104b1638:
     *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0x4e);
     ((SCStr *)((SCStr *)&stack0xffffff38))->int_allocRep("");
     *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0x4f);
-    ((SCStr *)((SCStr *)&stack0xffffff34))->op_ctor((SCStr *)&DAT_121a1b98);
+    ((SCStr *)((SCStr *)&stack0xffffff34))->m_op_ctor((SCStr *)&DAT_121a1b98);
     *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0x4a);
     local_8 = (int ****)((int ****)thunk_FUN_1022be70(), 0);
   }
@@ -89577,7 +89577,7 @@ void __thiscall Recovered_Bulk::m_FUN_104b3770(int param_2)
 
 
   if ((int)(param_2) == *(int *)(param_1 + 0x9c)) {
-    ((SCStr *)((SCStr *)&stack0xffffffd0))->op_ctor((SCStr *)(param_1 + 0x98));
+    ((SCStr *)((SCStr *)&stack0xffffffd0))->m_op_ctor((SCStr *)(param_1 + 0x98));
     piVar2 = (int *)((int *)FUN_104b38e0(&local_14), 0);
     piVar1 = (int *)((int *)*piVar2);
 
@@ -92893,7 +92893,7 @@ LAB_104b950b:
         local_68 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_68 + 1)) << 8 | (uint)(0x4d)));
 
       }
-      ((SCStr *)((SCStr *)&local_8))->op_ctor(pSVar7);
+      ((SCStr *)((SCStr *)&local_8))->m_op_ctor(pSVar7);
 
       if ((local_10 & 0x40) != 0) {
         local_10 = (uint)(local_10 & 0xffffffbf);
@@ -94651,9 +94651,9 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_104bba10(int *param_2)
     g_lSCObjCount = (int)(g_lSCObjCount + 1);
 
     *piVar5 = (int)((int)(uint)&ghidra_vftable_SCOpenUrlActionDescriptor);
-    ((SCStr *)((SCStr *)(piVar5 + 2)))->op_ctor((SCStr *)&param_2);
+    ((SCStr *)((SCStr *)(piVar5 + 2)))->m_op_ctor((SCStr *)&param_2);
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x43)));
-    ((SCStr *)((SCStr *)(piVar5 + 3)))->op_ctor((SCStr *)&DAT_121a1c64);
+    ((SCStr *)((SCStr *)(piVar5 + 3)))->m_op_ctor((SCStr *)&DAT_121a1c64);
   }
 
   if ((int *)(piVar5) != (int *)(local_38)) {
@@ -95889,7 +95889,7 @@ void __fastcall FUN_104be2b0(int *param_1)
       ((SCStr *)((SCStr *)&local_28))->int_release();
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x13);
       if (((char *)(local_18) != (char *)(0x0)) && (*local_18 != (char)(('\0')))) {
-        ((SCStr *)((SCStr *)&stack0xffffff5c))->op_ctor((SCStr *)&local_18);
+        ((SCStr *)((SCStr *)&stack0xffffff5c))->m_op_ctor((SCStr *)&local_18);
         thunk_FUN_104bfc50(&local_38);
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x2a);
         thunk_FUN_1041d340(1);
@@ -96724,7 +96724,7 @@ SCStr * __stdcall FUN_104bfc50(SCStr *param_1, unsigned int recovered_unused_sta
     ((SCStr *)((SCStr *)&local_14))->int_release();
     local_8 = (int)((uint)*(unsigned short *)((char *)&local_8 + 1) << 8);
   }
-  ((SCStr *)(param_1))->op_ctor((SCStr *)&DAT_121a07b0);
+  ((SCStr *)(param_1))->m_op_ctor((SCStr *)&DAT_121a07b0);
   *(undefined4*)(param_1 + 4) = (undefined4)(DAT_121a07b4);
 
 LAB_104bfd32:
@@ -96898,7 +96898,7 @@ LAB_104bfeb1:
     thunk_FUN_1011f5e0();
   }
   local_30[0] = (int *)((int * *)(&stack0xffffff5c));
-  ((SCStr *)((SCStr *)&stack0xffffff5c))->op_ctor(param_2);
+  ((SCStr *)((SCStr *)&stack0xffffff5c))->m_op_ctor(param_2);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x18);
   ((SCStr *)((SCStr *)&stack0xffffff58))->int_allocRep("SCSystemStatusVoice:deviceError");
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(6);
@@ -97574,11 +97574,11 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104c0f80(SCStr *param_2,SCStr *param_3,
   undefined4 local_8;
 
 
-  ((SCStr *)(param_1))->op_ctor(param_4);
+  ((SCStr *)(param_1))->m_op_ctor(param_4);
 
-  ((SCStr *)(param_1 + 4))->op_ctor(param_3);
+  ((SCStr *)(param_1 + 4))->m_op_ctor(param_3);
 
-  ((SCStr *)(param_1 + 8))->op_ctor(param_2);
+  ((SCStr *)(param_1 + 8))->m_op_ctor(param_2);
 
   return (SCStr *)(param_1);
 
@@ -97629,9 +97629,9 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104c1110(undefined4 param_2,SCStr *para
   undefined4 local_8;
 
 
-  ((SCStr *)(param_1))->op_ctor(param_4);
+  ((SCStr *)(param_1))->m_op_ctor(param_4);
 
-  ((SCStr *)(param_1 + 4))->op_ctor(param_3);
+  ((SCStr *)(param_1 + 4))->m_op_ctor(param_3);
 
   return (SCStr *)(param_1);
 
@@ -97651,11 +97651,11 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104c11b0(undefined4 param_2,SCStr *para
   undefined4 local_8;
 
 
-  ((SCStr *)(param_1))->op_ctor(param_5);
+  ((SCStr *)(param_1))->m_op_ctor(param_5);
 
-  ((SCStr *)(param_1 + 4))->op_ctor(param_4);
+  ((SCStr *)(param_1 + 4))->m_op_ctor(param_4);
 
-  ((SCStr *)(param_1 + 8))->op_ctor(param_3);
+  ((SCStr *)(param_1 + 8))->m_op_ctor(param_3);
 
   return (SCStr *)(param_1);
 
@@ -97713,11 +97713,11 @@ void __thiscall Recovered_Bulk::m_FUN_104c1490(SCStr *param_2)
 
 
   this_ = (SCStr *)(*(SCStr **)(param_1 + 4), 0);
-  ((SCStr *)(this_))->op_ctor(param_2);
+  ((SCStr *)(this_))->m_op_ctor(param_2);
 
-  ((SCStr *)(this_ + 4))->op_ctor(param_2 + 4);
+  ((SCStr *)(this_ + 4))->m_op_ctor(param_2 + 4);
 
-  ((SCStr *)(this_ + 8))->op_ctor(param_2 + 8);
+  ((SCStr *)(this_ + 8))->m_op_ctor(param_2 + 8);
   *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0xc);
 
   return;
@@ -97784,11 +97784,11 @@ void __thiscall Recovered_Bulk::m_FUN_104c1610(SCStr *param_2)
 
 
   this_ = (SCStr *)(*(SCStr **)(param_1 + 4), 0);
-  ((SCStr *)(this_))->op_ctor(param_2);
+  ((SCStr *)(this_))->m_op_ctor(param_2);
 
-  ((SCStr *)(this_ + 4))->op_ctor(param_2 + 4);
+  ((SCStr *)(this_ + 4))->m_op_ctor(param_2 + 4);
 
-  ((SCStr *)(this_ + 8))->op_ctor(param_2 + 8);
+  ((SCStr *)(this_ + 8))->m_op_ctor(param_2 + 8);
   *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0xc);
 
   return;
@@ -97811,11 +97811,11 @@ void __thiscall Recovered_Bulk::m_FUN_104c16b0(SCStr *param_2,SCStr *param_3,SCS
 
 
   this_ = (SCStr *)(*(SCStr **)(param_1 + 4), 0);
-  ((SCStr *)(this_))->op_ctor(param_4);
+  ((SCStr *)(this_))->m_op_ctor(param_4);
 
-  ((SCStr *)(this_ + 4))->op_ctor(param_3);
+  ((SCStr *)(this_ + 4))->m_op_ctor(param_3);
 
-  ((SCStr *)(this_ + 8))->op_ctor(param_2);
+  ((SCStr *)(this_ + 8))->m_op_ctor(param_2);
   *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0xc);
 
   return;
@@ -97862,11 +97862,11 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104c1750(int param_2,SCStr *param_3,SCS
   iVar3 = (int)(thunk_FUN_104c4c80(uVar6), 0);
 
   this_ = (SCStr *)((SCStr *)(iVar3 + ((param_2 - iVar1) / 0xc) * 0xc));
-  ((SCStr *)(this_))->op_ctor(param_5);
+  ((SCStr *)(this_))->m_op_ctor(param_5);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
-  ((SCStr *)(this_ + 4))->op_ctor(param_4);
+  ((SCStr *)(this_ + 4))->m_op_ctor(param_4);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
-  ((SCStr *)(this_ + 8))->op_ctor(param_3);
+  ((SCStr *)(this_ + 8))->m_op_ctor(param_3);
   local_8 = (int)((uint)*(unsigned short *)((char *)&local_8 + 1) << 8);
   if ((int)((param_2)) == param_1[1]) {
     thunk_FUN_104c1d20(*param_1,param_1[1],iVar3,param_1);
@@ -98047,11 +98047,11 @@ SCStr * FUN_104c1d20(SCStr *param_1,SCStr *param_2,SCStr *param_3,undefined4 par
 
   for (; ExceptionList = (void *)((void *)(ppvVar1)),(SCStr *)( param_1) != (SCStr *)(param_2); param_1 = param_1 + 0xc) {
 
-    ((SCStr *)(param_3))->op_ctor(param_1);
+    ((SCStr *)(param_3))->m_op_ctor(param_1);
 
-    ((SCStr *)(param_3 + 4))->op_ctor(param_1 + 4);
+    ((SCStr *)(param_3 + 4))->m_op_ctor(param_1 + 4);
 
-    ((SCStr *)(param_3 + 8))->op_ctor(param_1 + 8);
+    ((SCStr *)(param_3 + 8))->m_op_ctor(param_1 + 8);
     param_3 = (SCStr *)(param_3 + 0xc);
 
   }
@@ -98132,11 +98132,11 @@ SCStr * FUN_104c1f20(SCStr *param_1,SCStr *param_2,SCStr *param_3,undefined4 par
 
   for (; ExceptionList = (void *)((void *)(ppvVar1)),(SCStr *)( param_1) != (SCStr *)(param_2); param_1 = param_1 + 0xc) {
 
-    ((SCStr *)(param_3))->op_ctor(param_1);
+    ((SCStr *)(param_3))->m_op_ctor(param_1);
 
-    ((SCStr *)(param_3 + 4))->op_ctor(param_1 + 4);
+    ((SCStr *)(param_3 + 4))->m_op_ctor(param_1 + 4);
 
-    ((SCStr *)(param_3 + 8))->op_ctor(param_1 + 8);
+    ((SCStr *)(param_3 + 8))->m_op_ctor(param_1 + 8);
     param_3 = (SCStr *)(param_3 + 0xc);
 
   }
@@ -98161,11 +98161,11 @@ void FUN_104c2000(undefined4 param_1,SCStr *param_2,SCStr *param_3)
   undefined4 local_8;
 
 
-  ((SCStr *)(param_2))->op_ctor(param_3);
+  ((SCStr *)(param_2))->m_op_ctor(param_3);
 
-  ((SCStr *)(param_2 + 4))->op_ctor(param_3 + 4);
+  ((SCStr *)(param_2 + 4))->m_op_ctor(param_3 + 4);
 
-  ((SCStr *)(param_2 + 8))->op_ctor(param_3 + 8);
+  ((SCStr *)(param_2 + 8))->m_op_ctor(param_3 + 8);
 
   return;
 
@@ -98185,11 +98185,11 @@ void FUN_104c2090(undefined4 param_1,SCStr *param_2,SCStr *param_3,SCStr *param_
   undefined4 local_8;
 
 
-  ((SCStr *)(param_2))->op_ctor(param_5);
+  ((SCStr *)(param_2))->m_op_ctor(param_5);
 
-  ((SCStr *)(param_2 + 4))->op_ctor(param_4);
+  ((SCStr *)(param_2 + 4))->m_op_ctor(param_4);
 
-  ((SCStr *)(param_2 + 8))->op_ctor(param_3);
+  ((SCStr *)(param_2 + 8))->m_op_ctor(param_3);
 
   return;
 
@@ -98209,11 +98209,11 @@ void FUN_104c2120(undefined4 param_1,SCStr *param_2,SCStr *param_3)
   undefined4 local_8;
 
 
-  ((SCStr *)(param_2))->op_ctor(param_3);
+  ((SCStr *)(param_2))->m_op_ctor(param_3);
 
-  ((SCStr *)(param_2 + 4))->op_ctor(param_3 + 4);
+  ((SCStr *)(param_2 + 4))->m_op_ctor(param_3 + 4);
 
-  ((SCStr *)(param_2 + 8))->op_ctor(param_3 + 8);
+  ((SCStr *)(param_2 + 8))->m_op_ctor(param_3 + 8);
 
   return;
 
@@ -98303,11 +98303,11 @@ void __thiscall Recovered_Bulk::m_FUN_104c2350(SCStr *param_2,SCStr *param_3,SCS
 
   this_ = (SCStr *)(*(SCStr **)(param_1 + 4), 0);
   if ((SCStr *)(this_) != *(SCStr **)(param_1 + 8)) {
-    ((SCStr *)(this_))->op_ctor(param_4);
+    ((SCStr *)(this_))->m_op_ctor(param_4);
 
-    ((SCStr *)(this_ + 4))->op_ctor(param_3);
+    ((SCStr *)(this_ + 4))->m_op_ctor(param_3);
 
-    ((SCStr *)(this_ + 8))->op_ctor(param_2);
+    ((SCStr *)(this_ + 8))->m_op_ctor(param_2);
     *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0xc);
 
     return;
@@ -98332,9 +98332,9 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104c26e0(SCStr *param_2)
   undefined4 local_8;
 
 
-  ((SCStr *)(param_1))->op_ctor(param_2);
+  ((SCStr *)(param_1))->m_op_ctor(param_2);
 
-  ((SCStr *)(param_1 + 4))->op_ctor(param_2 + 4);
+  ((SCStr *)(param_1 + 4))->m_op_ctor(param_2 + 4);
 
   return (SCStr *)(param_1);
 
@@ -98354,9 +98354,9 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104c2760(SCStr *param_2)
   undefined4 local_8;
 
 
-  ((SCStr *)(param_1))->op_ctor(param_2);
+  ((SCStr *)(param_1))->m_op_ctor(param_2);
 
-  ((SCStr *)(param_1 + 4))->op_ctor(param_2 + 4);
+  ((SCStr *)(param_1 + 4))->m_op_ctor(param_2 + 4);
 
   return (SCStr *)(param_1);
 
@@ -98376,11 +98376,11 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104c27e0(SCStr *param_2)
   undefined4 local_8;
 
 
-  ((SCStr *)(param_1))->op_ctor(param_2);
+  ((SCStr *)(param_1))->m_op_ctor(param_2);
 
-  ((SCStr *)(param_1 + 4))->op_ctor(param_2 + 4);
+  ((SCStr *)(param_1 + 4))->m_op_ctor(param_2 + 4);
 
-  ((SCStr *)(param_1 + 8))->op_ctor(param_2 + 8);
+  ((SCStr *)(param_1 + 8))->m_op_ctor(param_2 + 8);
 
   return (SCStr *)(param_1);
 
@@ -98400,11 +98400,11 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104c2880(SCStr *param_2)
   undefined4 local_8;
 
 
-  ((SCStr *)(param_1))->op_ctor(param_2);
+  ((SCStr *)(param_1))->m_op_ctor(param_2);
 
-  ((SCStr *)(param_1 + 4))->op_ctor(param_2 + 4);
+  ((SCStr *)(param_1 + 4))->m_op_ctor(param_2 + 4);
 
-  ((SCStr *)(param_1 + 8))->op_ctor(param_2 + 8);
+  ((SCStr *)(param_1 + 8))->m_op_ctor(param_2 + 8);
 
   return (SCStr *)(param_1);
 
@@ -98469,7 +98469,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_104c2a50(undefined4 param_2,undefi
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
 
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCDeleteVoiceAccountActionDescriptor);
-  ((SCStr *)((SCStr *)(param_1 + 2)))->op_ctor((SCStr *)&param_2);
+  ((SCStr *)((SCStr *)(param_1 + 2)))->m_op_ctor((SCStr *)&param_2);
   param_1[3] = (undefined4)(param_3);
   param_1[4] = (undefined4)(param_4);
 
@@ -98939,7 +98939,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_104c3610(undefined4 param_2,char *
   param_1[5] = (undefined4)(param_2);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCVoiceAuthWizardActionDescriptor);
-  ((SCStr *)((SCStr *)(param_1 + 6)))->op_ctor((SCStr *)&param_4);
+  ((SCStr *)((SCStr *)(param_1 + 6)))->m_op_ctor((SCStr *)&param_4);
   param_1[7] = (undefined4)(0);
   param_1[8] = (undefined4)(0);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(6);
@@ -99636,11 +99636,11 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104c4ae0(SCStr *param_2,SCStr *param_3,
 
   for (; ExceptionList = (void *)((void *)(ppvVar1)),(SCStr *)( param_2) != (SCStr *)(param_3); param_2 = param_2 + 0xc) {
 
-    ((SCStr *)(param_4))->op_ctor(param_2);
+    ((SCStr *)(param_4))->m_op_ctor(param_2);
 
-    ((SCStr *)(param_4 + 4))->op_ctor(param_2 + 4);
+    ((SCStr *)(param_4 + 4))->m_op_ctor(param_2 + 4);
 
-    ((SCStr *)(param_4 + 8))->op_ctor(param_2 + 8);
+    ((SCStr *)(param_4 + 8))->m_op_ctor(param_2 + 8);
     param_4 = (SCStr *)(param_4 + 0xc);
 
   }
@@ -99771,7 +99771,7 @@ void __fastcall FUN_104c4db0(int param_1)
   iVar4 = (int)(*(int *)(param_1 + 0x98));
   local_28 = (int *)((int *)0x1);
   if (iVar4 == 1) {
-    ((SCStr *)((SCStr *)&stack0xffffff5c))->op_ctor((SCStr *)(param_1 + 0xa8));
+    ((SCStr *)((SCStr *)&stack0xffffff5c))->m_op_ctor((SCStr *)(param_1 + 0xa8));
     iVar4 = (int)(FUN_104c7380(), 0);
     if (iVar4 != 0) {
       pSVar5 = (SCStr *)((SCStr *)thunk_FUN_10bea700(&local_44), 0);
@@ -99831,7 +99831,7 @@ LAB_104c4f63:
   thunk_FUN_101eca20();
   local_34 = (SCStr *)((SCStr *)&stack0xffffff5c);
   local_44 = (SCStr *)((SCStr *)(local_14 + 0xa8));
-  ((SCStr *)((SCStr *)&stack0xffffff5c))->op_ctor(local_44);
+  ((SCStr *)((SCStr *)&stack0xffffff5c))->m_op_ctor(local_44);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x13);
   ((SCStr *)((SCStr *)&stack0xffffff58))->int_allocRep("SCSystemStatusVoice:deviceError");
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(6);
@@ -99897,7 +99897,7 @@ LAB_104c4f63:
   if (iVar4 != 1) {
     if (iVar4 == 2) {
       local_4c = (int *)((int * *)(&stack0xffffff5c));
-      ((SCStr *)((SCStr *)&stack0xffffff5c))->op_ctor(local_44);
+      ((SCStr *)((SCStr *)&stack0xffffff5c))->m_op_ctor(local_44);
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1e);
       uVar8 = (undefined4)(*(undefined4 *)(local_14 + 0x98));
       puVar2 = (undefined4 *)(&local_38);
@@ -100013,13 +100013,13 @@ LAB_104c4f63:
   }
   else {
     iVar4 = (int)(*(int *)(iVar10 + 0x98));
-    ((SCStr *)((SCStr *)&local_24))->op_ctor(local_44);
+    ((SCStr *)((SCStr *)&local_24))->m_op_ctor(local_44);
     *local_28 = (int)((int)(uint)&ghidra_vftable_SCIObjImpl);
     local_28[1] = (int)(0);
     g_lSCObjCount = (int)(g_lSCObjCount + 1);
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x32);
     *local_28 = (int)((int)(uint)&ghidra_vftable_SCDeleteVoiceAccountActionDescriptor);
-    ((SCStr *)((SCStr *)(local_28 + 2)))->op_ctor((SCStr *)&local_24);
+    ((SCStr *)((SCStr *)(local_28 + 2)))->m_op_ctor((SCStr *)&local_24);
     piVar9 = (int *)(local_28);
     local_28[3] = (int)(iVar4);
     local_28[4] = (int)(local_14 + 0x94);
@@ -100585,7 +100585,7 @@ void __thiscall Recovered_Bulk::m_FUN_104c64d0(undefined4 param_2,SCStr *param_3
 
     return;
   }
-  ((SCStr *)((SCStr *)&stack0xffffffd4))->op_ctor((SCStr *)(param_1 + 4));
+  ((SCStr *)((SCStr *)&stack0xffffffd4))->m_op_ctor((SCStr *)(param_1 + 4));
   iVar3 = (int)(FUN_104c7380(), 0);
   if (iVar3 == 0) {
     bVar2 = (bool)(false);
@@ -100647,7 +100647,7 @@ void __thiscall Recovered_Bulk::m_FUN_104c6650(undefined4 param_2,SCStr *param_3
 
     return;
   }
-  ((SCStr *)((SCStr *)&stack0xffffffd4))->op_ctor((SCStr *)(param_1 + 0x18));
+  ((SCStr *)((SCStr *)&stack0xffffffd4))->m_op_ctor((SCStr *)(param_1 + 0x18));
   iVar3 = (int)(FUN_104c7380(), 0);
   if (iVar3 == 0) {
     bVar2 = (bool)(false);
@@ -100760,7 +100760,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_104c67e0(undefined4 *param_2)
     uStack_68 = (undefined4)(extraout_ECX);
     ((SCStr *)((SCStr *)&uStack_68))->int_allocRep("");
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(9);
-    ((SCStr *)((SCStr *)&stack0xffffff94))->op_ctor((SCStr *)(param_1 + 0xa8));
+    ((SCStr *)((SCStr *)&stack0xffffff94))->m_op_ctor((SCStr *)(param_1 + 0xa8));
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(8);
     local_20 = (int *)((int *)thunk_FUN_104c3610(*(undefined4 *)(param_1 + 0x98)), 0);
   }
@@ -100794,7 +100794,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_104c67e0(undefined4 *param_2)
 
 
 
-    ((SCStr *)((SCStr *)&local_30))->op_ctor((SCStr *)&DAT_121a07b0);
+    ((SCStr *)((SCStr *)&local_30))->m_op_ctor((SCStr *)&DAT_121a07b0);
     local_2c = (int)(DAT_121a07b4);
     *piVar1 = (int)((int)(uint)&ghidra_vftable_SCIObjImpl);
     piVar1[1] = (int)(0);
@@ -100813,19 +100813,19 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_104c67e0(undefined4 *param_2)
     }
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x12);
 
-    ((SCStr *)((SCStr *)(piVar1 + 6)))->op_ctor((SCStr *)&local_18);
+    ((SCStr *)((SCStr *)(piVar1 + 6)))->m_op_ctor((SCStr *)&local_18);
     piVar1[7] = (int)(0);
     local_28 = (SCStr *)((SCStr *)(piVar1 + 8));
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x14);
 
-    ((SCStr *)(local_28))->op_ctor((SCStr *)&local_30);
+    ((SCStr *)(local_28))->m_op_ctor((SCStr *)&local_30);
     piVar1[9] = (int)(local_2c);
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x15);
 
-    ((SCStr *)((SCStr *)(piVar1 + 10)))->op_ctor((SCStr *)&local_1c);
+    ((SCStr *)((SCStr *)(piVar1 + 10)))->m_op_ctor((SCStr *)&local_1c);
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(0x16)));
 
-    ((SCStr *)((SCStr *)(piVar1 + 0xb)))->op_ctor((SCStr *)&local_20);
+    ((SCStr *)((SCStr *)(piVar1 + 0xb)))->m_op_ctor((SCStr *)&local_20);
 
     ((SCStr *)((SCStr *)&local_30))->int_release();
 
@@ -100941,7 +100941,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104c6db0(SCStr *param_2)
 
 
   if (iVar2 == 1) {
-    ((SCStr *)((SCStr *)&stack0xffffffd4))->op_ctor((SCStr *)(param_1 + 0xa8));
+    ((SCStr *)((SCStr *)&stack0xffffffd4))->m_op_ctor((SCStr *)(param_1 + 0xa8));
     iVar2 = (int)(FUN_104c7380(), 0);
     if (iVar2 == 0) {
 
@@ -101656,7 +101656,7 @@ void __fastcall FUN_104c7b00(int param_1)
   pSVar8 = (SCStr *)((SCStr *)((SCStr *)((SCStr *)&local_58))->substr((uint)&local_3c,3), 0);
   *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0xc);
   pSVar8 = (SCStr *)(((SCStr *)(pSVar8))->toLower(), 0);
-  ((SCStr *)((SCStr *)&local_8c))->op_ctor(pSVar8);
+  ((SCStr *)((SCStr *)&local_8c))->m_op_ctor(pSVar8);
   *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0xf);
   ((SCStr *)((SCStr *)&local_3c))->int_release();
 
@@ -101731,7 +101731,7 @@ LAB_104c7d96:
 
     pSVar8 = (SCStr *)((SCStr *)&local_b4);
   }
-  ((SCStr *)((SCStr *)&local_d0))->op_ctor(pSVar8);
+  ((SCStr *)((SCStr *)&local_d0))->m_op_ctor(pSVar8);
   local_cc = (undefined4)(*(undefined4 *)(pSVar8 + 4));
 
   if ((local_40 & 2) != 0) {
@@ -101907,13 +101907,13 @@ LAB_104c7d96:
         }
         else {
           local_b0 = (SCStr *)(pSVar8);
-          ((SCStr *)(pSVar8))->op_ctor((SCStr *)&local_34);
+          ((SCStr *)(pSVar8))->m_op_ctor((SCStr *)&local_34);
           *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0x45);
           local_78 = (SCStr *)(pSVar8 + 4);
-          ((SCStr *)(local_78))->op_ctor((SCStr *)&local_38);
+          ((SCStr *)(local_78))->m_op_ctor((SCStr *)&local_38);
           *(unsigned char*)((char *)&local_80 + 0) = (unsigned char)(0x46);
           local_78 = (SCStr *)(pSVar8 + 8);
-          ((SCStr *)(local_78))->op_ctor((SCStr *)&local_30);
+          ((SCStr *)(local_78))->m_op_ctor((SCStr *)&local_30);
           local_6c[1] = (int)(local_6c[1] + 0xc);
         }
       }
@@ -102100,7 +102100,7 @@ void __fastcall FUN_104c87d0(int param_1)
 
   local_14 = (int *)((int *)0x0);
   ppiStack_4c = (int **)((int **)param_1);
-  ((SCStr *)((SCStr *)&ppiStack_4c))->op_ctor((SCStr *)(param_1 + 0xa8));
+  ((SCStr *)((SCStr *)&ppiStack_4c))->m_op_ctor((SCStr *)(param_1 + 0xa8));
   local_28 = (int *)((int *)FUN_104c7380(), 0);
   ppiStack_4c = (int **)(&local_14);
   pSVar3 = (SCLibrary *)(((SCLibrary *)(0))->getSingleton(), 0);
@@ -102121,7 +102121,7 @@ void __fastcall FUN_104c87d0(int param_1)
     (**(code **)(*local_14 + 8))();
   }
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
-  ((SCStr *)((SCStr *)&stack0xffffffb0))->op_ctor((SCStr *)(param_1 + 0xa8));
+  ((SCStr *)((SCStr *)&stack0xffffffb0))->m_op_ctor((SCStr *)(param_1 + 0xa8));
   iVar5 = (int)(FUN_104c7380(), 0);
   if (((int *)(piVar9) != (int *)(0x0)) && (iVar5 != 0)) {
     uVar6 = (undefined4)(thunk_FUN_10382ba0(iVar5), 0);
@@ -102194,7 +102194,7 @@ void __fastcall FUN_104c87d0(int param_1)
       piVar9 = (int *)((int *)((uint)piVar9 | 4));
     }
     local_14 = (int *)(piVar9);
-    ((SCStr *)((SCStr *)&local_1c))->op_ctor(pSVar8);
+    ((SCStr *)((SCStr *)&local_1c))->m_op_ctor(pSVar8);
 
     if (((uint)piVar9 & 8) != 0) {
       piVar9 = (int *)((int *)((uint)piVar9 & 0xfffffff7));
@@ -102491,7 +102491,7 @@ void __fastcall FUN_104c9040(int param_1)
     uStack_38 = (undefined4)(extraout_ECX);
   }
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(2)));
-  ((SCStr *)((SCStr *)&uStack_38))->op_ctor((SCStr *)(param_1 + 0xa8));
+  ((SCStr *)((SCStr *)&uStack_38))->m_op_ctor((SCStr *)(param_1 + 0xa8));
   iVar3 = (int)(FUN_104c7380(), 0);
   if (((int *)(piVar1) != (int *)(0x0)) && (iVar3 != 0)) {
     uStack_38 = (undefined4)(*(undefined4 *)(param_1 + 0x98));
@@ -102564,7 +102564,7 @@ bool __fastcall FUN_104c9140(int param_1)
   }
   else {
     local_18 = (undefined1 *)((undefined1 *)&ppiStack_60);
-    ((SCStr *)((SCStr *)&ppiStack_60))->op_ctor((SCStr *)(param_1 + 0xa8));
+    ((SCStr *)((SCStr *)&ppiStack_60))->m_op_ctor((SCStr *)(param_1 + 0xa8));
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(5);
     ((SCStr *)((SCStr *)&stack0xffffff9c))->int_allocRep("");
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
@@ -102834,7 +102834,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_104c9830(int *param_2)
     ((SCStr *)((SCStr *)&local_14))->int_release();
   }
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(8);
-  ((SCStr *)((SCStr *)&stack0xffffffbc))->op_ctor((SCStr *)(param_1 + 0x27));
+  ((SCStr *)((SCStr *)&stack0xffffffbc))->m_op_ctor((SCStr *)(param_1 + 0x27));
   piVar4 = (int *)((int *)FUN_104c9f00(), 0);
   local_24 = (SCStr *)((SCStr *)*piVar4);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xe);
@@ -102992,7 +102992,7 @@ void __thiscall Recovered_Bulk::m_FUN_104c9df0(int *param_2)
 
   if ((int *)(param_2) == *(int **)(param_1 + 0x90)) {
     piStack_28 = (int *)((int *)param_1);
-    ((SCStr *)((SCStr *)&piStack_28))->op_ctor((SCStr *)(param_1 + 0x9c));
+    ((SCStr *)((SCStr *)&piStack_28))->m_op_ctor((SCStr *)(param_1 + 0x9c));
     piStack_28 = (int *)((int *)FUN_104c9f00(&param_2), 0);
 
     thunk_FUN_101b9270();
@@ -103292,7 +103292,7 @@ void __fastcall FUN_104ca270(int param_1)
   }
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
   thunk_FUN_101f2880();
-  ((SCStr *)((SCStr *)&local_38))->op_ctor((SCStr *)(param_1 + 0x9c));
+  ((SCStr *)((SCStr *)&local_38))->m_op_ctor((SCStr *)(param_1 + 0x9c));
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(6);
   ((SCStr *)((SCStr *)&local_38))->int_release();
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
@@ -103497,7 +103497,7 @@ void __fastcall FUN_104ca270(int param_1)
   ((SCStr *)((SCStr *)&local_3c))->int_release();
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
   thunk_FUN_101ecbb0();
-  ((SCStr *)((SCStr *)&stack0xffffff6c))->op_ctor((SCStr *)(local_18 + 0x9c));
+  ((SCStr *)((SCStr *)&stack0xffffff6c))->m_op_ctor((SCStr *)(local_18 + 0x9c));
   puVar6 = (undefined4 *)((undefined4 *)FUN_104c9f00(&local_50), 0);
   local_78 = (int *)((int *)*puVar6);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x33);
@@ -103830,7 +103830,7 @@ undefined1 __fastcall FUN_104cb180(int param_1)
   undefined4 local_8;
 
 
-  ((SCStr *)((SCStr *)&stack0xffffffc8))->op_ctor((SCStr *)(param_1 + 0x9c));
+  ((SCStr *)((SCStr *)&stack0xffffffc8))->m_op_ctor((SCStr *)(param_1 + 0x9c));
   piVar3 = (int *)((int *)FUN_104c9f00(&local_18), 0);
   piVar1 = (int *)((int *)*piVar3);
 
@@ -104085,7 +104085,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_104cba10(SCStr *param_2)
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
 
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCDismissMessageAction);
-  ((SCStr *)((SCStr *)(param_1 + 2)))->op_ctor(param_2);
+  ((SCStr *)((SCStr *)(param_1 + 2)))->m_op_ctor(param_2);
 
   return (undefined4 *)(param_1);
 
@@ -104113,17 +104113,17 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_104cbaa0(SCStr *param_2,SCStr *par
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
 
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCDisplayHelpSheetActionDescriptor);
-  ((SCStr *)((SCStr *)(param_1 + 2)))->op_ctor(param_2);
+  ((SCStr *)((SCStr *)(param_1 + 2)))->m_op_ctor(param_2);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
-  ((SCStr *)((SCStr *)(param_1 + 3)))->op_ctor(param_3);
+  ((SCStr *)((SCStr *)(param_1 + 3)))->m_op_ctor(param_3);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
-  ((SCStr *)((SCStr *)(param_1 + 4)))->op_ctor(param_4);
+  ((SCStr *)((SCStr *)(param_1 + 4)))->m_op_ctor(param_4);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
-  ((SCStr *)((SCStr *)(param_1 + 5)))->op_ctor(param_5);
+  ((SCStr *)((SCStr *)(param_1 + 5)))->m_op_ctor(param_5);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(4);
-  ((SCStr *)((SCStr *)(param_1 + 6)))->op_ctor(param_6);
+  ((SCStr *)((SCStr *)(param_1 + 6)))->m_op_ctor(param_6);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(5);
-  ((SCStr *)((SCStr *)(param_1 + 7)))->op_ctor(param_7);
+  ((SCStr *)((SCStr *)(param_1 + 7)))->m_op_ctor(param_7);
   param_1[8] = (undefined4)(0);
   param_1[9] = (undefined4)(0);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(7);
@@ -104215,7 +104215,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_104cbce0(SCStr *param_2)
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
 
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCOpenUrlAction);
-  ((SCStr *)((SCStr *)(param_1 + 2)))->op_ctor(param_2);
+  ((SCStr *)((SCStr *)(param_1 + 2)))->m_op_ctor(param_2);
 
   return (undefined4 *)(param_1);
 
@@ -104337,7 +104337,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_104cbf70(undefined4 param_2)
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
   *(unsigned short*)((char *)&local_8 + 1) = (unsigned short)(0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCTextInputActionBase);
-  ((SCStr *)((SCStr *)(param_1 + 4)))->op_ctor((SCStr *)&param_2);
+  ((SCStr *)((SCStr *)(param_1 + 4)))->m_op_ctor((SCStr *)&param_2);
   param_1[5] = (undefined4)(0);
   param_1[6] = (undefined4)(0);
   param_1[7] = (undefined4)(0);
@@ -104348,7 +104348,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_104cbf70(undefined4 param_2)
   param_1[0xc] = (undefined4)(0);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(8);
   param_1[0xd] = (undefined4)(0xffffffff);
-  ((SCStr *)((SCStr *)(param_1 + 0xe)))->op_ctor((SCStr *)&stack0x00000008);
+  ((SCStr *)((SCStr *)(param_1 + 0xe)))->m_op_ctor((SCStr *)&stack0x00000008);
   param_1[0xf] = (undefined4)(0);
   param_1[0x10] = (undefined4)(0);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(10)));
@@ -107078,7 +107078,7 @@ LAB_104cf84b:
       }
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x3d);
       thunk_FUN_112af4e0("UIActions",5,"%s to \'%s\'");
-      ((SCStr *)((SCStr *)&stack0xffffff8c))->op_ctor(pSVar6);
+      ((SCStr *)((SCStr *)&stack0xffffff8c))->m_op_ctor(pSVar6);
       piVar5 = (int *)((int *)(**(code **)(*param_1 + 0x24))(&param_3), 0);
       piVar8 = (int *)((int *)*piVar5);
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x48);
@@ -107726,7 +107726,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_104d14c0(undefined4 *param_2)
     g_lSCObjCount = (int)(g_lSCObjCount + 1);
     local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(3)));
     *puVar4 = (undefined4)((uint)&ghidra_vftable_SCDismissMessageAction);
-    ((SCStr *)((SCStr *)(puVar4 + 2)))->op_ctor((SCStr *)(param_1 + 8));
+    ((SCStr *)((SCStr *)(puVar4 + 2)))->m_op_ctor((SCStr *)(param_1 + 8));
   }
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(1)));
   thunk_FUN_104ee4f0(puVar4);
@@ -107922,15 +107922,15 @@ int * __thiscall Recovered_Bulk::m_FUN_104d1760(int *param_2)
   ((SCStr *)((SCStr *)&local_38))->int_release();
   puStack_70 = (undefined4 *)(*(undefined4 **)(param_1 + 0x20), 0);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x16);
-  ((SCStr *)((SCStr *)&puStack_74))->op_ctor((SCStr *)(param_1 + 0x1c));
+  ((SCStr *)((SCStr *)&puStack_74))->m_op_ctor((SCStr *)(param_1 + 0x1c));
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1a);
-  ((SCStr *)((SCStr *)&stack0xffffff88))->op_ctor((SCStr *)(param_1 + 0x18));
+  ((SCStr *)((SCStr *)&stack0xffffff88))->m_op_ctor((SCStr *)(param_1 + 0x18));
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1b);
-  ((SCStr *)((SCStr *)&stack0xffffff84))->op_ctor((SCStr *)(param_1 + 0x14));
+  ((SCStr *)((SCStr *)&stack0xffffff84))->m_op_ctor((SCStr *)(param_1 + 0x14));
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1c);
-  ((SCStr *)((SCStr *)&stack0xffffff80))->op_ctor((SCStr *)(param_1 + 0x10));
+  ((SCStr *)((SCStr *)&stack0xffffff80))->m_op_ctor((SCStr *)(param_1 + 0x10));
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1d);
-  ((SCStr *)((SCStr *)&stack0xffffff7c))->op_ctor((SCStr *)(param_1 + 0xc));
+  ((SCStr *)((SCStr *)&stack0xffffff7c))->m_op_ctor((SCStr *)(param_1 + 0xc));
   puVar8 = (undefined4 *)(&local_20);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1e);
   ppiVar7 = (int **)(&local_38);
@@ -108480,7 +108480,7 @@ LAB_104d2411:
       g_lSCObjCount = (int)(g_lSCObjCount + 1);
 
       *piVar8 = (int)((int)(uint)&ghidra_vftable_SCOpenUrlAction);
-      ((SCStr *)((SCStr *)(piVar8 + 2)))->op_ctor((SCStr *)(param_1 + 0xc));
+      ((SCStr *)((SCStr *)(piVar8 + 2)))->m_op_ctor((SCStr *)(param_1 + 0xc));
     }
     pSVar17 = (SCIAction *)((SCIAction *)&local_24);
 
@@ -109132,7 +109132,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104d3390(SCStr *param_2)
   char *pcVar1;
   
   if ((*(char **)(param_1 + 0x14) != (char *)((0x0))) && (**(char **)(param_1 + 0x14) != '\0')) {
-    ((SCStr *)(param_2))->op_ctor((SCStr *)(param_1 + 0x14));
+    ((SCStr *)(param_2))->m_op_ctor((SCStr *)(param_1 + 0x14));
     return (SCStr *)(param_2);
   }
   switch(*(undefined4 *)(param_1 + 8)) {
@@ -109287,7 +109287,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104d37e0(SCStr *param_2)
         *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(7);
         ((SCStr *)((uint)&aSStack_1c))->int_release();
         *(unsigned char*)((char *)&uStack_8 + 0) = (unsigned char)(5);
-        ((SCStr *)(param_2))->op_ctor((SCStr *)&uStack_18);
+        ((SCStr *)(param_2))->m_op_ctor((SCStr *)&uStack_18);
         uStack_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_8 + 1)) << 8 | (uint)(8)));
         ((SCStr *)((SCStr *)&uStack_18))->int_release();
 
@@ -109321,7 +109321,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104d37e0(SCStr *param_2)
       uStack_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_8 + 1)) << 8 | (uint)(0xd)));
       uVar1 = (uint)(((SCStr *)((SCStr *)&uStack_14))->length(), 0);
       if (uVar1 != 0) {
-        ((SCStr *)(param_2))->op_ctor((SCStr *)&uStack_14);
+        ((SCStr *)(param_2))->m_op_ctor((SCStr *)&uStack_14);
 
         ((SCStr *)((SCStr *)&uStack_14))->int_release();
 
@@ -109867,20 +109867,20 @@ void __thiscall Recovered_Bulk::m_FUN_104d4820(SCStr *param_2)
 
 
   this_ = (SCStr *)(*(SCStr **)(param_1 + 4), 0);
-  ((SCStr *)(this_))->op_ctor(param_2);
+  ((SCStr *)(this_))->m_op_ctor(param_2);
 
-  ((SCStr *)(this_ + 4))->op_ctor(param_2 + 4);
+  ((SCStr *)(this_ + 4))->m_op_ctor(param_2 + 4);
   this_[8] = (SCStr)(param_2[8]);
   *(undefined4*)(this_ + 0xc) = (undefined4)(*(undefined4 *)(param_2 + 0xc));
   this_[0x10] = (SCStr)(param_2[0x10]);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
-  ((SCStr *)(this_ + 0x14))->op_ctor(param_2 + 0x14);
+  ((SCStr *)(this_ + 0x14))->m_op_ctor(param_2 + 0x14);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
-  ((SCStr *)(this_ + 0x18))->op_ctor(param_2 + 0x18);
+  ((SCStr *)(this_ + 0x18))->m_op_ctor(param_2 + 0x18);
   *(undefined4*)(this_ + 0x1c) = (undefined4)(*(undefined4 *)(param_2 + 0x1c));
   *(undefined4*)(this_ + 0x20) = (undefined4)(*(undefined4 *)(param_2 + 0x20));
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(3)));
-  ((SCStr *)(this_ + 0x24))->op_ctor(param_2 + 0x24);
+  ((SCStr *)(this_ + 0x24))->m_op_ctor(param_2 + 0x24);
   *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x28);
 
   return;
@@ -110035,20 +110035,20 @@ SCStr * FUN_104d4cf0(SCStr *param_1,SCStr *param_2,SCStr *param_3)
     pSVar2 = (SCStr *)(param_1 + 8);
     do {
 
-      ((SCStr *)(param_3))->op_ctor(pSVar2 + -8);
+      ((SCStr *)(param_3))->m_op_ctor(pSVar2 + -8);
 
-      ((SCStr *)(param_3 + 4))->op_ctor(pSVar2 + -4);
+      ((SCStr *)(param_3 + 4))->m_op_ctor(pSVar2 + -4);
       param_3[8] = (SCStr)(*pSVar2);
       *(undefined4*)(param_3 + 0xc) = (undefined4)(*(undefined4 *)(pSVar2 + 4));
       param_3[0x10] = (SCStr)(pSVar2[8]);
 
-      ((SCStr *)(param_3 + 0x14))->op_ctor(pSVar2 + 0xc);
+      ((SCStr *)(param_3 + 0x14))->m_op_ctor(pSVar2 + 0xc);
 
-      ((SCStr *)(param_3 + 0x18))->op_ctor(pSVar2 + 0x10);
+      ((SCStr *)(param_3 + 0x18))->m_op_ctor(pSVar2 + 0x10);
       *(undefined4*)(param_3 + 0x1c) = (undefined4)(*(undefined4 *)(pSVar2 + 0x14));
       *(undefined4*)(param_3 + 0x20) = (undefined4)(*(undefined4 *)(pSVar2 + 0x18));
 
-      ((SCStr *)(param_3 + 0x24))->op_ctor(pSVar2 + 0x1c);
+      ((SCStr *)(param_3 + 0x24))->m_op_ctor(pSVar2 + 0x1c);
       param_3 = (SCStr *)(param_3 + 0x28);
       pSVar1 = (SCStr *)(pSVar2 + 0x20);
       pSVar2 = (SCStr *)(pSVar2 + 0x28);
@@ -110073,20 +110073,20 @@ void FUN_104d4e60(undefined4 param_1,SCStr *param_2,SCStr *param_3)
   undefined4 local_8;
 
 
-  ((SCStr *)(param_2))->op_ctor(param_3);
+  ((SCStr *)(param_2))->m_op_ctor(param_3);
 
-  ((SCStr *)(param_2 + 4))->op_ctor(param_3 + 4);
+  ((SCStr *)(param_2 + 4))->m_op_ctor(param_3 + 4);
   param_2[8] = (SCStr)(param_3[8]);
   *(undefined4*)(param_2 + 0xc) = (undefined4)(*(undefined4 *)(param_3 + 0xc));
   param_2[0x10] = (SCStr)(param_3[0x10]);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
-  ((SCStr *)(param_2 + 0x14))->op_ctor(param_3 + 0x14);
+  ((SCStr *)(param_2 + 0x14))->m_op_ctor(param_3 + 0x14);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
-  ((SCStr *)(param_2 + 0x18))->op_ctor(param_3 + 0x18);
+  ((SCStr *)(param_2 + 0x18))->m_op_ctor(param_3 + 0x18);
   *(undefined4*)(param_2 + 0x1c) = (undefined4)(*(undefined4 *)(param_3 + 0x1c));
   *(undefined4*)(param_2 + 0x20) = (undefined4)(*(undefined4 *)(param_3 + 0x20));
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(3)));
-  ((SCStr *)(param_2 + 0x24))->op_ctor(param_3 + 0x24);
+  ((SCStr *)(param_2 + 0x24))->m_op_ctor(param_3 + 0x24);
 
   return;
 
@@ -110106,20 +110106,20 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104d5070(SCStr *param_2)
   undefined4 local_8;
 
 
-  ((SCStr *)(param_1))->op_ctor(param_2);
+  ((SCStr *)(param_1))->m_op_ctor(param_2);
 
-  ((SCStr *)(param_1 + 4))->op_ctor(param_2 + 4);
+  ((SCStr *)(param_1 + 4))->m_op_ctor(param_2 + 4);
   param_1[8] = (SCStr)(param_2[8]);
   *(undefined4*)(param_1 + 0xc) = (undefined4)(*(undefined4 *)(param_2 + 0xc));
   param_1[0x10] = (SCStr)(param_2[0x10]);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
-  ((SCStr *)(param_1 + 0x14))->op_ctor(param_2 + 0x14);
+  ((SCStr *)(param_1 + 0x14))->m_op_ctor(param_2 + 0x14);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
-  ((SCStr *)(param_1 + 0x18))->op_ctor(param_2 + 0x18);
+  ((SCStr *)(param_1 + 0x18))->m_op_ctor(param_2 + 0x18);
   *(undefined4*)(param_1 + 0x1c) = (undefined4)(*(undefined4 *)(param_2 + 0x1c));
   *(undefined4*)(param_1 + 0x20) = (undefined4)(*(undefined4 *)(param_2 + 0x20));
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(3)));
-  ((SCStr *)(param_1 + 0x24))->op_ctor(param_2 + 0x24);
+  ((SCStr *)(param_1 + 0x24))->m_op_ctor(param_2 + 0x24);
 
   return (SCStr *)(param_1);
 
@@ -110139,20 +110139,20 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104d5150(SCStr *param_2)
   undefined4 local_8;
 
 
-  ((SCStr *)(param_1))->op_ctor(param_2);
+  ((SCStr *)(param_1))->m_op_ctor(param_2);
 
-  ((SCStr *)(param_1 + 4))->op_ctor(param_2 + 4);
+  ((SCStr *)(param_1 + 4))->m_op_ctor(param_2 + 4);
   param_1[8] = (SCStr)(param_2[8]);
   *(undefined4*)(param_1 + 0xc) = (undefined4)(*(undefined4 *)(param_2 + 0xc));
   param_1[0x10] = (SCStr)(param_2[0x10]);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
-  ((SCStr *)(param_1 + 0x14))->op_ctor(param_2 + 0x14);
+  ((SCStr *)(param_1 + 0x14))->m_op_ctor(param_2 + 0x14);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
-  ((SCStr *)(param_1 + 0x18))->op_ctor(param_2 + 0x18);
+  ((SCStr *)(param_1 + 0x18))->m_op_ctor(param_2 + 0x18);
   *(undefined4*)(param_1 + 0x1c) = (undefined4)(*(undefined4 *)(param_2 + 0x1c));
   *(undefined4*)(param_1 + 0x20) = (undefined4)(*(undefined4 *)(param_2 + 0x20));
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(3)));
-  ((SCStr *)(param_1 + 0x24))->op_ctor(param_2 + 0x24);
+  ((SCStr *)(param_1 + 0x24))->m_op_ctor(param_2 + 0x24);
 
   return (SCStr *)(param_1);
 
@@ -110327,20 +110327,20 @@ SCStr * __stdcall FUN_104d57e0(SCStr *param_1,SCStr *param_2,SCStr *param_3)
     pSVar2 = (SCStr *)(param_1 + 8);
     do {
 
-      ((SCStr *)(param_3))->op_ctor(pSVar2 + -8);
+      ((SCStr *)(param_3))->m_op_ctor(pSVar2 + -8);
 
-      ((SCStr *)(param_3 + 4))->op_ctor(pSVar2 + -4);
+      ((SCStr *)(param_3 + 4))->m_op_ctor(pSVar2 + -4);
       param_3[8] = (SCStr)(*pSVar2);
       *(undefined4*)(param_3 + 0xc) = (undefined4)(*(undefined4 *)(pSVar2 + 4));
       param_3[0x10] = (SCStr)(pSVar2[8]);
 
-      ((SCStr *)(param_3 + 0x14))->op_ctor(pSVar2 + 0xc);
+      ((SCStr *)(param_3 + 0x14))->m_op_ctor(pSVar2 + 0xc);
 
-      ((SCStr *)(param_3 + 0x18))->op_ctor(pSVar2 + 0x10);
+      ((SCStr *)(param_3 + 0x18))->m_op_ctor(pSVar2 + 0x10);
       *(undefined4*)(param_3 + 0x1c) = (undefined4)(*(undefined4 *)(pSVar2 + 0x14));
       *(undefined4*)(param_3 + 0x20) = (undefined4)(*(undefined4 *)(pSVar2 + 0x18));
 
-      ((SCStr *)(param_3 + 0x24))->op_ctor(pSVar2 + 0x1c);
+      ((SCStr *)(param_3 + 0x24))->m_op_ctor(pSVar2 + 0x1c);
       param_3 = (SCStr *)(param_3 + 0x28);
       pSVar1 = (SCStr *)(pSVar2 + 0x20);
       pSVar2 = (SCStr *)(pSVar2 + 0x28);
@@ -110510,7 +110510,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104d5e80(SCStr *param_2,uint param_3)
 {
   int param_1 = (int )this;
   if (param_3 < (uint)((*(int *)(param_1 + 0xc) - *(int *)(param_1 + 8)) / 0x28)) {
-    ((SCStr *)(param_2))->op_ctor((SCStr *)(*(int *)(param_1 + 8) + param_3 * 0x28 + 0x18));
+    ((SCStr *)(param_2))->m_op_ctor((SCStr *)(*(int *)(param_1 + 8) + param_3 * 0x28 + 0x18));
     return (SCStr *)(param_2);
   }
   ((SCStr *)(param_2))->int_allocRep("");
@@ -110547,13 +110547,13 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104d5ef0(SCStr *param_2,char *param_3,u
   (**(code **)(*param_1 + 0x34))(&param_3,param_3,DAT_12126b84 ^ (uint)&stack0xfffffffc);
 
   if (((char *)(param_3) == (char *)(0x0)) || (*param_3 == (char)(('\0')))) {
-    ((SCStr *)(param_2))->op_ctor((SCStr *)&param_3);
+    ((SCStr *)(param_2))->m_op_ctor((SCStr *)&param_3);
 
   }
   else {
     iVar3 = (int)((**(code **)(*param_1 + 0x38))(pcVar1), 0);
     if ((iVar3 == 0) || (iVar3 == 1)) {
-      ((SCStr *)((SCStr *)&local_14))->op_ctor((SCStr *)(param_1[2] + (int)pcVar1 * 0x28 + 0x14));
+      ((SCStr *)((SCStr *)&local_14))->m_op_ctor((SCStr *)(param_1[2] + (int)pcVar1 * 0x28 + 0x14));
       *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
       thunk_FUN_110828b0();
       puVar7 = (undefined1 *)(&DAT_1186d2ee);
@@ -110575,7 +110575,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104d5ef0(SCStr *param_2,char *param_3,u
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(5);
         pSVar6 = (SwfStr *)((SwfStr *)(**(code **)(*piVar4 + 0x2c))((uint)&local_20,(uint)&local_18,param_4,local_1c), 0);
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(6);
-        ((SCStr *)(param_2))->op_ctor(pSVar6);
+        ((SCStr *)(param_2))->m_op_ctor(pSVar6);
         thunk_FUN_101ba300();
         thunk_FUN_101ba300();
         local_8 = (int)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(7)));
@@ -110588,7 +110588,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104d5ef0(SCStr *param_2,char *param_3,u
       ((SCStr *)((SCStr *)&local_14))->int_release();
       local_8 = (int)((uint)*(unsigned short *)((char *)&local_8 + 1) << 8);
     }
-    ((SCStr *)(param_2))->op_ctor((SCStr *)&param_3);
+    ((SCStr *)(param_2))->m_op_ctor((SCStr *)&param_3);
 
   }
 LAB_104d6062:
@@ -110607,7 +110607,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104d60f0(SCStr *param_2,uint param_3)
 {
   int param_1 = (int )this;
   if (param_3 < (uint)((*(int *)(param_1 + 0xc) - *(int *)(param_1 + 8)) / 0x28)) {
-    ((SCStr *)(param_2))->op_ctor((SCStr *)(param_3 * 0x28 + 0x24 + *(int *)(param_1 + 8)));
+    ((SCStr *)(param_2))->m_op_ctor((SCStr *)(param_3 * 0x28 + 0x24 + *(int *)(param_1 + 8)));
     return (SCStr *)(param_2);
   }
   ((SCStr *)(param_2))->int_allocRep("");
@@ -110622,7 +110622,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104d6160(SCStr *param_2,uint param_3)
 {
   int param_1 = (int )this;
   if (param_3 < (uint)((*(int *)(param_1 + 0xc) - *(int *)(param_1 + 8)) / 0x28)) {
-    ((SCStr *)(param_2))->op_ctor((SCStr *)(param_3 * 0x28 + 4 + *(int *)(param_1 + 8)));
+    ((SCStr *)(param_2))->m_op_ctor((SCStr *)(param_3 * 0x28 + 4 + *(int *)(param_1 + 8)));
     return (SCStr *)(param_2);
   }
   ((SCStr *)(param_2))->int_allocRep("");
@@ -110637,7 +110637,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104d62a0(SCStr *param_2,uint param_3)
 {
   int param_1 = (int )this;
   if (param_3 < (uint)((*(int *)(param_1 + 0xc) - *(int *)(param_1 + 8)) / 0x28)) {
-    ((SCStr *)(param_2))->op_ctor((SCStr *)(*(int *)(param_1 + 8) + param_3 * 0x28));
+    ((SCStr *)(param_2))->m_op_ctor((SCStr *)(*(int *)(param_1 + 8) + param_3 * 0x28));
     return (SCStr *)(param_2);
   }
   ((SCStr *)(param_2))->int_allocRep("");
@@ -111094,7 +111094,7 @@ int * __thiscall Recovered_Bulk::m_FUN_104d6ff0(SCStr *param_2)
   param_1[0xd] = (int)(0);
   param_1[0xe] = (int)(0);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(5);
-  ((SCStr *)((SCStr *)(param_1 + 0xf)))->op_ctor(param_2);
+  ((SCStr *)((SCStr *)(param_1 + 0xf)))->m_op_ctor(param_2);
   *(undefined2*)(param_1 + 0x10) = (undefined2)(0);
   param_1[0x11] = (int)(0);
   param_1[0x12] = (int)(0);
@@ -111709,7 +111709,7 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_104d83b0(undefined4 *param_2)
     piVar2 = (int *)((int *)0x0);
   }
   else {
-    piVar2 = (int *)((int *)((SCPropertyBag *)(local_14))->op_ctor((SCIObj *)0x0), 0);
+    piVar2 = (int *)((int *)((SCPropertyBag *)(local_14))->m_op_ctor((SCIObj *)0x0), 0);
   }
   piVar3 = (int *)((int *)0x0);
 
@@ -111823,7 +111823,7 @@ LAB_104d8623:
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
   if (local_55 == '\0') {
     thunk_FUN_11458fa0(*local_74);
-    ((SCStr *)((SCStr *)&local_5c))->op_ctor(local_68);
+    ((SCStr *)((SCStr *)&local_5c))->m_op_ctor(local_68);
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(7);
     ((SCStr *)((SCStr *)&local_5c))->append("BannerDismissed",0xf);
     puVar9 = (undefined1 *)(&DAT_1186d2ee);
@@ -112047,7 +112047,7 @@ SCStr * __thiscall Recovered_Bulk::m_FUN_104d8ba0(SCStr *param_2,int param_3)
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
     ((SCStr *)((uint)&local_18))->int_release();
     local_8 = (int)((uint)*(unsigned short *)((char *)&local_8 + 1) << 8);
-    ((SCStr *)(param_2))->op_ctor((SCStr *)&param_3);
+    ((SCStr *)(param_2))->m_op_ctor((SCStr *)&param_3);
 
     ((SCStr *)((SCStr *)&param_3))->int_release();
   }
@@ -112330,7 +112330,7 @@ LAB_104d949e:
   iVar2 = (int)(local_28);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x11);
   if (local_28 == 0) {
-    ((SCStr *)(param_1))->op_ctor((SCStr *)&DAT_121a07b0);
+    ((SCStr *)(param_1))->m_op_ctor((SCStr *)&DAT_121a07b0);
     *(undefined4*)(param_1 + 4) = (undefined4)(DAT_121a07b4);
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1c);
     ((SCStr *)((SCStr *)&local_14))->int_release();
@@ -112342,7 +112342,7 @@ LAB_104d949e:
 
   }
   else {
-    ((SCStr *)((SCStr *)&stack0xffffffa0))->op_ctor((SCStr *)&local_14);
+    ((SCStr *)((SCStr *)&stack0xffffffa0))->m_op_ctor((SCStr *)&local_14);
     thunk_FUN_1054ced0(&local_18,iVar2);
     *(undefined4*)param_1 = (undefined4)((SCStr *)(0));
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x17);
@@ -112693,7 +112693,7 @@ void __thiscall Recovered_Bulk::m_FUN_104d9e60(SCStr *param_2,undefined1 *param_
 
   uVar1 = (uint)(DAT_12126b84);
 
-  ((SCStr *)((SCStr * *)(&param_2)))->op_ctor(param_2);
+  ((SCStr *)((SCStr * *)(&param_2)))->m_op_ctor(param_2);
 
   ((SCStr *)((SCStr * *)(&param_2)))->append("BannerDismissed",0xf);
   if (*(unsigned char *)((char *)&param_3 + 0) == 0x0) {
@@ -113238,7 +113238,7 @@ undefined4 * __stdcall FUN_104dacf0(undefined4 *param_1)
     piVar2 = (int *)((int *)0x0);
   }
   else {
-    piVar2 = (int *)((int *)((SCPropertyBag *)(this_))->op_ctor((SCIObj *)0x0), 0);
+    piVar2 = (int *)((int *)((SCPropertyBag *)(this_))->m_op_ctor((SCIObj *)0x0), 0);
   }
 
   *param_1 = (undefined4)(piVar2);
@@ -117440,11 +117440,11 @@ undefined4 * __thiscall Recovered_Bulk::m_FUN_104e3250(SCStr *param_2,SCStr *par
   g_lSCObjCount = (int)(g_lSCObjCount + 1);
 
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCFavoriteItemInfo);
-  ((SCStr *)((SCStr *)(param_1 + 2)))->op_ctor(param_2);
+  ((SCStr *)((SCStr *)(param_1 + 2)))->m_op_ctor(param_2);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
-  ((SCStr *)((SCStr *)(param_1 + 3)))->op_ctor(param_3);
+  ((SCStr *)((SCStr *)(param_1 + 3)))->m_op_ctor(param_3);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
-  ((SCStr *)((SCStr *)(param_1 + 4)))->op_ctor(param_4);
+  ((SCStr *)((SCStr *)(param_1 + 4)))->m_op_ctor(param_4);
   *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(3);
   thunk_FUN_101ff410(param_5);
   local_8 = (undefined4)(((uint)(*(unsigned short *)((char *)&local_8 + 1)) << 8 | (uint)(4)));
@@ -120005,7 +120005,7 @@ void __thiscall Recovered_Bulk::m_FUN_104e7c00(undefined4 param_2,undefined4 par
     ((SCStr *)((SCStr *)&param_3))->int_allocRep(":onFavoritesChanged");
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(5);
     iStack_3c = (int)(param_1);
-    ((SCStr *)((SCStr *)&uStack_40))->op_ctor((SCStr *)&param_3);
+    ((SCStr *)((SCStr *)&uStack_40))->m_op_ctor((SCStr *)&param_3);
     thunk_FUN_103d65f0();
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(6);
     ((SCStr *)((SCStr *)&param_3))->int_release();
@@ -120041,7 +120041,7 @@ void __thiscall Recovered_Bulk::m_FUN_104e7c00(undefined4 param_2,undefined4 par
       ((SCStr *)((SCStr *)&param_3))->int_allocRep(":onFavoritesChanged");
 
       iStack_3c = (int)(param_1);
-      ((SCStr *)((SCStr *)&uStack_40))->op_ctor((SCStr *)&param_3);
+      ((SCStr *)((SCStr *)&uStack_40))->m_op_ctor((SCStr *)&param_3);
       thunk_FUN_103d65f0();
 
       ((SCStr *)((SCStr *)&param_3))->int_release();
@@ -120285,11 +120285,11 @@ void __thiscall Recovered_Bulk::m_FUN_104e8050(int param_2,char *param_3,char *p
       thunk_FUN_1124d770();
       *(unsigned char*)((char *)&local_144 + 0) = (unsigned char)(0x2e);
       thunk_FUN_1106b670(&local_1a8);
-      ((SCStr *)((SCStr *)&local_158))->op_ctor((SwfStr *)&local_9c);
+      ((SCStr *)((SCStr *)&local_158))->m_op_ctor((SwfStr *)&local_9c);
       *(unsigned char*)((char *)&local_144 + 0) = (unsigned char)(0x2f);
       thunk_FUN_104ec580(&local_a4,&local_140,&local_1a8);
       if (((char *)(local_138) != (char *)(0x0)) && (*local_138 != (char)(('\0')))) {
-        ((SCStr *)((SCStr *)&local_160))->op_ctor((SwfStr *)&local_138);
+        ((SCStr *)((SCStr *)&local_160))->m_op_ctor((SwfStr *)&local_138);
         *(unsigned char*)((char *)&local_144 + 0) = (unsigned char)(0x30);
         ((SCStr *)((SCStr *)&local_158))->int_release();
         local_158 = (undefined4)(local_160);
@@ -120320,11 +120320,11 @@ void __thiscall Recovered_Bulk::m_FUN_104e8050(int param_2,char *param_3,char *p
         g_lSCObjCount = (int)(g_lSCObjCount + 1);
 
         *piVar5 = (int)((int)(uint)&ghidra_vftable_SCFavoriteItemInfo);
-        ((SCStr *)((SCStr *)(piVar5 + 2)))->op_ctor((SCStr *)&local_164);
+        ((SCStr *)((SCStr *)(piVar5 + 2)))->m_op_ctor((SCStr *)&local_164);
         *(unsigned char*)((char *)&local_144 + 0) = (unsigned char)(0x37);
-        ((SCStr *)((SCStr *)(piVar5 + 3)))->op_ctor((SCStr *)&local_168);
+        ((SCStr *)((SCStr *)(piVar5 + 3)))->m_op_ctor((SCStr *)&local_168);
         *(unsigned char*)((char *)&local_144 + 0) = (unsigned char)(0x38);
-        ((SCStr *)((SCStr *)(piVar5 + 4)))->op_ctor((SCStr *)&local_16c);
+        ((SCStr *)((SCStr *)(piVar5 + 4)))->m_op_ctor((SCStr *)&local_16c);
         piVar13 = (int *)(piVar5 + 5);
         *(unsigned char*)((char *)&local_144 + 0) = (unsigned char)(0x39);
         *piVar13 = (int)(local_a4);
@@ -120789,9 +120789,9 @@ void __thiscall Recovered_Bulk::m_FUN_104e8050(int param_2,char *param_3,char *p
           piVar11 = (int *)(local_154);
         }
       }
-      ((SCStr *)((SCStr *)&local_178))->op_ctor((SwfStr *)&local_134);
+      ((SCStr *)((SCStr *)&local_178))->m_op_ctor((SwfStr *)&local_134);
       *(unsigned char*)((char *)&local_144 + 0) = (unsigned char)(0x79);
-      ((SCStr *)((SCStr *)&local_174))->op_ctor((SwfStr *)&local_130);
+      ((SCStr *)((SCStr *)&local_174))->m_op_ctor((SwfStr *)&local_130);
       *(unsigned char*)((char *)&local_144 + 0) = (unsigned char)(0x7a);
       FUN_104ed2c0(&local_17c,&local_174,&local_178);
       *(unsigned char*)((char *)&local_144 + 0) = (unsigned char)(0x7d);
@@ -121246,9 +121246,9 @@ void __thiscall Recovered_Bulk::m_FUN_104ea5f0(int *param_2,undefined4 *param_3)
           (**(code **)(*piVar12 + 4))(uVar5);
         }
 
-        ((SCStr *)((SCStr *)&local_24))->op_ctor((SwfStr *)(iVar9 + 0xbc));
+        ((SCStr *)((SCStr *)&local_24))->m_op_ctor((SwfStr *)(iVar9 + 0xbc));
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(1);
-        ((SCStr *)((SCStr *)&local_20))->op_ctor((SwfStr *)(iVar9 + 0xc0));
+        ((SCStr *)((SCStr *)&local_20))->m_op_ctor((SwfStr *)(iVar9 + 0xc0));
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(2);
         FUN_104ed2c0(&local_30,&local_20,&local_24);
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(5);
@@ -121288,7 +121288,7 @@ void __thiscall Recovered_Bulk::m_FUN_104ea5f0(int *param_2,undefined4 *param_3)
                (bVar3 = (bool)(((SCStr *)((SCStr *)(iVar9 + 0x10)))->op_eq((SCStr *)(iVar8 + 0x10)), 0), !bVar3)) )))) || (cVar4 = (char)(thunk_FUN_1106df60(iVar8 + 0x14), 0), cVar4 == '\0')) ||
            ((cVar4 = (char)(thunk_FUN_1106df60(iVar8 + 0xb0), 0), cVar4 == '\0' ||
             (*(int *)((iVar9 + 0x14c)) != *(int *)((iVar8 + 0x14c)))))) {
-          ((SCStr *)((SCStr *)&local_2c))->op_ctor((SwfStr *)(iVar9 + 0xbc));
+          ((SCStr *)((SCStr *)&local_2c))->m_op_ctor((SwfStr *)(iVar9 + 0xbc));
           *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(10);
           (**(code **)(*param_2 + 0x24))(&local_2c);
           *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xb);
@@ -121324,9 +121324,9 @@ void __thiscall Recovered_Bulk::m_FUN_104ea5f0(int *param_2,undefined4 *param_3)
           (**(code **)(*piVar2 + 4))();
         }
 
-        ((SCStr *)((SCStr *)&local_38))->op_ctor((SwfStr *)(local_40 + 0xbc));
+        ((SCStr *)((SCStr *)&local_38))->m_op_ctor((SwfStr *)(local_40 + 0xbc));
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0xf);
-        ((SCStr *)((SCStr *)&local_34))->op_ctor((SwfStr *)(local_40 + 0xc0));
+        ((SCStr *)((SCStr *)&local_34))->m_op_ctor((SwfStr *)(local_40 + 0xc0));
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x10);
         FUN_104ed2c0(&local_48,&local_34,&local_38);
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x13);
@@ -121361,7 +121361,7 @@ void __thiscall Recovered_Bulk::m_FUN_104ea5f0(int *param_2,undefined4 *param_3)
         }
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x14);
         if ((uint)(local_4c) == *(uint *)(local_1c + 0x16c)) {
-          ((SCStr *)((SCStr *)&local_44))->op_ctor((SwfStr *)(local_40 + 0xbc));
+          ((SCStr *)((SCStr *)&local_44))->m_op_ctor((SwfStr *)(local_40 + 0xbc));
           *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x18);
           (**(code **)(*param_2 + 0x24))(&local_44);
           *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x19);
@@ -121613,7 +121613,7 @@ void __stdcall FUN_104eb040(int *param_1)
       (**(code **)(*param_1 + 0x1c))(&local_54c,uVar8);
       *(unsigned char*)((char *)&local_53c + 0) = (unsigned char)(1);
       *(unsigned short*)((char *)&local_53c + 1) = (unsigned short)(0);
-      local_570 = (undefined4)(((SCStr *)((SCStr *)&local_548))->op_ctor((SCStr *)&local_54c), 0);
+      local_570 = (undefined4)(((SCStr *)((SCStr *)&local_548))->m_op_ctor((SCStr *)&local_54c), 0);
       local_564 = (uint)(uVar7 | 1);
       puVar6 = (undefined1 *)(&DAT_1186d2ee);
       if ((undefined1 *)(local_54c) != (undefined1 *)(0x0)) {
@@ -121879,7 +121879,7 @@ void __fastcall FUN_104eb3b0(int param_1)
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1f);
         ((SCStr *)((SCStr *)&local_14))->int_allocRep("UnknownID_Count");
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x20);
-        ((SCStr *)((SCStr *)&local_18))->op_ctor((SwfStr *)(iVar9 + 0xc0));
+        ((SCStr *)((SCStr *)&local_18))->m_op_ctor((SwfStr *)(iVar9 + 0xc0));
         *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x21);
         bVar2 = (bool)(((SCStr *)((SCStr *)&local_18))->op_eq("RINCON_AssociatedZPUDN"), 0);
         if (bVar2) {
@@ -122019,7 +122019,7 @@ void __fastcall FUN_104eb3b0(int param_1)
   local_38 = (int *)((int *)0x0);
   while ((undefined4 *)((puVar12)) != (undefined4 *)(puVar6)) {
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x1e);
-    ((SCStr *)((SCStr *)&local_28))->op_ctor((SwfStr *)(puVar12 + 2));
+    ((SCStr *)((SCStr *)&local_28))->m_op_ctor((SwfStr *)(puVar12 + 2));
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x34);
     (**(code **)(*piVar1 + 0x28))(&local_28,puVar12[3]);
     *(unsigned char*)((char *)&local_8 + 0) = (unsigned char)(0x35);
@@ -122909,7 +122909,7 @@ void FUN_104ed3b0(SCStr *param_1,SCStr *param_2)
 
   pSVar6 = (SCStr *)(param_1);
   local_8 = (uint)(uVar2);
-  ((SCStr *)(param_1))->op_ctor(param_2);
+  ((SCStr *)(param_1))->m_op_ctor(param_2);
 
   uVar7 = (undefined4)(1);
   puVar5 = (undefined1 *)(&DAT_1186d2ee);
@@ -123905,15 +123905,15 @@ basic_ostream<char,std::char_traits<char>> * __thiscall Recovered_Bulk::m_FUN_10
 
   if (param_2 != 0) {
     *(undefined**)param_1 = (undefined *)((basic_ostream<char,std::char_traits<char>> *)(&DAT_118abd74));
-    ((std::basic_ios<> *)((basic_ios<char,std::char_traits<char>> *)(param_1 + 0x50)))->op_ctor();
+    ((std::basic_ios<> *)((basic_ios<char,std::char_traits<char>> *)(param_1 + 0x50)))->m_op_ctor();
 
   }
   this_ = (basic_streambuf<char,std::char_traits<char>> *)((basic_streambuf<char,std::char_traits<char>> *)(param_1 + 4));
-  ((std::basic_ostream<> *)(param_1))->op_ctor(this_,false);
+  ((std::basic_ostream<> *)(param_1))->m_op_ctor(this_,false);
 
   *(undefined***)(param_1 + *(int *)(*(int *)param_1 + 4)) = (undefined **)((uint)&ghidra_vftable_std_basic_ostringstream);
   *(int*)(param_1 + *(int *)(*(int *)param_1 + 4) + -4) = (int)(*(int *)(*(int *)param_1 + 4) + -0x50);
-  ((std::basic_streambuf<> *)(this_))->op_ctor();
+  ((std::basic_streambuf<> *)(this_))->m_op_ctor();
   *(undefined***)this_ = (undefined **)((basic_streambuf<char,std::char_traits<char>> *)((uint)&ghidra_vftable_std_basic_stringbuf));
   *(undefined4*)(param_1 + 0x3c) = (undefined4)(0);
   *(undefined4*)(param_1 + 0x40) = (undefined4)(4);
@@ -124011,7 +124011,7 @@ void __fastcall FUN_104eeff0(basic_streambuf<char,std::char_traits<char>> *param
   *(undefined4*)(param_1 + 0x38) = (undefined4)(0);
                     
                     
-  ((std::basic_streambuf<> *)(param_1))->op_dtor();
+  ((std::basic_streambuf<> *)(param_1))->m_op_dtor();
   return;
 }
 
@@ -124085,8 +124085,8 @@ basic_ios<char,std::char_traits<char>> * __thiscall Recovered_Bulk::m_FUN_104ef2
   *(undefined***)(param_1 + *(int *)(*(int *)(param_1 + -0x50) + 4) + -0x50) = (undefined **)((uint)&ghidra_vftable_std_basic_ostringstream);
   *(int*)(param_1 + *(int *)(*(int *)pbVar1 + 4) + -0x54) = (int)(*(int *)(*(int *)pbVar1 + 4) + -0x50);
   thunk_FUN_104eeff0();
-  ((std::basic_ostream<> *)((basic_ostream<char,std::char_traits<char>> *)(param_1 + -0x48)))->op_dtor();
-  ((std::basic_ios<> *)(param_1))->op_dtor();
+  ((std::basic_ostream<> *)((basic_ostream<char,std::char_traits<char>> *)(param_1 + -0x48)))->m_op_dtor();
+  ((std::basic_ios<> *)(param_1))->m_op_dtor();
   if ((param_2 & 1) != 0) {
     thunk_FUN_1148a50e(pbVar1,0x98);
   }

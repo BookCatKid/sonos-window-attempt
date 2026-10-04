@@ -672,6 +672,15 @@ def transform(source, entry, stubs, externs, member_stubs, type_stubs,
                         out.append(body[start:name_end])
                 pos = tail
     result_body = re.sub(r'&\s*(LAB_\w+)', r'\1', ''.join(out))
+    # Arrow-called ctors/dtors compile as thiscall member invocations; the
+    # ``op_ctor``/``op_dtor`` names stay reserved for the static stubs that
+    # ``&X::op_*`` address-of uses need, so call sites use the ``m_op_*``
+    # names declared as non-static member templates via __fcall__.
+    if '->op_ctor(' in result_body or '->op_dtor(' in result_body:
+        result_body = (result_body.replace('->op_ctor(', '->m_op_ctor(')
+                       .replace('->op_dtor(', '->m_op_dtor('))
+        member_stubs.setdefault('__fcall__', set()).update(
+            ('m_op_ctor', 'm_op_dtor'))
     head = _pcode(head)
     for match in re.finditer(r'\bstd::(\w+)\s*<', head + result_body):
         type_stubs.add(('nstemplate', 'std::' + match.group(1)))
@@ -2169,10 +2178,13 @@ def cpp_source(records, defined, bad_decls=()):
             for f in sorted(scalar_fields)
             if f.isidentifier()) + '};')
     def field_decls_for(owner):
+        # ``x->f(...)`` calls need thiscall codegen (object pointer in ecx);
+        # a non-static member template instantiates fixed-arity thiscall
+        # members, while ``static`` would drop the object entirely.
         return (''.join(f' static int {f};' for f in sorted(fields)
                         if f.isidentifier() and f != owner
                         and f not in {'operator', 'new', 'delete'}) +
-                ''.join(f' template<class... A> static int {f}(A...);'
+                ''.join(f' template<class... A> int {f}(A...);'
                         for f in sorted(fcalls)
                         if f.isidentifier() and f != owner
                         and f not in {'operator', 'new', 'delete'}))
@@ -2232,9 +2244,16 @@ def cpp_source(records, defined, bad_decls=()):
             elif not (method.isidentifier() and method != owner):
                 continue
             elif method.startswith('op_'):
+                # ctor/dtor stubs are taken as plain function pointers for
+                # _eh_vector_*_iterator_ calls; member pointers would not cast.
                 inner += f' static int {method}(...) {{ return 0; }}'
+            elif method in fcalls:
+                # Already declared non-static by field_decls_for.
+                continue
             else:
-                inner += (f' template<class... A> static int '
+                # Non-static member template: instantiates as fixed-arity
+                # thiscall so ``x->f(...)`` emits ``mov ecx,this; push args``.
+                inner += (f' template<class... A> int '
                           f'{method}(A...) {{ return 0; }}')
         inner += ''.join(
             (f' typedef int {leaf};' if leaf in arg_tokens
@@ -2340,9 +2359,10 @@ def cpp_source(records, defined, bad_decls=()):
         elif kind == 'nstemplate':
             # ``std::X`` member calls (e.g. ``->op_inc()``) were collected
             # into member_methods before the std tree node was popped above.
-            extra = ''.join(f' static int {m}(...);' for m in
-                            sorted(member_methods.get(name, ()))
-                            if m.isidentifier())
+            extra = ''.join(f' static int {m}(...);' if m.startswith('op_')
+                            else f' template<class... A> int {m}(A...);'
+                            for m in sorted(member_methods.get(name, ()))
+                            if m.isidentifier() and m not in fcalls)
             decls.append(f'namespace std {{ template<class...> struct {leaf_name} '
                          f'{{ char _pad; {leaf_name}(...);{ops}'
                          f'{extra}{field_decls_for(leaf_name)} }}; }}')
@@ -2359,9 +2379,10 @@ def cpp_source(records, defined, bad_decls=()):
         prefix = ('template<class...> '
                   if ('template', stub) in type_stubs else '')
         decls.append(f'{prefix}struct {stub} {{ {stub}(...);{ops}' + ''.join(
-            f' static int {method}(...);'
+            (f' static int {method}(...);' if method.startswith('op_')
+             else f' template<class... A> int {method}(A...);')
             for method in sorted(methods)
-            if method != stub) + ' };')
+            if method != stub and method not in fcalls) + ' };')
     decls.append('using namespace std;')
     decl_lines = [line for line in decls + extern_decls + forward
                   if line not in bad_decls]
