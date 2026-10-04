@@ -2251,10 +2251,10 @@ def cpp_source(records, defined, bad_decls=()):
                 # Already declared non-static by field_decls_for.
                 continue
             else:
-                # Non-static member template: instantiates as fixed-arity
-                # thiscall so ``x->f(...)`` emits ``mov ecx,this; push args``.
-                inner += (f' template<class... A> int '
-                          f'{method}(A...) {{ return 0; }}')
+                # Declaration-only non-static member template: instantiates
+                # as fixed-arity thiscall (``mov ecx,this; push args``) and
+                # cannot be inlined/elided the way a { return 0; } body can.
+                inner += f' template<class... A> int {method}(A...);'
         inner += ''.join(
             (f' typedef int {leaf};' if leaf in arg_tokens
              else f' static int {leaf};')
