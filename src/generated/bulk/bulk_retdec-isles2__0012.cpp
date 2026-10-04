@@ -4720,14 +4720,14 @@ int FUN_100e61df(void);
 template<class... A> int FUN_100e61df(A...);
 int FUN_10129690(int result, int a2, int a3);
 template<class... A> int FUN_10129690(A...);
-int FUN_1015bc2b(void);
-template<class... A> int FUN_1015bc2b(A...);
+int FUN_1015bc2c(void);
+template<class... A> int FUN_1015bc2c(A...);
 int FUN_101b4e45(void);
 template<class... A> int FUN_101b4e45(A...);
 int FUN_101b4f71(void);
 template<class... A> int FUN_101b4f71(A...);
-int FUN_101b67bf(void);
-template<class... A> int FUN_101b67bf(A...);
+int FUN_101b67c0(void);
+template<class... A> int FUN_101b67c0(A...);
 int FUN_101c1a15(int a1);
 template<class... A> int FUN_101c1a15(A...);
 int __stdcall FUN_101cc640(int a1);
@@ -4752,8 +4752,8 @@ int FUN_10207bc7(void);
 template<class... A> int FUN_10207bc7(A...);
 int FUN_10207c40(void);
 template<class... A> int FUN_10207c40(A...);
-int FUN_1020be23(int a1);
-template<class... A> int FUN_1020be23(A...);
+int FUN_1020be24(int a1);
+template<class... A> int FUN_1020be24(A...);
 int FUN_10210765(void);
 template<class... A> int FUN_10210765(A...);
 int FUN_10210880(void);
@@ -4762,8 +4762,8 @@ int FUN_10210e9d(void);
 template<class... A> int FUN_10210e9d(A...);
 int FUN_102179f8(void);
 template<class... A> int FUN_102179f8(A...);
-int FUN_10217aa3(void);
-template<class... A> int FUN_10217aa3(A...);
+int FUN_10217aa4(void);
+template<class... A> int FUN_10217aa4(A...);
 int FUN_10219450(int a1, int a2, int a3);
 template<class... A> int FUN_10219450(A...);
 int FUN_1021aa2c(int a1, int a2, int a3, int a4);
@@ -5444,16 +5444,16 @@ int FUN_100e6160(void) {
     return (int)(_atexit((int)&FUN_118626d0));
 }
 
-// Reference entry 1015bc2b; body size 15 bytes.
-#line 1 "ENTRY_1015bc2b"
-int FUN_1015bc2b(void) {
+// Reference entry 1015bc2c; body size 14 bytes.
+#line 1 "ENTRY_1015bc2c"
+int FUN_1015bc2c(void) {
 
-    int result; // (int)((int(*)(void))&FUN_1015bc2b<>)
+    int result; // (int)((int(*)(void))&FUN_1015bc2c<>)
 char *v1 = (char *)((char)((char *)(result + 0x15bc0710 + result))); // (int)&FUN_1015bc2c
     unsigned char v2 = (unsigned char)(*v1); // (int)&FUN_1015bc2c
     unsigned char v3 = (unsigned char)(v2 + (char)(result / 256)); // (int)&FUN_1015bc2c
     *v1 = (char)(v3);
-    int v4; // (int)((int(*)(void))&FUN_1015bc2b<>)
+    int v4; // (int)((int(*)(void))&FUN_1015bc2c<>)
     char v5 = (char)(*(char *)&v4); // (int)&FUN_1015bc33
     *(char*)v4 = (char)((int)(v5 + (char)result + (char)(v3 < v2)));
     return (int)(result);
@@ -5482,13 +5482,13 @@ int FUN_101b4f71(void) {
     return (int)((v1 | 0x21101b4f) ^ 0x49101b4f);
 }
 
-// Reference entry 101b67bf; body size 21 bytes.
-#line 1 "ENTRY_101b67bf"
-int FUN_101b67bf(void) {
+// Reference entry 101b67c0; body size 20 bytes.
+#line 1 "ENTRY_101b67c0"
+int FUN_101b67c0(void) {
 
-    int result; // (int)((int(*)(void))&FUN_101b67bf<>)
+    int result; // (int)((int(*)(void))&FUN_101b67c0<>)
     int v1 = (int)(result);
-    bool v2; // (int)((int(*)(void))&FUN_101b67bf<>)
+    bool v2; // (int)((int(*)(void))&FUN_101b67c0<>)
     if (!v2) {
         return (int)(result);
     }
@@ -5750,17 +5750,17 @@ char *v22 = (char *)((char)((char *)result)); // (int)&FUN_10207c52
     return (int)(result);
 }
 
-// Reference entry 1020be23; body size 29 bytes.
-#line 1 "ENTRY_1020be23"
-int FUN_1020be23(int a1) {
+// Reference entry 1020be24; body size 28 bytes.
+#line 1 "ENTRY_1020be24"
+int FUN_1020be24(int a1) {
 
-    int v1; // (int)((int(*)(int a1))&FUN_1020be23<>)
+    int v1; // (int)((int(*)(int a1))&FUN_1020be24<>)
     int v2 = (int)(v1);
     int v3 = (int)(a1);
     *(char*)v2 = (char)((int)((char)(v2 & v1)));
 int *v4 = (int *)((int)((int *)(v1 - 0x41feefe1))); // (int)&FUN_1020be2c
     *v4 = (int)(*v4 + v1);
-    int v5; // (int)((int(*)(int a1))&FUN_1020be23<>)
+    int v5; // (int)((int(*)(int a1))&FUN_1020be24<>)
     *(char*)v5 = (char)((int)(*(char *)&v5 & (char)v1));
     int v6 = (int)(&v3); // (int)&FUN_1020be34
     v5 = (int)(v6);
@@ -5852,11 +5852,11 @@ char *v22 = (char *)((char)((char *)(result + 33 + 2 * v7))); // (int)&FUN_10217
     return (int)(result);
 }
 
-// Reference entry 10217aa3; body size 28 bytes.
-#line 1 "ENTRY_10217aa3"
-int FUN_10217aa3(void) {
+// Reference entry 10217aa4; body size 27 bytes.
+#line 1 "ENTRY_10217aa4"
+int FUN_10217aa4(void) {
 
-    int result; // (int)((int(*)(void))&FUN_10217aa3<>)
+    int result; // (int)((int(*)(void))&FUN_10217aa4<>)
 char *v1 = (char *)((char)((char *)(result - 0x6eefde86))); // (int)&FUN_10217aa7
     char v2 = (char)(*v1); // (int)&FUN_10217aa7
     unsigned char v3 = (unsigned char)((char)result); // (int)&FUN_10217aa7

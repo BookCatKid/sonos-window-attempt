@@ -1844,8 +1844,8 @@ int __stdcall FUN_104d7b80(unsigned int recovered_unused_stack_0, unsigned int r
 template<class... A> int FUN_104d7b80(A...);
 int __stdcall FUN_104d8940(int a1);
 template<class... A> int FUN_104d8940(A...);
-int FUN_1050da5b(void);
-template<class... A> int FUN_1050da5b(A...);
+int FUN_1050da5c(void);
+template<class... A> int FUN_1050da5c(A...);
 int FUN_10596cf0(int result);
 template<class... A> int FUN_10596cf0(A...);
 int __stdcall FUN_105b04b0(int a1);
@@ -8979,14 +8979,14 @@ int __stdcall FUN_104d8940(int a1) {
     return (int)(v1 != 7);
 }
 
-// Reference entry 1050da5b; body size 13 bytes.
-#line 1 "ENTRY_1050da5b"
-int FUN_1050da5b(void) {
+// Reference entry 1050da5c; body size 12 bytes.
+#line 1 "ENTRY_1050da5c"
+int FUN_1050da5c(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_1050da5b<>)
+    int v1; // (int)((int(*)(void))&FUN_1050da5c<>)
     int v2 = (int)(v1);
-    int result; // (int)((int(*)(void))&FUN_1050da5b<>)
-    bool v3; // (int)((int(*)(void))&FUN_1050da5b<>)
+    int result; // (int)((int(*)(void))&FUN_1050da5c<>)
+    bool v3; // (int)((int(*)(void))&FUN_1050da5c<>)
     if (v1 != 1 == v3) {
         result = (int)(FUN_1050da22(), 0);
     }

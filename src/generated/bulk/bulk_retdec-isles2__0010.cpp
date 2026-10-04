@@ -2070,8 +2070,8 @@ int FUN_100acd30(void);
 template<class... A> int FUN_100acd30(A...);
 int FUN_100acd40(void);
 template<class... A> int FUN_100acd40(A...);
-int FUN_100acd88(int a1);
-template<class... A> int FUN_100acd88(A...);
+int FUN_100acd89(int a1);
+template<class... A> int FUN_100acd89(A...);
 int FUN_100ad08d(void);
 template<class... A> int FUN_100ad08d(A...);
 int FUN_100ad12c(void);
@@ -4734,13 +4734,13 @@ int FUN_100acd23(int a1) {
     return (int)(_atexit(a1));
 }
 
-// Reference entry 100acd88; body size 16 bytes.
-#line 1 "ENTRY_100acd88"
-int FUN_100acd88(int a1) {
+// Reference entry 100acd89; body size 15 bytes.
+#line 1 "ENTRY_100acd89"
+int FUN_100acd89(int a1) {
 
-    int v1; // (int)((int(*)(int a1))&FUN_100acd88<>)
+    int v1; // (int)((int(*)(int a1))&FUN_100acd89<>)
     int v2 = (int)(v1);
-    bool v3; // (int)((int(*)(int a1))&FUN_100acd88<>)
+    bool v3; // (int)((int(*)(int a1))&FUN_100acd89<>)
     *(int*)v2 = (int)((int)(2 * v2 | (int)v3));
     *(short *)&DAT_121190d4 = (short)v1;
     return (int)(_atexit());

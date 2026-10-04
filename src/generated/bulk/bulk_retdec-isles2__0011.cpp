@@ -3727,8 +3727,8 @@ int FUN_100ca770(void);
 template<class... A> int FUN_100ca770(A...);
 int FUN_100ca7a0(void);
 template<class... A> int FUN_100ca7a0(A...);
-int FUN_100ca80b(void);
-template<class... A> int FUN_100ca80b(A...);
+int FUN_100ca80d(void);
+template<class... A> int FUN_100ca80d(A...);
 int FUN_100ca9b2(void);
 template<class... A> int FUN_100ca9b2(A...);
 int FUN_100caa58(void);
@@ -5010,24 +5010,24 @@ int FUN_100ca332(void) {
     return (int)(result);
 }
 
-// Reference entry 100ca80b; body size 421 bytes.
-#line 1 "ENTRY_100ca80b"
-int FUN_100ca80b(void) {
+// Reference entry 100ca80d; body size 419 bytes.
+#line 1 "ENTRY_100ca80d"
+int FUN_100ca80d(void) {
 
-    int v1; // (int)((int(*)(void))&FUN_100ca80b<>)
+    int v1; // (int)((int(*)(void))&FUN_100ca80d<>)
 int *v2 = (int *)((int)((int *)(v1 + 0x28e8004d))); // (int)&FUN_100ca80d
     int v3 = (int)(*v2);
-    bool v4; // (int)((int(*)(void))&FUN_100ca80b<>)
+    bool v4; // (int)((int(*)(void))&FUN_100ca80d<>)
     int v5 = (int)(v4); // (int)&FUN_100ca80d
     int v6 = (int)(v3 + v1); // (int)&FUN_100ca80d
     int v7 = (int)(v6 + v5); // (int)&FUN_100ca80d
     int v8 = (int)(v7 + v5); // (int)&FUN_100ca80d
     *v2 = (int)(v7);
-    int v9; // (int)((int(*)(void))&FUN_100ca80b<>)
+    int v9; // (int)((int(*)(void))&FUN_100ca80d<>)
     if (v7 < 0 == ((v8 ^ v3) & (v8 ^ v1)) < 0 == (v7 != 0)) {
         uint v10 = (uint)(v3);
         int v11 = (int)(v7);
-        bool v12; // (int)((int(*)(void))&FUN_100ca80b<>)
+        bool v12; // (int)((int(*)(void))&FUN_100ca80d<>)
         bool v13 = (bool)(v12 ? v11 <= v10 : v6 < v10); // (int)&FUN_100ca80d
         int v14 = (int)(v13); // (int)&FUN_100ca80d
         int v15 = (int)(v11 + v9); // (int)&FUN_100ca80d
