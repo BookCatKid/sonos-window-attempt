@@ -10606,7 +10606,7 @@ int FUN_11469357(uint a1) {
 
     int result; // (int)((int(*)(uint a1))&FUN_11469357)
     if (a1 == 254 == (uint)result > a1) {
-        return (int)(((code *)LAB_11469332)());
+        return (int)(((code *)&LAB_11469332)());
     }
     return (int)(result);
 }

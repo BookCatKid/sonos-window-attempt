@@ -6042,7 +6042,7 @@ int FUN_115e5523(void) {
     int result; // (int)((int(*)(void))&FUN_115e5523)
     int v1; // (int)((int(*)(void))&FUN_115e5523)
     if (v1 == 0) {
-        result = (int)(((code *)LAB_115e5508)(), 0);
+        result = (int)(((code *)&LAB_115e5508)(), 0);
     }
     return (int)(result);
 }
