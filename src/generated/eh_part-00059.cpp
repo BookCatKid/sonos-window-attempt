@@ -34,7 +34,7 @@ extern int memcpy(...);
 extern undefined4 thunk_FUN_110828b0(...);
 extern int thunk_FUN_11193540(...);
 extern int thunk_FUN_111a32a0(...);
-extern int thunk_FUN_111a4430(...);
+template<class... A> int __stdcall thunk_FUN_111a4430(A...);
 extern int thunk_FUN_1123fcd0(...);
 extern int thunk_FUN_113cfb70(...);
 extern int thunk_FUN_1148b586(...);

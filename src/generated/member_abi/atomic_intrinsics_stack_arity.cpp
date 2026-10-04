@@ -100,7 +100,7 @@ short _InterlockedExchangeAdd16(volatile short *, short);
 #pragma intrinsic(_InterlockedExchange8, _InterlockedExchange16, _InterlockedExchangeAdd8, _InterlockedExchangeAdd16)
 
 extern int __fastcall abi_call_thunk_FUN_10c7d430(int *);
-extern int thunk_FUN_112f2220(...);
+template<class... A> int __stdcall thunk_FUN_112f2220(A...);
 struct Recovered_101cca50 { undefined4 * FUN_101cca50(undefined4 *param_2); };
 struct Recovered_101cdb40 { void FUN_101cdb40(undefined4 *param_2); };
 struct Recovered_101ce840 { void FUN_101ce840(undefined4 *param_2); };

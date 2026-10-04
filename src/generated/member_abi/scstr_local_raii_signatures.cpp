@@ -140,7 +140,7 @@ struct RecoveredString_FUN_1008c50b_10f0bdc0 { void *rep; __forceinline Recovere
 extern undefined4 * __cdecl abi_call_thunk_FUN_106986a0(undefined4 *, SCStr *);
 extern int thunk_FUN_103869d0(...);
 extern int thunk_FUN_10557e50(...);
-extern int thunk_FUN_10558310(...);
+template<class... A> int __stdcall thunk_FUN_10558310(A...);
 extern int thunk_FUN_107bce80(...);
 extern int thunk_FUN_10c5fc80(...);
 extern int thunk_FUN_10c62330(...);

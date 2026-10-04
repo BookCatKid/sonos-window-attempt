@@ -13,6 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'tools'))
 
+import compile_scstr_cpp
 from compile_scstr_cpp import (reference_arity, reference_narrow_returns,
                                reference_stdcall)
 
@@ -228,8 +229,60 @@ def sync_funref_casts(source):
     return FUNREF_CAST.sub(replace, source), changed
 
 
+VARIADIC_EXTERN = re.compile(
+    r'(?m)^extern int ((?:thunk_)?FUN_[0-9a-f]{8})\(\.\.\.\);$')
+CALL_ARGS = re.compile(r'(?<![\w])((?:thunk_)?FUN_[0-9a-f]{8})\s*\(')
+
+
+def variadic_thunk_stdcall(source):
+    """Type ``extern int thunk_FUN_x(...)`` as ``__stdcall`` when proven.
+
+    A variadic extern makes MSVC emit caller-side ``add esp, N`` cleanup
+    after each call. When the callee's reference body ends in a uniform
+    ``ret N`` it cleans its own stack, so the decl must be a typed
+    ``__stdcall`` with the proven argument count — matching the reference
+    codegen exactly. The rewrite is skipped when any same-unit call site
+    passes a different argument count than the body proves.
+    """
+    try:
+        from capstone import Cs, CS_ARCH_X86, CS_MODE_32
+        from classify_functions import function_bytes
+        disassembler = Cs(CS_ARCH_X86, CS_MODE_32)
+        disassembler.detail = True
+        data, base, sections = compile_scstr_cpp._reference()
+    except Exception:
+        return source, 0
+    externs = list(VARIADIC_EXTERN.finditer(source))
+    if not externs:
+        return source, 0
+    import json
+    ilt_path = ROOT / 'analysis' / 'ilt-map.json'
+    ilt = (json.loads(ilt_path.read_text())
+           if ilt_path.exists() else {})
+    edits = []
+    for extern in externs:
+        name = extern.group(1)
+        entry = int(name.rsplit('_', 1)[1], 16)
+        if name.startswith('thunk_'):
+            target = ilt.get(hex(entry))
+            if target:
+                entry = int(target, 16)
+        code = function_bytes(data, entry, 512, base, sections)
+        pops = [int(i.operands[0].imm) if i.operands else 0
+                for i in disassembler.disasm(code, 0) if i.mnemonic == 'ret']
+        if len(set(pops)) != 1 or not pops[0] or pops[0] % 4:
+            continue
+        if pops[0] // 4 > 32:
+            continue
+        edits.append((extern.start(), extern.end(),
+                      f'template<class... A> int __stdcall {name}(A...);'))
+    for start, end, text in reversed(edits):
+        source = source[:start] + text + source[end:]
+    return source, len(edits)
+
+
 def main():
-    total_stdcall = total_arity = total_decls = total_thiscall = total_narrow = total_casts = files = 0
+    total_stdcall = total_arity = total_decls = total_thiscall = total_narrow = total_casts = total_thunk = files = 0
     for path in sorted((ROOT / 'src/generated').rglob('*.cpp')):
         source = path.read_text()
         source, n_thiscall = lower_free_thiscall(source)
@@ -238,8 +291,9 @@ def main():
         source, n_narrow = reference_narrow_returns(source)
         source, n_decls = sync_forward_decls(source)
         source, n_casts = sync_funref_casts(source)
+        source, n_thunk = variadic_thunk_stdcall(source)
         if (n_stdcall or n_arity or n_decls or n_thiscall or n_narrow
-                or n_casts):
+                or n_casts or n_thunk):
             path.write_text(source)
             files += 1
             total_stdcall += n_stdcall
@@ -248,9 +302,11 @@ def main():
             total_thiscall += n_thiscall
             total_narrow += n_narrow
             total_casts += n_casts
+            total_thunk += n_thunk
     print(f'__stdcall: {total_stdcall}, arity: {total_arity}, '
           f'decls synced: {total_decls}, thiscall->fastcall: {total_thiscall}, '
-          f'narrowed returns: {total_narrow}, files changed: {files}')
+          f'narrowed returns: {total_narrow}, thunk-stdcall: {total_thunk}, '
+          f'files changed: {files}')
 
 
 if __name__ == '__main__':

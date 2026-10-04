@@ -148,9 +148,9 @@ struct NativeDelayedEvent_FUN_10dfda60 : Event_thunk_FUN_10def0d0 { NativeDelaye
 struct NativeDelayedCallback { void thunk_FUN_10ebb8e0(const char *, int); void thunk_FUN_10ebbab0(int); void thunk_FUN_10ebb850(int); NativeDelayedResult *thunk_FUN_10eb41b0(); void FUN_10644850(NativeDelayedDispatcher *); void FUN_10767520(NativeDelayedDispatcher *); void FUN_107675b0(NativeDelayedDispatcher *); void FUN_1076bef0(NativeDelayedDispatcher *); void FUN_10783270(NativeDelayedDispatcher *); bool FUN_107f7160(); void FUN_107fef90(NativeDelayedDispatcher * volatile); void FUN_107ff6d0(NativeDelayedDispatcher *); bool FUN_1080bd40(); void FUN_1089d870(NativeDelayedDispatcher *); void FUN_108c6dd0(NativeDelayedDispatcher *); bool FUN_108d63f0(); void FUN_108def40(NativeDelayedDispatcher *); void FUN_108df040(NativeDelayedDispatcher *); void FUN_108df610(NativeDelayedDispatcher *); void FUN_108df710(NativeDelayedDispatcher *); void FUN_108f5360(NativeDelayedDispatcher *); void FUN_108f5400(NativeDelayedDispatcher *); void FUN_108f6710(NativeDelayedDispatcher *); void FUN_10914630(NativeDelayedDispatcher *); void FUN_10945640(NativeDelayedDispatcher *); void FUN_10945b50(NativeDelayedDispatcher *); void FUN_10945c50(NativeDelayedDispatcher *); void FUN_10945e70(NativeDelayedDispatcher *); void FUN_10946440(NativeDelayedDispatcher *); void FUN_10946f20(NativeDelayedDispatcher *); void FUN_10947030(NativeDelayedDispatcher *); void FUN_10947130(NativeDelayedDispatcher *); void FUN_1097f540(NativeDelayedDispatcher *); void FUN_1097f930(NativeDelayedDispatcher *); void FUN_109e0d30(NativeDelayedDispatcher *); void FUN_10a07790(NativeDelayedDispatcher *); void FUN_10a07830(NativeDelayedDispatcher *); void FUN_10ab2e30(NativeDelayedDispatcher *); void FUN_10ab5fe0(NativeDelayedDispatcher *); void FUN_10b19560(NativeDelayedDispatcher *); void FUN_10b4fa10(NativeDelayedDispatcher *); void FUN_10b4fbe0(NativeDelayedDispatcher *); void FUN_10b4fc80(NativeDelayedDispatcher *); void FUN_10b58460(NativeDelayedDispatcher *); void FUN_10b6bb30(NativeDelayedDispatcher *); void FUN_10b6bbd0(NativeDelayedDispatcher *); };
 
 
-extern int thunk_FUN_10def450(...);
-extern int thunk_FUN_10def490(...);
-extern int thunk_FUN_10df10f0(...);
+template<class... A> int __stdcall thunk_FUN_10def450(A...);
+template<class... A> int __stdcall thunk_FUN_10def490(A...);
+template<class... A> int __stdcall thunk_FUN_10df10f0(A...);
 extern int thunk_FUN_10eb41b0(...);
 extern int thunk_FUN_10ebb850(...);
 extern int thunk_FUN_10ebb8e0(...);

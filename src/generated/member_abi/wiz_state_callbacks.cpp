@@ -8472,7 +8472,7 @@ void thunk_FUN_106de0c0(RecoveredString_FUN_1008c50b *, void *);
 RecoveredString_FUN_1008c50b thunk_FUN_106dfa00();
 NativeWizState_FUN_10b5ca00(void *); };
 
-extern int thunk_FUN_106de0c0(...);
+template<class... A> int __stdcall thunk_FUN_106de0c0(A...);
 extern int thunk_FUN_106dfa00(...);
 
 // Reference entry 1061e420; body size 180 bytes.

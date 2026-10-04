@@ -675,7 +675,7 @@ extern int FUN_1030f810(...);
 extern int FUN_10362a10(...);
 extern int FUN_1036e480(...);
 extern int FUN_10371ff0(...);
-extern int FUN_1038cb70(...);
+template<class... A> int __stdcall FUN_1038cb70(A...);
 extern int FUN_103a7c30(...);
 extern int FUN_103a7d90(...);
 extern int FUN_103d6860(...);

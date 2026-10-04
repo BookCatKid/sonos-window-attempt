@@ -30,7 +30,7 @@ struct ThrowInfo;
 extern undefined4 DAT_12126b84;
 extern int FUN_1112c180(...);
 extern int thunk_FUN_111a36f0(...);
-extern int thunk_FUN_111a4430(...);
+template<class... A> int __stdcall thunk_FUN_111a4430(A...);
 extern undefined4 thunk_FUN_111a7100(...);
 extern int thunk_FUN_111a7630(...);
 // Reference entry 1112c180; body size 158 bytes.

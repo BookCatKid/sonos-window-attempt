@@ -462,7 +462,7 @@ extern int thunk_FUN_10309e90(...);
 extern int thunk_FUN_103869d0(...);
 extern int thunk_FUN_103bca20(...);
 extern int thunk_FUN_10557e50(...);
-extern int thunk_FUN_10558310(...);
+template<class... A> int __stdcall thunk_FUN_10558310(A...);
 extern int thunk_FUN_106cf050(...);
 extern int thunk_FUN_107bce80(...);
 extern int thunk_FUN_10c5fc80(...);

@@ -31,7 +31,7 @@ extern undefined1 DAT_1186d2ee;
 extern undefined4 DAT_12126b84;
 extern int FUN_111313d0(...);
 extern int thunk_FUN_110828b0(...);
-extern int thunk_FUN_11095e00(...);
+template<class... A> int __stdcall thunk_FUN_11095e00(A...);
 extern char thunk_FUN_110d3140(...);
 extern int thunk_FUN_1127a080(...);
 extern char thunk_FUN_1127c920(...);
