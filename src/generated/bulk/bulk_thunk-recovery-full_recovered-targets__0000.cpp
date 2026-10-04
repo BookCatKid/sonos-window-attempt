@@ -3603,7 +3603,7 @@ void FUN_10117270(void)
   else {
     uVar5 = (uint)(0x7fffffff);
   }
-  _Dst = (char *)((char *)thunk_FUN_1012cab0(uVar5 + 1), 0);
+  _Dst = (char *)((char *)thunk_FUN_1012cab0<>(uVar5 + 1), 0);
   param_1[4] = (int)(param_2);
   param_1[5] = (int)(uVar5);
   memcpy(_Dst,param_4,param_2);
@@ -3663,7 +3663,7 @@ void FUN_10117270(void)
   else {
     uVar4 = (uint)(0x7fffffff);
   }
-  _Dst = (char *)((char *)thunk_FUN_1012cab0(uVar4 + 1), 0);
+  _Dst = (char *)((char *)thunk_FUN_1012cab0<>(uVar4 + 1), 0);
   param_1[5] = (undefined4)(uVar4);
   param_1[4] = (undefined4)(param_2 + _Size);
   puVar3 = (undefined1 *)((undefined1 *)(param_5 + (int)(_Size + (int)_Dst)));
@@ -6599,7 +6599,7 @@ undefined4 * __fastcall FUN_10118f10(undefined4 *param_1)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_Swig_DirectorException);
-  thunk_FUN_10118c40(param_2 + 4);
+  thunk_FUN_10118c40<>(param_2 + 4);
   return (undefined4 *)(param_1);
 }
 
@@ -6611,7 +6611,7 @@ undefined4 * __fastcall FUN_10118f10(undefined4 *param_1)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_Swig_DirectorException);
-  thunk_FUN_10118c40(param_2);
+  thunk_FUN_10118c40<>(param_2);
   return (undefined4 *)(param_1);
 }
 
@@ -6623,7 +6623,7 @@ undefined4 * __fastcall FUN_10118f10(undefined4 *param_1)
 {
   undefined4 *param_1 = (undefined4 *)this;
   *param_1 = (undefined4)((uint)&ghidra_vftable_Swig_DirectorException);
-  thunk_FUN_10118c40(param_2 + 4);
+  thunk_FUN_10118c40<>(param_2 + 4);
   *param_1 = (undefined4)((uint)&ghidra_vftable_Swig_DirectorPureVirtualException);
   return (undefined4 *)(param_1);
 }
@@ -14510,7 +14510,7 @@ bool __fastcall FUN_10129940(float *param_1)
   if (0x7fffffff < uVar5) {
     uVar5 = (uint)(0x7fffffff);
   }
-  _Dst = (char *)((char *)thunk_FUN_1012cab0(uVar5 + 1), 0);
+  _Dst = (char *)((char *)thunk_FUN_1012cab0<>(uVar5 + 1), 0);
   *param_1 = (undefined4)(_Dst);
   memcpy(_Dst,param_2,uVar1 + 1);
   param_1[4] = (undefined4)(uVar1);
@@ -15330,7 +15330,7 @@ void * FUN_1012cba0(uint param_1)
   else {
     uVar5 = (uint)(0x7fffffff);
   }
-  _Dst = (char *)((char *)thunk_FUN_1012cab0(uVar5 + 1), 0);
+  _Dst = (char *)((char *)thunk_FUN_1012cab0<>(uVar5 + 1), 0);
   param_1[5] = (undefined4)(uVar5);
   pvVar6 = (char *)((char *)((int)_Dst + _Size));
   param_1[4] = (undefined4)(_Size_00 + _Size);
@@ -22550,7 +22550,7 @@ void FUN_101a8a20(void)
     *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 4);
     return;
   }
-  thunk_FUN_101a6f70(puVar1,param_2);
+  thunk_FUN_101a6f70<>(puVar1,param_2);
   return;
 }
 
@@ -23757,7 +23757,7 @@ undefined4 __fastcall FUN_101aa120(undefined4 *param_1)
     *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 4);
     return;
   }
-  thunk_FUN_101a6f70(puVar1,param_2);
+  thunk_FUN_101a6f70<>(puVar1,param_2);
   return;
 }
 

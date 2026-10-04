@@ -11465,7 +11465,7 @@ uint FUN_101ce3c0(int param_1,uint *param_2)
   else {
     uVar3 = (uint)(0x7fffffff);
   }
-  _Dst = (char *)((char *)thunk_FUN_1012cab0(uVar3 + 1), 0);
+  _Dst = (char *)((char *)thunk_FUN_1012cab0<>(uVar3 + 1), 0);
   param_1[4] = (undefined4)(param_2 + _Size);
   param_1[5] = (undefined4)(uVar3);
   if (uVar1 < 0x10) {
@@ -16431,7 +16431,7 @@ void __fastcall FUN_101dad10(void *param_1)
   pvStack_14 = (void *)(param_1);
   pvStack_10 = (void *)(param_1);
   ((SCStr *)((SCStr *)&pvStack_14))->int_allocRep("SCIAccountManager:onCurrentAccountChanged");
-  thunk_FUN_103d65f0();
+  thunk_FUN_103d65f0<>();
 
   piVar4 = (int *)((int *)thunk_FUN_10292c70(&piStack_20,DAT_12126b84 ^ (uint)&stack0xfffffffc), 0);
   piVar1 = (int *)((int *)*piVar4);
@@ -21406,7 +21406,7 @@ void __fastcall FUN_101ebb60(int param_1)
   int *param_1 = (int *)this;
   int iVar1;
   
-  iVar1 = (int)(thunk_FUN_101ec940(param_2), 0);
+  iVar1 = (int)(thunk_FUN_101ec940<>(param_2), 0);
   *param_1 = (int)(iVar1);
   param_1[1] = (int)(iVar1);
   param_1[2] = (int)(iVar1 + param_2 * 8);
@@ -21422,7 +21422,7 @@ void __fastcall FUN_101ebb60(int param_1)
   int *param_1 = (int *)this;
   int iVar1;
   
-  iVar1 = (int)(thunk_FUN_101ec9b0(param_2), 0);
+  iVar1 = (int)(thunk_FUN_101ec9b0<>(param_2), 0);
   *param_1 = (int)(iVar1);
   param_1[1] = (int)(iVar1);
   param_1[2] = (int)(iVar1 + param_2 * 8);
@@ -21514,7 +21514,7 @@ void __fastcall FUN_101ebb60(int param_1)
     param_1[1] = (int)(0);
     param_1[2] = (int)(0);
   }
-  iVar2 = (int)(thunk_FUN_101ec9b0(uVar3), 0);
+  iVar2 = (int)(thunk_FUN_101ec9b0<>(uVar3), 0);
   *param_1 = (int)(iVar2);
   param_1[1] = (int)(iVar2);
   param_1[2] = (int)(iVar2 + uVar3 * 8);
@@ -22050,7 +22050,7 @@ undefined4 FUN_101f13b0(void)
 undefined4 __stdcall FUN_101f1720(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
 {
-  thunk_FUN_101e9610(param_1,param_2,param_3);
+  thunk_FUN_101e9610<>(param_1,param_2,param_3);
   return (undefined4)(param_1);
 }
 
@@ -22388,9 +22388,9 @@ void __stdcall FUN_101f3190(undefined4 param_1,undefined4 param_2)
 {
   int iVar1;
   
-  iVar1 = (int)(thunk_FUN_101ee360(param_1), 0);
+  iVar1 = (int)(thunk_FUN_101ee360<>(param_1), 0);
   if (iVar1 != -1) {
-    thunk_FUN_101f2f90(iVar1,param_2);
+    thunk_FUN_101f2f90<>(iVar1,param_2);
   }
   return;
 }
@@ -22438,7 +22438,7 @@ void __fastcall FUN_101f3ab0(int param_1)
     iStack_14 = (int)(param_1);
     iStack_10 = (int)(param_1);
     ((SCStr *)((SCStr *)&iStack_14))->int_allocRep("SCISettingsMenu:onValidChanged");
-    thunk_FUN_103d65f0();
+    thunk_FUN_103d65f0<>();
   }
   return;
 }
@@ -23968,10 +23968,10 @@ void FUN_101fb5d0(char param_1)
   uStack_8 = (undefined4)(0);
   ((SCStr *)((uint)&aSStack_10))->int_allocRep("SCIAppSessionManager:onAppStateChanged");
   if (param_1 != '\0') {
-    thunk_FUN_103d63d0();
+    thunk_FUN_103d63d0<>();
     return;
   }
-  thunk_FUN_103d65f0();
+  thunk_FUN_103d65f0<>();
   return;
 }
 
@@ -23989,7 +23989,7 @@ void FUN_101fb610(void)
   
   uStack_c = (undefined4)(0);
   ((SCStr *)((uint)&aSStack_14))->int_allocRep("SCIAppSessionManager:onTabChanged");
-  thunk_FUN_103d63d0();
+  thunk_FUN_103d63d0<>();
   return;
 }
 

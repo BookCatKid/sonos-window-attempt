@@ -7525,7 +7525,7 @@ undefined4 * __fastcall FUN_10cc0d60(undefined4 *param_1)
     uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
   }
   uVar3 = (undefined4)((**(code **)(*(int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4)) + 0x50)) (param_3,param_4,param_5,param_6), 0);
-  thunk_FUN_111c0760(uVar2,"urn:schemas-upnp-org:service:DeviceProperties:1","GetZoneInfo",uVar3, param_3,param_4,param_5,param_6);
+  thunk_FUN_111c0760<>(uVar2,"urn:schemas-upnp-org:service:DeviceProperties:1","GetZoneInfo",uVar3, param_3,param_4,param_5,param_6);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetZoneInfoAIOOp);
   param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetZoneInfoAIOOp);
   param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpDPGetZoneInfoAIOOp);
@@ -8751,7 +8751,7 @@ void FUN_10cc5ae0(void)
     *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 4);
     return;
   }
-  thunk_FUN_10cc5630(puVar1,param_2);
+  thunk_FUN_10cc5630<>(puVar1,param_2);
   return;
 }
 
@@ -9125,7 +9125,7 @@ void __fastcall FUN_10cc7d80(undefined4 *param_1)
   uStack_448 = (undefined4)(((uint)(*(unsigned short *)((char *)&uStack_448 + 1)) << 8 | (uint)(10)));
   thunk_FUN_1109f7f0();
   auStack_40[0] = (undefined1)(0);
-  thunk_FUN_1109f280((uint)&auStack_40,0x36);
+  thunk_FUN_1109f280<>((uint)&auStack_40,0x36);
   thunk_FUN_11261330((uint)&auStack_444,0x401,"/sonos/authCode/householdId/%s",2);
   ((SCStr *)((SCStr *)(param_1 + 0x1890)))->format((char *)(param_1 + 0x1890));
 
@@ -11425,7 +11425,7 @@ void __fastcall FUN_10cd4380(int param_1)
   uStack_4 = (uint)(DAT_12126b84 ^ (uint)(uint)&auStack_440);
   thunk_FUN_1109f7f0();
   auStack_440[0] = (uint)(auStack_440[0] & 0xffffff00);
-  thunk_FUN_1109f280((uint)&auStack_440,0x36);
+  thunk_FUN_1109f280<>((uint)&auStack_440,0x36);
   thunk_FUN_11261330((uint)&auStack_408,0x401,"/sonos/authCode/householdId/%s",2);
   ((SCStr *)(this_))->format((char *)(param_1 + 0x6224));
   auStack_440[0] = (uint)(0x10cd43ed);
@@ -11496,7 +11496,7 @@ undefined4 FUN_10cd7b60(void)
     *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 4);
     return;
   }
-  thunk_FUN_10cc5630(puVar1,param_2);
+  thunk_FUN_10cc5630<>(puVar1,param_2);
   return;
 }
 
@@ -11817,7 +11817,7 @@ int __fastcall FUN_10cdb2a0(int param_1, unsigned int recovered_unused_stack_0, 
     uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
   }
   uVar3 = (undefined4)((**(code **)(*(int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4)) + 0x50)) (param_3,param_4,param_5,param_6), 0);
-  thunk_FUN_111c0760(uVar2,"urn:schemas-upnp-org:service:AlarmClock:1","GetDailyIndexRefreshTime", uVar3,param_3,param_4,param_5,param_6);
+  thunk_FUN_111c0760<>(uVar2,"urn:schemas-upnp-org:service:AlarmClock:1","GetDailyIndexRefreshTime", uVar3,param_3,param_4,param_5,param_6);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpACGetDailyIndexRefreshTimeAIOOp);
   param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpACGetDailyIndexRefreshTimeAIOOp);
   param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpACGetDailyIndexRefreshTimeAIOOp);
@@ -11845,7 +11845,7 @@ int __fastcall FUN_10cdb2a0(int param_1, unsigned int recovered_unused_stack_0, 
     uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
   }
   uVar3 = (undefined4)((**(code **)(*(int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4)) + 0x50)) (param_3,param_4,param_5,param_6), 0);
-  thunk_FUN_111c0760(uVar2,"urn:schemas-upnp-org:service:AlarmClock:1","SetDailyIndexRefreshTime", uVar3,param_3,param_4,param_5,param_6);
+  thunk_FUN_111c0760<>(uVar2,"urn:schemas-upnp-org:service:AlarmClock:1","SetDailyIndexRefreshTime", uVar3,param_3,param_4,param_5,param_6);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpACSetDailyIndexRefreshTimeAIOOp);
   param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpACSetDailyIndexRefreshTimeAIOOp);
   param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpACSetDailyIndexRefreshTimeAIOOp);
@@ -11877,7 +11877,7 @@ int __fastcall FUN_10cdb2a0(int param_1, unsigned int recovered_unused_stack_0, 
   uVar3 = (undefined4)((**(code **)(*(int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4)) + 0x50)) (param_3,param_4,param_5,param_6), 0);
   pcVar5 = (char *)("RefreshShareIndex");
   uVar4 = (undefined4)((**(code **)(*(int *)(param_2 + iVar1 + 4) + 0x68))("RefreshShareIndex",uVar3), 0);
-  thunk_FUN_111c0760(uVar2,uVar4,pcVar5,uVar3,param_3,param_4,param_5,param_6);
+  thunk_FUN_111c0760<>(uVar2,uVar4,pcVar5,uVar3,param_3,param_4,param_5,param_6);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpCDRefreshShareIndexAIOOp);
   param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpCDRefreshShareIndexAIOOp);
   param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpCDRefreshShareIndexAIOOp);
@@ -12783,7 +12783,7 @@ undefined4 __fastcall FUN_10ce0080(int param_1)
   undefined4 uVar1;
   
   if (*(int *)(param_1 + 0x34) != 0) {
-    uVar1 = (undefined4)(thunk_FUN_1113f590(0), 0);
+    uVar1 = (undefined4)(thunk_FUN_1113f590<>(0), 0);
     uVar1 = (undefined4)(thunk_FUN_110bc160(uVar1), 0);
     return (undefined4)(uVar1);
   }
@@ -12802,9 +12802,9 @@ void __stdcall FUN_10ce00b0(int param_1,undefined4 param_2,undefined4 param_3)
   int iVar1;
   
   if (param_1 != 0) {
-    iVar1 = (int)(thunk_FUN_1113f590(0), 0);
+    iVar1 = (int)(thunk_FUN_1113f590<>(0), 0);
     if (iVar1 != 0) {
-      thunk_FUN_10ce00f0(param_1,iVar1,1,param_2,param_3);
+      thunk_FUN_10ce00f0<>(param_1,iVar1,1,param_2,param_3);
     }
   }
   return;
@@ -12917,9 +12917,9 @@ void __fastcall FUN_10ce0a00(int param_1)
       uVar4 = (undefined4)(1);
     }
     else {
-      iVar3 = (int)(thunk_FUN_1113f590(0), 0);
+      iVar3 = (int)(thunk_FUN_1113f590<>(0), 0);
       if (iVar3 != 0) {
-        thunk_FUN_10ce00f0(iStack_1c,iVar3,1,0,0);
+        thunk_FUN_10ce00f0<>(iStack_1c,iVar3,1,0,0);
       }
       thunk_FUN_1113f0e0(param_1,0);
       pcVar6 = (char *)("");
@@ -16022,7 +16022,7 @@ bool __fastcall FUN_10ceee10(int param_1)
     *(int*)(param_1 + 0xc) = (int)(*(int *)(param_1 + 0xc) + 8);
     return;
   }
-  thunk_FUN_10cede00(puVar1,param_2);
+  thunk_FUN_10cede00<>(puVar1,param_2);
   return;
 }
 
@@ -17087,7 +17087,7 @@ void __stdcall FUN_10cf5320(undefined4 *param_1)
   cVar1 = (char)(*(char *)((int)piVar4 + 0xd));
   while (cVar1 == '\0') {
     param_1 = (undefined4 *)((undefined4 *)piVar4[4]);
-    thunk_FUN_10cf4bb0(&param_1);
+    thunk_FUN_10cf4bb0<>(&param_1);
     piVar2 = (int *)((int *)piVar4[2]);
     if (*(char *)((int)piVar2 + 0xd) == '\0') {
       cVar1 = (char)(*(char *)(*piVar2 + 0xd));
@@ -19772,7 +19772,7 @@ void __stdcall FUN_10d19ae0(undefined4 *param_1,undefined4 param_2)
             undefined4 param_5)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  thunk_FUN_10564c90(param_2,param_3,param_4,0,param_5);
+  thunk_FUN_10564c90<>(param_2,param_3,param_4,0,param_5);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCPlayNowTVDescriptor);
   return (undefined4 *)(param_1);
 }
@@ -22432,7 +22432,7 @@ undefined4 * __fastcall FUN_10d3d3c0(undefined4 *param_1)
             undefined4 param_5)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  thunk_FUN_10cf6c80(param_2,param_3,param_4,0,1,param_5,4,0);
+  thunk_FUN_10cf6c80<>(param_2,param_3,param_4,0,1,param_5,4,0);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCUpdateMusicIndexItem);
   param_1[6] = (undefined4)((uint)&ghidra_vftable_SCUpdateMusicIndexItem);
   return (undefined4 *)(param_1);

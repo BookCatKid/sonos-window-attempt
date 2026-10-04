@@ -3495,7 +3495,7 @@ undefined4 * __fastcall FUN_10b84d10(undefined4 *param_1)
     else {
       uVar2 = (uint)(0x7fffffff);
     }
-    _Dst = (undefined4 *)((undefined4 *)thunk_FUN_1012cab0(uVar2 + 1), 0);
+    _Dst = (undefined4 *)((undefined4 *)thunk_FUN_1012cab0<>(uVar2 + 1), 0);
     *param_1 = (undefined4)(_Dst);
   }
   param_1[5] = (undefined4)(uVar2);
@@ -4199,7 +4199,7 @@ uint __fastcall FUN_10b88860(int param_1)
 undefined4 __stdcall FUN_10b8b620(undefined4 param_1)
 
 {
-  thunk_FUN_10b8b660(param_1);
+  thunk_FUN_10b8b660<>(param_1);
   return (undefined4)(param_1);
 }
 
@@ -4212,7 +4212,7 @@ undefined4 __stdcall FUN_10b8b620(undefined4 param_1)
 undefined4 __stdcall FUN_10b8b640(undefined4 param_1)
 
 {
-  thunk_FUN_10b8b660(param_1);
+  thunk_FUN_10b8b660<>(param_1);
   return (undefined4)(param_1);
 }
 
@@ -4225,7 +4225,7 @@ undefined4 __stdcall FUN_10b8b640(undefined4 param_1)
 undefined4 __stdcall FUN_10b8b770(undefined4 param_1)
 
 {
-  thunk_FUN_10b8b660(param_1);
+  thunk_FUN_10b8b660<>(param_1);
   return (undefined4)(param_1);
 }
 
@@ -5804,7 +5804,7 @@ undefined4 __fastcall FUN_10b8fdb0(undefined4 param_1)
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10b902f0(undefined4 param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  thunk_FUN_10f56a40(param_2);
+  thunk_FUN_10f56a40<>(param_2);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSettingsReplicatorRoomName);
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSettingsReplicatorRoomName);
   param_1[0x40] = (undefined4)(0);
@@ -5818,7 +5818,7 @@ undefined4 __fastcall FUN_10b8fdb0(undefined4 param_1)
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10b90330(undefined4 param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  thunk_FUN_10f56a40(param_2);
+  thunk_FUN_10f56a40<>(param_2);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCSettingsReplicatorSonosNetChannel);
   param_1[4] = (undefined4)((uint)&ghidra_vftable_SCSettingsReplicatorSonosNetChannel);
   param_1[0x40] = (undefined4)(0);
@@ -13336,7 +13336,7 @@ uint FUN_10ba3690(int param_1,uint *param_2)
   else {
     uVar4 = (uint)(0x7fffffff);
   }
-  _Dst = (char *)((char *)thunk_FUN_1012cab0(uVar4 + 1), 0);
+  _Dst = (char *)((char *)thunk_FUN_1012cab0<>(uVar4 + 1), 0);
   param_1[5] = (undefined4)(uVar4);
   param_1[4] = (undefined4)(iVar1 + param_2);
   if (uVar2 < 0x10) {
@@ -13723,7 +13723,7 @@ void FUN_10ba4120(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 void FUN_10ba4290(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
 {
-  thunk_FUN_10118c40(param_3);
+  thunk_FUN_10118c40<>(param_3);
   return;
 }
 
@@ -13946,7 +13946,7 @@ int FUN_10ba4420(int *param_1,int *param_2)
     *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x24);
     return;
   }
-  thunk_FUN_10ba2c50(*(int *)(param_1 + 4),param_2);
+  thunk_FUN_10ba2c50<>(*(int *)(param_1 + 4),param_2);
   return;
 }
 
@@ -14845,7 +14845,7 @@ undefined2 * __fastcall FUN_10ba6040(undefined2 *param_1)
     uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
   }
   uVar3 = (undefined4)((**(code **)(*(int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4)) + 0x50)) (param_3,param_4,param_5,param_6), 0);
-  thunk_FUN_111c0760(uVar2,"urn:schemas-upnp-org:service:AlarmClock:1","DestroyAlarm",uVar3,param_3, param_4,param_5,param_6);
+  thunk_FUN_111c0760<>(uVar2,"urn:schemas-upnp-org:service:AlarmClock:1","DestroyAlarm",uVar3,param_3, param_4,param_5,param_6);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpACDestroyAlarmAIOOp);
   param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpACDestroyAlarmAIOOp);
   param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpACDestroyAlarmAIOOp);
@@ -15751,7 +15751,7 @@ undefined4 __stdcall FUN_10ba8980(undefined4 param_1)
   
   piVar1 = (int *)((int *)*param_1);
   if (((int)(param_2) == *piVar1) && (*(char *)(param_3 + 0xd) != '\0')) {
-    thunk_FUN_102bcb30(param_1,piVar1[1]);
+    thunk_FUN_102bcb30<>(param_1,piVar1[1]);
     piVar1[1] = (int)((int)piVar1);
     *piVar1 = (int)((int)piVar1);
     piVar1[2] = (int)((int)piVar1);
@@ -16056,7 +16056,7 @@ undefined4 __fastcall FUN_10ba97b0(int param_1)
     std::_Xbad_alloc();
   }
   if ((param_3 != 0) && (((byte)param_4 & 6) != 6)) {
-    _Dst = (void *)((void *)thunk_FUN_1012cab0(param_3), 0);
+    _Dst = (void *)((void *)thunk_FUN_1012cab0<>(param_3), 0);
     memcpy(_Dst,param_2,param_3);
     *(uint*)(param_1 + 0x38) = (uint)(param_3 + (int)_Dst);
     if ((param_4 & 4) == 0) {
@@ -17143,7 +17143,7 @@ undefined4 __fastcall FUN_10bb3180(undefined4 *param_1)
     *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x24);
     return;
   }
-  thunk_FUN_10ba2c50(*(int *)(param_1 + 4),param_2);
+  thunk_FUN_10ba2c50<>(*(int *)(param_1 + 4),param_2);
   return;
 }
 
@@ -23877,7 +23877,7 @@ void FUN_10bcd340(undefined4 *param_1,undefined4 *param_2)
   int *piVar6;
   undefined4 uVar7;
   
-  uVar7 = (undefined4)(thunk_FUN_10bcd530(*(undefined4 *)(*param_2 + 4),*param_1,param_3), 0);
+  uVar7 = (undefined4)(thunk_FUN_10bcd530<>(*(undefined4 *)(*param_2 + 4),*param_1,param_3), 0);
   *(undefined4*)(*param_1 + 4) = (undefined4)(uVar7);
   piVar2 = (int *)((int *)*param_1);
   param_1[1] = (int)(param_2[1]);
@@ -23922,7 +23922,7 @@ void FUN_10bcd340(undefined4 *param_1,undefined4 *param_2)
   int *piVar6;
   undefined4 uVar7;
   
-  uVar7 = (undefined4)(thunk_FUN_10bcd670(*(undefined4 *)(*param_2 + 4),*param_1,param_3), 0);
+  uVar7 = (undefined4)(thunk_FUN_10bcd670<>(*(undefined4 *)(*param_2 + 4),*param_1,param_3), 0);
   *(undefined4*)(*param_1 + 4) = (undefined4)(uVar7);
   piVar2 = (int *)((int *)*param_1);
   param_1[1] = (int)(param_2[1]);
@@ -24176,7 +24176,7 @@ void FUN_10bcda30(void)
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10bcde50(undefined4 param_2)
 {
   int param_1 = (int )this;
-  thunk_FUN_10bd5dc0(param_2);
+  thunk_FUN_10bd5dc0<>(param_2);
   *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x1c);
   return;
 }

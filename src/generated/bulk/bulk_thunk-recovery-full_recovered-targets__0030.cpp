@@ -9533,7 +9533,7 @@ void FUN_112ea470(void)
       *piVar1 = (int)(*piVar1 + -1);
       UNLOCK();
       if ((void *)(DAT_122f6ca0) != (void *)(0x0)) {
-        thunk_FUN_112f2220(piVar2);
+        thunk_FUN_112f2220<>(piVar2);
       }
       if ((iVar4 < 2) && ((int *)(piVar2) != (int *)(0x0))) {
         (**(code **)(*piVar2 + 0x10))(1);
@@ -9548,7 +9548,7 @@ void FUN_112ea470(void)
       *piVar1 = (int)(*piVar1 + -1);
       UNLOCK();
       if ((void *)(DAT_122f6ca0) != (void *)(0x0)) {
-        thunk_FUN_112f2220(piVar2);
+        thunk_FUN_112f2220<>(piVar2);
       }
       if ((iVar4 < 2) && ((int *)(piVar2) != (int *)(0x0))) {
         (**(code **)(*piVar2 + 0x10))(1);
@@ -9793,7 +9793,7 @@ bool FUN_112eb550(int param_1)
 undefined4 FUN_112eb560(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
 {
-  thunk_FUN_112ec690(param_1,param_2,param_3);
+  thunk_FUN_112ec690<>(param_1,param_2,param_3);
   return (undefined4)(param_1);
 }
 
@@ -37355,7 +37355,7 @@ void FUN_1182c330(void)
 void FUN_11849f60(void)
 
 {
-  thunk_FUN_10e0c800();
+  thunk_FUN_10e0c800<>();
   return;
 }
 

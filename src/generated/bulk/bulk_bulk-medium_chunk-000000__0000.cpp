@@ -22475,7 +22475,7 @@ void __stdcall FUN_10195f50(int param_1,undefined4 param_2)
 
 {
   if (param_1 != 0) {
-    thunk_FUN_10124c80(param_2);
+    thunk_FUN_10124c80<>(param_2);
   }
   return;
 }

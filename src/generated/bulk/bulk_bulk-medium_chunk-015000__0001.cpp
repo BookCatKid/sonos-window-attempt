@@ -6264,7 +6264,7 @@ void FUN_112eeea0(int param_1)
   *(int*)(param_1 + 0x118) = (int)(*(int *)(param_1 + 0x118) + 1);
   UNLOCK();
   if (DAT_122f6ca0 != 0) {
-    thunk_FUN_112f2220(param_1);
+    thunk_FUN_112f2220<>(param_1);
   }
   return;
 }
@@ -6318,7 +6318,7 @@ void FUN_112efba0(int *param_1)
   *piVar1 = (int)(*piVar1 + -1);
   UNLOCK();
   if (DAT_122f6ca0 != 0) {
-    thunk_FUN_112f2220(param_1);
+    thunk_FUN_112f2220<>(param_1);
   }
   if ((iVar2 < 2) && ((int *)(param_1) != (int *)(0x0))) {
     (**(code **)(*param_1 + 0x10))(1);

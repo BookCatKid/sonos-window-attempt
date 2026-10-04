@@ -3676,7 +3676,7 @@ void FUN_10e46900(int *param_1,int param_2)
 void __stdcall FUN_10e46920(undefined4 param_1,undefined4 param_2)
 
 {
-  thunk_FUN_10e45e20(param_1,param_2,param_2);
+  thunk_FUN_10e45e20<>(param_1,param_2,param_2);
   return;
 }
 
@@ -4479,7 +4479,7 @@ void __fastcall FUN_10e47610(int *param_1)
 {
   undefined4 *param_1 = (undefined4 *)this;
   if ((undefined4 *)(param_1) != (undefined4 *)(param_2)) {
-    thunk_FUN_10e45e20(*param_2,param_2[1],param_2);
+    thunk_FUN_10e45e20<>(*param_2,param_2[1],param_2);
   }
   return (undefined4 *)(param_1);
 }
@@ -4793,7 +4793,7 @@ void __stdcall FUN_10e48370(unsigned int recovered_unused_stack_0)
 void __stdcall FUN_10e48380(undefined4 *param_1, unsigned int recovered_unused_stack_0)
 
 {
-  thunk_FUN_10e45e20(*param_1,param_1[1],param_1);
+  thunk_FUN_10e45e20<>(*param_1,param_1[1],param_1);
   return;
 }
 
@@ -6646,7 +6646,7 @@ undefined4 * __fastcall FUN_10e5c490(undefined4 *param_1)
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 * __thiscall Recovered_Bulk::m_FUN_10e5c4b0(undefined4 param_2)
 {
   undefined4 *param_1 = (undefined4 *)this;
-  thunk_FUN_10e5d160(param_2);
+  thunk_FUN_10e5d160<>(param_2);
   *param_1 = (undefined4)((uint)&ghidra_vftable_SCAlexaAuthChecklistDownloadAlexaState);
   param_1[3] = (undefined4)((uint)&ghidra_vftable_SCAlexaAuthChecklistDownloadAlexaState);
   return (undefined4 *)(param_1);
@@ -11803,7 +11803,7 @@ int __fastcall FUN_10e8c310(int param_1, unsigned int recovered_unused_stack_0, 
     uVar2 = (undefined4)((**(code **)(iVar1 + 0x4c))(), 0);
   }
   uVar3 = (undefined4)((**(code **)(*(int *)(param_2 + 4 + *(int *)(*(int *)(param_2 + 4) + 4)) + 0x50)) (param_3,param_4,param_5,param_6), 0);
-  thunk_FUN_111c0760(uVar2,"urn:schemas-upnp-org:service:HTControl:1","GetLEDFeedbackState",uVar3, param_3,param_4,param_5,param_6);
+  thunk_FUN_111c0760<>(uVar2,"urn:schemas-upnp-org:service:HTControl:1","GetLEDFeedbackState",uVar3, param_3,param_4,param_5,param_6);
   *param_1 = (undefined4)((uint)&ghidra_vftable_RUpnpHTCGetLEDFeedbackStateAIOOp);
   param_1[0x18] = (undefined4)((uint)&ghidra_vftable_RUpnpHTCGetLEDFeedbackStateAIOOp);
   param_1[0x11b] = (undefined4)((uint)&ghidra_vftable_RUpnpHTCGetLEDFeedbackStateAIOOp);
@@ -13638,7 +13638,7 @@ bool __fastcall FUN_10ea25e0(int *param_1)
   iStack_10 = (int)(param_1);
   iStack_c = (int)(param_1);
   ((SCStr *)((SCStr *)&iStack_10))->int_allocRep("SCIBrowseItem:onItemChanged");
-  thunk_FUN_103d65f0();
+  thunk_FUN_103d65f0<>();
   return;
 }
 
@@ -14409,7 +14409,7 @@ void FUN_10ea7830(undefined4 *param_1,undefined4 *param_2)
   int *piVar6;
   undefined4 uVar7;
   
-  uVar7 = (undefined4)(thunk_FUN_10ea7960(*(undefined4 *)(*param_2 + 4),*param_1,param_3), 0);
+  uVar7 = (undefined4)(thunk_FUN_10ea7960<>(*(undefined4 *)(*param_2 + 4),*param_1,param_3), 0);
   *(undefined4*)(*param_1 + 4) = (undefined4)(uVar7);
   piVar2 = (int *)((int *)*param_1);
   param_1[1] = (int)(param_2[1]);
@@ -14454,7 +14454,7 @@ void FUN_10ea7830(undefined4 *param_1,undefined4 *param_2)
   int *piVar6;
   undefined4 uVar7;
   
-  uVar7 = (undefined4)(thunk_FUN_10ea7a90(*(undefined4 *)(*param_2 + 4),*param_1,param_3), 0);
+  uVar7 = (undefined4)(thunk_FUN_10ea7a90<>(*(undefined4 *)(*param_2 + 4),*param_1,param_3), 0);
   *(undefined4*)(*param_1 + 4) = (undefined4)(uVar7);
   piVar2 = (int *)((int *)*param_1);
   param_1[1] = (int)(param_2[1]);
@@ -14518,7 +14518,7 @@ void FUN_10ea7ce0(int param_1,int param_2)
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void __thiscall Recovered_Bulk::m_FUN_10ea7d30(undefined4 param_2)
 {
   int param_1 = (int )this;
-  thunk_FUN_10eaab70(param_2);
+  thunk_FUN_10eaab70<>(param_2);
   *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 0x4c);
   return;
 }
@@ -14707,7 +14707,7 @@ void FUN_10eaa1b0(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 void FUN_10eaa1d0(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
 {
-  thunk_FUN_10eaab70(param_3);
+  thunk_FUN_10eaab70<>(param_3);
   return;
 }
 
@@ -16706,7 +16706,7 @@ undefined4 FUN_10eb18e0(undefined4 param_1)
   int iVar1;
   
   iVar1 = (int)(*param_1);
-  thunk_FUN_10eb1010(param_3,param_4,param_5,param_3);
+  thunk_FUN_10eb1010<>(param_3,param_4,param_5,param_3);
   *param_2 = (int)(((param_3 - iVar1) / 0x34) * 0x34 + *param_1);
   return;
 }
@@ -20025,7 +20025,7 @@ void FUN_10ebf8e0(undefined4 param_1,SCStr *param_2,SCStr *param_3)
 
 {
   ((SCStr *)(param_2))->m_op_ctor(param_3);
-  thunk_FUN_105f6050(param_3 + 4);
+  thunk_FUN_105f6050<>(param_3 + 4);
   return;
 }
 
@@ -20196,7 +20196,7 @@ undefined4 FUN_10ebfb00(undefined4 param_1)
   int iVar1;
   
   iVar1 = (int)(*param_1);
-  thunk_FUN_10ebd6e0(param_3,param_4,param_5,param_3);
+  thunk_FUN_10ebd6e0<>(param_3,param_4,param_5,param_3);
   *param_2 = (int)(*param_1 + (param_3 - iVar1 >> 3) * 8);
   return;
 }
@@ -20211,7 +20211,7 @@ undefined4 FUN_10ebfb00(undefined4 param_1)
   int iVar1;
   
   iVar1 = (int)(*param_1);
-  thunk_FUN_10ebcd20(param_3,param_4,param_5,param_3);
+  thunk_FUN_10ebcd20<>(param_3,param_4,param_5,param_3);
   *param_2 = (int)(*param_1 + ((param_3 - iVar1) / 0xc) * 0xc);
   return;
 }
@@ -22084,7 +22084,7 @@ undefined4 FUN_10ed40d0(undefined4 param_1,int param_2,undefined4 param_3)
   if (param_2 != 0) {
     cVar1 = (char)(thunk_FUN_10e10dc0(param_3), 0);
     if (cVar1 != '\0') {
-      thunk_FUN_10e0f500(param_1,param_3);
+      thunk_FUN_10e0f500<>(param_1,param_3);
       return (undefined4)(param_1);
     }
   }
@@ -23400,7 +23400,7 @@ undefined4 __fastcall FUN_10ee49a0(int param_1)
   }
   else {
     thunk_FUN_10302280(iVar1,"send ECHO request failed!");
-    thunk_FUN_10ee3c70(iVar4,1,7);
+    thunk_FUN_10ee3c70<>(iVar4,1,7);
   }
   iStack_594 = (int)(2);
   ((SCStr *)((uint)&aSStack_5a0))->int_release();
@@ -24155,7 +24155,7 @@ void __fastcall FUN_10ee8df0(int param_1)
     }
   }
   thunk_FUN_10302280(param_1 + 4,"Send Dtls client hello message failed.");
-  thunk_FUN_10ee3c70(1000,1,7);
+  thunk_FUN_10ee3c70<>(1000,1,7);
   thunk_FUN_1148ac28();
   return;
 }
@@ -24198,7 +24198,7 @@ void __fastcall FUN_10ee8fd0(int param_1)
   }
   thunk_FUN_10302280(iVar1,"send COMMIT_SETTINGS failed!");
   thunk_FUN_10ee70c0();
-  thunk_FUN_10ee3c70(1000,1,7);
+  thunk_FUN_10ee3c70<>(1000,1,7);
   thunk_FUN_1148ac28();
   return;
 }
@@ -24245,7 +24245,7 @@ void __fastcall FUN_10ee90f0(int param_1)
     thunk_FUN_10302280(iVar1,pcVar4);
   }
   thunk_FUN_10302280(iVar1,"send ECHO request failed!");
-  thunk_FUN_10ee3c70(1000,1,7);
+  thunk_FUN_10ee3c70<>(1000,1,7);
   thunk_FUN_1148ac28();
   return;
 }
@@ -24284,7 +24284,7 @@ void __fastcall FUN_10ee9210(int param_1)
     }
     thunk_FUN_10302280(param_1 + 4,pcVar2);
   }
-  thunk_FUN_10ee3c70(1000,1,7);
+  thunk_FUN_10ee3c70<>(1000,1,7);
   thunk_FUN_1148ac28();
   return;
 }
@@ -24325,7 +24325,7 @@ void __fastcall FUN_10ee9310(int param_1)
     }
     thunk_FUN_10302280(param_1 + 4,pcVar2);
   }
-  thunk_FUN_10ee3c70(1000,1,7);
+  thunk_FUN_10ee3c70<>(1000,1,7);
   thunk_FUN_1148ac28();
   return;
 }
@@ -24364,7 +24364,7 @@ void __fastcall FUN_10ee9f30(int param_1)
     }
     thunk_FUN_10302280(param_1 + 4,pcVar2);
   }
-  thunk_FUN_10ee3c70(1000,1,7);
+  thunk_FUN_10ee3c70<>(1000,1,7);
   if (*(char *)(param_1 + 0x358d) != '\0') {
     thunk_FUN_10ee3510();
   }
@@ -24408,7 +24408,7 @@ void __fastcall FUN_10eea050(int param_1)
     }
     thunk_FUN_10302280(param_1 + 4,pcVar2);
   }
-  thunk_FUN_10ee3c70(1000,1,7);
+  thunk_FUN_10ee3c70<>(1000,1,7);
   thunk_FUN_1148ac28();
   return;
 }
@@ -24450,7 +24450,7 @@ void __fastcall FUN_10eea160(int param_1)
     thunk_FUN_10302280(iVar1,pcVar3);
   }
   thunk_FUN_10302280(iVar1,"send START_ISLAND failed!");
-  thunk_FUN_10ee3c70(1000,1,7);
+  thunk_FUN_10ee3c70<>(1000,1,7);
   thunk_FUN_1148ac28();
   return;
 }
@@ -24492,7 +24492,7 @@ void __fastcall FUN_10eea270(int param_1)
     thunk_FUN_10302280(iVar1,pcVar3);
   }
   thunk_FUN_10302280(iVar1,"send START_OPEN_AP failed!");
-  thunk_FUN_10ee3c70(1000,1,7);
+  thunk_FUN_10ee3c70<>(1000,1,7);
   thunk_FUN_1148ac28();
   return;
 }
@@ -24536,7 +24536,7 @@ void __fastcall FUN_10eea380(int param_1)
     }
     thunk_FUN_10302280(param_1 + 4,pcVar3);
   }
-  thunk_FUN_10ee3c70(1000,1,7);
+  thunk_FUN_10ee3c70<>(1000,1,7);
   thunk_FUN_1148ac28();
   return;
 }
@@ -24594,7 +24594,7 @@ void __fastcall FUN_10eea4a0(int param_1)
   *(undefined4*)(param_1 + 0xc0) = (undefined4)(param_3);
   if (((param_2 != 1) && (param_2 != 2)) && (*(int *)(param_1 + 0xb8) == 0)) {
     *(undefined4*)(param_1 + 0xc0) = (undefined4)(0);
-    thunk_FUN_10ee3c70(1000,1,7);
+    thunk_FUN_10ee3c70<>(1000,1,7);
   }
   return;
 }
@@ -26991,7 +26991,7 @@ void FUN_10ef4ce0(void)
     *(int*)(param_1 + 4) = (int)(*(int *)(param_1 + 4) + 4);
     return;
   }
-  thunk_FUN_10ef4470(puVar1,param_2);
+  thunk_FUN_10ef4470<>(puVar1,param_2);
   return;
 }
 

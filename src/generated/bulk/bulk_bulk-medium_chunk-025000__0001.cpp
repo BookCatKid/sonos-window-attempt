@@ -12277,7 +12277,7 @@ void FUN_117cbfb0(void){
 void FUN_117cc270(void){
   int unaff_EBP;
   
-  _eh_vector_destructor_iterator_(*(void **)(unaff_EBP + -0x10),0x38,0x10,thunk_FUN_11236130);
+  _eh_vector_destructor_iterator_(*(void **)(unaff_EBP + -0x10),0x38,0x10,thunk_FUN_11236130<>);
   return;
 }
 
@@ -12582,7 +12582,7 @@ void FUN_1180b290(void)
 void FUN_1180c230(void)
 
 {
-  thunk_FUN_106dd300(&DAT_121a279c,*(undefined4 *)(DAT_121a279c + 4));
+  thunk_FUN_106dd300<>(&DAT_121a279c,*(undefined4 *)(DAT_121a279c + 4));
   thunk_FUN_1148a50e(DAT_121a279c,0x18);
   return;
 }
@@ -12606,7 +12606,7 @@ void FUN_1180c270(void)
 void FUN_11817a90(void)
 
 {
-  thunk_FUN_106ab4f0(&DAT_121a3524,*(undefined4 *)(DAT_121a3524 + 4));
+  thunk_FUN_106ab4f0<>(&DAT_121a3524,*(undefined4 *)(DAT_121a3524 + 4));
   thunk_FUN_1148a50e(DAT_121a3524,0x20);
   return;
 }
@@ -12618,7 +12618,7 @@ void FUN_11817a90(void)
 void FUN_1182b520(void)
 
 {
-  thunk_FUN_10af42f0(&DAT_121a4a8c,*(undefined4 *)(DAT_121a4a8c + 4));
+  thunk_FUN_10af42f0<>(&DAT_121a4a8c,*(undefined4 *)(DAT_121a4a8c + 4));
   thunk_FUN_1148a50e(DAT_121a4a8c,0x18);
   return;
 }
@@ -12642,7 +12642,7 @@ void FUN_1182d790(void)
 void FUN_11830f70(void)
 
 {
-  thunk_FUN_10bcf100(&DAT_121a5138,*(undefined4 *)(DAT_121a5138 + 4));
+  thunk_FUN_10bcf100<>(&DAT_121a5138,*(undefined4 *)(DAT_121a5138 + 4));
   thunk_FUN_1148a50e(DAT_121a5138,0x30);
   return;
 }
