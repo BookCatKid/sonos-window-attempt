@@ -26,6 +26,15 @@ for %%F in (src\generated\member_abi\*.cpp) do (
 
 powershell -NoProfile -ExecutionPolicy Bypass -File tools\build_bulk_parallel.ps1
 
+if "%SONOS_PART_SLICE%"=="0" (
+  cl /nologo /O2 /MD /GS /GR /EHsc /c /Foout\ehprobe_ehsc_gs.obj src\eh_frame_probe.cpp > out\ehprobe_ehsc_gs.log 2>&1
+  cl /nologo /O2 /MD /GS- /GR /EHsc /c /Foout\ehprobe_ehsc_nogs.obj src\eh_frame_probe.cpp > out\ehprobe_ehsc_nogs.log 2>&1
+  cl /nologo /O2 /MD /GS /GR /EHa /c /Foout\ehprobe_eha_gs.obj src\eh_frame_probe.cpp > out\ehprobe_eha_gs.log 2>&1
+  cl /nologo /O2 /MD /GS /GR /EHsc /d2FH4- /c /Foout\ehprobe_nofh4.obj src\eh_frame_probe.cpp > out\ehprobe_nofh4.log 2>&1
+  cl /nologo /O2 /MD /GS /GR /EHs- /c /Foout\ehprobe_ehs0.obj src\eh_frame_probe.cpp > out\ehprobe_ehs0.log 2>&1
+  cl /nologo /O2 /MD /GS /GR /EHa /d2FH4- /c /Foout\ehprobe_eha_nofh4.obj src\eh_frame_probe.cpp > out\ehprobe_eha_nofh4.log 2>&1
+)
+
 cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\zonegroup_getter.obj src\zonegroup_getter.cpp > out\getter.log 2>&1
 if errorlevel 1 goto failed
 cl /nologo /O2 /MD /GS /GR /EHsc /Zi /c /Foout\zonegroup_result.obj src\zonegroup_result.cpp > out\result.log 2>&1
