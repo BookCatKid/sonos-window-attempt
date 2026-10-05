@@ -413,7 +413,7 @@ undefined4 __stdcall FUN_110b5c70(undefined4 param_1,undefined4 param_2,undefine
 template<class... A> int FUN_110b5c70(A...);
 undefined4 __stdcall FUN_110b5e60(undefined4 param_1,undefined4 param_2);
 template<class... A> int FUN_110b5e60(A...);
-void __fastcall FUN_110b5f20(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
+undefined4 *  __fastcall FUN_110b5f20(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1);
 template<class... A> int FUN_110b5f20(A...);
 undefined4 * FUN_110b7de0(undefined4 *param_1);
 template<class... A> int FUN_110b7de0(A...);
@@ -690,7 +690,7 @@ undefined4 FUN_110ecfe0(char *param_1);
 template<class... A> int FUN_110ecfe0(A...);
 void __fastcall FUN_110ed320(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1, unsigned int recovered_unused_stack_2);
 template<class... A> int FUN_110ed320(A...);
-void __stdcall FUN_110ed980(undefined1 *param_1,int param_2);
+undefined4 *  __stdcall FUN_110ed980(undefined1 *param_1,int param_2);
 template<class... A> int FUN_110ed980(A...);
 char * FUN_110ede50(char *param_1,char *param_2,undefined4 param_3);
 template<class... A> int FUN_110ede50(A...);
@@ -1619,14 +1619,14 @@ undefined4 __stdcall FUN_110b5e60(undefined4 param_1,undefined4 param_2)
 // Reference entry 110b5f20; body size 27 bytes.
 #line 1 "ENTRY_110b5f20"
 
-void __fastcall FUN_110b5f20(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
+undefined4 *  __fastcall FUN_110b5f20(int param_1, unsigned int recovered_unused_stack_0, unsigned int recovered_unused_stack_1)
 
 {
   if (*(int **)(param_1 + 8) != (int *)((0x0))) {
     (**(code **)(**(int **)(param_1 + 8) + 4))(param_1);
     *(undefined4*)(param_1 + 8) = (undefined4)(0);
   }
-  return;
+  return (undefined4 *)(recovered_unused_stack_1);
 }
 
 
@@ -5425,13 +5425,13 @@ void __thiscall Recovered_Bulk::m_FUN_110ed5b0(undefined4 param_2,undefined4 par
 // Reference entry 110ed980; body size 17 bytes.
 #line 1 "ENTRY_110ed980"
 
-void __stdcall FUN_110ed980(undefined1 *param_1,int param_2)
+undefined4 *  __stdcall FUN_110ed980(undefined1 *param_1,int param_2)
 
 {
   if (param_2 != 0) {
     *param_1 = (undefined1)(0);
   }
-  return;
+  return (undefined4 *)(param_1);
 }
 
 

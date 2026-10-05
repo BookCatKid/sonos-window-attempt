@@ -1121,7 +1121,7 @@ template<class... A> int FUN_110a7540(A...);
 template<class... A> int FUN_110a7650(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_110a7670(undefined4 *param_1,undefined4 *param_2);
 template<class... A> int FUN_110a7670(A...);
-/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ void FUN_110a7690(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3);
+/* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 *  FUN_110a7690(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3);
 template<class... A> int FUN_110a7690(A...);
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */ undefined4 FUN_110a7930(undefined4 param_1);
 template<class... A> int FUN_110a7930(A...);
@@ -5629,7 +5629,7 @@ undefined4 FUN_110a7670(undefined4 *param_1,undefined4 *param_2)
 
 /* Recovered from a missing 5-byte E9 call destination by this_ Ghidra pass. */
 
-void FUN_110a7690(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3)
+undefined4 *  FUN_110a7690(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3)
 
 {
   undefined4 uVar1;
@@ -5654,7 +5654,7 @@ void FUN_110a7690(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3)
   for (;(undefined4 *)( puVar2) != (undefined4 *)(param_2); puVar2 = puVar2 + 1) {
     *puVar2 = (undefined4)(*param_3);
   }
-  return;
+  return (undefined4 *)(param_1);
 }
 
 
