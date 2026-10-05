@@ -18791,13 +18791,13 @@ int FUN_10c71630(int *param_1,int *param_2)
 // Reference entry 10c716c0; body size 5 bytes.
 #line 1 "ENTRY_10c716c0"
 
-__declspec(naked) int FUN_10c716c0(...){ __asm jmp FUN_1148a279 }
+__declspec(naked) int FUN_10c716c0(...){ __asm jmp _Strcoll }
 
 
 // Reference entry 10c716d0; body size 5 bytes.
 #line 1 "ENTRY_10c716d0"
 
-__declspec(naked) int FUN_10c716d0(...){ __asm jmp FUN_1148a27f }
+__declspec(naked) int FUN_10c716d0(...){ __asm jmp _Strxfrm }
 
 
 // Reference entry 10c71f00; body size 26 bytes.

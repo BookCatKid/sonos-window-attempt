@@ -6020,6 +6020,103 @@ int FUN_1113cf20();
 int FUN_110ec7a0();
 int FUN_11037520();
 int FUN_1102ff10();
+int FUN_10656c96();
+int FUN_10d23870();
+int FUN_10aa7550();
+int FUN_10cba3a0();
+int FUN_109764e0();
+int FUN_1031fc10();
+int FUN_10a00920();
+int FUN_1082fb70();
+int FUN_10a43ef0();
+int FUN_105e7960();
+int FUN_101dbc60();
+int FUN_10958bd0();
+int FUN_1029b370();
+int FUN_101b5fb0();
+int FUN_102fcff0();
+int FUN_1032af20();
+int FUN_105bee40();
+int FUN_1072d980();
+int FUN_10464580();
+int FUN_10d9fa30();
+int FUN_10476640();
+int FUN_10846fdf();
+int FUN_10790e50();
+int FUN_10658a00();
+int FUN_109ef5ea();
+int FUN_103c3b3c();
+int FUN_106890e7();
+int FUN_110b6d02();
+int FUN_10e4add0();
+int FUN_1120f9b0();
+int FUN_1070a190();
+int FUN_106015a6();
+int FUN_1038d6e0();
+int FUN_104ed740();
+int FUN_10fd96e7();
+int FUN_10e137a0();
+int FUN_108e3f3d();
+int FUN_10c68fae();
+int FUN_10485ea2();
+int FUN_1049cf49();
+int FUN_10f91d3e();
+int FUN_109629e7();
+int FUN_10783963();
+int FUN_10b35625();
+int FUN_1091b82f();
+int FUN_1057c1ea();
+int FUN_10790583();
+int FUN_1077c3a9();
+int FUN_10bfbbd3();
+int FUN_1081adfb();
+int FUN_102054e8();
+int FUN_101761e0();
+int FUN_10b35533();
+int FUN_10656dd0();
+int FUN_10558f90();
+int FUN_1119d310();
+int FUN_10d5a3a0();
+int FUN_10d1614c();
+int FUN_10d27ffa();
+int FUN_1051d575();
+int FUN_10fd989e();
+int FUN_1043ca20();
+int FUN_101e1930();
+int FUN_10c20dd9();
+int FUN_10a80e5d();
+int FUN_10a09f31();
+int FUN_107d0470();
+int FUN_1072c058();
+int FUN_104a1af3();
+int FUN_112171c9();
+int FUN_109e3daf();
+int FUN_11095e10();
+int FUN_104bcee0();
+int FUN_10cbd303();
+int FUN_107ec337();
+int FUN_10b5e5b8();
+int FUN_1074d0e4();
+int FUN_104b0b50();
+int FUN_102712f0();
+int FUN_10fdae6a();
+int FUN_10a0dd1d();
+int FUN_10fb1530();
+int FUN_10fde45d();
+int FUN_109086e5();
+int FUN_10566e82();
+int FUN_10443ff4();
+int FUN_10790839();
+int FUN_10c98460();
+int FUN_10e9cba0();
+int FUN_1060191d();
+int FUN_106e5da0();
+int FUN_10367c1e();
+int FUN_10c68f83();
+int FUN_10b899a0();
+int FUN_1062e1ea();
+int FUN_110f9a2e();
+int FUN_10c2c12c();
 #line 1 "ENTRY_1000100a"
 
 __declspec(naked) void FUN_1000100a(void)
@@ -13662,3 +13759,104 @@ void FUN_10003ab7(void)
   return;
 }
 
+
+__declspec(naked) int FUN_100011f9(...){ __asm jmp FUN_10656c96 }
+__declspec(naked) int FUN_10001438(...){ __asm jmp FUN_10d23870 }
+__declspec(naked) int FUN_10001505(...){ __asm jmp FUN_10aa7550 }
+__declspec(naked) int FUN_1000152d(...){ __asm jmp FUN_10cba3a0 }
+__declspec(naked) int FUN_10001591(...){ __asm jmp FUN_109764e0 }
+__declspec(naked) int FUN_100015cd(...){ __asm jmp FUN_1031fc10 }
+__declspec(naked) int FUN_1000163b(...){ __asm jmp FUN_10a00920 }
+__declspec(naked) int FUN_10001645(...){ __asm jmp FUN_1082fb70 }
+__declspec(naked) int FUN_100016e5(...){ __asm jmp FUN_10a43ef0 }
+__declspec(naked) int FUN_100016f4(...){ __asm jmp FUN_105e7960 }
+__declspec(naked) int FUN_100017a3(...){ __asm jmp FUN_101dbc60 }
+__declspec(naked) int FUN_100017f3(...){ __asm jmp FUN_10958bd0 }
+__declspec(naked) int FUN_10001816(...){ __asm jmp FUN_1029b370 }
+__declspec(naked) int FUN_100018b1(...){ __asm jmp FUN_101b5fb0 }
+__declspec(naked) int FUN_1000193d(...){ __asm jmp FUN_102fcff0 }
+__declspec(naked) int FUN_10001b95(...){ __asm jmp FUN_1032af20 }
+__declspec(naked) int FUN_10001c12(...){ __asm jmp FUN_105bee40 }
+__declspec(naked) int FUN_10001c99(...){ __asm jmp FUN_1072d980 }
+__declspec(naked) int FUN_10001ccb(...){ __asm jmp FUN_10464580 }
+__declspec(naked) int FUN_10001d34(...){ __asm jmp FUN_10d9fa30 }
+__declspec(naked) int FUN_10001e47(...){ __asm jmp FUN_10476640 }
+__declspec(naked) int FUN_10001eb5(...){ __asm jmp FUN_10846fdf }
+__declspec(naked) int FUN_10001f3c(...){ __asm jmp FUN_10790e50 }
+__declspec(naked) int FUN_10001f4b(...){ __asm jmp FUN_10658a00 }
+__declspec(naked) int FUN_10001fb9(...){ __asm jmp FUN_109ef5ea }
+__declspec(naked) int FUN_10001fdc(...){ __asm jmp FUN_103c3b3c }
+__declspec(naked) int FUN_10002158(...){ __asm jmp FUN_106890e7 }
+__declspec(naked) int FUN_10002185(...){ __asm jmp FUN_110b6d02 }
+__declspec(naked) int FUN_10002194(...){ __asm jmp FUN_10e4add0 }
+__declspec(naked) int FUN_10002202(...){ __asm jmp FUN_1120f9b0 }
+__declspec(naked) int FUN_10002257(...){ __asm jmp FUN_1070a190 }
+__declspec(naked) int FUN_10002446(...){ __asm jmp FUN_106015a6 }
+__declspec(naked) int FUN_10002595(...){ __asm jmp FUN_1038d6e0 }
+__declspec(naked) int FUN_1000259a(...){ __asm jmp FUN_104ed740 }
+__declspec(naked) int FUN_100025e0(...){ __asm jmp FUN_10fd96e7 }
+__declspec(naked) int FUN_1000265d(...){ __asm jmp FUN_10e137a0 }
+__declspec(naked) int FUN_10002685(...){ __asm jmp FUN_108e3f3d }
+__declspec(naked) int FUN_100026c6(...){ __asm jmp FUN_1011f800 }
+__declspec(naked) int FUN_10002716(...){ __asm jmp FUN_10c68fae }
+__declspec(naked) int FUN_10002743(...){ __asm jmp FUN_10485ea2 }
+__declspec(naked) int FUN_10002801(...){ __asm jmp FUN_1049cf49 }
+__declspec(naked) int FUN_10002865(...){ __asm jmp FUN_10f91d3e }
+__declspec(naked) int FUN_10002897(...){ __asm jmp FUN_109629e7 }
+__declspec(naked) int FUN_100028a6(...){ __asm jmp FUN_10783963 }
+__declspec(naked) int FUN_10002932(...){ __asm jmp FUN_10b35625 }
+__declspec(naked) int FUN_10002941(...){ __asm jmp FUN_1091b82f }
+__declspec(naked) int FUN_10002a18(...){ __asm jmp FUN_1057c1ea }
+__declspec(naked) int FUN_10002ad6(...){ __asm jmp FUN_10790583 }
+__declspec(naked) int FUN_10002b76(...){ __asm jmp FUN_1077c3a9 }
+__declspec(naked) int FUN_10002c2f(...){ __asm jmp FUN_10bfbbd3 }
+__declspec(naked) int FUN_10002c4d(...){ __asm jmp FUN_1081adfb }
+__declspec(naked) int FUN_10002de2(...){ __asm jmp FUN_102054e8 }
+__declspec(naked) int FUN_10002df1(...){ __asm jmp FUN_101761e0 }
+__declspec(naked) int FUN_10002e41(...){ __asm jmp FUN_10b35533 }
+__declspec(naked) int FUN_10002e50(...){ __asm jmp FUN_10656dd0 }
+__declspec(naked) int FUN_10002e5a(...){ __asm jmp FUN_10558f90 }
+__declspec(naked) int FUN_10002efa(...){ __asm jmp FUN_1119d310 }
+__declspec(naked) int FUN_10002f27(...){ __asm jmp FUN_10d5a3a0 }
+__declspec(naked) int FUN_10002f2c(...){ __asm jmp FUN_10d1614c }
+__declspec(naked) int FUN_10002fb3(...){ __asm jmp FUN_10d27ffa }
+__declspec(naked) int FUN_10002fe5(...){ __asm jmp FUN_1051d575 }
+__declspec(naked) int FUN_10003021(...){ __asm jmp FUN_10fd989e }
+__declspec(naked) int FUN_1000306c(...){ __asm jmp FUN_1043ca20 }
+__declspec(naked) int FUN_1000308f(...){ __asm jmp FUN_101e1930 }
+__declspec(naked) int FUN_100030cb(...){ __asm jmp FUN_10c20dd9 }
+__declspec(naked) int FUN_100030d5(...){ __asm jmp FUN_10a80e5d }
+__declspec(naked) int FUN_100030da(...){ __asm jmp FUN_10a09f31 }
+__declspec(naked) int FUN_100030e4(...){ __asm jmp FUN_107d0470 }
+__declspec(naked) int FUN_100030e9(...){ __asm jmp FUN_1072c058 }
+__declspec(naked) int FUN_100030f3(...){ __asm jmp FUN_104a1af3 }
+__declspec(naked) int FUN_1000311b(...){ __asm jmp FUN_112171c9 }
+__declspec(naked) int FUN_1000316b(...){ __asm jmp FUN_109e3daf }
+__declspec(naked) int FUN_10003193(...){ __asm jmp FUN_11095e10 }
+__declspec(naked) int FUN_10003215(...){ __asm jmp FUN_104bcee0 }
+__declspec(naked) int FUN_10003297(...){ __asm jmp FUN_10cbd303 }
+__declspec(naked) int FUN_100032ab(...){ __asm jmp FUN_107ec337 }
+__declspec(naked) int FUN_1000330a(...){ __asm jmp FUN_10b5e5b8 }
+__declspec(naked) int FUN_10003328(...){ __asm jmp FUN_1074d0e4 }
+__declspec(naked) int FUN_100033be(...){ __asm jmp FUN_104b0b50 }
+__declspec(naked) int FUN_100033e6(...){ __asm jmp FUN_102712f0 }
+__declspec(naked) int FUN_1000340e(...){ __asm jmp FUN_10fdae6a }
+__declspec(naked) int FUN_1000343b(...){ __asm jmp FUN_10a0dd1d }
+__declspec(naked) int FUN_10003495(...){ __asm jmp FUN_10fb1530 }
+__declspec(naked) int FUN_100035bc(...){ __asm jmp FUN_10fde45d }
+__declspec(naked) int FUN_1000368e(...){ __asm jmp FUN_109086e5 }
+__declspec(naked) int FUN_1000369d(...){ __asm jmp FUN_107743f0 }
+__declspec(naked) int FUN_100036a7(...){ __asm jmp FUN_10566e82 }
+__declspec(naked) int FUN_100036b6(...){ __asm jmp FUN_10443ff4 }
+__declspec(naked) int FUN_1000372e(...){ __asm jmp FUN_10790839 }
+__declspec(naked) int FUN_10003738(...){ __asm jmp FUN_10c98460 }
+__declspec(naked) int FUN_1000379c(...){ __asm jmp FUN_10e9cba0 }
+__declspec(naked) int FUN_100037c9(...){ __asm jmp FUN_1060191d }
+__declspec(naked) int FUN_10003828(...){ __asm jmp FUN_10dff270 }
+__declspec(naked) int FUN_1000385f(...){ __asm jmp FUN_106e5da0 }
+__declspec(naked) int FUN_1000387d(...){ __asm jmp FUN_10367c1e }
+__declspec(naked) int FUN_100038c3(...){ __asm jmp FUN_10c68f83 }
+__declspec(naked) int FUN_100038d7(...){ __asm jmp FUN_10b899a0 }
+__declspec(naked) int FUN_10003909(...){ __asm jmp FUN_1062e1ea }
+__declspec(naked) int FUN_10003963(...){ __asm jmp FUN_110f9a2e }
+__declspec(naked) int FUN_10003986(...){ __asm jmp FUN_10c2c12c }

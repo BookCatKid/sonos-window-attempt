@@ -21449,7 +21449,7 @@ __declspec(naked) int FUN_101a5d30(...){ __asm jmp FUN_1148cdf9 }
 // Reference entry 101a64a0; body size 5 bytes.
 #line 1 "ENTRY_101a64a0"
 
-__declspec(naked) int FUN_101a64a0(...){ __asm jmp FUN_1148cdff }
+__declspec(naked) int FUN_101a64a0(...){ __asm jmp strstr }
 
 
 // Reference entry 101a6c90; body size 46 bytes.

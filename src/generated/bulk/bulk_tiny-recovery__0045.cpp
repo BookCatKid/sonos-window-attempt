@@ -12159,7 +12159,7 @@ void FUN_1148c6b6(void)
 
 __declspec(naked) int FUN_1148c970(...)
 
-{ __asm jmp FUN_1148ce83 }
+{ __asm jmp free }
 
 
 // Reference entry 1148d1ec; body size 3 bytes.

@@ -569,6 +569,11 @@ def add_thunk_site_targets(symbol_vas, reference, image_base, pe_sections, inven
         for key in keys:
             merged = sorted(set(symbol_vas.get(key, ())) | set(sites))
             symbol_vas[key] = merged
+        # A thunk site is itself a five-byte body at a distinct VA; index the
+        # self-describing FUN_<site> name so generated jmp stubs can target it.
+        for site in sites:
+            symbol_vas[f'FUN_{site:08x}'] = sorted(
+                set(symbol_vas.get(f'FUN_{site:08x}', ())) | {site})
 
 
 def add_ilt_targets(symbol_vas, ilt_map_path):
@@ -599,6 +604,9 @@ def add_ilt_targets(symbol_vas, ilt_map_path):
         for name in names:
             symbol_vas[name] = sorted(
                 set(symbol_vas.get(name, ())) | stubs | {target})
+        for stub in stubs:
+            symbol_vas[f'FUN_{stub:08x}'] = sorted(
+                set(symbol_vas.get(f'FUN_{stub:08x}', ())) | {stub})
 
 
 def add_string_literal_targets(symbol_vas):

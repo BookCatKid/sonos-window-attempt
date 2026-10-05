@@ -17360,7 +17360,7 @@ void __fastcall FUN_11272c40(undefined4 *param_1)
 // Reference entry 11272c90; body size 5 bytes.
 #line 1 "ENTRY_11272c90"
 
-__declspec(naked) int FUN_11272c90(...){ __asm jmp FUN_1148a315 }
+__declspec(naked) int FUN_11272c90(...){ __asm jmp _Unlock_shared_ptr_spin_lock }
 
 
 // Reference entry 11272ca0; body size 85 bytes.

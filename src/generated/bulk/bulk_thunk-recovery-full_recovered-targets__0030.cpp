@@ -36616,7 +36616,7 @@ void FUN_1148a51f(void)
 // Reference entry 1148a584; body size 5 bytes.
 #line 1 "ENTRY_1148a584"
 
-__declspec(naked) int FUN_1148a584(...){ __asm jmp FUN_1148d135 }
+__declspec(naked) int FUN_1148a584(...){ __asm jmp initialize_narrow_environment }
 
 
 // Reference entry 1148ab66; body size 12 bytes.

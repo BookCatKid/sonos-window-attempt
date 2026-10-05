@@ -9318,7 +9318,7 @@ undefined4 * __fastcall FUN_10f1a610(int param_1)
 // Reference entry 10f1a670; body size 5 bytes.
 #line 1 "ENTRY_10f1a670"
 
-__declspec(naked) int FUN_10f1a670(...){ __asm jmp FUN_1148a2f7 }
+__declspec(naked) int FUN_10f1a670(...){ __asm jmp _Thrd_hardware_concurrency }
 
 
 // Reference entry 10f1a6e0; body size 8 bytes.
